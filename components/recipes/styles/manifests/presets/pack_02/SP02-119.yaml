@@ -13,21 +13,66 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but
-    childish camp-disgust humor
-  subject_treatment: Crooked marker outlines, gross summer wobble, childish wrong curves, slime-trail accents
-  color_and_tone: Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black
-  lighting_and_shadow: Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure
-  texture_and_material: Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain
-  camera_and_composition: Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale
-  atmosphere_and_mood: Sticky, goofy, gross, summer-feral
-  rendering_and_quality: Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering
-  key_features: Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness
+    Public Pool Mucus scale-threat designs Doodle acts as a transferable cinematic-media router:
+    start from Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash
+    vibes, grotesque but childish camp-disgust humor, Slime drips, chlorine palette, off-model
+    doodle anatomy or form, gross summer texture, kid-gag nastiness and caricature and cartoon
+    system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing,
+    texture economy, and expressive deformation, then apply the media behavior to prompt X instead
+    of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Crooked marker outlines, gross summer wobble, childish
+    wrong curves, slime-trail accents; preserve the requested subject while exaggerating proportion,
+    contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according
+    to the preset, keeping the requested identity, silhouette, action, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky
+    yellow, marker black; use color through loud primaries, beige suburban anxiety, marker flats,
+    mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette
+    pressure, with deliberate value grouping, accent control, and process-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure;
+    shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close
+    value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure
+    support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain; surface
+    detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle
+    grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Off-model doodle form, melted summer wobble, slime-weight sag,
+    crooked marker scale; compose through readable gag timing, grotesque close-up, slouch geometry,
+    shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named
+    scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Sticky, goofy, gross, summer-feral, mood carried by Public Pool Mucus scale-threat
+    designs Doodle media process, signal pressure, and visual restraint; derive mood from adult
+    absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or
+    anti-polish personality, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Gross summer doodle, childish camp-disgust humor, intentionally bad marker
+    rendering; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no
+    exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean
+    denoised surfaces where appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes,
+    grotesque but childish camp-disgust humor; Slime drips, chlorine palette, off-model doodle
+    anatomy or form, gross summer texture, kid-gag nastiness; Chlorine green, wet turquoise, sunburn
+    red, cheap flip-flop blue, sticky yellow, marker black; Marker bleed, slick slime gloss, wet
+    paper, cheap plastic texture, sweaty grain; Off-model doodle form, melted summer wobble,
+    slime-weight sag, crooked marker scale
   creative_brief: >-
-    Apply public-pool mucus doodle flavor to any prompt: chlorine green slime, sticky heat palette, cheap
-    summer texture, crooked marker forms, and childish gross humor. Avoid pools, monsters, diving boards,
-    creatures, or specific props as requirements. The style should feel sweaty, slimy, and badly drawn on
-    purpose.
+    Apply Public Pool Mucus scale-threat designs Doodle as a cinematic-media preset over prompt X:
+    preserve the user's requested subject, then route lens behavior, palette, light, signal or film
+    texture, composition, mood, and final media craft through Badly drawn gross summer doodle,
+    chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust
+    humor, Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture,
+    kid-gag nastiness, Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty
+    grain without requiring the card image's original subject.
 avoidRules:
   - digital
   - HD
@@ -38,10 +83,26 @@ avoidRules:
   - single panel
   - vertical scrolling
   - modern
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact character likeness
+  - readable gag text
+  - generic cute mascot
+  - smooth anime polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-119.webp
 attributes:
-  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern
+  negativePrompt: >-
+    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
+    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
+    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
+    readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -8,53 +8,57 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Glacier Fortress Assault',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, tropical-elements, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, tropical-elements, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Glacier Fortress Assault within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glacier Fortress Assault's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through attack route staging; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Glacier Fortress Assault's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Glacier Fortress Assault: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with white ice, cobalt shadow, and cold steel; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Glacier Fortress Assault: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with snow glare and blue bounce; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Glacier Fortress Assault's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from frosted stone and siege rigging; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Glacier Fortress Assault's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Glacier Fortress Assault's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Glacier Fortress Assault into a portable visual system for 4. Sieges, Warfronts & Last Stands. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Glacier Fortress Assault as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Glacier, Fortress, Assault; attack route staging; white ice, cobalt shadow, and cold steel; snow glare and blue bounce; frosted stone and siege rigging; ice walls, approach trenches, and gate pressure; urgent, battered, heroic, grim, tactical, and physically costly',
     },
   },
   {
     id: 'SP12-009',
-    name: 'Ruined Cathedral Co-op Siege',
+    name: 'Sacred Siege Co-op Readability',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, modern-weapons, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, modern-weapons, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Ruined Cathedral Co-op Siege within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Ruined Cathedral Co-op Siege's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through besieged objective logic; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Ruined Cathedral Co-op Siege's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Ruined Cathedral Co-op Siege: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Ruined Cathedral Co-op Siege: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Ruined Cathedral Co-op Siege's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Ruined Cathedral Co-op Siege's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Ruined Cathedral Co-op Siege's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Ruined Cathedral Co-op Siege into a portable visual system for 4. Sieges, Warfronts & Last Stands. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding cooperative siege readability, soot-worn relic material, smoke-cut light, and last-stand pressure without forcing a fixed scene, character, prop, or story beat.",
+      key_features:
+        'Sacred, Siege, Readability; besieged objective logic; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; walls, breach lanes, and fallback rings; urgent, battered, heroic, grim, tactical, and physically costly',
     },
   },
   {
@@ -62,24 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Verdant Ruins Tactical RPG',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, cluttered-ui, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, cluttered-ui, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Verdant Ruins Tactical RPG within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdant Ruins Tactical RPG's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through turn-based cover and route clarity; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Verdant Ruins Tactical RPG's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Verdant Ruins Tactical RPG: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with wet green over stone and rebellion red accents; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Verdant Ruins Tactical RPG: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Verdant Ruins Tactical RPG's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from plants overrunning civic infrastructure; overgrown stone, broken walls, and tactical cover; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Verdant Ruins Tactical RPG's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Verdant Ruins Tactical RPG's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Verdant, Ruins, Tactical, Rpg; turn-based cover and route clarity; wet green over stone and rebellion red accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; plants overrunning civic infrastructure; gridlike paths through decay; urgent, battered, heroic, grim, tactical, and physically costly',
+      creative_brief:
+        "Apply Verdant Ruins Tactical RPG as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -87,24 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mythic Train Defense',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, static-background, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, static-background, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Mythic Train Defense within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mythic Train Defense's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through defense wave readability; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Mythic Train Defense's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Mythic Train Defense: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Mythic Train Defense: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with golden omen light; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Mythic Train Defense's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from steam metal and worn upholstery; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Mythic Train Defense's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Mythic Train Defense's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood legendary defense under impossible pressure; urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Mythic, Train, Defense; defense wave readability; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; golden omen light; steam metal and worn upholstery; carriage rhythm, track vanishing points, and platform chokeholds; legendary defense under impossible pressure',
+      creative_brief:
+        "Apply Mythic Train Defense as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -112,24 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Iron Reef Naval Skirmish',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, landlocked, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, landlocked, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Iron Reef Naval Skirmish within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Iron Reef Naval Skirmish's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Iron Reef Naval Skirmish's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Iron Reef Naval Skirmish: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with wet iron, smoke grey, and ember highlights; deep teal, coral red, and wet black; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Iron Reef Naval Skirmish: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Iron Reef Naval Skirmish's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from riveted armor and corroded plates; reef stone, hulls, and salt spray; wet hulls, reef iron, ropes, and cannon smoke; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Iron Reef Naval Skirmish's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Iron Reef Naval Skirmish's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Iron, Reef, Naval, Skirmish; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure; wet iron, smoke grey, and ember highlights; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; riveted armor and corroded plates; ship-to-shore skirmish lanes; urgent, battered, heroic, grim, tactical, and physically costly',
+      creative_brief:
+        "Apply Iron Reef Naval Skirmish as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -137,24 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rift Bridge Capture Point',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, clutter, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, clutter, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Rift Bridge Capture Point within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Rift Bridge Capture Point's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through capture-point tension; contested objective zone; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Rift Bridge Capture Point's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Rift Bridge Capture Point: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Rift Bridge Capture Point: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with split-dimensional glow and hard rim tear; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Rift Bridge Capture Point's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Rift Bridge Capture Point's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Rift Bridge Capture Point's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Rift, Bridge, Capture, Point; capture-point tension; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; split-dimensional glow and hard rim tear; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; portal seam as focal anchor; urgent, battered, heroic, grim, tactical, and physically costly',
+      creative_brief:
+        "Apply Rift Bridge Capture Point as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -162,24 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hollow Basilica Final Stand',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, playful-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, playful-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Hollow Basilica Final Stand within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Hollow Basilica Final Stand's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Hollow Basilica Final Stand's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Hollow Basilica Final Stand: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Hollow Basilica Final Stand: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Hollow Basilica Final Stand's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Hollow Basilica Final Stand's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Hollow Basilica Final Stand's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood sacred ruin pressure; urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Hollow, Basilica, Final, Stand; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; tall nave perspective and final-stand axis; sacred ruin pressure',
+      creative_brief:
+        "Apply Hollow Basilica Final Stand as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -187,24 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Iron Orchard Defense Night',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, futuristic-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, futuristic-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Iron Orchard Defense Night within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Iron Orchard Defense Night's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through defense wave readability; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Iron Orchard Defense Night's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Iron Orchard Defense Night: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with wet iron, smoke grey, and ember highlights; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Iron Orchard Defense Night: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with low-key night lighting with practical pools; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Iron Orchard Defense Night's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from riveted armor and corroded plates; gnarled branches, fruit color, and defensive machinery; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Iron Orchard Defense Night's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Iron Orchard Defense Night's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood pastoral zone turned tactical; late-hour danger; urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Iron, Orchard, Defense, Night; defense wave readability; wet iron, smoke grey, and ember highlights; low-key night lighting with practical pools; riveted armor and corroded plates; protected core, lanes, and fallback positions; pastoral zone turned tactical',
+      creative_brief:
+        "Apply Iron Orchard Defense Night as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -212,24 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Aurora Bastion Siege',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Aurora Bastion Siege within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Aurora Bastion Siege's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through holdout fortification; besieged objective logic; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Aurora Bastion Siege's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Aurora Bastion Siege: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with green-violet sky ribbons; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Aurora Bastion Siege: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with aurora wash over snow and armor; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Aurora Bastion Siege's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Aurora Bastion Siege's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Aurora Bastion Siege's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Aurora, Bastion, Siege; holdout fortification; green-violet sky ribbons; aurora wash over snow and armor; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; layered defensive walls and high battlements; urgent, battered, heroic, grim, tactical, and physically costly',
+      creative_brief:
+        "Apply Aurora Bastion Siege as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -237,24 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Radiant Citadel Co-op Hold',
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, grimdark, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, grimdark, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Radiant Citadel Co-op Hold within 4. Sieges, Warfronts & Last Stands: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Radiant Citadel Co-op Hold's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through protected objective logic; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Radiant Citadel Co-op Hold's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
       color_and_tone:
-        'Use a controlled palette that supports Radiant Citadel Co-op Hold: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Radiant Citadel Co-op Hold: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Radiant Citadel Co-op Hold's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Radiant Citadel Co-op Hold's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Radiant Citadel Co-op Hold's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 4. Sieges, Warfronts & Last Stands style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Radiant, Citadel, Hold; protected objective logic; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; fortified skyline and defense-grid strata; urgent, battered, heroic, grim, tactical, and physically costly',
+      creative_brief:
+        "Apply Radiant Citadel Co-op Hold as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

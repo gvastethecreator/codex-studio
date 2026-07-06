@@ -13,45 +13,85 @@ tags:
   - fantasy-sci-fi-costume
 visualDna:
   aesthetic: >-
-    Ethereal Fantasy within 4. Fantasy Sci-Fi Costume: a reusable Fashion & Costume visual language with a
-    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
-    across subjects while preserving Ethereal Fantasy's specific style identity.
+    Ethereal Fantasy operates as a portable fashion-costume router: combine Ethereal Fantasy styling
+    cues and speculative costume logic with armor, suit engineering, magical garment behavior, alien
+    proportion, and character-readability design, so the preset supplies styling behavior rather
+    than a fixed outfit card, required wearer, or literal garment sample.
   subject_treatment: >-
-    Define Ethereal Fantasy through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
+    illuminate, conceal, mutate, modularize, ritualize, or engineer through paneling, harnesses,
+    armor modules, robe systems, implant seams, luminous channels, survival layers, and invented
+    fastenings; identity stays readable as silhouette, fit, layering, body-volume logic, edge
+    behavior, and styling hierarchy shift into this preset.
   color_and_tone: >-
-    Use a Ethereal Fantasy-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Map color through speculative material color, neon accents, abyssal values, royal metals,
+    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
   lighting_and_shadow: >-
-    Use lighting that makes Ethereal Fantasy recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or
+    sci-fi display light as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Use materials and textures that reinforce Ethereal Fantasy: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
+    Render armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke,
+    shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Use spatial behavior that fits Ethereal Fantasy: perspective, compression, exaggeration, or depth should
-    support the style without forcing one fixed location.
+    Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear
+    rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits,
+    objects, creatures, environments, action, and abstract prompts to inherit styling without one
+    required pose.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Ethereal Fantasy: specific, coherent, and distinct, with emotional tone carried
-    by visual systems rather than narrative captioning.
+    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
+    spectacle, or mythic futurism; the tone should feel specific to Ethereal Fantasy while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
   rendering_and_quality: >-
-    Render Ethereal Fantasy with high production clarity, strong silhouette reads, clean detail priority, and
-    no accidental UI, text, logos, or watermark.
+    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
+    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
   key_features: >-
-    Prioritize Ethereal Fantasy's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    Ethereal Fantasy styling cues and speculative costume logic with armor, suit engineering,
+    magical garment behavior, alien proportion, and character-readability design; paneling,
+    harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and
+    invented fastenings; armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
+    hologram, smoke, shadow, gel, and luminous seams; rim light, emissive channels, occult glow,
+    reflective armor, survival dust, void shadow, or sci-fi display light; character-design
+    readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation
+    focus
   creative_brief: >-
-    Create a style-card that translates Ethereal Fantasy into a portable visual system for 4. Fantasy Sci-Fi
-    Costume. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Use Ethereal Fantasy after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Ethereal Fantasy
+    styling cues and speculative costume logic with armor, suit engineering, magical garment
+    behavior, alien proportion, and character-readability design, paneling, harnesses, armor
+    modules, robe systems, implant seams, luminous channels, survival layers, and invented
+    fastenings, armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram,
+    smoke, shadow, gel, and luminous seams, rim light, emissive channels, occult glow, reflective
+    armor, survival dust, void shadow, or sci-fi display light, character-design readability, suit
+    silhouette, power-shape hierarchy, modular gear rhythm, and transformation focus, palette
+    behavior, light response, material treatment, silhouette grammar, and finish discipline without
+    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - heavy
   - dark
   - solid
+  - generic cosplay
+  - plastic toy armor
+  - muddy fantasy outfit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-013.webp
 attributes:
-  negativePrompt: heavy, dark, solid
+  negativePrompt: >-
+    heavy, dark, solid, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

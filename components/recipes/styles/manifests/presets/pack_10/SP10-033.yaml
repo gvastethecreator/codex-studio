@@ -12,26 +12,60 @@ tags:
   - abstract-and-experimental
   - surrealism-and-dream
 visualDna:
-  aesthetic: LSD trip visual
-  subject_treatment: Flowing, melting
-  color_and_tone: Neon, rainbow
-  lighting_and_shadow: Glowing
-  texture_and_material: Fractal
-  camera_and_composition: Melting geometry
-  atmosphere_and_mood: Intense, hallucination
-  rendering_and_quality: Trippy, 60s
-  key_features: Pulse motifs
+  aesthetic: >-
+    Psychedelic Art becomes a transferable surreal symbolic transformation system: start from LSD
+    trip visual, Pulse motifs, and Melting geometry, then route prompt content through impossible
+    logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing
+    one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Flowing, melting to bend, displace, fuse,
+    haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene;
+    preserve anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Neon, rainbow; use color as emotional unreliability, nostalgic drift,
+    uncanny contrast, or symbolic temperature, with enough value control that the subject remains
+    readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Glowing drive the light response: shape light through impossible shadows, memory haze, stage
+    stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt
+    explicitly asks for it.
+  texture_and_material: >-
+    Render Fractal as the tactile or mark-making basis; surfaces should support the illusion with
+    believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Melting geometry as reusable spatial grammar: favor symbolic focal points, scale
+    mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting
+    cleanly to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Intense, hallucination as the emotional register; derive mood from wonder, dread, absurdity,
+    nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening
+    strong, strange, darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Trippy, 60s: finish with deliberate weirdness, controlled realism, and no generic
+    fantasy scene lock, preserving prompt X as the base content and the preset as the style router.
+  key_features: >-
+    LSD trip visual; Flowing, melting; Neon, rainbow; Glowing; Fractal; Melting geometry; Intense,
+    hallucination; Trippy, 60s; Pulse motifs
   creative_brief: >-
-    Apply psychedelic pulse to the input: neon fractals, vibrating complementary colors, recursive floral
-    geometry, liquid contour drift, and sensory overload should transform any subject without requiring faces,
-    posters, or drug imagery.
+    Apply psychedelic pulse to the input: neon fractals, vibrating complementary colors, recursive
+    floral geometry, liquid contour drift, and sensory overload should transform any subject without
+    requiring faces, posters, or drug imagery.
 avoidRules:
   - dull
   - grey
+  - literal fantasy scene lock
+  - generic dream blur
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-033.webp
 attributes:
-  negativePrompt: dull, grey
+  negativePrompt: >-
+    dull, grey, literal fantasy scene lock, generic dream blur, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

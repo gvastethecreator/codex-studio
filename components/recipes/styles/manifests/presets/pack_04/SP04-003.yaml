@@ -13,39 +13,90 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: >-
-    Modern blockbuster-comic style with sleek mythic hero energy, widescreen panel staging, and high-impact
-    digital polish
+    Modern Superhero (Digital) acts as a transferable illustration router: start from Modern
+    blockbuster-comic style with sleek mythic lead archetype energy, widescreen panel staging, and
+    high-impact digital polish, Widescreen action composition, specular-driven suit rendering,
+    flare-controlled highlights, decompressed-impact pacing and comic-illustration system built from
+    ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art
+    readability, then apply the visual behavior to prompt X instead of recreating a fixed demo
+    image.
   subject_treatment: >-
-    Clean high-confidence digital inking with controlled contour weights, sharp silhouette reads, and
-    cinematic action line economy
+    Transform any prompt subject through Clean high-confidence digital inking with controlled
+    contour weights, sharp silhouette reads, and cinematic action line economy; preserve the
+    requested subject while translating form into panel-ready silhouettes, expressive contour
+    weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset calls for
+    it, keeping the requested identity, silhouette, pose, object function, or setting legible.
   color_and_tone: >-
-    Bold cool-warm contrast with luminous gradient ramps, reflective accent tones, and controlled
-    flare-spectrum highlights
+    Build color with Bold cool-warm contrast with luminous gradient ramps, reflective accent tones,
+    and controlled flare-spectrum highlights; treat color as comic production language: four-color
+    plates, limited spot color, manga monochrome, digital flats, noir contrast, webtoon gradients,
+    or painted page atmosphere, with deliberate value grouping, accent control, and process-specific
+    limits rather than a generic palette wash.
   lighting_and_shadow: >-
-    Dynamic key/rim orchestration with volumetric accent rays, specular hit placement, and dramatic separation
-    for heroic focus
-  texture_and_material: Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow layering
+    Handle light through Dynamic key/rim orchestration with volumetric accent rays, specular hit
+    placement, and dramatic separation for emblematic focus; make light read through ink spotting,
+    cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather
+    than generic studio illumination, so value structure supports the illustration process and does
+    not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow
+    layering; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush
+    layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing,
+    keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Heroic proportion push with muscular volume exaggeration, forced-perspective beats, and panoramic action
-    framing
-  atmosphere_and_mood: Intense, mythic, serious, kinetic, cinematic
+    Structure the image through emblematic proportion push with muscular volume exaggeration,
+    forced-perspective beats, and panoramic action framing; compose with panel logic, silhouette
+    clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a
+    fixed comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Intense, mythic, serious, kinetic, cinematic; derive mood from era, genre
+    pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness,
+    letting the style alter interpretation without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    High-detail glossy comic finish emphasizing readability under motion, premium digital compositing, and
-    refined surface response
+    Finish with High-detail glossy comic finish emphasizing readability under motion, premium
+    digital compositing, and refined surface response; finish with clear ink decisions, readable
+    stylization, controlled artifacting, and no generic superhero costume or random comic text
+    replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
   key_features: >-
-    Widescreen action composition, specular-driven suit rendering, flare-controlled highlights,
-    decompressed-impact pacing
+    Modern blockbuster-comic style with sleek mythic lead archetype energy, widescreen panel
+    staging, and high-impact digital polish; Widescreen action composition, specular-driven suit
+    rendering, flare-controlled highlights, decompressed-impact pacing; Bold cool-warm contrast with
+    luminous gradient ramps, reflective accent tones, and controlled flare-spectrum highlights;
+    Smooth digitally polished surfaces with subtle composite grain and high-clarity FX glow
+    layering; emblematic proportion push with muscular volume exaggeration, forced-perspective
+    beats, and panoramic action framing
   creative_brief: >-
-    Keep this preset grounded in polished blockbuster-comic grammar: heroic silhouette clarity, dynamic light
-    separation, high-gloss FX and widescreen impact should define identity without requiring a superhero,
-    suit, fight scene or specific comic universe.
+    Apply Modern Superhero (Digital) as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Modern blockbuster-comic style with sleek mythic lead archetype energy, widescreen panel
+    staging, and high-impact digital polish, Widescreen action composition, specular-driven suit
+    rendering, flare-controlled highlights, decompressed-impact pacing, Smooth digitally polished
+    surfaces with subtle composite grain and high-clarity FX glow layering without requiring the
+    card image's original subject.
 avoidRules:
   - flat
   - retro
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic superhero costume
+  - random speech text
+  - fake lettering
+  - photo-real costume render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-003.webp
 attributes:
-  negativePrompt: flat, retro
+  negativePrompt: >-
+    flat, retro, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    superhero costume, random speech text, fake lettering, photo-real costume render
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

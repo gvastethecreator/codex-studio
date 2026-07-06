@@ -12,19 +12,62 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Color-script environmental painting driven by temporal light progression
-  subject_treatment: Soft mass blocking with low line dependency and edge hierarchy by depth
-  color_and_tone: Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation
-  lighting_and_shadow: Volumetric scattering, shadow temperature contrast, time-of-day key shifts
-  texture_and_material: Haze layers, particulate glow, diffuse cloud/fog transitions
-  camera_and_composition: Space defined through color recession and layered atmospheric perspective
-  atmosphere_and_mood: Cinematic, emotive, transitional, light-led storytelling
-  rendering_and_quality: Atmospheric study pass prioritizing mood continuity over detail finish
-  key_features: Multi-frame mood continuity, temperature mapping, depth via fog stratification
+  aesthetic: >-
+    Mood Color Script Pass acts as a transferable illustration router: start from Color-script
+    environmental painting driven by temporal light progression, Multi-frame mood continuity,
+    temperature mapping, depth via fog stratification and production concept-art system built from
+    iteration discipline, silhouette testing, material exploration, design readability, and
+    pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Soft mass blocking with low line dependency and edge
+    hierarchy by depth; preserve the requested subject while routing it through design exploration,
+    asset logic, value blocking, scale cues, iteration rows, paintover marks, or
+    production-readability constraints, keeping the requested identity, silhouette, pose, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Sequenced temperature arcs from cool dawn to warm noon to nocturnal
+    desaturation; use color as concept decision-making: mood scripts, material swatches, faction
+    accents, environment atmosphere, asset tier contrast, or readable pass separation, with
+    deliberate value grouping, accent control, and process-specific limits rather than a generic
+    palette wash.
+  lighting_and_shadow: >-
+    Handle light through Volumetric scattering, shadow temperature contrast, time-of-day key shifts;
+    shape light for ideation clarity through value block-in, keyframe contrast, material test
+    highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Haze layers, particulate glow, diffuse cloud/fog transitions; surface detail should
+    reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks,
+    costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Space defined through color recession and layered atmospheric
+    perspective; compose through production hierarchy, variants, orthographic logic, isometric
+    staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one
+    finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Cinematic, emotive, transitional, light-led storytelling; derive mood from
+    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
+    cinematic intent, or production-room clarity, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Atmospheric study pass prioritizing mood continuity over detail finish; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Color-script environmental painting driven by temporal light progression; Multi-frame mood
+    continuity, temperature mapping, depth via fog stratification; Sequenced temperature arcs from
+    cool dawn to warm noon to nocturnal desaturation; Haze layers, particulate glow, diffuse
+    cloud/fog transitions; Space defined through color recession and layered atmospheric perspective
   creative_brief: >-
-    Apply mood color-script treatment to any input: sequential lighting moods, palette blocks, value keys,
-    atmospheric transitions, and cinematic color continuity. If there is no environment, turn the prompt into
-    a color-script abstraction without requiring location panels, story beats, or a film scene.
+    Apply Mood Color Script Pass as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Color-script environmental painting driven by temporal light progression, Multi-frame
+    mood continuity, temperature mapping, depth via fog stratification, Haze layers, particulate
+    glow, diffuse cloud/fog transitions without requiring the card image's original subject.
 avoidRules:
   - detailed linework
   - finished rendering
@@ -32,12 +75,26 @@ avoidRules:
   - character close-up
   - subject-dominant
   - tight composition
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-085.webp
 attributes:
   negativePrompt: >-
     detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight
-    composition
+    composition, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

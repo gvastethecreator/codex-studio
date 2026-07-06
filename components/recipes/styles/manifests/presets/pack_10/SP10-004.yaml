@@ -12,28 +12,61 @@ tags:
   - abstract-and-experimental
   - geometric-abstraction
 visualDna:
-  aesthetic: Visual illusion
-  subject_treatment: Warped grids
-  color_and_tone: Black and White
+  aesthetic: >-
+    Op Art (Optical) becomes a transferable geometric abstraction system: start from Visual
+    illusion, Bridget Riley, trippy, and Dizzying, kinetic, then route prompt content through
+    planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card
+    scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Warped grids to break, flatten, triangulate,
+    align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Black and White; treat color as structural contrast, field separation,
+    and rhythm rather than decorative wash, with enough value control that the subject remains
+    readable after the style layer is applied.
   lighting_and_shadow: >-
-    Lighting for Op Art (Optical): purposeful key, bounce, rim, shadow depth, and focal readability matched to
-    1. Geometric Abstraction.
-  texture_and_material: Smooth
-  camera_and_composition: Vibrating effect
-  atmosphere_and_mood: Dizzying, kinetic
-  rendering_and_quality: Bridget Riley, trippy
-  key_features: High contrast
+    Let Smooth drive the light response: keep light graphic and structural, with shadows simplified
+    into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt
+    explicitly asks for it.
+  texture_and_material: >-
+    Render Vibrating effect as the tactile or mark-making basis; surfaces should read as designed
+    planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Dizzying, kinetic as reusable spatial grammar: favor axial tension, repeated
+    modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly
+    to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Dizzying, kinetic as the emotional register; derive mood from rigor, optical tension,
+    intellectual order, and abstraction pressure, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Bridget Riley, trippy: finish with crisp geometry, controlled edges, clean
+    separations, and no accidental realism, preserving prompt X as the base content and the preset
+    as the style router.
+  key_features: >-
+    Visual illusion; Warped grids; Black and White; Smooth; Vibrating effect; Dizzying, kinetic;
+    Dizzying, kinetic; Bridget Riley, trippy; Bridget Riley, trippy
   creative_brief: >-
     Apply op-art optical stress to the input: pulsing line fields, high-contrast waves, vibrating
-    figure-ground reversals, and controlled visual interference should make any subject feel unstable without
-    losing silhouette legibility.
+    figure-ground reversals, and controlled visual interference should make any subject feel
+    unstable without losing silhouette legibility.
 avoidRules:
   - still
   - calm
+  - realistic perspective
+  - generic polygon filter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-004.webp
 attributes:
-  negativePrompt: still, calm
+  negativePrompt: >-
+    still, calm, realistic perspective, generic polygon filter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

@@ -13,35 +13,82 @@ tags:
   - artistic-mediums
 visualDna:
   aesthetic: >-
-    Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and
-    chromatic halo bleed
+    Gas-Tube Halo Typography operates as a portable source-router layer: combine Electric
+    gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and
+    chromatic halo bleed with manual medium logic with mark discipline, process texture, graphic
+    reduction, and authored surface treatment, so the preset supplies visual behavior rather than a
+    fixed card scene or literal sample.
   subject_treatment: >-
-    Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes,
-    luminous edge repetition
-  color_and_tone: Argon purple, mercury cyan, krypton white, hot pink, vacancy red, deep black backing, reflected blue spill
-  lighting_and_shadow: Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff
+    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
+    stitch, spray, glaze, outline, cut, layer, or illuminate through Continuous bent-tube strokes,
+    cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge
+    repetition; identity stays readable through construction grammar, proportion, edge logic, and
+    detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
+    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim
+    ambient falloff plus surface-aware illumination that reveals pigment body, glass translucency,
+    chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy,
+    controlled contact detail, and no lighting choice that erases the user's requested content.
   texture_and_material: >-
-    Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored
-    light
-  camera_and_composition: Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry
-  atmosphere_and_mood: Nocturnal, electric, commercial, seductive, nostalgic, high-contrast
+    Render Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust
+    caught inside colored light plus mark residue, substrate grain, lead came, screen ink, sprayed
+    overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores,
+    edges, or signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight
+    sign-maker asymmetry plus graphic spacing, panel division, emblem balance, handmade alignment,
+    and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects,
+    scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
+    object presence; the emotional tone should feel specific to Gas-Tube Halo Typography while still
+    obeying the prompt's subject and context.
   rendering_and_quality: >-
-    Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal
-    graphic clarity
+    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
+    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Bent-tube continuity, colored halo bleed, black negative space, glass highlight knots, local glow
-    reflections
+    Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast,
+    and chromatic halo bleed; Continuous bent-tube strokes, cursive contour loops, clipped mounting
+    shadows, soft wall-wash silhouettes, luminous edge repetition; Glass tubing, gas glow, enamel
+    backing, transformer warmth, glossy reflections, dust caught inside colored light;
+    Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient
+    falloff; Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight
+    sign-maker asymmetry
   creative_brief: >-
-    Render any subject as if its visual grammar were built from neon tubing and gas-discharge light.
-    Prioritize continuous luminous contours, glow spill, dark backing, and glassy emission; do not force
-    storefronts, bars, signs, words, or wall-mounted objects.
+    Use Gas-Tube Halo Typography after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Electric gas-discharge graphic treatment
+    built from glowing tube contours, dark void contrast, and chromatic halo bleed, Continuous
+    bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes,
+    luminous edge repetition, Glass tubing, gas glow, enamel backing, transformer warmth, glossy
+    reflections, dust caught inside colored light, Self-illuminated emission with colored spill,
+    bloom halos, high local contrast, and dim ambient falloff, Halo expansion, chromatic fringe
+    drift, tube refraction, glow stacking, slight sign-maker asymmetry plus stroke direction,
+    pigment edge, stencil separation, lead structure, fabric or print registration, and clearly
+    expressed hand process, palette behavior, light response, material treatment, and finish
+    discipline without requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - daylight
   - paint
+  - generic digital painting
+  - flat vector shortcut
+  - lost medium texture
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-028.webp
 attributes:
-  negativePrompt: daylight, paint
+  negativePrompt: >-
+    daylight, paint, generic digital painting, flat vector shortcut, lost medium texture, fixed
+    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

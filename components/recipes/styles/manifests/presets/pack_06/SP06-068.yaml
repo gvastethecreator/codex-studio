@@ -12,20 +12,50 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts
-  subject_treatment: High contrast, grainy
-  color_and_tone: Black and White
-  lighting_and_shadow: Xerox flash
-  texture_and_material: Toner, tape
-  camera_and_composition: Rough cuts
-  atmosphere_and_mood: Raw, underground
-  rendering_and_quality: DIY, punk
-  key_features: Xerox grain
+  aesthetic: >-
+    Zine Aesthetic acts as a transferable art-medium router: start from Xerox zine reproduction
+    style with crushed contrast, toner grain, and DIY assembly artifacts, Xerox grain and
+    mixed-media assembly system built from layering, adhesion, surface collision, found-material
+    logic, tactile seams, and handmade construction, then apply the medium behavior to prompt X
+    instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through High contrast, grainy; preserve the prompt subject while
+    rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee
+    stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
+  color_and_tone: >-
+    Build color with Black and White; treat color as material combination: paper aging, varnish
+    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
+    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Xerox flash; make light reveal relief, varnish gloss, paper lift, tape
+    shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Toner, tape; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
+    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Rough cuts; compose through layer order, overlap, pin logic, cut
+    rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal
+    craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Raw, underground; derive mood from DIY urgency, memory, repair, evidence, punk
+    collision, tactile intimacy, decorative excess, or experimental material play, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with DIY, punk; finish with coherent material stacking, readable subject transformation,
+    and no single flat texture pasted over the whole image, clean denoised surfaces where
+    appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts;
+    Xerox grain; Black and White; Toner, tape; Rough cuts
   creative_brief: >-
-    Photocopy logic flattens everything into high-contrast grain, shadows becoming solid black, highlights
-    burning to paper white. Toner dust, tape shadows, rough crop edges, and repeated-copy degradation become
-    the aesthetic. The image lives in reproduction, without requiring booklets, staples, pages, text, or punk
-    slogans.
+    Apply Zine Aesthetic as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Xerox zine reproduction style with crushed contrast, toner grain, and DIY assembly artifacts,
+    Xerox grain, Toner, tape without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -45,12 +75,25 @@ avoidRules:
   - readable slogan
   - booklet requirement
   - staple requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-068.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, readable slogan, booklet requirement, staple requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, readable slogan, booklet requirement, staple
+    requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable
+    text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default,
+    clean vector render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

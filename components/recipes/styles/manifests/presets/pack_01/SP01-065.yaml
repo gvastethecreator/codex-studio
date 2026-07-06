@@ -12,26 +12,76 @@ tags:
   - photography-and-realism
   - nature-and-wildlife
 visualDna:
-  aesthetic: Playful companion portrait
-  subject_treatment: Eye level
-  color_and_tone: Bright, happy
-  lighting_and_shadow: Soft
-  texture_and_material: Soft tactile detail
-  camera_and_composition: Wide-angle near-plane exaggeration
-  atmosphere_and_mood: Playful, sweet
-  rendering_and_quality: Cute studio warmth
-  key_features: Eye-level warmth
+  aesthetic: >-
+    Pet Photography acts as a transferable photographic style router: begin from Playful companion
+    portrait, Eye-level warmth, and field and nature photographic system built from natural light,
+    patient timing, environmental scale, and credible ecology, then apply the photographic behavior
+    to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Eye level; preserve prompt identity while giving it field
+    realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the
+    original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Bright, happy; grade through natural atmosphere, silver-black fine-art values,
+    underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation
+    and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Soft; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or
+    telephoto background separation, preserving believable exposure, shadow density, highlight
+    rolloff, and source motivation.
+  texture_and_material: >-
+    Render Soft tactile detail; render fur, feathers, plant texture, rock, water, star noise, mist,
+    mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Wide-angle near-plane exaggeration; compose through long-lens compression, macro
+    proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Playful, sweet; derive mood from patience, wilderness pressure, wonder, cosmic
+    quiet, companion warmth, or fine-art environmental grandeur, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Cute studio warmth; finish as believable field photography with clean detail,
+    natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Playful companion portrait; Eye-level warmth; Bright, happy; Soft; Wide-angle near-plane
+    exaggeration
   creative_brief: >-
-    Pet-photography warmth becomes a playful close portrait grammar: eye-level camera, soft light, tactile
-    detail, near-plane wide-angle charm, and bright approachable mood. Apply companion intimacy to any subject
-    without requiring dog, cat, fur, creature, or camera gaze.
+    Apply Pet Photography as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Playful companion portrait, Bright, happy, Soft, Soft tactile detail, and
+    Wide-angle near-plane exaggeration through optics, exposure, palette, surface response, timing,
+    and finish without requiring the card image's original subject.
 avoidRules:
   - scary
   - menacing
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - zoo snapshot
+  - oversaturated postcard
+  - plastic foliage
+  - fake wildlife pose
+  - friendly nature cliche
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-065.webp
 attributes:
-  negativePrompt: scary, menacing
+  negativePrompt: >-
+    scary, menacing, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot,
+    oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

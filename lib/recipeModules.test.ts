@@ -22,6 +22,7 @@ describe('recipeModules', () => {
       'styles',
       'remaster',
       'spritesheet',
+      'sprite-atlas',
       'cinematic',
       'character-lab',
       'character',
@@ -37,6 +38,11 @@ describe('recipeModules', () => {
     expect(styles?.parameters.map((parameter) => parameter.id)).toContain('presetId');
     expect(spritesheet?.defaultTask).toBe('sprite_sheet');
     expect(spritesheet && getRecipeParameterOptions(spritesheet, 'grid')).toContain('4x2');
+    expect(getRecipeModule('sprite-atlas')).toMatchObject({
+      title: 'Sprite Atlas',
+      defaultTask: 'sprite_sheet',
+      supportedTasks: ['sprite_sheet', 'texture_generate', 'image_generate'],
+    });
   });
 
   it('exposes defaults, controls, and ranges as part of the Recipe Module interface', () => {
@@ -227,6 +233,45 @@ describe('recipeModules', () => {
     expect(spec.task).toBe('sprite_sheet');
     expect(spec.providerId).toBe('codex');
     expect(spec.quality?.qualityPresetId).toBe('sprite_sheet');
+  });
+
+  it('builds Sprite Atlas specs with normalized atlas metadata and directives', () => {
+    const spec = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-sprite-atlas',
+      providerId: 'codex',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a side-view courier with crisp readable motion',
+        recipeId: 'sprite-atlas',
+        recipeParams: {
+          presetId: 'platformer-character',
+          stylePreset: 'pixel-art',
+          backgroundRemoval: 'chroma',
+          chromaKey: '#00FF00',
+        },
+      },
+    });
+
+    expect(spec.task).toBe('sprite_sheet');
+    expect(spec.metadata.spriteAtlas).toMatchObject({
+      presetId: 'platformer-character',
+      assetKind: 'sprite',
+      extractionMode: 'components',
+    });
+    expect(
+      (spec.metadata.spriteAtlas as { rows: Array<{ id: string; frames: number }> }).rows,
+    ).toContainEqual(expect.objectContaining({ id: 'idle', frames: 6 }));
+    expect(spec.metadata.recipeContext).toContain('SPRITE ATLAS WORKFLOW');
+    expect(spec.metadata.recipeProviderDirectives).toMatchObject({
+      recipeId: 'sprite-atlas',
+      title: 'Sprite Atlas',
+    });
+    expect(spec.quality).toMatchObject({
+      qualityPresetId: 'sprite_sheet',
+      style: 'pixel-art',
+      color: '#00FF00',
+      materials: 'sprite',
+    });
   });
 
   it('lets Character Lab actions request supported task kinds and source/reference roles', () => {

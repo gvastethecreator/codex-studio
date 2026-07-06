@@ -7,137 +7,203 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP03-049',
     name: 'Character Design (T-Pose)',
     category: '6. Organic Character And Bio CGI',
-    negativePrompt: 'action pose, background',
+    negativePrompt:
+      'action pose, background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
     style: {
-      aesthetic: 'Character model sheet',
-      subject_treatment: 'Anatomical',
-      color_and_tone: 'Neutral light, skin-tone accuracy',
-      lighting_and_shadow: 'Flat, character-sheet evenness',
-      texture_and_material: 'Skin, cloth, character assembly',
+      aesthetic:
+        'Character Design (T-Pose) acts as a transferable CGI-style router: start from Character model sheet, T Pose or A Pose, turn around clarity and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Anatomical; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Neutral light, skin tone accuracy; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat, character sheet evenness; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Skin, cloth, character assembly; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Character Design (T-Pose): three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Neutral, design, audition-ready',
-      rendering_and_quality: 'Concept art, production, model-sheet',
-      key_features: 'T-Pose or A-Pose, turn-around clarity',
+        'Structure the image through Lookdev camera for Character Design (T Pose): three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Neutral, design, audition ready; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Concept art, production, model sheet; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Character model sheet; T Pose or A Pose, turn around clarity; Neutral light, skin tone accuracy; Skin, cloth, character assembly; Lookdev camera for Character Design (T Pose): three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Use production model-sheet clarity. If a character exists, keep T-pose or A-pose, neutral turnaround lighting and rig-ready anatomy/cloth truth. If no character exists, translate the subject into a neutral asset sheet with orthographic readability. Avoid action pose or narrative background. Apply Character Design as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Character Design (T-Pose) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Character model sheet, T Pose or A Pose, turn around clarity, Skin, cloth, character assembly without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-051',
     name: 'Medical Illustration 3D',
     category: '6. Organic Character And Bio CGI',
-    negativePrompt: 'gross, blood',
+    negativePrompt:
+      'gross, blood, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
     style: {
-      aesthetic: 'Clean diagnostic cutaway render',
-      subject_treatment: 'Cutaway view',
-      color_and_tone: 'Red, Blue, White, medical-chart palettes',
-      lighting_and_shadow: 'Soft, clear, shadowless diagnostic',
-      texture_and_material: 'Translucent layers, anatomical or system accuracy',
+      aesthetic:
+        'Medical Illustration 3D acts as a transferable CGI-style router: start from Clean diagnostic cutaway render, Label space, cutaway clarity and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Cutaway view; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Red, Blue, White, medical chart palettes; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft, clear, shadowless diagnostic; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Translucent layers, anatomical or system accuracy; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Medical Illustration 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Scientific, clean, knowledge-dense',
-      rendering_and_quality: 'Textbook, educational, clinical-reference',
-      key_features: 'Label space, cutaway clarity',
+        'Structure the image through Lookdev camera for Medical Illustration 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Scientific, clean, knowledge dense; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Textbook, educational, clinical reference; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Clean diagnostic cutaway render; Label space, cutaway clarity; Red, Blue, White, medical chart palettes; Translucent layers, anatomical or system accuracy; Lookdev camera for Medical Illustration 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Turn the input into a clean diagnostic cutaway: layered systems, translucent density gradients, red/blue/white clinical coding and shadowless educational clarity. If biological anatomy fits, use it; otherwise expose internal structure like a medical diagram without forcing human body content. Apply Medical Illustration 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Medical Illustration 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Clean diagnostic cutaway render, Label space, cutaway clarity, Translucent layers, anatomical or system accuracy without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-054',
     name: 'Food CGI',
     category: '6. Organic Character And Bio CGI',
-    negativePrompt: 'rotten, dry',
+    negativePrompt:
+      'rotten, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
     style: {
-      aesthetic: 'Hyper-appetizing food-ad CGI',
-      subject_treatment: 'Juicy details',
-      color_and_tone: 'Saturated, fresh',
-      lighting_and_shadow: 'Backlit steam',
-      texture_and_material: 'Wet, condensation, micro-droplets',
-      camera_and_composition: 'Flying ingredients',
-      atmosphere_and_mood: 'Delicious, hyperreal, crave-inducing',
-      rendering_and_quality: 'Fast-food hero-ad polish, impossibly appetizing',
-      key_features: 'Water droplets, steam wisps',
+      aesthetic:
+        'Food CGI acts as a transferable CGI-style router: start from Hyper appetizing food ad CGI, Water droplets, steam wisps and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Juicy details; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Saturated, fresh; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Backlit steam; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Wet, condensation, micro droplets; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Flying ingredients; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Delicious, hyperreal, crave inducing; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Fast food hero ad polish, impossibly appetizing; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Hyper appetizing food ad CGI; Water droplets, steam wisps; Saturated, fresh; Wet, condensation, micro droplets; Flying ingredients',
       creative_brief:
-        'Apply appetizing food-CGI craft to the input: macro compression, glossy edible highlights, subsurface sauce-like glow, calibrated droplets and crumb-level texture. If food exists, make it craveable; otherwise borrow food-ad lighting/material richness without forcing burger ingredients.',
+        "Apply Food CGI as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Hyper appetizing food ad CGI, Water droplets, steam wisps, Wet, condensation, micro droplets without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-057',
     name: 'NFT Collectible Avatar Render',
     category: '6. Organic Character And Bio CGI',
-    negativePrompt: 'traditional art',
+    negativePrompt:
+      'traditional art, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
     style: {
-      aesthetic: 'Collectible avatar render language',
-      subject_treatment: 'Clean',
-      color_and_tone: 'Neon, Gold, Rare traits, rarity gradient',
-      lighting_and_shadow: 'Studio, promo-ready',
-      texture_and_material: 'Plastic, Metal, collectible finish',
+      aesthetic:
+        'NFT Collectible Avatar Render acts as a transferable CGI-style router: start from Collectible avatar render language, Profile view, trait accessories and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Clean; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Neon, Gold, Rare traits, rarity gradient; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio, promo ready; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Plastic, Metal, collectible finish; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for NFT Collectible Avatar Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Hype, digital, exclusive drop',
-      rendering_and_quality: 'Bored Ape 3D collectible, avatar-centric hype',
-      key_features: 'Profile view, trait accessories',
+        'Structure the image through Lookdev camera for NFT Collectible Avatar Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Hype, digital, exclusive drop; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Bored Ape 3D collectible, avatar centric hype; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Collectible avatar render language; Profile view, trait accessories; Neon, Gold, Rare traits, rarity gradient; Plastic, Metal, collectible finish; Lookdev camera for NFT Collectible Avatar Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Give the input collectible-avatar styling: rarity-trait clarity, glossy feature emphasis, profile-picture legibility and drop-ready color blocking. If a face or character exists, amplify it; otherwise translate subject cues into trait metadata without forcing an ape, portrait, or NFT-drop setup. Apply NFT Collectible Avatar Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply NFT Collectible Avatar Render as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Collectible avatar render language, Profile view, trait accessories, Plastic, Metal, collectible finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-059',
     name: 'Digital Fashion',
     category: '6. Organic Character And Bio CGI',
-    negativePrompt: 'stiff cloth',
+    negativePrompt:
+      'stiff cloth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
     style: {
-      aesthetic: 'Virtual clothing',
-      subject_treatment: 'Cloth simulation',
-      color_and_tone: 'Iridescent, impossible fabric',
-      lighting_and_shadow: 'Runway',
-      texture_and_material: 'Digital fabric, weave simulation',
-      camera_and_composition: 'Floating cloth',
-      atmosphere_and_mood: 'Futuristic, fashion-material spectacle',
-      rendering_and_quality: 'Clo3D/Marvelous Designer digital garment simulation',
-      key_features: 'Drape, cloth dynamics',
+      aesthetic:
+        'Digital Fashion acts as a transferable CGI-style router: start from Virtual clothing, Drape, cloth dynamics and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Cloth simulation; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Iridescent, impossible fabric; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Runway; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Digital fabric, weave simulation; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Floating cloth; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Futuristic, fashion material spectacle; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Clo3D/Marvelous Designer digital garment simulation; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Virtual clothing; Drape, cloth dynamics; Iridescent, impossible fabric; Digital fabric, weave simulation; Floating cloth',
       creative_brief:
-        'Apply digital-fashion material logic to the input: impossible iridescent weaves, simulation-grade drape, thread-level patterns and runway-grade highlight control. If garments exist, elevate them; otherwise use fashion textile behavior without forcing a model, runway or floating dress.',
+        "Apply Digital Fashion as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Virtual clothing, Drape, cloth dynamics, Digital fabric, weave simulation without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-062',
     name: 'Organic Modeling',
     category: '6. Organic Character And Bio CGI',
-    negativePrompt: 'hard edge, robot',
+    negativePrompt:
+      'hard edge, robot, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
     style: {
-      aesthetic: 'Organic modeling flow',
-      subject_treatment: 'Flowing topology',
-      color_and_tone: 'Skin tones, green',
-      lighting_and_shadow: 'Subsurface scattering',
-      texture_and_material: 'Skin, bark, organic texture map',
+      aesthetic:
+        'Organic Modeling acts as a transferable CGI-style router: start from Organic modeling flow, Muscle/Growth flow, dynamesh topology and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Flowing topology; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Skin tones, green; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Subsurface scattering; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Skin, bark, organic texture map; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Organic Modeling: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Alive, natural, organic credibility',
-      rendering_and_quality: 'ZBrush digital sculpt, organic flow, natural forms',
-      key_features: 'Muscle/Growth flow, dynamesh topology',
+        'Structure the image through Lookdev camera for Organic Modeling: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Alive, natural, organic credibility; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with ZBrush digital sculpt, organic flow, natural forms; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Organic modeling flow; Muscle/Growth flow, dynamesh topology; Skin tones, green; Skin, bark, organic texture map; Lookdev camera for Organic Modeling: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Push the input through organic-modeling language: flowing topology, dynamesh sculptural mass, branching or muscular rhythm, subsurface warmth and evolution-like surface logic. It may become creature/plant-like when useful, but must not require a living body, forest or biological subject. Apply Organic Modeling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Organic Modeling as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Organic modeling flow, Muscle/Growth flow, dynamesh topology, Skin, bark, organic texture map without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-076',
     name: 'Balloon Art (Inflatable)',
     category: '6. Organic Character And Bio CGI',
-    negativePrompt: 'hard, heavy',
+    negativePrompt:
+      'hard, heavy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose',
     style: {
-      aesthetic: 'Mylar balloons',
-      subject_treatment: 'Seams, wrinkles',
-      color_and_tone: 'Metallic foil',
-      lighting_and_shadow: 'High reflection',
-      texture_and_material: 'Wrinkled foil, mylar shimmer',
-      camera_and_composition: 'Inflated',
-      atmosphere_and_mood: 'Fun, pop art, celebration',
-      rendering_and_quality: 'Jeff Koons gallery-scale pop, party spectacle',
-      key_features: 'Seams, reflective curves',
+      aesthetic:
+        'Balloon Art (Inflatable) acts as a transferable CGI-style router: start from Mylar balloons, Seams, reflective curves and organic and character CGI system built from anatomy, grooming, cloth, soft-body simulation, food material, medical cutaway, and believable sculpt topology, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Seams, wrinkles; preserve the prompt subject while routing it through organic form flow, garment dynamics, avatar readability, diagnostic cutaway, or appetizing surface simulation, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Metallic foil; let color follow skin, cloth, food, biological tissue, mylar, medical material, fashion fabric, or stylized collectible accents without flattening the shader, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through High reflection; shape light through subsurface lift, cloth sheen, food steam, rim grooming, diagnostic clarity, reflective foil, or studio character presentation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Wrinkled foil, mylar shimmer; surface detail should show sculpt topology, pores, muscles, wrinkles, cloth weave, droplets, mylar seams, cutaway planes, or organic growth flow, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Inflated; compose for model readability through turnarounds, pose-neutral clarity, garment silhouette, cutaway hierarchy, appetizing macro, or avatar trait legibility, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Fun, pop art, celebration; derive mood from body realism, digital fashion spectacle, clinical explanation, collectible identity, craving, celebration, or uncanny organic transformation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Jeff Koons gallery scale pop, party spectacle; finish with stable anatomy or object structure, clean simulation, readable material detail, and no melted limbs or fake plastic skin, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Mylar balloons; Seams, reflective curves; Metallic foil; Wrinkled foil, mylar shimmer; Inflated',
       creative_brief:
-        'Inflate the input into Mylar pop-sculpture language: wrinkled foil, metallic shimmer, visible seams, distorted studio reflections and buoyant tension. Keep celebration/Jeff Koons energy without forcing party props, gallery context or a balloon object. Apply Balloon Art as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Balloon Art (Inflatable) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Mylar balloons, Seams, reflective curves, Wrinkled foil, mylar shimmer without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -7,160 +7,232 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP03-031',
     name: 'Global Illumination',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'direct flash, harsh shadows',
+    negativePrompt:
+      'direct flash, harsh shadows, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'Soft bounced light',
-      subject_treatment: 'Color bleeding',
-      color_and_tone: 'Natural gradients, color-bleed realism',
-      lighting_and_shadow: 'Ambient occlusion, bounce-card lighting',
-      texture_and_material: 'Soft, light-responsive',
+      aesthetic:
+        'Global Illumination acts as a transferable CGI-style router: start from Soft bounced light, Soft shadows, indirect fill and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Color bleeding; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Natural gradients, color bleed realism; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Ambient occlusion, bounce card lighting; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Soft, light responsive; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for Global Illumination: stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Calm, realistic, naturally lit',
-      rendering_and_quality: 'Realistic, architectural, path-trace beauty',
-      key_features: 'Soft shadows, indirect fill',
+        'Structure the image through Lighting study camera for Global Illumination: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Calm, realistic, naturally lit; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Realistic, architectural, path trace beauty; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Soft bounced light; Soft shadows, indirect fill; Natural gradients, color bleed realism; Soft, light responsive; Lighting study camera for Global Illumination: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Emphasize global-illumination behavior across the input: color bleed, diffuse bounce, ambient fill, soft contact shadows and believable photon ricochet. Preserve natural expensive light without requiring a room, wall set or interior environment.',
+        "Apply Global Illumination as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Soft bounced light, Soft shadows, indirect fill, Soft, light responsive without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-032',
     name: 'Volumetric Fog',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'clear, vacuum',
+    negativePrompt:
+      'clear, vacuum, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'Light beams in air',
-      subject_treatment: 'God rays',
-      color_and_tone: 'Hazy, desaturated depth',
-      lighting_and_shadow: 'Scattered light, god-ray projection',
-      texture_and_material: 'Fog density, volumetric depth',
+      aesthetic:
+        'Volumetric Fog acts as a transferable CGI-style router: start from Light beams in air, Light shafts, air density sculpting and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through God rays; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Hazy, desaturated depth; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Scattered light, god ray projection; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Fog density, volumetric depth; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for Volumetric Fog: stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Mysterious, epic, volumetric scale',
-      rendering_and_quality: 'Cinematic, atmospheric, immersive mystery',
-      key_features: 'Light shafts, air-density sculpting',
+        'Structure the image through Lighting study camera for Volumetric Fog: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Mysterious, epic, volumetric scale; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Cinematic, atmospheric, immersive mystery; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Light beams in air; Light shafts, air density sculpting; Hazy, desaturated depth; Fog density, volumetric depth; Lighting study camera for Volumetric Fog: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Make atmosphere a render material around the input: layered fog volumes, blue-grey depth falloff, particulate beams and cinematic air density. Keep cathedral/forest grandeur as optional mood only; do not require windows, canopy, or specific environment. Apply Volumetric Fog as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Volumetric Fog as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Light beams in air, Light shafts, air density sculpting, Fog density, volumetric depth without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-034',
     name: 'Studio Lighting (3 Point)',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'flat, outdoor',
+    negativePrompt:
+      'flat, outdoor, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'Perfect product/portrait',
-      subject_treatment: 'Key, Fill, Rim',
-      color_and_tone: 'Balanced, broadcast-safe',
-      lighting_and_shadow: 'Controlled, key-fill-rim triangle',
-      texture_and_material: 'Clean, studio-perfect',
+      aesthetic:
+        'Studio Lighting (3 Point) acts as a transferable CGI-style router: start from Perfect product/portrait, Rim light, three point separation and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Key, Fill, Rim; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Balanced, broadcast safe; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Controlled, key fill rim triangle; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Clean, studio perfect; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for Studio Lighting (3 Point): stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Professional, polished confidence',
-      rendering_and_quality: 'Commercial, professional, portrait-ready',
-      key_features: 'Rim light, three-point separation',
+        'Structure the image through Lighting study camera for Studio Lighting (3 Point): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Professional, polished confidence; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Commercial, professional, portrait ready; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Perfect product/portrait; Rim light, three point separation; Balanced, broadcast safe; Clean, studio perfect; Lighting study camera for Studio Lighting (3 Point): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Apply premium studio lighting discipline to the input: controlled key/fill/rim ratios, softbox gradients, clean shadow approval and broadcast-safe polish. Works for product, portrait or abstract subject without forcing any one of those formats.',
+        "Apply Studio Lighting (3 Point) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Perfect product/portrait, Rim light, three point separation, Clean, studio perfect without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-035',
     name: 'HDRI Environment',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'studio background',
+    negativePrompt:
+      'studio background, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'HDRI matched-light integration',
-      subject_treatment: 'Realistic reflections',
-      color_and_tone: 'Natural, environment-derived',
-      lighting_and_shadow: 'Image based lighting, spherical harmony',
-      texture_and_material: 'Real world reflection, ambient integration',
+      aesthetic:
+        'HDRI Environment acts as a transferable CGI-style router: start from HDRI matched light integration, Matched lighting, reflection authenticity and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Realistic reflections; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Natural, environment derived; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Image based lighting, spherical harmony; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Real world reflection, ambient integration; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for HDRI Environment: stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Grounded, location-accurate',
-      rendering_and_quality: 'Photorealistic integration, composited realism',
-      key_features: 'Matched lighting, reflection authenticity',
+        'Structure the image through Lighting study camera for HDRI Environment: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Grounded, location accurate; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Photorealistic integration, composited realism; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'HDRI matched light integration; Matched lighting, reflection authenticity; Natural, environment derived; Real world reflection, ambient integration; Lighting study camera for HDRI Environment: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Integrate the input with HDRI truth: matched reflections, contact shadows, ambient color wrap and unseen-environment lighting that gives CG weight. Use location cues only as reflection language; do not require a sunset, mountaintop, city square or object placement. Apply HDRI Environment as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply HDRI Environment as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through HDRI matched light integration, Matched lighting, reflection authenticity, Real world reflection, ambient integration without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-037',
     name: 'Ambient Occlusion Pass',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'color, light',
+    negativePrompt:
+      'color, light, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'Contact shadows only',
-      subject_treatment: 'Soft gradients in corners',
-      color_and_tone: 'White and Grey, contact-depth tones',
-      lighting_and_shadow: 'Occlusion, uniform ambient skylight',
-      texture_and_material: 'Clay, matte sculpting base',
+      aesthetic:
+        'Ambient Occlusion Pass acts as a transferable CGI-style router: start from Contact shadows only, Corner shadows, contact darkness and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Soft gradients in corners; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with White and Grey, contact depth tones; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Occlusion, uniform ambient skylight; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Clay, matte sculpting base; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for Ambient Occlusion Pass: stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Neutral, shape focus, pure geometry',
-      rendering_and_quality: 'Technical, form study, sculpt-review',
-      key_features: 'Corner shadows, contact darkness',
+        'Structure the image through Lighting study camera for Ambient Occlusion Pass: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Neutral, shape focus, pure geometry; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Technical, form study, sculpt review; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Contact shadows only; Corner shadows, contact darkness; White and Grey, contact depth tones; Clay, matte sculpting base; Lighting study camera for Ambient Occlusion Pass: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Render any input as an ambient-occlusion review pass: clay-white matte surface, soft grey crevice gradients, contact darkness, undercut emphasis, and geometry-first readability with color and direct light removed. Keep sculptural form study without requiring a standalone object, turntable, character model, or studio plane.',
+        "Apply Ambient Occlusion Pass as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Contact shadows only, Corner shadows, contact darkness, Clay, matte sculpting base without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-038',
     name: 'Rim Lighting',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'front light, flat',
+    negativePrompt:
+      'front light, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'Silhouette with edge glow',
-      subject_treatment: 'Glowing outline',
-      color_and_tone: 'Dark subject, bright edge, silhouette contrast',
-      lighting_and_shadow: 'Backlight, edge-rim accent',
-      texture_and_material: 'Contrast, rim-catch surfaces',
+      aesthetic:
+        'Rim Lighting acts as a transferable CGI-style router: start from Silhouette with edge glow, Edge highlight, halo definition and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Glowing outline; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Dark subject, bright edge, silhouette contrast; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Backlight, edge rim accent; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Contrast, rim catch surfaces; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for Rim Lighting: stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Mysterious, epic, cinematic tension',
-      rendering_and_quality: 'Dramatic, moody, hero-reveal',
-      key_features: 'Edge highlight, halo definition',
+        'Structure the image through Lighting study camera for Rim Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Mysterious, epic, cinematic tension; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Dramatic, moody, hero reveal; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Silhouette with edge glow; Edge highlight, halo definition; Dark subject, bright edge, silhouette contrast; Contrast, rim catch surfaces; Lighting study camera for Rim Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Use rim lighting as primary style: electric silhouette edges, dark falloff, halo separation and reveal-first contrast. Preserve dramatic hero energy only as lighting attitude; do not require a character, face or step-forward pose. Apply Rim Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Rim Lighting as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Silhouette with edge glow, Edge highlight, halo definition, Contrast, rim catch surfaces without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-041',
     name: 'God Rays (Volumetric)',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'clear, sharp',
+    negativePrompt:
+      'clear, sharp, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'Volumetric light-shaft rendering',
-      subject_treatment: 'Shafts of light',
-      color_and_tone: 'Warm or Cool beams, gradient shafts',
-      lighting_and_shadow: 'Directional, atmosphere-piercing',
-      texture_and_material: 'Dust motes, particulate volume',
+      aesthetic:
+        'God Rays (Volumetric) acts as a transferable CGI-style router: start from Volumetric light shaft rendering, Light beams, atmospheric scattering and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Shafts of light; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Warm or Cool beams, gradient shafts; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Directional, atmosphere piercing; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Dust motes, particulate volume; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for God Rays (Volumetric): stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Hopeful, grand, transcendent awe',
-      rendering_and_quality: 'Epic volumetric scattering, spiritual scale',
-      key_features: 'Light beams, atmospheric scattering',
+        'Structure the image through Lighting study camera for God Rays (Volumetric): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Hopeful, grand, transcendent awe; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Epic volumetric scattering, spiritual scale; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Volumetric light shaft rendering; Light beams, atmospheric scattering; Warm or Cool beams, gradient shafts; Dust motes, particulate volume; Lighting study camera for God Rays (Volumetric): stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Add volumetric light shafts to the input: directional beams, dust motes, particulate scattering and warm/cool gradient columns that make air visible. Keep spiritual scale without forcing windows, trees, cathedral space or forest canopy. Apply God Rays as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply God Rays (Volumetric) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Volumetric light shaft rendering, Light beams, atmospheric scattering, Dust motes, particulate volume without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-042',
     name: 'Diorama Lighting',
     category: '3. Lighting And Atmosphere',
-    negativePrompt: 'flat, realistic scale',
+    negativePrompt:
+      'flat, realistic scale, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, flat lighting, random glow overlay, crushed black, no shadow logic',
     style: {
-      aesthetic: 'Miniature tilt-shift treatment',
-      subject_treatment: 'Tilt-shift blur',
-      color_and_tone: 'Saturated, cozy, miniature palette',
-      lighting_and_shadow: 'Warm, close, macro-lighting',
-      texture_and_material: 'Handmade feel, model-kit texture',
+      aesthetic:
+        'Diorama Lighting acts as a transferable CGI-style router: start from Miniature tilt shift treatment, Miniature, depth of field isolation and lighting and atmosphere system built from transport passes, volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Tilt shift blur; preserve the prompt subject while letting light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Saturated, cozy, miniature palette; treat color as light temperature, atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed contrast, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Warm, close, macro lighting; make the named light behavior visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point separation, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Handmade feel, model kit texture; surface response should reveal air particles, shadow contact, glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lighting-study camera for Diorama Lighting: stable three-quarter framing, visible depth layers, clear shadow planes, and a vertical style-card crop.',
-      atmosphere_and_mood: 'Playful, tiny, tabletop wonder',
-      rendering_and_quality: 'Cute, small, tilt-shift magic',
-      key_features: 'Miniature, depth-of-field isolation',
+        'Structure the image through Lighting study camera for Diorama Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline; compose around the light event through depth layers, contact points, miniature isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, tiny, tabletop wonder; derive mood from realism, wonder, product polish, sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Cute, small, tilt shift magic; finish with controlled exposure, clean shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Miniature tilt shift treatment; Miniature, depth of field isolation; Saturated, cozy, miniature palette; Handmade feel, model kit texture; Lighting study camera for Diorama Lighting: stable three quarter framing, visible depth layers, clear shadow planes, and an optional vertical composition discipline',
       creative_brief:
-        'Miniaturize the input through tilt-shift optics: macro-scale warmth, saturated model-kit color, creamy near/far blur and handcrafted surface cues. Do not require trees, buildings, tabletop worlds or a literal diorama. Apply Diorama Lighting as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Diorama Lighting as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Miniature tilt shift treatment, Miniature, depth of field isolation, Handmade feel, model kit texture without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

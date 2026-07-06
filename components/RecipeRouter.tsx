@@ -6,6 +6,7 @@ import type { CharacterLabRecipe as CharacterLabRecipeComponent } from './recipe
 import type { CharacterSheetRecipe as CharacterSheetRecipeComponent } from './recipes/CharacterSheetRecipe';
 import type { CinematicRecipe as CinematicRecipeComponent } from './recipes/CinematicRecipe';
 import type { RemasterRecipe as RemasterRecipeComponent } from './recipes/RemasterRecipe';
+import type { SpriteAtlasRecipe as SpriteAtlasRecipeComponent } from './recipes/SpriteAtlasRecipe';
 import type { SpritesheetRecipe as SpritesheetRecipeComponent } from './recipes/SpritesheetRecipe';
 import type { StylesRecipe as StylesRecipeComponent } from './recipes/StylesRecipe';
 import type { TimelineRecipe as TimelineRecipeComponent } from './recipes/TimelineRecipe';
@@ -23,6 +24,7 @@ type CharacterLabRecipeProps = React.ComponentProps<typeof CharacterLabRecipeCom
 type CharacterSheetRecipeProps = React.ComponentProps<typeof CharacterSheetRecipeComponent>;
 type CinematicRecipeProps = React.ComponentProps<typeof CinematicRecipeComponent>;
 type RemasterRecipeProps = React.ComponentProps<typeof RemasterRecipeComponent>;
+type SpriteAtlasRecipeProps = React.ComponentProps<typeof SpriteAtlasRecipeComponent>;
 type SpritesheetRecipeProps = React.ComponentProps<typeof SpritesheetRecipeComponent>;
 type StylesRecipeProps = React.ComponentProps<typeof StylesRecipeComponent>;
 type TimelineRecipeProps = React.ComponentProps<typeof TimelineRecipeComponent>;
@@ -57,6 +59,11 @@ const remasterRecipe = createPreloadableRecipe<RemasterRecipeProps>(() =>
 const spritesheetRecipe = createPreloadableRecipe<SpritesheetRecipeProps>(() =>
   import('./recipes/SpritesheetRecipe').then((module) => ({ default: module.SpritesheetRecipe })),
 );
+const spriteAtlasRecipe = createPreloadableRecipe<SpriteAtlasRecipeProps>(() =>
+  import('./recipes/SpriteAtlasRecipe').then((module) => ({
+    default: module.SpriteAtlasRecipe,
+  })),
+);
 const cinematicRecipe = createPreloadableRecipe<CinematicRecipeProps>(() =>
   import('./recipes/CinematicRecipe').then((module) => ({ default: module.CinematicRecipe })),
 );
@@ -84,6 +91,7 @@ const timelineRecipe = createPreloadableRecipe<TimelineRecipeProps>(() =>
 
 const RemasterRecipe = remasterRecipe.Component;
 const SpritesheetRecipe = spritesheetRecipe.Component;
+const SpriteAtlasRecipe = spriteAtlasRecipe.Component;
 const CinematicRecipe = cinematicRecipe.Component;
 const CharacterSheetRecipe = characterSheetRecipe.Component;
 const CharacterLabRecipe = characterLabRecipe.Component;
@@ -97,6 +105,7 @@ const RECIPE_PRELOADERS = {
   camera: cameraAnglesRecipe.load,
   timeline: timelineRecipe.load,
   spritesheet: spritesheetRecipe.load,
+  'sprite-atlas': spriteAtlasRecipe.load,
   cinematic: cinematicRecipe.load,
   character: characterSheetRecipe.load,
   'character-lab': characterLabRecipe.load,
@@ -149,6 +158,7 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
   const LoadedCameraAnglesRecipe = cameraAnglesRecipe.getLoaded() ?? CameraAnglesRecipe;
   const LoadedTimelineRecipe = timelineRecipe.getLoaded() ?? TimelineRecipe;
   const LoadedSpritesheetRecipe = spritesheetRecipe.getLoaded() ?? SpritesheetRecipe;
+  const LoadedSpriteAtlasRecipe = spriteAtlasRecipe.getLoaded() ?? SpriteAtlasRecipe;
   const LoadedCinematicRecipe = cinematicRecipe.getLoaded() ?? CinematicRecipe;
   const LoadedCharacterSheetRecipe = characterSheetRecipe.getLoaded() ?? CharacterSheetRecipe;
   const LoadedCharacterLabRecipe = characterLabRecipe.getLoaded() ?? CharacterLabRecipe;
@@ -213,6 +223,13 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             config={generationConfig}
             updateConfig={updateGenerationConfig}
             onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+          />
+        )}
+        {activeRecipe === 'sprite-atlas' && (
+          <LoadedSpriteAtlasRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
             isGenerating={isGenerating}
           />
         )}

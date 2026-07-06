@@ -12,28 +12,78 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: Urbex decay documentary
-  subject_treatment: Decay, peeling layers
-  color_and_tone: Desaturated, rust
-  lighting_and_shadow: Shafts of light
-  texture_and_material: Dust, debris
+  aesthetic: >-
+    Urbex (Urban Exploration) acts as a transferable photographic style router: begin from Urbex
+    decay documentary, Ruin texture, and observational photographic system built from
+    available-light capture, imperfect timing, public-space pressure, and real-world incident, then
+    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Decay, peeling layers; preserve prompt identity while favoring
+    candid posture, active context, environmental evidence, and unsanitized physical detail, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Desaturated, rust; grade as street, travel, concert, war, sport, paparazzi, or field
+    documentary capture rather than commercial color polish, with value separation and white balance
+    choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Shafts of light; use available light, flash intrusion, stage beams, harsh noon, rain
+    reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Dust, debris; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO,
+    and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture
+    overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Urbex (Urban Exploration): lens choice, crop distance, depth of field, and focal
-    hierarchy support 4. Documentary And Street without generic framing.
-  atmosphere_and_mood: Lonely, post-apocalyptic
-  rendering_and_quality: Gritty, haunting
-  key_features: Ruin texture
+    Compose through Urbex (Urban Exploration) candid timing, available-light realism, environmental
+    evidence, and observational photographic pressure; compose with decisive moment tension, wide
+    action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable
+    framing, with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Lonely, post-apocalyptic; derive mood from urgency, witness, travel discovery,
+    danger, crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Gritty, haunting; finish as credible documentary photography with restrained
+    processing, readable action, and no stock-advertising gloss, high-resolution photographic
+    detail, and disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Urbex decay documentary; Ruin texture; Desaturated, rust; Shafts of light; Urbex (Urban
+    Exploration) candid timing, available-light realism, environmental evidence, and observational
+    photographic pressure
   creative_brief: >-
-    Apply urbex abandonment to the input: desaturated rust palette, peeling layers, dust, debris texture,
-    lonely light shafts, and documentary grit should age any subject without requiring buildings or
-    post-apocalyptic setting.
+    Apply Urbex (Urban Exploration) as a photographic preset over prompt X: preserve the user's
+    requested subject, then route Urbex decay documentary, Desaturated, rust, Shafts of light, Dust,
+    debris, and Urbex (Urban Exploration) candid timing, available-light realism, environmental
+    evidence, and observational photographic pressure through optics, exposure, palette, surface
+    response, timing, and finish without requiring the card image's original subject.
 avoidRules:
   - clean
   - new
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - staged advertisement
+  - fake smiles
+  - stock-photo gloss
+  - tourist postcard polish
+  - readable captions
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-075.webp
 attributes:
-  negativePrompt: clean, new
+  negativePrompt: >-
+    clean, new, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
+    plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake
+    smiles, stock-photo gloss, tourist postcard polish, readable captions
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

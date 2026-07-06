@@ -14,22 +14,76 @@ tags:
   - samurai-medieval
 visualDna:
   aesthetic: >-
-    Breach-pressure anime where structural failure, flame logic, and defensive choreography define the visual
-    identity.
-  subject_treatment: Heavy structural silhouettes, fracture-oriented lines, and arc vectors used as compositional pressure.
-  color_and_tone: Ember orange peaks, smoke black masses, calcified stone grays, and sparse signal-red command accents.
-  lighting_and_shadow: Fire-dominant nocturnal contrast with intermittent blast flares that reveal tactical layers in pulses.
-  texture_and_material: Cracked stone, char-flaked timber, soot-burnished metal, and airborne ash granularity.
-  camera_and_composition: Oblique structural perspective that exaggerates breach depth and converging pressure channels.
-  atmosphere_and_mood: Controlled collapse, disciplined resistance, and escalating heat-driven urgency.
+    Ember Breach Pressure Style acts as a transferable anime-prestige router: a ember anime
+    direction shaped by era-aware line economy and genre tone, alongside a breach anime direction
+    shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with
+    restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure;
+    it routes era, genre, line economy, cel or digital finish, and performance tone without locking
+    prompt content to the source title or sample image.
+  subject_treatment: >-
+    Preserve the prompt subject, action, and context while restyling forms through contours paced by
+    ember tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    breach tension, readable pose energy, and silhouette discipline; identity should remain readable
+    through anime contour, expression economy, pose energy, shape simplification, and effect
+    hierarchy instead of a required canon character or title scene.
+  color_and_tone: >-
+    Map color through ember orange, smoke black, and hot crimson accents, alongside a breach accent
+    system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit
+    indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel
+    flats intentional, accents purposeful, and palette behavior attached to the requested content.
+  lighting_and_shadow: >-
+    Use low fire glow and ash-soft rim light, alongside a breach light logic using cel rim, glow
+    behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges,
+    ember glow, and selective metal highlights; shadows should read as anime light design, rims
+    should clarify form, and glow or effects should support the prompt rather than replacing it.
+  texture_and_material: >-
+    Render soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink grain
+    tuned to breach material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone
+    moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain,
+    cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects,
+    environments, action, and abstractions.
+  camera_and_composition: >-
+    Frame around ember converted into reusable framing rhythm and anime timing, alongside breach
+    converted into reusable framing rhythm and anime timing, then extend it with axial pressure,
+    ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style
+    should support portraits, props, machines, performances, landscapes, symbols, and full scenes
+    through reusable anime staging grammar instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through ember emotional pressure and genre-specific tone, alongside breach emotional
+    pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code,
+    sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual,
+    violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the
+    chosen anime lineage.
   rendering_and_quality: >-
-    Epic widescreen readability with strong event hierarchy between fracture zone, resistance layer, and heat
-    pressure.
-  key_features: Breach seams, arc trajectories, pressure points, and command silhouettes amid ember drift.
+    Finish with clean anime finishing that keeps ember identity readable without noisy denoise,
+    alongside clean anime finishing that keeps breach identity readable without noisy denoise;
+    enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero
+    ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable
+    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
+    3D-render drift.
+  key_features: >-
+    a ember anime direction shaped by era-aware line economy and genre tone, alongside a breach
+    anime direction shaped by era-aware line economy and genre tone; contours paced by ember
+    tension, readable pose energy, and silhouette discipline, alongside contours paced by breach
+    tension, readable pose energy, and silhouette discipline; soot, sparks, warm dust, and charred
+    paint texture, alongside cel paint and ink grain tuned to breach material contrast; low fire
+    glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and
+    blocked shadow; ember converted into reusable framing rhythm and anime timing, alongside breach
+    converted into reusable framing rhythm and anime timing
   creative_brief: >-
-    Establish a transferable ember-breach-pressure grammar for any subject: fracture geometry, fire-lit pulse
-    lighting, layered conflict readability, and controlled collapse without imposing castles, sieges, walls,
-    projectiles, defenders, shield-lines, or engines.
+    Apply Ember Breach Pressure Style after prompt X as a transferable anime-prestige layer: prompt
+    X supplies subject, action, setting, tone, and intensity, while this preset supplies a ember
+    anime direction shaped by era-aware line economy and genre tone, alongside a breach anime
+    direction shaped by era-aware line economy and genre tone, alongside contours paced by ember
+    tension, readable pose energy, and silhouette discipline, alongside contours paced by breach
+    tension, readable pose energy, and silhouette discipline; ember orange, smoke black, and hot
+    crimson accents, alongside a breach accent system held inside disciplined cel values; low fire
+    glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and
+    blocked shadow; soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink
+    grain tuned to breach material contrast and ember converted into reusable framing rhythm and
+    anime timing, alongside breach converted into reusable framing rhythm and anime timing, finish
+    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
+    bundle, location, sport, instrument, weapon, or card composition.
 avoidRules:
   - photoreal
   - modern-tech
@@ -37,10 +91,24 @@ avoidRules:
   - watermark
   - text
   - logo
+  - generic samurai cosplay
+  - modern firearms
+  - sci-fi neon
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
+  - signature
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-029.webp
 attributes:
-  negativePrompt: photoreal, modern-tech, colorful-cute, watermark, text, logo
+  negativePrompt: >-
+    photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern
+    firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot,
+    generic anime filter, prompt-literal card, muddy cel noise, readable text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

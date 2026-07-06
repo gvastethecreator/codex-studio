@@ -12,20 +12,62 @@ tags:
   - illustration-and-graphic-novel
   - technical-and-reference-sheets
 visualDna:
-  aesthetic: Game HUD wireframe concept balancing diegetic and overlay paradigms
-  subject_treatment: Clean bounding-box architecture with spacing, flow, and hierarchy guides
-  color_and_tone: Functional UI neutrals with semantic accent colors for state signaling
-  lighting_and_shadow: Flat interface contrast with optional interaction glow cues
-  texture_and_material: Minimalist screen-surface treatment; precision-first wireframe presentation
-  camera_and_composition: Safe-zone aware screen layout plus world-anchored UI option studies
-  atmosphere_and_mood: Functional, restrained, information-priority design
-  rendering_and_quality: UX concept fidelity focused on clarity, density control, and usability
-  key_features: Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints
+  aesthetic: >-
+    UI/HUD Wireframe Concept acts as a transferable illustration router: start from Game HUD
+    wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear alternatives, stat
+    cluster prototypes, readability checkpoints and technical reference and interface-spec system
+    built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and
+    production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Clean bounding-box architecture with spacing, flow, and
+    hierarchy guides; preserve the requested subject while expressing it through schematic
+    breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or
+    specification surfaces, keeping the requested identity, silhouette, pose, object function, or
+    setting legible.
+  color_and_tone: >-
+    Build color with Functional UI neutrals with semantic accent colors for state signaling; use
+    color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow,
+    anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Flat interface contrast with optional interaction glow cues; keep light
+    diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
+    anatomical separation, or measured shadow restraint, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Minimalist screen-surface treatment; precision-first wireframe presentation; surface
+    detail should support readability with grid paper, line weights, translucent overlays,
+    measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Safe-zone aware screen layout plus world-anchored UI option studies;
+    compose through orthographic projection, exploded spacing, callout grouping, interface modules,
+    size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Functional, restrained, information-priority design, mood carried by UI/HUD
+    Wireframe Concept craft, material pressure, and visual restraint; derive mood from precision,
+    planning, research, interface control, anatomical study, engineering authority, or catalogued
+    comparison, letting the style alter interpretation without demanding a specific story, location,
+    or actor.
+  rendering_and_quality: >-
+    Finish with UX concept fidelity focused on clarity, density control, and usability; finish with
+    readable technical communication, crisp line hierarchy, controlled notation-like detail, and no
+    illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Game HUD wireframe concept balancing diegetic and overlay paradigms; Radial-vs-linear
+    alternatives, stat cluster prototypes, readability checkpoints; Functional UI neutrals with
+    semantic accent colors for state signaling; Minimalist screen-surface treatment; precision-first
+    wireframe presentation; Safe-zone aware screen layout plus world-anchored UI option studies
   creative_brief: >-
-    Apply UI/HUD wireframe concept language to any input: modular panels, safe-zone framing, scanline grids,
-    reticles, status blocks, icon placeholders, and layered interface hierarchy. If no software/game context
-    exists, translate the prompt into abstract interface architecture without requiring readable UI text,
-    screenshots, or a game scene.
+    Apply UI/HUD Wireframe Concept as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Game HUD wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear
+    alternatives, stat cluster prototypes, readability checkpoints, Minimalist screen-surface
+    treatment; precision-first wireframe presentation without requiring the card image's original
+    subject.
 avoidRules:
   - finished
   - polished
@@ -37,10 +79,26 @@ avoidRules:
   - busy
   - cluttered
   - beautiful art
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - illegible labels
+  - decorative clutter
+  - shaded cinematic render
+  - random UI text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-099.webp
 attributes:
-  negativePrompt: finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art
+  negativePrompt: >-
+    finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful
+    art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels,
+    decorative clutter, shaded cinematic render, random UI text
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

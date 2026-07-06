@@ -12,19 +12,47 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Cheap plastic lens photo
-  subject_treatment: Soft corners
-  color_and_tone: High contrast, cheap flash
-  lighting_and_shadow: Direct flash
-  texture_and_material: Grainy
-  camera_and_composition: Chromatic aberration
-  atmosphere_and_mood: Fun, cheap
-  rendering_and_quality: Casual flash snapshot
-  key_features: Flash falloff
+  aesthetic: >-
+    Disposable Camera acts as a transferable photographic style router: begin from Cheap plastic
+    lens photo, Flash falloff, and analog photographic process system built from film stock
+    response, lens imperfection, chemical artifact, grain, and exposure latitude, then apply the
+    photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Soft corners; preserve the prompt scene while routing detail
+    through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with High contrast, cheap flash; let palette come from emulsion bias, slide-film
+    saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Direct flash; shape highlights and shadows through film latitude, flash falloff, long
+    exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density,
+    highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Grainy; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
+    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Chromatic aberration; use camera format, crop, lens character, depth of field,
+    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Fun, cheap; derive mood from memory, imperfection, tactile chemistry, nostalgia,
+    scientific strangeness, or disposable-camera immediacy, so the preset changes interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Casual flash snapshot; finish as believable analog capture with coherent grain
+    scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Cheap plastic lens photo; Flash falloff; High contrast, cheap flash; Direct flash; Chromatic
+    aberration
   creative_brief: >-
-    Cheap plastic optics with priceless accident energy: direct flash falloff, softened corners, harsh
-    contrast, chromatic fringe, and grainy consumer-film texture. Make any subject feel caught by a disposable
-    camera, immediate and unpolished, without forcing faces, rooms, or party context.
+    Apply Disposable Camera as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Cheap plastic lens photo, High contrast, cheap flash, Direct flash, Grainy,
+    and Chromatic aberration through optics, exposure, palette, surface response, timing, and finish
+    without requiring the card image's original subject.
 avoidRules:
   - illustration
   - painting
@@ -41,12 +69,22 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-022.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
+    clarity, generic vintage filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

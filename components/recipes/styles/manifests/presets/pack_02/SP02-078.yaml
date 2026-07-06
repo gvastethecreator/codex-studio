@@ -12,30 +12,85 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Long exposure trails
-  subject_treatment: Light streaks
-  color_and_tone: Neon lines, electric blue trails, magenta ribbon, RGB glow
-  lighting_and_shadow: Dark background, total black, light-only visibility
-  texture_and_material: Glowing lines, light-tube smoothness, LED ribbon
+  aesthetic: >-
+    Light Painting acts as a transferable cinematic-media router: start from Long exposure trails,
+    Light Painting light transport, optical artifacts, exposure discipline, atmosphere depth, and
+    camera-response behavior, Trails, light ribbon, calligraphic light, motion-blur glow and
+    portable lighting and atmosphere system built from light transport, exposure behavior, optical
+    distortion, volumetric density, reflection, and camera response, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Light streaks, adapt the requested subject through light
+    transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response
+    behavior while preserving prompt identity; preserve the requested subject while letting the
+    named light, atmosphere, or optical effect transform silhouette, depth, value, and surface
+    response, keeping the requested identity, silhouette, action, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Neon lines, electric blue trails, magenta ribbon, RGB glow; use color as light
+    temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion,
+    prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Dark depth field, total black, light-only visibility; make the named light
+    behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays,
+    split contrast, or softbox falloff, so exposure and shadow structure support the media process
+    without overwriting the requested content.
+  texture_and_material: >-
+    Render Glowing lines, light-tube smoothness, LED ribbon; surface detail should reveal particles,
+    lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical
+    streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler
+    texture.
   camera_and_composition: >-
-    Camera language native to Light Painting: genre-aware framing, lens character, focal hierarchy, motion
-    cue, and vertical style-card composition.
-  atmosphere_and_mood: Magic, art, drawing-with-light, nocturnal abstraction
-  rendering_and_quality: Creative, night, long-exposure artistry, motion-sculpture
-  key_features: Trails, light ribbon, calligraphic light, motion-blur glow
+    Structure the image through Camera language native to Light Painting: genre-aware framing, lens
+    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Magic, art, drawing-with-light, nocturnal abstraction; derive mood from
+    illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon
+    danger, or temporal flash energy, letting the media style alter interpretation without demanding
+    a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Creative, night, long-exposure artistry, motion-sculpture; finish with believable
+    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
+    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
+    to make the style recognizable.
+  key_features: >-
+    Long exposure trails, Light Painting light transport, optical artifacts, exposure discipline,
+    atmosphere depth, and camera-response behavior; Trails, light ribbon, calligraphic light,
+    motion-blur glow; Neon lines, electric blue trails, magenta ribbon, RGB glow; Glowing lines,
+    light-tube smoothness, LED ribbon; Camera language native to Light Painting: genre-aware
+    framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition
   creative_brief: >-
-    Use light painting as long-exposure mark-making: luminous trails, calligraphic motion, dark-field
-    separation, and neon gesture paths. Avoid performers, night-play scenes, or literal drawing tools. The
-    input should be augmented by light traces that reveal motion over time. Apply Light Painting as a portable
-    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed
-    IP scene, or narrative setup.
+    Apply Light Painting as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Long exposure trails, Light Painting light transport, optical
+    artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Trails, light
+    ribbon, calligraphic light, motion-blur glow, Glowing lines, light-tube smoothness, LED ribbon
+    without requiring the card image's original subject.
 avoidRules:
   - static light
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-078.webp
 attributes:
-  negativePrompt: static light
+  negativePrompt: >-
+    static light, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

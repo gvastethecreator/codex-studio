@@ -12,19 +12,45 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: Action camera POV
-  subject_treatment: Fisheye distortion
-  color_and_tone: Vibrant, sharp
-  lighting_and_shadow: Harsh available light
-  texture_and_material: Digital sharpening
-  camera_and_composition: Curved horizon
-  atmosphere_and_mood: Active, immersive
-  rendering_and_quality: Action-camera realism
-  key_features: Wide FOV
+  aesthetic: >-
+    GoPro Wide acts as a transferable photographic style router: begin from Action camera POV, Wide
+    FOV, and observational photographic system built from available-light capture, imperfect timing,
+    public-space pressure, and real-world incident, then apply the photographic behavior to prompt X
+    instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Fisheye distortion; preserve prompt identity while favoring
+    candid posture, active context, environmental evidence, and unsanitized physical detail, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Vibrant, sharp; grade as street, travel, concert, war, sport, paparazzi, or field
+    documentary capture rather than commercial color polish, with value separation and white balance
+    choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Harsh available light; use available light, flash intrusion, stage beams, harsh noon, rain
+    reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Digital sharpening; keep street surfaces, sweat, dust, fabric wear, weather, grain, high
+    ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy
+    texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Curved horizon; compose with decisive moment tension, wide action proximity,
+    telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Active, immersive; derive mood from urgency, witness, travel discovery, danger,
+    crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Action-camera realism; finish as credible documentary photography with restrained
+    processing, readable action, and no stock-advertising gloss, high-resolution photographic
+    detail, and disciplined denoise without losing natural grain where the preset needs it.
+  key_features: Action camera POV; Wide FOV; Vibrant, sharp; Harsh available light; Curved horizon
   creative_brief: >-
-    Apply GoPro-wide action optics to the input: ultra-wide FOV, curved horizon distortion, digital sharpness,
-    hard available light, and foreground pull should make any subject immersive without requiring sports or
-    travel.
+    Apply GoPro Wide as a photographic preset over prompt X: preserve the user's requested subject,
+    then route Action camera POV, Vibrant, sharp, Harsh available light, Digital sharpening, and
+    Curved horizon through optics, exposure, palette, surface response, timing, and finish without
+    requiring the card image's original subject.
 avoidRules:
   - illustration
   - painting
@@ -41,12 +67,22 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - staged advertisement
+  - fake smiles
+  - stock-photo gloss
+  - tourist postcard polish
+  - readable captions
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-023.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, staged advertisement, fake smiles, stock-photo gloss, tourist postcard polish,
+    readable captions
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

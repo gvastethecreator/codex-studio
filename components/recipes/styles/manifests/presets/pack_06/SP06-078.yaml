@@ -12,22 +12,49 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Gilded illustration
-  subject_treatment: Gold accents
-  color_and_tone: Gold, Black
-  lighting_and_shadow: Reflective
-  texture_and_material: Metal foil, cracks
-  camera_and_composition: Flat gold areas
-  atmosphere_and_mood: Rich, ornamental
-  rendering_and_quality: Ornamental gilded finish with metallic leaf behavior and decorative flatness
-  key_features: Metallic shine
+  aesthetic: >-
+    Gold Leaf Art acts as a transferable art-medium router: start from Gilded illustration, Metallic
+    shine and mixed-media assembly system built from layering, adhesion, surface collision,
+    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Gold accents; preserve the prompt subject while rebuilding
+    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
+    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Gold, Black; treat color as material combination: paper aging, varnish warmth,
+    toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil
+    flow, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Reflective; make light reveal relief, varnish gloss, paper lift, tape
+    shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Metal foil, cracks; surface detail should show torn fiber, glue, tape edge, cork tooth,
+    thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Flat gold areas; compose through layer order, overlap, pin logic,
+    cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a
+    literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Rich, ornamental; derive mood from DIY urgency, memory, repair, evidence, punk
+    collision, tactile intimacy, decorative excess, or experimental material play, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Ornamental gilded finish with metallic leaf behavior and decorative flatness; finish
+    with coherent material stacking, readable subject transformation, and no single flat texture
+    pasted over the whole image, clean denoised surfaces where appropriate, and enough craft
+    evidence to make the medium recognizable.
+  key_features: Gilded illustration; Metallic shine; Gold, Black; Metal foil, cracks; Flat gold areas
   creative_brief: >-
-    Gold leaf adheres with breathlike delicacy, the slightest air current threatening to fold the foil into
-    oblivion. The metal catches light and throws it back as radiance, an active source rather than passive
-    surface. The image should feel precious through material reflectivity and ornament, not through any fixed
-    subject. Apply this mixed-media process over any input: preserve material assembly, edge evidence, surface
-    treatment, layering logic, and handmade artifacts while avoiding required clippings, readable text,
-    boards, fire, studio setup, or literal craft-table scene.
+    Apply Gold Leaf Art as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Gilded
+    illustration, Metallic shine, Metal foil, cracks without requiring the card image's original
+    subject.
 avoidRules:
   - photo
   - realistic
@@ -44,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-078.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake
+    scrapbook text, craft-table default, clean vector render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

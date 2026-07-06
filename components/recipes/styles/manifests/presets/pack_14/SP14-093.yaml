@@ -14,37 +14,80 @@ tags:
   - cosmology
 visualDna:
   aesthetic: >-
-    Omen Salt Processing within 4. Mythic Cosmology & Omens: a reusable Mythic Noir Curated Vault visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Omen Salt Processing's specific style identity.
+    Omen Salt Processing acts as a transferable mythic-noir router: omen translated into dark
+    symbolic behavior, salt translated into dark symbolic behavior plus processing translated into
+    dark symbolic behavior fused with cosmological omen design with orbital law, astral records,
+    meridian axes, eclipse timing, and catastrophic elegance; it carries symbol, omen, ritual
+    authority, and mature editorial restraint without locking prompt content to its sample image.
   subject_treatment: >-
-    Define Omen Salt Processing through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Keep the user's prompt subject, action, and context intact while reshaping identity through omen
+    shaping silhouette rhythm, contour pressure, and symbolic edge control, salt shaping silhouette
+    rhythm, contour pressure, and symbolic edge control plus processing shaping silhouette rhythm,
+    contour pressure, and symbolic edge control; forms should inherit silhouette pressure, emblem
+    logic, ritual posture, edge weight, and motif placement instead of a mandatory actor or prop
+    set.
   color_and_tone: >-
-    Use a Omen Salt Processing-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through salt white, black mineral shadow, and muted lunar blue, omen-weighted accent
+    roles over disciplined dark values plus processing-weighted accent roles over disciplined dark
+    values together with void black, star salt, eclipse gold, lunar blue, nebula bruise, comet
+    white, auroral green, and severe red warning notes; values stay separated, accents feel
+    intentional, and the dark palette supports the requested content rather than swallowing it.
   lighting_and_shadow: >-
-    Use lighting that makes Omen Salt Processing recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use omen-weighted rim behavior, occult glow, and charged shadow, salt-weighted rim behavior,
+    occult glow, and charged shadow plus processing-weighted rim behavior, occult glow, and charged
+    shadow with planetary rim light, occult backlight, starfall sparks, auroral veils, lunar frost,
+    and signal-like bell illumination; shadows must carry omen weight, rims should clarify form, and
+    glow should behave as ritual evidence rather than decorative haze.
   texture_and_material: >-
-    Use materials and textures that reinforce Omen Salt Processing: surface response, grain, patina, polish,
-    or wear should feel intentional and style-defining.
+    Render salt crust, crystalline dust, porous bone, and dry scrape marks plus salt sorting marks,
+    residue fields, and procedural texture alongside astrolabe glass, salt crust, meteor dust, black
+    paper, brass rings, celestial chalk, basin water, and scorched archive grain; surface scale,
+    patina, residue, gloss, grain, and carved or sealed edges must remain coherent across
+    characters, objects, scenes, and abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Omen Salt Processing: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame with omen placement, warning intervals, and charged empty space plus methodical sequence
+    and measured occult labor plus orbital spirals, meridian cuts, radial verdicts, balance axes,
+    archive grids, and measured cosmic compression; the style should support portraits, objects,
+    architecture, creatures, symbols, and full scenes through reusable spatial grammar instead of
+    one fixed layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Omen Salt Processing: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through prophetic unease and disciplined anticipation, salt pressure, consequence,
+    and symbolic tension plus processing pressure, consequence, and symbolic tension and fatalism,
+    astronomical dread, prophetic calm, state secrecy, alarm, wonder, and the beauty of a system
+    turning against itself; the image can become severe, sensual, sacred, violent, quiet, or strange
+    when prompt X asks for it, while the preset supplies mythic consequence.
   rendering_and_quality: >-
-    Render Omen Salt Processing with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
+    Finish with omen recognition with denoised dark editorial polish and controlled material truth
+    plus salt recognition with denoised dark editorial polish and controlled material truth and
+    high-clarity dark editorial finish with precise celestial marks, controlled haze, denoised
+    shadows, and no fake diagrams; prioritize clean denoise, readable dark values, strong silhouette
+    hierarchy, tactile material truth, and no watermark, fake text, logos, accidental UI, or muddy
+    black crush.
   key_features: >-
-    Prioritize Omen Salt Processing's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    omen translated into dark symbolic behavior, salt translated into dark symbolic behavior plus
+    processing translated into dark symbolic behavior; omen shaping silhouette rhythm, contour
+    pressure, and symbolic edge control, salt shaping silhouette rhythm, contour pressure, and
+    symbolic edge control plus processing shaping silhouette rhythm, contour pressure, and symbolic
+    edge control; salt crust, crystalline dust, porous bone, and dry scrape marks plus salt sorting
+    marks, residue fields, and procedural texture; omen-weighted rim behavior, occult glow, and
+    charged shadow, salt-weighted rim behavior, occult glow, and charged shadow plus
+    processing-weighted rim behavior, occult glow, and charged shadow; omen placement, warning
+    intervals, and charged empty space plus methodical sequence and measured occult labor
   creative_brief: >-
-    Create a style-card that translates Omen Salt Processing into a portable visual system for 4. Mythic
-    Cosmology & Omens. Preserve the preset identity through style mechanics, not a fixed scene, character,
-    prop, or story beat.
+    Apply Omen Salt Processing after prompt X as a transferable mythic-noir layer: prompt X supplies
+    subject, action, setting, and intensity, while this preset supplies omen translated into dark
+    symbolic behavior, salt translated into dark symbolic behavior plus processing translated into
+    dark symbolic behavior, omen shaping silhouette rhythm, contour pressure, and symbolic edge
+    control, salt shaping silhouette rhythm, contour pressure, and symbolic edge control plus
+    processing shaping silhouette rhythm, contour pressure, and symbolic edge control, salt white,
+    black mineral shadow, and muted lunar blue, omen-weighted accent roles over disciplined dark
+    values plus processing-weighted accent roles over disciplined dark values, omen-weighted rim
+    behavior, occult glow, and charged shadow, salt-weighted rim behavior, occult glow, and charged
+    shadow plus processing-weighted rim behavior, occult glow, and charged shadow, salt crust,
+    crystalline dust, porous bone, and dry scrape marks plus salt sorting marks, residue fields, and
+    procedural texture plus omen placement, warning intervals, and charged empty space plus
+    methodical sequence and measured occult labor, finish discipline, and negative controls without
+    requiring a fixed deity, ritual, prop bundle, location, or sample composition.
 avoidRules:
   - photoreal
   - comedy
@@ -52,10 +95,23 @@ avoidRules:
   - watermark
   - text
   - logo
+  - generic space opera
+  - decorative starfield only
+  - sci-fi HUD
+  - fixed deity portrait
+  - required ritual scene
+  - literal sample composition
+  - generic dark fantasy
+  - muddy black crush
+  - random occult symbols
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-093.webp
 attributes:
-  negativePrompt: photoreal, comedy, cyberpunk, watermark, text, logo
+  negativePrompt: >-
+    photoreal, comedy, cyberpunk, watermark, text, logo, generic space opera, decorative starfield
+    only, sci-fi HUD, fixed deity portrait, required ritual scene, literal sample composition,
+    generic dark fantasy, muddy black crush, random occult symbols, readable text
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

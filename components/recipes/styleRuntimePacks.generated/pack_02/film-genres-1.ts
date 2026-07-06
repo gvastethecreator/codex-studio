@@ -7,337 +7,464 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP02-001',
     name: 'Film Noir',
     category: '1. Film Genres',
-    negativePrompt: 'color, bright, happy',
+    negativePrompt:
+      'color, bright, happy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: '1940s noir contrast',
+      aesthetic:
+        'Film Noir acts as a transferable cinematic-media router: start from 1940s noir contrast, Film Noir lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, High contrast, slatted light, silver edge and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Film Noir: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Black and White, deep charcoal, silver highlights',
-      lighting_and_shadow: 'Venetian blinds shadow, directional key, slatted light',
-      texture_and_material: 'Film grain, silver gelatin, soft halation',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Film Noir: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Black and White, deep charcoal, silver highlights; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Venetian blinds shadow, directional key, slatted light; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Film grain, silver gelatin, soft halation; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Camera language native to Film Noir: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
-      atmosphere_and_mood: 'Suspense, dark, moral ambiguity, shadow pressure',
-      rendering_and_quality: 'Cinematic, moody, high-contrast, shadow-rich',
-      key_features: 'High contrast, slatted light, silver edge',
+        'Structure the image through Camera language native to Film Noir: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Suspense, dark, moral ambiguity, shadow pressure; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Cinematic, moody, high-contrast, shadow-rich, finished Film Noir media craft with clear process evidence and controlled detail; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        '1940s noir contrast, Film Noir lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade; High contrast, slatted light, silver edge; Black and White, deep charcoal, silver highlights; Film grain, silver gelatin, soft halation; Camera language native to Film Noir: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
       creative_brief:
-        'Film noir turns any subject into silver-gelatin suspicion: venetian slat shadows, hard directional key, deep charcoal blacks, wet-look highlights, and a silhouette cut by moral darkness. Keep 1940s crime mood without forcing detective, city, sidewalk, cigarette, or femme fatale.',
+        "Apply Film Noir as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 1940s noir contrast, Film Noir lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, High contrast, slatted light, silver edge, Film grain, silver gelatin, soft halation without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-002',
     name: 'Spaghetti Western',
     category: '1. Film Genres',
-    negativePrompt: 'modern, clean',
+    negativePrompt:
+      'modern, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
       aesthetic:
-        'Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood',
+        'Spaghetti Western acts as a transferable cinematic-media router: start from Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood, Wide framing, extreme close tension, dust haze and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Spaghetti Western: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Warm, dusty yellow, sun-bleached ochre, deep brown',
-      lighting_and_shadow: 'Harsh sun, unflinching overhead, high noon glare',
-      texture_and_material: 'Techniscope grain, gritty dust, weathered surface',
-      camera_and_composition: 'Extreme close-up compression, tension squeeze',
-      atmosphere_and_mood: 'Tense, hot, dry wind, looming death',
-      rendering_and_quality: 'Epic, gritty, widescreen, sun-baked',
-      key_features: 'Wide framing, extreme close tension, dust haze',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Spaghetti Western: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Warm, dusty yellow, sun-bleached ochre, deep brown; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Harsh sun, unflinching overhead, high noon glare; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Techniscope grain, gritty dust, weathered surface; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Extreme close-up compression, tension squeeze; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tense, hot, dry wind, looming death; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Epic, gritty, widescreen, sun-baked, finished Spaghetti Western media craft with clear process evidence and controlled detail; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood; Wide framing, extreme close tension, dust haze; Warm, dusty yellow, sun-bleached ochre, deep brown; Techniscope grain, gritty dust, weathered surface; Extreme close-up compression, tension squeeze',
       creative_brief:
-        'Spaghetti western style applies harsh noon glare, ochre dust, Techniscope grain, and operatic widescreen tension to any subject. Use Leone-like close/wide contrast and sun-baked texture without requiring desert, guns, holsters, lone riders, or frontier props.',
+        "Apply Spaghetti Western as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Dusty operatic frontier cinema, Sergio Leone style, extreme close-up tension, widescreen heat, Morricone mood, Wide framing, extreme close tension, dust haze, Techniscope grain, gritty dust, weathered surface without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-003',
     name: '80s Sci-Fi',
     category: '1. Film Genres',
-    negativePrompt: 'modern cgi',
+    negativePrompt:
+      'modern cgi, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
       aesthetic:
-        'Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore',
+        '80s Sci-Fi acts as a transferable cinematic-media router: start from Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore, Smoke, neon haze, wet reflections and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under 80s Sci-Fi: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Neon Blue/Pink + Smoke, electric magenta, toxic green',
-      lighting_and_shadow: 'Low key + Neon, volumetric haze, wet reflections',
-      texture_and_material: 'Anamorphic lens flare, wet reflective surfaces, brushed metal',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under 80s Sci-Fi: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Neon Blue/Pink + Smoke, electric magenta, toxic green; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Low key + Neon, volumetric haze, wet reflections; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Anamorphic lens flare, wet reflective surfaces, brushed metal; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Camera language native to 80s Sci-Fi: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
-      atmosphere_and_mood: 'Dystopian, cool, synthetic, nocturnal',
-      rendering_and_quality: 'Atmospheric, practical FX, miniatures, matte painting',
-      key_features: 'Smoke, neon haze, wet reflections',
+        'Structure the image through Camera language native to 80s Sci-Fi: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dystopian, cool, synthetic, nocturnal, mood carried by 80s Sci-Fi media process, signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Atmospheric, practical FX, miniatures, matte painting; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore; Smoke, neon haze, wet reflections; Neon Blue/Pink + Smoke, electric magenta, toxic green; Anamorphic lens flare, wet reflective surfaces, brushed metal; Camera language native to 80s Sci-Fi: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
       creative_brief:
-        '80s sci-fi cinema makes any subject nocturnal and synthetic: magenta/cyan neon, volumetric haze, wet reflections, anamorphic flare, and practical-FX atmosphere. Keep Blade Runner memory as color/lens grammar without forcing megacity, ads, vehicles, or corporate monoliths.',
+        "Apply 80s Sci-Fi as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore, Smoke, neon haze, wet reflections, Anamorphic lens flare, wet reflective surfaces, brushed metal without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-004',
     name: 'Technicolor Musical',
     category: '1. Film Genres',
-    negativePrompt: 'faded, dark',
+    negativePrompt:
+      'faded, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
       aesthetic:
-        'Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle',
+        'Technicolor Musical acts as a transferable cinematic-media router: start from Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle, Dye-transfer saturation, theatrical color clarity and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Technicolor Musical: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Hyper-saturated, ruby red, emerald green, sapphire blue',
-      lighting_and_shadow: 'High key studio, broad soft fill, painted backdrop',
-      texture_and_material: '3-strip Technicolor, glossy dye transfer, vibrant saturation',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Technicolor Musical: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Hyper-saturated, ruby red, emerald green, sapphire blue; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through High key studio, broad soft fill, painted backdrop; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render 3-strip Technicolor, glossy dye transfer, vibrant saturation; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Camera language native to Technicolor Musical: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
-      atmosphere_and_mood: 'Joyful, theatrical, magical spectacle, storybook wonder',
-      rendering_and_quality: 'Vibrant, classic, theatrical, luminous',
-      key_features: 'Dye-transfer saturation, theatrical color clarity',
+        'Structure the image through Camera language native to Technicolor Musical: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Joyful, theatrical, magical spectacle, storybook wonder; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Vibrant, classic, theatrical, luminous, finished Technicolor Musical media craft with clear process evidence and controlled detail; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle; Dye-transfer saturation, theatrical color clarity; Hyper-saturated, ruby red, emerald green, sapphire blue; 3-strip Technicolor, glossy dye transfer, vibrant saturation; Camera language native to Technicolor Musical: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
       creative_brief:
-        'Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues, broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age spectacle without forcing yellow roads, slippers, emerald cities, or musical staging. Apply Technicolor Musical as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Technicolor Musical as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle, Dye-transfer saturation, theatrical color clarity, 3-strip Technicolor, glossy dye transfer, vibrant saturation without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-005',
     name: 'French New Wave',
     category: '1. Film Genres',
-    negativePrompt: 'studio lighting, stable',
+    negativePrompt:
+      'studio lighting, stable, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
       aesthetic:
-        "French New Wave within 1. Film Genres: a reusable Cinematic & Media visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving French New Wave's specific style identity.",
+        'French New Wave acts as a transferable cinematic-media router: start from French New Wave lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define French New Wave through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through Define French New Wave through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Use a French New Wave-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with process-native palette relationships, deliberate contrast, and signal or film color logic for French New Wave; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes French New Wave recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through process-led exposure structure, readable highlights, and style-specific shadow behavior; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce French New Wave: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Use spatial behavior that fits French New Wave: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Structure the image through scale rhythm, frame hierarchy, lens distance, and composition rules specific to French New Wave; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to French New Wave: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by French New Wave media process, signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Render French New Wave with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished French New Wave media craft with clear process evidence and controlled detail; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        "Prioritize French New Wave's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'French New Wave lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade; process-native palette relationships, deliberate contrast, and signal or film color logic for French New Wave; scale rhythm, frame hierarchy, lens distance, and composition rules specific to French New Wave',
       creative_brief:
-        'Create a style-card that translates French New Wave into a portable visual system for 1. Film Genres. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply French New Wave as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through French New Wave lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-006',
     name: 'Grindhouse/Exploitation',
     category: '1. Film Genres',
-    negativePrompt: 'clean, hd',
+    negativePrompt:
+      'clean, hd, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: '70s B-movie',
+      aesthetic:
+        'Grindhouse/Exploitation acts as a transferable cinematic-media router: start from 70s B-movie, 1970s grindhouse projection damage with lurid B-movie color, torn-splice rhythm, cue marks, and exploitation-print decay, Dirt, cue marks, grain storm and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Grindhouse/Exploitation: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Faded, red shift, yellowed decay, magenta bleed',
-      lighting_and_shadow: 'Harsh, underexposed, single-source, pools of black',
-      texture_and_material: 'Scratches, cigarette burns, torn splices, dust hair',
-      camera_and_composition: 'Film splice, jumpy gate weave, missing frame',
-      atmosphere_and_mood: 'Trashy, lurid, midnight-movie danger',
-      rendering_and_quality: 'Damaged film, degraded, sleazy, exploitation-grade',
-      key_features: 'Dirt, cue marks, grain storm',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Grindhouse/Exploitation: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Faded, red shift, yellowed decay, magenta bleed; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Harsh, underexposed, single-source, pools of black; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Scratches, cigarette burns, torn splices, dust hair; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Film splice, jumpy gate weave, missing frame; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Trashy, lurid, midnight-movie danger, mood carried by Grindhouse/Exploitation media process, signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Damaged film, degraded, sleazy, exploitation-grade; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        '70s B-movie, 1970s grindhouse projection damage with lurid B-movie color, torn-splice rhythm, cue marks, and exploitation-print decay; Dirt, cue marks, grain storm; Faded, red shift, yellowed decay, magenta bleed; Scratches, cigarette burns, torn splices, dust hair; Film splice, jumpy gate weave, missing frame',
       creative_brief:
-        'Grindhouse style wounds any subject with degraded projection: scratches, cigarette burns, torn splices, magenta bleed, underexposed pools of black, jumpy gate weave, and lurid low-budget danger. Keep exploitation-film damage without requiring violence, rooms, walls, or narrative sleaze.',
+        "Apply Grindhouse/Exploitation as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 70s B-movie, 1970s grindhouse projection damage with lurid B-movie color, torn-splice rhythm, cue marks, and exploitation-print decay, Dirt, cue marks, grain storm, Scratches, cigarette burns, torn splices, dust hair without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-007',
     name: 'Silent Film',
     category: '1. Film Genres',
-    negativePrompt: 'sound, color, readable text',
+    negativePrompt:
+      'sound, color, readable text, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: '1920s cinema',
+      aesthetic:
+        'Silent Film acts as a transferable cinematic-media router: start from 1920s cinema, Silent Film lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Flicker, vignette, iris-era framing and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Silent Film: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Sepia or B&W, warm monochrome, faded amber tint',
-      lighting_and_shadow: 'Flat studio, even wash, orthochromatic limitation',
-      texture_and_material: 'Flicker, dust, gate weave, silver emulsion',
-      camera_and_composition: 'Vignette, rounded frame edge, iris close',
-      atmosphere_and_mood: 'Expressive, old, melodramatic, haunted silence',
-      rendering_and_quality: 'Fast motion feel, 18fps projection, flickering speed',
-      key_features: 'Flicker, vignette, iris-era framing',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Silent Film: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Sepia or B&W, warm monochrome, faded amber tint; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat studio, even wash, orthochromatic limitation; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Flicker, dust, gate weave, silver emulsion; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Vignette, rounded frame edge, iris close; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Expressive, old, melodramatic, haunted silence; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Fast motion feel, 18fps projection, flickering speed; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        '1920s cinema, Silent Film lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade; Flicker, vignette, iris-era framing; Sepia or B&W, warm monochrome, faded amber tint; Flicker, dust, gate weave, silver emulsion; Vignette, rounded frame edge, iris close',
       creative_brief:
-        'Silent film style gives any subject amber monochrome age: 18fps flicker, dust, gate weave, orthochromatic flatness, vignette, rounded frame edges, and melodramatic gesture implied by composition. Keep title-card-era rhythm without requiring people, text cards, or performance.',
+        "Apply Silent Film as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 1920s cinema, Silent Film lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Flicker, vignette, iris-era framing, Flicker, dust, gate weave, silver emulsion without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-008',
     name: 'Found Footage Horror',
     category: '1. Film Genres',
-    negativePrompt: 'steady, cinematic',
+    negativePrompt:
+      'steady, cinematic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: 'Improvised panic-horror footage, shaking handheld dread, raw survival terror',
+      aesthetic:
+        'Found Footage Horror acts as a transferable cinematic-media router: start from Improvised panic-horror footage, shaking handheld dread, raw survival terror, Flashlight cone, timestamp-like burn-in, panic-cam smear and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Found Footage Horror: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Low light digital, crushed blacks, sickly green tint',
-      lighting_and_shadow: 'Flashlight only, single beam cone, terrified sweep',
-      texture_and_material: 'Video noise, CMOS sensor grain, digital mud',
-      camera_and_composition: 'Motion blur, smear, headlamp judder',
-      atmosphere_and_mood: 'Terrifying, real, primal fear, unseen threat',
-      rendering_and_quality: 'Shaky, amateur, disorienting, raw panic-cam',
-      key_features: 'Flashlight cone, timestamp-like burn-in, panic-cam smear',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Found Footage Horror: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Low light digital, crushed blacks, sickly green tint; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flashlight only, single beam cone, terrified sweep; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Video noise, CMOS sensor grain, digital mud; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Motion blur, smear, headlamp judder; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Terrifying, real, primal fear, unseen threat; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Shaky, amateur, disorienting, raw panic-cam; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Improvised panic-horror footage, shaking handheld dread, raw survival terror; Flashlight cone, timestamp-like burn-in, panic-cam smear; Low light digital, crushed blacks, sickly green tint; Video noise, CMOS sensor grain, digital mud; Motion blur, smear, headlamp judder',
       creative_brief:
-        'Found-footage horror makes any subject feel accidentally captured: shaking handheld motion, flashlight cone, crushed blacks, sickly green digital noise, CMOS mud, and panic-cam blur. Keep dread and raw survival texture without forcing forest, footsteps, breathing, or unseen monster.',
+        "Apply Found Footage Horror as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Improvised panic-horror footage, shaking handheld dread, raw survival terror, Flashlight cone, timestamp-like burn-in, panic-cam smear, Video noise, CMOS sensor grain, digital mud without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-009',
     name: 'Kaiju Movie (Suitmation)',
     category: '1. Film Genres',
-    negativePrompt: 'cgi, realistic',
+    negativePrompt:
+      'cgi, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
       aesthetic:
-        'Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror',
+        'Kaiju Movie (Suitmation) acts as a transferable cinematic-media router: start from Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror, Low angle, miniature scale, charming artifice and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Kaiju Movie (Suitmation): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'B&W or Eastmancolor, muted desaturated, faded film stock',
-      lighting_and_shadow: 'Miniature set, forced perspective, matte backdrop light',
-      texture_and_material: 'Rubber suit texture, latex sheen, toy-scale practical material',
-      camera_and_composition: 'Stiff movement, lumbering gait, wire-work float',
-      atmosphere_and_mood: 'Epic, handmade, scale panic',
-      rendering_and_quality: 'Tokusatsu, scale model, practical destruction, charming artifice',
-      key_features: 'Low angle, miniature scale, charming artifice',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Kaiju Movie (Suitmation): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with B&W or Eastmancolor, muted desaturated, faded film stock; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Miniature set, forced perspective, matte backdrop light; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Rubber suit texture, latex sheen, toy-scale practical material; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stiff movement, lumbering gait, wire-work float; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Epic, handmade, scale panic, mood carried by Kaiju Movie (Suitmation) media process, signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Tokusatsu, scale model, practical destruction, charming artifice; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror; Low angle, miniature scale, charming artifice; B&W or Eastmancolor, muted desaturated, faded film stock; Rubber suit texture, latex sheen, toy-scale practical material; Stiff movement, lumbering gait, wire-work float',
       creative_brief:
-        'Kaiju suitmation style gives any subject handmade colossal scale: low camera, forced perspective, miniature-set lighting, latex/rubber texture, stiff motion implication, and sincere practical artifice. Keep tokusatsu weight without forcing monsters, city destruction, power lines, tanks, or crowds.',
+        "Apply Kaiju Movie (Suitmation) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Black-and-white suitmation spectacle, Godzilla 1954, miniature-scale practical terror, Low angle, miniature scale, charming artifice, Rubber suit texture, latex sheen, toy-scale practical material without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-010',
     name: 'Kung Fu Studio Epic (Shaw Brothers)',
     category: '1. Film Genres',
-    negativePrompt: 'modern action',
+    negativePrompt:
+      'modern action, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: '70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision',
+      aesthetic:
+        'Kung Fu Studio Epic (Shaw Brothers) acts as a transferable cinematic-media router: start from 70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision, Wide staging, crash zoom, choreographic rhythm and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Kung Fu Studio Epic (Shaw Brothers): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Saturated primaries, golden palace, deep red banners',
-      lighting_and_shadow: 'Studio set, flat broad key, painted backdrop',
-      texture_and_material: 'Film grain, silk sheen, lacquered prop texture, painted set surface',
-      camera_and_composition: 'Snap zoom, crash zoom, dramatic push-in',
-      atmosphere_and_mood: 'Action, classic, rhythmic discipline',
-      rendering_and_quality: 'Choreographed, acrobatic, wire-fu precision, rhythmic combat',
-      key_features: 'Wide staging, crash zoom, choreographic rhythm',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Kung Fu Studio Epic (Shaw Brothers): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Saturated primaries, golden palace, deep red banners; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio set, flat broad key, painted backdrop; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Film grain, silk sheen, lacquered prop texture, painted set surface; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Snap zoom, crash zoom, dramatic push-in; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Action, classic, rhythmic discipline, mood carried by Kung Fu Studio Epic (Shaw Brothers) media process, signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Choreographed, acrobatic, wire-fu precision, rhythmic combat; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        '70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision; Wide staging, crash zoom, choreographic rhythm; Saturated primaries, golden palace, deep red banners; Film grain, silk sheen, lacquered prop texture, painted set surface; Snap zoom, crash zoom, dramatic push-in',
       creative_brief:
-        'Shaw Brothers studio style turns any subject into choreographed spectacle: flat painted-set light, saturated primaries, crash zooms, wide staging, silk-sheen color, and rhythmic action precision. Keep martial-cinema energy without forcing fighters, palace sets, weapons, or combat.',
+        "Apply Kung Fu Studio Epic (Shaw Brothers) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision, Wide staging, crash zoom, choreographic rhythm, Film grain, silk sheen, lacquered prop texture, painted set surface without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-011',
     name: 'Cyberpunk Anime (90s)',
     category: '1. Film Genres',
-    negativePrompt: 'modern digital',
+    negativePrompt:
+      'modern digital, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
       aesthetic:
-        'Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread',
-      subject_treatment: 'Cel shaded',
-      color_and_tone: 'Green tint, dark, sickly CRT glow, deep shadow cyan',
-      lighting_and_shadow: 'Neon bounce, CRT underlight, low-key cyber glow',
-      texture_and_material: 'Cel grain, painted acetate, hand-drawn texture',
-      camera_and_composition: 'Cablelike tangles, data-tendril abstraction',
-      atmosphere_and_mood: 'Tech, moody, conspiratorial, rain-slick isolation',
-      rendering_and_quality: 'Detailed, philosophical, intricate background, mood-drenched',
-      key_features: 'Cathode bloom, cel grain, techno-organic density',
+        'Cyberpunk Anime (90s) acts as a transferable cinematic-media router: start from Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread, Cathode bloom, cel grain, techno-organic density and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Cel shaded, adapt the requested subject through lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade while preserving prompt identity; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Green tint, dark, sickly CRT glow, deep shadow cyan; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Neon bounce, CRT underlight, low-key cyber glow; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Cel grain, painted acetate, hand-drawn texture; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Cablelike tangles, data-tendril abstraction, scale rhythm, frame hierarchy, lens distance, and composition rules specific to Cyberpunk Anime (90s); compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tech, moody, conspiratorial, rain-slick isolation; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Detailed, philosophical, intricate depth field, mood-drenched; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread; Cathode bloom, cel grain, techno-organic density; Green tint, dark, sickly CRT glow, deep shadow cyan; Cel grain, painted acetate, hand-drawn texture; Cablelike tangles, data-tendril abstraction, scale rhythm, frame hierarchy, lens distance, and composition rules specific to Cyberpunk Anime (90s)',
       creative_brief:
-        '90s cyberpunk anime style renders any subject in cel-painted tech dread: green CRT glow, cyan shadow, acetate grain, dense linework, cablelike abstraction, bloom, and rain-slick isolation. Keep Ghost in the Shell philosophy as mood without forcing cityscape, implants, rain windows, or brain-hack props.',
+        "Apply Cyberpunk Anime (90s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Dense cel-animated cyber noir, Ghost in the Shell style, philosophical tech dread, Cathode bloom, cel grain, techno-organic density, Cel grain, painted acetate, hand-drawn texture without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-012',
     name: 'Wes Anderson Symmetrical Storybook Cinema',
     category: '1. Film Genres',
-    negativePrompt: 'asymmetrical, messy',
+    negativePrompt:
+      'asymmetrical, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: 'Symmetrical composition',
+      aesthetic:
+        'Wes Anderson Symmetrical Storybook Cinema acts as a transferable cinematic-media router: start from Symmetrical composition, Wes Anderson Symmetrical Storybook Cinema lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Symmetry, diorama precision, label-like spacing and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Wes Anderson Symmetrical Storybook Cinema: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Pastel palette, butter yellow, mint green, dusty pink, warm ochre',
-      lighting_and_shadow: 'Flat, soft, diffused wrap, even exposure, no shadow drama',
-      texture_and_material: 'Film, Kodak stock, matte surface, hand-painted props',
-      camera_and_composition: 'Center frame, locked-down composition, 90-degree pans',
-      atmosphere_and_mood: 'Whimsical, deadpan, storybook melancholy, curated nostalgia',
-      rendering_and_quality: 'Quirky, precise, diorama-perfect, miniature precision',
-      key_features: 'Symmetry, diorama precision, label-like spacing',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Wes Anderson Symmetrical Storybook Cinema: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Pastel palette, butter yellow, mint green, dusty pink, warm ochre; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat, soft, diffused wrap, even exposure, no shadow drama; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Film, Kodak stock, matte surface, hand-painted props; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Center frame, locked-down composition, 90-degree pans; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Whimsical, deadpan, storybook melancholy, curated nostalgia; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Quirky, precise, diorama-perfect, miniature precision; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Symmetrical composition, Wes Anderson Symmetrical Storybook Cinema lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade; Symmetry, diorama precision, label-like spacing; Pastel palette, butter yellow, mint green, dusty pink, warm ochre; Film, Kodak stock, matte surface, hand-painted props; Center frame, locked-down composition, 90-degree pans',
       creative_brief:
-        'Symmetrical storybook cinema makes any subject deadpan and curated: locked center framing, pastel palette, flat soft exposure, diorama precision, matte prop texture, and nostalgic melancholy. Keep Wes Anderson grammar without forcing cross-section sets, typography, or quirky characters.',
+        "Apply Wes Anderson Symmetrical Storybook Cinema as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Symmetrical composition, Wes Anderson Symmetrical Storybook Cinema lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Symmetry, diorama precision, label-like spacing, Film, Kodak stock, matte surface, hand-painted props without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-013',
     name: 'Blockbuster Teal & Orange',
     category: '1. Film Genres',
-    negativePrompt: 'natural color',
+    negativePrompt:
+      'natural color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: 'Modern action movie',
+      aesthetic:
+        'Blockbuster Teal & Orange acts as a transferable cinematic-media router: start from Modern action movie, Blockbuster Teal & Orange lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Teal-orange grade, rim light, spectacle bloom and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Blockbuster Teal & Orange: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Teal shadows, orange highlights, complementary grade, cyan bias',
-      lighting_and_shadow: 'High contrast, backlit rim, dramatic underlight',
-      texture_and_material: 'Digital clean, noise-free, slick compositing',
-      camera_and_composition: 'Lens flare, anamorphic streak, specular bloom',
-      atmosphere_and_mood: 'Intense, cinematic, bombastic spectacle, summer tentpole',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Blockbuster Teal & Orange: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Teal shadows, orange highlights, complementary grade, cyan bias; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through High contrast, backlit rim, dramatic underlight; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Digital clean, noise-free, slick compositing; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Lens flare, anamorphic streak, specular bloom; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Intense, cinematic, bombastic spectacle, summer tentpole; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Polished tentpole digital-cinema finish with clean compositing, high-contrast grade, crisp rim light, controlled bloom, and no text or watermark.',
-      key_features: 'Teal-orange grade, rim light, spectacle bloom',
+        'Finish with Polished tentpole digital-cinema finish with clean compositing, high-contrast grade, crisp rim light, controlled bloom, and no text or watermark; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Modern action movie, Blockbuster Teal & Orange lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade; Teal-orange grade, rim light, spectacle bloom; Teal shadows, orange highlights, complementary grade, cyan bias; Digital clean, noise-free, slick compositing; Lens flare, anamorphic streak, specular bloom',
       creative_brief:
-        'Blockbuster teal-orange grade makes any subject feel tentpole-scale: cyan shadows, orange highlights, slick compositing, rim light, anamorphic streaks, bloom, and suspended spectacle texture. Keep action-movie intensity without requiring hero walk, debris, skin tones, explosions, or burning sky.',
+        "Apply Blockbuster Teal & Orange as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Modern action movie, Blockbuster Teal & Orange lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Teal-orange grade, rim light, spectacle bloom, Digital clean, noise-free, slick compositing without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-014',
     name: 'Giallo Horror',
     category: '1. Film Genres',
-    negativePrompt: 'natural lighting',
+    negativePrompt:
+      'natural lighting, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: 'Italian horror',
+      aesthetic:
+        'Giallo Horror acts as a transferable cinematic-media router: start from Italian horror, Giallo Horror lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Color gels, polished threat, baroque shadow and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Giallo Horror: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Deep Red, Blue, Green gels, saturated primaries, blood crimson',
-      lighting_and_shadow: 'Unnatural colored light, gel-drenched, theatrical splash',
-      texture_and_material: 'Film grain, polished surfaces, leatherlike shadow',
-      camera_and_composition: 'POV unease, obscured geometry',
-      atmosphere_and_mood: 'Mystery, stylish, hallucinatory dread',
-      rendering_and_quality: 'Stylish, baroque, operatic color dread',
-      key_features: 'Color gels, polished threat, baroque shadow',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Giallo Horror: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Deep Red, Blue, Green gels, saturated primaries, blood crimson; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Unnatural colored light, gel-drenched, theatrical splash; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Film grain, polished surfaces, leatherlike shadow; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through POV unease, obscured geometry, scale rhythm, frame hierarchy, lens distance, and composition rules specific to Giallo Horror; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Mystery, stylish, hallucinatory dread, mood carried by Giallo Horror media process, signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Stylish, baroque, operatic color dread; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Italian horror, Giallo Horror lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade; Color gels, polished threat, baroque shadow; Deep Red, Blue, Green gels, saturated primaries, blood crimson; Film grain, polished surfaces, leatherlike shadow; POV unease, obscured geometry, scale rhythm, frame hierarchy, lens distance, and composition rules specific to Giallo Horror',
       creative_brief:
-        'Giallo horror makes light itself theatrical threat: saturated red/blue/green gels, polished reflections, leatherlike blacks, grain, POV unease, and baroque color dread. Keep Argento-era style without forcing murder, gloved hands, blades, blood, or crime evidence. Apply Giallo Horror as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Giallo Horror as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Italian horror, Giallo Horror lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade, Color gels, polished threat, baroque shadow, Film grain, polished surfaces, leatherlike shadow without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-015',
     name: 'Mumblecore',
     category: '1. Film Genres',
-    negativePrompt: 'polished, scripted',
+    negativePrompt:
+      'polished, scripted, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: 'Indie film',
+      aesthetic:
+        'Mumblecore acts as a transferable cinematic-media router: start from Indie film, mumblecore indie-video naturalism with awkward handheld intimacy, ungraded daylight, soft consumer-camera texture, and conversational looseness, Handheld, accidental framing, available light and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Mumblecore: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Natural, low contrast, flat daylight, ungraded look',
-      lighting_and_shadow: 'Available light, practical lamps, window spill',
-      texture_and_material: 'Digital video, DSLR sensor, consumer camera',
-      camera_and_composition: 'Out of focus, soft rack, distracted framing',
-      atmosphere_and_mood: 'Intimate, awkward, honest discomfort',
-      rendering_and_quality: 'Real, awkward, improvised dialogue, unpolished truth',
-      key_features: 'Handheld, accidental framing, available light',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Mumblecore: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Natural, low contrast, flat daylight, ungraded look; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Available light, practical lamps, window spill; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Digital video, DSLR sensor, consumer camera; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Out of focus, soft rack, distracted framing; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Intimate, awkward, honest discomfort, mood carried by Mumblecore media process, signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Real, awkward, improvised dialogue, unpolished truth; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Indie film, mumblecore indie-video naturalism with awkward handheld intimacy, ungraded daylight, soft consumer-camera texture, and conversational looseness; Handheld, accidental framing, available light; Natural, low contrast, flat daylight, ungraded look; Digital video, DSLR sensor, consumer camera; Out of focus, soft rack, distracted framing',
       creative_brief:
-        'Mumblecore style lets any subject stay unpolished: available light, DSLR sensor texture, distracted handheld framing, low contrast, soft rack focus, and accidental honesty. Keep indie intimacy without requiring conversations, apartments, people, or relationship drama.',
+        "Apply Mumblecore as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Indie film, mumblecore indie-video naturalism with awkward handheld intimacy, ungraded daylight, soft consumer-camera texture, and conversational looseness, Handheld, accidental framing, available light, Digital video, DSLR sensor, consumer camera without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-016',
     name: 'Space Opera (70s)',
     category: '1. Film Genres',
-    negativePrompt: 'cgi',
+    negativePrompt:
+      'cgi, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster',
     style: {
-      aesthetic: 'Scrappy analog space opera, used-future adventure, practical model magic',
+      aesthetic:
+        'Space Opera (70s) acts as a transferable cinematic-media router: start from Scrappy analog space opera, used-future adventure, practical model magic, Greebles, optical composite, worn future and cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Space Opera (70s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Used future, worn ochre, grey panel, rebel olive, droid beige',
-      lighting_and_shadow: 'Studio practicals, cockpit-like glow, optical composite light',
-      texture_and_material: 'Model kitbash, plastic parts, weathered metal, found-object greeble',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Space Opera (70s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while staging it as filmed material through blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when useful, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Used future, worn ochre, grey panel, rebel olive, droid beige; treat color as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or projection decay, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio practicals, cockpit-like glow, optical composite light; make light feel motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Model kitbash, plastic parts, weathered metal, found-object greeble; surface detail should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Camera language native to Space Opera (70s): genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
-      atmosphere_and_mood: 'Adventure, dirty, swashbuckling, handmade wonder',
-      rendering_and_quality: 'Practical FX, optical composite, matte painting, miniature magic',
-      key_features: 'Greebles, optical composite, worn future',
+        'Structure the image through Camera language native to Space Opera (70s): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Adventure, dirty, swashbuckling, handmade wonder; derive mood from cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Practical FX, optical composite, matte painting, miniature magic; finish as credible moving-image language with controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Scrappy analog space opera, used-future adventure, practical model magic; Greebles, optical composite, worn future; Used future, worn ochre, grey panel, rebel olive, droid beige; Model kitbash, plastic parts, weathered metal, found-object greeble; Camera language native to Space Opera (70s): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
       creative_brief:
-        '70s space opera gives any subject used-future wonder: kitbashed greebles, weathered panels, optical-composite softness, matte-painting depth, practical glow, and worn heroic texture. Keep Star Wars-era adventure without forcing ships, droids, cockpits, cantinas, or rebellion plot.',
+        "Apply Space Opera (70s) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Scrappy analog space opera, used-future adventure, practical model magic, Greebles, optical composite, worn future, Model kitbash, plastic parts, weathered metal, found-object greeble without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

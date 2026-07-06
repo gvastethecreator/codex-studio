@@ -13,45 +13,100 @@ tags:
   - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: >-
-    Conservatory Bioclimate within 3. Civic Infrastructure And Specialty Spaces: a reusable Architecture &
-    Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
-    Keep the result transferable across subjects while preserving Conservatory Bioclimate's specific style
-    identity.
+    Conservatory Bioclimate acts as a transferable architecture/interior router: glass ribs,
+    condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues;
+    fuse it with civic infrastructure grammar with public-use wear, technical service logic,
+    institutional material memory, and specialty-space performance; route spatial grammar, material
+    behavior, scale, ornament, and light over prompt X without requiring the default sample anchor,
+    fixed spatial set, landscape setup, or object sample.
   subject_treatment: >-
-    Define Conservatory Bioclimate through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve prompt subject, action, and context while translating any requested subject through
+    infrastructure anchors, service junctions, public-scale material wear, modular containment,
+    utility grids, and readable built function; treat glass ribs, condensation, humid light, layered
+    botanical silhouettes, water catchment or thermal mass cues as massing, edge, surface, joinery,
+    threshold, or ornament behavior rather than a mandatory building scene.
   color_and_tone: >-
-    Use a Conservatory Bioclimate-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value
+    blocks, damp fluorescents, and specialty glow cues; let source cues such as glass ribs,
+    condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues
+    decide accent hierarchy, material temperature, and value separation while staying attached to
+    the requested content.
   lighting_and_shadow: >-
-    Use lighting that makes Conservatory Bioclimate recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried
+    low light, and public-space shadow compression; make light reveal joints, relief, material
+    depth, scale, and atmosphere from glass ribs, condensation, humid light, layered botanical
+    silhouettes, water catchment or thermal mass cues without replacing prompt X with a stock
+    architectural render.
   texture_and_material: >-
-    Use materials and textures that reinforce Conservatory Bioclimate: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables,
+    patina, water stains, and public-use abrasion; prioritize the tactile signals in glass ribs,
+    condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues,
+    with believable surface response, denoised grain, coherent wear, and no generic wallpaper
+    texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Conservatory Bioclimate: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame through tight infrastructure detail crops, service-grid repetition, compressed public
+    thresholds, wayfinding rhythm, and specialty-space section logic; convert glass ribs,
+    condensation, humid light, layered botanical silhouettes, water catchment or thermal mass cues
+    into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules
+    instead of one fixed style sample layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Conservatory Bioclimate: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through public memory, controlled utility, preservation, overload, reverence, damp
+    atmosphere, or quiet abandonment without turning into narrative scene; the preset can support
+    adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X
+    asks for them while keeping the architectural identity readable.
   rendering_and_quality: >-
-    Render Conservatory Bioclimate with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding
+    shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable
+    object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no
+    camera prop, and no prompt-literal card copy.
   key_features: >-
-    Prioritize Conservatory Bioclimate's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    glass ribs, condensation, humid light, layered botanical silhouettes, water catchment or thermal
+    mass cues; infrastructure anchors, service junctions, public-scale material wear, modular
+    containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic,
+    brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion;
+    tight infrastructure detail crops, service-grid repetition, compressed public thresholds,
+    wayfinding rhythm, and specialty-space section logic
   creative_brief: >-
-    Create a style-card that translates Conservatory Bioclimate into a portable visual system for 3. Civic
-    Infrastructure And Specialty Spaces. Preserve the preset identity through style mechanics, not a fixed
-    scene, character, prop, or story beat.
+    Apply Conservatory Bioclimate after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies glass ribs, condensation, humid light, layered botanical silhouettes, water catchment
+    or thermal mass cues, civic infrastructure grammar with public-use wear, technical service
+    logic, institutional material memory, and specialty-space performance, material discipline,
+    spatial grammar, and negative controls without requiring a single spatial sample, product-photo
+    setup, aisle-like default, or empty abstraction.
 avoidRules:
   - dark
   - dry
+  - plant store
+  - market aisle
+  - library aisle
+  - dry dark interior
+  - chair/table focus
+  - camera prop
+  - empty abstraction
+  - long corridor
+  - people crowd
+  - readable map or sign
+  - office furniture focus
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-033.webp
 attributes:
-  negativePrompt: dark, dry
+  negativePrompt: >-
+    dark, dry, plant store, market aisle, library aisle, dry dark interior, chair/table focus,
+    camera prop, empty abstraction, long corridor, people crowd, readable map or sign, office
+    furniture focus, fixed building-only scene, mandatory interior interior zones, corridor
+    perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory
+    interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -13,35 +13,76 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Nintendo DSi Flipnote Studio aesthetic, crude black-and-white hand-drawn animation on tiny stylus screen,
-    memo-pad gridding, DS-camera crude photo support layers, low-res LCD limitation, exported-GIF-quality
-    charm, Flipnote Hatena community art, 2009 creativity within limitations
+    DS Flipnote Studio acts as a transferable art-medium router: start from Nintendo DSi Flipnote
+    Studio aesthetic, crude black and white hand drawn animation on tiny stylus screen, memo pad
+    gridding, DS camera crude photo support layers, low res LCD limitation, exported GIF quality
+    charm, Flipnote Hatena community art, 2009 creativity within limitations, Black on white drawing
+    only, DS stylus jittery lines, flipbook animation marks, optional crude camera support layer,
+    memo pad grid texture, low res LCD, exported GIF artifacts and hardware-constrained game-visual
+    system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld
+    artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Stylus-drawn-on-resistive-touchscreen, jittery-hand-drawn lines, crude simple contours, frame-by-frame
-    animation marks, tiny-screen-scale linework
+    Transform any prompt subject through Stylus drawn on resistive touchscreen, jittery hand drawn
+    lines, crude simple contours, frame by frame animation marks, tiny screen scale linework;
+    preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel,
+    pre-render, screen-grid, or low-bit display behavior, keeping the requested identity,
+    silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    Black-only-on-white, DS-LCD-desaturated-blacks, grey-background-grid, occasionally
-    red-blue-3D-anaglyph-experiments, no-other-colors
-  lighting_and_shadow: Flat-black-line-drawing, DS-backlit-LCD-uniform-illumination, no-shading-no-lighting
+    Build color with Black only on white, DS LCD desaturated blacks, grey support field grid,
+    occasionally red blue 3D anaglyph experiments, no other colors; use color through hardware
+    rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper
+    gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent
+    control, and medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat black line drawing, DS backlit LCD uniform illumination, no shading no
+    lighting; make light emerge from display technology, pixel value steps, CRT bloom, palette
+    cycling, thermal print contrast, or vector beam brightness, so value structure supports the
+    medium and does not overwrite the requested content.
   texture_and_material: >-
-    DS-resistive-touchscreen-texture, stylus-tip-plastic-on-plastic, low-res-LCD-pixel-grid,
-    DSi-camera-CMOS-grain, Flipnote-memo-pad-pattern
+    Render DS resistive touchscreen texture, stylus tip plastic on plastic, low res LCD pixel grid,
+    DSi camera CMOS grain, Flipnote memo pad pattern; surface detail should show pixels, dithering,
+    scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print
+    degradation, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Tiny-DS-LCD-resolution, stylus-screen-proportions, flipnote-memo-pad-gridding, crude-perspective-attempts,
-    exported-GIF-spatial-compression
+    Structure the image through Tiny DS LCD resolution, stylus screen proportions, flipnote memo pad
+    gridding, crude perspective attempts, exported GIF spatial compression; compose through tile
+    maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI
+    geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Youthful, creative-community, bedroom-animation-studio, DSi-sharing nostalgia, 2009-internet
-    early-social-media, charming-simplicity
+    Keep the mood Youthful, creative community, bedroom animation studio, DSi sharing nostalgia,
+    2009 internet early social media, charming simplicity; derive mood from hardware limitation,
+    arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D
+    instability, letting the medium alter interpretation without demanding a specific story,
+    location, or character.
   rendering_and_quality: >-
-    Flipnote-Studio-DS aesthetic, crude-black-and-white-animation beauty, low-res-handheld-art,
-    internet-share-community-energy
+    Finish with Flipnote Studio DS aesthetic, crude black and white animation beauty, low res
+    handheld art, internet share community energy; finish with faithful era constraints, crisp
+    readability at small scale, and no modern high-resolution smoothing unless the preset asks for
+    baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
   key_features: >-
-    Black-on-white drawing only, DS-stylus jittery lines, flipbook-animation marks, optional crude camera
-    support layer, memo-pad grid texture, low-res LCD, exported-GIF artifacts
+    Nintendo DSi Flipnote Studio aesthetic, crude black and white hand drawn animation on tiny
+    stylus screen, memo pad gridding, DS camera crude photo support layers, low res LCD limitation,
+    exported GIF quality charm, Flipnote Hatena community art, 2009 creativity within limitations;
+    Black on white drawing only, DS stylus jittery lines, flipbook animation marks, optional crude
+    camera support layer, memo pad grid texture, low res LCD, exported GIF artifacts; Black only on
+    white, DS LCD desaturated blacks, grey support field grid, occasionally red blue 3D anaglyph
+    experiments, no other colors; DS resistive touchscreen texture, stylus tip plastic on plastic,
+    low res LCD pixel grid, DSi camera CMOS grain, Flipnote memo pad pattern; Tiny DS LCD
+    resolution, stylus screen proportions, flipnote memo pad gridding, crude perspective attempts,
+    exported GIF spatial compression
   creative_brief: >-
-    A plastic stylus turns any prompt into jittery black marks on a tiny white screen. Flipbook timing marks,
-    memo-grid texture and GIF compression make the image feel like homemade animation captured before polish
-    can erase charm.
+    Apply DS Flipnote Studio as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Nintendo DSi Flipnote Studio aesthetic, crude black and white hand drawn animation on tiny
+    stylus screen, memo pad gridding, DS camera crude photo support layers, low res LCD limitation,
+    exported GIF quality charm, Flipnote Hatena community art, 2009 creativity within limitations,
+    Black on white drawing only, DS stylus jittery lines, flipbook animation marks, optional crude
+    camera support layer, memo pad grid texture, low res LCD, exported GIF artifacts, DS resistive
+    touchscreen texture, stylus tip plastic on plastic, low res LCD pixel grid, DSi camera CMOS
+    grain, Flipnote memo pad pattern without requiring the card image's original subject.
 avoidRules:
   - color
   - 3d
@@ -54,10 +95,25 @@ avoidRules:
   - detailed
   - shading
   - 60fps
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-099.webp
 attributes:
-  negativePrompt: color, 3d, smooth, HD, realistic, complex, gradient, rich, detailed, shading, 60fps
+  negativePrompt: >-
+    color, 3d, smooth, HD, realistic, complex, gradient, rich, detailed, shading, 60fps, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

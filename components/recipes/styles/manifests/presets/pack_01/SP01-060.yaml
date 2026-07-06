@@ -12,28 +12,77 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: Harsh witness documentary
-  subject_treatment: Chaotic factual framing
-  color_and_tone: Desaturated, dusty
-  lighting_and_shadow: Harsh sun
-  texture_and_material: Dust, smoke, grain
+  aesthetic: >-
+    Documentary (War) acts as a transferable photographic style router: begin from Harsh witness
+    documentary, Realism, and observational photographic system built from available-light capture,
+    imperfect timing, public-space pressure, and real-world incident, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Chaotic factual framing; preserve prompt identity while
+    favoring candid posture, active context, environmental evidence, and unsanitized physical
+    detail, keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Desaturated, dusty; grade as street, travel, concert, war, sport, paparazzi, or field
+    documentary capture rather than commercial color polish, with value separation and white balance
+    choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Harsh sun; use available light, flash intrusion, stage beams, harsh noon, rain reflection,
+    smoke, or practical spill as factual scene evidence, preserving believable exposure, shadow
+    density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Dust, smoke, grain; keep street surfaces, sweat, dust, fabric wear, weather, grain, high
+    ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy
+    texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Documentary (War): lens choice, crop distance, depth of field, and focal hierarchy
-    support 4. Documentary And Street without generic framing.
-  atmosphere_and_mood: Unflinching, intense
-  rendering_and_quality: Raw, emotional
-  key_features: Realism
+    Compose through Documentary (War) candid timing, available-light realism, environmental
+    evidence, and observational photographic pressure; compose with decisive moment tension, wide
+    action proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable
+    framing, with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Unflinching, intense; derive mood from urgency, witness, travel discovery, danger,
+    crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Raw, emotional; finish as credible documentary photography with restrained
+    processing, readable action, and no stock-advertising gloss, high-resolution photographic
+    detail, and disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Harsh witness documentary; Realism; Desaturated, dusty; Harsh sun; Documentary (War) candid
+    timing, available-light realism, environmental evidence, and observational photographic pressure
   creative_brief: >-
-    Harsh witness photography uses desaturation, dust, smoke, hard sun, grain, and imperfect factual framing
-    to make any subject feel reported rather than staged. Preserve raw documentary testimony without requiring
-    battlefield, tragedy, weapons, sky, or conflict-zone narrative.
+    Apply Documentary (War) as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Harsh witness documentary, Desaturated, dusty, Harsh sun, Dust, smoke,
+    grain, and Documentary (War) candid timing, available-light realism, environmental evidence, and
+    observational photographic pressure through optics, exposure, palette, surface response, timing,
+    and finish without requiring the card image's original subject.
 avoidRules:
   - posed
   - happy
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - staged advertisement
+  - fake smiles
+  - stock-photo gloss
+  - tourist postcard polish
+  - readable captions
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-060.webp
 attributes:
-  negativePrompt: posed, happy
+  negativePrompt: >-
+    posed, happy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
+    plastic render, watermark, readable text, signature, low resolution, staged advertisement, fake
+    smiles, stock-photo gloss, tourist postcard polish, readable captions
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

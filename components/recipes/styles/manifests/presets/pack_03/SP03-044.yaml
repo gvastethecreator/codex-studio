@@ -12,27 +12,74 @@ tags:
   - 3d-and-cgi-rendering
   - sensor-and-technical-shaders
 visualDna:
-  aesthetic: Heat map 3D
-  subject_treatment: Heat gradients
-  color_and_tone: Rainbow (Blue cold, Red hot), thermal gradient
-  lighting_and_shadow: Emissive temperature, heat-source mapping
-  texture_and_material: Temperature-emissive surface read with no material grain
+  aesthetic: >-
+    Thermal Vision acts as a transferable CGI-style router: start from Heat map 3D, Heat map, cold
+    to hot spectrum and technical shader system built from sensor mapping, diagnostic palette,
+    transparency rules, internal structure, and device-like signal clarity, then apply the 3D/render
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Heat gradients; preserve the prompt subject while remapping
+    it through x-ray visibility, thermal signal, internal layering, or technical diagnostic
+    abstraction, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Rainbow (Blue cold, Red hot), thermal gradient; use color as sensor output:
+    monochrome x-ray values, heat gradients, cold-to-hot ramps, density contrast, and
+    instrument-coded intensity, with deliberate value grouping, exposure control, and
+    medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Emissive temperature, heat source mapping; make illumination behave like
+    measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure
+    instead of beauty lighting, so value structure supports the renderer and does not overwrite the
+    requested content.
+  texture_and_material: >-
+    Render Temperature emissive surface read with no material grain; surface detail should show
+    internal structure, transparent layers, signal noise, heat zones, bone-like density, or
+    scanner-like edge clarity, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Thermal Vision: close three-quarter or macro material framing, strong highlight planes,
-    readable surface curvature, and controlled depth.
-  atmosphere_and_mood: Tactical, alien, sensor-data intensity
-  rendering_and_quality: Thermal false-color sensor overlay
-  key_features: Heat map, cold-to-hot spectrum
+    Structure the image through Lookdev camera for Thermal Vision: close three quarter or macro
+    material framing, strong highlight planes, readable surface curvature, and controlled depth;
+    compose through diagnostic readability, silhouette transparency, cross-section clarity, and
+    instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tactical, alien, sensor data intensity; derive mood from scientific distance,
+    surveillance unease, medical precision, or hidden-structure revelation, letting the renderer
+    alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Thermal false color sensor overlay; finish with exact sensor logic, controlled
+    artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces
+    where appropriate, and enough shader evidence to make the CGI mode recognizable.
+  key_features: >-
+    Heat map 3D; Heat map, cold to hot spectrum; Rainbow (Blue cold, Red hot), thermal gradient;
+    Temperature emissive surface read with no material grain; Lookdev camera for Thermal Vision:
+    close three quarter or macro material framing, strong highlight planes, readable surface
+    curvature, and controlled depth
   creative_brief: >-
-    Translate the input into thermal false color: white/yellow heat peaks, blue cold zones, soft diffusion
-    edges and sensor-grade data contrast. Keep tactical sci-fi flavor without requiring predator vision,
-    reconnaissance or a literal world scan.
+    Apply Thermal Vision as a CGI/render preset over prompt X: preserve the user's requested
+    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
+    final render craft through Heat map 3D, Heat map, cold to hot spectrum, Temperature emissive
+    surface read with no material grain without requiring the card image's original subject.
 avoidRules:
   - realistic color
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - beauty lighting
+  - wrong sensor palette
+  - fake UI text
+  - cinematic overpaint
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-044.webp
 attributes:
-  negativePrompt: realistic color
+  negativePrompt: >-
+    realistic color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text,
+    cinematic overpaint
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -13,30 +13,77 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Strategic-adventure shonen style with systems-driven readability, curiosity-forward energy, and tactical
-    clarity
+    Tactical Adventure Shonen acts as a transferable anime-battle/worlds router: Tactical Adventure
+    Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist,
+    diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes,
+    and playful strategic confidence. Keep clean cel readability and distinct costume color logic;
+    combine it with modern action anime grammar with power-system clarity, impact frames, elastic
+    motion, expressive line economy, and high-readability spectacle; named titles, studios, or
+    lineage words may guide style, but they must not require canon cast, title-scene replication,
+    screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Diagrammatic action vectors, clean decision-point silhouettes, ability-network motifs, and choreography
-    that foregrounds planning
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Tactical
+    Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer
+    protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as
+    abstract shapes as portable contour, motion grammar, surface language, and emotional pressure
+    without requiring canon elements or a default action setup.
   color_and_tone: >-
-    Bright exploratory saturation with disciplined tactical accents, cool-warm contrast nodes, and lucid value
-    grouping
+    Map color through saturated action accents, clean dark-light value separation, aura color,
+    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
+    let Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young
+    adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map
+    energy as abstract shapes choose accent intensity, value contrast, emotional temperature, and
+    power-system separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    Adventure-bright daylight with focused tactical highlights, balanced fill, and clear visual signaling for
-    ability states
+    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
+    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Tactical Adventure Shonen, tactical-adventure shonen style grammar
+    with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs,
+    discovery-map energy as abstract shapes without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Clean modern anime surface polish, legible effect overlays, map-like compositional textures, low-grit
-    digital finish
-  camera_and_composition: Dynamic depth with navigational clarity, emphasizing positional intelligence over chaotic motion blur
-  atmosphere_and_mood: Curious, competitive, analytical, adventurous, high-spirited
-  rendering_and_quality: Premium strategy-action anime rendering that prioritizes intelligible logic and discovery freshness
-  key_features: System-logic grammar, tactical readability, exploratory composition, intelligence-led spectacle pacing
+    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
+    debris, and controlled effect overlays; keep the tactile or effect cues in Tactical Adventure
+    Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist,
+    diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes
+    controlled, denoised, and coherent across bodies, objects, environments, abstractions, and
+    action.
+  camera_and_composition: >-
+    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
+    compressed depth, and readable near-to-far force paths; convert Tactical Adventure Shonen,
+    tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic
+    motion vectors, ability-network motifs, discovery-map energy as abstract shapes into reusable
+    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
+    sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
+    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
+    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
+    lineage readable.
+  rendering_and_quality: >-
+    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
+    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer
+    protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as
+    abstract shapes; dynamic contour, force-transfer anatomy, readable power effects, sharp costume
+    or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust,
+    smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal
+    attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable
+    near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy,
+    crisp silhouettes, no manga-panel text, and no cheap AI anime smear
   creative_brief: >-
-    Keep the preset centered on strategic legibility and discovery energy: motion should feel like visible
-    problem-solving, with action grammar driven by tactical decisions rather than fixed lore references. Apply
-    this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging,
-    palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship,
-    or fixed scene.
+    Apply Tactical Adventure Shonen after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer
+    protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as
+    abstract shapes, and playful strategic confidence. Keep clean cel readability and distinct
+    costume color logic, modern action anime grammar with power-system clarity, impact frames,
+    elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and
+    negative controls without forcing canon cast, title scene, screenshot, card pose, default
+    monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -50,12 +97,36 @@ avoidRules:
   - watermark
   - text
   - signature
+  - hunter-license copy
+  - card-game UI
+  - readable labels
+  - fishing-rod hero prop
+  - green outfit copy
+  - franchise team likeness
+  - dense forest
+  - generic ruin corridor
+  - photoreal cosplay
+  - western superhero comic
+  - generic shonen source-frame look
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-039.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, hunter-license copy, card-game UI, readable labels,
+    fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin
+    corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed
+    canon character, title scene replication, required source-frame look, cosplay, generic anime
+    filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,28 +12,80 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Intimate portrait
-  subject_treatment: Soft curve emphasis
-  color_and_tone: Warm, dark, red
-  lighting_and_shadow: Moody, window
-  texture_and_material: Lace-like texture, soft fabric, warm surface
+  aesthetic: >-
+    Boudoir Photography acts as a transferable photographic style router: begin from Intimate
+    portrait, Protected intimacy, and portrait and studio photography system built from lens
+    discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply
+    the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Soft curve emphasis; preserve prompt identity while using focal
+    priority, flattering or deliberately institutional distance, surface realism, and edge control
+    without requiring a human face, keeping the original subject, pose, species, object, or
+    environment legible.
+  color_and_tone: >-
+    Grade with Warm, dark, red; grade neutrals, skinlike or material tones, backdrop color, cosmetic
+    warmth, and controlled contrast as photographic capture decisions, with value separation and
+    white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Moody, window; make key, fill, rim, catchlight, background falloff, and shadow shape visibly
+    drive the style, preserving believable exposure, shadow density, highlight rolloff, and source
+    motivation.
+  texture_and_material: >-
+    Render Lace-like texture, soft fabric, warm surface; retain pores, fabric, hair, props, paper,
+    backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding
+    both waxy smoothing and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Boudoir Photography: lens choice, crop distance, depth of field, and focal
-    hierarchy support 1. Portrait And Studio without generic framing.
-  atmosphere_and_mood: Intimate, soft
-  rendering_and_quality: Sensual, private
-  key_features: Protected intimacy
+    Compose through Boudoir Photography studio subject hierarchy, controlled portrait optics,
+    believable retouching, and intentional backdrop behavior; use portrait lens compression, central
+    authority, intimate framing distance, frontal ID geometry, or editorial negative space without
+    forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Intimate, soft; derive mood from proximity, pose pressure, institutional polish,
+    intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Sensual, private; finish as real photography with clean optics, plausible
+    retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Intimate portrait; Protected intimacy; Warm, dark, red; Moody, window; Boudoir Photography
+    studio subject hierarchy, controlled portrait optics, believable retouching, and intentional
+    backdrop behavior
   creative_brief: >-
-    Boudoir style becomes protected intimate lighting: warm dark palette, soft curve emphasis, lace-like
-    texture, window-shaped mood, and private shadow control. Apply sensual editorial atmosphere without
-    requiring bed, skin, body, lingerie, or explicit content.
+    Apply Boudoir Photography as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Intimate portrait, Warm, dark, red, Moody, window, Lace-like texture, soft
+    fabric, warm surface, and Boudoir Photography studio subject hierarchy, controlled portrait
+    optics, believable retouching, and intentional backdrop behavior through optics, exposure,
+    palette, surface response, timing, and finish without requiring the card image's original
+    subject.
 avoidRules:
   - explicit
   - harsh
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-069.webp
 attributes:
-  negativePrompt: explicit, harsh
+  negativePrompt: >-
+    explicit, harsh, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin,
+    over-smoothed plastic retouching, distorted anatomy, generic beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

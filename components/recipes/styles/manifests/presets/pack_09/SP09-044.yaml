@@ -13,30 +13,61 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Natural bath sponge
-  subject_treatment: Holes
-  color_and_tone: Tan, Yellow
-  lighting_and_shadow: Soft
-  texture_and_material: Porous, dry
-  camera_and_composition: Irregular holes
-  atmosphere_and_mood: Clean, natural
-  rendering_and_quality: Natural, bath
-  key_features: Pores
+  aesthetic: >-
+    Sponge (Sea) translates natural material behavior into form: start from Natural bath sponge,
+    Porous, dry, and Irregular holes, then turn natural formation, growth, erosion, and geological
+    or biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Holes: preserve identity and pose while letting forms grow,
+    erode, polish, fracture, or soften through edge profile, surface breakup, thickness, contact
+    marks, and detail scale.
+  color_and_tone: >-
+    Use Tan, Yellow as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte
+    falloff, or rim behavior should reveal Sponge (Sea) without hiding the prompt subject.
+  texture_and_material: >-
+    Render Porous, dry through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Irregular holes as reusable material rhythm: macro-friendly for texture tasks,
+    but able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Clean, natural by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Natural, bath material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Natural bath sponge; Holes; Porous, dry; Soft; Irregular holes
   creative_brief: >-
-    Capture the organic porosity of sea sponge where irregular holes and channels create a labyrinth of
-    negative space in warm tan and yellow, each cavity a breathing chamber in a natural architecture of
-    filtration. The surface should feel dry but ready to absorb, soft organic matter that once lived now
-    preserved as texture. Render the beauty of the useful grown rather than made. Use Sponge as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Route any subject through Sponge (Sea) as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Capture the organic porosity of sea sponge
+    where irregular holes and channels create a labyrinth of negative space in warm tan and yellow,
+    each cavity a breathing chamber in a natural architecture of filtration. The surface should feel
+    dry but ready to absorb, soft organic matter that once lived now preserved as texture. Render
+    the beauty of the useful grown rather than made. Use Sponge as portable surface/render behavior
+    over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
+    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape,
+    source object, or scene where the material naturally appears.
 avoidRules:
   - kitchen sponge
   - square
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-044.webp
 attributes:
-  negativePrompt: kitchen sponge, square
+  negativePrompt: >-
+    kitchen sponge, square, wrong material, generic stock texture, muddy noise, watermark, readable
+    text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

@@ -12,31 +12,85 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Futurist vehicle concept style balancing industrial plausibility with aspirational speed-form language
+  aesthetic: >-
+    transport designs Design acts as a transferable illustration router: start from Futurist
+    transport designs concept style balancing industrial plausibility with aspirational speed-form
+    language, Perspective, technical form-language, callout detail and production concept-art system
+    built from iteration discipline, silhouette testing, material exploration, design readability,
+    and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Technical line discipline with aerodynamic panel segmentation, functional contour logic, and
-    engineering-forward silhouette design
-  color_and_tone: Industrial, gunmetal primaries, functional-finish spectrum
-  lighting_and_shadow: Studio, product-shot key, technical highlight
-  texture_and_material: Metal, dirt
+    Transform any prompt subject through Technical line discipline with aerodynamic panel
+    segmentation, functional contour logic, and engineering-forward silhouette design; preserve the
+    requested subject while routing it through design exploration, asset logic, value blocking,
+    scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Industrial, gunmetal primaries, functional-finish spectrum; use color as
+    concept decision-making: mood scripts, material swatches, faction accents, environment
+    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Studio, product-shot key, technical highlight; shape light for ideation
+    clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Metal, dirt, production design clarity, iteration logic, silhouette readability, material
+    exploration, and concept-art decision pressure; surface detail should reveal brush passes,
+    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
+    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
+    avoiding noisy filler texture.
   camera_and_composition: >-
-    Compose for Vehicle Design using its key spatial cues: Perspective, technical form-language, callout
-    detail.
-  atmosphere_and_mood: Fast, tech, prototype adrenaline, engineering cool
+    Structure the image through Compose for transport designs Design using its key spatial cues:
+    Perspective, technical form-language, callout detail; compose through production hierarchy,
+    variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or
+    cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Fast, tech, prototype adrenaline, engineering cool; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
   rendering_and_quality: >-
-    High-fidelity industrial concept rendering emphasizing material separation, manufacturable form language,
-    and mobility-focused intent
-  key_features: Perspective, technical form-language, callout detail
+    Finish with High-fidelity industrial concept rendering emphasizing material separation,
+    manufacturable form language, and mobility-focused intent; finish with concept-art usefulness,
+    readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final
+    render when iteration is intended, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Futurist transport designs concept style balancing industrial plausibility with aspirational
+    speed-form language; Perspective, technical form-language, callout detail; Industrial, gunmetal
+    primaries, functional-finish spectrum; Metal, dirt, production design clarity, iteration logic,
+    silhouette readability, material exploration, and concept-art decision pressure
   creative_brief: >-
-    Apply vehicle-design concept grammar to any input: aerodynamic surface logic, functional panel hierarchy,
-    studio highlight control, material separation, and engineering-forward silhouette should create mobility
-    intent without requiring cars, spacecraft, wheels, cockpits, callouts, or a specific sci-fi model.
+    Apply transport designs Design as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Futurist transport designs concept style balancing industrial plausibility with
+    aspirational speed-form language, Perspective, technical form-language, callout detail, Metal,
+    dirt, production design clarity, iteration logic, silhouette readability, material exploration,
+    and concept-art decision pressure without requiring the card image's original subject.
 avoidRules:
   - organic
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-050.webp
 attributes:
-  negativePrompt: organic
+  negativePrompt: >-
+    organic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
+    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

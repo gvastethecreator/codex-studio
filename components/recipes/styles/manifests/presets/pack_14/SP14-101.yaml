@@ -13,37 +13,82 @@ tags:
   - mythic-noir
 visualDna:
   aesthetic: >-
-    Blackwater Totem Memory within 1. Mythic Symbolism: a reusable Mythic Noir Curated Vault visual language
-    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Blackwater Totem Memory's specific style identity.
+    Blackwater Totem Memory acts as a transferable mythic-noir router: blackwater translated into
+    dark symbolic behavior, totem translated into dark symbolic behavior plus memory translated into
+    dark symbolic behavior fused with symbolist myth-noir iconography with emblem logic, relic
+    pressure, occult negative space, and adult editorial restraint; it carries symbol, omen, ritual
+    authority, and mature editorial restraint without locking prompt content to its sample image.
   subject_treatment: >-
-    Define Blackwater Totem Memory through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Keep the user's prompt subject, action, and context intact while reshaping identity through
+    totemic vertical mass and memory-bearing silhouette, blackwater shaping silhouette rhythm,
+    contour pressure, and symbolic edge control plus memory shaping silhouette rhythm, contour
+    pressure, and symbolic edge control; forms should inherit silhouette pressure, emblem logic,
+    ritual posture, edge weight, and motif placement instead of a mandatory actor or prop set.
   color_and_tone: >-
-    Use a Blackwater Totem Memory-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through blackwater blue, oil-dark green, and silver reflection breaks, totem-weighted
+    accent roles over disciplined dark values plus memory-weighted accent roles over disciplined
+    dark values together with blackened neutrals, relic gold, ash white, bruised crimson, oxidized
+    green, and one disciplined omen accent; values stay separated, accents feel intentional, and the
+    dark palette supports the requested content rather than swallowing it.
   lighting_and_shadow: >-
-    Use lighting that makes Blackwater Totem Memory recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Use glossy dark reflections and hidden underlight, totem-weighted rim behavior, occult glow, and
+    charged shadow plus memory-weighted rim behavior, occult glow, and charged shadow with
+    eclipse-like falloff, thin halo edges, candle-density glow, and shadow that behaves like
+    symbolic weight; shadows must carry omen weight, rims should clarify form, and glow should
+    behave as ritual evidence rather than decorative haze.
   texture_and_material: >-
-    Use materials and textures that reinforce Blackwater Totem Memory: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render wet mineral film and slow ripple distortion plus dark carved wood, river stain, and
+    hand-rubbed texture alongside obsidian polish, ash residue, salt-bone grain, tarnished metal,
+    wax, velvet, paper, and carved-stone tactility; surface scale, patina, residue, gloss, grain,
+    and carved or sealed edges must remain coherent across characters, objects, scenes, and
+    abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Blackwater Totem Memory: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame with mnemonic rings, echo repeats, and archived spacing, blackwater converted into
+    repeatable spatial rhythm and symbolic hierarchy plus totem converted into repeatable spatial
+    rhythm and symbolic hierarchy plus icon axes, seal geometry, threshold spacing, processional
+    rhythm, and diagram-like symbolic hierarchy; the style should support portraits, objects,
+    architecture, creatures, symbols, and full scenes through reusable spatial grammar instead of
+    one fixed layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Blackwater Totem Memory: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through remembered obligation and preserved witness, blackwater pressure,
+    consequence, and symbolic tension plus totem pressure, consequence, and symbolic tension and
+    hushed authority, occult elegance, grief, accusation, secrecy, and a sense of ancient systems
+    still operating; the image can become severe, sensual, sacred, violent, quiet, or strange when
+    prompt X asks for it, while the preset supplies mythic consequence.
   rendering_and_quality: >-
-    Render Blackwater Totem Memory with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with blackwater recognition with denoised dark editorial polish and controlled material
+    truth plus totem recognition with denoised dark editorial polish and controlled material truth
+    and denoised illustrated finish with crisp symbol reads, controlled blacks, no muddy texture
+    paste, and no fake lettering; prioritize clean denoise, readable dark values, strong silhouette
+    hierarchy, tactile material truth, and no watermark, fake text, logos, accidental UI, or muddy
+    black crush.
   key_features: >-
-    Prioritize Blackwater Totem Memory's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    blackwater translated into dark symbolic behavior, totem translated into dark symbolic behavior
+    plus memory translated into dark symbolic behavior; totemic vertical mass and memory-bearing
+    silhouette, blackwater shaping silhouette rhythm, contour pressure, and symbolic edge control
+    plus memory shaping silhouette rhythm, contour pressure, and symbolic edge control; wet mineral
+    film and slow ripple distortion plus dark carved wood, river stain, and hand-rubbed texture;
+    glossy dark reflections and hidden underlight, totem-weighted rim behavior, occult glow, and
+    charged shadow plus memory-weighted rim behavior, occult glow, and charged shadow; mnemonic
+    rings, echo repeats, and archived spacing, blackwater converted into repeatable spatial rhythm
+    and symbolic hierarchy plus totem converted into repeatable spatial rhythm and symbolic
+    hierarchy
   creative_brief: >-
-    Create a style-card that translates Blackwater Totem Memory into a portable visual system for 1. Mythic
-    Symbolism. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Apply Blackwater Totem Memory after prompt X as a transferable mythic-noir layer: prompt X
+    supplies subject, action, setting, and intensity, while this preset supplies blackwater
+    translated into dark symbolic behavior, totem translated into dark symbolic behavior plus memory
+    translated into dark symbolic behavior, totemic vertical mass and memory-bearing silhouette,
+    blackwater shaping silhouette rhythm, contour pressure, and symbolic edge control plus memory
+    shaping silhouette rhythm, contour pressure, and symbolic edge control, blackwater blue,
+    oil-dark green, and silver reflection breaks, totem-weighted accent roles over disciplined dark
+    values plus memory-weighted accent roles over disciplined dark values, glossy dark reflections
+    and hidden underlight, totem-weighted rim behavior, occult glow, and charged shadow plus
+    memory-weighted rim behavior, occult glow, and charged shadow, wet mineral film and slow ripple
+    distortion plus dark carved wood, river stain, and hand-rubbed texture plus mnemonic rings, echo
+    repeats, and archived spacing, blackwater converted into repeatable spatial rhythm and symbolic
+    hierarchy plus totem converted into repeatable spatial rhythm and symbolic hierarchy, finish
+    discipline, and negative controls without requiring a fixed deity, ritual, prop bundle,
+    location, or sample composition.
 avoidRules:
   - photoreal
   - neon
@@ -52,10 +97,23 @@ avoidRules:
   - text
   - logo
   - cute
+  - generic occult logo
+  - cute fantasy mascot
+  - random symbol collage
+  - fixed deity portrait
+  - required ritual scene
+  - literal sample composition
+  - generic dark fantasy
+  - muddy black crush
+  - random occult symbols
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-101.webp
 attributes:
-  negativePrompt: photoreal, neon, pop-art, watermark, text, logo, cute
+  negativePrompt: >-
+    photoreal, neon, pop-art, watermark, text, logo, cute, generic occult logo, cute fantasy mascot,
+    random symbol collage, fixed deity portrait, required ritual scene, literal sample composition,
+    generic dark fantasy, muddy black crush, random occult symbols, readable text
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

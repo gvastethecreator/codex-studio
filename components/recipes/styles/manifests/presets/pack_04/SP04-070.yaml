@@ -12,26 +12,81 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Subtractive chiaroscuro print with deep black fields
-  subject_treatment: Minimal contour lines; value-driven form modeling
-  color_and_tone: Velvet black, graphite charcoal, warm ivory highlight accents
-  lighting_and_shadow: Burnished highlight reveal over fully darkened plate structure
-  texture_and_material: Fine rocker tooth, polished burnish transitions, plate-grain softness
-  camera_and_composition: Flat print plane with depth implied through tonal recession
-  atmosphere_and_mood: Nocturnal, contemplative, austere, museum-print gravitas
-  rendering_and_quality: High tonal drama with smooth gradients from mass-black to glow
-  key_features: Continuous black ground, staged highlight recovery, velvety midtone transitions
+  aesthetic: >-
+    Mezzotint acts as a transferable illustration router: start from Subtractive chiaroscuro print
+    with deep black fields, Continuous black ground, staged highlight recovery, velvety midtone
+    transitions and ink and printmaking system built from mark economy, matrix process, ink
+    transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply
+    the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Minimal contour lines; value-driven form modeling; preserve
+    the requested subject while rebuilding it through carved lines, etched density, stipple fields,
+    calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash
+    simplification, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Velvet black, graphite charcoal, warm ivory highlight accents; use color as ink
+    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
+    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Burnished highlight reveal over fully darkened plate structure; translate
+    light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling,
+    or flat spray contrast rather than photographic shading, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Fine rocker tooth, polished burnish transitions, plate-grain softness; surface detail
+    should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite,
+    fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Flat print plane with depth implied through tonal recession; compose
+    through print registration, border discipline, mark-direction rhythm, negative-space carving,
+    tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nocturnal, contemplative, austere, museum-print gravitas; derive mood from craft
+    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with High tonal drama with smooth gradients from mass-black to glow; finish as a credible
+    ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random
+    distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Subtractive chiaroscuro print with deep black fields; Continuous black ground, staged highlight
+    recovery, velvety midtone transitions; Velvet black, graphite charcoal, warm ivory highlight
+    accents; Fine rocker tooth, polished burnish transitions, plate-grain softness; Flat print plane
+    with depth implied through tonal recession
   creative_brief: >-
-    Apply mezzotint chiaroscuro grammar to any input: uninterrupted black matrix, burnished highlight
-    recovery, rocker-tooth grain, velvety midtones, and staged glow should build forms from darkness without
-    requiring night scenes, portraits, museum prints, or fixed black-ground subjects.
+    Apply Mezzotint as an illustration preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Subtractive
+    chiaroscuro print with deep black fields, Continuous black ground, staged highlight recovery,
+    velvety midtone transitions, Fine rocker tooth, polished burnish transitions, plate-grain
+    softness without requiring the card image's original subject.
 avoidRules:
   - white background
   - lines
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-070.webp
 attributes:
-  negativePrompt: white background, lines
+  negativePrompt: >-
+    white background, lines, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake
+    text, random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

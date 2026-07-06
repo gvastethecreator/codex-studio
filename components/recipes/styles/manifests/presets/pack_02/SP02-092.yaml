@@ -13,34 +13,69 @@ tags:
   - hand-drawn-and-diy-media
 visualDna:
   aesthetic: >-
-    Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused
-    surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered
+    Crumpled-Paper Scribble acts as a transferable cinematic-media router: start from Drawing on
+    crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface,
+    wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered, Paper crease
+    lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi
+    imperfection and DIY media system built from informal marks, found surfaces, zine assembly,
+    crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply
+    the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles,
-    roughened-edge strokes
+    Transform any prompt subject through Lines broken by paper creases, ink pooling in fold valleys,
+    interrupted-contour across wrinkles, roughened-edge strokes; preserve the requested subject
+    while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment,
+    zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested
+    identity, silhouette, action, object function, or setting legible.
   color_and_tone: >-
-    Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence,
-    tea-tannin brown
+    Build color with Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey,
+    yellow-highlighter fluorescence, tea-tannin brown; use color through dry-erase primaries, paper
+    grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents,
+    with deliberate value grouping, accent control, and process-specific limits rather than generic
+    color wash.
   lighting_and_shadow: >-
-    Top-down desk-lamp warmth, crease-shadow depth from crumpled topography, side-light revealing paper
-    texture
+    Handle light through Top-down desk-lamp warmth, crease-shadow depth from crumpled topography,
+    side-light revealing paper texture; keep light secondary to surface evidence through flat scan
+    lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow
+    structure support the media process without overwriting the requested content.
   texture_and_material: >-
-    Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers,
-    torn-edge roughness
-  camera_and_composition: Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion
+    Render Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed
+    into fibers, torn-edge roughness; surface detail should reveal marker squeak, paper wrinkles,
+    cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping
+    artifact scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Forms bisected by fold lines, features shifted across crease faults,
+    drawn-then-crumpled distortion; compose through casual diagram layout, pasted fragments,
+    object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial
+    shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
+    work.
   atmosphere_and_mood: >-
-    Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy
-    charm
+    Keep the mood Desperate creativity, beautiful failure, late-night frustrated genius, rescued
+    inspiration, melancholy charm; derive mood from improvised problem-solving, punk urgency,
+    outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the
+    media style alter interpretation without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art
-    philosophy
+    Finish with Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture
+    rendering, wabi-sabi art philosophy; finish with honest DIY texture, readable prompt identity,
+    and no polished corporate vector, fake readable notes, or clean studio poster default, clean
+    denoised surfaces where appropriate, and enough process evidence to make the style recognizable.
   key_features: >-
-    Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys,
-    wabi-sabi imperfection
+    Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and
+    abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought
+    recovered; Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in
+    fold valleys, wabi-sabi imperfection; Stained paper beige, coffee-ring sepia, ballpoint blue,
+    graphite grey, yellow-highlighter fluorescence, tea-tannin brown; Deep-crease paper folds,
+    coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge
+    roughness; Forms bisected by fold lines, features shifted across crease faults,
+    drawn-then-crumpled distortion
   creative_brief: >-
-    Apply crumpled-paper damage to any input: fold faults, ink pooling, coffee stains, torn edges, warped
-    fibers, and recovered-sketch imperfection. Avoid requiring characters, trash scenes, or literal rejection
-    narrative. Damage should co-author the composition through surface deformation.
+    Apply Crumpled-Paper Scribble as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Drawing on crumpled then flattened paper,
+    crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion,
+    beautiful-accident texture, discarded-thought recovered, Paper crease lines across art,
+    coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection,
+    Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into
+    fibers, torn-edge roughness without requiring the card image's original subject.
 avoidRules:
   - flat
   - clean
@@ -51,10 +86,26 @@ avoidRules:
   - unwrinkled
   - perfect
   - crisp edges
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - polished corporate vector
+  - fake readable notes
+  - clean studio poster
+  - stock illustration polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-092.webp
 attributes:
-  negativePrompt: flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges
+  negativePrompt: >-
+    flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges, official
+    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
+    watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector,
+    fake readable notes, clean studio poster, stock illustration polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

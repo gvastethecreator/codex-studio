@@ -8,26 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Desert Mech Convoy',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, oversaturated, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, oversaturated, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Desert Mech Convoy within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Desert Mech Convoy's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through machine-scale choreography; escort-route readability; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Desert Mech Convoy's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Desert Mech Convoy: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with sun-baked ochre, bone white, and hot shadow blue; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Desert Mech Convoy: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with heat haze and hard desert sun; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Desert Mech Convoy's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from hydraulic limbs, armor plates, pistons, and dust-chipped paint; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Desert Mech Convoy's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Desert Mech Convoy's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Desert Mech Convoy into a portable visual system for 3. Sci-Fi Frontiers & Mech Zones. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Desert Mech Convoy as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Desert, Mech, Convoy; machine-scale choreography; sun-baked ochre, bone white, and hot shadow blue; heat haze and hard desert sun; hydraulic limbs, armor plates, pistons, and dust-chipped paint; staggered vehicle spacing and dust trails; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
     },
   },
   {
@@ -35,24 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Moonbase Breach Alarm',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, warm-sunlight, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, warm-sunlight, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Moonbase Breach Alarm within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Moonbase Breach Alarm's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through containment failure beat; breach-state urgency; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Moonbase Breach Alarm's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Moonbase Breach Alarm: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with warning red against utility white; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Moonbase Breach Alarm: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with sterile station light and alarm red; rotating alarm strobes; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Moonbase Breach Alarm's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from white panels, airlock seams, and lunar dust; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Moonbase Breach Alarm's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Moonbase Breach Alarm's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Moonbase, Breach, Alarm; containment failure beat; warning red against utility white; sterile station light and alarm red; white panels, airlock seams, and lunar dust; ruptured threshold and emergency flow; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+      creative_brief:
+        "Apply Moonbase Breach Alarm as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -60,24 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Underwater Research Collapse',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, dry-environment, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, dry-environment, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Underwater Research Collapse within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Underwater Research Collapse's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Underwater Research Collapse's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Underwater Research Collapse: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with teal pressure shadows and red lab alarms; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Underwater Research Collapse: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with filtered beams through glass and water; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Underwater Research Collapse's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Underwater Research Collapse's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Underwater Research Collapse's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Underwater, Research, Collapse; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale; teal pressure shadows and red lab alarms; filtered beams through glass and water; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; large-small scale contrast, hangar lanes, convoy spacing, breach corridors, dock silhouettes, and readable machinery clusters; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+      creative_brief:
+        "Apply Underwater Research Collapse as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -85,24 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Storm Citadel Defense Grid',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, chaotic-ui, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, chaotic-ui, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Storm Citadel Defense Grid within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Storm Citadel Defense Grid's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through protected objective logic; defense wave readability; systemic tactical overlay without UI; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Storm Citadel Defense Grid's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Storm Citadel Defense Grid: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Storm Citadel Defense Grid: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with lightning flashes and shield-grid glow; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Storm Citadel Defense Grid's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Storm Citadel Defense Grid's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Storm Citadel Defense Grid's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood defense under weather pressure; tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Storm, Citadel, Defense, Grid; protected objective logic; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; lightning flashes and shield-grid glow; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; fortified skyline and defense-grid strata; defense under weather pressure',
+      creative_brief:
+        "Apply Storm Citadel Defense Grid as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -110,24 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Orbital Garden Colony Builder',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, grimdark, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, grimdark, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Orbital Garden Colony Builder within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Orbital Garden Colony Builder's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through builder-system legibility; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Orbital Garden Colony Builder's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Orbital Garden Colony Builder: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Orbital Garden Colony Builder: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with planet bounce and sterile sun; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Orbital Garden Colony Builder's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from greenhouse glass, orbital struts, and modular colony shells; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Orbital Garden Colony Builder's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Orbital Garden Colony Builder's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Orbital, Garden, Colony, Builder; builder-system legibility; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; planet bounce and sterile sun; greenhouse glass, orbital struts, and modular colony shells; ring habitat arcs and greenhouse modules; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+      creative_brief:
+        "Apply Orbital Garden Colony Builder as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -135,26 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Robot Orchard Defense',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, grimdark, overfog, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, grimdark, overfog, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Robot Orchard Defense within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Robot Orchard Defense's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through automated defense logic; defense wave readability; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Robot Orchard Defense's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Robot Orchard Defense: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Robot Orchard Defense: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Robot Orchard Defense's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from utility robots, orchard frames, and clean hazard paint; gnarled branches, fruit color, and defensive machinery; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Robot Orchard Defense's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Robot Orchard Defense's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood pastoral zone turned tactical; tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Robot Orchard Defense into a portable visual system for 3. Sci-Fi Frontiers & Mech Zones. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Robot Orchard Defense as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Robot, Orchard, Defense; automated defense logic; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; utility robots, orchard frames, and clean hazard paint; protected core, lanes, and fallback positions; pastoral zone turned tactical',
     },
   },
   {
@@ -162,24 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Quantum Laboratory Rift',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, fantasy-castle, muddy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, fantasy-castle, muddy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Quantum Laboratory Rift within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Quantum Laboratory Rift's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through unstable portal hazard; experiment instability; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Quantum Laboratory Rift's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Quantum Laboratory Rift: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with violet rift light, sterile white, and teal lab glow; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Quantum Laboratory Rift: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with split-dimensional glow and hard rim tear; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Quantum Laboratory Rift's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from glass tanks, containment frames, and sterile metal; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Quantum Laboratory Rift's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Quantum Laboratory Rift's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Quantum, Laboratory, Rift; unstable portal hazard; violet rift light, sterile white, and teal lab glow; split-dimensional glow and hard rim tear; glass tanks, containment frames, and sterile metal; portal seam as focal anchor; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+      creative_brief:
+        "Apply Quantum Laboratory Rift as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -187,24 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Alloy Forest Mech Hunt',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Alloy Forest Mech Hunt within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Alloy Forest Mech Hunt's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through nature-machine fusion; machine-scale choreography; tracking, ambush, and scale reveal; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Alloy Forest Mech Hunt's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Alloy Forest Mech Hunt: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Alloy Forest Mech Hunt: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Alloy Forest Mech Hunt's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from brushed alloy trunks and mechanical bark; hydraulic limbs, armor plates, pistons, and dust-chipped paint; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Alloy Forest Mech Hunt's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Alloy Forest Mech Hunt's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Alloy, Forest, Mech, Hunt; nature-machine fusion; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; brushed alloy trunks and mechanical bark; tracking-scale contrast against a dangerous landmark; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+      creative_brief:
+        "Apply Alloy Forest Mech Hunt as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -212,26 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Solar Rail Nomad Camp',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, neon-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, neon-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Solar Rail Nomad Camp within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Solar Rail Nomad Camp's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through linear route pressure; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Solar Rail Nomad Camp's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Solar Rail Nomad Camp: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with warm solar gold, dusty white, and panel blue; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Solar Rail Nomad Camp: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Solar Rail Nomad Camp's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from portable panels and nomad rigging; solar fabric, rail dust, and portable machinery; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Solar Rail Nomad Camp's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Solar Rail Nomad Camp's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood mobile frontier camp; tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Solar Rail Nomad Camp into a portable visual system for 3. Sci-Fi Frontiers & Mech Zones. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Solar Rail Nomad Camp as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Solar, Rail, Nomad, Camp; linear route pressure; warm solar gold, dusty white, and panel blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; portable panels and nomad rigging; long track perspective and carriage modules; mobile frontier camp',
     },
   },
   {
@@ -239,24 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Skyforge Dragon Dock',
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, underwater, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, underwater, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Skyforge Dragon Dock within 3. Sci-Fi Frontiers & Mech Zones: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Skyforge Dragon Dock's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Skyforge Dragon Dock's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
       color_and_tone:
-        'Use a controlled palette that supports Skyforge Dragon Dock: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Skyforge Dragon Dock: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Skyforge Dragon Dock's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from rigging, cranes, wet metal, and dragon-scale docking gear; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Skyforge Dragon Dock's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Skyforge Dragon Dock's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 3. Sci-Fi Frontiers & Mech Zones style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Skyforge, Dragon, Dock; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; rigging, cranes, wet metal, and dragon-scale docking gear; shipyard layers; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+      creative_brief:
+        "Apply Skyforge Dragon Dock as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -13,36 +13,81 @@ tags:
   - artistic-mediums
 visualDna:
   aesthetic: >-
-    Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered
-    surface memory
+    Aerosol Velocity Layering operates as a portable source-router layer: combine Aerosol markmaking
+    system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface
+    memory with manual medium logic with mark discipline, process texture, graphic reduction, and
+    authored surface treatment, so the preset supplies visual behavior rather than a fixed card
+    scene or literal sample.
   subject_treatment: >-
-    Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails,
-    scuffed outline collisions
+    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
+    stitch, spray, glaze, outline, cut, layer, or illuminate through Fat-cap fills, skinny-cap cuts,
+    overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions;
+    identity stays readable through construction grammar, proportion, edge logic, and detail scale
+    as this preset is applied.
   color_and_tone: >-
-    Chrome silver, toxic green, infrared purple, safety yellow, matte black, signal red, concrete grey
-    undertone
-  lighting_and_shadow: Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch
-  texture_and_material: Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields
-  camera_and_composition: Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth
-  atmosphere_and_mood: Energetic, illegal-feeling, urban-coded, loud, improvised, physical
-  rendering_and_quality: Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation
+    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
+    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color
+    punch plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze,
+    spray mist, or print layers as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol
+    speckle fields plus mark residue, substrate grain, lead came, screen ink, sprayed overspray,
+    needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or
+    signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures,
+    pressure-fade depth plus graphic spacing, panel division, emblem balance, handmade alignment,
+    and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects,
+    scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
+    object presence; the emotional tone should feel specific to Aerosol Velocity Layering while
+    still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
+    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Overspray halos, cap-width transitions, drips, masked edges, layered tags, color collisions, scuffed
-    substrate
+    Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and
+    layered surface memory; Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil
+    interrupts, tag-like motion trails, scuffed outline collisions; Powdery overspray, glossy wet
+    paint, scratched base surface, stencil edge dust, aerosol speckle fields; Flat flash-like
+    visibility with wet-paint glints, grazing texture light, and saturated color punch; Spray drift,
+    drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth
   creative_brief: >-
-    Push the input through aerosol process rather than a mural scene: visible spray pressure, paint order,
-    drip behavior, and layered marks should drive the image. Avoid requiring walls, alleys, lettering, cans,
-    crews, or a street location. Apply Aerosol Velocity Layering as a portable style system over any input:
-    preserve its construction grammar, material cues, scale logic, and signature rendering behavior while
-    avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene
-    template.
+    Use Aerosol Velocity Layering after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Aerosol markmaking system with
+    overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory,
+    Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion
+    trails, scuffed outline collisions, Powdery overspray, glossy wet paint, scratched base surface,
+    stencil edge dust, aerosol speckle fields, Flat flash-like visibility with wet-paint glints,
+    grazing texture light, and saturated color punch, Spray drift, drip gravity, edge bloom, stencil
+    offsets, overlapping tag gestures, pressure-fade depth plus stroke direction, pigment edge,
+    stencil separation, lead structure, fabric or print registration, and clearly expressed hand
+    process, palette behavior, light response, material treatment, and finish discipline without
+    requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - brush strokes
   - clean
+  - generic digital painting
+  - flat vector shortcut
+  - lost medium texture
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-026.webp
 attributes:
-  negativePrompt: brush strokes, clean
+  negativePrompt: >-
+    brush strokes, clean, generic digital painting, flat vector shortcut, lost medium texture, fixed
+    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

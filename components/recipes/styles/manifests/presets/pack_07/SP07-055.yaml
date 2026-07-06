@@ -13,45 +13,103 @@ tags:
   - fantasy-and-mythic-architecture
 visualDna:
   aesthetic: >-
-    Confectionery Surrealism within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior
-    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
-    result transferable across subjects while preserving Confectionery Surrealism's specific style identity.
+    Confectionery Surrealism acts as a transferable architecture/interior router: icing seams,
+    gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights; fuse it
+    with mythic architecture grammar with impossible structure, ritual scale, fantasy material
+    logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale,
+    ornament, and light over prompt X without requiring the default sample anchor, fixed spatial
+    set, landscape setup, or object sample.
   subject_treatment: >-
-    Define Confectionery Surrealism through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve prompt subject, action, and context while translating any requested subject through
+    monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or
+    organic envelope logic, and sacred scale; treat icing seams, gumdrop nodes, marshmallow mass,
+    candy-cane structural rhythm, sugar-glass highlights as massing, edge, surface, joinery,
+    threshold, or ornament behavior rather than a mandatory building scene.
   color_and_tone: >-
-    Use a Confectionery Surrealism-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues,
+    spectral edge color, and restrained fantasy accents; let source cues such as icing seams,
+    gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights decide
+    accent hierarchy, material temperature, and value separation while staying attached to the
+    requested content.
   lighting_and_shadow: >-
-    Use lighting that makes Confectionery Surrealism recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low
+    light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale,
+    and atmosphere from icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm,
+    sugar-glass highlights without replacing prompt X with a stock architectural render.
   texture_and_material: >-
-    Use materials and textures that reinforce Confectionery Surrealism: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass
+    surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in icing
+    seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights,
+    with believable surface response, denoised grain, coherent wear, and no generic wallpaper
+    texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Confectionery Surrealism: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression,
+    ritual thresholds, and scale without literal throne-room lock; convert icing seams, gumdrop
+    nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights into reusable
+    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
+    style sample layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Confectionery Surrealism: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or
+    monumental pressure carried through structure and material; the preset can support adult,
+    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
+    them while keeping the architectural identity readable.
   rendering_and_quality: >-
-    Render Confectionery Surrealism with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with high-control fantasy-architecture finish with coherent material logic, no licensed
+    location read, no weapon or character dependency; keep clean denoise, legible construction,
+    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
+    logo, no camera prop, and no prompt-literal card copy.
   key_features: >-
-    Prioritize Confectionery Surrealism's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass
+    highlights; monumental mass, symbolic thresholds, carved or grown structure, impossible support,
+    mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered
+    metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text
+    marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual
+    thresholds, and scale without literal throne-interior zones lock
   creative_brief: >-
-    Create a style-card that translates Confectionery Surrealism into a portable visual system for 5. Fantasy
-    And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene,
-    character, prop, or story beat.
+    Apply Confectionery Surrealism after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass
+    highlights, mythic architecture grammar with impossible structure, ritual scale, fantasy
+    material logic, and believable load-bearing ornament, material discipline, spatial grammar, and
+    negative controls without requiring a single spatial sample, product-photo setup, aisle-like
+    default, or empty abstraction.
 avoidRules:
   - horror candy
   - photoreal food macro
   - edible mascot party scene
+  - dessert table
+  - kid party
+  - candy mascot
+  - fairy-tale street
+  - castle
+  - market aisle
+  - library aisle
+  - camera prop
+  - empty abstraction
+  - licensed fantasy location
+  - throne interior zones default
+  - weapon prop
+  - character hero
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-055.webp
 attributes:
-  negativePrompt: horror candy, gore, photoreal food macro, edible mascot, kid-party literal
+  negativePrompt: >-
+    horror candy, photoreal food macro, edible mascot party scene, dessert table, kid party, candy
+    mascot, fairy-tale street, castle, market aisle, library aisle, camera prop, empty abstraction,
+    licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed
+    building-only scene, mandatory interior interior zones, corridor perspective, furniture
+    showroom, prompt-required card, readable text, logo, watermark, mandatory interior set,
+    prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

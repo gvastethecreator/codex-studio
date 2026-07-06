@@ -13,27 +13,77 @@ tags:
   - toys-and-crafts
 visualDna:
   aesthetic: >-
-    Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art
-    novelty
-  subject_treatment: Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends
-  color_and_tone: Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss
-  lighting_and_shadow: High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection
-  texture_and_material: Stretched rubber, latex skin, powder-dusted finish, taut inflation tension
-  camera_and_composition: Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form
-  atmosphere_and_mood: Fun, squeaky, buoyant, celebration-coded, carnival-joy, light and temporary
-  rendering_and_quality: Fragile, playful, inflated, balloon-twisting magic, squeak-and-sculpt, festive impermanence
-  key_features: Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings
+    Balloon Art operates as a portable source-router layer: combine Twisted latex construction,
+    balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty with hand-built
+    object logic with toy scale, assembly marks, tactile charm, and playful construction, so the
+    preset supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms simplify,
+    assemble, soften, hinge, stitch, fold, carve, or snap together through Rounded segments,
+    pinch-twist nodes, sausage-link sections, tubular bends; identity stays readable through
+    construction grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through material-native color blocks, toy-safe saturation, handmade variance, and
+    clean separation between parts; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface
+    reflection plus small-scale object lighting, crisp edge readability, soft contact shadows, and
+    material-specific highlights as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Stretched rubber, latex skin, powder-dusted finish, taut inflation tension plus plastic,
+    clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior;
+    surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain
+    coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon
+    form plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile
+    detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and
+    abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and
+    physical charm; the emotional tone should feel specific to Balloon Art while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean craft detail, readable construction, deliberate imperfections, and no
+    accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language,
+    pressure-art novelty; Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends;
+    Stretched rubber, latex skin, powder-dusted finish, taut inflation tension; High specular
+    highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection; Tubular
+    shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form
   creative_brief: >-
-    Convert the input into latex-twist construction grammar: segmented tubular inflation, knot-node
-    articulation, glossy pressure-tension highlights, and inflated simplification should drive the style
-    without requiring clowns, birthdays, animals, or a party room.
+    Use Balloon Art after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Twisted latex construction, balloon-sculpture grammar,
+    squeaky inflated form language, pressure-art novelty, Rounded segments, pinch-twist nodes,
+    sausage-link sections, tubular bends, Stretched rubber, latex skin, powder-dusted finish, taut
+    inflation tension, High specular highlights, tight glossy rim catches, overhead bounce,
+    balloon-surface reflection, Tubular shapes, inflated segment geometry, pinch-collapsed waist,
+    pressure-balloon form plus clearly expressed joins, simplified proportions, craft tolerances,
+    modular parts, and maker-process evidence, palette behavior, light response, material treatment,
+    and finish discipline without requiring one specimen, prop bundle, product still, or card
+    composition.
 avoidRules:
   - sharp
   - flat
+  - melted craft
+  - generic toy render
+  - featureless plastic
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-018.webp
 attributes:
-  negativePrompt: sharp, flat
+  negativePrompt: >-
+    sharp, flat, melted craft, generic toy render, featureless plastic, fixed specimen, literal card
+    scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

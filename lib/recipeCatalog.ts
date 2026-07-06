@@ -134,6 +134,14 @@ const RECIPE_CARD_METADATA: Record<RegisteredRecipeId, RecipeCatalogCardMetadata
     accentColor: 'emerald',
     cardImageKey: 'spritesheet',
   },
+  'sprite-atlas': {
+    id: 'sprite-atlas',
+    subtitle: 'Atlas Pipeline',
+    tag: 'Runtime',
+    buttonText: 'Open Workbench',
+    accentColor: 'cyan',
+    cardImageKey: 'spritesheet',
+  },
   character: {
     id: 'character',
     subtitle: 'Sheet Designer',

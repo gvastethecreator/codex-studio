@@ -12,28 +12,87 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: High-gloss polymer couture, reflective power dressing and lacquered futurism.
-  subject_treatment: Broad reflective panels, clean seam routing, sculpted garment planes and continuous glossy wrapping.
-  color_and_tone: Black shiny, blood-red, midnight purple, liquid-mercury, rubber-white, patent-bordeaux
-  lighting_and_shadow: High contrast reflection, rim-light gloss, controlled strip catchlights and wet-look sheen.
-  texture_and_material: Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish.
-  camera_and_composition: Reflection-bend compression across broad glossy planes.
-  atmosphere_and_mood: Intense, sleek, mirror-shine confidence and lacquered edge without fetish framing.
-  rendering_and_quality: Shiny, edgy high-polish couture with material reflection precision.
-  key_features: Reflections, crease-free tension, zip-line cues, seam articulation and high-shine polish.
+  aesthetic: >-
+    High-Gloss Polymer operates as a portable fashion-costume router: combine High-gloss polymer
+    couture, reflective power dressing and lacquered futurism with material-forward fashion
+    transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior,
+    so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
+    literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Broad reflective
+    panels, clean seam routing, sculpted garment planes and continuous glossy wrapping; identity
+    stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling
+    hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use High contrast reflection, rim-light gloss, controlled strip catchlights and wet-look sheen
+    plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff,
+    or volumetric separation as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Lacquered polymer, polished PVC, patent leather, chlorinated rubber and slick sealant
+    finish plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire,
+    gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
+  camera_and_composition: >-
+    Compose with Reflection-bend compression across broad glossy planes plus drape rhythm, material
+    coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge
+    control as reusable fashion framing grammar, allowing portraits, objects, creatures,
+    environments, action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to High-Gloss Polymer
+    while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    High-gloss polymer couture, reflective power dressing and lacquered futurism; Broad reflective
+    panels, clean seam routing, sculpted garment planes and continuous glossy wrapping; Lacquered
+    polymer, polished PVC, patent leather, chlorinated rubber and slick sealant finish; High
+    contrast reflection, rim-light gloss, controlled strip catchlights and wet-look sheen;
+    Reflection-bend compression across broad glossy planes
   creative_brief: >-
-    Coat the input in high-gloss polymer logic: seamless reflection, broad glossy panels, zip-line detailing,
-    seam articulation and strip-light catchlights. Preserve power-dressing intensity without club setting,
-    fetish-coded framing, second-skin portrait, body-first silhouette or wet-look body emphasis.
+    Use High-Gloss Polymer after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies High-gloss polymer
+    couture, reflective power dressing and lacquered futurism, Broad reflective panels, clean seam
+    routing, sculpted garment planes and continuous glossy wrapping, Lacquered polymer, polished
+    PVC, patent leather, chlorinated rubber and slick sealant finish, High contrast reflection,
+    rim-light gloss, controlled strip catchlights and wet-look sheen, Reflection-bend compression
+    across broad glossy planes plus weave, pile, grain, shine, translucency, opacity, stretch, wrap,
+    seam tension, edge behavior, and surface continuity, palette behavior, light response, material
+    treatment, silhouette grammar, and finish discipline without requiring one body type, fixed
+    outfit, venue, prop bundle, or card composition.
 avoidRules:
   - matte
   - cotton
   - fetish framing
   - body-first silhouette
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-051.webp
 attributes:
-  negativePrompt: matte, cotton, fetish framing, body-first silhouette
+  negativePrompt: >-
+    matte, cotton, fetish framing, body-first silhouette, generic fabric texture, muddy surface
+    noise, wrong material physics, fixed outfit, required body type, literal card scene, generic
+    fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

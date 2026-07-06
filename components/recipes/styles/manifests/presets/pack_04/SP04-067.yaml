@@ -12,26 +12,83 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity
-  subject_treatment: Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink movement
-  color_and_tone: Ink wash, single-pass tone, monoprint spontaneity
-  lighting_and_shadow: Unpredictable, plate-pressure variation, unique ghost-artifact
-  texture_and_material: Plate texture
-  camera_and_composition: Squashed ink
-  atmosphere_and_mood: Expressive, unique, printmaking surprise, serendipitous beauty
-  rendering_and_quality: Painterly print, one-chance drama, artistic gamble
-  key_features: Ghost image, ink-bleed edge, plate-memory residue
+  aesthetic: >-
+    Monotype acts as a transferable illustration router: start from Monotype one-off print style
+    with painterly transfer unpredictability and unique impression-first identity, Ghost image,
+    ink-bleed edge, plate-memory residue and ink and printmaking system built from mark economy,
+    matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic
+    structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Smudged plate-transfer marks with pressure-variant edges,
+    ghost traces, and spontaneous ink movement; preserve the requested subject while rebuilding it
+    through carved lines, etched density, stipple fields, calligraphic pressure, stamp
+    incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested
+    identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Ink wash, single-pass tone, monoprint spontaneity; use color as ink behavior:
+    monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray
+    contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control,
+    and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Unpredictable, plate-pressure variation, unique ghost-artifact; translate
+    light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling,
+    or flat spray contrast rather than photographic shading, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Plate texture, ink transfer, mark density, paper response, process artifacts, and
+    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
+    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
+    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Squashed ink, scale rhythm, edge hierarchy, spacing, and composition
+    rules specific to Monotype; compose through print registration, border discipline,
+    mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like
+    balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Expressive, unique, printmaking surprise, serendipitous beauty; derive mood from
+    craft pressure, underground immediacy, archival print authority, occult darkness, decorative
+    ceremony, street-poster urgency, or disciplined ink control, letting the style alter
+    interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Painterly print, one-chance drama, artistic gamble; finish as a credible ink or
+    print artifact with exact mark logic, restrained artifacting, and no fake text, random distress
+    overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Monotype one-off print style with painterly transfer unpredictability and unique
+    impression-first identity; Ghost image, ink-bleed edge, plate-memory residue; Ink wash,
+    single-pass tone, monoprint spontaneity; Plate texture, ink transfer, mark density, paper
+    response, process artifacts, and printmaking composition discipline; Squashed ink, scale rhythm,
+    edge hierarchy, spacing, and composition rules specific to Monotype
   creative_brief: >-
-    Apply monotype print grammar to any input: one-pass transfer, pressure-born variation, ghosting, smudged
-    plate edges, and non-repeatable ink movement should create unique impression energy without requiring
-    abstract figures, print plates, studios, or one expressive scene.
+    Apply Monotype as an illustration preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Monotype
+    one-off print style with painterly transfer unpredictability and unique impression-first
+    identity, Ghost image, ink-bleed edge, plate-memory residue, Plate texture, ink transfer, mark
+    density, paper response, process artifacts, and printmaking composition discipline without
+    requiring the card image's original subject.
 avoidRules:
   - repeatable
   - clean
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-067.webp
 attributes:
-  negativePrompt: repeatable, clean
+  negativePrompt: >-
+    repeatable, clean, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake
+    text, random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

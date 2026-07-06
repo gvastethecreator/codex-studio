@@ -12,28 +12,83 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: 90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort
-  subject_treatment: Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape
-  color_and_tone: Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo
-  lighting_and_shadow: Flat everyday overhead, overcast softness, low-contrast practical warmth
-  texture_and_material: Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas
+  aesthetic: >-
+    Normcore operates as a portable fashion-costume router: combine 90s everyday normcore, casual
+    anti-fashion, dad-denim ease, nothing-to-prove comfort with contemporary fashion styling with
+    fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer,
+    streamline, accessorize, polish, or simplify through Loose fit, straight-leg dad jeans, relaxed
+    shoulder, anti-fit drape; identity stays readable as silhouette, fit, layering, body-volume
+    logic, edge behavior, and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through modern neutrals, controlled accent color, textile value separation,
+    skin-adjacent warmth, and editorial contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Flat everyday overhead, overcast softness, low-contrast practical warmth plus fashion
+    editorial light with fabric sheen, controlled shadow, polished skin or surface response, and
+    clean silhouette reads as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas
+    plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds,
+    closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans, tucked-in tee,
-    windbreaker.
-  atmosphere_and_mood: Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease
-  rendering_and_quality: Boring, ironic, comfortable, deliberately average, anti-fashion confidence
-  key_features: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker
+    Compose with Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans,
+    tucked-in tee, windbreaker plus lookbook clarity, runway silhouette rhythm, full-form
+    readability, crop discipline, and styling hierarchy as reusable fashion framing grammar,
+    allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit
+    styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional
+    or event-specific presence; the tone should feel specific to Normcore while still obeying the
+    prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with high-end styling clarity, crisp garment edges, believable fit, controlled
+    retouching, and no catalog blandness; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort; Loose fit,
+    straight-leg dad jeans, relaxed shoulder, anti-fit drape; Cotton jersey, stonewashed denim,
+    fleece sweatshirt, waffle-knit thermal, washed canvas; Flat everyday overhead, overcast
+    softness, low-contrast practical warmth; Compose for Normcore using its key spatial cues: Dad
+    sneakers, light-wash jeans, tucked-in tee, windbreaker
   creative_brief: >-
-    Flatten the input into normcore anti-fashion: dad denim, fleece, washed canvas, plain jersey, windbreaker
-    logic and deliberately average proportions. It should feel comfortable and unoptimized without requiring a
-    coffee shop, sidewalk, sitcom reference or human standing pose.
+    Use Normcore after prompt X as a transferable fashion/costume layer: prompt X supplies subject,
+    motion, setting, tone, and intensity, while the preset supplies 90s everyday normcore, casual
+    anti-fashion, dad-denim ease, nothing-to-prove comfort, Loose fit, straight-leg dad jeans,
+    relaxed shoulder, anti-fit drape, Cotton jersey, stonewashed denim, fleece sweatshirt,
+    waffle-knit thermal, washed canvas, Flat everyday overhead, overcast softness, low-contrast
+    practical warmth, Compose for Normcore using its key spatial cues: Dad sneakers, light-wash
+    jeans, tucked-in tee, windbreaker plus tailoring lines, garment fit, hem placement, accessory
+    restraint, layered proportion, and intentional styling choices, palette behavior, light
+    response, material treatment, silhouette grammar, and finish discipline without requiring one
+    body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - flashy
   - expensive
+  - generic catalog outfit
+  - brand logo styling
+  - bad garment fit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-016.webp
 attributes:
-  negativePrompt: flashy, expensive
+  negativePrompt: >-
+    flashy, expensive, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

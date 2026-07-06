@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - drawing-and-sketching
 visualDna:
-  aesthetic: Sanguine/Sepia drawing
-  subject_treatment: Square stick strokes
-  color_and_tone: Red, Brown, Black, White
-  lighting_and_shadow: Classical study
-  texture_and_material: Textured paper
-  camera_and_composition: 'Compose for Conte Crayon using its key spatial cues: Earth tones.'
-  atmosphere_and_mood: Warm, classical
-  rendering_and_quality: Academic study finish with warm material restraint
-  key_features: Earth tones
+  aesthetic: >-
+    Conte Crayon acts as a transferable art-medium router: start from Sanguine/Sepia drawing, Earth
+    tones and drawing-media system built from mark pressure, line economy, paper tooth, erasure,
+    hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X
+    instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Square stick strokes; preserve the prompt subject while
+    rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or
+    marker stroke logic, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Red, Brown, Black, White; treat color as tool-limited material: graphite value,
+    charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic
+    trace, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Classical study; represent light through mark spacing, exposed paper, tonal
+    rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Textured paper; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating,
+    vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent
+    and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Conte Crayon using its key spatial cues: Earth tones;
+    structure forms through line rhythm, gesture, technical geometry, blank space, contour
+    continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Warm, classical; derive mood from study, immediacy, precision, roughness,
+    temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Academic study finish with warm material restraint; finish with honest drawing
+    marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing
+    the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make
+    the medium recognizable.
+  key_features: Sanguine/Sepia drawing; Earth tones; Red, Brown, Black, White; Textured paper
   creative_brief: >-
-    Apply conte-crayon drawing to any input: compressed earth tones, sanguine and sepia value structure,
-    square-stick strokes, textured paper drag, and warm disciplined modeling. Keep archaeological restraint
-    without requiring academy figures, portraits, anatomy plates, or antique sketchbooks.
+    Apply Conte Crayon as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through
+    Sanguine/Sepia drawing, Earth tones, Textured paper without requiring the card image's original
+    subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - painterly fill
+  - wrong drawing tool
+  - airbrushed smoothness
+  - photo-real material overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-024.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool,
+    airbrushed smoothness, photo-real material overlay
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

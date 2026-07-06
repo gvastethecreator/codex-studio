@@ -12,26 +12,79 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Childlike crayon illustration with naive expressive immediacy
-  subject_treatment: Waxy pressure-variable strokes with uneven contour control
-  color_and_tone: Bright primary/secondary crayon set with spontaneous overlap
-  lighting_and_shadow: Flat paper-based lighting; value implied by stroke density
-  texture_and_material: Heavy wax buildup and visible paper tooth drag
-  camera_and_composition: Simplified anatomy and playful proportion exaggeration
-  atmosphere_and_mood: Joyful, innocent, spontaneous
-  rendering_and_quality: Deliberately unpolished, sincere, hand-made mark quality
-  key_features: Uneven fill, directional scribble, layered wax bloom
+  aesthetic: >-
+    Crayon Drawing acts as a transferable illustration router: start from Childlike crayon
+    illustration with naive expressive immediacy, Uneven fill, directional scribble, layered wax
+    bloom and storybook and friendly-illustration system built from approachable shapes, handmade
+    media, simplified edges, tactile materials, and high-readability charm, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Waxy pressure-variable strokes with uneven contour control;
+    preserve the requested subject while softening, simplifying, miniaturizing, paper-building,
+    mark-making, or diagramming it according to the named medium, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Bright primary/secondary crayon set with spontaneous overlap; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Flat paper-based lighting; value implied by stroke density; shape light
+    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Heavy wax buildup and visible paper tooth drag; surface detail should show paper tooth,
+    cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or
+    watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Simplified anatomy and playful proportion exaggeration; compose with
+    clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout,
+    or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Joyful, innocent, spontaneous, mood carried by Crayon Drawing craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Deliberately unpolished, sincere, hand-made mark quality; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Childlike crayon illustration with naive expressive immediacy; Uneven fill, directional
+    scribble, layered wax bloom; Bright primary/secondary crayon set with spontaneous overlap; Heavy
+    wax buildup and visible paper tooth drag; Simplified anatomy and playful proportion exaggeration
   creative_brief: >-
-    Apply childlike crayon energy to any input: wax pressure changes, imperfect fill boundaries, visible paper
-    tooth, simplified forms, and spontaneous overlap should keep the style direct without requiring children,
-    stick figures, suns, houses, classroom pages, or fixed pose cliches.
+    Apply Crayon Drawing as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Childlike crayon illustration with naive expressive immediacy, Uneven fill, directional
+    scribble, layered wax bloom, Heavy wax buildup and visible paper tooth drag without requiring
+    the card image's original subject.
 avoidRules:
   - professional
   - smooth
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-019.webp
 attributes:
-  negativePrompt: professional, smooth
+  negativePrompt: >-
+    professional, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    plastic toy render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

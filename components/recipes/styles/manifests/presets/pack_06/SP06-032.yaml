@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: Relief block print
-  subject_treatment: Thick, angular, gouged
-  color_and_tone: Black and White high contrast
-  lighting_and_shadow: Stark
-  texture_and_material: Wood grain, ink squash
-  camera_and_composition: Angular forms
-  atmosphere_and_mood: Dramatic, primitive
-  rendering_and_quality: German expressionism, bold
-  key_features: Gouge marks
+  aesthetic: >-
+    Woodcut acts as a transferable art-medium router: start from Relief block print, Gouge marks and
+    print-process system built from matrix marks, ink transfer, pressure, registration, plate or
+    block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Thick, angular, gouged; preserve the prompt subject while
+    converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
+    systems, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Black and White high contrast; use palette as ink behavior: limited plates,
+    overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security
+    green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Stark; translate light into line density, dot frequency, relief shadow,
+    plate tone, paper reserve, or ink coverage rather than photographic illumination, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Wood grain, ink squash; surface detail should reveal paper fibers, plate marks, burr,
+    gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Angular forms; compose through print registration, cut rhythm,
+    border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dramatic, primitive; derive mood from hand pressure, mechanical reproduction,
+    archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with German expressionism, bold; finish as a credible print artifact with exact mark
+    logic, restrained texture, and no fake poster text or random distress overlay, clean denoised
+    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Relief block print; Gouge marks; Black and White high contrast; Wood grain, ink squash; Angular
+    forms
   creative_brief: >-
-    Apply woodcut print logic to any input: gouged white channels, raised black ink shapes, visible wood
-    grain, rough relief edges, and reduction-carved contrast. Keep block-print force without requiring folk
-    scenes, waves, landscapes, animals, or historical illustration.
+    Apply Woodcut as an art-style preset over prompt X: preserve the user's requested subject, then
+    route mark-making, palette, surface, composition, mood, and final craft through Relief block
+    print, Gouge marks, Wood grain, ink squash without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - fake poster text
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-032.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital
+    gradient, random distress overlay, wrong print process
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

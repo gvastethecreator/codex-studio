@@ -12,28 +12,84 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence
+  aesthetic: >-
+    Stipple (Dotwork) acts as a transferable illustration router: start from Stipple dotwork style
+    with meditative tonal accumulation and precision-built monochrome form emergence, Dots only,
+    stipple gradient, point-by-point tone and ink and printmaking system built from mark economy,
+    matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic
+    structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke
-    dependency
-  color_and_tone: Black ink, pointillist-mono, dot-gradient depth
-  lighting_and_shadow: Dot density, stipple-as-value, cumulative point shadow
-  texture_and_material: Skin/Paper
-  camera_and_composition: Gradient by dots
-  atmosphere_and_mood: Obsessive, soft, pointillist trance, meticulous calm
-  rendering_and_quality: Detailed, slow, meditative precision, hand-poke patience
-  key_features: Dots only, stipple gradient, point-by-point tone
+    Transform any prompt subject through Dot-only mark system with density-controlled gradients,
+    cluster rhythm, and no continuous stroke dependency; preserve the requested subject while
+    rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp
+    incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested
+    identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Black ink, pointillist-mono, dot-gradient depth; use color as ink behavior:
+    monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray
+    contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control,
+    and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Dot density, stipple-as-value, cumulative point shadow; translate light
+    into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or
+    flat spray contrast rather than photographic shading, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Skin/Paper, ink transfer, mark density, paper response, process artifacts, and
+    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
+    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
+    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Gradient by dots, scale rhythm, edge hierarchy, spacing, and
+    composition rules specific to Stipple (Dotwork); compose through print registration, border
+    discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or
+    edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Obsessive, soft, pointillist trance, meticulous calm; derive mood from craft
+    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Detailed, slow, meditative precision, hand-poke patience; finish as a credible ink
+    or print artifact with exact mark logic, restrained artifacting, and no fake text, random
+    distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form
+    emergence; Dots only, stipple gradient, point-by-point tone; Black ink, pointillist-mono,
+    dot-gradient depth; Skin/Paper, ink transfer, mark density, paper response, process artifacts,
+    and printmaking composition discipline; Gradient by dots, scale rhythm, edge hierarchy, spacing,
+    and composition rules specific to Stipple (Dotwork)
   creative_brief: >-
-    Apply stipple dotwork grammar to any input: point-density value modeling, dot-cluster edges, stroke-less
-    tonal construction, slow monochrome accumulation, and meditative texture should define form without
-    requiring tattoos, skin, portraits, animals, or fixed illustration context.
+    Apply Stipple (Dotwork) as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form
+    emergence, Dots only, stipple gradient, point-by-point tone, Skin/Paper, ink transfer, mark
+    density, paper response, process artifacts, and printmaking composition discipline without
+    requiring the card image's original subject.
 avoidRules:
   - lines
   - solid
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-064.webp
 attributes:
-  negativePrompt: lines, solid
+  negativePrompt: >-
+    lines, solid, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

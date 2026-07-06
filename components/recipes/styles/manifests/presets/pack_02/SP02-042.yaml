@@ -12,27 +12,86 @@ tags:
   - cinematic-and-media
   - animation-styles
 visualDna:
-  aesthetic: Folded paper animation
-  subject_treatment: Fold lines
-  color_and_tone: Origami paper, washi tones, muted coral, indigo, rice white
-  lighting_and_shadow: Soft studio, gentle fill, paper-diffuse bounce
-  texture_and_material: Paper grain, fold crease, fibrous edge, handmade pulp
-  camera_and_composition: Low poly (paper), geometric faceting, crease-driven planes
-  atmosphere_and_mood: Handmade, precise, storybook craft, gentle wonder
-  rendering_and_quality: Delicate, craft, handmade patience, precision folding
-  key_features: Folds, crease shadow, paper thickness, fibrous edge, handmade pulp
+  aesthetic: >-
+    Papercraft Animation acts as a transferable cinematic-media router: start from Folded paper
+    animation, Papercraft Animation animation pipeline grammar, cel or puppet surface, shape acting,
+    motion readability, and production-era finish, Folds, crease shadow, paper thickness, fibrous
+    edge, handmade pulp and animation-production system built from motion-era drawing, cel paint, CG
+    polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply the
+    media behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fold lines, adapt the requested subject through animation
+    pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era
+    finish while preserving prompt identity; preserve the requested subject while translating it
+    through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace,
+    or painted-frame continuity, keeping the requested identity, silhouette, action, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Origami paper, washi tones, muted coral, indigo, rice white; use color as
+    animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion
+    set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Soft studio, gentle fill, paper-diffuse bounce; make light follow the
+    animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat
+    graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Paper grain, fold crease, fibrous edge, handmade pulp; surface detail should reveal
+    acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells,
+    or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Low poly (paper), geometric faceting, crease-driven planes; compose
+    through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging,
+    multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy,
+    and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Handmade, precise, storybook craft, gentle wonder; derive mood from feature
+    warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or
+    experimental motion craft, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Delicate, craft, handmade patience, precision folding; finish with
+    production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact
+    studio-character copy or random cartoon face substitution, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Folded paper animation, Papercraft Animation animation pipeline grammar, cel or puppet surface,
+    shape acting, motion readability, and production-era finish; Folds, crease shadow, paper
+    thickness, fibrous edge, handmade pulp; Origami paper, washi tones, muted coral, indigo, rice
+    white; Paper grain, fold crease, fibrous edge, handmade pulp; Low poly (paper), geometric
+    faceting, crease-driven planes
   creative_brief: >-
-    Recompose any input as folded paper construction: planar facets, visible crease shadows, fibrous edges,
-    and soft studio bounce across handmade paper. Avoid forcing landscapes, tabletop worlds, or origami
-    creatures. The subject should keep its intent while becoming a fragile assembly of folds, thickness, and
-    careful craft.
+    Apply Papercraft Animation as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Folded paper animation, Papercraft Animation
+    animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and
+    production-era finish, Folds, crease shadow, paper thickness, fibrous edge, handmade pulp, Paper
+    grain, fold crease, fibrous edge, handmade pulp without requiring the card image's original
+    subject.
 avoidRules:
   - drawn
   - 3d
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact studio character copy
+  - random cartoon face
+  - unreadable motion smear
+  - fake subtitles
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-042.webp
 attributes:
-  negativePrompt: drawn, 3d
+  negativePrompt: >-
+    drawn, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact
+    studio character copy, random cartoon face, unreadable motion smear, fake subtitles
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

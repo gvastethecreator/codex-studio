@@ -9,7 +9,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
-      'clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, gritty dark noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over-cracked surfaces, watermark, text',
+      'clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, gritty dark noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over cracked surfaces, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Bleak ashen medieval fantasy style with clean soot-softened surfaces, sacred decay, heavy solemn material weight, and worn ceremonial darkness.',
@@ -24,11 +24,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         "Low, weighty framing with broad negative space, diagonal massing, large readable silhouette planes, and depth cues driven by light, scale, and shadow, adaptable to the user's composition.",
       atmosphere_and_mood:
-        'Ancient, predatory, funereal, and solemn without becoming gory or splatter-focused.',
+        "Carry the prompt through Ancient, predatory, funereal, and solemn without becoming gory or splatter focused; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Dark fantasy digital illustration with heavy strong denoise, defined linework, crisp material shapes, clean shadow masses, broad readable value planes, and restrained microtexture.',
       creative_brief:
-        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding ash, weight, sacred decay, clean matte material logic, and solemn dark-fantasy atmosphere while keeping subject, setting, and props dictated by the user's prompt.",
+        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding ash, weight, sacred decay, clean matte material logic, and solemn dark fantasy atmosphere while keeping subject, setting, and props dictated by the user's prompt. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Ashen Soulslike Ruins; Bleak ashen medieval fantasy style with clean soot softened surfaces; sacred decay; heavy solemn material weight; worn ceremonial darkness; Transform any prompt subject with eroded silhouette weight, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+      key_features:
+        'Ashen Soulslike Ruins; Bleak ashen medieval fantasy style with clean soot softened surfaces; sacred decay; heavy solemn material weight; worn ceremonial darkness; Transform any prompt subject with eroded silhouette weight',
     },
   },
   {
@@ -37,12 +39,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
-      'generic high fantasy, shiny new armor, cartoon magic, sci-fi panels, explicit gore, watermark, text',
+      'generic high fantasy, shiny new armor, cartoon magic, sci fi panels, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Vast mythic medieval epic where gold sigils, ruined kingdoms, and divine weather dominate the frame.',
       subject_treatment:
-        'A gilded rune oracle bearing a floating oath tablet and stag-horn halo, elegant and legendary, with the figure secondary to glowing rune geometry.',
+        'Transform any subject with gilded rune-epic language using oathlike glow, antlered or halo-like geometry as optional shape rhythm, legendary vertical elegance, gold-on-stone authority, and divine ruin scale without forcing an oracle figure.',
       color_and_tone:
         'Weathered gold, storm blue, moss green, bone white, and blackened umber with radiant rune accents.',
       lighting_and_shadow:
@@ -50,12 +52,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Engraved metal, mossy stone, torn banners, ancient parchment, and luminous etched rune lines.',
       camera_and_composition:
-        'Wide heroic landscapes, colossal scale cues, centered relics, and horizon lines that feel mythic.',
-      atmosphere_and_mood: 'Grand, elegiac, haunted, and ancient, with wonder balanced by ruin.',
+        'Heroic scale through wide negative planes, centered relic hierarchy, gilded vertical accents, and mythic distance pressure that adapts to the prompt subject.',
+      atmosphere_and_mood:
+        "Carry the prompt through Grand, elegiac, haunted, and ancient, with wonder balanced by ruin; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'High-detail fantasy illustration with painterly polish, ornate surfaces, and readable silhouettes.',
       creative_brief:
-        'Use for any subject needing golden myth, divine ruin, and colossal medieval scale without copying a specific franchise.',
+        'Route any subject through gilded rune epic grandeur: preserve the prompt while adding golden myth, oathlike rune geometry, divine ruin, and colossal medieval scale without copying a specific franchise or card figure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Gilded Rune Epic; Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Gilded Rune Epic; Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance',
     },
   },
   {
@@ -64,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
-      'clean costume drama, bright fairy tale, glossy armor, heroic poster pose, explicit gore, watermark, text',
+      'clean costume drama, bright fairy tale, glossy armor, heroic poster pose, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic: 'Muddy war-torn medieval fantasy staged like a brutal siege chronicle.',
       subject_treatment:
@@ -76,13 +81,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Mud, chainmail, rough wool, chipped shields, wet timber, battered stone, and soot.',
       camera_and_composition:
-        'Crowded foregrounds, diagonal siege lines, compressed perspective, and documentary battle staging.',
+        'Compressed siege-line rhythm, diagonal pressure lanes, smoke-flattened depth, documentary austerity, and crowded value grouping only when the prompt supports it.',
       atmosphere_and_mood:
-        'Harsh, political, desperate, and unsentimental while avoiding graphic injury.',
+        "Carry the prompt through Harsh, political, desperate, and unsentimental while avoiding graphic injury; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean atmospheric planes.',
       creative_brief:
-        'Reusable visual system for any subject needing grim medieval war pressure, mud-stained restraint, documentary severity, and siege-like visual weight.',
+        'Reusable visual system for any subject needing grim medieval war pressure, mud stained restraint, documentary severity, and siege like visual weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Grimdark Siege Chronicle; Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Grimdark Siege Chronicle; Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic',
     },
   },
   {
@@ -91,7 +98,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
-      'flat daylight, modern church interior, clean museum look, cute fantasy, explicit gore, watermark, text',
+      'flat daylight, modern church interior, clean museum look, cute fantasy, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic cathedral fantasy with carved darkness, vaulted height, and sacred chiaroscuro.',
@@ -104,12 +111,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Carved stone, wax drips, oxidized metal, incense haze, cracked fresco, and embroidered cloth.',
       camera_and_composition:
-        'Tall vertical framing, symmetrical nave geometry, deep aisles, and silhouettes against stained windows.',
-      atmosphere_and_mood: 'Reverent, ominous, quiet, and ceremonial.',
+        'Tall vertical framing, sacred axial symmetry, long shadow lanes, stained-pane contrast, and devotional silhouette pressure without requiring a nave or window set.',
+      atmosphere_and_mood:
+        "Carry the prompt through Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly atmosphere.',
       creative_brief:
-        'Reusable visual system for any subject needing sacred vertical light, carved darkness, ceremonial gravity, and gothic chiaroscuro beyond one literal scene.',
+        'Reusable visual system for any subject needing sacred vertical light, carved darkness, ceremonial gravity, and gothic chiaroscuro beyond one literal scene. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis',
     },
   },
   {
@@ -118,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
-      'polished tournament armor, bright paladin glow, playful costume, sci-fi soldier, explicit gore, watermark, text',
+      'polished tournament armor, bright paladin glow, playful costume, sci fi soldier, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Severe crusader fantasy built from black iron, devotional symbols, and battle-worn austerity.',
@@ -131,12 +141,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Hammered iron, chain links, rough cloth crosses, scarred shields, ash dust, and old enamel.',
       camera_and_composition:
-        'Front-facing icon posture, shield-wall spacing, low horizon, and strong heraldic geometry.',
-      atmosphere_and_mood: 'Zealous, austere, militant, and haunted.',
+        'Frontal heraldic hierarchy, shieldlike spacing, low mass horizon, and severe icon geometry that can attach to any compatible subject.',
+      atmosphere_and_mood:
+        "Carry the prompt through Zealous, austere, militant, and haunted; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Detailed dark fantasy concept art with tactile armor, disciplined shapes, and restrained effects.',
       creative_brief:
-        'Reusable visual system for any subject needing severe medieval crusade imagery, iron mass, heraldic pressure, and devotional menace.',
+        'Reusable visual system for any subject needing severe medieval crusade imagery, iron mass, heraldic pressure, and devotional menace. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Black Iron Crusade; Severe crusader fantasy built from black iron; devotional symbols; battle worn austerity; faceless angular mass; shieldlike silhouette pressure, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Black Iron Crusade; Severe crusader fantasy built from black iron; devotional symbols; battle worn austerity; faceless angular mass; shieldlike silhouette pressure',
     },
   },
   {
@@ -145,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
-      'photorealism, modern poster layout, smooth digital gradients, anime, explicit gore, watermark, text',
+      'photorealism, modern poster layout, smooth digital gradients, anime, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial space.',
@@ -159,11 +172,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Visible fibers, worn edges, stitched contours, frayed borders, thread gaps, and softened pigment.',
       camera_and_composition:
         'Frontal frieze layout, stacked scenes, ornamental borders, and iconic subject placement.',
-      atmosphere_and_mood: 'Ancient, folkloric, mysterious, and ceremonial.',
+      atmosphere_and_mood:
+        "Carry the prompt through Ancient, folkloric, mysterious, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'High-resolution textile illustration preserving woven texture and crisp symbolic readability.',
       creative_brief:
-        'Reusable visual system for any subject needing damaged medieval-tapestry texture, flat mythic silhouette, faded ceremonial color, and symbolic readability.',
+        'Reusable visual system for any subject needing damaged medieval tapestry texture, flat mythic silhouette, faded ceremonial color, and symbolic readability. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color',
     },
   },
 ] as unknown as StyleRuntimePreset[];

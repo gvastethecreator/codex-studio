@@ -13,34 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Green-phosphor sensor vision with monochrome glow, HUD-like corner logic, intensifier grain, vignette
-    falloff, and mediated vulnerability
+    Phosphor Sensor-Vision Grain operates as a portable anime-lifestyle router: combine Phosphor
+    Sensor Vision Grain identity cues through Phosphor monochrome; intensifier grain; reticle like
+    alignment; lens vignette; infrared points; and sensor mediated framing with broad anime style
+    spectrum grammar with experimental line, material specific finish, auteur adjacent motion,
+    graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies
+    anime style behavior after prompt X rather than a required scene, character, franchise image, or
+    card composition.
   subject_treatment: >-
-    Phosphor scan-line contours, image-intensifier grain defining edges, HUD-overlay line elements, and
-    reticle-like alignment marks
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Phosphor-green-monochrome, black-level-crushed-shadows, overexposed-bloom-white, NVG-emerald-tube-tint,
-    no-other-colors-at-all
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Infrared illuminator beam, amplified moon-ambient, sensor-overload bloom, and distant hot-source
-    registration as white
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Image-intensifier-scintillation-noise, phosphor-screen-grain, CMOS-night-sensor-artifacts,
-    lens-tube-vignette, dust-on-optic-specks
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Fisheye lens distortion, HUD elements composited over subject space, body-cam-like motion blur,
-    reticle-centered framing
-  atmosphere_and_mood: Tactical, tense, nocturnal, high-tech vulnerability, ghostly green paranoia
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Night-vision-footage aesthetic, tactical-body-cam realism, military-surveillance-grain,
-    green-phosphor-beauty, ghost-through-technology vision
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Phosphor monochrome, intensifier grain, reticle-like alignment, lens vignette, infrared points, and
-    sensor-mediated framing
+    Phosphor monochrome; intensifier grain; reticle like alignment; lens vignette; infrared points;
+    and sensor mediated framing
   creative_brief: >-
-    Use phosphor sensor-vision grain as mediated-sight grammar. Any prompt should feel seen through noisy
-    green intensifier optics, HUD framing, vignette, and fragile visibility. Tactical scenes, weapons,
-    battlefields, explosions, and body cameras are optional.
+    Use Phosphor Sensor-Vision Grain after prompt X as a transferable anime character/lifestyle
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
+    supplies Phosphor monochrome, intensifier grain, reticle like alignment, lens vignette, infrared
+    points, and sensor mediated framing, color logic, lighting, material finish, composition rhythm,
+    mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop
+    bundle, title screenshot, or sample-card composition.
 avoidRules:
   - colorful
   - bright
@@ -52,10 +77,27 @@ avoidRules:
   - cinematic
   - stylized
   - soft
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-117.webp
 attributes:
-  negativePrompt: colorful, bright, warm, daylight, natural light, smooth, clean, cinematic, stylized, soft
+  negativePrompt: >-
+    colorful, bright, warm, daylight, natural light, smooth, clean, cinematic, stylized, soft,
+    generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene
+    copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card
+    reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise
+    costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

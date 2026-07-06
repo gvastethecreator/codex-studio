@@ -12,30 +12,89 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Visual-novel backdrop style with neon emotional grading, clean anime paint, and interactive-scene clarity.
-  subject_treatment: Present any subject as a polished story-backdrop element with simplified planes and readable mood coding.
+  aesthetic: >-
+    Visual Novel Neon Backdrop Wash acts as a transferable art-medium router: start from Visual
+    novel backdrop style with neon emotional grading, clean anime paint, and interactive scene
+    clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
+    production-art clarity and game-art direction system built from playable readability, UI or
+    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
+    the medium behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Present any subject as a polished story backdrop element
+    with simplified planes and readable mood coding; preserve the prompt subject while routing it
+    through tile readability, icon clarity, splash rendering, interface material, sprite bounce,
+    shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
   color_and_tone: >-
-    Violet-blue ambient wash, saturated neon accents, gentle pastel fills, and controlled contrast for UI
-    legibility.
-  lighting_and_shadow: Soft environmental glow, colored rim edges, broad shadow pools, and late-evening luminous haze.
-  texture_and_material: Smooth anime-style digital paint, subtle bloom, gentle gradient noise, and restrained line cleanup.
+    Build color with Violet blue ambient wash, saturated neon accents, gentle pastel fills, and
+    controlled contrast for UI legibility; use color as gameplay hierarchy: rarity glow, faction
+    contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable
+    inventory material, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Soft environmental glow, colored rim edges, broad shadow pools, and late
+    evening luminous haze; shape light through game readability: rim separation, UI glow,
+    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth anime style digital paint, subtle bloom, gentle gradient noise, and restrained
+    line cleanup; surface detail should support genre grammar through parchment, HUD glass, pixel
+    atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
+    material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Symmetrical or slightly off-center VN framing with open dialogue-safe negative space and shallow depth
-    cues.
+    Structure the image through Symmetrical or slightly off center VN framing with open dialogue
+    safe negative space and shallow depth cues; compose through gameplay-facing hierarchy, atlas
+    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
+    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Melancholic, intimate, story-charged mood without requiring classrooms, students, desks, or dialogue
-    boxes.
-  rendering_and_quality: Clean background-art finish, no readable text, no UI chrome, enough detail for repeated viewing.
+    Keep the mood Melancholic, intimate, story charged mood without requiring classrooms, students,
+    desks, or dialogue boxes; derive mood from playable stakes, collection desire, tactical control,
+    cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Clean support field art finish, no readable text, no UI chrome, enough detail for
+    repeated viewing; finish with game-production clarity, strong silhouettes, controlled UI-like
+    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Visual novel backdrop style with neon emotional grading, clean anime paint, and interactive
+    scene clarity; gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity; Violet blue ambient wash, saturated neon accents,
+    gentle pastel fills, and controlled contrast for UI legibility; Smooth anime style digital
+    paint, subtle bloom, gentle gradient noise, and restrained line cleanup; Symmetrical or slightly
+    off center VN framing with open dialogue safe negative space and shallow depth cues
+  creative_brief: >-
+    Apply Visual Novel Neon Backdrop Wash as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Visual novel backdrop style with neon emotional grading, clean anime paint, and
+    interactive scene clarity, gameplay-readable hierarchy, genre-specific surface language,
+    UI-aware composition, and production-art clarity, Smooth anime style digital paint, subtle
+    bloom, gentle gradient noise, and restrained line cleanup without requiring the card image's
+    original subject.
 avoidRules:
   - watermark
   - text
   - literal classroom requirement
   - student requirement
   - dialogue box
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - low resolution
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-108.webp
 attributes:
-  negativePrompt: watermark, text, literal classroom requirement, student requirement, dialogue box
+  negativePrompt: >-
+    watermark, text, literal classroom requirement, student requirement, dialogue box, wrong medium,
+    generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low
+    resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

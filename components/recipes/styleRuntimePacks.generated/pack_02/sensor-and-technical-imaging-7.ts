@@ -7,64 +7,87 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP02-058',
     name: 'X-Ray Photography',
     category: '7. Sensor And Technical Imaging',
-    negativePrompt: 'surface detail',
+    negativePrompt:
+      'surface detail, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal color photo, fake UI labels, medical-only subject, decorative glow',
     style: {
-      aesthetic: 'Internal structure',
-      subject_treatment: 'Bones/Structure',
-      color_and_tone: 'Black/White/Blue, indigo ghost, bone-white, translucent cyan',
-      lighting_and_shadow: 'Translucent, backlit negative, see-through glow',
-      texture_and_material: 'Film, radiographic sheet, phosphor plate',
-      camera_and_composition: 'Transparency, density mapping, interior-only view',
-      atmosphere_and_mood: 'Clinical, spooky, diagnostic, hidden structure',
-      rendering_and_quality: 'Medical, scientific, diagnostic clarity, ghostly penetration',
+      aesthetic:
+        'X-Ray Photography acts as a transferable cinematic-media router: start from Internal structure, radiographic x-ray imaging with translucent density mapping, phosphor-sheet glow, skeletal/interior structure logic, and clinical negative contrast, Inverted density map, translucent layers, phosphor glow, radiographic negative and sensor-imaging system built from non-visible spectrum capture, diagnostic mapping, device artifacts, false color, and technical exposure constraints, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Bones/Structure, internal-structure translation, translucent silhouette density, and diagnostic layer hierarchy without requiring bones or a medical subject; preserve the requested subject while translating visible surfaces into internal structure, heat zones, night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Black/White/Blue, indigo ghost, bone-white, translucent cyan; use color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody heat, scan density, or device-limited monochrome, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Translucent, backlit negative, see-through glow; make illumination feel device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise amplification, or translucent structure, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Film, radiographic sheet, phosphor plate; surface detail should reveal film sheet grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Transparency, density mapping, interior-only view; compose through scan-plane clarity, central diagnostic readability, density hierarchy, technical crop, and device perspective without requiring medical subject matter, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Clinical, spooky, diagnostic, hidden structure; derive mood from clinical exposure, hidden structure, surveillance unease, spectral unreality, or technical discovery, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Medical, scientific, diagnostic clarity, ghostly penetration; finish as credible sensor output with readable mapped structures, controlled noise, and no normal-color photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Inverted density map, translucent layers, phosphor glow, radiographic negative',
+        'Internal structure, radiographic x-ray imaging with translucent density mapping, phosphor-sheet glow, skeletal/interior structure logic, and clinical negative contrast; Inverted density map, translucent layers, phosphor glow, radiographic negative; Black/White/Blue, indigo ghost, bone-white, translucent cyan; Film, radiographic sheet, phosphor plate; Transparency, density mapping, interior-only view',
       creative_brief:
-        'Translate the input into radiographic imagery: surface detail drops away, density becomes tone, hidden structure glows through translucent layers, and the frame reads like a scientific negative. Avoid body-only, skeleton-only, swallowed-object, or security-scan scenes. The style should expose internal architecture whatever the subject is.',
+        "Apply X-Ray Photography as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Internal structure, radiographic x-ray imaging with translucent density mapping, phosphor-sheet glow, skeletal/interior structure logic, and clinical negative contrast, Inverted density map, translucent layers, phosphor glow, radiographic negative, Film, radiographic sheet, phosphor plate without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-059',
     name: 'Thermal Camera',
     category: '7. Sensor And Technical Imaging',
-    negativePrompt: 'visible light',
+    negativePrompt:
+      'visible light, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal color photo, fake UI labels, medical-only subject, decorative glow',
     style: {
-      aesthetic: 'Heat map',
+      aesthetic:
+        'Thermal Camera acts as a transferable cinematic-media router: start from Heat map, Thermal Camera sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom and sensor-imaging system built from non-visible spectrum capture, diagnostic mapping, device artifacts, false color, and technical exposure constraints, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Thermal Camera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
-      color_and_tone: 'Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold',
-      lighting_and_shadow: 'Emissive heat, self-illumination, temperature glow',
-      texture_and_material: 'Digital, sensor noise, microbolometer grid',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Thermal Camera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while translating visible surfaces into internal structure, heat zones, night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested identity, silhouette, action, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold; use color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody heat, scan density, or device-limited monochrome, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Emissive heat, self-illumination, temperature glow; make illumination feel device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise amplification, or translucent structure, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Digital, sensor noise, microbolometer grid; surface detail should reveal film sheet grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Camera language native to Thermal Camera: genre-aware framing, lens character, focal hierarchy, motion cue, and vertical style-card composition.',
-      atmosphere_and_mood: 'Tech, analytical, sensor-vision, invisible-energy',
+        'Structure the image through Camera language native to Thermal Camera: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose through scan-plane clarity, central diagnostic readability, density hierarchy, technical crop, and device perspective without requiring medical subject matter, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tech, analytical, sensor-vision, invisible-energy, mood carried by Thermal Camera media process, signal pressure, and visual restraint; derive mood from clinical exposure, hidden structure, surveillance unease, spectral unreality, or technical discovery, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity',
+        'Finish with FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity; finish as credible sensor output with readable mapped structures, controlled noise, and no normal-color photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom',
+        'Heat map, Thermal Camera sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure; White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom; Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold; Digital, sensor noise, microbolometer grid; Camera language native to Thermal Camera: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition',
       creative_brief:
-        'Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light, defines form. Apply Thermal Camera as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Thermal Camera as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Heat map, Thermal Camera sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom, Digital, sensor noise, microbolometer grid without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-060',
     name: 'Night Vision (Green)',
     category: '7. Sensor And Technical Imaging',
-    negativePrompt: 'color',
+    negativePrompt:
+      'color, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal color photo, fake UI labels, medical-only subject, decorative glow',
     style: {
-      aesthetic: 'Intensifier tube',
+      aesthetic:
+        'Night Vision (Green) acts as a transferable cinematic-media router: start from Intensifier tube, Night Vision (Green) sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom and sensor-imaging system built from non-visible spectrum capture, diagnostic mapping, device artifacts, false color, and technical exposure constraints, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Treat subjects as believable filmed or broadcast subjects under Night Vision (Green): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat.',
+        'Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects under Night Vision (Green): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the requested subject while translating visible surfaces into internal structure, heat zones, night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Phosphor Green, monochrome green, bright-green highlight, black-green shadow',
-      lighting_and_shadow: 'Grainy gain, image intensifier, amplified starlight',
-      texture_and_material: 'Scintillation noise, electron cascade, static snow',
-      camera_and_composition: 'Bloom, tube flare, halo around bright sources',
-      atmosphere_and_mood: 'Hidden, nocturnal, phosphor eerie, low-light uncanny',
-      rendering_and_quality: 'Low-light clarity, intensifier artifacts, amplified-starlight detail',
-      key_features: 'Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom',
+        'Build color with Phosphor Green, monochrome green, bright-green highlight, black-green shadow; use color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody heat, scan density, or device-limited monochrome, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Grainy gain, image intensifier, amplified starlight; make illumination feel device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise amplification, or translucent structure, so exposure and shadow structure support the media process without overwriting the requested content.',
+      texture_and_material:
+        'Render Scintillation noise, electron cascade, static snow; surface detail should reveal film sheet grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Bloom, tube flare, halo around bright sources; compose through scan-plane clarity, central diagnostic readability, density hierarchy, technical crop, and device perspective without requiring medical subject matter, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Hidden, nocturnal, phosphor eerie, low-light uncanny; derive mood from clinical exposure, hidden structure, surveillance unease, spectral unreality, or technical discovery, letting the media style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Low-light clarity, intensifier artifacts, amplified-starlight detail; finish as credible sensor output with readable mapped structures, controlled noise, and no normal-color photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Intensifier tube, Night Vision (Green) sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure; Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom; Phosphor Green, monochrome green, bright-green highlight, black-green shadow; Scintillation noise, electron cascade, static snow; Bloom, tube flare, halo around bright sources',
       creative_brief:
-        'Render the input through green night-vision intensifier optics: monochrome phosphor, amplified starlight, gain grain, scintillation noise, tube halos, and blooming bright sources. Avoid military, spy, predator, or operation scenes. Darkness should become visible through sensor artifacts rather than natural color. Apply Night Vision as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Night Vision (Green) as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Intensifier tube, Night Vision (Green) sensor modality, false-color mapping, diagnostic density, device noise, and non-visible-spectrum exposure, Monochrome green, scintillation noise, tube halo, gain grain, phosphor bloom, Scintillation noise, electron cascade, static snow without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

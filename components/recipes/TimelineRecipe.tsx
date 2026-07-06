@@ -14,7 +14,7 @@ import {
   IconActivity as Activity,
   IconSun as Sun,
 } from '@tabler/icons-react';
-import { MotionDiv, MotionButton, AnimatePresence } from 'motion/react';
+import { AnimatePresence, MotionButton, MotionDiv } from '../../lib/gsapMotion';
 import type { Attachment, ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { RecipeLayout } from './RecipeLayout';

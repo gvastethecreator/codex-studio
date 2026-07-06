@@ -12,29 +12,71 @@ tags:
   - 3d-and-cgi-rendering
   - materials
 visualDna:
-  aesthetic: Groomed fur simulation
-  subject_treatment: Individual strands
-  color_and_tone: Soft gradient
-  lighting_and_shadow: Rim light on fuzz
-  texture_and_material: Fluffy, soft, dimensional volume
-  camera_and_composition: Wind blown
-  atmosphere_and_mood: Cozy, tactile warmth, groomed softness
-  rendering_and_quality: XGen groom simulation, every strand deliberate
-  key_features: Hair strands, clump variation
+  aesthetic: >-
+    Fur & Hair acts as a transferable CGI-style router: start from Groomed fur simulation, Hair
+    strands, clump variation and shader-material system built from reflectance, refraction,
+    scattering, phase behavior, procedural structure, and physically coherent surface response, then
+    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Individual strands; preserve the prompt subject while
+    wrapping or transforming forms through the material behavior named by the preset, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Soft gradient; let palette follow absorption, dispersion, subsurface tint,
+    metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with
+    deliberate value grouping, exposure control, and medium-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through Rim light on fuzz; make highlights, caustics, shadow softness,
+    transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the
+    material, so value structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Fluffy, soft, dimensional volume; surface detail should keep scale-consistent shaders,
+    bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Wind blown; compose to demonstrate material behavior across
+    silhouette, thickness, contact edges, reflection zones, and readable material transitions, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Cozy, tactile warmth, groomed softness; derive mood from luxury, fragility,
+    tactile attraction, gross elasticity, scientific precision, craft, permanence, or uncanny
+    material transformation, letting the renderer alter interpretation without demanding a specific
+    story, location, or character.
+  rendering_and_quality: >-
+    Finish with XGen groom simulation, every strand deliberate; finish with coherent shader
+    response, clean denoise, readable forms, and no stock texture overlay pretending to be material
+    simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the
+    CGI mode recognizable.
+  key_features: >-
+    Groomed fur simulation; Hair strands, clump variation; Soft gradient; Fluffy, soft, dimensional
+    volume; Wind blown
   creative_brief: >-
-    Grow groomed fur or hair over the input: XGen-like strand control, clump variation, rim-lit fuzz, density
-    gradients and wind-frozen filament behavior. It may imply creature warmth, but should not require an
-    animal, character, field metaphor or living body. Apply Fur & Hair as a portable 3D/render style system
-    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and
-    production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot,
-    or scene template.
+    Apply Fur & Hair as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Groomed fur simulation, Hair strands, clump variation, Fluffy, soft,
+    dimensional volume without requiring the card image's original subject.
 avoidRules:
   - bald
   - smooth
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - wrong material
+  - pasted stock texture
+  - flat color fill
+  - shaderless surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-016.webp
 attributes:
-  negativePrompt: bald, smooth
+  negativePrompt: >-
+    bald, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, wrong material, pasted stock texture, flat color fill,
+    shaderless surface
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

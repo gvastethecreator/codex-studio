@@ -38,6 +38,9 @@ interface CodexModelCatalogState {
   error: string | null;
 }
 
+const LEGACY_DEFAULT_CODEX_EXECUTION_MODEL = 'gpt-5.4-mini';
+const LEGACY_DEFAULT_CODEX_EXECUTION_REASONING_EFFORT = 'low';
+
 function toWebpAttachmentName(name: string) {
   const trimmed = name.trim() || 'reference';
   const withoutExt = trimmed.replace(/\.[a-z0-9]+$/i, '');
@@ -59,15 +62,31 @@ export function normalizeGenerationConfigForCodexModels(
 ): ImageGenerationConfig {
   if (codexModels.length === 0) return config;
 
-  const preferredId = pickPreferredCodexModel(codexModels, config.executionModel);
+  const shouldUpgradeLegacyDefault =
+    config.executionModel === LEGACY_DEFAULT_CODEX_EXECUTION_MODEL &&
+    config.executionReasoningEffort === LEGACY_DEFAULT_CODEX_EXECUTION_REASONING_EFFORT &&
+    config.executionSpeed === DEFAULT_GENERATION_CONFIG.executionSpeed;
+  const preferredId = pickPreferredCodexModel(
+    codexModels,
+    shouldUpgradeLegacyDefault ? null : config.executionModel,
+  );
   const selectedModel =
-    codexModels.find((model) => model.id === config.executionModel) ??
+    codexModels.find(
+      (model) => model.id === (shouldUpgradeLegacyDefault ? preferredId : config.executionModel),
+    ) ??
     codexModels.find((model) => model.id === preferredId) ??
     null;
 
   let next = config;
 
-  if (preferredId && preferredId !== config.executionModel) {
+  if (shouldUpgradeLegacyDefault) {
+    next = {
+      ...next,
+      executionModel: preferredId ?? DEFAULT_GENERATION_CONFIG.executionModel,
+      executionReasoningEffort: DEFAULT_GENERATION_CONFIG.executionReasoningEffort,
+      executionSpeed: DEFAULT_GENERATION_CONFIG.executionSpeed,
+    };
+  } else if (preferredId && preferredId !== config.executionModel) {
     next = { ...next, executionModel: preferredId };
   }
 

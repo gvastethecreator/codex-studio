@@ -12,25 +12,61 @@ tags:
   - abstract-and-experimental
   - fluid-and-organic
 visualDna:
-  aesthetic: Fluid art
-  subject_treatment: Cells
-  color_and_tone: Mixed, marbled
-  lighting_and_shadow: Glossy
-  texture_and_material: Paint skin
-  camera_and_composition: Flow
-  atmosphere_and_mood: Creative, messy
-  rendering_and_quality: DIY art, colorful
-  key_features: Cells
+  aesthetic: >-
+    Acrylic Pour becomes a transferable fluid and organic behavior system: start from Fluid art,
+    Cells, and Flow, then route prompt content through flow, branching, cellular membranes,
+    diffusion, turbulence, and living surface logic without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Cells to bend, pool, branch, bloom, spike,
+    foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity,
+    or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Mixed, marbled; let hues follow fluid thickness, chemical bloom,
+    interference, biological growth, or vapor density, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Glossy drive the light response: use reflection, translucency, subsurface scattering, glow,
+    or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt
+    explicitly asks for it.
+  texture_and_material: >-
+    Render Paint skin as the tactile or mark-making basis; surfaces need coherent viscosity,
+    membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Flow as reusable spatial grammar: favor flow direction, cellular repetition,
+    eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits,
+    objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Creative, messy as the emotional register; derive mood from instability, growth, toxicity,
+    delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult
+    prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as DIY art, colorful: finish with clean fluid physics, readable boundaries, and
+    restrained micro-noise, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Fluid art; Cells; Mixed, marbled; Glossy; Paint skin; Flow; Creative, messy; DIY art, colorful;
+    Cells
   creative_brief: >-
-    Apply acrylic-pour behavior to the input: marbled pigment flows, cellular blooms, gravity trails, and
-    accidental color continents should cover or reshape the subject without replacing it with a generic paint
-    puddle.
+    Route any subject through Acrylic Pour as a transferable fluid or organic process visual system:
+    preserve prompt intent while converting form, surface tension, flow, translucency, edge
+    softness, and material motion through this preset. Apply acrylic-pour behavior to the input:
+    marbled pigment flows, cellular blooms, gravity trails, and accidental color continents should
+    cover or reshape the subject without replacing it with a generic paint puddle.
 avoidRules:
   - brush strokes
+  - stiff solids
+  - muddy fluid mixing
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-017.webp
 attributes:
-  negativePrompt: brush strokes
+  negativePrompt: >-
+    brush strokes, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

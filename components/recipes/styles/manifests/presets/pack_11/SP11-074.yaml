@@ -12,27 +12,80 @@ tags:
   - miscellaneous-and-fun
   - micro-macro
 visualDna:
-  aesthetic: Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology
-  subject_treatment: Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface
-  color_and_tone: Black/White, nylon-spectrum, hook-base color, loop-color contrast, industrial-grey, neon-accent
-  lighting_and_shadow: Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock
-  texture_and_material: Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back
-  camera_and_composition: Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth
-  atmosphere_and_mood: Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder
-  rendering_and_quality: Industrial, texture, hook-and-loop engineering, biomimetic-design, fastener-science
-  key_features: Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim
+  aesthetic: >-
+    Velcro operates as a portable source-router layer: combine Hooks and loops, fastener-macro,
+    textile-engineering, velcro-close-up, grip-technology with magnified source-study logic with
+    scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so
+    the preset supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms magnify,
+    reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure
+    through Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature,
+    interlocking-interface; identity stays readable through construction grammar, proportion, edge
+    logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through source-derived color variation, iridescence, false-scale contrast, translucent
+    edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for
+    interlock plus macro flash, raking light, dark-field glow, backlit transmission, ring
+    reflections, and shallow optical falloff as the light-response contract, with readable
+    hierarchy, controlled contact detail, and no lighting choice that erases the user's requested
+    content.
+  texture_and_material: >-
+    Render Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density,
+    adhesive-back plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments,
+    corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or
+    signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration
+    depth plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression,
+    and detail-first framing as reusable framing grammar, allowing cards, portraits, objects,
+    scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural
+    engineering, entropy, and fragile wonder; the emotional tone should feel specific to Velcro
+    while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy
+    stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology; Plastic
+    hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface;
+    Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density,
+    adhesive-back; Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth
+    for interlock; Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration
+    depth
   creative_brief: >-
-    Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale
-    engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible.
-    Apply Velcro as a portable style system over any input: preserve its construction grammar, material cues,
-    scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed
-    specimen, classroom sample, product shot, or scene template.
+    Use Velcro after prompt X as a transferable style layer: prompt X supplies subject, action, and
+    setting, while the preset supplies Hooks and loops, fastener-macro, textile-engineering,
+    velcro-close-up, grip-technology, Plastic hooks, mushroom-cap shapes, loop-pile tufts,
+    hook-shank curvature, interlocking-interface, Plastic loops, nylon-monofilament, woven-backing,
+    hook-mushroom tip, loop-pile density, adhesive-back, Macro, ring-flash, side-raking for
+    hook-shape, loop-pile diffusion, shadow-depth for interlock, Tangling, engaged-hook-loop,
+    separation-gap, pile-compression, hook-penetration depth plus microstructure, magnification
+    artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail,
+    palette behavior, light response, material treatment, and finish discipline without requiring
+    one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - smooth
+  - generic macro blur
+  - muddy micro noise
+  - classroom sample scene
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-074.webp
 attributes:
-  negativePrompt: smooth
+  negativePrompt: >-
+    smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

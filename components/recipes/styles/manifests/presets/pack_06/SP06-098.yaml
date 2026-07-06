@@ -13,37 +13,77 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    PC-Engine-TurboGrafx-16 aesthetic, compact Japanese sprite magic, bright vibrant 482-color palette, Bonk,
-    Rondo of Blood and Hudson Soft as platform anchors, HuCard thin-cartridge identity, CD-ROM2 Red Book audio
-    richness, NEC what-could-have-been glow
+    TurboGrafx PC Engine acts as a transferable art-medium router: start from PC Engine TurboGrafx
+    16 aesthetic, compact Japanese sprite magic, bright vibrant 482 color palette, Bonk, Rondo of
+    Blood and Hudson Soft as platform anchors, HuCard thin cartridge identity, CD ROM2 Red Book
+    audio richness, NEC what could have been glow, Bright 482 color palette, HuCard cartridge
+    identity, CD ROM2 loaded art richness, compact sprite design, 16 bit graphics in 8 bit system,
+    Japanese console charm and hardware-constrained game-visual system built from display limits,
+    palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm,
+    then apply the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Compact but vibrant pixel forms, 16-bit sprite hardware in 8-bit CPU body, 320x256 or 256x240 resolution,
-    CD-ROM data-loaded richness
+    Transform any prompt subject through Compact but vibrant pixel forms, 16 bit sprite hardware in
+    8 bit CPU body, 320x256 or 256x240 resolution, CD ROM data loaded richness; preserve the prompt
+    subject while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid,
+    or low-bit display behavior, keeping the requested identity, silhouette, pose, object function,
+    or environment legible.
   color_and_tone: >-
-    512-color total, 482 displayable, PC-Engine vibrant brightness, orange-brown accents, gothic red-purple
-    accents, Red Book audio as color richness, Hudson-bee yellow
+    Build color with 512 color total, 482 displayable, PC Engine vibrant brightness, orange brown
+    accents, gothic red purple accents, Red Book audio as color richness, Hudson bee yellow; use
+    color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values,
+    dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate
+    value grouping, accent control, and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Sprite-pixel-art-directional-lighting, palette-gradient-for-depth, CD-ROM-loaded-backgrounds-complex,
-    parallax-scrolling-lighting, no-blast-processing-but-elegant-rendering
+    Handle light through Sprite pixel art directional lighting, palette gradient for depth, CD ROM
+    loaded support field complex, parallax scrolling lighting, no blast processing but elegant
+    rendering; make light emerge from display technology, pixel value steps, CRT bloom, palette
+    cycling, thermal print contrast, or vector beam brightness, so value structure supports the
+    medium and does not overwrite the requested content.
   texture_and_material: >-
-    HuCard-thin-cartridge texture, CD-ROM2 loading-screen feel, compact pixel texture, 8-bit CPU with 16-bit
-    graphics contradiction, PC-Engine LT portable LCD
+    Render HuCard thin cartridge texture, CD ROM2 loading screen feel, compact pixel texture, 8 bit
+    CPU with 16 bit graphics contradiction, PC Engine LT portable LCD; surface detail should show
+    pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT
+    persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy
+    filler texture.
   camera_and_composition: >-
-    320x256 Japanese resolution, CD-ROM loaded background richness, vertical-scroll composition when useful,
-    handheld-LT-LCD screen feel, compact proportions
+    Structure the image through 320x256 Japanese resolution, CD ROM loaded support field richness,
+    vertical scroll composition when useful, handheld LT LCD screen feel, compact proportions;
+    compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe
+    coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Japanese-console wonder, NEC-technical ingenuity, Hudson-Soft creativity, CD-ROM golden-age glow,
-    what-could-have-been nostalgia
+    Keep the mood Japanese console wonder, NEC technical ingenuity, Hudson Soft creativity, CD ROM
+    golden age glow, what could have been nostalgia; derive mood from hardware limitation, arcade
+    spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D
+    instability, letting the medium alter interpretation without demanding a specific story,
+    location, or character.
   rendering_and_quality: >-
-    PC-Engine-TurboGrafx-pixel aesthetic, Japanese-16-bit-compact-beauty, HuCard-game-charm, CD-ROM-RPG-
-    golden-era-rendering
+    Finish with PC Engine TurboGrafx pixel aesthetic, Japanese 16 bit compact beauty, HuCard game
+    charm, CD ROM RPG golden era rendering; finish with faithful era constraints, crisp readability
+    at small scale, and no modern high-resolution smoothing unless the preset asks for baked
+    pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the
+    medium recognizable.
   key_features: >-
-    Bright 482-color palette, HuCard cartridge identity, CD-ROM2 loaded-art richness, compact sprite design,
-    16-bit graphics in 8-bit system, Japanese-console charm
+    PC Engine TurboGrafx 16 aesthetic, compact Japanese sprite magic, bright vibrant 482 color
+    palette, Bonk, Rondo of Blood and Hudson Soft as platform anchors, HuCard thin cartridge
+    identity, CD ROM2 Red Book audio richness, NEC what could have been glow; Bright 482 color
+    palette, HuCard cartridge identity, CD ROM2 loaded art richness, compact sprite design, 16 bit
+    graphics in 8 bit system, Japanese console charm; 512 color total, 482 displayable, PC Engine
+    vibrant brightness, orange brown accents, gothic red purple accents, Red Book audio as color
+    richness, Hudson bee yellow; HuCard thin cartridge texture, CD ROM2 loading screen feel, compact
+    pixel texture, 8 bit CPU with 16 bit graphics contradiction, PC Engine LT portable LCD; 320x256
+    Japanese resolution, CD ROM loaded support field richness, vertical scroll composition when
+    useful, handheld LT LCD screen feel, compact proportions
   creative_brief: >-
-    Any prompt gets compact Japanese console polish, brighter than its CPU should allow. HuCard restraint and
-    CD-ROM richness coexist, producing dense color, tiny confident forms and a glowing alternate-history
-    console mood.
+    Apply TurboGrafx PC Engine as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through PC
+    Engine TurboGrafx 16 aesthetic, compact Japanese sprite magic, bright vibrant 482 color palette,
+    Bonk, Rondo of Blood and Hudson Soft as platform anchors, HuCard thin cartridge identity, CD
+    ROM2 Red Book audio richness, NEC what could have been glow, Bright 482 color palette, HuCard
+    cartridge identity, CD ROM2 loaded art richness, compact sprite design, 16 bit graphics in 8 bit
+    system, Japanese console charm, HuCard thin cartridge texture, CD ROM2 loading screen feel,
+    compact pixel texture, 8 bit CPU with 16 bit graphics contradiction, PC Engine LT portable LCD
+    without requiring the card image's original subject.
 avoidRules:
   - western
   - dark
@@ -56,10 +96,25 @@ avoidRules:
   - slow
   - weak
   - Nintendo
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-098.webp
 attributes:
-  negativePrompt: western, dark, muted, gritty, limited, simple, low color, CGA, slow, weak, Nintendo
+  negativePrompt: >-
+    western, dark, muted, gritty, limited, simple, low color, CGA, slow, weak, Nintendo, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

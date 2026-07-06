@@ -15,6 +15,35 @@ const AppOverlays = React.lazy(() =>
 
 interface AppContentProps {}
 
+const StudioFirstReadyScrim: React.FC = () => (
+  <div
+    className="pointer-events-none fixed inset-0 z-[45] flex items-center justify-center bg-zinc-950"
+    aria-hidden="true"
+  >
+    <div className="grid w-full max-w-5xl gap-8 px-6 sm:grid-cols-[minmax(0,0.9fr)_minmax(20rem,0.7fr)]">
+      <div className="space-y-5">
+        <div className="h-8 w-64 rounded-lg bg-white/[0.055]" />
+        <div className="h-4 w-96 max-w-full rounded bg-white/[0.04]" />
+        <div className="grid max-w-2xl grid-cols-[7rem_minmax(0,1fr)] gap-4">
+          <div className="aspect-[2/3] rounded-xl bg-white/[0.05]" />
+          <div className="space-y-3 rounded-xl bg-black/30 p-4">
+            <div className="h-5 w-40 rounded bg-white/[0.06]" />
+            <div className="h-3 w-full rounded bg-white/[0.04]" />
+            <div className="h-3 w-5/6 rounded bg-white/[0.035]" />
+            <div className="h-3 w-2/3 rounded bg-white/[0.03]" />
+          </div>
+        </div>
+      </div>
+      <div className="hidden space-y-3 sm:block">
+        <div className="h-4 w-52 rounded bg-white/[0.055]" />
+        <div className="h-16 rounded-xl bg-white/[0.04]" />
+        <div className="h-16 rounded-xl bg-white/[0.035]" />
+        <div className="h-28 rounded-xl bg-white/[0.03]" />
+      </div>
+    </div>
+  </div>
+);
+
 export const AppContent: React.FC<AppContentProps> = () => {
   const shell = useStudioShell();
   const hasGenerationDock =
@@ -48,6 +77,8 @@ export const AppContent: React.FC<AppContentProps> = () => {
       </div>
 
       <StudioGenerationDock {...shell.generationDock} />
+
+      {shell.overlays.systemOverlays.flags.isOnboardingOpen ? <StudioFirstReadyScrim /> : null}
 
       <ErrorBoundary fallbackMessage="Could not load studio overlays.">
         <Suspense fallback={null}>

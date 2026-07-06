@@ -13,27 +13,58 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Tight rubber
-  subject_treatment: Stretch lines
-  color_and_tone: Black or Red
-  lighting_and_shadow: High specularity
-  texture_and_material: Smooth, sticky
-  camera_and_composition: Tight fit
-  atmosphere_and_mood: Intense, sleek
-  rendering_and_quality: Sleek, high-specular
-  key_features: Highlights
+  aesthetic: >-
+    Latex (Shiny) treats fabrication as visible style language: start from Tight rubber, Smooth,
+    sticky, and Tight fit, then turn manufacturing process, tooling marks, seams, tolerances, and
+    industrial material behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Stretch lines: preserve identity and pose while letting
+    forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge
+    profile, surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Black or Red as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let High specularity define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Latex (Shiny) without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Smooth, sticky through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Tight fit as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Intense, sleek by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Sleek, high-specular material clarity: physically coherent reflectance, clean
+    contact detail, controlled micro-texture, readable silhouette behavior, and no noisy
+    stock-texture overlay.
+  key_features: Tight rubber; Stretch lines; Smooth, sticky; High specularity; Tight fit
   creative_brief: >-
-    Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights,
-    black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character,
-    costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract
-    finish without requiring a body pose or genre scene.
+    Route any subject through Latex (Shiny) as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Compose shiny latex as a tight reflective
+    surface treatment over the input: liquid specular highlights, black or red high-gloss tension,
+    stretch lines following form, and a slick second-skin fit. If character, costume, or object
+    exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract finish
+    without requiring a body pose or genre scene.
 avoidRules:
   - matte
   - cloth
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-031.webp
 attributes:
-  negativePrompt: matte, cloth
+  negativePrompt: matte, cloth, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

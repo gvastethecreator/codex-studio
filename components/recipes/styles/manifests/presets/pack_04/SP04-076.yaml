@@ -12,27 +12,81 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Aerosol handstyle signature with velocity-led linework
-  subject_treatment: Continuous flowing strokes, pressure-width variation, drip tails
-  color_and_tone: Chrome silver, matte black, occasional high-contrast accent pops
-  lighting_and_shadow: Surface sheen and overspray bloom define form, not volumetric light
-  texture_and_material: Concrete/brick grain with soft spray edge diffusion
-  camera_and_composition: Elastic letter compression, directional slant, motion-stretch curves
-  atmosphere_and_mood: Nocturnal, kinetic, urban, improvised immediacy
-  rendering_and_quality: Fast, confident, one-pass execution with visible can control
-  key_features: Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency
+  aesthetic: >-
+    Graffiti (Tag) acts as a transferable illustration router: start from Aerosol handstyle
+    signature with velocity-led linework, Handstyle ligatures, overspray halos, gravity drips,
+    cap-radius consistency and ink and printmaking system built from mark economy, matrix process,
+    ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then
+    apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Continuous flowing strokes, pressure-width variation, drip
+    tails; preserve the requested subject while rebuilding it through carved lines, etched density,
+    stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or
+    tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function,
+    or setting legible.
+  color_and_tone: >-
+    Build color with Chrome silver, matte black, occasional high-contrast accent pops; use color as
+    ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash
+    colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Surface sheen and overspray bloom define form, not volumetric light;
+    translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink
+    pooling, or flat spray contrast rather than photographic shading, so value structure supports
+    the illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Concrete/brick grain with soft spray edge diffusion; surface detail should show paper
+    fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling,
+    tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding
+    noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Elastic letter compression, directional slant, motion-stretch
+    curves; compose through print registration, border discipline, mark-direction rhythm,
+    negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nocturnal, kinetic, urban, improvised immediacy; derive mood from craft pressure,
+    underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Fast, confident, one-pass execution with visible can control; finish as a credible
+    ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random
+    distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Aerosol handstyle signature with velocity-led linework; Handstyle ligatures, overspray halos,
+    gravity drips, cap-radius consistency; Chrome silver, matte black, occasional high-contrast
+    accent pops; Concrete/brick grain with soft spray edge diffusion; Elastic letter compression,
+    directional slant, motion-stretch curves
   creative_brief: >-
-    Apply tag-handstyle graffiti logic to any input as a portable aerosol signature style: speedline strokes,
-    cap-width variation, overspray, drips, marker ghosts, chromatic shadow offsets, and wall-weathered edge
-    noise. If the prompt has no text, convert its main shapes into gestural tag-like contours and motion
-    accents without requiring readable words, names, walls, signatures, or an urban scene.
+    Apply Graffiti (Tag) as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Aerosol handstyle signature with velocity-led linework, Handstyle ligatures, overspray halos,
+    gravity drips, cap-radius consistency, Concrete/brick grain with soft spray edge diffusion
+    without requiring the card image's original subject.
 avoidRules:
   - clean
   - font
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-076.webp
 attributes:
-  negativePrompt: clean, font
+  negativePrompt: >-
+    clean, font, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

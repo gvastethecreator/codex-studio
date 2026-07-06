@@ -12,29 +12,84 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss
+  aesthetic: >-
+    Hype Williams Fisheye Glam Video acts as a transferable cinematic-media router: start from
+    Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss,
+    Fisheye warp, chrome gloss, slow-motion opulence and broadcast-media system built from signal
+    texture, studio or field capture, graphic package hierarchy, interlacing, compression, and
+    live-transmission rhythm, then apply the media behavior to prompt X instead of recreating a
+    fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Hype Williams Fisheye Glam Video: casting,
-    wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast
-    grammar without locking to one plot beat.
-  color_and_tone: Chrome, platinum, ice white, purple velvet
-  lighting_and_shadow: Studio tunnel, keyed spot, dramatic back silhouette
-  texture_and_material: Fisheye lens, curved glass, spherical distortion
-  camera_and_composition: Distorted wide angle, fishbowl warp, tunnel perspective
-  atmosphere_and_mood: Cool, flashy, hip-hop royalty, aspirational excess
-  rendering_and_quality: Glossy, expensive, music-video maximalism, diamond-studded
-  key_features: Fisheye warp, chrome gloss, slow-motion opulence
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Hype Williams Fisheye Glam Video: casting, wardrobe, props, motion cues, and silhouette
+    hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without locking to one plot
+    beat; preserve the requested subject while treating it as a broadcast capture, package segment,
+    demo frame, replay, surveillance feed, music-video signal, or live information object, keeping
+    the requested identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Chrome, platinum, ice white, purple velvet; use color through signal-safe
+    palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or
+    cheap late-night product gloss, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Studio tunnel, keyed spot, dramatic back silhouette; shape light through
+    even studio key, practical video exposure, screen glow, floodlight, surveillance flatness,
+    confessional softness, or signal-break flicker, so exposure and shadow structure support the
+    media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Fisheye lens, curved glass, spherical distortion; surface detail should show video
+    sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks,
+    or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Distorted wide angle, fishbowl warp, tunnel perspective; compose
+    through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl
+    lanes, multicam framing, or video-package layout without readable text dependency, with frame
+    rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Cool, flashy, hip-hop royalty, aspirational excess; derive mood from live urgency,
+    cheap sincerity, public-access awkwardness, sales pressure, institutional watching, stadium
+    tension, or music-video rebellion, letting the media style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Glossy, expensive, music-video maximalism, diamond-studded; finish as coherent
+    broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk,
+    logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate,
+    and enough process evidence to make the style recognizable.
+  key_features: >-
+    Late-90s luxury music-video fisheye, Hype Williams fishbowl, tunnel vision, opulent gloss;
+    Fisheye warp, chrome gloss, slow-motion opulence; Chrome, platinum, ice white, purple velvet;
+    Fisheye lens, curved glass, spherical distortion; Distorted wide angle, fishbowl warp, tunnel
+    perspective
   creative_brief: >-
-    Hype Williams fisheye glam makes any subject curve into luxury spectacle: fishbowl distortion,
-    chrome/platinum palette, dramatic back silhouette, glossy excess, tunnel perspective, and slow-motion
-    opulence. Keep music-video swagger without requiring suits, bodies, rims, or performance.
+    Apply Hype Williams Fisheye Glam Video as a cinematic-media preset over prompt X: preserve the
+    user's requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Late-90s luxury music-video fisheye, Hype
+    Williams fishbowl, tunnel vision, opulent gloss, Fisheye warp, chrome gloss, slow-motion
+    opulence, Fisheye lens, curved glass, spherical distortion without requiring the card image's
+    original subject.
 avoidRules:
   - boring
   - normal
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - anchor requirement
+  - desk requirement
+  - readable captions
+  - logo package
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-021.webp
 attributes:
-  negativePrompt: boring, normal
+  negativePrompt: >-
+    boring, normal, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor
+    requirement, desk requirement, readable captions, logo package
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

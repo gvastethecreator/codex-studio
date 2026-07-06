@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Office Whiteboard Doodle',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich',
+      'digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
     style: {
       aesthetic:
-        'Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity',
+        'Office Whiteboard Doodle acts as a transferable cinematic-media router: start from Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity, Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition',
+        'Transform any prompt subject through Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails',
+        'Build color with Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Harsh fluorescent overhead, glossy board reflection, shallow surface glare',
+        'Handle light through Harsh fluorescent overhead, glossy board reflection, shallow surface glare; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection',
+        'Render Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective',
+        'Structure the image through Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling',
+        'Keep the mood Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism humor',
+        'Finish with Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-interior volume creativity, corporate-absurdism humor; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text',
+        'Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity; Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text; Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails; Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection; Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective',
       creative_brief:
-        'Translate any prompt into whiteboard doodle language: squeaky marker strokes, eraser ghosts, diagram arrows, glossy glare, color-coded marks, and half-erased residue. Avoid required meeting rooms, stick figures, readable text, or specific business diagrams. The surface should feel temporary, improvised, and slightly absurd.',
+        "Apply Office Whiteboard Doodle as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity, Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text, Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection without requiring the card image's original subject.",
     },
   },
   {
@@ -37,28 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crumpled-Paper Scribble',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges',
+      'flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
     style: {
       aesthetic:
-        'Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered',
+        'Crumpled-Paper Scribble acts as a transferable cinematic-media router: start from Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered, Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes',
+        'Transform any prompt subject through Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown',
+        'Build color with Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Top-down desk-lamp warmth, crease-shadow depth from crumpled topography, side-light revealing paper texture',
+        'Handle light through Top-down desk-lamp warmth, crease-shadow depth from crumpled topography, side-light revealing paper texture; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness',
+        'Render Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion',
+        'Structure the image through Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm',
+        'Keep the mood Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy',
+        'Finish with Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection',
+        'Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered; Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection; Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown; Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness; Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion',
       creative_brief:
-        'Apply crumpled-paper damage to any input: fold faults, ink pooling, coffee stains, torn edges, warped fibers, and recovered-sketch imperfection. Avoid requiring characters, trash scenes, or literal rejection narrative. Damage should co-author the composition through surface deformation.',
+        "Apply Crumpled-Paper Scribble as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered, Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection, Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness without requiring the card image's original subject.",
     },
   },
   {
@@ -66,28 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prehistoric Cave Painting',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'modern, digital, clean, sharp, polished, 3d, realistic, refined, precise, smooth, contemporary',
+      'modern, digital, clean, sharp, polished, 3d, realistic, refined, precise, smooth, contemporary, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
     style: {
       aesthetic:
-        'Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic figures, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy',
+        'Prehistoric Cave Painting acts as a transferable cinematic-media router: start from Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic silhouette subjects, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy, Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes',
+        'Transform any prompt subject through Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness',
+        'Build color with Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth',
+        'Handle light through Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating',
+        'Render Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension',
+        'Structure the image through Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        "Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence",
+        "Keep the mood Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.",
       rendering_and_quality:
-        "Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity",
+        "Finish with Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.",
       key_features:
-        'Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane',
+        'Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic silhouette subjects, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy; Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane; Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness; Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating; Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension',
       creative_brief:
-        'Render any input as Paleolithic wall language: ochre pigment, charcoal marks, rough limestone, torch flicker, stencil silhouettes, and overlapping symbolic time. Avoid requiring animals, hunters, spears, or literal cave narratives. The style should feel ancient, mineral, and pre-perspective.',
+        "Apply Prehistoric Cave Painting as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic silhouette subjects, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy, Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane, Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating without requiring the card image's original subject.",
     },
   },
   {
@@ -95,28 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Skateboard Deck Graphic',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature',
+      'soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
     style: {
       aesthetic:
-        'Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss',
+        'Skateboard Deck Graphic acts as a transferable cinematic-media router: start from Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss, Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst backgrounds, sharp-stencil edges',
+        'Transform any prompt subject through Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst depth field, sharp-stencil edges; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Neon green slime, blood red, toxic-waste yellow, black-void background, radioactive purple, white-bone contrast, screenprint-overprint cyan',
+        'Build color with Neon green slime, blood red, toxic-waste yellow, black-void depth field, radioactive purple, white-bone contrast, screenprint-overprint cyan; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat-graphic studio lighting, gloss-varnish reflection on board surface, no atmospheric depth',
+        'Handle light through Flat-graphic studio lighting, gloss-varnish reflection on board surface, no atmospheric depth; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint',
+        'Render Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Graphic centered on deck shape, cutout interruptions, nose-and-tail-kick distortion zone',
+        'Structure the image through Graphic central on deck shape, cutout interruptions, nose-and-tail-kick distortion zone; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Rebellious, loud, street-cred, teenage-freedom, parking-lot-session energy, aggressive creativity',
+        'Keep the mood Rebellious, loud, public-space-cred, teenage-freedom, parking-lot-session energy, aggressive creativity; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Skateboard-deck graphic aesthetic, punk-rock screenprint energy, street-culture boldness, deck-wall art-gallery',
+        'Finish with Skateboard-deck graphic aesthetic, punk-rock screenprint energy, public-space-culture boldness, deck-wall art-gallery; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain',
+        'Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss; Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain; Neon green slime, blood red, toxic-waste yellow, black-void depth field, radioactive purple, white-bone contrast, screenprint-overprint cyan; Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint; Graphic central on deck shape, cutout interruptions, nose-and-tail-kick distortion zone',
       creative_brief:
-        'Turn any input into skateboard-deck screenprint energy: centered graphic impact, thick black outlines, neon slime accents, maple veneer texture, glossy varnish, and rebellious iconography. Avoid requiring skulls, monsters, wheels, typography, or crossed bones. The deck format and print texture should carry the attitude.',
+        "Apply Skateboard Deck Graphic as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss, Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain, Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint without requiring the card image's original subject.",
     },
   },
   {
@@ -124,28 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Napkin Scribble Blueprint',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'digital, clean, polished, precise, CAD, professional, straight lines, perfect, measured, refined',
+      'digital, clean, polished, precise, CAD, professional, straight lines, perfect, measured, refined, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
     style: {
       aesthetic:
-        'Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available',
+        'Napkin Scribble Blueprint acts as a transferable cinematic-media router: start from Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available, Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper indentations',
+        'Transform any prompt subject through Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper indentations; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint',
+        'Build color with Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff',
+        'Handle light through Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness',
+        'Render Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition',
+        'Structure the image through Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation',
+        'Keep the mood Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness',
+        'Finish with Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text',
+        'Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available; Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text; Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint; Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness; Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition',
       creative_brief:
-        'Render the input like a napkin blueprint: ballpoint ink, absorbent paper bleed, coffee rings, moisture warp, fold lines, and rough arrows or schematic marks without readable text. Avoid inventions, startup myths, bars, or literal eureka setups. The surface should feel urgent and improvised. Apply Napkin Scribble Blueprint as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Napkin Scribble Blueprint as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available, Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text, Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness without requiring the card image's original subject.",
     },
   },
   {
@@ -153,28 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Punk Zine Cut-and-Paste',
     category: '8. Hand-Drawn And DIY Media',
     negativePrompt:
-      'digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate',
+      'digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector, fake readable notes, clean studio poster, stock illustration polish',
     style: {
       aesthetic:
-        'DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss',
+        'Punk Zine Cut-and-Paste acts as a transferable cinematic-media router: start from DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss, Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles and DIY media system built from informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours',
+        'Transform any prompt subject through Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours; preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern background',
+        'Build color with Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern depth field; use color through dry-erase primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance',
+        'Handle light through Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance; keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint',
+        'Render Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint; surface detail should reveal marker squeak, paper wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew',
+        'Structure the image through Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew; compose through casual diagram layout, pasted fragments, object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance',
+        'Keep the mood Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance; derive mood from improvised problem-solving, punk urgency, outsider charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation',
+        'Finish with Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation; finish with honest DIY texture, readable prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster default, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles',
+        'DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss; Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles; Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern depth field; Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint; Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew',
       creative_brief:
-        'Apply punk zine collage to any input: Xerox contrast, cut paper edges, tape gloss, staple marks, toner grain, glue wrinkles, and angry misalignment. Avoid readable ransom text, fixed politics, or specific publication content. Degradation and hand assembly should be the main visual force.',
+        "Apply Punk Zine Cut-and-Paste as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss, Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles, Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

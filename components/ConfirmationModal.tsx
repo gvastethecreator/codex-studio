@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnimatePresence, MotionDiv } from 'motion/react';
+import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
   IconAlertTriangle as AlertTriangle,
   IconRotate as RotateCcw,

@@ -1,6 +1,6 @@
 import type { CodexModel, CodexServiceTier } from '../packages/shared/src';
 
-const PREFERRED_MODEL_IDS = ['gpt-5.4-mini', 'gpt-5.3-codex-spark'] as const;
+const PREFERRED_MODEL_IDS = ['gpt-5.4', 'gpt-5.4-mini', 'gpt-5.3-codex-spark'] as const;
 const FALLBACK_REASONING_EFFORTS = ['low', 'medium', 'high'];
 const KNOWN_SPEED_TIERS: Exclude<CodexServiceTier, 'standard'>[] = ['fast', 'flex'];
 

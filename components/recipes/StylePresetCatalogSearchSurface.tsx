@@ -1,5 +1,7 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import {
+  IconCheck as Check,
+  IconChevronDown as ChevronDown,
   IconSearch as Search,
   IconX as X,
   IconArrowRight as ArrowRight,
@@ -14,6 +16,7 @@ import {
 } from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { resolveStylePreviewImage } from '../../lib/stylePresetVisuals';
+import { GsapDropdown } from '../ui/GsapDropdown';
 
 import {
   type StylePresetCatalogSearchIndex,
@@ -54,6 +57,9 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
   const [query, setQuery] = useState('');
   const [packId, setPackId] = useState('');
   const [task, setTask] = useState('');
+  const [isPackFilterOpen, setIsPackFilterOpen] = useState(false);
+  const packFilterButtonRef = useRef<HTMLButtonElement>(null);
+  const packFilterId = useId();
 
   const filters = useMemo(
     () =>
@@ -78,6 +84,15 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
     (total, pack) => total + pack.presetCount,
     0,
   );
+  const packFilterOptions = useMemo(
+    () => [
+      { id: '', name: 'All Packs', presetCount: totalPresetCount },
+      ...STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES,
+    ],
+    [totalPresetCount],
+  );
+  const activePackFilter =
+    packFilterOptions.find((pack) => pack.id === packId) ?? packFilterOptions[0];
 
   useEffect(() => {
     let cancelled = false;
@@ -161,19 +176,84 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
           )}
         </div>
 
-        <select
-          value={packId}
-          onChange={(event) => setPackId(event.target.value)}
-          className="h-10 rounded-xl border border-white/10 bg-black/50 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 outline-none"
-          aria-label="Filter style catalog by pack"
-        >
-          <option value="">All Packs</option>
-          {STYLE_PRESET_CATALOG_SEARCH_PACK_SUMMARIES.map((pack) => (
-            <option key={pack.id} value={pack.id}>
-              {pack.name}
-            </option>
-          ))}
-        </select>
+        <div className="relative min-w-[190px]">
+          <button
+            ref={packFilterButtonRef}
+            type="button"
+            onClick={() => setIsPackFilterOpen((open) => !open)}
+            className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-xl border bg-black/50 px-3 text-left transition-[background-color,border-color,color,transform] ${
+              isPackFilterOpen
+                ? 'border-white/25 text-white'
+                : 'border-white/10 text-zinc-300 hover:border-white/20 hover:bg-white/[0.04]'
+            }`}
+            aria-label={`Filter style catalog by pack: ${activePackFilter?.name ?? 'All Packs'}`}
+            aria-haspopup="listbox"
+            aria-expanded={isPackFilterOpen}
+            aria-controls={packFilterId}
+          >
+            <span className="min-w-0">
+              <span className="block truncate text-[10px] font-black uppercase tracking-widest">
+                {activePackFilter?.name ?? 'All Packs'}
+              </span>
+              <span className="mt-0.5 block truncate text-[8px] font-bold uppercase tracking-widest text-zinc-600">
+                {activePackFilter?.presetCount ?? totalPresetCount} presets
+              </span>
+            </span>
+            <ChevronDown
+              size={14}
+              className={`shrink-0 text-zinc-600 transition-[color,transform] ${
+                isPackFilterOpen ? 'rotate-180 text-white' : ''
+              }`}
+              aria-hidden="true"
+            />
+          </button>
+          <GsapDropdown
+            id={packFilterId}
+            open={isPackFilterOpen}
+            onOpenChange={setIsPackFilterOpen}
+            triggerRef={packFilterButtonRef}
+            placement="bottom-left"
+            role="listbox"
+            aria-label="Filter style catalog by pack"
+            className="absolute left-0 top-[calc(100%+0.5rem)] z-50 max-h-80 w-72 overflow-y-auto p-1.5"
+          >
+            {packFilterOptions.map((pack) => {
+              const selected = pack.id === packId;
+              return (
+                <button
+                  type="button"
+                  key={pack.id || 'all'}
+                  role="option"
+                  aria-selected={selected}
+                  data-dropdown-item
+                  onClick={() => {
+                    setPackId(pack.id);
+                    setIsPackFilterOpen(false);
+                  }}
+                  className={`flex min-h-10 w-full items-center justify-between gap-3 rounded-lg px-3 py-2 text-left transition-[background-color,color] ${
+                    selected
+                      ? 'bg-white text-black'
+                      : 'text-zinc-400 hover:bg-white/8 hover:text-white'
+                  }`}
+                >
+                  <span className="min-w-0">
+                    <span className="block truncate text-[10px] font-black uppercase tracking-widest">
+                      {pack.name}
+                    </span>
+                    <span
+                      className={`mt-0.5 block text-[8px] font-bold uppercase tracking-widest ${
+                        selected ? 'text-black/55' : 'text-zinc-600'
+                      }`}
+                    >
+                      {pack.presetCount} presets
+                    </span>
+                  </span>
+                  {selected ? <Check size={13} className="shrink-0" aria-hidden="true" /> : null}
+                </button>
+              );
+            })}
+          </GsapDropdown>
+        </div>
 
         <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-black/50 p-1">
           {STYLE_SEARCH_TASK_FILTERS.map((filter) => (

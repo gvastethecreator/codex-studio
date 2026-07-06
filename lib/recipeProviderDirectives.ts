@@ -1,4 +1,5 @@
 import { createRecipeProviderDirectives } from '../packages/shared/src/recipeProviderDirectives';
+import { createSpriteAtlasContract } from '../packages/shared/src/spriteAtlasContracts';
 import {
   getCameraDirectorInstructions,
   getCameraGeometryConstraints,
@@ -353,6 +354,58 @@ function buildSpritesheetProviderDirectives(module: RecipeModule, params: Record
   });
 }
 
+function buildSpriteAtlasProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
+  const contract = createSpriteAtlasContract(params);
+  const rowSummary =
+    contract.rows.length > 0
+      ? contract.rows
+          .map((row) => `${row.id} (${row.frames} frames, ${row.loop ? 'loop' : 'once'})`)
+          .join('; ')
+      : 'Custom rows required before generation.';
+
+  return createRecipeProviderDirectives({
+    recipeId: module.id,
+    title: module.title,
+    sections: [
+      {
+        title: 'Atlas Contract',
+        directives: [
+          directive('Preset', contract.presetId),
+          directive('Asset Kind', contract.assetKind),
+          directive('Extraction Mode', contract.extractionMode),
+          directive('Camera', contract.camera),
+          directive('Style', contract.customStyle || contract.stylePreset),
+          directive('Frame Budget', contract.frameBudget),
+          directive('QA Mode', contract.qaMode),
+        ],
+      },
+      {
+        title: 'Layout And Background',
+        directives: [
+          directive('Columns', contract.columns),
+          directive('Cell Size', `${contract.cell.width}x${contract.cell.height}`),
+          directive('Safe Margin X', contract.cell.safeMarginX),
+          directive('Safe Margin Y', contract.cell.safeMarginY),
+          directive('Transparent Output', contract.transparent ? 'yes' : 'no'),
+          directive('Background Removal', contract.backgroundRemoval),
+          directive('Chroma Key', contract.chromaKey),
+        ],
+      },
+      {
+        title: 'Rows',
+        directives: [
+          directive('Row Handoff', 'Generate one row strip per state before extraction.'),
+          directive('Rows', rowSummary),
+          directive(
+            'Runtime Output',
+            'Transparent frames, atlas PNG, and manifest.json.frame_layout.',
+          ),
+        ],
+      },
+    ],
+  });
+}
+
 function buildTimelineProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
   const direction = getString(params, 'direction') || 'forward';
   const timeDeltaLabel = getString(params, 'timeDeltaLabel') || 'Seconds';
@@ -437,6 +490,7 @@ export function buildRecipeProviderDirectives(
   if (module.id === 'character') return buildCharacterProviderDirectives(module, input);
   if (module.id === 'cinematic') return buildCinematicProviderDirectives(module, input);
   if (module.id === 'remaster') return buildRemasterProviderDirectives(module, input);
+  if (module.id === 'sprite-atlas') return buildSpriteAtlasProviderDirectives(module, input);
   if (module.id === 'spritesheet') return buildSpritesheetProviderDirectives(module, input);
   if (module.id === 'timeline') return buildTimelineProviderDirectives(module, input);
   if (module.id === 'styles') return buildStylesProviderDirectives(module, input);

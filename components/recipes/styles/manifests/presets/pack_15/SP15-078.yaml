@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP15-078
 packId: pack_15
-name: Mud Brick Battery House
+name: Mud Brick Energy Cells
 category: 10. Primitive, Stone & Salvage Punks
 version: 1
 supportedTasks:
@@ -12,36 +12,56 @@ tags:
   - punk-spectrum-vault
   - primitive-stone-and-salvage-punks
   - earth-tech
-  - battery-house
+  - energy-cells
 visualDna:
   aesthetic: >-
-    earth-tech energy storage led by one mud-brick battery keeper, with ceramic cells, copper jars,
-    shade-cooled courtyards, and clay geometry becoming the style grammar.
+    Mud Brick Energy Cells operates as a portable punk-spectrum router: combine Mud Brick Energy
+    Cells identity cues through mud-brick geometry; ceramic cells; copper jars; shade-blue cooling;
+    woven mats; clay dust with primitive/stone/salvage punk grammar with low-tech engines, carved
+    mechanics, rope kinetics, mud-brick power, bone signal rigs, and windcraft reuse, so the preset
+    supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card
+    composition.
   subject_treatment: >-
-    Stone tools, rope mechanics, carved engines, low-tech power rigs, salvage sails, and rough handmade
-    engineering. Core composition uses one main battery keeper, ceramic batteries, mud-brick walls, copper
-    jars, shade courtyard.
-  color_and_tone: clay red, copper green, shade blue, cream
-  lighting_and_shadow: courtyard shade, copper cell glow, warm doorway light
-  texture_and_material: mud brick, ceramic cells, copper jars, woven mats, clay dust
+    Preserve prompt X's subject, action, scale, and setting while translating forms through flint
+    planes, basalt massing, rope geometry, carved wheels, rawhide lashings, mud-brick modules,
+    sailcloth patches, and hand-built power logic; motifs can become contour, surface, costume,
+    equipment, atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through flint gray, clay red, rawhide tan, ochre, tar gray, storm blue, copper green,
+    bone white, smoke black, and sea blue; keep dominant, support, and accent values readable, avoid
+    muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair
+    pressure.
+  lighting_and_shadow: >-
+    Use firelight blocks, smoky daylight, polished stone glints, water reflections, storm rim, and
+    warm clay bounce; lighting should reveal the punk system, preserve the user's subject, separate
+    near and distant value planes, and avoid crushed blacks or noisy dark texture.
+  texture_and_material: >-
+    Render flint facets, basalt blocks, hide, rope, carved wood, mud brick, driftwood, patched
+    canvas, copper stains, and smoke-softened edges; keep material scale coherent, surface marks
+    motivated, and tactile details strong enough to route style without becoming pasted grunge.
   camera_and_composition: >-
-    Sanctuaries, markets, camps, bridges, battery houses, and shore commons built from elemental materials.
-    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: grounded, warm, ingenious, communal
+    Compose through compact engine rhythm, lash-and-wheel diagonals, windcraft arcs, ritual timing
+    channels, and clear subject scale without commerce-system or trade setup lock as reusable
+    framing grammar for characters, creatures, objects, vehicles, environments, symbols, or full
+    scenes without one required card layout.
+  atmosphere_and_mood: >-
+    Carry mood through primal invention, tactile tradecraft, stark mobility, ancient precision,
+    communal warmth, and rough salvage optimism; the tone may become adult, romantic, violent,
+    comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains
+    legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: main battery keeper, ceramic batteries, mud-brick walls, copper jars, shade courtyard
+    Finish with drawn salvage-punk illustration with clean matte surfaces, denoised smoke,
+    low-to-moderate detail, and no dusty photoreal survivalism; prioritize clean denoise, bold
+    readable shapes, controlled grit, prompt preservation, no watermark, no readable text, and no
+    generic concept-art polish.
+  key_features: mud-brick geometry; ceramic cells; copper jars; shade-blue cooling; woven mats; clay dust
   creative_brief: >-
-    Earth-tech as believable energy storage without desert fantasy hero styling: make the keeper, copper cell,
-    ceramic batteries, mud-brick shade, and courtyard geometry feel like one warm craft-infrastructure poster.
-    Vary crop and composition; avoid centered full-body adventurer poses, generic market scenes, pottery-shop
-    still life, solarpunk glass utopia, or workers-only staging. Favor folk-modernist poster structure,
-    controlled digital painting, clean matte shapes, and handmade material poetry over American RPG/sourcebook
-    illustration, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate
-    texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
+    Use Mud Brick Energy Cells after prompt X as a transferable punk-spectrum layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while the preset supplies mud-brick
+    geometry, ceramic cells, copper jars, shade-blue cooling, woven mats, clay dust, color logic,
+    light response, material behavior, composition rhythm, mood pressure, and finish discipline
+    without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card
+    composition.
 avoidRules:
   - photoreal
   - watermark
@@ -52,27 +72,41 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - dusty photoreal survivalism
+  - commerce-system trade setup lock
+  - skull-and-bone cliche
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-078.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG hero,
-    sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer, young rugged
-    protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic skin pores, realistic
-    foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic
-    soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation,
-    hyper-detailed concept art, watermark, text, logo, generic style, over-abstract, object-only card,
-    workers-only composition, anonymous worker crew, interchangeable preset, duplicated motifs, generic glass
-    utopia, unmotivated market aisle, unmotivated library aisle, fantasy corridor, pottery shop still life,
-    generic village market, crowded bazaar, readable jar labels, shop signs, wall signage, painted letters,
-    number-like marks, geometric text panels, religious shrine, flags, symbols, logo-like battery icons,
-    random camera held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation,
-    scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened
-    microtexture, over-rendered machinery, noisy grime, tiny ceramic rows everywhere, busy texture chatter,
-    realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo focus,
-    dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up portrait,
-    flat black fill, crushed black, pure black masses, muddy black fields, generic American illustration,
-    generic Western RPG card art
+    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, American fantasy RPG
+    hero, sourcebook hero art, superhero pose, YA adventure cover, centered full-body adventurer,
+    young rugged protagonist, cloak and pouches, leather belt costume, boots hero pose, photographic
+    skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, photoreal wet
+    skin, pore detail, over-rendered muscle anatomy, HDR lens realism, 3D render look, PBR material
+    simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract,
+    object-only card, workers-only composition, anonymous worker crew, interchangeable preset,
+    duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated library
+    aisle, fantasy corridor, pottery shop still life, generic village commerce-system, crowded
+    bazaar, readable jar labels, shop signs, wall signage, painted letters, number-like marks,
+    geometric text panels, religious shrine, flags, symbols, logo-like battery icons, random camera
+    held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf
+    fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened
+    microtexture, over-rendered machinery, noisy grime, tiny ceramic rows everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed
+    tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail,
+    cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art, repeated-props, dusty
+    photoreal survivalism, commerce-system trade setup lock, skull-and-bone cliche, fixed punk
+    venue, required mascot, literal sample-card setup, repeated prop bundle, readable text,
+    prompt-literal card reuse, generic cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault
@@ -82,7 +116,7 @@ taxonomy:
     - punk-spectrum-vault
     - primitive-stone-and-salvage-punks
     - earth-tech
-    - battery-house
+    - energy-cells
   supportedTasks:
     - image_generate
     - image_edit

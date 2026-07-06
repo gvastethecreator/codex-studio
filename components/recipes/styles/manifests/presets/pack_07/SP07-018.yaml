@@ -13,45 +13,107 @@ tags:
   - interior-design-systems
 visualDna:
   aesthetic: >-
-    Farmhouse Chic within 1. Interior Design Systems: a reusable Architecture & Interior visual language with
-    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
-    across subjects while preserving Farmhouse Chic's specific style identity.
+    Farmhouse Chic acts as a transferable architecture/interior router: warm white shiplap junction,
+    reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge,
+    beadboard rhythm; fuse it with interior-system design grammar with furniture-independent
+    proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm; route
+    spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring
+    the default sample anchor, fixed spatial set, landscape setup, or object sample.
   subject_treatment: >-
-    Define Farmhouse Chic through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
-    and reusable beyond one literal scene.
+    Preserve prompt subject, action, and context while translating any requested subject through
+    clean massing, threshold logic, joinery rhythm, furniture-scale proportion, surface hierarchy,
+    and object-ready interior detailing; treat warm white shiplap junction, reclaimed barn-wood
+    brace, galvanized metal panel, black iron strap hinge, washed linen edge as massing, edge,
+    surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.
   color_and_tone: >-
-    Use a Farmhouse Chic-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Map color through controlled interior color hierarchy, wall or shell base tones, tactile
+    secondary materials, small accent signals, and readable value spacing; let source cues such as
+    warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap
+    hinge, washed linen edge decide accent hierarchy, material temperature, and value separation
+    while staying attached to the requested content.
   lighting_and_shadow: >-
-    Use lighting that makes Farmhouse Chic recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use soft daylight, practical bounce, concealed glow, edge-defining shadow, and material-aware
+    reflection control; make light reveal joints, relief, material depth, scale, and atmosphere from
+    warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap
+    hinge, washed linen edge without replacing prompt X with a stock architectural render.
   texture_and_material: >-
-    Use materials and textures that reinforce Farmhouse Chic: surface response, grain, patina, polish, or wear
-    should feel intentional and style-defining.
+    Render wood, plaster, metal, textile, glass, tile, concrete, patina, polish, grain, seams, and
+    tactile construction details; prioritize the tactile signals in warm white shiplap junction,
+    reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge,
+    with believable surface response, denoised grain, coherent wear, and no generic wallpaper
+    texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Farmhouse Chic: perspective, compression, exaggeration, or depth should
-    support the style without forcing one fixed location.
+    Frame through cropped architectural-detail framing, modular spacing, planar overlap, threshold
+    cuts, section-like reads, and deliberate negative space; convert warm white shiplap junction,
+    reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge, washed linen edge
+    into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules
+    instead of one fixed style sample layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Farmhouse Chic: specific, coherent, and distinct, with emotional tone carried
-    by visual systems rather than narrative captioning.
+    Carry mood through inhabitable atmosphere, design intent, tactile comfort or tension, and
+    spatial personality without staged showroom dependency; the preset can support adult, strange,
+    sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them
+    while keeping the architectural identity readable.
   rendering_and_quality: >-
-    Render Farmhouse Chic with high production clarity, strong silhouette reads, clean detail priority, and no
-    accidental UI, text, logos, or watermark.
+    Finish with polished architectural visualization clarity with denoised surfaces, believable
+    material response, no fake text, and no decor-catalog drift; keep clean denoise, legible
+    construction, stable object or anatomy structure when applicable, no watermark, no fake readable
+    text, no logo, no camera prop, and no prompt-literal card copy.
   key_features: >-
-    Prioritize Farmhouse Chic's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    warm white shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap
+    hinge, washed linen edge; clean massing, threshold logic, joinery rhythm, furniture-scale
+    proportion, surface hierarchy, and object-ready interior detailing; wood, plaster, metal,
+    textile, glass, tile, concrete, patina, polish, grain, seams, and tactile construction details;
+    cropped architectural-detail framing, modular spacing, planar overlap, threshold cuts,
+    section-like reads, and deliberate negative space
   creative_brief: >-
-    Create a style-card that translates Farmhouse Chic into a portable visual system for 1. Interior Design
-    Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Apply Farmhouse Chic after prompt X as a transferable architecture/interior style layer: prompt
+    X supplies subject, action, setting, tone, and intensity, while this preset supplies warm white
+    shiplap junction, reclaimed barn-wood brace, galvanized metal panel, black iron strap hinge,
+    washed linen edge, beadboard rhythm, interior-system design grammar with furniture-independent
+    proportion, material hierarchy, junction detail, tactile finish, and lived spatial rhythm,
+    material discipline, spatial grammar, and negative controls without requiring a single spatial
+    sample, product-photo setup, aisle-like default, or empty abstraction.
 avoidRules:
   - modern
   - sleek
   - chrome
+  - hallway view
+  - linen cabinet
+  - kitchen sink/appliance scene
+  - dining table
+  - chair focus
+  - pendant-lamp hero
+  - flower bucket centerpiece
+  - TV farmhouse cliche
+  - market aisle
+  - library aisle
+  - corridor
+  - empty abstraction
+  - showroom formula
+  - chair or sofa focus
+  - lamp hero
+  - curtain wall default
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - camera prop
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-018.webp
 attributes:
-  negativePrompt: modern, sleek, chrome
+  negativePrompt: >-
+    modern, sleek, chrome, hallway view, linen cabinet, kitchen sink/appliance scene, dining table,
+    chair focus, pendant-lamp hero, flower bucket centerpiece, TV farmhouse cliche, market aisle,
+    library aisle, corridor, empty abstraction, showroom formula, chair or sofa focus, lamp hero,
+    curtain wall default, fixed building-only scene, mandatory interior interior zones, corridor
+    perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera
+    prop, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

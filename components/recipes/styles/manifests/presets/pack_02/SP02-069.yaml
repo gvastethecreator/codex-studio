@@ -12,30 +12,86 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Split-key high contrast lighting
+  aesthetic: >-
+    Split Lighting acts as a transferable cinematic-media router: start from Split-key high contrast
+    lighting, Split Lighting light transport, optical artifacts, exposure discipline, atmosphere
+    depth, and camera-response behavior, Half black, half lit, razor side key, hard falloff and
+    portable lighting and atmosphere system built from light transport, exposure behavior, optical
+    distortion, volumetric density, reflection, and camera response, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Split Lighting: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: High contrast, deep shadow, bright highlight, no midtone bridge
-  lighting_and_shadow: 90 degree key, side-only illumination, perfect split
-  texture_and_material: Hard side relief, surface texture, carved shadow edge
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Split Lighting: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with High contrast, deep shadow, bright highlight, no midtone bridge; use color as
+    light temperature, spectral split, water attenuation, neon bounce, candle warmth, night
+    conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through 90 degree key, side-only illumination, perfect split; make the named light
+    behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays,
+    split contrast, or softbox falloff, so exposure and shadow structure support the media process
+    without overwriting the requested content.
+  texture_and_material: >-
+    Render Hard side relief, surface texture, carved shadow edge; surface detail should reveal
+    particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or
+    optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy
+    filler texture.
   camera_and_composition: >-
-    Camera language native to Split Lighting: genre-aware framing, lens character, focal hierarchy, motion
-    cue, and vertical style-card composition.
-  atmosphere_and_mood: Tense, hidden, divided, severe
-  rendering_and_quality: Dramatic, severe, dual-zone tension, graphic contrast
-  key_features: Half black, half lit, razor side key, hard falloff
+    Structure the image through Camera language native to Split Lighting: genre-aware framing, lens
+    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tense, hidden, divided, severe, mood carried by Split Lighting media process,
+    signal pressure, and visual restraint; derive mood from illumination physics: intimacy, dread,
+    wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash energy, letting
+    the media style alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Dramatic, severe, dual-zone tension, graphic contrast; finish with believable
+    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
+    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
+    to make the style recognizable.
+  key_features: >-
+    Split-key high contrast lighting, Split Lighting light transport, optical artifacts, exposure
+    discipline, atmosphere depth, and camera-response behavior; Half black, half lit, razor side
+    key, hard falloff; High contrast, deep shadow, bright highlight, no midtone bridge; Hard side
+    relief, surface texture, carved shadow edge; Camera language native to Split Lighting:
+    genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical
+    composition
   creative_brief: >-
-    Apply split lighting to any subject: one side cut by a hard key, the other side dropping into near-black
-    with minimal midtone bridge. Avoid face-only drama, villain framing, or portrait assumptions. The image
-    should feel divided by illumination itself.
+    Apply Split Lighting as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Split-key high contrast lighting, Split Lighting light transport,
+    optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Half
+    black, half lit, razor side key, hard falloff, Hard side relief, surface texture, carved shadow
+    edge without requiring the card image's original subject.
 avoidRules:
   - flat light
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-069.webp
 attributes:
-  negativePrompt: flat light
+  negativePrompt: >-
+    flat light, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

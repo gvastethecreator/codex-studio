@@ -13,26 +13,60 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Moonlit magical-radiance style with transformation symbolism, romantic justice energy, and luminous heroic
-    optimism
+    Sailor Moon - Moonlit Ribbon Justice operates as a portable anime-lifestyle router: combine
+    Sailor Moon - Moonlit Ribbon Justice identity cues through Transformation symbolism; moon emblem
+    light logic; jewel tone magic effects; multi silhouette choreography; Moonlit Ribbon Justice
+    with Sailor Moon lineage used only as style reference; romantic justice energy with shojo,
+    magical girl, and visionary classic anime grammar with symbolic romance, transformation sparkle,
+    ornate contour, emotional close reading, and theatrical abstraction; Sailor Moon may guide line
+    economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or
+    copied costumes, so the preset supplies anime style behavior after prompt X rather than a
+    required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Crisp vintage-cel contouring, transformation ribbon trajectories, emblem-forward silhouette clarity, and
-    expressive heroic gesture language
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Jewel-pastel fusion with moon-silver highlights, pink-cyan-lilac harmonies, and high-contrast magical
-    accent pulses
-  lighting_and_shadow: Moonlit backlight halos, transformation glow blooms, heroic rim partitions, and night reflective luminance
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
+  lighting_and_shadow: >-
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Shimmer particle overlays, satin-ribbon sheen, watercolor-cel depth layering, and subtle analog grain
-    warmth
-  camera_and_composition: Dynamic but graceful foreshortening supporting transformation arcs and multi-silhouette staging
-  atmosphere_and_mood: Radiant, romantic, heroic, hopeful, graceful
-  rendering_and_quality: Golden-era magical-action anime finish with strong transformation readability and radiant polished clarity
-  key_features: Transformation symbolism, moon-emblem light logic, jewel-tone magic effects, multi-silhouette choreography
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
+  camera_and_composition: >-
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
+  rendering_and_quality: >-
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
+  key_features: >-
+    Transformation symbolism; moon emblem light logic; jewel tone magic effects; multi silhouette
+    choreography; Moonlit Ribbon Justice with Sailor Moon lineage used only as style reference;
+    romantic justice energy
   creative_brief: >-
-    Transform the input through moonlit ribbon justice: flowing ribbon arcs, moon-emblem halos, jewel-pastel
-    glow blooms, heroic rim partitions, and compassionate magical radiance should reshape any subject without
-    requiring a literal sailor uniform, wand, city rooftop, or transformation pose.
+    Use Sailor Moon - Moonlit Ribbon Justice after prompt X as a transferable anime
+    character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while the preset supplies Transformation symbolism, moon emblem light logic, jewel tone magic
+    effects, multi silhouette choreography, Moonlit Ribbon Justice with Sailor Moon lineage used
+    only as style reference, romantic justice energy, color logic, lighting, material finish,
+    composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed
+    venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -46,12 +80,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-162.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

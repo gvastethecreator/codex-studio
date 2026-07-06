@@ -12,20 +12,63 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Speculative creature-design sheet with layered anatomical logic and believable biological imagination
-  subject_treatment: Construction underdrawings, skeletal overlays, muscular contour notes
-  color_and_tone: Neutral sketch tones with limited functional overlay coding
-  lighting_and_shadow: Form-reading study light with selective translucency cues
-  texture_and_material: Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests
-  camera_and_composition: Multi-pose and layered ghost-view layout for structural analysis
-  atmosphere_and_mood: Scientific, exploratory, speculative naturalism
-  rendering_and_quality: Iterative concept-study fidelity prioritizing function over polish
-  key_features: Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks
+  aesthetic: >-
+    organism designs Design Iteration acts as a transferable illustration router: start from
+    Speculative organism designs-design sheet with layered anatomical logic and believable
+    biological imagination, Anatomy callouts, adaptation variants, transparent layer studies,
+    locomotion-read checks and production concept-art system built from iteration discipline,
+    silhouette testing, material exploration, design readability, and pitch-ready visual decisions,
+    then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Construction underdrawings, skeletal overlays, muscular
+    contour notes; preserve the requested subject while routing it through design exploration, asset
+    logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability
+    constraints, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Neutral sketch tones with limited functional overlay coding; use color as
+    concept decision-making: mood scripts, material swatches, faction accents, environment
+    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Form-reading study light with selective translucency cues; shape light for
+    ideation clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests; surface
+    detail should reveal brush passes, photobash integration, low-poly facets, callout texture,
+    massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Multi-pose and layered ghost-view layout for structural analysis;
+    compose through production hierarchy, variants, orthographic logic, isometric staging,
+    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
+    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Scientific, exploratory, speculative naturalism, mood carried by organism designs
+    Design Iteration craft, material pressure, and visual restraint; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Iterative concept-study fidelity prioritizing function over polish; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Speculative organism designs-design sheet with layered anatomical logic and believable
+    biological imagination; Anatomy callouts, adaptation variants, transparent layer studies,
+    locomotion-read checks; Neutral sketch tones with limited functional overlay coding; Mixed
+    biological surfaces (scale, fur, membrane, carapace) as comparative tests; Multi-pose and
+    layered ghost-view layout for structural analysis
   creative_brief: >-
-    Apply creature-design iteration language to any input: anatomy-like layering, silhouette mutations,
-    material biology, exploratory appendage rhythms, and evolutionary variant marks. If no creature exists,
-    translate the subject into biomorphic design studies without requiring animals, monsters, or a final
-    character render.
+    Apply organism designs Design Iteration as an illustration preset over prompt X: preserve the
+    user's requested subject, then route mark-making, palette, surface, composition, mood, and final
+    craft through Speculative organism designs-design sheet with layered anatomical logic and
+    believable biological imagination, Anatomy callouts, adaptation variants, transparent layer
+    studies, locomotion-read checks, Mixed biological surfaces (scale, fur, membrane, carapace) as
+    comparative tests without requiring the card image's original subject.
 avoidRules:
   - human
   - normal
@@ -36,10 +79,26 @@ avoidRules:
   - existing animal
   - final render
   - single version
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-089.webp
 attributes:
-  negativePrompt: human, normal, domestic, cute, ordinary, recognizable, existing animal, final render, single version
+  negativePrompt: >-
+    human, normal, domestic, cute, ordinary, recognizable, existing animal, final render, single
+    version, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
+    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

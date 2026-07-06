@@ -13,31 +13,87 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Creature-concept development style driven by ecological plausibility, adaptive morphology, and silhouette
-    threat readability
+    organism designs Design acts as a transferable illustration router: start from organism
+    designs-concept development style driven by ecological plausibility, adaptive morphology, and
+    silhouette threat readability, Silhouette, anatomical breakdown, adaptive feature and production
+    concept-art system built from iteration discipline, silhouette testing, material exploration,
+    design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X
+    instead of recreating a fixed demo image.
   subject_treatment: >-
-    Anatomical construction logic with biomechanical cue layering, functional limb articulation, and
-    predator-profile contour control
-  color_and_tone: Skin tones, organic chromatics, creature-flesh spectrum
-  lighting_and_shadow: Rim light, silhouette reveal, ambient dread
-  texture_and_material: Scales, fur
+    Transform any prompt subject through Anatomical construction logic with biomechanical cue
+    layering, functional limb articulation, and predator-profile contour control; preserve the
+    requested subject while routing it through design exploration, asset logic, value blocking,
+    scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Skin tones, organic chromatics, organism designs-flesh spectrum; use color as
+    concept decision-making: mood scripts, material swatches, faction accents, environment
+    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Rim light, silhouette reveal, ambient dread; shape light for ideation
+    clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Scales, fur, production design clarity, iteration logic, silhouette readability, material
+    exploration, and concept-art decision pressure; surface detail should reveal brush passes,
+    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
+    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
+    avoiding noisy filler texture.
   camera_and_composition: >-
-    Speculative anatomy distortions guided by functional adaptation, not random mutation, with balanced
-    asymmetry control
-  atmosphere_and_mood: Dangerous, alive, predatory stillness, ecological tension
-  rendering_and_quality: Scary, biological, anatomical conviction, apex-predator presence
-  key_features: Silhouette, anatomical breakdown, adaptive feature
+    Structure the image through Speculative anatomy distortions guided by functional adaptation, not
+    random mutation, with balanced asymmetry control; compose through production hierarchy,
+    variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or
+    cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dangerous, alive, predatory stillness, ecological tension; derive mood from
+    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
+    cinematic intent, or production-room clarity, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Scary, biological, anatomical conviction, apex-predator presence; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    organism designs-concept development style driven by ecological plausibility, adaptive
+    morphology, and silhouette threat readability; Silhouette, anatomical breakdown, adaptive
+    feature; Skin tones, organic chromatics, organism designs-flesh spectrum; Scales, fur,
+    production design clarity, iteration logic, silhouette readability, material exploration, and
+    concept-art decision pressure; Speculative anatomy distortions guided by functional adaptation,
+    not random mutation, with balanced asymmetry control
   creative_brief: >-
-    Apply creature-design grammar to any input: adaptive morphology, habitat-driven features, anatomical
-    construction, predator-profile silhouette, and biological material logic should create living threat
-    without requiring monsters, beasts, claws, fangs, horror scenes, or one creature vignette.
+    Apply organism designs Design as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through organism designs-concept development style driven by ecological plausibility, adaptive
+    morphology, and silhouette threat readability, Silhouette, anatomical breakdown, adaptive
+    feature, Scales, fur, production design clarity, iteration logic, silhouette readability,
+    material exploration, and concept-art decision pressure without requiring the card image's
+    original subject.
 avoidRules:
   - human
   - cute
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-051.webp
 attributes:
-  negativePrompt: human, cute
+  negativePrompt: >-
+    human, cute, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

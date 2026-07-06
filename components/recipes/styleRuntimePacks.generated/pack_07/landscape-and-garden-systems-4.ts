@@ -7,56 +7,58 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-041',
     name: 'Formal Topiary Axis',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'wild, messy',
+    negativePrompt:
+      'wild, messy, wild meadow, messy garden, palace postcard, fountain hero, people, market aisle, library aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Formal landscape classicism where clipped vegetation expresses power, protocol and territorial order.',
+        'Formal Topiary Axis acts as a transferable architecture/interior router: mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Clipped hedge bands, mirrored parterre logic, long perspective pressure and measured control points without forcing one fountain-axis composition.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Green, Gravel Beige, Boxwood Dark, Seasonal Bedding Red, Water-reflection Silver, Limestone',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Planimetric sunlight, long-shadow axial drama and restrained reflective glints.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Millimeter-clipped hedges, raked gravel, limestone edging, controlled turf pattern and optional reflective water as texture, not required centerpiece.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Planimetric garden order, mirrored axes and clipped-depth compression that can wrap any subject or surface.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Ceremonial, monumental and disciplined, with intentional visual authority.',
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Landscape-design precision with ceremonial depth and strict topiary readability.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Embroidered parterres, hedge planes, axial reflection logic, ceremonial nodes and distant control points.',
+        'mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Any subject should submit to vegetal mirroring, millimetric clipping and territorial control. The image works as horizontal architecture: protocol, long-distance readability and precise topiary replace spontaneity without requiring a palace garden, axial fountain or literal ceremonial route.',
+        'Apply Formal Topiary Axis after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies mirrored green bands, raked gravel, limestone edging, controlled turf, ceremonial depth, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-042',
     name: 'Cottage Bloom Layering',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'formal, concrete',
+    negativePrompt:
+      'formal, concrete, formal parterre, concrete patio, porch furniture, market aisle, library aisle, corridor, person, camera prop, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Cottage Bloom Layering within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cottage Bloom Layering's specific style identity.",
+        'Cottage Bloom Layering acts as a transferable architecture/interior router: layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Cottage Bloom Layering through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Cottage Bloom Layering-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Cottage Bloom Layering recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Cottage Bloom Layering: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Cottage Bloom Layering: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Cottage Bloom Layering: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Cottage Bloom Layering with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Cottage Bloom Layering's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Create a style-card that translates Cottage Bloom Layering into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Cottage Bloom Layering after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies layered flower heights, curved path fragments, mossy brick or rough stone, pastel seasonal blooms, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
@@ -64,219 +66,231 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Karesansui Dry Abstraction',
     category: '4. Landscape And Garden Systems',
     negativePrompt:
-      'lush planting, pond, running water, spa rock decor, blank-field dominance, empty texture-only output',
+      'lush planting, pond, running water, spa rock decor, blank-field dominance, empty texture-only output, spa decor, lush garden, blank texture field, zen interior zones, chair, lantern prop, market aisle, library aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
-      aesthetic: 'Dry mineral abstraction, material contemplation and extreme economy of gesture.',
+      aesthetic:
+        'Karesansui Dry Abstraction acts as a transferable architecture/interior router: disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Intentionally raked waves, calm planes, two or three tactile mineral anchors and asymmetric balance.',
-      color_and_tone: 'Grey, White, Moss, Granite Black, Silver sand, Lichen Green',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+      color_and_tone:
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Low-angle raking light, furrow shadows and crisp early-hour contrast under eaves.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Fine sand/gravel, weathered granite, crushed quartz and pinpoint velvet moss grain.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Raked field compression, asymmetrical mineral anchoring and scale reduction through quiet planes.',
-      atmosphere_and_mood: 'Focused quiet, ritual order and suspended time.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Hyperclean minimalism with granular precision and disciplined compositional silence.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Raked fields, mineral anchors, selective living matter and austere containment.',
+        'disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Reduce any theme to active quiet, raked surface and mineral anchors in tension. Few elements do heavy spatial work; moss or lichen can appear as pinpoint accent, not lush garden. Keep subject legibility and scale cues; avoid blank-field dominance or empty texture-only output.',
+        'Apply Karesansui Dry Abstraction after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies disciplined gravel waves, two or three granite stones, moss pinpoints, low-angle furrow shadows, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-044',
     name: 'Postindustrial Ecological Promenade',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'wild forest',
+    negativePrompt:
+      'wild forest, heroic walkway scene, people, bikes, retail promenade, market aisle, library aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Postindustrial Ecological Promenade within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Postindustrial Ecological Promenade's specific style identity.",
+        'Postindustrial Ecological Promenade acts as a transferable architecture/interior router: weathered concrete, corten steel, gravel, resilient grasses, modular retention bands; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Postindustrial Ecological Promenade through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat weathered concrete, corten steel, gravel, resilient grasses, modular retention bands as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Postindustrial Ecological Promenade-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as weathered concrete, corten steel, gravel, resilient grasses, modular retention bands decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Postindustrial Ecological Promenade recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from weathered concrete, corten steel, gravel, resilient grasses, modular retention bands without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Postindustrial Ecological Promenade: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in weathered concrete, corten steel, gravel, resilient grasses, modular retention bands, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Postindustrial Ecological Promenade: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert weathered concrete, corten steel, gravel, resilient grasses, modular retention bands into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Postindustrial Ecological Promenade: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Postindustrial Ecological Promenade with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Postindustrial Ecological Promenade's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'weathered concrete, corten steel, gravel, resilient grasses, modular retention bands; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Create a style-card that translates Postindustrial Ecological Promenade into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Postindustrial Ecological Promenade after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies weathered concrete, corten steel, gravel, resilient grasses, modular retention bands, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-045',
     name: 'Xeriscape Climate Grammar',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'lawn, wet',
+    negativePrompt:
+      'lawn, wet, wet lush garden, desert postcard, cactus character, people, market aisle, library aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Xeriscape Climate Grammar within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Xeriscape Climate Grammar's specific style identity.",
+        'Xeriscape Climate Grammar acts as a transferable architecture/interior router: agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Xeriscape Climate Grammar through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Xeriscape Climate Grammar-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Xeriscape Climate Grammar recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Xeriscape Climate Grammar: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Xeriscape Climate Grammar: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Xeriscape Climate Grammar: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Xeriscape Climate Grammar with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Xeriscape Climate Grammar's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Create a style-card that translates Xeriscape Climate Grammar into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Xeriscape Climate Grammar after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies agave rosettes, dry creek gravel routing, decomposed granite, oxidized metal edging, ochre stone, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-046',
     name: 'Water-Horizon Hospitality',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'cold, cold concrete',
+    negativePrompt:
+      'cold, cold concrete, cabana, sofa, lounge chair, bed, furniture focus, hotel interior zones, pool party, people, brand resort, beach postcard, market aisle, library aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Water-Horizon Hospitality within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Water-Horizon Hospitality's specific style identity.",
+        'Water-Horizon Hospitality acts as a transferable architecture/interior router: turquoise reflection, warm wet stone, teak trim, tropical leaf shadow; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Water-Horizon Hospitality through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat turquoise reflection, warm wet stone, teak trim, tropical leaf shadow as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Water-Horizon Hospitality-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as turquoise reflection, warm wet stone, teak trim, tropical leaf shadow decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Water-Horizon Hospitality recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from turquoise reflection, warm wet stone, teak trim, tropical leaf shadow without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Water-Horizon Hospitality: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in turquoise reflection, warm wet stone, teak trim, tropical leaf shadow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Water-Horizon Hospitality: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert turquoise reflection, warm wet stone, teak trim, tropical leaf shadow into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Water-Horizon Hospitality: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Water-Horizon Hospitality with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Water-Horizon Hospitality's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'turquoise reflection, warm wet stone, teak trim, tropical leaf shadow; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Create a style-card that translates Water-Horizon Hospitality into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Water-Horizon Hospitality after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies turquoise reflection, warm wet stone, teak trim, tropical leaf shadow, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-047',
     name: 'Topiary Wayfinding Trap',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'open field',
+    negativePrompt:
+      'open field, required maze map, fantasy garden gate, statue centerpiece, market aisle, library aisle, corridor tunnel, camera prop, readable signage, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, literal maze map, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Formal vegetative maze grammar based on playful disorientation and clipped enclosure.',
+        'Topiary Wayfinding Trap acts as a transferable architecture/interior router: living-wall mass, partial route pressure, gravel node, controlled sightline break; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Orthogonal hedge logic, rhythmic dead-end pressure, partial-route hierarchy and continuous tall living-wall mass.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat living-wall mass, partial route pressure, gravel node, controlled sightline break as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as living-wall mass, partial route pressure, gravel node, controlled sightline break decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Shaded passages, narrow sun bands, distant light stops and mottled gravel pattern.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from living-wall mass, partial route pressure, gravel node, controlled sightline break without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Densely clipped hedge, compact leaf surface, transit gravel and stone/moss node accents.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in living-wall mass, partial route pressure, gravel node, controlled sightline break, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Maze-like route compression, false-node rhythm and living-wall enclosure without requiring a literal maze plan or central destination.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert living-wall mass, partial route pressure, gravel node, controlled sightline break into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Curious disorientation, playful anxiety and enclosed progression toward uncertain resolution.',
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Precise topiary geometry with wayfinding tension and readable route pressure.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Clipped living enclosure, node rhythm, gravel-route texture, controlled sightline breaks and false exits.',
+        'living-wall mass, partial route pressure, gravel node, controlled sightline break; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Any image becomes repeated spatial decision: high hedge pressure, partial route, false nodes and controlled sightlines. Tension comes from wayfinding behavior, not from fantasy mystery, a literal hedge maze or a promised center marker.',
+        'Apply Topiary Wayfinding Trap after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies living-wall mass, partial route pressure, gravel node, controlled sightline break, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-048',
     name: 'Elevated Biophilic Terrace',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'literal rooftop deck, skyline-view terrace, ground-level patio',
+    negativePrompt:
+      'required rooftop deck, skyline-view terrace, ground-level patio, blanket, cushion, sofa, chair, lounge furniture, required rooftop lounge, ground patio, people, market aisle, library aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal rooftop lounge, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Elevated biophilic layer system with refined outdoor minimalism and calm geometric planting rhythm.',
+        'Elevated Biophilic Terrace acts as a transferable architecture/interior router: modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Modular planting bands, low horizontal planes, light shade, softened orthogonal hardscape and airy edge layers.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Desaturated greens, warm mineral neutrals, muted blue-greys, rusted corten accents, low-intensity amber highlights',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Warm twilight gradient with soft integrated points and low-contrast edge identification.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Oiled wood accent, matte painted metal, mineral gravel, woven outdoor textile and brushed zinc.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Long-axis pull, shallow vertical compression and stacked biophilic edge layering.',
-      atmosphere_and_mood: 'Quiet, restorative and contemplative, with breathable design comfort.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Premium landscape finish with clean hierarchy, contained bloom and legible material tactility.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Modular planting bands, warm deck-like planes, integrated light and green-hardscape contrast.',
+        'modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Treat any prompt as an elevated biophilic layer: planting bands, warm horizontal planes, integrated light and contained edges. Height comes from layering, air, railing hints or suspended planters, not from a literal luxury terrace, skyline view, rooftop deck or fixed outdoor lounge scene.',
+        'Apply Elevated Biophilic Terrace after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies modular planting bands, warm horizontal deck planes, integrated low lighting, mineral gravel, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-049',
     name: 'Tournament Turf Strategy',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'weeds, unmanaged meadow',
+    negativePrompt:
+      'weeds, unmanaged meadow, flag, pole, cup marker, golfers, players, stadium, generic park lawn, people, market aisle, library aisle, corridor, empty abstraction, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Tournament Turf Strategy within 4. Landscape And Garden Systems: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tournament Turf Strategy's specific style identity.",
+        'Tournament Turf Strategy acts as a transferable architecture/interior router: striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Tournament Turf Strategy through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Tournament Turf Strategy-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Tournament Turf Strategy recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Tournament Turf Strategy: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Tournament Turf Strategy: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Tournament Turf Strategy: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Tournament Turf Strategy with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Tournament Turf Strategy's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Create a style-card that translates Tournament Turf Strategy into a portable visual system for 4. Landscape And Garden Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Tournament Turf Strategy after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies striped mowing bands, dew on short grass, contained water edge, target geometry implied by ground contour, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-050',
     name: 'Botanical Iron Glasshouse',
     category: '4. Landscape And Garden Systems',
-    negativePrompt: 'exterior garden',
+    negativePrompt:
+      'exterior garden, tourist greenhouse interior zones, people, benches, market aisle, library aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, blank texture field, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Historic iron-and-glass botanical conservatory logic with controlled humid climate.',
+        'Botanical Iron Glasshouse acts as a transferable architecture/interior router: ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass; fuse it with landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Ribbed glazed vaults, cast-iron modular repetition and vertical botanical layering.',
+        'Preserve prompt subject, action, and context while translating any requested subject through ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; treat ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver',
+        'Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues, controlled bloom accents, and readable ground-plane contrast; let source cues such as ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Diffuse greenhouse brightness, condensation prisms, rain-on-glass sparkle and warm glow over ironwork.',
+        'Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture, dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material depth, scale, and atmosphere from ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.',
+        'Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; prioritize the tactile signals in ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Ribbed-glass repetition, condensation refraction and layered botanical depth without requiring a fixed greenhouse room.',
-      atmosphere_and_mood: 'Enclosed lushness, humid cultivation calm and curated botanical awe.',
+        'Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing; convert ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate resilience, hospitality calm, or playful spatial misdirection; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Museum-grade conservatory clarity with technically credible humid atmosphere.',
+        'Finish with crisp landscape-design finish with readable planting structure, no generic park lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Iron lattice bays, prismatic condensed glass, layered tropical canopies and clean circulation logic.',
+        'ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands, and detail-first landscape framing',
       creative_brief:
-        'Combine rhythmic ironwork, humid glass and dense exhibition botany. Any subject should feel climate-curated, with visible structure as important as foliage, without requiring an exterior garden, tourist conservatory or fixed greenhouse scene.',
+        'Apply Botanical Iron Glasshouse after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass, landscape system grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

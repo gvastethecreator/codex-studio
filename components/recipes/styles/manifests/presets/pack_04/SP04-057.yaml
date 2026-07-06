@@ -13,29 +13,84 @@ tags:
   - technical-and-reference-sheets
 visualDna:
   aesthetic: >-
-    Blueprint schematic style with engineering communication clarity, drafting-era precision, and
-    specification-forward layout discipline
+    Blueprint Schematic acts as a transferable illustration router: start from Blueprint schematic
+    style with engineering communication clarity, drafting-era precision, and specification-forward
+    layout discipline, Measurements, dimension lines, grid sub-base and technical reference and
+    interface-spec system built from orthographic clarity, diagram hierarchy, callout logic,
+    measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X
+    instead of recreating a fixed demo image.
   subject_treatment: >-
-    White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view
-    readability
-  color_and_tone: Blue background, white-line cyan, blueprint nostalgia
-  lighting_and_shadow: Diagrammatic machine-drawing clarity with no simulated lighting
-  texture_and_material: Grid paper
-  camera_and_composition: Exploded view
-  atmosphere_and_mood: Smart, plan, drafting-table focus, patent-office gravity
-  rendering_and_quality: Engineering, precise, shop-floor accuracy, technical authority
-  key_features: Measurements, dimension lines, grid sub-base
+    Transform any prompt subject through White technical line hierarchy with orthographic rigor,
+    dimension-callout logic, and exploded-view readability; preserve the requested subject while
+    expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes,
+    comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose,
+    object function, or setting legible.
+  color_and_tone: >-
+    Build color with Blue depth field, white-line cyan, blueprint nostalgia; use color as
+    information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy
+    value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Diagrammatic machine-drawing clarity with no simulated lighting; keep light
+    diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
+    anatomical separation, or measured shadow restraint, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Grid paper, blue drafting ground, grid sub-base, white technical linework, measurement
+    ticks, and precise paper-plan texture; surface detail should support readability with grid
+    paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or
+    reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Exploded view, orthographic projection, exploded spacing, dimension
+    hierarchy, and specification-panel rhythm; compose through orthographic projection, exploded
+    spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet
+    hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Smart, plan, drafting-table focus, patent-office gravity; derive mood from
+    precision, planning, research, interface control, anatomical study, engineering authority, or
+    catalogued comparison, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Engineering, precise, shop-floor accuracy, technical authority; finish with readable
+    technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible
+    labels or decorative clutter, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Blueprint schematic style with engineering communication clarity, drafting-era precision, and
+    specification-forward layout discipline; Measurements, dimension lines, grid sub-base; Blue
+    depth field, white-line cyan, blueprint nostalgia; Grid paper, blue drafting ground, grid
+    sub-base, white technical linework, measurement ticks, and precise paper-plan texture; Exploded
+    view, orthographic projection, exploded spacing, dimension hierarchy, and specification-panel
+    rhythm
   creative_brief: >-
-    Apply blueprint schematic grammar to any input: orthographic projection, measurement hierarchy,
-    exploded-view logic, grid sub-base, and white technical linework should create drafting authority without
-    requiring machines, labels, title blocks, patents, vehicles, or readable dimensions.
+    Apply Blueprint Schematic as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Blueprint schematic style with engineering communication clarity, drafting-era precision, and
+    specification-forward layout discipline, Measurements, dimension lines, grid sub-base, Grid
+    paper, blue drafting ground, grid sub-base, white technical linework, measurement ticks, and
+    precise paper-plan texture without requiring the card image's original subject.
 avoidRules:
   - 3d
   - shaded
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - illegible labels
+  - decorative clutter
+  - shaded cinematic render
+  - random UI text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-057.webp
 attributes:
-  negativePrompt: 3d, shaded
+  negativePrompt: >-
+    3d, shaded, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
+    labels, decorative clutter, shaded cinematic render, random UI text
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

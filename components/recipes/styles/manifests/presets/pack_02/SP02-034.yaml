@@ -13,33 +13,84 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: >-
-    Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft, replacement
-    animation
+    Laika Moody Stop-Motion acts as a transferable cinematic-media router: start from Moody
+    miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft,
+    replacement animation, Fingerprint texture, miniature scale, seam detail, practical studio
+    shadow, tactile imperfection and animation-production system built from motion-era drawing, cel
+    paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then
+    apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Laika Moody Stop-Motion: casting,
-    wardrobe, props, motion cues, and silhouette hierarchy follow 3. Animation Styles cinematic and broadcast
-    grammar without locking to one plot beat.
-  color_and_tone: Texture rich, muted jewel, deep violet, moss green, rust orange
-  lighting_and_shadow: Miniature studio, practical dollhouse, keyed drama, soft fill
-  texture_and_material: Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture
-  camera_and_composition: Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues
-  atmosphere_and_mood: Dark, handmade, gothic whimsy, craft unease
-  rendering_and_quality: Tactile, creepy, frame-by-frame labor, physical imperfection
-  key_features: Fingerprint texture, miniature scale, seam detail, practical studio shadow, tactile imperfection
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Laika Moody Stop-Motion: casting, wardrobe, props, motion cues, and silhouette hierarchy
+    follow 3. Animation Styles cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while translating it through cel shapes, squash, puppet material,
+    vector rigs, CG feature polish, rotoscoped trace, or painted-frame continuity, keeping the
+    requested identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Texture rich, muted jewel, deep violet, moss green, rust orange; use color as
+    animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats, stop-motion
+    set tones, digital compositing, or comic-offset halftone, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Miniature studio, practical dollhouse, keyed drama, soft fill; make light
+    follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce,
+    flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the
+    media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture;
+    surface detail should reveal acetate grain, paper line, clay/fabric puppet material, vector
+    fills, oil smears, pixel cells, or CG shader smoothness when named, keeping artifact scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Replacement seams, expression-swap geometry, incremental sculpt,
+    miniature scale cues; compose through animation readability, pose clarity, painted-plate rhythm,
+    squash arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame
+    rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dark, handmade, gothic whimsy, craft unease; derive mood from feature warmth,
+    rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental
+    motion craft, letting the media style alter interpretation without demanding a specific story,
+    location, or actor.
+  rendering_and_quality: >-
+    Finish with Tactile, creepy, frame-by-frame labor, physical imperfection; finish with
+    production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact
+    studio-character copy or random cartoon face substitution, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Moody miniature stop-motion fantasy, Laika-style handcrafted dread, tactile miniature craft,
+    replacement animation; Fingerprint texture, miniature scale, seam detail, practical studio
+    shadow, tactile imperfection; Texture rich, muted jewel, deep violet, moss green, rust orange;
+    Fabric fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture;
+    Replacement seams, expression-swap geometry, incremental sculpt, miniature scale cues
   creative_brief: >-
-    Rebuild the input as a physical stop-motion miniature: visible fibers, hand-painted resin, tiny seams,
-    practical shadows, and frame-by-frame craft marks. Keep mood strange and tactile without forcing
-    corridors, clothing, or character motifs. The image should feel fabricated on a table, photographed with
-    care, and haunted by tiny material flaws. Apply Laika Moody Stop-Motion as a portable cinematic/camera
-    style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and
-    deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or
-    narrative setup.
+    Apply Laika Moody Stop-Motion as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Moody miniature stop-motion fantasy,
+    Laika-style handcrafted dread, tactile miniature craft, replacement animation, Fingerprint
+    texture, miniature scale, seam detail, practical studio shadow, tactile imperfection, Fabric
+    fiber, 3D print striation, wool knit, silicone, painted resin, real hair texture without
+    requiring the card image's original subject.
 avoidRules:
   - smooth 3d
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact studio character copy
+  - random cartoon face
+  - unreadable motion smear
+  - fake subtitles
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-034.webp
 attributes:
-  negativePrompt: smooth 3d
+  negativePrompt: >-
+    smooth 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact
+    studio character copy, random cartoon face, unreadable motion smear, fake subtitles
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

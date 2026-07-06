@@ -12,26 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Loose whimsical ink storybook language (Quentin Blake influence)
-  subject_treatment: Scratchy, fast, expressive nib lines with playful instability
-  color_and_tone: Light watercolor splash accents over black ink skeleton
-  lighting_and_shadow: Natural paper-white lighting with wash-led value hints
-  texture_and_material: Nib chatter, splatter marks, watery bleed pockets
-  camera_and_composition: Elastic proportions and spiky gesture exaggeration
-  atmosphere_and_mood: Humorous, lively, irreverent
-  rendering_and_quality: Mischievous, energetic, deliberately unrefined storybook finish
-  key_features: Ink flicks, broken contour continuity, lively splash punctuation
+  aesthetic: >-
+    Whimsical Ink acts as a transferable illustration router: start from Loose whimsical ink
+    storybook language (Quentin Blake influence), Ink flicks, broken contour continuity, lively
+    splash punctuation and storybook and friendly-illustration system built from approachable
+    shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then
+    apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Scratchy, fast, expressive nib lines with playful
+    instability; preserve the requested subject while softening, simplifying, miniaturizing,
+    paper-building, mark-making, or diagramming it according to the named medium, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Light watercolor splash accents over black ink skeleton; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Natural paper-white lighting with wash-led value hints; shape light through
+    soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Nib chatter, splatter marks, watery bleed pockets; surface detail should show paper
+    tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate,
+    or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Elastic proportions and spiky gesture exaggeration; compose with
+    clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout,
+    or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Humorous, lively, irreverent, mood carried by Whimsical Ink craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Mischievous, energetic, deliberately unrefined storybook finish; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Loose whimsical ink storybook language (Quentin Blake influence); Ink flicks, broken contour
+    continuity, lively splash punctuation; Light watercolor splash accents over black ink skeleton;
+    Nib chatter, splatter marks, watery bleed pockets; Elastic proportions and spiky gesture
+    exaggeration
   creative_brief: >-
-    Apply whimsical ink storybook energy to any input: scratchy fast nib lines, broken contours, watercolor
-    splashes, spiky gesture exaggeration, and lively splatter punctuation should carry humor without requiring
-    characters, animals, jokes, children, or fixed story vignettes.
+    Apply Whimsical Ink as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Loose whimsical ink storybook language (Quentin Blake influence), Ink flicks, broken contour
+    continuity, lively splash punctuation, Nib chatter, splatter marks, watery bleed pockets without
+    requiring the card image's original subject.
 avoidRules:
   - heavy
   - dark
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-027.webp
 attributes:
-  negativePrompt: heavy, dark
+  negativePrompt: >-
+    heavy, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

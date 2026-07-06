@@ -12,27 +12,73 @@ tags:
   - 3d-and-cgi-rendering
   - materials
 visualDna:
-  aesthetic: Translucent material (wax, skin, jade)
-  subject_treatment: Soft light penetration
-  color_and_tone: Glowing from inside, warm subsurface hues
-  lighting_and_shadow: Backlit, rim-penetration
-  texture_and_material: Waxy, organic, light-permeable
-  camera_and_composition: Soft edges
-  atmosphere_and_mood: Soft, organic, life-like warmth
-  rendering_and_quality: Realistic organic material, portrait-grade softness when relevant
-  key_features: Inner glow
+  aesthetic: >-
+    Subsurface Scattering (SSS) acts as a transferable CGI-style router: start from Translucent
+    material (wax, skin, jade), Inner glow and shader-material system built from reflectance,
+    refraction, scattering, phase behavior, procedural structure, and physically coherent surface
+    response, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
+    image.
+  subject_treatment: >-
+    Transform any prompt subject through Soft light penetration; preserve the prompt subject while
+    wrapping or transforming forms through the material behavior named by the preset, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Glowing from inside, warm subsurface hues; let palette follow absorption,
+    dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or
+    fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Backlit, rim penetration; make highlights, caustics, shadow softness,
+    transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the
+    material, so value structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Waxy, organic, light permeable; surface detail should keep scale-consistent shaders,
+    bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Soft edges; compose to demonstrate material behavior across
+    silhouette, thickness, contact edges, reflection zones, and readable material transitions, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Soft, organic, life like warmth; derive mood from luxury, fragility, tactile
+    attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material
+    transformation, letting the renderer alter interpretation without demanding a specific story,
+    location, or character.
+  rendering_and_quality: >-
+    Finish with Realistic organic material, portrait grade softness when relevant; finish with
+    coherent shader response, clean denoise, readable forms, and no stock texture overlay pretending
+    to be material simulation, clean denoised surfaces where appropriate, and enough shader evidence
+    to make the CGI mode recognizable.
+  key_features: >-
+    Translucent material (wax, skin, jade); Inner glow; Glowing from inside, warm subsurface hues;
+    Waxy, organic, light permeable; Soft edges
   creative_brief: >-
-    Give the input subsurface scattering: light penetration, warm internal bounce, wax/jade/alabaster
-    softness, backlit rim glow and organic depth. Keep life-like warmth without requiring skin, portrait
-    framing, a child's ear or a biological subject.
+    Apply Subsurface Scattering (SSS) as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Translucent material (wax, skin, jade), Inner glow, Waxy,
+    organic, light permeable without requiring the card image's original subject.
 avoidRules:
   - hard
   - plastic
   - metal
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - wrong material
+  - pasted stock texture
+  - flat color fill
+  - shaderless surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-013.webp
 attributes:
-  negativePrompt: hard, plastic, metal
+  negativePrompt: >-
+    hard, plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
+    chatter, watermark, readable text, signature, wrong material, pasted stock texture, flat color
+    fill, shaderless surface
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

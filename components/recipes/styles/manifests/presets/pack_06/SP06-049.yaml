@@ -12,21 +12,54 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Clean vector-art style with Bezier precision and flat scalable geometry
-  subject_treatment: Bezier curves
-  color_and_tone: Solid flat colors
+  aesthetic: >-
+    Vector Art (Flat) acts as a transferable art-medium router: start from Clean vector art style
+    with Bezier precision and flat scalable geometry, Infinite resolution and digital art workflow
+    system built from layer control, editable edges, raster or vector logic, screen-era artifacts,
+    and production readability, then apply the medium behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Bezier curves; preserve the prompt subject while routing it
+    through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
+    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Solid flat colors; use color as workflow evidence: palette ramps, neon
+    gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital
+    paint harmonies, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
   lighting_and_shadow: >-
-    Lighting for Vector Art (Flat): purposeful key, bounce, rim, shadow depth, and focal readability matched
-    to 4. Digital Art.
-  texture_and_material: "Surface treatment follows Vector Art (Flat)'s material cues: Infinite resolution."
-  camera_and_composition: Simplified
-  atmosphere_and_mood: Modern, precise, frictionless
-  rendering_and_quality: Icon-grade clarity without requiring logos, marks, or branding
-  key_features: Infinite resolution
+    Handle light through Lighting for Vector Art (Flat): purposeful key, bounce, rim, shadow depth,
+    and focal readability matched to 4. Digital Art; shape light through layer modes, rim glow,
+    raster gradients, isometric value, screen emission, glitch clipping, or composited photographic
+    consistency, so value structure supports the medium and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Surface treatment follows Vector Art (Flat)'s material cues: Infinite resolution; surface
+    detail should come from the named workflow: brush texture, pixel cells, glyph density, vector
+    fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Simplified; compose through digital hierarchy, projection rules,
+    asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled
+    interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Modern, precise, frictionless; derive mood from speed, polish, concept utility,
+    retro-futurism, broken media, toy-scale clarity, or modern production control, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Icon grade clarity without requiring logos, marks, or branding; finish with clean
+    digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean
+    denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Clean vector art style with Bezier precision and flat scalable geometry; Infinite resolution;
+    Solid flat colors; Simplified
   creative_brief: >-
-    Apply flat vector-art construction to any input: precise Bezier contours, deliberate anchor-point curves,
-    solid color fills, clean geometric hierarchy, and resolution-independent edges. Keep scalable graphic
-    clarity without requiring icons, logos, infographics, app UI, or brand marks.
+    Apply Vector Art (Flat) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Clean vector art style with Bezier precision and flat scalable geometry, Infinite resolution
+    without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -45,12 +78,24 @@ avoidRules:
   - border
   - logo requirement
   - brand mark
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-049.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, logo requirement, brand mark
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, logo requirement, brand mark, wrong medium,
+    generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution,
+    random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

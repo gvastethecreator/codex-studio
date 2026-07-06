@@ -12,27 +12,87 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation
-  subject_treatment: Splashes, sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines
-  color_and_tone: Clear Blue, aquamarine, crystal-clear, deep-ocean, turquoise, glacier-blue, refractive-white
-  lighting_and_shadow: Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce
+  aesthetic: >-
+    Water Dress operates as a portable fashion-costume router: combine Liquid couture illusion,
+    hydro-sculpture wonder, elemental fluid transformation with material-forward fashion
+    transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior,
+    so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
+    literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Splashes, sheet-flow
+    drape, droplet-spray volume, surface-tension curves, rippling flow lines; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection
+    bounce plus material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte
+    falloff, or volumetric separation as the styling light contract, revealing cut, drape, surface
+    response, trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge
-    curvature
-  camera_and_composition: Flowing
-  atmosphere_and_mood: Pure, fluid, serene, refractive, elemental, dissolving
-  rendering_and_quality: Magical, fluid, hydro-sculpture wonder, elemental-transformation poetry
-  key_features: Droplets, splash arrest, surface tension, liquid-sheet transparency, flow lines
+    Render Liquid, surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil,
+    meniscus-edge curvature plus fabric grain, fur, chain, knit, satin, lace, leather, polymer,
+    smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers,
+    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
+    whole prompt.
+  camera_and_composition: >-
+    Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold
+    direction, and transformation edge control as reusable fashion framing grammar, allowing
+    portraits, objects, creatures, environments, action, and abstract prompts to inherit styling
+    without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Water Dress while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Liquid couture illusion, hydro-sculpture wonder, elemental fluid transformation; Splashes,
+    sheet-flow drape, droplet-spray volume, surface-tension curves, rippling flow lines; Liquid,
+    surface-tension skin, splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge
+    curvature; Refraction, caustic-light dapple, underwater-beam shafts, rim-light sparkle,
+    pool-reflection bounce; drape rhythm, material coverage, silhouette clarity, tactile close
+    detail, fold direction, and transformation edge control
   creative_brief: >-
-    Make the input liquid-couture: sheet-flow drape, surface tension, arrested droplets, meniscus edges,
-    caustic light and transparent aquamarine volume. Keep elemental transformation as fluid behavior only; do
-    not require a torso, waterfall, gown, water nymph or underwater scene.
+    Use Water Dress after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Liquid couture
+    illusion, hydro-sculpture wonder, elemental fluid transformation, Splashes, sheet-flow drape,
+    droplet-spray volume, surface-tension curves, rippling flow lines, Liquid, surface-tension skin,
+    splash-droplet dispersion, flow-sheet film, waterfall-veil, meniscus-edge curvature, Refraction,
+    caustic-light dapple, underwater-beam shafts, rim-light sparkle, pool-reflection bounce, drape
+    rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and
+    transformation edge control plus weave, pile, grain, shine, translucency, opacity, stretch,
+    wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response,
+    material treatment, silhouette grammar, and finish discipline without requiring one body type,
+    fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - dry
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-069.webp
 attributes:
-  negativePrompt: dry
+  negativePrompt: >-
+    dry, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required
+    body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable
+    text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

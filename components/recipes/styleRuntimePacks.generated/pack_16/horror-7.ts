@@ -7,140 +7,145 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP13-031',
     name: 'Institutional Liminal Dread Style',
     category: '7. Horror',
-    negativePrompt: 'photoreal, comedy, bright-pastel, watermark, text, logo',
+    negativePrompt:
+      'photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Institutional liminal horror centered on everyday order becoming psychologically unstable through subtle visual dissonance.',
+        'Institutional Liminal Dread Style acts as a transferable anime-prestige router: institutional dread and rule-bound visual order, alongside threshold unease and suspended transition; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Slightly misregistered contours, straight bureaucratic lines that warp near the vanishing point, and peripheral figure suggestions.',
+        'Preserve the prompt subject, action, and context while restyling forms through contours paced by institutional tension, readable pose energy, and silhouette discipline, alongside contours paced by liminal tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Fluorescent sick-green, chalk gray, nicotine beige, and restrained coagulated-red warning accents.',
+        'Map color through a institutional accent system held inside disciplined cel values, alongside a liminal accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Intermittent overhead flicker pattern with alternating dead zones that create uncertain visibility cadence.',
+        'Use a institutional light logic using cel rim, glow behavior, and blocked shadow, alongside a liminal light logic using cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Damp paint bloom, worn synthetic sheen, stained panel surfaces, and particulate haze.',
+        'Render cel paint and ink grain tuned to institutional material contrast, alongside cel paint and ink grain tuned to liminal material contrast; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Tunnel-like institutional perspective stretched beyond comfort, with micro-tilt and depth drag near thresholds.',
+        'Frame around corridor-like repetition converted into abstract spacing, alongside in-between spacing, empty pauses, and transition lines, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Social emptiness, anticipatory dread, and the feeling of being observed by architecture itself.',
+        'Carry mood through authority, emptiness, and liminal anxiety, alongside not-yet-arrived tension and quiet dread; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'Precise anime readability with unease-first composition, preserving mundane detail while inserting controlled anomalies.',
+        'Finish with clean anime finishing that keeps institutional identity readable without noisy denoise, alongside clean anime finishing that keeps liminal identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Repeating institutional modules, uncertain reflections, failed flicker intervals, and threshold interruptions.',
+        'institutional dread and rule-bound visual order, alongside threshold unease and suspended transition; contours paced by institutional tension, readable pose energy, and silhouette discipline, alongside contours paced by liminal tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to institutional material contrast, alongside cel paint and ink grain tuned to liminal material contrast; a institutional light logic using cel rim, glow behavior, and blocked shadow, alongside a liminal light logic using cel rim, glow behavior, and blocked shadow; corridor-like repetition converted into abstract spacing, alongside in-between spacing, empty pauses, and transition lines',
       creative_brief:
-        'Create a reusable institutional-liminal-dread grammar for any subject: bureaucratic geometry, flicker rhythm, barely perceived distortions, and social emptiness without imposing schools, corridors, lockers, doors, classrooms, or specific buildings.',
+        'Apply Institutional Liminal Dread Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies institutional dread and rule-bound visual order, alongside threshold unease and suspended transition, alongside contours paced by institutional tension, readable pose energy, and silhouette discipline, alongside contours paced by liminal tension, readable pose energy, and silhouette discipline; a institutional accent system held inside disciplined cel values, alongside a liminal accent system held inside disciplined cel values; a institutional light logic using cel rim, glow behavior, and blocked shadow, alongside a liminal light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to institutional material contrast, alongside cel paint and ink grain tuned to liminal material contrast and corridor-like repetition converted into abstract spacing, alongside in-between spacing, empty pauses, and transition lines, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-032',
     name: 'Crimson Celestial Omen Style',
     category: '7. Horror',
-    negativePrompt: 'photoreal, cute-style, vivid-rainbow, watermark, text, logo',
+    negativePrompt:
+      'photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Folkloric celestial horror where omen iconography dominates scale, silhouette, and emotional tonality.',
+        'Crimson Celestial Omen Style acts as a transferable anime-prestige router: a crimson anime direction shaped by era-aware line economy and genre tone, alongside a celestial anime direction shaped by era-aware line economy and genre tone; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Thin spectral contours, elongated drapery vectors, and stark silhouette cutouts against high-contrast sky masses.',
+        'Preserve the prompt subject, action, and context while restyling forms through contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by celestial tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Saturated blood-crimson sky field, void-black landforms, chalk-ash highlights, and desaturated bone undertones.',
+        'Map color through crimson accents over black, bone, and smoky violet, alongside star whites, ink blues, and cosmic violet accents and crimson omen accents, cold black, and desaturated pale values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Strong backlit celestial core with fog-driven edge bloom, keeping subjects semi-occluded and symbol-first.',
+        'Use red omen glow and ember rim cuts, alongside distant astral glints and soft heavenly bloom and small warning glow and hard supernatural rim cuts; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Vapor-heavy mist layers, brittle branch textures, weathered cloth translucency, and powder-dry ground surfaces.',
+        'Render cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to celestial material contrast; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Vast negative-space composition where scale disproportion makes figures appear cosmically overruled.',
+        'Frame around constellation spacing and upward poetic scale, alongside crimson converted into reusable framing rhythm and anime timing, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Omen fatalism, ancestral unease, and sacred fear under an indifferent sky.',
+        'Carry mood through prophetic dread and symbolic threat, alongside crimson emotional pressure and genre-specific tone; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'High-impact mythic readability with deliberate shape economy and controlled atmospheric granulation.',
+        'Finish with clean anime finishing that keeps crimson identity readable without noisy denoise, alongside clean anime finishing that keeps celestial identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Celestial disc dominance, suspended silhouettes, windless stillness, and barren horizon separators.',
+        'a crimson anime direction shaped by era-aware line economy and genre tone, alongside a celestial anime direction shaped by era-aware line economy and genre tone; contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by celestial tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to celestial material contrast; red omen glow and ember rim cuts, alongside distant astral glints and soft heavenly bloom and small warning glow and hard supernatural rim cuts; constellation spacing and upward poetic scale, alongside crimson converted into reusable framing rhythm and anime timing',
       creative_brief:
-        'Build a transferable crimson-celestial-omen horror style for any subject: giant celestial contrast, sparse silhouettes, fatalistic scale imbalance, and symbol-first dread without imposing moons, apparitions, branches, barren landforms, or hovering figures.',
+        'Apply Crimson Celestial Omen Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a crimson anime direction shaped by era-aware line economy and genre tone, alongside a celestial anime direction shaped by era-aware line economy and genre tone, alongside contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by celestial tension, readable pose energy, and silhouette discipline; crimson accents over black, bone, and smoky violet, alongside star whites, ink blues, and cosmic violet accents and crimson omen accents, cold black, and desaturated pale values; red omen glow and ember rim cuts, alongside distant astral glints and soft heavenly bloom and small warning glow and hard supernatural rim cuts; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to celestial material contrast and constellation spacing and upward poetic scale, alongside crimson converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-033',
     name: 'Grotesque Marionette Spotlight Style',
     category: '7. Horror',
-    negativePrompt: 'photoreal, slapstick, cheerful-colors, watermark, text, logo',
+    negativePrompt:
+      'photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Grotesque performance-horror language where theatrical elegance is corrupted by marionette anatomy and staged cruelty.',
+        'Grotesque Marionette Spotlight Style acts as a transferable anime-prestige router: grotesque body unease with prestige anime restraint, alongside a marionette anime direction shaped by era-aware line economy and genre tone; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Twitchy contour cadence, joint segmentation, and drapery-driven framing lines that trap the focal subject.',
+        'Preserve the prompt subject, action, and context while restyling forms through distorted contour, puppet tension, and controlled anatomical wrongness, alongside jointed unease and puppet-like contour tension; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.',
+        'Map color through a grotesque accent system held inside disciplined cel values, alongside a marionette accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Isolated spotlight with aggressive falloff, leaving peripheral planes in predatory darkness.',
+        'Use spotlight isolation and theatrical shadow falloff, alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Splintered timber, dust-saturated velvet, cracked lacquered surfaces, and dry residue buildup.',
+        'Render waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink grain tuned to marionette material contrast; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Proscenium-like compression with shallow-depth pressure that makes subjects feel pinned to the viewing plane.',
+        'Frame around string-like lines and spotlight isolation, alongside stage trap framing and confrontation focus, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.',
+        'Carry mood through abjection without splatter dependency, alongside uncanny performance and body horror restraint; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.',
+        'Finish with clean anime finishing that keeps grotesque identity readable without noisy denoise, alongside clean anime finishing that keeps marionette identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Marionette morphology cues, torn drapery vectors, black void patterning, and central fixation points.',
+        'grotesque body unease with prestige anime restraint, alongside a marionette anime direction shaped by era-aware line economy and genre tone; distorted contour, puppet tension, and controlled anatomical wrongness, alongside jointed unease and puppet-like contour tension; waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink grain tuned to marionette material contrast; spotlight isolation and theatrical shadow falloff, alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow; string-like lines and spotlight isolation, alongside stage trap framing and confrontation focus',
       creative_brief:
-        'Define a reusable grotesque-marionette-spotlight grammar for any subject: corrupted theatrical elegance, anatomical stylization, spotlight isolation, and pinned-plane pressure without imposing theaters, stages, puppets, seats, props, or audiences.',
+        'Apply Grotesque Marionette Spotlight Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies grotesque body unease with prestige anime restraint, alongside a marionette anime direction shaped by era-aware line economy and genre tone, alongside distorted contour, puppet tension, and controlled anatomical wrongness, alongside jointed unease and puppet-like contour tension; a grotesque accent system held inside disciplined cel values, alongside a marionette accent system held inside disciplined cel values; spotlight isolation and theatrical shadow falloff, alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow; waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink grain tuned to marionette material contrast and string-like lines and spotlight isolation, alongside stage trap framing and confrontation focus, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-034',
     name: 'Deep Void Whisper Style',
     category: '7. Horror',
-    negativePrompt: 'photoreal, daylight-bright, action-shonen, watermark, text, logo',
+    negativePrompt:
+      'photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Void-centered horror built on subtraction, silence, and the oppressive pull of a central absence.',
+        'Deep Void Whisper Style acts as a transferable anime-prestige router: submerged depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime horror and central absence as style law and almost-heard menace and quiet psychological pressure; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Sparse somber linework, low-detail peripheral elements, and circular anchoring forms that repeatedly return attention to the void.',
+        'Preserve the prompt subject, action, and context while restyling forms through forms simplified by depth pressure and heavy negative space, alongside silhouettes organized around absence and suppressed detail and softened edges, partial detail, and breath-close contour restraint; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Cold indigo wash, peat-black moisture zones, mineral gray fog, and faint desaturated cyan reflections.',
+        'Map color through void black, cold indigo, and minimal cyan reflection, alongside a deep accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Diffuse nocturnal top-light with weak ground bounce, preserving deep occlusion around cavity edges.',
+        'Use weak peripheral glow and occluded center-weighted shadow, alongside weak rim glow and soft darkness; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Water-dark stone porosity, saturated soil clumps, frayed fiber cues, and mist-laden air density.',
+        'Render wet dark grain, mineral haze, and compressed shadow texture, alongside damp black stone, mist, frayed fiber, and soft occlusion grain and mist, paper fiber, damp air, and low-contrast ink grain; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Open negative-space layout with gravitational pull toward the central cavity and suppressed horizon cues.',
+        'Frame around central absence, negative space, and gravitational framing, alongside near-silent spacing and attention pulled toward absence, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Listening-state tension, desolation, and the conviction that something waits below perception.',
+        'Carry mood through oppressive quiet and unseen presence, alongside quiet dread and almost-heard presence; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'Minimalist high-control rendering that avoids visual noise and concentrates dread through shape economy.',
+        'Finish with deep-value control with no noisy black crush, alongside minimal void-first finish with denoised dark value control; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Circular void anchors, moisture halos, decayed functional traces, and thin low-lying fog sheets in void-first framing.',
+        'submerged depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime horror and central absence as style law and almost-heard menace and quiet psychological pressure; forms simplified by depth pressure and heavy negative space, alongside silhouettes organized around absence and suppressed detail and softened edges, partial detail, and breath-close contour restraint; wet dark grain, mineral haze, and compressed shadow texture, alongside damp black stone, mist, frayed fiber, and soft occlusion grain and mist, paper fiber, damp air, and low-contrast ink grain; weak peripheral glow and occluded center-weighted shadow, alongside weak rim glow and soft darkness; central absence, negative space, and gravitational framing, alongside near-silent spacing and attention pulled toward absence',
       creative_brief:
-        'Build a transferable deep-void-whisper horror style for any subject: minimal geometry, moisture-rich materials, compositional gravity, and an unseen center without imposing wells, rural settings, ropes, cavities, objects, or specific landscapes.',
+        'Apply Deep Void Whisper Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies submerged depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime horror and central absence as style law and almost-heard menace and quiet psychological pressure, alongside forms simplified by depth pressure and heavy negative space, alongside silhouettes organized around absence and suppressed detail and softened edges, partial detail, and breath-close contour restraint; void black, cold indigo, and minimal cyan reflection, alongside a deep accent system held inside disciplined cel values; weak peripheral glow and occluded center-weighted shadow, alongside weak rim glow and soft darkness; wet dark grain, mineral haze, and compressed shadow texture, alongside damp black stone, mist, frayed fiber, and soft occlusion grain and mist, paper fiber, damp air, and low-contrast ink grain and central absence, negative space, and gravitational framing, alongside near-silent spacing and attention pulled toward absence, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-035',
     name: 'Demonic Ritual Mask Geometry Style',
     category: '7. Horror',
-    negativePrompt: 'photoreal, cute-style, bright-daylight, watermark, text, logo',
+    negativePrompt:
+      'photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Ceremonial demonic folklore horror combining shrine-like precision with feral ritual escalation and symbolic intimidation.',
+        'Demonic Ritual Mask Geometry Style acts as a transferable anime-prestige router: occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and ceremonial anime severity and symbolic geometry and rule-bound visual pressure; fuse it with prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Hard mask-like silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation cycles.',
+        'Preserve the prompt subject, action, and context while restyling forms through covered identity, flattened face planes, and ceremonial profile pressure, alongside contours paced by demonic tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Oxblood reds, ash-black fields, smoke-brown mids, and tarnished gold ritual accents.',
+        'Map color through crimson black, sickly violet, and hot ritual orange, alongside a ritual accent system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and gesture focality.',
+        'Use a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Lacquer crackle, charred timber grain, wax drips, ash particulates, and scorched fabric edges.',
+        'Render wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow edges and inked lines, paper texture, lacquer edges, and graphic cuts; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Circular rite composition with centripetal pull, as if all geometry is bending toward the invocation core.',
+        'Frame around rite intervals, axial pauses, and symbolic repetition, alongside frontal mask geometry and trapped gaze spacing and hard axes, repeated shapes, and measured ritual spacing, then extend it with void-first framing, institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Taboo ceremony, escalating dread, and primal authority made visual through symbols and heat.',
+        'Carry mood through taboo horror and ecstatic danger, alongside taboo formality and controlled spiritual pressure; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence, and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.',
+        'Finish with clean anime finishing that keeps demonic identity readable without noisy denoise, alongside clean anime finishing that keeps ritual identity readable without noisy denoise; enforce minimal high-control horror anime finish with shape economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Dominant demonic visage language, ember ring systems, talisman clusters, and invocation choreography through heat shimmer.',
+        'occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and ceremonial anime severity and symbolic geometry and rule-bound visual pressure; covered identity, flattened face planes, and ceremonial profile pressure, alongside contours paced by demonic tension, readable pose energy, and silhouette discipline; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow edges and inked lines, paper texture, lacquer edges, and graphic cuts; a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow behavior, and blocked shadow; rite intervals, axial pauses, and symbolic repetition, alongside frontal mask geometry and trapped gaze spacing and hard axes, repeated shapes, and measured ritual spacing',
       creative_brief:
-        'Create a reusable demonic-ritual-mask-geometry grammar for any subject: radial ritual geometry, fire-ring contrast, symbolic mask dominance, and taboo ceremonial pressure without imposing oni, masks, shrines, candles, talismans, hand signs, or night rituals.',
+        'Apply Demonic Ritual Mask Geometry Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and ceremonial anime severity and symbolic geometry and rule-bound visual pressure, alongside covered identity, flattened face planes, and ceremonial profile pressure, alongside contours paced by demonic tension, readable pose energy, and silhouette discipline; crimson black, sickly violet, and hot ritual orange, alongside a ritual accent system held inside disciplined cel values; a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim, glow behavior, and blocked shadow; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow edges and inked lines, paper texture, lacquer edges, and graphic cuts and rite intervals, axial pauses, and symbolic repetition, alongside frontal mask geometry and trapped gaze spacing and hard axes, repeated shapes, and measured ritual spacing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

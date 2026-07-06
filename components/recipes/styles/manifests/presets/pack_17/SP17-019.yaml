@@ -15,42 +15,64 @@ tags:
   - future-citadel
 visualDna:
   aesthetic: >-
-    Futuristic medieval citadel style merging castle massing, rune light, brutalist metal, and sacred
-    technology.
+    Futuristic medieval citadel style merging castle massing, rune light, brutalist metal, and
+    sacred technology.
   subject_treatment: >-
-    Transform any subject with future-feudal order, ceramic armor smoothness, transparent rune shielding,
-    folded banner-like geometry, and oath-bound poise without requiring a rider or mount.
+    Transform any subject with future-feudal order, ceramic armor smoothness, transparent rune
+    shielding, folded banner-like geometry, and oath-bound poise without requiring a rider or mount.
   color_and_tone: >-
-    Warm stone gray, ceramic white, cold cyan runes, tarnished gold trim, muted navy, and restrained black
-    contour lines.
+    Warm stone gray, ceramic white, cold cyan runes, tarnished gold trim, muted navy, and restrained
+    black contour lines.
   lighting_and_shadow: >-
-    Cool rune glow from shield and saddle plus soft daylight on armor plates; large simple shadow shapes keep
-    tech readable.
+    Cool rune glow from shield and saddle plus soft daylight on armor plates; large simple shadow
+    shapes keep tech readable.
   texture_and_material: >-
-    Ceramic armor, brushed metal joints, carved stone saddle, illuminated glass runes, worn oath cloth, and
-    matte banner fabric.
+    Ceramic armor, brushed metal joints, carved stone saddle, illuminated glass runes, worn oath
+    cloth, and matte banner fabric.
   camera_and_composition: >-
-    Three-quarter heroic scale with clean negative planes, distant vertical accents, hovering lightness, and
-    balanced future-feudal silhouette.
-  atmosphere_and_mood: Oath-bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk.
+    Three-quarter heroic scale with clean negative planes, distant vertical accents, hovering
+    lightness, and balanced future-feudal silhouette.
+  atmosphere_and_mood: >-
+    Carry the prompt through Oath bound, severe, ceremonial, and futuristic without becoming sleek
+    cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and
+    luminous feudal strangeness; the tone should follow prompt X while preserving the preset's
+    medieval-zine identity.
   rendering_and_quality: >-
-    Futuristic medieval digital illustration with crisp architecture, readable tech motifs, defined lines, and
-    medieval silhouette logic.
-  creative_brief: Makes any subject feel like part of a future-feudal order built on castles, vows, and rune technology.
+    Futuristic medieval digital illustration with crisp architecture, readable tech motifs, defined
+    lines, and medieval silhouette logic.
+  creative_brief: >-
+    Makes any subject feel like part of a future feudal order built on castles, vows, and rune
+    technology. Apply after prompt X: prompt X supplies subject, action, setting, tone, and
+    intensity, while this preset supplies a style grammar of Futuristic Medieval Citadel; rune
+    light; brutalist metal; sacred technology; Transform any subject with future feudal order;
+    ceramic armor smoothness, mood, material behavior, framing logic, and denoised medieval-zine
+    finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
+    composition.
+  key_features: >-
+    Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any
+    subject with future feudal order; ceramic armor smoothness
 avoidRules:
   - neon city cyberpunk
   - spaceship cockpit
-  - glossy white sci-fi
+  - glossy white sci fi
   - modern streetwear
   - explicit gore
   - watermark
   - text
+  - generic cyberpunk city
+  - chrome overload
+  - readable rune text
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-019.webp
 attributes:
   negativePrompt: >-
-    neon city cyberpunk, spaceship cockpit, glossy white sci-fi, modern streetwear, explicit gore, watermark,
-    text
+    neon city cyberpunk, spaceship cockpit, glossy white sci fi, modern streetwear, explicit gore,
+    watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal
+    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
+    noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

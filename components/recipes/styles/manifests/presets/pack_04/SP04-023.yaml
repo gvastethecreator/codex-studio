@@ -12,25 +12,81 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Scratchboard engraving language with subtractive light reveal
-  subject_treatment: White incised strokes on black ground, varying incision density
-  color_and_tone: Strict black-white inverse contrast system
-  lighting_and_shadow: Highlight structure carved through negative subtraction
-  texture_and_material: Knife/scratch marks, hatch scratches, burr-like edge chatter
-  camera_and_composition: Stable proportions, depth suggested via hatch frequency
-  atmosphere_and_mood: Nocturnal, theatrical, mysterious
-  rendering_and_quality: Intricate high-contrast detail with printlike precision
-  key_features: Dark-field base, luminous scratch marks, reverse-value composition
+  aesthetic: >-
+    Scratchboard acts as a transferable illustration router: start from Scratchboard engraving
+    language with subtractive light reveal, Dark-field base, luminous scratch marks, reverse-value
+    composition and ink and printmaking system built from mark economy, matrix process, ink
+    transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply
+    the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through White incised strokes on black ground, varying incision
+    density; preserve the requested subject while rebuilding it through carved lines, etched
+    density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or
+    tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function,
+    or setting legible.
+  color_and_tone: >-
+    Build color with Strict black-white inverse contrast system; use color as ink behavior:
+    monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray
+    contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control,
+    and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Highlight structure carved through negative subtraction; translate light
+    into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or
+    flat spray contrast rather than photographic shading, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Knife/scratch marks, hatch scratches, burr-like edge chatter; surface detail should show
+    paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen
+    pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Stable proportions, depth suggested via hatch frequency; compose
+    through print registration, border discipline, mark-direction rhythm, negative-space carving,
+    tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nocturnal, theatrical, mysterious, mood carried by Scratchboard craft, material
+    pressure, and visual restraint; derive mood from craft pressure, underground immediacy, archival
+    print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink
+    control, letting the style alter interpretation without demanding a specific story, location, or
+    actor.
+  rendering_and_quality: >-
+    Finish with Intricate high-contrast detail with printlike precision; finish as a credible ink or
+    print artifact with exact mark logic, restrained artifacting, and no fake text, random distress
+    overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Scratchboard engraving language with subtractive light reveal; Dark-field base, luminous scratch
+    marks, reverse-value composition; Strict black-white inverse contrast system; Knife/scratch
+    marks, hatch scratches, burr-like edge chatter; Stable proportions, depth suggested via hatch
+    frequency
   creative_brief: >-
-    Apply scratchboard inversion to any input: remove darkness through incision rhythm, hatch density,
-    burr-like chatter, and directional scratch patterns to define focal hierarchy without requiring animals,
-    night scenes, portraits, theatrical props, or fixed black-ground compositions.
+    Apply Scratchboard as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Scratchboard engraving language with subtractive light reveal, Dark-field base, luminous scratch
+    marks, reverse-value composition, Knife/scratch marks, hatch scratches, burr-like edge chatter
+    without requiring the card image's original subject.
 avoidRules:
   - white background
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-023.webp
 attributes:
-  negativePrompt: white background
+  negativePrompt: >-
+    white background, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

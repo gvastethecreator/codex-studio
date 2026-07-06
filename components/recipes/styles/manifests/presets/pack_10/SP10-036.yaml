@@ -12,26 +12,64 @@ tags:
   - abstract-and-experimental
   - surrealism-and-dream
 visualDna:
-  aesthetic: Two images blended
-  subject_treatment: Silhouette
-  color_and_tone: Mixed
-  lighting_and_shadow: Screen blend
-  texture_and_material: Layered
-  camera_and_composition: Ghosting
-  atmosphere_and_mood: Psychological
-  rendering_and_quality: True Detective intro
-  key_features: Silhouette container
+  aesthetic: >-
+    Double Exposure becomes a transferable surreal symbolic transformation system: start from Two
+    images blended, Silhouette container, and Ghosting, then route prompt content through impossible
+    logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing
+    one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Silhouette to bend, displace, fuse, haunt,
+    miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Mixed; use color as emotional unreliability, nostalgic drift, uncanny
+    contrast, or symbolic temperature, with enough value control that the subject remains readable
+    after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Screen blend drive the light response: shape light through impossible shadows, memory haze,
+    stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Layered as the tactile or mark-making basis; surfaces should support the illusion with
+    believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Ghosting as reusable spatial grammar: favor symbolic focal points, scale
+    mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting
+    cleanly to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Psychological as the emotional register; derive mood from wonder, dread, absurdity,
+    nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening
+    strong, strange, darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as True Detective intro: finish with deliberate weirdness, controlled realism, and no
+    generic fantasy scene lock, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Two images blended; Silhouette; Mixed; Screen blend; Layered; Ghosting; Psychological; True
+    Detective intro; Silhouette container
   creative_brief: >-
-    Apply double-exposure blending over the input with two image systems occupying one frame, silhouette-like
-    containment, screen-blend layering, ghosted overlap, and psychological continuity between inside and
-    outside. If faces, figures, forests, cities, or landscapes exist, fuse them; otherwise use subject
-    contours as containers for a second visual field.
+    Route any subject through Double Exposure as a transferable surreal or dream-logic visual
+    system: preserve prompt intent while converting scale, causality, symbolism, edge behavior,
+    mood, and spatial contradiction through this preset. Apply double-exposure blending over the
+    input with two image systems occupying one frame, silhouette-like containment, screen-blend
+    layering, ghosted overlap, and psychological continuity between inside and outside. If faces,
+    figures, forests, cities, or landscapes exist, fuse them; otherwise use subject contours as
+    containers for a second visual field.
 avoidRules:
   - single image
+  - literal fantasy scene lock
+  - generic dream blur
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-036.webp
 attributes:
-  negativePrompt: single image
+  negativePrompt: >-
+    single image, literal fantasy scene lock, generic dream blur, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

@@ -12,28 +12,72 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: Photogrammetry scan realism
-  subject_treatment: Realistic geometry
-  color_and_tone: Photo texture
-  lighting_and_shadow: Baked lighting (delit)
-  texture_and_material: Real world noise, photogrammetry texture
-  camera_and_composition: Mesh errors (optional)
-  atmosphere_and_mood: Real, grounded, authentic capture
-  rendering_and_quality: Quixel Megascans scan-library realism
-  key_features: Photo realism, surface-level scan detail
+  aesthetic: >-
+    3D Scan (Photogrammetry) acts as a transferable CGI-style router: start from Photogrammetry scan
+    realism, Photo realism, surface level scan detail and environment and worldbuilding CGI system
+    built from spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity,
+    and explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Realistic geometry; preserve the prompt subject while
+    embedding it in the preset's world-scale CGI logic; environmental systems, scan detail, map
+    elevation, VFX volume, or scientific structure should appear only when named by the preset,
+    keeping the requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Photo texture; use color through atmospheric grading, neon bloom, scientific
+    false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with deliberate
+    value grouping, exposure control, and medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Baked lighting (delit); shape light with atmospheric depth, emissive
+    ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so
+    value structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Real world noise, photogrammetry texture; surface detail should show modular kits,
+    photogrammetry scan grain, terrain relief, vegetation glow, pyro volume, map elevation, or
+    simulation particles, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Mesh errors (optional); compose through spatial readability,
+    player-scale cues, isometric elevation, explorable layers, environment silhouettes, or
+    simulation flow, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Real, grounded, authentic capture; derive mood from immersion, navigability, alien
+    wonder, technical explanation, decay, abstract spatial rhythm, or procedural spectacle, letting
+    the renderer alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Quixel Megascans scan library realism; finish with coherent world scale, readable
+    depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean
+    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Photogrammetry scan realism; Photo realism, surface level scan detail; Photo texture; Real world
+    noise, photogrammetry texture; Mesh errors (optional)
   creative_brief: >-
-    Give the input photogrammetry truth: scan noise, photo-textured surfaces, baked de-lit color, imperfect
-    mesh detail and Quixel/Megascans credibility. Do not force rocks, tree stumps, ruined walls or outdoor
-    capture subjects. Apply 3D Scan as a portable 3D/render style system over any input: preserve its renderer
-    logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a
-    required character, vehicle, prop, environment, UI screen, product shot, or scene template.
+    Apply 3D Scan (Photogrammetry) as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Photogrammetry scan realism, Photo realism, surface level
+    scan detail, Real world noise, photogrammetry texture without requiring the card image's
+    original subject.
 avoidRules:
   - perfect
   - modeled
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - empty wallpaper
+  - generic vista-only render
+  - scale-less space
+  - unoptimized clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-068.webp
 attributes:
-  negativePrompt: perfect, modeled
+  negativePrompt: >-
+    perfect, modeled, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less
+    space, unoptimized clutter
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -13,33 +13,85 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: >-
-    Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic interstellar
-    scale
+    Silver Age Comic acts as a transferable illustration router: start from Silver-age cosmic comic
+    dynamism with atom-era optimism, crackling energy fields, and mythic interstellar scale,
+    Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age
+    emblematic panel cadence and comic-illustration system built from ink hierarchy, panel-era
+    color, contour exaggeration, print artifacts, and sequential-art readability, then apply the
+    visual behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    High-velocity foreshortened contouring, dense energy-dot fields, radiation burst linework, and
-    impact-first panel rhythm
-  color_and_tone: Bright primary, comic pop spectrum, magenta/cyan punch
-  lighting_and_shadow: Dramatic, cosmic backlight, heroic rim glow
-  texture_and_material: Newsprint
-  camera_and_composition: Exaggerated perspective
-  atmosphere_and_mood: Epic, sci-fi, super-powered wonder, interstellar drama
+    Transform any prompt subject through High-velocity foreshortened contouring, dense energy-dot
+    fields, radiation burst linework, and impact-first panel rhythm; preserve the requested subject
+    while translating form into panel-ready silhouettes, expressive contour weight, stylized
+    anatomy, speed emphasis, or graphic restraint only when the preset calls for it, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Bright primary, comic pop spectrum, magenta/cyan punch; treat color as comic
+    production language: four-color plates, limited spot color, manga monochrome, digital flats,
+    noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Dramatic, cosmic backlight, emblematic rim glow; make light read through
+    ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or painted page
+    modeling rather than generic studio illumination, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Newsprint, ink hierarchy, panel readability, stylized contour, print-era surface, and
+    comic color discipline; surface detail should reveal paper tooth, newsprint dots, screen tones,
+    digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the
+    drawing, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Exaggerated perspective, scale rhythm, edge hierarchy, spacing, and
+    composition rules specific to Silver Age Comic; compose with panel logic, silhouette clarity,
+    speech-shape space, page rhythm, close-up drama, or scroll pacing without requiring a fixed
+    comic-page scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Epic, sci-fi, super-powered wonder, interstellar drama; derive mood from era,
+    genre pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness,
+    letting the style alter interpretation without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and iconic action
-    silhouette clarity
+    Finish with Bold classic-comic rendering focused on energetic readability, cosmic spectacle, and
+    iconic action silhouette clarity; finish with clear ink decisions, readable stylization,
+    controlled artifacting, and no generic superhero costume or random comic text replacing the
+    prompt, clean denoised surfaces where appropriate, and enough process evidence to make the style
+    recognizable.
   key_features: >-
-    Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening thrust, atom-age heroic panel
-    cadence
+    Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic
+    interstellar scale; Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening
+    thrust, atom-age emblematic panel cadence; Bright primary, comic pop spectrum, magenta/cyan
+    punch; Newsprint, ink hierarchy, panel readability, stylized contour, print-era surface, and
+    comic color discipline; Exaggerated perspective, scale rhythm, edge hierarchy, spacing, and
+    composition rules specific to Silver Age Comic
   creative_brief: >-
-    Apply silver-age cosmic action grammar to any input: crackling energy-dot fields, atom-age burst halos,
-    optimistic interstellar scale, and aggressive foreshortened panel rhythm should define identity without
-    requiring heroes, capes, planets, battles, rockets, or a fixed cosmic scene.
+    Apply Silver Age Comic as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Silver-age cosmic comic dynamism with atom-era optimism, crackling energy fields, and mythic
+    interstellar scale, Energy-dot crackle grammar, cosmic burst halos, dynamic foreshortening
+    thrust, atom-age emblematic panel cadence, Newsprint, ink hierarchy, panel readability, stylized
+    contour, print-era surface, and comic color discipline without requiring the card image's
+    original subject.
 avoidRules:
   - dark
   - gritty
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic superhero costume
+  - random speech text
+  - fake lettering
+  - photo-real costume render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-002.webp
 attributes:
-  negativePrompt: dark, gritty
+  negativePrompt: >-
+    dark, gritty, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    superhero costume, random speech text, fake lettering, photo-real costume render
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -12,17 +12,61 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Cinematic movie still close-up, dramatic film photography
-  subject_treatment: Extremely shallow depth of field, sharp focus on the primary detail, soft out-of-focus background
-  color_and_tone: Cinematic color grading, teal and orange split toning, rich cinematic contrast
-  lighting_and_shadow: Dramatic Rembrandt lighting, strong directional light, deep shadows
-  texture_and_material: Cinematic film grain, detailed surface texture, anamorphic lens flares
-  camera_and_composition: Shot on anamorphic lens, beautiful bokeh background, tight emotional framing
-  atmosphere_and_mood: Emotional, dramatic, intense, narrative, moody
-  rendering_and_quality: 4K cinematic render, filmic look, high production value
+  aesthetic: >-
+    Cinematic Close-up acts as a transferable photographic style router: begin from Cinematic movie
+    still close-up, dramatic film photography, studio subject hierarchy, controlled portrait optics,
+    believable retouching, and intentional backdrop behavior, and portrait and studio photography
+    system built from lens discipline, subject hierarchy, controlled retouching, and believable
+    surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed
+    card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Extremely shallow depth of field, sharp focus on the primary
+    detail, soft out-of-focus depth field; preserve prompt identity while using focal priority,
+    flattering or deliberately institutional distance, surface realism, and edge control without
+    requiring a human face, keeping the original subject, pose, species, object, or environment
+    legible.
+  color_and_tone: >-
+    Grade with Cinematic color grading, teal and orange split toning, rich cinematic contrast; grade
+    neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast
+    as photographic capture decisions, with value separation and white balance choices that feel
+    captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Dramatic Rembrandt lighting, strong directional light, deep shadows; make key, fill, rim,
+    catchlight, background falloff, and shadow shape visibly drive the style, preserving believable
+    exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Cinematic film grain, detailed surface texture, anamorphic lens flares; retain pores,
+    fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable
+    photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt
+    content.
+  camera_and_composition: >-
+    Compose through Shot on anamorphic lens, beautiful bokeh depth field, tight emotional framing;
+    use portrait lens compression, central authority, intimate framing distance, frontal ID
+    geometry, or editorial negative space without forcing one sitter, with lens distance, depth,
+    timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Emotional, dramatic, intense, narrative, moody; derive mood from proximity, pose
+    pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
+    preset changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with 4K cinematic render, filmic look, high production value; finish as real photography
+    with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI
+    substitution, high-resolution photographic detail, and disciplined denoise without losing
+    natural grain where the preset needs it.
   creative_brief: >-
-    Apply cinematic close-up language to any subject: shallow focus, anamorphic flares, teal-orange tension,
-    tight emotional framing, and film-still drama without requiring eyes or a human close-up.
+    Apply Cinematic Close-up as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Cinematic movie still close-up, dramatic film photography, Cinematic color
+    grading, teal and orange split toning, rich cinematic contrast, Dramatic Rembrandt lighting,
+    strong directional light, deep shadows, Cinematic film grain, detailed surface texture,
+    anamorphic lens flares, and Shot on anamorphic lens, beautiful bokeh depth field, tight
+    emotional framing through optics, exposure, palette, surface response, timing, and finish
+    without requiring the card image's original subject.
+  key_features: >-
+    Cinematic movie still close-up, dramatic film photography; studio subject hierarchy, controlled
+    portrait optics, believable retouching, and intentional backdrop behavior; Cinematic color
+    grading, teal and orange split toning, rich cinematic contrast; Dramatic Rembrandt lighting,
+    strong directional light, deep shadows; Shot on anamorphic lens, beautiful bokeh depth field,
+    tight emotional framing
 avoidRules:
   - illustration
   - painting
@@ -39,12 +83,21 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-005.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
+    beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

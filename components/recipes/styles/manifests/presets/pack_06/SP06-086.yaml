@@ -13,29 +13,69 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Classic RPG Maker top-down tile grammar, chibi-scale abstraction when subjects appear, 16x16 modular
-    tiles, nostalgic indie-RPG charm, Yume Nikki dream simplicity and Ib horror-cute dissonance as tone
-    anchors
+    RPG Maker Chibi Tileworld acts as a transferable art-medium router: start from Classic RPG Maker
+    top down tile grammar, chibi scale abstraction when subjects appear, 16x16 modular tiles,
+    nostalgic indie RPG charm, Yume Nikki dream simplicity and Ib horror cute dissonance as tone
+    anchors, Grid based tile composition, chibi scale simplification, top down orthographic
+    perspective, tile repetition patterns, optional dialogue box overlay without readable text and
+    hardware-constrained game-visual system built from display limits, palette budgets, sprite
+    logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Small-pixel outlines, tile-grid construction, chunky square modules, simple animation-frame logic,
-    grid-locked everything
+    Transform any prompt subject through Small pixel outlines, tile grid construction, chunky square
+    modules, simple animation frame logic, grid locked everything; preserve the prompt subject while
+    translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit
+    display behavior, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
   color_and_tone: >-
-    Cute saturated tiles, clear terrain-like color coding, compact RTP-inspired palette, palette swaps for
-    subject separation
-  lighting_and_shadow: Flat ambient tile lighting, occasional window-yellow glow tiles, no dynamic lighting, pre-baked atmosphere
+    Build color with Cute saturated tiles, clear terrain like color coding, compact RTP inspired
+    palette, palette swaps for subject separation; use color through hardware rules: indexed
+    palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited
+    scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and
+    medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat ambient tile lighting, occasional window yellow glow tiles, no dynamic
+    lighting, pre baked atmosphere; make light emerge from display technology, pixel value steps,
+    CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value
+    structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    Tile-repetition grids, sprite-pixel squareness, grid-aligned collision edges, chunky-block construction
-    feel
-  camera_and_composition: Top-down orthographic grid, tile-based snapping, screen-transition fade, flat-isometric hybrid worldview
-  atmosphere_and_mood: Cozy, nostalgic, do-it-yourself creativity, miniature, indie-game soul
-  rendering_and_quality: RPG Maker screen grammar, indie-RPG nostalgia, chibi-pixel charm, do-it-yourself game-aesthetic warmth
+    Render Tile repetition grids, sprite pixel squareness, grid aligned collision edges, chunky
+    block construction feel; surface detail should show pixels, dithering, scanlines, quantization,
+    vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Top down orthographic grid, tile based snapping, screen transition
+    fade, flat isometric hybrid worldview; compose through tile maps, sprite scale, fixed-resolution
+    framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion
+    constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Cozy, nostalgic, do it yourself creativity, miniature, indie game soul; derive
+    mood from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console
+    nostalgia, or broken early-3D instability, letting the medium alter interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with RPG Maker screen grammar, indie RPG nostalgia, chibi pixel charm, do it yourself
+    game aesthetic warmth; finish with faithful era constraints, crisp readability at small scale,
+    and no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean
+    denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.
   key_features: >-
-    Grid-based tile composition, chibi-scale simplification, top-down orthographic perspective,
-    tile-repetition patterns, optional dialogue-box overlay without readable text
+    Classic RPG Maker top down tile grammar, chibi scale abstraction when subjects appear, 16x16
+    modular tiles, nostalgic indie RPG charm, Yume Nikki dream simplicity and Ib horror cute
+    dissonance as tone anchors; Grid based tile composition, chibi scale simplification, top down
+    orthographic perspective, tile repetition patterns, optional dialogue box overlay without
+    readable text; Cute saturated tiles, clear terrain like color coding, compact RTP inspired
+    palette, palette swaps for subject separation; Tile repetition grids, sprite pixel squareness,
+    grid aligned collision edges, chunky block construction feel; Top down orthographic grid, tile
+    based snapping, screen transition fade, flat isometric hybrid worldview
   creative_brief: >-
-    Any subject is rebuilt from small square modules as if authored inside a humble RPG tool. The camera stays
-    orthographic, scale stays miniature, repetition becomes texture and the whole image feels handmade inside
-    a fixed tile grid.
+    Apply RPG Maker Chibi Tileworld as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Classic RPG Maker top down tile grammar, chibi scale abstraction when subjects appear,
+    16x16 modular tiles, nostalgic indie RPG charm, Yume Nikki dream simplicity and Ib horror cute
+    dissonance as tone anchors, Grid based tile composition, chibi scale simplification, top down
+    orthographic perspective, tile repetition patterns, optional dialogue box overlay without
+    readable text, Tile repetition grids, sprite pixel squareness, grid aligned collision edges,
+    chunky block construction feel without requiring the card image's original subject.
 avoidRules:
   - realistic
   - 3d
@@ -46,10 +86,25 @@ avoidRules:
   - detailed
   - serious
   - gritty
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-086.webp
 attributes:
-  negativePrompt: realistic, 3d, photorealistic, smooth, modern, high resolution, detailed, serious, gritty
+  negativePrompt: >-
+    realistic, 3d, photorealistic, smooth, modern, high resolution, detailed, serious, gritty, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

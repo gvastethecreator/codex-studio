@@ -12,26 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Painted paper-collage storybook language (Eric Carle influence)
-  subject_treatment: Hand-cut silhouette shapes with irregular scissor contours
-  color_and_tone: Tissue-paper primaries and secondaries with matte gouache-like variation
-  lighting_and_shadow: Shallow cast shadows from stacked paper layers
-  texture_and_material: Visible paper fiber, torn edges, paint mottling
-  camera_and_composition: Simplified forms and modular layered depth planes
-  atmosphere_and_mood: Bright, playful, exploratory, classroom-friendly
-  rendering_and_quality: Handmade tactile collage finish with child-facing readability
-  key_features: Overlap stratification, cut-edge rhythm, texture-rich color blocks
+  aesthetic: >-
+    Paper Cutout (Collage) acts as a transferable illustration router: start from Painted
+    paper-collage storybook language (Eric Carle influence), Overlap stratification, cut-edge
+    rhythm, texture-rich color blocks and storybook and friendly-illustration system built from
+    approachable shapes, handmade media, simplified edges, tactile materials, and high-readability
+    charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Hand-cut silhouette shapes with irregular scissor contours;
+    preserve the requested subject while softening, simplifying, miniaturizing, paper-building,
+    mark-making, or diagramming it according to the named medium, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Tissue-paper primaries and secondaries with matte gouache-like variation; use
+    color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly
+    contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Shallow cast shadows from stacked paper layers; shape light through soft
+    diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native
+    tonal marks instead of cinematic realism, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Visible paper fiber, torn edges, paint mottling; surface detail should show paper tooth,
+    cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or
+    watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Simplified forms and modular layered depth planes; compose with
+    clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout,
+    or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Bright, playful, exploratory, classroom-friendly, mood carried by Paper Cutout
+    (Collage) craft, material pressure, and visual restraint; derive mood from wonder, gentle humor,
+    craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise,
+    letting the style alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Handmade tactile collage finish with child-facing readability; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Painted paper-collage storybook language (Eric Carle influence); Overlap stratification,
+    cut-edge rhythm, texture-rich color blocks; Tissue-paper primaries and secondaries with matte
+    gouache-like variation; Visible paper fiber, torn edges, paint mottling; Simplified forms and
+    modular layered depth planes
   creative_brief: >-
-    Apply painted cut-paper collage to any input: irregular scissor edges, tissue-paper color blocks, shallow
-    cast shadows, fiber texture, and clear shape hierarchy should replace drawn contour modeling without
-    requiring classroom subjects, animals, pages, props, or fixed story scenes.
+    Apply Paper Cutout (Collage) as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Painted paper-collage storybook language (Eric Carle influence), Overlap stratification,
+    cut-edge rhythm, texture-rich color blocks, Visible paper fiber, torn edges, paint mottling
+    without requiring the card image's original subject.
 avoidRules:
   - drawn
   - painted
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-018.webp
 attributes:
-  negativePrompt: drawn, painted
+  negativePrompt: >-
+    drawn, painted, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

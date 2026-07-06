@@ -12,31 +12,76 @@ tags:
   - 3d-and-cgi-rendering
   - materials
 visualDna:
-  aesthetic: Woven composite material
-  subject_treatment: Weave pattern
-  color_and_tone: Black/Grey anisotropic, carbon weave contrast
-  lighting_and_shadow: Clear coat reflection, directional anisotropy
-  texture_and_material: Geometric weave, layered composite
+  aesthetic: >-
+    Carbon Fiber acts as a transferable CGI-style router: start from Woven composite material, Weave
+    pattern, carbon fiber direction and shader-material system built from reflectance, refraction,
+    scattering, phase behavior, procedural structure, and physically coherent surface response, then
+    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Weave pattern; preserve the prompt subject while wrapping
+    or transforming forms through the material behavior named by the preset, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Black/Grey anisotropic, carbon weave contrast; let palette follow absorption,
+    dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or
+    fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Clear coat reflection, directional anisotropy; make highlights, caustics,
+    shadow softness, transmission, internal glow, rim fuzz, photon paths, or specular lobe shape
+    explain the material, so value structure supports the renderer and does not overwrite the
+    requested content.
+  texture_and_material: >-
+    Render Geometric weave, layered composite; surface detail should keep scale-consistent shaders,
+    bumps, strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion,
+    keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Carbon Fiber: close three-quarter or macro material framing, strong highlight planes,
-    readable surface curvature, and controlled depth.
-  atmosphere_and_mood: Fast, strong, engineering precision
-  rendering_and_quality: High tech, automotive, motorsport-grade
-  key_features: Weave pattern, carbon-fiber direction
+    Structure the image through Lookdev camera for Carbon Fiber: close three quarter or macro
+    material framing, strong highlight planes, readable surface curvature, and controlled depth;
+    compose to demonstrate material behavior across silhouette, thickness, contact edges, reflection
+    zones, and readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy
+    doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Fast, strong, engineering precision; derive mood from luxury, fragility, tactile
+    attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material
+    transformation, letting the renderer alter interpretation without demanding a specific story,
+    location, or character.
+  rendering_and_quality: >-
+    Finish with High tech, automotive, motorsport grade; finish with coherent shader response, clean
+    denoise, readable forms, and no stock texture overlay pretending to be material simulation,
+    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Woven composite material; Weave pattern, carbon fiber direction; Black/Grey anisotropic, carbon
+    weave contrast; Geometric weave, layered composite; Lookdev camera for Carbon Fiber: close three
+    quarter or macro material framing, strong highlight planes, readable surface curvature, and
+    controlled depth
   creative_brief: >-
-    Wrap the input in carbon-fiber engineering language: visible weave direction, clear-coat depth,
-    anisotropic glints and weightless-strength precision. Keep motorsport tension as material attitude only;
-    do not force pit lanes, vehicles or racing context. Apply Carbon Fiber as a portable 3D/render style
-    system over any input: preserve its renderer logic, material behavior, geometry language, lighting
-    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen,
-    product shot, or scene template.
+    Apply Carbon Fiber as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Woven composite material, Weave pattern, carbon fiber direction, Geometric
+    weave, layered composite without requiring the card image's original subject.
 avoidRules:
   - smooth
   - paint
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - wrong material
+  - pasted stock texture
+  - flat color fill
+  - shaderless surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-018.webp
 attributes:
-  negativePrompt: smooth, paint
+  negativePrompt: >-
+    smooth, paint, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, wrong material, pasted stock texture, flat color fill,
+    shaderless surface
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

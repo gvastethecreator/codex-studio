@@ -13,34 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Frozen-crystalline anime treatment with faceted glass surfaces, internal light refraction, gem-cut
-    proportion logic, frozen motion, and sub-zero elegance
+    Ice-Crystal Refractive operates as a portable anime-lifestyle router: combine Ice Crystal
+    Refractive identity cues through Faceted crystal contours; internal light refraction; prism
+    rainbow splitting; ice blue monochrome spectrum; hexagonal ice symmetry; frost fern textures
+    with broad anime style spectrum grammar with experimental line, material specific finish, auteur
+    adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the
+    preset supplies anime style behavior after prompt X rather than a required scene, character,
+    franchise image, or card composition.
   subject_treatment: >-
-    Faceted-crystal contours, sharp-geometric-edge-lines, no organic curves, prism-cut-surface-faceting,
-    hexagonal-ice-crystal symmetry
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Ice-blue, cyan, frozen-lake-turquoise, polar-white, frost-mint, prism-refraction-rainbow-accents,
-    glacier-deep-indigo, diamond-sparkle-spectrum
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Internal-refraction-rainbow-splitting, subsurface-scattering-in-ice, rim-light-on-crystal-edges,
-    caustic-light-patterns, frozen-sun-backlight
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Glass-crystal-surface, internal-fracture-planes, frost-fern-pattern-texture,
-    diamond-facet-micro-scratches, ice-core-bubble-imperfections
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Faceted gem-cut proportion shifts, hexagonal symmetry, prism-split spatial rainbows, and shard-fragment
-    composition
-  atmosphere_and_mood: Frozen, pristine, otherworldly-cold, geometric-perfection awe, winter-solitude beauty
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Crystalline-ice-anime aesthetic, gem-cut-beauty, frozen-refractive-rendering, arctic-elegance,
-    geometric-ice-sculpture-animation
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Faceted-crystal-contours, internal-light-refraction, prism-rainbow-splitting,
-    ice-blue-monochrome-spectrum, hexagonal-ice-symmetry, frost-fern-textures
+    Faceted crystal contours; internal light refraction; prism rainbow splitting; ice blue
+    monochrome spectrum; hexagonal ice symmetry; frost fern textures
   creative_brief: >-
-    Use ice-crystal refractive anime as faceted-cold material grammar. Any prompt should refract through prism
-    anatomy, internal light splits, frost geometry, and sub-zero elegance. Ice people, monarch poses,
-    sculptures, and frozen environments are optional.
+    Use Ice-Crystal Refractive after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Faceted crystal contours, internal light refraction, prism rainbow splitting, ice blue
+    monochrome spectrum, hexagonal ice symmetry, frost fern textures, color logic, lighting,
+    material finish, composition rhythm, mood pressure, and quality controls without requiring a
+    fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - warm
   - soft
@@ -53,10 +78,27 @@ avoidRules:
   - glowing
   - fiery
   - textured
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-115.webp
 attributes:
-  negativePrompt: warm, soft, organic, round, colorful, dark, muted, earthy, glowing, fiery, textured
+  negativePrompt: >-
+    warm, soft, organic, round, colorful, dark, muted, earthy, glowing, fiery, textured, generic AI
+    anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal
+    sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark,
+    readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo,
+    signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

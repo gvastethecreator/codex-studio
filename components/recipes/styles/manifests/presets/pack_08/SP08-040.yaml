@@ -12,28 +12,90 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Retro EVA suit language, archival space-age optimism and beta-cloth engineering.
-  subject_treatment: Bulky pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume.
-  color_and_tone: White, silver, muted flag accent, visor-gold, beta-cloth cream, mission-patch color
-  lighting_and_shadow: Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor reflection.
-  texture_and_material: Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture.
+  aesthetic: >-
+    Space Suit (Retro) operates as a portable fashion-costume router: combine Retro EVA suit
+    language, archival space-age optimism and beta-cloth engineering with speculative costume logic
+    with armor, suit engineering, magical garment behavior, alien proportion, and
+    character-readability design, so the preset supplies styling behavior rather than a fixed outfit
+    card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
+    illuminate, conceal, mutate, modularize, ritualize, or engineer through Bulky pressurized
+    segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through speculative material color, neon accents, abyssal values, royal metals,
+    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor
+    reflection plus rim light, emissive channels, occult glow, reflective armor, survival dust, void
+    shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface
+    response, trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and
+    Velcro patch texture plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
+    hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry, gold visor reflection,
-    gasket rings, umbilical-hose rhythm and moon-boot mass.
-  atmosphere_and_mood: Heroic exploration, mission-control suspense, giant-leap awe and restrained archival optimism.
-  rendering_and_quality: Historic tech clarity, archival optimism and vacuum-silence precision without agency logos.
-  key_features: Bubble helmet geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass.
+    Compose with Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry,
+    gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass plus
+    character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and
+    transformation focus as reusable fashion framing grammar, allowing portraits, objects,
+    creatures, environments, action, and abstract prompts to inherit styling without one required
+    pose.
+  atmosphere_and_mood: >-
+    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
+    spectacle, or mythic futurism; the tone should feel specific to Space Suit (Retro) while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
+    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Retro EVA suit language, archival space-age optimism and beta-cloth engineering; Bulky
+    pressurized segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume;
+    Beta cloth, gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch
+    texture; Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and
+    gold-visor reflection; Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet
+    geometry, gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass
   creative_brief: >-
-    Translate the input into retro EVA suit language: beta cloth, bubble-helmet geometry, gold visor, rubber
-    gaskets, umbilical-hose rhythm and aluminum rings. Keep space-age optimism and vacuum clarity without
-    requiring logos, flag patches, lunar surface, astronaut hero pose or NASA archive reenactment.
+    Use Space Suit (Retro) after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Retro EVA suit
+    language, archival space-age optimism and beta-cloth engineering, Bulky pressurized
+    segmentation, hose-connector geometry, glove-gasket bulk and backpack-box volume, Beta cloth,
+    gold-film visor, rubber gaskets, aluminum connectors, nylon webbing and Velcro patch texture,
+    Harsh vacuum-like key light, unfiltered solar glare, helmet-interior bounce and gold-visor
+    reflection, Compose for Space Suit (Retro) using its key spatial cues: Bubble helmet geometry,
+    gold visor reflection, gasket rings, umbilical-hose rhythm and moon-boot mass plus paneling,
+    harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and
+    invented fastenings, palette behavior, light response, material treatment, silhouette grammar,
+    and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - modern sleek
   - readable agency logo
+  - generic cosplay
+  - plastic toy armor
+  - muddy fantasy outfit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-040.webp
 attributes:
-  negativePrompt: modern sleek, readable agency logo
+  negativePrompt: >-
+    modern sleek, readable agency logo, generic cosplay, plastic toy armor, muddy fantasy outfit,
+    fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric
+    noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

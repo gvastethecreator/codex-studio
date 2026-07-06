@@ -12,28 +12,80 @@ tags:
   - photography-and-realism
   - technical-and-specialist-imaging
 visualDna:
-  aesthetic: Deep space astrophotography
-  subject_treatment: Luminous diffuse structures
-  color_and_tone: False color (NASA palette)
-  lighting_and_shadow: Emissive deep-field glow
-  texture_and_material: Ionized haze, dustlike speckle
+  aesthetic: >-
+    Telescope (Hubble) acts as a transferable photographic style router: begin from Deep space
+    astrophotography, Deep-field false color, and technical capture system built from diagnostic
+    optics, surveillance position, scientific sensor behavior, and evidence-grade readability, then
+    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Luminous diffuse structures; preserve prompt identity while
+    translating it through device constraints, evidence logic, extreme scale, or diagnostic signal,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with False color (NASA palette); use palette as sensor output: thermal gradients,
+    monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false
+    color, with value separation and white balance choices that feel captured in-camera rather than
+    painted over.
+  lighting_and_shadow: >-
+    Use Emissive deep-field glow; make light come from device behavior, flash documentation,
+    emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving
+    believable exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Ionized haze, dustlike speckle; render scan noise, compression, measurement surfaces,
+    medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence,
+    avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Telescope (Hubble): lens choice, crop distance, depth of field, and focal hierarchy
-    support 7. Technical And Specialist Imaging without generic framing.
-  atmosphere_and_mood: Awe-inspiring, vast
-  rendering_and_quality: Space-telescope false color
-  key_features: Deep-field false color
+    Compose through Telescope (Hubble) diagnostic capture constraints, device-specific signal,
+    evidence clarity, and technical photographic neutrality; compose through mounted POV, deadpan
+    documentation, miniature focal bands, abstract cropping, evidence scale, or instrument framing,
+    with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Awe-inspiring, vast; derive mood from surveillance, diagnosis, evidence,
+    scientific alienness, minimalism, procedural restraint, or technical unease, so the preset
+    changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Space-telescope false color; finish with exact capture logic, readable signal,
+    controlled artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic
+    detail, and disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Deep space astrophotography; Deep-field false color; False color (NASA palette); Emissive
+    deep-field glow; Telescope (Hubble) diagnostic capture constraints, device-specific signal,
+    evidence clarity, and technical photographic neutrality
   creative_brief: >-
-    Space-telescope processing applied as visual grammar: false-color spectral mapping, luminous haze,
-    deep-field speckle, vast black separation, and emissive detail emerging from darkness. Let any subject
-    read through Hubble-like cosmic scale without requiring literal nebulae, stars, or outer space.
+    Apply Telescope (Hubble) as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Deep space astrophotography, False color (NASA palette), Emissive deep-field
+    glow, Ionized haze, dustlike speckle, and Telescope (Hubble) diagnostic capture constraints,
+    device-specific signal, evidence clarity, and technical photographic neutrality through optics,
+    exposure, palette, surface response, timing, and finish without requiring the card image's
+    original subject.
 avoidRules:
   - earth
   - ground
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - cinematic beauty lighting
+  - artistic blur
+  - wrong diagnostic palette
+  - fake UI text
+  - random sci-fi overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-030.webp
 attributes:
-  negativePrompt: earth, ground
+  negativePrompt: >-
+    earth, ground, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty
+    lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

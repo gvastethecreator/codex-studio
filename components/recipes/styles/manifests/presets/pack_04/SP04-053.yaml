@@ -13,29 +13,85 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat
-    sequencing
+    Storyboard Sketch acts as a transferable illustration router: start from Storyboard
+    previsualization style prioritizing shot communication, camera intent, and narrative beat
+    sequencing, Frame border, camera arrows, shot description and production concept-art system
+    built from iteration discipline, silhouette testing, material exploration, design readability,
+    and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Loose pencil-marker shorthand with fast gesture notation, camera-arrow semantics, and frame-priority
-    readability
-  color_and_tone: Greyscale + Arrows, monochrome clarity, directional red accent
-  lighting_and_shadow: Value study, light-plan sweep, shot-design intent
-  texture_and_material: Paper
-  camera_and_composition: Motion blur lines
-  atmosphere_and_mood: Action, plan, pre-vis intensity, production hustle
-  rendering_and_quality: Cinematic flow, directorial shorthand, shot-language clarity
-  key_features: Frame border, camera arrows, shot description
+    Transform any prompt subject through Loose pencil-marker shorthand with fast gesture notation,
+    camera-arrow semantics, and frame-priority readability; preserve the requested subject while
+    routing it through design exploration, asset logic, value blocking, scale cues, iteration rows,
+    paintover marks, or production-readability constraints, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Greyscale + Arrows, monochrome clarity, directional red accent; use color as
+    concept decision-making: mood scripts, material swatches, faction accents, environment
+    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Value study, light-plan sweep, shot-design intent; shape light for ideation
+    clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Paper, production design clarity, iteration logic, silhouette readability, material
+    exploration, and concept-art decision pressure; surface detail should reveal brush passes,
+    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
+    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Motion blur lines, scale rhythm, edge hierarchy, spacing, and
+    composition rules specific to Storyboard Sketch; compose through production hierarchy, variants,
+    orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe
+    balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Action, plan, pre-vis intensity, production hustle; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Cinematic flow, directorial shorthand, shot-language clarity; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Storyboard previsualization style prioritizing shot communication, camera intent, and narrative
+    beat sequencing; Frame border, camera arrows, shot description; Greyscale + Arrows, monochrome
+    clarity, directional red accent; Paper, production design clarity, iteration logic, silhouette
+    readability, material exploration, and concept-art decision pressure; Motion blur lines, scale
+    rhythm, edge hierarchy, spacing, and composition rules specific to Storyboard Sketch
   creative_brief: >-
-    Apply storyboard previsualization grammar to any input: framing boxes, motion arrows, value-priority
-    blocking, camera shorthand, and shot-intent marks should communicate direction without requiring action
-    sequences, panels of characters, captions, film scenes, or one concrete beat.
+    Apply Storyboard Sketch as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Storyboard previsualization style prioritizing shot communication, camera intent, and narrative
+    beat sequencing, Frame border, camera arrows, shot description, Paper, production design
+    clarity, iteration logic, silhouette readability, material exploration, and concept-art decision
+    pressure without requiring the card image's original subject.
 avoidRules:
   - color
   - detailed
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-053.webp
 attributes:
-  negativePrompt: color, detailed
+  negativePrompt: >-
+    color, detailed, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -13,28 +13,83 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: >-
-    Engraved etching style with document-grade line security, old-master precision, and tonal density through
-    incision logic
-  subject_treatment: Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional modulation
-  color_and_tone: Black ink, tonal-hash spectrum, burin-precision value
-  lighting_and_shadow: Line density, hatching-as-light, cumulative shadow depth
-  texture_and_material: Paper
-  camera_and_composition: 'Compose for Etching (Engraving) using its key spatial cues: Hatching, crosshatching, fine-line density.'
-  atmosphere_and_mood: Serious, valuable, mint-condition reverence, time-capsule gravitas
+    Etching (Engraving) acts as a transferable illustration router: start from Engraved etching
+    style with document-grade line security, old-master precision, and tonal density through
+    incision logic, Hatching, crosshatching, fine-line density and ink and printmaking system built
+    from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and
+    reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating
+    a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fine crosshatch weave with controlled burin-like stroke
+    layering and micro-line directional modulation; preserve the requested subject while rebuilding
+    it through carved lines, etched density, stipple fields, calligraphic pressure, stamp
+    incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested
+    identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Black ink, tonal-hash spectrum, burin-precision value; use color as ink
+    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
+    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Line density, hatching-as-light, cumulative shadow depth; translate light
+    into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or
+    flat spray contrast rather than photographic shading, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Paper, ink transfer, mark density, paper response, process artifacts, and printmaking
+    composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple
+    dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge
+    behavior, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Etching (Engraving) using its key spatial cues:
+    Hatching, crosshatching, fine-line density; compose through print registration, border
+    discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or
+    edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Serious, valuable, mint-condition reverence, time-capsule gravitas; derive mood
+    from craft pressure, underground immediacy, archival print authority, occult darkness,
+    decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter
+    interpretation without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual complexity,
-    and archival print character
-  key_features: Hatching, crosshatching, fine-line density
+    Finish with High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit
+    visual complexity, and archival print designed subjects; finish as a credible ink or print
+    artifact with exact mark logic, restrained artifacting, and no fake text, random distress
+    overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Engraved etching style with document-grade line security, old-master precision, and tonal
+    density through incision logic; Hatching, crosshatching, fine-line density; Black ink,
+    tonal-hash spectrum, burin-precision value; Paper, ink transfer, mark density, paper response,
+    process artifacts, and printmaking composition discipline
   creative_brief: >-
-    Apply engraved etching grammar to any input: dense crosshatch tonality, burin-like incision, archival
-    paper, document-authority detail, and micro-line direction should create old-master precision without
-    requiring banknotes, documents, portraits, maps, seals, or antique scenes.
+    Apply Etching (Engraving) as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Engraved etching style with document-grade line security, old-master precision, and tonal
+    density through incision logic, Hatching, crosshatching, fine-line density, Paper, ink transfer,
+    mark density, paper response, process artifacts, and printmaking composition discipline without
+    requiring the card image's original subject.
 avoidRules:
   - smooth shading
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-062.webp
 attributes:
-  negativePrompt: smooth shading
+  negativePrompt: >-
+    smooth shading, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

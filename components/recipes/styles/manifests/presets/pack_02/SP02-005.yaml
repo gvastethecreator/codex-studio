@@ -13,43 +13,81 @@ tags:
   - film-genres
 visualDna:
   aesthetic: >-
-    French New Wave within 1. Film Genres: a reusable Cinematic & Media visual language with a clear stylistic
-    thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
-    while preserving French New Wave's specific style identity.
+    French New Wave acts as a transferable cinematic-media router: start from French New Wave lens
+    grammar, film stock behavior, genre blocking, projection texture, and cinematic color grade and
+    cinematic genre system built from lens grammar, film stock, blocking pressure, edit rhythm,
+    production design, grain, and color grade, then apply the media behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Define French New Wave through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional,
-    and reusable beyond one literal scene.
+    Transform any prompt subject through Define French New Wave through line, mass, contour,
+    spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene;
+    preserve the requested subject while staging it as filmed material through blocking, wardrobe
+    pressure, lens distance, movement cues, or genre-era performance texture only when useful,
+    keeping the requested identity, silhouette, action, object function, or setting legible.
   color_and_tone: >-
-    Use a French New Wave-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Build color with process-native palette relationships, deliberate contrast, and signal or film
+    color logic for French New Wave; treat color as cinema process: film emulsion, lab timing, gel
+    lighting, period stock response, genre grade, faded print, or projection decay, with deliberate
+    value grouping, accent control, and process-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Use lighting that makes French New Wave recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Handle light through process-led exposure structure, readable highlights, and style-specific
+    shadow behavior; make light feel motivated by cinematic setup through keyed contrast, practical
+    spill, hard noir cuts, musical glow, exploitation underexposure, or analog animation glow, so
+    exposure and shadow structure support the media process without overwriting the requested
+    content.
   texture_and_material: >-
-    Use materials and textures that reinforce French New Wave: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
+    Render lens grammar, film stock behavior, genre blocking, projection texture, and cinematic
+    color grade; surface detail should reveal film grain, gate weave, scratches, halation, acetate
+    texture, projection damage, optical compositing, or photographed production surfaces, keeping
+    artifact scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Use spatial behavior that fits French New Wave: perspective, compression, exaggeration, or depth should
-    support the style without forcing one fixed location.
+    Structure the image through scale rhythm, frame hierarchy, lens distance, and composition rules
+    specific to French New Wave; compose through lens choice, blocking, aspect-ratio pressure,
+    frame-within-frame logic, handheld unease, symmetrical staging, or genre silhouette hierarchy,
+    with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to French New Wave: specific, coherent, and distinct, with emotional tone carried
-    by visual systems rather than narrative captioning.
+    Keep the mood mood carried by French New Wave media process, signal pressure, and visual
+    restraint; derive mood from cinematic tradition, performance tone, genre stakes, projection
+    damage, auteur restraint, camp excess, or analog spectacle, letting the media style alter
+    interpretation without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Render French New Wave with high production clarity, strong silhouette reads, clean detail priority, and
-    no accidental UI, text, logos, or watermark.
+    Finish with finished French New Wave media craft with clear process evidence and controlled
+    detail; finish as credible moving-image language with controlled film artifacts, readable
+    subject identity, and no mandatory plot scene, franchise copy, or fake caption text, clean
+    denoised surfaces where appropriate, and enough process evidence to make the style recognizable.
   key_features: >-
-    Prioritize French New Wave's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    French New Wave lens grammar, film stock behavior, genre blocking, projection texture, and
+    cinematic color grade; process-native palette relationships, deliberate contrast, and signal or
+    film color logic for French New Wave; scale rhythm, frame hierarchy, lens distance, and
+    composition rules specific to French New Wave
   creative_brief: >-
-    Create a style-card that translates French New Wave into a portable visual system for 1. Film Genres.
-    Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
+    Apply French New Wave as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through French New Wave lens grammar, film stock behavior, genre blocking,
+    projection texture, and cinematic color grade without requiring the card image's original
+    subject.
 avoidRules:
   - studio lighting
   - stable
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-005.webp
 attributes:
-  negativePrompt: studio lighting, stable
+  negativePrompt: >-
+    studio lighting, stable, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

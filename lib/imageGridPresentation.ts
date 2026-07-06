@@ -1,6 +1,6 @@
 import type { GeneratedImageWithConfig } from '../types';
 
-export type ImageGridSortOption = 'desc' | 'asc' | 'prompt' | 'ratio';
+export type ImageGridSortOption = 'desc' | 'asc' | 'prompt' | 'prompt_desc' | 'ratio' | 'id';
 
 export const DEFAULT_THUMBNAIL_SIZE = 176;
 export const MIN_THUMBNAIL_SIZE = 144;
@@ -28,9 +28,13 @@ export function sortImageGridImages(
       case 'desc':
         return b.createdAt - a.createdAt;
       case 'prompt':
-        return (a.config.prompt || '').localeCompare(b.config.prompt || '');
+        return (a.config.prompt || a.id).localeCompare(b.config.prompt || b.id);
+      case 'prompt_desc':
+        return (b.config.prompt || b.id).localeCompare(a.config.prompt || a.id);
       case 'ratio':
         return a.config.aspectRatio.localeCompare(b.config.aspectRatio);
+      case 'id':
+        return a.id.localeCompare(b.id);
       default:
         return 0;
     }

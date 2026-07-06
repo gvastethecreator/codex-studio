@@ -13,31 +13,85 @@ tags:
   - lighting-and-atmosphere
 visualDna:
   aesthetic: >-
-    Bioluminescent self-illumination, Avatar forest as style anchor, organic phosphor glow, otherworldly
-    photosynthesis
+    Bioluminescence acts as a transferable cinematic-media router: start from Bioluminescent
+    self-illumination, Avatar organic canopy as style anchor, organic phosphor glow, otherworldly
+    photosynthesis, Internal cyan glow, phosphor trails, luminous particles, self-lit edges and
+    portable lighting and atmosphere system built from light transport, exposure behavior, optical
+    distortion, volumetric density, reflection, and camera response, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Bioluminescence: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night
-  lighting_and_shadow: Internal glow, self-illuminating materials, no external source
-  texture_and_material: Organic glow, phosphorescent surface, luminous cellular texture
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Bioluminescence: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night;
+    use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth,
+    night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping,
+    accent control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Internal glow, self-illuminating materials, no external source; make the
+    named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses,
+    volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support
+    the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Organic glow, phosphorescent surface, luminous cellular texture; surface detail should
+    reveal particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion,
+    or optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding
+    noisy filler texture.
   camera_and_composition: >-
-    Camera language native to Bioluminescence: genre-aware framing, lens character, focal hierarchy, motion
-    cue, and vertical style-card composition.
-  atmosphere_and_mood: Wonder, night, biosphere dream, silent phosphorescence
-  rendering_and_quality: Magical, alien ecology, glowing wonder, self-lit material response
-  key_features: Internal cyan glow, phosphor trails, luminous particles, self-lit edges
+    Structure the image through Camera language native to Bioluminescence: genre-aware framing, lens
+    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Wonder, night, biosphere dream, silent phosphorescence; derive mood from
+    illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon
+    danger, or temporal flash energy, letting the media style alter interpretation without demanding
+    a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Magical, alien ecology, glowing wonder, self-lit material response; finish with
+    believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather
+    than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Bioluminescent self-illumination, Avatar organic canopy as style anchor, organic phosphor glow,
+    otherworldly photosynthesis; Internal cyan glow, phosphor trails, luminous particles, self-lit
+    edges; Neon Blue/Green, cyan bioluminescence, teal glow, purple accent, deep night; Organic
+    glow, phosphorescent surface, luminous cellular texture; Camera language native to
+    Bioluminescence: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and
+    style-led vertical composition
   creative_brief: >-
-    Use bioluminescence as material logic: surfaces emit cyan-teal light from within, particles glow softly,
-    and external illumination recedes. Avoid requiring forests, plants, spores, or Avatar-like scenes. Any
-    subject should become an organism or object whose own light defines form.
+    Apply Bioluminescence as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Bioluminescent self-illumination, Avatar organic canopy as style
+    anchor, organic phosphor glow, otherworldly photosynthesis, Internal cyan glow, phosphor trails,
+    luminous particles, self-lit edges, Organic glow, phosphorescent surface, luminous cellular
+    texture without requiring the card image's original subject.
 avoidRules:
   - sunlight
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-073.webp
 attributes:
-  negativePrompt: sunlight
+  negativePrompt: >-
+    sunlight, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

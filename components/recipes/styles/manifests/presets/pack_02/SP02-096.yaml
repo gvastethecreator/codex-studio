@@ -13,32 +13,72 @@ tags:
   - hand-drawn-and-diy-media
 visualDna:
   aesthetic: >-
-    Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as
-    style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain
-    underneath the gloss
+    Skateboard Deck Graphic acts as a transferable cinematic-media router: start from Punk-rock
+    skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as
+    style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape
+    grain underneath the gloss, Bold-black outlines, slime-drips, screenprint texture, deck-shape
+    composition, neon-green accents, gloss over wood grain and DIY media system built from informal
+    marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment, and
+    hand-made reproduction texture, then apply the media behavior to prompt X instead of recreating
+    a fixed demo image.
   subject_treatment: >-
-    Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst backgrounds,
-    sharp-stencil edges
+    Transform any prompt subject through Bold thick-black outlines, aggressive angular contours,
+    dripping-paint trails, splatter-burst depth field, sharp-stencil edges; preserve the requested
+    subject while rebuilding it through whiteboard strokes, crumpled-paper scribbles, primitive
+    pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic, keeping the
+    requested identity, silhouette, action, object function, or setting legible.
   color_and_tone: >-
-    Neon green slime, blood red, toxic-waste yellow, black-void background, radioactive purple, white-bone
-    contrast, screenprint-overprint cyan
-  lighting_and_shadow: Flat-graphic studio lighting, gloss-varnish reflection on board surface, no atmospheric depth
+    Build color with Neon green slime, blood red, toxic-waste yellow, black-void depth field,
+    radioactive purple, white-bone contrast, screenprint-overprint cyan; use color through dry-erase
+    primaries, paper grey, cave ochres, xerox black, punk collage hits, deck enamel, or improvised
+    marker accents, with deliberate value grouping, accent control, and process-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat-graphic studio lighting, gloss-varnish reflection on board surface, no
+    atmospheric depth; keep light secondary to surface evidence through flat scan lighting, paper
+    shadow, primitive wall texture, or graphic ink contrast, so exposure and shadow structure
+    support the media process without overwriting the requested content.
   texture_and_material: >-
-    Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer
-    peeking through paint
-  camera_and_composition: Graphic centered on deck shape, cutout interruptions, nose-and-tail-kick distortion zone
-  atmosphere_and_mood: Rebellious, loud, street-cred, teenage-freedom, parking-lot-session energy, aggressive creativity
+    Render Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges,
+    wood-ply layer peeking through paint; surface detail should reveal marker squeak, paper
+    wrinkles, cave-grain pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut
+    edges, keeping artifact scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Graphic central on deck shape, cutout interruptions,
+    nose-and-tail-kick distortion zone; compose through casual diagram layout, pasted fragments,
+    object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial
+    shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Rebellious, loud, public-space-cred, teenage-freedom, parking-lot-session energy,
+    aggressive creativity; derive mood from improvised problem-solving, punk urgency, outsider
+    charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style
+    alter interpretation without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Skateboard-deck graphic aesthetic, punk-rock screenprint energy, street-culture boldness, deck-wall
-    art-gallery
+    Finish with Skateboard-deck graphic aesthetic, punk-rock screenprint energy,
+    public-space-culture boldness, deck-wall art-gallery; finish with honest DIY texture, readable
+    prompt identity, and no polished corporate vector, fake readable notes, or clean studio poster
+    default, clean denoised surfaces where appropriate, and enough process evidence to make the
+    style recognizable.
   key_features: >-
-    Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss
-    over wood grain
+    Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s
+    Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic,
+    deck-grip tape grain underneath the gloss; Bold-black outlines, slime-drips, screenprint
+    texture, deck-shape composition, neon-green accents, gloss over wood grain; Neon green slime,
+    blood red, toxic-waste yellow, black-void depth field, radioactive purple, white-bone contrast,
+    screenprint-overprint cyan; Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape
+    grain visible at edges, wood-ply layer peeking through paint; Graphic central on deck shape,
+    cutout interruptions, nose-and-tail-kick distortion zone
   creative_brief: >-
-    Turn any input into skateboard-deck screenprint energy: centered graphic impact, thick black outlines,
-    neon slime accents, maple veneer texture, glossy varnish, and rebellious iconography. Avoid requiring
-    skulls, monsters, wheels, typography, or crossed bones. The deck format and print texture should carry the
-    attitude.
+    Apply Skateboard Deck Graphic as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Punk-rock skateboard deck art, dripping slime
+    graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious
+    iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss,
+    Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green
+    accents, gloss over wood grain, Screenprint ink on maple veneer, gloss-varnish topcoat,
+    grip-tape grain visible at edges, wood-ply layer peeking through paint without requiring the
+    card image's original subject.
 avoidRules:
   - soft
   - gentle
@@ -51,10 +91,26 @@ avoidRules:
   - elegant
   - refined
   - mature
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - polished corporate vector
+  - fake readable notes
+  - clean studio poster
+  - stock illustration polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-096.webp
 attributes:
-  negativePrompt: soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature
+  negativePrompt: >-
+    soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature, official
+    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
+    watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate vector,
+    fake readable notes, clean studio poster, stock illustration polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

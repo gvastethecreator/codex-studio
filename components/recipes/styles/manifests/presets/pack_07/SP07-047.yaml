@@ -12,29 +12,100 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: Formal vegetative maze grammar based on playful disorientation and clipped enclosure.
+  aesthetic: >-
+    Topiary Wayfinding Trap acts as a transferable architecture/interior router: living-wall mass,
+    partial route pressure, gravel node, controlled sightline break; fuse it with landscape system
+    grammar with terrain edge, planting structure, water or gravel control, climatic adaptation, and
+    outdoor spatial choreography; route spatial grammar, material behavior, scale, ornament, and
+    light over prompt X without requiring the default sample anchor, fixed spatial set, landscape
+    setup, or object sample.
   subject_treatment: >-
-    Orthogonal hedge logic, rhythmic dead-end pressure, partial-route hierarchy and continuous tall
-    living-wall mass.
-  color_and_tone: Dark Green, Yew-shadow Black, Gravel-path Grey, Statue-stone Cream, Sky ceiling Blue
-  lighting_and_shadow: Shaded passages, narrow sun bands, distant light stops and mottled gravel pattern.
-  texture_and_material: Densely clipped hedge, compact leaf surface, transit gravel and stone/moss node accents.
+    Preserve prompt subject, action, and context while translating any requested subject through
+    ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing,
+    and climate-responsive material cues; treat living-wall mass, partial route pressure, gravel
+    node, controlled sightline break as massing, edge, surface, joinery, threshold, or ornament
+    behavior rather than a mandatory building scene.
+  color_and_tone: >-
+    Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues,
+    controlled bloom accents, and readable ground-plane contrast; let source cues such as
+    living-wall mass, partial route pressure, gravel node, controlled sightline break decide accent
+    hierarchy, material temperature, and value separation while staying attached to the requested
+    content.
+  lighting_and_shadow: >-
+    Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture,
+    dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material
+    depth, scale, and atmosphere from living-wall mass, partial route pressure, gravel node,
+    controlled sightline break without replacing prompt X with a stock architectural render.
+  texture_and_material: >-
+    Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron,
+    condensation, and weathered landscape edging; prioritize the tactile signals in living-wall
+    mass, partial route pressure, gravel node, controlled sightline break, with believable surface
+    response, denoised grain, coherent wear, and no generic wallpaper texture.
   camera_and_composition: >-
-    Maze-like route compression, false-node rhythm and living-wall enclosure without requiring a literal maze
-    plan or central destination.
-  atmosphere_and_mood: Curious disorientation, playful anxiety and enclosed progression toward uncertain resolution.
-  rendering_and_quality: Precise topiary geometry with wayfinding tension and readable route pressure.
-  key_features: Clipped living enclosure, node rhythm, gravel-route texture, controlled sightline breaks and false exits.
+    Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped
+    sightlines, terrace bands, and detail-first landscape framing; convert living-wall mass, partial
+    route pressure, gravel node, controlled sightline break into reusable perspective, crop, depth,
+    section, modular rhythm, and negative-space rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate
+    resilience, hospitality calm, or playful spatial misdirection; the preset can support adult,
+    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
+    them while keeping the architectural identity readable.
+  rendering_and_quality: >-
+    Finish with crisp landscape-design finish with readable planting structure, no generic park
+    lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction,
+    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
+    logo, no camera prop, and no prompt-literal card copy.
+  key_features: >-
+    living-wall mass, partial route pressure, gravel node, controlled sightline break; ground-plane
+    design, planting rhythm, edge containment, path pressure, clipped or wild massing, and
+    climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline, grass,
+    planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped
+    ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands,
+    and detail-first landscape framing
   creative_brief: >-
-    Any image becomes repeated spatial decision: high hedge pressure, partial route, false nodes and
-    controlled sightlines. Tension comes from wayfinding behavior, not from fantasy mystery, a literal hedge
-    maze or a promised center marker.
+    Apply Topiary Wayfinding Trap after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies living-wall mass, partial route pressure, gravel node, controlled sightline break,
+    landscape system grammar with terrain edge, planting structure, water or gravel control,
+    climatic adaptation, and outdoor spatial choreography, material discipline, spatial grammar, and
+    negative controls without requiring a single spatial sample, product-photo setup, aisle-like
+    default, or empty abstraction.
 avoidRules:
   - open field
+  - required maze map
+  - fantasy garden gate
+  - statue centerpiece
+  - market aisle
+  - library aisle
+  - corridor tunnel
+  - camera prop
+  - readable signage
+  - empty abstraction
+  - generic park lawn
+  - postcard garden
+  - people scene
+  - blank texture field
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - literal maze map
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-047.webp
 attributes:
-  negativePrompt: open field
+  negativePrompt: >-
+    open field, required maze map, fantasy garden gate, statue centerpiece, market aisle, library
+    aisle, corridor tunnel, camera prop, readable signage, empty abstraction, generic park lawn,
+    postcard garden, people scene, blank texture field, fixed building-only scene, mandatory
+    interior interior zones, corridor perspective, furniture showroom, prompt-required card,
+    readable text, logo, watermark, literal maze map, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

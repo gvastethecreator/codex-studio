@@ -13,34 +13,86 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Cheerful romantic-comedy elasticity with instantly readable silhouettes, slapstick chaos,
-    affection-argument rhythm, and buoyant cartoon clarity
-  subject_treatment: Clean efficient contour, lively expression marks, simple comedic exaggeration
-  color_and_tone: Candy red, sky blue, warm peach, clean black, sunny yellow, pond green
-  lighting_and_shadow: Bright TV-animation key, simple cel highlights, cheerful no-fuss lighting
-  texture_and_material: Flat cel paint feel, clean paper grain, hair-shine pops, simple clothing folds
-  camera_and_composition: Elastic slapstick deformation, giant reaction-scale shifts, and instant pose readability
-  atmosphere_and_mood: Playful, combative, charming, lively
-  rendering_and_quality: Clean retro rom-com action rendering with readable slapstick timing and buoyant character-comedy impact
+    Elastic Rom-Com Slapstick Timing operates as a portable anime-lifestyle router: combine Elastic
+    Rom Com Slapstick Timing identity cues through Comic smears; expressive reactions; slapstick
+    timing; readable silhouettes; buoyant affection tension; and bright cartoon clarity with broad
+    anime style spectrum grammar with experimental line, material specific finish, auteur adjacent
+    motion, graphic abstraction, sensor vision, and genre flexible art direction, so the preset
+    supplies anime style behavior after prompt X rather than a required scene, character, franchise
+    image, or card composition.
+  subject_treatment: >-
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
+  color_and_tone: >-
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
+  lighting_and_shadow: >-
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
+  texture_and_material: >-
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
+  camera_and_composition: >-
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
+  rendering_and_quality: >-
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Comic smears, expressive reactions, slapstick timing, readable silhouettes, buoyant affection tension, and
-    bright cartoon clarity
+    Comic smears; expressive reactions; slapstick timing; readable silhouettes; buoyant affection
+    tension; and bright cartoon clarity
   creative_brief: >-
-    Use Rumiko Takahashi as style anchor for elastic rom-com slapstick timing. Any prompt should carry bounce,
-    argument rhythm, readable silhouettes, and affectionate chaos. Combat, object hits, couples, martial arts,
-    and character acting are optional.
+    Use Elastic Rom-Com Slapstick Timing after prompt X as a transferable anime character/lifestyle
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
+    supplies Comic smears, expressive reactions, slapstick timing, readable silhouettes, buoyant
+    affection tension, and bright cartoon clarity, color logic, lighting, material finish,
+    composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed
+    venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
-  - photoreal live-action look
+  - photoreal live action look
   - muted deadpan lighting
-  - over-detailed gritty textures
+  - over detailed gritty textures
   - stiff static poses
   - heavy cinematic blur
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-324.webp
 attributes:
   negativePrompt: >-
-    photoreal live-action look, muted deadpan lighting, over-detailed gritty textures, stiff static poses,
-    heavy cinematic blur
+    photoreal live action look, muted deadpan lighting, over detailed gritty textures, stiff static
+    poses, heavy cinematic blur, generic AI anime gloss, auteur copycat, fixed source scene, canon
+    character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime
+    filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D
+    render look, copied franchise costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

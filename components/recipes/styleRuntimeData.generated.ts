@@ -125,7 +125,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     name: 'Medieval Fantasy & Dungeon Zine',
     description:
       'Medieval fantasy representation styles spanning grimdark kingdoms, hunter gothic horror, acid dungeon zines, rune-tech futures, apocalyptic crusades, gothic wargame fronts, inked dungeon drama, monochrome tarot, and bestiary plates.',
-    presetCount: 44,
+    presetCount: 52,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 

@@ -12,26 +12,75 @@ tags:
   - photography-and-realism
   - documentary-and-street
 visualDna:
-  aesthetic: Intrusive telephoto flash
-  subject_treatment: Subject isolated
-  color_and_tone: Flash washed
-  lighting_and_shadow: Direct flash at night
-  texture_and_material: High ISO noise
-  camera_and_composition: Motion blur
-  atmosphere_and_mood: Urgent, chaotic
-  rendering_and_quality: Tabloid, intrusive
-  key_features: Startled flash isolation
+  aesthetic: >-
+    Paparazzi Style acts as a transferable photographic style router: begin from Intrusive telephoto
+    flash, Startled flash isolation, and observational photographic system built from
+    available-light capture, imperfect timing, public-space pressure, and real-world incident, then
+    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Subject isolated; preserve prompt identity while favoring
+    candid posture, active context, environmental evidence, and unsanitized physical detail, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Flash washed; grade as street, travel, concert, war, sport, paparazzi, or field
+    documentary capture rather than commercial color polish, with value separation and white balance
+    choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Direct flash at night; use available light, flash intrusion, stage beams, harsh noon, rain
+    reflection, smoke, or practical spill as factual scene evidence, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render High ISO noise; keep street surfaces, sweat, dust, fabric wear, weather, grain, high ISO,
+    and motion smear honest rather than decorative, avoiding both waxy smoothing and noisy texture
+    overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Motion blur; compose with decisive moment tension, wide action proximity,
+    telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Urgent, chaotic; derive mood from urgency, witness, travel discovery, danger,
+    crowd energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Tabloid, intrusive; finish as credible documentary photography with restrained
+    processing, readable action, and no stock-advertising gloss, high-resolution photographic
+    detail, and disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Intrusive telephoto flash; Startled flash isolation; Flash washed; Direct flash at night; Motion
+    blur
   creative_brief: >-
-    Telephoto distance plus sudden flash isolates any subject with tabloid urgency: high ISO grain, washed
-    highlights, night compression, edge motion smear, and intrusive framing. Keep paparazzi tension without
-    requiring street, celebrity, human surprise, or chase narrative.
+    Apply Paparazzi Style as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Intrusive telephoto flash, Flash washed, Direct flash at night, High ISO
+    noise, and Motion blur through optics, exposure, palette, surface response, timing, and finish
+    without requiring the card image's original subject.
 avoidRules:
   - posed
   - studio
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - staged advertisement
+  - fake smiles
+  - stock-photo gloss
+  - tourist postcard polish
+  - readable captions
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-061.webp
 attributes:
-  negativePrompt: posed, studio
+  negativePrompt: >-
+    posed, studio, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, staged advertisement,
+    fake smiles, stock-photo gloss, tourist postcard polish, readable captions
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

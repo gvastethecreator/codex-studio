@@ -13,28 +13,61 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Clean tactical futurism with sterile arcology pressure, ceramic hard surfaces, bio-political restraint,
-    and polished control geometry
+    Sterile Arcology Severity acts as a transferable anime-battle/worlds router: Sterile Arcology
+    Severity; combine it with mecha and cyberpunk anime grammar with engineered silhouettes,
+    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named
+    titles, studios, or lineage words may guide style, but they must not require canon cast,
+    title-scene replication, screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Hard-edged tactical contours, clean arcology grids, exoshell-like segmentation, corridor perspective, and
-    severe panel discipline.
-  color_and_tone: Ceramic white, tactical gray, cold cyan, muted olive, warning red, and polished black.
-  lighting_and_shadow: Clinical overhead glow, hard tactical rims, glass reflection planes, and cold specular control.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Sterile
+    Arcology Severity as portable contour, motion grammar, surface language, and emotional pressure
+    without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Sterile Arcology Severity choose accent
+    intensity, value contrast, emotional temperature, and power-system separation while staying
+    attached to prompt X.
+  lighting_and_shadow: >-
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Sterile Arcology Severity without replacing prompt X with a stock
+    anime frame.
   texture_and_material: >-
-    Ceramic armor sheen, brushed composite, glassy architecture, carbon weave, sterile floor reflection, and
-    synthetic dust.
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Sterile
+    Arcology Severity controlled, denoised, and coherent across bodies, objects, environments,
+    abstractions, and action.
   camera_and_composition: >-
-    Clean corridor depth, grid vanishing points, and controlled hard-surface perspective without fixed squad
-    staging.
-  atmosphere_and_mood: Tactical, polished, civic, severe
-  rendering_and_quality: High-detail sci-fi anime finish with polished hard surfaces, severe clarity, and tactical civic scale.
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Sterile Arcology
+    Severity into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules
+    instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Sterile grids, ceramic reflections, severe civic control, polished tactical geometry, cold material
-    contrast, and bio-political pressure
+    Sterile Arcology Severity; armored contour, mechanical massing, modular joints, engineered
+    surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted
+    alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain
+    sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without
+    readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium
+    mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no
+    cockpit/control-room dependency
   creative_brief: >-
-    Use Appleseed as style anchor for sterile arcology severity. Any prompt should feel controlled, clean,
-    tactical, and politically tense. If a body or object exists, add exosuit/ceramic-armor logic or arcology
-    control geometry; assaults, squads, corridors, weapons, and city-states remain optional.
+    Apply Sterile Arcology Severity after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Sterile Arcology Severity, mecha and cyberpunk anime grammar with engineered silhouettes,
+    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -48,12 +81,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-224.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
+    readable UI panel, fixed canon character, title scene replication, required source-frame look,
+    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

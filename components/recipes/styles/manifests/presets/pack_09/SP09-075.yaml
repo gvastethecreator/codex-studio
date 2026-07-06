@@ -13,29 +13,60 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: Fake grass
-  subject_treatment: Plastic blades
-  color_and_tone: Unnatural Green
-  lighting_and_shadow: Plastic shine
-  texture_and_material: Plastic strips
-  camera_and_composition: 'Compose for Astroturf using its key spatial cues: Uniform height.'
-  atmosphere_and_mood: Fake, clean
-  rendering_and_quality: Artificial, sports
-  key_features: Uniform height
+  aesthetic: >-
+    Astroturf makes hand-feel and pressure visible across the image: start from Fake grass, Plastic
+    strips, and Uniform height, then turn touch, softness, pile, fiber density, nap direction,
+    compression, and hand-feel into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Plastic blades: preserve identity and pose while letting
+    forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Unnatural Green as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Plastic shine define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Astroturf without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Plastic strips through fiber structure, tactile depth, soft occlusion, fuzz, pile
+    direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Uniform height as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Fake, clean by using physical touch, comfort, irritation, warmth, dryness, and
+    surface softness; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Artificial, sports material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Fake grass; Plastic blades; Plastic strips; Plastic shine; Uniform height
   creative_brief: >-
-    Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows
-    of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface
-    should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the
-    aesthetics of the substitute, nature made reliable at the cost of its soul. Use Astroturf as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Route any subject through Astroturf as a transferable tactile-surface visual system while
+    preserving the prompt's subject, action, and setting. Render the uncanny uniformity of
+    artificial turf where identical plastic blades stand in regimented rows of unnatural green,
+    catching a plastic sheen that real grass would never yield under any sun. The surface should
+    feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the
+    aesthetics of the substitute, nature made reliable at the cost of its soul. Use Astroturf as
+    portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
+    sample, macro tile, wall, landscape, source object, or scene where the material naturally
+    appears.
 avoidRules:
   - real grass
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-075.webp
 attributes:
-  negativePrompt: real grass
+  negativePrompt: real grass, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

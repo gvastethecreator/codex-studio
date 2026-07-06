@@ -7,127 +7,145 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP13-021',
     name: 'Action Burst Alley Rush',
     category: '5. Action Motion Setpieces',
-    negativePrompt: 'photoreal, static-pose, low-detail, watermark, text, logo',
+    negativePrompt:
+      'photoreal, static-pose, low-detail, watermark, text, logo, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
     style: {
-      aesthetic: 'High-impact anime action with compressed urgency and forward-rush pressure.',
+      aesthetic:
+        'Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands, Dark blue; combine it with portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands.',
-      color_and_tone: 'Dark blue, energy red and contrast white.',
-      lighting_and_shadow: 'Flash-burst lighting with dynamic rim and hard motion accents.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+      color_and_tone:
+        'Map color through high-contrast action color, electric accents, dark support values, flash whites, danger reds, and clean separation for speed; let Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
+      lighting_and_shadow:
+        'Use burst flashes, hard rim, energy cross-light, thunder glow, spark cuts, and motion-streak highlights; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Grit overlays, dust plumes, and stylized sparks without fixed urban surface.',
-      camera_and_composition: 'Forced perspective that amplifies speed.',
-      atmosphere_and_mood: 'Urgency, adrenaline, and imminent danger.',
-      rendering_and_quality: 'Sharp combat keyframe with instant readability.',
-      key_features: 'Motion lines, extreme rush angle, compressed background, impact flash.',
+        'Render dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; keep the tactile or effect cues in Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
+      camera_and_composition:
+        'Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; convert Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through urgency, adrenaline, vertigo, release, danger, heroic pressure, and imminent collision; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
+      rendering_and_quality:
+        'Finish with sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
+      key_features:
+        'Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes; motion-ready silhouette, directional force bands, impact-safe anatomy or object deformation, and readable effect hierarchy; dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift',
       creative_brief:
-        'Apply alley-rush energy as a transferable action treatment: any subject should feel accelerated, compressed, and impact-ready without requiring a fixed hero, location, chase, or acrobatic sprint.',
+        'Apply Action Burst Alley Rush after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands, Dark blue, portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
     id: 'SP13-022',
     name: 'Vertigo Energy Cross Style',
     category: '5. Action Motion Setpieces',
-    negativePrompt: 'photoreal, calm-composition, blur-only, watermark, text, logo',
+    negativePrompt:
+      'photoreal, calm-composition, blur-only, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
     style: {
       aesthetic:
-        'Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract directional force.',
+        'Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract directional force, Firm contours, extreme diagonal posture; combine it with portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Firm contours, extreme diagonal posture, crossing impact vectors, sharp contour snap, and readable kinetic silhouettes.',
-      color_and_tone: 'Cyan, fire orange, and deep black.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+      color_and_tone:
+        'Map color through high-contrast action color, electric accents, dark support values, flash whites, danger reds, and clean separation for speed; let Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'High backlight, shock flare, cyan-orange rim clash, and luminous particle edges.',
+        'Use burst flashes, hard rim, energy cross-light, thunder glow, spark cuts, and motion-streak highlights; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Fractured energy grain, wind-sheared cloth texture, glowing particulate dust, and clean cel-surface polish.',
+        'Render dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; keep the tactile or effect cues in Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Wide-angle vertigo, crossing-vector depth, lifted horizon pressure, and dramatic negative-space height.',
-      atmosphere_and_mood: 'Epic, elevated, kinetic, tense.',
+        'Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; convert Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through urgency, adrenaline, vertigo, release, danger, heroic pressure, and imminent collision; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Maximum clarity action illustration with strong silhouette readability and crisp energy separation.',
+        'Finish with sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Crossing energy vectors, vertigo framing, luminous trails, high backlight, clean impact readability.',
+        'Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm; motion-ready silhouette, directional force bands, impact-safe anatomy or object deformation, and readable effect hierarchy; dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift',
       creative_brief:
-        'Render any subject with elevated collision energy: cyan-orange force lines, high backlight, vertigo depth, and crossing luminous trails should create aerial intensity without fixed characters, props, environment, or confrontation premise.',
+        'Apply Vertigo Energy Cross Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract directional force, Firm contours, extreme diagonal posture, portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
     id: 'SP13-023',
     name: 'Neon Vector Discharge Style',
     category: '5. Action Motion Setpieces',
-    negativePrompt: 'photoreal, medieval-only, washed-colors, watermark, text, logo',
+    negativePrompt:
+      'photoreal, medieval-only, washed-colors, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
     style: {
       aesthetic:
-        'Neon vector discharge, tactical charge, violet-blue pressure, clean sci-fi anime precision, decisive technical momentum.',
+        'Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure, clean sci-fi anime precision, decisive technical momentum, Sharp technical linework; combine it with portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Sharp technical linework, long discharge vectors, stylized tactical angles, precise edge discipline, and clean silhouette logic.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Violet, neon blue, graphite gray, cold white cores, and restrained magenta accents.',
+        'Map color through high-contrast action color, electric accents, dark support values, flash whites, danger reds, and clean separation for speed; let Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Electric discharge as main key, hard rim contrast, wet specular bounce, and blue-violet backflare.',
+        'Use burst flashes, hard rim, energy cross-light, thunder glow, spark cuts, and motion-streak highlights; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Wet graphite sheen, electric smoke, cold polymer, brushed metal grain, and vapor-lit particles.',
+        'Render dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; keep the tactile or effect cues in Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Strong diagonal vanishing point, vector-led depth, compressed technical planes, and fast electric parallax.',
-      atmosphere_and_mood: 'Tactical, charged, precise, technological.',
+        'Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; convert Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through urgency, adrenaline, vertigo, release, danger, heroic pressure, and imminent collision; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Clean focused impact frame with high technical readability and crisp luminous hierarchy.',
+        'Finish with sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Electric discharge vectors, violet-blue backlight, wet specular surfaces, diagonal technical depth, clean impact focus.',
+        'Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure; motion-ready silhouette, directional force bands, impact-safe anatomy or object deformation, and readable effect hierarchy; dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift',
       creative_brief:
-        'Apply neon vector discharge to any subject: hard electric keys, violet-blue diagonals, wet graphite texture, and precise tactical linework should define the style without fixed vantage points, horizons, firearms, shots, or urban settings.',
+        'Apply Neon Vector Discharge Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Vector Discharge Style, Neon Vector Discharge Style acts as a transferable anime-battle/worlds router: Neon Vector Discharge Style, Neon vector discharge, tactical charge, violet-blue pressure, clean sci-fi anime precision, decisive technical momentum, Sharp technical linework, portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
     id: 'SP13-024',
     name: 'Monumental Impact Burst Style',
     category: '5. Action Motion Setpieces',
-    negativePrompt: 'photoreal, static, over-noise, watermark, text, logo',
+    negativePrompt:
+      'photoreal, static, over-noise, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
     style: {
       aesthetic:
-        'Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris abstraction, final-frame intensity.',
+        'Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris abstraction, final-frame intensity, Hard strokes; combine it with portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Hard strokes, athletic contour energy, controlled FX arcs, thick impact silhouettes, and heavy compression lines.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Crimson, gold, charcoal red, hot white impact cores, and smoky black anchors.',
+        'Map color through high-contrast action color, electric accents, dark support values, flash whites, danger reds, and clean separation for speed; let Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Punctual burst key, high overhead flare, rimmed dust glow, and hard celebratory contrast.',
+        'Use burst flashes, hard rim, energy cross-light, thunder glow, spark cuts, and motion-streak highlights; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Cracked surface abstraction, impact dust, hot particles, matte sweat sheen, and compressed shockwave grain.',
+        'Render dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; keep the tactile or effect cues in Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Low-angle monumentality, impact-center expansion, compressed foreground scale, and burst-led perspective pull.',
-      atmosphere_and_mood: 'Explosive, triumphant, competitive, dramatic.',
+        'Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; convert Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through urgency, adrenaline, vertigo, release, danger, heroic pressure, and imminent collision; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Fight-climax anime finish with crisp focal hierarchy, readable burst geometry, and polished action clarity.',
+        'Finish with sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Burst geometry, monumental low angle, crimson-gold pressure, controlled debris texture, climax-frame readability.',
+        'Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure; motion-ready silhouette, directional force bands, impact-safe anatomy or object deformation, and readable effect hierarchy; dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift',
       creative_brief:
-        'Render any subject as a decisive impact crescendo: low-angle scale, crimson-gold burst light, controlled shock texture, and heavy contour rhythm should create final-frame drama without venues, spectators, named roles, signature moves, or required debris.',
+        'Apply Monumental Impact Burst Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monumental Impact Burst Style, Monumental Impact Burst Style acts as a transferable anime-battle/worlds router: Monumental Impact Burst Style, Monumental impact burst, competitive crescendo, crimson-gold triumph pressure, controlled debris abstraction, final-frame intensity, Hard strokes, portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
     id: 'SP13-025',
     name: 'Upward Thunder Momentum Style',
     category: '5. Action Motion Setpieces',
-    negativePrompt: 'photoreal, dull-palette, calm-scene, watermark, text, logo',
+    negativePrompt:
+      'photoreal, dull-palette, calm-scene, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
     style: {
       aesthetic:
-        'Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen intensity as abstract ascent.',
+        'Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen intensity as abstract ascent, Powerful contour; combine it with portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Powerful contour, forward thrust posture, branching energy paths, vertical compression, and force-loaded silhouette rhythm.',
-      color_and_tone: 'Electric blue, intense white, and deep black.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
+      color_and_tone:
+        'Map color through high-contrast action color, electric accents, dark support values, flash whites, danger reds, and clean separation for speed; let Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Electric halo, intense white core glow, blue rim flare, and black negative-fill contrast.',
+        'Use burst flashes, hard rim, energy cross-light, thunder glow, spark cuts, and motion-streak highlights; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Sparks, vapor haze, charged metal sheen, ionized dust, and clean cel-surface polish.',
+        'Render dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; keep the tactile or effect cues in Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Aggressive frontal perspective, upward force compression, radial current pull, and vertical frame pressure.',
-      atmosphere_and_mood: 'Fierce, ascending, charged, determined.',
+        'Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; convert Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through urgency, adrenaline, vertigo, release, danger, heroic pressure, and imminent collision; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Overload key frame with crisp electric hierarchy and high-impact contour clarity.',
+        'Finish with sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Branched electric rays, white-blue overload, vertical momentum, charged surface sheen, decisive silhouette force.',
+        'Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup; motion-ready silhouette, directional force bands, impact-safe anatomy or object deformation, and readable effect hierarchy; dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; forced perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and compressed depth lanes; sharp combat-keyframe finish with instant readability, stable action anatomy, controlled denoise, and no static-pose drift',
       creative_brief:
-        'Apply upward thunder momentum to any subject: vertical force, branched blue light, intense white cores, vapor haze, and decisive silhouette pressure should define the style without fixed body parts, equipment, lead roles, strike choreography, or metamorphosis premise.',
+        'Apply Upward Thunder Momentum Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Upward Thunder Momentum Style, Upward Thunder Momentum Style acts as a transferable anime-battle/worlds router: Upward Thunder Momentum Style, Upward thunder momentum, electrical determination, vertical force buildup, white-blue overload, shonen intensity as abstract ascent, Powerful contour, portable anime action-setpiece grammar with motion vectors, impact timing, forced perspective, energy readability, and battle-keyframe clarity, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

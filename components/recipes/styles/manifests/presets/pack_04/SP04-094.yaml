@@ -13,20 +13,60 @@ tags:
   - technical-and-reference-sheets
 visualDna:
   aesthetic: >-
-    Educational anatomical reference plate with layered structural clarity and classical medical-plate
-    influence
-  subject_treatment: Precise technical linework for muscle, bone, and tendon mapping
-  color_and_tone: Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents)
-  lighting_and_shadow: Even clinical illumination for unambiguous form legibility
-  texture_and_material: Plate-style paper and wash overlays with minimal decorative noise
-  camera_and_composition: Multi-view orthographic layout with transparent overlays and inset details
-  atmosphere_and_mood: Scientific, disciplined, pedagogical
-  rendering_and_quality: Reference-grade illustration optimized for study and instruction
-  key_features: Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity
+    Anatomy Reference Sheet acts as a transferable illustration router: start from Educational
+    anatomical reference plate with layered structural clarity and classical medical-plate
+    influence, Layered anatomy views, insertion/origin callouts, proportion guides, sectional
+    clarity and technical reference and interface-spec system built from orthographic clarity,
+    diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply
+    the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Precise technical linework for muscle, bone, and tendon
+    mapping; preserve the requested subject while expressing it through schematic breakdowns,
+    reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces,
+    keeping the requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm
+    accents); use color as information coding: blueprint cyan, neutral sheet stock, callout accents,
+    HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Even clinical illumination for unambiguous form legibility; keep light
+    diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
+    anatomical separation, or measured shadow restraint, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Plate-style paper and wash overlays with minimal decorative noise; surface detail should
+    support readability with grid paper, line weights, translucent overlays, measurement ticks, UI
+    panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Multi-view orthographic layout with transparent overlays and inset
+    details; compose through orthographic projection, exploded spacing, callout grouping, interface
+    modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Scientific, disciplined, pedagogical, mood carried by Anatomy Reference Sheet
+    craft, material pressure, and visual restraint; derive mood from precision, planning, research,
+    interface control, anatomical study, engineering authority, or catalogued comparison, letting
+    the style alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Reference-grade illustration optimized for study and instruction; finish with
+    readable technical communication, crisp line hierarchy, controlled notation-like detail, and no
+    illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Educational anatomical reference plate with layered structural clarity and classical
+    medical-plate influence; Layered anatomy views, insertion/origin callouts, proportion guides,
+    sectional clarity; Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm
+    accents); Plate-style paper and wash overlays with minimal decorative noise; Multi-view
+    orthographic layout with transparent overlays and inset details
   creative_brief: >-
-    Apply anatomy-reference-sheet structure to any input: layered construction, skeletal-like scaffolds,
-    muscle-flow analogues, cutaway marks, and educational diagram composition. If no biological body exists,
-    convert forms into anatomical systems without requiring humans, animals, labels, or medical realism.
+    Apply Anatomy Reference Sheet as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Educational anatomical reference plate with layered structural clarity and classical
+    medical-plate influence, Layered anatomy views, insertion/origin callouts, proportion guides,
+    sectional clarity, Plate-style paper and wash overlays with minimal decorative noise without
+    requiring the card image's original subject.
 avoidRules:
   - stylized
   - cartoon
@@ -37,10 +77,26 @@ avoidRules:
   - inaccurate
   - fantasy proportion
   - guesswork
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - illegible labels
+  - decorative clutter
+  - shaded cinematic render
+  - random UI text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-094.webp
 attributes:
-  negativePrompt: stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork
+  negativePrompt: >-
+    stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion,
+    guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
+    labels, decorative clutter, shaded cinematic render, random UI text
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

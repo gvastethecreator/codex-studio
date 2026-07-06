@@ -12,31 +12,79 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Mandelbulb complexity
-  subject_treatment: Infinite detail
-  color_and_tone: Psychedelic, infinite recursion tones
-  lighting_and_shadow: Deep shadows, cave-detail
-  texture_and_material: Mathematical patterns, procedural surface
+  aesthetic: >-
+    Fractal 3D acts as a transferable CGI-style router: start from Mandelbulb complexity, Self
+    similarity, fractal recursion and 3D style system built from modeling language, mesh
+    abstraction, projection rules, topology display, toy material, paper logic, or stylized shader
+    constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
+    image.
+  subject_treatment: >-
+    Transform any prompt subject through Infinite detail; preserve the prompt subject while
+    rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay,
+    paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping
+    the requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Psychedelic, infinite recursion tones; use color through material
+    simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or
+    procedural motion accents, with deliberate value grouping, exposure control, and medium-specific
+    limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Deep shadows, cave detail; shape light through the style constraint:
+    simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or
+    retro speculars, so value structure supports the renderer and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Mathematical patterns, procedural surface; surface detail should show the named
+    construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays,
+    procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping
+    material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Fractal 3D: three-quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Trippy, alien, mind-bending
-  rendering_and_quality: Math art, infinite, algorithmic wonder
-  key_features: Self-similarity, fractal recursion
+    Structure the image through Lookdev camera for Fractal 3D: three quarter or orthographic
+    framing, clean silhouette read, material highlights, controlled depth, and vertical card
+    composition; compose through projection, topology readability, object grouping, axis discipline,
+    exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Trippy, alien, mind bending; derive mood from toy-like clarity, technical
+    breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical
+    wonder, letting the renderer alter interpretation without demanding a specific story, location,
+    or character.
+  rendering_and_quality: >-
+    Finish with Math art, infinite, algorithmic wonder; finish with intentional stylization, clean
+    geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for
+    it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Mandelbulb complexity; Self similarity, fractal recursion; Psychedelic, infinite recursion
+    tones; Mathematical patterns, procedural surface; Lookdev camera for Fractal 3D: three quarter
+    or orthographic framing, clean silhouette read, material highlights, controlled depth, and
+    vertical card composition
   creative_brief: >-
-    Infuse the input with fractal recursion: self-similar detail at multiple scales, Mandelbulb density,
-    algorithmic ridges and psychedelic procedural color. Keep alien mathematical wonder without forcing a
-    cathedral, cave or traversable fractal landscape. Apply Fractal 3D as a portable 3D/render style system
-    over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and
-    production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot,
-    or scene template.
+    Apply Fractal 3D as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Mandelbulb complexity, Self similarity, fractal recursion, Mathematical
+    patterns, procedural surface without requiring the card image's original subject.
 avoidRules:
   - simple
   - clean
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - accidental photorealism
+  - generic smooth mesh
+  - wrong geometry language
+  - messy topology
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-029.webp
 attributes:
-  negativePrompt: simple, clean
+  negativePrompt: >-
+    simple, clean, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
+    geometry language, messy topology
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

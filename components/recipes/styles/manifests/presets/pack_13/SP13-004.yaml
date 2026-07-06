@@ -13,42 +13,84 @@ tags:
   - anime
 visualDna:
   aesthetic: >-
-    Industrial ignition anime language with monumental machine pressure, maintenance-bay realism as texture,
-    and pre-deployment tension
+    Mecha Ignition operates as a portable anime-lifestyle router: combine Mecha Hangar Ignition
+    identity cues through Monument scale mechanical silhouette; articulated panel logic; industrial
+    support line context; launch readiness lighting cues; and scale contrast markers; Mecha Hangar
+    Ignition anime style cues with core anime character and adventure grammar with cel contour
+    hierarchy, expressive acting, readable silhouette, genre clarity, and clean TV to key visual
+    polish, so the preset supplies anime style behavior after prompt X rather than a required scene,
+    character, franchise image, or card composition.
   subject_treatment: >-
-    Dense mechanical panel segmentation, articulated joint geometry, heavy silhouette anchoring, and
-    infrastructural line grids supporting scale cues
-  color_and_tone: Cold steel grays, deep navy undertones, signal orange safety accents, and constrained warning-light reds
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or
+    surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
+  color_and_tone: >-
+    Map color through clear cel values, saturated accents, stable skin or material midtones, sky or
+    neon support color, and disciplined complementary contrast; keep cel values readable, accent
+    roles intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    High-bay spotlight beams, hard metallic rim accents, intermittent spark accents, and low ambient fill for
-    mass emphasis
+    Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and
+    clean value separation; lighting should clarify expression, silhouette, material, and emotional
+    rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Brushed and worn metal plates, hydraulic residue traces, exposed cabling bundles, heat-stressed paint
-    edges, and matte industrial surfaces
-  camera_and_composition: Wide-angle industrial depth exaggeration with controlled perspective convergence to reinforce scale
-  atmosphere_and_mood: Pressurized, anticipatory, technical, and power-laden
+    Render flat cel fills, painted distant plane softness, limited grain, clean ink edges,
+    controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
+  camera_and_composition: >-
+    Compose through silhouette-priority framing, moderate dynamic lensing, readable action or
+    emotion lanes, and subject-first depth without required genre staging as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift,
+    or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe,
+    comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime
+    lineage.
   rendering_and_quality: >-
-    High-detail mechanical key-visual rendering with disciplined readability, layered depth hierarchy, and
-    production-grade anime polish
+    Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines,
+    denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Monument-scale mechanical silhouette, articulated panel logic, industrial support-line context,
-    launch-readiness lighting cues, and scale contrast markers
+    Monument scale mechanical silhouette; articulated panel logic; industrial support line context;
+    launch readiness lighting cues; and scale contrast markers; Mecha Hangar Ignition anime style
+    cues
   creative_brief: >-
-    Use Mecha Hangar Ignition as style anchor for industrial scale drama: heavy mechanical construction, hard
-    technical light, and infrastructure-like contrast should transfer by mechanizing the input when useful,
-    adding robot-scale mass, panel logic, or launch-readiness cues without fixing a hangar, operator, or
-    launch scene.
+    Use Mecha Ignition after prompt X as a transferable anime character/lifestyle layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while the preset supplies Monument scale
+    mechanical silhouette, articulated panel logic, industrial support line context, launch
+    readiness lighting cues, and scale contrast markers, Mecha Hangar Ignition anime style cues,
+    color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls
+    without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
+    composition.
 avoidRules:
   - photoreal
-  - toy-like
+  - toy like
   - lowres
   - watermark
   - text
   - logo
+  - generic anime filter
+  - canon cast copy
+  - source frame look composition
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-004.webp
 attributes:
-  negativePrompt: photoreal, toy-like, lowres, watermark, text, logo
+  negativePrompt: >-
+    photoreal, toy like, lowres, watermark, text, logo, generic anime filter, canon cast copy,
+    source frame look composition, canon character copy, title scene copy, literal sample card
+    setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay,
+    3D render look, copied franchise costume, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

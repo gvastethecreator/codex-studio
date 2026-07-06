@@ -14,22 +14,77 @@ tags:
   - horror
 visualDna:
   aesthetic: >-
-    Grotesque performance-horror language where theatrical elegance is corrupted by marionette anatomy and
-    staged cruelty.
-  subject_treatment: Twitchy contour cadence, joint segmentation, and drapery-driven framing lines that trap the focal subject.
-  color_and_tone: Congealed burgundy, nicotine ivory, oxidized brass hints, and ink-black shadow basins.
-  lighting_and_shadow: Isolated spotlight with aggressive falloff, leaving peripheral planes in predatory darkness.
-  texture_and_material: Splintered timber, dust-saturated velvet, cracked lacquered surfaces, and dry residue buildup.
+    Grotesque Marionette Spotlight Style acts as a transferable anime-prestige router: grotesque
+    body unease with prestige anime restraint, alongside a marionette anime direction shaped by
+    era-aware line economy and genre tone; fuse it with prestige anime horror with negative space,
+    body unease, ritual geometry, liminal dread, and controlled visual silence; it routes era,
+    genre, line economy, cel or digital finish, and performance tone without locking prompt content
+    to the source title or sample image.
+  subject_treatment: >-
+    Preserve the prompt subject, action, and context while restyling forms through distorted
+    contour, puppet tension, and controlled anatomical wrongness, alongside jointed unease and
+    puppet-like contour tension; identity should remain readable through anime contour, expression
+    economy, pose energy, shape simplification, and effect hierarchy instead of a required canon
+    character or title scene.
+  color_and_tone: >-
+    Map color through a grotesque accent system held inside disciplined cel values, alongside a
+    marionette accent system held inside disciplined cel values; anchor it in peat black, cold
+    indigo, mineral gray, crimson omen accents, sickly cyan reflections, and desaturated skin tones;
+    keep value separation clean, cel flats intentional, accents purposeful, and palette behavior
+    attached to the requested content.
+  lighting_and_shadow: >-
+    Use spotlight isolation and theatrical shadow falloff, alongside a grotesque light logic using
+    cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal top-light, spotlight
+    isolation, occult rim, red omen glow, and deep occlusion around visual absences; shadows should
+    read as anime light design, rims should clarify form, and glow or effects should support the
+    prompt rather than replacing it.
+  texture_and_material: >-
+    Render waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and
+    ink grain tuned to marionette material contrast; anchor surfaces in water-dark stone, frayed
+    fiber, damp paper, mask lacquer, dust, mist, and minimal noise-controlled texture; cel edges,
+    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
+    across people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Proscenium-like compression with shallow-depth pressure that makes subjects feel pinned to the viewing
-    plane.
-  atmosphere_and_mood: Claustrophobic spectacle, involuntary audience dread, and ritualized manipulation.
-  rendering_and_quality: Disturbingly crisp foreground forms against smeared peripheral darkness to sustain visual discomfort.
-  key_features: Marionette morphology cues, torn drapery vectors, black void patterning, and central fixation points.
+    Frame around string-like lines and spotlight isolation, alongside stage trap framing and
+    confrontation focus, then extend it with void-first framing, institutional emptiness, spotlight
+    traps, ritual geometry, and suppressed horizon cues; the style should support portraits, props,
+    machines, performances, landscapes, symbols, and full scenes through reusable anime staging
+    grammar instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through abjection without splatter dependency, alongside uncanny performance and body
+    horror restraint; braid it with listening-state tension, dread, shame, taboo ceremony, unseen
+    presence, and quiet psychological collapse; the preset can become funny, sensual, violent,
+    quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime
+    lineage.
+  rendering_and_quality: >-
+    Finish with clean anime finishing that keeps grotesque identity readable without noisy denoise,
+    alongside clean anime finishing that keeps marionette identity readable without noisy denoise;
+    enforce minimal high-control horror anime finish with shape economy, denoised darks, and no
+    gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure,
+    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
+    or 3D-render drift.
+  key_features: >-
+    grotesque body unease with prestige anime restraint, alongside a marionette anime direction
+    shaped by era-aware line economy and genre tone; distorted contour, puppet tension, and
+    controlled anatomical wrongness, alongside jointed unease and puppet-like contour tension; waxy
+    skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink grain
+    tuned to marionette material contrast; spotlight isolation and theatrical shadow falloff,
+    alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow; string-like
+    lines and spotlight isolation, alongside stage trap framing and confrontation focus
   creative_brief: >-
-    Define a reusable grotesque-marionette-spotlight grammar for any subject: corrupted theatrical elegance,
-    anatomical stylization, spotlight isolation, and pinned-plane pressure without imposing theaters, stages,
-    puppets, seats, props, or audiences.
+    Apply Grotesque Marionette Spotlight Style after prompt X as a transferable anime-prestige
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies grotesque body unease with prestige anime restraint, alongside a marionette anime
+    direction shaped by era-aware line economy and genre tone, alongside distorted contour, puppet
+    tension, and controlled anatomical wrongness, alongside jointed unease and puppet-like contour
+    tension; a grotesque accent system held inside disciplined cel values, alongside a marionette
+    accent system held inside disciplined cel values; spotlight isolation and theatrical shadow
+    falloff, alongside a grotesque light logic using cel rim, glow behavior, and blocked shadow;
+    waxy skin, frayed fabric, lacquer, and low-noise shadow texture, alongside cel paint and ink
+    grain tuned to marionette material contrast and string-like lines and spotlight isolation,
+    alongside stage trap framing and confrontation focus, finish discipline, and negative controls
+    without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument,
+    weapon, or card composition.
 avoidRules:
   - photoreal
   - slapstick
@@ -37,10 +92,24 @@ avoidRules:
   - watermark
   - text
   - logo
+  - cheap jump scare
+  - splatter-only horror
+  - photoreal monster render
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
+  - signature
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-033.webp
 attributes:
-  negativePrompt: photoreal, slapstick, cheerful-colors, watermark, text, logo
+  negativePrompt: >-
+    photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only
+    horror, photoreal monster render, fixed canon character, literal title scene, required anime
+    screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

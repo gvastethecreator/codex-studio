@@ -13,21 +13,51 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: >-
-    Moodboard color-story layout with coordinated fragments, swatches, texture samples, and provisional design
-    logic
-  subject_treatment: Grid or pile
-  color_and_tone: Coordinated palette
-  lighting_and_shadow: Flat
-  texture_and_material: Digital or paper
-  camera_and_composition: 'Compose for Moodboard Color Story using its key spatial cues: Color theme.'
-  atmosphere_and_mood: Aesthetic
-  rendering_and_quality: Design, inspiration
-  key_features: Color theme
+    Moodboard Color Story acts as a transferable art-medium router: start from Moodboard color story
+    layout with coordinated fragments, swatches, texture samples, and provisional design logic,
+    Color theme and mixed-media assembly system built from layering, adhesion, surface collision,
+    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Grid or pile; preserve the prompt subject while rebuilding
+    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
+    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Coordinated palette; treat color as material combination: paper aging, varnish
+    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
+    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine,
+    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Digital or paper; surface detail should show torn fiber, glue, tape edge, cork tooth,
+    thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Moodboard Color Story using its key spatial cues: Color
+    theme; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships,
+    tactile seams, and graphic collision without requiring a literal craft table, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Aesthetic; derive mood from DIY urgency, memory, repair, evidence, punk collision,
+    tactile intimacy, decorative excess, or experimental material play, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Design, inspiration; finish with coherent material stacking, readable subject
+    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
+    where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Moodboard color story layout with coordinated fragments, swatches, texture samples, and
+    provisional design logic; Color theme; Coordinated palette; Digital or paper
   creative_brief: >-
-    Fragments cluster around a color story, each piece chosen not for what it depicts but for the note it
-    strikes in a visual chord. The arrangement is temporary, repositionable, and intentionally unresolved.
-    Feeling crystallizes through palette, rhythm, spacing, swatches, and texture samples without requiring
-    literal photos or captions.
+    Apply Moodboard Color Story as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Moodboard color story layout with coordinated fragments, swatches, texture samples, and
+    provisional design logic, Color theme, Digital or paper without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -46,12 +76,25 @@ avoidRules:
   - border
   - readable captions
   - literal photo collection
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-069.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, readable captions, literal photo collection
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, readable captions, literal photo collection,
+    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
+    resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector
+    render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,28 +12,78 @@ tags:
   - miscellaneous-and-fun
   - toys-and-crafts
 visualDna:
-  aesthetic: Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art
-  subject_treatment: Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles
-  color_and_tone: Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering
-  lighting_and_shadow: Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion
+  aesthetic: >-
+    Sand Art operates as a portable source-router layer: combine Layered sand strata, granular color
+    sediment, gravity-poured craft, grain-by-grain art with hand-built object logic with toy scale,
+    assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior
+    rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms simplify,
+    assemble, soften, hinge, stitch, fold, carve, or snap together through Granular edges,
+    gravity-settled contour, pour-line strata, grain-slope profiles; identity stays readable through
+    construction grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through material-native color blocks, toy-safe saturation, handmade variance, and
+    clean separation between parts; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion plus small-scale
+    object lighting, crisp edge readability, soft contact shadows, and material-specific highlights
+    as the light-response contract, with readable hierarchy, controlled contact detail, and no
+    lighting choice that erases the user's requested content.
   texture_and_material: >-
-    Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density
-    contrast
-  camera_and_composition: Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion
-  atmosphere_and_mood: Patience, sun-baked stillness, handmade precision, mineral quiet, temporary balance
-  rendering_and_quality: Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique
-  key_features: Layers, color-strata bands, granular edge noise, settled-density shifts, optional glass-vessel distortion
+    Render Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction,
+    layered-density contrast plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread,
+    sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or
+    signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Gravity layers, horizontal-strata formation, contour-band compression, sediment
+    slope illusion plus object-scale staging, modular silhouette rhythm, clear construction reads,
+    and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects,
+    scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and
+    physical charm; the emotional tone should feel specific to Sand Art while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean craft detail, readable construction, deliberate imperfections, and no
+    accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art; Granular
+    edges, gravity-settled contour, pour-line strata, grain-slope profiles; Grains of sand,
+    fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast;
+    Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion; Gravity layers,
+    horizontal-strata formation, contour-band compression, sediment slope illusion
   creative_brief: >-
-    Apply gravity-layered sand grammar to the input: stratified pour bands, granular edge behavior, sediment
-    compression, and mineral color separation should define the style. Bottle curvature may appear as a
-    framing cue, but do not require a souvenir bottle, desert scene, camel, or beach memory.
+    Use Sand Art after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Layered sand strata, granular color sediment,
+    gravity-poured craft, grain-by-grain art, Granular edges, gravity-settled contour, pour-line
+    strata, grain-slope profiles, Grains of sand, fine-ground mineral, pouring-trickle flow,
+    settled-weight compaction, layered-density contrast, Flat, jar-through-daylight, backlit-strata
+    glow, glass-vessel diffusion, Gravity layers, horizontal-strata formation, contour-band
+    compression, sediment slope illusion plus clearly expressed joins, simplified proportions, craft
+    tolerances, modular parts, and maker-process evidence, palette behavior, light response,
+    material treatment, and finish discipline without requiring one specimen, prop bundle, product
+    still, or card composition.
 avoidRules:
   - water
   - paint
+  - melted craft
+  - generic toy render
+  - featureless plastic
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-030.webp
 attributes:
-  negativePrompt: water, paint
+  negativePrompt: >-
+    water, paint, melted craft, generic toy render, featureless plastic, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

@@ -7,18 +7,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-078',
     name: 'Neon Light Lines',
     category: '9. Print And Light Finishes',
-    negativePrompt: 'bulb, sun',
+    negativePrompt:
+      'bulb, sun, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Glowing lines in dark',
-      subject_treatment: 'Light tubes',
-      color_and_tone: 'Neon colors',
-      lighting_and_shadow: 'Self illuminated',
-      texture_and_material: 'Glow',
+      aesthetic:
+        'Neon Light Lines becomes a transferable print finish and luminous line system: start from Glowing lines in dark, Nightlife, cyber, and Cool, dark, then route prompt content through embossing, debossing, foil reflectance, neon tubing, ink pressure, and premium substrate logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Light tubes to outline, stamp, emboss, deboss, gild, illuminate, or impress prompt subjects without replacing them with signage; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Neon colors; treat color as ink, paper, metallic foil, dark-field glow, warm tube light, or substrate contrast, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Self illuminated drive the light response: make highlights come from reflective foil, depressed paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Glow as the tactile or mark-making basis; surface detail should show paper tooth, pressed edges, metallic shear, tube thickness, or ink bite, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Neon Light Lines using its key spatial cues: Dark background.',
-      atmosphere_and_mood: 'Cool, dark',
-      rendering_and_quality: 'Nightlife, cyber',
-      key_features: 'Dark background',
+        'Compose around Cool, dark as reusable spatial grammar: favor iconic line hierarchy, negative space, premium print registration, and tactile depth cues, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Cool, dark as the emotional register; derive mood from craft, nightlife, luxury, signage, invitation design, and tactile production, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Nightlife, cyber: finish with precise physical process, controlled glow or impression depth, and no fake text layout, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Glowing lines in dark; Light tubes; Neon colors; Self illuminated; Glow; Cool, dark; Cool, dark; Nightlife, cyber; Nightlife, cyber',
       creative_brief:
         'Apply neon-line treatment to the input: bent glass-tube strokes, colored glow halos, dark-field contrast, buzzing edge light, and sign-like contours should illuminate forms without requiring readable signage.',
     },
@@ -27,18 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-079',
     name: 'Foil Stamping',
     category: '9. Print And Light Finishes',
-    negativePrompt: 'print, ink',
+    negativePrompt:
+      'print, ink, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Metallic imprint on paper',
-      subject_treatment: 'Debossed',
-      color_and_tone: 'Gold, Silver, Rose Gold',
-      lighting_and_shadow: 'Reflective',
-      texture_and_material: 'Matte paper contrast',
+      aesthetic:
+        'Foil Stamping becomes a transferable print finish and luminous line system: start from Metallic imprint on paper and Metallic shine, then route prompt content through embossing, debossing, foil reflectance, neon tubing, ink pressure, and premium substrate logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Debossed to outline, stamp, emboss, deboss, gild, illuminate, or impress prompt subjects without replacing them with signage; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Gold, Silver, Rose Gold; treat color as ink, paper, metallic foil, dark-field glow, warm tube light, or substrate contrast, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Reflective drive the light response: make highlights come from reflective foil, depressed paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Matte paper contrast as the tactile or mark-making basis; surface detail should show paper tooth, pressed edges, metallic shear, tube thickness, or ink bite, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Foil Stamping using its key spatial cues: Metallic shine.',
-      atmosphere_and_mood: 'Expensive, elegant',
-      rendering_and_quality: 'Premium, invite',
-      key_features: 'Metallic shine',
+        'Compose around Metallic shine as reusable spatial grammar: favor iconic line hierarchy, negative space, premium print registration, and tactile depth cues, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Expensive, elegant as the emotional register; derive mood from craft, nightlife, luxury, signage, invitation design, and tactile production, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Premium, invite: finish with precise physical process, controlled glow or impression depth, and no fake text layout, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Metallic imprint on paper; Debossed; Gold, Silver, Rose Gold; Reflective; Matte paper contrast; Metallic shine; Expensive, elegant; Premium, invite; Metallic shine',
       creative_brief:
         'Apply foil-stamping luxury to the input: metallic pressed highlights, debossed edges, heat-transfer shine, and angle-dependent gold or silver reflections should refine forms without requiring packaging or typography.',
     },
@@ -47,18 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-080',
     name: 'Letterpress',
     category: '9. Print And Light Finishes',
-    negativePrompt: 'flat print',
+    negativePrompt:
+      'flat print, fake readable text, flat sticker look, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Deep impression ink',
-      subject_treatment: 'Debossed',
-      color_and_tone: 'Solid ink',
-      lighting_and_shadow: 'Shadow in impression',
-      texture_and_material: 'Cotton paper',
+      aesthetic:
+        'Letterpress becomes a transferable print finish and luminous line system: start from Deep impression ink and Impression depth, then route prompt content through embossing, debossing, foil reflectance, neon tubing, ink pressure, and premium substrate logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Debossed to outline, stamp, emboss, deboss, gild, illuminate, or impress prompt subjects without replacing them with signage; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Solid ink; treat color as ink, paper, metallic foil, dark-field glow, warm tube light, or substrate contrast, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Shadow in impression drive the light response: make highlights come from reflective foil, depressed paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Cotton paper as the tactile or mark-making basis; surface detail should show paper tooth, pressed edges, metallic shear, tube thickness, or ink bite, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Letterpress using its key spatial cues: Impression depth.',
-      atmosphere_and_mood: 'Craft, quality',
-      rendering_and_quality: 'Tactile, classic',
-      key_features: 'Impression depth',
+        'Compose around Impression depth as reusable spatial grammar: favor iconic line hierarchy, negative space, premium print registration, and tactile depth cues, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Craft, quality as the emotional register; derive mood from craft, nightlife, luxury, signage, invitation design, and tactile production, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Tactile, classic: finish with precise physical process, controlled glow or impression depth, and no fake text layout, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Deep impression ink; Debossed; Solid ink; Shadow in impression; Cotton paper; Impression depth; Craft, quality; Tactile, classic; Impression depth',
       creative_brief:
         'Apply letterpress impression to the input: inked relief edges, cotton-paper tooth, debossed shadows, pressure marks, and tactile print depth should make any subject feel physically pressed without requiring readable type.',
     },

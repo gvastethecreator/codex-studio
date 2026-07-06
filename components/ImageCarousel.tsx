@@ -15,7 +15,7 @@ import {
   IconHeart as Heart,
   IconLayoutBoardSplit as SplitSquareHorizontal,
 } from '@tabler/icons-react';
-import { MotionDiv, AnimatePresence, Variants } from 'motion/react';
+import { AnimatePresence, MotionDiv, type Variants } from '../lib/gsapMotion';
 import type { GeneratedImageWithConfig, ImageGenerationConfig } from '../types';
 import ActionButton from './ui/ActionButton';
 import Logo from './Logo';
@@ -46,6 +46,25 @@ interface ImageCarouselProps {
 
 const lerp = (start: number, end: number, factor: number) => start + (end - start) * factor;
 
+function resolveCarouselImageDimensions(image: GeneratedImageWithConfig) {
+  if (image.width && image.height) {
+    return { width: image.width, height: image.height };
+  }
+
+  const [ratioWidth, ratioHeight] = image.config.aspectRatio
+    ? image.config.aspectRatio.split(':').map((part) => Number(part))
+    : [1, 1];
+  if (ratioWidth > 0 && ratioHeight > 0) {
+    const base = 1024;
+    return {
+      width: Math.round(base * (ratioWidth / Math.max(ratioWidth, ratioHeight))),
+      height: Math.round(base * (ratioHeight / Math.max(ratioWidth, ratioHeight))),
+    };
+  }
+
+  return { width: 1024, height: 1024 };
+}
+
 const CarouselImageItem: React.FC<{
   image: GeneratedImageWithConfig;
   transitionName?: string;
@@ -63,6 +82,7 @@ const CarouselImageItem: React.FC<{
   const rafId = useRef<number | null>(null);
 
   const displaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing });
+  const imageDimensions = resolveCarouselImageDimensions(image);
 
   // Calculate aspect ratio for the style to ensure the image has a size before loading
   const aspectRatioStyle = image.config.aspectRatio
@@ -128,13 +148,69 @@ const CarouselImageItem: React.FC<{
     startAnimation();
   };
 
+  const updateZoom = (nextScale: number) => {
+    const clampedScale = Math.min(Math.max(nextScale, 1), 15);
+    target.current.scale = clampedScale;
+    if (clampedScale === 1) {
+      target.current.x = 0;
+      target.current.y = 0;
+    }
+    startAnimation();
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (!isActive || isSliding) return;
+
+    if (event.key === '+' || event.key === '=') {
+      event.preventDefault();
+      updateZoom(target.current.scale * 1.25);
+      return;
+    }
+
+    if (event.key === '-' || event.key === '_') {
+      event.preventDefault();
+      updateZoom(target.current.scale / 1.25);
+      return;
+    }
+
+    if (event.key === '0' || event.key === 'Escape') {
+      event.preventDefault();
+      target.current = { x: 0, y: 0, scale: 1 };
+      startAnimation();
+      return;
+    }
+
+    if (target.current.scale <= 1) return;
+    const panStep = event.shiftKey ? 80 : 32;
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      target.current.x += panStep;
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      target.current.x -= panStep;
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      target.current.y += panStep;
+    } else if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      target.current.y -= panStep;
+    } else {
+      return;
+    }
+    startAnimation();
+  };
+
   return (
     <div
       className="size-full flex items-center justify-center relative overflow-hidden touch-none select-none"
+      role="group"
+      tabIndex={isActive ? 0 : -1}
+      aria-label="Image pan and zoom area. Use plus and minus to zoom, arrows to pan, zero to reset."
       onWheel={handleWheel}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={() => (isDragging.current = false)}
+      onKeyDown={handleKeyDown}
       onDoubleClick={() => {
         if (isSliding) return;
         target.current =
@@ -146,6 +222,8 @@ const CarouselImageItem: React.FC<{
         ref={imgRef}
         src={displaySrc}
         alt=""
+        width={imageDimensions.width}
+        height={imageDimensions.height}
         draggable={false}
         className={`max-w-[94%] max-h-[90%] object-contain shadow-[0_0_120px_rgba(0,0,0,1)]`}
         style={{
@@ -258,7 +336,7 @@ function CarouselBottomBar({
                 onPointerDown={onCompareStart}
                 onPointerUp={onCompareEnd}
                 onPointerLeave={onCompareEnd}
-                className={`relative flex items-center justify-center p-2 rounded-lg transition-all duration-300 outline-none group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-white shadow-lg' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
+                className={`relative flex items-center justify-center rounded-lg p-2 outline-none transition-[background-color,color,box-shadow,transform] duration-300 group active:scale-95 cursor-pointer ${isComparing ? 'bg-accent-500 text-white shadow-lg' : 'text-zinc-500 hover:text-white hover:bg-white/5'}`}
                 title="Hold to Compare with Original"
               >
                 <SplitSquareHorizontal size={16} />
@@ -357,8 +435,9 @@ function CarouselTopBar({
               type="button"
               key={img.id}
               data-carousel-index={idx}
+              aria-label={`Open image ${idx + 1} of ${thumbnailWindow.length}`}
               onClick={() => onJumpTo(idx)}
-              className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-all duration-300
+              className={`relative size-10 shrink-0 rounded-xl overflow-hidden border snap-center cursor-pointer transition-[border-color,box-shadow,opacity,transform] duration-300
                             ${
                               idx === activeIndex
                                 ? 'scale-110 shadow-[0_0_20px_rgba(var(--accent-500),0.4)] border-accent-500 opacity-100'
@@ -369,6 +448,8 @@ function CarouselTopBar({
               <img
                 src={img.thumbnail || img.src}
                 alt=""
+                width={40}
+                height={40}
                 className="size-full object-cover"
                 loading="lazy"
                 decoding="async"
@@ -385,14 +466,16 @@ function CarouselTopBar({
           <button
             type="button"
             onClick={onToggleFullscreen}
-            className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-zinc-500 hover:text-white transition-all cursor-pointer"
+            aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+            className="min-h-10 min-w-10 rounded-xl bg-white/5 p-2 text-zinc-500 transition-[background-color,color,transform] hover:bg-white/10 hover:text-white cursor-pointer"
           >
             {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
           </button>
           <button
             type="button"
             onClick={onClose}
-            className="p-2 bg-zinc-900/60 hover:bg-red-500/20 rounded-xl text-white hover:text-red-500 transition-all shadow-xl cursor-pointer"
+            aria-label="Close image carousel"
+            className="min-h-10 min-w-10 rounded-xl bg-zinc-900/60 p-2 text-white shadow-xl transition-[background-color,color,transform] hover:bg-red-500/20 hover:text-red-500 cursor-pointer"
           >
             <X size={16} />
           </button>
@@ -583,9 +666,6 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
       ref={containerRef}
       className="fixed inset-0 z-100 flex flex-col bg-black/90 overflow-hidden pt-12 pb-12"
       style={{ viewTransitionName: 'modal-backdrop' }}
-      onClick={(e) => {
-        e.stopPropagation();
-      }}
     >
       <CarouselTopBar
         activeIndex={activeIndex}
@@ -607,7 +687,8 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 handlePrev();
               }}
               disabled={isSliding}
-              className="absolute left-8 p-6 rounded-full bg-black/50 hover:bg-white/5 text-white/10 hover:text-white transition-all z-50 backdrop-blur-3xl disabled:opacity-0 active:scale-90 group cursor-pointer"
+              aria-label="Previous image"
+              className="absolute left-8 z-50 rounded-full bg-black/50 p-6 text-white/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-white/5 hover:text-white disabled:opacity-0 active:scale-90 group cursor-pointer"
             >
               <ChevronLeft size={40} className="group-hover:-translate-x-1 transition-transform" />
             </button>
@@ -618,7 +699,8 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 handleNext();
               }}
               disabled={isSliding}
-              className="absolute right-8 p-6 rounded-full bg-black/50 hover:bg-white/5 text-white/10 hover:text-white transition-all z-50 backdrop-blur-3xl disabled:opacity-0 active:scale-90 group cursor-pointer"
+              aria-label="Next image"
+              className="absolute right-8 z-50 rounded-full bg-black/50 p-6 text-white/10 backdrop-blur-3xl transition-[background-color,color,opacity,transform] hover:bg-white/5 hover:text-white disabled:opacity-0 active:scale-90 group cursor-pointer"
             >
               <ChevronRight size={40} className="group-hover:translate-x-1 transition-transform" />
             </button>

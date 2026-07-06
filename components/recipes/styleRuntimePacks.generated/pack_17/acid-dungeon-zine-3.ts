@@ -9,7 +9,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Acid Dungeon Zine',
     domain: 'dungeon zine',
     negativePrompt:
-      'smooth digital painting, photorealism, pastel softness, clean vector art, polished fantasy realism, watermark, text',
+      'smooth digital painting, photorealism, pastel softness, clean vector art, polished fantasy realism, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'High-contrast underground dungeon zine with clean black xerox ink, acid colors, occult symbols, and monster-card energy.',
@@ -22,12 +22,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Controlled photocopier texture, tidy halftone, restrained stipple, hand-inked hatching, clean paper tooth, and misregistered fills.',
       camera_and_composition:
-        'Poster-like centered monsters, boxed panels, tight crops, thick borders, and zine-collage pacing.',
-      atmosphere_and_mood: 'Occult, punk, playful-dark, dungeon-crawling, and abrasive.',
+        'Poster-front icon hierarchy, boxed-panel pressure, tight graphic crop, thick border logic, and zine pacing without requiring a monster subject.',
+      atmosphere_and_mood:
+        "Carry the prompt through Occult, punk, playful dark, dungeon crawling, and abrasive; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Crisp screenprint-zine finish with heavy denoise, controlled print texture, and readable clean black shapes.',
       creative_brief:
-        'Reusable visual system for any subject needing acid zine punch, boxed graphic force, thick handmade borders, and occult print weirdness.',
+        'Reusable visual system for any subject needing acid zine punch, boxed graphic force, thick handmade borders, and occult print weirdness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Acid Dungeon Zine; High contrast underground dungeon zine with clean black xerox ink; acid colors; occult symbols; monster card energy; acid zine icon logic with chunky silhouette weight, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Acid Dungeon Zine; High contrast underground dungeon zine with clean black xerox ink; acid colors; occult symbols; monster card energy; acid zine icon logic with chunky silhouette weight',
     },
   },
   {
@@ -36,7 +39,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Acid Dungeon Zine',
     domain: 'dungeon zine',
     negativePrompt:
-      'color gradients, polished concept art, photorealism, typography, clean vector, watermark, text',
+      'color gradients, polished concept art, photorealism, typography, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Black-and-white photocopied bestiary plates with occult medieval linework and rough underground print damage.',
@@ -50,11 +53,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Controlled copier texture, clean toner bloom, scratchy ink, paper tooth, edge wear, and readable line reproduction.',
       camera_and_composition:
         'Single specimen view, label-free frame, marginal ornament, and rigid bestiary-page balance.',
-      atmosphere_and_mood: 'Arcane, handmade, archival, and dungeon-worn.',
+      atmosphere_and_mood:
+        "Carry the prompt through Arcane, handmade, archival, and dungeon worn; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Controlled xerox print style with strong graphic readability, denoised darks, and rough line charm.',
       creative_brief:
-        'Turns any subject into an occult bestiary sheet without relying on text labels or clean digital polish.',
+        'Turns any subject into an occult bestiary sheet without relying on text labels or clean digital polish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Occult Xerox Bestiary; Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Occult Xerox Bestiary; Black and white photocopied bestiary plates with occult medieval linework and rough underground print; exaggerated silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and aged paper white',
     },
   },
   {
@@ -63,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Acid Dungeon Zine',
     domain: 'dungeon zine',
     negativePrompt:
-      'full-color realism, smooth airbrush, glossy 3d render, soft watercolor, explicit gore, watermark, text',
+      'full color realism, smooth airbrush, glossy 3d render, soft watercolor, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Two- or three-color risograph necromancy with medieval symbols, heavy ink, and fluorescent occult energy.',
@@ -77,11 +83,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Controlled Riso grain, clean ink density, misregistration, tidy stippled fills, and paper tooth.',
       camera_and_composition:
         'Centered poster icon, thick border, large simple shapes, and strong negative space.',
-      atmosphere_and_mood: 'Occult, loud, handmade, mischievous, and dungeon-punk.',
+      atmosphere_and_mood:
+        "Carry the prompt through Occult, loud, handmade, mischievous, and dungeon punk; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Print-art finish with crisp shapes, intentional imperfections, and high thumbnail impact.',
       creative_brief:
-        'Reusable visual system for any subject needing fluorescent riso print logic, necromantic color clash, black silhouette dominance, and simplified ritual graphic force.',
+        'Reusable visual system for any subject needing fluorescent riso print logic, necromantic color clash, black silhouette dominance, and simplified ritual graphic force. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes',
     },
   },
   {
@@ -90,12 +99,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Acid Dungeon Zine',
     domain: 'dungeon zine',
     negativePrompt:
-      'realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark, text',
+      'realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Blacklight fantasy monster manual where creature anatomy becomes bold ink, neon organs, and weird page-icon energy.',
       subject_treatment:
-        'A symmetrical many-eyed maw monster with bulbous horns, broad teeth, and simplified readable anatomy, staged like a blacklight manual icon.',
+        'Translate any subject into blacklight monster-manual weirdness: many-eye rhythm, maw-like negative space, bulbous horn curves, readable anatomical exaggeration, and blacklight plate force without requiring a fixed monster head.',
       color_and_tone:
         'Black ink base with toxic green, violet, hot pink, and pale lavender paper fields.',
       lighting_and_shadow:
@@ -103,12 +112,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Rough hatch marks, stippled membranes, controlled xerox texture, screenprint dots, and clean neon fill.',
       camera_and_composition:
-        'Tight specimen crop, centered mouth or eye focus, border frame, and little empty space.',
-      atmosphere_and_mood: 'Weird, loud, gross-funny, occult, and tabletop-dungeon adjacent.',
+        'Tight specimen hierarchy, centered eye or maw-like focal voids when compatible, border pressure, and minimal empty space without fixed anatomy.',
+      atmosphere_and_mood:
+        "Carry the prompt through Weird, loud, gross funny, occult, and tabletop dungeon adjacent; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'High-impact zine illustration with clean silhouette logic, heavy denoise, and controlled print reproduction.',
       creative_brief:
-        'Reusable for creatures, helmets, relics, masks, or architecture that need monster-manual weirdness.',
+        'Route any subject through blacklight monster manual weirdness: preserve the prompt while adding bold maw/eye rhythm when compatible, fluorescent plate color, chunky contour, and readable manual icon force without requiring a monster portrait. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves',
     },
   },
   {
@@ -117,7 +129,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Acid Dungeon Zine',
     domain: 'dungeon zine',
     negativePrompt:
-      'readable letters, logo design, clean digital card UI, realistic painting, cute cartoon, watermark, text',
+      'readable letters, logo design, clean digital card UI, realistic painting, cute cartoon, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Dungeon trading-card punk with medieval heraldry, spiked silhouettes, photocopied borders, and neon spot color.',
@@ -130,12 +142,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Controlled xerox texture, thick ink outlines, handmade stipple, rough panel borders, and light print scuffs.',
       camera_and_composition:
-        'Card-front portrait crop, centered heraldic symbol, chunky frame, and stacked graphic motifs.',
-      atmosphere_and_mood: 'Loud, occult, collectible, unruly, and dungeon-club flavored.',
+        'Heraldic frontality, centered emblem pressure, chunky frame geometry, and stacked graphic motifs without a literal card-front copy.',
+      atmosphere_and_mood:
+        "Carry the prompt through Loud, occult, collectible, unruly, and dungeon club flavored; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Screenprinted zine-card finish with strong icon design, heavy denoise, and controlled print texture.',
       creative_brief:
-        'Reusable visual system for any subject that needs punchy dungeon-card identity, heraldic graphic force, and unruly occult zine energy.',
+        'Reusable visual system for any subject that needs punchy dungeon card identity, heraldic graphic force, and unruly occult zine energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Punk Heraldry Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Punk Heraldry Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette logic',
     },
   },
   {
@@ -144,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Acid Dungeon Zine',
     domain: 'dungeon zine',
     negativePrompt:
-      'clean ebook cover, glossy digital painting, modern typography, photorealism, explicit gore, watermark, text',
+      'clean ebook cover, glossy digital painting, modern typography, photorealism, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Old sword-and-sorcery paperback art degraded through photocopy, tape scan, harsh ink, and lurid flat color.',
@@ -158,11 +173,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Tape seams, clean scan streaks, controlled toner texture, cracked ink, cheap paper, and worn cover edges.',
       camera_and_composition:
         'Paperback-cover energy with bold central scale, dramatic diagonals, thick framing pressure, and readable print-poster hierarchy.',
-      atmosphere_and_mood: 'Pulp, dangerous, handmade, lurid, and adventurous.',
+      atmosphere_and_mood:
+        "Carry the prompt through Pulp, dangerous, handmade, lurid, and adventurous; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Retro print illustration with readable forms, rough edges, controlled analog wear, and clean darks.',
       creative_brief:
-        'Reusable visual system for any subject needing degraded pulp-zine finish, sword-and-sorcery momentum, tape-scan wear, and lurid handmade drama.',
+        'Reusable visual system for any subject needing degraded pulp zine finish, sword and sorcery momentum, tape scan wear, and lurid handmade drama. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow',
     },
   },
 ] as unknown as StyleRuntimePreset[];

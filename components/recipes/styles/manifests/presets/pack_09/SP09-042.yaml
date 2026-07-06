@@ -13,29 +13,61 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Packing material
-  subject_treatment: Circles
-  color_and_tone: Clear plastic
-  lighting_and_shadow: Highlights on bubbles
-  texture_and_material: Plastic, air filled
-  camera_and_composition: Bubbles
-  atmosphere_and_mood: Protective, cheap
-  rendering_and_quality: Disposable, fun
-  key_features: Grid of bubbles
+  aesthetic: >-
+    Bubble Wrap treats fabrication as visible style language: start from Packing material, Plastic,
+    air filled, and Bubbles, then turn manufacturing process, tooling marks, seams, tolerances, and
+    industrial material behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Circles: preserve identity and pose while letting forms
+    carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Clear plastic as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Highlights on bubbles define the light response: highlights, occlusion, translucency,
+    specular scatter, matte falloff, or rim behavior should reveal Bubble Wrap without hiding the
+    prompt subject.
+  texture_and_material: >-
+    Render Plastic, air filled through constructed regularity, stress points, joins, molded edges,
+    and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Bubbles as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Protective, cheap by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Disposable, fun material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Packing material; Circles; Plastic, air filled; Highlights on bubbles; Bubbles
   creative_brief: >-
-    Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a
-    pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of
-    protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of
-    hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as
-    portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
-    wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Bubble Wrap as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Compose the playful geometry of bubble
+    wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air
+    awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection.
+    The clear plastic should catch light with a faint sheen that reveals the ordered army of
+    hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use
+    Bubble Wrap as portable surface/render behavior over any input: map its texture, light response,
+    edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - flat plastic
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-042.webp
 attributes:
-  negativePrompt: flat plastic
+  negativePrompt: flat plastic, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

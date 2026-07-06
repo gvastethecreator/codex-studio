@@ -12,29 +12,84 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: 70s B-movie
+  aesthetic: >-
+    Grindhouse/Exploitation acts as a transferable cinematic-media router: start from 70s B-movie,
+    1970s grindhouse projection damage with lurid B-movie color, torn-splice rhythm, cue marks, and
+    exploitation-print decay, Dirt, cue marks, grain storm and cinematic genre system built from
+    lens grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color
+    grade, then apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Grindhouse/Exploitation: casting,
-    wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast
-    grammar without locking to one plot beat.
-  color_and_tone: Faded, red shift, yellowed decay, magenta bleed
-  lighting_and_shadow: Harsh, underexposed, single-source, pools of black
-  texture_and_material: Scratches, cigarette burns, torn splices, dust hair
-  camera_and_composition: Film splice, jumpy gate weave, missing frame
-  atmosphere_and_mood: Trashy, lurid, midnight-movie danger
-  rendering_and_quality: Damaged film, degraded, sleazy, exploitation-grade
-  key_features: Dirt, cue marks, grain storm
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Grindhouse/Exploitation: casting, wardrobe, props, motion cues, and silhouette hierarchy
+    follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve
+    the requested subject while staging it as filmed material through blocking, wardrobe pressure,
+    lens distance, movement cues, or genre-era performance texture only when useful, keeping the
+    requested identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Faded, red shift, yellowed decay, magenta bleed; treat color as cinema process:
+    film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or
+    projection decay, with deliberate value grouping, accent control, and process-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Harsh, underexposed, single-source, pools of black; make light feel
+    motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical
+    glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure
+    support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Scratches, cigarette burns, torn splices, dust hair; surface detail should reveal film
+    grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing,
+    or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Film splice, jumpy gate weave, missing frame; compose through lens
+    choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical
+    staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Trashy, lurid, midnight-movie danger, mood carried by Grindhouse/Exploitation
+    media process, signal pressure, and visual restraint; derive mood from cinematic tradition,
+    performance tone, genre stakes, projection damage, auteur restraint, camp excess, or analog
+    spectacle, letting the media style alter interpretation without demanding a specific story,
+    location, or actor.
+  rendering_and_quality: >-
+    Finish with Damaged film, degraded, sleazy, exploitation-grade; finish as credible moving-image
+    language with controlled film artifacts, readable subject identity, and no mandatory plot scene,
+    franchise copy, or fake caption text, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    70s B-movie, 1970s grindhouse projection damage with lurid B-movie color, torn-splice rhythm,
+    cue marks, and exploitation-print decay; Dirt, cue marks, grain storm; Faded, red shift,
+    yellowed decay, magenta bleed; Scratches, cigarette burns, torn splices, dust hair; Film splice,
+    jumpy gate weave, missing frame
   creative_brief: >-
-    Grindhouse style wounds any subject with degraded projection: scratches, cigarette burns, torn splices,
-    magenta bleed, underexposed pools of black, jumpy gate weave, and lurid low-budget danger. Keep
-    exploitation-film damage without requiring violence, rooms, walls, or narrative sleaze.
+    Apply Grindhouse/Exploitation as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through 70s B-movie, 1970s grindhouse projection damage
+    with lurid B-movie color, torn-splice rhythm, cue marks, and exploitation-print decay, Dirt, cue
+    marks, grain storm, Scratches, cigarette burns, torn splices, dust hair without requiring the
+    card image's original subject.
 avoidRules:
   - clean
   - hd
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-006.webp
 attributes:
-  negativePrompt: clean, hd
+  negativePrompt: >-
+    clean, hd, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -12,25 +12,77 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: Modern architectural photography
-  subject_treatment: Geometric lines
-  color_and_tone: Glass, Steel, Concrete
-  lighting_and_shadow: Sunlight and shadow
-  texture_and_material: Glass, steel, concrete response
-  camera_and_composition: Perspective correction
-  atmosphere_and_mood: Imposing, structured
-  rendering_and_quality: ArchDaily, clean
-  key_features: Vertical lines
+  aesthetic: >-
+    Architecture (Modern) acts as a transferable photographic style router: begin from Modern
+    architectural photography, Vertical lines, and commercial photographic system built from
+    sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then
+    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Geometric lines; preserve prompt identity while making
+    silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the
+    original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Glass, Steel, Concrete; use palette as campaign control: clean whites, luxury
+    neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with
+    value separation and white balance choices that feel captured in-camera rather than painted
+    over.
+  lighting_and_shadow: >-
+    Use Sunlight and shadow; shape light with softboxes, reflectors, rim lines, HDR fill, glossy
+    kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow
+    density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Glass, steel, concrete response; render metal, glass, fabric, food surface, condensation,
+    cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both
+    waxy smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Perspective correction; compose for catalog clarity, top-down order, hero
+    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Imposing, structured; derive mood from appetite, trust, luxury, engineering,
+    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with ArchDaily, clean; finish with professional photo polish, accurate material response,
+    clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Modern architectural photography; Vertical lines; Glass, Steel, Concrete; Sunlight and shadow;
+    Perspective correction
   creative_brief: >-
-    Modern architecture style imposes corrected perspective, vertical discipline, clean geometry,
-    glass/steel/concrete material response, and sharp sunlight-shadow structure. Apply architectural clarity
-    to any subject without forcing a facade, building, sky, or empty urban setting.
+    Apply Architecture (Modern) as a photographic preset over prompt X: preserve the user's
+    requested subject, then route Modern architectural photography, Glass, Steel, Concrete, Sunlight
+    and shadow, Glass, steel, concrete response, and Perspective correction through optics,
+    exposure, palette, surface response, timing, and finish without requiring the card image's
+    original subject.
 avoidRules:
   - messy
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - fake brand logo
+  - messy clutter
+  - dirty product surface
+  - unreadable labels
+  - cheap stock layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-056.webp
 attributes:
-  negativePrompt: messy
+  negativePrompt: >-
+    messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
+    plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy
+    clutter, dirty product surface, unreadable labels, cheap stock layout
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

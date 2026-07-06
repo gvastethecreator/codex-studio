@@ -12,28 +12,85 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: 16th century court regalia, early-modern majesty, painted-court splendor
-  subject_treatment: Heavy layers, ruffs, farthingale cone, slashed sleeves, stiffened bodice architecture
-  color_and_tone: Deep Red, Gold, Velvet Blue, imperial purple, cloth-of-gold, ermine white
-  lighting_and_shadow: Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold
-  texture_and_material: Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul
-  camera_and_composition: Stiffened garment architecture
-  atmosphere_and_mood: Regal, serious, wealthy, courtly intrigue, absolute power, gilded formality
-  rendering_and_quality: Historical museum-grade finish, painted-court realism, formal gravitas
-  key_features: Ornate details, neck ruff, jeweled bodice, structured court headwear, ceremonial trim
+  aesthetic: >-
+    Renaissance Royal operates as a portable fashion-costume router: combine 16th century court
+    regalia, early-modern majesty, painted-court splendor with period and mythic costume logic with
+    era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
+    plate, embroider, crown, wrap, or ceremonialize through Heavy layers, ruffs, farthingale cone,
+    slashed sleeves, stiffened bodice architecture; identity stays readable as silhouette, fit,
+    layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
+    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
+    material color believable, and palette behavior attached to the subject instead of pasted
+    wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Oil-painting light, chiaroscuro depth, stained-glass warmth, candlelit gold plus museum,
+    candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette
+    hierarchy as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Cut velvet, silver brocade, seed pearls, cloth-of-gold tissue, mink trim, jeweled net
+    caul plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and
+    handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
+    elemental edges, or body-surface treatment coherent across the whole prompt.
+  camera_and_composition: >-
+    Compose with cloth-of-gold weight, ruff geometry, farthingale structure, slashed sleeves, seed
+    pearls, jeweled bodice and imperial velvet plus regal posture logic, era silhouette, layered
+    garment structure, ornament placement, and readable period identity as reusable fashion framing
+    grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to
+    inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
+    pressure, or folk memory; the tone should feel specific to Renaissance Royal while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
+    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    16th century court regalia, early-modern majesty, painted-court splendor; Heavy layers, ruffs,
+    farthingale cone, slashed sleeves, stiffened bodice architecture; Cut velvet, silver brocade,
+    seed pearls, cloth-of-gold tissue, mink trim, jeweled net caul; Oil-painting light, chiaroscuro
+    depth, stained-glass warmth, candlelit gold; cloth-of-gold weight, ruff geometry, farthingale
+    structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet
   creative_brief: >-
-    Apply Renaissance court regalia to the input: cloth-of-gold weight, ruff geometry, farthingale structure,
-    slashed sleeves, seed pearls, jeweled bodice and imperial velvet. Keep painted-court authority as style
-    anchor without forcing early-modern court-portrait citation, Tudor portrait pose, candlelit hall, rigid
-    queenly body or specific monarch.
+    Use Renaissance Royal after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies 16th century court
+    regalia, early-modern majesty, painted-court splendor, Heavy layers, ruffs, farthingale cone,
+    slashed sleeves, stiffened bodice architecture, Cut velvet, silver brocade, seed pearls,
+    cloth-of-gold tissue, mink trim, jeweled net caul, Oil-painting light, chiaroscuro depth,
+    stained-glass warmth, candlelit gold, cloth-of-gold weight, ruff geometry, farthingale
+    structure, slashed sleeves, seed pearls, jeweled bodice and imperial velvet plus corsetry, armor
+    plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically
+    legible cut, palette behavior, light response, material treatment, silhouette grammar, and
+    finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - modern
   - simple
   - cheap
+  - cheap costume rental
+  - wrong era mashup
+  - plastic armor
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-012.webp
 attributes:
-  negativePrompt: modern, simple, cheap
+  negativePrompt: >-
+    modern, simple, cheap, cheap costume rental, wrong era mashup, plastic armor, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

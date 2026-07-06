@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { AnimatePresence, MotionDiv } from 'motion/react';
+import { AnimatePresence, MotionDiv } from '../../lib/gsapMotion';
 import { createPortal } from 'react-dom';
 
 interface FloatingTooltipProps {

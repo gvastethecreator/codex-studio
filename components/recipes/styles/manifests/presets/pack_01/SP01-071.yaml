@@ -12,28 +12,79 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: Top-down arranged composition
-  subject_treatment: Grid organization
-  color_and_tone: Coordinated palette
-  lighting_and_shadow: Top down soft
-  texture_and_material: Clean surface texture
+  aesthetic: >-
+    Flat Lay acts as a transferable photographic style router: begin from Top-down arranged
+    composition, 90 degree angle, and commercial photographic system built from sellable clarity,
+    controlled studio craft, material desirability, and brand-neutral polish, then apply the
+    photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Grid organization; preserve prompt identity while making
+    silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the
+    original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Coordinated palette; use palette as campaign control: clean whites, luxury neutrals,
+    appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Top down soft; shape light with softboxes, reflectors, rim lines, HDR fill, glossy kickers,
+    window balance, or packshot sweep shadows, preserving believable exposure, shadow density,
+    highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Clean surface texture; render metal, glass, fabric, food surface, condensation, cosmetic
+    gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy
+    smoothing and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong
-    negative-space rhythm for Flat Lay.
-  atmosphere_and_mood: Satisfying, clean
-  rendering_and_quality: Instagram, organized
-  key_features: 90 degree angle
+    Compose through Overhead orthographic flat-lay composition with measured spacing, clean object
+    separation, and strong negative-space rhythm for Flat Lay; compose for catalog clarity, top-down
+    order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with
+    lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Satisfying, clean; derive mood from appetite, trust, luxury, engineering,
+    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Instagram, organized; finish with professional photo polish, accurate material
+    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Top-down arranged composition; 90 degree angle; Coordinated palette; Top down soft; Overhead
+    orthographic flat-lay composition with measured spacing, clean object separation, and strong
+    negative-space rhythm for Flat Lay
   creative_brief: >-
-    Flat-lay photography imposes top-down order on any subject: perpendicular camera, grid organization,
-    coordinated palette, soft overhead light, and satisfying negative spacing. Treat the frame like a designed
-    page without requiring objects on a table.
+    Apply Flat Lay as a photographic preset over prompt X: preserve the user's requested subject,
+    then route Top-down arranged composition, Coordinated palette, Top down soft, Clean surface
+    texture, and Overhead orthographic flat-lay composition with measured spacing, clean object
+    separation, and strong negative-space rhythm for Flat Lay through optics, exposure, palette,
+    surface response, timing, and finish without requiring the card image's original subject.
 avoidRules:
   - perspective
   - messy
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - fake brand logo
+  - messy clutter
+  - dirty product surface
+  - unreadable labels
+  - cheap stock layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-071.webp
 attributes:
-  negativePrompt: perspective, messy
+  negativePrompt: >-
+    perspective, messy, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
+    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand
+    logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

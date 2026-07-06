@@ -13,35 +13,81 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Operatic rebellion strategy with theatrical command, aristocratic severity, masked intent, and elegant
-    political tension.
+    Operatic Rebellion Strategy Style acts as a transferable anime-prestige router: a operatic anime
+    direction shaped by era-aware line economy and genre tone, alongside a rebellion anime direction
+    shaped by era-aware line economy and genre tone; fuse it with 2000s anime classic grammar with
+    cel-digital hybrid polish, genre contrast, sharper compositing, and stylized emotional
+    escalation; it routes era, genre, line economy, cel or digital finish, and performance tone
+    without locking prompt content to the source title or sample image.
   subject_treatment: >-
-    Smooth vector-like anime strokes, crisp contour clarity, cape-like silhouette geometry, chessboard
-    blocking, and declarative pose design.
+    Preserve the prompt subject, action, and context while restyling forms through contours paced by
+    operatic tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    rebellion tension, readable pose energy, and silhouette discipline; identity should remain
+    readable through anime contour, expression economy, pose energy, shape simplification, and
+    effect hierarchy instead of a required canon character or title scene.
   color_and_tone: >-
-    Imperial crimson, polished black, royal violet, cold white, gold trim accents, and saturated early-HD
-    emergency glow.
+    Map color through a operatic accent system held inside disciplined cel values, alongside a
+    rebellion accent system held inside disciplined cel values; anchor it in clean digital flats,
+    gothic reds, cool clinical blues, warm romance pastels, pop accents, and deliberate contrast
+    keys; keep value separation clean, cel flats intentional, accents purposeful, and palette
+    behavior attached to the requested content.
   lighting_and_shadow: >-
-    Polished gradient highlights, spotlight-like command keys, crimson rim light, and clean fill for graphic
-    hierarchy.
+    Use a operatic light logic using cel rim, glow behavior, and blocked shadow, alongside a
+    rebellion light logic using cel rim, glow behavior, and blocked shadow; combine it with digital
+    cel rim, bloom accents, dramatic night cuts, clinical overheads, magical glows, and clean
+    compositing separation; shadows should read as anime light design, rims should clarify form, and
+    glow or effects should support the prompt rather than replacing it.
   texture_and_material: >-
-    Smooth digital cel polish, lacquered black surfaces, ceremonial cloth sheen, tactical glass glow, and
-    subtle composite grain.
+    Render cel paint and ink grain tuned to operatic material contrast, alongside cel paint and ink
+    grain tuned to rebellion material contrast; anchor surfaces in digital ink edges, subtle
+    gradient fills, polished cloth and hair shapes, screen-like glow, and controlled texture
+    overlays; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere
+    must stay coherent across people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Strategic overhead cues, theatrical diagonals, throne-like negative space, and compressed command-board
-    perspective.
-  atmosphere_and_mood: Grand, strategic, dramatic, political
+    Frame around upward diagonals, opposing masses, and defiant spacing, alongside operatic
+    converted into reusable framing rhythm and anime timing, then extend it with opening-sequence
+    energy, split-second action framing, romcom reaction spacing, gothic symmetry, and readable
+    effect geometry; the style should support portraits, props, machines, performances, landscapes,
+    symbols, and full scenes through reusable anime staging grammar instead of one fixed card
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through defiance, risk, and group resolve, alongside operatic emotional pressure and
+    genre-specific tone; braid it with genre fluency: deadpan comedy, gothic danger, romance
+    friction, rebellion, paranoia, elegance, and pop unreality; the preset can become funny,
+    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
+    the chosen anime lineage.
   rendering_and_quality: >-
-    Early-2000s digital anime production frame with clean rendering, smooth color blending, and high-drama
-    readability.
+    Finish with clean anime finishing that keeps operatic identity readable without noisy denoise,
+    alongside clean anime finishing that keeps rebellion identity readable without noisy denoise;
+    enforce clean 2000s cel-digital finish with strong design readability, controlled effects, and
+    no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or object
+    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
+    photoreal or 3D-render drift.
   key_features: >-
-    Masked intention, chesslike composition, crimson-black authority, theatrical diagonals, and elegant
-    defiance.
+    a operatic anime direction shaped by era-aware line economy and genre tone, alongside a
+    rebellion anime direction shaped by era-aware line economy and genre tone; contours paced by
+    operatic tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    rebellion tension, readable pose energy, and silhouette discipline; cel paint and ink grain
+    tuned to operatic material contrast, alongside cel paint and ink grain tuned to rebellion
+    material contrast; a operatic light logic using cel rim, glow behavior, and blocked shadow,
+    alongside a rebellion light logic using cel rim, glow behavior, and blocked shadow; upward
+    diagonals, opposing masses, and defiant spacing, alongside operatic converted into reusable
+    framing rhythm and anime timing
   creative_brief: >-
-    Build a reusable operatic-rebellion strategy grammar for any subject or input image: command posture,
-    aristocratic tension, crimson-black graphic hierarchy, masked intent, and early-digital political drama.
-    Mecha, masks, uniforms, or command geometry may appear as strategic style cues when they strengthen the
-    input, without fixing a command room, revolution plot, empire scene, or specific costume.
+    Apply Operatic Rebellion Strategy Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
+    operatic anime direction shaped by era-aware line economy and genre tone, alongside a rebellion
+    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
+    operatic tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    rebellion tension, readable pose energy, and silhouette discipline; a operatic accent system
+    held inside disciplined cel values, alongside a rebellion accent system held inside disciplined
+    cel values; a operatic light logic using cel rim, glow behavior, and blocked shadow, alongside a
+    rebellion light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain
+    tuned to operatic material contrast, alongside cel paint and ink grain tuned to rebellion
+    material contrast and upward diagonals, opposing masses, and defiant spacing, alongside operatic
+    converted into reusable framing rhythm and anime timing, finish discipline, and negative
+    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
+    instrument, weapon, or card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -55,12 +101,24 @@ avoidRules:
   - watermark
   - text
   - signature
+  - generic isekai gloss
+  - plastic digital anime
+  - overbusy effects clutter
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-026.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
+    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
+    anime filter, prompt-literal card, muddy cel noise, readable text
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

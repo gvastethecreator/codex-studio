@@ -14,37 +14,80 @@ tags:
   - african-myth
 visualDna:
   aesthetic: >-
-    Baobab Star Counsel within 6. Mythic African Cosmologies: a reusable Mythic Noir Curated Vault visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Baobab Star Counsel's specific style identity.
+    Baobab Star Counsel acts as a transferable mythic-noir router: rooted ancestral scale and
+    tree-memory authority, astral witness logic and high-contrast memory points plus grave advisory
+    myth and shared judgment pressure fused with African cosmology noir with oral-history rhythm,
+    carved lineage, rain law, star memory, trickster wit, and civic myth; it carries symbol, omen,
+    ritual authority, and mature editorial restraint without locking prompt content to its sample
+    image.
   subject_treatment: >-
-    Define Baobab Star Counsel through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Keep the user's prompt subject, action, and context intact while reshaping identity through
+    heavy rooted silhouettes and ancient branching mass, constellation-like emphasis and small
+    decisive contour marks plus council-weighted mass and decision-bearing contour; forms should
+    inherit silhouette pressure, emblem logic, ritual posture, edge weight, and motif placement
+    instead of a mandatory actor or prop set.
   color_and_tone: >-
-    Use a Baobab Star Counsel-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Map color through baobab gray, night umber, and dry ochre highlights, star white, deep
+    blue-black, and gold pinpricks plus old gold, night umber, and star-white decision points
+    together with night umber, baobab gray, calabash ochre, star white, rain green, ember orange,
+    palm black, and ceremonial gold; values stay separated, accents feel intentional, and the dark
+    palette supports the requested content rather than swallowing it.
   lighting_and_shadow: >-
-    Use lighting that makes Baobab Star Counsel recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use starlit bark glints and council-fire edge warmth, small star glints and distant
+    high-contrast sparks plus small decision glints arranged like listening stars with fire-circle
+    glow, storm flashes, star counsel glints, rain sheen, and carved-edge highlights with deep
+    breathable shadow; shadows must carry omen weight, rims should clarify form, and glow should
+    behave as ritual evidence rather than decorative haze.
   texture_and_material: >-
-    Use materials and textures that reinforce Baobab Star Counsel: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
+    Render dry bark grain, gray wood, and dust-filled creases, pinpoint mineral shine, night dust,
+    and polished dark grain plus handled wood, worn metal, dust, and record-like surface traces
+    alongside carved wood, calabash shell, beadwork, drum skin, rain gloss, river silt, palm fiber,
+    ash, iron, and soot-dark cloth; surface scale, patina, residue, gloss, grain, and carved or
+    sealed edges must remain coherent across characters, objects, scenes, and abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Baobab Star Counsel: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame with rooted vertical weight and council-like radial spacing, constellation spacing and
+    navigational points plus council-ring spacing and star-like decision points plus council rings,
+    lineage bands, relay rhythm, navigation arcs, mask-plane balance, and communal authority
+    spacing; the style should support portraits, objects, architecture, creatures, symbols, and full
+    scenes through reusable spatial grammar instead of one fixed layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Baobab Star Counsel: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through elder counsel, slow memory, and grounded cosmic witness, remote witness,
+    orientation, and remembered consequence plus grave deliberation and shared ancestral
+    intelligence and ancestral intelligence, civic gravity, playful danger, sovereignty,
+    stewardship, rain hunger, and remembered fire; the image can become severe, sensual, sacred,
+    violent, quiet, or strange when prompt X asks for it, while the preset supplies mythic
+    consequence.
   rendering_and_quality: >-
-    Render Baobab Star Counsel with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
+    Finish with tactile bark readability with denoised dark editorial restraint plus pinpoint light
+    control with clean dark-field readability and authorial illustrated finish with tactile craft,
+    controlled dark values, denoised texture, and no decorative stereotype drift; prioritize clean
+    denoise, readable dark values, strong silhouette hierarchy, tactile material truth, and no
+    watermark, fake text, logos, accidental UI, or muddy black crush.
   key_features: >-
-    Prioritize Baobab Star Counsel's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    rooted ancestral scale and tree-memory authority, astral witness logic and high-contrast memory
+    points plus grave advisory myth and shared judgment pressure; heavy rooted silhouettes and
+    ancient branching mass, constellation-like emphasis and small decisive contour marks plus
+    council-weighted mass and decision-bearing contour; dry bark grain, gray wood, and dust-filled
+    creases, pinpoint mineral shine, night dust, and polished dark grain plus handled wood, worn
+    metal, dust, and record-like surface traces; starlit bark glints and council-fire edge warmth,
+    small star glints and distant high-contrast sparks plus small decision glints arranged like
+    listening stars; rooted vertical weight and council-like radial spacing, constellation spacing
+    and navigational points plus council-ring spacing and star-like decision points
   creative_brief: >-
-    Create a style-card that translates Baobab Star Counsel into a portable visual system for 6. Mythic
-    African Cosmologies. Preserve the preset identity through style mechanics, not a fixed scene, character,
-    prop, or story beat.
+    Apply Baobab Star Counsel after prompt X as a transferable mythic-noir layer: prompt X supplies
+    subject, action, setting, and intensity, while this preset supplies rooted ancestral scale and
+    tree-memory authority, astral witness logic and high-contrast memory points plus grave advisory
+    myth and shared judgment pressure, heavy rooted silhouettes and ancient branching mass,
+    constellation-like emphasis and small decisive contour marks plus council-weighted mass and
+    decision-bearing contour, baobab gray, night umber, and dry ochre highlights, star white, deep
+    blue-black, and gold pinpricks plus old gold, night umber, and star-white decision points,
+    starlit bark glints and council-fire edge warmth, small star glints and distant high-contrast
+    sparks plus small decision glints arranged like listening stars, dry bark grain, gray wood, and
+    dust-filled creases, pinpoint mineral shine, night dust, and polished dark grain plus handled
+    wood, worn metal, dust, and record-like surface traces plus rooted vertical weight and
+    council-like radial spacing, constellation spacing and navigational points plus council-ring
+    spacing and star-like decision points, finish discipline, and negative controls without
+    requiring a fixed deity, ritual, prop bundle, location, or sample composition.
 avoidRules:
   - photoreal
   - caricature
@@ -52,10 +95,23 @@ avoidRules:
   - watermark
   - text
   - logo
+  - tourist folklore
+  - tribal pattern cliche
+  - random animal mascot
+  - fixed deity portrait
+  - required ritual scene
+  - literal sample composition
+  - generic dark fantasy
+  - muddy black crush
+  - random occult symbols
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-057.webp
 attributes:
-  negativePrompt: photoreal, caricature, cyber-neon, watermark, text, logo
+  negativePrompt: >-
+    photoreal, caricature, cyber-neon, watermark, text, logo, tourist folklore, tribal pattern
+    cliche, random animal mascot, fixed deity portrait, required ritual scene, literal sample
+    composition, generic dark fantasy, muddy black crush, random occult symbols, readable text
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

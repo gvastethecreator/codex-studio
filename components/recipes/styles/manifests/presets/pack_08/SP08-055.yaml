@@ -12,27 +12,85 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Chunky knit warmth, hygge comfort, handmade winter coziness
-  subject_treatment: Cable-knit pattern, oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm
-  color_and_tone: Cream, Grey, oatmeal, charcoal, forest, mustard, rust, undyed-wool ivory
-  lighting_and_shadow: Soft overcast light, fireplace-warm amber, candle-flicker glow
-  texture_and_material: Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief
+  aesthetic: >-
+    Knitted Wool operates as a portable fashion-costume router: combine Chunky knit warmth, hygge
+    comfort, handmade winter coziness with material-forward fashion transformation with drape,
+    surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies
+    styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Cable-knit pattern,
+    oversized volume, ribbed taper, rolled-neck cylinder, soft loft rhythm; identity stays readable
+    as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Soft overcast light, fireplace-warm amber, candle-flicker glow plus material-revealing light
+    with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as
+    the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor
+    structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Wool yarn, merino twist, alpaca halo, cashmere fuzz, Shetland wool, lambswool loft,
+    cable-knit relief plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke,
+    water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Knitted Wool using its key spatial cues: Knit loops, cable braid, ribbed hem, wooden-button
-    cues, rolled neck.
-  atmosphere_and_mood: Comfortable, winter, wool warmth, snowed-in serenity, handmade calm
-  rendering_and_quality: Cozy, warm, cabin-retreat comfort, Aran-island authenticity
-  key_features: Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck
+    Compose with Compose for Knitted Wool using its key spatial cues: Knit loops, cable braid,
+    ribbed hem, wooden-button cues, rolled neck plus drape rhythm, material coverage, silhouette
+    clarity, tactile close detail, fold direction, and transformation edge control as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Knitted Wool while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Chunky knit warmth, hygge comfort, handmade winter coziness; Cable-knit pattern, oversized
+    volume, ribbed taper, rolled-neck cylinder, soft loft rhythm; Wool yarn, merino twist, alpaca
+    halo, cashmere fuzz, Shetland wool, lambswool loft, cable-knit relief; Soft overcast light,
+    fireplace-warm amber, candle-flicker glow; Compose for Knitted Wool using its key spatial cues:
+    Knit loops, cable braid, ribbed hem, wooden-button cues, rolled neck
   creative_brief: >-
-    Knit the input into wool texture: cable-braid relief, ribbed hems, alpaca halo, merino twist,
-    wooden-button cues and oatmeal/charcoal warmth. Keep hygge comfort without requiring a cabin, fireplace
-    vignette, torso framing or sweater portrait.
+    Use Knitted Wool after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Chunky knit warmth,
+    hygge comfort, handmade winter coziness, Cable-knit pattern, oversized volume, ribbed taper,
+    rolled-neck cylinder, soft loft rhythm, Wool yarn, merino twist, alpaca halo, cashmere fuzz,
+    Shetland wool, lambswool loft, cable-knit relief, Soft overcast light, fireplace-warm amber,
+    candle-flicker glow, Compose for Knitted Wool using its key spatial cues: Knit loops, cable
+    braid, ribbed hem, wooden-button cues, rolled neck plus weave, pile, grain, shine, translucency,
+    opacity, stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior,
+    light response, material treatment, silhouette grammar, and finish discipline without requiring
+    one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - smooth
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-055.webp
 attributes:
-  negativePrompt: smooth
+  negativePrompt: >-
+    smooth, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -13,37 +13,58 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: >-
-    Analog Cut-Paper Collage within 5. Mixed Media: a reusable Essential Art Styles visual language with a
-    clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
-    across subjects while preserving Analog Cut-Paper Collage's specific style identity.
+    Analog Cut-Paper Collage acts as a transferable art-medium router: start from Analog Cut-Paper
+    Collage layered material collision, visible joins, tactile surface depth, and handmade assembly
+    rhythm and mixed-media assembly system built from layering, adhesion, surface collision,
+    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Define Analog Cut-Paper Collage through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Transform any prompt subject through adapt the requested subject through layered material
+    collision, visible joins, tactile surface depth, and handmade assembly rhythm while preserving
+    identity; preserve the prompt subject while rebuilding it through collage cuts, photographic
+    fragments, stitched thread, tape, smoke, coffee stain, gilding, marbling, or stencil bridges,
+    keeping the requested identity, silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    Use a Analog Cut-Paper Collage-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Build color with medium-native palette relationships, deliberate contrast, and accent restraint
+    for Analog Cut-Paper Collage; treat color as material combination: paper aging, varnish warmth,
+    toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil
+    flow, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
   lighting_and_shadow: >-
-    Use lighting that makes Analog Cut-Paper Collage recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Handle light through process-led value structure, readable highlights, and medium-specific
+    shadow behavior; make light reveal relief, varnish gloss, paper lift, tape shine, thread shadow,
+    smoke softness, metallic reflection, or flat stencil contrast, so value structure supports the
+    medium and does not overwrite the requested content.
   texture_and_material: >-
-    Use materials and textures that reinforce Analog Cut-Paper Collage: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render layered material collision, visible joins, tactile surface depth, and handmade assembly
+    rhythm; surface detail should show torn fiber, glue, tape edge, cork tooth, thread thickness,
+    soot, coffee bloom, varnish crackle, or assembled object depth, keeping material scale coherent
+    and avoiding noisy filler texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Analog Cut-Paper Collage: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Structure the image through scale rhythm, edge hierarchy, spacing, and composition rules
+    specific to Analog Cut-Paper Collage; compose through layer order, overlap, pin logic, cut
+    rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal
+    craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Analog Cut-Paper Collage: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Keep the mood mood carried by Analog Cut-Paper Collage craft, material pressure, and visual
+    restraint; derive mood from DIY urgency, memory, repair, evidence, punk collision, tactile
+    intimacy, decorative excess, or experimental material play, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
   rendering_and_quality: >-
-    Render Analog Cut-Paper Collage with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with finished Analog Cut-Paper Collage craft with clear medium evidence and controlled
+    detail; finish with coherent material stacking, readable subject transformation, and no single
+    flat texture pasted over the whole image, clean denoised surfaces where appropriate, and enough
+    craft evidence to make the medium recognizable.
   key_features: >-
-    Prioritize Analog Cut-Paper Collage's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    Analog Cut-Paper Collage layered material collision, visible joins, tactile surface depth, and
+    handmade assembly rhythm; medium-native palette relationships, deliberate contrast, and accent
+    restraint for Analog Cut-Paper Collage; scale rhythm, edge hierarchy, spacing, and composition
+    rules specific to Analog Cut-Paper Collage
   creative_brief: >-
-    Create a style-card that translates Analog Cut-Paper Collage into a portable visual system for 5. Mixed
-    Media. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
-    beat.
+    Apply Analog Cut-Paper Collage as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Analog Cut-Paper Collage layered material collision, visible joins, tactile surface
+    depth, and handmade assembly rhythm without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -62,12 +83,25 @@ avoidRules:
   - border
   - readable magazine text
   - specific source photo requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-061.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, readable magazine text, specific source photo requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, readable magazine text, specific source
+    photo requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter,
+    readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table
+    default, clean vector render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -8,6 +8,7 @@ import {
   IconBuilding as Building,
   IconCamera as Camera,
   IconCheck as Check,
+  IconChevronDown as ChevronDown,
   IconChevronLeft as ChevronLeft,
   IconChevronRight as ChevronRight,
   IconMovie as Clapperboard,
@@ -36,7 +37,7 @@ import {
   IconWand as Wand2,
   IconX as X,
 } from '@tabler/icons-react';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import {
   STYLE_CARD_THUMBNAILS,
   STYLE_CATEGORY_IMAGES,
@@ -47,13 +48,10 @@ import {
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
-import {
-  resolveStylePresetCardImages,
-  type StylePresetCardImage,
-} from '../../lib/stylePresetVisuals';
+import { resolveStylePresetCardImages } from '../../lib/stylePresetVisuals';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
 import Tooltip from '../Tooltip';
-import { FloatingTooltip } from '../ui/FloatingTooltip';
+import { GsapDropdown } from '../ui/GsapDropdown';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import { RecipeLayout } from './RecipeLayout';
 import {
@@ -65,7 +63,12 @@ import {
   type StyleBrowserSortOrder,
   type StyleBrowserViewMode,
 } from './styleBrowserRenderPlan';
-import { estimateStyleGroupPlaceholderHeight } from './styleGridVirtualization';
+import {
+  STYLE_GRID_DEFAULT_VIEWPORT_HEIGHT_PX,
+  createStyleGridVirtualWindow,
+  estimateStyleGroupPlaceholderHeight,
+  type StyleGridVirtualWindow,
+} from './styleGridVirtualization';
 import {
   clampStyleLayerFieldWeight,
   clampStyleStrength,
@@ -91,7 +94,7 @@ import {
   type StyleRuntimePack,
   type StyleRuntimePreset,
 } from './stylesData';
-import type { StyleCollection, StyleCollectionRuntimePreset } from './styles/collections';
+import type { StyleCollection } from './styles/collections';
 import {
   getStyleCollectionIdFromTabId,
   getStyleCollectionTabId,
@@ -115,6 +118,16 @@ import type {
   UserStylePresetDraft,
   UserStylePresetSource,
 } from '../../packages/shared/src';
+import type {
+  StyleRecipeNavigationItem,
+  StyleRecipeNavigationSection,
+  StyleTheme,
+} from './StyleRecipeNavigationPanel';
+import type {
+  StyleCardHoverPreview,
+  StylePresetSourceProvenance,
+  StylePresetVisualState,
+} from './StylePresetCardSurface';
 
 interface StylesRecipeProps {
   config: ImageGenerationConfig;
@@ -202,7 +215,17 @@ const StyleCollectionsLandingSurface = React.lazy(() =>
   })),
 );
 
-type StyleTheme = { color: string; bg: string; border: string; text: string };
+const StyleRecipeNavigationPanel = React.lazy(() =>
+  import('./StyleRecipeNavigationPanel').then((module) => ({
+    default: module.StyleRecipeNavigationPanel,
+  })),
+);
+
+const StylePresetCard = React.lazy(() =>
+  import('./StylePresetCardSurface').then((module) => ({
+    default: module.StylePresetCard,
+  })),
+);
 
 // Color mapping for each pack to give them distinct identities
 const PACK_THEMES: Record<string, StyleTheme> = {
@@ -415,47 +438,6 @@ function getCategoryVisualIdentity(
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { startViewTransition } from '../../utils/transitionUtils';
 
-interface StyleCardHoverPreview {
-  id: string;
-  name: string;
-  category: string;
-  packName: string;
-  aesthetic: string;
-  imageSrc: string | null;
-}
-
-interface StylePresetVisualState {
-  presetPackName: string;
-  resultImages: GeneratedImageWithConfig[];
-  defaultImage: string | undefined;
-  defaultImageVariants: string[];
-  defaultImageStale: boolean;
-  previewImage: string | undefined;
-  exampleImageSrc: string | null;
-}
-
-interface StylePresetSourceProvenance {
-  sourcePackId: string;
-  sourcePackName: string;
-  sourceCategory: string;
-  collectionRole: StyleCollectionRuntimePreset['collectionRole'];
-}
-
-interface StylePresetCardProps {
-  preset: StyleRuntimePreset;
-  packId: string;
-  sourceProvenance?: StylePresetSourceProvenance;
-  visualState: StylePresetVisualState | undefined;
-  active: boolean;
-  copied: boolean;
-  favorite: boolean;
-  theme: { color: string; bg: string; border: string; text: string };
-  onApply: (preset: StyleRuntimePreset) => void;
-  onCopy: (e: React.MouseEvent, preset: StyleRuntimePreset) => void;
-  onToggleFavorite: (presetId: string) => void;
-  onHoverPreviewChange: (preview: StyleCardHoverPreview | null) => void;
-}
-
 function getStyleTabHash(tabId: StyleTabId) {
   return getStyleTabHashForRoute(tabId, STYLE_TAB_ROUTE_OPTIONS);
 }
@@ -529,14 +511,6 @@ function resolveStylePresetPrimaryCardImage(visualState: StylePresetVisualState 
   );
 }
 
-function resolveStyleCardImageDiagnostics({
-  activeCardImage,
-}: {
-  activeCardImage: StylePresetCardImage | null;
-}) {
-  return activeCardImage ?? ({ kind: 'empty', src: null } as const);
-}
-
 interface StylePresetGroupSectionProps {
   groupKey: string;
   title: string;
@@ -553,404 +527,253 @@ interface StylePresetGroupSectionProps {
   renderPresetCard: (preset: StyleRuntimePreset) => React.ReactNode;
 }
 
-interface StyleRecipeNavigationItem {
-  id: string;
-  label: string;
-  caption: string;
-  countLabel: string;
-  tabId: StyleTabId;
-  theme: StyleTheme;
-  icon: React.ReactNode;
+function areStyleGridVirtualWindowsEqual(
+  first: StyleGridVirtualWindow,
+  second: StyleGridVirtualWindow,
+) {
+  return (
+    first.startIndex === second.startIndex &&
+    first.endIndex === second.endIndex &&
+    first.topSpacerHeight === second.topSpacerHeight &&
+    first.bottomSpacerHeight === second.bottomSpacerHeight &&
+    first.totalHeight === second.totalHeight
+  );
 }
 
-interface StyleRecipeNavigationSection {
-  id: string;
-  title: string;
-  items: StyleRecipeNavigationItem[];
-}
+function StyleGridPlaceholderCells({
+  gridColumns,
+  presetCount,
+}: {
+  gridColumns: number;
+  presetCount: number;
+}) {
+  const placeholderCount = Math.min(Math.max(0, presetCount), Math.max(gridColumns * 3, 3));
 
-interface StylePresetResultButtonProps {
-  activeCardImage: StylePresetCardImage | null;
-  preset: StyleRuntimePreset;
-  active: boolean;
-  onCycle: (dir: number) => void;
-  hasMultipleImages: boolean;
-  theme: { color: string; bg: string; border: string; text: string };
-  onApply: (preset: StyleRuntimePreset) => void;
-}
-
-const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
-  activeCardImage,
-  preset,
-  active,
-  onCycle,
-  hasMultipleImages,
-  theme,
-  onApply,
-}) => {
-  const handleApplyFromKeyboard = (e: React.KeyboardEvent) => {
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-    e.preventDefault();
-    e.stopPropagation();
-    onApply(preset);
-  };
-
-  const handleCycleFromKeyboard = (e: React.KeyboardEvent, direction: number) => {
-    if (e.key !== 'Enter' && e.key !== ' ') return;
-    e.preventDefault();
-    e.stopPropagation();
-    onCycle(direction);
-  };
-
-  if (activeCardImage) {
-    const staleBadge =
-      activeCardImage.kind === 'stale-default' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-amber-400/30 bg-amber-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-amber-200 shadow-lg backdrop-blur-md">
-          Stale
-        </div>
-      ) : activeCardImage.kind === 'preview' ? (
-        <div className="absolute left-2 top-2 z-20 rounded-[6px] border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
-          Preview
-        </div>
-      ) : null;
-
-    return (
-      <div className="absolute inset-0 group/image">
-        <button
-          type="button"
-          aria-label={`${active ? 'Remove' : 'Select'} ${preset.name}`}
-          onClick={() => onApply(preset)}
-          className="absolute inset-0 z-10 cursor-pointer"
-        >
-          <img
-            src={activeCardImage.src}
-            width={300}
-            height={400}
-            loading="lazy"
-            decoding="async"
-            className={`style-preset-thumbnail size-full object-cover transition-[opacity,filter] duration-300 ease-out group-hover/image:opacity-100 group-hover/image:brightness-[1.02] group-hover/image:saturate-[1.02] ${
-              activeCardImage.kind === 'stale-default'
-                ? 'opacity-[0.82] saturate-[0.86] brightness-[0.92]'
-                : activeCardImage.kind === 'preview'
-                  ? 'opacity-75 saturate-[0.9]'
-                  : 'opacity-[0.96]'
-            }`}
-            alt={preset.name}
-          />
-          {activeCardImage.kind === 'stale-default' ? (
-            <div className="absolute inset-0 bg-zinc-950/18 transition-colors group-hover/image:bg-zinc-950/10" />
-          ) : null}
-          <div className="absolute inset-0 bg-zinc-950/35 opacity-0 transition-opacity group-hover/image:opacity-100" />
-          <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover/image:opacity-100">
-            <div className="flex size-10 items-center justify-center rounded-full border border-white/15 bg-zinc-950/55 text-white backdrop-blur-md">
-              {active ? <Check size={18} /> : <Plus size={18} />}
-            </div>
-          </div>
-        </button>
-
-        {staleBadge}
-
-        {hasMultipleImages && (
-          <div className="pointer-events-none absolute inset-y-0 left-2 right-2 z-30 flex items-center justify-between opacity-0 transition-opacity group-hover/image:opacity-100 group-focus-within/image:opacity-100">
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                onCycle(-1);
-              }}
-              onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
-              aria-label={`Previous image for ${preset.name}`}
-            >
-              <ChevronLeft size={14} />
-            </button>
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                onCycle(1);
-              }}
-              onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
-              className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
-              aria-label={`Next image for ${preset.name}`}
-            >
-              <ChevronRight size={14} />
-            </button>
-          </div>
-        )}
-
-        <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100">
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation();
-              onApply(preset);
-            }}
-            onKeyDown={handleApplyFromKeyboard}
-            className="rounded-[6px] border border-white/10 bg-zinc-950/60 p-1.5 text-white shadow-lg backdrop-blur-md transition-colors hover:bg-accent-600"
-            title={active ? 'Remove style' : 'Select style'}
-          >
-            {active ? <Check size={14} /> : <Plus size={14} />}
-          </button>
-        </div>
-      </div>
-    );
-  }
+  if (placeholderCount <= 0) return null;
 
   return (
-    <button
-      type="button"
-      onClick={() => onApply(preset)}
-      className="absolute inset-0 flex size-full cursor-pointer flex-col items-center justify-center gap-3 bg-zinc-900/50 transition-colors hover:bg-zinc-800 disabled:cursor-not-allowed"
-      aria-pressed={active}
+    <div
+      data-style-grid-placeholder
+      className="grid gap-2.5"
+      style={{
+        gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))`,
+      }}
+    >
+      {Array.from({ length: placeholderCount }, (_, index) => (
+        <div
+          key={index}
+          data-style-grid-placeholder-card
+          className="aspect-[3/4] rounded-[6px] border border-white/[0.055] bg-zinc-900/32 shadow-[inset_0_1px_0_rgba(255,255,255,0.035)]"
+        >
+          <div className="h-full rounded-[6px] bg-linear-to-b from-white/[0.035] via-transparent to-black/20" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function StyleGridVirtualSpacer({
+  align,
+  gridColumns,
+  height,
+  presetCount,
+}: {
+  align: 'start' | 'end';
+  gridColumns: number;
+  height: number;
+  presetCount: number;
+}) {
+  if (height <= 0) return null;
+
+  return (
+    <div
+      aria-hidden="true"
+      data-style-grid-virtual-spacer={align}
+      className="relative overflow-hidden"
+      style={{ height }}
     >
       <div
-        className={`flex size-14 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 transition-colors duration-300 group-hover:bg-white/8 ${theme.text}`}
+        className={`pointer-events-none absolute inset-x-0 ${
+          align === 'end' ? 'bottom-0' : 'top-0'
+        } opacity-55`}
       >
-        <Palette size={24} />
+        <StyleGridPlaceholderCells gridColumns={gridColumns} presetCount={presetCount} />
       </div>
-      <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600 opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100 translate-y-2">
-        {active ? 'Selected' : 'Select'}
-      </span>
-    </button>
+    </div>
   );
+}
+
+type StyleFadeImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+  fadeDuration?: number;
+  fadeScale?: number;
 };
 
-const StylePresetCard = React.memo(
-  ({
-    preset,
-    packId,
-    sourceProvenance,
-    visualState,
-    active,
-    copied,
-    favorite,
-    theme,
-    onApply,
-    onCopy,
-    onToggleFavorite,
-    onHoverPreviewChange,
-  }: StylePresetCardProps) => {
-    const [imageIndex, setImageIndex] = useState(0);
-    const isHoveredRef = useRef(false);
+type StyleImageGsap = typeof import('../../lib/motionRuntime').default;
 
-    const resultImages = visualState?.resultImages ?? EMPTY_IMAGES;
-    const cardImages = useMemo(
-      () =>
-        resolveStylePresetCardImages({
-          resultImages,
-          defaultImage: visualState?.defaultImage,
-          defaultImageVariants: visualState?.defaultImageVariants,
-          defaultImageStale: visualState?.defaultImageStale ?? false,
-          previewImage: visualState?.previewImage,
-        }),
-      [
-        resultImages,
-        visualState?.defaultImage,
-        visualState?.defaultImageVariants,
-        visualState?.defaultImageStale,
-        visualState?.previewImage,
-      ],
-    );
-    const hasMultipleImages = cardImages.length > 1;
-    const activeCardImage = cardImages[imageIndex] ?? cardImages[0] ?? null;
-    const imageDiagnostics = resolveStyleCardImageDiagnostics({
-      activeCardImage,
+const STYLE_IMAGE_FADE_DURATION_SECONDS = 0.26;
+const STYLE_IMAGE_FADE_SCALE = 1.01;
+const STYLE_IMAGE_FADE_CLEAR_PROPS = 'opacity,visibility,transform';
+const STYLE_IMAGE_FADE_GSAP_FALLBACK_MS = 700;
+
+let styleImageGsapPromise: Promise<StyleImageGsap> | null = null;
+
+function loadStyleImageGsap() {
+  styleImageGsapPromise ??= import('../../lib/motionRuntime').then((module) => module.default);
+  return styleImageGsapPromise;
+}
+
+function readStyleImageOpacity(node: HTMLImageElement) {
+  if (typeof window === 'undefined') return 1;
+  const opacity = Number.parseFloat(window.getComputedStyle(node).opacity);
+  return Number.isFinite(opacity) ? opacity : 1;
+}
+
+function shouldReduceStyleImageMotion() {
+  return (
+    typeof window !== 'undefined' &&
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  );
+}
+
+function primeStyleImageFade(node: HTMLImageElement, fadeScale: number) {
+  node.style.opacity = '0';
+  node.style.visibility = 'hidden';
+  node.style.transform = `scale(${fadeScale})`;
+  node.style.transformOrigin = '50% 50%';
+  node.style.willChange = 'transform, opacity';
+}
+
+function clearStyleImageFadeState(node: HTMLImageElement, runtime?: StyleImageGsap | null) {
+  if (runtime) {
+    runtime.set(node, {
+      clearProps: STYLE_IMAGE_FADE_CLEAR_PROPS,
+      willChange: 'auto',
     });
+    return;
+  }
 
-    const prevImageCountRef = useRef(cardImages.length);
-    if (prevImageCountRef.current !== cardImages.length) {
-      prevImageCountRef.current = cardImages.length;
-      setImageIndex(0);
+  node.style.removeProperty('opacity');
+  node.style.removeProperty('visibility');
+  node.style.removeProperty('transform');
+  node.style.willChange = 'auto';
+}
+
+const StyleFadeImage = React.memo(function StyleFadeImage({
+  fadeDuration = STYLE_IMAGE_FADE_DURATION_SECONDS,
+  fadeScale = STYLE_IMAGE_FADE_SCALE,
+  src,
+  ...imageProps
+}: StyleFadeImageProps) {
+  const imageRef = useRef<HTMLImageElement | null>(null);
+
+  useLayoutEffect(() => {
+    const node = imageRef.current;
+    if (!node) return undefined;
+
+    if (shouldReduceStyleImageMotion()) {
+      clearStyleImageFadeState(node);
+      return undefined;
     }
 
-    const applyHoverPreview = useCallback(
-      (imageSrc: string | null) => {
-        onHoverPreviewChange({
-          id: preset.id,
-          name: preset.name,
-          category: preset.category || 'General',
-          packName: visualState?.presetPackName ?? 'Styles',
-          aesthetic: preset.style.aesthetic,
-          imageSrc,
+    let disposed = false;
+    let fallbackVisible = false;
+    let runtime: StyleImageGsap | null = null;
+    let context: { revert: () => void } | null = null;
+    const targetOpacity = readStyleImageOpacity(node);
+
+    const showWithoutMotion = () => {
+      if (disposed || fallbackVisible || runtime) return;
+      fallbackVisible = true;
+      clearStyleImageFadeState(node);
+    };
+    let fallbackTimer = window.setTimeout(() => {
+      if (node.complete) showWithoutMotion();
+    }, STYLE_IMAGE_FADE_GSAP_FALLBACK_MS);
+    const scheduleFallback = () => {
+      window.clearTimeout(fallbackTimer);
+      fallbackTimer = window.setTimeout(() => {
+        if (node.complete) showWithoutMotion();
+      }, STYLE_IMAGE_FADE_GSAP_FALLBACK_MS);
+    };
+
+    const revealImage = () => {
+      if (disposed || fallbackVisible) return;
+      if (!runtime) return;
+      if (node.naturalWidth <= 0) {
+        clearStyleImageFadeState(node, runtime);
+        return;
+      }
+
+      runtime.killTweensOf(node);
+      runtime.fromTo(
+        node,
+        {
+          autoAlpha: 0,
+          scale: fadeScale,
+        },
+        {
+          autoAlpha: targetOpacity,
+          scale: 1,
+          duration: fadeDuration,
+          ease: 'power2.out',
+          overwrite: 'auto',
+          onStart: () => {
+            runtime?.set(node, { willChange: 'transform, opacity' });
+          },
+          onComplete: () => clearStyleImageFadeState(node, runtime),
+        },
+      );
+    };
+
+    const handleLoad = () => {
+      if (runtime) {
+        revealImage();
+        return;
+      }
+      scheduleFallback();
+    };
+    const handleError = () => {
+      fallbackVisible = true;
+      clearStyleImageFadeState(node, runtime);
+    };
+
+    primeStyleImageFade(node, fadeScale);
+
+    if (!node.complete) {
+      node.addEventListener('load', handleLoad, { once: true });
+      node.addEventListener('error', handleError, { once: true });
+    }
+
+    void loadStyleImageGsap().then((loadedRuntime) => {
+      if (disposed || fallbackVisible) return;
+      runtime = loadedRuntime;
+      context = loadedRuntime.context(() => {
+        loadedRuntime.killTweensOf(node);
+        loadedRuntime.set(node, {
+          autoAlpha: 0,
+          scale: fadeScale,
+          transformOrigin: '50% 50%',
+          willChange: 'transform, opacity',
         });
-      },
-      [onHoverPreviewChange, preset, visualState?.presetPackName],
-    );
+      }, node);
 
-    const syncHoverPreview = useCallback(
-      (nextIndex: number) => {
-        applyHoverPreview(cardImages[nextIndex]?.src || visualState?.exampleImageSrc || null);
-      },
-      [applyHoverPreview, cardImages, visualState?.exampleImageSrc],
-    );
+      if (node.complete) revealImage();
+    });
 
-    const handleCycle = useCallback(
-      (delta: number) => {
-        if (!hasMultipleImages) return;
-        setImageIndex((current) => {
-          const next = (current + delta + cardImages.length) % cardImages.length;
-          if (isHoveredRef.current) {
-            queueMicrotask(() => syncHoverPreview(next));
-          }
-          return next;
-        });
-      },
-      [cardImages.length, hasMultipleImages, syncHoverPreview],
-    );
+    return () => {
+      disposed = true;
+      window.clearTimeout(fallbackTimer);
+      node.removeEventListener('load', handleLoad);
+      node.removeEventListener('error', handleError);
+      runtime?.killTweensOf(node);
+      context?.revert();
+      clearStyleImageFadeState(node, runtime);
+    };
+  }, [fadeDuration, fadeScale, src]);
 
-    return (
-      <FloatingTooltip
-        delay={200}
-        content={
-          <div className="flex w-64 flex-col gap-2 p-3 text-left">
-            <div className="mb-1 text-[10px] font-black uppercase tracking-widest text-zinc-500">
-              Prompt Preview
-            </div>
-            <div className="flex max-h-48 flex-col gap-1 overflow-y-auto font-mono text-[10px] leading-relaxed text-zinc-300 custom-scrollbar">
-              {Object.entries(preset.style).map(([key, value]) => {
-                const previewValue = describePreviewValue(value);
-                if (!previewValue) return null;
-                return (
-                  <div key={key}>
-                    <span className="capitalize text-zinc-500">{key.replace(/_/g, ' ')}:</span>{' '}
-                    {previewValue}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        }
-      >
-        <div
-          onPointerEnter={() => {
-            isHoveredRef.current = true;
-            syncHoverPreview(imageIndex);
-          }}
-          onPointerLeave={() => {
-            isHoveredRef.current = false;
-            onHoverPreviewChange(null);
-          }}
-          data-style-preset-card={preset.id}
-          data-style-pack-id={packId}
-          data-style-category={preset.category || 'General'}
-          data-style-image-kind={imageDiagnostics.kind}
-          data-style-image-src={imageDiagnostics.src ?? ''}
-          data-style-default-stale={visualState?.defaultImageStale ? 'true' : 'false'}
-          data-style-source-pack-id={sourceProvenance?.sourcePackId ?? ''}
-          data-style-source-category={sourceProvenance?.sourceCategory ?? ''}
-          data-style-collection-role={sourceProvenance?.collectionRole ?? ''}
-          className={`group relative aspect-[3/4] overflow-hidden rounded-[6px] text-left transition-[border-color,background-color,box-shadow,transform] duration-200 ease-out hover:-translate-y-0.5 ${
-            active
-              ? `ring-2 ring-offset-4 ring-offset-black ${theme.border.replace('border', 'ring')} bg-zinc-950 shadow-[0_18px_40px_rgba(0,0,0,0.34)]`
-              : 'border border-white/5 bg-zinc-950 hover:border-white/10 hover:bg-zinc-900/95 hover:shadow-[0_14px_30px_rgba(0,0,0,0.24)]'
-          }`}
-          style={
-            {
-              contentVisibility: 'auto',
-              containIntrinsicSize: '280px 210px',
-            } as React.CSSProperties
-          }
-        >
-          <div className="absolute inset-0 overflow-hidden bg-zinc-950">
-            <StylePresetResultButton
-              activeCardImage={activeCardImage}
-              preset={preset}
-              active={active}
-              onCycle={handleCycle}
-              hasMultipleImages={hasMultipleImages}
-              theme={theme}
-              onApply={onApply}
-            />
-          </div>
-
-          <div className="pointer-events-none absolute right-2 top-2 z-30 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                onToggleFavorite(preset.id);
-              }}
-              className={`rounded-[6px] border border-white/10 p-1.5 backdrop-blur-md transition-all duration-150 ${favorite ? 'bg-zinc-950/60 text-rose-500' : 'bg-zinc-950/35 text-zinc-500 hover:bg-zinc-950/60 hover:text-rose-400'}`}
-              title={favorite ? 'Unpin' : 'Pin to top'}
-            >
-              <Heart
-                size={14}
-                fill={favorite ? 'currentColor' : 'none'}
-                strokeWidth={favorite ? 0 : 2}
-              />
-            </button>
-          </div>
-
-          <div className="absolute inset-x-0 bottom-0 z-20">
-            <div className="relative w-full rounded-t-[6px] rounded-b-none border-t border-white/10 bg-zinc-950/58 px-3 py-2 text-left shadow-[0_-12px_28px_rgba(0,0,0,0.32)] backdrop-blur-md transition-transform duration-200 ease-out group-hover:-translate-y-1 group-focus-within:-translate-y-1">
-              {sourceProvenance ? (
-                <div
-                  data-style-source-provenance
-                  data-style-source-pack-id={sourceProvenance.sourcePackId}
-                  data-style-source-category={sourceProvenance.sourceCategory}
-                  data-style-collection-role={sourceProvenance.collectionRole}
-                  className="mb-1 flex min-w-0 items-center gap-1 text-[8px] font-black uppercase tracking-widest text-zinc-400"
-                  title={`${sourceProvenance.sourcePackName} / ${sourceProvenance.sourceCategory}`}
-                >
-                  <span className="shrink-0 rounded-[4px] border border-white/10 bg-white/[0.045] px-1.5 py-0.5 text-zinc-300">
-                    {sourceProvenance.sourcePackName}
-                  </span>
-                  <span className="min-w-0 truncate rounded-[4px] border border-white/8 bg-black/18 px-1.5 py-0.5 text-zinc-500">
-                    {sourceProvenance.sourceCategory}
-                  </span>
-                  {sourceProvenance.collectionRole !== 'primary' ? (
-                    <span className="shrink-0 rounded-[4px] border border-white/8 px-1 py-0.5 text-zinc-500">
-                      {sourceProvenance.collectionRole.replace('_', ' ')}
-                    </span>
-                  ) : null}
-                </div>
-              ) : null}
-
-              <button
-                type="button"
-                onClick={() => onApply(preset)}
-                aria-pressed={active}
-                className="flex cursor-pointer flex-col justify-center appearance-none border-none p-0 m-0 bg-transparent text-left w-full"
-              >
-                <div className="flex w-full items-center justify-between gap-2">
-                  <span
-                    className={`truncate pr-8 text-[9px] font-black uppercase tracking-tight transition-colors ${active ? 'text-white' : 'text-zinc-200 group-hover:text-white'}`}
-                  >
-                    {preset.name}
-                  </span>
-                  {activeCardImage?.kind === 'result' && (
-                    <div className="size-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />
-                  )}
-                </div>
-                <span className="mt-1 block max-h-0 overflow-hidden pr-7 text-[8px] leading-relaxed text-zinc-300/80 opacity-0 transition-[max-height,opacity,transform,color] duration-200 ease-out group-hover:max-h-10 group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-zinc-200/90 group-focus-within:max-h-10 group-focus-within:translate-y-0 group-focus-within:opacity-100">
-                  {preset.style.aesthetic}
-                </span>
-              </button>
-
-              <div className="pointer-events-none absolute bottom-2 right-2 flex items-center gap-1 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
-                <button
-                  type="button"
-                  onClick={(e) => onCopy(e, preset)}
-                  className="rounded-[6px] p-1 text-zinc-400 transition-all hover:bg-white/8 hover:text-white"
-                  title="Copy Style Prompt"
-                >
-                  {copied ? <Check size={12} className="text-green-500" /> : <Copy size={12} />}
-                </button>
-              </div>
-
-              {active && (
-                <div
-                  className={`absolute top-0 right-0 h-0.5 w-full ${theme.bg} shadow-[0_0_10px_currentColor]`}
-                />
-              )}
-            </div>
-          </div>
-        </div>
-      </FloatingTooltip>
-    );
-  },
-);
+  return <img ref={imageRef} src={src} alt="" data-style-fade-image {...imageProps} />;
+});
 
 const StylePresetGroupSection = React.memo(
   ({
@@ -969,13 +792,34 @@ const StylePresetGroupSection = React.memo(
     renderPresetCard,
   }: StylePresetGroupSectionProps) => {
     const sectionRef = useRef<HTMLDivElement>(null);
+    const gridRef = useRef<HTMLDivElement>(null);
     const [isNearViewport, setIsNearViewport] = useState(() => initiallyVisible);
+    const createInitialGridWindow = useCallback(
+      () =>
+        createStyleGridVirtualWindow({
+          presetCount: presets.length,
+          gridColumns,
+          containerWidth: scrollContainerWidth,
+          viewportTop: 0,
+          viewportBottom: STYLE_GRID_DEFAULT_VIEWPORT_HEIGHT_PX,
+        }),
+      [gridColumns, presets.length, scrollContainerWidth],
+    );
+    const [gridWindow, setGridWindow] = useState(createInitialGridWindow);
     const placeholderHeight = estimateStyleGroupPlaceholderHeight({
       renderedPresetCount: presets.length,
       gridColumns,
       containerWidth: scrollContainerWidth,
       hasShowMore: false,
     });
+    const visiblePresets = useMemo(
+      () => presets.slice(gridWindow.startIndex, gridWindow.endIndex),
+      [gridWindow.endIndex, gridWindow.startIndex, presets],
+    );
+
+    useEffect(() => {
+      setGridWindow(createInitialGridWindow());
+    }, [createInitialGridWindow]);
 
     useEffect(() => {
       if (initiallyVisible) {
@@ -1004,12 +848,63 @@ const StylePresetGroupSection = React.memo(
       return () => observer.disconnect();
     }, [initiallyVisible, scrollRootRef]);
 
+    useEffect(() => {
+      if (!isNearViewport) return;
+
+      const root = scrollRootRef.current;
+      const grid = gridRef.current;
+      if (!root || !grid) {
+        setGridWindow(createInitialGridWindow());
+        return;
+      }
+
+      let animationFrame = 0;
+      const updateGridWindow = () => {
+        animationFrame = 0;
+        const rootRect = root.getBoundingClientRect();
+        const gridRect = grid.getBoundingClientRect();
+        const nextWindow = createStyleGridVirtualWindow({
+          presetCount: presets.length,
+          gridColumns,
+          containerWidth: scrollContainerWidth,
+          viewportTop: rootRect.top - gridRect.top,
+          viewportBottom: rootRect.bottom - gridRect.top,
+        });
+
+        setGridWindow((currentWindow) =>
+          areStyleGridVirtualWindowsEqual(currentWindow, nextWindow) ? currentWindow : nextWindow,
+        );
+      };
+      const scheduleGridWindowUpdate = () => {
+        if (animationFrame !== 0) return;
+        animationFrame = window.requestAnimationFrame(updateGridWindow);
+      };
+
+      updateGridWindow();
+      root.addEventListener('scroll', scheduleGridWindowUpdate, { passive: true });
+      window.addEventListener('resize', scheduleGridWindowUpdate);
+
+      return () => {
+        root.removeEventListener('scroll', scheduleGridWindowUpdate);
+        window.removeEventListener('resize', scheduleGridWindowUpdate);
+        if (animationFrame !== 0) window.cancelAnimationFrame(animationFrame);
+      };
+    }, [
+      createInitialGridWindow,
+      gridColumns,
+      isNearViewport,
+      presets.length,
+      scrollContainerWidth,
+      scrollRootRef,
+    ]);
+
     return (
       <div
         ref={sectionRef}
         data-style-group={groupKey}
         data-style-group-state={isNearViewport ? 'eager' : 'placeholder'}
         data-style-group-planned-cards={presets.length}
+        data-style-group-mounted-cards={isNearViewport ? gridWindow.renderedPresetCount : 0}
         data-style-group-hidden-cards={0}
         className="relative"
         style={isNearViewport ? undefined : { minHeight: placeholderHeight }}
@@ -1028,38 +923,49 @@ const StylePresetGroupSection = React.memo(
         {isNearViewport ? (
           <>
             <div
+              ref={gridRef}
               data-style-group-grid={groupKey}
-              className="grid gap-2.5"
-              style={{
-                gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))`,
-              }}
+              data-style-grid-window={`${gridWindow.startIndex}:${gridWindow.endIndex}`}
+              data-style-grid-total-cards={presets.length}
+              data-style-grid-mounted-cards={gridWindow.renderedPresetCount}
             >
-              {presets.map(renderPresetCard)}
+              <StyleGridVirtualSpacer
+                align="end"
+                gridColumns={gridColumns}
+                height={gridWindow.topSpacerHeight}
+                presetCount={presets.length}
+              />
+              <div
+                className="grid gap-2.5"
+                style={{
+                  gridTemplateColumns: `repeat(${gridColumns}, minmax(0, 1fr))`,
+                }}
+              >
+                {visiblePresets.map(renderPresetCard)}
+              </div>
+              <StyleGridVirtualSpacer
+                align="start"
+                gridColumns={gridColumns}
+                height={gridWindow.bottomSpacerHeight}
+                presetCount={presets.length}
+              />
             </div>
           </>
         ) : (
           <div
             aria-hidden="true"
-            className="rounded-[6px] border border-white/5 bg-zinc-950/20"
+            data-style-group-placeholder
+            className="relative overflow-hidden rounded-[6px] border border-white/5 bg-zinc-950/20 p-2"
             style={{ height: Math.max(120, placeholderHeight - 40) }}
-          />
+          >
+            <StyleGridPlaceholderCells gridColumns={gridColumns} presetCount={presets.length} />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-zinc-950/90 to-transparent" />
+          </div>
         )}
       </div>
     );
   },
 );
-
-function describePreviewValue(value: unknown): string | null {
-  if (typeof value === 'string') {
-    return value.trim() || null;
-  }
-
-  if (typeof value === 'number' || typeof value === 'boolean') {
-    return `${value}`;
-  }
-
-  return null;
-}
 
 function getStylePackSummary(packId: string) {
   if (packId === USER_STYLE_PACK_ID) return USER_STYLE_PACK_SUMMARY;
@@ -1172,102 +1078,6 @@ function getStyleCollectionTheme(collection: StyleCollection): StyleTheme {
   return COLLECTION_FAMILY_THEMES[collection.familyId] ?? PACK_THEMES.pack_01;
 }
 
-function StyleRecipeNavigationPanel({
-  sections,
-  activeTabId,
-  onOpen,
-  onClose,
-}: {
-  sections: StyleRecipeNavigationSection[];
-  activeTabId: StyleTabId;
-  onOpen: (tabId: StyleTabId) => void;
-  onClose: () => void;
-}) {
-  return (
-    <aside data-style-detail-navigation className="hidden min-h-0 min-w-0 lg:block">
-      <div className="flex h-full min-h-0 flex-col overflow-hidden rounded-[6px] border border-white/8 bg-zinc-950/78 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
-        <div className="flex h-12 shrink-0 items-center justify-between gap-2 border-b border-white/6 px-3">
-          <div className="min-w-0">
-            <p className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
-              Style Map
-            </p>
-          </div>
-          <button
-            type="button"
-            onClick={onClose}
-            data-style-detail-navigation-toggle
-            className="flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/8 bg-white/[0.035] text-zinc-500 transition-colors hover:bg-white/8 hover:text-white"
-            aria-label="Hide style map"
-            title="Hide style map"
-          >
-            <ChevronLeft size={14} />
-          </button>
-        </div>
-        <div className="min-h-0 flex-1 overflow-y-auto p-2 custom-scrollbar">
-          {sections.map((section) => (
-            <div key={section.id} className="mb-3 last:mb-0">
-              <div className="mb-1.5 flex items-center gap-2 px-1">
-                <span className="h-px flex-1 bg-white/6" />
-                <span className="text-[8px] font-black uppercase tracking-[0.2em] text-zinc-600">
-                  {section.title}
-                </span>
-                <span className="h-px flex-1 bg-white/6" />
-              </div>
-              <div className="flex flex-col gap-1">
-                {section.items.map((item) => {
-                  const active = activeTabId === item.tabId;
-                  return (
-                    <button
-                      key={item.id}
-                      type="button"
-                      data-style-detail-nav-item={item.tabId}
-                      data-style-detail-nav-active={active ? 'true' : 'false'}
-                      onClick={() => onOpen(item.tabId)}
-                      className={`group/nav flex min-h-9 w-full items-center gap-2 rounded-[6px] border px-2 py-1.5 text-left outline-none transition-[background-color,border-color,transform,color] duration-150 focus-visible:ring-2 focus-visible:ring-white/30 ${
-                        active
-                          ? 'border-white/18 bg-white/10 text-white'
-                          : 'border-transparent bg-transparent text-zinc-500 hover:border-white/10 hover:bg-white/[0.045] hover:text-zinc-200'
-                      }`}
-                    >
-                      <span
-                        className={`flex size-6 shrink-0 items-center justify-center rounded-[5px] border border-white/8 bg-white/[0.035] ${item.theme.text}`}
-                      >
-                        {item.icon}
-                      </span>
-                      <span className="min-w-0 flex-1">
-                        <span
-                          className={`block truncate text-[10px] font-black uppercase tracking-normal ${
-                            active ? item.theme.text : 'text-zinc-300 group-hover/nav:text-white'
-                          }`}
-                        >
-                          {item.label}
-                        </span>
-                        <span className="block truncate text-[9px] font-medium text-zinc-600">
-                          {item.caption}
-                        </span>
-                      </span>
-                      <span
-                        className={`rounded-[5px] border border-white/8 px-1.5 py-0.5 text-[8px] font-black tabular-nums ${active ? `${item.theme.bg} text-white` : 'bg-white/[0.035] text-zinc-500'}`}
-                        style={
-                          active
-                            ? ({ '--tw-bg-opacity': '0.68' } as React.CSSProperties)
-                            : undefined
-                        }
-                      >
-                        {item.countLabel}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </aside>
-  );
-}
-
 interface UserStyleEditorSession {
   id: number;
   mode: 'create' | 'edit';
@@ -1353,6 +1163,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   } = browserState;
   const normalizedStyleSearchQuery = searchQuery.trim();
   const isGlobalStyleSearchActive = normalizedStyleSearchQuery.length > 0;
+  const activeSortOption =
+    STYLE_BROWSER_SORT_OPTIONS.find((option) => option.value === sortOrder) ??
+    STYLE_BROWSER_SORT_OPTIONS[0];
   const isAllStyleCategoriesTab = currentPackId === ALL_STYLE_CATEGORIES_TAB_ID;
   const isAllStyleCardsTab = currentPackId === ALL_STYLE_CARDS_TAB_ID;
   const isGlobalStyleBrowseTab = isAllStyleCategoriesTab || isAllStyleCardsTab;
@@ -1363,6 +1176,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       : viewMode;
   const [favorites, setFavorites] = useLocalStorage<string[]>('style-favorites', []);
   const [gridColumns, setGridColumns] = useLocalStorage<number>('styles-grid-columns', 4);
+  const [isSortDropdownOpen, setIsSortDropdownOpen] = useState(false);
   const [stylePanelVisibility, setStylePanelVisibility] = useLocalStorage<
     Partial<StylePanelVisibility>
   >('styles-panel-visibility', DEFAULT_STYLE_PANEL_VISIBILITY);
@@ -1382,6 +1196,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     [setStylePanelVisibility],
   );
   const styleScrollRootRef = useRef<HTMLDivElement>(null);
+  const sortDropdownRef = useRef<HTMLDivElement>(null);
+  const sortButtonRef = useRef<HTMLButtonElement>(null);
+  const sortMenuId = React.useId();
 
   const applyStyleTab = useCallback(
     (
@@ -1613,6 +1430,26 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     },
     [setFavorites],
   );
+
+  useEffect(() => {
+    if (!isSortDropdownOpen) return;
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (!sortDropdownRef.current?.contains(event.target as Node)) {
+        setIsSortDropdownOpen(false);
+      }
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsSortDropdownOpen(false);
+    };
+
+    document.addEventListener('pointerdown', handlePointerDown);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isSortDropdownOpen]);
 
   // react-doctor-disable-next-line react-doctor/no-initialize-state
   useEffect(() => {
@@ -2010,8 +1847,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         processedData,
         renderPlan: styleRenderPlan,
         visualStateByPresetId: presetVisualStateById,
+        gridColumns,
+        containerWidth: styleScrollWidth,
       }),
-    [processedData, presetVisualStateById, styleRenderPlan],
+    [gridColumns, processedData, presetVisualStateById, styleRenderPlan, styleScrollWidth],
   );
 
   useEffect(() => {
@@ -2443,21 +2282,33 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       const presetPackId = getPackIdForPreset(preset);
       const presetTheme = PACK_THEMES[presetPackId] || activeTheme;
       return (
-        <StylePresetCard
+        <React.Suspense
           key={preset.id}
-          preset={preset}
-          packId={presetPackId}
-          sourceProvenance={styleSourceByPresetId.get(preset.id)}
-          visualState={presetVisualStateById.get(preset.id)}
-          active={selectedStyleIds.has(preset.id)}
-          copied={copiedStyleId === preset.id}
-          favorite={favorites.includes(preset.id)}
-          theme={presetTheme}
-          onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
-          onCopy={handleCopyStylePromptRef.current}
-          onToggleFavorite={toggleFavorite}
-          onHoverPreviewChange={handleHoverPreviewChange}
-        />
+          fallback={
+            <div
+              data-style-preset-card-loading={preset.id}
+              className="aspect-[3/4] overflow-hidden rounded-[6px] border border-white/[0.055] bg-zinc-950"
+            >
+              <div className="size-full bg-linear-to-b from-white/[0.04] via-zinc-900/30 to-black/35" />
+            </div>
+          }
+        >
+          <StylePresetCard
+            preset={preset}
+            packId={presetPackId}
+            sourceProvenance={styleSourceByPresetId.get(preset.id)}
+            visualState={presetVisualStateById.get(preset.id)}
+            active={selectedStyleIds.has(preset.id)}
+            copied={copiedStyleId === preset.id}
+            favorite={favorites.includes(preset.id)}
+            theme={presetTheme}
+            FadeImageComponent={StyleFadeImage}
+            onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
+            onCopy={handleCopyStylePromptRef.current}
+            onToggleFavorite={toggleFavorite}
+            onHoverPreviewChange={handleHoverPreviewChange}
+          />
+        </React.Suspense>
       );
     },
     [
@@ -2647,7 +2498,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                         data-style-reference-image={image.id}
                         className="group/reference relative h-12 overflow-hidden rounded-md border border-white/10 bg-zinc-950"
                       >
-                        <img
+                        <StyleFadeImage
                           src={image.dataUrl}
                           alt=""
                           width={80}
@@ -2712,7 +2563,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               className="relative min-h-[360px] flex-1 overflow-hidden rounded-[6px] border border-white/14 bg-zinc-950 shadow-[0_24px_70px_rgba(0,0,0,0.48)] ring-1 ring-white/6"
             >
               {resolvedHoveredPresetPreview?.imageSrc ? (
-                <img
+                <StyleFadeImage
                   src={resolvedHoveredPresetPreview.imageSrc}
                   width={480}
                   height={640}
@@ -2720,7 +2571,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   alt={resolvedHoveredPresetPreview.name}
                 />
               ) : referenceImages[0] ? (
-                <img
+                <StyleFadeImage
                   src={referenceImages[0].dataUrl}
                   width={480}
                   height={480}
@@ -2863,7 +2714,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                         key={image.id}
                         className="group/reference-mobile relative h-12 overflow-hidden rounded-md border border-white/10 bg-zinc-950"
                       >
-                        <img
+                        <StyleFadeImage
                           src={image.dataUrl}
                           alt=""
                           className="size-full object-contain p-0.5"
@@ -2938,7 +2789,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                           <div className="grid grid-cols-[2.75rem_minmax(0,1fr)_2rem] items-start gap-2">
                             <div className="relative aspect-[2/3] w-[2.75rem] overflow-hidden rounded-[6px] border border-white/10 bg-zinc-950">
                               {slotCardImage ? (
-                                <img
+                                <StyleFadeImage
                                   src={slotCardImage.src}
                                   alt=""
                                   className="size-full object-cover"
@@ -3064,6 +2915,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             type="button"
             onClick={() => navigateToStyleTab(STYLE_PACKS_TAB_ID)}
             data-style-tab-url={`#${getStyleTabHash(STYLE_PACKS_TAB_ID)}`}
+            aria-label="Show style packs"
+            title="Style packs"
             className={`
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
@@ -3085,6 +2938,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             type="button"
             onClick={() => navigateToStyleTab(ALL_STYLE_CATEGORIES_TAB_ID)}
             data-style-tab-url={`#${getStyleTabHash(ALL_STYLE_CATEGORIES_TAB_ID)}`}
+            aria-label="Show all style categories"
+            title="All categories"
             className={`
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
@@ -3106,6 +2961,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             type="button"
             onClick={() => navigateToStyleTab(ALL_STYLE_CARDS_TAB_ID)}
             data-style-tab-url={`#${getStyleTabHash(ALL_STYLE_CARDS_TAB_ID)}`}
+            aria-label="Show all style cards"
+            title="All cards"
             className={`
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
@@ -3131,6 +2988,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               !isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID ? 'true' : 'false'
             }
             data-style-tab-url={`#${getStyleTabHash(USER_STYLE_PACK_ID)}`}
+            aria-label={`Show ${USER_STYLE_PACK_NAME}`}
+            title={USER_STYLE_PACK_NAME}
             className={`
                   group relative h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
@@ -3152,6 +3011,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
             type="button"
             onClick={() => navigateToStyleTab(FAVORITES_PACK_ID)}
             data-style-tab-url={`#${getStyleTabHash(FAVORITES_PACK_ID)}`}
+            aria-label="Show favorite styles"
             className={`
                   group sticky right-0 z-20 ml-auto h-8 shrink-0 overflow-hidden rounded-[6px] px-2.5 backdrop-blur-md transition-[background-color,border-color,color,box-shadow] duration-200 flex items-center gap-2
                     ${
@@ -3336,30 +3196,77 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                     </button>
                   </div>
 
-                  <label
-                    className="flex h-7 items-center gap-1.5 rounded-[6px] border border-white/5 bg-zinc-950/40 px-2 text-zinc-500 transition-colors hover:border-white/10 hover:text-white"
-                    title="Sort styles"
-                  >
-                    <ArrowUpDown size={14} className="shrink-0" />
-                    <span className="sr-only">Sort styles</span>
-                    <select
-                      value={sortOrder}
-                      onChange={(event) =>
-                        setBrowserState((prev) => ({
-                          ...prev,
-                          sortOrder: event.target.value as StyleBrowserSortOrder,
-                        }))
-                      }
-                      aria-label="Sort style cards"
-                      className="h-full w-[7.5rem] cursor-pointer appearance-none bg-transparent text-[9px] font-black uppercase tracking-widest text-zinc-400 outline-none transition-colors hover:text-white"
+                  <div ref={sortDropdownRef} className="relative" data-style-sort-dropdown>
+                    <button
+                      ref={sortButtonRef}
+                      type="button"
+                      onClick={() => setIsSortDropdownOpen((open) => !open)}
+                      aria-label={`Sort style cards: ${activeSortOption.label}`}
+                      aria-haspopup="listbox"
+                      aria-expanded={isSortDropdownOpen}
+                      aria-controls={sortMenuId}
+                      className={`flex min-h-9 w-[9.75rem] touch-manipulation items-center gap-1.5 rounded-[6px] border px-2 text-left transition-[border-color,background-color,color,transform] ${
+                        isSortDropdownOpen
+                          ? 'border-white/15 bg-white/[0.075] text-white shadow-[0_0_0_1px_rgba(255,255,255,0.035),0_10px_28px_rgba(0,0,0,0.28)]'
+                          : 'border-white/5 bg-zinc-950/40 text-zinc-500 hover:border-white/10 hover:bg-white/[0.045] hover:text-white'
+                      }`}
+                      title="Sort styles"
                     >
-                      {STYLE_BROWSER_SORT_OPTIONS.map((option) => (
-                        <option key={option.value} value={option.value}>
-                          {option.label}
-                        </option>
-                      ))}
-                    </select>
-                  </label>
+                      <ArrowUpDown size={14} className="shrink-0" />
+                      <span className="min-w-0 flex-1 truncate text-[9px] font-black uppercase tracking-widest text-zinc-300">
+                        {activeSortOption.label}
+                      </span>
+                      <ChevronDown
+                        size={13}
+                        className={`shrink-0 transition-transform ${isSortDropdownOpen ? 'rotate-180 text-white' : 'text-zinc-600'}`}
+                      />
+                    </button>
+
+                    <GsapDropdown
+                      id={sortMenuId}
+                      open={isSortDropdownOpen}
+                      onOpenChange={setIsSortDropdownOpen}
+                      triggerRef={sortButtonRef}
+                      placement="bottom-right"
+                      role="listbox"
+                      aria-label="Sort style cards"
+                      className="absolute right-0 top-[calc(100%+0.45rem)] z-50 w-52 overflow-hidden rounded-[6px] p-1"
+                    >
+                      <div className="px-2 pb-1 pt-1 text-[8px] font-black uppercase tracking-[0.22em] text-zinc-600">
+                        Sort
+                      </div>
+                      <div className="space-y-0.5">
+                        {STYLE_BROWSER_SORT_OPTIONS.map((option) => {
+                          const selected = option.value === sortOrder;
+
+                          return (
+                            <button
+                              key={option.value}
+                              type="button"
+                              role="option"
+                              aria-selected={selected}
+                              data-dropdown-item
+                              onClick={() => {
+                                setBrowserState((prev) => ({
+                                  ...prev,
+                                  sortOrder: option.value,
+                                }));
+                                setIsSortDropdownOpen(false);
+                              }}
+                              className={`flex min-h-9 w-full items-center justify-between gap-3 rounded-[5px] px-2 text-left text-[9px] font-black uppercase tracking-widest transition-[background-color,color,transform] ${
+                                selected
+                                  ? 'bg-white/10 text-white'
+                                  : 'text-zinc-500 hover:bg-white/[0.055] hover:text-zinc-200'
+                              }`}
+                            >
+                              <span>{option.label}</span>
+                              {selected ? <Check size={13} className="shrink-0" /> : null}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </GsapDropdown>
+                  </div>
 
                   {currentPackId !== FAVORITES_PACK_ID && (
                     <button
@@ -3410,12 +3317,22 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
               }`}
             >
               {isStyleNavigationPanelOpen ? (
-                <StyleRecipeNavigationPanel
-                  sections={styleRecipeNavigationSections}
-                  activeTabId={currentStyleTabId}
-                  onOpen={navigateToStyleTab}
-                  onClose={() => toggleStylePanel('navigation')}
-                />
+                <React.Suspense
+                  fallback={
+                    <aside data-style-detail-navigation className="hidden min-h-0 min-w-0 lg:block">
+                      <div className="flex h-full min-h-0 items-center justify-center rounded-[6px] border border-white/8 bg-zinc-950/78 p-3">
+                        <LazySurfaceFallback label="Loading style map" />
+                      </div>
+                    </aside>
+                  }
+                >
+                  <StyleRecipeNavigationPanel
+                    sections={styleRecipeNavigationSections}
+                    activeTabId={currentStyleTabId}
+                    onOpen={navigateToStyleTab}
+                    onClose={() => toggleStylePanel('navigation')}
+                  />
+                </React.Suspense>
               ) : (
                 <aside
                   data-style-detail-navigation-rail
@@ -3653,7 +3570,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   }`}
                 >
                   {slotCardImage ? (
-                    <img
+                    <StyleFadeImage
                       src={slotCardImage.src}
                       alt=""
                       width={180}

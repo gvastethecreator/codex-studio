@@ -337,10 +337,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         handleClose();
       }}
     >
-      <div
-        className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-white/5 px-4 py-3 sm:h-20 sm:px-10 sm:py-0"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="flex min-h-16 w-full items-center justify-between gap-3 border-b border-white/5 px-4 py-3 sm:h-20 sm:px-10 sm:py-0">
         <div className="flex min-w-0 items-center gap-3 sm:gap-5">
           <div className="rounded-xl bg-accent-500/10 p-2 sm:p-2.5">
             <Sparkles size={18} className="text-accent-400 sm:size-5" />
@@ -357,16 +354,13 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         <button
           type="button"
           onClick={handleClose}
-          className="rounded-xl bg-zinc-900/60 p-3 text-zinc-600 shadow-xl transition-all hover:bg-zinc-800 hover:text-white"
+          className="rounded-xl bg-zinc-900/60 p-3 text-zinc-600 shadow-xl transition-[background-color,color] hover:bg-zinc-800 hover:text-white"
         >
           <X size={24} />
         </button>
       </div>
 
-      <div
-        className="flex-1 flex flex-col md:flex-row min-h-0"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="flex min-h-0 flex-1 flex-col md:flex-row">
         <div
           className="relative flex min-h-[42vh] flex-1 items-center justify-center bg-[#010101] p-3 sm:p-8"
           ref={containerRef}

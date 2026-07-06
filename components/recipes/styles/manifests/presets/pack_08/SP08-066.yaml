@@ -12,31 +12,90 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Origami-paper couture, washi-sculpture fragility, geometric fold discipline
+  aesthetic: >-
+    Origami Paper operates as a portable fashion-costume router: combine Origami-paper couture,
+    washi-sculpture fragility, geometric fold discipline with material-forward fashion
+    transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior,
+    so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
+    literal garment sample.
   subject_treatment: >-
-    Sharp folds, mountain-valley crease, triangular-panel construction, accordion compression, angular contour
-    logic
-  color_and_tone: White paper, rice-paper cream, kraft-brown, washi-natural, metallic-gold foil, indigo-dyed edge
-  lighting_and_shadow: Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama
-  texture_and_material: Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Sharp folds,
+    mountain-valley crease, triangular-panel construction, accordion compression, angular contour
+    logic; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior,
+    and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision,
+    shadow-cast drama plus material-revealing light with gloss, rim, translucency, sparkle,
+    subsurface, matte falloff, or volumetric separation as the styling light contract, revealing
+    cut, drape, surface response, trim, transparency, or armor structure without erasing prompt
+    readability.
+  texture_and_material: >-
+    Render Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear
+    edge plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire,
+    gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Origami Paper using its key spatial cues: Folds, crisp crease lines, paper edges, origami
-    geometry, tear-away logic.
-  atmosphere_and_mood: Delicate, precise, crisp, ephemeral, materially tense
-  rendering_and_quality: Artistic, fragile, pleated-paper precision, sculpture-grade wonder
-  key_features: Folds, crisp crease lines, paper edges, origami geometry, tear-away logic
+    Compose with Compose for Origami Paper using its key spatial cues: Folds, crisp crease lines,
+    paper edges, origami geometry, tear-away logic plus drape rhythm, material coverage, silhouette
+    clarity, tactile close detail, fold direction, and transformation edge control as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Origami Paper while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Origami-paper couture, washi-sculpture fragility, geometric fold discipline; Sharp folds,
+    mountain-valley crease, triangular-panel construction, accordion compression, angular contour
+    logic; Paper grain, washi fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear
+    edge; Hard shadows, raking-side light, graphic-crease contrast, gallery-spot precision,
+    shadow-cast drama; Compose for Origami Paper using its key spatial cues: Folds, crisp crease
+    lines, paper edges, origami geometry, tear-away logic
   creative_brief: >-
-    Fold the input into origami-paper couture: washi grain, mountain-valley creases, triangular panels,
-    accordion compression, crisp kraft edges and hard raking shadows. Keep paper-sculpture wonder without
-    requiring a bodice, crane, gallery display or standing garment body.
+    Use Origami Paper after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Origami-paper couture,
+    washi-sculpture fragility, geometric fold discipline, Sharp folds, mountain-valley crease,
+    triangular-panel construction, accordion compression, angular contour logic, Paper grain, washi
+    fiber, mulberry texture, crisp-kraft, embossed pattern, delicate-tear edge, Hard shadows,
+    raking-side light, graphic-crease contrast, gallery-spot precision, shadow-cast drama, Compose
+    for Origami Paper using its key spatial cues: Folds, crisp crease lines, paper edges, origami
+    geometry, tear-away logic plus weave, pile, grain, shine, translucency, opacity, stretch, wrap,
+    seam tension, edge behavior, and surface continuity, palette behavior, light response, material
+    treatment, silhouette grammar, and finish discipline without requiring one body type, fixed
+    outfit, venue, prop bundle, or card composition.
 avoidRules:
   - soft textile drape dominance
   - sewn garment realism
   - cloth-first finish
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-066.webp
 attributes:
-  negativePrompt: soft textile drape dominance, sewn garment realism, cloth-first finish
+  negativePrompt: >-
+    soft textile drape dominance, sewn garment realism, cloth-first finish, generic fabric texture,
+    muddy surface noise, wrong material physics, fixed outfit, required body type, literal card
+    scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

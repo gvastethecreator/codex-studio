@@ -12,25 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Granular tonal etching with wash-like shadow fields
-  subject_treatment: Light etched scaffolding under dominant tonal masses
-  color_and_tone: Smoke black, sepia umber, aged paper cream, muted iron gray
-  lighting_and_shadow: Diffused tonal bloom with softly merged edge falloff
-  texture_and_material: Rosin-grain stipple, acid-bitten porosity, powdery plate tone
-  camera_and_composition: Stable print geometry; depth built by tone stacking
-  atmosphere_and_mood: Somber, introspective, gothic-romantic, haunted stillness
-  rendering_and_quality: Atmospheric print depth with layered tonal veils and subtle edge dissolve
-  key_features: Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast
+  aesthetic: >-
+    Aquatint acts as a transferable illustration router: start from Granular tonal etching with
+    wash-like shadow fields, Grain-anchored gradients, soft shadow pooling, reduced hard edge
+    contrast and ink and printmaking system built from mark economy, matrix process, ink transfer,
+    pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Light etched scaffolding under dominant tonal masses;
+    preserve the requested subject while rebuilding it through carved lines, etched density, stipple
+    fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash
+    simplification, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Smoke black, sepia umber, aged paper cream, muted iron gray; use color as ink
+    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
+    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Diffused tonal bloom with softly merged edge falloff; translate light into
+    hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat
+    spray contrast rather than photographic shading, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Rosin-grain stipple, acid-bitten porosity, powdery plate tone; surface detail should show
+    paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen
+    pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Stable print geometry; depth built by tone stacking; compose through
+    print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow,
+    ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Somber, introspective, gothic-romantic, haunted stillness; derive mood from craft
+    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Atmospheric print depth with layered tonal veils and subtle edge dissolve; finish as
+    a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake
+    text, random distress overlay, or smooth vector replacement, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Granular tonal etching with wash-like shadow fields; Grain-anchored gradients, soft shadow
+    pooling, reduced hard edge contrast; Smoke black, sepia umber, aged paper cream, muted iron
+    gray; Rosin-grain stipple, acid-bitten porosity, powdery plate tone; Stable print geometry;
+    depth built by tone stacking
   creative_brief: >-
-    Apply aquatint tonal-etch grammar to any input: rosin-grain gradients, acid-bitten porosity, misted tone
-    stacking, submerged contours, and soft shadow pools should make atmosphere primary without requiring
-    gothic scenes, landscapes, figures, ruins, or fixed somber subjects.
+    Apply Aquatint as an illustration preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Granular
+    tonal etching with wash-like shadow fields, Grain-anchored gradients, soft shadow pooling,
+    reduced hard edge contrast, Rosin-grain stipple, acid-bitten porosity, powdery plate tone
+    without requiring the card image's original subject.
 avoidRules:
   - sharp lines
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-071.webp
 attributes:
-  negativePrompt: sharp lines
+  negativePrompt: >-
+    sharp lines, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

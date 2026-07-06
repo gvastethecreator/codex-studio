@@ -13,38 +13,78 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    Wet Techno-Noir Consciousness Style within 3. 90s Golden Era: a reusable Anime Classics & Prestige visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Wet Techno-Noir Consciousness Style's specific style
-    identity.
+    Wet Techno-Noir Consciousness Style acts as a transferable anime-prestige router: techno-noir
+    anime signal pressure, alongside a wet anime direction shaped by era-aware line economy and
+    genre tone; fuse it with 90s golden-era anime direction with sharp cel shadows, dramatic
+    closeups, aura effects, urban melancholy, and high-contrast compositing; it routes era, genre,
+    line economy, cel or digital finish, and performance tone without locking prompt content to the
+    source title or sample image.
   subject_treatment: >-
-    Define Wet Techno-Noir Consciousness Style through line, mass, contour, spacing, and rhythm. Keep forms
-    readable, intentional, and reusable beyond one literal scene.
+    Preserve the prompt subject, action, and context while restyling forms through contours paced by
+    wet tension, readable pose energy, and silhouette discipline, alongside contours paced by techno
+    tension, readable pose energy, and silhouette discipline; identity should remain readable
+    through anime contour, expression economy, pose energy, shape simplification, and effect
+    hierarchy instead of a required canon character or title scene.
   color_and_tone: >-
-    Use a Wet Techno-Noir Consciousness Style-specific palette with clear dominant, secondary, and accent
-    roles. Keep contrast deliberate and avoid generic color wash.
+    Map color through cyan, black, violet, and screen green accents, alongside a wet accent system
+    held inside disciplined cel values; anchor it in deep night blues, saturated aura color, jewel
+    accents, warm skin cel tones, smoke grays, and VHS-era contrast; keep value separation clean,
+    cel flats intentional, accents purposeful, and palette behavior attached to the requested
+    content.
   lighting_and_shadow: >-
-    Use lighting that makes Wet Techno-Noir Consciousness Style recognizable: purposeful key, rim, bounce,
-    shadow, and glow behavior with readable hierarchy.
+    Use monitor bloom, scanline glow, and synthetic rim light, alongside a wet light logic using cel
+    rim, glow behavior, and blocked shadow; combine it with hard-edged rim light, aura bloom, neon
+    spill, twilight gradients, speed-flash cuts, and moody cel shadow blocks; shadows should read as
+    anime light design, rims should clarify form, and glow or effects should support the prompt
+    rather than replacing it.
   texture_and_material: >-
-    Use materials and textures that reinforce Wet Techno-Noir Consciousness Style: surface response, grain,
-    patina, polish, or wear should feel intentional and style-defining.
+    Render cel paint and ink grain tuned to wet material contrast, alongside cel paint and ink grain
+    tuned to techno material contrast; anchor surfaces in painted cels, compositing grain, inked
+    speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel edges,
+    painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent
+    across people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Wet Techno-Noir Consciousness Style: perspective, compression,
-    exaggeration, or depth should support the style without forcing one fixed location.
+    Frame around wet converted into reusable framing rhythm and anime timing, alongside techno
+    converted into reusable framing rhythm and anime timing, then extend it with cinematic closeups,
+    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
+    the style should support portraits, props, machines, performances, landscapes, symbols, and full
+    scenes through reusable anime staging grammar instead of one fixed card layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Wet Techno-Noir Consciousness Style: specific, coherent, and distinct, with
-    emotional tone carried by visual systems rather than narrative captioning.
+    Carry mood through wet emotional pressure and genre-specific tone, alongside techno emotional
+    pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult
+    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
+    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
+    preserving the chosen anime lineage.
   rendering_and_quality: >-
-    Render Wet Techno-Noir Consciousness Style with high production clarity, strong silhouette reads, clean
-    detail priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean anime finishing that keeps wet identity readable without noisy denoise,
+    alongside clean anime finishing that keeps techno identity readable without noisy denoise;
+    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
+    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
+    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
+    3D-render drift.
   key_features: >-
-    Prioritize Wet Techno-Noir Consciousness Style's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    techno-noir anime signal pressure, alongside a wet anime direction shaped by era-aware line
+    economy and genre tone; contours paced by wet tension, readable pose energy, and silhouette
+    discipline, alongside contours paced by techno tension, readable pose energy, and silhouette
+    discipline; cel paint and ink grain tuned to wet material contrast, alongside cel paint and ink
+    grain tuned to techno material contrast; monitor bloom, scanline glow, and synthetic rim light,
+    alongside a wet light logic using cel rim, glow behavior, and blocked shadow; wet converted into
+    reusable framing rhythm and anime timing, alongside techno converted into reusable framing
+    rhythm and anime timing
   creative_brief: >-
-    Create a style-card that translates Wet Techno-Noir Consciousness Style into a portable visual system for
-    3. 90s Golden Era. Preserve the preset identity through style mechanics, not a fixed scene, character,
-    prop, or story beat.
+    Apply Wet Techno-Noir Consciousness Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    techno-noir anime signal pressure, alongside a wet anime direction shaped by era-aware line
+    economy and genre tone, alongside contours paced by wet tension, readable pose energy, and
+    silhouette discipline, alongside contours paced by techno tension, readable pose energy, and
+    silhouette discipline; cyan, black, violet, and screen green accents, alongside a wet accent
+    system held inside disciplined cel values; monitor bloom, scanline glow, and synthetic rim
+    light, alongside a wet light logic using cel rim, glow behavior, and blocked shadow; cel paint
+    and ink grain tuned to wet material contrast, alongside cel paint and ink grain tuned to techno
+    material contrast and wet converted into reusable framing rhythm and anime timing, alongside
+    techno converted into reusable framing rhythm and anime timing, finish discipline, and negative
+    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
+    instrument, weapon, or card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -58,12 +98,24 @@ avoidRules:
   - watermark
   - text
   - signature
+  - flat modern moe
+  - generic shonen screenshot
+  - messy VHS noise
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-164.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
+    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise, readable text
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

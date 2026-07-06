@@ -12,28 +12,87 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision
-  subject_treatment: Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm
-  color_and_tone: Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink
-  lighting_and_shadow: Editorial-bright beauty light, color-shifting gels, high-key rim sparkle
-  texture_and_material: Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones
+  aesthetic: >-
+    Pop-Performance Tailoring operates as a portable fashion-costume router: combine Synchronized
+    pop-performance tailoring, candy-neon coordination, comeback-polish precision with contemporary
+    fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe
+    hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required
+    wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer,
+    streamline, accessorize, polish, or simplify through Sharp layered modularity, cropped jacket
+    structure, high-waist tailoring, asymmetric hems, fitted rhythm; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through modern neutrals, controlled accent color, textile value separation,
+    skin-adjacent warmth, and editorial contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Editorial-bright beauty light, color-shifting gels, high-key rim sparkle plus fashion
+    editorial light with fabric sheen, controlled shadow, polished skin or surface response, and
+    clean silhouette reads as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered
+    rhinestones plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams,
+    folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone
-    color, coordinated layers, statement earrings.
-  atmosphere_and_mood: Energetic, cute, cool, high-polish perfection, synchronized charisma, polished performance joy
-  rendering_and_quality: Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity
-  key_features: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings
+    Compose with Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues,
+    pastel or jewel-tone color, coordinated layers, statement earrings plus lookbook clarity, runway
+    silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional
+    or event-specific presence; the tone should feel specific to Pop-Performance Tailoring while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with high-end styling clarity, crisp garment edges, believable fit, controlled
+    retouching, and no catalog blandness; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision;
+    Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems,
+    fitted rhythm; Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza,
+    scattered rhinestones; Editorial-bright beauty light, color-shifting gels, high-key rim sparkle;
+    Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or
+    jewel-tone color, coordinated layers, statement earrings
   creative_brief: >-
-    Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl,
-    rhinestones, pastel-neon color and exact coordination. Preserve synchronized charisma as finish only, not
-    as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.
+    Use Pop-Performance Tailoring after prompt X as a transferable fashion/costume layer: prompt X
+    supplies subject, motion, setting, tone, and intensity, while the preset supplies Synchronized
+    pop-performance tailoring, candy-neon coordination, comeback-polish precision, Sharp layered
+    modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm,
+    Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones,
+    Editorial-bright beauty light, color-shifting gels, high-key rim sparkle, Compose for
+    Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone
+    color, coordinated layers, statement earrings plus tailoring lines, garment fit, hem placement,
+    accessory restraint, layered proportion, and intentional styling choices, palette behavior,
+    light response, material treatment, silhouette grammar, and finish discipline without requiring
+    one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - boring
   - dark
+  - generic catalog outfit
+  - brand logo styling
+  - bad garment fit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-018.webp
 attributes:
-  negativePrompt: boring, dark, body idol, group choreography, backstage set, fandom crowd
+  negativePrompt: >-
+    boring, dark, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

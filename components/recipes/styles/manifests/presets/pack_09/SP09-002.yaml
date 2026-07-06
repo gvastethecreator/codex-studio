@@ -13,29 +13,60 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Expensive furniture wood
-  subject_treatment: Subtle grain
-  color_and_tone: Deep reddish brown
-  lighting_and_shadow: High gloss reflection
-  texture_and_material: Smooth varnish
-  camera_and_composition: 'Compose for Mahogany (Polished) using its key spatial cues: Smooth surface.'
-  atmosphere_and_mood: Elegant, rich
-  rendering_and_quality: Luxury, antique
-  key_features: Smooth surface
+  aesthetic: >-
+    Mahogany (Polished) translates natural material behavior into form: start from Expensive
+    furniture wood, Smooth varnish, and Smooth surface, then turn natural formation, growth,
+    erosion, and geological or biological irregularity into portable surface behavior rather than a
+    literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Subtle grain: preserve identity and pose while letting
+    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Deep reddish brown as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let High gloss reflection define the light response: highlights, occlusion, translucency,
+    specular scatter, matte falloff, or rim behavior should reveal Mahogany (Polished) without
+    hiding the prompt subject.
+  texture_and_material: >-
+    Render Smooth varnish through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Smooth surface as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Elegant, rich by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Luxury, antique material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Expensive furniture wood; Subtle grain; Smooth varnish; High gloss reflection; Smooth surface
   creative_brief: >-
-    Channel the depths of polished mahogany where light sinks into a sea of reddish amber and emerges
-    transformed. The surface should feel like still water frozen in wood, deep, reflective, impossibly smooth.
-    Elegance here is not applied but released from within, a slow exhale of centuries. Use Mahogany as
-    portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
-    wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Mahogany (Polished) as a transferable natural-material visual system
+    while preserving the prompt's subject, action, and setting. Channel the depths of polished
+    mahogany where light sinks into a sea of reddish amber and emerges transformed. The surface
+    should feel like still water frozen in wood, deep, reflective, impossibly smooth. Elegance here
+    is not applied but released from within, a slow exhale of centuries. Use Mahogany as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - dusty
   - rough
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-002.webp
 attributes:
-  negativePrompt: dusty, rough
+  negativePrompt: dusty, rough, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

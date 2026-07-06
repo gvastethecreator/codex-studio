@@ -12,19 +12,48 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: Vintage halftone newsprint reproduction
-  subject_treatment: Dot pattern
-  color_and_tone: Black dots on newsprint
-  lighting_and_shadow: Flat
-  texture_and_material: Cheap paper, ink smudge
-  camera_and_composition: Pixelated by dots
-  atmosphere_and_mood: Vintage, gritty
-  rendering_and_quality: Low res, mass media
-  key_features: Visible dots
+  aesthetic: >-
+    Halftone (Newspaper) acts as a transferable art-medium router: start from Vintage halftone
+    newsprint reproduction, Visible dots and print-process system built from matrix marks, ink
+    transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the
+    medium behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Dot pattern; preserve the prompt subject while converting
+    it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping
+    the requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Black dots on newsprint; use palette as ink behavior: limited plates,
+    overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security
+    green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat; translate light into line density, dot frequency, relief shadow,
+    plate tone, paper reserve, or ink coverage rather than photographic illumination, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Cheap paper, ink smudge; surface detail should reveal paper fibers, plate marks, burr,
+    gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Pixelated by dots; compose through print registration, cut rhythm,
+    border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Vintage, gritty; derive mood from hand pressure, mechanical reproduction, archival
+    value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Low res, mass media; finish as a credible print artifact with exact mark logic,
+    restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces
+    where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Vintage halftone newsprint reproduction; Visible dots; Black dots on newsprint; Cheap paper, ink
+    smudge; Pixelated by dots
   creative_brief: >-
-    Apply newspaper halftone to any input: visible dot matrix, grey through dot spacing, cheap yellowing
-    paper, ink absorption, coarse reproduction, and degraded mass-print urgency. Keep press texture without
-    requiring headlines, captions, columns, photos, or newspaper layout.
+    Apply Halftone (Newspaper) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Vintage halftone newsprint reproduction, Visible dots, Cheap paper, ink smudge without requiring
+    the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -43,12 +72,25 @@ avoidRules:
   - border
   - readable headline
   - newspaper layout requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - fake poster text
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-042.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, readable headline, newspaper layout requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, readable headline, newspaper layout
+    requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable
+    text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong
+    print process
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

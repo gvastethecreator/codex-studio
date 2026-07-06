@@ -5,6 +5,12 @@ import {
   type GenerationTaskAssetRef,
   type GenerationTaskKind,
 } from '../packages/shared/src/generationContracts';
+import {
+  createSpriteAtlasContract,
+  createSpriteAtlasPresetSummaries,
+  SPRITE_ATLAS_BACKGROUND_REMOVAL,
+  SPRITE_ATLAS_FRAME_BUDGETS,
+} from '../packages/shared/src/spriteAtlasContracts';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
 import { RECIPE_CONTEXT_BUILDERS } from './recipeContextBuilders';
@@ -82,6 +88,7 @@ const RECIPE_LIST_ORDER: RegisteredRecipeId[] = [
   'styles',
   'remaster',
   'spritesheet',
+  'sprite-atlas',
   'cinematic',
   'character-lab',
   'character',
@@ -134,6 +141,14 @@ const SPRITESHEET_OPTIONS = {
   grid: ['2x2', '3x3', '4x2', '4x4', '5x5', '6x4', '8x8', '1x6 Strip'],
   background: ['Dark Grey', 'Black', 'Chroma Green', 'White', 'Checkerboard', 'Custom'],
   dividers: ['No Dividers', 'Red Lines', 'Blue Lines', 'Black Lines', 'White Lines'],
+} as const;
+
+const SPRITE_ATLAS_OPTIONS = {
+  presetId: createSpriteAtlasPresetSummaries().map((preset) => preset.id),
+  stylePreset: ['pixel-art', 'illustration', 'painterly', 'realistic', 'anime', 'vector', 'custom'],
+  frameBudget: [...SPRITE_ATLAS_FRAME_BUDGETS],
+  backgroundRemoval: [...SPRITE_ATLAS_BACKGROUND_REMOVAL],
+  qaMode: ['standard', 'strict'],
 } as const;
 
 const CINEMATIC_OPTIONS = {
@@ -477,6 +492,126 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         control: 'record',
         group: 'cells',
         defaultValue: {},
+      },
+    ],
+  }),
+  'sprite-atlas': createRecipeModule({
+    id: 'sprite-atlas',
+    title: 'Sprite Atlas',
+    description:
+      'Prepare runtime-ready sprite atlases with row prompts, layout guides, handoff, extraction, manifest, and QA.',
+    defaultTask: 'sprite_sheet',
+    supportedTasks: ['sprite_sheet', 'texture_generate', 'image_generate'],
+    parameters: [
+      {
+        id: 'presetId',
+        label: 'Preset',
+        kind: 'enum',
+        control: 'select',
+        group: 'contract',
+        defaultValue: 'platformer-character',
+        options: options(SPRITE_ATLAS_OPTIONS.presetId),
+      },
+      {
+        id: 'stylePreset',
+        label: 'Style Preset',
+        kind: 'enum',
+        control: 'select',
+        group: 'look',
+        defaultValue: 'pixel-art',
+        options: options(SPRITE_ATLAS_OPTIONS.stylePreset),
+      },
+      {
+        id: 'customStyle',
+        label: 'Custom Style',
+        kind: 'string',
+        control: 'text',
+        group: 'look',
+        defaultValue: '',
+      },
+      {
+        id: 'frameBudget',
+        label: 'Frame Budget',
+        kind: 'enum',
+        control: 'select',
+        group: 'animation',
+        defaultValue: 'preset',
+        options: options(SPRITE_ATLAS_OPTIONS.frameBudget),
+      },
+      {
+        id: 'backgroundRemoval',
+        label: 'Background Removal',
+        kind: 'enum',
+        control: 'select',
+        group: 'extraction',
+        defaultValue: 'chroma',
+        options: options(SPRITE_ATLAS_OPTIONS.backgroundRemoval),
+      },
+      {
+        id: 'chromaKey',
+        label: 'Chroma Key',
+        kind: 'color',
+        control: 'color',
+        group: 'extraction',
+        defaultValue: '#00FF00',
+      },
+      {
+        id: 'cellWidth',
+        label: 'Cell Width',
+        kind: 'number',
+        control: 'slider',
+        group: 'layout',
+        defaultValue: 128,
+        min: 16,
+        max: 512,
+        step: 8,
+      },
+      {
+        id: 'cellHeight',
+        label: 'Cell Height',
+        kind: 'number',
+        control: 'slider',
+        group: 'layout',
+        defaultValue: 128,
+        min: 16,
+        max: 512,
+        step: 8,
+      },
+      {
+        id: 'columns',
+        label: 'Columns',
+        kind: 'number',
+        control: 'slider',
+        group: 'layout',
+        defaultValue: 8,
+        min: 1,
+        max: 16,
+        step: 1,
+      },
+      {
+        id: 'qaMode',
+        label: 'QA Mode',
+        kind: 'enum',
+        control: 'select',
+        group: 'quality',
+        defaultValue: 'standard',
+        options: options(SPRITE_ATLAS_OPTIONS.qaMode),
+      },
+      {
+        id: 'rows',
+        label: 'Rows',
+        kind: 'record',
+        control: 'record',
+        group: 'contract',
+        defaultValue: {},
+      },
+      {
+        id: 'formats',
+        label: 'Formats',
+        kind: 'string',
+        control: 'text',
+        group: 'output',
+        defaultValue: 'png,webp',
       },
     ],
   }),
@@ -1097,6 +1232,8 @@ export function buildGenerationTaskSpecFromRecipe({
   const recipeProviderDirectives = module
     ? buildRecipeProviderDirectives(module, config.recipeParams ?? null)
     : null;
+  const spriteAtlasContract =
+    module?.id === 'sprite-atlas' ? createSpriteAtlasContract(config.recipeParams ?? null) : null;
   const prompt = config.prompt || 'Generate a high-quality image.';
   const requestedTask =
     typeof config.recipeParams?.task === 'string'
@@ -1159,22 +1296,37 @@ export function buildGenerationTaskSpecFromRecipe({
           : null,
       composition: null,
       style:
-        config.recipeId === 'styles' && typeof config.recipeParams?.presetName === 'string'
-          ? config.recipeParams.presetName
-          : config.recipeId === 'character-lab' && typeof config.recipeParams?.style === 'string'
-            ? config.recipeParams.style
-            : null,
+        config.recipeId === 'sprite-atlas' && spriteAtlasContract
+          ? spriteAtlasContract.customStyle || spriteAtlasContract.stylePreset
+          : config.recipeId === 'styles' && typeof config.recipeParams?.presetName === 'string'
+            ? config.recipeParams.presetName
+            : config.recipeId === 'character-lab' && typeof config.recipeParams?.style === 'string'
+              ? config.recipeParams.style
+              : null,
       lighting: null,
       color:
-        typeof config.recipeParams?.colorTone === 'string'
-          ? config.recipeParams.colorTone
-          : config.recipeId === 'character-lab' &&
-              typeof config.recipeParams?.backgroundColor === 'string'
-            ? config.recipeParams.backgroundColor
-            : null,
-      materials: null,
-      constraints: [],
-      negative: [],
+        config.recipeId === 'sprite-atlas' && spriteAtlasContract
+          ? spriteAtlasContract.chromaKey
+          : typeof config.recipeParams?.colorTone === 'string'
+            ? config.recipeParams.colorTone
+            : config.recipeId === 'character-lab' &&
+                typeof config.recipeParams?.backgroundColor === 'string'
+              ? config.recipeParams.backgroundColor
+              : null,
+      materials:
+        config.recipeId === 'sprite-atlas' && spriteAtlasContract
+          ? spriteAtlasContract.assetKind
+          : null,
+      constraints: spriteAtlasContract
+        ? [
+            `Generate one row strip per state for ${spriteAtlasContract.presetId}.`,
+            `Use ${spriteAtlasContract.backgroundRemoval} background removal contract.`,
+            'Do not create guide marks, labels, scene backgrounds, or merged atlas pages as row art.',
+          ]
+        : [],
+      negative: spriteAtlasContract
+        ? ['labels', 'watermarks', 'guide marks', 'scene background', 'cropped sprites']
+        : [],
       referenceRoles: config.attachments.map((attachment, index) => ({
         role:
           config.recipeId === 'character-lab' && index === 0
@@ -1182,11 +1334,13 @@ export function buildGenerationTaskSpecFromRecipe({
             : ('reference' as const),
         assetName: attachment.name,
         instruction:
-          config.recipeId === 'character-lab' && index === 0
-            ? 'Use as the primary character identity source.'
-            : config.recipeId === 'styles'
-              ? 'Use as source/reference material while applying the selected style layers.'
-              : 'Use as visual reference according to the requested generation task.',
+          config.recipeId === 'sprite-atlas' && index === 0
+            ? 'Use as the identity anchor for sprite atlas row consistency.'
+            : config.recipeId === 'character-lab' && index === 0
+              ? 'Use as the primary character identity source.'
+              : config.recipeId === 'styles'
+                ? 'Use as source/reference material while applying the selected style layers.'
+                : 'Use as visual reference according to the requested generation task.',
       })),
     },
     output: {
@@ -1195,12 +1349,13 @@ export function buildGenerationTaskSpecFromRecipe({
       imageSize: resolvedImageSize,
       mimeType: 'image/png',
       requiresCatalogEntry: true,
-      requiresExactPath: true,
       requiresLocalAsset: true,
+      requiresExactPath: true,
     },
     metadata: {
       recipeContext,
       recipeProviderDirectives,
+      spriteAtlas: spriteAtlasContract,
       recipeModule: module
         ? {
             id: module.id,

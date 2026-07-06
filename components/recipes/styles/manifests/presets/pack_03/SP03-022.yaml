@@ -12,26 +12,71 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Made of cubes
-  subject_treatment: Grid aligned
-  color_and_tone: Vibrant
-  lighting_and_shadow: Global illumination
-  texture_and_material: Flat clean grid faces
-  camera_and_composition: Blocky
-  atmosphere_and_mood: Cute, digital, nostalgic sandbox
-  rendering_and_quality: Minecraft/MagicaVoxel voxel art, cube poetry
-  key_features: Cubes
+  aesthetic: >-
+    Voxel Art acts as a transferable CGI-style router: start from Made of cubes and 3D style system
+    built from modeling language, mesh abstraction, projection rules, topology display, toy
+    material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Grid aligned; preserve the prompt subject while rebuilding
+    it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper
+    folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Vibrant; use color through material simplification, cel ramps, toy plastic,
+    paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate
+    value grouping, exposure control, and medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Global illumination; shape light through the style constraint: simplified
+    GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro
+    speculars, so value structure supports the renderer and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Flat clean grid faces; surface detail should show the named construction system; cube
+    faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or
+    low-poly facets should appear only when they belong to the preset, keeping material scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Blocky; compose through projection, topology readability, object
+    grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Cute, digital, nostalgic sandbox; derive mood from toy-like clarity, technical
+    breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical
+    wonder, letting the renderer alter interpretation without demanding a specific story, location,
+    or character.
+  rendering_and_quality: >-
+    Finish with Minecraft/MagicaVoxel voxel art, cube poetry; finish with intentional stylization,
+    clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks
+    for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI
+    mode recognizable.
+  key_features: Made of cubes; Vibrant; Flat clean grid faces; Blocky
   creative_brief: >-
-    Resolve the input into voxel grammar: cubic sampling, visible grid logic, MagicaVoxel color blocks and
-    soft GI over hard right angles. Keep sandbox nostalgia as construction style, without requiring a block
-    world, terrain or Minecraft-style environment.
+    Apply Voxel Art as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Made of cubes, Flat clean grid faces without requiring the card image's
+    original subject.
 avoidRules:
   - curves
   - smooth
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - accidental photorealism
+  - generic smooth mesh
+  - wrong geometry language
+  - messy topology
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-022.webp
 attributes:
-  negativePrompt: curves, smooth
+  negativePrompt: >-
+    curves, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
+    geometry language, messy topology
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

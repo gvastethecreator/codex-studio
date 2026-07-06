@@ -15,25 +15,41 @@ tags:
   - monastery-siege
 visualDna:
   aesthetic: >-
-    Siege-monastery fantasy with bone-script ornament, barricaded cloisters, armored scribes, and ritual
-    defense engines.
+    Siege-monastery fantasy with bone-script ornament, barricaded cloisters, armored scribes, and
+    ritual defense engines.
   subject_treatment: >-
-    Apply bone-script siege-monastery styling to any subject through carved non-readable markings, armored
-    scholastic severity, limestone-bone value logic, and ritual defense geometry without requiring a fixed
-    object or support cast.
+    Apply bone-script siege-monastery styling to any subject through carved non-readable markings,
+    armored scholastic severity, limestone-bone value logic, and ritual defense geometry without
+    requiring a fixed object or support cast.
   color_and_tone: Limestone gray, bone white, black ink, old gold, oxblood cloth, and smoky blue shadow.
-  lighting_and_shadow: Bell-tower light, candle rows, and smoke beams keep stone planes readable without dark artifact buildup.
-  texture_and_material: Chipped limestone, vellum-like cloth, bone inlay, hammered metal, wax, dust, and clean ink seams.
+  lighting_and_shadow: >-
+    Bell-tower light, candle rows, and smoke beams keep stone planes readable without dark artifact
+    buildup.
+  texture_and_material: >-
+    Chipped limestone, vellum-like cloth, bone inlay, hammered metal, wax, dust, and clean ink
+    seams.
   camera_and_composition: >-
-    Strong vertical rhythm, solemn central emphasis, smoke-beam separation, clean silhouette hierarchy, and
-    crisp stone-like planes.
-  atmosphere_and_mood: Besieged, scholarly, sacred, tense, and stoic.
+    Strong vertical rhythm, solemn central emphasis, smoke-beam separation, clean silhouette
+    hierarchy, and crisp stone-like planes.
+  atmosphere_and_mood: >-
+    Carry the prompt through Besieged, scholarly, sacred, tense, and stoic; martial doom,
+    penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual
+    discipline; the tone should follow prompt X while preserving the preset's medieval-zine
+    identity.
   rendering_and_quality: >-
-    Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone detail, and
-    non-readable decorative marks.
+    Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone
+    detail, and non-readable decorative marks.
   creative_brief: >-
-    Reusable visual system for any subject needing bone-script ornament, scholastic siege tension, sacred
-    defense mood, and stoic medieval weight.
+    Reusable visual system for any subject needing bone script ornament, scholastic siege tension,
+    sacred defense mood, and stoic medieval weight. Apply after prompt X: prompt X supplies subject,
+    action, setting, tone, and intensity, while this preset supplies a style grammar of Bone Script
+    Monastery Siege; Siege monastery fantasy with bone script ornament; barricaded cloisters;
+    armored scribes; ritual defense engines; carved non readable markings, mood, material behavior,
+    framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic,
+    fixed monster, readable text, or sample-card composition.
+  key_features: >-
+    Bone Script Monastery Siege; Siege monastery fantasy with bone script ornament; barricaded
+    cloisters; armored scribes; ritual defense engines; carved non readable markings
 avoidRules:
   - readable script
   - book stack default
@@ -42,12 +58,20 @@ avoidRules:
   - explicit gore
   - watermark
   - text
+  - army lineup lock
+  - tabletop product photo
+  - generic battle splash
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-031.webp
 attributes:
   negativePrompt: >-
-    readable script, book stack default, library room cliche, muddy stone noise, explicit gore, watermark,
-    text
+    readable script, book stack default, library room cliche, muddy stone noise, explicit gore,
+    watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal
+    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
+    noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

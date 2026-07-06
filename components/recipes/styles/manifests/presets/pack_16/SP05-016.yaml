@@ -13,34 +13,81 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    90s supernatural pressure style with disciplined confrontation, spectral charge, and restrained power
-    escalation.
+    Spirit Tournament Pressure Style acts as a transferable anime-prestige router: a spirit anime
+    direction shaped by era-aware line economy and genre tone, alongside a tournament anime
+    direction shaped by era-aware line economy and genre tone; fuse it with 90s golden-era anime
+    direction with sharp cel shadows, dramatic closeups, aura effects, urban melancholy, and
+    high-contrast compositing; it routes era, genre, line economy, cel or digital finish, and
+    performance tone without locking prompt content to the source title or sample image.
   subject_treatment: >-
-    Crisp cel-era linework, defined contours, tense stance geometry, aura edges, and impact strokes that imply
-    force without fixed choreography.
+    Preserve the prompt subject, action, and context while restyling forms through contours paced by
+    spirit tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    tournament tension, readable pose energy, and silhouette discipline; identity should remain
+    readable through anime contour, expression economy, pose energy, shape simplification, and
+    effect hierarchy instead of a required canon character or title scene.
   color_and_tone: >-
-    Violet shadows, acid-green spirit accents, hot magenta energy pops, bruised blues, and warm skin-light
-    contrast.
+    Map color through a spirit accent system held inside disciplined cel values, alongside a
+    tournament accent system held inside disciplined cel values; anchor it in deep night blues,
+    saturated aura color, jewel accents, warm skin cel tones, smoke grays, and VHS-era contrast;
+    keep value separation clean, cel flats intentional, accents purposeful, and palette behavior
+    attached to the requested content.
   lighting_and_shadow: >-
-    High-contrast cel lighting with stark rim separation, aura bloom, and hard cuts between darkness and
-    charged highlights.
+    Use a spirit light logic using cel rim, glow behavior, and blocked shadow, alongside a
+    tournament light logic using cel rim, glow behavior, and blocked shadow; combine it with
+    hard-edged rim light, aura bloom, neon spill, twilight gradients, speed-flash cuts, and moody
+    cel shadow blocks; shadows should read as anime light design, rims should clarify form, and glow
+    or effects should support the prompt rather than replacing it.
   texture_and_material: >-
-    Painted background grain, cel overlay texture, smoky aura particulate, rough impact dust, and inked shadow
-    bands.
+    Render cel paint and ink grain tuned to spirit material contrast, alongside cel paint and ink
+    grain tuned to tournament material contrast; anchor surfaces in painted cels, compositing grain,
+    inked speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel
+    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
+    coherent across people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Compressed confrontation space, elastic foreshortening, energy-field warping, and diagonal pressure
-    vectors.
-  atmosphere_and_mood: Supernatural, intense, fierce, pressurized.
+    Frame around versus spacing, power-up pauses, and ring-like pressure without fixed
+    contest-circle order, alongside spirit converted into reusable framing rhythm and anime timing,
+    then extend it with cinematic closeups, speed-line vectors, dramatic low angles, layered profile
+    cuts, and compressed emotional space; the style should support portraits, props, machines,
+    performances, landscapes, symbols, and full scenes through reusable anime staging grammar
+    instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through public challenge and escalating spirit pressure, alongside spirit emotional
+    pressure and genre-specific tone; braid it with heightened rivalry, melancholy cool, occult
+    romance, existential drift, heroic escalation, and serious adult tone; the preset can become
+    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
+    preserving the chosen anime lineage.
   rendering_and_quality: >-
-    Golden-era anime frame polish with sharp cel definition, saturated grading, and readable silhouette
-    hierarchy.
+    Finish with clean anime finishing that keeps spirit identity readable without noisy denoise,
+    alongside clean anime finishing that keeps tournament identity readable without noisy denoise;
+    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
+    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
+    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
+    3D-render drift.
   key_features: >-
-    Spectral aura contrast, disciplined stance rhythm, explosive pause, bold silhouette design, and
-    impact-ready visual storytelling.
+    a spirit anime direction shaped by era-aware line economy and genre tone, alongside a tournament
+    anime direction shaped by era-aware line economy and genre tone; contours paced by spirit
+    tension, readable pose energy, and silhouette discipline, alongside contours paced by tournament
+    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
+    spirit material contrast, alongside cel paint and ink grain tuned to tournament material
+    contrast; a spirit light logic using cel rim, glow behavior, and blocked shadow, alongside a
+    tournament light logic using cel rim, glow behavior, and blocked shadow; versus spacing,
+    power-up pauses, and ring-like pressure without fixed contest-circle order, alongside spirit
+    converted into reusable framing rhythm and anime timing
   creative_brief: >-
-    Build a reusable spirit-tournament-pressure grammar for any subject or input image: supernatural charge,
-    disciplined confrontation, compressed tension, aura-driven lighting, and 90s cel impact without imposing
-    arenas, fighters, ring battles, numbered powers, crowds, or cratered floors.
+    Apply Spirit Tournament Pressure Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
+    spirit anime direction shaped by era-aware line economy and genre tone, alongside a tournament
+    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
+    spirit tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    tournament tension, readable pose energy, and silhouette discipline; a spirit accent system held
+    inside disciplined cel values, alongside a tournament accent system held inside disciplined cel
+    values; a spirit light logic using cel rim, glow behavior, and blocked shadow, alongside a
+    tournament light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain
+    tuned to spirit material contrast, alongside cel paint and ink grain tuned to tournament
+    material contrast and versus spacing, power-up pauses, and ring-like pressure without fixed
+    contest-circle order, alongside spirit converted into reusable framing rhythm and anime timing,
+    finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop
+    bundle, location, sport, instrument, weapon, or card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -54,12 +101,24 @@ avoidRules:
   - watermark
   - text
   - signature
+  - flat modern moe
+  - generic shonen screenshot
+  - messy VHS noise
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-016.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
+    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise, readable text
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

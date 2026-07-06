@@ -13,27 +13,57 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: White Italian marble
-  subject_treatment: Grey veins
-  color_and_tone: White, Grey
-  lighting_and_shadow: Subsurface scattering
-  texture_and_material: Smooth, cold
-  camera_and_composition: 'Compose for Marble (Carrara) using its key spatial cues: Veining.'
-  atmosphere_and_mood: Classic, pure
-  rendering_and_quality: Sculpture, premium
-  key_features: Veining
+  aesthetic: >-
+    Marble (Carrara) translates natural material behavior into form: start from White Italian
+    marble, Smooth, cold, and Veining, then turn natural formation, growth, erosion, and geological
+    or biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Grey veins: preserve identity and pose while letting forms
+    grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use White, Grey as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Subsurface scattering define the light response: highlights, occlusion, translucency,
+    specular scatter, matte falloff, or rim behavior should reveal Marble (Carrara) without hiding
+    the prompt subject.
+  texture_and_material: >-
+    Render Smooth, cold through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Veining as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Classic, pure by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Sculpture, premium material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: White Italian marble; Grey veins; Smooth, cold; Subsurface scattering; Veining
   creative_brief: >-
-    Apply Carrara marble as a luminous material transformation: translucent alabaster white, smoke-like grey
-    veining, cold polished smoothness, and soft internal glow. Preserve the input's subject while giving its
-    surfaces sculptural premium weight, as if stone were trying to become cloud without requiring classical
+    Route any subject through Marble (Carrara) as a transferable natural-material visual system
+    while preserving the prompt's subject, action, and setting. Apply Carrara marble as a luminous
+    material transformation: translucent alabaster white, smoke-like grey veining, cold polished
+    smoothness, and soft internal glow. Preserve the input's subject while giving its surfaces
+    sculptural premium weight, as if stone were trying to become cloud without requiring classical
     architecture or a fixed sculpture.
 avoidRules:
   - dirty
   - yellow
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-006.webp
 attributes:
-  negativePrompt: dirty, yellow
+  negativePrompt: dirty, yellow, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

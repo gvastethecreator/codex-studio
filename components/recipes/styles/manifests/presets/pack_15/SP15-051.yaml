@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP15-051
 packId: pack_15
-name: Cassette Weather Station
+name: Cassette Weather Instruments
 category: 7. Media, Vapor & Glitch Punks
 version: 1
 supportedTasks:
@@ -15,33 +15,52 @@ tags:
   - weather
 visualDna:
   aesthetic: >-
-    cassette futurism climate desk built around a weather station built from cassette decks, analog dials,
-    field coats, maps, and magnetic tape ribbons.
+    Cassette Weather Instruments operates as a portable punk-spectrum router: combine Cassette
+    Weather Instruments identity cues through cassette decks; tape ribbons; weather-map geometry;
+    field materials; dial clusters; analog dials with media/vapor/glitch punk grammar with CRT
+    devotion, cassette weather, pirate broadcast stacks, mallsoft nostalgia, checker playfields, and
+    analog signal ghosts, so the preset supplies retrofit style behavior rather than a required
+    venue, mascot, prop bundle, or card composition.
   subject_treatment: >-
-    CRT geometry, analog signal bands, vapor gradients, mall-era surfaces, tape artifacts, and digital
-    slippage. Core composition uses cassette decks, tape ribbons, weather maps, field operators, dial
-    clusters.
-  color_and_tone: cassette gray, orange oxide, sky blue, beige plastic
-  lighting_and_shadow: overcast window light, dial lamps, tape shimmer, desk lamp pools
-  texture_and_material: plastic decks, magnetic tape, paper maps, wool coats, metal antennas
+    Preserve prompt X's subject, action, scale, and setting while translating forms through scanline
+    contour, cassette-shell geometry, checker-grid planes, phosphor bloom, tape flutter, chrome
+    trim, and broadcast-stack surface logic; motifs can become contour, surface, costume, equipment,
+    atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through cathode aqua, magenta, peach, violet, phosphor green, cream tile, black grid,
+    and washed sunset gradients; keep dominant, support, and accent values readable, avoid muddy
+    black, and let palette code materials, signals, climate, ritual, salvage, or repair pressure.
+  lighting_and_shadow: >-
+    Use CRT glow, cabinet bloom, phosphor edge light, sunset-gradient spill, humid reflection, and
+    analog monitor falloff; lighting should reveal the punk system, preserve the user's subject,
+    separate near and distant value planes, and avoid crushed blacks or noisy dark texture.
+  texture_and_material: >-
+    Render screen glass, cabinet plastic, laminate, cassette tape, chrome trim, static grain, tile
+    sheen, and controlled glitch bands; keep material scale coherent, surface marks motivated, and
+    tactile details strong enough to route style without becoming pasted grunge.
   camera_and_composition: >-
-    Pools, arcades, stations, atriums, kiosks, malls, observatories, and broadcast corners with media texture.
-    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: analog, nerdy, field-science, tactile
+    Compose through bold signal framing, checker or scanline depth, one clear subject anchor, offset
+    broadcast stacks, and synthetic negative space as reusable framing grammar for characters,
+    creatures, objects, vehicles, environments, symbols, or full scenes without one required card
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through dreamy analog unreality, playful nostalgia, eerie devotion, humid retro
+    intimacy, synthetic haze, and media-haunted tenderness; the tone may become adult, romantic,
+    violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family
+    remains legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: cassette decks, tape ribbons, weather maps, field operators, dial clusters
+    Finish with clean vapor/glitch illustration with denoised static, readable analog artifacts, no
+    fake readable text, and no empty gradient card; prioritize clean denoise, bold readable shapes,
+    controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art
+    polish.
+  key_features: cassette decks; tape ribbons; weather-map geometry; field materials; dial clusters; analog dials
   creative_brief: >-
-    Cassette futurism as useful instrument culture: tactile decks and weather work, no product-only still
-    life. Keep the result representative rather than over-abstract; make one character in their environment
-    the anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a
-    foreground prop. Favor clean graphic-novel card art, stylized 2D digital illustration, controlled digital
-    painting, cel-shaded poster art, or gouache-poster color blocking over realism, photoreal painterly
-    realism, cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate
-    texture, large shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
+    Use Cassette Weather Instruments after prompt X as a transferable punk-spectrum layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while the preset supplies cassette
+    decks, tape ribbons, weather-map geometry, field materials, dial clusters, analog dials, color
+    logic, light response, material behavior, composition rhythm, mood pressure, and finish
+    discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or
+    sample-card composition.
 avoidRules:
   - photoreal
   - watermark
@@ -52,23 +71,37 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - empty gradient card
+  - fake readable text
+  - generic synthwave wallpaper
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-051.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic realism, AAA
-    key art, photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur,
-    bokeh, depth-of-field photo look, readable map text, letters, logo labels, desk-lamp hero, office
-    control-room wall, tiny dial carpet, generic soldier hero, guard pin-up, weapon-first pose, HDR lens
-    realism, 3D render look, PBR material simulation, hyper-detailed concept art, watermark, text, logo,
-    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated
-    market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
-    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird
-    fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
-    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
-    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
-    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
-    masses, muddy black fields, generic American illustration, generic Western RPG card art
+    photoreal, hyperreal, realistic render, painterly realism, realistic paint finish, cinematic
+    realism, AAA key art, photographic skin pores, realistic near-plane portrait, realistic facial
+    hair detail, lens blur, bokeh, depth-of-field photo look, readable map text, letters, logo
+    labels, desk-lamp hero, office control-interior-system wall, tiny dial carpet, generic soldier
+    hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material
+    simulation, hyper-detailed concept art, watermark, text, logo, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system
+    aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation,
+    bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered
+    machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense
+    machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic
+    American illustration, generic Western RPG card art, repeated-props, empty gradient card, fake
+    readable text, generic synthwave wallpaper, fixed punk venue, required mascot, literal
+    sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic
+    cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

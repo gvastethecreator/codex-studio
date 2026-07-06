@@ -12,31 +12,84 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Rococo court excess, powdered aristocratic texture, pre-revolution glamour
+  aesthetic: >-
+    French Revolution operates as a portable fashion-costume router: combine Rococo court excess,
+    powdered aristocratic texture, pre-revolution glamour with period and mythic costume logic with
+    era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
   subject_treatment: >-
-    Wide hips (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth,
-    train-sweep
-  color_and_tone: Pastel Silk, powder blue, rose pompadour, celadon, buttercream, silver tissue, dove
-  lighting_and_shadow: Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce
+    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
+    plate, embroider, crown, wrap, or ceremonialize through Wide hips (panniers),
+    robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth, train-sweep;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
+    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
+    material color believable, and palette behavior attached to the subject instead of pasted
+    wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce plus
+    museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and
+    silhouette hierarchy as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel
-    ornament
-  camera_and_composition: Pannier volume and court-pageant silhouette exaggeration
-  atmosphere_and_mood: Decadent, fragile, champagne-bubble impermanence, gilded-cage beauty, pre-revolution tension
-  rendering_and_quality: Excessive, royal, Rococo-froth magnificence, petit-Trianon fantasy
-  key_features: Powdered texture cues, beauty-patch dots, ribbon choker logic, pannier side-hoops, court ornament density
+    Render Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents, ribbon
+    garlands, paste-jewel ornament plus brocade, linen, wool, silk, leather, metal, beadwork, lace,
+    fur, embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
+  camera_and_composition: >-
+    Compose with Pannier volume and court-pageant silhouette exaggeration plus regal posture logic,
+    era silhouette, layered garment structure, ornament placement, and readable period identity as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
+    pressure, or folk memory; the tone should feel specific to French Revolution while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
+    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Rococo court excess, powdered aristocratic texture, pre-revolution glamour; Wide hips
+    (panniers), robe-a-la-francaise volume, stomacher-center line, engageantes-sleeve froth,
+    train-sweep; Silk taffeta, lace engageantes, powdered texture cues, ostrich plume accents,
+    ribbon garlands, paste-jewel ornament; Chandelier sparkle, gilded reflection warmth, candlelit
+    shimmer, mirrored bounce; Pannier volume and court-pageant silhouette exaggeration
   creative_brief: >-
-    Turn the input into Rococo excess: pannier width, robe-a-la-francaise volume, silk taffeta, powdered
-    texture cues, ostrich-plume accents, ribbon garlands and paste-jewel sparkle. Keep pre-revolution court
-    tension as style anchor without requiring palace halls, a face, huge wig, fan pose or guillotine
-    narrative.
+    Use French Revolution after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Rococo court excess,
+    powdered aristocratic texture, pre-revolution glamour, Wide hips (panniers), robe-a-la-francaise
+    volume, stomacher-center line, engageantes-sleeve froth, train-sweep, Silk taffeta, lace
+    engageantes, powdered texture cues, ostrich plume accents, ribbon garlands, paste-jewel
+    ornament, Chandelier sparkle, gilded reflection warmth, candlelit shimmer, mirrored bounce,
+    Pannier volume and court-pageant silhouette exaggeration plus corsetry, armor plates, robes,
+    sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette
+    behavior, light response, material treatment, silhouette grammar, and finish discipline without
+    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - contemporary casualwear dominance
   - generic modern streetwear
+  - cheap costume rental
+  - wrong era mashup
+  - plastic armor
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-039.webp
 attributes:
-  negativePrompt: contemporary casualwear dominance, generic modern streetwear
+  negativePrompt: >-
+    contemporary casualwear dominance, generic modern streetwear, cheap costume rental, wrong era
+    mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion
+    catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

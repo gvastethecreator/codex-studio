@@ -13,26 +13,77 @@ tags:
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: >-
-    Monumental doom weight, scar-like crosshatching, eclipse-black negative space, sacrificial emblem logic,
-    oppressive scale fields, cursed ornamental geometry
-  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+    Crosshatched Doom Weight Style acts as a transferable anime-battle/worlds router: Crosshatched
+    Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching,
+    eclipse-black negative space, cursed emblem geometry, and oppressive scale around
+    armor/stone/object fragments; combine it with dark fantasy and seinen anime grammar with moral
+    pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual
+    restraint; named titles, studios, or lineage words may guide style, but they must not require
+    canon cast, title-scene replication, screenshots, logos, or one fixed card concept.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
+    Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink
+    hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around
+    armor/stone/object fragments as portable contour, motion grammar, surface language, and
+    emotional pressure without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty
+    gold, and disciplined blood-or-danger accents; let Crosshatched Doom Weight Style, crosshatched
+    doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed
+    emblem geometry, and oppressive scale around armor/stone/object fragments choose accent
+    intensity, value contrast, emotional temperature, and power-system separation while staying
+    attached to prompt X.
+  lighting_and_shadow: >-
+    Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim,
+    and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or
+    magic, material depth, and mood from Crosshatched Doom Weight Style, crosshatched doom-weight
+    style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem
+    geometry, and oppressive scale around armor/stone/object fragments without replacing prompt X
+    with a stock anime frame.
   texture_and_material: >-
-    Scarred ink grain, worn hide texture, oxidized patina, cracked mineral surfaces, viscous black accents,
-    abraded parchment roughness
+    Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral
+    fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Crosshatched
+    Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching,
+    eclipse-black negative space, cursed emblem geometry, and oppressive scale around
+    armor/stone/object fragments controlled, denoised, and coherent across bodies, objects,
+    environments, abstractions, and action.
   camera_and_composition: >-
-    Severe silhouettes, compressed foreground mass, oppressive scale contrast, ceremonial void framing,
-    gravity-heavy composition
-  atmosphere_and_mood: Brutal, tragic, despairing, epic
-  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+    Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive
+    diagonals, compressed civic space, and slow fatal closeups; convert Crosshatched Doom Weight
+    Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black
+    negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments
+    into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of
+    one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence,
+    loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal,
+    erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it
+    while keeping the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with mature seinen finish with controlled darkness, stable structure, restrained texture,
+    no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first
-    visual language
+    Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink
+    hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around
+    armor/stone/object fragments; scarred contour, restrained deformation, severe silhouettes,
+    vulnerable posture, occult or noir edge language, and readable psychological pressure;
+    crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture,
+    blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual
+    symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen
+    finish with controlled darkness, stable structure, restrained texture, no splatter-only horror,
+    no photoreal grime, and no watermark/text
   creative_brief: >-
-    Render any subject as if weight, guilt, and fate have been pressed into the ink. Use scar-dense hatching,
-    sacrificial symbol geometry, bruised earth reds, and eclipse-black shadow fields to create monumental doom
-    as a transferable render grammar, free of fixed props, cast, lore icons, or set-piece events.
+    Apply Crosshatched Doom Weight Style after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink
+    hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around
+    armor/stone/object fragments, dark fantasy and seinen anime grammar with moral pressure, heavy
+    shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -46,12 +97,35 @@ avoidRules:
   - watermark
   - text
   - signature
+  - gore
+  - severed bodies
+  - sexual violence
+  - famous dark-fantasy swordsman likeness
+  - giant sword
+  - torture scene
+  - readable occult text
+  - splatter-only horror
+  - photoreal grime
+  - cheap jump scare
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-061.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, gore, severed bodies, sexual violence, famous
+    dark-fantasy swordsman likeness, giant sword, torture scene, readable occult text, splatter-only
+    horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication,
+    required source-frame look, cosplay, generic anime filter, prompt-required card, readable text,
+    logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

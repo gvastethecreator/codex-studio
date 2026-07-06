@@ -12,20 +12,53 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm
-  subject_treatment: Tape, stickers
-  color_and_tone: Pastel, vintage
-  lighting_and_shadow: Flat lay
-  texture_and_material: Paper fibers, tape sheen, sticker edges, paper shadows, and optional non-readable handwriting texture
-  camera_and_composition: Layered
-  atmosphere_and_mood: Nostalgic, sweet
-  rendering_and_quality: Personal, cute
-  key_features: Page layout
+  aesthetic: >-
+    Scrapbook Layer Grammar acts as a transferable art-medium router: start from Scrapbook layering
+    style with taped ephemera, soft nostalgia, and handmade page rhythm, Page layout and mixed-media
+    assembly system built from layering, adhesion, surface collision, found-material logic, tactile
+    seams, and handmade construction, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Tape, stickers; preserve the prompt subject while
+    rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee
+    stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
+  color_and_tone: >-
+    Build color with Pastel, vintage; treat color as material combination: paper aging, varnish
+    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
+    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat lay; make light reveal relief, varnish gloss, paper lift, tape shine,
+    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Paper fibers, tape sheen, sticker edges, paper shadows, and optional non readable
+    handwriting texture; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
+    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Layered; compose through layer order, overlap, pin logic, cut
+    rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal
+    craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nostalgic, sweet; derive mood from DIY urgency, memory, repair, evidence, punk
+    collision, tactile intimacy, decorative excess, or experimental material play, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Personal, cute; finish with coherent material stacking, readable subject
+    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
+    where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm; Page
+    layout; Pastel, vintage; Paper fibers, tape sheen, sticker edges, paper shadows, and optional
+    non readable handwriting texture; Layered
   creative_brief: >-
-    Ephemera-like layers arrange into a memory-coded page rhythm, each fragment selected for texture, color,
-    and emotional residue rather than literal content. Tape, stickers, torn corners, and soft paper shadows
-    create a curated accident of affection. Keep nostalgia material and compositional, without requiring
-    tickets, flowers, handwriting, people, or readable notes.
+    Apply Scrapbook Layer Grammar as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Scrapbook layering style with taped ephemera, soft nostalgia, and handmade page rhythm,
+    Page layout, Paper fibers, tape sheen, sticker edges, paper shadows, and optional non readable
+    handwriting texture without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -45,12 +78,25 @@ avoidRules:
   - readable handwriting
   - ticket requirement
   - flower requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-065.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, readable handwriting, ticket requirement, flower requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, readable handwriting, ticket requirement,
+    flower requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter,
+    readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table
+    default, clean vector render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,26 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Scientific botanical plate in vintage field-guide tradition
-  subject_treatment: Fine controlled ink contour with diagrammatic annotation leaders
-  color_and_tone: Muted watercolor tints over warm archival-paper neutrals
-  lighting_and_shadow: Flat specimen illumination prioritizing structural clarity
-  texture_and_material: Aged paper grain with light wash transparency
-  camera_and_composition: Orthographic specimen layout with sectional/dissected insets
-  atmosphere_and_mood: Taxonomic, scholarly, measured
-  rendering_and_quality: High-accuracy naturalist rendering for educational reference
-  key_features: Nomenclature labels, anatomical callouts, curated specimen grouping
+  aesthetic: >-
+    Scientific Botanical acts as a transferable illustration router: start from Scientific botanical
+    plate in vintage field-guide tradition, Nomenclature labels, anatomical callouts, curated
+    specimen grouping and storybook and friendly-illustration system built from approachable shapes,
+    handmade media, simplified edges, tactile materials, and high-readability charm, then apply the
+    visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fine controlled ink contour with diagrammatic annotation
+    leaders; preserve the requested subject while softening, simplifying, miniaturizing,
+    paper-building, mark-making, or diagramming it according to the named medium, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Muted watercolor tints over warm archival-paper neutrals; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Flat specimen illumination prioritizing structural clarity; shape light
+    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Aged paper grain with light wash transparency; surface detail should show paper tooth,
+    cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or
+    watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Orthographic specimen layout with sectional/dissected insets;
+    compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat
+    educational layout, or gentle negative space without forcing a nursery scene, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Taxonomic, scholarly, measured, mood carried by Scientific Botanical craft,
+    material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with High-accuracy naturalist rendering for educational reference; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Scientific botanical plate in vintage field-guide tradition; Nomenclature labels, anatomical
+    callouts, curated specimen grouping; Muted watercolor tints over warm archival-paper neutrals;
+    Aged paper grain with light wash transparency; Orthographic specimen layout with
+    sectional/dissected insets
   creative_brief: >-
-    Apply vintage scientific-plate logic to the input: clean ink contour, transparent tinting, annotation
-    hierarchy and orthographic specimen clarity. If flora exists, make morphology botanical; otherwise use
-    field-guide organization without forcing plants or a species study.
+    Apply Scientific Botanical as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Scientific botanical plate in vintage field-guide tradition, Nomenclature labels,
+    anatomical callouts, curated specimen grouping, Aged paper grain with light wash transparency
+    without requiring the card image's original subject.
 avoidRules:
   - cartoon
   - messy
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-030.webp
 attributes:
-  negativePrompt: cartoon, messy
+  negativePrompt: >-
+    cartoon, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

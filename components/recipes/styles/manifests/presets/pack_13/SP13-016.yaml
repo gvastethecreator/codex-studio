@@ -13,43 +13,84 @@ tags:
   - anime
 visualDna:
   aesthetic: >-
-    Arcane stormcast anime language with elemental authority, ritual-combat iconography, and high-impact
-    fantasy dynamism
+    Battle Mage Stormcast operates as a portable anime-lifestyle router: combine Battle Mage
+    Stormcast identity cues through Central magic circle architecture; lightning discharge
+    hierarchy; dominant stance geometry; and rune particle choreography; Battle Mage Stormcast anime
+    style cues; Arcane stormcast anime language with elemental authority with core anime character
+    and adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre
+    clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after
+    prompt X rather than a required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Commanding silhouette, cape-like motion vectors, rune-circle geometry anchors, and upward gesture lines
-    emphasizing energy-release force
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or
+    surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Storm blue foundations, electric white discharge cores, violet arcane shadows, and selective silver
-    highlights for energy separation
+    Map color through clear cel values, saturated accents, stable skin or material midtones, sky or
+    neon support color, and disciplined complementary contrast; keep cel values readable, accent
+    roles intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Spell-like emission as dominant key source, secondary rune uplight, high-contrast rim flashes, and
-    particulate glow falloff control
+    Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and
+    clean value separation; lighting should clarify expression, silhouette, material, and emotional
+    rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Layered ritual textiles, embossed sigil surfaces, charged air particle trails, and luminous
-    rune-inscription edges
-  camera_and_composition: Low-angle upward perspective with radial energy wrap and controlled context warping around focal point
-  atmosphere_and_mood: Urgent, powerful, grand, and arcane-charged
+    Render flat cel fills, painted distant plane softness, limited grain, clean ink edges,
+    controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
+  camera_and_composition: >-
+    Compose through silhouette-priority framing, moderate dynamic lensing, readable action or
+    emotion lanes, and subject-first depth without required genre staging as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift,
+    or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe,
+    comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime
+    lineage.
   rendering_and_quality: >-
-    Premium combat-anime rendering with sharp energy readability, disciplined effects layering, and strong
-    pose-to-energy coherence
+    Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines,
+    denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Central magic-circle architecture, lightning discharge hierarchy, dominant stance geometry, and
-    rune-particle choreography
+    Central magic circle architecture; lightning discharge hierarchy; dominant stance geometry; and
+    rune particle choreography; Battle Mage Stormcast anime style cues; Arcane stormcast anime
+    language with elemental authority
   creative_brief: >-
-    Use Battle Mage Stormcast as style anchor for arcane impact: rune-anchored geometry, electric-violet
-    energy hierarchy, and low-angle dominance should transfer without requiring a mage, spell duel, cape,
-    floor circle, or battle event.
+    Use Battle Mage Stormcast after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Central magic circle architecture, lightning discharge hierarchy, dominant stance geometry, and
+    rune particle choreography, Battle Mage Stormcast anime style cues, Arcane stormcast anime
+    language with elemental authority, color logic, lighting, material finish, composition rhythm,
+    mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop
+    bundle, title screenshot, or sample-card composition.
 avoidRules:
   - photoreal
-  - low-contrast
-  - muddy-fx
+  - low contrast
+  - muddy fx
   - watermark
   - text
   - logo
+  - generic anime filter
+  - canon cast copy
+  - source frame look composition
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-016.webp
 attributes:
-  negativePrompt: photoreal, low-contrast, muddy-fx, watermark, text, logo
+  negativePrompt: >-
+    photoreal, low contrast, muddy fx, watermark, text, logo, generic anime filter, canon cast copy,
+    source frame look composition, canon character copy, title scene copy, literal sample card
+    setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay,
+    3D render look, copied franchise costume, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

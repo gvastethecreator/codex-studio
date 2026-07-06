@@ -12,28 +12,85 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry
-  subject_treatment: White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated paper
-  color_and_tone: Prussian Blue, monochrome cyan, sun-print depth
-  lighting_and_shadow: Negative, UV exposure, solar-contact alchemy
-  texture_and_material: Watercolor paper
-  camera_and_composition: Soft edges
-  atmosphere_and_mood: Dreamy, blue, alternative-process magic, Victorian science
+  aesthetic: >-
+    Cyanotype (Blueprint) acts as a transferable illustration router: start from Cyanotype
+    contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry,
+    Blue only, contact shadow, silhouette photogram and ink and printmaking system built from mark
+    economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible
+    graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo
+    image.
+  subject_treatment: >-
+    Transform any prompt subject through White-negative silhouettes with soft contact edges and
+    exposure-based tonal falloff on coated paper; preserve the requested subject while rebuilding it
+    through carved lines, etched density, stipple fields, calligraphic pressure, stamp
+    incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested
+    identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Prussian Blue, monochrome cyan, sun-print depth; use color as ink behavior:
+    monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray
+    contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control,
+    and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Negative, UV exposure, solar-contact alchemy; translate light into hatch
+    density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray
+    contrast rather than photographic shading, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Watercolor paper, ink transfer, mark density, paper response, process artifacts, and
+    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
+    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
+    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Soft edges, scale rhythm, edge hierarchy, spacing, and composition
+    rules specific to Cyanotype (Blueprint); compose through print registration, border discipline,
+    mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like
+    balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dreamy, blue, alternative-process magic, Victorian science; derive mood from craft
+    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and historic
-    photogram aesthetics
-  key_features: Blue only, contact shadow, silhouette photogram
+    Finish with Alternative-process print fidelity emphasizing UV exposure behavior, washout
+    dynamics, and historic photogram aesthetics; finish as a credible ink or print artifact with
+    exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth
+    vector replacement, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
+  key_features: >-
+    Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome
+    chemistry; Blue only, contact shadow, silhouette photogram; Prussian Blue, monochrome cyan,
+    sun-print depth; Watercolor paper, ink transfer, mark density, paper response, process
+    artifacts, and printmaking composition discipline; Soft edges, scale rhythm, edge hierarchy,
+    spacing, and composition rules specific to Cyanotype (Blueprint)
   creative_brief: >-
-    Apply cyanotype contact-print grammar to any input: Prussian-blue wash, UV-contact silhouettes, soft
-    exposure falloff, coated-paper texture, and chemistry-led tonal emergence should define style without
-    requiring botanicals, photograms, objects on paper, science props, or Victorian scenes.
+    Apply Cyanotype (Blueprint) as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian
+    monochrome chemistry, Blue only, contact shadow, silhouette photogram, Watercolor paper, ink
+    transfer, mark density, paper response, process artifacts, and printmaking composition
+    discipline without requiring the card image's original subject.
 avoidRules:
   - red
   - yellow
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-068.webp
 attributes:
-  negativePrompt: red, yellow
+  negativePrompt: >-
+    red, yellow, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

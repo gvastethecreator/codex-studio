@@ -12,26 +12,77 @@ tags:
   - miscellaneous-and-fun
   - toys-and-crafts
 visualDna:
-  aesthetic: Carved wood figure, traditional toy, whittled companion, heirloom plaything
-  subject_treatment: Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms
-  color_and_tone: Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents
-  lighting_and_shadow: Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth
-  texture_and_material: Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina
-  camera_and_composition: Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry
-  atmosphere_and_mood: Nostalgic, simple, warm, handcrafted, old-world tenderness
-  rendering_and_quality: Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm
-  key_features: Wood texture, visible grain rings, dovetail joints, paint-wear edges
+  aesthetic: >-
+    Wooden Toy operates as a portable source-router layer: combine Carved wood figure, traditional
+    toy, whittled companion, heirloom plaything with hand-built object logic with toy scale,
+    assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior
+    rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms simplify,
+    assemble, soften, hinge, stitch, fold, carve, or snap together through Wood grain, flowing-grain
+    contours, chisel-facet marks, rounded block-forms; identity stays readable through construction
+    grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through material-native color blocks, toy-safe saturation, handmade variance, and
+    clean separation between parts; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth plus small-scale object
+    lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the
+    light-response contract, with readable hierarchy, controlled contact detail, and no lighting
+    choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina plus
+    plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface
+    behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must
+    remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry plus
+    object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail
+    hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract
+    prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and
+    physical charm; the emotional tone should feel specific to Wooden Toy while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean craft detail, readable construction, deliberate imperfections, and no
+    accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Carved wood figure, traditional toy, whittled companion, heirloom plaything; Wood grain,
+    flowing-grain contours, chisel-facet marks, rounded block-forms; Wood grain, paint chips,
+    sanded-smooth bevel, hand-rubbed oil, age-darkened patina; Warm, window-sill daylight,
+    oiled-grain sheen, gentle-shadow depth; Simple geometry, block-cut forms, peg-joint assembly,
+    turned-wood symmetry
   creative_brief: >-
-    Translate the input into carved wooden-toy logic: simplified block forms, rounded peg-like joints, visible
-    grain rings, hand-painted accents, and age-polished bevels. Keep heirloom craft warmth, but avoid
-    requiring small hands, a workshop, or one literal toy object.
+    Use Wooden Toy after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Carved wood figure, traditional toy, whittled companion,
+    heirloom plaything, Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms,
+    Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina, Warm,
+    window-sill daylight, oiled-grain sheen, gentle-shadow depth, Simple geometry, block-cut forms,
+    peg-joint assembly, turned-wood symmetry plus clearly expressed joins, simplified proportions,
+    craft tolerances, modular parts, and maker-process evidence, palette behavior, light response,
+    material treatment, and finish discipline without requiring one specimen, prop bundle, product
+    still, or card composition.
 avoidRules:
   - plastic
   - metal
+  - melted craft
+  - generic toy render
+  - featureless plastic
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-020.webp
 attributes:
-  negativePrompt: plastic, metal
+  negativePrompt: >-
+    plastic, metal, melted craft, generic toy render, featureless plastic, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

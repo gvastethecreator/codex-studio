@@ -12,30 +12,79 @@ tags:
   - miscellaneous-and-fun
   - diagram-and-technical-drawing
 visualDna:
-  aesthetic: Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination
-  subject_treatment: White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges
-  color_and_tone: Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white
-  lighting_and_shadow: Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination
-  texture_and_material: Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold
-  camera_and_composition: 2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
-  atmosphere_and_mood: Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin
-  rendering_and_quality: Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care
+  aesthetic: >-
+    Blueprint operates as a portable source-router layer: combine Architectural plan, drafting-table
+    vision, engineer's-ghost, technical-imagination with technical notation logic with measured
+    linework, construction marks, schematic hierarchy, and annotation-ready clarity, so the preset
+    supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms measure,
+    section, blueprint, annotate, simplify, align, explode, or draft into construction logic through
+    White technical lines, dimension-string contours, section-cut profiles, orthographic-projection
+    edges; identity stays readable through construction grammar, proportion, edge logic, and detail
+    scale as this preset is applied.
+  color_and_tone: >-
+    Map color through blueprint cyan, white linework, restrained value coding, technical accents,
+    and drafting-paper contrast; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination plus flat
+    documentation visibility, clean line contrast, blueprint glow, and no dramatic shadow dependency
+    as the light-response contract, with readable hierarchy, controlled contact detail, and no
+    lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold
+    plus line ink, tracing surface, grid substrate, blueprint grain, guide marks, and crisp drafting
+    artifacts; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must
+    remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with 2D schematic, plan-section-elevation, orthographic-projection geometry,
+    isometric-grid underlay plus schematic spacing, plan/elevation logic, sectional clarity, part
+    separation, and precise reading order as reusable framing grammar, allowing cards, portraits,
+    objects, scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through engineering calm, planning intent, exactitude, workshop intelligence, and
+    construction anticipation; the emotional tone should feel specific to Blueprint while still
+    obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with crisp line hierarchy, clean symbol discipline, readable structure, and no fake
+    unreadable labels; prioritize clean style recognition, prompt preservation, controlled detail,
+    and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar
-    reference
+    Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination; White
+    technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges;
+    Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold; Flat,
+    drafting-table glow, backlit-tracing vellum, even-fluorescent illumination; 2D schematic,
+    plan-section-elevation, orthographic-projection geometry, isometric-grid underlay
   creative_brief: >-
-    Keep this preset defined by blueprint drafting grammar: white-line orthographic clarity, dimension-string
-    hierarchy, title-block structure, and diazo-paper tone should carry identity without a fixed building
-    story. Apply Blueprint as a portable style system over any input: preserve its construction grammar,
-    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
-    prop, fixed specimen, classroom sample, product shot, or scene template.
+    Use Blueprint after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Architectural plan, drafting-table vision,
+    engineer's-ghost, technical-imagination, White technical lines, dimension-string contours,
+    section-cut profiles, orthographic-projection edges, Paper grain, diazo-paper tooth,
+    ammonia-print curl, mylar-film gloss, old-blueprint fold, Flat, drafting-table glow,
+    backlit-tracing vellum, even-fluorescent illumination, 2D schematic, plan-section-elevation,
+    orthographic-projection geometry, isometric-grid underlay plus orthographic line weights,
+    construction guides, measurement marks, diagram layers, and systematic part labeling space,
+    palette behavior, light response, material treatment, and finish discipline without requiring
+    one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - color
   - photo
+  - messy sketch
+  - random labels
+  - decorative blueprint only
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-033.webp
 attributes:
-  negativePrompt: color, photo
+  negativePrompt: >-
+    color, photo, messy sketch, random labels, decorative blueprint only, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

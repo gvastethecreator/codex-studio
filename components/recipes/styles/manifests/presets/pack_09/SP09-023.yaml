@@ -13,30 +13,61 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Old masonry
-  subject_treatment: Mortar lines
-  color_and_tone: Red, Brown, White mortar
-  lighting_and_shadow: Rough
-  texture_and_material: Rough clay
-  camera_and_composition: Chipped corners
-  atmosphere_and_mood: Solid, history
-  rendering_and_quality: Urban, historic
-  key_features: Running bond
+  aesthetic: >-
+    Brick Wall (Aged) treats fabrication as visible style language: start from Old masonry, Rough
+    clay, and Chipped corners, then turn manufacturing process, tooling marks, seams, tolerances,
+    and industrial material behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Mortar lines: preserve identity and pose while letting
+    forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge
+    profile, surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Red, Brown, White mortar as the material palette, with controlled value separation, local
+    color variation, and hue shifts that follow the subject's form rather than flattening it into a
+    pasted texture.
+  lighting_and_shadow: >-
+    Let Rough define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Brick Wall (Aged) without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Rough clay through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Chipped corners as reusable material rhythm: macro-friendly for texture tasks,
+    but able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Solid, history by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Urban, historic material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Old masonry; Mortar lines; Rough clay; Rough; Chipped corners
   creative_brief: >-
-    Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling
-    mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a
-    woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have
-    learned to breathe through chipped corners and softened edges. Use Brick Wall as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
-    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
-    object, or scene where the material naturally appears.
+    Route any subject through Brick Wall (Aged) as a transferable man-made material visual system
+    while preserving the prompt's subject, action, and setting. Capture the warm disorder of aged
+    brick where every unit carries a unique blush of kiln fire and crumbling mortar maps the passage
+    of decades between red clay bodies. The running bond pattern should feel like a woven tapestry
+    of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have
+    learned to breathe through chipped corners and softened edges. Use Brick Wall as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - new
   - perfect
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-023.webp
 attributes:
-  negativePrompt: new, perfect
+  negativePrompt: new, perfect, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

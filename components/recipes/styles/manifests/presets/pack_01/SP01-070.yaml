@@ -13,44 +13,94 @@ tags:
   - documentary-and-street
 visualDna:
   aesthetic: >-
-    Travel Photography within 4. Documentary And Street: a reusable Photography & Realism visual language with
-    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
-    across subjects while preserving Travel Photography's specific style identity.
+    Travel Photography acts as a transferable photographic style router: begin from travelogue
+    documentary photography with discovered-place atmosphere, layered journey detail, and compact
+    destination storytelling, encountered journey; layered travel context; available daylight;
+    regional texture; editorial observation, and observational photographic system built from
+    available-light capture, imperfect timing, public-space pressure, and real-world incident, then
+    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
   subject_treatment: >-
-    Define Travel Photography through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Treat any prompt subject through subjects should feel encountered in transit, shaped by weather,
+    route pressure, distance, and lived-in surroundings; preserve prompt identity while favoring
+    candid posture, active context, environmental evidence, and unsanitized physical detail, keeping
+    the original subject, pose, species, object, or environment legible.
   color_and_tone: >-
-    Use a Travel Photography-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Grade with natural destination color with warm daylight, regional accent color, dusty neutrals,
+    and travel-magazine contrast restraint; grade as street, travel, concert, war, sport, paparazzi,
+    or field documentary capture rather than commercial color polish, with value separation and
+    white balance choices that feel captured in-camera rather than painted over.
   lighting_and_shadow: >-
-    Use lighting that makes Travel Photography recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use available daylight, window spill, street shade, dawn departures, or late-afternoon raking
+    light should carry place memory; use available light, flash intrusion, stage beams, harsh noon,
+    rain reflection, smoke, or practical spill as factual scene evidence, preserving believable
+    exposure, shadow density, highlight rolloff, and source motivation.
   texture_and_material: >-
-    Use materials and textures that reinforce Travel Photography: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
+    Render regional surface patina, textile tactility, transit wear, road dust, water sheen, and
+    architectural age should feel observed; keep street surfaces, sweat, dust, fabric wear, weather,
+    grain, high ISO, and motion smear honest rather than decorative, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Use spatial behavior that fits Travel Photography: perspective, compression, exaggeration, or depth should
-    support the style without forcing one fixed location.
+    Compose through layer route clues, human or object scale, and landmark geometry through depth
+    relationships without turning into a postcard; compose with decisive moment tension, wide action
+    proximity, telephoto intrusion, crowd-layer rhythm, horizon pressure, or unstable framing, with
+    lens distance, depth, timing, and focal hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Travel Photography: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Keep the mood curious, worldly, sun-warmed, observant, and slightly restless, with discovery
+    carried by visual evidence; derive mood from urgency, witness, travel discovery, danger, crowd
+    energy, decay, speed, or unrepeatable timing, so the preset changes interpretation without
+    demanding a specific story, location, or character.
   rendering_and_quality: >-
-    Render Travel Photography with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
+    Finish with editorial travel-magazine photography with clean realism, restrained grading, and no
+    tourist brochure gloss; finish as credible documentary photography with restrained processing,
+    readable action, and no stock-advertising gloss, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
   key_features: >-
-    Prioritize Travel Photography's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    travelogue documentary photography with discovered-place atmosphere, layered journey detail, and
+    compact destination storytelling; encountered journey; layered travel context; available
+    daylight; regional texture; editorial observation; natural destination color with warm daylight,
+    regional accent color, dusty neutrals, and travel-magazine contrast restraint; available
+    daylight, window spill, street shade, dawn departures, or late-afternoon raking light should
+    carry place memory; layer route clues, human or object scale, and landmark geometry through
+    depth relationships without turning into a postcard
   creative_brief: >-
-    Create a style-card that translates Travel Photography into a portable visual system for 4. Documentary
-    And Street. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Apply Travel Photography as a photographic preset over prompt X: preserve the user's requested
+    subject, then route travelogue documentary photography with discovered-place atmosphere, layered
+    journey detail, and compact destination storytelling, natural destination color with warm
+    daylight, regional accent color, dusty neutrals, and travel-magazine contrast restraint,
+    available daylight, window spill, street shade, dawn departures, or late-afternoon raking light
+    should carry place memory, regional surface patina, textile tactility, transit wear, road dust,
+    water sheen, and architectural age should feel observed, and layer route clues, human or object
+    scale, and landmark geometry through depth relationships without turning into a postcard through
+    optics, exposure, palette, surface response, timing, and finish without requiring the card
+    image's original subject.
 avoidRules:
   - tourist trap
   - selfie
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - staged advertisement
+  - fake smiles
+  - stock-photo gloss
+  - tourist postcard polish
+  - readable captions
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-070.webp
 attributes:
-  negativePrompt: tourist trap, selfie
+  negativePrompt: >-
+    tourist trap, selfie, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
+    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, staged
+    advertisement, fake smiles, stock-photo gloss, tourist postcard polish, readable captions
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

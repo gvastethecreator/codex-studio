@@ -13,23 +13,75 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Filthy contract-horror action, with industrial grime, youth burnout, deadpan panic, and ridiculous
-    violence.
+    Chainsaw Man - Filthy Devil-Hunter Frenzy acts as a transferable anime-battle/worlds router:
+    Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with
+    industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity, keep it
+    non-graphic, non-derivative; combine it with modern action anime grammar with power-system
+    clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle;
+    named titles, studios, or lineage words may guide style, but they must not require canon cast,
+    title-scene replication, screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Jagged contours, broken impact strokes, exhausted body rhythm, industrial diagonals, and unstable comic
-    timing.
-  color_and_tone: Grease black, dried crimson, sickly yellow, concrete gray, rust orange, and harsh fluorescent green.
-  lighting_and_shadow: Dirty practical glare, hard flash cuts, low fluorescent buzz, and sudden overexposed impact highlights.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Chainsaw
+    Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial
+    grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity as portable contour,
+    motion grammar, surface language, and emotional pressure without requiring canon elements or a
+    default action setup.
+  color_and_tone: >-
+    Map color through saturated action accents, clean dark-light value separation, aura color,
+    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
+    let Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with
+    industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity choose accent
+    intensity, value contrast, emotional temperature, and power-system separation while staying
+    attached to prompt X.
+  lighting_and_shadow: >-
+    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
+    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic
+    action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and
+    deadpan absurdity without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Grease film, concrete dust, metal scratches, sticky ink splatter, oily cel bloom, and urban particulate
-    haze.
-  camera_and_composition: Wide-angle impact compression, ragdoll-like motion arcs, and grimy depth lanes that feel unstable.
-  atmosphere_and_mood: Chaotic, filthy, feral, desperate
-  rendering_and_quality: Sharp modern anime finish with controlled filth, panic readability, and deadpan shock contrast.
-  key_features: Industrial splatter, burnout posture, grime haze, deadpan shock, contract-panic energy.
+    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
+    debris, and controlled effect overlays; keep the tactile or effect cues in Chainsaw Man - Filthy
+    Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime,
+    fluorescent fatigue, jagged impact rhythm, and deadpan absurdity controlled, denoised, and
+    coherent across bodies, objects, environments, abstractions, and action.
+  camera_and_composition: >-
+    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
+    compressed depth, and readable near-to-far force paths; convert Chainsaw Man - Filthy
+    Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime,
+    fluorescent fatigue, jagged impact rhythm, and deadpan absurdity into reusable perspective,
+    timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
+    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
+    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
+    lineage readable.
+  rendering_and_quality: >-
+    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
+    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with
+    industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity; dynamic
+    contour, force-transfer anatomy, readable power effects, sharp costume or surface
+    simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke,
+    sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack
+    lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable
+    near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy,
+    crisp silhouettes, no manga-panel text, and no cheap AI anime smear
   creative_brief: >-
-    Make any prompt feel grimy, desperate, and absurdly violent through grease texture, hard fluorescent
-    glare, jagged impact rhythm, and deadpan panic without locking it to a specific hunter job or city scene.
+    Apply Chainsaw Man - Filthy Devil-Hunter Frenzy after prompt X as a transferable
+    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while this preset supplies Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic
+    action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and
+    deadpan absurdity, keep it non-graphic, non-derivative, modern action anime grammar with
+    power-system clarity, impact frames, elastic motion, expressive line economy, and
+    high-readability spectacle, finish discipline, and negative controls without forcing canon cast,
+    title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal
+    card.
 avoidRules:
   - realistic
   - 3d render
@@ -43,12 +95,27 @@ avoidRules:
   - watermark
   - text
   - signature
+  - photoreal cosplay
+  - western superhero comic
+  - generic shonen source-frame look
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-122.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic
+    shonen source-frame look, fixed canon character, title scene replication, required source-frame
+    look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy
+    darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

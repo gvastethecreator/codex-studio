@@ -12,28 +12,84 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry
-  subject_treatment: Heavy layers, floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure
-  color_and_tone: Black matte, jet, raven, deep crepe-black, jet-bead black, unrelieved midnight
-  lighting_and_shadow: Gloomy overcast grey, candle-flicker dimness, rain-streaked softness
-  texture_and_material: Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture
+  aesthetic: >-
+    Victorian Mourning operates as a portable fashion-costume router: combine Victorian mourning
+    regalia, grief ritual formality, gaslit-sorrow pageantry with period and mythic costume logic
+    with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
+    plate, embroider, crown, wrap, or ceremonialize through Heavy layers, floor-length column,
+    cape-volume drape, high-neck severity, long-sleeve enclosure; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
+    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
+    material color believable, and palette behavior attached to the subject instead of pasted
+    wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Gloomy overcast grey, candle-flicker dimness, rain-streaked softness plus museum, candle,
+    daylight, ceremonial, or portrait light that reveals textile depth and silhouette hierarchy as
+    the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor
+    structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Matte crepe, black veiling, jet beads, crape de chine, bombazine, lace-mitt texture plus
+    brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and
+    handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
+    elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Victorian Mourning using its key spatial cues: Black veil, jet brooch, mourning-cap cues,
-    black-bordered textile accents.
-  atmosphere_and_mood: Somber, gothic, ritual sorrow, enclosed textile isolation, eternal-mourning silence
-  rendering_and_quality: Formal funereal stillness, ritual gravity, mourning-grade finish
-  key_features: Black veil, jet brooch, mourning-cap cues, black-bordered textile accents
+    Compose with Compose for Victorian Mourning using its key spatial cues: Black veil, jet brooch,
+    mourning-cap cues, black-bordered textile accents plus regal posture logic, era silhouette,
+    layered garment structure, ornament placement, and readable period identity as reusable fashion
+    framing grammar, allowing portraits, objects, creatures, environments, action, and abstract
+    prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
+    pressure, or folk memory; the tone should feel specific to Victorian Mourning while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
+    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Victorian mourning regalia, grief ritual formality, gaslit-sorrow pageantry; Heavy layers,
+    floor-length column, cape-volume drape, high-neck severity, long-sleeve enclosure; Matte crepe,
+    black veiling, jet beads, crape de chine, bombazine, lace-mitt texture; Gloomy overcast grey,
+    candle-flicker dimness, rain-streaked softness; Compose for Victorian Mourning using its key
+    spatial cues: Black veil, jet brooch, mourning-cap cues, black-bordered textile accents
   creative_brief: >-
-    Shroud the input in Victorian mourning codes: matte crepe, bombazine, jet beads, black veiling,
-    mourning-cap cues and floor-length black enclosure. Keep grief ritual and gothic severity without
-    requiring a widow persona, face, window tableau, graveyard or portrait setup.
+    Use Victorian Mourning after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Victorian mourning
+    regalia, grief ritual formality, gaslit-sorrow pageantry, Heavy layers, floor-length column,
+    cape-volume drape, high-neck severity, long-sleeve enclosure, Matte crepe, black veiling, jet
+    beads, crape de chine, bombazine, lace-mitt texture, Gloomy overcast grey, candle-flicker
+    dimness, rain-streaked softness, Compose for Victorian Mourning using its key spatial cues:
+    Black veil, jet brooch, mourning-cap cues, black-bordered textile accents plus corsetry, armor
+    plates, robes, sashes, pleats, trim, brocade, regalia layers, fastenings, and historically
+    legible cut, palette behavior, light response, material treatment, silhouette grammar, and
+    finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - color
   - happy
+  - cheap costume rental
+  - wrong era mashup
+  - plastic armor
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-032.webp
 attributes:
-  negativePrompt: color, happy, drawn curtain, window tableau, graveyard, portrait setup
+  negativePrompt: >-
+    color, happy, cheap costume rental, wrong era mashup, plastic armor, fixed outfit, required body
+    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

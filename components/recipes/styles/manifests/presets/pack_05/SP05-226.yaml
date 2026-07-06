@@ -13,24 +13,61 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Cyber-goth anime dread with abandoned modernism, concrete emptiness, rain-dark reflection, black
-    silhouette severity, and personhood anxiety
-  subject_treatment: Severe black silhouettes, brutalist negative space, rigid contour restraint, and philosophical stillness.
-  color_and_tone: Concrete gray, rain black, cold cyan, corpse white, muted violet, and faint sodium amber.
+    Cyber-Goth Mausoleum Dread acts as a transferable anime-battle/worlds router: Cyber-Goth
+    Mausoleum Dread; combine it with mecha and cyberpunk anime grammar with engineered silhouettes,
+    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named
+    titles, studios, or lineage words may guide style, but they must not require canon cast,
+    title-scene replication, screenshots, logos, or one fixed card concept.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
+    Cyber-Goth Mausoleum Dread as portable contour, motion grammar, surface language, and emotional
+    pressure without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Cyber-Goth Mausoleum Dread choose
+    accent intensity, value contrast, emotional temperature, and power-system separation while
+    staying attached to prompt X.
   lighting_and_shadow: >-
-    Funereal top light, wet reflections, distant industrial glow, and minimal rim cuts against oppressive
-    shadow.
-  texture_and_material: Rain-dark concrete, matte black fabric, oxidized metal, glass streaks, and low-grain digital polish.
-  camera_and_composition: Vast empty planes, oppressive verticals, and isolation framing that makes consciousness feel trapped.
-  atmosphere_and_mood: Bleak, cerebral, cool, funereal
-  rendering_and_quality: High-detail cyber-goth anime finish with bleak restraint, architectural dread, and precise silence.
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Cyber-Goth Mausoleum Dread without replacing prompt X with a stock
+    anime frame.
+  texture_and_material: >-
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Cyber-Goth
+    Mausoleum Dread controlled, denoised, and coherent across bodies, objects, environments,
+    abstractions, and action.
+  camera_and_composition: >-
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Cyber-Goth
+    Mausoleum Dread into reusable perspective, timing, rhythm, scale, cut-in, and negative-space
+    rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Concrete voids, rain reflection, black silhouettes, cold self-awareness, abandoned modernism, and
-    mausoleum stillness
+    Cyber-Goth Mausoleum Dread; armored contour, mechanical massing, modular joints, engineered
+    surface rhythm, scale cues, and human-machine pressure translated onto any subject; painted
+    alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain
+    sheen, and digital bloom layers; scale compression, machinery diagonals, grid overlays without
+    readable UI, service-bay density, orbital symmetry, and high-speed hardware lanes; premium
+    mecha/cyber anime finish with readable hardware, denoised glow, no plastic 3D render, and no
+    cockpit/control-room dependency
   creative_brief: >-
-    Use Ergo Proxy as style anchor for cyber-goth mausoleum dread. Any prompt should become empty, rain-dark,
-    severe, and philosophically uncertain. Androids, domes, cities, processions, and human figures are
-    optional.
+    Apply Cyber-Goth Mausoleum Dread after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Cyber-Goth Mausoleum Dread, mecha and cyberpunk anime grammar with engineered silhouettes,
+    hardware logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -44,12 +81,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-226.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
+    readable UI panel, fixed canon character, title scene replication, required source-frame look,
+    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

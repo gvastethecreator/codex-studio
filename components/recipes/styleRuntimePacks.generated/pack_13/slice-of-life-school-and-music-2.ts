@@ -7,135 +7,145 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP13-003',
     name: 'Soft Shojo Spring',
     category: '2. Slice Of Life, School And Music',
-    negativePrompt: 'photoreal, gritty, horror, watermark, text, logo',
+    negativePrompt:
+      'photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
     style: {
       aesthetic:
-        'Soft shojo-romance language with delicate emotional framing, spring-inflected tonal warmth, and lyrical sensitivity',
+        'Soft Shojo Spring operates as a portable anime-lifestyle router: combine Soft Shojo Spring identity cues through Expressive focal hierarchy; pastel harmony discipline; floating petal motion cues; fine contour elegance; and intimacy first composition; Soft Shojo Spring anime style cues with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
       subject_treatment:
-        'Fine tapered linework, elongated eye-expression geometry, gentle hand and hair gesture arcs, and open negative-space framing',
+        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
       color_and_tone:
-        'Pastel rose, cream, lavender, mint green, and muted blush accents with low-saturation harmony',
+        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
       lighting_and_shadow:
-        'Diffuse late-afternoon glow, soft hair highlight ribbons, low-contrast facial fill, and subtle bloom around focal features',
+        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
       texture_and_material:
-        'Matte paper delicacy, lightweight fabric flow, petal-soft particulate overlays, and minimal-grain painterly finish',
+        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
       camera_and_composition:
-        'Shallow depth emphasis around expression or detail focal planes with restrained context recession',
-      atmosphere_and_mood: 'Tender, nostalgic, romantic, calm, and introspective',
+        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+      atmosphere_and_mood:
+        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
       rendering_and_quality:
-        'Polished ethereal shojo render with controlled softness, stable facial readability, and emotionally transparent color grading',
+        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
       key_features:
-        'Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy-first composition',
+        'Expressive focal hierarchy; pastel harmony discipline; floating petal motion cues; fine contour elegance; and intimacy first composition; Soft Shojo Spring anime style cues',
       creative_brief:
-        'Use Soft Shojo Spring as style anchor for gentle romantic clarity: delicate line weight, pastel tonality, and expression-centered composition should transfer without requiring school, romance plot, blossoms, or character close-up.',
+        'Use Soft Shojo Spring after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Expressive focal hierarchy, pastel harmony discipline, floating petal motion cues, fine contour elegance, and intimacy first composition, Soft Shojo Spring anime style cues, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
     },
   },
   {
     id: 'SP13-005',
     name: 'Rainy Slice of Life',
     category: '2. Slice Of Life, School And Music',
-    negativePrompt: 'photoreal, action-chaos, neon-heavy, watermark, text, logo',
+    negativePrompt:
+      'photoreal, action chaos, neon heavy, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
     style: {
       aesthetic:
-        'Intimate slice-of-life anime language with rainy-day melancholy, grounded everyday realism, and restrained emotional dramaturgy',
+        'Rainy Slice of Life operates as a portable anime-lifestyle router: combine Rainy Slice of Life identity cues through Rain laced glazing cues; understated micro expression; everyday prop simplicity; and soft tonal transitions; Rainy Slice of Life anime style cues; Intimate slice of life anime language with rainy day melancholy with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
       subject_treatment:
-        'Soft contour cadence, naturalistic anatomy simplification, subtle gesture-driven acting lines, and low-noise framing hierarchy',
+        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
       color_and_tone:
-        'Clouded blue-grays, damp green undertones, warm beige interior neutrals, and muted skin tones with low-saturation harmony',
+        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
       lighting_and_shadow:
-        'Overcast ambient key, window reflection accents, diffuse interior fill, and gentle value rolloff for calm tonal continuity',
+        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
       texture_and_material:
-        'Raindrop diffusion, soft knit and cotton fabrics, matte wood-like planes, and low-gloss everyday surfaces',
+        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
       camera_and_composition:
-        'Medium-close compositional intimacy with shallow depth emphasis and minimal perspective exaggeration',
-      atmosphere_and_mood: 'Quiet, reflective, tender, and human-scale',
+        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+      atmosphere_and_mood:
+        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
       rendering_and_quality:
-        'Cinematic everyday anime finish with emotional subtlety, high readability, and controlled detail density',
+        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
       key_features:
-        'Rain-laced glazing cues, understated micro-expression, everyday prop simplicity, and soft tonal transitions',
+        'Rain laced glazing cues; understated micro expression; everyday prop simplicity; and soft tonal transitions; Rainy Slice of Life anime style cues; Intimate slice of life anime language with rainy day melancholy',
       creative_brief:
-        'Use Rainy Slice of Life as style anchor for quiet melancholy: subdued overcast palette, intimate framing, and gesture-led emotion should transfer without requiring domestic interiors, windows, furniture, or a human drama scene.',
+        'Use Rainy Slice of Life after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Rain laced glazing cues, understated micro expression, everyday prop simplicity, and soft tonal transitions, Rainy Slice of Life anime style cues, Intimate slice of life anime language with rainy day melancholy, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
     },
   },
   {
     id: 'SP13-013',
     name: 'Rainy Idol Backstage',
     category: '2. Slice Of Life, School And Music',
-    negativePrompt: 'photoreal, gritty-horror, low-detail, watermark, text, logo',
+    negativePrompt:
+      'photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
     style: {
       aesthetic:
-        'Pre-performance slice-of-life anime language with emotional intimacy, polished stagecraft contrast, and rain-tinted nocturnal sensitivity',
+        'Rainy Idol Backstage operates as a portable anime-lifestyle router: combine Rainy Idol Backstage identity cues through Backstage like light rhythm; pre stage expression anchor; readiness cues; and rain muted contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life anime language with emotional intimacy with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
       subject_treatment:
-        'Soft facial contour priority, controlled costume-like fold elegance, hand-gesture micro-acting cues, and close-framing silhouette clarity',
+        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
       color_and_tone:
-        'Night blues, muted rose accents, warm gold practicals, mirror-neutral highlights, and subdued skin midtones',
+        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
       lighting_and_shadow:
-        'Vanity-like practicals as warm key, soft stage-bokeh separation, low-contrast fill, and rain-cooled edge tones',
+        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
       texture_and_material:
-        'Satin fabric sheen, reflective mirror-like surfaces, subtle cosmetic powder finish, damp diffusion, and metallic hardware accents',
+        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
       camera_and_composition:
-        'Intimate medium framing with shallow focus falloff and performance context kept intentionally soft',
-      atmosphere_and_mood: 'Vulnerable, aspirational, focused, and quietly determined',
+        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+      atmosphere_and_mood:
+        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
       rendering_and_quality:
-        'Emotion-first polished anime rendering with refined facial readability, restrained detail density, and premium music-drama card legibility',
+        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
       key_features:
-        'Backstage-like light rhythm, pre-stage expression anchor, readiness cues, and rain-muted contrast',
+        'Backstage like light rhythm; pre stage expression anchor; readiness cues; and rain muted contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life anime language with emotional intimacy',
       creative_brief:
-        'Use Rainy Idol Backstage as style anchor for quiet pre-performance tension: warm practicals, intimate expression-led framing, and rain-cooled polish should transfer without requiring an idol, mirror room, microphone, wardrobe, or literal backstage.',
+        'Use Rainy Idol Backstage after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Backstage like light rhythm, pre stage expression anchor, readiness cues, and rain muted contrast, Rainy Idol Backstage anime style cues, Pre performance slice of life anime language with emotional intimacy, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
     },
   },
   {
     id: 'SP13-015',
     name: 'Dessert Cafe Comedy',
     category: '2. Slice Of Life, School And Music',
-    negativePrompt: 'photoreal, horror, dark-gritty, watermark, text, logo',
+    negativePrompt:
+      'photoreal, horror, dark gritty, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
     style: {
       aesthetic:
-        'Feel-good confection-comedy anime language with warm slice-of-life softness, sweet color charm, and everyday social tenderness',
+        'Dessert Cafe Comedy operates as a portable anime-lifestyle router: combine Dessert Cafe Comedy identity cues through Sweet centerpiece framing; comedic expression timing cues; warm comfort prop language; and soft convivial color rhythm; Dessert Cafe Comedy anime style cues; Feel good confection comedy anime language with warm slice of life softness with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
       subject_treatment:
-        'Friendly rounded line cadence, timing-aware expression exaggeration, tabletop-like staging rhythm, and readable conversational gesture arcs',
+        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
       color_and_tone:
-        'Cream neutrals, strawberry pink accents, honey gold warmth, mint-soft highlights, and gentle wood-tone grounding',
+        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
       lighting_and_shadow:
-        'Cozy practical glow, diffuse warm fill, soft tabletop-like reflections, and low-contrast value shaping for comfort tone',
+        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
       texture_and_material:
-        'Light-grain wood, glossy ceramic sheen, whipped-cream softness, syrup highlights, and subtle pastry-crumb detail',
+        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
       camera_and_composition:
-        'Stable frontal composition with mild depth layering to keep interaction and sweet focal clarity',
-      atmosphere_and_mood: 'Cheerful, comforting, playful, and kind-hearted',
+        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+      atmosphere_and_mood:
+        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
       rendering_and_quality:
-        'Clean colorful anime render with comedic readability, mood-consistent polish, and balanced prop-subject hierarchy',
+        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
       key_features:
-        'Sweet centerpiece framing, comedic expression timing cues, warm comfort prop language, and soft convivial color rhythm',
+        'Sweet centerpiece framing; comedic expression timing cues; warm comfort prop language; and soft convivial color rhythm; Dessert Cafe Comedy anime style cues; Feel good confection comedy anime language with warm slice of life softness',
       creative_brief:
-        'Use Dessert Cafe Comedy as style anchor for sweet social warmth: confection palette, expression-led timing, and cozy practical glow should transfer without requiring a cafe, dessert centerpiece, tableware, or interior scene.',
+        'Use Dessert Cafe Comedy after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sweet centerpiece framing, comedic expression timing cues, warm comfort prop language, and soft convivial color rhythm, Dessert Cafe Comedy anime style cues, Feel good confection comedy anime language with warm slice of life softness, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
     },
   },
   {
     id: 'SP13-018',
     name: 'Festival Lantern Summer',
     category: '2. Slice Of Life, School And Music',
-    negativePrompt: 'photoreal, bleak-horror, low-detail, watermark, text, logo',
+    negativePrompt:
+      'photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, signature',
     style: {
       aesthetic:
-        'Lantern-summer slice-of-life anime language with flowing elegance, communal night warmth, and nostalgic romantic undercurrent',
+        'Festival Lantern Summer operates as a portable anime-lifestyle router: combine Festival Lantern Summer identity cues through Lantern string cadence; flowing silhouette motifs; distant shimmer accents; and shared gesture emotional anchors; Festival Lantern Summer anime style cues; Lantern summer slice of life anime language with flowing elegance with slice of life school and music grammar with soft social acting, weathered everyday light, gentle performance rhythm, and intimate mundane storytelling, so the preset supplies anime style behavior after prompt X rather than a required scene, character, franchise image, or card composition.',
       subject_treatment:
-        'Soft flowing garment contours, gesture-led interaction rhythm, lantern-like cadence lines, and gentle layered silhouettes',
+        "Preserve prompt X's subject, action, age, setting, and intensity while translating forms through microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity, and emotion carried by spacing rather than spectacle; subjects may be characters, creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.",
       color_and_tone:
-        'Lantern amber-orange, deep indigo night fields, muted rose accents, and warm skin-light highlights balanced by cool shadows',
+        'Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage amber, soft daylight, and restrained accent color; keep cel values readable, accent roles intentional, skin or material midtones stable, and palette behavior attached to the prompt instead of pasted anime decoration.',
       lighting_and_shadow:
-        'Warm lantern practical clusters, low-key night ambient fill, distant sparkle edge glints, and soft bokeh separation',
+        'Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low contrast emotional separation; lighting should clarify expression, silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.',
       texture_and_material:
-        'Light cotton weave, washi lantern diffusion, lacquered wood surfaces, and humid summer-air haze',
+        'Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile, glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy surface chatter.',
       camera_and_composition:
-        'Mid-depth perspective with layered lantern depth cues and stable subject readability in foreground',
-      atmosphere_and_mood: 'Nostalgic, joyful, tender, and gently wistful',
+        'Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal framing, and open everyday depth without classroom or venue dependency as reusable anime framing grammar, allowing close acting, objects, performances, action, environments, or abstract prompts without one required pose or location.',
+      atmosphere_and_mood:
+        'Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime lineage.',
       rendering_and_quality:
-        'Emotion-rich festival anime rendering with clear focal hierarchy, balanced crowd context, and polished readability',
+        'Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no generic AI anime gloss.',
       key_features:
-        'Lantern-string cadence, flowing silhouette motifs, distant shimmer accents, and shared-gesture emotional anchors',
+        'Lantern string cadence; flowing silhouette motifs; distant shimmer accents; and shared gesture emotional anchors; Festival Lantern Summer anime style cues; Lantern summer slice of life anime language with flowing elegance',
       creative_brief:
-        'Use Festival Lantern Summer as style anchor for nostalgic night warmth: lantern practicals, indigo-night contrast, and gesture-centered tenderness should transfer without requiring festival stalls, yukata, fireworks, street, crowd, or summer-date scene.',
+        'Use Festival Lantern Summer after prompt X as a transferable anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Lantern string cadence, flowing silhouette motifs, distant shimmer accents, and shared gesture emotional anchors, Festival Lantern Summer anime style cues, Lantern summer slice of life anime language with flowing elegance, color logic, lighting, material finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

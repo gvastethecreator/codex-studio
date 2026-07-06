@@ -12,25 +12,61 @@ tags:
   - abstract-and-experimental
   - material-surface-textures
 visualDna:
-  aesthetic: Oxidized metal
-  subject_treatment: Flakes
-  color_and_tone: Orange, Brown
-  lighting_and_shadow: Matte
-  texture_and_material: Rough, flaky
-  camera_and_composition: Corrosion
-  atmosphere_and_mood: Abandoned, gritty
-  rendering_and_quality: Decay, old
-  key_features: Random patches
+  aesthetic: >-
+    Rust Texture becomes a transferable material surface transformation system: start from Oxidized
+    metal, Random patches, and Corrosion, then route prompt content through physical surface grain,
+    reflectance, damage, joinery, pores, seams, and tactile structure without forcing one card
+    scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Flakes to coat, wrap, weather, polish, crack,
+    scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object
+    identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Orange, Brown; let color follow material depth, veins, patina, oxidation,
+    fiber direction, shimmer, or manufactured finish, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Matte drive the light response: show reflectance honestly through gloss, matte falloff,
+    iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Rough, flaky as the tactile or mark-making basis; surface behavior needs coherent grain,
+    chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Corrosion as reusable spatial grammar: support macro texture studies and
+    full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting
+    cleanly to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Abandoned, gritty as the emotional register; derive mood from durability, luxury, decay,
+    tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker,
+    or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Decay, old: finish with material clarity, controlled micro-detail, and no stock
+    texture pasted over forms, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Oxidized metal; Flakes; Orange, Brown; Matte; Rough, flaky; Corrosion; Abandoned, gritty; Decay,
+    old; Random patches
   creative_brief: >-
-    Apply rust corrosion to the input: orange-brown blooms, flaking iron, pitted edges, oxidized stains, and
-    slow entropy gradients should age any subject without requiring metal junkyards or abandoned settings.
+    Apply rust corrosion to the input: orange-brown blooms, flaking iron, pitted edges, oxidized
+    stains, and slow entropy gradients should age any subject without requiring metal junkyards or
+    abandoned settings.
 avoidRules:
   - clean
   - new
+  - wrong material
+  - generic stock texture
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-061.webp
 attributes:
-  negativePrompt: clean, new
+  negativePrompt: >-
+    clean, new, wrong material, generic stock texture, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

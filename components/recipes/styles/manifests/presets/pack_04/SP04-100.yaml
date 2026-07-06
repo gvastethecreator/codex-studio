@@ -12,20 +12,61 @@ tags:
   - illustration-and-graphic-novel
   - technical-and-reference-sheets
 visualDna:
-  aesthetic: Size-comparison chart with educational scale framing
-  subject_treatment: Baseline-aligned silhouettes with measurement ticks and reference markers
-  color_and_tone: Neutral comparative scheme with restrained atmospheric scaling cues
-  lighting_and_shadow: Consistent silhouette rim/read light for cross-subject legibility
-  texture_and_material: Clean chartboard finish with minimal atmospheric fade on largest entries
-  camera_and_composition: Left-to-right ascending scale progression with fixed ground reference
-  atmosphere_and_mood: Awe-oriented yet analytical, museum-chart clarity
-  rendering_and_quality: Infographic-style concept sheet optimized for proportional comprehension
-  key_features: Human and real-world benchmarks, incremental height logic, clear unit hierarchy
+  aesthetic: >-
+    scale-threat designs Size Comparison Chart acts as a transferable illustration router: start
+    from Size-comparison chart with educational scale framing, Human and real-world benchmarks,
+    incremental height logic, clear unit hierarchy and technical reference and interface-spec system
+    built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and
+    production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Baseline-aligned silhouettes with measurement ticks and
+    reference markers; preserve the requested subject while expressing it through schematic
+    breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or
+    specification surfaces, keeping the requested identity, silhouette, pose, object function, or
+    setting legible.
+  color_and_tone: >-
+    Build color with Neutral comparative scheme with restrained atmospheric scaling cues; use color
+    as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy
+    value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Consistent silhouette rim/read light for cross-subject legibility; keep
+    light diagrammatic and legible through flat drafting values, callout emphasis, interface glow,
+    anatomical separation, or measured shadow restraint, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Clean chartboard finish with minimal atmospheric fade on largest entries; surface detail
+    should support readability with grid paper, line weights, translucent overlays, measurement
+    ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent
+    and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Left-to-right ascending scale progression with fixed ground
+    reference; compose through orthographic projection, exploded spacing, callout grouping,
+    interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing,
+    edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Awe-oriented yet analytical, museum-chart clarity; derive mood from precision,
+    planning, research, interface control, anatomical study, engineering authority, or catalogued
+    comparison, letting the style alter interpretation without demanding a specific story, location,
+    or actor.
+  rendering_and_quality: >-
+    Finish with Infographic-style concept sheet optimized for proportional comprehension; finish
+    with readable technical communication, crisp line hierarchy, controlled notation-like detail,
+    and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Size-comparison chart with educational scale framing; Human and real-world benchmarks,
+    incremental height logic, clear unit hierarchy; Neutral comparative scheme with restrained
+    atmospheric scaling cues; Clean chartboard finish with minimal atmospheric fade on largest
+    entries; Left-to-right ascending scale progression with fixed ground reference
   creative_brief: >-
-    Apply monster size-comparison chart logic to any input: baseline scaling, tick marks, escalating
-    silhouettes, cutaway scale cues, and comparative graphic hierarchy. If no creature exists, convert the
-    subject into abstract scale-study forms without requiring monsters, humans for scale, chart labels, or a
-    creature lineup.
+    Apply scale-threat designs Size Comparison Chart as an illustration preset over prompt X:
+    preserve the user's requested subject, then route mark-making, palette, surface, composition,
+    mood, and final craft through Size-comparison chart with educational scale framing, Human and
+    real-world benchmarks, incremental height logic, clear unit hierarchy, Clean chartboard finish
+    with minimal atmospheric fade on largest entries without requiring the card image's original
+    subject.
 avoidRules:
   - single creature
   - no reference
@@ -35,12 +76,26 @@ avoidRules:
   - only one
   - human-centric
   - no comparison
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - illegible labels
+  - decorative clutter
+  - shaded cinematic render
+  - random UI text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-100.webp
 attributes:
   negativePrompt: >-
-    single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no
-    comparison
+    single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric,
+    no comparison, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
+    labels, decorative clutter, shaded cinematic render, random UI text
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

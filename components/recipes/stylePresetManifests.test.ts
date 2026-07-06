@@ -589,7 +589,7 @@ describe('stylePresetManifests', () => {
 
     expect(catalog.graph.errors).toEqual([]);
     expect(catalog.packManifests).toHaveLength(17);
-    expect(catalog.presetManifests).toHaveLength(1649);
+    expect(catalog.presetManifests).toHaveLength(1657);
     expect(composedPresetCount).toBe(catalog.presetManifests.length);
     expect(
       runtimeIndex.packs.map((pack) => ({

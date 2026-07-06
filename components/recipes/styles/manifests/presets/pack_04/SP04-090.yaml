@@ -12,20 +12,63 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Prop-variant design sheet with progression and function-first comparison
-  subject_treatment: Clean orthographic contours, aligned variant rows, leader-line annotations
-  color_and_tone: Material-coded neutrals with restrained accent hierarchy for tier differentiation
-  lighting_and_shadow: Controlled neutral lighting to preserve apples-to-apples comparison
-  texture_and_material: Controlled finish studies (grain, brushed metal, wrap, wear, inset materials)
-  camera_and_composition: Grid-aligned side views with detail magnification and exploded subsets
-  atmosphere_and_mood: Methodical, engineering-aware, iterative craft discipline
-  rendering_and_quality: Production-oriented iterative sheet balancing readability and specificity
-  key_features: Variant taxonomy, functional callouts, scale references, modular part breakdown
+  aesthetic: >-
+    Prop Variant Design Sheet acts as a transferable illustration router: start from Prop-variant
+    design sheet with progression and function-first comparison, Variant taxonomy, functional
+    callouts, scale references, modular part breakdown and production concept-art system built from
+    iteration discipline, silhouette testing, material exploration, design readability, and
+    pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Clean orthographic contours, aligned variant rows,
+    leader-line annotations; preserve the requested subject while routing it through design
+    exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or
+    production-readability constraints, keeping the requested identity, silhouette, pose, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Material-coded neutrals with restrained accent hierarchy for tier
+    differentiation; use color as concept decision-making: mood scripts, material swatches, faction
+    accents, environment atmosphere, asset tier contrast, or readable pass separation, with
+    deliberate value grouping, accent control, and process-specific limits rather than a generic
+    palette wash.
+  lighting_and_shadow: >-
+    Handle light through Controlled neutral lighting to preserve apples-to-apples comparison; shape
+    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
+    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Controlled finish studies (grain, brushed metal, wrap, wear, inset materials); surface
+    detail should reveal brush passes, photobash integration, low-poly facets, callout texture,
+    massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Grid-aligned side views with detail magnification and exploded
+    subsets; compose through production hierarchy, variants, orthographic logic, isometric staging,
+    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
+    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Methodical, engineering-aware, iterative craft discipline; derive mood from
+    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
+    cinematic intent, or production-room clarity, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Production-oriented iterative sheet balancing readability and specificity; finish
+    with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Prop-variant design sheet with progression and function-first comparison; Variant taxonomy,
+    functional callouts, scale references, modular part breakdown; Material-coded neutrals with
+    restrained accent hierarchy for tier differentiation; Controlled finish studies (grain, brushed
+    metal, wrap, wear, inset materials); Grid-aligned side views with detail magnification and
+    exploded subsets
   creative_brief: >-
-    Apply prop-variant design logic to any input: functional shape families, material swaps, modular
-    silhouettes, construction notes as graphic marks, and option-to-option progression. If no prop exists,
-    convert the subject into useful object-design variants without requiring weapons, inventory sheets, or
-    literal items.
+    Apply Prop Variant Design Sheet as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Prop-variant design sheet with progression and function-first comparison, Variant
+    taxonomy, functional callouts, scale references, modular part breakdown, Controlled finish
+    studies (grain, brushed metal, wrap, wear, inset materials) without requiring the card image's
+    original subject.
 avoidRules:
   - one version
   - single design
@@ -36,10 +79,26 @@ avoidRules:
   - floating
   - contextless
   - unlabeled
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-090.webp
 attributes:
-  negativePrompt: one version, single design, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled
+  negativePrompt: >-
+    one version, single design, no comparison, no annotation, unclear, vague, floating, contextless,
+    unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

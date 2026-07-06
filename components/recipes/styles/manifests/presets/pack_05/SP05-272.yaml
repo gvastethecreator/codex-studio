@@ -13,24 +13,72 @@ tags:
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: >-
-    Machine mourning noir, humane futurism, forensic melancholy, rain-dark luxury, grief rendered through
-    polished restraint and ethical weight
-  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+    Machine Mourning Noir Style acts as a transferable anime-battle/worlds router: Machine Mourning
+    Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal,
+    noir blues, and one softened mechanical or human-scale anchor; combine it with dark fantasy and
+    seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual
+    dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but
+    they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card
+    concept.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Machine
+    Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet
+    metal, noir blues, and one softened mechanical or human-scale anchor as portable contour, motion
+    grammar, surface language, and emotional pressure without requiring canon elements or a default
+    action setup.
+  color_and_tone: >-
+    Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty
+    gold, and disciplined blood-or-danger accents; let Machine Mourning Noir Style, rain-polished
+    machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened
+    mechanical or human-scale anchor choose accent intensity, value contrast, emotional temperature,
+    and power-system separation while staying attached to prompt X.
+  lighting_and_shadow: >-
+    Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim,
+    and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or
+    magic, material depth, and mood from Machine Mourning Noir Style, rain-polished machine mourning
+    style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or
+    human-scale anchor without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Rain-polished metal, quiet luxury grain, forensic matte surfaces, wet glass, brushed alloy, soft fabric
-    shadow
+    Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral
+    fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Machine
+    Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet
+    metal, noir blues, and one softened mechanical or human-scale anchor controlled, denoised, and
+    coherent across bodies, objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Noir close framing, forensic negative space, rainlit reflection depth, humane-machine symmetry, restrained
-    investigative pacing
-  atmosphere_and_mood: Somber, investigative, humane, futuristic
-  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  key_features: Mourning atmosphere, rainlit polish, forensic quiet, humane synthetic restraint, noir ethical pressure
+    Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive
+    diagonals, compressed civic space, and slow fatal closeups; convert Machine Mourning Noir Style,
+    rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and
+    one softened mechanical or human-scale anchor into reusable perspective, timing, rhythm, scale,
+    cut-in, and negative-space rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence,
+    loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal,
+    erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it
+    while keeping the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with mature seinen finish with controlled darkness, stable structure, restrained texture,
+    no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic
+    stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor; scarred
+    contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge
+    language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric,
+    oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive
+    negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic
+    space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure,
+    restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text
   creative_brief: >-
-    Apply machine mourning noir to any subject: polished rain reflections, forensic stillness, soft metal, and
-    humane restraint should create grief without fixed roles, synthetic beings, urban locations, interiors, or
-    case scenes.
+    Apply Machine Mourning Noir Style after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic
+    stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor, dark
+    fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir
+    materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls
+    without forcing canon cast, title scene, screenshot, card pose, default monster, default combat
+    prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -44,12 +92,33 @@ avoidRules:
   - watermark
   - text
   - signature
+  - named franchise likeness
+  - interior investigation room
+  - gun
+  - gore
+  - readable UI
+  - police signage
+  - splatter-only horror
+  - photoreal grime
+  - cheap jump scare
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-272.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, named franchise likeness, interior investigation room,
+    gun, gore, readable UI, police signage, splatter-only horror, photoreal grime, cheap jump scare,
+    fixed canon character, title scene replication, required source-frame look, cosplay, generic
+    anime filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,29 +12,83 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Sunset light
+  aesthetic: >-
+    Golden Hour acts as a transferable cinematic-media router: start from Sunset light, Golden Hour
+    light transport, optical artifacts, exposure discipline, atmosphere depth, and camera-response
+    behavior, Rim light, lens flare burst, amber haze, elongated shadow geometry and portable
+    lighting and atmosphere system built from light transport, exposure behavior, optical
+    distortion, volumetric density, reflection, and camera response, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Golden Hour: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth
-  lighting_and_shadow: Low angle sun, golden backlight, hazy atmospheric edge
-  texture_and_material: Soft, creamy diffusion, atmospheric haze
-  camera_and_composition: Long shadows, stretched silhouettes, low-angle projection
-  atmosphere_and_mood: Warm, happy, fleeting beauty, end-of-day peace
-  rendering_and_quality: Beautiful, romantic, magic-hour glow, cinematic warmth
-  key_features: Rim light, lens flare burst, amber haze, elongated shadow geometry
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Golden Hour: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth; use
+    color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night
+    conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Low angle sun, golden backlight, hazy atmospheric edge; make the named
+    light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric
+    rays, split contrast, or softbox falloff, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Soft, creamy diffusion, atmospheric haze; surface detail should reveal particles, lens
+    bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical streaks
+    without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Long shadows, stretched silhouettes, low-angle projection; compose
+    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Warm, happy, fleeting beauty, end-of-day peace; derive mood from illumination
+    physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or
+    temporal flash energy, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Beautiful, romantic, magic-hour glow, cinematic warmth; finish with believable
+    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
+    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
+    to make the style recognizable.
+  key_features: >-
+    Sunset light, Golden Hour light transport, optical artifacts, exposure discipline, atmosphere
+    depth, and camera-response behavior; Rim light, lens flare burst, amber haze, elongated shadow
+    geometry; Warm Gold/Orange, honey amber, peach wash, copper rim, low-sun warmth; Soft, creamy
+    diffusion, atmospheric haze; Long shadows, stretched silhouettes, low-angle projection
   creative_brief: >-
-    Apply golden-hour light as a transferable rendering system: low-angle warmth, amber haze, copper rim
-    light, elongated shadows, and soft atmospheric diffusion. Do not require sunsets, horizons, landscapes,
-    skin, or outdoor scenes. Any subject should feel briefly transformed by warm end-of-day light.
+    Apply Golden Hour as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Sunset light, Golden Hour light transport, optical artifacts,
+    exposure discipline, atmosphere depth, and camera-response behavior, Rim light, lens flare
+    burst, amber haze, elongated shadow geometry, Soft, creamy diffusion, atmospheric haze without
+    requiring the card image's original subject.
 avoidRules:
   - blue
   - cold
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-061.webp
 attributes:
-  negativePrompt: blue, cold
+  negativePrompt: >-
+    blue, cold, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

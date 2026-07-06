@@ -13,35 +13,83 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: >-
-    Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and playful design
-    contradiction
+    Postmodern Pattern Clash operates as a portable source-router layer: combine Memphis-informed
+    anti-minimal pattern system with geometric jokes, surface collision, and playful design
+    contradiction with cultural style-system logic with recognizable design codes, mood grammar, and
+    transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene
+    or literal sample.
   subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
+    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through
     Squiggles, triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag
-    punctuation
-  color_and_tone: Hot pink, teal, primary yellow, traffic-cone orange, matte black, white, acid accents, cobalt depth
+    punctuation; identity stays readable through construction grammar, proportion, edge logic, and
+    detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
+    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
   lighting_and_shadow: >-
-    Flat product-design illumination with crisp shape boundaries, minimal shadows, and pattern-first
-    readability
-  texture_and_material: Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop tactility
+    Use Flat product-design illumination with crisp shape boundaries, minimal shadows, and
+    pattern-first readability plus mood-led lighting that reinforces the aesthetic code without
+    replacing the requested subject as the light-response contract, with readable hierarchy,
+    controlled contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic tabletop
+    tactility plus signature finishes, symbolic surfaces, pattern systems, ornamental density,
+    polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or
+    signal artifacts must remain coherent across figures, objects, and environments.
   camera_and_composition: >-
-    Pattern scale jumps, floating shape collisions, anti-grid balance, shallow design-stage depth, playful
-    visual imbalance
-  atmosphere_and_mood: Playful, decorative, contrarian, optimistic, ironic, loud
-  rendering_and_quality: Bold, cheeky, graphic, design-object sharp, deliberately over-patterned, high-contrast
+    Compose with Pattern scale jumps, floating shape collisions, anti-grid balance, shallow
+    design-stage depth, playful visual imbalance plus taste-coded spacing, silhouette discipline,
+    motif placement, designed clutter, and reusable visual hierarchy as reusable framing grammar,
+    allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without
+    one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
+    cuteness, or spectacle; the emotional tone should feel specific to Postmodern Pattern Clash
+    while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
+    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Squiggle motifs, checkerboard fragments, terrazzo noise, primary blocks, black outline accents,
-    anti-minimal composition
+    Memphis-informed anti-minimal pattern system with geometric jokes, surface collision, and
+    playful design contradiction; Squiggles, triangles, terrazzo speckles, checker fragments, zany
+    circles, offset blocks, zigzag punctuation; Laminate gloss, terrazzo chips, matte plastic,
+    printed pattern fields, synthetic tabletop tactility; Flat product-design illumination with
+    crisp shape boundaries, minimal shadows, and pattern-first readability; Pattern scale jumps,
+    floating shape collisions, anti-grid balance, shallow design-stage depth, playful visual
+    imbalance
   creative_brief: >-
-    Use Memphis as a pattern-behavior engine: clashing primitives, synthetic surfaces, terrazzo noise, and
-    playful anti-minimal balance should style any subject. Avoid making the image merely furniture, interiors,
-    or design showroom scenes.
+    Use Postmodern Pattern Clash after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Memphis-informed anti-minimal pattern
+    system with geometric jokes, surface collision, and playful design contradiction, Squiggles,
+    triangles, terrazzo speckles, checker fragments, zany circles, offset blocks, zigzag
+    punctuation, Laminate gloss, terrazzo chips, matte plastic, printed pattern fields, synthetic
+    tabletop tactility, Flat product-design illumination with crisp shape boundaries, minimal
+    shadows, and pattern-first readability, Pattern scale jumps, floating shape collisions,
+    anti-grid balance, shallow design-stage depth, playful visual imbalance plus proportion codes,
+    recurring surface motifs, era cues, pattern pressure, cultural references, and designed
+    contrast, palette behavior, light response, material treatment, and finish discipline without
+    requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - realistic
   - 3d
+  - generic aesthetic collage
+  - random trend mix
+  - style-board text
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-043.webp
 attributes:
-  negativePrompt: realistic, 3d
+  negativePrompt: >-
+    realistic, 3d, generic aesthetic collage, random trend mix, style-board text, fixed specimen,
+    literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

@@ -12,19 +12,50 @@ tags:
   - essential-art-styles
   - drawing-and-sketching
 visualDna:
-  aesthetic: Paper-cut silhouette grammar with total shape reliance and zero interior modeling
-  subject_treatment: Outline only
-  color_and_tone: Solid Black on White
-  lighting_and_shadow: Backlit
-  texture_and_material: Paper edge
-  camera_and_composition: No internal details
-  atmosphere_and_mood: Graphic, stark
-  rendering_and_quality: Stark cut-paper finish with crisp contour judgment
-  key_features: Solid shape
+  aesthetic: >-
+    Silhouette acts as a transferable art-medium router: start from Paper cut silhouette grammar
+    with total shape reliance and zero interior modeling, Solid shape and drawing-media system built
+    from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge
+    behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Outline only; preserve the prompt subject while rebuilding
+    it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke
+    logic, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Solid Black on White; treat color as tool-limited material: graphite value,
+    charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic
+    trace, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Backlit; represent light through mark spacing, exposed paper, tonal
+    rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Paper edge; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum
+    smoothness, or marker streaks visible at the right scale, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through No internal details; structure forms through line rhythm, gesture,
+    technical geometry, blank space, contour continuity, and readable silhouette logic, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Graphic, stark; derive mood from study, immediacy, precision, roughness, temporary
+    mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Stark cut paper finish with crisp contour judgment; finish with honest drawing
+    marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing
+    the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make
+    the medium recognizable.
+  key_features: >-
+    Paper cut silhouette grammar with total shape reliance and zero interior modeling; Solid shape;
+    Solid Black on White; Paper edge; No internal details
   creative_brief: >-
-    Apply silhouette-first drawing to any input: pure contour recognition, interior detail removed, high
-    figure-ground contrast, edge clarity, and omission as design language. Keep shape-driven eloquence without
-    requiring profile portraits, sunsets, cut paper, theatre screens, or human bodies.
+    Apply Silhouette as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Paper cut
+    silhouette grammar with total shape reliance and zero interior modeling, Solid shape, Paper edge
+    without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +72,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - painterly fill
+  - wrong drawing tool
+  - airbrushed smoothness
+  - photo-real material overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-029.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool,
+    airbrushed smoothness, photo-real material overlay
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

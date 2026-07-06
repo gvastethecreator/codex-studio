@@ -12,30 +12,78 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Shaded topology overlay
-  subject_treatment: White wires over grey model
-  color_and_tone: Grey and White, wire-color contrast
-  lighting_and_shadow: Studio, dual-pass render
-  texture_and_material: Grid overlay, topology linework
+  aesthetic: >-
+    Wireframe on Shaded acts as a transferable CGI-style router: start from Shaded topology overlay,
+    Wire overlay, shaded+wireframe combo and 3D style system built from modeling language, mesh
+    abstraction, projection rules, topology display, toy material, paper logic, or stylized shader
+    constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
+    image.
+  subject_treatment: >-
+    Transform any prompt subject through White wires over grey model; preserve the prompt subject
+    while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines,
+    clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them,
+    keeping the requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Grey and White, wire color contrast; use color through material simplification,
+    cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion
+    accents, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Studio, dual pass render; shape light through the style constraint:
+    simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or
+    retro speculars, so value structure supports the renderer and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Grid overlay, topology linework; surface detail should show the named construction
+    system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural
+    blobs, or low-poly facets should appear only when they belong to the preset, keeping material
+    scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Wireframe on Shaded: three-quarter or orthographic framing, clean silhouette read,
-    material highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Educational, process, design-transparency
-  rendering_and_quality: Making-of, technical, breakdown beauty
-  key_features: Wire overlay, shaded+wireframe combo
+    Structure the image through Lookdev camera for Wireframe on Shaded: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition; compose through projection, topology readability, object grouping, axis
+    discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Educational, process, design transparency; derive mood from toy-like clarity,
+    technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural
+    mathematical wonder, letting the renderer alter interpretation without demanding a specific
+    story, location, or character.
+  rendering_and_quality: >-
+    Finish with Making of, technical, breakdown beauty; finish with intentional stylization, clean
+    geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for
+    it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Shaded topology overlay; Wire overlay, shaded+wireframe combo; Grey and White, wire color
+    contrast; Grid overlay, topology linework; Lookdev camera for Wireframe on Shaded: three quarter
+    or orthographic framing, clean silhouette read, material highlights, controlled depth, and
+    vertical card composition
   creative_brief: >-
-    Overlay the input with shaded-wireframe construction: visible topology, glowing edge flow, material
-    surface retained beneath technical linework. Treat mesh logic as graphic pattern; do not require a model
-    turntable or peeled-skin object. Apply Wireframe on Shaded as a portable 3D/render style system over any
-    input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production
-    cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene
-    template.
+    Apply Wireframe on Shaded as a CGI/render preset over prompt X: preserve the user's requested
+    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
+    final render craft through Shaded topology overlay, Wire overlay, shaded+wireframe combo, Grid
+    overlay, topology linework without requiring the card image's original subject.
 avoidRules:
   - clean render
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - accidental photorealism
+  - generic smooth mesh
+  - wrong geometry language
+  - messy topology
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-045.webp
 attributes:
-  negativePrompt: clean render
+  negativePrompt: >-
+    clean render, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
+    geometry language, messy topology
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -35,6 +35,7 @@ const RECIPE_TAG_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
   'character-lab': Boxes,
   timeline: Hourglass,
   spritesheet: Grid3X3,
+  'sprite-atlas': Boxes,
   character: User,
 };
 
@@ -46,6 +47,7 @@ const RECIPE_BUTTON_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
   'character-lab': Sparkles,
   timeline: Clock,
   spritesheet: ArrowRight,
+  'sprite-atlas': ArrowRight,
   character: Users,
 };
 

@@ -15,20 +15,40 @@ tags:
   - xerox-bestiary
 visualDna:
   aesthetic: >-
-    Black-and-white photocopied bestiary plates with occult medieval linework and rough underground print
-    damage.
+    Black-and-white photocopied bestiary plates with occult medieval linework and rough underground
+    print damage.
   subject_treatment: >-
-    Translate any subject into occult xerox bestiary logic with hand-drawn field-guide contour, exaggerated
-    silhouette features, rigid plate balance, and textless handmade oddness without changing the prompt role.
+    Translate any subject into occult xerox bestiary logic with hand-drawn field-guide contour,
+    exaggerated silhouette features, rigid plate balance, and textless handmade oddness without
+    changing the prompt role.
   color_and_tone: Mostly clean black ink and aged paper white, with optional one-color neon spot fills.
-  lighting_and_shadow: Shadow appears as hatch density, clean black fills, tidy stipple fields, and graphic photocopy contrast.
+  lighting_and_shadow: >-
+    Shadow appears as hatch density, clean black fills, tidy stipple fields, and graphic photocopy
+    contrast.
   texture_and_material: >-
-    Controlled copier texture, clean toner bloom, scratchy ink, paper tooth, edge wear, and readable line
-    reproduction.
+    Controlled copier texture, clean toner bloom, scratchy ink, paper tooth, edge wear, and readable
+    line reproduction.
   camera_and_composition: Single specimen view, label-free frame, marginal ornament, and rigid bestiary-page balance.
-  atmosphere_and_mood: Arcane, handmade, archival, and dungeon-worn.
-  rendering_and_quality: Controlled xerox print style with strong graphic readability, denoised darks, and rough line charm.
-  creative_brief: Turns any subject into an occult bestiary sheet without relying on text labels or clean digital polish.
+  atmosphere_and_mood: >-
+    Carry the prompt through Arcane, handmade, archival, and dungeon worn; abrasive underground
+    humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone
+    should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: >-
+    Controlled xerox print style with strong graphic readability, denoised darks, and rough line
+    charm.
+  creative_brief: >-
+    Turns any subject into an occult bestiary sheet without relying on text labels or clean digital
+    polish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity,
+    while this preset supplies a style grammar of Occult Xerox Bestiary; Black and white photocopied
+    bestiary plates with occult medieval linework and rough underground print; exaggerated
+    silhouette features; rigid plate balance; textless handmade oddness; Mostly clean black ink and
+    aged paper white, mood, material behavior, framing logic, and denoised medieval-zine finish
+    without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
+    composition.
+  key_features: >-
+    Occult Xerox Bestiary; Black and white photocopied bestiary plates with occult medieval linework
+    and rough underground print; exaggerated silhouette features; rigid plate balance; textless
+    handmade oddness; Mostly clean black ink and aged paper white
 avoidRules:
   - color gradients
   - polished concept art
@@ -37,10 +57,20 @@ avoidRules:
   - clean vector
   - watermark
   - text
+  - readable zine typography
+  - generic dungeon corridor
+  - muddy photocopy noise
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-014.webp
 attributes:
-  negativePrompt: color gradients, polished concept art, photorealism, typography, clean vector, watermark, text
+  negativePrompt: >-
+    color gradients, polished concept art, photorealism, typography, clean vector, watermark, text,
+    readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card
+    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
+    dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

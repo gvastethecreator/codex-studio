@@ -12,19 +12,51 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: 16-bit pixel-art style with deliberate grid economy and palette-ramp readability
-  subject_treatment: Pixel perfect
-  color_and_tone: Limited palette
-  lighting_and_shadow: Dithered
-  texture_and_material: Pixel grid
-  camera_and_composition: Blocky
-  atmosphere_and_mood: Nostalgic
-  rendering_and_quality: Retro game-art finish without requiring sprites, characters, cartridges, or UI
-  key_features: Grid alignment
+  aesthetic: >-
+    Pixel Art (16-bit) acts as a transferable art-medium router: start from 16 bit pixel art style
+    with deliberate grid economy and palette elevated edge structure readability, Grid alignment and
+    digital art workflow system built from layer control, editable edges, raster or vector logic,
+    screen-era artifacts, and production readability, then apply the medium behavior to prompt X
+    instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Pixel perfect; preserve the prompt subject while routing it
+    through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
+    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Limited palette; use color as workflow evidence: palette ramps, neon gradients,
+    RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint
+    harmonies, with deliberate value grouping, accent control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Dithered; shape light through layer modes, rim glow, raster gradients,
+    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Pixel grid; surface detail should come from the named workflow: brush texture, pixel
+    cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when
+    they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Blocky; compose through digital hierarchy, projection rules, asset
+    readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like
+    rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nostalgic; derive mood from speed, polish, concept utility, retro-futurism, broken
+    media, toy-scale clarity, or modern production control, letting the medium alter interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Retro game art finish without requiring sprites, characters, cartridges, or UI;
+    finish with clean digital intent, readable shapes, purposeful artifacts, and no random
+    over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
+  key_features: >-
+    16 bit pixel art style with deliberate grid economy and palette elevated edge structure
+    readability; Grid alignment; Limited palette; Pixel grid; Blocky
   creative_brief: >-
-    Apply 16-bit pixel-art constraints to any input: intentional pixel placement, limited palette, crisp grid
-    scale, dithered shade ramps, tile rhythm, and hard aliasing. Keep hardware-era nostalgia from
-    construction, not from forced game props, HUDs, sprites, or level scenes.
+    Apply Pixel Art (16-bit) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through 16
+    bit pixel art style with deliberate grid economy and palette elevated edge structure
+    readability, Grid alignment, Pixel grid without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -43,12 +75,23 @@ avoidRules:
   - border
   - character sprite requirement
   - cartridge reference
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-050.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, character sprite requirement, cartridge reference
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, character sprite requirement, cartridge
+    reference, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable
+    text, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

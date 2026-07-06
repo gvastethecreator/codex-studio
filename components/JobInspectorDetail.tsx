@@ -263,6 +263,8 @@ function ArtifactTile({
           <img
             src={artifact.previewSrc}
             alt={artifact.label}
+            width={512}
+            height={384}
             className="h-full w-full object-cover"
             loading="lazy"
             decoding="async"
@@ -680,6 +682,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 <img
                   src={primaryOutput.previewSrc ?? primaryOutput?.href ?? ''}
                   alt={outputName}
+                  width={1024}
+                  height={1024}
                   className="h-[320px] w-full object-contain bg-zinc-950"
                   loading="lazy"
                   decoding="async"
@@ -724,6 +728,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                 <img
                   src={primaryReference.previewSrc ?? primaryReference?.href ?? ''}
                   alt={primaryReference.label}
+                  width={512}
+                  height={512}
                   className="h-[214px] w-full rounded-xl border border-white/10 object-cover"
                   loading="lazy"
                   decoding="async"
@@ -779,6 +785,8 @@ export const JobInspectorDetail: React.FC<JobInspectorDetailProps> = ({
                               <img
                                 src={preview}
                                 alt={artifact.label}
+                                width={64}
+                                height={64}
                                 className="h-full w-full object-cover"
                                 loading="lazy"
                                 decoding="async"

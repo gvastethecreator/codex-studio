@@ -12,30 +12,89 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Denim-on-denim confidence, Americana workwear cool, indigo utility polish
-  subject_treatment: Stitching, jacket-box geometry, straight stacked layers, western-yoke line, contrast-thread geometry
-  color_and_tone: Indigo Blue, raw-indigo, faded-wash blue, ecru weft, copper-orange stitching, stonewashed sky
-  lighting_and_shadow: Softbox-even texture light, denim side-light, casual daylight
+  aesthetic: >-
+    Denim on Denim operates as a portable fashion-costume router: combine Denim-on-denim confidence,
+    Americana workwear cool, indigo utility polish with material-forward fashion transformation with
+    drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Stitching, jacket-box
+    geometry, straight stacked layers, western-yoke line, contrast-thread geometry; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Softbox-even texture light, denim side-light, casual daylight plus material-revealing light
+    with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric separation as
+    the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor
+    structure without erasing prompt readability.
   texture_and_material: >-
-    Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather
-    patch
+    Render Denim weave, selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn
+    buttons, leather patch plus fabric grain, fur, chain, knit, satin, lace, leather, polymer,
+    smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers,
+    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
+    whole prompt.
   camera_and_composition: >-
-    Compose for Denim on Denim using its key spatial cues: Orange stitching, selvedge ID, copper rivets,
-    leather patch, double-denim coordination.
-  atmosphere_and_mood: Cool, blue, blue-collar pride, weekend ease, American-classic confidence
-  rendering_and_quality: Textured, casual, heritage-workwear authenticity, Americana-denim fidelity
-  key_features: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim coordination
+    Compose with Compose for Denim on Denim using its key spatial cues: Orange stitching, selvedge
+    ID, copper rivets, leather patch, double-denim coordination plus drape rhythm, material
+    coverage, silhouette clarity, tactile close detail, fold direction, and transformation edge
+    control as reusable fashion framing grammar, allowing portraits, objects, creatures,
+    environments, action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Denim on Denim while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Denim-on-denim confidence, Americana workwear cool, indigo utility polish; Stitching, jacket-box
+    geometry, straight stacked layers, western-yoke line, contrast-thread geometry; Denim weave,
+    selvedge twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch;
+    Softbox-even texture light, denim side-light, casual daylight; Compose for Denim on Denim using
+    its key spatial cues: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim
+    coordination
   creative_brief: >-
-    Convert the input into denim-on-denim craft: indigo twill, selvedge IDs, orange chainstitch, copper
-    rivets, leather patch and coordinated blue layering. Keep workwear confidence without requiring a garage,
-    ranch, labor narrative, full outfit pose or a human model.
+    Use Denim on Denim after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Denim-on-denim
+    confidence, Americana workwear cool, indigo utility polish, Stitching, jacket-box geometry,
+    straight stacked layers, western-yoke line, contrast-thread geometry, Denim weave, selvedge
+    twill, contrast-thread chainstitch, copper rivets, buffalo-horn buttons, leather patch,
+    Softbox-even texture light, denim side-light, casual daylight, Compose for Denim on Denim using
+    its key spatial cues: Orange stitching, selvedge ID, copper rivets, leather patch, double-denim
+    coordination plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension,
+    edge behavior, and surface continuity, palette behavior, light response, material treatment,
+    silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue,
+    prop bundle, or card composition.
 avoidRules:
   - silk
   - suit
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-052.webp
 attributes:
-  negativePrompt: silk, suit
+  negativePrompt: >-
+    silk, suit, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

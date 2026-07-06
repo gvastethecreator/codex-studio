@@ -12,25 +12,71 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-product-cgi
 visualDna:
-  aesthetic: Tech merged with body
-  subject_treatment: Integration lines
-  color_and_tone: Chrome, LED
-  lighting_and_shadow: Sci-fi
-  texture_and_material: Metal/Skin transition, bio-mech fusion
-  camera_and_composition: Prosthetic
-  atmosphere_and_mood: Futuristic, body horror, identity tension
-  rendering_and_quality: Deus Ex transhuman sci-fi, augmented identity
-  key_features: Seamless blend, implant integration
+  aesthetic: >-
+    Cybernetic Implant acts as a transferable CGI-style router: start from Tech merged with body,
+    Seamless blend, implant integration and hard-surface and product-CGI system built from bevel
+    logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium
+    reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Integration lines; preserve the prompt subject while giving
+    it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface
+    control, or UI-material precision, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Chrome, LED; use color as manufactured finish: anodized metal, gunmetal, glass
+    tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with
+    deliberate value grouping, exposure control, and medium-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through Sci fi; shape light through studio strips, rim edges, reflection cards,
+    display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value
+    structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Metal/Skin transition, bio mech fusion; surface detail should show bevels, panel seams,
+    normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean
+    UI translucency, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Prosthetic; compose for engineered readability through exploded
+    spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium
+    macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Futuristic, body horror, identity tension; derive mood from precision, luxury,
+    tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility,
+    letting the renderer alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Deus Ex transhuman sci fi, augmented identity; finish with exact edges, believable
+    PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble
+    clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI
+    mode recognizable.
+  key_features: >-
+    Tech merged with body; Seamless blend, implant integration; Chrome, LED; Metal/Skin transition,
+    bio mech fusion; Prosthetic
   creative_brief: >-
-    Apply cybernetic integration to the input: chrome/organic seams, LED status glows, prosthetic geometry and
-    bio-mech fusion lines. If a body or character exists, augment it; otherwise embed transhuman interface
-    cues into the subject without forcing flesh, portrait framing or body horror.
+    Apply Cybernetic Implant as a CGI/render preset over prompt X: preserve the user's requested
+    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
+    final render craft through Tech merged with body, Seamless blend, implant integration,
+    Metal/Skin transition, bio mech fusion without requiring the card image's original subject.
 avoidRules:
   - flesh only
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - random greeble clutter
+  - fake labels
+  - muddy grime
+  - organic blob shape
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-067.webp
 attributes:
-  negativePrompt: flesh only
+  negativePrompt: >-
+    flesh only, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic
+    blob shape
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -12,20 +12,61 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Kinetic gesture sketch language with motion-first drawing priority and animation rough energy
-  subject_treatment: Long sweeping arcs, repeated search lines, pressure-led scribble massing
-  color_and_tone: Monochrome drawing media on warm paper base
-  lighting_and_shadow: Value implied by stroke density rather than rendered light
-  texture_and_material: Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup
-  camera_and_composition: Dynamic foreshortening and action-curve exaggeration
-  atmosphere_and_mood: Urgent, alive, improvisational studio energy
-  rendering_and_quality: Loose and energetic draft quality emphasizing movement over finish
-  key_features: Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail
+  aesthetic: >-
+    Loose Gesture Energy Sketch acts as a transferable illustration router: start from Kinetic
+    gesture sketch language with motion-first drawing priority and animation rough energy, Motion
+    trails, layered search marks, anatomy-suggestive rather than anatomical detail and production
+    concept-art system built from iteration discipline, silhouette testing, material exploration,
+    design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X
+    instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Long sweeping arcs, repeated search lines, pressure-led
+    scribble massing; preserve the requested subject while routing it through design exploration,
+    asset logic, value blocking, scale cues, iteration rows, paintover marks, or
+    production-readability constraints, keeping the requested identity, silhouette, pose, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Monochrome drawing media on warm paper base; use color as concept
+    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
+    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Value implied by stroke density rather than rendered light; shape light for
+    ideation clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup; surface detail
+    should reveal brush passes, photobash integration, low-poly facets, callout texture, massing
+    blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Dynamic foreshortening and action-curve exaggeration; compose
+    through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids,
+    iteration boards, or cinematic keyframe balance without locking one finished illustration, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Urgent, alive, improvisational studio energy; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Loose and energetic draft quality emphasizing movement over finish; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Kinetic gesture sketch language with motion-first drawing priority and animation rough energy;
+    Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail;
+    Monochrome drawing media on warm paper base; Dry graphite/charcoal drag, smudge trails,
+    tooth-sensitive mark breakup; Dynamic foreshortening and action-curve exaggeration
   creative_brief: >-
-    Apply loose gesture-sketch energy to any input: searching lines, weight shifts, elastic contours,
-    directional force marks, erased construction ghosts, and minimal value accents. If there is no body or
-    action, convert the main forms into gestural movement studies without requiring anatomy poses, animation
-    frames, or characters.
+    Apply Loose Gesture Energy Sketch as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Kinetic gesture sketch language with motion-first drawing priority and animation rough
+    energy, Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail,
+    Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup without requiring the
+    card image's original subject.
 avoidRules:
   - tight
   - clean
@@ -38,10 +79,26 @@ avoidRules:
   - perfect
   - measured
   - careful
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-083.webp
 attributes:
-  negativePrompt: tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful
+  negativePrompt: >-
+    tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured,
+    careful, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
+    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

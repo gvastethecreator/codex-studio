@@ -12,28 +12,85 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Cottagecore pastoral styling, rural-romance daydream, handmade softness
-  subject_treatment: Soft rural dress logic, empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch
-  color_and_tone: Cream, Sage, Floral, butter-yellow, dusty lavender, wildflower print, robin-egg blue
-  lighting_and_shadow: Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight
-  texture_and_material: Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk
+  aesthetic: >-
+    Cottagecore operates as a portable fashion-costume router: combine Cottagecore pastoral styling,
+    rural-romance daydream, handmade softness with subcultural dress-code logic with identity
+    signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies
+    styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Soft rural dress logic,
+    empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch; identity stays readable
+    as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Golden hour warmth, dappled shade, morning-dew sparkle, soft backlight plus club, daylight,
+    editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a
+    venue as the styling light contract, revealing cut, drape, surface response, trim, transparency,
+    or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Linen, cotton muslin, eyelet, soft gauze, knit shawl, woven straw, raw silk plus denim,
+    leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn
+    textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental
+    edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw texture, straw-hat brim
-    cue, lace-up bodice, ribbon ties.
-  atmosphere_and_mood: Peaceful, nature-adjacent, bread-baking warmth, wildflower fragility, slow-life softness
-  rendering_and_quality: Whimsical, soft, fairytale illustration, sun-drenched pastoral
-  key_features: Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties
+    Compose with Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw
+    texture, straw-hat brim cue, lace-up bodice, ribbon ties plus attitude-led silhouette, accessory
+    grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Cottagecore while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Cottagecore pastoral styling, rural-romance daydream, handmade softness; Soft rural dress logic,
+    empire-waist rise, puff-sleeve volume, midi hem drift, apron-tie cinch; Linen, cotton muslin,
+    eyelet, soft gauze, knit shawl, woven straw, raw silk; Golden hour warmth, dappled shade,
+    morning-dew sparkle, soft backlight; Compose for Cottagecore using its key spatial cues:
+    Apron-tie logic, woven-straw texture, straw-hat brim cue, lace-up bodice, ribbon ties
   creative_brief: >-
-    Soften the input with cottagecore textile cues: linen, muslin, eyelet, puff sleeves, apron ties, woven
-    straw, wildflower prints and warm slow-life light. Keep rural fantasy as texture and mood, without
-    requiring meadows, orchards, basket props, bread tableaux, cottages or wandering figures.
+    Use Cottagecore after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Cottagecore pastoral
+    styling, rural-romance daydream, handmade softness, Soft rural dress logic, empire-waist rise,
+    puff-sleeve volume, midi hem drift, apron-tie cinch, Linen, cotton muslin, eyelet, soft gauze,
+    knit shawl, woven straw, raw silk, Golden hour warmth, dappled shade, morning-dew sparkle, soft
+    backlight, Compose for Cottagecore using its key spatial cues: Apron-tie logic, woven-straw
+    texture, straw-hat brim cue, lace-up bodice, ribbon ties plus signature layers, footwear cues,
+    hair volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette,
+    palette behavior, light response, material treatment, silhouette grammar, and finish discipline
+    without requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - urban
   - modern
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-028.webp
 attributes:
-  negativePrompt: urban, modern
+  negativePrompt: >-
+    urban, modern, costume-party parody, random trend mix, brand-logo collage, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

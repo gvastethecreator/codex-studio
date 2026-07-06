@@ -7,236 +7,261 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP08-001',
     name: 'Haute Couture',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'ready-to-wear, cheap, simple',
+    negativePrompt:
+      'ready-to-wear, cheap, simple, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language',
+        'Haute Couture operates as a portable fashion-costume router: combine Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
       color_and_tone:
-        'Bold jewel tones, artistic color-blocking, expensive saturated hues, deep emerald, sapphire',
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze',
+        'Use High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth',
-      camera_and_composition: 'Exaggerated silhouette',
+        'Render Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
+      camera_and_composition:
+        'Compose with lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Dramatic, expensive, artistic, reverent silence, aspirational awe, museum-grade poise',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Haute Couture while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Couture editorial polish, ceremonial spectacle, haute-couture precision',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
       key_features:
-        'Exaggerated couture silhouette, sculpted volume, editorial restraint, avant-garde headpiece cues',
+        'Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language; Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette; Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth; High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze; lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy',
       creative_brief:
-        'Treat the input as an impossible couture object where cloth behaves like sculpture. Let seams, beadwork, feathers, organza and tulle exaggerate the silhouette without demanding runway logic, fashion-week staging or fixed model pose. Light should carve volume with museum severity, turning the subject into wearable architecture.',
+        'Use Haute Couture after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language, Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette, Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth, High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze, lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-020',
     name: 'Red Carpet Gown',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'casual, short',
+    negativePrompt:
+      'casual, short, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
-      aesthetic: 'Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance',
+      aesthetic:
+        'Red Carpet Gown operates as a portable fashion-costume router: combine Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
       color_and_tone:
-        'Red, Gold, Black, ruby, champagne, midnight sapphire, liquid-silver, emerald',
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression',
+        'Use Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh',
+        'Render Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Red Carpet Gown using its key spatial cues: Train extension, statement jewels, liquid drape, crystal articulation, formal sweep.',
+        'Compose with Compose for Red Carpet Gown using its key spatial cues: Train extension, statement jewels, liquid drape, crystal articulation, formal sweep plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Ceremonial, elevated, flashbulb electricity, prestige-night anticipation',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Red Carpet Gown while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Glamorous, expensive, broadcast-polish precision, diamond-season finish',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
       key_features:
-        'Train extension, statement jewels, liquid drape, crystal articulation, formal sweep',
+        'Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance; Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control; Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh; Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression; Compose for Red Carpet Gown using its key spatial cues: Train extension, statement jewels, liquid drape, crystal articulation, formal sweep',
       creative_brief:
-        'Push the input through gala formalwear logic: silk charmeuse, crystal mesh, elongated drape, train-like sweep, statement-jewel articulation and flashbulb sparkle. Keep prestige-event electricity as finish only; do not require a gown body, carpet, paparazzi wall, step-and-repeat or walking celebrity figure.',
+        'Use Red Carpet Gown after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Gala formalwear grandeur, flash-lit luxury, broadcast-event elegance, Column drape, train-like extension, elongated sweep, jeweled trim rhythm, formal contour control, Silk charmeuse, bugle-bead sequins, Chantilly lace overlay, velvet burnout, crystal mesh, Flash photography, jeweled strobe sparkle, arrival-glow warmth, telephoto compression, Compose for Red Carpet Gown using its key spatial cues: Train extension, statement jewels, liquid drape, crystal articulation, formal sweep plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-019',
     name: 'Business Casual',
     category: '1. Contemporary Fashion',
-    negativePrompt: 't-shirt, shorts',
+    negativePrompt:
+      't-shirt, shorts, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
-      aesthetic: 'Professional daywear, boardroom calm, corporate-modern uniformity',
+      aesthetic:
+        'Business Casual operates as a portable fashion-costume router: combine Professional daywear, boardroom calm, corporate-modern uniformity with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column',
-      color_and_tone: 'Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+      color_and_tone:
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Window-filtered daylight, soft professional overhead, lobby-neutral glow',
+        'Use Window-filtered daylight, soft professional overhead, lobby-neutral glow plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit',
+        'Render Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Business Casual using its key spatial cues: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues.',
+        'Compose with Compose for Business Casual using its key spatial cues: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Professional calm, deadline focus, competent neutrality, low-risk polish',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Business Casual while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Professional competent polish, low-risk clarity, workplace-ready finish',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
       key_features:
-        'Blazer, structured shoulder, tapered trouser line, polished leather accessory cues',
+        'Professional daywear, boardroom calm, corporate-modern uniformity; Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column; Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit; Window-filtered daylight, soft professional overhead, lobby-neutral glow; Compose for Business Casual using its key spatial cues: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues',
       creative_brief:
-        'Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry, structured shoulders and soft neutral whites. Keep office authority as tone only, not as a conference room, headshot crop, portfolio-bag vignette, executive persona or fixed corporate character.',
+        'Use Business Casual after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Professional daywear, boardroom calm, corporate-modern uniformity, Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column, Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit, Window-filtered daylight, soft professional overhead, lobby-neutral glow, Compose for Business Casual using its key spatial cues: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-005',
     name: 'Athleisure Sport',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'dress, jeans, formal',
+    negativePrompt:
+      'dress, jeans, formal, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
-      aesthetic: 'Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status',
+      aesthetic:
+        'Athleisure Sport operates as a portable fashion-costume router: combine Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Ergonomic contouring, compressive structure, racerback line logic, high-waist support, motion-tension seams',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Ergonomic contouring, compressive structure, racerback line logic, high-waist support, motion-tension seams; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
       color_and_tone:
-        'Black, Neon accents, Grey, volt yellow, infrared flash, carbon grey, heathered charcoal',
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights',
+        'Use Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib',
+        'Render Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Athleisure Sport using its key spatial cues: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs.',
+        'Compose with Compose for Athleisure Sport using its key spatial cues: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Active, healthy, modern, endorphin glow, disciplined readiness, pre-dawn determination',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Athleisure Sport while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Performance-luxury activewear finish, fit-tech precision, always-ready sharpness',
-      key_features: 'Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+      key_features:
+        'Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status; Ergonomic contouring, compressive structure, racerback line logic, high-waist support, motion-tension seams; Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib; Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights; Compose for Athleisure Sport using its key spatial cues: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs',
       creative_brief:
-        'Translate the input into engineered activewear language: compressive knit, reflective trims, seamless ribbing, ergonomic panel lines and motion-ready tension. Preserve the wellness-performance aura without forcing gym context, workout pose, second-skin body read or exposed anatomy.',
+        'Use Athleisure Sport after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Performance athleisure styling, pre-to-post-workout fluidity, wellness-as-status, Ergonomic contouring, compressive structure, racerback line logic, high-waist support, motion-tension seams, Spandex, mesh, sweat-wicking knit, zero-gravity nylon, perforated neoprene, seamless rib, Crisp fitness-editorial light, sweat-sheen reflection, early-morning clarity, clean rim highlights, Compose for Athleisure Sport using its key spatial cues: Sleek silhouette, reflective trim hits, zip-free second-skin, thumbhole cuffs plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-017',
     name: 'Tech-Industry Uniform',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'suit, tie',
+    negativePrompt:
+      'suit, tie, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
-      aesthetic: 'Tech-industry uniform, black knit authority, product-launch minimalism',
+      aesthetic:
+        'Tech-Industry Uniform operates as a portable fashion-costume router: combine Tech-industry uniform, black knit authority, product-launch minimalism with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve',
-      color_and_tone: 'Black, Grey, Navy, charcoal, midnight navy, washed black, graphite',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+      color_and_tone:
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze',
+        'Use Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere',
+        'Render Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Tech-Industry Uniform using its key spatial cues: Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding.',
+        'Compose with Compose for Tech-Industry Uniform using its key spatial cues: Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Serious, visionary calm, controlled intensity, uniform-dressing certainty',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Tech-Industry Uniform while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Minimal, rich, billionaire-casual precision, uniform dressing philosophy',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
       key_features:
-        'Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding',
+        'Tech-industry uniform, black knit authority, product-launch minimalism; Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve; Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere; Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze; Compose for Tech-Industry Uniform using its key spatial cues: Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding',
       creative_brief:
-        'Reduce the input to tech-industry uniform logic: black merino, graphite basics, minimal sneakers, unbranded surfaces, columnar silhouette and product-launch restraint. Keep visionary keynote polish as attitude only; do not require a stage, founder portrait, round glasses, laptop, auditorium or specific startup persona.',
+        'Use Tech-Industry Uniform after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Tech-industry uniform, black knit authority, product-launch minimalism, Simple silhouette, columnar torso, unbranded minimalism, bracelet-length sleeve, Cotton jersey, merino knit, selvedge denim, unbranded suede, brushed cashmere, Controlled product-launch spotlight, soft keynote backlight, keynote-grade haze, Compose for Tech-Industry Uniform using its key spatial cues: Knit column, graphite basics, unbranded sneakers, launch-light restraint, no visible branding plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-018',
     name: 'Pop-Performance Tailoring',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'boring, dark, body idol, group choreography, backstage set, fandom crowd',
+    negativePrompt:
+      'boring, dark, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        'Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision',
+        'Pop-Performance Tailoring operates as a portable fashion-costume router: combine Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
       color_and_tone:
-        'Pastel, Neon, White, lavender, electric fuchsia, holographic pearl, candy-pink',
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Editorial-bright beauty light, color-shifting gels, high-key rim sparkle',
+        'Use Editorial-bright beauty light, color-shifting gels, high-key rim sparkle plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones',
+        'Render Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings.',
+        'Compose with Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Energetic, cute, cool, high-polish perfection, synchronized charisma, polished performance joy',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Pop-Performance Tailoring while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Hyper-polished pop editorial finish, trend-tuned precision, coordinated surface clarity',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
       key_features:
-        'Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings',
+        'Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision; Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm; Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones; Editorial-bright beauty light, color-shifting gels, high-key rim sparkle; Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings',
       creative_brief:
-        'Rebuild the input with pop-comeback polish: cropped jackets, asymmetric hems, sequins, patent vinyl, rhinestones, pastel-neon color and exact coordination. Preserve synchronized charisma as finish only, not as a face, body idol, group choreography, backstage narrative, music-show set or fandom crowd.',
+        'Use Pop-Performance Tailoring after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Synchronized pop-performance tailoring, candy-neon coordination, comeback-polish precision, Sharp layered modularity, cropped jacket structure, high-waist tailoring, asymmetric hems, fitted rhythm, Mixed fabrics, sequin mesh, patent vinyl, lurex knit, iridescent organza, scattered rhinestones, Editorial-bright beauty light, color-shifting gels, high-key rim sparkle, Compose for Pop-Performance Tailoring using its key spatial cues: Dyed-hair cues, pastel or jewel-tone color, coordinated layers, statement earrings plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-003',
     name: 'Minimalist Chic',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'pattern, logo, bright colors',
+    negativePrompt:
+      'pattern, logo, bright colors, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
-      aesthetic: 'Clean northern minimalism, soft architectural purity, wabi-sabi restraint',
+      aesthetic:
+        'Minimalist Chic operates as a portable fashion-costume router: combine Clean northern minimalism, soft architectural purity, wabi-sabi restraint with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision',
-      color_and_tone: 'Beige, White, Grey, Black, ecru, oatmeal, dove grey, bone-white, muted sand',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+      color_and_tone:
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow',
+        'Use Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe',
+        'Render Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal layering, absence of hardware, invisible fastenings.',
+        'Compose with Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal layering, absence of hardware, invisible fastenings plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Minimalist Chic while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Pared-back designer minimalism, expensive calm, quiet-luxury subtlety',
-      key_features: 'Neutral palette, tonal layering, absence of hardware, invisible fastenings',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+      key_features:
+        'Clean northern minimalism, soft architectural purity, wabi-sabi restraint; Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision; Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe; Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow; Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal layering, absence of hardware, invisible fastenings',
       creative_brief:
-        'Apply quiet-luxury subtraction to the input: clean geometry, tonal layering, invisible closures, premium matte fibers and a palette held near bone, oatmeal and charcoal. The result should feel edited down to the one seam that matters, without implying showroom still life, closet editorial, zen room or human figure staging.',
+        'Use Minimalist Chic after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Clean northern minimalism, soft architectural purity, wabi-sabi restraint, Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision, Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe, Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow, Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal layering, absence of hardware, invisible fastenings plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-016',
     name: 'Normcore',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'flashy, expensive',
+    negativePrompt:
+      'flashy, expensive, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
-        '90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort',
-      subject_treatment: 'Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape',
+        'Normcore operates as a portable fashion-costume router: combine 90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
+      subject_treatment:
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
       color_and_tone:
-        'Grey, Blue denim, heathered oatmeal, faded navy, stonewash, light-wash indigo',
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Flat everyday overhead, overcast softness, low-contrast practical warmth',
+        'Use Flat everyday overhead, overcast softness, low-contrast practical warmth plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas',
+        'Render Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker.',
+        'Compose with Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Casual, unpretentious, genuine, unbothered authenticity, anti-fashion ease',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Normcore while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
       rendering_and_quality:
-        'Boring, ironic, comfortable, deliberately average, anti-fashion confidence',
-      key_features: 'Dad sneakers, light-wash jeans, tucked-in tee, windbreaker',
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
+      key_features:
+        '90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort; Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape; Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas; Flat everyday overhead, overcast softness, low-contrast practical warmth; Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker',
       creative_brief:
-        'Flatten the input into normcore anti-fashion: dad denim, fleece, washed canvas, plain jersey, windbreaker logic and deliberately average proportions. It should feel comfortable and unoptimized without requiring a coffee shop, sidewalk, sitcom reference or human standing pose.',
+        'Use Normcore after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies 90s everyday normcore, casual anti-fashion, dad-denim ease, nothing-to-prove comfort, Loose fit, straight-leg dad jeans, relaxed shoulder, anti-fit drape, Cotton jersey, stonewashed denim, fleece sweatshirt, waffle-knit thermal, washed canvas, Flat everyday overhead, overcast softness, low-contrast practical warmth, Compose for Normcore using its key spatial cues: Dad sneakers, light-wash jeans, tucked-in tee, windbreaker plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
   {
     id: 'SP08-010',
     name: 'Preppy Ivy League',
     category: '1. Contemporary Fashion',
-    negativePrompt: 'messy, ripped, dark',
+    negativePrompt:
+      'messy, ripped, dark, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
-      aesthetic: 'Classic American prep, Ivy legacy polish, summer-ease refinement',
+      aesthetic:
+        'Preppy Ivy League operates as a portable fashion-costume router: combine Classic American prep, Ivy legacy polish, summer-ease refinement with contemporary fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.',
       subject_treatment:
-        'Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll',
-      color_and_tone: 'Navy, White, Khaki, Red, Nantucket red, forest green, university-crest gold',
+        "Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer, streamline, accessorize, polish, or simplify through Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll; identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.",
+      color_and_tone:
+        'Map color through modern neutrals, controlled accent color, textile value separation, skin-adjacent warmth, and editorial contrast; keep textile values separated, accents intentional, material color believable, and palette behavior attached to the subject instead of pasted wardrobe decoration.',
       lighting_and_shadow:
-        'Daylight, autumn-gold warmth, reading-room softness, regatta-morning crispness',
+        'Use Daylight, autumn-gold warmth, reading-interior-system softness, regatta-morning crispness plus fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response, and clean silhouette reads as the styling light contract, revealing cut, drape, surface response, trim, transparency, or armor structure without erasing prompt readability.',
       texture_and_material:
-        'Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan',
+        'Render Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole prompt.',
       camera_and_composition:
-        'Compose for Preppy Ivy League using its key spatial cues: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters.',
+        'Compose with Compose for Preppy Ivy League using its key spatial cues: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters plus lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to inherit styling without one required pose.',
       atmosphere_and_mood:
-        'Smart, wealthy, traditional, generational ease, tailored confidence, inherited polish',
-      rendering_and_quality: 'Heritage prep polish, classic ease, generational refinement',
+        "Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional or event-specific presence; the tone should feel specific to Preppy Ivy League while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.",
+      rendering_and_quality:
+        'Finish with high-end styling clarity, crisp garment edges, believable fit, controlled retouching, and no catalog blandness; prioritize clean style recognition, believable material physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.',
       key_features:
-        'Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters',
+        'Classic American prep, Ivy legacy polish, summer-ease refinement; Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll; Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan; Daylight, autumn-gold warmth, reading-interior-system softness, regatta-morning crispness; Compose for Preppy Ivy League using its key spatial cues: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters',
       creative_brief:
-        'Apply Ivy prep styling to the input: oxford cloth, Shetland knit, repp stripes, blazer roll, needlepoint detail, cordovan shine and crisp navy-khaki-red balance. Keep heritage prep cues as atmosphere only; do not require a college scene, human student, country-club tableau or inherited-wealth portrait.',
+        'Use Preppy Ivy League after prompt X as a transferable fashion/costume layer: prompt X supplies subject, motion, setting, tone, and intensity, while the preset supplies Classic American prep, Ivy legacy polish, summer-ease refinement, Clean layers, natural shoulder, half-canvas drape, straight-leg chino, blazer roll, Oxford cloth, Shetland wool knit, madras cotton, seersucker, needlepoint belt, shell cordovan, Daylight, autumn-gold warmth, reading-interior-system softness, regatta-morning crispness, Compose for Preppy Ivy League using its key spatial cues: Collared shirt, repp-stripe tie, cable-knit thrown over shoulders, embroidered critters plus tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and intentional styling choices, palette behavior, light response, material treatment, silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

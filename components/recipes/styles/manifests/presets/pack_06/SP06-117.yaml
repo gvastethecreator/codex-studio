@@ -12,28 +12,89 @@ tags:
   - essential-art-styles
   - game-art-directions-and-ui
 visualDna:
-  aesthetic: Arcade-racing neon style with exaggerated speed trails, glossy color bands, and kinetic route readability.
+  aesthetic: >-
+    Arcade Racing Velocity Neon acts as a transferable art-medium router: start from Arcade racing
+    neon style with exaggerated speed trails, glossy color bands, and kinetic route readability,
+    gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
+    production-art clarity and game-art direction system built from playable readability, UI or
+    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
+    the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Stretch any subject into velocity-forward forms with aerodynamic diagonals, luminous edges, and impact
-    streaks.
-  color_and_tone: Hot magenta, cyan, lime, black asphalt-like neutrals, and intense specular contrast.
-  lighting_and_shadow: Neon reflections, tunnel-like light strips, streaked highlights, and long directional glow smears.
+    Transform any prompt subject through Stretch any subject into velocity forward forms with
+    aerodynamic diagonals, luminous edges, and impact streaks; preserve the prompt subject while
+    routing it through tile readability, icon clarity, splash rendering, interface material, sprite
+    bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
+  color_and_tone: >-
+    Build color with Hot magenta, cyan, lime, black asphalt like neutrals, and intense specular
+    contrast; use color as gameplay hierarchy: rarity glow, faction contrast, tactical coding,
+    seasonal warmth, horror warmth, neon route color, or readable inventory material, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Neon reflections, tunnel like light strips, streaked highlights, and long
+    directional glow smears; shape light through game readability: rim separation, UI glow,
+    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
+    value structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    Glossy PBR-lite surfaces, motion-line bands, bloom haze, wet reflective grain, and compressed arcade
-    sharpness.
-  camera_and_composition: Low wide-angle velocity framing, vanishing-point pull, diagonal lane rhythm, and strong forward momentum.
-  atmosphere_and_mood: Fast, loud, competitive mood without requiring cars, tracks, roads, billboards, or city nights.
-  rendering_and_quality: High-energy arcade polish, controlled motion effects, no readable signage, no UI overlays.
+    Render Glossy PBR lite surfaces, motion line bands, bloom haze, wet reflective grain, and
+    compressed arcade sharpness; surface detail should support genre grammar through parchment, HUD
+    glass, pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade
+    material, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Low wide angle velocity framing, vanishing point pull, diagonal lane
+    rhythm, and strong forward momentum; compose through gameplay-facing hierarchy, atlas
+    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
+    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Fast, loud, competitive mood without requiring cars, tracks, roads, billboards, or
+    urban fabric nights; derive mood from playable stakes, collection desire, tactical control, cozy
+    routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with High energy arcade polish, controlled motion effects, no readable signage, no UI
+    overlays; finish with game-production clarity, strong silhouettes, controlled UI-like detail,
+    and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough
+    craft evidence to make the medium recognizable.
+  key_features: >-
+    Arcade racing neon style with exaggerated speed trails, glossy color bands, and kinetic route
+    readability; gameplay-readable hierarchy, genre-specific surface language, UI-aware composition,
+    and production-art clarity; Hot magenta, cyan, lime, black asphalt like neutrals, and intense
+    specular contrast; Glossy PBR lite surfaces, motion line bands, bloom haze, wet reflective
+    grain, and compressed arcade sharpness; Low wide angle velocity framing, vanishing point pull,
+    diagonal lane rhythm, and strong forward momentum
+  creative_brief: >-
+    Apply Arcade Racing Velocity Neon as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Arcade racing neon style with exaggerated speed trails, glossy color bands, and kinetic
+    route readability, gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity, Glossy PBR lite surfaces, motion line bands, bloom
+    haze, wet reflective grain, and compressed arcade sharpness without requiring the card image's
+    original subject.
 avoidRules:
   - watermark
   - text
   - car requirement
   - race track requirement
   - readable signage
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - low resolution
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-117.webp
 attributes:
-  negativePrompt: watermark, text, car requirement, race track requirement, readable signage
+  negativePrompt: >-
+    watermark, text, car requirement, race track requirement, readable signage, wrong medium,
+    generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low
+    resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,27 +12,56 @@ tags:
   - texture-and-materiality
   - elemental-and-fx
 visualDna:
-  aesthetic: Heavy floor fog
-  subject_treatment: Rolling clouds
-  color_and_tone: White
-  lighting_and_shadow: Soft
-  texture_and_material: Dense gas
-  camera_and_composition: Heavy gas
-  atmosphere_and_mood: Eerie, stage
-  rendering_and_quality: Low, cold, theatrical
-  key_features: Low lying
+  aesthetic: >-
+    Dry Ice Fog behaves like a controlled elemental effect layer: start from Heavy floor fog, Dense
+    gas, and Heavy gas, then turn motion, temperature, particles, translucency, refraction, glow,
+    and transient energy behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Rolling clouds: preserve identity and pose while letting
+    forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface
+    breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use White as the material palette, with controlled value separation, local color variation, and
+    hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte
+    falloff, or rim behavior should reveal Dry Ice Fog without hiding the prompt subject.
+  texture_and_material: >-
+    Render Dense gas through flow direction, particle density, turbulence, glow falloff, splashes,
+    trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Heavy gas as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Eerie, stage by using movement, danger, spectacle, instability, temperature, and
+    sensory intensity; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Low, cold, theatrical material clarity: physically coherent reflectance, clean
+    contact detail, controlled micro-texture, readable silhouette behavior, and no noisy
+    stock-texture overlay.
+  key_features: Heavy floor fog; Rolling clouds; Dense gas; Soft; Heavy gas
   creative_brief: >-
-    Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like
-    liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If
-    floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to
-    ground the subject without requiring a theatre scene.
+    Route any subject through Dry Ice Fog as a transferable elemental/FX visual system while
+    preserving the prompt's subject, action, and setting. Apply dry-ice fog as low cold atmosphere
+    around the input: dense white clouds that pool and pour like liquid, gravity-hugging volume,
+    soft theatrical light, and liminal concealment near the base of forms. If floor, stage, ritual,
+    or object base exists, make fog gather there; otherwise use low-lying vapor to ground the
+    subject without requiring a theatre scene.
 avoidRules:
   - steam
   - hot
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-061.webp
 attributes:
-  negativePrompt: steam, hot
+  negativePrompt: steam, hot, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

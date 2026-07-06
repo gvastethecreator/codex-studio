@@ -12,19 +12,47 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: 80s retro-futurism
-  subject_treatment: Grid lines
-  color_and_tone: Purple, Pink, Cyan
-  lighting_and_shadow: Neon glow
-  texture_and_material: Scanlines
-  camera_and_composition: Chrome reflection
-  atmosphere_and_mood: Nostalgic, cool
-  rendering_and_quality: Retro, aesthetic
-  key_features: Sunset gradient
+  aesthetic: >-
+    Synthwave acts as a transferable art-medium router: start from 80s retro futurism, Sunset
+    gradient and digital art workflow system built from layer control, editable edges, raster or
+    vector logic, screen-era artifacts, and production readability, then apply the medium behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Grid lines; preserve the prompt subject while routing it
+    through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
+    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Purple, Pink, Cyan; use color as workflow evidence: palette ramps, neon
+    gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital
+    paint harmonies, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Neon glow; shape light through layer modes, rim glow, raster gradients,
+    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Scanlines; surface detail should come from the named workflow: brush texture, pixel
+    cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when
+    they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Chrome reflection; compose through digital hierarchy, projection
+    rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled
+    interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Nostalgic, cool; derive mood from speed, polish, concept utility, retro-futurism,
+    broken media, toy-scale clarity, or modern production control, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Retro, aesthetic; finish with clean digital intent, readable shapes, purposeful
+    artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: 80s retro futurism; Sunset gradient; Purple, Pink, Cyan; Scanlines; Chrome reflection
   creative_brief: >-
-    Apply synthwave visual language to any input: magenta-cyan bloom, neon grid rhythm, chrome gradients,
-    scanline haze, reflective bands, and synthetic retrofuturist glow. Keep remembered-future energy without
-    requiring sunsets, roads, cars, horizons, palm trees, or retro props.
+    Apply Synthwave as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through 80s retro
+    futurism, Sunset gradient, Scanlines without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -44,12 +72,25 @@ avoidRules:
   - sunset requirement
   - road requirement
   - car requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-056.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, sunset requirement, road requirement, car
+    requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable
+    text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic
+    concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

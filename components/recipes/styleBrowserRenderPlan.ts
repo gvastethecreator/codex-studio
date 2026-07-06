@@ -1,3 +1,4 @@
+import { estimateStyleGridMountedPresetCount } from './styleGridVirtualization';
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 
 export type StyleBrowserSortOrder =
@@ -64,7 +65,19 @@ export interface CollectStylePresetPreviewSourcesInput {
   processedData: StyleBrowserProcessedData;
   renderPlan: StyleBrowserRenderPlan;
   visualStateByPresetId: ReadonlyMap<string, StylePresetPreviewSourceState>;
+  gridColumns?: number;
+  containerWidth?: number;
+  viewportHeight?: number;
   eagerSectionLimit?: number;
+}
+
+export interface MeasureStyleBrowserRenderPlanInput {
+  processedData: StyleBrowserProcessedData;
+  renderPlan: StyleBrowserRenderPlan;
+  eagerSectionLimit?: number;
+  gridColumns?: number;
+  containerWidth?: number;
+  viewportHeight?: number;
 }
 
 function parseCategoryOrder(categoryName: string): number | null {
@@ -353,18 +366,30 @@ export function measureStyleBrowserRenderPlan({
   processedData,
   renderPlan,
   eagerSectionLimit = STYLE_BROWSER_EAGER_SECTION_LIMIT,
-}: {
-  processedData: StyleBrowserProcessedData;
-  renderPlan: StyleBrowserRenderPlan;
-  eagerSectionLimit?: number;
-}): StyleBrowserRenderMeasurement {
+  gridColumns,
+  containerWidth,
+  viewportHeight,
+}: MeasureStyleBrowserRenderPlanInput): StyleBrowserRenderMeasurement {
+  const estimateMountedPresetCount = (presets: StyleRuntimePreset[]) =>
+    gridColumns && containerWidth
+      ? estimateStyleGridMountedPresetCount({
+          presetCount: presets.length,
+          gridColumns,
+          containerWidth,
+          viewportHeight,
+        })
+      : presets.length;
   const hasFavoritesSection = processedData.favorites.length > 0;
   const categoryEagerBudget = Math.max(0, eagerSectionLimit - (hasFavoritesSection ? 1 : 0));
   const categorySections = renderPlan.visibleStyleGroupEntries.map(([, presets], index) => {
     const plannedCards = presets.length;
+    const mountedCards = estimateMountedPresetCount(presets);
     const eager = index < categoryEagerBudget;
-    return { eager, plannedCards };
+    return { eager, mountedCards, plannedCards };
   });
+  const favoritesMountedCards = hasFavoritesSection
+    ? estimateMountedPresetCount(processedData.favorites)
+    : 0;
   const favoritesPlannedCards = hasFavoritesSection ? processedData.favorites.length : 0;
   const eagerCategorySections =
     (hasFavoritesSection ? 1 : 0) + categorySections.filter((section) => section.eager).length;
@@ -372,9 +397,9 @@ export function measureStyleBrowserRenderPlan({
     favoritesPlannedCards +
     categorySections.reduce((total, section) => total + section.plannedCards, 0);
   const eagerPresetCards =
-    favoritesPlannedCards +
+    favoritesMountedCards +
     categorySections.reduce(
-      (total, section) => total + (section.eager ? section.plannedCards : 0),
+      (total, section) => total + (section.eager ? section.mountedCards : 0),
       0,
     );
   const mountedCategorySections =
@@ -395,14 +420,27 @@ export function collectStylePresetPreviewSources({
   processedData,
   renderPlan,
   visualStateByPresetId,
+  gridColumns,
+  containerWidth,
+  viewportHeight,
   eagerSectionLimit = STYLE_BROWSER_EAGER_SECTION_LIMIT,
 }: CollectStylePresetPreviewSourcesInput): string[] {
   const sources = new Set<string>();
   const hasFavoritesSection = processedData.favorites.length > 0;
   const categoryEagerBudget = Math.max(0, eagerSectionLimit - (hasFavoritesSection ? 1 : 0));
 
+  const getPreloadPresets = (presets: StyleRuntimePreset[]) => {
+    if (!gridColumns || !containerWidth) return presets;
+    const mountedPresetCount = estimateStyleGridMountedPresetCount({
+      presetCount: presets.length,
+      gridColumns,
+      containerWidth,
+      viewportHeight,
+    });
+    return presets.slice(0, mountedPresetCount);
+  };
   const addPresetSources = (presets: StyleRuntimePreset[]) => {
-    for (const preset of presets) {
+    for (const preset of getPreloadPresets(presets)) {
       const source = visualStateByPresetId.get(preset.id)?.exampleImageSrc;
       if (source) sources.add(source);
     }

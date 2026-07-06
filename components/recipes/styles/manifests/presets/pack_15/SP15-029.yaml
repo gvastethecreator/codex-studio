@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP15-029
 packId: pack_15
-name: Living Bridge District
+name: Living Rib Infrastructure
 category: 4. Bio, Myco & Body Punks
 version: 1
 supportedTasks:
@@ -15,35 +15,54 @@ tags:
   - living-bridge
 visualDna:
   aesthetic: >-
-    bioarchitecture city bridge as a stylized digital-painting card built around a usable city bridge grown
-    from living ribs, root cables, repair pods, and pedestrians crossing at dusk.
+    Living Rib Infrastructure operates as a portable punk-spectrum router: combine Living Rib
+    Infrastructure identity cues through root cables; repair pods; rib arches; sap-lit seams; woven
+    rail arcs; Bioarchitecture infrastructure poster language built from living ribs with
+    bio/myco/body punk grammar with symbiosis, living infrastructure, care-tech unease, spore
+    weather, organic circuitry, and soft mutation discipline, so the preset supplies retrofit style
+    behavior rather than a required venue, mascot, prop bundle, or card composition.
   subject_treatment: >-
-    Organic circuitry, fungal branching, lab-craft silhouettes, soft biotech forms, and handmade mutation
-    logic. Core composition uses root cables, pedestrians, repair pods, rib arches, sap-lit seams.
-  color_and_tone: root brown, bone ivory, leaf green, evening blue
-  lighting_and_shadow: dusk rim color, warm pod accent blocks, soft bioluminescent seam shapes
-  texture_and_material: living bark planes, bone-like rib blocks, sap-glass color accents, stone shapes, woven railing arcs
+    Preserve prompt X's subject, action, scale, and setting while translating forms through
+    root-vein routing, mycelial branching, rib-like supports, nerve loom lines, chloroplast panels,
+    surgical care cues, and living-surface transformation; motifs can become contour, surface,
+    costume, equipment, atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through mycelium cream, chlorophyll green, nerve pink, surgical teal, graphite, damp
+    umber, spore gold, and soft white contrasts; keep dominant, support, and accent values readable,
+    avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair
+    pressure.
+  lighting_and_shadow: >-
+    Use bioluminescent underglow, clinic-soft fill, fungal halo, canopy-filtered light, wet specular
+    points, and careful tissue-safe rim; lighting should reveal the punk system, preserve the user's
+    subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.
+  texture_and_material: >-
+    Render mycelium mats, translucent membranes, living ribs, nerve fibers, wet bark, petri-glass
+    accents, spores, and organic circuit lattices; keep material scale coherent, surface marks
+    motivated, and tactile details strong enough to route style without becoming pasted grunge.
   camera_and_composition: >-
-    Clinics, transit spines, bridges, plazas, conservatories, and worktables that feel grown not installed.
-    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: majestic, civic, alive, calm
+    Compose through branching growth paths, care-procedure spacing, symbiotic halos, living scaffold
+    rhythm, and body/object integration without gore dependency as reusable framing grammar for
+    characters, creatures, objects, vehicles, environments, symbols, or full scenes without one
+    required card layout.
+  atmosphere_and_mood: >-
+    Carry mood through uncanny compassion, humid care, biological intimacy, ecological intelligence,
+    soft dread, and experimental tenderness; the tone may become adult, romantic, violent, comic,
+    sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: root cables, pedestrians, repair pods, rib arches, sap-lit seams
+    Finish with denoised biopunk illustration with controlled organic texture, readable anatomy or
+    object structure, and no gore-shock shortcut; prioritize clean denoise, bold readable shapes,
+    controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art
+    polish.
+  key_features: >-
+    root cables; repair pods; rib arches; sap-lit seams; woven rail arcs; Bioarchitecture
+    infrastructure poster language built from living ribs
   creative_brief: >-
-    Bioarchitecture as usable city fabric: bridge, people, maintenance pods, and living structure, avoiding
-    empty fantasy palace imagery, rib-cage horror, wet organic gore, or realistic environment concept art.
-    Keep the result representative rather than over-abstract; make one character in their environment the
-    anchor, with motifs as background, costume, weather, architecture, or social pressure instead of a
-    foreground prop. Favor flat graphic digital illustration, clean editorial illustration, cel-shaded poster
-    art, gouache poster aesthetics, graphic-novel card art, or stylized animation-background art over realism,
-    photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or hyper-detailed concept
-    art. Use few bold color/value zones, simplified brush planes, matte surfaces, low-to-moderate texture,
-    large shapes, clean surfaces, shallow poster depth, and finish denoised with no excessive noise or
-    ultra-fine detail.
+    Use Living Rib Infrastructure after prompt X as a transferable punk-spectrum layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while the preset supplies root cables,
+    repair pods, rib arches, sap-lit seams, woven rail arcs, Bioarchitecture infrastructure poster
+    language built from living ribs, color logic, light response, material behavior, composition
+    rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed
+    machine, repeated prop bundle, or sample-card composition.
 avoidRules:
   - photoreal
   - watermark
@@ -54,25 +73,39 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - gore shock
+  - body horror only
+  - random tentacle clutter
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-029.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
-    art, cinematic concept-art render, realistic environment concept art, deep cinematic vista, photobash
-    polish, realistic material rendering, photographic skin pores, realistic foreground portrait, realistic
-    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
-    soldier hero, guard pin-up, weapon-first pose, palace bridge, empty monumental architecture, rib-cage
-    horror, wet organic gore, photoreal bark texture, dense root spaghetti, HDR lens realism, 3D render look,
-    PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework, watermark,
-    text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia,
-    unmotivated market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject,
-    studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation,
-    bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery,
-    noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer
-    hero, foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
-    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
-    masses, muddy black fields, generic American illustration, generic Western RPG card art
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic
+    realism, AAA key art, cinematic concept-art render, realistic environment concept art, deep
+    cinematic vista, photobash polish, realistic material rendering, photographic skin pores,
+    realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field
+    photo look, realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose,
+    palace bridge, empty monumental architecture, rib-cage horror, wet organic gore, photoreal bark
+    texture, dense root spaghetti, HDR lens realism, 3D render look, PBR material simulation,
+    hyper-detailed concept art, scratchy print noise, tiny black linework, watermark, text, logo,
+    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia,
+    unmotivated commerce-system aisle, unmotivated library aisle, fantasy corridor, random camera
+    held by subject, studio wall fixation, chair fixation, curtain fixation, lamp fixation, scarf
+    fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail, over-sharpened
+    microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
+    chatter, realistic uniform portrait, uniformed officer hero, near-plane guard portrait, detailed
+    tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail,
+    cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
+    fields, generic American illustration, generic Western RPG card art, repeated-props, gore shock,
+    body horror only, random tentacle clutter, fixed punk venue, required mascot, literal
+    sample-card setup, repeated prop bundle, readable text, prompt-literal card reuse, generic
+    cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

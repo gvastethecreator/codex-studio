@@ -15,20 +15,39 @@ tags:
   - monster-manual
 visualDna:
   aesthetic: >-
-    Blacklight fantasy monster manual where creature anatomy becomes bold ink, neon organs, and weird
-    page-icon energy.
+    Blacklight fantasy monster manual where creature anatomy becomes bold ink, neon organs, and
+    weird page-icon energy.
   subject_treatment: >-
-    A symmetrical many-eyed maw monster with bulbous horns, broad teeth, and simplified readable anatomy,
-    staged like a blacklight manual icon.
+    Translate any subject into blacklight monster-manual weirdness: many-eye rhythm, maw-like
+    negative space, bulbous horn curves, readable anatomical exaggeration, and blacklight plate
+    force without requiring a fixed monster head.
   color_and_tone: Black ink base with toxic green, violet, hot pink, and pale lavender paper fields.
   lighting_and_shadow: Graphic black masses and fluorescent fills create a glowing blacklight illusion.
-  texture_and_material: Rough hatch marks, stippled membranes, controlled xerox texture, screenprint dots, and clean neon fill.
-  camera_and_composition: Tight specimen crop, centered mouth or eye focus, border frame, and little empty space.
-  atmosphere_and_mood: Weird, loud, gross-funny, occult, and tabletop-dungeon adjacent.
+  texture_and_material: >-
+    Rough hatch marks, stippled membranes, controlled xerox texture, screenprint dots, and clean
+    neon fill.
+  camera_and_composition: >-
+    Tight specimen hierarchy, centered eye or maw-like focal voids when compatible, border pressure,
+    and minimal empty space without fixed anatomy.
+  atmosphere_and_mood: >-
+    Carry the prompt through Weird, loud, gross funny, occult, and tabletop dungeon adjacent;
+    abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade
+    danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: >-
     High-impact zine illustration with clean silhouette logic, heavy denoise, and controlled print
     reproduction.
-  creative_brief: Reusable for creatures, helmets, relics, masks, or architecture that need monster-manual weirdness.
+  creative_brief: >-
+    Route any subject through blacklight monster manual weirdness: preserve the prompt while adding
+    bold maw/eye rhythm when compatible, fluorescent plate color, chunky contour, and readable
+    manual icon force without requiring a monster portrait. Apply after prompt X: prompt X supplies
+    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
+    Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold
+    ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves, mood,
+    material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed
+    cast, fixed relic, fixed monster, readable text, or sample-card composition.
+  key_features: >-
+    Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold
+    ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves
 avoidRules:
   - realistic anatomy
   - medical gore
@@ -37,10 +56,20 @@ avoidRules:
   - clean vector
   - watermark
   - text
+  - readable zine typography
+  - generic dungeon corridor
+  - muddy photocopy noise
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-016.webp
 attributes:
-  negativePrompt: realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark, text
+  negativePrompt: >-
+    realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark,
+    text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal
+    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
+    noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -13,38 +13,78 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: >-
-    Celestial Journey Melancholy Style within 11. 70s & 80s Retro Anime: a reusable Anime Classics & Prestige
-    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
-    result transferable across subjects while preserving Celestial Journey Melancholy Style's specific style
-    identity.
+    Celestial Journey Melancholy Style acts as a transferable anime-prestige router: a celestial
+    anime direction shaped by era-aware line economy and genre tone, alongside a journey anime
+    direction shaped by era-aware line economy and genre tone; fuse it with analog cel-era anime
+    craft with bold contour economy, painted backgrounds, limited-animation rhythm, and theatrical
+    genre clarity; it routes era, genre, line economy, cel or digital finish, and performance tone
+    without locking prompt content to the source title or sample image.
   subject_treatment: >-
-    Define Celestial Journey Melancholy Style through line, mass, contour, spacing, and rhythm. Keep forms
-    readable, intentional, and reusable beyond one literal scene.
+    Preserve the prompt subject, action, and context while restyling forms through contours paced by
+    celestial tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    journey tension, readable pose energy, and silhouette discipline; identity should remain
+    readable through anime contour, expression economy, pose energy, shape simplification, and
+    effect hierarchy instead of a required canon character or title scene.
   color_and_tone: >-
-    Use a Celestial Journey Melancholy Style-specific palette with clear dominant, secondary, and accent
-    roles. Keep contrast deliberate and avoid generic color wash.
+    Map color through star whites, ink blues, and cosmic violet accents, alongside dusky blues,
+    muted violets, and warm lonely accents; anchor it in warm cel paint, poster-like primaries,
+    faded film blacks, airbrushed skies, mechanical grays, and controlled neon accents; keep value
+    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
+    the requested content.
   lighting_and_shadow: >-
-    Use lighting that makes Celestial Journey Melancholy Style recognizable: purposeful key, rim, bounce,
-    shadow, and glow behavior with readable hierarchy.
+    Use distant astral glints and soft heavenly bloom, alongside a journey light logic using cel
+    rim, glow behavior, and blocked shadow; combine it with painted key light, hard cel shadows, rim
+    highlights on inked edges, practical glow, and film-era exposure falloff; shadows should read as
+    anime light design, rims should clarify form, and glow or effects should support the prompt
+    rather than replacing it.
   texture_and_material: >-
-    Use materials and textures that reinforce Celestial Journey Melancholy Style: surface response, grain,
-    patina, polish, or wear should feel intentional and style-defining.
+    Render cel paint and ink grain tuned to celestial material contrast, alongside cel paint and ink
+    grain tuned to journey material contrast; anchor surfaces in acetate cel grain, dry-brush
+    background texture, airbrush gradients, analog dust, painted metal, and hand-inked edges; cel
+    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
+    coherent across people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Celestial Journey Melancholy Style: perspective, compression, exaggeration,
-    or depth should support the style without forcing one fixed location.
+    Frame around constellation spacing and upward poetic scale, alongside journey converted into
+    reusable framing rhythm and anime timing, then extend it with bold television framing, heroic
+    diagonals, theatrical inserts, readable action lanes, and graphic silhouette staging; the style
+    should support portraits, props, machines, performances, landscapes, symbols, and full scenes
+    through reusable anime staging grammar instead of one fixed card layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Celestial Journey Melancholy Style: specific, coherent, and distinct, with
-    emotional tone carried by visual systems rather than narrative captioning.
+    Carry mood through romantic melancholy and reflective distance, alongside celestial emotional
+    pressure and genre-specific tone; braid it with romantic pulp, operatic melancholy, mechanical
+    grandeur, outlaw cool, slapstick timing, and analog adventure confidence; the preset can become
+    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
+    preserving the chosen anime lineage.
   rendering_and_quality: >-
-    Render Celestial Journey Melancholy Style with high production clarity, strong silhouette reads, clean
-    detail priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean anime finishing that keeps celestial identity readable without noisy denoise,
+    alongside clean anime finishing that keeps journey identity readable without noisy denoise;
+    enforce clean retro-anime finish with visible cel craft, restrained grain, stable linework, and
+    no modern 3D or photoreal drift; prioritize clean denoise, stable anatomy or object structure,
+    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
+    or 3D-render drift.
   key_features: >-
-    Prioritize Celestial Journey Melancholy Style's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    a celestial anime direction shaped by era-aware line economy and genre tone, alongside a journey
+    anime direction shaped by era-aware line economy and genre tone; contours paced by celestial
+    tension, readable pose energy, and silhouette discipline, alongside contours paced by journey
+    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
+    celestial material contrast, alongside cel paint and ink grain tuned to journey material
+    contrast; distant astral glints and soft heavenly bloom, alongside a journey light logic using
+    cel rim, glow behavior, and blocked shadow; constellation spacing and upward poetic scale,
+    alongside journey converted into reusable framing rhythm and anime timing
   creative_brief: >-
-    Create a style-card that translates Celestial Journey Melancholy Style into a portable visual system for
-    11. 70s & 80s Retro Anime. Preserve the preset identity through style mechanics, not a fixed scene,
-    character, prop, or story beat.
+    Apply Celestial Journey Melancholy Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
+    celestial anime direction shaped by era-aware line economy and genre tone, alongside a journey
+    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
+    celestial tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    journey tension, readable pose energy, and silhouette discipline; star whites, ink blues, and
+    cosmic violet accents, alongside dusky blues, muted violets, and warm lonely accents; distant
+    astral glints and soft heavenly bloom, alongside a journey light logic using cel rim, glow
+    behavior, and blocked shadow; cel paint and ink grain tuned to celestial material contrast,
+    alongside cel paint and ink grain tuned to journey material contrast and constellation spacing
+    and upward poetic scale, alongside journey converted into reusable framing rhythm and anime
+    timing, finish discipline, and negative controls without requiring a fixed canon cast, title
+    scene, prop bundle, location, sport, instrument, weapon, or card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -58,12 +98,24 @@ avoidRules:
   - watermark
   - text
   - signature
+  - modern 3d anime render
+  - photoreal cosplay
+  - western comic inking
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-303.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, modern 3d anime render, photoreal cosplay, western comic
+    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise, readable text
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

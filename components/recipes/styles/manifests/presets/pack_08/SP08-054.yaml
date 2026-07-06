@@ -12,28 +12,85 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Armor mesh, medieval-smithy craft, interlocked-defense beauty
-  subject_treatment: Tiny rings, butted-ring grid, riveted-flat drape, mail-sheet column, coif-like circumference
-  color_and_tone: Silver, steel-grey, polished-iron, oiled-black, bronze-ring, galvanized-sheen
-  lighting_and_shadow: Ring-reflection glint, forge-fire warmth, overcast-even steel light
-  texture_and_material: Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap
+  aesthetic: >-
+    Chainmail operates as a portable fashion-costume router: combine Armor mesh, medieval-smithy
+    craft, interlocked-defense beauty with material-forward fashion transformation with drape,
+    surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies
+    styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Tiny rings,
+    butted-ring grid, riveted-flat drape, mail-sheet column, coif-like circumference; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Ring-reflection glint, forge-fire warmth, overcast-even steel light plus material-revealing
+    light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric
+    separation as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Metal rings, riveted steel links, butted-iron rings, oiled-mail, brass-trim rings,
+    leather-backing strap plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke,
+    water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Chainmail using its key spatial cues: Mesh pattern, ring grid, coif cues, riveted links,
-    flexible mail drape.
-  atmosphere_and_mood: Protective, historic, heavy craft pride, defensive patience, anvil-song weight
-  rendering_and_quality: Detailed, heavy, forge-craft authenticity, ring-by-ring precision
-  key_features: Mesh pattern, ring grid, coif cues, riveted links, flexible mail drape
+    Compose with Compose for Chainmail using its key spatial cues: Mesh pattern, ring grid, coif
+    cues, riveted links, flexible mail drape plus drape rhythm, material coverage, silhouette
+    clarity, tactile close detail, fold direction, and transformation edge control as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Chainmail while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Armor mesh, medieval-smithy craft, interlocked-defense beauty; Tiny rings, butted-ring grid,
+    riveted-flat drape, mail-sheet column, coif-like circumference; Metal rings, riveted steel
+    links, butted-iron rings, oiled-mail, brass-trim rings, leather-backing strap; Ring-reflection
+    glint, forge-fire warmth, overcast-even steel light; Compose for Chainmail using its key spatial
+    cues: Mesh pattern, ring grid, coif cues, riveted links, flexible mail drape
   creative_brief: >-
-    Overlay the input with chainmail structure: riveted steel rings, butted grids, coif-like cues, oiled metal
-    and ring-by-ring glints. Keep medieval defense weight without requiring a castle, fortress corridor,
-    warrior, crusader silhouette or battle scene.
+    Use Chainmail after prompt X as a transferable fashion/costume layer: prompt X supplies subject,
+    motion, setting, tone, and intensity, while the preset supplies Armor mesh, medieval-smithy
+    craft, interlocked-defense beauty, Tiny rings, butted-ring grid, riveted-flat drape, mail-sheet
+    column, coif-like circumference, Metal rings, riveted steel links, butted-iron rings,
+    oiled-mail, brass-trim rings, leather-backing strap, Ring-reflection glint, forge-fire warmth,
+    overcast-even steel light, Compose for Chainmail using its key spatial cues: Mesh pattern, ring
+    grid, coif cues, riveted links, flexible mail drape plus weave, pile, grain, shine,
+    translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity,
+    palette behavior, light response, material treatment, silhouette grammar, and finish discipline
+    without requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - plain fabric-only surface
   - soft textile dominance
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-054.webp
 attributes:
-  negativePrompt: plain fabric-only surface, soft textile dominance
+  negativePrompt: >-
+    plain fabric-only surface, soft textile dominance, generic fabric texture, muddy surface noise,
+    wrong material physics, fixed outfit, required body type, literal card scene, generic fashion
+    catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

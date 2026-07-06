@@ -13,31 +13,61 @@ tags:
   - texture-and-materiality
   - weathering-and-decay
 visualDna:
-  aesthetic: Charred timber
-  subject_treatment: Deep cracks (alligator skin)
-  color_and_tone: Deep Black
-  lighting_and_shadow: Matte/Satin
-  texture_and_material: Charcoal
-  camera_and_composition: Cracked blocks
-  atmosphere_and_mood: Dark, fire
-  rendering_and_quality: Preserved, texture
-  key_features: Rectangular cracks
+  aesthetic: >-
+    Burnt Wood (Shou Sugi Ban) turns material failure into the main visual language: start from
+    Charred timber, Charcoal, and Cracked blocks, then turn damage history, contamination,
+    corrosion, staining, abrasion, and material breakdown into portable surface behavior rather than
+    a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Deep cracks (alligator skin): preserve identity and pose
+    while letting forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Deep Black as the material palette, with controlled value separation, local color variation,
+    and hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Matte/Satin define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Burnt Wood (Shou Sugi Ban) without hiding
+    the prompt subject.
+  texture_and_material: >-
+    Render Charcoal through layer loss, residue buildup, chipped edges, stains, cracks, and uneven
+    surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension
+    coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Cracked blocks as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Dark, fire by using neglect, time, moisture, heat, friction, and environmental
+    pressure; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Preserved, texture material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Charred timber; Deep cracks (alligator skin); Charcoal; Matte/Satin; Cracked blocks
   creative_brief: >-
-    Compose the dark armor of Shou Sugi Ban charred timber where fire has transformed the surface into a
-    cracked landscape of alligator-skin carbon, rectangular fissures mapping the grain into blocks of
-    preserved black. The char should feel deep enough to fall into, a matte darkness that protects the wood
-    beneath by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as
-    durable beauty. Use Burnt Wood as portable surface/render behavior over any input: map its texture, light
-    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material naturally
-    appears.
+    Route any subject through Burnt Wood (Shou Sugi Ban) as a transferable weathering-and-decay
+    visual system while preserving the prompt's subject, action, and setting. Compose the dark armor
+    of Shou Sugi Ban charred timber where fire has transformed the surface into a cracked landscape
+    of alligator-skin carbon, rectangular fissures mapping the grain into blocks of preserved black.
+    The char should feel deep enough to fall into, a matte darkness that protects the wood beneath
+    by becoming its own shield. Capture the paradox of fire as preservative, destruction worn as
+    durable beauty. Use Burnt Wood as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene
+    where the material naturally appears.
 avoidRules:
   - ash
   - grey
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-035.webp
 attributes:
-  negativePrompt: ash, grey
+  negativePrompt: ash, grey, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

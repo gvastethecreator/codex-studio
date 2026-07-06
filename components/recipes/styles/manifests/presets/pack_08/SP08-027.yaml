@@ -12,33 +12,91 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Skate-zine style, deck-grip authenticity, casual session culture
-  subject_treatment: Baggy relaxed-denim silhouette, oversized tee, hoodie-stack and beanie-slouch
-  color_and_tone: Grey, Black, Graphic Tee, heather, off-white, washed-black, grip-tape grey
-  lighting_and_shadow: Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera lock.
-  texture_and_material: Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy
+  aesthetic: >-
+    Skater Style operates as a portable fashion-costume router: combine Skate-zine style, deck-grip
+    authenticity, casual session culture with subcultural dress-code logic with identity signals,
+    music or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling
+    behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Baggy relaxed-denim
+    silhouette, oversized tee, hoodie-stack and beanie-slouch; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Hard pavement bounce, golden-hour edge light and raw zine contrast without fisheye camera
+    lock plus club, daylight, editorial, neon, chrome, or DIY light cues that reveal texture and
+    attitude without forcing a venue as the styling light contract, revealing cut, drape, surface
+    response, trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Heavyweight cotton, canvas, suede, grip-tape grit, worn-in denim, corduroy plus denim,
+    leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and worn
+    textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental
+    edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Skater Style using its key spatial cues: Ollie-worn suede texture, grip-tape grit, five-panel
-    cap geometry, oversized tee mass and scuffed sole edges.
-  atmosphere_and_mood: Chill, active, session-flow ease, board-pop rhythm and raw casualness
-  rendering_and_quality: Casual, active, skate-zine rawness and street-credible wear without brand or logo dependence
+    Compose with Compose for Skater Style using its key spatial cues: Ollie-worn suede texture,
+    grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges plus
+    attitude-led silhouette, accessory grouping, dress-code readability, body-line rhythm, and
+    reusable styling emphasis as reusable fashion framing grammar, allowing portraits, objects,
+    creatures, environments, action, and abstract prompts to inherit styling without one required
+    pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Skater Style while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
   key_features: >-
-    Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole
-    edges
+    Skate-zine style, deck-grip authenticity, casual session culture; Baggy relaxed-denim
+    silhouette, oversized tee, hoodie-stack and beanie-slouch; Heavyweight cotton, canvas, suede,
+    grip-tape grit, worn-in denim, corduroy; Hard pavement bounce, golden-hour edge light and raw
+    zine contrast without fisheye camera lock; Compose for Skater Style using its key spatial cues:
+    Ollie-worn suede texture, grip-tape grit, five-panel cap geometry, oversized tee mass and
+    scuffed sole edges
   creative_brief: >-
-    Convert any input into skater casual: oversized tee mass, hoodie stack, baggy denim, suede scuffs,
-    grip-tape grit and five-panel cap cues. Keep board-pop rhythm and zine rawness without requiring branded
-    shoes, logo tee, fisheye lens, skatepark, parking lot, fixed session scene or a skater body.
+    Use Skater Style after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Skate-zine style,
+    deck-grip authenticity, casual session culture, Baggy relaxed-denim silhouette, oversized tee,
+    hoodie-stack and beanie-slouch, Heavyweight cotton, canvas, suede, grip-tape grit, worn-in
+    denim, corduroy, Hard pavement bounce, golden-hour edge light and raw zine contrast without
+    fisheye camera lock, Compose for Skater Style using its key spatial cues: Ollie-worn suede
+    texture, grip-tape grit, five-panel cap geometry, oversized tee mass and scuffed sole edges plus
+    signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear,
+    and stance-driven silhouette, palette behavior, light response, material treatment, silhouette
+    grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop
+    bundle, or card composition.
 avoidRules:
   - tight clothes
   - logos
   - fisheye lens
   - skatepark lock
   - parking lot lock
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-027.webp
 attributes:
-  negativePrompt: tight clothes, logos, fisheye lens, skatepark lock, parking lot lock
+  negativePrompt: >-
+    tight clothes, logos, fisheye lens, skatepark lock, parking lot lock, costume-party parody,
+    random trend mix, brand-logo collage, fixed outfit, required body type, literal card scene,
+    generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

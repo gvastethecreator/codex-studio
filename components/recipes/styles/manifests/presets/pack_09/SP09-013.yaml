@@ -13,30 +13,59 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Plumage
-  subject_treatment: Barbs and rachis
-  color_and_tone: Iridescent Blue/Green
-  lighting_and_shadow: Sheen
-  texture_and_material: Soft but structured
-  camera_and_composition: Layered
-  atmosphere_and_mood: Light, natural
-  rendering_and_quality: Bird wing, delicate
-  key_features: Overlapping
+  aesthetic: >-
+    Bird Feathers translates natural material behavior into form: start from Plumage, Soft but
+    structured, and Layered, then turn natural formation, growth, erosion, and geological or
+    biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Barbs and rachis: preserve identity and pose while letting
+    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Iridescent Blue/Green as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Sheen define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Bird Feathers without hiding the prompt subject.
+  texture_and_material: >-
+    Render Soft but structured through organic variation, non-repeating edge wear, local pores,
+    growth marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber,
+    pores, or surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Layered as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Light, natural by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Bird wing, delicate material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Plumage; Barbs and rachis; Soft but structured; Sheen; Layered
   creative_brief: >-
-    Capture the delicate engineering of plumage where individual barbs interlock into surfaces that catch and
-    split light into spectral blues and greens, each feather a miracle of aerodynamics rendered as ornament.
-    The overlapping structure should feel weightless yet precise, a cascade of color built on invisible order.
-    The image must float between fragility and resilience. Use Bird Feathers as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
-    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
-    object, or scene where the material naturally appears.
+    Route any subject through Bird Feathers as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Capture the delicate engineering of
+    plumage where individual barbs interlock into surfaces that catch and split light into spectral
+    blues and greens, each feather a miracle of aerodynamics rendered as ornament. The overlapping
+    structure should feel weightless yet precise, a cascade of color built on invisible order. The
+    image must float between fragility and resilience. Use Bird Feathers as portable surface/render
+    behavior over any input: map its texture, light response, edge wear, color chemistry, and
+    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
+    wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - fur
   - messy
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-013.webp
 attributes:
-  negativePrompt: fur, messy
+  negativePrompt: fur, messy, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

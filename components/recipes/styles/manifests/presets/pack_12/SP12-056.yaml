@@ -13,31 +13,52 @@ tags:
   - neon-urban-and-night-ops
 visualDna:
   aesthetic: >-
-    Carbon Megacity Rooftop Chase within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault
-    visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the
-    result transferable across subjects while preserving Carbon Megacity Rooftop Chase's specific style
-    identity.
+    A transferable game-art direction built from tokenized palette, material, encounter, and mood
+    cues: route prompt X through high-speed pursuit rhythm; urban night-action readability, vertical
+    route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather
+    than a required scene, mission, character, or card image.
   subject_treatment: >-
-    Treat any subject through Carbon Megacity Rooftop Chase's visual grammar: readable silhouette, role cues,
-    controlled detail density, and no dependency on one fixed scene or body pose.
+    Preserve the user's subject while translating silhouette, role, scale, equipment, route
+    pressure, and encounter readability with this grammar: express covert movement, chase pressure,
+    street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban
+    scene.
   color_and_tone: >-
-    Use a controlled palette that supports Carbon Megacity Rooftop Chase: clear tonal hierarchy, intentional
-    contrast, and category-appropriate color accents without muddy blends.
+    Grade the image with black glass, wet concrete, saturated signage, emergency red, cyan edge
+    light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability,
+    thumbnail clarity, and subject recognition.
   lighting_and_shadow: >-
-    Shape light and shadow for Carbon Megacity Rooftop Chase: legible depth, purposeful highlights, readable
-    focal zones, and atmosphere that supports the style without hiding the subject.
+    Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic
+    glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards,
+    factions, or focal threats without hiding prompt content.
   texture_and_material: >-
-    Render surfaces with Carbon Megacity Rooftop Chase's material logic: tactile detail, coherent finish, and
-    texture choices that reinforce the style rather than generic decoration.
+    Build surfaces from carbon fiber, black glass, and rooftop composite panels; rain-slick
+    pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban
+    grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same
+    production-world logic.
   camera_and_composition: >-
-    Compose with Carbon Megacity Rooftop Chase's staging logic: strong focal hierarchy, stable readable
-    framing, and spatial rhythm that can adapt to different subjects.
+    Use reusable game-composition grammar from urban night-action readability, vertical route
+    layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective
+    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
+    portraits, objects, creatures, environments, and action scenes.
   atmosphere_and_mood: >-
-    Build Carbon Megacity Rooftop Chase's mood through environment, color, light, and texture. Keep it
-    distinct from neighboring presets and avoid generic pretty-card staging.
+    Keep the mood sleek high-altitude danger; vertical urban velocity; height-risk chase energy;
+    dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult,
+    harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a
+    new storyline.
   rendering_and_quality: >-
-    Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong
-    thumbnail readability, and consistent production quality.
+    Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and
+    no menu or HUD dependence; preserve clean focal hierarchy, believable material response,
+    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+  key_features: >-
+    Carbon, Megacity, Rooftop, Chase; high-speed pursuit rhythm; black glass, wet concrete,
+    saturated signage, emergency red, cyan edge light, and toxic green accents; practical neon,
+    police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; carbon fiber,
+    black glass, and rooftop composite panels; stacked high-rise depth and rooftop escape lanes;
+    sleek high-altitude danger
+  creative_brief: >-
+    Apply Carbon Megacity Rooftop Chase as a reusable video-game art-direction router over prompt X:
+    preserve the user's subject and intent, then translate palette, lighting, material logic, route
+    readability, encounter mood, and production finish through this preset.
 avoidRules:
   - watermark
   - text
@@ -53,12 +74,20 @@ avoidRules:
   - menu-ui
   - visible-hud
   - readable-interface
+  - generic cyberpunk alley
+  - readable signage text
+  - fixed scene
+  - generic game screenshot
+  - readable UI
+  - official card framing
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-056.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render,
-    promotional-art, menu-ui, visible-hud, readable-interface
+    watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet,
+    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk
+    alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card
+    framing
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault

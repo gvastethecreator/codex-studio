@@ -13,37 +13,80 @@ tags:
   - 2000s-classics
 visualDna:
   aesthetic: >-
-    Vertical Speed Rebellion Style within 2. 2000s Classics: a reusable Anime Classics & Prestige visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Vertical Speed Rebellion Style's specific style identity.
+    Vertical Speed Rebellion Style acts as a transferable anime-prestige router: a vertical anime
+    direction shaped by era-aware line economy and genre tone, alongside a speed anime direction
+    shaped by era-aware line economy and genre tone; fuse it with 2000s anime classic grammar with
+    cel-digital hybrid polish, genre contrast, sharper compositing, and stylized emotional
+    escalation; it routes era, genre, line economy, cel or digital finish, and performance tone
+    without locking prompt content to the source title or sample image.
   subject_treatment: >-
-    Define Vertical Speed Rebellion Style through line, mass, contour, spacing, and rhythm. Keep forms
-    readable, intentional, and reusable beyond one literal scene.
+    Preserve the prompt subject, action, and context while restyling forms through long upward pose
+    rhythm and readable body extension, alongside speed-line deformation and motion-readable
+    silhouette; identity should remain readable through anime contour, expression economy, pose
+    energy, shape simplification, and effect hierarchy instead of a required canon character or
+    title scene.
   color_and_tone: >-
-    Use a Vertical Speed Rebellion Style-specific palette with clear dominant, secondary, and accent roles.
-    Keep contrast deliberate and avoid generic color wash.
+    Map color through a vertical accent system held inside disciplined cel values, alongside a speed
+    accent system held inside disciplined cel values; anchor it in clean digital flats, gothic reds,
+    cool clinical blues, warm romance pastels, pop accents, and deliberate contrast keys; keep value
+    separation clean, cel flats intentional, accents purposeful, and palette behavior attached to
+    the requested content.
   lighting_and_shadow: >-
-    Use lighting that makes Vertical Speed Rebellion Style recognizable: purposeful key, rim, bounce, shadow,
-    and glow behavior with readable hierarchy.
+    Use a vertical light logic using cel rim, glow behavior, and blocked shadow, alongside a speed
+    light logic using cel rim, glow behavior, and blocked shadow; combine it with digital cel rim,
+    bloom accents, dramatic night cuts, clinical overheads, magical glows, and clean compositing
+    separation; shadows should read as anime light design, rims should clarify form, and glow or
+    effects should support the prompt rather than replacing it.
   texture_and_material: >-
-    Use materials and textures that reinforce Vertical Speed Rebellion Style: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render cel paint and ink grain tuned to vertical material contrast, alongside cel paint and ink
+    grain tuned to speed material contrast; anchor surfaces in digital ink edges, subtle gradient
+    fills, polished cloth and hair shapes, screen-like glow, and controlled texture overlays; cel
+    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
+    coherent across people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Vertical Speed Rebellion Style: perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
+    Frame around vertical lift, stacked silhouettes, and upward pressure, alongside fast diagonals,
+    trailing smears, and compressed pursuit lanes and upward diagonals, opposing masses, and defiant
+    spacing, then extend it with opening-sequence energy, split-second action framing, romcom
+    reaction spacing, gothic symmetry, and readable effect geometry; the style should support
+    portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable
+    anime staging grammar instead of one fixed card layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Vertical Speed Rebellion Style: specific, coherent, and distinct, with
-    emotional tone carried by visual systems rather than narrative captioning.
+    Carry mood through defiance, risk, and group resolve, alongside vertical emotional pressure and
+    genre-specific tone; braid it with genre fluency: deadpan comedy, gothic danger, romance
+    friction, rebellion, paranoia, elegance, and pop unreality; the preset can become funny,
+    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
+    the chosen anime lineage.
   rendering_and_quality: >-
-    Render Vertical Speed Rebellion Style with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean anime finishing that keeps vertical identity readable without noisy denoise,
+    alongside clean anime finishing that keeps speed identity readable without noisy denoise;
+    enforce clean 2000s cel-digital finish with strong design readability, controlled effects, and
+    no muddy low-resolution artifacting; prioritize clean denoise, stable anatomy or object
+    structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no
+    photoreal or 3D-render drift.
   key_features: >-
-    Prioritize Vertical Speed Rebellion Style's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    a vertical anime direction shaped by era-aware line economy and genre tone, alongside a speed
+    anime direction shaped by era-aware line economy and genre tone; long upward pose rhythm and
+    readable body extension, alongside speed-line deformation and motion-readable silhouette; cel
+    paint and ink grain tuned to vertical material contrast, alongside cel paint and ink grain tuned
+    to speed material contrast; a vertical light logic using cel rim, glow behavior, and blocked
+    shadow, alongside a speed light logic using cel rim, glow behavior, and blocked shadow; vertical
+    lift, stacked silhouettes, and upward pressure, alongside fast diagonals, trailing smears, and
+    compressed pursuit lanes and upward diagonals, opposing masses, and defiant spacing
   creative_brief: >-
-    Create a style-card that translates Vertical Speed Rebellion Style into a portable visual system for 2.
-    2000s Classics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
-    or story beat.
+    Apply Vertical Speed Rebellion Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
+    vertical anime direction shaped by era-aware line economy and genre tone, alongside a speed
+    anime direction shaped by era-aware line economy and genre tone, alongside long upward pose
+    rhythm and readable body extension, alongside speed-line deformation and motion-readable
+    silhouette; a vertical accent system held inside disciplined cel values, alongside a speed
+    accent system held inside disciplined cel values; a vertical light logic using cel rim, glow
+    behavior, and blocked shadow, alongside a speed light logic using cel rim, glow behavior, and
+    blocked shadow; cel paint and ink grain tuned to vertical material contrast, alongside cel paint
+    and ink grain tuned to speed material contrast and vertical lift, stacked silhouettes, and
+    upward pressure, alongside fast diagonals, trailing smears, and compressed pursuit lanes and
+    upward diagonals, opposing masses, and defiant spacing, finish discipline, and negative controls
+    without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument,
+    weapon, or card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -57,12 +100,24 @@ avoidRules:
   - watermark
   - text
   - signature
+  - generic isekai gloss
+  - plastic digital anime
+  - overbusy effects clutter
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-157.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy
+    effects clutter, fixed canon character, literal title scene, required anime screenshot, generic
+    anime filter, prompt-literal card, muddy cel noise, readable text
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

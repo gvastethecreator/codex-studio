@@ -13,43 +13,85 @@ tags:
   - anime
 visualDna:
   aesthetic: >-
-    Gentle pastoral-fantasy anime language with kindness-forward adventure, spirit-like charm, soft journey
-    rhythm, and quiet magic
+    Forest Spirit Courier operates as a portable anime-lifestyle router: combine Forest Spirit
+    Courier identity cues through Courier like iconography; spirit companion silhouette cues; path
+    to nature depth rhythm; and letter delivery texture anchors; Forest Spirit Courier anime style
+    cues; Gentle pastoral fantasy anime language with kindness forward adventure with core anime
+    character and adventure grammar with cel contour hierarchy, expressive acting, readable
+    silhouette, genre clarity, and clean TV to key visual polish, so the preset supplies anime style
+    behavior after prompt X rather than a required scene, character, franchise image, or card
+    composition.
   subject_treatment: >-
-    Organic natural contours, mobile rounded silhouettes, satchel-and-scroll-like readability cues, and curved
-    path lines guiding progression
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or
+    surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Forest greens, sky-soft blues, cream neutrals, bark browns, and light moss highlights with subdued
-    saturation
+    Map color through clear cel values, saturated accents, stable skin or material midtones, sky or
+    neon support color, and disciplined complementary contrast; keep cel values readable, accent
+    roles intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Morning canopy-filtered light, soft ground bounce, mild particulate godrays, and warm-cool balance that
-    preserves tranquil tone
+    Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and
+    clean value separation; lighting should clarify expression, silhouette, material, and emotional
+    rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Leaf-layer variation, hand-stitched leather texture, waxed paper-like surfaces, mossy bark grain, and soft
-    mist diffusion
-  camera_and_composition: Path-led layered depth with gentle atmospheric perspective and companion-like silhouette legibility
-  atmosphere_and_mood: Kind, curious, hopeful, and quietly magical
+    Render flat cel fills, painted distant plane softness, limited grain, clean ink edges,
+    controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
+  camera_and_composition: >-
+    Compose through silhouette-priority framing, moderate dynamic lensing, readable action or
+    emotion lanes, and subject-first depth without required genre staging as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift,
+    or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe,
+    comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime
+    lineage.
   rendering_and_quality: >-
-    Charming high-clarity anime rendering with calm exploratory pacing, reliable subject-prop hierarchy, and
-    cozy fantasy polish
+    Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines,
+    denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Courier-like iconography, spirit-companion silhouette cues, path-to-nature depth rhythm, and
-    letter-delivery texture anchors
+    Courier like iconography; spirit companion silhouette cues; path to nature depth rhythm; and
+    letter delivery texture anchors; Forest Spirit Courier anime style cues; Gentle pastoral fantasy
+    anime language with kindness forward adventure
   creative_brief: >-
-    Use Forest Spirit Courier as style anchor for gentle fantasy delivery: pastoral palette harmony,
-    journey-guided composition, and spirit-companion warmth should transfer without requiring forest, courier,
-    satchel, letter, companion creature, or delivery scene.
+    Use Forest Spirit Courier after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Courier like iconography, spirit companion silhouette cues, path to nature depth rhythm, and
+    letter delivery texture anchors, Forest Spirit Courier anime style cues, Gentle pastoral fantasy
+    anime language with kindness forward adventure, color logic, lighting, material finish,
+    composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed
+    venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - photoreal
-  - dark-gore
-  - sci-fi-neon
+  - dark gore
+  - sci fi neon
   - watermark
   - text
   - logo
+  - generic anime filter
+  - canon cast copy
+  - source frame look composition
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-019.webp
 attributes:
-  negativePrompt: photoreal, dark-gore, sci-fi-neon, watermark, text, logo
+  negativePrompt: >-
+    photoreal, dark gore, sci fi neon, watermark, text, logo, generic anime filter, canon cast copy,
+    source frame look composition, canon character copy, title scene copy, literal sample card
+    setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay,
+    3D render look, copied franchise costume, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

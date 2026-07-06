@@ -7,37 +7,56 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-031',
     name: 'Surrealism (Dali)',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'normal, logical',
+    negativePrompt:
+      'normal, logical, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Melting clocks style',
-      subject_treatment: 'Realistic rendering',
-      color_and_tone: 'Warm uncanny neutrals',
-      lighting_and_shadow: 'Long shadows',
-      texture_and_material: 'Smooth oil',
-      camera_and_composition: 'Melting, elongated',
-      atmosphere_and_mood: 'Dreamlike, weird',
-      rendering_and_quality: 'Fine art, bizarre',
-      key_features: 'Impossible liquefaction',
+      aesthetic:
+        'Surrealism (Dali) becomes a transferable surreal symbolic transformation system: start from Melting clocks style, Impossible liquefaction, and Melting, elongated, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Realistic rendering to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Warm uncanny neutrals; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Long shadows drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Smooth oil as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Melting, elongated as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Dreamlike, weird as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Fine art, bizarre: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Melting clocks style; Realistic rendering; Warm uncanny neutrals; Long shadows; Smooth oil; Melting, elongated; Dreamlike, weird; Fine art, bizarre; Impossible liquefaction',
       creative_brief:
-        'Apply Dali-like surreal logic to the input with precise oil-rendered forms, long-shadow stillness, warm uncanny neutrals, liquefied edges, elongated proportions, and rational detail serving irrational transformation. If clocks, branches, horizons, or architecture already exist, bend them; otherwise melt and stretch the subject without forcing a desert setting.',
+        'Route any subject through Surrealism (Dali) as a transferable surreal or dream-logic visual system: preserve prompt intent while converting scale, causality, symbolism, edge behavior, mood, and spatial contradiction through this preset. Apply Dali-like surreal logic to the input with precise oil-rendered forms, long-shadow stillness, warm uncanny neutrals, liquefied edges, elongated proportions, and rational detail serving irrational transformation. If clocks, branches, horizons, or architecture already exist, bend them; otherwise melt and stretch the subject without forcing a desert setting.',
     },
   },
   {
     id: 'SP10-032',
     name: 'Liminal Space',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'people, life',
+    negativePrompt:
+      'people, life, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Liminal absence field',
-      subject_treatment: 'Perspective',
-      color_and_tone: 'Beige, fluorescent',
-      lighting_and_shadow: 'Flat artificial',
-      texture_and_material: 'Carpet, tile, synthetic surfaces',
+      aesthetic:
+        'Liminal Space becomes a transferable surreal symbolic transformation system: start from Liminal absence field and Transitional emptiness, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Perspective to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Beige, fluorescent; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat artificial drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Carpet, tile, synthetic surfaces as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Liminal Space using its key spatial cues: Transitional emptiness.',
-      atmosphere_and_mood: 'Eerie, lonely',
-      rendering_and_quality: 'Unsettling, familiar',
-      key_features: 'Transitional emptiness',
+        'Compose around Transitional emptiness as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Eerie, lonely as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Unsettling, familiar: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Liminal absence field; Perspective; Beige, fluorescent; Flat artificial; Carpet, tile, synthetic surfaces; Transitional emptiness; Eerie, lonely; Unsettling, familiar; Transitional emptiness',
       creative_brief:
         'Apply liminal-space unease as atmosphere over the input with flat fluorescent light, beige synthetic surfaces, over-clean emptiness, transitional perspective, and a sense of purpose removed. If hallway, pool, mall, office, or room exists, empty it; otherwise make subject and background feel stranded in functional space without requiring architecture.',
     },
@@ -46,17 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-033',
     name: 'Psychedelic Art',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'dull, grey',
+    negativePrompt:
+      'dull, grey, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'LSD trip visual',
-      subject_treatment: 'Flowing, melting',
-      color_and_tone: 'Neon, rainbow',
-      lighting_and_shadow: 'Glowing',
-      texture_and_material: 'Fractal',
-      camera_and_composition: 'Melting geometry',
-      atmosphere_and_mood: 'Intense, hallucination',
-      rendering_and_quality: 'Trippy, 60s',
-      key_features: 'Pulse motifs',
+      aesthetic:
+        'Psychedelic Art becomes a transferable surreal symbolic transformation system: start from LSD trip visual, Pulse motifs, and Melting geometry, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Flowing, melting to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Neon, rainbow; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Glowing drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Fractal as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Melting geometry as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Intense, hallucination as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Trippy, 60s: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'LSD trip visual; Flowing, melting; Neon, rainbow; Glowing; Fractal; Melting geometry; Intense, hallucination; Trippy, 60s; Pulse motifs',
       creative_brief:
         'Apply psychedelic pulse to the input: neon fractals, vibrating complementary colors, recursive floral geometry, liquid contour drift, and sensory overload should transform any subject without requiring faces, posters, or drug imagery.',
     },
@@ -65,17 +94,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-034',
     name: 'Dreamcore',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'realism, dark',
+    negativePrompt:
+      'realism, dark, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Nostalgic nightmare',
-      subject_treatment: 'Soft',
-      color_and_tone: 'Pastel, bloom',
-      lighting_and_shadow: 'Overexposed',
-      texture_and_material: 'Low res photo',
-      camera_and_composition: 'Familiarity drift',
-      atmosphere_and_mood: 'Nostalgic, wrong',
-      rendering_and_quality: 'Internet aesthetic',
-      key_features: 'Pastel wrongness',
+      aesthetic:
+        'Dreamcore becomes a transferable surreal symbolic transformation system: start from Nostalgic nightmare, Pastel wrongness, and Familiarity drift, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Soft to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Pastel, bloom; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Overexposed drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Low res photo as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Familiarity drift as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Nostalgic, wrong as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Internet aesthetic: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Nostalgic nightmare; Soft; Pastel, bloom; Overexposed; Low res photo; Familiarity drift; Nostalgic, wrong; Internet aesthetic; Pastel wrongness',
       creative_brief:
         'Apply dreamcore as nostalgic wrongness over the input with overexposed pastel bloom, low-res-photo softness, familiar forms slightly misremembered, cheerful daylight turning uneasy, and impossible symbolic intrusions. If house, yard, toy, sky, or childhood cue exists, bend it; otherwise make the subject feel like a corrupted memory without requiring a domestic setting.',
     },
@@ -84,55 +123,85 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-035',
     name: 'Magical Realism',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'fantasy, cartoon',
+    negativePrompt:
+      'fantasy, cartoon, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Grounded impossible realism',
-      subject_treatment: 'Realistic',
-      color_and_tone: 'Natural',
-      lighting_and_shadow: 'Subtle glow',
-      texture_and_material: 'Real',
-      camera_and_composition: 'One impossible element',
-      atmosphere_and_mood: 'Wonder, grounded',
-      rendering_and_quality: 'Literary, subtle',
-      key_features: 'One quiet impossibility',
+      aesthetic:
+        'Magical Realism becomes a transferable surreal symbolic transformation system: start from Grounded impossible realism, One quiet impossibility, and One impossible element, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Realistic to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Natural; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Subtle glow drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Real as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around One impossible element as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Wonder, grounded as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Literary, subtle: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Grounded impossible realism; Realistic; Natural; Subtle glow; Real; One impossible element; Wonder, grounded; Literary, subtle; One quiet impossibility',
       creative_brief:
-        'Apply magical realism as restrained contradiction over the input with mostly natural rendering, one impossible detail treated as ordinary, subtle glow, grounded texture, and calm acceptance. If mundane props or interiors exist, let one element disobey physics; otherwise add a quiet impossibility to the subject without turning it into overt fantasy or cartoon.',
+        'Route any subject through Magical Realism as a transferable surreal or dream-logic visual system: preserve prompt intent while converting scale, causality, symbolism, edge behavior, mood, and spatial contradiction through this preset. Apply magical realism as restrained contradiction over the input with mostly natural rendering, one impossible detail treated as ordinary, subtle glow, grounded texture, and calm acceptance. If mundane props or interiors exist, let one element disobey physics; otherwise add a quiet impossibility to the subject without turning it into overt fantasy or cartoon.',
     },
   },
   {
     id: 'SP10-036',
     name: 'Double Exposure',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'single image',
+    negativePrompt:
+      'single image, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Two images blended',
-      subject_treatment: 'Silhouette',
-      color_and_tone: 'Mixed',
-      lighting_and_shadow: 'Screen blend',
-      texture_and_material: 'Layered',
-      camera_and_composition: 'Ghosting',
-      atmosphere_and_mood: 'Psychological',
-      rendering_and_quality: 'True Detective intro',
-      key_features: 'Silhouette container',
+      aesthetic:
+        'Double Exposure becomes a transferable surreal symbolic transformation system: start from Two images blended, Silhouette container, and Ghosting, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Silhouette to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Mixed; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Screen blend drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Layered as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Ghosting as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Psychological as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as True Detective intro: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Two images blended; Silhouette; Mixed; Screen blend; Layered; Ghosting; Psychological; True Detective intro; Silhouette container',
       creative_brief:
-        'Apply double-exposure blending over the input with two image systems occupying one frame, silhouette-like containment, screen-blend layering, ghosted overlap, and psychological continuity between inside and outside. If faces, figures, forests, cities, or landscapes exist, fuse them; otherwise use subject contours as containers for a second visual field.',
+        'Route any subject through Double Exposure as a transferable surreal or dream-logic visual system: preserve prompt intent while converting scale, causality, symbolism, edge behavior, mood, and spatial contradiction through this preset. Apply double-exposure blending over the input with two image systems occupying one frame, silhouette-like containment, screen-blend layering, ghosted overlap, and psychological continuity between inside and outside. If faces, figures, forests, cities, or landscapes exist, fuse them; otherwise use subject contours as containers for a second visual field.',
     },
   },
   {
     id: 'SP10-037',
     name: 'Escher Style',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'color, normal physics',
+    negativePrompt:
+      'color, normal physics, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Impossible geometry',
-      subject_treatment: 'Woodcut lines',
-      color_and_tone: 'Black and White',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Hatching',
-      camera_and_composition: 'Infinite loop',
-      atmosphere_and_mood: 'Intellectual, confusing',
-      rendering_and_quality: 'Mathematical, puzzle',
-      key_features: 'Tessellation',
+      aesthetic:
+        'Escher Style becomes a transferable surreal symbolic transformation system: start from Impossible geometry, Tessellation, and Infinite loop, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Woodcut lines to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Black and White; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Hatching as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Infinite loop as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Intellectual, confusing as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Mathematical, puzzle: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Impossible geometry; Woodcut lines; Black and White; Flat; Hatching; Infinite loop; Intellectual, confusing; Mathematical, puzzle; Tessellation',
       creative_brief:
         'Apply Escher-like impossible logic to the input: recursive geometry, reversible figure-ground, paradoxical depth, and locally plausible edges should make any subject structurally impossible without requiring stairs.',
     },
@@ -141,17 +210,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-038',
     name: 'Vaporwave',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'modern, nature',
+    negativePrompt:
+      'modern, nature, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: '80s computer aesthetic',
-      subject_treatment: 'Grid',
-      color_and_tone: 'Pink, Cyan',
-      lighting_and_shadow: 'Neon',
-      texture_and_material: 'Marble bust, palm tree',
-      camera_and_composition: 'Glitch',
-      atmosphere_and_mood: 'Chill, nostalgic',
-      rendering_and_quality: 'Aesthetic, retro',
-      key_features: 'Windows 95 UI',
+      aesthetic:
+        'Vaporwave becomes a transferable surreal symbolic transformation system: start from 80s computer aesthetic, Windows 95 UI, and Glitch, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Grid to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Pink, Cyan; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Neon drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Marble bust, palm tree as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Glitch as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Chill, nostalgic as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Aesthetic, retro: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        '80s computer aesthetic; Grid; Pink, Cyan; Neon; Marble bust, palm tree; Glitch; Chill, nostalgic; Aesthetic, retro; Windows 95 UI',
       creative_brief:
         'Apply vaporwave nostalgia to the input: chrome gradients, pastel magenta-cyan haze, faux-classical fragments, sunset grids, and slowed consumer-future melancholy should stylize any subject without requiring a mall, bust, or palm backdrop.',
     },
@@ -160,17 +239,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-039',
     name: 'Biomechanical (Giger)',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'clean, cute',
+    negativePrompt:
+      'clean, cute, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Alien style',
-      subject_treatment: 'Ribs, tubes',
-      color_and_tone: 'Monochrome, dark',
-      lighting_and_shadow: 'Rim light',
-      texture_and_material: 'Slimy, metallic',
-      camera_and_composition: 'Flesh/Metal fusion',
-      atmosphere_and_mood: 'Terrifying, sexual',
-      rendering_and_quality: 'Horror, intricate',
-      key_features: 'Ribbed pattern',
+      aesthetic:
+        'Biomechanical (Giger) becomes a transferable surreal symbolic transformation system: start from Alien style, Ribbed pattern, and Flesh/Metal fusion, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Ribs, tubes to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Monochrome, dark; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Rim light drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Slimy, metallic as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Flesh/Metal fusion as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Terrifying, sexual as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Horror, intricate: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Alien style; Ribs, tubes; Monochrome, dark; Rim light; Slimy, metallic; Flesh/Metal fusion; Terrifying, sexual; Horror, intricate; Ribbed pattern',
       creative_brief:
         'Apply biomechanical fusion to the input: bone-like struts, cable tendons, ribbed chassis forms, slick dark surfaces, and organic-machine seams should make subjects feel engineered from anatomy without requiring a humanoid body.',
     },
@@ -179,17 +268,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-040',
     name: 'Collage Surrealism',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'seamless',
+    negativePrompt:
+      'seamless, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Vintage magazine cutouts',
-      subject_treatment: 'Scissor edges',
-      color_and_tone: 'Faded print',
-      lighting_and_shadow: 'Mismatched',
-      texture_and_material: 'Paper',
-      camera_and_composition: 'Scale mismatch',
-      atmosphere_and_mood: 'Absurd, funny',
-      rendering_and_quality: 'Dada, retro',
-      key_features: 'Cutout look',
+      aesthetic:
+        'Collage Surrealism becomes a transferable surreal symbolic transformation system: start from Vintage magazine cutouts, Cutout look, and Scale mismatch, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Scissor edges to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Faded print; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Mismatched drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Paper as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Scale mismatch as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Absurd, funny as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Dada, retro: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Vintage magazine cutouts; Scissor edges; Faded print; Mismatched; Paper; Scale mismatch; Absurd, funny; Dada, retro; Cutout look',
       creative_brief:
         'Apply collage surrealism as cut-paper recombination over the input with faded magazine stock, scissor edges, mismatched lighting, abrupt scale shifts, and absurd fragments assembled without seamless blending. If people, animals, products, or props exist, recombine them; otherwise fracture the subject into mass-culture cutouts without requiring a specific hybrid gag.',
     },
@@ -198,17 +297,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-041',
     name: 'Metaphysical Art',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'busy, detailed',
+    negativePrompt:
+      'busy, detailed, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Metaphysical stillness',
-      subject_treatment: 'Long shadows',
-      color_and_tone: 'Yellow, Green, Dark',
-      lighting_and_shadow: 'Afternoon sun',
-      texture_and_material: 'Plaster, stone',
-      camera_and_composition: 'Mannequins',
-      atmosphere_and_mood: 'Silent, philosophical',
-      rendering_and_quality: 'De Chirico, silent',
-      key_features: 'Suspended time',
+      aesthetic:
+        'Metaphysical Art becomes a transferable surreal symbolic transformation system: start from Metaphysical stillness, Suspended time, and Mannequins, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Long shadows to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Yellow, Green, Dark; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Afternoon sun drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Plaster, stone as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Mannequins as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Silent, philosophical as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as De Chirico, silent: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Metaphysical stillness; Long shadows; Yellow, Green, Dark; Afternoon sun; Plaster, stone; Mannequins; Silent, philosophical; De Chirico, silent; Suspended time',
       creative_brief:
         'Apply metaphysical-art stillness over the input with long afternoon shadows, yellow-green-dark tonal tension, plaster or stone quietness, mannequin-like simplification when figures appear, and geometry that suspends time. If plaza, arch, or architecture exists, use it; otherwise impose classical silence and philosophical emptiness without requiring a city square.',
     },
@@ -217,56 +326,85 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-042',
     name: 'Lowbrow (Pop Surrealism)',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'serious, fine art',
+    negativePrompt:
+      'serious, fine art, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Cartoonish fine art',
-      subject_treatment: 'Smooth painting',
-      color_and_tone: 'Vibrant, candy',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Acrylic',
-      camera_and_composition: 'Big eyes',
-      atmosphere_and_mood: 'Playful, creepy',
-      rendering_and_quality: 'Juxtapoz, weird',
-      key_features: 'Cute but dark',
+      aesthetic:
+        'Lowbrow (Pop Surrealism) becomes a transferable surreal symbolic transformation system: start from Cartoonish fine art, Cute but dark, and Big eyes, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Smooth painting to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Vibrant, candy; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Soft drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Acrylic as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Big eyes as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Playful, creepy as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Juxtapoz, weird: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Cartoonish fine art; Smooth painting; Vibrant, candy; Soft; Acrylic; Big eyes; Playful, creepy; Juxtapoz, weird; Cute but dark',
       creative_brief:
-        'Apply lowbrow pop-surrealism over the input with candy-vibrant acrylic smoothness, cartoon exaggeration, cute-dark tension, big-eye motifs only when characters or icons exist, and polished weirdness that sits between toy shelf and gallery wall. Keep the subject flexible; make it playful, creepy, and self-aware without forcing a mascot.',
+        'Route any subject through Lowbrow (Pop Surrealism) as a transferable surreal or dream-logic visual system: preserve prompt intent while converting scale, causality, symbolism, edge behavior, mood, and spatial contradiction through this preset. Apply lowbrow pop-surrealism over the input with candy-vibrant acrylic smoothness, cartoon exaggeration, cute-dark tension, big-eye motifs only when characters or icons exist, and polished weirdness that sits between toy shelf and gallery wall. Keep the subject flexible; make it playful, creepy, and self-aware without forcing a mascot.',
     },
   },
   {
     id: 'SP10-043',
     name: 'Dark Fantasy',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'happy, bright',
+    negativePrompt:
+      'happy, bright, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Souls game aesthetic',
-      subject_treatment: 'Detailed, scratchy',
-      color_and_tone: 'Desaturated, Black',
-      lighting_and_shadow: 'Gloom',
-      texture_and_material: 'Rot, rust',
-      camera_and_composition: 'Skeleton',
-      atmosphere_and_mood: 'Hopeless, grand',
-      rendering_and_quality: 'Beksinski, nightmare',
-      key_features: 'Fog',
+      aesthetic:
+        'Dark Fantasy becomes a transferable surreal symbolic transformation system: start from Souls game aesthetic, Fog, and Skeleton, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Detailed, scratchy to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Desaturated, Black; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Gloom drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Rot, rust as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Skeleton as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Hopeless, grand as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Beksinski, nightmare: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Souls game aesthetic; Detailed, scratchy; Desaturated, Black; Gloom; Rot, rust; Skeleton; Hopeless, grand; Beksinski, nightmare; Fog',
       creative_brief:
-        'Apply dark-fantasy nightmare grandeur over the input with desaturated black weight, rot and rust texture, scratchy detail, fog, skeletal structural cues, and mythic despair at monumental scale. If ruins, cathedrals, armor, creatures, or landscapes exist, deepen them; otherwise make the subject feel ancient, corroded, and hopeless without forcing architecture.',
+        'Route any subject through Dark Fantasy as a transferable surreal-nightmare visual system: desaturated black weight, rot and rust texture, scratchy detail, foglike depth, skeletal structure, and mythic despair should make the input feel ancient, corroded, and hopeless without requiring a specific locale, character role, architecture, or story premise.',
     },
   },
   {
     id: 'SP10-044',
     name: 'Solarpunk',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'industrial, dirty',
+    negativePrompt:
+      'industrial, dirty, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Nature and tech harmony',
-      subject_treatment: 'Art Nouveau curves',
-      color_and_tone: 'Green, Gold, White',
-      lighting_and_shadow: 'Sunlight',
-      texture_and_material: 'Leaves, glass',
+      aesthetic:
+        'Solarpunk becomes a transferable surreal symbolic transformation system: start from Nature and tech harmony and Plants everywhere, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Art Nouveau curves to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Green, Gold, White; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Sunlight drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Leaves, glass as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Solarpunk using its key spatial cues: Plants everywhere.',
-      atmosphere_and_mood: 'Optimistic, bright',
-      rendering_and_quality: 'Utopian, hopeful',
-      key_features: 'Plants everywhere',
+        'Compose around Plants everywhere as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Optimistic, bright as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Utopian, hopeful: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Nature and tech harmony; Art Nouveau curves; Green, Gold, White; Sunlight; Leaves, glass; Plants everywhere; Optimistic, bright; Utopian, hopeful; Plants everywhere',
       creative_brief:
         'Apply solarpunk symbiosis to the input: chlorophyll greens, warm sunlight, visible renewable tech, botanical circuitry, and optimistic repair detail should make any subject feel ecologically integrated without forcing buildings.',
     },
@@ -275,17 +413,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-045',
     name: 'Weirdcore',
     category: '4. Surrealism & Dream',
-    negativePrompt: 'high quality, professional',
+    negativePrompt:
+      'high quality, professional, literal fantasy scene lock, generic dream blur, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Amateur photo edit',
-      subject_treatment: 'MS Paint text',
-      color_and_tone: 'Flash photo',
-      lighting_and_shadow: 'Harsh flash',
-      texture_and_material: 'Compression',
-      camera_and_composition: 'Blacked out eyes',
-      atmosphere_and_mood: 'Confusing, unsafe',
-      rendering_and_quality: 'Uncanny, internet',
-      key_features: 'Text overlay',
+      aesthetic:
+        'Weirdcore becomes a transferable surreal symbolic transformation system: start from Amateur photo edit, Text overlay, and Blacked out eyes, then route prompt content through impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using MS Paint text to bend, displace, fuse, haunt, miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Flash photo; use color as emotional unreliability, nostalgic drift, uncanny contrast, or symbolic temperature, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Harsh flash drive the light response: shape light through impossible shadows, memory haze, stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Compression as the tactile or mark-making basis; surfaces should support the illusion with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Blacked out eyes as reusable spatial grammar: favor symbolic focal points, scale mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Confusing, unsafe as the emotional register; derive mood from wonder, dread, absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Uncanny, internet: finish with deliberate weirdness, controlled realism, and no generic fantasy scene lock, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Amateur photo edit; MS Paint text; Flash photo; Harsh flash; Compression; Blacked out eyes; Confusing, unsafe; Uncanny, internet; Text overlay',
       creative_brief:
         'Apply weirdcore wrongness to the input: uncanny low-skill edits, mismatched scaling, harsh cutouts, off-color overlays, and broken composition should make the subject feel emotionally unsafe without requiring text or rooms.',
     },

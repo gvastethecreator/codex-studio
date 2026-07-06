@@ -13,23 +13,51 @@ tags:
   - mixed-media
 visualDna:
   aesthetic: >-
-    Pinned planning-board style with layered intent, thread logic, soft cork texture, and provisional
-    composition
-  subject_treatment: Pins, string
-  color_and_tone: Varied
-  lighting_and_shadow: Room light
-  texture_and_material: Cork, paper
-  camera_and_composition: 'Compose for Pinned Planning Board using its key spatial cues: Pinned items.'
-  atmosphere_and_mood: Hopeful, messy
-  rendering_and_quality: Personal, planning
-  key_features: Pinned items
+    Pinned Planning Board acts as a transferable art-medium router: start from Pinned planning board
+    style with layered intent, thread logic, soft cork texture, and provisional composition, Pinned
+    items and mixed-media assembly system built from layering, adhesion, surface collision,
+    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Pins, string; preserve the prompt subject while rebuilding
+    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
+    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Varied; treat color as material combination: paper aging, varnish warmth, toner
+    black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled oil flow,
+    with deliberate value grouping, accent control, and medium-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through interior volume light; make light reveal relief, varnish gloss, paper lift,
+    tape shine, thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Cork, paper; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
+    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Pinned Planning Board using its key spatial cues: Pinned
+    items; compose through layer order, overlap, pin logic, cut rhythm, swatch relationships,
+    tactile seams, and graphic collision without requiring a literal craft table, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Hopeful, messy; derive mood from DIY urgency, memory, repair, evidence, punk
+    collision, tactile intimacy, decorative excess, or experimental material play, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Personal, planning; finish with coherent material stacking, readable subject
+    transformation, and no single flat texture pasted over the whole image, clean denoised surfaces
+    where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Pinned planning board style with layered intent, thread logic, soft cork texture, and
+    provisional composition; Pinned items; Varied; Cork, paper
   creative_brief: >-
-    Cork-like texture, pins, tape, and thread create a provisional planning surface where relationships matter
-    more than individual fragments. Lines connect zones, clusters imply priority, and empty gaps become part
-    of the system. Keep the style about visible planning grammar, not wishes, clippings, conspiracy walls, or
-    readable goals. Apply this mixed-media process over any input: preserve material assembly, edge evidence,
-    surface treatment, layering logic, and handmade artifacts while avoiding required clippings, readable
-    text, boards, fire, studio setup, or literal craft-table scene.
+    Apply Pinned Planning Board as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Pinned planning board style with layered intent, thread logic, soft cork texture, and
+    provisional composition, Pinned items, Cork, paper without requiring the card image's original
+    subject.
 avoidRules:
   - photo
   - realistic
@@ -49,12 +77,25 @@ avoidRules:
   - conspiracy board
   - readable goals
   - clipping requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-070.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, conspiracy board, readable goals, clipping requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, conspiracy board, readable goals, clipping
+    requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable
+    text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default,
+    clean vector render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

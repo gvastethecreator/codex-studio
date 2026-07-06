@@ -12,19 +12,48 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: 2D geometric triangulation
-  subject_treatment: Triangles
-  color_and_tone: Gradients per triangle
-  lighting_and_shadow: Flat
-  texture_and_material: "Surface treatment follows Polygon Art's material cues: Triangular mesh."
-  camera_and_composition: Geometric
-  atmosphere_and_mood: Clean, sharp
-  rendering_and_quality: Vector, modern
-  key_features: Triangular mesh
+  aesthetic: >-
+    Polygon Art acts as a transferable art-medium router: start from 2D geometric triangulation,
+    Triangular mesh and digital art workflow system built from layer control, editable edges, raster
+    or vector logic, screen-era artifacts, and production readability, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Triangles; preserve the prompt subject while routing it
+    through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
+    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Gradients per triangle; use color as workflow evidence: palette ramps, neon
+    gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital
+    paint harmonies, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat; shape light through layer modes, rim glow, raster gradients,
+    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Surface treatment follows Polygon Art's material cues: Triangular mesh; surface detail
+    should come from the named workflow: brush texture, pixel cells, glyph density, vector fills,
+    polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Geometric; compose through digital hierarchy, projection rules,
+    asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled
+    interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Clean, sharp; derive mood from speed, polish, concept utility, retro-futurism,
+    broken media, toy-scale clarity, or modern production control, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Vector, modern; finish with clean digital intent, readable shapes, purposeful
+    artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: 2D geometric triangulation; Triangular mesh; Gradients per triangle
   creative_brief: >-
-    Apply polygon-art tessellation to any input: triangular facets, angular tonal decisions, low-resolution
-    form memory, and flat geometric patchwork. Keep geometry as the art system without requiring portraits,
-    animals, landscapes, or stock low-poly subjects.
+    Apply Polygon Art as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through 2D
+    geometric triangulation, Triangular mesh without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -42,12 +71,24 @@ avoidRules:
   - frame
   - border
   - face requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-058.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, face requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, face requirement, wrong medium, generic AI
+    gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI
+    smear, muddy overpaint, uncontrolled artifact noise, generic concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

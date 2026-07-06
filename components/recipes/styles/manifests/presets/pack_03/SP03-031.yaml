@@ -12,28 +12,73 @@ tags:
   - 3d-and-cgi-rendering
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Soft bounced light
-  subject_treatment: Color bleeding
-  color_and_tone: Natural gradients, color-bleed realism
-  lighting_and_shadow: Ambient occlusion, bounce-card lighting
-  texture_and_material: Soft, light-responsive
+  aesthetic: >-
+    Global Illumination acts as a transferable CGI-style router: start from Soft bounced light, Soft
+    shadows, indirect fill and lighting and atmosphere system built from transport passes,
+    volumetric density, bounce logic, occlusion, rim separation, and miniature scale cues, then
+    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Color bleeding; preserve the prompt subject while letting
+    light, fog, occlusion, HDRI, or atmosphere define silhouette and spatial depth, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Natural gradients, color bleed realism; treat color as light temperature,
+    atmospheric scattering, indirect bounce, fog color, HDRI influence, and exposure-managed
+    contrast, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Ambient occlusion, bounce card lighting; make the named light behavior
+    visible through beams, bounced fill, contact shadows, edge halos, volume density, or three-point
+    separation, so value structure supports the renderer and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Soft, light responsive; surface response should reveal air particles, shadow contact,
+    glossy reflections, haze thickness, scale cues, and render-pass clarity, keeping material scale
+    coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lighting-study camera for Global Illumination: stable three-quarter framing, visible depth layers, clear
-    shadow planes, and a vertical style-card crop.
-  atmosphere_and_mood: Calm, realistic, naturally lit
-  rendering_and_quality: Realistic, architectural, path-trace beauty
-  key_features: Soft shadows, indirect fill
+    Structure the image through Lighting study camera for Global Illumination: stable three quarter
+    framing, visible depth layers, clear shadow planes, and an optional vertical composition
+    discipline; compose around the light event through depth layers, contact points, miniature
+    isolation, rim edges, or atmospheric shafts without forcing a fixed locale, with scale, spacing,
+    edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Calm, realistic, naturally lit; derive mood from realism, wonder, product polish,
+    sacred glow, softness, technical pass clarity, or spatial immersion, letting the renderer alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Realistic, architectural, path trace beauty; finish with controlled exposure, clean
+    shadow gradients, believable atmosphere, and no random glow or crushed darkness, clean denoised
+    surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.
+  key_features: >-
+    Soft bounced light; Soft shadows, indirect fill; Natural gradients, color bleed realism; Soft,
+    light responsive; Lighting study camera for Global Illumination: stable three quarter framing,
+    visible depth layers, clear shadow planes, and an optional vertical composition discipline
   creative_brief: >-
-    Emphasize global-illumination behavior across the input: color bleed, diffuse bounce, ambient fill, soft
-    contact shadows and believable photon ricochet. Preserve natural expensive light without requiring a room,
-    wall set or interior environment.
+    Apply Global Illumination as a CGI/render preset over prompt X: preserve the user's requested
+    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
+    final render craft through Soft bounced light, Soft shadows, indirect fill, Soft, light
+    responsive without requiring the card image's original subject.
 avoidRules:
   - direct flash
   - harsh shadows
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - flat lighting
+  - random glow overlay
+  - crushed black
+  - no shadow logic
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-031.webp
 attributes:
-  negativePrompt: direct flash, harsh shadows
+  negativePrompt: >-
+    direct flash, harsh shadows, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled
+    texture chatter, watermark, readable text, signature, flat lighting, random glow overlay,
+    crushed black, no shadow logic
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

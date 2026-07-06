@@ -11,6 +11,7 @@ import {
 import { isDefaultWorkspace } from '../../lib/workspaceLifecycle';
 import type { Workspace } from '../../types';
 import Tooltip from '../Tooltip';
+import { GsapDropdown } from '../ui/GsapDropdown';
 
 interface WorkspaceStripWorkspace extends Workspace {
   lastImage?: string;
@@ -218,7 +219,7 @@ export function WorkspaceStrip({
           workspace.firstImageCreatedAt ?? workspace.createdAt,
         );
         const tooltipContent = `${workspaceName} - ${formattedImageCount} images - updated ${updatedLabel}`;
-        const workspaceButtonClassName = `studio-hit-target h-8 min-w-[8.5rem] max-w-[11rem] rounded-lg border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
+        const workspaceButtonClassName = `studio-hit-target min-h-10 min-w-[8.5rem] max-w-[11rem] rounded-lg border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
           isActive
             ? 'border-accent-500/55 bg-accent-500/12 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.12)]'
             : 'border-white/10 bg-white/[0.04] text-zinc-400 opacity-75 hover:border-white/20 hover:bg-white/8 hover:text-zinc-100 hover:opacity-100'
@@ -279,6 +280,8 @@ export function WorkspaceStrip({
                       src={workspace.lastImage}
                       className="size-full object-cover"
                       alt=""
+                      width={24}
+                      height={24}
                       loading="lazy"
                       decoding="async"
                     />
@@ -331,7 +334,7 @@ export function WorkspaceStrip({
                     clientY: event.clientY,
                   });
                 }}
-                className={`studio-hit-target flex size-8 cursor-pointer items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity] ${
+                className={`studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity] ${
                   contextMenuWorkspaceId === workspace.id
                     ? 'border-accent-400/40 bg-accent-500/15 text-accent-100'
                     : 'border-white/10 bg-white/[0.035] text-zinc-500 opacity-75 hover:border-white/20 hover:bg-white/8 hover:text-zinc-200 hover:opacity-100'
@@ -341,7 +344,16 @@ export function WorkspaceStrip({
               </button>
             </Tooltip>
             {editingWorkspaceId === workspace.id && (
-              <div className="absolute left-1/2 top-full z-50 mt-1.5 flex -translate-x-1/2 gap-2 rounded-lg border border-white/10 bg-zinc-900 p-1.5 shadow-xl animate-in fade-in zoom-in duration-200">
+              <GsapDropdown
+                open={editingWorkspaceId === workspace.id}
+                onOpenChange={(open) => {
+                  if (!open) setWorkspaceUi((prev) => ({ ...prev, editingWorkspaceId: null }));
+                }}
+                placement="bottom-right"
+                role="dialog"
+                aria-label="Rename workspace"
+                className="absolute left-1/2 top-full z-50 mt-1.5 flex -translate-x-1/2 gap-2 rounded-lg p-1.5"
+              >
                 <input
                   ref={(el) => el?.focus()}
                   value={editingName}
@@ -356,13 +368,20 @@ export function WorkspaceStrip({
                   className="w-36 rounded-lg border border-white/10 bg-black/50 px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500"
                   placeholder="Workspace name"
                 />
-              </div>
+              </GsapDropdown>
             )}
             {contextMenuWorkspaceId === workspace.id && (
-              <div
+              <GsapDropdown
+                open={contextMenuWorkspaceId === workspace.id}
+                onOpenChange={(open) => {
+                  if (!open) {
+                    setWorkspaceUi((prev) => ({ ...prev, contextMenuWorkspaceId: null }));
+                    setContextMenuPosition(null);
+                  }
+                }}
                 role="menu"
                 aria-label={`Workspace actions for ${workspaceName}`}
-                className="fixed z-50 max-h-[min(80vh,420px)] w-80 max-w-[calc(100vw-1rem)] overflow-y-auto rounded-lg border border-white/10 bg-zinc-950/95 p-2 shadow-2xl backdrop-blur-md animate-in fade-in zoom-in duration-150"
+                className="fixed z-50 max-h-[min(80vh,420px)] w-80 max-w-[calc(100vw-1rem)] overflow-y-auto rounded-lg p-2"
                 style={{
                   left: contextMenuPosition?.left ?? 8,
                   top: contextMenuPosition?.top ?? 44,
@@ -445,7 +464,7 @@ export function WorkspaceStrip({
                   <Trash2 size={13} />
                   <span>{canDeleteWorkspace ? 'Delete workspace' : 'Default locked'}</span>
                 </button>
-              </div>
+              </GsapDropdown>
             )}
           </div>
         );
@@ -459,7 +478,7 @@ export function WorkspaceStrip({
             onAddWorkspace();
           }}
           aria-label="Create workspace"
-          className="studio-hit-target flex size-8 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200"
+          className="studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200"
         >
           <Plus size={16} />
         </button>

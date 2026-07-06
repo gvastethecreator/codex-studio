@@ -12,26 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Plasticine stop-motion aesthetic (Aardman-inspired tactile charm)
-  subject_treatment: Sculpted volume with minimal drawn contour reliance
-  color_and_tone: Matte clay chroma set with earthy and playful saturation balance
-  lighting_and_shadow: Controlled studio key-fill to maintain frame-consistent form read
-  texture_and_material: Fingerprint impressions, sculpt-tool seams, soft clay compression
-  camera_and_composition: Chunky silhouettes and compressed proportion stylization
-  atmosphere_and_mood: Whimsical, handcrafted, comedic warmth
-  rendering_and_quality: Hand-built stop-motion look with physical model believability
-  key_features: Tactile surface dents, clay seam lines, armature-informed posing hints
+  aesthetic: >-
+    Claymation Style acts as a transferable illustration router: start from Plasticine stop-motion
+    aesthetic (Aardman-inspired tactile charm), Tactile surface dents, clay seam lines,
+    armature-informed posing hints and storybook and friendly-illustration system built from
+    approachable shapes, handmade media, simplified edges, tactile materials, and high-readability
+    charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Sculpted volume with minimal drawn contour reliance;
+    preserve the requested subject while softening, simplifying, miniaturizing, paper-building,
+    mark-making, or diagramming it according to the named medium, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Matte clay chroma set with earthy and playful saturation balance; use color
+    through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly
+    contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Controlled studio key-fill to maintain frame-consistent form read; shape
+    light through soft diffuse value, paper layering, flat educational contrast, handmade shadows,
+    or medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Fingerprint impressions, sculpt-tool seams, soft clay compression; surface detail should
+    show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker
+    laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Chunky silhouettes and compressed proportion stylization; compose
+    with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational
+    layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Whimsical, handcrafted, comedic warmth, mood carried by Claymation Style craft,
+    material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Hand-built stop-motion look with physical model believability; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Plasticine stop-motion aesthetic (Aardman-inspired tactile charm); Tactile surface dents, clay
+    seam lines, armature-informed posing hints; Matte clay chroma set with earthy and playful
+    saturation balance; Fingerprint impressions, sculpt-tool seams, soft clay compression; Chunky
+    silhouettes and compressed proportion stylization
   creative_brief: >-
-    Apply plasticine stop-motion tactility to any input: fingerprints, seam traces, chunky silhouettes, matte
-    clay chroma, and armature-informed posing should preserve physical model charm without requiring comedy
-    characters, sets, props, studios, or hard-coded pose beats.
+    Apply Claymation Style as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Plasticine stop-motion aesthetic (Aardman-inspired tactile charm), Tactile surface dents, clay
+    seam lines, armature-informed posing hints, Fingerprint impressions, sculpt-tool seams, soft
+    clay compression without requiring the card image's original subject.
 avoidRules:
   - 2d
   - drawn
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-024.webp
 attributes:
-  negativePrompt: 2d, drawn
+  negativePrompt: >-
+    2d, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

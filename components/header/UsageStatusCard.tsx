@@ -56,8 +56,10 @@ export function UsageStatusCard({ usage, onOpenDashboard }: UsageStatusCardProps
                   </span>
                   <span className="h-1 overflow-hidden rounded-full bg-zinc-700/70">
                     <span
-                      className={`block h-full rounded-full transition-[width] duration-200 ${getUsageBarClass(limit.availablePercent)}`}
-                      style={{ width: `${Math.max(0, Math.min(limit.availablePercent, 100))}%` }}
+                      className={`block h-full w-full origin-left rounded-full transition-transform duration-200 ${getUsageBarClass(limit.availablePercent)}`}
+                      style={{
+                        transform: `scaleX(${Math.max(0, Math.min(limit.availablePercent, 100)) / 100})`,
+                      }}
                     />
                   </span>
                 </div>

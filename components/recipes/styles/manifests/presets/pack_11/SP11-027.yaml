@@ -12,29 +12,77 @@ tags:
   - miscellaneous-and-fun
   - toys-and-crafts
 visualDna:
-  aesthetic: Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory
-  subject_treatment: Grout lines, mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry
-  color_and_tone: Stone colors, Gold glass, marble-spectrum, smalti-blue, terracotta-earth, mother-of-pearl, porphyry-purple
-  lighting_and_shadow: Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker
+  aesthetic: >-
+    Mosaic Tile operates as a portable source-router layer: combine Roman floor art, ancient-tessera
+    craft, bathhouse splendor, Byzantine-mosaic glory with hand-built object logic with toy scale,
+    assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior
+    rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms simplify,
+    assemble, soften, hinge, stitch, fold, carve, or snap together through Grout lines, mortar-grid
+    contours, tessellated-edge stepping, labyrinthine-path geometry; identity stays readable through
+    construction grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through material-native color blocks, toy-safe saturation, handmade variance, and
+    clean separation between parts; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker plus
+    small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific
+    highlights as the light-response contract, with readable hierarchy, controlled contact detail,
+    and no lighting choice that erases the user's requested content.
   texture_and_material: >-
-    Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface, irregular
-    hand-cut edge
-  camera_and_composition: Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction
-  atmosphere_and_mood: Historic, grand, ruined-palace echo, footstep-of-empire, sun-warmed antiquity
-  rendering_and_quality: Ancient, durable, fragmented, imperial-craft, thousand-year permanence, tessera-by-tessera devotion
-  key_features: Grout, tessera-grid alignment, irregular-tile spacing, andamento flow-lines, gold-leaf-smalti highlight
+    Render Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface,
+    irregular hand-cut edge plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread,
+    sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or
+    signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic
+    abstraction plus object-scale staging, modular silhouette rhythm, clear construction reads, and
+    tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects,
+    scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and
+    physical charm; the emotional tone should feel specific to Mosaic Tile while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean craft detail, readable construction, deliberate imperfections, and no
+    accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory; Grout lines,
+    mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry; Ceramic tiles,
+    cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface, irregular hand-cut
+    edge; Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker; Pixelated
+    by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction
   creative_brief: >-
-    Keep this preset anchored in tessera-mosaic grammar: irregular tile cadence, grout rhythm, andamento
-    flow-lines, and faceted reflective highlights should define identity beyond any specific historic setting.
-    Apply Mosaic Tile as a portable style system over any input: preserve its construction grammar, material
-    cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop,
-    fixed specimen, classroom sample, product shot, or scene template.
+    Use Mosaic Tile after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Roman floor art, ancient-tessera craft, bathhouse
+    splendor, Byzantine-mosaic glory, Grout lines, mortar-grid contours, tessellated-edge stepping,
+    labyrinthine-path geometry, Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera,
+    hammered-marble surface, irregular hand-cut edge, Uneven reflection, angled-light sparkle,
+    tessera-facet glint, oil-lamp flicker, Pixelated by tiles, low-resolution stone, grid-cell
+    color-blocking, pixel-mosaic abstraction plus clearly expressed joins, simplified proportions,
+    craft tolerances, modular parts, and maker-process evidence, palette behavior, light response,
+    material treatment, and finish discipline without requiring one specimen, prop bundle, product
+    still, or card composition.
 avoidRules:
   - smooth painting
+  - melted craft
+  - generic toy render
+  - featureless plastic
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-027.webp
 attributes:
-  negativePrompt: smooth painting
+  negativePrompt: >-
+    smooth painting, melted craft, generic toy render, featureless plastic, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

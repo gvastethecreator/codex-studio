@@ -15,37 +15,54 @@ tags:
   - rail-noir
 visualDna:
   aesthetic: >-
-    dieselpunk rail signal poster built around civilian rail logistics with locomotive silhouettes, semaphore
-    gantries, small simplified switch crews, coal-fog shape blocks, and red signal geometry.
+    Coal Fog Railworks operates as a portable punk-spectrum router: combine Coal Fog Railworks
+    identity cues through headlamp cones; rail silhouettes; semaphore lights; heavy engines; worker
+    clusters; Dieselpunk rail-signal poster language built from locomotive mass with
+    industrial-retrofuture punk grammar with visible labor systems, mechanical silhouettes, public
+    engineering, soot-softened graphic planes, and utility-first rebellion, so the preset supplies
+    retrofit style behavior rather than a required venue, mascot, prop bundle, or card composition.
   subject_treatment: >-
-    Broad mechanical silhouettes, chunky ink contours, labor-poster spacing, and tactile industrial rhythm.
-    Core composition uses headlamp circles, rail silhouettes, semaphore blocks, heavy engine masses, small
-    worker marks, and open charcoal planes.
-  color_and_tone: coal black, signal red, sodium amber, gunmetal gray
-  lighting_and_shadow: posterized red signal blocks, amber fog planes, locomotive headlight circles, open charcoal midtones
+    Preserve prompt X's subject, action, scale, and setting while translating forms through
+    gear-scale massing, valve rhythm, rivet restraint, belt or rail geometry, worker-poster contour,
+    and machine-adjacent costume or surface logic; motifs can become contour, surface, costume,
+    equipment, atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through smoky brass, tarnished copper, oil umber, rail black, aged ivory, pressure
+    red, and warm cream value blocks; keep dominant, support, and accent values readable, avoid
+    muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair
+    pressure.
+  lighting_and_shadow: >-
+    Use amber machine glow, steam-diffused shadow, furnace rim, gauge-color pinpoints, and
+    posterized industrial bounce; lighting should reveal the punk system, preserve the user's
+    subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.
   texture_and_material: >-
-    broad steel masses, flat coal-dust washes, canvas coat silhouettes, cracked enamel color blocks, sparse
-    rail reflections
+    Render brass plates, cast iron, leather belts, enamel gauges, soot washes, heavy paper grain,
+    glass dots, and controlled worn edges; keep material scale coherent, surface marks motivated,
+    and tactile details strong enough to route style without becoming pasted grunge.
   camera_and_composition: >-
-    Readable workshops, rail platforms, docks, streets, or civic machine halls without becoming a corridor.
-    Keep depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: tense logistics, soot, late-night industrial pressure
+    Compose through large readable machinery rhythm, labor-poster spacing, civic scale cues,
+    diagonal belt paths, and open negative space around the requested subject as reusable framing
+    grammar for characters, creatures, objects, vehicles, environments, symbols, or full scenes
+    without one required card layout.
+  atmosphere_and_mood: >-
+    Carry mood through defiant craft, collective utility, late-shift pressure, practical optimism,
+    machine reverence, and civic invention; the tone may become adult, romantic, violent, comic,
+    sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: headlamp cones, rail silhouettes, semaphore lights, heavy engines, worker clusters
+    Finish with screenprint-to-gouache industrial illustration with denoised soot, clean dark-gray
+    shadows, broad shapes, and no rivet-noise overload; prioritize clean denoise, bold readable
+    shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic
+    concept-art polish.
+  key_features: >-
+    headlamp cones; rail silhouettes; semaphore lights; heavy engines; worker clusters; Dieselpunk
+    rail-signal poster language built from locomotive mass
   creative_brief: >-
-    Push dieselpunk through civilian transport signage and logistics: big engine silhouettes, semaphore signal
-    logic, switch crews as small simplified working figures, soot planes, and rail geometry. No foreground
-    station officer, no uniformed guard hero, no close portrait, no lantern-pinup, no military faction mood,
-    no realistic noir protagonist. Keep the result representative rather than over-abstract; make one
-    character in their environment the anchor, with motifs as background, costume, weather, architecture, or
-    social pressure instead of a foreground prop. Favor screenprint poster, risograph poster, cel-shaded
-    graphic-novel card art, flat-to-painterly digital illustration, or gouache poster aesthetics over realism,
-    cinematic key art, or hyper-detailed concept art. Use few bold color/value zones, moderate texture, large
-    shapes, clean surfaces, and finish denoised with no excessive noise or ultra-fine detail.
+    Use Coal Fog Railworks after prompt X as a transferable punk-spectrum layer: prompt X supplies
+    subject, action, setting, tone, and intensity, while the preset supplies headlamp cones, rail
+    silhouettes, semaphore lights, heavy engines, worker clusters, Dieselpunk rail-signal poster
+    language built from locomotive mass, color logic, light response, material behavior, composition
+    rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed
+    machine, repeated prop bundle, or sample-card composition.
 avoidRules:
   - photoreal
   - watermark
@@ -56,24 +73,37 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - Victorian interior-system lock
+  - dense machinery wallpaper
+  - tiny rivets everywhere
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-002.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores, realistic
-    foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look, generic
-    soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render look, PBR material simulation,
-    hyper-detailed concept art, skull emblem, faction insignia, political flag, handheld lantern hero,
-    military staging, station officer portrait, rail guard portrait, close-up noir protagonist, foreground
-    uniformed worker portrait, realistic military coat, realistic trenchcoat hero, watermark, text, logo,
-    generic style, over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated
-    market aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
-    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird
-    fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
-    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero,
-    foreground guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
-    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure black
-    masses, muddy black fields, generic American illustration, generic Western RPG card art
+    photoreal, hyperreal, realistic render, cinematic realism, AAA key art, photographic skin pores,
+    realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field
+    photo look, generic soldier hero, guard pin-up, weapon-first pose, HDR lens realism, 3D render
+    look, PBR material simulation, hyper-detailed concept art, skull emblem, faction insignia,
+    political flag, handheld lantern hero, military staging, station officer portrait, rail guard
+    portrait, close-up noir protagonist, near-plane uniformed worker portrait, realistic military
+    coat, realistic trenchcoat hero, watermark, text, logo, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system
+    aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation,
+    bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered
+    machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense
+    machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic
+    American illustration, generic Western RPG card art, repeated-props, Victorian interior-system
+    lock, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle,
+    readable text, prompt-literal card reuse, generic cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

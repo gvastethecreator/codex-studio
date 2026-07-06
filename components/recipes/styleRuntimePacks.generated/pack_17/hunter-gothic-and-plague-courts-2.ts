@@ -9,12 +9,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore, watermark, text',
+      'bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Moonlit gothic hunter fantasy with long coats, sharp silhouettes, wet stone, and monstrous unease.',
       subject_treatment:
-        'A lean rooftop beast-hunter in side profile with a hook lantern, crescent trap, high collar, and moonlit pursuit posture; not a plague doctor.',
+        'Transform any subject with moonlit hunter-gothic tension: lean pursuit silhouette, high-collar shape rhythm, hook-lantern glow as optional accent, crescent trap geometry, and predatory side-profile energy without forcing a rooftop hunter persona.',
       color_and_tone:
         'Blue-black night, wet charcoal, tarnished silver, candle amber, and restrained crimson accents.',
       lighting_and_shadow:
@@ -22,12 +22,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Oiled leather, wet cobblestone, tarnished buckles, wool, soot, fog, and scratched metal.',
       camera_and_composition:
-        'Street-level perspective, oblique rooftops, narrow alleys, and vertical gothic architecture.',
-      atmosphere_and_mood: 'Paranoid, nocturnal, elegant, and threatening without explicit gore.',
+        'Oblique gothic verticals, roofline-like diagonals, moonlit negative space, narrow pursuit lanes, and side-profile tension without naming a fixed urban set.',
+      atmosphere_and_mood:
+        "Carry the prompt through Paranoid, nocturnal, elegant, and threatening without explicit gore; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Dark gothic digital illustration with refined costume detail, clean reflections, defined lines, and controlled haze.',
       creative_brief:
-        'Reusable hunter-gothic visual language for portraits, monsters, architecture, props, or action scenes.',
+        'Route any subject through moonlit hunter gothic style mechanics: preserve the prompt while adding nocturnal pursuit tension, gothic verticals, leather and moon material cues, and restrained predator elegance without requiring a hunter character. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm',
     },
   },
   {
@@ -36,7 +39,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'modern hospital, sci-fi lab, cute plague mask, clean fashion shoot, explicit gore, watermark, text',
+      'modern hospital, sci fi lab, cute plague mask, clean fashion shoot, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Baroque plague-era fantasy with beaked masks, ornate decay, medicine cabinets, and candlelit dread.',
@@ -48,12 +51,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Velvet, cracked porcelain, parchment labels, cloudy glass, aged brass, wax, and dusty herbs.',
       camera_and_composition:
-        'Formal portrait or cabinet composition with clustered objects, curtains, and controlled depth.',
-      atmosphere_and_mood: 'Elegant, morbid, clinical, and theatrical.',
+        'Formal cabinet hierarchy, controlled depth, candlelit object spacing as abstract rhythm, and theatrical drape-like planes without requiring clustered props or curtains.',
+      atmosphere_and_mood:
+        "Carry the prompt through Elegant, morbid, clinical, and theatrical; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained horror.',
       creative_brief:
-        'Reusable visual system for any subject needing plague-baroque costume logic, clinical dread, candlelit decay, and theatrical gothic polish.',
+        'Reusable visual system for any subject needing plague baroque costume logic, clinical dread, candlelit decay, and theatrical gothic polish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance',
     },
   },
   {
@@ -62,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'neon cyberpunk, modern streetwear, clean daylight, cute cartoon, explicit gore, watermark, text',
+      'neon cyberpunk, modern streetwear, clean daylight, cute cartoon, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic fantasy noir under a crimson moon, mixing medieval alleys, wrought iron, and supernatural fog.',
@@ -75,12 +81,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Wet brick, velvet cloak, moth-wing powder, iron keys, carved balcony stone, and smooth graphic fog.',
       camera_and_composition:
-        'Upward balcony framing, large wing silhouette, crescent moon negative space, tiny street masks below, and no corridor depth.',
-      atmosphere_and_mood: 'Aristocratic, nocturnal, predatory, and gothic-illustrative.',
+        'Upward gothic framing, crescent-moon negative space, winglike silhouette rhythm, and tiny-mask scale notes only when the subject supports them.',
+      atmosphere_and_mood:
+        "Carry the prompt through Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled red accents.',
       creative_brief:
-        'Reusable visual system for any subject needing crimson moon symbolism, gothic-noir tension, elegant menace, and medieval nocturne atmosphere.',
+        'Reusable visual system for any subject needing crimson moon symbolism, gothic noir tension, elegant menace, and medieval nocturne atmosphere. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension',
     },
   },
   {
@@ -89,7 +98,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'graphic anatomy, modern operating room, sci-fi machinery, plastic props, explicit gore, watermark, text',
+      'graphic anatomy, modern operating room, sci fi machinery, plastic props, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic reliquary horror mixing surgical precision, saintly display cases, and medieval ritual equipment.',
@@ -103,11 +112,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Glass reliquaries, polished steel, wax seals, stained parchment, aged wood, and velvet dust.',
       camera_and_composition:
         'Symmetrical close framing with shallow depth, controlled object hierarchy, clean glass highlights, and restrained ritual spacing.',
-      atmosphere_and_mood: 'Clinical, sacred, tense, and taboo without graphic body horror.',
+      atmosphere_and_mood:
+        "Carry the prompt through Clinical, sacred, tense, and taboo without graphic body horror; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Gothic still-life illustration with precise objects, clean linework, visible details, and painterly shadow control.',
       creative_brief:
-        'Translates any subject into a surgical-gothic relic system of tools, glass, ritual, and restraint.',
+        'Translates any subject into a surgical gothic relic system of tools, glass, ritual, and restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Surgical Reliquary Horror; Gothic reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic; glass and brass accents, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Surgical Reliquary Horror; Gothic reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic; glass and brass accents',
     },
   },
   {
@@ -116,25 +128,28 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'modern courtroom, clean costume pageant, bright magic effects, cartoon witch, explicit violence, watermark, text',
+      'modern courtroom, clean costume pageant, bright magic effects, cartoon witch, central inquisitor, executioner figure, accused figure, visible crowd, near plane observers, robed witnesses, gallows scene, explicit violence, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
-        'Fogbound medieval witch-trial fantasy with rough timber, hooded crowds, and occult uncertainty.',
+        'Fogbound medieval accusation folklore with rough timber posts, low fog, torch halos, rope knots, and occult uncertainty.',
       subject_treatment:
-        'A massive fogbound witch-trial inquisitor with bell-shaped iron mask, rope mantle, torch halo, and veiled witnesses reduced to small silhouettes around the figure.',
+        'Transform the prompt subject into fogbound medieval paranoia with softened silhouettes, low-key halo contrast, damp roughness, and communal dread while keeping the original subject intact and avoiding trial-scene roles.',
       color_and_tone:
         'Damp gray, charred black, torch orange, dirty linen, and muted forest green.',
       lighting_and_shadow:
         'Torches create simple halos and long silhouettes while keeping fog smooth and shadow edges readable.',
       texture_and_material:
-        'Wet timber, rough rope, wool cloaks, muddy ground, smoke, ash, and hand-cut charms.',
+        'Wet timber, rough rope, muddy ground, smoke, ash, hand-cut charms, and damp linen shapes.',
       camera_and_composition:
-        'Circular crowd staging, low fog layers, off-center accused figures, and claustrophobic village space.',
-      atmosphere_and_mood: 'Suspicious, cold, communal, and supernatural.',
+        'Circular accusation pressure, low fog bands, off-center moral tension, claustrophobic medieval spacing, and witness-like silhouettes only as optional depth shapes.',
+      atmosphere_and_mood:
+        "Carry the prompt through Suspicious, cold, communal, and supernatural; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Historical fantasy illustration with smooth atmospheric fog, tactile props, defined lines, and clean low light.',
       creative_brief:
-        'Reusable medieval paranoia style for villages, rituals, characters, creatures, or mystery scenes.',
+        'Route any subject through fogbound witch trial paranoia: preserve the prompt while adding accusation geometry, low fog, torch halo pressure, edge silhouette tension, and medieval moral dread without requiring a village trial scene, central inquisitor, executioner, or accused figure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Fogbound Witch Trial; Fogbound medieval accusation folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Fogbound Witch Trial; Fogbound medieval accusation folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty',
     },
   },
   {
@@ -143,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, explicit gore, watermark, text',
+      'modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic courtly fantasy where beasts, nobles, and scholars gather in candlelit bestiary drama.',
@@ -156,12 +171,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Fur trims, vellum pages, carved wood, wax, brocade, feathers, claws, and old ink.',
       camera_and_composition:
-        'Banquet or council layout, clustered figures, ornate frames, and readable symbolic props.',
-      atmosphere_and_mood: 'Aristocratic, uncanny, theatrical, and secretive.',
+        'Courtly grouping rhythm, council-like spacing, ornate frame pressure, and symbolic hierarchy without requiring banquet layout or clustered figures.',
+      atmosphere_and_mood:
+        "Carry the prompt through Aristocratic, uncanny, theatrical, and secretive; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Luxurious gothic illustration with sharp costume detail and candlelit material richness.',
       creative_brief:
-        'Reusable visual system for any subject needing courtly medieval-gothic polish, bestiary symbolism, candlelit unease, and refined theatrical darkness.',
+        'Reusable visual system for any subject needing courtly medieval gothic polish, bestiary symbolism, candlelit unease, and refined theatrical darkness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism',
     },
   },
 ] as unknown as StyleRuntimePreset[];

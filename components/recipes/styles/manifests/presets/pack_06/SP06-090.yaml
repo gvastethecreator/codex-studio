@@ -13,32 +13,71 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Three-dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic-pixel construction,
-    Minecraft and sprite-sheet logic as block anchors, isometric cube-grid composition, toy-block 3D pixel art
+    Voxel Block Sprites acts as a transferable art-medium router: start from Three dimensional pixel
+    blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic pixel construction, Minecraft and
+    sprite sheet logic as block anchors, isometric cube grid composition, toy block 3D pixel art,
+    Cubic voxel construction, block stepped contours, isometric grid alignment, ambient occlusion
+    block edges, per cube flat coloring and hardware-constrained game-visual system built from
+    display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and
+    era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed
+    demo image.
   subject_treatment: >-
-    Cubic-voxel contour, block-stepped edges, orthogonal grid construction, visible cube boundaries,
-    straight-angle everything
+    Transform any prompt subject through Cubic voxel contour, block stepped edges, orthogonal grid
+    construction, visible cube boundaries, straight angle everything; preserve the prompt subject
+    while translating it into tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or
+    low-bit display behavior, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
   color_and_tone: >-
-    Bright plastic-cube colors, toy-block primaries, voxel-material palette, per-cube flat coloring, modular
-    color scheme
+    Build color with Bright plastic cube colors, toy block primaries, voxel material palette, per
+    cube flat coloring, modular color scheme; use color through hardware rules: indexed palettes,
+    phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline
+    color, or terminal ANSI sets, with deliberate value grouping, accent control, and
+    medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Global-illumination cube lighting, ambient-occlusion block corners, soft shadow under voxel overhangs,
-    directional sun on block-grid
+    Handle light through Global illumination cube lighting, ambient occlusion block corners, soft
+    shadow under voxel overhangs, directional sun on block grid; make light emerge from display
+    technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector
+    beam brightness, so value structure supports the medium and does not overwrite the requested
+    content.
   texture_and_material: >-
-    Cube-face flat shading, block-edge ambient occlusion, plastic-cube surface, matte-voxel material,
-    grid-seam texture
+    Render Cube face flat shading, block edge ambient occlusion, plastic cube surface, matte voxel
+    material, grid seam texture; surface detail should show pixels, dithering, scanlines,
+    quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation,
+    keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Voxel-grid blocky proportions, isometric cube arrangement, cube-stepped curves, block-resolution shape
-    limitation
-  atmosphere_and_mood: Playful, constructive, modular, toy-block creative, colorful-three-dimensional-pixel joy
-  rendering_and_quality: Voxel-art render, MagicaVoxel-style beauty, 3D-pixel aesthetic, block-world charm, toy-cube rendering
+    Structure the image through Voxel grid blocky proportions, isometric cube arrangement, cube
+    stepped curves, block resolution shape limitation; compose through tile maps, sprite scale,
+    fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
+    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
+  atmosphere_and_mood: >-
+    Keep the mood Playful, constructive, modular, toy block creative, colorful three dimensional
+    pixel joy; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal
+    austerity, console nostalgia, or broken early-3D instability, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Voxel art render, MagicaVoxel style beauty, 3D pixel aesthetic, block world charm,
+    toy cube rendering; finish with faithful era constraints, crisp readability at small scale, and
+    no modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean
+    denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.
   key_features: >-
-    Cubic-voxel construction, block-stepped contours, isometric grid alignment, ambient-occlusion block edges,
-    per-cube flat coloring
+    Three dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic pixel
+    construction, Minecraft and sprite sheet logic as block anchors, isometric cube grid
+    composition, toy block 3D pixel art; Cubic voxel construction, block stepped contours, isometric
+    grid alignment, ambient occlusion block edges, per cube flat coloring; Bright plastic cube
+    colors, toy block primaries, voxel material palette, per cube flat coloring, modular color
+    scheme; Cube face flat shading, block edge ambient occlusion, plastic cube surface, matte voxel
+    material, grid seam texture; Voxel grid blocky proportions, isometric cube arrangement, cube
+    stepped curves, block resolution shape limitation
   creative_brief: >-
-    Any prompt is rebuilt from cubes. Curves become stepped approximations, surfaces become stacked modules,
-    and ambient occlusion in block seams gives mass to a style that values constructible form over smooth
-    illusion.
+    Apply Voxel Block Sprites as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Three dimensional pixel blocks, MagicaVoxel aesthetic, 3D Dot Game Heroes style, cubic pixel
+    construction, Minecraft and sprite sheet logic as block anchors, isometric cube grid
+    composition, toy block 3D pixel art, Cubic voxel construction, block stepped contours, isometric
+    grid alignment, ambient occlusion block edges, per cube flat coloring, Cube face flat shading,
+    block edge ambient occlusion, plastic cube surface, matte voxel material, grid seam texture
+    without requiring the card image's original subject.
 avoidRules:
   - smooth
   - organic
@@ -50,10 +89,25 @@ avoidRules:
   - soft
   - photorealistic
   - painted
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-090.webp
 attributes:
-  negativePrompt: smooth, organic, curved, realistic, high poly, anti-aliased, fluid, soft, photorealistic, painted
+  negativePrompt: >-
+    smooth, organic, curved, realistic, high poly, anti-aliased, fluid, soft, photorealistic,
+    painted, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark,
+    readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator
+    screenshot, unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

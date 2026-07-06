@@ -13,44 +13,84 @@ tags:
   - environment-and-worldbuilding
 visualDna:
   aesthetic: >-
-    Scientific Visualization within 7. Environment And Worldbuilding: a reusable 3D & CGI Rendering visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Scientific Visualization's specific style identity.
+    Scientific Visualization acts as a transferable CGI-style router: start from Scientific
+    Visualization simulation clarity, false-color data, clean educational render, measured
+    scientific hierarchy and environment and worldbuilding CGI system built from spatial design,
+    modular assets, atmospheric scale, simulation logic, scan fidelity, and explorable depth, then
+    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Define Scientific Visualization through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Transform any prompt subject through adapt the requested subject through simulation clarity,
+    false-color data, clean educational render, measured scientific hierarchy while preserving its
+    identity; preserve the prompt subject while embedding it in the preset's world-scale CGI logic;
+    environmental systems, scan detail, map elevation, VFX volume, or scientific structure should
+    appear only when named by the preset, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
   color_and_tone: >-
-    Use a Scientific Visualization-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Build color with palette and exposure choices that support simulation clarity, false-color data,
+    clean educational render, measured scientific hierarchy; use color through atmospheric grading,
+    neon bloom, scientific false color, scan albedo, bioluminescent glow, map coding, or pyro
+    temperature, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
   lighting_and_shadow: >-
-    Use lighting that makes Scientific Visualization recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Handle light through light behavior that reveals simulation clarity, false-color data, clean
+    educational render, measured scientific hierarchy; shape light with atmospheric depth, emissive
+    ecology, VR bake, modular level lighting, smoke self-light, or scan-matched illumination, so
+    value structure supports the renderer and does not overwrite the requested content.
   texture_and_material: >-
-    Use materials and textures that reinforce Scientific Visualization: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render simulation clarity, false-color data, clean educational render, measured scientific
+    hierarchy; surface detail should show modular kits, photogrammetry scan grain, terrain relief,
+    vegetation glow, pyro volume, map elevation, or simulation particles, keeping material scale
+    coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Scientific Visualization: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Structure the image through scale rhythm, spacing, and composition rules shaped by simulation
+    clarity, false-color data, clean educational render, measured scientific hierarchy; compose
+    through spatial readability, player-scale cues, isometric elevation, explorable layers,
+    environment silhouettes, or simulation flow, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Scientific Visualization: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Keep the mood mood carried by simulation clarity, false-color data, clean educational render,
+    measured scientific hierarchy; derive mood from immersion, navigability, alien wonder, technical
+    explanation, decay, abstract spatial rhythm, or procedural spectacle, letting the renderer alter
+    interpretation without demanding a specific story, location, or character.
   rendering_and_quality: >-
-    Render Scientific Visualization with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with finished Scientific Visualization CGI with simulation clarity, false-color data,
+    clean educational render, measured scientific hierarchy and controlled detail; finish with
+    coherent world scale, readable depth, optimized detail hierarchy, and no empty wallpaper or
+    generic vista-only render, clean denoised surfaces where appropriate, and enough shader evidence
+    to make the CGI mode recognizable.
   key_features: >-
-    Prioritize Scientific Visualization's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    Scientific Visualization simulation clarity, false-color data, clean educational render,
+    measured scientific hierarchy; palette and exposure choices that support simulation clarity,
+    false-color data, clean educational render, measured scientific hierarchy; scale rhythm,
+    spacing, and composition rules shaped by simulation clarity, false-color data, clean educational
+    render, measured scientific hierarchy
   creative_brief: >-
-    Create a style-card that translates Scientific Visualization into a portable visual system for 7.
-    Environment And Worldbuilding. Preserve the preset identity through style mechanics, not a fixed scene,
-    character, prop, or story beat.
+    Apply Scientific Visualization as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Scientific Visualization simulation clarity, false-color
+    data, clean educational render, measured scientific hierarchy without requiring the card image's
+    original subject.
 avoidRules:
   - fantasy
   - magic
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - empty wallpaper
+  - generic vista-only render
+  - scale-less space
+  - unoptimized clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-056.webp
 attributes:
-  negativePrompt: fantasy, magic
+  negativePrompt: >-
+    fantasy, magic, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, empty wallpaper, generic vista-only render, scale-less
+    space, unoptimized clutter
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -12,28 +12,87 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Lolita couture, storybook Victorian sweetness, porcelain-pastel refinement
-  subject_treatment: Ruffles, bell architecture, tiered volume, mutton-leg sleeve, high-neck lace collar
-  color_and_tone: Pink, White, Blue, mint, lavender, saxon blue, dusty rose, milk-white
-  lighting_and_shadow: Soft diffused light, petal-pink bounce, porcelain-bright warmth
-  texture_and_material: Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons
+  aesthetic: >-
+    Lolita Fashion operates as a portable fashion-costume router: combine Lolita couture, storybook
+    Victorian sweetness, porcelain-pastel refinement with subcultural dress-code logic with identity
+    signals, music or scene memory, attitude, and symbolic styling pressure, so the preset supplies
+    styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Ruffles, bell architecture,
+    tiered volume, mutton-leg sleeve, high-neck lace collar; identity stays readable as silhouette,
+    fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Soft diffused light, petal-pink bounce, porcelain-bright warmth plus club, daylight,
+    editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a
+    venue as the styling light contract, revealing cut, drape, surface response, trim, transparency,
+    or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Cotton lace, satin ribbons, pintucked voile, broderie anglaise, tulle underlayers,
+    faux-pearl buttons plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal
+    hardware, embroidery, print, and worn textile history; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Lolita Fashion using its key spatial cues: Bell-volume silhouette, lace tiers, ribbon
-    structure, porcelain palette, pintuck rhythm.
-  atmosphere_and_mood: Sweet, storybook serenity, lace-gloved delicacy, porcelain calm
-  rendering_and_quality: Cute elaborate couture, confectionary precision, porcelain-finish restraint
-  key_features: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm
+    Compose with Compose for Lolita Fashion using its key spatial cues: Bell-volume silhouette, lace
+    tiers, ribbon structure, porcelain palette, pintuck rhythm plus attitude-led silhouette,
+    accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Lolita Fashion while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Lolita couture, storybook Victorian sweetness, porcelain-pastel refinement; Ruffles, bell
+    architecture, tiered volume, mutton-leg sleeve, high-neck lace collar; Cotton lace, satin
+    ribbons, pintucked voile, broderie anglaise, tulle underlayers, faux-pearl buttons; Soft
+    diffused light, petal-pink bounce, porcelain-bright warmth; Compose for Lolita Fashion using its
+    key spatial cues: Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette,
+    pintuck rhythm
   creative_brief: >-
-    Render the input through Lolita construction: bell architecture, tiered ruffles, satin ribbons, pintucked
-    voile, bonnet cues, lace gloves and porcelain-pastel restraint. Keep tea-party fantasy as mood only; avoid
-    Harajuku streets, dollhouse parlors, childlike figure lock or literal party scenes.
+    Use Lolita Fashion after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Lolita couture,
+    storybook Victorian sweetness, porcelain-pastel refinement, Ruffles, bell architecture, tiered
+    volume, mutton-leg sleeve, high-neck lace collar, Cotton lace, satin ribbons, pintucked voile,
+    broderie anglaise, tulle underlayers, faux-pearl buttons, Soft diffused light, petal-pink
+    bounce, porcelain-bright warmth, Compose for Lolita Fashion using its key spatial cues:
+    Bell-volume silhouette, lace tiers, ribbon structure, porcelain palette, pintuck rhythm plus
+    signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear,
+    and stance-driven silhouette, palette behavior, light response, material treatment, silhouette
+    grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop
+    bundle, or card composition.
 avoidRules:
   - plain contemporary casualwear
   - trouser-dominant outfit
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-023.webp
 attributes:
-  negativePrompt: plain contemporary casualwear, trouser-dominant outfit
+  negativePrompt: >-
+    plain contemporary casualwear, trouser-dominant outfit, costume-party parody, random trend mix,
+    brand-logo collage, fixed outfit, required body type, literal card scene, generic fashion
+    catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

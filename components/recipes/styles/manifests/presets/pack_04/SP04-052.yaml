@@ -13,35 +13,89 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Isometric systems-art style with modular worldbuilding clarity, playful simulation readability, and
-    toy-scale urban abstraction
-  subject_treatment: Clean vector-pixel hybrid contours, grid-disciplined shape language, and module-first construction logic
+    Isometric Game Art acts as a transferable illustration router: start from Isometric systems-art
+    style with modular worldbuilding clarity, playful simulation readability, and toy-scale urban
+    abstraction, Isometric angle discipline, modular tile-grid composition, systems readability
+    hierarchy, toy-scale abstraction and production concept-art system built from iteration
+    discipline, silhouette testing, material exploration, design readability, and pitch-ready visual
+    decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Clean vector-pixel hybrid contours, grid-disciplined shape
+    language, and module-first construction logic; preserve the requested subject while routing it
+    through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover
+    marks, or production-readability constraints, keeping the requested identity, silhouette, pose,
+    object function, or setting legible.
   color_and_tone: >-
-    Bright ordered saturation with zone-based hue grouping, clear functional contrast, and tile-friendly color
-    separation
+    Build color with Bright ordered saturation with zone-based hue grouping, clear functional
+    contrast, and tile-friendly color separation; use color as concept decision-making: mood
+    scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or
+    readable pass separation, with deliberate value grouping, accent control, and process-specific
+    limits rather than a generic palette wash.
   lighting_and_shadow: >-
-    Consistent directional isometric lighting with uniform shadow logic and readability-first highlight
-    placement
-  texture_and_material: Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion
-  camera_and_composition: Isometric orthographic logic with fixed-angle depth mapping and no perspective convergence
-  atmosphere_and_mood: Ordered, playful, clean, constructive, serene
+    Handle light through Consistent directional isometric lighting with uniform shadow logic and
+    readability-first highlight placement; shape light for ideation clarity through value block-in,
+    keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so
+    value structure supports the illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset
+    cohesion; surface detail should reveal brush passes, photobash integration, low-poly facets,
+    callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers
+    when named, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Isometric orthographic logic with fixed-angle depth mapping and no
+    perspective convergence; compose through production hierarchy, variants, orthographic logic,
+    isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without
+    locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing
+    the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Ordered, playful, clean, constructive, serene; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
   rendering_and_quality: >-
-    Production-grade simulation asset finish emphasizing legibility at scale, modular coherence, and system
-    clarity
+    Finish with Production-grade simulation asset finish emphasizing legibility at scale, modular
+    coherence, and system clarity; finish with concept-art usefulness, readable decisions,
+    controlled roughness, and no generic fantasy wallpaper or overpolished final render when
+    iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
   key_features: >-
-    Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale
-    abstraction
+    Isometric systems-art style with modular worldbuilding clarity, playful simulation readability,
+    and toy-scale urban abstraction; Isometric angle discipline, modular tile-grid composition,
+    systems readability hierarchy, toy-scale abstraction; Bright ordered saturation with zone-based
+    hue grouping, clear functional contrast, and tile-friendly color separation; Tile-ready clean
+    surfaces with subtle pattern repetition cues and low-noise asset cohesion; Isometric
+    orthographic logic with fixed-angle depth mapping and no perspective convergence
   creative_brief: >-
-    Apply modular isometric game-art grammar to any input: fixed-angle spatial logic, tile-grid coherence,
-    zone-based color, toy-scale abstraction, and system readability should transfer across subjects without
-    requiring cities, buildings, simulation UI, roads, or game maps.
+    Apply Isometric Game Art as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Isometric systems-art style with modular worldbuilding clarity, playful simulation readability,
+    and toy-scale urban abstraction, Isometric angle discipline, modular tile-grid composition,
+    systems readability hierarchy, toy-scale abstraction, Tile-ready clean surfaces with subtle
+    pattern repetition cues and low-noise asset cohesion without requiring the card image's original
+    subject.
 avoidRules:
   - perspective
   - flat
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-052.webp
 attributes:
-  negativePrompt: perspective, flat
+  negativePrompt: >-
+    perspective, flat, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash
+    clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -13,33 +13,81 @@ tags:
   - artistic-mediums
 visualDna:
   aesthetic: >-
-    Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and
-    graphic repetition
+    Silkscreen Icon Impact operates as a portable source-router layer: combine Pop silkscreen impact
+    system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic
+    repetition with manual medium logic with mark discipline, process texture, graphic reduction,
+    and authored surface treatment, so the preset supplies visual behavior rather than a fixed card
+    scene or literal sample.
   subject_treatment: >-
-    Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame
-    logic
-  color_and_tone: Tomato red, electric yellow, cyan blocks, hot pink, black ink, cream paper, deliberately offset CMYK
-  lighting_and_shadow: Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis
-  texture_and_material: Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss
+    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
+    stitch, spray, glaze, outline, cut, layer, or illuminate through Ben-Day dots, thick contour
+    separation, screen-registration offsets, posterized planes, repeated frame logic; identity stays
+    readable through construction grammar, proportion, edge logic, and detail scale as this preset
+    is applied.
+  color_and_tone: >-
+    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
+    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Flattened print light with almost no modeled depth, hard color field contrast, and
+    ink-density emphasis plus surface-aware illumination that reveals pigment body, glass
+    translucency, chalk haze, spray mist, or print layers as the light-response contract, with
+    readable hierarchy, controlled contact detail, and no lighting choice that erases the user's
+    requested content.
+  texture_and_material: >-
+    Render Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss
+    plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and
+    hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts
+    must remain coherent across figures, objects, and environments.
   camera_and_composition: >-
-    Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print
-    misalignment
-  atmosphere_and_mood: Commercial, ironic, loud, iconic, mass-produced, playful
-  rendering_and_quality: Bold, reproducible, graphic, mechanically printed, iconic, high contrast, deliberately artificial
-  key_features: Halftone fields, CMYK separation, registration slips, posterized shadow, repeated icon blocks, ink bleed
+    Compose with Color-channel offset, serial repetition, halftone scale shifts, cropped icon
+    flattening, print misalignment plus graphic spacing, panel division, emblem balance, handmade
+    alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits,
+    objects, scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
+    object presence; the emotional tone should feel specific to Silkscreen Icon Impact while still
+    obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
+    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity
+    color, and graphic repetition; Ben-Day dots, thick contour separation, screen-registration
+    offsets, posterized planes, repeated frame logic; Screenprint ink, paper tooth, halftone grain,
+    misregistration edges, cheap poster gloss; Flattened print light with almost no modeled depth,
+    hard color field contrast, and ink-density emphasis; Color-channel offset, serial repetition,
+    halftone scale shifts, cropped icon flattening, print misalignment
   creative_brief: >-
-    Make the subject feel mechanically reproduced and culturally amplified: halftone, flat commodity color,
-    registration errors, and serial pop rhythm should carry the style. Avoid forcing celebrity portraits, soup
-    cans, comic panels, or named artworks. Apply Silkscreen Icon Impact as a portable style system over any
-    input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior
-    while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or
-    scene template.
+    Use Silkscreen Icon Impact after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Pop silkscreen impact system using
+    mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition,
+    Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated
+    frame logic, Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster
+    gloss, Flattened print light with almost no modeled depth, hard color field contrast, and
+    ink-density emphasis, Color-channel offset, serial repetition, halftone scale shifts, cropped
+    icon flattening, print misalignment plus stroke direction, pigment edge, stencil separation,
+    lead structure, fabric or print registration, and clearly expressed hand process, palette
+    behavior, light response, material treatment, and finish discipline without requiring one
+    specimen, prop bundle, product still, or card composition.
 avoidRules:
   - subtle
+  - generic digital painting
+  - flat vector shortcut
+  - lost medium texture
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-044.webp
 attributes:
-  negativePrompt: subtle
+  negativePrompt: >-
+    subtle, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen,
+    literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

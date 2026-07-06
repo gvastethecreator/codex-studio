@@ -13,19 +13,64 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: >-
-    Sci-fi inventory-icon style with hard-surface silhouette logic, technical accents, and clean arsenal
-    readability.
+    Sci-Fi Arsenal Icon Kit acts as a transferable art-medium router: start from Sci fi inventory
+    icon style with hard surface silhouette logic, technical accents, and clean arsenal readability,
+    gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
+    production-art clarity and game-art direction system built from playable readability, UI or
+    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
+    the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Convert any subject into collectible equipment-like icons with crisp outer contours and modular tech
-    segmentation.
+    Transform any prompt subject through Convert any subject into collectible equipment like icons
+    with crisp outer contours and modular tech segmentation; preserve the prompt subject while
+    routing it through tile readability, icon clarity, splash rendering, interface material, sprite
+    bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
   color_and_tone: >-
-    Gunmetal neutrals, cold blue emissive accents, rarity-color trims, and strong dark-to-light material
-    ramps.
-  lighting_and_shadow: Small studio-like icon lighting, bevel highlights, contact shadow pads, and controlled emissive glows.
-  texture_and_material: Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable material swatches.
-  camera_and_composition: Centered three-quarter icon framing, transparent background, equal padding, and atlas-consistent scale.
-  atmosphere_and_mood: Tactical, collectible, high-tech mood without requiring guns, ammo, soldiers, or shooter scenes.
-  rendering_and_quality: Icon-pack friendly, sharp thumbnail readability, transparent-background safe, no labels.
+    Build color with Gunmetal neutrals, cold blue emissive accents, rarity color trims, and strong
+    dark to light material elevated edge structure; use color as gameplay hierarchy: rarity glow,
+    faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable
+    inventory material, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Small studio like icon lighting, bevel highlights, contact shadow pads, and
+    controlled emissive glows; shape light through game readability: rim separation, UI glow,
+    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Brushed metal pixels, panel seams, carbon texture hints, tiny bolts, and readable
+    material swatches; surface detail should support genre grammar through parchment, HUD glass,
+    pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through central three quarter icon framing, transparent support field, equal
+    padding, and atlas consistent scale; compose through gameplay-facing hierarchy, atlas
+    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
+    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tactical, collectible, high tech mood without requiring guns, ammo, soldiers, or
+    shooter scenes; derive mood from playable stakes, collection desire, tactical control, cozy
+    routine, survival dread, arcade speed, or heroic confrontation, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Icon pack friendly, sharp thumbnail readability, transparent support field safe, no
+    labels; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and
+    no unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft
+    evidence to make the medium recognizable.
+  key_features: >-
+    Sci fi inventory icon style with hard surface silhouette logic, technical accents, and clean
+    arsenal readability; gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity; Gunmetal neutrals, cold blue emissive accents, rarity
+    color trims, and strong dark to light material elevated edge structure; Brushed metal pixels,
+    panel seams, carbon texture hints, tiny bolts, and readable material swatches; central three
+    quarter icon framing, transparent support field, equal padding, and atlas consistent scale
+  creative_brief: >-
+    Apply Sci-Fi Arsenal Icon Kit as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Sci fi inventory icon style with hard surface silhouette logic, technical accents, and
+    clean arsenal readability, gameplay-readable hierarchy, genre-specific surface language,
+    UI-aware composition, and production-art clarity, Brushed metal pixels, panel seams, carbon
+    texture hints, tiny bolts, and readable material swatches without requiring the card image's
+    original subject.
 avoidRules:
   - motion blur
   - inconsistent proportions
@@ -35,12 +80,25 @@ avoidRules:
   - soldier requirement
   - watermark
   - text
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - low resolution
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-112.webp
 attributes:
   negativePrompt: >-
-    motion blur, inconsistent proportions, changing costume, cluttered background, gun requirement, soldier
-    requirement, watermark, text
+    motion blur, inconsistent proportions, changing costume, cluttered background, gun requirement,
+    soldier requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled
+    texture chatter, readable text, signature, low resolution, readable UI text, logo clutter,
+    generic screenshot, unplayable visual clutter
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

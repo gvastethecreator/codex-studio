@@ -13,29 +13,59 @@ tags:
   - texture-and-materiality
   - weathering-and-decay
 visualDna:
-  aesthetic: Used machinery
-  subject_treatment: Random scratches
-  color_and_tone: Steel
-  lighting_and_shadow: Caught in scratches
-  texture_and_material: Abrasive
-  camera_and_composition: 'Compose for Scratched Metal using its key spatial cues: Random direction.'
-  atmosphere_and_mood: Industrial, hard
-  rendering_and_quality: Worn, used
-  key_features: Random direction
+  aesthetic: >-
+    Scratched Metal turns material failure into the main visual language: start from Used machinery,
+    Abrasive, and Random direction, then turn damage history, contamination, corrosion, staining,
+    abrasion, and material breakdown into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Random scratches: preserve identity and pose while letting
+    forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface
+    breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Steel as the material palette, with controlled value separation, local color variation, and
+    hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Caught in scratches define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Scratched Metal without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Abrasive through layer loss, residue buildup, chipped edges, stains, cracks, and uneven
+    surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension
+    coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Random direction as reusable material rhythm: macro-friendly for texture tasks,
+    but able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Industrial, hard by using neglect, time, moisture, heat, friction, and
+    environmental pressure; the material should color the scene's feeling while preserving the
+    user's requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Worn, used material clarity: physically coherent reflectance, clean contact detail,
+    controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.
+  key_features: Used machinery; Random scratches; Abrasive; Caught in scratches; Random direction
   creative_brief: >-
-    Capture the patina of use written in random scratches across steel, where each mark is a moment of contact
-    frozen in silver on grey, light catching in the abrasive grooves like tiny rivers of reflection. The
-    random direction of the scratches should tell the story of careless handling and honest work. Render the
-    accumulating biography of a worked surface, wear as a form of record-keeping. Use Scratched Metal as
-    portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
-    wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Scratched Metal as a transferable weathering-and-decay visual system
+    while preserving the prompt's subject, action, and setting. Capture the patina of use written in
+    random scratches across steel, where each mark is a moment of contact frozen in silver on grey,
+    light catching in the abrasive grooves like tiny rivers of reflection. The random direction of
+    the scratches should tell the story of careless handling and honest work. Render the
+    accumulating biography of a worked surface, wear as a form of record-keeping. Use Scratched
+    Metal as portable surface/render behavior over any input: map its texture, light response, edge
+    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - mirror finish
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-037.webp
 attributes:
-  negativePrompt: mirror finish
+  negativePrompt: mirror finish, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

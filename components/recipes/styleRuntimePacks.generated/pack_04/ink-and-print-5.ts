@@ -7,411 +7,580 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP04-023',
     name: 'Scratchboard',
     category: '5. Ink And Print',
-    negativePrompt: 'white background',
+    negativePrompt:
+      'white background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Scratchboard engraving language with subtractive light reveal',
-      subject_treatment: 'White incised strokes on black ground, varying incision density',
-      color_and_tone: 'Strict black-white inverse contrast system',
-      lighting_and_shadow: 'Highlight structure carved through negative subtraction',
-      texture_and_material: 'Knife/scratch marks, hatch scratches, burr-like edge chatter',
-      camera_and_composition: 'Stable proportions, depth suggested via hatch frequency',
-      atmosphere_and_mood: 'Nocturnal, theatrical, mysterious',
-      rendering_and_quality: 'Intricate high-contrast detail with printlike precision',
-      key_features: 'Dark-field base, luminous scratch marks, reverse-value composition',
+      aesthetic:
+        'Scratchboard acts as a transferable illustration router: start from Scratchboard engraving language with subtractive light reveal, Dark-field base, luminous scratch marks, reverse-value composition and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through White incised strokes on black ground, varying incision density; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Strict black-white inverse contrast system; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Highlight structure carved through negative subtraction; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Knife/scratch marks, hatch scratches, burr-like edge chatter; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stable proportions, depth suggested via hatch frequency; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nocturnal, theatrical, mysterious, mood carried by Scratchboard craft, material pressure, and visual restraint; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Intricate high-contrast detail with printlike precision; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Scratchboard engraving language with subtractive light reveal; Dark-field base, luminous scratch marks, reverse-value composition; Strict black-white inverse contrast system; Knife/scratch marks, hatch scratches, burr-like edge chatter; Stable proportions, depth suggested via hatch frequency',
       creative_brief:
-        'Apply scratchboard inversion to any input: remove darkness through incision rhythm, hatch density, burr-like chatter, and directional scratch patterns to define focal hierarchy without requiring animals, night scenes, portraits, theatrical props, or fixed black-ground compositions.',
+        "Apply Scratchboard as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Scratchboard engraving language with subtractive light reveal, Dark-field base, luminous scratch marks, reverse-value composition, Knife/scratch marks, hatch scratches, burr-like edge chatter without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-061',
     name: 'Linocut Print',
     category: '5. Ink And Print',
-    negativePrompt: 'grey, gradient',
+    negativePrompt:
+      'grey, gradient, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force',
+        'Linocut Print acts as a transferable illustration router: start from Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force, No fine detail, gouge marks, carved texture and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path rhythm',
-      color_and_tone: 'Black ink, single-color assertion, bold monochrome',
-      lighting_and_shadow: 'Ink-only mark hierarchy with no simulated lighting',
-      texture_and_material: 'Ink roll texture',
-      camera_and_composition: 'Chunky lines',
-      atmosphere_and_mood: 'Folk, strong, print-workshop resolve, democratic art',
-      rendering_and_quality: 'Handmade, bold, craft-process evidence, folk authenticity',
-      key_features: 'No fine detail, gouge marks, carved texture',
+        'Transform any prompt subject through White gouge-cut channels and chunky relief edges with high black-mass balance and knife-path rhythm; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Black ink, single-color assertion, bold monochrome; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Ink-only mark hierarchy with no simulated lighting; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Ink roll texture, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Chunky lines, scale rhythm, edge hierarchy, spacing, and composition rules specific to Linocut Print; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Folk, strong, print-workshop resolve, democratic art; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Handmade, bold, craft-process evidence, folk authenticity; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force; No fine detail, gouge marks, carved texture; Black ink, single-color assertion, bold monochrome; Ink roll texture, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; Chunky lines, scale rhythm, edge hierarchy, spacing, and composition rules specific to Linocut Print',
       creative_brief:
-        'Apply linocut relief-print grammar to any input: carved negative marks, heavy black transfer, gouge cadence, chunky relief edges, and folk-print force should carry identity without requiring folk scenes, workshops, portraits, animals, posters, or specific democratic-art subjects.',
+        "Apply Linocut Print as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Linocut relief-print style with carved-negatives contrast, artisan process evidence, and bold democratic graphic force, No fine detail, gouge marks, carved texture, Ink roll texture, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-062',
     name: 'Etching (Engraving)',
     category: '5. Ink And Print',
-    negativePrompt: 'smooth shading',
+    negativePrompt:
+      'smooth shading, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Engraved etching style with document-grade line security, old-master precision, and tonal density through incision logic',
+        'Etching (Engraving) acts as a transferable illustration router: start from Engraved etching style with document-grade line security, old-master precision, and tonal density through incision logic, Hatching, crosshatching, fine-line density and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional modulation',
-      color_and_tone: 'Black ink, tonal-hash spectrum, burin-precision value',
-      lighting_and_shadow: 'Line density, hatching-as-light, cumulative shadow depth',
-      texture_and_material: 'Paper',
+        'Transform any prompt subject through Fine crosshatch weave with controlled burin-like stroke layering and micro-line directional modulation; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Black ink, tonal-hash spectrum, burin-precision value; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Line density, hatching-as-light, cumulative shadow depth; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Etching (Engraving) using its key spatial cues: Hatching, crosshatching, fine-line density.',
-      atmosphere_and_mood: 'Serious, valuable, mint-condition reverence, time-capsule gravitas',
+        'Structure the image through Compose for Etching (Engraving) using its key spatial cues: Hatching, crosshatching, fine-line density; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Serious, valuable, mint-condition reverence, time-capsule gravitas; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual complexity, and archival print character',
-      key_features: 'Hatching, crosshatching, fine-line density',
+        'Finish with High-precision engraving fidelity emphasizing line-depth hierarchy, anti-counterfeit visual complexity, and archival print designed subjects; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Engraved etching style with document-grade line security, old-master precision, and tonal density through incision logic; Hatching, crosshatching, fine-line density; Black ink, tonal-hash spectrum, burin-precision value; Paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline',
       creative_brief:
-        'Apply engraved etching grammar to any input: dense crosshatch tonality, burin-like incision, archival paper, document-authority detail, and micro-line direction should create old-master precision without requiring banknotes, documents, portraits, maps, seals, or antique scenes.',
+        "Apply Etching (Engraving) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Engraved etching style with document-grade line security, old-master precision, and tonal density through incision logic, Hatching, crosshatching, fine-line density, Paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-063',
     name: 'Hokusai Woodcut (Floating World)',
     category: '5. Ink And Print',
-    negativePrompt: 'western, 3d',
+    negativePrompt:
+      'western, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and floating-world calm',
-      subject_treatment: 'Variable width',
-      color_and_tone: 'Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth',
-      lighting_and_shadow: 'Flat, no shadow, graphic elegance, woodblock tradition',
-      texture_and_material: 'Wood grain',
-      camera_and_composition: 'Flattened perspective',
-      atmosphere_and_mood: 'Nature, calm, ukiyo-e transience, seasonal reverence',
+        'Hokusai Woodcut (Floating World) acts as a transferable illustration router: start from Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and floating-world calm, Outline, gradient band, seal signature and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Variable width, adapt the requested subject through ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline while preserving identity; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat, no shadow, graphic elegance, woodblock tradition; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Wood grain, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Flattened perspective, scale rhythm, edge hierarchy, spacing, and composition rules specific to Hokusai Woodcut (Floating World); compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nature, calm, ukiyo-e transience, seasonal reverence; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance, and repeatable impression clarity',
-      key_features: 'Outline, gradient band, seal signature',
+        'Finish with Traditional woodblock print fidelity emphasizing carved-line discipline, restrained elegance, and repeatable impression clarity; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and floating-world calm; Outline, gradient band, seal signature; Flat gradients (Bokashi), Edo-period restraint, indigo-prussian depth; Wood grain, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; Flattened perspective, scale rhythm, edge hierarchy, spacing, and composition rules specific to Hokusai Woodcut (Floating World)',
       creative_brief:
-        'Apply ukiyo-e woodblock grammar to any input: carved contour rhythm, bokashi gradients, Prussian-indigo restraint, flattened perspective, and repeatable impression clarity should define style without requiring waves, landscapes, actors, seals, nature scenes, or named masterworks.',
+        "Apply Hokusai Woodcut (Floating World) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Classical ukiyo-e woodblock seascape language with rhythmic wave massing, carved contour elegance, and floating-world calm, Outline, gradient band, seal signature, Wood grain, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-064',
     name: 'Stipple (Dotwork)',
     category: '5. Ink And Print',
-    negativePrompt: 'lines, solid',
+    negativePrompt:
+      'lines, solid, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence',
+        'Stipple (Dotwork) acts as a transferable illustration router: start from Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence, Dots only, stipple gradient, point-by-point tone and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke dependency',
-      color_and_tone: 'Black ink, pointillist-mono, dot-gradient depth',
-      lighting_and_shadow: 'Dot density, stipple-as-value, cumulative point shadow',
-      texture_and_material: 'Skin/Paper',
-      camera_and_composition: 'Gradient by dots',
-      atmosphere_and_mood: 'Obsessive, soft, pointillist trance, meticulous calm',
-      rendering_and_quality: 'Detailed, slow, meditative precision, hand-poke patience',
-      key_features: 'Dots only, stipple gradient, point-by-point tone',
+        'Transform any prompt subject through Dot-only mark system with density-controlled gradients, cluster rhythm, and no continuous stroke dependency; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Black ink, pointillist-mono, dot-gradient depth; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Dot density, stipple-as-value, cumulative point shadow; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Skin/Paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Gradient by dots, scale rhythm, edge hierarchy, spacing, and composition rules specific to Stipple (Dotwork); compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Obsessive, soft, pointillist trance, meticulous calm; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Detailed, slow, meditative precision, hand-poke patience; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence; Dots only, stipple gradient, point-by-point tone; Black ink, pointillist-mono, dot-gradient depth; Skin/Paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; Gradient by dots, scale rhythm, edge hierarchy, spacing, and composition rules specific to Stipple (Dotwork)',
       creative_brief:
-        'Apply stipple dotwork grammar to any input: point-density value modeling, dot-cluster edges, stroke-less tonal construction, slow monochrome accumulation, and meditative texture should define form without requiring tattoos, skin, portraits, animals, or fixed illustration context.',
+        "Apply Stipple (Dotwork) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Stipple dotwork style with meditative tonal accumulation and precision-built monochrome form emergence, Dots only, stipple gradient, point-by-point tone, Skin/Paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-065',
     name: 'Lithograph',
     category: '5. Ink And Print',
-    negativePrompt: 'sharp lines',
+    negativePrompt:
+      'sharp lines, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Stone-lithography style with grease-crayon mark character, tonal grain softness, and chemical-print process identity',
+        'Lithograph acts as a transferable illustration router: start from Stone-lithography style with grease-crayon mark designed subjects, tonal grain softness, and chemical-print process identity, Grain, stone texture, crayon registration and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark variation',
-      color_and_tone: 'Black or Sepia, single-stone tone, litho-crayon warmth',
-      lighting_and_shadow: 'Soft grain, stone-texture diffusion, atmospheric softness',
-      texture_and_material: 'Stone grain',
+        'Transform any prompt subject through Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark variation; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Black or Sepia, single-stone tone, litho-crayon warmth; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Soft grain, stone-texture diffusion, atmospheric softness; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Stone grain, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Lithograph using its key spatial cues: Grain, stone texture, crayon registration.',
-      atmosphere_and_mood: 'Classic, soft, print-studio quiet, optical wonder',
+        'Structure the image through Compose for Lithograph using its key spatial cues: Grain, stone texture, crayon registration; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Classic, soft, print-studio quiet, optical wonder; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer nuance, and atmospheric print softness',
-      key_features: 'Grain, stone texture, crayon registration',
+        'Finish with Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer nuance, and atmospheric print softness; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Stone-lithography style with grease-crayon mark designed subjects, tonal grain softness, and chemical-print process identity; Grain, stone texture, crayon registration; Black or Sepia, single-stone tone, litho-crayon warmth; Stone grain, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline',
       creative_brief:
-        'Apply lithographic print grammar to any input: grease-crayon marks, stone-grain softness, pressure-sensitive wax variation, atmospheric tone, and press-transfer nuance should carry identity without requiring geometry, posters, portraits, print studios, or specific subjects.',
+        "Apply Lithograph as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Stone-lithography style with grease-crayon mark designed subjects, tonal grain softness, and chemical-print process identity, Grain, stone texture, crayon registration, Stone grain, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-066',
     name: 'Screenprint (Serigraph)',
     category: '5. Ink And Print',
-    negativePrompt: 'gradient, painting',
+    negativePrompt:
+      'gradient, painting, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction iconography',
+        'Screenprint (Serigraph) acts as a transferable illustration router: start from Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction iconography, Layer overlap, color misregistration, halftone rosette and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Layered flat-shape construction with screen-offset edges, halftone contour cues, and repeat-grid compositional rhythm',
-      color_and_tone: 'Misaligned layers, pop-art separation, silkscreen offset',
-      lighting_and_shadow: 'Halftone, mesh-screen texture, dot-pattern shadow',
-      texture_and_material: 'Mesh pattern',
-      camera_and_composition: 'Offset color',
-      atmosphere_and_mood: 'Bold, commercial, screenprint bazaar, poster-shop energy',
+        'Transform any prompt subject through Layered flat-shape construction with screen-offset edges, halftone contour cues, and repeat-grid compositional rhythm; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Misaligned layers, pop-art separation, silkscreen offset; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Halftone, mesh-screen texture, dot-pattern shadow; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Mesh pattern, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Offset color, scale rhythm, edge hierarchy, spacing, and composition rules specific to Screenprint (Serigraph); compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Bold, commercial, screenprint bazaar, poster-shop energy; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Pop art, mass produced, factory repetition, consumer-culture critique',
-      key_features: 'Layer overlap, color misregistration, halftone rosette',
+        'Finish with Pop art, mass produced, factory repetition, consumer-culture critique; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction iconography; Layer overlap, color misregistration, halftone rosette; Misaligned layers, pop-art separation, silkscreen offset; Mesh pattern, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; Offset color, scale rhythm, edge hierarchy, spacing, and composition rules specific to Screenprint (Serigraph)',
       creative_brief:
-        'Apply pop-serigraph grammar to any input: repeatable flat layers, mesh-screen texture, misregistration offsets, halftone rosettes, and consumer-media color authority should create process impact without requiring celebrities, cans, products, posters, or repeat grids.',
+        "Apply Screenprint (Serigraph) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Pop-serigraph style with repetition logic, flat-process color authority, and media-reproduction iconography, Layer overlap, color misregistration, halftone rosette, Mesh pattern, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-067',
     name: 'Monotype',
     category: '5. Ink And Print',
-    negativePrompt: 'repeatable, clean',
+    negativePrompt:
+      'repeatable, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity',
+        'Monotype acts as a transferable illustration router: start from Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity, Ghost image, ink-bleed edge, plate-memory residue and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink movement',
-      color_and_tone: 'Ink wash, single-pass tone, monoprint spontaneity',
-      lighting_and_shadow: 'Unpredictable, plate-pressure variation, unique ghost-artifact',
-      texture_and_material: 'Plate texture',
-      camera_and_composition: 'Squashed ink',
-      atmosphere_and_mood: 'Expressive, unique, printmaking surprise, serendipitous beauty',
-      rendering_and_quality: 'Painterly print, one-chance drama, artistic gamble',
-      key_features: 'Ghost image, ink-bleed edge, plate-memory residue',
+        'Transform any prompt subject through Smudged plate-transfer marks with pressure-variant edges, ghost traces, and spontaneous ink movement; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Ink wash, single-pass tone, monoprint spontaneity; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Unpredictable, plate-pressure variation, unique ghost-artifact; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Plate texture, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Squashed ink, scale rhythm, edge hierarchy, spacing, and composition rules specific to Monotype; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Expressive, unique, printmaking surprise, serendipitous beauty; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Painterly print, one-chance drama, artistic gamble; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity; Ghost image, ink-bleed edge, plate-memory residue; Ink wash, single-pass tone, monoprint spontaneity; Plate texture, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; Squashed ink, scale rhythm, edge hierarchy, spacing, and composition rules specific to Monotype',
       creative_brief:
-        'Apply monotype print grammar to any input: one-pass transfer, pressure-born variation, ghosting, smudged plate edges, and non-repeatable ink movement should create unique impression energy without requiring abstract figures, print plates, studios, or one expressive scene.',
+        "Apply Monotype as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Monotype one-off print style with painterly transfer unpredictability and unique impression-first identity, Ghost image, ink-bleed edge, plate-memory residue, Plate texture, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-068',
     name: 'Cyanotype (Blueprint)',
     category: '5. Ink And Print',
-    negativePrompt: 'red, yellow',
+    negativePrompt:
+      'red, yellow, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry',
+        'Cyanotype (Blueprint) acts as a transferable illustration router: start from Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry, Blue only, contact shadow, silhouette photogram and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated paper',
-      color_and_tone: 'Prussian Blue, monochrome cyan, sun-print depth',
-      lighting_and_shadow: 'Negative, UV exposure, solar-contact alchemy',
-      texture_and_material: 'Watercolor paper',
-      camera_and_composition: 'Soft edges',
-      atmosphere_and_mood: 'Dreamy, blue, alternative-process magic, Victorian science',
+        'Transform any prompt subject through White-negative silhouettes with soft contact edges and exposure-based tonal falloff on coated paper; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Prussian Blue, monochrome cyan, sun-print depth; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Negative, UV exposure, solar-contact alchemy; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Watercolor paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Soft edges, scale rhythm, edge hierarchy, spacing, and composition rules specific to Cyanotype (Blueprint); compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dreamy, blue, alternative-process magic, Victorian science; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and historic photogram aesthetics',
-      key_features: 'Blue only, contact shadow, silhouette photogram',
+        'Finish with Alternative-process print fidelity emphasizing UV exposure behavior, washout dynamics, and historic photogram aesthetics; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry; Blue only, contact shadow, silhouette photogram; Prussian Blue, monochrome cyan, sun-print depth; Watercolor paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; Soft edges, scale rhythm, edge hierarchy, spacing, and composition rules specific to Cyanotype (Blueprint)',
       creative_brief:
-        'Apply cyanotype contact-print grammar to any input: Prussian-blue wash, UV-contact silhouettes, soft exposure falloff, coated-paper texture, and chemistry-led tonal emergence should define style without requiring botanicals, photograms, objects on paper, science props, or Victorian scenes.',
+        "Apply Cyanotype (Blueprint) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Cyanotype contact-print style with UV-driven silhouette capture and deep Prussian monochrome chemistry, Blue only, contact shadow, silhouette photogram, Watercolor paper, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-069',
     name: 'Rubber Stamp',
     category: '5. Ink And Print',
-    negativePrompt: 'perfect, clean',
+    negativePrompt:
+      'perfect, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
       aesthetic:
-        'Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact character',
+        'Rubber Stamp acts as a transferable illustration router: start from Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact designed subjects, Border, stamp frame, ink-fade authenticity and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry',
-      color_and_tone: 'Red or Black ink, stamp-pad economy, official pigment',
-      lighting_and_shadow: 'Uneven pressure, ink-starvation pattern, hand-stamped irregularity',
-      texture_and_material: 'Ink starvation',
-      camera_and_composition: 'Missing parts',
-      atmosphere_and_mood: 'Official, bureaucratic, desk-clerk authority, document-weight',
-      rendering_and_quality: 'Office, rough, bureaucrat artefact, rubber-worn character',
-      key_features: 'Border, stamp frame, ink-fade authenticity',
+        'Transform any prompt subject through Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Red or Black ink, stamp-pad economy, official pigment; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Uneven pressure, ink-starvation pattern, hand-stamped irregularity; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Ink starvation, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Missing parts, scale rhythm, edge hierarchy, spacing, and composition rules specific to Rubber Stamp; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Official, bureaucratic, desk-clerk authority, document-weight; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Office, rough, bureaucrat artefact, rubber-worn designed subjects; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact designed subjects; Border, stamp frame, ink-fade authenticity; Red or Black ink, stamp-pad economy, official pigment; Ink starvation, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline; Missing parts, scale rhythm, edge hierarchy, spacing, and composition rules specific to Rubber Stamp',
       creative_brief:
-        'Apply rubber-stamp impression grammar to any input: uneven pressure, ink-starvation gaps, frame-locked geometry, red-black stamp-pad economy, and official-mark roughness should define style without requiring documents, offices, seals, labels, bureaucracy scenes, or readable text.',
+        "Apply Rubber Stamp as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office artifact designed subjects, Border, stamp frame, ink-fade authenticity, Ink starvation, ink transfer, mark density, paper response, process artifacts, and printmaking composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-070',
     name: 'Mezzotint',
     category: '5. Ink And Print',
-    negativePrompt: 'white background, lines',
+    negativePrompt:
+      'white background, lines, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Subtractive chiaroscuro print with deep black fields',
-      subject_treatment: 'Minimal contour lines; value-driven form modeling',
-      color_and_tone: 'Velvet black, graphite charcoal, warm ivory highlight accents',
-      lighting_and_shadow: 'Burnished highlight reveal over fully darkened plate structure',
-      texture_and_material: 'Fine rocker tooth, polished burnish transitions, plate-grain softness',
-      camera_and_composition: 'Flat print plane with depth implied through tonal recession',
-      atmosphere_and_mood: 'Nocturnal, contemplative, austere, museum-print gravitas',
-      rendering_and_quality: 'High tonal drama with smooth gradients from mass-black to glow',
+      aesthetic:
+        'Mezzotint acts as a transferable illustration router: start from Subtractive chiaroscuro print with deep black fields, Continuous black ground, staged highlight recovery, velvety midtone transitions and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Minimal contour lines; value-driven form modeling; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Velvet black, graphite charcoal, warm ivory highlight accents; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Burnished highlight reveal over fully darkened plate structure; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Fine rocker tooth, polished burnish transitions, plate-grain softness; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Flat print plane with depth implied through tonal recession; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nocturnal, contemplative, austere, museum-print gravitas; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with High tonal drama with smooth gradients from mass-black to glow; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Continuous black ground, staged highlight recovery, velvety midtone transitions',
+        'Subtractive chiaroscuro print with deep black fields; Continuous black ground, staged highlight recovery, velvety midtone transitions; Velvet black, graphite charcoal, warm ivory highlight accents; Fine rocker tooth, polished burnish transitions, plate-grain softness; Flat print plane with depth implied through tonal recession',
       creative_brief:
-        'Apply mezzotint chiaroscuro grammar to any input: uninterrupted black matrix, burnished highlight recovery, rocker-tooth grain, velvety midtones, and staged glow should build forms from darkness without requiring night scenes, portraits, museum prints, or fixed black-ground subjects.',
+        "Apply Mezzotint as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Subtractive chiaroscuro print with deep black fields, Continuous black ground, staged highlight recovery, velvety midtone transitions, Fine rocker tooth, polished burnish transitions, plate-grain softness without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-071',
     name: 'Aquatint',
     category: '5. Ink And Print',
-    negativePrompt: 'sharp lines',
+    negativePrompt:
+      'sharp lines, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Granular tonal etching with wash-like shadow fields',
-      subject_treatment: 'Light etched scaffolding under dominant tonal masses',
-      color_and_tone: 'Smoke black, sepia umber, aged paper cream, muted iron gray',
-      lighting_and_shadow: 'Diffused tonal bloom with softly merged edge falloff',
-      texture_and_material: 'Rosin-grain stipple, acid-bitten porosity, powdery plate tone',
-      camera_and_composition: 'Stable print geometry; depth built by tone stacking',
-      atmosphere_and_mood: 'Somber, introspective, gothic-romantic, haunted stillness',
+      aesthetic:
+        'Aquatint acts as a transferable illustration router: start from Granular tonal etching with wash-like shadow fields, Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Light etched scaffolding under dominant tonal masses; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Smoke black, sepia umber, aged paper cream, muted iron gray; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Diffused tonal bloom with softly merged edge falloff; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Rosin-grain stipple, acid-bitten porosity, powdery plate tone; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stable print geometry; depth built by tone stacking; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Somber, introspective, gothic-romantic, haunted stillness; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Atmospheric print depth with layered tonal veils and subtle edge dissolve',
-      key_features: 'Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast',
+        'Finish with Atmospheric print depth with layered tonal veils and subtle edge dissolve; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Granular tonal etching with wash-like shadow fields; Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast; Smoke black, sepia umber, aged paper cream, muted iron gray; Rosin-grain stipple, acid-bitten porosity, powdery plate tone; Stable print geometry; depth built by tone stacking',
       creative_brief:
-        'Apply aquatint tonal-etch grammar to any input: rosin-grain gradients, acid-bitten porosity, misted tone stacking, submerged contours, and soft shadow pools should make atmosphere primary without requiring gothic scenes, landscapes, figures, ruins, or fixed somber subjects.',
+        "Apply Aquatint as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Granular tonal etching with wash-like shadow fields, Grain-anchored gradients, soft shadow pooling, reduced hard edge contrast, Rosin-grain stipple, acid-bitten porosity, powdery plate tone without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-072',
     name: 'Ballpoint Pen',
     category: '5. Ink And Print',
-    negativePrompt: 'paint, thick',
+    negativePrompt:
+      'paint, thick, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Notebook-ink illustration with obsessive micro-hatching',
-      subject_treatment: 'Fine pressure-variable pen lines, spiral and contour doodle logic',
-      color_and_tone: 'Ballpoint blue, desaturated navy, off-white notebook stock',
-      lighting_and_shadow: 'Density-built shading through layered hatch accumulation',
-      texture_and_material: 'Light paper tooth, occasional indent drag, tiny ink clots',
-      camera_and_composition: 'Minor line wobble and pooled-ink nodes in dense zones',
-      atmosphere_and_mood: 'Casual yet meticulous, study-desk focus, spontaneous craft energy',
-      rendering_and_quality: 'Raw, intimate, highly detailed pen-work with handmade variance',
-      key_features: 'Blue-only mark system, pressure-led value changes, margin-sketch rhythm',
+      aesthetic:
+        'Ballpoint Pen acts as a transferable illustration router: start from Notebook-ink illustration with obsessive micro-hatching, Blue-only mark system, pressure-led value changes, margin-sketch rhythm and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Fine pressure-variable pen lines, spiral and contour doodle logic; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Ballpoint blue, desaturated navy, off-white notebook stock; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Density-built shading through layered hatch accumulation; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Light paper tooth, occasional indent drag, tiny ink clots; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Minor line wobble and pooled-ink nodes in dense zones; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Casual yet meticulous, study-desk focus, spontaneous craft energy; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Raw, intimate, highly detailed pen-work with handmade variance; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Notebook-ink illustration with obsessive micro-hatching; Blue-only mark system, pressure-led value changes, margin-sketch rhythm; Ballpoint blue, desaturated navy, off-white notebook stock; Light paper tooth, occasional indent drag, tiny ink clots; Minor line wobble and pooled-ink nodes in dense zones',
       creative_brief:
-        'Apply ballpoint notebook-ink grammar to any input: blue pressure-variable lines, cumulative hatching, ink clots, margin-sketch rhythm, and paper-indent drag should resolve form through pen flow without requiring notebooks, desks, studies, doodles, or fixed intimate scenes.',
+        "Apply Ballpoint Pen as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Notebook-ink illustration with obsessive micro-hatching, Blue-only mark system, pressure-led value changes, margin-sketch rhythm, Light paper tooth, occasional indent drag, tiny ink clots without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-073',
     name: 'Fountain Pen',
     category: '5. Ink And Print',
-    negativePrompt: 'pencil, dry',
+    negativePrompt:
+      'pencil, dry, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Refined ink-calligraphic illustration with formal stroke cadence',
+      aesthetic:
+        'Fountain Pen acts as a transferable illustration router: start from Refined ink-calligraphic illustration with formal stroke cadence, Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'High contrast hairline-to-broad transitions via pressure and angle control',
-      color_and_tone: 'Deep black ink, warm neutral paper, subtle sepia oxidation hints',
-      lighting_and_shadow: 'Wet-ink sheen accents with controlled pooling at stroke terminals',
-      texture_and_material: 'Smooth vellum-like surface with minimal drag',
+        'Transform any prompt subject through High contrast hairline-to-broad transitions via pressure and angle control; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Deep black ink, warm neutral paper, subtle sepia oxidation hints; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Wet-ink sheen accents with controlled pooling at stroke terminals; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth vellum-like surface with minimal drag; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Flat calligraphic composition; proportion preserved through calligraphic structure',
-      atmosphere_and_mood: 'Ceremonial, classic, literate, archival quietness',
-      rendering_and_quality: 'Polished and fluid, prioritizing disciplined stroke elegance',
-      key_features: 'Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing',
+        'Structure the image through Flat calligraphic composition; proportion preserved through calligraphic structure; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Ceremonial, classic, literate, archival quietness; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Polished and fluid, prioritizing disciplined stroke elegance; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Refined ink-calligraphic illustration with formal stroke cadence; Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing; Deep black ink, warm neutral paper, subtle sepia oxidation hints; Smooth vellum-like surface with minimal drag; Flat calligraphic composition; proportion preserved through calligraphic structure',
       creative_brief:
-        'Apply fountain-pen calligraphic grammar to any input: hairline-to-broad modulation, wet-ink pooling, tapered stroke entries, vellum warmth, and deliberate rhythm spacing should build form through stroke choreography without requiring writing, manuscripts, letters, signatures, or archival props.',
+        "Apply Fountain Pen as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Refined ink-calligraphic illustration with formal stroke cadence, Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing, Smooth vellum-like surface with minimal drag without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-074',
     name: 'Sharpie Art',
     category: '5. Ink And Print',
-    negativePrompt: 'fine detail',
+    negativePrompt:
+      'fine detail, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Permanent-marker illustration with assertive graphic massing',
-      subject_treatment: 'Thick chisel-tip strokes, blunt corners, bleed-expanded contours',
-      color_and_tone: 'Carbon black, occasional cool gray marker layering',
-      lighting_and_shadow: 'Minimal modeled light; contrast from bold fill-to-paper opposition',
-      texture_and_material: 'Fiber soak, edge feathering, back-bleed ghosting',
-      camera_and_composition: 'Slight blob expansion and edge pooling in saturated regions',
-      atmosphere_and_mood: 'Urgent, unapologetic, direct, poster-like confidence',
-      rendering_and_quality: 'Loud, raw, high-impact marks with uncorrected gesture energy',
-      key_features: 'Heavy contour weight, visible nib angle behavior, permanent-ink spread',
+      aesthetic:
+        'Sharpie Art acts as a transferable illustration router: start from Permanent-marker illustration with assertive graphic massing, Heavy contour weight, visible nib angle behavior, permanent-ink spread and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Thick chisel-tip strokes, blunt corners, bleed-expanded contours; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Carbon black, occasional cool gray marker layering; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Minimal modeled light; contrast from bold fill-to-paper opposition; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Fiber soak, edge feathering, back-bleed ghosting; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Slight blob expansion and edge pooling in saturated regions; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Urgent, unapologetic, direct, poster-like confidence; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Loud, raw, high-impact marks with uncorrected gesture energy; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Permanent-marker illustration with assertive graphic massing; Heavy contour weight, visible nib angle behavior, permanent-ink spread; Carbon black, occasional cool gray marker layering; Fiber soak, edge feathering, back-bleed ghosting; Slight blob expansion and edge pooling in saturated regions',
       creative_brief:
-        'Apply permanent-marker grammar to any input: chisel-tip strokes, broad black masses, fiber soak, edge feathering, back-bleed ghosts, and no-undo commitment should create graphic force without requiring posters, graffiti, labels, signage, or fixed sketch subjects.',
+        "Apply Sharpie Art as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Permanent-marker illustration with assertive graphic massing, Heavy contour weight, visible nib angle behavior, permanent-ink spread, Fiber soak, edge feathering, back-bleed ghosting without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-075',
     name: 'Tattoo Flash (Traditional)',
     category: '5. Ink And Print',
-    negativePrompt: 'realistic, soft',
+    negativePrompt:
+      'realistic, soft, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Traditional flash-sheet tattoo graphic language',
-      subject_treatment: 'Heavy black contour with simplified internal separators',
-      color_and_tone: 'Classic flash primaries (red, yellow, green, black) with flat opaque fills',
-      lighting_and_shadow: 'Minimal realism; depth through selective whip/pepper shading motifs',
-      texture_and_material: 'Slight paper aging and ink edge texture',
-      camera_and_composition: 'Intentionally flat emblematic composition',
-      atmosphere_and_mood: 'Tough, nostalgic, craft-shop heritage, ceremonial permanence',
-      rendering_and_quality: 'Bold, iconic, high legibility at distance and small scale',
-      key_features: 'Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes',
+      aesthetic:
+        'Tattoo Flash (Traditional) acts as a transferable illustration router: start from Traditional flash-sheet tattoo graphic language, Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Heavy black contour with simplified internal separators; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Classic flash primaries (red, yellow, green, black) with flat opaque fills; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Minimal realism; depth through selective whip/pepper shading motifs; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Slight paper aging and ink edge texture; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Intentionally flat emblematic composition, scale rhythm, edge hierarchy, spacing, and composition rules specific to Tattoo Flash (Traditional); compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tough, nostalgic, craft-shop heritage, ceremonial permanence; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Bold, iconic, high legibility at distance and small scale; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Traditional flash-sheet tattoo graphic language; Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes; Classic flash primaries (red, yellow, green, black) with flat opaque fills; Slight paper aging and ink edge texture; Intentionally flat emblematic composition, scale rhythm, edge hierarchy, spacing, and composition rules specific to Tattoo Flash (Traditional)',
       creative_brief:
-        'Apply traditional tattoo-flash grammar to any input: bold-will-hold outlines, compact emblem silhouettes, flat classic primaries, pepper shading, and sheet-ready clarity should make motifs durable without requiring skulls, roses, daggers, skin, flash sheets, or tattoo-shop scenes.',
+        "Apply Tattoo Flash (Traditional) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Traditional flash-sheet tattoo graphic language, Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes, Slight paper aging and ink edge texture without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-076',
     name: 'Graffiti (Tag)',
     category: '5. Ink And Print',
-    negativePrompt: 'clean, font',
+    negativePrompt:
+      'clean, font, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Aerosol handstyle signature with velocity-led linework',
-      subject_treatment: 'Continuous flowing strokes, pressure-width variation, drip tails',
-      color_and_tone: 'Chrome silver, matte black, occasional high-contrast accent pops',
-      lighting_and_shadow: 'Surface sheen and overspray bloom define form, not volumetric light',
-      texture_and_material: 'Concrete/brick grain with soft spray edge diffusion',
+      aesthetic:
+        'Graffiti (Tag) acts as a transferable illustration router: start from Aerosol handstyle signature with velocity-led linework, Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Continuous flowing strokes, pressure-width variation, drip tails; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Chrome silver, matte black, occasional high-contrast accent pops; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Surface sheen and overspray bloom define form, not volumetric light; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Concrete/brick grain with soft spray edge diffusion; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Elastic letter compression, directional slant, motion-stretch curves',
-      atmosphere_and_mood: 'Nocturnal, kinetic, urban, improvised immediacy',
-      rendering_and_quality: 'Fast, confident, one-pass execution with visible can control',
-      key_features: 'Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency',
+        'Structure the image through Elastic letter compression, directional slant, motion-stretch curves; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nocturnal, kinetic, urban, improvised immediacy; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Fast, confident, one-pass execution with visible can control; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Aerosol handstyle signature with velocity-led linework; Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency; Chrome silver, matte black, occasional high-contrast accent pops; Concrete/brick grain with soft spray edge diffusion; Elastic letter compression, directional slant, motion-stretch curves',
       creative_brief:
-        'Apply tag-handstyle graffiti logic to any input as a portable aerosol signature style: speedline strokes, cap-width variation, overspray, drips, marker ghosts, chromatic shadow offsets, and wall-weathered edge noise. If the prompt has no text, convert its main shapes into gestural tag-like contours and motion accents without requiring readable words, names, walls, signatures, or an urban scene.',
+        "Apply Graffiti (Tag) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Aerosol handstyle signature with velocity-led linework, Handstyle ligatures, overspray halos, gravity drips, cap-radius consistency, Concrete/brick grain with soft spray edge diffusion without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-077',
     name: 'Graffiti (Piece)',
     category: '5. Ink And Print',
-    negativePrompt: 'tag, messy',
+    negativePrompt:
+      'tag, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Wildstyle mural composition with layered letter architecture',
-      subject_treatment: 'Multi-layer outlines, interlocking fills, arrows and extension bars',
-      color_and_tone: 'High-saturation spray spectrum with complementary contrast blocking',
-      lighting_and_shadow: 'Graphic bevel highlights and controlled glow accents for depth cues',
-      texture_and_material: 'Masonry wall grain under aerosol gradients and cutbacks',
-      camera_and_composition: 'Aggressive perspective bends, angular connectors, kinetic skew',
-      atmosphere_and_mood: 'Celebratory, competitive, showcase-wall intensity',
-      rendering_and_quality: 'Complex and polished mural rendering with deliberate hierarchy',
+      aesthetic:
+        'Graffiti (Piece) acts as a transferable illustration router: start from Wildstyle mural composition with layered letter architecture, Nested outlines, dimensional drop logic, connector lattice, readable abstraction and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Multi-layer outlines, interlocking fills, arrows and extension bars; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with High-saturation spray spectrum with complementary contrast blocking; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Graphic bevel highlights and controlled glow accents for depth cues; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Masonry wall grain under aerosol gradients and cutbacks; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Aggressive perspective bends, angular connectors, kinetic skew; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Celebratory, competitive, showcase-wall intensity, mood carried by Graffiti (Piece) craft, material pressure, and visual restraint; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Complex and polished mural rendering with deliberate hierarchy; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Nested outlines, dimensional drop logic, connector lattice, readable abstraction',
+        'Wildstyle mural composition with layered letter architecture; Nested outlines, dimensional drop logic, connector lattice, readable abstraction; High-saturation spray spectrum with complementary contrast blocking; Masonry wall grain under aerosol gradients and cutbacks; Aggressive perspective bends, angular connectors, kinetic skew',
       creative_brief:
-        'Apply wildstyle graffiti-piece construction to any input as layered typographic architecture: interlocking contours, arrows, bevels, bubble fills, cutback highlights, aerosol gradients, fat outlines, and paint buildup. If there are no letters, transform the subject silhouette into abstract letterform structures without requiring readable words, a mural wall, a train, or a street scene.',
+        "Apply Graffiti (Piece) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Wildstyle mural composition with layered letter architecture, Nested outlines, dimensional drop logic, connector lattice, readable abstraction, Masonry wall grain under aerosol gradients and cutbacks without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-079',
     name: 'Calligraphy (Blackletter)',
     category: '5. Ink And Print',
-    negativePrompt: 'round, modern',
+    negativePrompt:
+      'round, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Gothic blackletter calligraphy with architectural stroke logic',
-      subject_treatment: 'Broad-nib vertical stress, diamond joins, angular counters',
-      color_and_tone: 'Dense black ink, parchment beige, muted antique gold accents',
-      lighting_and_shadow: 'Mostly flat manuscript illumination with subtle warm edge lift',
-      texture_and_material: 'Fibrous parchment grain with slight ink feather control',
-      camera_and_composition: 'Structured ornament extension without breaking text rhythm',
-      atmosphere_and_mood: 'Liturgical, solemn, archival, ceremonial stillness',
-      rendering_and_quality: 'Formal, weighty, high-discipline lettering with ornamental restraint',
+      aesthetic:
+        'Calligraphy (Blackletter) acts as a transferable illustration router: start from Gothic blackletter calligraphy with architectural stroke logic, Strong vertical columns, broken curves, tight spacing cadence, serifed terminals and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Broad-nib vertical stress, diamond joins, angular counters; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Dense black ink, parchment beige, muted antique gold accents; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Mostly flat manuscript illumination with subtle warm edge lift; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Fibrous parchment grain with slight ink feather control; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Structured ornament extension without breaking text rhythm; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Liturgical, solemn, archival, ceremonial stillness; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Formal, weighty, high-discipline lettering with ornamental restraint; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Strong vertical columns, broken curves, tight spacing cadence, serifed terminals',
+        'Gothic blackletter calligraphy with architectural stroke logic; Strong vertical columns, broken curves, tight spacing cadence, serifed terminals; Dense black ink, parchment beige, muted antique gold accents; Fibrous parchment grain with slight ink feather control; Structured ornament extension without breaking text rhythm',
       creative_brief:
-        'Apply blackletter calligraphic architecture to any input: nib-angle rhythm, vertical compression, thorned terminals, dense counters, ink pooling, ruled spacing, and manuscript-like texture. If the prompt has no text, translate forms into ornamental blackletter strokes without requiring readable words, scrolls, religious manuscript scenes, or literal documents.',
+        "Apply Calligraphy (Blackletter) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Gothic blackletter calligraphy with architectural stroke logic, Strong vertical columns, broken curves, tight spacing cadence, serifed terminals, Fibrous parchment grain with slight ink feather control without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-080',
     name: 'Brush Pen Ink',
     category: '5. Ink And Print',
-    negativePrompt: 'stiff, pencil',
+    negativePrompt:
+      'stiff, pencil, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text, random distress overlay, smooth vector replacement, wrong print process',
     style: {
-      aesthetic: 'Expressive monochrome brush-ink gestural rendering',
-      subject_treatment: 'Pressure-reactive strokes from razor taper to saturated belly',
-      color_and_tone: 'Carbon black, diluted gray washes, paper-white negative space',
-      lighting_and_shadow: 'Value implied through wash layering and dry-brush breakup',
-      texture_and_material: 'Absorbent rice-paper bloom with feathered bleed fringes',
-      camera_and_composition: 'Intentional looseness with calligraphic balance preservation',
-      atmosphere_and_mood: 'Quiet, contemplative, fluid, meditative immediacy',
-      rendering_and_quality: 'Minimal yet controlled, emphasizing breath-like stroke economy',
-      key_features: 'One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients',
+      aesthetic:
+        'Brush Pen Ink acts as a transferable illustration router: start from Expressive monochrome brush-ink gestural rendering, One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients and ink and printmaking system built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Pressure-reactive strokes from razor taper to saturated belly; preserve the requested subject while rebuilding it through carved lines, etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Carbon black, diluted gray washes, paper-white negative space; use color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Value implied through wash layering and dry-brush breakup; translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or flat spray contrast rather than photographic shading, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Absorbent rice-paper bloom with feathered bleed fringes; surface detail should show paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Intentional looseness with calligraphic balance preservation; compose through print registration, border discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Quiet, contemplative, fluid, meditative immediacy; derive mood from craft pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Minimal yet controlled, emphasizing breath-like stroke economy; finish as a credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Expressive monochrome brush-ink gestural rendering; One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients; Carbon black, diluted gray washes, paper-white negative space; Absorbent rice-paper bloom with feathered bleed fringes; Intentional looseness with calligraphic balance preservation',
       creative_brief:
-        'Apply brush-pen ink rendering to any input: pressure-sensitive strokes, dry-brush skips, wet pooling, feathered edges, controlled splatter, and confident negative space. Keep it usable on subjects, products, spaces, or abstractions without requiring calligraphy text, bamboo, landscapes, or traditional scene motifs.',
+        "Apply Brush Pen Ink as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Expressive monochrome brush-ink gestural rendering, One-breath gesture arcs, dry-brush fractures, water-ink diffusion gradients, Absorbent rice-paper bloom with feathered bleed fringes without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

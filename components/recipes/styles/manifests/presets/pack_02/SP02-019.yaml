@@ -12,28 +12,84 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: Daytime TV
+  aesthetic: >-
+    Soap Opera acts as a transferable cinematic-media router: start from Daytime TV, Soap Opera
+    broadcast signal texture, package graphics, safe-frame composition, video compression, and
+    live-media hierarchy, Diffusion haze, melodramatic zoom, high-frame-rate gloss and
+    broadcast-media system built from signal texture, studio or field capture, graphic package
+    hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Soap Opera: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 2. TV And Broadcast cinematic and broadcast grammar without
-    locking to one plot beat.
-  color_and_tone: Soft focus, pastel wash, peach glow, pearl sheen
-  lighting_and_shadow: High key, backlit, halo separation, glamour diffusion
-  texture_and_material: 60fps video (Soap effect), hyper-smooth motion, interlaced
-  camera_and_composition: Soft glow, diffusion filter haze, vaseline smear
-  atmosphere_and_mood: Dramatic, romantic, suspended melodrama
-  rendering_and_quality: Dreamy, cheap, high-frame-rate unreality, studio artifice
-  key_features: Diffusion haze, melodramatic zoom, high-frame-rate gloss
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Soap Opera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 2. TV
+    And Broadcast cinematic and broadcast grammar without locking to one plot beat; preserve the
+    requested subject while treating it as a broadcast capture, package segment, demo frame, replay,
+    surveillance feed, music-video signal, or live information object, keeping the requested
+    identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Soft focus, pastel wash, peach glow, pearl sheen; use color through signal-safe
+    palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar overlays, or
+    cheap late-night product gloss, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through High key, backlit, halo separation, glamour diffusion; shape light through
+    even studio key, practical video exposure, screen glow, floodlight, surveillance flatness,
+    confessional softness, or signal-break flicker, so exposure and shadow structure support the
+    media process without overwriting the requested content.
+  texture_and_material: >-
+    Render 60fps video (Soap effect), hyper-smooth motion, interlaced; surface detail should show
+    video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression
+    blocks, or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding
+    noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Soft glow, diffusion filter haze, vaseline smear; compose through
+    safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl lanes,
+    multicam framing, or video-package layout without readable text dependency, with frame rhythm,
+    spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dramatic, romantic, suspended melodrama, mood carried by Soap Opera media process,
+    signal pressure, and visual restraint; derive mood from live urgency, cheap sincerity,
+    public-access awkwardness, sales pressure, institutional watching, stadium tension, or
+    music-video rebellion, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Dreamy, cheap, high-frame-rate unreality, studio artifice; finish as coherent
+    broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk,
+    logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate,
+    and enough process evidence to make the style recognizable.
+  key_features: >-
+    Daytime TV, Soap Opera broadcast signal texture, package graphics, safe-frame composition, video
+    compression, and live-media hierarchy; Diffusion haze, melodramatic zoom, high-frame-rate gloss;
+    Soft focus, pastel wash, peach glow, pearl sheen; 60fps video (Soap effect), hyper-smooth
+    motion, interlaced; Soft glow, diffusion filter haze, vaseline smear
   creative_brief: >-
-    Soap opera style dissolves any subject into high-key melodrama: pastel wash, pearl glow, backlit halo,
-    vaseline-lens diffusion, hyper-smooth video motion, and a suspended cliffhanger pause. Keep daytime-TV
-    unreality without requiring romance, doorways, faces, or scandal.
+    Apply Soap Opera as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Daytime TV, Soap Opera broadcast signal texture, package graphics,
+    safe-frame composition, video compression, and live-media hierarchy, Diffusion haze,
+    melodramatic zoom, high-frame-rate gloss, 60fps video (Soap effect), hyper-smooth motion,
+    interlaced without requiring the card image's original subject.
 avoidRules:
   - film look
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - anchor requirement
+  - desk requirement
+  - readable captions
+  - logo package
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-019.webp
 attributes:
-  negativePrompt: film look
+  negativePrompt: >-
+    film look, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor
+    requirement, desk requirement, readable captions, logo package
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

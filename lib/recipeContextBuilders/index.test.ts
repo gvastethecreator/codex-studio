@@ -9,6 +9,7 @@ const EXPECTED_RECIPE_IDS: RegisteredRecipeId[] = [
   'character',
   'cinematic',
   'remaster',
+  'sprite-atlas',
   'spritesheet',
   'styles',
   'timeline',

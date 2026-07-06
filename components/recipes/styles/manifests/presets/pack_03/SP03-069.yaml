@@ -12,26 +12,73 @@ tags:
   - 3d-and-cgi-rendering
   - environment-and-worldbuilding
 visualDna:
-  aesthetic: Houdini pyro simulation
-  subject_treatment: Turbulence
-  color_and_tone: Orange, Black smoke
-  lighting_and_shadow: Self illuminated
-  texture_and_material: Volume, pyroclastic density
-  camera_and_composition: Expanding
-  atmosphere_and_mood: Dangerous, dynamic, cinematic destruction
-  rendering_and_quality: Houdini VFX simulation, pyro mastery
-  key_features: Physics, turbulence control
+  aesthetic: >-
+    VFX Simulation (Fire/Smoke) acts as a transferable CGI-style router: start from Houdini pyro
+    simulation, Physics, turbulence control and environment and worldbuilding CGI system built from
+    spatial design, modular assets, atmospheric scale, simulation logic, scan fidelity, and
+    explorable depth, then apply the 3D/render behavior to prompt X instead of recreating a fixed
+    demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Turbulence; preserve the prompt subject while embedding it
+    in the preset's world-scale CGI logic; environmental systems, scan detail, map elevation, VFX
+    volume, or scientific structure should appear only when named by the preset, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Orange, Black smoke; use color through atmospheric grading, neon bloom,
+    scientific false color, scan albedo, bioluminescent glow, map coding, or pyro temperature, with
+    deliberate value grouping, exposure control, and medium-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through Self illuminated; shape light with atmospheric depth, emissive ecology, VR
+    bake, modular level lighting, smoke self-light, or scan-matched illumination, so value structure
+    supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Volume, pyroclastic density; surface detail should show modular kits, photogrammetry scan
+    grain, terrain relief, vegetation glow, pyro volume, map elevation, or simulation particles,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Expanding; compose through spatial readability, player-scale cues,
+    isometric elevation, explorable layers, environment silhouettes, or simulation flow, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dangerous, dynamic, cinematic destruction; derive mood from immersion,
+    navigability, alien wonder, technical explanation, decay, abstract spatial rhythm, or procedural
+    spectacle, letting the renderer alter interpretation without demanding a specific story,
+    location, or character.
+  rendering_and_quality: >-
+    Finish with Houdini VFX simulation, pyro mastery; finish with coherent world scale, readable
+    depth, optimized detail hierarchy, and no empty wallpaper or generic vista-only render, clean
+    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Houdini pyro simulation; Physics, turbulence control; Orange, Black smoke; Volume, pyroclastic
+    density; Expanding
   creative_brief: >-
-    Apply Houdini pyro behavior to the input: turbulent density curls, self-illuminated heat volumes, smoke
-    layering and fluid-dynamics credibility. It can imply blast, flame or destruction when relevant, but must
-    not require a fireball, disaster staging, or consumed environment.
+    Apply VFX Simulation (Fire/Smoke) as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Houdini pyro simulation, Physics, turbulence control,
+    Volume, pyroclastic density without requiring the card image's original subject.
 avoidRules:
   - solid
   - cartoon fire
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - empty wallpaper
+  - generic vista-only render
+  - scale-less space
+  - unoptimized clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-069.webp
 attributes:
-  negativePrompt: solid, cartoon fire
+  negativePrompt: >-
+    solid, cartoon fire, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
+    chatter, watermark, readable text, signature, empty wallpaper, generic vista-only render,
+    scale-less space, unoptimized clutter
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -12,25 +12,60 @@ tags:
   - abstract-and-experimental
   - geometric-abstraction
 visualDna:
-  aesthetic: Mandelbrot set
-  subject_treatment: Infinite detail
-  color_and_tone: Psychedelic gradient
-  lighting_and_shadow: Mathematical
-  texture_and_material: Smooth
-  camera_and_composition: Recursive
-  atmosphere_and_mood: Infinite, trippy
-  rendering_and_quality: Math art, complex
-  key_features: Self-similarity
+  aesthetic: >-
+    Fractal Geometry becomes a transferable geometric abstraction system: start from Mandelbrot set,
+    Self-similarity, and Recursive, then route prompt content through planes, grids, vectors,
+    optical order, and deliberate formal reduction without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Infinite detail to break, flatten, triangulate,
+    align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Psychedelic gradient; treat color as structural contrast, field
+    separation, and rhythm rather than decorative wash, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Mathematical drive the light response: keep light graphic and structural, with shadows
+    simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Smooth as the tactile or mark-making basis; surfaces should read as designed planes, ink,
+    paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces,
+    or close material studies.
+  camera_and_composition: >-
+    Compose around Recursive as reusable spatial grammar: favor axial tension, repeated modules,
+    negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Infinite, trippy as the emotional register; derive mood from rigor, optical tension,
+    intellectual order, and abstraction pressure, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Math art, complex: finish with crisp geometry, controlled edges, clean separations,
+    and no accidental realism, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Mandelbrot set; Infinite detail; Psychedelic gradient; Mathematical; Smooth; Recursive;
+    Infinite, trippy; Math art, complex; Self-similarity
   creative_brief: >-
-    Apply fractal recursion to the input: self-similar branching, nested scale echoes, mathematical edge
-    repetition, and infinite-depth ornament should let any subject bloom into repeatable geometry.
+    Apply fractal recursion to the input: self-similar branching, nested scale echoes, mathematical
+    edge repetition, and infinite-depth ornament should let any subject bloom into repeatable
+    geometry.
 avoidRules:
   - simple
   - finite
+  - realistic perspective
+  - generic polygon filter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-006.webp
 attributes:
-  negativePrompt: simple, finite
+  negativePrompt: >-
+    simple, finite, realistic perspective, generic polygon filter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

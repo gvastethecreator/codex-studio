@@ -7,459 +7,679 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP09-017',
     name: 'Brushed Aluminum',
     category: '2. Man-Made Materials',
-    negativePrompt: 'chrome, mirror',
+    negativePrompt:
+      'chrome, mirror, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Metal surface',
-      subject_treatment: 'Micro scratches',
-      color_and_tone: 'Silver Grey',
-      lighting_and_shadow: 'Anisotropic',
-      texture_and_material: 'Fine lines',
+      aesthetic:
+        'Brushed Aluminum treats fabrication as visible style language: start from Metal surface, Fine lines, and Directional scratch, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Micro scratches: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Silver Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Anisotropic define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Brushed Aluminum without hiding the prompt subject.',
+      texture_and_material:
+        'Render Fine lines through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
       camera_and_composition:
-        'Compose for Brushed Aluminum using its key spatial cues: Directional scratch.',
-      atmosphere_and_mood: 'Modern, clean',
-      rendering_and_quality: 'Industrial, tech',
-      key_features: 'Directional scratch',
+        'Compose around Directional scratch as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Modern, clean by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Industrial, tech material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Metal surface; Micro scratches; Fine lines; Anisotropic; Directional scratch',
       creative_brief:
-        'Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the quiet face of contained complexity. Use Brushed Aluminum as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Brushed Aluminum as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render the industrial poetry of brushed aluminum where microscopic scratches align into a directional grain that catches light anisotropically across a field of silver-grey. The surface should feel cool and precise, a choral arrangement of parallel lines marching in disciplined formation. This is the skin of precision engineering, the quiet face of contained complexity. Use Brushed Aluminum as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-019',
     name: 'Gold Leaf',
     category: '2. Man-Made Materials',
-    negativePrompt: 'solid gold bar',
+    negativePrompt:
+      'solid gold bar, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Thin foil application',
-      subject_treatment: 'Crinkles and overlaps',
-      color_and_tone: 'Rich Gold',
-      lighting_and_shadow: 'Metallic reflection',
-      texture_and_material: 'Wrinkled foil',
-      camera_and_composition: 'Flaking',
-      atmosphere_and_mood: 'Expensive, fragile',
-      rendering_and_quality: 'Gilded, delicate',
-      key_features: 'Square sheets',
+      aesthetic:
+        'Gold Leaf treats fabrication as visible style language: start from Thin foil application, Wrinkled foil, and Flaking, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Crinkles and overlaps: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Rich Gold as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Metallic reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Gold Leaf without hiding the prompt subject.',
+      texture_and_material:
+        'Render Wrinkled foil through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Flaking as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Expensive, fragile by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Gilded, delicate material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        'Thin foil application; Crinkles and overlaps; Wrinkled foil; Metallic reflection; Flaking',
       creative_brief:
-        "Compose the fragile opulence of gold leaf applied in crinkled squares barely thicker than thought, where every wrinkle and overlap records the gilder's trembling hand in metallic memory. The surface should catch light like a held breath, areas of flat brilliance interrupted by the micro-topography of folded foil. Render the paradox of permanence made impossibly delicate. Use Gold Leaf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Route any subject through Gold Leaf as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the fragile opulence of gold leaf applied in crinkled squares barely thicker than thought, where every wrinkle and overlap records the gilder's trembling hand in metallic memory. The surface should catch light like a held breath, areas of flat brilliance interrupted by the micro-topography of folded foil. Render the paradox of permanence made impossibly delicate. Use Gold Leaf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-020',
     name: 'Copper Patina',
     category: '2. Man-Made Materials',
-    negativePrompt: 'new penny',
+    negativePrompt:
+      'new penny, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Aged copper patina',
-      subject_treatment: 'Drips',
-      color_and_tone: 'Verdigris (Teal/Green)',
-      lighting_and_shadow: 'Matte',
-      texture_and_material: 'Chalky oxidation',
-      camera_and_composition: 'Compose for Copper Patina using its key spatial cues: Green stains.',
-      atmosphere_and_mood: 'Historic, weathered',
-      rendering_and_quality: 'Historic, oxidized',
-      key_features: 'Green stains',
+      aesthetic:
+        'Copper Patina treats fabrication as visible style language: start from Aged copper patina, Chalky oxidation, and Green stains, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Drips: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Verdigris (Teal/Green) as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Copper Patina without hiding the prompt subject.',
+      texture_and_material:
+        'Render Chalky oxidation through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Green stains as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Historic, weathered by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Historic, oxidized material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Aged copper patina; Drips; Chalky oxidation; Matte; Green stains',
       creative_brief:
-        'Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust, vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue, object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered surface logic without requiring rooftops or monuments.',
+        "Route any subject through Copper Patina as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust, vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue, object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered surface logic without requiring rooftops or monuments.",
     },
   },
   {
     id: 'SP09-021',
     name: 'Carbon Fiber (Forged)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'woven pattern',
+    negativePrompt:
+      'woven pattern, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Chopped fiber composite',
-      subject_treatment: 'Random flakes',
-      color_and_tone: 'Black/Grey marble look',
-      lighting_and_shadow: 'Glossy clear coat',
-      texture_and_material: 'Smooth but visual depth',
+      aesthetic:
+        'Carbon Fiber (Forged) treats fabrication as visible style language: start from Chopped fiber composite, Smooth but visual depth, and Random flakes, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Random flakes: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Black/Grey marble look as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Glossy clear coat define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Carbon Fiber (Forged) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Smooth but visual depth through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
       camera_and_composition:
-        'Compose for Carbon Fiber (Forged) using its key spatial cues: Random flakes.',
-      atmosphere_and_mood: 'Fast, expensive',
-      rendering_and_quality: 'High tech, performance',
-      key_features: 'Random flakes',
+        'Compose around Random flakes as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Fast, expensive by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with High tech, performance material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        'Chopped fiber composite; Random flakes; Smooth but visual depth; Glossy clear coat; Random flakes',
       creative_brief:
-        'Render forged carbon fiber as performance material over the input: random black and grey flakes suspended in glossy resin, marble-like chaos, visual depth under clear coat, and engineered speed made solid. If vehicles, armor, tools, or tech exist, make them feel high-performance; otherwise apply chopped composite depth without requiring a supercar.',
+        "Route any subject through Carbon Fiber (Forged) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render forged carbon fiber as performance material over the input: random black and grey flakes suspended in glossy resin, marble-like chaos, visual depth under clear coat, and engineered speed made solid. If vehicles, armor, tools, or tech exist, make them feel high-performance; otherwise apply chopped composite depth without requiring a supercar.",
     },
   },
   {
     id: 'SP09-022',
     name: 'Concrete (Raw)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'polished, painted',
+    negativePrompt:
+      'polished, painted, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Construction wall',
-      subject_treatment: 'Formwork holes',
-      color_and_tone: 'Grey',
-      lighting_and_shadow: 'Matte',
-      texture_and_material: 'Porous, dusty',
-      camera_and_composition: 'Cracks',
-      atmosphere_and_mood: 'Cold, urban',
-      rendering_and_quality: 'Brutalist, industrial',
-      key_features: 'Air bubbles',
+      aesthetic:
+        'Concrete (Raw) treats fabrication as visible style language: start from Construction wall, Porous, dusty, and Cracks, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Formwork holes: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Concrete (Raw) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Porous, dusty through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Cracks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Cold, urban by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Brutalist, industrial material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Construction wall; Formwork holes; Porous, dusty; Matte; Cracks',
       creative_brief:
-        'Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban. Use Concrete as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Concrete (Raw) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the brutal honesty of raw concrete with its pinhole air bubbles and formwork tie-hole scars like a fossil record of the day it was poured. The surface must feel dusty and porous, grey as an overcast sky, heavy with the gravity of the built world. This is the face of function refusing to apologize, the unadorned truth of the urban. Use Concrete as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-023',
     name: 'Brick Wall (Aged)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'new, perfect',
+    negativePrompt:
+      'new, perfect, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Old masonry',
-      subject_treatment: 'Mortar lines',
-      color_and_tone: 'Red, Brown, White mortar',
-      lighting_and_shadow: 'Rough',
-      texture_and_material: 'Rough clay',
-      camera_and_composition: 'Chipped corners',
-      atmosphere_and_mood: 'Solid, history',
-      rendering_and_quality: 'Urban, historic',
-      key_features: 'Running bond',
+      aesthetic:
+        'Brick Wall (Aged) treats fabrication as visible style language: start from Old masonry, Rough clay, and Chipped corners, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Mortar lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Red, Brown, White mortar as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Rough define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Brick Wall (Aged) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Rough clay through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Chipped corners as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Solid, history by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Urban, historic material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Old masonry; Mortar lines; Rough clay; Rough; Chipped corners',
       creative_brief:
-        'Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have learned to breathe through chipped corners and softened edges. Use Brick Wall as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Brick Wall (Aged) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Capture the warm disorder of aged brick where every unit carries a unique blush of kiln fire and crumbling mortar maps the passage of decades between red clay bodies. The running bond pattern should feel like a woven tapestry of earth and fire, rough and uneven. Render the accumulated imperfection of walls that have learned to breathe through chipped corners and softened edges. Use Brick Wall as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-024',
     name: 'Asphalt (Wet)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'dry, desert',
+    negativePrompt:
+      'dry, desert, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Wet asphalt sheen',
-      subject_treatment: 'Slick grain and reflective streaks',
-      color_and_tone: 'Black, Grey',
-      lighting_and_shadow: 'Reflection of lights',
-      texture_and_material: 'Grainy tar',
-      camera_and_composition: 'Puddles',
-      atmosphere_and_mood: 'Urban, dark',
-      rendering_and_quality: 'Noir, reflective',
-      key_features: 'Gravel grain',
+      aesthetic:
+        'Asphalt (Wet) treats fabrication as visible style language: start from Wet asphalt sheen, Grainy tar, and Puddles, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Slick grain and reflective streaks: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Black, Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Reflection of lights define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Asphalt (Wet) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Grainy tar through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Puddles as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Urban, dark by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Noir, reflective material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        'Wet asphalt sheen; Slick grain and reflective streaks; Grainy tar; Reflection of lights; Puddles',
       creative_brief:
-        'Apply wet-asphalt noir to the input: black grain under a thin rainwater skin, reflective streaks, puddled distortion, and occasional neon-like color dissolving across rough tar. If road, city, or vehicle cues exist, intensify them; otherwise treat surfaces as dark urban mirrors without forcing road markings or street layout.',
+        "Route any subject through Asphalt (Wet) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply wet-asphalt noir to the input: black grain under a thin rainwater skin, reflective streaks, puddled distortion, and occasional neon-like color dissolving across rough tar. If road, city, or vehicle cues exist, intensify them; otherwise treat surfaces as dark urban mirrors without forcing road markings or street layout.",
     },
   },
   {
     id: 'SP09-026',
     name: 'Plastic (Injection Molded)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'metal, wood',
+    negativePrompt:
+      'metal, wood, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Injection molded plastic',
-      subject_treatment: 'Parting lines',
-      color_and_tone: 'Bright, saturated',
-      lighting_and_shadow: 'Subsurface scattering (slight)',
-      texture_and_material: 'Smooth or orange peel',
-      camera_and_composition: 'Sink marks',
-      atmosphere_and_mood: 'Artificial, toy',
-      rendering_and_quality: 'Mass produced, cheap',
-      key_features: 'Uniform color',
+      aesthetic:
+        'Plastic (Injection Molded) treats fabrication as visible style language: start from Injection molded plastic, Smooth or orange peel, and Sink marks, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Parting lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Bright, saturated as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Subsurface scattering (slight) define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Plastic (Injection Molded) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Smooth or orange peel through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Sink marks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Artificial, toy by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Mass produced, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        'Injection molded plastic; Parting lines; Smooth or orange peel; Subsurface scattering (slight); Sink marks',
       creative_brief:
-        'Apply injection-molded plastic language to the input: saturated uniform color, faint parting lines, subtle sink marks, slight orange-peel texture, and edge translucency from shallow subsurface light. If toy, product, prop, or casing exists, reinforce manufacture; otherwise convert surfaces into artificial molded material without requiring a consumer product shot.',
+        "Route any subject through Plastic (Injection Molded) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply injection-molded plastic language to the input: saturated uniform color, faint parting lines, subtle sink marks, slight orange-peel texture, and edge translucency from shallow subsurface light. If toy, product, prop, or casing exists, reinforce manufacture; otherwise convert surfaces into artificial molded material without requiring a consumer product shot.",
     },
   },
   {
     id: 'SP09-027',
     name: 'Rubber (Tire)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'shiny plastic',
+    negativePrompt:
+      'shiny plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Tire-grade rubber tread',
-      subject_treatment: 'Treads',
-      color_and_tone: 'Black',
-      lighting_and_shadow: 'Matte',
-      texture_and_material: 'Grippy, nubby',
+      aesthetic:
+        'Rubber (Tire) treats fabrication as visible style language: start from Tire-grade rubber tread, Grippy, nubby, and Tread pattern, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Treads: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Rubber (Tire) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Grippy, nubby through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
       camera_and_composition:
-        'Compose for Rubber (Tire) using its key spatial cues: Tread pattern.',
-      atmosphere_and_mood: 'Functional, dirty',
-      rendering_and_quality: 'Industrial, durable',
-      key_features: 'Tread pattern',
+        'Compose around Tread pattern as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Functional, dirty by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Industrial, durable material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Tire-grade rubber tread; Treads; Grippy, nubby; Matte; Tread pattern',
       creative_brief:
-        'Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car tire.',
+        "Route any subject through Rubber (Tire) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car tire.",
     },
   },
   {
     id: 'SP09-028',
     name: 'Glass (Shattered)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'window, clean',
+    negativePrompt:
+      'window, clean, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Broken window',
-      subject_treatment: 'Sharp cracks',
-      color_and_tone: 'Clear, Green edge',
-      lighting_and_shadow: 'Refractive sparkles',
-      texture_and_material: 'Sharp shards',
-      camera_and_composition: 'Fragmented',
-      atmosphere_and_mood: 'Dangerous, sudden',
-      rendering_and_quality: 'Destruction, accident',
-      key_features: 'Spiderweb crack',
+      aesthetic:
+        'Glass (Shattered) treats fabrication as visible style language: start from Broken window, Sharp shards, and Fragmented, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Sharp cracks: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Clear, Green edge as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Refractive sparkles define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Glass (Shattered) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Sharp shards through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Fragmented as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Dangerous, sudden by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Destruction, accident material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Broken window; Sharp cracks; Sharp shards; Refractive sparkles; Fragmented',
       creative_brief:
-        'Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a spiderweb of sharp light, green edges catching refractive glints like dangerous confetti. Each shard must retain its own angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment between integrity and collapse, transparent catastrophe arrested mid-breath. Use Glass as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Glass (Shattered) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the frozen violence of shattered glass where radial cracks bloom from an impact center in a spiderweb of sharp light, green edges catching refractive glints like dangerous confetti. Each shard must retain its own angle of reflection, fragmenting the world behind it into a cubist mosaic. Capture the moment between integrity and collapse, transparent catastrophe arrested mid-breath. Use Glass as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-031',
     name: 'Latex (Shiny)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'matte, cloth',
+    negativePrompt:
+      'matte, cloth, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Tight rubber',
-      subject_treatment: 'Stretch lines',
-      color_and_tone: 'Black or Red',
-      lighting_and_shadow: 'High specularity',
-      texture_and_material: 'Smooth, sticky',
-      camera_and_composition: 'Tight fit',
-      atmosphere_and_mood: 'Intense, sleek',
-      rendering_and_quality: 'Sleek, high-specular',
-      key_features: 'Highlights',
+      aesthetic:
+        'Latex (Shiny) treats fabrication as visible style language: start from Tight rubber, Smooth, sticky, and Tight fit, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Stretch lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Black or Red as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let High specularity define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Latex (Shiny) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Smooth, sticky through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Tight fit as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Intense, sleek by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Sleek, high-specular material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Tight rubber; Stretch lines; Smooth, sticky; High specularity; Tight fit',
       creative_brief:
-        'Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights, black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character, costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract finish without requiring a body pose or genre scene.',
+        "Route any subject through Latex (Shiny) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose shiny latex as a tight reflective surface treatment over the input: liquid specular highlights, black or red high-gloss tension, stretch lines following form, and a slick second-skin fit. If character, costume, or object exists, wrap it closely; otherwise use latex reflectivity and smoothness as abstract finish without requiring a body pose or genre scene.",
     },
   },
   {
     id: 'SP09-032',
     name: 'Cardboard',
     category: '2. Man-Made Materials',
-    negativePrompt: 'wood, plastic',
+    negativePrompt:
+      'wood, plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Shipping box',
-      subject_treatment: 'Corrugation lines',
-      color_and_tone: 'Kraft brown',
-      lighting_and_shadow: 'Matte',
-      texture_and_material: 'Paper pulp',
-      camera_and_composition: 'Creased',
-      atmosphere_and_mood: 'Trash, storage',
-      rendering_and_quality: 'Cheap, disposable',
-      key_features: 'Corrugation',
+      aesthetic:
+        'Cardboard treats fabrication as visible style language: start from Shipping box, Paper pulp, and Creased, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Corrugation lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Kraft brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Cardboard without hiding the prompt subject.',
+      texture_and_material:
+        'Render Paper pulp through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Creased as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Trash, storage by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Cheap, disposable material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Shipping box; Corrugation lines; Paper pulp; Matte; Creased',
       creative_brief:
-        'Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait. Use Cardboard as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Cardboard as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Capture the humble architecture of corrugated cardboard where a hidden fluted layer creates ribs of structure beneath a kraft-paper skin of warm brown, edges softened by handling and corners creased with use. The surface should feel dry and fibrous, a material whose very appearance suggests disposability rendered permanent. Render the poetics of the temporary, the shipping box as inadvertent portrait. Use Cardboard as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-042',
     name: 'Bubble Wrap',
     category: '2. Man-Made Materials',
-    negativePrompt: 'flat plastic',
+    negativePrompt:
+      'flat plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Packing material',
-      subject_treatment: 'Circles',
-      color_and_tone: 'Clear plastic',
-      lighting_and_shadow: 'Highlights on bubbles',
-      texture_and_material: 'Plastic, air filled',
-      camera_and_composition: 'Bubbles',
-      atmosphere_and_mood: 'Protective, cheap',
-      rendering_and_quality: 'Disposable, fun',
-      key_features: 'Grid of bubbles',
+      aesthetic:
+        'Bubble Wrap treats fabrication as visible style language: start from Packing material, Plastic, air filled, and Bubbles, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Circles: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Clear plastic as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Highlights on bubbles define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Bubble Wrap without hiding the prompt subject.',
+      texture_and_material:
+        'Render Plastic, air filled through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Bubbles as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Protective, cheap by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Disposable, fun material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        'Packing material; Circles; Plastic, air filled; Highlights on bubbles; Bubbles',
       creative_brief:
-        "Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
+        "Route any subject through Bubble Wrap as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the playful geometry of bubble wrap where transparent plastic domes rise in neat grids, each one a pocket of trapped air awaiting release, highlights dancing across every bubble's crown like tiny lenses of protection. The clear plastic should catch light with a faint sheen that reveals the ordered army of hemispheres beneath. Capture the material of anticipation, joy molded in polyethylene. Use Bubble Wrap as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-046',
     name: 'Sequins',
     category: '2. Man-Made Materials',
-    negativePrompt: 'matte fabric',
+    negativePrompt:
+      'matte fabric, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Disco dress',
-      subject_treatment: 'Overlapping discs',
-      color_and_tone: 'Metallic, reversible',
-      lighting_and_shadow: 'Sparkle',
-      texture_and_material: 'Scaly plastic',
-      camera_and_composition: 'Flipping',
-      atmosphere_and_mood: 'Party, flashy',
-      rendering_and_quality: 'Glam, cheap',
-      key_features: 'Scale pattern',
+      aesthetic:
+        'Sequins treats fabrication as visible style language: start from Disco dress, Scaly plastic, and Flipping, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Overlapping discs: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Metallic, reversible as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Sparkle define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sequins without hiding the prompt subject.',
+      texture_and_material:
+        'Render Scaly plastic through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Flipping as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Party, flashy by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Glam, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Disco dress; Overlapping discs; Scaly plastic; Sparkle; Flipping',
       creative_brief:
-        'Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of unapologetic shine, fashion as optical event. Use Sequins as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Sequins as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the kinetic glitter of sequins overlapping like metallic scales, each disc a tiny mirror that flips between two worlds of color with every shift of light, creating a surface that refuses to be still. The scaly plastic should catch sparkle at a thousand points simultaneously, cheap and glamorous in equal measure. Capture the joy of unapologetic shine, fashion as optical event. Use Sequins as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-048',
     name: 'Cork Board',
     category: '2. Man-Made Materials',
-    negativePrompt: 'wood grain',
+    negativePrompt:
+      'wood grain, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Bulletin board',
-      subject_treatment: "Treat subjects through Cork Board's signature cues: Granules.",
-      color_and_tone: 'Tan, Brown chips',
-      lighting_and_shadow: 'Matte',
-      texture_and_material: 'Compressed granules',
-      camera_and_composition: 'Pinhole',
-      atmosphere_and_mood: 'Functional, dry',
-      rendering_and_quality: 'Office, school',
-      key_features: 'Granules',
+      aesthetic:
+        'Cork Board treats fabrication as visible style language: start from Bulletin board, Compressed granules, and Pinhole, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        "Transform any prompt subject through Treat subjects through Cork Board's signature cues: Granules: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.",
+      color_and_tone:
+        "Use Tan, Brown chips as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Cork Board without hiding the prompt subject.',
+      texture_and_material:
+        'Render Compressed granules through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Pinhole as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Functional, dry by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Office, school material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        "Bulletin board; Treat subjects through Cork Board's signature cues: Granules; Compressed granules; Matte; Pinhole",
       creative_brief:
-        'Capture the granular texture of cork board where compressed flecks of bark create a surface of brown confetti held in quiet suspension, the pinholes of past notices dotting the field like a scattered constellation. The material should feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render the poetry of the bulletin, surface as archive of pinned intentions. Use Cork Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Cork Board as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Capture the granular texture of cork board where compressed flecks of bark create a surface of brown confetti held in quiet suspension, the pinholes of past notices dotting the field like a scattered constellation. The material should feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render the poetry of the bulletin, surface as archive of pinned intentions. Use Cork Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-049',
     name: 'Velcro',
     category: '2. Man-Made Materials',
-    negativePrompt: 'smooth',
+    negativePrompt:
+      'smooth, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Hook and loop',
-      subject_treatment: 'Tiny hooks',
-      color_and_tone: 'Black',
-      lighting_and_shadow: 'Plastic glint',
-      texture_and_material: 'Scratchy',
-      camera_and_composition: 'Compose for Velcro using its key spatial cues: Rows of hooks.',
-      atmosphere_and_mood: 'Functional',
-      rendering_and_quality: 'Utility, fastener',
-      key_features: 'Rows of hooks',
+      aesthetic:
+        'Velcro treats fabrication as visible style language: start from Hook and loop, Scratchy, and Rows of hooks, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Tiny hooks: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Plastic glint define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Velcro without hiding the prompt subject.',
+      texture_and_material:
+        'Render Scratchy through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Rows of hooks as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Functional by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Utility, fastener material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Hook and loop; Tiny hooks; Scratchy; Plastic glint; Rows of hooks',
       creative_brief:
-        'Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the fastener, engineered grip designed at millimeter scale. Use Velcro as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Velcro as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the beauty of the fastener, engineered grip designed at millimeter scale. Use Velcro as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-060',
     name: 'Mercury (Liquid Metal)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'solid silver',
+    negativePrompt:
+      'solid silver, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Toxic metal drops',
-      subject_treatment: 'Rounded blobs',
-      color_and_tone: 'Chrome',
-      lighting_and_shadow: 'Mirror reflection',
-      texture_and_material: 'Liquid metal',
-      camera_and_composition: 'Coalescing',
-      atmosphere_and_mood: 'Sci-fi, fluid',
-      rendering_and_quality: 'T-1000, dangerous',
-      key_features: 'High surface tension',
+      aesthetic:
+        'Mercury (Liquid Metal) treats fabrication as visible style language: start from Toxic metal drops, Liquid metal, and Coalescing, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Rounded blobs: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Chrome as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Mirror reflection define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Mercury (Liquid Metal) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Liquid metal through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Coalescing as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Sci-fi, fluid by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with T-1000, dangerous material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Toxic metal drops; Rounded blobs; Liquid metal; Mirror reflection; Coalescing',
       creative_brief:
-        'Summon the alien fluidity of liquid mercury beading into chrome spheres of impossible surface tension, each drop a convex mirror reflecting a distorted world in silver curves. The material must feel both mesmerizing and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture the aesthetics of the untouchable, metal that refuses to be solid. Use Mercury as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Mercury (Liquid Metal) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the alien fluidity of liquid mercury beading into chrome spheres of impossible surface tension, each drop a convex mirror reflecting a distorted world in silver curves. The material must feel both mesmerizing and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture the aesthetics of the untouchable, metal that refuses to be solid. Use Mercury as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-070',
     name: 'Polystyrene (Styrofoam)',
     category: '2. Man-Made Materials',
-    negativePrompt: 'smooth plastic',
+    negativePrompt:
+      'smooth plastic, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Packing foam',
-      subject_treatment: 'Beads',
-      color_and_tone: 'White',
-      lighting_and_shadow: 'Subsurface scattering',
-      texture_and_material: 'Beaded',
-      camera_and_composition: 'Broken beads',
-      atmosphere_and_mood: 'Disposable, white',
-      rendering_and_quality: 'Cheap, packaging',
-      key_features: 'Cell structure',
+      aesthetic:
+        'Polystyrene (Styrofoam) treats fabrication as visible style language: start from Packing foam, Beaded, and Broken beads, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Beads: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Subsurface scattering define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Polystyrene (Styrofoam) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Beaded through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Broken beads as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Disposable, white by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Cheap, packaging material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Packing foam; Beads; Beaded; Subsurface scattering; Broken beads',
       creative_brief:
-        'Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology. Use Polystyrene as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Polystyrene (Styrofoam) as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the cellular geometry of expanded polystyrene where fused white beads create a surface of dimpled spheres, each one a tiny void of trapped air, the subsurface scattering giving the material a ghostly translucence at the edges. Broken beads should reveal the internal cell structure like a cross-section of frozen foam. Capture the accidental sculpture of the disposable, packaging as industrial archaeology. Use Polystyrene as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-071',
     name: 'Plywood',
     category: '2. Man-Made Materials',
-    negativePrompt: 'solid wood',
+    negativePrompt:
+      'solid wood, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Construction sheet',
-      subject_treatment: 'Layers on edge',
-      color_and_tone: 'Yellow pine',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Rotary cut grain',
-      camera_and_composition: 'Splinters',
-      atmosphere_and_mood: 'Unfinished, work',
-      rendering_and_quality: 'Construction, cheap',
-      key_features: 'Knots',
+      aesthetic:
+        'Plywood treats fabrication as visible style language: start from Construction sheet, Rotary cut grain, and Splinters, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Layers on edge: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Yellow pine as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Flat define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Plywood without hiding the prompt subject.',
+      texture_and_material:
+        'Render Rotary cut grain through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Splinters as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Unfinished, work by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Construction, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Construction sheet; Layers on edge; Rotary cut grain; Flat; Splinters',
       creative_brief:
-        'Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the provisional, wood made efficient. Use Plywood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Plywood as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its veneers. Capture the beauty of the provisional, wood made efficient. Use Plywood as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-072',
     name: 'OSB Board',
     category: '2. Man-Made Materials',
-    negativePrompt: 'plywood',
+    negativePrompt:
+      'plywood, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Chipboard',
-      subject_treatment: 'Wood chips',
-      color_and_tone: 'Tan, Brown',
-      lighting_and_shadow: 'Rough',
-      texture_and_material: 'Compressed chips',
-      camera_and_composition: 'Compose for OSB Board using its key spatial cues: Random chips.',
-      atmosphere_and_mood: 'Industrial, cheap',
-      rendering_and_quality: 'Construction, rough',
-      key_features: 'Random chips',
+      aesthetic:
+        'OSB Board treats fabrication as visible style language: start from Chipboard, Compressed chips, and Random chips, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Wood chips: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Tan, Brown as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Rough define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal OSB Board without hiding the prompt subject.',
+      texture_and_material:
+        'Render Compressed chips through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Random chips as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Industrial, cheap by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Construction, rough material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Chipboard; Wood chips; Compressed chips; Rough; Random chips',
       creative_brief:
-        'Compose the chaotic mosaic of oriented strand board where random wood chips and flakes are compressed into a field of tan confetti under amber resin, every fragment a different shape locked into accidental harmony. The surface should feel rough and industrial, a texture of engineered expedience that wears its construction proudly. Capture the accidental beauty of the cheap, structure assembled from forest fragments. Use OSB Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through OSB Board as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the chaotic mosaic of oriented strand board where random wood chips and flakes are compressed into a field of tan confetti under amber resin, every fragment a different shape locked into accidental harmony. The surface should feel rough and industrial, a texture of engineered expedience that wears its construction proudly. Capture the accidental beauty of the cheap, structure assembled from forest fragments. Use OSB Board as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-073',
     name: 'Linoleum Floor',
     category: '2. Man-Made Materials',
-    negativePrompt: 'tile, wood',
+    negativePrompt:
+      'tile, wood, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Retro linoleum pattern',
-      subject_treatment: 'Printed pattern',
-      color_and_tone: 'Beige, pattern',
-      lighting_and_shadow: 'Waxy sheen',
-      texture_and_material: 'Smooth plastic',
-      camera_and_composition: 'Peeling corner',
-      atmosphere_and_mood: 'Nostalgic, home',
-      rendering_and_quality: 'Retro, cheap',
-      key_features: 'Repeat pattern',
+      aesthetic:
+        'Linoleum Floor treats fabrication as visible style language: start from Retro linoleum pattern, Smooth plastic, and Peeling corner, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Printed pattern: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Beige, pattern as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Waxy sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Linoleum Floor without hiding the prompt subject.',
+      texture_and_material:
+        'Render Smooth plastic through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Peeling corner as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Nostalgic, home by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Retro, cheap material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        'Retro linoleum pattern; Printed pattern; Smooth plastic; Waxy sheen; Peeling corner',
       creative_brief:
-        'Apply retro linoleum as printed material system: waxy beige surface, repeating mid-century motifs, smooth plastic tiredness, slight peeling corners, and nostalgic cheapness preserved in vinyl. If floor, interior, prop, or product exists, let pattern sit on it; otherwise use linoleum repetition and worn sheen as graphic surface treatment without requiring a kitchen.',
+        "Route any subject through Linoleum Floor as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Apply retro linoleum as printed material system: waxy beige surface, repeating mid-century motifs, smooth plastic tiredness, slight peeling corners, and nostalgic cheapness preserved in vinyl. If floor, interior, prop, or product exists, let pattern sit on it; otherwise use linoleum repetition and worn sheen as graphic surface treatment without requiring a kitchen.",
     },
   },
   {
     id: 'SP09-076',
     name: 'Chain Link Fence',
     category: '2. Man-Made Materials',
-    negativePrompt: 'wood fence',
+    negativePrompt:
+      'wood fence, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Metal diamond mesh',
-      subject_treatment: 'Wire diamonds',
-      color_and_tone: 'Galvanized Grey',
-      lighting_and_shadow: 'Metallic',
-      texture_and_material: 'Woven wire',
-      camera_and_composition: 'Bent',
-      atmosphere_and_mood: 'Restricted, urban',
-      rendering_and_quality: 'Urban, barrier',
-      key_features: 'Diamond grid',
+      aesthetic:
+        'Chain Link Fence treats fabrication as visible style language: start from Metal diamond mesh, Woven wire, and Bent, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Wire diamonds: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Galvanized Grey as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Metallic define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Chain Link Fence without hiding the prompt subject.',
+      texture_and_material:
+        'Render Woven wire through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Bent as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Restricted, urban by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Urban, barrier material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Metal diamond mesh; Wire diamonds; Woven wire; Metallic; Bent',
       creative_brief:
-        'Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the beauty of the permeable boundary, exclusion made transparent. Use Chain Link Fence as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Chain Link Fence as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Compose the industrial grid of galvanized chain link where woven wire diamonds repeat into infinity, a barrier you can see through that separates without concealing, each intersection a knot of exclusion. The metallic surface should catch light in dull silver repetitions, bending where impact has shaped the mesh into memory. Capture the beauty of the permeable boundary, exclusion made transparent. Use Chain Link Fence as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-077',
     name: 'Barbed Wire',
     category: '2. Man-Made Materials',
-    negativePrompt: 'smooth wire',
+    negativePrompt:
+      'smooth wire, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Fencing wire',
-      subject_treatment: 'Twisted wire + barbs',
-      color_and_tone: 'Rusty metal',
-      lighting_and_shadow: 'Sharp highlights',
-      texture_and_material: 'Sharp',
-      camera_and_composition: 'Coiled',
-      atmosphere_and_mood: 'Dangerous, forbidden',
-      rendering_and_quality: 'Prison, war',
-      key_features: 'Barbs every few inches',
+      aesthetic:
+        'Barbed Wire treats fabrication as visible style language: start from Fencing wire, Sharp, and Coiled, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Twisted wire + barbs: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Rusty metal as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Sharp highlights define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Barbed Wire without hiding the prompt subject.',
+      texture_and_material:
+        'Render Sharp through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Coiled as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Dangerous, forbidden by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Prison, war material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Fencing wire; Twisted wire + barbs; Sharp; Sharp highlights; Coiled',
       creative_brief:
-        'Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened barbs bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges of exposure. Each barb should catch a sharp highlight, a glint of warning written in steel along the coil. Capture the aesthetics of the forbidden, a line drawn in wire and consequence. Use Barbed Wire as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Barbed Wire as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Render the hostile geometry of barbed wire where twisted strands spiral around a core line, sharpened barbs bristling at regular intervals like a metal vine bred for pain, rust painting the surface in oranges of exposure. Each barb should catch a sharp highlight, a glint of warning written in steel along the coil. Capture the aesthetics of the forbidden, a line drawn in wire and consequence. Use Barbed Wire as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-078',
     name: 'Solar Panel',
     category: '2. Man-Made Materials',
-    negativePrompt: 'window',
+    negativePrompt:
+      'window, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Photovoltaic cell',
-      subject_treatment: 'Grid lines',
-      color_and_tone: 'Dark Blue/Black',
-      lighting_and_shadow: 'Anti-reflective',
-      texture_and_material: 'Glass grid',
-      camera_and_composition: 'Compose for Solar Panel using its key spatial cues: Grid.',
-      atmosphere_and_mood: 'Modern, eco',
-      rendering_and_quality: 'Tech, green energy',
-      key_features: 'Grid',
+      aesthetic:
+        'Solar Panel treats fabrication as visible style language: start from Photovoltaic cell, Glass grid, and Grid, then turn manufacturing process, tooling marks, seams, tolerances, and industrial material behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Grid lines: preserve identity and pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Dark Blue/Black as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Anti-reflective define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Solar Panel without hiding the prompt subject.',
+      texture_and_material:
+        'Render Glass grid through constructed regularity, stress points, joins, molded edges, and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Grid as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Modern, eco by using use, fabrication, utility, and cultural material association; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Tech, green energy material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Photovoltaic cell; Grid lines; Glass grid; Anti-reflective; Grid',
       creative_brief:
-        'Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future. Use Solar Panel as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Solar Panel as a transferable man-made material visual system while preserving the prompt's subject, action, and setting. Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future. Use Solar Panel as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

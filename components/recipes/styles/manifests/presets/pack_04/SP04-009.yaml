@@ -12,26 +12,81 @@ tags:
   - illustration-and-graphic-novel
   - comic-book-styles
 visualDna:
-  aesthetic: Underground comix ink density (R. Crumb-inspired counterculture draftsmanship)
-  subject_treatment: Nervous wobble contours with obsessive crosshatch layering
-  color_and_tone: High-contrast black-and-white with dense hatch midtones
-  lighting_and_shadow: Shadow built by manual hatch fields and texture accumulation
-  texture_and_material: Rough print-paper feel with visible hand-ink irregularity
-  camera_and_composition: Grotesque exaggeration and elastic anatomy choices
-  atmosphere_and_mood: Subversive, satirical, abrasive, id-driven
-  rendering_and_quality: Raw, hand-forged, anti-polish comic finish
-  key_features: Heavy hatch webs, warped panel borders, hyper-detailed clutter zones
+  aesthetic: >-
+    Underground Comix acts as a transferable illustration router: start from Underground comix ink
+    density (R. Crumb-inspired counterculture draftsmanship), Heavy hatch webs, warped panel
+    borders, hyper-detailed clutter zones and comic-illustration system built from ink hierarchy,
+    panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then
+    apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Nervous wobble contours with obsessive crosshatch layering;
+    preserve the requested subject while translating form into panel-ready silhouettes, expressive
+    contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the preset
+    calls for it, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with High-contrast black-and-white with dense hatch midtones; treat color as comic
+    production language: four-color plates, limited spot color, manga monochrome, digital flats,
+    noir contrast, webtoon gradients, or painted page atmosphere, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Shadow built by manual hatch fields and texture accumulation; make light
+    read through ink spotting, cel-like value blocks, dramatic rim separation, flat print fill, or
+    painted page modeling rather than generic studio illumination, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Rough print-paper feel with visible hand-ink irregularity; surface detail should reveal
+    paper tooth, newsprint dots, screen tones, digital brush layers, ink pools, gutter discipline,
+    or pixel cells at a scale that supports the drawing, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Grotesque exaggeration and elastic anatomy choices; compose with
+    panel logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll
+    pacing without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Subversive, satirical, abrasive, id-driven, mood carried by Underground Comix
+    craft, material pressure, and visual restraint; derive mood from era, genre pressure, satire,
+    melodrama, horror obsession, pulp energy, or graphic-novel seriousness, letting the style alter
+    interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Raw, hand-forged, anti-polish comic finish; finish with clear ink decisions,
+    readable stylization, controlled artifacting, and no generic superhero costume or random comic
+    text replacing the prompt, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Underground comix ink density (R. Crumb-inspired counterculture draftsmanship); Heavy hatch
+    webs, warped panel borders, hyper-detailed clutter zones; High-contrast black-and-white with
+    dense hatch midtones; Rough print-paper feel with visible hand-ink irregularity; Grotesque
+    exaggeration and elastic anatomy choices
   creative_brief: >-
-    Apply underground comix attitude to any input: restless hand energy, crosshatch mass, unstable contour
-    rhythm, grotesque proportion shifts, and abrasive print density should carry counterculture tension
-    without requiring crowds, street satire, cluttered rooms, caricature figures, or a fixed scene setup.
+    Apply Underground Comix as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Underground comix ink density (R. Crumb-inspired counterculture draftsmanship), Heavy hatch
+    webs, warped panel borders, hyper-detailed clutter zones, Rough print-paper feel with visible
+    hand-ink irregularity without requiring the card image's original subject.
 avoidRules:
   - clean
   - mainstream
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic superhero costume
+  - random speech text
+  - fake lettering
+  - photo-real costume render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-009.webp
 attributes:
-  negativePrompt: clean, mainstream
+  negativePrompt: >-
+    clean, mainstream, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    generic superhero costume, random speech text, fake lettering, photo-real costume render
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

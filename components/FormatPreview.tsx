@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { MotionDiv, AnimatePresence } from 'motion/react';
+import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import { AspectRatio } from '../types';
 import { getImageGenSizeForRatio } from '../utils/imageGenSizing';
 

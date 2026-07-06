@@ -13,30 +13,60 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Inside of shell
-  subject_treatment: Layers
-  color_and_tone: Iridescent White/Pink
-  lighting_and_shadow: Pearlescent
-  texture_and_material: Smooth, organic
-  camera_and_composition: Curved
-  atmosphere_and_mood: Delicate, ocean
-  rendering_and_quality: Precious, natural
-  key_features: Luster
+  aesthetic: >-
+    Mother of Pearl translates natural material behavior into form: start from Inside of shell,
+    Smooth, organic, and Curved, then turn natural formation, growth, erosion, and geological or
+    biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Layers: preserve identity and pose while letting forms
+    grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Iridescent White/Pink as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Pearlescent define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Mother of Pearl without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Smooth, organic through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Curved as reusable material rhythm: macro-friendly for texture tasks, but able to
+    wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Delicate, ocean by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Precious, natural material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Inside of shell; Layers; Smooth, organic; Pearlescent; Curved
   creative_brief: >-
-    Compose the luminous interior of nautilus shell where iridescent layers shift between white, pink, and
-    pale green like a pastel aurora frozen in calcium, pearlescent light swimming across the curved surface
-    without source or destination. The material should glow without emitting, reflecting a spectrum that seems
-    to come from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster
-    born of slow patience. Use Mother of Pearl as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
-    material naturally appears.
+    Route any subject through Mother of Pearl as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Compose the luminous interior of nautilus
+    shell where iridescent layers shift between white, pink, and pale green like a pastel aurora
+    frozen in calcium, pearlescent light swimming across the curved surface without source or
+    destination. The material should glow without emitting, reflecting a spectrum that seems to come
+    from nowhere within the shell's architecture. Capture the ocean's quietest masterpiece, luster
+    born of slow patience. Use Mother of Pearl as portable surface/render behavior over any input:
+    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
+    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or
+    scene where the material naturally appears.
 avoidRules:
   - plastic
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-079.webp
 attributes:
-  negativePrompt: plastic
+  negativePrompt: plastic, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

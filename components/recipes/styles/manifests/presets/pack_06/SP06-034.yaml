@@ -12,19 +12,48 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: Stone print
-  subject_treatment: Crayon-like texture
-  color_and_tone: Soft blacks, greys
-  lighting_and_shadow: Soft
-  texture_and_material: Limestone grain
-  camera_and_composition: 'Compose for Lithography using its key spatial cues: Grainy texture.'
-  atmosphere_and_mood: Artistic, soft
-  rendering_and_quality: Stone-print poster softness with faithfully transferred crayon grain
-  key_features: Grainy texture
+  aesthetic: >-
+    Lithography acts as a transferable art-medium router: start from Stone print, Grainy texture and
+    print-process system built from matrix marks, ink transfer, pressure, registration, plate or
+    block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Crayon like texture; preserve the prompt subject while
+    converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
+    systems, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Soft blacks, greys; use palette as ink behavior: limited plates, overprint,
+    misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey
+    restraint, with deliberate value grouping, accent control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Soft; translate light into line density, dot frequency, relief shadow,
+    plate tone, paper reserve, or ink coverage rather than photographic illumination, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Limestone grain; surface detail should reveal paper fibers, plate marks, burr, gouge,
+    rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Lithography using its key spatial cues: Grainy texture;
+    compose through print registration, cut rhythm, border pressure, edition-like balance, negative
+    space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy
+    doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Artistic, soft; derive mood from hand pressure, mechanical reproduction, archival
+    value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Stone print poster softness with faithfully transferred crayon grain; finish as a
+    credible print artifact with exact mark logic, restrained texture, and no fake poster text or
+    random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
+  key_features: Stone print; Grainy texture; Soft blacks, greys; Limestone grain
   creative_brief: >-
-    Apply lithographic print behavior to any input: crayon-like stone grain, grease-water separation, soft
-    tonal transfer, paper pressure, and subtle speckled drawing texture. Keep chemical print softness without
-    requiring posters, portraits, theatre bills, stones, or edition markings.
+    Apply Lithography as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Stone
+    print, Grainy texture, Limestone grain without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +70,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - fake poster text
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-034.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital
+    gradient, random distress overlay, wrong print process
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

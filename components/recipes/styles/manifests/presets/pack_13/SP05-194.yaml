@@ -13,32 +13,60 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Revolutionary-baroque shojo grammar combining court portrait grandeur, political tension undertones, and
-    tragic romantic nobility
+    Rose of Versailles - Court Portrait Revolution operates as a portable anime-lifestyle router:
+    combine Rose of Versailles - Court Portrait Revolution identity cues through Baroque ornament;
+    lace and martial contrast; court portrait poses; revolutionary tension; tear bright dramatic
+    gazes; Court Portrait Revolution with Rose of Versailles lineage used only as style reference
+    with shojo, magical girl, and visionary classic anime grammar with symbolic romance,
+    transformation sparkle, ornate contour, emotional close reading, and theatrical abstraction;
+    Rose of Versailles may guide line economy, acting, color, and period flavor but must not force
+    canon cast, title scenes, logos, or copied costumes, so the preset supplies anime style behavior
+    after prompt X rather than a required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Ornate portrait silhouette hierarchy, martial-and-lace contour interplay, dramatic profile line emphasis,
-    and ceremonial pose rigor
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Powdered ivory, royal blue and wine-red authority tones, antique gold ornament, candle-amber highlights,
-    and storm-gray dramatic shadows
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Chandelier-like and candle key light, painterly portrait falloff, velvet-shadow depth, and high-contrast
-    edge illumination for dueling tensions
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Brocade and lace detailing, polished metal reflections, powdered fabric softness, carved gilt-frame
-    surfaces, and marble-like accents
-  camera_and_composition: Court-stage perspective stretching to emphasize rank distance and impending upheaval tension
-  atmosphere_and_mood: Regal, tragic, historic, operatic
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
+  camera_and_composition: >-
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    Operatic classic-shojo rendering with aristocratic detail clarity, portrait-theatre composition, and
-    high-emotion historical polish
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
   key_features: >-
-    Baroque ornament, lace-and-martial contrast, court portrait poses, revolutionary tension, tear-bright
-    dramatic gazes
+    Baroque ornament; lace and martial contrast; court portrait poses; revolutionary tension; tear
+    bright dramatic gazes; Court Portrait Revolution with Rose of Versailles lineage used only as
+    style reference
   creative_brief: >-
-    Ennoble the input with Versailles court revolution: powdered ivory, royal blue and wine-red authority,
-    lace-versus-martial contour tension, candlelit portrait falloff, and operatic tragic gravity can transform
-    any subject without requiring a palace, court figure, duel, or historical scene.
+    Use Rose of Versailles - Court Portrait Revolution after prompt X as a transferable anime
+    character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while the preset supplies Baroque ornament, lace and martial contrast, court portrait poses,
+    revolutionary tension, tear bright dramatic gazes, Court Portrait Revolution with Rose of
+    Versailles lineage used only as style reference, color logic, lighting, material finish,
+    composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed
+    venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -52,12 +80,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-194.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

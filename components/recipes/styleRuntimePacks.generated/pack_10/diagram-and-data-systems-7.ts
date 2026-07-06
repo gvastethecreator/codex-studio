@@ -7,36 +7,56 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-067',
     name: 'Circuit Board',
     category: '7. Diagram And Data Systems',
-    negativePrompt: 'organic',
+    negativePrompt:
+      'organic, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'PCB traces',
-      subject_treatment: '45 degree angles',
-      color_and_tone: 'Green, Gold, Copper',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Fiberglass',
-      camera_and_composition: 'Compose for Circuit Board using its key spatial cues: Traces.',
-      atmosphere_and_mood: 'Smart, complex',
-      rendering_and_quality: 'Tech, electronic',
-      key_features: 'Traces',
+      aesthetic:
+        'Circuit Board becomes a transferable diagram and information-graphic system: start from PCB traces, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using 45 degree angles to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Green, Gold, Copper; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Fiberglass as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Traces as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Smart, complex as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Tech, electronic: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'PCB traces; 45 degree angles; Green, Gold, Copper; Flat; Fiberglass; Traces; Smart, complex; Tech, electronic; Traces',
       creative_brief:
-        'Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine, object, or interface exists, make circuitry functional; otherwise map circuit topology across forms without forcing a literal board.',
+        'Route any subject through Circuit Board as a transferable diagram or data-graphic visual system: preserve prompt intent while converting structure, modules, paths, grids, marks, and information rhythm through this preset. Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine, object, or interface exists, make circuitry functional; otherwise map circuit topology across forms without forcing a literal board.',
     },
   },
   {
     id: 'SP10-068',
     name: 'Topographic Map',
     category: '7. Diagram And Data Systems',
-    negativePrompt: 'straight lines',
+    negativePrompt:
+      'straight lines, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Elevation contour lines',
-      subject_treatment: 'Wavy parallel lines',
-      color_and_tone: 'Line art',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Paper',
-      camera_and_composition: 'Compose for Topographic Map using its key spatial cues: Contours.',
-      atmosphere_and_mood: 'Exploration',
-      rendering_and_quality: 'Contour-line abstraction',
-      key_features: 'Contours',
+      aesthetic:
+        'Topographic Map becomes a transferable diagram and information-graphic system: start from Elevation contour lines and Contours, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Wavy parallel lines to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Line art; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Paper as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Contours as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Exploration as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Contour-line abstraction: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Elevation contour lines; Wavy parallel lines; Line art; Flat; Paper; Contours; Exploration; Contour-line abstraction; Contours',
       creative_brief:
         "Apply topographic contour logic over the input with wavy parallel lines, nested elevation bands, paper-map flatness, and geographic rhythm that behaves like fingerprints. If terrain exists, describe it; otherwise contour the subject's planes and volumes without requiring mountains or a literal map.",
     },
@@ -45,36 +65,56 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-069',
     name: 'QR Code Style',
     category: '7. Diagram And Data Systems',
-    negativePrompt: 'round, analog',
+    negativePrompt:
+      'round, analog, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Data matrix',
-      subject_treatment: 'Square pixels',
-      color_and_tone: 'Black and White',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Digital',
-      camera_and_composition: 'Blocky',
-      atmosphere_and_mood: 'Digital, code',
-      rendering_and_quality: 'Machine readable',
-      key_features: 'Corner markers',
+      aesthetic:
+        'QR Code Style becomes a transferable diagram and information-graphic system: start from Data matrix, Corner markers, and Blocky, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Square pixels to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Black and White; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Digital as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Blocky as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Digital, code as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Machine readable: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Data matrix; Square pixels; Black and White; Flat; Digital; Blocky; Digital, code; Machine readable; Corner markers',
       creative_brief:
-        'Apply QR-code data grammar to the input: black-white square modules, finder-pattern logic, dense machine-readable clustering, and alien data blocks should abstract forms without creating readable codes.',
+        'Route any subject through QR Code Style as a transferable diagram or data-graphic visual system: preserve prompt intent while converting structure, modules, paths, grids, marks, and information rhythm through this preset. Apply QR-code data grammar to the input: black-white square modules, finder-pattern logic, dense machine-readable clustering, and alien data blocks should abstract forms without creating readable codes.',
     },
   },
   {
     id: 'SP10-076',
     name: 'Blueprint',
     category: '7. Diagram And Data Systems',
-    negativePrompt: 'color, 3d',
+    negativePrompt:
+      'color, 3d, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Technical drawing',
-      subject_treatment: 'White lines',
-      color_and_tone: 'Blue background',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Paper',
-      camera_and_composition: 'Compose for Blueprint using its key spatial cues: White on Blue.',
-      atmosphere_and_mood: 'Planning, technical',
-      rendering_and_quality: 'Architectural, plan',
-      key_features: 'White on Blue',
+      aesthetic:
+        'Blueprint becomes a transferable diagram and information-graphic system: start from Technical drawing and White on Blue, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using White lines to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Blue background; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Paper as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around White on Blue as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Planning, technical as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Architectural, plan: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Technical drawing; White lines; Blue background; Flat; Paper; White on Blue; Planning, technical; Architectural, plan; White on Blue',
       creative_brief:
         'Apply blueprint drafting to the input: Prussian-blue field, white technical linework, dimension-like marks without readable text, and construction schematics should make any subject feel designed before built.',
     },
@@ -83,19 +123,29 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-077',
     name: 'Chalkboard Art',
     category: '7. Diagram And Data Systems',
-    negativePrompt: 'pen, ink',
+    negativePrompt:
+      'pen, ink, random text labels, unreadable diagram clutter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Chalk on blackboard',
-      subject_treatment: 'Dusty, variable width',
-      color_and_tone: 'White, Pastel on Black',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Chalk dust, slate',
-      camera_and_composition: 'Smudged',
-      atmosphere_and_mood: 'Casual, hand drawn',
-      rendering_and_quality: 'Temporary, hand-drawn',
-      key_features: 'Black background',
+      aesthetic:
+        'Chalkboard Art becomes a transferable diagram and information-graphic system: start from Chalk on blackboard, Black background, and Smudged, then route prompt content through schematic paths, encoded blocks, contour logic, technical marks, and data-like organization without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Dusty, variable width to map, route, blueprint, annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from White, Pastel on Black; use palette as functional coding: substrate, traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Chalk dust, slate as the tactile or mark-making basis; marks should feel like ink, chalk, copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Smudged as reusable spatial grammar: favor legible routes, modules, legends without readable text, edge registration, grids, and information density, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Casual, hand drawn as the emotional register; derive mood from analysis, navigation, computation, instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Temporary, hand-drawn: finish with clean information hierarchy, exact line weight, and no random label soup, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Chalk on blackboard; Dusty, variable width; White, Pastel on Black; Flat; Chalk dust, slate; Smudged; Casual, hand drawn; Temporary, hand-drawn; Black background',
       creative_brief:
-        'Apply chalkboard dust to the input: slate-dark grounds, soft powder strokes, smudged edges, erasable residue, and hand-drawn instructional marks without readable text should make forms feel temporary and tactile.',
+        'Route any subject through Chalkboard Art as a transferable diagram or data-graphic visual system: preserve prompt intent while converting structure, modules, paths, grids, marks, and information rhythm through this preset. Apply chalkboard dust to the input: slate-dark grounds, soft powder strokes, smudged edges, erasable residue, and hand-drawn instructional marks without readable text should make forms feel temporary and tactile.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,20 +12,52 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray-edge urgency
-  subject_treatment: Hard edges, bridges
-  color_and_tone: Black, Red, White
-  lighting_and_shadow: Flat
-  texture_and_material: Wall, spray paint
-  camera_and_composition: Simplified
-  atmosphere_and_mood: Bold, urgent, reproducible
-  rendering_and_quality: Graphic reproducible stencil finish without requiring street walls, protest text, or slogans
-  key_features: Stencil bridges
+  aesthetic: >-
+    Stencil Art acts as a transferable art-medium router: start from Stencil graphic style with hard
+    cut bridges, repeatable silhouettes, and spray edge urgency, Stencil bridges and mixed-media
+    assembly system built from layering, adhesion, surface collision, found-material logic, tactile
+    seams, and handmade construction, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Hard edges, bridges; preserve the prompt subject while
+    rebuilding it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee
+    stain, gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
+  color_and_tone: >-
+    Build color with Black, Red, White; treat color as material combination: paper aging, varnish
+    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
+    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat; make light reveal relief, varnish gloss, paper lift, tape shine,
+    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Wall, spray paint; surface detail should show torn fiber, glue, tape edge, cork tooth,
+    thread thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Simplified; compose through layer order, overlap, pin logic, cut
+    rhythm, swatch relationships, tactile seams, and graphic collision without requiring a literal
+    craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Bold, urgent, reproducible; derive mood from DIY urgency, memory, repair,
+    evidence, punk collision, tactile intimacy, decorative excess, or experimental material play,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Graphic reproducible stencil finish without requiring public-space walls, protest
+    text, or slogans; finish with coherent material stacking, readable subject transformation, and
+    no single flat texture pasted over the whole image, clean denoised surfaces where appropriate,
+    and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Stencil graphic style with hard cut bridges, repeatable silhouettes, and spray edge urgency;
+    Stencil bridges; Black, Red, White; Wall, spray paint; Simplified
   creative_brief: >-
-    Negative space becomes positive through bridges that hold isolated shapes in place, the stencil declaring
-    its method in every uncut connection. Detail is sacrificed to reproducibility, and spray edges reveal the
-    process. The style should feel repeatable and urgent without requiring letters, slogans, walls, or protest
-    scenes.
+    Apply Stencil Art as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Stencil
+    graphic style with hard cut bridges, repeatable silhouettes, and spray edge urgency, Stencil
+    bridges, Wall, spray paint without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -45,12 +77,25 @@ avoidRules:
   - readable slogan
   - wall requirement
   - protest scene
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-080.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, readable slogan, wall requirement, protest scene
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, readable slogan, wall requirement, protest
+    scene, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text,
+    low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean
+    vector render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

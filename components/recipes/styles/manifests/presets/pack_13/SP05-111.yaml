@@ -13,34 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Ukiyo-e and anime fusion with bokashi gradients, flat decorative color fields, wave-like motion energy,
-    rain-streak cadence, and floating-world theatricality
+    Ukiyo-e Woodblock Anime operates as a portable anime-lifestyle router: combine Ukiyo e Woodblock
+    Anime identity cues through Woodblock line quality; bokashi gradient fields; flat decorative
+    color planes; wave rhythm echoes; rain streak cadence; rice paper texture with broad anime style
+    spectrum grammar with experimental line, material specific finish, auteur adjacent motion,
+    graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies
+    anime style behavior after prompt X rather than a required scene, character, franchise image, or
+    card composition.
   subject_treatment: >-
-    Woodblock-carved contour lines, variable-width sumi-style edges, deliberate simplification of form,
-    decorative-print line quality
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Indigo, vermillion, ochre, pine-green, sumi-black, bokashi-fade gradients, flat-decorative color blocking,
-    Edo-period limited palette
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Flat-decorative Japanese woodblock lighting, no cast shadows, bokashi-gradient atmosphere, color-block
-    depth separation
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Wood-grain printing texture, rice-paper absorption, pigment-saturated washi, carved-block edge impression,
-    hand-burnished surface
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Flattened ukiyo-e perspective, decorative-space composition, layered-depth through color planes, no
-    western vanishing-point
-  atmosphere_and_mood: Timeless, decorative, nature-power, floating-world poetry, traditional-meets-modern elegance
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Ukiyo-e-woodblock anime fusion, Hokusai-style dynamism, Japanese-printmaking-beauty,
-    decorative-flat-rendering mastery
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Woodblock-line quality, bokashi-gradient fields, flat-decorative color planes, wave-rhythm echoes,
-    rain-streak cadence, rice-paper texture
+    Woodblock line quality; bokashi gradient fields; flat decorative color planes; wave rhythm
+    echoes; rain streak cadence; rice paper texture
   creative_brief: >-
-    Use ukiyo-e woodblock anime as carved-print grammar. Any prompt should gain bokashi gradients, washi
-    texture, flat decorative depth, carved contours, and rhythmic weather marks. Battles, landscapes, waves,
-    skies, and historic motifs are optional.
+    Use Ukiyo-e Woodblock Anime after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Woodblock line quality, bokashi gradient fields, flat decorative color planes, wave rhythm
+    echoes, rain streak cadence, rice paper texture, color logic, lighting, material finish,
+    composition rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed
+    venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - 3d
   - realistic
@@ -51,10 +76,27 @@ avoidRules:
   - soft shadows
   - modern
   - CGI
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-111.webp
 attributes:
-  negativePrompt: 3d, realistic, photo, smooth gradient, western, digital shading, soft shadows, modern, CGI
+  negativePrompt: >-
+    3d, realistic, photo, smooth gradient, western, digital shading, soft shadows, modern, CGI,
+    generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene
+    copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card
+    reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise
+    costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,25 +13,72 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Scrap-metal anime velocity where cyber resilience, junk-steel humanity, compact impact arcs, and spark-lit
-    grit make motion emotional
+    Scrap Velocity Resilience acts as a transferable anime-battle/worlds router: Scrap Velocity
+    Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact
+    fast motion, and rough human-made machine grit; combine it with mecha and cyberpunk anime
+    grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale,
+    and machine-emotion tension; named titles, studios, or lineage words may guide style, but they
+    must not require canon cast, title-scene replication, screenshots, logos, or one fixed card
+    concept.
   subject_treatment: >-
-    Hard-edged mechanical contours, close-quarters arcs, stacked metal rhythms, compact body-force geometry,
-    and sharp hatch detail.
-  color_and_tone: Scrap silver, rust orange, oil black, electric teal, bruised violet, and spark white.
-  lighting_and_shadow: Industrial underglow, specular streaks, harsh fluorescent cuts, and impact sparks that trace motion.
-  texture_and_material: Dented alloy, brushed steel, oily polymer, cable grain, carbon weave, and scarred composite surfaces.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Scrap
+    Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails,
+    compact fast motion, and rough human-made machine grit as portable contour, motion grammar,
+    surface language, and emotional pressure without requiring canon elements or a default action
+    setup.
+  color_and_tone: >-
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Scrap Velocity Resilience,
+    scrap-velocity resilience style grammar with dented alloy, spark trails, compact fast motion,
+    and rough human-made machine grit choose accent intensity, value contrast, emotional
+    temperature, and power-system separation while staying attached to prompt X.
+  lighting_and_shadow: >-
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Scrap Velocity Resilience, scrap-velocity resilience style grammar
+    with dented alloy, spark trails, compact fast motion, and rough human-made machine grit without
+    replacing prompt X with a stock anime frame.
+  texture_and_material: >-
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Scrap
+    Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails,
+    compact fast motion, and rough human-made machine grit controlled, denoised, and coherent across
+    bodies, objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Velocity tunnels, stacked vertical pressure, and close-range impact compression without fixed arena
-    framing.
-  atmosphere_and_mood: Raw, fast, scrapyard, determined
-  rendering_and_quality: High-detail sci-fi anime finish with intimate machine detail, speed clarity, and resilient emotional grit.
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Scrap Velocity
+    Resilience, scrap-velocity resilience style grammar with dented alloy, spark trails, compact
+    fast motion, and rough human-made machine grit into reusable perspective, timing, rhythm, scale,
+    cut-in, and negative-space rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Dented metal, cyber resilience, speed compression, spark trails, ferocious close motion, and battered
-    humanity
+    Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark
+    trails, compact fast motion, and rough human-made machine grit; armored contour, mechanical
+    massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure
+    translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic
+    grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression,
+    machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry,
+    and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised
+    glow, no plastic 3D render, and no cockpit/control-room dependency
   creative_brief: >-
-    Use Battle Angel Alita as style anchor for scrap velocity resilience. Any prompt should feel fast, dented,
-    tough, and human under metal. Cyborgs, races, scrapyards, arenas, and combat setups are optional.
+    Apply Scrap Velocity Resilience after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Scrap Velocity Resilience, scrap-velocity resilience style grammar with dented alloy, spark
+    trails, compact fast motion, and rough human-made machine grit, mecha and cyberpunk anime
+    grammar with engineered silhouettes, hardware logic, neon atmosphere, cockpit-independent scale,
+    and machine-emotion tension, finish discipline, and negative controls without forcing canon
+    cast, title scene, screenshot, card pose, default monster, default combat prop, or
+    prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -45,12 +92,35 @@ avoidRules:
   - watermark
   - text
   - signature
+  - named franchise likeness
+  - robot duel
+  - weapon arm
+  - cockpit UI
+  - scrapyard corridor
+  - readable decals
+  - gore
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-225.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, named franchise likeness, robot duel, weapon arm, cockpit
+    UI, scrapyard corridor, readable decals, gore, plastic 3d robot render, cockpit source-frame
+    look, readable UI panel, fixed canon character, title scene replication, required source-frame
+    look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy
+    darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

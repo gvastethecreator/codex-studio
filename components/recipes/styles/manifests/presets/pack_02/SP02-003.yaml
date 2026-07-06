@@ -12,30 +12,84 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore
+  aesthetic: >-
+    80s Sci-Fi acts as a transferable cinematic-media router: start from Rain-soaked neon dystopia,
+    Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth underscore, Smoke, neon haze,
+    wet reflections and cinematic genre system built from lens grammar, film stock, blocking
+    pressure, edit rhythm, production design, grain, and color grade, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under 80s Sci-Fi: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
-    locking to one plot beat.
-  color_and_tone: Neon Blue/Pink + Smoke, electric magenta, toxic green
-  lighting_and_shadow: Low key + Neon, volumetric haze, wet reflections
-  texture_and_material: Anamorphic lens flare, wet reflective surfaces, brushed metal
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under 80s Sci-Fi: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film
+    Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested
+    subject while staging it as filmed material through blocking, wardrobe pressure, lens distance,
+    movement cues, or genre-era performance texture only when useful, keeping the requested
+    identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Neon Blue/Pink + Smoke, electric magenta, toxic green; treat color as cinema
+    process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded
+    print, or projection decay, with deliberate value grouping, accent control, and process-specific
+    limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Low key + Neon, volumetric haze, wet reflections; make light feel motivated
+    by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow,
+    exploitation underexposure, or analog animation glow, so exposure and shadow structure support
+    the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Anamorphic lens flare, wet reflective surfaces, brushed metal; surface detail should
+    reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical
+    compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding
+    noisy filler texture.
   camera_and_composition: >-
-    Camera language native to 80s Sci-Fi: genre-aware framing, lens character, focal hierarchy, motion cue,
-    and vertical style-card composition.
-  atmosphere_and_mood: Dystopian, cool, synthetic, nocturnal
-  rendering_and_quality: Atmospheric, practical FX, miniatures, matte painting
-  key_features: Smoke, neon haze, wet reflections
+    Structure the image through Camera language native to 80s Sci-Fi: genre-aware framing, lens
+    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease,
+    symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy,
+    and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dystopian, cool, synthetic, nocturnal, mood carried by 80s Sci-Fi media process,
+    signal pressure, and visual restraint; derive mood from cinematic tradition, performance tone,
+    genre stakes, projection damage, auteur restraint, camp excess, or analog spectacle, letting the
+    media style alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Atmospheric, practical FX, miniatures, matte painting; finish as credible
+    moving-image language with controlled film artifacts, readable subject identity, and no
+    mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk glow, perpetual night, synth
+    underscore; Smoke, neon haze, wet reflections; Neon Blue/Pink + Smoke, electric magenta, toxic
+    green; Anamorphic lens flare, wet reflective surfaces, brushed metal; Camera language native to
+    80s Sci-Fi: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and
+    style-led vertical composition
   creative_brief: >-
-    80s sci-fi cinema makes any subject nocturnal and synthetic: magenta/cyan neon, volumetric haze, wet
-    reflections, anamorphic flare, and practical-FX atmosphere. Keep Blade Runner memory as color/lens grammar
-    without forcing megacity, ads, vehicles, or corporate monoliths.
+    Apply 80s Sci-Fi as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Rain-soaked neon dystopia, Blade Runner aesthetic, 80s cyberpunk
+    glow, perpetual night, synth underscore, Smoke, neon haze, wet reflections, Anamorphic lens
+    flare, wet reflective surfaces, brushed metal without requiring the card image's original
+    subject.
 avoidRules:
   - modern cgi
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-003.webp
 attributes:
-  negativePrompt: modern cgi
+  negativePrompt: >-
+    modern cgi, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -13,28 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Sparse economical anime minimalism, generous negative space, single-line expression logic,
-    color-atmosphere fields, quiet indie pacing, and intentional emptiness
+    Minimalist Indie Quiet operates as a portable anime-lifestyle router: combine Minimalist Indie
+    Quiet identity cues through Negative space dominance; minimalist line count; single color
+    atmospheres; scale humility; intentional silence; Minimalist Indie Quiet anime style cues with
+    broad anime style spectrum grammar with experimental line, material specific finish, auteur
+    adjacent motion, graphic abstraction, sensor vision, and genre flexible art direction, so the
+    preset supplies anime style behavior after prompt X rather than a required scene, character,
+    franchise image, or card composition.
   subject_treatment: >-
-    Ultra-thin restrained ink lines, minimal contour economy, suggestion over statement, fewer strokes more
-    impact
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Single-hue atmospheres, sky-gradient minimalism, off-white expanses, one accent color per scene,
-    monochrome restraint
-  lighting_and_shadow: Soft overcast diffusion, single-source quiet light, crepuscular rays, and ambient emptiness
-  texture_and_material: Smooth digital matte, untextured simplicity, paper-white void, subtle grain whisper if any
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
+  lighting_and_shadow: >-
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
+  texture_and_material: >-
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Subject scale can shrink against vast empty fields, with loneliness-accenting framing and negative-space
-    composition
-  atmosphere_and_mood: Quiet, introspective, profoundly lonely, meditative stillness, held breath
-  rendering_and_quality: Indie-anime minimalism, arthouse restraint, quiet-production beauty, less-is-more conviction
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
+  rendering_and_quality: >-
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Negative space dominance, minimalist line count, single-color atmospheres, scale humility, intentional
-    silence
+    Negative space dominance; minimalist line count; single color atmospheres; scale humility;
+    intentional silence; Minimalist Indie Quiet anime style cues
   creative_brief: >-
-    Use minimalist indie quiet as silence-composition grammar. Any prompt should breathe through negative
-    space, low-saturation fields, sparse line economy, and scale humility. Empty space must carry feeling
-    instead of needing a specific lonely scene.
+    Use Minimalist Indie Quiet after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Negative space dominance, minimalist line count, single color atmospheres, scale humility,
+    intentional silence, Minimalist Indie Quiet anime style cues, color logic, lighting, material
+    finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast,
+    fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - busy
   - detailed
@@ -46,10 +77,27 @@ avoidRules:
   - crowded
   - explosive
   - maximalist
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-104.webp
 attributes:
-  negativePrompt: busy, detailed, complex, epic, flashy, saturated, dramatic, crowded, explosive, maximalist
+  negativePrompt: >-
+    busy, detailed, complex, epic, flashy, saturated, dramatic, crowded, explosive, maximalist,
+    generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene
+    copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card
+    reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise
+    costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

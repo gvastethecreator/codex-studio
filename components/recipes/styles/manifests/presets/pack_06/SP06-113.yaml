@@ -13,29 +13,89 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: >-
-    Fantasy MMO parchment-interface style with ornamental cartography logic, aged UI material, and
-    quest-screen clarity.
+    Fantasy MMO Parchment Interface acts as a transferable art-medium router: start from Fantasy MMO
+    parchment interface style with ornamental cartography logic, aged UI material, and quest screen
+    clarity, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition, and
+    production-art clarity and game-art direction system built from playable readability, UI or
+    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
+    the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Recast any subject into symbolic maplike marks, route-like linework, framed medallions, and collectible
-    lore texture.
+    Transform any prompt subject through Recast any subject into symbolic maplike marks, route like
+    linework, framed medallions, and collectible lore texture; preserve the prompt subject while
+    routing it through tile readability, icon clarity, splash rendering, interface material, sprite
+    bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
   color_and_tone: >-
-    Sepia parchment base, ink-brown contours, muted jewel accents, red wax-like highlights, and soft vignette
-    aging.
-  lighting_and_shadow: Flat document lighting with subtle edge shadows, embossed ornament glints, and low-contrast aged stains.
-  texture_and_material: Fibrous paper grain, burned borders, stamped motifs, hand-inked line jitter, and softened fold marks.
-  camera_and_composition: Top-down UI/document composition with decorative framing, open readable zones, and no required geography.
-  atmosphere_and_mood: Adventurous, archival, questlike mood without requiring maps, continents, castles, compass roses, or text.
-  rendering_and_quality: Clean game-UI asset finish, no readable labels, strong ornament hierarchy, thumbnail-safe.
+    Build color with Sepia parchment base, ink brown contours, muted jewel accents, red wax like
+    highlights, and soft vignette aging; use color as gameplay hierarchy: rarity glow, faction
+    contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable
+    inventory material, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat document lighting with subtle edge shadows, embossed ornament glints,
+    and low contrast aged stains; shape light through game readability: rim separation, UI glow,
+    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Fibrous paper grain, burned borders, stamped motifs, hand inked line jitter, and softened
+    fold marks; surface detail should support genre grammar through parchment, HUD glass, pixel
+    atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Top down UI/document composition with decorative framing, open
+    readable zones, and no required geography; compose through gameplay-facing hierarchy, atlas
+    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
+    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Adventurous, archival, questlike mood without requiring maps, continents,
+    fortification scale, compass roses, or text; derive mood from playable stakes, collection
+    desire, tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Clean game UI asset finish, no readable labels, strong ornament hierarchy, thumbnail
+    safe; finish with game-production clarity, strong silhouettes, controlled UI-like detail, and no
+    unreadable screenshot clutter, clean denoised surfaces where appropriate, and enough craft
+    evidence to make the medium recognizable.
+  key_features: >-
+    Fantasy MMO parchment interface style with ornamental cartography logic, aged UI material, and
+    quest screen clarity; gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity; Sepia parchment base, ink brown contours, muted jewel
+    accents, red wax like highlights, and soft vignette aging; Fibrous paper grain, burned borders,
+    stamped motifs, hand inked line jitter, and softened fold marks; Top down UI/document
+    composition with decorative framing, open readable zones, and no required geography
+  creative_brief: >-
+    Apply Fantasy MMO Parchment Interface as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Fantasy MMO parchment interface style with ornamental cartography logic, aged UI
+    material, and quest screen clarity, gameplay-readable hierarchy, genre-specific surface
+    language, UI-aware composition, and production-art clarity, Fibrous paper grain, burned borders,
+    stamped motifs, hand inked line jitter, and softened fold marks without requiring the card
+    image's original subject.
 avoidRules:
   - watermark
   - text
   - readable map labels
   - literal world map requirement
   - castle requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - low resolution
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-113.webp
 attributes:
-  negativePrompt: watermark, text, readable map labels, literal world map requirement, castle requirement
+  negativePrompt: >-
+    watermark, text, readable map labels, literal world map requirement, castle requirement, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature,
+    low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

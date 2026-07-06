@@ -12,19 +12,48 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Milk-based paint illustration
-  subject_treatment: Matte, velvety
-  color_and_tone: High chroma, matte
-  lighting_and_shadow: Soft, illustrative
-  texture_and_material: Smooth, durable
-  camera_and_composition: Clean shapes
-  atmosphere_and_mood: Classic, sturdy
-  rendering_and_quality: Vintage illustration
-  key_features: Velvet matte finish
+  aesthetic: >-
+    Casein Paint acts as a transferable art-medium router: start from Milk based paint illustration,
+    Velvet matte finish and paint-media system built from pigment body, binder behavior, substrate
+    tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Matte, velvety; preserve the prompt subject while
+    translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed
+    edge behavior, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with High chroma, matte; let hue, value, saturation, and mixing come from physical
+    pigment, binder opacity, drying character, and historical medium constraints, with deliberate
+    value grouping, accent control, and medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Soft, illustrative; make light feel interpreted by paint through tonal
+    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth, durable; surface detail should show canvas, paper, plaster, wax, velvet, gesso,
+    knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Clean shapes; organize the image through painterly massing, brush
+    direction, support format, negative space, edge hierarchy, and intentional simplification, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Classic, sturdy; derive mood from medium history, touch, pigment weight, speed,
+    restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Vintage illustration; finish with medium-faithful paint handling, readable form,
+    controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where
+    appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Milk based paint illustration; Velvet matte finish; High chroma, matte; Smooth, durable; Clean
+    shapes
   creative_brief: >-
-    Apply casein-paint surface logic to any input: milk-protein matte pigment, powdered-stone opacity, fast
-    opaque layering, crisp illustration edges, and waterproof permanence. Keep quiet durable color without
-    requiring vintage posters, editorial illustration, packaging, or dairy-themed subject matter.
+    Apply Casein Paint as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Milk based
+    paint illustration, Velvet matte finish, Smooth, durable without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +70,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-014.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

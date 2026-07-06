@@ -12,29 +12,101 @@ tags:
   - architecture-and-interior
   - toy-craft-and-miniature-architecture
 visualDna:
-  aesthetic: Soft pressurized architecture with pneumatic mass, festive color blocking and temporary spatial logic.
-  subject_treatment: Bulging pneumatic tubes, welded segmentation, modular rounded lobes and hose-anchor geometry.
+  aesthetic: >-
+    Pressurized Vinyl Playform acts as a transferable architecture/interior router: rounded pressure
+    tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve
+    hardware; fuse it with toy, craft, and miniature construction grammar with visible fabrication,
+    scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial
+    grammar, material behavior, scale, ornament, and light over prompt X without requiring the
+    default sample anchor, fixed spatial set, landscape setup, or object sample.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while translating any requested subject through
+    model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy
+    geometry, and craft-readable joinery; treat rounded pressure tubes, heat-welded seams, glossy
+    PVC highlights, safety-pop color blocking, blower valve hardware as massing, edge, surface,
+    joinery, threshold, or ornament behavior rather than a mandatory building scene.
   color_and_tone: >-
-    High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral
-    seam-strip accents
-  lighting_and_shadow: Diffuse outdoor sun, strong vinyl speculars, translucent panel glow and soft bloom on inflated edges.
-  texture_and_material: Glossy PVC skin, heat-weld ridges, tensioned membranes, load wrinkles and blower hardware.
-  camera_and_composition: Soft-volume inflation bulge and pressure-rounded edge behavior across all masses
-  atmosphere_and_mood: Energetic, kinetic and festive, unmistakably temporary.
+    Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth,
+    translucent glass tint, fungal cream, and small playful accents; let source cues such as rounded
+    pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower
+    valve hardware decide accent hierarchy, material temperature, and value separation while staying
+    attached to the requested content.
+  lighting_and_shadow: >-
+    Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand
+    sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale,
+    and atmosphere from rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop
+    color blocking, blower valve hardware without replacing prompt X with a stock architectural
+    render.
+  texture_and_material: >-
+    Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal
+    skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in rounded
+    pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower
+    valve hardware, with believable surface response, denoised grain, coherent wear, and no generic
+    wallpaper texture.
+  camera_and_composition: >-
+    Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams,
+    scale compression, and object-like built logic; convert rounded pressure tubes, heat-welded
+    seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware into reusable
+    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
+    style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through playful craft, fragile impermanence, edible celebration, ecological
+    miniature, curio precision, or sectional wonder without product-photo lock; the preset can
+    support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when
+    prompt X asks for them while keeping the architectural identity readable.
   rendering_and_quality: >-
-    Legible playful inflatable rendering with high material fidelity and controlled temporary-installation
-    gloss.
-  key_features: Pressurized tubular frame, heat-weld seam grid, vivid zoning, mesh panels and visible inflation nodes.
+    Finish with clean miniature finish with legible material scale, no brand logo, no product
+    catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object
+    or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera
+    prop, and no prompt-literal card copy.
+  key_features: >-
+    rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking,
+    blower valve hardware; model-scale mass, folded or molded construction, exposed seams, modular
+    parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand,
+    corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway
+    surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams,
+    scale compression, and object-like built logic
   creative_brief: >-
-    Apply inflatable vinyl behavior when compatible: pressure-rounded edges, heat-weld seams, PVC highlights,
-    temporary joints and safety-pop color. The style should suggest pressure, play and temporality without
-    turning every subject into a park, castle or literal inflatable volume.
+    Apply Pressurized Vinyl Playform after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color
+    blocking, blower valve hardware, toy, craft, and miniature construction grammar with visible
+    fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity,
+    material discipline, spatial grammar, and negative controls without requiring a single spatial
+    sample, product-photo setup, aisle-like default, or empty abstraction.
 avoidRules:
   - hard edges
+  - bounce castle
+  - amusement park scene
+  - children/person
+  - market aisle
+  - library aisle
+  - corridor
+  - empty abstraction
+  - brand logo
+  - product photo
+  - child or person scene
+  - full-scale realism
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - camera prop
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-069.webp
 attributes:
-  negativePrompt: hard edges
+  negativePrompt: >-
+    hard edges, bounce castle, amusement park scene, children/person, market aisle, library aisle,
+    corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale
+    realism, fixed building-only scene, mandatory interior interior zones, corridor perspective,
+    furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory
+    interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

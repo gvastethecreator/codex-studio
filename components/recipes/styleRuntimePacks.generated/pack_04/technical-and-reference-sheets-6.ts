@@ -7,43 +7,58 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP04-057',
     name: 'Blueprint Schematic',
     category: '6. Technical And Reference Sheets',
-    negativePrompt: '3d, shaded',
+    negativePrompt:
+      '3d, shaded, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
     style: {
       aesthetic:
-        'Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline',
+        'Blueprint Schematic acts as a transferable illustration router: start from Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline, Measurements, dimension lines, grid sub-base and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability',
-      color_and_tone: 'Blue background, white-line cyan, blueprint nostalgia',
-      lighting_and_shadow: 'Diagrammatic machine-drawing clarity with no simulated lighting',
-      texture_and_material: 'Grid paper',
-      camera_and_composition: 'Exploded view',
-      atmosphere_and_mood: 'Smart, plan, drafting-table focus, patent-office gravity',
-      rendering_and_quality: 'Engineering, precise, shop-floor accuracy, technical authority',
-      key_features: 'Measurements, dimension lines, grid sub-base',
+        'Transform any prompt subject through White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Blue depth field, white-line cyan, blueprint nostalgia; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Diagrammatic machine-drawing clarity with no simulated lighting; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Grid paper, blue drafting ground, grid sub-base, white technical linework, measurement ticks, and precise paper-plan texture; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Exploded view, orthographic projection, exploded spacing, dimension hierarchy, and specification-panel rhythm; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Smart, plan, drafting-table focus, patent-office gravity; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Engineering, precise, shop-floor accuracy, technical authority; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline; Measurements, dimension lines, grid sub-base; Blue depth field, white-line cyan, blueprint nostalgia; Grid paper, blue drafting ground, grid sub-base, white technical linework, measurement ticks, and precise paper-plan texture; Exploded view, orthographic projection, exploded spacing, dimension hierarchy, and specification-panel rhythm',
       creative_brief:
-        'Apply blueprint schematic grammar to any input: orthographic projection, measurement hierarchy, exploded-view logic, grid sub-base, and white technical linework should create drafting authority without requiring machines, labels, title blocks, patents, vehicles, or readable dimensions.',
+        "Apply Blueprint Schematic as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline, Measurements, dimension lines, grid sub-base, Grid paper, blue drafting ground, grid sub-base, white technical linework, measurement ticks, and precise paper-plan texture without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-059',
     name: 'UI/HUD Design',
     category: '6. Technical And Reference Sheets',
-    negativePrompt: 'organic, messy',
+    negativePrompt:
+      'organic, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
     style: {
       aesthetic:
-        'Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration',
+        'UI/HUD Design acts as a transferable illustration router: start from Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration, Floating, thin rule-lines, data readout and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure',
-      color_and_tone: 'Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast',
-      lighting_and_shadow: 'Glow, emissive interface, screen-space radiance',
-      texture_and_material: 'Screen',
+        'Transform any prompt subject through Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Glow, emissive interface, screen-space radiance; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Screen, technical line hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet readability; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for UI/HUD Design using its key spatial cues: Floating, thin rule-lines, data readout.',
-      atmosphere_and_mood: 'Tech, info, augmented awareness, mission-ops focus',
-      rendering_and_quality: 'Futuristic, functional, diegetic elegance, heads-up immersion',
-      key_features: 'Floating, thin rule-lines, data readout',
+        'Structure the image through Compose for UI/HUD Design using its key spatial cues: Floating, thin rule-lines, data readout; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tech, info, augmented awareness, mission-ops focus; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Futuristic, functional, diegetic elegance, heads-up immersion; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration; Floating, thin rule-lines, data readout; Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast; Screen, technical line hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet readability',
       creative_brief:
-        'Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry, modular widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add augmented awareness without requiring missions, weapons, helmets, screens, maps, or readable UI text.',
+        "Apply UI/HUD Design as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration, Floating, thin rule-lines, data readout, Screen, technical line hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet readability without requiring the card image's original subject.",
     },
   },
   {
@@ -51,19 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Callout Detail Sheet',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled',
+      'single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
     style: {
-      aesthetic: 'Technical callout sheet for production handoff',
-      subject_treatment: 'Uniform orthographic linework with strict weight hierarchy',
-      color_and_tone: 'Neutral monochrome base with limited annotation accent colors',
-      lighting_and_shadow: 'Flat functional illumination for uncompromised shape legibility',
-      texture_and_material: 'Diagrammatic hatching, section fills, and exploded-part separators',
-      camera_and_composition: 'Pure orthographic alignment plus controlled exploded/cutaway views',
-      atmosphere_and_mood: 'Clinical, exact, instruction-driven',
-      rendering_and_quality: 'High-clarity specification drawing with low interpretive ambiguity',
-      key_features: 'Multi-view orthos, dimension strings, labeled leaders, scale references',
+      aesthetic:
+        'Callout Detail Sheet acts as a transferable illustration router: start from Technical callout sheet for production handoff, Multi-view orthos, dimension strings, labeled leaders, scale references and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Uniform orthographic linework with strict weight hierarchy; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Neutral monochrome base with limited annotation accent colors; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat functional illumination for uncompromised shape legibility; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Diagrammatic hatching, section fills, and exploded-part separators; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Pure orthographic alignment plus controlled exploded/cutaway views; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Clinical, exact, instruction-driven, mood carried by Callout Detail Sheet craft, material pressure, and visual restraint; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with High-clarity specification drawing with low interpretive ambiguity; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Technical callout sheet for production handoff; Multi-view orthos, dimension strings, labeled leaders, scale references; Neutral monochrome base with limited annotation accent colors; Diagrammatic hatching, section fills, and exploded-part separators; Pure orthographic alignment plus controlled exploded/cutaway views',
       creative_brief:
-        'Apply callout-detail sheet design to any input: orthographic fragments, exploded layers, cutaway windows, magnified inserts, measurement-like ticks, and technical line hierarchy. Keep labels optional/graphic only; do not require readable dimensions, machinery, weapons, vehicles, or a literal product schematic.',
+        "Apply Callout Detail Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Technical callout sheet for production handoff, Multi-view orthos, dimension strings, labeled leaders, scale references, Diagrammatic hatching, section fills, and exploded-part separators without requiring the card image's original subject.",
     },
   },
   {
@@ -71,23 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Anatomy Reference Sheet',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork',
+      'stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
     style: {
       aesthetic:
-        'Educational anatomical reference plate with layered structural clarity and classical medical-plate influence',
-      subject_treatment: 'Precise technical linework for muscle, bone, and tendon mapping',
+        'Anatomy Reference Sheet acts as a transferable illustration router: start from Educational anatomical reference plate with layered structural clarity and classical medical-plate influence, Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Precise technical linework for muscle, bone, and tendon mapping; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
       color_and_tone:
-        'Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents)',
-      lighting_and_shadow: 'Even clinical illumination for unambiguous form legibility',
-      texture_and_material: 'Plate-style paper and wash overlays with minimal decorative noise',
+        'Build color with Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents); use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Even clinical illumination for unambiguous form legibility; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Plate-style paper and wash overlays with minimal decorative noise; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Multi-view orthographic layout with transparent overlays and inset details',
-      atmosphere_and_mood: 'Scientific, disciplined, pedagogical',
-      rendering_and_quality: 'Reference-grade illustration optimized for study and instruction',
+        'Structure the image through Multi-view orthographic layout with transparent overlays and inset details; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Scientific, disciplined, pedagogical, mood carried by Anatomy Reference Sheet craft, material pressure, and visual restraint; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Reference-grade illustration optimized for study and instruction; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity',
+        'Educational anatomical reference plate with layered structural clarity and classical medical-plate influence; Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity; Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents); Plate-style paper and wash overlays with minimal decorative noise; Multi-view orthographic layout with transparent overlays and inset details',
       creative_brief:
-        'Apply anatomy-reference-sheet structure to any input: layered construction, skeletal-like scaffolds, muscle-flow analogues, cutaway marks, and educational diagram composition. If no biological body exists, convert forms into anatomical systems without requiring humans, animals, labels, or medical realism.',
+        "Apply Anatomy Reference Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Educational anatomical reference plate with layered structural clarity and classical medical-plate influence, Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity, Plate-style paper and wash overlays with minimal decorative noise without requiring the card image's original subject.",
     },
   },
   {
@@ -95,22 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'UI/HUD Wireframe Concept',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art',
+      'finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
     style: {
-      aesthetic: 'Game HUD wireframe concept balancing diegetic and overlay paradigms',
-      subject_treatment: 'Clean bounding-box architecture with spacing, flow, and hierarchy guides',
-      color_and_tone: 'Functional UI neutrals with semantic accent colors for state signaling',
-      lighting_and_shadow: 'Flat interface contrast with optional interaction glow cues',
+      aesthetic:
+        'UI/HUD Wireframe Concept acts as a transferable illustration router: start from Game HUD wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Clean bounding-box architecture with spacing, flow, and hierarchy guides; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Functional UI neutrals with semantic accent colors for state signaling; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat interface contrast with optional interaction glow cues; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
       texture_and_material:
-        'Minimalist screen-surface treatment; precision-first wireframe presentation',
-      camera_and_composition: 'Safe-zone aware screen layout plus world-anchored UI option studies',
-      atmosphere_and_mood: 'Functional, restrained, information-priority design',
+        'Render Minimalist screen-surface treatment; precision-first wireframe presentation; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Safe-zone aware screen layout plus world-anchored UI option studies; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Functional, restrained, information-priority design, mood carried by UI/HUD Wireframe Concept craft, material pressure, and visual restraint; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'UX concept fidelity focused on clarity, density control, and usability',
+        'Finish with UX concept fidelity focused on clarity, density control, and usability; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints',
+        'Game HUD wireframe concept balancing diegetic and overlay paradigms; Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints; Functional UI neutrals with semantic accent colors for state signaling; Minimalist screen-surface treatment; precision-first wireframe presentation; Safe-zone aware screen layout plus world-anchored UI option studies',
       creative_brief:
-        'Apply UI/HUD wireframe concept language to any input: modular panels, safe-zone framing, scanline grids, reticles, status blocks, icon placeholders, and layered interface hierarchy. If no software/game context exists, translate the prompt into abstract interface architecture without requiring readable UI text, screenshots, or a game scene.',
+        "Apply UI/HUD Wireframe Concept as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Game HUD wireframe concept balancing diegetic and overlay paradigms, Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints, Minimalist screen-surface treatment; precision-first wireframe presentation without requiring the card image's original subject.",
     },
   },
   {
@@ -118,24 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Monster Size Comparison Chart',
     category: '6. Technical And Reference Sheets',
     negativePrompt:
-      'single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison',
+      'single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text',
     style: {
-      aesthetic: 'Size-comparison chart with educational scale framing',
+      aesthetic:
+        'scale-threat designs Size Comparison Chart acts as a transferable illustration router: start from Size-comparison chart with educational scale framing, Human and real-world benchmarks, incremental height logic, clear unit hierarchy and technical reference and interface-spec system built from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Baseline-aligned silhouettes with measurement ticks and reference markers',
-      color_and_tone: 'Neutral comparative scheme with restrained atmospheric scaling cues',
-      lighting_and_shadow: 'Consistent silhouette rim/read light for cross-subject legibility',
+        'Transform any prompt subject through Baseline-aligned silhouettes with measurement ticks and reference markers; preserve the requested subject while expressing it through schematic breakdowns, reference views, anatomy structure, UI wireframes, comparison scales, or specification surfaces, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Neutral comparative scheme with restrained atmospheric scaling cues; use color as information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Consistent silhouette rim/read light for cross-subject legibility; keep light diagrammatic and legible through flat drafting values, callout emphasis, interface glow, anatomical separation, or measured shadow restraint, so value structure supports the illustration process and does not overwrite the requested content.',
       texture_and_material:
-        'Clean chartboard finish with minimal atmospheric fade on largest entries',
+        'Render Clean chartboard finish with minimal atmospheric fade on largest entries; surface detail should support readability with grid paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Left-to-right ascending scale progression with fixed ground reference',
-      atmosphere_and_mood: 'Awe-oriented yet analytical, museum-chart clarity',
+        'Structure the image through Left-to-right ascending scale progression with fixed ground reference; compose through orthographic projection, exploded spacing, callout grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Awe-oriented yet analytical, museum-chart clarity; derive mood from precision, planning, research, interface control, anatomical study, engineering authority, or catalogued comparison, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Infographic-style concept sheet optimized for proportional comprehension',
+        'Finish with Infographic-style concept sheet optimized for proportional comprehension; finish with readable technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible labels or decorative clutter, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Human and real-world benchmarks, incremental height logic, clear unit hierarchy',
+        'Size-comparison chart with educational scale framing; Human and real-world benchmarks, incremental height logic, clear unit hierarchy; Neutral comparative scheme with restrained atmospheric scaling cues; Clean chartboard finish with minimal atmospheric fade on largest entries; Left-to-right ascending scale progression with fixed ground reference',
       creative_brief:
-        'Apply monster size-comparison chart logic to any input: baseline scaling, tick marks, escalating silhouettes, cutaway scale cues, and comparative graphic hierarchy. If no creature exists, convert the subject into abstract scale-study forms without requiring monsters, humans for scale, chart labels, or a creature lineup.',
+        "Apply scale-threat designs Size Comparison Chart as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Size-comparison chart with educational scale framing, Human and real-world benchmarks, incremental height logic, clear unit hierarchy, Clean chartboard finish with minimal atmospheric fade on largest entries without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

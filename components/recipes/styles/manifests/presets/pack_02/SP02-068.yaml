@@ -12,31 +12,84 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Blurry lights
+  aesthetic: >-
+    Bokeh (Macro) acts as a transferable cinematic-media router: start from Blurry lights, Bokeh
+    (Macro) light transport, optical artifacts, exposure discipline, atmosphere depth, and
+    camera-response behavior, Shallow DOF, depth field abstraction, specular discs, creamy falloff
+    and portable lighting and atmosphere system built from light transport, exposure behavior,
+    optical distortion, volumetric density, reflection, and camera response, then apply the media
+    behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Bokeh (Macro): casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles
-  lighting_and_shadow: Defocused points, out-of-focus speculars, aperture-projected glow
-  texture_and_material: Creamy blur, cat's-eye shape, soap-bubble edge
-  camera_and_composition: Circles, aperture shape projection, specular discs, cat-eye edges
-  atmosphere_and_mood: Soft, optical, intimate, romantic haze
-  rendering_and_quality: Dreamy, abstract, lens-artist blur, optical softness
-  key_features: Shallow DOF, background abstraction, specular discs, creamy falloff
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Bokeh (Macro): casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles;
+    use color as light temperature, spectral split, water attenuation, neon bounce, candle warmth,
+    night conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping,
+    accent control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Defocused points, out-of-focus speculars, aperture-projected glow; make the
+    named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses,
+    volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support
+    the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Creamy blur, cat's-eye shape, soap-bubble edge; surface detail should reveal particles,
+    lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical
+    streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Circles, aperture shape projection, specular discs, cat-eye edges;
+    compose around light direction, reflection planes, depth layers, exposure zones, silhouette
+    edges, lens distortion, or atmospheric perspective without forcing a location, with frame
+    rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Soft, optical, intimate, romantic haze; derive mood from illumination physics:
+    intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or temporal flash
+    energy, letting the media style alter interpretation without demanding a specific story,
+    location, or actor.
+  rendering_and_quality: >-
+    Finish with Dreamy, abstract, lens-artist blur, optical softness; finish with believable
+    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
+    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
+    to make the style recognizable.
+  key_features: >-
+    Blurry lights, Bokeh (Macro) light transport, optical artifacts, exposure discipline, atmosphere
+    depth, and camera-response behavior; Shallow DOF, depth field abstraction, specular discs,
+    creamy falloff; Soft optical discs, warm amber blur, cool cyan blur, pastel specular circles;
+    Creamy blur, cat's-eye shape, soap-bubble edge; Circles, aperture shape projection, specular
+    discs, cat-eye edges
   creative_brief: >-
-    Make depth of field the style: narrow focus, creamy optical blur, aperture-shaped highlights, cat-eye edge
-    distortion, and abstracted background color. Avoid decorative orb-only compositions or fixed night setups.
-    Bokeh should support the input by simplifying everything outside the focal plane. Apply Bokeh as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup,
-    artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable
-    text, fixed IP scene, or narrative setup.
+    Apply Bokeh (Macro) as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Blurry lights, Bokeh (Macro) light transport, optical artifacts,
+    exposure discipline, atmosphere depth, and camera-response behavior, Shallow DOF, depth field
+    abstraction, specular discs, creamy falloff, Creamy blur, cat's-eye shape, soap-bubble edge
+    without requiring the card image's original subject.
 avoidRules:
   - deep focus
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-068.webp
 attributes:
-  negativePrompt: deep focus
+  negativePrompt: >-
+    deep focus, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

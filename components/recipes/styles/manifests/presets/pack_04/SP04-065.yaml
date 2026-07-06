@@ -13,28 +13,82 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: >-
-    Stone-lithography style with grease-crayon mark character, tonal grain softness, and chemical-print
-    process identity
-  subject_treatment: Grainy litho-crayon contouring with soft edge diffusion and pressure-sensitive wax-mark variation
-  color_and_tone: Black or Sepia, single-stone tone, litho-crayon warmth
-  lighting_and_shadow: Soft grain, stone-texture diffusion, atmospheric softness
-  texture_and_material: Stone grain
-  camera_and_composition: 'Compose for Lithograph using its key spatial cues: Grain, stone texture, crayon registration.'
-  atmosphere_and_mood: Classic, soft, print-studio quiet, optical wonder
+    Lithograph acts as a transferable illustration router: start from Stone-lithography style with
+    grease-crayon mark designed subjects, tonal grain softness, and chemical-print process identity,
+    Grain, stone texture, crayon registration and ink and printmaking system built from mark
+    economy, matrix process, ink transfer, pressure artifacts, paper absorption, and reproducible
+    graphic structure, then apply the visual behavior to prompt X instead of recreating a fixed demo
+    image.
+  subject_treatment: >-
+    Transform any prompt subject through Grainy litho-crayon contouring with soft edge diffusion and
+    pressure-sensitive wax-mark variation; preserve the requested subject while rebuilding it
+    through carved lines, etched density, stipple fields, calligraphic pressure, stamp
+    incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested
+    identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Black or Sepia, single-stone tone, litho-crayon warmth; use color as ink
+    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
+    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Soft grain, stone-texture diffusion, atmospheric softness; translate light
+    into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or
+    flat spray contrast rather than photographic shading, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Stone grain, ink transfer, mark density, paper response, process artifacts, and
+    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
+    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
+    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Lithograph using its key spatial cues: Grain, stone
+    texture, crayon registration; compose through print registration, border discipline,
+    mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like
+    balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Classic, soft, print-studio quiet, optical wonder; derive mood from craft
+    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Classical lithographic fidelity emphasizing stone-grain tonal transitions, press transfer nuance, and
-    atmospheric print softness
-  key_features: Grain, stone texture, crayon registration
+    Finish with Classical lithographic fidelity emphasizing stone-grain tonal transitions, press
+    transfer nuance, and atmospheric print softness; finish as a credible ink or print artifact with
+    exact mark logic, restrained artifacting, and no fake text, random distress overlay, or smooth
+    vector replacement, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
+  key_features: >-
+    Stone-lithography style with grease-crayon mark designed subjects, tonal grain softness, and
+    chemical-print process identity; Grain, stone texture, crayon registration; Black or Sepia,
+    single-stone tone, litho-crayon warmth; Stone grain, ink transfer, mark density, paper response,
+    process artifacts, and printmaking composition discipline
   creative_brief: >-
-    Apply lithographic print grammar to any input: grease-crayon marks, stone-grain softness,
-    pressure-sensitive wax variation, atmospheric tone, and press-transfer nuance should carry identity
-    without requiring geometry, posters, portraits, print studios, or specific subjects.
+    Apply Lithograph as an illustration preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through
+    Stone-lithography style with grease-crayon mark designed subjects, tonal grain softness, and
+    chemical-print process identity, Grain, stone texture, crayon registration, Stone grain, ink
+    transfer, mark density, paper response, process artifacts, and printmaking composition
+    discipline without requiring the card image's original subject.
 avoidRules:
   - sharp lines
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-065.webp
 attributes:
-  negativePrompt: sharp lines
+  negativePrompt: >-
+    sharp lines, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

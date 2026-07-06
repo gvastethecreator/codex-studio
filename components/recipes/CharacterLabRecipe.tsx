@@ -42,6 +42,7 @@ import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
 import { resolveRecipeAlias, type RecipeAliasId } from '../../lib/recipeAliases';
 import { normalizeImageGenRatio } from '../../utils/imageGenSizing';
 import { RecipeLayout } from './RecipeLayout';
+import { GsapDropdown } from '../ui/GsapDropdown';
 
 interface CharacterLabRecipeProps {
   recipeAliasId?: RecipeAliasId | null;
@@ -429,49 +430,31 @@ function SelectField({
 }) {
   const fieldName = label.toLowerCase().replace(/[^a-z0-9]+/g, '-');
   const [isOpen, setIsOpen] = useState(false);
-  const [isClosing, setIsClosing] = useState(false);
   const selectedIndex = Math.max(
     0,
     options.findIndex((option) => option === value),
   );
   const [activeIndex, setActiveIndex] = useState(selectedIndex);
   const rootRef = useRef<HTMLDivElement>(null);
-  const closeTimerRef = useRef<number | null>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const labelId = useId();
   const listboxId = useId();
   const selectedText = getDropdownOptionText(kind, value);
   const selectedIconId = getOptionIconId(kind, value);
   const fallbackIconId = FIELD_ICON_IDS[kind];
-  const isRendered = isOpen || isClosing;
 
   const openDropdown = useCallback(() => {
-    if (closeTimerRef.current) window.clearTimeout(closeTimerRef.current);
-    closeTimerRef.current = null;
-    setIsClosing(false);
     setIsOpen(true);
   }, []);
 
   const closeDropdown = useCallback(() => {
     if (!isOpen) return;
     setIsOpen(false);
-    setIsClosing(true);
-    if (closeTimerRef.current) window.clearTimeout(closeTimerRef.current);
-    closeTimerRef.current = window.setTimeout(() => {
-      setIsClosing(false);
-      closeTimerRef.current = null;
-    }, 150);
   }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) setActiveIndex(selectedIndex);
   }, [isOpen, selectedIndex]);
-
-  useEffect(
-    () => () => {
-      if (closeTimerRef.current) window.clearTimeout(closeTimerRef.current);
-    },
-    [],
-  );
 
   useEffect(() => {
     if (!isOpen) return;
@@ -496,7 +479,7 @@ function SelectField({
     closeDropdown();
   };
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
     if (event.key === 'ArrowDown') {
       event.preventDefault();
       if (!isOpen) {
@@ -524,22 +507,20 @@ function SelectField({
   };
 
   return (
-    <div
-      ref={rootRef}
-      onKeyDown={handleKeyDown}
-      className={`relative flex min-w-0 flex-col gap-1.5 ${className}`}
-    >
+    <div ref={rootRef} className={`relative flex min-w-0 flex-col gap-1.5 ${className}`}>
       <span id={labelId} className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">
         {label}
       </span>
       <input type="hidden" name={fieldName} value={value} />
       <button
+        ref={triggerRef}
         type="button"
         name={fieldName}
         aria-labelledby={labelId}
         aria-controls={listboxId}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
+        onKeyDown={handleKeyDown}
         className={`character-lab-control-card flex min-h-12 w-full min-w-0 items-center gap-3 rounded-xl border px-2.5 py-2 text-left outline-none transition-[background-color,border-color,color,transform] duration-150 focus-visible:ring-2 focus-visible:ring-violet-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
           isOpen
             ? 'border-violet-400/60 bg-violet-500/10 text-white'
@@ -570,65 +551,61 @@ function SelectField({
         />
       </button>
 
-      {isRendered && (
-        <div
-          className="t-dropdown absolute left-0 right-0 top-full z-50 mt-2 rounded-xl border border-white/10 bg-zinc-950/95 p-1.5 shadow-[0_24px_80px_rgba(0,0,0,0.65)] backdrop-blur-xl"
-          data-closing={isClosing ? 'true' : undefined}
-          data-open={isOpen ? 'true' : 'false'}
-          data-origin="top-right"
-        >
-          <div
-            id={listboxId}
-            role="listbox"
-            aria-labelledby={labelId}
-            aria-activedescendant={`${listboxId}-${activeIndex}`}
-            className="custom-scrollbar max-h-64 overflow-y-auto pr-1"
-          >
-            {options.map((option, index) => {
-              const selected = option === value;
-              const active = index === activeIndex;
-              const optionText = getDropdownOptionText(kind, option);
-              const optionIconId = getOptionIconId(kind, option);
+      <GsapDropdown
+        id={listboxId}
+        open={isOpen}
+        onOpenChange={(nextOpen) => {
+          if (nextOpen) openDropdown();
+          else closeDropdown();
+        }}
+        triggerRef={triggerRef}
+        placement="bottom-left"
+        role="listbox"
+        aria-labelledby={labelId}
+        aria-activedescendant={`${listboxId}-${activeIndex}`}
+        className="t-dropdown custom-scrollbar absolute left-0 right-0 top-full z-50 mt-2 max-h-64 overflow-y-auto rounded-xl p-1.5"
+        data-origin="top-right"
+      >
+        {options.map((option, index) => {
+          const selected = option === value;
+          const active = index === activeIndex;
+          const optionText = getDropdownOptionText(kind, option);
+          const optionIconId = getOptionIconId(kind, option);
 
-              return (
-                <button
-                  id={`${listboxId}-${index}`}
-                  key={option}
-                  type="button"
-                  role="option"
-                  aria-selected={selected}
-                  onMouseEnter={() => setActiveIndex(index)}
-                  onClick={() => chooseOption(option)}
-                  className={`flex min-h-12 w-full min-w-0 items-center gap-3 rounded-lg px-2 py-2 text-left transition-[background-color,color,transform] duration-150 ${
-                    selected
-                      ? 'bg-violet-500/15 text-white'
-                      : active
-                        ? 'bg-white/[0.06] text-zinc-100'
-                        : 'text-zinc-400 hover:bg-white/[0.05] hover:text-zinc-100'
-                  }`}
-                >
-                  <span className="grid size-8 shrink-0 place-items-center rounded-md bg-black">
-                    <CharacterLabOptionIcon
-                      id={optionIconId}
-                      fallbackId={fallbackIconId}
-                      size={24}
-                    />
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate text-[11px] font-black leading-tight">
-                      {optionText.primary}
-                    </span>
-                    <span className="mt-0.5 block truncate text-[8px] font-bold leading-tight text-zinc-600">
-                      {optionText.detail}
-                    </span>
-                  </span>
-                  {selected && <Check size={14} className="shrink-0 text-violet-200" />}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      )}
+          return (
+            <button
+              id={`${listboxId}-${index}`}
+              key={option}
+              type="button"
+              role="option"
+              aria-selected={selected}
+              data-dropdown-item
+              onMouseEnter={() => setActiveIndex(index)}
+              onClick={() => chooseOption(option)}
+              className={`flex min-h-12 w-full min-w-0 items-center gap-3 rounded-lg px-2 py-2 text-left transition-[background-color,color,transform] duration-150 ${
+                selected
+                  ? 'bg-violet-500/15 text-white'
+                  : active
+                    ? 'bg-white/[0.06] text-zinc-100'
+                    : 'text-zinc-400 hover:bg-white/[0.05] hover:text-zinc-100'
+              }`}
+            >
+              <span className="grid size-8 shrink-0 place-items-center rounded-md bg-black">
+                <CharacterLabOptionIcon id={optionIconId} fallbackId={fallbackIconId} size={24} />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="block truncate text-[11px] font-black leading-tight">
+                  {optionText.primary}
+                </span>
+                <span className="mt-0.5 block truncate text-[8px] font-bold leading-tight text-zinc-600">
+                  {optionText.detail}
+                </span>
+              </span>
+              {selected && <Check size={14} className="shrink-0 text-violet-200" />}
+            </button>
+          );
+        })}
+      </GsapDropdown>
     </div>
   );
 }

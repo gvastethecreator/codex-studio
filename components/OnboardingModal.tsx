@@ -1,5 +1,5 @@
 import React from 'react';
-import { AnimatePresence, MotionDiv } from 'motion/react';
+import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
   IconArrowRight as ArrowRight,
   IconCircleCheck as CheckCircle2,
@@ -135,6 +135,8 @@ function PreviewCard({ entry }: { entry: OnboardingStyleCarouselEntry }) {
                 <img
                   src={entry.imageUrl}
                   alt={entry.alt}
+                  width={1024}
+                  height={1536}
                   className="h-full w-full object-contain"
                   loading="eager"
                   decoding="async"

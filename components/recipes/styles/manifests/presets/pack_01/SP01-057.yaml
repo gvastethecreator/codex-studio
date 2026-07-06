@@ -12,28 +12,80 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: Interior-design editorial
-  subject_treatment: Wide angle
-  color_and_tone: Balanced palette
-  lighting_and_shadow: Mixed window/interior
-  texture_and_material: Tactile decor materials
+  aesthetic: >-
+    Interior Design acts as a transferable photographic style router: begin from Interior-design
+    editorial, Clean layout, and commercial photographic system built from sellable clarity,
+    controlled studio craft, material desirability, and brand-neutral polish, then apply the
+    photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Wide angle; preserve prompt identity while making silhouette,
+    surface, freshness, scale, and product-like value immediately readable, keeping the original
+    subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Balanced palette; use palette as campaign control: clean whites, luxury neutrals,
+    appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Mixed window/interior; shape light with softboxes, reflectors, rim lines, HDR fill, glossy
+    kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow
+    density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Tactile decor materials; render metal, glass, fabric, food surface, condensation,
+    cosmetic gel, architecture finish, and clean contact shadows with precise detail, avoiding both
+    waxy smoothing and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Interior Design: lens choice, crop distance, depth of field, and focal hierarchy
-    support 5. Commercial And Product without generic framing.
-  atmosphere_and_mood: Welcoming, expensive
-  rendering_and_quality: Design-magazine polish
-  key_features: Clean layout
+    Compose through Interior Design studio-commercial clarity, controlled material response, clean
+    selling silhouette, and polished photographic retouching; compose for catalog clarity, top-down
+    order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with
+    lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Welcoming, expensive; derive mood from appetite, trust, luxury, engineering,
+    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Design-magazine polish; finish with professional photo polish, accurate material
+    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Interior-design editorial; Clean layout; Balanced palette; Mixed window/interior; Interior
+    Design studio-commercial clarity, controlled material response, clean selling silhouette, and
+    polished photographic retouching
   creative_brief: >-
-    Interior-design photography turns any subject into curated space logic: wide but controlled composition,
-    balanced palette, mixed window/practical light, tactile material hierarchy, and clean layout. Keep
-    magazine warmth without requiring a room, furniture, oak, linen, or real estate staging.
+    Apply Interior Design as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Interior-design editorial, Balanced palette, Mixed window/interior, Tactile
+    decor materials, and Interior Design studio-commercial clarity, controlled material response,
+    clean selling silhouette, and polished photographic retouching through optics, exposure,
+    palette, surface response, timing, and finish without requiring the card image's original
+    subject.
 avoidRules:
   - clutter
   - dark
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - fake brand logo
+  - messy clutter
+  - dirty product surface
+  - unreadable labels
+  - cheap stock layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-057.webp
 attributes:
-  negativePrompt: clutter, dark
+  negativePrompt: >-
+    clutter, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy
+    clutter, dirty product surface, unreadable labels, cheap stock layout
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

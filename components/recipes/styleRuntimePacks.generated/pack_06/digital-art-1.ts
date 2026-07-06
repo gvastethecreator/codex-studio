@@ -8,25 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Digital Painting',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
       aesthetic:
-        'Polished digital illustration with layer-built control, clean brush economy, and modern concept-render clarity',
+        'Digital Painting acts as a transferable art-medium router: start from Polished digital illustration with layer built control, clean brush economy, and modern concept render clarity, Layered polish, crisp focal rendering, editable feeling control and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Refined silhouette edges, selective painterly marks, and clean shape transitions',
+        'Transform any prompt subject through Refined silhouette edges, selective painterly marks, and clean shape transitions; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'RGB-vibrant but disciplined, with controlled hue shifts and crisp accent separation',
-      lighting_and_shadow: 'Studio-like key/fill/rim logic tuned for clean digital readability',
+        'Build color with RGB vibrant but disciplined, with controlled hue shifts and crisp accent separation; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio like key/fill/rim logic tuned for clean digital readability; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
       texture_and_material:
-        'Smooth brush blending with selective texture overlays and pressure-sensitive edge detail',
+        'Render Smooth brush blending with selective texture overlays and pressure sensitive edge detail; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Digital Painting using its key spatial cues: Layered polish, crisp focal rendering, editable-feeling control.',
-      atmosphere_and_mood: 'Polished',
+        'Structure the image through Compose for Digital Painting using its key spatial cues: Layered polish, crisp focal rendering, editable feeling control; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Polished; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Professional digital painting polish without platform-specific tropes',
-      key_features: 'Layered polish, crisp focal rendering, editable-feeling control',
+        'Finish with Professional digital painting polish without platform specific tropes; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Polished digital illustration with layer built control, clean brush economy, and modern concept render clarity; Layered polish, crisp focal rendering, editable feeling control; RGB vibrant but disciplined, with controlled hue shifts and crisp accent separation; Smooth brush blending with selective texture overlays and pressure sensitive edge detail',
       creative_brief:
-        'Apply digital-painting workflow to any input: pressure-sensitive brushwork, layered corrections, sampled color precision, soft undo-polished gradients, and clean iterative finish. Keep weightless painterly control without requiring fantasy characters, concept sheets, tablet UI, or visible layers.',
+        "Apply Digital Painting as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Polished digital illustration with layer built control, clean brush economy, and modern concept render clarity, Layered polish, crisp focal rendering, editable feeling control, Smooth brush blending with selective texture overlays and pressure sensitive edge detail without requiring the card image's original subject.",
     },
   },
   {
@@ -34,22 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Matte Painting Extension',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, landscape requirement, architecture requirement, sky requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, landscape requirement, architecture requirement, sky requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
       aesthetic:
-        'Matte-painting extension style with seamless photobash integration and atmospheric scale logic',
-      subject_treatment: 'Invisible',
-      color_and_tone: 'Cinematic, atmospheric',
-      lighting_and_shadow: 'Natural, consistent',
-      texture_and_material: 'Photo textures',
+        'Matte Painting Extension acts as a transferable art-medium router: start from Matte painting extension style with seamless photobash integration and atmospheric scale logic, Seamless blend and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Invisible; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Cinematic, atmospheric; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Natural, consistent; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Photo textures; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Matte Painting Extension using its key spatial cues: Seamless blend.',
-      atmosphere_and_mood: 'Expansive, coherent, cinematic',
+        'Structure the image through Compose for Matte Painting Extension using its key spatial cues: Seamless blend; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Expansive, coherent, cinematic; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Cinematic background/extension finish without requiring landscapes, skies, or architecture',
-      key_features: 'Seamless blend',
+        'Finish with Cinematic support field/extension finish without requiring landscapes, skies, or architecture; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Matte painting extension style with seamless photobash integration and atmospheric scale logic; Seamless blend; Cinematic, atmospheric; Photo textures',
       creative_brief:
-        'Apply matte-painting extension logic to any input: phototexture integration, painted continuity, atmospheric depth, cinematic color matching, and seamless scale expansion. Keep VFX-believable cohesion without requiring skies, architecture, vistas, plate photography, or environment-only subjects.',
+        "Apply Matte Painting Extension as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Matte painting extension style with seamless photobash integration and atmospheric scale logic, Seamless blend, Photo textures without requiring the card image's original subject.",
     },
   },
   {
@@ -57,22 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Concept Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, product pitch, fixed worldbuilding scene, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
       aesthetic:
-        'Entertainment concept-art visualization with mood-first design and production-readable focal hierarchy',
-      subject_treatment: 'Painterly',
-      color_and_tone: 'Mood lighting',
-      lighting_and_shadow: 'Cinematic',
-      texture_and_material: 'Photobash',
+        'Concept Art acts as a transferable art-medium router: start from Entertainment concept art visualization with mood first design and production readable focal hierarchy, Focal point detail and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Painterly; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Mood lighting; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Cinematic; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Photobash; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Concept Art using its key spatial cues: Focal point detail.',
-      atmosphere_and_mood: 'Epic, storytelling',
+        'Structure the image through Compose for Concept Art using its key spatial cues: Focal point detail; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Epic, storytelling; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'AAA concept-art finish without locking to games, movies, worlds, or products',
-      key_features: 'Focal point detail',
+        'Finish with AAA concept art finish without locking to games, movies, worlds, or products; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Entertainment concept art visualization with mood first design and production readable focal hierarchy; Focal point detail; Mood lighting; Photobash',
       creative_brief:
-        'Apply concept-art development language to any input: mood-first lighting, readable design intent, photobash-paint hybrid texture, production-ready shape decisions, and exploratory polish. Keep visual-direction utility without requiring characters, environments, callouts, model sheets, or story beats.',
+        "Apply Concept Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Entertainment concept art visualization with mood first design and production readable focal hierarchy, Focal point detail, Photobash without requiring the card image's original subject.",
     },
   },
   {
@@ -80,19 +95,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Low Poly',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: '3D mesh with visible facets',
-      subject_treatment: 'Sharp edges',
-      color_and_tone: 'Flat shaded polygons',
-      lighting_and_shadow: 'Global illumination',
-      texture_and_material: "Surface treatment follows Low Poly's material cues: Triangles.",
-      camera_and_composition: 'Geometric',
-      atmosphere_and_mood: 'Simple, clean',
-      rendering_and_quality: 'Indie game',
-      key_features: 'Triangles',
+      aesthetic:
+        'Low Poly acts as a transferable art-medium router: start from 3D mesh with visible facets, Triangles and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Sharp edges; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Flat shaded polygons; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Global illumination; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        "Render Surface treatment follows Low Poly's material cues: Triangles; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.",
+      camera_and_composition:
+        'Structure the image through Geometric; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Simple, clean; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Indie game; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: '3D mesh with visible facets; Triangles; Flat shaded polygons; Geometric',
       creative_brief:
-        'Apply low-poly art to any input: visible triangular facets, flat-shaded planes, simplified geometry, crisp ambient occlusion, and origami-like light breaks. Keep polygon beauty without requiring game terrain, animals, landscapes, or asset turntables.',
+        "Apply Low Poly as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 3D mesh with visible facets, Triangles without requiring the card image's original subject.",
     },
   },
   {
@@ -100,19 +123,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Speedpaint',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: 'Quick digital sketch',
-      subject_treatment: 'Rough, energetic',
-      color_and_tone: 'Bold, unrefined',
-      lighting_and_shadow: 'Dramatic',
-      texture_and_material: 'Brush strokes',
-      camera_and_composition: 'Unfinished edges',
-      atmosphere_and_mood: 'Dynamic, fast',
-      rendering_and_quality: 'Concept, loose',
-      key_features: 'Loose strokes',
+      aesthetic:
+        'Speedpaint acts as a transferable art-medium router: start from Quick digital sketch, Loose strokes and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Rough, energetic; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Bold, unrefined; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Dramatic; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Brush strokes; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Unfinished edges; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dynamic, fast; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Concept, loose; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Quick digital sketch; Loose strokes; Bold, unrefined; Brush strokes; Unfinished edges',
       creative_brief:
-        'Apply speedpaint energy to any input: broad gestural strokes, loose edges, compressed detail, fast value blocking, visible brush shortcuts, and idea-first confidence. Keep rapid concept vitality without requiring fantasy key art, YouTube process frames, characters, or unfinished sketch borders.',
+        "Apply Speedpaint as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Quick digital sketch, Loose strokes, Brush strokes without requiring the card image's original subject.",
     },
   },
   {
@@ -120,20 +152,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Isometric',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, world map requirement, playset requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, world map requirement, playset requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
       aesthetic:
-        'Isometric digital-art projection with equalized depth, toy-scale clarity, and no vanishing point',
-      subject_treatment: 'Parallel lines',
-      color_and_tone: 'Vibrant',
-      lighting_and_shadow: 'Studio',
-      texture_and_material: 'Smooth',
-      camera_and_composition: 'No perspective',
-      atmosphere_and_mood: 'Organized, toy-like',
-      rendering_and_quality: 'Game asset',
-      key_features: '30 degree angle',
+        'Isometric acts as a transferable art-medium router: start from Isometric digital art projection with equalized depth, toy scale clarity, and no vanishing point, 30 degree angle and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Parallel lines; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through No perspective; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Organized, toy like; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Game asset; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Isometric digital art projection with equalized depth, toy scale clarity, and no vanishing point; 30 degree angle; Vibrant; Smooth; No perspective',
       creative_brief:
-        'Apply isometric projection to any input: parallel nonconverging lines, thirty-degree tilt, equal plane attention, stacked grid logic, and miniature dimensional clarity. Keep diagrammatic charm without requiring buildings, rooms, game maps, dioramas, or explorable worlds.',
+        "Apply Isometric as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Isometric digital art projection with equalized depth, toy scale clarity, and no vanishing point, 30 degree angle, Smooth without requiring the card image's original subject.",
     },
   },
   {
@@ -141,21 +181,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Double Exposure',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face profile requirement, forest requirement, mountain requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face profile requirement, forest requirement, mountain requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
       aesthetic:
-        'Double-exposure compositing with nested imagery, transparent overlap, and poetic contour masking',
+        'Double Exposure acts as a transferable art-medium router: start from Double exposure compositing with nested imagery, transparent overlap, and poetic contour masking, Silhouette container and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Silhouette or mask-driven overlays with soft edge blending and exposure fusion',
-      color_and_tone: 'Mixed palettes',
-      lighting_and_shadow: 'Contrast',
-      texture_and_material: 'Mixed',
-      camera_and_composition: 'Image inside shape',
-      atmosphere_and_mood: 'Dreamy',
-      rendering_and_quality: 'Artistic',
-      key_features: 'Silhouette container',
+        'Transform any prompt subject through Silhouette or mask driven overlays with soft edge blending and exposure fusion; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Mixed palettes; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Contrast; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Mixed; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Image inside shape; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dreamy; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Artistic; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Double exposure compositing with nested imagery, transparent overlap, and poetic contour masking; Silhouette container; Mixed palettes; Image inside shape',
       creative_brief:
-        'Apply double-exposure composition to any input: tonal masking, overlapping visual fields, translucent registration drift, additive density, and negative space fusion. Keep layered memory logic without requiring faces, forests, mountains, human profiles, or portrait silhouettes.',
+        "Apply Double Exposure as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Double exposure compositing with nested imagery, transparent overlap, and poetic contour masking, Silhouette container, Mixed without requiring the card image's original subject.",
     },
   },
   {
@@ -163,19 +210,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paper Cutout (Digital)',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: 'Layered paper style',
-      subject_treatment: 'Cut edges',
-      color_and_tone: 'Solid colors',
-      lighting_and_shadow: 'Drop shadows',
-      texture_and_material: 'Paper grain',
-      camera_and_composition: 'Simplified',
-      atmosphere_and_mood: 'Playful',
-      rendering_and_quality: 'Craft, cute',
-      key_features: 'Depth layers',
+      aesthetic:
+        'Paper Cutout (Digital) acts as a transferable art-medium router: start from Layered paper style, Depth layers and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Cut edges; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Solid colors; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Drop shadows; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Paper grain; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Simplified; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Craft, cute; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'Layered paper style; Depth layers; Solid colors; Paper grain; Simplified',
       creative_brief:
-        'Apply digital paper-cutout style to any input: layered flat paper planes, clean cut edges, soft drop shadows, staged depth, and machine-perfect craft illusion. Keep handmade charm simulated digitally without requiring greeting cards, landscapes, characters, or tabletop craft scenes.',
+        "Apply Paper Cutout (Digital) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Layered paper style, Depth layers, Paper grain without requiring the card image's original subject.",
     },
   },
   {
@@ -183,20 +238,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pixel Art (16-bit)',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, character sprite requirement, cartridge reference',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, character sprite requirement, cartridge reference, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: '16-bit pixel-art style with deliberate grid economy and palette-ramp readability',
-      subject_treatment: 'Pixel perfect',
-      color_and_tone: 'Limited palette',
-      lighting_and_shadow: 'Dithered',
-      texture_and_material: 'Pixel grid',
-      camera_and_composition: 'Blocky',
-      atmosphere_and_mood: 'Nostalgic',
+      aesthetic:
+        'Pixel Art (16-bit) acts as a transferable art-medium router: start from 16 bit pixel art style with deliberate grid economy and palette elevated edge structure readability, Grid alignment and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Pixel perfect; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Limited palette; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Dithered; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Pixel grid; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Blocky; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nostalgic; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Retro game-art finish without requiring sprites, characters, cartridges, or UI',
-      key_features: 'Grid alignment',
+        'Finish with Retro game art finish without requiring sprites, characters, cartridges, or UI; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        '16 bit pixel art style with deliberate grid economy and palette elevated edge structure readability; Grid alignment; Limited palette; Pixel grid; Blocky',
       creative_brief:
-        'Apply 16-bit pixel-art constraints to any input: intentional pixel placement, limited palette, crisp grid scale, dithered shade ramps, tile rhythm, and hard aliasing. Keep hardware-era nostalgia from construction, not from forced game props, HUDs, sprites, or level scenes.',
+        "Apply Pixel Art (16-bit) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 16 bit pixel art style with deliberate grid economy and palette elevated edge structure readability, Grid alignment, Pixel grid without requiring the card image's original subject.",
     },
   },
   {
@@ -204,19 +267,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Synthwave',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, sunset requirement, road requirement, car requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: '80s retro-futurism',
-      subject_treatment: 'Grid lines',
-      color_and_tone: 'Purple, Pink, Cyan',
-      lighting_and_shadow: 'Neon glow',
-      texture_and_material: 'Scanlines',
-      camera_and_composition: 'Chrome reflection',
-      atmosphere_and_mood: 'Nostalgic, cool',
-      rendering_and_quality: 'Retro, aesthetic',
-      key_features: 'Sunset gradient',
+      aesthetic:
+        'Synthwave acts as a transferable art-medium router: start from 80s retro futurism, Sunset gradient and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Grid lines; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Purple, Pink, Cyan; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Neon glow; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Scanlines; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Chrome reflection; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nostalgic, cool; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Retro, aesthetic; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        '80s retro futurism; Sunset gradient; Purple, Pink, Cyan; Scanlines; Chrome reflection',
       creative_brief:
-        'Apply synthwave visual language to any input: magenta-cyan bloom, neon grid rhythm, chrome gradients, scanline haze, reflective bands, and synthetic retrofuturist glow. Keep remembered-future energy without requiring sunsets, roads, cars, horizons, palm trees, or retro props.',
+        "Apply Synthwave as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 80s retro futurism, Sunset gradient, Scanlines without requiring the card image's original subject.",
     },
   },
   {
@@ -224,21 +296,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'ASCII Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, readable words, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, readable words, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
       aesthetic:
-        'ASCII-density image style built from monospaced glyph fields and terminal-era tonal logic',
+        'ASCII Art acts as a transferable art-medium router: start from ASCII density image style built from monospaced glyph fields and terminal era tonal logic, Glyph density image, monospaced grid, terminal glow and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Repeating keyboard glyphs used as value cells, line clusters, and contour-density bands',
-      color_and_tone: 'Monochrome green/black',
-      lighting_and_shadow: 'Density based',
-      texture_and_material: 'Text grid',
-      camera_and_composition: 'Low res',
-      atmosphere_and_mood: 'Tech, code',
-      rendering_and_quality: 'Retro, hacker',
-      key_features: 'Glyph density image, monospaced grid, terminal glow',
+        'Transform any prompt subject through Repeating keyboard glyphs used as value cells, line clusters, and contour density bands; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Monochrome green/black; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Density based; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Text grid; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Low res; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tech, code; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Retro, hacker; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'ASCII density image style built from monospaced glyph fields and terminal era tonal logic; Glyph density image, monospaced grid, terminal glow; Monochrome green/black; Text grid; Low res',
       creative_brief:
-        'Apply ASCII-art construction to any input: monospaced glyph density, symbol fields as tonal pixels, terminal-era spacing, low-resolution contrast, and character-set geometry. Keep text-as-image abstraction while avoiding readable words, captions, signatures, or logos.',
+        "Apply ASCII Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through ASCII density image style built from monospaced glyph fields and terminal era tonal logic, Glyph density image, monospaced grid, terminal glow, Text grid without requiring the card image's original subject.",
     },
   },
   {
@@ -246,19 +325,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Glitch Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: 'Corrupted data',
-      subject_treatment: 'Jagged, displaced',
-      color_and_tone: 'RGB shift, neon',
-      lighting_and_shadow: 'Broken',
-      texture_and_material: 'Pixels, noise',
-      camera_and_composition: 'Tearing',
-      atmosphere_and_mood: 'Chaotic, tech',
-      rendering_and_quality: 'Broken, cyber',
-      key_features: 'Digital artifacts',
+      aesthetic:
+        'Glitch Art acts as a transferable art-medium router: start from Corrupted data, Digital artifacts and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Jagged, displaced; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with RGB shift, neon; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Broken; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Pixels, noise; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Tearing; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Chaotic, tech; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Broken, cyber; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'Corrupted data; Digital artifacts; RGB shift, neon; Pixels, noise; Tearing',
       creative_brief:
-        'Apply glitch-art corruption to any input: RGB channel displacement, data tearing, compression blocks, scanline breaks, algorithmic offsets, and malfunction-as-medium structure. Keep digital failure expressive without requiring screens, hackers, cyberpunk rooms, or UI overlays.',
+        "Apply Glitch Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Corrupted data, Digital artifacts, Pixels, noise without requiring the card image's original subject.",
     },
   },
   {
@@ -266,21 +353,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vector Art (Flat)',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, logo requirement, brand mark',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, logo requirement, brand mark, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: 'Clean vector-art style with Bezier precision and flat scalable geometry',
-      subject_treatment: 'Bezier curves',
-      color_and_tone: 'Solid flat colors',
+      aesthetic:
+        'Vector Art (Flat) acts as a transferable art-medium router: start from Clean vector art style with Bezier precision and flat scalable geometry, Infinite resolution and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Bezier curves; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Solid flat colors; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Lighting for Vector Art (Flat): purposeful key, bounce, rim, shadow depth, and focal readability matched to 4. Digital Art.',
+        'Handle light through Lighting for Vector Art (Flat): purposeful key, bounce, rim, shadow depth, and focal readability matched to 4. Digital Art; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
       texture_and_material:
-        "Surface treatment follows Vector Art (Flat)'s material cues: Infinite resolution.",
-      camera_and_composition: 'Simplified',
-      atmosphere_and_mood: 'Modern, precise, frictionless',
-      rendering_and_quality: 'Icon-grade clarity without requiring logos, marks, or branding',
-      key_features: 'Infinite resolution',
+        "Render Surface treatment follows Vector Art (Flat)'s material cues: Infinite resolution; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.",
+      camera_and_composition:
+        'Structure the image through Simplified; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Modern, precise, frictionless; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Icon grade clarity without requiring logos, marks, or branding; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Clean vector art style with Bezier precision and flat scalable geometry; Infinite resolution; Solid flat colors; Simplified',
       creative_brief:
-        'Apply flat vector-art construction to any input: precise Bezier contours, deliberate anchor-point curves, solid color fills, clean geometric hierarchy, and resolution-independent edges. Keep scalable graphic clarity without requiring icons, logos, infographics, app UI, or brand marks.',
+        "Apply Vector Art (Flat) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Clean vector art style with Bezier precision and flat scalable geometry, Infinite resolution without requiring the card image's original subject.",
     },
   },
   {
@@ -288,20 +382,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Polygon Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, face requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: '2D geometric triangulation',
-      subject_treatment: 'Triangles',
-      color_and_tone: 'Gradients per triangle',
-      lighting_and_shadow: 'Flat',
+      aesthetic:
+        'Polygon Art acts as a transferable art-medium router: start from 2D geometric triangulation, Triangular mesh and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Triangles; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Gradients per triangle; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
       texture_and_material:
-        "Surface treatment follows Polygon Art's material cues: Triangular mesh.",
-      camera_and_composition: 'Geometric',
-      atmosphere_and_mood: 'Clean, sharp',
-      rendering_and_quality: 'Vector, modern',
-      key_features: 'Triangular mesh',
+        "Render Surface treatment follows Polygon Art's material cues: Triangular mesh; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.",
+      camera_and_composition:
+        'Structure the image through Geometric; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Clean, sharp; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Vector, modern; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: '2D geometric triangulation; Triangular mesh; Gradients per triangle',
       creative_brief:
-        'Apply polygon-art tessellation to any input: triangular facets, angular tonal decisions, low-resolution form memory, and flat geometric patchwork. Keep geometry as the art system without requiring portraits, animals, landscapes, or stock low-poly subjects.',
+        "Apply Polygon Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 2D geometric triangulation, Triangular mesh without requiring the card image's original subject.",
     },
   },
   {
@@ -309,19 +410,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Voxel Art',
     category: '4. Digital Art',
     negativePrompt:
-      'photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement',
+      'photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement, landscape requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, random AI smear, muddy overpaint, uncontrolled artifact noise, generic concept slop',
     style: {
-      aesthetic: '3D cubes',
-      subject_treatment: 'Cubes',
-      color_and_tone: 'Vibrant',
-      lighting_and_shadow: 'AO',
-      texture_and_material: "Surface treatment follows Voxel Art's material cues: Cubes.",
-      camera_and_composition: 'Blocky',
-      atmosphere_and_mood: 'Cute, digital',
-      rendering_and_quality: 'Voxel-art finish with cube-unit discipline and playful AO depth',
-      key_features: 'Cubes',
+      aesthetic:
+        'Voxel Art acts as a transferable art-medium router: start from 3D cubes and digital art workflow system built from layer control, editable edges, raster or vector logic, screen-era artifacts, and production readability, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Cubes; preserve the prompt subject while routing it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs, or compositing only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through AO; shape light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch clipping, or composited photographic consistency, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        "Render Surface treatment follows Voxel Art's material cues: Cubes; surface detail should come from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.",
+      camera_and_composition:
+        'Structure the image through Blocky; compose through digital hierarchy, projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Cute, digital; derive mood from speed, polish, concept utility, retro-futurism, broken media, toy-scale clarity, or modern production control, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Voxel art finish with cube unit discipline and playful AO depth; finish with clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        "3D cubes; Vibrant; Surface treatment follows Voxel Art's material cues: Cubes; Blocky",
       creative_brief:
-        'Apply voxel-art construction to any input: cubic sampling, repeated block units, stepped curves, crevice ambient occlusion, and toy-like volumetric readability. Keep voxel grammar without requiring Minecraft worlds, terrain, buildings, or game dioramas.',
+        "Apply Voxel Art as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through 3D cubes, Surface treatment follows Voxel Art's material cues: Cubes without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

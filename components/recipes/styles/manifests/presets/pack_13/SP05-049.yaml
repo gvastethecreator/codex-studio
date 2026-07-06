@@ -13,32 +13,56 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Velvet gothic shojo romance built from nocturnal longing, lace-like delicacy, moonlit secrecy, forbidden
-    elegance, and melancholy ornament
+    Velvet Gothic Academy operates as a portable anime-lifestyle router: combine Velvet Gothic
+    Academy identity cues through Nocturnal longing; velvet lace materiality; moon silver contrast;
+    gothic romantic restraint; expressive eye detail; Velvet Gothic Academy anime style cues with
+    shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation
+    sparkle, ornate contour, emotional close reading, and theatrical abstraction, so the preset
+    supplies anime style behavior after prompt X rather than a required scene, character, franchise
+    image, or card composition.
   subject_treatment: >-
-    Delicate romance linework, fine hair-thin strokes, graceful flowing contours, soft eyelash detail, and
-    gothic vertical accenting
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Deep velvet blacks, moonlit silvers, wine-red accents, pearl skin glow, faded rose tones, and muted violet
-    shadows
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Soft bloom, moon-rim light, candle-warm accent points, diffuse romantic glow, and luminous halation inside
-    dark value fields
-  texture_and_material: Velvet softness, lace textures, silk sheen, mahogany-like polish, petal softness, and chiffon translucency
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
+  texture_and_material: >-
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
   camera_and_composition: >-
-    Graceful elongated proportions, corridor-like depth compression as optional mood, fashion elegance, and
-    romantic silhouette styling
-  atmosphere_and_mood: Gothic, yearning, mysterious, melancholic
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    Luminous gothic-romance frame with ethereal bloom, soft-focus beauty, dark-value control, and dreamy
-    chromatic softness
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
   key_features: >-
-    Nocturnal longing, velvet-lace materiality, moon-silver contrast, gothic romantic restraint, expressive
-    eye detail
+    Nocturnal longing; velvet lace materiality; moon silver contrast; gothic romantic restraint;
+    expressive eye detail; Velvet Gothic Academy anime style cues
   creative_brief: >-
-    Use the gothic academy title as a style anchor for nocturnal shojo longing: velvet darkness, lace
-    delicacy, and forbidden romantic pressure should transfer without requiring school, corridors, lake,
-    furniture, gardens, or libraries.
+    Use Velvet Gothic Academy after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Nocturnal longing, velvet lace materiality, moon silver contrast, gothic romantic restraint,
+    expressive eye detail, Velvet Gothic Academy anime style cues, color logic, lighting, material
+    finish, composition rhythm, mood pressure, and quality controls without requiring a fixed cast,
+    fixed venue, fixed prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -52,12 +76,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-049.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

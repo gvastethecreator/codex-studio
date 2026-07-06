@@ -12,26 +12,83 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Traditional flash-sheet tattoo graphic language
-  subject_treatment: Heavy black contour with simplified internal separators
-  color_and_tone: Classic flash primaries (red, yellow, green, black) with flat opaque fills
-  lighting_and_shadow: Minimal realism; depth through selective whip/pepper shading motifs
-  texture_and_material: Slight paper aging and ink edge texture
-  camera_and_composition: Intentionally flat emblematic composition
-  atmosphere_and_mood: Tough, nostalgic, craft-shop heritage, ceremonial permanence
-  rendering_and_quality: Bold, iconic, high legibility at distance and small scale
-  key_features: Bold-will-hold geometry, limited palette discipline, emblem-first silhouettes
+  aesthetic: >-
+    Tattoo Flash (Traditional) acts as a transferable illustration router: start from Traditional
+    flash-sheet tattoo graphic language, Bold-will-hold geometry, limited palette discipline,
+    emblem-first silhouettes and ink and printmaking system built from mark economy, matrix process,
+    ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure, then
+    apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Heavy black contour with simplified internal separators;
+    preserve the requested subject while rebuilding it through carved lines, etched density, stipple
+    fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or tattoo-flash
+    simplification, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Classic flash primaries (red, yellow, green, black) with flat opaque fills; use
+    color as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like
+    flash colors, spray contrast, newspaper black, or sumi restraint, with deliberate value
+    grouping, accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Minimal realism; depth through selective whip/pepper shading motifs;
+    translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink
+    pooling, or flat spray contrast rather than photographic shading, so value structure supports
+    the illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Slight paper aging and ink edge texture; surface detail should show paper fiber, plate
+    burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash
+    linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Intentionally flat emblematic composition, scale rhythm, edge
+    hierarchy, spacing, and composition rules specific to Tattoo Flash (Traditional); compose
+    through print registration, border discipline, mark-direction rhythm, negative-space carving,
+    tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tough, nostalgic, craft-shop heritage, ceremonial permanence; derive mood from
+    craft pressure, underground immediacy, archival print authority, occult darkness, decorative
+    ceremony, street-poster urgency, or disciplined ink control, letting the style alter
+    interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Bold, iconic, high legibility at distance and small scale; finish as a credible ink
+    or print artifact with exact mark logic, restrained artifacting, and no fake text, random
+    distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Traditional flash-sheet tattoo graphic language; Bold-will-hold geometry, limited palette
+    discipline, emblem-first silhouettes; Classic flash primaries (red, yellow, green, black) with
+    flat opaque fills; Slight paper aging and ink edge texture; Intentionally flat emblematic
+    composition, scale rhythm, edge hierarchy, spacing, and composition rules specific to Tattoo
+    Flash (Traditional)
   creative_brief: >-
-    Apply traditional tattoo-flash grammar to any input: bold-will-hold outlines, compact emblem silhouettes,
-    flat classic primaries, pepper shading, and sheet-ready clarity should make motifs durable without
-    requiring skulls, roses, daggers, skin, flash sheets, or tattoo-shop scenes.
+    Apply Tattoo Flash (Traditional) as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Traditional flash-sheet tattoo graphic language, Bold-will-hold geometry, limited
+    palette discipline, emblem-first silhouettes, Slight paper aging and ink edge texture without
+    requiring the card image's original subject.
 avoidRules:
   - realistic
   - soft
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-075.webp
 attributes:
-  negativePrompt: realistic, soft
+  negativePrompt: >-
+    realistic, soft, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

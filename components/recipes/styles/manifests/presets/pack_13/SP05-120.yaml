@@ -13,48 +13,89 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Thermal-camera anime treatment where subjects become heat maps, emotion and intensity register as
-    false-color temperature, and sensor overlays replace natural sight
+    Thermal-Heat-Signature Vision operates as a portable anime-lifestyle router: combine Thermal
+    Heat Signature Vision identity cues through White hot to blue cold gradients; ironbow false
+    color spectrum; thermal HUD marks; heat bloom halos; emissive only lighting; Thermal Heat
+    Signature Vision anime style cues with broad anime style spectrum grammar with experimental
+    line, material specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and
+    genre flexible art direction, so the preset supplies anime style behavior after prompt X rather
+    than a required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Heat-gradient contours replacing drawn lines, no ink edges, temperature boundaries, thermal isotherm
-    banding, and HUD-overlay alignment lines
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    White-hot-core, yellow-very-hot, red-hot, magenta-warm, purple-cooling, cyan-cold, deep-blue-coldest,
-    black-absolute-zero, ironbow-false-color-spectrum, rainbow-thermal-palette
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Emissive-heat-only illumination, no external light sources, self-radiating warmth, and hot forms glowing
-    against cold fields
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Thermal-sensor-noise-grain, microbolometer-pixel-artifacts, digital-readout-overlay,
-    emissivity-difference-texture, heat-bloom-halo
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Thermal reticle alignment, heat-plume distortion, temperature translucency, and cold-receding
-    hot-advancing depth
-  atmosphere_and_mood: Tactical, predatory, invisible-spectrum, beyond-human vision, technological bloodlust
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Thermal-camera anime, heat-signature beauty, infrared sensor rendering, and false-color body-heat
-    abstraction
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    White-hot to blue-cold gradients, ironbow false-color spectrum, thermal HUD marks, heat-bloom halos, no
-    ink edges, emissive-only lighting
+    White hot to blue cold gradients; ironbow false color spectrum; thermal HUD marks; heat bloom
+    halos; emissive only lighting; Thermal Heat Signature Vision anime style cues
   creative_brief: >-
-    Use thermal heat-signature vision as false-color perception grammar. Any prompt should become emissive
-    temperature logic: ironbow bands, heat bloom, cold zones, HUD-like tracking, and no natural light.
-    Predator IP, targets, walls, weapons, and hunting scenes are optional.
+    Use Thermal-Heat-Signature Vision after prompt X as a transferable anime character/lifestyle
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
+    supplies White hot to blue cold gradients, ironbow false color spectrum, thermal HUD marks, heat
+    bloom halos, emissive only lighting, Thermal Heat Signature Vision anime style cues, color
+    logic, lighting, material finish, composition rhythm, mood pressure, and quality controls
+    without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
+    composition.
 avoidRules:
   - muted
-  - low-contrast heat separation
+  - low contrast heat separation
   - natural color
   - realistic skin
   - normal lighting
   - daylight palette
-  - non-sensor rendering
+  - non sensor rendering
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-120.webp
 attributes:
   negativePrompt: >-
-    muted, low-contrast heat separation, natural color, realistic skin, normal lighting, daylight palette,
-    non-sensor rendering
+    muted, low contrast heat separation, natural color, realistic skin, normal lighting, daylight
+    palette, non sensor rendering, generic AI anime gloss, auteur copycat, fixed source scene, canon
+    character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime
+    filter, prompt literal card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D
+    render look, copied franchise costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -12,28 +12,78 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: Real-time next-gen game-engine rendering
-  subject_treatment: Lumen global illumination
-  color_and_tone: Realistic, dynamic, physically based
-  lighting_and_shadow: Ray traced shadows, Nanite-lit
-  texture_and_material: Nanite geometry detail
+  aesthetic: >-
+    Unreal Engine 5 Next-Gen Real-Time Engine acts as a transferable CGI-style router: start from
+    Real time next gen game engine rendering, High fidelity, real time path tracing and
+    renderer-pipeline system built from sampling behavior, shader evaluation, light transport,
+    denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Lumen global illumination; preserve the prompt subject
+    while translating it through the renderer strengths: path tracing, biased sampling, real-time
+    GI, product-studio preview, or feature-film shading, keeping the requested identity, silhouette,
+    pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Realistic, dynamic, physically based; make color come from color management,
+    HDR response, spectral bloom, engine tonemapping, material albedo, and physically plausible
+    exposure, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Ray traced shadows, Nanite lit; let engine-specific GI, ray tracing, Lumen,
+    caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value
+    structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Nanite geometry detail; surface detail should reveal BSDF behavior, sampling clarity,
+    shader networks, displacement, adaptive refinement, and material truth rather than a pasted
+    texture, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Unreal Engine 5 Next-Gen Real-Time Engine: three-quarter or orthographic framing, clean
-    silhouette read, material highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Immersive, interactive, cinematic depth
-  rendering_and_quality: AAA game fidelity, virtual production polish, real-time final-frame clarity
-  key_features: High fidelity, real-time path tracing
+    Structure the image through Lookdev camera for Unreal Engine 5 Next Gen Real Time Engine: three
+    quarter or orthographic framing, clean silhouette read, material highlights, controlled depth,
+    and vertical card composition; compose for renderer readability through focal hierarchy, product
+    or VFX staging, material swatches, path-traced depth, and clean engine output, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Immersive, interactive, cinematic depth; derive mood from render fidelity,
+    production confidence, cinematic polish, engine interactivity, or industrial design clarity,
+    letting the renderer alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with AAA game fidelity, virtual production polish, real time final frame clarity; finish
+    with credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw
+    viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader
+    evidence to make the CGI mode recognizable.
+  key_features: >-
+    Real time next gen game engine rendering; High fidelity, real time path tracing; Realistic,
+    dynamic, physically based; Nanite geometry detail; Lookdev camera for Unreal Engine 5 Next Gen
+    Real Time Engine: three quarter or orthographic framing, clean silhouette read, material
+    highlights, controlled depth, and vertical card composition
   creative_brief: >-
-    Render the input with Unreal Engine 5 language: Nanite-like geometric density, Lumen-style bounce,
-    ray-traced shadows, volumetric depth and real-time virtual-production polish. Keep AAA game immediacy
-    without requiring a full world, screenshot, level, character, or playable setup.
+    Apply Unreal Engine 5 Next-Gen Real-Time Engine as a CGI/render preset over prompt X: preserve
+    the user's requested subject, then route modeling, shader response, lighting, material scale,
+    composition, mood, and final render craft through Real time next gen game engine rendering, High
+    fidelity, real time path tracing, Nanite geometry detail without requiring the card image's
+    original subject.
 avoidRules:
   - pre-rendered
   - low poly
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - raw viewport
+  - unlit preview
+  - wrong render engine
+  - cheap preview noise
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-002.webp
 attributes:
-  negativePrompt: pre-rendered, low poly
+  negativePrompt: >-
+    pre-rendered, low poly, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
+    chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine,
+    cheap preview noise
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

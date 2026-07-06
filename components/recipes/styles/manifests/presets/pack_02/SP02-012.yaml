@@ -12,29 +12,86 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: Symmetrical composition
+  aesthetic: >-
+    Wes Anderson Symmetrical Storybook Cinema acts as a transferable cinematic-media router: start
+    from Symmetrical composition, Wes Anderson Symmetrical Storybook Cinema lens grammar, film stock
+    behavior, genre blocking, projection texture, and cinematic color grade, Symmetry, diorama
+    precision, label-like spacing and cinematic genre system built from lens grammar, film stock,
+    blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media
+    behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Wes Anderson Symmetrical Storybook Cinema:
-    casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and
-    broadcast grammar without locking to one plot beat.
-  color_and_tone: Pastel palette, butter yellow, mint green, dusty pink, warm ochre
-  lighting_and_shadow: Flat, soft, diffused wrap, even exposure, no shadow drama
-  texture_and_material: Film, Kodak stock, matte surface, hand-painted props
-  camera_and_composition: Center frame, locked-down composition, 90-degree pans
-  atmosphere_and_mood: Whimsical, deadpan, storybook melancholy, curated nostalgia
-  rendering_and_quality: Quirky, precise, diorama-perfect, miniature precision
-  key_features: Symmetry, diorama precision, label-like spacing
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Wes Anderson Symmetrical Storybook Cinema: casting, wardrobe, props, motion cues, and
+    silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to
+    one plot beat; preserve the requested subject while staging it as filmed material through
+    blocking, wardrobe pressure, lens distance, movement cues, or genre-era performance texture only
+    when useful, keeping the requested identity, silhouette, action, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Pastel palette, butter yellow, mint green, dusty pink, warm ochre; treat color
+    as cinema process: film emulsion, lab timing, gel lighting, period stock response, genre grade,
+    faded print, or projection decay, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat, soft, diffused wrap, even exposure, no shadow drama; make light feel
+    motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical
+    glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure
+    support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Film, Kodak stock, matte surface, hand-painted props; surface detail should reveal film
+    grain, gate weave, scratches, halation, acetate texture, projection damage, optical compositing,
+    or photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Center frame, locked-down composition, 90-degree pans; compose
+    through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease,
+    symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy,
+    and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Whimsical, deadpan, storybook melancholy, curated nostalgia; derive mood from
+    cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp
+    excess, or analog spectacle, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Quirky, precise, diorama-perfect, miniature precision; finish as credible
+    moving-image language with controlled film artifacts, readable subject identity, and no
+    mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Symmetrical composition, Wes Anderson Symmetrical Storybook Cinema lens grammar, film stock
+    behavior, genre blocking, projection texture, and cinematic color grade; Symmetry, diorama
+    precision, label-like spacing; Pastel palette, butter yellow, mint green, dusty pink, warm
+    ochre; Film, Kodak stock, matte surface, hand-painted props; Center frame, locked-down
+    composition, 90-degree pans
   creative_brief: >-
-    Symmetrical storybook cinema makes any subject deadpan and curated: locked center framing, pastel palette,
-    flat soft exposure, diorama precision, matte prop texture, and nostalgic melancholy. Keep Wes Anderson
-    grammar without forcing cross-section sets, typography, or quirky characters.
+    Apply Wes Anderson Symmetrical Storybook Cinema as a cinematic-media preset over prompt X:
+    preserve the user's requested subject, then route lens behavior, palette, light, signal or film
+    texture, composition, mood, and final media craft through Symmetrical composition, Wes Anderson
+    Symmetrical Storybook Cinema lens grammar, film stock behavior, genre blocking, projection
+    texture, and cinematic color grade, Symmetry, diorama precision, label-like spacing, Film, Kodak
+    stock, matte surface, hand-painted props without requiring the card image's original subject.
 avoidRules:
   - asymmetrical
   - messy
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-012.webp
 attributes:
-  negativePrompt: asymmetrical, messy
+  negativePrompt: >-
+    asymmetrical, messy, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

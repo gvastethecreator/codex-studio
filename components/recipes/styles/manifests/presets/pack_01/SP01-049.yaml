@@ -12,29 +12,82 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: Appetizing food-styling light
-  subject_treatment: Soft focus background
-  color_and_tone: Warm, saturated, fresh
-  lighting_and_shadow: Window light, reflector
-  texture_and_material: Steamlike glow, gloss, fresh surface
+  aesthetic: >-
+    Food Photography acts as a transferable photographic style router: begin from Appetizing
+    food-styling light, Top down or 45 degree, and commercial photographic system built from
+    sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then
+    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Soft focus depth field; preserve prompt identity while making
+    silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the
+    original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Warm, saturated, fresh; use palette as campaign control: clean whites, luxury
+    neutrals, appetite warmth, cool tech accents, automotive reflections, or interior harmony, with
+    value separation and white balance choices that feel captured in-camera rather than painted
+    over.
+  lighting_and_shadow: >-
+    Use Window light, reflector; shape light with softboxes, reflectors, rim lines, HDR fill, glossy
+    kickers, window balance, or packshot sweep shadows, preserving believable exposure, shadow
+    density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Steamlike glow, gloss, fresh surface; render metal, glass, fabric, food surface,
+    condensation, cosmetic gel, architecture finish, and clean contact shadows with precise detail,
+    avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Food Photography: lens choice, crop distance, depth of field, and focal hierarchy
-    support 5. Commercial And Product without generic framing.
-  atmosphere_and_mood: Warm, appetizing
-  rendering_and_quality: Cookbook-style appetite polish
-  key_features: Top down or 45 degree
+    Compose through Food Photography studio-commercial clarity, controlled material response, clean
+    selling silhouette, and polished photographic retouching; compose for catalog clarity, top-down
+    order, hero compression, architectural verticals, lifestyle layout, or premium macro depth, with
+    lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Warm, appetizing; derive mood from appetite, trust, luxury, engineering,
+    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Cookbook-style appetite polish; finish with professional photo polish, accurate
+    material response, clean retouching, and no fake logo, UI, or unreadable label clutter,
+    high-resolution photographic detail, and disciplined denoise without losing natural grain where
+    the preset needs it.
+  key_features: >-
+    Appetizing food-styling light; Top down or 45 degree; Warm, saturated, fresh; Window light,
+    reflector; Food Photography studio-commercial clarity, controlled material response, clean
+    selling silhouette, and polished photographic retouching
   creative_brief: >-
-    Food-photography appetite logic applied broadly: warm window light, soft reflector fill, fresh saturation,
-    shallow background, gloss highlights, and gentle steamlike atmosphere. Make any subject feel styled for
-    sensory desire without forcing plates, meals, sauces, or edible content.
+    Apply Food Photography as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Appetizing food-styling light, Warm, saturated, fresh, Window light,
+    reflector, Steamlike glow, gloss, fresh surface, and Food Photography studio-commercial clarity,
+    controlled material response, clean selling silhouette, and polished photographic retouching
+    through optics, exposure, palette, surface response, timing, and finish without requiring the
+    card image's original subject.
 avoidRules:
   - unappetizing
   - dark
   - dirty
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - fake brand logo
+  - messy clutter
+  - dirty product surface
+  - unreadable labels
+  - cheap stock layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-049.webp
 attributes:
-  negativePrompt: unappetizing, dark, dirty
+  negativePrompt: >-
+    unappetizing, dark, dirty, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
+    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake brand
+    logo, messy clutter, dirty product surface, unreadable labels, cheap stock layout
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

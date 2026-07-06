@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Italian wall fresco
-  subject_treatment: Integrated into plaster
-  color_and_tone: Earthy, desaturated, matte
-  lighting_and_shadow: Natural ambient
-  texture_and_material: Plaster cracks, wall texture
-  camera_and_composition: Faded areas
-  atmosphere_and_mood: Historic, grand
-  rendering_and_quality: Ancient, architectural
-  key_features: Plaster texture
+  aesthetic: >-
+    Fresco (Wall) acts as a transferable art-medium router: start from Italian wall fresco, Plaster
+    texture and paint-media system built from pigment body, binder behavior, substrate tooth, brush
+    pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt
+    X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Integrated into plaster; preserve the prompt subject while
+    translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed
+    edge behavior, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Earthy, desaturated, matte; let hue, value, saturation, and mixing come from
+    physical pigment, binder opacity, drying character, and historical medium constraints, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Natural ambient; make light feel interpreted by paint through tonal
+    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Plaster cracks, wall texture; surface detail should show canvas, paper, plaster, wax,
+    velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Faded areas; organize the image through painterly massing, brush
+    direction, support format, negative space, edge hierarchy, and intentional simplification, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Historic, grand; derive mood from medium history, touch, pigment weight, speed,
+    restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Ancient, architectural; finish with medium-faithful paint handling, readable form,
+    controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where
+    appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Italian wall fresco; Plaster texture; Earthy, desaturated, matte; Plaster cracks, wall texture;
+    Faded areas
   creative_brief: >-
-    Apply fresco wall-painting materiality to any input: pigment absorbed into plaster, mineral matte color,
-    hairline cracks, worn lime surface, and aged architectural permanence. Keep wall-bound durability without
-    requiring murals, churches, ruins, figures, or literal architecture.
+    Apply Fresco (Wall) as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Italian
+    wall fresco, Plaster texture, Plaster cracks, wall texture without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-007.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

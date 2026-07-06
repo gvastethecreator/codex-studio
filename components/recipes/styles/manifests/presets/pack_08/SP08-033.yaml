@@ -12,28 +12,87 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty
-  subject_treatment: Pleated linen, columnar drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette
-  color_and_tone: White, Gold, Lapis Blue, turquoise, carnelian red, malachite green, ebony, electrum
-  lighting_and_shadow: Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight
-  texture_and_material: Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals
+  aesthetic: >-
+    Ancient Egyptian operates as a portable fashion-costume router: combine Ancient Egyptian
+    regalia, Nile-divinity splendor, carved-relief majesty with period and mythic costume logic with
+    era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
+    plate, embroider, crown, wrap, or ceremonialize through Pleated linen, columnar drape,
+    usekh-collar spread, nemes-headdress frame, sheath-silhouette; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
+    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
+    material color believable, and palette behavior attached to the subject instead of pasted
+    wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Desert-gold sun, relief-shadow contrast, torchlight flicker, lapis highlight plus museum,
+    candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette
+    hierarchy as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Fine linen, gold leaf, faience beads, lapis lazuli inlay, hammered electrum, braided
+    papyrus sandals plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur,
+    embroidery, trim, and handworked surface detail; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Ancient Egyptian using its key spatial cues: Usekh spread geometry, kohl-line cues,
-    relief-line ornament, pleated linen rhythm, faience-lapis accents.
-  atmosphere_and_mood: Regal, divine, eternal-Nile serenity, incense reverence, absolute-power stillness
-  rendering_and_quality: Royal, ancient, tomb-painting precision, pharaonic grandeur
-  key_features: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents
+    Compose with Compose for Ancient Egyptian using its key spatial cues: Usekh spread geometry,
+    kohl-line cues, relief-line ornament, pleated linen rhythm, faience-lapis accents plus regal
+    posture logic, era silhouette, layered garment structure, ornament placement, and readable
+    period identity as reusable fashion framing grammar, allowing portraits, objects, creatures,
+    environments, action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
+    pressure, or folk memory; the tone should feel specific to Ancient Egyptian while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
+    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Ancient Egyptian regalia, Nile-divinity splendor, carved-relief majesty; Pleated linen, columnar
+    drape, usekh-collar spread, nemes-headdress frame, sheath-silhouette; Fine linen, gold leaf,
+    faience beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals; Desert-gold sun,
+    relief-shadow contrast, torchlight flicker, lapis highlight; Compose for Ancient Egyptian using
+    its key spatial cues: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen
+    rhythm, faience-lapis accents
   creative_brief: >-
-    Render any input through Ancient Egyptian regalia: pleated linen, usekh collar spread, faience beads,
-    lapis, turquoise, electrum and kohl-like line precision. Keep pharaonic divinity without requiring a
-    pharaoh, queen, temple, desert pose, crook/flail or human eyes.
+    Use Ancient Egyptian after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Ancient Egyptian
+    regalia, Nile-divinity splendor, carved-relief majesty, Pleated linen, columnar drape,
+    usekh-collar spread, nemes-headdress frame, sheath-silhouette, Fine linen, gold leaf, faience
+    beads, lapis lazuli inlay, hammered electrum, braided papyrus sandals, Desert-gold sun,
+    relief-shadow contrast, torchlight flicker, lapis highlight, Compose for Ancient Egyptian using
+    its key spatial cues: Usekh spread geometry, kohl-line cues, relief-line ornament, pleated linen
+    rhythm, faience-lapis accents plus corsetry, armor plates, robes, sashes, pleats, trim, brocade,
+    regalia layers, fastenings, and historically legible cut, palette behavior, light response,
+    material treatment, silhouette grammar, and finish discipline without requiring one body type,
+    fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - contemporary tailoring dominance
   - generic modern streetwear
+  - cheap costume rental
+  - wrong era mashup
+  - plastic armor
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-033.webp
 attributes:
-  negativePrompt: contemporary tailoring dominance, generic modern streetwear
+  negativePrompt: >-
+    contemporary tailoring dominance, generic modern streetwear, cheap costume rental, wrong era
+    mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion
+    catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

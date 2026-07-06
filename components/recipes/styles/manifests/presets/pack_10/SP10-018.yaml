@@ -12,24 +12,59 @@ tags:
   - abstract-and-experimental
   - fluid-and-organic
 visualDna:
-  aesthetic: Turing pattern
-  subject_treatment: Stripes and spots
-  color_and_tone: Two tone
-  lighting_and_shadow: Flat
-  texture_and_material: Biological
-  camera_and_composition: 'Compose for Reaction Diffusion using its key spatial cues: Fingerprint pattern.'
-  atmosphere_and_mood: Hypnotic, natural
-  rendering_and_quality: Generative, math
-  key_features: Fingerprint pattern
+  aesthetic: >-
+    Reaction Diffusion becomes a transferable fluid and organic behavior system: start from Turing
+    pattern and Fingerprint pattern, then route prompt content through flow, branching, cellular
+    membranes, diffusion, turbulence, and living surface logic without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Stripes and spots to bend, pool, branch, bloom,
+    spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object
+    identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Two tone; let hues follow fluid thickness, chemical bloom, interference,
+    biological growth, or vapor density, with enough value control that the subject remains readable
+    after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: use reflection, translucency, subsurface scattering, glow, or
+    backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt
+    explicitly asks for it.
+  texture_and_material: >-
+    Render Biological as the tactile or mark-making basis; surfaces need coherent viscosity,
+    membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Fingerprint pattern as reusable spatial grammar: favor flow direction, cellular
+    repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Hypnotic, natural as the emotional register; derive mood from instability, growth, toxicity,
+    delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult
+    prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Generative, math: finish with clean fluid physics, readable boundaries, and
+    restrained micro-noise, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Turing pattern; Stripes and spots; Two tone; Flat; Biological; Fingerprint pattern; Hypnotic,
+    natural; Generative, math; Fingerprint pattern
   creative_brief: >-
-    Apply reaction-diffusion patterning to the input: chemical stripes, spots, wave fronts, and competing
-    growth fields should generate organic complexity across surfaces without requiring animal bodies.
+    Apply reaction-diffusion patterning to the input: chemical stripes, spots, wave fronts, and
+    competing growth fields should generate organic complexity across surfaces without requiring
+    animal bodies.
 avoidRules:
   - random noise
+  - stiff solids
+  - muddy fluid mixing
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-018.webp
 attributes:
-  negativePrompt: random noise
+  negativePrompt: >-
+    random noise, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

@@ -9,7 +9,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'apocalyptic medieval',
     negativePrompt:
-      'copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise, explicit gore, watermark, text',
+      'copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Apocalyptic medieval trench crusade with mud-choked cathedrals, black powder smoke, reliquary armor, and martyr banners.',
@@ -23,11 +23,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Mud, wet wool, tarnished brass, chipped enamel, soot, cracked stone, and controlled etched grime.',
       camera_and_composition:
         'Low vertical war-icon framing, shrine-like negative space, banner diagonals, and readable miniature-like silhouette hierarchy.',
-      atmosphere_and_mood: 'Fanatical, mournful, siege-bound, sacred, and brutal without gore.',
+      atmosphere_and_mood:
+        "Carry the prompt through Fanatical, mournful, siege bound, sacred, and brutal without gore; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Painterly-ink hybrid with denoised darks, clean silhouette masses, and readable battlefield materials.',
       creative_brief:
-        'Reusable visual system for any subject needing trench-crusade gravity, sacred smoke, muddy material pressure, and apocalyptic medieval severity.',
+        'Reusable visual system for any subject needing trench crusade gravity, sacred smoke, muddy material pressure, and apocalyptic medieval severity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass',
     },
   },
   {
@@ -36,7 +39,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'gothic wargame fantasy',
     negativePrompt:
-      'copied tabletop franchise designs, real-world insignia, unreadable kitbash clutter, muddy black artifacts, explicit gore, watermark, text',
+      'copied tabletop franchise designs, real world insignia, unreadable kitbash clutter, muddy black artifacts, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Grim gothic tabletop warfront with cathedral armor, painted-miniature contrast, skull-shaped reliquaries, and oversized siege silhouettes.',
@@ -50,11 +53,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Painted miniature brush texture, edge wear, drybrushed metal, cracked stone bases, parchment cloth, and matte armor.',
       camera_and_composition:
         'Heroic three-quarter miniature showcase, strong base plane, compact warfront depth, and clean object separation.',
-      atmosphere_and_mood: 'Grandiose, martial, occult, heavy, and collectible.',
+      atmosphere_and_mood:
+        "Carry the prompt through Grandiose, martial, occult, heavy, and collectible; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Fantasy miniature illustration with crisp edge highlights, controlled darks, defined linework, and denoised brush texture.',
       creative_brief:
-        'Reusable visual system for any subject needing gothic wargame readability, chunky miniature presence, compact warfront mood, and grimdark tabletop-inspired finish.',
+        'Reusable visual system for any subject needing gothic wargame readability, chunky miniature presence, compact warfront mood, and grimdark tabletop inspired finish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability',
     },
   },
   {
@@ -63,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'inked dungeon drama',
     negativePrompt:
-      'copied game characters, smooth fantasy realism, excessive noise, unreadable black crush, explicit gore, watermark, text',
+      'copied game characters, smooth fantasy realism, excessive noise, unreadable black crush, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Harsh ink dungeon crawl with angular heroes, torchlight panic, heavy black cuts, and exaggerated stress shadows.',
@@ -76,13 +82,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Brush ink, dry crosshatching, rough paper, chipped stone, wax, leather, and denoised paper texture.',
       camera_and_composition:
-        'Cropped comic-panel drama, tilted dungeon planes, character-vs-shadow hierarchy, and readable central action.',
+        'Cropped comic-panel pressure, tilted stone or value planes, action-vs-shadow hierarchy, and readable central tension without requiring a dungeon encounter.',
       atmosphere_and_mood:
-        'Anxious, tactical, grimly theatrical, claustrophobic, and adventure-ready.',
+        "Carry the prompt through Anxious, tactical, grimly theatrical, claustrophobic, and adventure ready; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean high-contrast ink illustration with controlled paper texture, no dirty low-light speckle.',
       creative_brief:
-        'Reusable visual system for any subject needing anxious ink drama, hard torch contrast, rough paper energy, and claustrophobic adventure tension.',
+        'Reusable visual system for any subject needing anxious ink drama, hard torch contrast, rough paper energy, and claustrophobic adventure tension. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Stress Ink Dungeon Crawl; Harsh ink dungeon crawl with angular heroes; torchlight panic; heavy black cuts; exaggerated stress shadows; angular exaggeration, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Stress Ink Dungeon Crawl; Harsh ink dungeon crawl with angular heroes; torchlight panic; heavy black cuts; exaggerated stress shadows; angular exaggeration',
     },
   },
   {
@@ -91,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'medieval engraving fantasy',
     negativePrompt:
-      'readable heraldic text, modern logos, gray noise mush, smooth digital painting, explicit gore, watermark, text',
+      'readable heraldic text, modern logos, gray noise mush, smooth digital painting, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and siege-icon composition.',
@@ -104,12 +112,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Etched copperplate lines, dry paper, chipped marble, metal scratches, wax seals without readable marks, and clean ink edges.',
       camera_and_composition:
-        'Frontal heraldic grouping, triangular warband arrangement, tall banner shapes, and print-safe negative space.',
-      atmosphere_and_mood: 'Funereal, disciplined, ancient, martial, and ceremonial.',
+        'Frontal heraldic grouping logic, triangular mass arrangement, tall banner-like accents, and print-safe space without requiring a fixed warband.',
+      atmosphere_and_mood:
+        "Carry the prompt through Funereal, disciplined, ancient, martial, and ceremonial; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Crisp engraved fantasy print with heavy denoise, clean hatching, and no muddy texture chatter.',
       creative_brief:
-        'Reusable visual system for any subject needing sepulcher engraving discipline, tomb heraldry, medieval campaign austerity, and print-safe dark linework.',
+        'Reusable visual system for any subject needing sepulcher engraving discipline, tomb heraldry, medieval campaign austerity, and print safe dark linework. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines',
     },
   },
   {
@@ -118,7 +129,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'apocalyptic reliquary fantasy',
     negativePrompt:
-      'copied faction designs, readable religious text, body horror focus, noisy dark compression, explicit gore, watermark, text',
+      'copied faction designs, readable religious text, body horror focus, noisy dark compression, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Apocalyptic iron reliquary fantasy with sacred-industrial mass, scorched liturgical metal, riveted devotional forms, and catastrophic medieval machinery.',
@@ -132,11 +143,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Riveted iron, scorched enamel, reliquary glass, cracked bone, chainmail, ash, and soot cleaned of ugly speckle.',
       camera_and_composition:
         "Monumental vertical framing with clear focal hierarchy, massive central forms, separated material planes, and readable sacred-industrial depth that adapts to the user's subject.",
-      atmosphere_and_mood: 'Sacred, industrial, catastrophic, penitential, and mythic.',
+      atmosphere_and_mood:
+        "Carry the prompt through Sacred, industrial, catastrophic, penitential, and mythic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Detailed dark fantasy digital illustration with clean black control, defined linework, polished material separation, and heavy denoise.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding iron-reliquary mass, sacred machinery, furnace-black contrast, and apocalyptic devotional pressure.",
+        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding iron reliquary mass, sacred machinery, furnace black contrast, and apocalyptic devotional pressure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Iron Reliquary Apocalypse; Apocalyptic iron reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery; Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+      key_features:
+        'Iron Reliquary Apocalypse; Apocalyptic iron reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery; Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes',
     },
   },
   {
@@ -145,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'folk horror medieval',
     negativePrompt:
-      'generic witch hat cliche, cartoon Halloween look, unreadable forest noise, explicit gore, watermark, text',
+      'generic witch hat cliche, cartoon Halloween look, unreadable forest noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Folk-horror medieval covenant with witch-knights, thorn chapels, bone charms, black woods, and candlelit oath armor.',
@@ -159,11 +173,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Bark, bone, wool, tarnished armor, wax, moss, thorn, and smooth denoised shadow planes.',
       camera_and_composition:
         'Tall icon-like framing with vertical pressure, thorn-arc rhythm, pale fog separation, and crisp silhouette against clean shadow.',
-      atmosphere_and_mood: 'Ominous, folkloric, ritualistic, secretive, and elegant.',
+      atmosphere_and_mood:
+        "Carry the prompt through Ominous, folkloric, ritualistic, secretive, and elegant; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean dark folk-fantasy illustration with controlled texture, no mud, and readable card contrast.',
       creative_brief:
-        'Reusable visual system for any subject needing secretive folk-horror oath marks, dark ritual elegance, and medieval covenant mood beyond one literal scene.',
+        'Reusable visual system for any subject needing secretive folk horror oath marks, dark ritual elegance, and medieval covenant mood beyond one literal scene. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Hexenwood Witch Knight Covenant; Folk horror medieval covenant with witch knights; thorn chapels; bone charms; black woods; candlelit oath armor, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Hexenwood Witch Knight Covenant; Folk horror medieval covenant with witch knights; thorn chapels; bone charms; black woods; candlelit oath armor',
     },
   },
   {
@@ -172,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'siege monastery fantasy',
     negativePrompt:
-      'readable script, book stack default, library room cliche, muddy stone noise, explicit gore, watermark, text',
+      'readable script, book stack default, library room cliche, muddy stone noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Siege-monastery fantasy with bone-script ornament, barricaded cloisters, armored scribes, and ritual defense engines.',
@@ -186,11 +203,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Chipped limestone, vellum-like cloth, bone inlay, hammered metal, wax, dust, and clean ink seams.',
       camera_and_composition:
         'Strong vertical rhythm, solemn central emphasis, smoke-beam separation, clean silhouette hierarchy, and crisp stone-like planes.',
-      atmosphere_and_mood: 'Besieged, scholarly, sacred, tense, and stoic.',
+      atmosphere_and_mood:
+        "Carry the prompt through Besieged, scholarly, sacred, tense, and stoic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone detail, and non-readable decorative marks.',
       creative_brief:
-        'Reusable visual system for any subject needing bone-script ornament, scholastic siege tension, sacred defense mood, and stoic medieval weight.',
+        'Reusable visual system for any subject needing bone script ornament, scholastic siege tension, sacred defense mood, and stoic medieval weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bone Script Monastery Siege; Siege monastery fantasy with bone script ornament; barricaded cloisters; armored scribes; ritual defense engines; carved non readable markings, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Bone Script Monastery Siege; Siege monastery fantasy with bone script ornament; barricaded cloisters; armored scribes; ritual defense engines; carved non readable markings',
     },
   },
   {
@@ -199,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'astral medieval fantasy',
     negativePrompt:
-      'readable magic circles, generic wizard robe, noisy starfield, sci-fi spaceship look, explicit gore, watermark, text',
+      'readable magic circles, generic wizard robe, noisy starfield, sci fi spaceship look, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Astral feudal exorcist fantasy with star-lit armor, monastery astronomers, demon-sealing geometry, and celestial battlefield calm.',
@@ -212,12 +232,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Polished dark armor, embroidered cloth, vellum, silver inlay, smooth stone, and denoised night sky.',
       camera_and_composition:
-        'Symmetrical exorcism-card layout, circular celestial geometry, tall banners, and centered readable ritual silhouette.',
-      atmosphere_and_mood: 'Sacred, cosmic, strategic, quiet, and ominous.',
+        'Symmetrical ritual geometry, circular celestial structure, tall banner rhythm, and centered readable anchor without forcing an exorcism action.',
+      atmosphere_and_mood:
+        "Carry the prompt through Sacred, cosmic, strategic, quiet, and ominous; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean fantasy illustration with luminous accents, smooth dark gradients, and card-readable silhouette design.',
       creative_brief:
-        'Reusable visual system for any subject needing astral-medieval gravity, celestial geometry, feudal ritual restraint, and cosmic crusade energy.',
+        'Reusable visual system for any subject needing astral medieval gravity, celestial geometry, feudal ritual restraint, and cosmic crusade energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Astral Feudal Exorcists; Astral feudal exorcist fantasy with star lit armor; monastery astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with astral feudal exorcist logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Astral Feudal Exorcists; Astral feudal exorcist fantasy with star lit armor; monastery astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with astral feudal exorcist logic',
     },
   },
 ] as unknown as StyleRuntimePreset[];

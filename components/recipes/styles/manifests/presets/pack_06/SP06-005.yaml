@@ -12,19 +12,52 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Renaissance egg tempera
-  subject_treatment: Fine cross-hatching strokes
-  color_and_tone: Bright, pure pigments, gold leaf
-  lighting_and_shadow: Soft, internal glow
-  texture_and_material: Wood panel, smooth gesso
-  camera_and_composition: Flattened icon-plane depth, deliberate frontality, and fine linear modeling
-  atmosphere_and_mood: Reverent, ancient, luminous through craft rather than narrative content
-  rendering_and_quality: Historical panel-painting discipline with devotional precision but no mandatory subject
-  key_features: Fine linear brushwork
+  aesthetic: >-
+    Tempera (Egg) acts as a transferable art-medium router: start from Renaissance egg tempera, Fine
+    linear brushwork and paint-media system built from pigment body, binder behavior, substrate
+    tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fine cross hatching strokes; preserve the prompt subject
+    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
+    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Bright, pure pigments, gold leaf; let hue, value, saturation, and mixing come
+    from physical pigment, binder opacity, drying character, and historical medium constraints, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Soft, internal glow; make light feel interpreted by paint through tonal
+    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Wood panel, smooth gesso; surface detail should show canvas, paper, plaster, wax, velvet,
+    gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Flattened icon plane depth, deliberate frontality, and fine linear
+    modeling; organize the image through painterly massing, brush direction, support format,
+    negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Reverent, ancient, luminous through craft rather than narrative content; derive
+    mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or
+    studio discipline, letting the medium alter interpretation without demanding a specific story,
+    location, or character.
+  rendering_and_quality: >-
+    Finish with Historical panel painting discipline with devotional precision but no mandatory
+    subject; finish with medium-faithful paint handling, readable form, controlled texture, and no
+    pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough
+    craft evidence to make the medium recognizable.
+  key_features: >-
+    Renaissance egg tempera; Fine linear brushwork; Bright, pure pigments, gold leaf; Wood panel,
+    smooth gesso; Flattened icon plane depth, deliberate frontality, and fine linear modeling
   creative_brief: >-
-    Apply egg-tempera discipline to any input: luminous thin pigment, fine cross-hatched modeling, crisp small
-    strokes, panel-like permanence, and restrained inner glow. Keep sacred-craft precision as technique, not
-    as required religious icon, portrait, gold ground, or medieval subject.
+    Apply Tempera (Egg) as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Renaissance
+    egg tempera, Fine linear brushwork, Wood panel, smooth gesso without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +74,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-005.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

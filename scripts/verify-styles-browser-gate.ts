@@ -41,6 +41,12 @@ export interface VerifyStylesBrowserGateReport {
   packId: string;
   expectation: ReturnType<typeof createStylesBrowserGateExpectation>;
   observation: StylesBrowserGateObservation;
+  sortDropdown: {
+    optionCount: number;
+    selectedOptionCount: number;
+    nativeSelectCount: number;
+  };
+  fadeImageCount: number;
   violations: string[];
 }
 
@@ -82,6 +88,7 @@ async function collectStyleBrowserDomState(page: Page): Promise<StylesBrowserGat
       groups: groups.length,
       eagerGroups,
       placeholderGroups: groups.length - eagerGroups,
+      placeholderCards: document.querySelectorAll('[data-style-grid-placeholder-card]').length,
       renderedCards: document.querySelectorAll('[data-style-preset-card]').length,
       plannedCards: groups.reduce(
         (total, group) =>
@@ -241,12 +248,45 @@ export async function verifyStylesBrowserGate({
     );
     await page.waitForTimeout(200);
 
+    const fadeImageCount = await page.locator('[data-style-fade-image]').count();
+    if (fadeImageCount <= 0) {
+      throw new Error('Styles browser rendered no GSAP fade image elements.');
+    }
+
     const collapsed = await collectStyleBrowserDomState(page);
     const showMoreCategoriesButton = page.locator('[data-style-show-all-categories]');
     if ((await showMoreCategoriesButton.count()) > 0) {
       throw new Error('Styles browser still renders a show-more categories button.');
     }
     const expanded = { ...collapsed };
+
+    await clickViaDom(page, '[data-style-sort-dropdown] button', timeoutMs);
+    await page.waitForSelector('[data-style-sort-dropdown] [role="listbox"]', {
+      timeout: timeoutMs,
+    });
+    const sortDropdown = await page.evaluate(() => {
+      const root = document.querySelector('[data-style-sort-dropdown]');
+      const listbox = root?.querySelector('[role="listbox"]');
+
+      return {
+        optionCount: listbox?.querySelectorAll('[role="option"]').length ?? 0,
+        selectedOptionCount:
+          listbox?.querySelectorAll('[role="option"][aria-selected="true"]').length ?? 0,
+        nativeSelectCount: root?.querySelectorAll('select').length ?? 0,
+      };
+    });
+    if (sortDropdown.nativeSelectCount > 0) {
+      throw new Error('Styles sort control still contains a native select.');
+    }
+    if (sortDropdown.optionCount < 7) {
+      throw new Error(`Styles sort dropdown option count too low: ${sortDropdown.optionCount}`);
+    }
+    if (sortDropdown.selectedOptionCount !== 1) {
+      throw new Error(
+        `Styles sort dropdown selected option count ${sortDropdown.selectedOptionCount} !== 1`,
+      );
+    }
+    await page.keyboard.press('Escape');
 
     const mountedBefore = (await page.locator('[data-style-catalog-root]').count()) > 0;
     const matchedResourceNamesBefore = findMatchingStyleCatalogResources(
@@ -304,6 +344,8 @@ export async function verifyStylesBrowserGate({
       packId,
       expectation,
       observation,
+      sortDropdown,
+      fadeImageCount,
       violations,
     };
   } catch (error) {
@@ -337,11 +379,15 @@ if (import.meta.main) {
           `[styles:browser] url=${report.url} pack=${report.packId} query=${JSON.stringify(report.expectation.catalog.query)} violations=${report.violations.length}`,
         );
         console.log(
-          `[styles:browser] collapsed groups=${report.observation.collapsed.groups} eager=${report.observation.collapsed.eagerGroups} placeholders=${report.observation.collapsed.placeholderGroups} renderedCards=${report.observation.collapsed.renderedCards} plannedCards=${report.observation.collapsed.plannedCards} hiddenGroups=${report.observation.collapsed.hiddenGroups} hiddenPresets=${report.observation.collapsed.hiddenPresets}`,
+          `[styles:browser] collapsed groups=${report.observation.collapsed.groups} eager=${report.observation.collapsed.eagerGroups} placeholders=${report.observation.collapsed.placeholderGroups} placeholderCards=${report.observation.collapsed.placeholderCards} renderedCards=${report.observation.collapsed.renderedCards} plannedCards=${report.observation.collapsed.plannedCards} hiddenGroups=${report.observation.collapsed.hiddenGroups} hiddenPresets=${report.observation.collapsed.hiddenPresets}`,
         );
         console.log(
-          `[styles:browser] expanded groups=${report.observation.expanded.groups} eager=${report.observation.expanded.eagerGroups} placeholders=${report.observation.expanded.placeholderGroups} renderedCards=${report.observation.expanded.renderedCards} plannedCards=${report.observation.expanded.plannedCards}`,
+          `[styles:browser] expanded groups=${report.observation.expanded.groups} eager=${report.observation.expanded.eagerGroups} placeholders=${report.observation.expanded.placeholderGroups} placeholderCards=${report.observation.expanded.placeholderCards} renderedCards=${report.observation.expanded.renderedCards} plannedCards=${report.observation.expanded.plannedCards}`,
         );
+        console.log(
+          `[styles:browser] sortDropdown options=${report.sortDropdown.optionCount} selected=${report.sortDropdown.selectedOptionCount} nativeSelects=${report.sortDropdown.nativeSelectCount}`,
+        );
+        console.log(`[styles:browser] imageFade images=${report.fadeImageCount}`);
         console.log(
           `[styles:browser] catalog mountedBefore=${report.observation.catalog.mountedBefore} mountedAfter=${report.observation.catalog.mountedAfter} resourcesAfter=${report.observation.catalog.matchedResourceNamesAfter.length} results=${report.observation.catalog.resultCount}`,
         );

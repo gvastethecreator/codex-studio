@@ -61,6 +61,7 @@ import { createEventStreamRoutes } from './eventStreamRoutes';
 import { createLibraryRoutes } from './libraryRoutes';
 import { createReferenceRoutes } from './referenceRoutes';
 import { createUserStyleRoutes } from './userStyleRoutes';
+import { createSpriteAtlasRoutes } from './spriteAtlasRoutes';
 import { createDefaultUserStyleStore } from './sqliteUserStyles';
 import type { UserStyleStore } from './userStyles';
 import { createLocalApiSecurityMiddleware } from './localApiSecurity';
@@ -213,6 +214,13 @@ export async function createStudioApp(
     createUserStyleRoutes({
       store: userStyleStore,
       publishEvent,
+    }),
+  );
+
+  app.route(
+    '/api/sprite-atlas',
+    createSpriteAtlasRoutes({
+      readLibraryDir: () => getSettings().libraryDir,
     }),
   );
 

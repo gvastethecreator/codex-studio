@@ -12,19 +12,45 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Damaged film stock
-  subject_treatment: Soft unstable edges
-  color_and_tone: Green/Magenta shift
-  lighting_and_shadow: Fogged
-  texture_and_material: Heavy grain, mold
-  camera_and_composition: Color cast
-  atmosphere_and_mood: Decay, lost memory
-  rendering_and_quality: Grungy, broken
-  key_features: Color shift
+  aesthetic: >-
+    Expired Film acts as a transferable photographic style router: begin from Damaged film stock,
+    Color shift, and analog photographic process system built from film stock response, lens
+    imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Soft unstable edges; preserve the prompt scene while routing
+    detail through stock softness, halation, vignetting, motion softness, or large-format clarity,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Green/Magenta shift; let palette come from emulsion bias, slide-film saturation,
+    monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and
+    white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Fogged; shape highlights and shadows through film latitude, flash falloff, long exposure,
+    tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight
+    rolloff, and source motivation.
+  texture_and_material: >-
+    Render Heavy grain, mold; render grain, dust, dye clouds, soft lens corners, wet-plate
+    artifacts, borderless instant texture, or scan softness as process evidence, avoiding both waxy
+    smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Color cast; use camera format, crop, lens character, depth of field, view-camera
+    stillness, toy-camera distortion, or accidental snapshot framing, with lens distance, depth,
+    timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Decay, lost memory; derive mood from memory, imperfection, tactile chemistry,
+    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Grungy, broken; finish as believable analog capture with coherent grain scale,
+    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: Damaged film stock; Color shift; Green/Magenta shift; Fogged; Color cast
   creative_brief: >-
-    Chemistry unspooling toward ruin: greens bleeding into magenta, grain rising like static, fogging and mold
-    marks drifting across tone. Let decay become a second visual layer over any subject, time visibly eating
-    through emulsion without dictating what image sits beneath.
+    Apply Expired Film as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Damaged film stock, Green/Magenta shift, Fogged, Heavy grain, mold, and
+    Color cast through optics, exposure, palette, surface response, timing, and finish without
+    requiring the card image's original subject.
 avoidRules:
   - illustration
   - painting
@@ -41,12 +67,22 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-020.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
+    clarity, generic vintage filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

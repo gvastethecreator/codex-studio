@@ -12,29 +12,77 @@ tags:
   - miscellaneous-and-fun
   - artistic-mediums
 visualDna:
-  aesthetic: Traditional old-school tattoo flash design language
-  subject_treatment: Bold black outlines, heavy contour weight, ribbony banners, coiled snakes
-  color_and_tone: Red, Green, Yellow, Black shading, limited triad palette, spit-shaded gradients
-  lighting_and_shadow: Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow
-  texture_and_material: Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges
-  camera_and_composition: 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout
-  atmosphere_and_mood: Tough, classic, bold, salt-air romance, port-town grit, permanent devotion
-  rendering_and_quality: Bold flash-sheet rendering with high durability/readability logic
-  key_features: Pepper shading dots, banner typography, emblematic motif blocks, thick contour lock
+  aesthetic: >-
+    Tattoo Flash (Old School) operates as a portable source-router layer: combine Traditional
+    old-institutional-system tattoo flash design language with manual medium logic with mark
+    discipline, process texture, graphic reduction, and authored surface treatment, so the preset
+    supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
+    stitch, spray, glaze, outline, cut, layer, or illuminate through Bold black outlines, heavy
+    contour weight, ribbony banners, coiled snakes; identity stays readable through construction
+    grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
+    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow plus surface-aware
+    illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print
+    layers as the light-response contract, with readable hierarchy, controlled contact detail, and
+    no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges plus mark
+    residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built
+    edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must
+    remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout plus
+    graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm
+    as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to
+    inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
+    object presence; the emotional tone should feel specific to Tattoo Flash (Old School) while
+    still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
+    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Traditional old-institutional-system tattoo flash design language; Bold black outlines, heavy
+    contour weight, ribbony banners, coiled snakes; Watercolor paper, skin, flash-sheet tooth,
+    poster-board grain, ink-bled edges; Paper stain (coffee), vintage amber wash, warm sepia base,
+    parchment glow; 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout
   creative_brief: >-
-    Design each motif as a standalone flash emblem: thick outlines, limited palette fills, and compact
-    symbolic forms. Keep contrast and shape clarity high so marks remain legible at both sheet and tattoo
-    scales. Apply Tattoo Flash as a portable style system over any input: preserve its construction grammar,
-    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
-    prop, fixed specimen, classroom sample, product shot, or scene template.
+    Use Tattoo Flash (Old School) after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Traditional old-institutional-system
+    tattoo flash design language, Bold black outlines, heavy contour weight, ribbony banners, coiled
+    snakes, Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges, Paper
+    stain (coffee), vintage amber wash, warm sepia base, parchment glow, 2D flat design, pinup
+    proportions, dagger-and-heart motifs, talismanic layout plus stroke direction, pigment edge,
+    stencil separation, lead structure, fabric or print registration, and clearly expressed hand
+    process, palette behavior, light response, material treatment, and finish discipline without
+    requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - realistic
   - photo
   - 3d
+  - generic digital painting
+  - flat vector shortcut
+  - lost medium texture
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-007.webp
 attributes:
-  negativePrompt: realistic, photo, 3d
+  negativePrompt: >-
+    realistic, photo, 3d, generic digital painting, flat vector shortcut, lost medium texture, fixed
+    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

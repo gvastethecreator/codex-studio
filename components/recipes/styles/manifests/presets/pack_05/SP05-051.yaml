@@ -13,32 +13,75 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    High-voltage kinetic alloy anime where velocity lines, prosthetic elegance, reflective machinery, and
-    tragic momentum fuse into engineered motion
+    Neon Kinetic Alloy Sprint acts as a transferable anime-battle/worlds router: Neon Kinetic Alloy
+    Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed
+    ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments; combine it
+    with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon
+    atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or
+    lineage words may guide style, but they must not require canon cast, title-scene replication,
+    screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Aggressive motion-vector inking, segmented mechanical contour logic, diagonal force-lines, crisp technical
-    edge discipline
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Neon
+    Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like
+    geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments
+    as portable contour, motion grammar, surface language, and emotional pressure without requiring
+    canon elements or a default action setup.
   color_and_tone: >-
-    Electric cyan-magenta spikes over steel neutrals, deep violet shadows, selective hazard-orange
-    micro-accents
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Neon Kinetic Alloy Sprint, neon kinetic
+    alloy sprint style grammar with reflective prosthetic-like geometry, speed ribbons, alloy
+    panels, and engineered motion around cropped limbs/mech fragments choose accent intensity, value
+    contrast, emotional temperature, and power-system separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    Dynamic rim bursts, strobing practical spill, high-speed specular streaking, sharp contrast pockets under
-    moving glow
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar
+    with reflective prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion
+    around cropped limbs/mech fragments without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Lightweight alloy limbs, polymer joint housings, brushed composite plates, reflective performance
-    coatings, circuit-trace details
-  camera_and_composition: Extreme foreshortening and directional depth tunnels to amplify acceleration and trajectory readability
-  atmosphere_and_mood: Urgent, cathartic, intense, adrenaline-charged
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Neon Kinetic
+    Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry,
+    speed ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments
+    controlled, denoised, and coherent across bodies, objects, environments, abstractions, and
+    action.
+  camera_and_composition: >-
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Neon Kinetic Alloy
+    Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like geometry, speed
+    ribbons, alloy panels, and engineered motion around cropped limbs/mech fragments into reusable
+    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
+    sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
   rendering_and_quality: >-
-    Premium action-cel rendering with high temporal clarity, dense technical detail, and polished
-    mecha-athletic finish
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Velocity vectors, alloy reflection, engineered body rhythm, neon motion trails, sprint compression, and
-    emotional acceleration
+    Neon Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective
+    prosthetic-like geometry, speed ribbons, alloy panels, and engineered motion around cropped
+    limbs/mech fragments; armored contour, mechanical massing, modular joints, engineered surface
+    rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy,
+    ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and
+    digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime
+    finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room
+    dependency
   creative_brief: >-
-    Use neon kinetic alloy sprint as speed-and-material grammar. Any prompt should feel engineered, fast,
-    reflective, and emotionally charged through line force and metal response. If a character or body exists,
-    push prosthetic/mecha-athletic cues; athletes, races, streets, and fixed cyber bodies remain optional.
+    Apply Neon Kinetic Alloy Sprint after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon
+    Kinetic Alloy Sprint, neon kinetic alloy sprint style grammar with reflective prosthetic-like
+    geometry, speed ribbons, alloy panels, and engineered motion around cropped limbs/mech
+    fragments, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon
+    atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and
+    negative controls without forcing canon cast, title scene, screenshot, card pose, default
+    monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -52,12 +95,34 @@ avoidRules:
   - watermark
   - text
   - signature
+  - named cyborg heroine likeness
+  - roller-blade weapon feet
+  - gore
+  - police logo
+  - readable UI
+  - full body fan-art pose
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-051.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, named cyborg heroine likeness, roller-blade weapon feet,
+    gore, police logo, readable UI, full body fan-art pose, plastic 3d robot render, cockpit
+    source-frame look, readable UI panel, fixed canon character, title scene replication, required
+    source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo,
+    muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

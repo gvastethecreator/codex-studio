@@ -12,27 +12,79 @@ tags:
   - miscellaneous-and-fun
   - micro-macro
 visualDna:
-  aesthetic: Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather
-  subject_treatment: Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array
-  color_and_tone: Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright
-  lighting_and_shadow: Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead
-  texture_and_material: Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil
-  camera_and_composition: Natural-contour, feather-curve, vane-width taper, rachis-diameter
-  atmosphere_and_mood: Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy
-  rendering_and_quality: Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel
+  aesthetic: >-
+    Feather Macro operates as a portable source-router layer: combine Bird feather zoom,
+    plumage-detail, avian-architecture, flight-surface, contour-feather with magnified source-study
+    logic with scale shift, optical detail, structural pattern, and specimen-independent texture
+    grammar, so the preset supplies visual behavior rather than a fixed card scene or literal
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms magnify,
+    reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure
+    through Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane,
+    pennaceous-array; identity stays readable through construction grammar, proportion, edge logic,
+    and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through source-derived color variation, iridescence, false-scale contrast, translucent
+    edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead
+    plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and
+    shallow optical falloff as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff,
+    feather-oil plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments,
+    corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or
+    signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Natural-contour, feather-curve, vane-width taper, rachis-diameter plus scale
+    abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first
+    framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract
+    prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural
+    engineering, entropy, and fragile wonder; the emotional tone should feel specific to Feather
+    Macro while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy
+    stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather,
-    calamus-base
+    Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather; Barbs
+    and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array; Velcro-like,
+    micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil; Soft
+    sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead;
+    Natural-contour, feather-curve, vane-width taper, rachis-diameter
   creative_brief: >-
-    Highlight feather micro-architecture through rachis structure, barb-barbule interlock, and angle-dependent
-    iridescence. Preserve avian aerodynamic logic and keratin texture detail in a broadly reusable macro
-    style.
+    Use Feather Macro after prompt X as a transferable style layer: prompt X supplies subject,
+    action, and setting, while the preset supplies Bird feather zoom, plumage-detail,
+    avian-architecture, flight-surface, contour-feather, Barbs and hooks, barbule-branch contour,
+    rachis-spine line, vane-plane, pennaceous-array, Velcro-like, micro-barbicel hook,
+    keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil, Soft sheen,
+    directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead, Natural-contour,
+    feather-curve, vane-width taper, rachis-diameter plus microstructure, magnification artifacts,
+    focus stacking, surface topology, optical refraction, and scale-legible detail, palette
+    behavior, light response, material treatment, and finish discipline without requiring one
+    specimen, prop bundle, product still, or card composition.
 avoidRules:
   - blurry
+  - generic macro blur
+  - muddy micro noise
+  - classroom sample scene
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-067.webp
 attributes:
-  negativePrompt: blurry
+  negativePrompt: >-
+    blurry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

@@ -13,26 +13,72 @@ tags:
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: >-
-    Lush wonder hiding irreversible cost, bioluminescent mystery, depth-layered dread, delicate beauty under
-    pressure, reliclike detail as visual lure
-  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+    Lush Abyssal Toll Style acts as a transferable anime-battle/worlds router: Lush Abyssal Toll
+    Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina,
+    vertical depth pressure, and beautiful unsafe wonder; combine it with dark fantasy and seinen
+    anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread,
+    and mature visual restraint; named titles, studios, or lineage words may guide style, but they
+    must not require canon cast, title-scene replication, screenshots, logos, or one fixed card
+    concept.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Lush
+    Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp
+    relic patina, vertical depth pressure, and beautiful unsafe wonder as portable contour, motion
+    grammar, surface language, and emotional pressure without requiring canon elements or a default
+    action setup.
+  color_and_tone: >-
+    Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty
+    gold, and disciplined blood-or-danger accents; let Lush Abyssal Toll Style, lush abyssal toll
+    style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and
+    beautiful unsafe wonder choose accent intensity, value contrast, emotional temperature, and
+    power-system separation while staying attached to prompt X.
+  lighting_and_shadow: >-
+    Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim,
+    and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or
+    magic, material depth, and mood from Lush Abyssal Toll Style, lush abyssal toll style grammar
+    with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful
+    unsafe wonder without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Bioluminescent bloom, damp mineral grain, soft organic translucency, antique relic patina, mossy velvet
-    matte, pressure-worn edges
+    Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral
+    fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Lush Abyssal
+    Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic
+    patina, vertical depth pressure, and beautiful unsafe wonder controlled, denoised, and coherent
+    across bodies, objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Layered vertical depth cues, scale uncertainty, beautiful foreground lure, ominous compression, circular
-    pull composition
-  atmosphere_and_mood: Wondrous, terrifying, abyssal, enchanting
-  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
+    Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive
+    diagonals, compressed civic space, and slow fatal closeups; convert Lush Abyssal Toll Style,
+    lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical
+    depth pressure, and beautiful unsafe wonder into reusable perspective, timing, rhythm, scale,
+    cut-in, and negative-space rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence,
+    loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal,
+    erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it
+    while keeping the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with mature seinen finish with controlled darkness, stable structure, restrained texture,
+    no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first
-    visual language
+    Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp
+    relic patina, vertical depth pressure, and beautiful unsafe wonder; scarred contour, restrained
+    deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable
+    psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper,
+    ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space,
+    surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow
+    fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained
+    texture, no splatter-only horror, no photoreal grime, and no watermark/text
   creative_brief: >-
-    Recast any subject with beautiful depth that feels costly to enter: luminous blooms, damp mineral texture,
-    layered compression, and wonder turning quietly unsafe. Keep the image portable, with no fixed explorers,
-    lore systems, travel premise, or literal worldbuilding requirement.
+    Apply Lush Abyssal Toll Style after prompt X as a transferable anime-battle/worlds layer: prompt
+    X supplies subject, action, setting, tone, and intensity, while this preset supplies Lush
+    Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp
+    relic patina, vertical depth pressure, and beautiful unsafe wonder, dark fantasy and seinen
+    anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread,
+    and mature visual restraint, finish discipline, and negative controls without forcing canon
+    cast, title scene, screenshot, card pose, default monster, default combat prop, or
+    prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -46,12 +92,34 @@ avoidRules:
   - watermark
   - text
   - signature
+  - explorer
+  - cave tunnel
+  - fantasy corridor
+  - monster
+  - map
+  - lantern
+  - expedition gear
+  - splatter-only horror
+  - photoreal grime
+  - cheap jump scare
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-067.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, explorer, cave tunnel, fantasy corridor, monster, map,
+    lantern, expedition gear, splatter-only horror, photoreal grime, cheap jump scare, fixed canon
+    character, title scene replication, required source-frame look, cosplay, generic anime filter,
+    prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

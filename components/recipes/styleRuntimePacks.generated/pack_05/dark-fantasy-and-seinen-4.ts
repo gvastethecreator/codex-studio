@@ -8,27 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mineral Loneliness Fracture Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, empty abstract-only field, ice palace corridor, weapon, gore, readable symbol, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Mineral loneliness, crystalline fragility, philosophical isolation, sharp beauty under fracture, stripped-down luminous ecosystem abstraction',
+        'Mineral Loneliness Fracture Style acts as a transferable anime-battle/worlds router: Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Gem refraction, mineral facets, translucent fracture lines, polished dust, pearlescent sheen, clean matte voids',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Open emptiness, fracture-line depth, crystalline scale isolation, clean horizon pull, luminous void spacing',
-      atmosphere_and_mood: 'Crystalline, lonely, austere, luminous',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Mineral refraction, clean emptiness, fracture motifs, luminous isolation, philosophical fragility',
+        'Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject as beautiful material loneliness: crystalline refraction, clean emptiness, fracture lines, and pale light should communicate fragility without fixed anatomy, shores, aggressors, taxonomy, or action scenes.',
+        'Apply Mineral Loneliness Fracture Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mineral Loneliness Fracture Style, crystalline loneliness style grammar with mineral fractures, clean pale void, emotional isolation, and readable crystal/subject form silhouette, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -36,27 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Eclipse Scar Weight Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Eclipse-black burden, scar-mapped tragedy, sacrificial memory pressure, colossal emotional weight, doomed silhouette mass, fate rendered as ink density',
+        'Eclipse Scar Weight Style acts as a transferable anime-battle/worlds router: Eclipse Scar Weight Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Eclipse Scar Weight Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Eclipse Scar Weight Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Eclipse Scar Weight Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Scarred ink grain, blackened patina, abraded hide texture, cracked mineral matte, dried crimson staining, gritty midtone dust',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Eclipse Scar Weight Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Severe silhouette compression, oppressive scale contrast, low-gravity emotional mass, eclipse-like void framing, slow diagonal drag',
-      atmosphere_and_mood: 'Savage, doomed, furious, haunted',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Eclipse Scar Weight Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Eclipse void fields, scar-density hatching, black mass silhouettes, sacrificial symbol pressure, grief-heavy negative space',
+        'Eclipse Scar Weight Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject as a monument to endured weight: dense hatching, black voids, bruised reds, scar-like texture, and slow compositional drag should communicate doomed persistence without relying on fixed figures, props, places, or narrative set pieces.',
+        'Apply Eclipse Scar Weight Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Eclipse Scar Weight Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -64,27 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Moral Suspicion Realism Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, school corridor, courtroom, weapon, blood, readable text, cinematic IP pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Moral dread realism, sterile quiet, detail-loaded danger, humane unease, smiling-void ambiguity, suspicion carried by ordinary surfaces',
+        'Moral Suspicion Realism Style acts as a transferable anime-battle/worlds router: Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Sterile matte planes, paper-dry grain, brushed institutional surfaces, faint grime at edges, restrained skin-tone warmth, cold wall texture',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Restrained perspective, quiet negative space, detail-weighted close framing, stillness-heavy depth, subtle moral compression',
-      atmosphere_and_mood: 'Paranoid, humane, cold, intelligent',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Suspicion in stillness, sterile quiet, adult-anime restraint, small-detail menace, cold humane realism',
+        'Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Give any prompt a quiet moral-thriller treatment where ordinary details feel dangerous. Use sterile matte light, restrained expressions, weighted negative space, and realistic tension while avoiding fixed institutions, locations, named roles, or pursuit-story structure.',
+        'Apply Moral Suspicion Realism Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Moral Suspicion Realism Style, quiet moral suspense style grammar with ordinary matte danger, restrained realism, subdued color, and readable human-scale anchor, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -92,27 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Black Signal Nihilism Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Black signal nihilism, fluorescent rules pressure, synthetic afterlife dread, cynical precision, glossy void objects, survival logic as graphic design',
+        'Black Signal Nihilism Style acts as a transferable anime-battle/worlds router: Black Signal Nihilism Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Black Signal Nihilism Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Black Signal Nihilism Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Black Signal Nihilism Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Latex-black gloss, fluorescent scan haze, neutral domestic grit, cold polymer sheen, scratched glass, synthetic dust',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Black Signal Nihilism Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Spherical void anchors, target-like overlays, compressed enclosure tension, cynical rule spacing, glossy black focal gravity',
-      atmosphere_and_mood: 'Cruel, flashy, nihilistic, electric',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Black Signal Nihilism Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Gloss-black void shapes, fluorescent rule marks, cynical target geometry, synthetic grit, ruthless body-language abstraction',
+        'Black Signal Nihilism Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Treat any subject as if it is being processed by a cruel fluorescent system: glossy black anchors, green signal marks, synthetic grit, and rule-like overlays create nihilistic pressure without fixed settings, attire systems, play structures, locations, or scorekeeping props.',
+        'Apply Black Signal Nihilism Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Signal Nihilism Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -120,27 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Clinical Innocence Rupture Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Clinical innocence rupture, soft color against sterile brutality, invisible-force trauma, broken memory, songlike sadness under sharp white space',
+        'Clinical Innocence Rupture Style acts as a transferable anime-battle/worlds router: Clinical Innocence Rupture Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Clinical Innocence Rupture Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Clinical Innocence Rupture Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Clinical Innocence Rupture Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Clinical white matte, rain-slick sheen, soft pastel wash, sharp red staining, fractured glass texture, sterile tile grain',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Clinical Innocence Rupture Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Invisible-force displacement, fragile center framing, white-space rupture, close emotional compression, sharp offscreen threat vectors',
-      atmosphere_and_mood: 'Sad, violent, clinical, exposed',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Clinical Innocence Rupture Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Blood-on-white contrast, pastel fragility, clinical emptiness, invisible-force framing, memory-fracture sadness',
+        'Clinical Innocence Rupture Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject through soft innocence breaking against sterile violence: pale negative space, pastel warmth, sharp crimson interruption, and invisible pressure should carry the style without fixed facilities, escape scenes, character traits, or scientific backstory.',
+        'Apply Clinical Innocence Rupture Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Clinical Innocence Rupture Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -148,27 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rose-Black Baroque Decadence Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, coffin, blood, weapon, cathedral hallway, readable crest, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Rose-black decadence, baroque gothic machinery, moonlit aristocratic stillness, predatory romance, elegant ruin pressure, ornamental darkness in motion',
+        'Rose-Black Baroque Decadence Style acts as a transferable anime-battle/worlds router: Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Baroque filigree grain, moonlit enamel, rose-dark velvet, corroded ornament, polished black lacquer, dusty metallic trim',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Ornamental frame compression, moonlit silhouette elongation, aristocratic spacing, rose-black diagonal drift, decayed grandeur scale',
-      atmosphere_and_mood: 'Elegant, predatory, moonlit, decadent',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Rose-black ornament, aristocratic silhouette pressure, moonlit enamel, baroque frame detail, decadent gothic machinery',
+        'Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Give any prompt a decadent rose-black baroque treatment: ornamental frames, moonlit lacquer, predatory elegance, and ruined luxury should define the image without fixed architecture, roles, transport forms, lore taxonomy, or pursuit structure.',
+        'Apply Rose-Black Baroque Decadence Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rose-Black Baroque Decadence Style, rose-black lacquer gothic romance style grammar with decadent ornament, moonlit restraint, velvet shadow, and one elegant symbolic subject form or object, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -176,27 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Black Particle Fugitive Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Black-particle fugitive tension, matte spectral forms, clinical modern pressure, identity terror, institutional pursuit rendered as abstract system stress',
+        'Black Particle Fugitive Style acts as a transferable anime-battle/worlds router: Black Particle Fugitive Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Black Particle Fugitive Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Black Particle Fugitive Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Black Particle Fugitive Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Matte black particulate haze, clinical glass, smooth concrete-gray grain, cold polymer, smoke-dust edges, dry spectral residue',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Black Particle Fugitive Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Particle-coalesced silhouettes, pursuit-vector compression, clinical open space, identity-split doubling, black form echo trails',
-      atmosphere_and_mood: 'Hunted, modern, sharp, remorseless',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Black Particle Fugitive Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Matte particle echoes, clinical dread, fugitive-vector compression, black spectral pressure, identity-fracture tension',
+        'Black Particle Fugitive Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Apply a black-particle thriller treatment to any subject: matte spectral residue, clinical surfaces, pursuit-vector pressure, and fractured identity should drive the image without fixed agencies, passageways, abilities, beings, or pursuit scenarios.',
+        'Apply Black Particle Fugitive Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Particle Fugitive Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -204,27 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blood-Ink Severance Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Blood-ink intensity, severance rhythm, weathered revenge pressure, period-grit abstraction, punishing brush detail, endurance as visual abrasion',
+        'Blood-Ink Severance Style acts as a transferable anime-battle/worlds router: Blood-Ink Severance Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Blood-Ink Severance Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Blood-Ink Severance Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Blood-Ink Severance Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Wet ink slash grain, mud-dark paper, worn cloth fiber, dry blood-brown stains, scratched metal flecks, weather-scoured grit',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Blood-Ink Severance Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Slash-led diagonals, brutal close cropping, brushstroke momentum, severed-frame spacing, harsh weather compression',
-      atmosphere_and_mood: 'Vengeful, weathered, severe, bloody',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Blood-Ink Severance Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Ink-heavy slash marks, weathered grime, scar-detail abstraction, severe diagonal rhythm, revenge-pressure stillness',
+        'Blood-Ink Severance Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject with blood-ink severity: brush cuts, weathered grime, scarred texture, and punishing detail should make the composition feel irreversible without fixed period roles, travel narratives, props, or revenge plot beats.',
+        'Apply Blood-Ink Severance Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blood-Ink Severance Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -232,27 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Despair Pressure Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Neon despair pressure, fluorescent sweat, jagged adult-anime caricature, impossible financial tension, ruin made graphic and unflattering',
+        'Neon Despair Pressure Style acts as a transferable anime-battle/worlds router: Neon Despair Pressure Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Neon Despair Pressure Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Neon Despair Pressure Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Neon Despair Pressure Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Fluorescent sweat sheen, cheap plastic glare, damp paper texture, sticky surface gloss, rough skin grain, stale air haze',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Neon Despair Pressure Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Pressure-cooker close-ups, jagged facial exaggeration, claustrophobic negative space, tilted risk geometry, collapse-edge framing',
-      atmosphere_and_mood: 'Desperate, electric, ugly, suspenseful',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Neon Despair Pressure Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Sweat-heavy close-ups, fluorescent pressure, jagged anxious silhouettes, risk-geometry distortion, brink-of-collapse acting',
+        'Neon Despair Pressure Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Treat any prompt as a pressure chamber of debt, shame, and impossible stakes: fluorescent sweat, jagged exaggeration, tilted geometry, and ugly honesty should define the look without fixed surfaces, play structures, settings, currency props, or named competition.',
+        'Apply Neon Despair Pressure Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Neon Despair Pressure Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -260,27 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Smoke-Filled Calculation Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Smoke-filled calculation, stillness as menace, predatory patience, psychological warfare abstraction, heavy-lidded shadow tension, ritualized risk',
+        'Smoke-Filled Calculation Style acts as a transferable anime-battle/worlds router: Smoke-Filled Calculation Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Smoke-Filled Calculation Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Smoke-Filled Calculation Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Smoke-Filled Calculation Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Cigarette-smoke haze, worn surface gloss, dry paper grain, shadow-softened skin texture, amber ash glow, stale enclosed atmosphere',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Smoke-Filled Calculation Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Still-hand suspense geometry, smoke-layer depth, predatory close framing, ritual spacing, slow pressure compression',
-      atmosphere_and_mood: 'Predatory, smoky, cerebral, merciless',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Smoke-Filled Calculation Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Smoke haze, stillness suspense, hard shadow light, calculation pressure, predatory close framing',
+        'Smoke-Filled Calculation Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject as a cerebral duel of patience and risk: smoke layers, hard shadows, still gestures, and ritual spacing should create predatory calculation without fixed play structures, surfaces, props, ages, or competition scenes.',
+        'Apply Smoke-Filled Calculation Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Smoke-Filled Calculation Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -288,27 +298,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cursed Severance Compassion Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Cursed severance softened by compassion, folk-horror grit, muddy tenderness, fractured wholeness, brutal loss rendered with humane warmth',
+        'Cursed Severance Compassion Style acts as a transferable anime-battle/worlds router: Cursed Severance Compassion Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Cursed Severance Compassion Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Cursed Severance Compassion Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Cursed Severance Compassion Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Mud-dark grain, worn cloth fiber, scarred wood matte, rust patina, cracked earth texture, dry crimson staining',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Cursed Severance Compassion Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Severed-frame spacing, tenderness beside harsh mass, folk-horror silhouettes, muddy horizon drag, compassionate close compression',
-      atmosphere_and_mood: 'Bleak, raw, compassionate, cursed',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Cursed Severance Compassion Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Severance motifs, cursed sky pressure, mud-worn tenderness, folk-horror grit, compassion against brutality',
+        'Cursed Severance Compassion Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject as damaged wholeness struggling toward tenderness: muddy texture, cursed negative space, folk-horror silhouettes, and warm humane accents should carry the look without fixed anatomy, companions, travel spaces, settlements, adversaries, or quest structure.',
+        'Apply Cursed Severance Compassion Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cursed Severance Compassion Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -316,27 +327,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sun-Reclaimed Concrete Mystery Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, institutional corridor, classroom, hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Sun-reclaimed concrete mystery, institutional remnants softened by growth, existential dislocation, low-key unease beneath bright quiet',
+        'Sun-Reclaimed Concrete Mystery Style acts as a transferable anime-battle/worlds router: Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Sun-bleached concrete, weed-soft edge texture, flaked paint, warm dust, cracked institutional surfaces, dry moss grain',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Open-horizon uncertainty, institutional grid decay, sunlit emptiness, broken-modern scale contrast, quiet pathlike depth',
-      atmosphere_and_mood: 'Mysterious, sun-bleached, uneasy, searching',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Sun-bleached concrete, growth-over-grid texture, existential quiet, mystery through absence, broken-modern softness',
+        'Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Give any prompt a bright post-institutional mystery treatment: sunlight, concrete, plant-softened decay, and unresolved emptiness should imply lost systems without fixed institutions, roles, threats, travel paths, or world lore.',
+        'Apply Sun-Reclaimed Concrete Mystery Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Reclaimed Concrete Mystery Style, sun-bleached concrete mystery style grammar with plant-softened architecture, quiet anomaly, warm dust, and one simple subject form or object, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -344,27 +356,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Machine Mourning Noir Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, interior investigation room, gun, gore, readable UI, police signage, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Machine mourning noir, humane futurism, forensic melancholy, rain-dark luxury, grief rendered through polished restraint and ethical weight',
+        'Machine Mourning Noir Style acts as a transferable anime-battle/worlds router: Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Rain-polished metal, quiet luxury grain, forensic matte surfaces, wet glass, brushed alloy, soft fabric shadow',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Noir close framing, forensic negative space, rainlit reflection depth, humane-machine symmetry, restrained investigative pacing',
-      atmosphere_and_mood: 'Somber, investigative, humane, futuristic',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Mourning atmosphere, rainlit polish, forensic quiet, humane synthetic restraint, noir ethical pressure',
+        'Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Apply machine mourning noir to any subject: polished rain reflections, forensic stillness, soft metal, and humane restraint should create grief without fixed roles, synthetic beings, urban locations, interiors, or case scenes.',
+        'Apply Machine Mourning Noir Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Machine Mourning Noir Style, rain-polished machine mourning style grammar with forensic stillness, wet metal, noir blues, and one softened mechanical or human-scale anchor, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -372,27 +385,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Luminous Natural Cycle Calm Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, empty abstract mist, forest corridor, lab specimen table, monster attack, readable label, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Luminous natural-cycle calm, adult folklore quiet, grief softened by ecology, pale living haze, contemplative moonlit medicine',
+        'Luminous Natural Cycle Calm Style acts as a transferable anime-battle/worlds router: Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Moon-haze bloom, damp bark grain, soft moss matte, pale bioluminescent dust, river-silt texture, natural paper fibers',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Slow ecological layering, low horizontal calm, moon-haze depth, softened foreground veil, cyclical flow composition',
-      atmosphere_and_mood: 'Quiet, eerie, compassionate, nocturnal',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Pale living haze, ecological stillness, moonlit calm, grief-softened texture, natural-cycle motifs',
+        'Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject as part of a quiet natural cycle: pale glow, damp organic grain, moon haze, and patient ecological rhythm should define the style without fixed natural locations, specialist roles, journeys, rites, or named folklore beings.',
+        'Apply Luminous Natural Cycle Calm Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Luminous Natural Cycle Calm Style, moonlit ecological calm style grammar with pale living haze, quiet biosphere glow, and readable organic anchor, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -400,27 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Winter Guilt Suspicion Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Winter guilt suspicion, domestic quiet under threat, time-haunted melancholy, protective dread, ordinary softness sharpened by memory',
+        'Winter Guilt Suspicion Style acts as a transferable anime-battle/worlds router: Winter Guilt Suspicion Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Winter Guilt Suspicion Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Winter Guilt Suspicion Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Winter Guilt Suspicion Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Snow-muted grain, worn domestic matte, cold glass haze, soft fabric texture, pale wall scuffs, breath-fog light',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Winter Guilt Suspicion Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Narrow memory compression, small-scale contrast, winter hush spacing, guilt-heavy close-ups, time-echo visual rhythm',
-      atmosphere_and_mood: 'Wintry, tense, protective, melancholic',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Winter Guilt Suspicion Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Winter hush, guilt-heavy close-ups, domestic threat softness, memory echo, protective melancholy',
+        'Winter Guilt Suspicion Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Give any prompt a subdued winter-thriller treatment: pale cold light, domestic softness, memory echoes, and protective tension should create dread without fixed settlements, homes, age roles, culprits, evidence, or time mechanics.',
+        'Apply Winter Guilt Suspicion Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Winter Guilt Suspicion Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -428,27 +443,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sun-Bleached Cruel Discipline Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Sun-bleached cruelty, austere discipline, hierarchy as pressure, heat-stripped beauty, severe silence before irreversible motion',
+        'Sun-Bleached Cruel Discipline Style acts as a transferable anime-battle/worlds router: Sun-Bleached Cruel Discipline Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Sun-Bleached Cruel Discipline Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Sun-Bleached Cruel Discipline Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Sun-Bleached Cruel Discipline Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Bleached dust, dry blood-brown staining, worn textile fiber, polished edge glints, hot paper grain, taut skin shadow',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Sun-Bleached Cruel Discipline Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Severe pre-motion stillness, hierarchy-weighted spacing, sun-flattened depth, brutal close crop, disciplined diagonal tension',
-      atmosphere_and_mood: 'Brutal, austere, scorching, merciless',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Sun-Bleached Cruel Discipline Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Sun-bleached harshness, pre-motion rigor, woundlike detail, hierarchy pressure, unbearable stillness',
+        'Sun-Bleached Cruel Discipline Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject under merciless heat and discipline: bleached light, dry staining, taut silence, and hierarchical spacing should make beauty feel cruel without fixed eras, duels, blades, ranks, or body-horror staging.',
+        'Apply Sun-Bleached Cruel Discipline Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sun-Bleached Cruel Discipline Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -456,27 +472,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rusted Neon Adolescent Dread Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Rusted neon dread, broken youth interiority, violet-night melancholy, fractured chronology, faint unreality threading through ordinary damage',
+        'Rusted Neon Adolescent Dread Style acts as a transferable anime-battle/worlds router: Rusted Neon Adolescent Dread Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Rusted Neon Adolescent Dread Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Rusted Neon Adolescent Dread Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Rusted Neon Adolescent Dread Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Rusted neon bleed, industrial dust, violet film grain, damp concrete-neutral scuffing, analog static, worn wall texture',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Rusted Neon Adolescent Dread Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Fragmented chronology cuts, violet-night compression, interior dread depth, static-layer repetition, memory-broken framing',
-      atmosphere_and_mood: 'Melancholic, fragmented, nocturnal, ghostly',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Rusted Neon Adolescent Dread Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Violet night tones, rusted neon bleed, fragmented framing, interior dread, static-haunted melancholy',
+        'Rusted Neon Adolescent Dread Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Give any prompt a rusted-neon psychological treatment: violet haze, analog static, fractured time, and damaged interiority should define the style without fixed institutions, passageways, myths, public spaces, urban scale, or haunting setup.',
+        'Apply Rusted Neon Adolescent Dread Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusted Neon Adolescent Dread Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -484,27 +501,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Red-Optic Security Noir Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Red-optic security noir, paramilitary abstraction, smoke-dense political dread, buried tenderness inside oppressive system machinery',
+        'Red-Optic Security Noir Style acts as a transferable anime-battle/worlds router: Red-Optic Security Noir Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Red-Optic Security Noir Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Red-Optic Security Noir Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Red-Optic Security Noir Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Smoke-black metal, red glass glow, heavy cloth grain, riot-dust haze, oxidized plated panels, wet concrete-neutral grit',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Red-Optic Security Noir Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Red-optic focal points, smoke-layer compression, plated mass silhouettes, political negative space, oppressive security geometry',
-      atmosphere_and_mood: 'Oppressive, political, smoky, tragic',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Red-Optic Security Noir Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Red optic glow, smoke-dense composition, plated mass abstraction, political dread, buried tenderness',
+        'Red-Optic Security Noir Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Apply red-optic security noir to any subject: smoke, heavy dark surfaces, red glass points, and political weight should suggest oppressive systems without fixed attire systems, brigades, ruins, concealment props, factions, or security scenes.',
+        'Apply Red-Optic Security Noir Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Red-Optic Security Noir Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -512,27 +530,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lantern Retribution Ritual Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Lantern-lit retribution, calm cruelty, midnight ritual serenity, crimson floral omen, fatal correspondence rendered as quiet ceremonial pressure',
+        'Lantern Retribution Ritual Style acts as a transferable anime-battle/worlds router: Lantern Retribution Ritual Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Lantern Retribution Ritual Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Lantern Retribution Ritual Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Lantern Retribution Ritual Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Candlelit paper glow, dark silk matte, still-water sheen, crimson petal softness, lacquer black, smoky ritual grain',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Lantern Retribution Ritual Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Ritual symmetry, lantern-point depth, still-water reflection, threshold framing, fatal close compression',
-      atmosphere_and_mood: 'Cold, ritualistic, nocturnal, fatal',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Lantern Retribution Ritual Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Lantern glow, crimson floral omen, dark silk calm, ritual threshold, quiet fatal symmetry',
+        'Lantern Retribution Ritual Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject through quiet retribution ritual: lantern glow, crimson floral accents, dark silk, still reflections, and fatal symmetry should define the image without fixed settlements, attire, transport rituals, bargains, or vengeance scenes.',
+        'Apply Lantern Retribution Ritual Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lantern Retribution Ritual Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -540,27 +559,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Civic Rumor Breakdown Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Civic rumor panic, media anxiety, dream-logic intrusion, expression-driven social collapse, ordinary surfaces warped by collective pressure',
+        'Civic Rumor Breakdown Style acts as a transferable anime-battle/worlds router: Civic Rumor Breakdown Style; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Civic Rumor Breakdown Style as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Civic Rumor Breakdown Style choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Civic Rumor Breakdown Style without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Broadcast static grain, printed-paper clutter, cheap plastic sheen, urban-neutral scuffing, distorted skin tones, fluorescent haze',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Civic Rumor Breakdown Style controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Dream-crack perspective, rumor-wave repetition, civic pressure compression, warped familiar proportions, media-noise layering',
-      atmosphere_and_mood: 'Claustrophobic, surreal, civic, unstable',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Civic Rumor Breakdown Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Rumor-driven framing, media clutter, dream-crack cues, distorted ordinary expression, civic pressure waves',
+        'Civic Rumor Breakdown Style; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Treat any subject as a civic rumor becoming visual pressure: broadcast static, warped expressions, repeated motifs, and dream cracks should create breakdown without fixed aggressors, props, districts, civic roles, or literal media scenes.',
+        'Apply Civic Rumor Breakdown Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Civic Rumor Breakdown Style, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -568,27 +588,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Invasive Anatomy Thriller Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, body, anatomy, flesh, organs, gore, face, hands, surgery, creature, body-horror closeup, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Invasive anatomy logic, clean surfaces corrupted by organic strategy, selfhood fracture, clinical paranoia, flesh geometry as intelligent design',
+        'Invasive Anatomy Thriller Style acts as a transferable anime-battle/worlds router: Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Clean matte planes, wet organic seams, sliced membrane gloss, tense skinlike translucency, surgical shadow grain, cool neutral surfaces',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Asymmetric anatomy echoes, splitting contours, invasive edge growth, clinical open space, threat emerging from familiar proportions',
-      atmosphere_and_mood: 'Tense, invasive, paranoid, horrifying',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Apply a clean-but-invasive thriller treatment to any subject: familiar forms split into intelligent organic geometry, cool neutrals buckle under crimson stress, and the image feels strategically infected. Keep the language abstract, with no fixed body part, location, role, weapon, or action premise.',
+        'Apply Invasive Anatomy Thriller Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Invasive Anatomy Thriller Style, invasive thriller style grammar as ceramic-botanical corruption: clean pale planes split by organic seam geometry and clinical crimson stress, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -596,27 +617,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Procedural Low-Fantasy Grit Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, corridor, dungeon hallway, adventurer, torch/lamp prop, weapon, enemy, blood, game UI, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Procedural low-fantasy severity, dirty-metal pragmatism, tactical light discipline, merciless efficiency as composition, dice-like tension without literal gameplay',
+        'Procedural Low-Fantasy Grit Style acts as a transferable anime-battle/worlds router: Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Dirty metal scuffing, torch-smoked grain, worn leatherlike matte, damp stone-neutral grit, practical cloth abrasion, dry blood-brown staining',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Tactical corridor-like compression, step-by-step composition, narrow light cones, practical silhouette economy, procedural threat spacing',
-      atmosphere_and_mood: 'Tactical, grim, relentless, procedural',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Treat any subject as harsh practical fantasy rendered through procedure, restraint, and problem-solving grit. Use narrow light, dirty metal texture, smoky shadow, and economical silhouettes while keeping all figures, props, locations, enemies, and game-signifiers non-specific.',
+        'Apply Procedural Low-Fantasy Grit Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Procedural Low-Fantasy Grit Style, procedural low-fantasy grit style grammar with worn stone slabs, scuffed dirty metal, narrow practical light as abstract slices, and problem-solving severity, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -624,27 +646,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crosshatched Doom Weight Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, gore, severed bodies, sexual violence, famous dark-fantasy swordsman likeness, giant sword, torture scene, readable occult text, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Monumental doom weight, scar-like crosshatching, eclipse-black negative space, sacrificial emblem logic, oppressive scale fields, cursed ornamental geometry',
+        'Crosshatched Doom Weight Style acts as a transferable anime-battle/worlds router: Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Scarred ink grain, worn hide texture, oxidized patina, cracked mineral surfaces, viscous black accents, abraded parchment roughness',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Severe silhouettes, compressed foreground mass, oppressive scale contrast, ceremonial void framing, gravity-heavy composition',
-      atmosphere_and_mood: 'Brutal, tragic, despairing, epic',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject as if weight, guilt, and fate have been pressed into the ink. Use scar-dense hatching, sacrificial symbol geometry, bruised earth reds, and eclipse-black shadow fields to create monumental doom as a transferable render grammar, free of fixed props, cast, lore icons, or set-piece events.',
+        'Apply Crosshatched Doom Weight Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crosshatched Doom Weight Style, crosshatched doom-weight style grammar with scar-dense ink hatching, eclipse-black negative space, cursed emblem geometry, and oppressive scale around armor/stone/object fragments, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -652,27 +675,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crimson Hunger Metamorphosis Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Crimson hunger tension, alienated identity split, predatory color flares, fleshy ribbon abstraction, mask-like concealment, appetite rendered as graphic pressure',
+        'Crimson Hunger Metamorphosis Style acts as a transferable anime-battle/worlds router: Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person, face, full subject form, robe; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Damp ink grain, membrane gloss, scratched matte surfaces, bruised translucency, red wet-edge accents, worn urban-neutral grit',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Identity-split framing, asymmetrical flare shapes, close pressure cropping, predatory negative space, invasive contour echoes',
-      atmosphere_and_mood: 'Tormented, hungry, alienated, violent',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Treat any input as a study in appetite, concealment, and identity fracture. Push crimson flares through desaturated shadows, membrane-like gloss, and invasive ribbon silhouettes while keeping the style abstract, transferable, and free of fixed locations, named effects, or literal pursuit setups.',
+        'Apply Crimson Hunger Metamorphosis Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Hunger Metamorphosis Style, crimson metamorphosis style grammar as a split mask/emblem specimen: fractured lacquer mask halves, membrane translucency, restrained crimson pressure, and alienated identity without any humanoid body. No person, face, full subject form, robe, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -680,27 +704,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crimson Gothic Authority Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, vampire franchise likeness, Nazi/fascist insignia, guns, gore, bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Aristocratic menace, crimson authority fields, black ceremonial contrast, gothic pressure geometry, predatory elegance, sanctified violence as abstraction',
+        'Crimson Gothic Authority Style acts as a transferable anime-battle/worlds router: Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Velvet-black ink mass, oxidized crimson glaze, polished dark enamel, aged paper grain, hard-edged stain texture, smoky drybrush',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Heraldic vertical framing, severe silhouette hierarchy, crimson-black power asymmetry, ritualized negative space, blade-sharp contour rhythm',
-      atmosphere_and_mood: 'Violent, regal, gothic, relentless',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Convert any subject into a regal gothic pressure image built from crimson authority, black ceremonial voids, and hard-edged shadow hierarchy. Keep the menace formal, graphic, and transferable instead of tied to fixed costumes, factions, interiors, weapons, or pursuit scenes.',
+        'Apply Crimson Gothic Authority Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crimson Gothic Authority Style, crimson gothic authority style grammar with aristocratic black-crimson geometry, ceremonial voids, severe silhouette hierarchy, and predatory elegance as abstraction, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -708,27 +733,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wind-Scoured Redemption Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named samurai likeness, duel pose, katana near-plane, blood, revenge-kill scene, historical flag, battlefield gore, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Wind-scoured restraint, historical-grit naturalism, revenge cooled into quiet form, weathered endurance, moral weight, sparse horizon pressure',
+        'Wind-Scoured Redemption Style acts as a transferable anime-battle/worlds router: Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths, and moral weight around a cloaked silhouette/object fragment; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Wind-abraded grain, worn textile roughness, cold mineral matte, salt-weathered surfaces, dry earth scuffing, subdued iron patina',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Broad stillness, low-pressure horizon bands, grounded mass, negative space as emotional restraint, slow diagonal weather flow',
-      atmosphere_and_mood: 'Stoic, epic, historical, meditative',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Render any subject with weathered restraint and moral afterweight: muted earths, cold light, dry abrasion, and open negative space that feels earned rather than empty. Keep the treatment portable, without historical cast, fixed geography, props, or narrative confrontation.',
+        'Apply Wind-Scoured Redemption Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wind-Scoured Redemption Style, wind-scoured redemption style grammar with weathered restraint, sparse horizon pressure, dry abrasion, muted earths, and moral weight around a cloaked silhouette/object fragment, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -736,27 +762,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pale Threshold Horror Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, hunter/prey body, chase, weapon, blood, gore, monster, corridor, confrontation scene, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Pale threshold horror, silver glint discipline, metamorphic dread, bleak restraint, ranked severity as graphic order, hunter-prey symmetry without literal roles',
+        'Pale Threshold Horror Style acts as a transferable anime-battle/worlds router: Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Chalk-pale matte surfaces, silver edge sheen, cracked ash grain, cold leatherlike roughness, mineral dust, restrained organic distortion',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Symmetrical threat staging, pale figure-ground inversion, narrow vertical cuts, restrained metamorphic edges, severe silhouette separation',
-      atmosphere_and_mood: 'Bleak, haunted, grim, melancholic',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Give any prompt a pale, disciplined horror treatment where beauty looks one step from transformation. Use silver edge accents, ash-matte textures, severe silhouette order, and quiet dread as a portable image grammar, not a fixed cast, setting, rank system, or confrontation scene.',
+        'Apply Pale Threshold Horror Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Pale Threshold Horror Style, pale threshold horror style grammar with porcelain-pale threshold planes, ash-matte surfaces, silver edge tension, and quiet dread as shape language, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -764,27 +791,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lush Abyssal Toll Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, explorer, cave tunnel, fantasy corridor, monster, map, lantern, expedition gear, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Lush wonder hiding irreversible cost, bioluminescent mystery, depth-layered dread, delicate beauty under pressure, reliclike detail as visual lure',
+        'Lush Abyssal Toll Style acts as a transferable anime-battle/worlds router: Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Bioluminescent bloom, damp mineral grain, soft organic translucency, antique relic patina, mossy velvet matte, pressure-worn edges',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Layered vertical depth cues, scale uncertainty, beautiful foreground lure, ominous compression, circular pull composition',
-      atmosphere_and_mood: 'Wondrous, terrifying, abyssal, enchanting',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Recast any subject with beautiful depth that feels costly to enter: luminous blooms, damp mineral texture, layered compression, and wonder turning quietly unsafe. Keep the image portable, with no fixed explorers, lore systems, travel premise, or literal worldbuilding requirement.',
+        'Apply Lush Abyssal Toll Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lush Abyssal Toll Style, lush abyssal toll style grammar with bioluminescent mineral bloom, damp relic patina, vertical depth pressure, and beautiful unsafe wonder, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -792,27 +820,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Grimy Sorcery Collision Style',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, readable sigils, protagonist mask portrait, weapon, alley corridor, franchise wizard, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Grimy sorcery collision, anarchic humor in texture, industrial filth, masked ambiguity as shape language, portal-like framing, absurd menace without literal cast',
+        'Grimy Sorcery Collision Style acts as a transferable anime-battle/worlds router: Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains, and absurd menace as texture; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Tar grime, industrial soot, scraped enamel, greasy ink buildup, oxidized dust, warped organic stains, smoke-softened edges',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Colliding frames, smoke-bent edges, masklike silhouettes, portal-crop interruptions, chaotic but readable density, offbeat scale jolts',
-      atmosphere_and_mood: 'Bizarre, dangerous, grimy, anarchic',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Heavy atmosphere, narrative weight, oppressive mood building, visceral consequence framing, story-first visual language',
+        'Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Push any prompt into filthy, funny, dangerous collision: soot, warped frames, occult-industrial stains, and masklike ambiguity create absurd menace as a transferable style, not a fixed place, character, prop system, or action setup.',
+        'Apply Grimy Sorcery Collision Style after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grimy Sorcery Collision Style, grimy sorcery collision style grammar with soot, broken enamel, portal-like crop interruptions, illegible occult-industrial stains, and absurd menace as texture, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -820,28 +849,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Devilman Crybaby – Neon Tragic Metamorphosis',
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, franchise likeness, demon body, nude body, gore, anatomy, club scene, crowd, horror attack, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        "Devilman Crybaby Neon Tragic Metamorphosis within 9. Dark Fantasy & Seinen: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Devilman Crybaby Neon Tragic Metamorphosis's specific style identity.",
+        'Devilman Crybaby – Neon Tragic Metamorphosis acts as a transferable anime-battle/worlds router: Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse, and emotional overload as abstract silhouette pressure; combine it with dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Define Devilman Crybaby Neon Tragic Metamorphosis through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Use a Devilman Crybaby Neon Tragic Metamorphosis-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty gold, and disciplined blood-or-danger accents; let Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Use lighting that makes Devilman Crybaby Neon Tragic Metamorphosis recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim, and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Use materials and textures that reinforce Devilman Crybaby Neon Tragic Metamorphosis: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Use spatial behavior that fits Devilman Crybaby Neon Tragic Metamorphosis: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; convert Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Devilman Crybaby Neon Tragic Metamorphosis: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence, loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Render Devilman Crybaby Neon Tragic Metamorphosis with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        "Prioritize Devilman Crybaby Neon Tragic Metamorphosis's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse; scarred contour, restrained deformation, severe silhouettes, vulnerable posture, occult or noir edge language, and readable psychological pressure; crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture, blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen finish with controlled darkness, stable structure, restrained texture, no splatter-only horror, no photoreal grime, and no watermark/text',
       creative_brief:
-        'Create a style-card that translates Devilman Crybaby Neon Tragic Metamorphosis into a portable visual system for 9. Dark Fantasy & Seinen. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Devilman Crybaby – Neon Tragic Metamorphosis after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Devilman Crybaby – Neon Tragic Metamorphosis, neon tragic metamorphosis style grammar with blacklight glass, smoke, elastic color smear, acid magenta/cyan collapse, and emotional overload as abstract silhouette pressure, dark fantasy and seinen anime grammar with moral pressure, heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

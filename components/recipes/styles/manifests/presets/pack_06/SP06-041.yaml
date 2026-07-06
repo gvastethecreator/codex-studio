@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: Hand stamped image
-  subject_treatment: Broken, uneven ink
-  color_and_tone: Red, Black, Blue ink
-  lighting_and_shadow: Flat
-  texture_and_material: Ink pad, paper grain
-  camera_and_composition: Incomplete impression
-  atmosphere_and_mood: Official, rough, repetitive
-  rendering_and_quality: Rough mechanical impression with hand-pressure variance
-  key_features: Incomplete impression
+  aesthetic: >-
+    Rubber Stamp acts as a transferable art-medium router: start from Hand stamped image, Incomplete
+    impression and print-process system built from matrix marks, ink transfer, pressure,
+    registration, plate or block artifacts, and paper absorption, then apply the medium behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Broken, uneven ink; preserve the prompt subject while
+    converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
+    systems, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Red, Black, Blue ink; use palette as ink behavior: limited plates, overprint,
+    misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey
+    restraint, with deliberate value grouping, accent control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat; translate light into line density, dot frequency, relief shadow,
+    plate tone, paper reserve, or ink coverage rather than photographic illumination, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Ink pad, paper grain; surface detail should reveal paper fibers, plate marks, burr,
+    gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Incomplete impression; compose through print registration, cut
+    rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy,
+    with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Official, rough, repetitive; derive mood from hand pressure, mechanical
+    reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile
+    experiment, letting the medium alter interpretation without demanding a specific story,
+    location, or character.
+  rendering_and_quality: >-
+    Finish with Rough mechanical impression with hand pressure variance; finish as a credible print
+    artifact with exact mark logic, restrained texture, and no fake poster text or random distress
+    overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium
+    recognizable.
+  key_features: Hand stamped image; Incomplete impression; Red, Black, Blue ink; Ink pad, paper grain
   creative_brief: >-
-    Apply rubber-stamp printing to any input: inkpad pressure, incomplete impressions, broken edges, alignment
-    wobble, repeated mechanical marks, and ink fatigue. Keep tactile repetition without requiring labels,
-    office forms, postage, logos, or readable text.
+    Apply Rubber Stamp as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Hand
+    stamped image, Incomplete impression, Ink pad, paper grain without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -42,12 +72,24 @@ avoidRules:
   - frame
   - border
   - readable stamp text
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - fake poster text
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-041.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, readable stamp text
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, readable stamp text, wrong medium, generic
+    AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster
+    text, smooth digital gradient, random distress overlay, wrong print process
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

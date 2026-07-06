@@ -12,30 +12,59 @@ tags:
   - texture-and-materiality
   - elemental-and-fx
 visualDna:
-  aesthetic: Grinder sparks
-  subject_treatment: Trails
-  color_and_tone: Orange, Yellow, White
-  lighting_and_shadow: Point lights
-  texture_and_material: Particle
-  camera_and_composition: Motion blur
-  atmosphere_and_mood: Intense, work
-  rendering_and_quality: Industrial, hot
-  key_features: Trajectory
+  aesthetic: >-
+    Sparks behaves like a controlled elemental effect layer: start from Grinder sparks, Particle,
+    and Motion blur, then turn motion, temperature, particles, translucency, refraction, glow, and
+    transient energy behavior into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Trails: preserve identity and pose while letting forms
+    emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup,
+    thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Orange, Yellow, White as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Point lights define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Sparks without hiding the prompt subject.
+  texture_and_material: >-
+    Render Particle through flow direction, particle density, turbulence, glow falloff, splashes,
+    trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Motion blur as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Intense, work by using movement, danger, spectacle, instability, temperature, and
+    sensory intensity; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Industrial, hot material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Grinder sparks; Trails; Particle; Point lights; Motion blur
   creative_brief: >-
-    Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each
-    particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the
-    velocity. The point lights should illuminate the surrounding space in warm pulses, creating a
-    constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal
-    against wheel. Use Sparks as portable surface/render behavior over any input: map its texture, light
-    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material naturally
-    appears.
+    Route any subject through Sparks as a transferable elemental/FX visual system while preserving
+    the prompt's subject, action, and setting. Render the streaking light-trails of grinding sparks
+    spraying outward in arcs of orange to white, each particle a tiny sun burning its brief
+    trajectory through industrial darkness with motion blur carrying the velocity. The point lights
+    should illuminate the surrounding space in warm pulses, creating a constellation of brief fires.
+    Capture the beauty of friction, light born from the resistance of metal against wheel. Use
+    Sparks as portable surface/render behavior over any input: map its texture, light response, edge
+    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - fire
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-058.webp
 attributes:
-  negativePrompt: fire
+  negativePrompt: fire, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

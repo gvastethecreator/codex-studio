@@ -14,37 +14,79 @@ tags:
   - greek-myth
 visualDna:
   aesthetic: >-
-    Bronze Smoke Oracle Fragment within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Bronze Smoke Oracle Fragment's specific style identity.
+    Bronze Smoke Oracle Fragment acts as a transferable mythic-noir router: bronze translated into
+    dark symbolic behavior, smoke translated into dark symbolic behavior plus oracle translated into
+    dark symbolic behavior fused with Greek epic noir with bronze law, laurel governance, oracle
+    fragments, maritime strategy, and sun-struck fatalism; it carries symbol, omen, ritual
+    authority, and mature editorial restraint without locking prompt content to its sample image.
   subject_treatment: >-
-    Define Bronze Smoke Oracle Fragment through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Keep the user's prompt subject, action, and context intact while reshaping identity through
+    bronze shaping silhouette rhythm, contour pressure, and symbolic edge control, smoke shaping
+    silhouette rhythm, contour pressure, and symbolic edge control plus oracle shaping silhouette
+    rhythm, contour pressure, and symbolic edge control; forms should inherit silhouette pressure,
+    emblem logic, ritual posture, edge weight, and motif placement instead of a mandatory actor or
+    prop set.
   color_and_tone: >-
-    Use a Bronze Smoke Oracle Fragment-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through bronze, verdigris green, smoke gray, and dark marble values, smoke-weighted
+    accent roles over disciplined dark values plus oracle-weighted accent roles over disciplined
+    dark values together with Aegean blue-black, bronze, marble ivory, olive green, red thread,
+    smoke gray, laurel shadow, and harsh dawn gold; values stay separated, accents feel intentional,
+    and the dark palette supports the requested content rather than swallowing it.
   lighting_and_shadow: >-
-    Use lighting that makes Bronze Smoke Oracle Fragment recognizable: purposeful key, rim, bounce, shadow,
-    and glow behavior with readable hierarchy.
+    Use warm metal bounce and hard rim glints plus oracular glow, smoke-veiled highlights, and
+    hidden source illumination with hard dawn planes, oracle smoke glow, bronze bounce, sea-haze
+    contrast, and severe sculptural shadow; shadows must carry omen weight, rims should clarify
+    form, and glow should behave as ritual evidence rather than decorative haze.
   texture_and_material: >-
-    Use materials and textures that reinforce Bronze Smoke Oracle Fragment: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render bronze patina, engraved scratches, hammered planes, and oily smoke plus ash, smoke,
+    polished bowl surfaces, and old paper alongside bronze patina, marble dust, olive wood, red
+    thread fiber, sailcloth, ash, salt, engraved stone, and spear-edge glints; surface scale,
+    patina, residue, gloss, grain, and carved or sealed edges must remain coherent across
+    characters, objects, scenes, and abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Bronze Smoke Oracle Fragment: perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
+    Frame with bronze converted into repeatable spatial rhythm and symbolic hierarchy, smoke
+    converted into repeatable spatial rhythm and symbolic hierarchy plus oracle converted into
+    repeatable spatial rhythm and symbolic hierarchy plus frieze order, labyrinth logic, oath-line
+    diagonals, public-measure spacing, and monument-like silhouette balance; the style should
+    support portraits, objects, architecture, creatures, symbols, and full scenes through reusable
+    spatial grammar instead of one fixed layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Bronze Smoke Oracle Fragment: specific, coherent, and distinct, with emotional
-    tone carried by visual systems rather than narrative captioning.
+    Carry mood through prophecy, secrecy, and official ambiguity, bronze pressure, consequence, and
+    symbolic tension plus smoke pressure, consequence, and symbolic tension and tragic law, public
+    honor, strategic pressure, fatal prophecy, disciplined return, and unsentimental heroic
+    aftermath; the image can become severe, sensual, sacred, violent, quiet, or strange when prompt
+    X asks for it, while the preset supplies mythic consequence.
   rendering_and_quality: >-
-    Render Bronze Smoke Oracle Fragment with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with bronze recognition with denoised dark editorial polish and controlled material truth
+    plus smoke recognition with denoised dark editorial polish and controlled material truth and
+    classical-noir illustration with crisp profiles, restrained grain, readable metal, and no
+    museum-label text; prioritize clean denoise, readable dark values, strong silhouette hierarchy,
+    tactile material truth, and no watermark, fake text, logos, accidental UI, or muddy black crush.
   key_features: >-
-    Prioritize Bronze Smoke Oracle Fragment's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    bronze translated into dark symbolic behavior, smoke translated into dark symbolic behavior plus
+    oracle translated into dark symbolic behavior; bronze shaping silhouette rhythm, contour
+    pressure, and symbolic edge control, smoke shaping silhouette rhythm, contour pressure, and
+    symbolic edge control plus oracle shaping silhouette rhythm, contour pressure, and symbolic edge
+    control; bronze patina, engraved scratches, hammered planes, and oily smoke plus ash, smoke,
+    polished bowl surfaces, and old paper; warm metal bounce and hard rim glints plus oracular glow,
+    smoke-veiled highlights, and hidden source illumination; bronze converted into repeatable
+    spatial rhythm and symbolic hierarchy, smoke converted into repeatable spatial rhythm and
+    symbolic hierarchy plus oracle converted into repeatable spatial rhythm and symbolic hierarchy
   creative_brief: >-
-    Create a style-card that translates Bronze Smoke Oracle Fragment into a portable visual system for 5.
-    Mythic Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character,
-    prop, or story beat.
+    Apply Bronze Smoke Oracle Fragment after prompt X as a transferable mythic-noir layer: prompt X
+    supplies subject, action, setting, and intensity, while this preset supplies bronze translated
+    into dark symbolic behavior, smoke translated into dark symbolic behavior plus oracle translated
+    into dark symbolic behavior, bronze shaping silhouette rhythm, contour pressure, and symbolic
+    edge control, smoke shaping silhouette rhythm, contour pressure, and symbolic edge control plus
+    oracle shaping silhouette rhythm, contour pressure, and symbolic edge control, bronze, verdigris
+    green, smoke gray, and dark marble values, smoke-weighted accent roles over disciplined dark
+    values plus oracle-weighted accent roles over disciplined dark values, warm metal bounce and
+    hard rim glints plus oracular glow, smoke-veiled highlights, and hidden source illumination,
+    bronze patina, engraved scratches, hammered planes, and oily smoke plus ash, smoke, polished
+    bowl surfaces, and old paper plus bronze converted into repeatable spatial rhythm and symbolic
+    hierarchy, smoke converted into repeatable spatial rhythm and symbolic hierarchy plus oracle
+    converted into repeatable spatial rhythm and symbolic hierarchy, finish discipline, and negative
+    controls without requiring a fixed deity, ritual, prop bundle, location, or sample composition.
 avoidRules:
   - photoreal
   - slapstick
@@ -53,10 +95,24 @@ avoidRules:
   - watermark
   - text
   - logo
+  - clean marble postcard
+  - generic gladiator fantasy
+  - tourist Greece
+  - fixed deity portrait
+  - required ritual scene
+  - literal sample composition
+  - generic dark fantasy
+  - muddy black crush
+  - random occult symbols
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-020.webp
 attributes:
-  negativePrompt: photoreal, slapstick, candy-colors, cyberpunk-neon, watermark, text, logo
+  negativePrompt: >-
+    photoreal, slapstick, candy-colors, cyberpunk-neon, watermark, text, logo, clean marble
+    postcard, generic gladiator fantasy, tourist Greece, fixed deity portrait, required ritual
+    scene, literal sample composition, generic dark fantasy, muddy black crush, random occult
+    symbols, readable text
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

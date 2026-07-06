@@ -12,33 +12,84 @@ tags:
   - miscellaneous-and-fun
   - micro-macro
 visualDna:
-  aesthetic: Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty
-  subject_treatment: Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers
-  color_and_tone: Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal
-  lighting_and_shadow: Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun
+  aesthetic: >-
+    Rust/Decay Macro operates as a portable source-router layer: combine Corrosion zoom,
+    oxidation-portrait, time-texture, rust-patina, wreck-beauty with magnified source-study logic
+    with scale shift, optical detail, structural pattern, and specimen-independent texture grammar,
+    so the preset supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms magnify,
+    reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure
+    through Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal,
+    peeling-layers; identity stays readable through construction grammar, proportion, edge logic,
+    and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through source-derived color variation, iridescence, false-scale contrast, translucent
+    edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun
+    plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and
+    shallow optical falloff as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
   texture_and_material: >-
-    Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal,
-    patina-powder
-  camera_and_composition: Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau
-  atmosphere_and_mood: Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay
-  rendering_and_quality: Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi
+    Render Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel,
+    efflorescence-crystal, patina-powder plus pores, fibers, facets, droplets, spores, grain,
+    grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss,
+    grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects,
+    and environments.
+  camera_and_composition: >-
+    Compose with Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary,
+    peeling-plateau plus scale abstraction, repeated micro-patterns, sectional rhythm, optical
+    compression, and detail-first framing as reusable framing grammar, allowing cards, portraits,
+    objects, scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural
+    engineering, entropy, and fragile wonder; the emotional tone should feel specific to Rust/Decay
+    Macro while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy
+    stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network,
-    peeling-edge curls, bubbled-paint texture
+    Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty; Flaking paint,
+    paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers;
+    Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel,
+    efflorescence-crystal, patina-powder; Rough, raking-side-light, texture-reveal shadow,
+    overcast-diffusion, afternoon-grazing sun; Cracks, paint-blister domes, oxide-blister eruption,
+    corrosion-front boundary, peeling-plateau
   creative_brief: >-
-    Emphasize corrosion aesthetics through oxide blooms, paint blistering, and layered substrate exposure
-    under grazing light. Keep entropy, patina, and material aging as reusable style anchors across industrial
-    surfaces.
+    Use Rust/Decay Macro after prompt X as a transferable style layer: prompt X supplies subject,
+    action, and setting, while the preset supplies Corrosion zoom, oxidation-portrait, time-texture,
+    rust-patina, wreck-beauty, Flaking paint, paint-blister edges, rust-bubbling contour,
+    crack-propagation fractal, peeling-layers, Oxidation, bumps, iron-oxide crust, flaking-paint
+    platelets, pitted-steel, efflorescence-crystal, patina-powder, Rough, raking-side-light,
+    texture-reveal shadow, overcast-diffusion, afternoon-grazing sun, Cracks, paint-blister domes,
+    oxide-blister eruption, corrosion-front boundary, peeling-plateau plus microstructure,
+    magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible
+    detail, palette behavior, light response, material treatment, and finish discipline without
+    requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - clean
   - eye
   - iris
   - pupil
   - lens
+  - generic macro blur
+  - muddy micro noise
+  - classroom sample scene
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-063.webp
 attributes:
-  negativePrompt: clean, eye, iris, pupil, lens
+  negativePrompt: >-
+    clean, eye, iris, pupil, lens, generic macro blur, muddy micro noise, classroom sample scene,
+    fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

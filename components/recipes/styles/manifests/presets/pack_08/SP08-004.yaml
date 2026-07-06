@@ -12,30 +12,88 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie
-  subject_treatment: Flowing layers, fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease
-  color_and_tone: Earth tones, floral prints, terracotta, ochre, dusty rose, sun-bleached coral
-  lighting_and_shadow: Golden hour sun, lens flare warmth, backlit halo, dust-mote glow
-  texture_and_material: Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze
+  aesthetic: >-
+    Boho Festival operates as a portable fashion-costume router: combine Sunlit bohemian layering,
+    handcrafted wanderer romance, fringe-and-lace reverie with subcultural dress-code logic with
+    identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Flowing layers, fringe
+    cascades, tiered drape, bell-sleeve billow, relaxed artisan ease; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Golden hour sun, lens flare warmth, backlit halo, dust-mote glow plus club, daylight,
+    editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a
+    venue as the styling light contract, revealing cut, drape, surface response, trim, transparency,
+    or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Lace, crochet, denim, eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze plus
+    denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and
+    worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
+    elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Boho Festival using its key spatial cues: Accessories (hats, jewelry), layered necklaces,
-    wide-brim felt hat, turquoise rings.
-  atmosphere_and_mood: Free, happy, natural, carefree wanderlust, sun-warmed nostalgia, handmade ease
-  rendering_and_quality: Craft-led bohemian editorial, weathered softness, sun-drenched naturalism
-  key_features: Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings
+    Compose with Compose for Boho Festival using its key spatial cues: Accessories (hats, jewelry),
+    layered necklaces, wide-brim felt hat, turquoise rings plus attitude-led silhouette, accessory
+    grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Boho Festival while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Sunlit bohemian layering, handcrafted wanderer romance, fringe-and-lace reverie; Flowing layers,
+    fringe cascades, tiered drape, bell-sleeve billow, relaxed artisan ease; Lace, crochet, denim,
+    eyelet cotton, macrame knots, worn-in suede, cheesecloth gauze; Golden hour sun, lens flare
+    warmth, backlit halo, dust-mote glow; Compose for Boho Festival using its key spatial cues:
+    Accessories (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings
   creative_brief: >-
-    Filter the input through bohemian layering: crochet apertures, fringe motion, turquoise glints, worn
-    suede, eyelet cotton and sun-bleached florals. Keep the golden handmade drift and wind-touched ease as
-    styling pressure only, not as a fixed desert festival, crowd, stage, barefoot traveler or prescribed body
-    setup.
+    Use Boho Festival after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Sunlit bohemian
+    layering, handcrafted wanderer romance, fringe-and-lace reverie, Flowing layers, fringe
+    cascades, tiered drape, bell-sleeve billow, relaxed artisan ease, Lace, crochet, denim, eyelet
+    cotton, macrame knots, worn-in suede, cheesecloth gauze, Golden hour sun, lens flare warmth,
+    backlit halo, dust-mote glow, Compose for Boho Festival using its key spatial cues: Accessories
+    (hats, jewelry), layered necklaces, wide-brim felt hat, turquoise rings plus signature layers,
+    footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven
+    silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - suit
   - strict
   - dark
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-004.webp
 attributes:
-  negativePrompt: suit, strict, dark
+  negativePrompt: >-
+    suit, strict, dark, costume-party parody, random trend mix, brand-logo collage, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

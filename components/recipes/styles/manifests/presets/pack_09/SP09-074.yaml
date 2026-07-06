@@ -13,30 +13,58 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: 70s rug
-  subject_treatment: Long fibers
-  color_and_tone: Orange or Green
-  lighting_and_shadow: Soft
-  texture_and_material: Deep pile
-  camera_and_composition: Matted
-  atmosphere_and_mood: Cozy, retro
-  rendering_and_quality: Retro, soft
-  key_features: Messy pile
+  aesthetic: >-
+    Carpet (Shag) makes hand-feel and pressure visible across the image: start from 70s rug, Deep
+    pile, and Matted, then turn touch, softness, pile, fiber density, nap direction, compression,
+    and hand-feel into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Long fibers: preserve identity and pose while letting forms
+    compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface
+    breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Orange or Green as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte
+    falloff, or rim behavior should reveal Carpet (Shag) without hiding the prompt subject.
+  texture_and_material: >-
+    Render Deep pile through fiber structure, tactile depth, soft occlusion, fuzz, pile direction,
+    and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Matted as reusable material rhythm: macro-friendly for texture tasks, but able to
+    wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Cozy, retro by using physical touch, comfort, irritation, warmth, dryness, and
+    surface softness; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Retro, soft material clarity: physically coherent reflectance, clean contact detail,
+    controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.
+  key_features: 70s rug; Long fibers; Deep pile; Soft; Matted
   creative_brief: >-
-    Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a
-    landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The
-    texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects
-    the ghosts of a decade. Capture the brazen comfort of retro rebellion. Use Carpet as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Route any subject through Carpet (Shag) as a transferable tactile-surface visual system while
+    preserving the prompt's subject, action, and setting. Summon the deep pile of shag carpet in
+    audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys
+    and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel
+    like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts
+    of a decade. Capture the brazen comfort of retro rebellion. Use Carpet as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - berber
   - flat
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-074.webp
 attributes:
-  negativePrompt: berber, flat
+  negativePrompt: berber, flat, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

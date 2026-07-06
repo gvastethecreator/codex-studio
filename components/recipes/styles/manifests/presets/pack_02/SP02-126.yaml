@@ -13,30 +13,87 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: >-
-    Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion, callout
-    graphics without readable text
+    Late Night Infomercial Gloss acts as a transferable cinematic-media router: start from
+    Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion,
+    callout graphics without readable text, Split layout, callout shapes, hard gloss, overlit demo,
+    no readable text and broadcast-media system built from signal texture, studio or field capture,
+    graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then apply
+    the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Before-after split logic, pointing callout shapes, product-demo center framing, exaggerated benefit
-    composition
-  color_and_tone: Hotline red, bargain yellow, electric blue, clean white, plastic chrome, saturated orange
-  lighting_and_shadow: Overbright studio key, hard tabletop reflection, sparkle highlights, no subtle shadow
-  texture_and_material: Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface
-  camera_and_composition: Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop
-  atmosphere_and_mood: Urgent, salesy, artificial, enthusiastic
-  rendering_and_quality: Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity
-  key_features: Split layout, callout shapes, hard gloss, overlit demo, no readable text
+    Transform any prompt subject through Before-after split logic, pointing callout shapes,
+    product-demo center framing, exaggerated benefit composition; preserve the requested subject
+    while treating it as a broadcast capture, package segment, demo frame, replay, surveillance
+    feed, music-video signal, or live information object, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Hotline red, bargain yellow, electric blue, clean white, plastic chrome,
+    saturated orange; use color through signal-safe palettes, studio blue, warning red, chroma
+    spill, VHS drift, SD primaries, radar overlays, or cheap late-night product gloss, with
+    deliberate value grouping, accent control, and process-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Overbright studio key, hard tabletop reflection, sparkle highlights, no
+    subtle shadow; shape light through even studio key, practical video exposure, screen glow,
+    floodlight, surveillance flatness, confessional softness, or signal-break flicker, so exposure
+    and shadow structure support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set surface; surface
+    detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key
+    edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Split-screen comparison, zoom burst, callout bubble shapes,
+    oversaturated close crop; compose through safe-title zones, lower-third-like geometry, split
+    screens, scorebug rhythm, crawl lanes, multicam framing, or video-package layout without
+    readable text dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing
+    the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Urgent, salesy, artificial, enthusiastic, mood carried by Late Night Infomercial
+    Gloss media process, signal pressure, and visual restraint; derive mood from live urgency, cheap
+    sincerity, public-access awkwardness, sales pressure, institutional watching, stadium tension,
+    or music-video rebellion, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Persuasive, loud, overproduced-on-a-budget, glossy TV sales clarity; finish as
+    coherent broadcast signal with clean graphic hierarchy, intentional compression, and no anchor,
+    desk, logo, UI screenshot, or readable caption requirement, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Late-night infomercial broadcast, overlit demonstration gloss, cheap miracle-product persuasion,
+    callout graphics without readable text; Split layout, callout shapes, hard gloss, overlit demo,
+    no readable text; Hotline red, bargain yellow, electric blue, clean white, plastic chrome,
+    saturated orange; Plastic gloss, camcorder sharpness, compressed color, cheap acrylic set
+    surface; Split-screen comparison, zoom burst, callout bubble shapes, oversaturated close crop
   creative_brief: >-
-    Use late-night infomercial gloss as treatment: overlit demo clarity, split-screen comparison, hard plastic
-    shine, callout shapes, saturated bargain colors, and camcorder sharpness. Avoid specific products,
-    presenters, phone numbers, or readable sales copy. The style should make any subject feel aggressively
-    demonstrated.
+    Apply Late Night Infomercial Gloss as a cinematic-media preset over prompt X: preserve the
+    user's requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Late-night infomercial broadcast, overlit
+    demonstration gloss, cheap miracle-product persuasion, callout graphics without readable text,
+    Split layout, callout shapes, hard gloss, overlit demo, no readable text, Plastic gloss,
+    camcorder sharpness, compressed color, cheap acrylic set surface without requiring the card
+    image's original subject.
 avoidRules:
   - subtle lighting
   - tasteful minimalism
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - anchor requirement
+  - desk requirement
+  - readable captions
+  - logo package
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-126.webp
 attributes:
-  negativePrompt: subtle lighting, tasteful minimalism
+  negativePrompt: >-
+    subtle lighting, tasteful minimalism, official card scene, fixed thumbnail subject, prompt
+    replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage,
+    uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

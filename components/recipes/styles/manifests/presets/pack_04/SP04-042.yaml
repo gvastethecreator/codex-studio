@@ -13,35 +13,89 @@ tags:
   - editorial-and-poster
 visualDna:
   aesthetic: >-
-    Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic
-    square-format image tension
+    Album Cover (Surreal) acts as a transferable illustration router: start from Surreal music-cover
+    style with conceptual visual paradoxes, dream-logic symbolism, and iconic square-format image
+    tension, Square-cover composition, symbolic juxtaposition engine, prismatic accent system,
+    impossible-space staging and editorial graphic system built from poster hierarchy, symbolic
+    compression, typography-as-shape, reproduction limits, and immediate visual argument, then apply
+    the visual behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Sharp-edged geometric motifs balanced with soft surreal transitions, symbolic object juxtaposition, and
-    clean silhouette punctuation
+    Transform any prompt subject through Sharp-edged geometric motifs balanced with soft surreal
+    transitions, symbolic object juxtaposition, and clean silhouette punctuation; preserve the
+    requested subject while converting it into emblem, poster form, editorial metaphor, collage
+    fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette,
+    pose, object function, or setting legible.
   color_and_tone: >-
-    Prismatic spectral accents over controlled dark bases, uncanny complementary pairings, and dream-state
-    tonal discontinuities
-  lighting_and_shadow: Impossible-source illumination with haloed glows, selective hard-edge highlights, and surreal depth cues
-  texture_and_material: Fine analog-photo grain with matte print character and subtle collage-surface irregularity
+    Build color with Prismatic spectral accents over controlled dark bases, uncanny complementary
+    pairings, and dream-state tonal discontinuities; use color as communication pressure: ink
+    plates, propaganda contrast, deco metallic restraint, psychedelic vibration, Bauhaus primaries,
+    vector flatness, or vintage print fade, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Impossible-source illumination with haloed glows, selective hard-edge
+    highlights, and surreal depth cues; make light serve graphic hierarchy through flat poster
+    contrast, airbrush gradients, screenprint layers, symbolic rays, collage mismatch, or painted
+    cover drama, so value structure supports the illustration process and does not overwrite the
+    requested content.
+  texture_and_material: >-
+    Render Fine analog-photo grain with matte print designed subjects and subtle collage-surface
+    irregularity; surface detail should reveal screenprint ink, risograph grain, paper stock,
+    cut-paper edges, vector fields, album-cover wear, or editorial print finish, keeping material
+    scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Non-Euclidean object relationships and paradox perspective logic sustaining deliberate visual
-    disorientation
-  atmosphere_and_mood: Mysterious, contemplative, strange, immersive, hypnotic
+    Structure the image through Non-Euclidean object relationships and paradox perspective logic
+    sustaining deliberate visual disorientation; compose through graphic hierarchy, diagonal force,
+    asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion elongation
+    without readable slogan dependency, with scale, spacing, edge rhythm, and visual hierarchy doing
+    the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Mysterious, contemplative, strange, immersive, hypnotic; derive mood from
+    propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia,
+    music-poster grit, or cover-story seduction, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central metaphor, and
-    high-impact square readability
-  key_features: Square-cover composition, symbolic juxtaposition engine, prismatic accent system, impossible-space staging
+    Finish with Concept-forward cover rendering prioritizing symbolic ambiguity, memorable central
+    metaphor, and high-impact square readability; finish as deliberate graphic communication with
+    crisp shape logic, controlled print artifacts, and no random poster text or literal
+    advertisement clutter, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
+  key_features: >-
+    Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and iconic
+    square-format image tension; Square-cover composition, symbolic juxtaposition engine, prismatic
+    accent system, impossible-space staging; Prismatic spectral accents over controlled dark bases,
+    uncanny complementary pairings, and dream-state tonal discontinuities; Fine analog-photo grain
+    with matte print designed subjects and subtle collage-surface irregularity; Non-Euclidean object
+    relationships and paradox perspective logic sustaining deliberate visual disorientation
   creative_brief: >-
-    Apply surreal album-cover grammar to any input: square-format tension, symbolic paradox, impossible
-    lighting, prismatic accents, and matte print mystery should make the subject iconic without requiring
-    bands, records, portraits, instruments, landscapes, or canonical album motifs.
+    Apply Album Cover (Surreal) as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Surreal music-cover style with conceptual visual paradoxes, dream-logic symbolism, and
+    iconic square-format image tension, Square-cover composition, symbolic juxtaposition engine,
+    prismatic accent system, impossible-space staging, Fine analog-photo grain with matte print
+    designed subjects and subtle collage-surface irregularity without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - boring
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - random poster text
+  - literal ad layout
+  - stock vector blandness
+  - weak graphic hierarchy
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-042.webp
 attributes:
-  negativePrompt: photo, boring
+  negativePrompt: >-
+    photo, boring, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random
+    poster text, literal ad layout, stock vector blandness, weak graphic hierarchy
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

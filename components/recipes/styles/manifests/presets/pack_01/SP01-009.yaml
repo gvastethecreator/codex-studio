@@ -12,25 +12,88 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: High key studio portraiture, bright and airy photography
-  subject_treatment: Low contrast edges, soft features, minimal shadow on primary forms
-  color_and_tone: Predominantly white and pastel tones, pale material tones, pure white background
-  lighting_and_shadow: Overexposed wrap-around lighting, multiple softboxes, shadowless environment
-  texture_and_material: Soft airy textures, smooth surfaces, bright fabrics or pale materials
-  camera_and_composition: Blown out highlights in the background, clean and minimal framing
-  atmosphere_and_mood: Happy, pure, clean, optimistic, ethereal
-  rendering_and_quality: Commercial beauty polish, crisp but soft, high resolution
+  aesthetic: >-
+    High Key Portrait acts as a transferable photographic style router: begin from High key studio
+    portraiture, bright and airy photography, studio subject hierarchy, controlled portrait optics,
+    believable retouching, and intentional backdrop behavior, and portrait and studio photography
+    system built from lens discipline, subject hierarchy, controlled retouching, and believable
+    surface detail, then apply the photographic behavior to prompt X instead of recreating a fixed
+    card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Low contrast edges, soft features, minimal shadow on primary
+    forms; preserve prompt identity while using focal priority, flattering or deliberately
+    institutional distance, surface realism, and edge control without requiring a human face,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Predominantly white and pastel tones, pale material tones, pure white depth field;
+    grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled
+    contrast as photographic capture decisions, with value separation and white balance choices that
+    feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Overexposed wrap-around lighting, multiple softboxes, shadowless environment; make key,
+    fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving
+    believable exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Soft airy textures, smooth surfaces, bright fabrics or pale materials; retain pores,
+    fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable
+    photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt
+    content.
+  camera_and_composition: >-
+    Compose through Blown out highlights in the depth field, clean and minimal framing; use portrait
+    lens compression, central authority, intimate framing distance, frontal ID geometry, or
+    editorial negative space without forcing one sitter, with lens distance, depth, timing, and
+    focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Happy, pure, clean, optimistic, ethereal; derive mood from proximity, pose
+    pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
+    preset changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Commercial beauty polish, crisp but soft, high resolution; finish as real
+    photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly
+    or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing
+    natural grain where the preset needs it.
   creative_brief: >-
-    Apply high-key portrait lighting to any subject: white wraparound exposure, pastel softness, clean minimal
-    framing, near-shadowless form, and airy optimism without requiring skin or figure.
+    Apply High Key Portrait as a photographic preset over prompt X: preserve the user's requested
+    subject, then route High key studio portraiture, bright and airy photography, Predominantly
+    white and pastel tones, pale material tones, pure white depth field, Overexposed wrap-around
+    lighting, multiple softboxes, shadowless environment, Soft airy textures, smooth surfaces,
+    bright fabrics or pale materials, and Blown out highlights in the depth field, clean and minimal
+    framing through optics, exposure, palette, surface response, timing, and finish without
+    requiring the card image's original subject.
+  key_features: >-
+    High key studio portraiture, bright and airy photography; studio subject hierarchy, controlled
+    portrait optics, believable retouching, and intentional backdrop behavior; Predominantly white
+    and pastel tones, pale material tones, pure white depth field; Overexposed wrap-around lighting,
+    multiple softboxes, shadowless environment; Blown out highlights in the depth field, clean and
+    minimal framing
 avoidRules:
   - dark
   - shadows
   - black
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-009.webp
 attributes:
-  negativePrompt: dark, shadows, black
+  negativePrompt: >-
+    dark, shadows, black, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
+    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, mannequin
+    skin, over-smoothed plastic retouching, distorted anatomy, generic beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

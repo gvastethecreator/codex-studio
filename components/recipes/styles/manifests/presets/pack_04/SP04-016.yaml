@@ -13,31 +13,86 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: >-
-    Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist editorial
-    framing
+    Tech Noir Comic acts as a transferable illustration router: start from Graphic tech-noir comic
+    style with stark contrast, synthetic chroma accents, and moody futurist editorial framing,
+    Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion
+    bands, sharp graphic silhouettes and comic-illustration system built from ink hierarchy,
+    panel-era color, contour exaggeration, print artifacts, and sequential-art readability, then
+    apply the visual behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Knife-edged contour work, selective heavy blacks, angular panel-ready geometry, restrained crosshatch
-    texture
-  color_and_tone: Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse neon highlight punctuation
-  lighting_and_shadow: Chiaroscuro with luminous edge accents, vapor-soft diffusion pockets, hard silhouette separation
-  texture_and_material: Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge glints
-  camera_and_composition: Perspective compression tuned for dramatic panel composition and foreground-background tension
-  atmosphere_and_mood: Ominous, electric, tense, sophisticated, anti-utopian
-  rendering_and_quality: High-impact noir-comic rendering with poster-grade readability and controlled cinematic bloom
+    Transform any prompt subject through Knife-edged contour work, selective heavy blacks, angular
+    panel-ready geometry, restrained crosshatch texture; preserve the requested subject while
+    translating form into panel-ready silhouettes, expressive contour weight, stylized anatomy,
+    speed emphasis, or graphic restraint only when the preset calls for it, keeping the requested
+    identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Black-dominant base, cyan-magenta duotone energy, cool indigo shadows, sparse
+    neon highlight punctuation; treat color as comic production language: four-color plates, limited
+    spot color, manga monochrome, digital flats, noir contrast, webtoon gradients, or painted page
+    atmosphere, with deliberate value grouping, accent control, and process-specific limits rather
+    than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Chiaroscuro with luminous edge accents, vapor-soft diffusion pockets, hard
+    silhouette separation; make light read through ink spotting, cel-like value blocks, dramatic rim
+    separation, flat print fill, or painted page modeling rather than generic studio illumination,
+    so value structure supports the illustration process and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Slick reflective surfaces, particulate haze, coarse urban grit abstraction, chromed edge
+    glints; surface detail should reveal paper tooth, newsprint dots, screen tones, digital brush
+    layers, ink pools, gutter discipline, or pixel cells at a scale that supports the drawing,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Perspective compression tuned for dramatic panel composition and
+    near field-depth field tension; compose with panel logic, silhouette clarity, speech-shape
+    space, page rhythm, close-up drama, or scroll pacing without requiring a fixed comic-page scene,
+    with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Ominous, electric, tense, sophisticated, anti-utopian; derive mood from era, genre
+    pressure, satire, melodrama, horror obsession, pulp energy, or graphic-novel seriousness,
+    letting the style alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with High-impact noir-comic rendering with poster-grade readability and controlled
+    cinematic bloom; finish with clear ink decisions, readable stylization, controlled artifacting,
+    and no generic superhero costume or random comic text replacing the prompt, clean denoised
+    surfaces where appropriate, and enough process evidence to make the style recognizable.
   key_features: >-
-    Duotone neon contrast, heavy shadow architecture, reflective black planes, vapor diffusion bands, sharp
-    graphic silhouettes
+    Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist
+    editorial framing; Duotone neon contrast, heavy shadow architecture, reflective black planes,
+    vapor diffusion bands, sharp graphic silhouettes; Black-dominant base, cyan-magenta duotone
+    energy, cool indigo shadows, sparse neon highlight punctuation; Slick reflective surfaces,
+    particulate haze, coarse urban grit abstraction, chromed edge glints; Perspective compression
+    tuned for dramatic panel composition and near field-depth field tension
   creative_brief: >-
-    Apply tech-noir comic language to any input: contrast hierarchy, cyan-magenta duotone control, reflective
-    black planes, vapor diffusion bands, and sharp graphic silhouettes should define identity without locking
-    to alleys, skylines, screens, vehicles, detectives, or any specific place.
+    Apply Tech Noir Comic as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Graphic tech-noir comic style with stark contrast, synthetic chroma accents, and moody futurist
+    editorial framing, Duotone neon contrast, heavy shadow architecture, reflective black planes,
+    vapor diffusion bands, sharp graphic silhouettes, Slick reflective surfaces, particulate haze,
+    coarse urban grit abstraction, chromed edge glints without requiring the card image's original
+    subject.
 avoidRules:
   - daylight
   - nature
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic superhero costume
+  - random speech text
+  - fake lettering
+  - photo-real costume render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-016.webp
 attributes:
-  negativePrompt: daylight, nature
+  negativePrompt: >-
+    daylight, nature, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    superhero costume, random speech text, fake lettering, photo-real costume render
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

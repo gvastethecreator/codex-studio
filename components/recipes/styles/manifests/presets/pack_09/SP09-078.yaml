@@ -12,29 +12,61 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Photovoltaic cell
-  subject_treatment: Grid lines
-  color_and_tone: Dark Blue/Black
-  lighting_and_shadow: Anti-reflective
-  texture_and_material: Glass grid
-  camera_and_composition: 'Compose for Solar Panel using its key spatial cues: Grid.'
-  atmosphere_and_mood: Modern, eco
-  rendering_and_quality: Tech, green energy
-  key_features: Grid
+  aesthetic: >-
+    Solar Panel treats fabrication as visible style language: start from Photovoltaic cell, Glass
+    grid, and Grid, then turn manufacturing process, tooling marks, seams, tolerances, and
+    industrial material behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Grid lines: preserve identity and pose while letting forms
+    carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Dark Blue/Black as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Anti-reflective define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Solar Panel without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Glass grid through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Grid as reusable material rhythm: macro-friendly for texture tasks, but able to
+    wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Modern, eco by using use, fabrication, utility, and cultural material association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Tech, green energy material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Photovoltaic cell; Grid lines; Glass grid; Anti-reflective; Grid
   creative_brief: >-
-    Summon the technological lattice of photovoltaic cells where a grid of dark blue-black glass rectangles
-    maps the surface into modules of silent light harvesting, the anti-reflective coating creating depth that
-    absorbs rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency
-    across the dark field. Capture the beauty of energy infrastructure, the quiet face of the electric future.
-    Use Solar Panel as portable surface/render behavior over any input: map its texture, light response, edge
-    wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
-    macro tile, wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Solar Panel as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Summon the technological lattice of
+    photovoltaic cells where a grid of dark blue-black glass rectangles maps the surface into
+    modules of silent light harvesting, the anti-reflective coating creating depth that absorbs
+    rather than returns the gaze. The thin grid lines should trace a faint geometry of efficiency
+    across the dark field. Capture the beauty of energy infrastructure, the quiet face of the
+    electric future. Use Solar Panel as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene
+    where the material naturally appears.
 avoidRules:
   - window
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-078.webp
 attributes:
-  negativePrompt: window
+  negativePrompt: window, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

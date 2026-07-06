@@ -12,28 +12,86 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor
-  subject_treatment: Straight silhouette, dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation
-  color_and_tone: Gold, Black, Silver, champagne, oyster, Art Deco jade, peacock, plum
-  lighting_and_shadow: Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam
-  texture_and_material: Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon
+  aesthetic: >-
+    Roaring 20s (Flapper) operates as a portable fashion-costume router: combine Jazz-age
+    eveningwear, speakeasy decadence, Art Deco nocturne splendor with period and mythic costume
+    logic with era silhouette, regalia structure, textile craft, and ceremonial proportion, so the
+    preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal
+    garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
+    plate, embroider, crown, wrap, or ceremonialize through Straight silhouette, dropped-waist
+    column, scalloped hem, fringe-cascade movement, T-strap elongation; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
+    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
+    material color believable, and palette behavior attached to the subject instead of pasted
+    wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Chandelier sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam plus
+    museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and
+    silhouette hierarchy as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Beaded fringe, sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal,
+    velvet ribbon plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery,
+    trim, and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Roaring 20s (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap
-    elongation, bead-fringe rhythm, Deco crystal accents.
-  atmosphere_and_mood: Retro, champagne-fizz excitement, dance-marathon energy, illicit-night thrill
-  rendering_and_quality: Vintage eveningwear polish, speakeasy glamour, Deco-era elegance
-  key_features: Cloche cues, feather headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents
+    Compose with Compose for Roaring 20s (Flapper) using its key spatial cues: Cloche cues, feather
+    headband logic, T-strap elongation, bead-fringe rhythm, Deco crystal accents plus regal posture
+    logic, era silhouette, layered garment structure, ornament placement, and readable period
+    identity as reusable fashion framing grammar, allowing portraits, objects, creatures,
+    environments, action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
+    pressure, or folk memory; the tone should feel specific to Roaring 20s (Flapper) while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
+    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Jazz-age eveningwear, speakeasy decadence, Art Deco nocturne splendor; Straight silhouette,
+    dropped-waist column, scalloped hem, fringe-cascade movement, T-strap elongation; Beaded fringe,
+    sequined net, silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon; Chandelier
+    sparkle, feathered edge glow, champagne-bubble ambience, soft smoky gleam; Compose for Roaring
+    20s (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap
+    elongation, bead-fringe rhythm, Deco crystal accents
   creative_brief: >-
-    Give the input flapper-era glamour: dropped waists, beaded fringe, scalloped hems, sequined net, cloche
-    cues, ostrich trim and Art Deco champagne-black geometry. Keep speakeasy thrill and jazz-age exuberance as
-    surface energy only, not as a party, dancer, cigarette-holder prop, portrait body or Gatsby-ball scene.
+    Use Roaring 20s (Flapper) after prompt X as a transferable fashion/costume layer: prompt X
+    supplies subject, motion, setting, tone, and intensity, while the preset supplies Jazz-age
+    eveningwear, speakeasy decadence, Art Deco nocturne splendor, Straight silhouette, dropped-waist
+    column, scalloped hem, fringe-cascade movement, T-strap elongation, Beaded fringe, sequined net,
+    silk charmeuse, ostrich-feather trim, Art Deco crystal, velvet ribbon, Chandelier sparkle,
+    feathered edge glow, champagne-bubble ambience, soft smoky gleam, Compose for Roaring 20s
+    (Flapper) using its key spatial cues: Cloche cues, feather headband logic, T-strap elongation,
+    bead-fringe rhythm, Deco crystal accents plus corsetry, armor plates, robes, sashes, pleats,
+    trim, brocade, regalia layers, fastenings, and historically legible cut, palette behavior, light
+    response, material treatment, silhouette grammar, and finish discipline without requiring one
+    body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - long dress
   - modern
+  - cheap costume rental
+  - wrong era mashup
+  - plastic armor
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-031.webp
 attributes:
-  negativePrompt: long dress, modern, party scene, dancer, cigarette-holder prop, portrait body
+  negativePrompt: >-
+    long dress, modern, cheap costume rental, wrong era mashup, plastic armor, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

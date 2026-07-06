@@ -13,39 +13,82 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Vectrex-console vector-CRT display, pure-white-glowing-lines on pitch-black-screen,
-    single-color-vector-drawing, Asteroids and Tempest as wireframe anchors,
-    analog-electron-beam-drawing-in-real-time, plastic-screen-overlay-color-gels for faux-color,
-    no-pixels-no-bitmap-just-lines, 1982-console-limitation-beauty, cathode-ray-tube-vector-magic
+    Vectrex Vector Display acts as a transferable art-medium router: start from Vectrex console
+    vector CRT display, pure white glowing lines on pitch black screen, single color vector drawing,
+    Asteroids and Tempest as wireframe anchors, analog electron beam drawing in real time, plastic
+    screen overlay color gels for faux color, no pixels no bitmap just lines, 1982 console
+    limitation beauty, cathode ray tube vector magic, Pure white vector lines on black, wireframe
+    only geometry, CRT phosphor glow bloom, plastic screen overlay framing, single color display,
+    line intersection brightening, electron beam persistence and hardware-constrained game-visual
+    system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld
+    artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Pure-glowing-vector-lines-only, wireframe-geometry, electron-beam-drawn-contours, no-filled-surfaces,
-    transparency-through-wireframe, line-brightness-peaking-at-stroke-centers
+    Transform any prompt subject through Pure glowing vector lines only, wireframe geometry,
+    electron beam drawn contours, no filled surfaces, transparency through wireframe, line
+    brightness peaking at stroke centers; preserve the prompt subject while translating it into
+    tile, sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior,
+    keeping the requested identity, silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    Phosphor-white-on-void-black, Vectrex-screen-overlay blue or green or red transparent-plastic-gel,
-    single-color-per-display, no-gradients-pure-beam
+    Build color with Phosphor white on void black, Vectrex screen overlay blue or green or red
+    transparent plastic gel, single color per display, no gradients pure beam; use color through
+    hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks,
+    copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping,
+    accent control, and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Self-illuminated-phosphor-glow, brighter-at-line-intersections, beam-persistence-afterglow,
-    CRT-screen-curvature-reflective-light
+    Handle light through Self illuminated phosphor glow, brighter at line intersections, beam
+    persistence afterglow, CRT screen curvature reflective light; make light emerge from display
+    technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector
+    beam brightness, so value structure supports the medium and does not overwrite the requested
+    content.
   texture_and_material: >-
-    CRT-phosphor-glow-bloom, vector-display-line-artifact, transparent-plastic-screen-overlay-scratches,
-    electron-beam-persistence-trail, analog-vector-drift-wobble
+    Render CRT phosphor glow bloom, vector display line artifact, transparent plastic screen overlay
+    scratches, electron beam persistence trail, analog vector drift wobble; surface detail should
+    show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT
+    persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy
+    filler texture.
   camera_and_composition: >-
-    Vector-wireframe-perspective, infinite-black-void-space, rotating-coordinate structures,
-    CRT-screen-curvature, plastic-overlay-frame
+    Structure the image through Vector wireframe perspective, infinite black void space, rotating
+    coordinate structures, CRT screen curvature, plastic overlay frame; compose through tile maps,
+    sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI
+    geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Retro-futuristic, analog-electronic, arcade-darkness, vector-glow-hypnosis, pre-pixel-computing soul,
-    abstract screen ritual
+    Keep the mood Retro futuristic, analog electronic, arcade darkness, vector glow hypnosis, pre
+    pixel computing soul, abstract screen ritual; derive mood from hardware limitation, arcade
+    spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D
+    instability, letting the medium alter interpretation without demanding a specific story,
+    location, or character.
   rendering_and_quality: >-
-    Vectrex-vector-display aesthetic, analog-CRT-beam-beauty, wireframe-only-rendering, 1982-vector-console
-    nostalgia
+    Finish with Vectrex vector display aesthetic, analog CRT beam beauty, wireframe only rendering,
+    1982 vector console nostalgia; finish with faithful era constraints, crisp readability at small
+    scale, and no modern high-resolution smoothing unless the preset asks for baked pre-rendering,
+    clean denoised surfaces where appropriate, and enough craft evidence to make the medium
+    recognizable.
   key_features: >-
-    Pure-white-vector-lines-on-black, wireframe-only-geometry, CRT-phosphor-glow-bloom,
-    plastic-screen-overlay-framing, single-color-display, line-intersection brightening,
-    electron-beam-persistence
+    Vectrex console vector CRT display, pure white glowing lines on pitch black screen, single color
+    vector drawing, Asteroids and Tempest as wireframe anchors, analog electron beam drawing in real
+    time, plastic screen overlay color gels for faux color, no pixels no bitmap just lines, 1982
+    console limitation beauty, cathode ray tube vector magic; Pure white vector lines on black,
+    wireframe only geometry, CRT phosphor glow bloom, plastic screen overlay framing, single color
+    display, line intersection brightening, electron beam persistence; Phosphor white on void black,
+    Vectrex screen overlay blue or green or red transparent plastic gel, single color per display,
+    no gradients pure beam; CRT phosphor glow bloom, vector display line artifact, transparent
+    plastic screen overlay scratches, electron beam persistence trail, analog vector drift wobble;
+    Vector wireframe perspective, infinite black void space, rotating coordinate structures, CRT
+    screen curvature, plastic overlay frame
   creative_brief: >-
-    Pure white phosphor lines float on glass-black void, tracing any subject as a continuous vector signal.
-    Plastic overlay gels tint the monochrome beam, turning abstraction into a screen ritual made from one
-    color, one beam and no filled surface.
+    Apply Vectrex Vector Display as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Vectrex console vector CRT display, pure white glowing lines on pitch black screen, single color
+    vector drawing, Asteroids and Tempest as wireframe anchors, analog electron beam drawing in real
+    time, plastic screen overlay color gels for faux color, no pixels no bitmap just lines, 1982
+    console limitation beauty, cathode ray tube vector magic, Pure white vector lines on black,
+    wireframe only geometry, CRT phosphor glow bloom, plastic screen overlay framing, single color
+    display, line intersection brightening, electron beam persistence, CRT phosphor glow bloom,
+    vector display line artifact, transparent plastic screen overlay scratches, electron beam
+    persistence trail, analog vector drift wobble without requiring the card image's original
+    subject.
 avoidRules:
   - raster
   - pixel
@@ -59,10 +102,25 @@ avoidRules:
   - solid
   - bitmap
   - shaded
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-091.webp
 attributes:
-  negativePrompt: raster, pixel, filled, color, modern, 3d, photo, smooth, realistic, solid, bitmap, shaded
+  negativePrompt: >-
+    raster, pixel, filled, color, modern, 3d, photo, smooth, realistic, solid, bitmap, shaded, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

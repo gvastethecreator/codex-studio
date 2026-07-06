@@ -13,41 +13,84 @@ tags:
   - anime
 visualDna:
   aesthetic: >-
-    Ink-driven anime noir language with psychological austerity, midnight isolation, and clue-like focal
-    tension
+    Ink Noir Detective operates as a portable anime-lifestyle router: combine Ink Noir Detective
+    identity cues through Trenchcoat like silhouette authority; central evidence like anchor;
+    striped shadow patterning; and crimson clue emphasis logic; Ink Noir Detective anime style cues;
+    Ink driven anime noir language with psychological austerity with core anime character and
+    adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre
+    clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after
+    prompt X rather than a required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Hard-edged contour blocks, bold black massing, angular coat-like silhouettes, and graphic shadow slicing
-    inspired by crime-poster composition
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or
+    surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Monochrome black-white dominance with restrained crimson accent channels reserved for focal evidence or
-    emotional stress points
+    Map color through clear cel values, saturated accents, stable skin or material midtones, sky or
+    neon support color, and disciplined complementary contrast; keep cel values readable, accent
+    roles intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Severe lateral key, venetian-shadow banding, wet specular cuts, and controlled negative fill for noir
-    depth retention
-  texture_and_material: Rough matte paper-like grain, light drizzle particulate, damp sheen, and low-gloss textile surfaces
-  camera_and_composition: Tight focal framing with compressed depth to heighten claustrophobic deduction mood
-  atmosphere_and_mood: Intriguing, solitary, tense, and cerebral
+    Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and
+    clean value separation; lighting should clarify expression, silhouette, material, and emotional
+    rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
+  texture_and_material: >-
+    Render flat cel fills, painted distant plane softness, limited grain, clean ink edges,
+    controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
+  camera_and_composition: >-
+    Compose through silhouette-priority framing, moderate dynamic lensing, readable action or
+    emotion lanes, and subject-first depth without required genre staging as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift,
+    or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe,
+    comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime
+    lineage.
   rendering_and_quality: >-
-    Poster-grade anime noir rendering with high legibility, disciplined value contrast, and cinematic
-    restraint at card scale
+    Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines,
+    denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Trenchcoat-like silhouette authority, central evidence-like anchor, striped shadow patterning, and crimson
-    clue-emphasis logic
+    Trenchcoat like silhouette authority; central evidence like anchor; striped shadow patterning;
+    and crimson clue emphasis logic; Ink Noir Detective anime style cues; Ink driven anime noir
+    language with psychological austerity
   creative_brief: >-
-    Use Ink Noir Detective as style anchor for cerebral shadow tension: monochrome ink massing, selective
-    crimson focal accents, and hard lateral shadow architecture should transfer without requiring detective,
-    evidence, trenchcoat, city, or crime scene.
+    Use Ink Noir Detective after prompt X as a transferable anime character/lifestyle layer: prompt
+    X supplies subject, action, setting, tone, and intensity, while the preset supplies Trenchcoat
+    like silhouette authority, central evidence like anchor, striped shadow patterning, and crimson
+    clue emphasis logic, Ink Noir Detective anime style cues, Ink driven anime noir language with
+    psychological austerity, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - photoreal
-  - colorful-rainbow
-  - 3d-render
+  - colorful rainbow
+  - 3d render
   - watermark
   - text
   - logo
+  - generic anime filter
+  - canon cast copy
+  - source frame look composition
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-017.webp
 attributes:
-  negativePrompt: photoreal, colorful-rainbow, 3d-render, watermark, text, logo
+  negativePrompt: >-
+    photoreal, colorful rainbow, 3d render, watermark, text, logo, generic anime filter, canon cast
+    copy, source frame look composition, canon character copy, title scene copy, literal sample card
+    setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay,
+    3D render look, copied franchise costume, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

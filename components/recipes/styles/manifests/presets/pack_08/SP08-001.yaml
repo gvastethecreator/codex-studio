@@ -12,28 +12,84 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language
-  subject_treatment: Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette
-  color_and_tone: Bold jewel tones, artistic color-blocking, expensive saturated hues, deep emerald, sapphire
-  lighting_and_shadow: High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze
-  texture_and_material: Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth
-  camera_and_composition: Exaggerated silhouette
-  atmosphere_and_mood: Dramatic, expensive, artistic, reverent silence, aspirational awe, museum-grade poise
-  rendering_and_quality: Couture editorial polish, ceremonial spectacle, haute-couture precision
-  key_features: Exaggerated couture silhouette, sculpted volume, editorial restraint, avant-garde headpiece cues
+  aesthetic: >-
+    Haute Couture operates as a portable fashion-costume router: combine Avant-garde couture
+    grammar, sculptural cloth spectacle, high-drama fashion object language with contemporary
+    fashion styling with fit control, editorial polish, wearable silhouette, and modern wardrobe
+    hierarchy, so the preset supplies styling behavior rather than a fixed outfit card, required
+    wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer,
+    streamline, accessorize, polish, or simplify through Structural, architectural shapes, sculpted
+    shoulders, dramatic volume, cocoon silhouette; identity stays readable as silhouette, fit,
+    layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through modern neutrals, controlled accent color, textile value separation,
+    skin-adjacent warmth, and editorial contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use High-contrast editorial key light, dramatic shadow falloff, controlled atelier haze plus
+    fashion editorial light with fabric sheen, controlled shadow, polished skin or surface response,
+    and clean silhouette reads as the styling light contract, revealing cut, drape, surface
+    response, trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Silk duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth plus
+    woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures,
+    and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
+    elemental edges, or body-surface treatment coherent across the whole prompt.
+  camera_and_composition: >-
+    Compose with lookbook clarity, runway silhouette rhythm, full-form readability, crop discipline,
+    and styling hierarchy as reusable fashion framing grammar, allowing portraits, objects,
+    creatures, environments, action, and abstract prompts to inherit styling without one required
+    pose.
+  atmosphere_and_mood: >-
+    Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional
+    or event-specific presence; the tone should feel specific to Haute Couture while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with high-end styling clarity, crisp garment edges, believable fit, controlled
+    retouching, and no catalog blandness; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Avant-garde couture grammar, sculptural cloth spectacle, high-drama fashion object language;
+    Structural, architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette; Silk
+    duchesse, ostrich feathers, hand-beaded embroidery, organza layers, tulle froth; High-contrast
+    editorial key light, dramatic shadow falloff, controlled atelier haze; lookbook clarity, runway
+    silhouette rhythm, full-form readability, crop discipline, and styling hierarchy
   creative_brief: >-
-    Treat the input as an impossible couture object where cloth behaves like sculpture. Let seams, beadwork,
-    feathers, organza and tulle exaggerate the silhouette without demanding runway logic, fashion-week staging
-    or fixed model pose. Light should carve volume with museum severity, turning the subject into wearable
-    architecture.
+    Use Haute Couture after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Avant-garde couture
+    grammar, sculptural cloth spectacle, high-drama fashion object language, Structural,
+    architectural shapes, sculpted shoulders, dramatic volume, cocoon silhouette, Silk duchesse,
+    ostrich feathers, hand-beaded embroidery, organza layers, tulle froth, High-contrast editorial
+    key light, dramatic shadow falloff, controlled atelier haze, lookbook clarity, runway silhouette
+    rhythm, full-form readability, crop discipline, and styling hierarchy plus tailoring lines,
+    garment fit, hem placement, accessory restraint, layered proportion, and intentional styling
+    choices, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - ready-to-wear
   - cheap
   - simple
+  - generic catalog outfit
+  - brand logo styling
+  - bad garment fit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-001.webp
 attributes:
-  negativePrompt: ready-to-wear, cheap, simple
+  negativePrompt: >-
+    ready-to-wear, cheap, simple, generic catalog outfit, brand logo styling, bad garment fit, fixed
+    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
+    watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

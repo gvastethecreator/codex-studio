@@ -12,28 +12,83 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: 70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision
+  aesthetic: >-
+    Kung Fu Studio Epic (Shaw Brothers) acts as a transferable cinematic-media router: start from
+    70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision, Wide staging,
+    crash zoom, choreographic rhythm and cinematic genre system built from lens grammar, film stock,
+    blocking pressure, edit rhythm, production design, grain, and color grade, then apply the media
+    behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Kung Fu Studio Epic (Shaw Brothers):
-    casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and
-    broadcast grammar without locking to one plot beat.
-  color_and_tone: Saturated primaries, golden palace, deep red banners
-  lighting_and_shadow: Studio set, flat broad key, painted backdrop
-  texture_and_material: Film grain, silk sheen, lacquered prop texture, painted set surface
-  camera_and_composition: Snap zoom, crash zoom, dramatic push-in
-  atmosphere_and_mood: Action, classic, rhythmic discipline
-  rendering_and_quality: Choreographed, acrobatic, wire-fu precision, rhythmic combat
-  key_features: Wide staging, crash zoom, choreographic rhythm
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Kung Fu Studio Epic (Shaw Brothers): casting, wardrobe, props, motion cues, and silhouette
+    hierarchy follow 1. Film Genres cinematic and broadcast grammar without locking to one plot
+    beat; preserve the requested subject while staging it as filmed material through blocking,
+    wardrobe pressure, lens distance, movement cues, or genre-era performance texture only when
+    useful, keeping the requested identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Saturated primaries, golden palace, deep red banners; treat color as cinema
+    process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded
+    print, or projection decay, with deliberate value grouping, accent control, and process-specific
+    limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Studio set, flat broad key, painted backdrop; make light feel motivated by
+    cinematic setup through keyed contrast, practical spill, hard noir cuts, musical glow,
+    exploitation underexposure, or analog animation glow, so exposure and shadow structure support
+    the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Film grain, silk sheen, lacquered prop texture, painted set surface; surface detail
+    should reveal film grain, gate weave, scratches, halation, acetate texture, projection damage,
+    optical compositing, or photographed production surfaces, keeping artifact scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Snap zoom, crash zoom, dramatic push-in; compose through lens
+    choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical
+    staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Action, classic, rhythmic discipline, mood carried by Kung Fu Studio Epic (Shaw
+    Brothers) media process, signal pressure, and visual restraint; derive mood from cinematic
+    tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or
+    analog spectacle, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Choreographed, acrobatic, wire-fu precision, rhythmic combat; finish as credible
+    moving-image language with controlled film artifacts, readable subject identity, and no
+    mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    70s studio martial-arts cinema, Shaw Brothers spectacle, acrobatic precision; Wide staging,
+    crash zoom, choreographic rhythm; Saturated primaries, golden palace, deep red banners; Film
+    grain, silk sheen, lacquered prop texture, painted set surface; Snap zoom, crash zoom, dramatic
+    push-in
   creative_brief: >-
-    Shaw Brothers studio style turns any subject into choreographed spectacle: flat painted-set light,
-    saturated primaries, crash zooms, wide staging, silk-sheen color, and rhythmic action precision. Keep
-    martial-cinema energy without forcing fighters, palace sets, weapons, or combat.
+    Apply Kung Fu Studio Epic (Shaw Brothers) as a cinematic-media preset over prompt X: preserve
+    the user's requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through 70s studio martial-arts cinema, Shaw Brothers
+    spectacle, acrobatic precision, Wide staging, crash zoom, choreographic rhythm, Film grain, silk
+    sheen, lacquered prop texture, painted set surface without requiring the card image's original
+    subject.
 avoidRules:
   - modern action
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-010.webp
 attributes:
-  negativePrompt: modern action
+  negativePrompt: >-
+    modern action, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -13,30 +13,60 @@ tags:
   - texture-and-materiality
   - weathering-and-decay
 visualDna:
-  aesthetic: Corroded metal
-  subject_treatment: Pitting
-  color_and_tone: Orange, Brown, Black
-  lighting_and_shadow: Matte
-  texture_and_material: Rough, flaky
-  camera_and_composition: Eaten away
-  atmosphere_and_mood: Decay, heavy
-  rendering_and_quality: Old, abandoned
-  key_features: Random rust
+  aesthetic: >-
+    Rusty Iron turns material failure into the main visual language: start from Corroded metal,
+    Rough, flaky, and Eaten away, then turn damage history, contamination, corrosion, staining,
+    abrasion, and material breakdown into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Pitting: preserve identity and pose while letting forms
+    age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface breakup,
+    thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Orange, Brown, Black as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Matte define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Rusty Iron without hiding the prompt subject.
+  texture_and_material: >-
+    Render Rough, flaky through layer loss, residue buildup, chipped edges, stains, cracks, and
+    uneven surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Eaten away as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Decay, heavy by using neglect, time, moisture, heat, friction, and environmental
+    pressure; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Old, abandoned material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Corroded metal; Pitting; Rough, flaky; Matte; Eaten away
   creative_brief: >-
-    Capture the slow fire of oxidation consuming iron in blooms of orange, umber, and black, a surface that
-    flakes and pits as time eats through what industry once forged. Each rust spot spreads like a bruise,
-    mapping years of exposure into a topography of decay. Render the fierce beauty of abandonment, where time
-    paints with corrosion what fire once shaped. Use Rusty Iron as portable surface/render behavior over any
-    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
-    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
-    the material naturally appears.
+    Route any subject through Rusty Iron as a transferable weathering-and-decay visual system while
+    preserving the prompt's subject, action, and setting. Capture the slow fire of oxidation
+    consuming iron in blooms of orange, umber, and black, a surface that flakes and pits as time
+    eats through what industry once forged. Each rust spot spreads like a bruise, mapping years of
+    exposure into a topography of decay. Render the fierce beauty of abandonment, where time paints
+    with corrosion what fire once shaped. Use Rusty Iron as portable surface/render behavior over
+    any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto
+    the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
+    object, or scene where the material naturally appears.
 avoidRules:
   - new
   - shiny
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-018.webp
 attributes:
-  negativePrompt: new, shiny
+  negativePrompt: new, shiny, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

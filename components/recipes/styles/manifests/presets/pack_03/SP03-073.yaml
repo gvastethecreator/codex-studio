@@ -12,28 +12,77 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Virtual paper
-  subject_treatment: Fold lines
-  color_and_tone: Paper texture, craft-material tones
-  lighting_and_shadow: Shadows between layers, folded depth
-  texture_and_material: Paper grain, craft-cardstock
+  aesthetic: >-
+    Papercraft 3D acts as a transferable CGI-style router: start from Virtual paper, Layered depth,
+    fold crease definition and 3D style system built from modeling language, mesh abstraction,
+    projection rules, topology display, toy material, paper logic, or stylized shader constraints,
+    then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fold lines; preserve the prompt subject while rebuilding it
+    through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds,
+    toon bands, or procedural motion forms only when the preset calls for them, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Paper texture, craft material tones; use color through material simplification,
+    cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion
+    accents, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Shadows between layers, folded depth; shape light through the style
+    constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold
+    light, or retro speculars, so value structure supports the renderer and does not overwrite the
+    requested content.
+  texture_and_material: >-
+    Render Paper grain, craft cardstock; surface detail should show the named construction system;
+    cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or
+    low-poly facets should appear only when they belong to the preset, keeping material scale
+    coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Papercraft 3D: three-quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Creative, delicate, art-project warmth
-  rendering_and_quality: Craft, handmade feel, origami precision
-  key_features: Layered depth, fold-crease definition
+    Structure the image through Lookdev camera for Papercraft 3D: three quarter or orthographic
+    framing, clean silhouette read, material highlights, controlled depth, and vertical card
+    composition; compose through projection, topology readability, object grouping, axis discipline,
+    exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Creative, delicate, art project warmth; derive mood from toy-like clarity,
+    technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural
+    mathematical wonder, letting the renderer alter interpretation without demanding a specific
+    story, location, or character.
+  rendering_and_quality: >-
+    Finish with Craft, handmade feel, origami precision; finish with intentional stylization, clean
+    geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for
+    it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Virtual paper; Layered depth, fold crease definition; Paper texture, craft material tones; Paper
+    grain, craft cardstock; Lookdev camera for Papercraft 3D: three quarter or orthographic framing,
+    clean silhouette read, material highlights, controlled depth, and vertical card composition
   creative_brief: >-
-    Translate the input into papercraft construction: cardstock grain, layered-sheet depth, fold creases, cut
-    edges and warm craft lighting. Keep handmade precision without forcing craft-table context, glue props or
-    a paper-built world.
+    Apply Papercraft 3D as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Virtual paper, Layered depth, fold crease definition, Paper grain, craft
+    cardstock without requiring the card image's original subject.
 avoidRules:
   - realistic
   - fluid
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - accidental photorealism
+  - generic smooth mesh
+  - wrong geometry language
+  - messy topology
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-073.webp
 attributes:
-  negativePrompt: realistic, fluid
+  negativePrompt: >-
+    realistic, fluid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
+    geometry language, messy topology
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

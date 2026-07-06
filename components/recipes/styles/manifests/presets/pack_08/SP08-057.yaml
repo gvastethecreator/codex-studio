@@ -12,28 +12,87 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Tweed tailoring heritage, scholarly restraint, moss-toned country classicism
-  subject_treatment: Herringbone pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm
-  color_and_tone: Brown, Green, loden, chestnut, olive-herringbone, barley-corn, moss
-  lighting_and_shadow: Rainy grey softness, low wool-warmth, flat wool-revealing light
-  texture_and_material: Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining
+  aesthetic: >-
+    Tweed Suit operates as a portable fashion-costume router: combine Tweed tailoring heritage,
+    scholarly restraint, moss-toned country classicism with material-forward fashion transformation
+    with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Herringbone pattern
+    flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm; identity
+    stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling
+    hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Rainy grey softness, low wool-warmth, flat wool-revealing light plus material-revealing
+    light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric
+    separation as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining
+    plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel,
+    gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Tweed Suit using its key spatial cues: Herringbone, elbow-patch cues, ticket-pocket logic,
-    horn-button punctuation, wool depth.
-  atmosphere_and_mood: Smart, restrained, contemplative, textured, quietly formal
-  rendering_and_quality: Classic, textured, heritage-tailoring precision, wool-depth authenticity
-  key_features: Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool depth
+    Compose with Compose for Tweed Suit using its key spatial cues: Herringbone, elbow-patch cues,
+    ticket-pocket logic, horn-button punctuation, wool depth plus drape rhythm, material coverage,
+    silhouette clarity, tactile close detail, fold direction, and transformation edge control as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Tweed Suit while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Tweed tailoring heritage, scholarly restraint, moss-toned country classicism; Herringbone
+    pattern flow, structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm;
+    Rough wool, herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining; Rainy
+    grey softness, low wool-warmth, flat wool-revealing light; Compose for Tweed Suit using its key
+    spatial cues: Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool
+    depth
   creative_brief: >-
-    Tailor the input with tweed heritage: herringbone wool, Donegal flecks, horn-button punctuation,
-    elbow-patch cues, three-roll-two lapel logic and moss-brown texture. Keep scholarly classicism as attitude
-    only; do not require a person, study, library, armchair, estate weekend or literal suit portrait.
+    Use Tweed Suit after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Tweed tailoring
+    heritage, scholarly restraint, moss-toned country classicism, Herringbone pattern flow,
+    structured drape, notch-lapel angle, three-roll-two logic, tailored break rhythm, Rough wool,
+    herringbone tweed, Donegal fleck, shetland wool, horn buttons, bemberg lining, Rainy grey
+    softness, low wool-warmth, flat wool-revealing light, Compose for Tweed Suit using its key
+    spatial cues: Herringbone, elbow-patch cues, ticket-pocket logic, horn-button punctuation, wool
+    depth plus weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge
+    behavior, and surface continuity, palette behavior, light response, material treatment,
+    silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue,
+    prop bundle, or card composition.
 avoidRules:
   - smooth
   - shiny
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-057.webp
 attributes:
-  negativePrompt: smooth, shiny, study room, library, armchair, estate weekend, literal suit portrait
+  negativePrompt: >-
+    smooth, shiny, generic fabric texture, muddy surface noise, wrong material physics, fixed
+    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
+    watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

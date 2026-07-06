@@ -12,25 +12,73 @@ tags:
   - photography-and-realism
   - technical-and-specialist-imaging
 visualDna:
-  aesthetic: Heat map imaging
-  subject_treatment: Blobby heat signatures
-  color_and_tone: Ironbow (Purple to Yellow)
-  lighting_and_shadow: Emissive
-  texture_and_material: Digital noise
-  camera_and_composition: No surface detail
-  atmosphere_and_mood: Diagnostic, technical
-  rendering_and_quality: Military, scientific
-  key_features: Heat gradient
+  aesthetic: >-
+    Thermal Camera acts as a transferable photographic style router: begin from Heat map imaging,
+    Heat gradient, and technical capture system built from diagnostic optics, surveillance position,
+    scientific sensor behavior, and evidence-grade readability, then apply the photographic behavior
+    to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Blobby heat signatures; preserve prompt identity while
+    translating it through device constraints, evidence logic, extreme scale, or diagnostic signal,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Ironbow (Purple to Yellow); use palette as sensor output: thermal gradients,
+    monochrome electron depth, CCTV compression, medical neutral color, or astrophotographic false
+    color, with value separation and white balance choices that feel captured in-camera rather than
+    painted over.
+  lighting_and_shadow: >-
+    Use Emissive; make light come from device behavior, flash documentation, emissive heat,
+    telescope exposure, glass reflections, or clinical illumination, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Digital noise; render scan noise, compression, measurement surfaces, medical cleanliness,
+    forensic detail, microtexture, or signal artifacts as capture evidence, avoiding both waxy
+    smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through No surface detail; compose through mounted POV, deadpan documentation, miniature
+    focal bands, abstract cropping, evidence scale, or instrument framing, with lens distance,
+    depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Diagnostic, technical; derive mood from surveillance, diagnosis, evidence,
+    scientific alienness, minimalism, procedural restraint, or technical unease, so the preset
+    changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Military, scientific; finish with exact capture logic, readable signal, controlled
+    artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: Heat map imaging; Heat gradient; Ironbow (Purple to Yellow); Emissive; No surface detail
   creative_brief: >-
-    Apply thermal-camera temperature logic to the input: violet cool zones, red-orange heat gradients,
-    yellow-white intensity peaks, and simplified diagnostic blobs should map any subject without requiring
-    living bodies.
+    Apply Thermal Camera as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Heat map imaging, Ironbow (Purple to Yellow), Emissive, Digital noise, and
+    No surface detail through optics, exposure, palette, surface response, timing, and finish
+    without requiring the card image's original subject.
 avoidRules:
   - realistic colors
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - cinematic beauty lighting
+  - artistic blur
+  - wrong diagnostic palette
+  - fake UI text
+  - random sci-fi overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-028.webp
 attributes:
-  negativePrompt: realistic colors
+  negativePrompt: >-
+    realistic colors, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty
+    lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

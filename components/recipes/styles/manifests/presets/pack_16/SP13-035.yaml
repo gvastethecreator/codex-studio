@@ -14,24 +14,84 @@ tags:
   - horror
 visualDna:
   aesthetic: >-
-    Ceremonial demonic folklore horror combining shrine-like precision with feral ritual escalation and
-    symbolic intimidation.
+    Demonic Ritual Mask Geometry Style acts as a transferable anime-prestige router: occult anime
+    menace and mask-like supernatural pressure, alongside formal rite pressure and ceremonial anime
+    severity and symbolic geometry and rule-bound visual pressure; fuse it with prestige anime
+    horror with negative space, body unease, ritual geometry, liminal dread, and controlled visual
+    silence; it routes era, genre, line economy, cel or digital finish, and performance tone without
+    locking prompt content to the source title or sample image.
   subject_treatment: >-
-    Hard mask-like silhouettes, talismanic pattern bands, and radial gesture lines that imply invocation
-    cycles.
-  color_and_tone: Oxblood reds, ash-black fields, smoke-brown mids, and tarnished gold ritual accents.
-  lighting_and_shadow: Low fire-ring illumination with stochastic shadow dance, emphasizing mask contours and gesture focality.
-  texture_and_material: Lacquer crackle, charred timber grain, wax drips, ash particulates, and scorched fabric edges.
-  camera_and_composition: Circular rite composition with centripetal pull, as if all geometry is bending toward the invocation core.
-  atmosphere_and_mood: Taboo ceremony, escalating dread, and primal authority made visual through symbols and heat.
-  rendering_and_quality: High-impact folkloric clarity with aggressive focal contrast and controlled peripheral obscurity.
+    Preserve the prompt subject, action, and context while restyling forms through covered identity,
+    flattened face planes, and ceremonial profile pressure, alongside contours paced by demonic
+    tension, readable pose energy, and silhouette discipline; identity should remain readable
+    through anime contour, expression economy, pose energy, shape simplification, and effect
+    hierarchy instead of a required canon character or title scene.
+  color_and_tone: >-
+    Map color through crimson black, sickly violet, and hot ritual orange, alongside a ritual accent
+    system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray,
+    crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation
+    clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested
+    content.
+  lighting_and_shadow: >-
+    Use a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a ritual
+    light logic using cel rim, glow behavior, and blocked shadow; combine it with weak nocturnal
+    top-light, spotlight isolation, occult rim, red omen glow, and deep occlusion around visual
+    absences; shadows should read as anime light design, rims should clarify form, and glow or
+    effects should support the prompt rather than replacing it.
+  texture_and_material: >-
+    Render wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside lacquer,
+    fabric, rubbed paint, and hard shadow edges and inked lines, paper texture, lacquer edges, and
+    graphic cuts; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust,
+    mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal,
+    water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments,
+    action, and abstractions.
+  camera_and_composition: >-
+    Frame around rite intervals, axial pauses, and symbolic repetition, alongside frontal mask
+    geometry and trapped gaze spacing and hard axes, repeated shapes, and measured ritual spacing,
+    then extend it with void-first framing, institutional emptiness, spotlight traps, ritual
+    geometry, and suppressed horizon cues; the style should support portraits, props, machines,
+    performances, landscapes, symbols, and full scenes through reusable anime staging grammar
+    instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through taboo horror and ecstatic danger, alongside taboo formality and controlled
+    spiritual pressure; braid it with listening-state tension, dread, shame, taboo ceremony, unseen
+    presence, and quiet psychological collapse; the preset can become funny, sensual, violent,
+    quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime
+    lineage.
+  rendering_and_quality: >-
+    Finish with clean anime finishing that keeps demonic identity readable without noisy denoise,
+    alongside clean anime finishing that keeps ritual identity readable without noisy denoise;
+    enforce minimal high-control horror anime finish with shape economy, denoised darks, and no
+    gore-as-shortcut dependency; prioritize clean denoise, stable anatomy or object structure,
+    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
+    or 3D-render drift.
   key_features: >-
-    Dominant demonic visage language, ember ring systems, talisman clusters, and invocation choreography
-    through heat shimmer.
+    occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and
+    ceremonial anime severity and symbolic geometry and rule-bound visual pressure; covered
+    identity, flattened face planes, and ceremonial profile pressure, alongside contours paced by
+    demonic tension, readable pose energy, and silhouette discipline; wax, cloth, ash, lacquer,
+    paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow
+    edges and inked lines, paper texture, lacquer edges, and graphic cuts; a demonic light logic
+    using cel rim, glow behavior, and blocked shadow, alongside a ritual light logic using cel rim,
+    glow behavior, and blocked shadow; rite intervals, axial pauses, and symbolic repetition,
+    alongside frontal mask geometry and trapped gaze spacing and hard axes, repeated shapes, and
+    measured ritual spacing
   creative_brief: >-
-    Create a reusable demonic-ritual-mask-geometry grammar for any subject: radial ritual geometry, fire-ring
-    contrast, symbolic mask dominance, and taboo ceremonial pressure without imposing oni, masks, shrines,
-    candles, talismans, hand signs, or night rituals.
+    Apply Demonic Ritual Mask Geometry Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    occult anime menace and mask-like supernatural pressure, alongside formal rite pressure and
+    ceremonial anime severity and symbolic geometry and rule-bound visual pressure, alongside
+    covered identity, flattened face planes, and ceremonial profile pressure, alongside contours
+    paced by demonic tension, readable pose energy, and silhouette discipline; crimson black, sickly
+    violet, and hot ritual orange, alongside a ritual accent system held inside disciplined cel
+    values; a demonic light logic using cel rim, glow behavior, and blocked shadow, alongside a
+    ritual light logic using cel rim, glow behavior, and blocked shadow; wax, cloth, ash, lacquer,
+    paper, and restrained blood-red marks, alongside lacquer, fabric, rubbed paint, and hard shadow
+    edges and inked lines, paper texture, lacquer edges, and graphic cuts and rite intervals, axial
+    pauses, and symbolic repetition, alongside frontal mask geometry and trapped gaze spacing and
+    hard axes, repeated shapes, and measured ritual spacing, finish discipline, and negative
+    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
+    instrument, weapon, or card composition.
 avoidRules:
   - photoreal
   - cute-style
@@ -39,10 +99,24 @@ avoidRules:
   - watermark
   - text
   - logo
+  - cheap jump scare
+  - splatter-only horror
+  - photoreal monster render
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
+  - signature
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-035.webp
 attributes:
-  negativePrompt: photoreal, cute-style, bright-daylight, watermark, text, logo
+  negativePrompt: >-
+    photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only
+    horror, photoreal monster render, fixed canon character, literal title scene, required anime
+    screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

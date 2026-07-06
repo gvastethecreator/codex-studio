@@ -13,31 +13,82 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: >-
-    Victorian-industrial speculative style with brass-and-steam futurism, analog invention romance, and ornate
-    mechanical worldbuilding
-  subject_treatment: Gears, pipes, cog-train silhouettes, steam-vent contours, clock-face profiles
+    Steampunk operates as a portable source-router layer: combine Victorian-industrial speculative
+    style with brass-and-steam futurism, analog invention romance, and ornate mechanical
+    worldbuilding with cultural style-system logic with recognizable design codes, mood grammar, and
+    transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene
+    or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
+    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Gears,
+    pipes, cog-train silhouettes, steam-vent contours, clock-face profiles; identity stays readable
+    through construction grammar, proportion, edge logic, and detail scale as this preset is
+    applied.
   color_and_tone: >-
-    Brass, Copper, Brown leather, verdigris-patina green, steam-whistle silver, mahogany-wood, boiler-plate
-    iron
-  lighting_and_shadow: Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows
-  texture_and_material: Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth
-  camera_and_composition: Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve precision
-  atmosphere_and_mood: Adventure, invention, analog futurism, pressure-system tension, brass-and-steam coziness
-  rendering_and_quality: Intricate, mechanical, gear-by-gear wonder, differential-engine complexity, aether-science elegance
+    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
+    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Gaslight, steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing
+    shadows plus mood-led lighting that reinforces the aesthetic code without replacing the
+    requested subject as the light-response contract, with readable hierarchy, controlled contact
+    detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Metal, leather, steam, polished-brass luster, rivet-head bumps, pressure-gauge glass,
+    oiled-gear teeth plus signature finishes, symbolic surfaces, pattern systems, ornamental
+    density, polish, grime, gloss, or softness; surface scale, residue, gloss, grain, fiber, pores,
+    edges, or signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Clockwork parts, over-engineered joints, exposed-mechanism transparency,
+    piston-in-sleeve precision plus taste-coded spacing, silhouette discipline, motif placement,
+    designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards,
+    portraits, objects, scenes, and abstract prompts to inherit the style without one required
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
+    cuteness, or spectacle; the emotional tone should feel specific to Steampunk while still obeying
+    the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
+    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Cog-wheel motif language, pressure-gauge instrumentation, brass fittings, steam venting cues, mechanical
-    ornament layering
+    Victorian-industrial speculative style with brass-and-steam futurism, analog invention romance,
+    and ornate mechanical worldbuilding; Gears, pipes, cog-train silhouettes, steam-vent contours,
+    clock-face profiles; Metal, leather, steam, polished-brass luster, rivet-head bumps,
+    pressure-gauge glass, oiled-gear teeth; Gaslight, steam, mantle-flame glow, hissing-vent haze,
+    Edison-bulb warmth, lantern-swing shadows; Clockwork parts, over-engineered joints,
+    exposed-mechanism transparency, piston-in-sleeve precision
   creative_brief: >-
-    Apply ornate steam-mechanical grammar to the input: brass-copper assemblies, pressure instrumentation,
-    exposed mechanisms, leather straps, and gaslight warmth should drive the style without requiring
-    zeppelins, workshops, tea tables, or named literary references.
+    Use Steampunk after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Victorian-industrial speculative style with
+    brass-and-steam futurism, analog invention romance, and ornate mechanical worldbuilding, Gears,
+    pipes, cog-train silhouettes, steam-vent contours, clock-face profiles, Metal, leather, steam,
+    polished-brass luster, rivet-head bumps, pressure-gauge glass, oiled-gear teeth, Gaslight,
+    steam, mantle-flame glow, hissing-vent haze, Edison-bulb warmth, lantern-swing shadows,
+    Clockwork parts, over-engineered joints, exposed-mechanism transparency, piston-in-sleeve
+    precision plus proportion codes, recurring surface motifs, era cues, pattern pressure, cultural
+    references, and designed contrast, palette behavior, light response, material treatment, and
+    finish discipline without requiring one specimen, prop bundle, product still, or card
+    composition.
 avoidRules:
   - plastic
   - digital
+  - generic aesthetic collage
+  - random trend mix
+  - style-board text
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-037.webp
 attributes:
-  negativePrompt: plastic, digital
+  negativePrompt: >-
+    plastic, digital, generic aesthetic collage, random trend mix, style-board text, fixed specimen,
+    literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

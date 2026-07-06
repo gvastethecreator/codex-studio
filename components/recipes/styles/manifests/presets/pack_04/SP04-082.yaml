@@ -12,19 +12,65 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Hybrid photobash-and-paintover concept rendering
-  subject_treatment: Cutout-based structural edges softened by targeted paint integration
-  color_and_tone: Source-photo gamut unified by global grade and paint harmonization
-  lighting_and_shadow: Mixed-source lighting normalized through paint corrections and value balancing
-  texture_and_material: Photo-detail patches with visible brush unification passes
-  camera_and_composition: Perspective reconciliation of disparate source fragments
-  atmosphere_and_mood: Pragmatic, production-driven, high-iteration studio workflow
-  rendering_and_quality: Fast mixed-media visualization with controlled seam management
-  key_features: Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy
+  aesthetic: >-
+    Photobash Paintover Iteration acts as a transferable illustration router: start from Hybrid
+    photobash-and-paintover concept rendering, Photobash Paintover Iteration production design
+    clarity, iteration logic, silhouette readability, material exploration, and concept-art decision
+    pressure, Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy and
+    production concept-art system built from iteration discipline, silhouette testing, material
+    exploration, design readability, and pitch-ready visual decisions, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Cutout-based structural edges softened by targeted paint
+    integration; preserve the requested subject while routing it through design exploration, asset
+    logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability
+    constraints, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Source-photo gamut unified by global grade and paint harmonization; use color
+    as concept decision-making: mood scripts, material swatches, faction accents, environment
+    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Mixed-source lighting normalized through paint corrections and value
+    balancing; shape light for ideation clarity through value block-in, keyframe contrast, material
+    test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports
+    the illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Photo-detail patches with visible brush unification passes; surface detail should reveal
+    brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume
+    fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent
+    and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Perspective reconciliation of disparate source fragments; compose
+    through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids,
+    iteration boards, or cinematic keyframe balance without locking one finished illustration, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Pragmatic, production-driven, high-iteration studio workflow; derive mood from
+    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
+    cinematic intent, or production-room clarity, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Fast mixed-media visualization with controlled seam management; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Hybrid photobash-and-paintover concept rendering, Photobash Paintover Iteration production
+    design clarity, iteration logic, silhouette readability, material exploration, and concept-art
+    decision pressure; Composite seam blending, adjustment-grade cohesion, overpainted focal
+    hierarchy; Source-photo gamut unified by global grade and paint harmonization; Photo-detail
+    patches with visible brush unification passes; Perspective reconciliation of disparate source
+    fragments
   creative_brief: >-
-    Apply photobash-paintover iteration to any input: mixed-source texture logic, hard photo fragments,
-    painted unification strokes, material seams, lasso-shape edits, and exploratory overpaint marks. Keep the
-    workflow visible without requiring environments, robots, kitbash machinery, or a before/after scene.
+    Apply Photobash Paintover Iteration as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Hybrid photobash-and-paintover concept rendering, Photobash Paintover Iteration
+    production design clarity, iteration logic, silhouette readability, material exploration, and
+    concept-art decision pressure, Composite seam blending, adjustment-grade cohesion, overpainted
+    focal hierarchy, Photo-detail patches with visible brush unification passes without requiring
+    the card image's original subject.
 avoidRules:
   - clean
   - pure illustration
@@ -35,10 +81,26 @@ avoidRules:
   - final
   - one-pass
   - unlayered
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-082.webp
 attributes:
-  negativePrompt: clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass, unlayered
+  negativePrompt: >-
+    clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass,
+    unlayered, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

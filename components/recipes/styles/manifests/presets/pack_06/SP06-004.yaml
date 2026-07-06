@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Opaque gouache illustration
-  subject_treatment: Crisp edges, matte finish
-  color_and_tone: Vibrant, solid, chalky
-  lighting_and_shadow: Flat, graphic
-  texture_and_material: Smooth paper, matte paint
-  camera_and_composition: Simplified forms
-  atmosphere_and_mood: Playful, graphic
-  rendering_and_quality: Illustrative, design-focused
-  key_features: Matte opacity
+  aesthetic: >-
+    Gouache (Flat) acts as a transferable art-medium router: start from Opaque gouache illustration,
+    Matte opacity and paint-media system built from pigment body, binder behavior, substrate tooth,
+    brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Crisp edges, matte finish; preserve the prompt subject
+    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
+    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Vibrant, solid, chalky; let hue, value, saturation, and mixing come from
+    physical pigment, binder opacity, drying character, and historical medium constraints, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Flat, graphic; make light feel interpreted by paint through tonal blocking,
+    glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports
+    the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth paper, matte paint; surface detail should show canvas, paper, plaster, wax,
+    velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Simplified forms; organize the image through painterly massing,
+    brush direction, support format, negative space, edge hierarchy, and intentional simplification,
+    with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Playful, graphic; derive mood from medium history, touch, pigment weight, speed,
+    restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Illustrative, design focused; finish with medium-faithful paint handling, readable
+    form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces
+    where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Opaque gouache illustration; Matte opacity; Vibrant, solid, chalky; Smooth paper, matte paint;
+    Simplified forms
   creative_brief: >-
-    Apply flat gouache treatment to any input: velvet matte opacity, chalky pigment body, crisp graphic edges,
-    softened hand-painted precision, and dense color fields that absorb light. Keep illustration-ready clarity
-    without requiring posters, character art, packaging, or flat product layouts.
+    Apply Gouache (Flat) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Opaque gouache illustration, Matte opacity, Smooth paper, matte paint without requiring the card
+    image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-004.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

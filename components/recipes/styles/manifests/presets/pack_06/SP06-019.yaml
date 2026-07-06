@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - drawing-and-sketching
 visualDna:
-  aesthetic: Doodle with biro pen
-  subject_treatment: Thin, scribbly lines
-  color_and_tone: Blue or Black ink
-  lighting_and_shadow: Flat
-  texture_and_material: Notebook paper, indentations
-  camera_and_composition: Rough shading
-  atmosphere_and_mood: Casual, restless, improvised
-  rendering_and_quality: Casual, sketch
-  key_features: Scribble texture
+  aesthetic: >-
+    Ballpoint Pen acts as a transferable art-medium router: start from Doodle with biro pen,
+    Scribble texture and drawing-media system built from mark pressure, line economy, paper tooth,
+    erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Thin, scribbly lines; preserve the prompt subject while
+    rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or
+    marker stroke logic, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Blue or Black ink; treat color as tool-limited material: graphite value,
+    charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic
+    trace, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat; represent light through mark spacing, exposed paper, tonal rubbing,
+    crosshatch density, erased highlights, or flat diagrammatic value control, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Notebook paper, indentations; make paper grain, tooth, dust, ink bite, wax buildup,
+    scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Rough shading; structure forms through line rhythm, gesture,
+    technical geometry, blank space, contour continuity, and readable silhouette logic, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Casual, restless, improvised; derive mood from study, immediacy, precision,
+    roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Casual, sketch; finish with honest drawing marks, stable anatomy or object
+    structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised
+    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Doodle with biro pen; Scribble texture; Blue or Black ink; Notebook paper, indentations; Rough
+    shading
   creative_brief: >-
-    Apply ballpoint-pen drawing to any input: blue ink pooling, scratchy pressure variation, paper dimples,
-    obsessive hatching, scribbled cross-contours, and casual compulsive buildup. Keep everyday pen intimacy
-    without requiring notebooks, margins, classrooms, or readable text.
+    Apply Ballpoint Pen as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Doodle with
+    biro pen, Scribble texture, Notebook paper, indentations without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -43,12 +73,25 @@ avoidRules:
   - border
   - notebook requirement
   - classroom mood
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - painterly fill
+  - wrong drawing tool
+  - airbrushed smoothness
+  - photo-real material overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-019.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, notebook requirement, classroom mood
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
+    resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material
+    overlay
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,30 +12,103 @@ tags:
   - architecture-and-interior
   - megastructure-and-impossible-space
 visualDna:
-  aesthetic: Matte-black vertical mass austerity, severe edge light and symbolic monumental restraint.
-  subject_treatment: Vertical planar massing, flawless dark faces and clean severe edges without ornament.
+  aesthetic: >-
+    Absolute Black Monolith acts as a transferable architecture/interior router: matte black
+    absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry; fuse it
+    with megastructure and impossible-space grammar with macro scale, recursive surfaces, habitat
+    logic, optical paradox, and spatial contradiction; route spatial grammar, material behavior,
+    scale, ornament, and light over prompt X without requiring the default sample anchor, fixed
+    spatial set, landscape setup, or object sample.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while translating any requested subject through
+    civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity,
+    non-euclidean transitions, and compact utility systems; treat matte black absorbent planes,
+    faint silver edge light, austere scale cue, crisp shadow geometry as massing, edge, surface,
+    joinery, threshold, or ornament behavior rather than a mandatory building scene.
   color_and_tone: >-
-    Deep matte black mass, near-void black absorption fields, faint edge silver glints, sparse neutral
-    lunar-gray reflections
-  lighting_and_shadow: High-contrast directional light, extreme absorption, minimal catch-light and severe projected shadow.
-  texture_and_material: Ultrasmooth anonymous matte surface, near-total specular suppression and artifact-like uniformity.
+    Map color through near-black structure, solar gold, technical beige, copper-brass, cyan or blue
+    glow, graphite ribs, and controlled atmospheric haze; let source cues such as matte black
+    absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry decide
+    accent hierarchy, material temperature, and value separation while staying attached to the
+    requested content.
+  lighting_and_shadow: >-
+    Use rim light at scale, utility panel glow, star or solar emission, soft beacon light, paradox
+    shadow, and depth-defining atmospheric falloff; make light reveal joints, relief, material
+    depth, scale, and atmosphere from matte black absorbent planes, faint silver edge light, austere
+    scale cue, crisp shadow geometry without replacing prompt X with a stock architectural render.
+  texture_and_material: >-
+    Render technical panels, copper-brass surfaces, graphite fins, matte black planes, circular
+    hatches, retention straps, tactile glass, and braided cabling; prioritize the tactile signals in
+    matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry,
+    with believable surface response, denoised grain, coherent wear, and no generic wallpaper
+    texture.
   camera_and_composition: >-
-    Compose for Absolute Black Monolith using its key spatial cues: Non-canonical vertical mass, absorbent
-    black planes, featureless profile and severe vertical composition.
-  atmosphere_and_mood: Ominous, contemplative and transcendent, with intellectually unsettling silence.
-  rendering_and_quality: Precision minimalism with geometric authority and disciplined tonal economy.
-  key_features: Non-canonical vertical mass, absorbent black planes, featureless profile and severe vertical composition.
+    Frame through macro-detail framing, looped circulation, horizon wrap, radial collector geometry,
+    repeated modules, impossible thresholds, and severe scale cues; convert matte black absorbent
+    planes, faint silver edge light, austere scale cue, crisp shadow geometry into reusable
+    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
+    style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through awe, utility, paradox, spatial uncanniness, engineered civilization, or
+    symbolic restraint without forcing a cockpit/control-room scene; the preset can support adult,
+    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
+    them while keeping the architectural identity readable.
+  rendering_and_quality: >-
+    Finish with clean impossible-space finish with coherent recursion, scale readability, no named
+    franchise interior, no central-console dependency; keep clean denoise, legible construction,
+    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
+    logo, no camera prop, and no prompt-literal card copy.
+  key_features: >-
+    matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow geometry;
+    civilization-scale shell logic, recursive modules, curved habitat bands, monolithic severity,
+    non-euclidean transitions, and compact utility systems; technical panels, copper-brass surfaces,
+    graphite fins, matte black planes, circular hatches, retention straps, tactile glass, and
+    braided cabling; macro-detail framing, looped circulation, horizon wrap, radial collector
+    geometry, repeated modules, impossible thresholds, and severe scale cues
   creative_brief: >-
-    Reduce any subject to transformed vertical presence: absorbent black planes, minimal edge light, one
-    readable silhouette anchor and symbolic authority. Preserve austere mystery without requiring a space
-    location or recognizable cinematic monolith proportions.
+    Apply Absolute Black Monolith after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies matte black absorbent planes, faint silver edge light, austere scale cue, crisp shadow
+    geometry, megastructure and impossible-space grammar with macro scale, recursive surfaces,
+    habitat logic, optical paradox, and spatial contradiction, material discipline, spatial grammar,
+    and negative controls without requiring a single spatial sample, product-photo setup, aisle-like
+    default, or empty abstraction.
 avoidRules:
   - ornamentation
   - recognizable cinematic monolith proportions
+  - sci-fi portal
+  - space scene
+  - featureless black rectangle only
+  - corridor
+  - interior zones set
+  - readable text
+  - camera prop
+  - empty abstraction
+  - cockpit or control interior zones
+  - central console
+  - named franchise interior
+  - spaceship corridor
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - market aisle
+  - library aisle
+  - prompt-required card
+  - logo
+  - watermark
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-079.webp
 attributes:
-  negativePrompt: ornamentation, recognizable cinematic monolith proportions
+  negativePrompt: >-
+    ornamentation, recognizable cinematic monolith proportions, sci-fi portal, space scene,
+    featureless black rectangle only, corridor, interior zones set, readable text, camera prop,
+    empty abstraction, cockpit or control interior zones, central console, named franchise interior,
+    spaceship corridor, fixed building-only scene, mandatory interior interior zones, corridor
+    perspective, furniture showroom, market aisle, library aisle, prompt-required card, logo,
+    watermark, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

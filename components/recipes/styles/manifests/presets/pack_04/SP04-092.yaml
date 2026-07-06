@@ -12,19 +12,61 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Costume exploration board combining silhouette, fabric, and colorway studies
-  subject_treatment: Clean croquis-based variants with annotation leaders and modular panel layout
-  color_and_tone: Multi-fabric palette families organized by role, era, and accent logic
-  lighting_and_shadow: Neutral comparison lighting with controlled sheen read on textiles
-  texture_and_material: Swatch-forward surface representation (weave, nap, grain, luster)
-  camera_and_composition: Grid/pinboard organization for side-by-side option evaluation
-  atmosphere_and_mood: Iterative studio workflow, design-review readiness
-  rendering_and_quality: Concept-development board clarity over final-fashion polish
-  key_features: Silhouette matrices, swatch clusters, trim notes, color strip comparisons
+  aesthetic: >-
+    Costume Design Exploration Board acts as a transferable illustration router: start from Costume
+    exploration board combining silhouette, fabric, and colorway studies, Silhouette matrices,
+    swatch clusters, trim notes, color strip comparisons and production concept-art system built
+    from iteration discipline, silhouette testing, material exploration, design readability, and
+    pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Clean croquis-based variants with annotation leaders and
+    modular panel layout; preserve the requested subject while routing it through design
+    exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or
+    production-readability constraints, keeping the requested identity, silhouette, pose, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Multi-fabric palette families organized by role, era, and accent logic; use
+    color as concept decision-making: mood scripts, material swatches, faction accents, environment
+    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Neutral comparison lighting with controlled sheen read on textiles; shape
+    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
+    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Swatch-forward surface representation (weave, nap, grain, luster); surface detail should
+    reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks,
+    costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Grid/pinboard organization for side-by-side option evaluation;
+    compose through production hierarchy, variants, orthographic logic, isometric staging,
+    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
+    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Iterative studio workflow, design-review readiness; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Concept-development board clarity over final-fashion polish; finish with concept-art
+    usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or
+    overpolished final render when iteration is intended, clean denoised surfaces where appropriate,
+    and enough process evidence to make the style recognizable.
+  key_features: >-
+    Costume exploration board combining silhouette, fabric, and colorway studies; Silhouette
+    matrices, swatch clusters, trim notes, color strip comparisons; Multi-fabric palette families
+    organized by role, era, and accent logic; Swatch-forward surface representation (weave, nap,
+    grain, luster); Grid/pinboard organization for side-by-side option evaluation
   creative_brief: >-
-    Apply costume-design exploration to any input: silhouette breaks, fabric behavior, trim systems, palette
-    swatches, accessory rhythm, and material contrast. If no wardrobe or character exists, translate forms
-    into fashion/costume language without requiring a model sheet, clothing catalog, or posed figure.
+    Apply Costume Design Exploration Board as an illustration preset over prompt X: preserve the
+    user's requested subject, then route mark-making, palette, surface, composition, mood, and final
+    craft through Costume exploration board combining silhouette, fabric, and colorway studies,
+    Silhouette matrices, swatch clusters, trim notes, color strip comparisons, Swatch-forward
+    surface representation (weave, nap, grain, luster) without requiring the card image's original
+    subject.
 avoidRules:
   - finished
   - one version
@@ -34,10 +76,26 @@ avoidRules:
   - vague
   - single option
   - no fabric
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-092.webp
 attributes:
-  negativePrompt: finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric
+  negativePrompt: >-
+    finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric,
+    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
+    text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
+    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

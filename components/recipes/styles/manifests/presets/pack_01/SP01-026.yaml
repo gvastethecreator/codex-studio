@@ -12,29 +12,75 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Lensless photography
-  subject_treatment: Soft everywhere
-  color_and_tone: Vignetted
-  lighting_and_shadow: Long exposure motion blur
-  texture_and_material: Diffraction blur
-  camera_and_composition: Infinite depth of field (soft)
-  atmosphere_and_mood: Surreal, time passing
-  rendering_and_quality: Dreamy, experimental
-  key_features: Soft focus
+  aesthetic: >-
+    Pinhole Camera acts as a transferable photographic style router: begin from Lensless
+    photography, Soft focus, and analog photographic process system built from film stock response,
+    lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Soft everywhere; preserve the prompt scene while routing detail
+    through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Vignetted; let palette come from emulsion bias, slide-film saturation, monochrome
+    silver values, aged dye shift, or instant-film chemistry, with value separation and white
+    balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Long exposure motion blur; shape highlights and shadows through film latitude, flash
+    falloff, long exposure, tungsten balance, or chemical rolloff, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Diffraction blur; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
+    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Infinite depth of field (soft); use camera format, crop, lens character, depth
+    of field, view-camera stillness, toy-camera distortion, or accidental snapshot framing, with
+    lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Surreal, time passing; derive mood from memory, imperfection, tactile chemistry,
+    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Dreamy, experimental; finish as believable analog capture with coherent grain scale,
+    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Lensless photography; Soft focus; Vignetted; Long exposure motion blur; Infinite depth of field
+    (soft)
   creative_brief: >-
-    Vision stripped of optics, where light seeps through a needle's wound and time pools on the surface. Edges
-    dissolve into dreaming, the world seen as if through memory rather than glass. Every frame exhales the
-    patience of a long exposure, moments bleeding into one another like watercolor on wet paper. Apply this
-    photographic look over any input: preserve lens behavior, exposure logic, color response, framing
-    discipline, and artifact pattern while avoiding a required place, face, travel scene, landscape, or
-    narrative setup.
+    Apply Pinhole Camera as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Lensless photography, Vignetted, Long exposure motion blur, Diffraction
+    blur, and Infinite depth of field (soft) through optics, exposure, palette, surface response,
+    timing, and finish without requiring the card image's original subject.
 avoidRules:
   - sharp
   - lens flare
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-026.webp
 attributes:
-  negativePrompt: sharp, lens flare
+  negativePrompt: >-
+    sharp, lens flare, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR
+    overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

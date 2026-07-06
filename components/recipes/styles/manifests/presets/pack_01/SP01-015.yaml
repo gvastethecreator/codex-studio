@@ -12,19 +12,45 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Vintage slide film
-  subject_treatment: Sharp, archival
-  color_and_tone: Rich reds, realistic
-  lighting_and_shadow: Clean direct light
-  texture_and_material: Fine grain
-  camera_and_composition: High contrast
-  atmosphere_and_mood: Historic, vivid
-  rendering_and_quality: Archival documentary slide
-  key_features: Red pop
+  aesthetic: >-
+    Kodachrome 64 acts as a transferable photographic style router: begin from Vintage slide film,
+    Red pop, and analog photographic process system built from film stock response, lens
+    imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Sharp, archival; preserve the prompt scene while routing detail
+    through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Rich reds, realistic; let palette come from emulsion bias, slide-film saturation,
+    monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and
+    white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Clean direct light; shape highlights and shadows through film latitude, flash falloff, long
+    exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density,
+    highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Fine grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
+    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through High contrast; use camera format, crop, lens character, depth of field,
+    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Historic, vivid; derive mood from memory, imperfection, tactile chemistry,
+    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Archival documentary slide; finish as believable analog capture with coherent grain
+    scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: Vintage slide film; Red pop; Rich reds, realistic; Clean direct light; High contrast
   creative_brief: >-
-    Apply Kodachrome archival permanence to the input: rich reds, clean direct light, crisp microdetail, dense
-    dye-layer contrast, and believable vintage vividness should preserve any subject without requiring travel
-    or mid-century staging.
+    Apply Kodachrome 64 as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Vintage slide film, Rich reds, realistic, Clean direct light, Fine grain,
+    and High contrast through optics, exposure, palette, surface response, timing, and finish
+    without requiring the card image's original subject.
 avoidRules:
   - illustration
   - painting
@@ -41,12 +67,22 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-015.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
+    clarity, generic vintage filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

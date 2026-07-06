@@ -12,27 +12,77 @@ tags:
   - photography-and-realism
   - technical-and-specialist-imaging
 visualDna:
-  aesthetic: Surveillance footage
-  subject_treatment: Low resolution, interlaced
-  color_and_tone: Desaturated or B&W
-  lighting_and_shadow: High contrast, night vision
-  texture_and_material: Compression artifacts, scanlines
-  camera_and_composition: Wide angle distortion
-  atmosphere_and_mood: Creepy, voyeuristic
-  rendering_and_quality: Gritty, crime
-  key_features: Surveillance UI burn-in
+  aesthetic: >-
+    CCTV Security acts as a transferable photographic style router: begin from Surveillance footage,
+    Surveillance UI burn-in, and technical capture system built from diagnostic optics, surveillance
+    position, scientific sensor behavior, and evidence-grade readability, then apply the
+    photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Low resolution, interlaced; preserve prompt identity while
+    translating it through device constraints, evidence logic, extreme scale, or diagnostic signal,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Desaturated or B&W; use palette as sensor output: thermal gradients, monochrome
+    electron depth, CCTV compression, medical neutral color, or astrophotographic false color, with
+    value separation and white balance choices that feel captured in-camera rather than painted
+    over.
+  lighting_and_shadow: >-
+    Use High contrast, night vision; make light come from device behavior, flash documentation,
+    emissive heat, telescope exposure, glass reflections, or clinical illumination, preserving
+    believable exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Compression artifacts, scanlines; render scan noise, compression, measurement surfaces,
+    medical cleanliness, forensic detail, microtexture, or signal artifacts as capture evidence,
+    avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Wide angle distortion; compose through mounted POV, deadpan documentation,
+    miniature focal bands, abstract cropping, evidence scale, or instrument framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Creepy, voyeuristic; derive mood from surveillance, diagnosis, evidence,
+    scientific alienness, minimalism, procedural restraint, or technical unease, so the preset
+    changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Gritty, crime; finish with exact capture logic, readable signal, controlled
+    artifacts, and no cinematic beauty-lighting overwrite, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Surveillance footage; Surveillance UI burn-in; Desaturated or B&W; High contrast, night vision;
+    Wide angle distortion
   creative_brief: >-
-    Apply CCTV surveillance optics to the input: low-resolution compression, scanlines, wide-angle distortion,
-    harsh security contrast, and timestamp-like burn-in marks without readable text should make any subject
-    feel observed.
+    Apply CCTV Security as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Surveillance footage, Desaturated or B&W, High contrast, night vision,
+    Compression artifacts, scanlines, and Wide angle distortion through optics, exposure, palette,
+    surface response, timing, and finish without requiring the card image's original subject.
 avoidRules:
   - hd
   - 4k
   - clean
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - cinematic beauty lighting
+  - artistic blur
+  - wrong diagnostic palette
+  - fake UI text
+  - random sci-fi overlay
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-025.webp
 attributes:
-  negativePrompt: hd, 4k, clean
+  negativePrompt: >-
+    hd, 4k, clean, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, cinematic beauty
+    lighting, artistic blur, wrong diagnostic palette, fake UI text, random sci-fi overlay
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

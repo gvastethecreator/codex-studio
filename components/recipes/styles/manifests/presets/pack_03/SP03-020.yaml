@@ -13,43 +13,82 @@ tags:
   - materials
 visualDna:
   aesthetic: >-
-    Porcelain within 2. Materials: a reusable 3D & CGI Rendering visual language with a clear stylistic
-    thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
-    while preserving Porcelain's specific style identity.
+    Porcelain acts as a transferable CGI-style router: start from Porcelain glazed ceramic
+    translucency, milky porcelain surface, tiny crackle, polished rim highlights and shader-material
+    system built from reflectance, refraction, scattering, phase behavior, procedural structure, and
+    physically coherent surface response, then apply the 3D/render behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Define Porcelain through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
-    reusable beyond one literal scene.
+    Transform any prompt subject through adapt the requested subject through glazed ceramic
+    translucency, milky porcelain surface, tiny crackle, polished rim highlights while preserving
+    its identity; preserve the prompt subject while wrapping or transforming forms through the
+    material behavior named by the preset, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
   color_and_tone: >-
-    Use a Porcelain-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Build color with palette and exposure choices that support glazed ceramic translucency, milky
+    porcelain surface, tiny crackle, polished rim highlights; let palette follow absorption,
+    dispersion, subsurface tint, metallic reflectance, patina, mineral veining, transparency, or
+    fluid coloration, with deliberate value grouping, exposure control, and medium-specific limits
+    rather than generic color wash.
   lighting_and_shadow: >-
-    Use lighting that makes Porcelain recognizable: purposeful key, rim, bounce, shadow, and glow behavior
-    with readable hierarchy.
+    Handle light through light behavior that reveals glazed ceramic translucency, milky porcelain
+    surface, tiny crackle, polished rim highlights; make highlights, caustics, shadow softness,
+    transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the
+    material, so value structure supports the renderer and does not overwrite the requested content.
   texture_and_material: >-
-    Use materials and textures that reinforce Porcelain: surface response, grain, patina, polish, or wear
-    should feel intentional and style-defining.
+    Render glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim
+    highlights; surface detail should keep scale-consistent shaders, bumps, strands, droplets,
+    veining, casting marks, melt edges, weave, or simulated fluid motion, keeping material scale
+    coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Porcelain: close three-quarter or macro material framing, strong highlight planes,
-    readable surface curvature, and controlled depth.
+    Structure the image through Lookdev camera for Porcelain: close three quarter or macro material
+    framing, strong highlight planes, readable surface curvature, and controlled depth; compose to
+    demonstrate material behavior across silhouette, thickness, contact edges, reflection zones, and
+    readable material transitions, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Porcelain: specific, coherent, and distinct, with emotional tone carried by
-    visual systems rather than narrative captioning.
+    Keep the mood mood carried by glazed ceramic translucency, milky porcelain surface, tiny
+    crackle, polished rim highlights; derive mood from luxury, fragility, tactile attraction, gross
+    elasticity, scientific precision, craft, permanence, or uncanny material transformation, letting
+    the renderer alter interpretation without demanding a specific story, location, or character.
   rendering_and_quality: >-
-    Render Porcelain with high production clarity, strong silhouette reads, clean detail priority, and no
-    accidental UI, text, logos, or watermark.
+    Finish with finished Porcelain CGI with glazed ceramic translucency, milky porcelain surface,
+    tiny crackle, polished rim highlights and controlled detail; finish with coherent shader
+    response, clean denoise, readable forms, and no stock texture overlay pretending to be material
+    simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the
+    CGI mode recognizable.
   key_features: >-
-    Prioritize Porcelain's key features: recognizable shape language, palette logic, material cues, lighting
-    behavior, and composition rules.
+    Porcelain glazed ceramic translucency, milky porcelain surface, tiny crackle, polished rim
+    highlights; palette and exposure choices that support glazed ceramic translucency, milky
+    porcelain surface, tiny crackle, polished rim highlights; Lookdev camera for Porcelain: close
+    three quarter or macro material framing, strong highlight planes, readable surface curvature,
+    and controlled depth
   creative_brief: >-
-    Create a style-card that translates Porcelain into a portable visual system for 2. Materials. Preserve the
-    preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
+    Apply Porcelain as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Porcelain glazed ceramic translucency, milky porcelain surface, tiny
+    crackle, polished rim highlights without requiring the card image's original subject.
 avoidRules:
   - plastic
   - metal
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - wrong material
+  - pasted stock texture
+  - flat color fill
+  - shaderless surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-020.webp
 attributes:
-  negativePrompt: plastic, metal
+  negativePrompt: >-
+    plastic, metal, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, wrong material, pasted stock texture, flat color fill,
+    shaderless surface
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

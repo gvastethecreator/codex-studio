@@ -13,27 +13,84 @@ tags:
   - ink-and-print
 visualDna:
   aesthetic: >-
-    Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue office
-    artifact character
-  subject_treatment: Thick broken contour forms with pressure-loss gaps, edge breakup, and frame-first stamp geometry
-  color_and_tone: Red or Black ink, stamp-pad economy, official pigment
-  lighting_and_shadow: Uneven pressure, ink-starvation pattern, hand-stamped irregularity
-  texture_and_material: Ink starvation
-  camera_and_composition: Missing parts
-  atmosphere_and_mood: Official, bureaucratic, desk-clerk authority, document-weight
-  rendering_and_quality: Office, rough, bureaucrat artefact, rubber-worn character
-  key_features: Border, stamp frame, ink-fade authenticity
+    Rubber Stamp acts as a transferable illustration router: start from Rubber-stamp impression
+    style with bureaucratic authority cues, imperfect transfer, and analogue office artifact
+    designed subjects, Border, stamp frame, ink-fade authenticity and ink and printmaking system
+    built from mark economy, matrix process, ink transfer, pressure artifacts, paper absorption, and
+    reproducible graphic structure, then apply the visual behavior to prompt X instead of recreating
+    a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Thick broken contour forms with pressure-loss gaps, edge
+    breakup, and frame-first stamp geometry; preserve the requested subject while rebuilding it
+    through carved lines, etched density, stipple fields, calligraphic pressure, stamp
+    incompleteness, graffiti stroke logic, or tattoo-flash simplification, keeping the requested
+    identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Red or Black ink, stamp-pad economy, official pigment; use color as ink
+    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
+    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Uneven pressure, ink-starvation pattern, hand-stamped irregularity;
+    translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink
+    pooling, or flat spray contrast rather than photographic shading, so value structure supports
+    the illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Ink starvation, ink transfer, mark density, paper response, process artifacts, and
+    printmaking composition discipline; surface detail should show paper fiber, plate burr, block
+    grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo flash linework, or
+    aerosol edge behavior, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Missing parts, scale rhythm, edge hierarchy, spacing, and
+    composition rules specific to Rubber Stamp; compose through print registration, border
+    discipline, mark-direction rhythm, negative-space carving, tag flow, ornamental line weight, or
+    edition-like balance, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Official, bureaucratic, desk-clerk authority, document-weight; derive mood from
+    craft pressure, underground immediacy, archival print authority, occult darkness, decorative
+    ceremony, street-poster urgency, or disciplined ink control, letting the style alter
+    interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Office, rough, bureaucrat artefact, rubber-worn designed subjects; finish as a
+    credible ink or print artifact with exact mark logic, restrained artifacting, and no fake text,
+    random distress overlay, or smooth vector replacement, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue
+    office artifact designed subjects; Border, stamp frame, ink-fade authenticity; Red or Black ink,
+    stamp-pad economy, official pigment; Ink starvation, ink transfer, mark density, paper response,
+    process artifacts, and printmaking composition discipline; Missing parts, scale rhythm, edge
+    hierarchy, spacing, and composition rules specific to Rubber Stamp
   creative_brief: >-
-    Apply rubber-stamp impression grammar to any input: uneven pressure, ink-starvation gaps, frame-locked
-    geometry, red-black stamp-pad economy, and official-mark roughness should define style without requiring
-    documents, offices, seals, labels, bureaucracy scenes, or readable text.
+    Apply Rubber Stamp as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Rubber-stamp impression style with bureaucratic authority cues, imperfect transfer, and analogue
+    office artifact designed subjects, Border, stamp frame, ink-fade authenticity, Ink starvation,
+    ink transfer, mark density, paper response, process artifacts, and printmaking composition
+    discipline without requiring the card image's original subject.
 avoidRules:
   - perfect
   - clean
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-069.webp
 attributes:
-  negativePrompt: perfect, clean
+  negativePrompt: >-
+    perfect, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

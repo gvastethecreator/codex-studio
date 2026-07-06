@@ -12,25 +12,60 @@ tags:
   - abstract-and-experimental
   - geometric-abstraction
 visualDna:
-  aesthetic: Floating shapes
-  subject_treatment: "Treat subjects through Suprematism's signature cues: White void."
-  color_and_tone: Black square, simple
-  lighting_and_shadow: Flat
-  texture_and_material: Canvas
-  camera_and_composition: Zero gravity
-  atmosphere_and_mood: Spiritual, empty
-  rendering_and_quality: Malevich, pure feeling
-  key_features: White void
+  aesthetic: >-
+    Suprematism becomes a transferable geometric abstraction system: start from Floating shapes,
+    White void, and Zero gravity, then route prompt content through planes, grids, vectors, optical
+    order, and deliberate formal reduction without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using White void to break, flatten, triangulate,
+    align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Black square, simple; treat color as structural contrast, field
+    separation, and rhythm rather than decorative wash, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: keep light graphic and structural, with shadows simplified
+    into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt
+    explicitly asks for it.
+  texture_and_material: >-
+    Render Canvas as the tactile or mark-making basis; surfaces should read as designed planes, ink,
+    paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces,
+    or close material studies.
+  camera_and_composition: >-
+    Compose around Zero gravity as reusable spatial grammar: favor axial tension, repeated modules,
+    negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Spiritual, empty as the emotional register; derive mood from rigor, optical tension,
+    intellectual order, and abstraction pressure, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Malevich, pure feeling: finish with crisp geometry, controlled edges, clean
+    separations, and no accidental realism, preserving prompt X as the base content and the preset
+    as the style router.
+  key_features: >-
+    Floating shapes; White void; Black square, simple; Flat; Canvas; Zero gravity; Spiritual, empty;
+    Malevich, pure feeling; White void
   creative_brief: >-
-    Apply suprematist weightlessness to the input: floating rectangles, circles, stark white voids, minimal
-    gravity, and pure color-shape tension should make any subject feel abstracted into sensation.
+    Apply suprematist weightlessness to the input: floating rectangles, circles, stark white voids,
+    minimal gravity, and pure color-shape tension should make any subject feel abstracted into
+    sensation.
 avoidRules:
   - complex
   - real
+  - realistic perspective
+  - generic polygon filter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-008.webp
 attributes:
-  negativePrompt: complex, real
+  negativePrompt: >-
+    complex, real, realistic perspective, generic polygon filter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

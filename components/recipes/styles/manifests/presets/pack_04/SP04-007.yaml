@@ -13,44 +13,92 @@ tags:
   - comic-book-styles
 visualDna:
   aesthetic: >-
-    Franco-Belgian (Ligne Claire) within 1. Comic Book Styles: a reusable Illustration & Graphic Novel visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Franco-Belgian (Ligne Claire)'s specific style identity.
+    Franco-Belgian (Ligne Claire) acts as a transferable illustration router: start from ligne
+    claire Franco-Belgian album style with uniform clean ink contour, open readable shapes, precise
+    backgrounds-as-design, and calm adventure-page clarity, uniform contour, flat album color, clean
+    open shapes, minimal shadow, precise environment linework and comic-illustration system built
+    from ink hierarchy, panel-era color, contour exaggeration, print artifacts, and sequential-art
+    readability, then apply the visual behavior to prompt X instead of recreating a fixed demo
+    image.
   subject_treatment: >-
-    Define Franco-Belgian (Ligne Claire) through line, mass, contour, spacing, and rhythm. Keep forms
-    readable, intentional, and reusable beyond one literal scene.
+    Transform any prompt subject through Define Franco-Belgian (Ligne Claire) through line, mass,
+    contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal
+    scene; preserve the requested subject while translating form into panel-ready silhouettes,
+    expressive contour weight, stylized anatomy, speed emphasis, or graphic restraint only when the
+    preset calls for it, keeping the requested identity, silhouette, pose, object function, or
+    setting legible.
   color_and_tone: >-
-    Use a Franco-Belgian (Ligne Claire)-specific palette with clear dominant, secondary, and accent roles.
-    Keep contrast deliberate and avoid generic color wash.
+    Build color with flat bright European album color, controlled local hues, soft natural accents,
+    and low-noise value separation without painterly gradients; treat color as comic production
+    language: four-color plates, limited spot color, manga monochrome, digital flats, noir contrast,
+    webtoon gradients, or painted page atmosphere, with deliberate value grouping, accent control,
+    and process-specific limits rather than a generic palette wash.
   lighting_and_shadow: >-
-    Use lighting that makes Franco-Belgian (Ligne Claire) recognizable: purposeful key, rim, bounce, shadow,
-    and glow behavior with readable hierarchy.
+    Handle light through minimal cast shadow, clean daylight-like value control, restrained tonal
+    steps, and no heavy noir spotting or airbrushed drama; make light read through ink spotting,
+    cel-like value blocks, dramatic rim separation, flat print fill, or painted page modeling rather
+    than generic studio illumination, so value structure supports the illustration process and does
+    not overwrite the requested content.
   texture_and_material: >-
-    Use materials and textures that reinforce Franco-Belgian (Ligne Claire): surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render smooth ink-on-paper finish, lightly printed album surface, crisp color fills, and almost
+    invisible brush texture; surface detail should reveal paper tooth, newsprint dots, screen tones,
+    digital brush layers, ink pools, gutter discipline, or pixel cells at a scale that supports the
+    drawing, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Franco-Belgian (Ligne Claire): perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
+    Structure the image through album-panel clarity, balanced negative space, readable object
+    placement, calm perspective, and precise environmental line organization; compose with panel
+    logic, silhouette clarity, speech-shape space, page rhythm, close-up drama, or scroll pacing
+    without requiring a fixed comic-page scene, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Franco-Belgian (Ligne Claire): specific, coherent, and distinct, with emotional
-    tone carried by visual systems rather than narrative captioning.
+    Keep the mood curious, intelligent, lucid, adventurous, and gently ironic without melodrama or
+    noisy spectacle; derive mood from era, genre pressure, satire, melodrama, horror obsession, pulp
+    energy, or graphic-novel seriousness, letting the style alter interpretation without demanding a
+    specific story, location, or actor.
   rendering_and_quality: >-
-    Render Franco-Belgian (Ligne Claire) with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with immaculate clear-line finish with consistent contour weight, clean fills, exact
+    edges, and high readability at small card scale; finish with clear ink decisions, readable
+    stylization, controlled artifacting, and no generic superhero costume or random comic text
+    replacing the prompt, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
   key_features: >-
-    Prioritize Franco-Belgian (Ligne Claire)'s key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    ligne claire Franco-Belgian album style with uniform clean ink contour, open readable shapes,
+    precise backgrounds-as-design, and calm adventure-page clarity; uniform contour, flat album
+    color, clean open shapes, minimal shadow, precise environment linework; flat bright European
+    album color, controlled local hues, soft natural accents, and low-noise value separation without
+    painterly gradients; smooth ink-on-paper finish, lightly printed album surface, crisp color
+    fills, and almost invisible brush texture; album-panel clarity, balanced negative space,
+    readable object placement, calm perspective, and precise environmental line organization
   creative_brief: >-
-    Create a style-card that translates Franco-Belgian (Ligne Claire) into a portable visual system for 1.
-    Comic Book Styles. Preserve the preset identity through style mechanics, not a fixed scene, character,
-    prop, or story beat.
+    Apply Franco-Belgian (Ligne Claire) as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through ligne claire Franco-Belgian album style with uniform clean ink contour, open readable
+    shapes, precise backgrounds-as-design, and calm adventure-page clarity, uniform contour, flat
+    album color, clean open shapes, minimal shadow, precise environment linework, smooth
+    ink-on-paper finish, lightly printed album surface, crisp color fills, and almost invisible
+    brush texture without requiring the card image's original subject.
 avoidRules:
   - shading
   - gradient
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic superhero costume
+  - random speech text
+  - fake lettering
+  - photo-real costume render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-007.webp
 attributes:
-  negativePrompt: shading, gradient
+  negativePrompt: >-
+    shading, gradient, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    generic superhero costume, random speech text, fake lettering, photo-real costume render
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

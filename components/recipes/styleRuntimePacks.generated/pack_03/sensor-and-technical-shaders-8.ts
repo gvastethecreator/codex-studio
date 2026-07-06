@@ -7,40 +7,58 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP03-043',
     name: 'X-Ray Shader',
     category: '8. Sensor And Technical Shaders',
-    negativePrompt: 'opaque, skin',
+    negativePrompt:
+      'opaque, skin, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint',
     style: {
-      aesthetic: 'X-ray transparency render',
-      subject_treatment: 'Internal structure',
-      color_and_tone: 'Blue/White inverted, clinical spectrum',
-      lighting_and_shadow: 'Internal glow, self-illuminated core',
-      texture_and_material: 'Density-based internal layers',
+      aesthetic:
+        'X-Ray Shader acts as a transferable CGI-style router: start from X ray transparency render, Internal view, see through silhouette and technical shader system built from sensor mapping, diagnostic palette, transparency rules, internal structure, and device-like signal clarity, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Internal structure; preserve the prompt subject while remapping it through x-ray visibility, thermal signal, internal layering, or technical diagnostic abstraction, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Blue/White inverted, clinical spectrum; use color as sensor output: monochrome x-ray values, heat gradients, cold-to-hot ramps, density contrast, and instrument-coded intensity, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Internal glow, self illuminated core; make illumination behave like measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure instead of beauty lighting, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Density based internal layers; surface detail should show internal structure, transparent layers, signal noise, heat zones, bone-like density, or scanner-like edge clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for X-Ray Shader: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
-      atmosphere_and_mood: 'Analytical, cold, forensic insight',
-      rendering_and_quality: 'Medical, sci-fi, diagnostic scan',
-      key_features: 'Internal view, see-through silhouette',
+        'Structure the image through Lookdev camera for X Ray Shader: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose through diagnostic readability, silhouette transparency, cross-section clarity, and instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Analytical, cold, forensic insight; derive mood from scientific distance, surveillance unease, medical precision, or hidden-structure revelation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Medical, sci fi, diagnostic scan; finish with exact sensor logic, controlled artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'X ray transparency render; Internal view, see through silhouette; Blue/White inverted, clinical spectrum; Density based internal layers; Lookdev camera for X Ray Shader: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
       creative_brief:
-        'Render the input as X-ray transparency: ghosted outer contour, cyan-white density, visible internal structure and diagnostic depth. If bones, circuits or mechanics fit, reveal them; otherwise invent structural layers without forcing anatomy or hardware. Apply X-Ray Shader as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply X-Ray Shader as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through X ray transparency render, Internal view, see through silhouette, Density based internal layers without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-044',
     name: 'Thermal Vision',
     category: '8. Sensor And Technical Shaders',
-    negativePrompt: 'realistic color',
+    negativePrompt:
+      'realistic color, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text, cinematic overpaint',
     style: {
-      aesthetic: 'Heat map 3D',
-      subject_treatment: 'Heat gradients',
-      color_and_tone: 'Rainbow (Blue cold, Red hot), thermal gradient',
-      lighting_and_shadow: 'Emissive temperature, heat-source mapping',
-      texture_and_material: 'Temperature-emissive surface read with no material grain',
+      aesthetic:
+        'Thermal Vision acts as a transferable CGI-style router: start from Heat map 3D, Heat map, cold to hot spectrum and technical shader system built from sensor mapping, diagnostic palette, transparency rules, internal structure, and device-like signal clarity, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Heat gradients; preserve the prompt subject while remapping it through x-ray visibility, thermal signal, internal layering, or technical diagnostic abstraction, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Rainbow (Blue cold, Red hot), thermal gradient; use color as sensor output: monochrome x-ray values, heat gradients, cold-to-hot ramps, density contrast, and instrument-coded intensity, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Emissive temperature, heat source mapping; make illumination behave like measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure instead of beauty lighting, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Temperature emissive surface read with no material grain; surface detail should show internal structure, transparent layers, signal noise, heat zones, bone-like density, or scanner-like edge clarity, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Thermal Vision: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
-      atmosphere_and_mood: 'Tactical, alien, sensor-data intensity',
-      rendering_and_quality: 'Thermal false-color sensor overlay',
-      key_features: 'Heat map, cold-to-hot spectrum',
+        'Structure the image through Lookdev camera for Thermal Vision: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth; compose through diagnostic readability, silhouette transparency, cross-section clarity, and instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tactical, alien, sensor data intensity; derive mood from scientific distance, surveillance unease, medical precision, or hidden-structure revelation, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Thermal false color sensor overlay; finish with exact sensor logic, controlled artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Heat map 3D; Heat map, cold to hot spectrum; Rainbow (Blue cold, Red hot), thermal gradient; Temperature emissive surface read with no material grain; Lookdev camera for Thermal Vision: close three quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth',
       creative_brief:
-        'Translate the input into thermal false color: white/yellow heat peaks, blue cold zones, soft diffusion edges and sensor-grade data contrast. Keep tactical sci-fi flavor without requiring predator vision, reconnaissance or a literal world scan.',
+        "Apply Thermal Vision as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Heat map 3D, Heat map, cold to hot spectrum, Temperature emissive surface read with no material grain without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

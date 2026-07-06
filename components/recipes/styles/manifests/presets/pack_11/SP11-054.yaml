@@ -12,34 +12,81 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: Kyaraben organization, compartment-cute design, edible character abstraction, playful obento precision
-  subject_treatment: Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles, sausage-octopus contours
+  aesthetic: >-
+    Bento Box operates as a portable source-router layer: combine Kyaraben organization,
+    compartment-cute design, edible character abstraction, playful obento precision with culinary
+    presentation logic with edible surface behavior, plating structure, gloss, freshness, and
+    commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene
+    or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms plate,
+    glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material
+    logic through Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles,
+    sausage-octopus contours; identity stays readable through construction grammar, proportion, edge
+    logic, and detail scale as this preset is applied.
   color_and_tone: >-
-    Colorful, organized, tamago-yellow, spinach-green, umeboshi-red, salmon-pink, nori-black, cherry-tomato
-    red
-  lighting_and_shadow: Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient
-  texture_and_material: Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss
+    Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents,
+    creamy highlights, and controlled richness; keep hue roles intentional, value separation clear,
+    and palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Flat lay, overhead-bento, lunch-box-open, natural-daylight, desk-lunch ambient plus
+    editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and
+    texture reveal as the light-response contract, with readable hierarchy, controlled contact
+    detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin, broccoli-floret,
+    sausage-gloss plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice,
+    foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges,
+    or signal artifacts must remain coherent across figures, objects, and environments.
   camera_and_composition: >-
-    Compartment compression, edible character abstraction, rice-ball simplification, cutout-face geometry,
-    carrot-flower ornament
-  atmosphere_and_mood: Cute, hungry, organized, lunch-break-joy, surprise-and-delight
-  rendering_and_quality: Kawaii, organized, lunchtime-love, bento-box art, edible-character, Japanese-motherhood
+    Compose with Compartment compression, edible character abstraction, rice-ball simplification,
+    cutout-face geometry, carrot-flower ornament plus plating geometry, negative space, ingredient
+    rhythm, commercial clarity, and edible detail scale as reusable framing grammar, allowing cards,
+    portraits, objects, scenes, and abstract prompts to inherit the style without one required
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and
+    sensory immediacy; the emotional tone should feel specific to Bento Box while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with appetizing material truth, precise gloss control, clean detail priority, and no
+    messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Nori-cutout faces, rice-ball geometry, tamagoyaki-roll bands, cherry-tomato accents, grass-separator
-    rhythm, bento-pick flags
+    Kyaraben organization, compartment-cute design, edible character abstraction, playful obento
+    precision; Compartments, divider-lines, nori-cutout silhouettes, rice-ball triangles,
+    sausage-octopus contours; Rice, seaweed, tamago-egg layers, sesame-sprinkle, cherry-tomato skin,
+    broccoli-floret, sausage-gloss; Flat lay, overhead-bento, lunch-box-open, natural-daylight,
+    desk-lunch ambient; Compartment compression, edible character abstraction, rice-ball
+    simplification, cutout-face geometry, carrot-flower ornament
   creative_brief: >-
-    Map the input into kyaraben design logic: compartment balance, character-like simplification, precise
-    decorative cuts, cute food motifs, and organized color blocks. Bento boxes and animal shapes can reinforce
-    the style, but avoid requiring one lunchbox, one mascot, or a fixed meal. Apply Bento Box as a portable
-    style system over any input: preserve its construction grammar, material cues, scale logic, and signature
-    rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample,
-    product shot, or scene template.
+    Use Bento Box after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Kyaraben organization, compartment-cute design, edible
+    character abstraction, playful obento precision, Compartments, divider-lines, nori-cutout
+    silhouettes, rice-ball triangles, sausage-octopus contours, Rice, seaweed, tamago-egg layers,
+    sesame-sprinkle, cherry-tomato skin, broccoli-floret, sausage-gloss, Flat lay, overhead-bento,
+    lunch-box-open, natural-daylight, desk-lunch ambient, Compartment compression, edible character
+    abstraction, rice-ball simplification, cutout-face geometry, carrot-flower ornament plus portion
+    geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and service
+    polish, palette behavior, light response, material treatment, and finish discipline without
+    requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - messy
+  - messy cafeteria
+  - fake food plastic
+  - brand logo packaging
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-054.webp
 attributes:
-  negativePrompt: messy
+  negativePrompt: >-
+    messy, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card
+    scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

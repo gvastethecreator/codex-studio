@@ -12,35 +12,90 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Biomech interfacewear, sync-signal shine and pressure-system readiness.
+  aesthetic: >-
+    Mech Pilot Suit operates as a portable fashion-costume router: combine Biomech interfacewear,
+    sync-signal shine and pressure-system readiness with speculative costume logic with armor, suit
+    engineering, magical garment behavior, alien proportion, and character-readability design, so
+    the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
+    literal garment sample.
   subject_treatment: >-
-    Armored panel lines, capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam
-    maps.
-  color_and_tone: Glossy white/red, biotech violet, alert orange, caution-yellow, matte-black
-  lighting_and_shadow: Amber system glow, display backlight, capsule bioluminescence and sync-alert rim.
+    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
+    illuminate, conceal, mutate, modularize, ritualize, or engineer through Armored panel lines,
+    capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps; identity
+    stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling
+    hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through speculative material color, neon accents, abyssal values, royal metals,
+    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Amber system glow, display backlight, capsule bioluminescence and sync-alert rim plus rim
+    light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi
+    display light as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner
-    pads.
+    Render Molded polymer, neoprene support, carbon-fiber panel, rubberized connector plates and
+    memory-foam inner pads plus armor plates, spandex, robes, leather, rubber, chrome, biotic
+    surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers,
+    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
+    whole prompt.
   camera_and_composition: >-
-    Compose for Mech Pilot Suit using its key spatial cues: Connector collar cues, neural-port-like detailing,
-    pilot-panel seams and sealed support bands.
-  atmosphere_and_mood: Ready, technical, machine-linked and tense without anime-franchise identity.
-  rendering_and_quality: Original sci-fi engineering polish with high-spec interfacewear clarity.
-  key_features: Connector collar cues, neural-port-like detailing, pilot-panel seams and sealed support bands.
+    Compose with Compose for Mech Pilot Suit using its key spatial cues: Connector collar cues,
+    neural-port-like detailing, pilot-panel seams and sealed support bands plus character-design
+    readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation
+    focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments,
+    action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
+    spectacle, or mythic futurism; the tone should feel specific to Mech Pilot Suit while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
+    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Biomech interfacewear, sync-signal shine and pressure-system readiness; Armored panel lines,
+    capsule-contour geometry, sealed-edge bands, connector plates and ergonomic seam maps; Molded
+    polymer, neoprene support, carbon-fiber panel, rubberized connector plates and memory-foam inner
+    pads; Amber system glow, display backlight, capsule bioluminescence and sync-alert rim; Compose
+    for Mech Pilot Suit using its key spatial cues: Connector collar cues, neural-port-like
+    detailing, pilot-panel seams and sealed support bands
   creative_brief: >-
-    Translate the input into biomech interfacewear: glossy panel lines, sealed-edge bands, connector plates,
-    support padding, neural-port-like detailing and synchronization signal cues. Preserve machine-linked
-    tension without latex body read, cockpit, hangar, launch tube, battle pose, franchise suit or mandatory
-    human pilot body.
+    Use Mech Pilot Suit after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Biomech interfacewear,
+    sync-signal shine and pressure-system readiness, Armored panel lines, capsule-contour geometry,
+    sealed-edge bands, connector plates and ergonomic seam maps, Molded polymer, neoprene support,
+    carbon-fiber panel, rubberized connector plates and memory-foam inner pads, Amber system glow,
+    display backlight, capsule bioluminescence and sync-alert rim, Compose for Mech Pilot Suit using
+    its key spatial cues: Connector collar cues, neural-port-like detailing, pilot-panel seams and
+    sealed support bands plus paneling, harnesses, armor modules, robe systems, implant seams,
+    luminous channels, survival layers, and invented fastenings, palette behavior, light response,
+    material treatment, silhouette grammar, and finish discipline without requiring one body type,
+    fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - casual
   - latex body read
   - cockpit lock
   - franchise suit
+  - generic cosplay
+  - plastic toy armor
+  - muddy fantasy outfit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-046.webp
 attributes:
-  negativePrompt: casual, latex body read, cockpit lock, franchise suit
+  negativePrompt: >-
+    casual, latex body read, cockpit lock, franchise suit, generic cosplay, plastic toy armor, muddy
+    fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog,
+    muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

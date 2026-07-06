@@ -12,34 +12,110 @@ tags:
   - architecture-and-interior
   - civic-infrastructure-and-specialty-spaces
 visualDna:
-  aesthetic: Archival classicism with quiet monumentality, leather-paper-brass order and reading discipline.
-  subject_treatment: Tall catalog rhythm, access verticals, ordered symmetry and vault/alcove cadence.
-  color_and_tone: Brown, Gold, Dust, Calfskin Tan, Marbled Endpaper, Brass Patina, Forest Leather
-  lighting_and_shadow: Warm archival glow, green-amber focal light, high shafts and aged brass accents.
-  texture_and_material: Oxidized leather, irregular paper edges, worn gilding, use-polished oak and darkened brass.
+  aesthetic: >-
+    Bibliographic Classicism acts as a transferable architecture/interior router:
+    leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak
+    patina; fuse it with civic infrastructure grammar with public-use wear, technical service logic,
+    institutional material memory, and specialty-space performance; route spatial grammar, material
+    behavior, scale, ornament, and light over prompt X without requiring the default sample anchor,
+    fixed spatial set, landscape setup, or object sample.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while translating any requested subject through
+    infrastructure anchors, service junctions, public-scale material wear, modular containment,
+    utility grids, and readable built function; treat leather-paper-brass hierarchy, vertical
+    catalog rhythm, green-amber warmth, worn gilding, oak patina as massing, edge, surface, joinery,
+    threshold, or ornament behavior rather than a mandatory building scene.
+  color_and_tone: >-
+    Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value
+    blocks, damp fluorescents, and specialty glow cues; let source cues such as leather-paper-brass
+    hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina decide accent
+    hierarchy, material temperature, and value separation while staying attached to the requested
+    content.
+  lighting_and_shadow: >-
+    Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried
+    low light, and public-space shadow compression; make light reveal joints, relief, material
+    depth, scale, and atmosphere from leather-paper-brass hierarchy, vertical catalog rhythm,
+    green-amber warmth, worn gilding, oak patina without replacing prompt X with a stock
+    architectural render.
+  texture_and_material: >-
+    Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables,
+    patina, water stains, and public-use abrasion; prioritize the tactile signals in
+    leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak
+    patina, with believable surface response, denoised grain, coherent wear, and no generic
+    wallpaper texture.
   camera_and_composition: >-
-    Vertical archive rhythm, alcove compression and catalog-order depth that can organize any subject without
-    requiring a literal library room.
-  atmosphere_and_mood: Contemplative, rigorous and reverential, with punctual warmth over structured silence.
-  rendering_and_quality: Museum-quality aging with noble patina and catalog-readable depth of field.
+    Frame through tight infrastructure detail crops, service-grid repetition, compressed public
+    thresholds, wayfinding rhythm, and specialty-space section logic; convert leather-paper-brass
+    hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak patina into reusable
+    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
+    style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through public memory, controlled utility, preservation, overload, reverence, damp
+    atmosphere, or quiet abandonment without turning into narrative scene; the preset can support
+    adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X
+    asks for them while keeping the architectural identity readable.
+  rendering_and_quality: >-
+    Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding
+    shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable
+    object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no
+    camera prop, and no prompt-literal card copy.
   key_features: >-
-    Green-amber warmth, catalog clusters, leather-paper-brass material hierarchy, vertical bay rhythm and
-    cartographic accents.
+    leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn gilding, oak
+    patina; infrastructure anchors, service junctions, public-scale material wear, modular
+    containment, utility grids, and readable built function; tile, steel, concrete, glass, acrylic,
+    brass, paper, bone-mineral substitutes, cables, patina, water stains, and public-use abrasion;
+    tight infrastructure detail crops, service-grid repetition, compressed public thresholds,
+    wayfinding rhythm, and specialty-space section logic
   creative_brief: >-
-    Any subject should be ordered like old knowledge: vertical rhythm, green-amber focal light, oxidized
-    leather, irregular paper and muted brass. Solemnity comes from cataloging and preservation, not from a
-    fixed hall, mandatory shelves, lamps, reading tables or literal library props.
+    Apply Bibliographic Classicism after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies leather-paper-brass hierarchy, vertical catalog rhythm, green-amber warmth, worn
+    gilding, oak patina, civic infrastructure grammar with public-use wear, technical service logic,
+    institutional material memory, and specialty-space performance, material discipline, spatial
+    grammar, and negative controls without requiring a single spatial sample, product-photo setup,
+    aisle-like default, or empty abstraction.
 avoidRules:
   - digital
   - modern
-  - literal library
+  - required library
   - reading table
   - lamps
   - shelf aisle
+  - required library aisle
+  - bookstore corridor
+  - desk lamp
+  - open book prop
+  - hand holding book
+  - readable text
+  - market aisle
+  - fantasy hall
+  - empty abstraction
+  - long corridor
+  - people crowd
+  - readable map or sign
+  - office furniture focus
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - library aisle
+  - prompt-required card
+  - logo
+  - watermark
+  - camera prop
+  - literal library aisle
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-035.webp
 attributes:
-  negativePrompt: digital, modern, literal library, reading table, lamps, shelf aisle
+  negativePrompt: >-
+    digital, modern, required library, reading table, lamps, shelf aisle, required library aisle,
+    bookstore corridor, desk lamp, open book prop, hand holding book, readable text, market aisle,
+    fantasy hall, empty abstraction, long corridor, people crowd, readable map or sign, office
+    furniture focus, fixed building-only scene, mandatory interior interior zones, corridor
+    perspective, furniture showroom, library aisle, prompt-required card, logo, watermark, camera
+    prop, literal library aisle, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

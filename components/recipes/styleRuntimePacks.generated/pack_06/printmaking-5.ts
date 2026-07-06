@@ -8,19 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Etching',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Intaglio print',
-      subject_treatment: 'Fine, fuzzy bitten lines',
-      color_and_tone: 'Black ink, cream paper',
-      lighting_and_shadow: 'Linear shading',
-      texture_and_material: 'Plate tone, embossed paper',
-      camera_and_composition: 'Compose for Etching using its key spatial cues: Plate mark.',
-      atmosphere_and_mood: 'Antique, classic',
-      rendering_and_quality: 'Old-master intaglio detail with plate-pressure tactility',
-      key_features: 'Plate mark',
+      aesthetic:
+        'Etching acts as a transferable art-medium router: start from Intaglio print, Plate mark and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Fine, fuzzy bitten lines; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black ink, cream paper; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Linear shading; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Plate tone, embossed paper; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Etching using its key spatial cues: Plate mark; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Antique, classic; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Old master intaglio detail with plate pressure tactility; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Intaglio print; Plate mark; Black ink, cream paper; Plate tone, embossed paper',
       creative_brief:
-        'Apply etched-print linework to any input: acid-bitten copper lines, fuzzy inked grooves, plate-pressure emboss, fine crosshatching, and delicate chemical irregularity. Keep intaglio bite without requiring old maps, architecture, portraits, botanical plates, or antique scenes.',
+        "Apply Etching as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Intaglio print, Plate mark, Plate tone, embossed paper without requiring the card image's original subject.",
     },
   },
   {
@@ -28,19 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Linocut',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Linoleum block print',
-      subject_treatment: 'Smooth curves, fluid cuts',
-      color_and_tone: 'Black, White, or multi-block color',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Ink texture, paper',
-      camera_and_composition: 'Simplified shapes',
-      atmosphere_and_mood: 'Bold, graphic',
-      rendering_and_quality: 'Graphic, craft',
-      key_features: 'Clean cuts',
+      aesthetic:
+        'Linocut acts as a transferable art-medium router: start from Linoleum block print, Clean cuts and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Smooth curves, fluid cuts; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black, White, or multi block color; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Ink texture, paper; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Simplified shapes; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Bold, graphic; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Graphic, craft; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Linoleum block print; Clean cuts; Black, White, or multi block color; Ink texture, paper; Simplified shapes',
       creative_brief:
-        'Apply linocut relief printing to any input: smooth carved curves, bold negative-space cuts, flat ink planes, slight registration wobble, and hand-pulled pressure texture. Keep graphic print immediacy without requiring poster subjects, protest art, animals, portraits, or workshop tools.',
+        "Apply Linocut as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Linoleum block print, Clean cuts, Ink texture, paper without requiring the card image's original subject.",
     },
   },
   {
@@ -48,19 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Woodcut',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Relief block print',
-      subject_treatment: 'Thick, angular, gouged',
-      color_and_tone: 'Black and White high contrast',
-      lighting_and_shadow: 'Stark',
-      texture_and_material: 'Wood grain, ink squash',
-      camera_and_composition: 'Angular forms',
-      atmosphere_and_mood: 'Dramatic, primitive',
-      rendering_and_quality: 'German expressionism, bold',
-      key_features: 'Gouge marks',
+      aesthetic:
+        'Woodcut acts as a transferable art-medium router: start from Relief block print, Gouge marks and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Thick, angular, gouged; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black and White high contrast; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Stark; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Wood grain, ink squash; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Angular forms; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dramatic, primitive; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with German expressionism, bold; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Relief block print; Gouge marks; Black and White high contrast; Wood grain, ink squash; Angular forms',
       creative_brief:
-        'Apply woodcut print logic to any input: gouged white channels, raised black ink shapes, visible wood grain, rough relief edges, and reduction-carved contrast. Keep block-print force without requiring folk scenes, waves, landscapes, animals, or historical illustration.',
+        "Apply Woodcut as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Relief block print, Gouge marks, Wood grain, ink squash without requiring the card image's original subject.",
     },
   },
   {
@@ -68,20 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Screenprint (Serigraphy)',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Silkscreen poster',
-      subject_treatment: 'No outlines, color shapes',
-      color_and_tone: 'Flat, vibrant, layered',
+      aesthetic:
+        'Screenprint (Serigraphy) acts as a transferable art-medium router: start from Silkscreen poster, Layered colors and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through No outlines, color shapes; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Flat, vibrant, layered; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Lighting for Screenprint (Serigraphy): purposeful key, bounce, rim, shadow depth, and focal readability matched to 3. Printmaking.',
-      texture_and_material: 'Mesh pattern, ink overlay',
-      camera_and_composition: 'Misregistration (offset)',
-      atmosphere_and_mood: 'Commercial, bold',
-      rendering_and_quality: 'Warhol, pop art',
-      key_features: 'Layered colors',
+        'Handle light through Lighting for Screenprint (Serigraphy): purposeful key, bounce, rim, shadow depth, and focal readability matched to 3. Printmaking; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Mesh pattern, ink overlay; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Misregistration (offset); compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Commercial, bold; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Warhol, pop art; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Silkscreen poster; Layered colors; Flat, vibrant, layered; Mesh pattern, ink overlay; Misregistration (offset)',
       creative_brief:
-        'Apply screenprint/serigraphy logic to any input: mesh-pulled ink, flat separated color passes, bold registration offsets, opaque poster planes, and reproduction-first contrast. Keep graphic commercial punch without requiring slogans, portraits, pop icons, product ads, or readable text.',
+        "Apply Screenprint (Serigraphy) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Silkscreen poster, Layered colors, Mesh pattern, ink overlay without requiring the card image's original subject.",
     },
   },
   {
@@ -89,19 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Monotype',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Single painterly print',
-      subject_treatment: 'Soft, smashed paint',
-      color_and_tone: 'Muted, blended',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Glass transfer, paper',
-      camera_and_composition: 'Blurred',
-      atmosphere_and_mood: 'Ghostly, soft',
-      rendering_and_quality: 'Unique, expressive',
-      key_features: 'Transfer texture',
+      aesthetic:
+        'Monotype acts as a transferable art-medium router: start from Single painterly print, Transfer texture and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Soft, smashed paint; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Muted, blended; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Glass transfer, paper; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Blurred; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Ghostly, soft; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Unique, expressive; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Single painterly print; Transfer texture; Muted, blended; Glass transfer, paper; Blurred',
       creative_brief:
-        'Apply monotype transfer behavior to any input: single-pull softness, glass-plate smear, accidental blending, pressure blur, and unrepeatable painterly transfer marks. Keep one-off print spontaneity without requiring botanical subjects, abstract plates, studio tools, or edition context.',
+        "Apply Monotype as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Single painterly print, Transfer texture, Glass transfer, paper without requiring the card image's original subject.",
     },
   },
   {
@@ -109,19 +153,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Aquatint',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Tonal etching',
-      subject_treatment: 'Subject reduced to tonal areas',
-      color_and_tone: 'Greyscale, sepia',
-      lighting_and_shadow: 'Soft gradients',
-      texture_and_material: 'Rosin dust, granular',
-      camera_and_composition: 'Compose for Aquatint using its key spatial cues: Granular tone.',
-      atmosphere_and_mood: 'Dark, moody',
-      rendering_and_quality: 'Atmospheric tonal etching with granular dark-field control',
-      key_features: 'Granular tone',
+      aesthetic:
+        'Aquatint acts as a transferable art-medium router: start from Tonal etching, Granular tone and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Subject reduced to tonal areas; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Greyscale, sepia; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft gradients; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Rosin dust, granular; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Aquatint using its key spatial cues: Granular tone; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dark, moody; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Atmospheric tonal etching with granular dark field control; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'Tonal etching; Granular tone; Greyscale, sepia; Rosin dust, granular',
       creative_brief:
-        'Apply aquatint tonal printmaking to any input: rosin-grain texture, acid-built darkness, stop-out protected highlights, particulate shadow, and atmospheric intaglio tone. Keep chemical mood fields without requiring landscapes, weather, old plates, or narrative illustration.',
+        "Apply Aquatint as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Tonal etching, Granular tone, Rosin dust, granular without requiring the card image's original subject.",
     },
   },
   {
@@ -129,19 +181,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mezzotint',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Dark to light engraving',
-      subject_treatment: 'Subject reduced to rich black masses',
-      color_and_tone: 'Deep black, velvet grey',
-      lighting_and_shadow: 'Dramatic, emerging from dark',
-      texture_and_material: 'Rocker tool marks',
-      camera_and_composition: 'Compose for Mezzotint using its key spatial cues: Rich blacks.',
-      atmosphere_and_mood: 'Night, dramatic',
-      rendering_and_quality: 'Velvety, detailed',
-      key_features: 'Rich blacks',
+      aesthetic:
+        'Mezzotint acts as a transferable art-medium router: start from Dark to light engraving, Rich blacks and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Subject reduced to rich black masses; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Deep black, velvet grey; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Dramatic, emerging from dark; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Rocker tool marks; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Mezzotint using its key spatial cues: Rich blacks; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Night, dramatic; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Velvety, detailed; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Dark to light engraving; Rich blacks; Deep black, velvet grey; Rocker tool marks',
       creative_brief:
-        'Apply mezzotint darkness to any input: rocked-plate grain, velvet black fields, burnished highlights, smoky tonal transitions, and light scraped out of ink. Keep nocturnal print depth without requiring portraits, interiors, candles, old-master subjects, or antique framing.',
+        "Apply Mezzotint as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Dark to light engraving, Rich blacks, Rocker tool marks without requiring the card image's original subject.",
     },
   },
   {
@@ -149,19 +210,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rubber Stamp',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable stamp text',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable stamp text, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Hand stamped image',
-      subject_treatment: 'Broken, uneven ink',
-      color_and_tone: 'Red, Black, Blue ink',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Ink pad, paper grain',
-      camera_and_composition: 'Incomplete impression',
-      atmosphere_and_mood: 'Official, rough, repetitive',
-      rendering_and_quality: 'Rough mechanical impression with hand-pressure variance',
-      key_features: 'Incomplete impression',
+      aesthetic:
+        'Rubber Stamp acts as a transferable art-medium router: start from Hand stamped image, Incomplete impression and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Broken, uneven ink; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Red, Black, Blue ink; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Ink pad, paper grain; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Incomplete impression; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Official, rough, repetitive; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Rough mechanical impression with hand pressure variance; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Hand stamped image; Incomplete impression; Red, Black, Blue ink; Ink pad, paper grain',
       creative_brief:
-        'Apply rubber-stamp printing to any input: inkpad pressure, incomplete impressions, broken edges, alignment wobble, repeated mechanical marks, and ink fatigue. Keep tactile repetition without requiring labels, office forms, postage, logos, or readable text.',
+        "Apply Rubber Stamp as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Hand stamped image, Incomplete impression, Ink pad, paper grain without requiring the card image's original subject.",
     },
   },
   {
@@ -169,22 +239,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Security Engraving',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, currency requirement, readable denomination, portrait requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, currency requirement, readable denomination, portrait requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
       aesthetic:
-        'Security engraving style with guilloche precision and anti-counterfeit line density',
-      subject_treatment: 'Precise parallel lines',
-      color_and_tone: 'Green, Grey, Monochrome',
-      lighting_and_shadow: 'Linear shading',
-      texture_and_material: 'Cotton paper',
+        'Security Engraving acts as a transferable art-medium router: start from Security engraving style with guilloche precision and anti counterfeit line density, Guilloche patterns and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Precise parallel lines; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Green, Grey, Monochrome; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Linear shading; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Cotton paper; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Security Engraving using its key spatial cues: Guilloche patterns.',
-      atmosphere_and_mood: 'Serious, valuable',
+        'Structure the image through Compose for Security Engraving using its key spatial cues: Guilloche patterns; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Serious, valuable; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Official high-detail engraving without requiring currency, certificates, seals, or portraits',
-      key_features: 'Guilloche patterns',
+        'Finish with Official high detail engraving without requiring currency, certificates, seals, or portraits; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Security engraving style with guilloche precision and anti counterfeit line density; Guilloche patterns; Green, Grey, Monochrome; Cotton paper',
       creative_brief:
-        'Apply security-engraving precision to any input: ultra-fine parallel lines, guilloche geometry, micro-pattern density, exact hatch curvature, and anti-counterfeit line discipline. Keep trust-through-detail without requiring currency, portraits, seals, certificates, or denominations.',
+        "Apply Security Engraving as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Security engraving style with guilloche precision and anti counterfeit line density, Guilloche patterns, Cotton paper without requiring the card image's original subject.",
     },
   },
   {
@@ -192,19 +268,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Drypoint',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Scratched metal print',
-      subject_treatment: 'Velvety, burred lines',
-      color_and_tone: 'Black ink, warm paper',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Ink blur',
-      camera_and_composition: 'Compose for Drypoint using its key spatial cues: Burr texture.',
-      atmosphere_and_mood: 'Soft, rich',
-      rendering_and_quality: 'Expressive, short-run',
-      key_features: 'Burr texture',
+      aesthetic:
+        'Drypoint acts as a transferable art-medium router: start from Scratched metal print, Burr texture and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Velvety, burred lines; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black ink, warm paper; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Ink blur; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Drypoint using its key spatial cues: Burr texture; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Soft, rich; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Expressive, short run; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'Scratched metal print; Burr texture; Black ink, warm paper; Ink blur',
       creative_brief:
-        'Apply drypoint intaglio to any input: needle-scratched lines, burr-held ink, velvety dark halos, plate-pressure softness, and slightly fragile edition wear. Keep direct-metal intimacy without requiring portraits, landscapes, antique plates, or print-shop context.',
+        "Apply Drypoint as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Scratched metal print, Burr texture, Ink blur without requiring the card image's original subject.",
     },
   },
   {
@@ -212,19 +296,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Risograph',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Digital duplicator print',
-      subject_treatment: 'Dithered',
-      color_and_tone: 'Neon pink, blue, yellow, grain',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Rice paper, dithering',
-      camera_and_composition: 'Misregistration',
-      atmosphere_and_mood: 'Fun, indie, handmade, slightly unstable',
-      rendering_and_quality: 'Zine, retro, cheap',
-      key_features: 'Grainy dither',
+      aesthetic:
+        'Risograph acts as a transferable art-medium router: start from Digital duplicator print, Grainy dither and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Dithered; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Neon pink, blue, yellow, grain; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Rice paper, dithering; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Misregistration; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Fun, indie, handmade, slightly unstable; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Zine, retro, cheap; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Digital duplicator print; Grainy dither; Neon pink, blue, yellow, grain; Rice paper, dithering; Misregistration',
       creative_brief:
-        'Apply Risograph duplication to any input: soy-ink grain, neon spot colors, drum-print texture, dithered tonal fields, paper absorption, and charming misregistration. Keep cheap vivid instability without requiring zines, posters, typography, flyers, or student-print context.',
+        "Apply Risograph as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Digital duplicator print, Grainy dither, Rice paper, dithering without requiring the card image's original subject.",
     },
   },
   {
@@ -232,19 +325,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Halftone (Newspaper)',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable headline, newspaper layout requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable headline, newspaper layout requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Vintage halftone newsprint reproduction',
-      subject_treatment: 'Dot pattern',
-      color_and_tone: 'Black dots on newsprint',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Cheap paper, ink smudge',
-      camera_and_composition: 'Pixelated by dots',
-      atmosphere_and_mood: 'Vintage, gritty',
-      rendering_and_quality: 'Low res, mass media',
-      key_features: 'Visible dots',
+      aesthetic:
+        'Halftone (Newspaper) acts as a transferable art-medium router: start from Vintage halftone newsprint reproduction, Visible dots and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Dot pattern; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black dots on newsprint; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Cheap paper, ink smudge; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Pixelated by dots; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Vintage, gritty; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Low res, mass media; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Vintage halftone newsprint reproduction; Visible dots; Black dots on newsprint; Cheap paper, ink smudge; Pixelated by dots',
       creative_brief:
-        'Apply newspaper halftone to any input: visible dot matrix, grey through dot spacing, cheap yellowing paper, ink absorption, coarse reproduction, and degraded mass-print urgency. Keep press texture without requiring headlines, captions, columns, photos, or newspaper layout.',
+        "Apply Halftone (Newspaper) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Vintage halftone newsprint reproduction, Visible dots, Cheap paper, ink smudge without requiring the card image's original subject.",
     },
   },
   {
@@ -252,20 +354,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cyanotype',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, botanical requirement, architecture requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, botanical requirement, architecture requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Sun print blueprint',
-      subject_treatment: 'White silhouettes',
-      color_and_tone: 'Prussian Blue and White',
-      lighting_and_shadow: 'Inverted (negative)',
-      texture_and_material: 'Watercolor paper',
-      camera_and_composition: 'Silhouette only',
-      atmosphere_and_mood: 'Blue, scientific',
+      aesthetic:
+        'Cyanotype acts as a transferable art-medium router: start from Sun print blueprint, Blue monochrome and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through White silhouettes; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Prussian Blue and White; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Inverted (negative); translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Watercolor paper; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Silhouette only; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Blue, scientific; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Scientific photogram clarity without requiring plants, plans, or buildings',
-      key_features: 'Blue monochrome',
+        'Finish with Scientific photogram clarity without requiring plants, plans, or buildings; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Sun print blueprint; Blue monochrome; Prussian Blue and White; Watercolor paper; Silhouette only',
       creative_brief:
-        'Apply cyanotype process to any input: Prussian blue monochrome, UV-exposure softness, paper fiber, contact-print whites, rinsed edges, and scientific photogram calm. Keep sun-printed material logic without requiring plants, specimen sheets, blueprints, labels, or archival catalog layouts.',
+        "Apply Cyanotype as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Sun print blueprint, Blue monochrome, Watercolor paper without requiring the card image's original subject.",
     },
   },
   {
@@ -273,19 +383,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lithography',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Stone print',
-      subject_treatment: 'Crayon-like texture',
-      color_and_tone: 'Soft blacks, greys',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Limestone grain',
-      camera_and_composition: 'Compose for Lithography using its key spatial cues: Grainy texture.',
-      atmosphere_and_mood: 'Artistic, soft',
-      rendering_and_quality: 'Stone-print poster softness with faithfully transferred crayon grain',
-      key_features: 'Grainy texture',
+      aesthetic:
+        'Lithography acts as a transferable art-medium router: start from Stone print, Grainy texture and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Crayon like texture; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Soft blacks, greys; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Limestone grain; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Lithography using its key spatial cues: Grainy texture; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Artistic, soft; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Stone print poster softness with faithfully transferred crayon grain; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'Stone print; Grainy texture; Soft blacks, greys; Limestone grain',
       creative_brief:
-        'Apply lithographic print behavior to any input: crayon-like stone grain, grease-water separation, soft tonal transfer, paper pressure, and subtle speckled drawing texture. Keep chemical print softness without requiring posters, portraits, theatre bills, stones, or edition markings.',
+        "Apply Lithography as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Stone print, Grainy texture, Limestone grain without requiring the card image's original subject.",
     },
   },
   {
@@ -293,19 +411,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Collagraph',
     category: '3. Printmaking',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal landscape, recognizable found objects',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, literal landscape, recognizable found objects, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong print process',
     style: {
-      aesthetic: 'Textured collage print',
-      subject_treatment: 'Embossed textures',
-      color_and_tone: 'Earthy, multi-colored',
-      lighting_and_shadow: 'Relief',
-      texture_and_material: 'Sand, glue, fabric',
-      camera_and_composition: 'Abstracted',
-      atmosphere_and_mood: 'Rough, organic',
-      rendering_and_quality: 'Experimental, tactile',
-      key_features: 'Heavy texture',
+      aesthetic:
+        'Collagraph acts as a transferable art-medium router: start from Textured collage print, Heavy texture and print-process system built from matrix marks, ink transfer, pressure, registration, plate or block artifacts, and paper absorption, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Embossed textures; preserve the prompt subject while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark systems, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Earthy, multi colored; use palette as ink behavior: limited plates, overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Relief; translate light into line density, dot frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Sand, glue, fabric; surface detail should reveal paper fibers, plate marks, burr, gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Abstracted; compose through print registration, cut rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Rough, organic; derive mood from hand pressure, mechanical reproduction, archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Experimental, tactile; finish as a credible print artifact with exact mark logic, restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Textured collage print; Heavy texture; Earthy, multi colored; Sand, glue, fabric; Abstracted',
       creative_brief:
-        'Apply collagraph print materiality to any input: raised sand/glue/fiber texture, relief valleys holding ink, irregular pressure, cardboard-like surface memory, and tactile printed terrain. Keep material sacrifice visible without requiring literal collage objects, landscapes, or printing plates.',
+        "Apply Collagraph as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Textured collage print, Heavy texture, Sand, glue, fabric without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

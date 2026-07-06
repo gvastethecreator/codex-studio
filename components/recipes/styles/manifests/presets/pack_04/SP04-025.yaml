@@ -12,26 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Felt-tip/alcohol-marker illustration with spontaneous saturation behavior
-  subject_treatment: Broad marker strokes, edge bleed, and overlap-driven contour definition
-  color_and_tone: High-saturation marker gamut with layered translucent mixes
-  lighting_and_shadow: Flat-to-minimal light modeling via tonal marker passes
-  texture_and_material: Absorbent paper bleed, feathered edges, occasional smudge drag
-  camera_and_composition: Loose perspective and gestural simplification
-  atmosphere_and_mood: Casual, energetic, improvised
-  rendering_and_quality: Bold sketchbook immediacy with visible hand-speed decisions
-  key_features: Stroke stacking, bleed halos, quick gradient blends via overlap
+  aesthetic: >-
+    Felt Tip Marker acts as a transferable illustration router: start from Felt-tip/alcohol-marker
+    illustration with spontaneous saturation behavior, Stroke stacking, bleed halos, quick gradient
+    blends via overlap and storybook and friendly-illustration system built from approachable
+    shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then
+    apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Broad marker strokes, edge bleed, and overlap-driven
+    contour definition; preserve the requested subject while softening, simplifying, miniaturizing,
+    paper-building, mark-making, or diagramming it according to the named medium, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with High-saturation marker gamut with layered translucent mixes; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Flat-to-minimal light modeling via tonal marker passes; shape light through
+    soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Absorbent paper bleed, feathered edges, occasional smudge drag; surface detail should
+    show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker
+    laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Loose perspective and gestural simplification; compose with clear
+    silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or
+    gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Casual, energetic, improvised, mood carried by Felt Tip Marker craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Bold sketchbook immediacy with visible hand-speed decisions; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Felt-tip/alcohol-marker illustration with spontaneous saturation behavior; Stroke stacking,
+    bleed halos, quick gradient blends via overlap; High-saturation marker gamut with layered
+    translucent mixes; Absorbent paper bleed, feathered edges, occasional smudge drag; Loose
+    perspective and gestural simplification
   creative_brief: >-
-    Apply felt-tip marker behavior to any input: fast stroke confidence, transparent layering, edge bleed,
-    overlap gradients, feathered paper artifacts, and occasional smudge drag should stay bold and flexible
-    without requiring sketchbook pages, fashion poses, product drawings, or fixed scene cues.
+    Apply Felt Tip Marker as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Felt-tip/alcohol-marker illustration with spontaneous saturation behavior, Stroke stacking,
+    bleed halos, quick gradient blends via overlap, Absorbent paper bleed, feathered edges,
+    occasional smudge drag without requiring the card image's original subject.
 avoidRules:
   - paint
   - blend
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-025.webp
 attributes:
-  negativePrompt: paint, blend
+  negativePrompt: >-
+    paint, blend, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

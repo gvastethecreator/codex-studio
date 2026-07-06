@@ -13,25 +13,69 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out
-    details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares
-  subject_treatment: Thin anxious contours, noodle panic marks, weird consumer-product curves, restrained gross-out accents
-  color_and_tone: Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream, fluorescent green
-  lighting_and_shadow: Flat sitcom illumination, fluorescent discomfort, no heroic contrast, ambient suburban wash
-  texture_and_material: Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime
-  camera_and_composition: Mundane forms warped into unease, noodle bends, small panic gestures, consumer-object exaggeration
-  atmosphere_and_mood: Neurotic, suburban, goofy, overstimulated
-  rendering_and_quality: 90s suburban satire cartoon, neurotic mundanity, soft-color discomfort
+    Rocko's Modern Life - Beige Suburban Anxiety acts as a transferable cinematic-media router:
+    start from Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture,
+    gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming
+    nightmares, Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity,
+    consumerist clutter logic and caricature and cartoon system built from exaggeration rules, line
+    instability, body-shape grammar, adult-comedy timing, texture economy, and expressive
+    deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Thin anxious contours, noodle panic marks, weird
+    consumer-product curves, restrained gross-out accents; preserve the requested subject while
+    exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or
+    gross-up detail according to the preset, keeping the requested identity, silhouette, action,
+    object function, or setting legible.
+  color_and_tone: >-
+    Build color with Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream,
+    fluorescent green; use color through loud primaries, beige suburban anxiety, marker flats, mucus
+    greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure,
+    with deliberate value grouping, accent control, and process-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat sitcom illumination, fluorescent discomfort, no emblematic contrast,
+    ambient suburban wash; shape light minimally through flat cartoon value, poster contrast, marker
+    fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and
+    shadow structure support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime;
+    surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line,
+    doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Mundane forms warped into unease, noodle bends, small panic
+    gestures, consumer-object exaggeration; compose through readable gag timing, grotesque close-up,
+    slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without
+    copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing
+    the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Neurotic, suburban, goofy, overstimulated, mood carried by Rocko's Modern Life -
+    Beige Suburban Anxiety media process, signal pressure, and visual restraint; derive mood from
+    adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia,
+    or anti-polish personality, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with 90s suburban satire cartoon, neurotic mundanity, soft-color discomfort; finish with
+    clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness,
+    school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
   key_features: >-
-    Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter
-    logic
+    Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle
+    gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming
+    nightmares; Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity,
+    consumerist clutter logic; Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper
+    cream, fluorescent green; Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer
+    sheen, mild grime; Mundane forms warped into unease, noodle bends, small panic gestures,
+    consumer-object exaggeration
   creative_brief: >-
-    Apply beige suburban anxiety as style: pastel discomfort, simple contours, noodle-like panic, awkward
-    consumer shapes, and mundane details that feel quietly wrong. Avoid specific interiors, errands,
-    appliances, or suburb settings. The tone should be goofy dread under soft colors. Apply Rocko's Modern
-    Life - Beige Suburban Anxiety as a portable cinematic/camera style over any input: preserve its lens
-    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
-    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Apply Rocko's Modern Life - Beige Suburban Anxiety as a cinematic-media preset over prompt X:
+    preserve the user's requested subject, then route lens behavior, palette, light, signal or film
+    texture, composition, mood, and final media craft through Neurotic suburban absurdism, anxious
+    simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel
+    wallpaper discomfort, mundane things becoming nightmares, Beige discomfort, weird brand-like
+    shapes, noodle panic marks, satirical mundanity, consumerist clutter logic, Pastel TV cel
+    texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime without requiring the
+    card image's original subject.
 avoidRules:
   - digital
   - HD
@@ -42,10 +86,26 @@ avoidRules:
   - single panel
   - vertical scrolling
   - modern
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact character likeness
+  - readable gag text
+  - generic cute mascot
+  - smooth anime polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-106.webp
 attributes:
-  negativePrompt: digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern
+  negativePrompt: >-
+    digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official
+    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
+    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
+    readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

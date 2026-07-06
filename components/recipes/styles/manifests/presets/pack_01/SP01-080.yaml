@@ -12,28 +12,78 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: ID photo
-  subject_treatment: Front-facing centered geometry
-  color_and_tone: White background
-  lighting_and_shadow: Flat, shadowless
+  aesthetic: >-
+    Passport Photo acts as a transferable photographic style router: begin from ID photo, White
+    depth field, and portrait and studio photography system built from lens discipline, subject
+    hierarchy, controlled retouching, and believable surface detail, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Front-facing central geometry; preserve prompt identity while
+    using focal priority, flattering or deliberately institutional distance, surface realism, and
+    edge control without requiring a human face, keeping the original subject, pose, species,
+    object, or environment legible.
+  color_and_tone: >-
+    Grade with White depth field; grade neutrals, skinlike or material tones, backdrop color,
+    cosmetic warmth, and controlled contrast as photographic capture decisions, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Flat, shadowless; make key, fill, rim, catchlight, background falloff, and shadow shape
+    visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and
+    source motivation.
   texture_and_material: >-
-    Clean photographic skin, plain backdrop paper, controlled retouch, official-document sharpness, and fabric
-    detail kept subtle.
-  camera_and_composition: Neutral administrative flattening
-  atmosphere_and_mood: Official, deadpan
-  rendering_and_quality: Bureaucratic, boring
-  key_features: White background
+    Render Clean photographic skin, plain backdrop paper, controlled retouch, official-document
+    sharpness, and fabric detail kept subtle; retain pores, fabric, hair, props, paper, backdrop
+    sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy
+    smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Neutral administrative flattening; use portrait lens compression, central
+    authority, intimate framing distance, frontal ID geometry, or editorial negative space without
+    forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Official, deadpan; derive mood from proximity, pose pressure, institutional
+    polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Bureaucratic, boring; finish as real photography with clean optics, plausible
+    retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    ID photo; White depth field; White depth field; Flat, shadowless; Neutral administrative
+    flattening
   creative_brief: >-
-    Passport-photo style strips any subject to administrative minimum: white background, centered front-facing
-    geometry, flat shadowless light, neutral expression logic, and bureaucratic deadpan. Apply ID-photo
-    certification without requiring human face, features, or biography.
+    Apply Passport Photo as a photographic preset over prompt X: preserve the user's requested
+    subject, then route ID photo, White depth field, Flat, shadowless, Clean photographic skin,
+    plain backdrop paper, controlled retouch, official-document sharpness, and fabric detail kept
+    subtle, and Neutral administrative flattening through optics, exposure, palette, surface
+    response, timing, and finish without requiring the card image's original subject.
 avoidRules:
   - smiling
   - artistic
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-080.webp
 attributes:
-  negativePrompt: smiling, artistic
+  negativePrompt: >-
+    smiling, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin,
+    over-smoothed plastic retouching, distorted anatomy, generic beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

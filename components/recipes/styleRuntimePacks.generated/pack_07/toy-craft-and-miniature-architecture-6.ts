@@ -7,278 +7,290 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-065',
     name: 'Papercraft Diorama Construction',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'photoreal material finish, full-scale real scene',
+    negativePrompt:
+      'photoreal material finish, full-scale real scene, photoreal full-scale scene, museum vitrine, city miniature postcard, people, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Papercraft Diorama Construction within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Papercraft Diorama Construction's specific style identity.",
+        'Papercraft Diorama Construction acts as a transferable architecture/interior router: visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency, fiber texture; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Papercraft Diorama Construction through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Papercraft Diorama Construction-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Papercraft Diorama Construction recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Papercraft Diorama Construction: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Papercraft Diorama Construction: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Papercraft Diorama Construction: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Papercraft Diorama Construction with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Papercraft Diorama Construction's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Papercraft Diorama Construction into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Papercraft Diorama Construction after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies visible tabs, score lines, layered pop-up planes, kraft board, tracing paper translucency, fiber texture, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-066',
     name: 'Studded ABS Brick System',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'seamless photoreal material without studs, full-scale realistic construction',
+    negativePrompt:
+      'seamless photoreal material without studs, full-scale realistic construction, brand logo, minifigure/person, photoreal masonry, full-scale construction site, market aisle, library aisle, corridor, empty abstraction, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Studded ABS Brick System within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Studded ABS Brick System's specific style identity.",
+        'Studded ABS Brick System acts as a transferable architecture/interior router: visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Studded ABS Brick System through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Studded ABS Brick System-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Studded ABS Brick System recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Studded ABS Brick System: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Studded ABS Brick System: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Studded ABS Brick System: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Studded ABS Brick System with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Studded ABS Brick System's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Studded ABS Brick System into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Studded ABS Brick System after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies visible studs, interlocking seams, stepped block massing, injected-plastic highlights, primary color blocking, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-067',
     name: 'Wet-Sand Ephemeral Modeling',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'hard carved stone finish replacing wet sand, permanent masonry read',
+    negativePrompt:
+      'hard carved stone finish replacing wet sand, hard carved stone, permanent masonry, beach crowd, person, toy plastic, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Wet-Sand Ephemeral Modeling within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Wet-Sand Ephemeral Modeling's specific style identity.",
+        'Wet-Sand Ephemeral Modeling acts as a transferable architecture/interior router: bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Wet-Sand Ephemeral Modeling through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Wet-Sand Ephemeral Modeling-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Wet-Sand Ephemeral Modeling recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Wet-Sand Ephemeral Modeling: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Wet-Sand Ephemeral Modeling: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Wet-Sand Ephemeral Modeling: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Wet-Sand Ephemeral Modeling with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Wet-Sand Ephemeral Modeling's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Wet-Sand Ephemeral Modeling into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Wet-Sand Ephemeral Modeling after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies bucket-mold cylinders, drip ridges, granular wet crust, shell inclusions, softened erosion edges, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-068',
     name: 'Corrugated Cardboard Improvisation',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'solid wall',
+    negativePrompt:
+      'solid wall, playroom scene, child/person, toy clutter, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Corrugated Cardboard Improvisation within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Corrugated Cardboard Improvisation's specific style identity.",
+        'Corrugated Cardboard Improvisation acts as a transferable architecture/interior router: kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Corrugated Cardboard Improvisation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Corrugated Cardboard Improvisation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Corrugated Cardboard Improvisation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Corrugated Cardboard Improvisation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Corrugated Cardboard Improvisation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Corrugated Cardboard Improvisation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Corrugated Cardboard Improvisation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Corrugated Cardboard Improvisation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Corrugated Cardboard Improvisation into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Corrugated Cardboard Improvisation after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies kraft fiber, folded flaps, shiny packing tape, hand-cut openings, marker linework, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-069',
     name: 'Pressurized Vinyl Playform',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'hard edges',
+    negativePrompt:
+      'hard edges, bounce castle, amusement park scene, children/person, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Soft pressurized architecture with pneumatic mass, festive color blocking and temporary spatial logic.',
+        'Pressurized Vinyl Playform acts as a transferable architecture/interior router: rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Bulging pneumatic tubes, welded segmentation, modular rounded lobes and hose-anchor geometry.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'High-saturation vinyl pink, electric yellow, safety orange, cobalt blue, bright green, and neutral seam-strip accents',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Diffuse outdoor sun, strong vinyl speculars, translucent panel glow and soft bloom on inflated edges.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Glossy PVC skin, heat-weld ridges, tensioned membranes, load wrinkles and blower hardware.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Soft-volume inflation bulge and pressure-rounded edge behavior across all masses',
-      atmosphere_and_mood: 'Energetic, kinetic and festive, unmistakably temporary.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Legible playful inflatable rendering with high material fidelity and controlled temporary-installation gloss.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Pressurized tubular frame, heat-weld seam grid, vivid zoning, mesh panels and visible inflation nodes.',
+        'rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Apply inflatable vinyl behavior when compatible: pressure-rounded edges, heat-weld seams, PVC highlights, temporary joints and safety-pop color. The style should suggest pressure, play and temporality without turning every subject into a park, castle or literal inflatable volume.',
+        'Apply Pressurized Vinyl Playform after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies rounded pressure tubes, heat-welded seams, glossy PVC highlights, safety-pop color blocking, blower valve hardware, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-070',
     name: 'Confectionery Structural Ornament',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'literal gingerbread house only, bakery product photo, spoiled food',
+    negativePrompt:
+      'required gingerbread house only, bakery product photo, spoiled food, required holiday gingerbread house only, dessert table, person, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal holiday gingerbread house only, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Festive edible construction with confectionery ornament logic and handmade storybook mass.',
+        'Confectionery Structural Ornament acts as a transferable architecture/interior router: piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Piped icing contours, scalloped cookie tiling, repeated candy columns and rounded pretzel frames.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Baked ginger brown, royal-icing white, peppermint red, sugar green, candy pink accents, warm caramel notes, and sprinkle multicolor highlights',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Warm amber interior glow, sugar-crystal sparkle, soft festive twinkle and low-contrast cozy shadow.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Baked cookie grain, raised icing relief, crystalline sugar dust, hard candy gloss and chocolate glaze accents.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Icing seam swelling, sugar sag, candy-module compression and softened baked geometry.',
-      atmosphere_and_mood: 'Festive, indulgent and cozy, with celebratory craft ritual.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'High-detail confection architecture with legible edible materiality and precise handmade decoration.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Icing seams, gumdrop nodes, cookie-roof rhythm, peppermint line motifs and sprinkle microdetail.',
+        'piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Turn any theme into an edible ornamental system: icing as construction line, cookie as mass, sugar as texture and candy as modular accent. It can suggest storybook architecture, but does not require a holiday gingerbread house, bakery product photo or dessert table.',
+        'Apply Confectionery Structural Ornament after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies piped icing seams, cookie-grain mass, candy-column modules, sugar sparkle, peppermint accents, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-071',
     name: 'Fungal Vernacular Miniature',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'square',
+    negativePrompt:
+      'square, fairy cottage cliche, forest floor postcard, creature/person, square house, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Fungal Vernacular Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Fungal Vernacular Miniature's specific style identity.",
+        'Fungal Vernacular Miniature acts as a transferable architecture/interior router: matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Fungal Vernacular Miniature through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Fungal Vernacular Miniature-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Fungal Vernacular Miniature recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Fungal Vernacular Miniature: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Fungal Vernacular Miniature: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Fungal Vernacular Miniature: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Fungal Vernacular Miniature with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Fungal Vernacular Miniature's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Fungal Vernacular Miniature into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Fungal Vernacular Miniature after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies matte fungal skin, cream speckling, gilled underside texture, mossy humid base, spore dust, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-072',
     name: 'Bottle-Glass Curio Miniature',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'open ocean background, seascape dominance, full maritime landscape',
+    negativePrompt:
+      'open ocean distant-plane, seascape dominance, open ocean, seascape, full maritime landscape, person, readable label, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Bottle-Glass Curio Miniature within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bottle-Glass Curio Miniature's specific style identity.",
+        'Bottle-Glass Curio Miniature acts as a transferable architecture/interior router: cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Bottle-Glass Curio Miniature through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Bottle-Glass Curio Miniature-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Bottle-Glass Curio Miniature recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Bottle-Glass Curio Miniature: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Bottle-Glass Curio Miniature: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Bottle-Glass Curio Miniature: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Bottle-Glass Curio Miniature with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Bottle-Glass Curio Miniature's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Bottle-Glass Curio Miniature into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Bottle-Glass Curio Miniature after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies cylindrical bottle refraction, restrictive neck compression, micro rigging or fine craft mesh, cork texture, pale aqua glass tint, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-073',
     name: 'Subterranean Bio-Cutaway',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'flat exterior-only view, uncut surface-only exterior, camera equipment',
+    negativePrompt:
+      'flat exterior-only view, ants, insects, insect colony, ant farm, larvae/eggs, camera equipment, display case, creature focus, gore, body anatomy, flat exterior view, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Subterranean Bio-Cutaway within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Subterranean Bio-Cutaway's specific style identity.",
+        'Subterranean Bio-Cutaway acts as a transferable architecture/interior router: capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Subterranean Bio-Cutaway through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Subterranean Bio-Cutaway-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Subterranean Bio-Cutaway recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Subterranean Bio-Cutaway: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Subterranean Bio-Cutaway: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Subterranean Bio-Cutaway: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Subterranean Bio-Cutaway with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Subterranean Bio-Cutaway's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Subterranean Bio-Cutaway into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Subterranean Bio-Cutaway after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies capillary branching, layered earth strata, nodal cavities, translucent amber gel pockets, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-074',
     name: 'Toy-Scale Sectional Cutaway',
     category: '6. Toy Craft And Miniature Architecture',
-    negativePrompt: 'closed uncut wall hiding section, sealed exterior facade',
+    negativePrompt:
+      'closed uncut wall hiding section, closed facade, sealed wall, dollhouse product photo, person, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Toy-Scale Sectional Cutaway within 6. Toy Craft And Miniature Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Toy-Scale Sectional Cutaway's specific style identity.",
+        'Toy-Scale Sectional Cutaway acts as a transferable architecture/interior router: removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture; fuse it with toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Toy-Scale Sectional Cutaway through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; treat removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Toy-Scale Sectional Cutaway-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth, translucent glass tint, fungal cream, and small playful accents; let source cues such as removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Toy-Scale Sectional Cutaway recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale, and atmosphere from removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Toy-Scale Sectional Cutaway: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Toy-Scale Sectional Cutaway: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic; convert removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Toy-Scale Sectional Cutaway: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through playful craft, fragile impermanence, edible celebration, ecological miniature, curio precision, or sectional wonder without product-photo lock; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Toy-Scale Sectional Cutaway with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean miniature finish with legible material scale, no brand logo, no product catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Toy-Scale Sectional Cutaway's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture; model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams, scale compression, and object-like built logic',
       creative_brief:
-        'Create a style-card that translates Toy-Scale Sectional Cutaway into a portable visual system for 6. Toy Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Toy-Scale Sectional Cutaway after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile texture, toy, craft, and miniature construction grammar with visible fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

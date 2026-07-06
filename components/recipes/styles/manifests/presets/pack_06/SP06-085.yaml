@@ -13,37 +13,74 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Japanese visual novel composite grammar, clean cel rendering over softened photographic or painterly
-    layers, ADV interface framing without readable dialogue, Key visual-arts and Fate/stay night as mood
-    anchors only, choice-branch tension as layout pressure
+    Visual Novel Screen acts as a transferable art-medium router: start from Japanese visual novel
+    composite grammar, clean cel rendering over softened photographic or painterly layers, ADV
+    interface framing without readable dialogue, Key visual arts and Fate/stay night as mood anchors
+    only, choice branch tension as layout pressure, Cel layer over softened support image, dialogue
+    box style framing without legible text, ADV interface geometry, gentle vignette, translucent UI
+    glass and hardware-constrained game-visual system built from display limits, palette budgets,
+    sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the
+    medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Clean cel outlines, layered UI-frame division, translucent lower-third panels, expression-sheet clarity
-    when a subject is present, flat composited depth
+    Transform any prompt subject through Clean cel outlines, layered UI frame division, translucent
+    lower third panels, expression sheet clarity when a subject is present, flat composited depth;
+    preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel,
+    pre-render, screen-grid, or low-bit display behavior, keeping the requested identity,
+    silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    Anime cel colors, desaturated support layers, translucent UI gradients, gentle dusk tones, restrained
-    accent color for selection states
+    Build color with Anime cel colors, desaturated support layers, translucent UI gradients, gentle
+    dusk tones, restrained accent color for selection states; use color through hardware rules:
+    indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients,
+    limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control,
+    and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Diffuse filtered background light, independent cel-layer lighting, gentle vignette framing, soft interface
-    glow
+    Handle light through Diffuse filtered support field light, independent cel layer lighting,
+    gentle vignette framing, soft interface glow; make light emerge from display technology, pixel
+    value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so
+    value structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    Vector-clean cel layer against JPEG-grain or bokeh support layer, UI-glass translucency, mixed-media
-    compositing seams
+    Render Vector clean cel layer against JPEG grain or bokeh support layer, UI glass translucency,
+    mixed media compositing seams; surface detail should show pixels, dithering, scanlines,
+    quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation,
+    keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Static layered background, foreground cel plane, lower-third interface band, optional choice-button
-    overlay, flat composite depth
+    Structure the image through Static layered support field, near field cel plane, lower third
+    interface band, optional choice button overlay, flat composite depth; compose through tile maps,
+    sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI
+    geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Intimate, quiet, suspended, narrative-focused, emotionally charged without requiring specific characters
-    or places
+    Keep the mood Intimate, quiet, suspended, narrative focused, emotionally charged without
+    requiring specific characters or places; derive mood from hardware limitation, arcade spectacle,
+    handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
   rendering_and_quality: >-
-    Visual-novel screenshot aesthetic, ADV-game composite still, emotional interface-forward rendering,
-    anime-game layer polish
+    Finish with Visual novel screenshot aesthetic, ADV game composite still, emotional interface
+    forward rendering, anime game layer polish; finish with faithful era constraints, crisp
+    readability at small scale, and no modern high-resolution smoothing unless the preset asks for
+    baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
   key_features: >-
-    Cel layer over softened support image, dialogue-box style framing without legible text, ADV interface
-    geometry, gentle vignette, translucent UI glass
+    Japanese visual novel composite grammar, clean cel rendering over softened photographic or
+    painterly layers, ADV interface framing without readable dialogue, Key visual arts and Fate/stay
+    night as mood anchors only, choice branch tension as layout pressure; Cel layer over softened
+    support image, dialogue box style framing without legible text, ADV interface geometry, gentle
+    vignette, translucent UI glass; Anime cel colors, desaturated support layers, translucent UI
+    gradients, gentle dusk tones, restrained accent color for selection states; Vector clean cel
+    layer against JPEG grain or bokeh support layer, UI glass translucency, mixed media compositing
+    seams; Static layered support field, near field cel plane, lower third interface band, optional
+    choice button overlay, flat composite depth
   creative_brief: >-
-    The style treats any prompt as a paused narrative interface. Cel-clean forms sit over softened support
-    imagery while translucent panels and choice geometry create emotional pressure without forcing characters,
-    schools or readable text.
+    Apply Visual Novel Screen as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Japanese visual novel composite grammar, clean cel rendering over softened photographic or
+    painterly layers, ADV interface framing without readable dialogue, Key visual arts and Fate/stay
+    night as mood anchors only, choice branch tension as layout pressure, Cel layer over softened
+    support image, dialogue box style framing without legible text, ADV interface geometry, gentle
+    vignette, translucent UI glass, Vector clean cel layer against JPEG grain or bokeh support
+    layer, UI glass translucency, mixed media compositing seams without requiring the card image's
+    original subject.
 avoidRules:
   - action
   - motion
@@ -55,10 +92,25 @@ avoidRules:
   - combat
   - epic
   - cinematic camera
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-085.webp
 attributes:
-  negativePrompt: action, motion, dynamic, 3d, real-time, intense, fast, combat, epic, cinematic camera
+  negativePrompt: >-
+    action, motion, dynamic, 3d, real-time, intense, fast, combat, epic, cinematic camera, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

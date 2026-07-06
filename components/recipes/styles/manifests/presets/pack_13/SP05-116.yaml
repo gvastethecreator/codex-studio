@@ -13,47 +13,91 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Sumi-e impact treatment where pressure-variable brushwork, ink bursts, dry-brush splintering, negative
-    space, and monochrome value arcs imply force
+    Sumi-e Impact Brushstroke operates as a portable anime-lifestyle router: combine Sumi e Impact
+    Brushstroke identity cues through Sumi ink monochrome; pressure variable strokes; dry brush
+    splinters; ink pool wetness; rice paper texture; and negative space impact with broad anime
+    style spectrum grammar with experimental line, material specific finish, auteur adjacent motion,
+    graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies
+    anime style behavior after prompt X rather than a required scene, character, franchise image, or
+    card composition.
   subject_treatment: >-
-    Single-gesture-brushstroke contours, variable-pressure-from-brush, dry-brush-scattering at stroke-end,
-    wet-ink-pooling at stroke-start, economy-of-line philosophy
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Sumi-ink-black, rice-paper-white, vermillion-seal-stamp-red, grey-wash-dilutions, no other colors exist,
-    monochrome-poetry
-  lighting_and_shadow: No lighting, ink-density-as-value, dry-brush-lightness, wet-pool-darkness, negative-space-as illumination
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
+  lighting_and_shadow: >-
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Rice-paper-fiber-absorption, ink-bleed-feathering, dry-brush-splinter-texture, sumi-stick-grind-grain,
-    bamboo-brush-hair-texture, paper-buckling-from-moisture
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Ink splash suggests impact zones, negative space becomes form, brushstroke gesture replaces anatomy, no
-    filled forms, economy of space
-  atmosphere_and_mood: Zen discipline, explosive silence, one-stroke certainty, ink-grind meditation, quiet confidence
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Sumi-e brushstroke anime, zen action aesthetic, ink-wash mastery, single-breath rendering, and
-    calligraphic force essence
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Sumi ink monochrome, pressure-variable strokes, dry-brush splinters, ink-pool wetness, rice-paper texture,
-    and negative-space impact
+    Sumi ink monochrome; pressure variable strokes; dry brush splinters; ink pool wetness; rice
+    paper texture; and negative space impact
   creative_brief: >-
-    Use sumi-e impact brushstroke as calligraphic-force grammar. Any prompt should be shaped by pressure,
-    splintering dry brush, ink pools, and negative-space tension. Fights, swords, warriors, cuts, and literal
-    combat are optional.
+    Use Sumi-e Impact Brushstroke after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sumi
+    ink monochrome, pressure variable strokes, dry brush splinters, ink pool wetness, rice paper
+    texture, and negative space impact, color logic, lighting, material finish, composition rhythm,
+    mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop
+    bundle, title screenshot, or sample-card composition.
 avoidRules:
   - detailed
   - filled
   - colorful
   - gradient
-  - cel-shaded
+  - cel shaded
   - clean outlines
   - rendered
   - polished
   - busy
   - noisy
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-116.webp
 attributes:
-  negativePrompt: detailed, filled, colorful, gradient, cel-shaded, clean outlines, rendered, polished, busy, noisy
+  negativePrompt: >-
+    detailed, filled, colorful, gradient, cel shaded, clean outlines, rendered, polished, busy,
+    noisy, generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title
+    scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal
+    card reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied
+    franchise costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

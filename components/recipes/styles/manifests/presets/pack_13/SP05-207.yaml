@@ -13,32 +13,57 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Production-workday anime cheer where task density, deadline pressure, visible coordination, and hopeful
-    camaraderie drive visual momentum
+    Deadline-Cheer Workflow Density operates as a portable anime-lifestyle router: combine Deadline
+    Cheer Workflow Density identity cues through Checklist logic; production clutter; team chaos
+    coherence; panel geometry; deadline compression; and hopeful work warmth with slice of life and
+    moe grammar with soft acting, comedy timing, healing pace, cozy object care, pastel emotional
+    rhythm, and small world specificity, so the preset supplies anime style behavior after prompt X
+    rather than a required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Workflow clutter rhythm, storyboard-like panel geometry, checklist diagonals, quick reaction silhouettes,
-    and coordinated movement paths
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    rounded shape language, micro-expression timing, soft body or object posture, simple
+    costume/surface detail, and charm through small repeated gestures; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Fluorescent neutrals, sticky-note yellow, monitor blue, coffee brown, commuter red accents, and warm
-    late-night beige
+    Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal
+    greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin
+    or material midtones stable, and palette behavior attached to the prompt instead of pasted anime
+    decoration.
   lighting_and_shadow: >-
-    Mixed fluorescent top-light, cool screen spill, late-night lamp islands, and gray overtime ambience with
-    hopeful warm accents
+    Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim,
+    and flat comedy brightness; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Paper stacks, tablet plastic, cork fibers, worn desks, condensation rings, and compressed work-surface
-    detail
-  camera_and_composition: Tight depth stacking, deadline-compression framing, and motion-led workflow cuts around any subject
-  atmosphere_and_mood: Busy, collaborative, stressed, upbeat, productive
+    Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft
+    marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
+  camera_and_composition: >-
+    Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational
+    crops, and comfort-scale depth without required school setting as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph,
+    awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    Energetic workplace anime rendering with high task readability, controlled clutter, and upbeat
-    professional stress
+    Finish with soft high readability anime finish with stable proportions, gentle denoise, clean
+    pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Checklist logic, production clutter, team-chaos coherence, panel geometry, deadline compression, and
-    hopeful work warmth
+    Checklist logic; production clutter; team chaos coherence; panel geometry; deadline compression;
+    and hopeful work warmth
   creative_brief: >-
-    Use Shirobako as style anchor for deadline-cheer workflow density. Any prompt should gain coordinated
-    hustle, readable task layers, fluorescent pressure, and optimistic professional momentum. Studios, desks,
-    scooters, coffee, and keyframes are optional.
+    Use Deadline-Cheer Workflow Density after prompt X as a transferable anime character/lifestyle
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
+    supplies Checklist logic, production clutter, team chaos coherence, panel geometry, deadline
+    compression, and hopeful work warmth, color logic, lighting, material finish, composition
+    rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed
+    prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -52,12 +77,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - generic moe wallpaper
+  - infantilized styling
+  - school only lock
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-207.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only
+    lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast,
+    generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D
+    render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

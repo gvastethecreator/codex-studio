@@ -13,26 +13,56 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Aged copper patina
-  subject_treatment: Drips
-  color_and_tone: Verdigris (Teal/Green)
-  lighting_and_shadow: Matte
-  texture_and_material: Chalky oxidation
-  camera_and_composition: 'Compose for Copper Patina using its key spatial cues: Green stains.'
-  atmosphere_and_mood: Historic, weathered
-  rendering_and_quality: Historic, oxidized
-  key_features: Green stains
+  aesthetic: >-
+    Copper Patina treats fabrication as visible style language: start from Aged copper patina,
+    Chalky oxidation, and Green stains, then turn manufacturing process, tooling marks, seams,
+    tolerances, and industrial material behavior into portable surface behavior rather than a
+    literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Drips: preserve identity and pose while letting forms carry
+    manufactured seams, tolerances, pressure marks, and finish logic through edge profile, surface
+    breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Verdigris (Teal/Green) as the material palette, with controlled value separation, local
+    color variation, and hue shifts that follow the subject's form rather than flattening it into a
+    pasted texture.
+  lighting_and_shadow: >-
+    Let Matte define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Copper Patina without hiding the prompt subject.
+  texture_and_material: >-
+    Render Chalky oxidation through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Green stains as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Historic, weathered by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Historic, oxidized material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Aged copper patina; Drips; Chalky oxidation; Matte; Green stains
   creative_brief: >-
-    Apply aged copper patina as time made visible: teal and green verdigris blooms, chalky mineral crust,
-    vertical oxidation drips, and muted metallic undertone. If the input has metal, architecture, statue,
-    object, or armor, age it directly; otherwise use copper corrosion as pigment, edge staining, and weathered
-    surface logic without requiring rooftops or monuments.
+    Route any subject through Copper Patina as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Apply aged copper patina as time made
+    visible: teal and green verdigris blooms, chalky mineral crust, vertical oxidation drips, and
+    muted metallic undertone. If the input has metal, architecture, statue, object, or armor, age it
+    directly; otherwise use copper corrosion as pigment, edge staining, and weathered surface logic
+    without requiring rooftops or monuments.
 avoidRules:
   - new penny
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-020.webp
 attributes:
-  negativePrompt: new penny
+  negativePrompt: new penny, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

@@ -12,26 +12,85 @@ tags:
   - illustration-and-graphic-novel
   - editorial-and-poster
 visualDna:
-  aesthetic: Spray over cutout
-  subject_treatment: Bridges
-  color_and_tone: Black on Wall, single-color guerrilla, high-arrest contrast
-  lighting_and_shadow: Flat, street-light ambient, no-studio rawness
-  texture_and_material: Overspray
-  camera_and_composition: Simplified levels
-  atmosphere_and_mood: Rebellious, simple, urban-dissident energy, unauthorized truth
-  rendering_and_quality: Political, street, quick-strike impact, message-first clarity
-  key_features: Bridges, cutout connections, stencil registration
+  aesthetic: >-
+    public-space Protest Stencil Art acts as a transferable illustration router: start from Spray
+    over cutout, protest-stencil print language with cut bridges, hard one-ink silhouettes,
+    overspray halos, and public-message compression, Bridges, cutout connections, stencil
+    registration and editorial graphic system built from poster hierarchy, symbolic compression,
+    typography-as-shape, reproduction limits, and immediate visual argument, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Bridges, bridged cutout reduction, hard silhouette islands,
+    stencil registration breaks, and shape choices that keep the prompt recognizable; preserve the
+    requested subject while converting it into emblem, poster form, editorial metaphor, collage
+    fragment, fashion gesture, or information hierarchy, keeping the requested identity, silhouette,
+    pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Black on Wall, single-color guerrilla, high-arrest contrast; use color as
+    communication pressure: ink plates, propaganda contrast, deco metallic restraint, psychedelic
+    vibration, Bauhaus primaries, vector flatness, or vintage print fade, with deliberate value
+    grouping, accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Flat, public-space-light ambient, no-studio rawness; make light serve
+    graphic hierarchy through flat poster contrast, airbrush gradients, screenprint layers, symbolic
+    rays, collage mismatch, or painted cover drama, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Overspray, poster hierarchy, symbolic compression, print surface, graphic color pressure,
+    and editorial shape control; surface detail should reveal screenprint ink, risograph grain,
+    paper stock, cut-paper edges, vector fields, album-cover wear, or editorial print finish,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Simplified levels, negative-space compression, poster-impact scale,
+    cutout bridge placement, and simplified value zones; compose through graphic hierarchy, diagonal
+    force, asymmetrical grid, ornamental framing, cover impact, information grouping, or fashion
+    elongation without readable slogan dependency, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Rebellious, simple, urban-dissident energy, unauthorized truth; derive mood from
+    propaganda urgency, luxe modernity, counterculture heat, editorial wit, travel nostalgia,
+    music-poster grit, or cover-story seduction, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Political, public-space, quick-strike impact, message-first clarity; finish as
+    deliberate graphic communication with crisp shape logic, controlled print artifacts, and no
+    random poster text or literal advertisement clutter, clean denoised surfaces where appropriate,
+    and enough process evidence to make the style recognizable.
+  key_features: >-
+    Spray over cutout, protest-stencil print language with cut bridges, hard one-ink silhouettes,
+    overspray halos, and public-message compression; Bridges, cutout connections, stencil
+    registration; Black on Wall, single-color guerrilla, high-arrest contrast; Overspray, poster
+    hierarchy, symbolic compression, print surface, graphic color pressure, and editorial shape
+    control; Simplified levels, negative-space compression, poster-impact scale, cutout bridge
+    placement, and simplified value zones
   creative_brief: >-
-    Apply protest-stencil print grammar to any input: bridged cutouts, hard one-ink silhouettes, overspray
-    halos, poster-paper grain, registration slippage, and urgent negative-space compression. Preserve the
-    stencil language without requiring slogans, readable text, political scenes, walls, crowds, or any named
-    artist imitation.
+    Apply public-space Protest Stencil Art as an illustration preset over prompt X: preserve the
+    user's requested subject, then route mark-making, palette, surface, composition, mood, and final
+    craft through Spray over cutout, protest-stencil print language with cut bridges, hard one-ink
+    silhouettes, overspray halos, and public-message compression, Bridges, cutout connections,
+    stencil registration, Overspray, poster hierarchy, symbolic compression, print surface, graphic
+    color pressure, and editorial shape control without requiring the card image's original subject.
 avoidRules:
   - freehand
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - random poster text
+  - literal ad layout
+  - stock vector blandness
+  - weak graphic hierarchy
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-078.webp
 attributes:
-  negativePrompt: freehand
+  negativePrompt: >-
+    freehand, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, random
+    poster text, literal ad layout, stock vector blandness, weak graphic hierarchy
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

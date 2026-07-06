@@ -8,19 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ink (Pen & Ink)',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Classic dip pen illustration',
-      subject_treatment: 'Cross-hatching, stippling',
-      color_and_tone: 'Black ink on white',
-      lighting_and_shadow: 'High contrast',
-      texture_and_material: 'Smooth paper',
-      camera_and_composition: 'Stylized shading',
-      atmosphere_and_mood: 'Classic, storybook',
-      rendering_and_quality: 'Book illustration, detailed',
-      key_features: 'Line shading',
+      aesthetic:
+        'Ink (Pen & Ink) acts as a transferable art-medium router: start from Classic dip pen illustration, Line shading and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Cross hatching, stippling; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black ink on white; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through High contrast; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth paper; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stylized shading; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Classic, storybook; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Book illustration, detailed; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Classic dip pen illustration; Line shading; Black ink on white; Smooth paper; Stylized shading',
       creative_brief:
-        'Apply pen-and-ink drawing to any input: committed black linework, crosshatch value, disciplined contour, untouched paper white, and crisp graphic contrast. Keep irreversible ink clarity without requiring comic panels, architectural plates, portraits, or handwritten labels.',
+        "Apply Ink (Pen & Ink) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Classic dip pen illustration, Line shading, Smooth paper without requiring the card image's original subject.",
     },
   },
   {
@@ -28,20 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Marker (Copic)',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Alcohol marker rendering',
-      subject_treatment: 'Clean ink outlines',
-      color_and_tone: 'Vibrant, blended streaks',
-      lighting_and_shadow: 'Glossy highlights',
-      texture_and_material: 'Marker paper, bleed',
+      aesthetic:
+        'Marker (Copic) acts as a transferable art-medium router: start from Alcohol marker rendering, Marker streaks and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Clean ink outlines; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant, blended streaks; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Glossy highlights; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Marker paper, bleed; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Marker (Copic) using its key spatial cues: Marker streaks.',
-      atmosphere_and_mood: 'Modern, slick',
-      rendering_and_quality: 'Marker-rendered design illustration with clean contour polish',
-      key_features: 'Marker streaks',
+        'Structure the image through Compose for Marker (Copic) using its key spatial cues: Marker streaks; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Modern, slick; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Marker rendered design illustration with clean contour polish; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Alcohol marker rendering; Marker streaks; Vibrant, blended streaks; Marker paper, bleed',
       creative_brief:
-        'Apply Copic-marker rendering to any input: translucent alcohol-ink layers, soft edge bleed, saturated paper stain, reserved white highlights, and smooth illustrative gradients. Keep marker-board polish without requiring product sketches, fashion plates, manga faces, or visible marker tools.',
+        "Apply Marker (Copic) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Alcohol marker rendering, Marker streaks, Marker paper, bleed without requiring the card image's original subject.",
     },
   },
   {
@@ -49,20 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Graphite Pencil',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Realistic pencil drawing',
-      subject_treatment: 'Precise shading, sharp lines',
-      color_and_tone: 'Greyscale, graphite sheen',
-      lighting_and_shadow: 'Value based',
-      texture_and_material: 'Paper tooth, smudge',
+      aesthetic:
+        'Graphite Pencil acts as a transferable art-medium router: start from Realistic pencil drawing, Graphite texture and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Precise shading, sharp lines; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Greyscale, graphite sheen; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Value based; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Paper tooth, smudge; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Compose for Graphite Pencil using its key spatial cues: Graphite texture.',
-      atmosphere_and_mood: 'Studious, quiet',
-      rendering_and_quality: 'Academic, detailed',
-      key_features: 'Graphite texture',
+        'Structure the image through Compose for Graphite Pencil using its key spatial cues: Graphite texture; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Studious, quiet; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Academic, detailed; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Realistic pencil drawing; Graphite texture; Greyscale, graphite sheen; Paper tooth, smudge',
       creative_brief:
-        'Apply graphite-pencil rendering to any input: pressure-built grey values, paper tooth, soft blending, crisp line accents, erased highlights, and subtle metallic sheen. Keep patient drawing craft without requiring sketchbooks, portraits, academic studies, or visible artist tools.',
+        "Apply Graphite Pencil as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Realistic pencil drawing, Graphite texture, Paper tooth, smudge without requiring the card image's original subject.",
     },
   },
   {
@@ -70,19 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Charcoal (Expressive)',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Loose charcoal sketch',
-      subject_treatment: 'Thick, smudged, bold',
-      color_and_tone: 'Deep black, grey',
-      lighting_and_shadow: 'Dramatic contrast',
-      texture_and_material: 'Rough paper, dust',
-      camera_and_composition: 'Gestural',
-      atmosphere_and_mood: 'Dark, intense',
-      rendering_and_quality: 'Emotional, raw',
-      key_features: 'Smudged texture',
+      aesthetic:
+        'Charcoal (Expressive) acts as a transferable art-medium router: start from Loose charcoal sketch, Smudged texture and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Thick, smudged, bold; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Deep black, grey; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Dramatic contrast; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Rough paper, dust; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Gestural; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dark, intense; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Emotional, raw; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Loose charcoal sketch; Smudged texture; Deep black, grey; Rough paper, dust; Gestural',
       creative_brief:
-        'Apply expressive charcoal drawing to any input: dusty black deposits, rough paper tooth, broad smudges, erased highlights, pressure haze, and unstable edge softness. Keep dramatic subtraction without requiring figure studies, studio easels, life drawing, or monochrome portrait framing.',
+        "Apply Charcoal (Expressive) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Loose charcoal sketch, Smudged texture, Rough paper, dust without requiring the card image's original subject.",
     },
   },
   {
@@ -90,19 +124,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Colored Pencil',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Prismacolor drawing',
-      subject_treatment: 'Layered wax strokes',
-      color_and_tone: 'Vibrant, blended',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Wax buildup, paper grain',
-      camera_and_composition: 'Compose for Colored Pencil using its key spatial cues: Wax texture.',
-      atmosphere_and_mood: 'Gentle, colorful',
-      rendering_and_quality: 'Illustrative, soft',
-      key_features: 'Wax texture',
+      aesthetic:
+        'Colored Pencil acts as a transferable art-medium router: start from Prismacolor drawing, Wax texture and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Layered wax strokes; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant, blended; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Wax buildup, paper grain; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Colored Pencil using its key spatial cues: Wax texture; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Gentle, colorful; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Illustrative, soft; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'Prismacolor drawing; Wax texture; Vibrant, blended; Wax buildup, paper grain',
       creative_brief:
-        'Apply colored-pencil rendering to any input: waxy pigment layering, visible paper grain, burnished blends, sharp colored linework, and hand-pressure saturation. Keep warm drawn color without requiring coloring-book subjects, childhood cues, botanical studies, or stationery props.',
+        "Apply Colored Pencil as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Prismacolor drawing, Wax texture, Wax buildup, paper grain without requiring the card image's original subject.",
     },
   },
   {
@@ -110,19 +152,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pastel (Soft)',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Chalk pastel drawing',
-      subject_treatment: 'Smudged, powdery',
-      color_and_tone: 'Matte, vibrant, blended',
-      lighting_and_shadow: 'Soft, diffuse',
-      texture_and_material: 'Textured paper, dust',
-      camera_and_composition: 'Soft edges',
-      atmosphere_and_mood: 'Dreamy, atmospheric',
-      rendering_and_quality: 'Fine art, degas style',
-      key_features: 'Chalky finish',
+      aesthetic:
+        'Pastel (Soft) acts as a transferable art-medium router: start from Chalk pastel drawing, Chalky finish and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Smudged, powdery; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Matte, vibrant, blended; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft, diffuse; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Textured paper, dust; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Soft edges; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dreamy, atmospheric; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Fine art, degas style; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Chalk pastel drawing; Chalky finish; Matte, vibrant, blended; Textured paper, dust; Soft edges',
       creative_brief:
-        'Apply soft pastel drawing to any input: powdery pure pigment, fragile smudged edges, velvety saturation, paper tooth, atmospheric softness, and touch-sensitive haze. Keep color-as-dust immediacy without requiring figure studies, landscapes, chalk sets, or classroom boards.',
+        "Apply Pastel (Soft) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Chalk pastel drawing, Chalky finish, Textured paper, dust without requiring the card image's original subject.",
     },
   },
   {
@@ -130,21 +181,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chalk Dust Drawing',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable writing, classroom requirement, menu requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable writing, classroom requirement, menu requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
       aesthetic:
-        'Chalk drawing on dark receptive ground with dusty reversal and temporary surface energy',
-      subject_treatment: 'Dusty white lines',
-      color_and_tone: 'White on Black/Green',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Slate-like tooth, chalk dust, ghost erasure, and powder buildup',
-      camera_and_composition: 'Rough',
-      atmosphere_and_mood: 'Rustic, temporary, handmade',
+        'Chalk Dust Drawing acts as a transferable art-medium router: start from Chalk drawing on dark receptive ground with dusty reversal and temporary surface energy, Dusty lines and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Dusty white lines; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with White on Black/Green; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Slate like tooth, chalk dust, ghost erasure, and powder buildup; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Rough; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Rustic, temporary, handmade; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Temporary hand-drawn clarity with high contrast and rough tactile edges',
-      key_features: 'Dusty lines',
+        'Finish with Temporary hand drawn clarity with high contrast and rough tactile edges; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Chalk drawing on dark receptive ground with dusty reversal and temporary surface energy; Dusty lines; White on Black/Green; Slate like tooth, chalk dust, ghost erasure, and powder buildup; Rough',
       creative_brief:
-        'Apply chalk-dust drawing to any input: powdery white marks on dark tooth, erasable residue, pressure-grain variation, soft dust halos, and handmade provisional contrast. Keep temporary mark energy without requiring menus, classrooms, chalkboards, or written notes.',
+        "Apply Chalk Dust Drawing as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Chalk drawing on dark receptive ground with dusty reversal and temporary surface energy, Dusty lines, Slate like tooth, chalk dust, ghost erasure, and powder buildup without requiring the card image's original subject.",
     },
   },
   {
@@ -152,19 +210,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scratchboard',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Subtractive drawing',
-      subject_treatment: 'White lines scratched out of black',
-      color_and_tone: 'Black and White',
-      lighting_and_shadow: 'High contrast',
-      texture_and_material: 'Scratched clay',
-      camera_and_composition: 'Stylized texture',
-      atmosphere_and_mood: 'Dramatic, inverted',
-      rendering_and_quality: 'Detailed, illustrative',
-      key_features: 'White on black',
+      aesthetic:
+        'Scratchboard acts as a transferable art-medium router: start from Subtractive drawing, White on black and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through White lines scratched out of black; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black and White; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through High contrast; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Scratched clay; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stylized texture; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dramatic, inverted; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Detailed, illustrative; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Subtractive drawing; White on black; Black and White; Scratched clay; Stylized texture',
       creative_brief:
-        'Apply scratchboard technique to any input: ink-black ground, white incised marks, carved highlights, dense hatch excavation, and negative-like tactile contrast. Keep subtractive drawing drama without requiring animals, vintage engraving subjects, logos, or black-card closeups.',
+        "Apply Scratchboard as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Subtractive drawing, White on black, Scratched clay without requiring the card image's original subject.",
     },
   },
   {
@@ -172,20 +239,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silhouette',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
       aesthetic:
-        'Paper-cut silhouette grammar with total shape reliance and zero interior modeling',
-      subject_treatment: 'Outline only',
-      color_and_tone: 'Solid Black on White',
-      lighting_and_shadow: 'Backlit',
-      texture_and_material: 'Paper edge',
-      camera_and_composition: 'No internal details',
-      atmosphere_and_mood: 'Graphic, stark',
-      rendering_and_quality: 'Stark cut-paper finish with crisp contour judgment',
-      key_features: 'Solid shape',
+        'Silhouette acts as a transferable art-medium router: start from Paper cut silhouette grammar with total shape reliance and zero interior modeling, Solid shape and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Outline only; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Solid Black on White; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Backlit; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Paper edge; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through No internal details; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Graphic, stark; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Stark cut paper finish with crisp contour judgment; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Paper cut silhouette grammar with total shape reliance and zero interior modeling; Solid shape; Solid Black on White; Paper edge; No internal details',
       creative_brief:
-        'Apply silhouette-first drawing to any input: pure contour recognition, interior detail removed, high figure-ground contrast, edge clarity, and omission as design language. Keep shape-driven eloquence without requiring profile portraits, sunsets, cut paper, theatre screens, or human bodies.',
+        "Apply Silhouette as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Paper cut silhouette grammar with total shape reliance and zero interior modeling, Solid shape, Paper edge without requiring the card image's original subject.",
     },
   },
   {
@@ -193,20 +268,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Continuous Line',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'One-line drawing',
-      subject_treatment: 'Unbroken single line',
-      color_and_tone: 'Black on White',
+      aesthetic:
+        'Continuous Line acts as a transferable art-medium router: start from One line drawing, Single line and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Unbroken single line; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black on White; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Lighting for Continuous Line: purposeful key, bounce, rim, shadow depth, and focal readability matched to 2. Drawing & Sketching.',
-      texture_and_material: 'Smooth',
-      camera_and_composition: 'Abstracted',
-      atmosphere_and_mood: 'Fluid, simple',
-      rendering_and_quality: 'Picasso, minimalist',
-      key_features: 'Single line',
+        'Handle light through Lighting for Continuous Line: purposeful key, bounce, rim, shadow depth, and focal readability matched to 2. Drawing & Sketching; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Abstracted; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Fluid, simple; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Picasso, minimalist; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'One line drawing; Single line; Black on White; Smooth; Abstracted',
       creative_brief:
-        'Apply continuous-line drawing to any input: one unbroken contour path, looping simplification, minimal lifts, expressive detours, and structure built from uninterrupted connection. Keep elegant line discipline without requiring faces, hands, figure studies, sketchbook margins, or cafe scenes.',
+        "Apply Continuous Line as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through One line drawing, Single line, Smooth without requiring the card image's original subject.",
     },
   },
   {
@@ -214,19 +296,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ballpoint Pen',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, notebook requirement, classroom mood, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Doodle with biro pen',
-      subject_treatment: 'Thin, scribbly lines',
-      color_and_tone: 'Blue or Black ink',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Notebook paper, indentations',
-      camera_and_composition: 'Rough shading',
-      atmosphere_and_mood: 'Casual, restless, improvised',
-      rendering_and_quality: 'Casual, sketch',
-      key_features: 'Scribble texture',
+      aesthetic:
+        'Ballpoint Pen acts as a transferable art-medium router: start from Doodle with biro pen, Scribble texture and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Thin, scribbly lines; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Blue or Black ink; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Notebook paper, indentations; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Rough shading; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Casual, restless, improvised; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Casual, sketch; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Doodle with biro pen; Scribble texture; Blue or Black ink; Notebook paper, indentations; Rough shading',
       creative_brief:
-        'Apply ballpoint-pen drawing to any input: blue ink pooling, scratchy pressure variation, paper dimples, obsessive hatching, scribbled cross-contours, and casual compulsive buildup. Keep everyday pen intimacy without requiring notebooks, margins, classrooms, or readable text.',
+        "Apply Ballpoint Pen as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Doodle with biro pen, Scribble texture, Notebook paper, indentations without requiring the card image's original subject.",
     },
   },
   {
@@ -234,19 +325,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Oil Pastel',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Crayon-like drawing',
-      subject_treatment: 'Thick, waxy, chunky',
-      color_and_tone: 'Bold, unblended',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Sticky wax, sgraffito',
-      camera_and_composition: 'Rough shapes',
-      atmosphere_and_mood: 'Playful, bold',
-      rendering_and_quality: 'Direct, tactile, expressive',
-      key_features: 'Chunky texture',
+      aesthetic:
+        'Oil Pastel acts as a transferable art-medium router: start from Crayon like drawing, Chunky texture and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Thick, waxy, chunky; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Bold, unblended; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Sticky wax, sgraffito; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Rough shapes; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, bold; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Direct, tactile, expressive; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Crayon like drawing; Chunky texture; Bold, unblended; Sticky wax, sgraffito; Rough shapes',
       creative_brief:
-        'Apply oil-pastel force to any input: wax-bound pigment, chunky residue, visible pressure ridges, scraped interruptions, saturated nonblended color, and tactile friction. Keep assertive mark-making without requiring child-art cues, paper closeups, still-life subjects, or classroom materials.',
+        "Apply Oil Pastel as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Crayon like drawing, Chunky texture, Sticky wax, sgraffito without requiring the card image's original subject.",
     },
   },
   {
@@ -254,19 +354,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Conte Crayon',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Sanguine/Sepia drawing',
-      subject_treatment: 'Square stick strokes',
-      color_and_tone: 'Red, Brown, Black, White',
-      lighting_and_shadow: 'Classical study',
-      texture_and_material: 'Textured paper',
-      camera_and_composition: 'Compose for Conte Crayon using its key spatial cues: Earth tones.',
-      atmosphere_and_mood: 'Warm, classical',
-      rendering_and_quality: 'Academic study finish with warm material restraint',
-      key_features: 'Earth tones',
+      aesthetic:
+        'Conte Crayon acts as a transferable art-medium router: start from Sanguine/Sepia drawing, Earth tones and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Square stick strokes; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Red, Brown, Black, White; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Classical study; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Textured paper; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Conte Crayon using its key spatial cues: Earth tones; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Warm, classical; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Academic study finish with warm material restraint; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features: 'Sanguine/Sepia drawing; Earth tones; Red, Brown, Black, White; Textured paper',
       creative_brief:
-        'Apply conte-crayon drawing to any input: compressed earth tones, sanguine and sepia value structure, square-stick strokes, textured paper drag, and warm disciplined modeling. Keep archaeological restraint without requiring academy figures, portraits, anatomy plates, or antique sketchbooks.',
+        "Apply Conte Crayon as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Sanguine/Sepia drawing, Earth tones, Textured paper without requiring the card image's original subject.",
     },
   },
   {
@@ -274,21 +382,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Technical Pen',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Technical drafting with measured line hierarchy and schematic restraint',
-      subject_treatment: 'Uniform line weight',
-      color_and_tone: 'Black on white',
+      aesthetic:
+        'Technical Pen acts as a transferable art-medium router: start from Technical drafting with measured line hierarchy and schematic restraint, Clean lines and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Uniform line weight; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black on white; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Lighting for Technical Pen: purposeful key, bounce, rim, shadow depth, and focal readability matched to 2. Drawing & Sketching.',
-      texture_and_material: 'Vellum, smooth',
-      camera_and_composition: 'Geometric',
-      atmosphere_and_mood: 'Precise, technical',
+        'Handle light through Lighting for Technical Pen: purposeful key, bounce, rim, shadow depth, and focal readability matched to 2. Drawing & Sketching; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Vellum, smooth; make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Geometric; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Precise, technical; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Blueprint-like schematic clarity without requiring buildings or plans',
-      key_features: 'Clean lines',
+        'Finish with Blueprint like schematic clarity without requiring buildings or plans; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Technical drafting with measured line hierarchy and schematic restraint; Clean lines; Black on white; Vellum, smooth; Geometric',
       creative_brief:
-        'Apply technical-pen precision to any input: uniform steel-nib lines, measured hatching, straightedge discipline, controlled line weights, and accuracy-first detail. Keep engineering clarity without requiring machinery, blueprints, architecture, labels, or diagrammatic annotations.',
+        "Apply Technical Pen as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Technical drafting with measured line hierarchy and schematic restraint, Clean lines, Vellum, smooth without requiring the card image's original subject.",
     },
   },
   {
@@ -296,20 +411,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silverpoint',
     category: '2. Drawing & Sketching',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, painterly fill, wrong drawing tool, airbrushed smoothness, photo-real material overlay',
     style: {
-      aesthetic: 'Renaissance metal stylus drawing',
-      subject_treatment: 'Extremely fine grey lines',
-      color_and_tone: 'Pale grey, tarnished warm tone',
-      lighting_and_shadow: 'Delicate',
-      texture_and_material: 'Prepared ground (bone ash)',
-      camera_and_composition: 'Compose for Silverpoint using its key spatial cues: Fine lines.',
-      atmosphere_and_mood: 'Antique, delicate',
+      aesthetic:
+        'Silverpoint acts as a transferable art-medium router: start from Renaissance metal stylus drawing, Fine lines and drawing-media system built from mark pressure, line economy, paper tooth, erasure, hatching, dust, and tool-specific edge behavior, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Extremely fine grey lines; preserve the prompt subject while rebuilding it through line weight, contour, hatch density, smudge, scratch, wax, stylus, or marker stroke logic, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Pale grey, tarnished warm tone; treat color as tool-limited material: graphite value, charcoal black, ink density, sanguine earth, wax pencil, marker bleed, chalk dust, or metallic trace, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Delicate; represent light through mark spacing, exposed paper, tonal rubbing, crosshatch density, erased highlights, or flat diagrammatic value control, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Prepared ground (bone ash); make paper grain, tooth, dust, ink bite, wax buildup, scratch coating, vellum smoothness, or marker streaks visible at the right scale, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Compose for Silverpoint using its key spatial cues: Fine lines; structure forms through line rhythm, gesture, technical geometry, blank space, contour continuity, and readable silhouette logic, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Antique, delicate; derive mood from study, immediacy, precision, roughness, temporary mark-making, craft intimacy, or disciplined draftsmanship, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Renaissance-informed precision with ultra-fine archival line discipline',
-      key_features: 'Fine lines',
+        'Finish with Renaissance informed precision with ultra fine archival line discipline; finish with honest drawing marks, stable anatomy or object structure, clean negative space, and no painterly fill replacing the chosen tool, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Renaissance metal stylus drawing; Fine lines; Pale grey, tarnished warm tone; Prepared ground (bone ash)',
       creative_brief:
-        'Apply silverpoint discipline to any input: hairline metal marks, prepared ground texture, nearly irreversible contour, pale grey-to-sepia tarnish, and patient exact modeling. Keep Renaissance precision without requiring portrait studies, hands, drapery, religious subjects, or museum-paper framing.',
+        "Apply Silverpoint as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Renaissance metal stylus drawing, Fine lines, Prepared ground (bone ash) without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

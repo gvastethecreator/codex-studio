@@ -21,6 +21,7 @@ import {
   IconSquare as Square,
 } from '@tabler/icons-react';
 import ActionButton from './ui/ActionButton';
+import { GsapDropdown } from './ui/GsapDropdown';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import Tooltip from './Tooltip';
 import {
@@ -314,6 +315,38 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
 );
 
 const EMPTY_GENERATION_PLACEHOLDERS: StudioGenerationPlaceholder[] = [];
+const IMAGE_GRID_SORT_OPTIONS = [
+  {
+    value: 'desc',
+    label: 'Created newest',
+    description: 'Recent generations first',
+  },
+  {
+    value: 'asc',
+    label: 'Created oldest',
+    description: 'Oldest generations first',
+  },
+  {
+    value: 'prompt',
+    label: 'Prompt A-Z',
+    description: 'Alphabetical prompt order',
+  },
+  {
+    value: 'prompt_desc',
+    label: 'Prompt Z-A',
+    description: 'Reverse prompt order',
+  },
+  {
+    value: 'ratio',
+    label: 'Aspect ratio',
+    description: 'Group by output format',
+  },
+  {
+    value: 'id',
+    label: 'Image ID',
+    description: 'Stable file/id order',
+  },
+] satisfies Array<{ value: ImageGridSortOption; label: string; description: string }>;
 
 type GridItem =
   | { type: 'placeholder'; placeholder: StudioGenerationPlaceholder }
@@ -425,6 +458,8 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
     const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
     const [thumbnailSize, setThumbnailSize] = useState(DEFAULT_THUMBNAIL_SIZE);
+    const sortButtonRef = useRef<HTMLButtonElement | null>(null);
+    const sortMenuId = React.useId();
     const viewportWidth = useSyncExternalStore(
       subscribeViewportSize,
       getViewportWidthSnapshot,
@@ -457,6 +492,9 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     );
     const selectedImageCount = selectedImageIds.filter((id) => visibleImageIds.has(id)).length;
     const isAllSelected = imageCount > 0 && selectedImageCount === imageCount;
+    const activeSortOption =
+      IMAGE_GRID_SORT_OPTIONS.find((option) => option.value === sortOrder) ??
+      IMAGE_GRID_SORT_OPTIONS[0];
 
     const sortedImages = useMemo(() => {
       return sortImageGridImages(visibleImages, sortOrder);
@@ -669,59 +707,71 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
           <div className="relative">
             <Tooltip content="Sort Images" position="bottom">
               <button
+                ref={sortButtonRef}
                 type="button"
-                onClick={() => setIsSortMenuOpen(!isSortMenuOpen)}
-                className="rounded-xl border border-white/10 bg-zinc-900/80 p-2 text-zinc-400 transition-colors backdrop-blur-md hover:bg-zinc-800 hover:text-white"
+                onClick={() => setIsSortMenuOpen((open) => !open)}
+                aria-label={`Sort images: ${activeSortOption.label}`}
+                aria-haspopup="menu"
+                aria-expanded={isSortMenuOpen}
+                aria-controls={sortMenuId}
+                className={`flex min-h-10 min-w-10 touch-manipulation items-center justify-center gap-2 rounded-xl border px-2.5 text-zinc-300 shadow-2xl backdrop-blur-md transition-[background-color,border-color,color,transform] focus-visible:ring-2 focus-visible:ring-white/25 ${
+                  isSortMenuOpen
+                    ? 'border-white/18 bg-zinc-800/95 text-white'
+                    : 'border-white/10 bg-zinc-900/80 hover:border-white/18 hover:bg-zinc-800 hover:text-white'
+                }`}
               >
                 <ArrowUpDown size={16} />
+                <span className="hidden max-w-28 truncate text-[9px] font-black uppercase tracking-widest lg:inline">
+                  {activeSortOption.label}
+                </span>
               </button>
             </Tooltip>
-            {isSortMenuOpen && (
-              <div className="absolute top-full right-0 z-50 mt-2 w-48 overflow-hidden rounded-xl border border-white/10 bg-zinc-900 shadow-2xl">
-                <div className="flex flex-col p-1">
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSortOrder('desc');
-                      setIsSortMenuOpen(false);
-                    }}
-                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'desc' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                  >
-                    Newest First (Default)
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSortOrder('asc');
-                      setIsSortMenuOpen(false);
-                    }}
-                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'asc' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                  >
-                    Oldest First
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSortOrder('prompt');
-                      setIsSortMenuOpen(false);
-                    }}
-                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'prompt' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                  >
-                    Prompt Similarity
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setSortOrder('ratio');
-                      setIsSortMenuOpen(false);
-                    }}
-                    className={`px-3 py-2 text-left text-xs rounded-lg transition-colors ${sortOrder === 'ratio' ? 'bg-accent-500/20 text-accent-300' : 'text-zinc-400 hover:bg-white/5 hover:text-white'}`}
-                  >
-                    Aspect Ratio
-                  </button>
-                </div>
+            <GsapDropdown
+              id={sortMenuId}
+              open={isSortMenuOpen}
+              onOpenChange={setIsSortMenuOpen}
+              triggerRef={sortButtonRef}
+              placement="bottom-right"
+              className="absolute right-0 top-[calc(100%+0.5rem)] z-50 w-64 overflow-hidden p-1.5"
+            >
+              <div className="px-2 pb-1 pt-1 text-[8px] font-black uppercase tracking-[0.22em] text-zinc-600">
+                Sort images
               </div>
-            )}
+              <div className="grid gap-1">
+                {IMAGE_GRID_SORT_OPTIONS.map((option) => {
+                  const selected = option.value === sortOrder;
+
+                  return (
+                    <button
+                      key={option.value}
+                      type="button"
+                      role="menuitemradio"
+                      aria-checked={selected}
+                      data-dropdown-item
+                      onClick={() => {
+                        setSortOrder(option.value);
+                        setIsSortMenuOpen(false);
+                      }}
+                      className={`flex min-h-11 w-full items-center justify-between gap-3 rounded-lg px-2.5 text-left transition-[background-color,color,transform] ${
+                        selected
+                          ? 'bg-white/10 text-white'
+                          : 'text-zinc-400 hover:bg-white/[0.055] hover:text-zinc-100'
+                      }`}
+                    >
+                      <span className="min-w-0">
+                        <span className="block truncate text-[10px] font-black uppercase tracking-widest">
+                          {option.label}
+                        </span>
+                        <span className="mt-0.5 block truncate text-[9px] font-semibold normal-case tracking-normal text-zinc-600">
+                          {option.description}
+                        </span>
+                      </span>
+                      {selected ? <Check size={14} className="shrink-0 text-accent-200" /> : null}
+                    </button>
+                  );
+                })}
+              </div>
+            </GsapDropdown>
           </div>
         </div>
         <div className="custom-scrollbar h-full w-full overflow-y-auto px-3 pt-16 pb-8 sm:px-8">

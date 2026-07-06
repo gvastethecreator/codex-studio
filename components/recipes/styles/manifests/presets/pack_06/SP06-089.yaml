@@ -13,35 +13,72 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Terminal-based roguelike art, ASCII/ANSI abstraction, CP437 code-page characters, Dwarf Fortress and
-    NetHack as symbolic-display anchors, ancient BBS door-game art, text-mode worldbuilding where glyphs
-    replace literal drawing
+    Text-Mode Roguelike ANSI acts as a transferable art-medium router: start from Terminal based
+    roguelike art, ASCII/ANSI abstraction, CP437 code page characters, Dwarf Fortress and NetHack as
+    symbolic display anchors, ancient BBS door game art, text mode worldbuilding where glyphs
+    replace literal drawing, ASCII/ANSI character representation, fixed width grid, 16 color
+    terminal palette, glyph symbolic abstraction, code page 437 characters and hardware-constrained
+    game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or
+    handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead
+    of recreating a fixed demo image.
   subject_treatment: >-
-    Fixed-width character grid, monospace font construction, glyph-symbol representation, ASCII-art contour
-    building, character-cell precision
+    Transform any prompt subject through Fixed width character grid, monospace font construction,
+    glyph symbol representation, ASCII art contour building, character cell precision; preserve the
+    prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render,
+    screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
   color_and_tone: >-
-    16-color ANSI palette, DOS-blue or black terminal background, bright role-coded glyphs, yellow value
-    marks, green hash fields, cyan tilde fields
+    Build color with 16 color ANSI palette, DOS blue or black terminal support field, bright role
+    coded glyphs, yellow value marks, green hash fields, cyan tilde fields; use color through
+    hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks,
+    copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping,
+    accent control, and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    No lighting, pure symbolic display, color-coding for object type, ANSI-color depth cue,
-    terminal-background ambient
+    Handle light through No lighting, pure symbolic display, color coding for object type, ANSI
+    color depth cue, terminal support field ambient; make light emerge from display technology,
+    pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam
+    brightness, so value structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    Monospace pixel-glyph grid, terminal-phosphor glow, text-mode character aliasing, CRT-character bleed
-    bloom, scanline text overlay
+    Render Monospace pixel glyph grid, terminal phosphor glow, text mode character aliasing, CRT
+    character bleed bloom, scanline text overlay; surface detail should show pixels, dithering,
+    scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print
+    degradation, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Character-grid field, ASCII-symbol perspective, text-cell depth layering, fixed-width tile space,
-    terminal-window framing
-  atmosphere_and_mood: Arcane, scholarly, pure imagination, text-as-world, programmer-mystic, deep-systems reverence
+    Structure the image through Character grid field, ASCII symbol perspective, text cell depth
+    layering, fixed width tile space, terminal window framing; compose through tile maps, sprite
+    scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
+    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
+  atmosphere_and_mood: >-
+    Keep the mood Arcane, scholarly, pure imagination, text as world, programmer mystic, deep
+    systems reverence; derive mood from hardware limitation, arcade spectacle, handheld intimacy,
+    terminal austerity, console nostalgia, or broken early-3D instability, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
   rendering_and_quality: >-
-    Text-mode game display, ANSI-art dungeon, terminal-gaming aesthetic, code-page visual language,
-    pure-symbolic rendering
+    Finish with Text mode game display, ANSI art subterranean pressure, terminal gaming aesthetic,
+    code page visual language, pure symbolic rendering; finish with faithful era constraints, crisp
+    readability at small scale, and no modern high-resolution smoothing unless the preset asks for
+    baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
   key_features: >-
-    ASCII/ANSI character representation, fixed-width grid, 16-color terminal palette, glyph-symbolic
-    abstraction, code-page 437 characters
+    Terminal based roguelike art, ASCII/ANSI abstraction, CP437 code page characters, Dwarf Fortress
+    and NetHack as symbolic display anchors, ancient BBS door game art, text mode worldbuilding
+    where glyphs replace literal drawing; ASCII/ANSI character representation, fixed width grid, 16
+    color terminal palette, glyph symbolic abstraction, code page 437 characters; 16 color ANSI
+    palette, DOS blue or black terminal support field, bright role coded glyphs, yellow value marks,
+    green hash fields, cyan tilde fields; Monospace pixel glyph grid, terminal phosphor glow, text
+    mode character aliasing, CRT character bleed bloom, scanline text overlay; Character grid field,
+    ASCII symbol perspective, text cell depth layering, fixed width tile space, terminal window
+    framing
   creative_brief: >-
-    The image assembles from 256 glyphs on a 16-color grid. Any prompt becomes a symbolic terminal artifact,
-    where letters, blocks and punctuation stand in for mass, texture and depth while imagination supplies
-    missing pixels.
+    Apply Text-Mode Roguelike ANSI as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Terminal based roguelike art, ASCII/ANSI abstraction, CP437 code page characters, Dwarf
+    Fortress and NetHack as symbolic display anchors, ancient BBS door game art, text mode
+    worldbuilding where glyphs replace literal drawing, ASCII/ANSI character representation, fixed
+    width grid, 16 color terminal palette, glyph symbolic abstraction, code page 437 characters,
+    Monospace pixel glyph grid, terminal phosphor glow, text mode character aliasing, CRT character
+    bleed bloom, scanline text overlay without requiring the card image's original subject.
 avoidRules:
   - graphical
   - realistic
@@ -53,10 +90,25 @@ avoidRules:
   - high res
   - sprites
   - bitmap
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-089.webp
 attributes:
-  negativePrompt: graphical, realistic, 3d, smooth, photo, painted, modern, high res, sprites, bitmap
+  negativePrompt: >-
+    graphical, realistic, 3d, smooth, photo, painted, modern, high res, sprites, bitmap, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

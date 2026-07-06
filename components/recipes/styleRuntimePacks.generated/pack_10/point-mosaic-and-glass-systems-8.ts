@@ -7,56 +7,85 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-072',
     name: 'Pointillism (Seurat)',
     category: '8. Point, Mosaic And Glass Systems',
-    negativePrompt: 'brush strokes, lines',
+    negativePrompt:
+      'brush strokes, lines, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Made of tiny dots',
-      subject_treatment: "Treat subjects through Pointillism (Seurat)'s signature cues: Dots only.",
-      color_and_tone: 'Optical mixing',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Dots',
+      aesthetic:
+        'Pointillism (Seurat) becomes a transferable discrete mark, mosaic, and glass segmentation system: start from Made of tiny dots and Dots only, then route prompt content through dots, tiles, grout, lead came, optical mixing, and segmented luminous surfaces without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Dots only to rebuild forms from dots, glass cells, tile units, grout lines, or lead outlines while preserving silhouette; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Optical mixing; use color as optical mixing, glass translucency, tile pigment, grout contrast, and luminous segmentation, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Soft drive the light response: shape light through dot vibration, tile highlights, stained-glass glow, or shallow relief shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Dots as the tactile or mark-making basis; surfaces require individual marks, tile gaps, lead seams, pigment density, and unit-to-unit variation, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Pointillism (Seurat) using its key spatial cues: Dots only.',
-      atmosphere_and_mood: 'Calm, vibrant',
-      rendering_and_quality: 'Impressionist, scientific',
-      key_features: 'Dots only',
+        'Compose around Dots only as reusable spatial grammar: favor readable silhouettes, local unit scale changes, tessellated flow, and segmented rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Calm, vibrant as the emotional register; derive mood from craft, sacred light, optical vibration, public art, and patient mark-making, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Impressionist, scientific: finish with coherent units, controlled outlines, and no blurred pseudo-mosaic mush, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Made of tiny dots; Dots only; Optical mixing; Soft; Dots; Dots only; Calm, vibrant; Impressionist, scientific; Dots only',
       creative_brief:
-        'Apply pointillist color construction to the input: tiny separated pigment dots, optical color mixing, bright local marks, and distance-based cohesion should let the subject assemble from painterly particles.',
+        'Route any subject through Pointillism (Seurat) as a transferable point, mosaic, or glass-construction visual system: preserve prompt intent while converting form, fragments, gaps, optical mixing, and cumulative mark logic through this preset. Apply pointillist color construction to the input: tiny separated pigment dots, optical color mixing, bright local marks, and distance-based cohesion should let the subject assemble from painterly particles.',
     },
   },
   {
     id: 'SP10-073',
     name: 'Mosaic (Tile)',
     category: '8. Point, Mosaic And Glass Systems',
-    negativePrompt: 'smooth painting',
+    negativePrompt:
+      'smooth painting, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Small square tiles',
-      subject_treatment: 'Grout lines',
-      color_and_tone: 'Vibrant glass',
-      lighting_and_shadow: 'Uneven reflection',
-      texture_and_material: 'Glass/Stone tiles',
-      camera_and_composition: 'Pixelated by tiles',
-      atmosphere_and_mood: 'Ancient, solid',
-      rendering_and_quality: 'Roman, durable',
-      key_features: 'Tile grid',
+      aesthetic:
+        'Mosaic (Tile) becomes a transferable discrete mark, mosaic, and glass segmentation system: start from Small square tiles, Tile grid, and Pixelated by tiles, then route prompt content through dots, tiles, grout, lead came, optical mixing, and segmented luminous surfaces without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Grout lines to rebuild forms from dots, glass cells, tile units, grout lines, or lead outlines while preserving silhouette; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Vibrant glass; use color as optical mixing, glass translucency, tile pigment, grout contrast, and luminous segmentation, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Uneven reflection drive the light response: shape light through dot vibration, tile highlights, stained-glass glow, or shallow relief shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Glass/Stone tiles as the tactile or mark-making basis; surfaces require individual marks, tile gaps, lead seams, pigment density, and unit-to-unit variation, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Pixelated by tiles as reusable spatial grammar: favor readable silhouettes, local unit scale changes, tessellated flow, and segmented rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Ancient, solid as the emotional register; derive mood from craft, sacred light, optical vibration, public art, and patient mark-making, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Roman, durable: finish with coherent units, controlled outlines, and no blurred pseudo-mosaic mush, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Small square tiles; Grout lines; Vibrant glass; Uneven reflection; Glass/Stone tiles; Pixelated by tiles; Ancient, solid; Roman, durable; Tile grid',
       creative_brief:
-        'Apply mosaic tessera construction to the input: small stone or glass tiles, grout gaps, hand-set irregularity, and cumulative fragment logic should build the subject from durable modular pieces.',
+        'Route any subject through Mosaic (Tile) as a transferable point, mosaic, or glass-construction visual system: preserve prompt intent while converting form, fragments, gaps, optical mixing, and cumulative mark logic through this preset. Apply mosaic tessera construction to the input: small stone or glass tiles, grout gaps, hand-set irregularity, and cumulative fragment logic should build the subject from durable modular pieces.',
     },
   },
   {
     id: 'SP10-074',
     name: 'Stained Glass',
     category: '8. Point, Mosaic And Glass Systems',
-    negativePrompt: 'opaque',
+    negativePrompt:
+      'opaque, blurred mush, continuous brush rendering, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Stained glass segmentation',
-      subject_treatment: 'Black lead came',
-      color_and_tone: 'Glowing, saturated',
-      lighting_and_shadow: 'Backlit',
-      texture_and_material: 'Glass imperfections',
-      camera_and_composition: 'Simplified shapes',
-      atmosphere_and_mood: 'Reverent, bright',
-      rendering_and_quality: 'Luminous, leaded glass',
-      key_features: 'Lead lines',
+      aesthetic:
+        'Stained Glass becomes a transferable discrete mark, mosaic, and glass segmentation system: start from Stained glass segmentation, Lead lines, and Simplified shapes, then route prompt content through dots, tiles, grout, lead came, optical mixing, and segmented luminous surfaces without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Black lead came to rebuild forms from dots, glass cells, tile units, grout lines, or lead outlines while preserving silhouette; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Glowing, saturated; use color as optical mixing, glass translucency, tile pigment, grout contrast, and luminous segmentation, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Backlit drive the light response: shape light through dot vibration, tile highlights, stained-glass glow, or shallow relief shadow, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Glass imperfections as the tactile or mark-making basis; surfaces require individual marks, tile gaps, lead seams, pigment density, and unit-to-unit variation, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Simplified shapes as reusable spatial grammar: favor readable silhouettes, local unit scale changes, tessellated flow, and segmented rhythm, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Reverent, bright as the emotional register; derive mood from craft, sacred light, optical vibration, public art, and patient mark-making, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Luminous, leaded glass: finish with coherent units, controlled outlines, and no blurred pseudo-mosaic mush, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Stained glass segmentation; Black lead came; Glowing, saturated; Backlit; Glass imperfections; Simplified shapes; Reverent, bright; Luminous, leaded glass; Lead lines',
       creative_brief:
         'Apply stained-glass segmentation over the input with cobalt and ruby panes, black lead came, backlit saturation, glass imperfections, and simplified luminous shapes. If icons, figures, architecture, or symbols exist, make them reverent; otherwise convert the subject into leaded color fields without requiring saints, windows, or sermon imagery.',
     },

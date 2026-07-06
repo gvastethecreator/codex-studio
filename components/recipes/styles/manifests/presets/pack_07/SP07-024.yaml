@@ -13,45 +13,100 @@ tags:
   - architectural-movements-and-vernaculars
 visualDna:
   aesthetic: >-
-    Victorian Painted Lady within 2. Architectural Movements And Vernaculars: a reusable Architecture &
-    Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
-    Keep the result transferable across subjects while preserving Victorian Painted Lady's specific style
-    identity.
+    Victorian Painted Lady acts as a transferable architecture/interior router: gingerbread trim,
+    fish-scale shingles, pastel layered color, spindle rhythm, cream moldings; fuse it with
+    architectural movement grammar with tectonic mass, historical or speculative lineage, facade
+    logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior,
+    scale, ornament, and light over prompt X without requiring the default sample anchor, fixed
+    spatial set, landscape setup, or object sample.
   subject_treatment: >-
-    Define Victorian Painted Lady through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve prompt subject, action, and context while translating any requested subject through
+    load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and
+    movement-specific silhouette translation; treat gingerbread trim, fish-scale shingles, pastel
+    layered color, spindle rhythm, cream moldings as massing, edge, surface, joinery, threshold, or
+    ornament behavior rather than a mandatory building scene.
   color_and_tone: >-
-    Use a Victorian Painted Lady-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through period or movement-authentic base color, stone or envelope values, restrained
+    accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as
+    gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings
+    decide accent hierarchy, material temperature, and value separation while staying attached to
+    the requested content.
   lighting_and_shadow: >-
-    Use lighting that makes Victorian Painted Lady recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and
+    scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere
+    from gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings
+    without replacing prompt X with a stock architectural render.
   texture_and_material: >-
-    Use materials and textures that reinforce Victorian Painted Lady: surface response, grain, patina, polish,
-    or wear should feel intentional and style-defining.
+    Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering,
+    and envelope surface response; prioritize the tactile signals in gingerbread trim, fish-scale
+    shingles, pastel layered color, spindle rhythm, cream moldings, with believable surface
+    response, denoised grain, coherent wear, and no generic wallpaper texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Victorian Painted Lady: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken
+    symmetry, scale cues, and movement-readable massing; convert gingerbread trim, fish-scale
+    shingles, pastel layered color, spindle rhythm, cream moldings into reusable perspective, crop,
+    depth, section, modular rhythm, and negative-space rules instead of one fixed style sample
+    layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Victorian Painted Lady: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through historical authority, civic ambition, domestic craft, experimental
+    instability, or optimistic futurity carried by architecture itself; the preset can support
+    adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X
+    asks for them while keeping the architectural identity readable.
   rendering_and_quality: >-
-    Render Victorian Painted Lady with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean built-form finish with readable structure, no postcard landmark dependency, no
+    tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction,
+    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
+    logo, no camera prop, and no prompt-literal card copy.
   key_features: >-
-    Prioritize Victorian Painted Lady's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings;
+    load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and
+    movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal,
+    masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments,
+    sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and
+    movement-readable massing
   creative_brief: >-
-    Create a style-card that translates Victorian Painted Lady into a portable visual system for 2.
-    Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed
-    scene, character, prop, or story beat.
+    Apply Victorian Painted Lady after prompt X as a transferable architecture/interior style layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings,
+    architectural movement grammar with tectonic mass, historical or speculative lineage, facade
+    logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and
+    negative controls without requiring a single spatial sample, product-photo setup, aisle-like
+    default, or empty abstraction.
 avoidRules:
   - plain
   - grey
+  - preserved street postcard
+  - full house exterior default
+  - porch-chair scene
+  - readable sign
+  - market aisle
+  - library aisle
+  - corridor
+  - empty abstraction
+  - named landmark copy
+  - tourist postcard
+  - generic facade
+  - readable signage
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - camera prop
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-024.webp
 attributes:
-  negativePrompt: plain, grey
+  negativePrompt: >-
+    plain, grey, preserved street postcard, full house exterior default, porch-chair scene, readable
+    sign, market aisle, library aisle, corridor, empty abstraction, named landmark copy, tourist
+    postcard, generic facade, readable signage, fixed building-only scene, mandatory interior
+    interior zones, corridor perspective, furniture showroom, prompt-required card, readable text,
+    logo, watermark, camera prop, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

@@ -13,27 +13,70 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Original DMG Game Boy palette, four shades of olive-green, 160x144 low-resolution vision, pea-soup
-    display, Nintendo handheld nostalgia, 1989 portable graphics, abstract subject reduced into blocky
-    dot-matrix silhouettes
+    Game Boy Green Monochrome acts as a transferable art-medium router: start from Original DMG Game
+    Boy palette, four shades of olive green, 160x144 low resolution vision, pea soup display,
+    Nintendo handheld nostalgia, 1989 portable graphics, abstract subject reduced into blocky dot
+    matrix silhouettes, Four shade green only, visible pixel grid, chunky 8x8 tile boundaries,
+    screen bezel framing, monochrome dot matrix abstraction and hardware-constrained game-visual
+    system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld
+    artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Rigid pixel-grid alignment, 8x8 or 16x16 tile construction, hard silhouette boxing, no sub-pixel
-    rendering, any input compressed into readable tile masses
+    Transform any prompt subject through Rigid pixel grid alignment, 8x8 or 16x16 tile construction,
+    hard silhouette boxing, no sub pixel rendering, any input compressed into readable tile masses;
+    preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel,
+    pre-render, screen-grid, or low-bit display behavior, keeping the requested identity,
+    silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    Four-shade green gradient, pea-soup olive, sickly lime, bile yellow highlight, shadow-moss dark, no other
-    colors exist
-  lighting_and_shadow: Self-illuminated LCD screen, reflective green phosphor glow, pocket-light on plastic screen
-  texture_and_material: LCD pixel grid gap, dusty plastic screen overlay, passive-matrix ghost trail, screen-burn memory
-  camera_and_composition: Screen-edge vignette, LCD-viewing-angle washout, reflective plastic frame reflection, pocket-sized display
-  atmosphere_and_mood: Portable, nostalgic, constrained, quiet, low-power, memory-fragile
-  rendering_and_quality: Game Boy screen capture, retro handheld nostalgia, 8-bit portable aesthetic, chunky-pixel charm
+    Build color with Four shade green gradient, pea soup olive, sickly lime, bile yellow highlight,
+    shadow moss dark, no other colors exist; use color through hardware rules: indexed palettes,
+    phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited scanline
+    color, or terminal ANSI sets, with deliberate value grouping, accent control, and
+    medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Self illuminated LCD screen, reflective green phosphor glow, pocket light
+    on plastic screen; make light emerge from display technology, pixel value steps, CRT bloom,
+    palette cycling, thermal print contrast, or vector beam brightness, so value structure supports
+    the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render LCD pixel grid gap, dusty plastic screen overlay, passive matrix ghost trail, screen burn
+    memory; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble,
+    dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Screen edge vignette, LCD viewing angle washout, reflective plastic
+    frame reflection, pocket sized display; compose through tile maps, sprite scale,
+    fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
+    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
+  atmosphere_and_mood: >-
+    Keep the mood Portable, nostalgic, constrained, quiet, low power, memory fragile; derive mood
+    from hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console
+    nostalgia, or broken early-3D instability, letting the medium alter interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Game Boy screen capture, retro handheld nostalgia, 8 bit portable aesthetic, chunky
+    pixel charm; finish with faithful era constraints, crisp readability at small scale, and no
+    modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised
+    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
   key_features: >-
-    Four-shade green only, visible pixel grid, chunky 8x8 tile boundaries, screen-bezel framing, monochrome
-    dot-matrix abstraction
+    Original DMG Game Boy palette, four shades of olive green, 160x144 low resolution vision, pea
+    soup display, Nintendo handheld nostalgia, 1989 portable graphics, abstract subject reduced into
+    blocky dot matrix silhouettes; Four shade green only, visible pixel grid, chunky 8x8 tile
+    boundaries, screen bezel framing, monochrome dot matrix abstraction; Four shade green gradient,
+    pea soup olive, sickly lime, bile yellow highlight, shadow moss dark, no other colors exist; LCD
+    pixel grid gap, dusty plastic screen overlay, passive matrix ghost trail, screen burn memory;
+    Screen edge vignette, LCD viewing angle washout, reflective plastic frame reflection, pocket
+    sized display
   creative_brief: >-
-    Four green voltages become an entire image language. Any subject collapses into pea-soup values, tile
-    boundaries, LCD gaps and ghost trails, as if visual memory had to fit inside a pocket device with fading
-    batteries.
+    Apply Game Boy Green Monochrome as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Original DMG Game Boy palette, four shades of olive green, 160x144 low resolution
+    vision, pea soup display, Nintendo handheld nostalgia, 1989 portable graphics, abstract subject
+    reduced into blocky dot matrix silhouettes, Four shade green only, visible pixel grid, chunky
+    8x8 tile boundaries, screen bezel framing, monochrome dot matrix abstraction, LCD pixel grid
+    gap, dusty plastic screen overlay, passive matrix ghost trail, screen burn memory without
+    requiring the card image's original subject.
 avoidRules:
   - color
   - hd
@@ -45,10 +88,25 @@ avoidRules:
   - photorealistic
   - 3d
   - modern
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-081.webp
 attributes:
-  negativePrompt: color, hd, smooth, gradient, realistic, high resolution, detailed, photorealistic, 3d, modern
+  negativePrompt: >-
+    color, hd, smooth, gradient, realistic, high resolution, detailed, photorealistic, 3d, modern,
+    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable
+    text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

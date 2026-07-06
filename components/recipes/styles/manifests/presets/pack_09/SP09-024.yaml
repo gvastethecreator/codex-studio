@@ -13,27 +13,58 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Wet asphalt sheen
-  subject_treatment: Slick grain and reflective streaks
-  color_and_tone: Black, Grey
-  lighting_and_shadow: Reflection of lights
-  texture_and_material: Grainy tar
-  camera_and_composition: Puddles
-  atmosphere_and_mood: Urban, dark
-  rendering_and_quality: Noir, reflective
-  key_features: Gravel grain
+  aesthetic: >-
+    Asphalt (Wet) treats fabrication as visible style language: start from Wet asphalt sheen, Grainy
+    tar, and Puddles, then turn manufacturing process, tooling marks, seams, tolerances, and
+    industrial material behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Slick grain and reflective streaks: preserve identity and
+    pose while letting forms carry manufactured seams, tolerances, pressure marks, and finish logic
+    through edge profile, surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Black, Grey as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Reflection of lights define the light response: highlights, occlusion, translucency,
+    specular scatter, matte falloff, or rim behavior should reveal Asphalt (Wet) without hiding the
+    prompt subject.
+  texture_and_material: >-
+    Render Grainy tar through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Puddles as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Urban, dark by using use, fabrication, utility, and cultural material association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Noir, reflective material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Wet asphalt sheen; Slick grain and reflective streaks; Grainy tar; Reflection of lights; Puddles
   creative_brief: >-
-    Apply wet-asphalt noir to the input: black grain under a thin rainwater skin, reflective streaks, puddled
-    distortion, and occasional neon-like color dissolving across rough tar. If road, city, or vehicle cues
-    exist, intensify them; otherwise treat surfaces as dark urban mirrors without forcing road markings or
-    street layout.
+    Route any subject through Asphalt (Wet) as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Apply wet-asphalt noir to the input: black
+    grain under a thin rainwater skin, reflective streaks, puddled distortion, and occasional
+    neon-like color dissolving across rough tar. If road, city, or vehicle cues exist, intensify
+    them; otherwise treat surfaces as dark urban mirrors without forcing road markings or street
+    layout.
 avoidRules:
   - dry
   - desert
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-024.webp
 attributes:
-  negativePrompt: dry, desert
+  negativePrompt: dry, desert, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

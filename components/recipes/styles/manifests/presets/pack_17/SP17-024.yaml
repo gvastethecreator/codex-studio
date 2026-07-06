@@ -15,20 +15,32 @@ tags:
   - stained-glass
 visualDna:
   aesthetic: >-
-    Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and radiant cosmic
-    color.
+    Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and
+    radiant cosmic color.
   subject_treatment: >-
-    Translate any subject into stained-glass starforge logic with luminous pane segmentation, symbolic forge
-    gesture, halo geometry, and sacred cosmic flattening without requiring a fixed figure.
+    Translate any subject into stained-glass starforge logic with luminous pane segmentation,
+    symbolic forge gesture, halo geometry, and sacred cosmic flattening without requiring a fixed
+    figure.
   color_and_tone: Sapphire, ruby, emerald, solar gold, black leading, and luminous white star points.
   lighting_and_shadow: Backlit glass glow dominates, with black outlines creating graphic shadow and sacred separation.
   texture_and_material: Leaded glass, etched metal, prism bloom, tiny cracks, dust motes, and molten star-metal accents.
   camera_and_composition: Frontal icon layout, radial halos, symmetrical panels, and cathedral-window framing.
-  atmosphere_and_mood: Sacred, cosmic, triumphant, and strange.
+  atmosphere_and_mood: >-
+    Carry the prompt through Sacred, cosmic, triumphant, and strange; sacred futurism, oath-bound
+    technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should
+    follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Clean stained-glass illustration with crisp leadwork, luminous color, and fantasy-tech ornament.
   creative_brief: >-
-    Reusable visual system for any subject needing sacred cosmic-medieval design, luminous pane structure,
-    symbolic forge energy, and flat stained-glass clarity.
+    Reusable visual system for any subject needing sacred cosmic medieval design, luminous pane
+    structure, symbolic forge energy, and flat stained glass clarity. Apply after prompt X: prompt X
+    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
+    grammar of Stained Glass Starforge; Futuristic stained glass medieval fantasy with starforged
+    geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry, mood,
+    material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed
+    cast, fixed relic, fixed monster, readable text, or sample-card composition.
+  key_features: >-
+    Stained Glass Starforge; Futuristic stained glass medieval fantasy with starforged geometry;
+    black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry
 avoidRules:
   - photorealism
   - soft oil painting
@@ -37,10 +49,19 @@ avoidRules:
   - explicit gore
   - watermark
   - text
+  - generic cyberpunk city
+  - chrome overload
+  - readable rune text
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-024.webp
 attributes:
-  negativePrompt: photorealism, soft oil painting, flat clip art, modern logo, explicit gore, watermark, text
+  negativePrompt: >-
+    photorealism, soft oil painting, flat clip art, modern logo, explicit gore, watermark, text,
+    generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed
+    medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

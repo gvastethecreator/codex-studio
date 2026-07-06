@@ -12,28 +12,84 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Professional daywear, boardroom calm, corporate-modern uniformity
-  subject_treatment: Tailored, single-breasted structure, notch-lapel precision, tapered trouser, shift-dress column
-  color_and_tone: Blue, White, Beige, navy suiting, French blue, soft white, sand, dove grey
-  lighting_and_shadow: Window-filtered daylight, soft professional overhead, lobby-neutral glow
-  texture_and_material: Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte knit
+  aesthetic: >-
+    Business Casual operates as a portable fashion-costume router: combine Professional daywear,
+    boardroom calm, corporate-modern uniformity with contemporary fashion styling with fit control,
+    editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the preset supplies
+    styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer,
+    streamline, accessorize, polish, or simplify through Tailored, single-breasted structure,
+    notch-lapel precision, tapered trouser, shift-dress column; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through modern neutrals, controlled accent color, textile value separation,
+    skin-adjacent warmth, and editorial contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Window-filtered daylight, soft professional overhead, lobby-neutral glow plus fashion
+    editorial light with fabric sheen, controlled shadow, polished skin or surface response, and
+    clean silhouette reads as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Cotton poplin, tropical wool suiting, stretch-cotton twill, silk habotai lining, ponte
+    knit plus woven cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds,
+    closures, and garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Business Casual using its key spatial cues: Blazer, structured shoulder, tapered trouser line,
-    polished leather accessory cues.
-  atmosphere_and_mood: Professional calm, deadline focus, competent neutrality, low-risk polish
-  rendering_and_quality: Professional competent polish, low-risk clarity, workplace-ready finish
-  key_features: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues
+    Compose with Compose for Business Casual using its key spatial cues: Blazer, structured
+    shoulder, tapered trouser line, polished leather accessory cues plus lookbook clarity, runway
+    silhouette rhythm, full-form readability, crop discipline, and styling hierarchy as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional
+    or event-specific presence; the tone should feel specific to Business Casual while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with high-end styling clarity, crisp garment edges, believable fit, controlled
+    retouching, and no catalog blandness; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Professional daywear, boardroom calm, corporate-modern uniformity; Tailored, single-breasted
+    structure, notch-lapel precision, tapered trouser, shift-dress column; Cotton poplin, tropical
+    wool suiting, stretch-cotton twill, silk habotai lining, ponte knit; Window-filtered daylight,
+    soft professional overhead, lobby-neutral glow; Compose for Business Casual using its key
+    spatial cues: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues
   creative_brief: >-
-    Dress the input in business-casual competence: navy suiting, poplin, tropical wool, notch-lapel geometry,
-    structured shoulders and soft neutral whites. Keep office authority as tone only, not as a conference
-    room, headshot crop, portfolio-bag vignette, executive persona or fixed corporate character.
+    Use Business Casual after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Professional daywear,
+    boardroom calm, corporate-modern uniformity, Tailored, single-breasted structure, notch-lapel
+    precision, tapered trouser, shift-dress column, Cotton poplin, tropical wool suiting,
+    stretch-cotton twill, silk habotai lining, ponte knit, Window-filtered daylight, soft
+    professional overhead, lobby-neutral glow, Compose for Business Casual using its key spatial
+    cues: Blazer, structured shoulder, tapered trouser line, polished leather accessory cues plus
+    tailoring lines, garment fit, hem placement, accessory restraint, layered proportion, and
+    intentional styling choices, palette behavior, light response, material treatment, silhouette
+    grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop
+    bundle, or card composition.
 avoidRules:
   - t-shirt
   - shorts
+  - generic catalog outfit
+  - brand logo styling
+  - bad garment fit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-019.webp
 attributes:
-  negativePrompt: t-shirt, shorts
+  negativePrompt: >-
+    t-shirt, shorts, generic catalog outfit, brand logo styling, bad garment fit, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

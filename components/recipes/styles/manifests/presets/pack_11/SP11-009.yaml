@@ -12,29 +12,77 @@ tags:
   - miscellaneous-and-fun
   - aesthetics
 visualDna:
-  aesthetic: Glossy 3D emoji/icon language for playful digital communication
-  subject_treatment: Round, smooth, pill-shaped, sphere-based, soft extrusion
-  color_and_tone: Bright Yellow, Blue, Red, vivid primaries, gradient-rich, punchy saturation
-  lighting_and_shadow: Studio softbox, rim light, gradient sky reflection, glossy hotspot
-  texture_and_material: Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell
-  camera_and_composition: Sphere based, anthropomorphic objects, simplified features, chunky proportions
-  atmosphere_and_mood: Happy, expressive, digital, instant communication, friendly warmth, pixel joy
-  rendering_and_quality: Platform-agnostic polished icon render with toy-like gloss
-  key_features: Glossy reflection, gradient highlight, white rim catchlight, squircle silhouette
+  aesthetic: >-
+    Emoji 3D operates as a portable source-router layer: combine Glossy 3D emoji/icon language for
+    playful digital communication with cultural style-system logic with recognizable design codes,
+    mood grammar, and transferable taste rules, so the preset supplies visual behavior rather than a
+    fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
+    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Round,
+    smooth, pill-shaped, sphere-based, soft extrusion; identity stays readable through construction
+    grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
+    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Studio softbox, rim light, gradient sky reflection, glossy hotspot plus mood-led lighting
+    that reinforces the aesthetic code without replacing the requested subject as the light-response
+    contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases
+    the user's requested content.
+  texture_and_material: >-
+    Render Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer, candy shell plus
+    signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime,
+    gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
+    artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Sphere based, anthropomorphic objects, simplified features, chunky proportions plus
+    taste-coded spacing, silhouette discipline, motif placement, designed clutter, and reusable
+    visual hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and
+    abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
+    cuteness, or spectacle; the emotional tone should feel specific to Emoji 3D while still obeying
+    the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
+    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Glossy 3D emoji/icon language for playful digital communication; Round, smooth, pill-shaped,
+    sphere-based, soft extrusion; Shiny plastic or glass, bubble-smooth surface, high-gloss lacquer,
+    candy shell; Studio softbox, rim light, gradient sky reflection, glossy hotspot; Sphere based,
+    anthropomorphic objects, simplified features, chunky proportions
   creative_brief: >-
-    Model icons as simple rounded volumes with clean specular response and high readability. Keep expression
-    and silhouette instantly legible at small sizes, using gradient highlights and soft shadows to reinforce
-    friendly depth. Apply Emoji 3D as a portable style system over any input: preserve its construction
-    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise,
-    literal prop, fixed specimen, classroom sample, product shot, or scene template.
+    Use Emoji 3D after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Glossy 3D emoji/icon language for playful digital
+    communication, Round, smooth, pill-shaped, sphere-based, soft extrusion, Shiny plastic or glass,
+    bubble-smooth surface, high-gloss lacquer, candy shell, Studio softbox, rim light, gradient sky
+    reflection, glossy hotspot, Sphere based, anthropomorphic objects, simplified features, chunky
+    proportions plus proportion codes, recurring surface motifs, era cues, pattern pressure,
+    cultural references, and designed contrast, palette behavior, light response, material
+    treatment, and finish discipline without requiring one specimen, prop bundle, product still, or
+    card composition.
 avoidRules:
   - flat
   - 2d
   - sketch
+  - generic aesthetic collage
+  - random trend mix
+  - style-board text
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-009.webp
 attributes:
-  negativePrompt: flat, 2d, sketch
+  negativePrompt: >-
+    flat, 2d, sketch, generic aesthetic collage, random trend mix, style-board text, fixed specimen,
+    literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

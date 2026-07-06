@@ -12,19 +12,48 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: Quick digital sketch
-  subject_treatment: Rough, energetic
-  color_and_tone: Bold, unrefined
-  lighting_and_shadow: Dramatic
-  texture_and_material: Brush strokes
-  camera_and_composition: Unfinished edges
-  atmosphere_and_mood: Dynamic, fast
-  rendering_and_quality: Concept, loose
-  key_features: Loose strokes
+  aesthetic: >-
+    Speedpaint acts as a transferable art-medium router: start from Quick digital sketch, Loose
+    strokes and digital art workflow system built from layer control, editable edges, raster or
+    vector logic, screen-era artifacts, and production readability, then apply the medium behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Rough, energetic; preserve the prompt subject while routing
+    it through the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels,
+    facets, glyphs, or compositing only when the preset calls for them, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Bold, unrefined; use color as workflow evidence: palette ramps, neon gradients,
+    RGB channel shifts, flat vector fields, concept-art accents, or controlled digital paint
+    harmonies, with deliberate value grouping, accent control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Dramatic; shape light through layer modes, rim glow, raster gradients,
+    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Brush strokes; surface detail should come from the named workflow: brush texture, pixel
+    cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when
+    they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Unfinished edges; compose through digital hierarchy, projection
+    rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or controlled
+    interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Dynamic, fast; derive mood from speed, polish, concept utility, retro-futurism,
+    broken media, toy-scale clarity, or modern production control, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Concept, loose; finish with clean digital intent, readable shapes, purposeful
+    artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: Quick digital sketch; Loose strokes; Bold, unrefined; Brush strokes; Unfinished edges
   creative_brief: >-
-    Apply speedpaint energy to any input: broad gestural strokes, loose edges, compressed detail, fast value
-    blocking, visible brush shortcuts, and idea-first confidence. Keep rapid concept vitality without
-    requiring fantasy key art, YouTube process frames, characters, or unfinished sketch borders.
+    Apply Speedpaint as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Quick
+    digital sketch, Loose strokes, Brush strokes without requiring the card image's original
+    subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +70,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-047.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint,
+    uncontrolled artifact noise, generic concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

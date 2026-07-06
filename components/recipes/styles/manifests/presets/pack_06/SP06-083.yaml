@@ -13,35 +13,71 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Glowing vector cathode-ray lines, Asteroids, Tempest and Battlezone as vector-display anchors, pure
-    glowing line art on infinite black void, 1979 arcade cabinet vector display, electron-beam drawing in
-    real-time
+    Vector Arcade Wireframe acts as a transferable art-medium router: start from Glowing vector
+    cathode ray lines, Asteroids, Tempest and Battlezone as vector display anchors, pure glowing
+    line art on infinite black void, 1979 arcade cabinet vector display, electron beam drawing in
+    real time, Glowing vector lines on black, wireframe only geometry, phosphor bloom at line
+    intersections, no filled surfaces, raster scan absent and hardware-constrained game-visual
+    system built from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld
+    artifacts, and era-specific charm, then apply the medium behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Pure glowing geometric strokes, wireframe polygon meshes, no filled surfaces, beam-drawn contour lines
-    only, vector-coordinate precision
+    Transform any prompt subject through Pure glowing geometric strokes, wireframe polygon meshes,
+    no filled surfaces, beam drawn contour lines only, vector coordinate precision; preserve the
+    prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render,
+    screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
   color_and_tone: >-
-    Phosphor green on void black, occasional amber-orange screens, blue-white vector glow, single-color per
-    display, no RGB mixing
+    Build color with Phosphor green on void black, occasional amber orange screens, blue white
+    vector glow, single color per display, no RGB mixing; use color through hardware rules: indexed
+    palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients, limited
+    scanline color, or terminal ANSI sets, with deliberate value grouping, accent control, and
+    medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Self-illuminated phosphor lines, electron-beam persistence glow, brighter at stroke starts, dimming at
-    stroke ends
+    Handle light through Self illuminated phosphor lines, electron beam persistence glow, brighter
+    at stroke starts, dimming at stroke ends; make light emerge from display technology, pixel value
+    steps, CRT bloom, palette cycling, thermal print contrast, or vector beam brightness, so value
+    structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    CRT phosphor glow, analog vector display bloom, line-intersection brightening, phosphor-persistence
-    afterglow, no pixels just beams
+    Render CRT phosphor glow, analog vector display bloom, line intersection brightening, phosphor
+    persistence afterglow, no pixels just beams; surface detail should show pixels, dithering,
+    scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print
+    degradation, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Vector-perspective wireframe grids, rotating coordinate structures, infinite blank black space, no
-    occlusion just transparency
+    Structure the image through Vector perspective wireframe grids, rotating coordinate structures,
+    infinite blank black space, no occlusion just transparency; compose through tile maps, sprite
+    scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
+    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
   atmosphere_and_mood: >-
-    Retro-futuristic, electronic, arcade-darkness, analog-computing soul, early-CGI wonder, abstract voltage
-    theater
-  rendering_and_quality: Vector arcade display, analog CRT beauty, electron-beam line art, retro-electronic aesthetic
+    Keep the mood Retro futuristic, electronic, arcade darkness, analog computing soul, early CGI
+    wonder, abstract voltage theater; derive mood from hardware limitation, arcade spectacle,
+    handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Vector arcade display, analog CRT beauty, electron beam line art, retro electronic
+    aesthetic; finish with faithful era constraints, crisp readability at small scale, and no modern
+    high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised
+    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
   key_features: >-
-    Glowing vector lines on black, wireframe-only geometry, phosphor bloom at line intersections, no filled
-    surfaces, raster-scan absent
+    Glowing vector cathode ray lines, Asteroids, Tempest and Battlezone as vector display anchors,
+    pure glowing line art on infinite black void, 1979 arcade cabinet vector display, electron beam
+    drawing in real time; Glowing vector lines on black, wireframe only geometry, phosphor bloom at
+    line intersections, no filled surfaces, raster scan absent; Phosphor green on void black,
+    occasional amber orange screens, blue white vector glow, single color per display, no RGB
+    mixing; CRT phosphor glow, analog vector display bloom, line intersection brightening, phosphor
+    persistence afterglow, no pixels just beams; Vector perspective wireframe grids, rotating
+    coordinate structures, infinite blank black space, no occlusion just transparency
   creative_brief: >-
-    Pure electron beams sweep abstract geometry onto phosphor glass, brighter where lines cross and softer
-    where they fade. Any subject becomes transparent vector coordinates, voltage translated into luminous
-    contour instead of surface.
+    Apply Vector Arcade Wireframe as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Glowing vector cathode ray lines, Asteroids, Tempest and Battlezone as vector display
+    anchors, pure glowing line art on infinite black void, 1979 arcade cabinet vector display,
+    electron beam drawing in real time, Glowing vector lines on black, wireframe only geometry,
+    phosphor bloom at line intersections, no filled surfaces, raster scan absent, CRT phosphor glow,
+    analog vector display bloom, line intersection brightening, phosphor persistence afterglow, no
+    pixels just beams without requiring the card image's original subject.
 avoidRules:
   - filled
   - solid
@@ -53,10 +89,25 @@ avoidRules:
   - filled polygons
   - complex
   - photo
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-083.webp
 attributes:
-  negativePrompt: filled, solid, textured, colorful, raster, bitmap, shading, filled polygons, complex, photo
+  negativePrompt: >-
+    filled, solid, textured, colorful, raster, bitmap, shading, filled polygons, complex, photo,
+    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable
+    text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

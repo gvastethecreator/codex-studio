@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Soft watercolor painting
-  subject_treatment: Fluid, bleeding edges
-  color_and_tone: Translucent, pastel, washed out
-  lighting_and_shadow: Soft, diffuse, paper white highlights
-  texture_and_material: Cold press paper grain, water stains
-  camera_and_composition: Colors bleeding outside lines
-  atmosphere_and_mood: Dreamy, soft, nostalgic
-  rendering_and_quality: Delicate, artistic
-  key_features: Watery texture
+  aesthetic: >-
+    Watercolor (Soft) acts as a transferable art-medium router: start from Soft watercolor painting,
+    Watery texture and paint-media system built from pigment body, binder behavior, substrate tooth,
+    brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fluid, bleeding edges; preserve the prompt subject while
+    translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed
+    edge behavior, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Translucent, pastel, washed out; let hue, value, saturation, and mixing come
+    from physical pigment, binder opacity, drying character, and historical medium constraints, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Soft, diffuse, paper white highlights; make light feel interpreted by paint
+    through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Cold press paper grain, water stains; surface detail should show canvas, paper, plaster,
+    wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Colors bleeding outside lines; organize the image through painterly
+    massing, brush direction, support format, negative space, edge hierarchy, and intentional
+    simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dreamy, soft, nostalgic; derive mood from medium history, touch, pigment weight,
+    speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Delicate, artistic; finish with medium-faithful paint handling, readable form,
+    controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where
+    appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Soft watercolor painting; Watery texture; Translucent, pastel, washed out; Cold press paper
+    grain, water stains; Colors bleeding outside lines
   creative_brief: >-
-    Apply soft watercolor behavior to any input: translucent washes, pigment blooms, feathered wet edges,
-    paper-white luminosity, granulation, and gentle value layering. Keep airy water-media softness without
-    requiring florals, landscapes, sketchbook pages, or botanical study.
+    Apply Watercolor (Soft) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Soft watercolor painting, Watery texture, Cold press paper grain, water stains without requiring
+    the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-002.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

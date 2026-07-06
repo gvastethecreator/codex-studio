@@ -12,26 +12,63 @@ tags:
   - abstract-and-experimental
   - digital-glitch-and-noise
 visualDna:
-  aesthetic: Video compression artifact
-  subject_treatment: Motion vectors
-  color_and_tone: Bleeding pixels
-  lighting_and_shadow: Broken
-  texture_and_material: Macroblocks
-  camera_and_composition: Pixel drag
-  atmosphere_and_mood: Chaotic, digital
-  rendering_and_quality: Glitch art, broken
-  key_features: I-Frame destruction
+  aesthetic: >-
+    Datamosh becomes a transferable digital signal artifact system: start from Video compression
+    artifact, I-Frame destruction, and Pixel drag, then route prompt content through compression
+    errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing
+    one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Motion vectors to corrupt, quantize, sort,
+    smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Bleeding pixels; bind color to device behavior: phosphor masks, CMYK
+    dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Broken drive the light response: make light feel emitted, scanned, clipped, banded, or
+    sampled rather than normally photographed, avoiding generic glamour lighting unless the prompt
+    explicitly asks for it.
+  texture_and_material: >-
+    Render Macroblocks as the tactile or mark-making basis; texture should come from pixels,
+    scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces,
+    or close material studies.
+  camera_and_composition: >-
+    Compose around Pixel drag as reusable spatial grammar: use raster alignment, artifact seams,
+    frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits,
+    objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Chaotic, digital as the emotional register; derive mood from damaged playback, obsolete
+    interfaces, surveillance, latency, and media failure, without flattening strong, strange,
+    darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Glitch art, broken: finish with intentional artifacts, sharp enough structure, and no
+    random muddy AI noise, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Video compression artifact; Motion vectors; Bleeding pixels; Broken; Macroblocks; Pixel drag;
+    Chaotic, digital; Glitch art, broken; I-Frame destruction
   creative_brief: >-
-    Apply datamosh failure to the input: inter-frame smears, motion-block bleed, codec ghosts, and liquefied
-    temporal edges should corrupt subject movement or contours while retaining enough identity to read the
-    prompt.
+    Route any subject through Datamosh as a transferable signal-distortion visual system: preserve
+    prompt intent while converting form, motion, edge fidelity, pixel structure, compression
+    behavior, and digital failure rhythm through this preset. Apply datamosh failure to the input:
+    inter-frame smears, motion-block bleed, codec ghosts, and liquefied temporal edges should
+    corrupt subject movement or contours while retaining enough identity to read the prompt.
 avoidRules:
   - clean
   - perfect
+  - clean photo realism
+  - random AI smear
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-021.webp
 attributes:
-  negativePrompt: clean, perfect
+  negativePrompt: >-
+    clean, perfect, clean photo realism, random AI smear, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

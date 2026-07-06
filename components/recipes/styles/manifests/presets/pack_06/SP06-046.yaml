@@ -13,22 +13,60 @@ tags:
   - digital-art
 visualDna:
   aesthetic: >-
-    Polished digital illustration with layer-built control, clean brush economy, and modern concept-render
-    clarity
-  subject_treatment: Refined silhouette edges, selective painterly marks, and clean shape transitions
-  color_and_tone: RGB-vibrant but disciplined, with controlled hue shifts and crisp accent separation
-  lighting_and_shadow: Studio-like key/fill/rim logic tuned for clean digital readability
-  texture_and_material: Smooth brush blending with selective texture overlays and pressure-sensitive edge detail
+    Digital Painting acts as a transferable art-medium router: start from Polished digital
+    illustration with layer built control, clean brush economy, and modern concept render clarity,
+    Layered polish, crisp focal rendering, editable feeling control and digital art workflow system
+    built from layer control, editable edges, raster or vector logic, screen-era artifacts, and
+    production readability, then apply the medium behavior to prompt X instead of recreating a fixed
+    demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Refined silhouette edges, selective painterly marks, and
+    clean shape transitions; preserve the prompt subject while routing it through the
+    preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs,
+    or compositing only when the preset calls for them, keeping the requested identity, silhouette,
+    pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with RGB vibrant but disciplined, with controlled hue shifts and crisp accent
+    separation; use color as workflow evidence: palette ramps, neon gradients, RGB channel shifts,
+    flat vector fields, concept-art accents, or controlled digital paint harmonies, with deliberate
+    value grouping, accent control, and medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Studio like key/fill/rim logic tuned for clean digital readability; shape
+    light through layer modes, rim glow, raster gradients, isometric value, screen emission, glitch
+    clipping, or composited photographic consistency, so value structure supports the medium and
+    does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth brush blending with selective texture overlays and pressure sensitive edge detail;
+    surface detail should come from the named workflow: brush texture, pixel cells, glyph density,
+    vector fills, polygon facets, paper layers, or signal artifacts only when they belong to the
+    preset, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Compose for Digital Painting using its key spatial cues: Layered polish, crisp focal rendering,
-    editable-feeling control.
-  atmosphere_and_mood: Polished
-  rendering_and_quality: Professional digital painting polish without platform-specific tropes
-  key_features: Layered polish, crisp focal rendering, editable-feeling control
+    Structure the image through Compose for Digital Painting using its key spatial cues: Layered
+    polish, crisp focal rendering, editable feeling control; compose through digital hierarchy,
+    projection rules, asset readability, editable shape grouping, focal thumbnails, grid logic, or
+    controlled interface-like rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing
+    the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Polished; derive mood from speed, polish, concept utility, retro-futurism, broken
+    media, toy-scale clarity, or modern production control, letting the medium alter interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Professional digital painting polish without platform specific tropes; finish with
+    clean digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge,
+    clean denoised surfaces where appropriate, and enough craft evidence to make the medium
+    recognizable.
+  key_features: >-
+    Polished digital illustration with layer built control, clean brush economy, and modern concept
+    render clarity; Layered polish, crisp focal rendering, editable feeling control; RGB vibrant but
+    disciplined, with controlled hue shifts and crisp accent separation; Smooth brush blending with
+    selective texture overlays and pressure sensitive edge detail
   creative_brief: >-
-    Apply digital-painting workflow to any input: pressure-sensitive brushwork, layered corrections, sampled
-    color precision, soft undo-polished gradients, and clean iterative finish. Keep weightless painterly
-    control without requiring fantasy characters, concept sheets, tablet UI, or visible layers.
+    Apply Digital Painting as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Polished digital illustration with layer built control, clean brush economy, and modern concept
+    render clarity, Layered polish, crisp focal rendering, editable feeling control, Smooth brush
+    blending with selective texture overlays and pressure sensitive edge detail without requiring
+    the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -45,12 +83,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-046.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, random AI smear, muddy overpaint,
+    uncontrolled artifact noise, generic concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

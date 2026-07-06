@@ -12,31 +12,88 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Viscous gel material, glossy couture surface, ectoplasmic wet gloss
+  aesthetic: >-
+    Viscous Gel Couture operates as a portable fashion-costume router: combine Viscous gel material,
+    glossy couture surface, ectoplasmic wet gloss with material-forward fashion transformation with
+    drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
   subject_treatment: >-
-    Drips, gravity-pull tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail
-    elongation
-  color_and_tone: Neon Green, chartreuse, radioactive-amber, bioluminescent-blue, translucent teal, sickly-yellow
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Drips, gravity-pull
+    tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
   lighting_and_shadow: >-
-    Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and controlled gel
-    highlights
+    Use Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge glow and
+    controlled gel highlights plus material-revealing light with gloss, rim, translucency, sparkle,
+    subsurface, matte falloff, or volumetric separation as the styling light contract, revealing
+    cut, drape, surface response, trim, transparency, or armor structure without erasing prompt
+    readability.
   texture_and_material: >-
+    Render Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip,
+    gelatinous-surface, bubble-suspension plus fabric grain, fur, chain, knit, satin, lace, leather,
+    polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams,
+    fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent
+    across the whole prompt.
+  camera_and_composition: >-
+    Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold
+    direction, and transformation edge control as reusable fashion framing grammar, allowing
+    portraits, objects, creatures, environments, action, and abstract prompts to inherit styling
+    without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Viscous Gel Couture
+    while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Viscous gel material, glossy couture surface, ectoplasmic wet gloss; Drips, gravity-pull
+    tendrils, sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation;
     Viscous, methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface,
-    bubble-suspension
-  camera_and_composition: Melting
-  atmosphere_and_mood: Weird, sticky, tactile, oozing-drip tension
-  rendering_and_quality: Sci-fi gel couture, ectoplasm gloss, controlled viscous material read
-  key_features: Drips, stringy tendrils, bubble suspension, wet-gloss surface, gravity-sag form
+    bubble-suspension; Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge
+    glow and controlled gel highlights; drape rhythm, material coverage, silhouette clarity, tactile
+    close detail, fold direction, and transformation edge control
   creative_brief: >-
-    Cover the input in viscous gel dynamics: chartreuse viscosity, stringy tendrils, wet speculars, bubble
-    suspension, gravity sag and UV fluorescence. Keep the material strange without requiring shoulder-like
-    anatomy, floor puddles, body beneath, lab accident or creature scene.
+    Use Viscous Gel Couture after prompt X as a transferable fashion/costume layer: prompt X
+    supplies subject, motion, setting, tone, and intensity, while the preset supplies Viscous gel
+    material, glossy couture surface, ectoplasmic wet gloss, Drips, gravity-pull tendrils,
+    sagging-weight deformation, viscosity-drape silhouette, drip-trail elongation, Viscous,
+    methylcellulose slime, gel-thickness body, stringy-elastic drip, gelatinous-surface,
+    bubble-suspension, Glossy wet-look specular, blacklight-UV fluorescence, contained neon edge
+    glow and controlled gel highlights, drape rhythm, material coverage, silhouette clarity, tactile
+    close detail, fold direction, and transformation edge control plus weave, pile, grain, shine,
+    translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity,
+    palette behavior, light response, material treatment, silhouette grammar, and finish discipline
+    without requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - dry
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-076.webp
 attributes:
-  negativePrompt: dry, gore, creature, body horror, lab accident
+  negativePrompt: >-
+    dry, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit, required
+    body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable
+    text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

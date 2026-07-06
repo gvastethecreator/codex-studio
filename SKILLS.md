@@ -68,6 +68,24 @@ Run `bun run recipes:examples:verify` when changing future asset-task blueprints
 Run `bun run recipes:source:verify` when changing recipe UI or module plumbing. It blocks React recipe surfaces from importing task-spec builders, Recipe Context builders, Recipe Provider Directives, or provider compilers.
 Run `bun run recipes:evaluate:live -- --recipe=<id> --out=logs/recipe-prompt-quality` to plan a live Codex quality comparison without creating jobs. Add `--execute` to queue real legacy-vs-directives jobs through the local backend, record JSON + Markdown review templates, and keep only job/catalog refs plus transcript paths in the repo-local report.
 
+## Build Or Change Sprite Atlas Workflow
+
+1. Use the repo-local skill `skills/sprite-atlas-builder/SKILL.md`.
+2. Keep `spritesheet` as the quick one-shot grid recipe; use `sprite-atlas` for runtime-ready atlas runs.
+3. Store run folders under the Studio Library at `outputs/sprite-atlas/<runId>`.
+4. The UI may prepare runs, create handoff jobs, import real row strips, compose fixture smoke atlases, and run QA. It must not create fake row art for user-facing completion.
+5. Row generation handoff jobs must point to `sprite-request.json`, `prompts/<row>.txt`, `references/layout-guides/<row>.png`, optional identity anchor, and the expected raw row output.
+6. Blocked generation must write structured blocked sidecars with `reasonKind`, `userMessage`, and `suggestion`.
+7. Use `manifest.json.frame_layout` as runtime source of truth. Do not infer frame rectangles from alpha at runtime.
+8. Treat deterministic fixture atlases as workflow smoke evidence only. Representative art validation requires imagegen-backed row sources.
+
+Focused validation:
+
+```bash
+bun run test -- packages/shared/src/spriteAtlasContracts.test.ts lib/recipeModules.test.ts apps/local-server/src/spriteAtlasRoutes.test.ts
+bun run recipes:verify
+```
+
 ## Add Or Change A Style Preset
 
 1. Prefer `bun run styles:scaffold -- --preset=<ID> --pack=<pack_id> --category=<category id or exact name> --name=<Name> --template=style|sprite|texture` when creating a new preset. It is dry-run by default; pass `--write` to mutate files and optionally `--default-image=/assets/...` to prefill a real default image path.

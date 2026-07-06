@@ -7,184 +7,203 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP11-006',
     name: 'Chalkboard Art',
     category: '2. Artistic Mediums',
-    negativePrompt: 'paper, ink, digital',
+    negativePrompt:
+      'paper, ink, digital, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Chalkboard drawing language on dark slate surfaces',
+      aesthetic:
+        'Chalkboard Art operates as a portable source-router layer: combine Chalkboard drawing language on dark slate surfaces with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections',
+        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'White chalk on Black board, soft pastel chalks, muted color spectrum, dusty desaturation',
-      lighting_and_shadow: 'Flat, even overhead fluorescents, no glare, diffused ambient',
+        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+      lighting_and_shadow:
+        "Use Flat, even overhead fluorescents, no glare, diffused ambient plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth',
+        'Render Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing',
-      atmosphere_and_mood: 'Casual, temporary, rustic, creative, fleeting, nostalgic melancholy',
-      rendering_and_quality: 'Ephemeral hand-drawn chalk finish with visible correction history',
-      key_features: 'Dusty background, chalk-dust halo, eraser streak ghosts, fingertip blending',
+        'Compose with Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Chalkboard Art while still obeying the prompt's subject and context.",
+      rendering_and_quality:
+        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
+      key_features:
+        'Chalkboard drawing language on dark slate surfaces; Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections; Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth; Flat, even overhead fluorescents, no glare, diffused ambient; Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing',
       creative_brief:
-        'Compose with dusty, pressure-variable chalk marks over a textured dark board. Preserve eraser ghosts, smudge transitions, and imperfect lettering rhythm to emphasize temporary handmade expression. Apply Chalkboard Art as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Chalkboard Art after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Chalkboard drawing language on dark slate surfaces, Chalk dust, variable thickness, smudged contours, broken strokes, re-drawn corrections, Slate grain, eraser smudges, chalk dust, ghosted afterimages, rough tooth, Flat, even overhead fluorescents, no glare, diffused ambient, Hand-drawn imperfections, slightly tilted lettering, uneven scale, organic spacing plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-007',
     name: 'Tattoo Flash (Old School)',
     category: '2. Artistic Mediums',
-    negativePrompt: 'realistic, photo, 3d',
+    negativePrompt:
+      'realistic, photo, 3d, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Traditional old-school tattoo flash design language',
+      aesthetic:
+        'Tattoo Flash (Old School) operates as a portable source-router layer: combine Traditional old-institutional-system tattoo flash design language with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Bold black outlines, heavy contour weight, ribbony banners, coiled snakes',
+        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Bold black outlines, heavy contour weight, ribbony banners, coiled snakes; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Red, Green, Yellow, Black shading, limited triad palette, spit-shaded gradients',
+        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow',
+        "Use Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges',
+        'Render Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        '2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout',
+        'Compose with 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Tough, classic, bold, salt-air romance, port-town grit, permanent devotion',
-      rendering_and_quality: 'Bold flash-sheet rendering with high durability/readability logic',
+        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Tattoo Flash (Old School) while still obeying the prompt's subject and context.",
+      rendering_and_quality:
+        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Pepper shading dots, banner typography, emblematic motif blocks, thick contour lock',
+        'Traditional old-institutional-system tattoo flash design language; Bold black outlines, heavy contour weight, ribbony banners, coiled snakes; Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges; Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow; 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout',
       creative_brief:
-        'Design each motif as a standalone flash emblem: thick outlines, limited palette fills, and compact symbolic forms. Keep contrast and shape clarity high so marks remain legible at both sheet and tattoo scales. Apply Tattoo Flash as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Tattoo Flash (Old School) after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Traditional old-institutional-system tattoo flash design language, Bold black outlines, heavy contour weight, ribbony banners, coiled snakes, Watercolor paper, skin, flash-sheet tooth, poster-board grain, ink-bled edges, Paper stain (coffee), vintage amber wash, warm sepia base, parchment glow, 2D flat design, pinup proportions, dagger-and-heart motifs, talismanic layout plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-008',
     name: 'Stained Glass',
     category: '2. Artistic Mediums',
-    negativePrompt: 'opaque, dull, painting',
+    negativePrompt:
+      'opaque, dull, painting, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Stained-glass window art with lead-came segmentation',
+      aesthetic:
+        'Stained Glass operates as a portable source-router layer: combine Stained-glass window art with lead-came segmentation with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Thick black lead came, segmented contours, curvilinear divisions, interconnected cells',
+        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Thick black lead came, segmented contours, curvilinear divisions, interconnected cells; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Vibrant translucent glass, jewel-tone spectrum, ruby-cobalt-emerald, sun-drenched saturation',
+        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama',
+        "Use Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina',
+        'Render Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity',
+        'Compose with Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Spiritual, beautiful, light, reverent calm, sacred awe, transcendent glow',
+        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Stained Glass while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Ornamental luminous-glass rendering with structural lead-line clarity',
+        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Black outlines mandatory, lead-came shadows, solder joints, textured glass surface',
+        'Stained-glass window art with lead-came segmentation; Thick black lead came, segmented contours, curvilinear divisions, interconnected cells; Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina; Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama; Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity',
       creative_brief:
-        'Build imagery as interconnected glass cells framed by dark lead lines. Emphasize backlit translucency, jewel-tone contrast, and subtle glass imperfections so illumination feels material and architectural. Apply Stained Glass as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Stained Glass after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Stained-glass window art with lead-came segmentation, Thick black lead came, segmented contours, curvilinear divisions, interconnected cells, Glass imperfections, bubbles, rippled surface, wavy transparency, antique patina, Backlit, glowing, sun-through-glass radiance, interior candle warmth, beam-fall drama, Mosaic segmentation, lead-line compartmentalization, piecemeal assembly, fractured-light unity plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-019',
     name: 'Felt Signal Handmade Broadcast',
     category: '2. Artistic Mediums',
-    negativePrompt: 'cgi, smooth',
+    negativePrompt:
+      'cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit',
+        'Felt Signal Handmade Broadcast operates as a portable source-router layer: combine Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry',
+        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Primary felt blocks, craft-store brights, saturated fleece accents, warm studio neutrals, tiny black button contrast',
+        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage',
+        "Use Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Felt nap, fleece fuzz, foam padding, visible stitching, brushed fabric grain, handmade edge irregularity',
+        'Render Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge irregularity plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth',
-      atmosphere_and_mood: 'Warm, comedic, approachable, nostalgic, handmade, emotionally legible',
+        'Compose with Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Felt Signal Handmade Broadcast while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every surface',
+        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Fuzzy contour halos, seam punctuation, button-eye abstraction, foam volume, felt color blocking, soft jaw-like deformation',
+        'Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit; Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry; Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge irregularity; Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage; Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth',
       creative_brief:
-        'Transform the input into a handmade broadcast-material treatment: felt nap, foam softness, seam rhythm, and operated-expression timing should define the image. The result should feel tactile and performed, without requiring literal puppets, sets, rods, or franchise references.',
+        'Use Felt Signal Handmade Broadcast after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit, Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry, Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge irregularity, Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage, Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical depth plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-026',
     name: 'Aerosol Velocity Layering',
     category: '2. Artistic Mediums',
-    negativePrompt: 'brush strokes, clean',
+    negativePrompt:
+      'brush strokes, clean, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory',
+        'Aerosol Velocity Layering operates as a portable source-router layer: combine Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions',
+        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Chrome silver, toxic green, infrared purple, safety yellow, matte black, signal red, concrete grey undertone',
+        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch',
+        "Use Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields',
+        'Render Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth',
-      atmosphere_and_mood: 'Energetic, illegal-feeling, urban-coded, loud, improvised, physical',
+        'Compose with Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Aerosol Velocity Layering while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Raw, layered, fast, tactile, with visible order of operations and deliberate paint accumulation',
+        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Overspray halos, cap-width transitions, drips, masked edges, layered tags, color collisions, scuffed substrate',
+        'Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory; Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions; Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields; Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch; Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth',
       creative_brief:
-        'Push the input through aerosol process rather than a mural scene: visible spray pressure, paint order, drip behavior, and layered marks should drive the image. Avoid requiring walls, alleys, lettering, cans, crews, or a street location. Apply Aerosol Velocity Layering as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Aerosol Velocity Layering after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Aerosol markmaking system with overpainted speed, cap-pressure variation, graphic rebellion, and layered surface memory, Fat-cap fills, skinny-cap cuts, overspray halos, drips, stencil interrupts, tag-like motion trails, scuffed outline collisions, Powdery overspray, glossy wet paint, scratched base surface, stencil edge dust, aerosol speckle fields, Flat flash-like visibility with wet-paint glints, grazing texture light, and saturated color punch, Spray drift, drip gravity, edge bloom, stencil offsets, overlapping tag gestures, pressure-fade depth plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-028',
     name: 'Gas-Tube Halo Typography',
     category: '2. Artistic Mediums',
-    negativePrompt: 'daylight, paint',
+    negativePrompt:
+      'daylight, paint, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed',
+        'Gas-Tube Halo Typography operates as a portable source-router layer: combine Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition',
+        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Argon purple, mercury cyan, krypton white, hot pink, vacancy red, deep black backing, reflected blue spill',
+        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff',
+        "Use Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light',
+        'Render Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry',
-      atmosphere_and_mood: 'Nocturnal, electric, commercial, seductive, nostalgic, high-contrast',
+        'Compose with Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Gas-Tube Halo Typography while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Sharp luminous linework with controlled bloom, readable silhouette, glossy micro-highlights, and nocturnal graphic clarity',
+        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Bent-tube continuity, colored halo bleed, black negative space, glass highlight knots, local glow reflections',
+        'Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed; Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition; Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light; Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff; Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry',
       creative_brief:
-        'Render any subject as if its visual grammar were built from neon tubing and gas-discharge light. Prioritize continuous luminous contours, glow spill, dark backing, and glassy emission; do not force storefronts, bars, signs, words, or wall-mounted objects.',
+        'Use Gas-Tube Halo Typography after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Electric gas-discharge graphic treatment built from glowing tube contours, dark void contrast, and chromatic halo bleed, Continuous bent-tube strokes, cursive contour loops, clipped mounting shadows, soft wall-wash silhouettes, luminous edge repetition, Glass tubing, gas glow, enamel backing, transformer warmth, glossy reflections, dust caught inside colored light, Self-illuminated emission with colored spill, bloom halos, high local contrast, and dim ambient falloff, Halo expansion, chromatic fringe drift, tube refraction, glow stacking, slight sign-maker asymmetry plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-044',
     name: 'Silkscreen Icon Impact',
     category: '2. Artistic Mediums',
-    negativePrompt: 'subtle',
+    negativePrompt:
+      'subtle, generic digital painting, flat vector shortcut, lost medium texture, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition',
+        'Silkscreen Icon Impact operates as a portable source-router layer: combine Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition with manual medium logic with mark discipline, process texture, graphic reduction, and authored surface treatment, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic',
+        "Preserve the prompt's subject plus requested motion and context while letting forms draw, print, stitch, spray, glaze, outline, cut, layer, or illuminate through Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Tomato red, electric yellow, cyan blocks, hot pink, black ink, cream paper, deliberately offset CMYK',
+        "Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis',
+        "Use Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis plus surface-aware illumination that reveals pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss',
+        'Render Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss plus mark residue, substrate grain, lead came, screen ink, sprayed overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment',
-      atmosphere_and_mood: 'Commercial, ironic, loud, iconic, mass-produced, playful',
+        'Compose with Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment plus graphic spacing, panel division, emblem balance, handmade alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and object presence; the emotional tone should feel specific to Silkscreen Icon Impact while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Bold, reproducible, graphic, mechanically printed, iconic, high contrast, deliberately artificial',
+        'Finish with legible medium identity, crisp material boundary, intentional artifacts, and no generic illustration filler; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Halftone fields, CMYK separation, registration slips, posterized shadow, repeated icon blocks, ink bleed',
+        'Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition; Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic; Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss; Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis; Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment',
       creative_brief:
-        'Make the subject feel mechanically reproduced and culturally amplified: halftone, flat commodity color, registration errors, and serial pop rhythm should carry the style. Avoid forcing celebrity portraits, soup cans, comic panels, or named artworks. Apply Silkscreen Icon Impact as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Silkscreen Icon Impact after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Pop silkscreen impact system using mechanical reproduction, celebrity-scale flatness, commodity color, and graphic repetition, Ben-Day dots, thick contour separation, screen-registration offsets, posterized planes, repeated frame logic, Screenprint ink, paper tooth, halftone grain, misregistration edges, cheap poster gloss, Flattened print light with almost no modeled depth, hard color field contrast, and ink-density emphasis, Color-channel offset, serial repetition, halftone scale shifts, cropped icon flattening, print misalignment plus stroke direction, pigment edge, stencil separation, lead structure, fabric or print registration, and clearly expressed hand process, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

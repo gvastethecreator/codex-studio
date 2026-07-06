@@ -12,27 +12,81 @@ tags:
   - cinematic-and-media
   - animation-styles
 visualDna:
-  aesthetic: Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley
-  subject_treatment: Wobbly trace
-  color_and_tone: Flat blocks, posterized palette, unnatural local color, comic-book reduction
-  lighting_and_shadow: Realistic (traced), live-action source, practical on-set
-  texture_and_material: Digital paint, vector fill, smooth gradient zone
-  camera_and_composition: Floating shapes, paint-drift, unstable outline, image swim
-  atmosphere_and_mood: Surreal, trippy, unstable, psychological unease
-  rendering_and_quality: Uncanny, dream, floating-reality disconnect, liquid edge
-  key_features: Jitter, boil, line tremble, frame-to-frame instability
+  aesthetic: >-
+    Rotoscoping acts as a transferable cinematic-media router: start from Posterized traced live
+    action, A Scanner Darkly style, wobbly reality, digital uncanny valley, Jitter, boil, line
+    tremble, frame-to-frame instability and animation-production system built from motion-era
+    drawing, cel paint, CG polish, stop-motion material, vector layers, camera multiplane, and shape
+    acting, then apply the media behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Wobbly trace, adapt the requested subject through animation
+    pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era
+    finish while preserving prompt identity; preserve the requested subject while translating it
+    through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace,
+    or painted-frame continuity, keeping the requested identity, silhouette, action, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Flat blocks, posterized palette, unnatural local color, comic-book reduction;
+    use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats,
+    stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value
+    grouping, accent control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Realistic (traced), live-action source, practical on-set; make light follow
+    the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat
+    graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Digital paint, vector fill, smooth gradient zone; surface detail should reveal acetate
+    grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel cells, or CG
+    shader smoothness when named, keeping artifact scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Floating shapes, paint-drift, unstable outline, image swim; compose
+    through animation readability, pose clarity, painted-plate rhythm, squash arcs, graphic staging,
+    multiplane depth, or frame-by-frame motion logic, with frame rhythm, spacing, edge hierarchy,
+    and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Surreal, trippy, unstable, psychological unease; derive mood from feature warmth,
+    rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or experimental
+    motion craft, letting the media style alter interpretation without demanding a specific story,
+    location, or actor.
+  rendering_and_quality: >-
+    Finish with Uncanny, dream, floating-reality disconnect, liquid edge; finish with
+    production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact
+    studio-character copy or random cartoon face substitution, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Posterized traced live action, A Scanner Darkly style, wobbly reality, digital uncanny valley;
+    Jitter, boil, line tremble, frame-to-frame instability; Flat blocks, posterized palette,
+    unnatural local color, comic-book reduction; Digital paint, vector fill, smooth gradient zone;
+    Floating shapes, paint-drift, unstable outline, image swim
   creative_brief: >-
-    Trace the input as unstable rotoscoped live action: posterized fills, wobbly vector edges, drifting color
-    islands, and frame-boil instability. Avoid forcing faces or identity themes; any subject can become a
-    live-action source slipping out of registration with its drawn overlay. Reality should look observed,
-    repainted, and never fully locked to itself.
+    Apply Rotoscoping as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Posterized traced live action, A Scanner Darkly style, wobbly
+    reality, digital uncanny valley, Jitter, boil, line tremble, frame-to-frame instability, Digital
+    paint, vector fill, smooth gradient zone without requiring the card image's original subject.
 avoidRules:
   - smooth
   - 3d
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact studio character copy
+  - random cartoon face
+  - unreadable motion smear
+  - fake subtitles
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-041.webp
 attributes:
-  negativePrompt: smooth, 3d
+  negativePrompt: >-
+    smooth, 3d, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact
+    studio character copy, random cartoon face, unreadable motion smear, fake subtitles
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -8,24 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Holographic Grand Prix Night',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, static-scene, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, static-scene, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Holographic Grand Prix Night within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Holographic Grand Prix Night's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through premium racing spectacle; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Holographic Grand Prix Night's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Holographic Grand Prix Night: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with transparent cyan, magenta refraction, and black chrome; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Holographic Grand Prix Night: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with hologram streaks and lens-split glow; low-key night lighting with practical pools; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Holographic Grand Prix Night's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Holographic Grand Prix Night's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Holographic Grand Prix Night's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood late-hour danger; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Holographic, Grand, Prix, Night; premium racing spectacle; transparent cyan, magenta refraction, and black chrome; hologram streaks and lens-split glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; wide speedway and luminous finish line; late-hour danger',
+      creative_brief:
+        "Apply Holographic Grand Prix Night as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -33,24 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lava Skate Arena',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, static-pose, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, static-pose, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Lava Skate Arena within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Lava Skate Arena's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through trick-route flow; competitive role clarity; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Lava Skate Arena's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Lava Skate Arena: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with hot red-orange against black basalt; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Lava Skate Arena: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with lava bounce and heat shimmer; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Lava Skate Arena's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Lava Skate Arena's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Lava Skate Arena's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Lava, Skate, Arena; trick-route flow; hot red-orange against black basalt; lava bounce and heat shimmer; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; curved ramps and molten track lines; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+      creative_brief:
+        "Apply Lava Skate Arena as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -58,26 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Drift Kingdom Sandstorm Cup',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, muddy, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, muddy, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Drift Kingdom Sandstorm Cup within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Drift Kingdom Sandstorm Cup's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through controlled skid rhythm; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Drift Kingdom Sandstorm Cup's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Drift Kingdom Sandstorm Cup: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Drift Kingdom Sandstorm Cup: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with dust-dimmed sun and abrasive air glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Drift Kingdom Sandstorm Cup's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Drift Kingdom Sandstorm Cup's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Drift Kingdom Sandstorm Cup's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood low-visibility race pressure; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Drift Kingdom Sandstorm Cup into a portable visual system for 5. Speed, Sport & Competitive Arenas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Drift Kingdom Sandstorm Cup as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Drift, Kingdom, Sandstorm, Cup; controlled skid rhythm; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; dust-dimmed sun and abrasive air glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; sideways motion arcs and dust wake; low-visibility race pressure',
     },
   },
   {
@@ -85,24 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Astral Chess Battlefield',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, clutter, noisy-palette, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, clutter, noisy-palette, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Astral Chess Battlefield within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Astral Chess Battlefield's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through cosmic rule geometry; strategy made visible; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Astral Chess Battlefield's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Astral Chess Battlefield: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with starfield violets and cold gold; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Astral Chess Battlefield: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with celestial rim glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Astral Chess Battlefield's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Astral Chess Battlefield's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Astral Chess Battlefield's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Astral, Chess, Battlefield; cosmic rule geometry; starfield violets and cold gold; celestial rim glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; board lanes and opposing value fields; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+      creative_brief:
+        "Apply Astral Chess Battlefield as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -110,26 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Phantom Theater Rhythm Battle',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, static, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, static, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Phantom Theater Rhythm Battle within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Phantom Theater Rhythm Battle's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through timed performance combat; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Phantom Theater Rhythm Battle's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Phantom Theater Rhythm Battle: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Phantom Theater Rhythm Battle: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with stage glow through spectral haze; stage cues and rhythm-beat glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Phantom Theater Rhythm Battle's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Phantom Theater Rhythm Battle's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Phantom Theater Rhythm Battle's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood ghost-performance tension; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Phantom Theater Rhythm Battle into a portable visual system for 5. Speed, Sport & Competitive Arenas. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Phantom Theater Rhythm Battle as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Phantom, Theater, Rhythm, Battle; timed performance combat; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; stage glow through spectral haze; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; race lanes, duel circles, draft grids, finish-line diagonals, champion focal points, and high-speed parallax; ghost-performance tension',
     },
   },
   {
@@ -137,24 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Obsidian Arena Champion Trial',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, modern-guns, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, modern-guns, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Obsidian Arena Champion Trial within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Obsidian Arena Champion Trial's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through competitive role clarity; trial-of-skill framing; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Obsidian Arena Champion Trial's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Obsidian Arena Champion Trial: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with black glass, lava edge, and arena gold; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Obsidian Arena Champion Trial: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Obsidian Arena Champion Trial's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from polished volcanic stone; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Obsidian Arena Champion Trial's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Obsidian Arena Champion Trial's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Obsidian, Arena, Champion, Trial; competitive role clarity; black glass, lava edge, and arena gold; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; polished volcanic stone; circular contest space and ranked focal hierarchy; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+      creative_brief:
+        "Apply Obsidian Arena Champion Trial as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -162,24 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prismatic Arena Hero Draft',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, muddy-palette, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, muddy-palette, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Prismatic Arena Hero Draft within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Prismatic Arena Hero Draft's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through competitive role clarity; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Prismatic Arena Hero Draft's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Prismatic Arena Hero Draft: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with split-spectrum team colors; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Prismatic Arena Hero Draft: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with facet highlights and draft-grid glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Prismatic Arena Hero Draft's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Prismatic Arena Hero Draft's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Prismatic Arena Hero Draft's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Prismatic, Arena, Hero, Draft; competitive role clarity; split-spectrum team colors; facet highlights and draft-grid glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; circular contest space and ranked focal hierarchy; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+      creative_brief:
+        "Apply Prismatic Arena Hero Draft as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -187,24 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Obelisk Desert Relic Race',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, rainy-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, rainy-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Obelisk Desert Relic Race within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Obelisk Desert Relic Race's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through artifact checkpoint race; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Obelisk Desert Relic Race's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Obelisk Desert Relic Race: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with sun-baked ochre, bone white, and hot shadow blue; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Obelisk Desert Relic Race: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with heat haze and hard desert sun; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Obelisk Desert Relic Race's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from ancient metal, sand, and glowing inscriptions without text; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Obelisk Desert Relic Race's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Obelisk Desert Relic Race's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood ancient race pressure; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Obelisk, Desert, Relic, Race; artifact checkpoint race; sun-baked ochre, bone white, and hot shadow blue; heat haze and hard desert sun; ancient metal, sand, and glowing inscriptions without text; monolith checkpoints and relic route markers; ancient race pressure',
+      creative_brief:
+        "Apply Obelisk Desert Relic Race as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -212,24 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crystal Crown Duel Hall',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, grunge, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, grunge, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Crystal Crown Duel Hall within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crystal Crown Duel Hall's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through one-on-one contest pressure; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Crystal Crown Duel Hall's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Crystal Crown Duel Hall: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with prismatic blue-white with sharp color splits; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Crystal Crown Duel Hall: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with crystal refraction and caustic shards; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Crystal Crown Duel Hall's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from faceted crystal, polished floor, and ceremonial metal; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Crystal Crown Duel Hall's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Crystal Crown Duel Hall's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood duel-hall prestige; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Crystal, Crown, Duel, Hall; one-on-one contest pressure; prismatic blue-white with sharp color splits; crystal refraction and caustic shards; faceted crystal, polished floor, and ceremonial metal; two-sided focal symmetry and readable attack lanes; duel-hall prestige',
+      creative_brief:
+        "Apply Crystal Crown Duel Hall as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -237,24 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cobalt Docks Mechball League',
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, gritty-horror, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, gritty-horror, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Cobalt Docks Mechball League within 5. Speed, Sport & Competitive Arenas: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cobalt Docks Mechball League's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through contact-sport machine play; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Cobalt Docks Mechball League's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
       color_and_tone:
-        'Use a controlled palette that supports Cobalt Docks Mechball League: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with deep cobalt with orange arena markers; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Cobalt Docks Mechball League: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Cobalt Docks Mechball League's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from dock steel and scuffed sport plating; wet boards, sport rails, and industrial dock paint; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Cobalt Docks Mechball League's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Cobalt Docks Mechball League's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 5. Speed, Sport & Competitive Arenas style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Cobalt, Docks, Mechball, League; contact-sport machine play; deep cobalt with orange arena markers; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; dock steel and scuffed sport plating; waterline arena lanes; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+      creative_brief:
+        "Apply Cobalt Docks Mechball League as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

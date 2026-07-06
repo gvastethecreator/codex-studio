@@ -12,29 +12,58 @@ tags:
   - texture-and-materiality
   - elemental-and-fx
 visualDna:
-  aesthetic: Falling paper bits
-  subject_treatment: Rectangles
-  color_and_tone: Multi-colored
-  lighting_and_shadow: Flat
-  texture_and_material: Paper
-  camera_and_composition: Falling
-  atmosphere_and_mood: Happy, party
-  rendering_and_quality: Celebration, mess
-  key_features: Random rotation
+  aesthetic: >-
+    Confetti behaves like a controlled elemental effect layer: start from Falling paper bits, Paper,
+    and Falling, then turn motion, temperature, particles, translucency, refraction, glow, and
+    transient energy behavior into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Rectangles: preserve identity and pose while letting forms
+    emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup,
+    thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Multi-colored as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Flat define the light response: highlights, occlusion, translucency, specular scatter, matte
+    falloff, or rim behavior should reveal Confetti without hiding the prompt subject.
+  texture_and_material: >-
+    Render Paper through flow direction, particle density, turbulence, glow falloff, splashes,
+    trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Falling as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Happy, party by using movement, danger, spectacle, instability, temperature, and
+    sensory intensity; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Celebration, mess material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Falling paper bits; Rectangles; Paper; Flat; Falling
   creative_brief: >-
-    Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each
-    scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of
-    arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of
-    color scattered by the physics of joy. Capture celebration fragmented into geometry. Use Confetti as
-    portable surface/render behavior over any input: map its texture, light response, edge wear, color
-    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile,
-    wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Confetti as a transferable elemental/FX visual system while preserving
+    the prompt's subject, action, and setting. Compose the joyful chaos of confetti suspended
+    mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration
+    caught between release and landing, random rotation creating a sense of arrested motion across
+    the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered
+    by the physics of joy. Capture celebration fragmented into geometry. Use Confetti as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - trash
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-062.webp
 attributes:
-  negativePrompt: trash
+  negativePrompt: trash, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

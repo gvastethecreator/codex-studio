@@ -9,12 +9,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'monochrome medieval horror',
     negativePrompt:
-      'readable tarot labels, roman numerals, dense cross-hatching, dirty photocopy grain, explicit gore, watermark, text',
+      'readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, explicit gore, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Black and white horror tarot card language with medieval bones, veils, crowns, moons, and quiet omen symbols.',
       subject_treatment:
-        'A bone-crowned moth saint, skeletal omen tower, or veiled beast arranged as one textless horror tarot icon with only a few support symbols.',
+        'Transform any subject with bone tarot horror arcana: bone-crown motifs, mothlike omen symmetry, tower-like verticality, veiled-beast austerity, and textless occult icon order without forcing a fixed saint or beast.',
       color_and_tone:
         'Warm ivory paper, clean black ink, open white space, and optional pale gray wash kept smooth and sparse.',
       lighting_and_shadow:
@@ -23,11 +23,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Smooth paper, crisp ink, simple engraving marks, and tidy white gaps instead of dirty xerox grain.',
       camera_and_composition:
         'Centered tarot-card symmetry, tall vertical frame, simple arch or moon shape, and no readable titles or numbers.',
-      atmosphere_and_mood: 'Ominous, devotional, quiet, fatalistic, and non-graphic.',
+      atmosphere_and_mood:
+        "Carry the prompt through Ominous, devotional, quiet, fatalistic, and non graphic; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean monochrome illustration with controlled line weight, large shapes, and limited mark density.',
       creative_brief:
-        'Original horror tarot visual system for medieval omens, relics, saints, beasts, or occult card imagery without text.',
+        'Original horror tarot visual system for medieval omens, relics, saints, beasts, or occult card imagery without text. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols',
     },
   },
   {
@@ -36,24 +39,27 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'monochrome medieval fantasy',
     negativePrompt:
-      'photoreal grayscale, dense scratch shading, chainmail mesh, muddy charcoal fields, explicit gore, watermark, text',
+      'photoreal grayscale, dense scratch shading, chainmail mesh, muddy charcoal fields, crusader figure, knight hero, sword pose, cross tabard, heraldic banner, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
-        'Clean black and white medieval fantasy plate illustration with knights, castle fragments, relics, banners, and beasts.',
+        'Clean black and white medieval fantasy sourcebook plate illustration with non-humanoid fantasy masses, fortress-like creatures, relic fragments, stone hands, and ancient contour authority.',
       subject_treatment:
-        'A black-ink fortress gate dominated by a bridge troll lord with shield-sized hands, key relic on a chain, and tiny knights below for scale, drawn as a clean sourcebook plate.',
+        'Translate any subject into medieval ink fantasy plate logic: fortress-weight contour, oversized mass cues, stone-like plane rhythm, key-relic accent geometry, and sourcebook ink clarity without forcing a bridge-gate scene, crusader, knight, sword, cross, banner, shield pose, or tiny scale figures.',
       color_and_tone: 'Ivory ground, black ink, soft gray wash, and generous negative space.',
       lighting_and_shadow:
         'Simple value grouping, open shadows, and clear foreground-background separation.',
       texture_and_material:
-        'Crisp pen lines, smooth wash, flat cloth, stone, and armor planes with minimal scratch texture.',
+        'Crisp pen lines, smooth wash, flat cloth, old paper, weathered stone, and creature-hide planes with minimal scratch texture.',
       camera_and_composition:
         'Editorial plate crop, centered focal silhouette, small support motifs, and readable contour hierarchy.',
-      atmosphere_and_mood: 'Ancient, adventurous, sober, and mythic without oppressive darkness.',
+      atmosphere_and_mood:
+        "Carry the prompt through Ancient, adventurous, sober, and mythic without oppressive darkness; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Traditional ink illustration translated into clean digital line art with no noisy micro-detail.',
       creative_brief:
-        'Reusable black and white fantasy illustration style for medieval characters, monsters, relics, or locations.',
+        'Route any subject through medieval ink fantasy plate language: preserve the prompt while adding clean black ink, fortress weight contour, oversized fantasy mass, sourcebook clarity, and old paper restraint without requiring a troll gate scene, crusader, knight, sword, cross, banner, or armor hero. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Medieval Ink Fantasy Plate; Clean black and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient contour authority, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Medieval Ink Fantasy Plate; Clean black and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient contour authority',
     },
   },
   {
@@ -62,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'penitential gothic fantasy',
     negativePrompt:
-      'copied game armor, readable scripture, excessive thorn detail, black-on-black costume, explicit gore, watermark, text',
+      'copied game armor, readable scripture, excessive thorn detail, black on black costume, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Penitential baroque medieval fantasy with tall devotional silhouettes, thorn crowns, reliquaries, veils, and severe sacred geometry.',
@@ -77,11 +83,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Tall devotional icon crop, strong vertical silhouette, symmetrical framing, and no readable scripture.',
       atmosphere_and_mood:
-        'Penitent, solemn, ceremonial, mournful, and sacred without copied game identities.',
+        "Carry the prompt through Penitent, solemn, ceremonial, mournful, and sacred without copied game identities; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean gothic illustration with elegant contour lines, broad values, and controlled ornament.',
       creative_brief:
-        'Reusable visual system for any subject needing penitent gothic mood, devotional baroque weight, sorrowful verticality, and sacred icon restraint.',
+        'Reusable visual system for any subject needing penitent gothic mood, devotional baroque weight, sorrowful verticality, and sacred icon restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Penitent Baroque Icon; Penitential baroque medieval fantasy with tall devotional silhouettes; thorn crowns; reliquaries; veils; severe sacred geometry, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Penitent Baroque Icon; Penitential baroque medieval fantasy with tall devotional silhouettes; thorn crowns; reliquaries; veils; severe sacred geometry',
     },
   },
   {
@@ -90,7 +98,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'survival dungeon fantasy',
     negativePrompt:
-      'shock gore, torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark, text',
+      'shock gore, torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Bleak survival dungeon illustration with gaunt pilgrims, broken cells, ritual doors, prison stone, and desperate candlelight.',
@@ -103,12 +111,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Dry stone, cloth, old rope, iron bars, parchment, and clean ink wash without dirty grain.',
       camera_and_composition:
-        'Close editorial crop, shallow dungeon fragment, one clear survival icon, and no crowded inventory spread.',
-      atmosphere_and_mood: 'Hungry, anxious, doomed, and intimate without graphic injury.',
+        'Close editorial crop, shallow survival-icon depth, one clear focal hierarchy, and worn negative space without a doorway or inventory setup.',
+      atmosphere_and_mood:
+        "Carry the prompt through Hungry, anxious, doomed, and intimate without graphic injury; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean ink-and-wash fantasy illustration with limited detail and clear value control.',
       creative_brief:
-        'Reusable visual system for any subject needing survival-horror medieval fragility, desperate pilgrimage mood, worn relic material, and restrained dread.',
+        'Reusable visual system for any subject needing survival horror medieval fragility, desperate pilgrimage mood, worn relic material, and restrained dread. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Starved Dungeon Pilgrimage; Bleak survival dungeon illustration with gaunt pilgrims; broken cells; ritual doors; prison stone; desperate candlelight, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Starved Dungeon Pilgrimage; Bleak survival dungeon illustration with gaunt pilgrims; broken cells; ritual doors; prison stone; desperate candlelight',
     },
   },
   {
@@ -117,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'medieval bestiary illustration',
     negativePrompt:
-      'tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, explicit gore, watermark, text',
+      'tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval woodcut bestiary illustration with bold animal-monster silhouettes, carved line blocks, and simple old-paper fields.',
@@ -131,11 +142,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Carved linework, broad ink blocks, clean paper fiber, and controlled gaps without noisy speckle.',
       camera_and_composition:
         'Side-view or three-quarter creature plate, large silhouette, small ground cue, and decorative frame without words.',
-      atmosphere_and_mood: 'Ancient, strange, folkloric, and instructional.',
+      atmosphere_and_mood:
+        "Carry the prompt through Ancient, strange, folkloric, and instructional; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean woodcut-inspired digital illustration with big marks, not dense micro-hatching.',
       creative_brief:
-        'Reusable visual system for any subject needing medieval woodcut bestiary flavor, carved ink discipline, old-paper restraint, and folkloric strangeness.',
+        'Reusable visual system for any subject needing medieval woodcut bestiary flavor, carved ink discipline, old paper restraint, and folkloric strangeness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block silhouettes; carved mark economy, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block silhouettes; carved mark economy',
     },
   },
   {
@@ -144,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'illuminated medieval bestiary',
     negativePrompt:
-      'readable marginal text, over-aged parchment grime, excessive filigree, photoreal vellum, explicit gore, watermark, text',
+      'readable marginal text, over aged parchment grime, excessive filigree, photoreal vellum, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Illuminated manuscript bestiary style with clean parchment, jewel-like flat accents, gold margins, and strange medieval beasts.',
@@ -158,11 +172,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Smooth vellum, flat pigment, clean ink outlines, restrained gold ornament, and no smeared aged-paper noise.',
       camera_and_composition:
         'Manuscript plate crop, creature centered in a simple frame, broad margins, and no readable annotations.',
-      atmosphere_and_mood: 'Scholarly, magical, antique, and curious rather than grim.',
+      atmosphere_and_mood:
+        "Carry the prompt through Scholarly, magical, antique, and curious rather than grim; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean illuminated illustration with crisp edges, low texture load, and visible shape design.',
       creative_brief:
-        'Reusable visual system for any subject needing illuminated codex discipline, parchment clarity, jewel-like flat accents, and scholarly medieval curiosity.',
+        'Reusable visual system for any subject needing illuminated codex discipline, parchment clarity, jewel like flat accents, and scholarly medieval curiosity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation',
     },
   },
   {
@@ -171,7 +188,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'medieval marginalia fantasy',
     negativePrompt:
-      'readable manuscript text, cluttered page full of drawings, dense hatch texture, modern cartoon look, explicit gore, watermark, text',
+      'readable manuscript text, cluttered page full of drawings, dense hatch texture, modern cartoon look, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Playful but eerie medieval marginalia with odd beasts, monkish diagrams, small grotesques, and clean parchment space.',
@@ -184,11 +201,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Pen outlines, small flat color fills, smooth parchment, and sparse decorative marks.',
       camera_and_composition:
         'Asymmetrical manuscript margin crop, one large funny-strange creature, and small support motifs without words.',
-      atmosphere_and_mood: 'Strange, witty, medieval, unsettling, and collectible.',
+      atmosphere_and_mood:
+        "Carry the prompt through Strange, witty, medieval, unsettling, and collectible; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean line illustration with low detail density and generous negative space.',
       creative_brief:
-        'Reusable visual system for any subject needing scholastic marginalia play, medieval side-note weirdness, textless occult humor, and clean parchment spacing.',
+        'Reusable visual system for any subject needing scholastic marginalia play, medieval side note weirdness, textless occult humor, and clean parchment spacing. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Scholastic Marginalia Beasts; Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Scholastic Marginalia Beasts; Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness',
     },
   },
   {
@@ -197,7 +217,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'heraldic medieval fantasy',
     negativePrompt:
-      'readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore, watermark, text',
+      'readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners, crowns, and clean courtly geometry.',
@@ -210,11 +230,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Smooth enamel-like color, crisp ink contours, simple cloth folds, and minimal weathering.',
       camera_and_composition:
         'Symmetrical crest layout, centered beast silhouette, clean shield or banner shapes with no letters.',
-      atmosphere_and_mood: 'Noble, ominous, ceremonial, and antique.',
+      atmosphere_and_mood:
+        "Carry the prompt through Noble, ominous, ceremonial, and antique; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Graphic heraldic illustration with bold shapes, restrained detail, and denoised color fields.',
       creative_brief:
-        'Reusable visual system for any subject needing heraldic bestiary language, faction-icon clarity, medieval crest geometry, and bold symmetrical contour.',
+        'Reusable visual system for any subject needing heraldic bestiary language, faction icon clarity, medieval crest geometry, and bold symmetrical contour. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry',
     },
   },
   {
@@ -223,7 +246,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'stained glass fantasy bestiary',
     negativePrompt:
-      'readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit gore, watermark, text',
+      'readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval stained glass bestiary icon with lead lines, simplified beasts, chapel color, and luminous flat panes.',
@@ -237,11 +260,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Large smooth glass panes, clean lead lines, subtle chips, denoised glow, and broad color blocks.',
       camera_and_composition:
         'Tall arched icon crop with centered luminous silhouette, broad pane rhythm, halo-like framing, and no inscriptions.',
-      atmosphere_and_mood: 'Sacred, monstrous, luminous, and medieval.',
+      atmosphere_and_mood:
+        "Carry the prompt through Sacred, monstrous, luminous, and medieval; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean stained-glass illustration with broad panes, crisp contours, and no noisy dark lead buildup.',
       creative_brief:
-        'Reusable visual system for any subject needing stained-glass bestiary clarity, sacred pane geometry, luminous icon presence, and fantasy faction symbolism.',
+        'Reusable visual system for any subject needing stained glass bestiary clarity, sacred pane geometry, luminous icon presence, and fantasy faction symbolism. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm',
     },
   },
   {
@@ -250,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'medieval tapestry fantasy',
     negativePrompt:
-      'fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, explicit gore, watermark, text',
+      'fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet narrative panels.',
@@ -263,11 +289,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean woven texture, broad thread-like color blocks, sparse floral details, and no fuzzy noise.',
       camera_and_composition:
         'Tapestry panel crop, side-view creature, patterned ground, and decorative border without words.',
-      atmosphere_and_mood: 'Legendary, courtly, archaic, and quietly uncanny.',
+      atmosphere_and_mood:
+        "Carry the prompt through Legendary, courtly, archaic, and quietly uncanny; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean textile-inspired illustration with simplified forms and controlled fabric texture.',
       creative_brief:
-        'Reusable visual system for any subject needing medieval tapestry flatness, woven color blocks, courtly legend tone, and quiet uncanny form.',
+        'Reusable visual system for any subject needing medieval tapestry flatness, woven color blocks, courtly legend tone, and quiet uncanny form. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color',
     },
   },
   {
@@ -276,7 +305,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'fantasy field guide illustration',
     negativePrompt:
-      'readable annotations, anatomical gore, dense scale texture, crowded diagram sheet, photoreal animal rendering, watermark, text',
+      'readable annotations, anatomical gore, dense scale texture, crowded diagram sheet, photoreal animal rendering, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval-naturalist field guide plate for wyverns, dungeon beasts, horns, wings, claws, eggs, and relic habitats.',
@@ -288,12 +317,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Smooth scientific ink, soft wash, parchment, horn, scale groups, and minimal stipple.',
       camera_and_composition:
-        'Creature side plate, one large specimen, 2-3 small non-text insets, and generous margins.',
-      atmosphere_and_mood: 'Scholarly, dangerous, curious, and old-world.',
+        'Side-plate or three-quarter specimen logic, one large subject, a few small unlabeled inset shapes, and generous margins without forcing creature anatomy.',
+      atmosphere_and_mood:
+        "Carry the prompt through Scholarly, dangerous, curious, and old world; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean fantasy field-guide illustration with controlled anatomy, simple shapes, and no dense scale mesh.',
       creative_brief:
-        'Reusable visual system for any subject needing bestiary field-guide clarity, anatomy-like fantasy plate structure, unlabeled study insets, and clean specimen-card restraint.',
+        'Reusable visual system for any subject needing bestiary field guide clarity, anatomy like fantasy plate structure, unlabeled study insets, and clean specimen card restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Anatomist Wyvern Field Guide; Medieval naturalist field guide plate for wyverns; dungeon beasts; horns; wings; claws, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Anatomist Wyvern Field Guide; Medieval naturalist field guide plate for wyverns; dungeon beasts; horns; wings; claws',
     },
   },
   {
@@ -302,7 +334,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'oracle bestiary fantasy',
     negativePrompt:
-      'readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark, text',
+      'readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Moonlit parchment oracle-bestiary style with quiet symbolic forms, crescent geometry, clean ink, and pale mystical accents.',
@@ -315,11 +347,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Clean parchment, soft ink wash, smooth tonal stains, simplified surface groups, and restrained decorative marks.',
       camera_and_composition:
         "Centered oracle-plate hierarchy, circular moon geometry, generous breathing room, and sparse symbolic support marks that adapt to the user's subject without adding readable text.",
-      atmosphere_and_mood: 'Quiet, magical, prophetic, eerie, and calm.',
+      atmosphere_and_mood:
+        "Carry the prompt through Quiet, magical, prophetic, eerie, and calm; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean fantasy oracle illustration with low noise, broad shapes, and restrained decorative marks.',
       creative_brief:
-        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit parchment ink, oracle-plate order, sparse symbolism, and quiet prophetic mood.",
+        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit parchment ink, oracle plate order, sparse symbolism, and quiet prophetic mood. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm oracle plate figure with simplified contours, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
+      key_features:
+        'Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm oracle plate figure with simplified contours',
     },
   },
 ] as unknown as StyleRuntimePreset[];

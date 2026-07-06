@@ -12,21 +12,52 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: Silkscreen poster
-  subject_treatment: No outlines, color shapes
-  color_and_tone: Flat, vibrant, layered
+  aesthetic: >-
+    Screenprint (Serigraphy) acts as a transferable art-medium router: start from Silkscreen poster,
+    Layered colors and print-process system built from matrix marks, ink transfer, pressure,
+    registration, plate or block artifacts, and paper absorption, then apply the medium behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through No outlines, color shapes; preserve the prompt subject
+    while converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
+    systems, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Flat, vibrant, layered; use palette as ink behavior: limited plates, overprint,
+    misregistration, monochrome value, cyan chemistry, newspaper dots, or security green-grey
+    restraint, with deliberate value grouping, accent control, and medium-specific limits rather
+    than generic color wash.
   lighting_and_shadow: >-
-    Lighting for Screenprint (Serigraphy): purposeful key, bounce, rim, shadow depth, and focal readability
-    matched to 3. Printmaking.
-  texture_and_material: Mesh pattern, ink overlay
-  camera_and_composition: Misregistration (offset)
-  atmosphere_and_mood: Commercial, bold
-  rendering_and_quality: Warhol, pop art
-  key_features: Layered colors
+    Handle light through Lighting for Screenprint (Serigraphy): purposeful key, bounce, rim, shadow
+    depth, and focal readability matched to 3. Printmaking; translate light into line density, dot
+    frequency, relief shadow, plate tone, paper reserve, or ink coverage rather than photographic
+    illumination, so value structure supports the medium and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Mesh pattern, ink overlay; surface detail should reveal paper fibers, plate marks, burr,
+    gouge, rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Misregistration (offset); compose through print registration, cut
+    rhythm, border pressure, edition-like balance, negative space, and repeatable mark hierarchy,
+    with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Commercial, bold; derive mood from hand pressure, mechanical reproduction,
+    archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Warhol, pop art; finish as a credible print artifact with exact mark logic,
+    restrained texture, and no fake poster text or random distress overlay, clean denoised surfaces
+    where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Silkscreen poster; Layered colors; Flat, vibrant, layered; Mesh pattern, ink overlay;
+    Misregistration (offset)
   creative_brief: >-
-    Apply screenprint/serigraphy logic to any input: mesh-pulled ink, flat separated color passes, bold
-    registration offsets, opaque poster planes, and reproduction-first contrast. Keep graphic commercial punch
-    without requiring slogans, portraits, pop icons, product ads, or readable text.
+    Apply Screenprint (Serigraphy) as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Silkscreen poster, Layered colors, Mesh pattern, ink overlay without requiring the card
+    image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -43,12 +74,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - fake poster text
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-035.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, fake poster text, smooth digital
+    gradient, random distress overlay, wrong print process
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

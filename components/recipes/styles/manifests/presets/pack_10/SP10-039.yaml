@@ -12,26 +12,61 @@ tags:
   - abstract-and-experimental
   - surrealism-and-dream
 visualDna:
-  aesthetic: Alien style
-  subject_treatment: Ribs, tubes
-  color_and_tone: Monochrome, dark
-  lighting_and_shadow: Rim light
-  texture_and_material: Slimy, metallic
-  camera_and_composition: Flesh/Metal fusion
-  atmosphere_and_mood: Terrifying, sexual
-  rendering_and_quality: Horror, intricate
-  key_features: Ribbed pattern
+  aesthetic: >-
+    Biomechanical (Giger) becomes a transferable surreal symbolic transformation system: start from
+    Alien style, Ribbed pattern, and Flesh/Metal fusion, then route prompt content through
+    impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture
+    without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Ribs, tubes to bend, displace, fuse, haunt,
+    miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Monochrome, dark; use color as emotional unreliability, nostalgic drift,
+    uncanny contrast, or symbolic temperature, with enough value control that the subject remains
+    readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Rim light drive the light response: shape light through impossible shadows, memory haze,
+    stage stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Slimy, metallic as the tactile or mark-making basis; surfaces should support the illusion
+    with believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to
+    figures, props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Flesh/Metal fusion as reusable spatial grammar: favor symbolic focal points,
+    scale mismatch, empty thresholds, doubled images, and psychologically charged negative space,
+    adapting cleanly to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Terrifying, sexual as the emotional register; derive mood from wonder, dread, absurdity,
+    nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without flattening
+    strong, strange, darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Horror, intricate: finish with deliberate weirdness, controlled realism, and no
+    generic fantasy scene lock, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Alien style; Ribs, tubes; Monochrome, dark; Rim light; Slimy, metallic; Flesh/Metal fusion;
+    Terrifying, sexual; Horror, intricate; Ribbed pattern
   creative_brief: >-
-    Apply biomechanical fusion to the input: bone-like struts, cable tendons, ribbed chassis forms, slick dark
-    surfaces, and organic-machine seams should make subjects feel engineered from anatomy without requiring a
-    humanoid body.
+    Apply biomechanical fusion to the input: bone-like struts, cable tendons, ribbed chassis forms,
+    slick dark surfaces, and organic-machine seams should make subjects feel engineered from anatomy
+    without requiring a humanoid body.
 avoidRules:
   - clean
   - cute
+  - literal fantasy scene lock
+  - generic dream blur
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-039.webp
 attributes:
-  negativePrompt: clean, cute
+  negativePrompt: >-
+    clean, cute, literal fantasy scene lock, generic dream blur, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

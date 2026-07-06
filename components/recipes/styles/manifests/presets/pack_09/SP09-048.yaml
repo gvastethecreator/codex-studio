@@ -13,29 +13,62 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Bulletin board
-  subject_treatment: "Treat subjects through Cork Board's signature cues: Granules."
-  color_and_tone: Tan, Brown chips
-  lighting_and_shadow: Matte
-  texture_and_material: Compressed granules
-  camera_and_composition: Pinhole
-  atmosphere_and_mood: Functional, dry
-  rendering_and_quality: Office, school
-  key_features: Granules
+  aesthetic: >-
+    Cork Board treats fabrication as visible style language: start from Bulletin board, Compressed
+    granules, and Pinhole, then turn manufacturing process, tooling marks, seams, tolerances, and
+    industrial material behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Treat subjects through Cork Board's signature cues:
+    Granules: preserve identity and pose while letting forms carry manufactured seams, tolerances,
+    pressure marks, and finish logic through edge profile, surface breakup, thickness, contact
+    marks, and detail scale.
+  color_and_tone: >-
+    Use Tan, Brown chips as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Matte define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Cork Board without hiding the prompt subject.
+  texture_and_material: >-
+    Render Compressed granules through constructed regularity, stress points, joins, molded edges,
+    and process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Pinhole as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Functional, dry by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Office, school material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: >-
+    Bulletin board; Treat subjects through Cork Board's signature cues: Granules; Compressed
+    granules; Matte; Pinhole
   creative_brief: >-
-    Capture the granular texture of cork board where compressed flecks of bark create a surface of brown
-    confetti held in quiet suspension, the pinholes of past notices dotting the field like a scattered
-    constellation. The material should feel dry and forgiving, a surface that remembers every thumbtack that
-    ever pierced it. Render the poetry of the bulletin, surface as archive of pinned intentions. Use Cork
-    Board as portable surface/render behavior over any input: map its texture, light response, edge wear,
-    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Cork Board as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Capture the granular texture of cork board
+    where compressed flecks of bark create a surface of brown confetti held in quiet suspension, the
+    pinholes of past notices dotting the field like a scattered constellation. The material should
+    feel dry and forgiving, a surface that remembers every thumbtack that ever pierced it. Render
+    the poetry of the bulletin, surface as archive of pinned intentions. Use Cork Board as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - wood grain
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-048.webp
 attributes:
-  negativePrompt: wood grain
+  negativePrompt: wood grain, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

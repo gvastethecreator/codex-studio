@@ -13,34 +13,62 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Existential biomecha anime language with red-alert procedural pressure, sacred-apocalypse iconography, and
-    fragile interiority expressed through oppressive systems design
+    Neon Genesis Evangelion - Red Alert Psychological Collapse operates as a portable
+    anime-lifestyle router: combine Neon Genesis Evangelion - Red Alert Psychological Collapse
+    identity cues through Red alert overlays; pressure grid claustrophobia; cross shaped blasts;
+    procedural interface geometry; isolated focal framing; Red Alert Psychological Collapse with
+    Neon Genesis Evangelion lineage used only as style reference with shojo, magical girl, and
+    visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour,
+    emotional close reading, and theatrical abstraction; Neon Genesis Evangelion may guide line
+    economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or
+    copied costumes, so the preset supplies anime style behavior after prompt X rather than a
+    required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Sharp 90s mechanical contour discipline, angular diagnostic grid framing, restrained emotion-line
-    pressure, and punctuated impact-stroke accents
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Alert crimson overlays, bruised violets, toxic industrial greens, apocalyptic ocean blues, and desaturated
-    skin tones under control-room light
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Emergency UI strobing, hard diagnostic practicals, cross-blast overexposure flashes, and severe shadow
-    partitions that heighten psychological confinement
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Biomechanical plating sheen, wet-organic understructure cues, cathode-monitor bloom, cel-layer grain, and
-    painted-background decay tonality
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
   camera_and_composition: >-
-    Claustrophobic frame compression punctuated by sudden scale ruptures and cross-shaped symbolic blast
-    framing
-  atmosphere_and_mood: Apocalyptic, anxious, sacred, confined
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    Prestige late-90s psychological mecha rendering with disciplined cel readability, oppressive mood grading,
-    and symbolic action clarity
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
   key_features: >-
-    Red alert overlays, pressure-grid claustrophobia, cross-shaped blasts, procedural interface geometry,
-    isolated focal framing
+    Red alert overlays; pressure grid claustrophobia; cross shaped blasts; procedural interface
+    geometry; isolated focal framing; Red Alert Psychological Collapse with Neon Genesis Evangelion
+    lineage used only as style reference
   creative_brief: >-
-    Preserve red-alert psychological-biomecha grammar as a reusable style system: emergency-interface tension,
-    sacred-apocalypse symbol bursts, and oppressive diagnostic isolation should remain consistent across
-    subjects.
+    Use Neon Genesis Evangelion - Red Alert Psychological Collapse after prompt X as a transferable
+    anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and
+    intensity, while the preset supplies Red alert overlays, pressure grid claustrophobia, cross
+    shaped blasts, procedural interface geometry, isolated focal framing, Red Alert Psychological
+    Collapse with Neon Genesis Evangelion lineage used only as style reference, color logic,
+    lighting, material finish, composition rhythm, mood pressure, and quality controls without
+    requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
+    composition.
 avoidRules:
   - realistic
   - 3d render
@@ -54,12 +82,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-168.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,29 +13,86 @@ tags:
   - childrens-illustration
 visualDna:
   aesthetic: >-
-    Mid-century gouache modernism with playful geometric warmth and simplified educational storytelling
-    clarity
-  subject_treatment: Dry-brush edge variation with soft geometric contour blocking and shape-first compositional rhythm
-  color_and_tone: Opaque, matte, chalk-finish spectrum, design-flat contrast
-  lighting_and_shadow: Flat, even matte illumination, mid-century glow
-  texture_and_material: Chalky paint
-  camera_and_composition: Stylized shapes
-  atmosphere_and_mood: Colorful, design, atomic-age optimism, playful modernism
+    Gouache Illustration acts as a transferable illustration router: start from Mid-century gouache
+    modernism with playful geometric warmth and simplified educational storytelling clarity, Brush
+    texture, dry-brush stroke, gouache opacity and storybook and friendly-illustration system built
+    from approachable shapes, handmade media, simplified edges, tactile materials, and
+    high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed
+    demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Dry-brush edge variation with soft geometric contour
+    blocking and shape-first compositional rhythm; preserve the requested subject while softening,
+    simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the
+    named medium, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Opaque, matte, chalk-finish spectrum, design-flat contrast; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Flat, even matte illumination, mid-century glow; shape light through soft
+    diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native
+    tonal marks instead of cinematic realism, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Chalky paint, friendly shape language, handmade surface evidence, simplified readable
+    forms, and storybook composition discipline; surface detail should show paper tooth, cut edges,
+    crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor
+    blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Stylized shapes, scale rhythm, edge hierarchy, spacing, and
+    composition rules specific to Gouache Illustration; compose with clear silhouettes, readable
+    spacing, playful scale, page-object logic, flat educational layout, or gentle negative space
+    without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing
+    the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Colorful, design, atomic-age optimism, playful modernism; derive mood from wonder,
+    gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade
+    surprise, letting the style alter interpretation without demanding a specific story, location,
+    or actor.
   rendering_and_quality: >-
-    Retro-gouache illustrative finish emphasizing opaque shape design, friendly abstraction, and color-led
-    narrative legibility
-  key_features: Brush texture, dry-brush stroke, gouache opacity
+    Finish with Retro-gouache illustrative finish emphasizing opaque shape design, friendly
+    abstraction, and color-led narrative legibility; finish with clean accessible illustration,
+    medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child
+    aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the
+    style recognizable.
+  key_features: >-
+    Mid-century gouache modernism with playful geometric warmth and simplified educational
+    storytelling clarity; Brush texture, dry-brush stroke, gouache opacity; Opaque, matte,
+    chalk-finish spectrum, design-flat contrast; Chalky paint, friendly shape language, handmade
+    surface evidence, simplified readable forms, and storybook composition discipline; Stylized
+    shapes, scale rhythm, edge hierarchy, spacing, and composition rules specific to Gouache
+    Illustration
   creative_brief: >-
-    Apply mid-century gouache design to any input: opaque geometric shape choreography, dry-brush texture,
-    chalky matte color, and warm optimistic relationships should carry the style without requiring classrooms,
-    posters, families, interiors, product diagrams, or specific studio references.
+    Apply Gouache Illustration as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Mid-century gouache modernism with playful geometric warmth and simplified educational
+    storytelling clarity, Brush texture, dry-brush stroke, gouache opacity, Chalky paint, friendly
+    shape language, handmade surface evidence, simplified readable forms, and storybook composition
+    discipline without requiring the card image's original subject.
 avoidRules:
   - transparent
   - watercolor
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-021.webp
 attributes:
-  negativePrompt: transparent, watercolor
+  negativePrompt: >-
+    transparent, watercolor, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    plastic toy render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

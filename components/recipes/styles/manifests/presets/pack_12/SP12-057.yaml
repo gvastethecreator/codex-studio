@@ -13,31 +13,53 @@ tags:
   - heists-horror-and-underworld-runs
 visualDna:
   aesthetic: >-
-    Verdigris Harbor Pirate Skies within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals
-    Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
-    Keep the result transferable across subjects while preserving Verdigris Harbor Pirate Skies's specific
-    style identity.
+    A transferable game-art direction built from tokenized palette, material, encounter, and mood
+    cues: route prompt X through illicit route planning, horror escalation, underworld thresholds,
+    trap timing, and stealth readability, using the preset as art direction rather than a required
+    scene, mission, character, or card image.
   subject_treatment: >-
-    Treat any subject through Verdigris Harbor Pirate Skies's visual grammar: readable silhouette, role cues,
-    controlled detail density, and no dependency on one fixed scene or body pose.
+    Preserve the user's subject while translating silhouette, role, scale, equipment, route
+    pressure, and encounter readability with this grammar: express stealth timing, illicit access,
+    trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist
+    shot.
   color_and_tone: >-
-    Use a controlled palette that supports Verdigris Harbor Pirate Skies: clear tonal hierarchy, intentional
-    contrast, and category-appropriate color accents without muddy blends.
+    Grade the image with green copper, storm blue, and pirate brass; wet harbor blues, sodium
+    orange, and fog black; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and
+    carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail
+    clarity, and subject recognition.
   lighting_and_shadow: >-
-    Shape light and shadow for Verdigris Harbor Pirate Skies: legible depth, purposeful highlights, readable
-    focal zones, and atmosphere that supports the style without hiding the subject.
+    Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes,
+    lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards,
+    factions, or focal threats without hiding prompt content.
   texture_and_material: >-
-    Render surfaces with Verdigris Harbor Pirate Skies's material logic: tactile detail, coherent finish, and
-    texture choices that reinforce the style rather than generic decoration.
+    Build surfaces from oxidized metal and wet sails; docks, hulls, ropes, and rain-slick stone;
+    sails, brass, wet planks, and storm rope; velvet curtains, rusted rails, wet tile, bone props,
+    thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing,
+    creatures, vehicles, architecture, and terrain share the same production-world logic.
   camera_and_composition: >-
-    Compose with Verdigris Harbor Pirate Skies's staging logic: strong focal hierarchy, stable readable
-    framing, and spatial rhythm that can adapt to different subjects.
+    Use reusable game-composition grammar from illicit route planning, horror escalation, underworld
+    thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective
+    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
+    portraits, objects, creatures, environments, and action scenes.
   atmosphere_and_mood: >-
-    Build Verdigris Harbor Pirate Skies's mood through environment, color, light, and texture. Keep it
-    distinct from neighboring presets and avoid generic pretty-card staging.
+    Keep the mood airborne underworld adventure; dangerous, clandestine, haunted, predatory,
+    decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt
+    X asks for it, but the preset should not force a new storyline.
   rendering_and_quality: >-
-    Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark,
-    strong thumbnail readability, and consistent production quality.
+    Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened
+    spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity,
+    and no readable UI, text, logos, or stock key-art gloss.
+  key_features: >-
+    Verdigris, Harbor, Pirate, Skies; illicit route planning, horror escalation, underworld
+    thresholds, trap timing, and stealth readability; green copper, storm blue, and pirate brass;
+    knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and
+    signal static; oxidized metal and wet sails; escape lanes, hiding pockets, trap corridors,
+    surveillance angles, looming thresholds, and reveal-after-reveal depth; airborne underworld
+    adventure
+  creative_brief: >-
+    Apply Verdigris Harbor Pirate Skies as a reusable video-game art-direction router over prompt X:
+    preserve the user's subject and intent, then translate palette, lighting, material logic, route
+    readability, encounter mood, and production finish through this preset.
 avoidRules:
   - watermark
   - text
@@ -53,12 +75,19 @@ avoidRules:
   - menu-ui
   - visible-hud
   - readable-interface
+  - flattened spooky fog
+  - safe cartoon horror
+  - fixed scene
+  - generic game screenshot
+  - readable UI
+  - official card framing
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-057.webp
 attributes:
   negativePrompt: >-
     watermark, text, logo, modern-cars, low-detail, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface
+    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog,
+    safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault

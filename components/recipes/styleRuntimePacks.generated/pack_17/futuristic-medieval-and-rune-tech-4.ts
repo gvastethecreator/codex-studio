@@ -9,7 +9,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
-      'neon city cyberpunk, spaceship cockpit, glossy white sci-fi, modern streetwear, explicit gore, watermark, text',
+      'neon city cyberpunk, spaceship cockpit, glossy white sci fi, modern streetwear, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Futuristic medieval citadel style merging castle massing, rune light, brutalist metal, and sacred technology.',
@@ -24,11 +24,13 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Three-quarter heroic scale with clean negative planes, distant vertical accents, hovering lightness, and balanced future-feudal silhouette.',
       atmosphere_and_mood:
-        'Oath-bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk.',
+        "Carry the prompt through Oath bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Futuristic medieval digital illustration with crisp architecture, readable tech motifs, defined lines, and medieval silhouette logic.',
       creative_brief:
-        'Makes any subject feel like part of a future-feudal order built on castles, vows, and rune technology.',
+        'Makes any subject feel like part of a future feudal order built on castles, vows, and rune technology. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness',
     },
   },
   {
@@ -37,12 +39,12 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
-      'generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, explicit gore, watermark, text',
+      'generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Futuristic crusader armor with medieval plate grammar, lit sigils, modular joints, and ritual tech.',
       subject_treatment:
-        'A sealed rune-tech paladin suit with servo joints, relic battery pack, tabard planes, and oath hardware, treated as armor design rather than face or weapon.',
+        'Transform any subject with techno-crusader armor language: sealed plate segmentation, servo-joint rhythm, relic-battery accents, tabard-like planes, oath-hardware geometry, and faceless devotional tech without requiring a full paladin suit.',
       color_and_tone:
         'Black steel, off-white cloth, red seal accents, amber LEDs, and cold blue edge light.',
       lighting_and_shadow:
@@ -50,12 +52,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Ceramic plating, scratched steel, woven tabards, rubberized joints, enamel symbols, and dusty circuitry.',
       camera_and_composition:
-        'Three-quarter armor showcase, low angle, centered shield or helm shape, and strong heraldic symmetry.',
-      atmosphere_and_mood: 'Disciplined, militant, sacred, and technological.',
+        'Three-quarter armor-design hierarchy, low heroic angle, optional helm or shield geometry, and strong heraldic symmetry without requiring a full suit showcase.',
+      atmosphere_and_mood:
+        "Carry the prompt through Disciplined, militant, sacred, and technological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Armored fantasy illustration with clean silhouette, defined linework, tactile materials, and limited VFX.',
       creative_brief:
-        'Reusable armor language for future knights, guards, saints, pilots, relic carriers, or war machines.',
+        'Route any subject through techno crusader armor language: preserve the prompt while adding sealed plate rhythm, oath hardware, relic batteries, servo geometry, and future medieval devotion without requiring a knight suit. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm',
     },
   },
   {
@@ -64,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
-      'cyberpunk city, chrome overload, flat vector poster, cute cartoon, explicit gore, watermark, text',
+      'cyberpunk city, chrome overload, flat vector poster, cute cartoon, explicit gore, watermark, text, generic cyberpunk city, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Dreamlike synth-medieval fantasy with castles, prophecy light, analog glow, and retro-future mysticism.',
@@ -78,11 +83,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Translucent glass hide, enamel scales, velvet sky, polished stone plinth, clean analog bloom, and soft poster texture.',
       camera_and_composition:
         'Centered icon-like framing with large luminous arcs, generous simple color planes, clean scale hierarchy, and soft poster balance.',
-      atmosphere_and_mood: 'Prophetic, wondrous, eerie, and retro-futurist.',
+      atmosphere_and_mood:
+        "Carry the prompt through Prophetic, wondrous, eerie, and retro futurist; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Polished fantasy illustration with synthwave restraint, medieval shapes, and soft luminous finish.',
       creative_brief:
-        'Reusable visual system for any subject needing retro-future prophecy, luminous medieval geometry, analog bloom, and eerie wonder.',
+        'Reusable visual system for any subject needing retro future prophecy, luminous medieval geometry, analog bloom, and eerie wonder. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Synth Castle Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro future mysticism; glassy translucent planes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Synth Castle Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro future mysticism; glassy translucent planes',
     },
   },
   {
@@ -91,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
-      'sleek anime robot, toy-like plastic, spaceship cockpit, clean lab aesthetic, explicit gore, watermark, text',
+      'sleek anime robot, toy like plastic, spaceship cockpit, clean lab aesthetic, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Mecha-medieval reliquary style where knight forms become walking shrines of armor, machinery, and sacred cores.',
@@ -104,12 +112,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Riveted plates, cracked enamel, sacred glass, pistons, incense residue, wax seals, and scratched metal.',
       camera_and_composition:
-        'Low-angle mecha icon, central chest relic, massive limbs, and cathedral-scale negative space.',
-      atmosphere_and_mood: 'Sacred, heavy, ancient-future, and intimidating.',
+        'Monumental sacred-tech framing, central reliquary hierarchy, bulky mass planes, and cathedral-scale negative space without requiring a chest, limbs, or humanoid machine body.',
+      atmosphere_and_mood:
+        "Carry the prompt through Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary ornament.',
       creative_brief:
-        'Reusable visual system for any subject needing future-medieval machine sanctity, reliquary hardware, armored ceremony, and compact sacred-tech weight.',
+        'Reusable visual system for any subject needing future medieval machine sanctity, reliquary hardware, armored ceremony, and compact sacred tech weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass',
     },
   },
   {
@@ -118,7 +129,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
-      'clean sci-fi lab, cute mushroom village, medical gore, bright garden fantasy, explicit gore, watermark, text',
+      'clean sci fi lab, cute mushroom village, medical gore, bright garden fantasy, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Bio-arcane medieval future where catacombs, bone machinery, roots, and rune conduits grow into one system.',
@@ -131,12 +142,15 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Bone, root fiber, damp stone, etched copper, translucent membranes, crystals, and mineral growth.',
       camera_and_composition:
-        'Tunnel depth, rib-like arches, centered relic organism, and organic symmetry.',
-      atmosphere_and_mood: 'Ancient, uncanny, subterranean, and sacred-biological.',
+        'Riblike depth rhythm, organic arch pressure, centered bio-relic hierarchy, and damp symmetry without requiring a tunnel or fixed organism.',
+      atmosphere_and_mood:
+        "Carry the prompt through Ancient, uncanny, subterranean, and sacred biological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and restrained horror.',
       creative_brief:
-        'Reusable visual system for any subject needing medieval biotech unease, bone-growth structure, rune logic, and damp organic material pressure.',
+        'Reusable visual system for any subject needing medieval biotech unease, bone growth structure, rune logic, and damp organic material pressure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech',
     },
   },
   {
@@ -145,7 +159,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
-      'photorealism, soft oil painting, flat clip art, modern logo, explicit gore, watermark, text',
+      'photorealism, soft oil painting, flat clip art, modern logo, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and radiant cosmic color.',
@@ -159,11 +173,14 @@ export const GENERATED_STYLE_PRESETS = [
         'Leaded glass, etched metal, prism bloom, tiny cracks, dust motes, and molten star-metal accents.',
       camera_and_composition:
         'Frontal icon layout, radial halos, symmetrical panels, and cathedral-window framing.',
-      atmosphere_and_mood: 'Sacred, cosmic, triumphant, and strange.',
+      atmosphere_and_mood:
+        "Carry the prompt through Sacred, cosmic, triumphant, and strange; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.",
       rendering_and_quality:
         'Clean stained-glass illustration with crisp leadwork, luminous color, and fantasy-tech ornament.',
       creative_brief:
-        'Reusable visual system for any subject needing sacred cosmic-medieval design, luminous pane structure, symbolic forge energy, and flat stained-glass clarity.',
+        'Reusable visual system for any subject needing sacred cosmic medieval design, luminous pane structure, symbolic forge energy, and flat stained glass clarity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Stained Glass Starforge; Futuristic stained glass medieval fantasy with starforged geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
+      key_features:
+        'Stained Glass Starforge; Futuristic stained glass medieval fantasy with starforged geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,26 +12,60 @@ tags:
   - abstract-and-experimental
   - digital-glitch-and-noise
 visualDna:
-  aesthetic: Pixels dragged vertically
-  subject_treatment: Vertical streaks
-  color_and_tone: Sorted gradients
+  aesthetic: >-
+    Pixel Sorting becomes a transferable digital signal artifact system: start from Pixels dragged
+    vertically, Generative, code art, and Dystopian, aesthetic, then route prompt content through
+    compression errors, scan hardware, pixel logic, channel shifts, and broken media encoding
+    without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Vertical streaks to corrupt, quantize, sort,
+    smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Sorted gradients; bind color to device behavior: phosphor masks, CMYK
+    dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that the subject
+    remains readable after the style layer is applied.
   lighting_and_shadow: >-
-    Lighting for Pixel Sorting: purposeful key, bounce, rim, shadow depth, and focal readability matched to 3.
-    Digital Glitch & Noise.
-  texture_and_material: Digital streaks
-  camera_and_composition: Melting
-  atmosphere_and_mood: Dystopian, aesthetic
-  rendering_and_quality: Generative, code art
-  key_features: Vertical sort
+    Let Digital streaks drive the light response: make light feel emitted, scanned, clipped, banded,
+    or sampled rather than normally photographed, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Melting as the tactile or mark-making basis; texture should come from pixels, scanlines,
+    blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces, or close
+    material studies.
+  camera_and_composition: >-
+    Compose around Dystopian, aesthetic as reusable spatial grammar: use raster alignment, artifact
+    seams, frame tears, grid pressure, and controlled signal breakdown, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Dystopian, aesthetic as the emotional register; derive mood from damaged playback, obsolete
+    interfaces, surveillance, latency, and media failure, without flattening strong, strange,
+    darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Generative, code art: finish with intentional artifacts, sharp enough structure, and
+    no random muddy AI noise, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Pixels dragged vertically; Vertical streaks; Sorted gradients; Digital streaks; Melting;
+    Dystopian, aesthetic; Dystopian, aesthetic; Generative, code art; Generative, code art
   creative_brief: >-
-    Apply pixel-sorting entropy to the input: luminance-drag streaks, combed-out bright regions, directional
-    digital smears, and broken raster order should pull any subject into controlled glitch abstraction.
+    Apply pixel-sorting entropy to the input: luminance-drag streaks, combed-out bright regions,
+    directional digital smears, and broken raster order should pull any subject into controlled
+    glitch abstraction.
 avoidRules:
   - horizontal lines
+  - clean photo realism
+  - random AI smear
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-022.webp
 attributes:
-  negativePrompt: horizontal lines
+  negativePrompt: >-
+    horizontal lines, clean photo realism, random AI smear, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

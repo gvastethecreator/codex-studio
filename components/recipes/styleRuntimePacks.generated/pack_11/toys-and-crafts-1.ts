@@ -7,473 +7,522 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP11-001',
     name: 'Lego Toy Brick Build',
     category: '1. Toys And Crafts',
-    negativePrompt: 'melted, smooth, organic',
+    negativePrompt:
+      'melted, smooth, organic, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy',
+        'Lego Toy Brick Build operates as a portable source-router layer: combine Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'High-saturation toy primaries with clean contrast blocks and glossy plastic-friendly hue separation',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability',
+        "Use Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish',
+        'Render Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification',
-      atmosphere_and_mood: 'Playful, inventive, structured, nostalgic, constructive',
+        'Compose with Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Lego Toy Brick Build while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Crisp toy-assembly rendering prioritizing modular legibility, geometric coherence, and playful engineered charm',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Stud-grid grammar, modular seam legibility, toy-plastic gloss control, block-assembly composition logic',
+        'Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy; Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm; Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish; Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability; Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification',
       creative_brief:
-        'Keep this preset defined by modular snap-assembly language and toy-plastic material behavior, so brick-system readability remains the transferable core beyond specific diorama scenes. Apply Lego Toy Brick Build as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Lego Toy Brick Build after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Modular toy-brick construction style with systemized assembly logic, playful engineering clarity, and colorful constructive energy, Interlocking grid geometry, stud-and-tube articulation, right-angle modular silhouettes, and seam-aware structural rhythm, Injection-molded ABS sheen, stud micro-relief, seam-line precision, and polished toy-surface finish, Product-style key/rim reflection control with crisp specular highlights and clear modular edge readability, Cubic abstraction with snap-grid proportional logic and minifigure-scale spatial simplification plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-002',
     name: 'Funko Pop Vinyl Collectible Figure',
     category: '1. Toys And Crafts',
-    negativePrompt: 'realistic proportions, small head',
+    negativePrompt:
+      'realistic proportions, small head, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        "Funko Pop Vinyl Collectible Figure within 1. Toys And Crafts: a reusable Miscellaneous & Fun visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Funko Pop Vinyl Collectible Figure's specific style identity.",
+        'Funko Pop Vinyl Collectible Figure operates as a portable source-router layer: combine oversized vinyl-figure proportions, simplified collectible surfaces, glossy toy material, and display-ready clarity, clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Define Funko Pop Vinyl Collectible Figure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Use a Funko Pop Vinyl Collectible Figure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Use lighting that makes Funko Pop Vinyl Collectible Figure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        "Use small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Use materials and textures that reinforce Funko Pop Vinyl Collectible Figure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Use spatial behavior that fits Funko Pop Vinyl Collectible Figure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Compose with object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Funko Pop Vinyl Collectible Figure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Funko Pop Vinyl Collectible Figure while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Render Funko Pop Vinyl Collectible Figure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        "Prioritize Funko Pop Vinyl Collectible Figure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'oversized vinyl-figure proportions, simplified collectible surfaces, glossy toy material, and display-ready clarity, clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence; plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights; object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy',
       creative_brief:
-        'Create a style-card that translates Funko Pop Vinyl Collectible Figure into a portable visual system for 1. Toys And Crafts. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Use Funko Pop Vinyl Collectible Figure after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies oversized vinyl-figure proportions, simplified collectible surfaces, glossy toy material, and display-ready clarity, clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior, small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights, object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-003',
     name: 'Play-Doh Clay',
     category: '1. Toys And Crafts',
-    negativePrompt: 'shiny, wet, hard',
+    negativePrompt:
+      'shiny, wet, hard, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Hand-molded dough-craft style with tactile imperfection, playful experimentation, and analog childlike sculpting energy',
+        'Play-Doh Clay operates as a portable source-router layer: combine Hand-molded dough-craft style with tactile imperfection, playful experimentation, and analog childlike sculpting energy with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Pinched organic silhouettes, rolled-volume construction, uneven hand-shaped edges, and compression-led contour behavior',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Pinched organic silhouettes, rolled-volume construction, uneven hand-shaped edges, and compression-led contour behavior; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Bright mixed primaries with marbled blend transitions and matte craft-paste chroma softness',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Gentle diffused tabletop lighting emphasizing surface dents, soft shadows, and finger-formed volume relief',
+        "Use Gentle diffused tabletop lighting emphasizing surface dents, soft shadows, and finger-formed volume relief plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Dough-like matte grain, thumbprint impressions, crumbly micro-cracks, tool-scrape traces, and hand-warmed surface irregularity',
+        'Render Dough-like matte grain, thumbprint impressions, crumbly micro-cracks, tool-scrape traces, and hand-warmed surface irregularity plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Smooshed uneven proportions with gravity-soft forms and non-uniform thickness distribution',
-      atmosphere_and_mood: 'Playful, messy, warm, experimental, joyful',
+        'Compose with Smooshed uneven proportions with gravity-soft forms and non-uniform thickness distribution plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Play-Doh Clay while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Tactile craft-render finish prioritizing handmade honesty, texture legibility, and playful imperfect shaping',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Fingerprint topology, pinch-and-roll morphology, matte dough crackle cues, handmade asymmetry language',
+        'Hand-molded dough-craft style with tactile imperfection, playful experimentation, and analog childlike sculpting energy; Pinched organic silhouettes, rolled-volume construction, uneven hand-shaped edges, and compression-led contour behavior; Dough-like matte grain, thumbprint impressions, crumbly micro-cracks, tool-scrape traces, and hand-warmed surface irregularity; Gentle diffused tabletop lighting emphasizing surface dents, soft shadows, and finger-formed volume relief; Smooshed uneven proportions with gravity-soft forms and non-uniform thickness distribution',
       creative_brief:
-        'Keep this preset grounded in tactile hand-sculpting evidence: finger marks, uneven compression, and matte dough behavior should carry the identity independent of any specific craft-table narrative. Apply Play-Doh Clay as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Play-Doh Clay after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Hand-molded dough-craft style with tactile imperfection, playful experimentation, and analog childlike sculpting energy, Pinched organic silhouettes, rolled-volume construction, uneven hand-shaped edges, and compression-led contour behavior, Dough-like matte grain, thumbprint impressions, crumbly micro-cracks, tool-scrape traces, and hand-warmed surface irregularity, Gentle diffused tabletop lighting emphasizing surface dents, soft shadows, and finger-formed volume relief, Smooshed uneven proportions with gravity-soft forms and non-uniform thickness distribution plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-004',
     name: 'Papercraft Low Poly',
     category: '1. Toys And Crafts',
-    negativePrompt: 'curved, smooth, realistic',
+    negativePrompt:
+      'curved, smooth, realistic, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Low-poly papercraft construction with folded-cardstock geometry',
-      subject_treatment: 'Sharp paper folds, triangular facets, crease lines, angular edges',
-      color_and_tone: 'Flat paper colors, matte cardstock spectrum, subdued hues, uncoated finish',
+      aesthetic:
+        'Papercraft Low Poly operates as a portable source-router layer: combine Low-poly papercraft construction with folded-cardstock geometry with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+      subject_treatment:
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Sharp paper folds, triangular facets, crease lines, angular edges; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+      color_and_tone:
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Soft shadows, directional key light, facet-defining contrast, gentle ambient',
+        "Use Soft shadows, directional key light, facet-defining contrast, gentle ambient plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel',
+        'Render Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition',
+        'Compose with Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Delicate, handmade, clean, zen precision, patient craft, geometric calm',
-      rendering_and_quality: 'Hand-assembled geometric craft finish with precise fold logic',
-      key_features: 'Visible fold lines, tab-and-slot joins, score marks, polygon faces',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Papercraft Low Poly while still obeying the prompt's subject and context.",
+      rendering_and_quality:
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
+      key_features:
+        'Low-poly papercraft construction with folded-cardstock geometry; Sharp paper folds, triangular facets, crease lines, angular edges; Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel; Soft shadows, directional key light, facet-defining contrast, gentle ambient; Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition',
       creative_brief:
-        'Build forms through visible fold architecture: facets, score lines, and tab joins should define silhouette and volume. Keep surfaces matte and planar so the style reads as handcrafted papercraft rather than smooth CG modeling. Apply Papercraft Low Poly as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Papercraft Low Poly after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Low-poly papercraft construction with folded-cardstock geometry, Sharp paper folds, triangular facets, crease lines, angular edges, Paper grain, glue tabs, cardstock weight, fiber texture, construction-paper feel, Soft shadows, directional key light, facet-defining contrast, gentle ambient, Faceted geometry, polygon-mesh appearance, triangulated surface, angular decomposition plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-005',
     name: 'Amigurumi Crochet',
     category: '1. Toys And Crafts',
-    negativePrompt: 'smooth, plastic, hard',
+    negativePrompt:
+      'smooth, plastic, hard, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Amigurumi crochet plush language with handmade yarn charm',
+      aesthetic:
+        'Amigurumi Crochet operates as a portable source-router layer: combine Amigurumi crochet plush language with handmade yarn charm with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Spiral stitch pattern, V-stitch rows, rounded increases, circular construction',
-      color_and_tone: 'Soft yarn colors, heathered pastels, cream-spectrum, gentle jewel tones',
-      lighting_and_shadow: 'Soft, fuzzy, diffused window light, warm bounce, cozy shadows',
-      texture_and_material: 'Yarn fibers, polyester stuffing, looped stitch surface, plump fill',
-      camera_and_composition: 'Round, chibi proportions, oversized head, tiny limbs, compact body',
-      atmosphere_and_mood: 'Cozy, sweet, tactile, nurturing, heartfelt, handmade love',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Spiral stitch pattern, V-stitch rows, rounded increases, circular construction; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
+      color_and_tone:
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+      lighting_and_shadow:
+        "Use Soft, fuzzy, diffused window light, warm bounce, cozy shadows plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+      texture_and_material:
+        'Render Yarn fibers, polyester stuffing, looped stitch surface, plump fill plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+      camera_and_composition:
+        'Compose with Round, chibi proportions, oversized head, tiny limbs, compact body plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Amigurumi Crochet while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Soft handcrafted finish emphasizing stitch structure and tactile warmth',
-      key_features: 'Stitch texture, gauge-consistent rows, yarn halo, safety-eye shine',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
+      key_features:
+        'Amigurumi crochet plush language with handmade yarn charm; Spiral stitch pattern, V-stitch rows, rounded increases, circular construction; Yarn fibers, polyester stuffing, looped stitch surface, plump fill; Soft, fuzzy, diffused window light, warm bounce, cozy shadows; Round, chibi proportions, oversized head, tiny limbs, compact body',
       creative_brief:
-        'Prioritize readable stitch topology, yarn fiber behavior, and stuffed volume balance. Keep shapes compact and endearing, with crochet construction details driving form identity across any character or object. Apply Amigurumi Crochet as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Amigurumi Crochet after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Amigurumi crochet plush language with handmade yarn charm, Spiral stitch pattern, V-stitch rows, rounded increases, circular construction, Yarn fibers, polyester stuffing, looped stitch surface, plump fill, Soft, fuzzy, diffused window light, warm bounce, cozy shadows, Round, chibi proportions, oversized head, tiny limbs, compact body plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-016',
     name: 'Plushie',
     category: '1. Toys And Crafts',
-    negativePrompt: 'hard, plastic',
+    negativePrompt:
+      'hard, plastic, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Stuffed animal, plush companion, toy-store mascot, bedtime best-friend',
-      subject_treatment: 'Seams, stuffed-round contours, soft-pillow silhouette',
+      aesthetic:
+        'Plushie operates as a portable source-router layer: combine Stuffed animal, plush companion, toy-store mascot, bedtime best-friend with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
+      subject_treatment:
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Seams, stuffed-round contours, soft-pillow silhouette; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Soft pastel, nursery spectrum, blush-pink, duckling-yellow, cloud-white, baby-blue',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort',
-      texture_and_material: 'Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz',
-      camera_and_composition: 'Round shapes, oversize-head proportions, stubby limbs, chunky paws',
+        "Use Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
+      texture_and_material:
+        'Render Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+      camera_and_composition:
+        'Compose with Round shapes, oversize-head proportions, stubby limbs, chunky paws plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Comforting, soft, security-blanket warmth, bedtime safety, unconditional love',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Plushie while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Cute, huggable, snuggle-ready charm, crane-game prize, velvet-touch tenderness',
-      key_features: 'Button eyes, stitched smile, bean-bag weight, satin-bow accent',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
+      key_features:
+        'Stuffed animal, plush companion, toy-store mascot, bedtime best-friend; Seams, stuffed-round contours, soft-pillow silhouette; Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz; Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort; Round shapes, oversize-head proportions, stubby limbs, chunky paws',
       creative_brief:
-        'Anchor this preset in plush-toy comfort grammar: seam-led softness, oversized cuddly proportions, and velvet-fiber tactility should define identity without depending on a specific nursery storyline. Apply Plushie as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Plushie after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Stuffed animal, plush companion, toy-store mascot, bedtime best-friend, Seams, stuffed-round contours, soft-pillow silhouette, Faux fur, fabric, velvet-soft nap, squishy filling, micro-fiber fuzz, Soft studio, nursery-window glow, gentle diffusion, warm-overhead comfort, Round shapes, oversize-head proportions, stubby limbs, chunky paws plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-017',
     name: 'Action Figure (90s)',
     category: '1. Toys And Crafts',
-    negativePrompt: 'realistic skin',
+    negativePrompt:
+      'realistic skin, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness',
+        'Action Figure (90s) operates as a portable source-router layer: combine Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Sculpted hero contour emphasis with visible articulation seams, bold toy silhouette clarity, and pose-forward geometry',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Sculpted lead-form contour emphasis with clearly expressed articulation seams, bold toy silhouette clarity, and pose-forward geometry; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Saturated toy primaries with metallic accent paints, molded skin-tone neutrals, and high-contrast accessory blocks',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism',
+        "Use Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish',
+        'Render Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Action-figure joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning',
-      atmosphere_and_mood: 'Playful, energetic, nostalgic, bold, adventurous',
+        'Compose with poseable toy joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Action Figure (90s) while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'High-legibility collectible rendering focused on articulation readability, toy-scale dynamics, and nostalgic mass-market polish',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Articulation seam grammar, molded accessory grip cues, hero-pose silhouette lock, packaged-collectible lighting behavior',
+        'Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness; Sculpted lead-form contour emphasis with clearly expressed articulation seams, bold toy silhouette clarity, and pose-forward geometry; Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish; Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism; poseable toy joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning',
       creative_brief:
-        'Preserve identity through articulated toy-hero grammar: molded plastic anatomy, visible joint systems, and display-ready gloss should carry the preset without anchoring it to one fixed living-room battle story. Apply Action Figure as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Action Figure (90s) after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Retro action-toy collectible style with heroic molded proportions, shelf-display energy, and kinetic play-readiness, Sculpted lead-form contour emphasis with clearly expressed articulation seams, bold toy silhouette clarity, and pose-forward geometry, Injection-mold plastic sheen, painted detail pass variation, seam-line evidence, and rigid-shell synthetic finish, Retail-style overhead speculars, blister-like glare streaks, and glossy card-surface reflections for packaging realism, poseable toy joint logic with hinge/swivel articulation cues and exaggerated heroic torso-to-limb proportioning plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-018',
     name: 'Balloon Art',
     category: '1. Toys And Crafts',
-    negativePrompt: 'sharp, flat',
+    negativePrompt:
+      'sharp, flat, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty',
+        'Balloon Art operates as a portable source-router layer: combine Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Shiny latex colors, carnival spectrum, bright-red, canary-yellow, sky-blue gloss',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection',
+        "Use High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Stretched rubber, latex skin, powder-dusted finish, taut inflation tension',
+        'Render Stretched rubber, latex skin, powder-dusted finish, taut inflation tension plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form',
+        'Compose with Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Fun, squeaky, buoyant, celebration-coded, carnival-joy, light and temporary',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Balloon Art while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Fragile, playful, inflated, balloon-twisting magic, squeak-and-sculpt, festive impermanence',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Knots, twisted nodes, balloon-neck ties, air-pressure seams, glossy-highlight rings',
+        'Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty; Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends; Stretched rubber, latex skin, powder-dusted finish, taut inflation tension; High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection; Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form',
       creative_brief:
-        'Convert the input into latex-twist construction grammar: segmented tubular inflation, knot-node articulation, glossy pressure-tension highlights, and inflated simplification should drive the style without requiring clowns, birthdays, animals, or a party room.',
+        'Use Balloon Art after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Twisted latex construction, balloon-sculpture grammar, squeaky inflated form language, pressure-art novelty, Rounded segments, pinch-twist nodes, sausage-link sections, tubular bends, Stretched rubber, latex skin, powder-dusted finish, taut inflation tension, High specular highlights, tight glossy rim catches, overhead bounce, balloon-surface reflection, Tubular shapes, inflated segment geometry, pinch-collapsed waist, pressure-balloon form plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-020',
     name: 'Wooden Toy',
     category: '1. Toys And Crafts',
-    negativePrompt: 'plastic, metal',
+    negativePrompt:
+      'plastic, metal, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Carved wood figure, traditional toy, whittled companion, heirloom plaything',
+      aesthetic:
+        'Wooden Toy operates as a portable source-router layer: combine Carved wood figure, traditional toy, whittled companion, heirloom plaything with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Natural wood, painted details, warm-oak honey, beech-cream, hand-painted folk-accents',
-      lighting_and_shadow: 'Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+      lighting_and_shadow:
+        "Use Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina',
+        'Render Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry',
-      atmosphere_and_mood: 'Nostalgic, simple, warm, handcrafted, old-world tenderness',
+        'Compose with Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Wooden Toy while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Traditional, sturdy, workshop-craft care, generation-passing durability, simple-elegance charm',
-      key_features: 'Wood texture, visible grain rings, dovetail joints, paint-wear edges',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
+      key_features:
+        'Carved wood figure, traditional toy, whittled companion, heirloom plaything; Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms; Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina; Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth; Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry',
       creative_brief:
-        'Translate the input into carved wooden-toy logic: simplified block forms, rounded peg-like joints, visible grain rings, hand-painted accents, and age-polished bevels. Keep heirloom craft warmth, but avoid requiring small hands, a workshop, or one literal toy object.',
+        'Use Wooden Toy after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Carved wood figure, traditional toy, whittled companion, heirloom plaything, Wood grain, flowing-grain contours, chisel-facet marks, rounded block-forms, Wood grain, paint chips, sanded-smooth bevel, hand-rubbed oil, age-darkened patina, Warm, window-sill daylight, oiled-grain sheen, gentle-shadow depth, Simple geometry, block-cut forms, peg-joint assembly, turned-wood symmetry plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-021',
     name: 'Sticker Art',
     category: '1. Toys And Crafts',
-    negativePrompt: '3d, shadow',
+    negativePrompt:
+      '3d, shadow, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Die-cut sticker, laptop-decal culture, street-art collectible, vinyl peel-and-stick',
+        'Sticker Art operates as a portable source-router layer: combine Die-cut sticker, laptop-decal culture, public-space-art collectible, vinyl peel-and-stick with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Vibrant flat colors, UV-resistant inks, neon-pop spectrum, spot-gloss accents',
-      lighting_and_shadow: 'Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+      lighting_and_shadow:
+        "Use Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back',
+        'Render Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        '2D cutout, die-line silhouette, punch-out negative space, floating-object illusion',
+        'Compose with 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Cool, decorative, urban-expression, laptop-personality, street-art rebellion',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Sticker Art while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Graphic, collectible, sticker-sheet appeal, skate-deck swagger, street-art credibility',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'White outline, kiss-cut border, gloss-laminate sheen, color-separation registration',
+        'Die-cut sticker, laptop-decal culture, public-space-art collectible, vinyl peel-and-stick; Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision; Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back; Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity; 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion',
       creative_brief:
-        'Keep identity in die-cut sticker grammar: thick contour borders, high-saturation flat fills, and laminate gloss behavior should define the preset without anchoring it to one urban micro-scene. Apply Sticker Art as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Sticker Art after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Die-cut sticker, laptop-decal culture, public-space-art collectible, vinyl peel-and-stick, Thick white border, contour-cut outline, clean-vector edge, kiss-cut precision, Glossy paper, vinyl laminate, weatherproof film, water-resistant coating, tacky adhesive back, Flat, no cast-shadow, even-diffuse daylight, matte-surface clarity, 2D cutout, die-line silhouette, punch-out negative space, floating-object illusion plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-022',
     name: 'Clay Stop-Motion Comedy',
     category: '1. Toys And Crafts',
-    negativePrompt: 'smooth cgi',
+    negativePrompt:
+      'smooth cgi, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Cozy clay stop-motion comedy style with tactile handmade humor and frame-by-frame sculpted expression',
+        'Clay Stop-Motion Comedy operates as a portable source-router layer: combine Cozy clay stop-motion comedy style with tactile handmade humor and frame-by-frame sculpted expression with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Matte clay colors, plasticine spectrum, earth-pigment tones, muted primary blends',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth',
+        "Use Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability',
+        'Render Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands',
-      atmosphere_and_mood: 'Funny, charming, warm, quirky, optimistic',
+        'Compose with Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Clay Stop-Motion Comedy while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Handcrafted stop-motion fidelity emphasizing thumbprint evidence, expressive sculpt timing, and tactile comedic warmth',
-      key_features: 'Plasticine, visible thumbprints, painted-backdrop sets, wire-armature shadows',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
+      key_features:
+        'Cozy clay stop-motion comedy style with tactile handmade humor and frame-by-frame sculpted expression; Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles; Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability; Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth; Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands',
       creative_brief:
-        'Define this preset by clay stop-motion grammar: visible thumbprints, sculpted expression swaps, and miniature practical-set lighting should hold identity without referencing specific studios or characters. Apply Clay Stop-Motion Comedy as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Clay Stop-Motion Comedy after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Cozy clay stop-motion comedy style with tactile handmade humor and frame-by-frame sculpted expression, Wide mouths, gummy-grin contours, expressive-brow ridges, clay-roll profiles, Fingerprints in clay, thumb-smudge surface, tool-mark trails, plasticine pliability, Stop motion set, practical-lamp warmth, miniature-fixture key, shadow-box depth, Tooth gap, exaggerated overbite, wide-eye spacing, teacup-proportion hands plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-023',
     name: 'Tin Toy',
     category: '1. Toys And Crafts',
-    negativePrompt: 'plastic',
+    negativePrompt:
+      'plastic, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity',
+        'Tin Toy operates as a portable source-router layer: combine Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce',
+        "Use Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges',
+        'Render Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance',
+        'Compose with Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Tin Toy while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure',
-      key_features: 'Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
+      key_features:
+        'Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity; Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly; Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges; Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce; Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance',
       creative_brief:
-        'Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork cues, and pressed-soldered mechanical charm should define identity beyond one mascot narrative. Apply Tin Toy as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Tin Toy after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity, Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly, Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges, Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce, Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-024',
     name: 'Diorama Box',
     category: '1. Toys And Crafts',
-    negativePrompt: 'full scale',
+    negativePrompt:
+      'full scale, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile craft-theater charm',
+        'Diorama Box operates as a portable source-router layer: combine Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile craft-theater charm with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Flat cutout silhouettes, stacked layer edges, profile-stage geometry, and parallax-driven contour readability',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Flat cutout silhouettes, stacked layer edges, profile-stage geometry, and parallax-driven contour readability; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Mixed handmade craft hues with construction-paper saturation, painted backdrop transitions, and collage-friendly contrast blocks',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Miniature-box top/side illumination with focused peep-stage warmth and shadow layering that enhances depth illusion',
+        "Use Miniature-box top/side illumination with focused peep-stage warmth and shadow layering that enhances depth illusion plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted irregularity',
+        'Render Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted irregularity plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Forced-perspective micro-staging with deliberate scale compression between foreground and backdrop planes',
-      atmosphere_and_mood: 'Curious, creative, intimate, playful, wonder-filled',
+        'Compose with Forced-perspective micro-staging with deliberate scale compression between near and rear craft planes plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Diorama Box while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Tactile craft-diorama finish emphasizing layered depth cues, handmade authenticity, and miniature theatrical legibility',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Layered box-stage architecture, peephole composition logic, cutout depth stratification, tactile handmade material evidence',
+        'Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile craft-theater charm; Flat cutout silhouettes, stacked layer edges, profile-stage geometry, and parallax-driven contour readability; Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted irregularity; Miniature-box top/side illumination with focused peep-stage warmth and shadow layering that enhances depth illusion; Forced-perspective micro-staging with deliberate scale compression between near and rear craft planes',
       creative_brief:
-        'Keep this preset rooted in miniature layered-stage grammar: handcrafted material evidence, parallax plane stacking, and peephole worldbuilding should define identity beyond any specific shoebox classroom narrative. Apply Diorama Box as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Diorama Box after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Handcrafted miniature diorama style with playful stagecraft depth, layered cutout worldbuilding, and tactile craft-theater charm, Flat cutout silhouettes, stacked layer edges, profile-stage geometry, and parallax-driven contour readability, Cardboard grain, glue seams, felt and fiber accents, soft craft stuffing cues, and stick-frame handcrafted irregularity, Miniature-box top/side illumination with focused peep-stage warmth and shadow layering that enhances depth illusion, Forced-perspective micro-staging with deliberate scale compression between near and rear craft planes plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-025',
     name: 'Button Eye Doll',
     category: '1. Toys And Crafts',
-    negativePrompt: 'human eyes',
+    negativePrompt:
+      'human eyes, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm',
+        'Button Eye Doll operates as a portable source-router layer: combine Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Muted, creepy, faded-indigo, storm-purple, bone-cream, dust-mote grey, spiderweb-silver',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill',
+        "Use Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine',
+        'Render Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints',
+        'Compose with Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Unsettling, magical, door-to-elsewhere, carnival-mirror dread, careful-what-you-wish-for',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Button Eye Doll while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Spooky handcrafted stop-motion look emphasizing stitched unease, tactile doll materials, and dark-whimsy atmosphere',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Visible stitching, four-hole buttons, cross-thread tension, burlap-fabric grain, needle-impaled surfaces',
+        'Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm; Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace; Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine; Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill; Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints',
       creative_brief:
-        'Preserve identity through uncanny dollcraft grammar: button-eye geometry, stitched-mouth tension, and burlap-thread material unease should carry the preset without referencing specific films or studios. Apply Button Eye Doll as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Button Eye Doll after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Uncanny handcrafted button-eyed doll style with stitched-fantasy tension and eerie miniature-horror charm, Stitched mouth, cross-stitch contour, needle-pull tension, seam-line grimace, Fabric, thread, burlap-sack weave, sawdust-stuffed cotton, button-surface sheen, waxed-thread shine, Cinematic dark, single-source key, fog-machine haze, moon-through-cobweb, cold-blue fill, Button eyes, stitched-mouth replacement, needle-hole pupils, thread-wound joints plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-027',
     name: 'Mosaic Tile',
     category: '1. Toys And Crafts',
-    negativePrompt: 'smooth painting',
+    negativePrompt:
+      'smooth painting, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory',
+        'Mosaic Tile operates as a portable source-router layer: combine Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Grout lines, mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Grout lines, mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Stone colors, Gold glass, marble-spectrum, smalti-blue, terracotta-earth, mother-of-pearl, porphyry-purple',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker',
+        "Use Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface, irregular hand-cut edge',
+        'Render Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface, irregular hand-cut edge plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction',
+        'Compose with Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Historic, grand, ruined-palace echo, footstep-of-empire, sun-warmed antiquity',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Mosaic Tile while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Ancient, durable, fragmented, imperial-craft, thousand-year permanence, tessera-by-tessera devotion',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Grout, tessera-grid alignment, irregular-tile spacing, andamento flow-lines, gold-leaf-smalti highlight',
+        'Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory; Grout lines, mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry; Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface, irregular hand-cut edge; Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker; Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction',
       creative_brief:
-        'Keep this preset anchored in tessera-mosaic grammar: irregular tile cadence, grout rhythm, andamento flow-lines, and faceted reflective highlights should define identity beyond any specific historic setting. Apply Mosaic Tile as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Mosaic Tile after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Roman floor art, ancient-tessera craft, bathhouse splendor, Byzantine-mosaic glory, Grout lines, mortar-grid contours, tessellated-edge stepping, labyrinthine-path geometry, Ceramic tiles, cut-stone cubes, glass smalti, limestone-tessera, hammered-marble surface, irregular hand-cut edge, Uneven reflection, angled-light sparkle, tessera-facet glint, oil-lamp flicker, Pixelated by tiles, low-resolution stone, grid-cell color-blocking, pixel-mosaic abstraction plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-029',
     name: 'Embroidery',
     category: '1. Toys And Crafts',
-    negativePrompt: 'paint, flat',
+    negativePrompt:
+      'paint, flat, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Hoop art, embroidery-craft, thread-painting, needlework tapestry, textile illustration',
+        'Embroidery operates as a portable source-router layer: combine Hoop art, embroidery-craft, thread-painting, needlework tapestry, textile illustration with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Thread thickness, satin-stitch bands, french-knot dots, running-stitch dashes, stem-stitch curves',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Thread thickness, satin-stitch bands, french-knot dots, running-stitch dashes, stem-stitch curves; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Thread colors, DMC-floss spectrum, variegated-gradient, metallic-floss shimmer, silk-thread luster',
-      lighting_and_shadow: 'Soft fabric, window-light grazing, thread-sheen catch, hoop-rim shadow',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
+      lighting_and_shadow:
+        "Use Soft fabric, window-light grazing, thread-sheen catch, hoop-rim shadow plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Canvas, thread loops, Aida-cloth grid, even-weave linen, hoop-drum tension, needle-pierce holes',
+        'Render Canvas, thread loops, Aida-cloth grid, even-weave linen, hoop-drum tension, needle-pierce holes plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Stitch resolution, pixel-like embroidery, cross-count limitation, grid-cell abstraction',
+        'Compose with Stitch resolution, pixel-like embroidery, cross-count limitation, grid-cell abstraction plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Homey, detailed, fireside-craft, generational skill, slow-thread meditation',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Embroidery while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Handmade, tactile, stitch-by-stitch labor, thread-painted artistry, embroidery-hoop patience',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Fabric grain, embroidery-hoop frame, needle-thread tail, stitch-direction shading, floss-skein palette',
+        'Hoop art, embroidery-craft, thread-painting, needlework tapestry, textile illustration; Thread thickness, satin-stitch bands, french-knot dots, running-stitch dashes, stem-stitch curves; Canvas, thread loops, Aida-cloth grid, even-weave linen, hoop-drum tension, needle-pierce holes; Soft fabric, window-light grazing, thread-sheen catch, hoop-rim shadow; Stitch resolution, pixel-like embroidery, cross-count limitation, grid-cell abstraction',
       creative_brief:
-        'Define this preset by embroidery-system grammar: stitch families as mark vocabulary, thread-direction shading, and cloth-grid resolution limits should carry identity beyond one handcrafted vignette. Apply Embroidery as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Embroidery after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Hoop art, embroidery-craft, thread-painting, needlework tapestry, textile illustration, Thread thickness, satin-stitch bands, french-knot dots, running-stitch dashes, stem-stitch curves, Canvas, thread loops, Aida-cloth grid, even-weave linen, hoop-drum tension, needle-pierce holes, Soft fabric, window-light grazing, thread-sheen catch, hoop-rim shadow, Stitch resolution, pixel-like embroidery, cross-count limitation, grid-cell abstraction plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-030',
     name: 'Sand Art',
     category: '1. Toys And Crafts',
-    negativePrompt: 'water, paint',
+    negativePrompt:
+      'water, paint, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art',
+        'Sand Art operates as a portable source-router layer: combine Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Earth tones, Dyed sand, ochre-desert spectrum, terra-cotta, turquoise-lagoon, sunset-layering',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion',
+        "Use Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast',
+        'Render Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion',
+        'Compose with Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Patience, sun-baked stillness, handmade precision, mineral quiet, temporary balance',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Sand Art while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Fragile, temporary, shake-to-destroy impermanence, tourist-stall craft, precision-pour technique',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Layers, color-strata bands, granular edge noise, settled-density shifts, optional glass-vessel distortion',
+        'Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art; Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles; Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast; Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion; Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion',
       creative_brief:
-        'Apply gravity-layered sand grammar to the input: stratified pour bands, granular edge behavior, sediment compression, and mineral color separation should define the style. Bottle curvature may appear as a framing cue, but do not require a souvenir bottle, desert scene, camel, or beach memory.',
+        'Use Sand Art after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Layered sand strata, granular color sediment, gravity-poured craft, grain-by-grain art, Granular edges, gravity-settled contour, pour-line strata, grain-slope profiles, Grains of sand, fine-ground mineral, pouring-trickle flow, settled-weight compaction, layered-density contrast, Flat, jar-through-daylight, backlit-strata glow, glass-vessel diffusion, Gravity layers, horizontal-strata formation, contour-band compression, sediment slope illusion plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-031',
     name: 'Ice Carving',
     category: '1. Toys And Crafts',
-    negativePrompt: 'warm, opaque',
+    negativePrompt:
+      'warm, opaque, melted craft, generic toy render, featureless plastic, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle',
+      aesthetic:
+        'Ice Carving operates as a portable source-router layer: combine Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle with hand-built object logic with toy scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve',
+        "Preserve the prompt's subject plus requested motion and context while letting forms simplify, assemble, soften, hinge, stitch, fold, carve, or snap together through Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency',
+        "Map color through material-native color blocks, toy-safe saturation, handmade variance, and clean separation between parts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance',
+        "Use Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance plus small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific highlights as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture',
+        'Render Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth',
+        'Compose with Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth plus object-scale staging, modular silhouette rhythm, clear construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony',
+        "Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and physical charm; the emotional tone should feel specific to Ice Carving while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art',
+        'Finish with clean craft detail, readable construction, deliberate imperfections, and no accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool reflection',
+        'Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle; Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve; Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture; Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance; Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth',
       creative_brief:
-        'Preserve identity through ice-sculpture grammar: refractive crystal mass, internal fracture networks, melt-phase transitions, and facet-driven light behavior should define style beyond a specific event setting. Apply Ice Carving as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Ice Carving after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle, Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve, Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture, Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance, Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth plus clearly expressed joins, simplified proportions, craft tolerances, modular parts, and maker-process evidence, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

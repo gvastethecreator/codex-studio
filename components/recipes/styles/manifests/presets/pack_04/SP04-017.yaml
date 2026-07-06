@@ -12,26 +12,81 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Classic watercolor storybook illustration (Beatrix Potter influence)
-  subject_treatment: Light pencil underdrawing with delicate ink-free contour suggestion
-  color_and_tone: Botanical pastels, warm neutrals, and transparent wash layering
-  lighting_and_shadow: Soft diffuse daylight with preserved paper-white highlights
-  texture_and_material: Cold-press paper grain, bloom edges, and wet-on-dry detail contrast
-  camera_and_composition: Mildly anthropomorphic and soft-proportioned character stylization
-  atmosphere_and_mood: Tender, pastoral, comforting
-  rendering_and_quality: Gentle handcrafted finish with nursery-book readability
-  key_features: White-space breathing room, feathered wash edges, subtle detail accents
+  aesthetic: >-
+    Watercolor Storybook acts as a transferable illustration router: start from Classic watercolor
+    storybook illustration (Beatrix Potter influence), White-space breathing interior volume,
+    feathered wash edges, subtle detail accents and storybook and friendly-illustration system built
+    from approachable shapes, handmade media, simplified edges, tactile materials, and
+    high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed
+    demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Light pencil underdrawing with delicate ink-free contour
+    suggestion; preserve the requested subject while softening, simplifying, miniaturizing,
+    paper-building, mark-making, or diagramming it according to the named medium, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Botanical pastels, warm neutrals, and transparent wash layering; use color
+    through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly
+    contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Soft diffuse daylight with preserved paper-white highlights; shape light
+    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Cold-press paper grain, bloom edges, and wet-on-dry detail contrast; surface detail
+    should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints,
+    sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Mildly anthropomorphic and soft-proportioned designed subjects
+    stylization; compose with clear silhouettes, readable spacing, playful scale, page-object logic,
+    flat educational layout, or gentle negative space without forcing a nursery scene, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tender, pastoral, comforting, mood carried by Watercolor Storybook craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Gentle handcrafted finish with nursery-book readability; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Classic watercolor storybook illustration (Beatrix Potter influence); White-space breathing
+    interior volume, feathered wash edges, subtle detail accents; Botanical pastels, warm neutrals,
+    and transparent wash layering; Cold-press paper grain, bloom edges, and wet-on-dry detail
+    contrast; Mildly anthropomorphic and soft-proportioned designed subjects stylization
   creative_brief: >-
-    Apply watercolor storybook warmth to any input: transparent washes, cold-press paper grain, soft edge
-    transitions, observational detail, and paper-white breathing space should feel gentle and timeless without
-    requiring animals, gardens, cottages, children, pastoral scenery, or fixed storybook vignettes.
+    Apply Watercolor Storybook as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Classic watercolor storybook illustration (Beatrix Potter influence), White-space
+    breathing interior volume, feathered wash edges, subtle detail accents, Cold-press paper grain,
+    bloom edges, and wet-on-dry detail contrast without requiring the card image's original subject.
 avoidRules:
   - digital
   - sharp
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-017.webp
 attributes:
-  negativePrompt: digital, sharp
+  negativePrompt: >-
+    digital, sharp, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

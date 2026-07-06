@@ -38,6 +38,7 @@ describe('recipeDiscoveryProjection', () => {
       'styles',
       'remaster',
       'spritesheet',
+      'sprite-atlas',
       'cinematic',
       'character-lab',
       'character',

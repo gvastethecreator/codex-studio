@@ -12,21 +12,56 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: Architectural visualization
-  subject_treatment: Precise
-  color_and_tone: Warm neutral exposure, architectural balance, believable material color
-  lighting_and_shadow: IES lights, sun, adaptive dome
-  texture_and_material: Photorealistic materials, layered BRDF
+  aesthetic: >-
+    V-Ray ArchViz Raytracer acts as a transferable CGI-style router: start from Architectural
+    visualization, Clean lines, adaptive sampling and renderer-pipeline system built from sampling
+    behavior, shader evaluation, light transport, denoise strategy, and engine-specific production
+    polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Precise; preserve the prompt subject while translating it
+    through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio
+    preview, or feature-film shading, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Warm neutral exposure, architectural balance, believable material color; make
+    color come from color management, HDR response, spectral bloom, engine tonemapping, material
+    albedo, and physically plausible exposure, with deliberate value grouping, exposure control, and
+    medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through IES lights, sun, adaptive dome; let engine-specific GI, ray tracing, Lumen,
+    caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value
+    structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Photorealistic materials, layered BRDF; surface detail should reveal BSDF behavior,
+    sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather
+    than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for V-Ray ArchViz Raytracer: three-quarter or orthographic framing, clean silhouette read,
-    material highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Inviting, expensive, aspirational, clean real-estate polish
-  rendering_and_quality: ArchViz clarity, catalog realism, interior-design lighting discipline
-  key_features: Clean lines, adaptive sampling
+    Structure the image through Lookdev camera for V Ray ArchViz Raytracer: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition; compose for renderer readability through focal hierarchy, product or VFX
+    staging, material swatches, path-traced depth, and clean engine output, with scale, spacing,
+    edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Inviting, expensive, aspirational, clean real estate polish; derive mood from
+    render fidelity, production confidence, cinematic polish, engine interactivity, or industrial
+    design clarity, letting the renderer alter interpretation without demanding a specific story,
+    location, or character.
+  rendering_and_quality: >-
+    Finish with ArchViz clarity, catalog realism, interior design lighting discipline; finish with
+    credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw
+    viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader
+    evidence to make the CGI mode recognizable.
+  key_features: >-
+    Architectural visualization; Clean lines, adaptive sampling; Warm neutral exposure,
+    architectural balance, believable material color; Photorealistic materials, layered BRDF;
+    Lookdev camera for V Ray ArchViz Raytracer: three quarter or orthographic framing, clean
+    silhouette read, material highlights, controlled depth, and vertical card composition
   creative_brief: >-
-    Apply V-Ray ArchViz discipline to the input: calibrated IES light, adaptive dome softness, layered BRDF
-    materials, warm exposure, straight-line clarity and expensive catalog realism. It can make architecture
-    feel habitable, but must not force an interior, window wall, furniture layout, or lifestyle setup.
+    Apply V-Ray ArchViz Raytracer as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Architectural visualization, Clean lines, adaptive
+    sampling, Photorealistic materials, layered BRDF without requiring the card image's original
+    subject.
 avoidRules:
   - photo
   - drawing
@@ -40,10 +75,23 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - text
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - raw viewport
+  - unlit preview
+  - wrong render engine
+  - cheap preview noise
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-006.webp
 attributes:
-  negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
+  negativePrompt: >-
+    photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts,
+    watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

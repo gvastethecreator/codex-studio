@@ -5,7 +5,7 @@ import {
   IconShieldCheck as ShieldCheck,
   IconX as X,
 } from '@tabler/icons-react';
-import { MotionDiv, AnimatePresence } from 'motion/react';
+import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 
 interface KeyPopoverProps {
   isOpen: boolean;

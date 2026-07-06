@@ -12,26 +12,63 @@ tags:
   - abstract-and-experimental
   - textile-and-ornamental-patterns
 visualDna:
-  aesthetic: Portuguese ceramic tile
-  subject_treatment: Blue painting
-  color_and_tone: Blue on White
-  lighting_and_shadow: Glossy glaze
-  texture_and_material: Ceramic
-  camera_and_composition: 'Compose for Azulejo Tile using its key spatial cues: Square grid.'
-  atmosphere_and_mood: Classic, bright
-  rendering_and_quality: Historic, decorative
-  key_features: Square grid
+  aesthetic: >-
+    Azulejo Tile becomes a transferable textile and ornamental pattern system: start from Portuguese
+    ceramic tile and Square grid, then route prompt content through motifs, repeats, weave logic,
+    decorative grids, stitched marks, and surface ornament without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Blue painting to wrap, embroider, tile, dye,
+    weave, print, or camouflage forms while preserving the prompt subject underneath; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Blue on White; treat palette as dye, thread, ceramic pigment, woven
+    banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Glossy glaze drive the light response: use soft fabric light, glazed highlights, stitch
+    shadows, woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless
+    the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Ceramic as the tactile or mark-making basis; surface detail must follow yarn, fiber,
+    glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Square grid as reusable spatial grammar: favor repeat rhythm, motif scale,
+    borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Classic, bright as the emotional register; derive mood from craft, ritual, fashion, domestic
+    texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Historic, decorative: finish with readable pattern scale, tactile detail, and no
+    wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the
+    style router.
+  key_features: >-
+    Portuguese ceramic tile; Blue painting; Blue on White; Glossy glaze; Ceramic; Square grid;
+    Classic, bright; Historic, decorative; Square grid
   creative_brief: >-
-    Apply azulejo ceramic language over the input with cobalt-blue painting on white glaze, square-grid
-    segmentation, glossy ceramic imperfections, and historic decorative rhythm. If walls, tiles, architecture,
-    or objects exist, glaze them; otherwise use blue-white tile geometry as pattern and surface without
-    forcing Lisbon, palaces, or wall setting.
+    Route any subject through Azulejo Tile as a transferable ornamental or textile visual system:
+    preserve prompt intent while converting surface, motif repetition, weave, symmetry, border
+    rhythm, and decorative flow through this preset. Apply azulejo ceramic language over the input
+    with cobalt-blue painting on white glaze, square-grid segmentation, glossy ceramic
+    imperfections, and historic decorative rhythm. If walls, tiles, architecture, or objects exist,
+    glaze them; otherwise use blue-white tile geometry as pattern and surface without forcing
+    Lisbon, palaces, or wall setting.
 avoidRules:
   - modern
+  - generic wallpaper overlay
+  - pattern pasted flat
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-070.webp
 attributes:
-  negativePrompt: modern
+  negativePrompt: >-
+    modern, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

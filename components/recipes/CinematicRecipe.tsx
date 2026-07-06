@@ -1,5 +1,7 @@
-import React, { useState, useRef, useMemo, useCallback } from 'react';
+import React, { useState, useRef, useMemo, useCallback, useId } from 'react';
 import {
+  IconCheck as Check,
+  IconChevronDown as ChevronDown,
   IconMovie as Clapperboard,
   IconVideo as Video,
   IconAperture as Aperture,
@@ -13,13 +15,13 @@ import {
   IconRectangle as RectangleHorizontal,
   IconUpload as Upload,
 } from '@tabler/icons-react';
-import { AnimatePresence } from 'motion/react';
 import type { Attachment, ImageGenerationConfig } from '../../types';
 import { RATIO_MAP } from '../../constants';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
 import { QuickStartText } from './QuickStartText';
+import { GsapDropdown } from '../ui/GsapDropdown';
 import {
   getRecipeModuleUiModel,
   getRecipeNumberDefault,
@@ -65,6 +67,82 @@ const DEFAULT_PARAMS = {
   weather: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'weather', 'Auto-Detect'),
   movement: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'movement', 'Auto-Detect'),
   lens: getRecipeStringDefault(CINEMATIC_DEFAULTS, 'lens', 'Auto-Detect'),
+};
+
+const ShotTypeDropdown: React.FC<{
+  value: string;
+  sceneLabel: string;
+  openBelow: boolean;
+  onChange: (value: string) => void;
+}> = ({ value, sceneLabel, openBelow, onChange }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const listboxId = useId();
+
+  return (
+    <div className="relative">
+      <button
+        ref={triggerRef}
+        type="button"
+        onClick={() => setIsOpen((open) => !open)}
+        className={`flex min-h-7 max-w-[120px] items-center gap-1.5 rounded border px-2 py-1 text-center text-[9px] font-bold uppercase tracking-wider transition-[background-color,border-color,color,transform] ${
+          isOpen
+            ? 'border-rose-400/55 bg-rose-500/14 text-white'
+            : 'border-white/10 bg-black/50 text-white/70 hover:bg-white/10 hover:text-white'
+        }`}
+        aria-label={`${sceneLabel} shot type: ${value}`}
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
+        aria-controls={listboxId}
+      >
+        <span className="truncate">{value}</span>
+        <ChevronDown
+          size={11}
+          className={`shrink-0 text-white/45 transition-[color,transform] ${
+            isOpen ? 'rotate-180 text-white' : ''
+          }`}
+          aria-hidden="true"
+        />
+      </button>
+      <GsapDropdown
+        id={listboxId}
+        open={isOpen}
+        onOpenChange={setIsOpen}
+        triggerRef={triggerRef}
+        placement={openBelow ? 'bottom-left' : 'top-left'}
+        role="listbox"
+        aria-label={`${sceneLabel} shot type`}
+        className={`absolute left-1/2 z-40 max-h-48 w-44 -translate-x-1/2 overflow-y-auto rounded-[6px] p-1 ${
+          openBelow ? 'top-[calc(100%+0.35rem)]' : 'bottom-[calc(100%+0.35rem)]'
+        }`}
+      >
+        {SHOT_TYPES.map((shot) => {
+          const selected = shot === value;
+          return (
+            <button
+              key={shot}
+              type="button"
+              role="option"
+              aria-selected={selected}
+              data-dropdown-item
+              onClick={() => {
+                onChange(shot);
+                setIsOpen(false);
+              }}
+              className={`flex min-h-8 w-full items-center justify-between gap-2 rounded-[5px] px-2 py-1.5 text-left text-[9px] font-black uppercase tracking-wider transition-[background-color,color] ${
+                selected
+                  ? 'bg-rose-500/18 text-white'
+                  : 'text-zinc-400 hover:bg-white/8 hover:text-zinc-100'
+              }`}
+            >
+              <span className="truncate">{shot}</span>
+              {selected ? <Check size={11} className="shrink-0 text-rose-100" /> : null}
+            </button>
+          );
+        })}
+      </GsapDropdown>
+    </div>
+  );
 };
 
 export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
@@ -148,7 +226,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
                 type="button"
                 key={count}
                 onClick={() => handleFrameChange(count)}
-                className={`h-9 px-4 rounded-lg flex items-center gap-2 transition-all ${
+                className={`h-9 px-4 rounded-lg flex items-center gap-2 transition-[background-color,color,box-shadow,transform] ${
                   params.frames === count
                     ? 'bg-rose-600 text-white shadow-lg'
                     : 'text-zinc-500 hover:text-zinc-300 hover:bg-white/5'
@@ -240,7 +318,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
       className="p-3 pt-4 pb-[var(--studio-recipe-dock-space)] sm:p-6 sm:pt-20 sm:pb-48 flex items-center justify-center"
     >
       <div
-        className="relative shadow-2xl transition-all duration-500 ease-out-expo bg-zinc-900 border border-white/10 rounded-lg overflow-hidden group"
+        className="relative overflow-hidden rounded-lg border border-white/10 bg-zinc-900 shadow-2xl transition-[background-color,border-color,box-shadow,transform] duration-500 ease-out-expo group"
         style={{
           aspectRatio: ratioValue,
           width: 'min(90vw, 74vh)',
@@ -252,12 +330,12 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <img
             src={activeImage.dataUrl}
             alt="Ref"
-            className="absolute inset-0 size-full object-cover opacity-20 blur-sm grayscale group-hover:grayscale-0 transition-all duration-700 pointer-events-none"
+            className="pointer-events-none absolute inset-0 size-full object-cover opacity-20 blur-sm grayscale transition-[filter,opacity] duration-700 group-hover:grayscale-0"
           />
         )}
 
         <div
-          className="absolute inset-0 grid gap-px bg-black/50 pointer-events-none transition-all duration-500"
+          className="pointer-events-none absolute inset-0 grid gap-px bg-black/50 transition-colors duration-500"
           style={{
             gridTemplateColumns: `repeat(${gridLayout.cols}, 1fr)`,
             gridTemplateRows: `repeat(${gridLayout.rows}, 1fr)`,
@@ -271,17 +349,14 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               <span className="text-[9px] font-black text-white/30 group-hover/cell:text-white/60 uppercase tracking-widest transition-colors mb-2">
                 {i === 0 ? 'START' : i === params.frames - 1 ? 'END' : `SCENE ${i + 1}`}
               </span>
-              <select
+              <ShotTypeDropdown
                 value={frameShots[i] || 'Auto'}
-                onChange={(e) => setFrameShots((prev) => ({ ...prev, [i]: e.target.value }))}
-                className="bg-black/50 text-white/70 hover:text-white text-[9px] font-bold uppercase tracking-wider border border-white/10 rounded px-2 py-1 outline-none focus:border-rose-500/50 appearance-none text-center cursor-pointer hover:bg-white/10 transition-colors"
-              >
-                {SHOT_TYPES.map((shot) => (
-                  <option key={shot} value={shot} className="bg-zinc-900 text-white">
-                    {shot}
-                  </option>
-                ))}
-              </select>
+                sceneLabel={
+                  i === 0 ? 'Start scene' : i === params.frames - 1 ? 'End scene' : `Scene ${i + 1}`
+                }
+                openBelow={i < gridLayout.cols}
+                onChange={(value) => setFrameShots((prev) => ({ ...prev, [i]: value }))}
+              />
             </div>
           ))}
         </div>
@@ -305,7 +380,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
               className="hidden"
               accept="image/*"
             />
-            <div className="size-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-6 shadow-2xl group-hover:scale-110 group-hover:border-rose-500/50 transition-all">
+            <div className="mb-6 flex size-20 items-center justify-center rounded-full border border-white/10 bg-zinc-900 shadow-2xl transition-[border-color,transform] group-hover:scale-110 group-hover:border-rose-500/50">
               <Upload
                 size={28}
                 className="text-zinc-600 group-hover:text-rose-400 transition-colors"
@@ -325,7 +400,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
           <button
             type="button"
             onClick={() => updateConfig('attachments', [])}
-            className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-black/60 text-white hover:text-white hover:bg-red-500 transition-all pointer-events-auto border border-white/10"
+            className="pointer-events-auto absolute right-4 top-4 z-20 rounded-lg border border-white/10 bg-black/60 p-2 text-white transition-[background-color,color] hover:bg-red-500 hover:text-white"
           >
             <X size={14} />
           </button>

@@ -13,27 +13,88 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: >-
-    Boss-encounter key-art style with asymmetrical scale tension, ominous focal pressure, and cinematic game
-    polish.
+    Boss Encounter Key Art Tension acts as a transferable art-medium router: start from Boss
+    encounter key art style with asymmetrical scale tension, ominous focal pressure, and cinematic
+    game polish, gameplay-readable hierarchy, genre-specific surface language, UI-aware composition,
+    and production-art clarity and game-art direction system built from playable readability, UI or
+    asset grammar, role clarity, production polish, and genre-specific visual feedback, then apply
+    the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Cast any subject as a dramatic threat or challenge through exaggerated scale contrast and dominant
-    silhouette mass.
-  color_and_tone: Deep cinematic shadows, one menacing accent hue, hot edge highlights, and severe value separation.
-  lighting_and_shadow: Backlit menace, rim-fire accents, volumetric haze, and large shadow shapes pressing into focal space.
-  texture_and_material: Polished concept-art brushwork, scratched material detail, smoke particles, and sharpened focal textures.
-  camera_and_composition: Low-angle or compressed wide key-art crop, huge negative-space pressure, diagonal confrontation rhythm.
-  atmosphere_and_mood: Climactic, dangerous, awe-heavy mood without requiring monsters, combat, weapons, arenas, or heroes.
-  rendering_and_quality: Finished cinematic key-art quality, readable thumbnail silhouette, no UI, no logo, no readable text.
+    Transform any prompt subject through Cast any subject as a dramatic threat or challenge through
+    exaggerated scale contrast and dominant silhouette mass; preserve the prompt subject while
+    routing it through tile readability, icon clarity, splash rendering, interface material, sprite
+    bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
+  color_and_tone: >-
+    Build color with Deep cinematic shadows, one menacing accent hue, hot edge highlights, and
+    severe value separation; use color as gameplay hierarchy: rarity glow, faction contrast,
+    tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory
+    material, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Backlit menace, rim fire accents, volumetric haze, and large shadow shapes
+    pressing into focal space; shape light through game readability: rim separation, UI glow,
+    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Polished concept art brushwork, scratched material detail, smoke particles, and sharpened
+    focal textures; surface detail should support genre grammar through parchment, HUD glass, pixel
+    atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Low angle or compressed wide key art crop, huge negative space
+    pressure, diagonal confrontation rhythm; compose through gameplay-facing hierarchy, atlas
+    consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen
+    energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Climactic, dangerous, awe heavy mood without requiring monsters, combat, weapons,
+    contest geometry, or heroes; derive mood from playable stakes, collection desire, tactical
+    control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium
+    alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Finished cinematic key art quality, readable thumbnail silhouette, no UI, no logo,
+    no readable text; finish with game-production clarity, strong silhouettes, controlled UI-like
+    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Boss encounter key art style with asymmetrical scale tension, ominous focal pressure, and
+    cinematic game polish; gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity; Deep cinematic shadows, one menacing accent hue, hot
+    edge highlights, and severe value separation; Polished concept art brushwork, scratched material
+    detail, smoke particles, and sharpened focal textures; Low angle or compressed wide key art
+    crop, huge negative space pressure, diagonal confrontation rhythm
+  creative_brief: >-
+    Apply Boss Encounter Key Art Tension as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Boss encounter key art style with asymmetrical scale tension, ominous focal pressure,
+    and cinematic game polish, gameplay-readable hierarchy, genre-specific surface language,
+    UI-aware composition, and production-art clarity, Polished concept art brushwork, scratched
+    material detail, smoke particles, and sharpened focal textures without requiring the card
+    image's original subject.
 avoidRules:
   - watermark
   - text
   - monster requirement
   - combat scene
   - weapon requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - low resolution
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-120.webp
 attributes:
-  negativePrompt: watermark, text, monster requirement, combat scene, weapon requirement
+  negativePrompt: >-
+    watermark, text, monster requirement, combat scene, weapon requirement, wrong medium, generic AI
+    gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution,
+    readable UI text, logo clutter, generic screenshot, unplayable visual clutter
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,19 +12,52 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: ASCII-density image style built from monospaced glyph fields and terminal-era tonal logic
-  subject_treatment: Repeating keyboard glyphs used as value cells, line clusters, and contour-density bands
-  color_and_tone: Monochrome green/black
-  lighting_and_shadow: Density based
-  texture_and_material: Text grid
-  camera_and_composition: Low res
-  atmosphere_and_mood: Tech, code
-  rendering_and_quality: Retro, hacker
-  key_features: Glyph density image, monospaced grid, terminal glow
+  aesthetic: >-
+    ASCII Art acts as a transferable art-medium router: start from ASCII density image style built
+    from monospaced glyph fields and terminal era tonal logic, Glyph density image, monospaced grid,
+    terminal glow and digital art workflow system built from layer control, editable edges, raster
+    or vector logic, screen-era artifacts, and production readability, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Repeating keyboard glyphs used as value cells, line
+    clusters, and contour density bands; preserve the prompt subject while routing it through the
+    preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets, glyphs,
+    or compositing only when the preset calls for them, keeping the requested identity, silhouette,
+    pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Monochrome green/black; use color as workflow evidence: palette ramps, neon
+    gradients, RGB channel shifts, flat vector fields, concept-art accents, or controlled digital
+    paint harmonies, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Density based; shape light through layer modes, rim glow, raster gradients,
+    isometric value, screen emission, glitch clipping, or composited photographic consistency, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Text grid; surface detail should come from the named workflow: brush texture, pixel
+    cells, glyph density, vector fills, polygon facets, paper layers, or signal artifacts only when
+    they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Low res; compose through digital hierarchy, projection rules, asset
+    readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like
+    rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tech, code; derive mood from speed, polish, concept utility, retro-futurism,
+    broken media, toy-scale clarity, or modern production control, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Retro, hacker; finish with clean digital intent, readable shapes, purposeful
+    artifacts, and no random over-rendered sludge, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: >-
+    ASCII density image style built from monospaced glyph fields and terminal era tonal logic; Glyph
+    density image, monospaced grid, terminal glow; Monochrome green/black; Text grid; Low res
   creative_brief: >-
-    Apply ASCII-art construction to any input: monospaced glyph density, symbol fields as tonal pixels,
-    terminal-era spacing, low-resolution contrast, and character-set geometry. Keep text-as-image abstraction
-    while avoiding readable words, captions, signatures, or logos.
+    Apply ASCII Art as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through ASCII
+    density image style built from monospaced glyph fields and terminal era tonal logic, Glyph
+    density image, monospaced grid, terminal glow, Text grid without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +74,23 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-060.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, readable words, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, readable words, signature, frame, border, wrong medium, generic AI gloss,
+    muddy noise, uncontrolled texture chatter, readable text, random AI smear, muddy overpaint,
+    uncontrolled artifact noise, generic concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -13,30 +13,87 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: >-
-    Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday magic,
-    breathable stillness
-  subject_treatment: Delicate
-  color_and_tone: Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown
-  lighting_and_shadow: Dappled sunlight, leaf-filtered glow, golden late-afternoon
-  texture_and_material: Watercolor background, soft wash, pencil underdraw, cel overlay
+    Studio Ghibli Painterly Nature Anime acts as a transferable cinematic-media router: start from
+    Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday
+    magic, breathable stillness, Dappled light, watercolor air, pencil underdraw, soft cel overlay,
+    observed micro-detail and animation-production system built from motion-era drawing, cel paint,
+    CG polish, stop-motion material, vector layers, camera multiplane, and shape acting, then apply
+    the media behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Delicate, adapt the requested subject through animation
+    pipeline grammar, cel or puppet surface, shape acting, motion readability, and production-era
+    finish while preserving prompt identity; preserve the requested subject while translating it
+    through cel shapes, squash, puppet material, vector rigs, CG feature polish, rotoscoped trace,
+    or painted-frame continuity, keeping the requested identity, silhouette, action, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth brown;
+    use color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats,
+    stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value
+    grouping, accent control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Dappled sunlight, leaf-filtered glow, golden late-afternoon; make light
+    follow the animation method through cel shadows, painted depth, puppet set lighting, CG bounce,
+    flat graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the
+    media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Watercolor depth field, soft wash, pencil underdraw, cel overlay; surface detail should
+    reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears, pixel
+    cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding noisy
+    filler texture.
   camera_and_composition: >-
-    Camera language native to Studio Ghibli Painterly Nature Anime: genre-aware framing, lens character, focal
-    hierarchy, motion cue, and vertical style-card composition.
-  atmosphere_and_mood: Nostalgic, peaceful, bittersweet wonder, human-scale awe
-  rendering_and_quality: Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth
-  key_features: Dappled light, watercolor air, pencil underdraw, soft cel overlay, observed micro-detail
+    Structure the image through Camera language native to Studio Ghibli Painterly Nature Anime:
+    genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical
+    composition; compose through animation readability, pose clarity, painted-plate rhythm, squash
+    arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm,
+    spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nostalgic, peaceful, bittersweet wonder, human-scale awe; derive mood from feature
+    warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere, or
+    experimental motion craft, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Luminous, lovingly observed, detailed stillness, hand-painted atmospheric depth;
+    finish with production-faithful animation surfaces, readable shapes, controlled artifacts, and
+    no exact studio-character copy or random cartoon face substitution, clean denoised surfaces
+    where appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Hand-painted nature-forward animated feature, Miyazaki film wonder, dappled memory, everyday
+    magic, breathable stillness; Dappled light, watercolor air, pencil underdraw, soft cel overlay,
+    observed micro-detail; Natural, mineral green, sky blue, warm cream, cherry-blossom pink, earth
+    brown; Watercolor depth field, soft wash, pencil underdraw, cel overlay; Camera language native
+    to Studio Ghibli Painterly Nature Anime: genre-aware framing, lens designed subjects, focal
+    hierarchy, motion cue, and style-led vertical composition
   creative_brief: >-
-    Translate the input into painterly animation grammar: leaf-filtered light, watercolor atmosphere, delicate
-    pencil structure, and a sense that ordinary surfaces carry quiet spirit. Avoid requiring specific places,
-    foods, vehicles, or characters; the style should breathe through texture, patience, and subtle
-    environmental softness. Every subject should feel observed with care before it is stylized.
+    Apply Studio Ghibli Painterly Nature Anime as a cinematic-media preset over prompt X: preserve
+    the user's requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Hand-painted nature-forward animated feature,
+    Miyazaki film wonder, dappled memory, everyday magic, breathable stillness, Dappled light,
+    watercolor air, pencil underdraw, soft cel overlay, observed micro-detail, Watercolor depth
+    field, soft wash, pencil underdraw, cel overlay without requiring the card image's original
+    subject.
 avoidRules:
   - ugly
   - dark
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact studio character copy
+  - random cartoon face
+  - unreadable motion smear
+  - fake subtitles
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-032.webp
 attributes:
-  negativePrompt: ugly, dark
+  negativePrompt: >-
+    ugly, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact
+    studio character copy, random cartoon face, unreadable motion smear, fake subtitles
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -13,21 +13,63 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Sword oath under neon rain, with brooding restraint, occult edge-light, revenge severity, and sudden clean
-    violence.
+    Kagurabachi - Sword Oath Under Neon Rain acts as a transferable anime-battle/worlds router:
+    Kagurabachi - Sword Oath Under Neon Rain; combine it with modern action anime grammar with
+    power-system clarity, impact frames, elastic motion, expressive line economy, and
+    high-readability spectacle; named titles, studios, or lineage words may guide style, but they
+    must not require canon cast, title-scene replication, screenshots, logos, or one fixed card
+    concept.
   subject_treatment: >-
-    Long rain diagonals, spare silhouette control, blade-like light cuts, severe eye-line geometry, and
-    stillness-before-impact.
-  color_and_tone: Midnight black, neon cyan, blood red, wet asphalt blue, steel gray, and cold violet.
-  lighting_and_shadow: Rain-split neon, narrow rim blades, low-key noir pools, and abrupt impact flashes.
-  texture_and_material: Wet pavement sheen, rain streaks, polished edge glints, dark cloth flats, and occult particle cuts.
-  camera_and_composition: Long-lens compression, rain-layer parallax, and sudden perspective cuts that feel oath-driven.
-  atmosphere_and_mood: Brooding, precise, cool, vengeful
-  rendering_and_quality: Sleek modern anime thriller finish with precise restraint, wet neon depth, and sharp impact readability.
-  key_features: Neon rain, oathlike stillness, blade-light cuts, noir restraint, occult edge energy.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
+    Kagurabachi - Sword Oath Under Neon Rain as portable contour, motion grammar, surface language,
+    and emotional pressure without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through saturated action accents, clean dark-light value separation, aura color,
+    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
+    let Kagurabachi - Sword Oath Under Neon Rain choose accent intensity, value contrast, emotional
+    temperature, and power-system separation while staying attached to prompt X.
+  lighting_and_shadow: >-
+    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
+    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Kagurabachi - Sword Oath Under Neon Rain without replacing prompt
+    X with a stock anime frame.
+  texture_and_material: >-
+    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
+    debris, and controlled effect overlays; keep the tactile or effect cues in Kagurabachi - Sword
+    Oath Under Neon Rain controlled, denoised, and coherent across bodies, objects, environments,
+    abstractions, and action.
+  camera_and_composition: >-
+    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
+    compressed depth, and readable near-to-far force paths; convert Kagurabachi - Sword Oath Under
+    Neon Rain into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules
+    instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
+    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
+    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
+    lineage readable.
+  rendering_and_quality: >-
+    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
+    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Kagurabachi - Sword Oath Under Neon Rain; dynamic contour, force-transfer anatomy, readable
+    power effects, sharp costume or surface simplification, and emotion-first pose energy; inked
+    speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and
+    controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst
+    panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish
+    with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI
+    anime smear
   creative_brief: >-
-    Make any prompt feel like a restrained revenge oath: use wet neon, cold edge light, precise stillness, and
-    sudden graphic cuts without requiring a sword, uniform, hidden room, or named place.
+    Apply Kagurabachi - Sword Oath Under Neon Rain after prompt X as a transferable
+    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while this preset supplies Kagurabachi - Sword Oath Under Neon Rain, modern action anime grammar
+    with power-system clarity, impact frames, elastic motion, expressive line economy, and
+    high-readability spectacle, finish discipline, and negative controls without forcing canon cast,
+    title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal
+    card.
 avoidRules:
   - realistic
   - 3d render
@@ -41,12 +83,27 @@ avoidRules:
   - watermark
   - text
   - signature
+  - photoreal cosplay
+  - western superhero comic
+  - generic shonen source-frame look
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-138.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic
+    shonen source-frame look, fixed canon character, title scene replication, required source-frame
+    look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy
+    darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

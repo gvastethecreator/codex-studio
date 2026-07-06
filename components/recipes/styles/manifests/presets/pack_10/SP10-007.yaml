@@ -12,28 +12,65 @@ tags:
   - abstract-and-experimental
   - geometric-abstraction
 visualDna:
-  aesthetic: Triangulated mesh
-  subject_treatment: Edges visible
-  color_and_tone: Facet gradients
-  lighting_and_shadow: Global illumination
-  texture_and_material: Paper or plastic
-  camera_and_composition: Geometric reduction
-  atmosphere_and_mood: Modern, tech
-  rendering_and_quality: Digital art, clean
-  key_features: Triangles
+  aesthetic: >-
+    Low Poly Abstract becomes a transferable geometric abstraction system: start from Triangulated
+    mesh, Triangles, and Geometric reduction, then route prompt content through planes, grids,
+    vectors, optical order, and deliberate formal reduction without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Edges visible to break, flatten, triangulate,
+    align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Facet gradients; treat color as structural contrast, field separation,
+    and rhythm rather than decorative wash, with enough value control that the subject remains
+    readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Global illumination drive the light response: keep light graphic and structural, with
+    shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting
+    unless the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Paper or plastic as the tactile or mark-making basis; surfaces should read as designed
+    planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Geometric reduction as reusable spatial grammar: favor axial tension, repeated
+    modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly
+    to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Modern, tech as the emotional register; derive mood from rigor, optical tension,
+    intellectual order, and abstraction pressure, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Digital art, clean: finish with crisp geometry, controlled edges, clean separations,
+    and no accidental realism, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Triangulated mesh; Edges visible; Facet gradients; Global illumination; Paper or plastic;
+    Geometric reduction; Modern, tech; Digital art, clean; Triangles
   creative_brief: >-
-    Reduce the input through low-poly abstraction: faceted planes, vertex-driven color blocks, crisp digital
-    triangulation, and simplified light shards should preserve subject identity as crystalline geometry. Apply
-    this abstract/vector construction over any input: preserve shape system, color logic, edge treatment,
-    composition rhythm, and graphic rendering behavior while avoiding a required subject category, poster
-    layout, icon, or scene template.
+    Route any subject through Low Poly Abstract as a transferable geometric abstraction visual
+    system: preserve prompt intent while converting form, edge hierarchy, color blocks, spatial
+    rhythm, and graphic reduction through this preset. Reduce the input through low-poly
+    abstraction: faceted planes, vertex-driven color blocks, crisp digital triangulation, and
+    simplified light shards should preserve subject identity as crystalline geometry. Apply this
+    abstract/vector construction over any input: preserve shape system, color logic, edge treatment,
+    composition rhythm, and graphic rendering behavior while avoiding a required subject category,
+    poster layout, icon, or scene template.
 avoidRules:
   - curved
   - smooth
+  - realistic perspective
+  - generic polygon filter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-007.webp
 attributes:
-  negativePrompt: curved, smooth
+  negativePrompt: >-
+    curved, smooth, realistic perspective, generic polygon filter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

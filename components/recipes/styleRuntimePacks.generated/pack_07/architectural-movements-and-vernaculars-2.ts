@@ -8,280 +8,289 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Brutalist Architecture',
     category: '2. Architectural Movements And Vernaculars',
     negativePrompt:
-      'delicate trim, painted finish hiding raw mass, wood-warmth dominance, glass-curtain-wall dominance',
+      'delicate trim, painted finish hiding raw mass, wood-warmth dominance, glass-curtain-wall dominance, warm wood interior zones, chair/sofa setup, corridor tunnel, market aisle, library aisle, camera prop, readable signage, empty abstraction, named landmark copy, tourist postcard, generic facade, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Brutalist Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Brutalist Architecture's specific style identity.",
+        'Brutalist Architecture acts as a transferable architecture/interior router: board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Brutalist Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Brutalist Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Brutalist Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Brutalist Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Brutalist Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Brutalist Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Brutalist Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Brutalist Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Brutalist Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Brutalist Architecture after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies board-formed texture, heavy cantilever, deep shadow voids, mineral gray palette, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-007',
     name: 'Art Deco',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'minimal, rustic, plain',
+    negativePrompt:
+      'minimal, rustic, plain, hotel lobby formula, chair/sofa focus, chandelier/lamp hero, nightclub stage, readable signage, market aisle, library aisle, corridor, empty abstraction, named landmark copy, tourist postcard, generic facade, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Art Deco within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Art Deco's specific style identity.",
+        'Art Deco acts as a transferable architecture/interior router: stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass, marble; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Art Deco through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Art Deco-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Art Deco recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Art Deco: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Art Deco: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Art Deco: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Art Deco with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Art Deco's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Art Deco into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Art Deco after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies stepped profiles, chevron/sunburst hierarchy, black-gold contrast, emerald accents, polished brass, marble, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-009',
     name: 'Gothic Revival',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'modern, bright, simple',
+    negativePrompt:
+      'modern, bright, simple, horror ruin, cathedral nave corridor, candle/lamp hero, pew rows, readable religious icon/text, market aisle, library aisle, camera prop, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Gothic Revival within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Gothic Revival's specific style identity.",
+        'Gothic Revival acts as a transferable architecture/interior router: carved limestone, ribbed verticals, muted stained-glass color projection, cold iron; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Gothic Revival through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat carved limestone, ribbed verticals, muted stained-glass color projection, cold iron as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Gothic Revival-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as carved limestone, ribbed verticals, muted stained-glass color projection, cold iron decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Gothic Revival recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from carved limestone, ribbed verticals, muted stained-glass color projection, cold iron without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Gothic Revival: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in carved limestone, ribbed verticals, muted stained-glass color projection, cold iron, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Gothic Revival: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert carved limestone, ribbed verticals, muted stained-glass color projection, cold iron into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Gothic Revival: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Gothic Revival with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Gothic Revival's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'carved limestone, ribbed verticals, muted stained-glass color projection, cold iron; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Gothic Revival into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Gothic Revival after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies carved limestone, ribbed verticals, muted stained-glass color projection, cold iron, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-021',
     name: 'Deconstructivism',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'box, symmetrical',
+    negativePrompt:
+      'box, symmetrical, named landmark, museum postcard, generic corridor, city street, glass box, symmetrical facade, market aisle, library aisle, camera prop, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Deconstructivism within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Deconstructivism's specific style identity.",
+        'Deconstructivism acts as a transferable architecture/interior router: fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Deconstructivism through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Deconstructivism-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Deconstructivism recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Deconstructivism: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Deconstructivism: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Deconstructivism: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Deconstructivism with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Deconstructivism's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Deconstructivism into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Deconstructivism after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies fractured intersections, shifted axes, brushed titanium skin, angular shadow cuts, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-022',
     name: 'Neoclassical',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'modern, asymmetry',
+    negativePrompt:
+      'modern, asymmetry, capitol/courthouse copy, tourist facade postcard, statue hero, flag, readable inscription, market aisle, library aisle, corridor, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Neoclassical within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neoclassical's specific style identity.",
+        'Neoclassical acts as a transferable architecture/interior router: column rhythm, pediment geometry, stepped plinth, white marble, pale limestone, bronze accent; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Neoclassical through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat column rhythm, pediment geometry, stepped plinth, white marble, pale limestone as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Neoclassical-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as column rhythm, pediment geometry, stepped plinth, white marble, pale limestone decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Neoclassical recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from column rhythm, pediment geometry, stepped plinth, white marble, pale limestone without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Neoclassical: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in column rhythm, pediment geometry, stepped plinth, white marble, pale limestone, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Neoclassical: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert column rhythm, pediment geometry, stepped plinth, white marble, pale limestone into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Neoclassical: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Neoclassical with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Neoclassical's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'column rhythm, pediment geometry, stepped plinth, white marble, pale limestone; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Neoclassical into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Neoclassical after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies column rhythm, pediment geometry, stepped plinth, white marble, pale limestone, bronze accent, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-023',
     name: 'Parametric Architecture',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'brick, square',
+    negativePrompt:
+      'brick, square, generic airport hall, shopping mall, chair/sofa focus, corridor tunnel, market aisle, library aisle, camera prop, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Parametric Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Parametric Architecture's specific style identity.",
+        'Parametric Architecture acts as a transferable architecture/interior router: continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Parametric Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Parametric Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Parametric Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Parametric Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Parametric Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Parametric Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Parametric Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Parametric Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Parametric Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Parametric Architecture after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies continuous white technical skin, algorithmic ribs, fluid ribbon transitions, soft embedded light, seamless joints, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-024',
     name: 'Victorian Painted Lady',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'plain, grey',
+    negativePrompt:
+      'plain, grey, preserved street postcard, full house exterior default, porch-chair scene, readable sign, market aisle, library aisle, corridor, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Victorian Painted Lady within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Victorian Painted Lady's specific style identity.",
+        'Victorian Painted Lady acts as a transferable architecture/interior router: gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Victorian Painted Lady through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Victorian Painted Lady-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Victorian Painted Lady recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Victorian Painted Lady: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Victorian Painted Lady: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Victorian Painted Lady: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Victorian Painted Lady with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Victorian Painted Lady's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Victorian Painted Lady into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Victorian Painted Lady after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies gingerbread trim, fish-scale shingles, pastel layered color, spindle rhythm, cream moldings, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-025',
     name: 'Bauhaus Architecture',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'decoration, roof tiles',
+    negativePrompt:
+      'decoration, roof tiles, generic office block, chair/sofa focus, market aisle, library aisle, corridor, readable text, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Bauhaus Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bauhaus Architecture's specific style identity.",
+        'Bauhaus Architecture acts as a transferable architecture/interior router: clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Bauhaus Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Bauhaus Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Bauhaus Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Bauhaus Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Bauhaus Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Bauhaus Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Bauhaus Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Bauhaus Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Bauhaus Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Bauhaus Architecture after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies clean cubic mass, horizontal bands, flat roof edge, white/black/grey planes, small primary-color signal, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-026',
     name: 'Googie Architecture',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'square, boring',
+    negativePrompt:
+      'square, boring, diner/roadside postcard, readable sign text, car hero, gas station scene, chair/sofa focus, market aisle, library aisle, corridor, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Googie Architecture within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Googie Architecture's specific style identity.",
+        'Googie Architecture acts as a transferable architecture/interior router: boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Googie Architecture through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Googie Architecture-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Googie Architecture recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Googie Architecture: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Googie Architecture: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Googie Architecture: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Googie Architecture with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Googie Architecture's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Googie Architecture into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Googie Architecture after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies boomerang vectors, starburst geometry, chrome, turquoise/red accents, angled glass, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-027',
     name: 'Tudor Revival',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'modern',
+    negativePrompt:
+      'modern, cottage postcard, village street, fireplace-only interior, chair/sofa focus, market aisle, library aisle, corridor, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Tudor Revival within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Tudor Revival's specific style identity.",
+        'Tudor Revival acts as a transferable architecture/interior router: dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Tudor Revival through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Tudor Revival-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Tudor Revival recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Tudor Revival: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Tudor Revival: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Tudor Revival: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Tudor Revival with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Tudor Revival's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Tudor Revival into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Tudor Revival after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies dark wood over lime plaster, steep gable rhythm, leaded diamond glass, handmade brick, mossy earth tones, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
@@ -289,82 +298,86 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sustainable Green',
     category: '2. Architectural Movements And Vernaculars',
     negativePrompt:
-      'bare gray concrete dominance, smokestack industrial mood, greenwashing tech facade',
+      'bare gray concrete dominance, smokestack industrial mood, greenwashing tech facade, greenwashing corporate facade, generic plant wall, park landscape, rendered office lobby, market aisle, library aisle, corridor, camera prop, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Sustainable Green within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sustainable Green's specific style identity.",
+        'Sustainable Green acts as a transferable architecture/interior router: layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Sustainable Green through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Sustainable Green-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Sustainable Green recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Sustainable Green: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Sustainable Green: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Sustainable Green: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Sustainable Green with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Sustainable Green's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Sustainable Green into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Sustainable Green after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies layered vegetation integrated into structure, bioclimatic shading, reclaimed texture, daylight, rainwater or soil cues, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-029',
     name: 'Adobe/Pueblo',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'sharp edges, log-cabin wood dominance',
+    negativePrompt:
+      'sharp edges, log-cabin wood dominance, tourist pueblo postcard, pottery/table prop focus, desert scenic overlook, market aisle, library aisle, corridor, camera prop, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Earthen adobe vernacular with thermal mass, desert domesticity and handmade territorial rootedness.',
+        'Adobe/Pueblo acts as a transferable architecture/interior router: thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Thick monolithic walls, softened edges, stepped roofs, deep openings and low parapets.',
-      color_and_tone: 'Terracotta, sand, warm ochre, sage, cinnamon and sunlit clay.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
+      color_and_tone:
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Hard desert sun, deep reveal shadows, thermal-niche glow and warm bounce under eaves.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Limewashed earth render, visible vegetal fiber, hand-trowel marks, discreet exposed vigas and worn clay tile.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Gentle hand-built wall undulation while retaining tectonic stability.',
-      atmosphere_and_mood: 'Thermal shelter, arid calm and ancestral continuity.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Material honesty with climate-aware realism and plausible handmade imperfection.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Deep openings, carved mass, thermal niches, recessed thermal-niche geometry and softened handmade edges.',
+        'thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Keep portable adobe grammar centered on thermal inertia, deep apertures and visible hand finish. It should communicate climate adaptation and construction rootedness, not exotic scenic staging or fixed pueblo-room props.',
+        'Apply Adobe/Pueblo after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies thick limewashed earthen walls, deep window reveal, rounded plaster edge, timber/viga rhythm, warm clay pigments, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-030',
     name: 'Soviet Constructivist',
     category: '2. Architectural Movements And Vernaculars',
-    negativePrompt: 'ornate, luxury retail gloss, corporate glass tower, consumer signage',
+    negativePrompt:
+      'ornate, luxury retail gloss, corporate glass tower, consumer signage, propaganda poster, readable text, flags, named monument, market aisle, library aisle, corridor, empty abstraction, named landmark copy, tourist postcard, generic facade, readable signage, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Soviet Constructivist within 2. Architectural Movements And Vernaculars: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Soviet Constructivist's specific style identity.",
+        'Soviet Constructivist acts as a transferable architecture/interior router: raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing; fuse it with architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Soviet Constructivist through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; treat raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Soviet Constructivist-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through period or movement-authentic base color, stone or envelope values, restrained accent hierarchy, metal or glass notes, and clear mass separation; let source cues such as raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Soviet Constructivist recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use raking architectural light, deep reveal shadow, facade-edge rim, material bounce, and scale-defining contrast; make light reveal joints, relief, material depth, scale, and atmosphere from raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Soviet Constructivist: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; prioritize the tactile signals in raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Soviet Constructivist: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing; convert raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Soviet Constructivist: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through historical authority, civic ambition, domestic craft, experimental instability, or optimistic futurity carried by architecture itself; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Soviet Constructivist with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean built-form finish with readable structure, no postcard landmark dependency, no tourist facade copy, and no text or logo artifacts; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Soviet Constructivist's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing; load-bearing mass, edge profile, facade rhythm, historic proportion, structural jointing, and movement-specific silhouette translation; stone, concrete, plaster, timber, glass, metal, masonry, tile, craft detail, weathering, and envelope surface response; elevation fragments, sectional cuts, cropped facade anchors, axial or broken symmetry, scale cues, and movement-readable massing',
       creative_brief:
-        'Create a style-card that translates Soviet Constructivist into a portable visual system for 2. Architectural Movements And Vernaculars. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Soviet Constructivist after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies raw concrete, aggressive diagonals, prisms or cylinders, restrained red accent, black/cream massing, architectural movement grammar with tectonic mass, historical or speculative lineage, facade logic, ornament discipline, and structural silhouette, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

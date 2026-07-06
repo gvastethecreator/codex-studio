@@ -14,33 +14,70 @@ tags:
   - hunter-gothic-and-plague-courts
   - witch-trial
 visualDna:
-  aesthetic: Fogbound medieval witch-trial fantasy with rough timber, hooded crowds, and occult uncertainty.
+  aesthetic: >-
+    Fogbound medieval accusation folklore with rough timber posts, low fog, torch halos, rope knots,
+    and occult uncertainty.
   subject_treatment: >-
-    A massive fogbound witch-trial inquisitor with bell-shaped iron mask, rope mantle, torch halo, and veiled
-    witnesses reduced to small silhouettes around the figure.
+    Transform the prompt subject into fogbound medieval paranoia with softened silhouettes, low-key
+    halo contrast, damp roughness, and communal dread while keeping the original subject intact and
+    avoiding trial-scene roles.
   color_and_tone: Damp gray, charred black, torch orange, dirty linen, and muted forest green.
-  lighting_and_shadow: Torches create simple halos and long silhouettes while keeping fog smooth and shadow edges readable.
-  texture_and_material: Wet timber, rough rope, wool cloaks, muddy ground, smoke, ash, and hand-cut charms.
-  camera_and_composition: Circular crowd staging, low fog layers, off-center accused figures, and claustrophobic village space.
-  atmosphere_and_mood: Suspicious, cold, communal, and supernatural.
+  lighting_and_shadow: >-
+    Torches create simple halos and long silhouettes while keeping fog smooth and shadow edges
+    readable.
+  texture_and_material: Wet timber, rough rope, muddy ground, smoke, ash, hand-cut charms, and damp linen shapes.
+  camera_and_composition: >-
+    Circular accusation pressure, low fog bands, off-center moral tension, claustrophobic medieval
+    spacing, and witness-like silhouettes only as optional depth shapes.
+  atmosphere_and_mood: >-
+    Carry the prompt through Suspicious, cold, communal, and supernatural; nocturnal aristocracy,
+    clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the
+    tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: >-
-    Historical fantasy illustration with smooth atmospheric fog, tactile props, defined lines, and clean low
-    light.
-  creative_brief: Reusable medieval paranoia style for villages, rituals, characters, creatures, or mystery scenes.
+    Historical fantasy illustration with smooth atmospheric fog, tactile props, defined lines, and
+    clean low light.
+  creative_brief: >-
+    Route any subject through fogbound witch trial paranoia: preserve the prompt while adding
+    accusation geometry, low fog, torch halo pressure, edge silhouette tension, and medieval moral
+    dread without requiring a village trial scene, central inquisitor, executioner, or accused
+    figure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity,
+    while this preset supplies a style grammar of Fogbound Witch Trial; Fogbound medieval accusation
+    folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty, mood,
+    material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed
+    cast, fixed relic, fixed monster, readable text, or sample-card composition.
+  key_features: >-
+    Fogbound Witch Trial; Fogbound medieval accusation folklore with rough timber posts; low fog;
+    torch halos; rope knots; occult uncertainty
 avoidRules:
   - modern courtroom
   - clean costume pageant
   - bright magic effects
   - cartoon witch
+  - central inquisitor
+  - executioner figure
+  - accused figure
+  - visible crowd
+  - near plane observers
+  - robed witnesses
+  - gallows scene
   - explicit violence
   - watermark
   - text
+  - vampire portrait default
+  - plague doctor prop lock
+  - candle room dependency
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-011.webp
 attributes:
   negativePrompt: >-
-    modern courtroom, clean costume pageant, bright magic effects, cartoon witch, explicit violence,
-    watermark, text
+    modern courtroom, clean costume pageant, bright magic effects, cartoon witch, central
+    inquisitor, executioner figure, accused figure, visible crowd, near plane observers, robed
+    witnesses, gallows scene, explicit violence, watermark, text, vampire portrait default, plague
+    doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene,
+    readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -12,26 +12,62 @@ tags:
   - abstract-and-experimental
   - textile-and-ornamental-patterns
 visualDna:
-  aesthetic: Criss-cross bands
-  subject_treatment: Straight lines
-  color_and_tone: Red, Green, Blue
-  lighting_and_shadow: Flat
-  texture_and_material: Flannel
-  camera_and_composition: Weave
-  atmosphere_and_mood: Classic, warm
-  rendering_and_quality: Traditional, cozy
-  key_features: Grid
+  aesthetic: >-
+    Tartan (Plaid) becomes a transferable textile and ornamental pattern system: start from
+    Criss-cross bands, Grid, and Weave, then route prompt content through motifs, repeats, weave
+    logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Straight lines to wrap, embroider, tile, dye,
+    weave, print, or camouflage forms while preserving the prompt subject underneath; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Red, Green, Blue; treat palette as dye, thread, ceramic pigment, woven
+    banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: use soft fabric light, glazed highlights, stitch shadows,
+    woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Flannel as the tactile or mark-making basis; surface detail must follow yarn, fiber,
+    glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Weave as reusable spatial grammar: favor repeat rhythm, motif scale, borders,
+    allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Classic, warm as the emotional register; derive mood from craft, ritual, fashion, domestic
+    texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Traditional, cozy: finish with readable pattern scale, tactile detail, and no
+    wallpaper pasted over the subject, preserving prompt X as the base content and the preset as the
+    style router.
+  key_features: >-
+    Criss-cross bands; Straight lines; Red, Green, Blue; Flat; Flannel; Weave; Classic, warm;
+    Traditional, cozy; Grid
   creative_brief: >-
-    Apply tartan as coded woven grid over the input with crossing red-green-blue bands, flannel softness,
-    layered warp and weft, warm tradition, and color intersections that behave like inherited structure.
-    Preserve subject shape while wrapping or segmenting it; do not require highlands, hearths, or costume
-    context.
+    Route any subject through Tartan (Plaid) as a transferable ornamental or textile visual system:
+    preserve prompt intent while converting surface, motif repetition, weave, symmetry, border
+    rhythm, and decorative flow through this preset. Apply tartan as coded woven grid over the input
+    with crossing red-green-blue bands, flannel softness, layered warp and weft, warm tradition, and
+    color intersections that behave like inherited structure. Preserve subject shape while wrapping
+    or segmenting it; do not require highlands, hearths, or costume context.
 avoidRules:
   - curved lines
+  - generic wallpaper overlay
+  - pattern pasted flat
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-050.webp
 attributes:
-  negativePrompt: curved lines
+  negativePrompt: >-
+    curved lines, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

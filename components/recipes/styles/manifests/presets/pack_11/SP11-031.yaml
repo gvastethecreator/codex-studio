@@ -12,32 +12,79 @@ tags:
   - miscellaneous-and-fun
   - toys-and-crafts
 visualDna:
-  aesthetic: Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle
-  subject_treatment: Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame carve
-  color_and_tone: Clear, Blue tint, frozen-depth cyan, air-bubble white, internal-fracture silver, melt-water transparency
-  lighting_and_shadow: Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance
+  aesthetic: >-
+    Ice Carving operates as a portable source-router layer: combine Sculpture, frozen-gallery
+    centerpiece, crystal-elegance, banquet-hall spectacle with hand-built object logic with toy
+    scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual
+    behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms simplify,
+    assemble, soften, hinge, stitch, fold, carve, or snap together through Sharp, melting,
+    chisel-facet edges, drip-softened corners, freeze-frame carve; identity stays readable through
+    construction grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through material-native color blocks, toy-safe saturation, handmade variance, and
+    clean separation between parts; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Refractive, internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance plus
+    small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific
+    highlights as the light-response contract, with readable hierarchy, controlled contact detail,
+    and no lighting choice that erases the user's requested content.
   texture_and_material: >-
-    Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve
-    texture
-  camera_and_composition: Translucent, see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth
-  atmosphere_and_mood: Elegant, freezing, zero-degree magic, slow-drip countdown, crystalline-ceremony
-  rendering_and_quality: Cold, temporary, crystal, melt-away impermanence, wedding-hall spectacle, ice-bar art
+    Render Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth,
+    chainsaw-carve texture plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread,
+    sand, or carved surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or
+    signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Translucent, see-through volume, refractive-depth illusion, frozen-clarity,
+    submerged-inclusion depth plus object-scale staging, modular silhouette rhythm, clear
+    construction reads, and tactile detail hierarchy as reusable framing grammar, allowing cards,
+    portraits, objects, scenes, and abstract prompts to inherit the style without one required
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and
+    physical charm; the emotional tone should feel specific to Ice Carving while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean craft detail, readable construction, deliberate imperfections, and no
+    accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Dripping water, internal-crack networks, air-bubble constellations, chainsaw-blade marks, melt-pool
-    reflection
+    Sculpture, frozen-gallery centerpiece, crystal-elegance, banquet-hall spectacle; Sharp, melting,
+    chisel-facet edges, drip-softened corners, freeze-frame carve; Slippery ice, wet-glaze surface,
+    frozen-air bubble pocket, crystalline-fracture depth, chainsaw-carve texture; Refractive,
+    internal, beam-through-crystal, prism-split spectrum, spotlight-brilliance; Translucent,
+    see-through volume, refractive-depth illusion, frozen-clarity, submerged-inclusion depth
   creative_brief: >-
-    Preserve identity through ice-sculpture grammar: refractive crystal mass, internal fracture networks,
-    melt-phase transitions, and facet-driven light behavior should define style beyond a specific event
-    setting. Apply Ice Carving as a portable style system over any input: preserve its construction grammar,
-    material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal
-    prop, fixed specimen, classroom sample, product shot, or scene template.
+    Use Ice Carving after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Sculpture, frozen-gallery centerpiece, crystal-elegance,
+    banquet-hall spectacle, Sharp, melting, chisel-facet edges, drip-softened corners, freeze-frame
+    carve, Slippery ice, wet-glaze surface, frozen-air bubble pocket, crystalline-fracture depth,
+    chainsaw-carve texture, Refractive, internal, beam-through-crystal, prism-split spectrum,
+    spotlight-brilliance, Translucent, see-through volume, refractive-depth illusion,
+    frozen-clarity, submerged-inclusion depth plus clearly expressed joins, simplified proportions,
+    craft tolerances, modular parts, and maker-process evidence, palette behavior, light response,
+    material treatment, and finish discipline without requiring one specimen, prop bundle, product
+    still, or card composition.
 avoidRules:
   - warm
   - opaque
+  - melted craft
+  - generic toy render
+  - featureless plastic
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-031.webp
 attributes:
-  negativePrompt: warm, opaque
+  negativePrompt: >-
+    warm, opaque, melted craft, generic toy render, featureless plastic, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

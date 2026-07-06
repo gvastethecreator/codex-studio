@@ -12,25 +12,79 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Die-cut sticker illustration with collectible decal language
-  subject_treatment: Bold simplified contours with thick white cutline margin
-  color_and_tone: Saturated vector palette tuned for print legibility
-  lighting_and_shadow: Controlled vinyl gloss accents and compact specular highlights
-  texture_and_material: Smooth sticker-vinyl finish with subtle laminate sheen
-  camera_and_composition: Simplified silhouettes with icon-like proportion clarity
-  atmosphere_and_mood: Playful, punchy, identity-forward
-  rendering_and_quality: Crisp decal-ready rendering optimized for small-format readability
-  key_features: White border halo, isolated silhouette, peel-and-stick visual grammar
+  aesthetic: >-
+    Sticker Art acts as a transferable illustration router: start from Die-cut sticker illustration
+    with collectible decal language, White border halo, isolated silhouette, peel-and-stick visual
+    grammar and storybook and friendly-illustration system built from approachable shapes, handmade
+    media, simplified edges, tactile materials, and high-readability charm, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Bold simplified contours with thick white cutline margin;
+    preserve the requested subject while softening, simplifying, miniaturizing, paper-building,
+    mark-making, or diagramming it according to the named medium, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Saturated vector palette tuned for print legibility; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Controlled vinyl gloss accents and compact specular highlights; shape light
+    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth sticker-vinyl finish with subtle laminate sheen; surface detail should show paper
+    tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate,
+    or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Simplified silhouettes with icon-like proportion clarity; compose
+    with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational
+    layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Playful, punchy, identity-forward, mood carried by Sticker Art craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Crisp decal-ready rendering optimized for small-format readability; finish with
+    clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky
+    render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Die-cut sticker illustration with collectible decal language; White border halo, isolated
+    silhouette, peel-and-stick visual grammar; Saturated vector palette tuned for print legibility;
+    Smooth sticker-vinyl finish with subtle laminate sheen; Simplified silhouettes with icon-like
+    proportion clarity
   creative_brief: >-
-    Apply sticker-art decal grammar to any input: thick white cutline, isolated silhouette, compact vinyl
-    gloss, saturated vector color, and thumbnail-readable edge contrast should make the subject collectible
-    without requiring mascots, icons, slogans, sticker sheets, or peel-off props.
+    Apply Sticker Art as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Die-cut sticker illustration with collectible decal language, White border halo, isolated
+    silhouette, peel-and-stick visual grammar, Smooth sticker-vinyl finish with subtle laminate
+    sheen without requiring the card image's original subject.
 avoidRules:
   - background
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-029.webp
 attributes:
-  negativePrompt: background
+  negativePrompt: >-
+    background, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

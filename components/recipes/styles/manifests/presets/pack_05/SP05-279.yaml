@@ -13,24 +13,61 @@ tags:
   - dark-fantasy-and-seinen
 visualDna:
   aesthetic: >-
-    Red-optic security noir, paramilitary abstraction, smoke-dense political dread, buried tenderness inside
-    oppressive system machinery
-  subject_treatment: Dense mature-anime linework, heavy crosshatching, weighted contour variation, gritty ink density
-  color_and_tone: Muted earths, blood reds, cold moonlit tones, desaturated horror palette, bruised shadow hues
-  lighting_and_shadow: Ominous directional shadows, single-source drama light, deep chiaroscuro, low-key shadow lift
+    Red-Optic Security Noir Style acts as a transferable anime-battle/worlds router: Red-Optic
+    Security Noir Style; combine it with dark fantasy and seinen anime grammar with moral pressure,
+    heavy shadow, body unease, noir materiality, ritual dread, and mature visual restraint; named
+    titles, studios, or lineage words may guide style, but they must not require canon cast,
+    title-scene replication, screenshots, logos, or one fixed card concept.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
+    Red-Optic Security Noir Style as portable contour, motion grammar, surface language, and
+    emotional pressure without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through charcoal black, rust red, bone, sickly neon, winter blue, mineral pale, dirty
+    gold, and disciplined blood-or-danger accents; let Red-Optic Security Noir Style choose accent
+    intensity, value contrast, emotional temperature, and power-system separation while staying
+    attached to prompt X.
+  lighting_and_shadow: >-
+    Use low ritual glow, security red, winter overcast, neon despair, smoky bounce, blade-like rim,
+    and deep occlusion with no crushed detail; make light clarify impact, silhouette, machinery or
+    magic, material depth, and mood from Red-Optic Security Noir Style without replacing prompt X
+    with a stock anime frame.
   texture_and_material: >-
-    Smoke-black metal, red glass glow, heavy cloth grain, riot-dust haze, oxidized plated panels, wet
-    concrete-neutral grit
+    Render crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral
+    fracture, blood-ink accents, and denoised grime; keep the tactile or effect cues in Red-Optic
+    Security Noir Style controlled, denoised, and coherent across bodies, objects, environments,
+    abstractions, and action.
   camera_and_composition: >-
-    Red-optic focal points, smoke-layer compression, plated mass silhouettes, political negative space,
-    oppressive security geometry
-  atmosphere_and_mood: Oppressive, political, smoky, tragic
-  rendering_and_quality: Gritty dramatic anime frame, film-noir rendering, heavy shadow compression, textured midtone grit
-  key_features: Red optic glow, smoke-dense composition, plated mass abstraction, political dread, buried tenderness
+    Frame through oppressive negative space, surveillance framing, ritual symmetry, fugitive
+    diagonals, compressed civic space, and slow fatal closeups; convert Red-Optic Security Noir
+    Style into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead
+    of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through doom weight, suspicion, guilt, nihilism, compassion under violence,
+    loneliness, retribution, and adult dread without gore shortcuts; the preset can become brutal,
+    erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it
+    while keeping the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with mature seinen finish with controlled darkness, stable structure, restrained texture,
+    no splatter-only horror, no photoreal grime, and no watermark/text; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Red-Optic Security Noir Style; scarred contour, restrained deformation, severe silhouettes,
+    vulnerable posture, occult or noir edge language, and readable psychological pressure;
+    crosshatch grain, soot, concrete, wet fabric, oxidized metal, paper, ash, mineral fracture,
+    blood-ink accents, and denoised grime; oppressive negative space, surveillance framing, ritual
+    symmetry, fugitive diagonals, compressed civic space, and slow fatal closeups; mature seinen
+    finish with controlled darkness, stable structure, restrained texture, no splatter-only horror,
+    no photoreal grime, and no watermark/text
   creative_brief: >-
-    Apply red-optic security noir to any subject: smoke, heavy dark surfaces, red glass points, and political
-    weight should suggest oppressive systems without fixed attire systems, brigades, ruins, concealment props,
-    factions, or security scenes.
+    Apply Red-Optic Security Noir Style after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Red-Optic Security Noir Style, dark fantasy and seinen anime grammar with moral pressure, heavy
+    shadow, body unease, noir materiality, ritual dread, and mature visual restraint, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -44,12 +81,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - splatter-only horror
+  - photoreal grime
+  - cheap jump scare
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-279.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare,
+    fixed canon character, title scene replication, required source-frame look, cosplay, generic
+    anime filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

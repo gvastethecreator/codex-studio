@@ -12,19 +12,49 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: Catalog packshot clarity
-  subject_treatment: Centered object geometry
-  color_and_tone: Neutral whites and controlled greys
-  lighting_and_shadow: Shadowless softbox sweep
-  texture_and_material: Clean true surface
-  camera_and_composition: Corrected perspective
-  atmosphere_and_mood: Objective, premium, frictionless
-  rendering_and_quality: Retail catalog precision
-  key_features: Seamless background
+  aesthetic: >-
+    Seamless Packshot acts as a transferable photographic style router: begin from Catalog packshot
+    clarity, Seamless depth field, and commercial photographic system built from sellable clarity,
+    controlled studio craft, material desirability, and brand-neutral polish, then apply the
+    photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through central object geometry; preserve prompt identity while making
+    silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the
+    original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Neutral whites and controlled greys; use palette as campaign control: clean whites,
+    luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior
+    harmony, with value separation and white balance choices that feel captured in-camera rather
+    than painted over.
+  lighting_and_shadow: >-
+    Use Shadowless softbox sweep; shape light with softboxes, reflectors, rim lines, HDR fill,
+    glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Clean true surface; render metal, glass, fabric, food surface, condensation, cosmetic
+    gel, architecture finish, and clean contact shadows with precise detail, avoiding both waxy
+    smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Corrected perspective; compose for catalog clarity, top-down order, hero
+    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Objective, premium, frictionless; derive mood from appetite, trust, luxury,
+    engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset
+    changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Retail catalog precision; finish with professional photo polish, accurate material
+    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Catalog packshot clarity; Seamless depth field; Neutral whites and controlled greys; Shadowless
+    softbox sweep; Corrected perspective
   creative_brief: >-
-    Packshot photography reduces any subject to clean commercial certainty: seamless sweep background,
-    centered geometry, softbox evenness, corrected perspective, honest texture, and zero narrative clutter.
-    Useful for making prompts read as sellable objects without forcing a specific product type.
+    Apply Seamless Packshot as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Catalog packshot clarity, Neutral whites and controlled greys, Shadowless
+    softbox sweep, Clean true surface, and Corrected perspective through optics, exposure, palette,
+    surface response, timing, and finish without requiring the card image's original subject.
 avoidRules:
   - clutter
   - dramatic shadow
@@ -32,10 +62,30 @@ avoidRules:
   - watermark
   - text
   - signature
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - low resolution
+  - fake brand logo
+  - messy clutter
+  - dirty product surface
+  - unreadable labels
+  - cheap stock layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-082.webp
 attributes:
-  negativePrompt: clutter, dramatic shadow, lifestyle scene, watermark, text, signature
+  negativePrompt: >-
+    clutter, dramatic shadow, lifestyle scene, watermark, text, signature, illustration, painting,
+    drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, low
+    resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap
+    stock layout
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

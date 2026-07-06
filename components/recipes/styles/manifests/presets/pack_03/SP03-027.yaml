@@ -13,43 +13,86 @@ tags:
   - 3d-styles
 visualDna:
   aesthetic: >-
-    Metaballs within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic
-    thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects
-    while preserving Metaballs's specific style identity.
+    Metaballs acts as a transferable CGI-style router: start from Metaballs implicit blob surfaces,
+    merged rounded forms, smooth liquid topology, soft procedural joints and 3D style system built
+    from modeling language, mesh abstraction, projection rules, topology display, toy material,
+    paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X
+    instead of recreating a fixed demo image.
   subject_treatment: >-
-    Define Metaballs through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and
-    reusable beyond one literal scene.
+    Transform any prompt subject through adapt the requested subject through implicit blob surfaces,
+    merged rounded forms, smooth liquid topology, soft procedural joints while preserving its
+    identity; preserve the prompt subject while rebuilding it through the preset-specific 3D
+    language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural
+    motion forms only when the preset calls for them, keeping the requested identity, silhouette,
+    pose, object function, or environment legible.
   color_and_tone: >-
-    Use a Metaballs-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Build color with palette and exposure choices that support implicit blob surfaces, merged
+    rounded forms, smooth liquid topology, soft procedural joints; use color through material
+    simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or
+    procedural motion accents, with deliberate value grouping, exposure control, and medium-specific
+    limits rather than generic color wash.
   lighting_and_shadow: >-
-    Use lighting that makes Metaballs recognizable: purposeful key, rim, bounce, shadow, and glow behavior
-    with readable hierarchy.
+    Handle light through light behavior that reveals implicit blob surfaces, merged rounded forms,
+    smooth liquid topology, soft procedural joints; shape light through the style constraint:
+    simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or
+    retro speculars, so value structure supports the renderer and does not overwrite the requested
+    content.
   texture_and_material: >-
-    Use materials and textures that reinforce Metaballs: surface response, grain, patina, polish, or wear
-    should feel intentional and style-defining.
+    Render implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural
+    joints; surface detail should show the named construction system; cube faces, mesh edges, fold
+    creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should
+    appear only when they belong to the preset, keeping material scale coherent and avoiding noisy
+    filler texture.
   camera_and_composition: >-
-    Lookdev camera for Metaballs: three-quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition.
+    Structure the image through Lookdev camera for Metaballs: three quarter or orthographic framing,
+    clean silhouette read, material highlights, controlled depth, and vertical card composition;
+    compose through projection, topology readability, object grouping, axis discipline, exploded or
+    arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy
+    doing the style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Metaballs: specific, coherent, and distinct, with emotional tone carried by
-    visual systems rather than narrative captioning.
+    Keep the mood mood carried by implicit blob surfaces, merged rounded forms, smooth liquid
+    topology, soft procedural joints; derive mood from toy-like clarity, technical breakdown,
+    handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder,
+    letting the renderer alter interpretation without demanding a specific story, location, or
+    character.
   rendering_and_quality: >-
-    Render Metaballs with high production clarity, strong silhouette reads, clean detail priority, and no
-    accidental UI, text, logos, or watermark.
+    Finish with finished Metaballs CGI with implicit blob surfaces, merged rounded forms, smooth
+    liquid topology, soft procedural joints and controlled detail; finish with intentional
+    stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless
+    the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to
+    make the CGI mode recognizable.
   key_features: >-
-    Prioritize Metaballs's key features: recognizable shape language, palette logic, material cues, lighting
-    behavior, and composition rules.
+    Metaballs implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural
+    joints; palette and exposure choices that support implicit blob surfaces, merged rounded forms,
+    smooth liquid topology, soft procedural joints; Lookdev camera for Metaballs: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition
   creative_brief: >-
-    Create a style-card that translates Metaballs into a portable visual system for 4. 3D Styles. Preserve the
-    preset identity through style mechanics, not a fixed scene, character, prop, or story beat.
+    Apply Metaballs as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Metaballs implicit blob surfaces, merged rounded forms, smooth liquid
+    topology, soft procedural joints without requiring the card image's original subject.
 avoidRules:
   - sharp
   - geometric
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - accidental photorealism
+  - generic smooth mesh
+  - wrong geometry language
+  - messy topology
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-027.webp
 attributes:
-  negativePrompt: sharp, geometric
+  negativePrompt: >-
+    sharp, geometric, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
+    geometry language, messy topology
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

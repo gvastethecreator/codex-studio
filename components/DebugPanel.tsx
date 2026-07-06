@@ -72,10 +72,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
         onClick={onClose}
       />
 
-      <div
-        className="absolute inset-4 overflow-hidden rounded-[30px] border border-white/10 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]"
-        onClick={(event) => event.stopPropagation()}
-      >
+      <div className="absolute inset-4 overflow-hidden rounded-[30px] border border-white/10 bg-zinc-950/96 shadow-[0_40px_160px_rgba(0,0,0,0.65)]">
         <div className="flex items-center justify-between border-b border-white/8 px-6 py-5">
           <div>
             <div className="text-[10px] font-black uppercase tracking-[0.22em] text-zinc-500">

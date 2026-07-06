@@ -12,26 +12,81 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Refined ink-calligraphic illustration with formal stroke cadence
-  subject_treatment: High contrast hairline-to-broad transitions via pressure and angle control
-  color_and_tone: Deep black ink, warm neutral paper, subtle sepia oxidation hints
-  lighting_and_shadow: Wet-ink sheen accents with controlled pooling at stroke terminals
-  texture_and_material: Smooth vellum-like surface with minimal drag
-  camera_and_composition: Flat calligraphic composition; proportion preserved through calligraphic structure
-  atmosphere_and_mood: Ceremonial, classic, literate, archival quietness
-  rendering_and_quality: Polished and fluid, prioritizing disciplined stroke elegance
-  key_features: Flex-width modulation, tapered entry/exit strokes, deliberate rhythm spacing
+  aesthetic: >-
+    Fountain Pen acts as a transferable illustration router: start from Refined ink-calligraphic
+    illustration with formal stroke cadence, Flex-width modulation, tapered entry/exit strokes,
+    deliberate rhythm spacing and ink and printmaking system built from mark economy, matrix
+    process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure,
+    then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through High contrast hairline-to-broad transitions via pressure
+    and angle control; preserve the requested subject while rebuilding it through carved lines,
+    etched density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke
+    logic, or tattoo-flash simplification, keeping the requested identity, silhouette, pose, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Deep black ink, warm neutral paper, subtle sepia oxidation hints; use color as
+    ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash
+    colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Wet-ink sheen accents with controlled pooling at stroke terminals;
+    translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink
+    pooling, or flat spray contrast rather than photographic shading, so value structure supports
+    the illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth vellum-like surface with minimal drag; surface detail should show paper fiber,
+    plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling, tattoo
+    flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Flat calligraphic composition; proportion preserved through
+    calligraphic structure; compose through print registration, border discipline, mark-direction
+    rhythm, negative-space carving, tag flow, ornamental line weight, or edition-like balance, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Ceremonial, classic, literate, archival quietness; derive mood from craft
+    pressure, underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Polished and fluid, prioritizing disciplined stroke elegance; finish as a credible
+    ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random
+    distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Refined ink-calligraphic illustration with formal stroke cadence; Flex-width modulation, tapered
+    entry/exit strokes, deliberate rhythm spacing; Deep black ink, warm neutral paper, subtle sepia
+    oxidation hints; Smooth vellum-like surface with minimal drag; Flat calligraphic composition;
+    proportion preserved through calligraphic structure
   creative_brief: >-
-    Apply fountain-pen calligraphic grammar to any input: hairline-to-broad modulation, wet-ink pooling,
-    tapered stroke entries, vellum warmth, and deliberate rhythm spacing should build form through stroke
-    choreography without requiring writing, manuscripts, letters, signatures, or archival props.
+    Apply Fountain Pen as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Refined ink-calligraphic illustration with formal stroke cadence, Flex-width modulation, tapered
+    entry/exit strokes, deliberate rhythm spacing, Smooth vellum-like surface with minimal drag
+    without requiring the card image's original subject.
 avoidRules:
   - pencil
   - dry
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-073.webp
 attributes:
-  negativePrompt: pencil, dry
+  negativePrompt: >-
+    pencil, dry, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

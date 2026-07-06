@@ -12,27 +12,78 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity
-  subject_treatment: Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex
-  color_and_tone: Dark Brown, couverture-ebony, ganache-mahogany, milk-chocolate amber, cocoa-dust, tempered-sheen
-  lighting_and_shadow: Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface mirror
-  texture_and_material: Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity
-  camera_and_composition: Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple
-  atmosphere_and_mood: Indulgent, sweet, luxurious, cocoa-comfort, melting-moment
-  rendering_and_quality: Rich, decadent, chocolatier-art, tempering-perfection, dessert-seduction, cocoa-bean poetry
+  aesthetic: >-
+    Chocolate Flow operates as a portable source-router layer: combine Viscous cocoa flow, tempered
+    dark gloss, molten confection surface, dense ribbon liquidity with culinary presentation logic
+    with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues,
+    so the preset supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms plate,
+    glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material
+    logic through Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges,
+    swirl-vortex; identity stays readable through construction grammar, proportion, edge logic, and
+    detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents,
+    creamy highlights, and controlled richness; keep hue roles intentional, value separation clear,
+    and palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface
+    mirror plus editorial food lighting with glossy highlights, soft appetite shadows, condensation
+    sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Smooth liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk,
+    molten-viscosity plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust,
+    ice, foam, steam, and surface freshness; surface scale, residue, gloss, grain, fiber, pores,
+    edges, or signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple
+    plus plating geometry, negative space, ingredient rhythm, commercial clarity, and edible detail
+    scale as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract
+    prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and
+    sensory immediacy; the emotional tone should feel specific to Chocolate Flow while still obeying
+    the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with appetizing material truth, precise gloss control, clean detail priority, and no
+    messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Smoothness, tempered-chocolate sheen, drip-formation, cocoa-butter gloss, ganache-satin,
-    chocolate-shavings curl
+    Viscous cocoa flow, tempered dark gloss, molten confection surface, dense ribbon liquidity;
+    Thick waves, viscous-ribbon contours, pour-cascade, drip-tongue edges, swirl-vortex; Smooth
+    liquid chocolate, tempered-crystal snap, ganache-velvet, cocoa-butter silk, molten-viscosity;
+    Satin gloss, ribbon-highlight catch, soft-box reflection, warm-overhead, tempered-surface
+    mirror; Flowing, pour-path meander, chocolate-cascade, drip-icicle descent, fold-and-ripple
   creative_brief: >-
-    Render the input through chocolate-flow material behavior: ribbon folds, glossy highlights, dense
-    viscosity, drip formation, and tempered sheen. Preserve premium confection texture without requiring a
-    dessert, river, waterfall, fondue setup, or patisserie scene.
+    Use Chocolate Flow after prompt X as a transferable style layer: prompt X supplies subject,
+    action, and setting, while the preset supplies Viscous cocoa flow, tempered dark gloss, molten
+    confection surface, dense ribbon liquidity, Thick waves, viscous-ribbon contours, pour-cascade,
+    drip-tongue edges, swirl-vortex, Smooth liquid chocolate, tempered-crystal snap, ganache-velvet,
+    cocoa-butter silk, molten-viscosity, Satin gloss, ribbon-highlight catch, soft-box reflection,
+    warm-overhead, tempered-surface mirror, Flowing, pour-path meander, chocolate-cascade,
+    drip-icicle descent, fold-and-ripple plus portion geometry, garnish rhythm, sauce motion, melt
+    behavior, crumb, steam, condensation, and service polish, palette behavior, light response,
+    material treatment, and finish discipline without requiring one specimen, prop bundle, product
+    still, or card composition.
 avoidRules:
   - watery
+  - messy cafeteria
+  - fake food plastic
+  - brand logo packaging
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-053.webp
 attributes:
-  negativePrompt: watery
+  negativePrompt: >-
+    watery, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card
+    scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

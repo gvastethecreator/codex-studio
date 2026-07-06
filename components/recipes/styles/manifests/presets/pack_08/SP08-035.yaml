@@ -12,33 +12,88 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure.
-  subject_treatment: Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry.
-  color_and_tone: Red lacquer, Black, Gold, indigo silk, burnished iron, copper-gilt, ivory
-  lighting_and_shadow: Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint.
-  texture_and_material: Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish.
+  aesthetic: >-
+    Samurai Armor operates as a portable fashion-costume router: combine Ceremonial lacquer armor
+    regalia with silk-laced discipline and red-black-gold craft pressure with period and mythic
+    costume logic with era silhouette, regalia structure, textile craft, and ceremonial proportion,
+    so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
+    literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
+    plate, embroider, crown, wrap, or ceremonialize through Laced plate rhythm, do-chest breadth,
+    sode-shoulder square, haidate paneling and crest geometry; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
+    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
+    material color believable, and palette behavior attached to the subject instead of pasted
+    wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint plus museum,
+    candle, daylight, ceremonial, or portrait light that reveals textile depth and silhouette
+    hierarchy as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask
+    finish plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim,
+    and handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Samurai Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk
-    lacing, layered shoulder panels and vertical banner-like rhythm.
-  atmosphere_and_mood: Reverent, still, impermanent, pre-dawn calm and disciplined.
-  rendering_and_quality: Detailed ceremonial craft, disciplined silhouette clarity, historical-fantasy gravitas
+    Compose with Compose for Samurai Armor using its key spatial cues: Helmet-like crest geometry,
+    lacquered plates, silk lacing, layered shoulder panels and vertical banner-like rhythm plus
+    regal posture logic, era silhouette, layered garment structure, ornament placement, and readable
+    period identity as reusable fashion framing grammar, allowing portraits, objects, creatures,
+    environments, action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
+    pressure, or folk memory; the tone should feel specific to Samurai Armor while still obeying the
+    prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
+    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
   key_features: >-
-    Helmet-like crest geometry, lacquered plates, silk lacing, layered shoulder panels and vertical
-    banner-like rhythm.
+    Ceremonial lacquer armor regalia with silk-laced discipline and red-black-gold craft pressure;
+    Laced plate rhythm, do-chest breadth, sode-shoulder square, haidate paneling and crest geometry;
+    Lacquered iron, silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish;
+    Dramatic dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint; Compose for
+    Samurai Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk
+    lacing, layered shoulder panels and vertical banner-like rhythm
   creative_brief: >-
-    Translate any input into ceremonial armor craft language: lacquered plates, silk lacing, crest geometry,
-    shoulder panels and disciplined red-black-gold construction. Preserve regalia pressure without requiring
-    warrior identity, weapons, combat, named historical roles, bamboo forests, castle interiors or fixed human
-    faces.
+    Use Samurai Armor after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Ceremonial lacquer
+    armor regalia with silk-laced discipline and red-black-gold craft pressure, Laced plate rhythm,
+    do-chest breadth, sode-shoulder square, haidate paneling and crest geometry, Lacquered iron,
+    silk odoshi lacing, hammered gold leaf, braided silk cord and iron mask finish, Dramatic
+    dawn-mist light, lacquer edge shine, indigo shadow and gold-leaf glint, Compose for Samurai
+    Armor using its key spatial cues: Helmet-like crest geometry, lacquered plates, silk lacing,
+    layered shoulder panels and vertical banner-like rhythm plus corsetry, armor plates, robes,
+    sashes, pleats, trim, brocade, regalia layers, fastenings, and historically legible cut, palette
+    behavior, light response, material treatment, silhouette grammar, and finish discipline without
+    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - european armor
   - weapon prop
   - combat scene
   - named warrior role
+  - cheap costume rental
+  - wrong era mashup
+  - plastic armor
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-035.webp
 attributes:
-  negativePrompt: european armor, weapon prop, combat scene, named warrior role
+  negativePrompt: >-
+    european armor, weapon prop, combat scene, named warrior role, cheap costume rental, wrong era
+    mashup, plastic armor, fixed outfit, required body type, literal card scene, generic fashion
+    catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -15,6 +15,7 @@ import {
 import Tooltip from './Tooltip';
 import Logo from './Logo';
 import { TopToolbar } from './ui/TopToolbar';
+import { GsapDropdown } from './ui/GsapDropdown';
 import { resolveRecipeAlias, type RecipeAliasId } from '../lib/recipeAliases';
 import type { StudioUsageSummary } from '../lib/studioDiagnostics';
 import type { Workspace, RecipeId } from '../types';
@@ -54,6 +55,7 @@ const EMPTY_QUEUE_PREVIEWS: StudioCommandCenterProjection['queue']['resultPrevie
 const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
   remaster: { name: 'Remaster' },
   spritesheet: { name: 'Sprite Sheet' },
+  'sprite-atlas': { name: 'Sprite Atlas' },
   cinematic: { name: 'Cinematic' },
   'character-lab': { name: 'Character Lab' },
   character: { name: 'Character' },
@@ -92,7 +94,9 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const [isMobileCommandOpen, setIsMobileCommandOpen] = React.useState(false);
   const [queueProgressTick, setQueueProgressTick] = React.useState(0);
   const mobileWorkspaceRef = React.useRef<HTMLDivElement>(null);
+  const mobileWorkspaceButtonRef = React.useRef<HTMLButtonElement>(null);
   const mobileCommandRef = React.useRef<HTMLDivElement>(null);
+  const mobileCommandButtonRef = React.useRef<HTMLButtonElement>(null);
   const activeRecipeAlias = resolveRecipeAlias(activeRecipeAliasId);
   const activeRecipeData = activeRecipe
     ? { name: activeRecipeAlias?.title ?? RECIPE_DATA[activeRecipe]?.name ?? activeRecipe }
@@ -166,34 +170,44 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             <div ref={mobileWorkspaceRef} className="relative sm:hidden">
               <Tooltip content="Workspaces" position="bottom">
                 <button
+                  ref={mobileWorkspaceButtonRef}
                   type="button"
                   onClick={() => setIsMobileWorkspaceOpen((isOpen) => !isOpen)}
                   aria-label={`Open workspace switcher: ${workspaceLabel}`}
+                  aria-haspopup="menu"
                   aria-expanded={isMobileWorkspaceOpen}
+                  aria-controls="mobile-workspace-menu"
                   className="studio-hit-target flex size-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
                 >
                   <Briefcase size={15} />
                 </button>
               </Tooltip>
-              {isMobileWorkspaceOpen && (
-                <div className="absolute left-0 top-full z-50 mt-1.5 rounded-xl border border-white/10 bg-zinc-950/95 p-1.5 shadow-2xl backdrop-blur-md">
-                  <WorkspaceStrip
-                    layout="compact"
-                    workspaces={workspaces}
-                    activeWorkspaceId={activeWorkspaceId}
-                    onSwitchWorkspace={(id) => {
-                      onSwitchWorkspace(id);
-                      setIsMobileWorkspaceOpen(false);
-                    }}
-                    onAddWorkspace={() => {
-                      onAddWorkspace();
-                      setIsMobileWorkspaceOpen(false);
-                    }}
-                    onDeleteWorkspace={onDeleteWorkspace}
-                    onRenameWorkspace={onRenameWorkspace}
-                  />
-                </div>
-              )}
+              <GsapDropdown
+                id="mobile-workspace-menu"
+                open={isMobileWorkspaceOpen}
+                onOpenChange={setIsMobileWorkspaceOpen}
+                triggerRef={mobileWorkspaceButtonRef}
+                placement="bottom-left"
+                role="menu"
+                aria-label="Mobile workspace switcher"
+                className="absolute left-0 top-full z-50 mt-1.5 p-1.5"
+              >
+                <WorkspaceStrip
+                  layout="compact"
+                  workspaces={workspaces}
+                  activeWorkspaceId={activeWorkspaceId}
+                  onSwitchWorkspace={(id) => {
+                    onSwitchWorkspace(id);
+                    setIsMobileWorkspaceOpen(false);
+                  }}
+                  onAddWorkspace={() => {
+                    onAddWorkspace();
+                    setIsMobileWorkspaceOpen(false);
+                  }}
+                  onDeleteWorkspace={onDeleteWorkspace}
+                  onRenameWorkspace={onRenameWorkspace}
+                />
+              </GsapDropdown>
             </div>
           </div>
 
@@ -203,6 +217,8 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 <button
                   type="button"
                   onClick={() => onViewChange('studio')}
+                  aria-label="Go to studio"
+                  title="Studio"
                   className="vt-nav-studio studio-hit-target hidden rounded-lg bg-zinc-800 p-1.5 text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white cursor-pointer sm:block"
                 >
                   <Home size={14} />
@@ -358,8 +374,8 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 {showCollapsedQueueProgress && (
                   <span className="absolute inset-x-1 bottom-1 h-0.5 overflow-hidden rounded-full bg-black/60">
                     <span
-                      className="block h-full rounded-full bg-accent-300 transition-[width] duration-200 ease-linear"
-                      style={{ width: `${queueProgressPercent}%` }}
+                      className="block h-full w-full origin-left rounded-full bg-accent-300 transition-transform duration-200 ease-linear"
+                      style={{ transform: `scaleX(${queueProgressPercent / 100})` }}
                     />
                   </span>
                 )}
@@ -377,6 +393,8 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                         <img
                           src={preview.src}
                           alt=""
+                          width={20}
+                          height={20}
                           className="size-full object-cover"
                           loading="lazy"
                           decoding="async"
@@ -393,82 +411,96 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             <div ref={mobileCommandRef} className="relative sm:hidden">
               <Tooltip content="Commands" position="bottom">
                 <button
+                  ref={mobileCommandButtonRef}
                   type="button"
                   onClick={() => setIsMobileCommandOpen((isOpen) => !isOpen)}
                   aria-label="Open mobile commands"
                   aria-expanded={isMobileCommandOpen}
-                  className="studio-hit-target flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
+                  aria-haspopup="menu"
+                  aria-controls="mobile-command-menu"
+                  className="studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
                 >
                   <Menu2 size={15} />
                 </button>
               </Tooltip>
-              {isMobileCommandOpen && (
-                <div className="fixed left-2 right-2 top-12 z-[60] rounded-2xl border border-white/10 bg-zinc-950/96 p-2 shadow-2xl backdrop-blur-xl">
-                  <div className="mb-2 grid grid-cols-2 gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2">
-                    <button
-                      type="button"
-                      aria-label={`Open runtime status: ${runtimeStatus.label}`}
-                      onClick={() => runMobileCommand(onOpenDashboard)}
-                      className={`flex min-h-11 items-center gap-2 rounded-xl border px-3 text-left text-[10px] font-black uppercase tracking-widest ${runtimeToneClass}`}
-                    >
-                      <Server size={15} />
-                      <span className="truncate">{runtimeStatus.label}</span>
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="Open Studio Settings"
-                      onClick={() => runMobileCommand(onOpenSettings)}
-                      className="flex min-h-11 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                    >
-                      <Settings size={15} />
-                      <span className="truncate">{activeProvider.label}</span>
-                    </button>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2">
-                    <button
-                      type="button"
-                      aria-label="Open Codex chat"
-                      onClick={() => runMobileCommand(onOpenChat)}
-                      className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                    >
-                      <MessageSquare size={15} />
-                      Chat
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="Open studio activity"
-                      onClick={() => runMobileCommand(onToggleDebug)}
-                      className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                    >
-                      <Activity size={15} />
-                      Activity
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="Open archived images"
-                      onClick={() => runMobileCommand(onOpenTrash)}
-                      className="relative flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                    >
-                      <Trash2 size={15} />
-                      Archive
-                      {trashCount > 0 && (
-                        <span className="ml-auto rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] text-red-200">
-                          {trashCount}
-                        </span>
-                      )}
-                    </button>
-                    <button
-                      type="button"
-                      aria-label="Open help and setup"
-                      onClick={() => runMobileCommand(onOpenOnboarding)}
-                      className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
-                    >
-                      <CircleHelp size={15} />
-                      Help
-                    </button>
-                  </div>
+              <GsapDropdown
+                id="mobile-command-menu"
+                open={isMobileCommandOpen}
+                onOpenChange={setIsMobileCommandOpen}
+                triggerRef={mobileCommandButtonRef}
+                placement="bottom-right"
+                className="fixed left-2 right-2 top-12 z-[60] p-2"
+              >
+                <div className="mb-2 grid grid-cols-2 gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2">
+                  <button
+                    type="button"
+                    aria-label={`Open runtime status: ${runtimeStatus.label}`}
+                    data-dropdown-item
+                    onClick={() => runMobileCommand(onOpenDashboard)}
+                    className={`flex min-h-11 items-center gap-2 rounded-xl border px-3 text-left text-[10px] font-black uppercase tracking-widest ${runtimeToneClass}`}
+                  >
+                    <Server size={15} />
+                    <span className="truncate">{runtimeStatus.label}</span>
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Open Studio Settings"
+                    data-dropdown-item
+                    onClick={() => runMobileCommand(onOpenSettings)}
+                    className="flex min-h-11 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                  >
+                    <Settings size={15} />
+                    <span className="truncate">{activeProvider.label}</span>
+                  </button>
                 </div>
-              )}
+                <div className="grid grid-cols-2 gap-2">
+                  <button
+                    type="button"
+                    aria-label="Open Codex chat"
+                    data-dropdown-item
+                    onClick={() => runMobileCommand(onOpenChat)}
+                    className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                  >
+                    <MessageSquare size={15} />
+                    Chat
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Open studio activity"
+                    data-dropdown-item
+                    onClick={() => runMobileCommand(onToggleDebug)}
+                    className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                  >
+                    <Activity size={15} />
+                    Activity
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Open archived images"
+                    data-dropdown-item
+                    onClick={() => runMobileCommand(onOpenTrash)}
+                    className="relative flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                  >
+                    <Trash2 size={15} />
+                    Archive
+                    {trashCount > 0 && (
+                      <span className="ml-auto rounded-full bg-red-500/20 px-1.5 py-0.5 text-[9px] text-red-200">
+                        {trashCount}
+                      </span>
+                    )}
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="Open help and setup"
+                    data-dropdown-item
+                    onClick={() => runMobileCommand(onOpenOnboarding)}
+                    className="flex min-h-12 items-center gap-2 rounded-xl bg-white/5 px-3 text-left text-[10px] font-black uppercase tracking-widest text-zinc-300"
+                  >
+                    <CircleHelp size={15} />
+                    Help
+                  </button>
+                </div>
+              </GsapDropdown>
             </div>
           </div>
         </div>

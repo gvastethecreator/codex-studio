@@ -12,19 +12,63 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Composition thumbnail grid for shot-language exploration and suspense-focused camera grammar
-  subject_treatment: Loose value thumbnails with framing guides and camera-angle markers
-  color_and_tone: Predominantly grayscale with optional restrained warm/cool key differentiation
-  lighting_and_shadow: Per-frame key direction studies using simple value grouping
-  texture_and_material: Marker/pencil roughness retained for planning immediacy
-  camera_and_composition: Multi-panel grid enabling rapid comparison of lens/angle/depth setups
-  atmosphere_and_mood: Analytical, cinematic, pre-production momentum
-  rendering_and_quality: Previsualization-grade roughs prioritizing sequence rhythm over polish
-  key_features: Shot-size variety, perspective alternation, compositional cadence mapping
+  aesthetic: >-
+    Composition small-read composition study Grid acts as a transferable illustration router: start
+    from Composition small-read composition study grid for shot-language exploration and
+    suspense-focused camera grammar, Shot-size variety, perspective alternation, compositional
+    cadence mapping and production concept-art system built from iteration discipline, silhouette
+    testing, material exploration, design readability, and pitch-ready visual decisions, then apply
+    the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Loose value thumbnails with framing guides and camera-angle
+    markers; preserve the requested subject while routing it through design exploration, asset
+    logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability
+    constraints, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Predominantly grayscale with optional restrained warm/cool key differentiation;
+    use color as concept decision-making: mood scripts, material swatches, faction accents,
+    environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value
+    grouping, accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Per-frame key direction studies using simple value grouping; shape light
+    for ideation clarity through value block-in, keyframe contrast, material test highlights,
+    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Marker/pencil roughness retained for planning immediacy; surface detail should reveal
+    brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume
+    fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent
+    and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Multi-panel grid enabling rapid comparison of lens/angle/depth
+    setups; compose through production hierarchy, variants, orthographic logic, isometric staging,
+    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
+    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Analytical, cinematic, pre-production momentum, mood carried by Composition
+    small-read composition study Grid craft, material pressure, and visual restraint; derive mood
+    from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
+    cinematic intent, or production-room clarity, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Previsualization-grade roughs prioritizing sequence rhythm over polish; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Composition small-read composition study grid for shot-language exploration and suspense-focused
+    camera grammar; Shot-size variety, perspective alternation, compositional cadence mapping;
+    Predominantly grayscale with optional restrained warm/cool key differentiation; Marker/pencil
+    roughness retained for planning immediacy; Multi-panel grid enabling rapid comparison of
+    lens/angle/depth setups
   creative_brief: >-
-    Apply composition-thumbnail grid logic to any input: camera/value alternatives, crop experiments, focal
-    hierarchy tests, lens-like framing, and miniature layout variants. It should generate composition
-    diversity without requiring storyboards, film scenes, characters, or sequential narrative panels.
+    Apply Composition small-read composition study Grid as an illustration preset over prompt X:
+    preserve the user's requested subject, then route mark-making, palette, surface, composition,
+    mood, and final craft through Composition small-read composition study grid for shot-language
+    exploration and suspense-focused camera grammar, Shot-size variety, perspective alternation,
+    compositional cadence mapping, Marker/pencil roughness retained for planning immediacy without
+    requiring the card image's original subject.
 avoidRules:
   - rendered
   - polished
@@ -36,10 +80,26 @@ avoidRules:
   - loud
   - busy
   - tight
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-097.webp
 attributes:
-  negativePrompt: rendered, polished, detailed, one frame, single composition, finished, color, loud, busy, tight
+  negativePrompt: >-
+    rendered, polished, detailed, one frame, single composition, finished, color, loud, busy, tight,
+    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
+    text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
+    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

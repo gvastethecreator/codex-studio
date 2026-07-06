@@ -12,26 +12,61 @@ tags:
   - abstract-and-experimental
   - digital-glitch-and-noise
 visualDna:
-  aesthetic: Flatbed scanner distortion
-  subject_treatment: Distorted motion
-  color_and_tone: High contrast, dark background
-  lighting_and_shadow: Moving light bar
-  texture_and_material: Dust on glass
-  camera_and_composition: Squashed
-  atmosphere_and_mood: Eerie, surreal
-  rendering_and_quality: Distorted, shallow
-  key_features: Black background
+  aesthetic: >-
+    Scanography becomes a transferable digital signal artifact system: start from Flatbed scanner
+    distortion, Black background, and Squashed, then route prompt content through compression
+    errors, scan hardware, pixel logic, channel shifts, and broken media encoding without forcing
+    one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Distorted motion to corrupt, quantize, sort,
+    smear, scan, posterize, or channel-split forms without losing silhouette intent; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from High contrast, dark background; bind color to device behavior: phosphor
+    masks, CMYK dots, RGB offsets, tape bleed, or indexed palettes, with enough value control that
+    the subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Moving light bar drive the light response: make light feel emitted, scanned, clipped,
+    banded, or sampled rather than normally photographed, avoiding generic glamour lighting unless
+    the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Dust on glass as the tactile or mark-making basis; texture should come from pixels,
+    scanlines, blocks, dither matrices, data drag, or print dots, scaled to figures, props, spaces,
+    or close material studies.
+  camera_and_composition: >-
+    Compose around Squashed as reusable spatial grammar: use raster alignment, artifact seams, frame
+    tears, grid pressure, and controlled signal breakdown, adapting cleanly to portraits, objects,
+    environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Eerie, surreal as the emotional register; derive mood from damaged playback, obsolete
+    interfaces, surveillance, latency, and media failure, without flattening strong, strange,
+    darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Distorted, shallow: finish with intentional artifacts, sharp enough structure, and no
+    random muddy AI noise, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Flatbed scanner distortion; Distorted motion; High contrast, dark background; Moving light bar;
+    Dust on glass; Squashed; Eerie, surreal; Distorted, shallow; Black background
   creative_brief: >-
-    Apply scanography as a sensing method over the input with moving light-bar sweep, flattened depth,
-    dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object, plant, body, or
-    artifact is present, press its forms into scanner glass; otherwise use scan light and compression as an
-    eerie abstraction without requiring a specimen layout.
+    Apply scanography as a sensing method over the input with moving light-bar sweep, flattened
+    depth, dust-on-glass texture, shallow black voids, and squashed motion distortion. If an object,
+    plant, body, or artifact is present, press its forms into scanner glass; otherwise use scan
+    light and compression as an eerie abstraction without requiring a specimen layout.
 avoidRules:
   - camera photo
+  - clean photo realism
+  - random AI smear
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-028.webp
 attributes:
-  negativePrompt: camera photo
+  negativePrompt: >-
+    camera photo, clean photo realism, random AI smear, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

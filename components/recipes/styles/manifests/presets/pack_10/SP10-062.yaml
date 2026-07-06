@@ -12,24 +12,62 @@ tags:
   - abstract-and-experimental
   - material-surface-textures
 visualDna:
-  aesthetic: Rainbow reflection
-  subject_treatment: Smooth
-  color_and_tone: Spectrum
-  lighting_and_shadow: Iridescent
-  texture_and_material: Smooth plastic
-  camera_and_composition: Color shift
-  atmosphere_and_mood: Cool, collectible
-  rendering_and_quality: Sticker, card
-  key_features: Rainbow gradient
+  aesthetic: >-
+    Holographic Foil becomes a transferable material surface transformation system: start from
+    Rainbow reflection, Rainbow gradient, and Color shift, then route prompt content through
+    physical surface grain, reflectance, damage, joinery, pores, seams, and tactile structure
+    without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Smooth to coat, wrap, weather, polish, crack,
+    scale, link, or embed forms while preserving the prompt composition; preserve anatomy, object
+    identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Spectrum; let color follow material depth, veins, patina, oxidation,
+    fiber direction, shimmer, or manufactured finish, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Iridescent drive the light response: show reflectance honestly through gloss, matte falloff,
+    iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Smooth plastic as the tactile or mark-making basis; surface behavior needs coherent
+    grain, chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Color shift as reusable spatial grammar: support macro texture studies and
+    full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting
+    cleanly to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Cool, collectible as the emotional register; derive mood from durability, luxury, decay,
+    tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker,
+    or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Sticker, card: finish with material clarity, controlled micro-detail, and no stock
+    texture pasted over forms, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Rainbow reflection; Smooth; Spectrum; Iridescent; Smooth plastic; Color shift; Cool,
+    collectible; Sticker, card; Rainbow gradient
   creative_brief: >-
-    Apply holographic-foil optics to the input: silver base shine, spectral angle shifts, micro-ridge
-    diffraction, and rainbow flashes should make forms change identity with light direction.
+    Route any subject through Holographic Foil as a transferable material-surface visual system:
+    preserve prompt intent while converting form, grain, reflectivity, wear, pores, seams, and
+    tactile relief through this preset. Apply holographic-foil optics to the input: silver base
+    shine, spectral angle shifts, micro-ridge diffraction, and rainbow flashes should make forms
+    change identity with light direction.
 avoidRules:
   - matte paper
+  - wrong material
+  - generic stock texture
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-062.webp
 attributes:
-  negativePrompt: matte paper
+  negativePrompt: >-
+    matte paper, wrong material, generic stock texture, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

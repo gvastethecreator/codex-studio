@@ -13,20 +13,66 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm,
-    Ghibli soot-sprite meets Ren & Stimpy as style anchor
-  subject_treatment: Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes
-  color_and_tone: Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights
-  lighting_and_shadow: Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow under belly folds
-  texture_and_material: Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches
-  camera_and_composition: Mismatched feature scale, uneven proportions, oversized mass, asymmetric appendage logic
-  atmosphere_and_mood: Affectionate disgust, heartwarming grotesquerie, lovable wrongness
-  rendering_and_quality: Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm
-  key_features: Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow
+    Ugly-Cute organism designs acts as a transferable cinematic-media router: start from Deformed
+    yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm,
+    Ghibli soot-sprite meets Ren & Stimpy as style anchor, Mismatched scale, lumpy silhouette,
+    awkward charm, candy-sick palette, forgiving glow and caricature and cartoon system built from
+    exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy,
+    and expressive deformation, then apply the media behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Chunky uneven outlines, bulbous swelling curves, random
+    spikes and bumps, happy accident shapes; preserve the requested subject while exaggerating
+    proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up
+    detail according to the preset, keeping the requested identity, silhouette, action, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur,
+    mucus-yellow highlights; use color through loud primaries, beige suburban anxiety, marker flats,
+    mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette
+    pressure, with deliberate value grouping, accent control, and process-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow
+    under belly folds; shape light minimally through flat cartoon value, poster contrast, marker
+    fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and
+    shadow structure support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches; surface
+    detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle
+    grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Mismatched feature scale, uneven proportions, oversized mass,
+    asymmetric appendage logic; compose through readable gag timing, grotesque close-up, slouch
+    geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a
+    named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Affectionate disgust, heartwarming grotesquerie, lovable wrongness; derive mood
+    from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic
+    suburbia, or anti-polish personality, letting the media style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm;
+    finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact
+    character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised
+    surfaces where appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale,
+    so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor; Mismatched
+    scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow; Sickly-sweet candy
+    colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights; Bumpy surface,
+    lumpy wool texture, crusty dried-mud finish, scab-like patches; Mismatched feature scale, uneven
+    proportions, oversized mass, asymmetric appendage logic
   creative_brief: >-
-    Make any subject ugly-cute through lumpy asymmetry, mismatched scale, awkward silhouette, candy-sick
-    color, and forgiving soft glow. Avoid requiring monsters, eyes, teeth, hair, animals, or bodies. Charm
-    should come from deliberate wrongness made affectionate.
+    Apply Ugly-Cute organism designs as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Deformed yet adorable ugly-cute design, lumpy
+    asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy
+    as style anchor, Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette,
+    forgiving glow, Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches
+    without requiring the card image's original subject.
 avoidRules:
   - beautiful
   - handsome
@@ -35,10 +81,26 @@ avoidRules:
   - realistic anatomy
   - symmetrical
   - polished
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact character likeness
+  - readable gag text
+  - generic cute mascot
+  - smooth anime polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-086.webp
 attributes:
-  negativePrompt: beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished
+  negativePrompt: >-
+    beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished, official
+    card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text,
+    watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness,
+    readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

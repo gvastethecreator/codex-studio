@@ -13,32 +13,60 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Extreme body-horror anime transformed into clinical anatomical abstraction, crimson-black dread,
-    biological pattern obsession, and transgressive nightmare beauty
+    Visceral Guro Horror operates as a portable anime-lifestyle router: combine Visceral Guro Horror
+    identity cues through Anatomical pattern density; red black clinical dread; bone texture
+    rendering; biological precision abstraction; spiral contamination motifs; Visceral Guro Horror
+    anime style cues with broad anime style spectrum grammar with experimental line, material
+    specific finish, auteur adjacent motion, graphic abstraction, sensor vision, and genre flexible
+    art direction, so the preset supplies anime style behavior after prompt X rather than a required
+    scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Hyper-precise anatomical linework, fiber-like stippling, vein-network crosshatching, bone-like texture
-    rendering, and obsessive biological detail
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Fresh-blood crimson, viscera pink, bone-bleach white, bruise-spectrum purple-to-black, bile yellow-green,
-    iron-oxide rust, surgical steel blue
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Clinical operating-theater light, harsh single-source casting deep shadows into wounds, wet-glint
-    highlights on exposed tissue
-  texture_and_material: Wet striation, porous bone-like surfaces, coagulated red gloss, membrane translucency, and organic gleam
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
+  texture_and_material: >-
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Anatomy opens into impossible diagram-space, biological schematics overlay subjects, spiral distortion
-    consumes depth
-  atmosphere_and_mood: Horrifying, transgressive, darkly beautiful, mesmerizing disgust, anatomical nightmare
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Medical-textbook horror anime, anatomically precise abstraction, beautiful-disgusting rendering, and
-    nightmare-poetry visual
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Anatomical pattern density, red-black clinical dread, bone-texture rendering, biological-precision
-    abstraction, spiral contamination motifs
+    Anatomical pattern density; red black clinical dread; bone texture rendering; biological
+    precision abstraction; spiral contamination motifs; Visceral Guro Horror anime style cues
   creative_brief: >-
-    Use visceral horror anime as anatomical-abstraction grammar. Any prompt should become clinical,
-    high-contrast, pattern-dense, and dread-weighted through biological shapes and crimson-black pressure.
-    Bodies, wounds, monsters, and shock scenes are optional.
+    Use Visceral Guro Horror after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Anatomical pattern density, red black clinical dread, bone texture rendering, biological
+    precision abstraction, spiral contamination motifs, Visceral Guro Horror anime style cues, color
+    logic, lighting, material finish, composition rhythm, mood pressure, and quality controls
+    without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
+    composition.
 avoidRules:
   - cute
   - clean
@@ -51,10 +79,27 @@ avoidRules:
   - safe
   - comfortable
   - beautiful
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-107.webp
 attributes:
-  negativePrompt: cute, clean, gentle, soft, kawaii, moe, pleasant, wholesome, safe, comfortable, beautiful
+  negativePrompt: >-
+    cute, clean, gentle, soft, kawaii, moe, pleasant, wholesome, safe, comfortable, beautiful,
+    generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene
+    copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card
+    reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise
+    costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

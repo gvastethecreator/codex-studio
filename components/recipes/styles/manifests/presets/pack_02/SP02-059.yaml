@@ -12,33 +12,85 @@ tags:
   - cinematic-and-media
   - sensor-and-technical-imaging
 visualDna:
-  aesthetic: Heat map
+  aesthetic: >-
+    Thermal Camera acts as a transferable cinematic-media router: start from Heat map, Thermal
+    Camera sensor modality, false-color mapping, diagnostic density, device noise, and
+    non-visible-spectrum exposure, White-hot peaks, black-cold lows, ironbow gradient,
+    microbolometer noise, heat-edge bloom and sensor-imaging system built from non-visible spectrum
+    capture, diagnostic mapping, device artifacts, false color, and technical exposure constraints,
+    then apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Thermal Camera: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar without
-    locking to one plot beat.
-  color_and_tone: Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold
-  lighting_and_shadow: Emissive heat, self-illumination, temperature glow
-  texture_and_material: Digital, sensor noise, microbolometer grid
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Thermal Camera: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 4.
+    Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve the
+    requested subject while translating visible surfaces into internal structure, heat zones,
+    night-vision gain, phosphor glow, or diagnostic density maps, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Ironbow (Purple to Yellow), white-hot, cool-to-warm gradient, black-cold; use
+    color as sensor output: radiographic blues, thermal gradients, phosphor green, blackbody heat,
+    scan density, or device-limited monochrome, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Emissive heat, self-illumination, temperature glow; make illumination feel
+    device-derived through backlit density, infrared gain, emissive heat, phosphor bloom, noise
+    amplification, or translucent structure, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Digital, sensor noise, microbolometer grid; surface detail should reveal film sheet
+    grain, sensor noise, edge halos, interior silhouettes, heat speckle, phosphor streak, or
+    diagnostic plate texture, keeping artifact scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Camera language native to Thermal Camera: genre-aware framing, lens character, focal hierarchy, motion
-    cue, and vertical style-card composition.
-  atmosphere_and_mood: Tech, analytical, sensor-vision, invisible-energy
-  rendering_and_quality: FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity
-  key_features: White-hot peaks, black-cold lows, ironbow gradient, microbolometer noise, heat-edge bloom
+    Structure the image through Camera language native to Thermal Camera: genre-aware framing, lens
+    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    through scan-plane clarity, central diagnostic readability, density hierarchy, technical crop,
+    and device perspective without requiring medical subject matter, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tech, analytical, sensor-vision, invisible-energy, mood carried by Thermal Camera
+    media process, signal pressure, and visual restraint; derive mood from clinical exposure, hidden
+    structure, surveillance unease, spectral unreality, or technical discovery, letting the media
+    style alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with FLIR aesthetic, sensor-driven, heat-signature mapping, diagnostic clarity; finish as
+    credible sensor output with readable mapped structures, controlled noise, and no normal-color
+    photo fallback or fake UI labels, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Heat map, Thermal Camera sensor modality, false-color mapping, diagnostic density, device noise,
+    and non-visible-spectrum exposure; White-hot peaks, black-cold lows, ironbow gradient,
+    microbolometer noise, heat-edge bloom; Ironbow (Purple to Yellow), white-hot, cool-to-warm
+    gradient, black-cold; Digital, sensor noise, microbolometer grid; Camera language native to
+    Thermal Camera: genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and
+    style-led vertical composition
   creative_brief: >-
-    Make the prompt visible as temperature data: ironbow gradient, white-hot peaks, black-cold lows, emissive
-    heat bloom, sensor noise, and microbolometer grid texture. Avoid military, hunting, living-body, or
-    surveillance assumptions. The image should be a diagnostic heat map where warmth, not visible light,
-    defines form. Apply Thermal Camera as a portable cinematic/camera style over any input: preserve its lens
-    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
-    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Apply Thermal Camera as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Heat map, Thermal Camera sensor modality, false-color mapping,
+    diagnostic density, device noise, and non-visible-spectrum exposure, White-hot peaks, black-cold
+    lows, ironbow gradient, microbolometer noise, heat-edge bloom, Digital, sensor noise,
+    microbolometer grid without requiring the card image's original subject.
 avoidRules:
   - visible light
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - normal color photo
+  - fake UI labels
+  - medical-only subject
+  - decorative glow
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-059.webp
 attributes:
-  negativePrompt: visible light
+  negativePrompt: >-
+    visible light, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, normal
+    color photo, fake UI labels, medical-only subject, decorative glow
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

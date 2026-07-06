@@ -12,30 +12,84 @@ tags:
   - fashion-and-costume
   - contemporary-fashion
 visualDna:
-  aesthetic: Clean northern minimalism, soft architectural purity, wabi-sabi restraint
-  subject_treatment: Straight cuts, simple geometry, fluid column silhouette, knife-pleat precision
-  color_and_tone: Beige, White, Grey, Black, ecru, oatmeal, dove grey, bone-white, muted sand
-  lighting_and_shadow: Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow
-  texture_and_material: Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe
+  aesthetic: >-
+    Minimalist Chic operates as a portable fashion-costume router: combine Clean northern
+    minimalism, soft architectural purity, wabi-sabi restraint with contemporary fashion styling
+    with fit control, editorial polish, wearable silhouette, and modern wardrobe hierarchy, so the
+    preset supplies styling behavior rather than a fixed outfit card, required wearer, or literal
+    garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms tailor, drape, cinch, layer,
+    streamline, accessorize, polish, or simplify through Straight cuts, simple geometry, fluid
+    column silhouette, knife-pleat precision; identity stays readable as silhouette, fit, layering,
+    body-volume logic, edge behavior, and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through modern neutrals, controlled accent color, textile value separation,
+    skin-adjacent warmth, and editorial contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Soft natural light, north-facing window, overcast diffusion, gentle wrap shadow plus fashion
+    editorial light with fabric sheen, controlled shadow, polished skin or surface response, and
+    clean silhouette reads as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Linen slub, tropical wool, double-face cashmere, raw silk noil, matte crepe plus woven
+    cloth, suiting, jersey, performance fabric, satin, leather, knit, seams, folds, closures, and
+    garment hardware; keep fabric scale, seams, fibers, shine, opacity, folds, hardware, elemental
+    edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal layering, absence of
-    hardware, invisible fastenings.
-  atmosphere_and_mood: Calm, sophisticated, clean, meditative stillness, curated emptiness, whispered elegance
-  rendering_and_quality: Pared-back designer minimalism, expensive calm, quiet-luxury subtlety
-  key_features: Neutral palette, tonal layering, absence of hardware, invisible fastenings
+    Compose with Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal
+    layering, absence of hardware, invisible fastenings plus lookbook clarity, runway silhouette
+    rhythm, full-form readability, crop discipline, and styling hierarchy as reusable fashion
+    framing grammar, allowing portraits, objects, creatures, environments, action, and abstract
+    prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through confidence, restraint, luxury, ease, polish, modern taste, and professional
+    or event-specific presence; the tone should feel specific to Minimalist Chic while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with high-end styling clarity, crisp garment edges, believable fit, controlled
+    retouching, and no catalog blandness; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Clean northern minimalism, soft architectural purity, wabi-sabi restraint; Straight cuts, simple
+    geometry, fluid column silhouette, knife-pleat precision; Linen slub, tropical wool, double-face
+    cashmere, raw silk noil, matte crepe; Soft natural light, north-facing window, overcast
+    diffusion, gentle wrap shadow; Compose for Minimalist Chic using its key spatial cues: Neutral
+    palette, tonal layering, absence of hardware, invisible fastenings
   creative_brief: >-
-    Apply quiet-luxury subtraction to the input: clean geometry, tonal layering, invisible closures, premium
-    matte fibers and a palette held near bone, oatmeal and charcoal. The result should feel edited down to the
-    one seam that matters, without implying showroom still life, closet editorial, zen room or human figure
-    staging.
+    Use Minimalist Chic after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Clean northern
+    minimalism, soft architectural purity, wabi-sabi restraint, Straight cuts, simple geometry,
+    fluid column silhouette, knife-pleat precision, Linen slub, tropical wool, double-face cashmere,
+    raw silk noil, matte crepe, Soft natural light, north-facing window, overcast diffusion, gentle
+    wrap shadow, Compose for Minimalist Chic using its key spatial cues: Neutral palette, tonal
+    layering, absence of hardware, invisible fastenings plus tailoring lines, garment fit, hem
+    placement, accessory restraint, layered proportion, and intentional styling choices, palette
+    behavior, light response, material treatment, silhouette grammar, and finish discipline without
+    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - pattern
   - logo
   - bright colors
+  - generic catalog outfit
+  - brand logo styling
+  - bad garment fit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-003.webp
 attributes:
-  negativePrompt: pattern, logo, bright colors
+  negativePrompt: >-
+    pattern, logo, bright colors, generic catalog outfit, brand logo styling, bad garment fit, fixed
+    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
+    watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

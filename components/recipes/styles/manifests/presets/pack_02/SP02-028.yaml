@@ -12,25 +12,82 @@ tags:
   - cinematic-and-media
   - tv-and-broadcast
 visualDna:
-  aesthetic: Alternative video
-  subject_treatment: Scribbles
-  color_and_tone: Desaturated + Neon, bleach bypass, acid green, safety orange
-  lighting_and_shadow: Strobe, flicker, flash-frame, concert par-can
-  texture_and_material: Distressed film, scratched negative, hand-processed
-  camera_and_composition: Morphing, image warp, video feedback, liquid dissolve
-  atmosphere_and_mood: Rebellious, cool, anti-establishment, mosh-pit energy
-  rendering_and_quality: Edgy, fast, rapid-fire montage, music-video relentlessness
-  key_features: Fast-cut feel, scribble overlays, feedback warp
+  aesthetic: >-
+    MTV 90s Grunge Broadcast acts as a transferable cinematic-media router: start from Alternative
+    video, 1990s MTV grunge broadcast with distressed film, jump cuts, video feedback, scribble
+    graphics, and anti-polish music-video aggression, Fast-cut feel, scribble overlays, feedback
+    warp and broadcast-media system built from signal texture, studio or field capture, graphic
+    package hierarchy, interlacing, compression, and live-transmission rhythm, then apply the media
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Scribbles, fragmented music-video treatment, jittered
+    contours, scribble overlays, and rebellious cut rhythm without forcing a band performance;
+    preserve the requested subject while treating it as a broadcast capture, package segment, demo
+    frame, replay, surveillance feed, music-video signal, or live information object, keeping the
+    requested identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Desaturated + Neon, bleach bypass, acid green, safety orange; use color through
+    signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD primaries, radar
+    overlays, or cheap late-night product gloss, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Strobe, flicker, flash-frame, concert par-can; shape light through even
+    studio key, practical video exposure, screen glow, floodlight, surveillance flatness,
+    confessional softness, or signal-break flicker, so exposure and shadow structure support the
+    media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Distressed film, scratched negative, hand-processed; surface detail should show video
+    sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key edge, compression blocks,
+    or broadcast graphics as visual texture, keeping artifact scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Morphing, image warp, video feedback, liquid dissolve; compose
+    through safe-title zones, lower-third-like geometry, split screens, scorebug rhythm, crawl
+    lanes, multicam framing, or video-package layout without readable text dependency, with frame
+    rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Rebellious, cool, anti-establishment, mosh-pit energy; derive mood from live
+    urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching,
+    stadium tension, or music-video rebellion, letting the media style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Edgy, fast, rapid-fire montage, music-video relentlessness; finish as coherent
+    broadcast signal with clean graphic hierarchy, intentional compression, and no anchor, desk,
+    logo, UI screenshot, or readable caption requirement, clean denoised surfaces where appropriate,
+    and enough process evidence to make the style recognizable.
+  key_features: >-
+    Alternative video, 1990s MTV grunge broadcast with distressed film, jump cuts, video feedback,
+    scribble graphics, and anti-polish music-video aggression; Fast-cut feel, scribble overlays,
+    feedback warp; Desaturated + Neon, bleach bypass, acid green, safety orange; Distressed film,
+    scratched negative, hand-processed; Morphing, image warp, video feedback, liquid dissolve
   creative_brief: >-
-    MTV 90s grunge broadcast attacks any subject with scratched negative, bleach bypass, acid green/orange
-    accents, strobe flash, feedback warp, scribble marks, and rapid-fire montage energy. Keep alternative
-    video rebellion without requiring bands, crowd, logos, graffiti text, or mosh-pit content.
+    Apply MTV 90s Grunge Broadcast as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Alternative video, 1990s MTV grunge broadcast
+    with distressed film, jump cuts, video feedback, scribble graphics, and anti-polish music-video
+    aggression, Fast-cut feel, scribble overlays, feedback warp, Distressed film, scratched
+    negative, hand-processed without requiring the card image's original subject.
 avoidRules:
   - clean
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - anchor requirement
+  - desk requirement
+  - readable captions
+  - logo package
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-028.webp
 attributes:
-  negativePrompt: clean
+  negativePrompt: >-
+    clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, anchor
+    requirement, desk requirement, readable captions, logo package
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -12,25 +12,59 @@ tags:
   - abstract-and-experimental
   - textile-and-ornamental-patterns
 visualDna:
-  aesthetic: Interlocking loops
-  subject_treatment: Yarn strands
-  color_and_tone: Wool colors
-  lighting_and_shadow: Soft
-  texture_and_material: Fuzzy wool
-  camera_and_composition: Stitch pattern
-  atmosphere_and_mood: Warm, soft
-  rendering_and_quality: Cozy, handmade
-  key_features: Loops
+  aesthetic: >-
+    Knitted Texture becomes a transferable textile and ornamental pattern system: start from
+    Interlocking loops and Stitch pattern, then route prompt content through motifs, repeats, weave
+    logic, decorative grids, stitched marks, and surface ornament without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Yarn strands to wrap, embroider, tile, dye,
+    weave, print, or camouflage forms while preserving the prompt subject underneath; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Wool colors; treat palette as dye, thread, ceramic pigment, woven
+    banding, motif hierarchy, or cultural ornament logic, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Soft drive the light response: use soft fabric light, glazed highlights, stitch shadows,
+    woven occlusion, or flat printed illumination, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Fuzzy wool as the tactile or mark-making basis; surface detail must follow yarn, fiber,
+    glaze, dye bleed, thread crossings, repeat seams, or tile breaks, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Stitch pattern as reusable spatial grammar: favor repeat rhythm, motif scale,
+    borders, allover fields, woven diagonals, and pattern-to-subject adaptation, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Warm, soft as the emotional register; derive mood from craft, ritual, fashion, domestic
+    texture, camouflage, ornament, or folk memory, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Cozy, handmade: finish with readable pattern scale, tactile detail, and no wallpaper
+    pasted over the subject, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Interlocking loops; Yarn strands; Wool colors; Soft; Fuzzy wool; Stitch pattern; Warm, soft;
+    Cozy, handmade; Loops
   creative_brief: >-
-    Apply knitted topology to the input: interlocking loops, ribbing, cable relief, wool halo, and tactile
-    stitch rhythm should soften or wrap forms without requiring sweaters or domestic props.
+    Apply knitted topology to the input: interlocking loops, ribbing, cable relief, wool halo, and
+    tactile stitch rhythm should soften or wrap forms without requiring sweaters or domestic props.
 avoidRules:
   - smooth
   - flat
+  - generic wallpaper overlay
+  - pattern pasted flat
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-057.webp
 attributes:
-  negativePrompt: smooth, flat
+  negativePrompt: >-
+    smooth, flat, generic wallpaper overlay, pattern pasted flat, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

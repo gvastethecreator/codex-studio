@@ -12,17 +12,60 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: High-fashion glamour photography, luxurious magazine-cover polish
-  subject_treatment: Idealized primary forms, soft cosmetic smoothing, selective tack-sharp accents
-  color_and_tone: Vibrant accent colors, saturated rich tones, high-end color grading
-  lighting_and_shadow: Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows
-  texture_and_material: Flawless smoothing, glossy highlights, shimmering cosmetic surfaces, luxurious fabric or material textures
-  camera_and_composition: Close-up beauty crop, flattering angles, undistorted perspective
-  atmosphere_and_mood: Beautiful, expensive, alluring, polished, high-end
-  rendering_and_quality: Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic
+  aesthetic: >-
+    Glamour Shot acts as a transferable photographic style router: begin from High-fashion glamour
+    photography, luxurious magazine-cover polish, studio subject hierarchy, controlled portrait
+    optics, believable retouching, and intentional backdrop behavior, and portrait and studio
+    photography system built from lens discipline, subject hierarchy, controlled retouching, and
+    believable surface detail, then apply the photographic behavior to prompt X instead of
+    recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Idealized primary forms, soft cosmetic smoothing, selective
+    tack-sharp accents; preserve prompt identity while using focal priority, flattering or
+    deliberately institutional distance, surface realism, and edge control without requiring a human
+    face, keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Vibrant accent colors, saturated rich tones, high-end color grading; grade neutrals,
+    skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast as
+    photographic capture decisions, with value separation and white balance choices that feel
+    captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Ring light or beauty dish illumination, even and flattering light, minimal harsh shadows;
+    make key, fill, rim, catchlight, background falloff, and shadow shape visibly drive the style,
+    preserving believable exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Flawless smoothing, glossy highlights, shimmering cosmetic surfaces, luxurious fabric or
+    material textures; retain pores, fabric, hair, props, paper, backdrop sweep, and small surface
+    imperfections at a believable photographic scale, avoiding both waxy smoothing and noisy texture
+    overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Close-up beauty crop, flattering angles, undistorted perspective; use portrait
+    lens compression, central authority, intimate framing distance, frontal ID geometry, or
+    editorial negative space without forcing one sitter, with lens distance, depth, timing, and
+    focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Beautiful, expensive, alluring, polished, high-end; derive mood from proximity,
+    pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
+    preset changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Magazine cover quality, heavily retouched, 8k resolution, hyper-realistic; finish as
+    real photography with clean optics, plausible retouching, readable focal hierarchy, and no
+    painterly or CGI substitution, high-resolution photographic detail, and disciplined denoise
+    without losing natural grain where the preset needs it.
   creative_brief: >-
-    Apply glamour-shot polish to any subject: beauty-dish softness, luxury texture, jewel-box highlights,
-    saturated editorial color, and manufactured perfection without requiring facial anatomy.
+    Apply Glamour Shot as a photographic preset over prompt X: preserve the user's requested
+    subject, then route High-fashion glamour photography, luxurious magazine-cover polish, Vibrant
+    accent colors, saturated rich tones, high-end color grading, Ring light or beauty dish
+    illumination, even and flattering light, minimal harsh shadows, Flawless smoothing, glossy
+    highlights, shimmering cosmetic surfaces, luxurious fabric or material textures, and Close-up
+    beauty crop, flattering angles, undistorted perspective through optics, exposure, palette,
+    surface response, timing, and finish without requiring the card image's original subject.
+  key_features: >-
+    High-fashion glamour photography, luxurious magazine-cover polish; studio subject hierarchy,
+    controlled portrait optics, believable retouching, and intentional backdrop behavior; Vibrant
+    accent colors, saturated rich tones, high-end color grading; Ring light or beauty dish
+    illumination, even and flattering light, minimal harsh shadows; Close-up beauty crop, flattering
+    angles, undistorted perspective
 avoidRules:
   - illustration
   - painting
@@ -39,12 +82,21 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-004.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
+    beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -12,28 +12,75 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: Open source path tracing
-  subject_treatment: Sharp
-  color_and_tone: Filmic log encoding, view-transform ready
-  lighting_and_shadow: Global Illumination, denoised
-  texture_and_material: Procedural nodes, shader graph
+  aesthetic: >-
+    Blender Cycles Open Path Tracer acts as a transferable CGI-style router: start from Open source
+    path tracing, Principled BSDF, GPU+CPU hybrid and renderer-pipeline system built from sampling
+    behavior, shader evaluation, light transport, denoise strategy, and engine-specific production
+    polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Sharp; preserve the prompt subject while translating it
+    through the renderer strengths: path tracing, biased sampling, real-time GI, product-studio
+    preview, or feature-film shading, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Filmic log encoding, view transform ready; make color come from color
+    management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically
+    plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Global Illumination, denoised; let engine-specific GI, ray tracing, Lumen,
+    caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value
+    structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Procedural nodes, shader graph; surface detail should reveal BSDF behavior, sampling
+    clarity, shader networks, displacement, adaptive refinement, and material truth rather than a
+    pasted texture, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Blender Cycles Open Path Tracer: three-quarter or orthographic framing, clean
-    silhouette read, material highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Creative, solid, accessible artistry
-  rendering_and_quality: Blender Guru creator-friendly, detailed, community-driven excellence
-  key_features: Principled BSDF, GPU+CPU hybrid
+    Structure the image through Lookdev camera for Blender Cycles Open Path Tracer: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition; compose for renderer readability through focal hierarchy, product or VFX
+    staging, material swatches, path-traced depth, and clean engine output, with scale, spacing,
+    edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Creative, solid, accessible artistry; derive mood from render fidelity, production
+    confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the
+    renderer alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Blender Guru creator friendly, detailed, community driven excellence; finish with
+    credible CGI output, controlled noise, accurate reflections, stable geometry, and no raw
+    viewport or cheap preview look, clean denoised surfaces where appropriate, and enough shader
+    evidence to make the CGI mode recognizable.
+  key_features: >-
+    Open source path tracing; Principled BSDF, GPU+CPU hybrid; Filmic log encoding, view transform
+    ready; Procedural nodes, shader graph; Lookdev camera for Blender Cycles Open Path Tracer: three
+    quarter or orthographic framing, clean silhouette read, material highlights, controlled depth,
+    and vertical card composition
   creative_brief: >-
-    Render any input through Blender Cycles lookdev: Principled BSDF material variety, Filmic log highlight
-    rolloff, path-traced bounce, open-source geometry cleanliness, and creator-friendly polish. Keep flexible
-    CG craft without requiring a benchmark object, product turntable, demo setup, or gallery environment.
+    Apply Blender Cycles Open Path Tracer as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Open source path tracing, Principled BSDF, GPU+CPU hybrid,
+    Procedural nodes, shader graph without requiring the card image's original subject.
 avoidRules:
   - eevee
   - realtime
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - raw viewport
+  - unlit preview
+  - wrong render engine
+  - cheap preview noise
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-005.webp
 attributes:
-  negativePrompt: eevee, realtime
+  negativePrompt: >-
+    eevee, realtime, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, raw viewport, unlit preview, wrong render engine, cheap
+    preview noise
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

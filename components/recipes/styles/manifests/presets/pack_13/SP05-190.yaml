@@ -13,28 +13,59 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Clean-reunion shojo grammar with emotional guardedness, polished minimalism, and tension carried by
-    near-silent interpersonal spacing
+    Ao Haru Ride - Clean Uniform Reunion Ache operates as a portable anime-lifestyle router: combine
+    Ao Haru Ride - Clean Uniform Reunion Ache identity cues through Clean styling; reunion glances;
+    cool silhouette contrast; airy negative space; heart stopping close ups; Clean Uniform Reunion
+    Ache with Ao Haru Ride lineage used only as style reference with shojo, magical girl, and
+    visionary classic anime grammar with symbolic romance, transformation sparkle, ornate contour,
+    emotional close reading, and theatrical abstraction; Ao Haru Ride may guide line economy,
+    acting, color, and period flavor but must not force canon cast, title scenes, logos, or copied
+    costumes, so the preset supplies anime style behavior after prompt X rather than a required
+    scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Crisp silhouette control, controlled negative-space blocking, understated eyelash and hairline rendering,
-    and pause-heavy pose language
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Cool powder blues, winter-white shirt values, subdued graphite neutrals, faint blush accents, and
-    low-saturation spring greens
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Cloud-soft ambient fill, window-like side-light, subtle reflective bounce, and low-bloom highlight
-    restraint
-  texture_and_material: Pressed cotton planes, matte neutral surfaces, smooth paper cues, and minimally glossy hair sheen
-  camera_and_composition: Emotional-distance compression through depth narrowing and over-shoulder perspective pressure
-  atmosphere_and_mood: Pensive, attractive, hesitant, tender
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
+  texture_and_material: >-
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
+  camera_and_composition: >-
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    Clean contemporary-shojo rendering with composure-forward facial readability and restrained romantic
-    polish
-  key_features: Clean styling, reunion glances, cool silhouette contrast, airy negative space, heart-stopping close-ups
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
+  key_features: >-
+    Clean styling; reunion glances; cool silhouette contrast; airy negative space; heart stopping
+    close ups; Clean Uniform Reunion Ache with Ao Haru Ride lineage used only as style reference
   creative_brief: >-
-    Hold the input in clean reunion ache: powder-blue restraint, winter-white planes, crisp negative space,
-    side-lit pauses, and guarded emotional distance should quiet any subject without requiring uniforms,
-    school corridors, reunited lovers, or closeup glances.
+    Use Ao Haru Ride - Clean Uniform Reunion Ache after prompt X as a transferable anime
+    character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while the preset supplies Clean styling, reunion glances, cool silhouette contrast, airy
+    negative space, heart stopping close ups, Clean Uniform Reunion Ache with Ao Haru Ride lineage
+    used only as style reference, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -48,12 +79,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-190.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

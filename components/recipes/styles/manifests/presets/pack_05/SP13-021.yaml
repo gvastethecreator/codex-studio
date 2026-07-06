@@ -13,18 +13,78 @@ tags:
   - anime
   - action
 visualDna:
-  aesthetic: High-impact anime action with compressed urgency and forward-rush pressure.
-  subject_treatment: Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands.
-  color_and_tone: Dark blue, energy red and contrast white.
-  lighting_and_shadow: Flash-burst lighting with dynamic rim and hard motion accents.
-  texture_and_material: Grit overlays, dust plumes, and stylized sparks without fixed urban surface.
-  camera_and_composition: Forced perspective that amplifies speed.
-  atmosphere_and_mood: Urgency, adrenaline, and imminent danger.
-  rendering_and_quality: Sharp combat keyframe with instant readability.
-  key_features: Motion lines, extreme rush angle, compressed background, impact flash.
+  aesthetic: >-
+    Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley
+    Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router: Action Burst
+    Alley Rush, High-impact anime action with compressed urgency and forward-rush pressure, Kinetic
+    lines, aggressive silhouettes, elastic anatomy, and directional force bands, Dark blue; combine
+    it with portable anime action-setpiece grammar with motion vectors, impact timing, forced
+    perspective, energy readability, and battle-keyframe clarity; named titles, studios, or lineage
+    words may guide style, but they must not require canon cast, title-scene replication,
+    screenshots, logos, or one fixed card concept.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Action
+    Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router:
+    Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush
+    pressure, Kinetic lines, aggressive silhouettes as portable contour, motion grammar, surface
+    language, and emotional pressure without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through high-contrast action color, electric accents, dark support values, flash
+    whites, danger reds, and clean separation for speed; let Action Burst Alley Rush, Action Burst
+    Alley Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush,
+    High-impact anime action with compressed urgency and forward-rush pressure, Kinetic lines,
+    aggressive silhouettes choose accent intensity, value contrast, emotional temperature, and
+    power-system separation while staying attached to prompt X.
+  lighting_and_shadow: >-
+    Use burst flashes, hard rim, energy cross-light, thunder glow, spark cuts, and motion-streak
+    highlights; make light clarify impact, silhouette, machinery or magic, material depth, and mood
+    from Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds
+    router: Action Burst Alley Rush, High-impact anime action with compressed urgency and
+    forward-rush pressure, Kinetic lines, aggressive silhouettes without replacing prompt X with a
+    stock anime frame.
+  texture_and_material: >-
+    Render dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised
+    effect texture; keep the tactile or effect cues in Action Burst Alley Rush, Action Burst Alley
+    Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact
+    anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive
+    silhouettes controlled, denoised, and coherent across bodies, objects, environments,
+    abstractions, and action.
+  camera_and_composition: >-
+    Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale,
+    upward momentum, and compressed depth lanes; convert Action Burst Alley Rush, Action Burst Alley
+    Rush acts as a transferable anime-battle/worlds router: Action Burst Alley Rush, High-impact
+    anime action with compressed urgency and forward-rush pressure, Kinetic lines, aggressive
+    silhouettes into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules
+    instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through urgency, adrenaline, vertigo, release, danger, heroic pressure, and imminent
+    collision; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic,
+    romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with sharp combat-keyframe finish with instant readability, stable action anatomy,
+    controlled denoise, and no static-pose drift; prioritize stable anatomy or object structure,
+    readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake
+    readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Action Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds
+    router: Action Burst Alley Rush, High-impact anime action with compressed urgency and
+    forward-rush pressure, Kinetic lines, aggressive silhouettes; motion-ready silhouette,
+    directional force bands, impact-safe anatomy or object deformation, and readable effect
+    hierarchy; dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and
+    denoised effect texture; forced perspective, vertigo angles, vector discharge, monumental impact
+    scale, upward momentum, and compressed depth lanes; sharp combat-keyframe finish with instant
+    readability, stable action anatomy, controlled denoise, and no static-pose drift
   creative_brief: >-
-    Apply alley-rush energy as a transferable action treatment: any subject should feel accelerated,
-    compressed, and impact-ready without requiring a fixed hero, location, chase, or acrobatic sprint.
+    Apply Action Burst Alley Rush after prompt X as a transferable anime-battle/worlds layer: prompt
+    X supplies subject, action, setting, tone, and intensity, while this preset supplies Action
+    Burst Alley Rush, Action Burst Alley Rush acts as a transferable anime-battle/worlds router:
+    Action Burst Alley Rush, High-impact anime action with compressed urgency and forward-rush
+    pressure, Kinetic lines, aggressive silhouettes, elastic anatomy, and directional force bands,
+    Dark blue, portable anime action-setpiece grammar with motion vectors, impact timing, forced
+    perspective, energy readability, and battle-keyframe clarity, finish discipline, and negative
+    controls without forcing canon cast, title scene, screenshot, card pose, default monster,
+    default combat prop, or prompt-literal card.
 avoidRules:
   - photoreal
   - static-pose
@@ -32,10 +92,24 @@ avoidRules:
   - watermark
   - text
   - logo
+  - low-detail blur
+  - photoreal stunt photo
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - signature
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-021.webp
 attributes:
-  negativePrompt: photoreal, static-pose, low-detail, watermark, text, logo
+  negativePrompt: >-
+    photoreal, static-pose, low-detail, watermark, text, logo, low-detail blur, photoreal stunt
+    photo, fixed canon character, title scene replication, required source-frame look, cosplay,
+    generic anime filter, prompt-required card, readable text, signature, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

@@ -12,28 +12,87 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Burlap-and-rag austerity, homespun endurance, rough-fiber humility
-  subject_treatment: Loose weave, gathered drape, rope-cinch logic, hood-cowl cues, patchwork falloff
-  color_and_tone: Brown, Grey, undyed-flax, mud, oatmeal, ash, weathered-hemp
-  lighting_and_shadow: Flat overcast light, dim warm practical, rough-fiber revealing side light
-  texture_and_material: Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge cotton, rope cord
+  aesthetic: >-
+    Burlap/Rags operates as a portable fashion-costume router: combine Burlap-and-rag austerity,
+    homespun endurance, rough-fiber humility with material-forward fashion transformation with
+    drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Loose weave, gathered
+    drape, rope-cinch logic, hood-cowl cues, patchwork falloff; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Flat overcast light, dim warm practical, rough-fiber revealing side light plus
+    material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or
+    volumetric separation as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Rough fiber, burlap jute, coarse hemp, hand-woven linen, homespun wool, frayed-edge
+    cotton, rope cord plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke,
+    water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Burlap/Rags using its key spatial cues: Fraying, rope-cinch logic, rough patches, raw edges,
-    homespun texture.
-  atmosphere_and_mood: Humble, rough, enduring, resilient, materially stripped-back
-  rendering_and_quality: Scratchy, raw, weathered-fiber authenticity, rough textile honesty
-  key_features: Fraying, rope-cinch logic, rough patches, raw edges, homespun texture
+    Compose with Compose for Burlap/Rags using its key spatial cues: Fraying, rope-cinch logic,
+    rough patches, raw edges, homespun texture plus drape rhythm, material coverage, silhouette
+    clarity, tactile close detail, fold direction, and transformation edge control as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Burlap/Rags while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Burlap-and-rag austerity, homespun endurance, rough-fiber humility; Loose weave, gathered drape,
+    rope-cinch logic, hood-cowl cues, patchwork falloff; Rough fiber, burlap jute, coarse hemp,
+    hand-woven linen, homespun wool, frayed-edge cotton, rope cord; Flat overcast light, dim warm
+    practical, rough-fiber revealing side light; Compose for Burlap/Rags using its key spatial cues:
+    Fraying, rope-cinch logic, rough patches, raw edges, homespun texture
   creative_brief: >-
-    Roughen the input with burlap-rag materiality: jute fiber, coarse hemp, homespun wool, rope-cinch logic,
-    frayed edges, raw patches and weathered oatmeal-brown tones. Keep humble endurance as fiber attitude only;
-    do not require peasants, harvest fields, cottage windows, poverty portrait or literal tunic body.
+    Use Burlap/Rags after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Burlap-and-rag
+    austerity, homespun endurance, rough-fiber humility, Loose weave, gathered drape, rope-cinch
+    logic, hood-cowl cues, patchwork falloff, Rough fiber, burlap jute, coarse hemp, hand-woven
+    linen, homespun wool, frayed-edge cotton, rope cord, Flat overcast light, dim warm practical,
+    rough-fiber revealing side light, Compose for Burlap/Rags using its key spatial cues: Fraying,
+    rope-cinch logic, rough patches, raw edges, homespun texture plus weave, pile, grain, shine,
+    translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface continuity,
+    palette behavior, light response, material treatment, silhouette grammar, and finish discipline
+    without requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - silk
   - clean
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-064.webp
 attributes:
-  negativePrompt: silk, clean
+  negativePrompt: >-
+    silk, clean, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

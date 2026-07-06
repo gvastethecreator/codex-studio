@@ -14,26 +14,76 @@ tags:
   - samurai-medieval
 visualDna:
   aesthetic: >-
-    Sacred vow iconography built around verticality, heraldic gravitas, and devotional stillness rather than
-    spectacle.
+    Sacred Heraldic Vow Style acts as a transferable anime-prestige router: sacred emblem order and
+    severe devotional anime composition, alongside a heraldic anime direction shaped by era-aware
+    line economy and genre tone; fuse it with prestige martial anime with restrained violence,
+    ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre,
+    line economy, cel or digital finish, and performance tone without locking prompt content to the
+    source title or sample image.
   subject_treatment: >-
-    Clean armored contour language, weighted drape folds, and emblem-first line emphasis to foreground lineage
-    coding.
-  color_and_tone: Brushed silver base, royal ultramarine fields, muted parchment neutrals, and amber liturgical highlights.
+    Preserve the prompt subject, action, and context while restyling forms through emblem-bearing
+    silhouettes and banner-like contour logic, alongside contours paced by sacred tension, readable
+    pose energy, and silhouette discipline; identity should remain readable through anime contour,
+    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
+    required canon character or title scene.
+  color_and_tone: >-
+    Map color through gold, crimson, slate, and quiet moonlit neutrals, alongside lacquer crimson,
+    slate, gold, and heraldic dark neutrals; anchor it in slate neutrals, lacquer crimson, moonlit
+    indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel
+    flats intentional, accents purposeful, and palette behavior attached to the requested content.
   lighting_and_shadow: >-
-    Filtered clerestory-style shafts with soft volumetric dust, preserving sanctified contrast on metallic and
-    fabric planes.
-  texture_and_material: Mirror-polished worn steel, carved stone relief, waxed fabric banners, and ceremonial leather straps.
-  camera_and_composition: Monumental upward composition with columnar framing that magnifies vow posture and insignia readability.
-  atmosphere_and_mood: Reverence, obligation, and intergenerational burden accepted in silence.
+    Use a sacred light logic using cel rim, glow behavior, and blocked shadow, alongside a heraldic
+    light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral
+    light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should
+    read as anime light design, rims should clarify form, and glow or effects should support the
+    prompt rather than replacing it.
+  texture_and_material: >-
+    Render cel paint and ink grain tuned to sacred material contrast, alongside cel paint and ink
+    grain tuned to heraldic material contrast; anchor surfaces in woven cloth, lacquer, cedar grain,
+    stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces,
+    grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people,
+    objects, environments, action, and abstractions.
+  camera_and_composition: >-
+    Frame around crest-like symmetry and severe diagonal rank, alongside sacred converted into
+    reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry,
+    pre-impact spacing, heraldic diagonals, and calm negative space; the style should support
+    portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable
+    anime staging grammar instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through vow pressure and restrained reverence, alongside vow, lineage, and public
+    symbolic weight; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled
+    pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic,
+    romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.
   rendering_and_quality: >-
-    Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic
-    gestures.
-  key_features: Oath-anchor posture, heraldic motif centrality, chapel-scale geometry, and ritual light crowns.
+    Finish with clean anime finishing that keeps sacred identity readable without noisy denoise,
+    alongside clean anime finishing that keeps heraldic identity readable without noisy denoise;
+    enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero
+    ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable
+    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
+    3D-render drift.
+  key_features: >-
+    sacred emblem order and severe devotional anime composition, alongside a heraldic anime
+    direction shaped by era-aware line economy and genre tone; emblem-bearing silhouettes and
+    banner-like contour logic, alongside contours paced by sacred tension, readable pose energy, and
+    silhouette discipline; cel paint and ink grain tuned to sacred material contrast, alongside cel
+    paint and ink grain tuned to heraldic material contrast; a sacred light logic using cel rim,
+    glow behavior, and blocked shadow, alongside a heraldic light logic using cel rim, glow
+    behavior, and blocked shadow; crest-like symmetry and severe diagonal rank, alongside sacred
+    converted into reusable framing rhythm and anime timing
   creative_brief: >-
-    Define a reusable sacred-heraldic-vow style for any subject: heraldry, sacred vertical framing, solemn
-    material response, and devotional stillness without imposing knights, weapons, chapels, armor, helmets,
-    banners, or medieval ceremony as literal content.
+    Apply Sacred Heraldic Vow Style after prompt X as a transferable anime-prestige layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while this preset supplies sacred emblem
+    order and severe devotional anime composition, alongside a heraldic anime direction shaped by
+    era-aware line economy and genre tone, alongside emblem-bearing silhouettes and banner-like
+    contour logic, alongside contours paced by sacred tension, readable pose energy, and silhouette
+    discipline; gold, crimson, slate, and quiet moonlit neutrals, alongside lacquer crimson, slate,
+    gold, and heraldic dark neutrals; a sacred light logic using cel rim, glow behavior, and blocked
+    shadow, alongside a heraldic light logic using cel rim, glow behavior, and blocked shadow; cel
+    paint and ink grain tuned to sacred material contrast, alongside cel paint and ink grain tuned
+    to heraldic material contrast and crest-like symmetry and severe diagonal rank, alongside sacred
+    converted into reusable framing rhythm and anime timing, finish discipline, and negative
+    controls without requiring a fixed canon cast, title scene, prop bundle, location, sport,
+    instrument, weapon, or card composition.
 avoidRules:
   - photoreal
   - sci-fi-ui
@@ -41,10 +91,24 @@ avoidRules:
   - watermark
   - text
   - logo
+  - generic samurai cosplay
+  - modern firearms
+  - sci-fi neon
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
+  - signature
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-028.webp
 attributes:
-  negativePrompt: photoreal, sci-fi-ui, casual-modern, watermark, text, logo
+  negativePrompt: >-
+    photoreal, sci-fi-ui, casual-modern, watermark, text, logo, generic samurai cosplay, modern
+    firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot,
+    generic anime filter, prompt-literal card, muddy cel noise, readable text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -13,26 +13,57 @@ tags:
   - slice-of-life-and-moe
 visualDna:
   aesthetic: >-
-    Bundled warmth-pocket anime where cold space makes comfort feel deliberate, tactile, and shared without
-    requiring outdoors
+    Bundled Warmth Pocket operates as a portable anime-lifestyle router: combine Bundled Warmth
+    Pocket identity cues through Bundled contours; cold warm contrast; warmth pockets; practical
+    textile cues; crisp air; and quiet friendship light with slice of life and moe grammar with soft
+    acting, comedy timing, healing pace, cozy object care, pastel emotional rhythm, and small world
+    specificity, so the preset supplies anime style behavior after prompt X rather than a required
+    scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Practical silhouette clarity, rounded bundled shapes, circular warmth-flow composition, and compact
-    comfort against wider cool fields
-  color_and_tone: Winter blue, pine green, orange heat glow, canvas neutral, star indigo, fleece cream, and muted graphite
-  lighting_and_shadow: Warm practical key, cold ambient fill, tiny lantern points, crisp dawn diffusion, and soft thermal spill
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    rounded shape language, micro-expression timing, soft body or object posture, simple
+    costume/surface detail, and charm through small repeated gestures; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
+  color_and_tone: >-
+    Map color through warm cream, tea amber, pastel pink, mint, sky blue, soft gray, seasonal
+    greens, and gentle accent saturation; keep cel values readable, accent roles intentional, skin
+    or material midtones stable, and palette behavior attached to the prompt instead of pasted anime
+    decoration.
+  lighting_and_shadow: >-
+    Use soft daylight, warm interior bounce, festival glow when requested, rain haze, gentle rim,
+    and flat comedy brightness; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Nylon weave, quilted padding, enamel gloss, worn metal, frosted particulate, insulated cloth, and soft
-    vapor edges
-  camera_and_composition: Circular compression concentrates shared warmth while cooler negative space breathes around the subject
-  atmosphere_and_mood: Cozy, crisp, friendly, restorative, tactile
-  rendering_and_quality: Cozy cold-weather anime rendering with practical fidelity, tactile comfort, and restorative social calm
+    Render matte painted surfaces, soft textiles, food warmth, paper goods, water reflections, craft
+    marks, and clean low noise distant plane simplicity; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
+  camera_and_composition: >-
+    Compose through low-stakes spacing, reaction beats, routine loops, cozy pockets, observational
+    crops, and comfort-scale depth without required school setting as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through comfort, absurd timing, vulnerable humor, restorative quiet, small triumph,
+    awkward sincerity, and cozy chaos in prompt controlled doses; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
+  rendering_and_quality: >-
+    Finish with soft high readability anime finish with stable proportions, gentle denoise, clean
+    pastel values, and no infantilized generic cuteness; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Bundled contours, cold-warm contrast, warmth pockets, practical textile cues, crisp air, and quiet
-    friendship light
+    Bundled contours; cold warm contrast; warmth pockets; practical textile cues; crisp air; and
+    quiet friendship light
   creative_brief: >-
-    Use Laid-Back Camp as style anchor for bundled warmth pockets. Apply cold-blue fields, practical orange
-    heat, padded texture, and calm shared comfort to any prompt. Campsites, stoves, tents, food, and flame
-    scenes are optional.
+    Use Bundled Warmth Pocket after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Bundled contours, cold warm contrast, warmth pockets, practical textile cues, crisp air, and
+    quiet friendship light, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -46,12 +77,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - generic moe wallpaper
+  - infantilized styling
+  - school only lock
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-216.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, generic moe wallpaper, infantilized styling, school only
+    lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast,
+    generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal cosplay, 3D
+    render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

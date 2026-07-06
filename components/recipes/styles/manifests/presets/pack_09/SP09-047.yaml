@@ -13,30 +13,61 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: Faux fur coat
-  subject_treatment: Uniform strands
-  color_and_tone: Bright Pink/Blue
-  lighting_and_shadow: Plastic sheen
-  texture_and_material: Soft but synthetic
-  camera_and_composition: 'Compose for Fur (Synthetic) using its key spatial cues: Uniform length.'
-  atmosphere_and_mood: Trendy, soft
-  rendering_and_quality: Fashion, fun
-  key_features: Uniform length
+  aesthetic: >-
+    Fur (Synthetic) makes hand-feel and pressure visible across the image: start from Faux fur coat,
+    Soft but synthetic, and Uniform length, then turn touch, softness, pile, fiber density, nap
+    direction, compression, and hand-feel into portable surface behavior rather than a literal
+    material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Uniform strands: preserve identity and pose while letting
+    forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Bright Pink/Blue as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Plastic sheen define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Fur (Synthetic) without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Soft but synthetic through fiber structure, tactile depth, soft occlusion, fuzz, pile
+    direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Uniform length as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Trendy, soft by using physical touch, comfort, irritation, warmth, dryness, and
+    surface softness; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Fashion, fun material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Faux fur coat; Uniform strands; Soft but synthetic; Plastic sheen; Uniform length
   creative_brief: >-
-    Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand
-    is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals
-    the artifice. The density should invite the hand while the perfect regularity declares its synthetic
-    nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Route any subject through Fur (Synthetic) as a transferable tactile-surface visual system while
+    preserving the prompt's subject, action, and setting. Render the uniform plushness of faux fur
+    in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of
+    softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The
+    density should invite the hand while the perfect regularity declares its synthetic nature.
+    Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - real fur
   - skin
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-047.webp
 attributes:
-  negativePrompt: real fur, skin
+  negativePrompt: real fur, skin, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

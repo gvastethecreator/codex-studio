@@ -13,34 +13,83 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: >-
-    Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean
-    retro-futurist depth
+    Chrome Horizon Voltage operates as a portable source-router layer: combine Synthwave voltage
+    system with neon geometry, analog-video nostalgia, chrome accents, and clean retro-futurist
+    depth with cultural style-system logic with recognizable design codes, mood grammar, and
+    transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene
+    or literal sample.
   subject_treatment: >-
-    Wireframe planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome
-    edge cuts
+    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
+    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through Wireframe
+    planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome
+    edge cuts; identity stays readable through construction grammar, proportion, edge logic, and
+    detail scale as this preset is applied.
   color_and_tone: >-
-    High-voltage magenta, cyan beams, deep violet shadow, near-black base, chrome white accents, hot sunset
-    bands
+    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
+    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
   lighting_and_shadow: >-
-    Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom, dark-field
-    contrast
-  texture_and_material: VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise
-  camera_and_composition: Wireframe recession, horizon compression, scanline drift, chrome reflection bend, geometric depth slicing
-  atmosphere_and_mood: Nocturnal, fast, polished, nostalgic, electric, aspirational
-  rendering_and_quality: Crisp, polished, retro-computational, cinematic, luminous, with controlled graphic depth
-  key_features: Neon gradients, wireframe lattice, chrome accents, analog patina, horizon-band depth, vector geometry
+    Use Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen bloom,
+    dark-field contrast plus mood-led lighting that reinforces the aesthetic code without replacing
+    the requested subject as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display noise
+    plus signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime,
+    gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
+    artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Wireframe recession, horizon compression, scanline drift, chrome reflection bend,
+    geometric depth slicing plus taste-coded spacing, silhouette discipline, motif placement,
+    designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing cards,
+    portraits, objects, scenes, and abstract prompts to inherit the style without one required
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
+    cuteness, or spectacle; the emotional tone should feel specific to Chrome Horizon Voltage while
+    still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
+    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Synthwave voltage system with neon geometry, analog-video nostalgia, chrome accents, and clean
+    retro-futurist depth; Wireframe planes, parallel grid recurrences, sharp vector silhouettes,
+    triangular solar motifs, chrome edge cuts; VHS scanlines, chrome sheen, vector grid glow, smooth
+    plastic black, analog display noise; Neon rim emission, gradient voltage glow, hard backlight
+    silhouettes, analog screen bloom, dark-field contrast; Wireframe recession, horizon compression,
+    scanline drift, chrome reflection bend, geometric depth slicing
   creative_brief: >-
-    Apply synthwave through voltage, geometry, and analog-display artifacts. The input should inherit neon rim
-    light, wireframe depth, chrome accents, and dark-field contrast without requiring cars, sunsets, roads,
-    grids, or 1980s props.
+    Use Chrome Horizon Voltage after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Synthwave voltage system with neon
+    geometry, analog-video nostalgia, chrome accents, and clean retro-futurist depth, Wireframe
+    planes, parallel grid recurrences, sharp vector silhouettes, triangular solar motifs, chrome
+    edge cuts, VHS scanlines, chrome sheen, vector grid glow, smooth plastic black, analog display
+    noise, Neon rim emission, gradient voltage glow, hard backlight silhouettes, analog screen
+    bloom, dark-field contrast, Wireframe recession, horizon compression, scanline drift, chrome
+    reflection bend, geometric depth slicing plus proportion codes, recurring surface motifs, era
+    cues, pattern pressure, cultural references, and designed contrast, palette behavior, light
+    response, material treatment, and finish discipline without requiring one specimen, prop bundle,
+    product still, or card composition.
 avoidRules:
   - nature
   - green
   - day
+  - generic aesthetic collage
+  - random trend mix
+  - style-board text
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-011.webp
 attributes:
-  negativePrompt: nature, green, day
+  negativePrompt: >-
+    nature, green, day, generic aesthetic collage, random trend mix, style-board text, fixed
+    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

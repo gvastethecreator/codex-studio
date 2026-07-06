@@ -13,34 +13,60 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Height-gap romcom shojo language with banter energy, embarrassment-forward timing, and heartfelt momentum
-    expressed through scale-contrast comedy
+    Lovely Complex - Height-Gap Comedy Romance operates as a portable anime-lifestyle router:
+    combine Lovely Complex - Height Gap Comedy Romance identity cues through Scale contrast
+    compositions; comic reaction faces; banter body language; bright youth color; loud to soft
+    timing; Height Gap Comedy Romance with Lovely Complex lineage used only as style reference with
+    shojo, magical girl, and visionary classic anime grammar with symbolic romance, transformation
+    sparkle, ornate contour, emotional close reading, and theatrical abstraction; Lovely Complex may
+    guide line economy, acting, color, and period flavor but must not force canon cast, title
+    scenes, logos, or copied costumes, so the preset supplies anime style behavior after prompt X
+    rather than a required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Elastic comedic acting lines, contrasting scale-language framing, lively conversational gesture contours,
-    and clean silhouette rhythm
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Bright youthful pastels with warmer peach accents, playful urban tones, and selective pop-color highlights
-    for comedic beats
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Daylight-forward romcom clarity, warm after-school ambience, low-complexity contrast, and highlight
-    accents timed to reaction moments
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Casual textile softness, simple matte surface cues, and low-noise backgrounds that keep timing and
-    expression in focus
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
   camera_and_composition: >-
-    Comedic composition exploiting scale contrast and interpersonal distance changes without sacrificing
-    emotional readability
-  atmosphere_and_mood: Funny, sweet, loud, sincere
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    High-readability romcom render with energetic acting clarity, sincere payoff framing, and balanced
-    comedy-romance polish
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
   key_features: >-
-    Scale-contrast compositions, comic reaction faces, banter body language, bright youth color, loud-to-soft
-    timing
+    Scale contrast compositions; comic reaction faces; banter body language; bright youth color;
+    loud to soft timing; Height Gap Comedy Romance with Lovely Complex lineage used only as style
+    reference
   creative_brief: >-
-    Scale the input through height-gap romcom timing: elastic acting lines, bright pastel pop beats,
-    exaggerated proportion contrast, and loud-to-tender rhythm can make any subject funny and sincere without
-    requiring a couple, school setting, argument pose, or literal height joke.
+    Use Lovely Complex - Height-Gap Comedy Romance after prompt X as a transferable anime
+    character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while the preset supplies Scale contrast compositions, comic reaction faces, banter body
+    language, bright youth color, loud to soft timing, Height Gap Comedy Romance with Lovely Complex
+    lineage used only as style reference, color logic, lighting, material finish, composition
+    rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed
+    prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -54,12 +80,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-186.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

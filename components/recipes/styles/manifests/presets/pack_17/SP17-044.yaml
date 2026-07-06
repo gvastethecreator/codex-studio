@@ -15,22 +15,39 @@ tags:
   - oracle-bestiary
 visualDna:
   aesthetic: >-
-    Moonlit parchment oracle-bestiary style with quiet symbolic forms, crescent geometry, clean ink, and pale
-    mystical accents.
+    Moonlit parchment oracle-bestiary style with quiet symbolic forms, crescent geometry, clean ink,
+    and pale mystical accents.
   subject_treatment: >-
     Transform any prompt subject into a calm oracle-plate figure with simplified contours, omen-like
     silhouette hierarchy, restrained lunar symbolism, and hand-inked parchment discipline.
-  color_and_tone: Pale parchment, black ink, moon white, muted violet, soft blue gray, and tiny silver-like highlights.
+  color_and_tone: >-
+    Pale parchment, black ink, moon white, muted violet, soft blue gray, and tiny silver-like
+    highlights.
   lighting_and_shadow: Simple moon-glow halo, open shadows, and smooth tonal fields.
-  texture_and_material: Clean parchment, soft ink wash, smooth tonal stains, simplified surface groups, and restrained decorative marks.
+  texture_and_material: >-
+    Clean parchment, soft ink wash, smooth tonal stains, simplified surface groups, and restrained
+    decorative marks.
   camera_and_composition: >-
-    Centered oracle-plate hierarchy, circular moon geometry, generous breathing room, and sparse symbolic
-    support marks that adapt to the user's subject without adding readable text.
-  atmosphere_and_mood: Quiet, magical, prophetic, eerie, and calm.
+    Centered oracle-plate hierarchy, circular moon geometry, generous breathing room, and sparse
+    symbolic support marks that adapt to the user's subject without adding readable text.
+  atmosphere_and_mood: >-
+    Carry the prompt through Quiet, magical, prophetic, eerie, and calm; fatalistic omen calm,
+    scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint;
+    the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Clean fantasy oracle illustration with low noise, broad shapes, and restrained decorative marks.
   creative_brief: >-
-    Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit
-    parchment ink, oracle-plate order, sparse symbolism, and quiet prophetic mood.
+    Apply this as a reusable style router over any prompt: preserve the user's subject while adding
+    moonlit parchment ink, oracle plate order, sparse symbolism, and quiet prophetic mood. Apply
+    after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this
+    preset supplies a style grammar of Moon Parchment Oracle Beasts; Moonlit parchment oracle
+    bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents;
+    Transform any prompt subject into a calm oracle plate figure with simplified contours, mood,
+    material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed
+    cast, fixed relic, fixed monster, readable text, or sample-card composition.
+  key_features: >-
+    Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms;
+    crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm
+    oracle plate figure with simplified contours
 avoidRules:
   - readable runes
   - astrology text
@@ -39,10 +56,20 @@ avoidRules:
   - explicit gore
   - watermark
   - text
+  - readable tarot labels
+  - fake manuscript text
+  - dirty photocopy overload
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-044.webp
 attributes:
-  negativePrompt: readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark, text
+  negativePrompt: >-
+    readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark,
+    text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card
+    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
+    dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

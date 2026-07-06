@@ -13,31 +13,49 @@ tags:
   - puzzle-chambers-and-adventure-setpieces
 visualDna:
   aesthetic: >-
-    Endgame Eclipse Throne Room within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game
-    Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art
-    direction. Keep the result transferable across subjects while preserving Endgame Eclipse Throne Room's
-    specific style identity.
+    A transferable game-art direction built from tokenized palette, material, encounter, and mood
+    cues: route prompt X through adventure setpiece logic, puzzle readability, environmental
+    affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a
+    required scene, mission, character, or card image.
   subject_treatment: >-
-    Treat any subject through Endgame Eclipse Throne Room's visual grammar: readable silhouette, role cues,
-    controlled detail density, and no dependency on one fixed scene or body pose.
+    Preserve the user's subject while translating silhouette, role, scale, equipment, route
+    pressure, and encounter readability with this grammar: express puzzle affordances, hub
+    readability, traversal choices, central devices, reward rhythm, and escape logic without
+    requiring a literal dungeon room.
   color_and_tone: >-
-    Use a controlled palette that supports Endgame Eclipse Throne Room: clear tonal hierarchy, intentional
-    contrast, and category-appropriate color accents without muddy blends.
+    Grade the image with black sun, red corona, and throne gold; warm tavern amber, sapphire blue,
+    clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy
+    strong enough for gameplay readability, thumbnail clarity, and subject recognition.
   lighting_and_shadow: >-
-    Shape light and shadow for Endgame Eclipse Throne Room: legible depth, purposeful highlights, readable
-    focal zones, and atmosphere that supports the style without hiding the subject.
+    Drive the lighting with eclipse backlight; portal glow, puzzle beams, lantern pools, stained
+    shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to
+    reveal routes, hazards, factions, or focal threats without hiding prompt content.
   texture_and_material: >-
-    Render surfaces with Endgame Eclipse Throne Room's material logic: tactile detail, coherent finish, and
-    texture choices that reinforce the style rather than generic decoration.
+    Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails,
+    puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles,
+    architecture, and terrain share the same production-world logic.
   camera_and_composition: >-
-    Compose with Endgame Eclipse Throne Room's staging logic: strong focal hierarchy, stable readable framing,
-    and spatial rhythm that can adapt to different subjects.
+    Use reusable game-composition grammar from adventure setpiece logic, puzzle readability,
+    environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast,
+    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
+    to portraits, objects, creatures, environments, and action scenes.
   atmosphere_and_mood: >-
-    Build Endgame Eclipse Throne Room's mood through environment, color, light, and texture. Keep it distinct
-    from neighboring presets and avoid generic pretty-card staging.
+    Keep the mood endgame ritual dread; curious, adventurous, readable, mysterious, playful when
+    relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or
+    violent when prompt X asks for it, but the preset should not force a new storyline.
   rendering_and_quality: >-
-    Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no
-    UI/text/watermark, strong thumbnail readability, and consistent production quality.
+    Finish as environment-adventure art with clear affordances, satisfying depth, and no generic
+    quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise
+    clarity, and no readable UI, text, logos, or stock key-art gloss.
+  key_features: >-
+    Endgame, Eclipse, Throne, Room; adventure setpiece logic, puzzle readability, environmental
+    affordances, hub rhythm, and landmark staging; black sun, red corona, and throne gold; eclipse
+    backlight; worn stone, brass gears, painted signs without readable text, carved rails, puzzle
+    blocks, tavern wood, and polished relics; final boss axis and eclipse halo; endgame ritual dread
+  creative_brief: >-
+    Apply Endgame Eclipse Throne Room as a reusable video-game art-direction router over prompt X:
+    preserve the user's subject and intent, then translate palette, lighting, material logic, route
+    readability, encounter mood, and production finish through this preset.
 avoidRules:
   - watermark
   - text
@@ -53,12 +71,20 @@ avoidRules:
   - menu-ui
   - visible-hud
   - readable-interface
+  - generic quest-poster layout
+  - unreadable puzzle clutter
+  - fixed scene
+  - generic game screenshot
+  - readable UI
+  - official card framing
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-080.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, comedic-style, lowres, concept-art, key-art, poster, character-sheet, asset-render,
-    promotional-art, menu-ui, visible-hud, readable-interface
+    watermark, text, logo, comedic-style, lowres, concept-art, key-art, poster, character-sheet,
+    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster
+    layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official
+    card framing
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault

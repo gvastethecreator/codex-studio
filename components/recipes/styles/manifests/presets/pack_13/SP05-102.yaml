@@ -13,32 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Hard-lit realist seinen anime with documentary-frame gravity, lived-in wear, adult-drama restraint, labor
-    marks, and zero glamour
+    Gritty Realist Seinen operates as a portable anime-lifestyle router: combine Gritty Realist
+    Seinen identity cues through Tired eye weight; age and labor detail; worn surfaces; practical
+    harsh light; grounded material realism; and unsentimental framing with broad anime style
+    spectrum grammar with experimental line, material specific finish, auteur adjacent motion,
+    graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies
+    anime style behavior after prompt X rather than a required scene, character, franchise image, or
+    card composition.
   subject_treatment: >-
-    Dense photo-study contouring, age-line fidelity, wrinkle and fabric attention, grounded anatomy, and no
-    idealized pose language
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Concrete gray, fluorescent green cast, aged-skin ochre, smoke-white haze, steel-blue shadows, and overcast
-    desaturation
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Harsh practical fluorescents, overcast window softness, unflattering overhead light, and sodium-vapor
-    night accents
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Pilled fabric, skin grain, stain realism, concrete aggregate, scuffed leather, and worn everyday material
-    tactility
-  camera_and_composition: Realistic proportions, grounded camera angles, heavy perspective restraint, and no heroic exaggeration
-  atmosphere_and_mood: Weary, grounded, melancholic realism, adult resignation, quiet desperation
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
+  camera_and_composition: >-
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Gritty documentary-anime still, hyper-realist rendering, adult-drama production polish, no gloss no
-    glamour
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Tired-eye weight, age-and-labor detail, worn surfaces, practical harsh light, grounded material realism,
-    and unsentimental framing
+    Tired eye weight; age and labor detail; worn surfaces; practical harsh light; grounded material
+    realism; and unsentimental framing
   creative_brief: >-
-    Use gritty realist seinen as hard-lit adult material grammar. Any prompt should gain worn surfaces, tired
-    detail, practical light, and unsentimental drama. Salarymen, offices, cigarettes, urban decay, and human
-    close-ups are optional.
+    Use Gritty Realist Seinen after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Tired
+    eye weight, age and labor detail, worn surfaces, practical harsh light, grounded material
+    realism, and unsentimental framing, color logic, lighting, material finish, composition rhythm,
+    mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop
+    bundle, title screenshot, or sample-card composition.
 avoidRules:
   - cute
   - kawaii
@@ -50,10 +77,27 @@ avoidRules:
   - moe
   - soft
   - round
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-102.webp
 attributes:
-  negativePrompt: cute, kawaii, bright, clean, cel shaded, simple, colorful, moe, soft, round
+  negativePrompt: >-
+    cute, kawaii, bright, clean, cel shaded, simple, colorful, moe, soft, round, generic AI anime
+    gloss, auteur copycat, fixed source scene, canon character copy, title scene copy, literal
+    sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, watermark,
+    readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo,
+    signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

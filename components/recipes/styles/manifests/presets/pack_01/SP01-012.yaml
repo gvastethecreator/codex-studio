@@ -12,19 +12,45 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: High saturation slide film
-  subject_treatment: High contrast
-  color_and_tone: Vivid Green, Blue, Red
-  lighting_and_shadow: Daylight
-  texture_and_material: Very fine grain
-  camera_and_composition: Crushed blacks
-  atmosphere_and_mood: Vibrant, punchy
-  rendering_and_quality: Fine-grain slide realism
-  key_features: Magenta bias
+  aesthetic: >-
+    Fujifilm Velvia 50 acts as a transferable photographic style router: begin from High saturation
+    slide film, Magenta bias, and analog photographic process system built from film stock response,
+    lens imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through High contrast; preserve the prompt scene while routing detail
+    through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Vivid Green, Blue, Red; let palette come from emulsion bias, slide-film saturation,
+    monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and
+    white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Daylight; shape highlights and shadows through film latitude, flash falloff, long exposure,
+    tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight
+    rolloff, and source motivation.
+  texture_and_material: >-
+    Render Very fine grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
+    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Crushed blacks; use camera format, crop, lens character, depth of field,
+    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Vibrant, punchy; derive mood from memory, imperfection, tactile chemistry,
+    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Fine-grain slide realism; finish as believable analog capture with coherent grain
+    scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: High saturation slide film; Magenta bias; Vivid Green, Blue, Red; Daylight; Crushed blacks
   creative_brief: >-
-    Apply Fujifilm Velvia 50 slide-film intensity to the input: jewel greens, saturated blues and reds, crisp
-    edges, compressed blacks, and vivid chrome contrast should energize any subject without requiring
-    landscape or nature.
+    Apply Fujifilm Velvia 50 as a photographic preset over prompt X: preserve the user's requested
+    subject, then route High saturation slide film, Vivid Green, Blue, Red, Daylight, Very fine
+    grain, and Crushed blacks through optics, exposure, palette, surface response, timing, and
+    finish without requiring the card image's original subject.
 avoidRules:
   - illustration
   - painting
@@ -41,12 +67,22 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-012.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
+    clarity, generic vintage filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -13,36 +13,78 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Atari-VCS-2600 extreme limitation, 40-pixel-wide sprite logic, single-color-per-scanline, stripe-color
-    technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only,
-    hardware-limitation-as-aesthetic, 128-bytes-of-RAM universe, two-object display pressure
+    Atari 2600 Extreme Limitation acts as a transferable art-medium router: start from Atari VCS
+    2600 extreme limitation, 40 pixel wide sprite logic, single color per scanline, stripe color
+    technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only, hardware
+    limitation as aesthetic, 128 bytes of RAM universe, two object display pressure, 40 pixel wide
+    forms, scanline color stripes, sprite flicker multiplexing, 4 colors per scanline, TIA hardware
+    artifacts, blocky rectangle everything, black support field constraint and hardware-constrained
+    game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or
+    handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead
+    of recreating a fixed demo image.
   subject_treatment: >-
-    40-fat-pixel-wide forms, single-scanline-height color bands, blocky-rectangle everything, missile-and-ball
-    hardware abstractions, playfield-block backgrounds
+    Transform any prompt subject through 40 fat pixel wide forms, single scanline height color
+    bands, blocky rectangle everything, missile and ball hardware abstractions, playfield block
+    support field; preserve the prompt subject while translating it into tile, sprite, vector,
+    glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    NTSC-128-color-palette, 4-colors-per-scanline, rainbow-stripe-technique, bright-primaries,
-    Atari-warmth-color-gen, black-background constraint, TIA-chip-color-generation
+    Build color with NTSC 128 color palette, 4 colors per scanline, rainbow stripe technique, bright
+    primaries, Atari warmth color gen, black support field constraint, TIA chip color generation;
+    use color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values,
+    dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate
+    value grouping, accent control, and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    No-lighting-whatsoever, sprite-color-as-background-separation, scanline-stripe-color-for-depth,
-    no-gradients-no-shading
+    Handle light through No lighting whatsoever, sprite color as support field separation, scanline
+    stripe color for depth, no gradients no shading; make light emerge from display technology,
+    pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam
+    brightness, so value structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    TIA-graphics-chip-texture, scanline-stripe-artifacts, sprite-flicker-at-object-limit,
-    phosphor-persistence-blur, NTSC-color-bleed, RF-modulator-static-noise
+    Render TIA graphics chip texture, scanline stripe artifacts, sprite flicker at object limit,
+    phosphor persistence blur, NTSC color bleed, RF modulator static noise; surface detail should
+    show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT
+    persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy
+    filler texture.
   camera_and_composition: >-
-    40-pixel form width, 160x192 playfield resolution, scanline-color-stripe proportions, object-flicker at
-    display limits, mirrored or repeated playfield logic
+    Structure the image through 40 pixel form width, 160x192 playfield resolution, scanline color
+    stripe proportions, object flicker at display limits, mirrored or repeated playfield logic;
+    compose through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe
+    coordinate space, UI geometry, or screen-proportion constraints, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Primitive, ingenious, constraint-creativity, first-generation-home-console wonder,
-    cartridge-dust-and-static, woodgrain-console-nostalgia
+    Keep the mood Primitive, ingenious, constraint creativity, first generation home console wonder,
+    cartridge dust and static, woodgrain console nostalgia; derive mood from hardware limitation,
+    arcade spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D
+    instability, letting the medium alter interpretation without demanding a specific story,
+    location, or character.
   rendering_and_quality: >-
-    Atari-2600-extreme-limitation aesthetic, 1977-hardware-constraint-beauty, minimal-pixel-poetry,
-    128-bytes-of-RAM art
+    Finish with Atari 2600 extreme limitation aesthetic, 1977 hardware constraint beauty, minimal
+    pixel poetry, 128 bytes of RAM art; finish with faithful era constraints, crisp readability at
+    small scale, and no modern high-resolution smoothing unless the preset asks for baked
+    pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to make the
+    medium recognizable.
   key_features: >-
-    40-pixel-wide forms, scanline-color-stripes, sprite-flicker multiplexing, 4-colors-per-scanline,
-    TIA-hardware artifacts, blocky-rectangle everything, black-background constraint
+    Atari VCS 2600 extreme limitation, 40 pixel wide sprite logic, single color per scanline, stripe
+    color technique for multicolor, Combat, Pitfall and Adventure as constraint anchors only,
+    hardware limitation as aesthetic, 128 bytes of RAM universe, two object display pressure; 40
+    pixel wide forms, scanline color stripes, sprite flicker multiplexing, 4 colors per scanline,
+    TIA hardware artifacts, blocky rectangle everything, black support field constraint; NTSC 128
+    color palette, 4 colors per scanline, rainbow stripe technique, bright primaries, Atari warmth
+    color gen, black support field constraint, TIA chip color generation; TIA graphics chip texture,
+    scanline stripe artifacts, sprite flicker at object limit, phosphor persistence blur, NTSC color
+    bleed, RF modulator static noise; 40 pixel form width, 160x192 playfield resolution, scanline
+    color stripe proportions, object flicker at display limits, mirrored or repeated playfield logic
   creative_brief: >-
-    Any prompt is reduced until forty fat pixels can carry it. Scanline stripes, flicker multiplexing and
-    blocky playfield logic make the image feel engineered under impossible memory pressure.
+    Apply Atari 2600 Extreme Limitation as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Atari VCS 2600 extreme limitation, 40 pixel wide sprite logic, single color per
+    scanline, stripe color technique for multicolor, Combat, Pitfall and Adventure as constraint
+    anchors only, hardware limitation as aesthetic, 128 bytes of RAM universe, two object display
+    pressure, 40 pixel wide forms, scanline color stripes, sprite flicker multiplexing, 4 colors per
+    scanline, TIA hardware artifacts, blocky rectangle everything, black support field constraint,
+    TIA graphics chip texture, scanline stripe artifacts, sprite flicker at object limit, phosphor
+    persistence blur, NTSC color bleed, RF modulator static noise without requiring the card image's
+    original subject.
 avoidRules:
   - detailed
   - smooth
@@ -54,10 +96,25 @@ avoidRules:
   - complex
   - anti-aliased
   - HD
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-094.webp
 attributes:
-  negativePrompt: detailed, smooth, high-res, modern, 3d, colorful, rich palette, complex, anti-aliased, HD
+  negativePrompt: >-
+    detailed, smooth, high-res, modern, 3d, colorful, rich palette, complex, anti-aliased, HD, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

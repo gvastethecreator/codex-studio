@@ -13,37 +13,61 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Adult Suspense Microgesture within 12. Anime Style Spectrum: a reusable Anime Character & Lifestyle visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Adult Suspense Microgesture's specific style identity.
+    Adult Suspense Microgesture operates as a portable anime-lifestyle router: combine Adult
+    Suspense Microgesture identity cues through Adult Suspense Microgesture anime style cues, style
+    specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt preserving silhouette discipline with broad anime style spectrum
+    grammar with experimental line, material specific finish, auteur adjacent motion, graphic
+    abstraction, sensor vision, and genre flexible art direction, so the preset supplies anime style
+    behavior after prompt X rather than a required scene, character, franchise image, or card
+    composition.
   subject_treatment: >-
-    Define Adult Suspense Microgesture through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Use a Adult Suspense Microgesture-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Use lighting that makes Adult Suspense Microgesture recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Use materials and textures that reinforce Adult Suspense Microgesture: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Use spatial behavior that fits Adult Suspense Microgesture: perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Adult Suspense Microgesture: specific, coherent, and distinct, with emotional
-    tone carried by visual systems rather than narrative captioning.
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Render Adult Suspense Microgesture with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Prioritize Adult Suspense Microgesture's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    Adult Suspense Microgesture anime style cues; style specific contour; material transformation;
+    motion grammar; abstraction pressure; symbolic surface logic
   creative_brief: >-
-    Create a style-card that translates Adult Suspense Microgesture into a portable visual system for 12.
-    Anime Style Spectrum. Preserve the preset identity through style mechanics, not a fixed scene, character,
-    prop, or story beat.
+    Use Adult Suspense Microgesture after prompt X as a transferable anime character/lifestyle
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while the preset
+    supplies Adult Suspense Microgesture anime style cues, style specific contour, material
+    transformation, motion grammar, abstraction pressure, symbolic surface logic, color logic,
+    lighting, material finish, composition rhythm, mood pressure, and quality controls without
+    requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
+    composition.
 avoidRules:
   - action spectacle
   - bright comedy palette
@@ -52,12 +76,27 @@ avoidRules:
   - neon cyberpunk glow
   - melodramatic speed lines
   - plastic 3d render
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-339.webp
 attributes:
   negativePrompt: >-
-    action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow,
-    melodramatic speed lines, plastic 3d render
+    action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk
+    glow, melodramatic speed lines, plastic 3d render, generic AI anime gloss, auteur copycat, fixed
+    source scene, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, watermark, readable text, fake UI,
+    photoreal cosplay, 3D render look, copied franchise costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

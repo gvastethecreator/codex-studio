@@ -14,37 +14,78 @@ tags:
   - mesoamerican-myth
 visualDna:
   aesthetic: >-
-    Jade Cenote Echo Reading within 9. Mythic Mesoamerican Suns: a reusable Mythic Noir Curated Vault visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Jade Cenote Echo Reading's specific style identity.
+    Jade Cenote Echo Reading acts as a transferable mythic-noir router: jade translated into dark
+    symbolic behavior, cenote translated into dark symbolic behavior plus echo translated into dark
+    symbolic behavior fused with Mesoamerican sun-cycle noir with obsidian discipline, jade
+    resonance, feathered ascent, solar oath, and echoing water memory; it carries symbol, omen,
+    ritual authority, and mature editorial restraint without locking prompt content to its sample
+    image.
   subject_treatment: >-
-    Define Jade Cenote Echo Reading through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Keep the user's prompt subject, action, and context intact while reshaping identity through jade
+    shaping silhouette rhythm, contour pressure, and symbolic edge control, cenote shaping
+    silhouette rhythm, contour pressure, and symbolic edge control plus echo shaping silhouette
+    rhythm, contour pressure, and symbolic edge control; forms should inherit silhouette pressure,
+    emblem logic, ritual posture, edge weight, and motif placement instead of a mandatory actor or
+    prop set.
   color_and_tone: >-
-    Use a Jade Cenote Echo Reading-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through jade green, black water, and limestone pale accents plus cenote teal,
+    limestone gray, obsidian black, and solar yellow together with obsidian black, jade green, solar
+    yellow, blood red, cenote teal, limestone gray, feather blue, and dry gold accents; values stay
+    separated, accents feel intentional, and the dark palette supports the requested content rather
+    than swallowing it.
   lighting_and_shadow: >-
-    Use lighting that makes Jade Cenote Echo Reading recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Use subtle jade glow and reflective depth, reflected water light and high vertical sun cuts plus
+    soft reflected glints and acoustic-looking pulses with eclipse rim, water-reflected sun,
+    carved-stone shadow, jade glow, and solar cuts that feel ritual but not decorative; shadows must
+    carry omen weight, rims should clarify form, and glow should behave as ritual evidence rather
+    than decorative haze.
   texture_and_material: >-
-    Use materials and textures that reinforce Jade Cenote Echo Reading: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render polished jade, mineral stains, and cool carved planes plus mineral water staining and wet
+    stone edges alongside obsidian sheen, jade, carved limestone, feather texture, scale gleam,
+    water mineral stain, ash, and cut pigment residue; surface scale, patina, residue, gloss, grain,
+    and carved or sealed edges must remain coherent across characters, objects, scenes, and
+    abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Jade Cenote Echo Reading: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame with repeated rings, delayed silhouettes, and memory-return spacing plus interpreted
+    marks, echo rings, and careful scanning order plus calendar-like cycles, stepped geometry,
+    continuity bands, solar axes, echo rings, and oath-weighted symmetry; the style should support
+    portraits, objects, architecture, creatures, symbols, and full scenes through reusable spatial
+    grammar instead of one fixed layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Jade Cenote Echo Reading: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through quiet diagnosis and charged uncertainty, jade pressure, consequence, and
+    symbolic tension plus cenote pressure, consequence, and symbolic tension and cyclical dread,
+    sacred continuity, oath pressure, solar violence, underworld hush, and lucid ceremonial
+    abstraction; the image can become severe, sensual, sacred, violent, quiet, or strange when
+    prompt X asks for it, while the preset supplies mythic consequence.
   rendering_and_quality: >-
-    Render Jade Cenote Echo Reading with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with jade recognition with denoised dark editorial polish and controlled material truth
+    plus cenote recognition with denoised dark editorial polish and controlled material truth and
+    precise mythic illustration with clean stone and mineral reads, denoised darks, and no tourist
+    artifact styling; prioritize clean denoise, readable dark values, strong silhouette hierarchy,
+    tactile material truth, and no watermark, fake text, logos, accidental UI, or muddy black crush.
   key_features: >-
-    Prioritize Jade Cenote Echo Reading's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    jade translated into dark symbolic behavior, cenote translated into dark symbolic behavior plus
+    echo translated into dark symbolic behavior; jade shaping silhouette rhythm, contour pressure,
+    and symbolic edge control, cenote shaping silhouette rhythm, contour pressure, and symbolic edge
+    control plus echo shaping silhouette rhythm, contour pressure, and symbolic edge control;
+    polished jade, mineral stains, and cool carved planes plus mineral water staining and wet stone
+    edges; subtle jade glow and reflective depth, reflected water light and high vertical sun cuts
+    plus soft reflected glints and acoustic-looking pulses; repeated rings, delayed silhouettes, and
+    memory-return spacing plus interpreted marks, echo rings, and careful scanning order
   creative_brief: >-
-    Create a style-card that translates Jade Cenote Echo Reading into a portable visual system for 9. Mythic
-    Mesoamerican Suns. Preserve the preset identity through style mechanics, not a fixed scene, character,
-    prop, or story beat.
+    Apply Jade Cenote Echo Reading after prompt X as a transferable mythic-noir layer: prompt X
+    supplies subject, action, setting, and intensity, while this preset supplies jade translated
+    into dark symbolic behavior, cenote translated into dark symbolic behavior plus echo translated
+    into dark symbolic behavior, jade shaping silhouette rhythm, contour pressure, and symbolic edge
+    control, cenote shaping silhouette rhythm, contour pressure, and symbolic edge control plus echo
+    shaping silhouette rhythm, contour pressure, and symbolic edge control, jade green, black water,
+    and limestone pale accents plus cenote teal, limestone gray, obsidian black, and solar yellow,
+    subtle jade glow and reflective depth, reflected water light and high vertical sun cuts plus
+    soft reflected glints and acoustic-looking pulses, polished jade, mineral stains, and cool
+    carved planes plus mineral water staining and wet stone edges plus repeated rings, delayed
+    silhouettes, and memory-return spacing plus interpreted marks, echo rings, and careful scanning
+    order, finish discipline, and negative controls without requiring a fixed deity, ritual, prop
+    bundle, location, or sample composition.
 avoidRules:
   - photoreal
   - goofy-comic
@@ -53,10 +94,24 @@ avoidRules:
   - watermark
   - text
   - logo
+  - tourist artifact
+  - generic ritual architecture adventure
+  - oversaturated jungle fantasy
+  - fixed deity portrait
+  - required ritual scene
+  - literal sample composition
+  - generic dark fantasy
+  - muddy black crush
+  - random occult symbols
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-031.webp
 attributes:
-  negativePrompt: photoreal, goofy-comic, neon-ui, modern-diving-gear, watermark, text, logo
+  negativePrompt: >-
+    photoreal, goofy-comic, neon-ui, modern-diving-gear, watermark, text, logo, tourist artifact,
+    generic ritual architecture adventure, oversaturated jungle fantasy, fixed deity portrait,
+    required ritual scene, literal sample composition, generic dark fantasy, muddy black crush,
+    random occult symbols, readable text
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

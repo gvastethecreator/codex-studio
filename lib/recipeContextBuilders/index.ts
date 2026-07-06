@@ -3,6 +3,7 @@ import { characterLabRecipeContextBuilder } from './characterLab';
 import { characterRecipeContextBuilder } from './character';
 import { cinematicRecipeContextBuilder } from './cinematic';
 import { remasterRecipeContextBuilder } from './remaster';
+import { spriteAtlasRecipeContextBuilder } from './spriteAtlas';
 import { spritesheetRecipeContextBuilder } from './spritesheet';
 import { stylesRecipeContextBuilder } from './styles';
 import { timelineRecipeContextBuilder } from './timeline';
@@ -14,6 +15,7 @@ export const RECIPE_CONTEXT_BUILDERS = {
   character: characterRecipeContextBuilder,
   cinematic: cinematicRecipeContextBuilder,
   remaster: remasterRecipeContextBuilder,
+  'sprite-atlas': spriteAtlasRecipeContextBuilder,
   spritesheet: spritesheetRecipeContextBuilder,
   styles: stylesRecipeContextBuilder,
   timeline: timelineRecipeContextBuilder,

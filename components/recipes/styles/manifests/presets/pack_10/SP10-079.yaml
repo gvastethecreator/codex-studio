@@ -12,26 +12,61 @@ tags:
   - abstract-and-experimental
   - print-and-light-finishes
 visualDna:
-  aesthetic: Metallic imprint on paper
-  subject_treatment: Debossed
-  color_and_tone: Gold, Silver, Rose Gold
-  lighting_and_shadow: Reflective
-  texture_and_material: Matte paper contrast
-  camera_and_composition: 'Compose for Foil Stamping using its key spatial cues: Metallic shine.'
-  atmosphere_and_mood: Expensive, elegant
-  rendering_and_quality: Premium, invite
-  key_features: Metallic shine
+  aesthetic: >-
+    Foil Stamping becomes a transferable print finish and luminous line system: start from Metallic
+    imprint on paper and Metallic shine, then route prompt content through embossing, debossing,
+    foil reflectance, neon tubing, ink pressure, and premium substrate logic without forcing one
+    card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Debossed to outline, stamp, emboss, deboss,
+    gild, illuminate, or impress prompt subjects without replacing them with signage; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Gold, Silver, Rose Gold; treat color as ink, paper, metallic foil,
+    dark-field glow, warm tube light, or substrate contrast, with enough value control that the
+    subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Reflective drive the light response: make highlights come from reflective foil, depressed
+    paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour lighting unless
+    the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Matte paper contrast as the tactile or mark-making basis; surface detail should show
+    paper tooth, pressed edges, metallic shear, tube thickness, or ink bite, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Metallic shine as reusable spatial grammar: favor iconic line hierarchy, negative
+    space, premium print registration, and tactile depth cues, adapting cleanly to portraits,
+    objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Expensive, elegant as the emotional register; derive mood from craft, nightlife, luxury,
+    signage, invitation design, and tactile production, without flattening strong, strange, darker,
+    or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Premium, invite: finish with precise physical process, controlled glow or impression
+    depth, and no fake text layout, preserving prompt X as the base content and the preset as the
+    style router.
+  key_features: >-
+    Metallic imprint on paper; Debossed; Gold, Silver, Rose Gold; Reflective; Matte paper contrast;
+    Metallic shine; Expensive, elegant; Premium, invite; Metallic shine
   creative_brief: >-
-    Apply foil-stamping luxury to the input: metallic pressed highlights, debossed edges, heat-transfer shine,
-    and angle-dependent gold or silver reflections should refine forms without requiring packaging or
-    typography.
+    Apply foil-stamping luxury to the input: metallic pressed highlights, debossed edges,
+    heat-transfer shine, and angle-dependent gold or silver reflections should refine forms without
+    requiring packaging or typography.
 avoidRules:
   - print
   - ink
+  - fake readable text
+  - flat sticker look
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-079.webp
 attributes:
-  negativePrompt: print, ink
+  negativePrompt: >-
+    print, ink, fake readable text, flat sticker look, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

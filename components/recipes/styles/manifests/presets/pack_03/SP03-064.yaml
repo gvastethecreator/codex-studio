@@ -12,31 +12,76 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-product-cgi
 visualDna:
-  aesthetic: Parts floating apart
-  subject_treatment: Assembly lines
-  color_and_tone: Technical, assembly-color coding
-  lighting_and_shadow: Flat, diagram clarity
-  texture_and_material: Internal parts, cross-section surfaces
+  aesthetic: >-
+    Exploded View acts as a transferable CGI-style router: start from Parts floating apart,
+    Alignment, explosion direction and hard-surface and product-CGI system built from bevel logic,
+    manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal,
+    then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Assembly lines; preserve the prompt subject while giving it
+    engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control,
+    or UI-material precision, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Technical, assembly color coding; use color as manufactured finish: anodized
+    metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled
+    brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific
+    limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat, diagram clarity; shape light through studio strips, rim edges,
+    reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal
+    gradients, so value structure supports the renderer and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Internal parts, cross section surfaces; surface detail should show bevels, panel seams,
+    normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean
+    UI translucency, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Exploded View: three-quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Technical, complex, assembly logic
-  rendering_and_quality: Engineering, diagram, instructional
-  key_features: Alignment, explosion direction
+    Structure the image through Lookdev camera for Exploded View: three quarter or orthographic
+    framing, clean silhouette read, material highlights, controlled depth, and vertical card
+    composition; compose for engineered readability through exploded spacing, hero compression,
+    orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Technical, complex, assembly logic; derive mood from precision, luxury, tactical
+    engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting
+    the renderer alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Engineering, diagram, instructional; finish with exact edges, believable PBR
+    response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter,
+    clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Parts floating apart; Alignment, explosion direction; Technical, assembly color coding; Internal
+    parts, cross section surfaces; Lookdev camera for Exploded View: three quarter or orthographic
+    framing, clean silhouette read, material highlights, controlled depth, and vertical card
+    composition
   creative_brief: >-
-    Split the input into exploded-view logic: invisible assembly axes, precise spacing, subsystem color coding
-    and cross-section surfaces that explain structure. If there are parts, separate them; otherwise infer
-    component layers without forcing screws, housings or a manufactured product. Apply Exploded View as a
-    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
-    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
-    environment, UI screen, product shot, or scene template.
+    Apply Exploded View as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Parts floating apart, Alignment, explosion direction, Internal parts, cross
+    section surfaces without requiring the card image's original subject.
 avoidRules:
   - assembled
   - solid
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - random greeble clutter
+  - fake labels
+  - muddy grime
+  - organic blob shape
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-064.webp
 attributes:
-  negativePrompt: assembled, solid
+  negativePrompt: >-
+    assembled, solid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic
+    blob shape
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

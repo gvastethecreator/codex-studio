@@ -13,36 +13,83 @@ tags:
   - aesthetics
 visualDna:
   aesthetic: >-
-    Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and low-resolution
-    silhouette discipline
+    Indexed Pixel Constraint operates as a portable source-router layer: combine Strict retro raster
+    system with tile logic, hard pixel edges, indexed palettes, and low-resolution silhouette
+    discipline with cultural style-system logic with recognizable design codes, mood grammar, and
+    transferable taste rules, so the preset supplies visual behavior rather than a fixed card scene
+    or literal sample.
   subject_treatment: >-
-    Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned
-    contours
+    Preserve the prompt's subject plus requested motion and context while letting forms re-code,
+    stylize, ritualize, polish, decay, brighten, mechanize, soften, or mythologize through
+    Square-grid clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes,
+    tile-aligned contours; identity stays readable through construction grammar, proportion, edge
+    logic, and detail scale as this preset is applied.
   color_and_tone: >-
-    Limited indexed color ramps, hardware brights, restrained shadow steps, dithered blends, clean black
-    separators
+    Map color through identity-bearing color families, accent rules, tonal pressure, era-specific
+    contrast, and material color behavior; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
   lighting_and_shadow: >-
-    Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable value
-    bands
-  texture_and_material: Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness
+    Use Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and
+    readable value bands plus mood-led lighting that reinforces the aesthetic code without replacing
+    the requested subject as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness plus
+    signature finishes, symbolic surfaces, pattern systems, ornamental density, polish, grime,
+    gloss, or softness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
+    artifacts must remain coherent across figures, objects, and environments.
   camera_and_composition: >-
-    Resolution compression, tile repetition, stair-stepped curves, sprite-scale simplification, grid-snapped
-    perspective
-  atmosphere_and_mood: Playful, constrained, retro-computational, crisp, graphic
-  rendering_and_quality: Low-res, intentional, readable, iconic, mechanically constrained, with no painterly smoothing
-  key_features: Pixel grid alignment, cluster control, ordered dithering, indexed ramps, hard silhouettes, tile-map rhythm
+    Compose with Resolution compression, tile repetition, stair-stepped curves, sprite-scale
+    simplification, grid-snapped perspective plus taste-coded spacing, silhouette discipline, motif
+    placement, designed clutter, and reusable visual hierarchy as reusable framing grammar, allowing
+    cards, portraits, objects, scenes, and abstract prompts to inherit the style without one
+    required layout.
+  atmosphere_and_mood: >-
+    Carry mood through subculture memory, internet-era design codes, nostalgia, optimism, dread,
+    cuteness, or spectacle; the emotional tone should feel specific to Indexed Pixel Constraint
+    while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with coherent art direction, strong subject preservation, clean code recognition, and no
+    mood-board vagueness; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Strict retro raster system with tile logic, hard pixel edges, indexed palettes, and
+    low-resolution silhouette discipline; Square-grid clusters, stair-step diagonals, one-pixel
+    outlines, chunky negative shapes, tile-aligned contours; Pixel blocks, ordered dithering, tile
+    repeats, aliased edges, screen-grid crispness; Palette-step shading with no soft gradients,
+    cluster highlights, hard shadow cells, and readable value bands; Resolution compression, tile
+    repetition, stair-stepped curves, sprite-scale simplification, grid-snapped perspective
   creative_brief: >-
-    Convert any input into a low-resolution indexed-pixel treatment. The style must come from grid discipline,
-    palette limits, dithering, and silhouette compression, not from specific game scenes, sprites, props, or
-    environments.
+    Use Indexed Pixel Constraint after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Strict retro raster system with tile
+    logic, hard pixel edges, indexed palettes, and low-resolution silhouette discipline, Square-grid
+    clusters, stair-step diagonals, one-pixel outlines, chunky negative shapes, tile-aligned
+    contours, Pixel blocks, ordered dithering, tile repeats, aliased edges, screen-grid crispness,
+    Palette-step shading with no soft gradients, cluster highlights, hard shadow cells, and readable
+    value bands, Resolution compression, tile repetition, stair-stepped curves, sprite-scale
+    simplification, grid-snapped perspective plus proportion codes, recurring surface motifs, era
+    cues, pattern pressure, cultural references, and designed contrast, palette behavior, light
+    response, material treatment, and finish discipline without requiring one specimen, prop bundle,
+    product still, or card composition.
 avoidRules:
   - hd
   - vector
   - smooth
+  - generic aesthetic collage
+  - random trend mix
+  - style-board text
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-010.webp
 attributes:
-  negativePrompt: hd, vector, smooth
+  negativePrompt: >-
+    hd, vector, smooth, generic aesthetic collage, random trend mix, style-board text, fixed
+    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

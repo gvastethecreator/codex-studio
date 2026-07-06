@@ -2,6 +2,7 @@ const STYLE_CATALOG_RESOURCE_MARKERS = [
   'StylePresetCatalogSearchSurface',
   'stylePresetCatalogData',
 ] as const;
+const STYLE_BROWSER_DOM_RENDERED_CARD_BUDGET = 160;
 
 export interface StylesBrowserGatePackBudgetInput {
   packId: string;
@@ -23,6 +24,7 @@ export interface StylesBrowserGateDomState {
   groups: number;
   eagerGroups: number;
   placeholderGroups: number;
+  placeholderCards: number;
   renderedCards: number;
   plannedCards: number;
   hiddenGroups: number;
@@ -72,6 +74,19 @@ function compareDomState({
   const violations: string[] = [];
 
   for (const key of Object.keys(expected) as Array<keyof StylesBrowserGateDomState>) {
+    if (key === 'renderedCards') {
+      if (actual[key] > expected[key]) {
+        violations.push(`${label} ${key} ${actual[key]} > expected budget ${expected[key]}`);
+      }
+      continue;
+    }
+    if (key === 'placeholderCards') {
+      if (actual[key] < expected[key]) {
+        violations.push(`${label} ${key} ${actual[key]} < expected minimum ${expected[key]}`);
+      }
+      continue;
+    }
+
     if (expected[key] !== actual[key]) {
       violations.push(`${label} ${key} ${actual[key]} !== expected ${expected[key]}`);
     }
@@ -98,13 +113,18 @@ export function createStylesBrowserGateExpectation({
   catalogResultCount: number;
   resourceMarkers?: string[];
 }): StylesBrowserGateExpectation {
+  const renderedCardBudget = Math.min(
+    packBudget.plannedPresetCards,
+    Math.max(packBudget.eagerPresetCards, STYLE_BROWSER_DOM_RENDERED_CARD_BUDGET),
+  );
   return {
     packId: packBudget.packId,
     collapsed: {
       groups: packBudget.mountedCategorySections,
       eagerGroups: packBudget.eagerCategorySections,
       placeholderGroups: packBudget.placeholderCategorySections,
-      renderedCards: packBudget.eagerPresetCards,
+      placeholderCards: packBudget.placeholderCategorySections > 0 ? 1 : 0,
+      renderedCards: renderedCardBudget,
       plannedCards: packBudget.plannedPresetCards,
       hiddenGroups: packBudget.hiddenCategories,
       hiddenPresets: packBudget.hiddenPresetCards,
@@ -113,7 +133,8 @@ export function createStylesBrowserGateExpectation({
       groups: packBudget.expandedMountedCategorySections,
       eagerGroups: packBudget.expandedEagerCategorySections,
       placeholderGroups: packBudget.expandedPlaceholderCategorySections,
-      renderedCards: packBudget.expandedEagerPresetCards,
+      placeholderCards: packBudget.expandedPlaceholderCategorySections > 0 ? 1 : 0,
+      renderedCards: renderedCardBudget,
       plannedCards: packBudget.expandedPlannedPresetCards,
       hiddenGroups: 0,
       hiddenPresets: 0,

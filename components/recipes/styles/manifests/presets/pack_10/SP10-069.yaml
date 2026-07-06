@@ -12,25 +12,62 @@ tags:
   - abstract-and-experimental
   - diagram-and-data-systems
 visualDna:
-  aesthetic: Data matrix
-  subject_treatment: Square pixels
-  color_and_tone: Black and White
-  lighting_and_shadow: Flat
-  texture_and_material: Digital
-  camera_and_composition: Blocky
-  atmosphere_and_mood: Digital, code
-  rendering_and_quality: Machine readable
-  key_features: Corner markers
+  aesthetic: >-
+    QR Code Style becomes a transferable diagram and information-graphic system: start from Data
+    matrix, Corner markers, and Blocky, then route prompt content through schematic paths, encoded
+    blocks, contour logic, technical marks, and data-like organization without forcing one card
+    scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Square pixels to map, route, blueprint,
+    annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Black and White; use palette as functional coding: substrate, traces,
+    line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the
+    subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical
+    so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly
+    asks for it.
+  texture_and_material: >-
+    Render Digital as the tactile or mark-making basis; marks should feel like ink, chalk, copper,
+    pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces,
+    or close material studies.
+  camera_and_composition: >-
+    Compose around Blocky as reusable spatial grammar: favor legible routes, modules, legends
+    without readable text, edge registration, grids, and information density, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Digital, code as the emotional register; derive mood from analysis, navigation, computation,
+    instruction, secrecy, or handmade classroom energy, without flattening strong, strange, darker,
+    or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Machine readable: finish with clean information hierarchy, exact line weight, and no
+    random label soup, preserving prompt X as the base content and the preset as the style router.
+  key_features: >-
+    Data matrix; Square pixels; Black and White; Flat; Digital; Blocky; Digital, code; Machine
+    readable; Corner markers
   creative_brief: >-
-    Apply QR-code data grammar to the input: black-white square modules, finder-pattern logic, dense
-    machine-readable clustering, and alien data blocks should abstract forms without creating readable codes.
+    Route any subject through QR Code Style as a transferable diagram or data-graphic visual system:
+    preserve prompt intent while converting structure, modules, paths, grids, marks, and information
+    rhythm through this preset. Apply QR-code data grammar to the input: black-white square modules,
+    finder-pattern logic, dense machine-readable clustering, and alien data blocks should abstract
+    forms without creating readable codes.
 avoidRules:
   - round
   - analog
+  - random text labels
+  - unreadable diagram clutter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-069.webp
 attributes:
-  negativePrompt: round, analog
+  negativePrompt: >-
+    round, analog, random text labels, unreadable diagram clutter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

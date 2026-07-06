@@ -12,31 +12,85 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: Glass plate negative
+  aesthetic: >-
+    Wet Plate Collodion acts as a transferable cinematic-media router: start from Glass plate
+    negative, Wet Plate Collodion historical camera process, emulsion behavior, lens constraints,
+    print surface, and era-specific exposure artifacts, Focus falloff, petzval swirl, glass-plate
+    negative and historical photographic process system built from camera constraints, emulsion
+    chemistry, lens softness, exposure timing, print surface, and era-specific color response, then
+    apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Wet Plate Collodion: casting, wardrobe,
-    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Cream/Black, warm ivory, amber shadow, silver nitrate
-  lighting_and_shadow: Shallow DOF, wide-open brass lens, thin focal plane
-  texture_and_material: Chemical swirls, collodion pour, edge imperfection, hand-coating
-  camera_and_composition: Peeling emulsion, lifted edge, craquelure decay
-  atmosphere_and_mood: Timeless, alchemical, eternal stillness, process-haunted
-  rendering_and_quality: Handmade, fine art, alchemical process, one-of-one artifact
-  key_features: Focus falloff, petzval swirl, glass-plate negative
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Wet Plate Collodion: casting, wardrobe, props, motion cues, and silhouette hierarchy
+    follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while making it feel captured through the era process: sitter
+    stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital
+    sensor behavior, keeping the requested identity, silhouette, action, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Cream/Black, warm ivory, amber shadow, silver nitrate; treat color as
+    historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth,
+    Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Shallow DOF, wide-open brass lens, thin focal plane; make light follow
+    camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance,
+    daylight softness, or early-sensor clipping, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Chemical swirls, collodion pour, edge imperfection, hand-coating; surface detail should
+    reveal plate metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens
+    softness, instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Peeling emulsion, lifted edge, craquelure decay; compose through
+    period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole
+    drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Timeless, alchemical, eternal stillness, process-haunted; derive mood from memory,
+    archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or
+    historical camera patience, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Handmade, fine art, alchemical process, one-of-one artifact; finish as credible
+    photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter
+    overlays and readable border text, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Glass plate negative, Wet Plate Collodion historical camera process, emulsion behavior, lens
+    constraints, print surface, and era-specific exposure artifacts; Focus falloff, petzval swirl,
+    glass-plate negative; Cream/Black, warm ivory, amber shadow, silver nitrate; Chemical swirls,
+    collodion pour, edge imperfection, hand-coating; Peeling emulsion, lifted edge, craquelure decay
   creative_brief: >-
-    Render the input as a wet-plate collodion artifact: glass-plate depth, hand-poured chemistry, Petzval
-    swirl, shallow focal plane, peeling emulsion, and one-of-one alchemical imperfection. Avoid portrait-only
-    or war-ghost assumptions. The subject should feel captured by unstable chemistry while the edges decay
-    into handmade beauty. Apply Wet Plate Collodion as a portable cinematic/camera style over any input:
-    preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while
-    avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Apply Wet Plate Collodion as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Glass plate negative, Wet Plate Collodion
+    historical camera process, emulsion behavior, lens constraints, print surface, and era-specific
+    exposure artifacts, Focus falloff, petzval swirl, glass-plate negative, Chemical swirls,
+    collodion pour, edge imperfection, hand-coating without requiring the card image's original
+    subject.
 avoidRules:
   - clean
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - fake vintage filter
+  - readable border text
+  - modern phone clarity
+  - wrong camera process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-053.webp
 attributes:
-  negativePrompt: clean
+  negativePrompt: >-
+    clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake vintage
+    filter, readable border text, modern phone clarity, wrong camera process
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

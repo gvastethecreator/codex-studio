@@ -12,31 +12,84 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Layered images
+  aesthetic: >-
+    Double Exposure acts as a transferable cinematic-media router: start from Layered images, Double
+    Exposure light transport, optical artifacts, exposure discipline, atmosphere depth, and
+    camera-response behavior, Layer blend, silhouette face-covering design, translucent density,
+    exposure sandwich and portable lighting and atmosphere system built from light transport,
+    exposure behavior, optical distortion, volumetric density, reflection, and camera response, then
+    apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Double Exposure: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Ghostly mix, overlapping hue, translucent blend, ethereal overlay
-  lighting_and_shadow: Screen blend, additive exposure, in-camera double-strike
-  texture_and_material: Complex, layered transparency, film-sandwich density
-  camera_and_composition: Overlap, layer nesting, translucent registration drift
-  atmosphere_and_mood: Surreal, memory, dual exposure, fleeting connection
-  rendering_and_quality: Artsy, dream, visual poetry, memory-merge
-  key_features: Layer blend, silhouette mask, translucent density, exposure sandwich
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Double Exposure: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Ghostly mix, overlapping hue, translucent blend, ethereal overlay; use color as
+    light temperature, spectral split, water attenuation, neon bounce, candle warmth, night
+    conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Screen blend, additive exposure, in-camera double-strike; make the named
+    light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric
+    rays, split contrast, or softbox falloff, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Complex, layered transparency, film-sandwich density; surface detail should reveal
+    particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or
+    optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Overlap, layer nesting, translucent registration drift; compose
+    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Surreal, memory, dual exposure, fleeting connection; derive mood from illumination
+    physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or
+    temporal flash energy, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Artsy, dream, visual poetry, memory-merge; finish with believable exposure, clean
+    denoise, readable subjects, and controlled optical artifacts rather than random glow or crushed
+    darkness, clean denoised surfaces where appropriate, and enough process evidence to make the
+    style recognizable.
+  key_features: >-
+    Layered images, Double Exposure light transport, optical artifacts, exposure discipline,
+    atmosphere depth, and camera-response behavior; Layer blend, silhouette face-covering design,
+    translucent density, exposure sandwich; Ghostly mix, overlapping hue, translucent blend,
+    ethereal overlay; Complex, layered transparency, film-sandwich density; Overlap, layer nesting,
+    translucent registration drift
   creative_brief: >-
-    Use double exposure as a transferable layering method: two or more visual fields share one frame through
-    masks, translucent density, additive exposure, and soft registration drift. Avoid requiring faces,
-    landscapes, figures, or nature fusion. The image should read as memory layers occupying one photographic
-    surface. Apply Double Exposure as a portable cinematic/camera style over any input: preserve its lens
-    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
-    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Apply Double Exposure as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Layered images, Double Exposure light transport, optical
+    artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Layer blend,
+    silhouette face-covering design, translucent density, exposure sandwich, Complex, layered
+    transparency, film-sandwich density without requiring the card image's original subject.
 avoidRules:
   - single image
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-067.webp
 attributes:
-  negativePrompt: single image
+  negativePrompt: >-
+    single image, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

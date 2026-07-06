@@ -14,41 +14,85 @@ tags:
   - slice-of-life
 visualDna:
   aesthetic: >-
-    Pre-performance slice-of-life anime language with emotional intimacy, polished stagecraft contrast, and
-    rain-tinted nocturnal sensitivity
+    Rainy Idol Backstage operates as a portable anime-lifestyle router: combine Rainy Idol Backstage
+    identity cues through Backstage like light rhythm; pre stage expression anchor; readiness cues;
+    and rain muted contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life
+    anime language with emotional intimacy with slice of life school and music grammar with soft
+    social acting, weathered everyday light, gentle performance rhythm, and intimate mundane
+    storytelling, so the preset supplies anime style behavior after prompt X rather than a required
+    scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Soft facial contour priority, controlled costume-like fold elegance, hand-gesture micro-acting cues, and
-    close-framing silhouette clarity
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    microgesture acting, soft contour, posture pauses, everyday prop restraint, textile simplicity,
+    and emotion carried by spacing rather than spectacle; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Night blues, muted rose accents, warm gold practicals, mirror-neutral highlights, and subdued skin
-    midtones
+    Map color through rain blue, spring pink, warm cream, muted uniform or casual neutrals, stage
+    amber, soft daylight, and restrained accent color; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Vanity-like practicals as warm key, soft stage-bokeh separation, low-contrast fill, and rain-cooled edge
-    tones
+    Use window diffusion, rain reflection, lantern or stage glow, soft bounce, pastel rim, and low
+    contrast emotional separation; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Satin fabric sheen, reflective mirror-like surfaces, subtle cosmetic powder finish, damp diffusion, and
-    metallic hardware accents
-  camera_and_composition: Intimate medium framing with shallow focus falloff and performance context kept intentionally soft
-  atmosphere_and_mood: Vulnerable, aspirational, focused, and quietly determined
+    Render matte paper like backgrounds, crisp textile softness, umbrella sheen, instrument gloss
+    when requested, dessert warmth, and low noise painted surfaces; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
+  camera_and_composition: >-
+    Compose through near-but-not-touching spacing, quiet inserts, performance beats, seasonal
+    framing, and open everyday depth without classroom or venue dependency as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through gentle longing, shy warmth, quiet comedy, festival nostalgia, backstage
+    nerves, soft friendship, and sincere ordinary wonder; the preset can become cute, sensual,
+    severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving its
+    anime lineage.
   rendering_and_quality: >-
-    Emotion-first polished anime rendering with refined facial readability, restrained detail density, and
-    premium music-drama card legibility
-  key_features: Backstage-like light rhythm, pre-stage expression anchor, readiness cues, and rain-muted contrast
+    Finish with clean slice of life anime finish with subtle bloom, controlled softness, readable
+    expressions, no fake signage, and no photographic realism; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
+  key_features: >-
+    Backstage like light rhythm; pre stage expression anchor; readiness cues; and rain muted
+    contrast; Rainy Idol Backstage anime style cues; Pre performance slice of life anime language
+    with emotional intimacy
   creative_brief: >-
-    Use Rainy Idol Backstage as style anchor for quiet pre-performance tension: warm practicals, intimate
-    expression-led framing, and rain-cooled polish should transfer without requiring an idol, mirror room,
-    microphone, wardrobe, or literal backstage.
+    Use Rainy Idol Backstage after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies
+    Backstage like light rhythm, pre stage expression anchor, readiness cues, and rain muted
+    contrast, Rainy Idol Backstage anime style cues, Pre performance slice of life anime language
+    with emotional intimacy, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - photoreal
-  - gritty-horror
-  - low-detail
+  - gritty horror
+  - low detail
   - watermark
   - text
   - logo
+  - classroom dependency
+  - idol stage dependency
+  - generic cute wallpaper
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-013.webp
 attributes:
-  negativePrompt: photoreal, gritty-horror, low-detail, watermark, text, logo
+  negativePrompt: >-
+    photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage
+    dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card
+    setup, fixed anime cast, generic anime filter, prompt literal card reuse, readable text, fake
+    UI, photoreal cosplay, 3D render look, copied franchise costume, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

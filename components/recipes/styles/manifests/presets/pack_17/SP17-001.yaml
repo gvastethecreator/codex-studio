@@ -14,31 +14,47 @@ tags:
   - dark-fantasy-realms
   - soulslike
 visualDna:
-  aesthetic: Bleak ashen medieval fantasy style with clean soot-softened surfaces, sacred decay, heavy solemn material weight, and worn ceremonial darkness.
+  aesthetic: >-
+    Bleak ashen medieval fantasy style with clean soot-softened surfaces, sacred decay, heavy solemn
+    material weight, and worn ceremonial darkness.
   subject_treatment: >-
-    Transform any prompt subject with eroded silhouette weight, ash-softened contour breaks, funerary medieval
-    detailing, and restrained relic-like accents without imposing a fixed subject, object bundle, pose, or
-    setting.
+    Transform any prompt subject with eroded silhouette weight, ash-softened contour breaks,
+    funerary medieval detailing, and restrained relic-like accents without imposing a fixed subject,
+    object bundle, pose, or setting.
   color_and_tone: >-
-    Pale ash gray, bone white, cold blue stone, dead ember orange, soot black used as contour, and tarnished
-    brass accents.
+    Pale ash gray, bone white, cold blue stone, dead ember orange, soot black used as contour, and
+    tarnished brass accents.
   lighting_and_shadow: >-
-    Low ember underglow plus cool desaturated rim light; open shadows keep forms, material edges, and relic
-    details readable.
+    Low ember underglow plus cool desaturated rim light; open shadows keep forms, material edges,
+    and relic details readable.
   texture_and_material: >-
-    Smooth matte ash fields, tarnished metal accents, restrained worn ceremonial surfaces, soft ember seams,
-    and soot-softened edges with minimal high-frequency distress.
+    Smooth matte ash fields, tarnished metal accents, restrained worn ceremonial surfaces, soft
+    ember seams, and soot-softened edges with minimal high-frequency distress.
   camera_and_composition: >-
-    Low, weighty framing with broad negative space, diagonal massing, large readable silhouette planes, and
-    depth cues driven by light, scale, and shadow, adaptable to the user's composition.
-  atmosphere_and_mood: Ancient, predatory, funereal, and solemn without becoming gory or splatter-focused.
+    Low, weighty framing with broad negative space, diagonal massing, large readable silhouette
+    planes, and depth cues driven by light, scale, and shadow, adaptable to the user's composition.
+  atmosphere_and_mood: >-
+    Carry the prompt through Ancient, predatory, funereal, and solemn without becoming gory or
+    splatter focused; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained
+    grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the
+    preset's medieval-zine identity.
   rendering_and_quality: >-
-    Dark fantasy digital illustration with heavy strong denoise, defined linework, crisp material shapes, clean
-    shadow masses, broad readable value planes, and restrained microtexture.
+    Dark fantasy digital illustration with heavy strong denoise, defined linework, crisp material
+    shapes, clean shadow masses, broad readable value planes, and restrained microtexture.
   creative_brief: >-
-    Apply this as a reusable visual router over any prompt: preserve the user's subject while adding ash,
-    weight, sacred decay, clean matte material logic, and solemn dark-fantasy atmosphere while keeping subject,
-    setting, and props dictated by the user's prompt.
+    Apply this as a reusable visual router over any prompt: preserve the user's subject while adding
+    ash, weight, sacred decay, clean matte material logic, and solemn dark fantasy atmosphere while
+    keeping subject, setting, and props dictated by the user's prompt. Apply after prompt X: prompt
+    X supplies subject, action, setting, tone, and intensity, while this preset supplies a style
+    grammar of Ashen Soulslike Ruins; Bleak ashen medieval fantasy style with clean soot softened
+    surfaces; sacred decay; heavy solemn material weight; worn ceremonial darkness; Transform any
+    prompt subject with eroded silhouette weight, mood, material behavior, framing logic, and
+    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
+    readable text, or sample-card composition.
+  key_features: >-
+    Ashen Soulslike Ruins; Bleak ashen medieval fantasy style with clean soot softened surfaces;
+    sacred decay; heavy solemn material weight; worn ceremonial darkness; Transform any prompt
+    subject with eroded silhouette weight
 avoidRules:
   - clean heroic fantasy
   - glossy plastic armor
@@ -49,13 +65,24 @@ avoidRules:
   - scratchy black microtexture
   - dense soot speckle
   - crosshatch mesh
-  - over-cracked surfaces
+  - over cracked surfaces
   - watermark
   - text
+  - generic fantasy splash art
+  - quest party lock
+  - gore only darkness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-001.webp
 attributes:
-  negativePrompt: clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, gritty dark noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over-cracked surfaces, watermark, text
+  negativePrompt: >-
+    clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, gritty dark
+    noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over cracked surfaces,
+    watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt
+    literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art,
+    muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

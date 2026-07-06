@@ -12,25 +12,79 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Pop-up paper-engineering illustration language with dimensional storytelling
-  subject_treatment: Die-cut contours, fold seams, and tab-slot construction edges
-  color_and_tone: Cardstock and kraft-derived tones with accent primaries
-  lighting_and_shadow: Directional page-top light emphasizing fold relief and cast depth
-  texture_and_material: Matte paper surface, crease memory, cut-edge fuzz
-  camera_and_composition: Layered fold-out depth and hinge-driven planar shifts
-  atmosphere_and_mood: Playful, surprising, engineered wonder
-  rendering_and_quality: Structural handcrafted finish with clear mechanism readability
-  key_features: Tabs, slots, folds, lift layers, mechanical page architecture
+  aesthetic: >-
+    Pop-Up Book acts as a transferable illustration router: start from Pop-up paper-engineering
+    illustration language with dimensional storytelling, Tabs, slots, folds, lift layers, mechanical
+    page architecture and storybook and friendly-illustration system built from approachable shapes,
+    handmade media, simplified edges, tactile materials, and high-readability charm, then apply the
+    visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Die-cut contours, fold seams, and tab-slot construction
+    edges; preserve the requested subject while softening, simplifying, miniaturizing,
+    paper-building, mark-making, or diagramming it according to the named medium, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Cardstock and kraft-derived tones with accent primaries; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Directional page-top light emphasizing fold relief and cast depth; shape
+    light through soft diffuse value, paper layering, flat educational contrast, handmade shadows,
+    or medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Matte paper surface, crease memory, cut-edge fuzz; surface detail should show paper
+    tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate,
+    or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Layered fold-out depth and hinge-driven planar shifts; compose with
+    clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout,
+    or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Playful, surprising, engineered wonder, mood carried by Pop-Up Book craft,
+    material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Structural handcrafted finish with clear mechanism readability; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Pop-up paper-engineering illustration language with dimensional storytelling; Tabs, slots,
+    folds, lift layers, mechanical page architecture; Cardstock and kraft-derived tones with accent
+    primaries; Matte paper surface, crease memory, cut-edge fuzz; Layered fold-out depth and
+    hinge-driven planar shifts
   creative_brief: >-
-    Apply pop-up paper-engineering grammar to any input: die-cut contours, fold seams, tab-slot construction,
-    hinge relief, layered cardstock depth, and cast-paper shadows should make forms feel foldable without
-    requiring books, pages, children, mechanisms, theater sets, or fixed narrative scenes.
+    Apply Pop-Up Book as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Pop-up paper-engineering illustration language with dimensional storytelling, Tabs, slots,
+    folds, lift layers, mechanical page architecture, Matte paper surface, crease memory, cut-edge
+    fuzz without requiring the card image's original subject.
 avoidRules:
   - flat page
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-026.webp
 attributes:
-  negativePrompt: flat page
+  negativePrompt: >-
+    flat page, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

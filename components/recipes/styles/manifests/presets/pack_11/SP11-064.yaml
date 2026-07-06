@@ -12,31 +12,80 @@ tags:
   - miscellaneous-and-fun
   - micro-macro
 visualDna:
-  aesthetic: Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape
-  subject_treatment: Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone
+  aesthetic: >-
+    Iris/Eye Macro operates as a portable source-router layer: combine Human eye zoom,
+    iris-portrait, soul-window, ophthalmology-art, corneal-landscape with magnified source-study
+    logic with scale shift, optical detail, structural pattern, and specimen-independent texture
+    grammar, so the preset supplies visual behavior rather than a fixed card scene or literal
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms magnify,
+    reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure
+    through Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone;
+    identity stays readable through construction grammar, proportion, edge logic, and detail scale
+    as this preset is applied.
   color_and_tone: >-
-    Blue/Green/Brown, amber-hazel, grey-steel, heterochromia, central-heterochromia gold, iris-texture
-    spectrum
-  lighting_and_shadow: Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow
-  texture_and_material: Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade
-  camera_and_composition: Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve
-  atmosphere_and_mood: Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment
-  rendering_and_quality: Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect
+    Map color through source-derived color variation, iridescence, false-scale contrast, translucent
+    edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot,
+    ophthalmoscope-glow plus macro flash, raking light, dark-field glow, backlit transmission, ring
+    reflections, and shallow optical falloff as the light-response contract, with readable
+    hierarchy, controlled contact detail, and no lighting choice that erases the user's requested
+    content.
+  texture_and_material: >-
+    Render Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade
+    plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or
+    crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
+    artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve
+    plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and
+    detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes,
+    and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural
+    engineering, entropy, and fragile wonder; the emotional tone should feel specific to Iris/Eye
+    Macro while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy
+    stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern,
-    conjunctiva-vessels, lacrimal-caruncle
+    Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape; Muscle fibers,
+    radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone; Wet, fibrous, tear-film
+    gloss, corneal-transparency, iris-crypt texture, limbal-palisade; Ring light reflection,
+    corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow; Pupil hole,
+    aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve
   creative_brief: >-
-    Render eye macro portraits with strong iris-striae definition, limbal contrast, and controlled corneal
-    catchlights. Maintain anatomical fidelity and intimate scale while avoiding portrait-specific narrative
-    constraints. Apply Iris/Eye Macro as a portable style system over any input: preserve its construction
-    grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise,
-    literal prop, fixed specimen, classroom sample, product shot, or scene template.
+    Use Iris/Eye Macro after prompt X as a transferable style layer: prompt X supplies subject,
+    action, and setting, while the preset supplies Human eye zoom, iris-portrait, soul-window,
+    ophthalmology-art, corneal-landscape, Muscle fibers, radial-iris striae, collarette-ridge,
+    limbal-ring, pupillary-zone, Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt
+    texture, limbal-palisade, Ring light reflection, corneal-catch-light, iris-backlight,
+    catch-light-dot, ophthalmoscope-glow, Pupil hole, aperture-center, iris-diaphragm,
+    depth-of-field fade, corneal-curve plus microstructure, magnification artifacts, focus stacking,
+    surface topology, optical refraction, and scale-legible detail, palette behavior, light
+    response, material treatment, and finish discipline without requiring one specimen, prop bundle,
+    product still, or card composition.
 avoidRules:
   - skin
+  - generic macro blur
+  - muddy micro noise
+  - classroom sample scene
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-064.webp
 attributes:
-  negativePrompt: skin
+  negativePrompt: >-
+    skin, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

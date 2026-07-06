@@ -1,5 +1,5 @@
 import React from 'react';
-import { MotionDiv, AnimatePresence } from 'motion/react';
+import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
   IconTrash as Trash2,
   IconRotate as RotateCcw,

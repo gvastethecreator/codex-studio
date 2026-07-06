@@ -12,26 +12,87 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Movie background
-  subject_treatment: "Treat subjects through Matte Painting's signature cues: Horizon line, depth layering, atmospheric haze."
-  color_and_tone: Photorealistic, natural-world spectrum, cinematic grade
-  lighting_and_shadow: Cinematic, God-light rays, atmospheric perspective
-  texture_and_material: Photo bash
-  camera_and_composition: 'Compose for Matte Painting using its key spatial cues: Horizon line, depth layering, atmospheric haze.'
-  atmosphere_and_mood: Vast, invisible, suspension-of-disbelief, epic silence
-  rendering_and_quality: Epic, detailed, world-building scale, invisible compositing
-  key_features: Horizon line, depth layering, atmospheric haze
+  aesthetic: >-
+    Matte Painting acts as a transferable illustration router: start from Movie depth field, Matte
+    Painting production design clarity, iteration logic, silhouette readability, material
+    exploration, and concept-art decision pressure, Horizon line, depth layering, atmospheric haze
+    and production concept-art system built from iteration discipline, silhouette testing, material
+    exploration, design readability, and pitch-ready visual decisions, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Treat subjects through Matte Painting's signature cues:
+    Horizon line, depth layering, atmospheric haze; preserve the requested subject while routing it
+    through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover
+    marks, or production-readability constraints, keeping the requested identity, silhouette, pose,
+    object function, or setting legible.
+  color_and_tone: >-
+    Build color with Photorealistic, natural-world spectrum, cinematic grade; use color as concept
+    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
+    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Cinematic, God-light rays, atmospheric perspective; shape light for
+    ideation clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Photo bash, production design clarity, iteration logic, silhouette readability, material
+    exploration, and concept-art decision pressure; surface detail should reveal brush passes,
+    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
+    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Matte Painting using its key spatial cues: Horizon line,
+    depth layering, atmospheric haze; compose through production hierarchy, variants, orthographic
+    logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance
+    without locking one finished illustration, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Vast, invisible, suspension-of-disbelief, epic silence; derive mood from
+    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
+    cinematic intent, or production-room clarity, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Epic, detailed, world-building scale, invisible compositing; finish with concept-art
+    usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or
+    overpolished final render when iteration is intended, clean denoised surfaces where appropriate,
+    and enough process evidence to make the style recognizable.
+  key_features: >-
+    Movie depth field, Matte Painting production design clarity, iteration logic, silhouette
+    readability, material exploration, and concept-art decision pressure; Horizon line, depth
+    layering, atmospheric haze; Photorealistic, natural-world spectrum, cinematic grade; Photo bash,
+    production design clarity, iteration logic, silhouette readability, material exploration, and
+    concept-art decision pressure
   creative_brief: >-
-    Apply cinematic matte-painting grammar to any input: atmospheric depth, horizon layering, photobash seams,
-    god-ray structure, haze scale, and invisible-composite realism should make world weight carry emotion
-    without requiring mountains, landscapes, backgrounds, castles, skies, or vast scenery.
+    Apply Matte Painting as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Movie depth field, Matte Painting production design clarity, iteration logic, silhouette
+    readability, material exploration, and concept-art decision pressure, Horizon line, depth
+    layering, atmospheric haze, Photo bash, production design clarity, iteration logic, silhouette
+    readability, material exploration, and concept-art decision pressure without requiring the card
+    image's original subject.
 avoidRules:
   - cartoon
   - sketch
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-047.webp
 attributes:
-  negativePrompt: cartoon, sketch
+  negativePrompt: >-
+    cartoon, sketch, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

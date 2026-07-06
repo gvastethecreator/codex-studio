@@ -13,37 +13,79 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Sega-Genesis-Mega-Drive 16-bit aesthetic, heavy dithering for fake transparency, 64 colors simultaneous on
-    screen, crunchy FM-synth soundtrack as visual rhythm, Sonic and Streets of Rage as palette-energy anchors,
-    9-bit-color-depth attitude, blast-processing image logic
+    Sega Genesis Dither-Heavy acts as a transferable art-medium router: start from Sega Genesis Mega
+    Drive 16 bit aesthetic, heavy dithering for fake transparency, 64 colors simultaneous on screen,
+    crunchy FM synth soundtrack as visual rhythm, Sonic and public-space of Rage as palette energy
+    anchors, 9 bit color depth attitude, blast processing image logic, Heavy dither patterns, 64
+    color on screen, Genesis composite video artifacts, checkerboard transparency, two layer
+    parallax, spiky pixel contour energy, FM synth crunchy visual and hardware-constrained
+    game-visual system built from display limits, palette budgets, sprite logic, pixel grids, CRT or
+    handheld artifacts, and era-specific charm, then apply the medium behavior to prompt X instead
+    of recreating a fixed demo image.
   subject_treatment: >-
-    Chunky 16-bit sprite logic, heavy dither-pattern edges, 320x224 resolution, sprite-scaling hardware feel,
-    two-layer parallax composition
+    Transform any prompt subject through Chunky 16 bit sprite logic, heavy dither pattern edges,
+    320x224 resolution, sprite scaling hardware feel, two layer parallax composition; preserve the
+    prompt subject while translating it into tile, sprite, vector, glyph, voxel, pre-render,
+    screen-grid, or low-bit display behavior, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
   color_and_tone: >-
-    512-color total palette, 64-on-screen, heavy dither to fake more, Genesis-signature dark grit, electric
-    blue accents, orange sunset accents, bronze cartridge warmth
+    Build color with 512 color total palette, 64 on screen, heavy dither to fake more, Genesis
+    signature dark grit, electric blue accents, orange sunset accents, bronze cartridge warmth; use
+    color through hardware rules: indexed palettes, phosphor glow, four-shade handheld values,
+    dither tricks, copper gradients, limited scanline color, or terminal ANSI sets, with deliberate
+    value grouping, accent control, and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Dither-pattern-as-lighting-gradient, highlight-shadow-mode-palette-swap, palette-cycling-for-glow,
-    per-tile-palette-limitation-workaround
+    Handle light through Dither pattern as lighting gradient, highlight shadow mode palette swap,
+    palette cycling for glow, per tile palette limitation workaround; make light emerge from display
+    technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector
+    beam brightness, so value structure supports the medium and does not overwrite the requested
+    content.
   texture_and_material: >-
-    Dither-pattern-grid-texture, Genesis-composite-video-blur, cartridge-connector-blinking-artifacts,
-    CRAM-dot-crawl, scanline-overlay, checkerboard-transparency-dither
+    Render Dither pattern grid texture, Genesis composite video blur, cartridge connector blinking
+    artifacts, CRAM dot crawl, scanline overlay, checkerboard transparency dither; surface detail
+    should show pixels, dithering, scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT
+    persistence, or paper-print degradation, keeping material scale coherent and avoiding noisy
+    filler texture.
   camera_and_composition: >-
-    320x224-Genesis-resolution, two-layer-parallax-depth, sprite-scaling-horizontal-line,
-    vertical-border-overscan, PAL-letterbox
+    Structure the image through 320x224 Genesis resolution, two layer parallax depth, sprite scaling
+    horizontal line, vertical border overscan, PAL letterbox; compose through tile maps, sprite
+    scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
+    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
   atmosphere_and_mood: >-
-    90s-console-war-attitude, arcade-at-home energy, blast-processing excitement, FM-synth-funk, aggressive
-    parallax swagger
+    Keep the mood 90s console war attitude, arcade at home energy, blast processing excitement, FM
+    synth funk, aggressive parallax swagger; derive mood from hardware limitation, arcade spectacle,
+    handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
   rendering_and_quality: >-
-    Sega-Genesis-dither aesthetic, blast-processing-beauty, 16-bit-attitude-rendering, crunchy-pixel-charm,
-    checkerboard-transparency-magic
+    Finish with Sega Genesis dither aesthetic, blast processing beauty, 16 bit attitude rendering,
+    crunchy pixel charm, checkerboard transparency magic; finish with faithful era constraints,
+    crisp readability at small scale, and no modern high-resolution smoothing unless the preset asks
+    for baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
   key_features: >-
-    Heavy-dither-patterns, 64-color-on-screen, Genesis-composite-video artifacts, checkerboard transparency,
-    two-layer parallax, spiky pixel contour energy, FM-synth crunchy visual
+    Sega Genesis Mega Drive 16 bit aesthetic, heavy dithering for fake transparency, 64 colors
+    simultaneous on screen, crunchy FM synth soundtrack as visual rhythm, Sonic and public-space of
+    Rage as palette energy anchors, 9 bit color depth attitude, blast processing image logic; Heavy
+    dither patterns, 64 color on screen, Genesis composite video artifacts, checkerboard
+    transparency, two layer parallax, spiky pixel contour energy, FM synth crunchy visual; 512 color
+    total palette, 64 on screen, heavy dither to fake more, Genesis signature dark grit, electric
+    blue accents, orange sunset accents, bronze cartridge warmth; Dither pattern grid texture,
+    Genesis composite video blur, cartridge connector blinking artifacts, CRAM dot crawl, scanline
+    overlay, checkerboard transparency dither; 320x224 Genesis resolution, two layer parallax depth,
+    sprite scaling horizontal line, vertical border overscan, PAL letterbox
   creative_brief: >-
-    Dithering becomes signature, not compromise. Any subject gains checkerboard transparency, crunchy palette
-    grit, parallax layers and FM-synth edge energy, all pushed through a machine that makes limitation look
-    loud.
+    Apply Sega Genesis Dither-Heavy as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Sega Genesis Mega Drive 16 bit aesthetic, heavy dithering for fake transparency, 64
+    colors simultaneous on screen, crunchy FM synth soundtrack as visual rhythm, Sonic and
+    public-space of Rage as palette energy anchors, 9 bit color depth attitude, blast processing
+    image logic, Heavy dither patterns, 64 color on screen, Genesis composite video artifacts,
+    checkerboard transparency, two layer parallax, spiky pixel contour energy, FM synth crunchy
+    visual, Dither pattern grid texture, Genesis composite video blur, cartridge connector blinking
+    artifacts, CRAM dot crawl, scanline overlay, checkerboard transparency dither without requiring
+    the card image's original subject.
 avoidRules:
   - smooth
   - gradient
@@ -56,10 +98,25 @@ avoidRules:
   - realistic
   - clean
   - minimal dither
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-095.webp
 attributes:
-  negativePrompt: smooth, gradient, modern, HD, anti-aliased, high color, photo, soft, realistic, clean, minimal dither
+  negativePrompt: >-
+    smooth, gradient, modern, HD, anti-aliased, high color, photo, soft, realistic, clean, minimal
+    dither, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark,
+    readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator
+    screenshot, unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

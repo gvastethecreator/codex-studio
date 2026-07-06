@@ -13,41 +13,83 @@ tags:
   - anime
 visualDna:
   aesthetic: >-
-    Spiritual twilight anime language with folkloric reverence, liminal fantasy atmosphere, ceremonial
-    restraint, and sacred hush
+    Spirit Shrine Twilight operates as a portable anime-lifestyle router: combine Spirit Shrine
+    Twilight identity cues through Gate depth cadence; ceremonial silhouette rhythm; twilight halo
+    lighting; sacred material authenticity; and restrained supernatural cues; Spirit Shrine Twilight
+    anime style cues with core anime character and adventure grammar with cel contour hierarchy,
+    expressive acting, readable silhouette, genre clarity, and clean TV to key visual polish, so the
+    preset supplies anime style behavior after prompt X rather than a required scene, character,
+    franchise image, or card composition.
   subject_treatment: >-
-    Organic contour flow, traditional fold rhythm, gate-like depth cadence, and softened silhouette
-    transitions for ethereal readability
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or
+    surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Indigo dusk fields, twilight amber highlights, washi-paper ivory, muted vermilion accents, and
-    low-saturation forest neutrals
+    Map color through clear cel values, saturated accents, stable skin or material midtones, sky or
+    neon support color, and disciplined complementary contrast; keep cel values readable, accent
+    roles intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Warm rear halo backlight, diffuse twilight ambient fill, soft volumetric mist scattering, and selective
-    lantern-like accent points
-  texture_and_material: Weathered timber grain, fibrous washi surfaces, stone humidity patina, and fine fog particulate softness
-  camera_and_composition: Layered ceremonial-axis depth with mild perspective compression through repeated gate-like intervals
-  atmosphere_and_mood: Reverent, tranquil, mysterious, and spiritually liminal
+    Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and
+    clean value separation; lighting should clarify expression, silhouette, material, and emotional
+    rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
+  texture_and_material: >-
+    Render flat cel fills, painted distant plane softness, limited grain, clean ink edges,
+    controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
+  camera_and_composition: >-
+    Compose through silhouette-priority framing, moderate dynamic lensing, readable action or
+    emotion lanes, and subject-first depth without required genre staging as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift,
+    or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe,
+    comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime
+    lineage.
   rendering_and_quality: >-
-    High-clarity mystical anime rendering with controlled sacred tone, balanced ornamental detail, and stable
-    atmospheric depth
+    Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines,
+    denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Gate-depth cadence, ceremonial silhouette rhythm, twilight halo lighting, sacred material authenticity,
-    and restrained supernatural cues
+    Gate depth cadence; ceremonial silhouette rhythm; twilight halo lighting; sacred material
+    authenticity; and restrained supernatural cues; Spirit Shrine Twilight anime style cues
   creative_brief: >-
-    Use Spirit Shrine Twilight as style anchor for reverent liminality: layered ceremonial depth, indigo-amber
-    dusk, and mist-lit sacred atmosphere should transfer without requiring a shrine, torii, forest, ritual
-    clothing, or fixed folklore scene.
+    Use Spirit Shrine Twilight after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Gate
+    depth cadence, ceremonial silhouette rhythm, twilight halo lighting, sacred material
+    authenticity, and restrained supernatural cues, Spirit Shrine Twilight anime style cues, color
+    logic, lighting, material finish, composition rhythm, mood pressure, and quality controls
+    without requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
+    composition.
 avoidRules:
   - photoreal
-  - horror-gore
-  - sci-fi-ui
+  - horror gore
+  - sci fi ui
   - watermark
   - text
   - logo
+  - generic anime filter
+  - canon cast copy
+  - source frame look composition
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-006.webp
 attributes:
-  negativePrompt: photoreal, horror-gore, sci-fi-ui, watermark, text, logo
+  negativePrompt: >-
+    photoreal, horror gore, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy,
+    source frame look composition, canon character copy, title scene copy, literal sample card
+    setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay,
+    3D render look, copied franchise costume, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

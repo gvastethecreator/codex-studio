@@ -13,29 +13,72 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Grounded civic sci-fi procedure with practical engineering, maintenance realism, bureaucratic calm,
-    utility palettes, and low-key humor
+    Municipal Machine Procedure acts as a transferable anime-battle/worlds router: Municipal Machine
+    Procedure, civic machine procedure style grammar with maintenance grids, utility color,
+    practical engineering, wet asphalt reflections, and procedural humor; combine it with mecha and
+    cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere,
+    cockpit-independent scale, and machine-emotion tension; named titles, studios, or lineage words
+    may guide style, but they must not require canon cast, title-scene replication, screenshots,
+    logos, or one fixed card concept.
   subject_treatment: >-
-    Hard-edged machinery, panel-line discipline, procedural diagram shapes, maintenance geometry, and civic
-    layout grids.
-  color_and_tone: Utility white, municipal blue, hazard orange, wet asphalt gray, paperwork beige, and hydraulic steel.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
+    Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids,
+    utility color, practical engineering, wet asphalt reflections as portable contour, motion
+    grammar, surface language, and emotional pressure without requiring canon elements or a default
+    action setup.
+  color_and_tone: >-
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Municipal Machine Procedure, civic
+    machine procedure style grammar with maintenance grids, utility color, practical engineering,
+    wet asphalt reflections choose accent intensity, value contrast, emotional temperature, and
+    power-system separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    Overcast practical light, fluorescent bay glow, wet-surface reflections, and low-drama operational
-    highlights.
-  texture_and_material: Brushed metal, rubber seals, rain sheen, concrete grain, paperwork flatness, and oily mechanical joints.
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Municipal Machine Procedure, civic machine procedure style grammar
+    with maintenance grids, utility color, practical engineering, wet asphalt reflections without
+    replacing prompt X with a stock anime frame.
+  texture_and_material: >-
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Municipal
+    Machine Procedure, civic machine procedure style grammar with maintenance grids, utility color,
+    practical engineering, wet asphalt reflections controlled, denoised, and coherent across bodies,
+    objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Procedure-first perspective, inspection-angle framing, and infrastructure depth without fixed city or
-    cockpit views.
-  atmosphere_and_mood: Procedural, grounded, urban, practical
-  rendering_and_quality: High-detail grounded sci-fi anime finish with practical machines, precise engineering, and civic realism.
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Municipal Machine
+    Procedure, civic machine procedure style grammar with maintenance grids, utility color,
+    practical engineering, wet asphalt reflections into reusable perspective, timing, rhythm, scale,
+    cut-in, and negative-space rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Civic machinery logic, maintenance grids, paperwork humor, utility color, procedural diagrams, and
-    practical engineering surfaces
+    Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids,
+    utility color, practical engineering, wet asphalt reflections; armored contour, mechanical
+    massing, modular joints, engineered surface rhythm, scale cues, and human-machine pressure
+    translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass, hydraulic
+    grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale compression,
+    machinery diagonals, grid overlays without readable UI, service-bay density, orbital symmetry,
+    and high-speed hardware lanes; premium mecha/cyber anime finish with readable hardware, denoised
+    glow, no plastic 3D render, and no cockpit/control-room dependency
   creative_brief: >-
-    Use Patlabor as style anchor for municipal machine procedure. Any prompt should feel maintained,
-    regulated, useful, and civically grounded. If the subject can become machinery, give it service panels,
-    maintenance labels, rubber seals, or civic robot practicality; police, named cities, patrols, and public
-    incidents remain optional.
+    Apply Municipal Machine Procedure after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Municipal Machine Procedure, civic machine procedure style grammar with maintenance grids,
+    utility color, practical engineering, wet asphalt reflections, and procedural humor, mecha and
+    cyberpunk anime grammar with engineered silhouettes, hardware logic, neon atmosphere,
+    cockpit-independent scale, and machine-emotion tension, finish discipline, and negative controls
+    without forcing canon cast, title scene, screenshot, card pose, default monster, default combat
+    prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -49,12 +92,34 @@ avoidRules:
   - watermark
   - text
   - signature
+  - named franchise likeness
+  - cockpit UI
+  - drone weapon
+  - robot battle
+  - readable paperwork
+  - garage corridor lock
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-222.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, named franchise likeness, cockpit UI, drone weapon, robot
+    battle, readable paperwork, garage corridor lock, plastic 3d robot render, cockpit source-frame
+    look, readable UI panel, fixed canon character, title scene replication, required source-frame
+    look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy
+    darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

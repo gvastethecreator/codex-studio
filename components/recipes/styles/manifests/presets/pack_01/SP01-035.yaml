@@ -12,28 +12,80 @@ tags:
   - photography-and-realism
   - lighting-techniques
 visualDna:
-  aesthetic: Classic chiaroscuro lighting
-  subject_treatment: Triangular highlight geometry
-  color_and_tone: Warm, dark shadows
-  lighting_and_shadow: 45 degree single source
-  texture_and_material: Painterly tonal falloff
+  aesthetic: >-
+    Rembrandt Lighting acts as a transferable photographic style router: begin from Classic
+    chiaroscuro lighting, Chiaroscuro, and lighting-first photographic system where the preset is
+    defined by source placement, exposure behavior, shadow design, and light color, then apply the
+    photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Triangular highlight geometry; preserve the prompt subject
+    while letting light carve silhouette, volume, specular response, motion, and separation, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Warm, dark shadows; treat color as a consequence of source temperature, gel choice,
+    exposure rolloff, neon spill, flame warmth, or low-light sensor response, with value separation
+    and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use 45 degree single source; make source direction, softness, beam width, bounce, haze,
+    catchlight, or motion trail legible enough to be the main style cue, preserving believable
+    exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Painterly tonal falloff; show how surfaces react to the light through rim edges, glossy
+    kick, matte falloff, fog particles, grain, or illuminated dust, avoiding both waxy smoothing and
+    noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Rembrandt Lighting: lens choice, crop distance, depth of field, and focal hierarchy
-    support 2. Lighting Techniques without generic framing.
-  atmosphere_and_mood: Serious, artistic
-  rendering_and_quality: Dramatic classical studio
-  key_features: Chiaroscuro
+    Compose through Rembrandt Lighting source-visible light design, intentional shadow shape,
+    controlled exposure, and readable illumination behavior; compose to reveal the light event
+    through silhouettes, negative space, beam paths, frontal flash flattening, or long-exposure
+    gesture, with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Serious, artistic; derive mood from theatrical control, nocturnal pressure,
+    warmth, mystery, kinetic exposure, or graphic shadow tension, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Dramatic classical studio; finish with photographic exposure discipline, controlled
+    highlights, clean shadow structure, and no random glow pasted over the image, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Classic chiaroscuro lighting; Chiaroscuro; Warm, dark shadows; 45 degree single source;
+    Rembrandt Lighting source-visible light design, intentional shadow shape, controlled exposure,
+    and readable illumination behavior
   creative_brief: >-
-    Apply Rembrandt lighting to the input with a single 45-degree source, warm tonal falloff, triangular
-    highlight logic, and painterly chiaroscuro depth. Keep reveal/conceal geometry while freeing it from
-    portrait faces, cheeks, or skin.
+    Apply Rembrandt Lighting as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Classic chiaroscuro lighting, Warm, dark shadows, 45 degree single source,
+    Painterly tonal falloff, and Rembrandt Lighting source-visible light design, intentional shadow
+    shape, controlled exposure, and readable illumination behavior through optics, exposure,
+    palette, surface response, timing, and finish without requiring the card image's original
+    subject.
 avoidRules:
   - flat
   - bright
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - flat lighting
+  - random glow overlay
+  - muddy darkness
+  - blown highlight wash
+  - no light source logic
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-035.webp
 attributes:
-  negativePrompt: flat, bright
+  negativePrompt: >-
+    flat, bright, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
+    plastic render, watermark, readable text, signature, low resolution, flat lighting, random glow
+    overlay, muddy darkness, blown highlight wash, no light source logic
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

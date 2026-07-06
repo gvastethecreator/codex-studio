@@ -7,229 +7,336 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP09-043',
     name: 'Slime/Goo',
     category: '5. Elemental And FX',
-    negativePrompt: 'solid, dry',
+    negativePrompt:
+      'solid, dry, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Nickelodeon slime',
-      subject_treatment: 'Drips',
-      color_and_tone: 'Neon Green',
-      lighting_and_shadow: 'Wet gloss',
-      texture_and_material: 'Viscous liquid',
-      camera_and_composition: 'Melting',
-      atmosphere_and_mood: 'Playful, sticky',
-      rendering_and_quality: 'Gross, fun',
-      key_features: 'Drips',
+      aesthetic:
+        'Slime/Goo behaves like a controlled elemental effect layer: start from Nickelodeon slime, Viscous liquid, and Melting, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Drips: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Neon Green as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Wet gloss define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Slime/Goo without hiding the prompt subject.',
+      texture_and_material:
+        'Render Viscous liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Melting as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Playful, sticky by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Gross, fun material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Nickelodeon slime; Drips; Viscous liquid; Wet gloss; Melting',
       creative_brief:
-        'Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd. Use Slime/Goo as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Slime/Goo as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd. Use Slime/Goo as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-051',
     name: 'Fire & Magma',
     category: '5. Elemental And FX',
-    negativePrompt: 'cold, blue',
+    negativePrompt:
+      'cold, blue, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Lava flow',
-      subject_treatment: 'Crust cracks',
-      color_and_tone: 'Orange, Black, Red',
-      lighting_and_shadow: 'Emissive glow',
-      texture_and_material: 'Rock and liquid',
-      camera_and_composition: 'Melting rock',
-      atmosphere_and_mood: 'Dangerous, intense',
-      rendering_and_quality: 'Volcanic, hot',
-      key_features: 'Heat',
+      aesthetic:
+        'Fire & Magma behaves like a controlled elemental effect layer: start from Lava flow, Rock and liquid, and Melting rock, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Crust cracks: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Orange, Black, Red as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Emissive glow define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Fire & Magma without hiding the prompt subject.',
+      texture_and_material:
+        'Render Rock and liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Melting rock as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Dangerous, intense by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Volcanic, hot material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Lava flow; Crust cracks; Rock and liquid; Emissive glow; Melting rock',
       creative_brief:
-        'Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty of a planet still forming. Use Fire & Magma as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Fire & Magma as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Summon the living heat of flowing magma where black crust cracks open to reveal rivers of orange incandescence pulsing beneath, a material that is its own illumination. The skin should feel like a cooling scab over liquid fire, the fissures mapping the flow of creation itself across a surface of elemental birth. Capture the terror and beauty of a planet still forming. Use Fire & Magma as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-052',
     name: 'Electricity/Lightning',
     category: '5. Elemental And FX',
-    negativePrompt: 'fire, smoke',
+    negativePrompt:
+      'fire, smoke, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Tesla coil arc',
-      subject_treatment: 'Jagged bolts',
-      color_and_tone: 'Blue, White, Purple',
-      lighting_and_shadow: 'Bright flash',
-      texture_and_material: 'Plasma',
+      aesthetic:
+        'Electricity/Lightning behaves like a controlled elemental effect layer: start from Tesla coil arc, Plasma, and Branching, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Jagged bolts: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Blue, White, Purple as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Bright flash define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Electricity/Lightning without hiding the prompt subject.',
+      texture_and_material:
+        'Render Plasma through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
       camera_and_composition:
-        'Compose for Electricity/Lightning using its key spatial cues: Branching.',
-      atmosphere_and_mood: 'Shocking, fast',
-      rendering_and_quality: 'High energy',
-      key_features: 'Branching',
+        'Compose around Branching as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Shocking, fast by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with High energy material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Tesla coil arc; Jagged bolts; Plasma; Bright flash; Branching',
       creative_brief:
-        'Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance. Capture the architecture of pure force, energy made visible as sculpture. Use Electricity/Lightning as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Electricity/Lightning as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose the branching violence of electrical discharge where plasma bolts fork through darkness in veins of blue-white-purple energy, each tendril a tree of light that grows and dies in the same instantaneous moment. The arc should feel fierce and directional, a pathfinding intelligence seeking ground through the path of least resistance. Capture the architecture of pure force, energy made visible as sculpture. Use Electricity/Lightning as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-053',
     name: 'Smoke/Fog',
     category: '5. Elemental And FX',
-    negativePrompt: 'solid object',
+    negativePrompt:
+      'hard-edged clutter, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Thick fog',
-      subject_treatment: 'Soft gradients',
-      color_and_tone: 'Grey, White',
-      lighting_and_shadow: 'Diffused',
-      texture_and_material: 'Gaseous',
-      camera_and_composition: 'Turbulence',
-      atmosphere_and_mood: 'Mysterious, blind',
-      rendering_and_quality: 'Atmospheric, soft',
-      key_features: 'Density',
+      aesthetic:
+        'Smoke/Fog behaves like a controlled elemental effect layer: start from Thick fog, Gaseous, and Turbulence, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Soft gradients: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Grey, White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Diffused define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Smoke/Fog without hiding the prompt subject.',
+      texture_and_material:
+        'Render Gaseous through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Turbulence as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Mysterious, blind by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Atmospheric, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Thick fog; Soft gradients; Gaseous; Diffused; Turbulence',
       creative_brief:
-        'Apply thick fog as volumetric treatment around the input: grey-white gradients, softened edges, staged loss of detail, cool damp density, and slow turbulence veiling form. Preserve recognizable subject cues as half-seen silhouettes or partial contours; avoid replacing the input with empty mist unless the prompt already asks for abstraction.',
+        "Route any subject through Smoke/Fog as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Apply thick fog as volumetric treatment around the input: grey-white gradients, softened edges, staged loss of detail, cool damp density, and slow turbulence veiling form. Preserve recognizable subject cues as half-seen silhouettes or partial contours; avoid replacing the input with empty mist unless the prompt already asks for abstraction.",
     },
   },
   {
     id: 'SP09-054',
     name: 'Water Splash',
     category: '5. Elemental And FX',
-    negativePrompt: 'still water',
+    negativePrompt:
+      'still water, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'High speed liquid',
-      subject_treatment: 'Droplets',
-      color_and_tone: 'Clear, Blue tint',
-      lighting_and_shadow: 'Refractive, Caustic',
-      texture_and_material: 'Liquid',
-      camera_and_composition: 'Surface tension',
-      atmosphere_and_mood: 'Refreshing, dynamic',
-      rendering_and_quality: 'Fresh, clean',
-      key_features: 'Droplets',
+      aesthetic:
+        'Water Splash behaves like a controlled elemental effect layer: start from High speed liquid, Liquid, and Surface tension, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Droplets: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Clear, Blue tint as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Refractive, Caustic define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Water Splash without hiding the prompt subject.',
+      texture_and_material:
+        'Render Liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Surface tension as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Refreshing, dynamic by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Fresh, clean material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'High speed liquid; Droplets; Liquid; Refractive, Caustic; Surface tension',
       creative_brief:
-        'Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful. Use Water Splash as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Water Splash as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Capture the frozen ballet of water in mid-splash where droplets hang suspended in a corona of liquid tension, each sphere a tiny lens bending light through its crystalline transparency. Surface tension should feel stretched to its absolute limit, a moment of chaos ordered by physics into fleeting perfection. Render the sculpture of the instantaneous, a splash arrested at its most beautiful. Use Water Splash as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-056',
     name: 'Plasma/Energy',
     category: '5. Elemental And FX',
-    negativePrompt: 'fire, gas',
+    negativePrompt:
+      'fire, gas, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Sci-fi shield',
-      subject_treatment: 'Forcefield',
-      color_and_tone: 'Neon Cyan/Magenta',
-      lighting_and_shadow: 'Glowing',
-      texture_and_material: 'Energy ripple',
-      camera_and_composition: 'Warping',
-      atmosphere_and_mood: 'Futuristic, protected',
-      rendering_and_quality: 'Sci-fi, shield',
-      key_features: 'Hex grid (optional)',
+      aesthetic:
+        'Plasma/Energy behaves like a controlled elemental effect layer: start from Sci-fi shield, Energy ripple, and Warping, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Forcefield: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Neon Cyan/Magenta as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Glowing define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Plasma/Energy without hiding the prompt subject.',
+      texture_and_material:
+        'Render Energy ripple through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Warping as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Futuristic, protected by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Sci-fi, shield material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Sci-fi shield; Forcefield; Energy ripple; Glowing; Warping',
       creative_brief:
-        'Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the membrane between safety and annihilation, protection rendered as light. Use Plasma/Energy as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Plasma/Energy as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Render the impossible physics of an energy shield where ripples of neon cyan and magenta race across an invisible surface like pebbles dropped in pure light, the forcefield pattern buzzing with contained power. The barrier should feel simultaneously present and immaterial, a force made visible through its own distortion of space. Capture the membrane between safety and annihilation, protection rendered as light. Use Plasma/Energy as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-057',
     name: 'Oil on Water',
     category: '5. Elemental And FX',
-    negativePrompt: 'clean water',
+    negativePrompt:
+      'clean water, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Puddle rainbow',
-      subject_treatment: 'Swirls',
-      color_and_tone: 'Thin film interference',
-      lighting_and_shadow: 'Reflective',
-      texture_and_material: 'Liquid',
-      camera_and_composition: 'Fluid',
-      atmosphere_and_mood: 'Dirty but pretty',
-      rendering_and_quality: 'Iridescent, fluid',
-      key_features: 'Rainbow',
+      aesthetic:
+        'Oil on Water behaves like a controlled elemental effect layer: start from Puddle rainbow, Liquid, and Fluid, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Swirls: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Thin film interference as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Reflective define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Oil on Water without hiding the prompt subject.',
+      texture_and_material:
+        'Render Liquid through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Fluid as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Dirty but pretty by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Iridescent, fluid material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Puddle rainbow; Swirls; Liquid; Reflective; Fluid',
       creative_brief:
-        'Compose oil-on-water interference as fluid color behavior over the input: thin-film rainbow swirls, magenta-cyan-gold calligraphy, dark liquid underlayer, and mesmerizing surface contamination. If puddle, water, street, or industrial context exists, reinforce it; otherwise use iridescent film as abstract overlay without forcing parking lot or gutter. Use Oil on Water as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Oil on Water as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose oil-on-water interference as fluid color behavior over the input: thin-film rainbow swirls, magenta-cyan-gold calligraphy, dark liquid underlayer, and mesmerizing surface contamination. If puddle, water, street, or industrial context exists, reinforce it; otherwise use iridescent film as abstract overlay without forcing parking lot or gutter. Use Oil on Water as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-058',
     name: 'Sparks',
     category: '5. Elemental And FX',
-    negativePrompt: 'fire',
+    negativePrompt:
+      'fire, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Grinder sparks',
-      subject_treatment: 'Trails',
-      color_and_tone: 'Orange, Yellow, White',
-      lighting_and_shadow: 'Point lights',
-      texture_and_material: 'Particle',
-      camera_and_composition: 'Motion blur',
-      atmosphere_and_mood: 'Intense, work',
-      rendering_and_quality: 'Industrial, hot',
-      key_features: 'Trajectory',
+      aesthetic:
+        'Sparks behaves like a controlled elemental effect layer: start from Grinder sparks, Particle, and Motion blur, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Trails: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Orange, Yellow, White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Point lights define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Sparks without hiding the prompt subject.',
+      texture_and_material:
+        'Render Particle through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Motion blur as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Intense, work by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Industrial, hot material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Grinder sparks; Trails; Particle; Point lights; Motion blur',
       creative_brief:
-        'Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal against wheel. Use Sparks as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Sparks as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Render the streaking light-trails of grinding sparks spraying outward in arcs of orange to white, each particle a tiny sun burning its brief trajectory through industrial darkness with motion blur carrying the velocity. The point lights should illuminate the surrounding space in warm pulses, creating a constellation of brief fires. Capture the beauty of friction, light born from the resistance of metal against wheel. Use Sparks as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-059',
     name: 'Soap Bubbles',
     category: '5. Elemental And FX',
-    negativePrompt: 'plastic ball',
+    negativePrompt:
+      'plastic ball, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Floating spheres',
-      subject_treatment: 'Thin film',
-      color_and_tone: 'Iridescent',
-      lighting_and_shadow: 'Reflective',
-      texture_and_material: 'Liquid surface',
-      camera_and_composition: 'Sphere',
-      atmosphere_and_mood: 'Light, fun',
-      rendering_and_quality: 'Delicate, childhood',
-      key_features: 'Transparency',
+      aesthetic:
+        'Soap Bubbles behaves like a controlled elemental effect layer: start from Floating spheres, Liquid surface, and Sphere, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Thin film: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Iridescent as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Reflective define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Soap Bubbles without hiding the prompt subject.',
+      texture_and_material:
+        'Render Liquid surface through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Sphere as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Light, fun by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Delicate, childhood material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Floating spheres; Thin film; Liquid surface; Reflective; Sphere',
       creative_brief:
-        'Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light before it pops. Use Soap Bubbles as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Soap Bubbles as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light before it pops. Use Soap Bubbles as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-061',
     name: 'Dry Ice Fog',
     category: '5. Elemental And FX',
-    negativePrompt: 'steam, hot',
+    negativePrompt:
+      'steam, hot, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Heavy floor fog',
-      subject_treatment: 'Rolling clouds',
-      color_and_tone: 'White',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Dense gas',
-      camera_and_composition: 'Heavy gas',
-      atmosphere_and_mood: 'Eerie, stage',
-      rendering_and_quality: 'Low, cold, theatrical',
-      key_features: 'Low lying',
+      aesthetic:
+        'Dry Ice Fog behaves like a controlled elemental effect layer: start from Heavy floor fog, Dense gas, and Heavy gas, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Rolling clouds: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use White as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Dry Ice Fog without hiding the prompt subject.',
+      texture_and_material:
+        'Render Dense gas through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Heavy gas as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Eerie, stage by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Low, cold, theatrical material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Heavy floor fog; Rolling clouds; Dense gas; Soft; Heavy gas',
       creative_brief:
-        'Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to ground the subject without requiring a theatre scene.',
+        "Route any subject through Dry Ice Fog as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Apply dry-ice fog as low cold atmosphere around the input: dense white clouds that pool and pour like liquid, gravity-hugging volume, soft theatrical light, and liminal concealment near the base of forms. If floor, stage, ritual, or object base exists, make fog gather there; otherwise use low-lying vapor to ground the subject without requiring a theatre scene.",
     },
   },
   {
     id: 'SP09-062',
     name: 'Confetti',
     category: '5. Elemental And FX',
-    negativePrompt: 'trash',
+    negativePrompt:
+      'trash, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Falling paper bits',
-      subject_treatment: 'Rectangles',
-      color_and_tone: 'Multi-colored',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Paper',
-      camera_and_composition: 'Falling',
-      atmosphere_and_mood: 'Happy, party',
-      rendering_and_quality: 'Celebration, mess',
-      key_features: 'Random rotation',
+      aesthetic:
+        'Confetti behaves like a controlled elemental effect layer: start from Falling paper bits, Paper, and Falling, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Rectangles: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Multi-colored as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Flat define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Confetti without hiding the prompt subject.',
+      texture_and_material:
+        'Render Paper through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Falling as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Happy, party by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Celebration, mess material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Falling paper bits; Rectangles; Paper; Flat; Falling',
       creative_brief:
-        'Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics of joy. Capture celebration fragmented into geometry. Use Confetti as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Confetti as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose the joyful chaos of confetti suspended mid-fall in a frozen blizzard of colored rectangles, each scrap a tiny flag of celebration caught between release and landing, random rotation creating a sense of arrested motion across the frame. The paper bits should feel weightless and plentiful, a democracy of color scattered by the physics of joy. Capture celebration fragmented into geometry. Use Confetti as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-067',
     name: 'Snow (Powder)',
     category: '5. Elemental And FX',
-    negativePrompt: 'ice, slush',
+    negativePrompt:
+      'ice, slush, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Fresh snowfall',
-      subject_treatment: 'Soft mounds',
-      color_and_tone: 'White, Blue shadow',
-      lighting_and_shadow: 'Subsurface scattering',
-      texture_and_material: 'Fluffy',
-      camera_and_composition: 'Compression',
-      atmosphere_and_mood: 'Quiet, cold',
-      rendering_and_quality: 'Winter, soft',
-      key_features: 'Sparkle',
+      aesthetic:
+        'Snow (Powder) behaves like a controlled elemental effect layer: start from Fresh snowfall, Fluffy, and Compression, then turn motion, temperature, particles, translucency, refraction, glow, and transient energy behavior into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Soft mounds: preserve identity and pose while letting forms emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use White, Blue shadow as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Subsurface scattering define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Snow (Powder) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Fluffy through flow direction, particle density, turbulence, glow falloff, splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Compression as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Quiet, cold by using movement, danger, spectacle, instability, temperature, and sensory intensity; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Winter, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Fresh snowfall; Soft mounds; Fluffy; Subsurface scattering; Compression',
       creative_brief:
-        'Compose the soft geometry of fresh powder snow mounding in gentle drifts, where subsurface scattering turns the white into pale blue in the shadows and each flake catches a microscopic sparkle of winter light. The surface must feel cold and fluffy, a blanket of frozen silence that softens every edge it touches. Capture the quiet of new snow, the world rendered in a single note of white. Use Snow as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Snow (Powder) as a transferable elemental/FX visual system while preserving the prompt's subject, action, and setting. Compose the soft geometry of fresh powder snow mounding in gentle drifts, where subsurface scattering turns the white into pale blue in the shadows and each flake catches a microscopic sparkle of winter light. The surface must feel cold and fluffy, a blanket of frozen silence that softens every edge it touches. Capture the quiet of new snow, the world rendered in a single note of white. Use Snow as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -110,21 +110,21 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A vertical editorial graphic card with one symbolic subject or modular visual system, clear hierarchy, poster-safe negative space, and no UI or dashboard screenshot, readable text, room scene, or prop clutter.',
 
   pack_05__70s_and_80s_retro_anime:
-    'A retro anime keyframe with one original adventurer, mechanical or city backdrop, dramatic pose, painted background, expressive face, and practical props suited to vintage cel-era treatment.',
+    'A retro anime style-card whose focal concept is chosen from the preset: broadcast-era hero silhouette, vehicle/mecha fragment, pulp space action, rogue object, or painted environment beat. Let cel-era color, line economy, analog grain, and staging carry the style instead of defaulting to a pin-up, generic hero, or copied franchise setup.',
   pack_05__90s_golden_era:
-    'A dramatic 1990s anime-inspired keyframe with one original hero, moody urban or fantasy background, strong silhouette, cinematic cel lighting, and emotional close-to-mid shot staging.',
+    'A 1990s anime style-card built around the preset identity: action figure, noir profile, machine detail, psychic symbol, quiet object, or dramatic environment can lead when appropriate. Use cel shadows, painted depth, analog atmosphere, and expressive composition without defaulting to one attractive protagonist template.',
   pack_05__2000s_classics:
-    'An early-2000s anime adventure scene with one original character, layered environment, energetic pose, clean background details, and enough color variety for era-specific digital-cel styling.',
+    'An early-2000s anime style-card with a preset-specific anchor: character acting, costume fragment, magical object, tech detail, sports/performance beat, or environment slice. Emphasize digital-cel polish, saturated accents, and era-specific compositing rather than a generic adventure pose.',
   pack_05__modern_shonen_and_action:
-    'A modern action anime battle moment with one original fighter, motion arcs, impact energy, dramatic camera angle, debris, layered background, and readable costume details without referencing any franchise.',
+    'A modern shonen/action style-card with a preset-specific action concept: martial motion, elastic adventure, occult pressure, psychic rupture, comedy impact, or strategic movement. Characters are allowed, but the first read should be the preset grammar, not a reusable sexy/fighter pose or franchise likeness.',
   pack_05__action:
-    'A character-led anime action keyframe with one original protagonist, readable pose, motion arcs, impact energy, clean cel silhouette, and a simple support environment chosen for the preset. Keep action legible without weapon-first framing, franchise likeness, corridor defaults, market/library aisles, cameras, or noisy debris overload.',
+    'An anime action style-card with a clear preset-led concept: impact field, athletic gesture, machine-speed fragment, energy geometry, or original protagonist when that best proves the style. Keep action legible without weapon-first framing, franchise likeness, corridor defaults, market/library aisles, cameras, or noisy debris overload.',
   pack_05__shojo_magical_girl_and_visionary_classics:
     'An emotional anime portrait or character duet with expressive eyes, elegant costuming, symbolic props, soft or celestial background motifs, and a romantic, magical, or visionary dramatic atmosphere.',
   pack_05__mecha_and_cyberpunk:
-    'A vertical scene with an original pilot, android, or mecha detail in a neon industrial environment, visible machinery, reflective armor, cockpit or alley context, and hard-edged sci-fi design.',
+    'A mecha/cyberpunk anime style-card with a preset-specific focal concept: pilot, android, armor fragment, municipal machine, surveillance grid, beam-opera geometry, cyber-goth relic, or neon infrastructure. Machinery, light logic, and technical mood should lead; do not default to a sensual bodysuit figure or generic alley.',
   pack_05__dark_fantasy_and_seinen:
-    'A dark fantasy or mature anime scene with one original character, ruined architecture, ominous atmosphere, textured costume, dramatic shadows, and grounded narrative weight.',
+    'A dark fantasy/seinen anime style-card chosen from the preset: moral-thriller stillness, abyssal lure, baroque decadence, winter suspicion, psychological pressure, cursed material, or original adult figure when useful. Keep it adult and intense without collapsing into the same grim hero portrait, sexy figure, or generic ruin.',
   pack_05__studio_masterpieces:
     'A poetic anime film still with one original traveler in a richly painted natural or urban environment, wind, sky, warm human detail, layered depth, and quiet cinematic emotion.',
   pack_05__slice_of_life_and_moe:
@@ -269,17 +269,19 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
     'A vertical x-punk digital-painting style card built around primitive, stone, bone, salvage, and low-tech survival invention with curated editorial sensibility: one memorable protagonist whose posture, garment shape, settlement background, weather, and handmade world reveal the subtype. Avoid American fantasy RPG hero cards, full-body adventurer poses, leather-pouch costumes, generic cloaks, young rugged protagonist sameness, object-only artifact cards, and worker-crew repetition. Use folk-modernist poster structure, handmade material poetry, chunky tactile shapes, controlled roughness, and varied crops/compositions rather than generic fantasy cave, documentary prehistoric realism, or noisy survival concept art.',
 
   pack_17__dark_fantasy_realms:
-    'A portrait medieval dark-fantasy RPG illustration card with one original knight, relic, monster, cursed shrine, fortress fragment, or ruin silhouette as the clear focal anchor. Use graphic digital painting, defined linework, broad midtone color planes, simple edge lighting, visible detail, ash, iron, stone, sacred decay, and solemn fantasy weight without photorealistic rendering, micro-detail armor, mostly-black palettes, franchise likeness, explicit gore, or heroic-clean polish.',
+    'A portrait medieval dark-fantasy RPG illustration card built from the exact preset concept, not a stock knight, ruin, or monster formula. Use graphic digital painting, defined linework, broad midtone color planes, simple edge lighting, ash, iron, stone, sacred decay, and solemn fantasy weight without photorealistic rendering, micro-detail armor, mostly-black palettes, franchise likeness, explicit gore, or heroic-clean polish.',
   pack_17__hunter_gothic_and_plague_courts:
-    'A portrait gothic medieval-horror graphic illustration card with one original hunter, plague court figure, reliquary, cathedral object, beast silhouette, or moonlit alley fragment as the focal anchor. Use defined ink-like contours, broad color planes, simple readable light, baroque trim, clean fog shapes, wax, leather, surgical relic detail, crimson moon accents, and ornate dread without photorealistic rendering, dense costume micro-detail, mostly-black palettes, copied game identities, or graphic gore.',
+    'A portrait gothic medieval-horror graphic illustration card built from the exact preset concept, not a repeated hunter, plague mask, alley, or court-room formula. Use defined ink-like contours, broad color planes, simple readable light, baroque trim, clean fog shapes, wax, leather, surgical relic detail, crimson moon accents, and ornate dread without photorealistic rendering, dense costume micro-detail, mostly-black palettes, copied game identities, or graphic gore.',
   pack_17__acid_dungeon_zine:
-    'A portrait underground dungeon-zine style-card with one chunky original medieval monster, hooded cult figure, skull-armored knight, occult relic, castle, or bestiary icon as the focal anchor. Use heavy clean black xerox ink, acid risograph colors, controlled paper texture, boxed-card energy, thick borders, tidy halftone, and symbol-like marks that are not readable text. Keep dark areas as solid readable black shapes, not noisy artifact fields.',
+    'A portrait underground dungeon-zine style-card built from the exact preset concept, not a repeated cultist, skull knight, castle, or monster-manual shortcut. Use heavy clean black xerox ink, acid risograph colors, controlled paper texture, boxed-card energy, thick borders, tidy halftone, and symbol-like marks that are not readable text. Keep dark areas as solid readable black shapes, not noisy artifact fields.',
   pack_17__futuristic_medieval_and_rune_tech:
-    'A portrait futuristic-medieval graphic illustration card with one original rune-tech knight, starforge relic, cyber-castle fragment, mech reliquary, bio-arcane catacomb specimen, or stained-glass sci-fantasy emblem as the focal anchor. Fuse clean digital painting, bold armor shapes, simple luminous edge lighting, flat cathedral geometry, limited circuitry, glyph-like non-readable motifs, and ancient-future material contrast without dense mesh patterns or photoreal material simulation.',
+    'A portrait futuristic-medieval graphic illustration card built from the exact preset concept, not a repeated rune-knight, cyber-castle, mech bust, or stained-glass shortcut. Fuse clean digital painting, bold armor shapes, simple luminous edge lighting, flat medieval geometry, limited circuitry, glyph-like non-readable motifs, and ancient-future material contrast without dense mesh patterns or photoreal material simulation.',
   pack_17__apocalyptic_wargame_and_inked_dungeon:
-    'A portrait apocalyptic medieval wargame and inked dungeon RPG illustration card with one original trench crusader, gothic warband relic, stress-ink dungeon hero, sepulcher banner, black-powder shrine, witch-knight, or bone-script monastery fragment as the clear focal anchor. Use digital painting plus etched ink lines, simple candlelight, readable midtones, heraldic armor, tactical silhouettes, and dramatic design shapes without copied tabletop franchise designs, readable text, photorealism, dense miniature texture, or excessive dirty noise.',
+    'A portrait apocalyptic medieval wargame or inked dungeon RPG illustration card built from the exact preset concept, not a repeated crusader, warband, dungeon doorway, or banner formula. Use digital painting plus etched ink lines, simple candlelight, readable midtones, heraldic armor language, tactical silhouettes, and dramatic design shapes without copied tabletop franchise designs, readable text, photorealism, dense miniature texture, or excessive dirty noise.',
   pack_17__monochrome_tarot_and_bestiary_plates:
-    'A portrait medieval tarot, monochrome fantasy plate, or bestiary-card illustration with one original omen figure, penitent icon, survival-dungeon relic, heraldic beast, illuminated manuscript creature, stained-glass monster, tapestry beast, or field-guide specimen as the focal anchor. Use clean black ink, warm paper, open white space, broad value groups, crisp contours, sparse controlled wash, and optional single muted accent. Avoid photorealism, crushed black, dirty gray grain, dense cross-hatching carpets, chainmail mesh, readable text, copied game identity, or overpacked occult symbols.',
+    'A portrait medieval tarot, monochrome fantasy plate, manuscript, or bestiary-card illustration built from the exact preset concept, not a repeated omen figure, beast, field-guide, or oracle animal formula. Use clean black ink, warm paper, open white space, broad value groups, crisp contours, sparse controlled wash, and optional single muted accent. Avoid photorealism, crushed black, dirty gray grain, dense cross-hatching carpets, chainmail mesh, readable text, copied game identity, or overpacked occult symbols.',
+  pack_17__weird_medieval_editorial:
+    'A portrait adult weird-medieval editorial card built from the exact preset concept, not a stock knight, saint, monster, plague mask, or castle formula. Use clean graphic fantasy illustration, memorable unsettling design decisions, broad matte planes, readable silhouettes, controlled ornament, and denoised texture while preserving the preset as style language instead of a fixed scene.',
 };
 
 const PACK06_IMAGEGEN_DENOISE_SUFFIX =
@@ -301,6 +303,146 @@ const PACK10_PATTERN_TEXTURE_KEYS = new Set([
 
 function isPack10PatternTextureKey(key: string) {
   return PACK10_PATTERN_TEXTURE_KEYS.has(key);
+}
+
+const PACK17_CARD_CONCEPTS: Record<string, string> = {
+  'SP17-001':
+    'an ash-choked reliquary guardian or ruin beast silhouette made from stone, bone, bell metal, and funeral light; solemn soulslike weight without copying a boss arena',
+  'SP17-002':
+    'a storm-lit broken oath procession around a cracked gilded treaty monolith, with a disgraced relic-bearer, wet black banners, fractured antler-rune halos, and divine light behaving like judgment rather than holy decoration',
+  'SP17-003':
+    'a mud-stained siege standard, broken shield-wall icon, iron hoarding silhouette, or smoke-flattened war pressure rendered as medieval chronicle force',
+  'SP17-004':
+    'a candlelit saint-machine, relic silhouette, or vertical sacred form cut by stained-pane light; sacred darkness without staging a cathedral room',
+  'SP17-005':
+    'a faceless black-iron heraldic armor mass, reliquary tower, or crusade-shaped slab with red-white graphic geometry and no historical insignia',
+  'SP17-006':
+    'a woven beast, knight, omen figure, or relic profile flattened into damaged tapestry bands with faded wool, thread breaks, and archaic story rhythm',
+  'SP17-007':
+    'an abandoned moonlit hunter trap tableau: silver wires stretched between roof gargoyles, a hooked lantern caught mid-swing, a moth-beast shadow shredded across steep tiles, and only a partial gloved hand or boot edge implying the hunter',
+  'SP17-008':
+    'a beak-mask silhouette, clinical reliquary, or baroque medical object with ruffle shapes, brass-glass ritual polish, candle decay, and plague-court restraint',
+  'SP17-009':
+    'a crimson moon rim around an aristocratic gothic beast, masked figure, or iron-lace silhouette with predatory elegance and old-city tension',
+  'SP17-010':
+    'a glass-and-brass surgical reliquary, masked torso fragment, or ritual instrument form with clinical sacred restraint and no shock-gore focus',
+  'SP17-011':
+    'a mud-sunk bell mask hanging from an empty accusation post, torn linen veil, rope circle, dying torch halos, damp footprints, and fog implying a vanished crowd without showing people',
+  'SP17-012':
+    'a courtly beast emblem, velvet relic, or candlelit heraldic presence with refined gothic unease and ornamental restraint',
+  'SP17-013':
+    'a chunky weird dungeon icon in acid riso color with thick border pressure, occult key shapes, handmade ugly-cute force, and zine immediacy',
+  'SP17-014':
+    'a xeroxed field-guide creature, relic, or dungeon specimen with exaggerated contour, rigid plate balance, and no readable labels',
+  'SP17-015':
+    'a fluorescent skull-candle, necromancy icon, or occult light-form with plate offsets, black silhouette dominance, and clean risograph punch',
+  'SP17-016':
+    'a blacklight dungeon saint-eel coiled through an impossible keyhole, eyes like chapel lamps, neon organ panels, and gross-funny manual energy without becoming a centered mouth-only monster face',
+  'SP17-017':
+    'a spiked heraldic emblem, dungeon-card sigil, or punk occult shield with photocopied contour breaks and loud medieval graphic shapes',
+  'SP17-018':
+    'a degraded pulp silhouette, sorcery relic, or sword-and-sorcery fragment with VHS/tape scan wear, lurid flat color, and dramatic diagonals',
+  'SP17-019':
+    'a future-feudal mount, armor shard, or citadel fragment with ceramic armor, transparent rune shielding, and banner geometry',
+  'SP17-020':
+    'a sealed rune-tech plate fragment, helm reliquary, or oath-hardware torso with servo-joint rhythm, tabard planes, and sacred machinery',
+  'SP17-021':
+    'a glassy prophecy relic, oracle-plane geometry, or analog-glow halo arc with retro-future mysticism and synth-castle color',
+  'SP17-022':
+    'a bulky sacred machine-reliquary mass with halo hardware, armored ceremony, and medieval mecha weight without requiring a full humanoid body',
+  'SP17-023':
+    'a ribbed bio-arcane growth, crystal/cable-vine rhythm, damp bone-rune specimen, or catacomb organism translated into a clean focal design',
+  'SP17-024':
+    'a luminous pane-segmented forge emblem, cosmic halo, sacred metal geometry, and stained-glass starfire structure',
+  'SP17-025':
+    'a mud-heavy martyr banner, relic doorway, iron shrine, or smoke-filtered sacred-war pressure with grimy cathedral weight',
+  'SP17-026':
+    'a chunky tabletop miniature silhouette, warfront plinth, or compact painted faction mass with grimdark clarity and a readable base',
+  'SP17-027':
+    'a tilted torch-cut ink panel of panic geometry where body, creature, object, and shadow tension stay rough, readable, and paper-driven',
+  'SP17-028':
+    'a sepulcher engraving group-mass, tomb banner icon, or funeral warband silhouette with bold cut lines and print-safe solemnity',
+  'SP17-029':
+    'a heavy iron reliquary silhouette with caged glass, furnace-black contrast, penitential geometry, and apocalyptic sacred weight',
+  'SP17-030':
+    'a thorn-arc oath mark, bone charms, wax-lit folk armor silhouette, or covenant relic with witch-knight ritual mood',
+  'SP17-031':
+    'a bone-script defensive relic, stone banner, or monastery siege fragment with carved non-readable marks and scholastic severity',
+  'SP17-032':
+    'circular celestial geometry, banner rhythm, astral feudal ritual pressure, and exorcist-like design language without staging literal exorcism action',
+  'SP17-033':
+    'a textless tarot omen built from bone crown, moth symmetry, tower verticality, sparse support symbols, and horror arcana restraint',
+  'SP17-034':
+    'a single decisive ink plate of a hunched bridge-sized widow-beast with chapel stones fused into its ribs, keyhole chest, buttress-like hands, and old sourcebook authority without extra specimen studies',
+  'SP17-035':
+    'a tall penitential icon, relic, or armor silhouette with brass accents, candle restraint, sorrowful verticality, and baroque devotional pressure',
+  'SP17-036':
+    'a fragile elongated survival icon, bent-metal crown rhythm, moth-worn textile, worn relic material, and pilgrimage exhaustion',
+  'SP17-037':
+    'a blocky woodcut beast, relic, figure, or omen silhouette with carved mark economy and old-paper restraint',
+  'SP17-038':
+    'a flat manuscript creature or odd medieval subject with vellum spacing, gold ornament, clean ink contour, and illuminated codex rhythm',
+  'SP17-039':
+    'a funny-strange marginalia creature, object, or side-note monster with tiny support motifs, dry humor, and textless scholastic weirdness',
+  'SP17-040':
+    'a mirrored heraldic chimera, hybrid subject, or shield-emblem form with bold contour, symmetrical pressure, and plate clarity',
+  'SP17-041':
+    'broad luminous panes forming a centered bestiary icon, sacred subject, or glass creature with halo curves and clear contour',
+  'SP17-042':
+    'a woven courtly creature, subject profile, or legend fragment with thread-block color, flora rhythm, and archaic flatness',
+  'SP17-043':
+    'an unlabeled field-guide specimen with side-view or inset-study clarity, anatomical restraint, parchment space, and wyvern-like intelligence',
+  'SP17-044':
+    'a calm oracle-plate subject with lunar circle geometry, sparse omen marks, parchment ink, and moonlit bestiary poise',
+  'SP17-045':
+    'a forbidden courtly embrace staged as a poisonous relic ceremony: velvet sleeves, bruised flowers, tarnished gold mirror shards, and two near-touching silhouettes whose faces stay partly hidden',
+  'SP17-046':
+    'a pale vellum saint-form shedding moth dust inside a torn paper halo, with candle ash, translucent wing-like folds, and monastic horror kept quiet rather than crowded',
+  'SP17-047':
+    'a salt-white pilgrimage altar half-buried in sun glare, with cracked ceramic offerings, bleached cloth streamers, and one exhausted silhouette reduced to heat-haze geometry',
+  'SP17-048':
+    'a moon-green apothecary reliquary where a sleeping leech-shaped glass vessel, wax seals, damp herbs, and black wood form an elegant non-graphic body-ritual stillness',
+  'SP17-049':
+    'a debt-saint effigy pinned into a black ledger page by wax seals and iron thread, with guilty negative space and no readable writing',
+  'SP17-050':
+    'a crooked feudal carnival execution of taste rather than violence: wormwood banners, paper masks on poles, cheap painted beasts, and a toxic stage with nobody performing',
+  'SP17-051':
+    'an opal-bone masquerade predator revealed only through a cracked ceremonial mask, velvet void, pearl-lit hand, and one crimson etiquette violation',
+  'SP17-052':
+    'a burnt black-parchment siege omen where a tiny bone fortress marker is surrounded by ember diagonals, ash fields, brass pin-stars, and textless tactical dread',
+};
+
+function pack17CardConceptForPreset(preset: StyleRuntimePreset) {
+  return PACK17_CARD_CONCEPTS[preset.id];
+}
+
+const PACK17_CARD_HARD_AVOIDS: Record<string, string> = {
+  'SP17-011':
+    'no central inquisitor, judge, executioner, accused figure, gallows, visible crowd, foreground observers, robed witnesses, literal village trial, torture staging, or hooded-crowd tableau',
+  'SP17-007':
+    'no wide-brim hunter hat, no Bloodborne-like coat silhouette, no full-body rooftop hunter pin-up, no weapon pose, no black-on-black figure, no bird silhouette replacing the moth-beast shadow',
+  'SP17-034':
+    'no crusader, knight hero, cross tabard, cross shield, sword pose, heraldic banner, humanoid armor pin-up, religious military icon, bridge-troll gate scene, generic rock golem, or multi-sketch concept sheet',
+  'SP17-045':
+    'no wedding, ballroom crowd, generic queen portrait, explicit nudity, copied royal costume, readable crest, or safe romance-cover glamour',
+  'SP17-046':
+    'no literal moth swarm, monk portrait, library room, readable manuscript, dusty noise field, angel copy, or saint-icon blandness',
+  'SP17-047':
+    'no desert postcard, oasis fantasy, generic robed traveler, readable map, dark dungeon, clean holy icon, or beige emptiness',
+  'SP17-048':
+    'no gore, medical diagram, pharmacy shelf, jar inventory, readable labels, cute witch shop, or clinical lab scene',
+  'SP17-049':
+    'no readable writing, accountant portrait, office desk, legal courtroom, modern paperwork, literal book cover, or spreadsheet joke',
+  'SP17-050':
+    'no clown portrait, circus tent default, crowd scene, readable sign, cute festival, gore, literal execution, or comedy mascot',
+  'SP17-051':
+    'no ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, vampire cosplay, or porcelain doll cliche',
+  'SP17-052':
+    'no readable map, labels, army panorama, UI markers, chessboard, literal strategy board, or battlefield gore',
+};
+
+function pack17CardHardAvoidForPreset(preset: StyleRuntimePreset) {
+  return PACK17_CARD_HARD_AVOIDS[preset.id];
 }
 
 const CATEGORY_SCENE_ANCHORS: Record<string, string[]> = {
@@ -476,44 +618,49 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Build primitive salvage as designed invention, symbolic material culture, and community craft; avoid American fantasy RPG posing, generic fantasy cave, prehistoric documentary realism, noisy fur detail, or empty rock texture.',
   ],
   pack_17__dark_fantasy_realms: [
-    'Use a ruined bastion, chapel threshold, ash field, broken bridge, or throne-stone fragment with one burdened medieval focal shape and deep negative space.',
-    'Stage the card around weathered armor, sacred stone, funeral ash, tarnished metal, and a single oppressive vertical silhouette.',
-    'Build the frame from decayed medieval architecture, low firelight, cold sky, and one readable curse-bearing subject or relic.',
+    'Use the preset-specific concept as the focal read; support it with ash, iron, stone, sacred decay, funeral light, and deep negative space only where useful.',
+    'Stage dark-fantasy weight through weathered material, oppressive vertical rhythm, damaged heraldry, and moral pressure rather than a default knight, fortress, or boss scene.',
+    'Build the frame from solemn medieval texture and readable curse-bearing design language; avoid stock ruin panoramas and copied game encounters.',
   ],
   pack_17__hunter_gothic_and_plague_courts: [
-    'Use a foggy cathedral lane, plague court antechamber, candlelit reliquary, moonlit roofline, or wrought-iron gate with one clear hunter-gothic focal anchor.',
-    'Stage the card with baroque fabric, leather, wax, mask forms, surgical-metal trim, and one restrained crimson or moonlit accent.',
-    'Build dread through ornate silhouettes, misty negative space, and old-city gothic detail rather than shock imagery or copied costume design.',
+    'Use the preset-specific concept as the focal read; support it with baroque fabric, leather, wax, mask geometry, surgical metal, moonlit contrast, or crimson accents when relevant.',
+    'Stage hunter-gothic dread through ornate silhouettes, clean fog shapes, old-city verticals, and restrained menace rather than a default alley, trial, or mask portrait.',
+    'Build the card from readable gothic pressure and designed negative space; avoid shock imagery, copied costume design, and repeated courtroom or street formulas.',
   ],
   pack_17__acid_dungeon_zine: [
-    'Use a flat poster-card monster or cult figure on neon paper, with heavy clean black ink, thick border logic, controlled stipple, and one acid accent field.',
-    'Stage the image like an underground bestiary card: front-facing creature, skull armor, occult emblem shapes, or tiny castle fragment with no readable text.',
-    'Build the composition from cleaned xerox texture, misregistered color fills, punk dungeon icons, boxed-panel pressure, and a single thumbnail-readable silhouette.',
+    'Use the preset-specific concept as the focal read; support it with heavy clean black ink, neon paper, thick border logic, controlled stipple, and acid color fields.',
+    'Stage zine identity through handmade dungeon-symbol pressure and thumbnail-readable silhouette, not a repeated cultist, skull armor, tiny castle, or front-facing monster shortcut.',
+    'Build the composition from cleaned xerox texture, misregistered color fills, punk dungeon marks, and one bold graphic hierarchy with no readable text.',
   ],
   pack_17__futuristic_medieval_and_rune_tech: [
-    'Use a cyber-citadel gate, starforged chapel relic, rune-lit armor bust, mech reliquary, or cathedral machine fragment with medieval geometry and luminous tech.',
-    'Stage the card around plate armor, stained glass color, circuit filigree, ancient stone, chrome seams, and one clear future-knight focal subject.',
-    'Build ancient-future contrast through hard armor silhouettes, glowing non-readable glyph planes, cathedral depth, and restrained sci-fantasy light.',
+    'Use the preset-specific concept as the focal read; support it with medieval geometry, luminous tech seams, stained-glass color, ancient stone, and restrained circuitry when relevant.',
+    'Stage ancient-future contrast through hard armor logic, relic engineering, glowing non-readable glyph planes, and sacred machine light rather than a default rune knight.',
+    'Build the card with clean medieval sci-fantasy material contrast and readable silhouette; avoid dense mesh, photoreal hard-surface simulation, and repeated cyber-castle gates.',
   ],
   pack_17__apocalyptic_wargame_and_inked_dungeon: [
-    'Use a mud-choked battlefield chapel, miniature-warfront plinth, torchlit dungeon doorway, trench reliquary, or black-powder monastery wall with one readable medieval-apocalypse focal silhouette.',
-    'Stage the card with etched black linework, candle-cut shadows, tactical armor shapes, stained cloth, mud, bone, brass, and one strong accent color kept clean by denoise.',
-    'Build the frame around one original warband, relic, banner, torch-bearing dungeon figure, or siege icon; avoid copied franchise armor, unreadable grime, and noisy dark artifacts.',
+    'Use the preset-specific concept as the focal read; support it with etched black linework, candle-cut shadows, tactical armor language, stained cloth, mud, bone, brass, and one clean accent.',
+    'Stage apocalypse or dungeon pressure through graphic design shape, print-safe grime, and readable silhouette rather than a repeated warband, banner, trench crusader, or doorway scene.',
+    'Build the frame around original medieval-apocalypse vocabulary; avoid copied franchise armor, unreadable grime, and noisy dark artifacts.',
   ],
   pack_17__monochrome_tarot_and_bestiary_plates: [
-    'Use a clean tarot-like icon, medieval bestiary plate, illuminated manuscript creature, penitent shrine, or survival-dungeon relic on warm paper with broad white space.',
-    'Stage the card as a readable black-ink illustration: one large omen figure or beast, 2-3 simple support symbols, smooth wash, and no readable labels, numerals, runes, or captions.',
-    'Build the frame from crisp contours, open ivory paper, broad black shapes, sparse accent color, and controlled plate margins rather than dark realism, noisy hatch carpets, or texture-heavy horror.',
+    'Use the preset-specific concept as the focal read; support it with warm paper, broad white space, crisp black contours, sparse wash, and optional muted accent.',
+    'Stage the plate as readable black-ink design with one large focal hierarchy and 2-3 support symbols, not a repeated tarot card, bestiary sheet, or inventory page.',
+    'Build the frame from open ivory paper, broad black shapes, controlled margins, and textless medieval plate logic rather than dark realism, noisy hatch carpets, or texture-heavy horror.',
+  ],
+  pack_17__weird_medieval_editorial: [
+    'Use the preset-specific concept as the focal read; support it with adult weird-fantasy editorial design, controlled ornament, and one memorable unsettling decision.',
+    'Stage the card as a strong publication-worthy medieval image, not a safe catalog specimen, generic saint, stock monster, or ordinary fantasy scene.',
+    'Build the composition from rich but transferable style vocabulary: material, posture, color, lighting, surface, and negative space should carry the preset without forcing future prompts into this exact card subject.',
   ],
   pack_05__modern_shonen_and_action: [
-    'Use one original anime-style character or costume fragment with clean motion arcs, bold cel shading, and readable shonen momentum; avoid franchise likeness, headband-copy design, named-series cues, dominant weapons, or combat injury.',
-    'Stage one original action-study pose on a simplified graphic backdrop with speed lines, cloth motion, and expressive silhouette; no schoolyard/street/stair lock, no recognizable hero design, no sword-first composition.',
-    'Build the frame around optimistic movement energy, color accents, and exaggerated expression physics while keeping props secondary and non-iconic; no gang fight, battle aftermath, arena duel, or IP-like emblem.',
+    'Choose a preset-specific shonen anchor: costume fragment, motion scarf, psychic color rupture, elastic adventure shape, occult pressure field, strategic path cue, or original character only when character acting is the strongest proof.',
+    'Stage action through the preset grammar first: speed arcs, cloth motion, expression physics, impact timing, symbolic pressure, or tactical readability; no schoolyard/street/stair lock, no recognizable hero design, no sword-first composition.',
+    'Build the frame around the named style idea, not a reusable fighter pin-up; props stay secondary and non-iconic, with no gang fight, battle aftermath, arena duel, or IP-like emblem.',
   ],
   pack_05__action: [
-    'Use one original anime protagonist in a clean action beat, with broad cel shapes, readable motion arcs, and no weapon-first framing.',
-    'Stage a character-led impact moment on a simplified support backdrop; avoid corridor, market, library, camera, and noisy rubble formulas.',
-    'Build the frame around pose, speed field, expression, and color identity so the style reads as action without becoming abstract-only.',
+    'Choose the action anchor from the preset: body gesture, impact burst, speed field, machine fragment, energy geometry, or original protagonist when useful.',
+    'Stage a readable impact moment on a simplified support field; avoid corridor, market, library, camera, and noisy rubble formulas.',
+    'Build the frame around motion logic, expression, color identity, and thumbnail clarity so the style reads as action without becoming abstract-only or a repeated pin-up.',
   ],
   pack_05__2000s_classics: [
     'Use a late-night platform, apartment corridor, or city overpass with reflective surfaces, practical lights, and a quiet narrative beat.',
@@ -541,9 +688,9 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Anchor the scene with sport-specific or stage-specific equipment, audience depth, and unmistakable motion intent.',
   ],
   pack_05__mecha_and_cyberpunk: [
-    'Use a neon hangar, rain-dark alley, cockpit bay, or industrial catwalk with hard machine geometry and reflective armor.',
-    'Stage the subject beside a mech silhouette, glowing console, or city grid with aggressive sci-fi scale and sharp metal contrast.',
-    'Build the frame around cables, vents, panels, and a single luminous tech axis that reads instantly as mecha/cyberpunk.',
+    'Choose a mecha/cyberpunk anchor from the preset: armor joint, chrome suit fragment, municipal machine, surveillance plane, command geometry, cyber-goth shell, or original pilot only when the preset benefits from a body.',
+    'Stage sci-fi identity through machine geometry, warning color, polished armor, signal pressure, civic procedure, or neon grime rather than a default bodysuit glamour figure.',
+    'Build the frame around cables, vents, panels, luminous tech axes, and readable material contrast that fit this preset specifically.',
   ],
   pack_05__isekai_and_high_fantasy: [
     'Use a fantasy roadside inn, magical town gate, dungeon threshold, or floating ruin with one clear quest lane and readable magical depth.',
@@ -551,9 +698,9 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Build the scene around portals, spell-light, travel gear, and adventure road energy rather than generic medieval clutter.',
   ],
   pack_05__dark_fantasy_and_seinen: [
-    'Use a ruined courtyard, grim alley, or shadowed church-like interior with ominous stillness and grounded menace.',
-    'Stage the subject in a brutal but readable landscape with worn armor, cracked masonry, and an adult dramatic tone.',
-    'Build the frame around despair, moral weight, and textured darkness without collapsing into generic horror props.',
+    'Choose a mature-anime anchor from the preset: cursed object, abyssal material bloom, moral-thriller stillness, baroque figure, winter memory, neon panic, or grounded adult character when it serves the style.',
+    'Stage mood through light, texture, silhouette, and psychological pressure instead of repeating the same grim corridor, warrior portrait, or sensual dark figure.',
+    'Build the frame around despair, moral weight, textured darkness, and preset-specific symbolism without collapsing into generic horror props.',
   ],
   pack_05__studio_masterpieces: [
     'Use a richly painted coastline, hillside, or city edge with wind, sky, and quiet cinematic emotion.',
@@ -2669,9 +2816,15 @@ function presetMotifForPrompt(
 ) {
   const key = styleCategoryImageKey(pack.id, category);
   if (pack.id === 'pack_17') {
-    return `Use one preset-specific medieval-fantasy anchor tied to "${sanitizeStylePromptName(
-      preset.name,
-    )}": armor silhouette, reliquary, monster face, castle fragment, occult mark cluster, plague mask, rune-tech seam, zine panel, or stained-glass shape. Keep it original, card-readable, non-franchise, and not a generic sword, map, book, corridor, or library scene.`;
+    const concept = pack17CardConceptForPreset(preset);
+    const hardAvoid = pack17CardHardAvoidForPreset(preset);
+    return concept
+      ? `Use this preset-specific medieval-fantasy card concept for "${sanitizeStylePromptName(
+          preset.name,
+        )}": ${concept}. Keep the card original, style-led, card-readable, non-franchise, and not a generic sword, map, book, corridor, library, castle hallway, or copied RPG scene.${hardAvoid ? ` Hard avoid for this preset: ${hardAvoid}.` : ''}`
+      : `Use one preset-specific medieval-fantasy anchor tied to "${sanitizeStylePromptName(
+          preset.name,
+        )}": armor silhouette, reliquary, monster face, castle fragment, occult mark cluster, plague mask, rune-tech seam, zine panel, or stained-glass shape. Keep it original, card-readable, non-franchise, and not a generic sword, map, book, corridor, or library scene.`;
   }
   if (pack.id === 'pack_15') {
     return `Use one preset-specific world cue tied to "${normalizePack15PromptText(
@@ -2775,7 +2928,7 @@ function presetMotifForPrompt(
     return 'Use one preset-specific optical cue on architectural planes, glass, fabric, metal, water, haze, or shadow geometry; do not use a human model, portrait, chair, curtain, or studio-session setup.';
   }
   if (preset.id === 'SP04-001') {
-    return 'Use one Golden Age comic card with a readable original emblem/object anchor, thick ink, Ben-Day dots, cheap newsprint, primary color blocks, and pulp optimism; no cape, crest, superhero body, speech balloon, readable text, city rescue, franchise cue, camera prop, or modern digital polish.';
+    return 'Use one Golden Age comic card built around a non-human civic wonder anchor: a brass rescue robot bust, comet-mail mascot, giant alarm bell with gloved cartoon hands, lightning-lighthouse emblem, or impossible public-service machine caught in bold optimistic action. Thick ink, Ben-Day dots, cheap newsprint, primary color blocks, and punchy 1940s panel force; no person, no human hero, no cape, no superhero body, no chest emblem, no speech balloon, no readable text, no city-rescue cliche, no camera prop, or modern digital polish.';
   }
   if (preset.id === 'SP04-002') {
     return 'Use one Silver Age cosmic comic card with an original energy-charged object or silhouette, atom-age burst halos, crackle dots, foreshortened contour rhythm, and bright primary pop; no capes, planets, rockets, battles, cosmic hero body, readable text, UI, or empty energy-only abstraction.';
@@ -2796,22 +2949,22 @@ function presetMotifForPrompt(
     return 'Use one Franco-Belgian ligne-claire card with a clear-line original object, clean architectural corner, or small environment slice, uniform monoline, flat color, readable props, and tidy spatial logic; no person, boy adventurer, dog, bicycle, car/plane hero prop, wall lamp, travel poster, shelves/library filler, readable text, or hatching.';
   }
   if (preset.id === 'SP04-008') {
-    return 'Use one binary noir comic card with a symbolic object or abstract silhouette cut from brutal black/white shapes, hard white carve-outs, dry ink grain, and zero-gray contrast; no person, detective, hat, trenchcoat, cards, gun, knife, alley, rain street, blood, readable text, or color accent.';
+    return 'Use one binary noir comic card with an adult original silhouette or symbolic stage object: a gloved cabaret singer reduced to white cutout, a black-glass divorce cake, a witness chair under a blade of light, or a fox mask on a lacquer table. Brutal black/white shapes, hard white carve-outs, dry ink grain, and zero-gray contrast; no detective, fedora, trenchcoat, playing cards, gun, knife, alley, rain street, blood, readable text, or color accent.';
   }
   if (preset.id === 'SP04-009') {
-    return 'Use one underground comix card with a non-human mascot/object specimen, nervous wobble contour, dense crosshatching, raw print-paper grit, and grotesque proportion energy; no real person, face-led caricature, crowd, cramped room, body-first satire, readable text, or polished mainstream finish.';
+    return 'Use one underground comix card with a nasty funny original anchor: a rat prophet selling broken halos, a mutant vending machine with teeth-like buttons, a cigarette-burn moon mascot, or a slumped antihero plant in boots. Nervous wobble contour, dense crosshatching, raw print-paper grit, grotesque proportion energy, and adult counterculture bite; no real person, celebrity caricature, crowd, cramped apartment room, readable text, or polished mainstream finish.';
   }
   if (preset.id === 'SP04-010') {
     return 'Use one painted graphic-novel card with a solemn mythic object, costume-material fragment, statue fragment, or symbolic prop rendered in gouache-like brushwork, nuanced value modeling, and soft spotlight gravitas; no person, face, body, cape, rooftop/city tableau, group pose, Americana tableau, celebrity likeness, readable text, or generic superhero.';
   }
   if (preset.id === 'SP04-011') {
-    return 'Use one horror-manga pattern card with spiral/cavity motifs invading an object or material specimen, obsessive black-white line texture, and uncanny pressure; no gore, wounds, realistic body, creepy face, village/room horror, readable text, camera prop, or shock image.';
+    return 'Use one horror-manga pattern card where a calm original subject becomes mathematically wrong: a porcelain mask blooming spiral holes, a school trophy turning into black coral, a wedding glove filled with repeating eye-like knots, or a shrine bell swallowed by cavities. Obsessive black-white line texture and uncanny pressure; no gore, wounds, realistic body horror, creepy face close-up, village/room horror, readable text, camera prop, or shock image.';
   }
   if (preset.id === 'SP04-012') {
     return 'Use one airy European sci-fi comic card with a vehicleless organic-futurist structure, biomech arch, or alien material object, pastel space, clean line, stipple texture, and surreal scale; no face, humanoid, traveler, body, hand, spaceship, desert vista, portal, fantasy hall, readable text, or Moebius copy.';
   }
   if (preset.id === 'SP04-013') {
-    return 'Use one chibi-style card with an original mascot/object in compact cute proportions, oversized simple shapes, sticker-clean silhouette, and soft color pop; no human child, celebrity/anime face, UI sticker sheet, readable text, franchise cue, or toy-store scene.';
+    return 'Use one chibi-style card with a tiny original troublemaker: a furious dumpling knight, moon janitor mascot, goblet-sized dungeon clerk, pocket-size wrestler, or spoiled royal snail with huge expression geometry. Compact cute proportions, oversized simple shapes, sticker-clean silhouette, and soft color pop; no human child, celebrity/anime face, UI sticker sheet, readable text, franchise cue, or toy-store scene.';
   }
   if (preset.id === 'SP04-014') {
     return 'Use one pixel-comic card with a single object or tiny non-human creature icon in chunky pixel panels, cluster/dither proof, limited palette, and sprite-like contour energy; no person, face, rooftop, city skyline, game UI, health bars, screen capture, weapon pose, platform combat, readable text, or tiny noisy detail.';
@@ -2820,7 +2973,7 @@ function presetMotifForPrompt(
     return 'Use one riso-print card with a single graphic anchor, overprint misregistration, grainy spot colors, flat stencil shapes, and paper texture; no readable type, zine/flyer layout, print-shop tools, table scene, poster title, or brand mark.';
   }
   if (preset.id === 'SP04-016') {
-    return 'Use one cyberpunk comic card with tech-noir reflective planes around a symbolic object, material shard, or city-light abstract plane, neon ink edges, rainlike texture, and saturated shadow color; no person, humanoid, hand-held device, screen, camera, phone, card prop, alley, skyline, car, detective, readable text, or body-led scene.';
+    return 'Use one tech-noir comic card with a non-human urban omen: a synthetic bird perched on a wet signal shrine, a chrome mask cracked by cyan-magenta reflection, a black-glass transit relic, a luminous cable insect, or a severed-but-non-gory mannequin hand staged as signage shadow. Reflective planes, neon ink edges, rainlike texture, saturated shadow color, hard silhouette rhythm, and open readable midtones; no person, no humanoid figure, no handheld device, no readable screen, no camera, no phone, no playing card prop, no alley, no skyline, no car chase, no detective, no readable text, or generic sexy bodysuit pose.';
   }
   if (preset.id === 'SP04-017') {
     return 'Use one watercolor storybook card with a gentle object or creature fragment, loose wash edges, soft pigment blooms, warm paper, and childlike narrative calm; no cottage, garden path, child, crowded pastoral vignette, animal-story cliche, readable text, or hard digital line.';
@@ -2862,7 +3015,7 @@ function presetMotifForPrompt(
     return 'Use one sticker-art card with a single die-cut non-humanoid creature, object, or emblem-like subject, thick white cutline, saturated vector color, compact vinyl gloss, and thumbnail-readable silhouette; no person, humanoid, armor hero, face mask, lantern, weapon, vehicle, sticker sheet, slogans, readable text, peel-off hand, UI icon set, brand mark, or busy background.';
   }
   if (preset.id === 'SP04-030') {
-    return 'Use one vintage scientific botanical card with a clear plant specimen, seed pod, leaf cross-section, or naturalist study, fine ink contour, transparent tint, warm archival paper, orthographic layout, and non-readable callout marks; no readable labels, Latin text, cartoon, messy sketch, human hand, desk, book page, or classroom chart.';
+    return 'Use one vintage scientific plate card with a strange but orderly naturalist specimen: glass eel, mineral moth, fungal crown, seed-pod automaton, dried sea-frond, or translucent desert flower cross-section. Fine ink contour, transparent tint, warm archival paper, orthographic layout, and non-readable callout marks; no readable labels, Latin text, cartoon, messy sketch, human hand, desk, book page, classroom chart, or plants-only default.';
   }
   if (preset.id === 'SP04-031') {
     return 'Use one Art Deco poster card with a streamlined animal, vessel, architectural object, or emblematic landscape form, stepped geometry, sunburst rhythm, teal/gold/black palette, elegant frame discipline, and smooth poster polish; no readable title, city skyline, travel ad, skyscraper wall, product ad, person portrait, car, or messy organic detail.';
@@ -2889,7 +3042,7 @@ function presetMotifForPrompt(
     return 'Use one scenic shape-band anchor with WPA screenprint strata and earth-tone ink blocks; no readable travel title, signage, specific landmark label, tourist scene, UI, or photo-real landscape.';
   }
   if (preset.id === 'SP04-039') {
-    return 'Use one original symbolic montage anchor with painted one-sheet drama; no cast lineup, weapon hero prop, readable title zone, franchise cue, celebrity likeness, or literal film poster text.';
+    return 'Use one original painted movie-poster card as a tight symbolic montage, not a landscape and not a lone figure. Choose one invented film premise: doomed polar opera, volcanic courtroom, haunted space carnival, forbidden desert radio race, or masked lovers divided by a giant eclipse. Compose 4 overlapping poster elements at different scales: one large theatrical mask or face fragment, one dramatic vehicle/object, one abstract environment symbol, and one luminous omen. Airbrushed transitions, warm-cool theatrical conflict, strong triangular poster composition, and a clean blank title-safe band without actual lettering; no full-body hero, no hooded figure, no lone cliff figure, no cape silhouette, no wide landscape vista, no cast lineup grid, no weapon hero prop, no readable title, no franchise cue, no celebrity likeness, or literal film poster text.';
   }
   if (preset.id === 'SP04-040') {
     return 'Use infographic-like hierarchy as abstract chart primitives, icons, modular blocks, and flow shapes around one simple natural system or material cycle; no readable labels, numbers, product, backpack, gear, dashboard UI, app screen, arrows with text, or explainer page screenshot.';
@@ -2901,7 +3054,7 @@ function presetMotifForPrompt(
     return 'Use one surreal album-cover card with a memorable central object paradox, impossible room, or symbolic creature silhouette, square-cover tension, impossible lighting, prismatic accents, matte analog grain, and iconic mystery; no fashion model, runway pose, portrait, band name, record disc, instrument, readable title, celebrity likeness, plain landscape, UI, or canonical album-copy motif.';
   }
   if (preset.id === 'SP04-043') {
-    return 'Use one pulp magazine cover card with a dramatic explorer, creature, vehicle, or strange object in lurid adventure staging, hard spotlight contrast, cheap paper wear, sensational diagonals, and masthead-safe composition; no detective, playing card, readable card symbol, readable headlines, guns, knives, explicit peril, gore, sexist damsel trope, modern clean finish, city noir skyline, or logo.';
+    return 'Use one pulp magazine cover card with lurid adult-adventure invention: a volcanic elevator operator, moth-wing racer, swamp radio queen, glass-jawed boxer, clockwork panther, or forbidden observatory break-in. Hard spotlight contrast, cheap paper wear, sensational diagonals, bold near-plane drama, and masthead-safe composition; no detective, playing card, readable card symbol, readable headlines, guns, knives, explicit peril, gore, sexist damsel trope, modern clean finish, city noir skyline, or logo.';
   }
   if (preset.id === 'SP04-044') {
     return 'Use one vintage travel poster card with a bright destination-like scene, landmark silhouette, traveler-scale figure or transit-era object if useful, flattened scenic planes, optimistic ink bands, archival litho grain, and clean poster framing; no readable destination title, real city label, photo look, airline logo, generic beach ad, or cluttered street market.';
@@ -3030,13 +3183,13 @@ function presetMotifForPrompt(
     return 'Use mood color-script language through broad color keys, atmosphere bands, value blocks, and time-of-day palette progression around one readable environment beat: harbor, forest clearing, canyon gate, floating market silhouette, or storm-lit road; no character close-up, hero figure, panel grid, storyboard frames, readable notes, finished render, corridor, fantasy castle, or literal film scene.';
   }
   if (preset.id === 'SP04-086') {
-    return 'Use callout-detail sheet grammar as orthographic fragments, exploded cutaways, magnified inserts, tick marks, and graphic leader lines around one non-body detail: mask parts, boot sole, saddle buckle, pack clasp, shell housing, or small non-weapon tool; no full character, armor suit, heroic pose, readable labels, dimensions, weapons, vehicle blueprint default, UI board, product manual page, or text annotations.';
+    return 'Use callout-detail sheet grammar around one flavorful design problem: a swamp-diver mask latch, moon-courier boot sole, moth-rider saddle buckle, ritual stage glove, creature-shell hinge, or compact non-weapon field tool. Orthographic fragments, exploded cutaways, magnified inserts, tick marks, and graphic leader lines; no full character, armor suit, heroic pose, readable labels, dimensions, weapons, vehicle blueprint default, UI board, product manual page, or text annotations.';
   }
   if (preset.id === 'SP04-087') {
     return 'Use silhouette iteration as black-white shape families, proportion variants, negative-space tests, and thumbnail-read forms around one non-humanoid creature, vehicle, mask, or prop archetype; no single hero pose, humanoid lineup, sword silhouette, weapon, colored render, UI grid, readable labels, or polished concept art.';
   }
   if (preset.id === 'SP04-088') {
-    return 'Use rough environment-pass rendering through broad macro shapes, atmospheric recession, value blocking, and large painterly strokes on one readable place: canyon gate, industrial dock, forest shrine silhouette, alien plain, or coastal ruins seen wide; no named artist imitation, character close-up, hero figure, weapon pose, finished landscape painting, tiny details, market/library aisle, or corridor/hallway default.';
+    return 'Use rough environment-pass rendering through one bold world beat: half-built whale-port under sodium fog, black-salt transit loop, canyon elevator gate, flooded opera dock, forest shrine eaten by scaffolding, or alien plain with one tiny scale mark. Broad macro shapes, atmospheric recession, value blocking, and large painterly strokes; no named artist imitation, character close-up, hero figure, weapon pose, finished landscape painting, tiny details, market/library aisle, or corridor/hallway default.';
   }
   if (preset.id === 'SP04-089') {
     return 'Use creature-design iteration as biomorphic anatomy studies, skeletal ghost overlays, locomotion variants, material biology swatches, and silhouette mutations around one original non-human creature family; no named artist imitation, human figure, cute pet, recognizable animal, final render, text labels, medical diagram, or single hero monster.';
@@ -3057,7 +3210,7 @@ function presetMotifForPrompt(
     return 'Use anatomy reference sheet grammar as layered skeletal-like scaffolds, tendon/muscle-flow analogues, cutaways, transparent overlays, and inset structural details around one non-human creature/object system; no named artist imitation, human medical plate, gore, readable labels, classroom page, or realistic cadaver anatomy.';
   }
   if (preset.id === 'SP04-095') {
-    return 'Use foliage design kit grammar as leaf-shape families, branching rhythms, canopy clusters, texture swatches, seasonal color strips, bark/fern/moss variants, and growth-pattern studies arranged as a production kit; no humanoid plant creature, forest character, literal forest scene, garden path, house, market plant display, readable labels, or single finished landscape.';
+    return 'Use foliage design kit grammar as a lush invented ecosystem set: opera-house carnivorous vines, moon greenhouse canopy, salt-marsh armor leaves, cathedral fern scaffolds, velvet moss colonies, or thorny courier hedges. Leaf-shape families, branching rhythms, canopy clusters, texture swatches, seasonal color strips, bark/fern/moss variants, and growth-pattern studies arranged as a production kit; no humanoid plant creature, forest character, literal forest scene, garden path, house, market plant display, readable labels, or single finished landscape.';
   }
   if (preset.id === 'SP04-096') {
     return 'Use equipment-tier progression as non-weapon object evolution, modular silhouette escalation, material rarity changes, ornament deltas, and comparison rows around lanterns, field packs, masks, boots, or courier containers; no literal gun, blade, axe, sword, spear, combat weapon, inventory UI, readable labels, violent pose, held weapon, or single final artifact.';
@@ -5840,6 +5993,14 @@ Fit pack "${pack.name}" and category "${category}". Finished style-card image, n
 
 function sceneGuardrails(pack: StyleRuntimePack, category: string, preset: StyleRuntimePreset) {
   const key = styleCategoryImageKey(pack.id, category);
+  if (pack.id === 'pack_05') {
+    return [
+      'Pack 05 card rule: choose the card prompt concept preset by preset. The preset is a style catalyst, while the card subject must be the best representative idea for that exact preset.',
+      'Do not reuse a generic sexy woman, generic fighter, grim hero, corridor, alley, or weapon pose as a fallback. Sensuality, romance, violence, glamour, machinery, objects, environments, or abstract graphics are allowed only when the specific preset asks for that kind of read.',
+      'IP and title references may remain as style connectors, but translate them into line behavior, color logic, motion rhythm, camera/composition, mood, and material vocabulary. Use original subjects and avoid copied costumes, faces, emblems, weapons, signature scenes, or franchise compositions.',
+      'For cards, the first read should answer: why this preset? Shonen presets should foreground motion grammar, mecha presets should foreground machine grammar, horror/seinen presets should foreground adult tension, and romance or sensual body language should appear only when that preset benefits from it.',
+    ].join(' ');
+  }
   if (pack.id === 'pack_17') {
     const acidZineRule =
       key === 'pack_17__acid_dungeon_zine'
@@ -5956,6 +6117,19 @@ function repeatedSceneGuardrails(
   ].join(' ');
 }
 
+function cardPromptConceptRule(
+  pack: StyleRuntimePack,
+  category: string,
+  preset: StyleRuntimePreset,
+) {
+  return [
+    'CARD CONCEPT RULE: choose the card subject preset by preset. The card prompt supplies a representative example; the preset supplies the style catalyst.',
+    `The first read must explain "${preset.name}" inside "${pack.name}" / "${category}", not a reusable default subject.`,
+    'Do not default to a sexy figure, generic fighter, generic portrait, isolated object, corridor, dark room, or stock scene unless this exact preset benefits from that choice.',
+    'Characters, sensuality, objects, game action, machines, material specimens, diagrams, landscapes, or abstraction are all valid only when they are the strongest representative concept for this preset.',
+  ].join(' ');
+}
+
 function familyVariant(map: Record<string, string[]>, family: string, seed: string) {
   const source = map[family] || map.default;
   return source[Math.abs(hashString(seed)) % source.length];
@@ -6061,6 +6235,7 @@ function buildStylePrompt(
   const basePrompt = pack15PunkCard
     ? normalizePack15PromptText(categoryBasePrompt(pack, category, `${variantSeed}:anchor`, preset))
     : categoryBasePrompt(pack, category, `${variantSeed}:anchor`, preset);
+  const cardConceptRule = cardPromptConceptRule(pack, category, preset);
   const cartoonSafeDna = cartoonMediaCard ? pack02CartoonSafeStyleDna(preset) : undefined;
   const imagegenSafeDna = safeImagegenStyleDna(preset);
   const safeImagegenLabel = safeImagegenStyleLabel(preset);
@@ -6241,6 +6416,8 @@ CATEGORY: ${category}
 ${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
+${cardConceptRule}
+
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
 ${pack06NonAnimeMediumLock ? `${pack06NonAnimeMediumLock}\n` : ''}
 ${basePrompt}
@@ -6279,6 +6456,8 @@ CATEGORY: ${category}
 ${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
+${cardConceptRule}
+
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
 CARD-SPECIFIC BRIEF:
 ${promptBody}
@@ -6300,6 +6479,9 @@ apply heavy denoise to the image`;
     const hunterMode = promptCategoryKey === 'pack_17__hunter_gothic_and_plague_courts';
     const monochromePlateMode =
       promptCategoryKey === 'pack_17__monochrome_tarot_and_bestiary_plates';
+    const weirdEditorialMode = promptCategoryKey === 'pack_17__weird_medieval_editorial';
+    const pack17PresetConcept = pack17CardConceptForPreset(preset);
+    const pack17PresetHardAvoid = pack17CardHardAvoidForPreset(preset);
     const styleCreativeBrief =
       typeof preset.style.creative_brief === 'string' && preset.style.creative_brief.trim()
         ? preset.style.creative_brief.trim()
@@ -6311,6 +6493,8 @@ apply heavy denoise to the image`;
       `Material and finish: ${styleTexture}; ${styleRender}`,
       `Composition and mood: ${styleCamera}; ${styleMood}`,
       styleCreativeBrief ? `Card route: ${styleCreativeBrief}` : '',
+      pack17PresetConcept ? `Preset-specific card concept: ${pack17PresetConcept}` : '',
+      pack17PresetHardAvoid ? `Preset-specific hard avoid: ${pack17PresetHardAvoid}` : '',
     ]
       .filter(Boolean)
       .join('\n');
@@ -6320,10 +6504,14 @@ apply heavy denoise to the image`;
         ? 'Clean dungeon zine, risograph, screenprint, and monster-manual card language: flat color, bold black shapes, controlled halftone, and readable icon design.'
         : hunterMode
           ? 'Clean gothic fantasy sourcebook and graphic-novel illustration language: pale stone, ivory cloth, blue-gray moonlight, readable midtones, clear contours, and simple open shadows. Gothic horror mood without dark interior realism.'
-          : 'Clean 2D fantasy RPG sourcebook, graphic novel, and board-game card illustration language: broad painted planes, clear contours, readable midtones, and simple dramatic light.';
-    const subjectLine = monochromePlateMode
-      ? 'Use the PRESET IDENTITY focal grammar as the main subject. Make one large readable original focal subject only: horror tarot omen, penitent icon, starved dungeon relic, woodcut beast, illuminated manuscript creature, marginalia monster, heraldic chimera, stained-glass beast, tapestry creature, field-guide wyvern, or oracle animal. Add at most 2-3 simple support symbols. No crowded page, no diagram sheet, no full inventory spread, no weapon-first pose.'
-      : 'Use the PRESET IDENTITY focal grammar as the main subject. Make one large readable original focal subject only: monster, relic, shrine fragment, castle fragment, plague specialist, warband icon, rune-tech armor, dungeon beast, architectural sentinel, or medieval-fantasy object. Add at most 2-3 simple support shapes. No crowded battlefield, no busy ruins panorama, no full equipment sheet, no weapon-first pose.';
+          : weirdEditorialMode
+            ? 'Adult weird-medieval editorial card language: rich but controlled fantasy illustration, unsettling publication-worthy concept, broad matte planes, clean graphic silhouettes, adult gothic restraint, and one memorable visual decision without safe catalog neutrality.'
+            : 'Clean 2D fantasy RPG sourcebook, graphic novel, and board-game card illustration language: broad painted planes, clear contours, readable midtones, and simple dramatic light.';
+    const subjectLine = pack17PresetConcept
+      ? `Use this preset-specific card concept as the main subject: ${pack17PresetConcept}. The card prompt may introduce a fresh character, creature, relic, emblem, architectural fragment, or compact scenelet only when it helps this exact preset read. Add at most 2-3 simple support shapes. Do not reuse a neighboring Pack 17 formula, generic sword pose, generic castle corridor, literal trial, literal troll-gate, object inventory sheet, or copy of the current thumbnail.${pack17PresetHardAvoid ? ` Hard avoid for this preset: ${pack17PresetHardAvoid}.` : ''}`
+      : monochromePlateMode
+        ? 'Use the PRESET IDENTITY focal grammar as the main subject. Make one large readable original focal subject only: horror tarot omen, penitent icon, starved dungeon relic, woodcut beast, illuminated manuscript creature, marginalia monster, heraldic chimera, stained-glass beast, tapestry creature, field-guide wyvern, or oracle animal. Add at most 2-3 simple support symbols. No crowded page, no diagram sheet, no full inventory spread, no weapon-first pose.'
+        : 'Use the PRESET IDENTITY focal grammar as the main subject. Make one large readable original focal subject only: monster, relic, shrine fragment, castle fragment, plague specialist, warband icon, rune-tech armor, dungeon beast, architectural sentinel, or medieval-fantasy object. Add at most 2-3 simple support shapes. No crowded battlefield, no busy ruins panorama, no full equipment sheet, no weapon-first pose.';
     const colorLine = monochromePlateMode
       ? 'Prefer warm ivory paper and clean black ink. Add only sparse smooth gray wash or one muted accent such as dull red, muted blue, olive, gold, or violet when it helps the preset. Keep large white-paper areas visible. Avoid dominant black fields, muddy grayscale, noisy night skies, black-on-black figures, and gray speckle clouds.'
       : hunterMode
@@ -6340,10 +6528,13 @@ CATEGORY: ${category}
 ${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
+${cardConceptRule}
+
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
 VISUAL LEVEL:
 Polished but simplified tabletop RPG/sourcebook/card illustration. Use flat gouache-like digital painting, comic-book contour discipline, cel-shaded value groups, matte color planes, and visible designed edges.
 Detail ratio: about 70 percent broad readable shapes, 20 percent clean linework, 10 percent texture/detail accents.
+Editorial intent: adult weird-fantasy card art with one unsettling, memorable visual decision. Avoid safe catalog specimens, bland devotional icons, generic monster manuals, and asset-sheet neutrality.
 No cinematic key art, no semi-realistic concept-art polish, no realistic material rendering, no volumetric realism, no 3D-render look, no photobash look, and no ornate microdetail.
 
 STYLE ROUTE:
@@ -6358,9 +6549,10 @@ SUBJECT:
 ${subjectLine}
 
 FORM:
-Large shapes first. Defined contour lines. Simplified armor plates. Broad cloak and stone planes. Medium-sized details only. Keep the design readable as a thumbnail.
+Large shapes first. Defined contour lines. Simplified material planes. Medium-sized details only. Keep the design readable as a thumbnail.
+Use armor, cloth, stone, beast anatomy, relic geometry, architecture, paper, ink, glass, circuitry, or zine marks only when the preset-specific card concept benefits from them.
 If the preset suggests lace, chainmail, scale, ornament, cracks, cables, glowing runes, or etched marks, simplify them into a few large graphic shapes.
-Avoid chainmail, mail mesh, fishnet texture, dense scale texture, tiny rivets everywhere, lace, lace-like filigree, repeated scratches, over-rendered cracks, dripping black cloak edges, and micro-detail carpets.
+Avoid automatic armor, automatic cloak silhouettes, chainmail, mail mesh, fishnet texture, dense scale texture, tiny rivets everywhere, lace, lace-like filigree, repeated scratches, over-rendered cracks, dripping black cloak edges, and micro-detail carpets.
 
 COLOR:
 ${colorLine}
@@ -7711,6 +7903,8 @@ TARGET STYLE: ${promptSafeImagegenLabel}
 MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
 
+${cardConceptRule}
+
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
 ${pack02PhotoMediaLock ? `${pack02PhotoMediaLock}\n` : ''}
 ${pack02SceneFirstLock ? `${pack02SceneFirstLock}\n` : ''}
@@ -7755,6 +7949,8 @@ PACK: ${pack.name}
 CATEGORY: ${category}
 ${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
 MODEL: ${IMAGEGEN_MODEL}, ${IMAGEGEN_REASONING_EFFORT}
+
+${cardConceptRule}
 
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
 ${pack02PhotoMediaLock ? `${pack02PhotoMediaLock}\n` : ''}

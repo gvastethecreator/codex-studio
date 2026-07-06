@@ -12,28 +12,88 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Dark academia tailoring, archival material nostalgia, candlelit-scholar romance
-  subject_treatment: Tailored layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap
-  color_and_tone: Brown, Tweed, Cream, oxblood, forest, mustard, aged-paper cream, charcoal
-  lighting_and_shadow: Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey
-  texture_and_material: Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons
+  aesthetic: >-
+    Dark Academia operates as a portable fashion-costume router: combine Dark academia tailoring,
+    archival material nostalgia, candlelit-scholar romance with subcultural dress-code logic with
+    identity signals, music or scene memory, attitude, and symbolic styling pressure, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Tailored layers, tweed-jacket
+    drape, pleated-trouser line, cable-knit volume, scarf-wrap; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Low amber tailoring glow, stained-glass amber, fireplace warmth, overcast grey plus club,
+    daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without
+    forcing a venue as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Harris tweed, merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons
+    plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery,
+    print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Dark Academia using its key spatial cues: Wire-rim geometry, paper-cream contrast,
-    worn-leather accents, archival tailoring mood.
-  atmosphere_and_mood: Studious, serious, archival solitude, paper-cream contemplation, secret-history tension
-  rendering_and_quality: Intellectual, moody, archival-quiet gravitas, old-campus nostalgia
-  key_features: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood
+    Compose with Compose for Dark Academia using its key spatial cues: Wire-rim geometry,
+    paper-cream contrast, worn-leather accents, archival tailoring mood plus attitude-led
+    silhouette, accessory grouping, dress-code readability, body-line rhythm, and reusable styling
+    emphasis as reusable fashion framing grammar, allowing portraits, objects, creatures,
+    environments, action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Dark Academia while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Dark academia tailoring, archival material nostalgia, candlelit-scholar romance; Tailored
+    layers, tweed-jacket drape, pleated-trouser line, cable-knit volume, scarf-wrap; Harris tweed,
+    merino wool, corduroy, brushed flannel, leather elbow patches, horn buttons; Low amber tailoring
+    glow, stained-glass amber, fireplace warmth, overcast grey; Compose for Dark Academia using its
+    key spatial cues: Wire-rim geometry, paper-cream contrast, worn-leather accents, archival
+    tailoring mood
   creative_brief: >-
-    Apply dark-academia codes to any input: tweed, corduroy, cable-knit wool, oxblood leather, horn buttons,
-    elbow patches and paper-cream contrast. Keep secret-history tension without requiring a university,
-    library table, fountain pen, satchel or student figure.
+    Use Dark Academia after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Dark academia
+    tailoring, archival material nostalgia, candlelit-scholar romance, Tailored layers, tweed-jacket
+    drape, pleated-trouser line, cable-knit volume, scarf-wrap, Harris tweed, merino wool, corduroy,
+    brushed flannel, leather elbow patches, horn buttons, Low amber tailoring glow, stained-glass
+    amber, fireplace warmth, overcast grey, Compose for Dark Academia using its key spatial cues:
+    Wire-rim geometry, paper-cream contrast, worn-leather accents, archival tailoring mood plus
+    signature layers, footwear cues, hair volume, accessory codes, patches, hardware, textile wear,
+    and stance-driven silhouette, palette behavior, light response, material treatment, silhouette
+    grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop
+    bundle, or card composition.
 avoidRules:
   - bright
   - sport
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-029.webp
 attributes:
-  negativePrompt: bright, sport, library table, fountain pen, satchel, student figure
+  negativePrompt: >-
+    bright, sport, costume-party parody, random trend mix, brand-logo collage, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -12,26 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Chibi super-deformed character language with mascot-forward charm
-  subject_treatment: Thick clean outlines and simplified interior detail economy
-  color_and_tone: Bright candy-saturated palette with high contrast readability
-  lighting_and_shadow: Flat cel shading with minimal soft ambient accents
-  texture_and_material: Smooth digital finish with toy-like surface clarity
-  camera_and_composition: Extreme head-to-body ratio (~2 heads tall)
-  atmosphere_and_mood: Playful, comedic, lighthearted
-  rendering_and_quality: Highly stylized cute rendering tuned for instant emotional read
-  key_features: Oversized head, tiny limbs, exaggerated props and expression icons
+  aesthetic: >-
+    Chibi Style acts as a transferable illustration router: start from Chibi super-deformed designed
+    subjects language with mascot-forward charm, Oversized head, tiny limbs, exaggerated props and
+    expression icons and storybook and friendly-illustration system built from approachable shapes,
+    handmade media, simplified edges, tactile materials, and high-readability charm, then apply the
+    visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Thick clean outlines and simplified interior detail
+    economy; preserve the requested subject while softening, simplifying, miniaturizing,
+    paper-building, mark-making, or diagramming it according to the named medium, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Bright candy-saturated palette with high contrast readability; use color
+    through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly
+    contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Flat cel shading with minimal soft ambient accents; shape light through
+    soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth digital finish with toy-like surface clarity; surface detail should show paper
+    tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate,
+    or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Extreme head-to-body ratio (~2 heads tall); compose with clear
+    silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or
+    gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Playful, comedic, lighthearted, mood carried by Chibi Style craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Highly stylized cute rendering tuned for instant emotional read; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Chibi super-deformed designed subjects language with mascot-forward charm; Oversized head, tiny
+    limbs, exaggerated props and expression icons; Bright candy-saturated palette with high contrast
+    readability; Smooth digital finish with toy-like surface clarity; Extreme head-to-body ratio (~2
+    heads tall)
   creative_brief: >-
-    Prioritize silhouette charm through extreme proportion stylization. If a character or mascot exists, use
-    oversized head, tiny limbs and expression icons; otherwise apply the style to any input by translating the
-    subject into bouncy simplified chibi proportions usable across stickers, panels and UI-style contexts.
+    Apply Chibi Style as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Chibi super-deformed designed subjects language with mascot-forward charm, Oversized head, tiny
+    limbs, exaggerated props and expression icons, Smooth digital finish with toy-like surface
+    clarity without requiring the card image's original subject.
 avoidRules:
   - tall
   - realistic
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-013.webp
 attributes:
-  negativePrompt: tall, realistic
+  negativePrompt: >-
+    tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

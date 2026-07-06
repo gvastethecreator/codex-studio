@@ -15,38 +15,65 @@ tags:
   - astral-exorcist
 visualDna:
   aesthetic: >-
-    Astral feudal exorcist fantasy with star-lit armor, monastery astronomers, demon-sealing geometry, and
-    celestial battlefield calm.
+    Astral feudal exorcist fantasy with star-lit armor, monastery astronomers, demon-sealing
+    geometry, and celestial battlefield calm.
   subject_treatment: >-
-    Transform any subject with astral-feudal exorcist logic, circular celestial geometry, clean non-readable
-    glyph shapes, banner-like rhythm, and cosmic restraint without forcing a ritual action.
+    Transform any subject with astral-feudal exorcist logic, circular celestial geometry, clean
+    non-readable glyph shapes, banner-like rhythm, and cosmic restraint without forcing a ritual
+    action.
   color_and_tone: Midnight blue, silver, bone white, violet shadow, gold sparks, and pale cyan astral glow.
-  lighting_and_shadow: Moon rims, starfield backlight, and clean glowing geometry separate shapes without noisy dark speckles.
-  texture_and_material: Polished dark armor, embroidered cloth, vellum, silver inlay, smooth stone, and denoised night sky.
+  lighting_and_shadow: >-
+    Moon rims, starfield backlight, and clean glowing geometry separate shapes without noisy dark
+    speckles.
+  texture_and_material: >-
+    Polished dark armor, embroidered cloth, vellum, silver inlay, smooth stone, and denoised night
+    sky.
   camera_and_composition: >-
-    Symmetrical exorcism-card layout, circular celestial geometry, tall banners, and centered readable ritual
-    silhouette.
-  atmosphere_and_mood: Sacred, cosmic, strategic, quiet, and ominous.
+    Symmetrical ritual geometry, circular celestial structure, tall banner rhythm, and centered
+    readable anchor without forcing an exorcism action.
+  atmosphere_and_mood: >-
+    Carry the prompt through Sacred, cosmic, strategic, quiet, and ominous; martial doom,
+    penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual
+    discipline; the tone should follow prompt X while preserving the preset's medieval-zine
+    identity.
   rendering_and_quality: >-
-    Clean fantasy illustration with luminous accents, smooth dark gradients, and card-readable silhouette
-    design.
+    Clean fantasy illustration with luminous accents, smooth dark gradients, and card-readable
+    silhouette design.
   creative_brief: >-
-    Reusable visual system for any subject needing astral-medieval gravity, celestial geometry, feudal ritual
-    restraint, and cosmic crusade energy.
+    Reusable visual system for any subject needing astral medieval gravity, celestial geometry,
+    feudal ritual restraint, and cosmic crusade energy. Apply after prompt X: prompt X supplies
+    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
+    Astral Feudal Exorcists; Astral feudal exorcist fantasy with star lit armor; monastery
+    astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with
+    astral feudal exorcist logic, mood, material behavior, framing logic, and denoised medieval-zine
+    finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
+    composition.
+  key_features: >-
+    Astral Feudal Exorcists; Astral feudal exorcist fantasy with star lit armor; monastery
+    astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with
+    astral feudal exorcist logic
 avoidRules:
   - readable magic circles
   - generic wizard robe
   - noisy starfield
-  - sci-fi spaceship look
+  - sci fi spaceship look
   - explicit gore
   - watermark
   - text
+  - army lineup lock
+  - tabletop product photo
+  - generic battle splash
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-032.webp
 attributes:
   negativePrompt: >-
-    readable magic circles, generic wizard robe, noisy starfield, sci-fi spaceship look, explicit gore,
-    watermark, text
+    readable magic circles, generic wizard robe, noisy starfield, sci fi spaceship look, explicit
+    gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt
+    literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art,
+    muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

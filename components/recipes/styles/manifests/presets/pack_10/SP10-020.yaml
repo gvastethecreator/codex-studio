@@ -12,25 +12,58 @@ tags:
   - abstract-and-experimental
   - fluid-and-organic
 visualDna:
-  aesthetic: Space gas
-  subject_treatment: Soft edges
-  color_and_tone: Pink, Blue, Purple
-  lighting_and_shadow: Internal star glow
-  texture_and_material: Gaseous
-  camera_and_composition: Amorphous
-  atmosphere_and_mood: Epic, vast
-  rendering_and_quality: Hubble, cosmic
-  key_features: Stars
+  aesthetic: >-
+    Nebula Cloud becomes a transferable fluid and organic behavior system: start from Space gas,
+    Stars, and Amorphous, then route prompt content through flow, branching, cellular membranes,
+    diffusion, turbulence, and living surface logic without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Soft edges to bend, pool, branch, bloom, spike,
+    foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity,
+    or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Pink, Blue, Purple; let hues follow fluid thickness, chemical bloom,
+    interference, biological growth, or vapor density, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Internal star glow drive the light response: use reflection, translucency, subsurface
+    scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting
+    unless the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Gaseous as the tactile or mark-making basis; surfaces need coherent viscosity, membranes,
+    droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces,
+    or close material studies.
+  camera_and_composition: >-
+    Compose around Amorphous as reusable spatial grammar: favor flow direction, cellular repetition,
+    eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits,
+    objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Epic, vast as the emotional register; derive mood from instability, growth, toxicity,
+    delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult
+    prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Hubble, cosmic: finish with clean fluid physics, readable boundaries, and restrained
+    micro-noise, preserving prompt X as the base content and the preset as the style router.
+  key_features: >-
+    Space gas; Soft edges; Pink, Blue, Purple; Internal star glow; Gaseous; Amorphous; Epic, vast;
+    Hubble, cosmic; Stars
   creative_brief: >-
-    Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust speckles, luminous depth, and
-    cosmic-scale haze should make forms feel suspended in astronomical color without requiring an outer-space
-    backdrop.
+    Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust speckles, luminous
+    depth, and cosmic-scale haze should make forms feel suspended in astronomical color without
+    requiring an outer-space backdrop.
 avoidRules:
   - solid
+  - stiff solids
+  - muddy fluid mixing
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-020.webp
 attributes:
-  negativePrompt: solid
+  negativePrompt: >-
+    solid, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy
+    noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

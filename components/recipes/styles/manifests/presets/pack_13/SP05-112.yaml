@@ -13,32 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Spray-drip anime fusion with wildstyle rhythm, overspray halos, rough substrate tactility, stencil edges,
-    and rebellious mural-scale motion
+    Spray-Drip Wildstyle Anime operates as a portable anime-lifestyle router: combine Spray Drip
+    Wildstyle Anime identity cues through Spray drips; stencil sharp edges; overspray halos; rough
+    surface grain; wildstyle composition; and large scale contour energy with broad anime style
+    spectrum grammar with experimental line, material specific finish, auteur adjacent motion,
+    graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies
+    anime style behavior after prompt X rather than a required scene, character, franchise image, or
+    card composition.
   subject_treatment: >-
-    Spray-can-soft-contours, stencil-sharp-edges, dripping-paint-lines, fat-cap-thick-to-skinny-cap-thin
-    transitions, overspray-soft-halos
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Montana-gold-neon-spectrum, concrete-grey-background, rust-iron-stain-orange, buff-paint-coverup-beige,
-    chrome-silver-highlights, throw-up-fill-colors
-  lighting_and_shadow: Outdoor hardlight, overhang-like shadow bands, streetlamp sodium warmth, and rough-surface light catching
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
+  lighting_and_shadow: >-
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Brick-wall-roughness, spray-paint-matte-finish, concrete-aggregate-grain, buff-paint-roller-texture,
-    rust-stain-mineral-deposits, drip-trail-gloss
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Subjects spread as large-scale mural shapes, tag forms wrap around contours, and wall texture integrates
-    into design without fixed background dependence
-  atmosphere_and_mood: Rebellious, street-art-coded, outlaw-creative, nocturnal, surface-breathing
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    Spray-art-anime fusion, graffiti-mural energy, rough-surface authenticity, spray-paint-and-cell hybrid,
-    vandalism-as-beauty philosophy
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Spray drips, stencil-sharp edges, overspray halos, rough surface grain, wildstyle composition, and
-    large-scale contour energy
+    Spray drips; stencil sharp edges; overspray halos; rough surface grain; wildstyle composition;
+    and large scale contour energy
   creative_brief: >-
-    Use spray-drip wildstyle anime as aerosol-mark grammar. Any prompt should feel painted through overspray,
-    drips, stencil edges, rough substrate, and rebellious scale. Literal walls, readable tags, alleys, and
-    urban backgrounds are optional.
+    Use Spray-Drip Wildstyle Anime after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Spray
+    drips, stencil sharp edges, overspray halos, rough surface grain, wildstyle composition, and
+    large scale contour energy, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - clean
   - polished
@@ -50,10 +77,27 @@ avoidRules:
   - gentle
   - indoors
   - white walls
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-112.webp
 attributes:
-  negativePrompt: clean, polished, smooth, gallery art, finished, framed, subtle, gentle, indoors, white walls
+  negativePrompt: >-
+    clean, polished, smooth, gallery art, finished, framed, subtle, gentle, indoors, white walls,
+    generic AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene
+    copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card
+    reuse, watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise
+    costume, logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

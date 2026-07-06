@@ -5,9 +5,9 @@ import { resolveUserHome } from './platformHome';
 
 const DEFAULT_SERVER_PORT = 17223;
 const DEFAULT_CODEX_WS_PORT = 17224;
-const DEFAULT_CODEX_IMAGEGEN_MODEL = 'gpt-5.4-mini';
+const DEFAULT_CODEX_IMAGEGEN_MODEL = 'gpt-5.4';
 const DEFAULT_CODEX_IMAGEGEN_REASONING_EFFORT: StudioSettings['codexImagegenReasoningEffort'] =
-  'low';
+  'medium';
 const DEFAULT_CODEX_IMAGEGEN_SERVICE_TIER: StudioSettings['codexImagegenServiceTier'] = null;
 const DEFAULT_MAX_CONCURRENT_CODEX_JOBS = 4;
 

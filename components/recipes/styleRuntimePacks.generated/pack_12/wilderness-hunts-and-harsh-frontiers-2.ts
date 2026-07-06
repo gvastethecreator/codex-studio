@@ -8,24 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bioluminescent Jungle Raid',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, flat-light, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, flat-light, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Bioluminescent Jungle Raid within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bioluminescent Jungle Raid's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Bioluminescent Jungle Raid's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Bioluminescent Jungle Raid: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with deep teal with living cyan and violet pulses; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Bioluminescent Jungle Raid: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with organism glow through wet leaves; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Bioluminescent Jungle Raid's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from wet leaves, vines, and moss-black stone; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Bioluminescent Jungle Raid's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Bioluminescent Jungle Raid's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Bioluminescent, Jungle, Raid; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes; deep teal with living cyan and violet pulses; organism glow through wet leaves; wet leaves, vines, and moss-black stone; dense occlusion with glowing path breaks; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+      creative_brief:
+        "Apply Bioluminescent Jungle Raid as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -33,24 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Volcanic Forge Dungeon',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, snow, pastel, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, snow, pastel, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Volcanic Forge Dungeon within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Volcanic Forge Dungeon's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Volcanic Forge Dungeon's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Volcanic Forge Dungeon: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with black basalt, ember orange, and ash grey; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Volcanic Forge Dungeon: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with lava glow and soot-dimmed highlights; orange furnace bloom; furnace glow from below; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Volcanic Forge Dungeon's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from molten metal, soot, anvils, and volcanic brick; black forge stone, lava seams, and iron gates; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Volcanic Forge Dungeon's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Volcanic Forge Dungeon's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Volcanic, Forge, Dungeon; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes; black basalt, ember orange, and ash grey; lava glow and soot-dimmed highlights; molten metal, soot, anvils, and volcanic brick; tracking paths, campsite anchors, predator scale reveals, terrain chokepoints, resource clusters, and horizon danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+      creative_brief:
+        "Apply Volcanic Forge Dungeon as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -58,26 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Frozen Bazaar Survival Night',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Frozen Bazaar Survival Night within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Frozen Bazaar Survival Night's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through resource scarcity and shelter readability; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Frozen Bazaar Survival Night's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Frozen Bazaar Survival Night: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with cold blue, market amber, and snow glare; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Frozen Bazaar Survival Night: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with lanterns diffused through frost; low-key night lighting with practical pools; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Frozen Bazaar Survival Night's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from market cloth, crates, brass trays, and survival stalls; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Frozen Bazaar Survival Night's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Frozen Bazaar Survival Night's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood cold market desperation; late-hour danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Frozen Bazaar Survival Night into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Frozen Bazaar Survival Night as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Frozen, Bazaar, Survival, Night; resource scarcity and shelter readability; cold blue, market amber, and snow glare; lanterns diffused through frost; market cloth, crates, brass trays, and survival stalls; dense vendor lanes and trade-route clutter; cold market desperation',
     },
   },
   {
@@ -85,26 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Deep Mine Co-op Extraction',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Deep Mine Co-op Extraction within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Deep Mine Co-op Extraction's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through co-op extraction timing; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Deep Mine Co-op Extraction's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Deep Mine Co-op Extraction: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Deep Mine Co-op Extraction: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with headlamp cones and shaft glow; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Deep Mine Co-op Extraction's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from ore dust, cable lifts, helmets, and wet rock; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Deep Mine Co-op Extraction's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Deep Mine Co-op Extraction's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood underground pressure; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Deep Mine Co-op Extraction into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Deep Mine Co-op Extraction as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Deep, Mine, Extraction; co-op extraction timing; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; headlamp cones and shaft glow; ore dust, cable lifts, helmets, and wet rock; vertical descent and extraction-route depth; underground pressure',
     },
   },
   {
@@ -112,26 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Coral Reef Underkingdom',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, murky-water, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, murky-water, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Coral Reef Underkingdom within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Coral Reef Underkingdom's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Coral Reef Underkingdom's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Coral Reef Underkingdom: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with reef pink, turquoise, and deep-sea blue; deep teal, coral red, and wet black; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Coral Reef Underkingdom: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Coral Reef Underkingdom's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from coral branches, wet armor, and bubbles; reef stone, hulls, and salt spray; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Coral Reef Underkingdom's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Coral Reef Underkingdom's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Coral Reef Underkingdom into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Coral Reef Underkingdom as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Coral, Reef, Underkingdom; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes; reef pink, turquoise, and deep-sea blue; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; coral branches, wet armor, and bubbles; tracking paths, campsite anchors, predator scale reveals, terrain chokepoints, resource clusters, and horizon danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
     },
   },
   {
@@ -139,24 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crimson Canyon Sniper Run',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, neon-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, neon-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Crimson Canyon Sniper Run within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crimson Canyon Sniper Run's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through long-range threat readability; precision threat route; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Crimson Canyon Sniper Run's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Crimson Canyon Sniper Run: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with crimson rock and black rifle silhouette; red rock, dust tan, and hard blue shadow; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Crimson Canyon Sniper Run: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Crimson Canyon Sniper Run's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Crimson Canyon Sniper Run's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Crimson Canyon Sniper Run's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Crimson, Canyon, Sniper, Run; long-range threat readability; crimson rock and black rifle silhouette; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; cliff corridors and long-range sightlines; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+      creative_brief:
+        "Apply Crimson Canyon Sniper Run as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -164,24 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Thunder Plains Beast Hunt',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, cityscape, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, cityscape, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Thunder Plains Beast Hunt within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Thunder Plains Beast Hunt's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through tracking, ambush, and scale reveal; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Thunder Plains Beast Hunt's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Thunder Plains Beast Hunt: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Thunder Plains Beast Hunt: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with storm flashes over open plains; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Thunder Plains Beast Hunt's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Thunder Plains Beast Hunt's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Thunder Plains Beast Hunt's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood beast hunt under violent weather; hunt-or-be-hunted pressure; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Thunder, Plains, Beast, Hunt; tracking, ambush, and scale reveal; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; storm flashes over open plains; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; predator scale reveal and tracking path tension; beast hunt under violent weather',
+      creative_brief:
+        "Apply Thunder Plains Beast Hunt as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -189,26 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Emberwood Ranger Outpost',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, snow-theme, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, snow-theme, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Emberwood Ranger Outpost within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Emberwood Ranger Outpost's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through scout defense posture; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Emberwood Ranger Outpost's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Emberwood Ranger Outpost: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with ember orange against damp forest green; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Emberwood Ranger Outpost: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Emberwood Ranger Outpost's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from charred timber and ranger gear; field cloak, bows, outpost timber, and ember ash; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Emberwood Ranger Outpost's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Emberwood Ranger Outpost's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Emberwood Ranger Outpost into a portable visual system for 6. Wilderness Hunts & Harsh Frontiers. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Emberwood Ranger Outpost as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Emberwood, Ranger, Outpost; scout defense posture; ember orange against damp forest green; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; charred timber and ranger gear; tracking paths, campsite anchors, predator scale reveals, terrain chokepoints, resource clusters, and horizon danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
     },
   },
   {
@@ -216,24 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bronze Marsh Siege Camp',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, neon, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, neon, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Bronze Marsh Siege Camp within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bronze Marsh Siege Camp's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through besieged objective logic; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Bronze Marsh Siege Camp's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Bronze Marsh Siege Camp: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with muddy bronze, oxidized green, and campfire amber; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Bronze Marsh Siege Camp: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Bronze Marsh Siege Camp's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from bronze fittings and marsh-wet canvas; reeds, peat water, green copper, and wet roots; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Bronze Marsh Siege Camp's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Bronze Marsh Siege Camp's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood humid occult pressure; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Bronze, Marsh, Siege, Camp; besieged objective logic; muddy bronze, oxidized green, and campfire amber; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; bronze fittings and marsh-wet canvas; walls, breach lanes, and fallback rings; humid occult pressure',
+      creative_brief:
+        "Apply Bronze Marsh Siege Camp as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -241,24 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Titan Orchard Colossus Hunt',
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, city-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, city-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Titan Orchard Colossus Hunt within 6. Wilderness Hunts & Harsh Frontiers: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Titan Orchard Colossus Hunt's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through giant encounter scale; scale encounter reveal; tracking, ambush, and scale reveal; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Titan Orchard Colossus Hunt's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
       color_and_tone:
-        'Use a controlled palette that supports Titan Orchard Colossus Hunt: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Titan Orchard Colossus Hunt: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Titan Orchard Colossus Hunt's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from gnarled branches, fruit color, and defensive machinery; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Titan Orchard Colossus Hunt's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Titan Orchard Colossus Hunt's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood pastoral zone turned tactical; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 6. Wilderness Hunts & Harsh Frontiers style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Titan, Orchard, Colossus, Hunt; giant encounter scale; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; gnarled branches, fruit color, and defensive machinery; colossal target framed by small scale markers; pastoral zone turned tactical',
+      creative_brief:
+        "Apply Titan Orchard Colossus Hunt as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

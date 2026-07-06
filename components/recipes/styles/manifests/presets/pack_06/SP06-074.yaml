@@ -12,20 +12,49 @@ tags:
   - essential-art-styles
   - mixed-media
 visualDna:
-  aesthetic: Acrylic strokes on photo
-  subject_treatment: Brush strokes
-  color_and_tone: Photo + Paint
-  lighting_and_shadow: Mixed
-  texture_and_material: Paint texture
-  camera_and_composition: Obscured details
-  atmosphere_and_mood: Abstracted reality
-  rendering_and_quality: Expressive overpainted-print finish with smeared opacity and obscured detail
-  key_features: Smeared paint
+  aesthetic: >-
+    Paint over Photo acts as a transferable art-medium router: start from Acrylic strokes on photo,
+    Smeared paint and mixed-media assembly system built from layering, adhesion, surface collision,
+    found-material logic, tactile seams, and handmade construction, then apply the medium behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Brush strokes; preserve the prompt subject while rebuilding
+    it through collage cuts, photographic fragments, stitched thread, tape, smoke, coffee stain,
+    gilding, marbling, or stencil bridges, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Photo + Paint; treat color as material combination: paper aging, varnish
+    warmth, toner black, red graphic strikes, thread accents, metallic leaf, sepia stain, or marbled
+    oil flow, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Mixed; make light reveal relief, varnish gloss, paper lift, tape shine,
+    thread shadow, smoke softness, metallic reflection, or flat stencil contrast, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Paint texture; surface detail should show torn fiber, glue, tape edge, cork tooth, thread
+    thickness, soot, coffee bloom, varnish crackle, or assembled object depth, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Obscured details; compose through layer order, overlap, pin logic,
+    cut rhythm, swatch relationships, tactile seams, and graphic collision without requiring a
+    literal craft table, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Abstracted reality; derive mood from DIY urgency, memory, repair, evidence, punk
+    collision, tactile intimacy, decorative excess, or experimental material play, letting the
+    medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Expressive overpainted print finish with smeared opacity and obscured detail; finish
+    with coherent material stacking, readable subject transformation, and no single flat texture
+    pasted over the whole image, clean denoised surfaces where appropriate, and enough craft
+    evidence to make the medium recognizable.
+  key_features: Acrylic strokes on photo; Smeared paint; Photo + Paint; Paint texture; Obscured details
   creative_brief: >-
-    Thick acrylic strokes drag across an existing image surface, obscuring and revealing in the same gesture,
-    paint acting as both veil and window. The brush risks the base layer through smear, opacity, and
-    interruption. The image lives in friction between printed certainty and applied gesture, without requiring
-    photographic realism.
+    Apply Paint over Photo as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Acrylic strokes on photo, Smeared paint, Paint texture without requiring the card image's
+    original subject.
 avoidRules:
   - realistic
   - photorealistic
@@ -43,12 +72,25 @@ avoidRules:
   - border
   - literal photo requirement
   - portrait requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - single flat texture overlay
+  - fake scrapbook text
+  - craft-table default
+  - clean vector render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-074.webp
 attributes:
   negativePrompt: >-
     realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, literal photo requirement, portrait requirement
+    watermark, text, signature, frame, border, literal photo requirement, portrait requirement,
+    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low
+    resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector
+    render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,27 +12,62 @@ tags:
   - abstract-and-experimental
   - material-surface-textures
 visualDna:
-  aesthetic: Broken pottery repaired with gold
-  subject_treatment: Gold cracks
-  color_and_tone: Ceramic + Gold
-  lighting_and_shadow: Gold reflection
-  texture_and_material: Ceramic
-  camera_and_composition: Cracked
-  atmosphere_and_mood: Healing, beautiful
-  rendering_and_quality: Wabi-sabi, precious
-  key_features: Gold veins
+  aesthetic: >-
+    Kintsugi becomes a transferable material surface transformation system: start from Broken
+    pottery repaired with gold, Gold veins, and Cracked, then route prompt content through physical
+    surface grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing
+    one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Gold cracks to coat, wrap, weather, polish,
+    crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Ceramic + Gold; let color follow material depth, veins, patina,
+    oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the
+    subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Gold reflection drive the light response: show reflectance honestly through gloss, matte
+    falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless
+    the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Ceramic as the tactile or mark-making basis; surface behavior needs coherent grain,
+    chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Cracked as reusable spatial grammar: support macro texture studies and full-scene
+    use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Healing, beautiful as the emotional register; derive mood from durability, luxury, decay,
+    tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker,
+    or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Wabi-sabi, precious: finish with material clarity, controlled micro-detail, and no
+    stock texture pasted over forms, preserving prompt X as the base content and the preset as the
+    style router.
+  key_features: >-
+    Broken pottery repaired with gold; Gold cracks; Ceramic + Gold; Gold reflection; Ceramic;
+    Cracked; Healing, beautiful; Wabi-sabi, precious; Gold veins
   creative_brief: >-
-    Apply kintsugi repair logic over the input with ceramic fracture fields, gold lacquer veins, precious
-    reflection, wabi-sabi asymmetry, and visible damage transformed into structure. If pottery or object
-    exists, repair it; otherwise treat cracks as luminous compositional lines without requiring a shattered
-    landscape.
+    Apply kintsugi repair logic over the input with ceramic fracture fields, gold lacquer veins,
+    precious reflection, wabi-sabi asymmetry, and visible damage transformed into structure. If
+    pottery or object exists, repair it; otherwise treat cracks as luminous compositional lines
+    without requiring a shattered landscape.
 avoidRules:
   - perfect
   - new
+  - wrong material
+  - generic stock texture
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-071.webp
 attributes:
-  negativePrompt: perfect, new
+  negativePrompt: >-
+    perfect, new, wrong material, generic stock texture, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

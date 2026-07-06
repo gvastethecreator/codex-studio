@@ -12,31 +12,87 @@ tags:
   - fashion-and-costume
   - historical-and-fantasy
 visualDna:
-  aesthetic: Frontier workwear myth, dust-worn practicality and sun-baked material tension.
+  aesthetic: >-
+    Frontier Workwear operates as a portable fashion-costume router: combine Frontier workwear myth,
+    dust-worn practicality and sun-baked material tension with period and mythic costume logic with
+    era silhouette, regalia structure, textile craft, and ceremonial proportion, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
   subject_treatment: >-
-    Duster-length sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke
-    structure.
-  color_and_tone: Brown, Tan, Denim, tobacco, saddle, dust, black-hat black, calico print
-  lighting_and_shadow: Dry sun glare, merciless warm light, amber practical warmth and campfire flicker.
-  texture_and_material: Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather.
+    Preserve the prompt's subject, motion, and context while forms robe, armor, pleat, lace, cinch,
+    plate, embroider, crown, wrap, or ceremonialize through Duster-length sweep, waistcoat taper,
+    bandana-triangle geometry, boot-leather rhythm and strap-yoke structure; identity stays readable
+    as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through period pigments, jewel tones, mourning blacks, metallic trim, linen or wool
+    neutrals, royal accents, and age-aware dye; keep textile values separated, accents intentional,
+    material color believable, and palette behavior attached to the subject instead of pasted
+    wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Dry sun glare, merciless warm light, amber practical warmth and campfire flicker plus
+    museum, candle, daylight, ceremonial, or portrait light that reveals textile depth and
+    silhouette hierarchy as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather
+    plus brocade, linen, wool, silk, leather, metal, beadwork, lace, fur, embroidery, trim, and
+    handworked surface detail; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
+    elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Frontier Workwear using its key spatial cues: Brim geometry, bandana folds, duster sweep,
-    brass hardware, boot-leather wear and yoke stitching.
-  atmosphere_and_mood: Tough, lonely, dry-sun tension, frontier solitude and weathered resolve.
-  rendering_and_quality: Iconic, rugged, frontier-photograph clarity with workwear grit.
-  key_features: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear and yoke stitching.
+    Compose with Compose for Frontier Workwear using its key spatial cues: Brim geometry, bandana
+    folds, duster sweep, brass hardware, boot-leather wear and yoke stitching plus regal posture
+    logic, era silhouette, layered garment structure, ornament placement, and readable period
+    identity as reusable fashion framing grammar, allowing portraits, objects, creatures,
+    environments, action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through ceremony, history, myth, rank, mourning, travel, revolution, courtly
+    pressure, or folk memory; the tone should feel specific to Frontier Workwear while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with period-aware costume clarity, tactile textile truth, ornament discipline, and no
+    cheap renaissance-fair shortcut; prioritize clean style recognition, believable material
+    physics, prompt preservation, controlled detail, and no watermark, fake text, or accidental UI.
+  key_features: >-
+    Frontier workwear myth, dust-worn practicality and sun-baked material tension; Duster-length
+    sweep, waistcoat taper, bandana-triangle geometry, boot-leather rhythm and strap-yoke structure;
+    Oilskin leather, trail dust, raw denim, wool serape, brass hardware and worn boot leather; Dry
+    sun glare, merciless warm light, amber practical warmth and campfire flicker; Compose for
+    Frontier Workwear using its key spatial cues: Brim geometry, bandana folds, duster sweep, brass
+    hardware, boot-leather wear and yoke stitching
   creative_brief: >-
-    Give any input frontier workwear logic: oilskin leather, duster sweep, tobacco tan, denim, bandana
-    triangles, brim geometry and brass glints. Keep frontier myth as a style anchor without requiring
-    holsters, spurs, weapons, saloons, street standoffs, desert figures or cowboy portraits.
+    Use Frontier Workwear after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Frontier workwear myth,
+    dust-worn practicality and sun-baked material tension, Duster-length sweep, waistcoat taper,
+    bandana-triangle geometry, boot-leather rhythm and strap-yoke structure, Oilskin leather, trail
+    dust, raw denim, wool serape, brass hardware and worn boot leather, Dry sun glare, merciless
+    warm light, amber practical warmth and campfire flicker, Compose for Frontier Workwear using its
+    key spatial cues: Brim geometry, bandana folds, duster sweep, brass hardware, boot-leather wear
+    and yoke stitching plus corsetry, armor plates, robes, sashes, pleats, trim, brocade, regalia
+    layers, fastenings, and historically legible cut, palette behavior, light response, material
+    treatment, silhouette grammar, and finish discipline without requiring one body type, fixed
+    outfit, venue, prop bundle, or card composition.
 avoidRules:
-  - city
+  - urban-system
   - clean
   - weapon draw
+  - cheap costume rental
+  - wrong era mashup
+  - plastic armor
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-037.webp
 attributes:
-  negativePrompt: city, clean, weapon draw, holsters, saloons, street standoffs, cowboy portrait
+  negativePrompt: >-
+    urban-system, clean, weapon draw, cheap costume rental, wrong era mashup, plastic armor, fixed
+    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
+    watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

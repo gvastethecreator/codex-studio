@@ -13,23 +13,60 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Art-student shojo-seinen blend, spring light, unspoken longing, and youth drifting toward adulthood
-    through creativity and fragile friendship
+    Honey and Clover - Art-School Spring Ache operates as a portable anime-lifestyle router: combine
+    Honey and Clover - Art School Spring Ache identity cues through Sketchbook textures; spring
+    light; quiet ensemble spacing; unspoken affection acting; analog creative warmth; Art School
+    Spring Ache with Honey and Clover lineage used only as style reference with shojo, magical girl,
+    and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate
+    contour, emotional close reading, and theatrical abstraction; Honey and Clover may guide line
+    economy, acting, color, and period flavor but must not force canon cast, title scenes, logos, or
+    copied costumes, so the preset supplies anime style behavior after prompt X rather than a
+    required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Sketchbook-informed contour work, painterly gesture accents, fine emotional line economy, and
-    creative-material silhouette readability
-  color_and_tone: Spring ivory, muted sakura pinks, pale celadon, weathered wood neutrals, and charcoal sketch accents
-  lighting_and_shadow: North-window-like daylight, dusty afternoon bloom, and soft reflective fill from paper and canvas surfaces
-  texture_and_material: Graphite dust, watercolor paper tooth, cotton softness, worn wood, and matte tool patina
-  camera_and_composition: Gentle memory-depth drift through layered creative foreground elements
-  atmosphere_and_mood: Soft, wistful, intelligent, aching
-  rendering_and_quality: Poetic art-school rendering with lived-in studio realism, emotional restraint, and tactile analog warmth
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
+  color_and_tone: >-
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
+  lighting_and_shadow: >-
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
+  texture_and_material: >-
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
+  camera_and_composition: >-
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
+  rendering_and_quality: >-
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
   key_features: >-
-    Sketchbook textures, spring light, quiet ensemble spacing, unspoken affection acting, analog creative
-    warmth
+    Sketchbook textures; spring light; quiet ensemble spacing; unspoken affection acting; analog
+    creative warmth; Art School Spring Ache with Honey and Clover lineage used only as style
+    reference
   creative_brief: >-
-    Preserve art-school spring-ache grammar as a reusable style language: sketch-driven line economy,
-    studio-material tactility, and restrained youthful longing should remain coherent across subjects.
+    Use Honey and Clover - Art-School Spring Ache after prompt X as a transferable anime
+    character/lifestyle layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while the preset supplies Sketchbook textures, spring light, quiet ensemble spacing, unspoken
+    affection acting, analog creative warmth, Art School Spring Ache with Honey and Clover lineage
+    used only as style reference, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -43,12 +80,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-196.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

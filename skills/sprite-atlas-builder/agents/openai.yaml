@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Sprite Atlas Builder'
+  short_description: 'Build imagegen-backed professional sprite/asset atlases with animation, scale, cleanup, motion, and visual QA'
+  default_prompt: 'Use $sprite-atlas-builder to create a top-down tileset atlas preset.'

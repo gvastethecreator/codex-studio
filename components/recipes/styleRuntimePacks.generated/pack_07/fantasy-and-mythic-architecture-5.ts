@@ -7,28 +7,29 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP07-051',
     name: 'Verdant Elven Sanctuary',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'industrial, blocky',
+    negativePrompt:
+      'industrial, blocky, licensed fantasy location, elf/person, weapon, throne interior zones, long corridor, market aisle, library aisle, industrial block, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Verdant Elven Sanctuary within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdant Elven Sanctuary's specific style identity.",
+        'Verdant Elven Sanctuary acts as a transferable architecture/interior router: branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow, moss green; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Verdant Elven Sanctuary through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Verdant Elven Sanctuary-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Verdant Elven Sanctuary recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Verdant Elven Sanctuary: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Verdant Elven Sanctuary: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Verdant Elven Sanctuary: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Verdant Elven Sanctuary with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Verdant Elven Sanctuary's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Verdant Elven Sanctuary into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Verdant Elven Sanctuary after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies branch-derived filigree arches, carved pale stone, living wood, silver inlay, water-layer glow, moss green, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
@@ -36,165 +37,173 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dwarven Megalithic Forge',
     category: '5. Fantasy And Mythic Architecture',
     negativePrompt:
-      'wood-dominant finish, lightweight construction, delicate trim, literal lamp, hero forge scene',
+      'wood-dominant finish, lightweight construction, delicate trim, dwarf character, hero forge scene, weapon, hammer prop, fantasy hall corridor, castle throne interior zones, readable runes/text, market aisle, camera prop, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Deep-earth megalithic forge gravity, mineral heat and ancestral stonecraft doctrine.',
+        'Dwarven Megalithic Forge acts as a transferable architecture/interior router: chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Megalithic pillar grids, chiseled mass geometry, rune-banded arches and heavy-load vaults.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Grey Stone, Gold, Fire, Vein-Metal Copper, Lava Orange, Gem-cluster Ruby, Deep Black',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Forge thermal glow, amber crystal glow, torchlike rhythm and orange mineral heat.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Carved granite, chisel marks, hammered gold, cast iron, crystal veins and dense leather.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Low-vault compression, heat-channel axial pull and overbuilt megalithic load rhythm.',
-      atmosphere_and_mood: 'Ancestral resilience, clan authority and deep-earth solemnity.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Epic forge-fortress fidelity with material weight and blunt structural gravity.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Runic supports, forge cores, thermal channels, hammer-marked metal and monumental axial weight.',
+        'chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Carry any form toward ancestral weight: megalithic pillars, chisel marks, forge heat and hammered metal. It should feel built to survive centuries under load, not like a generic dwarf fortress or hero set. Keep megalithic weight, mineral heat, load-bearing scale and ancestral solemnity without requiring building, landscape, creature or fixed scene.',
+        'Apply Dwarven Megalithic Forge after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies chiseled granite, rune-like non-readable bands, hammered gold, thermal channels, mineral heat glow, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-053',
     name: 'Suspended Fortress Sublime',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'literal castle, ground-level building, static terrain lock',
+    negativePrompt:
+      'required castle, ground-level building, static terrain lock, waterfall postcard, dragon, person, market aisle, library aisle, corridor, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal castle, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Sky-borne mass sublime with suspended architectural gravity, aerial sovereignty and impossible altitude.',
+        'Suspended Fortress Sublime acts as a transferable architecture/interior router: airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Vertical spire clusters, layered floating mass, void cuts, descending vectors and wind-cut silhouettes.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'White, blue sky, cloud silver, golden sun edge, mist plume white, lapis upper atmosphere',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'High sun, cloud bounce, volumetric rays and golden rim over suspended silhouettes.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Airborne stone, base mist, crystalline edges and eroded floating strata.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Suspended-mass compression, void cuts, negated-gravity depth and mist-plume scale breaks.',
-      atmosphere_and_mood: 'High-altitude sublime, improbable calm and wind-driven grandeur.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Fantasy sky-architecture with atmospheric depth and coherent impossible engineering.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Span-over-void geometry, lower cloud bands, floating undercuts, aerial vectors and dominant sky silhouette.',
+        'airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Any subject gains aerial sovereignty through suspended mass, undercuts, lower mist and high solar rim. The anchor is coherent negated gravity and sky-scale construction, not a literal castle, waterfall scene or fixed fantasy vista.',
+        'Apply Suspended Fortress Sublime after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies airborne stone strata, void cuts, cloud mist, crystalline edges, high sun rim light, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-054',
     name: 'Techno-Brutalist Compression',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'clean, wide empty space, hallway, corridor, surveillance camera',
+    negativePrompt:
+      'clean, wide empty space, hallway/corridor, surveillance camera, fantasy hall, cyberpunk alley, market aisle, library aisle, interior zones-with-chair setup, readable signage, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Techno-Brutalist Compression within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Techno-Brutalist Compression's specific style identity.",
+        'Techno-Brutalist Compression acts as a transferable architecture/interior router: stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Techno-Brutalist Compression through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Techno-Brutalist Compression-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Techno-Brutalist Compression recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Techno-Brutalist Compression: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Techno-Brutalist Compression: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Techno-Brutalist Compression: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Techno-Brutalist Compression with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Techno-Brutalist Compression's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Techno-Brutalist Compression into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Techno-Brutalist Compression after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies stacked concrete modules, exposed service conduits, cable diagonals, rust-black panels, low neon utility glow, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-055',
     name: 'Confectionery Surrealism',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'horror candy, gore, photoreal food macro, edible mascot, kid-party literal',
+    negativePrompt:
+      'horror candy, photoreal food macro, edible mascot party scene, dessert table, kid party, candy mascot, fairy-tale street, castle, market aisle, library aisle, camera prop, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Confectionery Surrealism within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Confectionery Surrealism's specific style identity.",
+        'Confectionery Surrealism acts as a transferable architecture/interior router: icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Confectionery Surrealism through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Confectionery Surrealism-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Confectionery Surrealism recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Confectionery Surrealism: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Confectionery Surrealism: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Confectionery Surrealism: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Confectionery Surrealism with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Confectionery Surrealism's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Confectionery Surrealism into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Confectionery Surrealism after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies icing seams, gumdrop nodes, marshmallow mass, candy-cane structural rhythm, sugar-glass highlights, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-056',
     name: 'Abyssal Deco Pressure',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'cheerful open-sky scene, dry clean luxury interior, no pressure atmosphere',
+    negativePrompt:
+      'cheerful open-sky scene, dry clean luxury interior, cheerful open sky, dry luxury lobby, diver/person, submarine cockpit, readable signage, corridor, market aisle, library aisle, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Abyssal Deco Pressure within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abyssal Deco Pressure's specific style identity.",
+        'Abyssal Deco Pressure acts as a transferable architecture/interior router: pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation, bioluminescent wayfinding glow; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Abyssal Deco Pressure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Abyssal Deco Pressure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Abyssal Deco Pressure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Abyssal Deco Pressure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Abyssal Deco Pressure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Abyssal Deco Pressure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Abyssal Deco Pressure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Abyssal Deco Pressure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Abyssal Deco Pressure into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Abyssal Deco Pressure after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies pressure glass, wet brass, blue aquatic filter, copper-green patina, coral encrustation, bioluminescent wayfinding glow, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-057',
     name: 'Neo-Victorian Steamwork',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'clean energy',
+    negativePrompt:
+      'clean energy, vehicle/train hero, weapon, person, control interior zones, market aisle, library aisle, corridor, clean energy lab, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        'Neo-Victorian retroindustrial steam grammar, brass pressure systems and speculative mechanical utility.',
+        'Neo-Victorian Steamwork acts as a transferable architecture/interior router: riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam, gear nodes; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Riveted pipe networks, vertical venting rhythms, gear nodes and load-bearing structural arches.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Bronze, Brick, Smoke, Copper patina, warm Gaslight Yellow, Coal Black, Brass-bright',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Amber gaslight, diffuse smog glow, mechanical sparks and visible steam venting.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Metal and brick, riveted copper, wood paneling, leather and soot deposits across surfaces.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Compose for Neo-Victorian Steamwork using its key spatial cues: Venting rhythm, brass conduits, clockwork surfaces, boiler nodes and visible pressure hierarchies.',
-      atmosphere_and_mood: 'Industrial momentum, smoky ambition and anxious mechanical progress.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'High-detail steampunk with mechanical plausibility and retroindustrial legibility.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Venting rhythm, brass conduits, clockwork surfaces, boiler nodes and visible pressure hierarchies.',
+        'riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Apply a Neo-Victorian steam grammar to any input: brass articulations, functional rivets, legible pipework, material soot and gaslight glow. Mechanical utility should feel plausible and hierarchical without requiring a skyline, vehicle or specific transit system.',
+        'Apply Neo-Victorian Steamwork after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies riveted copper, brick soot, gaslight amber, pressure gauges without readable text, venting steam, gear nodes, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
@@ -202,84 +211,86 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prismatic Mineral Megastructure',
     category: '5. Fantasy And Mythic Architecture',
     negativePrompt:
-      'ordinary brick-wall dominance, wood-cabin material lock, opaque masonry overriding crystalline optics',
+      'ordinary brick-wall dominance, wood-cabin material lock, opaque masonry overriding crystalline optics, temple postcard, single spire hero, ordinary brick, wood cabin, people, market aisle, library aisle, corridor, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Prismatic Mineral Megastructure within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Prismatic Mineral Megastructure's specific style identity.",
+        'Prismatic Mineral Megastructure acts as a transferable architecture/interior router: faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Prismatic Mineral Megastructure through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Prismatic Mineral Megastructure-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Prismatic Mineral Megastructure recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Prismatic Mineral Megastructure: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Prismatic Mineral Megastructure: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Prismatic Mineral Megastructure: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Prismatic Mineral Megastructure with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Prismatic Mineral Megastructure's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Prismatic Mineral Megastructure into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Prismatic Mineral Megastructure after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies faceted stacking, hexagonal crystal bundles, sapphire-amethyst-white refraction, internal glow, iridescent edges, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-059',
     name: 'Bermed Round-Door Pastoral',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'square, tall',
+    negativePrompt:
+      'square, tall, licensed hobbit-hole copy, village postcard, people, table/chair focus, tall square house, market aisle, library aisle, corridor, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Bermed Round-Door Pastoral within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Bermed Round-Door Pastoral's specific style identity.",
+        'Bermed Round-Door Pastoral acts as a transferable architecture/interior router: lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Bermed Round-Door Pastoral through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Bermed Round-Door Pastoral-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Bermed Round-Door Pastoral recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Bermed Round-Door Pastoral: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Bermed Round-Door Pastoral: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Bermed Round-Door Pastoral: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Bermed Round-Door Pastoral with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Bermed Round-Door Pastoral's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Bermed Round-Door Pastoral into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Bermed Round-Door Pastoral after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies lime-clay plaster, weathered hand wood, mossy turf roof, worn stone, warm brass, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-060',
     name: 'Haunted Toon Deformation',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'scary realistic',
+    negativePrompt:
+      'scary realistic, realistic horror, haunted mansion required, Halloween set, corridor, fantasy hall, monster, gore, chair, curtain, lamp, camera prop, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, haunted mansion literal, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Haunted Toon Deformation within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Haunted Toon Deformation's specific style identity.",
+        'Haunted Toon Deformation acts as a transferable architecture/interior router: elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Haunted Toon Deformation through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Haunted Toon Deformation-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Haunted Toon Deformation recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Haunted Toon Deformation: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Haunted Toon Deformation: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Haunted Toon Deformation: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Haunted Toon Deformation with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Haunted Toon Deformation's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Haunted Toon Deformation into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Haunted Toon Deformation after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies elastic crooked silhouette, inked contours, moonlit violet, toxic-lime accents, cel-shade blocks, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
@@ -287,81 +298,86 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cryomorphic Palace Geometry',
     category: '5. Fantasy And Mythic Architecture',
     negativePrompt:
-      'dominant warm palette, cozy fireplace mood, orange heat glow overriding glacial optics',
+      'dominant warm palette, cozy fireplace mood, orange heat glow overriding glacial optics, required palace hall, throne interior zones, warm fireplace, orange heat glow, person, market aisle, library aisle, corridor, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, literal palace hall, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Cryomorphic Palace Geometry within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cryomorphic Palace Geometry's specific style identity.",
+        'Cryomorphic Palace Geometry acts as a transferable architecture/interior router: faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Cryomorphic Palace Geometry through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Cryomorphic Palace Geometry-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Cryomorphic Palace Geometry recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Cryomorphic Palace Geometry: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Cryomorphic Palace Geometry: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Cryomorphic Palace Geometry: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Cryomorphic Palace Geometry with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Cryomorphic Palace Geometry's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Cryomorphic Palace Geometry into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Cryomorphic Palace Geometry after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies faceted ice buttress, frozen column rhythm, subsurface cyan transmission, aurora mint edge light, polished ice planes, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-062',
     name: 'Canopy Rope Vernacular',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'dominant polished industrial metal, cold machine structure',
+    negativePrompt:
+      'dominant polished industrial metal, tribe/person, jungle village postcard, polished metal dominance, ground hut, market aisle, library aisle, corridor, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
       aesthetic:
-        "Canopy Rope Vernacular within 5. Fantasy And Mythic Architecture: a reusable Architecture & Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Canopy Rope Vernacular's specific style identity.",
+        'Canopy Rope Vernacular acts as a transferable architecture/interior router: catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Define Canopy Rope Vernacular through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Use a Canopy Rope Vernacular-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Use lighting that makes Canopy Rope Vernacular recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Use materials and textures that reinforce Canopy Rope Vernacular: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Canopy Rope Vernacular: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Canopy Rope Vernacular: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'Render Canopy Rope Vernacular with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        "Prioritize Canopy Rope Vernacular's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Create a style-card that translates Canopy Rope Vernacular into a portable visual system for 5. Fantasy And Mythic Architecture. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Canopy Rope Vernacular after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies catenary lashings, radial platform fragments, bark support contact, woven panels, dappled canopy light, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
   {
     id: 'SP07-063',
     name: 'Sepulchral Civic Monumentalism',
     category: '5. Fantasy And Mythic Architecture',
-    negativePrompt: 'lush garden, cozy living space',
+    negativePrompt:
+      'lush garden, cozy living space, cemetery scene, skull/gore, monster, person, cozy living interior zones, market aisle, library aisle, corridor, empty abstraction, licensed fantasy location, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card',
     style: {
-      aesthetic: 'Monumental ceremonial sepulchral gravity with mineral civic scale.',
+      aesthetic:
+        'Sepulchral Civic Monumentalism acts as a transferable architecture/interior router: black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids; fuse it with mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament; route spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring the default sample anchor, fixed spatial set, landscape setup, or object sample.',
       subject_treatment:
-        'Severe axiality, stepped masses, sealed chambers, lapidary grids and contained ritual vertical accents.',
+        'Preserve prompt subject, action, and context while translating any requested subject through monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; treat black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids as massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory building scene.',
       color_and_tone:
-        'Black basalt, bone-white marble, oxidized bronze, dim funerary gold, spectral green haze, and bruised violet shadow fields',
+        'Map color through mineral neutrals, moss and water glow, brass or gold heat, abyssal blues, spectral edge color, and restrained fantasy accents; let source cues such as black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids decide accent hierarchy, material temperature, and value separation while staying attached to the requested content.',
       lighting_and_shadow:
-        'Low mineral glow, pale moon diffusion, contained spectral lanterns and sealed-enclave volumetric haze.',
+        'Use sacred glow, forge heat, underwater diffusion, cloud rim, mineral refraction, spectral low light, and monumental shadow hierarchy; make light reveal joints, relief, material depth, scale, and atmosphere from black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids without replacing prompt X with a stock architectural render.',
       texture_and_material:
-        'Eroded ashlar, cracked marble, oxidized grates, ashen paving and carved ossuary relief.',
-      camera_and_composition: 'Controlled processional depth with sepulchral compression.',
-      atmosphere_and_mood: 'Solemn, ritual and oppressive, with contained acoustic silence.',
+        'Render living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; prioritize the tactile signals in black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids, with believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.',
+      camera_and_composition:
+        'Frame through detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-room lock; convert black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids into reusable perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through sublime, sacred, engineered, haunted, playful, abyssal, pastoral, or monumental pressure carried through structure and material; the preset can support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for them while keeping the architectural identity readable.',
       rendering_and_quality:
-        'High-detail architectural dark fantasy with tonal restraint and oppressive monumental readability.',
+        'Finish with high-control fantasy-architecture finish with coherent material logic, no licensed location read, no weapon or character dependency; keep clean denoise, legible construction, stable object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera prop, and no prompt-literal card copy.',
       key_features:
-        'Processional rhythm, sealed chambers, runic wayfinding and massive thresholds.',
+        'black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids; monumental mass, symbolic thresholds, carved or grown structure, impossible support, mineral or organic envelope logic, and sacred scale; living wood, chiseled stone, hammered metal, steamwork brass, ice, crystal, candy-mass surrealism, bone marble, and rune-like non-text marks; detail-first mythic anchors, section cuts, undercut gravity, vertical compression, ritual thresholds, and scale without literal throne-interior zones lock',
       creative_brief:
-        'Push any input toward sepulchral civic monumentality: processional axiality, severe stone, low spectral light, oxidized bronze and sealed-threshold hierarchy. Avoid requiring a cemetery, obelisk or literal crypt; preserve portable architectural solemnity.',
+        'Apply Sepulchral Civic Monumentalism after prompt X as a transferable architecture/interior style layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies black basalt, bone marble, oxidized bronze, low spectral glow, lapidary grids, mythic architecture grammar with impossible structure, ritual scale, fantasy material logic, and believable load-bearing ornament, material discipline, spatial grammar, and negative controls without requiring a single spatial sample, product-photo setup, aisle-like default, or empty abstraction.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

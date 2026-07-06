@@ -13,29 +13,88 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: >-
-    Battle-royale visual language with high-visibility color coding, stormlike pressure gradients, and
-    streamer-era polish.
+    Battle Royale Compression Colorway acts as a transferable art-medium router: start from Battle
+    royale visual language with high visibility color coding, stormlike pressure gradients, and
+    streamer era polish, gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity and game-art direction system built from playable
+    readability, UI or asset grammar, role clarity, production polish, and genre-specific visual
+    feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Clarify any subject through tactical silhouette separation, loot-color accents, and strong foreground
-    priority.
-  color_and_tone: Saturated cyan-violet perimeter glow, warm danger accents, high-key mids, and legible game-ready contrast.
+    Transform any prompt subject through Clarify any subject through tactical silhouette separation,
+    loot color accents, and strong near field priority; preserve the prompt subject while routing it
+    through tile readability, icon clarity, splash rendering, interface material, sprite bounce,
+    shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
+  color_and_tone: >-
+    Build color with Saturated cyan violet perimeter glow, warm danger accents, high key mids, and
+    legible game ready contrast; use color as gameplay hierarchy: rarity glow, faction contrast,
+    tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory
+    material, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
   lighting_and_shadow: >-
-    Encroaching colored haze, bright rim edges, punchy sunlight or LED hits, and simplified shadow
-    readability.
-  texture_and_material: Clean PBR-lite materials, compression-friendly gradients, subtle screen sharpness, and minimal grime.
-  camera_and_composition: Wide playable readability, circular pressure motifs, strong focal isolation, and HUD-safe edges.
-  atmosphere_and_mood: Urgent, competitive, kinetic mood without requiring arenas, storms, players, weapons, or vehicles.
-  rendering_and_quality: Modern live-service key-art polish, vivid but not cluttered, no UI labels or readable text.
+    Handle light through Encroaching colored haze, bright rim edges, punchy sunlight or LED hits,
+    and simplified shadow readability; shape light through game readability: rim separation, UI
+    glow, static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity
+    streaks, so value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Clean PBR lite materials, compression friendly gradients, subtle screen sharpness, and
+    minimal grime; surface detail should support genre grammar through parchment, HUD glass, pixel
+    atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Wide playable readability, circular pressure motifs, strong focal
+    isolation, and HUD safe edges; compose through gameplay-facing hierarchy, atlas consistency,
+    menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Urgent, competitive, kinetic mood without requiring contest geometry, storms,
+    players, weapons, or vehicles; derive mood from playable stakes, collection desire, tactical
+    control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting the medium
+    alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Modern live service key art polish, vivid but not cluttered, no UI labels or
+    readable text; finish with game-production clarity, strong silhouettes, controlled UI-like
+    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Battle royale visual language with high visibility color coding, stormlike pressure gradients,
+    and streamer era polish; gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity; Saturated cyan violet perimeter glow, warm danger
+    accents, high key mids, and legible game ready contrast; Clean PBR lite materials, compression
+    friendly gradients, subtle screen sharpness, and minimal grime; Wide playable readability,
+    circular pressure motifs, strong focal isolation, and HUD safe edges
+  creative_brief: >-
+    Apply Battle Royale Compression Colorway as an art-style preset over prompt X: preserve the
+    user's requested subject, then route mark-making, palette, surface, composition, mood, and final
+    craft through Battle royale visual language with high visibility color coding, stormlike
+    pressure gradients, and streamer era polish, gameplay-readable hierarchy, genre-specific surface
+    language, UI-aware composition, and production-art clarity, Clean PBR lite materials,
+    compression friendly gradients, subtle screen sharpness, and minimal grime without requiring the
+    card image's original subject.
 avoidRules:
   - watermark
   - text
   - literal arena requirement
   - storm wall requirement
   - weapon requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - low resolution
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-111.webp
 attributes:
-  negativePrompt: watermark, text, literal arena requirement, storm wall requirement, weapon requirement
+  negativePrompt: >-
+    watermark, text, literal arena requirement, storm wall requirement, weapon requirement, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature,
+    low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

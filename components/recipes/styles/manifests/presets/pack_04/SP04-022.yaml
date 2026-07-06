@@ -12,26 +12,80 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Soft colored-pencil sketch language with layered pigment build-up
-  subject_treatment: Fine pencil contour and hatch strokes with directional grain
-  color_and_tone: Muted warm-cool pencil layers with gradual tonal blending
-  lighting_and_shadow: Diffuse paper-white illumination with low-contrast form modeling
-  texture_and_material: Pronounced tooth interaction and dry pigment granulation
-  camera_and_composition: Gentle edge falloff and softened structural transitions
-  atmosphere_and_mood: Quiet, reflective, domestic warmth
-  rendering_and_quality: Intimate sketchbook finish emphasizing hand pressure nuance
-  key_features: Layered glazing, crosshatch modulation, stump-like soft blending
+  aesthetic: >-
+    Colored Pencil acts as a transferable illustration router: start from Soft colored-pencil sketch
+    language with layered pigment build-up, Layered glazing, crosshatch modulation, stump-like soft
+    blending and storybook and friendly-illustration system built from approachable shapes, handmade
+    media, simplified edges, tactile materials, and high-readability charm, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fine pencil contour and hatch strokes with directional
+    grain; preserve the requested subject while softening, simplifying, miniaturizing,
+    paper-building, mark-making, or diagramming it according to the named medium, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Muted warm-cool pencil layers with gradual tonal blending; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Diffuse paper-white illumination with low-contrast form modeling; shape
+    light through soft diffuse value, paper layering, flat educational contrast, handmade shadows,
+    or medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Pronounced tooth interaction and dry pigment granulation; surface detail should show
+    paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker
+    laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Gentle edge falloff and softened structural transitions; compose
+    with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational
+    layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Quiet, reflective, domestic warmth, mood carried by Colored Pencil craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Intimate sketchbook finish emphasizing hand pressure nuance; finish with clean
+    accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render
+    or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Soft colored-pencil sketch language with layered pigment build-up; Layered glazing, crosshatch
+    modulation, stump-like soft blending; Muted warm-cool pencil layers with gradual tonal blending;
+    Pronounced tooth interaction and dry pigment granulation; Gentle edge falloff and softened
+    structural transitions
   creative_brief: >-
-    Apply colored-pencil sketch language to any input: incremental pigment layering, visible stroke direction,
-    paper-tooth drag, soft-edge transitions, and subtle value shifts should stay calm and portable without
-    requiring sketchbooks, domestic scenes, portraits, still lifes, or fixed props.
+    Apply Colored Pencil as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Soft colored-pencil sketch language with layered pigment build-up, Layered glazing, crosshatch
+    modulation, stump-like soft blending, Pronounced tooth interaction and dry pigment granulation
+    without requiring the card image's original subject.
 avoidRules:
   - ink
   - paint
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-022.webp
 attributes:
-  negativePrompt: ink, paint
+  negativePrompt: >-
+    ink, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

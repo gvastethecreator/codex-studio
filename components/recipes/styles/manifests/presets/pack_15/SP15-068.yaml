@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP15-068
 packId: pack_15
-name: Rocket Chapel Outpost
+name: Rocket Fin Signal
 category: 9. Space, Atomic & Ray Punks
 version: 1
 supportedTasks:
@@ -12,38 +12,59 @@ tags:
   - punk-spectrum-vault
   - space-atomic-and-ray-punks
   - raypunk
-  - outpost
+  - rocket-fin-signal
 visualDna:
   aesthetic: >-
-    raypunk frontier outpost built around one distinctive outpost keeper protagonist, rocket fins, simple
-    antenna arcs, desert dust, and sparse desert-night stars.
+    Rocket Fin Signal operates as a portable punk-spectrum router: combine Rocket Fin Signal
+    identity cues through rocket fins; antenna arcs; oxide dust planes; canvas suit texture; sparse
+    star dots; oxide-red dust planes with space/atomic/ray punk grammar with rocket-age curves,
+    isotope glow, reactor leisure, orbit chrome, plasma transit, lunar cultivation, and optimistic
+    danger, so the preset supplies retrofit style behavior rather than a required venue, mascot,
+    prop bundle, or card composition.
   subject_treatment: >-
-    Atomic signage, rocket-age curves, raygun geometry, orbital equipment, chrome kitsch, and cosmic civic
-    forms. Core composition uses outpost keeper protagonist, rocket fins, antenna arcs, desert dust, sparse
-    star sky.
-  color_and_tone: rocket white, desert red, teal shadow, star gray
-  lighting_and_shadow: sparse star dots, outpost glow, moonlit fins, teal shadow planes
-  texture_and_material: painted rocket metal, desert stone, canvas suits, antenna wire, dust
+    Preserve prompt X's subject, action, scale, and setting while translating forms through atomic
+    signage, chrome arcs, rocket-fin wedges, pressure suit seams, lunar greenhouse edges, plasma
+    rails, tether curves, and vacuum-clean silhouette; motifs can become contour, surface, costume,
+    equipment, atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through uranium green, coral red, chrome silver, cream, star blue, cherry red, moon
+    white, brushed steel, and vacuum black; keep dominant, support, and accent values readable,
+    avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair
+    pressure.
+  lighting_and_shadow: >-
+    Use reactor glow, blue-hour neon, observation-window light, plasma bloom, lunar bounce, panel
+    glow, and chrome-reflection cuts; lighting should reveal the punk system, preserve the user's
+    subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.
+  texture_and_material: >-
+    Render chrome blocks, enamel panels, vinyl bands, glass blocks, brushed steel, coolant glass,
+    vacuum fabric, and clean atomic decals without readable text; keep material scale coherent,
+    surface marks motivated, and tactile details strong enough to route style without becoming
+    pasted grunge.
   camera_and_composition: >-
-    Promenades, diners, outposts, salvage yards, rails, lunar farms, craters, and isotope-lit plazas. Keep
-    depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: lonely, hopeful, frontier, symbolic
+    Compose through orbit curves, ray-age wedges, sleek public transit rhythm, spherical depth cues,
+    and confident subject spacing without diner or vehicle dependency as reusable framing grammar
+    for characters, creatures, objects, vehicles, environments, symbols, or full scenes without one
+    required card layout.
+  atmosphere_and_mood: >-
+    Carry mood through bright civic weirdness, touristic optimism, nocturnal fun, clinical danger,
+    lunar fragility, and retrofuturist social energy; the tone may become adult, romantic, violent,
+    comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains
+    legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: outpost keeper protagonist, rocket fins, antenna masts, desert dust planes, sparse star dots
+    Finish with flat-to-painterly raypunk illustration with clean chrome shapes, denoised glow,
+    matte blacks, and no glossy car-ad realism; prioritize clean denoise, bold readable shapes,
+    controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art
+    polish.
+  key_features: >-
+    rocket fins; antenna arcs; oxide dust planes; canvas suit texture; sparse star dots; oxide-red
+    dust planes
   creative_brief: >-
-    Raypunk frontier with human scale through one character: a distinctive outpost keeper protagonist posed
-    with rocket fins and simple antenna masts, dust planes, desert color blocks, and sparse star dots, not
-    generic spaceship concept art or religious chapel staging. The outpost supports the protagonist; it must
-    not become object-only rocket architecture. Avoid settler crowd as main subject, worker frontier poster,
-    cockpit scene, weapon hero, religious iconography, or starfield wallpaper. Keep the result representative
-    rather than over-abstract; use flat graphic illustration, gouache-poster shapes, cel-poster blocking, and
-    controlled digital painting over realism or generic concept art. Use few bold color/value zones, large
-    matte shapes, clean surfaces, low-to-moderate detail, and finish denoised with no excessive noise or
-    ultra-fine detail.
+    Use Rocket Fin Signal after prompt X as a transferable punk-spectrum layer: prompt X supplies
+    subject, action, setting, tone, and intensity, while the preset supplies rocket fins, antenna
+    arcs, oxide dust planes, canvas suit texture, sparse star dots, oxide-red dust planes, color
+    logic, light response, material behavior, composition rhythm, mood pressure, and finish
+    discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or
+    sample-card composition.
 avoidRules:
   - photoreal
   - watermark
@@ -54,24 +75,37 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - glossy car ad
+  - diner dependency
+  - readable signage
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-068.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
-    photographic skin pores, realistic foreground portrait, realistic facial hair detail, lens blur, bokeh,
-    depth-of-field photo look, cross antenna, religious icon, altar, chapel interior, readable insignia,
-    rocket logo, cockpit glow, cockpit UI, starfield wallpaper, heroic spaceship poster, raygun, weapon hero,
-    photoreal rocket metal, dusty realism, generic soldier hero, guard pin-up, HDR lens realism, 3D render
-    look, PBR material simulation, hyper-detailed concept art, watermark, text, logo, generic style,
-    over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle,
-    unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
-    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
-    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
-    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
-    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
-    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
-    fields, generic American illustration, generic Western RPG card art
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key
+    art, photographic skin pores, realistic near-plane portrait, realistic facial hair detail, lens
+    blur, bokeh, depth-of-field photo look, cross antenna, religious icon, altar, chapel interior,
+    readable insignia, rocket logo, cockpit glow, cockpit UI, starfield wallpaper, heroic spaceship
+    poster, raygun, weapon hero, photoreal rocket metal, dusty realism, generic soldier hero, guard
+    pin-up, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art,
+    watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs,
+    generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy
+    corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation,
+    lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine
+    detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane
+    guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure
+    black masses, muddy black fields, generic American illustration, generic Western RPG card art,
+    repeated-props, glossy car ad, diner dependency, readable signage, fixed punk venue, required
+    mascot, literal sample-card setup, repeated prop bundle, readable text, prompt-literal card
+    reuse, generic cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault
@@ -81,7 +115,7 @@ taxonomy:
     - punk-spectrum-vault
     - space-atomic-and-ray-punks
     - raypunk
-    - outpost
+    - rocket-fin-signal
   supportedTasks:
     - image_generate
     - image_edit

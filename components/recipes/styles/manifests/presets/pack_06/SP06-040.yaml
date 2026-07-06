@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - printmaking
 visualDna:
-  aesthetic: Sun print blueprint
-  subject_treatment: White silhouettes
-  color_and_tone: Prussian Blue and White
-  lighting_and_shadow: Inverted (negative)
-  texture_and_material: Watercolor paper
-  camera_and_composition: Silhouette only
-  atmosphere_and_mood: Blue, scientific
-  rendering_and_quality: Scientific photogram clarity without requiring plants, plans, or buildings
-  key_features: Blue monochrome
+  aesthetic: >-
+    Cyanotype acts as a transferable art-medium router: start from Sun print blueprint, Blue
+    monochrome and print-process system built from matrix marks, ink transfer, pressure,
+    registration, plate or block artifacts, and paper absorption, then apply the medium behavior to
+    prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through White silhouettes; preserve the prompt subject while
+    converting it into carved, etched, stamped, screened, dotted, grained, or impressed mark
+    systems, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Prussian Blue and White; use palette as ink behavior: limited plates,
+    overprint, misregistration, monochrome value, cyan chemistry, newspaper dots, or security
+    green-grey restraint, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Inverted (negative); translate light into line density, dot frequency,
+    relief shadow, plate tone, paper reserve, or ink coverage rather than photographic illumination,
+    so value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Watercolor paper; surface detail should reveal paper fibers, plate marks, burr, gouge,
+    rosin grain, rubber stamp incompleteness, halftone dots, or collagraph relief, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Silhouette only; compose through print registration, cut rhythm,
+    border pressure, edition-like balance, negative space, and repeatable mark hierarchy, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Blue, scientific; derive mood from hand pressure, mechanical reproduction,
+    archival value, propaganda energy, occult darkness, newspaper grit, or tactile experiment,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Scientific photogram clarity without requiring plants, plans, or buildings; finish
+    as a credible print artifact with exact mark logic, restrained texture, and no fake poster text
+    or random distress overlay, clean denoised surfaces where appropriate, and enough craft evidence
+    to make the medium recognizable.
+  key_features: Sun print blueprint; Blue monochrome; Prussian Blue and White; Watercolor paper; Silhouette only
   creative_brief: >-
-    Apply cyanotype process to any input: Prussian blue monochrome, UV-exposure softness, paper fiber,
-    contact-print whites, rinsed edges, and scientific photogram calm. Keep sun-printed material logic without
-    requiring plants, specimen sheets, blueprints, labels, or archival catalog layouts.
+    Apply Cyanotype as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through Sun print
+    blueprint, Blue monochrome, Watercolor paper without requiring the card image's original
+    subject.
 avoidRules:
   - photo
   - realistic
@@ -43,12 +73,25 @@ avoidRules:
   - border
   - botanical requirement
   - architecture requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - fake poster text
+  - smooth digital gradient
+  - random distress overlay
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-040.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border, botanical requirement, architecture requirement
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, botanical requirement, architecture
+    requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable
+    text, low resolution, fake poster text, smooth digital gradient, random distress overlay, wrong
+    print process
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

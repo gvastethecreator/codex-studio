@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Modern acrylic painting
-  subject_treatment: Clean edges, layered paint
-  color_and_tone: Bright, opaque, synthetic colors
-  lighting_and_shadow: Flat or stylized lighting
-  texture_and_material: Slight canvas texture, matte finish
-  camera_and_composition: Stylized shapes
-  atmosphere_and_mood: Energetic, contemporary
-  rendering_and_quality: Modern art, vibrant
-  key_features: Opaque paint layers
+  aesthetic: >-
+    Acrylic (Modern) acts as a transferable art-medium router: start from Modern acrylic painting,
+    Opaque paint layers and paint-media system built from pigment body, binder behavior, substrate
+    tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Clean edges, layered paint; preserve the prompt subject
+    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
+    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Bright, opaque, synthetic colors; let hue, value, saturation, and mixing come
+    from physical pigment, binder opacity, drying character, and historical medium constraints, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Flat or stylized lighting; make light feel interpreted by paint through
+    tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Slight canvas texture, matte finish; surface detail should show canvas, paper, plaster,
+    wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Stylized shapes; organize the image through painterly massing, brush
+    direction, support format, negative space, edge hierarchy, and intentional simplification, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Energetic, contemporary; derive mood from medium history, touch, pigment weight,
+    speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Modern art, vibrant; finish with medium-faithful paint handling, readable form,
+    controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where
+    appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Modern acrylic painting; Opaque paint layers; Bright, opaque, synthetic colors; Slight canvas
+    texture, matte finish; Stylized shapes
   creative_brief: >-
-    Apply modern acrylic-paint logic to any input: fast-drying opaque color, crisp blocked planes, synthetic
-    pigment density, visible plastic surface body, and bright contemporary contrast. Keep modern studio energy
-    without requiring canvas panels, abstract walls, or gallery installation context.
+    Apply Acrylic (Modern) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Modern acrylic painting, Opaque paint layers, Slight canvas texture, matte finish without
+    requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-003.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

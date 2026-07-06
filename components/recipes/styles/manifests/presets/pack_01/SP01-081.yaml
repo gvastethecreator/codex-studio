@@ -12,18 +12,60 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Soft editorial window light, natural lifestyle feel
-  subject_treatment: Gentle focal priority, retained natural texture, relaxed surface rendering
-  color_and_tone: Subdued earth tones, gentle color harmony, slight warm cast from window light
-  lighting_and_shadow: Soft side-lit window daylight, wrap-around ambient fill, minimal shadow depth
-  texture_and_material: True fabric weave, subtle natural texture, environment bokeh
-  camera_and_composition: 85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds
-  atmosphere_and_mood: Quiet confidence, editorial intimacy, relaxed morning light
-  rendering_and_quality: Photorealistic, 8k, fine lens optics, natural chromatic aberration
+  aesthetic: >-
+    Soft Editorial Window acts as a transferable photographic style router: begin from Soft
+    editorial window light, natural lifestyle feel, studio subject hierarchy, controlled portrait
+    optics, believable retouching, and intentional backdrop behavior, and portrait and studio
+    photography system built from lens discipline, subject hierarchy, controlled retouching, and
+    believable surface detail, then apply the photographic behavior to prompt X instead of
+    recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Gentle focal priority, retained natural texture, relaxed
+    surface rendering; preserve prompt identity while using focal priority, flattering or
+    deliberately institutional distance, surface realism, and edge control without requiring a human
+    face, keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Subdued earth tones, gentle color harmony, slight warm cast from window light; grade
+    neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast
+    as photographic capture decisions, with value separation and white balance choices that feel
+    captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Soft side-lit window daylight, wrap-around ambient fill, minimal shadow depth; make key,
+    fill, rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving
+    believable exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render True fabric weave, subtle natural texture, environment bokeh; retain pores, fabric, hair,
+    props, paper, backdrop sweep, and small surface imperfections at a believable photographic
+    scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through 85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds; use
+    portrait lens compression, central authority, intimate framing distance, frontal ID geometry, or
+    editorial negative space without forcing one sitter, with lens distance, depth, timing, and
+    focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Quiet confidence, editorial intimacy, relaxed morning light; derive mood from
+    proximity, pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio
+    control, so the preset changes interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Photorealistic, 8k, fine lens optics, natural chromatic aberration; finish as real
+    photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly
+    or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing
+    natural grain where the preset needs it.
   creative_brief: >-
-    Soft window editorial applies relaxed morning light to any subject: warm side glow, ambient fill, retained
-    natural texture, shallow bokeh, and quiet rule-of-thirds intimacy. Preserve fashion-lifestyle softness
-    without requiring eyes, skin, hair, room, or human portrait.
+    Apply Soft Editorial Window as a photographic preset over prompt X: preserve the user's
+    requested subject, then route Soft editorial window light, natural lifestyle feel, Subdued earth
+    tones, gentle color harmony, slight warm cast from window light, Soft side-lit window daylight,
+    wrap-around ambient fill, minimal shadow depth, True fabric weave, subtle natural texture,
+    environment bokeh, and 85mm editorial lens, f/2.0, eye-level, off-center right, rule-of-thirds
+    through optics, exposure, palette, surface response, timing, and finish without requiring the
+    card image's original subject.
+  key_features: >-
+    Soft editorial window light, natural lifestyle feel; studio subject hierarchy, controlled
+    portrait optics, believable retouching, and intentional backdrop behavior; Subdued earth tones,
+    gentle color harmony, slight warm cast from window light; Soft side-lit window daylight,
+    wrap-around ambient fill, minimal shadow depth; 85mm editorial lens, f/2.0, eye-level,
+    off-center right, rule-of-thirds
 avoidRules:
   - illustration
   - painting
@@ -38,12 +80,23 @@ avoidRules:
   - studio strobe
   - harsh shadows
   - overexposed
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - low resolution
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-081.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, 3d render, cartoon, anime, watermark, text, signature, flash photography, harsh
-    shadows, overexposed
+    illustration, painting, drawing, 3d render, cartoon, anime, watermark, text, signature, flash
+    photography, studio strobe, harsh shadows, overexposed, sketch, synthetic CGI, plastic render,
+    readable text, low resolution, mannequin skin, over-smoothed plastic retouching, distorted
+    anatomy, generic beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

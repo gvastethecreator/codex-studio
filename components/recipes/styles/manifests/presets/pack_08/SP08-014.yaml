@@ -12,27 +12,86 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Field utility textile styling, expedition-readiness logic, rugged utility silhouette
-  subject_treatment: Boxy utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper
-  color_and_tone: Olive Drab, Camo, Desert Tan, multiscale camouflage breakup, ranger green, coyote brown
-  lighting_and_shadow: Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey
-  texture_and_material: Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric
-  camera_and_composition: Bulky silhouette
-  atmosphere_and_mood: Serious, ready, field tension, repair focus, quiet professionalism
-  rendering_and_quality: Tough functional finish, field-worn authenticity, surplus-grade veracity
-  key_features: Utility pockets, webbing pouches, cap cues, rugged boot logic, patch accents
+  aesthetic: >-
+    Field Utility Textile operates as a portable fashion-costume router: combine Field utility
+    textile styling, expedition-readiness logic, rugged utility silhouette with subcultural
+    dress-code logic with identity signals, music or scene memory, attitude, and symbolic styling
+    pressure, so the preset supplies styling behavior rather than a fixed outfit card, required
+    wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Boxy utility blocks, pocket
+    density, modular grid, carrier-like bulk, bloused taper; identity stays readable as silhouette,
+    fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Harsh outdoor, high-noon sun, dust-haze diffusion, overcast tactical grey plus club,
+    daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without
+    forcing a venue as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Heavy canvas, abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric
+    plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery,
+    print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
+  camera_and_composition: >-
+    Compose with attitude-led silhouette, accessory grouping, dress-code readability, body-line
+    rhythm, and reusable styling emphasis as reusable fashion framing grammar, allowing portraits,
+    objects, creatures, environments, action, and abstract prompts to inherit styling without one
+    required pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Field Utility Textile
+    while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Field utility textile styling, expedition-readiness logic, rugged utility silhouette; Boxy
+    utility blocks, pocket density, modular grid, carrier-like bulk, bloused taper; Heavy canvas,
+    abrasion-resistant nylon, dirt, parkerized metal, coated technical fabric; Harsh outdoor,
+    high-noon sun, dust-haze diffusion, overcast tactical grey; attitude-led silhouette, accessory
+    grouping, dress-code readability, body-line rhythm, and reusable styling emphasis
   creative_brief: >-
-    Convert the input into field-utility textile: olive drab, camo breakup, modular grids, carrier-like bulk,
-    coated-nylon abrasion, patch accents and pocket logic. Keep readiness and field wear without requiring a
-    soldier persona, battlefield, weapon, patrol scene or combat narrative.
+    Use Field Utility Textile after prompt X as a transferable fashion/costume layer: prompt X
+    supplies subject, motion, setting, tone, and intensity, while the preset supplies Field utility
+    textile styling, expedition-readiness logic, rugged utility silhouette, Boxy utility blocks,
+    pocket density, modular grid, carrier-like bulk, bloused taper, Heavy canvas, abrasion-resistant
+    nylon, dirt, parkerized metal, coated technical fabric, Harsh outdoor, high-noon sun, dust-haze
+    diffusion, overcast tactical grey, attitude-led silhouette, accessory grouping, dress-code
+    readability, body-line rhythm, and reusable styling emphasis plus signature layers, footwear
+    cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven
+    silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - bright
   - delicate
   - clean
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-014.webp
 attributes:
-  negativePrompt: bright, delicate, clean, soldier persona, battlefield, weapon, patrol, combat narrative
+  negativePrompt: >-
+    bright, delicate, clean, costume-party parody, random trend mix, brand-logo collage, fixed
+    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
+    watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

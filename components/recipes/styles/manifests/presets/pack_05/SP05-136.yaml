@@ -13,22 +13,61 @@ tags:
   - modern-shonen-and-action
 visualDna:
   aesthetic: >-
-    Grimoire thunder squad style, with scrappy underdog drive, loud magical ambition, and ragged force versus
-    noble polish.
+    Black Clover - Grimoire Thunder Squad acts as a transferable anime-battle/worlds router: Black
+    Clover - Grimoire Thunder Squad; combine it with modern action anime grammar with power-system
+    clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle;
+    named titles, studios, or lineage words may guide style, but they must not require canon cast,
+    title-scene replication, screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Booklike aura panels, thunder diagonals, rough-edged silhouettes, squad-rhythm spacing, and shout-like
-    energy bursts.
-  color_and_tone: Thunder gold, black-clover green, ragged brown, royal violet, anti-magic black, and bright rivalry blue.
-  lighting_and_shadow: Explosive magical backlight, page-glow flashes, hard thunder rims, and loud high-contrast aura blooms.
-  texture_and_material: Parchment grain, torn cloth, crackling aura particles, rough stone dust, and polished spell overlays.
-  camera_and_composition: Aura shockwaves push perspective outward, while squad spacing creates forward pressure.
-  atmosphere_and_mood: Determined, loud, magical, scrappy
-  rendering_and_quality: Premium modern anime finish with loud energy, readable team rhythm, and underdog intensity.
-  key_features: Page-glow force, thunder squad rhythm, ragged ambition, anti-magic contrast, loud underdog aura.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Black
+    Clover - Grimoire Thunder Squad as portable contour, motion grammar, surface language, and
+    emotional pressure without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through saturated action accents, clean dark-light value separation, aura color,
+    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
+    let Black Clover - Grimoire Thunder Squad choose accent intensity, value contrast, emotional
+    temperature, and power-system separation while staying attached to prompt X.
+  lighting_and_shadow: >-
+    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
+    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Black Clover - Grimoire Thunder Squad without replacing prompt X
+    with a stock anime frame.
+  texture_and_material: >-
+    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
+    debris, and controlled effect overlays; keep the tactile or effect cues in Black Clover -
+    Grimoire Thunder Squad controlled, denoised, and coherent across bodies, objects, environments,
+    abstractions, and action.
+  camera_and_composition: >-
+    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
+    compressed depth, and readable near-to-far force paths; convert Black Clover - Grimoire Thunder
+    Squad into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead
+    of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
+    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
+    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
+    lineage readable.
+  rendering_and_quality: >-
+    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
+    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Black Clover - Grimoire Thunder Squad; dynamic contour, force-transfer anatomy, readable power
+    effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed
+    marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled
+    effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels,
+    compressed depth, and readable near-to-far force paths; clean high-energy anime finish with
+    denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime
+    smear
   creative_brief: >-
-    Apply loud underdog magic to any prompt through page-glow geometry, thunder diagonals, ragged texture, and
-    defiant aura pressure without requiring specific props, teams, vertical power symbols, conflict sites, or
-    hierarchy scenes.
+    Apply Black Clover - Grimoire Thunder Squad after prompt X as a transferable anime-battle/worlds
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies Black Clover - Grimoire Thunder Squad, modern action anime grammar with power-system
+    clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle,
+    finish discipline, and negative controls without forcing canon cast, title scene, screenshot,
+    card pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -42,12 +81,27 @@ avoidRules:
   - watermark
   - text
   - signature
+  - photoreal cosplay
+  - western superhero comic
+  - generic shonen source-frame look
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-136.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic
+    shonen source-frame look, fixed canon character, title scene replication, required source-frame
+    look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy
+    darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

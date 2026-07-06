@@ -12,29 +12,89 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle
-  subject_treatment: Flame tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic
-  color_and_tone: Orange, Yellow, crimson-core, gold-white heat, sapphire-blue base, ember-red edge, coal-black ground
-  lighting_and_shadow: Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction, ember-spark scatter
+  aesthetic: >-
+    Fire Dress operates as a portable fashion-costume router: combine Ceremonial flame couture,
+    televised-opulence excess, controlled-combustion spectacle with material-forward fashion
+    transformation with drape, surface, tactility, body-volume logic, and fabric-as-style behavior,
+    so the preset supplies styling behavior rather than a fixed outfit card, required wearer, or
+    literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Flame tongues, flicker
+    sweep, rising-heat verticality, ember-trail extension, combustion plume logic; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction,
+    ember-spark scatter plus material-revealing light with gloss, rim, translucency, sparkle,
+    subsurface, matte falloff, or volumetric separation as the styling light contract, revealing
+    cut, drape, surface response, trim, transparency, or armor structure without erasing prompt
+    readability.
   texture_and_material: >-
-    Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion,
-    LED-programmable textile
+    Render Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer
+    distortion, LED-programmable textile plus fabric grain, fur, chain, knit, satin, lace, leather,
+    polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams,
+    fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent
+    across the whole prompt.
   camera_and_composition: >-
-    Compose for Fire Dress using its key spatial cues: Flame tongues, ember trail, heat shimmer, synthetic
-    flame effect, incandescent plume edges.
-  atmosphere_and_mood: Powerful, incandescent, ceremonial, controlled-combustion awe
-  rendering_and_quality: Dangerous, hot, prestige-spectacle finish, broadcast-polish combustion
-  key_features: Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges
+    Compose with Compose for Fire Dress using its key spatial cues: Flame tongues, ember trail, heat
+    shimmer, synthetic flame effect, incandescent plume edges plus drape rhythm, material coverage,
+    silhouette clarity, tactile close detail, fold direction, and transformation edge control as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Fire Dress while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Ceremonial flame couture, televised-opulence excess, controlled-combustion spectacle; Flame
+    tongues, flicker sweep, rising-heat verticality, ember-trail extension, combustion plume logic;
+    Fire, flame-sheet fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion,
+    LED-programmable textile; Self-illuminated, flame-glow bloom, incandescent-body light,
+    smoke-haze diffraction, ember-spark scatter; Compose for Fire Dress using its key spatial cues:
+    Flame tongues, ember trail, heat shimmer, synthetic flame effect, incandescent plume edges
   creative_brief: >-
-    Ignite the input with flame-couture behavior: ember trails, heat shimmer, combustion-plume sweep,
-    synthetic flame fibers, gold-white cores and smoke haze. Keep televised ceremonial spectacle as style
-    pressure only; do not require a body hemline, parade entrance, arena narrative or explicit IP reenactment.
+    Use Fire Dress after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Ceremonial flame
+    couture, televised-opulence excess, controlled-combustion spectacle, Flame tongues, flicker
+    sweep, rising-heat verticality, ember-trail extension, combustion plume logic, Fire, flame-sheet
+    fabric, synthetic-ember fiber, smoke-veil char, heat-shimmer distortion, LED-programmable
+    textile, Self-illuminated, flame-glow bloom, incandescent-body light, smoke-haze diffraction,
+    ember-spark scatter, Compose for Fire Dress using its key spatial cues: Flame tongues, ember
+    trail, heat shimmer, synthetic flame effect, incandescent plume edges plus weave, pile, grain,
+    shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface
+    continuity, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - cold
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-070.webp
 attributes:
-  negativePrompt: cold
+  negativePrompt: >-
+    cold, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

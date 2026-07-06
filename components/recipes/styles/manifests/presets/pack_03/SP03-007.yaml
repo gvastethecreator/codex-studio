@@ -12,29 +12,78 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: Product design render
-  subject_treatment: Studio-isolated presentation, controlled silhouette, clean design-read
-  color_and_tone: Accurate plastics/metals, brand-specific
-  lighting_and_shadow: HDRI studio, real-time ray tracing
-  texture_and_material: Mold tech textures, scientifically accurate
+  aesthetic: >-
+    KeyShot Product Studio Renderer acts as a transferable CGI-style router: start from Product
+    design render, Controlled studio reflections, accurate material swatches, interactive render
+    polish and renderer-pipeline system built from sampling behavior, shader evaluation, light
+    transport, denoise strategy, and engine-specific production polish, then apply the 3D/render
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Studio isolated presentation, controlled silhouette, clean
+    design read; preserve the prompt subject while translating it through the renderer strengths:
+    path tracing, biased sampling, real-time GI, product-studio preview, or feature-film shading,
+    keeping the requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Accurate plastics/metals, brand specific; make color come from color
+    management, HDR response, spectral bloom, engine tonemapping, material albedo, and physically
+    plausible exposure, with deliberate value grouping, exposure control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through HDRI studio, real time ray tracing; let engine-specific GI, ray tracing,
+    Lumen, caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so
+    value structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Mold tech textures, scientifically accurate; surface detail should reveal BSDF behavior,
+    sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather
+    than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for KeyShot Product Studio Renderer: three-quarter or orthographic framing, clean
-    silhouette read, material highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Clean, commercial, premium retail
-  rendering_and_quality: Industrial design, packaging comp
-  key_features: Controlled studio reflections, accurate material swatches, interactive-render polish
+    Structure the image through Lookdev camera for KeyShot Product Studio Renderer: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition; compose for renderer readability through focal hierarchy, product or VFX
+    staging, material swatches, path-traced depth, and clean engine output, with scale, spacing,
+    edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Clean, commercial, premium retail; derive mood from render fidelity, production
+    confidence, cinematic polish, engine interactivity, or industrial design clarity, letting the
+    renderer alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Industrial design, packaging comp; finish with credible CGI output, controlled
+    noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean
+    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Product design render; Controlled studio reflections, accurate material swatches, interactive
+    render polish; Accurate plastics/metals, brand specific; Mold tech textures, scientifically
+    accurate; Lookdev camera for KeyShot Product Studio Renderer: three quarter or orthographic
+    framing, clean silhouette read, material highlights, controlled depth, and vertical card
+    composition
   creative_brief: >-
-    Give the input KeyShot product-studio treatment: HDRI studio reflections, scientifically accurate
-    plastics/metals, Pantone-like color discipline, polymer texture fidelity and premium catalog isolation.
-    Keep commerce-ready clarity without requiring a consumer product, packaging comp, floating object or empty
-    studio void.
+    Apply KeyShot Product Studio Renderer as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Product design render, Controlled studio reflections,
+    accurate material swatches, interactive render polish, Mold tech textures, scientifically
+    accurate without requiring the card image's original subject.
 avoidRules:
   - environment
   - messy
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - raw viewport
+  - unlit preview
+  - wrong render engine
+  - cheap preview noise
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-007.webp
 attributes:
-  negativePrompt: environment, messy
+  negativePrompt: >-
+    environment, messy, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture
+    chatter, watermark, readable text, signature, raw viewport, unlit preview, wrong render engine,
+    cheap preview noise
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Hot wax painting
-  subject_treatment: Soft, melted edges
-  color_and_tone: Deep, translucent, layered
-  lighting_and_shadow: Subsurface scattering
-  texture_and_material: Thick wax, scraped layers
-  camera_and_composition: Blurred details
-  atmosphere_and_mood: Mysterious, tactile
-  rendering_and_quality: Textured, ancient
-  key_features: Waxy surface
+  aesthetic: >-
+    Encaustic (Wax) acts as a transferable art-medium router: start from Hot wax painting, Waxy
+    surface and paint-media system built from pigment body, binder behavior, substrate tooth, brush
+    pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt
+    X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Soft, melted edges; preserve the prompt subject while
+    translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed
+    edge behavior, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Deep, translucent, layered; let hue, value, saturation, and mixing come from
+    physical pigment, binder opacity, drying character, and historical medium constraints, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Subsurface scattering; make light feel interpreted by paint through tonal
+    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Thick wax, scraped layers; surface detail should show canvas, paper, plaster, wax,
+    velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Blurred details; organize the image through painterly massing, brush
+    direction, support format, negative space, edge hierarchy, and intentional simplification, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Mysterious, tactile; derive mood from medium history, touch, pigment weight,
+    speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Textured, ancient; finish with medium-faithful paint handling, readable form,
+    controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where
+    appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Hot wax painting; Waxy surface; Deep, translucent, layered; Thick wax, scraped layers; Blurred
+    details
   creative_brief: >-
-    Apply encaustic wax painting to any input: fused translucent layers, beeswax haze, scraped inclusions,
-    heat-smoothed pigment, amber depth, and tactile cloudy surface. Keep warm material memory without
-    requiring abstract panels, candles, relics, or preserved-object subject matter.
+    Apply Encaustic (Wax) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Hot wax painting, Waxy surface, Thick wax, scraped layers without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-006.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

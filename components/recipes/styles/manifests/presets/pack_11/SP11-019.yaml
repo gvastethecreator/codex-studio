@@ -13,39 +13,84 @@ tags:
   - artistic-mediums
 visualDna:
   aesthetic: >-
-    Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and
-    warmly stage-lit
+    Felt Signal Handmade Broadcast operates as a portable source-router layer: combine Handmade
+    broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly operated, and
+    warmly stage-lit with manual medium logic with mark discipline, process texture, graphic
+    reduction, and authored surface treatment, so the preset supplies visual behavior rather than a
+    fixed card scene or literal sample.
   subject_treatment: >-
-    Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs,
-    simplified expressive geometry
+    Preserve the prompt's subject plus requested motion and context while letting forms draw, print,
+    stitch, spray, glaze, outline, cut, layer, or illuminate through Rounded cut-fabric contours,
+    sock-like volume breaks, seam-guided silhouettes, elastic wobble arcs, simplified expressive
+    geometry; identity stays readable through construction grammar, proportion, edge logic, and
+    detail scale as this preset is applied.
   color_and_tone: >-
-    Primary felt blocks, craft-store brights, saturated fleece accents, warm studio neutrals, tiny black
-    button contrast
+    Map color through medium-bound pigments, ink limits, glass color breaks, chalk dust, thread
+    color, or luminous tube hue; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
   lighting_and_shadow: >-
-    Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and practical set warmth
-    without requiring a stage
-  texture_and_material: Felt nap, fleece fuzz, foam padding, visible stitching, brushed fabric grain, handmade edge irregularity
+    Use Friendly multi-camera studio light with soft key-fill balance, gentle rim glow, and
+    practical set warmth without requiring a stage plus surface-aware illumination that reveals
+    pigment body, glass translucency, chalk haze, spray mist, or print layers as the light-response
+    contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases
+    the user's requested content.
+  texture_and_material: >-
+    Render Felt nap, fleece fuzz, foam padding, clearly expressed stitching, brushed fabric grain,
+    handmade edge irregularity plus mark residue, substrate grain, lead came, screen ink, sprayed
+    overspray, needlework, and hand-built edges; surface scale, residue, gloss, grain, fiber, pores,
+    edges, or signal artifacts must remain coherent across figures, objects, and environments.
   camera_and_composition: >-
-    Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow theatrical
-    depth
-  atmosphere_and_mood: Warm, comedic, approachable, nostalgic, handmade, emotionally legible
+    Compose with Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric
+    slouch, shallow theatrical depth plus graphic spacing, panel division, emblem balance, handmade
+    alignment, and medium-specific rhythm as reusable framing grammar, allowing cards, portraits,
+    objects, scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through studio process, craft authorship, ritual mark-making, iconic reduction, and
+    object presence; the emotional tone should feel specific to Felt Signal Handmade Broadcast while
+    still obeying the prompt's subject and context.
   rendering_and_quality: >-
-    Tactile, imperfect, playful, low-tech, performance-driven, with intentional handcraft evidence in every
-    surface
+    Finish with legible medium identity, crisp material boundary, intentional artifacts, and no
+    generic illustration filler; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Fuzzy contour halos, seam punctuation, button-eye abstraction, foam volume, felt color blocking, soft
-    jaw-like deformation
+    Handmade broadcast texture system where any subject becomes soft, stitched, fuzzy, visibly
+    operated, and warmly stage-lit; Rounded cut-fabric contours, sock-like volume breaks,
+    seam-guided silhouettes, elastic wobble arcs, simplified expressive geometry; Felt nap, fleece
+    fuzz, foam padding, clearly expressed stitching, brushed fabric grain, handmade edge
+    irregularity; Friendly multi-camera studio light with soft key-fill balance, gentle rim glow,
+    and practical set warmth without requiring a stage; Mouth-flap compression, rod-like gesture
+    arcs, slight squash at joints, fabric slouch, shallow theatrical depth
   creative_brief: >-
-    Transform the input into a handmade broadcast-material treatment: felt nap, foam softness, seam rhythm,
-    and operated-expression timing should define the image. The result should feel tactile and performed,
-    without requiring literal puppets, sets, rods, or franchise references.
+    Use Felt Signal Handmade Broadcast after prompt X as a transferable style layer: prompt X
+    supplies subject, action, and setting, while the preset supplies Handmade broadcast texture
+    system where any subject becomes soft, stitched, fuzzy, visibly operated, and warmly stage-lit,
+    Rounded cut-fabric contours, sock-like volume breaks, seam-guided silhouettes, elastic wobble
+    arcs, simplified expressive geometry, Felt nap, fleece fuzz, foam padding, clearly expressed
+    stitching, brushed fabric grain, handmade edge irregularity, Friendly multi-camera studio light
+    with soft key-fill balance, gentle rim glow, and practical set warmth without requiring a stage,
+    Mouth-flap compression, rod-like gesture arcs, slight squash at joints, fabric slouch, shallow
+    theatrical depth plus stroke direction, pigment edge, stencil separation, lead structure, fabric
+    or print registration, and clearly expressed hand process, palette behavior, light response,
+    material treatment, and finish discipline without requiring one specimen, prop bundle, product
+    still, or card composition.
 avoidRules:
   - cgi
   - smooth
+  - generic digital painting
+  - flat vector shortcut
+  - lost medium texture
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-019.webp
 attributes:
-  negativePrompt: cgi, smooth
+  negativePrompt: >-
+    cgi, smooth, generic digital painting, flat vector shortcut, lost medium texture, fixed
+    specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

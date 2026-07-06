@@ -12,26 +12,78 @@ tags:
   - miscellaneous-and-fun
   - micro-macro
 visualDna:
-  aesthetic: Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface
-  subject_treatment: Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral
-  color_and_tone: Black plastic, vinyl-carbon, groove-shadow grey, stylus-wear silver, dust-speckle white
-  lighting_and_shadow: Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection
-  texture_and_material: Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle
-  camera_and_composition: Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove
-  atmosphere_and_mood: Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence
-  rendering_and_quality: Audio, physical, turntable-macro, analog-ritual, sound-carved-in-plastic
+  aesthetic: >-
+    Vinyl Record Grooves operates as a portable source-router layer: combine Microscope record,
+    groove-landscape, vinyl-macro, analog-waveform, LP-surface with magnified source-study logic
+    with scale shift, optical detail, structural pattern, and specimen-independent texture grammar,
+    so the preset supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms magnify,
+    reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure
+    through Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing,
+    lead-in-spiral; identity stays readable through construction grammar, proportion, edge logic,
+    and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through source-derived color variation, iridescence, false-scale contrast, translucent
+    edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection
+    plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and
+    shallow optical falloff as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash,
+    static-cling particle plus pores, fibers, facets, droplets, spores, grain, grooves, cells,
+    filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores,
+    edges, or signal artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove plus
+    scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and
+    detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes,
+    and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural
+    engineering, entropy, and fragile wonder; the emotional tone should feel specific to Vinyl
+    Record Grooves while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy
+    stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle,
-    label-edge, pressing-plant matrix number
+    Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface; Parallel waves,
+    groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral; Dust, plastic,
+    PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle;
+    Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection;
+    Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove
   creative_brief: >-
-    Build analog-audio macro imagery around groove modulation, spiral geometry, and dust-on-PVC microtexture.
-    Keep tactile hi-fi character and waveform-in-material readability as reusable visual anchors.
+    Use Vinyl Record Grooves after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Microscope record, groove-landscape,
+    vinyl-macro, analog-waveform, LP-surface, Parallel waves, groove-modulation, lateral-cut curve,
+    silent-groove spacing, lead-in-spiral, Dust, plastic, PVC-surface, groove-wall,
+    anti-static-brush residue, pressing-flash, static-cling particle, Highlight along groove,
+    grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection, Wavy lines, groove-spiral,
+    modulation-wiggle, lead-in-arc, run-out-lock-groove plus microstructure, magnification
+    artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail,
+    palette behavior, light response, material treatment, and finish discipline without requiring
+    one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - smooth
+  - generic macro blur
+  - muddy micro noise
+  - classroom sample scene
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-073.webp
 attributes:
-  negativePrompt: smooth
+  negativePrompt: >-
+    smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

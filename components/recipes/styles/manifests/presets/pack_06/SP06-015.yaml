@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Kitsch painting on black velvet
-  subject_treatment: Glowing edges
-  color_and_tone: Neon against deep black
-  lighting_and_shadow: Glowing, high contrast
-  texture_and_material: Velvet fabric fuzz
-  camera_and_composition: Soft focus
-  atmosphere_and_mood: Kitsch, sincere, nocturnal, theatrical
-  rendering_and_quality: Kitsch, retro
-  key_features: Black background dominance
+  aesthetic: >-
+    Black Velvet Painting acts as a transferable art-medium router: start from Kitsch painting on
+    black velvet, Black support field dominance and paint-media system built from pigment body,
+    binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish,
+    then apply the medium behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Glowing edges; preserve the prompt subject while
+    translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed
+    edge behavior, keeping the requested identity, silhouette, pose, object function, or environment
+    legible.
+  color_and_tone: >-
+    Build color with Neon against deep black; let hue, value, saturation, and mixing come from
+    physical pigment, binder opacity, drying character, and historical medium constraints, with
+    deliberate value grouping, accent control, and medium-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Glowing, high contrast; make light feel interpreted by paint through tonal
+    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Velvet fabric fuzz; surface detail should show canvas, paper, plaster, wax, velvet,
+    gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Soft focus; organize the image through painterly massing, brush
+    direction, support format, negative space, edge hierarchy, and intentional simplification, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Kitsch, sincere, nocturnal, theatrical; derive mood from medium history, touch,
+    pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium
+    alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Kitsch, retro; finish with medium-faithful paint handling, readable form, controlled
+    texture, and no pasted photo or generic digital filter, clean denoised surfaces where
+    appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Kitsch painting on black velvet; Black support field dominance; Neon against deep black; Velvet
+    fabric fuzz; Soft focus
   creative_brief: >-
-    Apply black-velvet painting to any input: light-swallowing velvet ground, saturated neon pigment, floating
-    icon contrast, soft pile texture, and sincere kitsch luminosity. Keep visionary dark-glow drama without
-    requiring Elvis portraits, animals, tropical scenes, casinos, or souvenir art.
+    Apply Black Velvet Painting as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Kitsch painting on black velvet, Black support field dominance, Velvet fabric fuzz without
+    requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-015.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

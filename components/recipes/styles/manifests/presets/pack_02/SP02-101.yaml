@@ -13,23 +13,71 @@ tags:
   - caricature-and-cartoon-styles
 visualDna:
   aesthetic: >-
-    Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout
-    timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for
-    comedy
-  subject_treatment: Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging
-  color_and_tone: Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin
-  lighting_and_shadow: Harsh proximity lighting, bright wet sheen, overexposed glare, ugly reaction-frame illumination
-  texture_and_material: Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture
-  camera_and_composition: Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure
-  atmosphere_and_mood: Disgusted, frantic, hilarious, deeply unflattering
+    Ren & Stimpy - Veiny Close-Up Grossout acts as a transferable cinematic-media router: start from
+    Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly
+    grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame
+    revulsion played for comedy, Extreme close-up distortion, swollen detail, pore-level texture,
+    trembling folds, wet cartoon strings and caricature and cartoon system built from exaggeration
+    rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and
+    expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed
+    demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Wobbling brush contours, vibrating line weight, swollen
+    micro-detail lines, irregular fleshy edging; preserve the requested subject while exaggerating
+    proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up
+    detail according to the preset, keeping the requested identity, silhouette, action, object
+    function, or setting legible.
+  color_and_tone: >-
+    Build color with Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red
+    irritation, greasy beige skin; use color through loud primaries, beige suburban anxiety, marker
+    flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette
+    pressure, with deliberate value grouping, accent control, and process-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Harsh proximity lighting, bright wet sheen, overexposed glare, ugly
+    reaction-frame illumination; shape light minimally through flat cartoon value, poster contrast,
+    marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so
+    exposure and shadow structure support the media process without overwriting the requested
+    content.
+  texture_and_material: >-
+    Render Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint
+    texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle
+    line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping
+    artifact scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Subject crushing into lens space, bulging surface masses, swollen
+    forward projection, off-axis pressure; compose through readable gag timing, grotesque close-up,
+    slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without
+    copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing
+    the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Disgusted, frantic, hilarious, deeply unflattering; derive mood from adult
+    absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or
+    anti-polish personality, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
   rendering_and_quality: >-
-    Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on
-    purpose
-  key_features: Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings
+    Finish with Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction
+    absurdity, ugly on purpose; finish with clear cartoon grammar, bold silhouettes, controlled
+    roughness, and no exact character likeness, school-scene lock, readable gag text, or generic
+    cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the
+    style recognizable.
+  key_features: >-
+    Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly
+    grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame
+    revulsion played for comedy; Extreme close-up distortion, swollen detail, pore-level texture,
+    trembling folds, wet cartoon strings; Inflamed flesh pinks, nicotine yellow, clammy teal
+    shadows, rash-red irritation, greasy beige skin; Pore-heavy surface, cracked folds, greasy
+    shine, dried-gloss streaks, wobbling paint texture; Subject crushing into lens space, bulging
+    surface masses, swollen forward projection, off-axis pressure
   creative_brief: >-
-    Use gross-up close-up language on any subject: invasive framing, pore-level detail, wet sheen, swollen
-    folds, wobbling contours, and painterly revulsion. Avoid requiring faces, gums, lips, noses, or anatomy.
-    Comedy should come from excessive proximity and unflattering texture.
+    Apply Ren & Stimpy - Veiny Close-Up Grossout as a cinematic-media preset over prompt X: preserve
+    the user's requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Hyper-detailed gross close-up reaction frame,
+    wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up
+    cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy, Extreme close-up
+    distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings, Pore-heavy
+    surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture without
+    requiring the card image's original subject.
 avoidRules:
   - subtle
   - flattering
@@ -40,10 +88,26 @@ avoidRules:
   - elegant
   - restrained
   - pretty
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact character likeness
+  - readable gag text
+  - generic cute mascot
+  - smooth anime polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-101.webp
 attributes:
-  negativePrompt: subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained, pretty
+  negativePrompt: >-
+    subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained,
+    pretty, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character
+    likeness, readable gag text, generic cute mascot, smooth anime polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -12,26 +12,61 @@ tags:
   - abstract-and-experimental
   - diagram-and-data-systems
 visualDna:
-  aesthetic: PCB traces
-  subject_treatment: 45 degree angles
-  color_and_tone: Green, Gold, Copper
-  lighting_and_shadow: Flat
-  texture_and_material: Fiberglass
-  camera_and_composition: 'Compose for Circuit Board using its key spatial cues: Traces.'
-  atmosphere_and_mood: Smart, complex
-  rendering_and_quality: Tech, electronic
-  key_features: Traces
+  aesthetic: >-
+    Circuit Board becomes a transferable diagram and information-graphic system: start from PCB
+    traces, then route prompt content through schematic paths, encoded blocks, contour logic,
+    technical marks, and data-like organization without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using 45 degree angles to map, route, blueprint,
+    annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Green, Gold, Copper; use palette as functional coding: substrate, traces,
+    line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the
+    subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical
+    so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly
+    asks for it.
+  texture_and_material: >-
+    Render Fiberglass as the tactile or mark-making basis; marks should feel like ink, chalk,
+    copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Traces as reusable spatial grammar: favor legible routes, modules, legends
+    without readable text, edge registration, grids, and information density, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Smart, complex as the emotional register; derive mood from analysis, navigation,
+    computation, instruction, secrecy, or handmade classroom energy, without flattening strong,
+    strange, darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Tech, electronic: finish with clean information hierarchy, exact line weight, and no
+    random label soup, preserving prompt X as the base content and the preset as the style router.
+  key_features: >-
+    PCB traces; 45 degree angles; Green, Gold, Copper; Flat; Fiberglass; Traces; Smart, complex;
+    Tech, electronic; Traces
   creative_brief: >-
-    Apply PCB-trace logic over the input with green fiberglass fields, copper-gold right-angle paths, dense
-    electronic routing, solder-pad nodes, and engineered computation as surface pattern. If tech, machine,
-    object, or interface exists, make circuitry functional; otherwise map circuit topology across forms
-    without forcing a literal board.
+    Route any subject through Circuit Board as a transferable diagram or data-graphic visual system:
+    preserve prompt intent while converting structure, modules, paths, grids, marks, and information
+    rhythm through this preset. Apply PCB-trace logic over the input with green fiberglass fields,
+    copper-gold right-angle paths, dense electronic routing, solder-pad nodes, and engineered
+    computation as surface pattern. If tech, machine, object, or interface exists, make circuitry
+    functional; otherwise map circuit topology across forms without forcing a literal board.
 avoidRules:
   - organic
+  - random text labels
+  - unreadable diagram clutter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-067.webp
 attributes:
-  negativePrompt: organic
+  negativePrompt: >-
+    organic, random text labels, unreadable diagram clutter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

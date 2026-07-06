@@ -12,30 +12,88 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Plastic fashion, pop-art materialism, bubble-texture absurdity
+  aesthetic: >-
+    Bubble Wrap operates as a portable fashion-costume router: combine Plastic fashion, pop-art
+    materialism, bubble-texture absurdity with material-forward fashion transformation with drape,
+    surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies
+    styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.
   subject_treatment: >-
-    Circles, bubble-sphere cluster volume, inflatable-cushion segmentation, rounded modular geometry,
-    air-filled dimension
-  color_and_tone: Clear plastic, optic-clear, tinted-rose, sky-blue, translucent-mint, iridescent-oil, milky-white
-  lighting_and_shadow: Highlights, point-reflection catchlights, broad soft reflections, plastic-sheen bounce, overhead sheen
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Circles, bubble-sphere
+    cluster volume, inflatable-cushion segmentation, rounded modular geometry, air-filled dimension;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Highlights, point-reflection catchlights, broad soft reflections, plastic-sheen bounce,
+    overhead sheen plus material-revealing light with gloss, rim, translucency, sparkle, subsurface,
+    matte falloff, or volumetric separation as the styling light contract, revealing cut, drape,
+    surface response, trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film, heat-sealed
-    seam
-  camera_and_composition: Bulky
-  atmosphere_and_mood: Fun, strange, childlike-wonder whimsy, packaging-material poetry, pop-culture satire
-  rendering_and_quality: Weird, pop art, factory-floor pop-art irreverence, inflated-sculpture playfulness
-  key_features: Bubbles, air-filled domes, crinkle texture, heat-sealed grid, translucent layers
+    Render Plastic bubbles, polyethylene film, air-cushion texture, poppable-dome surface,
+    crinkle-film, heat-sealed seam plus fabric grain, fur, chain, knit, satin, lace, leather,
+    polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams,
+    fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent
+    across the whole prompt.
+  camera_and_composition: >-
+    Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold
+    direction, and transformation edge control as reusable fashion framing grammar, allowing
+    portraits, objects, creatures, environments, action, and abstract prompts to inherit styling
+    without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Bubble Wrap while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Plastic fashion, pop-art materialism, bubble-texture absurdity; Circles, bubble-sphere cluster
+    volume, inflatable-cushion segmentation, rounded modular geometry, air-filled dimension; Plastic
+    bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film,
+    heat-sealed seam; Highlights, point-reflection catchlights, broad soft reflections,
+    plastic-sheen bounce, overhead sheen; drape rhythm, material coverage, silhouette clarity,
+    tactile close detail, fold direction, and transformation edge control
   creative_brief: >-
-    Bubble-wrap the input with translucent domes, heat-sealed grids, crinkle film, convex highlights and
-    inflated cushion volume. Keep pop-art absurdity without requiring bodice shaping, dress sculpture,
-    packaging joke, wearable object or gallery plinth framing.
+    Use Bubble Wrap after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Plastic fashion,
+    pop-art materialism, bubble-texture absurdity, Circles, bubble-sphere cluster volume,
+    inflatable-cushion segmentation, rounded modular geometry, air-filled dimension, Plastic
+    bubbles, polyethylene film, air-cushion texture, poppable-dome surface, crinkle-film,
+    heat-sealed seam, Highlights, point-reflection catchlights, broad soft reflections,
+    plastic-sheen bounce, overhead sheen, drape rhythm, material coverage, silhouette clarity,
+    tactile close detail, fold direction, and transformation edge control plus weave, pile, grain,
+    shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface
+    continuity, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - plain textile drape dominance
   - soft woven cloth replacing bubble plastic
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-067.webp
 attributes:
-  negativePrompt: plain textile drape dominance, soft woven cloth replacing bubble plastic, gallery plinth, studio setup
+  negativePrompt: >-
+    plain textile drape dominance, soft woven cloth replacing bubble plastic, generic fabric
+    texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal
+    card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

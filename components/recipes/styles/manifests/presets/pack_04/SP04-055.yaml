@@ -13,27 +13,83 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Narrative keyframe concept style centered on emotional turning-point composition and cinematic visual
-    impact
-  subject_treatment: Shape-led cinematic blocking with selective edge control, focal hierarchy, and frame-rhythm precision
-  color_and_tone: Color graded, cinematic LUT, emotional-tone timing
-  lighting_and_shadow: Cinematic, framed intent, motivated light source
-  texture_and_material: Painted
-  camera_and_composition: 'Compose for Keyframe Art using its key spatial cues: 16:9 ratio, letterbox framing, cinematic composition.'
-  atmosphere_and_mood: Story beat, narrative tension, turning-point weight
-  rendering_and_quality: Movie still, emotional, screen-grab gravity, story-beat resonance
-  key_features: 16:9 ratio, letterbox framing, cinematic composition
+    Keyframe Art acts as a transferable illustration router: start from Narrative keyframe concept
+    style central on emotional turning-point composition and cinematic visual impact, 16:9 ratio,
+    letterbox framing, cinematic composition and production concept-art system built from iteration
+    discipline, silhouette testing, material exploration, design readability, and pitch-ready visual
+    decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Shape-led cinematic blocking with selective edge control,
+    focal hierarchy, and frame-rhythm precision; preserve the requested subject while routing it
+    through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover
+    marks, or production-readability constraints, keeping the requested identity, silhouette, pose,
+    object function, or setting legible.
+  color_and_tone: >-
+    Build color with Color graded, cinematic LUT, emotional-tone timing; use color as concept
+    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
+    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Cinematic, framed intent, motivated light source; shape light for ideation
+    clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Painted, production design clarity, iteration logic, silhouette readability, material
+    exploration, and concept-art decision pressure; surface detail should reveal brush passes,
+    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
+    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for Keyframe Art using its key spatial cues: 16:9 ratio,
+    letterbox framing, cinematic composition; compose through production hierarchy, variants,
+    orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe
+    balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Story beat, narrative tension, turning-point weight; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Movie still, emotional, screen-grab gravity, story-beat resonance; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Narrative keyframe concept style central on emotional turning-point composition and cinematic
+    visual impact; 16:9 ratio, letterbox framing, cinematic composition; Color graded, cinematic
+    LUT, emotional-tone timing; Painted, production design clarity, iteration logic, silhouette
+    readability, material exploration, and concept-art decision pressure
   creative_brief: >-
-    Apply narrative keyframe grammar to any input: story-pivot composition, cinematic focal control, motivated
-    light, color-temperature emotion mapping, and letterbox pressure should create turning-point weight
-    without requiring characters, plot scenes, battles, dialogue, or a specific beat.
+    Apply Keyframe Art as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Narrative keyframe concept style central on emotional turning-point composition and cinematic
+    visual impact, 16:9 ratio, letterbox framing, cinematic composition, Painted, production design
+    clarity, iteration logic, silhouette readability, material exploration, and concept-art decision
+    pressure without requiring the card image's original subject.
 avoidRules:
   - sketchy
   - rough
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-055.webp
 attributes:
-  negativePrompt: sketchy, rough
+  negativePrompt: >-
+    sketchy, rough, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

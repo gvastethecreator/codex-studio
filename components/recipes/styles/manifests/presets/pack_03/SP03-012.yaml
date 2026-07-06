@@ -12,26 +12,71 @@ tags:
   - 3d-and-cgi-rendering
   - materials
 visualDna:
-  aesthetic: Splashing water or fluid
-  subject_treatment: Droplets
-  color_and_tone: Clear or colored liquid
-  lighting_and_shadow: Specular highlights
-  texture_and_material: Wet, surface tension
-  camera_and_composition: Fluid dynamics
-  atmosphere_and_mood: Dynamic, wet, in-motion energy
-  rendering_and_quality: Realflow fluid simulation, splashing realism
-  key_features: Splash shape, foam particles
+  aesthetic: >-
+    Liquid Simulation acts as a transferable CGI-style router: start from Splashing water or fluid,
+    Splash shape, foam particles and shader-material system built from reflectance, refraction,
+    scattering, phase behavior, procedural structure, and physically coherent surface response, then
+    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Droplets; preserve the prompt subject while wrapping or
+    transforming forms through the material behavior named by the preset, keeping the requested
+    identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Clear or colored liquid; let palette follow absorption, dispersion, subsurface
+    tint, metallic reflectance, patina, mineral veining, transparency, or fluid coloration, with
+    deliberate value grouping, exposure control, and medium-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through Specular highlights; make highlights, caustics, shadow softness,
+    transmission, internal glow, rim fuzz, photon paths, or specular lobe shape explain the
+    material, so value structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Wet, surface tension; surface detail should keep scale-consistent shaders, bumps,
+    strands, droplets, veining, casting marks, melt edges, weave, or simulated fluid motion, keeping
+    material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Fluid dynamics; compose to demonstrate material behavior across
+    silhouette, thickness, contact edges, reflection zones, and readable material transitions, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dynamic, wet, in motion energy; derive mood from luxury, fragility, tactile
+    attraction, gross elasticity, scientific precision, craft, permanence, or uncanny material
+    transformation, letting the renderer alter interpretation without demanding a specific story,
+    location, or character.
+  rendering_and_quality: >-
+    Finish with Realflow fluid simulation, splashing realism; finish with coherent shader response,
+    clean denoise, readable forms, and no stock texture overlay pretending to be material
+    simulation, clean denoised surfaces where appropriate, and enough shader evidence to make the
+    CGI mode recognizable.
+  key_features: >-
+    Splashing water or fluid; Splash shape, foam particles; Clear or colored liquid; Wet, surface
+    tension; Fluid dynamics
   creative_brief: >-
-    Apply liquid-simulation behavior to any input: surface-tension stretch, suspended droplets, splash-crown
-    curvature, foam particles, wet speculars, and frozen fluid motion. Keep kinetic waterlike sculpture
-    without requiring a falling object, ocean, glass, body, or literal impact event.
+    Apply Liquid Simulation as a CGI/render preset over prompt X: preserve the user's requested
+    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
+    final render craft through Splashing water or fluid, Splash shape, foam particles, Wet, surface
+    tension without requiring the card image's original subject.
 avoidRules:
   - solid
   - dry
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - wrong material
+  - pasted stock texture
+  - flat color fill
+  - shaderless surface
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-012.webp
 attributes:
-  negativePrompt: solid, dry
+  negativePrompt: >-
+    solid, dry, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, wrong material, pasted stock texture, flat color fill,
+    shaderless surface
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

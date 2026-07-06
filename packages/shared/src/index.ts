@@ -5,5 +5,6 @@ export * from './studioSettings';
 export * from './outputSources';
 export * from './providerCapabilities';
 export * from './recipeProviderDirectives';
+export * from './spriteAtlasContracts';
 export * from './storageMaintenance';
 export * from './userStyles';

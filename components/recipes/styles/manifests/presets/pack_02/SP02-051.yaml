@@ -12,31 +12,87 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: Disposable 90s snapshot
+  aesthetic: >-
+    Disposable Camera (90s) acts as a transferable cinematic-media router: start from Disposable 90s
+    snapshot, Disposable Camera (90s) historical camera process, emulsion behavior, lens
+    constraints, print surface, and era-specific exposure artifacts, Vignette, flash hotspot,
+    crooked horizon, plastic-lens softness, lab-scan grain and historical photographic process
+    system built from camera constraints, emulsion chemistry, lens softness, exposure timing, print
+    surface, and era-specific color response, then apply the media behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Disposable Camera (90s): casting,
-    wardrobe, props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast
-    grammar without locking to one plot beat.
-  color_and_tone: High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab color
-  lighting_and_shadow: Harsh flash, direct frontal, overexposed 3-feet-away
-  texture_and_material: Grainy 400 ISO, plastic-lens softness, color fringe
-  camera_and_composition: Flash reflection, red-edge glare, plastic lens warp
-  atmosphere_and_mood: Memory, casual, 90s, disposable immediacy
-  rendering_and_quality: Candid, unposed, cheap-lens spontaneity, one-roll urgency
-  key_features: Vignette, flash hotspot, crooked horizon, plastic-lens softness, lab-scan grain
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Disposable Camera (90s): casting, wardrobe, props, motion cues, and silhouette hierarchy
+    follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while making it feel captured through the era process: sitter
+    stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital
+    sensor behavior, keeping the requested identity, silhouette, action, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with High contrast, punchy saturation, blown highlights, muddy shadow, cheap lab
+    color; treat color as historical capture chemistry: silver plate, hand-tinted autochrome grain,
+    Kodachrome warmth, Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate
+    value grouping, accent control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Harsh flash, direct frontal, overexposed 3-feet-away; make light follow
+    camera limitations through long exposure, flash falloff, lens vignetting, plate reflectance,
+    daylight softness, or early-sensor clipping, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Grainy 400 ISO, plastic-lens softness, color fringe; surface detail should reveal plate
+    metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness,
+    instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Flash reflection, red-edge glare, plastic lens warp; compose through
+    period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole
+    drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Memory, casual, 90s, disposable immediacy; derive mood from memory, archival
+    strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or historical
+    camera patience, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Candid, unposed, cheap-lens spontaneity, one-roll urgency; finish as credible
+    photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter
+    overlays and readable border text, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Disposable 90s snapshot, Disposable Camera (90s) historical camera process, emulsion behavior,
+    lens constraints, print surface, and era-specific exposure artifacts; Vignette, flash hotspot,
+    crooked horizon, plastic-lens softness, lab-scan grain; High contrast, punchy saturation, blown
+    highlights, muddy shadow, cheap lab color; Grainy 400 ISO, plastic-lens softness, color fringe;
+    Flash reflection, red-edge glare, plastic lens warp
   creative_brief: >-
-    Recast the input as a 90s disposable-camera frame: harsh frontal flash, crooked horizon, muddy shadows,
-    cheap plastic softness, and punchy one-hour-lab color. Avoid forcing parties, youth scenes, group selfies,
-    or faces. The style should feel accidental, immediate, and physically limited by a single-use camera.
-    Apply Disposable Camera as a portable cinematic/camera style over any input: preserve its lens behavior,
-    color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor,
-    room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Apply Disposable Camera (90s) as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Disposable 90s snapshot, Disposable Camera
+    (90s) historical camera process, emulsion behavior, lens constraints, print surface, and
+    era-specific exposure artifacts, Vignette, flash hotspot, crooked horizon, plastic-lens
+    softness, lab-scan grain, Grainy 400 ISO, plastic-lens softness, color fringe without requiring
+    the card image's original subject.
 avoidRules:
   - professional lighting
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - fake vintage filter
+  - readable border text
+  - modern phone clarity
+  - wrong camera process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-051.webp
 attributes:
-  negativePrompt: professional lighting
+  negativePrompt: >-
+    professional lighting, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    fake vintage filter, readable border text, modern phone clarity, wrong camera process
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -8,26 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Shadow Opera Assassin Court',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, sci-fi-ui, flat-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, sci-fi-ui, flat-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Shadow Opera Assassin Court within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Shadow Opera Assassin Court's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through silent strike readability; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Shadow Opera Assassin Court's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Shadow Opera Assassin Court: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Shadow Opera Assassin Court: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with black velvet shadow and thin spotlight; theater spotlight and red curtain shadow; knife-thin spotlights and masked shadow; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Shadow Opera Assassin Court's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from velvet, gold trim, masks, and stage dust; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Shadow Opera Assassin Court's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Shadow Opera Assassin Court's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood assassin-court secrecy; decadent assassination theater; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Shadow Opera Assassin Court into a portable visual system for 7. Heists, Horror & Underworld Runs. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Shadow Opera Assassin Court as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Shadow, Opera, Assassin, Court; silent strike readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; black velvet shadow and thin spotlight; velvet, gold trim, masks, and stage dust; balcony layers, stage axes, and masked audience depth; assassin-court secrecy',
     },
   },
   {
@@ -35,24 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Forgotten Subway Mutation Zone',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, cheerful-light, clean-surfaces, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, cheerful-light, clean-surfaces, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Forgotten Subway Mutation Zone within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Forgotten Subway Mutation Zone's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Forgotten Subway Mutation Zone's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Forgotten Subway Mutation Zone: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Forgotten Subway Mutation Zone: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Forgotten Subway Mutation Zone's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from mildew tile, old ads without text, and wet rails; old tile, wet rails, and tunnel mold; wet organic growth over subway tile; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Forgotten Subway Mutation Zone's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Forgotten Subway Mutation Zone's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood abandoned transit dread; infection creeping through infrastructure; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Forgotten, Subway, Mutation, Zone; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; mildew tile, old ads without text, and wet rails; linear tunnel dread; abandoned transit dread',
+      creative_brief:
+        "Apply Forgotten Subway Mutation Zone as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -60,24 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Temple Runner Trap Gauntlet',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, static, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, static, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Temple Runner Trap Gauntlet within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Temple Runner Trap Gauntlet's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through timed hazard readability; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Temple Runner Trap Gauntlet's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Temple Runner Trap Gauntlet: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Temple Runner Trap Gauntlet: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Temple Runner Trap Gauntlet's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from worn stone, carved traps, and ritual metal; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Temple Runner Trap Gauntlet's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Temple Runner Trap Gauntlet's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Temple, Runner, Trap, Gauntlet; timed hazard readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; worn stone, carved traps, and ritual metal; trap gauntlet depth; dangerous, clandestine, haunted, predatory, decadent, and unstable',
+      creative_brief:
+        "Apply Temple Runner Trap Gauntlet as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -85,24 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cursed Carnival Showdown',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, clean-theme, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, clean-theme, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Cursed Carnival Showdown within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Cursed Carnival Showdown's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Cursed Carnival Showdown's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Cursed Carnival Showdown: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with poison carnival color and dirty bulbs; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Cursed Carnival Showdown: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with flickering midway lights; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Cursed Carnival Showdown's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from painted props, grime, and broken bulbs; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Cursed Carnival Showdown's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Cursed Carnival Showdown's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood unlucky spectacle and poisoned celebration; cursed spectacle; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Cursed, Carnival, Showdown; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; poison carnival color and dirty bulbs; flickering midway lights; painted props, grime, and broken bulbs; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; unlucky spectacle and poisoned celebration',
+      creative_brief:
+        "Apply Cursed Carnival Showdown as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -110,24 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Thorn Castle Moon Raid',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, daylight, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, daylight, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Thorn Castle Moon Raid within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Thorn Castle Moon Raid's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Thorn Castle Moon Raid's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Thorn Castle Moon Raid: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Thorn Castle Moon Raid: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Thorn Castle Moon Raid's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from black vines, castle stone, and moonlit thorns; thorned stone, iron gates, and moon-wet masonry; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Thorn Castle Moon Raid's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Thorn Castle Moon Raid's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood gothic raid menace; gothic raid pressure; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Thorn, Castle, Moon, Raid; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; black vines, castle stone, and moonlit thorns; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; gothic raid menace',
+      creative_brief:
+        "Apply Thorn Castle Moon Raid as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -135,24 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Polar Signal Tower Outbreak',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, tropical, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, tropical, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Polar Signal Tower Outbreak within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Polar Signal Tower Outbreak's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through communication failure pressure; infection spread and containment retreat; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Polar Signal Tower Outbreak's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Polar Signal Tower Outbreak: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with cold white, signal red, and blue-grey steel; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Polar Signal Tower Outbreak: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with radio beacon through snowfall; blinking radio beacon and static glow; beacon glow in cold air; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Polar Signal Tower Outbreak's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Polar Signal Tower Outbreak's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Polar Signal Tower Outbreak's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood panic under cold weather; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Polar, Signal, Tower, Outbreak; communication failure pressure; cold white, signal red, and blue-grey steel; radio beacon through snowfall; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; vertical signal landmark and perimeter route; panic under cold weather',
+      creative_brief:
+        "Apply Polar Signal Tower Outbreak as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -160,24 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Copper Canyon Train Robbery',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, rainy-city, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, rainy-city, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Copper Canyon Train Robbery within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Copper Canyon Train Robbery's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through robbery route timing; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Copper Canyon Train Robbery's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Copper Canyon Train Robbery: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with copper orange, canyon shadow, and worn leather; red rock, dust tan, and hard blue shadow; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Copper Canyon Train Robbery: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Copper Canyon Train Robbery's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from steam metal and worn upholstery; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Copper Canyon Train Robbery's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Copper Canyon Train Robbery's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Copper, Canyon, Train, Robbery; robbery route timing; copper orange, canyon shadow, and worn leather; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; steam metal and worn upholstery; cliff corridors and long-range sightlines; dangerous, clandestine, haunted, predatory, decadent, and unstable',
+      creative_brief:
+        "Apply Copper Canyon Train Robbery as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -185,24 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Verdigris Harbor Pirate Skies',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, modern-cars, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, modern-cars, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Verdigris Harbor Pirate Skies within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdigris Harbor Pirate Skies's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Verdigris Harbor Pirate Skies's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Verdigris Harbor Pirate Skies: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with green copper, storm blue, and pirate brass; wet harbor blues, sodium orange, and fog black; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Verdigris Harbor Pirate Skies: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Verdigris Harbor Pirate Skies's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from oxidized metal and wet sails; docks, hulls, ropes, and rain-slick stone; sails, brass, wet planks, and storm rope; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Verdigris Harbor Pirate Skies's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Verdigris Harbor Pirate Skies's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood airborne underworld adventure; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Verdigris, Harbor, Pirate, Skies; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; green copper, storm blue, and pirate brass; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; oxidized metal and wet sails; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; airborne underworld adventure',
+      creative_brief:
+        "Apply Verdigris Harbor Pirate Skies as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -210,24 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Abyss Rail Horror Transit',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, cheerful, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, cheerful, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Abyss Rail Horror Transit within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Abyss Rail Horror Transit's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through linear route pressure; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Abyss Rail Horror Transit's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Abyss Rail Horror Transit: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with bottomless blue-black; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Abyss Rail Horror Transit: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with distant abyss glow; failing carriage lights; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Abyss Rail Horror Transit's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Abyss Rail Horror Transit's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Abyss Rail Horror Transit's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood submerged dread; claustrophobic body-horror transit; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Abyss, Rail, Horror, Transit; linear route pressure; bottomless blue-black; distant abyss glow; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; long track perspective and carriage modules; submerged dread',
+      creative_brief:
+        "Apply Abyss Rail Horror Transit as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -235,24 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Static Dune Radio Wars',
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, fantasy-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, fantasy-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Static Dune Radio Wars within 7. Heists, Horror & Underworld Runs: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Static Dune Radio Wars's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Static Dune Radio Wars's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
       color_and_tone:
-        'Use a controlled palette that supports Static Dune Radio Wars: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Static Dune Radio Wars: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with radio-static flicker; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Static Dune Radio Wars's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from grainy screens and antenna silhouettes; antenna wires, static screens, and dune dust; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Static Dune Radio Wars's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Static Dune Radio Wars's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood signal-war paranoia; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 7. Heists, Horror & Underworld Runs style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Static, Dune, Radio, Wars; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; radio-static flicker; grainy screens and antenna silhouettes; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; signal-war paranoia',
+      creative_brief:
+        "Apply Static Dune Radio Wars as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -13,27 +13,56 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: White tree bark
-  subject_treatment: Peeling layers
-  color_and_tone: White with Black lenticels
-  lighting_and_shadow: Outdoor
-  texture_and_material: Papery, peeling
-  camera_and_composition: Curved bark
-  atmosphere_and_mood: Natural, wild
-  rendering_and_quality: Natural, layered
-  key_features: Horizontal lines
+  aesthetic: >-
+    Birch Bark translates natural material behavior into form: start from White tree bark, Papery,
+    peeling, and Curved bark, then turn natural formation, growth, erosion, and geological or
+    biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Peeling layers: preserve identity and pose while letting
+    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use White with Black lenticels as the material palette, with controlled value separation, local
+    color variation, and hue shifts that follow the subject's form rather than flattening it into a
+    pasted texture.
+  lighting_and_shadow: >-
+    Let Outdoor define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Birch Bark without hiding the prompt subject.
+  texture_and_material: >-
+    Render Papery, peeling through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Curved bark as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Natural, wild by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Natural, layered material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: White tree bark; Peeling layers; Papery, peeling; Outdoor; Curved bark
   creative_brief: >-
-    Apply birch-bark logic as a white-and-charcoal surface system: paper-thin peeling layers, horizontal
-    lenticel marks, curled edges, and protective skin beginning to shed. If the input already contains plant,
-    trunk, or organic structure, reinforce that cue; otherwise wrap the subject in bark-like shedding strata
+    Route any subject through Birch Bark as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Apply birch-bark logic as a
+    white-and-charcoal surface system: paper-thin peeling layers, horizontal lenticel marks, curled
+    edges, and protective skin beginning to shed. If the input already contains plant, trunk, or
+    organic structure, reinforce that cue; otherwise wrap the subject in bark-like shedding strata
     without forcing a forest or tree scene.
 avoidRules:
   - plank
   - cut wood
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-003.webp
 attributes:
-  negativePrompt: plank, cut wood
+  negativePrompt: plank, cut wood, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

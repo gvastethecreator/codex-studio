@@ -12,29 +12,80 @@ tags:
   - miscellaneous-and-fun
   - micro-macro
 visualDna:
-  aesthetic: Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic
-  subject_treatment: Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet
-  color_and_tone: Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic
-  lighting_and_shadow: Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight
-  texture_and_material: Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss
+  aesthetic: >-
+    Water Drop Reflection operates as a portable source-router layer: combine Refraction in drop,
+    lens-drop, optical-sphere, rain-jewel, surface-tension optic with magnified source-study logic
+    with scale shift, optical detail, structural pattern, and specimen-independent texture grammar,
+    so the preset supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms magnify,
+    reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure
+    through Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet;
+    identity stays readable through construction grammar, proportion, edge logic, and detail scale
+    as this preset is applied.
+  color_and_tone: >-
+    Map color through source-derived color variation, iridescence, false-scale contrast, translucent
+    edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and
+    palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight plus
+    macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow
+    optical falloff as the light-response contract, with readable hierarchy, controlled contact
+    detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle
+    gloss plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion,
+    or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
+    artifacts must remain coherent across figures, objects, and environments.
   camera_and_composition: >-
-    Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion,
-    focal-miniaturization
-  atmosphere_and_mood: Calm, focus, macro-meditation, rain-pause, single-drop universe
-  rendering_and_quality: Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics
+    Compose with Inverted image inside, upside-down-world, refractive-compression, lens-barrel
+    distortion, focal-miniaturization plus scale abstraction, repeated micro-patterns, sectional
+    rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing
+    cards, portraits, objects, scenes, and abstract prompts to inherit the style without one
+    required layout.
+  atmosphere_and_mood: >-
+    Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural
+    engineering, entropy, and fragile wonder; the emotional tone should feel specific to Water Drop
+    Reflection while still obeying the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy
+    stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight,
-    chromatic-aberration fringing, surface-tension curvature
+    Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic; Perfect
+    sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet; Surface
+    tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss; Lens
+    effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight; Inverted
+    image inside, upside-down-world, refractive-compression, lens-barrel distortion,
+    focal-miniaturization
   creative_brief: >-
-    Compose liquid-lens macro imagery around spherical droplets, inverted refractive interiors, and precise
-    contact-line behavior. Prioritize optical clarity and tension-driven curvature without fixing the style to
-    one surface or setting.
+    Use Water Drop Reflection after prompt X as a transferable style layer: prompt X supplies
+    subject, action, and setting, while the preset supplies Refraction in drop, lens-drop,
+    optical-sphere, rain-jewel, surface-tension optic, Perfect sphere, meniscus-contact curve,
+    capillary-bridge, pendant-drop, sessile-droplet, Surface tension, liquid-skin,
+    glycerin-viscosity, water-bead elasticity, contact-angle gloss, Lens effect, backlit-refraction,
+    macro-spot, dark-field sparkle, ring-flash catchlight, Inverted image inside, upside-down-world,
+    refractive-compression, lens-barrel distortion, focal-miniaturization plus microstructure,
+    magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible
+    detail, palette behavior, light response, material treatment, and finish discipline without
+    requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - dry
+  - generic macro blur
+  - muddy micro noise
+  - classroom sample scene
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-061.webp
 attributes:
-  negativePrompt: dry
+  negativePrompt: >-
+    dry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card
+    scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

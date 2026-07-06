@@ -14,9 +14,15 @@ Codex Studio keeps public and agent-facing documentation in the repository. Inte
 - [Style collection refactor roadmap](./STYLE_COLLECTION_REFACTOR_ROADMAP.md)
 - [Style duplicate family report](./STYLE_DUPLICATE_FAMILY_REPORT.md)
 - [Style collection migration readiness](./STYLE_COLLECTION_MIGRATION_READINESS.md)
+- [Sprite Atlas workflow plan](./SPRITE_ATLAS_WORKFLOW_PLAN.md)
+- [Sprite Atlas implementation tasks](./SPRITE_ATLAS_TASKS.md)
 - [Roadmap](../ROADMAP.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Security](../SECURITY.md)
+
+## Architecture Decisions
+
+- [ADR 0001: Sprite Atlas workflow recipe](./adr/0001-sprite-atlas-workflow.md)
 
 ## Agent-Facing Docs
 

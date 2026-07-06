@@ -13,37 +13,59 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    C64 Commodore Palette within 6. Retro Game Visual Systems: a reusable Essential Art Styles visual language
-    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving C64 Commodore Palette's specific style identity.
+    C64 Commodore Palette acts as a transferable art-medium router: start from C64 Commodore Palette
+    era-specific hardware limits, constrained palette behavior, visible display artifacts, and
+    sprite or screen logic and hardware-constrained game-visual system built from display limits,
+    palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm,
+    then apply the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Define C64 Commodore Palette through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Transform any prompt subject through adapt the requested subject through era-specific hardware
+    limits, constrained palette behavior, visible display artifacts, and sprite or screen logic
+    while preserving identity; preserve the prompt subject while translating it into tile, sprite,
+    vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    Use a C64 Commodore Palette-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Build color with medium-native palette relationships, deliberate contrast, and accent restraint
+    for C64 Commodore Palette; use color through hardware rules: indexed palettes, phosphor glow,
+    four-shade handheld values, dither tricks, copper gradients, limited scanline color, or terminal
+    ANSI sets, with deliberate value grouping, accent control, and medium-specific limits rather
+    than generic color wash.
   lighting_and_shadow: >-
-    Use lighting that makes C64 Commodore Palette recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Handle light through process-led value structure, readable highlights, and medium-specific
+    shadow behavior; make light emerge from display technology, pixel value steps, CRT bloom,
+    palette cycling, thermal print contrast, or vector beam brightness, so value structure supports
+    the medium and does not overwrite the requested content.
   texture_and_material: >-
-    Use materials and textures that reinforce C64 Commodore Palette: surface response, grain, patina, polish,
-    or wear should feel intentional and style-defining.
+    Render era-specific hardware limits, constrained palette behavior, visible display artifacts,
+    and sprite or screen logic; surface detail should show pixels, dithering, scanlines,
+    quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print degradation,
+    keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Use spatial behavior that fits C64 Commodore Palette: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Structure the image through scale rhythm, edge hierarchy, spacing, and composition rules
+    specific to C64 Commodore Palette; compose through tile maps, sprite scale, fixed-resolution
+    framing, isometric grids, wireframe coordinate space, UI geometry, or screen-proportion
+    constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to C64 Commodore Palette: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Keep the mood mood carried by C64 Commodore Palette craft, material pressure, and visual
+    restraint; derive mood from hardware limitation, arcade spectacle, handheld intimacy, terminal
+    austerity, console nostalgia, or broken early-3D instability, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
   rendering_and_quality: >-
-    Render C64 Commodore Palette with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
+    Finish with finished C64 Commodore Palette craft with clear medium evidence and controlled
+    detail; finish with faithful era constraints, crisp readability at small scale, and no modern
+    high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised
+    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
   key_features: >-
-    Prioritize C64 Commodore Palette's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    C64 Commodore Palette era-specific hardware limits, constrained palette behavior, visible
+    display artifacts, and sprite or screen logic; medium-native palette relationships, deliberate
+    contrast, and accent restraint for C64 Commodore Palette; scale rhythm, edge hierarchy, spacing,
+    and composition rules specific to C64 Commodore Palette
   creative_brief: >-
-    Create a style-card that translates C64 Commodore Palette into a portable visual system for 6. Retro Game
-    Visual Systems. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
-    or story beat.
+    Apply C64 Commodore Palette as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    C64 Commodore Palette era-specific hardware limits, constrained palette behavior, visible
+    display artifacts, and sprite or screen logic without requiring the card image's original
+    subject.
 avoidRules:
   - smooth
   - modern
@@ -56,10 +78,25 @@ avoidRules:
   - photo
   - clean
   - high color
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-092.webp
 attributes:
-  negativePrompt: smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color
+  negativePrompt: >-
+    smooth, modern, high res, 3d, realistic, gradient, HD, anti-aliased, photo, clean, high color,
+    wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable
+    text, signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

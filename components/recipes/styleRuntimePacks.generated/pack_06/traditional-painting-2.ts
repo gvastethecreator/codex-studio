@@ -8,19 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Oil Painting (Classic)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Classic oil painting on canvas',
-      subject_treatment: 'Thick impasto brush strokes',
-      color_and_tone: 'Rich, deep, blended traditional pigments',
-      lighting_and_shadow: 'Dramatic chiaroscuro',
-      texture_and_material: 'Canvas grain, raised paint, brush bristles',
-      camera_and_composition: 'Slightly impressionistic',
-      atmosphere_and_mood: 'Timeless, expressive',
-      rendering_and_quality: 'Masterpiece, museum quality',
-      key_features: 'Visible brushwork',
+      aesthetic:
+        'Oil Painting (Classic) acts as a transferable art-medium router: start from Classic oil painting on canvas, Visible brushwork and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Thick impasto brush strokes; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Rich, deep, blended traditional pigments; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Dramatic chiaroscuro; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Canvas grain, raised paint, brush bristles; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Slightly impressionistic; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Timeless, expressive; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Masterpiece, museum quality; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Classic oil painting on canvas; Visible brushwork; Rich, deep, blended traditional pigments; Canvas grain, raised paint, brush bristles; Slightly impressionistic',
       creative_brief:
-        'Apply classic oil-paint handling to any input: slow layered pigment, visible canvas grain, soft wet-edge blending, glazed depth, varnish warmth, and brushwork with old-master weight. Keep painterly permanence without requiring portraits, landscapes, still lifes, galleries, or historical subject matter.',
+        "Apply Oil Painting (Classic) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Classic oil painting on canvas, Visible brushwork, Canvas grain, raised paint, brush bristles without requiring the card image's original subject.",
     },
   },
   {
@@ -28,19 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Casein Paint',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Milk-based paint illustration',
-      subject_treatment: 'Matte, velvety',
-      color_and_tone: 'High chroma, matte',
-      lighting_and_shadow: 'Soft, illustrative',
-      texture_and_material: 'Smooth, durable',
-      camera_and_composition: 'Clean shapes',
-      atmosphere_and_mood: 'Classic, sturdy',
-      rendering_and_quality: 'Vintage illustration',
-      key_features: 'Velvet matte finish',
+      aesthetic:
+        'Casein Paint acts as a transferable art-medium router: start from Milk based paint illustration, Velvet matte finish and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Matte, velvety; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with High chroma, matte; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft, illustrative; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth, durable; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Clean shapes; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Classic, sturdy; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Vintage illustration; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Milk based paint illustration; Velvet matte finish; High chroma, matte; Smooth, durable; Clean shapes',
       creative_brief:
-        'Apply casein-paint surface logic to any input: milk-protein matte pigment, powdered-stone opacity, fast opaque layering, crisp illustration edges, and waterproof permanence. Keep quiet durable color without requiring vintage posters, editorial illustration, packaging, or dairy-themed subject matter.',
+        "Apply Casein Paint as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Milk based paint illustration, Velvet matte finish, Smooth, durable without requiring the card image's original subject.",
     },
   },
   {
@@ -48,19 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Acrylic (Modern)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Modern acrylic painting',
-      subject_treatment: 'Clean edges, layered paint',
-      color_and_tone: 'Bright, opaque, synthetic colors',
-      lighting_and_shadow: 'Flat or stylized lighting',
-      texture_and_material: 'Slight canvas texture, matte finish',
-      camera_and_composition: 'Stylized shapes',
-      atmosphere_and_mood: 'Energetic, contemporary',
-      rendering_and_quality: 'Modern art, vibrant',
-      key_features: 'Opaque paint layers',
+      aesthetic:
+        'Acrylic (Modern) acts as a transferable art-medium router: start from Modern acrylic painting, Opaque paint layers and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Clean edges, layered paint; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Bright, opaque, synthetic colors; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat or stylized lighting; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Slight canvas texture, matte finish; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stylized shapes; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Energetic, contemporary; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Modern art, vibrant; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Modern acrylic painting; Opaque paint layers; Bright, opaque, synthetic colors; Slight canvas texture, matte finish; Stylized shapes',
       creative_brief:
-        'Apply modern acrylic-paint logic to any input: fast-drying opaque color, crisp blocked planes, synthetic pigment density, visible plastic surface body, and bright contemporary contrast. Keep modern studio energy without requiring canvas panels, abstract walls, or gallery installation context.',
+        "Apply Acrylic (Modern) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Modern acrylic painting, Opaque paint layers, Slight canvas texture, matte finish without requiring the card image's original subject.",
     },
   },
   {
@@ -68,19 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Watercolor (Soft)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Soft watercolor painting',
-      subject_treatment: 'Fluid, bleeding edges',
-      color_and_tone: 'Translucent, pastel, washed out',
-      lighting_and_shadow: 'Soft, diffuse, paper white highlights',
-      texture_and_material: 'Cold press paper grain, water stains',
-      camera_and_composition: 'Colors bleeding outside lines',
-      atmosphere_and_mood: 'Dreamy, soft, nostalgic',
-      rendering_and_quality: 'Delicate, artistic',
-      key_features: 'Watery texture',
+      aesthetic:
+        'Watercolor (Soft) acts as a transferable art-medium router: start from Soft watercolor painting, Watery texture and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Fluid, bleeding edges; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Translucent, pastel, washed out; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft, diffuse, paper white highlights; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Cold press paper grain, water stains; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Colors bleeding outside lines; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Dreamy, soft, nostalgic; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Delicate, artistic; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Soft watercolor painting; Watery texture; Translucent, pastel, washed out; Cold press paper grain, water stains; Colors bleeding outside lines',
       creative_brief:
-        'Apply soft watercolor behavior to any input: translucent washes, pigment blooms, feathered wet edges, paper-white luminosity, granulation, and gentle value layering. Keep airy water-media softness without requiring florals, landscapes, sketchbook pages, or botanical study.',
+        "Apply Watercolor (Soft) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Soft watercolor painting, Watery texture, Cold press paper grain, water stains without requiring the card image's original subject.",
     },
   },
   {
@@ -88,19 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gouache (Flat)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Opaque gouache illustration',
-      subject_treatment: 'Crisp edges, matte finish',
-      color_and_tone: 'Vibrant, solid, chalky',
-      lighting_and_shadow: 'Flat, graphic',
-      texture_and_material: 'Smooth paper, matte paint',
-      camera_and_composition: 'Simplified forms',
-      atmosphere_and_mood: 'Playful, graphic',
-      rendering_and_quality: 'Illustrative, design-focused',
-      key_features: 'Matte opacity',
+      aesthetic:
+        'Gouache (Flat) acts as a transferable art-medium router: start from Opaque gouache illustration, Matte opacity and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Crisp edges, matte finish; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant, solid, chalky; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat, graphic; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth paper, matte paint; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Simplified forms; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, graphic; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Illustrative, design focused; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Opaque gouache illustration; Matte opacity; Vibrant, solid, chalky; Smooth paper, matte paint; Simplified forms',
       creative_brief:
-        'Apply flat gouache treatment to any input: velvet matte opacity, chalky pigment body, crisp graphic edges, softened hand-painted precision, and dense color fields that absorb light. Keep illustration-ready clarity without requiring posters, character art, packaging, or flat product layouts.',
+        "Apply Gouache (Flat) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Opaque gouache illustration, Matte opacity, Smooth paper, matte paint without requiring the card image's original subject.",
     },
   },
   {
@@ -108,22 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tempera (Egg)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Renaissance egg tempera',
-      subject_treatment: 'Fine cross-hatching strokes',
-      color_and_tone: 'Bright, pure pigments, gold leaf',
-      lighting_and_shadow: 'Soft, internal glow',
-      texture_and_material: 'Wood panel, smooth gesso',
+      aesthetic:
+        'Tempera (Egg) acts as a transferable art-medium router: start from Renaissance egg tempera, Fine linear brushwork and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Fine cross hatching strokes; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Bright, pure pigments, gold leaf; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft, internal glow; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Wood panel, smooth gesso; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Flattened icon-plane depth, deliberate frontality, and fine linear modeling',
+        'Structure the image through Flattened icon plane depth, deliberate frontality, and fine linear modeling; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Reverent, ancient, luminous through craft rather than narrative content',
+        'Keep the mood Reverent, ancient, luminous through craft rather than narrative content; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Historical panel-painting discipline with devotional precision but no mandatory subject',
-      key_features: 'Fine linear brushwork',
+        'Finish with Historical panel painting discipline with devotional precision but no mandatory subject; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Renaissance egg tempera; Fine linear brushwork; Bright, pure pigments, gold leaf; Wood panel, smooth gesso; Flattened icon plane depth, deliberate frontality, and fine linear modeling',
       creative_brief:
-        'Apply egg-tempera discipline to any input: luminous thin pigment, fine cross-hatched modeling, crisp small strokes, panel-like permanence, and restrained inner glow. Keep sacred-craft precision as technique, not as required religious icon, portrait, gold ground, or medieval subject.',
+        "Apply Tempera (Egg) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Renaissance egg tempera, Fine linear brushwork, Wood panel, smooth gesso without requiring the card image's original subject.",
     },
   },
   {
@@ -131,19 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Encaustic (Wax)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Hot wax painting',
-      subject_treatment: 'Soft, melted edges',
-      color_and_tone: 'Deep, translucent, layered',
-      lighting_and_shadow: 'Subsurface scattering',
-      texture_and_material: 'Thick wax, scraped layers',
-      camera_and_composition: 'Blurred details',
-      atmosphere_and_mood: 'Mysterious, tactile',
-      rendering_and_quality: 'Textured, ancient',
-      key_features: 'Waxy surface',
+      aesthetic:
+        'Encaustic (Wax) acts as a transferable art-medium router: start from Hot wax painting, Waxy surface and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Soft, melted edges; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Deep, translucent, layered; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Subsurface scattering; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Thick wax, scraped layers; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Blurred details; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Mysterious, tactile; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Textured, ancient; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Hot wax painting; Waxy surface; Deep, translucent, layered; Thick wax, scraped layers; Blurred details',
       creative_brief:
-        'Apply encaustic wax painting to any input: fused translucent layers, beeswax haze, scraped inclusions, heat-smoothed pigment, amber depth, and tactile cloudy surface. Keep warm material memory without requiring abstract panels, candles, relics, or preserved-object subject matter.',
+        "Apply Encaustic (Wax) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Hot wax painting, Waxy surface, Thick wax, scraped layers without requiring the card image's original subject.",
     },
   },
   {
@@ -151,19 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fresco (Wall)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Italian wall fresco',
-      subject_treatment: 'Integrated into plaster',
-      color_and_tone: 'Earthy, desaturated, matte',
-      lighting_and_shadow: 'Natural ambient',
-      texture_and_material: 'Plaster cracks, wall texture',
-      camera_and_composition: 'Faded areas',
-      atmosphere_and_mood: 'Historic, grand',
-      rendering_and_quality: 'Ancient, architectural',
-      key_features: 'Plaster texture',
+      aesthetic:
+        'Fresco (Wall) acts as a transferable art-medium router: start from Italian wall fresco, Plaster texture and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Integrated into plaster; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Earthy, desaturated, matte; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Natural ambient; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Plaster cracks, wall texture; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Faded areas; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Historic, grand; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Ancient, architectural; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Italian wall fresco; Plaster texture; Earthy, desaturated, matte; Plaster cracks, wall texture; Faded areas',
       creative_brief:
-        'Apply fresco wall-painting materiality to any input: pigment absorbed into plaster, mineral matte color, hairline cracks, worn lime surface, and aged architectural permanence. Keep wall-bound durability without requiring murals, churches, ruins, figures, or literal architecture.',
+        "Apply Fresco (Wall) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Italian wall fresco, Plaster texture, Plaster cracks, wall texture without requiring the card image's original subject.",
     },
   },
   {
@@ -171,21 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Impressionist Oil',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Monet style impressionism',
-      subject_treatment: 'Short, broken brushstrokes',
-      color_and_tone: 'Vibrant, unblended optical mixing',
+      aesthetic:
+        'Impressionist Oil acts as a transferable art-medium router: start from Monet style impressionism, Dabbed paint texture and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Short, broken brushstrokes; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant, unblended optical mixing; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Perceptual light built from broken color, luminous edges, and warm-cool vibration',
-      texture_and_material: 'Thick paint dabs',
-      camera_and_composition: 'Loss of detail',
-      atmosphere_and_mood: 'Light, airy, fleeting',
+        'Handle light through Perceptual light built from broken color, luminous edges, and warm cool vibration; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Thick paint dabs; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Loss of detail; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Light, airy, fleeting; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Optical impressionist finish with loose local detail and high color vibration',
-      key_features: 'Dabbed paint texture',
+        'Finish with Optical impressionist finish with loose local detail and high color vibration; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Monet style impressionism; Dabbed paint texture; Vibrant, unblended optical mixing; Thick paint dabs; Loss of detail',
       creative_brief:
-        'Apply impressionist oil perception to any input: broken color dabs, optical mixing, shimmering light, softened contours, quick visible strokes, and atmospheric afterimage. Keep perception-first painting without requiring gardens, riverbanks, dancers, plein-air landscapes, or period scenes.',
+        "Apply Impressionist Oil as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Monet style impressionism, Dabbed paint texture, Thick paint dabs without requiring the card image's original subject.",
     },
   },
   {
@@ -193,19 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pointillism',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Seurat style dot painting',
-      subject_treatment: 'Composed entirely of dots',
-      color_and_tone: 'Optical mixing of primary colors',
-      lighting_and_shadow: 'Vibrating light',
-      texture_and_material: 'Stippled paint',
-      camera_and_composition: 'Forms dissolve into dots',
-      atmosphere_and_mood: 'Static, shimmering',
-      rendering_and_quality: 'Scientific, meticulous',
-      key_features: 'Dot pattern',
+      aesthetic:
+        'Pointillism acts as a transferable art-medium router: start from Seurat style dot painting, Dot pattern and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Composed entirely of dots; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Optical mixing of primary colors; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Vibrating light; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Stippled paint; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Forms dissolve into dots; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Static, shimmering; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Scientific, meticulous; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Seurat style dot painting; Dot pattern; Optical mixing of primary colors; Stippled paint; Forms dissolve into dots',
       creative_brief:
-        'Apply pointillist construction to any input: separated pure-color dots, optical mixing at distance, ordered chromatic vibration, and image structure built from small repeated marks. Keep retinal color theory without requiring parks, figures, umbrellas, rivers, or Neo-Impressionist subject staging.',
+        "Apply Pointillism as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Seurat style dot painting, Dot pattern, Stippled paint without requiring the card image's original subject.",
     },
   },
   {
@@ -213,19 +298,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Palette Knife',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Thick impasto knife painting',
-      subject_treatment: 'Sharp geometric paint slabs',
-      color_and_tone: 'Pure unmixed paint',
-      lighting_and_shadow: 'High contrast texture',
-      texture_and_material: 'Extreme relief, sculptural paint',
-      camera_and_composition: 'Abstracted details',
-      atmosphere_and_mood: 'Bold, energetic',
-      rendering_and_quality: 'Expressive, modern',
-      key_features: 'Knife marks',
+      aesthetic:
+        'Palette Knife acts as a transferable art-medium router: start from Thick impasto knife painting, Knife marks and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Sharp geometric paint slabs; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Pure unmixed paint; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through High contrast texture; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Extreme relief, sculptural paint; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Abstracted details; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Bold, energetic; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Expressive, modern; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Thick impasto knife painting; Knife marks; Pure unmixed paint; Extreme relief, sculptural paint; Abstracted details',
       creative_brief:
-        'Apply palette-knife painting to any input: thick impasto slabs, scraped ridges, blade-carved edges, compressed detail, and sculptural pigment mass. Keep physical paint presence without requiring landscapes, flowers, seascapes, abstract canvases, or gallery closeups.',
+        "Apply Palette Knife as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Thick impasto knife painting, Knife marks, Extreme relief, sculptural paint without requiring the card image's original subject.",
     },
   },
   {
@@ -233,23 +327,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Spray Paint (Aerosol)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable tag, city wall requirement',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, readable tag, city wall requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
       aesthetic:
-        'Aerosol paint style with stencil drift, overspray halos, and bold graphic immediacy',
-      subject_treatment: 'Soft spray edges, drips',
-      color_and_tone: 'Neon, vibrant, aerosol',
+        'Spray Paint (Aerosol) acts as a transferable art-medium router: start from Aerosol paint style with stencil drift, overspray halos, and bold graphic immediacy, Spray texture and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Soft spray edges, drips; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Neon, vibrant, aerosol; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat graphic light with sprayed edge bloom and high-contrast color hits',
+        'Handle light through Flat graphic light with sprayed edge bloom and high contrast color hits; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
       texture_and_material:
-        'Aerosol mist, layered overspray, drips, stencil ghosts, and rough receptive surface grain',
-      camera_and_composition: 'Stylized forms',
-      atmosphere_and_mood: 'Urgent, improvised, graphic',
+        'Render Aerosol mist, layered overspray, drips, stencil ghosts, and rough receptive surface grain; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stylized forms; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Urgent, improvised, graphic; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Raw, high-impact, wall-scale paint language without requiring a wall or city scene',
-      key_features: 'Spray texture',
+        'Finish with Raw, high impact, wall scale paint language without requiring a wall or urban fabric scene; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Aerosol paint style with stencil drift, overspray halos, and bold graphic immediacy; Spray texture; Neon, vibrant, aerosol; Aerosol mist, layered overspray, drips, stencil ghosts, and rough receptive surface grain; Stylized forms',
       creative_brief:
-        'Apply aerosol spray-paint logic to any input: feathered overspray, stencil silhouettes, pressure halos, layered color clouds, drips, and fast public-mark energy. Keep risky graphic immediacy without requiring walls, streets, tags, graffiti words, or protest context.',
+        "Apply Spray Paint (Aerosol) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Aerosol paint style with stencil drift, overspray halos, and bold graphic immediacy, Spray texture, Aerosol mist, layered overspray, drips, stencil ghosts, and rough receptive surface grain without requiring the card image's original subject.",
     },
   },
   {
@@ -257,19 +356,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ink Wash (Sumi-e)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'East Asian ink wash painting',
-      subject_treatment: 'Expressive brush strokes',
-      color_and_tone: 'Black ink, grey washes',
-      lighting_and_shadow: 'Minimalist',
-      texture_and_material: 'Rice paper, ink bleed',
-      camera_and_composition: 'Abstracted forms',
-      atmosphere_and_mood: 'Peaceful, meditative',
-      rendering_and_quality: 'Zen, minimal, masterful',
-      key_features: 'Brush pressure variation',
+      aesthetic:
+        'Ink Wash (Sumi-e) acts as a transferable art-medium router: start from East Asian ink wash painting, Brush pressure variation and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Expressive brush strokes; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black ink, grey washes; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Minimalist; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Rice paper, ink bleed; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Abstracted forms; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Peaceful, meditative; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Zen, minimal, masterful; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'East Asian ink wash painting; Brush pressure variation; Black ink, grey washes; Rice paper, ink bleed; Abstracted forms',
       creative_brief:
-        'Apply sumi-e ink-wash economy to any input: decisive brush pressure, black ink gradients, rice-paper absorption, visible water dilution, restrained negative space, and breathlike rhythm. Keep meditative reduction without requiring bamboo, mountains, birds, calligraphy, or East Asian scenery.',
+        "Apply Ink Wash (Sumi-e) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through East Asian ink wash painting, Brush pressure variation, Rice paper, ink bleed without requiring the card image's original subject.",
     },
   },
   {
@@ -277,20 +385,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Airbrush (80s)',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Retro 80s airbrush art',
-      subject_treatment: 'Soft gradients, no brush marks',
-      color_and_tone: 'Chrome, neon, sunset',
-      lighting_and_shadow: 'Hyper-real, glossy',
-      texture_and_material: 'Smooth, grainless',
-      camera_and_composition: 'Idealized forms',
-      atmosphere_and_mood: 'Retro, slick',
+      aesthetic:
+        'Airbrush (80s) acts as a transferable art-medium router: start from Retro 80s airbrush art, Smooth gradients and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Soft gradients, no brush marks; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Chrome, neon, sunset; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Hyper real, glossy; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth, grainless; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Idealized forms; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Retro, slick; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Retrofuturist commercial airbrush polish with chrome-smooth gradients',
-      key_features: 'Smooth gradients',
+        'Finish with Retrofuturist commercial airbrush polish with chrome smooth gradients; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Retro 80s airbrush art; Smooth gradients; Chrome, neon, sunset; Smooth, grainless; Idealized forms',
       creative_brief:
-        'Apply 80s airbrush finish to any input: atomized gradients, chrome-smooth highlights, vapor-soft transitions, glossy synthetic color, and retro commercial glow. Keep frictionless fantasy without requiring pinups, cars, chrome logos, sunset grids, or mall-poster compositions.',
+        "Apply Airbrush (80s) as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Retro 80s airbrush art, Smooth gradients, Smooth, grainless without requiring the card image's original subject.",
     },
   },
   {
@@ -298,19 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Black Velvet Painting',
     category: '1. Traditional Painting',
     negativePrompt:
-      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border',
+      'photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint medium, flat digital filter, plastic CGI finish',
     style: {
-      aesthetic: 'Kitsch painting on black velvet',
-      subject_treatment: 'Glowing edges',
-      color_and_tone: 'Neon against deep black',
-      lighting_and_shadow: 'Glowing, high contrast',
-      texture_and_material: 'Velvet fabric fuzz',
-      camera_and_composition: 'Soft focus',
-      atmosphere_and_mood: 'Kitsch, sincere, nocturnal, theatrical',
-      rendering_and_quality: 'Kitsch, retro',
-      key_features: 'Black background dominance',
+      aesthetic:
+        'Black Velvet Painting acts as a transferable art-medium router: start from Kitsch painting on black velvet, Black support field dominance and paint-media system built from pigment body, binder behavior, substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Glowing edges; preserve the prompt subject while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Neon against deep black; let hue, value, saturation, and mixing come from physical pigment, binder opacity, drying character, and historical medium constraints, with deliberate value grouping, accent control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Glowing, high contrast; make light feel interpreted by paint through tonal blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure supports the medium and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Velvet fabric fuzz; surface detail should show canvas, paper, plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Soft focus; organize the image through painterly massing, brush direction, support format, negative space, edge hierarchy, and intentional simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Kitsch, sincere, nocturnal, theatrical; derive mood from medium history, touch, pigment weight, speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Kitsch, retro; finish with medium-faithful paint handling, readable form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.',
+      key_features:
+        'Kitsch painting on black velvet; Black support field dominance; Neon against deep black; Velvet fabric fuzz; Soft focus',
       creative_brief:
-        'Apply black-velvet painting to any input: light-swallowing velvet ground, saturated neon pigment, floating icon contrast, soft pile texture, and sincere kitsch luminosity. Keep visionary dark-glow drama without requiring Elvis portraits, animals, tropical scenes, casinos, or souvenir art.',
+        "Apply Black Velvet Painting as an art-style preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Kitsch painting on black velvet, Black support field dominance, Velvet fabric fuzz without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

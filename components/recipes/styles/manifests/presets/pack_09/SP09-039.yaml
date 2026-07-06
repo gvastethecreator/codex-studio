@@ -13,30 +13,59 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: Freezer burn
-  subject_treatment: Ice crystals
-  color_and_tone: White, Blue
-  lighting_and_shadow: Sparkle
-  texture_and_material: Crystalline
-  camera_and_composition: Surface buildup
-  atmosphere_and_mood: Freezing, preserved
-  rendering_and_quality: Cold, winter
-  key_features: Crystal growth
+  aesthetic: >-
+    Frozen/Frosted makes hand-feel and pressure visible across the image: start from Freezer burn,
+    Crystalline, and Surface buildup, then turn touch, softness, pile, fiber density, nap direction,
+    compression, and hand-feel into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Ice crystals: preserve identity and pose while letting
+    forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use White, Blue as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Sparkle define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Frozen/Frosted without hiding the prompt subject.
+  texture_and_material: >-
+    Render Crystalline through fiber structure, tactile depth, soft occlusion, fuzz, pile direction,
+    and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Surface buildup as reusable material rhythm: macro-friendly for texture tasks,
+    but able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Freezing, preserved by using physical touch, comfort, irritation, warmth, dryness,
+    and surface softness; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Cold, winter material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Freezer burn; Ice crystals; Crystalline; Sparkle; Surface buildup
   creative_brief: >-
-    Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces,
-    each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle
-    with the brittleness of extreme cold, white and blue whispering the language of winter across every
+    Route any subject through Frozen/Frosted as a transferable tactile-surface visual system while
+    preserving the prompt's subject, action, and setting. Compose the crystalline invasion of frost
+    where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen
+    mathematics growing outward from nucleation points. The surface must sparkle with the
+    brittleness of extreme cold, white and blue whispering the language of winter across every
     crystalline edge. Capture the moment water becomes architecture. Use Frozen/Frosted as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - melted
   - wet
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-039.webp
 attributes:
-  negativePrompt: melted, wet
+  negativePrompt: melted, wet, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

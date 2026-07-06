@@ -12,30 +12,60 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Marine structure
-  subject_treatment: Pores and branches
-  color_and_tone: Pink, Orange, Purple
-  lighting_and_shadow: Caustic light
-  texture_and_material: Rough, porous
-  camera_and_composition: Branching
-  atmosphere_and_mood: Alive, colorful
-  rendering_and_quality: Vibrant, porous
-  key_features: Porous
+  aesthetic: >-
+    Coral Reef translates natural material behavior into form: start from Marine structure, Rough,
+    porous, and Branching, then turn natural formation, growth, erosion, and geological or
+    biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Pores and branches: preserve identity and pose while
+    letting forms grow, erode, polish, fracture, or soften through edge profile, surface breakup,
+    thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Pink, Orange, Purple as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Caustic light define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Coral Reef without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Rough, porous through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Branching as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Alive, colorful by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Vibrant, porous material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Marine structure; Pores and branches; Rough, porous; Caustic light; Branching
   creative_brief: >-
-    Apply coral-reef materiality as living mineral architecture: porous calcium-carbonate texture, branching
-    spires, honeycombed domes, pink-orange-purple vibrancy, and caustic light moving across the surface. If
-    marine or organic content exists, reinforce it; otherwise use coral growth as abstract porous structure
-    without forcing an underwater scene. Use Coral Reef as portable surface/render behavior over any input:
-    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
-    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
-    material naturally appears.
+    Route any subject through Coral Reef as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Apply coral-reef materiality as living
+    mineral architecture: porous calcium-carbonate texture, branching spires, honeycombed domes,
+    pink-orange-purple vibrancy, and caustic light moving across the surface. If marine or organic
+    content exists, reinforce it; otherwise use coral growth as abstract porous structure without
+    forcing an underwater scene. Use Coral Reef as portable surface/render behavior over any input:
+    map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject
+    instead of requiring a literal material sample, macro tile, wall, landscape, source object, or
+    scene where the material naturally appears.
 avoidRules:
   - dead
   - bleached
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-014.webp
 attributes:
-  negativePrompt: dead, bleached
+  negativePrompt: dead, bleached, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

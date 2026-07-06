@@ -8,28 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Grotesque Exaggeration Cartoon',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal proportions, subtle',
+      'realistic, photorealistic, proportional, anatomically correct, beautiful, smooth, clean lines, polished, normal proportions, subtle, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy',
+        'Grotesque Exaggeration Cartoon acts as a transferable cinematic-media router: start from Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy, Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form logic',
+        'Transform any prompt subject through Wobbly uneven contours, spasming line weight, broken construction, scratchy re-draw marks, elastic form logic; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth',
+        'Build color with Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare',
+        'Handle light through Unflattering fluorescent overexposure, harsh single-source bulb, unkind overhead glare; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture',
+        'Render Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress',
+        'Structure the image through Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest',
+        'Keep the mood Uncomfortable, repulsive yet funny, fever-dream ugly, caricature at its cruelest; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation',
+        'Finish with Intentionally terrible, purposefully unpleasant, anti-aesthetic, repulsive yet compelling, scratchy late-night animation; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy',
+        'Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy; Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy; Sickly greens, bruised purples, bilious yellow, clammy grey, infection-tinted flesh tones, jaundiced warmth; Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture; Inflated proportions, mismatched feature scales, bulging forms, impossible curve stress',
       creative_brief:
-        'Push any subject through grotesque caricature logic: proportions rebel, surfaces become bumpy and splotchy, contours wobble, and unflattering exaggeration becomes the main design force. Avoid requiring faces, noses, teeth, or bodies. The style should feel repulsive, funny, and magnetically overdrawn.',
+        "Apply Grotesque Exaggeration Cartoon as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Deliberately ugly caricature, bulbous distortion, warty textures, hideous charm, adult-swim grotesque, John Kricfalusi energy, Asymmetry, bulbous focal swelling, greasy texture, excessive folds, cruel redraw energy, Bumpy surface, exaggerated pores or pits, wart dimples, greasy sheen, splotchy texture without requiring the card image's original subject.",
     },
   },
   {
@@ -37,108 +37,115 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silly Scribble Doodle',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'realistic, proportional, detailed, clean lines, smooth shading, serious, polished, refined',
+      'realistic, proportional, detailed, clean lines, smooth shading, serious, polished, refined, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy',
+        'Silly Scribble Doodle acts as a transferable cinematic-media router: start from Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy, Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure',
+        'Transform any prompt subject through Loose wobbly graphite, multiple overlapping attempt lines, eraser smudges still visible, uncertain pen pressure; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        "Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper bright",
-      lighting_and_shadow: 'No lighting logic, flat fills with zero shading, rejecting dimension',
+        "Build color with Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper bright; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.",
+      lighting_and_shadow:
+        'Handle light through No lighting logic, flat fills with zero shading, rejecting dimension; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side',
+        'Render Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic',
-      atmosphere_and_mood: 'Innocent, joyful chaos, giggling anarchy, pure creative abandon',
+        'Structure the image through Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Innocent, joyful chaos, giggling anarchy, pure creative abandon; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece',
+        'Finish with Intentionally childish, proudly amateur, naive-art celebration, anti-skill philosophy, five-year-old masterpiece; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout',
+        "Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy; Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout; Wax crayon primaries, coloring-outside-the-lines chaos, cheap children's marker bleed, construction-paper bright; Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side; Scale mistakes, no perspective whatsoever, flattened spatial guesses, naive symbol logic",
       creative_brief:
-        'Render any input as joyful amateur doodle: wobbling attempt lines, crayon overflow, lined paper, marker bleed, naive proportions, and zero concern for perspective. Avoid forcing houses, suns, flowers, limbs, or faces. The value is pure making before polish, not a fixed child-art subject.',
+        "Apply Silly Scribble Doodle as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Childlike notebook scribble, wonky circles, deliberately bad proportions, joyful incompetence, crayon-on-paper energy, Wobbly attempts, crayon overflow, simple symbols, eraser smudges, flat naive layout, Lined notebook paper grain, crayon wax buildup, marker bleeding through to reverse side without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-083',
     name: 'Uncanny Valley Caricature',
     category: '6. Caricature And Cartoon Styles',
-    negativePrompt: 'comfortable, natural, warm, wholesome, expressive, emotionally readable',
+    negativePrompt:
+      'comfortable, natural, warm, wholesome, expressive, emotionally readable, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Almost-real-but-wrong uncanny rendering, dead glossy surfaces, plastic smoothness, hyper-real detail on simplified structure, creepy animatronic energy, Polar-Express unease',
+        'Uncanny Valley Caricature acts as a transferable cinematic-media router: start from Almost-real-but-wrong uncanny rendering, dead glossy surfaces, plastic smoothness, hyper-real detail on simplified structure, creepy animatronic energy, Polar-Express unease, Glassy speculars, too-perfect symmetry, puppet articulation seams, waxy synthetic sheen and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Overly smooth vector contours, mathematically perfect curves that feel wrong, no organic variation',
+        'Transform any prompt subject through Overly smooth vector contours, mathematically perfect curves that feel wrong, no organic variation; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Uncanny peach, corpse-wax beige, mortician foundation, too-uniform blush, synthetic warmth',
+        'Build color with Uncanny peach, corpse-wax beige, mortician foundation, too-uniform blush, synthetic warmth; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat diffuse studio, shadowless void, CGI default lighting, no atmosphere',
+        'Handle light through Flat diffuse studio, shadowless void, CGI default lighting, no atmosphere; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Too-smooth plastic surface, vinyl doll finish, waxy silicone, mannequin gloss',
+        'Render Too-smooth plastic surface, vinyl doll finish, waxy silicone, mannequin gloss; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Proportions fractionally wrong, feature placement almost correct, threshold-scale misalignment',
+        'Structure the image through Proportions fractionally wrong, feature placement almost correct, threshold-scale misalignment; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Deeply unsettling, skin-crawling wrongness, silent discomfort, robotic emptiness',
+        'Keep the mood Deeply unsettling, skin-crawling wrongness, silent discomfort, robotic emptiness; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Hyper-clean vector rendering, unsettlingly perfect gradients, algorithmic smoothness, no human imperfection',
+        'Finish with Hyper-clean vector rendering, unsettlingly perfect gradients, algorithmic smoothness, no human imperfection; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Glassy speculars, too-perfect symmetry, puppet articulation seams, waxy synthetic sheen',
+        'Almost-real-but-wrong uncanny rendering, dead glossy surfaces, plastic smoothness, hyper-real detail on simplified structure, creepy animatronic energy, Polar-Express unease; Glassy speculars, too-perfect symmetry, puppet articulation seams, waxy synthetic sheen; Uncanny peach, corpse-wax beige, mortician foundation, too-uniform blush, synthetic warmth; Too-smooth plastic surface, vinyl doll finish, waxy silicone, mannequin gloss; Proportions fractionally wrong, feature placement almost correct, threshold-scale misalignment',
       creative_brief:
-        'Apply uncanny-valley rendering to any subject: surfaces become too smooth, proportions almost correct, gradients too perfect, and expression of material feels algorithmic rather than alive. Avoid requiring portraits, eyes, smiles, or human anatomy. The discomfort should come from near-real precision that misses organic truth.',
+        "Apply Uncanny Valley Caricature as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Almost-real-but-wrong uncanny rendering, dead glossy surfaces, plastic smoothness, hyper-real detail on simplified structure, creepy animatronic energy, Polar-Express unease, Glassy speculars, too-perfect symmetry, puppet articulation seams, waxy synthetic sheen, Too-smooth plastic surface, vinyl doll finish, waxy silicone, mannequin gloss without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-084',
     name: 'Political Satire Cartoon',
     category: '6. Caricature And Cartoon Styles',
-    negativePrompt: 'flattering, beautiful, respectful, dignified, subtle, elegant, polished',
+    negativePrompt:
+      'flattering, beautiful, respectful, dignified, subtle, elegant, polished, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty',
+        'Political Satire Cartoon acts as a transferable cinematic-media router: start from Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty, Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch',
+        'Transform any prompt subject through Aggressive crosshatching, heavy india ink, sharp vicious pen strokes, editorial deadline scratch; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Newsprint grey, bile green, angry red accents, tobacco-stain ochre, cheap pulp paper yellow',
+        'Build color with Newsprint grey, bile green, angry red accents, tobacco-stain ochre, cheap pulp paper yellow; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Harsh side-light carving shadows into exaggerated features, unflattering key',
+        'Handle light through Harsh side-light carving shadows into exaggerated features, unflattering key; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Coarse newsprint halftone, cheap ink bleeding into paper fibers, mechanical reproduction artifacts',
+        'Render Coarse newsprint halftone, cheap ink bleeding into paper fibers, mechanical reproduction artifacts; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Scale hierarchy, symbolic enlargement, compressed bodies or objects, editorial distortion',
-      atmosphere_and_mood: 'Biting, cynical, merciless observation, righteous mockery',
+        'Structure the image through Scale hierarchy, symbolic enlargement, compressed bodies or objects, editorial distortion; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Biting, cynical, merciless observation, righteous mockery; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Deadline-rush energy, quickfire ink, rapid-fire satire, next-day print quality, no time for refinement',
+        'Finish with Deadline-rush energy, quickfire ink, rapid-fire satire, next-day print quality, no time for refinement; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions',
+        'Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty; Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions; Newsprint grey, bile green, angry red accents, tobacco-stain ochre, cheap pulp paper yellow; Coarse newsprint halftone, cheap ink bleeding into paper fibers, mechanical reproduction artifacts; Scale hierarchy, symbolic enlargement, compressed bodies or objects, editorial distortion',
       creative_brief:
-        'Use editorial satire as graphic attack: heavy ink, aggressive crosshatching, cheap newsprint texture, symbolic enlargement, and merciless distortion of key traits. Avoid needing politicians, suits, fists, captions, or speech bubbles. Every line should argue through shape and pressure, not through readable text. Apply Political Satire Cartoon as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Political Satire Cartoon as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Exaggerated editorial satire cartoon, oversized symbolic emphasis, newspaper venom, cruel accuracy in feature selection, Daumier lithograph irreverence, Punch magazine cruelty, Symbolic distortion, crosshatched fury, newsprint halftone, venomous contour, no readable captions, Coarse newsprint halftone, cheap ink bleeding into paper fibers, mechanical reproduction artifacts without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-085',
     name: 'Liquid Melt Caricature',
     category: '6. Caricature And Cartoon Styles',
-    negativePrompt: 'sharp, clean, precise, solid, rigid, structured, geometric, hard edges',
+    negativePrompt:
+      'sharp, clean, precise, solid, rigid, structured, geometric, hard edges, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality losing integrity, psychedelic cartoon meltdown',
+        'Liquid Melt Caricature acts as a transferable cinematic-media router: start from Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality losing integrity, psychedelic cartoon meltdown, Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Sinking contour lines, drooping outlines, vertical stretch deformation, no anchoring bone structure',
+        'Transform any prompt subject through Sinking contour lines, drooping outlines, vertical stretch deformation, no anchoring bone structure; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Melting wax pastels, bruise-spectrum purples and yellows, jaundice-glow skin, ice-cream drip tones',
+        'Build color with Melting wax pastels, bruise-spectrum purples and yellows, jaundice-glow skin, ice-cream drip tones; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Shifting light sources, inconsistent shadow direction accenting the wrong places, disorienting illumination',
+        'Handle light through Shifting light sources, inconsistent shadow direction accenting the wrong places, disorienting illumination; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow',
+        'Render Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Entire form cascading downward, parts migrating off-register, pooled mass, temporal distortion',
-      atmosphere_and_mood: 'Disorienting, hypnotic, deeply weird, mescaline cartoon',
+        'Structure the image through Entire form cascading downward, parts migrating off-register, pooled mass, temporal distortion; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Disorienting, hypnotic, deeply weird, mescaline cartoon; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Psychedelic cartoon surrealism, liquid-reality rendering, Max Fleischer nightmare, experimental animation aesthetic',
+        'Finish with Psychedelic cartoon surrealism, liquid-reality rendering, Max Fleischer nightmare, experimental animation aesthetic; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour',
+        'Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality losing integrity, psychedelic cartoon meltdown; Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour; Melting wax pastels, bruise-spectrum purples and yellows, jaundice-glow skin, ice-cream drip tones; Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow; Entire form cascading downward, parts migrating off-register, pooled mass, temporal distortion',
       creative_brief:
-        'Use liquid-melt caricature as form collapse: outlines droop, surfaces behave like wax, vertical drips stretch structure, and stable geometry becomes a slow-motion cascade. Avoid requiring faces, eyes, noses, bodies, or anatomy. The subject should look like reality is losing viscosity. Apply Liquid Melt Caricature as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Liquid Melt Caricature as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Features melting like hot wax, Salvador Dali meets Tex Avery, fever-dream structural collapse, reality losing integrity, psychedelic cartoon meltdown, Vertical drip lines, pooled forms, runny edges, wax-clock deformation, liquid contour, Molten wax surface, glossy drip trails, taffy stretch, viscoelastic surface flow without requiring the card image's original subject.",
     },
   },
   {
@@ -146,27 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ugly-Cute Creature',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished',
+      'beautiful, handsome, elegant, proportional, realistic anatomy, symmetrical, polished, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor',
+        'Ugly-Cute organism designs acts as a transferable cinematic-media router: start from Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor, Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes',
+        'Transform any prompt subject through Chunky uneven outlines, bulbous swelling curves, random spikes and bumps, happy accident shapes; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights',
+        'Build color with Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow under belly folds',
+        'Handle light through Soft forgiving glow, gentle rim light to emphasize lumpiness, cozy shadow under belly folds; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches',
+        'Render Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Mismatched feature scale, uneven proportions, oversized mass, asymmetric appendage logic',
-      atmosphere_and_mood: 'Affectionate disgust, heartwarming grotesquerie, lovable wrongness',
+        'Structure the image through Mismatched feature scale, uneven proportions, oversized mass, asymmetric appendage logic; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Affectionate disgust, heartwarming grotesquerie, lovable wrongness; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm',
+        'Finish with Lovingly ugly, carefully careless, trash-goblin preciousness, toy-line reject charm; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow',
+        'Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor; Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow; Sickly-sweet candy colors, mold-green with pink blush, bruise-purple fur, mucus-yellow highlights; Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches; Mismatched feature scale, uneven proportions, oversized mass, asymmetric appendage logic',
       creative_brief:
-        'Make any subject ugly-cute through lumpy asymmetry, mismatched scale, awkward silhouette, candy-sick color, and forgiving soft glow. Avoid requiring monsters, eyes, teeth, hair, animals, or bodies. Charm should come from deliberate wrongness made affectionate.',
+        "Apply Ugly-Cute organism designs as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Deformed yet adorable ugly-cute design, lumpy asymmetry, mismatched scale, so-ugly-it-is-precious charm, Ghibli soot-sprite meets Ren & Stimpy as style anchor, Mismatched scale, lumpy silhouette, awkward charm, candy-sick palette, forgiving glow, Bumpy surface, lumpy wool texture, crusty dried-mud finish, scab-like patches without requiring the card image's original subject.",
     },
   },
   {
@@ -174,27 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rubber-Hose Insanity',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'realistic, anatomical, straight lines, stiff, rigid, normal proportions, restraint, subtle movement',
+      'realistic, anatomical, straight lines, stiff, rigid, normal proportions, restraint, subtle movement, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        '1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode',
+        'Rubber-Hose Insanity acts as a transferable cinematic-media router: start from 1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode, Rubber-hose curves, no-joint elasticity, pie-cut graphic accents, accordion compression, impact smears and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation extremes',
+        'Transform any prompt subject through Noodle-thin bouncing outlines, squash-and-stretch taken beyond breaking point, elastic deformation extremes; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Vintage cel paint, off-registration cyan bleed, nicotine-stain sepia, fading technicolor, ink-smear black',
+        'Build color with Vintage cel paint, off-registration cyan bleed, nicotine-stain sepia, fading technicolor, ink-smear black; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Nonexistent lighting logic, flat cel shading, occasional shadow blob where foot touches ground',
+        'Handle light through Nonexistent lighting logic, flat cel shading, occasional shadow blob where foot touches ground; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        '16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker',
+        'Render 16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Forms knotting like elastic tubes, torso-like mass compression, infinite stretch, detached motion accents',
-      atmosphere_and_mood: 'Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed',
+        'Structure the image through Forms knotting like elastic tubes, torso-like mass compression, infinite stretch, detached motion accents; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Frenzied, hysterical, pure kinetic madness, cartoon physics unleashed; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward',
+        'Finish with Vintage rubber-hose chaos, golden-age bounciness amplified tenfold, classic cartoon on fast-forward; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Rubber-hose curves, no-joint elasticity, pie-cut graphic accents, accordion compression, impact smears',
+        '1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode; Rubber-hose curves, no-joint elasticity, pie-cut graphic accents, accordion compression, impact smears; Vintage cel paint, off-registration cyan bleed, nicotine-stain sepia, fading technicolor, ink-smear black; 16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker; Forms knotting like elastic tubes, torso-like mass compression, infinite stretch, detached motion accents',
       creative_brief:
-        'Turn any subject into manic rubber-hose kinetics: no-joint elastic curves, accordion compression, impact smears, pie-cut graphic accents, and fast old-reel flicker. Avoid requiring limbs, pupils, bodies, or object-head gags. Physics should feel revoked through motion language and deformation.',
+        "Apply Rubber-Hose Insanity as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 1930s rubber-hose cartoon pushed to mania, spaghetti-like curves, accordion compression, pure kinetic anarchy, Fleischer on amphetamines, Cuphead nightmare mode, Rubber-hose curves, no-joint elasticity, pie-cut graphic accents, accordion compression, impact smears, 16mm film grain, cel paint brush strokes visible, dust-scratched negative, old-reel flicker without requiring the card image's original subject.",
     },
   },
   {
@@ -202,84 +211,86 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crude Crayon Monster',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, smooth, polished, professional, proportional, realistic, refined, clean, adult',
+      'digital, smooth, polished, professional, proportional, realistic, refined, clean, adult, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror',
+        'Crude Crayon scale-threat designs acts as a transferable cinematic-media router: start from Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror, Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy',
+        'Transform any prompt subject through Heavy greasy crayon pressure, wax-clogged paper grain, multiple angry coloring attempts, drawing-off-the-page energy; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon clash',
+        'Build color with Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon clash; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Expressionist color field with aggressive coloring regardless of light logic, pure expression over representation',
+        'Handle light through Expressionist color field with aggressive coloring regardless of light logic, pure expression over representation; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension',
+        'Render Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Wrong scale, mismatched parts, impossible attachment points, no perspective',
+        'Structure the image through Wrong scale, mismatched parts, impossible attachment points, no perspective; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong',
+        'Keep the mood Wild, unfiltered, pure-id creativity, beautifully terrible, wonderfully wrong; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul',
+        'Finish with First-grade art class, refrigerator-door masterpiece, pure unfiltered expression, zero technique maximum soul; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps',
+        'Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror; Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps; Broken crayon colors, orange-purple-green chaos, heavy-handed single-pass coloring, mixed-brand crayon clash; Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension; Wrong scale, mismatched parts, impossible attachment points, no perspective',
       creative_brief:
-        'Render the input as crude crayon fear: heavy wax pressure, jagged triangle symbols, uneven circles, construction-paper tooth, uncolored gaps, and no perspective. Avoid requiring monsters, teeth, eyes, fur, claws, or bodies. The style should feel like pure childhood nightmare logic applied to any subject.',
+        "Apply Crude Crayon scale-threat designs as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Crude childhood nightmare-art, jagged triangle symbols, uneven circles, chaotic crayon scribbles, kindergarten fridge-gallery horror, Jagged triangle marks, uneven circles, scribble texture, construction-paper tooth, uncolored gaps, Construction-paper tooth, crayon wax smears, graphite pencil underdrawing, ripped-paper tension without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-089',
     name: 'Grotesque Meat Puppet',
     category: '6. Caricature And Cartoon Styles',
-    negativePrompt: 'smooth, clean, cute, soft, simple, minimal, pleasant, innocent, gentle',
+    negativePrompt:
+      'smooth, clean, cute, soft, simple, minimal, pleasant, innocent, gentle, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette',
+        'Grotesque Meat Puppet acts as a transferable cinematic-media router: start from Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette, Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Hyper-detailed anatomical horror on cartoon proportions, sinew-like strands, meat-fiber linework',
+        'Transform any prompt subject through Hyper-detailed anatomical horror on cartoon proportions, sinew-like strands, meat-fiber linework; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink',
+        'Build color with Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Clinical overhead, wet glistening surfaces catching light, meat-locker fluorescence',
+        'Handle light through Clinical overhead, wet glistening surfaces catching light, meat-locker fluorescence; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail',
+        'Render Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet proportions',
+        'Structure the image through Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet proportions; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        "Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling",
+        "Keep the mood Nauseating, fascinating revulsion, can't-look-away horror, deeply wrong yet compelling; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.",
       rendering_and_quality:
-        'Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel',
+        'Finish with Visceral gross-out cartoon, anatomically-detailed horror comedy, MeatCanyon-style grotesque, nightmare fuel; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color',
+        'Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette; Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color; Raw meat red, exposed tendon white, vein-blue, jaundice yellow, pus-green, fresh-bruise purple, surgical pink; Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail; Opened structure beyond physical limits, bulging forms, visible interior scaffold, flesh-puppet proportions',
       creative_brief:
-        'Apply grotesque meat-puppet rendering to any subject: cartoon proportions collide with exposed inner textures, wet fiber detail, translucent wrapping, stretch tension, and surgical fluorescence. Avoid requiring bodies, teeth, eyes, ribs, or anatomy as subject matter. The horror should come from interior material made visible.',
+        "Apply Grotesque Meat Puppet as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Body-horror cartoon texture system, exposed inner-material logic, translucent flesh-like wrapping, MeatCanyon aesthetic, Cronenberg-meets-SpongeBob, visceral wrongness with cartoon color palette, Interior texture exposure, meat-fiber rendering, translucent wrapping, stretch tension lines, surgical cartoon color, Wet muscle fiber, stretched translucent skin, exposed cartilage gleam, dental-enamel hyper-detail without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP02-090',
     name: 'Spiky Edgy Attitude Cartoon',
     category: '6. Caricature And Cartoon Styles',
-    negativePrompt: 'soft, gentle, calm, rounded, cute, peaceful, subtle, quiet, reserved, polite',
+    negativePrompt:
+      'soft, gentle, calm, rounded, cute, peaceful, subtle, quiet, reserved, polite, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy',
+        'Spiky Edgy Attitude Cartoon acts as a transferable cinematic-media router: start from Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy, Triangular everything, blade contours, jagged graphic bursts, crosshatched shadows, no curves allowed and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Razor-sharp angular contours, triangular composition everywhere, jagged motion lines, aggressive hatch shading',
+        'Transform any prompt subject through Razor-sharp angular contours, triangular composition everywhere, jagged motion lines, aggressive hatch shading; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed, high-contrast edgelord spectrum',
+        'Build color with Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed, high-contrast edgelord spectrum; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Harsh under-lighting for menace, sharp cast shadows, rim light on angular edges, dramatic noir contrast',
+        'Handle light through Harsh under-lighting for menace, sharp cast shadows, rim light on angular edges, dramatic noir contrast; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture',
+        'Render Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Forms as walking collections of triangles, impossible razor fans, narrowing needle-point extensions',
+        'Structure the image through Forms as walking collections of triangles, impossible razor fans, narrowing needle-point extensions; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage',
+        'Keep the mood Angry, rebellious, anti-establishment sneer, teenage wasteland cool, too-much-energy rage; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto',
+        'Finish with Edgy underground comic, Hot Topic t-shirt art, deliberately aggressive rendering, anti-cute manifesto; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Triangular everything, blade contours, jagged graphic bursts, crosshatched shadows, no curves allowed',
+        'Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy; Triangular everything, blade contours, jagged graphic bursts, crosshatched shadows, no curves allowed; Black-heavy palette, blood red, acid green, toxic waste yellow, bruised purple, no soft colors allowed, high-contrast edgelord spectrum; Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture; Forms as walking collections of triangles, impossible razor fans, narrowing needle-point extensions',
       creative_brief:
-        'Make any subject aggressively angular: contours resolve into points, silhouettes become blade-like, hatch shadows bite into form, and the palette stays black-heavy with toxic accents. Avoid requiring characters, faces, hair, speech bubbles, or teen-scene props. Sharpness itself should be the attitude.',
+        "Apply Spiky Edgy Attitude Cartoon as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Aggressively angular design, sharp triangles and jagged edges, heavy black outlines with zero soft curves, Hot Topic aesthetic, 2000s edgy cartoon network, Invader Zim angularity, JTHM spiky nihilism, skate-punk scribble energy, Triangular everything, blade contours, jagged graphic bursts, crosshatched shadows, no curves allowed, Scratchy ink pen strokes, marker bleed on cheap paper, distressed photocopy grain, DIY zine texture without requiring the card image's original subject.",
     },
   },
   {
@@ -287,28 +298,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kindergarten Family Portrait',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'realistic, proportional, accurate, skilled, professional, 3d, photo, correct anatomy, adult art',
+      'realistic, proportional, accurate, skilled, professional, 3d, photo, correct anatomy, adult art, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary',
+        'Kindergarten Family Portrait acts as a transferable cinematic-media router: start from Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary, Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness',
+        'Transform any prompt subject through Heavy crayon pressure, uncertain wobbly circles, coloring-outside-the-lines chaos, multiple-passes-over-same-spot, fat-finger grip thickness; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink triangle, house-brown square, each color used straight from box',
+        'Build color with Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink triangle, house-brown square, each color used straight from box; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'No lighting logic whatsoever, sun drawn in corner regardless of shadow, flat-fill coloring, equal-brightness everything',
+        'Handle light through No lighting logic whatsoever, sun drawn in corner regardless of shadow, flat-fill coloring, equal-brightness everything; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon texture clash',
+        'Render Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon texture clash; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Ground-line at page bottom, sky-stripe at page top, scale hierarchy by importance, oversized simple symbols',
+        'Structure the image through Ground-line at page bottom, sky-stripe at page top, scale hierarchy by importance, oversized simple symbols; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence',
+        'Keep the mood Pure innocence, unconditional love, proud-artist joy, childhood-wonder, mom-will-love-this confidence; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation, zero-technique-maximum-soul',
+        'Finish with Kindergarten art-class aesthetic, refrigerator-gallery masterpiece, pure-joy creation, zero-technique-maximum-soul; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe',
+        'Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary; Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe; Sun-yellow, sky-blue stripe, grass-green stripe, skin-peach crayon, dress-pink triangle, house-brown square, each color used straight from box; Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon texture clash; Ground-line at page bottom, sky-stripe at page top, scale hierarchy by importance, oversized simple symbols',
       creative_brief:
-        'Convert any prompt into kindergarten drawing vocabulary: heavy crayon pressure, simple symbolic geometry, importance-based scale, sky and ground stripes, and confident mistakes. Avoid forcing family members, houses, flowers, or people. The style should feel proudly naive and refrigerator-gallery sincere.',
+        "Apply Kindergarten Family Portrait as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Five-year-old drawing logic, stick-symbol construction, giant corner-symbol scale, square-triangle geometry, lollipop-circle marks, ground stripe and sky stripe, pure childhood-art vocabulary, Corner symbol with rays, stick-symbol forms, square-triangle geometry, lollipop marks, ground-line-sky-stripe, Construction-paper tooth, crayon-wax buildup clumps, too-hard-pressing paper indentations, mixed-brand crayon texture clash without requiring the card image's original subject.",
     },
   },
   {
@@ -316,28 +327,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Newspaper Sunday Funnies',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Classic newspaper comic strip, dotted-color Ben-Day printing, simple repeating backgrounds with minimal variation, gag-a-day rhythm, Garfield/Calvin/Peanuts as style anchors, cheap-newsprint-ink smell almost visible',
+        'Newspaper Sunday Funnies acts as a transferable cinematic-media router: start from Classic newspaper comic strip, dotted-color Ben-Day printing, simple repeating depth field with minimal variation, gag-a-day rhythm, Garfield/Calvin/Peanuts as style anchors, cheap-newsprint-ink smell almost visible, Panel grid, Ben-Day dot coloring, blank balloon shapes, repeating depth field, consistent model logic, newsprint paper tone and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Simple clean ink outlines, consistent character-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks',
+        'Transform any prompt subject through Simple clean ink outlines, consistent designed subjects-model sheets, minimal-detail efficiency, speed-line motion indicators, sweat-drop emotion marks; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe',
+        'Build color with CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat lighting, occasional shadow-blob under character, no atmosphere or mood lighting, readability-first flatness',
+        'Handle light through Flat lighting, occasional shadow-blob under designed subjects, no atmosphere or mood lighting, readability-first flatness; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness',
+        'Render Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Panel-grid division, balloon-like negative space, repeating simplified background, model-sheet consistency',
+        'Structure the image through Panel-grid division, balloon-like negative space, recurring simplified setting shapes, model-sheet consistency; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Cozy, familiar, breakfast-table comfort, gentle-humor warmth, daily-ritual companionship',
+        'Keep the mood Cozy, familiar, breakfast-table comfort, gentle-humor warmth, daily-ritual companionship; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth',
+        'Finish with Sunday-funnies aesthetic, newspaper-comic charm, four-panel-gag perfection, syndicated-strip warmth; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Panel grid, Ben-Day dot coloring, blank balloon shapes, repeating backgrounds, consistent model logic, newsprint paper tone',
+        'Classic newspaper comic strip, dotted-color Ben-Day printing, simple repeating depth field with minimal variation, gag-a-day rhythm, Garfield/Calvin/Peanuts as style anchors, cheap-newsprint-ink smell almost visible; Panel grid, Ben-Day dot coloring, blank balloon shapes, repeating depth field, consistent model logic, newsprint paper tone; CMYK-dot color printing, limited four-color palette, newsprint off-white, ink-smudge grey, registration-error cyan fringe; Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness; Panel-grid division, balloon-like negative space, recurring simplified setting shapes, model-sheet consistency',
       creative_brief:
-        'Apply Sunday-funnies print grammar to any input: panel rhythm, simple ink outlines, Ben-Day dots, newsprint tooth, off-register CMYK, and readable gag composition without actual readable text. Avoid forcing recurring characters or fixed four-panel narrative. The style should feel syndicated, disposable, and familiar.',
+        "Apply Newspaper Sunday Funnies as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Classic newspaper comic strip, dotted-color Ben-Day printing, simple repeating depth field with minimal variation, gag-a-day rhythm, Garfield/Calvin/Peanuts as style anchors, cheap-newsprint-ink smell almost visible, Panel grid, Ben-Day dot coloring, blank balloon shapes, repeating depth field, consistent model logic, newsprint paper tone, Newsprint paper tooth, halftone-dot color pattern, ink-bleed into fibers, off-registration misalignment, pulp-paper cheapness without requiring the card image's original subject.",
     },
   },
   {
@@ -345,28 +356,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rejected Corporate Mascot',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'professional, friendly, appealing, trustworthy, polished, market-tested, focus-grouped, appropriate, wholesome',
+      'professional, friendly, appealing, trustworthy, polished, market-tested, focus-grouped, appropriate, wholesome, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as threat',
+        'Rejected Corporate Mascot acts as a transferable cinematic-media router: start from Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as threat, Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to uncanny extreme',
+        'Transform any prompt subject through Too-smooth vector contours, mathematically-perfect symmetry that feels wrong, clip-art simplicity taken to uncanny extreme; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Corporate-primary blue and red, too-bright yellow, sterile white, uncanny-skin peach, glossy-plastic green',
+        'Build color with Corporate-primary blue and red, too-bright yellow, sterile white, uncanny-skin peach, glossy-plastic green; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Product-photography studio, perfect shadowless lighting, hyperreal gloss on dead eyes, no atmosphere',
+        'Handle light through Product-photography studio, perfect shadowless lighting, hyperreal gloss on dead eyes, no atmosphere; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness',
+        'Render Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Overscaled friendly proportions, frozen approval pose, visible seam logic',
+        'Structure the image through Overscaled friendly proportions, frozen approval pose, visible seam logic; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence, focus-group-rejection',
+        'Keep the mood Deeply wrong, corporate-horror, abandoned-by-marketing sadness, unsettling-brand-silence, focus-group-rejection; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror, marketing-department-mistake',
+        'Finish with Rejected-corporate-mascot aesthetic, clip-art-through-nightmare, uncanny-branding-horror, marketing-department-mistake; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy',
+        'Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as threat; Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy; Corporate-primary blue and red, too-bright yellow, sterile white, uncanny-skin peach, glossy-plastic green; Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness; Overscaled friendly proportions, frozen approval pose, visible seam logic',
       creative_brief:
-        'Apply rejected-mascot unease to any subject: over-friendly shapes, too-perfect vector symmetry, glossy plastic surfaces, costume seam hints, and engineered cheer that reads as threat. Avoid requiring specific brands, eyes, smiles, thumbs-up poses, or mascot bodies. The horror should come from inappropriate marketing polish.',
+        "Apply Rejected Corporate Mascot as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Corporate mascot that should never have been approved, dead-soulless brand cheer, unsettling hybridization, clip-art-from-hell energy, focus-group menace, unblinking happiness that registers as threat, Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy, Glossy plastic-vector surface, costume-foam texture, cheap-fleece fabric, hollow brand emptiness without requiring the card image's original subject.",
     },
   },
   {
@@ -374,28 +385,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Flipbook Rough Animation',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'finished, polished, clean, rendered, smooth, digital, final, single frame, static, tight, tweened',
+      'finished, polished, clean, rendered, smooth, digital, final, single frame, static, tight, tweened, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Rough-animation flipbook page, sequential gesture frames showing motion arc, onion-skin ghosts of previous and next poses, timing-chart marks, animation-desk peg-bar holes, rough breakdown between keyframes, Glen Keane rough-animation philosophy, line-boiling texture from hand-drawn frame-by-frame',
+        'Flipbook Rough Animation acts as a transferable cinematic-media router: start from Rough-animation flipbook page, sequential gesture frames showing motion arc, onion-skin ghosts of previous and next poses, timing-chart marks, animation-desk peg-bar holes, rough breakdown between keyframes, Glen Keane rough-animation philosophy, line-boiling texture from hand-drawn frame-by-frame, Sequential drawing progression, animation arc lines, timing-chart marks, onion-skin ghost overlays, peg-bar holes, blue-pencil construction, rough boiling line texture and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Rapid-fire gesture lines, motion-arc construction curves, timing-chart-hash-marks, multiple-search-lines-per-frame, onion-skin-transparency-implied overlapping',
+        'Transform any prompt subject through Rapid-fire gesture lines, motion-arc construction curves, timing-chart-hash-marks, multiple-search-lines-per-frame, onion-skin-transparency-implied overlapping; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Animation-paper blue-line underdrawing, graphite-pencil grey, Col-Erase blue, red-pencil breakdown lines, paper-buff background',
+        'Build color with Animation-paper blue-line underdrawing, graphite-pencil grey, Col-Erase blue, red-pencil breakdown lines, paper-buff depth field; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Animation-desk backlight transmitting through paper layers, peg-bar registration shadow, no rendered lighting',
+        'Handle light through Animation-desk backlight transmitting through paper layers, peg-bar registration shadow, no rendered lighting; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Animation-paper tooth, graphite-smudge buildup across frames, eraser-crumb dust, peg-bar-hole wear, paper-edge-dog-ear from flipping',
+        'Render Animation-paper tooth, graphite-smudge buildup across frames, eraser-crumb dust, peg-bar-hole wear, paper-edge-dog-ear from flipping; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Sequential-frame-progression-across-page, motion-arc-ghost-overlays, onion-skin-transparency-depth, timing-chart-margin-notes',
+        'Structure the image through Sequential-frame-progression-across-page, motion-arc-ghost-overlays, onion-skin-transparency-depth, timing-chart-margin-notes, scale rhythm, frame hierarchy, lens distance, and composition rules specific to Flipbook Rough Animation; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        "Creative-process intimacy, animation-desk focus, pure-motion-observation, pre-digital-handcraft, animator's-private-study",
+        "Keep the mood Creative-process intimacy, animation-desk focus, pure-motion-observation, pre-digital-handcraft, animator's-private-study; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.",
       rendering_and_quality:
-        'Flipbook-rough-animation aesthetic, motion-study-beauty, hand-drawn-frame energy, pre-cleanup-animation soul',
+        'Finish with Flipbook-rough-animation aesthetic, motion-study-beauty, hand-drawn-frame energy, pre-cleanup-animation soul; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Sequential drawing progression, animation arc lines, timing-chart marks, onion-skin ghost overlays, peg-bar holes, blue-pencil construction, rough boiling line texture',
+        'Rough-animation flipbook page, sequential gesture frames showing motion arc, onion-skin ghosts of previous and next poses, timing-chart marks, animation-desk peg-bar holes, rough breakdown between keyframes, Glen Keane rough-animation philosophy, line-boiling texture from hand-drawn frame-by-frame; Sequential drawing progression, animation arc lines, timing-chart marks, onion-skin ghost overlays, peg-bar holes, blue-pencil construction, rough boiling line texture; Animation-paper blue-line underdrawing, graphite-pencil grey, Col-Erase blue, red-pencil breakdown lines, paper-buff depth field; Animation-paper tooth, graphite-smudge buildup across frames, eraser-crumb dust, peg-bar-hole wear, paper-edge-dog-ear from flipping; Sequential-frame-progression-across-page, motion-arc-ghost-overlays, onion-skin-transparency-depth, timing-chart-margin-notes, scale rhythm, frame hierarchy, lens distance, and composition rules specific to Flipbook Rough Animation',
       creative_brief:
-        'Translate any prompt into rough flipbook animation study: sequential marks, onion-skin ghosts, blue construction lines, graphite corrections, peg-bar holes, and visible motion arcs. Avoid stick-figure jumps, readable frame numbers, or final cleaned animation. The image should expose animation thinking before cleanup.',
+        "Apply Flipbook Rough Animation as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Rough-animation flipbook page, sequential gesture frames showing motion arc, onion-skin ghosts of previous and next poses, timing-chart marks, animation-desk peg-bar holes, rough breakdown between keyframes, Glen Keane rough-animation philosophy, line-boiling texture from hand-drawn frame-by-frame, Sequential drawing progression, animation arc lines, timing-chart marks, onion-skin ghost overlays, peg-bar holes, blue-pencil construction, rough boiling line texture, Animation-paper tooth, graphite-smudge buildup across frames, eraser-crumb dust, peg-bar-hole wear, paper-edge-dog-ear from flipping without requiring the card image's original subject.",
     },
   },
   {
@@ -403,27 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ren & Stimpy - Veiny Close-Up Grossout',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained, pretty',
+      'subtle, flattering, glamorous, cute, realistic anatomy, smooth skin, elegant, restrained, pretty, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy',
+        'Ren & Stimpy - Veiny Close-Up Grossout acts as a transferable cinematic-media router: start from Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy, Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging',
+        'Transform any prompt subject through Wobbling brush contours, vibrating line weight, swollen micro-detail lines, irregular fleshy edging; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin',
+        'Build color with Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Harsh proximity lighting, bright wet sheen, overexposed glare, ugly reaction-frame illumination',
+        'Handle light through Harsh proximity lighting, bright wet sheen, overexposed glare, ugly reaction-frame illumination; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture',
+        'Render Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure',
-      atmosphere_and_mood: 'Disgusted, frantic, hilarious, deeply unflattering',
+        'Structure the image through Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Disgusted, frantic, hilarious, deeply unflattering; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on purpose',
+        'Finish with Close-up grossout cartoon perfection, painful facial detail, freeze-frame reaction absurdity, ugly on purpose; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings',
+        'Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy; Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings; Inflamed flesh pinks, nicotine yellow, clammy teal shadows, rash-red irritation, greasy beige skin; Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture; Subject crushing into lens space, bulging surface masses, swollen forward projection, off-axis pressure',
       creative_brief:
-        'Use gross-up close-up language on any subject: invasive framing, pore-level detail, wet sheen, swollen folds, wobbling contours, and painterly revulsion. Avoid requiring faces, gums, lips, noses, or anatomy. Comedy should come from excessive proximity and unflattering texture.',
+        "Apply Ren & Stimpy - Veiny Close-Up Grossout as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Hyper-detailed gross close-up reaction frame, wet swollen surfaces, oversized pores, painterly grossout timing, John Kricfalusi close-up cruelty, feverish cartoon texture, freeze-frame revulsion played for comedy, Extreme close-up distortion, swollen detail, pore-level texture, trembling folds, wet cartoon strings, Pore-heavy surface, cracked folds, greasy shine, dried-gloss streaks, wobbling paint texture without requiring the card image's original subject.",
     },
   },
   {
@@ -431,27 +443,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Smiling Friends - Flat Weird Dayjob Chaos',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'epic, slick, cinematic, beautiful, painterly, photorealistic, cute mascot polish, superhero rendering',
+      'epic, slick, cinematic, beautiful, painterly, photorealistic, cute mascot polish, superhero rendering, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity',
+        'Smiling Friends - Flat Weird Dayjob Chaos acts as a transferable cinematic-media router: start from Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity, Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents',
+        'Transform any prompt subject through Thin simple contour lines, deliberately plain shape language, occasional scribbly panic accents; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan',
+        'Build color with Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill',
+        'Handle light through Flat no-drama lighting, fluorescent office wash, occasional dingy hallway glow, unheroic ambient fill; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art',
+        'Render Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines',
-      atmosphere_and_mood: 'Awkward, deadpan, bizarre, mildly cursed',
+        'Structure the image through Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Awkward, deadpan, bizarre, mildly cursed; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish',
+        'Finish with Lo-fi weird-comedy cartoon, clean enough to read, ugly enough to feel wrong, internet-age anti-polish; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness',
+        'Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity; Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness; Flat sour pastels, nicotine yellow, dusty salmon, office beige, washed-out green, cheap digital cyan; Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art; Stubby proportions, tiny massing, off-model expression logic, abrupt perspective jumps for punchlines',
       creative_brief:
-        'Apply flat weird-comedy design to any prompt: sour pastels, simple contours, mundane staging, anti-climactic composition, and awkward pauses made visible. Avoid required offices, workplaces, side characters, or specific props. The style should feel funny because it refuses spectacle.',
+        "Apply Smiling Friends - Flat Weird Dayjob Chaos as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Flat weird dayjob cartoon, awkward simplified forms, anti-climactic absurdity, smiling-through-existential-panic energy, low-stakes apocalypse humor, deadpan mundane nonsense, adult-swim anti-spectacle simplicity, Simple oddball silhouettes, blank pauses, mundane prop logic, anti-climactic framing, uncomfortable stillness, Simple digital fills, lightly dirty edges, cheap surface texture, flat wall-like color, low-fuss line art without requiring the card image's original subject.",
     },
   },
   {
@@ -459,27 +472,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Aaahh!!! Real Monsters - Sewer Kid Grotesque',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        '90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids',
+        'Aaahh!!! Real scale-threat designs - Sewer Kid Grotesque acts as a transferable cinematic-media router: start from 90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids, Asymmetric lumps, grime, rubbery accents, weird feature placement, urban sludge detail and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Chunky lopsided outlines, uneven monster curves, jittery slime accents, crude expressive contour',
+        'Transform any prompt subject through Chunky lopsided outlines, uneven scale-threat designs curves, jittery slime accents, crude expressive contour; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow',
+        'Build color with Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Grate-like shafts, dank green underlight, junkyard reflected glare, moist shadow pockets',
+        'Handle light through Grate-like shafts, dank green underlight, junkyard reflected glare, moist shadow pockets; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine',
+        'Render Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry',
-      atmosphere_and_mood: 'Rowdy, gross, mischievous, lovable',
+        'Structure the image through Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Rowdy, gross, mischievous, lovable, mood carried by Aaahh!!! Real scale-threat designs - Sewer Kid Grotesque media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        '90s gross-kids-cartoon texture, tactile ugliness, lumpy creature-school charm, sewer-funk fidelity',
+        'Finish with 90s gross-kids-cartoon texture, tactile ugliness, lumpy organism designs-school charm, sewer-funk fidelity; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Asymmetric lumps, grime, rubbery accents, weird feature placement, urban sludge detail',
+        '90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids; Asymmetric lumps, grime, rubbery accents, weird feature placement, urban sludge detail; Slime green, bruise purple, rust orange, toxic pink, sewer-water teal, moldy yellow; Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine; Mismatched extensions, stacked feature logic, torso-like blobs, lumpy asymmetry',
       creative_brief:
-        'Use 90s gross-kids cartoon logic on any input: lumpy asymmetry, slime greens, junk textures, pitted surfaces, grate-light, and playful ugliness. Avoid monster-school scenes, sewer locations, claws, eyes, or bodies as requirements. Charm should come from gross texture and rebellious shape.',
+        "Apply Aaahh!!! Real scale-threat designs - Sewer Kid Grotesque as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through 90s Nickelodeon grossness, weird stalk-like accents, grime, sewer-slime palette, childlike rebellion, junkyard textures, lumpy asymmetry, playful ugly-cute horror for kids, Asymmetric lumps, grime, rubbery accents, weird feature placement, urban sludge detail, Sludge, pitted surface, peeling grime, scuff dirt, wet brick-like texture, trash-bag shine without requiring the card image's original subject.",
     },
   },
   {
@@ -487,27 +501,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rugrats - Toddler Crayon Panic',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft interiors, nervous hand-drawn innocence, toy-scale heroism',
+        'Rugrats - Toddler Crayon Panic acts as a transferable cinematic-media router: start from Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft interiors, nervous hand-drawn innocence, toy-scale heroism, Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Chunky uneven outlines, nervous hand-drawn curves, simplified object silhouettes, soft wobble marks',
+        'Transform any prompt subject through Chunky uneven outlines, nervous hand-drawn curves, simplified object silhouettes, soft wobble marks; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Soft 90s TV pastels, warm carpet beige, toy-box primaries, nursery blue, faded marker color',
+        'Build color with Soft 90s TV pastels, warm carpet beige, toy-box primaries, nursery blue, faded marker color; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat TV lighting, soft low-angle fill, no rendered drama, readability-first brightness',
+        'Handle light through Flat TV lighting, soft low-angle fill, no rendered drama, readability-first brightness; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'TV cel softness, dry marker edge, paper-like fill, softened scan texture',
+        'Render TV cel softness, dry marker edge, paper-like fill, softened scan texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Low-eye-height scale, oversized ordinary forms, softened perspective, rounded clutter geometry',
-      atmosphere_and_mood: 'Curious, rambunctious, innocent, chaotic',
+        'Structure the image through Low-eye-height scale, oversized ordinary forms, softened perspective, rounded clutter geometry; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Curious, rambunctious, innocent, chaotic, mood carried by Rugrats - Toddler Crayon Panic media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        '90s hand-drawn TV softness, low-angle everyday epic, gently wobbly animation',
+        'Finish with 90s hand-drawn TV softness, low-angle everyday epic, gently wobbly animation; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color',
+        'Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft interiors, nervous hand-drawn innocence, toy-scale heroism; Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color; Soft 90s TV pastels, warm carpet beige, toy-box primaries, nursery blue, faded marker color; TV cel softness, dry marker edge, paper-like fill, softened scan texture; Low-eye-height scale, oversized ordinary forms, softened perspective, rounded clutter geometry',
       creative_brief:
-        'Apply toddler-scale perception without forcing toddlers: low viewpoint, oversized ordinary forms, chunky outlines, soft 90s pastel color, and harmless things staged as epic obstacles. Avoid diapers, homes, toys, children, or specific props as requirements. The style should make scale feel emotionally huge. Apply Rugrats - Toddler Crayon Panic as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Rugrats - Toddler Crayon Panic as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Low-to-ground wobbly adventure, chunky simplified scale, everyday danger made epic, scribbly soft interiors, nervous hand-drawn innocence, toy-scale heroism, Low-scale perspective, chunky outlines, oversized ordinary forms, crayon-ish uncertainty, soft domestic color, TV cel softness, dry marker edge, paper-like fill, softened scan texture without requiring the card image's original subject.",
     },
   },
   {
@@ -515,27 +530,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ed, Edd n Eddy - Jawbreaker Scam Cartoon',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos',
+        'Ed, Edd n Eddy - Jawbreaker Scam Cartoon acts as a transferable cinematic-media router: start from Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos, Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble',
+        'Transform any prompt subject through Wobbly vibrating outlines, stretched smear frames, erratic contour boil, high-energy cartoon scribble; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey',
+        'Build color with Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat hot daylight, heat-haze color pressure, readability-first cartoon illumination',
+        'Handle light through Flat hot daylight, heat-haze color pressure, readability-first cartoon illumination; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil',
+        'Render Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse',
-      atmosphere_and_mood: 'Hyper, sweaty, scammy, loud',
+        'Structure the image through Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Hyper, sweaty, scammy, loud, mood carried by Ed, Edd n Eddy - Jawbreaker Scam Cartoon media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick',
+        'Finish with Boiling-line TV cartoon, adolescent scam energy, loud pre-digital slapstick; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes',
+        'Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos; Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes; Summer-heat yellows, candy red, pool chlorine blue, peach skin, dirty pavement grey; Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil; Stretch smears, vibrating outlines, elastic overreaction, diagram-like plan collapse',
       creative_brief:
-        'Use boiling-line scam-cartoon grammar on any prompt: vibrating contours, stretched forms, sticky summer palette, frantic diagram energy, and exaggerated reaction timing. Avoid suburban streets, candy, gadgets, characters, or fixed schemes. The style should feel like a plan vibrating apart before it begins.',
+        "Apply Ed, Edd n Eddy - Jawbreaker Scam Cartoon as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Boiling-outline scam cartoon energy, stretched expression logic, loud adolescent nonsense, sticky summer heat, doomed-plan slapstick, Canadian tween chaos, Boiling line art, stretched shapes, sticky heat color, doomed-plan diagram energy, exaggerated reaction takes, Cel paint wobble, analog TV softness, sticky summer haze, rough pencil boil without requiring the card image's original subject.",
     },
   },
   {
@@ -543,27 +559,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: "Rocko's Modern Life - Beige Suburban Anxiety",
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares',
+        "Rocko's Modern Life - Beige Suburban Anxiety acts as a transferable cinematic-media router: start from Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares, Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.",
       subject_treatment:
-        'Thin anxious contours, noodle panic marks, weird consumer-product curves, restrained gross-out accents',
+        'Transform any prompt subject through Thin anxious contours, noodle panic marks, weird consumer-product curves, restrained gross-out accents; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream, fluorescent green',
+        'Build color with Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream, fluorescent green; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat sitcom illumination, fluorescent discomfort, no heroic contrast, ambient suburban wash',
+        'Handle light through Flat sitcom illumination, fluorescent discomfort, no emblematic contrast, ambient suburban wash; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime',
+        'Render Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Mundane forms warped into unease, noodle bends, small panic gestures, consumer-object exaggeration',
-      atmosphere_and_mood: 'Neurotic, suburban, goofy, overstimulated',
+        'Structure the image through Mundane forms warped into unease, noodle bends, small panic gestures, consumer-object exaggeration; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        "Keep the mood Neurotic, suburban, goofy, overstimulated, mood carried by Rocko's Modern Life - Beige Suburban Anxiety media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.",
       rendering_and_quality:
-        '90s suburban satire cartoon, neurotic mundanity, soft-color discomfort',
+        'Finish with 90s suburban satire cartoon, neurotic mundanity, soft-color discomfort; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic',
+        'Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares; Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic; Beige pastel, dusty teal, tired salmon, consumer-label red, wallpaper cream, fluorescent green; Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime; Mundane forms warped into unease, noodle bends, small panic gestures, consumer-object exaggeration',
       creative_brief:
-        "Apply beige suburban anxiety as style: pastel discomfort, simple contours, noodle-like panic, awkward consumer shapes, and mundane details that feel quietly wrong. Avoid specific interiors, errands, appliances, or suburb settings. The tone should be goofy dread under soft colors. Apply Rocko's Modern Life - Beige Suburban Anxiety as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.",
+        "Apply Rocko's Modern Life - Beige Suburban Anxiety as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Neurotic suburban absurdism, anxious simplified forms, weird consumerist texture, gentle gross-out details, 90s TV satire, pastel wallpaper discomfort, mundane things becoming nightmares, Beige discomfort, weird brand-like shapes, noodle panic marks, satirical mundanity, consumerist clutter logic, Pastel TV cel texture, wallpaper-like pattern noise, plastic consumer sheen, mild grime without requiring the card image's original subject.",
     },
   },
   {
@@ -571,27 +588,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Courage the Cowardly Dog - Rural Nightmare Pastel',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill',
+        'Courage the Cowardly Dog - Rural Nightmare Pastel acts as a transferable cinematic-media router: start from Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill, Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing',
+        'Transform any prompt subject through Sparse outlines, tiny panic marks, abrupt horror insert contours, empty-space framing; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow',
+        'Build color with Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting',
+        'Handle light through Moonlit isolation, dusty lamp glow, sudden horror spotlights, red-alert panic lighting; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture',
+        'Render Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Negative-space expansion, tiny form against vast field, sudden insert scale shock',
-      atmosphere_and_mood: 'Terrified, lonely, surreal, absurd',
+        'Structure the image through Negative-space expansion, tiny form against vast field, sudden insert scale shock; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Terrified, lonely, surreal, absurd, mood carried by Courage the Cowardly Dog - Rural Nightmare Pastel media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread',
+        'Finish with Pastel horror cartoon, cute panic under uncanny pressure, empty-frame dread; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition',
+        'Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill; Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition; Dusty pink, bruise purple, dead-field beige, moonlit blue, alarm red, faded pastel yellow; Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture; Negative-space expansion, tiny form against vast field, sudden insert scale shock',
       creative_brief:
-        'Use rural nightmare pastel as a transferable mood: empty space, dusty glow, sudden horror spotlight, cute panic colors, and uncanny insert contrast. Avoid farmhouses, fields, specific characters, pets, or intruders as requirements. The style should make emptiness feel like pressure. Apply Courage the Cowardly Dog - Rural Nightmare Pastel as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Courage the Cowardly Dog - Rural Nightmare Pastel as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Lonely rural nightmare cartoon, pastel panic, grotesque intrusions in empty space, Midwestern doom silence, haunted domesticity, uncanny insert shock, fear made cute and shrill, Empty-space dread, screaming reaction geometry, uncanny inserts, pastel panic, isolated composition, Grainy TV cel, dusty surface, sudden CGI-like insert smoothness, dry pastel texture without requiring the card image's original subject.",
     },
   },
   {
@@ -599,27 +617,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cow and Chicken - Loud Primary Derangement',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy',
+        'Cow and Chicken - Loud Primary Derangement acts as a transferable cinematic-media router: start from Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy, Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Thick crude contours, jagged gross-comedy marks, rubbery stretch, blunt graphic impact',
+        'Transform any prompt subject through Thick crude contours, jagged gross-comedy marks, rubbery stretch, blunt graphic impact; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white',
+        'Build color with Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat poster illumination, no atmosphere, maximum readability, anti-subtle exposure',
+        'Handle light through Flat poster illumination, no atmosphere, maximum readability, anti-subtle exposure; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface',
+        'Render Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses',
-      atmosphere_and_mood: 'Loud, shameless, unruly, ridiculous',
+        'Structure the image through Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Loud, shameless, unruly, ridiculous, mood carried by Cow and Chicken - Loud Primary Derangement media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression',
+        'Finish with Loud primary-color TV cartoon, vulgar slapstick, anti-subtle comedic aggression; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing',
+        'Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy; Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing; Shouting red, chicken-yellow, electric blue, toxic green, black outline, cheap poster white; Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface; Giant accent shapes, tiny support masses, rubbery scale mismatch, compressed slapstick poses',
       creative_brief:
-        'Apply loud primary derangement to any input: saturated primaries, rubbery ugliness, jagged comic bursts, scale mismatch, and zero-subtlety slapstick. Avoid siblings, hallways, mouths, limbs, or specific characters. The image should feel shouted into existence.',
+        "Apply Cow and Chicken - Loud Primary Derangement as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Shouting primary-color lunacy, absurd slapstick, huge scale mismatch, anti-subtle cartoon vulgarity, exaggerated rubbery ugliness, jagged gross comedy, Primary-color saturation, giant shape accents, screaming graphic bursts, rubbery scale mismatch, vulgar slapstick timing, Poster-paint cel fill, cheap TV scan softness, sticky marker edge, rubbery gross surface without requiring the card image's original subject.",
     },
   },
   {
@@ -627,26 +646,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'CatDog - Shared-Body Elastic Nonsense',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Shared-body elastic nonsense, opposite visual states locked in one stretched form, long-body contortions, impossible shared anatomy as style anchor, simple but deeply strange sitcom design',
+        'CatDog - Shared-Body Elastic Nonsense acts as a transferable cinematic-media router: start from Shared-body elastic nonsense, opposite visual states locked in one stretched form, long-body contortions, impossible shared anatomy as style anchor, simple but deeply strange sitcom design, Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Clean elastic outlines, long-contour continuity, simple sitcom construction, soft squash curves',
+        'Transform any prompt subject through Clean elastic outlines, long-contour continuity, simple sitcom construction, soft squash curves; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        '90s flat TV color, mustard tan, muted blue, warm orange, faded green, heavy black accents',
-      lighting_and_shadow: 'Flat sitcom lighting, simple shadow blobs, no dramatic atmosphere',
+        'Build color with 90s flat TV color, mustard tan, muted blue, warm orange, faded green, heavy black accents; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat sitcom lighting, simple shadow blobs, no dramatic atmosphere; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Smooth cel fill, analog TV softness, light scan grain, simple painted surface',
+        'Render Smooth cel fill, analog TV softness, light scan grain, simple painted surface; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Sausage-form contortions, impossible shared-spine bends, mirrored states at both ends, accordion compression',
-      atmosphere_and_mood: 'Goofy, elastic, odd-couple, playful',
+        'Structure the image through Sausage-form contortions, impossible shared-spine bends, mirrored states at both ends, accordion compression; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Goofy, elastic, odd-couple, playful, mood carried by CatDog - Shared-Body Elastic Nonsense media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Simple strange sitcom cartoon, elastic absurdity, readable long-form design',
+        'Finish with Simple strange sitcom cartoon, elastic absurdity, readable long-form design; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression',
+        'Shared-body elastic nonsense, opposite visual states locked in one stretched form, long-body contortions, impossible shared anatomy as style anchor, simple but deeply strange sitcom design; Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression; 90s flat TV color, mustard tan, muted blue, warm orange, faded green, heavy black accents; Smooth cel fill, analog TV softness, light scan grain, simple painted surface; Sausage-form contortions, impossible shared-spine bends, mirrored states at both ends, accordion compression',
       creative_brief:
-        'Use shared-body elastic design as abstraction: one stretched form contains two opposing visual states, bending impossibly with sitcom simplicity and elastic compression. Avoid cats, dogs, creatures, lawns, props, or anatomy as requirements. The style should be long, contradictory, and playful. Apply CatDog - Shared-Body Elastic Nonsense as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply CatDog - Shared-Body Elastic Nonsense as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Shared-body elastic nonsense, opposite visual states locked in one stretched form, long-body contortions, impossible shared anatomy as style anchor, simple but deeply strange sitcom design, Shared-form anatomy, impossible bends, dual-state contrast, elastic long silhouette, accordion compression, Smooth cel fill, analog TV softness, light scan grain, simple painted surface without requiring the card image's original subject.",
     },
   },
   {
@@ -654,26 +675,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'SpongeBob Gross-Up Freeze Frame',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash',
+        'SpongeBob Gross-Up Freeze Frame acts as a transferable cinematic-media router: start from Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash, Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Simple bright cartoon contours interrupted by hyper-detailed gross-up brushwork',
+        'Transform any prompt subject through Simple bright cartoon contours interrupted by hyper-detailed gross-up brushwork; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green',
-      lighting_and_shadow: 'Flat happy setup light interrupted by cruel macro glare',
+        'Build color with Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat happy setup light interrupted by cruel macro glare; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture',
+        'Render Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop',
-      atmosphere_and_mood: 'Cheery, revolting, whiplash-funny, manic',
+        'Structure the image through Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Cheery, revolting, whiplash-funny, manic, mood carried by SpongeBob Gross-Up Freeze Frame media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Style-whiplash freeze frame, bright cartoon plus revolting macro insert',
+        'Finish with Style-whiplash freeze frame, bright cartoon plus revolting macro insert; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash',
+        'Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash; Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash; Cheerful yellow-blue base, sickly pink close-up accents, pore red, greasy beige, seafoam green; Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture; Crash-zoom proximity, sudden scale jump, normal-to-gross transformation, invasive crop',
       creative_brief:
-        'Apply gross-up freeze-frame contrast to any prompt: cheerful flat cartoon setup interrupted by invasive hyper-detailed texture, pores, folds, and uncomfortable proximity. Avoid undersea props, sponge forms, faces, or fixed characters. The gag should be the sudden style jump.',
+        "Apply SpongeBob Gross-Up Freeze Frame as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Cheerful cartoony setup smashed by hyper-detailed disgusting close-up, SpongeBob gross-up freeze-frame as style anchor, deranged reaction insert, slapstick whiplash, Normal-to-gross style contrast, close-up texture detail, reaction-frame jump scare, bright-to-revolting whiplash, Cel fill colliding with pores, wrinkles, follicles, wet gloss, and painterly gross texture without requiring the card image's original subject.",
     },
   },
   {
@@ -681,26 +704,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Beavis and Butt-Head - Dumb Couch Slouch',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity',
+        'Beavis and Butt-Head - Dumb Couch Slouch acts as a transferable cinematic-media router: start from Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity, Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Jagged slack contours, pencil-neck angles, ugly profile-like construction, slow posture sag',
+        'Transform any prompt subject through Jagged slack contours, pencil-neck angles, ugly profile-like construction, slow posture sag; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Cheap TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, stale red',
-      lighting_and_shadow: 'Flat cathode glow, low-rent room ambience, no glamour, tired exposure',
+        'Build color with Cheap TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, stale red; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat cathode glow, low-rent interior volume ambience, no glamour, tired exposure; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge',
+        'Render Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Gravity-heavy slouch, flattened posture, jagged head shapes, underfed proportion logic',
-      atmosphere_and_mood: 'Idiotic, lazy, mean, vacant',
+        'Structure the image through Gravity-heavy slouch, flattened posture, jagged head shapes, underfed proportion logic; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Idiotic, lazy, mean, vacant, mood carried by Beavis and Butt-Head - Dumb Couch Slouch media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Ugly deadpan adult cartoon, low-energy slouch caricature, anti-glamour TV satire',
+        'Finish with Ugly deadpan adult cartoon, low-energy slouch caricature, anti-glamour TV satire; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture',
+        'Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity; Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture; Cheap TV beige, nicotine yellow, washed denim blue, dull brown, cathode green, stale red; Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge; Gravity-heavy slouch, flattened posture, jagged head shapes, underfed proportion logic',
       creative_brief:
-        'Use dumb slouch caricature as visual grammar: sagging posture logic, jagged profiles, cheap-TV glow, ugly low-rent color, and vacant timing. Avoid couches, teens, interiors, overbites, or specific bodies as requirements. The style should make boredom look physically heavy. Apply Beavis and Butt-Head - Dumb Couch Slouch as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Beavis and Butt-Head - Dumb Couch Slouch as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Mouth-breathing delinquent caricature, slouch nihilism, ugly low-rent interiors as style anchor, cheap music-video culture, vacant deadbrain energy, pencil-neck stupidity, Slouch geometry, deadbeat clutter texture, ugly profile-like shapes, cheap-TV ambience, vacant posture, Analog TV grain, stained fabric suggestion, cheap wall texture, rough ink edge without requiring the card image's original subject.",
     },
   },
   {
@@ -708,27 +733,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mike Judge Office Boredom Sketch',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork emptiness, satirical nobody energy, American beige despair made funny',
+        'Mike Judge Office Boredom Sketch acts as a transferable cinematic-media router: start from Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork emptiness, satirical nobody energy, American beige despair made funny, Cubicle-like geometry, blank pauses, underwhelming body language, beige clutter, anti-glamour caricature and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Minimal dry contours, anti-charisma shapes, plain observational line, tiny awkward gestures',
+        'Transform any prompt subject through Minimal dry contours, anti-charisma shapes, plain observational line, tiny awkward gestures; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Office beige, copy-paper white, washed-out polo green, stale blue, grey carpet, muted toner black',
+        'Build color with Office beige, copy-paper white, washed-out polo green, stale blue, grey carpet, muted toner black; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Fluorescent flatness, shadowless workplace exposure, dull overhead wash',
+        'Handle light through Fluorescent flatness, shadowless workplace exposure, dull overhead wash; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill',
+        'Render Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Underwhelming geometry, resignation posture, boxy spatial rhythm, anti-dynamic framing',
-      atmosphere_and_mood: 'Bored, dry, defeated, observant',
+        'Structure the image through Underwhelming geometry, resignation posture, boxy spatial rhythm, anti-dynamic framing; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Bored, dry, defeated, observant, mood carried by Mike Judge Office Boredom Sketch media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Dry Mike Judge satire, underplayed adult animation, beige observational comedy',
+        'Finish with Dry Mike Judge satire, underplayed adult animation, beige observational comedy; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Cubicle-like geometry, blank pauses, underwhelming body language, beige clutter, anti-glamour caricature',
+        'Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork emptiness, satirical nobody energy, American beige despair made funny; Cubicle-like geometry, blank pauses, underwhelming body language, beige clutter, anti-glamour caricature; Office beige, copy-paper white, washed-out polo green, stale blue, grey carpet, muted toner black; Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill; Underwhelming geometry, resignation posture, boxy spatial rhythm, anti-dynamic framing',
       creative_brief:
-        'Apply Mike Judge office-boredom sketch language to any subject: dry linework, beige despair, anti-charisma staging, underwhelming shapes, and fluorescent flatness. Avoid cubicles, paperwork, faces, ties, or offices as mandatory content. Comedy should come from resignation, not spectacle.',
+        "Apply Mike Judge Office Boredom Sketch as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Mike Judge dry anti-charisma cartoon, cubicle beige as style anchor, regional mediocrity, paperwork emptiness, satirical nobody energy, American beige despair made funny, Cubicle-like geometry, blank pauses, underwhelming body language, beige clutter, anti-glamour caricature, Copy-paper grain, cubicle-fabric suggestion, cheap toner edge, dry marker-like fill without requiring the card image's original subject.",
     },
   },
   {
@@ -736,26 +762,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'The Oblongs - Toxic Suburb Family',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy',
+        'The Oblongs - Toxic Suburb Family acts as a transferable cinematic-media router: start from Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy, Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks',
+        'Transform any prompt subject through Malformed clean outlines, lopsided silhouettes, class-satire exaggeration, friendly deformity marks; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink',
-      lighting_and_shadow: 'Flat polluted ambience, sour daylight, no glamour, environmental haze',
+        'Build color with Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat polluted ambience, sour daylight, no glamour, environmental haze; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture',
+        'Render Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity',
-      atmosphere_and_mood: 'Bleak, satirical, mutated, weirdly cozy',
+        'Structure the image through Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Bleak, satirical, mutated, weirdly cozy; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth',
+        'Finish with Mutant suburbia satire, poisoned whimsy, class-coded grotesque warmth; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor',
+        'Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy; Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor; Toxic yellow, smoke grey, bruised mauve, landfill green, cheap tan, muted domestic pink; Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture; Lopsided silhouette logic, compressed domestic forms, toxic asymmetry, normalized deformity',
       creative_brief:
-        'Use toxic suburb satire as style: malformed silhouettes, polluted color, class-coded clutter, lopsided warmth, and environmental rot embedded in shape. Avoid families, portraits, trailers, smokestacks, or bodies as required content. The image should feel poisoned yet weirdly cozy. Apply The Oblongs - Toxic Suburb Family as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply The Oblongs - Toxic Suburb Family as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Mutant suburbia satire, malformed silhouettes, environmental rot, class-divide cartoon cruelty, trailer-park grotesquerie as style anchor, deformity normalized into routine, poisoned world whimsy, Malformed silhouettes, toxic backdrop hints, trashy domestic texture, odd asymmetries, resigned humor, Grime, cheap fabric, polluted residue, dented plastic, dusty TV cel texture without requiring the card image's original subject.",
     },
   },
   {
@@ -763,26 +791,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dr. Katz - Squigglevision Therapy Doodle',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis',
+        'Dr. Katz - Squigglevision Therapy Doodle acts as a transferable cinematic-media router: start from Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis, Constant line jitter, simple staging, conversational framing, minimal depth field, anxious contour vibration and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Persistent squigglevision contour drift, shaky loose lines, conversation-first staging, gentle hand-tremor energy',
+        'Transform any prompt subject through Persistent squigglevision contour drift, shaky loose lines, conversation-first staging, gentle hand-tremor energy; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Muted therapy-room beige, dusty teal, pencil grey, soft salmon, washed blue, off-white',
-      lighting_and_shadow: 'Flat low-key TV lighting, soft no-drama fill, minimal ambience',
+        'Build color with Muted therapy-interior volume beige, dusty teal, pencil grey, soft salmon, washed blue, off-white; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat low-key TV lighting, soft no-drama fill, minimal ambience; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter',
+        'Render Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Contours vibrating in place, small shape drift, low-action framing, anxious line boil',
-      atmosphere_and_mood: 'Talky, neurotic, understated, wry',
+        'Structure the image through Contours vibrating in place, small shape drift, low-action framing, anxious line boil; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Talky, neurotic, understated, wry, mood carried by Dr. Katz - Squigglevision Therapy Doodle media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Squigglevision adult animation, understated comedy, loose conversational minimalism',
+        'Finish with Squigglevision adult animation, understated comedy, loose conversational minimalism; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Constant line jitter, simple staging, conversational framing, minimal backgrounds, anxious contour vibration',
+        'Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis; Constant line jitter, simple staging, conversational framing, minimal depth field, anxious contour vibration; Muted therapy-interior volume beige, dusty teal, pencil grey, soft salmon, washed blue, off-white; Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter; Contours vibrating in place, small shape drift, low-action framing, anxious line boil',
       creative_brief:
-        'Apply squigglevision therapy-doodle logic to any prompt: vibrating contours, minimal backgrounds, talky framing, gentle neurosis, and deliberately low-action composition. Avoid offices, couches, therapists, or stand-up scenes. The style should look like every line is quietly anxious.',
+        "Apply Dr. Katz - Squigglevision Therapy Doodle as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Loose vibrating linework, conversational minimalism, squigglevision jitter, low-key absurd adult animation, every contour trembling with mild neurosis, Constant line jitter, simple staging, conversational framing, minimal depth field, anxious contour vibration, Low-fi TV scan softness, simple fill texture, vibrating edge artifact, hand-drawn jitter without requiring the card image's original subject.",
     },
   },
   {
@@ -790,26 +820,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Doug Notebook Anxiety Cartoon',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple flat backgrounds, internal monologue cartooning, soft marker color',
+        'Doug Notebook Anxiety Cartoon acts as a transferable cinematic-media router: start from Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple flat depth field, internal monologue cartooning, soft marker color, Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft marker flatness and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Soft simple ink, diary-doodle contour, awkward posture marks, gentle daydream curves',
+        'Transform any prompt subject through Soft simple ink, diary-doodle contour, awkward posture marks, gentle daydream curves; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Notebook cover teal, soft marker purple, peach anxiety, pale yellow, faded red, school-paper cream',
-      lighting_and_shadow: 'Flat friendly TV light, daydream glow inserts, low-contrast comfort',
+        'Build color with Notebook cover teal, soft marker purple, peach anxiety, pale yellow, faded red, school-paper cream; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat friendly TV light, daydream glow inserts, low-contrast comfort; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Notebook-paper tooth, marker softness, light scan grain, softened cel fill',
+        'Render Notebook-paper tooth, marker softness, light scan grain, softened cel fill; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Daydream overlay drift, margin-like framing, softened scale changes, awkward negative space',
-      atmosphere_and_mood: 'Nervous, sweet, relatable, wistful',
+        'Structure the image through Daydream overlay drift, margin-like framing, softened scale changes, awkward negative space; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nervous, sweet, relatable, wistful, mood carried by Doug Notebook Anxiety Cartoon media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Wistful notebook cartoon, internal-monologue softness, gentle anxious TV style',
+        'Finish with Wistful notebook cartoon, internal-monologue softness, gentle anxious TV style; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft marker flatness',
+        'Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple flat depth field, internal monologue cartooning, soft marker color; Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft marker flatness; Notebook cover teal, soft marker purple, peach anxiety, pale yellow, faded red, school-paper cream; Notebook-paper tooth, marker softness, light scan grain, softened cel fill; Daydream overlay drift, margin-like framing, softened scale changes, awkward negative space',
       creative_brief:
-        'Apply notebook anxiety cartooning to any prompt: soft marker fields, flat backgrounds, diary-like framing, gentle daydream inserts, and awkward internal-monologue rhythm. Avoid schools, neighborhoods, kids, props, or social scenes as requirements. The style should feel wistful and nervous.',
+        "Apply Doug Notebook Anxiety Cartoon as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Notebook-color anxiety cartoon, adolescent embarrassment as mood anchor, gentle daydream logic, simple flat depth field, internal monologue cartooning, soft marker color, Notebook-like color fields, awkward posture logic, diary-energy framing, daydream insert logic, soft marker flatness, Notebook-paper tooth, marker softness, light scan grain, softened cel fill without requiring the card image's original subject.",
     },
   },
   {
@@ -817,27 +849,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Angela Anaconda Photo-Cutout Menace',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout',
+        'Angela Anaconda Photo-Cutout Menace acts as a transferable cinematic-media router: start from Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout, Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Scissor-cut edges, crude body or object outlines, mismatched collage seams, hostile paste-up alignment',
+        'Transform any prompt subject through Scissor-cut edges, crude body or object outlines, mismatched collage seams, hostile paste-up alignment; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent',
+        'Build color with Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows',
+        'Handle light through Flat scanner light, xerox contrast, no atmosphere, collage-layer shadows; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts',
+        'Render Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic',
-      atmosphere_and_mood: 'Snarky, janky, hostile, unforgettable',
+        'Structure the image through Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Snarky, janky, hostile, unforgettable, mood carried by Angela Anaconda Photo-Cutout Menace media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up',
+        'Finish with Photocutout nightmare collage, handmade digital freakout, anti-beauty paste-up; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges',
+        'Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout; Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges; Photocopy black, harsh white, dirty grey, scanned beige, toner shadow, occasional faded marker accent; Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts; Mismatched scale, pasted fragments, flattened depth layers, wrong-body assembly logic',
       creative_brief:
-        'Apply photo-cutout menace to any subject: xerox grain, mismatched photographic fragments, crude drawn bodies or forms, harsh black-and-white contrast, and visible cut edges. Avoid faces, schoolyards, yearbooks, or revenge narratives as requirements. Nothing should fit cleanly together.',
+        "Apply Angela Anaconda Photo-Cutout Menace as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Photocollage black-and-white cutout nightmare, mismatched photo fragments pasted onto crude drawn forms, anti-beauty sarcasm, collage ugliness weaponized, handmade digital freakout, Photo-cutout fragments, mismatched collage bodies or forms, xerox textures, anti-pretty black-and-white contrast, hostile cut edges, Photocopy grain, paper-cut edges, glue-collage layering, black-and-white halftone abuse, rough scan artifacts without requiring the card image's original subject.",
     },
   },
   {
@@ -845,27 +878,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crash Zoom Garbage Pail Caricature',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil',
+        'Crash Zoom Garbage Pail Caricature acts as a transferable cinematic-media router: start from Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil, Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Bold trading-card outline, gross sticker contours, crash-zoom impact marks, swollen defect shapes',
+        'Transform any prompt subject through Bold trading-card outline, gross sticker contours, crash-zoom impact marks, swollen defect shapes; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Sticker-card primaries, vomit green, zit red, bubblegum pink, cheap cyan, thick black',
+        'Build color with Sticker-card primaries, vomit green, zit red, bubblegum pink, cheap cyan, thick black; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat collectible-card lighting, hard highlight on goo, no atmospheric depth',
+        'Handle light through Flat collectible-card lighting, hard highlight on goo, no atmospheric depth; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Wax-card print, sticky gloss, halftone edge, cheap sticker ink, goo texture',
+        'Render Wax-card print, sticky gloss, halftone edge, cheap sticker ink, goo texture; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Crash-zoom crop, inflated defect scale, border-compressed layout, prank-card exaggeration',
-      atmosphere_and_mood: 'Gross, gleeful, juvenile, loud',
+        'Structure the image through Crash-zoom crop, inflated defect scale, border-compressed layout, prank-card exaggeration; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Gross, gleeful, juvenile, loud, mood carried by Crash Zoom Garbage Pail Caricature media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Gross collectible caricature, prank-card recoil, loud trading-card finish',
+        'Finish with Gross collectible caricature, prank-card recoil, loud trading-card finish; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic',
+        'Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil; Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic; Sticker-card primaries, vomit green, zit red, bubblegum pink, cheap cyan, thick black; Wax-card print, sticky gloss, halftone edge, cheap sticker ink, goo texture; Crash-zoom crop, inflated defect scale, border-compressed layout, prank-card exaggeration',
       creative_brief:
-        'Use garbage-pail caricature as graphic treatment: trading-card framing, crash zoom, sticky goo, inflated defects, loud color, and prank-card exaggeration. Avoid kids, playgrounds, bodies, or bodily-function scenes as required content. Revulsion should loop back into collectible comedy. Apply Crash Zoom Garbage Pail Caricature as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Crash Zoom Garbage Pail Caricature as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Garbage-pail trading-card grossness, swelling defect marks, goo drips, prank-card exaggeration, gleeful disgustingness, collectible recoil energy, ugly gags rendered for maximum recoil, Exploding goo detail, prank-card composition, crash-zoom framing, sticky horror texture, collectible border logic, Wax-card print, sticky gloss, halftone edge, cheap sticker ink, goo texture without requiring the card image's original subject.",
     },
   },
   {
@@ -873,27 +907,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Public Pool Mucus Monster Doodle',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor',
+        'Public Pool Mucus scale-threat designs Doodle acts as a transferable cinematic-media router: start from Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor, Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Crooked marker outlines, gross summer wobble, childish wrong curves, slime-trail accents',
+        'Transform any prompt subject through Crooked marker outlines, gross summer wobble, childish wrong curves, slime-trail accents; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black',
+        'Build color with Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure',
+        'Handle light through Flat hot summer light, chlorine glare, no cinematic depth, sticky exposure; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain',
+        'Render Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale',
-      atmosphere_and_mood: 'Sticky, goofy, gross, summer-feral',
+        'Structure the image through Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Sticky, goofy, gross, summer-feral, mood carried by Public Pool Mucus scale-threat designs Doodle media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering',
+        'Finish with Gross summer doodle, childish camp-disgust humor, intentionally bad marker rendering; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness',
+        'Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor; Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness; Chlorine green, wet turquoise, sunburn red, cheap flip-flop blue, sticky yellow, marker black; Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain; Off-model doodle form, melted summer wobble, slime-weight sag, crooked marker scale',
       creative_brief:
-        'Apply public-pool mucus doodle flavor to any prompt: chlorine green slime, sticky heat palette, cheap summer texture, crooked marker forms, and childish gross humor. Avoid pools, monsters, diving boards, creatures, or specific props as requirements. The style should feel sweaty, slimy, and badly drawn on purpose.',
+        "Apply Public Pool Mucus scale-threat designs Doodle as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Badly drawn gross summer doodle, chlorine-green slime, sticky heat, flip-flop trash vibes, grotesque but childish camp-disgust humor, Slime drips, chlorine palette, off-model doodle anatomy or form, gross summer texture, kid-gag nastiness, Marker bleed, slick slime gloss, wet paper, cheap plastic texture, sweaty grain without requiring the card image's original subject.",
     },
   },
   {
@@ -901,27 +936,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Toxic Marker Classroom Freakout',
     category: '6. Caricature And Cartoon Styles',
     negativePrompt:
-      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern',
+      'digital, HD, smooth, 3d, realistic, painted, single panel, vertical scrolling, modern, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed margin forms',
+        'Toxic Marker Classroom Freakout acts as a transferable cinematic-media router: start from Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed margin forms, Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos and caricature and cartoon system built from exaggeration rules, line instability, body-shape grammar, adult-comedy timing, texture economy, and expressive deformation, then apply the media behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Permanent-marker aggression, desk-doodle scratches, malformed margin contours, vandal-energy hatching',
+        'Transform any prompt subject through Permanent-marker aggression, desk-doodle scratches, malformed margin contours, vandal-energy hatching; preserve the requested subject while exaggerating proportion, contour, posture, line boil, paper crudeness, photo-cutout menace, or gross-up detail according to the preset, keeping the requested identity, silhouette, action, object function, or setting legible.',
       color_and_tone:
-        'Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple',
+        'Build color with Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple; use color through loud primaries, beige suburban anxiety, marker flats, mucus greens, toxic classroom tints, comic newspaper color, or deliberately ugly palette pressure, with deliberate value grouping, accent control, and process-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Flat desk light, overhead classroom-like glare, no atmospheric depth, marker-first readability',
+        'Handle light through Flat desk light, overhead classroom-like glare, no atmospheric depth, marker-first readability; shape light minimally through flat cartoon value, poster contrast, marker fill, gross-up close value, or uncanny cutout shadow when the style requires it, so exposure and shadow structure support the media process without overwriting the requested content.',
       texture_and_material:
-        'Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite',
+        'Render Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite; surface detail should reveal crayon, marker edge, newspaper ink, xerox cutout, squiggle line, doodle grain, crude fill, or close-up texture without becoming noisy realism, keeping artifact scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding',
-      atmosphere_and_mood: 'Rebellious, messy, hyperactive, juvenile',
+        'Structure the image through Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding; compose through readable gag timing, grotesque close-up, slouch geometry, shared-body elongation, suburban emptiness, or crash-zoom pressure without copying a named scene, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Rebellious, messy, hyperactive, juvenile, mood carried by Toxic Marker Classroom Freakout media process, signal pressure, and visual restraint; derive mood from adult absurdity, nervous comedy, ugly-cute tension, gross humor, office boredom, toxic suburbia, or anti-polish personality, letting the media style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion',
+        'Finish with Rebellious marker doodle, juvenile freakout composition, toxic margin-art expansion; finish with clear cartoon grammar, bold silhouettes, controlled roughness, and no exact character likeness, school-scene lock, readable gag text, or generic cute mascot, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
       key_features:
-        'Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos',
+        'Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed margin forms; Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos; Toxic marker green, black ink, red correction pen, highlighter yellow, notebook blue, cheap purple; Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite; Margin doodles expanding full-frame, warped symbols, malformed scale, restless edge crowding',
       creative_brief:
-        'Use toxic marker classroom freakout as style: permanent-marker bleed, desk-doodle symbols, malformed margin forms, vandal-energy linework, and hyperactive juvenile composition. Avoid classrooms, students, lessons, monsters, or readable rude text as requirements. The page should feel colonized by rebellious marks. Apply Toxic Marker Classroom Freakout as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
+        "Apply Toxic Marker Classroom Freakout as a cinematic-media preset over prompt X: preserve the user's requested subject, then route lens behavior, palette, light, signal or film texture, composition, mood, and final media craft through Desk-doodle freakout pushed full frame, permanent-marker chaos, rude iconography, sketchbook rebellion, bored-student aggression, malformed margin forms, Permanent-marker texture, desk-doodle iconography, malformed margin forms, vandal-energy linework, adolescent chaos, Marker bleed, scratched desk surface, notebook paper tooth, ink feathering, smudged graphite without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

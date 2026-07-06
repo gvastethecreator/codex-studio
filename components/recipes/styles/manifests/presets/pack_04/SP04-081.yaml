@@ -12,20 +12,62 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Value-thumbnail silhouette ideation focused on shape readability and rapid production-design iteration
-  subject_treatment: Bold filled contours with minimal or no internal linework
-  color_and_tone: Strict 3-value grayscale (black, mid gray, white)
-  lighting_and_shadow: Light logic expressed only through value grouping and rim separation
-  texture_and_material: Matte digital block-fill with slight brush-edge variance
-  camera_and_composition: Controlled proportion and mass variation across comparative grid
-  atmosphere_and_mood: Exploratory, energetic, design-lab momentum
-  rendering_and_quality: Deliberately rough ideation pass prioritizing quantity and clarity
-  key_features: Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast
+  aesthetic: >-
+    small-read composition study Silhouette Exploration acts as a transferable illustration router:
+    start from Value-small-read composition study silhouette ideation focused on shape readability
+    and rapid production-design iteration, Multi-variant silhouette grid, negative-space testing,
+    high read-at-a-glance contrast and production concept-art system built from iteration
+    discipline, silhouette testing, material exploration, design readability, and pitch-ready visual
+    decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Bold filled contours with minimal or no internal linework;
+    preserve the requested subject while routing it through design exploration, asset logic, value
+    blocking, scale cues, iteration rows, paintover marks, or production-readability constraints,
+    keeping the requested identity, silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Strict 3-value grayscale (black, mid gray, white); use color as concept
+    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
+    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Light logic expressed only through value grouping and rim separation; shape
+    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
+    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Matte digital block-fill with slight brush-edge variance; surface detail should reveal
+    brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume
+    fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent
+    and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Controlled proportion and mass variation across comparative grid;
+    compose through production hierarchy, variants, orthographic logic, isometric staging,
+    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
+    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Exploratory, energetic, design-lab momentum, mood carried by small-read
+    composition study Silhouette Exploration craft, material pressure, and visual restraint; derive
+    mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash
+    utility, cinematic intent, or production-room clarity, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Deliberately rough ideation pass prioritizing quantity and clarity; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Value-small-read composition study silhouette ideation focused on shape readability and rapid
+    production-design iteration; Multi-variant silhouette grid, negative-space testing, high
+    read-at-a-glance contrast; Strict 3-value grayscale (black, mid gray, white); Matte digital
+    block-fill with slight brush-edge variance; Controlled proportion and mass variation across
+    comparative grid
   creative_brief: >-
-    Apply thumbnail-silhouette exploration to any input as a high-read design language: small-value shapes,
-    bold figure-ground separation, multiple scale reads, simplified masses, and quick ideation marks. If
-    characters or props exist, iterate them; otherwise convert the prompt into abstract silhouette families
-    without requiring a character sheet, grid, or prop lineup.
+    Apply small-read composition study Silhouette Exploration as an illustration preset over prompt
+    X: preserve the user's requested subject, then route mark-making, palette, surface, composition,
+    mood, and final craft through Value-small-read composition study silhouette ideation focused on
+    shape readability and rapid production-design iteration, Multi-variant silhouette grid,
+    negative-space testing, high read-at-a-glance contrast, Matte digital block-fill with slight
+    brush-edge variance without requiring the card image's original subject.
 avoidRules:
   - detailed
   - polished
@@ -37,10 +79,26 @@ avoidRules:
   - refined
   - tight
   - one version
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-081.webp
 attributes:
-  negativePrompt: detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version
+  negativePrompt: >-
+    detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version,
+    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
+    text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
+    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

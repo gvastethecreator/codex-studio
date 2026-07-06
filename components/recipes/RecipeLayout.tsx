@@ -1,5 +1,5 @@
 import React from 'react';
-import { MotionDiv } from 'motion/react';
+import { MotionDiv } from '../../lib/gsapMotion';
 
 interface RecipeLayoutProps {
   isGenerating: boolean;

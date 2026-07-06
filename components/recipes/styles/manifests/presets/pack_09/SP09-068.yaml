@@ -13,29 +13,58 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Basalt
-  subject_treatment: Sharp edges
-  color_and_tone: Black
-  lighting_and_shadow: Matte
-  texture_and_material: Porous, sharp
-  camera_and_composition: Flow lines
-  atmosphere_and_mood: Desolate, hard
-  rendering_and_quality: Volcanic, porous
-  key_features: Air holes
+  aesthetic: >-
+    Lava Rock (Cooled) translates natural material behavior into form: start from Basalt, Porous,
+    sharp, and Flow lines, then turn natural formation, growth, erosion, and geological or
+    biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Sharp edges: preserve identity and pose while letting forms
+    grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Black as the material palette, with controlled value separation, local color variation, and
+    hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Matte define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Lava Rock (Cooled) without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Porous, sharp through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Flow lines as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Desolate, hard by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Volcanic, porous material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Basalt; Sharp edges; Porous, sharp; Matte; Flow lines
   creative_brief: >-
-    Render cooled basalt as volcanic surface treatment over the input: matte black porosity, sharp broken
-    edges, frozen gas bubbles, flow lines, and lightweight hardness. If rock, terrain, weapon, armor, or
-    object exists, give it lava-born scars; otherwise apply basaltic pores and cooled-flow geometry without
-    forcing a barren landscape. Use Lava Rock as portable surface/render behavior over any input: map its
-    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
-    material naturally appears.
+    Route any subject through Lava Rock (Cooled) as a transferable natural-material visual system
+    while preserving the prompt's subject, action, and setting. Render cooled basalt as volcanic
+    surface treatment over the input: matte black porosity, sharp broken edges, frozen gas bubbles,
+    flow lines, and lightweight hardness. If rock, terrain, weapon, armor, or object exists, give it
+    lava-born scars; otherwise apply basaltic pores and cooled-flow geometry without forcing a
+    barren landscape. Use Lava Rock as portable surface/render behavior over any input: map its
+    texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead
+    of requiring a literal material sample, macro tile, wall, landscape, source object, or scene
+    where the material naturally appears.
 avoidRules:
   - smooth stone
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-068.webp
 attributes:
-  negativePrompt: smooth stone
+  negativePrompt: smooth stone, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

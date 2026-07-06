@@ -12,28 +12,78 @@ tags:
   - 3d-and-cgi-rendering
   - 3d-styles
 visualDna:
-  aesthetic: Letters made of objects
-  subject_treatment: Bold font
-  color_and_tone: Vibrant, brand-expression hues
-  lighting_and_shadow: Studio, typographic readability
-  texture_and_material: Material letters, physical texture
+  aesthetic: >-
+    3D Typography acts as a transferable CGI-style router: start from Letters made of objects,
+    Readable, letterform sculpting and 3D style system built from modeling language, mesh
+    abstraction, projection rules, topology display, toy material, paper logic, or stylized shader
+    constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
+    image.
+  subject_treatment: >-
+    Transform any prompt subject through Bold font; preserve the prompt subject while rebuilding it
+    through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds,
+    toon bands, or procedural motion forms only when the preset calls for them, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Vibrant, brand expression hues; use color through material simplification, cel
+    ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion
+    accents, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Studio, typographic readability; shape light through the style constraint:
+    simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or
+    retro speculars, so value structure supports the renderer and does not overwrite the requested
+    content.
+  texture_and_material: >-
+    Render Material letters, physical texture; surface detail should show the named construction
+    system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural
+    blobs, or low-poly facets should appear only when they belong to the preset, keeping material
+    scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for 3D Typography: three-quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Bold, message, visual proclamation
-  rendering_and_quality: Adobe, design, headline-striking
-  key_features: Readable, letterform sculpting
+    Structure the image through Lookdev camera for 3D Typography: three quarter or orthographic
+    framing, clean silhouette read, material highlights, controlled depth, and vertical card
+    composition; compose through projection, topology readability, object grouping, axis discipline,
+    exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Bold, message, visual proclamation; derive mood from toy-like clarity, technical
+    breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical
+    wonder, letting the renderer alter interpretation without demanding a specific story, location,
+    or character.
+  rendering_and_quality: >-
+    Finish with Adobe, design, headline striking; finish with intentional stylization, clean
+    geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for
+    it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    Letters made of objects; Readable, letterform sculpting; Vibrant, brand expression hues;
+    Material letters, physical texture; Lookdev camera for 3D Typography: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition
   creative_brief: >-
-    Apply 3D typography logic to any input: bold letterform-like massing, material-built glyph structure,
-    studio-lit bevels, extruded volume, readable silhouette rhythm, and brand-expression color. Keep
-    typographic sculpture without requiring readable words, slogans, alphabet props, logos, or a headline
-    composition.
+    Apply 3D Typography as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through Letters made of objects, Readable, letterform sculpting, Material letters,
+    physical texture without requiring the card image's original subject.
 avoidRules:
   - flat text
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - accidental photorealism
+  - generic smooth mesh
+  - wrong geometry language
+  - messy topology
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-058.webp
 attributes:
-  negativePrompt: flat text
+  negativePrompt: >-
+    flat text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong
+    geometry language, messy topology
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { AnimatePresence, MotionDiv } from 'motion/react';
+import { AnimatePresence, MotionDiv } from '../lib/gsapMotion';
 import {
   IconAlertTriangle as AlertTriangle,
   IconBrain as BrainCircuit,
@@ -338,6 +338,8 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
                         <img
                           src={result.src}
                           alt={result.prompt || 'Generated result'}
+                          width={512}
+                          height={512}
                           className="h-full w-full object-cover"
                           loading="lazy"
                           decoding="async"
@@ -585,6 +587,8 @@ const RecentResultsCarousel: React.FC<{
         <img
           src={result.fullSrc || result.src}
           alt={result.prompt || 'Generated result'}
+          width={1024}
+          height={1024}
           className="max-h-full max-w-full rounded-lg object-contain shadow-2xl"
           decoding="async"
         />
@@ -652,6 +656,8 @@ const ServerJobItem: React.FC<{
             <img
               src={previewSrc}
               alt="Job thumbnail"
+              width={28}
+              height={28}
               className="h-full w-full object-cover"
               loading="lazy"
               decoding="async"
@@ -776,6 +782,8 @@ const JobItem: React.FC<{
           <img
             src={previewSrc}
             alt="Queue thumbnail"
+            width={28}
+            height={28}
             className="h-full w-full object-cover"
             loading="lazy"
             decoding="async"

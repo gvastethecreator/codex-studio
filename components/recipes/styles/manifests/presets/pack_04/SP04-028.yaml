@@ -12,26 +12,79 @@ tags:
   - illustration-and-graphic-novel
   - childrens-illustration
 visualDna:
-  aesthetic: Chalk pastel illustration with atmospheric soft-focus blending
-  subject_treatment: Broad dusty marks with reduced hard-edge dependency
-  color_and_tone: Muted pastel spectrum with powdery warm-cool balance
-  lighting_and_shadow: Diffuse low-contrast illumination through chalk scatter
-  texture_and_material: Strong paper tooth pickup, smudge trails, airborne dust bloom
-  camera_and_composition: Edge blur and gentle form diffusion
-  atmosphere_and_mood: Nostalgic, calm, bedtime softness
-  rendering_and_quality: Dreamlike, velvety, softly resolved pastel finish
-  key_features: Smudged transitions, dust halos, matte bloom highlights
+  aesthetic: >-
+    Chalk Pastel acts as a transferable illustration router: start from Chalk pastel illustration
+    with atmospheric soft-focus blending, Smudged transitions, dust halos, matte bloom highlights
+    and storybook and friendly-illustration system built from approachable shapes, handmade media,
+    simplified edges, tactile materials, and high-readability charm, then apply the visual behavior
+    to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Broad dusty marks with reduced hard-edge dependency;
+    preserve the requested subject while softening, simplifying, miniaturizing, paper-building,
+    mark-making, or diagramming it according to the named medium, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Muted pastel spectrum with powdery warm-cool balance; use color through
+    storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel
+    dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Diffuse low-contrast illumination through chalk scatter; shape light
+    through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or
+    medium-native tonal marks instead of cinematic realism, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Strong paper tooth pickup, smudge trails, airborne dust bloom; surface detail should show
+    paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker
+    laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Edge blur and gentle form diffusion; compose with clear silhouettes,
+    readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative
+    space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy
+    doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nostalgic, calm, bedtime softness, mood carried by Chalk Pastel craft, material
+    pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy,
+    educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style
+    alter interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Dreamlike, velvety, softly resolved pastel finish; finish with clean accessible
+    illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland
+    stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
+  key_features: >-
+    Chalk pastel illustration with atmospheric soft-focus blending; Smudged transitions, dust halos,
+    matte bloom highlights; Muted pastel spectrum with powdery warm-cool balance; Strong paper tooth
+    pickup, smudge trails, airborne dust bloom; Edge blur and gentle form diffusion
   creative_brief: >-
-    Apply chalk pastel atmosphere to any input: powdery transitions, tooth catch, smudge blending, dust halos,
-    matte bloom, and reduced hard edges should build mood without requiring bedtime scenes, landscapes,
-    portraits, seasonal motifs, or a fixed soft-focus subject.
+    Apply Chalk Pastel as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Chalk pastel illustration with atmospheric soft-focus blending, Smudged transitions, dust halos,
+    matte bloom highlights, Strong paper tooth pickup, smudge trails, airborne dust bloom without
+    requiring the card image's original subject.
 avoidRules:
   - sharp
   - pen
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - plastic toy render
+  - generic stock children art
+  - overly complex anatomy
+  - fake readable labels
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-028.webp
 attributes:
-  negativePrompt: sharp, pen
+  negativePrompt: >-
+    sharp, pen, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy
+    render, generic stock children art, overly complex anatomy, fake readable labels
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

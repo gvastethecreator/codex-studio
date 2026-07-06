@@ -12,31 +12,85 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Fake movie night
+  aesthetic: >-
+    Day for Night acts as a transferable cinematic-media router: start from Fake movie night, Day
+    for Night light transport, optical artifacts, exposure discipline, atmosphere depth, and
+    camera-response behavior, Blue cast, dark shadows at noon, noir-at-daylight and portable
+    lighting and atmosphere system built from light transport, exposure behavior, optical
+    distortion, volumetric density, reflection, and camera response, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Day for Night: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Blue tint, tungsten-day conversion, cold moonlight, warm underexposure
-  lighting_and_shadow: Underexposed sun, stop-down daylight, ND-filter trickery
-  texture_and_material: Film, pushed stock, grain-from-underexposure
-  camera_and_composition: Bright sky, dark foreground paradox, impossible contrast
-  atmosphere_and_mood: Moonlight, fake, studio night, theatrical illusion
-  rendering_and_quality: Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief
-  key_features: Blue cast, dark shadows at noon, noir-at-daylight
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Day for Night: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Blue tint, tungsten-day conversion, cold moonlight, warm underexposure; use
+    color as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night
+    conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Underexposed sun, stop-down daylight, ND-filter trickery; make the named
+    light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric
+    rays, split contrast, or softbox falloff, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Film, pushed stock, grain-from-underexposure; surface detail should reveal particles,
+    lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical
+    streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Luminous sky plane against underexposed subject planes, impossible
+    contrast, staged exposure paradox; compose around light direction, reflection planes, depth
+    layers, exposure zones, silhouette edges, lens distortion, or atmospheric perspective without
+    forcing a location, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the
+    style work.
+  atmosphere_and_mood: >-
+    Keep the mood Moonlight, fake, studio night, theatrical illusion; derive mood from illumination
+    physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or
+    temporal flash energy, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Cinematic, uncanny, old-Hollywood cheat, suspension of disbelief; finish with
+    believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather
+    than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Fake movie night, Day for Night light transport, optical artifacts, exposure discipline,
+    atmosphere depth, and camera-response behavior; Blue cast, dark shadows at noon,
+    noir-at-daylight; Blue tint, tungsten-day conversion, cold moonlight, warm underexposure; Film,
+    pushed stock, grain-from-underexposure; Luminous sky plane against underexposed subject planes,
+    impossible contrast, staged exposure paradox
   creative_brief: >-
-    Use day-for-night as a visible cinematic cheat: daylight underexposed into false moonlight, blue
-    filtration, crushed foregrounds, and impossible bright-sky contrast. Avoid requiring outdoor noon scenes
-    or old-Hollywood sets. The output should feel like night manufactured by camera exposure rather than true
-    darkness. Apply Day for Night as a portable cinematic/camera style over any input: preserve its lens
-    behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
-    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Apply Day for Night as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Fake movie night, Day for Night light transport, optical
+    artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Blue cast, dark
+    shadows at noon, noir-at-daylight, Film, pushed stock, grain-from-underexposure without
+    requiring the card image's original subject.
 avoidRules:
   - real night
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-071.webp
 attributes:
-  negativePrompt: real night
+  negativePrompt: >-
+    real night, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

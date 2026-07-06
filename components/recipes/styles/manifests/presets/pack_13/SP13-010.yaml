@@ -13,43 +13,84 @@ tags:
   - anime
 visualDna:
   aesthetic: >-
-    Isekai travel anime language with warm exploratory spirit, class-coded styling, fantasy worldbuilding
-    clarity, and friendly journey momentum
+    Isekai Forest Caravan operates as a portable anime-lifestyle router: combine Isekai Forest
+    Caravan identity cues through Class distinct design language; travel texture cues; gear like
+    silhouette markers; and path to horizon compositional flow; Isekai Forest Caravan anime style
+    cues; Isekai travel anime language with warm exploratory spirit with core anime character and
+    adventure grammar with cel contour hierarchy, expressive acting, readable silhouette, genre
+    clarity, and clean TV to key visual polish, so the preset supplies anime style behavior after
+    prompt X rather than a required scene, character, franchise image, or card composition.
   subject_treatment: >-
-    Role-coded silhouettes, layered travel-flow lines, accessory-like readability cues, and forward-motion
-    composition arcs
-  color_and_tone: Forest greens, mossy neutrals, warm leather browns, soft gold accents, and sky-filtered natural highlights
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    line-weight hierarchy, pose-first shape design, simplified interior detail, readable costume or
+    surface cues, and emotion-led facial or object emphasis; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
+  color_and_tone: >-
+    Map color through clear cel values, saturated accents, stable skin or material midtones, sky or
+    neon support color, and disciplined complementary contrast; keep cel values readable, accent
+    roles intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Leaf-filtered key light, dappled bounce, soft shadow pooling, and warm rim accents on travel-texture focal
-    points
+    Use binary cel shadow, gentle rim, effect glow when requested, broadcast friendly key light, and
+    clean value separation; lighting should clarify expression, silhouette, material, and emotional
+    rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Handworked wood grain, stitched travel fabrics, worn leather straps, forged low-polish metal fittings, and
-    dust-softened surfaces
+    Render flat cel fills, painted distant plane softness, limited grain, clean ink edges,
+    controlled effect overlays, and low noise finish; keep line, paint, textile, glass, paper,
+    sensor, grain, or effect textures controlled enough to route style without noisy surface
+    chatter.
   camera_and_composition: >-
-    Layered journey composition using mild depth compression to keep subject readability without losing world
-    scale
-  atmosphere_and_mood: Adventurous, friendly, curious, and road-forward
+    Compose through silhouette-priority framing, moderate dynamic lensing, readable action or
+    emotion lanes, and subject-first depth without required genre staging as reusable anime framing
+    grammar, allowing close acting, objects, performances, action, environments, or abstract prompts
+    without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through heroic resolve, genre wonder, kinetic focus, gothic pressure, magical uplift,
+    or final episode tenderness guided by prompt X; the preset can become cute, sensual, severe,
+    comic, romantic, violent, strange, or quiet when prompt X asks while preserving its anime
+    lineage.
   rendering_and_quality: >-
-    Ensemble-aware anime rendering with clear hierarchy, environmental cohesion, and reliable small-card
-    legibility
+    Finish with premium cel anime clarity with stable anatomy or object structure, crisp lines,
+    denoised color blocks, no fake text, and no 3D render drift; prioritize stable anatomy or object
+    structure, clean denoise, readable effects, no watermark, no fake readable text, no UI, and no
+    generic AI anime gloss.
   key_features: >-
-    Class-distinct design language, travel-texture cues, gear-like silhouette markers, and path-to-horizon
-    compositional flow
+    Class distinct design language; travel texture cues; gear like silhouette markers; and path to
+    horizon compositional flow; Isekai Forest Caravan anime style cues; Isekai travel anime language
+    with warm exploratory spirit
   creative_brief: >-
-    Use Isekai Forest Caravan as style anchor for warm fantasy travel: class-readable silhouettes,
-    nature-filtered light, and journey-centric texture should transfer without requiring forest, caravan,
-    party members, mounts, or travel props.
+    Use Isekai Forest Caravan after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Class
+    distinct design language, travel texture cues, gear like silhouette markers, and path to horizon
+    compositional flow, Isekai Forest Caravan anime style cues, Isekai travel anime language with
+    warm exploratory spirit, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - photoreal
-  - sci-fi-city
-  - low-detail
+  - sci fi city
+  - low detail
   - watermark
   - text
   - logo
+  - generic anime filter
+  - canon cast copy
+  - source frame look composition
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-010.webp
 attributes:
-  negativePrompt: photoreal, sci-fi-city, low-detail, watermark, text, logo
+  negativePrompt: >-
+    photoreal, sci fi city, low detail, watermark, text, logo, generic anime filter, canon cast
+    copy, source frame look composition, canon character copy, title scene copy, literal sample card
+    setup, fixed anime cast, prompt literal card reuse, readable text, fake UI, photoreal cosplay,
+    3D render look, copied franchise costume, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

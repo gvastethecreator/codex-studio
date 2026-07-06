@@ -14,19 +14,41 @@ tags:
   - hunter-gothic-and-plague-courts
   - hunter-gothic
 visualDna:
-  aesthetic: Moonlit gothic hunter fantasy with long coats, sharp silhouettes, wet stone, and monstrous unease.
+  aesthetic: >-
+    Moonlit gothic hunter fantasy with long coats, sharp silhouettes, wet stone, and monstrous
+    unease.
   subject_treatment: >-
-    A lean rooftop beast-hunter in side profile with a hook lantern, crescent trap, high collar, and moonlit
-    pursuit posture; not a plague doctor.
+    Transform any subject with moonlit hunter-gothic tension: lean pursuit silhouette, high-collar
+    shape rhythm, hook-lantern glow as optional accent, crescent trap geometry, and predatory
+    side-profile energy without forcing a rooftop hunter persona.
   color_and_tone: Blue-black night, wet charcoal, tarnished silver, candle amber, and restrained crimson accents.
-  lighting_and_shadow: Moon rim light and simple lantern pools create high-contrast silhouettes with readable costume detail.
+  lighting_and_shadow: >-
+    Moon rim light and simple lantern pools create high-contrast silhouettes with readable costume
+    detail.
   texture_and_material: Oiled leather, wet cobblestone, tarnished buckles, wool, soot, fog, and scratched metal.
-  camera_and_composition: Street-level perspective, oblique rooftops, narrow alleys, and vertical gothic architecture.
-  atmosphere_and_mood: Paranoid, nocturnal, elegant, and threatening without explicit gore.
+  camera_and_composition: >-
+    Oblique gothic verticals, roofline-like diagonals, moonlit negative space, narrow pursuit lanes,
+    and side-profile tension without naming a fixed urban set.
+  atmosphere_and_mood: >-
+    Carry the prompt through Paranoid, nocturnal, elegant, and threatening without explicit gore;
+    nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious
+    candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine
+    identity.
   rendering_and_quality: >-
-    Dark gothic digital illustration with refined costume detail, clean reflections, defined lines, and
-    controlled haze.
-  creative_brief: Reusable hunter-gothic visual language for portraits, monsters, architecture, props, or action scenes.
+    Dark gothic digital illustration with refined costume detail, clean reflections, defined lines,
+    and controlled haze.
+  creative_brief: >-
+    Route any subject through moonlit hunter gothic style mechanics: preserve the prompt while
+    adding nocturnal pursuit tension, gothic verticals, leather and moon material cues, and
+    restrained predator elegance without requiring a hunter character. Apply after prompt X: prompt
+    X supplies subject, action, setting, tone, and intensity, while this preset supplies a style
+    grammar of Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp
+    silhouettes; wet stone; monstrous unease; high collar shape rhythm, mood, material behavior,
+    framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic,
+    fixed monster, readable text, or sample-card composition.
+  key_features: >-
+    Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet
+    stone; monstrous unease; high collar shape rhythm
 avoidRules:
   - bright daylight
   - superhero costume
@@ -35,10 +57,20 @@ avoidRules:
   - explicit gore
   - watermark
   - text
+  - vampire portrait default
+  - plague doctor prop lock
+  - candle room dependency
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-007.webp
 attributes:
-  negativePrompt: bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore, watermark, text
+  negativePrompt: >-
+    bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore,
+    watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency,
+    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
+    art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

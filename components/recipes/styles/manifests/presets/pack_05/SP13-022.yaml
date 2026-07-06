@@ -14,24 +14,75 @@ tags:
   - action
 visualDna:
   aesthetic: >-
-    Vertigo-height energy crossing, aerial pressure, luminous collision rhythm, heroic tension as abstract
-    directional force.
+    Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy
+    Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds router:
+    Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous collision
+    rhythm, heroic tension as abstract directional force, Firm contours, extreme diagonal posture;
+    combine it with portable anime action-setpiece grammar with motion vectors, impact timing,
+    forced perspective, energy readability, and battle-keyframe clarity; named titles, studios, or
+    lineage words may guide style, but they must not require canon cast, title-scene replication,
+    screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Firm contours, extreme diagonal posture, crossing impact vectors, sharp contour snap, and readable kinetic
-    silhouettes.
-  color_and_tone: Cyan, fire orange, and deep black.
-  lighting_and_shadow: High backlight, shock flare, cyan-orange rim clash, and luminous particle edges.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Vertigo
+    Energy Cross Style, Vertigo Energy Cross Style acts as a transferable anime-battle/worlds
+    router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial pressure, luminous
+    collision rhythm as portable contour, motion grammar, surface language, and emotional pressure
+    without requiring canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through high-contrast action color, electric accents, dark support values, flash
+    whites, danger reds, and clean separation for speed; let Vertigo Energy Cross Style, Vertigo
+    Energy Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross
+    Style, Vertigo-height energy crossing, aerial pressure, luminous collision rhythm choose accent
+    intensity, value contrast, emotional temperature, and power-system separation while staying
+    attached to prompt X.
+  lighting_and_shadow: >-
+    Use burst flashes, hard rim, energy cross-light, thunder glow, spark cuts, and motion-streak
+    highlights; make light clarify impact, silhouette, machinery or magic, material depth, and mood
+    from Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable
+    anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial
+    pressure, luminous collision rhythm without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Fractured energy grain, wind-sheared cloth texture, glowing particulate dust, and clean cel-surface
-    polish.
-  camera_and_composition: Wide-angle vertigo, crossing-vector depth, lifted horizon pressure, and dramatic negative-space height.
-  atmosphere_and_mood: Epic, elevated, kinetic, tense.
-  rendering_and_quality: Maximum clarity action illustration with strong silhouette readability and crisp energy separation.
-  key_features: Crossing energy vectors, vertigo framing, luminous trails, high backlight, clean impact readability.
+    Render dust plumes, grit overlays, sparks, shockwave haze, motion smears, smoke, and denoised
+    effect texture; keep the tactile or effect cues in Vertigo Energy Cross Style, Vertigo Energy
+    Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style,
+    Vertigo-height energy crossing, aerial pressure, luminous collision rhythm controlled, denoised,
+    and coherent across bodies, objects, environments, abstractions, and action.
+  camera_and_composition: >-
+    Frame through forced perspective, vertigo angles, vector discharge, monumental impact scale,
+    upward momentum, and compressed depth lanes; convert Vertigo Energy Cross Style, Vertigo Energy
+    Cross Style acts as a transferable anime-battle/worlds router: Vertigo Energy Cross Style,
+    Vertigo-height energy crossing, aerial pressure, luminous collision rhythm into reusable
+    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
+    sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through urgency, adrenaline, vertigo, release, danger, heroic pressure, and imminent
+    collision; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic,
+    romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.
+  rendering_and_quality: >-
+    Finish with sharp combat-keyframe finish with instant readability, stable action anatomy,
+    controlled denoise, and no static-pose drift; prioritize stable anatomy or object structure,
+    readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake
+    readable text, no signature, no photoreal or 3D-render drift.
+  key_features: >-
+    Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable
+    anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial
+    pressure, luminous collision rhythm; motion-ready silhouette, directional force bands,
+    impact-safe anatomy or object deformation, and readable effect hierarchy; dust plumes, grit
+    overlays, sparks, shockwave haze, motion smears, smoke, and denoised effect texture; forced
+    perspective, vertigo angles, vector discharge, monumental impact scale, upward momentum, and
+    compressed depth lanes; sharp combat-keyframe finish with instant readability, stable action
+    anatomy, controlled denoise, and no static-pose drift
   creative_brief: >-
-    Render any subject with elevated collision energy: cyan-orange force lines, high backlight, vertigo depth,
-    and crossing luminous trails should create aerial intensity without fixed characters, props, environment,
-    or confrontation premise.
+    Apply Vertigo Energy Cross Style after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Vertigo Energy Cross Style, Vertigo Energy Cross Style acts as a transferable
+    anime-battle/worlds router: Vertigo Energy Cross Style, Vertigo-height energy crossing, aerial
+    pressure, luminous collision rhythm, heroic tension as abstract directional force, Firm
+    contours, extreme diagonal posture, portable anime action-setpiece grammar with motion vectors,
+    impact timing, forced perspective, energy readability, and battle-keyframe clarity, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - photoreal
   - calm-composition
@@ -39,10 +90,26 @@ avoidRules:
   - watermark
   - text
   - logo
+  - static pose
+  - low-detail blur
+  - photoreal stunt photo
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - signature
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-022.webp
 attributes:
-  negativePrompt: photoreal, calm-composition, blur-only, watermark, text, logo
+  negativePrompt: >-
+    photoreal, calm-composition, blur-only, watermark, text, logo, static pose, low-detail blur,
+    photoreal stunt photo, fixed canon character, title scene replication, required source-frame
+    look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy
+    darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

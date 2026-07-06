@@ -7,269 +7,406 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP04-013',
     name: 'Chibi Style',
     category: "2. Children's Illustration",
-    negativePrompt: 'tall, realistic',
+    negativePrompt:
+      'tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Chibi super-deformed character language with mascot-forward charm',
-      subject_treatment: 'Thick clean outlines and simplified interior detail economy',
-      color_and_tone: 'Bright candy-saturated palette with high contrast readability',
-      lighting_and_shadow: 'Flat cel shading with minimal soft ambient accents',
-      texture_and_material: 'Smooth digital finish with toy-like surface clarity',
-      camera_and_composition: 'Extreme head-to-body ratio (~2 heads tall)',
-      atmosphere_and_mood: 'Playful, comedic, lighthearted',
-      rendering_and_quality: 'Highly stylized cute rendering tuned for instant emotional read',
-      key_features: 'Oversized head, tiny limbs, exaggerated props and expression icons',
+      aesthetic:
+        'Chibi Style acts as a transferable illustration router: start from Chibi super-deformed designed subjects language with mascot-forward charm, Oversized head, tiny limbs, exaggerated props and expression icons and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Thick clean outlines and simplified interior detail economy; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Bright candy-saturated palette with high contrast readability; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat cel shading with minimal soft ambient accents; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth digital finish with toy-like surface clarity; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Extreme head-to-body ratio (~2 heads tall); compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, comedic, lighthearted, mood carried by Chibi Style craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Highly stylized cute rendering tuned for instant emotional read; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Chibi super-deformed designed subjects language with mascot-forward charm; Oversized head, tiny limbs, exaggerated props and expression icons; Bright candy-saturated palette with high contrast readability; Smooth digital finish with toy-like surface clarity; Extreme head-to-body ratio (~2 heads tall)',
       creative_brief:
-        'Prioritize silhouette charm through extreme proportion stylization. If a character or mascot exists, use oversized head, tiny limbs and expression icons; otherwise apply the style to any input by translating the subject into bouncy simplified chibi proportions usable across stickers, panels and UI-style contexts.',
+        "Apply Chibi Style as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Chibi super-deformed designed subjects language with mascot-forward charm, Oversized head, tiny limbs, exaggerated props and expression icons, Smooth digital finish with toy-like surface clarity without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-017',
     name: 'Watercolor Storybook',
     category: "2. Children's Illustration",
-    negativePrompt: 'digital, sharp',
+    negativePrompt:
+      'digital, sharp, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Classic watercolor storybook illustration (Beatrix Potter influence)',
-      subject_treatment: 'Light pencil underdrawing with delicate ink-free contour suggestion',
-      color_and_tone: 'Botanical pastels, warm neutrals, and transparent wash layering',
-      lighting_and_shadow: 'Soft diffuse daylight with preserved paper-white highlights',
-      texture_and_material: 'Cold-press paper grain, bloom edges, and wet-on-dry detail contrast',
-      camera_and_composition: 'Mildly anthropomorphic and soft-proportioned character stylization',
-      atmosphere_and_mood: 'Tender, pastoral, comforting',
-      rendering_and_quality: 'Gentle handcrafted finish with nursery-book readability',
-      key_features: 'White-space breathing room, feathered wash edges, subtle detail accents',
+      aesthetic:
+        'Watercolor Storybook acts as a transferable illustration router: start from Classic watercolor storybook illustration (Beatrix Potter influence), White-space breathing interior volume, feathered wash edges, subtle detail accents and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Light pencil underdrawing with delicate ink-free contour suggestion; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Botanical pastels, warm neutrals, and transparent wash layering; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Soft diffuse daylight with preserved paper-white highlights; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Cold-press paper grain, bloom edges, and wet-on-dry detail contrast; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Mildly anthropomorphic and soft-proportioned designed subjects stylization; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Tender, pastoral, comforting, mood carried by Watercolor Storybook craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Gentle handcrafted finish with nursery-book readability; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Classic watercolor storybook illustration (Beatrix Potter influence); White-space breathing interior volume, feathered wash edges, subtle detail accents; Botanical pastels, warm neutrals, and transparent wash layering; Cold-press paper grain, bloom edges, and wet-on-dry detail contrast; Mildly anthropomorphic and soft-proportioned designed subjects stylization',
       creative_brief:
-        'Apply watercolor storybook warmth to any input: transparent washes, cold-press paper grain, soft edge transitions, observational detail, and paper-white breathing space should feel gentle and timeless without requiring animals, gardens, cottages, children, pastoral scenery, or fixed storybook vignettes.',
+        "Apply Watercolor Storybook as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Classic watercolor storybook illustration (Beatrix Potter influence), White-space breathing interior volume, feathered wash edges, subtle detail accents, Cold-press paper grain, bloom edges, and wet-on-dry detail contrast without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-018',
     name: 'Paper Cutout (Collage)',
     category: "2. Children's Illustration",
-    negativePrompt: 'drawn, painted',
+    negativePrompt:
+      'drawn, painted, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Painted paper-collage storybook language (Eric Carle influence)',
-      subject_treatment: 'Hand-cut silhouette shapes with irregular scissor contours',
-      color_and_tone: 'Tissue-paper primaries and secondaries with matte gouache-like variation',
-      lighting_and_shadow: 'Shallow cast shadows from stacked paper layers',
-      texture_and_material: 'Visible paper fiber, torn edges, paint mottling',
-      camera_and_composition: 'Simplified forms and modular layered depth planes',
-      atmosphere_and_mood: 'Bright, playful, exploratory, classroom-friendly',
-      rendering_and_quality: 'Handmade tactile collage finish with child-facing readability',
-      key_features: 'Overlap stratification, cut-edge rhythm, texture-rich color blocks',
+      aesthetic:
+        'Paper Cutout (Collage) acts as a transferable illustration router: start from Painted paper-collage storybook language (Eric Carle influence), Overlap stratification, cut-edge rhythm, texture-rich color blocks and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Hand-cut silhouette shapes with irregular scissor contours; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Tissue-paper primaries and secondaries with matte gouache-like variation; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Shallow cast shadows from stacked paper layers; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Visible paper fiber, torn edges, paint mottling; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Simplified forms and modular layered depth planes; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Bright, playful, exploratory, classroom-friendly, mood carried by Paper Cutout (Collage) craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Handmade tactile collage finish with child-facing readability; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Painted paper-collage storybook language (Eric Carle influence); Overlap stratification, cut-edge rhythm, texture-rich color blocks; Tissue-paper primaries and secondaries with matte gouache-like variation; Visible paper fiber, torn edges, paint mottling; Simplified forms and modular layered depth planes',
       creative_brief:
-        'Apply painted cut-paper collage to any input: irregular scissor edges, tissue-paper color blocks, shallow cast shadows, fiber texture, and clear shape hierarchy should replace drawn contour modeling without requiring classroom subjects, animals, pages, props, or fixed story scenes.',
+        "Apply Paper Cutout (Collage) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Painted paper-collage storybook language (Eric Carle influence), Overlap stratification, cut-edge rhythm, texture-rich color blocks, Visible paper fiber, torn edges, paint mottling without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-019',
     name: 'Crayon Drawing',
     category: "2. Children's Illustration",
-    negativePrompt: 'professional, smooth',
+    negativePrompt:
+      'professional, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Childlike crayon illustration with naive expressive immediacy',
-      subject_treatment: 'Waxy pressure-variable strokes with uneven contour control',
-      color_and_tone: 'Bright primary/secondary crayon set with spontaneous overlap',
-      lighting_and_shadow: 'Flat paper-based lighting; value implied by stroke density',
-      texture_and_material: 'Heavy wax buildup and visible paper tooth drag',
-      camera_and_composition: 'Simplified anatomy and playful proportion exaggeration',
-      atmosphere_and_mood: 'Joyful, innocent, spontaneous',
-      rendering_and_quality: 'Deliberately unpolished, sincere, hand-made mark quality',
-      key_features: 'Uneven fill, directional scribble, layered wax bloom',
+      aesthetic:
+        'Crayon Drawing acts as a transferable illustration router: start from Childlike crayon illustration with naive expressive immediacy, Uneven fill, directional scribble, layered wax bloom and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Waxy pressure-variable strokes with uneven contour control; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Bright primary/secondary crayon set with spontaneous overlap; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat paper-based lighting; value implied by stroke density; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Heavy wax buildup and visible paper tooth drag; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Simplified anatomy and playful proportion exaggeration; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Joyful, innocent, spontaneous, mood carried by Crayon Drawing craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Deliberately unpolished, sincere, hand-made mark quality; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Childlike crayon illustration with naive expressive immediacy; Uneven fill, directional scribble, layered wax bloom; Bright primary/secondary crayon set with spontaneous overlap; Heavy wax buildup and visible paper tooth drag; Simplified anatomy and playful proportion exaggeration',
       creative_brief:
-        'Apply childlike crayon energy to any input: wax pressure changes, imperfect fill boundaries, visible paper tooth, simplified forms, and spontaneous overlap should keep the style direct without requiring children, stick figures, suns, houses, classroom pages, or fixed pose cliches.',
+        "Apply Crayon Drawing as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Childlike crayon illustration with naive expressive immediacy, Uneven fill, directional scribble, layered wax bloom, Heavy wax buildup and visible paper tooth drag without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-020',
     name: 'Kurzgesagt Vector Flat (Infographic)',
     category: "2. Children's Illustration",
-    negativePrompt: 'outline, texture',
+    negativePrompt:
+      'outline, texture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Flat educational infographic system (Kurzgesagt-inspired visual pedagogy)',
-      subject_treatment: 'Outline-minimal geometric primitives with rounded construction logic',
-      color_and_tone: 'Vibrant flat-spectrum channels with strong semantic color grouping',
-      lighting_and_shadow: 'Shadow-light simplified to subtle flat-shape value separation',
-      texture_and_material: 'Pure vector cleanliness with no analog artifacting',
-      camera_and_composition: 'Simplified isometric/orthographic-friendly shape grammar',
-      atmosphere_and_mood: 'Optimistic, informative, high-clarity',
-      rendering_and_quality: 'Screen-optimized explainer clarity and modular consistency',
-      key_features: 'Modular icon blocks, geometric metaphors, hierarchy-first composition',
+      aesthetic:
+        'Kurzgesagt Vector Flat (Infographic) acts as a transferable illustration router: start from Flat educational infographic system (Kurzgesagt-inspired visual pedagogy), Modular icon blocks, geometric metaphors, hierarchy-first composition and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Outline-minimal geometric primitives with rounded construction logic; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Vibrant flat-spectrum channels with strong semantic color grouping; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Shadow-light simplified to subtle flat-shape value separation; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Pure vector cleanliness with no analog artifacting; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Simplified isometric/orthographic-friendly shape grammar; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Optimistic, informative, high-clarity, mood carried by Kurzgesagt Vector Flat (Infographic) craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Screen-optimized explainer clarity and modular consistency; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Flat educational infographic system (Kurzgesagt-inspired visual pedagogy); Modular icon blocks, geometric metaphors, hierarchy-first composition; Vibrant flat-spectrum channels with strong semantic color grouping; Pure vector cleanliness with no analog artifacting; Simplified isometric/orthographic-friendly shape grammar',
       creative_brief:
-        'Apply flat educational vector grammar to any input: geometric primitives, semantic color coding, modular icon blocks, rounded construction, and hierarchy-first composition should explain form clearly without requiring charts, planets, birds, UI labels, narration panels, or fixed explainer scenes.',
+        "Apply Kurzgesagt Vector Flat (Infographic) as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Flat educational infographic system (Kurzgesagt-inspired visual pedagogy), Modular icon blocks, geometric metaphors, hierarchy-first composition, Pure vector cleanliness with no analog artifacting without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-021',
     name: 'Gouache Illustration',
     category: "2. Children's Illustration",
-    negativePrompt: 'transparent, watercolor',
+    negativePrompt:
+      'transparent, watercolor, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
       aesthetic:
-        'Mid-century gouache modernism with playful geometric warmth and simplified educational storytelling clarity',
+        'Gouache Illustration acts as a transferable illustration router: start from Mid-century gouache modernism with playful geometric warmth and simplified educational storytelling clarity, Brush texture, dry-brush stroke, gouache opacity and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Dry-brush edge variation with soft geometric contour blocking and shape-first compositional rhythm',
-      color_and_tone: 'Opaque, matte, chalk-finish spectrum, design-flat contrast',
-      lighting_and_shadow: 'Flat, even matte illumination, mid-century glow',
-      texture_and_material: 'Chalky paint',
-      camera_and_composition: 'Stylized shapes',
-      atmosphere_and_mood: 'Colorful, design, atomic-age optimism, playful modernism',
+        'Transform any prompt subject through Dry-brush edge variation with soft geometric contour blocking and shape-first compositional rhythm; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Opaque, matte, chalk-finish spectrum, design-flat contrast; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat, even matte illumination, mid-century glow; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Chalky paint, friendly shape language, handmade surface evidence, simplified readable forms, and storybook composition discipline; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Stylized shapes, scale rhythm, edge hierarchy, spacing, and composition rules specific to Gouache Illustration; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Colorful, design, atomic-age optimism, playful modernism; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
       rendering_and_quality:
-        'Retro-gouache illustrative finish emphasizing opaque shape design, friendly abstraction, and color-led narrative legibility',
-      key_features: 'Brush texture, dry-brush stroke, gouache opacity',
+        'Finish with Retro-gouache illustrative finish emphasizing opaque shape design, friendly abstraction, and color-led narrative legibility; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Mid-century gouache modernism with playful geometric warmth and simplified educational storytelling clarity; Brush texture, dry-brush stroke, gouache opacity; Opaque, matte, chalk-finish spectrum, design-flat contrast; Chalky paint, friendly shape language, handmade surface evidence, simplified readable forms, and storybook composition discipline; Stylized shapes, scale rhythm, edge hierarchy, spacing, and composition rules specific to Gouache Illustration',
       creative_brief:
-        'Apply mid-century gouache design to any input: opaque geometric shape choreography, dry-brush texture, chalky matte color, and warm optimistic relationships should carry the style without requiring classrooms, posters, families, interiors, product diagrams, or specific studio references.',
+        "Apply Gouache Illustration as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Mid-century gouache modernism with playful geometric warmth and simplified educational storytelling clarity, Brush texture, dry-brush stroke, gouache opacity, Chalky paint, friendly shape language, handmade surface evidence, simplified readable forms, and storybook composition discipline without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-022',
     name: 'Colored Pencil',
     category: "2. Children's Illustration",
-    negativePrompt: 'ink, paint',
+    negativePrompt:
+      'ink, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Soft colored-pencil sketch language with layered pigment build-up',
-      subject_treatment: 'Fine pencil contour and hatch strokes with directional grain',
-      color_and_tone: 'Muted warm-cool pencil layers with gradual tonal blending',
-      lighting_and_shadow: 'Diffuse paper-white illumination with low-contrast form modeling',
-      texture_and_material: 'Pronounced tooth interaction and dry pigment granulation',
-      camera_and_composition: 'Gentle edge falloff and softened structural transitions',
-      atmosphere_and_mood: 'Quiet, reflective, domestic warmth',
-      rendering_and_quality: 'Intimate sketchbook finish emphasizing hand pressure nuance',
-      key_features: 'Layered glazing, crosshatch modulation, stump-like soft blending',
+      aesthetic:
+        'Colored Pencil acts as a transferable illustration router: start from Soft colored-pencil sketch language with layered pigment build-up, Layered glazing, crosshatch modulation, stump-like soft blending and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Fine pencil contour and hatch strokes with directional grain; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Muted warm-cool pencil layers with gradual tonal blending; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Diffuse paper-white illumination with low-contrast form modeling; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Pronounced tooth interaction and dry pigment granulation; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Gentle edge falloff and softened structural transitions; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Quiet, reflective, domestic warmth, mood carried by Colored Pencil craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Intimate sketchbook finish emphasizing hand pressure nuance; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Soft colored-pencil sketch language with layered pigment build-up; Layered glazing, crosshatch modulation, stump-like soft blending; Muted warm-cool pencil layers with gradual tonal blending; Pronounced tooth interaction and dry pigment granulation; Gentle edge falloff and softened structural transitions',
       creative_brief:
-        'Apply colored-pencil sketch language to any input: incremental pigment layering, visible stroke direction, paper-tooth drag, soft-edge transitions, and subtle value shifts should stay calm and portable without requiring sketchbooks, domestic scenes, portraits, still lifes, or fixed props.',
+        "Apply Colored Pencil as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Soft colored-pencil sketch language with layered pigment build-up, Layered glazing, crosshatch modulation, stump-like soft blending, Pronounced tooth interaction and dry pigment granulation without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-024',
     name: 'Claymation Style',
     category: "2. Children's Illustration",
-    negativePrompt: '2d, drawn',
+    negativePrompt:
+      '2d, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Plasticine stop-motion aesthetic (Aardman-inspired tactile charm)',
-      subject_treatment: 'Sculpted volume with minimal drawn contour reliance',
-      color_and_tone: 'Matte clay chroma set with earthy and playful saturation balance',
-      lighting_and_shadow: 'Controlled studio key-fill to maintain frame-consistent form read',
-      texture_and_material: 'Fingerprint impressions, sculpt-tool seams, soft clay compression',
-      camera_and_composition: 'Chunky silhouettes and compressed proportion stylization',
-      atmosphere_and_mood: 'Whimsical, handcrafted, comedic warmth',
-      rendering_and_quality: 'Hand-built stop-motion look with physical model believability',
-      key_features: 'Tactile surface dents, clay seam lines, armature-informed posing hints',
+      aesthetic:
+        'Claymation Style acts as a transferable illustration router: start from Plasticine stop-motion aesthetic (Aardman-inspired tactile charm), Tactile surface dents, clay seam lines, armature-informed posing hints and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Sculpted volume with minimal drawn contour reliance; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Matte clay chroma set with earthy and playful saturation balance; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Controlled studio key-fill to maintain frame-consistent form read; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Fingerprint impressions, sculpt-tool seams, soft clay compression; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Chunky silhouettes and compressed proportion stylization; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Whimsical, handcrafted, comedic warmth, mood carried by Claymation Style craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Hand-built stop-motion look with physical model believability; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Plasticine stop-motion aesthetic (Aardman-inspired tactile charm); Tactile surface dents, clay seam lines, armature-informed posing hints; Matte clay chroma set with earthy and playful saturation balance; Fingerprint impressions, sculpt-tool seams, soft clay compression; Chunky silhouettes and compressed proportion stylization',
       creative_brief:
-        'Apply plasticine stop-motion tactility to any input: fingerprints, seam traces, chunky silhouettes, matte clay chroma, and armature-informed posing should preserve physical model charm without requiring comedy characters, sets, props, studios, or hard-coded pose beats.',
+        "Apply Claymation Style as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Plasticine stop-motion aesthetic (Aardman-inspired tactile charm), Tactile surface dents, clay seam lines, armature-informed posing hints, Fingerprint impressions, sculpt-tool seams, soft clay compression without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-025',
     name: 'Felt Tip Marker',
     category: "2. Children's Illustration",
-    negativePrompt: 'paint, blend',
+    negativePrompt:
+      'paint, blend, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Felt-tip/alcohol-marker illustration with spontaneous saturation behavior',
-      subject_treatment: 'Broad marker strokes, edge bleed, and overlap-driven contour definition',
-      color_and_tone: 'High-saturation marker gamut with layered translucent mixes',
-      lighting_and_shadow: 'Flat-to-minimal light modeling via tonal marker passes',
-      texture_and_material: 'Absorbent paper bleed, feathered edges, occasional smudge drag',
-      camera_and_composition: 'Loose perspective and gestural simplification',
-      atmosphere_and_mood: 'Casual, energetic, improvised',
-      rendering_and_quality: 'Bold sketchbook immediacy with visible hand-speed decisions',
-      key_features: 'Stroke stacking, bleed halos, quick gradient blends via overlap',
+      aesthetic:
+        'Felt Tip Marker acts as a transferable illustration router: start from Felt-tip/alcohol-marker illustration with spontaneous saturation behavior, Stroke stacking, bleed halos, quick gradient blends via overlap and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Broad marker strokes, edge bleed, and overlap-driven contour definition; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with High-saturation marker gamut with layered translucent mixes; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat-to-minimal light modeling via tonal marker passes; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Absorbent paper bleed, feathered edges, occasional smudge drag; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Loose perspective and gestural simplification; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Casual, energetic, improvised, mood carried by Felt Tip Marker craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Bold sketchbook immediacy with visible hand-speed decisions; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Felt-tip/alcohol-marker illustration with spontaneous saturation behavior; Stroke stacking, bleed halos, quick gradient blends via overlap; High-saturation marker gamut with layered translucent mixes; Absorbent paper bleed, feathered edges, occasional smudge drag; Loose perspective and gestural simplification',
       creative_brief:
-        'Apply felt-tip marker behavior to any input: fast stroke confidence, transparent layering, edge bleed, overlap gradients, feathered paper artifacts, and occasional smudge drag should stay bold and flexible without requiring sketchbook pages, fashion poses, product drawings, or fixed scene cues.',
+        "Apply Felt Tip Marker as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Felt-tip/alcohol-marker illustration with spontaneous saturation behavior, Stroke stacking, bleed halos, quick gradient blends via overlap, Absorbent paper bleed, feathered edges, occasional smudge drag without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-026',
     name: 'Pop-Up Book',
     category: "2. Children's Illustration",
-    negativePrompt: 'flat page',
+    negativePrompt:
+      'flat page, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Pop-up paper-engineering illustration language with dimensional storytelling',
-      subject_treatment: 'Die-cut contours, fold seams, and tab-slot construction edges',
-      color_and_tone: 'Cardstock and kraft-derived tones with accent primaries',
-      lighting_and_shadow: 'Directional page-top light emphasizing fold relief and cast depth',
-      texture_and_material: 'Matte paper surface, crease memory, cut-edge fuzz',
-      camera_and_composition: 'Layered fold-out depth and hinge-driven planar shifts',
-      atmosphere_and_mood: 'Playful, surprising, engineered wonder',
-      rendering_and_quality: 'Structural handcrafted finish with clear mechanism readability',
-      key_features: 'Tabs, slots, folds, lift layers, mechanical page architecture',
+      aesthetic:
+        'Pop-Up Book acts as a transferable illustration router: start from Pop-up paper-engineering illustration language with dimensional storytelling, Tabs, slots, folds, lift layers, mechanical page architecture and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Die-cut contours, fold seams, and tab-slot construction edges; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Cardstock and kraft-derived tones with accent primaries; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Directional page-top light emphasizing fold relief and cast depth; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Matte paper surface, crease memory, cut-edge fuzz; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Layered fold-out depth and hinge-driven planar shifts; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, surprising, engineered wonder, mood carried by Pop-Up Book craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Structural handcrafted finish with clear mechanism readability; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Pop-up paper-engineering illustration language with dimensional storytelling; Tabs, slots, folds, lift layers, mechanical page architecture; Cardstock and kraft-derived tones with accent primaries; Matte paper surface, crease memory, cut-edge fuzz; Layered fold-out depth and hinge-driven planar shifts',
       creative_brief:
-        'Apply pop-up paper-engineering grammar to any input: die-cut contours, fold seams, tab-slot construction, hinge relief, layered cardstock depth, and cast-paper shadows should make forms feel foldable without requiring books, pages, children, mechanisms, theater sets, or fixed narrative scenes.',
+        "Apply Pop-Up Book as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Pop-up paper-engineering illustration language with dimensional storytelling, Tabs, slots, folds, lift layers, mechanical page architecture, Matte paper surface, crease memory, cut-edge fuzz without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-027',
     name: 'Whimsical Ink',
     category: "2. Children's Illustration",
-    negativePrompt: 'heavy, dark',
+    negativePrompt:
+      'heavy, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Loose whimsical ink storybook language (Quentin Blake influence)',
-      subject_treatment: 'Scratchy, fast, expressive nib lines with playful instability',
-      color_and_tone: 'Light watercolor splash accents over black ink skeleton',
-      lighting_and_shadow: 'Natural paper-white lighting with wash-led value hints',
-      texture_and_material: 'Nib chatter, splatter marks, watery bleed pockets',
-      camera_and_composition: 'Elastic proportions and spiky gesture exaggeration',
-      atmosphere_and_mood: 'Humorous, lively, irreverent',
-      rendering_and_quality: 'Mischievous, energetic, deliberately unrefined storybook finish',
-      key_features: 'Ink flicks, broken contour continuity, lively splash punctuation',
+      aesthetic:
+        'Whimsical Ink acts as a transferable illustration router: start from Loose whimsical ink storybook language (Quentin Blake influence), Ink flicks, broken contour continuity, lively splash punctuation and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Scratchy, fast, expressive nib lines with playful instability; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Light watercolor splash accents over black ink skeleton; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Natural paper-white lighting with wash-led value hints; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Nib chatter, splatter marks, watery bleed pockets; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Elastic proportions and spiky gesture exaggeration; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Humorous, lively, irreverent, mood carried by Whimsical Ink craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Mischievous, energetic, deliberately unrefined storybook finish; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Loose whimsical ink storybook language (Quentin Blake influence); Ink flicks, broken contour continuity, lively splash punctuation; Light watercolor splash accents over black ink skeleton; Nib chatter, splatter marks, watery bleed pockets; Elastic proportions and spiky gesture exaggeration',
       creative_brief:
-        'Apply whimsical ink storybook energy to any input: scratchy fast nib lines, broken contours, watercolor splashes, spiky gesture exaggeration, and lively splatter punctuation should carry humor without requiring characters, animals, jokes, children, or fixed story vignettes.',
+        "Apply Whimsical Ink as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Loose whimsical ink storybook language (Quentin Blake influence), Ink flicks, broken contour continuity, lively splash punctuation, Nib chatter, splatter marks, watery bleed pockets without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-028',
     name: 'Chalk Pastel',
     category: "2. Children's Illustration",
-    negativePrompt: 'sharp, pen',
+    negativePrompt:
+      'sharp, pen, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Chalk pastel illustration with atmospheric soft-focus blending',
-      subject_treatment: 'Broad dusty marks with reduced hard-edge dependency',
-      color_and_tone: 'Muted pastel spectrum with powdery warm-cool balance',
-      lighting_and_shadow: 'Diffuse low-contrast illumination through chalk scatter',
-      texture_and_material: 'Strong paper tooth pickup, smudge trails, airborne dust bloom',
-      camera_and_composition: 'Edge blur and gentle form diffusion',
-      atmosphere_and_mood: 'Nostalgic, calm, bedtime softness',
-      rendering_and_quality: 'Dreamlike, velvety, softly resolved pastel finish',
-      key_features: 'Smudged transitions, dust halos, matte bloom highlights',
+      aesthetic:
+        'Chalk Pastel acts as a transferable illustration router: start from Chalk pastel illustration with atmospheric soft-focus blending, Smudged transitions, dust halos, matte bloom highlights and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Broad dusty marks with reduced hard-edge dependency; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Muted pastel spectrum with powdery warm-cool balance; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Diffuse low-contrast illumination through chalk scatter; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Strong paper tooth pickup, smudge trails, airborne dust bloom; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Edge blur and gentle form diffusion; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Nostalgic, calm, bedtime softness, mood carried by Chalk Pastel craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Dreamlike, velvety, softly resolved pastel finish; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Chalk pastel illustration with atmospheric soft-focus blending; Smudged transitions, dust halos, matte bloom highlights; Muted pastel spectrum with powdery warm-cool balance; Strong paper tooth pickup, smudge trails, airborne dust bloom; Edge blur and gentle form diffusion',
       creative_brief:
-        'Apply chalk pastel atmosphere to any input: powdery transitions, tooth catch, smudge blending, dust halos, matte bloom, and reduced hard edges should build mood without requiring bedtime scenes, landscapes, portraits, seasonal motifs, or a fixed soft-focus subject.',
+        "Apply Chalk Pastel as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Chalk pastel illustration with atmospheric soft-focus blending, Smudged transitions, dust halos, matte bloom highlights, Strong paper tooth pickup, smudge trails, airborne dust bloom without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-029',
     name: 'Sticker Art',
     category: "2. Children's Illustration",
-    negativePrompt: 'background',
+    negativePrompt:
+      'background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Die-cut sticker illustration with collectible decal language',
-      subject_treatment: 'Bold simplified contours with thick white cutline margin',
-      color_and_tone: 'Saturated vector palette tuned for print legibility',
-      lighting_and_shadow: 'Controlled vinyl gloss accents and compact specular highlights',
-      texture_and_material: 'Smooth sticker-vinyl finish with subtle laminate sheen',
-      camera_and_composition: 'Simplified silhouettes with icon-like proportion clarity',
-      atmosphere_and_mood: 'Playful, punchy, identity-forward',
-      rendering_and_quality: 'Crisp decal-ready rendering optimized for small-format readability',
-      key_features: 'White border halo, isolated silhouette, peel-and-stick visual grammar',
+      aesthetic:
+        'Sticker Art acts as a transferable illustration router: start from Die-cut sticker illustration with collectible decal language, White border halo, isolated silhouette, peel-and-stick visual grammar and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Bold simplified contours with thick white cutline margin; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Saturated vector palette tuned for print legibility; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Controlled vinyl gloss accents and compact specular highlights; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth sticker-vinyl finish with subtle laminate sheen; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Simplified silhouettes with icon-like proportion clarity; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, punchy, identity-forward, mood carried by Sticker Art craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with Crisp decal-ready rendering optimized for small-format readability; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Die-cut sticker illustration with collectible decal language; White border halo, isolated silhouette, peel-and-stick visual grammar; Saturated vector palette tuned for print legibility; Smooth sticker-vinyl finish with subtle laminate sheen; Simplified silhouettes with icon-like proportion clarity',
       creative_brief:
-        'Apply sticker-art decal grammar to any input: thick white cutline, isolated silhouette, compact vinyl gloss, saturated vector color, and thumbnail-readable edge contrast should make the subject collectible without requiring mascots, icons, slogans, sticker sheets, or peel-off props.',
+        "Apply Sticker Art as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Die-cut sticker illustration with collectible decal language, White border halo, isolated silhouette, peel-and-stick visual grammar, Smooth sticker-vinyl finish with subtle laminate sheen without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP04-030',
     name: 'Scientific Botanical',
     category: "2. Children's Illustration",
-    negativePrompt: 'cartoon, messy',
+    negativePrompt:
+      'cartoon, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels',
     style: {
-      aesthetic: 'Scientific botanical plate in vintage field-guide tradition',
-      subject_treatment: 'Fine controlled ink contour with diagrammatic annotation leaders',
-      color_and_tone: 'Muted watercolor tints over warm archival-paper neutrals',
-      lighting_and_shadow: 'Flat specimen illumination prioritizing structural clarity',
-      texture_and_material: 'Aged paper grain with light wash transparency',
-      camera_and_composition: 'Orthographic specimen layout with sectional/dissected insets',
-      atmosphere_and_mood: 'Taxonomic, scholarly, measured',
-      rendering_and_quality: 'High-accuracy naturalist rendering for educational reference',
-      key_features: 'Nomenclature labels, anatomical callouts, curated specimen grouping',
+      aesthetic:
+        'Scientific Botanical acts as a transferable illustration router: start from Scientific botanical plate in vintage field-guide tradition, Nomenclature labels, anatomical callouts, curated specimen grouping and storybook and friendly-illustration system built from approachable shapes, handmade media, simplified edges, tactile materials, and high-readability charm, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Fine controlled ink contour with diagrammatic annotation leaders; preserve the requested subject while softening, simplifying, miniaturizing, paper-building, mark-making, or diagramming it according to the named medium, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+      color_and_tone:
+        'Build color with Muted watercolor tints over warm archival-paper neutrals; use color through storybook washes, crayon wax, gouache opacity, paper primaries, vector-friendly contrast, pastel dust, marker bleed, or specimen tints, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+      lighting_and_shadow:
+        'Handle light through Flat specimen illumination prioritizing structural clarity; shape light through soft diffuse value, paper layering, flat educational contrast, handmade shadows, or medium-native tonal marks instead of cinematic realism, so value structure supports the illustration process and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Aged paper grain with light wash transparency; surface detail should show paper tooth, cut edges, crayon wax, chalk dust, marker overlap, clay fingerprints, sticker laminate, or watercolor blooms when relevant, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Orthographic specimen layout with sectional/dissected insets; compose with clear silhouettes, readable spacing, playful scale, page-object logic, flat educational layout, or gentle negative space without forcing a nursery scene, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Taxonomic, scholarly, measured, mood carried by Scientific Botanical craft, material pressure, and visual restraint; derive mood from wonder, gentle humor, craft intimacy, educational clarity, bedtime softness, collectibility, or handmade surprise, letting the style alter interpretation without demanding a specific story, location, or actor.',
+      rendering_and_quality:
+        'Finish with High-accuracy naturalist rendering for educational reference; finish with clean accessible illustration, medium-faithful texture, controlled simplicity, and no plasticky render or bland stock-child aesthetic, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+      key_features:
+        'Scientific botanical plate in vintage field-guide tradition; Nomenclature labels, anatomical callouts, curated specimen grouping; Muted watercolor tints over warm archival-paper neutrals; Aged paper grain with light wash transparency; Orthographic specimen layout with sectional/dissected insets',
       creative_brief:
-        'Apply vintage scientific-plate logic to the input: clean ink contour, transparent tinting, annotation hierarchy and orthographic specimen clarity. If flora exists, make morphology botanical; otherwise use field-guide organization without forcing plants or a species study.',
+        "Apply Scientific Botanical as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Scientific botanical plate in vintage field-guide tradition, Nomenclature labels, anatomical callouts, curated specimen grouping, Aged paper grain with light wash transparency without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

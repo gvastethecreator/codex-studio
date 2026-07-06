@@ -13,31 +13,84 @@ tags:
   - animation-styles
 visualDna:
   aesthetic: >-
-    Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic
-    devotion
-  subject_treatment: Brush strokes
-  color_and_tone: Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk
-  lighting_and_shadow: Painted light, brush-rendered glow, canvas-luminosity
-  texture_and_material: Thick impasto, palette-knife ridges, bristle strokes, layered scumble
-  camera_and_composition: Swirling brush current, paint-flow drift, animated impasto displacement
-  atmosphere_and_mood: Artistic, emotional, painterly devotion, melancholic beauty
-  rendering_and_quality: Masterpiece, moving art, frame-by-frame painting, gallery-grade
-  key_features: Brush direction, visible stroke, canvas weave, palette texture
+    Oil Paint Animation acts as a transferable cinematic-media router: start from Moving oil-paint
+    canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer artistic devotion,
+    Brush direction, visible stroke, canvas weave, palette texture and animation-production system
+    built from motion-era drawing, cel paint, CG polish, stop-motion material, vector layers, camera
+    multiplane, and shape acting, then apply the media behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Brush strokes, adapt the requested subject through
+    animation pipeline grammar, cel or puppet surface, shape acting, motion readability, and
+    production-era finish while preserving prompt identity; preserve the requested subject while
+    translating it through cel shapes, squash, puppet material, vector rigs, CG feature polish,
+    rotoscoped trace, or painted-frame continuity, keeping the requested identity, silhouette,
+    action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk; use
+    color as animation pipeline evidence: cel palettes, painted backgrounds, limited UPA flats,
+    stop-motion set tones, digital compositing, or comic-offset halftone, with deliberate value
+    grouping, accent control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Painted light, brush-rendered glow, canvas-luminosity; make light follow
+    the animation method through cel shadows, painted depth, puppet set lighting, CG bounce, flat
+    graphic value, or rotoscope edge shimmer, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Thick impasto, palette-knife ridges, bristle strokes, layered scumble; surface detail
+    should reveal acetate grain, paper line, clay/fabric puppet material, vector fills, oil smears,
+    pixel cells, or CG shader smoothness when named, keeping artifact scale coherent and avoiding
+    noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Swirling brush current, paint-flow drift, animated impasto
+    displacement; compose through animation readability, pose clarity, painted-plate rhythm, squash
+    arcs, graphic staging, multiplane depth, or frame-by-frame motion logic, with frame rhythm,
+    spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Artistic, emotional, painterly devotion, melancholic beauty; derive mood from
+    feature warmth, rubber-hose chaos, stop-motion tactility, graphic modernism, anime atmosphere,
+    or experimental motion craft, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Masterpiece, moving art, frame-by-frame painting, gallery-grade; finish with
+    production-faithful animation surfaces, readable shapes, controlled artifacts, and no exact
+    studio-character copy or random cartoon face substitution, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Moving oil-paint canvas, Loving Vincent style, impasto frame by frame, brushstroke life, sheer
+    artistic devotion; Brush direction, visible stroke, canvas weave, palette texture;
+    Impressionist, sunlit yellow, cobalt shadow, viridian green, violet dusk; Thick impasto,
+    palette-knife ridges, bristle strokes, layered scumble; Swirling brush current, paint-flow
+    drift, animated impasto displacement
   creative_brief: >-
-    Make the input feel painted frame by frame in thick oil: directional brushwork, ridged impasto,
-    palette-knife texture, canvas weave, and color movement that seems alive between strokes. Avoid fixed
-    skies, fields, or art-historical composition quotes. The result should prioritize material paint behavior
-    and gallery-grade movement over literal subject changes. Apply Oil Paint Animation as a portable
-    cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact
-    pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed
-    IP scene, or narrative setup.
+    Apply Oil Paint Animation as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Moving oil-paint canvas, Loving Vincent style,
+    impasto frame by frame, brushstroke life, sheer artistic devotion, Brush direction, visible
+    stroke, canvas weave, palette texture, Thick impasto, palette-knife ridges, bristle strokes,
+    layered scumble without requiring the card image's original subject.
 avoidRules:
   - digital
   - sharp
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - exact studio character copy
+  - random cartoon face
+  - unreadable motion smear
+  - fake subtitles
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-044.webp
 attributes:
-  negativePrompt: digital, sharp
+  negativePrompt: >-
+    digital, sharp, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact
+    studio character copy, random cartoon face, unreadable motion smear, fake subtitles
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

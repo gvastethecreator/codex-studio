@@ -14,41 +14,103 @@ tags:
   - samurai-medieval
 visualDna:
   aesthetic: >-
-    Grand-strategy anime language emphasizing formation logic, heraldic identity, and mass momentum over
-    individual hero framing.
+    Crimson Formation Momentum Style acts as a transferable anime-prestige router: a crimson anime
+    direction shaped by era-aware line economy and genre tone, alongside a formation anime direction
+    shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with
+    restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure;
+    it routes era, genre, line economy, cel or digital finish, and performance tone without locking
+    prompt content to the source title or sample image.
   subject_treatment: >-
-    Broad massed silhouettes, banner-like arcs that map faction flow, and repeated line cadence used as
-    directional rhythm.
+    Preserve the prompt subject, action, and context while restyling forms through contours paced by
+    crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    formation tension, readable pose energy, and silhouette discipline; identity should remain
+    readable through anime contour, expression economy, pose energy, shape simplification, and
+    effect hierarchy instead of a required canon character or title scene.
   color_and_tone: >-
-    Dominant crimson, soot-charcoal fields, oxidized metal neutrals, and restrained antique gold command
-    accents.
+    Map color through crimson accents over black, bone, and smoky violet, alongside a formation
+    accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson,
+    moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation
+    clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested
+    content.
   lighting_and_shadow: >-
-    Cold dawn haze with low-angle backlight that separates ranks in planes while preserving readable command
-    focal points.
-  texture_and_material: Battle-scored metal, mud-caked lower planes, frayed fabric standards, and humid particulate air.
+    Use red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow
+    behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges,
+    ember glow, and selective metal highlights; shadows should read as anime light design, rims
+    should clarify form, and glow or effects should support the prompt rather than replacing it.
+  texture_and_material: >-
+    Render cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink
+    grain tuned to formation material contrast; anchor surfaces in woven cloth, lacquer, cedar
+    grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted
+    surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across
+    people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Multi-plane conflict depth using atmospheric compression and diagonal advance vectors for collective force
-    direction.
-  atmosphere_and_mood: Inevitable collision, inherited duty, and banner-locked resolve under doctrine.
+    Frame around group formation geometry and sacrificial symmetry, alongside crimson converted into
+    reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry,
+    pre-impact spacing, heraldic diagonals, and calm negative space; the style should support
+    portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable
+    anime staging grammar instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through collective resolve and ritualized teamwork, alongside crimson emotional
+    pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code,
+    sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual,
+    violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the
+    chosen anime lineage.
   rendering_and_quality: >-
-    Wide-format tactical readability with crisp hierarchy between command layer, vanguard layer, and
-    environmental pressure.
-  key_features: Rank geometry, signal standards, wave cadence, and collision-ready front interfaces.
+    Finish with clean anime finishing that keeps crimson identity readable without noisy denoise,
+    alongside clean anime finishing that keeps formation identity readable without noisy denoise;
+    enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero
+    ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable
+    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
+    3D-render drift.
+  key_features: >-
+    a crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation
+    anime direction shaped by era-aware line economy and genre tone; contours paced by crimson
+    tension, readable pose energy, and silhouette discipline, alongside contours paced by formation
+    tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to
+    crimson material contrast, alongside cel paint and ink grain tuned to formation material
+    contrast; red omen glow and ember rim cuts, alongside a formation light logic using cel rim,
+    glow behavior, and blocked shadow; group formation geometry and sacrificial symmetry, alongside
+    crimson converted into reusable framing rhythm and anime timing
   creative_brief: >-
-    Create a transferable crimson formation momentum grammar for any subject: formation-driven composition,
-    heraldic color dominance, disciplined large-scale motion, and command-layer hierarchy without imposing
-    clans, armies, battlefields, cavalry, infantry, weapons, or war scenes.
+    Apply Crimson Formation Momentum Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
+    crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation
+    anime direction shaped by era-aware line economy and genre tone, alongside contours paced by
+    crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    formation tension, readable pose energy, and silhouette discipline; crimson accents over black,
+    bone, and smoky violet, alongside a formation accent system held inside disciplined cel values;
+    red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow
+    behavior, and blocked shadow; cel paint and ink grain tuned to crimson material contrast,
+    alongside cel paint and ink grain tuned to formation material contrast and group formation
+    geometry and sacrificial symmetry, alongside crimson converted into reusable framing rhythm and
+    anime timing, finish discipline, and negative controls without requiring a fixed canon cast,
+    title scene, prop bundle, location, sport, instrument, weapon, or card composition.
 avoidRules:
   - photoreal
   - cartoon-goofy
-  - modern-city
+  - modern-urban-system pressure
   - watermark
   - text
   - logo
+  - generic samurai cosplay
+  - modern firearms
+  - sci-fi neon
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
+  - signature
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-027.webp
 attributes:
-  negativePrompt: photoreal, cartoon-goofy, modern-city, watermark, text, logo
+  negativePrompt: >-
+    photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai
+    cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required
+    anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text,
+    signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

@@ -12,26 +12,73 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Magazine spread
-  subject_treatment: Dynamic editorial geometry
-  color_and_tone: Color graded, trendy
-  lighting_and_shadow: Creative studio
-  texture_and_material: Fabriclike surface detail
-  camera_and_composition: Elongated limbs
-  atmosphere_and_mood: Cool, expensive
-  rendering_and_quality: Vogue, high end
-  key_features: Styling-first focus
+  aesthetic: >-
+    Fashion Editorial acts as a transferable photographic style router: begin from Magazine spread,
+    Styling-first focus, and portrait and studio photography system built from lens discipline,
+    subject hierarchy, controlled retouching, and believable surface detail, then apply the
+    photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Dynamic editorial geometry; preserve prompt identity while
+    using focal priority, flattering or deliberately institutional distance, surface realism, and
+    edge control without requiring a human face, keeping the original subject, pose, species,
+    object, or environment legible.
+  color_and_tone: >-
+    Grade with Color graded, trendy; grade neutrals, skinlike or material tones, backdrop color,
+    cosmetic warmth, and controlled contrast as photographic capture decisions, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Creative studio; make key, fill, rim, catchlight, background falloff, and shadow shape
+    visibly drive the style, preserving believable exposure, shadow density, highlight rolloff, and
+    source motivation.
+  texture_and_material: >-
+    Render Fabriclike surface detail; retain pores, fabric, hair, props, paper, backdrop sweep, and
+    small surface imperfections at a believable photographic scale, avoiding both waxy smoothing and
+    noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Elongated limbs; use portrait lens compression, central authority, intimate
+    framing distance, frontal ID geometry, or editorial negative space without forcing one sitter,
+    with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Cool, expensive; derive mood from proximity, pose pressure, institutional polish,
+    intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Vogue, high end; finish as real photography with clean optics, plausible retouching,
+    readable focal hierarchy, and no painterly or CGI substitution, high-resolution photographic
+    detail, and disciplined denoise without losing natural grain where the preset needs it.
+  key_features: Magazine spread; Styling-first focus; Color graded, trendy; Creative studio; Elongated limbs
   creative_brief: >-
-    Fashion editorial treats any subject as a styled spread: dynamic geometry, sculpted fabriclike texture,
-    expensive color grade, and surfaces chosen for desire rather than description. Keep Vogue-level drama
-    without requiring clothes, bodies, runway poses, or a human model.
+    Apply Fashion Editorial as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Magazine spread, Color graded, trendy, Creative studio, Fabriclike surface
+    detail, and Elongated limbs through optics, exposure, palette, surface response, timing, and
+    finish without requiring the card image's original subject.
 avoidRules:
   - boring
   - plain
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-051.webp
 attributes:
-  negativePrompt: boring, plain
+  negativePrompt: >-
+    boring, plain, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin,
+    over-smoothed plastic retouching, distorted anatomy, generic beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

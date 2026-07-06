@@ -12,21 +12,57 @@ tags:
   - 3d-and-cgi-rendering
   - render-engines
 visualDna:
-  aesthetic: CPU path traced movie VFX
-  subject_treatment: Incredibly realistic
-  color_and_tone: Natural, filmic, ACES color-managed
-  lighting_and_shadow: Complex bounces, unclamped GI
-  texture_and_material: Micro-displacement, layered materials
+  aesthetic: >-
+    Arnold Feature Film Path Tracer acts as a transferable CGI-style router: start from CPU path
+    traced movie VFX, Physical accuracy, volume scattering and renderer-pipeline system built from
+    sampling behavior, shader evaluation, light transport, denoise strategy, and engine-specific
+    production polish, then apply the 3D/render behavior to prompt X instead of recreating a fixed
+    demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Incredibly realistic; preserve the prompt subject while
+    translating it through the renderer strengths: path tracing, biased sampling, real-time GI,
+    product-studio preview, or feature-film shading, keeping the requested identity, silhouette,
+    pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Natural, filmic, ACES color managed; make color come from color management, HDR
+    response, spectral bloom, engine tonemapping, material albedo, and physically plausible
+    exposure, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Complex bounces, unclamped GI; let engine-specific GI, ray tracing, Lumen,
+    caustics, volume scattering, HDRI, or studio reflection control drive value hierarchy, so value
+    structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Micro displacement, layered materials; surface detail should reveal BSDF behavior,
+    sampling clarity, shader networks, displacement, adaptive refinement, and material truth rather
+    than a pasted texture, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Arnold Feature Film Path Tracer: three-quarter or orthographic framing, clean
-    silhouette read, material highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Realistic, grounded, cinematic gravitas
-  rendering_and_quality: Hollywood VFX, feature-film grade
-  key_features: Physical accuracy, volume scattering
+    Structure the image through Lookdev camera for Arnold Feature Film Path Tracer: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition; compose for renderer readability through focal hierarchy, product or VFX
+    staging, material swatches, path-traced depth, and clean engine output, with scale, spacing,
+    edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Realistic, grounded, cinematic gravitas; derive mood from render fidelity,
+    production confidence, cinematic polish, engine interactivity, or industrial design clarity,
+    letting the renderer alter interpretation without demanding a specific story, location, or
+    character.
+  rendering_and_quality: >-
+    Finish with Hollywood VFX, feature film grade; finish with credible CGI output, controlled
+    noise, accurate reflections, stable geometry, and no raw viewport or cheap preview look, clean
+    denoised surfaces where appropriate, and enough shader evidence to make the CGI mode
+    recognizable.
+  key_features: >-
+    CPU path traced movie VFX; Physical accuracy, volume scattering; Natural, filmic, ACES color
+    managed; Micro displacement, layered materials; Lookdev camera for Arnold Feature Film Path
+    Tracer: three quarter or orthographic framing, clean silhouette read, material highlights,
+    controlled depth, and vertical card composition
   creative_brief: >-
-    Render any input with Arnold feature-film path tracing: unclamped global illumination, ACES color
-    discipline, micro-displacement detail, soft indirect bounce, and cinema-grade material response. Keep
-    Hollywood render authority without requiring characters, creatures, sets, props, or VFX shot staging.
+    Apply Arnold Feature Film Path Tracer as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through CPU path traced movie VFX, Physical accuracy, volume
+    scattering, Micro displacement, layered materials without requiring the card image's original
+    subject.
 avoidRules:
   - photo
   - drawing
@@ -40,10 +76,23 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - text
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - raw viewport
+  - unlit preview
+  - wrong render engine
+  - cheap preview noise
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-004.webp
 attributes:
-  negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
+  negativePrompt: >-
+    photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts,
+    watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

@@ -13,29 +13,58 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Roof tile stone
-  subject_treatment: Jagged edges
-  color_and_tone: Dark Grey, Blue
-  lighting_and_shadow: Matte
-  texture_and_material: Layered, flaky
-  camera_and_composition: Flat layers
-  atmosphere_and_mood: Cold, strong
-  rendering_and_quality: Natural, durable
-  key_features: Layers
+  aesthetic: >-
+    Slate (Split) translates natural material behavior into form: start from Roof tile stone,
+    Layered, flaky, and Flat layers, then turn natural formation, growth, erosion, and geological or
+    biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Jagged edges: preserve identity and pose while letting
+    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Dark Grey, Blue as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Matte define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Slate (Split) without hiding the prompt subject.
+  texture_and_material: >-
+    Render Layered, flaky through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Flat layers as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Cold, strong by using age, weather, habitat pressure, and sensory association; the
+    material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Natural, durable material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Roof tile stone; Jagged edges; Layered, flaky; Matte; Flat layers
   creative_brief: >-
-    Capture the clean violence of split slate, where nature fractures into planar perfection along dark
-    grey-blue planes with edges that carry the memory of the break. The face reveals the patient accumulation
-    of sediment, layer upon layer of dark mineral patience. This is geology as geometry, raw and precise. Use
-    Slate as portable surface/render behavior over any input: map its texture, light response, edge wear,
-    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Slate (Split) as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Capture the clean violence of split slate,
+    where nature fractures into planar perfection along dark grey-blue planes with edges that carry
+    the memory of the break. The face reveals the patient accumulation of sediment, layer upon layer
+    of dark mineral patience. This is geology as geometry, raw and precise. Use Slate as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth
   - polished
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-007.webp
 attributes:
-  negativePrompt: smooth, polished
+  negativePrompt: smooth, polished, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

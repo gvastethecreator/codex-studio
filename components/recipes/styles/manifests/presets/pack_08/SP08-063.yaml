@@ -12,28 +12,86 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Feather couture opulence, plume-driven extravagance, ceremonial plumage drama
-  subject_treatment: Soft barbs, feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep
-  color_and_tone: Bright, Peacock, fuchsia, emerald-green, sapphire, gold, flamingo-pink, iridescent-oil
-  lighting_and_shadow: Soft spotlight drama, feather-edge translucency, warm bulb glow
-  texture_and_material: Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle
+  aesthetic: >-
+    Feathers operates as a portable fashion-costume router: combine Feather couture opulence,
+    plume-driven extravagance, ceremonial plumage drama with material-forward fashion transformation
+    with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Soft barbs,
+    feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Soft spotlight drama, feather-edge translucency, warm bulb glow plus material-revealing
+    light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or volumetric
+    separation as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Ostrich feather, marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed
+    hackle plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire,
+    gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Feathers using its key spatial cues: Quills, feather-fan logic, headdress arcs, marabou trim,
-    iridescent barbs.
-  atmosphere_and_mood: Grand, buoyant, ornamental, plume majesty
-  rendering_and_quality: Luxurious, soft, plume-spectacle grandeur, couture opulence
-  key_features: Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs
+    Compose with Compose for Feathers using its key spatial cues: Quills, feather-fan logic,
+    headdress arcs, marabou trim, iridescent barbs plus drape rhythm, material coverage, silhouette
+    clarity, tactile close detail, fold direction, and transformation edge control as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Feathers while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Feather couture opulence, plume-driven extravagance, ceremonial plumage drama; Soft barbs,
+    feather-fan spread, headdress-arc corona, plume cascade, wing-cape sweep; Ostrich feather,
+    marabou fluff, peacock eye, coque plume, pheasant barb, downy base, dyed hackle; Soft spotlight
+    drama, feather-edge translucency, warm bulb glow; Compose for Feathers using its key spatial
+    cues: Quills, feather-fan logic, headdress arcs, marabou trim, iridescent barbs
   creative_brief: >-
-    Feather the input with couture plumage: ostrich plumes, marabou fluff, peacock eyes, fan spreads,
-    headdress arcs and translucent barbs. Keep spectacle as ornamental pressure, not as a performer body,
-    pose, curtain call or stage scene.
+    Use Feathers after prompt X as a transferable fashion/costume layer: prompt X supplies subject,
+    motion, setting, tone, and intensity, while the preset supplies Feather couture opulence,
+    plume-driven extravagance, ceremonial plumage drama, Soft barbs, feather-fan spread,
+    headdress-arc corona, plume cascade, wing-cape sweep, Ostrich feather, marabou fluff, peacock
+    eye, coque plume, pheasant barb, downy base, dyed hackle, Soft spotlight drama, feather-edge
+    translucency, warm bulb glow, Compose for Feathers using its key spatial cues: Quills,
+    feather-fan logic, headdress arcs, marabou trim, iridescent barbs plus weave, pile, grain,
+    shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface
+    continuity, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - fur
   - hair
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-063.webp
 attributes:
-  negativePrompt: fur, hair, performer body, curtain call, stage scene
+  negativePrompt: >-
+    fur, hair, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

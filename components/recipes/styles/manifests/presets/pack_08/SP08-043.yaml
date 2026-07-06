@@ -12,31 +12,87 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Operatic space-court couture, sovereign nebular regality, diplomatic authority
+  aesthetic: >-
+    Space Opera Royal operates as a portable fashion-costume router: combine Operatic space-court
+    couture, sovereign nebular regality, diplomatic authority with speculative costume logic with
+    armor, suit engineering, magical garment behavior, alien proportion, and character-readability
+    design, so the preset supplies styling behavior rather than a fixed outfit card, required
+    wearer, or literal garment sample.
   subject_treatment: >-
-    Elaborate cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant
-    verticality
-  color_and_tone: Red, Gold, alien pearl, crimson, electrum, plasma-pink, teal signal accents, midnight velvet
-  lighting_and_shadow: Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight
+    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
+    illuminate, conceal, mutate, modularize, ritualize, or engineer through Elaborate cranial halo,
+    ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through speculative material color, neon accents, abyssal values, royal metals,
+    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight plus rim light,
+    emissive channels, occult glow, reflective armor, survival dust, void shadow, or sci-fi display
+    light as the styling light contract, revealing cut, drape, surface response, trim, transparency,
+    or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent
-    silk
-  camera_and_composition: Ceremonial halo exaggeration
-  atmosphere_and_mood: Serious, political, galactic-court gravity, doomed-romance elegance, diplomatic tension
-  rendering_and_quality: Regal alien opulence, galactic-court high fashion, ceremonial precision
-  key_features: Ceremonial signal-paint cues, halo headpiece logic, gown architecture, feathered cape
+    Render Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal
+    threads, luminescent silk plus armor plates, spandex, robes, leather, rubber, chrome, biotic
+    surface, hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers,
+    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
+    whole prompt.
+  camera_and_composition: >-
+    Compose with character-design readability, suit silhouette, power-shape hierarchy, modular gear
+    rhythm, and transformation focus as reusable fashion framing grammar, allowing portraits,
+    objects, creatures, environments, action, and abstract prompts to inherit styling without one
+    required pose.
+  atmosphere_and_mood: >-
+    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
+    spectacle, or mythic futurism; the tone should feel specific to Space Opera Royal while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
+    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Operatic space-court couture, sovereign nebular regality, diplomatic authority; Elaborate
+    cranial halo, ceremonial train sweep, corseted architecture, bell-sleeve drama, court-pageant
+    verticality; Rare off-world fabric, iridescent organza, feather-trim, beaded net, liquid-metal
+    threads, luminescent silk; Dramatic ceremonial glow, stained-glass fantasy light, diplomatic
+    backlight; character-design readability, suit silhouette, power-shape hierarchy, modular gear
+    rhythm, and transformation focus
   creative_brief: >-
-    Turn the input into galactic-court couture: ceremonial halo geometry, alien headpiece logic, liquid-metal
-    thread, feather trim, signal-paint markings and diplomatic crimson-gold gravity. Keep space-opera regality
-    as a portable style anchor, not as throne rooms, senate chambers, binary-sun scenic tableaux or specific
-    royal figures.
+    Use Space Opera Royal after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Operatic space-court
+    couture, sovereign nebular regality, diplomatic authority, Elaborate cranial halo, ceremonial
+    train sweep, corseted architecture, bell-sleeve drama, court-pageant verticality, Rare off-world
+    fabric, iridescent organza, feather-trim, beaded net, liquid-metal threads, luminescent silk,
+    Dramatic ceremonial glow, stained-glass fantasy light, diplomatic backlight, character-design
+    readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation
+    focus plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels,
+    survival layers, and invented fastenings, palette behavior, light response, material treatment,
+    silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue,
+    prop bundle, or card composition.
 avoidRules:
   - plain everyday minimalwear
   - contemporary Earth-uniform literalism
+  - generic cosplay
+  - plastic toy armor
+  - muddy fantasy outfit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-043.webp
 attributes:
-  negativePrompt: plain everyday minimalwear, contemporary Earth-uniform literalism
+  negativePrompt: >-
+    plain everyday minimalwear, contemporary Earth-uniform literalism, generic cosplay, plastic toy
+    armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic
+    fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

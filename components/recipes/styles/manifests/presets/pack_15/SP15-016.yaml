@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP15-016
 packId: pack_15
-name: Neon Clinic Backdoor
+name: Neon Care Circuit
 category: 2. Neon, Net & Signal Punks
 version: 1
 supportedTasks:
@@ -15,36 +15,55 @@ tags:
   - body-mod
 visualDna:
   aesthetic: >-
-    underground med-cyberpunk as a flat-to-painterly clinic-threshold poster card built around humane
-    caregivers, mod patients, simple tool trays, non-readable monitor glow, and rainlit entry color.
+    Neon Care Circuit operates as a portable punk-spectrum router: combine Neon Care Circuit
+    identity cues through clinical glow; tool-tray planes; polymer accents; compact monitors;
+    rainlit edge planes; Underground med-cyberpunk poster language built from humane care
+    silhouettes with network punk grammar with mesh communication, neon signal pressure,
+    hacker-adjacent DIY systems, rain glass, drones, and cooperative circuitry, so the preset
+    supplies retrofit style behavior rather than a required venue, mascot, prop bundle, or card
+    composition.
   subject_treatment: >-
-    Sharp but simplified network geometry, non-readable clinic rhythm, a few thick cable paths, matte
-    threshold planes, and hacker-era silhouettes. Core composition uses clinic door glow, flat tool trays,
-    modded patients, compact monitors, rain threshold.
-  color_and_tone: surgical teal, black vinyl, blood red accent, white neon
+    Preserve prompt X's subject, action, scale, and setting while translating forms through signal
+    bands, cable paths, antenna arcs, mesh-node grouping, rain-slick contour, improvised
+    electronics, and data-lit body or object edges; motifs can become contour, surface, costume,
+    equipment, atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through cyan rain, magenta signal, black ice, acid green, electric blue, violet
+    shadow, wet concrete gray, and small safety-color accents; keep dominant, support, and accent
+    values readable, avoid muddy black, and let palette code materials, signals, climate, ritual,
+    salvage, or repair pressure.
   lighting_and_shadow: >-
-    clinical neon color blocks, non-readable monitor glow, rainlit doorway shape, cold overhead strips as flat
-    planes
-  texture_and_material: broad vinyl curtain plane, flat tool trays, wet coat shapes, polymer color accents, medical glass blocks
+    Use neon spill, monitor glow, rain reflection, signal pulse, drone LEDs, firewall bloom, and
+    cold rim separation; lighting should reveal the punk system, preserve the user's subject,
+    separate near and distant value planes, and avoid crushed blacks or noisy dark texture.
+  texture_and_material: >-
+    Render glass, wet plastic, taped circuit boards, cable bundles, matte rubber, spray paint,
+    antenna metal, and soft digital bloom; keep material scale coherent, surface marks motivated,
+    and tactile details strong enough to route style without becoming pasted grunge.
   camera_and_composition: >-
-    Dense urban slices, service doors, clinics, relays, roofs, and alleys with clear subject hierarchy. Keep
-    depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: intimate, risky, precise, humane
+    Compose through mesh-like spacing, compressed signal lanes, overhead cable arcs, node clusters,
+    and readable subject dominance without forced urban passage or server-interior-system staging as
+    reusable framing grammar for characters, creatures, objects, vehicles, environments, symbols, or
+    full scenes without one required card layout.
+  atmosphere_and_mood: >-
+    Carry mood through paranoid speed, illicit coordination, humid intimacy, cooperative defense,
+    cold precision, and electric public-style-level pressure; the tone may become adult, romantic,
+    violent, comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family
+    remains legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: clinic door glow, chrome trays, modded patients, compact monitors, rain threshold
+    Finish with clean neon-punk illustration with controlled glow, readable circuitry, denoised rain
+    texture, and no fake readable UI; prioritize clean denoise, bold readable shapes, controlled
+    grit, prompt preservation, no watermark, no readable text, and no generic concept-art polish.
+  key_features: >-
+    clinical glow; tool-tray planes; polymer accents; compact monitors; rainlit edge planes;
+    Underground med-cyberpunk poster language built from humane care silhouettes
   creative_brief: >-
-    Make underground medicine specific and human: a clinic threshold, caregivers, and tools, avoiding shock
-    gore, fetish staging, or generic hallway horror. Keep the result representative rather than over-abstract;
-    make one character in their environment the anchor, with motifs as background, costume, weather,
-    architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial
-    illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background
-    art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or
-    hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean
-    surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
+    Use Neon Care Circuit after prompt X as a transferable punk-spectrum layer: prompt X supplies
+    subject, action, setting, tone, and intensity, while the preset supplies clinical glow,
+    tool-tray planes, polymer accents, compact monitors, rainlit edge planes, Underground
+    med-cyberpunk poster language built from humane care silhouettes, color logic, light response,
+    material behavior, composition rhythm, mood pressure, and finish discipline without requiring a
+    fixed venue, fixed cast, fixed machine, repeated prop bundle, or sample-card composition.
 avoidRules:
   - photoreal
   - watermark
@@ -55,25 +74,38 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - fake readable UI
+  - server-interior-system dependency
+  - generic cyberpunk urban passage
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-016.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
-    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
-    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
-    soldier hero, guard pin-up, weapon-first pose, gore, blood spill, exposed organs, surgery table closeup,
-    syringe hero, fetish vinyl pose, horror corridor, readable medical UI, photoreal wet skin, HDR lens
-    realism, mirror-wet realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy
-    print noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable
-    preset, duplicated motifs, generic glass utopia, unmotivated market aisle, unmotivated library aisle,
-    fantasy corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation,
-    lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine detail,
-    over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets everywhere, busy texture
-    chatter, realistic uniform portrait, uniformed officer hero, foreground guard portrait, detailed tattoo
-    focus, dense machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
-    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic American
-    illustration, generic Western RPG card art
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic
+    realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic
+    near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, gore, blood
+    spill, exposed organs, surgery table closeup, syringe hero, fetish vinyl pose, horror corridor,
+    readable medical UI, photoreal wet skin, HDR lens realism, mirror-wet realism, 3D render look,
+    PBR material simulation, hyper-detailed concept art, scratchy print noise, tiny black linework,
+    watermark, text, logo, generic style, over-abstract, interchangeable preset, duplicated motifs,
+    generic glass utopia, unmotivated commerce-system aisle, unmotivated library aisle, fantasy
+    corridor, random camera held by subject, studio wall fixation, chair fixation, curtain fixation,
+    lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive noise, ultra-fine
+    detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
+    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, near-plane
+    guard portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene,
+    high-frequency surface detail, cinematic close-up portrait, flat black fill, crushed black, pure
+    black masses, muddy black fields, generic American illustration, generic Western RPG card art,
+    repeated-props, fake readable UI, server-interior-system dependency, generic cyberpunk urban
+    passage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle,
+    readable text, prompt-literal card reuse, generic cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

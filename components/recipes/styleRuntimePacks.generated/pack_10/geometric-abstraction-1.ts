@@ -7,17 +7,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-001',
     name: 'Cubism',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'realistic perspective, smooth',
+    negativePrompt:
+      'realistic perspective, smooth, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Fragmented objects',
-      subject_treatment: 'Sharp angles',
-      color_and_tone: 'Brown, Grey, Blue',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Paint strokes',
-      camera_and_composition: 'Multiple viewpoints',
-      atmosphere_and_mood: 'Intellectual, fragmented',
-      rendering_and_quality: 'Picasso, Braque',
-      key_features: 'Geometric breakdown',
+      aesthetic:
+        'Cubism becomes a transferable geometric abstraction system: start from Fragmented objects, Geometric breakdown, and Multiple viewpoints, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Sharp angles to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Brown, Grey, Blue; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Paint strokes as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Multiple viewpoints as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Intellectual, fragmented as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Picasso, Braque: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Fragmented objects; Sharp angles; Brown, Grey, Blue; Flat; Paint strokes; Multiple viewpoints; Intellectual, fragmented; Picasso, Braque; Geometric breakdown',
       creative_brief:
         'Apply cubist fracture to the input: simultaneous viewpoints, angular planes, muted ochre-blue-grey paint facets, and deliberate spatial disassembly should let any subject remain readable while broken into intellectual geometry.',
     },
@@ -26,17 +36,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-002',
     name: 'Bauhaus Style',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'organic, messy',
+    negativePrompt:
+      'organic, messy, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Functional design',
-      subject_treatment: 'Clean lines',
-      color_and_tone: 'Red, Yellow, Blue, Black',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Matte paper',
-      camera_and_composition: 'Simplified forms',
-      atmosphere_and_mood: 'Rational, bold',
-      rendering_and_quality: 'Modernist, clean',
-      key_features: 'Primary colors',
+      aesthetic:
+        'Bauhaus Style becomes a transferable geometric abstraction system: start from Functional design, Primary colors, and Simplified forms, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Clean lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Red, Yellow, Blue, Black; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Matte paper as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Simplified forms as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Rational, bold as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Modernist, clean: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Functional design; Clean lines; Red, Yellow, Blue, Black; Flat; Matte paper; Simplified forms; Rational, bold; Modernist, clean; Primary colors',
       creative_brief:
         'Apply Bauhaus reduction to the input: primary-color blocks, strict circles, bars, grids, and functional negative space should strip any subject to clear modular construction without becoming a poster-only layout.',
     },
@@ -45,17 +65,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-003',
     name: 'Constructivism',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'soft, nature',
+    negativePrompt:
+      'soft, nature, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Industrial propaganda',
-      subject_treatment: 'Diagonal lines',
-      color_and_tone: 'Red, Black, White, Kraft',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Rough paper',
-      camera_and_composition: 'Aggressive angles',
-      atmosphere_and_mood: 'Revolutionary, strong',
-      rendering_and_quality: 'Soviet poster, bold',
-      key_features: 'Typography elements',
+      aesthetic:
+        'Constructivism becomes a transferable geometric abstraction system: start from Industrial propaganda, Typography elements, and Aggressive angles, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Diagonal lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Red, Black, White, Kraft; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Rough paper as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Aggressive angles as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Revolutionary, strong as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Soviet poster, bold: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Industrial propaganda; Diagonal lines; Red, Black, White, Kraft; Flat; Rough paper; Aggressive angles; Revolutionary, strong; Soviet poster, bold; Typography elements',
       creative_brief:
         'Drive the input through constructivist urgency: red-black diagonals, industrial geometry, hard typographic-like blocks without readable text, and poster-force composition should make any subject feel engineered, public, and declarative.',
     },
@@ -64,18 +94,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-004',
     name: 'Op Art (Optical)',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'still, calm',
+    negativePrompt:
+      'still, calm, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Visual illusion',
-      subject_treatment: 'Warped grids',
-      color_and_tone: 'Black and White',
+      aesthetic:
+        'Op Art (Optical) becomes a transferable geometric abstraction system: start from Visual illusion, Bridget Riley, trippy, and Dizzying, kinetic, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Warped grids to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Black and White; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
       lighting_and_shadow:
-        'Lighting for Op Art (Optical): purposeful key, bounce, rim, shadow depth, and focal readability matched to 1. Geometric Abstraction.',
-      texture_and_material: 'Smooth',
-      camera_and_composition: 'Vibrating effect',
-      atmosphere_and_mood: 'Dizzying, kinetic',
-      rendering_and_quality: 'Bridget Riley, trippy',
-      key_features: 'High contrast',
+        'Let Smooth drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Vibrating effect as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Dizzying, kinetic as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Dizzying, kinetic as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Bridget Riley, trippy: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Visual illusion; Warped grids; Black and White; Smooth; Vibrating effect; Dizzying, kinetic; Dizzying, kinetic; Bridget Riley, trippy; Bridget Riley, trippy',
       creative_brief:
         'Apply op-art optical stress to the input: pulsing line fields, high-contrast waves, vibrating figure-ground reversals, and controlled visual interference should make any subject feel unstable without losing silhouette legibility.',
     },
@@ -84,17 +123,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-005',
     name: 'Mondrian (De Stijl)',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'curves, diagonal',
+    negativePrompt:
+      'curves, diagonal, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Grid of rectangles',
-      subject_treatment: 'Thick black lines',
-      color_and_tone: 'Primary colors + White',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Canvas',
-      camera_and_composition: 'Only 90 degree angles',
-      atmosphere_and_mood: 'Balanced, rigid',
-      rendering_and_quality: 'Modern art, minimal',
-      key_features: 'Grid structure',
+      aesthetic:
+        'Mondrian (De Stijl) becomes a transferable geometric abstraction system: start from Grid of rectangles, Grid structure, and Only 90 degree angles, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Thick black lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Primary colors + White; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Canvas as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Only 90 degree angles as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Balanced, rigid as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Modern art, minimal: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Grid of rectangles; Thick black lines; Primary colors + White; Flat; Canvas; Only 90 degree angles; Balanced, rigid; Modern art, minimal; Grid structure',
       creative_brief:
         'Apply De Stijl grid logic to the input: black orthogonal bars, white space, primary color rectangles, and asymmetric balance should convert any subject into disciplined planar harmony without requiring a literal painting panel.',
     },
@@ -103,17 +152,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-006',
     name: 'Fractal Geometry',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'simple, finite',
+    negativePrompt:
+      'simple, finite, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Mandelbrot set',
-      subject_treatment: 'Infinite detail',
-      color_and_tone: 'Psychedelic gradient',
-      lighting_and_shadow: 'Mathematical',
-      texture_and_material: 'Smooth',
-      camera_and_composition: 'Recursive',
-      atmosphere_and_mood: 'Infinite, trippy',
-      rendering_and_quality: 'Math art, complex',
-      key_features: 'Self-similarity',
+      aesthetic:
+        'Fractal Geometry becomes a transferable geometric abstraction system: start from Mandelbrot set, Self-similarity, and Recursive, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Infinite detail to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Psychedelic gradient; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Mathematical drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Smooth as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Recursive as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Infinite, trippy as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Math art, complex: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Mandelbrot set; Infinite detail; Psychedelic gradient; Mathematical; Smooth; Recursive; Infinite, trippy; Math art, complex; Self-similarity',
       creative_brief:
         'Apply fractal recursion to the input: self-similar branching, nested scale echoes, mathematical edge repetition, and infinite-depth ornament should let any subject bloom into repeatable geometry.',
     },
@@ -122,36 +181,56 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-007',
     name: 'Low Poly Abstract',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'curved, smooth',
+    negativePrompt:
+      'curved, smooth, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Triangulated mesh',
-      subject_treatment: 'Edges visible',
-      color_and_tone: 'Facet gradients',
-      lighting_and_shadow: 'Global illumination',
-      texture_and_material: 'Paper or plastic',
-      camera_and_composition: 'Geometric reduction',
-      atmosphere_and_mood: 'Modern, tech',
-      rendering_and_quality: 'Digital art, clean',
-      key_features: 'Triangles',
+      aesthetic:
+        'Low Poly Abstract becomes a transferable geometric abstraction system: start from Triangulated mesh, Triangles, and Geometric reduction, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Edges visible to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Facet gradients; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Global illumination drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Paper or plastic as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Geometric reduction as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Modern, tech as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Digital art, clean: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Triangulated mesh; Edges visible; Facet gradients; Global illumination; Paper or plastic; Geometric reduction; Modern, tech; Digital art, clean; Triangles',
       creative_brief:
-        'Reduce the input through low-poly abstraction: faceted planes, vertex-driven color blocks, crisp digital triangulation, and simplified light shards should preserve subject identity as crystalline geometry. Apply this abstract/vector construction over any input: preserve shape system, color logic, edge treatment, composition rhythm, and graphic rendering behavior while avoiding a required subject category, poster layout, icon, or scene template.',
+        'Route any subject through Low Poly Abstract as a transferable geometric abstraction visual system: preserve prompt intent while converting form, edge hierarchy, color blocks, spatial rhythm, and graphic reduction through this preset. Reduce the input through low-poly abstraction: faceted planes, vertex-driven color blocks, crisp digital triangulation, and simplified light shards should preserve subject identity as crystalline geometry. Apply this abstract/vector construction over any input: preserve shape system, color logic, edge treatment, composition rhythm, and graphic rendering behavior while avoiding a required subject category, poster layout, icon, or scene template.',
     },
   },
   {
     id: 'SP10-008',
     name: 'Suprematism',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'complex, real',
+    negativePrompt:
+      'complex, real, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Floating shapes',
-      subject_treatment: "Treat subjects through Suprematism's signature cues: White void.",
-      color_and_tone: 'Black square, simple',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Canvas',
-      camera_and_composition: 'Zero gravity',
-      atmosphere_and_mood: 'Spiritual, empty',
-      rendering_and_quality: 'Malevich, pure feeling',
-      key_features: 'White void',
+      aesthetic:
+        'Suprematism becomes a transferable geometric abstraction system: start from Floating shapes, White void, and Zero gravity, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using White void to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Black square, simple; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Canvas as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Zero gravity as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Spiritual, empty as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Malevich, pure feeling: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Floating shapes; White void; Black square, simple; Flat; Canvas; Zero gravity; Spiritual, empty; Malevich, pure feeling; White void',
       creative_brief:
         'Apply suprematist weightlessness to the input: floating rectangles, circles, stark white voids, minimal gravity, and pure color-shape tension should make any subject feel abstracted into sensation.',
     },
@@ -160,18 +239,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-009',
     name: 'Islamic Geometric',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'figurative, random',
+    negativePrompt:
+      'figurative, random, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Tessellated star pattern',
-      subject_treatment: 'Interlaced lines',
-      color_and_tone: 'Gold, Blue, Turquoise',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Tile, mosaic',
+      aesthetic:
+        'Islamic Geometric becomes a transferable geometric abstraction system: start from Tessellated star pattern and Radial symmetry, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Interlaced lines to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Gold, Blue, Turquoise; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Tile, mosaic as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Islamic Geometric using its key spatial cues: Radial symmetry.',
-      atmosphere_and_mood: 'Divine, orderly',
-      rendering_and_quality: 'Sacred geometry, precise',
-      key_features: 'Radial symmetry',
+        'Compose around Radial symmetry as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Divine, orderly as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Sacred geometry, precise: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Tessellated star pattern; Interlaced lines; Gold, Blue, Turquoise; Flat; Tile, mosaic; Radial symmetry; Divine, orderly; Sacred geometry, precise; Radial symmetry',
       creative_brief:
         'Apply Islamic geometric order to the input: star lattices, interlocking tessellations, radial symmetry, and disciplined repetition should turn any subject into devotional pattern logic without requiring architecture.',
     },
@@ -180,17 +268,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-010',
     name: 'Voronoi Pattern',
     category: '1. Geometric Abstraction',
-    negativePrompt: 'square grid',
+    negativePrompt:
+      'square grid, realistic perspective, generic polygon filter, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Cellular diagram',
-      subject_treatment: 'Cell walls',
-      color_and_tone: 'Random seed colors',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Biological or math',
-      camera_and_composition: 'Cellular',
-      atmosphere_and_mood: 'Natural math',
-      rendering_and_quality: 'Generative art',
-      key_features: 'Cell structure',
+      aesthetic:
+        'Voronoi Pattern becomes a transferable geometric abstraction system: start from Cellular diagram and Cell structure, then route prompt content through planes, grids, vectors, optical order, and deliberate formal reduction without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Cell walls to break, flatten, triangulate, align, tessellate, or rotate forms while keeping the prompt subject legible; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Random seed colors; treat color as structural contrast, field separation, and rhythm rather than decorative wash, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: keep light graphic and structural, with shadows simplified into value blocks or optical pressure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Biological or math as the tactile or mark-making basis; surfaces should read as designed planes, ink, paint, paper, tile, or digital geometry, not pasted texture, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Cellular as reusable spatial grammar: favor axial tension, repeated modules, negative space, cropped planes, and deliberate balance or imbalance, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Natural math as the emotional register; derive mood from rigor, optical tension, intellectual order, and abstraction pressure, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Generative art: finish with crisp geometry, controlled edges, clean separations, and no accidental realism, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Cellular diagram; Cell walls; Random seed colors; Flat; Biological or math; Cellular; Natural math; Generative art; Cell structure',
       creative_brief:
         'Apply Voronoi partitioning to the input: cellular borders, influence zones, organic algorithmic tiles, and equilibrium maps should segment any subject into living computational geometry.',
     },

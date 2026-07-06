@@ -12,27 +12,84 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: Creepy cute, kawaii-goth hybrid, sweet-nightmare aesthetic
-  subject_treatment: Spikes + Bows, A-line skirt, choker tightness, platform-sole elevation, puffed sleeve
-  color_and_tone: Black + Pastel Pink/Mint, lavender, baby blue, candy-corpse contrast, chalky pastel
-  lighting_and_shadow: Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle
-  texture_and_material: Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet
+  aesthetic: >-
+    Pastel Goth operates as a portable fashion-costume router: combine Creepy cute, kawaii-goth
+    hybrid, sweet-nightmare aesthetic with subcultural dress-code logic with identity signals, music
+    or scene memory, attitude, and symbolic styling pressure, so the preset supplies styling
+    behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Spikes + Bows, A-line skirt,
+    choker tightness, platform-sole elevation, puffed sleeve; identity stays readable as silhouette,
+    fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Soft diffused daylight, candy-colored gels, Halloween fairy-light sparkle plus club,
+    daylight, editorial, neon, chrome, or DIY light cues that reveal texture and attitude without
+    forcing a venue as the styling light contract, revealing cut, drape, surface response, trim,
+    transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Patent leather, black lace overlay, pastel tulle, holographic PVC, spiderweb fishnet plus
+    denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery, print, and
+    worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds, hardware,
+    elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast, optional bat-wing cues, bow
-    accents, occult jewelry, platform mass.
-  atmosphere_and_mood: Cute, dark, sweet unease, candy-wrapper menace, adorable dread
-  rendering_and_quality: Kawaii, spooky, pastel-goth crispness, creepy-cute editorial
-  key_features: Pastel-goth contrast, optional bat-wing cues, bow accents, occult jewelry, platform mass
+    Compose with Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast, optional
+    bat-wing cues, bow accents, occult jewelry, platform mass plus attitude-led silhouette,
+    accessory grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Pastel Goth while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Creepy cute, kawaii-goth hybrid, sweet-nightmare aesthetic; Spikes + Bows, A-line skirt, choker
+    tightness, platform-sole elevation, puffed sleeve; Patent leather, black lace overlay, pastel
+    tulle, holographic PVC, spiderweb fishnet; Soft diffused daylight, candy-colored gels, Halloween
+    fairy-light sparkle; Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast,
+    optional bat-wing cues, bow accents, occult jewelry, platform mass
   creative_brief: >-
-    Mix cute and occult into any input: lavender tulle, black lace, pastel PVC, bat-wing cues, bows, chokers,
-    platform mass and candy-corpse contrast. Keep creepy-cute unease without requiring graveyards, bedroom
-    lighting, doll poses or a fixed gothic subject.
+    Use Pastel Goth after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Creepy cute,
+    kawaii-goth hybrid, sweet-nightmare aesthetic, Spikes + Bows, A-line skirt, choker tightness,
+    platform-sole elevation, puffed sleeve, Patent leather, black lace overlay, pastel tulle,
+    holographic PVC, spiderweb fishnet, Soft diffused daylight, candy-colored gels, Halloween
+    fairy-light sparkle, Compose for Pastel Goth using its key spatial cues: Pastel-goth contrast,
+    optional bat-wing cues, bow accents, occult jewelry, platform mass plus signature layers,
+    footwear cues, hair volume, accessory codes, patches, hardware, textile wear, and stance-driven
+    silhouette, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - flat monochrome goth with no pastel contrast
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-021.webp
 attributes:
-  negativePrompt: flat monochrome goth with no pastel contrast
+  negativePrompt: >-
+    flat monochrome goth with no pastel contrast, costume-party parody, random trend mix, brand-logo
+    collage, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy
+    fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

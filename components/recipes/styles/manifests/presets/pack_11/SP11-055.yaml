@@ -12,31 +12,80 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy
-  subject_treatment: Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl cup
+  aesthetic: >-
+    Pizza Melt operates as a portable source-router layer: combine Molten cheese-pull dynamics,
+    pizzeria warmth, elastic melt gloss, commercial craving energy with culinary presentation logic
+    with edible surface behavior, plating structure, gloss, freshness, and commercial appetite cues,
+    so the preset supplies visual behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms plate,
+    glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material
+    logic through Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge,
+    pepperoni-curl cup; identity stays readable through construction grammar, proportion, edge
+    logic, and detail scale as this preset is applied.
   color_and_tone: >-
-    Red, Yellow, White, sauce-crimson, mozzarella-ivory, crust-golden, pepperoni-charred, basil-green,
-    oregano-fleck
-  lighting_and_shadow: Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam
+    Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents,
+    creamy highlights, and controlled richness; keep hue roles intentional, value separation clear,
+    and palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Warm, pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam plus
+    editorial food lighting with glossy highlights, soft appetite shadows, condensation sparkle, and
+    texture reveal as the light-response contract, with readable hierarchy, controlled contact
+    detail, and no lighting choice that erases the user's requested content.
   texture_and_material: >-
-    Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand,
-    semolina-dust
-  camera_and_composition: Stretching, cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool
-  atmosphere_and_mood: Craving, greasy, hot, elastic, box-steam warmth
-  rendering_and_quality: Cheesy, hot, cheese-pull porn, Friday-night ritual, fold-the-slice, New-York-style
+    Render Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge,
+    melted-mozzarella-strand, semolina-dust plus sauce viscosity, crumb structure, gelatin shine,
+    raw sheen, baked crust, ice, foam, steam, and surface freshness; surface scale, residue, gloss,
+    grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects,
+    and environments.
+  camera_and_composition: >-
+    Compose with Stretching, cheese-strand elongation, slice-fold geometry, topping-drift,
+    grease-separation pool plus plating geometry, negative space, ingredient rhythm, commercial
+    clarity, and edible detail scale as reusable framing grammar, allowing cards, portraits,
+    objects, scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and
+    sensory immediacy; the emotional tone should feel specific to Pizza Melt while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with appetizing material truth, precise gloss control, clean detail priority, and no
+    messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
   key_features: >-
-    Pepperoni, cheese-stretch strand, crust-blister, grease-pool, oregano-fleck, pepperoni-cup,
-    box-corner-grease-stain, garlic-knot companion
+    Molten cheese-pull dynamics, pizzeria warmth, elastic melt gloss, commercial craving energy;
+    Stretchy cheese, mozzarella-strand curves, slice-triangle, crust-blister edge, pepperoni-curl
+    cup; Grease, cheese, oil-slick-pool, crust-blister, pepperoni-crisp-edge,
+    melted-mozzarella-strand, semolina-dust; Warm, pizzeria-glow, oven-door amber, cheese-oil sheen,
+    crust-underlight, box-steam; Stretching, cheese-strand elongation, slice-fold geometry,
+    topping-drift, grease-separation pool
   creative_brief: >-
-    Translate the input through pizza-melt craving cues: elastic cheese pull, blistered crust-like texture,
-    glossy topping oils, warm red-yellow contrast, and dynamic melt behavior. Pizza slices may anchor the
-    preset, but avoid requiring delivery boxes, doorbells, napkin stacks, or one menu item.
+    Use Pizza Melt after prompt X as a transferable style layer: prompt X supplies subject, action,
+    and setting, while the preset supplies Molten cheese-pull dynamics, pizzeria warmth, elastic
+    melt gloss, commercial craving energy, Stretchy cheese, mozzarella-strand curves,
+    slice-triangle, crust-blister edge, pepperoni-curl cup, Grease, cheese, oil-slick-pool,
+    crust-blister, pepperoni-crisp-edge, melted-mozzarella-strand, semolina-dust, Warm,
+    pizzeria-glow, oven-door amber, cheese-oil sheen, crust-underlight, box-steam, Stretching,
+    cheese-strand elongation, slice-fold geometry, topping-drift, grease-separation pool plus
+    portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and
+    service polish, palette behavior, light response, material treatment, and finish discipline
+    without requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - cold
+  - messy cafeteria
+  - fake food plastic
+  - brand logo packaging
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-055.webp
 attributes:
-  negativePrompt: cold
+  negativePrompt: >-
+    cold, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal card
+    scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

@@ -15,24 +15,41 @@ tags:
   - inked-dungeon
 visualDna:
   aesthetic: >-
-    Harsh ink dungeon crawl with angular heroes, torchlight panic, heavy black cuts, and exaggerated stress
-    shadows.
+    Harsh ink dungeon crawl with angular heroes, torchlight panic, heavy black cuts, and exaggerated
+    stress shadows.
   subject_treatment: >-
-    Apply stress-ink body language to any subject through angular exaggeration, torch-cut value blocks,
-    nervous contour pressure, and tactical panic without requiring a fixed encounter or object bundle.
+    Apply stress-ink body language to any subject through angular exaggeration, torch-cut value
+    blocks, nervous contour pressure, and tactical panic without requiring a fixed encounter or
+    object bundle.
   color_and_tone: >-
-    Near-black ink, parchment tan, torch orange, sickness green, desaturated crimson, and chalky white
-    highlights.
-  lighting_and_shadow: Torch cones and hard ink shadows carve faces, hands, walls, and monsters into bold graphic planes.
-  texture_and_material: Brush ink, dry crosshatching, rough paper, chipped stone, wax, leather, and denoised paper texture.
+    Near-black ink, parchment tan, torch orange, sickness green, desaturated crimson, and chalky
+    white highlights.
+  lighting_and_shadow: >-
+    Torch cones and hard ink shadows carve faces, hands, walls, and monsters into bold graphic
+    planes.
+  texture_and_material: >-
+    Brush ink, dry crosshatching, rough paper, chipped stone, wax, leather, and denoised paper
+    texture.
   camera_and_composition: >-
-    Cropped comic-panel drama, tilted dungeon planes, character-vs-shadow hierarchy, and readable central
-    action.
-  atmosphere_and_mood: Anxious, tactical, grimly theatrical, claustrophobic, and adventure-ready.
+    Cropped comic-panel pressure, tilted stone or value planes, action-vs-shadow hierarchy, and
+    readable central tension without requiring a dungeon encounter.
+  atmosphere_and_mood: >-
+    Carry the prompt through Anxious, tactical, grimly theatrical, claustrophobic, and adventure
+    ready; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and
+    siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's
+    medieval-zine identity.
   rendering_and_quality: Clean high-contrast ink illustration with controlled paper texture, no dirty low-light speckle.
   creative_brief: >-
-    Reusable visual system for any subject needing anxious ink drama, hard torch contrast, rough paper energy,
-    and claustrophobic adventure tension.
+    Reusable visual system for any subject needing anxious ink drama, hard torch contrast, rough
+    paper energy, and claustrophobic adventure tension. Apply after prompt X: prompt X supplies
+    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
+    Stress Ink Dungeon Crawl; Harsh ink dungeon crawl with angular heroes; torchlight panic; heavy
+    black cuts; exaggerated stress shadows; angular exaggeration, mood, material behavior, framing
+    logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed
+    monster, readable text, or sample-card composition.
+  key_features: >-
+    Stress Ink Dungeon Crawl; Harsh ink dungeon crawl with angular heroes; torchlight panic; heavy
+    black cuts; exaggerated stress shadows; angular exaggeration
 avoidRules:
   - copied game characters
   - smooth fantasy realism
@@ -41,12 +58,20 @@ avoidRules:
   - explicit gore
   - watermark
   - text
+  - army lineup lock
+  - tabletop product photo
+  - generic battle splash
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-027.webp
 attributes:
   negativePrompt: >-
-    copied game characters, smooth fantasy realism, excessive noise, unreadable black crush, explicit gore,
-    watermark, text
+    copied game characters, smooth fantasy realism, excessive noise, unreadable black crush,
+    explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash,
+    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
+    art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -12,25 +12,60 @@ tags:
   - abstract-and-experimental
   - diagram-and-data-systems
 visualDna:
-  aesthetic: Technical drawing
-  subject_treatment: White lines
-  color_and_tone: Blue background
-  lighting_and_shadow: Flat
-  texture_and_material: Paper
-  camera_and_composition: 'Compose for Blueprint using its key spatial cues: White on Blue.'
-  atmosphere_and_mood: Planning, technical
-  rendering_and_quality: Architectural, plan
-  key_features: White on Blue
+  aesthetic: >-
+    Blueprint becomes a transferable diagram and information-graphic system: start from Technical
+    drawing and White on Blue, then route prompt content through schematic paths, encoded blocks,
+    contour logic, technical marks, and data-like organization without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using White lines to map, route, blueprint, annotate,
+    contour, grid, or encode prompt subjects as information structure; preserve anatomy, object
+    identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Blue background; use palette as functional coding: substrate, traces,
+    line hierarchy, contrast fields, or chalk/paper logic, with enough value control that the
+    subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical
+    so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly
+    asks for it.
+  texture_and_material: >-
+    Render Paper as the tactile or mark-making basis; marks should feel like ink, chalk, copper,
+    pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props, spaces,
+    or close material studies.
+  camera_and_composition: >-
+    Compose around White on Blue as reusable spatial grammar: favor legible routes, modules, legends
+    without readable text, edge registration, grids, and information density, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Planning, technical as the emotional register; derive mood from analysis, navigation,
+    computation, instruction, secrecy, or handmade classroom energy, without flattening strong,
+    strange, darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Architectural, plan: finish with clean information hierarchy, exact line weight, and
+    no random label soup, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Technical drawing; White lines; Blue background; Flat; Paper; White on Blue; Planning,
+    technical; Architectural, plan; White on Blue
   creative_brief: >-
-    Apply blueprint drafting to the input: Prussian-blue field, white technical linework, dimension-like marks
-    without readable text, and construction schematics should make any subject feel designed before built.
+    Apply blueprint drafting to the input: Prussian-blue field, white technical linework,
+    dimension-like marks without readable text, and construction schematics should make any subject
+    feel designed before built.
 avoidRules:
   - color
   - 3d
+  - random text labels
+  - unreadable diagram clutter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-076.webp
 attributes:
-  negativePrompt: color, 3d
+  negativePrompt: >-
+    color, 3d, random text labels, unreadable diagram clutter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

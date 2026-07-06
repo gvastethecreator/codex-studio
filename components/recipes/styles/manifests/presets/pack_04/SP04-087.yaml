@@ -12,20 +12,62 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Comparative silhouette iteration board for shape-language selection
-  subject_treatment: Filled contour-only forms with zero interior detail dependency
-  color_and_tone: Binary black-white with optional neutral gray grouping aids
-  lighting_and_shadow: Non-rendered; readability entirely silhouette-based
-  texture_and_material: Flat fill blocks with crisp edge control
-  camera_and_composition: Normalized scale grid enabling direct mass/proportion comparison
-  atmosphere_and_mood: Methodical, exploratory, selection-oriented
-  rendering_and_quality: Systematic early-stage design study emphasizing variation breadth
-  key_features: High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing
+  aesthetic: >-
+    Silhouette Iteration Sheet acts as a transferable illustration router: start from Comparative
+    silhouette iteration board for shape-language selection, High-contrast silhouette matrix,
+    archetype spread (round/square/triangular/spiky), immediate read testing and production
+    concept-art system built from iteration discipline, silhouette testing, material exploration,
+    design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X
+    instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Filled contour-only forms with zero interior detail
+    dependency; preserve the requested subject while routing it through design exploration, asset
+    logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability
+    constraints, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Binary black-white with optional neutral gray grouping aids; use color as
+    concept decision-making: mood scripts, material swatches, faction accents, environment
+    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Non-rendered; readability entirely silhouette-based, process-led value
+    structure, readable highlights, and style-specific shadow behavior; shape light for ideation
+    clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Flat fill blocks with crisp edge control; surface detail should reveal brush passes,
+    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
+    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Normalized scale grid enabling direct mass/proportion comparison;
+    compose through production hierarchy, variants, orthographic logic, isometric staging,
+    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
+    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Methodical, exploratory, selection-oriented, mood carried by Silhouette Iteration
+    Sheet craft, material pressure, and visual restraint; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Systematic early-stage design study emphasizing variation breadth; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Comparative silhouette iteration board for shape-language selection; High-contrast silhouette
+    matrix, archetype spread (round/square/triangular/spiky), immediate read testing; Binary
+    black-white with optional neutral gray grouping aids; Flat fill blocks with crisp edge control;
+    Normalized scale grid enabling direct mass/proportion comparison
   creative_brief: >-
-    Apply silhouette-iteration board logic to any input: black-shape variants, negative-space deltas,
-    proportion experiments, readable thumbnails, and design exploration pacing. If no character or creature
-    exists, translate the subject into abstract silhouette options without requiring a grid, lineup, or figure
-    design.
+    Apply Silhouette Iteration Sheet as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Comparative silhouette iteration board for shape-language selection, High-contrast
+    silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing,
+    Flat fill blocks with crisp edge control without requiring the card image's original subject.
 avoidRules:
   - detailed
   - rendered
@@ -36,10 +78,26 @@ avoidRules:
   - internal detail
   - texture
   - single silhouette
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-087.webp
 attributes:
-  negativePrompt: detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette
+  negativePrompt: >-
+    detailed, rendered, colored, one design, final, finished, internal detail, texture, single
+    silhouette, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
+    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

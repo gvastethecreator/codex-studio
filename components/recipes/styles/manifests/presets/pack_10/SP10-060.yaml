@@ -12,26 +12,61 @@ tags:
   - abstract-and-experimental
   - material-surface-textures
 visualDna:
-  aesthetic: Thousands of sparkles
-  subject_treatment: "Treat subjects through Glitter Texture's signature cues: Sparkle density."
-  color_and_tone: Metallic, rainbow
-  lighting_and_shadow: Sparkles
-  texture_and_material: Rough, shiny
-  camera_and_composition: 'Compose for Glitter Texture using its key spatial cues: Sparkle density.'
-  atmosphere_and_mood: Fun, cheap
-  rendering_and_quality: Party, craft
-  key_features: Sparkle density
+  aesthetic: >-
+    Glitter Texture becomes a transferable material surface transformation system: start from
+    Thousands of sparkles and Sparkle density, then route prompt content through physical surface
+    grain, reflectance, damage, joinery, pores, seams, and tactile structure without forcing one
+    card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Sparkle density to coat, wrap, weather, polish,
+    crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Metallic, rainbow; let color follow material depth, veins, patina,
+    oxidation, fiber direction, shimmer, or manufactured finish, with enough value control that the
+    subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Sparkles drive the light response: show reflectance honestly through gloss, matte falloff,
+    iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless the
+    prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Rough, shiny as the tactile or mark-making basis; surface behavior needs coherent grain,
+    chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Sparkle density as reusable spatial grammar: support macro texture studies and
+    full-scene use through directional grain, repeat, drape, fracture, or patch rhythm, adapting
+    cleanly to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Fun, cheap as the emotional register; derive mood from durability, luxury, decay, tactility,
+    craft, armor, novelty, or contamination, without flattening strong, strange, darker, or adult
+    prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Party, craft: finish with material clarity, controlled micro-detail, and no stock
+    texture pasted over forms, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Thousands of sparkles; Sparkle density; Metallic, rainbow; Sparkles; Rough, shiny; Sparkle
+    density; Fun, cheap; Party, craft; Sparkle density
   creative_brief: >-
-    Apply glitter density to the input: micro-mirror flecks, refractive sparkle, dense specular scatter, and
-    celebratory particulate geometry should make surfaces flare without requiring party props or product
-    piles.
+    Apply glitter density to the input: micro-mirror flecks, refractive sparkle, dense specular
+    scatter, and celebratory particulate geometry should make surfaces flare without requiring party
+    props or product piles.
 avoidRules:
   - matte
   - dull
+  - wrong material
+  - generic stock texture
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-060.webp
 attributes:
-  negativePrompt: matte, dull
+  negativePrompt: >-
+    matte, dull, wrong material, generic stock texture, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

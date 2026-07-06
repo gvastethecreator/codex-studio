@@ -12,26 +12,56 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Dragon-hide armor
-  subject_treatment: Thick scales
-  color_and_tone: Red/Gold/Black
-  lighting_and_shadow: Metallic sheen
-  texture_and_material: Hard, armored
-  camera_and_composition: Spiked
-  atmosphere_and_mood: Epic, dangerous
-  rendering_and_quality: Fantasy, tough
-  key_features: Overlapping armor
+  aesthetic: >-
+    Dragon Scale translates natural material behavior into form: start from Dragon-hide armor, Hard,
+    armored, and Spiked, then turn natural formation, growth, erosion, and geological or biological
+    irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Thick scales: preserve identity and pose while letting
+    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Red/Gold/Black as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Metallic sheen define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Dragon Scale without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Hard, armored through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Spiked as reusable material rhythm: macro-friendly for texture tasks, but able to
+    wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Epic, dangerous by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Fantasy, tough material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Dragon-hide armor; Thick scales; Hard, armored; Metallic sheen; Spiked
   creative_brief: >-
-    Apply dragon-hide armor as legendary surface language: thick overlapping red-gold-obsidian scales, ridged
-    crests with metallic sheen, dark shadow between plates, and ancient indestructible weight. If character,
-    creature, armor, vehicle, or object exists, give it dragon-scale protection; otherwise use scale plating
-    as fantasy material without requiring a dragon.
+    Route any subject through Dragon Scale as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Apply dragon-hide armor as legendary
+    surface language: thick overlapping red-gold-obsidian scales, ridged crests with metallic sheen,
+    dark shadow between plates, and ancient indestructible weight. If character, creature, armor,
+    vehicle, or object exists, give it dragon-scale protection; otherwise use scale plating as
+    fantasy material without requiring a dragon.
 avoidRules:
   - fish scale
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-080.webp
 attributes:
-  negativePrompt: fish scale
+  negativePrompt: fish scale, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

@@ -12,27 +12,82 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Wildstyle mural composition with layered letter architecture
-  subject_treatment: Multi-layer outlines, interlocking fills, arrows and extension bars
-  color_and_tone: High-saturation spray spectrum with complementary contrast blocking
-  lighting_and_shadow: Graphic bevel highlights and controlled glow accents for depth cues
-  texture_and_material: Masonry wall grain under aerosol gradients and cutbacks
-  camera_and_composition: Aggressive perspective bends, angular connectors, kinetic skew
-  atmosphere_and_mood: Celebratory, competitive, showcase-wall intensity
-  rendering_and_quality: Complex and polished mural rendering with deliberate hierarchy
-  key_features: Nested outlines, dimensional drop logic, connector lattice, readable abstraction
+  aesthetic: >-
+    Graffiti (Piece) acts as a transferable illustration router: start from Wildstyle mural
+    composition with layered letter architecture, Nested outlines, dimensional drop logic, connector
+    lattice, readable abstraction and ink and printmaking system built from mark economy, matrix
+    process, ink transfer, pressure artifacts, paper absorption, and reproducible graphic structure,
+    then apply the visual behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Multi-layer outlines, interlocking fills, arrows and
+    extension bars; preserve the requested subject while rebuilding it through carved lines, etched
+    density, stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or
+    tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function,
+    or setting legible.
+  color_and_tone: >-
+    Build color with High-saturation spray spectrum with complementary contrast blocking; use color
+    as ink behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash
+    colors, spray contrast, newspaper black, or sumi restraint, with deliberate value grouping,
+    accent control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Graphic bevel highlights and controlled glow accents for depth cues;
+    translate light into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink
+    pooling, or flat spray contrast rather than photographic shading, so value structure supports
+    the illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Masonry wall grain under aerosol gradients and cutbacks; surface detail should show paper
+    fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen pooling,
+    tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and avoiding
+    noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Aggressive perspective bends, angular connectors, kinetic skew;
+    compose through print registration, border discipline, mark-direction rhythm, negative-space
+    carving, tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge
+    rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Celebratory, competitive, showcase-wall intensity, mood carried by Graffiti
+    (Piece) craft, material pressure, and visual restraint; derive mood from craft pressure,
+    underground immediacy, archival print authority, occult darkness, decorative ceremony,
+    street-poster urgency, or disciplined ink control, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Complex and polished mural rendering with deliberate hierarchy; finish as a credible
+    ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random
+    distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Wildstyle mural composition with layered letter architecture; Nested outlines, dimensional drop
+    logic, connector lattice, readable abstraction; High-saturation spray spectrum with
+    complementary contrast blocking; Masonry wall grain under aerosol gradients and cutbacks;
+    Aggressive perspective bends, angular connectors, kinetic skew
   creative_brief: >-
-    Apply wildstyle graffiti-piece construction to any input as layered typographic architecture: interlocking
-    contours, arrows, bevels, bubble fills, cutback highlights, aerosol gradients, fat outlines, and paint
-    buildup. If there are no letters, transform the subject silhouette into abstract letterform structures
-    without requiring readable words, a mural wall, a train, or a street scene.
+    Apply Graffiti (Piece) as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Wildstyle mural composition with layered letter architecture, Nested outlines, dimensional drop
+    logic, connector lattice, readable abstraction, Masonry wall grain under aerosol gradients and
+    cutbacks without requiring the card image's original subject.
 avoidRules:
   - tag
   - messy
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-077.webp
 attributes:
-  negativePrompt: tag, messy
+  negativePrompt: >-
+    tag, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

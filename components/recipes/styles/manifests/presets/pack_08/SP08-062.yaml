@@ -12,32 +12,89 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism
+  aesthetic: >-
+    Leather Armor operates as a portable fashion-costume router: combine Hardened leather utility,
+    stealth-ready modularity, shadowcraft pragmatism with material-forward fashion transformation
+    with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
   subject_treatment: >-
-    Strap geometry, stud punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded
-    depth
-  color_and_tone: Brown, Black, oxblood, oiled-chestnut, shadow-black, bronze-stud, smoke
-  lighting_and_shadow: Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Strap geometry, stud
+    punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast plus
+    material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or
+    volumetric separation as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather
-    panel
+    Render Worn leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede
+    lining, tooled-leather panel plus fabric grain, fur, chain, knit, satin, lace, leather, polymer,
+    smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers,
+    shine, opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the
+    whole prompt.
   camera_and_composition: >-
-    Compose for Leather Armor using its key spatial cues: Buckles, hood cues, hidden-pouch logic, bracer
-    wraps, asymmetrical harness.
-  atmosphere_and_mood: Stealthy, tough, modular, nocturnal, quietly tactical
-  rendering_and_quality: Tough, flexible, stealth-gear authenticity, worn-hide precision
-  key_features: Buckles, hood cues, hidden-pouch logic, bracer wraps, asymmetrical harness
+    Compose with Compose for Leather Armor using its key spatial cues: Buckles, hood cues,
+    hidden-pouch logic, bracer wraps, asymmetrical harness plus drape rhythm, material coverage,
+    silhouette clarity, tactile close detail, fold direction, and transformation edge control as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Leather Armor while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Hardened leather utility, stealth-ready modularity, shadowcraft pragmatism; Strap geometry, stud
+    punctuation, asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth; Worn
+    leather, oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining,
+    tooled-leather panel; Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth
+    contrast; Compose for Leather Armor using its key spatial cues: Buckles, hood cues, hidden-pouch
+    logic, bracer wraps, asymmetrical harness
   creative_brief: >-
-    Armor the input with stealth leather grammar: oil-tanned hide, asymmetrical harness logic, brass studs,
-    buckles, bracer wraps, tooled panels and hidden-pouch utility. Keep rogue pragmatism as material attitude
-    only; do not require weapons, dungeon corridors, lockpicking, shadow alleys or humanoid adventurer body.
+    Use Leather Armor after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Hardened leather
+    utility, stealth-ready modularity, shadowcraft pragmatism, Strap geometry, stud punctuation,
+    asymmetrical harness logic, pauldron cues, bracer-wrap rhythm, hooded depth, Worn leather,
+    oil-tanned hide, distressed leather, brass studs, iron buckles, suede lining, tooled-leather
+    panel, Torch-amber rim, moonlit shadow, leather-grain side light, low-key stealth contrast,
+    Compose for Leather Armor using its key spatial cues: Buckles, hood cues, hidden-pouch logic,
+    bracer wraps, asymmetrical harness plus weave, pile, grain, shine, translucency, opacity,
+    stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light
+    response, material treatment, silhouette grammar, and finish discipline without requiring one
+    body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - plate-metal armor dominance
   - plain soft cloth dominance
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-062.webp
 attributes:
-  negativePrompt: plate-metal armor dominance, plain soft cloth dominance
+  negativePrompt: >-
+    plate-metal armor dominance, plain soft cloth dominance, generic fabric texture, muddy surface
+    noise, wrong material physics, fixed outfit, required body type, literal card scene, generic
+    fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

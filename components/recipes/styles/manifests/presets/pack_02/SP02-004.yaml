@@ -12,34 +12,86 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle
+  aesthetic: >-
+    Technicolor Musical acts as a transferable cinematic-media router: start from Golden-age
+    Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical spectacle,
+    Dye-transfer saturation, theatrical color clarity and cinematic genre system built from lens
+    grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade,
+    then apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Technicolor Musical: casting, wardrobe,
-    props, motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
-    locking to one plot beat.
-  color_and_tone: Hyper-saturated, ruby red, emerald green, sapphire blue
-  lighting_and_shadow: High key studio, broad soft fill, painted backdrop
-  texture_and_material: 3-strip Technicolor, glossy dye transfer, vibrant saturation
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Technicolor Musical: casting, wardrobe, props, motion cues, and silhouette hierarchy
+    follow 1. Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve
+    the requested subject while staging it as filmed material through blocking, wardrobe pressure,
+    lens distance, movement cues, or genre-era performance texture only when useful, keeping the
+    requested identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Hyper-saturated, ruby red, emerald green, sapphire blue; treat color as cinema
+    process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded
+    print, or projection decay, with deliberate value grouping, accent control, and process-specific
+    limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through High key studio, broad soft fill, painted backdrop; make light feel
+    motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical
+    glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure
+    support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render 3-strip Technicolor, glossy dye transfer, vibrant saturation; surface detail should
+    reveal film grain, gate weave, scratches, halation, acetate texture, projection damage, optical
+    compositing, or photographed production surfaces, keeping artifact scale coherent and avoiding
+    noisy filler texture.
   camera_and_composition: >-
-    Camera language native to Technicolor Musical: genre-aware framing, lens character, focal hierarchy,
-    motion cue, and vertical style-card composition.
-  atmosphere_and_mood: Joyful, theatrical, magical spectacle, storybook wonder
-  rendering_and_quality: Vibrant, classic, theatrical, luminous
-  key_features: Dye-transfer saturation, theatrical color clarity
+    Structure the image through Camera language native to Technicolor Musical: genre-aware framing,
+    lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease,
+    symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy,
+    and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Joyful, theatrical, magical spectacle, storybook wonder; derive mood from
+    cinematic tradition, performance tone, genre stakes, projection damage, auteur restraint, camp
+    excess, or analog spectacle, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Vibrant, classic, theatrical, luminous, finished Technicolor Musical media craft
+    with clear process evidence and controlled detail; finish as credible moving-image language with
+    controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise
+    copy, or fake caption text, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Golden-age Technicolor fantasy, three-strip glory, hyper-saturated theatrical dream, musical
+    spectacle; Dye-transfer saturation, theatrical color clarity; Hyper-saturated, ruby red, emerald
+    green, sapphire blue; 3-strip Technicolor, glossy dye transfer, vibrant saturation; Camera
+    language native to Technicolor Musical: genre-aware framing, lens designed subjects, focal
+    hierarchy, motion cue, and style-led vertical composition
   creative_brief: >-
-    Technicolor musical style makes color sing beyond realism: ruby reds, emerald greens, sapphire blues,
-    broad studio fill, glossy dye-transfer saturation, and painted-backdrop theatricality. Keep golden-age
-    spectacle without forcing yellow roads, slippers, emerald cities, or musical staging. Apply Technicolor
-    Musical as a portable cinematic/camera style over any input: preserve its lens behavior, color process,
-    lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop,
-    brand, readable text, fixed IP scene, or narrative setup.
+    Apply Technicolor Musical as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Golden-age Technicolor fantasy, three-strip
+    glory, hyper-saturated theatrical dream, musical spectacle, Dye-transfer saturation, theatrical
+    color clarity, 3-strip Technicolor, glossy dye transfer, vibrant saturation without requiring
+    the card image's original subject.
 avoidRules:
   - faded
   - dark
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-004.webp
 attributes:
-  negativePrompt: faded, dark
+  negativePrompt: >-
+    faded, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

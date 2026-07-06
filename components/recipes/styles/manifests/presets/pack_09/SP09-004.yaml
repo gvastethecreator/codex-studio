@@ -13,30 +13,63 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Kitchen countertop stone
-  subject_treatment: "Treat subjects through Granite (Polished)'s signature cues: Random speckles."
-  color_and_tone: Speckled Grey/Black/Pink
-  lighting_and_shadow: Sharp reflection
-  texture_and_material: Smooth stone
-  camera_and_composition: 'Compose for Granite (Polished) using its key spatial cues: Random speckles.'
-  atmosphere_and_mood: Solid, cold
-  rendering_and_quality: Durable, heavy
-  key_features: Random speckles
+  aesthetic: >-
+    Granite (Polished) translates natural material behavior into form: start from Kitchen countertop
+    stone, Smooth stone, and Random speckles, then turn natural formation, growth, erosion, and
+    geological or biological irregularity into portable surface behavior rather than a literal
+    material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Treat subjects through Granite (Polished)'s signature cues:
+    Random speckles: preserve identity and pose while letting forms grow, erode, polish, fracture,
+    or soften through edge profile, surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Speckled Grey/Black/Pink as the material palette, with controlled value separation, local
+    color variation, and hue shifts that follow the subject's form rather than flattening it into a
+    pasted texture.
+  lighting_and_shadow: >-
+    Let Sharp reflection define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Granite (Polished) without hiding the
+    prompt subject.
+  texture_and_material: >-
+    Render Smooth stone through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Random speckles as reusable material rhythm: macro-friendly for texture tasks,
+    but able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Solid, cold by using age, weather, habitat pressure, and sensory association; the
+    material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Durable, heavy material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: >-
+    Kitchen countertop stone; Treat subjects through Granite (Polished)'s signature cues: Random
+    speckles; Smooth stone; Sharp reflection; Random speckles
   creative_brief: >-
-    Summon the cold dignity of polished granite with its galaxy of crystalline speckles suspended in stone
-    like a frozen night sky. Light should skim the surface like a blade, revealing depths that feel geological
-    rather than superficial. The image must carry the weight of mountains in every square inch of speckled
-    grey and pink. Use Granite as portable surface/render behavior over any input: map its texture, light
-    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
-    material sample, macro tile, wall, landscape, source object, or scene where the material naturally
-    appears.
+    Route any subject through Granite (Polished) as a transferable natural-material visual system
+    while preserving the prompt's subject, action, and setting. Summon the cold dignity of polished
+    granite with its galaxy of crystalline speckles suspended in stone like a frozen night sky.
+    Light should skim the surface like a blade, revealing depths that feel geological rather than
+    superficial. The image must carry the weight of mountains in every square inch of speckled grey
+    and pink. Use Granite as portable surface/render behavior over any input: map its texture, light
+    response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
+    literal material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - concrete
   - matte
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-004.webp
 attributes:
-  negativePrompt: concrete, matte
+  negativePrompt: concrete, matte, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

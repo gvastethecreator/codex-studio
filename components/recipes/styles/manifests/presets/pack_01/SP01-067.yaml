@@ -12,28 +12,80 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Airy ceremony editorial
-  subject_treatment: Soft romantic
-  color_and_tone: White, pastel, airy
-  lighting_and_shadow: Backlit sun
-  texture_and_material: Lace-like softness, floral color hints
+  aesthetic: >-
+    Wedding Photography acts as a transferable photographic style router: begin from Airy ceremony
+    editorial, Veil-like backlight, and portrait and studio photography system built from lens
+    discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply
+    the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Soft romantic; preserve prompt identity while using focal
+    priority, flattering or deliberately institutional distance, surface realism, and edge control
+    without requiring a human face, keeping the original subject, pose, species, object, or
+    environment legible.
+  color_and_tone: >-
+    Grade with White, pastel, airy; grade neutrals, skinlike or material tones, backdrop color,
+    cosmetic warmth, and controlled contrast as photographic capture decisions, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Backlit sun; make key, fill, rim, catchlight, background falloff, and shadow shape visibly
+    drive the style, preserving believable exposure, shadow density, highlight rolloff, and source
+    motivation.
+  texture_and_material: >-
+    Render Lace-like softness, floral color hints; retain pores, fabric, hair, props, paper,
+    backdrop sweep, and small surface imperfections at a believable photographic scale, avoiding
+    both waxy smoothing and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Wedding Photography: lens choice, crop distance, depth of field, and focal
-    hierarchy support 1. Portrait And Studio without generic framing.
-  atmosphere_and_mood: Romantic, luminous
-  rendering_and_quality: Romantic, expensive
-  key_features: Veil-like backlight
+    Compose through Wedding Photography studio subject hierarchy, controlled portrait optics,
+    believable retouching, and intentional backdrop behavior; use portrait lens compression, central
+    authority, intimate framing distance, frontal ID geometry, or editorial negative space without
+    forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Romantic, luminous; derive mood from proximity, pose pressure, institutional
+    polish, intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Romantic, expensive; finish as real photography with clean optics, plausible
+    retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Airy ceremony editorial; Veil-like backlight; White, pastel, airy; Backlit sun; Wedding
+    Photography studio subject hierarchy, controlled portrait optics, believable retouching, and
+    intentional backdrop behavior
   creative_brief: >-
-    Wedding photography becomes airy ceremonial light: pastel whites, lace-like texture, floral softness,
-    backlit glow, and expensive romantic restraint. Apply vow-day luminosity to any subject without requiring
-    bride, groom, veil, flowers, couple, or event.
+    Apply Wedding Photography as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Airy ceremony editorial, White, pastel, airy, Backlit sun, Lace-like
+    softness, floral color hints, and Wedding Photography studio subject hierarchy, controlled
+    portrait optics, believable retouching, and intentional backdrop behavior through optics,
+    exposure, palette, surface response, timing, and finish without requiring the card image's
+    original subject.
 avoidRules:
   - sad
   - dark
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-067.webp
 attributes:
-  negativePrompt: sad, dark
+  negativePrompt: >-
+    sad, dark, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI,
+    plastic render, watermark, readable text, signature, low resolution, mannequin skin,
+    over-smoothed plastic retouching, distorted anatomy, generic beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

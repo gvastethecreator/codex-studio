@@ -12,17 +12,60 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Dramatic silhouette photography, dark outline against a bright background
-  subject_treatment: Sharp contour edge, obscured internal detail, focus on shape and form
-  color_and_tone: Pure black primary form, vibrant or bright background colors, extreme high contrast
-  lighting_and_shadow: Strong backlighting, no front fill light, blown-out background highlights
-  texture_and_material: No interior texture on the primary form, smooth background gradients
-  camera_and_composition: Graphic composition, strong negative space, clear outline
-  atmosphere_and_mood: Mysterious, dramatic, anonymous, artistic, epic
-  rendering_and_quality: High quality artistic photography, crisp edges
+  aesthetic: >-
+    Silhouette Portrait acts as a transferable photographic style router: begin from Dramatic
+    silhouette photography, dark outline against a bright depth field, studio subject hierarchy,
+    controlled portrait optics, believable retouching, and intentional backdrop behavior, and
+    portrait and studio photography system built from lens discipline, subject hierarchy, controlled
+    retouching, and believable surface detail, then apply the photographic behavior to prompt X
+    instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Sharp contour edge, obscured internal detail, focus on shape
+    and form; preserve prompt identity while using focal priority, flattering or deliberately
+    institutional distance, surface realism, and edge control without requiring a human face,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Pure black primary form, vibrant or bright depth field colors, extreme high contrast;
+    grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled
+    contrast as photographic capture decisions, with value separation and white balance choices that
+    feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Strong backlighting, no front fill light, blown-out depth field highlights; make key, fill,
+    rim, catchlight, background falloff, and shadow shape visibly drive the style, preserving
+    believable exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render No interior texture on the primary form, smooth depth field gradients; retain pores,
+    fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a believable
+    photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide the prompt
+    content.
+  camera_and_composition: >-
+    Compose through Graphic composition, strong negative space, clear outline; use portrait lens
+    compression, central authority, intimate framing distance, frontal ID geometry, or editorial
+    negative space without forcing one sitter, with lens distance, depth, timing, and focal
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Mysterious, dramatic, anonymous, artistic, epic; derive mood from proximity, pose
+    pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
+    preset changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with High quality artistic photography, crisp edges; finish as real photography with
+    clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI
+    substitution, high-resolution photographic detail, and disciplined denoise without losing
+    natural grain where the preset needs it.
   creative_brief: >-
-    Apply silhouette-portrait lighting to any subject: black graphic contour, strong backlight, stripped
-    internal texture, high contrast, and monumental negative space without requiring a human profile.
+    Apply Silhouette Portrait as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Dramatic silhouette photography, dark outline against a bright depth field,
+    Pure black primary form, vibrant or bright depth field colors, extreme high contrast, Strong
+    backlighting, no front fill light, blown-out depth field highlights, No interior texture on the
+    primary form, smooth depth field gradients, and Graphic composition, strong negative space,
+    clear outline through optics, exposure, palette, surface response, timing, and finish without
+    requiring the card image's original subject.
+  key_features: >-
+    Dramatic silhouette photography, dark outline against a bright depth field; studio subject
+    hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior;
+    Pure black primary form, vibrant or bright depth field colors, extreme high contrast; Strong
+    backlighting, no front fill light, blown-out depth field highlights; Graphic composition, strong
+    negative space, clear outline
 avoidRules:
   - illustration
   - painting
@@ -39,12 +82,21 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-007.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
+    beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

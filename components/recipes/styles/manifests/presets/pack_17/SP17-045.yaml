@@ -1,0 +1,91 @@
+schemaVersion: 1
+id: SP17-045
+packId: pack_17
+name: Rotten Gold Court Romance
+category: 7. Weird Medieval Editorial
+domain: decadent gothic fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - weird-medieval-editorial
+  - decadent-court
+visualDna:
+  aesthetic: >-
+    Decadent medieval court fantasy where tarnished gold, bruised florals, velvet darks, and
+    intimate ritual tension make beauty feel slightly poisonous.
+  subject_treatment: >-
+    Transform any prompt subject through courtly decay, sensual restraint, softened gothic posture,
+    tarnished ornament, bruised botanical accents, and aristocratic unease while preserving the
+    user's subject and avoiding fixed lovers or court roles.
+  color_and_tone: Rotten gold, bruised plum, candle cream, oxidized green, black cherry, and old ivory.
+  lighting_and_shadow: >-
+    Low candle glow with soft rim light, open colored shadows, and warm reflections on worn
+    ornament.
+  texture_and_material: >-
+    Velvet, tarnished metal, crushed petals, old lace as broad shape, wax, damp stone, and worn
+    skin-like paper.
+  camera_and_composition: >-
+    Intimate editorial crop, asymmetric courtly balance, controlled negative space, and one sensual
+    or ceremonial tension point that adapts to the prompt subject.
+  atmosphere_and_mood: >-
+    Carry the prompt through Adult, decadent, romantic, suspicious, and quietly venomous; adult
+    editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic
+    medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine
+    identity.
+  rendering_and_quality: >-
+    Clean gothic editorial illustration with broad matte planes, restrained detail, and denoised
+    texture.
+  creative_brief: >-
+    Apply this as a reusable style router over any prompt: preserve the user's subject while adding
+    decadent medieval court romance, poisonous ornament, velvet gold decay, and adult gothic
+    intimacy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity,
+    while this preset supplies a style grammar of Rotten Gold Court Romance; Decadent medieval court
+    fantasy where tarnished gold; bruised florals; velvet darks; intimate ritual tension make beauty
+    feel slightly poisonous; courtly decay, mood, material behavior, framing logic, and denoised
+    medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text,
+    or sample-card composition.
+  key_features: >-
+    Rotten Gold Court Romance; Decadent medieval court fantasy where tarnished gold; bruised
+    florals; velvet darks; intimate ritual tension make beauty feel slightly poisonous; courtly
+    decay
+avoidRules:
+  - generic royal portrait
+  - wedding scene
+  - ballroom crowd
+  - explicit nudity
+  - copied costume
+  - readable crest
+  - watermark
+  - text
+  - romance novel cover
+  - prompt literal medieval card
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-045.webp
+attributes:
+  negativePrompt: >-
+    generic royal portrait, wedding scene, ballroom crowd, explicit nudity, copied costume, readable
+    crest, watermark, text, romance novel cover, prompt literal medieval card, prompt literal card
+    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
+    dark texture
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: weird-medieval-editorial
+  categoryName: 7. Weird Medieval Editorial
+  domain: decadent gothic fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - weird-medieval-editorial
+    - decadent-court
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

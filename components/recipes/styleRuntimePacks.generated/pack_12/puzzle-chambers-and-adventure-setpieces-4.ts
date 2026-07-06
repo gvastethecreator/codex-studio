@@ -8,26 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Clockwork Sky Armada',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, modern-ui, plastic-look, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, modern-ui, plastic-look, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Clockwork Sky Armada within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clockwork Sky Armada's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through mass movement at horizon scale; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Clockwork Sky Armada's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Clockwork Sky Armada: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with brass, oil black, and sky silver; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Clockwork Sky Armada: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with high-altitude rim light; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Clockwork Sky Armada's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from gears, clock plates, and polished mechanisms; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Clockwork Sky Armada's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Clockwork Sky Armada's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Clockwork Sky Armada into a portable visual system for 8. Puzzle Chambers & Adventure Setpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Clockwork Sky Armada as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Clockwork, Sky, Armada; mass movement at horizon scale; brass, oil black, and sky silver; high-altitude rim light; gears, clock plates, and polished mechanisms; vertical cloud depth and suspended pathways; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting',
     },
   },
   {
@@ -35,24 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pixel Tavern Quest Hub',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, anti-aliased-blur, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, anti-aliased-blur, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Pixel Tavern Quest Hub within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Pixel Tavern Quest Hub's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Pixel Tavern Quest Hub's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Pixel Tavern Quest Hub: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Pixel Tavern Quest Hub: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Pixel Tavern Quest Hub's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from chunky pixels, tavern wood, and jewel-like UI-free icons; warm wood, table clutter, and quest lamps; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Pixel Tavern Quest Hub's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Pixel Tavern Quest Hub's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood cozy retro quest energy; hub comfort before danger; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Pixel, Tavern, Quest, Hub; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; chunky pixels, tavern wood, and jewel-like UI-free icons; readable paths, central devices, modular rooms, layered doors, reward pedestals, and before-after traversal views; cozy retro quest energy',
+      creative_brief:
+        "Apply Pixel Tavern Quest Hub as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -60,24 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lunar Monolith Puzzle Chamber',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, clutter, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, clutter, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Lunar Monolith Puzzle Chamber within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Lunar Monolith Puzzle Chamber's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through room-scale puzzle logic; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Lunar Monolith Puzzle Chamber's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Lunar Monolith Puzzle Chamber: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with moon silver, basalt grey, and cold blue; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Lunar Monolith Puzzle Chamber: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with low lunar rim light; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Lunar Monolith Puzzle Chamber's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Lunar Monolith Puzzle Chamber's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Lunar Monolith Puzzle Chamber's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Lunar, Monolith, Puzzle, Chamber; room-scale puzzle logic; moon silver, basalt grey, and cold blue; low lunar rim light; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; central monolith and modular puzzle floor; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting',
+      creative_brief:
+        "Apply Lunar Monolith Puzzle Chamber as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -85,26 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mushroom Kingdom Frontier',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, grimdark, photoreal-grain, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, grimdark, photoreal-grain, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Mushroom Kingdom Frontier within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Mushroom Kingdom Frontier's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Mushroom Kingdom Frontier's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Mushroom Kingdom Frontier: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with red caps, moss green, and warm toy-like highlights; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Mushroom Kingdom Frontier: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Mushroom Kingdom Frontier's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from spongy caps and soft forest floor; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Mushroom Kingdom Frontier's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Mushroom Kingdom Frontier's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
       creative_brief:
-        'Create a style-card that translates Mushroom Kingdom Frontier into a portable visual system for 8. Puzzle Chambers & Adventure Setpieces. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Mushroom Kingdom Frontier as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+      key_features:
+        'Mushroom, Kingdom, Frontier; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging; red caps, moss green, and warm toy-like highlights; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; spongy caps and soft forest floor; readable paths, central devices, modular rooms, layered doors, reward pedestals, and before-after traversal views; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting',
     },
   },
   {
@@ -112,24 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sapphire Bazaar Deckbuilder Hub',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, bland-ui, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, bland-ui, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Sapphire Bazaar Deckbuilder Hub within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Sapphire Bazaar Deckbuilder Hub's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Sapphire Bazaar Deckbuilder Hub's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Sapphire Bazaar Deckbuilder Hub: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with sapphire blue, warm gold, and polished market color; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Sapphire Bazaar Deckbuilder Hub: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Sapphire Bazaar Deckbuilder Hub's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from cards, counters, and bazaar lacquer; market cloth, crates, brass trays, and survival stalls; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Sapphire Bazaar Deckbuilder Hub's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Sapphire Bazaar Deckbuilder Hub's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Sapphire, Bazaar, Deckbuilder, Hub; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging; sapphire blue, warm gold, and polished market color; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; cards, counters, and bazaar lacquer; dense vendor lanes and trade-route clutter; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting',
+      creative_brief:
+        "Apply Sapphire Bazaar Deckbuilder Hub as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -137,24 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Echo Cavern Sound Puzzle',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Echo Cavern Sound Puzzle within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Echo Cavern Sound Puzzle's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through sound puzzle feedback; audio-feedback puzzle logic; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Echo Cavern Sound Puzzle's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Echo Cavern Sound Puzzle: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Echo Cavern Sound Puzzle: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with echoing crystal and sound-wave glow; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Echo Cavern Sound Puzzle's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Echo Cavern Sound Puzzle's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Echo Cavern Sound Puzzle's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Echo, Cavern, Sound, Puzzle; sound puzzle feedback; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; echoing crystal and sound-wave glow; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; acoustic chamber depth; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting',
+      creative_brief:
+        "Apply Echo Cavern Sound Puzzle as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -162,24 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dust Cathedral Rally Raid',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Dust Cathedral Rally Raid within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Dust Cathedral Rally Raid's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Dust Cathedral Rally Raid's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Dust Cathedral Rally Raid: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Dust Cathedral Rally Raid: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Dust Cathedral Rally Raid's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Dust Cathedral Rally Raid's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Dust Cathedral Rally Raid's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood ritual race through ruins; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Dust, Cathedral, Rally, Raid; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; dusty nave, rally lanes, and sacred scale; ritual race through ruins',
+      creative_brief:
+        "Apply Dust Cathedral Rally Raid as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -187,24 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prism Alley Card Duel',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, medieval-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, medieval-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Prism Alley Card Duel within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Prism Alley Card Duel's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through one-on-one contest pressure; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Prism Alley Card Duel's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Prism Alley Card Duel: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Prism Alley Card Duel: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Prism Alley Card Duel's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Prism Alley Card Duel's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Prism Alley Card Duel's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Prism, Alley, Card, Duel; one-on-one contest pressure; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; two-sided focal symmetry and readable attack lanes; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting',
+      creative_brief:
+        "Apply Prism Alley Card Duel as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -212,24 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Basilisk Quarry Escape',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, clean-futuristic, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, clean-futuristic, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Basilisk Quarry Escape within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Basilisk Quarry Escape's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through escape from a dangerous gaze; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Basilisk Quarry Escape's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Basilisk Quarry Escape: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Basilisk Quarry Escape: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Basilisk Quarry Escape's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from quarry dust, scaled stone, and petrified edges; cut stone, dust, ropes, and broken rails; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Basilisk Quarry Escape's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Basilisk Quarry Escape's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Basilisk, Quarry, Escape; escape from a dangerous gaze; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; quarry dust, scaled stone, and petrified edges; stepped extraction paths; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting',
+      creative_brief:
+        "Apply Basilisk Quarry Escape as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -237,24 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Endgame Eclipse Throne Room',
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, text, logo, comedic-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, comedic-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Endgame Eclipse Throne Room within 8. Puzzle Chambers & Adventure Setpieces: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Endgame Eclipse Throne Room's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Endgame Eclipse Throne Room's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express puzzle affordances, hub readability, traversal choices, central devices, reward rhythm, and escape logic without requiring a literal dungeon room.",
       color_and_tone:
-        'Use a controlled palette that supports Endgame Eclipse Throne Room: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with black sun, red corona, and throne gold; warm tavern amber, sapphire blue, clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Endgame Eclipse Throne Room: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with eclipse backlight; portal glow, puzzle beams, lantern pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Endgame Eclipse Throne Room's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Endgame Eclipse Throne Room's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Endgame Eclipse Throne Room's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood endgame ritual dread; curious, adventurous, readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 8. Puzzle Chambers & Adventure Setpieces style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as environment-adventure art with clear affordances, satisfying depth, and no generic quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Endgame, Eclipse, Throne, Room; adventure setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging; black sun, red corona, and throne gold; eclipse backlight; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished relics; final boss axis and eclipse halo; endgame ritual dread',
+      creative_brief:
+        "Apply Endgame Eclipse Throne Room as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

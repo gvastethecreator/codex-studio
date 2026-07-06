@@ -13,32 +13,69 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer
-    through light alone
+    Lighting Scenario Pass acts as a transferable illustration router: start from Iterative
+    color-script style focused on controlled multi-pass illumination studies and mood transfer
+    through light alone, Multi-pass lighting matrix, color-temperature progression, shadow-arc
+    logic, atmospheric phase control, mood-through-illumination methodology and production
+    concept-art system built from iteration discipline, silhouette testing, material exploration,
+    design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X
+    instead of recreating a fixed demo image.
   subject_treatment: >-
-    Stable compositional scaffold with constant geometry, variation expressed through light patterning, edge
-    softness, and shadow behavior
+    Transform any prompt subject through Stable compositional scaffold with constant geometry,
+    variation expressed through light patterning, edge softness, and shadow behavior; preserve the
+    requested subject while routing it through design exploration, asset logic, value blocking,
+    scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the
+    requested identity, silhouette, pose, object function, or setting legible.
   color_and_tone: >-
-    Phase-based palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions,
-    and deep nocturnal indigos
+    Build color with Phase-based palette families from cool pre-dawn violets to warm amber daylight,
+    magenta dusk transitions, and deep nocturnal indigos; use color as concept decision-making: mood
+    scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or
+    readable pass separation, with deliberate value grouping, accent control, and process-specific
+    limits rather than a generic palette wash.
   lighting_and_shadow: >-
-    Systematic key-angle sweeps, temperature-shift ladders, variable diffusion density, calibrated contrast
-    steps across render passes
+    Handle light through Systematic key-angle sweeps, temperature-shift ladders, variable diffusion
+    density, calibrated contrast steps across render passes; shape light for ideation clarity
+    through value block-in, keyframe contrast, material test highlights, callout illumination, or
+    pitch-frame atmosphere, so value structure supports the illustration process and does not
+    overwrite the requested content.
   texture_and_material: >-
-    Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective
-    intensity mapping
-  camera_and_composition: Fixed camera and structure with depth perception driven by atmosphere and luminance distribution changes
-  atmosphere_and_mood: Analytical yet emotional, cinematic, temporal, expressive, study-driven
+    Render Per-pass volumetric response variation, haze density modulation, shadow hardness tuning,
+    reflective intensity mapping; surface detail should reveal brush passes, photobash integration,
+    low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon
+    material tiers when named, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Fixed camera and structure with depth perception driven by
+    atmosphere and luminance distribution changes; compose through production hierarchy, variants,
+    orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe
+    balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Analytical yet emotional, cinematic, temporal, expressive, study-driven; derive
+    mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash
+    utility, cinematic intent, or production-room clarity, letting the style alter interpretation
+    without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Production-grade lighting development board aesthetic with coherent comparability between passes and
-    disciplined cinematic polish
+    Finish with Production-grade lighting development board aesthetic with coherent comparability
+    between passes and disciplined cinematic polish; finish with concept-art usefulness, readable
+    decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render
+    when iteration is intended, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
   key_features: >-
-    Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control,
-    mood-through-illumination methodology
+    Iterative color-script style focused on controlled multi-pass illumination studies and mood
+    transfer through light alone; Multi-pass lighting matrix, color-temperature progression,
+    shadow-arc logic, atmospheric phase control, mood-through-illumination methodology; Phase-based
+    palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions,
+    and deep nocturnal indigos; Per-pass volumetric response variation, haze density modulation,
+    shadow hardness tuning, reflective intensity mapping; Fixed camera and structure with depth
+    perception driven by atmosphere and luminance distribution changes
   creative_brief: >-
-    Apply lighting-scenario pass logic to any input: same-form relighting, rim-light options, bounce color,
-    shadow-temperature studies, exposure variation, and cinematic value planning. It should work on subjects,
-    products, spaces, or abstractions without requiring a scene matrix or narrative location.
+    Apply Lighting Scenario Pass as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Iterative color-script style focused on controlled multi-pass illumination studies and
+    mood transfer through light alone, Multi-pass lighting matrix, color-temperature progression,
+    shadow-arc logic, atmospheric phase control, mood-through-illumination methodology, Per-pass
+    volumetric response variation, haze density modulation, shadow hardness tuning, reflective
+    intensity mapping without requiring the card image's original subject.
 avoidRules:
   - single lighting
   - one time of day
@@ -47,12 +84,27 @@ avoidRules:
   - flat
   - character focused
   - subject prominent
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-093.webp
 attributes:
   negativePrompt: >-
-    single lighting, one time of day, consistent mood, no comparison, flat, character focused, subject
-    prominent
+    single lighting, one time of day, consistent mood, no comparison, flat, character focused,
+    subject prominent, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash
+    clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

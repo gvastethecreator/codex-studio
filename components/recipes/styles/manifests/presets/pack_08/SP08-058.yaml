@@ -12,27 +12,85 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Mirror-ball glamour, paillette exuberance, celebration magnetism
-  subject_treatment: Sparkle fields, sequin-grid drape, reflective column logic, cutout tension, fringe-shiver movement
-  color_and_tone: Silver, Gold, rose-gold, holographic, champagne, disco-ball prism, copper
-  lighting_and_shadow: Glittering fragment light, colored-gel shimmer, strobe-pulse refraction
-  texture_and_material: Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread
+  aesthetic: >-
+    Sequins operates as a portable fashion-costume router: combine Mirror-ball glamour, paillette
+    exuberance, celebration magnetism with material-forward fashion transformation with drape,
+    surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies
+    styling behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Sparkle fields,
+    sequin-grid drape, reflective column logic, cutout tension, fringe-shiver movement; identity
+    stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling
+    hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Glittering fragment light, colored-gel shimmer, strobe-pulse refraction plus
+    material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or
+    volumetric separation as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Small discs, holographic sequins, bugle-bead fringe, mirror-tile paillettes, crystal
+    mesh, metallic thread plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke,
+    water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Sequins using its key spatial cues: Sparkle, sequin grid, holographic shift, fringe movement,
-    mirror-tile gleam.
-  atmosphere_and_mood: Attention magnetism, electric celebration, high-glam confidence
-  rendering_and_quality: Flashy bright material energy, mirror-ball polish, celebration-grade radiance
-  key_features: Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam
+    Compose with Compose for Sequins using its key spatial cues: Sparkle, sequin grid, holographic
+    shift, fringe movement, mirror-tile gleam plus drape rhythm, material coverage, silhouette
+    clarity, tactile close detail, fold direction, and transformation edge control as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Sequins while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Mirror-ball glamour, paillette exuberance, celebration magnetism; Sparkle fields, sequin-grid
+    drape, reflective column logic, cutout tension, fringe-shiver movement; Small discs, holographic
+    sequins, bugle-bead fringe, mirror-tile paillettes, crystal mesh, metallic thread; Glittering
+    fragment light, colored-gel shimmer, strobe-pulse refraction; Compose for Sequins using its key
+    spatial cues: Sparkle, sequin grid, holographic shift, fringe movement, mirror-tile gleam
   creative_brief: >-
-    Make the input sequin-reactive: paillette grids, holographic shift, bugle-bead fringe, mirror-tile sparkle
-    and color-fragment light. Keep celebration magnetism and nightlife charge as surface behavior only, not as
-    a dress, dancefloor, countdown scene, audience or body-first disco pose.
+    Use Sequins after prompt X as a transferable fashion/costume layer: prompt X supplies subject,
+    motion, setting, tone, and intensity, while the preset supplies Mirror-ball glamour, paillette
+    exuberance, celebration magnetism, Sparkle fields, sequin-grid drape, reflective column logic,
+    cutout tension, fringe-shiver movement, Small discs, holographic sequins, bugle-bead fringe,
+    mirror-tile paillettes, crystal mesh, metallic thread, Glittering fragment light, colored-gel
+    shimmer, strobe-pulse refraction, Compose for Sequins using its key spatial cues: Sparkle,
+    sequin grid, holographic shift, fringe movement, mirror-tile gleam plus weave, pile, grain,
+    shine, translucency, opacity, stretch, wrap, seam tension, edge behavior, and surface
+    continuity, palette behavior, light response, material treatment, silhouette grammar, and finish
+    discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - matte
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-058.webp
 attributes:
-  negativePrompt: matte
+  negativePrompt: >-
+    matte, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -13,31 +13,78 @@ tags:
   - 70s-and-80s-retro-anime
 visualDna:
   aesthetic: >-
-    Early television anime with large-eye era cues, simple shapes, brave retro energy, limited shadow tones,
-    and earnest storytelling charm
+    Retro Pioneer Hero acts as a transferable anime-prestige router: retro cel animation charm and
+    old-broadcast graphic confidence, alongside a pioneer anime direction shaped by era-aware line
+    economy and genre tone; fuse it with analog cel-era anime craft with bold contour economy,
+    painted backgrounds, limited-animation rhythm, and theatrical genre clarity; it routes era,
+    genre, line economy, cel or digital finish, and performance tone without locking prompt content
+    to the source title or sample image.
   subject_treatment: >-
-    Rounded iconic form language, thick confident contouring, simplified in-between-friendly geometry,
-    hand-inked cel cadence
-  color_and_tone: Sun-warmed primaries, milk-soft skin midtones, subdued sky blues, faded analog broadcast chroma
+    Preserve the prompt subject, action, and context while restyling forms through lead-form energy
+    without requiring a fixed protagonist, alongside contours paced by retro tension, readable pose
+    energy, and silhouette discipline; identity should remain readable through anime contour,
+    expression economy, pose energy, shape simplification, and effect hierarchy instead of a
+    required canon character or title scene.
+  color_and_tone: >-
+    Map color through faded primaries, warm blacks, and printed-cel saturation, alongside a pioneer
+    accent system held inside disciplined cel values; anchor it in warm cel paint, poster-like
+    primaries, faded film blacks, airbrushed skies, mechanical grays, and controlled neon accents;
+    keep value separation clean, cel flats intentional, accents purposeful, and palette behavior
+    attached to the requested content.
   lighting_and_shadow: >-
-    Broadcast-era key-fill simplicity, stepped cel shadow bands, restrained rim accents, low dynamic-range
-    highlights
-  texture_and_material: Acetate cel edge shimmer, painted matte backgrounds, mild registration jitter, analog scan grain
-  camera_and_composition: Child-safe proportion push, focal emphasis for bravery beats, limited-perspective staging for readability
-  atmosphere_and_mood: Nostalgic, optimistic, daring, spirited
+    Use a retro light logic using cel rim, glow behavior, and blocked shadow, alongside a pioneer
+    light logic using cel rim, glow behavior, and blocked shadow; combine it with painted key light,
+    hard cel shadows, rim highlights on inked edges, practical glow, and film-era exposure falloff;
+    shadows should read as anime light design, rims should clarify form, and glow or effects should
+    support the prompt rather than replacing it.
+  texture_and_material: >-
+    Render cel grain, dust, airbrush, and analog transfer softness, alongside cel paint and ink
+    grain tuned to pioneer material contrast; anchor surfaces in acetate cel grain, dry-brush
+    background texture, airbrush gradients, analog dust, painted metal, and hand-inked edges; cel
+    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
+    coherent across people, objects, environments, action, and abstractions.
+  camera_and_composition: >-
+    Frame around retro converted into reusable framing rhythm and anime timing, alongside pioneer
+    converted into reusable framing rhythm and anime timing, then extend it with bold television
+    framing, heroic diagonals, theatrical inserts, readable action lanes, and graphic silhouette
+    staging; the style should support portraits, props, machines, performances, landscapes, symbols,
+    and full scenes through reusable anime staging grammar instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through adventure confidence and aspirational resolve, alongside retro emotional
+    pressure and genre-specific tone; braid it with romantic pulp, operatic melancholy, mechanical
+    grandeur, outlaw cool, slapstick timing, and analog adventure confidence; the preset can become
+    funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while
+    preserving the chosen anime lineage.
   rendering_and_quality: >-
-    Late-70s to early-80s TV anime fidelity with clean silhouette priority and era-authentic compositing
-    softness
+    Finish with clean anime finishing that keeps retro identity readable without noisy denoise,
+    alongside clean anime finishing that keeps pioneer identity readable without noisy denoise;
+    enforce clean retro-anime finish with visible cel craft, restrained grain, stable linework, and
+    no modern 3D or photoreal drift; prioritize clean denoise, stable anatomy or object structure,
+    readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal
+    or 3D-render drift.
   key_features: >-
-    Earnest iconic silhouette language, warm cel-era optimism, emblematic posing rhythm, hand-painted scenic
-    restraint
+    retro cel animation charm and old-broadcast graphic confidence, alongside a pioneer anime
+    direction shaped by era-aware line economy and genre tone; lead-form energy without requiring a
+    fixed protagonist, alongside contours paced by retro tension, readable pose energy, and
+    silhouette discipline; cel grain, dust, airbrush, and analog transfer softness, alongside cel
+    paint and ink grain tuned to pioneer material contrast; a retro light logic using cel rim, glow
+    behavior, and blocked shadow, alongside a pioneer light logic using cel rim, glow behavior, and
+    blocked shadow; retro converted into reusable framing rhythm and anime timing, alongside pioneer
+    converted into reusable framing rhythm and anime timing
   creative_brief: >-
-    Early TV-anime optimism should read immediately through bold contour clarity, emotionally direct posing,
-    and warm analog cel color logic. Keep compositions clean, uplifting, and iconic, with craftsmanship rooted
-    in hand-painted backgrounds and pre-digital broadcast constraints. Apply this as reusable retro-pioneer
-    grammar to any prompt or input image: rounded heroic simplification, warm cel-era bravery, analog
-    registration softness, and emblematic uplift without requiring a boy hero, robot, sidekick, broadcast
-    frame, or fixed adventure scene.
+    Apply Retro Pioneer Hero after prompt X as a transferable anime-prestige layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while this preset supplies retro cel
+    animation charm and old-broadcast graphic confidence, alongside a pioneer anime direction shaped
+    by era-aware line economy and genre tone, alongside lead-form energy without requiring a fixed
+    protagonist, alongside contours paced by retro tension, readable pose energy, and silhouette
+    discipline; faded primaries, warm blacks, and printed-cel saturation, alongside a pioneer accent
+    system held inside disciplined cel values; a retro light logic using cel rim, glow behavior, and
+    blocked shadow, alongside a pioneer light logic using cel rim, glow behavior, and blocked
+    shadow; cel grain, dust, airbrush, and analog transfer softness, alongside cel paint and ink
+    grain tuned to pioneer material contrast and retro converted into reusable framing rhythm and
+    anime timing, alongside pioneer converted into reusable framing rhythm and anime timing, finish
+    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
+    bundle, location, sport, instrument, weapon, or card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -51,12 +98,24 @@ avoidRules:
   - watermark
   - text
   - signature
+  - modern 3d anime render
+  - photoreal cosplay
+  - western comic inking
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-001.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, modern 3d anime render, photoreal cosplay, western comic
+    inking, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise, readable text
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

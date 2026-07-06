@@ -7,227 +7,319 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP03-025',
     name: 'Kitbash',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'organic, smooth',
+    negativePrompt:
+      'organic, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Complex mechanical detail',
-      subject_treatment: 'Greebles',
-      color_and_tone: 'Grey, metal, industrial wear',
-      lighting_and_shadow: 'AO dirt, rim-detail',
-      texture_and_material: 'Mechanical parts, greeble density',
+      aesthetic:
+        'Kitbash acts as a transferable CGI-style router: start from Complex mechanical detail, Dense detail, mechanical storytelling and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Greebles; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Grey, metal, industrial wear; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through AO dirt, rim detail; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Mechanical parts, greeble density; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Kitbash: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Industrial, complex, constructed chaos',
-      rendering_and_quality: 'Concept art, detailed, blockbuster sci-fi',
-      key_features: 'Dense detail, mechanical storytelling',
+        'Structure the image through Lookdev camera for Kitbash: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Industrial, complex, constructed chaos; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Concept art, detailed, blockbuster sci fi; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Complex mechanical detail; Dense detail, mechanical storytelling; Grey, metal, industrial wear; Mechanical parts, greeble density; Lookdev camera for Kitbash: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Densify the input with kitbash logic: greebles, panel seams, rivets, worn industrial metal and ambient-occlusion pockets that imply functional assembly. It can hint at starship/mecha engineering when suitable, but must not force a vehicle hull, battle staging, or specific sci-fi set. Apply Kitbash as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Kitbash as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Complex mechanical detail, Dense detail, mechanical storytelling, Mechanical parts, greeble density without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-046',
     name: 'Game Asset (PBR)',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'high poly, unoptimized',
+    negativePrompt:
+      'high poly, unoptimized, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Game-asset PBR optimization',
-      subject_treatment: 'Normal map details',
-      color_and_tone: 'Albedo map',
-      lighting_and_shadow: 'Marmoset asset viewer lighting, turntable glory',
-      texture_and_material: 'Roughness/Metalness, PBR surfacing',
+      aesthetic:
+        'Game Asset (PBR) acts as a transferable CGI-style router: start from Game asset PBR optimization, Asset ready PBR, normal map detail and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Normal map details; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Albedo map; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Marmoset asset viewer lighting, turntable glory; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Roughness/Metalness, PBR surfacing; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Game Asset (PBR): three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Functional, clean, asset-showcase',
-      rendering_and_quality: 'Game ready, portfolio turntable',
-      key_features: 'Asset-ready PBR, normal map detail',
+        'Structure the image through Lookdev camera for Game Asset (PBR): three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Functional, clean, asset showcase; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Game ready, portfolio turntable; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Game asset PBR optimization; Asset ready PBR, normal map detail; Albedo map; Roughness/Metalness, PBR surfacing; Lookdev camera for Game Asset (PBR): three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Make the input engine-ready with PBR discipline: clean albedo/roughness/ metallic/normal behavior, readable edge wear and performance-minded material hierarchy. If it is a prop or asset, make it level-editor credible; otherwise apply game-asset clarity without forcing a prop. Apply Game Asset as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Game Asset (PBR) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Game asset PBR optimization, Asset ready PBR, normal map detail, Roughness/Metalness, PBR surfacing without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-047',
     name: 'Architectural Visualization',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'messy, lived in',
+    negativePrompt:
+      'messy, lived in, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Architectural visualization render system',
-      subject_treatment: 'Straight verticals',
-      color_and_tone: 'Beige, White, Wood, natural-material tones',
-      lighting_and_shadow: 'Sunlight, window-daylight simulation',
-      texture_and_material: 'Realistic materials, lived-in warmth',
+      aesthetic:
+        'Architectural Visualization acts as a transferable CGI-style router: start from Architectural visualization render system, Straight verticals, daylight material truth and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Straight verticals; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Beige, White, Wood, natural material tones; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Sunlight, window daylight simulation; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Realistic materials, lived in warmth; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Architectural Visualization: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Aspirational, clean, designer-curated',
-      rendering_and_quality: 'Real estate brochure, lifestyle luxury',
-      key_features: 'Straight verticals, daylight material truth',
+        'Structure the image through Lookdev camera for Architectural Visualization: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Aspirational, clean, designer curated; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Real estate brochure, lifestyle luxury; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Architectural visualization render system; Straight verticals, daylight material truth; Beige, White, Wood, natural material tones; Realistic materials, lived in warmth; Lookdev camera for Architectural Visualization: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Give the input ArchViz discipline: straight verticals, daylight simulation, calibrated natural materials, clean brochure contrast and designer-curated warmth. If architecture or interiors exist, clarify them; otherwise apply architectural lighting logic without forcing a house, furniture layout, lifestyle props, or real-estate setup. Apply Architectural Visualization as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Architectural Visualization as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Architectural visualization render system, Straight verticals, daylight material truth, Realistic materials, lived in warmth without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-048',
     name: 'Product Render',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'dust, scratches',
+    negativePrompt:
+      'dust, scratches, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Premium product-render discipline',
-      subject_treatment: 'Sleek curves',
-      color_and_tone: 'Brand colors',
-      lighting_and_shadow: 'Studio reflection',
-      texture_and_material: 'Matte plastic, aluminum, premium finish',
+      aesthetic:
+        'Product Render acts as a transferable CGI-style router: start from Premium product render discipline, Controlled reflections, premium reveal and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Sleek curves; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Brand colors; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio reflection; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Matte plastic, aluminum, premium finish; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Product Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Desirable, expensive, luxury reveal',
-      rendering_and_quality: 'Apple flagship product launch, minimalist perfection',
-      key_features: 'Controlled reflections, premium reveal',
+        'Structure the image through Lookdev camera for Product Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Desirable, expensive, luxury reveal; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Apple flagship product launch, minimalist perfection; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Premium product render discipline; Controlled reflections, premium reveal; Brand colors; Matte plastic, aluminum, premium finish; Lookdev camera for Product Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Treat the input with flagship product-render polish: minimal context, controlled reflection sweeps, premium material transitions, clean silhouette hierarchy and launch-keynote desire. Do not require consumer electronics, a floating object, wallet cue or infinite white void. Apply Product Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Product Render as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Premium product render discipline, Controlled reflections, premium reveal, Matte plastic, aluminum, premium finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-052',
     name: 'Automotive Render',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'dirty, dented',
+    negativePrompt:
+      'dirty, dented, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Automotive launch-film finish',
-      subject_treatment: 'Aerodynamic lines',
-      color_and_tone: 'Metallic paint, color-shift finish',
-      lighting_and_shadow: 'Studio sweep, highlight-catch reflections',
-      texture_and_material: 'Metallic paint, rubber/glass cues when relevant',
+      aesthetic:
+        'Automotive Render acts as a transferable CGI-style router: start from Automotive launch film finish, Reflection lines, body contour flow and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Aerodynamic lines; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Metallic paint, color shift finish; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio sweep, highlight catch reflections; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Metallic paint, rubber/glass cues when relevant; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Automotive Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Fast, luxury, aerodynamic desire',
-      rendering_and_quality: 'High end, pristine, launch-film quality',
-      key_features: 'Reflection lines, body-contour flow',
+        'Structure the image through Lookdev camera for Automotive Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Fast, luxury, aerodynamic desire; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with High end, pristine, launch film quality; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Automotive launch film finish; Reflection lines, body contour flow; Metallic paint, color shift finish; Metallic paint, rubber/glass cues when relevant; Lookdev camera for Automotive Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Apply automotive launch-film rendering to the input: long reflection sweeps, color-shifting metallic finish, aerodynamic highlight flow and pristine material separation. If a vehicle is present, enhance grille/tail/rubber/ glass truth; otherwise use automotive surface language without forcing a car.',
+        "Apply Automotive Render as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Automotive launch film finish, Reflection lines, body contour flow, Metallic paint, rubber/glass cues when relevant without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-053',
     name: 'Jewelry Render',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'dull, plastic',
+    negativePrompt:
+      'dull, plastic, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Diamond ring macro',
-      subject_treatment: 'Facets',
-      color_and_tone: 'Sparkle, Gold, Silver, gemstone fire',
-      lighting_and_shadow: 'Caustics, dispersion, brilliant-cut',
-      texture_and_material: 'Metal polish, carat-level clarity',
+      aesthetic:
+        'Jewelry Render acts as a transferable CGI-style router: start from Diamond ring macro, Sparkle, facet fire dispersion and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Facets; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Sparkle, Gold, Silver, gemstone fire; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Caustics, dispersion, brilliant cut; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Metal polish, carat level clarity; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Jewelry Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Elegant, rich, bridal-prestige',
-      rendering_and_quality: 'Luxury, expensive, high-jewelry showcase',
-      key_features: 'Sparkle, facet-fire dispersion',
+        'Structure the image through Lookdev camera for Jewelry Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Elegant, rich, bridal prestige; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Luxury, expensive, high jewelry showcase; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Diamond ring macro; Sparkle, facet fire dispersion; Sparkle, Gold, Silver, gemstone fire; Metal polish, carat level clarity; Lookdev camera for Jewelry Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Render any input with jewelry-bench macro polish: prismatic facet fire, carat-level clarity, gold or platinum specular control, tiny inclusion detail, shallow macro depth, and premium caustic sparkle. Keep bridal-luxury precision without requiring rings, gemstones, boxes, hands, or proposal staging.',
+        "Apply Jewelry Render as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Diamond ring macro, Sparkle, facet fire dispersion, Metal polish, carat level clarity without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-061',
     name: 'Hard Surface Modeling',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'organic, soft',
+    negativePrompt:
+      'organic, soft, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Hard-surface mecha engineering',
-      subject_treatment: 'Bevels, panel lines',
-      color_and_tone: 'Gunmetal, painted metal, military-grade',
-      lighting_and_shadow: 'Rim light, mechanical edge-pop',
-      texture_and_material: 'Scratched metal, machined wear',
+      aesthetic:
+        'Hard Surface Modeling acts as a transferable CGI-style router: start from Hard surface mecha engineering, Functional parts, panel line definition and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Bevels, panel lines; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Gunmetal, painted metal, military grade; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Rim light, mechanical edge pop; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Scratched metal, machined wear; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Hard Surface Modeling: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Industrial, tactical, engineered grit',
-      rendering_and_quality: 'Mech-design precision, machined credibility',
-      key_features: 'Functional parts, panel-line definition',
+        'Structure the image through Lookdev camera for Hard Surface Modeling: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Industrial, tactical, engineered grit; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Mech design precision, machined credibility; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Hard surface mecha engineering; Functional parts, panel line definition; Gunmetal, painted metal, military grade; Scratched metal, machined wear; Lookdev camera for Hard Surface Modeling: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Give the input hard-surface/mecha discipline: bevel hierarchy, panel-line logic, service seams, machined wear and believable component density. If a character or object exists, it may mechanize toward mecha; avoid forcing weapons, combat, or military staging. Apply Hard Surface Modeling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Hard Surface Modeling as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Hard surface mecha engineering, Functional parts, panel line definition, Scratched metal, machined wear without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-064',
     name: 'Exploded View',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'assembled, solid',
+    negativePrompt:
+      'assembled, solid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Parts floating apart',
-      subject_treatment: 'Assembly lines',
-      color_and_tone: 'Technical, assembly-color coding',
-      lighting_and_shadow: 'Flat, diagram clarity',
-      texture_and_material: 'Internal parts, cross-section surfaces',
+      aesthetic:
+        'Exploded View acts as a transferable CGI-style router: start from Parts floating apart, Alignment, explosion direction and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Assembly lines; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Technical, assembly color coding; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Flat, diagram clarity; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Internal parts, cross section surfaces; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Exploded View: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Technical, complex, assembly logic',
-      rendering_and_quality: 'Engineering, diagram, instructional',
-      key_features: 'Alignment, explosion direction',
+        'Structure the image through Lookdev camera for Exploded View: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Technical, complex, assembly logic; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Engineering, diagram, instructional; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Parts floating apart; Alignment, explosion direction; Technical, assembly color coding; Internal parts, cross section surfaces; Lookdev camera for Exploded View: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Split the input into exploded-view logic: invisible assembly axes, precise spacing, subsystem color coding and cross-section surfaces that explain structure. If there are parts, separate them; otherwise infer component layers without forcing screws, housings or a manufactured product. Apply Exploded View as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Exploded View as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Parts floating apart, Alignment, explosion direction, Internal parts, cross section surfaces without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-067',
     name: 'Cybernetic Implant',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'flesh only',
+    negativePrompt:
+      'flesh only, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Tech merged with body',
-      subject_treatment: 'Integration lines',
-      color_and_tone: 'Chrome, LED',
-      lighting_and_shadow: 'Sci-fi',
-      texture_and_material: 'Metal/Skin transition, bio-mech fusion',
-      camera_and_composition: 'Prosthetic',
-      atmosphere_and_mood: 'Futuristic, body horror, identity tension',
-      rendering_and_quality: 'Deus Ex transhuman sci-fi, augmented identity',
-      key_features: 'Seamless blend, implant integration',
+      aesthetic:
+        'Cybernetic Implant acts as a transferable CGI-style router: start from Tech merged with body, Seamless blend, implant integration and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Integration lines; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Chrome, LED; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Sci fi; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Metal/Skin transition, bio mech fusion; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Prosthetic; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Futuristic, body horror, identity tension; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Deus Ex transhuman sci fi, augmented identity; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Tech merged with body; Seamless blend, implant integration; Chrome, LED; Metal/Skin transition, bio mech fusion; Prosthetic',
       creative_brief:
-        'Apply cybernetic integration to the input: chrome/organic seams, LED status glows, prosthetic geometry and bio-mech fusion lines. If a body or character exists, augment it; otherwise embed transhuman interface cues into the subject without forcing flesh, portrait framing or body horror.',
+        "Apply Cybernetic Implant as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Tech merged with body, Seamless blend, implant integration, Metal/Skin transition, bio mech fusion without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-071',
     name: 'Glassmorphism UI',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'opaque, flat',
+    negativePrompt:
+      'opaque, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
       aesthetic:
-        "Glassmorphism UI within 5. Hard Surface And Product CGI: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glassmorphism UI's specific style identity.",
+        'Glassmorphism UI acts as a transferable CGI-style router: start from Glassmorphism UI frosted translucent panels, soft UI depth, glass blur, layered interface reflections and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Glassmorphism UI through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through frosted translucent panels, soft UI depth, glass blur, layered interface reflections while preserving its identity; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Glassmorphism UI-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support frosted translucent panels, soft UI depth, glass blur, layered interface reflections; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Glassmorphism UI recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals frosted translucent panels, soft UI depth, glass blur, layered interface reflections; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Glassmorphism UI: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render frosted translucent panels, soft UI depth, glass blur, layered interface reflections; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Glassmorphism UI: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+        'Structure the image through Lookdev camera for Glassmorphism UI: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Glassmorphism UI: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by frosted translucent panels, soft UI depth, glass blur, layered interface reflections; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Glassmorphism UI with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Glassmorphism UI CGI with frosted translucent panels, soft UI depth, glass blur, layered interface reflections and controlled detail; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Glassmorphism UI's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Glassmorphism UI frosted translucent panels, soft UI depth, glass blur, layered interface reflections; palette and exposure choices that support frosted translucent panels, soft UI depth, glass blur, layered interface reflections; Lookdev camera for Glassmorphism UI: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Create a style-card that translates Glassmorphism UI into a portable visual system for 5. Hard Surface And Product CGI. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Glassmorphism UI as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Glassmorphism UI frosted translucent panels, soft UI depth, glass blur, layered interface reflections without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-074',
     name: 'Neon Sign 3D',
     category: '5. Hard Surface And Product CGI',
-    negativePrompt: 'flat, print',
+    negativePrompt:
+      'flat, print, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic blob shape',
     style: {
-      aesthetic: 'Glowing glass tubes',
-      subject_treatment: 'Tube shape',
-      color_and_tone: 'Neon Red/Blue, electric glow',
-      lighting_and_shadow: 'Glow, wall reflection, ambient spill',
-      texture_and_material: 'Glass, metal supports, tube fittings',
+      aesthetic:
+        'Neon Sign 3D acts as a transferable CGI-style router: start from Glowing glass tubes, Tube connections, gas glow realism and hard-surface and product-CGI system built from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Tube shape; preserve the prompt subject while giving it engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control, or UI-material precision, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Neon Red/Blue, electric glow; use color as manufactured finish: anodized metal, gunmetal, glass tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Glow, wall reflection, ambient spill; shape light through studio strips, rim edges, reflection cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Glass, metal supports, tube fittings; surface detail should show bevels, panel seams, normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean UI translucency, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Neon Sign 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Urban, cool, nighttime energy',
-      rendering_and_quality: 'Nightlife, sign, urban-branding',
-      key_features: 'Tube connections, gas-glow realism',
+        'Structure the image through Lookdev camera for Neon Sign 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose for engineered readability through exploded spacing, hero compression, orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Urban, cool, nighttime energy; derive mood from precision, luxury, tactical engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Nightlife, sign, urban branding; finish with exact edges, believable PBR response, controlled reflections, and no fake labels, muddy grime, or random greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Glowing glass tubes; Tube connections, gas glow realism; Neon Red/Blue, electric glow; Glass, metal supports, tube fittings; Lookdev camera for Neon Sign 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Rebuild the input in neon-tube construction: bent glass, gas glow, transformer fittings, colored bloom and emissive spill. It may feel like signage or nightlife, but must not require brick walls, bars, text or an urban setting. Apply Neon Sign 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Neon Sign 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Glowing glass tubes, Tube connections, gas glow realism, Glass, metal supports, tube fittings without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

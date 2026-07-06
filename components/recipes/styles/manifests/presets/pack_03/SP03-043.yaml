@@ -12,31 +12,75 @@ tags:
   - 3d-and-cgi-rendering
   - sensor-and-technical-shaders
 visualDna:
-  aesthetic: X-ray transparency render
-  subject_treatment: Internal structure
-  color_and_tone: Blue/White inverted, clinical spectrum
-  lighting_and_shadow: Internal glow, self-illuminated core
-  texture_and_material: Density-based internal layers
+  aesthetic: >-
+    X-Ray Shader acts as a transferable CGI-style router: start from X ray transparency render,
+    Internal view, see through silhouette and technical shader system built from sensor mapping,
+    diagnostic palette, transparency rules, internal structure, and device-like signal clarity, then
+    apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Internal structure; preserve the prompt subject while
+    remapping it through x-ray visibility, thermal signal, internal layering, or technical
+    diagnostic abstraction, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Blue/White inverted, clinical spectrum; use color as sensor output: monochrome
+    x-ray values, heat gradients, cold-to-hot ramps, density contrast, and instrument-coded
+    intensity, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Internal glow, self illuminated core; make illumination behave like
+    measurement: emissive heat, transparency, density falloff, internal glow, or diagnostic exposure
+    instead of beauty lighting, so value structure supports the renderer and does not overwrite the
+    requested content.
+  texture_and_material: >-
+    Render Density based internal layers; surface detail should show internal structure, transparent
+    layers, signal noise, heat zones, bone-like density, or scanner-like edge clarity, keeping
+    material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for X-Ray Shader: close three-quarter or macro material framing, strong highlight planes,
-    readable surface curvature, and controlled depth.
-  atmosphere_and_mood: Analytical, cold, forensic insight
-  rendering_and_quality: Medical, sci-fi, diagnostic scan
-  key_features: Internal view, see-through silhouette
+    Structure the image through Lookdev camera for X Ray Shader: close three quarter or macro
+    material framing, strong highlight planes, readable surface curvature, and controlled depth;
+    compose through diagnostic readability, silhouette transparency, cross-section clarity, and
+    instrument-like framing without fake UI dependence, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Analytical, cold, forensic insight; derive mood from scientific distance,
+    surveillance unease, medical precision, or hidden-structure revelation, letting the renderer
+    alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Medical, sci fi, diagnostic scan; finish with exact sensor logic, controlled
+    artifacts, readable signal, and no cinematic beauty render overwrite, clean denoised surfaces
+    where appropriate, and enough shader evidence to make the CGI mode recognizable.
+  key_features: >-
+    X ray transparency render; Internal view, see through silhouette; Blue/White inverted, clinical
+    spectrum; Density based internal layers; Lookdev camera for X Ray Shader: close three quarter or
+    macro material framing, strong highlight planes, readable surface curvature, and controlled
+    depth
   creative_brief: >-
-    Render the input as X-ray transparency: ghosted outer contour, cyan-white density, visible internal
-    structure and diagnostic depth. If bones, circuits or mechanics fit, reveal them; otherwise invent
-    structural layers without forcing anatomy or hardware. Apply X-Ray Shader as a portable 3D/render style
-    system over any input: preserve its renderer logic, material behavior, geometry language, lighting
-    grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen,
-    product shot, or scene template.
+    Apply X-Ray Shader as a CGI/render preset over prompt X: preserve the user's requested subject,
+    then route modeling, shader response, lighting, material scale, composition, mood, and final
+    render craft through X ray transparency render, Internal view, see through silhouette, Density
+    based internal layers without requiring the card image's original subject.
 avoidRules:
   - opaque
   - skin
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - beauty lighting
+  - wrong sensor palette
+  - fake UI text
+  - cinematic overpaint
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-043.webp
 attributes:
-  negativePrompt: opaque, skin
+  negativePrompt: >-
+    opaque, skin, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, beauty lighting, wrong sensor palette, fake UI text,
+    cinematic overpaint
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

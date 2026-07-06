@@ -7,117 +7,173 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP01-047',
     name: 'Landscape (Ansel Adams)',
     category: '6. Nature And Wildlife',
-    negativePrompt: 'color',
+    negativePrompt:
+      'color, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
     style: {
-      aesthetic: 'Zone System fine-art realism',
-      subject_treatment: 'Sharp f/64 focus',
-      color_and_tone: 'Black and White Zone System',
-      lighting_and_shadow: 'Dramatic sun/cloud',
-      texture_and_material: 'Tonal microdetail',
+      aesthetic:
+        'Landscape (Ansel Adams) acts as a transferable photographic style router: begin from Zone System fine-art realism, High contrast tonal zones, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+      subject_treatment:
+        'Treat any prompt subject through Sharp f/64 focus; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+      color_and_tone:
+        'Grade with Black and White Zone System; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+      lighting_and_shadow:
+        'Use Dramatic sun/cloud; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+      texture_and_material:
+        'Render Tonal microdetail; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
       camera_and_composition:
-        'Camera setup native to Landscape (Ansel Adams): lens choice, crop distance, depth of field, and focal hierarchy support 6. Nature And Wildlife without generic framing.',
-      atmosphere_and_mood: 'Grand, timeless',
-      rendering_and_quality: 'Masterpiece, sharp',
-      key_features: 'High contrast tonal zones',
+        'Compose through Landscape (Ansel Adams) field-camera realism, environmental scale, natural light, and patient observational detail; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Grand, timeless; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Masterpiece, sharp; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+      key_features:
+        'Zone System fine-art realism; High contrast tonal zones; Black and White Zone System; Dramatic sun/cloud; Landscape (Ansel Adams) field-camera realism, environmental scale, natural light, and patient observational detail',
       creative_brief:
-        "Ansel Adams' discipline becomes transferable tone design: f/64 sharpness, silver-black Zone System contrast, deep microdetail, and monumental stillness across the full value range. Apply fine-art landscape rigor to any subject without requiring mountains, rocks, clouds, wilderness, or sky.",
+        "Apply Landscape (Ansel Adams) as a photographic preset over prompt X: preserve the user's requested subject, then route Zone System fine-art realism, Black and White Zone System, Dramatic sun/cloud, Tonal microdetail, and Landscape (Ansel Adams) field-camera realism, environmental scale, natural light, and patient observational detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP01-048',
     name: 'Macro Photography',
     category: '6. Nature And Wildlife',
-    negativePrompt: 'wide angle, blurry subject',
+    negativePrompt:
+      'wide angle, blurry subject, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
     style: {
-      aesthetic: 'Extreme close-up',
-      subject_treatment: 'Shallow depth of field',
-      color_and_tone: 'Vibrant detail',
-      lighting_and_shadow: 'Ring flash',
-      texture_and_material: 'Enlarged surface microtexture',
-      camera_and_composition: 'Blurry background',
-      atmosphere_and_mood: 'Alien, detailed',
-      rendering_and_quality: 'Scientific, abstract',
-      key_features: 'Tiny world',
+      aesthetic:
+        'Macro Photography acts as a transferable photographic style router: begin from Extreme close-up, Tiny world, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+      subject_treatment:
+        'Treat any prompt subject through Shallow depth of field; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+      color_and_tone:
+        'Grade with Vibrant detail; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+      lighting_and_shadow:
+        'Use Ring flash; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+      texture_and_material:
+        'Render Enlarged surface microtexture; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+      camera_and_composition:
+        'Compose through Blurry depth field; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Alien, detailed; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Scientific, abstract; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+      key_features: 'Extreme close-up; Tiny world; Vibrant detail; Ring flash; Blurry depth field',
       creative_brief:
-        'Extreme close focus turns any subject into a miniature world: shallow depth, enlarged surface microtexture, vibrant detail, and background blur that isolates the near plane. Use macro vision without requiring insects, leaves, pollen, dewdrops, or biological content.',
+        "Apply Macro Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Extreme close-up, Vibrant detail, Ring flash, Enlarged surface microtexture, and Blurry depth field through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP01-053',
     name: 'Wildlife Photography',
     category: '6. Nature And Wildlife',
-    negativePrompt: 'zoo, cage, pet',
+    negativePrompt:
+      'zoo, cage, pet, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
     style: {
-      aesthetic: 'Patient telephoto field realism',
-      subject_treatment: 'Telephoto compression',
-      color_and_tone: 'Natural muted field color',
-      lighting_and_shadow: 'Golden hour',
-      texture_and_material: 'Fine natural surface detail',
+      aesthetic:
+        'Wildlife Photography acts as a transferable photographic style router: begin from Patient telephoto field realism, Blurred depth field, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+      subject_treatment:
+        'Treat any prompt subject through Telephoto compression; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+      color_and_tone:
+        'Grade with Natural muted field color; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+      lighting_and_shadow:
+        'Use Golden hour; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+      texture_and_material:
+        'Render Fine natural surface detail; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
       camera_and_composition:
-        'Camera setup native to Wildlife Photography: lens choice, crop distance, depth of field, and focal hierarchy support 6. Nature And Wildlife without generic framing.',
-      atmosphere_and_mood: 'Patient, observant',
-      rendering_and_quality: 'Nat Geo field sharpness',
-      key_features: 'Blurred background',
+        'Compose through Wildlife Photography field-camera realism, environmental scale, natural light, and patient observational detail; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Patient, observant; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Nat Geo field sharpness; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+      key_features:
+        'Patient telephoto field realism; Blurred depth field; Natural muted field color; Golden hour; Wildlife Photography field-camera realism, environmental scale, natural light, and patient observational detail',
       creative_brief:
-        'Wildlife photography becomes patient telephoto grammar: compressed distance, soft background, golden field light, natural camouflage color, and fine surface detail. Apply an observant, nonintrusive field-photo look to any subject without forcing animals, forest, fur, feathers, or nature setting.',
+        "Apply Wildlife Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Patient telephoto field realism, Natural muted field color, Golden hour, Fine natural surface detail, and Wildlife Photography field-camera realism, environmental scale, natural light, and patient observational detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP01-054',
     name: 'Astrophotography',
     category: '6. Nature And Wildlife',
-    negativePrompt: 'day, clouds',
+    negativePrompt:
+      'day, clouds, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
     style: {
-      aesthetic: 'Long-exposure night-sky imaging',
-      subject_treatment: 'Star trails (optional)',
-      color_and_tone: 'Deep Blue, Purple, White stars',
-      lighting_and_shadow: 'Starlight',
-      texture_and_material: 'Noise (stars)',
+      aesthetic:
+        'Astrophotography acts as a transferable photographic style router: begin from Long-exposure night-sky imaging, Cosmic exposure texture, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+      subject_treatment:
+        'Treat any prompt subject through Star trails (optional); preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+      color_and_tone:
+        'Grade with Deep Blue, Purple, White stars; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+      lighting_and_shadow:
+        'Use Starlight; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+      texture_and_material:
+        'Render Noise (stars); render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
       camera_and_composition:
-        'Camera setup native to Astrophotography: lens choice, crop distance, depth of field, and focal hierarchy support 6. Nature And Wildlife without generic framing.',
-      atmosphere_and_mood: 'Cosmic, silent',
-      rendering_and_quality: 'Long exposure, epic',
-      key_features: 'Cosmic exposure texture',
+        'Compose through Astrophotography field-camera realism, environmental scale, natural light, and patient observational detail; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Cosmic, silent; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Long exposure, epic; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+      key_features:
+        'Long-exposure night-sky imaging; Cosmic exposure texture; Deep Blue, Purple, White stars; Starlight; Astrophotography field-camera realism, environmental scale, natural light, and patient observational detail',
       creative_brief:
-        'Long-exposure astrophotography maps faint light into deep blue, violet, and white speckle, with optional star-trail motion and sensor noise treated as cosmic texture. Let any subject inherit night-sky scale and slow exposure without requiring Milky Way, horizon, silhouette, or landscape.',
+        "Apply Astrophotography as a photographic preset over prompt X: preserve the user's requested subject, then route Long-exposure night-sky imaging, Deep Blue, Purple, White stars, Starlight, Noise (stars), and Astrophotography field-camera realism, environmental scale, natural light, and patient observational detail through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP01-055',
     name: 'Underwater',
     category: '6. Nature And Wildlife',
-    negativePrompt: 'dry studio light, harsh land lighting',
+    negativePrompt:
+      'dry studio light, harsh land lighting, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
     style: {
-      aesthetic: 'Submerged subject',
-      subject_treatment: 'Weightless drifting contours',
-      color_and_tone: 'Cyan, Blue cast',
-      lighting_and_shadow: 'Caustics (light rays)',
-      texture_and_material: 'Bubbles, caustics, refraction',
-      camera_and_composition: 'Refraction distortion',
-      atmosphere_and_mood: 'Silent, deep',
-      rendering_and_quality: 'Dreamy, weightless',
-      key_features: 'Blue tint',
+      aesthetic:
+        'Underwater acts as a transferable photographic style router: begin from Submerged subject, Blue tint, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+      subject_treatment:
+        'Treat any prompt subject through Weightless drifting contours; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+      color_and_tone:
+        'Grade with Cyan, Blue cast; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+      lighting_and_shadow:
+        'Use Caustics (light rays); use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+      texture_and_material:
+        'Render Bubbles, caustics, refraction; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+      camera_and_composition:
+        'Compose through Refraction distortion; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Silent, deep; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Dreamy, weightless; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+      key_features:
+        'Submerged subject; Blue tint; Cyan, Blue cast; Caustics (light rays); Refraction distortion',
       creative_brief:
-        'Submerged optics transform any subject through blue cast, caustic rays, bubble texture, softened contrast, refraction distortion, and weightless contour drift. The style is underwater light physics, not mandatory hair, fabric, land/sea setting, or swimmer staging.',
+        "Apply Underwater as a photographic preset over prompt X: preserve the user's requested subject, then route Submerged subject, Cyan, Blue cast, Caustics (light rays), Bubbles, caustics, refraction, and Refraction distortion through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP01-065',
     name: 'Pet Photography',
     category: '6. Nature And Wildlife',
-    negativePrompt: 'scary, menacing',
+    negativePrompt:
+      'scary, menacing, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, zoo snapshot, oversaturated postcard, plastic foliage, fake wildlife pose, friendly nature cliche',
     style: {
-      aesthetic: 'Playful companion portrait',
-      subject_treatment: 'Eye level',
-      color_and_tone: 'Bright, happy',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Soft tactile detail',
-      camera_and_composition: 'Wide-angle near-plane exaggeration',
-      atmosphere_and_mood: 'Playful, sweet',
-      rendering_and_quality: 'Cute studio warmth',
-      key_features: 'Eye-level warmth',
+      aesthetic:
+        'Pet Photography acts as a transferable photographic style router: begin from Playful companion portrait, Eye-level warmth, and field and nature photographic system built from natural light, patient timing, environmental scale, and credible ecology, then apply the photographic behavior to prompt X instead of recreating a fixed card scene.',
+      subject_treatment:
+        'Treat any prompt subject through Eye level; preserve prompt identity while giving it field realism, habitat pressure, natural scale, or macro/wildlife observation cues, keeping the original subject, pose, species, object, or environment legible.',
+      color_and_tone:
+        'Grade with Bright, happy; grade through natural atmosphere, silver-black fine-art values, underwater blue shift, sky exposure, foliage color, or animal camouflage, with value separation and white balance choices that feel captured in-camera rather than painted over.',
+      lighting_and_shadow:
+        'Use Soft; use weather, sun angle, water absorption, night-sky exposure, diffused field light, or telephoto background separation, preserving believable exposure, shadow density, highlight rolloff, and source motivation.',
+      texture_and_material:
+        'Render Soft tactile detail; render fur, feathers, plant texture, rock, water, star noise, mist, mud, and environmental micro-detail without plastic artificiality, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.',
+      camera_and_composition:
+        'Compose through Wide-angle near-plane exaggeration; compose through long-lens compression, macro proximity, horizon scale, field patience, eye-level empathy, or monumental stillness, with lens distance, depth, timing, and focal hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, sweet; derive mood from patience, wilderness pressure, wonder, cosmic quiet, companion warmth, or fine-art environmental grandeur, so the preset changes interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Cute studio warmth; finish as believable field photography with clean detail, natural restraint, and no oversaturated postcard or zoo snapshot look, high-resolution photographic detail, and disciplined denoise without losing natural grain where the preset needs it.',
+      key_features:
+        'Playful companion portrait; Eye-level warmth; Bright, happy; Soft; Wide-angle near-plane exaggeration',
       creative_brief:
-        'Pet-photography warmth becomes a playful close portrait grammar: eye-level camera, soft light, tactile detail, near-plane wide-angle charm, and bright approachable mood. Apply companion intimacy to any subject without requiring dog, cat, fur, creature, or camera gaze.',
+        "Apply Pet Photography as a photographic preset over prompt X: preserve the user's requested subject, then route Playful companion portrait, Bright, happy, Soft, Soft tactile detail, and Wide-angle near-plane exaggeration through optics, exposure, palette, surface response, timing, and finish without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

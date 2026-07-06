@@ -13,35 +13,72 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Elegant orbital anime rivalry where high-altitude pressure, gravity defiance, crystalline seams, and
-    strategic grandeur shape the frame
+    Orbital Rivalry Symmetry acts as a transferable anime-battle/worlds router: Orbital Rivalry
+    Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs,
+    suspended mecha fragments, paired abstract silhouettes, and elegant strategic tension; combine
+    it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic, neon
+    atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios, or
+    lineage words may guide style, but they must not require canon cast, title-scene replication,
+    screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Long elegant technical-adjacent lines, thin luminous seams, sharp orbital arcs, balanced opposing
-    silhouettes, and calm tactical posing.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Orbital
+    Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude
+    arcs, suspended mecha fragments, paired abstract silhouettes as portable contour, motion
+    grammar, surface language, and emotional pressure without requiring canon elements or a default
+    action setup.
   color_and_tone: >-
-    Deep orbital blue, white crystalline glow, magenta ion accents, cool alloy gray, and black-violet vacuum
-    shadows.
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Orbital Rivalry Symmetry, orbital
+    rivalry symmetry style grammar with crystalline seams, high-altitude arcs, suspended mecha
+    fragments, paired abstract silhouettes choose accent intensity, value contrast, emotional
+    temperature, and power-system separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    High-altitude rim light, ion glow, hard specular glints, black-field contrast, and luminous descent
-    streaks.
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar
+    with crystalline seams, high-altitude arcs, suspended mecha fragments, paired abstract
+    silhouettes without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Polished alloy, crystalline energy seams, heat bloom, smooth armor-like surfaces, and faint atmospheric
-    haze.
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Orbital
+    Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude
+    arcs, suspended mecha fragments, paired abstract silhouettes controlled, denoised, and coherent
+    across bodies, objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Gravity-bending arcs, top-down compression, orbital negative space, and opposing-vector composition across
-    large scale.
-  atmosphere_and_mood: Grand, competitive, epic, political
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Orbital Rivalry
+    Symmetry, orbital rivalry symmetry style grammar with crystalline seams, high-altitude arcs,
+    suspended mecha fragments, paired abstract silhouettes into reusable perspective, timing,
+    rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
   rendering_and_quality: >-
-    Premium orbital anime finish with elegant surface control, strategic readability, and luminous high-scale
-    polish.
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Orbital arcs, crystalline seams, rivalry symmetry, high-altitude glow, strategic negative space, and
-    graceful technical contrast
+    Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams,
+    high-altitude arcs, suspended mecha fragments, paired abstract silhouettes; armored contour,
+    mechanical massing, modular joints, engineered surface rhythm, scale cues, and human-machine
+    pressure translated onto any subject; painted alloy, ceramic armor, scuffed plating, glass,
+    hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers; scale
+    compression, machinery diagonals, grid overlays without readable UI, service-bay density,
+    orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable
+    hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency
   creative_brief: >-
-    Use orbital rivalry symmetry as elevated-strategy grammar. Any prompt should feel graceful, suspended,
-    politically charged, and technically precise. If subject or character supports it, add crystalline
-    hardware seams, pilot/rivalry cues, or orbital-mecha elegance; planets, alliances, and combat scenes
-    remain optional.
+    Apply Orbital Rivalry Symmetry after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Orbital Rivalry Symmetry, orbital rivalry symmetry style grammar with crystalline seams,
+    high-altitude arcs, suspended mecha fragments, paired abstract silhouettes, and elegant
+    strategic tension, mecha and cyberpunk anime grammar with engineered silhouettes, hardware
+    logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -55,12 +92,35 @@ avoidRules:
   - watermark
   - text
   - signature
+  - named orbital mecha likeness
+  - beam weapon
+  - cockpit portrait
+  - real national flags
+  - space battle gore
+  - readable insignia
+  - weapon-first duel
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-060.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, named orbital mecha likeness, beam weapon, cockpit
+    portrait, real national flags, space battle gore, readable insignia, weapon-first duel, plastic
+    3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title
+    scene replication, required source-frame look, cosplay, generic anime filter, prompt-required
+    card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

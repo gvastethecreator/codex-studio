@@ -7,140 +7,145 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP13-026',
     name: 'Pre-Impact Ritual Stillness Style',
     category: '6. Samurai & Medieval',
-    negativePrompt: 'photoreal, modern-firearms, sci-fi-neon, watermark, text, logo',
+    negativePrompt:
+      'photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Prestige martial minimalism focused on pre-impact stillness, where restraint and posture hierarchy carry more weight than overt action.',
+        'Pre-Impact Ritual Stillness Style acts as a transferable anime-prestige router: formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Controlled tapered ink lines, long vertical drape rhythms, and disciplined negative space around poised limbs to amplify intent.',
+        'Preserve the prompt subject, action, and context while restyling forms through poised contour, held breath, and minimal motion cues, alongside contours paced by pre tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Slate mineral neutrals, lacquer crimson accents, and indigo night tones with sparse warm punctuation.',
+        'Map color through a pre accent system held inside disciplined cel values, alongside a impact accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Raking lateral key with low warm bounce, keeping facial planes half-obscured and edge highlights selective.',
+        'Use white impact flashes and hard shadow breaks, alongside a pre light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Weathered cedar grain, moisture-darkened stone, matte woven cloth, and mirror-polished micro-glints.',
+        'Render wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and ink grain tuned to pre material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Axial threshold perspective with compressed midground, creating a pressure chamber effect around opposing vectors.',
+        'Frame around withheld-motion setup and pre-impact pause, alongside impact bursts, recoil spacing, and force-balanced cuts and rite intervals, axial pauses, and symbolic repetition, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Ceremonial tension, disciplined breath control, and the sensation that motion is being withheld by code.',
+        'Carry mood through breath control before release, alongside violent punctuation without gore dependency and taboo formality and controlled spiritual pressure; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'High-fidelity anime finishing with calm contour clarity, micro-contrast on focal anatomy, and zero ornamental clutter.',
+        'Finish with clean anime finishing that keeps pre identity readable without noisy denoise, alongside clean anime finishing that keeps impact identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Static-ready stance geometry, controlled fabric wind cues, ritual threshold asymmetry, and line-of-sight dominance.',
+        'formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by era-aware line economy and genre tone; poised contour, held breath, and minimal motion cues, alongside contours paced by pre tension, readable pose energy, and silhouette discipline; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and ink grain tuned to pre material contrast; white impact flashes and hard shadow breaks, alongside a pre light logic using cel rim, glow behavior, and blocked shadow; withheld-motion setup and pre-impact pause, alongside impact bursts, recoil spacing, and force-balanced cuts and rite intervals, axial pauses, and symbolic repetition',
       creative_brief:
-        'Build a reusable pre-impact ritual stillness grammar for any subject: poised silhouettes, selective metallic highlights, disciplined negative space, and withheld motion without imposing ronin, temples, weapons, samurai, duels, haori, or shrine thresholds.',
+        'Apply Pre-Impact Ritual Stillness Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies formal rite pressure and ceremonial anime severity, alongside a pre anime direction shaped by era-aware line economy and genre tone, alongside poised contour, held breath, and minimal motion cues, alongside contours paced by pre tension, readable pose energy, and silhouette discipline; a pre accent system held inside disciplined cel values, alongside a impact accent system held inside disciplined cel values; white impact flashes and hard shadow breaks, alongside a pre light logic using cel rim, glow behavior, and blocked shadow; wax, cloth, ash, lacquer, paper, and restrained blood-red marks, alongside cel paint and ink grain tuned to pre material contrast and withheld-motion setup and pre-impact pause, alongside impact bursts, recoil spacing, and force-balanced cuts and rite intervals, axial pauses, and symbolic repetition, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-027',
     name: 'Crimson Formation Momentum Style',
     category: '6. Samurai & Medieval',
-    negativePrompt: 'photoreal, cartoon-goofy, modern-city, watermark, text, logo',
+    negativePrompt:
+      'photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Grand-strategy anime language emphasizing formation logic, heraldic identity, and mass momentum over individual hero framing.',
+        'Crimson Formation Momentum Style acts as a transferable anime-prestige router: a crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Broad massed silhouettes, banner-like arcs that map faction flow, and repeated line cadence used as directional rhythm.',
+        'Preserve the prompt subject, action, and context while restyling forms through contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by formation tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Dominant crimson, soot-charcoal fields, oxidized metal neutrals, and restrained antique gold command accents.',
+        'Map color through crimson accents over black, bone, and smoky violet, alongside a formation accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Cold dawn haze with low-angle backlight that separates ranks in planes while preserving readable command focal points.',
+        'Use red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Battle-scored metal, mud-caked lower planes, frayed fabric standards, and humid particulate air.',
+        'Render cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to formation material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Multi-plane conflict depth using atmospheric compression and diagonal advance vectors for collective force direction.',
+        'Frame around group formation geometry and sacrificial symmetry, alongside crimson converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Inevitable collision, inherited duty, and banner-locked resolve under doctrine.',
+        'Carry mood through collective resolve and ritualized teamwork, alongside crimson emotional pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'Wide-format tactical readability with crisp hierarchy between command layer, vanguard layer, and environmental pressure.',
+        'Finish with clean anime finishing that keeps crimson identity readable without noisy denoise, alongside clean anime finishing that keeps formation identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Rank geometry, signal standards, wave cadence, and collision-ready front interfaces.',
+        'a crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation anime direction shaped by era-aware line economy and genre tone; contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by formation tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to formation material contrast; red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow behavior, and blocked shadow; group formation geometry and sacrificial symmetry, alongside crimson converted into reusable framing rhythm and anime timing',
       creative_brief:
-        'Create a transferable crimson formation momentum grammar for any subject: formation-driven composition, heraldic color dominance, disciplined large-scale motion, and command-layer hierarchy without imposing clans, armies, battlefields, cavalry, infantry, weapons, or war scenes.',
+        'Apply Crimson Formation Momentum Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a crimson anime direction shaped by era-aware line economy and genre tone, alongside a formation anime direction shaped by era-aware line economy and genre tone, alongside contours paced by crimson tension, readable pose energy, and silhouette discipline, alongside contours paced by formation tension, readable pose energy, and silhouette discipline; crimson accents over black, bone, and smoky violet, alongside a formation accent system held inside disciplined cel values; red omen glow and ember rim cuts, alongside a formation light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to crimson material contrast, alongside cel paint and ink grain tuned to formation material contrast and group formation geometry and sacrificial symmetry, alongside crimson converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-028',
     name: 'Sacred Heraldic Vow Style',
     category: '6. Samurai & Medieval',
-    negativePrompt: 'photoreal, sci-fi-ui, casual-modern, watermark, text, logo',
+    negativePrompt:
+      'photoreal, sci-fi-ui, casual-modern, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Sacred vow iconography built around verticality, heraldic gravitas, and devotional stillness rather than spectacle.',
+        'Sacred Heraldic Vow Style acts as a transferable anime-prestige router: sacred emblem order and severe devotional anime composition, alongside a heraldic anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Clean armored contour language, weighted drape folds, and emblem-first line emphasis to foreground lineage coding.',
+        'Preserve the prompt subject, action, and context while restyling forms through emblem-bearing silhouettes and banner-like contour logic, alongside contours paced by sacred tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Brushed silver base, royal ultramarine fields, muted parchment neutrals, and amber liturgical highlights.',
+        'Map color through gold, crimson, slate, and quiet moonlit neutrals, alongside lacquer crimson, slate, gold, and heraldic dark neutrals; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Filtered clerestory-style shafts with soft volumetric dust, preserving sanctified contrast on metallic and fabric planes.',
+        'Use a sacred light logic using cel rim, glow behavior, and blocked shadow, alongside a heraldic light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Mirror-polished worn steel, carved stone relief, waxed fabric banners, and ceremonial leather straps.',
+        'Render cel paint and ink grain tuned to sacred material contrast, alongside cel paint and ink grain tuned to heraldic material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Monumental upward composition with columnar framing that magnifies vow posture and insignia readability.',
+        'Frame around crest-like symmetry and severe diagonal rank, alongside sacred converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Reverence, obligation, and intergenerational burden accepted in silence.',
+        'Carry mood through vow pressure and restrained reverence, alongside vow, lineage, and public symbolic weight; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'Premium anime finish with emblem legibility, controlled bloom, and high tonal discipline around symbolic gestures.',
+        'Finish with clean anime finishing that keeps sacred identity readable without noisy denoise, alongside clean anime finishing that keeps heraldic identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Oath-anchor posture, heraldic motif centrality, chapel-scale geometry, and ritual light crowns.',
+        'sacred emblem order and severe devotional anime composition, alongside a heraldic anime direction shaped by era-aware line economy and genre tone; emblem-bearing silhouettes and banner-like contour logic, alongside contours paced by sacred tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to sacred material contrast, alongside cel paint and ink grain tuned to heraldic material contrast; a sacred light logic using cel rim, glow behavior, and blocked shadow, alongside a heraldic light logic using cel rim, glow behavior, and blocked shadow; crest-like symmetry and severe diagonal rank, alongside sacred converted into reusable framing rhythm and anime timing',
       creative_brief:
-        'Define a reusable sacred-heraldic-vow style for any subject: heraldry, sacred vertical framing, solemn material response, and devotional stillness without imposing knights, weapons, chapels, armor, helmets, banners, or medieval ceremony as literal content.',
+        'Apply Sacred Heraldic Vow Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies sacred emblem order and severe devotional anime composition, alongside a heraldic anime direction shaped by era-aware line economy and genre tone, alongside emblem-bearing silhouettes and banner-like contour logic, alongside contours paced by sacred tension, readable pose energy, and silhouette discipline; gold, crimson, slate, and quiet moonlit neutrals, alongside lacquer crimson, slate, gold, and heraldic dark neutrals; a sacred light logic using cel rim, glow behavior, and blocked shadow, alongside a heraldic light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to sacred material contrast, alongside cel paint and ink grain tuned to heraldic material contrast and crest-like symmetry and severe diagonal rank, alongside sacred converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-029',
     name: 'Ember Breach Pressure Style',
     category: '6. Samurai & Medieval',
-    negativePrompt: 'photoreal, modern-tech, colorful-cute, watermark, text, logo',
+    negativePrompt:
+      'photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Breach-pressure anime where structural failure, flame logic, and defensive choreography define the visual identity.',
+        'Ember Breach Pressure Style acts as a transferable anime-prestige router: a ember anime direction shaped by era-aware line economy and genre tone, alongside a breach anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Heavy structural silhouettes, fracture-oriented lines, and arc vectors used as compositional pressure.',
+        'Preserve the prompt subject, action, and context while restyling forms through contours paced by ember tension, readable pose energy, and silhouette discipline, alongside contours paced by breach tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Ember orange peaks, smoke black masses, calcified stone grays, and sparse signal-red command accents.',
+        'Map color through ember orange, smoke black, and hot crimson accents, alongside a breach accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Fire-dominant nocturnal contrast with intermittent blast flares that reveal tactical layers in pulses.',
+        'Use low fire glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Cracked stone, char-flaked timber, soot-burnished metal, and airborne ash granularity.',
+        'Render soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink grain tuned to breach material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Oblique structural perspective that exaggerates breach depth and converging pressure channels.',
+        'Frame around ember converted into reusable framing rhythm and anime timing, alongside breach converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Controlled collapse, disciplined resistance, and escalating heat-driven urgency.',
+        'Carry mood through ember emotional pressure and genre-specific tone, alongside breach emotional pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'Epic widescreen readability with strong event hierarchy between fracture zone, resistance layer, and heat pressure.',
+        'Finish with clean anime finishing that keeps ember identity readable without noisy denoise, alongside clean anime finishing that keeps breach identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Breach seams, arc trajectories, pressure points, and command silhouettes amid ember drift.',
+        'a ember anime direction shaped by era-aware line economy and genre tone, alongside a breach anime direction shaped by era-aware line economy and genre tone; contours paced by ember tension, readable pose energy, and silhouette discipline, alongside contours paced by breach tension, readable pose energy, and silhouette discipline; soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink grain tuned to breach material contrast; low fire glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and blocked shadow; ember converted into reusable framing rhythm and anime timing, alongside breach converted into reusable framing rhythm and anime timing',
       creative_brief:
-        'Establish a transferable ember-breach-pressure grammar for any subject: fracture geometry, fire-lit pulse lighting, layered conflict readability, and controlled collapse without imposing castles, sieges, walls, projectiles, defenders, shield-lines, or engines.',
+        'Apply Ember Breach Pressure Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a ember anime direction shaped by era-aware line economy and genre tone, alongside a breach anime direction shaped by era-aware line economy and genre tone, alongside contours paced by ember tension, readable pose energy, and silhouette discipline, alongside contours paced by breach tension, readable pose energy, and silhouette discipline; ember orange, smoke black, and hot crimson accents, alongside a breach accent system held inside disciplined cel values; low fire glow and ash-soft rim light, alongside a breach light logic using cel rim, glow behavior, and blocked shadow; soot, sparks, warm dust, and charred paint texture, alongside cel paint and ink grain tuned to breach material contrast and ember converted into reusable framing rhythm and anime timing, alongside breach converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
   {
     id: 'SP13-030',
     name: 'Moonlit Ascetic Discipline Style',
     category: '6. Samurai & Medieval',
-    negativePrompt: 'photoreal, bright-daylight, cyberpunk, watermark, text, logo',
+    negativePrompt:
+      'photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
     style: {
       aesthetic:
-        'Ascetic contemplative style combining monastic serenity with latent kinetic potential and spiritual discipline.',
+        'Moonlit Ascetic Discipline Style acts as a transferable anime-prestige router: a moonlit anime direction shaped by era-aware line economy and genre tone, alongside a ascetic anime direction shaped by era-aware line economy and genre tone; fuse it with prestige martial anime with restrained violence, ritual stillness, heraldic form, textile discipline, and fatal composure; it routes era, genre, line economy, cel or digital finish, and performance tone without locking prompt content to the source title or sample image.',
       subject_treatment:
-        'Fine calligraphic contours, circular stance geometries, and motion trajectories implied through restrained directional line cues.',
+        'Preserve the prompt subject, action, and context while restyling forms through contours paced by moonlit tension, readable pose energy, and silhouette discipline, alongside contours paced by ascetic tension, readable pose energy, and silhouette discipline; identity should remain readable through anime contour, expression economy, pose energy, shape simplification, and effect hierarchy instead of a required canon character or title scene.',
       color_and_tone:
-        'Moonlit cobalt, brushed silver, desaturated pine green, and warm paper-lantern micro-accents.',
+        'Map color through moonlit indigo, slate gray, and small silver-white edge notes, alongside a ascetic accent system held inside disciplined cel values; anchor it in slate neutrals, lacquer crimson, moonlit indigo, cedar brown, ember orange, and sparse metallic glints; keep value separation clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested content.',
       lighting_and_shadow:
-        'Soft lunar top fill with localized lantern pools, preserving calm tonal separation and meditative shadow structure.',
+        'Use cool moon rim and restrained nocturnal bounce, alongside a ascetic light logic using cel rim, glow behavior, and blocked shadow; combine it with raking lateral light, warm bounce, moonlit edges, ember glow, and selective metal highlights; shadows should read as anime light design, rims should clarify form, and glow or effects should support the prompt rather than replacing it.',
       texture_and_material:
-        'Raked matte texture, cool stone, fibrous natural grain, and plain ritual cloth with minimal ornament.',
+        'Render cel paint and ink grain tuned to moonlit material contrast, alongside cel paint and ink grain tuned to ascetic material contrast; anchor surfaces in woven cloth, lacquer, cedar grain, stone moisture, ash, polished metal, and restrained ink texture; cel edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments, action, and abstractions.',
       camera_and_composition:
-        'Symmetric framing with gentle depth compression that turns space into a concentration mandala.',
+        'Frame around moonlit converted into reusable framing rhythm and anime timing, alongside ascetic converted into reusable framing rhythm and anime timing, then extend it with axial pressure, ritual asymmetry, pre-impact spacing, heraldic diagonals, and calm negative space; the style should support portraits, props, machines, performances, landscapes, symbols, and full scenes through reusable anime staging grammar instead of one fixed card layout.',
       atmosphere_and_mood:
-        'Discipline, inward stillness, and ritual force contained before release.',
+        'Carry mood through ascetic quiet and night discipline, alongside ascetic emotional pressure and genre-specific tone; braid it with discipline, pre-impact breath, fatal code, sacred vow, controlled pressure, and quiet aftermath; the preset can become funny, sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.',
       rendering_and_quality:
-        'High-clarity contemplative rendering emphasizing breath rhythm, posture precision, and uncluttered focal hierarchy.',
+        'Finish with clean anime finishing that keeps moonlit identity readable without noisy denoise, alongside clean anime finishing that keeps ascetic identity readable without noisy denoise; enforce high-fidelity martial anime finish with calm contour clarity, micro-contrast, and zero ornamental clutter; prioritize clean denoise, stable anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or 3D-render drift.',
       key_features:
-        'Circular discipline marks, deliberate stance transitions, moon-axis alignment, and measured quiet.',
+        'a moonlit anime direction shaped by era-aware line economy and genre tone, alongside a ascetic anime direction shaped by era-aware line economy and genre tone; contours paced by moonlit tension, readable pose energy, and silhouette discipline, alongside contours paced by ascetic tension, readable pose energy, and silhouette discipline; cel paint and ink grain tuned to moonlit material contrast, alongside cel paint and ink grain tuned to ascetic material contrast; cool moon rim and restrained nocturnal bounce, alongside a ascetic light logic using cel rim, glow behavior, and blocked shadow; moonlit converted into reusable framing rhythm and anime timing, alongside ascetic converted into reusable framing rhythm and anime timing',
       creative_brief:
-        'Build a reusable moonlit ascetic discipline grammar for any subject: meditative symmetry, restrained line economy, circular motion cues, and moonlit discipline without imposing monks, blades, temples, courtyards, arenas, training marks, or martial scenes.',
+        'Apply Moonlit Ascetic Discipline Style after prompt X as a transferable anime-prestige layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a moonlit anime direction shaped by era-aware line economy and genre tone, alongside a ascetic anime direction shaped by era-aware line economy and genre tone, alongside contours paced by moonlit tension, readable pose energy, and silhouette discipline, alongside contours paced by ascetic tension, readable pose energy, and silhouette discipline; moonlit indigo, slate gray, and small silver-white edge notes, alongside a ascetic accent system held inside disciplined cel values; cool moon rim and restrained nocturnal bounce, alongside a ascetic light logic using cel rim, glow behavior, and blocked shadow; cel paint and ink grain tuned to moonlit material contrast, alongside cel paint and ink grain tuned to ascetic material contrast and moonlit converted into reusable framing rhythm and anime timing, alongside ascetic converted into reusable framing rhythm and anime timing, finish discipline, and negative controls without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument, weapon, or card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

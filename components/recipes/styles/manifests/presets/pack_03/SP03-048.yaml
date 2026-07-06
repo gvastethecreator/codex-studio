@@ -12,31 +12,77 @@ tags:
   - 3d-and-cgi-rendering
   - hard-surface-and-product-cgi
 visualDna:
-  aesthetic: Premium product-render discipline
-  subject_treatment: Sleek curves
-  color_and_tone: Brand colors
-  lighting_and_shadow: Studio reflection
-  texture_and_material: Matte plastic, aluminum, premium finish
+  aesthetic: >-
+    Product Render acts as a transferable CGI-style router: start from Premium product render
+    discipline, Controlled reflections, premium reveal and hard-surface and product-CGI system built
+    from bevel logic, manufactured surfaces, PBR maps, studio reflections, mechanical detailing, and
+    premium reveal, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo
+    image.
+  subject_treatment: >-
+    Transform any prompt subject through Sleek curves; preserve the prompt subject while giving it
+    engineered silhouette logic, panel hierarchy, assembly clarity, product-grade surface control,
+    or UI-material precision, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Brand colors; use color as manufactured finish: anodized metal, gunmetal, glass
+    tint, enamel, ceramic, product neutrals, neon gas, or controlled brand-neutral accents, with
+    deliberate value grouping, exposure control, and medium-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through Studio reflection; shape light through studio strips, rim edges, reflection
+    cards, display glow, automotive flow lines, gemstone fire, or product reveal gradients, so value
+    structure supports the renderer and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Matte plastic, aluminum, premium finish; surface detail should show bevels, panel seams,
+    normal maps, brushed metal, glass layers, stone facets, neon tubing, mechanical wear, or clean
+    UI translucency, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Lookdev camera for Product Render: three-quarter or orthographic framing, clean silhouette read, material
-    highlights, controlled depth, and vertical card composition.
-  atmosphere_and_mood: Desirable, expensive, luxury reveal
-  rendering_and_quality: Apple flagship product launch, minimalist perfection
-  key_features: Controlled reflections, premium reveal
+    Structure the image through Lookdev camera for Product Render: three quarter or orthographic
+    framing, clean silhouette read, material highlights, controlled depth, and vertical card
+    composition; compose for engineered readability through exploded spacing, hero compression,
+    orthographic clarity, packshot discipline, part hierarchy, or premium macro scale, with scale,
+    spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Desirable, expensive, luxury reveal; derive mood from precision, luxury, tactical
+    engineering, clean retail desire, transhuman unease, or high-end interface tactility, letting
+    the renderer alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Apple flagship product launch, minimalist perfection; finish with exact edges,
+    believable PBR response, controlled reflections, and no fake labels, muddy grime, or random
+    greeble clutter, clean denoised surfaces where appropriate, and enough shader evidence to make
+    the CGI mode recognizable.
+  key_features: >-
+    Premium product render discipline; Controlled reflections, premium reveal; Brand colors; Matte
+    plastic, aluminum, premium finish; Lookdev camera for Product Render: three quarter or
+    orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical
+    card composition
   creative_brief: >-
-    Treat the input with flagship product-render polish: minimal context, controlled reflection sweeps,
-    premium material transitions, clean silhouette hierarchy and launch-keynote desire. Do not require
-    consumer electronics, a floating object, wallet cue or infinite white void. Apply Product Render as a
-    portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry
-    language, lighting grammar, and production cues while avoiding a required character, vehicle, prop,
-    environment, UI screen, product shot, or scene template.
+    Apply Product Render as a CGI/render preset over prompt X: preserve the user's requested
+    subject, then route modeling, shader response, lighting, material scale, composition, mood, and
+    final render craft through Premium product render discipline, Controlled reflections, premium
+    reveal, Matte plastic, aluminum, premium finish without requiring the card image's original
+    subject.
 avoidRules:
   - dust
   - scratches
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - random greeble clutter
+  - fake labels
+  - muddy grime
+  - organic blob shape
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-048.webp
 attributes:
-  negativePrompt: dust, scratches
+  negativePrompt: >-
+    dust, scratches, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    watermark, readable text, signature, random greeble clutter, fake labels, muddy grime, organic
+    blob shape
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

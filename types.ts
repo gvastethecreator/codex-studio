@@ -13,12 +13,23 @@ export interface Attachment {
 
 export type GenerationModel = (typeof MODELS)[keyof typeof MODELS];
 
-export type AspectRatio = '1:1' | '3:2' | '2:3';
+export type AspectRatio =
+  | '21:9'
+  | '16:9'
+  | '4:3'
+  | '3:2'
+  | '5:4'
+  | '1:1'
+  | '4:5'
+  | '2:3'
+  | '3:4'
+  | '9:16';
 
 export type ImageSize = '512px' | '1K' | '2K' | '4K';
 
 export type RecipeId =
   | 'remaster'
+  | 'sprite-atlas'
   | 'spritesheet'
   | 'cinematic'
   | 'character-lab'

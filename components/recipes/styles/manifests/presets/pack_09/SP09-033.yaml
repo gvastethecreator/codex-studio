@@ -13,26 +13,57 @@ tags:
   - texture-and-materiality
   - weathering-and-decay
 visualDna:
-  aesthetic: Peeling painted surface
-  subject_treatment: Cracked flakes
-  color_and_tone: White paint, Grey wood under
-  lighting_and_shadow: Shadows under flakes
-  texture_and_material: Flaky
-  camera_and_composition: Curled edges
-  atmosphere_and_mood: Neglected, textured
-  rendering_and_quality: Abandoned, old
-  key_features: Random peeling
+  aesthetic: >-
+    Peeling Paint turns material failure into the main visual language: start from Peeling painted
+    surface, Flaky, and Curled edges, then turn damage history, contamination, corrosion, staining,
+    abrasion, and material breakdown into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Cracked flakes: preserve identity and pose while letting
+    forms age, stain, corrode, abrade, swell, chip, or collapse through edge profile, surface
+    breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use White paint, Grey wood under as the material palette, with controlled value separation,
+    local color variation, and hue shifts that follow the subject's form rather than flattening it
+    into a pasted texture.
+  lighting_and_shadow: >-
+    Let Shadows under flakes define the light response: highlights, occlusion, translucency,
+    specular scatter, matte falloff, or rim behavior should reveal Peeling Paint without hiding the
+    prompt subject.
+  texture_and_material: >-
+    Render Flaky through layer loss, residue buildup, chipped edges, stains, cracks, and uneven
+    surface failure; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension
+    coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Curled edges as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Neglected, textured by using neglect, time, moisture, heat, friction, and
+    environmental pressure; the material should color the scene's feeling while preserving the
+    user's requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Abandoned, old material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Peeling painted surface; Cracked flakes; Flaky; Shadows under flakes; Curled edges
   creative_brief: >-
-    Apply peeling-paint aging to the input: curled flakes, cracked white layers, grey substrate glimpsed
-    underneath, and small shadows pooling beneath lifting edges. If wall, wood, prop, sign, or architecture
-    exists, age it directly; otherwise turn surfaces into layered paint releasing its grip without requiring a
+    Route any subject through Peeling Paint as a transferable weathering-and-decay visual system
+    while preserving the prompt's subject, action, and setting. Apply peeling-paint aging to the
+    input: curled flakes, cracked white layers, grey substrate glimpsed underneath, and small
+    shadows pooling beneath lifting edges. If wall, wood, prop, sign, or architecture exists, age it
+    directly; otherwise turn surfaces into layered paint releasing its grip without requiring a
     house wall.
 avoidRules:
   - fresh paint
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-033.webp
 attributes:
-  negativePrompt: fresh paint
+  negativePrompt: fresh paint, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

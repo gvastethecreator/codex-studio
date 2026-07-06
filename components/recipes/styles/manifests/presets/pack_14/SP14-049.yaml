@@ -14,37 +14,82 @@ tags:
   - greek-myth
 visualDna:
   aesthetic: >-
-    Chariot Sun Transit within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual language
-    with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Chariot Sun Transit's specific style identity.
+    Chariot Sun Transit acts as a transferable mythic-noir router: chariot translated into dark
+    symbolic behavior, sun translated into dark symbolic behavior plus transit translated into dark
+    symbolic behavior fused with Greek epic noir with bronze law, laurel governance, oracle
+    fragments, maritime strategy, and sun-struck fatalism; it carries symbol, omen, ritual
+    authority, and mature editorial restraint without locking prompt content to its sample image.
   subject_treatment: >-
-    Define Chariot Sun Transit through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Keep the user's prompt subject, action, and context intact while reshaping identity through
+    chariot shaping silhouette rhythm, contour pressure, and symbolic edge control, sun shaping
+    silhouette rhythm, contour pressure, and symbolic edge control plus transit shaping silhouette
+    rhythm, contour pressure, and symbolic edge control; forms should inherit silhouette pressure,
+    emblem logic, ritual posture, edge weight, and motif placement instead of a mandatory actor or
+    prop set.
   color_and_tone: >-
-    Use a Chariot Sun Transit-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Map color through sun gold, cinder orange, and hard black contrast, chariot-weighted accent
+    roles over disciplined dark values plus transit-weighted accent roles over disciplined dark
+    values together with Aegean blue-black, bronze, marble ivory, olive green, red thread, smoke
+    gray, laurel shadow, and harsh dawn gold; values stay separated, accents feel intentional, and
+    the dark palette supports the requested content rather than swallowing it.
   lighting_and_shadow: >-
-    Use lighting that makes Chariot Sun Transit recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use solar rim, harsh flare control, and ritual warmth, chariot-weighted rim behavior, occult
+    glow, and charged shadow plus transit-weighted rim behavior, occult glow, and charged shadow
+    with hard dawn planes, oracle smoke glow, bronze bounce, sea-haze contrast, and severe
+    sculptural shadow; shadows must carry omen weight, rims should clarify form, and glow should
+    behave as ritual evidence rather than decorative haze.
   texture_and_material: >-
-    Use materials and textures that reinforce Chariot Sun Transit: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
+    Render bronze spokes, leather tension, and sun-baked dust, sun-inflected patina, residue, grain,
+    and tactile edge behavior plus transit-inflected patina, residue, grain, and tactile edge
+    behavior alongside bronze patina, marble dust, olive wood, red thread fiber, sailcloth, ash,
+    salt, engraved stone, and spear-edge glints; surface scale, patina, residue, gloss, grain, and
+    carved or sealed edges must remain coherent across characters, objects, scenes, and
+    abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Chariot Sun Transit: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame with solar transit diagonals and wheel-like momentum plus movement arc, solar route, and
+    timed passage plus frieze order, labyrinth logic, oath-line diagonals, public-measure spacing,
+    and monument-like silhouette balance; the style should support portraits, objects, architecture,
+    creatures, symbols, and full scenes through reusable spatial grammar instead of one fixed
+    layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Chariot Sun Transit: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through inevitable motion through authority, chariot pressure, consequence, and
+    symbolic tension plus sun pressure, consequence, and symbolic tension and tragic law, public
+    honor, strategic pressure, fatal prophecy, disciplined return, and unsentimental heroic
+    aftermath; the image can become severe, sensual, sacred, violent, quiet, or strange when prompt
+    X asks for it, while the preset supplies mythic consequence.
   rendering_and_quality: >-
-    Render Chariot Sun Transit with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
+    Finish with chariot recognition with denoised dark editorial polish and controlled material
+    truth plus sun recognition with denoised dark editorial polish and controlled material truth and
+    classical-noir illustration with crisp profiles, restrained grain, readable metal, and no
+    museum-label text; prioritize clean denoise, readable dark values, strong silhouette hierarchy,
+    tactile material truth, and no watermark, fake text, logos, accidental UI, or muddy black crush.
   key_features: >-
-    Prioritize Chariot Sun Transit's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    chariot translated into dark symbolic behavior, sun translated into dark symbolic behavior plus
+    transit translated into dark symbolic behavior; chariot shaping silhouette rhythm, contour
+    pressure, and symbolic edge control, sun shaping silhouette rhythm, contour pressure, and
+    symbolic edge control plus transit shaping silhouette rhythm, contour pressure, and symbolic
+    edge control; bronze spokes, leather tension, and sun-baked dust, sun-inflected patina, residue,
+    grain, and tactile edge behavior plus transit-inflected patina, residue, grain, and tactile edge
+    behavior; solar rim, harsh flare control, and ritual warmth, chariot-weighted rim behavior,
+    occult glow, and charged shadow plus transit-weighted rim behavior, occult glow, and charged
+    shadow; solar transit diagonals and wheel-like momentum plus movement arc, solar route, and
+    timed passage
   creative_brief: >-
-    Create a style-card that translates Chariot Sun Transit into a portable visual system for 5. Mythic Greek
-    Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story
-    beat.
+    Apply Chariot Sun Transit after prompt X as a transferable mythic-noir layer: prompt X supplies
+    subject, action, setting, and intensity, while this preset supplies chariot translated into dark
+    symbolic behavior, sun translated into dark symbolic behavior plus transit translated into dark
+    symbolic behavior, chariot shaping silhouette rhythm, contour pressure, and symbolic edge
+    control, sun shaping silhouette rhythm, contour pressure, and symbolic edge control plus transit
+    shaping silhouette rhythm, contour pressure, and symbolic edge control, sun gold, cinder orange,
+    and hard black contrast, chariot-weighted accent roles over disciplined dark values plus
+    transit-weighted accent roles over disciplined dark values, solar rim, harsh flare control, and
+    ritual warmth, chariot-weighted rim behavior, occult glow, and charged shadow plus
+    transit-weighted rim behavior, occult glow, and charged shadow, bronze spokes, leather tension,
+    and sun-baked dust, sun-inflected patina, residue, grain, and tactile edge behavior plus
+    transit-inflected patina, residue, grain, and tactile edge behavior plus solar transit diagonals
+    and wheel-like momentum plus movement arc, solar route, and timed passage, finish discipline,
+    and negative controls without requiring a fixed deity, ritual, prop bundle, location, or sample
+    composition.
 avoidRules:
   - photoreal
   - dark-cyber
@@ -52,10 +97,23 @@ avoidRules:
   - watermark
   - text
   - logo
+  - clean marble postcard
+  - generic gladiator fantasy
+  - tourist Greece
+  - fixed deity portrait
+  - required ritual scene
+  - literal sample composition
+  - generic dark fantasy
+  - muddy black crush
+  - random occult symbols
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-049.webp
 attributes:
-  negativePrompt: photoreal, dark-cyber, goofy, watermark, text, logo
+  negativePrompt: >-
+    photoreal, dark-cyber, goofy, watermark, text, logo, clean marble postcard, generic gladiator
+    fantasy, tourist Greece, fixed deity portrait, required ritual scene, literal sample
+    composition, generic dark fantasy, muddy black crush, random occult symbols, readable text
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

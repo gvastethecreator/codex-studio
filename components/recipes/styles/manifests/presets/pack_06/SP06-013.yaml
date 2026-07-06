@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Retro 80s airbrush art
-  subject_treatment: Soft gradients, no brush marks
-  color_and_tone: Chrome, neon, sunset
-  lighting_and_shadow: Hyper-real, glossy
-  texture_and_material: Smooth, grainless
-  camera_and_composition: Idealized forms
-  atmosphere_and_mood: Retro, slick
-  rendering_and_quality: Retrofuturist commercial airbrush polish with chrome-smooth gradients
-  key_features: Smooth gradients
+  aesthetic: >-
+    Airbrush (80s) acts as a transferable art-medium router: start from Retro 80s airbrush art,
+    Smooth gradients and paint-media system built from pigment body, binder behavior, substrate
+    tooth, brush pressure, edge softness, and deliberate surface finish, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Soft gradients, no brush marks; preserve the prompt subject
+    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
+    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Chrome, neon, sunset; let hue, value, saturation, and mixing come from physical
+    pigment, binder opacity, drying character, and historical medium constraints, with deliberate
+    value grouping, accent control, and medium-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Hyper real, glossy; make light feel interpreted by paint through tonal
+    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Smooth, grainless; surface detail should show canvas, paper, plaster, wax, velvet, gesso,
+    knife ridges, wash blooms, or aerosol overspray when the medium requires it, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Idealized forms; organize the image through painterly massing, brush
+    direction, support format, negative space, edge hierarchy, and intentional simplification, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Retro, slick; derive mood from medium history, touch, pigment weight, speed,
+    restraint, kitsch, ritual craft, or studio discipline, letting the medium alter interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Retrofuturist commercial airbrush polish with chrome smooth gradients; finish with
+    medium-faithful paint handling, readable form, controlled texture, and no pasted photo or
+    generic digital filter, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
+  key_features: >-
+    Retro 80s airbrush art; Smooth gradients; Chrome, neon, sunset; Smooth, grainless; Idealized
+    forms
   creative_brief: >-
-    Apply 80s airbrush finish to any input: atomized gradients, chrome-smooth highlights, vapor-soft
-    transitions, glossy synthetic color, and retro commercial glow. Keep frictionless fantasy without
-    requiring pinups, cars, chrome logos, sunset grids, or mall-poster compositions.
+    Apply Airbrush (80s) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Retro 80s airbrush art, Smooth gradients, Smooth, grainless without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-013.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

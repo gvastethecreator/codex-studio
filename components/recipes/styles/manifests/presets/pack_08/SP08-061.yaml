@@ -12,34 +12,90 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Lace textile detail, heirloom romance, openwork delicacy
-  subject_treatment: Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief
-  color_and_tone: White, Black, ivory, candlelight, champagne, jet, neutral textile shadow
-  lighting_and_shadow: Backlit translucency, window-light diffusion, veil-glow softness and morning-light ethereality
+  aesthetic: >-
+    Lace operates as a portable fashion-costume router: combine Lace textile detail, heirloom
+    romance, openwork delicacy with material-forward fashion transformation with drape, surface,
+    tactility, body-volume logic, and fabric-as-style behavior, so the preset supplies styling
+    behavior rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Intricate web,
+    Alencon-pattern spread, scalloped-edge flow, openwork boundary tracing and trailing relief;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Backlit translucency, window-light diffusion, veil-glow softness and morning-light
+    ethereality plus material-revealing light with gloss, rim, translucency, sparkle, subsurface,
+    matte falloff, or volumetric separation as the styling light contract, revealing cut, drape,
+    surface response, trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique,
-    re-embroidered motifs
+    Render Holes, thread, Chantilly lace, Alencon needlepoint, guipure relief, tulle ground, silk
+    organza applique, re-embroidered motifs plus fabric grain, fur, chain, knit, satin, lace,
+    leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale,
+    seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment
+    coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Lace using its key spatial cues: Pattern, floral motif, scalloped edge, openwork textile
-    boundary and hand-embroidered detail.
-  atmosphere_and_mood: Romantic, fragile, heirloom tenderness and hush beauty
-  rendering_and_quality: Delicate, detailed, lacemaker-artisan precision and heirloom textile heritage
-  key_features: Pattern, floral motif, scalloped edge, openwork textile boundary and hand-embroidered detail
+    Compose with Compose for Lace using its key spatial cues: Pattern, floral motif, scalloped edge,
+    openwork textile boundary and hand-embroidered detail plus drape rhythm, material coverage,
+    silhouette clarity, tactile close detail, fold direction, and transformation edge control as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Lace while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Lace textile detail, heirloom romance, openwork delicacy; Intricate web, Alencon-pattern spread,
+    scalloped-edge flow, openwork boundary tracing and trailing relief; Holes, thread, Chantilly
+    lace, Alencon needlepoint, guipure relief, tulle ground, silk organza applique, re-embroidered
+    motifs; Backlit translucency, window-light diffusion, veil-glow softness and morning-light
+    ethereality; Compose for Lace using its key spatial cues: Pattern, floral motif, scalloped edge,
+    openwork textile boundary and hand-embroidered detail
   creative_brief: >-
-    Lace the input with openwork structure over neutral textile substrate: Chantilly motifs, Alencon relief,
-    guipure edges, scalloped hems, tulle ground and backlit translucency. Keep heirloom and ceremonial romance
-    as textile mood only, not as nude-illusion, bride, chapel, veil-lift tableau, cathedral train, portrait
-    body or wedding scene.
+    Use Lace after prompt X as a transferable fashion/costume layer: prompt X supplies subject,
+    motion, setting, tone, and intensity, while the preset supplies Lace textile detail, heirloom
+    romance, openwork delicacy, Intricate web, Alencon-pattern spread, scalloped-edge flow, openwork
+    boundary tracing and trailing relief, Holes, thread, Chantilly lace, Alencon needlepoint,
+    guipure relief, tulle ground, silk organza applique, re-embroidered motifs, Backlit
+    translucency, window-light diffusion, veil-glow softness and morning-light ethereality, Compose
+    for Lace using its key spatial cues: Pattern, floral motif, scalloped edge, openwork textile
+    boundary and hand-embroidered detail plus weave, pile, grain, shine, translucency, opacity,
+    stretch, wrap, seam tension, edge behavior, and surface continuity, palette behavior, light
+    response, material treatment, silhouette grammar, and finish discipline without requiring one
+    body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - solid
   - bare-skin focus
   - nude-illusion
   - lingerie body read
   - portrait body
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-061.webp
 attributes:
-  negativePrompt: solid, bare-skin focus, nude-illusion, lingerie body read, portrait body
+  negativePrompt: >-
+    solid, bare-skin focus, nude-illusion, lingerie body read, portrait body, generic fabric
+    texture, muddy surface noise, wrong material physics, fixed outfit, required body type, literal
+    card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

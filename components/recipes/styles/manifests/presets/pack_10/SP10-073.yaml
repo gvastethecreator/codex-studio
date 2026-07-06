@@ -12,24 +12,61 @@ tags:
   - abstract-and-experimental
   - point-mosaic-and-glass-systems
 visualDna:
-  aesthetic: Small square tiles
-  subject_treatment: Grout lines
-  color_and_tone: Vibrant glass
-  lighting_and_shadow: Uneven reflection
-  texture_and_material: Glass/Stone tiles
-  camera_and_composition: Pixelated by tiles
-  atmosphere_and_mood: Ancient, solid
-  rendering_and_quality: Roman, durable
-  key_features: Tile grid
+  aesthetic: >-
+    Mosaic (Tile) becomes a transferable discrete mark, mosaic, and glass segmentation system: start
+    from Small square tiles, Tile grid, and Pixelated by tiles, then route prompt content through
+    dots, tiles, grout, lead came, optical mixing, and segmented luminous surfaces without forcing
+    one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Grout lines to rebuild forms from dots, glass
+    cells, tile units, grout lines, or lead outlines while preserving silhouette; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Vibrant glass; use color as optical mixing, glass translucency, tile
+    pigment, grout contrast, and luminous segmentation, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Uneven reflection drive the light response: shape light through dot vibration, tile
+    highlights, stained-glass glow, or shallow relief shadow, avoiding generic glamour lighting
+    unless the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Glass/Stone tiles as the tactile or mark-making basis; surfaces require individual marks,
+    tile gaps, lead seams, pigment density, and unit-to-unit variation, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Pixelated by tiles as reusable spatial grammar: favor readable silhouettes, local
+    unit scale changes, tessellated flow, and segmented rhythm, adapting cleanly to portraits,
+    objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Ancient, solid as the emotional register; derive mood from craft, sacred light, optical
+    vibration, public art, and patient mark-making, without flattening strong, strange, darker, or
+    adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Roman, durable: finish with coherent units, controlled outlines, and no blurred
+    pseudo-mosaic mush, preserving prompt X as the base content and the preset as the style router.
+  key_features: >-
+    Small square tiles; Grout lines; Vibrant glass; Uneven reflection; Glass/Stone tiles; Pixelated
+    by tiles; Ancient, solid; Roman, durable; Tile grid
   creative_brief: >-
-    Apply mosaic tessera construction to the input: small stone or glass tiles, grout gaps, hand-set
-    irregularity, and cumulative fragment logic should build the subject from durable modular pieces.
+    Route any subject through Mosaic (Tile) as a transferable point, mosaic, or glass-construction
+    visual system: preserve prompt intent while converting form, fragments, gaps, optical mixing,
+    and cumulative mark logic through this preset. Apply mosaic tessera construction to the input:
+    small stone or glass tiles, grout gaps, hand-set irregularity, and cumulative fragment logic
+    should build the subject from durable modular pieces.
 avoidRules:
   - smooth painting
+  - blurred mush
+  - continuous brush rendering
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-073.webp
 attributes:
-  negativePrompt: smooth painting
+  negativePrompt: >-
+    smooth painting, blurred mush, continuous brush rendering, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

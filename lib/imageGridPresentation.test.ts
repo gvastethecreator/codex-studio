@@ -4,12 +4,14 @@ import {
   resolveImageGridAspectRatio,
   resolveImageGridIntrinsicSize,
   shouldPriorityLoadImageGridItem,
+  sortImageGridImages,
 } from './imageGridPresentation';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { GeneratedImageWithConfig } from '../types';
 
 function imageWithAspectRatio(
   aspectRatio: GeneratedImageWithConfig['config']['aspectRatio'],
+  overrides: Partial<GeneratedImageWithConfig> = {},
 ): GeneratedImageWithConfig {
   return {
     id: 'image-1',
@@ -21,6 +23,7 @@ function imageWithAspectRatio(
       prompt: 'prompt',
       aspectRatio,
     },
+    ...overrides,
   };
 }
 
@@ -68,5 +71,46 @@ describe('imageGridPresentation', () => {
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 0, viewportHeight: 800 })).toBe(true);
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 850, viewportHeight: 800 })).toBe(true);
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 920, viewportHeight: 800 })).toBe(false);
+  });
+
+  it('sorts generated images by explicit gallery actions', () => {
+    const images = [
+      imageWithAspectRatio('1:1', {
+        id: 'c-image',
+        createdAt: 30,
+        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'Gamma', aspectRatio: '1:1' },
+      }),
+      imageWithAspectRatio('2:3', {
+        id: 'a-image',
+        createdAt: 10,
+        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'Alpha', aspectRatio: '2:3' },
+      }),
+      imageWithAspectRatio('16:9', {
+        id: 'b-image',
+        createdAt: 20,
+        config: { ...DEFAULT_GENERATION_CONFIG, prompt: 'Beta', aspectRatio: '16:9' },
+      }),
+    ];
+
+    expect(sortImageGridImages(images, 'desc').map((image) => image.id)).toEqual([
+      'c-image',
+      'b-image',
+      'a-image',
+    ]);
+    expect(sortImageGridImages(images, 'prompt').map((image) => image.id)).toEqual([
+      'a-image',
+      'b-image',
+      'c-image',
+    ]);
+    expect(sortImageGridImages(images, 'prompt_desc').map((image) => image.id)).toEqual([
+      'c-image',
+      'b-image',
+      'a-image',
+    ]);
+    expect(sortImageGridImages(images, 'id').map((image) => image.id)).toEqual([
+      'a-image',
+      'b-image',
+      'c-image',
+    ]);
   });
 });

@@ -12,33 +12,85 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Candlelit pre-electric warmth
+  aesthetic: >-
+    Candlelight acts as a transferable cinematic-media router: start from Candlelit pre-electric
+    warmth, Candlelight light transport, optical artifacts, exposure discipline, atmosphere depth,
+    and camera-response behavior, Low warm key, flame flicker, amber falloff, moving shadow edge and
+    portable lighting and atmosphere system built from light transport, exposure behavior, optical
+    distortion, volumetric density, reflection, and camera response, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Candlelight: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Warm Orange, amber flame, honey glow, deep umber falloff
-  lighting_and_shadow: Flickering low, single-candle key, flame dance, warm underlight
-  texture_and_material: Soft shadows, gentle roll-off, intimate darkness
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Candlelight: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Warm Orange, amber flame, honey glow, deep umber falloff; use color as light
+    temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion,
+    prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flickering low, single-candle key, flame dance, warm underlight; make the
+    named light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses,
+    volumetric rays, split contrast, or softbox falloff, so exposure and shadow structure support
+    the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Soft shadows, gentle roll-off, intimate darkness; surface detail should reveal particles,
+    lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or optical
+    streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy filler
+    texture.
   camera_and_composition: >-
-    Camera language native to Candlelight: genre-aware framing, lens character, focal hierarchy, motion cue,
-    and vertical style-card composition.
-  atmosphere_and_mood: Romantic, secret, flickering intimacy, warm darkness
-  rendering_and_quality: Intimate, old, pre-electric warmth, flame-source authenticity
-  key_features: Low warm key, flame flicker, amber falloff, moving shadow edge
+    Structure the image through Camera language native to Candlelight: genre-aware framing, lens
+    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Romantic, secret, flickering intimacy, warm darkness; derive mood from
+    illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon
+    danger, or temporal flash energy, letting the media style alter interpretation without demanding
+    a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Intimate, old, pre-electric warmth, flame-source authenticity; finish with
+    believable exposure, clean denoise, readable subjects, and controlled optical artifacts rather
+    than random glow or crushed darkness, clean denoised surfaces where appropriate, and enough
+    process evidence to make the style recognizable.
+  key_features: >-
+    Candlelit pre-electric warmth, Candlelight light transport, optical artifacts, exposure
+    discipline, atmosphere depth, and camera-response behavior; Low warm key, flame flicker, amber
+    falloff, moving shadow edge; Warm Orange, amber flame, honey glow, deep umber falloff; Soft
+    shadows, gentle roll-off, intimate darkness; Camera language native to Candlelight: genre-aware
+    framing, lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition
   creative_brief: >-
-    Apply candlelight as a low warm source: flame flicker, amber underglow, fast falloff, moving shadows, and
-    pre-electric intimacy. Avoid period-drama rooms, faces, hands, wax props, or conspiracy scenes. The
-    subject should appear shaped by unstable flame rather than modern lighting. Apply Candlelight as a
-    portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup,
-    artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable
-    text, fixed IP scene, or narrative setup.
+    Apply Candlelight as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Candlelit pre-electric warmth, Candlelight light transport,
+    optical artifacts, exposure discipline, atmosphere depth, and camera-response behavior, Low warm
+    key, flame flicker, amber falloff, moving shadow edge, Soft shadows, gentle roll-off, intimate
+    darkness without requiring the card image's original subject.
 avoidRules:
   - electric light
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-072.webp
 attributes:
-  negativePrompt: electric light
+  negativePrompt: >-
+    electric light, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

@@ -13,30 +13,60 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Volcanic glass
-  subject_treatment: Sharp fractures
-  color_and_tone: Deep Black
-  lighting_and_shadow: Glassy reflection
-  texture_and_material: Glassy, sharp
-  camera_and_composition: Conchoidal fracture
-  atmosphere_and_mood: Dark, dangerous
-  rendering_and_quality: Volcanic, sharp
-  key_features: Sharp edges
+  aesthetic: >-
+    Obsidian translates natural material behavior into form: start from Volcanic glass, Glassy,
+    sharp, and Conchoidal fracture, then turn natural formation, growth, erosion, and geological or
+    biological irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Sharp fractures: preserve identity and pose while letting
+    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Deep Black as the material palette, with controlled value separation, local color variation,
+    and hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Glassy reflection define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Obsidian without hiding the prompt
+    subject.
+  texture_and_material: >-
+    Render Glassy, sharp through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Conchoidal fracture as reusable material rhythm: macro-friendly for texture
+    tasks, but able to wrap objects, figures, environments, and props without forcing one sample
+    view.
+  atmosphere_and_mood: >-
+    Keep the mood Dark, dangerous by using age, weather, habitat pressure, and sensory association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Volcanic, sharp material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Volcanic glass; Sharp fractures; Glassy, sharp; Glassy reflection; Conchoidal fracture
   creative_brief: >-
-    Conjure the frozen midnight of obsidian, volcanic glass that shatters into edges sharper than intention
-    and darker than shadow. Conchoidal fractures should bloom across the surface like dark flowers, each curve
-    a record of impact translated into mineral poetry. The material must feel simultaneously precious and
-    predatory, beautiful and unforgiving. Use Obsidian as portable surface/render behavior over any input: map
-    its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
-    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the
-    material naturally appears.
+    Route any subject through Obsidian as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Conjure the frozen midnight of obsidian,
+    volcanic glass that shatters into edges sharper than intention and darker than shadow.
+    Conchoidal fractures should bloom across the surface like dark flowers, each curve a record of
+    impact translated into mineral poetry. The material must feel simultaneously precious and
+    predatory, beautiful and unforgiving. Use Obsidian as portable surface/render behavior over any
+    input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the
+    subject instead of requiring a literal material sample, macro tile, wall, landscape, source
+    object, or scene where the material naturally appears.
 avoidRules:
   - matte
   - rough
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-010.webp
 attributes:
-  negativePrompt: matte, rough
+  negativePrompt: matte, rough, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

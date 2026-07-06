@@ -7,153 +7,225 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP09-029',
     name: 'Velvet Fabric',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'cotton, flat',
+    negativePrompt:
+      'cotton, flat, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Luxury cloth',
-      subject_treatment: 'Soft folds',
-      color_and_tone: 'Deep Red or Blue',
-      lighting_and_shadow: 'Rim light sheen',
-      texture_and_material: 'Fuzzy',
-      camera_and_composition: 'Soft drape',
-      atmosphere_and_mood: 'Rich, soft',
-      rendering_and_quality: 'Royal, theater',
-      key_features: 'Sheen on folds',
+      aesthetic:
+        'Velvet Fabric makes hand-feel and pressure visible across the image: start from Luxury cloth, Fuzzy, and Soft drape, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Soft folds: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Deep Red or Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Rim light sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Velvet Fabric without hiding the prompt subject.',
+      texture_and_material:
+        'Render Fuzzy through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Soft drape as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Rich, soft by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Royal, theater material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Luxury cloth; Soft folds; Fuzzy; Rim light sheen; Soft drape',
       creative_brief:
-        'Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a landscape of deep shadows and rich highlights that shift with the angle of view. The surface should feel like visual touch, a textile that drinks light and returns it as color deepened by surrounding darkness. Render the sensuality of fabric that seems to breathe. Use Velvet Fabric as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Velvet Fabric as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Summon the deep luxury of velvet where piled fibers catch light at the crest of each soft fold, creating a landscape of deep shadows and rich highlights that shift with the angle of view. The surface should feel like visual touch, a textile that drinks light and returns it as color deepened by surrounding darkness. Render the sensuality of fabric that seems to breathe. Use Velvet Fabric as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-039',
     name: 'Frozen/Frosted',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'melted, wet',
+    negativePrompt:
+      'melted, wet, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Freezer burn',
-      subject_treatment: 'Ice crystals',
-      color_and_tone: 'White, Blue',
-      lighting_and_shadow: 'Sparkle',
-      texture_and_material: 'Crystalline',
-      camera_and_composition: 'Surface buildup',
-      atmosphere_and_mood: 'Freezing, preserved',
-      rendering_and_quality: 'Cold, winter',
-      key_features: 'Crystal growth',
+      aesthetic:
+        'Frozen/Frosted makes hand-feel and pressure visible across the image: start from Freezer burn, Crystalline, and Surface buildup, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Ice crystals: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use White, Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Sparkle define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Frozen/Frosted without hiding the prompt subject.',
+      texture_and_material:
+        'Render Crystalline through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Surface buildup as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Freezing, preserved by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Cold, winter material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Freezer burn; Ice crystals; Crystalline; Sparkle; Surface buildup',
       creative_brief:
-        'Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture the moment water becomes architecture. Use Frozen/Frosted as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Frozen/Frosted as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Compose the crystalline invasion of frost where ice crystals bloom in fern-like dendrites across surfaces, each branch a work of frozen mathematics growing outward from nucleation points. The surface must sparkle with the brittleness of extreme cold, white and blue whispering the language of winter across every crystalline edge. Capture the moment water becomes architecture. Use Frozen/Frosted as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-045',
     name: 'Felt Fabric',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'woven, shiny',
+    negativePrompt:
+      'woven, shiny, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Compressed wool',
-      subject_treatment: 'Fuzzy edge',
-      color_and_tone: 'Matte colors',
-      lighting_and_shadow: 'Soft absorption',
-      texture_and_material: 'Fuzzy, dense',
-      camera_and_composition: 'Compose for Felt Fabric using its key spatial cues: No weave.',
-      atmosphere_and_mood: 'Warm, craft',
-      rendering_and_quality: 'Craft, soft',
-      key_features: 'No weave',
+      aesthetic:
+        'Felt Fabric makes hand-feel and pressure visible across the image: start from Compressed wool, Fuzzy, dense, and No weave, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Fuzzy edge: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Matte colors as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Soft absorption define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Felt Fabric without hiding the prompt subject.',
+      texture_and_material:
+        'Render Fuzzy, dense through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around No weave as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Warm, craft by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Craft, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Compressed wool; Fuzzy edge; Fuzzy, dense; Soft absorption; No weave',
       creative_brief:
-        'Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness achieved through the pressure of becoming one. Use Felt Fabric as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Felt Fabric as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Summon the soft density of felted wool where fibers have surrendered individual identity to become a unified surface without weave or grain, matte colors absorbing light like powdered pigment painted onto compressed cloud. The fuzzy edge should dissolve into atmosphere without a defined boundary. Capture the warmth of compression, softness achieved through the pressure of becoming one. Use Felt Fabric as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-047',
     name: 'Fur (Synthetic)',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'real fur, skin',
+    negativePrompt:
+      'real fur, skin, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Faux fur coat',
-      subject_treatment: 'Uniform strands',
-      color_and_tone: 'Bright Pink/Blue',
-      lighting_and_shadow: 'Plastic sheen',
-      texture_and_material: 'Soft but synthetic',
+      aesthetic:
+        'Fur (Synthetic) makes hand-feel and pressure visible across the image: start from Faux fur coat, Soft but synthetic, and Uniform length, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Uniform strands: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Bright Pink/Blue as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Plastic sheen define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Fur (Synthetic) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Soft but synthetic through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
       camera_and_composition:
-        'Compose for Fur (Synthetic) using its key spatial cues: Uniform length.',
-      atmosphere_and_mood: 'Trendy, soft',
-      rendering_and_quality: 'Fashion, fun',
-      key_features: 'Uniform length',
+        'Compose around Uniform length as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Trendy, soft by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Fashion, fun material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features:
+        'Faux fur coat; Uniform strands; Soft but synthetic; Plastic sheen; Uniform length',
       creative_brief:
-        'Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Fur (Synthetic) as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Render the uniform plushness of faux fur in unnatural hues of pink or blue, where every identical strand is a manufactured messenger of softness, uniform in length and catching a faint plastic sheen that reveals the artifice. The density should invite the hand while the perfect regularity declares its synthetic nature. Capture the beauty of the proudly fake, comfort manufactured in Technicolor. Use Fur as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-050',
     name: 'Chalk (Dry)',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'wet paint',
+    negativePrompt:
+      'wet paint, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Sidewalk drawing',
-      subject_treatment: 'Dusty stroke',
-      color_and_tone: 'Pastel',
-      lighting_and_shadow: 'Matte',
-      texture_and_material: 'Powdery',
-      camera_and_composition: 'Smear',
-      atmosphere_and_mood: 'Playful, temporary',
-      rendering_and_quality: 'Temporary, dry',
-      key_features: 'Dust',
+      aesthetic:
+        'Chalk (Dry) makes hand-feel and pressure visible across the image: start from Sidewalk drawing, Powdery, and Smear, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Dusty stroke: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Pastel as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Matte define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Chalk (Dry) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Powdery through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Smear as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Playful, temporary by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Temporary, dry material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Sidewalk drawing; Dusty stroke; Powdery; Matte; Smear',
       creative_brief:
-        'Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust that hovers between presence and erasure, pastel color clinging to texture by the faintest of bonds. The mark should feel temporary and defiant, a streak of powdered joy that knows it will not survive the next breeze. Capture the beauty of the fugitive, art that accepts its own dissolution. Use Chalk as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Chalk (Dry) as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Render the powdery ephemera of dry chalk dragged across rough surface, leaving a trail of pigmented dust that hovers between presence and erasure, pastel color clinging to texture by the faintest of bonds. The mark should feel temporary and defiant, a streak of powdered joy that knows it will not survive the next breeze. Capture the beauty of the fugitive, art that accepts its own dissolution. Use Chalk as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-069',
     name: 'Fiberglass Insulation',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'cotton candy',
+    negativePrompt:
+      'cotton candy, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Pink wall insulation',
-      subject_treatment: 'Fibers',
-      color_and_tone: 'Pink',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Itchy glass fibers',
-      camera_and_composition: 'Fluffy batts',
-      atmosphere_and_mood: 'Unfinished, itchy',
-      rendering_and_quality: 'Construction, industrial',
-      key_features: 'Fiber direction',
+      aesthetic:
+        'Fiberglass Insulation makes hand-feel and pressure visible across the image: start from Pink wall insulation, Itchy glass fibers, and Fluffy batts, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Fibers: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Pink as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Fiberglass Insulation without hiding the prompt subject.',
+      texture_and_material:
+        'Render Itchy glass fibers through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Fluffy batts as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Unfinished, itchy by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Construction, industrial material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Pink wall insulation; Fibers; Itchy glass fibers; Soft; Fluffy batts',
       creative_brief:
-        'Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the in-between, construction paused in mid-reveal. Use Fiberglass Insulation as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Fiberglass Insulation as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall cavities. Render the beauty of the in-between, construction paused in mid-reveal. Use Fiberglass Insulation as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-074',
     name: 'Carpet (Shag)',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'berber, flat',
+    negativePrompt:
+      'berber, flat, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: '70s rug',
-      subject_treatment: 'Long fibers',
-      color_and_tone: 'Orange or Green',
-      lighting_and_shadow: 'Soft',
-      texture_and_material: 'Deep pile',
-      camera_and_composition: 'Matted',
-      atmosphere_and_mood: 'Cozy, retro',
-      rendering_and_quality: 'Retro, soft',
-      key_features: 'Messy pile',
+      aesthetic:
+        'Carpet (Shag) makes hand-feel and pressure visible across the image: start from 70s rug, Deep pile, and Matted, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Long fibers: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Orange or Green as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Carpet (Shag) without hiding the prompt subject.',
+      texture_and_material:
+        'Render Deep pile through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Matted as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Cozy, retro by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Retro, soft material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: '70s rug; Long fibers; Deep pile; Soft; Matted',
       creative_brief:
-        'Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the brazen comfort of retro rebellion. Use Carpet as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Carpet (Shag) as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Summon the deep pile of shag carpet in audacious orange or avocado green, where long nylon fibers create a landscape of matted valleys and tufted peaks that swallow light and sound with equal enthusiasm. The texture should feel like visual noise, a field of synthetic softness that invites bare feet and collects the ghosts of a decade. Capture the brazen comfort of retro rebellion. Use Carpet as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
   {
     id: 'SP09-075',
     name: 'Astroturf',
     category: '4. Tactile Surfaces',
-    negativePrompt: 'real grass',
+    negativePrompt:
+      'real grass, wrong material, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Fake grass',
-      subject_treatment: 'Plastic blades',
-      color_and_tone: 'Unnatural Green',
-      lighting_and_shadow: 'Plastic shine',
-      texture_and_material: 'Plastic strips',
-      camera_and_composition: 'Compose for Astroturf using its key spatial cues: Uniform height.',
-      atmosphere_and_mood: 'Fake, clean',
-      rendering_and_quality: 'Artificial, sports',
-      key_features: 'Uniform height',
+      aesthetic:
+        'Astroturf makes hand-feel and pressure visible across the image: start from Fake grass, Plastic strips, and Uniform height, then turn touch, softness, pile, fiber density, nap direction, compression, and hand-feel into portable surface behavior rather than a literal material sample.',
+      subject_treatment:
+        'Transform any prompt subject through Plastic blades: preserve identity and pose while letting forms compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface breakup, thickness, contact marks, and detail scale.',
+      color_and_tone:
+        "Use Unnatural Green as the material palette, with controlled value separation, local color variation, and hue shifts that follow the subject's form rather than flattening it into a pasted texture.",
+      lighting_and_shadow:
+        'Let Plastic shine define the light response: highlights, occlusion, translucency, specular scatter, matte falloff, or rim behavior should reveal Astroturf without hiding the prompt subject.',
+      texture_and_material:
+        'Render Plastic strips through fiber structure, tactile depth, soft occlusion, fuzz, pile direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or surface tension coherent across the whole image.',
+      camera_and_composition:
+        'Compose around Uniform height as reusable material rhythm: macro-friendly for texture tasks, but able to wrap objects, figures, environments, and props without forcing one sample view.',
+      atmosphere_and_mood:
+        "Keep the mood Fake, clean by using physical touch, comfort, irritation, warmth, dryness, and surface softness; the material should color the scene's feeling while preserving the user's requested subject and setting.",
+      rendering_and_quality:
+        'Finish with Artificial, sports material clarity: physically coherent reflectance, clean contact detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.',
+      key_features: 'Fake grass; Plastic blades; Plastic strips; Plastic shine; Uniform height',
       creative_brief:
-        'Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the aesthetics of the substitute, nature made reliable at the cost of its soul. Use Astroturf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.',
+        "Route any subject through Astroturf as a transferable tactile-surface visual system while preserving the prompt's subject, action, and setting. Render the uncanny uniformity of artificial turf where identical plastic blades stand in regimented rows of unnatural green, catching a plastic sheen that real grass would never yield under any sun. The surface should feel fake in its very perfection, a lawn that needs no water and holds no secrets. Capture the aesthetics of the substitute, nature made reliable at the cost of its soul. Use Astroturf as portable surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally appears.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

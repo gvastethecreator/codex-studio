@@ -12,26 +12,82 @@ tags:
   - fashion-and-costume
   - subcultures
 visualDna:
-  aesthetic: 50s rockabilly Americana, hot-rod romance, rebel polish
-  subject_treatment: Cuffed jeans, leather, motorcycle-jacket taper, pencil-skirt curve, victory-roll volume
-  color_and_tone: Black, Red, Denim, cherry-bomb red, indigo raw, chrome, ivory
-  lighting_and_shadow: Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare
-  texture_and_material: Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin
-  camera_and_composition: Pompadour hair
-  atmosphere_and_mood: Rebellious, fun, Saturday-night swagger, hot-rod adrenaline, soda-shop cool
-  rendering_and_quality: Retro, cool, Rockabilly jukebox, vintage-hot-rod spirit
-  key_features: Sailor-style ink cues, rolled sleeve logic, cuffed jeans, engineer boots, chrome-red contrast
+  aesthetic: >-
+    Rockabilly operates as a portable fashion-costume router: combine 50s rockabilly Americana,
+    hot-rod romance, rebel polish with subcultural dress-code logic with identity signals, music or
+    scene memory, attitude, and symbolic styling pressure, so the preset supplies styling behavior
+    rather than a fixed outfit card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms re-code, roughen, glamorize,
+    cuff, patch, distress, polish, exaggerate, or accessorize through Cuffed jeans, leather,
+    motorcycle-jacket taper, pencil-skirt curve, victory-roll volume; identity stays readable as
+    silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy shift into
+    this preset.
+  color_and_tone: >-
+    Map color through identity colors, denim or leather anchors, subculture accents, worn neutrals,
+    high-contrast trims, and era-coded saturation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Sunny chrome-gleam reflections, warm neon accent, afternoon-sun flare plus club, daylight,
+    editorial, neon, chrome, or DIY light cues that reveal texture and attitude without forcing a
+    venue as the styling light contract, revealing cut, drape, surface response, trim, transparency,
+    or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Horsehide leather, raw selvedge denim, cotton bandana, pomade shine, swallow-embroidered
+    satin plus denim, leather, cotton, lace, vinyl, boots, badges, knit, metal hardware, embroidery,
+    print, and worn textile history; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
+  camera_and_composition: >-
+    Compose with horsehide leather, cuffed denim, pomade gloss, victory-roll volume, swallow
+    embroidery, sailor-ink cues and chrome-red contrast plus attitude-led silhouette, accessory
+    grouping, dress-code readability, body-line rhythm, and reusable styling emphasis as reusable
+    fashion framing grammar, allowing portraits, objects, creatures, environments, action, and
+    abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through rebellion, nostalgia, romance, nightlife, softness, defiance, handmade
+    culture, or academic/intellectual taste; the tone should feel specific to Rockabilly while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with authentic subculture styling, material age, clear identity cues, and no
+    costume-party caricature unless requested; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    50s rockabilly Americana, hot-rod romance, rebel polish; Cuffed jeans, leather,
+    motorcycle-jacket taper, pencil-skirt curve, victory-roll volume; Horsehide leather, raw
+    selvedge denim, cotton bandana, pomade shine, swallow-embroidered satin; Sunny chrome-gleam
+    reflections, warm neon accent, afternoon-sun flare; horsehide leather, cuffed denim, pomade
+    gloss, victory-roll volume, swallow embroidery, sailor-ink cues and chrome-red contrast
   creative_brief: >-
-    Apply rockabilly Americana to the input: horsehide leather, cuffed denim, pomade gloss, victory-roll
-    volume, swallow embroidery, sailor-ink cues and chrome-red contrast. Keep hot-rod swagger without
-    requiring a diner, drag race, greaser portrait, pinup body, literal motorcycle/car or tattooed rebel
-    persona.
+    Use Rockabilly after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies 50s rockabilly
+    Americana, hot-rod romance, rebel polish, Cuffed jeans, leather, motorcycle-jacket taper,
+    pencil-skirt curve, victory-roll volume, Horsehide leather, raw selvedge denim, cotton bandana,
+    pomade shine, swallow-embroidered satin, Sunny chrome-gleam reflections, warm neon accent,
+    afternoon-sun flare, horsehide leather, cuffed denim, pomade gloss, victory-roll volume, swallow
+    embroidery, sailor-ink cues and chrome-red contrast plus signature layers, footwear cues, hair
+    volume, accessory codes, patches, hardware, textile wear, and stance-driven silhouette, palette
+    behavior, light response, material treatment, silhouette grammar, and finish discipline without
+    requiring one body type, fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - modern
+  - costume-party parody
+  - random trend mix
+  - brand-logo collage
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-024.webp
 attributes:
-  negativePrompt: modern
+  negativePrompt: >-
+    modern, costume-party parody, random trend mix, brand-logo collage, fixed outfit, required body
+    type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -13,37 +13,61 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Dustfront Drone Lament within 7. Mecha & Cyberpunk: a reusable Anime Battle & Worlds visual language with
-    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
-    across subjects while preserving Dustfront Drone Lament's specific style identity.
+    Dustfront Drone Lament acts as a transferable anime-battle/worlds router: Dustfront Drone
+    Lament; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware
+    logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles,
+    studios, or lineage words may guide style, but they must not require canon cast, title-scene
+    replication, screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Define Dustfront Drone Lament through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
+    Dustfront Drone Lament as portable contour, motion grammar, surface language, and emotional
+    pressure without requiring canon elements or a default action setup.
   color_and_tone: >-
-    Use a Dustfront Drone Lament-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Dustfront Drone Lament choose accent
+    intensity, value contrast, emotional temperature, and power-system separation while staying
+    attached to prompt X.
   lighting_and_shadow: >-
-    Use lighting that makes Dustfront Drone Lament recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Dustfront Drone Lament without replacing prompt X with a stock
+    anime frame.
   texture_and_material: >-
-    Use materials and textures that reinforce Dustfront Drone Lament: surface response, grain, patina, polish,
-    or wear should feel intentional and style-defining.
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Dustfront
+    Drone Lament controlled, denoised, and coherent across bodies, objects, environments,
+    abstractions, and action.
   camera_and_composition: >-
-    Use spatial behavior that fits Dustfront Drone Lament: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Dustfront Drone
+    Lament into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules
+    instead of one fixed style sample layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Dustfront Drone Lament: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
   rendering_and_quality: >-
-    Render Dustfront Drone Lament with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Prioritize Dustfront Drone Lament's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    Dustfront Drone Lament; armored contour, mechanical massing, modular joints, engineered surface
+    rhythm, scale cues, and human-machine pressure translated onto any subject; painted alloy,
+    ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and
+    digital bloom layers; scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime
+    finish with readable hardware, denoised glow, no plastic 3D render, and no cockpit/control-room
+    dependency
   creative_brief: >-
-    Create a style-card that translates Dustfront Drone Lament into a portable visual system for 7. Mecha &
-    Cyberpunk. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Apply Dustfront Drone Lament after prompt X as a transferable anime-battle/worlds layer: prompt
+    X supplies subject, action, setting, tone, and intensity, while this preset supplies Dustfront
+    Drone Lament, mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic,
+    neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish discipline, and
+    negative controls without forcing canon cast, title scene, screenshot, card pose, default
+    monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -57,12 +81,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-232.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, plastic 3d robot render, cockpit source-frame look,
+    readable UI panel, fixed canon character, title scene replication, required source-frame look,
+    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

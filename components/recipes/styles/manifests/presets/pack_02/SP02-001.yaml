@@ -12,32 +12,87 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: 1940s noir contrast
+  aesthetic: >-
+    Film Noir acts as a transferable cinematic-media router: start from 1940s noir contrast, Film
+    Noir lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color
+    grade, High contrast, slatted light, silver edge and cinematic genre system built from lens
+    grammar, film stock, blocking pressure, edit rhythm, production design, grain, and color grade,
+    then apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Film Noir: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
-    locking to one plot beat.
-  color_and_tone: Black and White, deep charcoal, silver highlights
-  lighting_and_shadow: Venetian blinds shadow, directional key, slatted light
-  texture_and_material: Film grain, silver gelatin, soft halation
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Film Noir: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1. Film
+    Genres cinematic and broadcast grammar without locking to one plot beat; preserve the requested
+    subject while staging it as filmed material through blocking, wardrobe pressure, lens distance,
+    movement cues, or genre-era performance texture only when useful, keeping the requested
+    identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Black and White, deep charcoal, silver highlights; treat color as cinema
+    process: film emulsion, lab timing, gel lighting, period stock response, genre grade, faded
+    print, or projection decay, with deliberate value grouping, accent control, and process-specific
+    limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Venetian blinds shadow, directional key, slatted light; make light feel
+    motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical
+    glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure
+    support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Film grain, silver gelatin, soft halation; surface detail should reveal film grain, gate
+    weave, scratches, halation, acetate texture, projection damage, optical compositing, or
+    photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler
+    texture.
   camera_and_composition: >-
-    Camera language native to Film Noir: genre-aware framing, lens character, focal hierarchy, motion cue, and
-    vertical style-card composition.
-  atmosphere_and_mood: Suspense, dark, moral ambiguity, shadow pressure
-  rendering_and_quality: Cinematic, moody, high-contrast, shadow-rich
-  key_features: High contrast, slatted light, silver edge
+    Structure the image through Camera language native to Film Noir: genre-aware framing, lens
+    designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    through lens choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease,
+    symmetrical staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy,
+    and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Suspense, dark, moral ambiguity, shadow pressure; derive mood from cinematic
+    tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or
+    analog spectacle, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Cinematic, moody, high-contrast, shadow-rich, finished Film Noir media craft with
+    clear process evidence and controlled detail; finish as credible moving-image language with
+    controlled film artifacts, readable subject identity, and no mandatory plot scene, franchise
+    copy, or fake caption text, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    1940s noir contrast, Film Noir lens grammar, film stock behavior, genre blocking, projection
+    texture, and cinematic color grade; High contrast, slatted light, silver edge; Black and White,
+    deep charcoal, silver highlights; Film grain, silver gelatin, soft halation; Camera language
+    native to Film Noir: genre-aware framing, lens designed subjects, focal hierarchy, motion cue,
+    and style-led vertical composition
   creative_brief: >-
-    Film noir turns any subject into silver-gelatin suspicion: venetian slat shadows, hard directional key,
-    deep charcoal blacks, wet-look highlights, and a silhouette cut by moral darkness. Keep 1940s crime mood
-    without forcing detective, city, sidewalk, cigarette, or femme fatale.
+    Apply Film Noir as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through 1940s noir contrast, Film Noir lens grammar, film stock behavior,
+    genre blocking, projection texture, and cinematic color grade, High contrast, slatted light,
+    silver edge, Film grain, silver gelatin, soft halation without requiring the card image's
+    original subject.
 avoidRules:
   - color
   - bright
   - happy
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-001.webp
 attributes:
-  negativePrompt: color, bright, happy
+  negativePrompt: >-
+    color, bright, happy, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise,
+    mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

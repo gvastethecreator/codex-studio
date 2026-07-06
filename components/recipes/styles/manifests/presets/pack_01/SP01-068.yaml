@@ -12,28 +12,79 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Newborn studio softness
-  subject_treatment: Curled gentle forms
-  color_and_tone: Cream, beige, soft
-  lighting_and_shadow: Window light
-  texture_and_material: Knitted softness, delicate surface
+  aesthetic: >-
+    Newborn Photography acts as a transferable photographic style router: begin from Newborn studio
+    softness, Resting tenderness, and portrait and studio photography system built from lens
+    discipline, subject hierarchy, controlled retouching, and believable surface detail, then apply
+    the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Curled gentle forms; preserve prompt identity while using focal
+    priority, flattering or deliberately institutional distance, surface realism, and edge control
+    without requiring a human face, keeping the original subject, pose, species, object, or
+    environment legible.
+  color_and_tone: >-
+    Grade with Cream, beige, soft; grade neutrals, skinlike or material tones, backdrop color,
+    cosmetic warmth, and controlled contrast as photographic capture decisions, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Window light; make key, fill, rim, catchlight, background falloff, and shadow shape visibly
+    drive the style, preserving believable exposure, shadow density, highlight rolloff, and source
+    motivation.
+  texture_and_material: >-
+    Render Knitted softness, delicate surface; retain pores, fabric, hair, props, paper, backdrop
+    sweep, and small surface imperfections at a believable photographic scale, avoiding both waxy
+    smoothing and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Newborn Photography: lens choice, crop distance, depth of field, and focal
-    hierarchy support 1. Portrait And Studio without generic framing.
-  atmosphere_and_mood: Tiny, fragile
-  rendering_and_quality: Peaceful studio tenderness
-  key_features: Resting tenderness
+    Compose through Newborn Photography studio subject hierarchy, controlled portrait optics,
+    believable retouching, and intentional backdrop behavior; use portrait lens compression, central
+    authority, intimate framing distance, frontal ID geometry, or editorial negative space without
+    forcing one sitter, with lens distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tiny, fragile; derive mood from proximity, pose pressure, institutional polish,
+    intimacy, ceremony, awkwardness, or studio control, so the preset changes interpretation without
+    demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Peaceful studio tenderness; finish as real photography with clean optics, plausible
+    retouching, readable focal hierarchy, and no painterly or CGI substitution, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Newborn studio softness; Resting tenderness; Cream, beige, soft; Window light; Newborn
+    Photography studio subject hierarchy, controlled portrait optics, believable retouching, and
+    intentional backdrop behavior
   creative_brief: >-
-    Newborn photography translates into ultra-soft cream/beige tenderness: window light, knitted texture,
-    curled gentle forms, shallow quiet, and fragile scale cues. Keep peaceful studio delicacy without
-    requiring babies, fingers, sleeping, blankets, or Anne Geddes staging.
+    Apply Newborn Photography as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Newborn studio softness, Cream, beige, soft, Window light, Knitted softness,
+    delicate surface, and Newborn Photography studio subject hierarchy, controlled portrait optics,
+    believable retouching, and intentional backdrop behavior through optics, exposure, palette,
+    surface response, timing, and finish without requiring the card image's original subject.
 avoidRules:
   - harsh
   - chaotic
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-068.webp
 attributes:
-  negativePrompt: harsh, chaotic
+  negativePrompt: >-
+    harsh, chaotic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, mannequin skin,
+    over-smoothed plastic retouching, distorted anatomy, generic beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

@@ -12,32 +12,92 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle
-  subject_treatment: Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry
-  color_and_tone: Bright synthetic colors, candy-neon saturation, cell-shaded contrast, vibrant cel hues
-  lighting_and_shadow: Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim
-  texture_and_material: Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing, holographic spandex
+  aesthetic: >-
+    Convention Craft Costume operates as a portable fashion-costume router: combine Convention-grade
+    costume craft, stylized transformation energy, handmade fabrication spectacle with speculative
+    costume logic with armor, suit engineering, magical garment behavior, alien proportion, and
+    character-readability design, so the preset supplies styling behavior rather than a fixed outfit
+    card, required wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
+    illuminate, conceal, mutate, modularize, ritualize, or engineer through Exaggerated contour
+    blocking, modular trim logic, foam-armor segmentation, accessory-scale geometry; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through speculative material color, neon accents, abyssal values, royal metals,
+    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Controlled craft lighting, colored gel accents, fabrication highlights and theatrical rim
+    plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or
+    sci-fi display light as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing,
+    holographic spandex plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
+    hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
   camera_and_composition: >-
-    Compose for Convention Craft Costume using its key spatial cues: Styled fiber sheen, foam seam lines,
-    thermoplastic edgework, modular accessory detailing.
-  atmosphere_and_mood: Playful, fabricated, convention-floor pride, handmade spectacle
-  rendering_and_quality: Detailed, playful, craftsmanship-forward, competition-grade finish
-  key_features: Styled fiber sheen, foam seam lines, thermoplastic edgework, modular accessory detailing
+    Compose with Compose for Convention Craft Costume using its key spatial cues: Styled fiber
+    sheen, foam seam lines, thermoplastic edgework, modular accessory detailing plus
+    character-design readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and
+    transformation focus as reusable fashion framing grammar, allowing portraits, objects,
+    creatures, environments, action, and abstract prompts to inherit styling without one required
+    pose.
+  atmosphere_and_mood: >-
+    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
+    spectacle, or mythic futurism; the tone should feel specific to Convention Craft Costume while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
+    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle;
+    Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale
+    geometry; Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing,
+    holographic spandex; Controlled craft lighting, colored gel accents, fabrication highlights and
+    theatrical rim; Compose for Convention Craft Costume using its key spatial cues: Styled fiber
+    sheen, foam seam lines, thermoplastic edgework, modular accessory detailing
   creative_brief: >-
-    Translate the input into polished cosplay craft language: styled synthetic fiber, EVA and Worbla seam
-    logic, thermoplastic edgework, holographic stretch surfaces and exaggerated convention-build clarity. Keep
-    transformation as fabrication energy, not as a named character, replica pose, portrait body or
-    convention-hall scene.
+    Use Convention Craft Costume after prompt X as a transferable fashion/costume layer: prompt X
+    supplies subject, motion, setting, tone, and intensity, while the preset supplies
+    Convention-grade costume craft, stylized transformation energy, handmade fabrication spectacle,
+    Exaggerated contour blocking, modular trim logic, foam-armor segmentation, accessory-scale
+    geometry, Heat-resistant wig fiber, EVA foam armor with Worbla overlay, thermoplastic detailing,
+    holographic spandex, Controlled craft lighting, colored gel accents, fabrication highlights and
+    theatrical rim, Compose for Convention Craft Costume using its key spatial cues: Styled fiber
+    sheen, foam seam lines, thermoplastic edgework, modular accessory detailing plus paneling,
+    harnesses, armor modules, robe systems, implant seams, luminous channels, survival layers, and
+    invented fastenings, palette behavior, light response, material treatment, silhouette grammar,
+    and finish discipline without requiring one body type, fixed outfit, venue, prop bundle, or card
+    composition.
 avoidRules:
   - licensed-character replica
   - low-effort costume
   - flat convention snapshot
+  - generic cosplay
+  - plastic toy armor
+  - muddy fantasy outfit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-015.webp
 attributes:
   negativePrompt: >-
-    licensed-character replica, low-effort costume, flat convention snapshot, named character, franchise cues,
-    logos
+    licensed-character replica, low-effort costume, flat convention snapshot, generic cosplay,
+    plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene,
+    generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

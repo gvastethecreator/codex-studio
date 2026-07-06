@@ -12,30 +12,59 @@ tags:
   - texture-and-materiality
   - elemental-and-fx
 visualDna:
-  aesthetic: Nickelodeon slime
-  subject_treatment: Drips
-  color_and_tone: Neon Green
-  lighting_and_shadow: Wet gloss
-  texture_and_material: Viscous liquid
-  camera_and_composition: Melting
-  atmosphere_and_mood: Playful, sticky
-  rendering_and_quality: Gross, fun
-  key_features: Drips
+  aesthetic: >-
+    Slime/Goo behaves like a controlled elemental effect layer: start from Nickelodeon slime,
+    Viscous liquid, and Melting, then turn motion, temperature, particles, translucency, refraction,
+    glow, and transient energy behavior into portable surface behavior rather than a literal
+    material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Drips: preserve identity and pose while letting forms emit,
+    flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup,
+    thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Neon Green as the material palette, with controlled value separation, local color variation,
+    and hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Wet gloss define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Slime/Goo without hiding the prompt subject.
+  texture_and_material: >-
+    Render Viscous liquid through flow direction, particle density, turbulence, glow falloff,
+    splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores,
+    or surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Melting as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Playful, sticky by using movement, danger, spectacle, instability, temperature,
+    and sensory intensity; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Gross, fun material clarity: physically coherent reflectance, clean contact detail,
+    controlled micro-texture, readable silhouette behavior, and no noisy stock-texture overlay.
+  key_features: Nickelodeon slime; Drips; Viscous liquid; Wet gloss; Melting
   creative_brief: >-
-    Render the viscous theater of neon slime oozing in thick rivulets of impossible green, where surface
-    tension pulls the liquid into glossy drips and stretched membranes that catch wet highlights at every
-    curve. The goo should feel simultaneously gross and delightful, a contradiction of texture made spectacle
-    in lurid color. Capture the aesthetics of controlled mess, the sublime in the sticky and absurd. Use
-    Slime/Goo as portable surface/render behavior over any input: map its texture, light response, edge wear,
-    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Route any subject through Slime/Goo as a transferable elemental/FX visual system while
+    preserving the prompt's subject, action, and setting. Render the viscous theater of neon slime
+    oozing in thick rivulets of impossible green, where surface tension pulls the liquid into glossy
+    drips and stretched membranes that catch wet highlights at every curve. The goo should feel
+    simultaneously gross and delightful, a contradiction of texture made spectacle in lurid color.
+    Capture the aesthetics of controlled mess, the sublime in the sticky and absurd. Use Slime/Goo
+    as portable surface/render behavior over any input: map its texture, light response, edge wear,
+    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material
+    sample, macro tile, wall, landscape, source object, or scene where the material naturally
+    appears.
 avoidRules:
   - solid
   - dry
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-043.webp
 attributes:
-  negativePrompt: solid, dry
+  negativePrompt: solid, dry, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

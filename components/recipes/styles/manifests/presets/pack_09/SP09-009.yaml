@@ -13,30 +13,59 @@ tags:
   - texture-and-materiality
   - natural-materials
 visualDna:
-  aesthetic: Smooth pebbles
-  subject_treatment: Rounded shapes
-  color_and_tone: Multi-colored grey/brown
-  lighting_and_shadow: Wet gloss
-  texture_and_material: Smooth, wet
-  camera_and_composition: Rounded
-  atmosphere_and_mood: Calm, wet
-  rendering_and_quality: Riverbed, zen
-  key_features: Pile
+  aesthetic: >-
+    River Stones translates natural material behavior into form: start from Smooth pebbles, Smooth,
+    wet, and Rounded, then turn natural formation, growth, erosion, and geological or biological
+    irregularity into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Rounded shapes: preserve identity and pose while letting
+    forms grow, erode, polish, fracture, or soften through edge profile, surface breakup, thickness,
+    contact marks, and detail scale.
+  color_and_tone: >-
+    Use Multi-colored grey/brown as the material palette, with controlled value separation, local
+    color variation, and hue shifts that follow the subject's form rather than flattening it into a
+    pasted texture.
+  lighting_and_shadow: >-
+    Let Wet gloss define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal River Stones without hiding the prompt subject.
+  texture_and_material: >-
+    Render Smooth, wet through organic variation, non-repeating edge wear, local pores, growth
+    marks, and natural scale shifts; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Rounded as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Calm, wet by using age, weather, habitat pressure, and sensory association; the
+    material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Riverbed, zen material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Smooth pebbles; Rounded shapes; Smooth, wet; Wet gloss; Rounded
   creative_brief: >-
-    Compose a meditation on smoothness earned through millennia of water's patient persuasion, each pebble a
-    portrait of surrender whose edges dissolved into curves by the relentless kindness of current. Wet gloss
-    should catch the light like a thin skin of memory, reflecting sky where stone once resisted. Render the
-    quiet wisdom of the tumbled, the beauty of edges long since forgiven. Use River Stones as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Route any subject through River Stones as a transferable natural-material visual system while
+    preserving the prompt's subject, action, and setting. Compose a meditation on smoothness earned
+    through millennia of water's patient persuasion, each pebble a portrait of surrender whose edges
+    dissolved into curves by the relentless kindness of current. Wet gloss should catch the light
+    like a thin skin of memory, reflecting sky where stone once resisted. Render the quiet wisdom of
+    the tumbled, the beauty of edges long since forgiven. Use River Stones as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - jagged
   - dry
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-009.webp
 attributes:
-  negativePrompt: jagged, dry
+  negativePrompt: jagged, dry, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

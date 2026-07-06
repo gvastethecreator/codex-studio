@@ -12,27 +12,77 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: Generic corporate stock polish
-  subject_treatment: Clean
-  color_and_tone: Bright, blue tint
-  lighting_and_shadow: Bright institutional soft light
-  texture_and_material: Clean
-  camera_and_composition: Sanitized sameness
-  atmosphere_and_mood: Professional, fake
-  rendering_and_quality: Generic, safe
-  key_features: Safe generic optimism
+  aesthetic: >-
+    Corporate Stock Photo acts as a transferable photographic style router: begin from Generic
+    corporate stock polish, Safe generic optimism, and commercial photographic system built from
+    sellable clarity, controlled studio craft, material desirability, and brand-neutral polish, then
+    apply the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Clean; preserve prompt identity while making silhouette,
+    surface, freshness, scale, and product-like value immediately readable, keeping the original
+    subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Bright, blue tint; use palette as campaign control: clean whites, luxury neutrals,
+    appetite warmth, cool tech accents, automotive reflections, or interior harmony, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Bright institutional soft light; shape light with softboxes, reflectors, rim lines, HDR
+    fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Clean; render metal, glass, fabric, food surface, condensation, cosmetic gel,
+    architecture finish, and clean contact shadows with precise detail, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Sanitized sameness; compose for catalog clarity, top-down order, hero
+    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Professional, fake; derive mood from appetite, trust, luxury, engineering,
+    cleanliness, freshness, aspiration, or frictionless retail function, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Generic, safe; finish with professional photo polish, accurate material response,
+    clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Generic corporate stock polish; Safe generic optimism; Bright, blue tint; Bright institutional
+    soft light; Sanitized sameness
   creative_brief: >-
-    Corporate stock polish sanitizes any subject into universally legible optimism: bright institutional
-    light, cool-blue tint, clean surfaces, centered clarity, and riskless professional sameness. Keep generic
-    boardroom-safe visual language without requiring workers, smiles, handshakes, or office setting.
+    Apply Corporate Stock Photo as a photographic preset over prompt X: preserve the user's
+    requested subject, then route Generic corporate stock polish, Bright, blue tint, Bright
+    institutional soft light, Clean, and Sanitized sameness through optics, exposure, palette,
+    surface response, timing, and finish without requiring the card image's original subject.
 avoidRules:
   - sad
   - dark
   - weird
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - fake brand logo
+  - messy clutter
+  - dirty product surface
+  - unreadable labels
+  - cheap stock layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-062.webp
 attributes:
-  negativePrompt: sad, dark, weird
+  negativePrompt: >-
+    sad, dark, weird, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic
+    CGI, plastic render, watermark, readable text, signature, low resolution, fake brand logo, messy
+    clutter, dirty product surface, unreadable labels, cheap stock layout
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

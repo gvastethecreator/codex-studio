@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP15-046
 packId: pack_15
-name: Warehouse Rave Clinic
+name: Rave Care Systems
 category: 6. Street, Riot & DIY Punks
 version: 1
 supportedTasks:
@@ -15,34 +15,54 @@ tags:
   - mutual-care
 visualDna:
   aesthetic: >-
-    ravepunk mutual care as a flat graphic digital-illustration card built around a rave-adjacent care clinic
-    inside a warehouse with care tables, dancers, lasers, and hydration rigs.
+    Rave Care Systems operates as a portable punk-spectrum router: combine Rave Care Systems
+    identity cues through hydration rigs; care lamps; laser bands; foil blanket shapes; vinyl
+    planes; Ravepunk mutual-care poster language built from hydration-rig blocks with DIY
+    public-punk grammar with pasted graphics, generator motion, barricade voltage, scrapbike cargo,
+    rave care, patch pressure, and mutual-aid pragmatism, so the preset supplies retrofit style
+    behavior rather than a required venue, mascot, prop bundle, or card composition.
   subject_treatment: >-
-    Handmade graphics, patched clothes, improvised machines, crew energy, protest rhythm, and rough edges.
-    Core composition uses care tables, dancers, hydration rigs, lasers, warehouse columns.
-  color_and_tone: laser green, violet, white vinyl, concrete gray
-  lighting_and_shadow: laser haze, soft clinic lamps, strobe traces, exit-light red
-  texture_and_material: vinyl cot planes, concrete columns, foil blanket shape, plastic water-tank blocks, matte laser bands
+    Preserve prompt X's subject, action, scale, and setting while translating forms through
+    paste-layer edges, cable-tied equipment, plywood planes, sticker stacks, patch geometry,
+    generator vibration, cargo straps, and care-station clarity; motifs can become contour, surface,
+    costume, equipment, atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through photocopy black, paper cream, magenta voltage, plywood brown, laser green,
+    concrete gray, sticker reds, and electric blue accents; keep dominant, support, and accent
+    values readable, avoid muddy black, and let palette code materials, signals, climate, ritual,
+    salvage, or repair pressure.
+  lighting_and_shadow: >-
+    Use portable floodlight, screen glow, welding spark, sodium haze, laser slices, generator glare,
+    and sticker-gloss highlights; lighting should reveal the punk system, preserve the user's
+    subject, separate near and distant value planes, and avoid crushed blacks or noisy dark texture.
+  texture_and_material: >-
+    Render torn paper, tape, plywood, cable ties, vinyl stickers, patched fabric, bike metal,
+    plastic crates, and concrete scuffs; keep material scale coherent, surface marks motivated, and
+    tactile details strong enough to route style without becoming pasted grunge.
   camera_and_composition: >-
-    Safehouses, skateparks, warehouses, booths, yards, clinics, and shared kitchens with visible use. Keep
-    depth legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: protective, nocturnal, pulsing, communal
+    Compose through layered poster rhythm, improvised equipment paths, tight public pressure, cargo
+    diagonals, and bold subject hierarchy without crowd dependency as reusable framing grammar for
+    characters, creatures, objects, vehicles, environments, symbols, or full scenes without one
+    required card layout.
+  atmosphere_and_mood: >-
+    Carry mood through scrappy defiance, communal protection, loud improvisation, nocturnal urgency,
+    practical care, and hand-built resistance; the tone may become adult, romantic, violent, comic,
+    sensual, eerie, civic, or strange when prompt X asks, while the punk family remains legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: care tables, dancers, hydration rigs, lasers, warehouse columns
+    Finish with graphic DIY-punk illustration with readable paste layers, controlled grit, large
+    value blocks, and no generic riot-photo realism; prioritize clean denoise, bold readable shapes,
+    controlled grit, prompt preservation, no watermark, no readable text, and no generic concept-art
+    polish.
+  key_features: >-
+    hydration rigs; care lamps; laser bands; foil blanket shapes; vinyl planes; Ravepunk mutual-care
+    poster language built from hydration-rig blocks
   creative_brief: >-
-    Ravepunk but humane: music, care, hydration, med tables, and people, not just abstract neon haze. Keep it
-    representative through warehouse mutual-care corner, one care table, helper/dancer silhouettes in plain
-    clothes, hydration rig blocks, foil blanket shape, soft clinic lamp circles, laser green/violet bands,
-    concrete column planes, and blank exit-red accent. Favor flat graphic digital illustration, clean
-    editorial illustration, cel-shaded poster art, gouache poster aesthetics, graphic-novel card art, or
-    stylized animation-background art over realism, photoreal painterly realism, cinematic key art, scratchy
-    print noise, or hyper-detailed concept art. Use few bold color/value zones, simplified brush planes, matte
-    surfaces, low-to-moderate texture, large shapes, clean surfaces, shallow poster depth, and finish denoised
-    with no excessive noise or ultra-fine detail.
+    Use Rave Care Systems after prompt X as a transferable punk-spectrum layer: prompt X supplies
+    subject, action, setting, tone, and intensity, while the preset supplies hydration rigs, care
+    lamps, laser bands, foil blanket shapes, vinyl planes, Ravepunk mutual-care poster language
+    built from hydration-rig blocks, color logic, light response, material behavior, composition
+    rhythm, mood pressure, and finish discipline without requiring a fixed venue, fixed cast, fixed
+    machine, repeated prop bundle, or sample-card composition.
 avoidRules:
   - photoreal
   - watermark
@@ -53,26 +73,39 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - riot-photo realism
+  - random crowd chaos
+  - brand-logo sticker collage
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-046.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key art,
-    cinematic concept-art render, photobash polish, realistic material rendering, photographic skin pores,
-    realistic foreground portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
-    generic soldier hero, guard pin-up, weapon-first pose, skull patch, cross emblem, medical logo, jacket
-    symbol, readable marks, medical emergency gore, syringe hero, fetish clinic pose, nightclub glamour crowd,
-    drug-use scene, empty laser tunnel, readable exit sign, readable text, warehouse corridor, photoreal
-    smoke, photoreal laser haze, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed
-    concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style,
-    over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle,
-    unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
-    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
-    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
-    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
-    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
-    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
-    fields, generic American illustration, generic Western RPG card art
+    photoreal, hyperreal, realistic render, photoreal painterly realism, cinematic realism, AAA key
+    art, cinematic concept-art render, photobash polish, realistic material rendering, photographic
+    skin pores, realistic near-plane portrait, realistic facial hair detail, lens blur, bokeh,
+    depth-of-field photo look, generic soldier hero, guard pin-up, weapon-first pose, skull patch,
+    cross emblem, medical logo, jacket symbol, readable marks, medical emergency gore, syringe hero,
+    fetish clinic pose, nightclub glamour crowd, drug-use scene, empty laser tunnel, readable exit
+    sign, readable text, warehouse corridor, photoreal smoke, photoreal laser haze, HDR lens
+    realism, 3D render look, PBR material simulation, hyper-detailed concept art, scratchy print
+    noise, tiny black linework, watermark, text, logo, generic style, over-abstract, interchangeable
+    preset, duplicated motifs, generic glass utopia, unmotivated commerce-system aisle, unmotivated
+    library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
+    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation,
+    excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy
+    grime, tiny rivets everywhere, busy texture chatter, realistic uniform portrait, uniformed
+    officer hero, near-plane guard portrait, detailed tattoo focus, dense machinery wallpaper,
+    overcrowded scene, high-frequency surface detail, cinematic close-up portrait, flat black fill,
+    crushed black, pure black masses, muddy black fields, generic American illustration, generic
+    Western RPG card art, repeated-props, riot-photo realism, random crowd chaos, brand-logo sticker
+    collage, fixed punk venue, required mascot, literal sample-card setup, repeated prop bundle,
+    prompt-literal card reuse, generic cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

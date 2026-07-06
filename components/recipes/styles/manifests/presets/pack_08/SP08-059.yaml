@@ -12,25 +12,86 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Transparent plastic fashion, weather-ready futurism, clear-shell chic
-  subject_treatment: Highlights, trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc
-  color_and_tone: Clear, tint, optic-clear, smoked-grey, amber-tint, cyan, translucent-white, rose
-  lighting_and_shadow: Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion
-  texture_and_material: Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC
-  camera_and_composition: See-through
-  atmosphere_and_mood: Wet, tech, downpour-preparedness, future-commute cool, clear-shell precision
-  rendering_and_quality: Waterproof, modern, wet-weather editorial, transparent-tech sophistication
-  key_features: Transparency, heat-sealed seams, layered visibility, rain droplets, reflective trim
+  aesthetic: >-
+    Transparent Plastic operates as a portable fashion-costume router: combine Transparent plastic
+    fashion, weather-ready futurism, clear-shell chic with material-forward fashion transformation
+    with drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Highlights,
+    trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Reflective wet-surface glare, rain-streak catchlights, refraction highlights, overcast
+    diffusion plus material-revealing light with gloss, rim, translucency, sparkle, subsurface,
+    matte falloff, or volumetric separation as the styling light contract, revealing cut, drape,
+    surface response, trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Clear vinyl, TPU film, heat-sealed seams, nylon webbing, rubberized zipper, transparent
+    PVC plus fabric grain, fur, chain, knit, satin, lace, leather, polymer, smoke, water, fire, gel,
+    gold leaf, stone, or skin surface; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
+  camera_and_composition: >-
+    Compose with drape rhythm, material coverage, silhouette clarity, tactile close detail, fold
+    direction, and transformation edge control as reusable fashion framing grammar, allowing
+    portraits, objects, creatures, environments, action, and abstract prompts to inherit styling
+    without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Transparent Plastic
+    while still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Transparent plastic fashion, weather-ready futurism, clear-shell chic; Highlights,
+    trans-seasonal trench, A-line volume, drawstring-waist cinch, hood-frame arc; Clear vinyl, TPU
+    film, heat-sealed seams, nylon webbing, rubberized zipper, transparent PVC; Reflective
+    wet-surface glare, rain-streak catchlights, refraction highlights, overcast diffusion; drape
+    rhythm, material coverage, silhouette clarity, tactile close detail, fold direction, and
+    transformation edge control
   creative_brief: >-
-    Wrap the input in transparent plastic logic: clear TPU, heat-sealed seams, layered visibility, refraction,
-    rain beads, smoked tint and reflective trim. Keep weather-ready futurism without requiring a raincoat
-    wearer, streetlamp, downpour scene or commute.
+    Use Transparent Plastic after prompt X as a transferable fashion/costume layer: prompt X
+    supplies subject, motion, setting, tone, and intensity, while the preset supplies Transparent
+    plastic fashion, weather-ready futurism, clear-shell chic, Highlights, trans-seasonal trench,
+    A-line volume, drawstring-waist cinch, hood-frame arc, Clear vinyl, TPU film, heat-sealed seams,
+    nylon webbing, rubberized zipper, transparent PVC, Reflective wet-surface glare, rain-streak
+    catchlights, refraction highlights, overcast diffusion, drape rhythm, material coverage,
+    silhouette clarity, tactile close detail, fold direction, and transformation edge control plus
+    weave, pile, grain, shine, translucency, opacity, stretch, wrap, seam tension, edge behavior,
+    and surface continuity, palette behavior, light response, material treatment, silhouette
+    grammar, and finish discipline without requiring one body type, fixed outfit, venue, prop
+    bundle, or card composition.
 avoidRules:
   - opaque
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-059.webp
 attributes:
-  negativePrompt: opaque
+  negativePrompt: >-
+    opaque, generic fabric texture, muddy surface noise, wrong material physics, fixed outfit,
+    required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark,
+    readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

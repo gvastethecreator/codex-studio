@@ -12,26 +12,63 @@ tags:
   - abstract-and-experimental
   - diagram-and-data-systems
 visualDna:
-  aesthetic: Chalk on blackboard
-  subject_treatment: Dusty, variable width
-  color_and_tone: White, Pastel on Black
-  lighting_and_shadow: Flat
-  texture_and_material: Chalk dust, slate
-  camera_and_composition: Smudged
-  atmosphere_and_mood: Casual, hand drawn
-  rendering_and_quality: Temporary, hand-drawn
-  key_features: Black background
+  aesthetic: >-
+    Chalkboard Art becomes a transferable diagram and information-graphic system: start from Chalk
+    on blackboard, Black background, and Smudged, then route prompt content through schematic paths,
+    encoded blocks, contour logic, technical marks, and data-like organization without forcing one
+    card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Dusty, variable width to map, route, blueprint,
+    annotate, contour, grid, or encode prompt subjects as information structure; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from White, Pastel on Black; use palette as functional coding: substrate,
+    traces, line hierarchy, contrast fields, or chalk/paper logic, with enough value control that
+    the subject remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: keep light diagrammatic, flat, backlit, chalky, or technical
+    so structure remains readable, avoiding generic glamour lighting unless the prompt explicitly
+    asks for it.
+  texture_and_material: >-
+    Render Chalk dust, slate as the tactile or mark-making basis; marks should feel like ink, chalk,
+    copper, pixels, contour lines, drafting strokes, or printed substrate, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Smudged as reusable spatial grammar: favor legible routes, modules, legends
+    without readable text, edge registration, grids, and information density, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Casual, hand drawn as the emotional register; derive mood from analysis, navigation,
+    computation, instruction, secrecy, or handmade classroom energy, without flattening strong,
+    strange, darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Temporary, hand-drawn: finish with clean information hierarchy, exact line weight,
+    and no random label soup, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Chalk on blackboard; Dusty, variable width; White, Pastel on Black; Flat; Chalk dust, slate;
+    Smudged; Casual, hand drawn; Temporary, hand-drawn; Black background
   creative_brief: >-
-    Apply chalkboard dust to the input: slate-dark grounds, soft powder strokes, smudged edges, erasable
-    residue, and hand-drawn instructional marks without readable text should make forms feel temporary and
-    tactile.
+    Route any subject through Chalkboard Art as a transferable diagram or data-graphic visual
+    system: preserve prompt intent while converting structure, modules, paths, grids, marks, and
+    information rhythm through this preset. Apply chalkboard dust to the input: slate-dark grounds,
+    soft powder strokes, smudged edges, erasable residue, and hand-drawn instructional marks without
+    readable text should make forms feel temporary and tactile.
 avoidRules:
   - pen
   - ink
+  - random text labels
+  - unreadable diagram clutter
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-077.webp
 attributes:
-  negativePrompt: pen, ink
+  negativePrompt: >-
+    pen, ink, random text labels, unreadable diagram clutter, literal card scene, style-card
+    boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

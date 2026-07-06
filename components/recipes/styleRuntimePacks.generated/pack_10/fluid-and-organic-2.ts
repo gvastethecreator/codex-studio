@@ -7,55 +7,85 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-011',
     name: 'Alcohol Ink',
     category: '2. Fluid & Organic',
-    negativePrompt: 'solid, dry',
+    negativePrompt:
+      'solid, dry, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Fluid painting',
-      subject_treatment: 'Hard drying edges',
-      color_and_tone: 'Translucent, vibrant',
-      lighting_and_shadow: 'Backlit',
-      texture_and_material: 'Fluid dynamics',
-      camera_and_composition: 'Liquid',
-      atmosphere_and_mood: 'Dreamy, fluid',
-      rendering_and_quality: 'Abstract art, flow',
-      key_features: 'Gold veins',
+      aesthetic:
+        'Alcohol Ink becomes a transferable fluid and organic behavior system: start from Fluid painting, Gold veins, and Liquid, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Hard drying edges to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Translucent, vibrant; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Backlit drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Fluid dynamics as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Liquid as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Dreamy, fluid as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Abstract art, flow: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Fluid painting; Hard drying edges; Translucent, vibrant; Backlit; Fluid dynamics; Liquid; Dreamy, fluid; Abstract art, flow; Gold veins',
       creative_brief:
-        'Apply alcohol-ink bloom to the input: translucent pigment clouds, solvent halos, soft feathered borders, and luminous color pooling should dissolve surfaces while keeping enough contour to recognize the prompt.',
+        'Route any subject through Alcohol Ink as a transferable fluid or organic process visual system: preserve prompt intent while converting form, surface tension, flow, translucency, edge softness, and material motion through this preset. Apply alcohol-ink bloom to the input: translucent pigment clouds, solvent halos, soft feathered borders, and luminous color pooling should dissolve surfaces while keeping enough contour to recognize the prompt.',
     },
   },
   {
     id: 'SP10-012',
     name: 'Smoke Photography',
     category: '2. Fluid & Organic',
-    negativePrompt: 'hard-edged clutter',
+    negativePrompt:
+      'hard-edged clutter, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Wisps of smoke',
-      subject_treatment: 'Soft curves',
-      color_and_tone: 'White on Black or Colored',
-      lighting_and_shadow: 'Studio flash',
-      texture_and_material: 'Gaseous',
-      camera_and_composition: 'Turbulence',
-      atmosphere_and_mood: 'Mysterious, ephemeral',
-      rendering_and_quality: 'High speed photo',
-      key_features: 'Black background',
+      aesthetic:
+        'Smoke Photography becomes a transferable fluid and organic behavior system: start from Wisps of smoke, Black background, and Turbulence, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Soft curves to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from White on Black or Colored; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Studio flash drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Gaseous as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Turbulence as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Mysterious, ephemeral as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as High speed photo: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Wisps of smoke; Soft curves; White on Black or Colored; Studio flash; Gaseous; Turbulence; Mysterious, ephemeral; High speed photo; Black background',
       creative_brief:
-        'Apply smoke-photography logic as a transform over the input with soft tendrils, studio-flash rim light, turbulence trails, and black-background contrast. Preserve subject legibility as vapor silhouette or contour when useful; do not replace the prompt with empty smoke unless abstraction is requested.',
+        'Route any subject through Smoke Photography as a transferable fluid or organic process visual system: preserve prompt intent while converting form, surface tension, flow, translucency, edge softness, and material motion through this preset. Apply smoke-photography logic as a transform over the input with soft tendrils, studio-flash rim light, turbulence trails, and black-background contrast. Preserve subject legibility as vapor silhouette or contour when useful; do not replace the prompt with empty smoke unless abstraction is requested.',
     },
   },
   {
     id: 'SP10-013',
     name: 'Oil Slick',
     category: '2. Fluid & Organic',
-    negativePrompt: 'matte, dull',
+    negativePrompt:
+      'matte, dull, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Iridescent liquid',
-      subject_treatment: 'Swirls',
-      color_and_tone: 'Rainbow metallic',
-      lighting_and_shadow: 'Reflective',
-      texture_and_material: 'Liquid surface',
-      camera_and_composition: 'Fluid',
-      atmosphere_and_mood: 'Psychedelic, toxic',
-      rendering_and_quality: 'Abstract, texture',
-      key_features: 'Rainbow sheen',
+      aesthetic:
+        'Oil Slick becomes a transferable fluid and organic behavior system: start from Iridescent liquid, Rainbow sheen, and Fluid, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Swirls to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Rainbow metallic; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Reflective drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Liquid surface as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Fluid as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Psychedelic, toxic as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Abstract, texture: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Iridescent liquid; Swirls; Rainbow metallic; Reflective; Liquid surface; Fluid; Psychedelic, toxic; Abstract, texture; Rainbow sheen',
       creative_brief:
         'Apply oil-slick interference to the input: thin-film rainbow sheens, black wet depth, shifting magenta-cyan-gold highlights, and surface-angle color flips should make any subject feel iridescent and contaminated.',
     },
@@ -64,36 +94,56 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-014',
     name: 'Macro Bubble',
     category: '2. Fluid & Organic',
-    negativePrompt: 'flat',
+    negativePrompt:
+      'flat, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Soap film close up',
-      subject_treatment: 'Cell walls',
-      color_and_tone: 'Interference colors',
-      lighting_and_shadow: 'Reflective',
-      texture_and_material: 'Liquid',
-      camera_and_composition: 'Spherical',
-      atmosphere_and_mood: 'Delicate, colorful',
-      rendering_and_quality: 'Scientific, beautiful',
-      key_features: 'Surface tension',
+      aesthetic:
+        'Macro Bubble becomes a transferable fluid and organic behavior system: start from Soap film close up, Surface tension, and Spherical, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Cell walls to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Interference colors; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Reflective drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Liquid as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Spherical as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Delicate, colorful as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Scientific, beautiful: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Soap film close up; Cell walls; Interference colors; Reflective; Liquid; Spherical; Delicate, colorful; Scientific, beautiful; Surface tension',
       creative_brief:
-        'Apply macro-bubble optics to the input: fragile film domes, rainbow interference, curved reflections, meniscus edges, and magnified surface tension should transform forms into delicate optical membranes.',
+        'Route any subject through Macro Bubble as a transferable fluid or organic process visual system: preserve prompt intent while converting form, surface tension, flow, translucency, edge softness, and material motion through this preset. Apply macro-bubble optics to the input: fragile film domes, rainbow interference, curved reflections, meniscus edges, and magnified surface tension should transform forms into delicate optical membranes.',
     },
   },
   {
     id: 'SP10-015',
     name: 'Mycelium Network',
     category: '2. Fluid & Organic',
-    negativePrompt: 'man made, straight lines',
+    negativePrompt:
+      'man made, straight lines, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Fungal roots',
-      subject_treatment: 'Webbing',
-      color_and_tone: 'White, earthy',
-      lighting_and_shadow: 'Subsurface scattering',
-      texture_and_material: 'Fuzzy, organic',
-      camera_and_composition: 'Branching',
-      atmosphere_and_mood: 'Connected, growth',
-      rendering_and_quality: 'Nature, macro',
-      key_features: 'Web pattern',
+      aesthetic:
+        'Mycelium Network becomes a transferable fluid and organic behavior system: start from Fungal roots, Web pattern, and Branching, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Webbing to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from White, earthy; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Subsurface scattering drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Fuzzy, organic as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Branching as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Connected, growth as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Nature, macro: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Fungal roots; Webbing; White, earthy; Subsurface scattering; Fuzzy, organic; Branching; Connected, growth; Nature, macro; Web pattern',
       creative_brief:
         'Apply mycelium-network logic to the input: branching white filaments, nutrient-web connectivity, porous organic nodes, and subterranean softness should link forms into living fungal communication without requiring soil or forest.',
     },
@@ -102,17 +152,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-016',
     name: 'Ferrofluid',
     category: '2. Fluid & Organic',
-    negativePrompt: 'soft, colorful',
+    negativePrompt:
+      'soft, colorful, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Magnetic liquid spikes',
-      subject_treatment: 'Spikes',
-      color_and_tone: 'Black, reflective',
-      lighting_and_shadow: 'Studio highlight',
-      texture_and_material: 'Liquid metal',
-      camera_and_composition: 'Magnetic field',
-      atmosphere_and_mood: 'Dark, sci-fi',
-      rendering_and_quality: 'Scientific, alien',
-      key_features: 'Spikes',
+      aesthetic:
+        'Ferrofluid becomes a transferable fluid and organic behavior system: start from Magnetic liquid spikes and Magnetic field, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Spikes to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Black, reflective; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Studio highlight drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Liquid metal as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Magnetic field as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Dark, sci-fi as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Scientific, alien: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Magnetic liquid spikes; Spikes; Black, reflective; Studio highlight; Liquid metal; Magnetic field; Dark, sci-fi; Scientific, alien; Spikes',
       creative_brief:
         'Apply ferrofluid magnetism to the input: glossy black liquid metal, field-led spikes, radial clustering, and alien surface tension should make any subject feel pulled into magnetic order.',
     },
@@ -121,37 +181,56 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-017',
     name: 'Acrylic Pour',
     category: '2. Fluid & Organic',
-    negativePrompt: 'brush strokes',
+    negativePrompt:
+      'brush strokes, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Fluid art',
-      subject_treatment: 'Cells',
-      color_and_tone: 'Mixed, marbled',
-      lighting_and_shadow: 'Glossy',
-      texture_and_material: 'Paint skin',
-      camera_and_composition: 'Flow',
-      atmosphere_and_mood: 'Creative, messy',
-      rendering_and_quality: 'DIY art, colorful',
-      key_features: 'Cells',
+      aesthetic:
+        'Acrylic Pour becomes a transferable fluid and organic behavior system: start from Fluid art, Cells, and Flow, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Cells to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Mixed, marbled; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Glossy drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Paint skin as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Flow as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Creative, messy as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as DIY art, colorful: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Fluid art; Cells; Mixed, marbled; Glossy; Paint skin; Flow; Creative, messy; DIY art, colorful; Cells',
       creative_brief:
-        'Apply acrylic-pour behavior to the input: marbled pigment flows, cellular blooms, gravity trails, and accidental color continents should cover or reshape the subject without replacing it with a generic paint puddle.',
+        'Route any subject through Acrylic Pour as a transferable fluid or organic process visual system: preserve prompt intent while converting form, surface tension, flow, translucency, edge softness, and material motion through this preset. Apply acrylic-pour behavior to the input: marbled pigment flows, cellular blooms, gravity trails, and accidental color continents should cover or reshape the subject without replacing it with a generic paint puddle.',
     },
   },
   {
     id: 'SP10-018',
     name: 'Reaction Diffusion',
     category: '2. Fluid & Organic',
-    negativePrompt: 'random noise',
+    negativePrompt:
+      'random noise, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Turing pattern',
-      subject_treatment: 'Stripes and spots',
-      color_and_tone: 'Two tone',
-      lighting_and_shadow: 'Flat',
-      texture_and_material: 'Biological',
+      aesthetic:
+        'Reaction Diffusion becomes a transferable fluid and organic behavior system: start from Turing pattern and Fingerprint pattern, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Stripes and spots to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Two tone; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Flat drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Biological as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
       camera_and_composition:
-        'Compose for Reaction Diffusion using its key spatial cues: Fingerprint pattern.',
-      atmosphere_and_mood: 'Hypnotic, natural',
-      rendering_and_quality: 'Generative, math',
-      key_features: 'Fingerprint pattern',
+        'Compose around Fingerprint pattern as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Hypnotic, natural as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Generative, math: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Turing pattern; Stripes and spots; Two tone; Flat; Biological; Fingerprint pattern; Hypnotic, natural; Generative, math; Fingerprint pattern',
       creative_brief:
         'Apply reaction-diffusion patterning to the input: chemical stripes, spots, wave fronts, and competing growth fields should generate organic complexity across surfaces without requiring animal bodies.',
     },
@@ -160,17 +239,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-019',
     name: 'Cymatics (Sound)',
     category: '2. Fluid & Organic',
-    negativePrompt: 'random',
+    negativePrompt:
+      'random, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Sand on vibrating plate',
-      subject_treatment: 'Geometric nodes',
-      color_and_tone: 'White sand, Black plate',
-      lighting_and_shadow: 'Top down',
-      texture_and_material: 'Grainy',
-      camera_and_composition: 'Symmetrical',
-      atmosphere_and_mood: 'Scientific, orderly',
-      rendering_and_quality: 'Physics, pattern',
-      key_features: 'Mandala',
+      aesthetic:
+        'Cymatics (Sound) becomes a transferable fluid and organic behavior system: start from Sand on vibrating plate, Mandala, and Symmetrical, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Geometric nodes to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from White sand, Black plate; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Top down drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Grainy as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Symmetrical as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Scientific, orderly as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Physics, pattern: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Sand on vibrating plate; Geometric nodes; White sand, Black plate; Top down; Grainy; Symmetrical; Scientific, orderly; Physics, pattern; Mandala',
       creative_brief:
         'Apply cymatic vibration to the input: radial frequency nodes, sand-like particle ridges, resonance rings, and frozen sound-wave geometry should make any subject feel organized by invisible audio pressure.',
     },
@@ -179,17 +268,27 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP10-020',
     name: 'Nebula Cloud',
     category: '2. Fluid & Organic',
-    negativePrompt: 'solid',
+    negativePrompt:
+      'solid, stiff solids, muddy fluid mixing, literal card scene, style-card boilerplate, muddy noise, watermark',
     style: {
-      aesthetic: 'Space gas',
-      subject_treatment: 'Soft edges',
-      color_and_tone: 'Pink, Blue, Purple',
-      lighting_and_shadow: 'Internal star glow',
-      texture_and_material: 'Gaseous',
-      camera_and_composition: 'Amorphous',
-      atmosphere_and_mood: 'Epic, vast',
-      rendering_and_quality: 'Hubble, cosmic',
-      key_features: 'Stars',
+      aesthetic:
+        'Nebula Cloud becomes a transferable fluid and organic behavior system: start from Space gas, Stars, and Amorphous, then route prompt content through flow, branching, cellular membranes, diffusion, turbulence, and living surface logic without forcing one card scene.',
+      subject_treatment:
+        "Keep the user's subject recognizable while using Soft edges to bend, pool, branch, bloom, spike, foam, or dissolve forms while preserving the prompt intent; preserve anatomy, object identity, or scene intent beneath the abstraction.",
+      color_and_tone:
+        'Build the palette from Pink, Blue, Purple; let hues follow fluid thickness, chemical bloom, interference, biological growth, or vapor density, with enough value control that the subject remains readable after the style layer is applied.',
+      lighting_and_shadow:
+        'Let Internal star glow drive the light response: use reflection, translucency, subsurface scattering, glow, or backlit edges to reveal fluid structure, avoiding generic glamour lighting unless the prompt explicitly asks for it.',
+      texture_and_material:
+        'Render Gaseous as the tactile or mark-making basis; surfaces need coherent viscosity, membranes, droplets, filaments, bubbles, grains, or particulate fields, scaled to figures, props, spaces, or close material studies.',
+      camera_and_composition:
+        'Compose around Amorphous as reusable spatial grammar: favor flow direction, cellular repetition, eddies, radial forces, tendrils, and macro-to-wide scalability, adapting cleanly to portraits, objects, environments, and action scenes.',
+      atmosphere_and_mood:
+        'Use Epic, vast as the emotional register; derive mood from instability, growth, toxicity, delicacy, pressure, and organic motion, without flattening strong, strange, darker, or adult prompt intent when it is relevant.',
+      rendering_and_quality:
+        'Resolve as Hubble, cosmic: finish with clean fluid physics, readable boundaries, and restrained micro-noise, preserving prompt X as the base content and the preset as the style router.',
+      key_features:
+        'Space gas; Soft edges; Pink, Blue, Purple; Internal star glow; Gaseous; Amorphous; Epic, vast; Hubble, cosmic; Stars',
       creative_brief:
         'Apply nebula-cloud treatment to the input: pink-indigo gas veils, star-dust speckles, luminous depth, and cosmic-scale haze should make forms feel suspended in astronomical color without requiring an outer-space backdrop.',
     },

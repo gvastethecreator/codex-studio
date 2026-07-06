@@ -12,25 +12,59 @@ tags:
   - abstract-and-experimental
   - material-surface-textures
 visualDna:
-  aesthetic: Woven tech material
-  subject_treatment: Diagonal weave
-  color_and_tone: Black, Grey
-  lighting_and_shadow: Anisotropic
-  texture_and_material: Synthetic
-  camera_and_composition: 'Compose for Carbon Fiber using its key spatial cues: Weave.'
-  atmosphere_and_mood: Sporty, modern
-  rendering_and_quality: High tech, fast
-  key_features: Weave
+  aesthetic: >-
+    Carbon Fiber becomes a transferable material surface transformation system: start from Woven
+    tech material and Weave, then route prompt content through physical surface grain, reflectance,
+    damage, joinery, pores, seams, and tactile structure without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Diagonal weave to coat, wrap, weather, polish,
+    crack, scale, link, or embed forms while preserving the prompt composition; preserve anatomy,
+    object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Black, Grey; let color follow material depth, veins, patina, oxidation,
+    fiber direction, shimmer, or manufactured finish, with enough value control that the subject
+    remains readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Anisotropic drive the light response: show reflectance honestly through gloss, matte
+    falloff, iridescence, metallic shear, or micro-shadow, avoiding generic glamour lighting unless
+    the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Synthetic as the tactile or mark-making basis; surface behavior needs coherent grain,
+    chips, cracks, pores, links, flakes, scales, strands, or inclusions, scaled to figures, props,
+    spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Weave as reusable spatial grammar: support macro texture studies and full-scene
+    use through directional grain, repeat, drape, fracture, or patch rhythm, adapting cleanly to
+    portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Sporty, modern as the emotional register; derive mood from durability, luxury, decay,
+    tactility, craft, armor, novelty, or contamination, without flattening strong, strange, darker,
+    or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as High tech, fast: finish with material clarity, controlled micro-detail, and no stock
+    texture pasted over forms, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Woven tech material; Diagonal weave; Black, Grey; Anisotropic; Synthetic; Weave; Sporty, modern;
+    High tech, fast; Weave
   creative_brief: >-
-    Apply carbon-fiber performance texture to the input: diagonal woven filaments, subtle anisotropic sheen,
-    dark composite depth, and precision surface discipline should make any subject feel lightweight and
-    engineered.
+    Apply carbon-fiber performance texture to the input: diagonal woven filaments, subtle
+    anisotropic sheen, dark composite depth, and precision surface discipline should make any
+    subject feel lightweight and engineered.
 avoidRules:
   - organic
+  - wrong material
+  - generic stock texture
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-056.webp
 attributes:
-  negativePrompt: organic
+  negativePrompt: >-
+    organic, wrong material, generic stock texture, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

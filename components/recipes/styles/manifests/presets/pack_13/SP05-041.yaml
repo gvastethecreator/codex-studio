@@ -13,38 +13,56 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Ornate Palace Shojo within 4. Shojo, Magical Girl & Visionary Classics: a reusable Anime Character &
-    Lifestyle visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
-    Keep the result transferable across subjects while preserving Ornate Palace Shojo's specific style
-    identity.
+    Ornate Palace Shojo operates as a portable anime-lifestyle router: combine Ornate Palace Shojo
+    identity cues through Ornate Palace Shojo anime style cues; delicate linework; elongated
+    gesture; ribbon or petal rhythm; jewel or occult accents; fashion silhouette with shojo, magical
+    girl, and visionary classic anime grammar with symbolic romance, transformation sparkle, ornate
+    contour, emotional close reading, and theatrical abstraction, so the preset supplies anime style
+    behavior after prompt X rather than a required scene, character, franchise image, or card
+    composition.
   subject_treatment: >-
-    Define Ornate Palace Shojo through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
   color_and_tone: >-
-    Use a Ornate Palace Shojo-specific palette with clear dominant, secondary, and accent roles. Keep contrast
-    deliberate and avoid generic color wash.
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Use lighting that makes Ornate Palace Shojo recognizable: purposeful key, rim, bounce, shadow, and glow
-    behavior with readable hierarchy.
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Use materials and textures that reinforce Ornate Palace Shojo: surface response, grain, patina, polish, or
-    wear should feel intentional and style-defining.
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
   camera_and_composition: >-
-    Use spatial behavior that fits Ornate Palace Shojo: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Ornate Palace Shojo: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    Render Ornate Palace Shojo with high production clarity, strong silhouette reads, clean detail priority,
-    and no accidental UI, text, logos, or watermark.
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
   key_features: >-
-    Prioritize Ornate Palace Shojo's key features: recognizable shape language, palette logic, material cues,
-    lighting behavior, and composition rules.
+    Ornate Palace Shojo anime style cues; delicate linework; elongated gesture; ribbon or petal
+    rhythm; jewel or occult accents; fashion silhouette
   creative_brief: >-
-    Create a style-card that translates Ornate Palace Shojo into a portable visual system for 4. Shojo,
-    Magical Girl & Visionary Classics. Preserve the preset identity through style mechanics, not a fixed
-    scene, character, prop, or story beat.
+    Use Ornate Palace Shojo after prompt X as a transferable anime character/lifestyle layer: prompt
+    X supplies subject, action, setting, tone, and intensity, while the preset supplies Ornate
+    Palace Shojo anime style cues, delicate linework, elongated gesture, ribbon or petal rhythm,
+    jewel or occult accents, fashion silhouette, color logic, lighting, material finish, composition
+    rhythm, mood pressure, and quality controls without requiring a fixed cast, fixed venue, fixed
+    prop bundle, title screenshot, or sample-card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -58,12 +76,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-041.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

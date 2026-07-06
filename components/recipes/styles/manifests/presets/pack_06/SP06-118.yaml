@@ -13,21 +13,64 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: >-
-    RPG pixel-inventory icon language with collectible clarity, tiny material storytelling, and consistent
-    atlas rhythm.
+    RPG Pixel Inventory Icon System acts as a transferable art-medium router: start from RPG pixel
+    inventory icon language with collectible clarity, tiny material storytelling, and consistent
+    atlas rhythm, gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity and game-art direction system built from playable
+    readability, UI or asset grammar, role clarity, production polish, and genre-specific visual
+    feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Turn any subject into an inventory-ready icon with compact silhouette, clear rarity cue, and readable
-    function.
+    Transform any prompt subject through Turn any subject into an inventory ready icon with compact
+    silhouette, clear rarity cue, and readable function; preserve the prompt subject while routing
+    it through tile readability, icon clarity, splash rendering, interface material, sprite bounce,
+    shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose, object
+    function, or environment legible.
   color_and_tone: >-
-    Earthy base ramps, jewel accent colors, metal/leather/potion-like swatch logic, and strong outline
-    contrast.
-  lighting_and_shadow: Top-left icon lighting, tiny rim glints, soft contact shadow, and controlled highlight pixels.
-  texture_and_material: Hand-placed pixel clusters, miniature material pixels, small chips, gleams, labels avoided.
+    Build color with Earthy base elevated edge structure, jewel accent colors, metal/leather/potion
+    like swatch logic, and strong outline contrast; use color as gameplay hierarchy: rarity glow,
+    faction contrast, tactical coding, seasonal warmth, horror warmth, neon route color, or readable
+    inventory material, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Top left icon lighting, tiny rim glints, soft contact shadow, and
+    controlled highlight pixels; shape light through game readability: rim separation, UI glow,
+    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
+    value structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Hand placed pixel clusters, miniature material pixels, small chips, gleams, labels
+    avoided; surface detail should support genre grammar through parchment, HUD glass, pixel atlas
+    texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material, keeping
+    material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Centered transparent-background icon framing, equal padding, stable scale, and consistent three-quarter
-    tilt.
-  atmosphere_and_mood: Lootable, tactile, game-ready mood without requiring weapons, potions, bags, or item sets.
-  rendering_and_quality: Icon-sheet friendly, crisp low-res finish, no text, no background scene, no interpolation blur.
+    Structure the image through central transparent support field icon framing, equal padding,
+    stable scale, and consistent three quarter tilt; compose through gameplay-facing hierarchy,
+    atlas consistency, menu rhythm, parallax layers, tactical grid, encounter scale, or
+    selection-screen energy, with scale, spacing, edge rhythm, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Lootable, tactile, game ready mood without requiring weapons, potions, bags, or
+    item sets; derive mood from playable stakes, collection desire, tactical control, cozy routine,
+    survival dread, arcade speed, or heroic confrontation, letting the medium alter interpretation
+    without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Icon sheet friendly, crisp low res finish, no text, no support field scene, no
+    interpolation blur; finish with game-production clarity, strong silhouettes, controlled UI-like
+    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: >-
+    RPG pixel inventory icon language with collectible clarity, tiny material storytelling, and
+    consistent atlas rhythm; gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity; Earthy base elevated edge structure, jewel accent
+    colors, metal/leather/potion like swatch logic, and strong outline contrast; Hand placed pixel
+    clusters, miniature material pixels, small chips, gleams, labels avoided; central transparent
+    support field icon framing, equal padding, stable scale, and consistent three quarter tilt
+  creative_brief: >-
+    Apply RPG Pixel Inventory Icon System as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through RPG pixel inventory icon language with collectible clarity, tiny material storytelling,
+    and consistent atlas rhythm, gameplay-readable hierarchy, genre-specific surface language,
+    UI-aware composition, and production-art clarity, Hand placed pixel clusters, miniature material
+    pixels, small chips, gleams, labels avoided without requiring the card image's original subject.
 avoidRules:
   - motion blur
   - inconsistent proportions
@@ -37,12 +80,24 @@ avoidRules:
   - potion requirement
   - watermark
   - text
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-118.webp
 attributes:
   negativePrompt: >-
-    motion blur, inconsistent proportions, changing costume, background scene, weapon requirement, potion
-    requirement, watermark, text
+    motion blur, inconsistent proportions, changing costume, background scene, weapon requirement,
+    potion requirement, watermark, text, wrong medium, generic AI gloss, muddy noise, uncontrolled
+    texture chatter, readable text, signature, readable UI text, logo clutter, generic screenshot,
+    unplayable visual clutter
   layout:
     preferredFrameCount: 8
     frameGrid: 4x2

@@ -13,31 +13,70 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Classic 16-bit Mode 7 effect, pseudo-3D affine transform, rotating flat-plane depth illusion,
-    sprite-scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart
-    and F-Zero as transform anchors only
+    SNES Mode 7 Vista acts as a transferable art-medium router: start from Classic 16 bit Mode 7
+    effect, pseudo 3D affine transform, rotating flat plane depth illusion, sprite scaled motifs
+    approaching from distance, SNES hardware magic, Final Fantasy VI, Super Mario Kart and F Zero as
+    transform anchors only, Affine transformed plane, scaled sprite layering, scanline artifact
+    lines, banded color fields, 256 color charm and hardware-constrained game-visual system built
+    from display limits, palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and
+    era-specific charm, then apply the medium behavior to prompt X instead of recreating a fixed
+    demo image.
   subject_treatment: >-
-    Scanline-stepped pseudo-perspective, sprite-scaling contour, tile-based planar rotation, chunky affine
-    mapping, any subject flattened into perspective-warped texture logic
-  color_and_tone: 256-color SNES palette, vibrant mode-7 blues, checkerboard or banded tile chroma, 15-bit color depth charm
+    Transform any prompt subject through Scanline stepped pseudo perspective, sprite scaling
+    contour, tile based planar rotation, chunky affine mapping, any subject flattened into
+    perspective warped texture logic; preserve the prompt subject while translating it into tile,
+    sprite, vector, glyph, voxel, pre-render, screen-grid, or low-bit display behavior, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with 256 color SNES palette, vibrant mode 7 blues, checkerboard or banded tile
+    chroma, 15 bit color depth charm; use color through hardware rules: indexed palettes, phosphor
+    glow, four-shade handheld values, dither tricks, copper gradients, limited scanline color, or
+    terminal ANSI sets, with deliberate value grouping, accent control, and medium-specific limits
+    rather than generic color wash.
   lighting_and_shadow: >-
-    Palette-cycled water shimmer, gradient-sky fake lighting, sprite brightness for depth, no real light, pure
-    hardware trickery
+    Handle light through Palette cycled water shimmer, gradient sky fake lighting, sprite brightness
+    for depth, no real light, pure hardware trickery; make light emerge from display technology,
+    pixel value steps, CRT bloom, palette cycling, thermal print contrast, or vector beam
+    brightness, so value structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    Affine-transformed tile repetition, no-mipmap chunky scaling, scanline rendering artifacts,
-    cartridge-memory limitations visible
+    Render Affine transformed tile repetition, no mipmap chunky scaling, scanline rendering
+    artifacts, cartridge memory limitations visible; surface detail should show pixels, dithering,
+    scanlines, quantization, vertex wobble, dot matrix, LCD grid, CRT persistence, or paper-print
+    degradation, keeping material scale coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Perspective-transformed flat plane, sprite-scale depth illusion, horizon-like division when useful, no
-    true vertical camera
-  atmosphere_and_mood: Nostalgic, technically miraculous, kinetic, hardware-driven
-  rendering_and_quality: SNES Mode 7 capture, 16-bit pseudo-3D nostalgia, hardware-trick aesthetic, retro-technical beauty
+    Structure the image through Perspective transformed flat plane, sprite scale depth illusion,
+    horizon like division when useful, no true vertical camera; compose through tile maps, sprite
+    scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI geometry, or
+    screen-proportion constraints, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nostalgic, technically miraculous, kinetic, hardware driven; derive mood from
+    hardware limitation, arcade spectacle, handheld intimacy, terminal austerity, console nostalgia,
+    or broken early-3D instability, letting the medium alter interpretation without demanding a
+    specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with SNES Mode 7 capture, 16 bit pseudo 3D nostalgia, hardware trick aesthetic, retro
+    technical beauty; finish with faithful era constraints, crisp readability at small scale, and no
+    modern high-resolution smoothing unless the preset asks for baked pre-rendering, clean denoised
+    surfaces where appropriate, and enough craft evidence to make the medium recognizable.
   key_features: >-
-    Affine-transformed plane, scaled sprite layering, scanline artifact lines, banded color fields, 256-color
-    charm
+    Classic 16 bit Mode 7 effect, pseudo 3D affine transform, rotating flat plane depth illusion,
+    sprite scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super
+    Mario Kart and F Zero as transform anchors only; Affine transformed plane, scaled sprite
+    layering, scanline artifact lines, banded color fields, 256 color charm; 256 color SNES palette,
+    vibrant mode 7 blues, checkerboard or banded tile chroma, 15 bit color depth charm; Affine
+    transformed tile repetition, no mipmap chunky scaling, scanline rendering artifacts, cartridge
+    memory limitations visible; Perspective transformed flat plane, sprite scale depth illusion,
+    horizon like division when useful, no true vertical camera
   creative_brief: >-
-    Depth is faked by rotating and stretching a flat surface until it starts behaving like space. Any prompt
-    becomes an affine hardware trick, with motifs scaling toward the viewer while resolution stays stubbornly
-    chunky.
+    Apply SNES Mode 7 Vista as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Classic 16 bit Mode 7 effect, pseudo 3D affine transform, rotating flat plane depth illusion,
+    sprite scaled motifs approaching from distance, SNES hardware magic, Final Fantasy VI, Super
+    Mario Kart and F Zero as transform anchors only, Affine transformed plane, scaled sprite
+    layering, scanline artifact lines, banded color fields, 256 color charm, Affine transformed tile
+    repetition, no mipmap chunky scaling, scanline rendering artifacts, cartridge memory limitations
+    visible without requiring the card image's original subject.
 avoidRules:
   - realistic perspective
   - 3d rendering
@@ -45,10 +84,25 @@ avoidRules:
   - high resolution
   - modern graphics
   - photo textures
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-082.webp
 attributes:
-  negativePrompt: realistic perspective, 3d rendering, smooth gradients, high resolution, modern graphics, photo textures
+  negativePrompt: >-
+    realistic perspective, 3d rendering, smooth gradients, high resolution, modern graphics, photo
+    textures, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark,
+    readable text, signature, modern high-res smoothing, fake readable UI text, generic emulator
+    screenshot, unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

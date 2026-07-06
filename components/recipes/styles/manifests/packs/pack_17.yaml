@@ -65,6 +65,17 @@ categories:
       - pack_17/SP17-042.yaml
       - pack_17/SP17-043.yaml
       - pack_17/SP17-044.yaml
+  - id: weird-medieval-editorial
+    name: 7. Weird Medieval Editorial
+    presetRefs:
+      - pack_17/SP17-045.yaml
+      - pack_17/SP17-046.yaml
+      - pack_17/SP17-047.yaml
+      - pack_17/SP17-048.yaml
+      - pack_17/SP17-049.yaml
+      - pack_17/SP17-050.yaml
+      - pack_17/SP17-051.yaml
+      - pack_17/SP17-052.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
   - pack_17/SP17-002.yaml
@@ -110,3 +121,11 @@ presetRefs:
   - pack_17/SP17-042.yaml
   - pack_17/SP17-043.yaml
   - pack_17/SP17-044.yaml
+  - pack_17/SP17-045.yaml
+  - pack_17/SP17-046.yaml
+  - pack_17/SP17-047.yaml
+  - pack_17/SP17-048.yaml
+  - pack_17/SP17-049.yaml
+  - pack_17/SP17-050.yaml
+  - pack_17/SP17-051.yaml
+  - pack_17/SP17-052.yaml

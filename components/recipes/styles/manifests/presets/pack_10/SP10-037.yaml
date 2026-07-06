@@ -12,26 +12,61 @@ tags:
   - abstract-and-experimental
   - surrealism-and-dream
 visualDna:
-  aesthetic: Impossible geometry
-  subject_treatment: Woodcut lines
-  color_and_tone: Black and White
-  lighting_and_shadow: Flat
-  texture_and_material: Hatching
-  camera_and_composition: Infinite loop
-  atmosphere_and_mood: Intellectual, confusing
-  rendering_and_quality: Mathematical, puzzle
-  key_features: Tessellation
+  aesthetic: >-
+    Escher Style becomes a transferable surreal symbolic transformation system: start from
+    Impossible geometry, Tessellation, and Infinite loop, then route prompt content through
+    impossible logic, dream scale, symbolic displacement, liminal staging, and psychic texture
+    without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Woodcut lines to bend, displace, fuse, haunt,
+    miniaturize, exaggerate, or estrange prompt subjects without forcing a fixed scene; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Black and White; use color as emotional unreliability, nostalgic drift,
+    uncanny contrast, or symbolic temperature, with enough value control that the subject remains
+    readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Flat drive the light response: shape light through impossible shadows, memory haze, stage
+    stillness, glow, fog, or dreamlike exposure, avoiding generic glamour lighting unless the prompt
+    explicitly asks for it.
+  texture_and_material: >-
+    Render Hatching as the tactile or mark-making basis; surfaces should support the illusion with
+    believable texture, collage edges, flesh-metal seams, or unreal smoothness, scaled to figures,
+    props, spaces, or close material studies.
+  camera_and_composition: >-
+    Compose around Infinite loop as reusable spatial grammar: favor symbolic focal points, scale
+    mismatch, empty thresholds, doubled images, and psychologically charged negative space, adapting
+    cleanly to portraits, objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Intellectual, confusing as the emotional register; derive mood from wonder, dread,
+    absurdity, nostalgia, erotic tension, menace, or utopian unease when the prompt allows, without
+    flattening strong, strange, darker, or adult prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Mathematical, puzzle: finish with deliberate weirdness, controlled realism, and no
+    generic fantasy scene lock, preserving prompt X as the base content and the preset as the style
+    router.
+  key_features: >-
+    Impossible geometry; Woodcut lines; Black and White; Flat; Hatching; Infinite loop;
+    Intellectual, confusing; Mathematical, puzzle; Tessellation
   creative_brief: >-
-    Apply Escher-like impossible logic to the input: recursive geometry, reversible figure-ground, paradoxical
-    depth, and locally plausible edges should make any subject structurally impossible without requiring
-    stairs.
+    Apply Escher-like impossible logic to the input: recursive geometry, reversible figure-ground,
+    paradoxical depth, and locally plausible edges should make any subject structurally impossible
+    without requiring stairs.
 avoidRules:
   - color
   - normal physics
+  - literal fantasy scene lock
+  - generic dream blur
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-037.webp
 attributes:
-  negativePrompt: color, normal physics
+  negativePrompt: >-
+    color, normal physics, literal fantasy scene lock, generic dream blur, literal card scene,
+    style-card boilerplate, muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

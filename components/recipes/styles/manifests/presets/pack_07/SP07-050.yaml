@@ -12,27 +12,100 @@ tags:
   - architecture-and-interior
   - landscape-and-garden-systems
 visualDna:
-  aesthetic: Historic iron-and-glass botanical conservatory logic with controlled humid climate.
-  subject_treatment: Ribbed glazed vaults, cast-iron modular repetition and vertical botanical layering.
-  color_and_tone: White, Green, Tropical-flower Magenta, Iron-grey, Glass-reflected Blue, warm Humidity-silver
-  lighting_and_shadow: Diffuse greenhouse brightness, condensation prisms, rain-on-glass sparkle and warm glow over ironwork.
-  texture_and_material: Wet glass, cast iron, terracotta tile and broad-leaf tropical texture.
+  aesthetic: >-
+    Botanical Iron Glasshouse acts as a transferable architecture/interior router: ribbed glazed
+    vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass; fuse it
+    with landscape system grammar with terrain edge, planting structure, water or gravel control,
+    climatic adaptation, and outdoor spatial choreography; route spatial grammar, material behavior,
+    scale, ornament, and light over prompt X without requiring the default sample anchor, fixed
+    spatial set, landscape setup, or object sample.
+  subject_treatment: >-
+    Preserve prompt subject, action, and context while translating any requested subject through
+    ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild massing,
+    and climate-responsive material cues; treat ribbed glazed vaults, cast-iron lattice,
+    condensation prisms, humid light, terracotta or wet glass as massing, edge, surface, joinery,
+    threshold, or ornament behavior rather than a mandatory building scene.
+  color_and_tone: >-
+    Map color through botanical greens, mineral neutrals, climate-specific ochres or water blues,
+    controlled bloom accents, and readable ground-plane contrast; let source cues such as ribbed
+    glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass
+    decide accent hierarchy, material temperature, and value separation while staying attached to
+    the requested content.
+  lighting_and_shadow: >-
+    Use outdoor sun or shade logic, leaf-filtered light, water reflection, gravel-shadow texture,
+    dew glints, and scale-setting atmospheric depth; make light reveal joints, relief, material
+    depth, scale, and atmosphere from ribbed glazed vaults, cast-iron lattice, condensation prisms,
+    humid light, terracotta or wet glass without replacing prompt X with a stock architectural
+    render.
+  texture_and_material: >-
+    Render hedge, gravel, stone, corten, timber, waterline, grass, planted soil, glasshouse iron,
+    condensation, and weathered landscape edging; prioritize the tactile signals in ribbed glazed
+    vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet glass, with
+    believable surface response, denoised grain, coherent wear, and no generic wallpaper texture.
   camera_and_composition: >-
-    Ribbed-glass repetition, condensation refraction and layered botanical depth without requiring a fixed
-    greenhouse room.
-  atmosphere_and_mood: Enclosed lushness, humid cultivation calm and curated botanical awe.
-  rendering_and_quality: Museum-grade conservatory clarity with technically credible humid atmosphere.
-  key_features: Iron lattice bays, prismatic condensed glass, layered tropical canopies and clean circulation logic.
+    Frame through cropped ground-plane anchors, axis or path geometry, planting layers, clipped
+    sightlines, terrace bands, and detail-first landscape framing; convert ribbed glazed vaults,
+    cast-iron lattice, condensation prisms, humid light, terracotta or wet glass into reusable
+    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
+    style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through ceremonial control, domestic abundance, ecological reuse, dry-climate
+    resilience, hospitality calm, or playful spatial misdirection; the preset can support adult,
+    strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X asks for
+    them while keeping the architectural identity readable.
+  rendering_and_quality: >-
+    Finish with crisp landscape-design finish with readable planting structure, no generic park
+    lawn, no postcard vista, and no empty texture field; keep clean denoise, legible construction,
+    stable object or anatomy structure when applicable, no watermark, no fake readable text, no
+    logo, no camera prop, and no prompt-literal card copy.
+  key_features: >-
+    ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta or wet
+    glass; ground-plane design, planting rhythm, edge containment, path pressure, clipped or wild
+    massing, and climate-responsive material cues; hedge, gravel, stone, corten, timber, waterline,
+    grass, planted soil, glasshouse iron, condensation, and weathered landscape edging; cropped
+    ground-plane anchors, axis or path geometry, planting layers, clipped sightlines, terrace bands,
+    and detail-first landscape framing
   creative_brief: >-
-    Combine rhythmic ironwork, humid glass and dense exhibition botany. Any subject should feel
-    climate-curated, with visible structure as important as foliage, without requiring an exterior garden,
-    tourist conservatory or fixed greenhouse scene.
+    Apply Botanical Iron Glasshouse after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies ribbed glazed vaults, cast-iron lattice, condensation prisms, humid light, terracotta
+    or wet glass, landscape system grammar with terrain edge, planting structure, water or gravel
+    control, climatic adaptation, and outdoor spatial choreography, material discipline, spatial
+    grammar, and negative controls without requiring a single spatial sample, product-photo setup,
+    aisle-like default, or empty abstraction.
 avoidRules:
   - exterior garden
+  - tourist greenhouse interior zones
+  - people
+  - benches
+  - market aisle
+  - library aisle
+  - corridor
+  - empty abstraction
+  - generic park lawn
+  - postcard garden
+  - people scene
+  - blank texture field
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - camera prop
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-050.webp
 attributes:
-  negativePrompt: exterior garden
+  negativePrompt: >-
+    exterior garden, tourist greenhouse interior zones, people, benches, market aisle, library
+    aisle, corridor, empty abstraction, generic park lawn, postcard garden, people scene, blank
+    texture field, fixed building-only scene, mandatory interior interior zones, corridor
+    perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera
+    prop, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

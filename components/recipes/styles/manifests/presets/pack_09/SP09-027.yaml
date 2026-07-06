@@ -13,26 +13,55 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Tire-grade rubber tread
-  subject_treatment: Treads
-  color_and_tone: Black
-  lighting_and_shadow: Matte
-  texture_and_material: Grippy, nubby
-  camera_and_composition: 'Compose for Rubber (Tire) using its key spatial cues: Tread pattern.'
-  atmosphere_and_mood: Functional, dirty
-  rendering_and_quality: Industrial, durable
-  key_features: Tread pattern
+  aesthetic: >-
+    Rubber (Tire) treats fabrication as visible style language: start from Tire-grade rubber tread,
+    Grippy, nubby, and Tread pattern, then turn manufacturing process, tooling marks, seams,
+    tolerances, and industrial material behavior into portable surface behavior rather than a
+    literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Treads: preserve identity and pose while letting forms
+    carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Black as the material palette, with controlled value separation, local color variation, and
+    hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Matte define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Rubber (Tire) without hiding the prompt subject.
+  texture_and_material: >-
+    Render Grippy, nubby through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Tread pattern as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Functional, dirty by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Industrial, durable material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Tire-grade rubber tread; Treads; Grippy, nubby; Matte; Tread pattern
   creative_brief: >-
-    Apply tire-grade rubber logic as functional patterning: matte black tackiness, raised tread ridges, cut
-    valleys, water-channel geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool
-    exists, make grip visible; otherwise use tread as industrial surface rhythm without requiring a full car
+    Route any subject through Rubber (Tire) as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Apply tire-grade rubber logic as
+    functional patterning: matte black tackiness, raised tread ridges, cut valleys, water-channel
+    geometry, and subtle sheen on worn edges. If wheel, vehicle, shoe, armor, or tool exists, make
+    grip visible; otherwise use tread as industrial surface rhythm without requiring a full car
     tire.
 avoidRules:
   - shiny plastic
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-027.webp
 attributes:
-  negativePrompt: shiny plastic
+  negativePrompt: shiny plastic, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

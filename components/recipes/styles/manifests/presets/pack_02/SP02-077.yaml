@@ -12,28 +12,83 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Submerged
-  subject_treatment: Caustics
-  color_and_tone: Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise
-  lighting_and_shadow: Refracted sun, surface-dappled, caustic-net projection
-  texture_and_material: Water distortion, fluid lens, suspended particles
-  camera_and_composition: Warped, refractive bend, swim-goggle perspective
-  atmosphere_and_mood: Calm, deep, abyssal peace, submerged solitude
-  rendering_and_quality: Muted, floating, weightless suspension, soundless depth
-  key_features: Caustics, light-net projection, suspended particles, refractive wobble
+  aesthetic: >-
+    Underwater Light acts as a transferable cinematic-media router: start from Submerged, underwater
+    optical lighting with liquid refraction, cyan attenuation, caustic net projection, suspended
+    particles, and softened depth edges, Caustics, light-net projection, suspended particles,
+    refractive wobble and portable lighting and atmosphere system built from light transport,
+    exposure behavior, optical distortion, volumetric density, reflection, and camera response, then
+    apply the media behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Caustics, caustic projection, refractive wobble, fluid lens
+    distortion, and depth-filtered silhouettes without requiring ocean subject matter; preserve the
+    requested subject while letting the named light, atmosphere, or optical effect transform
+    silhouette, depth, value, and surface response, keeping the requested identity, silhouette,
+    action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Cyan/Blue, aquamarine, deep navy, surface-silver, turquoise; use color as light
+    temperature, spectral split, water attenuation, neon bounce, candle warmth, night conversion,
+    prism dispersion, or atmospheric scattering, with deliberate value grouping, accent control, and
+    process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Refracted sun, surface-dappled, caustic-net projection; make the named
+    light behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric
+    rays, split contrast, or softbox falloff, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Water distortion, fluid lens, suspended particles; surface detail should reveal
+    particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or
+    optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Warped, refractive bend, swim-goggle perspective; compose around
+    light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Calm, deep, abyssal peace, submerged solitude; derive mood from illumination
+    physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon danger, or
+    temporal flash energy, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Muted, floating, weightless suspension, soundless depth; finish with believable
+    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
+    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
+    to make the style recognizable.
+  key_features: >-
+    Submerged, underwater optical lighting with liquid refraction, cyan attenuation, caustic net
+    projection, suspended particles, and softened depth edges; Caustics, light-net projection,
+    suspended particles, refractive wobble; Cyan/Blue, aquamarine, deep navy, surface-silver,
+    turquoise; Water distortion, fluid lens, suspended particles; Warped, refractive bend,
+    swim-goggle perspective
   creative_brief: >-
-    Apply underwater optics without forcing underwater subject matter: cyan-blue attenuation, caustic nets,
-    refractive wobble, suspended particles, and softened edges through a liquid lens. Avoid bodies, hair,
-    bubbles as required props, or literal ocean environments. The image should feel filtered through depth and
-    fluid refraction. Apply Underwater Light as a portable cinematic/camera style over any input: preserve its
-    lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a
-    required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.
+    Apply Underwater Light as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Submerged, underwater optical lighting with liquid refraction,
+    cyan attenuation, caustic net projection, suspended particles, and softened depth edges,
+    Caustics, light-net projection, suspended particles, refractive wobble, Water distortion, fluid
+    lens, suspended particles without requiring the card image's original subject.
 avoidRules:
   - dry
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-077.webp
 attributes:
-  negativePrompt: dry
+  negativePrompt: >-
+    dry, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
+    fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random glow
+    overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

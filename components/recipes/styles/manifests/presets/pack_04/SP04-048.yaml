@@ -13,29 +13,89 @@ tags:
   - concept-art
 visualDna:
   aesthetic: >-
-    Production character-turnaround style focused on design legibility, neutral presentation, and pipeline
-    handoff clarity
+    designed subjects Sheet acts as a transferable illustration router: start from Production
+    designed subjects-turnaround style focused on design legibility, neutral presentation, and
+    pipeline handoff clarity, Scale, turnaround views, callout annotations and production
+    concept-art system built from iteration discipline, silhouette testing, material exploration,
+    design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X
+    instead of recreating a fixed demo image.
   subject_treatment: >-
-    Clean contour hierarchy with construction-line discipline, silhouette consistency, and annotation-friendly
-    edge clarity
-  color_and_tone: Flat + Occlusion, neutral reference palette, material IDs
-  lighting_and_shadow: Neutral, studio-reference, shadow-accurate fidelity
-  texture_and_material: Material callouts
-  camera_and_composition: Neutral stance consistency with proportion-locked turnaround consistency across orthographic views
-  atmosphere_and_mood: Neutral, design, professional review, iterative feedback
-  rendering_and_quality: Production ready, pipeline clarity, handoff precision
-  key_features: Scale, turnaround views, callout annotations
+    Transform any prompt subject through Clean contour hierarchy with construction-line discipline,
+    silhouette consistency, and annotation-friendly edge clarity; preserve the requested subject
+    while routing it through design exploration, asset logic, value blocking, scale cues, iteration
+    rows, paintover marks, or production-readability constraints, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Flat + Occlusion, neutral reference palette, material IDs; use color as concept
+    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
+    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Neutral, studio-reference, shadow-accurate fidelity, process-led value
+    structure, readable highlights, and style-specific shadow behavior; shape light for ideation
+    clarity through value block-in, keyframe contrast, material test highlights, callout
+    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Material callouts, production design clarity, iteration logic, silhouette readability,
+    material exploration, and concept-art decision pressure; surface detail should reveal brush
+    passes, photobash integration, low-poly facets, callout texture, massing blocks, costume
+    fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent
+    and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Neutral stance consistency with proportion-locked turnaround
+    consistency across orthographic views; compose through production hierarchy, variants,
+    orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe
+    balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Neutral, design, professional review, iterative feedback; derive mood from
+    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
+    cinematic intent, or production-room clarity, letting the style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Production ready, pipeline clarity, handoff precision; finish with concept-art
+    usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or
+    overpolished final render when iteration is intended, clean denoised surfaces where appropriate,
+    and enough process evidence to make the style recognizable.
+  key_features: >-
+    Production designed subjects-turnaround style focused on design legibility, neutral
+    presentation, and pipeline handoff clarity; Scale, turnaround views, callout annotations; Flat +
+    Occlusion, neutral reference palette, material IDs; Material callouts, production design
+    clarity, iteration logic, silhouette readability, material exploration, and concept-art decision
+    pressure; Neutral stance consistency with proportion-locked turnaround consistency across
+    orthographic views
   creative_brief: >-
-    Apply character-turnaround sheet grammar to any input: proportion locking, neutral lighting, orthographic
-    consistency, material callouts, annotation-ready edges, and scale discipline should support design handoff
-    without requiring humanoid characters, T-poses, expression sheets, labels, or fixed sheet layouts.
+    Apply designed subjects Sheet as an illustration preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Production designed subjects-turnaround style focused on design legibility, neutral
+    presentation, and pipeline handoff clarity, Scale, turnaround views, callout annotations,
+    Material callouts, production design clarity, iteration logic, silhouette readability, material
+    exploration, and concept-art decision pressure without requiring the card image's original
+    subject.
 avoidRules:
   - background
   - action
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-048.webp
 attributes:
-  negativePrompt: background, action
+  negativePrompt: >-
+    background, action, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash
+    clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

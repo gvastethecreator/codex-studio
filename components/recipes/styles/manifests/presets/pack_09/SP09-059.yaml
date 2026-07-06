@@ -12,30 +12,59 @@ tags:
   - texture-and-materiality
   - elemental-and-fx
 visualDna:
-  aesthetic: Floating spheres
-  subject_treatment: Thin film
-  color_and_tone: Iridescent
-  lighting_and_shadow: Reflective
-  texture_and_material: Liquid surface
-  camera_and_composition: Sphere
-  atmosphere_and_mood: Light, fun
-  rendering_and_quality: Delicate, childhood
-  key_features: Transparency
+  aesthetic: >-
+    Soap Bubbles behaves like a controlled elemental effect layer: start from Floating spheres,
+    Liquid surface, and Sphere, then turn motion, temperature, particles, translucency, refraction,
+    glow, and transient energy behavior into portable surface behavior rather than a literal
+    material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Thin film: preserve identity and pose while letting forms
+    emit, flow, spark, vaporize, splash, glow, or scatter through edge profile, surface breakup,
+    thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Iridescent as the material palette, with controlled value separation, local color variation,
+    and hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Reflective define the light response: highlights, occlusion, translucency, specular scatter,
+    matte falloff, or rim behavior should reveal Soap Bubbles without hiding the prompt subject.
+  texture_and_material: >-
+    Render Liquid surface through flow direction, particle density, turbulence, glow falloff,
+    splashes, trails, and vapor edges; keep grain scale, residue, buildup, fractures, fiber, pores,
+    or surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Sphere as reusable material rhythm: macro-friendly for texture tasks, but able to
+    wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Light, fun by using movement, danger, spectacle, instability, temperature, and
+    sensory intensity; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Delicate, childhood material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Floating spheres; Thin film; Liquid surface; Reflective; Sphere
   creative_brief: >-
-    Capture the fragile cosmology of soap bubbles where iridescent films swirl across perfect spheres like
-    miniature weather systems on liquid planets, transparency layering reality behind shifting curtains of
-    spectral color. Each sphere should catch the world in convex miniature while its surface shimmers with
-    approaching dissolution. Render the poetics of the temporary, geometry that lives only to catch light
-    before it pops. Use Soap Bubbles as portable surface/render behavior over any input: map its texture,
-    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a
-    literal material sample, macro tile, wall, landscape, source object, or scene where the material naturally
-    appears.
+    Route any subject through Soap Bubbles as a transferable elemental/FX visual system while
+    preserving the prompt's subject, action, and setting. Capture the fragile cosmology of soap
+    bubbles where iridescent films swirl across perfect spheres like miniature weather systems on
+    liquid planets, transparency layering reality behind shifting curtains of spectral color. Each
+    sphere should catch the world in convex miniature while its surface shimmers with approaching
+    dissolution. Render the poetics of the temporary, geometry that lives only to catch light before
+    it pops. Use Soap Bubbles as portable surface/render behavior over any input: map its texture,
+    light response, edge wear, color chemistry, and tactile rhythm onto the subject instead of
+    requiring a literal material sample, macro tile, wall, landscape, source object, or scene where
+    the material naturally appears.
 avoidRules:
   - plastic ball
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-059.webp
 attributes:
-  negativePrompt: plastic ball
+  negativePrompt: plastic ball, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

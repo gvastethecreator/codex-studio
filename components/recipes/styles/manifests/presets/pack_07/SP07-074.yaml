@@ -13,44 +13,101 @@ tags:
   - toy-craft-and-miniature-architecture
 visualDna:
   aesthetic: >-
-    Toy-Scale Sectional Cutaway within 6. Toy Craft And Miniature Architecture: a reusable Architecture &
-    Interior visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
-    Keep the result transferable across subjects while preserving Toy-Scale Sectional Cutaway's specific style
-    identity.
+    Toy-Scale Sectional Cutaway acts as a transferable architecture/interior router: removed front
+    face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile
+    texture; fuse it with toy, craft, and miniature construction grammar with visible fabrication,
+    scale cues, modular seams, handmade material logic, and playful sectional clarity; route spatial
+    grammar, material behavior, scale, ornament, and light over prompt X without requiring the
+    default sample anchor, fixed spatial set, landscape setup, or object sample.
   subject_treatment: >-
-    Define Toy-Scale Sectional Cutaway through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Preserve prompt subject, action, and context while translating any requested subject through
+    model-scale mass, folded or molded construction, exposed seams, modular parts, softened toy
+    geometry, and craft-readable joinery; treat removed front face, stacked miniature interior
+    zones, painted toy wood, pastel wall fields, tiny textile texture as massing, edge, surface,
+    joinery, threshold, or ornament behavior rather than a mandatory building scene.
   color_and_tone: >-
-    Use a Toy-Scale Sectional Cutaway-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through material-authentic craft color, toy primary blocks, sugar or sand warmth,
+    translucent glass tint, fungal cream, and small playful accents; let source cues such as removed
+    front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile
+    texture decide accent hierarchy, material temperature, and value separation while staying
+    attached to the requested content.
   lighting_and_shadow: >-
-    Use lighting that makes Toy-Scale Sectional Cutaway recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Use soft model shadows, glossy toy highlights, sugar sparkle, bottle refraction, damp sand
+    sheen, and miniature display clarity; make light reveal joints, relief, material depth, scale,
+    and atmosphere from removed front face, stacked miniature interior zones, painted toy wood,
+    pastel wall fields, tiny textile texture without replacing prompt X with a stock architectural
+    render.
   texture_and_material: >-
-    Use materials and textures that reinforce Toy-Scale Sectional Cutaway: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render paper fiber, ABS plastic, damp sand, corrugated cardboard, vinyl seams, icing, fungal
+    skin, bottle glass, toy wood, and cutaway surfaces; prioritize the tactile signals in removed
+    front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny textile
+    texture, with believable surface response, denoised grain, coherent wear, and no generic
+    wallpaper texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Toy-Scale Sectional Cutaway: perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
+    Frame through close model-detail crops, section cuts, modular repetition, visible tabs or seams,
+    scale compression, and object-like built logic; convert removed front face, stacked miniature
+    interior zones, painted toy wood, pastel wall fields, tiny textile texture into reusable
+    perspective, crop, depth, section, modular rhythm, and negative-space rules instead of one fixed
+    style sample layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Toy-Scale Sectional Cutaway: specific, coherent, and distinct, with emotional
-    tone carried by visual systems rather than narrative captioning.
+    Carry mood through playful craft, fragile impermanence, edible celebration, ecological
+    miniature, curio precision, or sectional wonder without product-photo lock; the preset can
+    support adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when
+    prompt X asks for them while keeping the architectural identity readable.
   rendering_and_quality: >-
-    Render Toy-Scale Sectional Cutaway with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean miniature finish with legible material scale, no brand logo, no product
+    catalog staging, no empty abstract tile; keep clean denoise, legible construction, stable object
+    or anatomy structure when applicable, no watermark, no fake readable text, no logo, no camera
+    prop, and no prompt-literal card copy.
   key_features: >-
-    Prioritize Toy-Scale Sectional Cutaway's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    removed front face, stacked miniature interior zones, painted toy wood, pastel wall fields, tiny
+    textile texture; model-scale mass, folded or molded construction, exposed seams, modular parts,
+    softened toy geometry, and craft-readable joinery; paper fiber, ABS plastic, damp sand,
+    corrugated cardboard, vinyl seams, icing, fungal skin, bottle glass, toy wood, and cutaway
+    surfaces; close model-detail crops, section cuts, modular repetition, visible tabs or seams,
+    scale compression, and object-like built logic
   creative_brief: >-
-    Create a style-card that translates Toy-Scale Sectional Cutaway into a portable visual system for 6. Toy
-    Craft And Miniature Architecture. Preserve the preset identity through style mechanics, not a fixed scene,
-    character, prop, or story beat.
+    Apply Toy-Scale Sectional Cutaway after prompt X as a transferable architecture/interior style
+    layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset
+    supplies removed front face, stacked miniature interior zones, painted toy wood, pastel wall
+    fields, tiny textile texture, toy, craft, and miniature construction grammar with visible
+    fabrication, scale cues, modular seams, handmade material logic, and playful sectional clarity,
+    material discipline, spatial grammar, and negative controls without requiring a single spatial
+    sample, product-photo setup, aisle-like default, or empty abstraction.
 avoidRules:
   - closed uncut wall hiding section
+  - closed facade
+  - sealed wall
+  - dollhouse product photo
+  - person
+  - market aisle
+  - library aisle
+  - corridor
+  - empty abstraction
+  - brand logo
+  - product photo
+  - child or person scene
+  - full-scale realism
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - camera prop
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-074.webp
 attributes:
-  negativePrompt: closed uncut wall hiding section, sealed exterior facade
+  negativePrompt: >-
+    closed uncut wall hiding section, closed facade, sealed wall, dollhouse product photo, person,
+    market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or
+    person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones,
+    corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark,
+    camera prop, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

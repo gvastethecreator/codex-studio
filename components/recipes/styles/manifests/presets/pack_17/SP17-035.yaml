@@ -15,36 +15,61 @@ tags:
   - penitent-baroque
 visualDna:
   aesthetic: >-
-    Penitential baroque medieval fantasy with tall devotional silhouettes, thorn crowns, reliquaries, veils,
-    and severe sacred geometry.
+    Penitential baroque medieval fantasy with tall devotional silhouettes, thorn crowns,
+    reliquaries, veils, and severe sacred geometry.
   subject_treatment: >-
-    Transform any subject with penitent baroque icon logic, sorrowful vertical emphasis, devotional brass
-    accents, candlelit restraint, and solemn armor-like mass without imposing a fixed saint role.
-  color_and_tone: Bone white, black ink, muted crimson accent, tarnished gold accent, and soft gray wash used sparingly.
+    Transform any subject with penitent baroque icon logic, sorrowful vertical emphasis, devotional
+    brass accents, candlelit restraint, and solemn armor-like mass without imposing a fixed saint
+    role.
+  color_and_tone: >-
+    Bone white, black ink, muted crimson accent, tarnished gold accent, and soft gray wash used
+    sparingly.
   lighting_and_shadow: Icon-like frontal light, clean halo geometry, and simple shadow masses.
   texture_and_material: >-
-    Smooth vellum, polished black ink, brushed gold-like planes, wax, cloth, and carved stone without gritty
-    buildup.
-  camera_and_composition: Tall devotional icon crop, strong vertical silhouette, symmetrical framing, and no readable scripture.
-  atmosphere_and_mood: Penitent, solemn, ceremonial, mournful, and sacred without copied game identities.
+    Smooth vellum, polished black ink, brushed gold-like planes, wax, cloth, and carved stone
+    without gritty buildup.
+  camera_and_composition: >-
+    Tall devotional icon crop, strong vertical silhouette, symmetrical framing, and no readable
+    scripture.
+  atmosphere_and_mood: >-
+    Carry the prompt through Penitent, solemn, ceremonial, mournful, and sacred without copied game
+    identities; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional
+    monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the
+    preset's medieval-zine identity.
   rendering_and_quality: Clean gothic illustration with elegant contour lines, broad values, and controlled ornament.
   creative_brief: >-
-    Reusable visual system for any subject needing penitent gothic mood, devotional baroque weight, sorrowful
-    verticality, and sacred icon restraint.
+    Reusable visual system for any subject needing penitent gothic mood, devotional baroque weight,
+    sorrowful verticality, and sacred icon restraint. Apply after prompt X: prompt X supplies
+    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
+    Penitent Baroque Icon; Penitential baroque medieval fantasy with tall devotional silhouettes;
+    thorn crowns; reliquaries; veils; severe sacred geometry, mood, material behavior, framing
+    logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed
+    monster, readable text, or sample-card composition.
+  key_features: >-
+    Penitent Baroque Icon; Penitential baroque medieval fantasy with tall devotional silhouettes;
+    thorn crowns; reliquaries; veils; severe sacred geometry
 avoidRules:
   - copied game armor
   - readable scripture
   - excessive thorn detail
-  - black-on-black costume
+  - black on black costume
   - explicit gore
   - watermark
   - text
+  - readable tarot labels
+  - fake manuscript text
+  - dirty photocopy overload
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-035.webp
 attributes:
   negativePrompt: >-
-    copied game armor, readable scripture, excessive thorn detail, black-on-black costume, explicit gore,
-    watermark, text
+    copied game armor, readable scripture, excessive thorn detail, black on black costume, explicit
+    gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload,
+    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
+    art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

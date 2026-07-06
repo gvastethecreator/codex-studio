@@ -59,7 +59,7 @@ const FALLBACK_MODELS: CodexModel[] = [
     additionalSpeedTiers: ['fast'],
     inputModalities: ['text', 'image'],
     supportsPersonality: true,
-    isDefault: true,
+    isDefault: false,
   },
   {
     id: 'gpt-5.4',
@@ -76,7 +76,7 @@ const FALLBACK_MODELS: CodexModel[] = [
     additionalSpeedTiers: ['fast'],
     inputModalities: ['text', 'image'],
     supportsPersonality: true,
-    isDefault: false,
+    isDefault: true,
   },
   {
     id: 'gpt-5.3-codex',
@@ -171,7 +171,7 @@ function mapModel(entry: any): CodexModel | null {
 }
 
 function pickRecommendedModel(models: CodexModel[]) {
-  const preferred = ['gpt-5.4-mini', 'gpt-5.3-codex-spark'];
+  const preferred = ['gpt-5.4', 'gpt-5.4-mini', 'gpt-5.3-codex-spark'];
   for (const modelId of preferred) {
     if (models.some((model) => model.id === modelId)) {
       return modelId;

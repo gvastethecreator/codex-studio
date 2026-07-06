@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP15-017
 packId: pack_15
-name: Solar Orchard Commons
+name: Solar Commons Canopy
 category: 3. Eco, Repair & Climate Punks
 version: 1
 supportedTasks:
@@ -15,35 +15,56 @@ tags:
   - civic-agriculture
 visualDna:
   aesthetic: >-
-    grounded solarpunk orchard commons as a flat-to-painterly poster card built around shared solar shade
-    panels, gardeners, repair ladders, and food-growing civic paths.
+    Solar Commons Canopy operates as a portable punk-spectrum router: combine Solar Commons Canopy
+    identity cues through solar shade planes; repair ladders; edible plant blocks; clay water
+    accents; recycled metal; repair-ladder geometry with repair-climate punk grammar with civic
+    stewardship, solar shade, recycled infrastructure, drought adaptation, seed archives, rain
+    systems, and optimistic constraint, so the preset supplies retrofit style behavior rather than a
+    required venue, mascot, prop bundle, or card composition.
   subject_treatment: >-
-    Repair-culture shapes, civic infrastructure, practical climate machines, and human-scaled commons. Core
-    composition uses solar canopy, gardeners, ladders, edible plants, communal paths.
-  color_and_tone: leaf green, warm solar gold, clay red, soft sky blue
-  lighting_and_shadow: flat sun-through-panel blocks, leaf color bounce, clear afternoon shadow shapes
+    Preserve prompt X's subject, action, scale, and setting while translating forms through repair
+    seams, modular shade panels, civic tool marks, reused materials, plant-tech edges, condensation
+    systems, and cooperative maintenance silhouettes; motifs can become contour, surface, costume,
+    equipment, atmosphere, or infrastructure without replacing the prompt.
+  color_and_tone: >-
+    Map color through sun yellow, sage, white ceramic, recycled aluminum, dry ochre, leaf green,
+    rain blue, and calm public-service neutrals; keep dominant, support, and accent values readable,
+    avoid muddy black, and let palette code materials, signals, climate, ritual, salvage, or repair
+    pressure.
+  lighting_and_shadow: >-
+    Use hard solar panels of light, greenhouse diffusion, rain reflections, condenser glow,
+    shade-cloth cuts, and bright civic air; lighting should reveal the punk system, preserve the
+    user's subject, separate near and distant value planes, and avoid crushed blacks or noisy dark
+    texture.
   texture_and_material: >-
-    solar panel planes, broad fruit-tree shapes, clay water jar blocks, seed crates without logos, recycled
-    metal accents, linen workwear color fields
+    Render ceramic tile, repaired metal, woven shade cloth, seedlings, rain pipes, recycled plastic,
+    aluminum frames, and chalky dust; keep material scale coherent, surface marks motivated, and
+    tactile details strong enough to route style without becoming pasted grunge.
   camera_and_composition: >-
-    Rooftops, riversides, roofs, blocks, terraces, and outdoor workshops with lived-in pragmatism. Keep depth
-    legible and avoid default hallway, aisle, or empty studio staging.
-  atmosphere_and_mood: hopeful, practical, social, grounded
+    Compose through civic repair hierarchy, canopy rhythm, modular infrastructure, readable
+    maintenance paths, and generous space around the prompt subject as reusable framing grammar for
+    characters, creatures, objects, vehicles, environments, symbols, or full scenes without one
+    required card layout.
+  atmosphere_and_mood: >-
+    Carry mood through organized optimism, public care, dry resilience, communal invention,
+    practical tenderness, and climate-aware patience; the tone may become adult, romantic, violent,
+    comic, sensual, eerie, civic, or strange when prompt X asks, while the punk family remains
+    legible.
   rendering_and_quality: >-
-    Stylized x-punk digital painting / artbook-card illustration with drawn contours, controlled painterly
-    planes, readable dark-gray shadows instead of flat black, clean denoised surfaces, strong identity,
-    moderate texture, medium-large detail, and no photorealism, AAA concept-art polish, PBR material
-    simulation, or hyper-detail.
-  key_features: solar canopy, gardeners, ladders, edible plants, communal paths
+    Finish with bright solarpunk/repair illustration with clean surfaces, restrained texture, no
+    beige sameness, and no generic glass-utopia gloss; prioritize clean denoise, bold readable
+    shapes, controlled grit, prompt preservation, no watermark, no readable text, and no generic
+    concept-art polish.
+  key_features: >-
+    solar shade planes; repair ladders; edible plant blocks; clay water accents; recycled metal;
+    repair-ladder geometry
   creative_brief: >-
-    Use solarpunk once as grounded civic agriculture: people repair and grow food under solar shade, no glass
-    utopia monoculture and no leaf-logo green branding. Keep the result representative rather than
-    over-abstract; make one character in their environment the anchor, with motifs as background, costume,
-    weather, architecture, or social pressure instead of a foreground prop. Favor flat-to-painterly editorial
-    illustration, gouache poster aesthetics, clean graphic-novel card art, or stylized animation-background
-    art over realism, photoreal photoreal painterly realism, cinematic key art, scratchy print noise, or
-    hyper-detailed concept art. Use few bold color/value zones, low-to-moderate texture, large shapes, clean
-    surfaces, shallow poster depth, and finish denoised with no excessive noise or ultra-fine detail.
+    Use Solar Commons Canopy after prompt X as a transferable punk-spectrum layer: prompt X supplies
+    subject, action, setting, tone, and intensity, while the preset supplies solar shade planes,
+    repair ladders, edible plant blocks, clay water accents, recycled metal, repair-ladder geometry,
+    color logic, light response, material behavior, composition rhythm, mood pressure, and finish
+    discipline without requiring a fixed venue, fixed cast, fixed machine, repeated prop bundle, or
+    sample-card composition.
 avoidRules:
   - photoreal
   - watermark
@@ -54,25 +75,38 @@ avoidRules:
   - repeated-props
   - excessive-noise
   - ultra-fine-detail
+  - generic glass utopia
+  - greenwashing postcard
+  - beige eco mood board
+  - fixed punk venue
+  - required mascot
+  - literal sample-card setup
+  - repeated prop bundle
+  - muddy black fields
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-017.webp
 attributes:
   negativePrompt: >-
-    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic realism, AAA key
-    art, cinematic concept-art render, photographic skin pores, realistic foreground portrait, realistic
-    facial hair detail, lens blur, bokeh, depth-of-field photo look, realistic perspective drama, generic
-    soldier hero, guard pin-up, weapon-first pose, leaf-logo emblem, eco badge, green branding symbol, luxury
-    eco resort, endless greenhouse, generic glass city, empty landscape postcard, photoreal garden render,
-    market aisle, tiny leaf clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed
-    concept art, scratchy print noise, tiny black linework, watermark, text, logo, generic style,
-    over-abstract, interchangeable preset, duplicated motifs, generic glass utopia, unmotivated market aisle,
-    unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall fixation, chair
-    fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation, bird fixation, excessive
-    noise, ultra-fine detail, over-sharpened microtexture, over-rendered machinery, noisy grime, tiny rivets
-    everywhere, busy texture chatter, realistic uniform portrait, uniformed officer hero, foreground guard
-    portrait, detailed tattoo focus, dense machinery wallpaper, overcrowded scene, high-frequency surface
-    detail, cinematic close-up portrait, flat black fill, crushed black, pure black masses, muddy black
-    fields, generic American illustration, generic Western RPG card art
+    photoreal, hyperreal, realistic render, photoreal photoreal painterly realism, cinematic
+    realism, AAA key art, cinematic concept-art render, photographic skin pores, realistic
+    near-plane portrait, realistic facial hair detail, lens blur, bokeh, depth-of-field photo look,
+    realistic perspective drama, generic soldier hero, guard pin-up, weapon-first pose, leaf-logo
+    emblem, eco badge, green branding symbol, luxury eco resort, endless greenhouse, generic glass
+    city, empty landscape postcard, photoreal garden render, commerce-system aisle, tiny leaf
+    clutter, HDR lens realism, 3D render look, PBR material simulation, hyper-detailed concept art,
+    scratchy print noise, tiny black linework, watermark, text, logo, generic style, over-abstract,
+    interchangeable preset, duplicated motifs, generic glass utopia, unmotivated commerce-system
+    aisle, unmotivated library aisle, fantasy corridor, random camera held by subject, studio wall
+    fixation, chair fixation, curtain fixation, lamp fixation, scarf fixation, pedestal fixation,
+    bird fixation, excessive noise, ultra-fine detail, over-sharpened microtexture, over-rendered
+    machinery, noisy grime, tiny rivets everywhere, busy texture chatter, realistic uniform
+    portrait, uniformed officer hero, near-plane guard portrait, detailed tattoo focus, dense
+    machinery wallpaper, overcrowded scene, high-frequency surface detail, cinematic close-up
+    portrait, flat black fill, crushed black, pure black masses, muddy black fields, generic
+    American illustration, generic Western RPG card art, repeated-props, greenwashing postcard,
+    beige eco mood board, fixed punk venue, required mascot, literal sample-card setup, repeated
+    prop bundle, readable text, prompt-literal card reuse, generic cyberpunk wallpaper
 taxonomy:
   packId: pack_15
   packName: Punk Spectrum Vault

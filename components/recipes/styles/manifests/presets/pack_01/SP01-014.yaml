@@ -12,21 +12,45 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Night photography film
-  subject_treatment: Halation around lights
-  color_and_tone: Cool tungsten balance
-  lighting_and_shadow: Artificial light
-  texture_and_material: Medium grain
-  camera_and_composition: Red halation glow
-  atmosphere_and_mood: Nocturnal, moody
-  rendering_and_quality: Cinematic, moody
-  key_features: Red halos
+  aesthetic: >-
+    Cinestill 800T acts as a transferable photographic style router: begin from Night photography
+    film, Red halos, and analog photographic process system built from film stock response, lens
+    imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Halation around lights; preserve the prompt scene while routing
+    detail through stock softness, halation, vignetting, motion softness, or large-format clarity,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Cool tungsten balance; let palette come from emulsion bias, slide-film saturation,
+    monochrome silver values, aged dye shift, or instant-film chemistry, with value separation and
+    white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Artificial light; shape highlights and shadows through film latitude, flash falloff, long
+    exposure, tungsten balance, or chemical rolloff, preserving believable exposure, shadow density,
+    highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Medium grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
+    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Red halation glow; use camera format, crop, lens character, depth of field,
+    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Nocturnal, moody; derive mood from memory, imperfection, tactile chemistry,
+    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Cinematic, moody; finish as believable analog capture with coherent grain scale,
+    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: Night photography film; Red halos; Cool tungsten balance; Artificial light; Red halation glow
   creative_brief: >-
-    Tungsten-balanced darkness with red halation blooming around every hard light source. Highlights bleed
-    like crimson chemical halos into cool shadow, while medium grain keeps image tactile and cinematic. The
-    style is nocturnal sensor poetry, not a requirement for city streets. Apply this photographic look over
-    any input: preserve lens behavior, exposure logic, color response, framing discipline, and artifact
-    pattern while avoiding a required place, face, travel scene, landscape, or narrative setup.
+    Apply Cinestill 800T as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Night photography film, Cool tungsten balance, Artificial light, Medium
+    grain, and Red halation glow through optics, exposure, palette, surface response, timing, and
+    finish without requiring the card image's original subject.
 avoidRules:
   - illustration
   - painting
@@ -43,12 +67,22 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-014.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, digital HDR overprocessing, plastic noise, fake film border, oversharpened
+    clarity, generic vintage filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

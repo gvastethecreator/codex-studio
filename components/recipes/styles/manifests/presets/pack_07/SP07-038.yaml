@@ -13,32 +13,109 @@ tags:
   - civic-infrastructure-and-specialty-spaces
 visualDna:
   aesthetic: >-
-    Chalky subterranean mineral language where calcic module, buried pressure and historic reverence define
-    surface.
+    Ossuary Subterranean acts as a transferable architecture/interior router: ossuary-subterranean
+    style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium
+    bands, damp buried stone; fuse it with civic infrastructure grammar with public-use wear,
+    technical service logic, institutional material memory, and specialty-space performance; route
+    spatial grammar, material behavior, scale, ornament, and light over prompt X without requiring
+    the default sample anchor, fixed spatial set, landscape setup, or object sample.
   subject_treatment: >-
-    Calcic modular repetition, low sequenced arches, compressed niches and chalk-like bands without fixed
-    funeral corridor.
-  color_and_tone: Bone white, dirt, sepia age, calcium yellow, shadow brown, cartilage cream
-  lighting_and_shadow: Low warm points, flicker across calcium and dense shadows in compressed depth.
-  texture_and_material: Chalky calcium, mineral porosity, dusty mortar and damp transitions of buried stone.
-  camera_and_composition: Compressed subterranean pressure and repetitive calcic stacking.
-  atmosphere_and_mood: Solemn, compressed and reverential, with deep-time stillness.
-  rendering_and_quality: Low-light archaeological fidelity with legible mineral microtexture and no explicit horror.
-  key_features: Calcic courses, crossed bands, mineral niches and low-vault pressure.
+    Preserve prompt subject, action, and context while translating any requested subject through
+    infrastructure anchors, service junctions, public-scale material wear, modular containment,
+    utility grids, and readable built function; treat ossuary-subterranean style sample with chalky
+    calcic mineral modules, low compressed arches, dusty mortar, calcium bands, damp buried stone as
+    massing, edge, surface, joinery, threshold, or ornament behavior rather than a mandatory
+    building scene.
+  color_and_tone: >-
+    Map color through civic neutrals, safety accents, oxidized metal, ceramic or concrete value
+    blocks, damp fluorescents, and specialty glow cues; let source cues such as ossuary-subterranean
+    style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium
+    bands, damp buried stone decide accent hierarchy, material temperature, and value separation
+    while staying attached to the requested content.
+  lighting_and_shadow: >-
+    Use fluorescent pressure, institutional bounce, service LEDs, humid or aquatic diffusion, buried
+    low light, and public-space shadow compression; make light reveal joints, relief, material
+    depth, scale, and atmosphere from ossuary-subterranean style sample with chalky calcic mineral
+    modules, low compressed arches, dusty mortar, calcium bands, damp buried stone without replacing
+    prompt X with a stock architectural render.
+  texture_and_material: >-
+    Render tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables,
+    patina, water stains, and public-use abrasion; prioritize the tactile signals in
+    ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches,
+    dusty mortar, calcium bands, damp buried stone, with believable surface response, denoised
+    grain, coherent wear, and no generic wallpaper texture.
+  camera_and_composition: >-
+    Frame through tight infrastructure detail crops, service-grid repetition, compressed public
+    thresholds, wayfinding rhythm, and specialty-space section logic; convert ossuary-subterranean
+    style sample with chalky calcic mineral modules, low compressed arches, dusty mortar, calcium
+    bands, damp buried stone into reusable perspective, crop, depth, section, modular rhythm, and
+    negative-space rules instead of one fixed style sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through public memory, controlled utility, preservation, overload, reverence, damp
+    atmosphere, or quiet abandonment without turning into narrative scene; the preset can support
+    adult, strange, sensual, severe, playful, ominous, quiet, or monumental prompts when prompt X
+    asks for them while keeping the architectural identity readable.
+  rendering_and_quality: >-
+    Finish with high-readability infrastructure finish with denoised grime, non-readable wayfinding
+    shapes, no UI/screens, and no corridor lock; keep clean denoise, legible construction, stable
+    object or anatomy structure when applicable, no watermark, no fake readable text, no logo, no
+    camera prop, and no prompt-literal card copy.
+  key_features: >-
+    ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches,
+    dusty mortar, calcium bands, damp buried stone; infrastructure anchors, service junctions,
+    public-scale material wear, modular containment, utility grids, and readable built function;
+    tile, steel, concrete, glass, acrylic, brass, paper, bone-mineral substitutes, cables, patina,
+    water stains, and public-use abrasion; tight infrastructure detail crops, service-grid
+    repetition, compressed public thresholds, wayfinding rhythm, and specialty-space section logic
   creative_brief: >-
-    Organize any composition through chalky mineral module, subterranean pressure and low reverent light.
-    Repetition, dust and porosity carry the style without depending on corridors, literal catacombs,
-    bone/remains language, exposed human remains, gore, fresh remains, horror display or closed ritual scene.
+    Apply Ossuary Subterranean after prompt X as a transferable architecture/interior style layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    ossuary-subterranean style sample with chalky calcic mineral modules, low compressed arches,
+    dusty mortar, calcium bands, damp buried stone, civic infrastructure grammar with public-use
+    wear, technical service logic, institutional material memory, and specialty-space performance,
+    material discipline, spatial grammar, and negative controls without requiring a single spatial
+    sample, product-photo setup, aisle-like default, or empty abstraction.
 avoidRules:
   - bone/remains language
   - exposed human remains
   - gore
   - fresh remains
   - horror display
+  - human remains
+  - skulls
+  - bones
+  - catacomb corridor
+  - dungeon hall
+  - fantasy tunnel
+  - ritual scene
+  - camera prop
+  - empty abstraction
+  - long corridor
+  - people crowd
+  - readable map or sign
+  - office furniture focus
+  - fixed building-only scene
+  - mandatory interior interior zones
+  - corridor perspective
+  - furniture showroom
+  - market aisle
+  - library aisle
+  - prompt-required card
+  - readable text
+  - logo
+  - watermark
+  - mandatory interior set
+  - prompt-literal card
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-038.webp
 attributes:
-  negativePrompt: bone/remains language, exposed human remains, gore, fresh remains, horror display
+  negativePrompt: >-
+    bone/remains language, exposed human remains, gore, fresh remains, horror display, human
+    remains, skulls, bones, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera
+    prop, empty abstraction, long corridor, people crowd, readable map or sign, office furniture
+    focus, fixed building-only scene, mandatory interior interior zones, corridor perspective,
+    furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo,
+    watermark, mandatory interior set, prompt-literal card
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

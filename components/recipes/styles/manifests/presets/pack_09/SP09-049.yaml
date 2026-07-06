@@ -13,29 +13,57 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Hook and loop
-  subject_treatment: Tiny hooks
-  color_and_tone: Black
-  lighting_and_shadow: Plastic glint
-  texture_and_material: Scratchy
-  camera_and_composition: 'Compose for Velcro using its key spatial cues: Rows of hooks.'
-  atmosphere_and_mood: Functional
-  rendering_and_quality: Utility, fastener
-  key_features: Rows of hooks
+  aesthetic: >-
+    Velcro treats fabrication as visible style language: start from Hook and loop, Scratchy, and
+    Rows of hooks, then turn manufacturing process, tooling marks, seams, tolerances, and industrial
+    material behavior into portable surface behavior rather than a literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Tiny hooks: preserve identity and pose while letting forms
+    carry manufactured seams, tolerances, pressure marks, and finish logic through edge profile,
+    surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Black as the material palette, with controlled value separation, local color variation, and
+    hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Plastic glint define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Velcro without hiding the prompt subject.
+  texture_and_material: >-
+    Render Scratchy through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Rows of hooks as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Functional by using use, fabrication, utility, and cultural material association;
+    the material should color the scene's feeling while preserving the user's requested subject and
+    setting.
+  rendering_and_quality: >-
+    Finish with Utility, fastener material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Hook and loop; Tiny hooks; Scratchy; Plastic glint; Rows of hooks
   creative_brief: >-
-    Compose the functional micro-landscape of hook-side Velcro where tiny plastic barbs stand in rows like a
-    nylon forest awaiting its loop partner, each hook a mushroom-cap curve waiting to catch and hold. The
-    surface should look scratchy even to the eye, catching plastic glints across the regimented geometry.
-    Capture the beauty of the fastener, engineered grip designed at millimeter scale. Use Velcro as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    Route any subject through Velcro as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Compose the functional micro-landscape of
+    hook-side Velcro where tiny plastic barbs stand in rows like a nylon forest awaiting its loop
+    partner, each hook a mushroom-cap curve waiting to catch and hold. The surface should look
+    scratchy even to the eye, catching plastic glints across the regimented geometry. Capture the
+    beauty of the fastener, engineered grip designed at millimeter scale. Use Velcro as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - smooth
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-049.webp
 attributes:
-  negativePrompt: smooth
+  negativePrompt: smooth, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

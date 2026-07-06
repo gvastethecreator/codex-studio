@@ -12,28 +12,85 @@ tags:
   - cinematic-and-media
   - lighting-and-atmosphere
 visualDna:
-  aesthetic: Fractured image
+  aesthetic: >-
+    Prism Effect acts as a transferable cinematic-media router: start from Fractured image, Prism
+    Effect light transport, optical artifacts, exposure discipline, atmosphere depth, and
+    camera-response behavior, Rainbows, color splitting, light dispersion, crystal edge and portable
+    lighting and atmosphere system built from light transport, exposure behavior, optical
+    distortion, volumetric density, reflection, and camera response, then apply the media behavior
+    to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Prism Effect: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 5. Lighting And Atmosphere cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Rainbow edges, spectral fringe, red-to-violet split, prismatic white
-  lighting_and_shadow: Refracted, glass-bent, crystal-split spectrum
-  texture_and_material: Glass distortion, prism face, beveled edge refraction
-  camera_and_composition: Kaleidoscope, symmetrical fracture, repeating geometry
-  atmosphere_and_mood: Dreamy, broken, fragmented vision, beauty-through-distortion
-  rendering_and_quality: Artsy, psychedelic, optical light-bending, refractive polish
-  key_features: Rainbows, color splitting, light dispersion, crystal edge
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Prism Effect: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 5.
+    Lighting And Atmosphere cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while letting the named light, atmosphere, or optical effect
+    transform silhouette, depth, value, and surface response, keeping the requested identity,
+    silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Rainbow edges, spectral fringe, red-to-violet split, prismatic white; use color
+    as light temperature, spectral split, water attenuation, neon bounce, candle warmth, night
+    conversion, prism dispersion, or atmospheric scattering, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Refracted, glass-bent, crystal-split spectrum, process-led exposure
+    structure, readable highlights, and style-specific shadow behavior; make the named light
+    behavior visible through caustics, rim separation, bokeh, flare, strobe pulses, volumetric rays,
+    split contrast, or softbox falloff, so exposure and shadow structure support the media process
+    without overwriting the requested content.
+  texture_and_material: >-
+    Render Glass distortion, prism face, beveled edge refraction; surface detail should reveal
+    particles, lens bloom, refraction, mist, glow halos, exposure rolloff, liquid distortion, or
+    optical streaks without hiding prompt detail, keeping artifact scale coherent and avoiding noisy
+    filler texture.
+  camera_and_composition: >-
+    Structure the image through Kaleidoscope, symmetrical fracture, repeating geometry; compose
+    around light direction, reflection planes, depth layers, exposure zones, silhouette edges, lens
+    distortion, or atmospheric perspective without forcing a location, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dreamy, broken, fragmented vision, beauty-through-distortion; derive mood from
+    illumination physics: intimacy, dread, wonder, glamour, sacred haze, underwater quiet, neon
+    danger, or temporal flash energy, letting the media style alter interpretation without demanding
+    a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Artsy, psychedelic, optical light-bending, refractive polish; finish with believable
+    exposure, clean denoise, readable subjects, and controlled optical artifacts rather than random
+    glow or crushed darkness, clean denoised surfaces where appropriate, and enough process evidence
+    to make the style recognizable.
+  key_features: >-
+    Fractured image, Prism Effect light transport, optical artifacts, exposure discipline,
+    atmosphere depth, and camera-response behavior; Rainbows, color splitting, light dispersion,
+    crystal edge; Rainbow edges, spectral fringe, red-to-violet split, prismatic white; Glass
+    distortion, prism face, beveled edge refraction; Kaleidoscope, symmetrical fracture, repeating
+    geometry
   creative_brief: >-
-    Apply prism optics to the input: refraction, spectral edge splits, kaleidoscopic fragments, beveled glass
-    distortion, and rainbow dispersion. Avoid music-video scenes or literal crystals as required props. The
-    style should fracture vision while preserving enough subject identity to read.
+    Apply Prism Effect as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through Fractured image, Prism Effect light transport, optical artifacts,
+    exposure discipline, atmosphere depth, and camera-response behavior, Rainbows, color splitting,
+    light dispersion, crystal edge, Glass distortion, prism face, beveled edge refraction without
+    requiring the card image's original subject.
 avoidRules:
   - clean lens
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - random glow overlay
+  - crushed darkness
+  - mandatory location
+  - unmotivated light
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-075.webp
 attributes:
-  negativePrompt: clean lens
+  negativePrompt: >-
+    clean lens, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, random
+    glow overlay, crushed darkness, mandatory location, unmotivated light
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

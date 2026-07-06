@@ -15,21 +15,39 @@ tags:
   - folk-horror
 visualDna:
   aesthetic: >-
-    Folk-horror medieval covenant with witch-knights, thorn chapels, bone charms, black woods, and candlelit
-    oath armor.
+    Folk-horror medieval covenant with witch-knights, thorn chapels, bone charms, black woods, and
+    candlelit oath armor.
   subject_treatment: >-
-    Apply folk-horror covenant styling to any subject through oath-mark geometry, thornlike silhouette
-    rhythm, bone-charm accents, wax-lit edges, and ritual armor logic without requiring a fixed figure or
-    prop bundle.
+    Apply folk-horror covenant styling to any subject through oath-mark geometry, thornlike
+    silhouette rhythm, bone-charm accents, wax-lit edges, and ritual armor logic without requiring a
+    fixed figure or prop bundle.
   color_and_tone: Pine black, bone white, candle amber, dried berry red, moss green, and cold moon gray.
-  lighting_and_shadow: Moonlight and candles make clean cutout silhouettes against dark woods without noisy black texture.
+  lighting_and_shadow: >-
+    Moonlight and candles make clean cutout silhouettes against dark woods without noisy black
+    texture.
   texture_and_material: Bark, bone, wool, tarnished armor, wax, moss, thorn, and smooth denoised shadow planes.
-  camera_and_composition: Tall icon-like framing with vertical pressure, thorn-arc rhythm, pale fog separation, and crisp silhouette against clean shadow.
-  atmosphere_and_mood: Ominous, folkloric, ritualistic, secretive, and elegant.
-  rendering_and_quality: Clean dark folk-fantasy illustration with controlled texture, no mud, and readable card contrast.
+  camera_and_composition: >-
+    Tall icon-like framing with vertical pressure, thorn-arc rhythm, pale fog separation, and crisp
+    silhouette against clean shadow.
+  atmosphere_and_mood: >-
+    Carry the prompt through Ominous, folkloric, ritualistic, secretive, and elegant; martial doom,
+    penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual
+    discipline; the tone should follow prompt X while preserving the preset's medieval-zine
+    identity.
+  rendering_and_quality: >-
+    Clean dark folk-fantasy illustration with controlled texture, no mud, and readable card
+    contrast.
   creative_brief: >-
-    Reusable visual system for any subject needing secretive folk-horror oath marks, dark ritual elegance, and
-    medieval covenant mood beyond one literal scene.
+    Reusable visual system for any subject needing secretive folk horror oath marks, dark ritual
+    elegance, and medieval covenant mood beyond one literal scene. Apply after prompt X: prompt X
+    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
+    grammar of Hexenwood Witch Knight Covenant; Folk horror medieval covenant with witch knights;
+    thorn chapels; bone charms; black woods; candlelit oath armor, mood, material behavior, framing
+    logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed
+    monster, readable text, or sample-card composition.
+  key_features: >-
+    Hexenwood Witch Knight Covenant; Folk horror medieval covenant with witch knights; thorn
+    chapels; bone charms; black woods; candlelit oath armor
 avoidRules:
   - generic witch hat cliche
   - cartoon Halloween look
@@ -37,10 +55,20 @@ avoidRules:
   - explicit gore
   - watermark
   - text
+  - army lineup lock
+  - tabletop product photo
+  - generic battle splash
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-030.webp
 attributes:
-  negativePrompt: generic witch hat cliche, cartoon Halloween look, unreadable forest noise, explicit gore, watermark, text
+  negativePrompt: >-
+    generic witch hat cliche, cartoon Halloween look, unreadable forest noise, explicit gore,
+    watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal
+    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
+    noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -12,18 +12,60 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Artistic double exposure photography, primary form blended seamlessly with secondary imagery
-  subject_treatment: Ghostly overlay of forms, silhouette or shape filled with secondary exposure texture
-  color_and_tone: Dreamy and mixed color palette, ethereal tones, low contrast blending
-  lighting_and_shadow: High key lighting base, complex overlapping shadows and highlights
-  texture_and_material: Multiple exposure textures, blended surface and environmental pattern layers
-  camera_and_composition: Surreal blending of two distinct perspectives, creative masking
-  atmosphere_and_mood: Dreamy, conceptual, surreal, poetic, melancholic
-  rendering_and_quality: Fine art photography, seamless blending, highly detailed
+  aesthetic: >-
+    Double Exposure Portrait acts as a transferable photographic style router: begin from Artistic
+    double exposure photography, primary form blended seamlessly with secondary imagery, studio
+    subject hierarchy, controlled portrait optics, believable retouching, and intentional backdrop
+    behavior, and portrait and studio photography system built from lens discipline, subject
+    hierarchy, controlled retouching, and believable surface detail, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Ghostly overlay of forms, silhouette or shape filled with
+    secondary exposure texture; preserve prompt identity while using focal priority, flattering or
+    deliberately institutional distance, surface realism, and edge control without requiring a human
+    face, keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Dreamy and mixed color palette, ethereal tones, low contrast blending; grade
+    neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and controlled contrast
+    as photographic capture decisions, with value separation and white balance choices that feel
+    captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use High key lighting base, complex overlapping shadows and highlights; make key, fill, rim,
+    catchlight, background falloff, and shadow shape visibly drive the style, preserving believable
+    exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Multiple exposure textures, blended surface and environmental pattern layers; retain
+    pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a
+    believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide
+    the prompt content.
+  camera_and_composition: >-
+    Compose through Surreal blending of two distinct perspectives, creative masking; use portrait
+    lens compression, central authority, intimate framing distance, frontal ID geometry, or
+    editorial negative space without forcing one sitter, with lens distance, depth, timing, and
+    focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Dreamy, conceptual, surreal, poetic, melancholic; derive mood from proximity, pose
+    pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
+    preset changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Fine art photography, seamless blending, highly detailed; finish as real photography
+    with clean optics, plausible retouching, readable focal hierarchy, and no painterly or CGI
+    substitution, high-resolution photographic detail, and disciplined denoise without losing
+    natural grain where the preset needs it.
   creative_brief: >-
-    Apply double-exposure portrait logic to any subject: ghosted silhouette, secondary imagery inside the
-    primary form, high-key overlap, soft masking, and poetic transparency without requiring forest, city,
-    face, or body.
+    Apply Double Exposure Portrait as a photographic preset over prompt X: preserve the user's
+    requested subject, then route Artistic double exposure photography, primary form blended
+    seamlessly with secondary imagery, Dreamy and mixed color palette, ethereal tones, low contrast
+    blending, High key lighting base, complex overlapping shadows and highlights, Multiple exposure
+    textures, blended surface and environmental pattern layers, and Surreal blending of two distinct
+    perspectives, creative masking through optics, exposure, palette, surface response, timing, and
+    finish without requiring the card image's original subject.
+  key_features: >-
+    Artistic double exposure photography, primary form blended seamlessly with secondary imagery;
+    studio subject hierarchy, controlled portrait optics, believable retouching, and intentional
+    backdrop behavior; Dreamy and mixed color palette, ethereal tones, low contrast blending; High
+    key lighting base, complex overlapping shadows and highlights; Surreal blending of two distinct
+    perspectives, creative masking
 avoidRules:
   - illustration
   - painting
@@ -40,12 +82,21 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-008.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
+    beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

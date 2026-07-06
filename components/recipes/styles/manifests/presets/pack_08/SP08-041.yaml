@@ -12,32 +12,86 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a human host
+  aesthetic: >-
+    Cybernetic Implant operates as a portable fashion-costume router: combine Cyborg couture,
+    transhuman evolution and precision augmentation grammar without requiring a human host with
+    speculative costume logic with armor, suit engineering, magical garment behavior, alien
+    proportion, and character-readability design, so the preset supplies styling behavior rather
+    than a fixed outfit card, required wearer, or literal garment sample.
   subject_treatment: >-
-    Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic
-    breaks
+    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
+    illuminate, conceal, mutate, modularize, ritualize, or engineer through Interface seams,
+    implant-ridge channels, carbon-fiber contour bands, graft plates and modular prosthetic breaks;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
   color_and_tone: >-
-    Titanium, graphite, bio-luminescent blue, carbon-black, circuit-gold, surgical white, cool neutral
-    substrate
-  lighting_and_shadow: Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status glow
+    Map color through speculative material color, neon accents, abyssal values, royal metals,
+    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Sterile key light, ring-reflection highlights, cold overhead spill and pinpoint LED status
+    glow plus rim light, emissive channels, occult glow, reflective armor, survival dust, void
+    shadow, or sci-fi display light as the styling light contract, revealing cut, drape, surface
+    response, trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface and anodized
-    alloy
-  camera_and_composition: Optional modular augmentation break or replacement logic
-  atmosphere_and_mood: Transhuman, cool, identity-through-augmentation tension and clinical future-surface wonder
-  rendering_and_quality: Sci-fi couture precision, augment-realism clarity and clinically finished surface integration
-  key_features: Seam-line integration, exposed circuitry, optical sensor cues, neural ports and modular plated insertions
+    Render Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate, bio-gel interface
+    and anodized alloy plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface,
+    hologram, smoke, shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine,
+    opacity, folds, hardware, elemental edges, or body-surface treatment coherent across the whole
+    prompt.
+  camera_and_composition: >-
+    Compose with Optional modular augmentation break or replacement logic plus character-design
+    readability, suit silhouette, power-shape hierarchy, modular gear rhythm, and transformation
+    focus as reusable fashion framing grammar, allowing portraits, objects, creatures, environments,
+    action, and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
+    spectacle, or mythic futurism; the tone should feel specific to Cybernetic Implant while still
+    obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
+    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Cyborg couture, transhuman evolution and precision augmentation grammar without requiring a
+    human host; Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates
+    and modular prosthetic breaks; Brushed titanium, carbon-fiber weave, medical silicone,
+    polycarbonate, bio-gel interface and anodized alloy; Sterile key light, ring-reflection
+    highlights, cold overhead spill and pinpoint LED status glow; Optional modular augmentation
+    break or replacement logic
   creative_brief: >-
-    Mechanize any input through cybernetic augmentation grammar: titanium seams, carbon-fiber contour, medical
-    silicone, optical-sensor cues, neural ports and bio-luminescent circuit glow. Preserve transhuman tension
-    while allowing any subject or surface to gain implant logic instead of forcing exposed flesh, portrait
-    framing, lab scenery or a full prosthetic limb showcase.
+    Use Cybernetic Implant after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Cyborg couture,
+    transhuman evolution and precision augmentation grammar without requiring a human host,
+    Interface seams, implant-ridge channels, carbon-fiber contour bands, graft plates and modular
+    prosthetic breaks, Brushed titanium, carbon-fiber weave, medical silicone, polycarbonate,
+    bio-gel interface and anodized alloy, Sterile key light, ring-reflection highlights, cold
+    overhead spill and pinpoint LED status glow, Optional modular augmentation break or replacement
+    logic plus paneling, harnesses, armor modules, robe systems, implant seams, luminous channels,
+    survival layers, and invented fastenings, palette behavior, light response, material treatment,
+    silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue,
+    prop bundle, or card composition.
 avoidRules:
   - unmodified plain surface
+  - generic cosplay
+  - plastic toy armor
+  - muddy fantasy outfit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-041.webp
 attributes:
-  negativePrompt: unmodified plain surface
+  negativePrompt: >-
+    unmodified plain surface, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed
+    outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise,
+    watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

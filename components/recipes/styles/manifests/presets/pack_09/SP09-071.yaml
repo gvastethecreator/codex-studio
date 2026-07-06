@@ -12,29 +12,59 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Construction sheet
-  subject_treatment: Layers on edge
-  color_and_tone: Yellow pine
-  lighting_and_shadow: Flat
-  texture_and_material: Rotary cut grain
-  camera_and_composition: Splinters
-  atmosphere_and_mood: Unfinished, work
-  rendering_and_quality: Construction, cheap
-  key_features: Knots
+  aesthetic: >-
+    Plywood treats fabrication as visible style language: start from Construction sheet, Rotary cut
+    grain, and Splinters, then turn manufacturing process, tooling marks, seams, tolerances, and
+    industrial material behavior into portable surface behavior rather than a literal material
+    sample.
+  subject_treatment: >-
+    Transform any prompt subject through Layers on edge: preserve identity and pose while letting
+    forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge
+    profile, surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Yellow pine as the material palette, with controlled value separation, local color
+    variation, and hue shifts that follow the subject's form rather than flattening it into a pasted
+    texture.
+  lighting_and_shadow: >-
+    Let Flat define the light response: highlights, occlusion, translucency, specular scatter, matte
+    falloff, or rim behavior should reveal Plywood without hiding the prompt subject.
+  texture_and_material: >-
+    Render Rotary cut grain through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Splinters as reusable material rhythm: macro-friendly for texture tasks, but able
+    to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Unfinished, work by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with Construction, cheap material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Construction sheet; Layers on edge; Rotary cut grain; Flat; Splinters
   creative_brief: >-
-    Render the rotary-cut grain of construction plywood where the lathe has unrolled the log into a continuous
-    ribbon of blonde pine, now layered into structural flatness with knots punctuating the surface like dark
-    eyes. The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its
+    Route any subject through Plywood as a transferable man-made material visual system while
+    preserving the prompt's subject, action, and setting. Render the rotary-cut grain of
+    construction plywood where the lathe has unrolled the log into a continuous ribbon of blonde
+    pine, now layered into structural flatness with knots punctuating the surface like dark eyes.
+    The edge should reveal the laminations, thin strata of wood bonded into a whole greater than its
     veneers. Capture the beauty of the provisional, wood made efficient. Use Plywood as portable
-    surface/render behavior over any input: map its texture, light response, edge wear, color chemistry, and
-    tactile rhythm onto the subject instead of requiring a literal material sample, macro tile, wall,
-    landscape, source object, or scene where the material naturally appears.
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - solid wood
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-071.webp
 attributes:
-  negativePrompt: solid wood
+  negativePrompt: solid wood, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

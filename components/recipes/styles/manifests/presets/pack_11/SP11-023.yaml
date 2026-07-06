@@ -12,27 +12,77 @@ tags:
   - miscellaneous-and-fun
   - toys-and-crafts
 visualDna:
-  aesthetic: Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity
-  subject_treatment: Lithograph print, pressed-metal contour, rolled-edge seams, tab-slot assembly
-  color_and_tone: Metallic, Red, Gold, stamped-tin spectrum, oxidized-brass patina, litho-ink fade
-  lighting_and_shadow: Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce
-  texture_and_material: Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press edges
-  camera_and_composition: Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot stance
-  atmosphere_and_mood: Old fashioned, noisy, tick-tock romance, mantelpiece pride, mechanical nostalgia
-  rendering_and_quality: Retro, mechanical, wind-up wonder, gear-train heart, toy-cabinet treasure
-  key_features: Wind-up key, stamped-brand plate, clockwork-motor hum, rivet-dot detail
+  aesthetic: >-
+    Tin Toy operates as a portable source-router layer: combine Vintage wind-up robot, tin-toy
+    nostalgia, clockwork companion, mid-century curiosity with hand-built object logic with toy
+    scale, assembly marks, tactile charm, and playful construction, so the preset supplies visual
+    behavior rather than a fixed card scene or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms simplify,
+    assemble, soften, hinge, stitch, fold, carve, or snap together through Lithograph print,
+    pressed-metal contour, rolled-edge seams, tab-slot assembly; identity stays readable through
+    construction grammar, proportion, edge logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through material-native color blocks, toy-safe saturation, handmade variance, and
+    clean separation between parts; keep hue roles intentional, value separation clear, and palette
+    behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Metallic reflection, tin-surface sparkle, warm-overhead spot, glossy-highlight bounce plus
+    small-scale object lighting, crisp edge readability, soft contact shadows, and material-specific
+    highlights as the light-response contract, with readable hierarchy, controlled contact detail,
+    and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints, sharp-press
+    edges plus plastic, clay, yarn, paper, wood, metal, felt, ice, tile, thread, sand, or carved
+    surface behavior; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts
+    must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment, angular-foot
+    stance plus object-scale staging, modular silhouette rhythm, clear construction reads, and
+    tactile detail hierarchy as reusable framing grammar, allowing cards, portraits, objects,
+    scenes, and abstract prompts to inherit the style without one required layout.
+  atmosphere_and_mood: >-
+    Carry mood through play, collectability, handmade care, nostalgia, miniature engineering, and
+    physical charm; the emotional tone should feel specific to Tin Toy while still obeying the
+    prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with clean craft detail, readable construction, deliberate imperfections, and no
+    accidental realism collapse; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Vintage wind-up robot, tin-toy nostalgia, clockwork companion, mid-century curiosity; Lithograph
+    print, pressed-metal contour, rolled-edge seams, tab-slot assembly; Painted metal, cold-tin
+    shell, stamped-relief surface, hand-soldered joints, sharp-press edges; Metallic reflection,
+    tin-surface sparkle, warm-overhead spot, glossy-highlight bounce; Boxy, rectilinear body,
+    tube-limb geometry, keyhole-center alignment, angular-foot stance
   creative_brief: >-
-    Keep this preset grounded in wind-up tin-toy grammar: stamped metal lithography, key-driven clockwork
-    cues, and pressed-soldered mechanical charm should define identity beyond one mascot narrative. Apply Tin
-    Toy as a portable style system over any input: preserve its construction grammar, material cues, scale
-    logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen,
-    classroom sample, product shot, or scene template.
+    Use Tin Toy after prompt X as a transferable style layer: prompt X supplies subject, action, and
+    setting, while the preset supplies Vintage wind-up robot, tin-toy nostalgia, clockwork
+    companion, mid-century curiosity, Lithograph print, pressed-metal contour, rolled-edge seams,
+    tab-slot assembly, Painted metal, cold-tin shell, stamped-relief surface, hand-soldered joints,
+    sharp-press edges, Metallic reflection, tin-surface sparkle, warm-overhead spot,
+    glossy-highlight bounce, Boxy, rectilinear body, tube-limb geometry, keyhole-center alignment,
+    angular-foot stance plus clearly expressed joins, simplified proportions, craft tolerances,
+    modular parts, and maker-process evidence, palette behavior, light response, material treatment,
+    and finish discipline without requiring one specimen, prop bundle, product still, or card
+    composition.
 avoidRules:
   - plastic
+  - melted craft
+  - generic toy render
+  - featureless plastic
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-023.webp
 attributes:
-  negativePrompt: plastic
+  negativePrompt: >-
+    plastic, melted craft, generic toy render, featureless plastic, fixed specimen, literal card
+    scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

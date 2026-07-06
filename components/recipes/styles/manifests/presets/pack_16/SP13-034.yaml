@@ -13,23 +13,79 @@ tags:
   - anime
   - horror
 visualDna:
-  aesthetic: Void-centered horror built on subtraction, silence, and the oppressive pull of a central absence.
+  aesthetic: >-
+    Deep Void Whisper Style acts as a transferable anime-prestige router: submerged depth, lowered
+    detail, and pressure-dark anime silence, alongside void-balanced anime horror and central
+    absence as style law and almost-heard menace and quiet psychological pressure; fuse it with
+    prestige anime horror with negative space, body unease, ritual geometry, liminal dread, and
+    controlled visual silence; it routes era, genre, line economy, cel or digital finish, and
+    performance tone without locking prompt content to the source title or sample image.
   subject_treatment: >-
-    Sparse somber linework, low-detail peripheral elements, and circular anchoring forms that repeatedly
-    return attention to the void.
-  color_and_tone: Cold indigo wash, peat-black moisture zones, mineral gray fog, and faint desaturated cyan reflections.
-  lighting_and_shadow: Diffuse nocturnal top-light with weak ground bounce, preserving deep occlusion around cavity edges.
-  texture_and_material: Water-dark stone porosity, saturated soil clumps, frayed fiber cues, and mist-laden air density.
-  camera_and_composition: Open negative-space layout with gravitational pull toward the central cavity and suppressed horizon cues.
-  atmosphere_and_mood: Listening-state tension, desolation, and the conviction that something waits below perception.
-  rendering_and_quality: Minimalist high-control rendering that avoids visual noise and concentrates dread through shape economy.
+    Preserve the prompt subject, action, and context while restyling forms through forms simplified
+    by depth pressure and heavy negative space, alongside silhouettes organized around absence and
+    suppressed detail and softened edges, partial detail, and breath-close contour restraint;
+    identity should remain readable through anime contour, expression economy, pose energy, shape
+    simplification, and effect hierarchy instead of a required canon character or title scene.
+  color_and_tone: >-
+    Map color through void black, cold indigo, and minimal cyan reflection, alongside a deep accent
+    system held inside disciplined cel values; anchor it in peat black, cold indigo, mineral gray,
+    crimson omen accents, sickly cyan reflections, and desaturated skin tones; keep value separation
+    clean, cel flats intentional, accents purposeful, and palette behavior attached to the requested
+    content.
+  lighting_and_shadow: >-
+    Use weak peripheral glow and occluded center-weighted shadow, alongside weak rim glow and soft
+    darkness; combine it with weak nocturnal top-light, spotlight isolation, occult rim, red omen
+    glow, and deep occlusion around visual absences; shadows should read as anime light design, rims
+    should clarify form, and glow or effects should support the prompt rather than replacing it.
+  texture_and_material: >-
+    Render wet dark grain, mineral haze, and compressed shadow texture, alongside damp black stone,
+    mist, frayed fiber, and soft occlusion grain and mist, paper fiber, damp air, and low-contrast
+    ink grain; anchor surfaces in water-dark stone, frayed fiber, damp paper, mask lacquer, dust,
+    mist, and minimal noise-controlled texture; cel edges, painted surfaces, grain, cloth, metal,
+    water, sweat, smoke, or atmosphere must stay coherent across people, objects, environments,
+    action, and abstractions.
+  camera_and_composition: >-
+    Frame around central absence, negative space, and gravitational framing, alongside near-silent
+    spacing and attention pulled toward absence, then extend it with void-first framing,
+    institutional emptiness, spotlight traps, ritual geometry, and suppressed horizon cues; the
+    style should support portraits, props, machines, performances, landscapes, symbols, and full
+    scenes through reusable anime staging grammar instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through oppressive quiet and unseen presence, alongside quiet dread and almost-heard
+    presence; braid it with listening-state tension, dread, shame, taboo ceremony, unseen presence,
+    and quiet psychological collapse; the preset can become funny, sensual, violent, quiet, tragic,
+    romantic, or strange when prompt X asks for it while preserving the chosen anime lineage.
+  rendering_and_quality: >-
+    Finish with deep-value control with no noisy black crush, alongside minimal void-first finish
+    with denoised dark value control; enforce minimal high-control horror anime finish with shape
+    economy, denoised darks, and no gore-as-shortcut dependency; prioritize clean denoise, stable
+    anatomy or object structure, readable effects, controlled grain, no watermark, no fake text, no
+    signature, and no photoreal or 3D-render drift.
   key_features: >-
-    Circular void anchors, moisture halos, decayed functional traces, and thin low-lying fog sheets in
-    void-first framing.
+    submerged depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime
+    horror and central absence as style law and almost-heard menace and quiet psychological
+    pressure; forms simplified by depth pressure and heavy negative space, alongside silhouettes
+    organized around absence and suppressed detail and softened edges, partial detail, and
+    breath-close contour restraint; wet dark grain, mineral haze, and compressed shadow texture,
+    alongside damp black stone, mist, frayed fiber, and soft occlusion grain and mist, paper fiber,
+    damp air, and low-contrast ink grain; weak peripheral glow and occluded center-weighted shadow,
+    alongside weak rim glow and soft darkness; central absence, negative space, and gravitational
+    framing, alongside near-silent spacing and attention pulled toward absence
   creative_brief: >-
-    Build a transferable deep-void-whisper horror style for any subject: minimal geometry, moisture-rich
-    materials, compositional gravity, and an unseen center without imposing wells, rural settings, ropes,
-    cavities, objects, or specific landscapes.
+    Apply Deep Void Whisper Style after prompt X as a transferable anime-prestige layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while this preset supplies submerged
+    depth, lowered detail, and pressure-dark anime silence, alongside void-balanced anime horror and
+    central absence as style law and almost-heard menace and quiet psychological pressure, alongside
+    forms simplified by depth pressure and heavy negative space, alongside silhouettes organized
+    around absence and suppressed detail and softened edges, partial detail, and breath-close
+    contour restraint; void black, cold indigo, and minimal cyan reflection, alongside a deep accent
+    system held inside disciplined cel values; weak peripheral glow and occluded center-weighted
+    shadow, alongside weak rim glow and soft darkness; wet dark grain, mineral haze, and compressed
+    shadow texture, alongside damp black stone, mist, frayed fiber, and soft occlusion grain and
+    mist, paper fiber, damp air, and low-contrast ink grain and central absence, negative space, and
+    gravitational framing, alongside near-silent spacing and attention pulled toward absence, finish
+    discipline, and negative controls without requiring a fixed canon cast, title scene, prop
+    bundle, location, sport, instrument, weapon, or card composition.
 avoidRules:
   - photoreal
   - daylight-bright
@@ -37,10 +93,25 @@ avoidRules:
   - watermark
   - text
   - logo
+  - cheap jump scare
+  - splatter-only horror
+  - photoreal monster render
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
+  - signature
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-034.webp
 attributes:
-  negativePrompt: photoreal, daylight-bright, action-shonen, watermark, text, logo
+  negativePrompt: >-
+    photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare,
+    splatter-only horror, photoreal monster render, fixed canon character, literal title scene,
+    required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable
+    text, signature
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

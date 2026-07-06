@@ -12,25 +12,61 @@ tags:
   - abstract-and-experimental
   - print-and-light-finishes
 visualDna:
-  aesthetic: Glowing lines in dark
-  subject_treatment: Light tubes
-  color_and_tone: Neon colors
-  lighting_and_shadow: Self illuminated
-  texture_and_material: Glow
-  camera_and_composition: 'Compose for Neon Light Lines using its key spatial cues: Dark background.'
-  atmosphere_and_mood: Cool, dark
-  rendering_and_quality: Nightlife, cyber
-  key_features: Dark background
+  aesthetic: >-
+    Neon Light Lines becomes a transferable print finish and luminous line system: start from
+    Glowing lines in dark, Nightlife, cyber, and Cool, dark, then route prompt content through
+    embossing, debossing, foil reflectance, neon tubing, ink pressure, and premium substrate logic
+    without forcing one card scene.
+  subject_treatment: >-
+    Keep the user's subject recognizable while using Light tubes to outline, stamp, emboss, deboss,
+    gild, illuminate, or impress prompt subjects without replacing them with signage; preserve
+    anatomy, object identity, or scene intent beneath the abstraction.
+  color_and_tone: >-
+    Build the palette from Neon colors; treat color as ink, paper, metallic foil, dark-field glow,
+    warm tube light, or substrate contrast, with enough value control that the subject remains
+    readable after the style layer is applied.
+  lighting_and_shadow: >-
+    Let Self illuminated drive the light response: make highlights come from reflective foil,
+    depressed paper shadows, glow falloff, or luminous glass tubes, avoiding generic glamour
+    lighting unless the prompt explicitly asks for it.
+  texture_and_material: >-
+    Render Glow as the tactile or mark-making basis; surface detail should show paper tooth, pressed
+    edges, metallic shear, tube thickness, or ink bite, scaled to figures, props, spaces, or close
+    material studies.
+  camera_and_composition: >-
+    Compose around Cool, dark as reusable spatial grammar: favor iconic line hierarchy, negative
+    space, premium print registration, and tactile depth cues, adapting cleanly to portraits,
+    objects, environments, and action scenes.
+  atmosphere_and_mood: >-
+    Use Cool, dark as the emotional register; derive mood from craft, nightlife, luxury, signage,
+    invitation design, and tactile production, without flattening strong, strange, darker, or adult
+    prompt intent when it is relevant.
+  rendering_and_quality: >-
+    Resolve as Nightlife, cyber: finish with precise physical process, controlled glow or impression
+    depth, and no fake text layout, preserving prompt X as the base content and the preset as the
+    style router.
+  key_features: >-
+    Glowing lines in dark; Light tubes; Neon colors; Self illuminated; Glow; Cool, dark; Cool, dark;
+    Nightlife, cyber; Nightlife, cyber
   creative_brief: >-
-    Apply neon-line treatment to the input: bent glass-tube strokes, colored glow halos, dark-field contrast,
-    buzzing edge light, and sign-like contours should illuminate forms without requiring readable signage.
+    Apply neon-line treatment to the input: bent glass-tube strokes, colored glow halos, dark-field
+    contrast, buzzing edge light, and sign-like contours should illuminate forms without requiring
+    readable signage.
 avoidRules:
   - bulb
   - sun
+  - fake readable text
+  - flat sticker look
+  - literal card scene
+  - style-card boilerplate
+  - muddy noise
+  - watermark
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP10-078.webp
 attributes:
-  negativePrompt: bulb, sun
+  negativePrompt: >-
+    bulb, sun, fake readable text, flat sticker look, literal card scene, style-card boilerplate,
+    muddy noise, watermark
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental

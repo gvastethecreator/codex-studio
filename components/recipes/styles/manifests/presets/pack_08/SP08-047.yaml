@@ -12,29 +12,87 @@ tags:
   - fashion-and-costume
   - fantasy-sci-fi-costume
 visualDna:
-  aesthetic: Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace
-  subject_treatment: High collar, cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents
-  color_and_tone: Black, Red lining, blood-crimson, ivory, silver, deep burgundy, moon-white
-  lighting_and_shadow: Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast
-  texture_and_material: Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool
+  aesthetic: >-
+    Vampire Lord operates as a portable fashion-costume router: combine Gothic nocturnal
+    aristocracy, immortal-danger elegance, old-world menace with speculative costume logic with
+    armor, suit engineering, magical garment behavior, alien proportion, and character-readability
+    design, so the preset supplies styling behavior rather than a fixed outfit card, required
+    wearer, or literal garment sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms arm, shield, augment, cloak,
+    illuminate, conceal, mutate, modularize, ritualize, or engineer through High collar, cape-volume
+    sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents; identity stays
+    readable as silhouette, fit, layering, body-volume logic, edge behavior, and styling hierarchy
+    shift into this preset.
+  color_and_tone: >-
+    Map color through speculative material color, neon accents, abyssal values, royal metals,
+    survival grime, arcane glow, and suit-coded contrast; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Moonlight silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast
+    plus rim light, emissive channels, occult glow, reflective armor, survival dust, void shadow, or
+    sci-fi display light as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
+  texture_and_material: >-
+    Render Velvet, silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool
+    plus armor plates, spandex, robes, leather, rubber, chrome, biotic surface, hologram, smoke,
+    shadow, gel, and luminous seams; keep fabric scale, seams, fibers, shine, opacity, folds,
+    hardware, elemental edges, or body-surface treatment coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Vampire Lord using its key spatial cues: Opera cape, high collar, medallion, heraldic signet,
-    crimson lining.
-  atmosphere_and_mood: Elegant, ancient-hunger menace, moonlit danger and aristocratic dread
-  rendering_and_quality: Gothic, theatrical, old-novel atmosphere, aristocratic horror elegance
-  key_features: Opera cape, high collar, medallion, heraldic signet, crimson lining
+    Compose with Compose for Vampire Lord using its key spatial cues: Opera cape, high collar,
+    medallion, heraldic signet, crimson lining plus character-design readability, suit silhouette,
+    power-shape hierarchy, modular gear rhythm, and transformation focus as reusable fashion framing
+    grammar, allowing portraits, objects, creatures, environments, action, and abstract prompts to
+    inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through power, menace, wonder, survival, occult ceremony, alien elegance, stealth,
+    spectacle, or mythic futurism; the tone should feel specific to Vampire Lord while still obeying
+    the prompt's adult, cute, severe, sensual, strange, or practical intent when supplied.
+  rendering_and_quality: >-
+    Finish with believable costume engineering, clean edge logic, strong silhouette, readable
+    material physics, and no generic cosplay blur; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Gothic nocturnal aristocracy, immortal-danger elegance, old-world menace; High collar,
+    cape-volume sweep, tailcoat-waist taper, cravat-neck precision, heraldic signet accents; Velvet,
+    silk satin lining, brocade vest, starched wing collar, onyx ring, opera cape wool; Moonlight
+    silver rim, low amber flicker, fog-diffused ambiance, deep gothic shadow contrast; Compose for
+    Vampire Lord using its key spatial cues: Opera cape, high collar, medallion, heraldic signet,
+    crimson lining
   creative_brief: >-
-    Style the input through vampire-aristocratic costume grammar: black velvet cape, crimson silk lining, high
-    collar, cravat precision, onyx heraldic accents and moonlit silver edging. Keep immortal menace and
-    old-world elegance without requiring a castle, fangs, widow's peak, portrait bust or a named vampire
-    scene.
+    Use Vampire Lord after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Gothic nocturnal
+    aristocracy, immortal-danger elegance, old-world menace, High collar, cape-volume sweep,
+    tailcoat-waist taper, cravat-neck precision, heraldic signet accents, Velvet, silk satin lining,
+    brocade vest, starched wing collar, onyx ring, opera cape wool, Moonlight silver rim, low amber
+    flicker, fog-diffused ambiance, deep gothic shadow contrast, Compose for Vampire Lord using its
+    key spatial cues: Opera cape, high collar, medallion, heraldic signet, crimson lining plus
+    paneling, harnesses, armor modules, robe systems, implant seams, luminous channels, survival
+    layers, and invented fastenings, palette behavior, light response, material treatment,
+    silhouette grammar, and finish discipline without requiring one body type, fixed outfit, venue,
+    prop bundle, or card composition.
 avoidRules:
   - modern
   - messy
+  - generic cosplay
+  - plastic toy armor
+  - muddy fantasy outfit
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-047.webp
 attributes:
-  negativePrompt: modern, messy
+  negativePrompt: >-
+    modern, messy, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required
+    body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable
+    text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

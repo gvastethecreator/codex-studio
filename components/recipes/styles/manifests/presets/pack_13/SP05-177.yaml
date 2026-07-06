@@ -13,34 +13,62 @@ tags:
   - shojo-magical-girl-and-visionary-classics
 visualDna:
   aesthetic: >-
-    Retro-space-opera comedy anime language balancing ensemble banter, earnest mechanical momentum, and
-    playful meta-genre self-awareness
+    Martian Successor Nadesico - Cheerful Bridge-Deck Mecha operates as a portable anime-lifestyle
+    router: combine Martian Successor Nadesico - Cheerful Bridge Deck Mecha identity cues through
+    Ensemble staging rhythm; mechanical sortie framing; retro UI accents; playful command energy;
+    bright group body language geometry; Cheerful Bridge Deck Mecha with Martian Successor Nadesico
+    lineage used only as style reference with shojo, magical girl, and visionary classic anime
+    grammar with symbolic romance, transformation sparkle, ornate contour, emotional close reading,
+    and theatrical abstraction; Martian Successor Nadesico may guide line economy, acting, color,
+    and period flavor but must not force canon cast, title scenes, logos, or copied costumes, so the
+    preset supplies anime style behavior after prompt X rather than a required scene, character,
+    franchise image, or card composition.
   subject_treatment: >-
-    Expressive ensemble line acting, analog UI framing geometry, dynamic launch-vector accents, and comedic
-    reaction silhouette clarity
-  color_and_tone: Bright console cyans and ambers, team-accent pops, deep space navy fields, and warm comedic tonal bases
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    delicate linework, elongated gesture, ribbon or petal rhythm, jewel or occult accents, fashion
+    silhouette, expressive eyes, and symbolic distance cues; subjects may be characters, creatures,
+    objects, interiors, vehicles, symbols, or full scenes without losing the user's prompt.
+  color_and_tone: >-
+    Map color through rose pink, moon white, jewel tones, velvet black, crimson accents, pale sky,
+    luminous gold, and softened emotional gradients; keep cel values readable, accent roles
+    intentional, skin or material midtones stable, and palette behavior attached to the prompt
+    instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Console-practical glow clusters, alert-state contrast spikes, cel-cut shadow timing for jokes and action
-    beats, and occasional explosion rim flashes
+    Use sparkle bloom, moon rim, stained glass glow, soft window key, ritual warning light, and
+    symbolic highlight placement; lighting should clarify expression, silhouette, material, and
+    emotional rhythm while avoiding muddy blacks, fake bloom, or screenshot-like flatness.
   texture_and_material: >-
-    Analog sci-fi panel surfaces, painted space gradients, cel overlay grain, retro UI display bloom, and
-    mechanical detailing
+    Render lace, ribbon, petals, glass, polished armor, velvet, paper, soft hair shine, magical
+    particles, and clean cel ornament; keep line, paint, textile, glass, paper, sensor, grain, or
+    effect textures controlled enough to route style without noisy surface chatter.
   camera_and_composition: >-
-    Alternating stable ensemble rhythm and kinetic vector perspective bursts to maintain war-comedy pacing
-    balance
-  atmosphere_and_mood: Bouncy, tactical, colorful, meta
+    Compose through romance-distance framing, transformation arcs, emblem balance, theatrical
+    diagonals, graceful vertical lift, and symbolic negative space without fixed cast as reusable
+    anime framing grammar, allowing close acting, objects, performances, action, environments, or
+    abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through romantic ache, heroic grace, comic sparkle, visionary dread, fated adventure,
+    tender healing, and adult melodrama when prompt X requests it; the preset can become cute,
+    sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while preserving
+    its anime lineage.
   rendering_and_quality: >-
-    Clean 90s ensemble-mecha rendering with dialogue-to-action rhythm readability, lively tonal shifts, and
-    charismatic crew-first polish
+    Finish with elegant shojo/classic anime polish with clean ornament, stable faces, denoised
+    sparkle, no readable magic text, and no title scene reproduction; prioritize stable anatomy or
+    object structure, clean denoise, readable effects, no watermark, no fake readable text, no UI,
+    and no generic AI anime gloss.
   key_features: >-
-    Ensemble staging rhythm, mechanical sortie framing, retro UI accents, playful command-energy, bright
-    group-body-language geometry
+    Ensemble staging rhythm; mechanical sortie framing; retro UI accents; playful command energy;
+    bright group body language geometry; Cheerful Bridge Deck Mecha with Martian Successor Nadesico
+    lineage used only as style reference
   creative_brief: >-
-    Launch the input with cheerful bridge-deck mecha rhythm: retro console glow, ensemble banter spacing,
-    alert cyan/amber accents, and sortie-vector motion can add mecha or command-deck hints when useful without
-    locking the image to a bridge, ship interior, crew lineup, or battle scene. Apply this anime/IP-title
-    grammar over any input: preserve its emotional staging, line behavior, palette, symbolic motifs, and
-    production cues while avoiding a required cast, lore event, location, prop, or fixed scene.
+    Use Martian Successor Nadesico - Cheerful Bridge-Deck Mecha after prompt X as a transferable
+    anime character/lifestyle layer: prompt X supplies subject, action, setting, tone, and
+    intensity, while the preset supplies Ensemble staging rhythm, mechanical sortie framing, retro
+    UI accents, playful command energy, bright group body language geometry, Cheerful Bridge Deck
+    Mecha with Martian Successor Nadesico lineage used only as style reference, color logic,
+    lighting, material finish, composition rhythm, mood pressure, and quality controls without
+    requiring a fixed cast, fixed venue, fixed prop bundle, title screenshot, or sample-card
+    composition.
 avoidRules:
   - realistic
   - 3d render
@@ -54,12 +82,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - canon couple copy
+  - readable magic text
+  - title scene reproduction
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-177.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, canon couple copy, readable magic text, title scene
+    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
+    cast, generic anime filter, prompt literal card reuse, readable text, fake UI, photoreal
+    cosplay, 3D render look, copied franchise costume, logo
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

@@ -13,29 +13,59 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: Pink wall insulation
-  subject_treatment: Fibers
-  color_and_tone: Pink
-  lighting_and_shadow: Soft
-  texture_and_material: Itchy glass fibers
-  camera_and_composition: Fluffy batts
-  atmosphere_and_mood: Unfinished, itchy
-  rendering_and_quality: Construction, industrial
-  key_features: Fiber direction
+  aesthetic: >-
+    Fiberglass Insulation makes hand-feel and pressure visible across the image: start from Pink
+    wall insulation, Itchy glass fibers, and Fluffy batts, then turn touch, softness, pile, fiber
+    density, nap direction, compression, and hand-feel into portable surface behavior rather than a
+    literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Fibers: preserve identity and pose while letting forms
+    compress, fuzz, soften, catch fibers, and show tactile pressure through edge profile, surface
+    breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Pink as the material palette, with controlled value separation, local color variation, and
+    hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Soft define the light response: highlights, occlusion, translucency, specular scatter, matte
+    falloff, or rim behavior should reveal Fiberglass Insulation without hiding the prompt subject.
+  texture_and_material: >-
+    Render Itchy glass fibers through fiber structure, tactile depth, soft occlusion, fuzz, pile
+    direction, and pressure marks; keep grain scale, residue, buildup, fractures, fiber, pores, or
+    surface tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Fluffy batts as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Unfinished, itchy by using physical touch, comfort, irritation, warmth, dryness,
+    and surface softness; the material should color the scene's feeling while preserving the user's
+    requested subject and setting.
+  rendering_and_quality: >-
+    Finish with Construction, industrial material clarity: physically coherent reflectance, clean
+    contact detail, controlled micro-texture, readable silhouette behavior, and no noisy
+    stock-texture overlay.
+  key_features: Pink wall insulation; Fibers; Itchy glass fibers; Soft; Fluffy batts
   creative_brief: >-
-    Capture the industrial cotton-candy of pink fiberglass insulation where glass fibers interweave into
-    fluffy batts of suspended irritation, the color deceptively soft while the texture promises an itch that
-    the eye can almost feel. The fiber direction should create a grain of pink haze across unfinished wall
+    Route any subject through Fiberglass Insulation as a transferable tactile-surface visual system
+    while preserving the prompt's subject, action, and setting. Capture the industrial cotton-candy
+    of pink fiberglass insulation where glass fibers interweave into fluffy batts of suspended
+    irritation, the color deceptively soft while the texture promises an itch that the eye can
+    almost feel. The fiber direction should create a grain of pink haze across unfinished wall
     cavities. Render the beauty of the in-between, construction paused in mid-reveal. Use Fiberglass
-    Insulation as portable surface/render behavior over any input: map its texture, light response, edge wear,
-    color chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample, macro
-    tile, wall, landscape, source object, or scene where the material naturally appears.
+    Insulation as portable surface/render behavior over any input: map its texture, light response,
+    edge wear, color chemistry, and tactile rhythm onto the subject instead of requiring a literal
+    material sample, macro tile, wall, landscape, source object, or scene where the material
+    naturally appears.
 avoidRules:
   - cotton candy
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-069.webp
 attributes:
-  negativePrompt: cotton candy
+  negativePrompt: cotton candy, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

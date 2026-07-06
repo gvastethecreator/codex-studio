@@ -8,24 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Samurai District',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, lowres, blurry, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, lowres, blurry, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Neon Samurai District within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Samurai District's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through disciplined duel silhouette; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Neon Samurai District's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Neon Samurai District: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with electric magenta, cyan, acid green, and glossy black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Neon Samurai District: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with neon edge glow and wet reflections; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Neon Samurai District's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from lacquer armor, rain cloth, and blade shine; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Neon Samurai District's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Neon Samurai District's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Neon, Samurai, District; disciplined duel silhouette; electric magenta, cyan, acid green, and glossy black; neon edge glow and wet reflections; lacquer armor, rain cloth, and blade shine; stacked rooftops, underpasses, side routes, cover layers, vanishing street lines, and mission-node depth; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+      creative_brief:
+        "Apply Neon Samurai District as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -33,24 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Urban Parkour Rooftop Wars',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, fog-heavy, muddy-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, fog-heavy, muddy-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Urban Parkour Rooftop Wars within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Urban Parkour Rooftop Wars's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through movement route readability; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Urban Parkour Rooftop Wars's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Urban Parkour Rooftop Wars: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Urban Parkour Rooftop Wars: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Urban Parkour Rooftop Wars's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Urban Parkour Rooftop Wars's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Urban Parkour Rooftop Wars's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood height-risk chase energy; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Urban, Parkour, Rooftop, Wars; movement route readability; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; jumpable edges, rail gaps, and roofline rhythm; height-risk chase energy',
+      creative_brief:
+        "Apply Urban Parkour Rooftop Wars as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -58,24 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Underpass Brawler',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, pastel, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, pastel, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Neon Underpass Brawler within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Underpass Brawler's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through street-fight readability; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Neon Underpass Brawler's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Neon Underpass Brawler: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with electric magenta, cyan, acid green, and glossy black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Neon Underpass Brawler: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with neon edge glow and wet reflections; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Neon Underpass Brawler's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Neon Underpass Brawler's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Neon Underpass Brawler's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Neon, Underpass, Brawler; street-fight readability; electric magenta, cyan, acid green, and glossy black; neon edge glow and wet reflections; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; close combat spacing and hard impact lanes; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+      creative_brief:
+        "Apply Neon Underpass Brawler as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -83,24 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Harbor Smuggler Night Heist',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, daylight, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, daylight, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Harbor Smuggler Night Heist within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Harbor Smuggler Night Heist's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hidden cargo route; stealth route timing; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Harbor Smuggler Night Heist's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Harbor Smuggler Night Heist: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with wet harbor blues, sodium orange, and fog black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Harbor Smuggler Night Heist: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with low-key night lighting with practical pools; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Harbor Smuggler Night Heist's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from docks, hulls, ropes, and rain-slick stone; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Harbor Smuggler Night Heist's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Harbor Smuggler Night Heist's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood late-hour danger; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Harbor, Smuggler, Night, Heist; hidden cargo route; wet harbor blues, sodium orange, and fog black; low-key night lighting with practical pools; docks, hulls, ropes, and rain-slick stone; dockside cover and contraband focal points; late-hour danger',
+      creative_brief:
+        "Apply Harbor Smuggler Night Heist as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -108,24 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Harbor Kaiju Evacuation',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, cute-style, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, cute-style, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Harbor Kaiju Evacuation within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Harbor Kaiju Evacuation's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through disaster-scale readability; escape-route urgency; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Harbor Kaiju Evacuation's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Harbor Kaiju Evacuation: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with wet harbor blues, sodium orange, and fog black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Harbor Kaiju Evacuation: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Harbor Kaiju Evacuation's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from docks, hulls, ropes, and rain-slick stone; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Harbor Kaiju Evacuation's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Harbor Kaiju Evacuation's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Harbor, Kaiju, Evacuation; disaster-scale readability; wet harbor blues, sodium orange, and fog black; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; docks, hulls, ropes, and rain-slick stone; giant silhouette behind evacuation routes; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+      creative_brief:
+        "Apply Harbor Kaiju Evacuation as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -133,24 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crystal Metro Hoverline',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Crystal Metro Hoverline within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Crystal Metro Hoverline's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Crystal Metro Hoverline's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Crystal Metro Hoverline: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with prismatic blue-white with sharp color splits; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Crystal Metro Hoverline: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with crystal refraction and caustic shards; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Crystal Metro Hoverline's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from train glass, platform tile, rails, and station glow; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Crystal Metro Hoverline's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Crystal Metro Hoverline's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Crystal, Metro, Hoverline; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure; prismatic blue-white with sharp color splits; crystal refraction and caustic shards; train glass, platform tile, rails, and station glow; linear transit perspective; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+      creative_brief:
+        "Apply Crystal Metro Hoverline as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -158,24 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Carbon Megacity Rooftop Chase',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Carbon Megacity Rooftop Chase within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Carbon Megacity Rooftop Chase's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through high-speed pursuit rhythm; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Carbon Megacity Rooftop Chase's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Carbon Megacity Rooftop Chase: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Carbon Megacity Rooftop Chase: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Carbon Megacity Rooftop Chase's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from carbon fiber, black glass, and rooftop composite panels; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Carbon Megacity Rooftop Chase's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Carbon Megacity Rooftop Chase's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood sleek high-altitude danger; vertical urban velocity; height-risk chase energy; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Carbon, Megacity, Rooftop, Chase; high-speed pursuit rhythm; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; carbon fiber, black glass, and rooftop composite panels; stacked high-rise depth and rooftop escape lanes; sleek high-altitude danger',
+      creative_brief:
+        "Apply Carbon Megacity Rooftop Chase as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -183,24 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Koi River District',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Neon Koi River District within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Neon Koi River District's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Neon Koi River District's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Neon Koi River District: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with electric magenta, cyan, acid green, and glossy black; neon koi orange, black water, and cyan signage; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Neon Koi River District: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with neon edge glow and wet reflections; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Neon Koi River District's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from rainy river reflections; black water and luminous fish color; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Neon Koi River District's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Neon Koi River District's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Neon, Koi, River, District; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure; electric magenta, cyan, acid green, and glossy black; neon edge glow and wet reflections; rainy river reflections; waterline routes and reflection corridors; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+      creative_brief:
+        "Apply Neon Koi River District as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -208,24 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Verdant Metro Rebellion',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Verdant Metro Rebellion within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Verdant Metro Rebellion's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Verdant Metro Rebellion's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Verdant Metro Rebellion: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with wet green over stone and rebellion red accents; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Verdant Metro Rebellion: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Verdant Metro Rebellion's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from plants overrunning civic infrastructure; train glass, platform tile, rails, and station glow; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Verdant Metro Rebellion's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Verdant Metro Rebellion's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood green urban uprising; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Verdant, Metro, Rebellion; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure; wet green over stone and rebellion red accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; plants overrunning civic infrastructure; linear transit perspective; green urban uprising',
+      creative_brief:
+        "Apply Verdant Metro Rebellion as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
   {
@@ -233,24 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Midnight Lotus Ninja Heist',
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, heavy-guns, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface',
+      'watermark, text, logo, heavy-guns, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
     style: {
       aesthetic:
-        "Midnight Lotus Ninja Heist within 1. Neon Urban & Night Ops: a reusable Video Game Originals Vault visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Midnight Lotus Ninja Heist's specific style identity.",
+        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through silent traversal and sudden strike; stealth route timing; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
       subject_treatment:
-        "Treat any subject through Midnight Lotus Ninja Heist's visual grammar: readable silhouette, role cues, controlled detail density, and no dependency on one fixed scene or body pose.",
+        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
       color_and_tone:
-        'Use a controlled palette that supports Midnight Lotus Ninja Heist: clear tonal hierarchy, intentional contrast, and category-appropriate color accents without muddy blends.',
+        'Grade the image with midnight blue with pink lotus neon; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
       lighting_and_shadow:
-        'Shape light and shadow for Midnight Lotus Ninja Heist: legible depth, purposeful highlights, readable focal zones, and atmosphere that supports the style without hiding the subject.',
+        'Drive the lighting with low blue night with sharp neon accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
       texture_and_material:
-        "Render surfaces with Midnight Lotus Ninja Heist's material logic: tactile detail, coherent finish, and texture choices that reinforce the style rather than generic decoration.",
+        'Build surfaces from rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
       camera_and_composition:
-        "Compose with Midnight Lotus Ninja Heist's staging logic: strong focal hierarchy, stable readable framing, and spatial rhythm that can adapt to different subjects.",
+        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
       atmosphere_and_mood:
-        "Build Midnight Lotus Ninja Heist's mood through environment, color, light, and texture. Keep it distinct from neighboring presets and avoid generic pretty-card staging.",
+        'Keep the mood quiet late-night infiltration; elegant covert ritual; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
       rendering_and_quality:
-        'Finish as a polished 1. Neon Urban & Night Ops style-card: crisp detail, no UI/text/watermark, strong thumbnail readability, and consistent production quality.',
+        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+      key_features:
+        'Midnight, Lotus, Ninja, Heist; silent traversal and sudden strike; midnight blue with pink lotus neon; low blue night with sharp neon accents; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; shadow gaps and rooftop paths; quiet late-night infiltration',
+      creative_brief:
+        "Apply Midnight Lotus Ninja Heist as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

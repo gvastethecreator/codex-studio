@@ -13,34 +13,59 @@ tags:
   - anime-style-spectrum
 visualDna:
   aesthetic: >-
-    Backlit contour anime longing where sky-led color scripts, pure silhouette dramaturgy, flare haze, and
-    golden rim light carry emotion
+    Backlit Contour Longing operates as a portable anime-lifestyle router: combine Backlit Contour
+    Longing identity cues through Sky led framing; pure silhouette shapes; golden rim contours;
+    flare haze; twilight color script; and posture like contour emotion with broad anime style
+    spectrum grammar with experimental line, material specific finish, auteur adjacent motion,
+    graphic abstraction, sensor vision, and genre flexible art direction, so the preset supplies
+    anime style behavior after prompt X rather than a required scene, character, franchise image, or
+    card composition.
   subject_treatment: >-
-    Pure silhouette contour discipline, rim-lit hair-edge articulation, posture-led narrative shape language,
-    minimal internal line intrusion
+    Preserve prompt X's subject, action, age, setting, and intensity while translating forms through
+    style-specific contour, material transformation, motion grammar, abstraction pressure, symbolic
+    surface logic, and prompt-preserving silhouette discipline; subjects may be characters,
+    creatures, objects, interiors, vehicles, symbols, or full scenes without losing the user's
+    prompt.
   color_and_tone: >-
-    Blazing orange-magenta sunset cores, deep silhouette blacks, gold rim luminance, violet dusk transitions,
-    cyan zenith remnants
+    Map color through style native color systems, from sumi e ink and textile dye to neon hyperpop,
+    thermal bands, chrome accents, mineral glass, and restrained naturalism; keep cel values
+    readable, accent roles intentional, skin or material midtones stable, and palette behavior
+    attached to the prompt instead of pasted anime decoration.
   lighting_and_shadow: >-
-    Extreme backlight staging with flare halos, atmospheric diffusion, crepuscular beam accents, and
-    overexposed solar edge treatment
+    Use finish specific light behavior: backlit contour, jewel refraction, sensor glow, chalk haze,
+    speed slash, naturalist daylight, or dramatic cel rim; lighting should clarify expression,
+    silhouette, material, and emotional rhythm while avoiding muddy blacks, fake bloom, or
+    screenshot-like flatness.
   texture_and_material: >-
-    Lens flare bloom strata, haze particulate depth, soft cloud gradient layering, subtle film-grain shadow
-    structure
+    Render brush grain, stained glass, thread, chalk, spray paint, mineral facets, chrome, heat map
+    pixels, concrete grit, paper tooth, and denoised texture scale; keep line, paint, textile,
+    glass, paper, sensor, grain, or effect textures controlled enough to route style without noisy
+    surface chatter.
   camera_and_composition: >-
-    Sky-first composition dominance with silhouette-anchor foregrounds and atmosphere-driven perceived depth
-    expansion
-  atmosphere_and_mood: Nostalgic, bittersweet, romantic, tender, wistful
+    Compose through auteur-aware framing, material seams, impact vectors, postcard freezes,
+    distorted sprint depth, icon balance, or quiet human blocking without fixed source scenes as
+    reusable anime framing grammar, allowing close acting, objects, performances, action,
+    environments, or abstract prompts without one required pose or location.
+  atmosphere_and_mood: >-
+    Carry mood through experimental wonder, adult suspense, kinetic absurdity, melancholic distance,
+    tactile craft, ritual unease, and surreal continuity guided by prompt X; the preset can become
+    cute, sensual, severe, comic, romantic, violent, strange, or quiet when prompt X asks while
+    preserving its anime lineage.
   rendering_and_quality: >-
-    High-impact sunset silhouette rendering with cinematic sky scripting and emotionally readable
-    negative-space composition
+    Finish with clean experimental anime finish with strong style recognition, stable subject
+    structure, controlled texture, no watermark, no fake UI, and no generic AI anime gloss;
+    prioritize stable anatomy or object structure, clean denoise, readable effects, no watermark, no
+    fake readable text, no UI, and no generic AI anime gloss.
   key_features: >-
-    Sky-led framing, pure silhouette shapes, golden rim contours, flare haze, twilight color script, and
-    posture-like contour emotion
+    Sky led framing; pure silhouette shapes; golden rim contours; flare haze; twilight color script;
+    and posture like contour emotion
   creative_brief: >-
-    Use backlit contour longing as silhouette-emotion grammar. Any prompt should gain sky-scale color, rim-lit
-    edges, flare haze, and readable contour drama. Rooftops, beaches, couples, sunsets as literal scene, and
-    romance staging are optional.
+    Use Backlit Contour Longing after prompt X as a transferable anime character/lifestyle layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while the preset supplies Sky
+    led framing, pure silhouette shapes, golden rim contours, flare haze, twilight color script, and
+    posture like contour emotion, color logic, lighting, material finish, composition rhythm, mood
+    pressure, and quality controls without requiring a fixed cast, fixed venue, fixed prop bundle,
+    title screenshot, or sample-card composition.
 avoidRules:
   - dark
   - gloomy
@@ -50,12 +75,29 @@ avoidRules:
   - cloudy
   - indoor
   - harsh
-  - detailed-face
+  - detailed face
   - visible features
+  - generic AI anime gloss
+  - auteur copycat
+  - fixed source scene
+  - canon character copy
+  - title scene copy
+  - literal sample card setup
+  - fixed anime cast
+  - generic anime filter
+  - prompt literal card reuse
+  - watermark
+  - readable text
+  - fake UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-118.webp
 attributes:
-  negativePrompt: dark, gloomy, muted, flat, grey, cloudy, indoor, harsh, detailed-face, visible features, gloomy
+  negativePrompt: >-
+    dark, gloomy, muted, flat, grey, cloudy, indoor, harsh, detailed face, visible features, generic
+    AI anime gloss, auteur copycat, fixed source scene, canon character copy, title scene copy,
+    literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse,
+    watermark, readable text, fake UI, photoreal cosplay, 3D render look, copied franchise costume,
+    logo, signature
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle

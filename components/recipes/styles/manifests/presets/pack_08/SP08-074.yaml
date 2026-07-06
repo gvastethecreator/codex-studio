@@ -12,30 +12,89 @@ tags:
   - fashion-and-costume
   - fabric-and-texture-focus
 visualDna:
-  aesthetic: Archival wrap concealment, aged linen tension, desiccated wrap grammar
-  subject_treatment: Wrapping spirals, crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm
-  color_and_tone: White, Dirty, aged-linen, aged umber stain, desert-dust tan, archival-shadow grey, ancient-yellow
-  lighting_and_shadow: Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery
+  aesthetic: >-
+    Bandage/Mummy operates as a portable fashion-costume router: combine Archival wrap concealment,
+    aged linen tension, desiccated wrap grammar with material-forward fashion transformation with
+    drape, surface, tactility, body-volume logic, and fabric-as-style behavior, so the preset
+    supplies styling behavior rather than a fixed outfit card, required wearer, or literal garment
+    sample.
+  subject_treatment: >-
+    Preserve the prompt's subject, motion, and context while forms wrap, coat, glaze, harden,
+    dissolve, ripple, fold, bind, sparkle, veil, plate, or mineralize through Wrapping spirals,
+    crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm;
+    identity stays readable as silhouette, fit, layering, body-volume logic, edge behavior, and
+    styling hierarchy shift into this preset.
+  color_and_tone: >-
+    Map color through material-native hue, surface highlights, depth values, transparency shifts,
+    metallic accents, and tactile color variation; keep textile values separated, accents
+    intentional, material color believable, and palette behavior attached to the subject instead of
+    pasted wardrobe decoration.
+  lighting_and_shadow: >-
+    Use Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery plus
+    material-revealing light with gloss, rim, translucency, sparkle, subsurface, matte falloff, or
+    volumetric separation as the styling light contract, revealing cut, drape, surface response,
+    trim, transparency, or armor structure without erasing prompt readability.
   texture_and_material: >-
-    Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze,
-    overlapping-layer bulk
+    Render Cloth strips, linen bandage, gauze-weave texture, frayed-edge loose wrap,
+    stiffened-gauze, overlapping-layer bulk plus fabric grain, fur, chain, knit, satin, lace,
+    leather, polymer, smoke, water, fire, gel, gold leaf, stone, or skin surface; keep fabric scale,
+    seams, fibers, shine, opacity, folds, hardware, elemental edges, or body-surface treatment
+    coherent across the whole prompt.
   camera_and_composition: >-
-    Compose for Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends, gauze weave, frayed
-    edges, crossing-bandage grid.
-  atmosphere_and_mood: Hidden, ancient, dry, restrained, archival
-  rendering_and_quality: Dry archival wrap texture, desiccated-linen tension
-  key_features: Layered wraps, trailing ends, gauze weave, frayed edges, crossing-bandage grid
+    Compose with Compose for Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends,
+    gauze weave, frayed edges, crossing-bandage grid plus drape rhythm, material coverage,
+    silhouette clarity, tactile close detail, fold direction, and transformation edge control as
+    reusable fashion framing grammar, allowing portraits, objects, creatures, environments, action,
+    and abstract prompts to inherit styling without one required pose.
+  atmosphere_and_mood: >-
+    Carry mood through sensory tactility, spectacle, intimacy, fragility, armor, seduction, decay,
+    luxury, uncanniness, or elemental drama; the tone should feel specific to Bandage/Mummy while
+    still obeying the prompt's adult, cute, severe, sensual, strange, or practical intent when
+    supplied.
+  rendering_and_quality: >-
+    Finish with material truth, clean surface scale, controlled texture, believable drape or
+    transformation, and no noisy texture paste; prioritize clean style recognition, believable
+    material physics, prompt preservation, controlled detail, and no watermark, fake text, or
+    accidental UI.
+  key_features: >-
+    Archival wrap concealment, aged linen tension, desiccated wrap grammar; Wrapping spirals,
+    crossing-bandage grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm; Cloth
+    strips, linen bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze,
+    overlapping-layer bulk; Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow
+    mystery; Compose for Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends,
+    gauze weave, frayed edges, crossing-bandage grid
   creative_brief: >-
-    Bind the input in bandage-wrap grammar: aged linen strips, crossing wraps, stiffened gauze, desert dust,
-    trailing frays and conceal-reveal gaps. Keep ancient tension as texture only; do not require a
-    sarcophagus, walking figure, exposed skin, wrapped face or tomb scene.
+    Use Bandage/Mummy after prompt X as a transferable fashion/costume layer: prompt X supplies
+    subject, motion, setting, tone, and intensity, while the preset supplies Archival wrap
+    concealment, aged linen tension, desiccated wrap grammar, Wrapping spirals, crossing-bandage
+    grids, conceal-reveal gaps, trailing-wrap ends, layered binding rhythm, Cloth strips, linen
+    bandage, gauze-weave texture, frayed-edge loose wrap, stiffened-gauze, overlapping-layer bulk,
+    Flat dimness, warm amber flicker, excavation daylight, wrapped-shadow mystery, Compose for
+    Bandage/Mummy using its key spatial cues: Layered wraps, trailing ends, gauze weave, frayed
+    edges, crossing-bandage grid plus weave, pile, grain, shine, translucency, opacity, stretch,
+    wrap, seam tension, edge behavior, and surface continuity, palette behavior, light response,
+    material treatment, silhouette grammar, and finish discipline without requiring one body type,
+    fixed outfit, venue, prop bundle, or card composition.
 avoidRules:
   - exposed mummy face
   - bare-skin focus
+  - generic fabric texture
+  - muddy surface noise
+  - wrong material physics
+  - fixed outfit
+  - required body type
+  - literal card scene
+  - generic fashion catalog
+  - muddy fabric noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-074.webp
 attributes:
-  negativePrompt: exposed mummy face, bare-skin focus, unwrapped body emphasis, blood, corpse, gore, horror monster
+  negativePrompt: >-
+    exposed mummy face, bare-skin focus, generic fabric texture, muddy surface noise, wrong material
+    physics, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy
+    fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

@@ -14,6 +14,7 @@ describe('recipeCatalog', () => {
       'styles',
       'remaster',
       'spritesheet',
+      'sprite-atlas',
       'cinematic',
       'character-lab',
       'character',
@@ -40,6 +41,7 @@ describe('recipeCatalog', () => {
   it('searches recipes by task, provider, text, and parameter', () => {
     expect(searchRecipeCatalog({ task: 'sprite_sheet' }).map((recipe) => recipe.id)).toEqual([
       'spritesheet',
+      'sprite-atlas',
       'character-lab',
     ]);
     expect(searchRecipeCatalog({ providerId: 'dry_run' })).toHaveLength(RECIPE_CATALOG.length);
@@ -49,6 +51,7 @@ describe('recipeCatalog', () => {
     ]);
     expect(searchRecipeCatalog({ parameterId: 'presetId' }).map((recipe) => recipe.id)).toEqual([
       'styles',
+      'sprite-atlas',
     ]);
   });
 

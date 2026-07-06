@@ -13,38 +13,65 @@ tags:
   - isekai-and-high-fantasy
 visualDna:
   aesthetic: >-
-    Saga of Tanya the Evil - Aerial War Mage Doctrine within 8. Isekai & High Fantasy: a reusable Anime Battle
-    & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction.
-    Keep the result transferable across subjects while preserving Saga of Tanya the Evil - Aerial War Mage
-    Doctrine's specific style identity.
+    Saga of Tanya the Evil - Aerial War Mage Doctrine acts as a transferable anime-battle/worlds
+    router: Saga of Tanya the Evil - Aerial War Mage Doctrine; combine it with isekai and
+    high-fantasy anime grammar with magic-system readability, quest-world texture, luminous
+    adventure, and character-independent fantasy routing; named titles, studios, or lineage words
+    may guide style, but they must not require canon cast, title-scene replication, screenshots,
+    logos, or one fixed card concept.
   subject_treatment: >-
-    Define Saga of Tanya the Evil - Aerial War Mage Doctrine through line, mass, contour, spacing, and rhythm.
-    Keep forms readable, intentional, and reusable beyond one literal scene.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Saga of
+    Tanya the Evil - Aerial War Mage Doctrine as portable contour, motion grammar, surface language,
+    and emotional pressure without requiring canon elements or a default action setup.
   color_and_tone: >-
-    Use a Saga of Tanya the Evil - Aerial War Mage Doctrine-specific palette with clear dominant, secondary,
-    and accent roles. Keep contrast deliberate and avoid generic color wash.
+    Map color through jewel fantasy accents, warm torch or lantern tones, sky blues, herb greens,
+    parchment neutrals, magical violets, and controlled pastel or dark contrast; let Saga of Tanya
+    the Evil - Aerial War Mage Doctrine choose accent intensity, value contrast, emotional
+    temperature, and power-system separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    Use lighting that makes Saga of Tanya the Evil - Aerial War Mage Doctrine recognizable: purposeful key,
-    rim, bounce, shadow, and glow behavior with readable hierarchy.
+    Use spell glow, lantern bounce, sky rim, sacred bloom, dungeon occlusion, jewel refraction, and
+    clean fantasy atmosphere separation; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Saga of Tanya the Evil - Aerial War Mage Doctrine without
+    replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Use materials and textures that reinforce Saga of Tanya the Evil - Aerial War Mage Doctrine: surface
-    response, grain, patina, polish, or wear should feel intentional and style-defining.
+    Render cloth, leather, polished armor, parchment, herbarium texture, stone, food steam, jewel
+    glow, smoke, mud, and hand-painted fantasy surfaces; keep the tactile or effect cues in Saga of
+    Tanya the Evil - Aerial War Mage Doctrine controlled, denoised, and coherent across bodies,
+    objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Use spatial behavior that fits Saga of Tanya the Evil - Aerial War Mage Doctrine: perspective,
-    compression, exaggeration, or depth should support the style without forcing one fixed location.
+    Frame through quest-path diagonals, transition thresholds, group-scale spacing without fixed
+    cast, adventure-depth cues, symbolic magic geometry without readable glyphs, and storybook
+    scale; convert Saga of Tanya the Evil - Aerial War Mage Doctrine into reusable perspective,
+    timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample
+    layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Saga of Tanya the Evil - Aerial War Mage Doctrine: specific, coherent, and
-    distinct, with emotional tone carried by visual systems rather than narrative captioning.
+    Carry mood through wonder, afterquest melancholy, dark reset pressure, absurd comedy, devotional
+    craft, merchant-road warmth, and heroic underdog resolve; the preset can become brutal, erotic,
+    comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while
+    keeping the anime-battle lineage readable.
   rendering_and_quality: >-
-    Render Saga of Tanya the Evil - Aerial War Mage Doctrine with high production clarity, strong silhouette
-    reads, clean detail priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean fantasy-anime finish with stable anatomy and creature/object structure,
+    controlled glow, no RPG UI, no readable magic text, and no generic isekai gloss; prioritize
+    stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy
+    darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Prioritize Saga of Tanya the Evil - Aerial War Mage Doctrine's key features: recognizable shape language,
-    palette logic, material cues, lighting behavior, and composition rules.
+    Saga of Tanya the Evil - Aerial War Mage Doctrine; clear fantasy silhouettes, spell-effect
+    hierarchy, surface simplification, creature or object readability, and portal-like
+    transformation logic; cloth, leather, polished armor, parchment, herbarium texture, stone, food
+    steam, jewel glow, smoke, mud, and hand-painted fantasy surfaces; quest-path diagonals,
+    transition thresholds, group-scale spacing without fixed cast, adventure-depth cues, symbolic
+    magic geometry without readable glyphs, and storybook scale; clean fantasy-anime finish with
+    stable anatomy and creature/object structure, controlled glow, no RPG UI, no readable magic
+    text, and no generic isekai gloss
   creative_brief: >-
-    Create a style-card that translates Saga of Tanya the Evil - Aerial War Mage Doctrine into a portable
-    visual system for 8. Isekai & High Fantasy. Preserve the preset identity through style mechanics, not a
-    fixed scene, character, prop, or story beat.
+    Apply Saga of Tanya the Evil - Aerial War Mage Doctrine after prompt X as a transferable
+    anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity,
+    while this preset supplies Saga of Tanya the Evil - Aerial War Mage Doctrine, isekai and
+    high-fantasy anime grammar with magic-system readability, quest-world texture, luminous
+    adventure, and character-independent fantasy routing, finish discipline, and negative controls
+    without forcing canon cast, title scene, screenshot, card pose, default monster, default combat
+    prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -58,12 +85,26 @@ avoidRules:
   - watermark
   - text
   - signature
+  - RPG UI
+  - readable magic text
+  - generic isekai wallpaper
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-251.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper,
+    fixed canon character, title scene replication, required source-frame look, cosplay, generic
+    anime filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

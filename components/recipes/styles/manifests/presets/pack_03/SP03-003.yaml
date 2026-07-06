@@ -13,37 +13,62 @@ tags:
   - render-engines
 visualDna:
   aesthetic: >-
-    Redshift Biased GPU Renderer within 1. Render Engines: a reusable 3D & CGI Rendering visual language with
-    a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable
-    across subjects while preserving Redshift Biased GPU Renderer's specific style identity.
+    Redshift Biased GPU Renderer acts as a transferable CGI-style router: start from Redshift Biased
+    GPU Renderer biased GPU sampling, fast production GI, crisp speculars, controlled render noise
+    and renderer-pipeline system built from sampling behavior, shader evaluation, light transport,
+    denoise strategy, and engine-specific production polish, then apply the 3D/render behavior to
+    prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Define Redshift Biased GPU Renderer through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Transform any prompt subject through adapt the requested subject through biased GPU sampling,
+    fast production GI, crisp speculars, controlled render noise while preserving its identity;
+    preserve the prompt subject while translating it through the renderer strengths: path tracing,
+    biased sampling, real-time GI, product-studio preview, or feature-film shading, keeping the
+    requested identity, silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    Use a Redshift Biased GPU Renderer-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Build color with palette and exposure choices that support biased GPU sampling, fast production
+    GI, crisp speculars, controlled render noise; make color come from color management, HDR
+    response, spectral bloom, engine tonemapping, material albedo, and physically plausible
+    exposure, with deliberate value grouping, exposure control, and medium-specific limits rather
+    than generic color wash.
   lighting_and_shadow: >-
-    Use lighting that makes Redshift Biased GPU Renderer recognizable: purposeful key, rim, bounce, shadow,
-    and glow behavior with readable hierarchy.
+    Handle light through light behavior that reveals biased GPU sampling, fast production GI, crisp
+    speculars, controlled render noise; let engine-specific GI, ray tracing, Lumen, caustics, volume
+    scattering, HDRI, or studio reflection control drive value hierarchy, so value structure
+    supports the renderer and does not overwrite the requested content.
   texture_and_material: >-
-    Use materials and textures that reinforce Redshift Biased GPU Renderer: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render biased GPU sampling, fast production GI, crisp speculars, controlled render noise;
+    surface detail should reveal BSDF behavior, sampling clarity, shader networks, displacement,
+    adaptive refinement, and material truth rather than a pasted texture, keeping material scale
+    coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Use spatial behavior that fits Redshift Biased GPU Renderer: perspective, compression, exaggeration, or
-    depth should support the style without forcing one fixed location.
+    Structure the image through scale rhythm, spacing, and composition rules shaped by biased GPU
+    sampling, fast production GI, crisp speculars, controlled render noise; compose for renderer
+    readability through focal hierarchy, product or VFX staging, material swatches, path-traced
+    depth, and clean engine output, with scale, spacing, edge rhythm, and visual hierarchy doing the
+    style work.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Redshift Biased GPU Renderer: specific, coherent, and distinct, with emotional
-    tone carried by visual systems rather than narrative captioning.
+    Keep the mood mood carried by biased GPU sampling, fast production GI, crisp speculars,
+    controlled render noise; derive mood from render fidelity, production confidence, cinematic
+    polish, engine interactivity, or industrial design clarity, letting the renderer alter
+    interpretation without demanding a specific story, location, or character.
   rendering_and_quality: >-
-    Render Redshift Biased GPU Renderer with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with finished Redshift Biased GPU Renderer CGI with biased GPU sampling, fast production
+    GI, crisp speculars, controlled render noise and controlled detail; finish with credible CGI
+    output, controlled noise, accurate reflections, stable geometry, and no raw viewport or cheap
+    preview look, clean denoised surfaces where appropriate, and enough shader evidence to make the
+    CGI mode recognizable.
   key_features: >-
-    Prioritize Redshift Biased GPU Renderer's key features: recognizable shape language, palette logic,
-    material cues, lighting behavior, and composition rules.
+    Redshift Biased GPU Renderer biased GPU sampling, fast production GI, crisp speculars,
+    controlled render noise; palette and exposure choices that support biased GPU sampling, fast
+    production GI, crisp speculars, controlled render noise; scale rhythm, spacing, and composition
+    rules shaped by biased GPU sampling, fast production GI, crisp speculars, controlled render
+    noise
   creative_brief: >-
-    Create a style-card that translates Redshift Biased GPU Renderer into a portable visual system for 1.
-    Render Engines. Preserve the preset identity through style mechanics, not a fixed scene, character, prop,
-    or story beat.
+    Apply Redshift Biased GPU Renderer as a CGI/render preset over prompt X: preserve the user's
+    requested subject, then route modeling, shader response, lighting, material scale, composition,
+    mood, and final render craft through Redshift Biased GPU Renderer biased GPU sampling, fast
+    production GI, crisp speculars, controlled render noise without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - drawing
@@ -57,10 +82,23 @@ avoidRules:
   - jpeg artifacts
   - watermark
   - text
+  - wrong medium
+  - flat 2d paintover
+  - muddy AI noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - raw viewport
+  - unlit preview
+  - wrong render engine
+  - cheap preview noise
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-003.webp
 attributes:
-  negativePrompt: photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts, watermark, text
+  negativePrompt: >-
+    photo, drawing, painting, sketch, 2d, flat, noise, grain, low resolution, jpeg artifacts,
+    watermark, text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter,
+    readable text, signature, raw viewport, unlit preview, wrong render engine, cheap preview noise
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

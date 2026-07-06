@@ -12,26 +12,81 @@ tags:
   - illustration-and-graphic-novel
   - ink-and-print
 visualDna:
-  aesthetic: Notebook-ink illustration with obsessive micro-hatching
-  subject_treatment: Fine pressure-variable pen lines, spiral and contour doodle logic
-  color_and_tone: Ballpoint blue, desaturated navy, off-white notebook stock
-  lighting_and_shadow: Density-built shading through layered hatch accumulation
-  texture_and_material: Light paper tooth, occasional indent drag, tiny ink clots
-  camera_and_composition: Minor line wobble and pooled-ink nodes in dense zones
-  atmosphere_and_mood: Casual yet meticulous, study-desk focus, spontaneous craft energy
-  rendering_and_quality: Raw, intimate, highly detailed pen-work with handmade variance
-  key_features: Blue-only mark system, pressure-led value changes, margin-sketch rhythm
+  aesthetic: >-
+    Ballpoint Pen acts as a transferable illustration router: start from Notebook-ink illustration
+    with obsessive micro-hatching, Blue-only mark system, pressure-led value changes, margin-sketch
+    rhythm and ink and printmaking system built from mark economy, matrix process, ink transfer,
+    pressure artifacts, paper absorption, and reproducible graphic structure, then apply the visual
+    behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Fine pressure-variable pen lines, spiral and contour doodle
+    logic; preserve the requested subject while rebuilding it through carved lines, etched density,
+    stipple fields, calligraphic pressure, stamp incompleteness, graffiti stroke logic, or
+    tattoo-flash simplification, keeping the requested identity, silhouette, pose, object function,
+    or setting legible.
+  color_and_tone: >-
+    Build color with Ballpoint blue, desaturated navy, off-white notebook stock; use color as ink
+    behavior: monochrome value, limited plates, cyan chemistry, overprint, enamel-like flash colors,
+    spray contrast, newspaper black, or sumi restraint, with deliberate value grouping, accent
+    control, and process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Density-built shading through layered hatch accumulation; translate light
+    into hatch density, dot spacing, gouge direction, plate tone, paper reserve, ink pooling, or
+    flat spray contrast rather than photographic shading, so value structure supports the
+    illustration process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Light paper tooth, occasional indent drag, tiny ink clots; surface detail should show
+    paper fiber, plate burr, block grain, stipple dots, stamp gaps, marker bite, fountain-pen
+    pooling, tattoo flash linework, or aerosol edge behavior, keeping material scale coherent and
+    avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Minor line wobble and pooled-ink nodes in dense zones; compose
+    through print registration, border discipline, mark-direction rhythm, negative-space carving,
+    tag flow, ornamental line weight, or edition-like balance, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Casual yet meticulous, study-desk focus, spontaneous craft energy; derive mood
+    from craft pressure, underground immediacy, archival print authority, occult darkness,
+    decorative ceremony, street-poster urgency, or disciplined ink control, letting the style alter
+    interpretation without demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Raw, intimate, highly detailed pen-work with handmade variance; finish as a credible
+    ink or print artifact with exact mark logic, restrained artifacting, and no fake text, random
+    distress overlay, or smooth vector replacement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Notebook-ink illustration with obsessive micro-hatching; Blue-only mark system, pressure-led
+    value changes, margin-sketch rhythm; Ballpoint blue, desaturated navy, off-white notebook stock;
+    Light paper tooth, occasional indent drag, tiny ink clots; Minor line wobble and pooled-ink
+    nodes in dense zones
   creative_brief: >-
-    Apply ballpoint notebook-ink grammar to any input: blue pressure-variable lines, cumulative hatching, ink
-    clots, margin-sketch rhythm, and paper-indent drag should resolve form through pen flow without requiring
-    notebooks, desks, studies, doodles, or fixed intimate scenes.
+    Apply Ballpoint Pen as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Notebook-ink illustration with obsessive micro-hatching, Blue-only mark system, pressure-led
+    value changes, margin-sketch rhythm, Light paper tooth, occasional indent drag, tiny ink clots
+    without requiring the card image's original subject.
 avoidRules:
   - paint
   - thick
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - fake text
+  - random distress overlay
+  - smooth vector replacement
+  - wrong print process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-072.webp
 attributes:
-  negativePrompt: paint, thick
+  negativePrompt: >-
+    paint, thick, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, fake text,
+    random distress overlay, smooth vector replacement, wrong print process
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

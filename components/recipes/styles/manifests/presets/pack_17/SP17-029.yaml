@@ -15,26 +15,44 @@ tags:
   - reliquary-apocalypse
 visualDna:
   aesthetic: >-
-    Apocalyptic iron reliquary fantasy with sacred-industrial mass, scorched liturgical metal, riveted
-    devotional forms, and catastrophic medieval machinery.
+    Apocalyptic iron reliquary fantasy with sacred-industrial mass, scorched liturgical metal,
+    riveted devotional forms, and catastrophic medieval machinery.
   subject_treatment: >-
-    Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes, caged-glass
-    accents, penitential geometry, and sacred machine ornament without forcing a specific construct or scene.
+    Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes,
+    caged-glass accents, penitential geometry, and sacred machine ornament without forcing a
+    specific construct or scene.
   color_and_tone: Furnace black, rust red, sacred gold, bone ivory, soot gray, and emerald reliquary glow.
-  lighting_and_shadow: Furnace underlight and shrine glow illuminate large armor planes while preserving denoised dark fields.
+  lighting_and_shadow: >-
+    Furnace underlight and shrine glow illuminate large armor planes while preserving denoised dark
+    fields.
   texture_and_material: >-
-    Riveted iron, scorched enamel, reliquary glass, cracked bone, chainmail, ash, and soot cleaned of ugly
-    speckle.
+    Riveted iron, scorched enamel, reliquary glass, cracked bone, chainmail, ash, and soot cleaned
+    of ugly speckle.
   camera_and_composition: >-
-    Monumental vertical framing with clear focal hierarchy, massive central forms, separated material planes,
-    and readable sacred-industrial depth that adapts to the user's subject.
-  atmosphere_and_mood: Sacred, industrial, catastrophic, penitential, and mythic.
+    Monumental vertical framing with clear focal hierarchy, massive central forms, separated
+    material planes, and readable sacred-industrial depth that adapts to the user's subject.
+  atmosphere_and_mood: >-
+    Carry the prompt through Sacred, industrial, catastrophic, penitential, and mythic; martial
+    doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual
+    discipline; the tone should follow prompt X while preserving the preset's medieval-zine
+    identity.
   rendering_and_quality: >-
-    Detailed dark fantasy digital illustration with clean black control, defined linework, polished material
-    separation, and heavy denoise.
+    Detailed dark fantasy digital illustration with clean black control, defined linework, polished
+    material separation, and heavy denoise.
   creative_brief: >-
     Apply this as a reusable style router over any prompt: preserve the user's subject while adding
-    iron-reliquary mass, sacred machinery, furnace-black contrast, and apocalyptic devotional pressure.
+    iron reliquary mass, sacred machinery, furnace black contrast, and apocalyptic devotional
+    pressure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity,
+    while this preset supplies a style grammar of Iron Reliquary Apocalypse; Apocalyptic iron
+    reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional
+    forms; catastrophic medieval machinery; Transform any prompt subject into a heavy reliquary
+    silhouette with riveted armor planes, mood, material behavior, framing logic, and denoised
+    medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text,
+    or sample-card composition.
+  key_features: >-
+    Iron Reliquary Apocalypse; Apocalyptic iron reliquary fantasy with sacred industrial mass;
+    scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery; Transform
+    any prompt subject into a heavy reliquary silhouette with riveted armor planes
 avoidRules:
   - copied faction designs
   - readable religious text
@@ -43,12 +61,20 @@ avoidRules:
   - explicit gore
   - watermark
   - text
+  - army lineup lock
+  - tabletop product photo
+  - generic battle splash
+  - prompt literal card reuse
+  - fixed medieval scene
+  - readable manuscript text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-029.webp
 attributes:
   negativePrompt: >-
-    copied faction designs, readable religious text, body horror focus, noisy dark compression, explicit gore,
-    watermark, text
+    copied faction designs, readable religious text, body horror focus, noisy dark compression,
+    explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash,
+    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
+    art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

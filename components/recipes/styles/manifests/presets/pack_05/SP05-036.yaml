@@ -12,33 +12,77 @@ tags:
   - anime-battle-and-worlds
   - modern-shonen-and-action
 visualDna:
-  aesthetic: Tragic conflict-anime style with institutional gravity, elegiac pacing, and large-scale mechanized weight
+  aesthetic: >-
+    Colossal War Drama acts as a transferable anime-battle/worlds router: Colossal War Drama,
+    colossal-war-drama anime style grammar with small human protagonist or commander silhouette
+    dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry, and mournful
+    pressure. Keep the composition broad, cinematic, and readable with restrained texture; combine
+    it with modern action anime grammar with power-system clarity, impact frames, elastic motion,
+    expressive line economy, and high-readability spectacle; named titles, studios, or lineage words
+    may guide style, but they must not require canon cast, title-scene replication, screenshots,
+    logos, or one fixed card concept.
   subject_treatment: >-
-    Severe silhouette hierarchy, disciplined shape language, rupture-line punctuation, and mournful
-    still-frame counterbeats
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Colossal
+    War Drama, colossal-war-drama anime style grammar with small human protagonist or commander
+    silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry as
+    portable contour, motion grammar, surface language, and emotional pressure without requiring
+    canon elements or a default action setup.
   color_and_tone: >-
-    Desaturated iron blues, muddy earth umbers, smoke grays, muted blood-crimson accents, low-saturation cold
-    highlights
+    Map color through saturated action accents, clean dark-light value separation, aura color,
+    bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts;
+    let Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or
+    commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional
+    geometry choose accent intensity, value contrast, emotional temperature, and power-system
+    separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    Diffused overcast with intermittent rupture flashes, long shadow veils, and documentary-like contrast
-    restraint
+    Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights,
+    and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Colossal War Drama, colossal-war-drama anime style grammar with
+    small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn
+    banners, institutional geometry without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Sooted metal surfaces, churned particulate, worn fabric grain, static noise overlays for archival tragedy
-    tone
-  camera_and_composition: Wide pressure planes with depth layering and occasional compression for claustrophobic strategic burden
-  atmosphere_and_mood: Somber, catastrophic, heavy, mournful, relentless
+    Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted
+    debris, and controlled effect overlays; keep the tactile or effect cues in Colossal War Drama,
+    colossal-war-drama anime style grammar with small human protagonist or commander silhouette
+    dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry controlled,
+    denoised, and coherent across bodies, objects, environments, abstractions, and action.
+  camera_and_composition: >-
+    Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels,
+    compressed depth, and readable near-to-far force paths; convert Colossal War Drama,
+    colossal-war-drama anime style grammar with small human protagonist or commander silhouette
+    dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry into reusable
+    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
+    sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and
+    heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet,
+    grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle
+    lineage readable.
   rendering_and_quality: >-
-    Cinematic tragedy-drama polish focused on emotional gravity, scale coherence, and restrained effect
-    realism
+    Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp
+    silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or
+    object structure, readable effects, controlled grain, heavy denoise for noisy darks, no
+    watermark, no fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Disciplined silhouette order, elegiac rupture rhythm, archival tragedy tonality, institutional pressure
-    grammar
+    Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or
+    commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional
+    geometry; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or
+    surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust,
+    smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal
+    attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable
+    near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy,
+    crisp silhouettes, no manga-panel text, and no cheap AI anime smear
   creative_brief: >-
-    Preserve this preset as an elegy language: desaturated conflict weight, institutional silhouette
-    discipline, and grief-forward pacing should define it beyond any specific tactical setup. Apply this
-    anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging,
-    palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship,
-    or fixed scene.
+    Apply Colossal War Drama after prompt X as a transferable anime-battle/worlds layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal War
+    Drama, colossal-war-drama anime style grammar with small human protagonist or commander
+    silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry, and
+    mournful pressure. Keep the composition broad, cinematic, and readable with restrained texture,
+    modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive
+    line economy, and high-readability spectacle, finish discipline, and negative controls without
+    forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or
+    prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -52,12 +96,37 @@ avoidRules:
   - watermark
   - text
   - signature
+  - real-world uniforms
+  - fascist insignia
+  - giant humanoids
+  - battlefield gore
+  - guns near-plane
+  - named franchise likeness
+  - propaganda poster text
+  - dense forest
+  - same ruined corridor formula
+  - photoreal cosplay
+  - western superhero comic
+  - generic shonen source-frame look
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-036.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, real-world uniforms, fascist insignia, giant humanoids,
+    battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense
+    forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen
+    source-frame look, fixed canon character, title scene replication, required source-frame look,
+    cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

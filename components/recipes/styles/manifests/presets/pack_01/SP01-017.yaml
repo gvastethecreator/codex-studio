@@ -12,19 +12,45 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Toy camera film
-  subject_treatment: Soft warped edges
-  color_and_tone: Cross-processed, saturated
-  lighting_and_shadow: Vignette
-  texture_and_material: Light leaks
-  camera_and_composition: Heavy vignette
-  atmosphere_and_mood: Fun, unpredictable
-  rendering_and_quality: Lo-fi analog experiment
-  key_features: Tunnel vision
+  aesthetic: >-
+    Lomo LC-A acts as a transferable photographic style router: begin from Toy camera film, Tunnel
+    vision, and analog photographic process system built from film stock response, lens
+    imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Soft warped edges; preserve the prompt scene while routing
+    detail through stock softness, halation, vignetting, motion softness, or large-format clarity,
+    keeping the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Cross-processed, saturated; let palette come from emulsion bias, slide-film
+    saturation, monochrome silver values, aged dye shift, or instant-film chemistry, with value
+    separation and white balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Vignette; shape highlights and shadows through film latitude, flash falloff, long exposure,
+    tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight
+    rolloff, and source motivation.
+  texture_and_material: >-
+    Render Light leaks; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
+    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Heavy vignette; use camera format, crop, lens character, depth of field,
+    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Fun, unpredictable; derive mood from memory, imperfection, tactile chemistry,
+    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Lo-fi analog experiment; finish as believable analog capture with coherent grain
+    scale, restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: Toy camera film; Tunnel vision; Cross-processed, saturated; Vignette; Heavy vignette
   creative_brief: >-
-    Apply Lomo LC-A plastic-lens accident to the input: cross-processed color, light leaks, smeared corners,
-    heavy vignette, and loose analog exposure should make any subject playful without requiring a specific
-    place or event.
+    Apply Lomo LC-A as a photographic preset over prompt X: preserve the user's requested subject,
+    then route Toy camera film, Cross-processed, saturated, Vignette, Light leaks, and Heavy
+    vignette through optics, exposure, palette, surface response, timing, and finish without
+    requiring the card image's original subject.
 avoidRules:
   - illustration
   - painting
@@ -39,12 +65,22 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-017.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark, text,
-    signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, low resolution, watermark,
+    text, signature, bad anatomy, deformed, synthetic CGI, plastic render, readable text, digital
+    HDR overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage
+    filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

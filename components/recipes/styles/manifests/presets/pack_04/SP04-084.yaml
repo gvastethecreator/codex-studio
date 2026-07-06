@@ -12,19 +12,62 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: Material-study board integrating design sketch and comparative swatches
-  subject_treatment: Precise contour drawing with leader-line callouts and inset annotations
-  color_and_tone: Material-true hues organized by functional group
-  lighting_and_shadow: Consistent neutral studio lighting for cross-material comparison
-  texture_and_material: Macro texture insets (grain, weave, brushed metal, translucency, patina)
-  camera_and_composition: Orthogonal layout with magnified callout circles and structured grid spacing
-  atmosphere_and_mood: Analytical, didactic, workshop-reference clarity
-  rendering_and_quality: Technical-art hybrid sheet optimized for readability and handoff
-  key_features: Swatch matrix, labeled material zones, detail zooms, controlled comparison framework
+  aesthetic: >-
+    Material Texture Exploration Sheet acts as a transferable illustration router: start from
+    Material-study board integrating design sketch and comparative swatches, Swatch matrix, labeled
+    material zones, detail zooms, controlled comparison framework and production concept-art system
+    built from iteration discipline, silhouette testing, material exploration, design readability,
+    and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of
+    recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Precise contour drawing with leader-line callouts and inset
+    annotations; preserve the requested subject while routing it through design exploration, asset
+    logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability
+    constraints, keeping the requested identity, silhouette, pose, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Material-true hues organized by functional group; use color as concept
+    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
+    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Consistent neutral studio lighting for cross-material comparison; shape
+    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
+    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
+    process and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Macro texture insets (grain, weave, brushed metal, translucency, patina); surface detail
+    should reveal brush passes, photobash integration, low-poly facets, callout texture, massing
+    blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Orthogonal layout with magnified callout circles and structured grid
+    spacing; compose through production hierarchy, variants, orthographic logic, isometric staging,
+    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
+    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Analytical, didactic, workshop-reference clarity, mood carried by Material Texture
+    Exploration Sheet craft, material pressure, and visual restraint; derive mood from exploration,
+    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
+    production-room clarity, letting the style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Technical-art hybrid sheet optimized for readability and handoff; finish with
+    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
+    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    Material-study board integrating design sketch and comparative swatches; Swatch matrix, labeled
+    material zones, detail zooms, controlled comparison framework; Material-true hues organized by
+    functional group; Macro texture insets (grain, weave, brushed metal, translucency, patina);
+    Orthogonal layout with magnified callout circles and structured grid spacing
   creative_brief: >-
-    Apply material-texture exploration-sheet logic to any input: surface swatches, edge tests, wear patterns,
-    reflectance notes as visual marks, close-up inserts, and material contrast. It can stylize objects,
-    characters, spaces, or abstractions without requiring labels, a product board, or literal texture samples.
+    Apply Material Texture Exploration Sheet as an illustration preset over prompt X: preserve the
+    user's requested subject, then route mark-making, palette, surface, composition, mood, and final
+    craft through Material-study board integrating design sketch and comparative swatches, Swatch
+    matrix, labeled material zones, detail zooms, controlled comparison framework, Macro texture
+    insets (grain, weave, brushed metal, translucency, patina) without requiring the card image's
+    original subject.
 avoidRules:
   - uniform
   - single material
@@ -35,12 +78,27 @@ avoidRules:
   - homogeneous
   - finished piece
   - single surface
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - generic fantasy wallpaper
+  - overpolished final render
+  - unclear design callouts
+  - random kitbash clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-084.webp
 attributes:
   negativePrompt: >-
-    uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single
-    surface
+    uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished
+    piece, single surface, official card scene, fixed thumbnail subject, prompt replaced by sample
+    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
+    generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash
+    clutter
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

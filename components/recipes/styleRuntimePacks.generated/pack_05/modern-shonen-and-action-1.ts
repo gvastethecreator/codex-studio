@@ -8,27 +8,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bright Hero Academy',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, school uniform copy, superhero franchise likeness, green-haired hero, numbered hero suit, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Heroic optimism action style with emblematic costume coding, uplifted momentum, and bright civic-spectacle energy',
+        'Bright Hero Academy acts as a transferable anime-battle/worlds router: Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs, civic color blocks, and aspirational cel polish. Favor clean broadcast anime, simple readable distant-plane; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Clean heroic contour grammar, readable emblem silhouettes, impact arcs with celebratory pose punctuation, comic-influenced line confidence',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Primary-forward chroma with high-key accents, disciplined shadow saturation, and motivational contrast hierarchy',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Broadcast-bright keys, triumphant backlight halos, crowd-energy bloom, and crisp highlight framing for iconic poses',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Polished suit surfaces, effect particles with clean edge control, low-noise digital compositing, high-legibility finish',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Dynamic but orderly foreshortening and perspective thrust to amplify heroic ascent without chaos blur',
-      atmosphere_and_mood: 'Aspirational, kinetic, uplifting, confident, bold',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Blockbuster modern-anime polish tuned for inspirational action clarity and poster-grade frame readability',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Emblem-driven silhouettes, optimism-first action cadence, poster-ready impact framing, high-visibility hero grammar',
+        'Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Keep the preset anchored in optimistic hero readability: emblematic silhouettes, high-key motivational color logic, and celebratory impact staging should stay transferable beyond any institution or arena narrative. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Bright Hero Academy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bright lead-form Academy, bright lead-form-academy anime style grammar with optimistic trainee protagonist, bold expressive pose, emblem-like but unreadable costume shapes, upbeat motion arcs, civic color blocks, and aspirational cel polish. Favor clean broadcast anime, simple readable distant-plane, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -36,27 +37,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mashle - Brickwall Comedy Spell-School Brawl',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Brickwall comedy spell-brawl style, where ornate magic logic is undercut by deadpan physical certainty.',
+        'Mashle - Brickwall Comedy Spell-School Brawl acts as a transferable anime-battle/worlds router: Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Heavy blocky impact shapes, elegant spell curls interrupted by blunt force vectors, and frozen straight-faced poses.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Royal academy blue, cream parchment, muscle-shadow gray, absurd gold, hot red accents, and comic white flashes.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Prestigious magical glow abruptly flattened by gag lighting, hard impact flashes, and theatrical contrast.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Chalk dust, polished magic particles, stone block grain, even flat color, and crisp gag-smear overlays.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Straight-line force breaks ornate perspective, turning elegant space into brickwall impact geometry.',
-      atmosphere_and_mood: 'Dumb, forceful, confident, hilarious',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Clean modern anime comedy-action finish with readable spell polish and blunt physical punchline clarity.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Deadpan force, broken spell logic, blocky impact, ornate-to-blunt contrast, physical punchline rhythm.',
+        'Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply absurd physical certainty to any prompt: let ornate magic cues collide with blunt force, deadpan stillness, and brickwall impact without requiring an institution, prop, duel, or body gag setup.',
+        'Apply Mashle - Brickwall Comedy Spell-School Brawl after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mashle - Brickwall Comedy Spell-School Brawl, deadpan magic-force comedy style grammar with ornate spell curls interrupted by blunt blocky impact, straight-faced timing, and clean academy color, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -64,27 +66,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sakamoto Days - Convenience-Store Assassin Sprint',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, supermarket aisle, weapon, product labels, crowd, storefront, franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Convenience-store assassin sprint style, with everyday calm, immaculate choreography, and absurd professional velocity.',
+        'Sakamoto Days - Convenience-Store Assassin Sprint acts as a transferable anime-battle/worlds router: Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Clean stunt vectors, mundane-grid composition, economical pose language, productlike pattern rhythm, and dead-calm cuts.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Fluorescent white, snack-package red, mint green, muted tan, steel gray, and sudden action yellow.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Flat retail brightness pierced by kinetic rim streaks, hard practical glow, and clean comedy-action highlights.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Glossy packaging color, tile shine, polished metal glints, soft cloth flats, and crisp motion overlays.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Everyday grids become action lanes, with precise perspective snaps and calm negative space.',
-      atmosphere_and_mood: 'Cool, funny, efficient, surprising',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime finish with immaculate stunt clarity, mundane detail, and surprise velocity.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Mundane-action contrast, clean stunt lanes, dead-calm efficiency, retail-bright palette, hidden velocity.',
+        'Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Turn any prompt into mundane precision action: keep surfaces ordinary, lighting flat, and motion impossibly clean, without requiring a store, product display, weapon, profession, or suburban scene.',
+        'Apply Sakamoto Days - Convenience-Store Assassin Sprint after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Sakamoto Days - Convenience-Store Assassin Sprint, mundane-action velocity style grammar with calm empty-handed protagonist, retail-light color blocks, snapped motion lanes, and dead-calm timing, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -92,27 +95,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gritty Urban Curses',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, school uniform copy, finger/talisman fetish prop, monster gore, named sorcerer likeness, alley fight pileup, readable sigils, dense forest, ruin corridor, generic shonen rubble, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Urban occult combat style with ritual geometry, predatory restraint, and high-contrast supernatural pressure fields',
+        'Gritty Urban Curses acts as a transferable anime-battle/worlds router: Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons, black-cyan-violet contrast, and confident hand-acting. Keep graphic shadow blocks and clean aura shapes over tiny particle noise; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Razor contour discipline, sigil-like motion arcs, pressure-point emphasis, silhouette cuts that privilege threat readability',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Near-black base with toxic cyan-violet energy seams, selective crimson hazard notes, and sparse white-hot highlights',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Low-key nocturnal staging, localized aura bloom, hard rim partitions, and volumetric pockets around cursed emissions',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Polished modern surfaces interrupted by particulate curse residue, sharp effect overlays, subtle grain under high contrast',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Compressed depth lanes and warped local perspective around energy events to signal unstable spiritual space',
-      atmosphere_and_mood: 'Menacing, controlled, tactical, uncanny, electric',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium dark-action anime finish with clean edge fidelity and controlled post-bloom tuned for occult readability',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Ritual gesture grammar, pressure-field visuals, sigil energy contours, threat-priority silhouette staging',
+        'Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Define this preset by occult-pressure visual logic: gesture-led energy geometry, hard contrast segmentation, and localized spatial instability should carry the identity across any subject.',
+        'Apply Gritty Urban Curses after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Urban Curses, urban-occult anime style grammar with charismatic non-famous sorcerer-like protagonist, streetwear silhouette, abstract curse geometry, pressure-field ribbons, black-cyan-violet contrast, and confident hand-acting. Keep graphic shadow blocks and clean aura shapes over tiny particle noise, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -120,27 +124,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gritty Wallbound Survival',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Vertical-survival action style defined by scale terror, trajectory tension, and desperate acceleration rhythm',
+        'Gritty Wallbound Survival acts as a transferable anime-battle/worlds router: Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth, and disciplined fear-forward body language. Keep strong silhouette and large value shapes instead of gritty microtexture; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Tether-like diagonals, anchor-point geometry, hard angular silhouettes, sharp momentum lines for vertical pressure',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Dusty survival neutrals with emergency red-orange flares, cold steel tones, and smoke-dark value structure',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Harsh side light with particulate haze, breached-sky shafts, silhouette-first backlight, and panic-intensity contrast spikes',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Tension-line sheen, weathered technical fibers, mineral debris grain, smoke and grit overlays with high kinetic readability',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Extreme vertical foreshortening with depth-drop exaggeration and looming mass contrast to reinforce peril',
-      atmosphere_and_mood: 'Desperate, relentless, hunted, grim, adrenaline-heavy',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'High-intensity survival anime finish emphasizing motion mechanics, scale legibility, and urgency-first compositional clarity',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Aerial trajectory grammar, scale-shock framing, tension-mechanics readability, pressure visual cadence',
+        'Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'The identity should come from vertical-mobility tension and overwhelming scale contrast: tethered motion logic and depth-drop fear must remain central without requiring a specific survival setting.',
+        'Apply Gritty Wallbound Survival after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gritty Wallbound Survival, vertical-survival anime style grammar with tense scout protagonist, harness/tether geometry, wind shear, wall-scale vertical depth, and disciplined fear-forward body language. Keep strong silhouette and large value shapes instead of gritty microtexture, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -148,27 +153,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Colossal War Drama',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Tragic conflict-anime style with institutional gravity, elegiac pacing, and large-scale mechanized weight',
+        'Colossal War Drama acts as a transferable anime-battle/worlds router: Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry, and mournful pressure. Keep the composition broad, cinematic, and readable with restrained texture; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Severe silhouette hierarchy, disciplined shape language, rupture-line punctuation, and mournful still-frame counterbeats',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Desaturated iron blues, muddy earth umbers, smoke grays, muted blood-crimson accents, low-saturation cold highlights',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Diffused overcast with intermittent rupture flashes, long shadow veils, and documentary-like contrast restraint',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Sooted metal surfaces, churned particulate, worn fabric grain, static noise overlays for archival tragedy tone',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Wide pressure planes with depth layering and occasional compression for claustrophobic strategic burden',
-      atmosphere_and_mood: 'Somber, catastrophic, heavy, mournful, relentless',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Cinematic tragedy-drama polish focused on emotional gravity, scale coherence, and restrained effect realism',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Disciplined silhouette order, elegiac rupture rhythm, archival tragedy tonality, institutional pressure grammar',
+        'Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Preserve this preset as an elegy language: desaturated conflict weight, institutional silhouette discipline, and grief-forward pacing should define it beyond any specific tactical setup. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Colossal War Drama after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Colossal War Drama, colossal-war-drama anime style grammar with small human protagonist or commander silhouette dwarfed by mechanized scale, smoke planes, torn banners, institutional geometry, and mournful pressure. Keep the composition broad, cinematic, and readable with restrained texture, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -176,27 +182,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tactical Adventure Shonen',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, hunter-license copy, card-game UI, readable labels, fishing-rod hero prop, green outfit copy, franchise team likeness, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Strategic-adventure shonen style with systems-driven readability, curiosity-forward energy, and tactical clarity',
+        'Tactical Adventure Shonen acts as a transferable anime-battle/worlds router: Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes, and playful strategic confidence. Keep clean cel readability and distinct costume color logic; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Diagrammatic action vectors, clean decision-point silhouettes, ability-network motifs, and choreography that foregrounds planning',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Bright exploratory saturation with disciplined tactical accents, cool-warm contrast nodes, and lucid value grouping',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Adventure-bright daylight with focused tactical highlights, balanced fill, and clear visual signaling for ability states',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Clean modern anime surface polish, legible effect overlays, map-like compositional textures, low-grit digital finish',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Dynamic depth with navigational clarity, emphasizing positional intelligence over chaotic motion blur',
-      atmosphere_and_mood: 'Curious, competitive, analytical, adventurous, high-spirited',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium strategy-action anime rendering that prioritizes intelligible logic and discovery freshness',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'System-logic grammar, tactical readability, exploratory composition, intelligence-led spectacle pacing',
+        'Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Keep the preset centered on strategic legibility and discovery energy: motion should feel like visible problem-solving, with action grammar driven by tactical decisions rather than fixed lore references. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Tactical Adventure Shonen after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Tactical Adventure Shonen, tactical-adventure shonen style grammar with clever young adventurer protagonist, diagrammatic motion vectors, ability-network motifs, discovery-map energy as abstract shapes, and playful strategic confidence. Keep clean cel readability and distinct costume color logic, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -204,27 +211,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Demon Slayer - Lantern Bloodline Sword Ballet',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Lantern bloodline sword ballet style, with patterned tenderness, breathlike elemental arcs, and elegant tragedy.',
+        'Demon Slayer - Lantern Bloodline Sword Ballet acts as a transferable anime-battle/worlds router: Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness, keep it non-graphic, non-derivative; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Razor-clean contours, ribboned motion trails, patterned shape blocks, ceremonial pauses, and breath-synced flow lines.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Lantern amber, winter blue, blood crimson, charcoal black, snow white, and vivid elemental accent tones.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Warm lantern glow against cold mist, precise rim cuts, soft memory bloom, and explosive arc highlights.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Woven pattern grain, ink-wash mist, polished cel edges, snowlike particles, and luminous breath trails.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Curved slash-space, breath-expanded depth, and choreographic foreshortening that frames motion as dance.',
-      atmosphere_and_mood: 'Heroic, tragic, elegant, intense',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime action polish with ornamental clarity, emotional pauses, and fluid arc readability.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Breathlike arcs, patterned emotion, lantern warmth, winter contrast, choreographic violence.',
+        'Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply elegant tragic action to any prompt through breathlike luminous arcs, patterned emotion, lantern warmth, and ceremonial motion pauses; keep the style free from fixed hunter, era, costume, or blade requirements.',
+        'Apply Demon Slayer - Lantern Bloodline Sword Ballet after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Demon Slayer - Lantern Bloodline Sword Ballet, lantern-elemental motion style grammar with patterned warmth, breathlike luminous arcs, winter-blue/amber contrast, and ceremonial tenderness, keep it non-graphic, non-derivative, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -232,27 +240,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blue Lock - Predator-Ego Sports Assault',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Predator-ego sports assault, with hyper-competitive psychology, lock-on intensity, and tactical hunger made visible.',
+        'Blue Lock - Predator-Ego Sports Assault acts as a transferable anime-battle/worlds router: Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Feral close-up geometry, field-line abstractions, ballistic vectors, sharp eye-line cuts, and pressure-zone framing.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Electric blue, predator green, hot magenta, stadium black, white linework, and acid yellow target accents.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Neon rim aggression, spotlight isolation, pulse flashes, and high-contrast tunnel vision.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Synthetic turf texture, sweat gloss, digital speed overlays, crisp cel impact, and chromatic motion haze.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Tunnel-vision compression, target-lock perspective, and velocity lines that make desire feel tactical.',
-      atmosphere_and_mood: 'Predatory, focused, manic, competitive',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium sports-anime polish with psychological clarity, speed precision, and manic competitive focus.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Lock-on framing, ego aura, field-line abstraction, ballistic intent, predatory focus.',
+        'Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Turn any prompt into a competitive ego diagram: use target-lock framing, neon pressure lines, feral focus, and ballistic intent without requiring a sport object, field, goal, or match scene.',
+        'Apply Blue Lock - Predator-Ego Sports Assault after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blue Lock - Predator-Ego Sports Assault, predator-ego sports intensity style grammar with electric-blue field-line abstractions, pressure zones, target-lock geometry, and competitive focus, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -260,27 +269,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bleach: Thousand-Year Blood War - Royal Black Blade Opera',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Royal black blade opera, with severe monochrome authority, spiritual pageantry, aristocratic drama, and explosive calligraphy.',
+        'Bleach: Thousand-Year Blood War - Royal Black Blade Opera acts as a transferable anime-battle/worlds router: Bleach: Thousand-Year Blood War - Royal Black Blade Opera; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Long black silhouette sweeps, blade-like negative cuts, calligraphic effect strokes, regal posture, and palace-scale verticals.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Bleach: Thousand-Year Blood War - Royal Black Blade Opera as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Royal black, marble white, cold blue, blood red, antique gold, and violet spiritual accents.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Bleach: Thousand-Year Blood War - Royal Black Blade Opera choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Divine backlight, hard rim partitioning, opera-stage spotlight, and explosive white-black contrast.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Bleach: Thousand-Year Blood War - Royal Black Blade Opera without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Ink-black cloth sheen, polished marble light, spiritual particle dust, metallic edge glints, and clean HDR bloom.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Bleach: Thousand-Year Blood War - Royal Black Blade Opera controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Monumental vertical compression, sweeping cloaklike motion, and reality-cut planes that enlarge the frame.',
-      atmosphere_and_mood: 'Regal, severe, explosive, mythic',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Bleach: Thousand-Year Blood War - Royal Black Blade Opera into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime finish with ceremonial severity, high contrast, and operatic spiritual spectacle.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Monochrome severity, calligraphic power, regal verticality, spiritual opera, blade-like contrast.',
+        'Bleach: Thousand-Year Blood War - Royal Black Blade Opera; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Make any prompt feel like royal spiritual opera: use black-white severity, calligraphic energy, and monumental verticals without requiring uniforms, palaces, weapons, named attacks, or literal war pageantry.',
+        'Apply Bleach: Thousand-Year Blood War - Royal Black Blade Opera after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bleach: Thousand-Year Blood War - Royal Black Blade Opera, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -288,27 +298,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Wind Breaker - Delinquent Street Protector Rush',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Delinquent protector rush style, with streetwind swagger, bruised loyalty, sharp youth motion, and neon grit.',
+        'Wind Breaker - Delinquent Street Protector Rush acts as a transferable anime-battle/worlds router: Wind Breaker - Delinquent Street Protector Rush; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Wind-shear diagonals, loose jacketlike silhouette rhythm, knuckle-close impact arcs, and confident stance geometry.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Wind Breaker - Delinquent Street Protector Rush as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Streetlight amber, bruised purple, asphalt gray, neon green, hot sign red, and midnight blue.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Wind Breaker - Delinquent Street Protector Rush choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Flickering urban rim light, low practical glow, fast backlight streaks, and hard contrast around impact beats.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Wind Breaker - Delinquent Street Protector Rush without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Scuffed fabric, skin bruise tones, pavement grit, sign-glow bloom, and polished modern cel edges.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Wind Breaker - Delinquent Street Protector Rush controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Alleylike compression, wind-pushed depth, and foreshortened rush lines without fixed architecture.',
-      atmosphere_and_mood: 'Rowdy, loyal, kinetic, swaggering',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Wind Breaker - Delinquent Street Protector Rush into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern action anime finish with clean speed, grounded swagger, and readable loyalty tension.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Streetwind motion, bruised loyalty, neon grit, protector swagger, close-impact rhythm.',
+        'Wind Breaker - Delinquent Street Protector Rush; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Give any prompt delinquent protector energy through wind-shear lines, bruised color, neon grit, and loyalty-charged impact timing without fixing the style to an institution, faction, or fixed setting.',
+        'Apply Wind Breaker - Delinquent Street Protector Rush after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Wind Breaker - Delinquent Street Protector Rush, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -316,27 +327,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Undead Unluck - Rule-Breaker Curse Impact',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Rule-breaker curse impact, with conceptual power logic, slapstick brutality, unlucky chain reactions, and romantic chaos.',
+        'Undead Unluck - Rule-Breaker Curse Impact acts as a transferable anime-battle/worlds router: Undead Unluck - Rule-Breaker Curse Impact; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Cause-effect arrows, broken-body exaggeration, pop-symbol impact marks, rebound arcs, and offbeat timing panels.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Undead Unluck - Rule-Breaker Curse Impact as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Poppy red, curse black, lucky green inverted into hazard, bright yellow impact, pink warmth, and clean cyan contrast.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Undead Unluck - Rule-Breaker Curse Impact choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Sudden chain-reaction flashes, comic impact bursts, warm romance glints, and brutal hard-shadow beats.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Undead Unluck - Rule-Breaker Curse Impact without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Comic symbol overlays, polished cel impact, fractured texture marks, grit bursts, and clean pop gradients.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Undead Unluck - Rule-Breaker Curse Impact controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Domino-like causality, rebound compression, and unlucky vectors that redirect the whole frame.',
-      atmosphere_and_mood: 'Chaotic, playful, brutal, offbeat',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Undead Unluck - Rule-Breaker Curse Impact into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Modern anime action finish with conceptual readability, offbeat brutality, and playful emotional contrast.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Rule-logic symbols, unlucky vectors, slapstick brutality, chain reactions, romance-under-chaos warmth.',
+        'Undead Unluck - Rule-Breaker Curse Impact; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Make any prompt behave like a broken rule system: visualize causality, unlucky rebound, comic brutality, and warmth under chaos without requiring body horror, named powers, relationships, or set-piece destruction.',
+        'Apply Undead Unluck - Rule-Breaker Curse Impact after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Undead Unluck - Rule-Breaker Curse Impact, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -344,27 +356,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Black Clover - Grimoire Thunder Squad',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Grimoire thunder squad style, with scrappy underdog drive, loud magical ambition, and ragged force versus noble polish.',
+        'Black Clover - Grimoire Thunder Squad acts as a transferable anime-battle/worlds router: Black Clover - Grimoire Thunder Squad; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Booklike aura panels, thunder diagonals, rough-edged silhouettes, squad-rhythm spacing, and shout-like energy bursts.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Black Clover - Grimoire Thunder Squad as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Thunder gold, black-clover green, ragged brown, royal violet, anti-magic black, and bright rivalry blue.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Black Clover - Grimoire Thunder Squad choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Explosive magical backlight, page-glow flashes, hard thunder rims, and loud high-contrast aura blooms.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Black Clover - Grimoire Thunder Squad without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Parchment grain, torn cloth, crackling aura particles, rough stone dust, and polished spell overlays.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Black Clover - Grimoire Thunder Squad controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Aura shockwaves push perspective outward, while squad spacing creates forward pressure.',
-      atmosphere_and_mood: 'Determined, loud, magical, scrappy',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Black Clover - Grimoire Thunder Squad into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime finish with loud energy, readable team rhythm, and underdog intensity.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Page-glow force, thunder squad rhythm, ragged ambition, anti-magic contrast, loud underdog aura.',
+        'Black Clover - Grimoire Thunder Squad; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply loud underdog magic to any prompt through page-glow geometry, thunder diagonals, ragged texture, and defiant aura pressure without requiring specific props, teams, vertical power symbols, conflict sites, or hierarchy scenes.',
+        'Apply Black Clover - Grimoire Thunder Squad after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Clover - Grimoire Thunder Squad, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -372,27 +385,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kagurabachi - Sword Oath Under Neon Rain',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Sword oath under neon rain, with brooding restraint, occult edge-light, revenge severity, and sudden clean violence.',
+        'Kagurabachi - Sword Oath Under Neon Rain acts as a transferable anime-battle/worlds router: Kagurabachi - Sword Oath Under Neon Rain; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Long rain diagonals, spare silhouette control, blade-like light cuts, severe eye-line geometry, and stillness-before-impact.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Kagurabachi - Sword Oath Under Neon Rain as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Midnight black, neon cyan, blood red, wet asphalt blue, steel gray, and cold violet.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Kagurabachi - Sword Oath Under Neon Rain choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Rain-split neon, narrow rim blades, low-key noir pools, and abrupt impact flashes.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Kagurabachi - Sword Oath Under Neon Rain without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Wet pavement sheen, rain streaks, polished edge glints, dark cloth flats, and occult particle cuts.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Kagurabachi - Sword Oath Under Neon Rain controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Long-lens compression, rain-layer parallax, and sudden perspective cuts that feel oath-driven.',
-      atmosphere_and_mood: 'Brooding, precise, cool, vengeful',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Kagurabachi - Sword Oath Under Neon Rain into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Sleek modern anime thriller finish with precise restraint, wet neon depth, and sharp impact readability.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Neon rain, oathlike stillness, blade-light cuts, noir restraint, occult edge energy.',
+        'Kagurabachi - Sword Oath Under Neon Rain; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Make any prompt feel like a restrained revenge oath: use wet neon, cold edge light, precise stillness, and sudden graphic cuts without requiring a sword, uniform, hidden room, or named place.',
+        'Apply Kagurabachi - Sword Oath Under Neon Rain after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kagurabachi - Sword Oath Under Neon Rain, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -400,27 +414,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Attack on Titan - Wall Rupture Desperation',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Wall rupture desperation, with colossal scale terror, militarized pressure, dust-cloud dread, and tactical sacrifice.',
+        'Attack on Titan - Wall Rupture Desperation acts as a transferable anime-battle/worlds router: Attack on Titan - Wall Rupture Desperation; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Tether-vector diagonals, severe regimented silhouettes, rupture cracks, falling-depth lines, and panic-sharp contours.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Attack on Titan - Wall Rupture Desperation as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Dust brown, blood red, bone beige, regiment green, smoke gray, and cold sky blue.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Attack on Titan - Wall Rupture Desperation choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Breached daylight shafts, dust-filtered backlight, hard emergency rims, and tragic silhouette contrast.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Attack on Titan - Wall Rupture Desperation without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Cracked stone grain, cable sheen, smoke dust, worn fabric, and harsh cel shadow texture.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Attack on Titan - Wall Rupture Desperation controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Vertical drops, looming mass pressure, walllike compression, and depth that makes distance frightening.',
-      atmosphere_and_mood: 'Desperate, colossal, militarized, tragic',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Attack on Titan - Wall Rupture Desperation into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern survival-anime finish with scale clarity, grim motion mechanics, and tragedy-heavy detail.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Colossal scale, rupture dust, vertical terror, regimented desperation, tethered motion.',
+        'Attack on Titan - Wall Rupture Desperation; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply desperate scale pressure to any prompt: use vertical drops, dust rupture, regimented silhouettes, and looming mass contrast without requiring fortifications, troops, traversal equipment, rooftops, or fixed enemies.',
+        'Apply Attack on Titan - Wall Rupture Desperation after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Attack on Titan - Wall Rupture Desperation, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -428,27 +443,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Frieren Combat Flashback - Ancient Calm Spell Impact',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Ancient calm spell impact, with long memory, precise violence, sky-rich stillness, and understated magical authority.',
+        'Frieren Combat Flashback - Ancient Calm Spell Impact acts as a transferable anime-battle/worlds router: Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Minimal gesture geometry, clean spell circles, soft contour restraint, sudden precise impact lines, and calm spacing.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Pale sky blue, soft gold, pearl white, sage green, memory violet, and focused arcane cyan.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Quiet sky glow, precise spell bloom, slow rim light, and sudden clean impact flash.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Soft cloth grain, translucent mana particles, watercolor sky gradients, fine paperlike cel texture, and polished magic edges.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Wide stillness compressed by exact spell geometry, with impact appearing already decided.',
-      atmosphere_and_mood: 'Calm, precise, wistful, powerful',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime finish with restrained emotion, clean magical precision, and spacious compositional calm.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Controlled spell geometry, memory light, quiet impact, sky-rich calm, precise authority.',
+        'Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Give any prompt ancient calm impact: use spacious stillness, soft memory light, and exact spell geometry so power feels quiet and finished without requiring a caster, opponent, companion memory, or combat scene.',
+        'Apply Frieren Combat Flashback - Ancient Calm Spell Impact after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Frieren Combat Flashback - Ancient Calm Spell Impact, ancient-calm spell-impact style grammar with pale sky memory, precise arcane geometry, soft cloth, and understated authority, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -456,27 +472,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Impact Frame Comedy Hero',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Satirical overpowered action style combining premium destruction spectacle with deadpan comedic detachment',
+        'Impact Frame Comedy Hero acts as a transferable anime-battle/worlds router: Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings, shattered graphic debris, and satirical overpowered energy. Keep crisp cel comedy timing and simple readable shapes; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Hyper-clean impact silhouettes, minimal-expression face grammar, explosive contour bursts, freeze-frame punchline timing lines',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Catastrophic contrast spikes over neutral comedic anchors, high-energy effect chroma with deliberate flat reaction zones',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Blockbuster blast illumination paired with calm portrait lighting for reaction shots, emphasizing joke-through-contrast',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Crisp debris effects, polished impact particles, low-noise digital surfaces, comic-clean compositing with theatrical clarity',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Extreme impact foreshortening alternating with static deadpan framing to maximize comedic dissonance',
-      atmosphere_and_mood: 'Absurd, overpowering, ironic, explosive, stoic',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Top-tier action animation polish intentionally juxtaposed with anti-dramatic character stillness and visual punchline control',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Spectacle-vs-deadpan duality, overkill impact staging, minimal-reaction comedy rhythm, freeze-frame gag mechanics',
+        'Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'The style should read as high-budget action satire: catastrophic impact grammar contrasted with emotionally flat reaction framing, making comedic dissonance the transferable core. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Impact Frame Comedy Hero after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Impact Frame Comedy lead-form, impact-frame comedy anime style grammar with deadpan gag protagonist, absurdly calm posture, blank reaction geometry, dust-cloud rings, shattered graphic debris, and satirical overpowered energy. Keep crisp cel comedy timing and simple readable shapes, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -484,27 +501,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'One-Punch Man - Prestige Hero Impact Satire',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, bald hero copy, fist near-plane, city destruction gore, weapon, readable text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Prestige hero impact satire, with blockbuster destruction grammar, bored overpowered calm, and sincerity cut by absurdity.',
+        'One-Punch Man - Prestige Hero Impact Satire acts as a transferable anime-battle/worlds router: One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Hyper-clean impact silhouettes, deadpan flat zones, explosive contour bursts, simple reaction shapes, and punchline timing lines.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Catastrophe orange, hero yellow, blank beige, concrete gray, electric blue, and crisp white impact flashes.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Blockbuster blast illumination, calm portrait lighting, hard rim clarity, and comic contrast between scale and reaction.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Crisp debris particles, polished effect shards, clean cel fields, low-noise surfaces, and theatrical smoke gradients.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Extreme impact foreshortening alternating with static flat framing for comedic dissonance.',
-      atmosphere_and_mood: 'Deadpan, explosive, absurd, triumphant',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Top-tier modern anime action polish deliberately interrupted by anti-dramatic stillness.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Overkill impact, deadpan calm, blockbuster polish, flat reaction zones, satire-through-contrast.',
+        'One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply prestige impact satire to any prompt: render spectacle with maximum craft, then undercut it through flat reaction space and deadpan composition without requiring a hero, monster, cape, city, or crater scene.',
+        'Apply One-Punch Man - Prestige Hero Impact Satire after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies One-Punch Man - Prestige lead-form Impact Satire, deadpan prestige impact satire style grammar with blockbuster polish, flat reaction space, absurd scale contrast, and clean impact geometry, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -512,27 +530,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Solo Leveling - Shadow Monarch Raid Ascension',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Shadow monarch raid ascension, with violet-black dominance, solitary power growth, sleek aura spectacle, and rank-up intensity.',
+        'Solo Leveling - Shadow Monarch Raid Ascension acts as a transferable anime-battle/worlds router: Solo Leveling - Shadow Monarch Raid Ascension; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Tall silhouette authority, shadow-swarm edges, vertical ascent vectors, sharp aura crowns, and layered power contours.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Solo Leveling - Shadow Monarch Raid Ascension as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Void black, royal violet, electric blue, silver edge light, deep indigo, and cold white rank glints.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Solo Leveling - Shadow Monarch Raid Ascension choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Bottomless shadow glow, violet lightning rims, portal-like depth bloom, and hard silhouette backlight.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Solo Leveling - Shadow Monarch Raid Ascension without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Smoky shadow grain, glossy black aura, metallic trim glints, particle shards, and polished digital contrast.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Solo Leveling - Shadow Monarch Raid Ascension controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Upward pressure, shadow-depth multiplication, and perspective that makes power feel exponential.',
-      atmosphere_and_mood: 'Dominant, sleek, ominous, ascendant',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Solo Leveling - Shadow Monarch Raid Ascension into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Sleek modern anime polish with overwhelming force, clean aura readability, and solitary scale.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Violet aura crown, shadow multiplication, solitary ascent, rank-glow hierarchy, overwhelming calm.',
+        'Solo Leveling - Shadow Monarch Raid Ascension; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Make any prompt feel like solitary power ascending: multiply shadow depth, add violet hierarchy, and compress space around a dominant center without requiring a fixed challenge space, entity, ruler figure, or transition scene.',
+        'Apply Solo Leveling - Shadow Monarch Raid Ascension after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Solo Leveling - Shadow Monarch Raid Ascension, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -540,27 +559,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blade Field Urban Fantasy',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Mythic spectacle style with ceremonial iconography, noble dramatic scale, and reality-layer rupture effects',
+        'Blade Field Urban Fantasy acts as a transferable anime-battle/worlds router: Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons, and symbolic field geometry. Keep the scene graphic, ritual, and subject design-led with controlled glow; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Heroic silhouette opposition, repeated luminous motifs, calligraphic strike vectors, and emblematic stance framing',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Regal gold-crimson contrasts over deep navy-charcoal grounds, with luminous arc accents and ceremonial highlight bands',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Mythic backlight domes, volumetric ray fan-outs, high-drama rim partitioning, and operatic spotlight behavior',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Polished relic-metal sheen, arcane effect particles, clean cinematic composites, and controlled bloom around signature motifs',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Reality-fold perspective pulls and horizon warping around repeated symbolic manifestations to emphasize mythic magnitude',
-      atmosphere_and_mood: 'Grandiose, operatic, solemn, epic, fated',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Grand-scale fantasy-action rendering with high symbolic clarity and premium spectacle polish',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Symbol-field iconography, ceremonial opposition, reality-layer rupture cues, regal color authority',
+        'Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Preserve identity through mythic symbolism and ceremonial opposition; reality-warp spectacle should support an operatic visual grammar beyond specific lore references or combat setups. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Blade Field Urban Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Blade Field Urban Fantasy, mythic urban-fantasy anime style grammar with composed protagonist, ceremonial opposition, repeated luminous emblems, reality-fold ribbons, and symbolic field geometry. Keep the scene graphic, ritual, and subject design-led with controlled glow, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -568,27 +588,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fire Force - Cathedral Inferno Brigade',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Cathedral inferno action, with liturgical flame, ember halos, sacred urgency, and industrial heat.',
+        'Fire Force - Cathedral Inferno Brigade acts as a transferable anime-battle/worlds router: Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Speed-line heroics, vertical nave geometry, ignition arcs, black silhouette cuts, and prayerlike motion rhythm.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Ember orange, soot black, stained-glass blue, sacred gold, ash gray, and white-hot ignition points.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Flame underlight, volumetric sacred rays, explosive backlight, and ember-bloom halos.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Soot grain, charred metal, glowing ash, polished cel fire, stained-glass color bleed, and heat shimmer.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Vertical heat columns, speed-stretched embers, and cathedral-scale depth suggested through light.',
-      atmosphere_and_mood: 'Blazing, heroic, sacred, kinetic',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime finish with crisp flame readability, sacred scale, and kinetic rescue urgency.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Ember halos, liturgical flame, black silhouette cuts, ignition motion, sacred heat.',
+        'Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply sacred inferno energy to any prompt: make flame feel ceremonial, emergency-like, and luminous through ember halos, vertical rays, and black silhouette contrast without requiring a brigade, cathedral, or rescue scene.',
+        'Apply Fire Force - Cathedral Inferno Brigade after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Fire Force - Cathedral Inferno Brigade, ceremonial inferno action style grammar with ember halos, sacred heat geometry, black silhouette cuts, and emergency brightness, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -596,27 +617,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kaiju No. 8 - Civic Monster Response Unit',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Civic monster response style, with public-infrastructure heroics, colossal scale, procedural action, and resilient order.',
+        'Kaiju No. 8 - Civic Monster Response Unit acts as a transferable anime-battle/worlds router: Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Technical contour discipline, response-grid layouts, oversized scale markers, angular suitlike silhouettes, and impact arrows.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Emergency orange, municipal blue, concrete gray, bio-lime accents, steel black, and clean white signage blocks.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Disaster-scene glare, operational floodlights, smoke-filtered backlight, and clear hazard-color hierarchy.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Concrete dust, rubberized armor sheen, bio-organic gloss, utility metal, smoke grit, and signage-flat overlays.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Monster-scale perspective shifts, infrastructure-depth compression, and huge-negative-space pressure.',
-      atmosphere_and_mood: 'Explosive, civic, resilient, colossal',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime finish with procedural clarity, colossal impact readability, and civic-response texture.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Civic hazard palette, colossal scale markers, procedural heroism, response-grid composition, bio-industrial grit.',
+        'Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Make any prompt feel like a public response to impossible scale: combine hazard-color clarity, procedural grids, infrastructure texture, and huge perspective pressure without requiring a literal monster, team, city, or cleanup scene.',
+        'Apply Kaiju No. 8 - Civic Monster Response Unit after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Kaiju No. 8 - Civic Monster Response Unit, civic colossal-response action style grammar with municipal hazard color, infrastructure scale markers, response-grid clarity, and resilient order, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -624,27 +646,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dandadan - Paranormal Turbo Romance Brawl',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Paranormal turbo romance brawl, with occult comedy collision, weird speed, irreverent warmth, and cosmic nonsense.',
+        'Dandadan - Paranormal Turbo Romance Brawl acts as a transferable anime-battle/worlds router: Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Turbo smear lines, elastic reaction contours, collision-panel rhythm, paranormal glyph bursts, and romantic recoil beats.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Hot pink, ghostly teal, alien lime, blacklight violet, comic yellow, and warm blush orange.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Flash-frame impacts, uncanny underglow, neon paranormal rim light, and sudden romantic softness after chaos.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Static grain, ectoplasmic glow, stickerlike graphic overlays, polished cel speed effects, and rough comedy smears.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Turbo perspective snaps, supernatural squash-stretch, and colliding scale shifts that keep the frame unstable.',
-      atmosphere_and_mood: 'Wild, funny, romantic, unhinged',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium weird-action anime finish with high-speed clarity, absurd timing, and expressive romance friction.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Occult comedy, turbo impact, weird romance recoil, paranormal color clash, reaction-shot elasticity.',
+        'Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Push any prompt into turbo paranormal comedy: clash impossible energies, speed-line absurdity, and romantic recoil in the same frame without requiring teenagers, aliens, ghosts, streets, or a brawl setup.',
+        'Apply Dandadan - Paranormal Turbo Romance Brawl after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dandadan - Paranormal Turbo Romance Brawl, paranormal turbo comedy style grammar with ghostly teal/hot pink collision, elastic reaction marks, alien-lime absurdity, and warm romantic recoil, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -652,27 +675,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: "Hell's Paradise - Poison Garden Executioner",
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Poison-garden executioner style, with floral horror, sacred violence, hallucinogenic beauty, and fatalistic calm.',
+        "Hell's Paradise - Poison Garden Executioner acts as a transferable anime-battle/worlds router: Hell's Paradise - Poison Garden Executioner; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.",
       subject_treatment:
-        'Sharp ceremonial contours, petal-like cut geometry, toxic tendril arcs, restrained posture, and lethal negative space.',
+        "Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Hell's Paradise - Poison Garden Executioner as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.",
       color_and_tone:
-        'Poison magenta, lotus pink, jade green, black ink, bone cream, and arterial red accents.',
+        "Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Hell's Paradise - Poison Garden Executioner choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.",
       lighting_and_shadow:
-        'Lush overbright bloom, poisonous rim color, soft sacred haze, and sudden lethal shadow cuts.',
+        "Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Hell's Paradise - Poison Garden Executioner without replacing prompt X with a stock anime frame.",
       texture_and_material:
-        'Petal translucency, wet ink, pollen dust, lacquered edge glints, organic gloss, and botanical grain.',
+        "Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Hell's Paradise - Poison Garden Executioner controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.",
       camera_and_composition:
-        'Paradise-like compression, floral overgrowth framing, and depth that feels seductive but fatal.',
-      atmosphere_and_mood: 'Lethal, lush, mystical, brutal',
+        "Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Hell's Paradise - Poison Garden Executioner into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.",
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium modern anime finish with lethal elegance, botanical density, and beautiful-horror readability.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Floral lethality, poison bloom, sacred violence, fatalistic stillness, beautiful-horror contrast.',
+        "Hell's Paradise - Poison Garden Executioner; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear",
       creative_brief:
-        'Render any prompt as poisonous paradise: beauty should feel lethal through petal geometry, sacred haze, toxic color, and fatal calm without requiring executioners, islands, monsters, blades, or criminal setup.',
+        "Apply Hell's Paradise - Poison Garden Executioner after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Hell's Paradise - Poison Garden Executioner, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.",
     },
   },
   {
@@ -680,27 +704,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Psychedelic Psychic Minimalism',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Psychic-expression action style with sketch-rough spontaneity, emotional volatility, and pop-abstract rupture dynamics',
+        'Psychedelic Psychic Minimalism acts as a transferable anime-battle/worlds router: Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting, warped pop shapes, and deliberately sparse psychic distortion. Preserve minimalism and air; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Intentional line wobble, scribble-energy bursts, contour destabilization under emotional peaks, and hand-drawn unpredictability',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Hyper-saturated emotional spikes over neutral calm fields, abrupt neon surges, and cathartic chroma inversions',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Unstable luminance pulses, aura bloom surges, and expression-tied exposure shifts that mirror emotional escalation',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Crayon-like edge noise, sketch grain overlays, painterly smear accents, and cel-polish broken by raw marks',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Emotion-driven perspective warping and psychic blast deformation with elastic frame pressure',
-      atmosphere_and_mood: 'Cathartic, unstable, empathetic, surreal, explosive',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Stylized high-energy rendering that keeps rough expressive artifacts intentionally visible as part of the finish',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Sketch-to-burst transitions, emotion-linked visual instability, pop-abstract psychic motifs, rough-expression fidelity',
+        'Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Define this preset by emotional-energy visualization: sketch roughness should escalate into abstract psychic rupture, making inner state the structural driver of style. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Psychedelic Psychic Minimalism after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Psychedelic Psychic Minimalism, psychedelic psychic minimalism anime style grammar with anxious plainclothes protagonist, rough sketch aura, pastel emotional rupture, simple silhouette acting, warped pop shapes, and deliberately sparse psychic distortion. Preserve minimalism and air, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -708,27 +733,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mob Psycho 100 - Psychic Paint-Surge Meltdown',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Psychic paint-surge meltdown, with awkward sincerity, emotional overload, rough sketch artifacts, and abstract energy storms.',
+        'Mob Psycho 100 - Psychic Paint-Surge Meltdown acts as a transferable anime-battle/worlds router: Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Wobbly sketch contours, sudden paint-smear bursts, simple honest face grammar, elastic psychic rings, and hand-drawn rupture.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Acid rainbow bursts, soft neutral calm fields, hot magenta, electric cyan, yellow-white overload, and raw pencil gray.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Aura bloom surges, exposure jumps, emotional flash peaks, and calm flat light before rupture.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Paint smear, crayon edge noise, sketch grain, cel polish breaks, paperlike halftone, and raw energy streaks.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Emotion-driven warping, paint-like psychic expansion, and frame pressure that bends around inner state.',
-      atmosphere_and_mood: 'Earnest, explosive, weird, cathartic',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Experimental modern anime finish preserving rough expressive artifacts inside high-energy action clarity.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Paint-surge energy, sincere simplicity, overload threshold, rough marks, abstract catharsis.',
+        'Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Make any prompt express inner overflow: let rough sketch marks break into paintlike psychic color, with sincerity and catharsis driving the frame instead of a fixed character, institution, or catastrophe premise.',
+        'Apply Mob Psycho 100 - Psychic Paint-Surge Meltdown after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mob Psycho 100 - Psychic Paint-Surge Meltdown, psychic paint-surge style grammar with sincere simple silhouette, acid paint aura, rough sketch energy, and emotional overload, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -736,27 +762,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dr. Stone - Science Kingdom Action Blueprint',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, readable formulas, lab classroom, weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Science kingdom action blueprint, with invention optimism, tactical intelligence, bright diagrams, and survival-to-civilization energy.',
+        'Dr. Stone - Science Kingdom Action Blueprint acts as a transferable anime-battle/worlds router: Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Blueprint overlays, clean schematic arrows, confident expression beats, toolpath-like lines, and construction rhythm.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Blueprint cyan, mineral green, warm sunlight yellow, chalk white, earth brown, and invention spark orange.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Clear daylight, diagram glow, discovery flashes, and optimistic rim light around practical breakthroughs.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Chalk marks, paper diagrams, rough natural grain, glass glints, mineral dust, and handmade device polish.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Process-step composition, diagrammatic depth, and assembly-like motion that makes knowledge kinetic.',
-      atmosphere_and_mood: 'Inventive, bold, optimistic, strategic',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Bright modern anime finish with readable invention logic, strategic clarity, and optimistic action pacing.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Blueprint logic, invention spark, practical optimism, science symbols, constructive momentum.',
+        'Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Render any prompt as clever invention in motion: use blueprint overlays, practical materials, bright discovery light, and tactical clarity without requiring wilderness, devices, science props, or rebuilding scenes.',
+        'Apply Dr. Stone - Science Kingdom Action Blueprint after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dr. Stone - Science Kingdom Action Blueprint, science-blueprint optimism style grammar with handmade invention glow, chalk schematic shapes as non-readable marks, mineral sunlight, and practical discovery, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -764,27 +791,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Painterly Blade Fantasy',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, visible blade, sword-first pose, named demon-hunter likeness, checker haori copy, mouth gag, blood, combat kill, dense forest, ruin corridor, noisy debris field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Ornamental fantasy-action style with calligraphic motion, ceremonial elegance, and mythic elemental flourish',
+        'Painterly Blade Fantasy acts as a transferable anime-battle/worlds router: Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals, and choreographed breathing-motion energy. Keep clean cel shapes, broad color blocks, and controlled detail density; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Curved arc trajectories, decorative yet sharp contour control, fluid motion ribbons, and posture-led heroic silhouette grammar',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Luminous jewel accents over deep ink neutrals, selective vermilion-gold highlights, and atmospheric cool-warm transitions',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Moonlit high-contrast accents, controlled bloom around motion arcs, and dramatic rim isolation for ceremonial action beats',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Fine textile pattern hints, polished glint behavior, painterly effect overlays, and low-noise digital cel finish',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Elegant directional foreshortening with spiral motion emphasis and fluid depth pulls around luminous arcs',
-      atmosphere_and_mood: 'Heroic, graceful, luminous, solemn, resolute',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium stylized action rendering that balances ornamental detail with crisp combat readability',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Calligraphic motion language, ornamental combat elegance, mythic elemental arc motifs, ceremonial silhouette staging',
+        'Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Keep this preset rooted in decorative choreography and luminous arc design, treating elemental flow as visual calligraphy rather than franchise-specific narrative cues or fixed subject matter. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Painterly Blade Fantasy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Painterly Blade Fantasy, ornamental fantasy-action anime style grammar with a full readable non-famous protagonist, calligraphic elemental arcs, patterned ceremonial cloth, luminous petals, and choreographed breathing-motion energy. Keep clean cel shapes, broad color blocks, and controlled detail density, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -792,27 +820,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chaotic Splatter Action',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Grindhouse-splatter action style with punk absurdity, grotesque humor, and chaotic cinematic framing energy',
+        'Chaotic Splatter Action acts as a transferable anime-battle/worlds router: Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint, halftone ruptures, absurd creature shapes, and comedic shock timing. Keep punchy poster shapes and readable face/pose; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Jagged impact strokes, aggressive silhouette breakage, halftone-panel interruptions, and deliberately unstable line cadence',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Dirty reds and oily blacks with acidic neon accents, paper-gray halftone fields, and high-impact contrast bursts',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Harsh practical glare, grime-filtered shadows, strobe-like impact flashes, and uneven luminance for manic pacing',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Ink splatter overlays, print-noise grit, smeared debris particulates, and roughened compositing layers',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Abrupt perspective warps and frame rupture moments that amplify violent-comic disorientation',
-      atmosphere_and_mood: 'Deranged, visceral, anarchic, darkly comic, volatile',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'High-intensity splatter-action rendering with controlled visual mess and sharp comedic-shock timing',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Splatter-comedy contrast, panel-break chaos, grindhouse texture stack, unstable impact framing',
+        'Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Preserve identity through grindhouse splatter grammar and absurd tonal collision: rough print textures and manic frame ruptures should define the style regardless of character premise. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Chaotic Splatter Action after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Splatter Action, chaotic punk-action anime style grammar with messy antihero protagonist, jagged grin energy, rough jacket silhouette, red ink splatter as graphic paint, halftone ruptures, absurd creature shapes, and comedic shock timing. Keep punchy poster shapes and readable face/pose, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -820,27 +849,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chainsaw Man - Filthy Devil-Hunter Frenzy',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Filthy contract-horror action, with industrial grime, youth burnout, deadpan panic, and ridiculous violence.',
+        'Chainsaw Man - Filthy Devil-Hunter Frenzy acts as a transferable anime-battle/worlds router: Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity, keep it non-graphic, non-derivative; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Jagged contours, broken impact strokes, exhausted body rhythm, industrial diagonals, and unstable comic timing.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Grease black, dried crimson, sickly yellow, concrete gray, rust orange, and harsh fluorescent green.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Dirty practical glare, hard flash cuts, low fluorescent buzz, and sudden overexposed impact highlights.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Grease film, concrete dust, metal scratches, sticky ink splatter, oily cel bloom, and urban particulate haze.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Wide-angle impact compression, ragdoll-like motion arcs, and grimy depth lanes that feel unstable.',
-      atmosphere_and_mood: 'Chaotic, filthy, feral, desperate',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Sharp modern anime finish with controlled filth, panic readability, and deadpan shock contrast.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Industrial splatter, burnout posture, grime haze, deadpan shock, contract-panic energy.',
+        'Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Make any prompt feel grimy, desperate, and absurdly violent through grease texture, hard fluorescent glare, jagged impact rhythm, and deadpan panic without locking it to a specific hunter job or city scene.',
+        'Apply Chainsaw Man - Filthy Devil-Hunter Frenzy after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chainsaw Man - Filthy Devil-Hunter Frenzy, grimy contract-panic action style grammar with industrial grime, fluorescent fatigue, jagged impact rhythm, and deadpan absurdity, keep it non-graphic, non-derivative, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -848,28 +878,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Shadow Notebook Thriller',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, schoolboy detective likeness, readable notebook, death-note cue, police chase, gore, battle scene, weapon, copied franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        "Shadow Notebook Thriller within 1. Modern Shonen & Action: a reusable Anime Battle & Worlds visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Shadow Notebook Thriller's specific style identity.",
+        'Shadow Notebook Thriller acts as a transferable anime-battle/worlds router: Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only, and tense stillness; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Define Shadow Notebook Thriller through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Use a Shadow Notebook Thriller-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Use lighting that makes Shadow Notebook Thriller recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Use materials and textures that reinforce Shadow Notebook Thriller: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Use spatial behavior that fits Shadow Notebook Thriller: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Shadow Notebook Thriller: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Render Shadow Notebook Thriller with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        "Prioritize Shadow Notebook Thriller's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Create a style-card that translates Shadow Notebook Thriller into a portable visual system for 1. Modern Shonen & Action. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        'Apply Shadow Notebook Thriller after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Shadow Notebook Thriller, cerebral thriller anime style grammar: austere black-paper-red composition, symbolic choice marks, chesslike shadow geometry, notebook-like texture as abstract surface only, and tense stillness, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -877,27 +907,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Baccano! - Jazz Railcrime Ensemble',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, gun near-plane, blood, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Jazz railcrime ensemble, with nonlinear pulp cool, amber chaos, immortal momentum, and syncopated danger.',
+        'Baccano! - Jazz Railcrime Ensemble acts as a transferable anime-battle/worlds router: Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Clean early-digital contours, ensemble overlap rhythm, jazz-cut diagonals, pulp silhouette snaps, and syncopated framing.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Amber whiskey, rail black, brass gold, blood red, sepia cream, and smoky blue.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Warm barlike glow, sharp carriage-shadow stripes, theatrical rim highlights, and syncopated flash accents.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Varnished wood warmth, brass glints, smoke grain, paper pulp texture, and smooth digital-cel polish.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Compartmental depth, overlapping timelines, and jazz-timed angle changes without fixed train staging.',
-      atmosphere_and_mood: 'Riotous, jazzy, dangerous, charismatic',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Early-2000s anime pulp finish with ensemble clarity, amber danger, and rhythmic nonlinear energy.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Jazz timing, amber pulp light, ensemble chaos, brass warmth, nonlinear danger.',
+        'Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Give any prompt jazz-pulp crime energy through syncopated cuts, amber glow, ensemble overlap, and brass-shadow contrast without requiring trains, criminal roles, barrooms, period fashion, or violence set pieces.',
+        'Apply Baccano! - Jazz Railcrime Ensemble after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Baccano! - Jazz Railcrime Ensemble, jazz-pulp motion style grammar with brass warmth, amber chaos, syncopated silhouettes, and rail-era rhythm as atmosphere, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -905,27 +936,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Headband Ninja Journey',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Youth-shonen velocity style with disciplined kinetic iconography, optimistic momentum arcs, and early-digital action clarity',
+        'Headband Ninja Journey acts as a transferable anime-battle/worlds router: Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Clean directional inking, compact contour economy, speed-line vectors, emblematic silhouette rhythm, readable motion architecture',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Saturated primaries with warm earth underlay, energetic accent spikes, high-contrast cel blocks, restrained shadow neutrals',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Balanced key-fill anime model with brisk rim accents, controlled highlight pops, and smooth gradient transitions',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Matte cel surface discipline, subtle broadcast-era noise, clean plate layering, minimal micro-surface clutter',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Forward-leaning perspective thrust, elastic action staging, and trajectory-oriented framing for kinetic storytelling',
-      atmosphere_and_mood: 'Driven, hopeful, kinetic, focused, resilient',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Early-2000s digital-cel finish with crisp action legibility, stable compositing, and confident color separation',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Kinetic motif abstraction, readable motion vectors, optimistic action cadence, stylized rivalry energy without fixed setting',
+        'Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Preserve a youthful combat grammar through motion-vector linework, emblematic shape cues, and saturated cel dynamism so the style transfers across subjects without relying on a specific locale or accessory. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Headband Ninja Journey after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Headband Ninja Journey, youth-adventure anime style grammar: one energetic but non-famous subject design silhouette or costume fragment with teal-orange cloth motion, training-scroll geometry, optimistic speed arcs, and clean cel shading, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -933,27 +965,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Urban Spirit Blade',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, katana, soul reaper uniform, bleach-like robe, named-series weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Urban-supernatural severity style with monochrome dominance, high-fashion restraint, and spiritual pressure as controlled aura geometry',
+        'Urban Spirit Blade acts as a transferable anime-battle/worlds router: Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Long razor diagonals, contour precision, severe silhouette blocking, mask-like simplification, ink-clean negative-space cuts',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Black-white core with selective cyan-violet spectral accents, silver mids, and sparse high-intensity contrast nodes',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Hard-edged rim illumination, selective underglow, concentrated aura bloom pockets, and dramatic shadow partitioning',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Smooth matte cloth against polished blade sheen, faint particle haze, low-grain digital cel patina, crisp effect overlays',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'High-angle slash trajectories with compressed depth lanes and silhouette-priority framing for impact authority',
-      atmosphere_and_mood: 'Severe, iconic, charged, controlled, intimidating',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Premium early-digital shonen polish optimized for iconic pose readability and supernatural edge fidelity',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Monochrome supremacy, razor-vector composition, aura-pressure motifs, severe fashion silhouettes, mask-signature abstraction',
+        'Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Anchor this preset in monochrome edge-energy language and strict silhouette authority; emphasize spiritual-pressure contrast design over any specific transformation scene or character setup. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Urban Spirit Blade after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Urban Spirit Blade, urban-supernatural anime style grammar: monochrome fashion silhouette, spectral ribbon aura, black-white-violet pressure geometry, and severe cel shadows around one non-famous subject design/object fragment, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -961,27 +994,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Grand Pirate Adventure',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Elastic-adventure shonen style with exaggerated expression physics, optimistic open-horizon energy, and carnival-scale freedom tone',
+        'Grand Pirate Adventure acts as a transferable anime-battle/worlds router: Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs, and carnival-scale freedom around one non-famous adventurer/object emblem; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Rubberized silhouette stretching, expressive facial exaggeration, playful action arcs, and high-clarity contour timing',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Sunlit high-saturation primaries with tropical cyan-azure fields, warm accent bursts, and cheerful contrast control',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Bright open-sky keys, clean cel highlights, soft gradient fill, and lively rim accents for buoyant readability',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Smooth cel-polish surfaces, low-noise digital grain, crisp effect overlays, and clean line-art compositing',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Stretch-and-squash perspective logic with playful foreshortening and horizon-expanding exploratory framing',
-      atmosphere_and_mood: 'Joyful, adventurous, playful, free, high-spirited',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Early-digital adventure anime finish emphasizing exuberant readability, elastic staging, and colorful momentum',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Elastic expression grammar, high-sun adventure palette, playful action deformation, exploratory kinetic framing',
+        'Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Keep identity anchored in elastic expressive physics and bright exploratory momentum; the style should communicate boundless adventure energy without relying on specific faction, ship, sea, or lore motifs. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Grand Pirate Adventure after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Grand Pirate Adventure, elastic-adventure anime style grammar: bright open-sky palette, nautical cloth rhythm, exaggerated expression geometry, rope-like motion arcs, and carnival-scale freedom around one non-famous adventurer/object emblem, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -989,27 +1023,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lo-Fi Sword Roadtrip',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Lo-fi rhythm-action style blending cutting kinetics with streetwise groove, improvised cool, and beat-synced visual pacing',
+        'Lo-Fi Sword Roadtrip acts as a transferable anime-battle/worlds router: Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Swinging diagonal cut-lines, loose-but-precise contour attitude, rhythm-marked transitions, and improvised gesture cadence',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Dusty warm earth bases with punchy graffiti accent colors, vinyl-like muted blacks, and selective neon pulse notes',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Low-sun directional wash, rhythmic shadow slicing, warm haze overlays, and beat-accent highlight pops',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Film-grain and scratch patina, matte cel surfaces, slight urban grit overlays, and analog-mix visual warmth',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Beat-driven framing shifts with kinetic perspective snaps and flow-preserving directional depth',
-      atmosphere_and_mood: 'Cool, laid-back, kinetic, improvisational, stylish',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Early-digital anime polish with lo-fi texture seasoning and rhythm-first action readability',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Rhythm-cut action grammar, lo-fi texture stack, swagger-forward motion, analog groove visual cadence',
+        'Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Define this preset by rhythm-synced action language and lo-fi swagger: motion should feel musically improvised, with texture and pacing as the transferable identity rather than a literal action-travel setup. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Lo-Fi Sword Roadtrip after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lo-Fi Sword Roadtrip, lo-fi rhythm-action anime style grammar: beat-synced cloth motion, ink-brush speed arcs, warm sepia-cyan groove, and streetwise cool around one non-famous subject design/object fragment, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -1017,27 +1052,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chaotic Indie Adolescence',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, franchise likeness, school fight, weapon, readable poster, logo, camera, ultra-detailed battle scene, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, muddy noisy darks',
     style: {
       aesthetic:
-        'Adolescent kinetic-collage style with abrupt tonal pivots, rebellious surreal pop energy, and anti-linear visual rhythm',
+        'Chaotic Indie Adolescence acts as a transferable anime-battle/worlds router: Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text, and teenage emotional motion around one invented subject design/shape anchor; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Mixed-grammar line states, impact-smear transitions, panel-break overlays, elastic contour interruptions, intentionally uneven stroke cadence',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Hyper-saturated primaries colliding with acidic neons, abrupt pastel inversions, high-chroma bursts against muted reset zones',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Rapid contrast switches, flash-frame highlights, intentional exposure jumps, and graphic shadow snapping between beats',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Hybrid cel-polish with manga halftone inserts, rough print fragments, and controlled noise patches for collage friction',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Perspective ruptures, jump-cut framing logic, and composition resets that mimic impulsive developmental turbulence',
-      atmosphere_and_mood: 'Restless, rebellious, volatile, cathartic, raw',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Experimental early-digital anime treatment favoring stylistic rupture, energetic readability, and emotionally volatile transitions',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Multi-style collision grammar, panel-break kinetics, chroma whiplash, anti-linear composition pacing',
+        'Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Keep this preset defined by abrupt stylistic modulation and collage-like motion logic, turning emotional volatility into a transferable visual system rather than a specific coming-of-age scene, cast, or location. Apply this anime/IP-title grammar over any input: preserve its motion language, line economy, emotional staging, palette logic, and symbolic cues while avoiding a required cast, lore event, weapon, arena, school, ship, or fixed scene.',
+        'Apply Chaotic Indie Adolescence after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Chaotic Indie Adolescence, chaotic indie-adolescence anime style grammar: collage panels, abrupt color blocks, expressive rough line, surreal pop stickers without readable text, and teenage emotional motion around one invented subject design/shape anchor, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -1045,27 +1081,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Black Lagoon - South Seas Gun-Runner Grit',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'South Seas gun-runner grit, with humid noir, lawless heat, hardboiled cool, and gunmetal danger.',
+        'Black Lagoon - South Seas Gun-Runner Grit acts as a transferable anime-battle/worlds router: Black Lagoon - South Seas Gun-Runner Grit; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Clean early-digital contours, hardboiled silhouette blocks, recoil diagonals, smoke curls, and sharp stance economy.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Black Lagoon - South Seas Gun-Runner Grit as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Gunmetal gray, tropical teal, rust orange, cigarette ember red, salt haze white, and oily black.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Black Lagoon - South Seas Gun-Runner Grit choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Hot practical glare, humid rim bloom, low noir shadows, and polished early-digital highlight bands.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Black Lagoon - South Seas Gun-Runner Grit without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Salt haze, brushed metal, sweat sheen, worn fabric, smoke grain, and smooth cel-noir surfaces.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Black Lagoon - South Seas Gun-Runner Grit controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Low-angle threat framing, lateral escape vectors, and humid depth compression without fixed docks or vehicles.',
-      atmosphere_and_mood: 'Gruff, hot, dangerous, worldly',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Black Lagoon - South Seas Gun-Runner Grit into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Early-2000s digital-cel action finish with crisp grit, worldly heat, and clean danger readability.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Humid noir, gunmetal palette, smoke tension, lawless heat, hardboiled early-digital grit.',
+        'Black Lagoon - South Seas Gun-Runner Grit; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply tropical noir pressure to any prompt through humid glare, gunmetal texture, smoke rhythm, and lawless cool without requiring a port, dock, vehicle, smoking prop, or criminal scene.',
+        'Apply Black Lagoon - South Seas Gun-Runner Grit after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Lagoon - South Seas Gun-Runner Grit, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -1073,27 +1110,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Darker than Black - Contract Killer Night Rain',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Contract killer night-rain style, with cold electrical espionage, suppressed emotion, and after-midnight tech noir.',
+        'Darker than Black - Contract Killer Night Rain acts as a transferable anime-battle/worlds router: Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Smooth early-digital contours, electric thread arcs, masked negative spaces, and restrained body-language geometry.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Rain blue, black glass, cold cyan, sodium amber, pale mask white, and desaturated violet.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Neon rain streaks, windowlike reflections, controlled rim glow, and cold underlit secrecy.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Wet glass sheen, rain grain, matte fabric flats, electric particle threads, and clean digital cel polish.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Narrow depth lanes, surveillance-like framing, and rain-layer parallax that compresses emotion.',
-      atmosphere_and_mood: 'Cold, secretive, sleek, lonely',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Early-2000s tech-noir anime finish with smooth compositing, lonely restraint, and crisp electric detail.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Electric threads, rain noir, masked emptiness, emotional suppression, covert stillness.',
+        'Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Give any prompt night-rain espionage: use cold reflection, electric thread accents, masked negative space, and suppressed emotion without requiring a fixed urban location, operative role, or mission setup.',
+        'Apply Darker than Black - Contract Killer Night Rain after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Darker than Black - Contract Killer Night Rain, electric night-rain noir style grammar with wet glass, cyan thread arcs, masked negative space, and lonely secrecy, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
   {
@@ -1101,27 +1139,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Samurai Champloo - Lo-Fi Edo Swagger',
     category: '1. Modern Shonen & Action',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
     style: {
       aesthetic:
-        'Lo-fi Edo swagger, with hip-hop timing, dusty sun, anachronistic cool, and loose kinetic rhythm.',
+        'Samurai Champloo - Lo-Fi Edo Swagger acts as a transferable anime-battle/worlds router: Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop; combine it with modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle; named titles, studios, or lineage words may guide style, but they must not require canon cast, title-scene replication, screenshots, logos, or one fixed card concept.',
       subject_treatment:
-        'Clean early-digital strokes, swing-beat diagonals, relaxed contour attitude, scratch-cut transitions, and offbeat pose timing.',
+        'Preserve prompt subject, action, and context while restyling silhouette, material response, gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop as portable contour, motion grammar, surface language, and emotional pressure without requiring canon elements or a default action setup.',
       color_and_tone:
-        'Dust gold, faded indigo, warm brown, muted teal, sunbaked cream, and vinyl black.',
+        'Map color through saturated action accents, clean dark-light value separation, aura color, bloodless impact contrast, school or street neutrals when useful, and crisp white energy cuts; let Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop choose accent intensity, value contrast, emotional temperature, and power-system separation while staying attached to prompt X.',
       lighting_and_shadow:
-        'Low sun wash, soft rim glow, analog warm haze, and beat-accent highlight pops.',
+        'Use impact flashes, hard cel shadows, aura bloom, neon or lantern rim, speed-streak highlights, and dramatic close-read separation; make light clarify impact, silhouette, machinery or magic, material depth, and mood from Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop without replacing prompt X with a stock anime frame.',
       texture_and_material:
-        'Film grain, paper dust, worn cloth flats, vinyl scratch overlays, and smooth cel compositing.',
+        'Render inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; keep the tactile or effect cues in Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop controlled, denoised, and coherent across bodies, objects, environments, abstractions, and action.',
       camera_and_composition:
-        'Beat-driven framing shifts, relaxed perspective snaps, and sample-loop motion cadence.',
-      atmosphere_and_mood: 'Loose, stylish, sunbaked, rebellious',
+        'Frame through diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; convert Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop into reusable perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style sample layout.',
+      atmosphere_and_mood:
+        'Carry mood through adrenaline, rivalry, courage, comic rupture, desperation, tactical focus, and heightened emotional release; the preset can become brutal, erotic, comic, tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping the anime-battle lineage readable.',
       rendering_and_quality:
-        'Early-2000s digital-cel finish with lo-fi warmth, crisp readability, and rhythm-first action style.',
+        'Finish with clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear; prioritize stable anatomy or object structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no fake readable text, no signature, no photoreal or 3D-render drift.',
       key_features:
-        'Lo-fi grain, hip-hop timing, dusty sunlight, relaxed swagger, anachronistic rhythm.',
+        'Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop; dynamic contour, force-transfer anatomy, readable power effects, sharp costume or surface simplification, and emotion-first pose energy; inked speed marks, cloth snap, dust, smoke, sparks, grit, sweat highlights, painted debris, and controlled effect overlays; diagonal attack lanes, close impact crops, reaction spacing, burst panels, compressed depth, and readable near-to-far force paths; clean high-energy anime finish with denoised effects, stable anatomy, crisp silhouettes, no manga-panel text, and no cheap AI anime smear',
       creative_brief:
-        'Apply lo-fi historical swagger to any prompt through vinyl-scratch pacing, dusty warmth, relaxed motion, and offbeat cuts without requiring swords, road travel, period setting, costume detail, or specific wanderers.',
+        'Apply Samurai Champloo - Lo-Fi Edo Swagger after prompt X as a transferable anime-battle/worlds layer: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Samurai Champloo - Lo-Fi Edo Swagger, lo-fi sunbaked rhythm style grammar with dusty gold, vinyl-scratch overlays, relaxed motion attitude, and offbeat crop, modern action anime grammar with power-system clarity, impact frames, elastic motion, expressive line economy, and high-readability spectacle, finish discipline, and negative controls without forcing canon cast, title scene, screenshot, card pose, default monster, default combat prop, or prompt-literal card.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -12,30 +12,83 @@ tags:
   - cinematic-and-media
   - film-genres
 visualDna:
-  aesthetic: 1920s cinema
+  aesthetic: >-
+    Silent Film acts as a transferable cinematic-media router: start from 1920s cinema, Silent Film
+    lens grammar, film stock behavior, genre blocking, projection texture, and cinematic color
+    grade, Flicker, vignette, iris-era framing and cinematic genre system built from lens grammar,
+    film stock, blocking pressure, edit rhythm, production design, grain, and color grade, then
+    apply the media behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Silent Film: casting, wardrobe, props,
-    motion cues, and silhouette hierarchy follow 1. Film Genres cinematic and broadcast grammar without
-    locking to one plot beat.
-  color_and_tone: Sepia or B&W, warm monochrome, faded amber tint
-  lighting_and_shadow: Flat studio, even wash, orthochromatic limitation
-  texture_and_material: Flicker, dust, gate weave, silver emulsion
-  camera_and_composition: Vignette, rounded frame edge, iris close
-  atmosphere_and_mood: Expressive, old, melodramatic, haunted silence
-  rendering_and_quality: Fast motion feel, 18fps projection, flickering speed
-  key_features: Flicker, vignette, iris-era framing
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Silent Film: casting, wardrobe, props, motion cues, and silhouette hierarchy follow 1.
+    Film Genres cinematic and broadcast grammar without locking to one plot beat; preserve the
+    requested subject while staging it as filmed material through blocking, wardrobe pressure, lens
+    distance, movement cues, or genre-era performance texture only when useful, keeping the
+    requested identity, silhouette, action, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Sepia or B&W, warm monochrome, faded amber tint; treat color as cinema process:
+    film emulsion, lab timing, gel lighting, period stock response, genre grade, faded print, or
+    projection decay, with deliberate value grouping, accent control, and process-specific limits
+    rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat studio, even wash, orthochromatic limitation; make light feel
+    motivated by cinematic setup through keyed contrast, practical spill, hard noir cuts, musical
+    glow, exploitation underexposure, or analog animation glow, so exposure and shadow structure
+    support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Flicker, dust, gate weave, silver emulsion; surface detail should reveal film grain, gate
+    weave, scratches, halation, acetate texture, projection damage, optical compositing, or
+    photographed production surfaces, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Vignette, rounded frame edge, iris close; compose through lens
+    choice, blocking, aspect-ratio pressure, frame-within-frame logic, handheld unease, symmetrical
+    staging, or genre silhouette hierarchy, with frame rhythm, spacing, edge hierarchy, and visual
+    hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Expressive, old, melodramatic, haunted silence; derive mood from cinematic
+    tradition, performance tone, genre stakes, projection damage, auteur restraint, camp excess, or
+    analog spectacle, letting the media style alter interpretation without demanding a specific
+    story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Fast motion feel, 18fps projection, flickering speed; finish as credible
+    moving-image language with controlled film artifacts, readable subject identity, and no
+    mandatory plot scene, franchise copy, or fake caption text, clean denoised surfaces where
+    appropriate, and enough process evidence to make the style recognizable.
+  key_features: >-
+    1920s cinema, Silent Film lens grammar, film stock behavior, genre blocking, projection texture,
+    and cinematic color grade; Flicker, vignette, iris-era framing; Sepia or B&W, warm monochrome,
+    faded amber tint; Flicker, dust, gate weave, silver emulsion; Vignette, rounded frame edge, iris
+    close
   creative_brief: >-
-    Silent film style gives any subject amber monochrome age: 18fps flicker, dust, gate weave, orthochromatic
-    flatness, vignette, rounded frame edges, and melodramatic gesture implied by composition. Keep
-    title-card-era rhythm without requiring people, text cards, or performance.
+    Apply Silent Film as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through 1920s cinema, Silent Film lens grammar, film stock behavior, genre
+    blocking, projection texture, and cinematic color grade, Flicker, vignette, iris-era framing,
+    Flicker, dust, gate weave, silver emulsion without requiring the card image's original subject.
 avoidRules:
   - sound
   - color
   - readable text
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - mandatory plot scene
+  - franchise copy
+  - fake caption text
+  - generic movie poster
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-007.webp
 attributes:
-  negativePrompt: sound, color, readable text
+  negativePrompt: >-
+    sound, color, readable text, official card scene, fixed thumbnail subject, prompt replaced by
+    sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled
+    noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

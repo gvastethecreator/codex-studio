@@ -14,37 +14,76 @@ tags:
   - greek-myth
 visualDna:
   aesthetic: >-
-    Bronze Spear Public Oath within 5. Mythic Greek Epics: a reusable Mythic Noir Curated Vault visual
-    language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result
-    transferable across subjects while preserving Bronze Spear Public Oath's specific style identity.
+    Bronze Spear Public Oath acts as a transferable mythic-noir router: sworn obligation made
+    clearly expressed as dark symbolic order, bronze translated into dark symbolic behavior plus
+    spear translated into dark symbolic behavior fused with Greek epic noir with bronze law, laurel
+    governance, oracle fragments, maritime strategy, and sun-struck fatalism; it carries symbol,
+    omen, ritual authority, and mature editorial restraint without locking prompt content to its
+    sample image.
   subject_treatment: >-
-    Define Bronze Spear Public Oath through line, mass, contour, spacing, and rhythm. Keep forms readable,
-    intentional, and reusable beyond one literal scene.
+    Keep the user's prompt subject, action, and context intact while reshaping identity through long
+    thrust-line silhouette and martial oath emphasis plus oath-bound contour and promise-weighted
+    silhouette pressure; forms should inherit silhouette pressure, emblem logic, ritual posture,
+    edge weight, and motif placement instead of a mandatory actor or prop set.
   color_and_tone: >-
-    Use a Bronze Spear Public Oath-specific palette with clear dominant, secondary, and accent roles. Keep
-    contrast deliberate and avoid generic color wash.
+    Map color through bronze, verdigris green, smoke gray, and dark marble values plus sealing-wax
+    red, black vow shadow, and pale witness marks together with Aegean blue-black, bronze, marble
+    ivory, olive green, red thread, smoke gray, laurel shadow, and harsh dawn gold; values stay
+    separated, accents feel intentional, and the dark palette supports the requested content rather
+    than swallowing it.
   lighting_and_shadow: >-
-    Use lighting that makes Bronze Spear Public Oath recognizable: purposeful key, rim, bounce, shadow, and
-    glow behavior with readable hierarchy.
+    Use warm metal bounce and hard rim glints plus narrow witness glints and solemn rim separation
+    with hard dawn planes, oracle smoke glow, bronze bounce, sea-haze contrast, and severe
+    sculptural shadow; shadows must carry omen weight, rims should clarify form, and glow should
+    behave as ritual evidence rather than decorative haze.
   texture_and_material: >-
-    Use materials and textures that reinforce Bronze Spear Public Oath: surface response, grain, patina,
-    polish, or wear should feel intentional and style-defining.
+    Render bronze patina, engraved scratches, hammered planes, and oily smoke, bronze point, leather
+    wrap, and dust-bright edge plus wax, cord, old paper, rubbed metal, and pressure marks alongside
+    bronze patina, marble dust, olive wood, red thread fiber, sailcloth, ash, salt, engraved stone,
+    and spear-edge glints; surface scale, patina, residue, gloss, grain, and carved or sealed edges
+    must remain coherent across characters, objects, scenes, and abstractions.
   camera_and_composition: >-
-    Use spatial behavior that fits Bronze Spear Public Oath: perspective, compression, exaggeration, or depth
-    should support the style without forcing one fixed location.
+    Frame with oath-line diagonals and binding intervals, bronze converted into repeatable spatial
+    rhythm and symbolic hierarchy plus spear converted into repeatable spatial rhythm and symbolic
+    hierarchy plus frieze order, labyrinth logic, oath-line diagonals, public-measure spacing, and
+    monument-like silhouette balance; the style should support portraits, objects, architecture,
+    creatures, symbols, and full scenes through reusable spatial grammar instead of one fixed
+    layout.
   atmosphere_and_mood: >-
-    Set a mood that belongs to Bronze Spear Public Oath: specific, coherent, and distinct, with emotional tone
-    carried by visual systems rather than narrative captioning.
+    Carry mood through sworn obligation and irreversible consequence, bronze pressure, consequence,
+    and symbolic tension plus spear pressure, consequence, and symbolic tension and tragic law,
+    public honor, strategic pressure, fatal prophecy, disciplined return, and unsentimental heroic
+    aftermath; the image can become severe, sensual, sacred, violent, quiet, or strange when prompt
+    X asks for it, while the preset supplies mythic consequence.
   rendering_and_quality: >-
-    Render Bronze Spear Public Oath with high production clarity, strong silhouette reads, clean detail
-    priority, and no accidental UI, text, logos, or watermark.
+    Finish with clean vow-sign readability with severe dark editorial polish plus bronze recognition
+    with denoised dark editorial polish and controlled material truth and classical-noir
+    illustration with crisp profiles, restrained grain, readable metal, and no museum-label text;
+    prioritize clean denoise, readable dark values, strong silhouette hierarchy, tactile material
+    truth, and no watermark, fake text, logos, accidental UI, or muddy black crush.
   key_features: >-
-    Prioritize Bronze Spear Public Oath's key features: recognizable shape language, palette logic, material
-    cues, lighting behavior, and composition rules.
+    sworn obligation made clearly expressed as dark symbolic order, bronze translated into dark
+    symbolic behavior plus spear translated into dark symbolic behavior; long thrust-line silhouette
+    and martial oath emphasis plus oath-bound contour and promise-weighted silhouette pressure;
+    bronze patina, engraved scratches, hammered planes, and oily smoke, bronze point, leather wrap,
+    and dust-bright edge plus wax, cord, old paper, rubbed metal, and pressure marks; warm metal
+    bounce and hard rim glints plus narrow witness glints and solemn rim separation; oath-line
+    diagonals and binding intervals, bronze converted into repeatable spatial rhythm and symbolic
+    hierarchy plus spear converted into repeatable spatial rhythm and symbolic hierarchy
   creative_brief: >-
-    Create a style-card that translates Bronze Spear Public Oath into a portable visual system for 5. Mythic
-    Greek Epics. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or
-    story beat.
+    Apply Bronze Spear Public Oath after prompt X as a transferable mythic-noir layer: prompt X
+    supplies subject, action, setting, and intensity, while this preset supplies sworn obligation
+    made clearly expressed as dark symbolic order, bronze translated into dark symbolic behavior
+    plus spear translated into dark symbolic behavior, long thrust-line silhouette and martial oath
+    emphasis plus oath-bound contour and promise-weighted silhouette pressure, bronze, verdigris
+    green, smoke gray, and dark marble values plus sealing-wax red, black vow shadow, and pale
+    witness marks, warm metal bounce and hard rim glints plus narrow witness glints and solemn rim
+    separation, bronze patina, engraved scratches, hammered planes, and oily smoke, bronze point,
+    leather wrap, and dust-bright edge plus wax, cord, old paper, rubbed metal, and pressure marks
+    plus oath-line diagonals and binding intervals, bronze converted into repeatable spatial rhythm
+    and symbolic hierarchy plus spear converted into repeatable spatial rhythm and symbolic
+    hierarchy, finish discipline, and negative controls without requiring a fixed deity, ritual,
+    prop bundle, location, or sample composition.
 avoidRules:
   - photoreal
   - comedic
@@ -52,10 +91,23 @@ avoidRules:
   - watermark
   - text
   - logo
+  - clean marble postcard
+  - generic gladiator fantasy
+  - tourist Greece
+  - fixed deity portrait
+  - required ritual scene
+  - literal sample composition
+  - generic dark fantasy
+  - muddy black crush
+  - random occult symbols
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP14-045.webp
 attributes:
-  negativePrompt: photoreal, comedic, neon-sci-fi, watermark, text, logo
+  negativePrompt: >-
+    photoreal, comedic, neon-sci-fi, watermark, text, logo, clean marble postcard, generic gladiator
+    fantasy, tourist Greece, fixed deity portrait, required ritual scene, literal sample
+    composition, generic dark fantasy, muddy black crush, random occult symbols, readable text
 taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault

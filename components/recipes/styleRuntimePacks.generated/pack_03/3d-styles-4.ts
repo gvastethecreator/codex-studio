@@ -7,453 +7,579 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP03-015',
     name: 'Claymation (Stop Motion)',
     category: '4. 3D Styles',
-    negativePrompt: 'smooth, digital',
+    negativePrompt:
+      'smooth, digital, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
       aesthetic:
-        "Claymation (Stop Motion) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Claymation (Stop Motion)'s specific style identity.",
+        'Claymation (Stop Motion) acts as a transferable CGI-style router: start from Claymation (Stop Motion) fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Claymation (Stop Motion) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm while preserving its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Claymation (Stop Motion)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Claymation (Stop Motion) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Claymation (Stop Motion): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Claymation (Stop Motion): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Structure the image through scale rhythm, spacing, and composition rules shaped by fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Claymation (Stop Motion): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Claymation (Stop Motion) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Claymation (Stop Motion) CGI with fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm and controlled detail; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Claymation (Stop Motion)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Claymation (Stop Motion) fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm; palette and exposure choices that support fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm; scale rhythm, spacing, and composition rules shaped by fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm',
       creative_brief:
-        'Create a style-card that translates Claymation (Stop Motion) into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Claymation (Stop Motion) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Claymation (Stop Motion) fingerprinted clay, stop-motion pose increments, miniature set lighting, handmade material charm without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-021',
     name: 'Low Poly',
     category: '4. 3D Styles',
-    negativePrompt: 'high poly, smooth, detailed',
+    negativePrompt:
+      'high poly, smooth, detailed, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Minimalist mesh',
-      subject_treatment: 'Visible triangles',
-      color_and_tone: 'Flat shading, vibrant stylized tones',
-      lighting_and_shadow: 'Baked AO, ambient-fill',
-      texture_and_material: 'Flat color or gradient, facet-clean',
+      aesthetic:
+        'Low Poly acts as a transferable CGI-style router: start from Minimalist mesh, Facets, edge visibility and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Visible triangles; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Flat shading, vibrant stylized tones; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Baked AO, ambient fill; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Flat color or gradient, facet clean; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Low Poly: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Simple, clean, polygon purity',
-      rendering_and_quality: 'Indie game, retro, geometric charm',
-      key_features: 'Facets, edge visibility',
+        'Structure the image through Lookdev camera for Low Poly: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Simple, clean, polygon purity; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Indie game, retro, geometric charm; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Minimalist mesh; Facets, edge visibility; Flat shading, vibrant stylized tones; Flat color or gradient, facet clean; Lookdev camera for Low Poly: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Reduce the input to deliberate low-poly clarity: visible facets, flat-shaded planes, ambient-occlusion crease accents and vibrant indie-game color. Treat geometry as graphic design, not a forced game world or landscape. Apply Low Poly as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Low Poly as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Minimalist mesh, Facets, edge visibility, Flat color or gradient, facet clean without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-022',
     name: 'Voxel Art',
     category: '4. 3D Styles',
-    negativePrompt: 'curves, smooth',
+    negativePrompt:
+      'curves, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Made of cubes',
-      subject_treatment: 'Grid aligned',
-      color_and_tone: 'Vibrant',
-      lighting_and_shadow: 'Global illumination',
-      texture_and_material: 'Flat clean grid faces',
-      camera_and_composition: 'Blocky',
-      atmosphere_and_mood: 'Cute, digital, nostalgic sandbox',
-      rendering_and_quality: 'Minecraft/MagicaVoxel voxel art, cube poetry',
-      key_features: 'Cubes',
+      aesthetic:
+        'Voxel Art acts as a transferable CGI-style router: start from Made of cubes and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Grid aligned; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Global illumination; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Flat clean grid faces; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Blocky; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Cute, digital, nostalgic sandbox; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Minecraft/MagicaVoxel voxel art, cube poetry; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features: 'Made of cubes; Vibrant; Flat clean grid faces; Blocky',
       creative_brief:
-        'Resolve the input into voxel grammar: cubic sampling, visible grid logic, MagicaVoxel color blocks and soft GI over hard right angles. Keep sandbox nostalgia as construction style, without requiring a block world, terrain or Minecraft-style environment.',
+        "Apply Voxel Art as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Made of cubes, Flat clean grid faces without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-023',
     name: 'Isometric 3D',
     category: '4. 3D Styles',
-    negativePrompt: 'perspective, distortion',
+    negativePrompt:
+      'perspective, distortion, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Orthographic projection',
-      subject_treatment: 'Parallel lines',
-      color_and_tone: 'Pastel, clean, gradient-friendly',
-      lighting_and_shadow: 'Soft studio, shadow-casting consistency',
-      texture_and_material: 'Smooth, isometric-unity feel',
+      aesthetic:
+        'Isometric 3D acts as a transferable CGI-style router: start from Orthographic projection, 30 degree angle, parallel projection and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Parallel lines; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Pastel, clean, gradient friendly; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft studio, shadow casting consistency; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth, isometric unity feel; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Isometric 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Organized, tiny, isometric clarity',
-      rendering_and_quality: 'Mobile game, icon, asset-store ready',
-      key_features: '30 degree angle, parallel projection',
+        'Structure the image through Lookdev camera for Isometric 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Organized, tiny, isometric clarity; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Mobile game, icon, asset store ready; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Orthographic projection; 30 degree angle, parallel projection; Pastel, clean, gradient friendly; Smooth, isometric unity feel; Lookdev camera for Isometric 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Convert the input to clean isometric projection: locked parallel lines, thirty-degree tilt, pastel gradients and consistent soft shadows. Keep asset-store readability and miniature charm without requiring an everyday everyday setup, diorama world, or story vignette.',
+        "Apply Isometric 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Orthographic projection, 30 degree angle, parallel projection, Smooth, isometric unity feel without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-024',
     name: 'Wireframe Render',
     category: '4. 3D Styles',
-    negativePrompt: 'solid, textured',
+    negativePrompt:
+      'solid, textured, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Mesh topology view',
-      subject_treatment: 'Glowing lines',
-      color_and_tone: 'Black background, Neon lines, glow contrast',
-      lighting_and_shadow: 'Unlit self-illuminated edges',
-      texture_and_material: 'Grid, topology linework',
+      aesthetic:
+        'Wireframe Render acts as a transferable CGI-style router: start from Mesh topology view, Topology, edge flow visibility and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Glowing lines; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Black support field, Neon lines, glow contrast; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Unlit self illuminated edges; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Grid, topology linework; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Wireframe Render: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Technical, cyber, developer aesthetic',
-      rendering_and_quality: 'Technical, blueprint, debug-preview',
-      key_features: 'Topology, edge-flow visibility',
+        'Structure the image through Lookdev camera for Wireframe Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Technical, cyber, developer aesthetic; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Technical, blueprint, debug preview; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Mesh topology view; Topology, edge flow visibility; Black support field, Neon lines, glow contrast; Grid, topology linework; Lookdev camera for Wireframe Render: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Strip the input to topology: neon edge loops, self-illuminated mesh lines, visible edge flow and debug-viewport elegance. No need for a standalone object or black void; the style is structure made visible. Apply Wireframe Render as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Wireframe Render as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Mesh topology view, Topology, edge flow visibility, Grid, topology linework without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-026',
     name: 'Knolling (Flat Lay)',
     category: '4. 3D Styles',
-    negativePrompt: 'messy, piled',
+    negativePrompt:
+      'messy, piled, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Disassembled parts arranged',
-      subject_treatment: '90 degree angles',
-      color_and_tone: 'Clean background, component contrast',
-      lighting_and_shadow: 'Top down, shadow-free',
-      texture_and_material: 'Clean parts, disassembly beauty',
+      aesthetic:
+        'Knolling (Flat Lay) acts as a transferable CGI-style router: start from Disassembled parts arranged, Grid layout, 90 degree arrangement and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through 90 degree angles; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Clean support field, component contrast; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Top down, shadow free; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Clean parts, disassembly beauty; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Overhead orthographic flat-lay composition with measured spacing, clean object separation, and strong negative-space rhythm for Knolling (Flat Lay).',
-      atmosphere_and_mood: 'Satisfying, organized, design-museum',
-      rendering_and_quality: 'Organized exploded-layout clarity',
-      key_features: 'Grid layout, 90-degree arrangement',
+        'Structure the image through Overhead orthographic flat lay composition with measured spacing, clean object separation, and strong negative space rhythm for Knolling (Flat Lay); compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Satisfying, organized, design museum; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Organized exploded layout clarity; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Disassembled parts arranged; Grid layout, 90 degree arrangement; Clean support field, component contrast; Clean parts, disassembly beauty; Overhead orthographic flat lay composition with measured spacing, clean object separation, and strong negative space rhythm for Knolling (Flat Lay)',
       creative_brief:
-        'Recompose the input as knolled structure: top-down orthographic order, right-angle spacing, exploded relationships and shadow-free museum clarity. If the subject has parts, separate them; otherwise translate its visual elements into a precise grid. Do not require a product teardown. Apply Knolling as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Knolling (Flat Lay) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Disassembled parts arranged, Grid layout, 90 degree arrangement, Clean parts, disassembly beauty without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-027',
     name: 'Metaballs',
     category: '4. 3D Styles',
-    negativePrompt: 'sharp, geometric',
+    negativePrompt:
+      'sharp, geometric, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
       aesthetic:
-        "Metaballs within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Metaballs's specific style identity.",
+        'Metaballs acts as a transferable CGI-style router: start from Metaballs implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Metaballs through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints while preserving its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Metaballs-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Metaballs recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Metaballs: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Metaballs: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+        'Structure the image through Lookdev camera for Metaballs: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Metaballs: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Metaballs with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Metaballs CGI with implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints and controlled detail; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Metaballs's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Metaballs implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints; palette and exposure choices that support implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints; Lookdev camera for Metaballs: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Create a style-card that translates Metaballs into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Metaballs as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Metaballs implicit blob surfaces, merged rounded forms, smooth liquid topology, soft procedural joints without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-028',
     name: 'Nurbs Surface',
     category: '4. 3D Styles',
-    negativePrompt: 'polygons, sharp',
+    negativePrompt:
+      'polygons, sharp, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Mathematically perfect curves',
-      subject_treatment: 'Flow lines',
-      color_and_tone: 'Zebra stripe reflection, curvature analysis',
-      lighting_and_shadow: 'Studio check, highlight continuity',
-      texture_and_material: 'Glossy, class-A surface',
+      aesthetic:
+        'Nurbs Surface acts as a transferable CGI-style router: start from Mathematically perfect curves, Smoothness, G2 continuity and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Flow lines; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Zebra stripe reflection, curvature analysis; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio check, highlight continuity; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Glossy, class A surface; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Nurbs Surface: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Perfect, engineered, mathematical precision',
-      rendering_and_quality: 'CAD, automotive, manufacturing-grade',
-      key_features: 'Smoothness, G2 continuity',
+        'Structure the image through Lookdev camera for Nurbs Surface: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Perfect, engineered, mathematical precision; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with CAD, automotive, manufacturing grade; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Mathematically perfect curves; Smoothness, G2 continuity; Zebra stripe reflection, curvature analysis; Glossy, class A surface; Lookdev camera for Nurbs Surface: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Give the input NURBS-like surface discipline: mathematically smooth curves, zebra-stripe reflection checks, G2 continuity and class-A gloss. Automotive CAD language may guide the finish, but no car, fender, or design-studio setup is required. Apply Nurbs Surface as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Nurbs Surface as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Mathematically perfect curves, Smoothness, G2 continuity, Glossy, class A surface without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-029',
     name: 'Fractal 3D',
     category: '4. 3D Styles',
-    negativePrompt: 'simple, clean',
+    negativePrompt:
+      'simple, clean, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Mandelbulb complexity',
-      subject_treatment: 'Infinite detail',
-      color_and_tone: 'Psychedelic, infinite recursion tones',
-      lighting_and_shadow: 'Deep shadows, cave-detail',
-      texture_and_material: 'Mathematical patterns, procedural surface',
+      aesthetic:
+        'Fractal 3D acts as a transferable CGI-style router: start from Mandelbulb complexity, Self similarity, fractal recursion and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Infinite detail; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Psychedelic, infinite recursion tones; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Deep shadows, cave detail; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Mathematical patterns, procedural surface; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Fractal 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Trippy, alien, mind-bending',
-      rendering_and_quality: 'Math art, infinite, algorithmic wonder',
-      key_features: 'Self-similarity, fractal recursion',
+        'Structure the image through Lookdev camera for Fractal 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Trippy, alien, mind bending; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Math art, infinite, algorithmic wonder; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Mandelbulb complexity; Self similarity, fractal recursion; Psychedelic, infinite recursion tones; Mathematical patterns, procedural surface; Lookdev camera for Fractal 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Infuse the input with fractal recursion: self-similar detail at multiple scales, Mandelbulb density, algorithmic ridges and psychedelic procedural color. Keep alien mathematical wonder without forcing a cathedral, cave or traversable fractal landscape. Apply Fractal 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Fractal 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Mandelbulb complexity, Self similarity, fractal recursion, Mathematical patterns, procedural surface without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-030',
     name: 'Glitch 3D',
     category: '4. 3D Styles',
-    negativePrompt: 'clean, perfect',
+    negativePrompt:
+      'clean, perfect, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
       aesthetic:
-        "Glitch 3D within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Glitch 3D's specific style identity.",
+        'Glitch 3D acts as a transferable CGI-style router: start from Glitch 3D broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Glitch 3D through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments while preserving its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Glitch 3D-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Glitch 3D recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Glitch 3D: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Glitch 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+        'Structure the image through Lookdev camera for Glitch 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Glitch 3D: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Glitch 3D with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Glitch 3D CGI with broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments and controlled detail; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Glitch 3D's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Glitch 3D broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments; palette and exposure choices that support broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments; Lookdev camera for Glitch 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Create a style-card that translates Glitch 3D into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Glitch 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Glitch 3D broken meshes, vertex offsets, RGB shader errors, corrupted geometry fragments without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-040',
     name: 'Toon Shader (Cel Shaded)',
     category: '4. 3D Styles',
-    negativePrompt: 'realistic, gradient',
+    negativePrompt:
+      'realistic, gradient, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
       aesthetic:
-        "Toon Shader (Cel Shaded) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Toon Shader (Cel Shaded)'s specific style identity.",
+        'Toon Shader (Cel Shaded) acts as a transferable CGI-style router: start from Toon Shader (Cel Shaded) flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Toon Shader (Cel Shaded) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps while preserving its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Toon Shader (Cel Shaded)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Toon Shader (Cel Shaded) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Toon Shader (Cel Shaded): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Toon Shader (Cel Shaded): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Structure the image through scale rhythm, spacing, and composition rules shaped by flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Toon Shader (Cel Shaded): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Toon Shader (Cel Shaded) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Toon Shader (Cel Shaded) CGI with flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps and controlled detail; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Toon Shader (Cel Shaded)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Toon Shader (Cel Shaded) flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps; palette and exposure choices that support flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps; scale rhythm, spacing, and composition rules shaped by flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps',
       creative_brief:
-        'Create a style-card that translates Toon Shader (Cel Shaded) into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Toon Shader (Cel Shaded) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Toon Shader (Cel Shaded) flat cel bands, inked contours, hard shadow steps, simplified 3D shader ramps without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-045',
     name: 'Wireframe on Shaded',
     category: '4. 3D Styles',
-    negativePrompt: 'clean render',
+    negativePrompt:
+      'clean render, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Shaded topology overlay',
-      subject_treatment: 'White wires over grey model',
-      color_and_tone: 'Grey and White, wire-color contrast',
-      lighting_and_shadow: 'Studio, dual-pass render',
-      texture_and_material: 'Grid overlay, topology linework',
+      aesthetic:
+        'Wireframe on Shaded acts as a transferable CGI-style router: start from Shaded topology overlay, Wire overlay, shaded+wireframe combo and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through White wires over grey model; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Grey and White, wire color contrast; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio, dual pass render; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Grid overlay, topology linework; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Wireframe on Shaded: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Educational, process, design-transparency',
-      rendering_and_quality: 'Making-of, technical, breakdown beauty',
-      key_features: 'Wire overlay, shaded+wireframe combo',
+        'Structure the image through Lookdev camera for Wireframe on Shaded: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Educational, process, design transparency; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Making of, technical, breakdown beauty; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Shaded topology overlay; Wire overlay, shaded+wireframe combo; Grey and White, wire color contrast; Grid overlay, topology linework; Lookdev camera for Wireframe on Shaded: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Overlay the input with shaded-wireframe construction: visible topology, glowing edge flow, material surface retained beneath technical linework. Treat mesh logic as graphic pattern; do not require a model turntable or peeled-skin object. Apply Wireframe on Shaded as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Wireframe on Shaded as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Shaded topology overlay, Wire overlay, shaded+wireframe combo, Grid overlay, topology linework without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-050',
     name: 'Motion Graphics',
     category: '4. 3D Styles',
-    negativePrompt: 'static, boring',
+    negativePrompt:
+      'static, boring, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
       aesthetic:
-        "Motion Graphics within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Motion Graphics's specific style identity.",
+        'Motion Graphics acts as a transferable CGI-style router: start from Motion Graphics procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Motion Graphics through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion while preserving its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Motion Graphics-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Motion Graphics recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Motion Graphics: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Motion Graphics: perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Structure the image through scale rhythm, spacing, and composition rules shaped by procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Motion Graphics: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Motion Graphics with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Motion Graphics CGI with procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion and controlled detail; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Motion Graphics's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Motion Graphics procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion; palette and exposure choices that support procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion; scale rhythm, spacing, and composition rules shaped by procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion',
       creative_brief:
-        'Create a style-card that translates Motion Graphics into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Motion Graphics as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Motion Graphics procedural 3D shapes, kinetic hierarchy, abstract product rhythm, keyframed graphic motion without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-058',
     name: '3D Typography',
     category: '4. 3D Styles',
-    negativePrompt: 'flat text',
+    negativePrompt:
+      'flat text, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Letters made of objects',
-      subject_treatment: 'Bold font',
-      color_and_tone: 'Vibrant, brand-expression hues',
-      lighting_and_shadow: 'Studio, typographic readability',
-      texture_and_material: 'Material letters, physical texture',
+      aesthetic:
+        '3D Typography acts as a transferable CGI-style router: start from Letters made of objects, Readable, letterform sculpting and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Bold font; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant, brand expression hues; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Studio, typographic readability; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Material letters, physical texture; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for 3D Typography: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Bold, message, visual proclamation',
-      rendering_and_quality: 'Adobe, design, headline-striking',
-      key_features: 'Readable, letterform sculpting',
+        'Structure the image through Lookdev camera for 3D Typography: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Bold, message, visual proclamation; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Adobe, design, headline striking; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Letters made of objects; Readable, letterform sculpting; Vibrant, brand expression hues; Material letters, physical texture; Lookdev camera for 3D Typography: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Apply 3D typography logic to any input: bold letterform-like massing, material-built glyph structure, studio-lit bevels, extruded volume, readable silhouette rhythm, and brand-expression color. Keep typographic sculpture without requiring readable words, slogans, alphabet props, logos, or a headline composition.',
+        "Apply 3D Typography as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Letters made of objects, Readable, letterform sculpting, Material letters, physical texture without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-065',
     name: '3D Icon',
     category: '4. 3D Styles',
-    negativePrompt: 'flat, 2d icon',
+    negativePrompt:
+      'flat, 2d icon, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'App icon render',
-      subject_treatment: 'Rounded corners',
-      color_and_tone: 'Vibrant, gradient',
-      lighting_and_shadow: 'Soft studio',
-      texture_and_material: 'Smooth plastic/glass, UI-grade finish',
-      camera_and_composition: 'Squircle',
-      atmosphere_and_mood: 'Friendly, UI, app-store ready',
-      rendering_and_quality: 'macOS Big Sur glossy modern platform icon, squircle elegance',
-      key_features: 'Front facing, soft shadow base',
+      aesthetic:
+        '3D Icon acts as a transferable CGI-style router: start from App icon render, Front facing, soft shadow base and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Rounded corners; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Vibrant, gradient; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft studio; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Smooth plastic/glass, UI grade finish; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Squircle; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Friendly, UI, app store ready; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with macOS Big Sur glossy modern platform icon, squircle elegance; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'App icon render; Front facing, soft shadow base; Vibrant, gradient; Smooth plastic/glass, UI grade finish; Squircle',
       creative_brief:
-        'Compress the input into platform-icon language: squircle discipline, UI-grade plastic/glass, vibrant gradients, soft shadow grounding and front-facing legibility. Keep macOS Big Sur polish without requiring a literal app, drawer context or standalone object.',
+        "Apply 3D Icon as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through App icon render, Front facing, soft shadow base, Smooth plastic/glass, UI grade finish without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-070',
     name: 'Retro CGI (90s)',
     category: '4. 3D Styles',
-    negativePrompt: 'modern, ambient occlusion',
+    negativePrompt:
+      'modern, ambient occlusion, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
       aesthetic:
-        "Retro CGI (90s) within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Retro CGI (90s)'s specific style identity.",
+        'Retro CGI (90s) acts as a transferable CGI-style router: start from Retro CGI (90s) 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Retro CGI (90s) through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty while preserving its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Retro CGI (90s)-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Retro CGI (90s) recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Retro CGI (90s): surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Use spatial behavior that fits Retro CGI (90s): perspective, compression, exaggeration, or depth should support the style without forcing one fixed location.',
+        'Structure the image through scale rhythm, spacing, and composition rules shaped by 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Retro CGI (90s): specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Retro CGI (90s) with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Retro CGI (90s) CGI with 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty and controlled detail; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Retro CGI (90s)'s key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Retro CGI (90s) 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; palette and exposure choices that support 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty; scale rhythm, spacing, and composition rules shaped by 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty',
       creative_brief:
-        'Create a style-card that translates Retro CGI (90s) into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Retro CGI (90s) as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Retro CGI (90s) 1990s CGI primitives, chrome spheres, simple raytraced gradients, nostalgic render novelty without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-072',
     name: 'Clay UI',
     category: '4. 3D Styles',
-    negativePrompt: 'sharp, flat',
+    negativePrompt:
+      'sharp, flat, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
       aesthetic:
-        "Clay UI within 4. 3D Styles: a reusable 3D & CGI Rendering visual language with a clear stylistic thesis, disciplined mood, and recognizable art direction. Keep the result transferable across subjects while preserving Clay UI's specific style identity.",
+        'Clay UI acts as a transferable CGI-style router: start from Clay UI soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
       subject_treatment:
-        'Define Clay UI through line, mass, contour, spacing, and rhythm. Keep forms readable, intentional, and reusable beyond one literal scene.',
+        'Transform any prompt subject through adapt the requested subject through soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows while preserving its identity; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
       color_and_tone:
-        'Use a Clay UI-specific palette with clear dominant, secondary, and accent roles. Keep contrast deliberate and avoid generic color wash.',
+        'Build color with palette and exposure choices that support soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
       lighting_and_shadow:
-        'Use lighting that makes Clay UI recognizable: purposeful key, rim, bounce, shadow, and glow behavior with readable hierarchy.',
+        'Handle light through light behavior that reveals soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
       texture_and_material:
-        'Use materials and textures that reinforce Clay UI: surface response, grain, patina, polish, or wear should feel intentional and style-defining.',
+        'Render soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Clay UI: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
+        'Structure the image through Lookdev camera for Clay UI: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
       atmosphere_and_mood:
-        'Set a mood that belongs to Clay UI: specific, coherent, and distinct, with emotional tone carried by visual systems rather than narrative captioning.',
+        'Keep the mood mood carried by soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
       rendering_and_quality:
-        'Render Clay UI with high production clarity, strong silhouette reads, clean detail priority, and no accidental UI, text, logos, or watermark.',
+        'Finish with finished Clay UI CGI with soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows and controlled detail; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
       key_features:
-        "Prioritize Clay UI's key features: recognizable shape language, palette logic, material cues, lighting behavior, and composition rules.",
+        'Clay UI soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows; palette and exposure choices that support soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows; Lookdev camera for Clay UI: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Create a style-card that translates Clay UI into a portable visual system for 4. 3D Styles. Preserve the preset identity through style mechanics, not a fixed scene, character, prop, or story beat.',
+        "Apply Clay UI as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Clay UI soft extruded clay panels, rounded UI forms, matte pastel material, friendly depth shadows without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-073',
     name: 'Papercraft 3D',
     category: '4. 3D Styles',
-    negativePrompt: 'realistic, fluid',
+    negativePrompt:
+      'realistic, fluid, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Virtual paper',
-      subject_treatment: 'Fold lines',
-      color_and_tone: 'Paper texture, craft-material tones',
-      lighting_and_shadow: 'Shadows between layers, folded depth',
-      texture_and_material: 'Paper grain, craft-cardstock',
+      aesthetic:
+        'Papercraft 3D acts as a transferable CGI-style router: start from Virtual paper, Layered depth, fold crease definition and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Fold lines; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Paper texture, craft material tones; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Shadows between layers, folded depth; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Paper grain, craft cardstock; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Papercraft 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Creative, delicate, art-project warmth',
-      rendering_and_quality: 'Craft, handmade feel, origami precision',
-      key_features: 'Layered depth, fold-crease definition',
+        'Structure the image through Lookdev camera for Papercraft 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Creative, delicate, art project warmth; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Craft, handmade feel, origami precision; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Virtual paper; Layered depth, fold crease definition; Paper texture, craft material tones; Paper grain, craft cardstock; Lookdev camera for Papercraft 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Translate the input into papercraft construction: cardstock grain, layered-sheet depth, fold creases, cut edges and warm craft lighting. Keep handmade precision without forcing craft-table context, glue props or a paper-built world.',
+        "Apply Papercraft 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Virtual paper, Layered depth, fold crease definition, Paper grain, craft cardstock without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-077',
     name: 'Lego Brick-Built 3D',
     category: '4. 3D Styles',
-    negativePrompt: 'smooth, melted',
+    negativePrompt:
+      'smooth, melted, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Toy-brick construction, stud-and-tube logic',
-      subject_treatment: 'Studs',
-      color_and_tone: 'Plastic primary colors, brick-bright palette',
-      lighting_and_shadow: 'Plastic gloss, animated-film lighting',
-      texture_and_material: 'Plastic, fingerprints, ABS material',
-      camera_and_composition: 'Brick steps',
-      atmosphere_and_mood: 'Playful, constructive, brick-by-brick magic',
-      rendering_and_quality: 'Lego Movie toy-brick feature energy, everything is awesome',
-      key_features: 'Studs on top, clutch power',
+      aesthetic:
+        'Lego Brick-Built 3D acts as a transferable CGI-style router: start from Toy brick construction, stud and tube logic, Studs on top, clutch power and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Studs; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Plastic primary colors, brick bright palette; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Plastic gloss, animated film lighting; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Plastic, fingerprints, ABS material; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
+      camera_and_composition:
+        'Structure the image through Brick steps; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Playful, constructive, brick by brick magic; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Lego Movie toy brick feature energy, everything is awesome; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Toy brick construction, stud and tube logic; Studs on top, clutch power; Plastic primary colors, brick bright palette; Plastic, fingerprints, ABS material; Brick steps',
       creative_brief:
-        'Convert the input into toy-brick construction: studs, clutch-power seams, ABS gloss, primary-color modules and stepped approximations of curves. Keep Lego Movie feature energy without forcing a brick world, playset or specific setup.',
+        "Apply Lego Brick-Built 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Toy brick construction, stud and tube logic, Studs on top, clutch power, Plastic, fingerprints, ABS material without requiring the card image's original subject.",
     },
   },
   {
     id: 'SP03-078',
     name: 'Origami 3D',
     category: '4. 3D Styles',
-    negativePrompt: 'curved, smooth',
+    negativePrompt:
+      'curved, smooth, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, readable text, signature, accidental photorealism, generic smooth mesh, wrong geometry language, messy topology',
     style: {
-      aesthetic: 'Folded paper model',
-      subject_treatment: 'Sharp creases',
-      color_and_tone: 'Paper, natural-fiber tones',
-      lighting_and_shadow: 'Soft, fold-highlighting',
-      texture_and_material: 'Paper grain, crease-crisp',
+      aesthetic:
+        'Origami 3D acts as a transferable CGI-style router: start from Folded paper model, No cuts, pure fold geometry and 3D style system built from modeling language, mesh abstraction, projection rules, topology display, toy material, paper logic, or stylized shader constraints, then apply the 3D/render behavior to prompt X instead of recreating a fixed demo image.',
+      subject_treatment:
+        'Transform any prompt subject through Sharp creases; preserve the prompt subject while rebuilding it through the preset-specific 3D language; use facets, voxels, topology lines, clay, paper folds, toon bands, or procedural motion forms only when the preset calls for them, keeping the requested identity, silhouette, pose, object function, or environment legible.',
+      color_and_tone:
+        'Build color with Paper, natural fiber tones; use color through material simplification, cel ramps, toy plastic, paper fiber, retro CGI gradients, voxel palettes, or procedural motion accents, with deliberate value grouping, exposure control, and medium-specific limits rather than generic color wash.',
+      lighting_and_shadow:
+        'Handle light through Soft, fold highlighting; shape light through the style constraint: simplified GI, toon bands, clay softness, wire visibility, toy shadows, paper fold light, or retro speculars, so value structure supports the renderer and does not overwrite the requested content.',
+      texture_and_material:
+        'Render Paper grain, crease crisp; surface detail should show the named construction system; cube faces, mesh edges, fold creases, clay fingerprints, topology overlays, procedural blobs, or low-poly facets should appear only when they belong to the preset, keeping material scale coherent and avoiding noisy filler texture.',
       camera_and_composition:
-        'Lookdev camera for Origami 3D: three-quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition.',
-      atmosphere_and_mood: 'Delicate, precise, folded poetry',
-      rendering_and_quality: 'Geometric, craft, zen-precision',
-      key_features: 'No cuts, pure-fold geometry',
+        'Structure the image through Lookdev camera for Origami 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition; compose through projection, topology readability, object grouping, axis discipline, exploded or arranged parts, or stylized scale rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+      atmosphere_and_mood:
+        'Keep the mood Delicate, precise, folded poetry; derive mood from toy-like clarity, technical breakdown, handmade stop-motion, abstract motion, retro CGI novelty, or procedural mathematical wonder, letting the renderer alter interpretation without demanding a specific story, location, or character.',
+      rendering_and_quality:
+        'Finish with Geometric, craft, zen precision; finish with intentional stylization, clean geometry, stable silhouettes, and no accidental photoreal overwrite unless the preset asks for it, clean denoised surfaces where appropriate, and enough shader evidence to make the CGI mode recognizable.',
+      key_features:
+        'Folded paper model; No cuts, pure fold geometry; Paper, natural fiber tones; Paper grain, crease crisp; Lookdev camera for Origami 3D: three quarter or orthographic framing, clean silhouette read, material highlights, controlled depth, and vertical card composition',
       creative_brief:
-        'Fold the input into origami logic: single-sheet discipline, crisp crease geometry, natural-fiber paper grain and curve-free faceted planes. Keep zen precision without forcing cranes, lotus forms or traditional subject matter. Apply Origami 3D as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
+        "Apply Origami 3D as a CGI/render preset over prompt X: preserve the user's requested subject, then route modeling, shader response, lighting, material scale, composition, mood, and final render craft through Folded paper model, No cuts, pure fold geometry, Paper grain, crease crisp without requiring the card image's original subject.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

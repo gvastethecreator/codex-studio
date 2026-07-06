@@ -12,17 +12,62 @@ tags:
   - photography-and-realism
   - portrait-and-studio
 visualDna:
-  aesthetic: Authentic candid documentary photography, unposed street-derived realism
-  subject_treatment: Natural depth of field, primary subject isolated from busy context, spontaneous moment quality
-  color_and_tone: Urban color palette, natural daylight tones, slightly desaturated, realistic contrast
-  lighting_and_shadow: Available natural light, dynamic shadows, mixed lighting environments
-  texture_and_material: Subtle digital noise or film grain, realistic surface textures, environmental grit
-  camera_and_composition: Shot on 35mm or 50mm lens, slight motion blur in background, dynamic framing
-  atmosphere_and_mood: Real, fleeting, documentary, slice-of-life, energetic
-  rendering_and_quality: High quality documentary photography, authentic, unretouched look
+  aesthetic: >-
+    Candid Street Portrait acts as a transferable photographic style router: begin from Authentic
+    candid documentary photography, unposed public-space-derived realism, studio subject hierarchy,
+    controlled portrait optics, believable retouching, and intentional backdrop behavior, and
+    portrait and studio photography system built from lens discipline, subject hierarchy, controlled
+    retouching, and believable surface detail, then apply the photographic behavior to prompt X
+    instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Natural depth of field, primary subject isolated from busy
+    context, spontaneous moment quality; preserve prompt identity while using focal priority,
+    flattering or deliberately institutional distance, surface realism, and edge control without
+    requiring a human face, keeping the original subject, pose, species, object, or environment
+    legible.
+  color_and_tone: >-
+    Grade with Urban color palette, natural daylight tones, slightly desaturated, realistic
+    contrast; grade neutrals, skinlike or material tones, backdrop color, cosmetic warmth, and
+    controlled contrast as photographic capture decisions, with value separation and white balance
+    choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Available natural light, dynamic shadows, mixed lighting environments; make key, fill, rim,
+    catchlight, background falloff, and shadow shape visibly drive the style, preserving believable
+    exposure, shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Subtle digital noise or film grain, realistic surface textures, environmental grit;
+    retain pores, fabric, hair, props, paper, backdrop sweep, and small surface imperfections at a
+    believable photographic scale, avoiding both waxy smoothing and noisy texture overlays that hide
+    the prompt content.
+  camera_and_composition: >-
+    Compose through Shot on 35mm or 50mm lens, slight motion blur in depth field, dynamic framing;
+    use portrait lens compression, central authority, intimate framing distance, frontal ID
+    geometry, or editorial negative space without forcing one sitter, with lens distance, depth,
+    timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Real, fleeting, documentary, slice-of-life, energetic; derive mood from proximity,
+    pose pressure, institutional polish, intimacy, ceremony, awkwardness, or studio control, so the
+    preset changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with High quality documentary photography, authentic, unretouched look; finish as real
+    photography with clean optics, plausible retouching, readable focal hierarchy, and no painterly
+    or CGI substitution, high-resolution photographic detail, and disciplined denoise without losing
+    natural grain where the preset needs it.
   creative_brief: >-
-    Apply candid street-documentary behavior to any subject: available light, quick framing, imperfect motion,
-    urban grit, and unposed immediacy without requiring a person, sidewalk, or city setting.
+    Apply Candid Street Portrait as a photographic preset over prompt X: preserve the user's
+    requested subject, then route Authentic candid documentary photography, unposed
+    public-space-derived realism, Urban color palette, natural daylight tones, slightly desaturated,
+    realistic contrast, Available natural light, dynamic shadows, mixed lighting environments,
+    Subtle digital noise or film grain, realistic surface textures, environmental grit, and Shot on
+    35mm or 50mm lens, slight motion blur in depth field, dynamic framing through optics, exposure,
+    palette, surface response, timing, and finish without requiring the card image's original
+    subject.
+  key_features: >-
+    Authentic candid documentary photography, unposed public-space-derived realism; studio subject
+    hierarchy, controlled portrait optics, believable retouching, and intentional backdrop behavior;
+    Urban color palette, natural daylight tones, slightly desaturated, realistic contrast; Available
+    natural light, dynamic shadows, mixed lighting environments; Shot on 35mm or 50mm lens, slight
+    motion blur in depth field, dynamic framing
 avoidRules:
   - illustration
   - painting
@@ -39,12 +84,21 @@ avoidRules:
   - signature
   - bad anatomy
   - deformed
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - mannequin skin
+  - over-smoothed plastic retouching
+  - distorted anatomy
+  - generic beauty filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-002.webp
 attributes:
   negativePrompt: >-
-    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low resolution,
-    watermark, text, signature, bad anatomy, deformed
+    illustration, painting, drawing, 3d render, cartoon, anime, sketch, blurry, noisy, low
+    resolution, watermark, text, signature, bad anatomy, deformed, synthetic CGI, plastic render,
+    readable text, mannequin skin, over-smoothed plastic retouching, distorted anatomy, generic
+    beauty filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

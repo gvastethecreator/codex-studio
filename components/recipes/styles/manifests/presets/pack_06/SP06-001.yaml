@@ -12,19 +12,49 @@ tags:
   - essential-art-styles
   - traditional-painting
 visualDna:
-  aesthetic: Classic oil painting on canvas
-  subject_treatment: Thick impasto brush strokes
-  color_and_tone: Rich, deep, blended traditional pigments
-  lighting_and_shadow: Dramatic chiaroscuro
-  texture_and_material: Canvas grain, raised paint, brush bristles
-  camera_and_composition: Slightly impressionistic
-  atmosphere_and_mood: Timeless, expressive
-  rendering_and_quality: Masterpiece, museum quality
-  key_features: Visible brushwork
+  aesthetic: >-
+    Oil Painting (Classic) acts as a transferable art-medium router: start from Classic oil painting
+    on canvas, Visible brushwork and paint-media system built from pigment body, binder behavior,
+    substrate tooth, brush pressure, edge softness, and deliberate surface finish, then apply the
+    medium behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Thick impasto brush strokes; preserve the prompt subject
+    while translating form into brushstroke mass, pigment opacity, glaze, wash, impasto, stain, or
+    sprayed edge behavior, keeping the requested identity, silhouette, pose, object function, or
+    environment legible.
+  color_and_tone: >-
+    Build color with Rich, deep, blended traditional pigments; let hue, value, saturation, and
+    mixing come from physical pigment, binder opacity, drying character, and historical medium
+    constraints, with deliberate value grouping, accent control, and medium-specific limits rather
+    than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Dramatic chiaroscuro; make light feel interpreted by paint through tonal
+    blocking, glaze depth, broken color, matte falloff, or luminous pigment lift, so value structure
+    supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Canvas grain, raised paint, brush bristles; surface detail should show canvas, paper,
+    plaster, wax, velvet, gesso, knife ridges, wash blooms, or aerosol overspray when the medium
+    requires it, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Slightly impressionistic; organize the image through painterly
+    massing, brush direction, support format, negative space, edge hierarchy, and intentional
+    simplification, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Timeless, expressive; derive mood from medium history, touch, pigment weight,
+    speed, restraint, kitsch, ritual craft, or studio discipline, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Masterpiece, museum quality; finish with medium-faithful paint handling, readable
+    form, controlled texture, and no pasted photo or generic digital filter, clean denoised surfaces
+    where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Classic oil painting on canvas; Visible brushwork; Rich, deep, blended traditional pigments;
+    Canvas grain, raised paint, brush bristles; Slightly impressionistic
   creative_brief: >-
-    Apply classic oil-paint handling to any input: slow layered pigment, visible canvas grain, soft wet-edge
-    blending, glazed depth, varnish warmth, and brushwork with old-master weight. Keep painterly permanence
-    without requiring portraits, landscapes, still lifes, galleries, or historical subject matter.
+    Apply Oil Painting (Classic) as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Classic oil painting on canvas, Visible brushwork, Canvas grain, raised paint, brush bristles
+    without requiring the card image's original subject.
 avoidRules:
   - photo
   - realistic
@@ -41,12 +71,24 @@ avoidRules:
   - signature
   - frame
   - border
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - low resolution
+  - pasted photo texture
+  - wrong paint medium
+  - flat digital filter
+  - plastic CGI finish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-001.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy,
-    watermark, text, signature, frame, border
+    photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad
+    anatomy, watermark, text, signature, frame, border, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, low resolution, pasted photo texture, wrong paint
+    medium, flat digital filter, plastic CGI finish
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -12,28 +12,77 @@ tags:
   - photography-and-realism
   - film-and-analog-process
 visualDna:
-  aesthetic: Black and White film
-  subject_treatment: Medium contrast
-  color_and_tone: Greyscale
-  lighting_and_shadow: Versatile
-  texture_and_material: Visible grain
+  aesthetic: >-
+    Ilford HP5 Plus acts as a transferable photographic style router: begin from Black and White
+    film, Monochrome, and analog photographic process system built from film stock response, lens
+    imperfection, chemical artifact, grain, and exposure latitude, then apply the photographic
+    behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Medium contrast; preserve the prompt scene while routing detail
+    through stock softness, halation, vignetting, motion softness, or large-format clarity, keeping
+    the original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Greyscale; let palette come from emulsion bias, slide-film saturation, monochrome
+    silver values, aged dye shift, or instant-film chemistry, with value separation and white
+    balance choices that feel captured in-camera rather than painted over.
+  lighting_and_shadow: >-
+    Use Versatile; shape highlights and shadows through film latitude, flash falloff, long exposure,
+    tungsten balance, or chemical rolloff, preserving believable exposure, shadow density, highlight
+    rolloff, and source motivation.
+  texture_and_material: >-
+    Render Visible grain; render grain, dust, dye clouds, soft lens corners, wet-plate artifacts,
+    borderless instant texture, or scan softness as process evidence, avoiding both waxy smoothing
+    and noisy texture overlays that hide the prompt content.
   camera_and_composition: >-
-    Camera setup native to Ilford HP5 Plus: lens choice, crop distance, depth of field, and focal hierarchy
-    support 3. Film And Analog Process without generic framing.
-  atmosphere_and_mood: Classic, gritty
-  rendering_and_quality: Documentary film
-  key_features: Monochrome
+    Compose through Ilford HP5 Plus analog stock character, emulsion color bias, real grain, and
+    process-specific camera behavior; use camera format, crop, lens character, depth of field,
+    view-camera stillness, toy-camera distortion, or accidental snapshot framing, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Classic, gritty; derive mood from memory, imperfection, tactile chemistry,
+    nostalgia, scientific strangeness, or disposable-camera immediacy, so the preset changes
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Documentary film; finish as believable analog capture with coherent grain scale,
+    restrained artifacts, and no fake noisy filter, high-resolution photographic detail, and
+    disciplined denoise without losing natural grain where the preset needs it.
+  key_features: >-
+    Black and White film; Monochrome; Greyscale; Versatile; Ilford HP5 Plus analog stock character,
+    emulsion color bias, real grain, and process-specific camera behavior
   creative_brief: >-
-    Stripped of chroma's distraction, the image reduces to structure: light wrestling shadow, midtone grain
-    carrying documentary urgency, edges honest rather than polished. Use silver-gelatin grit and flexible HP5
-    contrast on any subject; no street, stranger, or human detail required.
+    Apply Ilford HP5 Plus as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Black and White film, Greyscale, Versatile, Visible grain, and Ilford HP5
+    Plus analog stock character, emulsion color bias, real grain, and process-specific camera
+    behavior through optics, exposure, palette, surface response, timing, and finish without
+    requiring the card image's original subject.
 avoidRules:
   - color
   - chromatic aberration
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - watermark
+  - readable text
+  - signature
+  - low resolution
+  - digital HDR overprocessing
+  - plastic noise
+  - fake film border
+  - oversharpened clarity
+  - generic vintage filter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-013.webp
 attributes:
-  negativePrompt: color, chromatic aberration
+  negativePrompt: >-
+    color, chromatic aberration, illustration, painting, drawing, 3d render, cartoon, anime, sketch,
+    synthetic CGI, plastic render, watermark, readable text, signature, low resolution, digital HDR
+    overprocessing, plastic noise, fake film border, oversharpened clarity, generic vintage filter
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

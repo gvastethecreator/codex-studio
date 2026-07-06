@@ -12,32 +12,89 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: National Geographic slide
+  aesthetic: >-
+    Kodachrome (50s) acts as a transferable cinematic-media router: start from National Geographic
+    slide, Kodachrome (50s) historical camera process, emulsion behavior, lens constraints, print
+    surface, and era-specific exposure artifacts, Deep blacks, red pop, golden highlights, fine
+    grain, projected slide glow and historical photographic process system built from camera
+    constraints, emulsion chemistry, lens softness, exposure timing, print surface, and era-specific
+    color response, then apply the media behavior to prompt X instead of recreating a fixed demo
+    image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Kodachrome (50s): casting, wardrobe,
-    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Rich Red/Yellow, Kodachrome red, golden wheat, azure sky
-  lighting_and_shadow: High contrast sun, travel-magazine daylight, crisp shadow
-  texture_and_material: Fine grain, dye-cloud smooth, archival stability
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Kodachrome (50s): casting, wardrobe, props, motion cues, and silhouette hierarchy follow
+    4. Photography Eras cinematic and broadcast grammar without locking to one plot beat; preserve
+    the requested subject while making it feel captured through the era process: sitter stillness,
+    flash harshness, instant-film intimacy, chemical plate tactility, or early digital sensor
+    behavior, keeping the requested identity, silhouette, action, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Rich Red/Yellow, Kodachrome red, golden wheat, azure sky; treat color as
+    historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth,
+    Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through High contrast sun, travel-magazine daylight, crisp shadow; make light
+    follow camera limitations through long exposure, flash falloff, lens vignetting, plate
+    reflectance, daylight softness, or early-sensor clipping, so exposure and shadow structure
+    support the media process without overwriting the requested content.
+  texture_and_material: >-
+    Render Fine grain, dye-cloud smooth, archival stability; surface detail should reveal plate
+    metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness,
+    instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler
+    texture.
   camera_and_composition: >-
-    Camera language native to Kodachrome (50s): genre-aware framing, lens character, focal hierarchy, motion
-    cue, and vertical style-card composition.
-  atmosphere_and_mood: Sunny, classic, optimistic, slide-projector memory
-  rendering_and_quality: Vivid, nostalgic, mid-century optimism, slide-projector glow
-  key_features: Deep blacks, red pop, golden highlights, fine grain, projected slide glow
+    Structure the image through Camera language native to Kodachrome (50s): genre-aware framing,
+    lens designed subjects, focal hierarchy, motion cue, and style-led vertical composition; compose
+    through period camera distance, portrait stillness, casual snapshot crop, square instant frame,
+    pinhole drift, or documentary era framing without requiring period costumes, with frame rhythm,
+    spacing, edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Sunny, classic, optimistic, slide-projector memory; derive mood from memory,
+    archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or
+    historical camera patience, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Vivid, nostalgic, mid-century optimism, slide-projector glow; finish as credible
+    photographic process with controlled grain and exposure artifacts, avoiding fake vintage filter
+    overlays and readable border text, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    National Geographic slide, Kodachrome (50s) historical camera process, emulsion behavior, lens
+    constraints, print surface, and era-specific exposure artifacts; Deep blacks, red pop, golden
+    highlights, fine grain, projected slide glow; Rich Red/Yellow, Kodachrome red, golden wheat,
+    azure sky; Fine grain, dye-cloud smooth, archival stability; Camera language native to
+    Kodachrome (50s): genre-aware framing, lens designed subjects, focal hierarchy, motion cue, and
+    style-led vertical composition
   creative_brief: >-
-    Push the input through 1950s Kodachrome slide language: saturated reds, rich yellows, deep blacks, crisp
-    daylight contrast, fine dye-cloud grain, and carousel-projector warmth. Avoid forcing cars, highways,
-    motels, or Americana props. The style should make any subject feel archival, vivid, sunny, and confidently
-    mid-century.
+    Apply Kodachrome (50s) as a cinematic-media preset over prompt X: preserve the user's requested
+    subject, then route lens behavior, palette, light, signal or film texture, composition, mood,
+    and final media craft through National Geographic slide, Kodachrome (50s) historical camera
+    process, emulsion behavior, lens constraints, print surface, and era-specific exposure
+    artifacts, Deep blacks, red pop, golden highlights, fine grain, projected slide glow, Fine
+    grain, dye-cloud smooth, archival stability without requiring the card image's original subject.
 avoidRules:
   - faded
   - digital
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - fake vintage filter
+  - readable border text
+  - modern phone clarity
+  - wrong camera process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-049.webp
 attributes:
-  negativePrompt: faded, digital
+  negativePrompt: >-
+    faded, digital, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake
+    vintage filter, readable border text, modern phone clarity, wrong camera process
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

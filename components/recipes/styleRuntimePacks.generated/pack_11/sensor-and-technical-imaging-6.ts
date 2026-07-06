@@ -7,54 +7,58 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP11-034',
     name: 'X-Ray',
     category: '6. Sensor And Technical Imaging',
-    negativePrompt: 'skin, color',
+    negativePrompt:
+      'skin, color, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging',
+        'X-Ray operates as a portable source-router layer: combine Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging with sensor modality logic with diagnostic mapping, hidden-structure reveal, false color, and technical readout discipline, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge',
+        "Preserve the prompt's subject plus requested motion and context while letting forms scan, reveal, map, attenuate, isolate, invert, color-code, or expose internal construction through Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Black and White negative, bone-white-on-void, tissue-grey gradient, lead-apron silhouette',
+        "Map color through sensor-coded values, monochrome density, heat gradients, cold transmission, and readable technical contrast; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission',
+        "Use Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission plus display-like luminance, transmission glow, diagnostic contrast, signal bloom, and controlled technical haze as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain',
+        'Render Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain plus film grain, scan bands, hidden structure, emissive heat regions, density edges, and signal texture; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting',
-      atmosphere_and_mood: 'Scientific, raw, clinical, mortality-aware, interior mystery',
+        'Compose with Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting plus diagnostic hierarchy, projection logic, section-like readability, and technical symmetry without forcing a device as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through clinical curiosity, hidden truth, analytical tension, forensic clarity, and machine-mediated vision; the emotional tone should feel specific to X-Ray while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiograph precision',
+        'Finish with precise sensor behavior, believable modality limits, clean subject preservation, and no decorative sci-fi noise; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Bone-like density, joint-space gaps when anatomy exists, metallic artifacts, fracture-line shadows, trabecular grain',
+        'Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging; Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge; Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain; Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission; Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting',
       creative_brief:
-        'Define identity through radiograph grammar: density-layer projection, monochrome transmission mapping, and internal-structure hierarchy should carry the style. If the input has a body, reveal skeletal contrast; if it is an object, expose its hidden construction without forcing a hospital frame. Apply X-Ray as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use X-Ray after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging, Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge, Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain, Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission, Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting plus density maps, thermal bands, attenuation layers, signal falloff, scan artifacts, and structure-first visibility, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-035',
     name: 'Thermal Vision',
     category: '6. Sensor And Technical Imaging',
-    negativePrompt: 'natural colors',
+    negativePrompt:
+      'natural colors, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Heat map camera, predator-vision, infrared-surveillance, temperature-portrait',
+      aesthetic:
+        'Thermal Vision operates as a portable source-router layer: combine Heat map camera, predator-vision, infrared-surveillance, temperature-portrait with sensor modality logic with diagnostic mapping, hidden-structure reveal, false color, and technical readout discipline, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps',
+        "Preserve the prompt's subject plus requested motion and context while letting forms scan, reveal, map, attenuate, isolate, invert, color-code, or expose internal construction through Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Rainbow (Red hot, Blue cold), ironbow-spectrum, white-hot core, magenta-warm, cyan-cool',
+        "Map color through sensor-coded values, monochrome density, heat gradients, cold transmission, and readable technical contrast; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source',
+        "Use Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source plus display-like luminance, transmission glow, diagnostic contrast, signal bloom, and controlled technical haze as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding',
+        'Render Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding plus film grain, scan bands, hidden structure, emissive heat regions, density edges, and signal texture; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear',
+        'Compose with Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear plus diagnostic hierarchy, projection logic, section-like readability, and technical symmetry without forcing a device as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread',
+        "Carry mood through clinical curiosity, hidden truth, analytical tension, forensic clarity, and machine-mediated vision; the emotional tone should feel specific to Thermal Vision while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic',
+        'Finish with precise sensor behavior, believable modality limits, clean subject preservation, and no decorative sci-fi noise; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast',
+        'Heat map camera, predator-vision, infrared-surveillance, temperature-portrait; Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps; Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding; Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source; Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear',
       creative_brief:
-        'Preserve this preset through thermal-imaging grammar: emissive heat maps, false-color temperature bands, sensor-noise artifacts, and blob-based isotherm contours should define identity beyond tactical hunt narratives. Apply Thermal Vision as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Thermal Vision after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Heat map camera, predator-vision, infrared-surveillance, temperature-portrait, Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps, Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding, Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source, Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear plus density maps, thermal bands, attenuation layers, signal falloff, scan artifacts, and structure-first visibility, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

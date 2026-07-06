@@ -13,30 +13,73 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Bureaucratic techno-control rendered through verdict logic, clinical sorting, cold grid authority, and
-    institutional paranoia
+    Surveillance Verdict Grid acts as a transferable anime-battle/worlds router: Surveillance
+    Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes,
+    anonymous silhouettes, forensic blue panels, barcode-like non-text marks, and judgment geometry;
+    combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware logic,
+    neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles, studios,
+    or lineage words may guide style, but they must not require canon cast, title-scene replication,
+    screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Hard-edged anime linework, precise machine-adjacent contours, segmented panel strokes, rigid geometry, and
-    clean blocking.
-  color_and_tone: Acid cyan, magenta status pops, dark steel neutrals, cold violet shadows, and sterile white alert accents.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply
+    Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional
+    scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks as
+    portable contour, motion grammar, surface language, and emotional pressure without requiring
+    canon elements or a default action setup.
+  color_and_tone: >-
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Surveillance Verdict Grid, surveillance
+    verdict grid style grammar with cold institutional scanning planes, anonymous silhouettes,
+    forensic blue panels, barcode-like non-text marks choose accent intensity, value contrast,
+    emotional temperature, and power-system separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    Fluorescent grid glow, digital reflections, severe underlight, wet-surface specularity, and scanline-like
-    rim highlights.
-  texture_and_material: Glossy polymer, brushed metal grain, glassy overlays, carbon-fiber hints, and rain-slick synthetic finish.
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Surveillance Verdict Grid, surveillance verdict grid style grammar
+    with cold institutional scanning planes, anonymous silhouettes, forensic blue panels,
+    barcode-like non-text marks without replacing prompt X with a stock anime frame.
+  texture_and_material: >-
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Surveillance
+    Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes,
+    anonymous silhouettes, forensic blue panels, barcode-like non-text marks controlled, denoised,
+    and coherent across bodies, objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Wireframe vanishing points, surveillance overlays, flattened authority zones, and compressed perspective
-    corridors of control.
-  atmosphere_and_mood: Clinical, oppressive, dystopian, cold
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Surveillance
+    Verdict Grid, surveillance verdict grid style grammar with cold institutional scanning planes,
+    anonymous silhouettes, forensic blue panels, barcode-like non-text marks into reusable
+    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
+    sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
   rendering_and_quality: >-
-    High-detail cyber-anime rendering with sharp interface discipline, specular richness, and cold forensic
-    clarity.
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Verdict glyphs, coefficient overlays, cold authority grids, glass reflections, machine-readable distance,
-    and social-pressure geometry
+    Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional
+    scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks;
+    armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and
+    human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed
+    plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers;
+    scale compression, machinery diagonals, grid overlays without readable UI, service-bay density,
+    orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable
+    hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency
   creative_brief: >-
-    Use surveillance verdict grid as institutional data grammar. Any prompt should feel measured, sorted,
-    scored, and judged by cold systems. Police, citizens, terminals, city incidents, and readable UI text are
-    optional.
+    Apply Surveillance Verdict Grid after prompt X as a transferable anime-battle/worlds layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    Surveillance Verdict Grid, surveillance verdict grid style grammar with cold institutional
+    scanning planes, anonymous silhouettes, forensic blue panels, barcode-like non-text marks, and
+    judgment geometry, mecha and cyberpunk anime grammar with engineered silhouettes, hardware
+    logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -50,12 +93,35 @@ avoidRules:
   - watermark
   - text
   - signature
+  - readable UI text
+  - police badge
+  - real-world law enforcement
+  - gun
+  - crime scene gore
+  - celebrity likeness
+  - Psycho-Pass-specific weapon/device
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-052.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, readable UI text, police badge, real-world law
+    enforcement, gun, crime scene gore, celebrity likeness, Psycho-Pass-specific weapon/device,
+    plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character,
+    title scene replication, required source-frame look, cosplay, generic anime filter,
+    prompt-required card, readable text, logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

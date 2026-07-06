@@ -13,29 +13,88 @@ tags:
   - game-art-directions-and-ui
 visualDna:
   aesthetic: >-
-    Soulslike dark-fantasy art direction with eroded grandeur, oppressive negative space, and tarnished
-    material poetry.
+    Soulslike Tarnished Atmosphere acts as a transferable art-medium router: start from Soulslike
+    dark fantasy art direction with eroded grandeur, oppressive negative space, and tarnished
+    material poetry, gameplay-readable hierarchy, genre-specific surface language, UI-aware
+    composition, and production-art clarity and game-art direction system built from playable
+    readability, UI or asset grammar, role clarity, production polish, and genre-specific visual
+    feedback, then apply the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Make any subject feel ancient, burdened, and monumental through worn edges, severe silhouette, and ritual
-    scale.
-  color_and_tone: Ash-gray, old gold, bruised umber, corpse-green accents, and desaturated highlights over deep blacks.
-  lighting_and_shadow: Thin holy backlight, torch-warm pin glows, huge soft shadow masses, and mist-diffused silhouettes.
+    Transform any prompt subject through Make any subject feel ancient, burdened, and monumental
+    through worn edges, severe silhouette, and ritual scale; preserve the prompt subject while
+    routing it through tile readability, icon clarity, splash rendering, interface material, sprite
+    bounce, shadow zones, or encounter pressure, keeping the requested identity, silhouette, pose,
+    object function, or environment legible.
+  color_and_tone: >-
+    Build color with Ash gray, old gold, bruised umber, corpse green accents, and desaturated
+    highlights over deep blacks; use color as gameplay hierarchy: rarity glow, faction contrast,
+    tactical coding, seasonal warmth, horror warmth, neon route color, or readable inventory
+    material, with deliberate value grouping, accent control, and medium-specific limits rather than
+    generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Thin holy backlight, torch warm pin glows, huge soft shadow masses, and
+    mist diffused silhouettes; shape light through game readability: rim separation, UI glow,
+    static-camera dread, foil flare, ability-color drama, safe-zone warmth, or velocity streaks, so
+    value structure supports the medium and does not overwrite the requested content.
   texture_and_material: >-
-    Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as surface
-    language.
-  camera_and_composition: Low, patient framing with monumental empty space, vertical pressure, and slow-burn focal hierarchy.
-  atmosphere_and_mood: Decayed, sacred, hostile mood without requiring castles, bosses, armor, weapons, or ruins.
-  rendering_and_quality: Painterly AAA concept finish, restrained detail outside focal areas, no UI or readable text.
+    Render Corroded metal, cracked stone, dry dust, old cloth grain, soot, and weathered ornament as
+    surface language; surface detail should support genre grammar through parchment, HUD glass,
+    pixel atlas texture, tarnished metal, foil frame, arsenal bevels, or cozy handmade material,
+    keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Low, patient framing with monumental empty space, vertical pressure,
+    and slow burn focal hierarchy; compose through gameplay-facing hierarchy, atlas consistency,
+    menu rhythm, parallax layers, tactical grid, encounter scale, or selection-screen energy, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Decayed, sacred, hostile mood without requiring fortification scale, bosses,
+    armor, weapons, or eroded structure; derive mood from playable stakes, collection desire,
+    tactical control, cozy routine, survival dread, arcade speed, or heroic confrontation, letting
+    the medium alter interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Painterly AAA concept finish, restrained detail outside focal areas, no UI or
+    readable text; finish with game-production clarity, strong silhouettes, controlled UI-like
+    detail, and no unreadable screenshot clutter, clean denoised surfaces where appropriate, and
+    enough craft evidence to make the medium recognizable.
+  key_features: >-
+    Soulslike dark fantasy art direction with eroded grandeur, oppressive negative space, and
+    tarnished material poetry; gameplay-readable hierarchy, genre-specific surface language,
+    UI-aware composition, and production-art clarity; Ash gray, old gold, bruised umber, corpse
+    green accents, and desaturated highlights over deep blacks; Corroded metal, cracked stone, dry
+    dust, old cloth grain, soot, and weathered ornament as surface language; Low, patient framing
+    with monumental empty space, vertical pressure, and slow burn focal hierarchy
+  creative_brief: >-
+    Apply Soulslike Tarnished Atmosphere as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Soulslike dark fantasy art direction with eroded grandeur, oppressive negative space,
+    and tarnished material poetry, gameplay-readable hierarchy, genre-specific surface language,
+    UI-aware composition, and production-art clarity, Corroded metal, cracked stone, dry dust, old
+    cloth grain, soot, and weathered ornament as surface language without requiring the card image's
+    original subject.
 avoidRules:
   - watermark
   - text
   - literal citadel requirement
   - boss requirement
   - armor requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - signature
+  - low resolution
+  - readable UI text
+  - logo clutter
+  - generic screenshot
+  - unplayable visual clutter
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-109.webp
 attributes:
-  negativePrompt: watermark, text, literal citadel requirement, boss requirement, armor requirement
+  negativePrompt: >-
+    watermark, text, literal citadel requirement, boss requirement, armor requirement, wrong medium,
+    generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low
+    resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

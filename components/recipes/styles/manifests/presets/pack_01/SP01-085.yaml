@@ -12,19 +12,50 @@ tags:
   - photography-and-realism
   - commercial-and-product
 visualDna:
-  aesthetic: Premium tech launch image
-  subject_treatment: Minimal hero silhouette
-  color_and_tone: Graphite, cool white, electric accent
-  lighting_and_shadow: Dark sweep with precise rim lights
-  texture_and_material: Matte anodized surface, glass edge, clean bevel
-  camera_and_composition: Long-lens product compression
-  atmosphere_and_mood: Intelligent, minimal, engineered
-  rendering_and_quality: Apple-style keynote polish
-  key_features: Precision rim outline
+  aesthetic: >-
+    Tech Hardware Hero acts as a transferable photographic style router: begin from Premium tech
+    launch image, Precision rim outline, and commercial photographic system built from sellable
+    clarity, controlled studio craft, material desirability, and brand-neutral polish, then apply
+    the photographic behavior to prompt X instead of recreating a fixed card scene.
+  subject_treatment: >-
+    Treat any prompt subject through Minimal hero silhouette; preserve prompt identity while making
+    silhouette, surface, freshness, scale, and product-like value immediately readable, keeping the
+    original subject, pose, species, object, or environment legible.
+  color_and_tone: >-
+    Grade with Graphite, cool white, electric accent; use palette as campaign control: clean whites,
+    luxury neutrals, appetite warmth, cool tech accents, automotive reflections, or interior
+    harmony, with value separation and white balance choices that feel captured in-camera rather
+    than painted over.
+  lighting_and_shadow: >-
+    Use Dark sweep with precise rim lights; shape light with softboxes, reflectors, rim lines, HDR
+    fill, glossy kickers, window balance, or packshot sweep shadows, preserving believable exposure,
+    shadow density, highlight rolloff, and source motivation.
+  texture_and_material: >-
+    Render Matte anodized surface, glass edge, clean bevel; render metal, glass, fabric, food
+    surface, condensation, cosmetic gel, architecture finish, and clean contact shadows with precise
+    detail, avoiding both waxy smoothing and noisy texture overlays that hide the prompt content.
+  camera_and_composition: >-
+    Compose through Long-lens product compression; compose for catalog clarity, top-down order, hero
+    compression, architectural verticals, lifestyle layout, or premium macro depth, with lens
+    distance, depth, timing, and focal hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Intelligent, minimal, engineered; derive mood from appetite, trust, luxury,
+    engineering, cleanliness, freshness, aspiration, or frictionless retail function, so the preset
+    changes interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Apple-style keynote polish; finish with professional photo polish, accurate material
+    response, clean retouching, and no fake logo, UI, or unreadable label clutter, high-resolution
+    photographic detail, and disciplined denoise without losing natural grain where the preset needs
+    it.
+  key_features: >-
+    Premium tech launch image; Precision rim outline; Graphite, cool white, electric accent; Dark
+    sweep with precise rim lights; Long-lens product compression
   creative_brief: >-
-    Tech hardware hero lighting makes any subject feel engineered: dark sweep, graphite palette, exact rim
-    outline, matte/glass material response, and keynote-level minimalism. It should communicate precision and
-    launch-day desire without requiring electronics, screens, devices, or UI.
+    Apply Tech Hardware Hero as a photographic preset over prompt X: preserve the user's requested
+    subject, then route Premium tech launch image, Graphite, cool white, electric accent, Dark sweep
+    with precise rim lights, Matte anodized surface, glass edge, clean bevel, and Long-lens product
+    compression through optics, exposure, palette, surface response, timing, and finish without
+    requiring the card image's original subject.
 avoidRules:
   - messy cables
   - dust
@@ -32,10 +63,31 @@ avoidRules:
   - warm clutter
   - watermark
   - text
+  - illustration
+  - painting
+  - drawing
+  - 3d render
+  - cartoon
+  - anime
+  - sketch
+  - synthetic CGI
+  - plastic render
+  - readable text
+  - signature
+  - low resolution
+  - fake brand logo
+  - messy clutter
+  - dirty product surface
+  - unreadable labels
+  - cheap stock layout
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-085.webp
 attributes:
-  negativePrompt: messy cables, dust, scratches, warm clutter, watermark, text
+  negativePrompt: >-
+    messy cables, dust, scratches, warm clutter, watermark, text, illustration, painting, drawing,
+    3d render, cartoon, anime, sketch, synthetic CGI, plastic render, readable text, signature, low
+    resolution, fake brand logo, messy clutter, dirty product surface, unreadable labels, cheap
+    stock layout
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

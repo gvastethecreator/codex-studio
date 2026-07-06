@@ -13,51 +13,106 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Neo-Geo arcade perfection, massive detailed sprite logic, Metal Slug animation fluidity, King of Fighters
-    sprite artistry and Samurai Shodown silhouette power as style anchors, 1990 arcade king-machine, luxury
-    sprite-budget energy, hand-drawn frame density
+    Neo Geo Sprite King acts as a transferable art-medium router: start from Neo Geo arcade
+    perfection, massive detailed sprite logic, Metal Slug animation fluidity, King of Fighters
+    sprite artistry and Samurai Shodown silhouette power as style anchors, 1990 arcade king machine,
+    luxury sprite budget energy, hand drawn frame density, Massive detailed sprite logic, 4096
+    simultaneous colors, no visible sprite limits, rich arcade palette, dense frame art implication,
+    SNK era sprite artistry and hardware-constrained game-visual system built from display limits,
+    palette budgets, sprite logic, pixel grids, CRT or handheld artifacts, and era-specific charm,
+    then apply the medium behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    Enormous detailed sprite pixels, dense animation-frame implications, background-parallax depth, no
-    hardware-sprite limits visible, pixel-art-at-its-peak
+    Transform any prompt subject through Enormous detailed sprite pixels, dense animation frame
+    implications, support field parallax depth, no hardware sprite limits visible, pixel art at its
+    peak; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel,
+    pre-render, screen-grid, or low-bit display behavior, keeping the requested identity,
+    silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    4096-color-simultaneous, 65K-total-palette, rich-vibrant-arcade-spectrum, SNK-deep-color-mastery,
-    no-palette-compromise, unlimited-sprite-color-budget
+    Build color with 4096 color simultaneous, 65K total palette, rich vibrant arcade spectrum, SNK
+    deep color mastery, no palette compromise, unlimited sprite color budget; use color through
+    hardware rules: indexed palettes, phosphor glow, four-shade handheld values, dither tricks,
+    copper gradients, limited scanline color, or terminal ANSI sets, with deliberate value grouping,
+    accent control, and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    Sprite-pixel-art-lighting-finesse, hundreds-of-frames-animation, palette-gradient-depth,
-    background-atmospheric-perspective, sprite-shadow-under-foot
+    Handle light through Sprite pixel art lighting finesse, hundreds of frames animation, palette
+    gradient depth, support field atmospheric perspective, sprite shadow under foot; make light
+    emerge from display technology, pixel value steps, CRT bloom, palette cycling, thermal print
+    contrast, or vector beam brightness, so value structure supports the medium and does not
+    overwrite the requested content.
   texture_and_material: >-
-    Massive-sprite-pixel-texture, hand-drawn-animation-frame-density, background-tile-variety-wealth,
-    arcade-CRT-perfect-display, AES-home-cartridge-luxury, no-compromise-pixel-quality
+    Render Massive sprite pixel texture, hand drawn animation frame density, support field tile
+    variety wealth, arcade CRT perfect display, AES home cartridge luxury, no compromise pixel
+    quality; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble,
+    dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale
+    coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Massive-sprite-on-screen freedom, many background parallax layers, no object-limit pressure,
-    fluid-animation implied without spatial compromise
+    Structure the image through Massive sprite on screen freedom, many support field parallax
+    layers, no object limit pressure, fluid animation implied without spatial compromise; compose
+    through tile maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate
+    space, UI geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and
+    visual hierarchy doing the style work.
   atmosphere_and_mood: >-
-    Arcade-royalty, pixel-art-apotheosis, money-is-no-object-production, SNK-golden-age,
-    MVS-cartridge-heavyweight-champion
+    Keep the mood Arcade royalty, pixel art apotheosis, money is no object production, SNK golden
+    age, MVS cartridge heavyweight champion; derive mood from hardware limitation, arcade spectacle,
+    handheld intimacy, terminal austerity, console nostalgia, or broken early-3D instability,
+    letting the medium alter interpretation without demanding a specific story, location, or
+    character.
   rendering_and_quality: >-
-    Neo-Geo-sprite-king aesthetic, peak-pixel-art rendering, arcade-perfection beauty,
-    Metal-Slug-animation-masterpiece, unlimited-sprite-budget-luxury
+    Finish with Neo Geo sprite king aesthetic, peak pixel art rendering, arcade perfection beauty,
+    Metal Slug animation masterpiece, unlimited sprite budget luxury; finish with faithful era
+    constraints, crisp readability at small scale, and no modern high-resolution smoothing unless
+    the preset asks for baked pre-rendering, clean denoised surfaces where appropriate, and enough
+    craft evidence to make the medium recognizable.
   key_features: >-
-    Massive-detailed sprite logic, 4096 simultaneous colors, no visible sprite limits, rich arcade palette,
-    dense frame-art implication, SNK-era sprite artistry
+    Neo Geo arcade perfection, massive detailed sprite logic, Metal Slug animation fluidity, King of
+    Fighters sprite artistry and Samurai Shodown silhouette power as style anchors, 1990 arcade king
+    machine, luxury sprite budget energy, hand drawn frame density; Massive detailed sprite logic,
+    4096 simultaneous colors, no visible sprite limits, rich arcade palette, dense frame art
+    implication, SNK era sprite artistry; 4096 color simultaneous, 65K total palette, rich vibrant
+    arcade spectrum, SNK deep color mastery, no palette compromise, unlimited sprite color budget;
+    Massive sprite pixel texture, hand drawn animation frame density, support field tile variety
+    wealth, arcade CRT perfect display, AES home cartridge luxury, no compromise pixel quality;
+    Massive sprite on screen freedom, many support field parallax layers, no object limit pressure,
+    fluid animation implied without spatial compromise
   creative_brief: >-
-    Any prompt receives peak arcade sprite treatment, oversized pixel detail, lavish palette depth and
-    hand-drawn frame density. The image should feel expensive in pixels, as if no memory limit was allowed to
-    weaken the form.
+    Apply Neo Geo Sprite King as an art-style preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Neo Geo arcade perfection, massive detailed sprite logic, Metal Slug animation fluidity, King of
+    Fighters sprite artistry and Samurai Shodown silhouette power as style anchors, 1990 arcade king
+    machine, luxury sprite budget energy, hand drawn frame density, Massive detailed sprite logic,
+    4096 simultaneous colors, no visible sprite limits, rich arcade palette, dense frame art
+    implication, SNK era sprite artistry, Massive sprite pixel texture, hand drawn animation frame
+    density, support field tile variety wealth, arcade CRT perfect display, AES home cartridge
+    luxury, no compromise pixel quality without requiring the card image's original subject.
 avoidRules:
   - low detail
   - limited sprite
   - simple
   - minimal
-  - retro
+  - cheap retro pastiche
   - small
   - basic
   - weak hardware
   - few frames
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-096.webp
 attributes:
-  negativePrompt: low detail, limited sprite, simple, minimal, retro, small, basic, weak hardware, few frames
+  negativePrompt: >-
+    low detail, limited sprite, simple, minimal, cheap retro pastiche, small, basic, weak hardware,
+    few frames, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter,
+    watermark, readable text, signature, modern high-res smoothing, fake readable UI text, generic
+    emulator screenshot, unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

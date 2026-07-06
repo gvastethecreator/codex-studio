@@ -13,30 +13,71 @@ tags:
   - hand-drawn-and-diy-media
 visualDna:
   aesthetic: >-
-    Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath,
+    Office Whiteboard Doodle acts as a transferable cinematic-media router: start from Dry-erase
+    marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath,
     blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings,
-    strategy-diagram absurdity
+    strategy-diagram absurdity, Dry-erase marker strokes, eraser ghost trails, flowchart arrows,
+    diagram circles, glossy board reflection, no readable text and DIY media system built from
+    informal marks, found surfaces, zine assembly, crude diagramming, deck graphics, cave pigment,
+    and hand-made reproduction texture, then apply the media behavior to prompt X instead of
+    recreating a fixed demo image.
   subject_treatment: >-
-    Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty
-    unsteady linework, arrow-heavy composition
+    Transform any prompt subject through Squeaky dry-erase marker strokes, variable thickness from
+    marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition;
+    preserve the requested subject while rebuilding it through whiteboard strokes, crumpled-paper
+    scribbles, primitive pigment, zine cuts, skateboard-deck composition, or napkin blueprint logic,
+    keeping the requested identity, silhouette, action, object function, or setting legible.
   color_and_tone: >-
-    Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey
-    eraser trails
-  lighting_and_shadow: Harsh fluorescent overhead, glossy board reflection, shallow surface glare
-  texture_and_material: Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection
-  camera_and_composition: Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective
-  atmosphere_and_mood: Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling
+    Build color with Expo-marker blue, red, green, black on glossy white, faded-ink pink from
+    dried-out markers, smudge-grey eraser trails; use color through dry-erase primaries, paper grey,
+    cave ochres, xerox black, punk collage hits, deck enamel, or improvised marker accents, with
+    deliberate value grouping, accent control, and process-specific limits rather than generic color
+    wash.
+  lighting_and_shadow: >-
+    Handle light through Harsh fluorescent overhead, glossy board reflection, shallow surface glare;
+    keep light secondary to surface evidence through flat scan lighting, paper shadow, primitive
+    wall texture, or graphic ink contrast, so exposure and shadow structure support the media
+    process without overwriting the requested content.
+  texture_and_material: >-
+    Render Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum
+    frame reflection; surface detail should reveal marker squeak, paper wrinkles, cave-grain
+    pigment, tape, photocopy dirt, deck varnish, napkin fiber, or zine cut edges, keeping artifact
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Arrows looping in impossible circles, crowded diagram spacing,
+    warped marker perspective; compose through casual diagram layout, pasted fragments,
+    object-on-surface graphic balance, hand-drawn arrows without readable text, and rough spatial
+    shorthand, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor,
+    caffeine-fueled doodling; derive mood from improvised problem-solving, punk urgency, outsider
+    charm, ancient ritual memory, office boredom, or homemade design energy, letting the media style
+    alter interpretation without demanding a specific story, location, or actor.
   rendering_and_quality: >-
-    Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism
-    humor
+    Finish with Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-interior volume
+    creativity, corporate-absurdism humor; finish with honest DIY texture, readable prompt identity,
+    and no polished corporate vector, fake readable notes, or clean studio poster default, clean
+    denoised surfaces where appropriate, and enough process evidence to make the style recognizable.
   key_features: >-
-    Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection,
-    no readable text
+    Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting
+    underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring
+    meetings, strategy-diagram absurdity; Dry-erase marker strokes, eraser ghost trails, flowchart
+    arrows, diagram circles, glossy board reflection, no readable text; Expo-marker blue, red,
+    green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails;
+    Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame
+    reflection; Arrows looping in impossible circles, crowded diagram spacing, warped marker
+    perspective
   creative_brief: >-
-    Translate any prompt into whiteboard doodle language: squeaky marker strokes, eraser ghosts, diagram
-    arrows, glossy glare, color-coded marks, and half-erased residue. Avoid required meeting rooms, stick
-    figures, readable text, or specific business diagrams. The surface should feel temporary, improvised, and
-    slightly absurd.
+    Apply Office Whiteboard Doodle as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Dry-erase marker on whiteboard, awkward
+    flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo
+    marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity,
+    Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board
+    reflection, no readable text, Glossy whiteboard surface, dried-marker residue stains,
+    eraser-felt streaks, aluminum frame reflection without requiring the card image's original
+    subject.
 avoidRules:
   - digital
   - clean
@@ -48,10 +89,26 @@ avoidRules:
   - photo
   - refined
   - color rich
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - polished corporate vector
+  - fake readable notes
+  - clean studio poster
+  - stock illustration polish
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-091.webp
 attributes:
-  negativePrompt: digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich
+  negativePrompt: >-
+    digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich,
+    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
+    text, watermark, logo clutter, generic stock footage, uncontrolled noise, polished corporate
+    vector, fake readable notes, clean studio poster, stock illustration polish
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

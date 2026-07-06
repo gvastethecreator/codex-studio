@@ -13,35 +13,73 @@ tags:
   - mecha-and-cyberpunk
 visualDna:
   aesthetic: >-
-    Remote conflict grief anime built from cold command logic, system pressure, disciplined tragedy, and
-    vulnerable distance
+    Remote Command Grief acts as a transferable anime-battle/worlds router: Remote Command Grief,
+    remote command grief style grammar with distant control geometry, drone-like machine
+    silhouettes, muted tactical panels, youth burden shown through posture, and cold blue-gray
+    systems; combine it with mecha and cyberpunk anime grammar with engineered silhouettes, hardware
+    logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension; named titles,
+    studios, or lineage words may guide style, but they must not require canon cast, title-scene
+    replication, screenshots, logos, or one fixed card concept.
   subject_treatment: >-
-    Hard-edged tactical linework, thin command vectors, segmented armor-like shapes, restrained faces, and
-    precise formation spacing.
+    Preserve prompt subject, action, and context while restyling silhouette, material response,
+    gesture rhythm, effect hierarchy, and detail priority through the preset lineage; apply Remote
+    Command Grief, remote command grief style grammar with distant control geometry, drone-like
+    machine silhouettes, muted tactical panels, youth burden shown through posture as portable
+    contour, motion grammar, surface language, and emotional pressure without requiring canon
+    elements or a default action setup.
   color_and_tone: >-
-    Ash gray, military olive, cold screen blue, muted rust, black graphite, and restrained red warning
-    accents.
+    Map color through cyan, magenta, warning red, signal green, alloy gray, oil black, sterile
+    white, coral glow, and disciplined emissive accents; let Remote Command Grief, remote command
+    grief style grammar with distant control geometry, drone-like machine silhouettes, muted
+    tactical panels, youth burden shown through posture choose accent intensity, value contrast,
+    emotional temperature, and power-system separation while staying attached to prompt X.
   lighting_and_shadow: >-
-    Cold monitor glow, smoke-softened daylight, minimal rim light, command-screen blue wash, and low-contrast
-    grief shadows.
+    Use neon spill, monitor glow, beam flares, hangar rim, warning lights, hard industrial shadow,
+    and silhouette-defining reflection; make light clarify impact, silhouette, machinery or magic,
+    material depth, and mood from Remote Command Grief, remote command grief style grammar with
+    distant control geometry, drone-like machine silhouettes, muted tactical panels, youth burden
+    shown through posture without replacing prompt X with a stock anime frame.
   texture_and_material: >-
-    Matte plating, fabric grit, dusty optics, chipped edge paint, worn interface glass, and dry particulate
-    haze.
+    Render painted alloy, ceramic armor, scuffed plating, glass, hydraulic grime, cables, dust,
+    circuitry, rain sheen, and digital bloom layers; keep the tactile or effect cues in Remote
+    Command Grief, remote command grief style grammar with distant control geometry, drone-like
+    machine silhouettes, muted tactical panels, youth burden shown through posture controlled,
+    denoised, and coherent across bodies, objects, environments, abstractions, and action.
   camera_and_composition: >-
-    Remote-control framing, compressed command depth, map-like overlays, and emotional distance between
-    subject layers.
-  atmosphere_and_mood: Tragic, disciplined, somber, remote
+    Frame through scale compression, machinery diagonals, grid overlays without readable UI,
+    service-bay density, orbital symmetry, and high-speed hardware lanes; convert Remote Command
+    Grief, remote command grief style grammar with distant control geometry, drone-like machine
+    silhouettes, muted tactical panels, youth burden shown through posture into reusable
+    perspective, timing, rhythm, scale, cut-in, and negative-space rules instead of one fixed style
+    sample layout.
+  atmosphere_and_mood: >-
+    Carry mood through operatic sacrifice, noir pressure, engineered dread, rebellion, machine
+    grief, sterile command, and electric velocity; the preset can become brutal, erotic, comic,
+    tragic, quiet, grotesque, heroic, romantic, or strange when prompt X asks for it while keeping
+    the anime-battle lineage readable.
   rendering_and_quality: >-
-    Premium tactical anime rendering with sober clarity, controlled detail density, and emotional restraint
-    under pressure.
+    Finish with premium mecha/cyber anime finish with readable hardware, denoised glow, no plastic
+    3D render, and no cockpit/control-room dependency; prioritize stable anatomy or object
+    structure, readable effects, controlled grain, heavy denoise for noisy darks, no watermark, no
+    fake readable text, no signature, no photoreal or 3D-render drift.
   key_features: >-
-    Cold command overlays, muted tactical palette, grief distance, hard-edged systems pressure, and restrained
-    emotional damage
+    Remote Command Grief, remote command grief style grammar with distant control geometry,
+    drone-like machine silhouettes, muted tactical panels, youth burden shown through posture;
+    armored contour, mechanical massing, modular joints, engineered surface rhythm, scale cues, and
+    human-machine pressure translated onto any subject; painted alloy, ceramic armor, scuffed
+    plating, glass, hydraulic grime, cables, dust, circuitry, rain sheen, and digital bloom layers;
+    scale compression, machinery diagonals, grid overlays without readable UI, service-bay density,
+    orbital symmetry, and high-speed hardware lanes; premium mecha/cyber anime finish with readable
+    hardware, denoised glow, no plastic 3D render, and no cockpit/control-room dependency
   creative_brief: >-
-    Use remote command grief as distance-and-control grammar. Any prompt should feel operated from afar,
-    disciplined, young, and burdened by systems. If characters or machines appear, imply remote interface,
-    cockpit logic, uniform restraint, or weapon-system pressure; vehicles, rooms, and battle scenes remain
-    optional.
+    Apply Remote Command Grief after prompt X as a transferable anime-battle/worlds layer: prompt X
+    supplies subject, action, setting, tone, and intensity, while this preset supplies Remote
+    Command Grief, remote command grief style grammar with distant control geometry, drone-like
+    machine silhouettes, muted tactical panels, youth burden shown through posture, and cold
+    blue-gray systems, mecha and cyberpunk anime grammar with engineered silhouettes, hardware
+    logic, neon atmosphere, cockpit-independent scale, and machine-emotion tension, finish
+    discipline, and negative controls without forcing canon cast, title scene, screenshot, card
+    pose, default monster, default combat prop, or prompt-literal card.
 avoidRules:
   - realistic
   - 3d render
@@ -55,12 +93,35 @@ avoidRules:
   - watermark
   - text
   - signature
+  - child soldier exploitation
+  - gun
+  - cockpit UI text
+  - real military insignia
+  - drone strike gore
+  - readable maps
+  - franchise uniform
+  - plastic 3d robot render
+  - cockpit source-frame look
+  - readable UI panel
+  - fixed canon character
+  - title scene replication
+  - required source-frame look
+  - cosplay
+  - generic anime filter
+  - prompt-required card
+  - readable text
+  - logo
+  - muddy noisy darks
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-058.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, child soldier exploitation, gun, cockpit UI text, real
+    military insignia, drone strike gore, readable maps, franchise uniform, plastic 3d robot render,
+    cockpit source-frame look, readable UI panel, fixed canon character, title scene replication,
+    required source-frame look, cosplay, generic anime filter, prompt-required card, readable text,
+    logo, muddy noisy darks
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

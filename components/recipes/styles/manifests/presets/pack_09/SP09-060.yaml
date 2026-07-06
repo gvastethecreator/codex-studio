@@ -13,29 +13,59 @@ tags:
   - texture-and-materiality
   - man-made-materials
 visualDna:
-  aesthetic: Toxic metal drops
-  subject_treatment: Rounded blobs
-  color_and_tone: Chrome
-  lighting_and_shadow: Mirror reflection
-  texture_and_material: Liquid metal
-  camera_and_composition: Coalescing
-  atmosphere_and_mood: Sci-fi, fluid
-  rendering_and_quality: T-1000, dangerous
-  key_features: High surface tension
+  aesthetic: >-
+    Mercury (Liquid Metal) treats fabrication as visible style language: start from Toxic metal
+    drops, Liquid metal, and Coalescing, then turn manufacturing process, tooling marks, seams,
+    tolerances, and industrial material behavior into portable surface behavior rather than a
+    literal material sample.
+  subject_treatment: >-
+    Transform any prompt subject through Rounded blobs: preserve identity and pose while letting
+    forms carry manufactured seams, tolerances, pressure marks, and finish logic through edge
+    profile, surface breakup, thickness, contact marks, and detail scale.
+  color_and_tone: >-
+    Use Chrome as the material palette, with controlled value separation, local color variation, and
+    hue shifts that follow the subject's form rather than flattening it into a pasted texture.
+  lighting_and_shadow: >-
+    Let Mirror reflection define the light response: highlights, occlusion, translucency, specular
+    scatter, matte falloff, or rim behavior should reveal Mercury (Liquid Metal) without hiding the
+    prompt subject.
+  texture_and_material: >-
+    Render Liquid metal through constructed regularity, stress points, joins, molded edges, and
+    process-specific finish; keep grain scale, residue, buildup, fractures, fiber, pores, or surface
+    tension coherent across the whole image.
+  camera_and_composition: >-
+    Compose around Coalescing as reusable material rhythm: macro-friendly for texture tasks, but
+    able to wrap objects, figures, environments, and props without forcing one sample view.
+  atmosphere_and_mood: >-
+    Keep the mood Sci-fi, fluid by using use, fabrication, utility, and cultural material
+    association; the material should color the scene's feeling while preserving the user's requested
+    subject and setting.
+  rendering_and_quality: >-
+    Finish with T-1000, dangerous material clarity: physically coherent reflectance, clean contact
+    detail, controlled micro-texture, readable silhouette behavior, and no noisy stock-texture
+    overlay.
+  key_features: Toxic metal drops; Rounded blobs; Liquid metal; Mirror reflection; Coalescing
   creative_brief: >-
-    Summon the alien fluidity of liquid mercury beading into chrome spheres of impossible surface tension,
-    each drop a convex mirror reflecting a distorted world in silver curves. The material must feel both
-    mesmerizing and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture
-    the aesthetics of the untouchable, metal that refuses to be solid. Use Mercury as portable surface/render
-    behavior over any input: map its texture, light response, edge wear, color chemistry, and tactile rhythm
-    onto the subject instead of requiring a literal material sample, macro tile, wall, landscape, source
-    object, or scene where the material naturally appears.
+    Route any subject through Mercury (Liquid Metal) as a transferable man-made material visual
+    system while preserving the prompt's subject, action, and setting. Summon the alien fluidity of
+    liquid mercury beading into chrome spheres of impossible surface tension, each drop a convex
+    mirror reflecting a distorted world in silver curves. The material must feel both mesmerizing
+    and toxic, beauty that carries the weight of danger in every perfectly rounded blob. Capture the
+    aesthetics of the untouchable, metal that refuses to be solid. Use Mercury as portable
+    surface/render behavior over any input: map its texture, light response, edge wear, color
+    chemistry, and tactile rhythm onto the subject instead of requiring a literal material sample,
+    macro tile, wall, landscape, source object, or scene where the material naturally appears.
 avoidRules:
   - solid silver
+  - wrong material
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP09-060.webp
 attributes:
-  negativePrompt: solid silver
+  negativePrompt: solid silver, wrong material, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_09
   packName: Texture & Materiality

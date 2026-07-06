@@ -13,27 +13,88 @@ tags:
   - tv-and-broadcast
 visualDna:
   aesthetic: >-
-    Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as
-    style anchor, urgent motion breakdown
-  subject_treatment: Dynamic arrows, replay boxes, cropped action zones, diagonal analysis marks, no readable labels
-  color_and_tone: Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue
-  lighting_and_shadow: Harsh arena-style illumination, blown highlights, compressed shadow detail, replay exposure
-  texture_and_material: VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting
-  camera_and_composition: Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal tracking artifacts
-  atmosphere_and_mood: Competitive, urgent, analytical, broadcast-tense
-  rendering_and_quality: Kinetic, analytical, noisy, analog replay clarity
-  key_features: Telestrator marks, replay inset, motion combing, VHS ghost, freeze-frame crop
+    VHS Sports Replay Broadcast acts as a transferable cinematic-media router: start from Analog
+    sports replay package, telestrator energy, freeze-frame analysis, stadium-video compression as
+    style anchor, urgent motion breakdown, Telestrator marks, replay inset, motion combing, VHS
+    ghost, freeze-frame crop and broadcast-media system built from signal texture, studio or field
+    capture, graphic package hierarchy, interlacing, compression, and live-transmission rhythm, then
+    apply the media behavior to prompt X instead of recreating a fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Dynamic arrows, replay boxes, cropped action zones,
+    diagonal analysis marks, no readable labels; preserve the requested subject while treating it as
+    a broadcast capture, package segment, demo frame, replay, surveillance feed, music-video signal,
+    or live information object, keeping the requested identity, silhouette, action, object function,
+    or setting legible.
+  color_and_tone: >-
+    Build color with Broadcast green, replay yellow, scoreboard red, cold white, VHS shadow blue;
+    use color through signal-safe palettes, studio blue, warning red, chroma spill, VHS drift, SD
+    primaries, radar overlays, or cheap late-night product gloss, with deliberate value grouping,
+    accent control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Harsh contest geometry-style illumination, blown highlights, compressed
+    shadow detail, replay exposure; shape light through even studio key, practical video exposure,
+    screen glow, floodlight, surveillance flatness, confessional softness, or signal-break flicker,
+    so exposure and shadow structure support the media process without overwriting the requested
+    content.
+  texture_and_material: >-
+    Render VHS smear, motion combing, field-line aliasing, overlay graphics, tape ghosting; surface
+    detail should show video sharpness, scanlines, crawl bands, interlace, tape noise, chroma-key
+    edge, compression blocks, or broadcast graphics as visual texture, keeping artifact scale
+    coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal
+    tracking artifacts; compose through safe-title zones, lower-third-like geometry, split screens,
+    scorebug rhythm, crawl lanes, multicam framing, or video-package layout without readable text
+    dependency, with frame rhythm, spacing, edge hierarchy, and visual hierarchy doing the style
+    work.
+  atmosphere_and_mood: >-
+    Keep the mood Competitive, urgent, analytical, broadcast-tense, mood carried by VHS Sports
+    Replay Broadcast media process, signal pressure, and visual restraint; derive mood from live
+    urgency, cheap sincerity, public-access awkwardness, sales pressure, institutional watching,
+    stadium tension, or music-video rebellion, letting the media style alter interpretation without
+    demanding a specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Kinetic, analytical, noisy, analog replay clarity; finish as coherent broadcast
+    signal with clean graphic hierarchy, intentional compression, and no anchor, desk, logo, UI
+    screenshot, or readable caption requirement, clean denoised surfaces where appropriate, and
+    enough process evidence to make the style recognizable.
+  key_features: >-
+    Analog sports replay package, telestrator energy, freeze-frame analysis, stadium-video
+    compression as style anchor, urgent motion breakdown; Telestrator marks, replay inset, motion
+    combing, VHS ghost, freeze-frame crop; Broadcast green, replay yellow, scoreboard red, cold
+    white, VHS shadow blue; VHS smear, motion combing, field-line aliasing, overlay graphics, tape
+    ghosting; Freeze-frame doubling, slow-motion blur, inset replay crop, diagonal tracking
+    artifacts
   creative_brief: >-
-    Apply analog sports replay grammar to any prompt: freeze-frame crop, telestrator-like arrows, VHS motion
-    combing, inset replay boxes, and compressed highlight detail. Avoid actual teams, stadiums, scoreboards,
-    athletes, or readable graphics as requirements. The image should feel analyzed by a noisy broadcast truck.
+    Apply VHS Sports Replay Broadcast as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through Analog sports replay package, telestrator
+    energy, freeze-frame analysis, stadium-video compression as style anchor, urgent motion
+    breakdown, Telestrator marks, replay inset, motion combing, VHS ghost, freeze-frame crop, VHS
+    smear, motion combing, field-line aliasing, overlay graphics, tape ghosting without requiring
+    the card image's original subject.
 avoidRules:
   - filmic slow cinema
   - clean vector
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - anchor requirement
+  - desk requirement
+  - readable captions
+  - logo package
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-124.webp
 attributes:
-  negativePrompt: filmic slow cinema, clean vector
+  negativePrompt: >-
+    filmic slow cinema, clean vector, official card scene, fixed thumbnail subject, prompt replaced
+    by sample image, readable fake text, watermark, logo clutter, generic stock footage,
+    uncontrolled noise, anchor requirement, desk requirement, readable captions, logo package
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

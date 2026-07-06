@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { HealthResponse } from '../packages/shared/src';
 import type { Toast } from '../types';
 import {
@@ -20,7 +20,7 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
     'studio-onboarding-complete',
     false,
   );
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(() => !hasSeenOnboarding && shouldAutoOpen);
   const [health, setHealth] = useState<HealthResponse | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isChecking, setIsChecking] = useState(false);
@@ -51,12 +51,13 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
   }, [log]);
 
   const autoOpenedRef = useRef(false);
-  if (!autoOpenedRef.current && !hasSeenOnboarding && shouldAutoOpen) {
+  useEffect(() => {
+    if (autoOpenedRef.current || hasSeenOnboarding || !shouldAutoOpen) return;
     autoOpenedRef.current = true;
     setHasSeenOnboarding(true);
     setIsOpen(true);
     void refreshHealth();
-  }
+  }, [hasSeenOnboarding, refreshHealth, setHasSeenOnboarding, shouldAutoOpen]);
 
   const openOnboarding = useCallback(() => {
     setIsOpen(true);

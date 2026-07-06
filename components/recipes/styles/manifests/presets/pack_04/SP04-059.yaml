@@ -13,29 +13,82 @@ tags:
   - technical-and-reference-sheets
 visualDna:
   aesthetic: >-
-    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space
-    integration
+    UI/HUD Design acts as a transferable illustration router: start from Diegetic HUD interface
+    style with tactical readability, layered data hierarchy, and immersive screen-space integration,
+    Floating, thin rule-lines, data readout and technical reference and interface-spec system built
+    from orthographic clarity, diagram hierarchy, callout logic, measured spacing, and
+    production-sheet legibility, then apply the visual behavior to prompt X instead of recreating a
+    fixed demo image.
   subject_treatment: >-
-    Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic
-    structure
-  color_and_tone: Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast
-  lighting_and_shadow: Glow, emissive interface, screen-space radiance
-  texture_and_material: Screen
-  camera_and_composition: 'Compose for UI/HUD Design using its key spatial cues: Floating, thin rule-lines, data readout.'
-  atmosphere_and_mood: Tech, info, augmented awareness, mission-ops focus
-  rendering_and_quality: Futuristic, functional, diegetic elegance, heads-up immersion
-  key_features: Floating, thin rule-lines, data readout
+    Transform any prompt subject through Thin vector line discipline with modular widget framing,
+    reticle geometry, and precision micro-typographic structure; preserve the requested subject
+    while expressing it through schematic breakdowns, reference views, anatomy structure, UI
+    wireframes, comparison scales, or specification surfaces, keeping the requested identity,
+    silhouette, pose, object function, or setting legible.
+  color_and_tone: >-
+    Build color with Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast; use color as
+    information coding: blueprint cyan, neutral sheet stock, callout accents, HUD glow, anatomy
+    value separation, or wireframe hierarchy, with deliberate value grouping, accent control, and
+    process-specific limits rather than a generic palette wash.
+  lighting_and_shadow: >-
+    Handle light through Glow, emissive interface, screen-space radiance; keep light diagrammatic
+    and legible through flat drafting values, callout emphasis, interface glow, anatomical
+    separation, or measured shadow restraint, so value structure supports the illustration process
+    and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Screen, technical line hierarchy, orthographic clarity, callout structure, grid
+    discipline, and reference-sheet readability; surface detail should support readability with grid
+    paper, line weights, translucent overlays, measurement ticks, UI panels, section cuts, or
+    reference-sheet paper grain, keeping material scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Compose for UI/HUD Design using its key spatial cues: Floating, thin
+    rule-lines, data readout; compose through orthographic projection, exploded spacing, callout
+    grouping, interface modules, size-scale relationships, and reference-sheet hierarchy, with
+    scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Tech, info, augmented awareness, mission-ops focus; derive mood from precision,
+    planning, research, interface control, anatomical study, engineering authority, or catalogued
+    comparison, letting the style alter interpretation without demanding a specific story, location,
+    or actor.
+  rendering_and_quality: >-
+    Finish with Futuristic, functional, diegetic elegance, heads-up immersion; finish with readable
+    technical communication, crisp line hierarchy, controlled notation-like detail, and no illegible
+    labels or decorative clutter, clean denoised surfaces where appropriate, and enough process
+    evidence to make the style recognizable.
+  key_features: >-
+    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive
+    screen-space integration; Floating, thin rule-lines, data readout; Neon Cyan/Orange, sci-fi HUD
+    spectrum, AR-overlay contrast; Screen, technical line hierarchy, orthographic clarity, callout
+    structure, grid discipline, and reference-sheet readability
   creative_brief: >-
-    Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry, modular
-    widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add augmented awareness
-    without requiring missions, weapons, helmets, screens, maps, or readable UI text.
+    Apply UI/HUD Design as an illustration preset over prompt X: preserve the user's requested
+    subject, then route mark-making, palette, surface, composition, mood, and final craft through
+    Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive
+    screen-space integration, Floating, thin rule-lines, data readout, Screen, technical line
+    hierarchy, orthographic clarity, callout structure, grid discipline, and reference-sheet
+    readability without requiring the card image's original subject.
 avoidRules:
   - organic
   - messy
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - muddy AI texture
+  - generic fantasy slop
+  - illegible labels
+  - decorative clutter
+  - shaded cinematic render
+  - random UI text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-059.webp
 attributes:
-  negativePrompt: organic, messy
+  negativePrompt: >-
+    organic, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible
+    labels, decorative clutter, shaded cinematic render, random UI text
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

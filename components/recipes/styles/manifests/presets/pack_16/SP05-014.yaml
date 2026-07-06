@@ -13,30 +13,79 @@ tags:
   - 90s-golden-era
 visualDna:
   aesthetic: >-
-    90s space-noir cool with jazz melancholy, stylish restraint, drifting loneliness, and retro-future
-    elegance.
+    Jazzy Space-Noir Melancholy Style acts as a transferable anime-prestige router: jazz-cut anime
+    cool and syncopated caper rhythm, alongside a space anime direction shaped by era-aware line
+    economy and genre tone; fuse it with 90s golden-era anime direction with sharp cel shadows,
+    dramatic closeups, aura effects, urban melancholy, and high-contrast compositing; it routes era,
+    genre, line economy, cel or digital finish, and performance tone without locking prompt content
+    to the source title or sample image.
   subject_treatment: >-
-    Crisp cel-era contour, relaxed silhouette rhythm, smoke-like gesture trails, and clean action accents held
-    in reserve.
-  color_and_tone: Muted blues, amber lounge glow, teal neon accents, dusty mauves, and deep black cel-shadow pools.
-  lighting_and_shadow: Low-key noir contrast, rim light through haze, soft neon edge spill, and isolated warm highlights.
+    Preserve the prompt subject, action, and context while restyling forms through contours paced by
+    jazzy tension, readable pose energy, and silhouette discipline, alongside contours paced by
+    space tension, readable pose energy, and silhouette discipline; identity should remain readable
+    through anime contour, expression economy, pose energy, shape simplification, and effect
+    hierarchy instead of a required canon character or title scene.
+  color_and_tone: >-
+    Map color through smoky blues, amber club warmth, black ink, and brass highlights, alongside
+    space black, star white, violet, and analog cockpit accents and dusky blues, muted violets, and
+    warm lonely accents; anchor it in deep night blues, saturated aura color, jewel accents, warm
+    skin cel tones, smoke grays, and VHS-era contrast; keep value separation clean, cel flats
+    intentional, accents purposeful, and palette behavior attached to the requested content.
+  lighting_and_shadow: >-
+    Use spotlight slashes, smoky bounce, and amber rim light, alongside starfield glints, monitor
+    glow, and vacuum-like rim light; combine it with hard-edged rim light, aura bloom, neon spill,
+    twilight gradients, speed-flash cuts, and moody cel shadow blocks; shadows should read as anime
+    light design, rims should clarify form, and glow or effects should support the prompt rather
+    than replacing it.
   texture_and_material: >-
-    Painted background grain, smoky translucency, brushed metal glints, worn matte surfaces, and cel overlay
-    texture.
+    Render cel paint and ink grain tuned to jazzy material contrast, alongside cel paint and ink
+    grain tuned to space material contrast; anchor surfaces in painted cels, compositing grain,
+    inked speed marks, smoke layers, leather or metal highlights, and analog scan softness; cel
+    edges, painted surfaces, grain, cloth, metal, water, sweat, smoke, or atmosphere must stay
+    coherent across people, objects, environments, action, and abstractions.
   camera_and_composition: >-
-    Wide negative space, slow orbital depth, oblique noir framing, and compressed solitude around the focal
-    subject.
-  atmosphere_and_mood: Cool, wistful, lonely, stylish
+    Frame around syncopated cuts, off-beat diagonals, and stylish negative space, alongside lonely
+    scale, cockpit density, and orbital emptiness, then extend it with cinematic closeups,
+    speed-line vectors, dramatic low angles, layered profile cuts, and compressed emotional space;
+    the style should support portraits, props, machines, performances, landscapes, symbols, and full
+    scenes through reusable anime staging grammar instead of one fixed card layout.
+  atmosphere_and_mood: >-
+    Carry mood through cool improvisation and adult mischief, alongside romantic melancholy and
+    reflective distance; braid it with heightened rivalry, melancholy cool, occult romance,
+    existential drift, heroic escalation, and serious adult tone; the preset can become funny,
+    sensual, violent, quiet, tragic, romantic, or strange when prompt X asks for it while preserving
+    the chosen anime lineage.
   rendering_and_quality: >-
-    Golden-era anime frame polish with sharp cel definition, sophisticated color grading, and silhouette-first
-    staging.
+    Finish with clean anime finishing that keeps jazzy identity readable without noisy denoise,
+    alongside clean anime finishing that keeps space identity readable without noisy denoise;
+    enforce premium 90s cel finish with crisp anatomy, readable effects, denoised grain, and no
+    cheap anime-filter smear; prioritize clean denoise, stable anatomy or object structure, readable
+    effects, controlled grain, no watermark, no fake text, no signature, and no photoreal or
+    3D-render drift.
   key_features: >-
-    Haze ribbons, cool negative space, amber-cyan noir contrast, iconic lonely silhouettes, and restrained
-    stylish motion.
+    jazz-cut anime cool and syncopated caper rhythm, alongside a space anime direction shaped by
+    era-aware line economy and genre tone; contours paced by jazzy tension, readable pose energy,
+    and silhouette discipline, alongside contours paced by space tension, readable pose energy, and
+    silhouette discipline; cel paint and ink grain tuned to jazzy material contrast, alongside cel
+    paint and ink grain tuned to space material contrast; spotlight slashes, smoky bounce, and amber
+    rim light, alongside starfield glints, monitor glow, and vacuum-like rim light; syncopated cuts,
+    off-beat diagonals, and stylish negative space, alongside lonely scale, cockpit density, and
+    orbital emptiness
   creative_brief: >-
-    Build a reusable jazzy-space-noir melancholy grammar for any subject or input image: cool restraint,
-    smoke-like rhythm, retro-future polish, low-key cel lighting, and lonely negative space without imposing
-    bars, bounty chases, cigarettes, saxophones, ships, asteroid belts, or stations.
+    Apply Jazzy Space-Noir Melancholy Style after prompt X as a transferable anime-prestige layer:
+    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies
+    jazz-cut anime cool and syncopated caper rhythm, alongside a space anime direction shaped by
+    era-aware line economy and genre tone, alongside contours paced by jazzy tension, readable pose
+    energy, and silhouette discipline, alongside contours paced by space tension, readable pose
+    energy, and silhouette discipline; smoky blues, amber club warmth, black ink, and brass
+    highlights, alongside space black, star white, violet, and analog cockpit accents and dusky
+    blues, muted violets, and warm lonely accents; spotlight slashes, smoky bounce, and amber rim
+    light, alongside starfield glints, monitor glow, and vacuum-like rim light; cel paint and ink
+    grain tuned to jazzy material contrast, alongside cel paint and ink grain tuned to space
+    material contrast and syncopated cuts, off-beat diagonals, and stylish negative space, alongside
+    lonely scale, cockpit density, and orbital emptiness, finish discipline, and negative controls
+    without requiring a fixed canon cast, title scene, prop bundle, location, sport, instrument,
+    weapon, or card composition.
 avoidRules:
   - realistic
   - 3d render
@@ -50,12 +99,24 @@ avoidRules:
   - watermark
   - text
   - signature
+  - flat modern moe
+  - generic shonen screenshot
+  - messy VHS noise
+  - fixed canon character
+  - literal title scene
+  - required anime screenshot
+  - generic anime filter
+  - prompt-literal card
+  - muddy cel noise
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-014.webp
 attributes:
   negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts,
-    watermark, text, signature
+    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
+    artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS
+    noise, fixed canon character, literal title scene, required anime screenshot, generic anime
+    filter, prompt-literal card, muddy cel noise, readable text
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

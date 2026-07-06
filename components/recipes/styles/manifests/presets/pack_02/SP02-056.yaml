@@ -12,28 +12,87 @@ tags:
   - cinematic-and-media
   - photography-eras
 visualDna:
-  aesthetic: 2 Megapixel camera
+  aesthetic: >-
+    Early Digital (2000s) acts as a transferable cinematic-media router: start from 2 Megapixel
+    camera, Early Digital (2000s) historical camera process, emulsion behavior, lens constraints,
+    print surface, and era-specific exposure artifacts, Low resolution, compression blocks, purple
+    fringing, clipped highlights, noisy shadow and historical photographic process system built from
+    camera constraints, emulsion chemistry, lens softness, exposure timing, print surface, and
+    era-specific color response, then apply the media behavior to prompt X instead of recreating a
+    fixed demo image.
   subject_treatment: >-
-    Treat subjects as believable filmed or broadcast subjects under Early Digital (2000s): casting, wardrobe,
-    props, motion cues, and silhouette hierarchy follow 4. Photography Eras cinematic and broadcast grammar
-    without locking to one plot beat.
-  color_and_tone: Noisy shadows, purple fringing, CCD magenta, muddy chroma
-  lighting_and_shadow: Flat, pop-up flash, no dynamic range
-  texture_and_material: Jpeg artifacts, compression blocks, color banding
-  camera_and_composition: Pixelation, stair-step edge, aliasing jaggies
-  atmosphere_and_mood: Y2K, candid, early-upload memory, digital infancy
-  rendering_and_quality: Low res, nostalgic, 2MP chunky, digital infancy
-  key_features: Low resolution, compression blocks, purple fringing, clipped highlights, noisy shadow
+    Transform any prompt subject through Treat subjects as believable filmed or broadcast subjects
+    under Early Digital (2000s): casting, wardrobe, props, motion cues, and silhouette hierarchy
+    follow 4. Photography Eras cinematic and broadcast grammar without locking to one plot beat;
+    preserve the requested subject while making it feel captured through the era process: sitter
+    stillness, flash harshness, instant-film intimacy, chemical plate tactility, or early digital
+    sensor behavior, keeping the requested identity, silhouette, action, object function, or setting
+    legible.
+  color_and_tone: >-
+    Build color with Noisy shadows, purple fringing, CCD magenta, muddy chroma; treat color as
+    historical capture chemistry: silver plate, hand-tinted autochrome grain, Kodachrome warmth,
+    Polaroid dyes, disposable flash color, or cyan chemistry, with deliberate value grouping, accent
+    control, and process-specific limits rather than generic color wash.
+  lighting_and_shadow: >-
+    Handle light through Flat, pop-up flash, no dynamic range; make light follow camera limitations
+    through long exposure, flash falloff, lens vignetting, plate reflectance, daylight softness, or
+    early-sensor clipping, so exposure and shadow structure support the media process without
+    overwriting the requested content.
+  texture_and_material: >-
+    Render Jpeg artifacts, compression blocks, color banding; surface detail should reveal plate
+    metal, paper border, dye cloud, film grain, dust, chemical streak, plastic-lens softness,
+    instant emulsion, or sensor noise, keeping artifact scale coherent and avoiding noisy filler
+    texture.
+  camera_and_composition: >-
+    Structure the image through Pixelation, stair-step edge, aliasing jaggies; compose through
+    period camera distance, portrait stillness, casual snapshot crop, square instant frame, pinhole
+    drift, or documentary era framing without requiring period costumes, with frame rhythm, spacing,
+    edge hierarchy, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Y2K, candid, early-upload memory, digital infancy; derive mood from memory,
+    archival strangeness, family snapshot intimacy, laboratory chemistry, nostalgic color, or
+    historical camera patience, letting the media style alter interpretation without demanding a
+    specific story, location, or actor.
+  rendering_and_quality: >-
+    Finish with Low res, nostalgic, 2MP chunky, digital infancy; finish as credible photographic
+    process with controlled grain and exposure artifacts, avoiding fake vintage filter overlays and
+    readable border text, clean denoised surfaces where appropriate, and enough process evidence to
+    make the style recognizable.
+  key_features: >-
+    2 Megapixel camera, Early Digital (2000s) historical camera process, emulsion behavior, lens
+    constraints, print surface, and era-specific exposure artifacts; Low resolution, compression
+    blocks, purple fringing, clipped highlights, noisy shadow; Noisy shadows, purple fringing, CCD
+    magenta, muddy chroma; Jpeg artifacts, compression blocks, color banding; Pixelation, stair-step
+    edge, aliasing jaggies
   creative_brief: >-
-    Apply early-2000s digital-camera limits to any subject: 2MP softness, JPEG compression blocks, stair-step
-    aliasing, purple fringing, noisy shadows, clipped pop-up flash highlights, and muddy CCD chroma. Keep
-    upload-era immediacy without requiring parties, webcams, family snapshots, or dated UI.
+    Apply Early Digital (2000s) as a cinematic-media preset over prompt X: preserve the user's
+    requested subject, then route lens behavior, palette, light, signal or film texture,
+    composition, mood, and final media craft through 2 Megapixel camera, Early Digital (2000s)
+    historical camera process, emulsion behavior, lens constraints, print surface, and era-specific
+    exposure artifacts, Low resolution, compression blocks, purple fringing, clipped highlights,
+    noisy shadow, Jpeg artifacts, compression blocks, color banding without requiring the card
+    image's original subject.
 avoidRules:
   - film grain
+  - official card scene
+  - fixed thumbnail subject
+  - prompt replaced by sample image
+  - readable fake text
+  - watermark
+  - logo clutter
+  - generic stock footage
+  - uncontrolled noise
+  - fake vintage filter
+  - readable border text
+  - modern phone clarity
+  - wrong camera process
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP02-056.webp
 attributes:
-  negativePrompt: film grain
+  negativePrompt: >-
+    film grain, official card scene, fixed thumbnail subject, prompt replaced by sample image,
+    readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, fake
+    vintage filter, readable border text, modern phone clarity, wrong camera process
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media

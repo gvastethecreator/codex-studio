@@ -12,19 +12,48 @@ tags:
   - essential-art-styles
   - digital-art
 visualDna:
-  aesthetic: 3D cubes
-  subject_treatment: Cubes
-  color_and_tone: Vibrant
-  lighting_and_shadow: AO
-  texture_and_material: "Surface treatment follows Voxel Art's material cues: Cubes."
-  camera_and_composition: Blocky
-  atmosphere_and_mood: Cute, digital
-  rendering_and_quality: Voxel-art finish with cube-unit discipline and playful AO depth
-  key_features: Cubes
+  aesthetic: >-
+    Voxel Art acts as a transferable art-medium router: start from 3D cubes and digital art workflow
+    system built from layer control, editable edges, raster or vector logic, screen-era artifacts,
+    and production readability, then apply the medium behavior to prompt X instead of recreating a
+    fixed demo image.
+  subject_treatment: >-
+    Transform any prompt subject through Cubes; preserve the prompt subject while routing it through
+    the preset-specific workflow: brush economy, editable edges, grids, vectors, pixels, facets,
+    glyphs, or compositing only when the preset calls for them, keeping the requested identity,
+    silhouette, pose, object function, or environment legible.
+  color_and_tone: >-
+    Build color with Vibrant; use color as workflow evidence: palette ramps, neon gradients, RGB
+    channel shifts, flat vector fields, concept-art accents, or controlled digital paint harmonies,
+    with deliberate value grouping, accent control, and medium-specific limits rather than generic
+    color wash.
+  lighting_and_shadow: >-
+    Handle light through AO; shape light through layer modes, rim glow, raster gradients, isometric
+    value, screen emission, glitch clipping, or composited photographic consistency, so value
+    structure supports the medium and does not overwrite the requested content.
+  texture_and_material: >-
+    Render Surface treatment follows Voxel Art's material cues: Cubes; surface detail should come
+    from the named workflow: brush texture, pixel cells, glyph density, vector fills, polygon
+    facets, paper layers, or signal artifacts only when they belong to the preset, keeping material
+    scale coherent and avoiding noisy filler texture.
+  camera_and_composition: >-
+    Structure the image through Blocky; compose through digital hierarchy, projection rules, asset
+    readability, editable shape grouping, focal thumbnails, grid logic, or controlled interface-like
+    rhythm, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
+  atmosphere_and_mood: >-
+    Keep the mood Cute, digital; derive mood from speed, polish, concept utility, retro-futurism,
+    broken media, toy-scale clarity, or modern production control, letting the medium alter
+    interpretation without demanding a specific story, location, or character.
+  rendering_and_quality: >-
+    Finish with Voxel art finish with cube unit discipline and playful AO depth; finish with clean
+    digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean
+    denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.
+  key_features: '3D cubes; Vibrant; Surface treatment follows Voxel Art''s material cues: Cubes; Blocky'
   creative_brief: >-
-    Apply voxel-art construction to any input: cubic sampling, repeated block units, stepped curves, crevice
-    ambient occlusion, and toy-like volumetric readability. Keep voxel grammar without requiring Minecraft
-    worlds, terrain, buildings, or game dioramas.
+    Apply Voxel Art as an art-style preset over prompt X: preserve the user's requested subject,
+    then route mark-making, palette, surface, composition, mood, and final craft through 3D cubes,
+    Surface treatment follows Voxel Art's material cues: Cubes without requiring the card image's
+    original subject.
 avoidRules:
   - photo
   - realistic
@@ -44,13 +73,24 @@ avoidRules:
   - Minecraft branding
   - building requirement
   - landscape requirement
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - readable text
+  - random AI smear
+  - muddy overpaint
+  - uncontrolled artifact noise
+  - generic concept slop
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-052.webp
 attributes:
   negativePrompt: >-
-    photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry, deformed, ugly,
-    bad anatomy, watermark, text, signature, frame, border, Minecraft branding, building requirement,
-    landscape requirement
+    photo, realistic, photorealistic, smooth generic 3d render, octane render, noise, blurry,
+    deformed, ugly, bad anatomy, watermark, text, signature, frame, border, Minecraft branding,
+    building requirement, landscape requirement, wrong medium, generic AI gloss, muddy noise,
+    uncontrolled texture chatter, readable text, random AI smear, muddy overpaint, uncontrolled
+    artifact noise, generic concept slop
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

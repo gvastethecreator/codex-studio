@@ -13,37 +13,79 @@ tags:
   - retro-game-visual-systems
 visualDna:
   aesthetic: >-
-    Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4-shade greyscale thermal-printer
-    dot-matrix, tiny Game Boy Printer paper-roll, fisheye lens abstraction, stamp-mode tiling, 1998 handheld
-    photography miracle, thermal-paper fading over time, chiptune-photo-shoot vibe
+    Game Boy Camera Thermal Print acts as a transferable art-medium router: start from Nintendo Game
+    Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4 shade greyscale thermal printer dot
+    matrix, tiny Game Boy Printer paper roll, fisheye lens abstraction, stamp mode tiling, 1998
+    handheld photography miracle, thermal paper fading over time, chiptune photo shoot vibe, 128x112
+    thermal greyscale, Game Boy Camera CMOS grain, thermal printer dot matrix, fisheye lens
+    distortion, stamp mode tiling, 4 shade greyscale only, thermal paper texture and
+    hardware-constrained game-visual system built from display limits, palette budgets, sprite
+    logic, pixel grids, CRT or handheld artifacts, and era-specific charm, then apply the medium
+    behavior to prompt X instead of recreating a fixed demo image.
   subject_treatment: >-
-    128x112 extreme low-resolution, Game Boy Camera CMOS sensor contours, thermal-printer dot-matrix lines,
-    fisheye-lens panorama distortion, stamp-mode tile grid
+    Transform any prompt subject through 128x112 extreme low resolution, Game Boy Camera CMOS sensor
+    contours, thermal printer dot matrix lines, fisheye lens panorama distortion, stamp mode tile
+    grid; preserve the prompt subject while translating it into tile, sprite, vector, glyph, voxel,
+    pre-render, screen-grid, or low-bit display behavior, keeping the requested identity,
+    silhouette, pose, object function, or environment legible.
   color_and_tone: >-
-    4-shade-Game-Boy-greyscale, thermal-dot-white, light-grey, dark-grey, black, paper-white-background,
-    thermal-chemical-blue-when-fresh
+    Build color with 4 shade Game Boy greyscale, thermal dot white, light grey, dark grey, black,
+    paper white support field, thermal chemical blue when fresh; use color through hardware rules:
+    indexed palettes, phosphor glow, four-shade handheld values, dither tricks, copper gradients,
+    limited scanline color, or terminal ANSI sets, with deliberate value grouping, accent control,
+    and medium-specific limits rather than generic color wash.
   lighting_and_shadow: >-
-    CMOS-sensor low-dynamic-range, Game Boy screen display glow, no-flash-available feel, ambient CRT or
-    outdoor light, terrible low-light noise
+    Handle light through CMOS sensor low dynamic range, Game Boy screen display glow, no flash
+    available feel, ambient CRT or outdoor light, terrible low light noise; make light emerge from
+    display technology, pixel value steps, CRT bloom, palette cycling, thermal print contrast, or
+    vector beam brightness, so value structure supports the medium and does not overwrite the
+    requested content.
   texture_and_material: >-
-    Thermal-printer dot-matrix, Game Boy Printer paper-roll texture, fading thermal-print chemical, CMOS
-    sensor noise grain, Game Boy Camera plastic-lens distortion, sticker-print peel backing
+    Render Thermal printer dot matrix, Game Boy Printer paper roll texture, fading thermal print
+    chemical, CMOS sensor noise grain, Game Boy Camera plastic lens distortion, sticker print peel
+    backing; surface detail should show pixels, dithering, scanlines, quantization, vertex wobble,
+    dot matrix, LCD grid, CRT persistence, or paper-print degradation, keeping material scale
+    coherent and avoiding noisy filler texture.
   camera_and_composition: >-
-    Fisheye CMOS lens distortion, 128x112 proportions, stamp-mode tile arrangement, Game Boy Printer
-    paper-roll curling, mini thermal-print scale
+    Structure the image through Fisheye CMOS lens distortion, 128x112 proportions, stamp mode tile
+    arrangement, Game Boy Printer paper roll curling, mini thermal print scale; compose through tile
+    maps, sprite scale, fixed-resolution framing, isometric grids, wireframe coordinate space, UI
+    geometry, or screen-proportion constraints, with scale, spacing, edge rhythm, and visual
+    hierarchy doing the style work.
   atmosphere_and_mood: >-
-    1998-tech wonder, handheld-photo creativity, playful low-fi silliness, thermal-print memory fading, Game
-    Boy peripheral magic
+    Keep the mood 1998 tech wonder, handheld photo creativity, playful low fi silliness, thermal
+    print memory fading, Game Boy peripheral magic; derive mood from hardware limitation, arcade
+    spectacle, handheld intimacy, terminal austerity, console nostalgia, or broken early-3D
+    instability, letting the medium alter interpretation without demanding a specific story,
+    location, or character.
   rendering_and_quality: >-
-    Game-Boy-Camera-photo aesthetic, thermal-printer-dot-art, 128x112-extreme-low-resolution,
-    1998-digital-photography-beauty
+    Finish with Game Boy Camera photo aesthetic, thermal printer dot art, 128x112 extreme low
+    resolution, 1998 digital photography beauty; finish with faithful era constraints, crisp
+    readability at small scale, and no modern high-resolution smoothing unless the preset asks for
+    baked pre-rendering, clean denoised surfaces where appropriate, and enough craft evidence to
+    make the medium recognizable.
   key_features: >-
-    128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal-printer dot-matrix, fisheye-lens
-    distortion, stamp-mode tiling, 4-shade greyscale only, thermal-paper texture
+    Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4 shade greyscale thermal
+    printer dot matrix, tiny Game Boy Printer paper roll, fisheye lens abstraction, stamp mode
+    tiling, 1998 handheld photography miracle, thermal paper fading over time, chiptune photo shoot
+    vibe; 128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal printer dot matrix, fisheye
+    lens distortion, stamp mode tiling, 4 shade greyscale only, thermal paper texture; 4 shade Game
+    Boy greyscale, thermal dot white, light grey, dark grey, black, paper white support field,
+    thermal chemical blue when fresh; Thermal printer dot matrix, Game Boy Printer paper roll
+    texture, fading thermal print chemical, CMOS sensor noise grain, Game Boy Camera plastic lens
+    distortion, sticker print peel backing; Fisheye CMOS lens distortion, 128x112 proportions, stamp
+    mode tile arrangement, Game Boy Printer paper roll curling, mini thermal print scale
   creative_brief: >-
-    A 128x112 CMOS sensor turns any prompt into four shades of thermal grey. Fisheye distortion, dot-matrix
-    printing, stamp tiling and fading paper chemistry make the image feel like handheld photography
-    discovering itself.
+    Apply Game Boy Camera Thermal Print as an art-style preset over prompt X: preserve the user's
+    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
+    through Nintendo Game Boy Camera aesthetic, 128x112 CMOS sensor digital photo, 4 shade greyscale
+    thermal printer dot matrix, tiny Game Boy Printer paper roll, fisheye lens abstraction, stamp
+    mode tiling, 1998 handheld photography miracle, thermal paper fading over time, chiptune photo
+    shoot vibe, 128x112 thermal greyscale, Game Boy Camera CMOS grain, thermal printer dot matrix,
+    fisheye lens distortion, stamp mode tiling, 4 shade greyscale only, thermal paper texture,
+    Thermal printer dot matrix, Game Boy Printer paper roll texture, fading thermal print chemical,
+    CMOS sensor noise grain, Game Boy Camera plastic lens distortion, sticker print peel backing
+    without requiring the card image's original subject.
 avoidRules:
   - smooth
   - HD
@@ -55,10 +97,25 @@ avoidRules:
   - anti-aliased
   - realistic
   - film grain
+  - wrong medium
+  - generic AI gloss
+  - muddy noise
+  - uncontrolled texture chatter
+  - watermark
+  - readable text
+  - signature
+  - modern high-res smoothing
+  - fake readable UI text
+  - generic emulator screenshot
+  - unlimited color render
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-100.webp
 attributes:
-  negativePrompt: smooth, HD, color, gradient, modern, clean, sharp, anti-aliased, realistic, film grain
+  negativePrompt: >-
+    smooth, HD, color, gradient, modern, clean, sharp, anti-aliased, realistic, film grain, wrong
+    medium, generic AI gloss, muddy noise, uncontrolled texture chatter, watermark, readable text,
+    signature, modern high-res smoothing, fake readable UI text, generic emulator screenshot,
+    unlimited color render
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

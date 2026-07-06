@@ -7,659 +7,696 @@ export const GENERATED_STYLE_PRESETS = [
     id: 'SP11-056',
     name: 'Electron Microscope',
     category: '5. Micro Macro',
-    negativePrompt: 'color, far away',
+    negativePrompt:
+      'color, far away, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art',
+        'Electron Microscope operates as a portable source-router layer: combine SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Black and White, monochrome-grey gradient, false-color overlay, tungsten-filament shadow, gold-sputter-coat sheen',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Scanning beam, raster-scan lines, secondary-electron emission, top-down detector, spot-mode shadow',
+        "Use Scanning beam, raster-scan lines, secondary-electron emission, top-down detector, spot-mode shadow plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape background, electron-discharge artifact',
+        'Render Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape distant-plane, electron-discharge artifact plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe',
+        'Compose with Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Scientific, weird, electron-beam silence, nano-frontier, magnification-horizon',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Electron Microscope while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Scientific, tiny, micrograph-journal, resolution-test beauty, lens-astigmatism correction, vacuum-seal cleanliness',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Scale bar, micron-marker, acceleration-voltage label, detector-mode annotation, sputter-coating grain, magnification-readout, charging-artifact bands',
+        'SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art; Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands; Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape distant-plane, electron-discharge artifact; Scanning beam, raster-scan lines, secondary-electron emission, top-down detector, spot-mode shadow; Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe',
       creative_brief:
-        'Present SEM imagery as monochrome micro-topography with scale-bar legibility, sputter-coat artifacts, and beam-scan texture cues. Preserve scientific instrument character while allowing diverse specimen geometries. Apply Electron Microscope as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Electron Microscope after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies SEM scan, electron-micrograph, nano-landscape, sub-micron-world, vacuum-chamber art, Tiny details, micro-sphere contours, crystalline-facet edges, dendrite-branch, nanowire strands, Alien landscape, nanometer-roughness, sputter-coated surface, carbon-tape distant-plane, electron-discharge artifact, Scanning beam, raster-scan lines, secondary-electron emission, top-down detector, spot-mode shadow, Dust looks like boulders, scale-shift vertigo, micro-to-macro confusion, feature-magnification awe plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-057',
     name: 'Insect Eye',
     category: '5. Micro Macro',
-    negativePrompt: 'human eye',
+    negativePrompt:
+      'human eye, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering',
+        'Insect Eye operates as a portable source-router layer: combine Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Iridescent, beetle-spectrum, metallic-green, structural-blue, chitin-rainbow, interference-film',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash',
+        "Use Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen',
+        'Render Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature',
+        'Compose with Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Nature, intense, macro-silence, compound-gaze, arthropod-alert, alien-familiarity',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Insect Eye while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Detailed, alien, micro-four-thirds, insect-vision-portrait, arthropod-beauty, focus-stacking perfection',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Hexagons, ommatidial-lattice, bristle-pores, structural-color-bands, catchlight-hex-array, focal-plane-detail',
+        'Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering; Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses; Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen; Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash; Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature',
       creative_brief:
-        'Focus on compound-eye architecture: ommatidia lattice, structural iridescence, and macro catchlight arrays. Keep insect-scale detail highly resolved and scientifically coherent without tying to one species narrative. Apply Insect Eye as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Insect Eye after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Compound eye macro, insect-vision, ommatidial-array, arthropod-portrait, nature-engineering, Hexagonal grid, ommatidia-honeycomb, dome-curvature, lens-facet edges, bristle-between-lenses, Facet grid, chitin-surface, hexagonal-lens, bristle-insertion, structural-color sheen, Macro flash, ring-light reflection, lens-facet sparkle, ommatidia-catchlight array, diffused-twin-flash, Geometric eye, compound-surface, ommatidia-dome, panoramic-hemisphere, hex-grid-curvature plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-058',
     name: 'Cellular Life',
     category: '5. Micro Macro',
-    negativePrompt: 'animal',
+    negativePrompt:
+      'animal, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Biology textbook, microscope-slide, cellular-anatomy, histology-stain, inner-body-universe',
+        'Cellular Life operates as a portable source-router layer: combine Biology textbook, microscope-slide, cellular-anatomy, histology-stain, inner-body-universe with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Pink, Purple stain, hematoxylin-blue, eosin-pink, mitochondria-glow, golgi-ribbon, sudan-orange',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow',
+        "Use Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression, staining-granule',
+        'Render Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression, staining-granule plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity',
+        'Compose with Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Life, science, lab-bench quiet, cellular-metabolism, inner-space awe, microbiological wonder',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Cellular Life while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Medical, tiny, histology-atlas, cellular-detail, pathology-lab, hematoxylin-eosin beauty',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Nucleus, nucleolus-dot, mitochondria-squiggle, vacuole-clear, cell-membrane edge, staining-artifact, scale-micron-bar',
+        'Biology textbook, microscope-slide, cellular-anatomy, histology-stain, inner-body-universe; Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope; Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression, staining-granule; Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow; Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity',
       creative_brief:
-        'Render cellular life as structured histology with stain-coded compartments, membrane boundaries, and organelle clustering. Preserve microscope-slide readability and educational clarity while remaining adaptable across cell types. Apply Cellular Life as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Cellular Life after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Biology textbook, microscope-slide, cellular-anatomy, histology-stain, inner-body-universe, Membrane walls, phospholipid-bilayer contour, organelle-circles, cilia-fringe, nuclear-envelope, Jelly, nucleus, cytoplasm-grain, vacuole-bubble, organelle-speckle, cover-slip compression, staining-granule, Microscope light, condenser-brightfield, phase-contrast halo, fluorescence-excitation, oil-immersion glow, Blobs, amoeboid-shapes, pseudopod-extension, organelle-displacement, nuclear-eccentricity plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-059',
     name: 'Snowflake',
     category: '5. Micro Macro',
-    negativePrompt: 'melted',
+    negativePrompt:
+      'melted, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture',
+        'Snowflake operates as a portable source-router layer: combine Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Clear, Blue background, ice-spectrum, prism-rainbow, hoar-frost white, birefringence-color, dark-field sapphire',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring',
+        "Use Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit',
+        'Render Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal',
+        'Compose with Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Winter, beauty, falling-snow silence, crystal-uniqueness, frozen-moment, microscopic-wonder',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Snowflake while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Perfect, fragile, Wilson-Bentley devotion, snowflake-photomicrograph, crystalline-geometry, winter-laboratory',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Six arms, dendritic-branching, hexagonal symmetry, plate-crystal, rime-droplet capture, dark-field glow, melt-edge rounding',
+        'Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture; Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension; Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit; Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring; Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal',
       creative_brief:
-        'Highlight six-fold crystal symmetry, dendritic branching, and dark-field sparkle in fragile snowflake macro compositions. Keep the treatment scientifically grounded in ice morphology while flexible across crystal variants. Apply Snowflake as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Snowflake after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Ice crystal macro, frozen-star, winter-hexagon, snowflake-photography, dendrite-sculpture, Fractal symmetry, six-fold-branching, fern-dendrite, plate-plane, needle-spike extension, Ice crystal, hexagonal-plate, dendrite-branch, rime-coating, surface-etch, melt-rounding, sublimation-pit, Sparkle, dark-field, refracted-rainbow spot, prism-split beam, supermacro-LED ring, Symmetrical, six-fold-rotation, hexagonal-plate, stellar-dendrite arm, capped-column crystal plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-060',
     name: 'Circuit Board',
     category: '5. Micro Macro',
-    negativePrompt: 'organic',
+    negativePrompt:
+      'organic, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'CPU die shot, silicon-city, wafer-art, integrated-circuit landscape, chip-fab photography',
+        'Circuit Board operates as a portable source-router layer: combine CPU die shot, silicon-urban-system, wafer-art, integrated-circuit landscape, chip-fab photography with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Green, Gold, Silicon, copper-interconnect orange, solder-mask green, gold-bond-wire, silicon-substrate grey, immersion-tin silver',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection',
+        "Use Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold',
+        'Render Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'City-like, macro-block placement, logic-cell grid, routing-congestion channel, floor-plan region',
+        'Compose with urban-system-like, macro-block placement, logic-cell grid, routing-congestion channel, floor-plan region plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Digital, logic, clean-room silence, wafer-fab precision, clock-tree rhythm, silicon-dream',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Circuit Board while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        "Tech, complex, silicon-engineering, Moore's-law beauty, nanometer-design, EDA-art",
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Chips, bond-pads, via-arrays, logic-cell rows, SRAM-block, metal-layer stack, die-mark text, test-structure, corner-fiducial',
+        'CPU die shot, silicon-urban-system, wafer-art, integrated-circuit landscape, chip-fab photography; Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway; Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold; Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection; urban-system-like, macro-block placement, logic-cell grid, routing-congestion channel, floor-plan region',
       creative_brief:
-        'Treat circuit surfaces as engineered micro-landscapes: trace routing logic, via arrays, and metallic layer hierarchy should stay explicit. Emphasize clean-room precision and component-scale structure without overfitting to one chip architecture. Apply Circuit Board as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Circuit Board after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies CPU die shot, silicon-urban-system, wafer-art, integrated-circuit landscape, chip-fab photography, Traces, paths, Manhattan-routing, 45-degree diagonal, via-grid, interconnect-highway, Silicon, solder, polysilicon gate, metal-interconnect stack, passivation-layer glaze, probe-mark indent, bond-pad gold, Flat metallic, die-shot macro, ring-light, wafer-inspection, solder-mask reflection, urban-system-like, macro-block placement, logic-cell grid, routing-congestion channel, floor-plan region plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-061',
     name: 'Water Drop Reflection',
     category: '5. Micro Macro',
-    negativePrompt: 'dry',
+    negativePrompt:
+      'dry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic',
+      aesthetic:
+        'Water Drop Reflection operates as a portable source-router layer: combine Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Clear, prismatic-dispersion, rainbow-caustic, inverted-scene spectrum, bokeh-chromatic',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight',
+        "Use Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss',
+        'Render Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization',
-      atmosphere_and_mood: 'Calm, focus, macro-meditation, rain-pause, single-drop universe',
+        'Compose with Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
+      atmosphere_and_mood:
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Water Drop Reflection while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Physics, beauty, droplet-lens, refraction-magic, macro-patience, liquid-optics',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Reflection, refracted-upside-down image, bokeh-background, contact-line, specular-highlight, chromatic-aberration fringing, surface-tension curvature',
+        'Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic; Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet; Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss; Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight; Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization',
       creative_brief:
-        'Compose liquid-lens macro imagery around spherical droplets, inverted refractive interiors, and precise contact-line behavior. Prioritize optical clarity and tension-driven curvature without fixing the style to one surface or setting.',
+        'Use Water Drop Reflection after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Refraction in drop, lens-drop, optical-sphere, rain-jewel, surface-tension optic, Perfect sphere, meniscus-contact curve, capillary-bridge, pendant-drop, sessile-droplet, Surface tension, liquid-skin, glycerin-viscosity, water-bead elasticity, contact-angle gloss, Lens effect, backlit-refraction, macro-spot, dark-field sparkle, ring-flash catchlight, Inverted image inside, upside-down-world, refractive-compression, lens-barrel distortion, focal-miniaturization plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-062',
     name: 'Fiber/Fabric Macro',
     category: '5. Micro Macro',
-    negativePrompt: 'smooth',
+    negativePrompt:
+      'smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape',
+        'Fiber/Fabric Macro operates as a portable source-router layer: combine Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Thread color, indigo-denim, linen-natural, wool-heathered, silk-ivory, yarn-dyed spectrum',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow',
+        "Use Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts',
+        'Render Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v',
+        'Compose with Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Cozy, close, fabric-store, textile-tradition, thread-history, warp-weighted loom',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Fiber/Fabric Macro while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Tactile, soft, textile-grid, weave-architecture, close-look, fiber-beauty',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Threads, warp-weft intersection, fiber-halo fuzz, pilling-balls, weave-structure, knit-stitch, selvage-edge',
+        'Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape; Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end; Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts; Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow; Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v',
       creative_brief:
-        'Build textile macro studies from visible warp-weft architecture, ply twist detail, and raking-light fiber halo. Keep tactile weave logic central so the style applies across fabrics, garments, and material studies. Apply Fiber/Fabric Macro as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Fiber/Fabric Macro after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Thread zoom, textile-macro, fabric-architecture, weaver-close-up, cloth-landscape, Individual fibers, twist-ply helix, warp-weft grid, filament-strand, staple-fiber end, Fuzzy, cotton-fiber, wool-crimp, silk-filament smoothness, microfiber-split, pilling-balls, staple-end tufts, Soft, raking-light across weave, thread-sheen catch, flat-diffuse, fiber-shadow, Weave pattern, plain-weave grid, twill-diagonal, satin-float, knit-loop, stitch-v plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-063',
     name: 'Rust/Decay Macro',
     category: '5. Micro Macro',
-    negativePrompt: 'clean, eye, iris, pupil, lens',
+    negativePrompt:
+      'clean, eye, iris, pupil, lens, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty',
+      aesthetic:
+        'Rust/Decay Macro operates as a portable source-router layer: combine Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Orange, Brown, iron-oxide spectrum, verdigris-green, zinc-white bloom, crust-brown, patina-teal',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun',
+        "Use Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder',
+        'Render Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau',
+        'Compose with Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Old, textured, shipwreck-quiet, abandoned-corner, time-eats-everything, beautiful-decay',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Rust/Decay Macro while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Texture, time, weathered-beauty, entropy-aesthetic, abandoned-place, wabi-sabi',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Flakes, paint-blister domes, oxide-stalactite drip, rust-bleed staining, crack-propagation network, peeling-edge curls, bubbled-paint texture',
+        'Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty; Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers; Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder; Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun; Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau',
       creative_brief:
-        'Emphasize corrosion aesthetics through oxide blooms, paint blistering, and layered substrate exposure under grazing light. Keep entropy, patina, and material aging as reusable style anchors across industrial surfaces.',
+        'Use Rust/Decay Macro after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Corrosion zoom, oxidation-portrait, time-texture, rust-patina, wreck-beauty, Flaking paint, paint-blister edges, rust-bubbling contour, crack-propagation fractal, peeling-layers, Oxidation, bumps, iron-oxide crust, flaking-paint platelets, pitted-steel, efflorescence-crystal, patina-powder, Rough, raking-side-light, texture-reveal shadow, overcast-diffusion, afternoon-grazing sun, Cracks, paint-blister domes, oxide-blister eruption, corrosion-front boundary, peeling-plateau plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-064',
     name: 'Iris/Eye Macro',
     category: '5. Micro Macro',
-    negativePrompt: 'skin',
+    negativePrompt:
+      'skin, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape',
+      aesthetic:
+        'Iris/Eye Macro operates as a portable source-router layer: combine Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Blue/Green/Brown, amber-hazel, grey-steel, heterochromia, central-heterochromia gold, iris-texture spectrum',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow',
+        "Use Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade',
+        'Render Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve',
+        'Compose with Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Personal, deep, eye-contact stillness, window-to-soul, iris-garden, blink-moment',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Iris/Eye Macro while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Intense, soul, iris-photography, eye-contact-intimacy, macro-eye-portrait, cornea-reflection perfect',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Pupil, iris-striae rays, corneal-catch-light, limbal-dark-ring, collarette-frill, iris-crypt pattern, conjunctiva-vessels, lacrimal-caruncle',
+        'Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape; Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone; Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade; Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow; Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve',
       creative_brief:
-        'Render eye macro portraits with strong iris-striae definition, limbal contrast, and controlled corneal catchlights. Maintain anatomical fidelity and intimate scale while avoiding portrait-specific narrative constraints. Apply Iris/Eye Macro as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Iris/Eye Macro after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Human eye zoom, iris-portrait, soul-window, ophthalmology-art, corneal-landscape, Muscle fibers, radial-iris striae, collarette-ridge, limbal-ring, pupillary-zone, Wet, fibrous, tear-film gloss, corneal-transparency, iris-crypt texture, limbal-palisade, Ring light reflection, corneal-catch-light, iris-backlight, catch-light-dot, ophthalmoscope-glow, Pupil hole, aperture-center, iris-diaphragm, depth-of-field fade, corneal-curve plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-065',
     name: 'Soap Bubble',
     category: '5. Micro Macro',
-    negativePrompt: 'popped',
+    negativePrompt:
+      'popped, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence',
+        'Soap Bubble operates as a portable source-router layer: combine Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Rainbow iridescent, thin-film spectrum, magenta-cyan-yellow, soap-film pastel, interference-order colors',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Reflection, dark-background, specular-catch, diffuse-overhead, ring-light iridescence',
+        "Use Reflection, dark-distant-plane, specular-catch, diffuse-overhead, ring-light iridescence plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer',
+        'Render Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature',
+        'Compose with Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Dreamy, fleeting, pop-second, bubble-bath quiet, childhood-wonder, vanishing-beauty',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Soap Bubble while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Fragile, colorful, bubble-poetry, interference-physics, iridescent-beauty, floating-second',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Rainbow swirl, interference-bands, black-film spot, thickness-gradient, specular-highlight, pop-edge retreat, background-reflection warp',
+        'Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence; Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl; Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer; Reflection, dark-distant-plane, specular-catch, diffuse-overhead, ring-light iridescence; Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature',
       creative_brief:
-        'Prioritize thin-film interference physics with nanometric color bands, convective swirls, and fragile spherical membrane behavior. Keep iridescent transience and optical delicacy as portable style traits. Apply Soap Bubble as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Soap Bubble after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Oil slick surface, soap-film, interference-color, floating-sphere, ephemeral-iridescence, Swirling colors, interference-band contours, film-flow layers, gravity-flow, convective-whorl, Thin film liquid, soap-membrane, glycerin-viscosity, fluid-dynamics surface, micelle-layer, Reflection, dark-distant-plane, specular-catch, diffuse-overhead, ring-light iridescence, Sphere, curvature-distortion, reflection-bulge, horizon-warp, fisheye-miniature plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-067',
     name: 'Feather Macro',
     category: '5. Micro Macro',
-    negativePrompt: 'blurry',
+    negativePrompt:
+      'blurry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather',
+        'Feather Macro operates as a portable source-router layer: combine Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Iridescent, peacock-structural, hummingbird-metallic, macaw-spectrum, melanin-earth, carotenoid-bright',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead',
+        "Use Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil',
-      camera_and_composition: 'Natural-contour, feather-curve, vane-width taper, rachis-diameter',
+        'Render Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+      camera_and_composition:
+        'Compose with Natural-contour, feather-curve, vane-width taper, rachis-diameter plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Soft, natural, bird-flight silence, molting-gift, feather-collector, avian-intimacy',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Feather Macro while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Nature, detailed, ornithology-close-up, feather-microstructure, barb-by-barb, structural-color marvel',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Structure, barbule-hook detail, rachis-groove, iridescent-color shift, vane-gap, afterfeather, calamus-base',
+        'Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather; Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array; Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil; Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead; Natural-contour, feather-curve, vane-width taper, rachis-diameter',
       creative_brief:
-        'Highlight feather micro-architecture through rachis structure, barb-barbule interlock, and angle-dependent iridescence. Preserve avian aerodynamic logic and keratin texture detail in a broadly reusable macro style.',
+        'Use Feather Macro after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Bird feather zoom, plumage-detail, avian-architecture, flight-surface, contour-feather, Barbs and hooks, barbule-branch contour, rachis-spine line, vane-plane, pennaceous-array, Velcro-like, micro-barbicel hook, keratin-surface, barbule-zipper, plumulaceous-fluff, feather-oil, Soft sheen, directional-grazing light, barbule-catch, low-angle gloss, diffused-overhead, Natural-contour, feather-curve, vane-width taper, rachis-diameter plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-068',
     name: 'Leaf Veins',
     category: '5. Micro Macro',
-    negativePrompt: 'dead',
+    negativePrompt:
+      'dead, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany',
+        'Leaf Veins operates as a portable source-router layer: combine Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Chlorophyll Green, carotenoid-orange, xanthophyll-yellow, autumn-red, variegation-cream, mesophyll-translucency',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Translucent, backlit-through-leaf, sun-behind-canopy, chlorophyll-glow, diffused-morning',
+        "Use Translucent, backlit-through-leaf, sun-layered around-canopy, chlorophyll-glow, diffused-morning plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs',
-      camera_and_composition: 'Leaf-plane, blade-expansion, lobe-geometry, venation-pattern',
+        'Render Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+      camera_and_composition:
+        'Compose with Leaf-plane, blade-expansion, lobe-geometry, venation-pattern plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Fresh, organic, forest-floor quiet, photosynthesis-magic, chloroplast-glow, green-life',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Leaf Veins while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Life, nature, photosynthesis-revealed, leaf-anatomy, pixel-leaf, botanical-illustration',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Veins, midrib-center, secondary-vein, areole-polygon, stomata-pores, margin-edge, backlit-translucency',
+        'Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany; Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration; Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs; Translucent, backlit-through-leaf, sun-layered around-canopy, chlorophyll-glow, diffused-morning; Leaf-plane, blade-expansion, lobe-geometry, venation-pattern',
       creative_brief:
-        'Frame leaves as translucent vascular maps: midrib hierarchy, venation branching, and chlorophyll-rich backlight are core. Keep the style botanical, structural, and adaptable across species and seasonal palettes. Apply Leaf Veins as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Leaf Veins after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Backlit leaf, chloroplast-window, vein-map, photosynthesis-architecture, leaf-botany, Vein network, midrib-spine, secondary-vein branching, areole-polygon mesh, margin-serration, Plant cells, epidermal-layer, stomata-pores, cuticle-wax, mesophyll-spongy, vein-scaffold, trichome-hairs, Translucent, backlit-through-leaf, sun-layered around-canopy, chlorophyll-glow, diffused-morning, Leaf-plane, blade-expansion, lobe-geometry, venation-pattern plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-069',
     name: 'Skin Pores',
     category: '5. Micro Macro',
-    negativePrompt: 'smooth plastic',
+    negativePrompt:
+      'smooth plastic, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography',
+        'Skin Pores operates as a portable source-router layer: combine Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        "Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge",
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Skin tone, melanin-spectrum, Fitzpatrick-scale, undertone-warm, undertone-cool, capillary-blush',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat',
+        "Use Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale',
-      camera_and_composition: 'Natural-contour, dermatoglyphic-pattern, skin-tension line',
+        'Render Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+      camera_and_composition:
+        'Compose with Natural-contour, dermatoglyphic-pattern, skin-tension line plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Raw, real, mirror-close, skin-acceptance, dermatology-office, self-examination',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Skin Pores while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Hyperreal, human, macro-skin, dermatoscope-detail, epidermal-intimacy, skin-barrier architecture',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Texture, pore-opening, hair-follicle, fingerprint-ridge, vellus-hair shaft, sebaceous-filament, desquamation-flake, sulcus-cutis groove',
+        "Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography; Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge; Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale; Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat; Natural-contour, dermatoglyphic-pattern, skin-tension line",
       creative_brief:
-        'Build dermatology macro studies from pore topology, vellus hair presence, and subtle microrelief across skin tension lines. Preserve realistic epidermal variation and clinical honesty without locking into a specific person or body zone. Apply Skin Pores as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        "Use Skin Pores after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Dermatology zoom, skin-terrain, pore-landscape, human-surface, epidermal-topography, Micro wrinkles, Langer's-line contours, sulcus-cutis furrow, crista-cutis ridge, fingerprint-ridge, Pores, hair, vellus-hair, sebaceous-filament, stratum-corneum flake, sweat-gland duct, desquamation-scale, Soft scattering, epidermal-diffusion, subsurface-scatter, cross-polarized, ring-light-flat, Natural-contour, dermatoglyphic-pattern, skin-tension line plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.",
     },
   },
   {
     id: 'SP11-070',
     name: 'Ink in Water',
     category: '5. Micro Macro',
-    negativePrompt: 'still',
+    negativePrompt:
+      'still, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art',
+      aesthetic:
+        'Ink in Water operates as a portable source-router layer: combine Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Black/Color ink, ink-spectrum, dye-gradient, water-dilution pastels, pigment-sediment, alcohol-ink vibrancy',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Backlit, through-tank diffusion, volumetric-glow, dark-field, spotlight-beam',
+        "Use Backlit, through-tank diffusion, volumetric-glow, dark-field, spotlight-beam plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Fluid smoke, ink-plume, dye-stratification, particle-suspension, density-layer, micro-current grain',
+        'Render Fluid smoke, ink-plume, dye-stratification, particle-suspension, density-layer, micro-current grain plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge',
+        'Compose with Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Artistic, flow, fluid-dynamics peace, ink-drop meditation, underwater-weather',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Ink in Water while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Abstract, motion, slow-motion-fluid, smoke-photography, liquid-sculpture, ink-in-water magic',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Smoke shape, ink-tendril, mushroom-cap, vortex-ring, dye-gradient, backlit-glow, turbulence-texture',
+        'Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art; Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons; Fluid smoke, ink-plume, dye-stratification, particle-suspension, density-layer, micro-current grain; Backlit, through-tank diffusion, volumetric-glow, dark-field, spotlight-beam; Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge',
       creative_brief:
-        'Emphasize fluid-dynamics choreography with plume morphology, tendril vortices, and diffusion gradients suspended in clear liquid volume. Keep the abstraction kinetic and physically grounded, independent of one tank setup. Apply Ink in Water as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Ink in Water after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Cloud tank, ink-diffusion, fluid-sculpture, dye-dance, aqueous-art, Swirls, mushroom-cloud, vortex-sheet, tendril-curls, turbulence-eddy, laminar-flow ribbons, Fluid smoke, ink-plume, dye-stratification, particle-suspension, density-layer, micro-current grain, Backlit, through-tank diffusion, volumetric-glow, dark-field, spotlight-beam, Dissolving, dispersion-front, plume-expansion, diffusion-gradient, dissipating-edge plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-071',
     name: 'Fungi/Mold',
     category: '5. Micro Macro',
-    negativePrompt: 'clean',
+    negativePrompt:
+      'clean, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture',
+      aesthetic:
+        'Fungi/Mold operates as a portable source-router layer: combine Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'White, Green, Blue, sporulation-spectrum, conidia-ochre, penicillin-mint, aspergillus-charcoal, fusarium-rose',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-laboratory',
+        "Use Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-analysis-space plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation',
+        'Render Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin',
+        'Compose with Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Biological, decay, lab-incubator warmth, agar-dawn, invisible-kingdom, decomposition-cycle',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Fungi/Mold while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Gross, fascinating, microbiology-aesthetic, petri-dish-art, contamination-beauty',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Spores, colony-margin, aerial-hyphae, conidia-powder, petri-dish-lid, inhibition-zone, contamination-sector, sporulation-color',
+        'Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture; Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk; Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation; Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-analysis-space; Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin',
       creative_brief:
-        'Compose fungal macro studies with colony-margin behavior, aerial hyphae texture, and sporulation color zoning over agar-like substrates. Keep the aesthetic biologically rich and adaptable across mold and mycology specimens. Apply Fungi/Mold as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Fungi/Mold after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Petri dish, mycology-lab, mold-colony, fungal-garden, agar-culture, Fuzzy growth, hyphal-fringe, colony-circular, radial-extension, sporangiophore-stalk, Fuzzy, spores, aerial-mycelium, powdery-conidia, slimy-yeast, agar-surface, colony-elevation, Macro, ring-light, petri-dish reflection, agar-surface gloss, top-down-analysis-space, Growth rings, colony-concentric, inhibition-zone, sporulation-halo, colony-margin plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-072',
     name: 'Crystal Growth',
     category: '5. Micro Macro',
-    negativePrompt: 'round',
+    negativePrompt:
+      'round, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Chemical garden, crystal-lab, mineral-precipitation, geode-formation, silica-garden',
+        'Crystal Growth operates as a portable source-router layer: combine Chemical garden, crystal-lab, mineral-precipitation, geode-formation, silica-garden with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Vibrant chemical colors, copper-sulfate blue, chrome-alum purple, ferric-oxide rust, nickel-nitrate emerald, manganese-pink',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Internal reflection, facet-sparkle, dark-field, polarizing-filter, birefringence-rainbow',
+        "Use Internal reflection, facet-sparkle, dark-field, polarizing-filter, birefringence-rainbow plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Glassy, sharp, crystal-facet, conchoidal-fracture, vitreous-luster, cleavage-plane, growth- terrace',
+        'Render Glassy, sharp, crystal-facet, conchoidal-fracture, vitreous-luster, cleavage-plane, growth- terrace plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate',
+        'Compose with Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Sharp, growing, crystallization-quiet, mineral-time, supersaturated-magic, geological-patience',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Crystal Growth while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Geology, chemistry, crystal-growing, microscope-mineral, lab-grown-gem, facet-perfection',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Facets, crystal-termination, growth-terrace, cleavage-plane, acicular-spike, drusy-crust, geode-cavity, birefringence-color',
+        'Chemical garden, crystal-lab, mineral-precipitation, geode-formation, silica-garden; Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid; Glassy, sharp, crystal-facet, conchoidal-fracture, vitreous-luster, cleavage-plane, growth- terrace; Internal reflection, facet-sparkle, dark-field, polarizing-filter, birefringence-rainbow; Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate',
       creative_brief:
-        'Emphasize crystallization geometry through facet planes, growth terraces, and supersaturation-driven morphology shifts. Preserve lab-mineral precision and color-chemical identity while keeping compositions open-ended. Apply Crystal Growth as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Crystal Growth after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Chemical garden, crystal-lab, mineral-precipitation, geode-formation, silica-garden, Sharp geometric edges, crystal-facet planes, acicular-needles, dendrite-spikes, trigonal-pyramid, Glassy, sharp, crystal-facet, conchoidal-fracture, vitreous-luster, cleavage-plane, growth- terrace, Internal reflection, facet-sparkle, dark-field, polarizing-filter, birefringence-rainbow, Spikes, acicular-cluster, drusy-surface, needle-point, geode-cavity, radial-aggregate plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-073',
     name: 'Vinyl Record Grooves',
     category: '5. Micro Macro',
-    negativePrompt: 'smooth',
+    negativePrompt:
+      'smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface',
+      aesthetic:
+        'Vinyl Record Grooves operates as a portable source-router layer: combine Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Black plastic, vinyl-carbon, groove-shadow grey, stylus-wear silver, dust-speckle white',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection',
+        "Use Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle',
+        'Render Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove',
+        'Compose with Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Music, tech, needle-drop quiet, vinyl-warmth, listening-room, hi-fi reverence',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Vinyl Record Grooves while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Audio, physical, turntable-macro, analog-ritual, sound-carved-in-plastic',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Grooves, spiral-lead-in, modulation-wiggle, dust-particle, stylus-reflection, lock-groove-circle, label-edge, pressing-plant matrix number',
+        'Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface; Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral; Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle; Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection; Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove',
       creative_brief:
-        'Build analog-audio macro imagery around groove modulation, spiral geometry, and dust-on-PVC microtexture. Keep tactile hi-fi character and waveform-in-material readability as reusable visual anchors.',
+        'Use Vinyl Record Grooves after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Microscope record, groove-landscape, vinyl-macro, analog-waveform, LP-surface, Parallel waves, groove-modulation, lateral-cut curve, silent-groove spacing, lead-in-spiral, Dust, plastic, PVC-surface, groove-wall, anti-static-brush residue, pressing-flash, static-cling particle, Highlight along groove, grazing-incidence, vinyl-sheen, dark-field groove, stylus-reflection, Wavy lines, groove-spiral, modulation-wiggle, lead-in-arc, run-out-lock-groove plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-074',
     name: 'Velcro',
     category: '5. Micro Macro',
-    negativePrompt: 'smooth',
+    negativePrompt:
+      'smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology',
+        'Velcro operates as a portable source-router layer: combine Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Black/White, nylon-spectrum, hook-base color, loop-color contrast, industrial-grey, neon-accent',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock',
+        "Use Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back',
+        'Render Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth',
+        'Compose with Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Functional, close, design-cleverness, burdock-inspiration, Swiss-engineer wonder',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Velcro while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Industrial, texture, hook-and-loop engineering, biomimetic-design, fastener-science',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Hooks, mushroom-cap tips, loop-pile, interlock-point, woven-backing, hook-shank, adhesive-layer, edge-trim',
+        'Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology; Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface; Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back; Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock; Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth',
       creative_brief:
-        'Focus on hook-and-loop mechanics with visible interlock points, nylon pile density, and micro-scale engagement geometry. Preserve biomimetic engineering character while keeping subject framing flexible. Apply Velcro as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Velcro after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Hooks and loops, fastener-macro, textile-engineering, velcro-close-up, grip-technology, Plastic hooks, mushroom-cap shapes, loop-pile tufts, hook-shank curvature, interlocking-interface, Plastic loops, nylon-monofilament, woven-backing, hook-mushroom tip, loop-pile density, adhesive-back, Macro, ring-flash, side-raking for hook-shape, loop-pile diffusion, shadow-depth for interlock, Tangling, engaged-hook-loop, separation-gap, pile-compression, hook-penetration depth plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-075',
     name: 'Sponge',
     category: '5. Micro Macro',
-    negativePrompt: 'solid',
+    negativePrompt:
+      'solid, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Kitchen sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface',
+        'Sponge operates as a portable source-router layer: combine service-space sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Yellow, Pink, cleaning-spectrum, scrubber-green, dish-blue, foam-pastels, cellulose-tan',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut',
+        "Use Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight',
+        'Render Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane',
+        'Compose with Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Clean, soft, kitchen-sink quiet, dish-duty, cleaning-ritual, water-warm',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Sponge while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Absorbent, texture, cleaning-tool macro, kitchen-necessity, pore-architecture',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Pores, cell-windows, strut-network, scrub-layer, water-bead, soap-bubble residue, cellulose-fiber, abrasive-grit surface',
+        'service-space sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface; Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry; Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight; Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut; Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane',
       creative_brief:
-        'Render porous sponge material through open-cell networks, strut lattices, and moisture-retention microphysics. Keep absorbency-driven structure and tactile cleanliness cues reusable across foam-like subjects.',
+        'Use Sponge after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies service-space sponge zoom, foam-cell, open-cell-structure, absorbent-micro, cleaning-surface, Holes, bubbles, strut-network contours, cell-window edges, pore-space geometry, Porous foam, open-cell polyurethane, cellulose-sponge fiber, abrasive-scrub layer, water-saturated weight, Soft, macro-diffused, shadow-in-pores, cell-depth contrast, flat-reflective on strut, Holes, pore-size distribution, cell-connectivity, strut-thickness variation, surface-membrane plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-076',
     name: 'Moss',
     category: '5. Micro Macro',
-    negativePrompt: 'dry',
+    negativePrompt:
+      'dry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest',
+        'Moss operates as a portable source-router layer: combine Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Green, emerald-spectrum, moss-velvet, sporophyte-ochre, spring-moss bright, shadow-moss deep, dewdrop-crystal',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground',
+        "Use Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain',
+        'Render Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound',
+        'Compose with Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Quiet, tiny, moss-forest silence, dewdrop-morning, miniature-continent, ground-level peace',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Moss while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Nature, soft, forest-floor macro, bryophyte-world, moss-garden, ground-cover beauty',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Greenery, phyllid-leaflets, sporophyte-capsule, dewdrop-bead, rhizoid-felt, soil-particle, detritus, capsule-teeth peristome',
+        'Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest; Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement; Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain; Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground; Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound',
       creative_brief:
-        'Emphasize bryophyte micro-landscapes with dense phyllid texture, dew-lens highlights, and sporophyte accents over soft terrain. Preserve miniature-forest atmosphere without fixing a specific outdoor setting.',
+        'Use Moss after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Forest floor zoom, moss-carpet, bryophyte-macro, soft-ground-cover, miniature-forest, Tiny leaves, phyllid-spiral, gametophyte-shoot, sporophyte-stalk, leaflet-arrangement, Velvet plant, leaflet-surface, rhizoid-felt, capsule-sporangium, water-film, soil-particle, detritus-grain, Dappled, canopy-shaft, diffused-understory, leaf-filtered, dewdrop-sparkle, morning-ground, Carpet, ground-cover continuity, terrain-following, rock-contour, hummock-mound plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-077',
     name: 'Sandpaper',
     category: '5. Micro Macro',
-    negativePrompt: 'smooth',
+    negativePrompt:
+      'smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
-      aesthetic: 'Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material',
+      aesthetic:
+        'Sandpaper operates as a portable source-router layer: combine Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Brown, Black grit, aluminum-oxide grey, silicon-carbide metallic, garnet-red, ceramic-white',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection',
+        "Use Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust',
-      camera_and_composition: 'Flat-sheet, grit-density, particle-projection, backing-plane',
+        'Render Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+      camera_and_composition:
+        'Compose with Flat-sheet, grit-density, particle-projection, backing-plane plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Harsh, work, workshop-silence, sanding-dust, tool-bench, abrasive-patience',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Sandpaper while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Industrial, rough, workshop-macro, grit-grade, sanding-precision, surface-prep',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Grit, abrasive-grain, particle-size, bond-resin, grit-fracture, dust-clog, backer-paper edge, sanding-direction scratch',
+        'Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material; Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices; Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust; Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection; Flat-sheet, grit-density, particle-projection, backing-plane',
       creative_brief:
-        'Build abrasive-surface studies from angular grit morphology, resin bonding topology, and directional scratch evidence. Keep workshop material realism and roughness-grade readability as primary style drivers. Apply Sandpaper as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Sandpaper after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Grit zoom, abrasive-surface, workshop-texture, grit-topography, sanding-material, Rough rocks, angular-grain contours, fractured-edges, irregular-particle shapes, bonding-resin crevices, Rough, abrasive, sharp-particle, bonding-resin, graded-grit size, backer-paper, clogged-dust, Sparkle on grit, raking-grazing light, particle-shadow, resin-gloss catch, point-source reflection, Flat-sheet, grit-density, particle-projection, backing-plane plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-078',
     name: 'Cork',
     category: '5. Micro Macro',
-    negativePrompt: 'smooth',
+    negativePrompt:
+      'smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition',
+        'Cork operates as a portable source-router layer: combine Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Tan, Brown, cork-bark spectrum, wine-stain magenta, burnt-brand, aged-patina amber, suberin-wax cream',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight',
+        "Use Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck impression',
+        'Render Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck impression plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix',
+        'Compose with Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Rustic, dry, wine-bottle quiet, cork-pop anticipation, cellar-coolness, natural-craft',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Cork while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Natural, dry, bottle-closure, wine-cellar macro, bark-harvest craft, sustainable-texture',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Texture, lenticel-pores, cellular-structure, wine-stain, bottle-neck imprint, cork-brand, extraction-spiral, suberin-wax sheen',
+        'Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition; Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section; Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck impression; Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight; Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix',
       creative_brief:
-        'Highlight cork as breathable bark-engineered material with lenticel channels, elastic cellular compression, and matte natural grain. Preserve wine-closure heritage cues while keeping applications broader than a single bottle moment. Apply Cork as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Cork after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Wine cork zoom, bottle-stopper, bark-product, Quercus-suber, compressed-tradition, Wood cells, prismatic-cell contours, lenticel-pores, radial-section, tangential-section, Compressed wood, suberin-cellular, lenticel-tube, elastic-recovery, pressed-granule, stopper-cylinder, bottle-neck impression, Matte, shadow-in-pores, low-angle-texture, soft-diffuse, natural-daylight, Holes, lenticel-cylinder, cell-honeycomb, stopper-cylinder curve, extraction-helix plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-079',
     name: 'Carbon Fiber',
     category: '5. Micro Macro',
-    negativePrompt: 'metal',
+    negativePrompt:
+      'metal, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure',
+        'Carbon Fiber operates as a portable source-router layer: combine Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'Black, Grey, PAN-carbon, pitch-fiber dark, oxidized-surface, resin-matrix amber, intermediate-modulus sheen',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer',
+        "Use Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp',
-      camera_and_composition: 'Flat-laminate, weave-repeat, tow-orientation, ply-stack',
+        'Render Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
+      camera_and_composition:
+        'Compose with Flat-laminate, weave-repeat, tow-orientation, ply-stack plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Fast, expensive, autoclave-cure, racing-engineering, carbon-fiber exclusivity',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Carbon Fiber while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'High tech, strong, Formula-1 engineering, aerospace-composite, strength-to-weight art',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Weave, tow-band, resin-rich area, crimp-angle, weave-repeat, filament-break, fabric-selvage, prepreg-tack surface',
+        'Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure; Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary; Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp; Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer; Flat-laminate, weave-repeat, tow-orientation, ply-stack',
       creative_brief:
-        'Emphasize carbon composite language through twill repeat, tow boundaries, and anisotropic reflection aligned with fiber direction. Keep the style high-tech and structural, transferable across automotive, aerospace, and product surfaces. Apply Carbon Fiber as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Carbon Fiber after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Weave pattern, composite-macro, aerospace-material, tow-fiber, high-modulus structure, Diagonal weave, twill-diagonal, plain-weave cross, harness-satin float, yarn- crimp, tow-boundary, Woven fiber, carbon-tow, filament-diameter, sizing-coating, resin-impregnation, micro-crack, weave- crimp, Anisotropic reflection, fiber-direction gloss, weave-angle catch, grazing-incidence, ring-light polarizer, Flat-laminate, weave-repeat, tow-orientation, ply-stack plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
   {
     id: 'SP11-080',
     name: 'Dandelion Seed',
     category: '5. Micro Macro',
-    negativePrompt: 'heavy',
+    negativePrompt:
+      'heavy, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, readable text',
     style: {
       aesthetic:
-        'Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock',
+        'Dandelion Seed operates as a portable source-router layer: combine Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock with magnified source-study logic with scale shift, optical detail, structural pattern, and specimen-independent texture grammar, so the preset supplies visual behavior rather than a fixed card scene or literal sample.',
       subject_treatment:
-        'Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff',
+        "Preserve the prompt's subject plus requested motion and context while letting forms magnify, reveal, refract, fracture, sprout, crystallize, oxidize, bead, fray, or expose hidden structure through Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff; identity stays readable through construction grammar, proportion, edge logic, and detail scale as this preset is applied.",
       color_and_tone:
-        'White, translucent-silver, seed-brown, backlit-gold, stem-green, sky-blue bokeh',
+        "Map color through source-derived color variation, iridescence, false-scale contrast, translucent edges, and small-surface hue shifts; keep hue roles intentional, value separation clear, and palette behavior attached to the subject's forms instead of pasted decoration.",
       lighting_and_shadow:
-        'Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour',
+        "Use Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour plus macro flash, raking light, dark-field glow, backlit transmission, ring reflections, and shallow optical falloff as the light-response contract, with readable hierarchy, controlled contact detail, and no lighting choice that erases the user's requested content.",
       texture_and_material:
-        'Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus',
+        'Render Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus plus pores, fibers, facets, droplets, spores, grain, grooves, cells, filaments, corrosion, or crystalline edges; surface scale, residue, gloss, grain, fiber, pores, edges, or signal artifacts must remain coherent across figures, objects, and environments.',
       camera_and_composition:
-        'Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity',
+        'Compose with Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity plus scale abstraction, repeated micro-patterns, sectional rhythm, optical compression, and detail-first framing as reusable framing grammar, allowing cards, portraits, objects, scenes, and abstract prompts to inherit the style without one required layout.',
       atmosphere_and_mood:
-        'Wish, soft, meadow-breeze, spring-dispersal, make-a-wish, childhood-breath, floating-dream',
+        "Carry mood through scientific curiosity, alien familiarity, tactile intimacy, natural engineering, entropy, and fragile wonder; the emotional tone should feel specific to Dandelion Seed while still obeying the prompt's subject and context.",
       rendering_and_quality:
-        'Delicate, wind, time-lapse flight, dandelion-wish, botanical-aeronautics, airborne-seed',
+        'Finish with clean magnification, controlled focus, coherent micro-texture, and no noisy stock-surface overlay; prioritize clean style recognition, prompt preservation, controlled detail, and a finished image with no watermark, fake text, or accidental UI.',
       key_features:
-        'Parachute, pappus-filaments, cypsela-seed, radial-symmetry, backlit-glow, airborne-suspension, wind-drift, dandelion-stem',
+        'Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock; Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff; Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus; Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour; Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity',
       creative_brief:
-        'Frame dandelion dispersal as lightweight aerodynamics: radial pappus geometry, translucent backlight, and suspended drift motion. Preserve botanical delicacy and airborne fragility without narrative scene lock. Apply Dandelion Seed as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
+        'Use Dandelion Seed after prompt X as a transferable style layer: prompt X supplies subject, action, and setting, while the preset supplies Seed parachute, dispersal-wonder, wind-botany, flight-without-wings, dandelion-clock, Fine hairs, pappus-bristle, filament-stalk, cypsela-seed, parachute-canopy, radial-fluff, Fluff, pappus-plume, barbed-filament, aerodynamic-surface, seed-attachment, hydrophobic-pappus, Backlit sun, through-pappus glow, filament-silhouette, golden-hour, contre-jour, Flying, mid-air suspension, wind-current, pappus-sphere, cypsela-weight, descent-velocity plus microstructure, magnification artifacts, focus stacking, surface topology, optical refraction, and scale-legible detail, palette behavior, light response, material treatment, and finish discipline without requiring one specimen, prop bundle, product still, or card composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

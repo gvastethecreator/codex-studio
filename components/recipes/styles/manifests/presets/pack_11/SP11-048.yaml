@@ -12,26 +12,82 @@ tags:
   - miscellaneous-and-fun
   - food-and-drink
 visualDna:
-  aesthetic: Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae restraint
-  subject_treatment: Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel, sashimi-fan arrangement
-  color_and_tone: Orange (Salmon), Red (Tuna), hamachi-amber, shiso-green, gari-pink, nori-black, wasabi-pale-green
-  lighting_and_shadow: Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture light
-  texture_and_material: Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char
-  camera_and_composition: Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing
-  atmosphere_and_mood: Clean, tasty, quiet, precise, fresh-cut anticipation
-  rendering_and_quality: Fresh, restrained, Edomae-inspired, knife-skill reverence, minimalist premium finish
-  key_features: Rice grains, shari-pearl definition, nori-wrap band, wasabi-dot, pickled-ginger mound, soy-sauce dish
+  aesthetic: >-
+    Sushi Platter operates as a portable source-router layer: combine Omakase precision layout,
+    sashimi-fresh surface logic, disciplined cut geometry, itamae restraint with culinary
+    presentation logic with edible surface behavior, plating structure, gloss, freshness, and
+    commercial appetite cues, so the preset supplies visual behavior rather than a fixed card scene
+    or literal sample.
+  subject_treatment: >-
+    Preserve the prompt's subject plus requested motion and context while letting forms plate,
+    glaze, slice, stack, melt, drizzle, arrange, chill, steam, or stylize through edible material
+    logic through Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel,
+    sashimi-fan arrangement; identity stays readable through construction grammar, proportion, edge
+    logic, and detail scale as this preset is applied.
+  color_and_tone: >-
+    Map color through appetite-driven hues, ingredient contrast, caramelization, freshness accents,
+    creamy highlights, and controlled richness; keep hue roles intentional, value separation clear,
+    and palette behavior attached to the subject's forms instead of pasted decoration.
+  lighting_and_shadow: >-
+    Use Glossy oil highlights, clean counter-like spotlight, lacquer contrast, wasabi-grain texture
+    light plus editorial food lighting with glossy highlights, soft appetite shadows, condensation
+    sparkle, and texture reveal as the light-response contract, with readable hierarchy, controlled
+    contact detail, and no lighting choice that erases the user's requested content.
+  texture_and_material: >-
+    Render Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead, torched-aburi char
+    plus sauce viscosity, crumb structure, gelatin shine, raw sheen, baked crust, ice, foam, steam,
+    and surface freshness; surface scale, residue, gloss, grain, fiber, pores, edges, or signal
+    artifacts must remain coherent across figures, objects, and environments.
+  camera_and_composition: >-
+    Compose with Natural proportion, lacquer-board framing, sashimi-fan geometry, nigiri-oval
+    balance, disciplined spacing plus plating geometry, negative space, ingredient rhythm,
+    commercial clarity, and edible detail scale as reusable framing grammar, allowing cards,
+    portraits, objects, scenes, and abstract prompts to inherit the style without one required
+    layout.
+  atmosphere_and_mood: >-
+    Carry mood through freshness, indulgence, premium service, comfort, celebration, appetite, and
+    sensory immediacy; the emotional tone should feel specific to Sushi Platter while still obeying
+    the prompt's subject and context.
+  rendering_and_quality: >-
+    Finish with appetizing material truth, precise gloss control, clean detail priority, and no
+    messy cafeteria drift; prioritize clean style recognition, prompt preservation, controlled
+    detail, and a finished image with no watermark, fake text, or accidental UI.
+  key_features: >-
+    Omakase precision layout, sashimi-fresh surface logic, disciplined cut geometry, itamae
+    restraint; Knife cuts, single-stroke-slice, hira-zukuri rectangles, sogi-zukuri bevel,
+    sashimi-fan arrangement; Raw fish, rice, flesh-marbling, shari-grain, nori-crisp, ikura-bead,
+    torched-aburi char; Glossy oil highlights, clean counter-like spotlight, lacquer contrast,
+    wasabi-grain texture light; Natural proportion, lacquer-board framing, sashimi-fan geometry,
+    nigiri-oval balance, disciplined spacing
   creative_brief: >-
-    Apply omakase presentation logic to the input: precision-cut geometry, disciplined spacing, glossy
-    freshness cues, lacquer contrast, and minimal plate balance. Seafood, shari, nori, or wasabi can reinforce
-    the style, but do not require a counter, fish market, platter, or single dish.
+    Use Sushi Platter after prompt X as a transferable style layer: prompt X supplies subject,
+    action, and setting, while the preset supplies Omakase precision layout, sashimi-fresh surface
+    logic, disciplined cut geometry, itamae restraint, Knife cuts, single-stroke-slice, hira-zukuri
+    rectangles, sogi-zukuri bevel, sashimi-fan arrangement, Raw fish, rice, flesh-marbling,
+    shari-grain, nori-crisp, ikura-bead, torched-aburi char, Glossy oil highlights, clean
+    counter-like spotlight, lacquer contrast, wasabi-grain texture light, Natural proportion,
+    lacquer-board framing, sashimi-fan geometry, nigiri-oval balance, disciplined spacing plus
+    portion geometry, garnish rhythm, sauce motion, melt behavior, crumb, steam, condensation, and
+    service polish, palette behavior, light response, material treatment, and finish discipline
+    without requiring one specimen, prop bundle, product still, or card composition.
 avoidRules:
   - cooked
   - dry
+  - messy cafeteria
+  - fake food plastic
+  - brand logo packaging
+  - fixed specimen
+  - literal card scene
+  - generic stock texture
+  - muddy noise
+  - watermark
+  - readable text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-048.webp
 attributes:
-  negativePrompt: cooked, dry
+  negativePrompt: >-
+    cooked, dry, messy cafeteria, fake food plastic, brand logo packaging, fixed specimen, literal
+    card scene, generic stock texture, muddy noise, watermark, readable text
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

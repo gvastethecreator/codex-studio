@@ -8,11 +8,11 @@ describe('style render budget report', () => {
 
     expect(report.violations).toEqual([]);
     expect(report.categoryInitialRenderLimit).toBe(Number.MAX_SAFE_INTEGER);
-    expect(report.groupInitialRenderLimit).toBe(Number.MAX_SAFE_INTEGER);
-    expect(report.expandedGroupRenderLimit).toBe(128);
+    expect(report.groupInitialRenderLimit).toBe(160);
+    expect(report.expandedGroupRenderLimit).toBe(160);
     expect(report.packs).toHaveLength(17);
     expect(Math.max(...report.packs.map((pack) => pack.initialRenderedCategories))).toBe(10);
-    expect(Math.max(...report.packs.map((pack) => pack.initialRenderedPresetCards))).toBe(140);
+    expect(Math.max(...report.packs.map((pack) => pack.initialRenderedPresetCards))).toBe(70);
     expect(Math.max(...report.packs.map((pack) => pack.eagerPresetCards))).toBeLessThanOrEqual(256);
     expect(
       Math.max(...report.packs.map((pack) => pack.expandedEagerPresetCards)),
@@ -38,6 +38,17 @@ describe('style render budget report', () => {
     expect(
       Math.max(...report.packs.map((pack) => pack.largestExpandedCategoryPresetCards)),
     ).toBeLessThanOrEqual(report.expandedGroupRenderLimit);
+    expect(report.flatAllCards).toEqual(
+      expect.objectContaining({
+        packId: 'all_cards',
+        eagerPresetCards: 152,
+      }),
+    );
+    expect(report.flatAllCards.totalPresets).toBeGreaterThan(1000);
+    expect(report.flatAllCards.plannedPresetCards).toBe(report.flatAllCards.totalPresets);
+    expect(report.flatAllCards.eagerPresetCards).toBeLessThanOrEqual(
+      report.flatAllCards.maxRenderedPresetCards,
+    );
     expect(report.searchScenarios).toHaveLength(3);
     expect(report.searchScenarios).toEqual(
       expect.arrayContaining([
