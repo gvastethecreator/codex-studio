@@ -18,8 +18,8 @@ visualDna:
     Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners, crowns, and
     clean courtly geometry.
   subject_treatment: >-
-    A heraldic chimera crest with two-headed lion, eagle wing, serpent tail, or shield-guardian beast
-    symmetry, no human subject.
+    Translate any subject into heraldic plate logic with mirrored silhouette order, shieldlike geometry,
+    bold emblem contour, and bestiary-flavored symmetry without replacing the prompt subject.
   color_and_tone: Bone, black ink, dull gold, muted red, navy, and forest green in flat separated blocks.
   lighting_and_shadow: Flat heraldic values, simple rim separation, and no murky atmosphere.
   texture_and_material: Smooth enamel-like color, crisp ink contours, simple cloth folds, and minimal weathering.
@@ -27,8 +27,8 @@ visualDna:
   atmosphere_and_mood: Noble, ominous, ceremonial, and antique.
   rendering_and_quality: Graphic heraldic illustration with bold shapes, restrained detail, and denoised color fields.
   creative_brief: >-
-    Original heraldic bestiary language for knight houses, monsters, faction icons, banners, and medieval
-    fantasy crests.
+    Reusable visual system for any subject needing heraldic bestiary language, faction-icon clarity, medieval
+    crest geometry, and bold symmetrical contour.
 avoidRules:
   - readable coats of arms
   - letters

@@ -14,41 +14,48 @@ tags:
   - dark-fantasy-realms
   - soulslike
 visualDna:
-  aesthetic: Bleak ashen medieval fantasy with broken ramparts, soot-stained armor, and sacred decay.
+  aesthetic: Bleak ashen medieval fantasy style with clean soot-softened surfaces, sacred decay, heavy solemn material weight, and worn ceremonial darkness.
   subject_treatment: >-
-    A colossal ash-wolf grave guardian crawling from a collapsed chapel floor, ember ribs visible as clean
-    orange planes, broken pilgrim bells tied to its antlers, and tiny ruined shields for scale.
+    Transform any prompt subject with eroded silhouette weight, ash-softened contour breaks, funerary medieval
+    detailing, and restrained relic-like accents without imposing a fixed subject, object bundle, pose, or
+    setting.
   color_and_tone: >-
-    Pale ash gray, bone white, cold blue stone, dead ember orange, soot black only as contour, and tarnished
-    brass bell accents.
+    Pale ash gray, bone white, cold blue stone, dead ember orange, soot black used as contour, and tarnished
+    brass accents.
   lighting_and_shadow: >-
-    Low chapel fire glow under the beast plus cool broken-window rim light; open shadows keep fur, bells, and
-    stone readable.
+    Low ember underglow plus cool desaturated rim light; open shadows keep forms, material edges, and relic
+    details readable.
   texture_and_material: >-
-    Matted ash fur, cracked chapel tile, tarnished bell metal, eroded stone, frayed burial cloth, and dry
-    ember seams.
+    Smooth matte ash fields, tarnished metal accents, restrained worn ceremonial surfaces, soft ember seams,
+    and soot-softened edges with minimal high-frequency distress.
   camera_and_composition: >-
-    Low monster-card crop, diagonal beast body, broken arch behind, tiny foreground shield shapes, and large
-    empty ash floor planes.
+    Low, weighty framing with broad negative space, diagonal massing, large readable silhouette planes, and
+    depth cues driven by light, scale, and shadow, adaptable to the user's composition.
   atmosphere_and_mood: Ancient, predatory, funereal, and solemn without becoming gory or splatter-focused.
   rendering_and_quality: >-
-    Dark fantasy digital illustration with defined linework, crisp material shapes, clean shadow masses, and
-    visible details.
+    Dark fantasy digital illustration with heavy strong denoise, defined linework, crisp material shapes, clean
+    shadow masses, broad readable value planes, and restrained microtexture.
   creative_brief: >-
-    Reusable visual system for cursed knights, ruins, relics, monsters, or landscapes built from ash, weight,
-    and sacred decay.
+    Apply this as a reusable visual router over any prompt: preserve the user's subject while adding ash,
+    weight, sacred decay, clean matte material logic, and solemn dark-fantasy atmosphere while keeping subject,
+    setting, and props dictated by the user's prompt.
 avoidRules:
   - clean heroic fantasy
   - glossy plastic armor
   - cute cartoon
   - anime
   - explicit gore
+  - gritty dark noise
+  - scratchy black microtexture
+  - dense soot speckle
+  - crosshatch mesh
+  - over-cracked surfaces
   - watermark
   - text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-001.webp
 attributes:
-  negativePrompt: clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, watermark, text
+  negativePrompt: clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, gritty dark noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over-cracked surfaces, watermark, text
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

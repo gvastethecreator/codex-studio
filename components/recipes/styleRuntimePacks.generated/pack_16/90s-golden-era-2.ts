@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-011',
     name: 'Generational Aura Clash Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -35,7 +35,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-012',
     name: 'Sparkling Magical Chorus Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -64,7 +64,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-014',
     name: 'Jazzy Space-Noir Melancholy Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-015',
     name: 'Philosophical Cyber-Ops Vertigo Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -120,7 +120,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-016',
     name: 'Spirit Tournament Pressure Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-017',
     name: 'Wandering Atonement Cel Drama Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-018',
     name: 'Dusty Space-Western Absurdity Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-161',
     name: 'Planetary Aura Impact Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -233,7 +233,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-163',
     name: 'Smoke-Jazz Noir Cool Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -262,7 +262,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-164',
     name: 'Wet Techno-Noir Consciousness Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-165',
     name: 'Spirit Pressure Rivalry Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -320,7 +320,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-166',
     name: 'Redemption Restraint Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -349,7 +349,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-167',
     name: 'Engine-Trail Outlaw Adventure Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -378,7 +378,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-169',
     name: 'Wired Identity Dissolution Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -407,7 +407,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-170',
     name: 'Storybook Seal Magic Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -436,7 +436,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-173',
     name: 'Dust-Warm Pacifist Melancholy Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-174',
     name: 'Iron Ruin Tragedy Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -494,7 +494,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-175',
     name: 'Rose Ritual Symbolism Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-179',
     name: 'Warm Rivalry Portrait Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -552,7 +552,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-180',
     name: 'Precision Action Cel Style',
-    category: '3. 90s Golden Era',
+    category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

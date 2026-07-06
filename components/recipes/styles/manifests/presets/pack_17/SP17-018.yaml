@@ -18,17 +18,19 @@ visualDna:
     Old sword-and-sorcery paperback art degraded through photocopy, tape scan, harsh ink, and lurid flat
     color.
   subject_treatment: >-
-    A rough sword-and-sorcery wanderer facing a serpent idol guardian or moss-cloaked monster, theatrical and
-    print-damaged but clearly readable.
+    Translate any subject into tape-scanned sword-and-sorcery pulp with theatrical silhouette pressure,
+    lurid flat color, black-slab shadow, and analog wear without forcing a hero-versus-threat setup.
   color_and_tone: Faded yellow paper, black crush, bruised purple, toxic green, dull red, and sun-baked orange.
   lighting_and_shadow: Dramatic pulp shadows simplified into black slabs and scratchy hatch fields.
   texture_and_material: Tape seams, clean scan streaks, controlled toner texture, cracked ink, cheap paper, and worn cover edges.
   camera_and_composition: >-
-    Paperback-cover staging, large foreground subject, dramatic diagonal weapon or monster shapes, and thick
-    frame.
+    Paperback-cover energy with bold central scale, dramatic diagonals, thick framing pressure, and readable
+    print-poster hierarchy.
   atmosphere_and_mood: Pulp, dangerous, handmade, lurid, and adventurous.
   rendering_and_quality: Retro print illustration with readable forms, rough edges, controlled analog wear, and clean darks.
-  creative_brief: Converts any fantasy prompt into degraded pulp-zine illustration with sword-and-sorcery momentum.
+  creative_brief: >-
+    Reusable visual system for any subject needing degraded pulp-zine finish, sword-and-sorcery momentum,
+    tape-scan wear, and lurid handmade drama.
 avoidRules:
   - clean ebook cover
   - glossy digital painting

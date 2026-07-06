@@ -14,7 +14,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Apocalyptic medieval trench crusade with mud-choked cathedrals, black powder smoke, reliquary armor, and martyr banners.',
       subject_treatment:
-        'A mud-cathedral altar crawler, trench reliquary cart, or bell machine with two tiny penitents, keeping crusade identity without another central knight.',
+        'Apply apocalyptic crusade styling to any subject through mud-heavy mass, martyr-banner diagonals, reliquary metal accents, smoke-filtered severity, and sacred war pressure without forcing a specific unit.',
       color_and_tone:
         'Mud brown, ash black, candle gold, oxidized brass, bone white, and one restrained crimson or teal accent.',
       lighting_and_shadow:
@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly-ink hybrid with denoised darks, clean silhouette masses, and readable battlefield materials.',
       creative_brief:
-        'Original trench-cathedral crusade aesthetic for knights, warbands, relics, siege priests, or apocalyptic fortresses.',
+        'Reusable visual system for any subject needing trench-crusade gravity, sacred smoke, muddy material pressure, and apocalyptic medieval severity.',
     },
   },
   {
@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Grim gothic tabletop warfront with cathedral armor, painted-miniature contrast, skull-shaped reliquaries, and oversized siege silhouettes.',
       subject_treatment:
-        'A gothic miniature warfront siege beast or altar-engine unit on a plinth-like battlefield fragment, chunky and readable like a tabletop centerpiece.',
+        'Transform any subject with gothic miniature warfront logic, chunky tabletop readability, plinth-like grounding, compact silhouette hierarchy, and grimdark paint clarity without requiring a fixed unit.',
       color_and_tone:
         'Blackened steel, ivory bone, imperial red, toxic green glow, cold blue shadows, and bright edge highlights.',
       lighting_and_shadow:
@@ -54,7 +54,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Fantasy miniature illustration with crisp edge highlights, controlled darks, defined linework, and denoised brush texture.',
       creative_brief:
-        'Original gothic wargame visual system for champions, monsters, war machines, banners, and grimdark tabletop-inspired cards.',
+        'Reusable visual system for any subject needing gothic wargame readability, chunky miniature presence, compact warfront mood, and grimdark tabletop-inspired finish.',
     },
   },
   {
@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Harsh ink dungeon crawl with angular heroes, torchlight panic, heavy black cuts, and exaggerated stress shadows.',
       subject_treatment:
-        'A hunched lantern rogue cornered by a wall-mouth monster and carved dungeon props, expressive and angular, with stress-ink body language.',
+        'Apply stress-ink body language to any subject through angular exaggeration, torch-cut value blocks, nervous contour pressure, and tactical panic without requiring a fixed encounter or object bundle.',
       color_and_tone:
         'Near-black ink, parchment tan, torch orange, sickness green, desaturated crimson, and chalky white highlights.',
       lighting_and_shadow:
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean high-contrast ink illustration with controlled paper texture, no dirty low-light speckle.',
       creative_brief:
-        'Original stress-ink dungeon aesthetic for party portraits, monsters, rooms, traps, and dramatic crawl scenes.',
+        'Reusable visual system for any subject needing anxious ink drama, hard torch contrast, rough paper energy, and claustrophobic adventure tension.',
     },
   },
   {
@@ -96,7 +96,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and siege-icon composition.',
       subject_treatment:
-        'An engraved tomb wagon pulled by a skeletal ox with tiny banner bearers and tomb guards, reduced to bold cut lines and sepulcher rhythm.',
+        'Transform any subject with sepulcher engraving rhythm, bold cut lines, tomb-metal restraint, banner-like vertical accents, and print-safe solemn grouping without requiring a fixed warband.',
       color_and_tone:
         'Ink black, bone paper, tarnished silver, sepia wash, oxidized green, and small wax-red accents.',
       lighting_and_shadow:
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp engraved fantasy print with heavy denoise, clean hatching, and no muddy texture chatter.',
       creative_brief:
-        'Original engraving style for warbands, tomb knights, sepulcher relics, bestiary entries, and medieval campaign cards.',
+        'Reusable visual system for any subject needing sepulcher engraving discipline, tomb heraldry, medieval campaign austerity, and print-safe dark linework.',
     },
   },
   {
@@ -121,9 +121,9 @@ export const GENERATED_STYLE_PRESETS = [
       'copied faction designs, readable religious text, body horror focus, noisy dark compression, explicit gore, watermark, text',
     style: {
       aesthetic:
-        'Apocalyptic iron reliquary fantasy with cathedral machines, caged saint-bones, armored shrine engines, and scorched liturgical metal.',
+        'Apocalyptic iron reliquary fantasy with sacred-industrial mass, scorched liturgical metal, riveted devotional forms, and catastrophic medieval machinery.',
       subject_treatment:
-        'A walking iron shrine construct with bell legs, reliquary chest, beastlike shoulders, and tiny faceless penitents used only for scale.',
+        'Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes, caged-glass accents, penitential geometry, and sacred machine ornament without forcing a specific construct or scene.',
       color_and_tone:
         'Furnace black, rust red, sacred gold, bone ivory, soot gray, and emerald reliquary glow.',
       lighting_and_shadow:
@@ -131,12 +131,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Riveted iron, scorched enamel, reliquary glass, cracked bone, chainmail, ash, and soot cleaned of ugly speckle.',
       camera_and_composition:
-        'Monumental portrait-card framing, altar-centered depth, vertical machine silhouettes, and strong foreground reliquary detail.',
+        "Monumental vertical framing with clear focal hierarchy, massive central forms, separated material planes, and readable sacred-industrial depth that adapts to the user's subject.",
       atmosphere_and_mood: 'Sacred, industrial, catastrophic, penitential, and mythic.',
       rendering_and_quality:
         'Detailed dark fantasy digital illustration with clean black control, defined linework, polished material separation, and heavy denoise.',
       creative_brief:
-        'Original iron-apocalypse aesthetic for relic engines, armored saints, cathedral machines, and grim campaign bosses.',
+        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding iron-reliquary mass, sacred machinery, furnace-black contrast, and apocalyptic devotional pressure.",
     },
   },
   {
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Folk-horror medieval covenant with witch-knights, thorn chapels, bone charms, black woods, and candlelit oath armor.',
       subject_treatment:
-        'An antlered witch-knight covenant icon with living root banner, mask, chapel charm, and forest relic shapes, ritual but not generic.',
+        'Apply folk-horror covenant styling to any subject through oath-mark geometry, thornlike silhouette rhythm, bone-charm accents, wax-lit edges, and ritual armor logic without requiring a fixed figure or prop bundle.',
       color_and_tone:
         'Pine black, bone white, candle amber, dried berry red, moss green, and cold moon gray.',
       lighting_and_shadow:
@@ -158,12 +158,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Bark, bone, wool, tarnished armor, wax, moss, thorn, and smooth denoised shadow planes.',
       camera_and_composition:
-        'Tall forest-card framing, shrine-center composition, thorn arcs, and crisp silhouette against pale fog.',
+        'Tall icon-like framing with vertical pressure, thorn-arc rhythm, pale fog separation, and crisp silhouette against clean shadow.',
       atmosphere_and_mood: 'Ominous, folkloric, ritualistic, secretive, and elegant.',
       rendering_and_quality:
         'Clean dark folk-fantasy illustration with controlled texture, no mud, and readable card contrast.',
       creative_brief:
-        'Original witch-knight folk horror aesthetic for covenants, monsters, relics, forest shrines, and medieval occult scenes.',
+        'Reusable visual system for any subject needing secretive folk-horror oath marks, dark ritual elegance, and medieval covenant mood beyond one literal scene.',
     },
   },
   {
@@ -177,7 +177,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Siege-monastery fantasy with bone-script ornament, barricaded cloisters, armored scribes, and ritual defense engines.',
       subject_treatment:
-        'A bone-script monastery siege door or giant siege bell with armored monks as small support shapes and non-readable carved markings.',
+        'Apply bone-script siege-monastery styling to any subject through carved non-readable markings, armored scholastic severity, limestone-bone value logic, and ritual defense geometry without requiring a fixed object or support cast.',
       color_and_tone:
         'Limestone gray, bone white, black ink, old gold, oxblood cloth, and smoky blue shadow.',
       lighting_and_shadow:
@@ -185,12 +185,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Chipped limestone, vellum-like cloth, bone inlay, hammered metal, wax, dust, and clean ink seams.',
       camera_and_composition:
-        'Architectural verticals, barricade foreground, central holy object, and strong silhouette separation.',
+        'Strong vertical rhythm, solemn central emphasis, smoke-beam separation, clean silhouette hierarchy, and crisp stone-like planes.',
       atmosphere_and_mood: 'Besieged, scholarly, sacred, tense, and stoic.',
       rendering_and_quality:
         'Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone detail, and non-readable decorative marks.',
       creative_brief:
-        'Original monastery-siege aesthetic for fortress interiors, ritual defenders, relic doors, grim scholars, and holy machines.',
+        'Reusable visual system for any subject needing bone-script ornament, scholastic siege tension, sacred defense mood, and stoic medieval weight.',
     },
   },
   {
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Astral feudal exorcist fantasy with star-lit armor, monastery astronomers, demon-sealing geometry, and celestial battlefield calm.',
       subject_treatment:
-        'A star monk sealing an astral eel beast with an astrolabe banner and clean non-readable glyph shapes, cosmic but feudal.',
+        'Transform any subject with astral-feudal exorcist logic, circular celestial geometry, clean non-readable glyph shapes, banner-like rhythm, and cosmic restraint without forcing a ritual action.',
       color_and_tone:
         'Midnight blue, silver, bone white, violet shadow, gold sparks, and pale cyan astral glow.',
       lighting_and_shadow:
@@ -217,7 +217,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean fantasy illustration with luminous accents, smooth dark gradients, and card-readable silhouette design.',
       creative_brief:
-        'Original astral-medieval aesthetic for exorcists, star relics, sealed monsters, ritual armor, and cosmic crusade scenes.',
+        'Reusable visual system for any subject needing astral-medieval gravity, celestial geometry, feudal ritual restraint, and cosmic crusade energy.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

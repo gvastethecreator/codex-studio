@@ -1,4 +1,7 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import { inspectCodexRuntime } from './codexRuntimeDoctor';
 
 function createDeps({
@@ -67,6 +70,79 @@ describe('codexRuntimeDoctor', () => {
       ]),
     );
     expect(deps.spawnSync).toHaveBeenCalledTimes(1);
+  });
+
+  it('selects a later app-server-capable Codex CLI when the first candidate is legacy', () => {
+    const legacyExecutable = 'C:/Users/dev/AppData/Roaming/npm/codex.cmd';
+    const modernExecutable = 'C:/Users/dev/AppData/Local/Programs/OpenAI/Codex/bin/codex.exe';
+    const spawnSync = vi.fn((command: string, args: string[]) => {
+      const commandText = [command, ...args].join(' ');
+      if (commandText.includes(legacyExecutable) && commandText.includes('--version')) {
+        return { status: 0, stdout: 'codex 0.2.3', stderr: '' };
+      }
+      if (commandText.includes(modernExecutable) && commandText.includes('--version')) {
+        return { status: 0, stdout: 'codex-cli 0.142.4', stderr: '' };
+      }
+      if (commandText.includes(modernExecutable) && commandText.includes('app-server')) {
+        return { status: 0, stdout: 'codex app-server --listen <ws-url>', stderr: '' };
+      }
+      return { status: 1, stdout: '', stderr: 'unexpected command' };
+    });
+
+    const report = inspectCodexRuntime({
+      now: () => new Date('2026-05-31T00:00:00.000Z'),
+      exists: (candidate: string) =>
+        candidate === legacyExecutable || candidate === modernExecutable,
+      spawnSync,
+      resolveExecutable: () => legacyExecutable,
+      resolveInvocation: (args, executable = legacyExecutable) => [executable, ...args],
+      listCandidates: () => [
+        { path: legacyExecutable, source: 'npm command shim' },
+        { path: modernExecutable, source: 'OpenAI desktop install' },
+      ],
+    });
+
+    expect(report.status).toBe('ready');
+    expect(report.selectedExecutable).toBe(modernExecutable);
+    expect(report.candidates).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ executable: legacyExecutable, selected: false }),
+        expect.objectContaining({ executable: modernExecutable, selected: true }),
+      ]),
+    );
+  });
+
+  it('detects the unrelated legacy npm codex package without executing its shim', () => {
+    if (process.platform !== 'win32') return;
+
+    const root = path.join(os.tmpdir(), `codex-runtime-${Date.now()}`);
+    const npmRoot = path.join(root, 'npm');
+    const executable = path.join(npmRoot, 'codex.cmd');
+    mkdirSync(path.join(npmRoot, 'node_modules', 'codex'), { recursive: true });
+    writeFileSync(executable, '@echo off\n');
+    writeFileSync(
+      path.join(npmRoot, 'node_modules', 'codex', 'package.json'),
+      JSON.stringify({ name: 'codex', version: '0.2.3' }),
+    );
+    const spawnSync = vi.fn();
+
+    const report = inspectCodexRuntime({
+      now: () => new Date('2026-05-31T00:00:00.000Z'),
+      exists: existsSync,
+      spawnSync,
+      resolveExecutable: () => executable,
+      resolveInvocation: (args) => [executable, ...args],
+      listCandidates: () => [{ path: executable, source: 'npm command shim' }],
+    });
+
+    expect(report.status).toBe('blocked');
+    expect(report.issues[0]).toEqual(
+      expect.objectContaining({
+        code: 'codex_cli_legacy',
+        message: expect.stringContaining('codex 0.2.3'),
+      }),
+    );
+    expect(spawnSync).not.toHaveBeenCalled();
   });
 
   it('uses a Windows shell fallback when direct executable probing fails', () => {

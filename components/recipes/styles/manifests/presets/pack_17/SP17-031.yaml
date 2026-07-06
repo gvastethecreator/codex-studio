@@ -18,19 +18,22 @@ visualDna:
     Siege-monastery fantasy with bone-script ornament, barricaded cloisters, armored scribes, and ritual
     defense engines.
   subject_treatment: >-
-    A bone-script monastery siege door or giant siege bell with armored monks as small support shapes and
-    non-readable carved markings.
+    Apply bone-script siege-monastery styling to any subject through carved non-readable markings, armored
+    scholastic severity, limestone-bone value logic, and ritual defense geometry without requiring a fixed
+    object or support cast.
   color_and_tone: Limestone gray, bone white, black ink, old gold, oxblood cloth, and smoky blue shadow.
   lighting_and_shadow: Bell-tower light, candle rows, and smoke beams keep stone planes readable without dark artifact buildup.
   texture_and_material: Chipped limestone, vellum-like cloth, bone inlay, hammered metal, wax, dust, and clean ink seams.
-  camera_and_composition: Architectural verticals, barricade foreground, central holy object, and strong silhouette separation.
+  camera_and_composition: >-
+    Strong vertical rhythm, solemn central emphasis, smoke-beam separation, clean silhouette hierarchy, and
+    crisp stone-like planes.
   atmosphere_and_mood: Besieged, scholarly, sacred, tense, and stoic.
   rendering_and_quality: >-
     Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone detail, and
     non-readable decorative marks.
   creative_brief: >-
-    Original monastery-siege aesthetic for fortress interiors, ritual defenders, relic doors, grim scholars,
-    and holy machines.
+    Reusable visual system for any subject needing bone-script ornament, scholastic siege tension, sacred
+    defense mood, and stoic medieval weight.
 avoidRules:
   - readable script
   - book stack default

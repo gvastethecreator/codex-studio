@@ -60,6 +60,9 @@ import { createMaintenanceRoutes } from './maintenanceRoutes';
 import { createEventStreamRoutes } from './eventStreamRoutes';
 import { createLibraryRoutes } from './libraryRoutes';
 import { createReferenceRoutes } from './referenceRoutes';
+import { createUserStyleRoutes } from './userStyleRoutes';
+import { createDefaultUserStyleStore } from './sqliteUserStyles';
+import type { UserStyleStore } from './userStyles';
 import { createLocalApiSecurityMiddleware } from './localApiSecurity';
 import type {
   AppServerEnsureReason,
@@ -90,6 +93,7 @@ export interface CreateStudioAppOptions {
     workspaceRoutes?: Partial<WorkspaceRoutesDependencies>;
     catalogStore?: StudioCatalogStore;
     dbStore?: StudioDbStore;
+    userStyleStore?: UserStyleStore;
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<
       WorkerController,
@@ -114,6 +118,7 @@ export async function createStudioApp(
   const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
   const dbStore = options.dependencies?.dbStore ?? (await createDefaultDbStore());
   const catalogStore = options.dependencies?.catalogStore ?? (await createDefaultCatalogStore());
+  const userStyleStore = options.dependencies?.userStyleStore ?? createDefaultUserStyleStore();
   const appLogger = options.dependencies?.logger ?? log;
   const settingsStorage = options.dependencies?.settingsStorage ?? {
     getSetting: getSettingValue,
@@ -203,6 +208,13 @@ export async function createStudioApp(
   );
 
   app.route('/api/maintenance', createMaintenanceRoutes());
+  app.route(
+    '/api/styles',
+    createUserStyleRoutes({
+      store: userStyleStore,
+      publishEvent,
+    }),
+  );
 
   app.route(
     '/api/projects',

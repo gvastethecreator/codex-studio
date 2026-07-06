@@ -5,6 +5,7 @@ name: Chalk (Dry)
 category: 4. Tactile Surfaces
 version: 1
 supportedTasks:
+  - texture_generate
   - image_generate
   - image_edit
   - style_preset_card
@@ -44,6 +45,7 @@ taxonomy:
     - texture-and-materiality
     - tactile-surfaces
   supportedTasks:
+    - texture_generate
     - image_generate
     - image_edit
     - style_preset_card

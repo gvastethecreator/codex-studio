@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-201
 packId: pack_13
 name: Tea-Light Observational Mystery
-category: 5. Slice of Life & Moe
+category: 4. Slice Of Life & Moe
 version: 1
 supportedTasks:
   - image_generate
@@ -56,7 +56,7 @@ taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
   categoryId: slice-of-life-and-moe
-  categoryName: 5. Slice of Life & Moe
+  categoryName: 4. Slice Of Life & Moe
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe

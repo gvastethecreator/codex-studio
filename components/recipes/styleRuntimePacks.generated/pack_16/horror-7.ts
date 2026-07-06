@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-031',
     name: 'Institutional Liminal Dread Style',
-    category: '5. Horror',
+    category: '7. Horror',
     negativePrompt: 'photoreal, comedy, bright-pastel, watermark, text, logo',
     style: {
       aesthetic:
@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-032',
     name: 'Crimson Celestial Omen Style',
-    category: '5. Horror',
+    category: '7. Horror',
     negativePrompt: 'photoreal, cute-style, vivid-rainbow, watermark, text, logo',
     style: {
       aesthetic:
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-033',
     name: 'Grotesque Marionette Spotlight Style',
-    category: '5. Horror',
+    category: '7. Horror',
     negativePrompt: 'photoreal, slapstick, cheerful-colors, watermark, text, logo',
     style: {
       aesthetic:
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-034',
     name: 'Deep Void Whisper Style',
-    category: '5. Horror',
+    category: '7. Horror',
     negativePrompt: 'photoreal, daylight-bright, action-shonen, watermark, text, logo',
     style: {
       aesthetic:
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-035',
     name: 'Demonic Ritual Mask Geometry Style',
-    category: '5. Horror',
+    category: '7. Horror',
     negativePrompt: 'photoreal, cute-style, bright-daylight, watermark, text, logo',
     style: {
       aesthetic:

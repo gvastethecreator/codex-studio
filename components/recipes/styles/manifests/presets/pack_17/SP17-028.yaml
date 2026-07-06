@@ -18,8 +18,8 @@ visualDna:
     Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and siege-icon
     composition.
   subject_treatment: >-
-    An engraved tomb wagon pulled by a skeletal ox with tiny banner bearers and tomb guards, reduced to bold
-    cut lines and sepulcher rhythm.
+    Transform any subject with sepulcher engraving rhythm, bold cut lines, tomb-metal restraint, banner-like
+    vertical accents, and print-safe solemn grouping without requiring a fixed warband.
   color_and_tone: Ink black, bone paper, tarnished silver, sepia wash, oxidized green, and small wax-red accents.
   lighting_and_shadow: Value comes from engraved hatching and broad paper-negative space rather than noisy dark gradients.
   texture_and_material: >-
@@ -31,8 +31,8 @@ visualDna:
   atmosphere_and_mood: Funereal, disciplined, ancient, martial, and ceremonial.
   rendering_and_quality: Crisp engraved fantasy print with heavy denoise, clean hatching, and no muddy texture chatter.
   creative_brief: >-
-    Original engraving style for warbands, tomb knights, sepulcher relics, bestiary entries, and medieval
-    campaign cards.
+    Reusable visual system for any subject needing sepulcher engraving discipline, tomb heraldry, medieval
+    campaign austerity, and print-safe dark linework.
 avoidRules:
   - readable heraldic text
   - modern logos

@@ -33,8 +33,6 @@ categories:
       - pack_11/SP11-019.yaml
       - pack_11/SP11-026.yaml
       - pack_11/SP11-028.yaml
-      - pack_11/SP11-032.yaml
-      - pack_11/SP11-033.yaml
       - pack_11/SP11-044.yaml
   - id: aesthetics
     name: 3. Aesthetics
@@ -69,11 +67,10 @@ categories:
       - pack_11/SP11-053.yaml
       - pack_11/SP11-054.yaml
       - pack_11/SP11-055.yaml
+      - pack_11/SP11-032.yaml
   - id: micro-macro
     name: 5. Micro Macro
     presetRefs:
-      - pack_11/SP11-034.yaml
-      - pack_11/SP11-035.yaml
       - pack_11/SP11-056.yaml
       - pack_11/SP11-057.yaml
       - pack_11/SP11-058.yaml
@@ -98,6 +95,15 @@ categories:
       - pack_11/SP11-078.yaml
       - pack_11/SP11-079.yaml
       - pack_11/SP11-080.yaml
+  - id: sensor-and-technical-imaging
+    name: 6. Sensor And Technical Imaging
+    presetRefs:
+      - pack_11/SP11-034.yaml
+      - pack_11/SP11-035.yaml
+  - id: diagram-and-technical-drawing
+    name: 7. Diagram And Technical Drawing
+    presetRefs:
+      - pack_11/SP11-033.yaml
 presetRefs:
   - pack_11/SP11-001.yaml
   - pack_11/SP11-002.yaml
@@ -123,8 +129,6 @@ presetRefs:
   - pack_11/SP11-019.yaml
   - pack_11/SP11-026.yaml
   - pack_11/SP11-028.yaml
-  - pack_11/SP11-032.yaml
-  - pack_11/SP11-033.yaml
   - pack_11/SP11-044.yaml
   - pack_11/SP11-009.yaml
   - pack_11/SP11-010.yaml
@@ -153,8 +157,7 @@ presetRefs:
   - pack_11/SP11-053.yaml
   - pack_11/SP11-054.yaml
   - pack_11/SP11-055.yaml
-  - pack_11/SP11-034.yaml
-  - pack_11/SP11-035.yaml
+  - pack_11/SP11-032.yaml
   - pack_11/SP11-056.yaml
   - pack_11/SP11-057.yaml
   - pack_11/SP11-058.yaml
@@ -179,3 +182,6 @@ presetRefs:
   - pack_11/SP11-078.yaml
   - pack_11/SP11-079.yaml
   - pack_11/SP11-080.yaml
+  - pack_11/SP11-034.yaml
+  - pack_11/SP11-035.yaml
+  - pack_11/SP11-033.yaml

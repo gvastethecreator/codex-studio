@@ -16,8 +16,8 @@ tags:
 visualDna:
   aesthetic: Bio-arcane medieval future where catacombs, bone machinery, roots, and rune conduits grow into one system.
   subject_treatment: >-
-    A bio-arcane catacomb beast grown from armor ribs, bone roots, crystal sacs, and cable-vines, keeping a
-    medieval crypt silhouette.
+    Transform any subject with bio-arcane medieval biotech, riblike structure, crystal growth accents,
+    cable-vine rhythm, and damp bone-rune material logic without forcing a fixed organism.
   color_and_tone: Bone cream, black soil, muted moss, sickly turquoise, oxidized copper, and dark violet shadow.
   lighting_and_shadow: Bioluminescent accents create simple pocket light inside clean catacomb shadow shapes.
   texture_and_material: Bone, root fiber, damp stone, etched copper, translucent membranes, crystals, and mineral growth.
@@ -26,7 +26,9 @@ visualDna:
   rendering_and_quality: >-
     Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and
     restrained horror.
-  creative_brief: Turns subjects into medieval biotech catacomb imagery using bone, growth, runes, and damp stone.
+  creative_brief: >-
+    Reusable visual system for any subject needing medieval biotech unease, bone-growth structure, rune logic,
+    and damp organic material pressure.
 avoidRules:
   - clean sci-fi lab
   - cute mushroom village

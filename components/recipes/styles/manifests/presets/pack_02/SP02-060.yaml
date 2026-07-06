@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-060
 packId: pack_02
 name: Night Vision (Green)
-category: 4. Photography Eras
+category: 7. Sensor And Technical Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - sensor-and-technical-imaging
 visualDna:
   aesthetic: Intensifier tube
   subject_treatment: >-
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 4. Photography Eras
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
   tags:
     - cinematic-and-media
-    - photography-eras
+    - sensor-and-technical-imaging
   supportedTasks:
     - image_generate
     - image_edit

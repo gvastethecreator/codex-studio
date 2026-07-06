@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-368
 packId: pack_16
 name: Midnight Jazz Ascension Style
-category: 6. Sports, Competition & Performance
+category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:
   - image_generate
@@ -68,7 +68,7 @@ taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
   categoryId: sports-competition-and-performance
-  categoryName: 6. Sports, Competition & Performance
+  categoryName: 5. Sports, Competition & Performance
   tags:
     - anime-classics-and-prestige
     - sports-competition-and-performance

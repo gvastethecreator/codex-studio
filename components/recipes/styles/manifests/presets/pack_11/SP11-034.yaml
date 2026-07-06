@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-034
 packId: pack_11
 name: X-Ray
-category: 5. Micro Macro
+category: 6. Sensor And Technical Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - sensor-and-technical-imaging
 visualDna:
   aesthetic: Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging
   subject_treatment: Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro Macro
+  categoryId: sensor-and-technical-imaging
+  categoryName: 6. Sensor And Technical Imaging
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - sensor-and-technical-imaging
   supportedTasks:
     - image_generate
     - image_edit

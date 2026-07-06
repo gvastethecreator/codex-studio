@@ -45,8 +45,8 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
     runtime: {
       platform: 'win32',
       arch: 'x64',
-      bunVersion: '1.3.13',
-      nodeVersion: '25.0.0',
+      bunVersion: 'reported Bun metadata',
+      nodeVersion: 'reported Node metadata',
       cwd: 'D:/DEV/codex-studio',
       envLocalPath: 'D:/DEV/codex-studio/.env.local',
       envLocalPresent: true,
@@ -63,7 +63,7 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
     },
     codexCli: {
       available: true,
-      version: 'codex 1.0.0',
+      version: 'reported Codex CLI metadata',
       command: 'codex --version',
     },
     codexRuntime: {
@@ -72,8 +72,8 @@ function createHealth(overrides?: Partial<HealthResponse>): HealthResponse {
       checkedAt: '2026-06-27T00:00:00.000Z',
       selectedExecutable: 'codex',
       selectedCommand: 'codex --version',
-      selectedVersion: 'codex-cli 1.0.0',
-      selectedVersionNumber: '1.0.0',
+      selectedVersion: 'reported Codex runtime metadata',
+      selectedVersionNumber: null,
       appServerSupported: true,
       recommendedAction: 'Codex Product Runtime is ready.',
       issues: [],
@@ -138,7 +138,9 @@ describe('buildCodexStudioSetupPrompt', () => {
     expect(prompt).toContain('D:/DEV/codex-studio');
     expect(prompt).toContain('D:/AI-Studio-Library');
     expect(prompt).toContain('Local Codex Session: chatgpt_login_required');
-    expect(prompt).toContain('Codex Runtime Doctor: Codex Product Runtime is ready.');
+    expect(prompt).toContain('Codex Runtime Capability: ready; app-server support: yes');
+    expect(prompt).toContain('Codex Runtime Action: Codex Product Runtime is ready.');
+    expect(prompt).toContain('Bun and Codex command output as diagnostic metadata only');
     expect(prompt).toContain('Run or repair `bun run studio:init`');
     expect(prompt).toContain('Provider Secrets out of SQLite');
     expect(prompt).toContain('bun run test');
@@ -158,6 +160,7 @@ describe('buildCodexStudioSetupPrompt', () => {
     expect(prompt).toContain('Project root: Codex Studio repository root');
     expect(prompt).toContain('Runtime: Web runtime');
     expect(prompt).toContain('Studio Library not detected yet');
+    expect(prompt).toContain('Bun runtime metadata: not reported');
     expect(prompt).toContain('No readiness checks were available yet.');
   });
 });

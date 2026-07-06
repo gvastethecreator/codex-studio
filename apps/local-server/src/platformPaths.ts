@@ -25,8 +25,32 @@ function windowsCodexBinaryCandidates() {
   const home = homeDir();
   const appData = process.env.APPDATA || path.join(home, 'AppData', 'Roaming');
   const localAppData = process.env.LOCALAPPDATA || path.join(home, 'AppData', 'Local');
+  const pathCandidates = (process.env.PATH || '')
+    .split(path.delimiter)
+    .filter(Boolean)
+    .flatMap((dir) => [
+      {
+        path: path.join(dir, 'codex.exe'),
+        source: 'PATH executable',
+      },
+      {
+        path: path.join(dir, 'codex.cmd'),
+        source: 'PATH command shim',
+      },
+      {
+        path: path.join(dir, 'codex'),
+        source: 'PATH shell shim',
+      },
+    ])
+    .filter((candidate) => existsSync(candidate.path));
 
   return [
+    ...(process.env.STUDIO_CODEX_CLI_PATH
+      ? [{ path: process.env.STUDIO_CODEX_CLI_PATH, source: 'STUDIO_CODEX_CLI_PATH' }]
+      : []),
+    ...(process.env.CODEX_CLI_PATH
+      ? [{ path: process.env.CODEX_CLI_PATH, source: 'CODEX_CLI_PATH' }]
+      : []),
     {
       path: path.join(localAppData, 'Programs', 'OpenAI', 'Codex', 'bin', 'codex.exe'),
       source: 'OpenAI desktop install',
@@ -81,9 +105,14 @@ function windowsCodexBinaryCandidates() {
       source: 'npm shell shim',
     },
     {
+      path: path.join(home, '.bun', 'bin', 'codex.exe'),
+      source: 'Bun global executable shim',
+    },
+    {
       path: path.join(localAppData, 'Microsoft', 'WindowsApps', 'codex.exe'),
       source: 'WindowsApps alias',
     },
+    ...pathCandidates,
     {
       path: 'codex',
       source: 'PATH fallback',

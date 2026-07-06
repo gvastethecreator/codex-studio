@@ -16,8 +16,9 @@ tags:
 visualDna:
   aesthetic: Gothic cathedral fantasy with carved darkness, vaulted height, and sacred chiaroscuro.
   subject_treatment: >-
-    A towering cathedral executioner-saint in slab armor emerging from a reliquary arch, broad mask, huge
-    candle crown, and one ceremonial axe held like a holy verdict.
+    Apply sacred chiaroscuro to any subject through slab-like massing, devotional vertical emphasis,
+    candlelit contour cuts, solemn masklike simplification, and ritual severity without imposing a role or
+    prop bundle.
   color_and_tone: Near-black stone, candle gold, desaturated crimson, ivory dust, and cool blue-gray recesses.
   lighting_and_shadow: >-
     Clear holy key light and candle accents cut through large graphic shadow masses without losing
@@ -28,7 +29,9 @@ visualDna:
   rendering_and_quality: >-
     Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly
     atmosphere.
-  creative_brief: Applies cathedral light logic and sacred architecture to characters, artifacts, interiors, or creatures.
+  creative_brief: >-
+    Reusable visual system for any subject needing sacred vertical light, carved darkness, ceremonial gravity,
+    and gothic chiaroscuro beyond one literal scene.
 avoidRules:
   - flat daylight
   - modern church interior

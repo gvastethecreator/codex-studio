@@ -207,46 +207,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP03-043',
-    name: 'X-Ray Shader',
-    category: '2. Materials',
-    negativePrompt: 'opaque, skin',
-    style: {
-      aesthetic: 'X-ray transparency render',
-      subject_treatment: 'Internal structure',
-      color_and_tone: 'Blue/White inverted, clinical spectrum',
-      lighting_and_shadow: 'Internal glow, self-illuminated core',
-      texture_and_material: 'Density-based internal layers',
-      camera_and_composition:
-        'Lookdev camera for X-Ray Shader: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
-      atmosphere_and_mood: 'Analytical, cold, forensic insight',
-      rendering_and_quality: 'Medical, sci-fi, diagnostic scan',
-      key_features: 'Internal view, see-through silhouette',
-      creative_brief:
-        'Render the input as X-ray transparency: ghosted outer contour, cyan-white density, visible internal structure and diagnostic depth. If bones, circuits or mechanics fit, reveal them; otherwise invent structural layers without forcing anatomy or hardware. Apply X-Ray Shader as a portable 3D/render style system over any input: preserve its renderer logic, material behavior, geometry language, lighting grammar, and production cues while avoiding a required character, vehicle, prop, environment, UI screen, product shot, or scene template.',
-    },
-  },
-  {
-    id: 'SP03-044',
-    name: 'Thermal Vision',
-    category: '2. Materials',
-    negativePrompt: 'realistic color',
-    style: {
-      aesthetic: 'Heat map 3D',
-      subject_treatment: 'Heat gradients',
-      color_and_tone: 'Rainbow (Blue cold, Red hot), thermal gradient',
-      lighting_and_shadow: 'Emissive temperature, heat-source mapping',
-      texture_and_material: 'Temperature-emissive surface read with no material grain',
-      camera_and_composition:
-        'Lookdev camera for Thermal Vision: close three-quarter or macro material framing, strong highlight planes, readable surface curvature, and controlled depth.',
-      atmosphere_and_mood: 'Tactical, alien, sensor-data intensity',
-      rendering_and_quality: 'Thermal false-color sensor overlay',
-      key_features: 'Heat map, cold-to-hot spectrum',
-      creative_brief:
-        'Translate the input into thermal false color: white/yellow heat peaks, blue cold zones, soft diffusion edges and sensor-grade data contrast. Keep tactical sci-fi flavor without requiring predator vision, reconnaissance or a literal world scan.',
-    },
-  },
-  {
     id: 'SP03-075',
     name: 'Ice Sculpture',
     category: '2. Materials',

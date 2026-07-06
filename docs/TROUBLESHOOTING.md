@@ -14,7 +14,10 @@
 
 Symptoms: `codexCli.available: false`, real jobs do not start.
 
-Check: `codex --version`, PATH setup, and terminal restart after installing Codex.
+Check: selected CLI path, PATH setup, terminal restart after installing Codex,
+and `bun run runtime:doctor`. CLI metadata is useful for diagnosis, but setup
+should be blocked by missing app-server support or auth, not by a hardcoded
+tool release.
 
 Run:
 
@@ -22,13 +25,33 @@ Run:
 bun run runtime:doctor
 ```
 
-The doctor reports the selected executable, version, app-server support, and the recommended action without printing secrets.
+The doctor reports the selected executable, CLI metadata, app-server
+support, and the recommended action without printing secrets.
 
 ### An old `codex` install is selected
 
-Symptoms: jobs fail with WebSocket connection errors, `runtime:doctor` reports `codex_cli_legacy`, or health shows `codexRuntime.status: blocked`.
+Symptoms: jobs fail with WebSocket connection errors, `runtime:doctor` reports
+`codex_cli_legacy`, the selected CLI lacks `codex app-server`, or health shows
+`codexRuntime.status: blocked`.
 
 Check: remove or update old npm shims under the user npm directory, make sure the OpenAI Codex desktop CLI binary is selected, then restart `bun run dev:server`.
+
+Common Windows repro: `C:\Users\<you>\AppData\Roaming\npm\codex.cmd` points to
+an unrelated legacy npm package named `codex`, while OpenAI Codex is either
+missing or lower in PATH. The setup UI now shows the selected executable, the
+failing command, top candidates, and copyable repair commands.
+
+Repair:
+
+```bash
+npm uninstall -g codex
+codex login
+bun run runtime:doctor
+```
+
+If Codex is still missing after removing the old shim, install or update the
+current OpenAI Codex CLI through the supported channel for your environment,
+then rerun `bun run runtime:doctor`.
 
 ### `codex app-server` is not available
 

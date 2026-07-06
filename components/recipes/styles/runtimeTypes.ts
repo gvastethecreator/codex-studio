@@ -3,6 +3,8 @@ export interface StyleRuntimePreset {
   name: string;
   category?: string;
   domain?: string;
+  createdAt?: string | number;
+  updatedAt?: string | number;
   negativePrompt?: string;
   style: StyleVisualDna;
   camera?: unknown;

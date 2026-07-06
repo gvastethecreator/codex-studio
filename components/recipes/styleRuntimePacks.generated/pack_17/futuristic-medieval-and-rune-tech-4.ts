@@ -14,7 +14,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Futuristic medieval citadel style merging castle massing, rune light, brutalist metal, and sacred technology.',
       subject_treatment:
-        'A future-feudal oath knight riding a hovering ceramic destrier, carrying a transparent rune shield and folded banner drones, with citadel towers only as distant silhouettes.',
+        'Transform any subject with future-feudal order, ceramic armor smoothness, transparent rune shielding, folded banner-like geometry, and oath-bound poise without requiring a rider or mount.',
       color_and_tone:
         'Warm stone gray, ceramic white, cold cyan runes, tarnished gold trim, muted navy, and restrained black contour lines.',
       lighting_and_shadow:
@@ -22,7 +22,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Ceramic armor, brushed metal joints, carved stone saddle, illuminated glass runes, worn oath cloth, and matte banner fabric.',
       camera_and_composition:
-        'Three-quarter mounted hero crop, destrier hovering over a bridge slab, distant vertical citadel shapes, and clean negative sky planes.',
+        'Three-quarter heroic scale with clean negative planes, distant vertical accents, hovering lightness, and balanced future-feudal silhouette.',
       atmosphere_and_mood:
         'Oath-bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk.',
       rendering_and_quality:
@@ -69,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Dreamlike synth-medieval fantasy with castles, prophecy light, analog glow, and retro-future mysticism.',
       subject_treatment:
-        'A synth-medieval oracle beast shaped like a glass stag-dragon, antlers holding a miniature castle moon, one robed astronomer silhouette kneeling far below for scale.',
+        'Apply synth-medieval prophecy styling to any subject through glassy translucent planes, luminous rune accents, analog glow, halo-like arcs, and retro-future mysticism without requiring a fixed oracle form.',
       color_and_tone:
         'Deep indigo, soft violet, electric cyan glass, pale gold star marks, muted magenta horizon, and clean black only for thin silhouettes.',
       lighting_and_shadow:
@@ -77,12 +77,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Translucent glass hide, enamel scales, velvet sky, polished stone plinth, clean analog bloom, and soft poster texture.',
       camera_and_composition:
-        'Centered creature icon, huge antler arc, tiny astronomer below, floating castle moon above, and wide simple color planes.',
+        'Centered icon-like framing with large luminous arcs, generous simple color planes, clean scale hierarchy, and soft poster balance.',
       atmosphere_and_mood: 'Prophetic, wondrous, eerie, and retro-futurist.',
       rendering_and_quality:
         'Polished fantasy illustration with synthwave restraint, medieval shapes, and soft luminous finish.',
       creative_brief:
-        'Applies retro-future prophecy and luminous castle grammar to people, places, artifacts, or creatures.',
+        'Reusable visual system for any subject needing retro-future prophecy, luminous medieval geometry, analog bloom, and eerie wonder.',
     },
   },
   {
@@ -96,7 +96,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Mecha-medieval reliquary style where knight forms become walking shrines of armor, machinery, and sacred cores.',
       subject_treatment:
-        'A bulky reliquary mech-saint with chest shrine, banner antennae, halo hardware, and heavy ceremonial limbs, no visible human face.',
+        'Transform any subject with mecha-reliquary logic, bulky ceremonial mass, halo hardware, sacred machine plating, and faceless devotional presence without requiring a humanoid machine body.',
       color_and_tone:
         'Dark gunmetal, oxidized bronze, bone enamel, altar gold, red wax, and cool reactor light.',
       lighting_and_shadow:
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary ornament.',
       creative_brief:
-        'A compact style language for future knights, machines, shrines, constructs, or armored monsters.',
+        'Reusable visual system for any subject needing future-medieval machine sanctity, reliquary hardware, armored ceremony, and compact sacred-tech weight.',
     },
   },
   {
@@ -123,7 +123,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Bio-arcane medieval future where catacombs, bone machinery, roots, and rune conduits grow into one system.',
       subject_treatment:
-        'A bio-arcane catacomb beast grown from armor ribs, bone roots, crystal sacs, and cable-vines, keeping a medieval crypt silhouette.',
+        'Transform any subject with bio-arcane medieval biotech, riblike structure, crystal growth accents, cable-vine rhythm, and damp bone-rune material logic without forcing a fixed organism.',
       color_and_tone:
         'Bone cream, black soil, muted moss, sickly turquoise, oxidized copper, and dark violet shadow.',
       lighting_and_shadow:
@@ -136,7 +136,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and restrained horror.',
       creative_brief:
-        'Turns subjects into medieval biotech catacomb imagery using bone, growth, runes, and damp stone.',
+        'Reusable visual system for any subject needing medieval biotech unease, bone-growth structure, rune logic, and damp organic material pressure.',
     },
   },
   {
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and radiant cosmic color.',
       subject_treatment:
-        'A stained-glass starforge dragon, angelic smith, or haloed armor pane flattened into luminous cathedral geometry and symbolic forge gestures.',
+        'Translate any subject into stained-glass starforge logic with luminous pane segmentation, symbolic forge gesture, halo geometry, and sacred cosmic flattening without requiring a fixed figure.',
       color_and_tone:
         'Sapphire, ruby, emerald, solar gold, black leading, and luminous white star points.',
       lighting_and_shadow:
@@ -163,7 +163,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean stained-glass illustration with crisp leadwork, luminous color, and fantasy-tech ornament.',
       creative_brief:
-        'Reusable for portraits, armor, relics, ships, monsters, or castles needing sacred cosmic-medieval design.',
+        'Reusable visual system for any subject needing sacred cosmic-medieval design, luminous pane structure, symbolic forge energy, and flat stained-glass clarity.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

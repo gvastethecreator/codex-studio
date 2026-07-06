@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-054
 packId: pack_05
 name: Luminous Beam Opera
-category: 7. Mecha & Cyberpunk
+category: 2. Mecha & Cyberpunk
 version: 1
 supportedTasks:
   - image_generate
@@ -64,7 +64,7 @@ taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
   categoryId: mecha-and-cyberpunk
-  categoryName: 7. Mecha & Cyberpunk
+  categoryName: 2. Mecha & Cyberpunk
   tags:
     - anime-battle-and-worlds
     - mecha-and-cyberpunk

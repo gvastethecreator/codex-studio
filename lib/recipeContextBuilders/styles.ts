@@ -23,12 +23,31 @@ function getSelectedStyleLayers(params: RecipeContextParams) {
     const packName = typeof layer.packName === 'string' ? layer.packName.trim() : '';
     const aesthetic = typeof layer.aesthetic === 'string' ? layer.aesthetic.trim() : '';
     const creativeBrief = typeof layer.creativeBrief === 'string' ? layer.creativeBrief.trim() : '';
+    const avoidRulesMode =
+      typeof layer.avoidRulesMode === 'string' ? layer.avoidRulesMode.trim() : '';
+    const fields = layer.fields && typeof layer.fields === 'object' ? layer.fields : null;
+    const activeFields = fields
+      ? Object.values(fields as Record<string, unknown>).flatMap((field) => {
+          if (!field || typeof field !== 'object' || Array.isArray(field)) return [];
+          const fieldRecord = field as Record<string, unknown>;
+          if (fieldRecord.enabled === false) return [];
+          const label = typeof fieldRecord.label === 'string' ? fieldRecord.label.trim() : '';
+          if (!label) return [];
+          const weight =
+            typeof fieldRecord.weight === 'number' && Number.isFinite(fieldRecord.weight)
+              ? Math.max(0.1, Math.min(1, fieldRecord.weight)).toFixed(2)
+              : '';
+          return weight && weight !== '1.00' ? [`${label} ${weight}`] : [label];
+        })
+      : [];
 
     return [
       [
         `- Slot ${slot || '?'}: ${presetName}`,
         packName ? `Pack: ${packName}` : '',
         `Strength: ${strength}`,
+        activeFields.length > 0 ? `Active fields: ${activeFields.join(', ')}` : '',
+        avoidRulesMode ? `Avoid rules: ${avoidRulesMode}` : '',
         aesthetic ? `Aesthetic: ${aesthetic}` : '',
         creativeBrief ? `Creative brief: ${creativeBrief}` : '',
       ]

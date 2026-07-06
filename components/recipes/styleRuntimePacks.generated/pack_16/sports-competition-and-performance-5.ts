@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-343',
     name: 'Vertical Team Rally Energy Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -35,7 +35,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-344',
     name: 'Ego Pressure Breakout Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -64,7 +64,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-345',
     name: 'Nineties Physical Rivalry Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -93,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-346',
     name: 'Phantom Teamplay Speed Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-347',
     name: 'Uphill Endurance Breakaway Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-348',
     name: 'Summer Precision Duel Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -180,7 +180,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-349',
     name: 'Generational Sports Resolve Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-350',
     name: 'Aquatic Relay Glow Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -238,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-351',
     name: 'Long-Distance Night Endurance Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-352',
     name: 'Neon Trick Flow Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -296,7 +296,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-353',
     name: 'Nocturnal Drift Tension Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -325,7 +325,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-354',
     name: 'Telemetry Apex Precision Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-355',
     name: 'Festive Sprint Idol Energy Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-356',
     name: 'Graphic Impact Duel Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-357',
     name: 'Spin Pressure Distortion Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -441,7 +441,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-358',
     name: 'Comeback Grit Impact Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -470,7 +470,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-359',
     name: 'Vulnerable Performance Spin Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -499,7 +499,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-360',
     name: 'Poetic Reflex Focus Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -528,7 +528,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-361',
     name: 'Incremental Method Training Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-362',
     name: 'Glam Precision Rivalry Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-363',
     name: 'Synchronized Aerial Team Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-364',
     name: 'Obsessive Line Rehearsal Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -644,7 +644,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-365',
     name: 'Formal Partner Motion Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -673,7 +673,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-366',
     name: 'Traditional Ensemble Resonance Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -702,7 +702,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-367',
     name: 'Brass Section Tender Precision Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -731,7 +731,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-368',
     name: 'Midnight Jazz Ascension Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -760,7 +760,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-369',
     name: 'Raw Youth Feedback Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -789,7 +789,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-370',
     name: 'Intimate Indie Confession Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -818,7 +818,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-372',
     name: 'Allegorical Spotlight Confrontation Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -847,7 +847,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-371',
     name: 'Virtuoso Ensemble Whirl Style',
-    category: '6. Sports, Competition & Performance',
+    category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

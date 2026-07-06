@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-035
 packId: pack_11
 name: Thermal Vision
-category: 5. Micro Macro
+category: 6. Sensor And Technical Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - micro-macro
+  - sensor-and-technical-imaging
 visualDna:
   aesthetic: Heat map camera, predator-vision, infrared-surveillance, temperature-portrait
   subject_treatment: Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: micro-macro
-  categoryName: 5. Micro Macro
+  categoryId: sensor-and-technical-imaging
+  categoryName: 6. Sensor And Technical Imaging
   tags:
     - miscellaneous-and-fun
-    - micro-macro
+    - sensor-and-technical-imaging
   supportedTasks:
     - image_generate
     - image_edit

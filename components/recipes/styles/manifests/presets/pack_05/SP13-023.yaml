@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP13-023
 packId: pack_05
 name: Neon Vector Discharge Style
-category: 3. Action
+category: 5. Action Motion Setpieces
 version: 1
 supportedTasks:
   - image_generate
@@ -49,7 +49,7 @@ taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
   categoryId: action
-  categoryName: 3. Action
+  categoryName: 5. Action Motion Setpieces
   tags:
     - anime-battle-and-worlds
     - anime

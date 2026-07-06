@@ -13,7 +13,9 @@ import { loadStyleManifestGraph } from './style-manifest-files';
 
 const DEFAULT_URL = 'http://localhost:17222/#recipe-styles';
 const DEFAULT_PACK_ID = 'pack_05';
+const DEFAULT_COLLECTION_ID = 'analog_film_process';
 const DEFAULT_CATALOG_QUERY = 'boudoir';
+const STYLE_RECIPE_HASH_PREFIX = '#recipe-styles';
 const DEFAULT_TIMEOUT_MS = 30_000;
 const DEFAULT_VIEWPORT = {
   width: 1600,
@@ -28,6 +30,7 @@ interface BrowserLogEntry {
 export interface VerifyStylesBrowserGateOptions {
   url?: string;
   packId?: string;
+  collectionId?: string;
   catalogQuery?: string;
   timeoutMs?: number;
   headed?: boolean;
@@ -59,11 +62,11 @@ function numberArgValue(name: string) {
 function usage() {
   return [
     'Usage:',
-    '  bun run styles:browser -- [--url=http://localhost:17222/#recipe-styles] [--pack=pack_05] [--query=boudoir] [--timeout=30000] [--headed] [--verify] [--json]',
+    '  bun run styles:browser -- [--url=http://localhost:17222/#recipe-styles] [--pack=pack_05] [--collection=analog_film_process] [--query=boudoir] [--timeout=30000] [--headed] [--verify] [--json]',
     '',
     'Notes:',
     '  - Start the UI first (for example `bun run dev:ui`) and keep this gate optional until it is stable enough for wider release use.',
-    '  - The script verifies pack_05 collapsed/expanded DOM budgets, confirms the Style Catalog surface is demand-mounted, checks the catalog query result count, and fails on fresh console warnings/errors.',
+    '  - The script verifies collection navigation, pack DOM budgets with all categories visible, confirms the Style Catalog surface is demand-mounted, checks the catalog query result count, and fails on fresh console warnings/errors.',
   ].join('\n');
 }
 
@@ -127,6 +130,7 @@ async function clickViaDom(page: Page, selector: string, timeoutMs: number) {
 export async function verifyStylesBrowserGate({
   url = DEFAULT_URL,
   packId = DEFAULT_PACK_ID,
+  collectionId = DEFAULT_COLLECTION_ID,
   catalogQuery = DEFAULT_CATALOG_QUERY,
   timeoutMs = DEFAULT_TIMEOUT_MS,
   headed = false,
@@ -187,15 +191,47 @@ export async function verifyStylesBrowserGate({
     await page.reload({ waitUntil: 'domcontentloaded', timeout: timeoutMs });
     await page.waitForSelector('[data-style-browser-root]', { timeout: timeoutMs });
 
-    await clickViaDom(page, `[data-style-pack-id="${packId}"]`, timeoutMs);
+    await page.waitForSelector(`[data-style-collection-card="${collectionId}"]`, {
+      timeout: timeoutMs,
+    });
+    await clickViaDom(page, `[data-style-collection-card="${collectionId}"]`, timeoutMs);
+    await page.waitForSelector(`[data-style-folder="collection/${collectionId}"]`, {
+      timeout: timeoutMs,
+    });
     await page.waitForFunction(
-      (activePackId) =>
-        document
-          .querySelector(`[data-style-pack-id="${activePackId}"]`)
-          ?.getAttribute('data-style-pack-active') === 'true',
-      packId,
-      { timeout: timeoutMs },
+      () => document.querySelectorAll('[data-style-group]').length > 0,
+      undefined,
+      {
+        timeout: timeoutMs,
+      },
     );
+    await page.waitForSelector('[data-style-source-provenance]', { timeout: timeoutMs });
+    const collectionSourcePackIds = await page.evaluate(() => [
+      ...new Set(
+        Array.from(document.querySelectorAll<HTMLElement>('[data-style-source-provenance]'))
+          .map((node) => node.getAttribute('data-style-source-pack-id'))
+          .filter(Boolean),
+      ),
+    ]);
+    for (const expectedSourcePackId of ['pack_01', 'pack_02']) {
+      if (!collectionSourcePackIds.includes(expectedSourcePackId)) {
+        throw new Error(
+          `Collection provenance missing ${expectedSourcePackId}; saw ${collectionSourcePackIds.join(', ')}`,
+        );
+      }
+    }
+
+    await clickViaDom(page, '[data-style-pack-id="user_styles"]', timeoutMs);
+    await page.waitForSelector('[data-style-folder="user_styles"]', { timeout: timeoutMs });
+    await page.waitForSelector('[data-style-create-user-style]', { timeout: timeoutMs });
+
+    await clickViaDom(page, `[data-style-tab-url="${STYLE_RECIPE_HASH_PREFIX}/packs"]`, timeoutMs);
+    await page.waitForSelector('[data-style-source-packs-summary]', { timeout: timeoutMs });
+    await clickViaDom(page, '[data-style-source-packs-summary]', timeoutMs);
+    await clickViaDom(page, `[data-style-pack-card="${packId}"]`, timeoutMs);
+    await page.waitForSelector(`[data-style-folder="${packId}"]`, {
+      timeout: timeoutMs,
+    });
     await page.waitForFunction(
       () => document.querySelectorAll('[data-style-group]').length > 0,
       undefined,
@@ -207,17 +243,10 @@ export async function verifyStylesBrowserGate({
 
     const collapsed = await collectStyleBrowserDomState(page);
     const showMoreCategoriesButton = page.locator('[data-style-show-all-categories]');
-    if (expectation.collapsed.hiddenGroups > 0 && (await showMoreCategoriesButton.count()) > 0) {
-      await clickViaDom(page, '[data-style-show-all-categories]', timeoutMs);
-      await page.waitForFunction(
-        (expectedGroupCount) =>
-          document.querySelectorAll('[data-style-group]').length === expectedGroupCount,
-        expectation.expanded.groups,
-        { timeout: timeoutMs },
-      );
-      await page.waitForTimeout(200);
+    if ((await showMoreCategoriesButton.count()) > 0) {
+      throw new Error('Styles browser still renders a show-more categories button.');
     }
-    const expanded = await collectStyleBrowserDomState(page);
+    const expanded = { ...collapsed };
 
     const mountedBefore = (await page.locator('[data-style-catalog-root]').count()) > 0;
     const matchedResourceNamesBefore = findMatchingStyleCatalogResources(
@@ -295,6 +324,7 @@ if (import.meta.main) {
       const report = await verifyStylesBrowserGate({
         url: argValue('url') ?? DEFAULT_URL,
         packId: argValue('pack') ?? DEFAULT_PACK_ID,
+        collectionId: argValue('collection') ?? DEFAULT_COLLECTION_ID,
         catalogQuery: argValue('query') ?? DEFAULT_CATALOG_QUERY,
         timeoutMs: numberArgValue('timeout') ?? DEFAULT_TIMEOUT_MS,
         headed: process.argv.includes('--headed'),

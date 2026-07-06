@@ -9,26 +9,26 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
-      'clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, watermark, text',
+      'clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, gritty dark noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over-cracked surfaces, watermark, text',
     style: {
       aesthetic:
-        'Bleak ashen medieval fantasy with broken ramparts, soot-stained armor, and sacred decay.',
+        'Bleak ashen medieval fantasy style with clean soot-softened surfaces, sacred decay, heavy solemn material weight, and worn ceremonial darkness.',
       subject_treatment:
-        'A colossal ash-wolf grave guardian crawling from a collapsed chapel floor, ember ribs visible as clean orange planes, broken pilgrim bells tied to its antlers, and tiny ruined shields for scale.',
+        'Transform any prompt subject with eroded silhouette weight, ash-softened contour breaks, funerary medieval detailing, and restrained relic-like accents without imposing a fixed subject, object bundle, pose, or setting.',
       color_and_tone:
-        'Pale ash gray, bone white, cold blue stone, dead ember orange, soot black only as contour, and tarnished brass bell accents.',
+        'Pale ash gray, bone white, cold blue stone, dead ember orange, soot black used as contour, and tarnished brass accents.',
       lighting_and_shadow:
-        'Low chapel fire glow under the beast plus cool broken-window rim light; open shadows keep fur, bells, and stone readable.',
+        'Low ember underglow plus cool desaturated rim light; open shadows keep forms, material edges, and relic details readable.',
       texture_and_material:
-        'Matted ash fur, cracked chapel tile, tarnished bell metal, eroded stone, frayed burial cloth, and dry ember seams.',
+        'Smooth matte ash fields, tarnished metal accents, restrained worn ceremonial surfaces, soft ember seams, and soot-softened edges with minimal high-frequency distress.',
       camera_and_composition:
-        'Low monster-card crop, diagonal beast body, broken arch behind, tiny foreground shield shapes, and large empty ash floor planes.',
+        "Low, weighty framing with broad negative space, diagonal massing, large readable silhouette planes, and depth cues driven by light, scale, and shadow, adaptable to the user's composition.",
       atmosphere_and_mood:
         'Ancient, predatory, funereal, and solemn without becoming gory or splatter-focused.',
       rendering_and_quality:
-        'Dark fantasy digital illustration with defined linework, crisp material shapes, clean shadow masses, and visible details.',
+        'Dark fantasy digital illustration with heavy strong denoise, defined linework, crisp material shapes, clean shadow masses, broad readable value planes, and restrained microtexture.',
       creative_brief:
-        'Reusable visual system for cursed knights, ruins, relics, monsters, or landscapes built from ash, weight, and sacred decay.',
+        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding ash, weight, sacred decay, clean matte material logic, and solemn dark-fantasy atmosphere while keeping subject, setting, and props dictated by the user's prompt.",
     },
   },
   {
@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
     style: {
       aesthetic: 'Muddy war-torn medieval fantasy staged like a brutal siege chronicle.',
       subject_treatment:
-        'A weather-beaten siege beast, broken ram, or monster-hauler with tiny exhausted soldiers around it, emphasizing war machinery over another knight portrait.',
+        'Transform any subject with grim siege-chronicle pressure, weather-beaten surfaces, iron mass, mud logic, smoke-flattened value, and unsentimental medieval war severity without adding a fixed war machine.',
       color_and_tone:
         'Iron black, clay brown, old blood red accents, smoke gray, and pale winter sky.',
       lighting_and_shadow:
@@ -82,7 +82,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean atmospheric planes.',
       creative_brief:
-        'Converts subjects into grim medieval war imagery with mud, pressure, and siege logic as the style engine.',
+        'Reusable visual system for any subject needing grim medieval war pressure, mud-stained restraint, documentary severity, and siege-like visual weight.',
     },
   },
   {
@@ -96,7 +96,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Gothic cathedral fantasy with carved darkness, vaulted height, and sacred chiaroscuro.',
       subject_treatment:
-        'A towering cathedral executioner-saint in slab armor emerging from a reliquary arch, broad mask, huge candle crown, and one ceremonial axe held like a holy verdict.',
+        'Apply sacred chiaroscuro to any subject through slab-like massing, devotional vertical emphasis, candlelit contour cuts, solemn masklike simplification, and ritual severity without imposing a role or prop bundle.',
       color_and_tone:
         'Near-black stone, candle gold, desaturated crimson, ivory dust, and cool blue-gray recesses.',
       lighting_and_shadow:
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly atmosphere.',
       creative_brief:
-        'Applies cathedral light logic and sacred architecture to characters, artifacts, interiors, or creatures.',
+        'Reusable visual system for any subject needing sacred vertical light, carved darkness, ceremonial gravity, and gothic chiaroscuro beyond one literal scene.',
     },
   },
   {
@@ -123,7 +123,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Severe crusader fantasy built from black iron, devotional symbols, and battle-worn austerity.',
       subject_treatment:
-        'A black-iron siege banner bearer built like a shield tower, faceless and angular, with relic scars and a massive tabard silhouette.',
+        'Transform any subject with black-iron crusade severity, faceless angular mass, shieldlike silhouette pressure, devotional heraldry, and relic-scar accents without imposing a fixed bearer role.',
       color_and_tone:
         'Blackened steel, faded linen, bone white, rust red, and cold silver edge highlights.',
       lighting_and_shadow:
@@ -136,7 +136,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Detailed dark fantasy concept art with tactile armor, disciplined shapes, and restrained effects.',
       creative_brief:
-        'Turns subjects into severe medieval crusade imagery using iron mass, heraldry, and devotional menace.',
+        'Reusable visual system for any subject needing severe medieval crusade imagery, iron mass, heraldic pressure, and devotional menace.',
     },
   },
   {
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial space.',
       subject_treatment:
-        'A flattened tapestry hunt scene with a lion-bird monster, fallen tower, profile riders, patterned garments, and heraldic outlines.',
+        'Translate any subject into damaged medieval tapestry language with flattened ceremonial space, profile-like simplification, heraldic outlines, faded wool color, and symbolic woven contour.',
       color_and_tone:
         'Faded wool reds, moss green, ochre, smoke blue, dark brown linework, and aged linen base.',
       lighting_and_shadow:
@@ -163,7 +163,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'High-resolution textile illustration preserving woven texture and crisp symbolic readability.',
       creative_brief:
-        'A portable medieval-tapestry style for battles, monsters, portraits, maps, rituals, or mythic objects.',
+        'Reusable visual system for any subject needing damaged medieval-tapestry texture, flat mythic silhouette, faded ceremonial color, and symbolic readability.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

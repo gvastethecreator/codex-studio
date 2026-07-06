@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-073',
     name: 'Wandering Clockwork Hearth Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -35,7 +35,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-074',
     name: 'Skyglow Longing Drama Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -64,7 +64,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-075',
     name: 'Rainlight Threshold Romance Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -93,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-077',
     name: 'Mirror Identity Collapse Thriller Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-078',
     name: 'Otomo Light-Trail Collapse Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-079',
     name: 'Hyperkinetic Cosmic Velocity Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -180,7 +180,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-080',
     name: 'Children of the Sea – Cosmic Ocean Lyrical',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-281',
     name: 'Temporal Memory Cinema Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -238,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-282',
     name: 'Social Humanist Warmth Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-284',
     name: 'Airborne Wonder Adventure Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -296,7 +296,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-285',
     name: 'Eco-Prophetic Wind Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -325,7 +325,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-286',
     name: 'Seasonal Intimacy Realism Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-288',
     name: 'Elastic Summer Time Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-290',
     name: 'Paramilitary Melancholy Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-291',
     name: 'Delicate Reconciliation Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -441,7 +441,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-292',
     name: 'Historical Glam Punk Performance Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -470,7 +470,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-293',
     name: 'Rough Mythic Density Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -499,7 +499,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-295',
     name: 'Quiet Musical Distance Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -528,7 +528,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-296',
     name: 'Humanist Art Deco Retrofuture Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-297',
     name: 'Hyperobserved Rain Intimacy Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-071',
     name: 'Warm Liminal Reverie Fantasy Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-287',
     name: 'Digital Pop Opera Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -644,7 +644,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-300',
     name: 'Hypergraphic Chromatic Action Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -673,7 +673,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-072',
     name: 'Eco-Mythic Conflict Epic Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -702,7 +702,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-076',
     name: 'Cinematic Dream-Collapse Surrealism Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -731,7 +731,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-283',
     name: 'Metaphysical Mourning Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -760,7 +760,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-294',
     name: 'Mutating Psychedelic Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -789,7 +789,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-298',
     name: 'Nocturnal Social Whirl Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -818,7 +818,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-299',
     name: 'Dream Invasion Carnival Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -847,7 +847,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-289',
     name: 'Ascetic Gothic Silence Style',
-    category: '10. Studio Masterpieces',
+    category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

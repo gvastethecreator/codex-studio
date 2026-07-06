@@ -4,60 +4,6 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 
 export const GENERATED_STYLE_PRESETS = [
   {
-    id: 'SP11-034',
-    name: 'X-Ray',
-    category: '5. Micro Macro',
-    negativePrompt: 'skin, color',
-    style: {
-      aesthetic:
-        'Radiographic transparency, density-layer scan art, shadow-bone logic, Roentgen spectral imaging',
-      subject_treatment:
-        'Bone density, marrow-gradient contour, trabecular-web lattice, cortical-bone edge',
-      color_and_tone:
-        'Black and White negative, bone-white-on-void, tissue-grey gradient, lead-apron silhouette',
-      lighting_and_shadow:
-        'Backlit, light-box glow, radiograph-viewer luminance, cold-blue-white transmission',
-      texture_and_material:
-        'Film grain, silver-halide emulsion, radiation-speckle noise, acetate-base curl, developer-chemistry stain',
-      camera_and_composition:
-        'Interior revelation, nested transparency, density-stacked projection, skeletal or structural ghosting',
-      atmosphere_and_mood: 'Scientific, raw, clinical, mortality-aware, interior mystery',
-      rendering_and_quality:
-        'Medical, spooky, internal, diagnostic-penetration, see-through-magic, radiograph precision',
-      key_features:
-        'Bone-like density, joint-space gaps when anatomy exists, metallic artifacts, fracture-line shadows, trabecular grain',
-      creative_brief:
-        'Define identity through radiograph grammar: density-layer projection, monochrome transmission mapping, and internal-structure hierarchy should carry the style. If the input has a body, reveal skeletal contrast; if it is an object, expose its hidden construction without forcing a hospital frame. Apply X-Ray as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
-    },
-  },
-  {
-    id: 'SP11-035',
-    name: 'Thermal Vision',
-    category: '5. Micro Macro',
-    negativePrompt: 'natural colors',
-    style: {
-      aesthetic: 'Heat map camera, predator-vision, infrared-surveillance, temperature-portrait',
-      subject_treatment:
-        'Heat gradients, thermal-blob contours, isotherm-boundary curves, heat-plume wisps',
-      color_and_tone:
-        'Rainbow (Red hot, Blue cold), ironbow-spectrum, white-hot core, magenta-warm, cyan-cool',
-      lighting_and_shadow:
-        'Emission, self-illuminated heat, body-heat radiance, engine-exhaust glow, no external source',
-      texture_and_material:
-        'Digital noise, sensor-speckle, hot-pixel artifacts, low-res thermal grain, calibration-barrier banding',
-      camera_and_composition:
-        'Blobby heat zones, thermal-plume bloom, heat-bleed blur, convection-trail smear',
-      atmosphere_and_mood:
-        'Tactical, hunting, infrared-silence, predator-stalk, heat-signature dread',
-      rendering_and_quality:
-        'Military, predator, seeker-head vision, FLIR-targeting, night-hunt aesthetic',
-      key_features:
-        'Heat glow, temperature-scale bar, crosshair-reticle, hot-spot bloom, cold-background contrast',
-      creative_brief:
-        'Preserve this preset through thermal-imaging grammar: emissive heat maps, false-color temperature bands, sensor-noise artifacts, and blob-based isotherm contours should define identity beyond tactical hunt narratives. Apply Thermal Vision as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
-    },
-  },
-  {
     id: 'SP11-056',
     name: 'Electron Microscope',
     category: '5. Micro Macro',

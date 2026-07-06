@@ -5,9 +5,14 @@ This file describes local repo workflows for people and agents. It is not a glos
 ## Initial Codex Studio Setup
 
 1. Use the repo-local skill `skills/codex-studio-setup/SKILL.md` to prepare a new checkout or repair a blocked welcome screen.
-2. The copyable onboarding prompt must point to that skill and pass a runtime snapshot: repo, local API, Studio Library, `.env.local`, Bun, Codex CLI, app-server, Local Codex Session, and readiness.
+2. The copyable onboarding prompt must point to that skill and pass an
+   app-readiness snapshot: repo, local API, Studio Library, `.env.local`,
+   supported scripts, Bun/Codex diagnostic metadata, Codex Runtime Doctor
+   capability, app-server, Local Codex Session, and readiness.
 3. Automated setup must use supported repo commands: `bun install` when needed, `bun run studio:init`, `bun run dev`, `/api/health`, `/api/codex/session`, and `/api/app-server/start`.
-4. Use `bun run runtime:doctor` when Codex CLI path/version/app-server support is unclear; it must guide updates rather than auto-update silently.
+4. Use `bun run runtime:doctor` when Codex CLI path, diagnostic metadata, or
+   app-server support is unclear; capability and app readiness decide setup,
+   not an exact tool release.
 5. If ChatGPT login is missing, stop with the exact action `codex login`; do not mark readiness complete without a real session.
 6. Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.
 7. Close with `bun run test`, `bun run check`, and `bun run build`. For onboarding/frontend changes, also add visual verification.
@@ -15,7 +20,7 @@ This file describes local repo workflows for people and agents. It is not a glos
 ## Update Dependencies And Basic CI
 
 1. Treat `package.json`, `bun.lock`, `.github/workflows/ci.yml`, `README.md`, and `CONTRIBUTING.md` as the auditable baseline.
-2. Resolve current versions before editing: `npm view <package> version` for npm packages and official GitHub tags for actions.
+2. For dependency-update work, resolve current package metadata before editing: `npm view <package> version` for npm packages and official GitHub tags for actions.
 3. Keep `packageManager`, CI, and the local runtime on the same Bun baseline.
 4. If `vite`, `oxlint`, or `oxfmt` change, sync direct dependencies and `overrides`.
 5. Use Bun to mutate dependencies and the lockfile; do not edit `bun.lock` by hand.

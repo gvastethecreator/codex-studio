@@ -8,6 +8,14 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_11/aesthetics-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_11/food-and-drink-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_11/micro-macro-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_11/sensor-and-technical-imaging-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_11/diagram-and-technical-drawing-7').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

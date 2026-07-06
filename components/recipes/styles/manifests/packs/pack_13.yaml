@@ -1,10 +1,37 @@
 schemaVersion: 1
 id: pack_13
 name: Anime Character & Lifestyle
-description: Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and expressive everyday storytelling.
+description: Character-first anime styles spanning shojo, magical themes, slice-of-life moods, and
+  expressive everyday storytelling.
 categories:
+  - id: core-anime
+    name: 1. Core Anime
+    presetRefs:
+      - pack_13/SP13-001.yaml
+      - pack_13/SP13-002.yaml
+      - pack_13/SP13-004.yaml
+      - pack_13/SP13-006.yaml
+      - pack_13/SP13-007.yaml
+      - pack_13/SP13-008.yaml
+      - pack_13/SP13-009.yaml
+      - pack_13/SP13-010.yaml
+      - pack_13/SP13-011.yaml
+      - pack_13/SP13-012.yaml
+      - pack_13/SP13-014.yaml
+      - pack_13/SP13-016.yaml
+      - pack_13/SP13-017.yaml
+      - pack_13/SP13-019.yaml
+      - pack_13/SP13-020.yaml
+  - id: slice-of-life-school-music
+    name: 2. Slice Of Life, School And Music
+    presetRefs:
+      - pack_13/SP13-003.yaml
+      - pack_13/SP13-005.yaml
+      - pack_13/SP13-013.yaml
+      - pack_13/SP13-015.yaml
+      - pack_13/SP13-018.yaml
   - id: shojo-magical-girl-and-visionary-classics
-    name: 4. Shojo, Magical Girl & Visionary Classics
+    name: 3. Shojo, Magical Girl & Visionary Classics
     presetRefs:
       - pack_13/SP05-013.yaml
       - pack_13/SP05-162.yaml
@@ -47,7 +74,7 @@ categories:
       - pack_13/SP05-048.yaml
       - pack_13/SP05-049.yaml
   - id: slice-of-life-and-moe
-    name: 5. Slice of Life & Moe
+    name: 4. Slice Of Life & Moe
     presetRefs:
       - pack_13/SP05-081.yaml
       - pack_13/SP05-202.yaml
@@ -80,7 +107,7 @@ categories:
       - pack_13/SP05-089.yaml
       - pack_13/SP05-203.yaml
   - id: anime-style-spectrum
-    name: 12. Anime Style Spectrum
+    name: 5. Anime Style Spectrum
     presetRefs:
       - pack_13/SP05-324.yaml
       - pack_13/SP05-323.yaml
@@ -124,33 +151,27 @@ categories:
       - pack_13/SP05-117.yaml
       - pack_13/SP05-120.yaml
       - pack_13/SP05-103.yaml
-  - id: core-anime
-    name: 1. Core Anime
-    presetRefs:
-      - pack_13/SP13-001.yaml
-      - pack_13/SP13-002.yaml
-      - pack_13/SP13-004.yaml
-      - pack_13/SP13-006.yaml
-      - pack_13/SP13-007.yaml
-      - pack_13/SP13-008.yaml
-      - pack_13/SP13-009.yaml
-      - pack_13/SP13-010.yaml
-      - pack_13/SP13-011.yaml
-      - pack_13/SP13-012.yaml
-      - pack_13/SP13-014.yaml
-      - pack_13/SP13-016.yaml
-      - pack_13/SP13-017.yaml
-      - pack_13/SP13-019.yaml
-      - pack_13/SP13-020.yaml
-  - id: slice-of-life-school-music
-    name: 2. Slice of Life / School / Music
-    presetRefs:
-      - pack_13/SP13-003.yaml
-      - pack_13/SP13-005.yaml
-      - pack_13/SP13-013.yaml
-      - pack_13/SP13-015.yaml
-      - pack_13/SP13-018.yaml
 presetRefs:
+  - pack_13/SP13-001.yaml
+  - pack_13/SP13-002.yaml
+  - pack_13/SP13-004.yaml
+  - pack_13/SP13-006.yaml
+  - pack_13/SP13-007.yaml
+  - pack_13/SP13-008.yaml
+  - pack_13/SP13-009.yaml
+  - pack_13/SP13-010.yaml
+  - pack_13/SP13-011.yaml
+  - pack_13/SP13-012.yaml
+  - pack_13/SP13-014.yaml
+  - pack_13/SP13-016.yaml
+  - pack_13/SP13-017.yaml
+  - pack_13/SP13-019.yaml
+  - pack_13/SP13-020.yaml
+  - pack_13/SP13-003.yaml
+  - pack_13/SP13-005.yaml
+  - pack_13/SP13-013.yaml
+  - pack_13/SP13-015.yaml
+  - pack_13/SP13-018.yaml
   - pack_13/SP05-013.yaml
   - pack_13/SP05-162.yaml
   - pack_13/SP05-168.yaml
@@ -263,23 +284,3 @@ presetRefs:
   - pack_13/SP05-117.yaml
   - pack_13/SP05-120.yaml
   - pack_13/SP05-103.yaml
-  - pack_13/SP13-001.yaml
-  - pack_13/SP13-002.yaml
-  - pack_13/SP13-004.yaml
-  - pack_13/SP13-006.yaml
-  - pack_13/SP13-007.yaml
-  - pack_13/SP13-008.yaml
-  - pack_13/SP13-009.yaml
-  - pack_13/SP13-010.yaml
-  - pack_13/SP13-011.yaml
-  - pack_13/SP13-012.yaml
-  - pack_13/SP13-014.yaml
-  - pack_13/SP13-016.yaml
-  - pack_13/SP13-017.yaml
-  - pack_13/SP13-019.yaml
-  - pack_13/SP13-020.yaml
-  - pack_13/SP13-003.yaml
-  - pack_13/SP13-005.yaml
-  - pack_13/SP13-013.yaml
-  - pack_13/SP13-015.yaml
-  - pack_13/SP13-018.yaml

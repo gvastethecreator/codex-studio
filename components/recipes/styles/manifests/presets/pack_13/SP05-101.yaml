@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-101
 packId: pack_13
 name: Abstract Fluid Painterly Anime
-category: 12. Anime Style Spectrum
+category: 5. Anime Style Spectrum
 version: 1
 supportedTasks:
   - image_generate
@@ -55,7 +55,7 @@ taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
   categoryId: anime-style-spectrum
-  categoryName: 12. Anime Style Spectrum
+  categoryName: 5. Anime Style Spectrum
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum

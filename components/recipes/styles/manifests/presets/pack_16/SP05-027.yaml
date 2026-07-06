@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-027
 packId: pack_16
 name: Spiral Overdrive Bravado Style
-category: 2. 2000s Classics
+category: 3. 2000s Classics
 version: 1
 supportedTasks:
   - image_generate
@@ -63,7 +63,7 @@ taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
   categoryId: 2000s-classics
-  categoryName: 2. 2000s Classics
+  categoryName: 3. 2000s Classics
   tags:
     - anime-classics-and-prestige
     - 2000s-classics

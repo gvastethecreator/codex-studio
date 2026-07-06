@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-164
 packId: pack_16
 name: Wet Techno-Noir Consciousness Style
-category: 3. 90s Golden Era
+category: 2. 90s Golden Era
 version: 1
 supportedTasks:
   - image_generate
@@ -68,7 +68,7 @@ taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
   categoryId: 90s-golden-era
-  categoryName: 3. 90s Golden Era
+  categoryName: 2. 90s Golden Era
   tags:
     - anime-classics-and-prestige
     - 90s-golden-era

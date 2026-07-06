@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP13-005
 packId: pack_13
 name: Rainy Slice of Life
-category: 2. Slice of Life / School / Music
+category: 2. Slice Of Life, School And Music
 version: 1
 supportedTasks:
   - image_generate
@@ -51,7 +51,7 @@ taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
   categoryId: slice-of-life-school-music
-  categoryName: 2. Slice of Life / School / Music
+  categoryName: 2. Slice Of Life, School And Music
   tags:
     - anime-character-and-lifestyle
     - anime

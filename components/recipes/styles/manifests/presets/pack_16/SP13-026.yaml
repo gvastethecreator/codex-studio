@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP13-026
 packId: pack_16
 name: Pre-Impact Ritual Stillness Style
-category: 4. Samurais & Medieval
+category: 6. Samurai & Medieval
 version: 1
 supportedTasks:
   - image_generate
@@ -53,7 +53,7 @@ taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
   categoryId: samurai-and-medieval
-  categoryName: 4. Samurais & Medieval
+  categoryName: 6. Samurai & Medieval
   tags:
     - anime-classics-and-prestige
     - anime

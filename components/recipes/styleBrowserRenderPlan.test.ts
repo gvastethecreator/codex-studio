@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 import {
+  STYLE_BROWSER_FLAT_GROUP_KEY,
   collectStylePresetPreviewSources,
   createStyleBrowserProcessedData,
   createStyleBrowserRenderPlan,
@@ -82,7 +83,7 @@ describe('styleBrowserRenderPlan', () => {
     expect(Object.values(processedData.groups).flat()).toEqual([]);
   });
 
-  it('matches Styles browser category window and eager render behavior', () => {
+  it('keeps every category visible while bounding eager render behavior', () => {
     const presets = [
       ...Array.from({ length: 20 }, (_, index) => preset(`a-${index}`, 'A')),
       ...Array.from({ length: 4 }, (_, index) => preset(`b-${index}`, 'B')),
@@ -102,7 +103,6 @@ describe('styleBrowserRenderPlan', () => {
     });
     const renderPlan = createStyleBrowserRenderPlan({
       processedData,
-      showAllStyleCategories: false,
     });
 
     expect(renderPlan.visibleStyleGroupEntries.map(([category]) => category)).toEqual([
@@ -110,16 +110,16 @@ describe('styleBrowserRenderPlan', () => {
       'B',
       'C',
       'D',
+      'E',
     ]);
-    expect(renderPlan.hiddenStyleGroupEntries.map(([category]) => category)).toEqual(['E']);
     expect(measureStyleBrowserRenderPlan({ processedData, renderPlan })).toMatchObject({
-      mountedCategorySections: 4,
+      mountedCategorySections: 5,
       eagerCategorySections: 2,
-      placeholderCategorySections: 2,
-      eagerPresetCards: 20,
-      plannedPresetCards: 28,
-      hiddenCategorySections: 1,
-      hiddenPresetCards: 4,
+      placeholderCategorySections: 3,
+      eagerPresetCards: 24,
+      plannedPresetCards: 36,
+      hiddenCategorySections: 0,
+      hiddenPresetCards: 0,
     });
   });
 
@@ -137,7 +137,6 @@ describe('styleBrowserRenderPlan', () => {
     });
     const renderPlan = createStyleBrowserRenderPlan({
       processedData,
-      showAllStyleCategories: false,
     });
 
     expect(processedData.favorites.map((item) => item.id)).toEqual(['fav']);
@@ -150,7 +149,7 @@ describe('styleBrowserRenderPlan', () => {
     });
   });
 
-  it('orders numbered subcategories naturally before slicing visible groups', () => {
+  it('orders numbered subcategories naturally while keeping all groups visible', () => {
     const presets = [
       preset('a-1', '10. Last'),
       preset('a-2', '2. Second'),
@@ -172,7 +171,6 @@ describe('styleBrowserRenderPlan', () => {
 
     const renderPlan = createStyleBrowserRenderPlan({
       processedData,
-      showAllStyleCategories: false,
     });
 
     expect(renderPlan.styleGroupEntries.map(([category]) => category)).toEqual([
@@ -188,7 +186,140 @@ describe('styleBrowserRenderPlan', () => {
       '2. Second',
       '3. Third',
       '10. Last',
+      'Zeta',
     ]);
+  });
+
+  it('renders flat view as one source-ordered card grid without category sorting', () => {
+    const presets = [
+      preset('z-late-name', '10. Last'),
+      preset('a-early-name', '2. Second'),
+      preset('m-middle-name', '1. First'),
+    ];
+
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: ['z-late-name'],
+      searchQuery: '',
+      sortOrder: 'source',
+      showFavoritesOnly: false,
+      viewMode: 'flat',
+    });
+
+    const renderPlan = createStyleBrowserRenderPlan({
+      processedData,
+      viewMode: 'flat',
+    });
+
+    expect(processedData.favorites).toEqual([]);
+    expect(processedData.flatPresets.map((item) => item.id)).toEqual([
+      'z-late-name',
+      'a-early-name',
+      'm-middle-name',
+    ]);
+    expect(renderPlan.styleGroupEntries).toHaveLength(1);
+    expect(renderPlan.styleGroupEntries[0]?.[0]).toBe(STYLE_BROWSER_FLAT_GROUP_KEY);
+    expect(renderPlan.styleGroupEntries[0]?.[1].map((item) => item.id)).toEqual([
+      'z-late-name',
+      'a-early-name',
+      'm-middle-name',
+    ]);
+  });
+
+  it('sorts cards by creation and update dates with stable source fallback', () => {
+    const oldPreset = {
+      ...preset('old', 'A'),
+      createdAt: '2026-01-01T00:00:00.000Z',
+      updatedAt: '2026-01-04T00:00:00.000Z',
+    };
+    const missingPreset = preset('missing', 'A');
+    const recentPreset = {
+      ...preset('recent', 'A'),
+      createdAt: '2026-03-01T00:00:00.000Z',
+      updatedAt: '2026-01-02T00:00:00.000Z',
+    };
+    const uiUpdatedPreset = {
+      ...preset('ui-updated', 'A'),
+      createdAt: '2026-02-01T00:00:00.000Z',
+      ui: { updatedAt: '2026-04-01T00:00:00.000Z' },
+    };
+    const presets = [oldPreset, missingPreset, recentPreset, uiUpdatedPreset];
+
+    const createdData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: [],
+      searchQuery: '',
+      sortOrder: 'created_desc',
+      showFavoritesOnly: false,
+      viewMode: 'flat',
+    });
+    const updatedData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'pack_01',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: [],
+      searchQuery: '',
+      sortOrder: 'updated_desc',
+      showFavoritesOnly: false,
+      viewMode: 'flat',
+    });
+
+    expect(createdData.flatPresets.map((item) => item.id)).toEqual([
+      'recent',
+      'ui-updated',
+      'old',
+      'missing',
+    ]);
+    expect(updatedData.flatPresets.map((item) => item.id)).toEqual([
+      'ui-updated',
+      'old',
+      'recent',
+      'missing',
+    ]);
+  });
+
+  it('renders global category view by source category without pinning favorites away', () => {
+    const presets = [
+      preset('photo-first', '10. Last'),
+      preset('anime-first', '1. First'),
+      preset('photo-second', '2. Second'),
+    ];
+
+    const processedData = createStyleBrowserProcessedData({
+      activePack: pack(presets),
+      currentPackId: 'all_categories',
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: ['photo-first'],
+      categoryKeyForPreset: (item) =>
+        item.id.startsWith('photo') ? `Photo / ${item.category}` : `Anime / ${item.category}`,
+      pinFavorites: false,
+      searchQuery: '',
+      sortOrder: 'source',
+      showFavoritesOnly: false,
+      viewMode: 'grouped',
+    });
+
+    const renderPlan = createStyleBrowserRenderPlan({
+      groupOrder: 'source',
+      processedData,
+      viewMode: 'grouped',
+    });
+
+    expect(processedData.favorites).toEqual([]);
+    expect(renderPlan.styleGroupEntries.map(([category]) => category)).toEqual([
+      'Photo / 10. Last',
+      'Anime / 1. First',
+      'Photo / 2. Second',
+    ]);
+    expect(renderPlan.styleGroupEntries[0]?.[1].map((item) => item.id)).toEqual(['photo-first']);
   });
 
   it('collects preview preload sources only from eager planned cards', () => {
@@ -211,7 +342,6 @@ describe('styleBrowserRenderPlan', () => {
     });
     const renderPlan = createStyleBrowserRenderPlan({
       processedData,
-      showAllStyleCategories: false,
     });
     const visualStateByPresetId = new Map(
       presets.map((item) => [item.id, { exampleImageSrc: `/preview/${item.id}.webp` }]),
@@ -223,7 +353,7 @@ describe('styleBrowserRenderPlan', () => {
         renderPlan,
         visualStateByPresetId,
       }),
-    ).toHaveLength(32);
+    ).toHaveLength(40);
   });
 
   it('de-duplicates preview preload sources', () => {
@@ -240,7 +370,6 @@ describe('styleBrowserRenderPlan', () => {
     });
     const renderPlan = createStyleBrowserRenderPlan({
       processedData,
-      showAllStyleCategories: false,
     });
     const visualStateByPresetId = new Map([
       ['a-1', { exampleImageSrc: '/preview/shared.webp' }],
@@ -257,7 +386,7 @@ describe('styleBrowserRenderPlan', () => {
     ).toEqual(['/preview/shared.webp', '/preview/b-1.webp']);
   });
 
-  it('keeps expanded preload sources bounded to eager visible groups', () => {
+  it('keeps preload sources bounded to eager visible groups after full expansion', () => {
     const presets = [
       ...Array.from({ length: 20 }, (_, index) => preset(`a-${index}`, 'A')),
       ...Array.from({ length: 20 }, (_, index) => preset(`b-${index}`, 'B')),
@@ -277,7 +406,6 @@ describe('styleBrowserRenderPlan', () => {
     });
     const renderPlan = createStyleBrowserRenderPlan({
       processedData,
-      showAllStyleCategories: true,
     });
     const visualStateByPresetId = new Map(
       presets.map((item) => [item.id, { exampleImageSrc: `/preview/${item.id}.webp` }]),
@@ -288,7 +416,6 @@ describe('styleBrowserRenderPlan', () => {
         processedData,
         renderPlan,
         visualStateByPresetId,
-        expandedStyleGroups: new Set(['A', 'B', 'C', 'D', 'E']),
       }),
     ).toHaveLength(40);
   });

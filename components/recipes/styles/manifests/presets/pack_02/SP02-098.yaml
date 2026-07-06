@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-098
 packId: pack_02
 name: Napkin Scribble Blueprint
-category: 6. Caricature And Cartoon Styles
+category: 8. Hand-Drawn And DIY Media
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - caricature-and-cartoon-styles
+  - hand-drawn-and-diy-media
 visualDna:
   aesthetic: >-
     Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring
@@ -61,11 +61,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: caricature-and-cartoon-styles
-  categoryName: 6. Caricature And Cartoon Styles
+  categoryId: hand-drawn-and-diy-media
+  categoryName: 8. Hand-Drawn And DIY Media
   tags:
     - cinematic-and-media
-    - caricature-and-cartoon-styles
+    - hand-drawn-and-diy-media
   supportedTasks:
     - image_generate
     - image_edit

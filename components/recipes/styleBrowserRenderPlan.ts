@@ -1,17 +1,23 @@
-import {
-  STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
-  STYLE_GROUP_INITIAL_RENDER_LIMIT,
-  getVisibleStylePresets,
-} from './styleGridVirtualization';
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
 
-export type StyleBrowserSortOrder = 'az' | 'za';
+export type StyleBrowserSortOrder =
+  | 'source'
+  | 'az'
+  | 'za'
+  | 'created_desc'
+  | 'created_asc'
+  | 'updated_desc'
+  | 'updated_asc';
+export type StyleBrowserGroupOrder = 'natural' | 'source';
+export type StyleBrowserViewMode = 'grouped' | 'flat';
 
 export const STYLE_BROWSER_EAGER_SECTION_LIMIT = 2;
+export const STYLE_BROWSER_FLAT_GROUP_KEY = '__all_style_cards__';
 
 export interface StyleBrowserProcessedData {
   favorites: StyleRuntimePreset[];
   groups: Record<string, StyleRuntimePreset[]>;
+  flatPresets: StyleRuntimePreset[];
 }
 
 export interface CreateStyleBrowserProcessedDataInput {
@@ -21,21 +27,23 @@ export interface CreateStyleBrowserProcessedDataInput {
   favoritePresets: StyleRuntimePreset[];
   searchPresets?: StyleRuntimePreset[];
   favoriteIds: string[];
+  categoryKeyForPreset?: (preset: StyleRuntimePreset) => string;
+  pinFavorites?: boolean;
   searchQuery: string;
   sortOrder: StyleBrowserSortOrder;
   showFavoritesOnly: boolean;
+  viewMode?: StyleBrowserViewMode;
 }
 
 export interface StyleBrowserRenderPlan {
   styleGroupEntries: [string, StyleRuntimePreset[]][];
   visibleStyleGroupEntries: [string, StyleRuntimePreset[]][];
-  hiddenStyleGroupEntries: [string, StyleRuntimePreset[]][];
-  hiddenStylePresetCount: number;
 }
 
 export interface CreateStyleBrowserRenderPlanInput {
+  groupOrder?: StyleBrowserGroupOrder;
   processedData: StyleBrowserProcessedData;
-  showAllStyleCategories: boolean;
+  viewMode?: StyleBrowserViewMode;
 }
 
 export interface StyleBrowserRenderMeasurement {
@@ -56,7 +64,6 @@ export interface CollectStylePresetPreviewSourcesInput {
   processedData: StyleBrowserProcessedData;
   renderPlan: StyleBrowserRenderPlan;
   visualStateByPresetId: ReadonlyMap<string, StylePresetPreviewSourceState>;
-  expandedStyleGroups?: ReadonlySet<string>;
   eagerSectionLimit?: number;
 }
 
@@ -82,6 +89,133 @@ function compareStyleCategoryNames(first: string, second: string) {
     sensitivity: 'base',
     numeric: true,
   });
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function parseDateValue(value: unknown): number | null {
+  if (value instanceof Date) {
+    const timestamp = value.getTime();
+    return Number.isFinite(timestamp) ? timestamp : null;
+  }
+
+  if (typeof value === 'number') return Number.isFinite(value) ? value : null;
+
+  if (typeof value !== 'string') return null;
+  const timestamp = Date.parse(value);
+  return Number.isFinite(timestamp) ? timestamp : null;
+}
+
+function getPresetDateValue(preset: StyleRuntimePreset, keys: readonly string[]) {
+  const presetRecord = preset as unknown as Record<string, unknown>;
+  for (const key of keys) {
+    const value = parseDateValue(presetRecord[key]);
+    if (value !== null) return value;
+  }
+
+  if (!isRecord(preset.ui)) return null;
+  for (const key of keys) {
+    const value = parseDateValue(preset.ui[key]);
+    if (value !== null) return value;
+  }
+
+  return null;
+}
+
+function compareSourceOrder(
+  first: StyleRuntimePreset,
+  second: StyleRuntimePreset,
+  sourceIndexByPresetId: ReadonlyMap<string, number>,
+) {
+  return (
+    (sourceIndexByPresetId.get(first.id) ?? Number.MAX_SAFE_INTEGER) -
+    (sourceIndexByPresetId.get(second.id) ?? Number.MAX_SAFE_INTEGER)
+  );
+}
+
+function compareNameOrder(
+  first: StyleRuntimePreset,
+  second: StyleRuntimePreset,
+  direction: 'asc' | 'desc',
+  sourceIndexByPresetId: ReadonlyMap<string, number>,
+) {
+  const compared =
+    direction === 'asc'
+      ? first.name.localeCompare(second.name, undefined, { sensitivity: 'base', numeric: true })
+      : second.name.localeCompare(first.name, undefined, { sensitivity: 'base', numeric: true });
+
+  return compared || compareSourceOrder(first, second, sourceIndexByPresetId);
+}
+
+function compareDateOrder(
+  first: StyleRuntimePreset,
+  second: StyleRuntimePreset,
+  keys: readonly string[],
+  direction: 'asc' | 'desc',
+  sourceIndexByPresetId: ReadonlyMap<string, number>,
+) {
+  const firstDate = getPresetDateValue(first, keys);
+  const secondDate = getPresetDateValue(second, keys);
+
+  if (firstDate !== null && secondDate !== null && firstDate !== secondDate) {
+    return direction === 'asc' ? firstDate - secondDate : secondDate - firstDate;
+  }
+
+  if (firstDate !== null && secondDate === null) return -1;
+  if (firstDate === null && secondDate !== null) return 1;
+
+  return compareSourceOrder(first, second, sourceIndexByPresetId);
+}
+
+function compareStylePresets(
+  first: StyleRuntimePreset,
+  second: StyleRuntimePreset,
+  sortOrder: StyleBrowserSortOrder,
+  sourceIndexByPresetId: ReadonlyMap<string, number>,
+) {
+  switch (sortOrder) {
+    case 'az':
+      return compareNameOrder(first, second, 'asc', sourceIndexByPresetId);
+    case 'za':
+      return compareNameOrder(first, second, 'desc', sourceIndexByPresetId);
+    case 'created_desc':
+      return compareDateOrder(
+        first,
+        second,
+        ['createdAt', 'created_at', 'created', 'creationDate'],
+        'desc',
+        sourceIndexByPresetId,
+      );
+    case 'created_asc':
+      return compareDateOrder(
+        first,
+        second,
+        ['createdAt', 'created_at', 'created', 'creationDate'],
+        'asc',
+        sourceIndexByPresetId,
+      );
+    case 'updated_desc':
+      return compareDateOrder(
+        first,
+        second,
+        ['updatedAt', 'updated_at', 'updated', 'modifiedAt', 'modified_at'],
+        'desc',
+        sourceIndexByPresetId,
+      );
+    case 'updated_asc':
+      return compareDateOrder(
+        first,
+        second,
+        ['updatedAt', 'updated_at', 'updated', 'modifiedAt', 'modified_at'],
+        'asc',
+        sourceIndexByPresetId,
+      );
+    case 'source':
+    default:
+      return compareSourceOrder(first, second, sourceIndexByPresetId);
+  }
 }
 
 function describeSearchValue(value: unknown): string {
@@ -110,9 +244,12 @@ export function createStyleBrowserProcessedData({
   favoritePresets,
   searchPresets,
   favoriteIds,
+  categoryKeyForPreset,
+  pinFavorites = true,
   searchQuery,
   sortOrder,
   showFavoritesOnly,
+  viewMode = 'grouped',
 }: CreateStyleBrowserProcessedDataInput): StyleBrowserProcessedData {
   const normalizedSearch = searchQuery.trim().toLowerCase();
   const favoriteSet = new Set(favoriteIds);
@@ -131,25 +268,40 @@ export function createStyleBrowserProcessedData({
     filtered = filtered.filter((preset) => favoriteSet.has(preset.id));
   }
 
-  filtered.sort((first, second) =>
-    sortOrder === 'az'
-      ? first.name.localeCompare(second.name)
-      : second.name.localeCompare(first.name),
+  const sourceIndexByPresetId = new Map(
+    rawPresets.map((preset, index) => [preset.id, index] as const),
   );
+  const orderedPresets =
+    sortOrder === 'source'
+      ? filtered
+      : filtered.sort((first, second) =>
+          compareStylePresets(first, second, sortOrder, sourceIndexByPresetId),
+        );
+
+  if (viewMode === 'flat') {
+    return {
+      favorites: [],
+      groups: {},
+      flatPresets: orderedPresets,
+    };
+  }
 
   const favorites: StyleRuntimePreset[] = [];
   const groups: Record<string, StyleRuntimePreset[]> = {};
+  const assignPresetToGroup = (preset: StyleRuntimePreset) => {
+    const category = categoryKeyForPreset?.(preset) || preset.category || 'General';
+    groups[category] = [...(groups[category] ?? []), preset];
+  };
 
-  if (currentPackId === favoritesPackId) {
-    for (const preset of filtered) {
-      const category = preset.category || 'General';
-      groups[category] = [...(groups[category] ?? []), preset];
+  if (currentPackId === favoritesPackId || !pinFavorites) {
+    for (const preset of orderedPresets) {
+      assignPresetToGroup(preset);
     }
-    return { favorites, groups };
+    return { favorites, groups, flatPresets: orderedPresets };
   }
 
   const nonFavorites: StyleRuntimePreset[] = [];
-  for (const preset of filtered) {
+  for (const preset of orderedPresets) {
     if (favoriteSet.has(preset.id)) {
       favorites.push(preset);
     } else {
@@ -158,71 +310,62 @@ export function createStyleBrowserProcessedData({
   }
 
   for (const preset of nonFavorites) {
-    const category = preset.category || 'General';
-    groups[category] = [...(groups[category] ?? []), preset];
+    assignPresetToGroup(preset);
   }
 
-  return { favorites, groups };
+  return { favorites, groups, flatPresets: orderedPresets };
 }
 
 export function createStyleBrowserRenderPlan({
+  groupOrder = 'natural',
   processedData,
-  showAllStyleCategories,
+  viewMode = 'grouped',
 }: CreateStyleBrowserRenderPlanInput): StyleBrowserRenderPlan {
-  const styleGroupEntries = (
-    Object.entries(processedData.groups) as [string, StyleRuntimePreset[]][]
-  ).sort(([firstCategory], [secondCategory]) =>
-    compareStyleCategoryNames(firstCategory, secondCategory),
-  );
-  const visibleStyleGroupEntries = showAllStyleCategories
-    ? styleGroupEntries
-    : styleGroupEntries.slice(0, STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
-  const hiddenStyleGroupEntries = showAllStyleCategories
-    ? []
-    : styleGroupEntries.slice(STYLE_CATEGORY_INITIAL_RENDER_LIMIT);
-  const hiddenStylePresetCount = hiddenStyleGroupEntries.reduce(
-    (total, [, presets]) => total + presets.length,
-    0,
-  );
+  if (viewMode === 'flat') {
+    const styleGroupEntries: [string, StyleRuntimePreset[]][] =
+      processedData.flatPresets.length > 0
+        ? [[STYLE_BROWSER_FLAT_GROUP_KEY, processedData.flatPresets]]
+        : [];
+
+    return {
+      styleGroupEntries,
+      visibleStyleGroupEntries: styleGroupEntries,
+    };
+  }
+
+  const styleGroupEntries = Object.entries(processedData.groups) as [
+    string,
+    StyleRuntimePreset[],
+  ][];
+  if (groupOrder === 'natural') {
+    styleGroupEntries.sort(([firstCategory], [secondCategory]) =>
+      compareStyleCategoryNames(firstCategory, secondCategory),
+    );
+  }
 
   return {
     styleGroupEntries,
-    visibleStyleGroupEntries,
-    hiddenStyleGroupEntries,
-    hiddenStylePresetCount,
+    visibleStyleGroupEntries: styleGroupEntries,
   };
 }
 
 export function measureStyleBrowserRenderPlan({
   processedData,
   renderPlan,
-  expandedStyleGroups = new Set<string>(),
   eagerSectionLimit = STYLE_BROWSER_EAGER_SECTION_LIMIT,
 }: {
   processedData: StyleBrowserProcessedData;
   renderPlan: StyleBrowserRenderPlan;
-  expandedStyleGroups?: Set<string>;
   eagerSectionLimit?: number;
 }): StyleBrowserRenderMeasurement {
   const hasFavoritesSection = processedData.favorites.length > 0;
   const categoryEagerBudget = Math.max(0, eagerSectionLimit - (hasFavoritesSection ? 1 : 0));
-  const categorySections = renderPlan.visibleStyleGroupEntries.map(([category, presets], index) => {
-    const expanded = expandedStyleGroups.has(category);
-    const plannedCards = getVisibleStylePresets(
-      presets,
-      expanded,
-      STYLE_GROUP_INITIAL_RENDER_LIMIT,
-    ).length;
+  const categorySections = renderPlan.visibleStyleGroupEntries.map(([, presets], index) => {
+    const plannedCards = presets.length;
     const eager = index < categoryEagerBudget;
     return { eager, plannedCards };
   });
-  const favoritesPlannedCards = hasFavoritesSection
-    ? getVisibleStylePresets(
-        processedData.favorites,
-        expandedStyleGroups.has('favorites'),
-        STYLE_GROUP_INITIAL_RENDER_LIMIT,
-      ).length
-    : 0;
+  const favoritesPlannedCards = hasFavoritesSection ? processedData.favorites.length : 0;
   const eagerCategorySections =
     (hasFavoritesSection ? 1 : 0) + categorySections.filter((section) => section.eager).length;
   const plannedPresetCards =
@@ -243,8 +386,8 @@ export function measureStyleBrowserRenderPlan({
     placeholderCategorySections: Math.max(0, mountedCategorySections - eagerCategorySections),
     eagerPresetCards,
     plannedPresetCards,
-    hiddenCategorySections: renderPlan.hiddenStyleGroupEntries.length,
-    hiddenPresetCards: renderPlan.hiddenStylePresetCount,
+    hiddenCategorySections: 0,
+    hiddenPresetCards: 0,
   };
 }
 
@@ -252,33 +395,25 @@ export function collectStylePresetPreviewSources({
   processedData,
   renderPlan,
   visualStateByPresetId,
-  expandedStyleGroups = new Set<string>(),
   eagerSectionLimit = STYLE_BROWSER_EAGER_SECTION_LIMIT,
 }: CollectStylePresetPreviewSourcesInput): string[] {
   const sources = new Set<string>();
   const hasFavoritesSection = processedData.favorites.length > 0;
   const categoryEagerBudget = Math.max(0, eagerSectionLimit - (hasFavoritesSection ? 1 : 0));
 
-  const addPresetSources = (presets: StyleRuntimePreset[], expanded: boolean) => {
-    for (const preset of getVisibleStylePresets(
-      presets,
-      expanded,
-      STYLE_GROUP_INITIAL_RENDER_LIMIT,
-    )) {
+  const addPresetSources = (presets: StyleRuntimePreset[]) => {
+    for (const preset of presets) {
       const source = visualStateByPresetId.get(preset.id)?.exampleImageSrc;
       if (source) sources.add(source);
     }
   };
 
   if (hasFavoritesSection) {
-    addPresetSources(processedData.favorites, expandedStyleGroups.has('favorites'));
+    addPresetSources(processedData.favorites);
   }
 
-  for (const [category, presets] of renderPlan.visibleStyleGroupEntries.slice(
-    0,
-    categoryEagerBudget,
-  )) {
-    addPresetSources(presets, expandedStyleGroups.has(category));
+  for (const [, presets] of renderPlan.visibleStyleGroupEntries.slice(0, categoryEagerBudget)) {
+    addPresetSources(presets);
   }
 
   return [...sources];

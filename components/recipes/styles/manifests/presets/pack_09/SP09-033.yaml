@@ -5,6 +5,7 @@ name: Peeling Paint
 category: 3. Weathering And Decay
 version: 1
 supportedTasks:
+  - texture_generate
   - image_generate
   - image_edit
   - style_preset_card
@@ -41,6 +42,7 @@ taxonomy:
     - texture-and-materiality
     - weathering-and-decay
   supportedTasks:
+    - texture_generate
     - image_generate
     - image_edit
     - style_preset_card

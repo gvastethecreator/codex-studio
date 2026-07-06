@@ -175,6 +175,27 @@ export function migrateDatabase(database: Database) {
     "CREATE INDEX IF NOT EXISTS idx_catalog_workspace_key_deleted_created_desc ON catalog_images(COALESCE(workspace_id, 'default'), is_deleted, created_at DESC)",
   );
   database.run(`
+    CREATE TABLE IF NOT EXISTS user_style_presets (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      category TEXT NOT NULL,
+      domain TEXT,
+      tags_json TEXT NOT NULL,
+      supported_tasks_json TEXT NOT NULL,
+      visual_dna_json TEXT NOT NULL,
+      avoid_rules_json TEXT NOT NULL,
+      attributes_json TEXT,
+      assets_json TEXT,
+      source_json TEXT,
+      is_archived INTEGER DEFAULT 0,
+      created_at TEXT NOT NULL,
+      updated_at TEXT NOT NULL
+    )
+  `);
+  database.run(
+    'CREATE INDEX IF NOT EXISTS idx_user_style_archived_updated ON user_style_presets(is_archived, updated_at DESC)',
+  );
+  database.run(`
     CREATE TABLE IF NOT EXISTS workspaces (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,

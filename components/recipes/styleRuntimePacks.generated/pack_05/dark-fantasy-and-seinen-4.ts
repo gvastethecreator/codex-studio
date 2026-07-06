@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-278',
     name: 'Mineral Loneliness Fracture Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-261',
     name: 'Eclipse Scar Weight Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-262',
     name: 'Moral Suspicion Realism Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-263',
     name: 'Black Signal Nihilism Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-264',
     name: 'Clinical Innocence Rupture Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -146,7 +146,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-265',
     name: 'Rose-Black Baroque Decadence Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-266',
     name: 'Black Particle Fugitive Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-267',
     name: 'Blood-Ink Severance Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-268',
     name: 'Neon Despair Pressure Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-269',
     name: 'Smoke-Filled Calculation Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-270',
     name: 'Cursed Severance Compassion Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-271',
     name: 'Sun-Reclaimed Concrete Mystery Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-272',
     name: 'Machine Mourning Noir Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-273',
     name: 'Luminous Natural Cycle Calm Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -398,7 +398,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-274',
     name: 'Winter Guilt Suspicion Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-276',
     name: 'Sun-Bleached Cruel Discipline Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-277',
     name: 'Rusted Neon Adolescent Dread Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -482,7 +482,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-279',
     name: 'Red-Optic Security Noir Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-280',
     name: 'Lantern Retribution Ritual Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -538,7 +538,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-275',
     name: 'Civic Rumor Breakdown Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -566,7 +566,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-066',
     name: 'Invasive Anatomy Thriller Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -594,7 +594,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-069',
     name: 'Procedural Low-Fantasy Grit Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -622,7 +622,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-061',
     name: 'Crosshatched Doom Weight Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -650,7 +650,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-062',
     name: 'Crimson Hunger Metamorphosis Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -678,7 +678,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-063',
     name: 'Crimson Gothic Authority Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -706,7 +706,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-064',
     name: 'Wind-Scoured Redemption Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -734,7 +734,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-065',
     name: 'Pale Threshold Horror Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -762,7 +762,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-067',
     name: 'Lush Abyssal Toll Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -790,7 +790,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-068',
     name: 'Grimy Sorcery Collision Style',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -818,7 +818,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-070',
     name: 'Devilman Crybaby – Neon Tragic Metamorphosis',
-    category: '9. Dark Fantasy & Seinen',
+    category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

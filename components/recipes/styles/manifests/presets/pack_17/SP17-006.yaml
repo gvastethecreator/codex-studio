@@ -16,15 +16,17 @@ tags:
 visualDna:
   aesthetic: Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial space.
   subject_treatment: >-
-    A flattened tapestry hunt scene with a lion-bird monster, fallen tower, profile riders, patterned
-    garments, and heraldic outlines.
+    Translate any subject into damaged medieval tapestry language with flattened ceremonial space,
+    profile-like simplification, heraldic outlines, faded wool color, and symbolic woven contour.
   color_and_tone: Faded wool reds, moss green, ochre, smoke blue, dark brown linework, and aged linen base.
   lighting_and_shadow: Flat woven light with shadow described through thread density, border contrast, and dark pattern blocks.
   texture_and_material: Visible fibers, worn edges, stitched contours, frayed borders, thread gaps, and softened pigment.
   camera_and_composition: Frontal frieze layout, stacked scenes, ornamental borders, and iconic subject placement.
   atmosphere_and_mood: Ancient, folkloric, mysterious, and ceremonial.
   rendering_and_quality: High-resolution textile illustration preserving woven texture and crisp symbolic readability.
-  creative_brief: A portable medieval-tapestry style for battles, monsters, portraits, maps, rituals, or mythic objects.
+  creative_brief: >-
+    Reusable visual system for any subject needing damaged medieval-tapestry texture, flat mythic silhouette,
+    faded ceremonial color, and symbolic readability.
 avoidRules:
   - photorealism
   - modern poster layout

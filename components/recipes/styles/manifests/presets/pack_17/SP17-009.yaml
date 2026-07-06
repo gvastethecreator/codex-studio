@@ -16,8 +16,8 @@ tags:
 visualDna:
   aesthetic: Gothic fantasy noir under a crimson moon, mixing medieval alleys, wrought iron, and supernatural fog.
   subject_treatment: >-
-    A crimson-moon court matriarch with tall moth wings and a crown of iron keys stepping from a balcony
-    shrine, one clawed hand lifting a lantern, alley beasts reduced to small masks below.
+    Transform any subject with aristocratic gothic-noir tension, crimson rim halos, wrought-iron contour
+    accents, nocturnal elegance, and predatory poise without requiring a fixed persona or scene layout.
   color_and_tone: >-
     Moonlit lavender gray, bruised burgundy, dusty rose highlights, black iron contours, old brick red, and
     one warm lantern core.
@@ -32,7 +32,9 @@ visualDna:
   rendering_and_quality: >-
     Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled
     red accents.
-  creative_brief: Use when the subject needs gothic street tension, moon symbolism, and noir medieval atmosphere.
+  creative_brief: >-
+    Reusable visual system for any subject needing crimson moon symbolism, gothic-noir tension, elegant
+    menace, and medieval nocturne atmosphere.
 avoidRules:
   - neon cyberpunk
   - modern streetwear

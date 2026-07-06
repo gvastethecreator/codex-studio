@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-100
 packId: pack_05
 name: DanMachi – Dungeon Lantern Adventure
-category: 8. Isekai & High Fantasy
+category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:
   - image_generate
@@ -68,7 +68,7 @@ taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
   categoryId: isekai-and-high-fantasy
-  categoryName: 8. Isekai & High Fantasy
+  categoryName: 3. Isekai & High Fantasy
   tags:
     - anime-battle-and-worlds
     - isekai-and-high-fantasy

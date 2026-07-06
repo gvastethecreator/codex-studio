@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Baroque plague-era fantasy with beaked masks, ornate decay, medicine cabinets, and candlelit dread.',
       subject_treatment:
-        'A baroque plague physician with bird mask, caged moth familiar, glove tools, apothecary bottles, and broad simplified ruffle shapes, avoiding lace microdetail.',
+        'Transform any subject with plague-baroque elegance, beaked or masklike silhouette cues when appropriate, clinical ritual polish, candlelit decay, and broad ruffle-like shape rhythm without forcing a profession.',
       color_and_tone: 'Sepia black, aged ivory, oxidized green, wine red, and sickly candle gold.',
       lighting_and_shadow:
         'Simple candle key light, soft baroque shadow blocks, and clean glass highlights keep objects readable.',
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained horror.',
       creative_brief:
-        'Applies plague-baroque costume, medicine, and candlelit decay to any fantasy subject or scene.',
+        'Reusable visual system for any subject needing plague-baroque costume logic, clinical dread, candlelit decay, and theatrical gothic polish.',
     },
   },
   {
@@ -67,7 +67,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Gothic fantasy noir under a crimson moon, mixing medieval alleys, wrought iron, and supernatural fog.',
       subject_treatment:
-        'A crimson-moon court matriarch with tall moth wings and a crown of iron keys stepping from a balcony shrine, one clawed hand lifting a lantern, alley beasts reduced to small masks below.',
+        'Transform any subject with aristocratic gothic-noir tension, crimson rim halos, wrought-iron contour accents, nocturnal elegance, and predatory poise without requiring a fixed persona or scene layout.',
       color_and_tone:
         'Moonlit lavender gray, bruised burgundy, dusty rose highlights, black iron contours, old brick red, and one warm lantern core.',
       lighting_and_shadow:
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled red accents.',
       creative_brief:
-        'Use when the subject needs gothic street tension, moon symbolism, and noir medieval atmosphere.',
+        'Reusable visual system for any subject needing crimson moon symbolism, gothic-noir tension, elegant menace, and medieval nocturne atmosphere.',
     },
   },
   {
@@ -94,7 +94,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Gothic reliquary horror mixing surgical precision, saintly display cases, and medieval ritual equipment.',
       subject_treatment:
-        'A tall surgical reliquary golem with glass chest shrine, long gloved arms, brass halo frame, and restrained ritual tools carried like sacred weapons, not a doctor portrait.',
+        'Transform any subject with surgical-gothic reliquary logic, glass-and-brass accents, ritual restraint, clinical silhouette elongation, and sacred tool geometry without imposing a fixed construct.',
       color_and_tone:
         'Bone white, old brass, deep umber, oxidized green, black velvet, and minimal red seals.',
       lighting_and_shadow:
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Glass reliquaries, polished steel, wax seals, stained parchment, aged wood, and velvet dust.',
       camera_and_composition:
-        'Tabletop altar staging, symmetrical cabinets, close-up object clusters, and shallow depth.',
+        'Symmetrical close framing with shallow depth, controlled object hierarchy, clean glass highlights, and restrained ritual spacing.',
       atmosphere_and_mood: 'Clinical, sacred, tense, and taboo without graphic body horror.',
       rendering_and_quality:
         'Gothic still-life illustration with precise objects, clean linework, visible details, and painterly shadow control.',
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Gothic courtly fantasy where beasts, nobles, and scholars gather in candlelit bestiary drama.',
       subject_treatment:
-        'A goat-headed bestiary king seated high over the candlelit court, antler crown, clawed velvet robes, hound familiar at his feet, and nobles kept small around the throne.',
+        'Transform any subject with courtly gothic refinement, bestiary symbolism, candlelit contour hierarchy, velvet-dark material logic, and theatrical restraint without imposing a ruler pose or entourage.',
       color_and_tone:
         'Candle gold, velvet black, parchment cream, muted jewel tones, and dark green shadows.',
       lighting_and_shadow:
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Luxurious gothic illustration with sharp costume detail and candlelit material richness.',
       creative_brief:
-        'Converts subjects into courtly medieval-gothic tableaux with bestiary symbolism and refined unease.',
+        'Reusable visual system for any subject needing courtly medieval-gothic polish, bestiary symbolism, candlelit unease, and refined theatrical darkness.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

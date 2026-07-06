@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-095',
     name: 'Frieren – Afterquest Melancholy Fantasy',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -35,7 +35,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-099',
     name: 'Shield Hero – Defensive Underdog Fantasy',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -64,7 +64,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-248',
     name: 'Delicious in Dungeon - Stove-Top Monster Cuisine',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -93,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-252',
     name: 'Campfire Cooking in Another World - Merchant Road Stew',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-257',
     name: 'Tsukimichi - Moonlit Merchant Wanderer',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-258',
     name: 'Handyman Saitou in Another World - Toolbox Party Quest',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -180,7 +180,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-259',
     name: 'Ranking of Kings - Storybook Crown Courage',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-260',
     name: 'Princess Connect! Re:Dive - Banquet Quest Pastel',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -238,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-091',
     name: 'Sword Art Online – Glowing VR Adventure',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-092',
     name: 'Re:Zero – Reset-Loop Dark Fantasy',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -296,7 +296,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-093',
     name: 'Mushoku Tensei – Wandering Mage Chronicle',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -325,7 +325,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-094',
     name: 'Konosuba – Party-Quest Comedy',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -354,7 +354,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-098',
     name: 'Slime Isekai – Monster-Nation Bright Fantasy',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-100',
     name: 'DanMachi – Dungeon Lantern Adventure',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-241',
     name: 'Systemic Cooperation Grid Style',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -441,7 +441,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-242',
     name: 'Smoke-Mud Vulnerability Style',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -470,7 +470,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-243',
     name: 'Classic OVA Quest Tapestry Style',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -499,7 +499,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-244',
     name: 'The Twelve Kingdoms - Imperial Destiny Chronicle',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -528,7 +528,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-245',
     name: 'The Vision of Escaflowne - Windblown Tarot Fantasy',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -557,7 +557,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-246',
     name: 'Magi - Labyrinth Jewel Caravan',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-249',
     name: 'Ascendance of a Bookworm - Printing Press Devotion',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-250',
     name: 'The Faraway Paladin - Quiet Temple Quest',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -644,7 +644,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-253',
     name: "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow",
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -673,7 +673,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-254',
     name: 'Fushigi Yuugi - Celestial Maiden Portal Epic',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -702,7 +702,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-255',
     name: 'Magic Knight Rayearth - Gem-Engine Rescue Quest',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -731,7 +731,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-096',
     name: 'No Game No Life – Hyper-Saturated Strategy Fantasy',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -760,7 +760,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-251',
     name: 'Saga of Tanya the Evil - Aerial War Mage Doctrine',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -789,7 +789,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-097',
     name: 'Overlord – Bone Throne Dark Dominion',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -818,7 +818,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-247',
     name: "The Ancient Magus' Bride - Thorn Cottage Enchantment",
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -847,7 +847,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-256',
     name: 'Inuyasha - Shrine-Well Sengoku Pursuit',
-    category: '8. Isekai & High Fantasy',
+    category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

@@ -16,8 +16,8 @@ tags:
 visualDna:
   aesthetic: Dreamlike synth-medieval fantasy with castles, prophecy light, analog glow, and retro-future mysticism.
   subject_treatment: >-
-    A synth-medieval oracle beast shaped like a glass stag-dragon, antlers holding a miniature castle moon,
-    one robed astronomer silhouette kneeling far below for scale.
+    Apply synth-medieval prophecy styling to any subject through glassy translucent planes, luminous rune
+    accents, analog glow, halo-like arcs, and retro-future mysticism without requiring a fixed oracle form.
   color_and_tone: >-
     Deep indigo, soft violet, electric cyan glass, pale gold star marks, muted magenta horizon, and clean
     black only for thin silhouettes.
@@ -26,11 +26,13 @@ visualDna:
     Translucent glass hide, enamel scales, velvet sky, polished stone plinth, clean analog bloom, and soft
     poster texture.
   camera_and_composition: >-
-    Centered creature icon, huge antler arc, tiny astronomer below, floating castle moon above, and wide
-    simple color planes.
+    Centered icon-like framing with large luminous arcs, generous simple color planes, clean scale hierarchy,
+    and soft poster balance.
   atmosphere_and_mood: Prophetic, wondrous, eerie, and retro-futurist.
   rendering_and_quality: Polished fantasy illustration with synthwave restraint, medieval shapes, and soft luminous finish.
-  creative_brief: Applies retro-future prophecy and luminous castle grammar to people, places, artifacts, or creatures.
+  creative_brief: >-
+    Reusable visual system for any subject needing retro-future prophecy, luminous medieval geometry, analog
+    bloom, and eerie wonder.
 avoidRules:
   - cyberpunk city
   - chrome overload

@@ -8,7 +8,7 @@ if (asJson) {
 } else {
   console.log(`[runtime:doctor] status=${report.status} canRunJobs=${report.canRunJobs}`);
   console.log(`- selected: ${report.selectedExecutable}`);
-  console.log(`- version: ${report.selectedVersion ?? 'unavailable'}`);
+  console.log(`- CLI metadata: ${report.selectedVersion ?? 'unavailable'}`);
   console.log(`- app-server: ${report.appServerSupported ? 'supported' : 'blocked'}`);
   console.log(`- action: ${report.recommendedAction}`);
 

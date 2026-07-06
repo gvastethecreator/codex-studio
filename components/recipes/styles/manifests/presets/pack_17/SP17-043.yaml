@@ -18,8 +18,8 @@ visualDna:
     Medieval-naturalist field guide plate for wyverns, dungeon beasts, horns, wings, claws, eggs, and relic
     habitats.
   subject_treatment: >-
-    A single anatomist wyvern specimen with two or three clean unlabeled shape insets for wing, claw, or skull
-    silhouette, never a crowded diagram sheet.
+    Translate any subject into anatomist field-guide logic with clean unlabeled shape insets, restrained
+    anatomical silhouette study, generous spacing, and specimen-like clarity without forcing a wyvern body.
   color_and_tone: Warm paper, black ink, sepia wash, moss green, muted blue, and small rust accents.
   lighting_and_shadow: Clear studio-plate light, open shadows, and readable form planes.
   texture_and_material: Smooth scientific ink, soft wash, parchment, horn, scale groups, and minimal stipple.
@@ -27,8 +27,8 @@ visualDna:
   atmosphere_and_mood: Scholarly, dangerous, curious, and old-world.
   rendering_and_quality: Clean fantasy field-guide illustration with controlled anatomy, simple shapes, and no dense scale mesh.
   creative_brief: >-
-    Bestiary field-guide style for medieval creatures, anatomy-like fantasy plates, relic habitats, and
-    specimen cards.
+    Reusable visual system for any subject needing bestiary field-guide clarity, anatomy-like fantasy plate
+    structure, unlabeled study insets, and clean specimen-card restraint.
 avoidRules:
   - readable annotations
   - anatomical gore

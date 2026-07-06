@@ -18,8 +18,8 @@ visualDna:
     Illuminated manuscript bestiary style with clean parchment, jewel-like flat accents, gold margins, and
     strange medieval beasts.
   subject_treatment: >-
-    An illuminated manuscript creature, marginal demon, or holy beast with tiny knights only as scale marks,
-    framed by ornament without readable letters.
+    Translate any subject into illuminated manuscript logic with flat pigment separation, clean ink contour,
+    restrained gold ornament, vellum spacing, and scholarly medieval oddness without requiring a fixed figure.
   color_and_tone: Parchment, black ink, muted lapis, red lake, dull gold, and soft green accents separated into flat planes.
   lighting_and_shadow: Flat manuscript lighting, little cast shadow, and strong color separation.
   texture_and_material: >-
@@ -29,8 +29,8 @@ visualDna:
   atmosphere_and_mood: Scholarly, magical, antique, and curious rather than grim.
   rendering_and_quality: Clean illuminated illustration with crisp edges, low texture load, and visible shape design.
   creative_brief: >-
-    Medieval codex style for bestiary creatures, magical animals, relic diagrams, or manuscript fantasy
-    scenes.
+    Reusable visual system for any subject needing illuminated codex discipline, parchment clarity,
+    jewel-like flat accents, and scholarly medieval curiosity.
 avoidRules:
   - readable marginal text
   - over-aged parchment grime

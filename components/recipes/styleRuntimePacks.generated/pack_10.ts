@@ -18,9 +18,13 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_10/diagram-print-and-light-systems-7').then(
+    import('./pack_10/diagram-and-data-systems-7').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_10/point-mosaic-and-glass-systems-8').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () =>
+    import('./pack_10/print-and-light-finishes-9').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

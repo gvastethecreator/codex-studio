@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-076
 packId: pack_10
 name: Blueprint
-category: 7. Diagram, Print & Light Systems
+category: 7. Diagram And Data Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - abstract-and-experimental
-  - diagram-print-and-light-systems
+  - diagram-and-data-systems
 visualDna:
   aesthetic: Technical drawing
   subject_treatment: White lines
@@ -34,11 +34,11 @@ attributes:
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
-  categoryId: diagram-print-and-light-systems
-  categoryName: 7. Diagram, Print & Light Systems
+  categoryId: diagram-and-data-systems
+  categoryName: 7. Diagram And Data Systems
   tags:
     - abstract-and-experimental
-    - diagram-print-and-light-systems
+    - diagram-and-data-systems
   supportedTasks:
     - image_generate
     - image_edit

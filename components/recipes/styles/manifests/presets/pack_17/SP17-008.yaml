@@ -16,8 +16,8 @@ tags:
 visualDna:
   aesthetic: Baroque plague-era fantasy with beaked masks, ornate decay, medicine cabinets, and candlelit dread.
   subject_treatment: >-
-    A baroque plague physician with bird mask, caged moth familiar, glove tools, apothecary bottles, and broad
-    simplified ruffle shapes, avoiding lace microdetail.
+    Transform any subject with plague-baroque elegance, beaked or masklike silhouette cues when appropriate,
+    clinical ritual polish, candlelit decay, and broad ruffle-like shape rhythm without forcing a profession.
   color_and_tone: Sepia black, aged ivory, oxidized green, wine red, and sickly candle gold.
   lighting_and_shadow: Simple candle key light, soft baroque shadow blocks, and clean glass highlights keep objects readable.
   texture_and_material: Velvet, cracked porcelain, parchment labels, cloudy glass, aged brass, wax, and dusty herbs.
@@ -26,7 +26,9 @@ visualDna:
   rendering_and_quality: >-
     Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained
     horror.
-  creative_brief: Applies plague-baroque costume, medicine, and candlelit decay to any fantasy subject or scene.
+  creative_brief: >-
+    Reusable visual system for any subject needing plague-baroque costume logic, clinical dread, candlelit
+    decay, and theatrical gothic polish.
 avoidRules:
   - modern hospital
   - sci-fi lab

@@ -59,11 +59,46 @@ describe('recipeProviderDirectives', () => {
     const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
 
     expect(serialized).toContain(
-      '- Style Slot 1: Studio Headshot; pack Photography & Realism; strength 0.70; aesthetic clean studio portrait',
+      '- Style Slot 1: Studio Headshot; pack Photography & Realism; strength 0.70; avoid rules merge; aesthetic clean studio portrait',
     );
     expect(serialized).toContain(
-      '- Style Slot 2: Film Noir; pack Cinematic & Media; strength 0.40; aesthetic hard shadow crime drama',
+      '- Style Slot 2: Film Noir; pack Cinematic & Media; strength 0.40; avoid rules merge; aesthetic hard shadow crime drama',
     );
+  });
+
+  it('serializes advanced style fields without preset ids', () => {
+    const styles = getRecipeModule('styles');
+    const directives =
+      styles &&
+      buildRecipeProviderDirectives(styles, {
+        presetId: 'SP09-006',
+        presetName: 'Polished Glass',
+        selectedStyles: [
+          {
+            presetId: 'SP09-006',
+            presetName: 'Polished Glass',
+            packName: 'Texture & Materiality',
+            strength: 0.75,
+            avoidRulesMode: 'strict',
+            fields: {
+              colorTone: { label: 'Color', enabled: true, weight: 1 },
+              cameraComposition: { label: 'Camera', enabled: false, weight: 1 },
+              textureMaterial: { label: 'Texture', enabled: true, weight: 0.4 },
+            },
+          },
+        ],
+        colorTone: 'Polished Glass (0.75): cool mineral blues',
+        textureMaterial: 'Polished Glass (0.75): glass caustics (field weight 0.40)',
+      });
+
+    const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
+
+    expect(serialized).toContain(
+      '- Style Slot 1: Polished Glass; pack Texture & Materiality; strength 0.75; active fields Color, Texture 0.40; avoid rules strict',
+    );
+    expect(serialized).toContain('- Color And Tone: Polished Glass (0.75): cool mineral blues');
+    expect(serialized).not.toContain('SP09-006');
+    expect(serialized).not.toContain('Camera');
   });
 
   it('builds compact provider directives for camera params', () => {

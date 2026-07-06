@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-044
 packId: pack_03
 name: Thermal Vision
-category: 2. Materials
+category: 8. Sensor And Technical Shaders
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - sensor-and-technical-shaders
 visualDna:
   aesthetic: Heat map 3D
   subject_treatment: Heat gradients
@@ -36,11 +36,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 2. Materials
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - sensor-and-technical-shaders
   supportedTasks:
     - image_generate
     - image_edit

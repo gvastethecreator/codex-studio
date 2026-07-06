@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP11-033
 packId: pack_11
 name: Blueprint
-category: 2. Artistic Mediums
+category: 7. Diagram And Technical Drawing
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - miscellaneous-and-fun
-  - artistic-mediums
+  - diagram-and-technical-drawing
 visualDna:
   aesthetic: Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination
   subject_treatment: White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges
@@ -39,11 +39,11 @@ attributes:
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun
-  categoryId: artistic-mediums
-  categoryName: 2. Artistic Mediums
+  categoryId: diagram-and-technical-drawing
+  categoryName: 7. Diagram And Technical Drawing
   tags:
     - miscellaneous-and-fun
-    - artistic-mediums
+    - diagram-and-technical-drawing
   supportedTasks:
     - image_generate
     - image_edit

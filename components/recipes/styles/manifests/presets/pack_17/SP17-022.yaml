@@ -18,8 +18,8 @@ visualDna:
     Mecha-medieval reliquary style where knight forms become walking shrines of armor, machinery, and sacred
     cores.
   subject_treatment: >-
-    A bulky reliquary mech-saint with chest shrine, banner antennae, halo hardware, and heavy ceremonial
-    limbs, no visible human face.
+    Transform any subject with mecha-reliquary logic, bulky ceremonial mass, halo hardware, sacred machine
+    plating, and faceless devotional presence without requiring a humanoid machine body.
   color_and_tone: Dark gunmetal, oxidized bronze, bone enamel, altar gold, red wax, and cool reactor light.
   lighting_and_shadow: Internal core glow lights armor seams while large external shadows keep the form monumental.
   texture_and_material: Riveted plates, cracked enamel, sacred glass, pistons, incense residue, wax seals, and scratched metal.
@@ -28,7 +28,9 @@ visualDna:
   rendering_and_quality: >-
     Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary
     ornament.
-  creative_brief: A compact style language for future knights, machines, shrines, constructs, or armored monsters.
+  creative_brief: >-
+    Reusable visual system for any subject needing future-medieval machine sanctity, reliquary hardware,
+    armored ceremony, and compact sacred-tech weight.
 avoidRules:
   - sleek anime robot
   - toy-like plastic

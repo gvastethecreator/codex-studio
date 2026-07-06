@@ -16,15 +16,17 @@ tags:
 visualDna:
   aesthetic: Severe crusader fantasy built from black iron, devotional symbols, and battle-worn austerity.
   subject_treatment: >-
-    A black-iron siege banner bearer built like a shield tower, faceless and angular, with relic scars and a
-    massive tabard silhouette.
+    Transform any subject with black-iron crusade severity, faceless angular mass, shieldlike silhouette
+    pressure, devotional heraldry, and relic-scar accents without imposing a fixed bearer role.
   color_and_tone: Blackened steel, faded linen, bone white, rust red, and cold silver edge highlights.
   lighting_and_shadow: Hard side light and simple rim accents define metal planes while keeping shadows clean and legible.
   texture_and_material: Hammered iron, chain links, rough cloth crosses, scarred shields, ash dust, and old enamel.
   camera_and_composition: Front-facing icon posture, shield-wall spacing, low horizon, and strong heraldic geometry.
   atmosphere_and_mood: Zealous, austere, militant, and haunted.
   rendering_and_quality: Detailed dark fantasy concept art with tactile armor, disciplined shapes, and restrained effects.
-  creative_brief: Turns subjects into severe medieval crusade imagery using iron mass, heraldry, and devotional menace.
+  creative_brief: >-
+    Reusable visual system for any subject needing severe medieval crusade imagery, iron mass, heraldic
+    pressure, and devotional menace.
 avoidRules:
   - polished tournament armor
   - bright paladin glow

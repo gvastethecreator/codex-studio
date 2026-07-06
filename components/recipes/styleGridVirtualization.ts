@@ -5,19 +5,12 @@ export interface StyleGroupPlaceholderHeightInput {
   hasShowMore: boolean;
 }
 
-export const STYLE_CATEGORY_INITIAL_RENDER_LIMIT = 4;
-export const STYLE_GROUP_INITIAL_RENDER_LIMIT = 16;
-
 const GRID_HORIZONTAL_PADDING_PX = 64;
 const CARD_GAP_PX = 16;
 const CARD_ASPECT_HEIGHT_RATIO = 4 / 3;
 const FALLBACK_CARD_WIDTH_PX = 220;
 const GROUP_HEADER_HEIGHT_PX = 40;
 const SHOW_MORE_BUTTON_HEIGHT_PX = 52;
-
-export function getVisibleStylePresets<T>(presets: T[], expanded: boolean, limit: number): T[] {
-  return expanded ? presets : presets.slice(0, limit);
-}
 
 export function estimateStyleGroupPlaceholderHeight({
   renderedPresetCount,

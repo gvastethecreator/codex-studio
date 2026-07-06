@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-013',
     name: 'Psychological Biomech Drama',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-162',
     name: 'Sailor Moon - Moonlit Ribbon Justice',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-168',
     name: 'Neon Genesis Evangelion - Red Alert Psychological Collapse',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-171',
     name: 'Slayers - Arcane Chaos Roadtrip',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-172',
     name: 'The Vision of Escaflowne - Tarot Mecha Fantasy',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -146,7 +146,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-176',
     name: 'Magic Knight Rayearth - Jewel Armor Quest',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-177',
     name: 'Martian Successor Nadesico - Cheerful Bridge-Deck Mecha',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-178',
     name: 'Blue Seed - Mythic Tokyo Purge',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-019',
     name: 'Wired Existential Glitch',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-020',
     name: 'Dream Card Enchanter',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-183',
     name: 'Kimi ni Todoke - Shy Hallway Bloom',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-190',
     name: 'Ao Haru Ride - Clean Uniform Reunion Ache',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-181',
     name: 'Fruits Basket - Zodiac Warmth and Grief',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-182',
     name: 'Nana - Black-Lace Apartment Heartbreak',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -398,7 +398,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-184',
     name: 'Ouran High School Host Club - Rose-Cloud Flirt Theater',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-185',
     name: 'Paradise Kiss - Runway Heartbreak Chic',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-186',
     name: 'Lovely Complex - Height-Gap Comedy Romance',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -482,7 +482,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-187',
     name: 'Skip Beat! - Revenge Idol Stardom Spark',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-188',
     name: 'Boys Over Flowers - Elite Campus Melodrama',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -538,7 +538,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-189',
     name: 'Orange - Sunset Regret Letter Drama',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -566,7 +566,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-191',
     name: 'Say I Love You - Night-Walk Intimacy',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -593,7 +593,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-192',
     name: 'Maid Sama! - Secret Uniform Double Life',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -621,7 +621,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-194',
     name: 'Rose of Versailles - Court Portrait Revolution',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -649,7 +649,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-195',
     name: 'Neighborhood Story - Harajuku Handmade Romance',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -677,7 +677,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-196',
     name: 'Honey and Clover - Art-School Spring Ache',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -705,7 +705,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-197',
     name: 'Kamisama Kiss - Shrine Romance and Fox Familiar',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -732,7 +732,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-198',
     name: 'Princess Jellyfish - Jelly-Color Otaku Makeover',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -760,7 +760,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-200',
     name: 'Sukitte Ii na yo - Rainy Umbrella Confession',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -788,7 +788,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-193',
     name: 'Snow White with the Red Hair - Herbal Courtship Fantasy',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -816,7 +816,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-199',
     name: 'Yona of the Dawn - Crimson Princess Resolve',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -844,7 +844,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-047',
     name: 'Airy First-Love Tenderness',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -872,7 +872,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-041',
     name: 'Ornate Palace Shojo',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -901,7 +901,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-042',
     name: 'Theatrical Duel Symbolism',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -929,7 +929,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-043',
     name: 'Soft Healing Ensemble',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -958,7 +958,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-044',
     name: 'Punk Romance Drama',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -986,7 +986,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-045',
     name: 'Rose-Petal Comedy Club',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -1014,7 +1014,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-046',
     name: 'Luminous Letter Drama',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -1042,7 +1042,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-050',
     name: 'Cozy Sign-Language Romance',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -1070,7 +1070,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-048',
     name: 'Crimson Hair Quest Romance',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -1098,7 +1098,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-049',
     name: 'Velvet Gothic Academy',
-    category: '4. Shojo, Magical Girl & Visionary Classics',
+    category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

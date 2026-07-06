@@ -1,7 +1,9 @@
 schemaVersion: 1
 id: pack_10
 name: Abstract & Experimental
-description: A semantically grouped abstract library covering geometric systems, reactive material flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven surfaces.
+description: A semantically grouped abstract library covering geometric systems, reactive material
+  flows, glitch-native signal noise, dream-logic image spaces, and pattern- or texture-driven
+  surfaces.
 categories:
   - id: geometric-abstraction
     name: 1. Geometric Abstraction
@@ -90,17 +92,23 @@ categories:
       - pack_10/SP10-063.yaml
       - pack_10/SP10-064.yaml
       - pack_10/SP10-071.yaml
-  - id: diagram-print-and-light-systems
-    name: 7. Diagram, Print & Light Systems
+  - id: diagram-and-data-systems
+    name: 7. Diagram And Data Systems
     presetRefs:
       - pack_10/SP10-067.yaml
       - pack_10/SP10-068.yaml
       - pack_10/SP10-069.yaml
+      - pack_10/SP10-076.yaml
+      - pack_10/SP10-077.yaml
+  - id: point-mosaic-and-glass-systems
+    name: 8. Point, Mosaic And Glass Systems
+    presetRefs:
       - pack_10/SP10-072.yaml
       - pack_10/SP10-073.yaml
       - pack_10/SP10-074.yaml
-      - pack_10/SP10-076.yaml
-      - pack_10/SP10-077.yaml
+  - id: print-and-light-finishes
+    name: 9. Print And Light Finishes
+    presetRefs:
       - pack_10/SP10-078.yaml
       - pack_10/SP10-079.yaml
       - pack_10/SP10-080.yaml
@@ -177,11 +185,11 @@ presetRefs:
   - pack_10/SP10-067.yaml
   - pack_10/SP10-068.yaml
   - pack_10/SP10-069.yaml
+  - pack_10/SP10-076.yaml
+  - pack_10/SP10-077.yaml
   - pack_10/SP10-072.yaml
   - pack_10/SP10-073.yaml
   - pack_10/SP10-074.yaml
-  - pack_10/SP10-076.yaml
-  - pack_10/SP10-077.yaml
   - pack_10/SP10-078.yaml
   - pack_10/SP10-079.yaml
   - pack_10/SP10-080.yaml

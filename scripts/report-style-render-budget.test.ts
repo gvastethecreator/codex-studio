@@ -7,21 +7,19 @@ describe('style render budget report', () => {
     const report = await createStyleRenderBudgetReport();
 
     expect(report.violations).toEqual([]);
-    expect(report.categoryInitialRenderLimit).toBe(4);
-    expect(report.groupInitialRenderLimit).toBe(16);
+    expect(report.categoryInitialRenderLimit).toBe(Number.MAX_SAFE_INTEGER);
+    expect(report.groupInitialRenderLimit).toBe(Number.MAX_SAFE_INTEGER);
     expect(report.expandedGroupRenderLimit).toBe(128);
     expect(report.packs).toHaveLength(17);
-    expect(
-      Math.max(...report.packs.map((pack) => pack.initialRenderedCategories)),
-    ).toBeLessThanOrEqual(4);
-    expect(
-      Math.max(...report.packs.map((pack) => pack.initialRenderedPresetCards)),
-    ).toBeLessThanOrEqual(128);
-    expect(Math.max(...report.packs.map((pack) => pack.eagerPresetCards))).toBeLessThanOrEqual(32);
+    expect(Math.max(...report.packs.map((pack) => pack.initialRenderedCategories))).toBe(10);
+    expect(Math.max(...report.packs.map((pack) => pack.initialRenderedPresetCards))).toBe(140);
+    expect(Math.max(...report.packs.map((pack) => pack.eagerPresetCards))).toBeLessThanOrEqual(256);
     expect(
       Math.max(...report.packs.map((pack) => pack.expandedEagerPresetCards)),
-    ).toBeLessThanOrEqual(32);
-    expect(Math.max(...report.packs.map((pack) => pack.mountedCategorySections))).toBe(4);
+    ).toBeLessThanOrEqual(256);
+    expect(Math.max(...report.packs.map((pack) => pack.mountedCategorySections))).toBe(10);
+    expect(Math.max(...report.packs.map((pack) => pack.hiddenCategories))).toBe(0);
+    expect(Math.max(...report.packs.map((pack) => pack.hiddenPresetCards))).toBe(0);
     expect(
       Math.min(...report.packs.map((pack) => pack.placeholderCategorySections)),
     ).toBeGreaterThanOrEqual(0);
@@ -29,12 +27,12 @@ describe('style render budget report', () => {
       expect.objectContaining({
         totalPresets: 135,
         totalCategories: 5,
-        eagerPresetCards: 21,
-        plannedPresetCards: 53,
-        placeholderCategorySections: 2,
+        eagerPresetCards: 70,
+        plannedPresetCards: 135,
+        placeholderCategorySections: 3,
         expandedMountedCategorySections: 5,
-        expandedEagerPresetCards: 21,
-        expandedPlannedPresetCards: 69,
+        expandedEagerPresetCards: 70,
+        expandedPlannedPresetCards: 135,
       }),
     );
     expect(

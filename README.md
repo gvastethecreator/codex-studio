@@ -4,7 +4,7 @@
 
 [![License: MIT](https://shieldcn.dev/badge/license-MIT-yellow.svg?variant=secondary&size=xs)](./LICENSE)
 [![Bun](https://shieldcn.dev/badge/runtime-Bun-black.svg?logo=bun&variant=branded&size=xs)](https://bun.sh)
-[![TypeScript](https://shieldcn.dev/badge/TypeScript-6.x-blue.svg?logo=typescript&variant=branded&size=xs)](https://www.typescriptlang.org/)
+[![TypeScript](https://shieldcn.dev/badge/TypeScript-blue.svg?logo=typescript&variant=branded&size=xs)](https://www.typescriptlang.org/)
 [![Status](https://shieldcn.dev/badge/status-preview-purple.svg?variant=secondary&size=xs)](#status)
 [![PRs Welcome](https://shieldcn.dev/badge/PRs-welcome-green.svg?variant=secondary&size=xs)](./CONTRIBUTING.md)
 
@@ -32,10 +32,13 @@ Codex Studio runs on your machine: a React/Vite studio UI, a local Bun/Hono serv
 
 Requirements:
 
-- Bun 1.3.14 on `PATH`
-- Codex CLI installed and authenticated with ChatGPT
-- `codex app-server` support in that Codex installation
-- A modern browser
+- Bun available on `PATH` and able to run this repo's scripts.
+- Codex CLI available, authenticated with ChatGPT, and exposing `codex app-server`.
+- A modern browser.
+
+The app readiness checks are the source of truth. Reported Bun and Codex
+metadata is diagnostic, not a hard setup gate; use `bun run runtime:doctor`
+when Codex path or app-server support is unclear.
 
 Fast path: ask Codex from this repo to run first setup.
 

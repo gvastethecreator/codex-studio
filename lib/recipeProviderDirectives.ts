@@ -59,6 +59,20 @@ function getSelectedStyleLayerDirectives(params: Record<string, unknown>) {
     const packName = getString(layer, 'packName');
     const aesthetic = getString(layer, 'aesthetic');
     const creativeBrief = getString(layer, 'creativeBrief');
+    const enabled = getBoolean(layer, 'enabled', true);
+    const avoidRulesMode = getString(layer, 'avoidRulesMode') || 'merge';
+    const fields = getRecord(layer, 'fields');
+    const activeFields = Object.values(fields).flatMap((field) => {
+      if (!field || typeof field !== 'object' || Array.isArray(field)) return [];
+      const fieldRecord = field as Record<string, unknown>;
+      if (fieldRecord.enabled === false) return [];
+      const label = getString(fieldRecord, 'label');
+      if (!label) return [];
+      const weight = getNumber(fieldRecord, 'weight', 1);
+      return weight >= 0.995
+        ? [label]
+        : [`${label} ${Math.max(0.1, Math.min(1, weight)).toFixed(2)}`];
+    });
 
     return [
       directive(
@@ -66,7 +80,10 @@ function getSelectedStyleLayerDirectives(params: Record<string, unknown>) {
         [
           presetName,
           packName ? `pack ${packName}` : '',
+          enabled ? '' : 'disabled',
           `strength ${Math.max(0.1, Math.min(1, strength)).toFixed(2)}`,
+          activeFields.length > 0 ? `active fields ${activeFields.join(', ')}` : '',
+          `avoid rules ${avoidRulesMode}`,
           aesthetic ? `aesthetic ${aesthetic}` : '',
           creativeBrief ? `brief ${creativeBrief}` : '',
         ]

@@ -93,7 +93,7 @@ Studio Readiness combines:
 - local backend reachability
 - Studio Library health
 - Codex CLI availability
-- Codex Runtime Doctor path/version/app-server support
+- Codex Runtime Doctor path, CLI metadata, and app-server capability
 - `codex app-server` lifecycle
 - Local Codex Session state
 

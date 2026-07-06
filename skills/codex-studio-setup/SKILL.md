@@ -12,11 +12,11 @@ screen provides a setup handoff prompt.
 
 Bring a Codex Studio checkout to a runnable local state:
 
-- dependencies installed;
+- dependencies installed and repo scripts runnable;
 - `.env.local` bootstrap present and sane;
 - Studio Library initialized outside the repo;
 - SQLite migrations/default library/default project created;
-- Codex CLI available and authenticated with ChatGPT login;
+- Codex CLI available, app-server-capable, and authenticated with ChatGPT login;
 - `codex app-server` reachable through the backend;
 - UI and backend start cleanly;
 - closeout checks run once.
@@ -59,8 +59,8 @@ For UI onboarding changes, also read:
 
 1. Inspect current state.
    - `git status --short`
-   - `bun --version`
-   - `codex --version`
+   - Bun can run repo scripts; collect tool metadata only when useful for diagnosis
+   - Codex Runtime Doctor status, selected executable, and app-server support; collect CLI metadata only when useful for diagnosis
    - check whether `.env.local` exists without printing secret values
    - inspect `package.json` scripts
 
@@ -84,6 +84,8 @@ For UI onboarding changes, also read:
 
 4. Diagnose failures.
    - For missing Codex CLI, report PATH/install issue and exact failed command.
+   - Do not block on an exact Bun or Codex release when app readiness,
+     supported scripts, app-server support, and Local Codex Session are healthy.
    - For occupied ports, identify conflicting ports from `.env.local` and
      suggest safe alternative values.
    - For Studio Library failures, fix missing folders via `bun run studio:init`

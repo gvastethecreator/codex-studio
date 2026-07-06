@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-324',
     name: 'Elastic Rom-Com Slapstick Timing',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'photoreal live-action look, muted deadpan lighting, over-detailed gritty textures, stiff static poses, heavy cinematic blur',
     style: {
@@ -33,7 +33,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-323',
     name: 'Prism-Glamour Transformation Polish',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'gritty realism, desaturated palettes, heavy mechanical armor focus, coarse rough inking, mundane flat lighting',
     style: {
@@ -61,7 +61,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-331',
     name: 'Chrome Impact Spectacle',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-334',
     name: 'Emergency Storyboard Tension',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -119,7 +119,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-339',
     name: 'Adult Suspense Microgesture',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'action spectacle, bright comedy palette, cute chibi design, glossy fantasy armor, neon cyberpunk glow, melodramatic speed lines, plastic 3d render',
     style: {
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-342',
     name: 'Reality-Slip Reflection Continuity',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'blunt horror gore, chaotic dream collage, flat sitcom framing, cartoon chibi acting, muddy low-detail realism, fantasy ornament clutter, obvious literal symbolism',
     style: {
@@ -177,7 +177,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-333',
     name: 'Hiroyuki Okiura - Quiet Human Naturalism',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'exaggerated action pose, glossy fantasy effects, chibi simplification, neon spectacle, cinematic explosions, idealized glamour anatomy, plastic 3d render',
     style: {
@@ -206,7 +206,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-335',
     name: 'Haruko Ichikawa - Mineral Void Serenity',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'noisy maximalism, cluttered environment, gritty horror texture, warm muddy palette, heavy outline cartooning, dense crowd staging, opaque plastic surfaces',
     style: {
@@ -235,7 +235,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-341',
     name: 'Hiromu Arakawa - Mechanical Warmth Ensemble',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'sterile machine render, cold villainous armor, glossy sci-fi UI, isolated product shot, flat generic workshop, weak mechanical detail, cynical grimdark tone',
     style: {
@@ -264,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-328',
     name: 'Retrofuture Distance Melancholy',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'photoreal spaceship realism, hard sci-fi UI clutter, comedic chibi tone, bright candy palette, grounded contemporary streetwear, shallow space scale',
     style: {
@@ -293,7 +293,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-109',
     name: 'Kinetic Impact-Line Choreography',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -322,7 +322,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-336',
     name: 'Takeshi Koike - Razorline Velocity Poster',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -351,7 +351,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-322',
     name: 'Celestial Vertical Ornament',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'photoreal anatomy realism, short compact proportions, casual modern minimal outfits, muddy lighting, thick comic inking',
     style: {
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-332',
     name: 'Ritual Allegory Icon System',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'literal realism, casual slice of life, unstyled modern room, flat documentary light, generic fantasy battle, low-symbolism composition, random prop clutter',
     style: {
@@ -408,7 +408,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-337',
     name: 'Technomagic Draftsmanship Burst',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -437,7 +437,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-111',
     name: 'Ukiyo-e Woodblock Anime',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       '3d, realistic, photo, smooth gradient, western, digital shading, soft shadows, modern, CGI',
     style: {
@@ -466,7 +466,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-327',
     name: 'Osamu Dezaki - Postcard Memory Freeze',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'casual snapshot, low-drama realism, flat documentary lighting, cluttered background, muddy color, weak focal emotion, generic modern polish',
     style: {
@@ -495,7 +495,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-340',
     name: 'Velvet Lash Refined Tension',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'crude action pose, rough sketch dirt, flat office lighting, low-glam casual realism, neon glitch clutter, comic chibi proportions, plastic 3d render',
     style: {
@@ -524,7 +524,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-325',
     name: 'Scratchy Concrete-Poetry Drift',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'clean glossy polish, perfect symmetry, sterile gradients, ultra-smooth linework, fantasy ornament overuse',
     style: {
@@ -552,7 +552,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-118',
     name: 'Backlit Contour Longing',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'dark, gloomy, muted, flat, grey, cloudy, indoor, harsh, detailed-face, visible features, gloomy',
     style: {
@@ -580,7 +580,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-113',
     name: 'Leaded Jewel-Light Segmentation',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'flat, opaque, subtle, muted, dark, realistic render, soft lighting, smooth gradient, simple',
     style: {
@@ -609,7 +609,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-326',
     name: 'Masaaki Yuasa - Rubber Reality Sprint',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -638,7 +638,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-116',
     name: 'Sumi-e Impact Brushstroke',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'detailed, filled, colorful, gradient, cel-shaded, clean outlines, rendered, polished, busy, noisy',
     style: {
@@ -667,7 +667,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-104',
     name: 'Minimalist Indie Quiet',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'busy, detailed, complex, epic, flashy, saturated, dramatic, crowded, explosive, maximalist',
     style: {
@@ -696,7 +696,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-112',
     name: 'Spray-Drip Wildstyle Anime',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'clean, polished, smooth, gallery art, finished, framed, subtle, gentle, indoors, white walls',
     style: {
@@ -725,7 +725,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-119',
     name: 'Chalk-Dust Slate Sketch',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'digital, permanent, clean, polished, colorful, smooth, glossy, final, professional, printed',
     style: {
@@ -753,7 +753,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-102',
     name: 'Gritty Realist Seinen',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt: 'cute, kawaii, bright, clean, cel shaded, simple, colorful, moe, soft, round',
     style: {
       aesthetic:
@@ -781,7 +781,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-321',
     name: 'Ether-Wisp Gothic Ornament',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'photorealism, heavy 3d shading, blunt contour lines, cluttered hard-background realism, modern streetwear styling',
     style: {
@@ -809,7 +809,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-110',
     name: 'Surreal Dream Logic',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'realistic, logical, grounded, physical, coherent, normal, straightforward, literal, linear, ordinary',
     style: {
@@ -838,7 +838,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-108',
     name: 'Fairy-Tale Storybook Soft',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'hard, sharp, dark, gritty, realistic, adult, serious, edgy, horror, violent, cynical',
     style: {
@@ -867,7 +867,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-106',
     name: 'Deco-Inspired Geometric Anime',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'organic, round, soft, flowing, natural, irregular, curved, messy, sketchy, unplanned',
     style: {
@@ -896,7 +896,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-330',
     name: 'Folkloric Deadpan Ink Catalog',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'glossy digital polish, photoreal creature rendering, clean modern fantasy UI, neon sci-fi palette, cute mascot simplification, empty flat background',
     style: {
@@ -925,7 +925,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-114',
     name: 'Threadbare Textile Patchwork',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt: 'smooth, digital, clean, 3d, glossy, polished, sharp, solid, opaque, uniform',
     style: {
       aesthetic:
@@ -953,7 +953,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-329',
     name: 'Spiral Panic Engraving',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -982,7 +982,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-338',
     name: 'Angular Combustion Iconography',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'still, calm, static, peaceful, gentle, slow, quiet, subtle, restrained, realistic movement',
     style: {
@@ -1011,7 +1011,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-105',
     name: 'Textured Hand-Drawn Rough',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'digital clean, vector smooth, perfect, polished, cel shaded, crisp, sharp, sterile, computer-generated',
     style: {
@@ -1040,7 +1040,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-101',
     name: 'Abstract Fluid Painterly Anime',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'hard outlines, cel shading, flat colors, rigid, static, geometric, stiff, low detail, simple',
     style: {
@@ -1068,7 +1068,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-115',
     name: 'Ice-Crystal Refractive',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'warm, soft, organic, round, colorful, dark, muted, earthy, glowing, fiery, textured',
     style: {
@@ -1097,7 +1097,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-107',
     name: 'Visceral Guro Horror',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'cute, clean, gentle, soft, kawaii, moe, pleasant, wholesome, safe, comfortable, beautiful',
     style: {
@@ -1126,7 +1126,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-117',
     name: 'Phosphor Sensor-Vision Grain',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'colorful, bright, warm, daylight, natural light, smooth, clean, cinematic, stylized, soft',
     style: {
@@ -1155,7 +1155,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-120',
     name: 'Thermal-Heat-Signature Vision',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'muted, low-contrast heat separation, natural color, realistic skin, normal lighting, daylight palette, non-sensor rendering',
     style: {
@@ -1184,7 +1184,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-103',
     name: 'Neon Hyperpop Anime',
-    category: '12. Anime Style Spectrum',
+    category: '5. Anime Style Spectrum',
     negativePrompt:
       'muted, subtle, soft, vintage, film grain, dark, moody, restrained, traditional, quiet',
     style: {

@@ -67,7 +67,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Penitential baroque medieval fantasy with tall devotional silhouettes, thorn crowns, reliquaries, veils, and severe sacred geometry.',
       subject_treatment:
-        'A bell-headed penitent saint or sorrowful armor icon carrying a candle reliquary, baroque and devotional without becoming another hooded knight.',
+        'Transform any subject with penitent baroque icon logic, sorrowful vertical emphasis, devotional brass accents, candlelit restraint, and solemn armor-like mass without imposing a fixed saint role.',
       color_and_tone:
         'Bone white, black ink, muted crimson accent, tarnished gold accent, and soft gray wash used sparingly.',
       lighting_and_shadow:
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean gothic illustration with elegant contour lines, broad values, and controlled ornament.',
       creative_brief:
-        'Original penitent gothic visual system for sorrowful medieval icons, relics, pilgrims, and sacred monsters.',
+        'Reusable visual system for any subject needing penitent gothic mood, devotional baroque weight, sorrowful verticality, and sacred icon restraint.',
     },
   },
   {
@@ -95,7 +95,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Bleak survival dungeon illustration with gaunt pilgrims, broken cells, ritual doors, prison stone, and desperate candlelight.',
       subject_treatment:
-        'A starved dungeon pilgrim-king standing before a sealed ritual door, long crown of bent nails, moth cloak, heavy key bundle, and one small companion silhouette for scale.',
+        'Transform any subject with starved pilgrimage severity, fragile elongated silhouette, bent-metal crown rhythm, moth-worn textile softness, and survival-horror restraint without forcing a doorway scene.',
       color_and_tone:
         'Parchment, soot ink, diluted sepia, pale candle yellow, and open midtone gray.',
       lighting_and_shadow:
@@ -108,7 +108,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean ink-and-wash fantasy illustration with limited detail and clear value control.',
       creative_brief:
-        'Original survival-horror dungeon style for fragile medieval journeys, cursed doors, relics, beasts, and desperate interiors.',
+        'Reusable visual system for any subject needing survival-horror medieval fragility, desperate pilgrimage mood, worn relic material, and restrained dread.',
     },
   },
   {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Medieval woodcut bestiary illustration with bold animal-monster silhouettes, carved line blocks, and simple old-paper fields.',
       subject_treatment:
-        'A woodcut goat-dragon, basilisk bird, or wyrm hybrid posed as one readable beast specimen with strong black shape groups.',
+        'Translate any subject into medieval woodcut logic with bold block silhouettes, carved mark economy, simplified anatomical rhythm, and strong black-white grouping without replacing it with a fixed specimen.',
       color_and_tone:
         'Off-white paper, black block ink, warm tan wash, and optional single muted red or green accent.',
       lighting_and_shadow:
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean woodcut-inspired digital illustration with big marks, not dense micro-hatching.',
       creative_brief:
-        'Original medieval bestiary woodcut system for creatures, dungeon monsters, heraldic beasts, and folklore plates.',
+        'Reusable visual system for any subject needing medieval woodcut bestiary flavor, carved ink discipline, old-paper restraint, and folkloric strangeness.',
     },
   },
   {
@@ -149,7 +149,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Illuminated manuscript bestiary style with clean parchment, jewel-like flat accents, gold margins, and strange medieval beasts.',
       subject_treatment:
-        'An illuminated manuscript creature, marginal demon, or holy beast with tiny knights only as scale marks, framed by ornament without readable letters.',
+        'Translate any subject into illuminated manuscript logic with flat pigment separation, clean ink contour, restrained gold ornament, vellum spacing, and scholarly medieval oddness without requiring a fixed figure.',
       color_and_tone:
         'Parchment, black ink, muted lapis, red lake, dull gold, and soft green accents separated into flat planes.',
       lighting_and_shadow:
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean illuminated illustration with crisp edges, low texture load, and visible shape design.',
       creative_brief:
-        'Medieval codex style for bestiary creatures, magical animals, relic diagrams, or manuscript fantasy scenes.',
+        'Reusable visual system for any subject needing illuminated codex discipline, parchment clarity, jewel-like flat accents, and scholarly medieval curiosity.',
     },
   },
   {
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Playful but eerie medieval marginalia with odd beasts, monkish diagrams, small grotesques, and clean parchment space.',
       subject_treatment:
-        'A scholastic marginalia scene led by a snail-knight, winged head, tiny demon, or scholar beast, playful and strange but textless.',
+        'Transform any subject with scholastic marginalia oddness, playful medieval exaggeration, tiny support motif rhythm, clean ink contour, and textless side-note humor without requiring a fixed joke.',
       color_and_tone:
         'Parchment, dark brown ink, dull red, faded blue, olive green, and wide blank margins.',
       lighting_and_shadow: 'Flat manuscript light with simple object shadows only when useful.',
@@ -188,7 +188,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean line illustration with low detail density and generous negative space.',
       creative_brief:
-        'Original marginalia style for weird bestiary creatures, monk doodles, occult jokes, and medieval fantasy side-notes.',
+        'Reusable visual system for any subject needing scholastic marginalia play, medieval side-note weirdness, textless occult humor, and clean parchment spacing.',
     },
   },
   {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners, crowns, and clean courtly geometry.',
       subject_treatment:
-        'A heraldic chimera crest with two-headed lion, eagle wing, serpent tail, or shield-guardian beast symmetry, no human subject.',
+        'Translate any subject into heraldic plate logic with mirrored silhouette order, shieldlike geometry, bold emblem contour, and bestiary-flavored symmetry without replacing the prompt subject.',
       color_and_tone:
         'Bone, black ink, dull gold, muted red, navy, and forest green in flat separated blocks.',
       lighting_and_shadow: 'Flat heraldic values, simple rim separation, and no murky atmosphere.',
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Graphic heraldic illustration with bold shapes, restrained detail, and denoised color fields.',
       creative_brief:
-        'Original heraldic bestiary language for knight houses, monsters, faction icons, banners, and medieval fantasy crests.',
+        'Reusable visual system for any subject needing heraldic bestiary language, faction-icon clarity, medieval crest geometry, and bold symmetrical contour.',
     },
   },
   {
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Medieval stained glass bestiary icon with lead lines, simplified beasts, chapel color, and luminous flat panes.',
       subject_treatment:
-        'A stained-glass manticore martyr with broad feathered wings, lion body, scorpion tail curled like a halo, and tiny chapel towers under its paws, all built from big luminous panes.',
+        'Translate any subject into stained-glass bestiary icon logic with broad luminous panes, sacred contour grouping, halo-like curve rhythm, and simplified symbolic anatomy without requiring a fixed martyr form.',
       color_and_tone:
         'Ivory lead gaps, muted ruby mane panes, cobalt wings, amber body, emerald tail, pale cyan halo glass, and restrained black leading.',
       lighting_and_shadow:
@@ -236,12 +236,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Large smooth glass panes, clean lead lines, subtle chips, denoised glow, and broad color blocks.',
       camera_and_composition:
-        'Tall arched window crop, centered manticore silhouette, wing span fills upper card, tail halo frames head, and no inscriptions.',
+        'Tall arched icon crop with centered luminous silhouette, broad pane rhythm, halo-like framing, and no inscriptions.',
       atmosphere_and_mood: 'Sacred, monstrous, luminous, and medieval.',
       rendering_and_quality:
         'Clean stained-glass illustration with broad panes, crisp contours, and no noisy dark lead buildup.',
       creative_brief:
-        'Stained-glass bestiary style for sacred creatures, chapel monsters, relic icons, and fantasy faction imagery.',
+        'Reusable visual system for any subject needing stained-glass bestiary clarity, sacred pane geometry, luminous icon presence, and fantasy faction symbolism.',
     },
   },
   {
@@ -255,7 +255,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet narrative panels.',
       subject_treatment:
-        'A tapestry creature legend: unicorn-like hunt spirit, lion-bird, or wyvern crossing woven hills with small court hunters in profile.',
+        'Translate any subject into woven legend logic with flat courtly silhouettes, thread-block color, decorative flora rhythm, and archaic profile simplification without requiring a fixed hunt narrative.',
       color_and_tone:
         'Linen, faded red, moss green, muted blue, ochre, dark brown outline, and soft cream fields.',
       lighting_and_shadow: 'No cinematic light; use flat woven value and color contrast.',
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean textile-inspired illustration with simplified forms and controlled fabric texture.',
       creative_brief:
-        'Medieval tapestry style for creature legends, courtly monsters, hunts, relic beasts, and folklore scenes.',
+        'Reusable visual system for any subject needing medieval tapestry flatness, woven color blocks, courtly legend tone, and quiet uncanny form.',
     },
   },
   {
@@ -281,7 +281,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Medieval-naturalist field guide plate for wyverns, dungeon beasts, horns, wings, claws, eggs, and relic habitats.',
       subject_treatment:
-        'A single anatomist wyvern specimen with two or three clean unlabeled shape insets for wing, claw, or skull silhouette, never a crowded diagram sheet.',
+        'Translate any subject into anatomist field-guide logic with clean unlabeled shape insets, restrained anatomical silhouette study, generous spacing, and specimen-like clarity without forcing a wyvern body.',
       color_and_tone:
         'Warm paper, black ink, sepia wash, moss green, muted blue, and small rust accents.',
       lighting_and_shadow: 'Clear studio-plate light, open shadows, and readable form planes.',
@@ -293,7 +293,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Clean fantasy field-guide illustration with controlled anatomy, simple shapes, and no dense scale mesh.',
       creative_brief:
-        'Bestiary field-guide style for medieval creatures, anatomy-like fantasy plates, relic habitats, and specimen cards.',
+        'Reusable visual system for any subject needing bestiary field-guide clarity, anatomy-like fantasy plate structure, unlabeled study insets, and clean specimen-card restraint.',
     },
   },
   {
@@ -305,21 +305,21 @@ export const GENERATED_STYLE_PRESETS = [
       'readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark, text',
     style: {
       aesthetic:
-        'Moonlit parchment oracle bestiary with quiet beasts, crescent shapes, omen stones, clean ink, and pale mystical accents.',
+        'Moonlit parchment oracle-bestiary style with quiet symbolic forms, crescent geometry, clean ink, and pale mystical accents.',
       subject_treatment:
-        'A moon parchment oracle beast: owl-wyrm familiar, omen bird, shrine fox, or dreamlike animal coiled around a small moon shrine.',
+        'Transform any prompt subject into a calm oracle-plate figure with simplified contours, omen-like silhouette hierarchy, restrained lunar symbolism, and hand-inked parchment discipline.',
       color_and_tone:
         'Pale parchment, black ink, moon white, muted violet, soft blue gray, and tiny silver-like highlights.',
       lighting_and_shadow: 'Simple moon-glow halo, open shadows, and smooth tonal fields.',
       texture_and_material:
-        'Clean parchment, soft ink wash, smooth stone, fur or feathers simplified into large groups.',
+        'Clean parchment, soft ink wash, smooth tonal stains, simplified surface groups, and restrained decorative marks.',
       camera_and_composition:
-        'Centered oracle-card crop, circular moon geometry, one creature, and sparse support symbols without text.',
+        "Centered oracle-plate hierarchy, circular moon geometry, generous breathing room, and sparse symbolic support marks that adapt to the user's subject without adding readable text.",
       atmosphere_and_mood: 'Quiet, magical, prophetic, eerie, and calm.',
       rendering_and_quality:
         'Clean fantasy oracle illustration with low noise, broad shapes, and restrained decorative marks.',
       creative_brief:
-        'Original oracle-bestiary style for moon animals, omen creatures, medieval familiars, relic beasts, and mystical cards.',
+        "Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit parchment ink, oracle-plate order, sparse symbolism, and quiet prophetic mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -9,6 +9,10 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () => import('./pack_04/editorial-and-poster-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_04/concept-art-4').then((module) => module.GENERATED_STYLE_PRESETS),
   () => import('./pack_04/ink-and-print-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_04/technical-and-reference-sheets-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

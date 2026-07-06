@@ -1,7 +1,8 @@
 schemaVersion: 1
 id: pack_05
 name: Anime Battle & Worlds
-description: High-energy anime styles focused on battles, power systems, mecha worlds, isekai adventures, and dark seinen action.
+description: High-energy anime styles focused on battles, power systems, mecha worlds, isekai
+  adventures, and dark seinen action.
 categories:
   - id: modern-shonen-and-action
     name: 1. Modern Shonen & Action
@@ -47,7 +48,7 @@ categories:
       - pack_05/SP05-143.yaml
       - pack_05/SP05-144.yaml
   - id: mecha-and-cyberpunk
-    name: 7. Mecha & Cyberpunk
+    name: 2. Mecha & Cyberpunk
     presetRefs:
       - pack_05/SP05-056.yaml
       - pack_05/SP05-222.yaml
@@ -80,7 +81,7 @@ categories:
       - pack_05/SP05-227.yaml
       - pack_05/SP05-053.yaml
   - id: isekai-and-high-fantasy
-    name: 8. Isekai & High Fantasy
+    name: 3. Isekai & High Fantasy
     presetRefs:
       - pack_05/SP05-095.yaml
       - pack_05/SP05-099.yaml
@@ -113,7 +114,7 @@ categories:
       - pack_05/SP05-247.yaml
       - pack_05/SP05-256.yaml
   - id: dark-fantasy-and-seinen
-    name: 9. Dark Fantasy & Seinen
+    name: 4. Dark Fantasy & Seinen
     presetRefs:
       - pack_05/SP05-278.yaml
       - pack_05/SP05-261.yaml
@@ -146,7 +147,7 @@ categories:
       - pack_05/SP05-068.yaml
       - pack_05/SP05-070.yaml
   - id: action
-    name: 3. Action
+    name: 5. Action Motion Setpieces
     presetRefs:
       - pack_05/SP13-021.yaml
       - pack_05/SP13-022.yaml

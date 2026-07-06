@@ -24,10 +24,10 @@ Setup agent flow:
 
 1. Read this guide, `README.md`, `SKILLS.md`, and
    `skills/codex-studio-setup/SKILL.md`.
-2. Inspect repo and runtime state without printing secrets:
+2. Inspect repo and app-owned runtime state without printing secrets:
    - `git status --short`
-   - `bun --version`
-   - `codex --version`
+   - Bun can run repo scripts; record tool metadata only when useful for diagnosis
+   - Codex Runtime Doctor status, app-server support, and selected executable; record CLI metadata only when useful for diagnosis
    - `.env.local` presence
    - Studio Library path and initialization state
    - `/api/health` and `/api/codex/session` when the server is reachable
@@ -40,7 +40,10 @@ Setup agent flow:
 6. If ChatGPT auth is missing, stop and ask the user to run `codex login` and
    choose ChatGPT. Do not claim setup is complete until that user-only step is
    done and rechecked.
-7. Close out with one validation pass and a concise readiness summary.
+7. Do not block setup on an exact Bun or Codex release when the app's
+   readiness checks, supported scripts, app-server support, and Local Codex
+   Session are healthy.
+8. Close out with one validation pass and a concise readiness summary.
 
 ## Required Context Pass
 

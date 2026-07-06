@@ -3,18 +3,18 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
+  () => import('./pack_13/core-anime-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_13/shojo-magical-girl-and-visionary-classics-1').then(
+    import('./pack_13/slice-of-life-school-and-music-2').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_13/slice-of-life-and-moe-2').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_13/anime-style-spectrum-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_13/core-anime-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_13/slice-of-life-school-music-5').then(
+    import('./pack_13/shojo-magical-girl-and-visionary-classics-3').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
+  () =>
+    import('./pack_13/slice-of-life-and-moe-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () => import('./pack_13/anime-style-spectrum-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

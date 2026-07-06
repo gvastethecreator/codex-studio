@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-147',
     name: 'Winter Friction Romance Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -35,7 +35,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-149',
     name: 'Clan Comedy Escalation Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -64,7 +64,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-151',
     name: 'Pop Reality Bend Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -93,7 +93,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-152',
     name: 'Anachronistic Deadpan Mayhem Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-154',
     name: 'Clinical Nocturne Tactics Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-156',
     name: 'Summer Loop Paranoia Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -180,7 +180,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-157',
     name: 'Vertical Speed Rebellion Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -209,7 +209,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-159',
     name: 'Black-Lipstick Melodrama Punk Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -238,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-160',
     name: 'Rose Elite Comedy Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-024',
     name: 'Alchemical Moral Geometry Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -295,7 +295,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-026',
     name: 'Operatic Rebellion Strategy Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -323,7 +323,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-027',
     name: 'Spiral Overdrive Bravado Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -351,7 +351,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-030',
     name: 'Gothic Soul-Pop Action Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-141',
     name: 'Gothic Resonance Punk Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -408,7 +408,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-145',
     name: 'Sky-Surf Romantic Momentum Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -437,7 +437,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-146',
     name: 'Velvet Covenant Gothic Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -466,7 +466,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-150',
     name: 'Crimson Threshold Embers Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -495,7 +495,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-153',
     name: 'Techno-Gothic Exorcism Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -524,7 +524,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-155',
     name: 'Noble Arcane Romcom Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -553,7 +553,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-158',
     name: 'Ecological Whisper Healing Style',
-    category: '2. 2000s Classics',
+    category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

@@ -16,15 +16,17 @@ tags:
 visualDna:
   aesthetic: Gothic courtly fantasy where beasts, nobles, and scholars gather in candlelit bestiary drama.
   subject_treatment: >-
-    A goat-headed bestiary king seated high over the candlelit court, antler crown, clawed velvet robes, hound
-    familiar at his feet, and nobles kept small around the throne.
+    Transform any subject with courtly gothic refinement, bestiary symbolism, candlelit contour hierarchy,
+    velvet-dark material logic, and theatrical restraint without imposing a ruler pose or entourage.
   color_and_tone: Candle gold, velvet black, parchment cream, muted jewel tones, and dark green shadows.
   lighting_and_shadow: Candle groups create glowing faces, clean black corner shapes, and simple theatrical highlights.
   texture_and_material: Fur trims, vellum pages, carved wood, wax, brocade, feathers, claws, and old ink.
   camera_and_composition: Banquet or council layout, clustered figures, ornate frames, and readable symbolic props.
   atmosphere_and_mood: Aristocratic, uncanny, theatrical, and secretive.
   rendering_and_quality: Luxurious gothic illustration with sharp costume detail and candlelit material richness.
-  creative_brief: Converts subjects into courtly medieval-gothic tableaux with bestiary symbolism and refined unease.
+  creative_brief: >-
+    Reusable visual system for any subject needing courtly medieval-gothic polish, bestiary symbolism,
+    candlelit unease, and refined theatrical darkness.
 avoidRules:
   - modern ballroom
   - clean fantasy palace

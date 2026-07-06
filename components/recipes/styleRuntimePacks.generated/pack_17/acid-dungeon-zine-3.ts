@@ -14,7 +14,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'High-contrast underground dungeon zine with clean black xerox ink, acid colors, occult symbols, and monster-card energy.',
       subject_treatment:
-        'A chunky goblin key-priest or skull-armored dungeon clerk, front-facing and iconic, with oversized key relic, claws, and staring eyes.',
+        'Translate any subject into acid zine icon logic with chunky silhouette weight, stare-like graphic emphasis, occult key-shape rhythm, thick contour breaks, and handmade weirdness without forcing a mascot.',
       color_and_tone:
         'Dominant black ink over neon lime, lavender, hot pink, poison green, and occasional cyan or red.',
       lighting_and_shadow:
@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Crisp screenprint-zine finish with heavy denoise, controlled print texture, and readable clean black shapes.',
       creative_brief:
-        'Style extracted from the supplied references, reusable for monsters, knights, castles, relics, icons, or card art.',
+        'Reusable visual system for any subject needing acid zine punch, boxed graphic force, thick handmade borders, and occult print weirdness.',
     },
   },
   {
@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Black-and-white photocopied bestiary plates with occult medieval linework and rough underground print damage.',
       subject_treatment:
-        'A horned basilisk-lion specimen or dungeon chimera outlined like a hand-drawn field-guide beast, with exaggerated claws, horns, and no human lead.',
+        'Translate any subject into occult xerox bestiary logic with hand-drawn field-guide contour, exaggerated silhouette features, rigid plate balance, and textless handmade oddness without changing the prompt role.',
       color_and_tone:
         'Mostly clean black ink and aged paper white, with optional one-color neon spot fills.',
       lighting_and_shadow:
@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Two- or three-color risograph necromancy with medieval symbols, heavy ink, and fluorescent occult energy.',
       subject_treatment:
-        'A neon skull-candle totem with one clawed necromancer silhouette beneath it, reduced to bold ritual shapes and simplified armor.',
+        'Transform any subject with neon risograph necromancy logic, fluorescent plate offsets, bold ritual shapes, simplified armor-like blocks, and black silhouette dominance without adding a fixed totem.',
       color_and_tone:
         'Black ink plus fluorescent magenta, lime, violet, cyan, or acid orange on pale tinted paper.',
       lighting_and_shadow:
@@ -81,7 +81,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Print-art finish with crisp shapes, intentional imperfections, and high thumbnail impact.',
       creative_brief:
-        'Applies fluorescent riso print logic to fantasy subjects while preserving black silhouette dominance.',
+        'Reusable visual system for any subject needing fluorescent riso print logic, necromantic color clash, black silhouette dominance, and simplified ritual graphic force.',
     },
   },
   {
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Dungeon trading-card punk with medieval heraldry, spiked silhouettes, photocopied borders, and neon spot color.',
       subject_treatment:
-        'A punk heraldic dungeon goblin, skull shield stack, tattered banner, and horned mask, posed like an emblematic card figure with no polished hero stance.',
+        'Translate any subject into a punk heraldic emblem with spiked silhouette logic, photocopied contour breaks, loud sigil shapes, and handmade zine attitude without requiring a mascot or fixed prop stack.',
       color_and_tone:
         'Clean black ink, aged white, magenta, acid green, violet, and occasional deep red print plate.',
       lighting_and_shadow:
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
       rendering_and_quality:
         'Screenprinted zine-card finish with strong icon design, heavy denoise, and controlled print texture.',
       creative_brief:
-        'Useful for turning any character, monster, artifact, or castle into a punchy dungeon card identity.',
+        'Reusable visual system for any subject that needs punchy dungeon-card identity, heraldic graphic force, and unruly occult zine energy.',
     },
   },
   {
@@ -149,7 +149,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Old sword-and-sorcery paperback art degraded through photocopy, tape scan, harsh ink, and lurid flat color.',
       subject_treatment:
-        'A rough sword-and-sorcery wanderer facing a serpent idol guardian or moss-cloaked monster, theatrical and print-damaged but clearly readable.',
+        'Translate any subject into tape-scanned sword-and-sorcery pulp with theatrical silhouette pressure, lurid flat color, black-slab shadow, and analog wear without forcing a hero-versus-threat setup.',
       color_and_tone:
         'Faded yellow paper, black crush, bruised purple, toxic green, dull red, and sun-baked orange.',
       lighting_and_shadow:
@@ -157,12 +157,12 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Tape seams, clean scan streaks, controlled toner texture, cracked ink, cheap paper, and worn cover edges.',
       camera_and_composition:
-        'Paperback-cover staging, large foreground subject, dramatic diagonal weapon or monster shapes, and thick frame.',
+        'Paperback-cover energy with bold central scale, dramatic diagonals, thick framing pressure, and readable print-poster hierarchy.',
       atmosphere_and_mood: 'Pulp, dangerous, handmade, lurid, and adventurous.',
       rendering_and_quality:
         'Retro print illustration with readable forms, rough edges, controlled analog wear, and clean darks.',
       creative_brief:
-        'Converts any fantasy prompt into degraded pulp-zine illustration with sword-and-sorcery momentum.',
+        'Reusable visual system for any subject needing degraded pulp-zine finish, sword-and-sorcery momentum, tape-scan wear, and lurid handmade drama.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

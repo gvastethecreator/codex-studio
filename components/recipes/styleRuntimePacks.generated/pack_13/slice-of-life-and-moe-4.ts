@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-081',
     name: 'KyoAni Shared-Warmth Microacting',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-202',
     name: 'Market-Festival Community Softness',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-208',
     name: 'Beginner-Made DIY Glow',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-086',
     name: 'Cold-Warm Restorative Comfort',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-207',
     name: 'Deadline-Cheer Workflow Density',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -146,7 +146,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-211',
     name: 'Utilitarian Quiet-Freedom Minimalism',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -174,7 +174,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-215',
     name: 'Looped-Routine Healing Pastel',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -202,7 +202,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-216',
     name: 'Bundled Warmth Pocket',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -230,7 +230,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-217',
     name: 'Rough-Ideation Motion Overlay',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-082',
     name: 'Deadpan-Explosion Absurd Timing',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-083',
     name: 'Low-Stakes Banter Flatness',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-084',
     name: 'Ordinary-Cosmic Whimsy Pivot',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-087',
     name: 'Pastoral Breathing-Room Stillness',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -370,7 +370,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-090',
     name: 'Memory-Washed Melodrama Softness',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -398,7 +398,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-201',
     name: 'Tea-Light Observational Mystery',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-204',
     name: 'Canal-Breeze Healing Reverie',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-205',
     name: 'Breezy Brush-Reinvention Summer',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -482,7 +482,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-206',
     name: 'Everyday-Care Gesture Intimacy',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -510,7 +510,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-209',
     name: 'Sugar-Cotton Hospitality Miniature',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -538,7 +538,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-212',
     name: 'Immaculate Social-Jitter Comedy',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -566,7 +566,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-213',
     name: 'Shift-Comedy Choreography Warmth',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -594,7 +594,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-214',
     name: 'Breeze-Drift Beautiful Inertia',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -622,7 +622,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-218',
     name: 'Incremental-Ascent Confidence Light',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -650,7 +650,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-219',
     name: 'Mundane Absurdist Theater',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -678,7 +678,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-220',
     name: 'Observational Watercolor Drift',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -706,7 +706,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-088',
     name: 'Domestic-Fantasy Scale Chaos',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -734,7 +734,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-210',
     name: 'Sunshine-Scribble Soft Geometry',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -762,7 +762,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-085',
     name: 'Anxiety-Glitch Catharsis Comedy',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -790,7 +790,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-089',
     name: 'Soft-Surreal Deadpan Drift',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -818,7 +818,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-203',
     name: 'Horizon-Forward Youth Momentum',
-    category: '5. Slice of Life & Moe',
+    category: '4. Slice Of Life & Moe',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

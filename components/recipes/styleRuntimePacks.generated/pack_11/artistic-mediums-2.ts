@@ -161,61 +161,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP11-032',
-    name: 'Latte Art',
-    category: '2. Artistic Mediums',
-    negativePrompt: 'solid, paint',
-    style: {
-      aesthetic:
-        'Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art',
-      subject_treatment:
-        'Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry',
-      color_and_tone:
-        'Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory',
-      lighting_and_shadow:
-        'Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen',
-      texture_and_material:
-        'Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas',
-      camera_and_composition:
-        'Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature',
-      atmosphere_and_mood: 'Cozy, warm, temporary, crafted, first-sip quiet',
-      rendering_and_quality:
-        'Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft',
-      key_features:
-        'Crema ring, latte-art rosetta, steamed-milk gloss, microfoam bubbles, pour-steam wisps',
-      creative_brief:
-        'Anchor this preset in latte-surface grammar: microfoam density control, crema-contrast flow patterns, pour-path symmetry, and soft liquid-edge behavior should transform the input. A cup or rosetta can reinforce the style, but avoid locking the result to a cafe table scene.',
-    },
-  },
-  {
-    id: 'SP11-033',
-    name: 'Blueprint',
-    category: '2. Artistic Mediums',
-    negativePrompt: 'color, photo',
-    style: {
-      aesthetic:
-        "Architectural plan, drafting-table vision, engineer's-ghost, technical-imagination",
-      subject_treatment:
-        'White technical lines, dimension-string contours, section-cut profiles, orthographic-projection edges',
-      color_and_tone:
-        'Cyan Blue background, blueprint-cyan, ammonia-developer blue, white-line contrast, title-block white',
-      lighting_and_shadow:
-        'Flat, drafting-table glow, backlit-tracing vellum, even-fluorescent illumination',
-      texture_and_material:
-        'Paper grain, diazo-paper tooth, ammonia-print curl, mylar-film gloss, old-blueprint fold',
-      camera_and_composition:
-        '2D schematic, plan-section-elevation, orthographic-projection geometry, isometric-grid underlay',
-      atmosphere_and_mood:
-        'Planning, engineering, midnight-drafting quiet, slide-rule precision, built-environment origin',
-      rendering_and_quality:
-        'Technical, precise, ruler-and-compass rigor, drafting-arm sweep, revision-cloud care',
-      key_features:
-        'Grid lines, title-block border, dimension strings, revision-cloud bubbles, compass-rose north, scale-bar reference',
-      creative_brief:
-        'Keep this preset defined by blueprint drafting grammar: white-line orthographic clarity, dimension-string hierarchy, title-block structure, and diazo-paper tone should carry identity without a fixed building story. Apply Blueprint as a portable style system over any input: preserve its construction grammar, material cues, scale logic, and signature rendering behavior while avoiding a required franchise, literal prop, fixed specimen, classroom sample, product shot, or scene template.',
-    },
-  },
-  {
     id: 'SP11-044',
     name: 'Silkscreen Icon Impact',
     category: '2. Artistic Mediums',

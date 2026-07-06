@@ -1,6 +1,6 @@
 import { getCodexWsUrl } from '../config';
 import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
-import { resolveCodexInvocation } from '../codexExecutable';
+import { resolveCodexInvocationForExecutable } from '../codexExecutable';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
 import { appendRotatingLog } from '../rotatingLog';
@@ -107,7 +107,11 @@ export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
   }
 
   const logPath = resolveLibraryPath('logs', 'app-server.log');
-  const invocation = resolveCodexInvocation(['app-server', '--listen', getCodexWsUrl()]);
+  const invocation = resolveCodexInvocationForExecutable(runtimeDoctor.selectedExecutable, [
+    'app-server',
+    '--listen',
+    getCodexWsUrl(),
+  ]);
   diagnostics.lastInvocation = invocation;
   diagnostics.lastStartError = null;
   diagnostics.lastStartAt = new Date().toISOString();

@@ -18,15 +18,17 @@ visualDna:
     Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet
     narrative panels.
   subject_treatment: >-
-    A tapestry creature legend: unicorn-like hunt spirit, lion-bird, or wyvern crossing woven hills with small
-    court hunters in profile.
+    Translate any subject into woven legend logic with flat courtly silhouettes, thread-block color,
+    decorative flora rhythm, and archaic profile simplification without requiring a fixed hunt narrative.
   color_and_tone: Linen, faded red, moss green, muted blue, ochre, dark brown outline, and soft cream fields.
   lighting_and_shadow: No cinematic light; use flat woven value and color contrast.
   texture_and_material: Clean woven texture, broad thread-like color blocks, sparse floral details, and no fuzzy noise.
   camera_and_composition: Tapestry panel crop, side-view creature, patterned ground, and decorative border without words.
   atmosphere_and_mood: Legendary, courtly, archaic, and quietly uncanny.
   rendering_and_quality: Clean textile-inspired illustration with simplified forms and controlled fabric texture.
-  creative_brief: Medieval tapestry style for creature legends, courtly monsters, hunts, relic beasts, and folklore scenes.
+  creative_brief: >-
+    Reusable visual system for any subject needing medieval tapestry flatness, woven color blocks, courtly
+    legend tone, and quiet uncanny form.
 avoidRules:
   - fuzzy textile noise
   - overcrowded floral carpet

@@ -16,8 +16,8 @@ tags:
 visualDna:
   aesthetic: Muddy war-torn medieval fantasy staged like a brutal siege chronicle.
   subject_treatment: >-
-    A weather-beaten siege beast, broken ram, or monster-hauler with tiny exhausted soldiers around it,
-    emphasizing war machinery over another knight portrait.
+    Transform any subject with grim siege-chronicle pressure, weather-beaten surfaces, iron mass, mud logic,
+    smoke-flattened value, and unsentimental medieval war severity without adding a fixed war machine.
   color_and_tone: Iron black, clay brown, old blood red accents, smoke gray, and pale winter sky.
   lighting_and_shadow: >-
     Simplified smoky daylight and torch accents keep the image severe while preserving readable midtones and
@@ -28,7 +28,9 @@ visualDna:
   rendering_and_quality: >-
     Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean
     atmospheric planes.
-  creative_brief: Converts subjects into grim medieval war imagery with mud, pressure, and siege logic as the style engine.
+  creative_brief: >-
+    Reusable visual system for any subject needing grim medieval war pressure, mud-stained restraint,
+    documentary severity, and siege-like visual weight.
 avoidRules:
   - clean costume drama
   - bright fairy tale

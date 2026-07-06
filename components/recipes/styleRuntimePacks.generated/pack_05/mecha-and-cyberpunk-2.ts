@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-056',
     name: 'Geometric Ignition Urgency',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-222',
     name: 'Municipal Machine Procedure',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-224',
     name: 'Sterile Arcology Severity',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-228',
     name: 'White Machine Elegy',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-236',
     name: 'Compact Attrition Hardware',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -147,7 +147,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-238',
     name: 'Tokusatsu Digital Grid Scale',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -176,7 +176,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-240',
     name: 'Tri-Fire Riot Geometry',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -205,7 +205,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-051',
     name: 'Neon Kinetic Alloy Sprint',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -233,7 +233,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-052',
     name: 'Surveillance Verdict Grid',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-054',
     name: 'Luminous Beam Opera',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -289,7 +289,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-055',
     name: 'Gothic Tech Existential Dread',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -317,7 +317,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-057',
     name: 'Sleek Collapse Romance',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -345,7 +345,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-058',
     name: 'Remote Command Grief',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -373,7 +373,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-059',
     name: 'Tactical Network Cognition',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -401,7 +401,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-060',
     name: 'Orbital Rivalry Symmetry',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -429,7 +429,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-221',
     name: 'Pop-Signal Engineered Romance',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -457,7 +457,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-223',
     name: 'Armored Chrome Noir Elegance',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -485,7 +485,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-225',
     name: 'Scrap Velocity Resilience',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -513,7 +513,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-226',
     name: 'Cyber-Goth Mausoleum Dread',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -541,7 +541,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-229',
     name: 'Punitive Neon Vice Texture',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -569,7 +569,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-230',
     name: 'Terminal Megastructure Silence',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -597,7 +597,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-231',
     name: 'Coral Resonance Liturgy',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -626,7 +626,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-232',
     name: 'Dustfront Drone Lament',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -655,7 +655,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-233',
     name: 'Vacuum-Fortress Survival Discipline',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -684,7 +684,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-234',
     name: 'Extinction Interface Command',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -713,7 +713,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-235',
     name: 'Pop-Cyber Simulation Gloss',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -742,7 +742,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-237',
     name: 'Monumental Ignition Sacrifice',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -771,7 +771,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-239',
     name: 'Bubblegum Cosmic Overdrive',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -800,7 +800,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-227',
     name: 'Rust-Wire Descent',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -828,7 +828,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-053',
     name: 'Hydraulic Attrition Mass',
-    category: '7. Mecha & Cyberpunk',
+    category: '2. Mecha & Cyberpunk',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-004
 packId: pack_16
 name: Melancholy Astral Opera Style
-category: 11. 70s & 80s Retro Anime
+category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:
   - image_generate
@@ -68,7 +68,7 @@ taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
   categoryId: 70s-and-80s-retro-anime
-  categoryName: 11. 70s & 80s Retro Anime
+  categoryName: 1. 70s & 80s Retro Anime
   tags:
     - anime-classics-and-prestige
     - 70s-and-80s-retro-anime

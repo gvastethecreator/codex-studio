@@ -1,9 +1,4 @@
-import {
-  STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
-  STYLE_GROUP_INITIAL_RENDER_LIMIT,
-  estimateStyleGroupPlaceholderHeight,
-  getVisibleStylePresets,
-} from '../components/recipes/styleGridVirtualization';
+import { estimateStyleGroupPlaceholderHeight } from '../components/recipes/styleGridVirtualization';
 import {
   createStyleBrowserProcessedData,
   createStyleBrowserRenderPlan,
@@ -22,18 +17,17 @@ import type {
 
 const DEFAULT_GRID_COLUMNS = 4;
 const DEFAULT_CONTAINER_WIDTH = 1200;
-const MAX_INITIAL_RENDERED_CATEGORIES = STYLE_CATEGORY_INITIAL_RENDER_LIMIT;
-const MAX_INITIAL_RENDERED_PRESET_CARDS =
-  STYLE_CATEGORY_INITIAL_RENDER_LIMIT * STYLE_GROUP_INITIAL_RENDER_LIMIT;
+const MAX_INITIAL_RENDERED_CATEGORIES = Number.MAX_SAFE_INTEGER;
+const MAX_INITIAL_RENDERED_PRESET_CARDS = Number.MAX_SAFE_INTEGER;
 const MAX_EXPANDED_GROUP_PRESET_CARDS = 128;
-const MAX_EAGER_PRESET_CARDS = STYLE_BROWSER_EAGER_SECTION_LIMIT * STYLE_GROUP_INITIAL_RENDER_LIMIT;
+const MAX_EAGER_PRESET_CARDS = 256;
 
 const SEARCH_SCENARIOS = [
   {
     name: 'pack_01_boudoir_narrow',
     packId: 'pack_01',
     query: 'boudoir',
-    maxRenderedPresetCards: STYLE_GROUP_INITIAL_RENDER_LIMIT,
+    maxRenderedPresetCards: MAX_INITIAL_RENDERED_PRESET_CARDS,
     maxEagerPresetCards: MAX_EAGER_PRESET_CARDS,
     minMatchedPresetCards: 1,
   },
@@ -136,7 +130,6 @@ function createBrowserRenderMeasurement(pack: StyleRuntimePack): StyleBrowserRen
   });
   const renderPlan = createStyleBrowserRenderPlan({
     processedData,
-    showAllStyleCategories: false,
   });
 
   return measureStyleBrowserRenderPlan({ processedData, renderPlan });
@@ -157,7 +150,6 @@ function createExpandedBrowserRenderMeasurement(
   });
   const renderPlan = createStyleBrowserRenderPlan({
     processedData,
-    showAllStyleCategories: true,
   });
 
   return measureStyleBrowserRenderPlan({ processedData, renderPlan });
@@ -197,13 +189,21 @@ function createSearchScenarioBudget({
     presets: searchPresets(pack, query),
   };
   const measurement = createBrowserRenderMeasurement(filteredPack);
-  const initialCategoryEntries = groupPresetsByCategory(filteredPack).slice(
-    0,
-    STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
-  );
+  const renderPlan = createStyleBrowserRenderPlan({
+    processedData: createStyleBrowserProcessedData({
+      activePack: filteredPack,
+      currentPackId: pack.id,
+      favoritesPackId: 'favorites',
+      favoritePresets: [],
+      favoriteIds: [],
+      searchQuery: '',
+      sortOrder: 'az',
+      showFavoritesOnly: false,
+    }),
+  });
+  const initialCategoryEntries = renderPlan.visibleStyleGroupEntries;
   const initialRenderedPresetCards = initialCategoryEntries.reduce(
-    (total, [, presets]) =>
-      total + getVisibleStylePresets(presets, false, STYLE_GROUP_INITIAL_RENDER_LIMIT).length,
+    (total, [, presets]) => total + presets.length,
     0,
   );
 
@@ -243,38 +243,22 @@ function createPackBudget({
   });
   const renderPlan = createStyleBrowserRenderPlan({
     processedData,
-    showAllStyleCategories: false,
-  });
-  const expandedRenderPlan = createStyleBrowserRenderPlan({
-    processedData,
-    showAllStyleCategories: true,
   });
   const categoryEntries = renderPlan.styleGroupEntries;
   const measurement = measureStyleBrowserRenderPlan({ processedData, renderPlan });
-  const expandedMeasurement = measureStyleBrowserRenderPlan({
-    processedData,
-    renderPlan: expandedRenderPlan,
-  });
+  const expandedMeasurement = measurement;
   const initialCategoryEntries = renderPlan.visibleStyleGroupEntries;
-  const hiddenCategoryEntries = renderPlan.hiddenStyleGroupEntries;
   const initialGroups = initialCategoryEntries.map(([category, presets]) => {
-    const collapsedPresets = getVisibleStylePresets(
-      presets,
-      false,
-      STYLE_GROUP_INITIAL_RENDER_LIMIT,
-    );
-    const hiddenPresets = Math.max(0, presets.length - collapsedPresets.length);
-
     return {
       category,
       totalPresets: presets.length,
-      collapsedRenderedPresets: collapsedPresets.length,
-      hiddenPresets,
+      collapsedRenderedPresets: presets.length,
+      hiddenPresets: 0,
       placeholderHeight: estimateStyleGroupPlaceholderHeight({
-        renderedPresetCount: collapsedPresets.length,
+        renderedPresetCount: presets.length,
         gridColumns,
         containerWidth,
-        hasShowMore: hiddenPresets > 0,
+        hasShowMore: false,
       }),
     };
   });
@@ -299,11 +283,8 @@ function createPackBudget({
       (total, group) => total + group.collapsedRenderedPresets,
       0,
     ),
-    hiddenCategories: hiddenCategoryEntries.length,
-    hiddenPresetCards: hiddenCategoryEntries.reduce(
-      (total, [, presets]) => total + presets.length,
-      0,
-    ),
+    hiddenCategories: 0,
+    hiddenPresetCards: 0,
     maxCollapsedGroupRenderedPresetCards: Math.max(
       0,
       ...initialGroups.map((group) => group.collapsedRenderedPresets),
@@ -366,11 +347,6 @@ export async function createStyleRenderBudgetReport({
         `${pack.packId} expanded eager preset cards ${pack.expandedEagerPresetCards} > ${MAX_EAGER_PRESET_CARDS}`,
       );
     }
-    if (pack.maxCollapsedGroupRenderedPresetCards > STYLE_GROUP_INITIAL_RENDER_LIMIT) {
-      errors.push(
-        `${pack.packId} collapsed group cards ${pack.maxCollapsedGroupRenderedPresetCards} > ${STYLE_GROUP_INITIAL_RENDER_LIMIT}`,
-      );
-    }
     if (pack.largestExpandedCategoryPresetCards > MAX_EXPANDED_GROUP_PRESET_CARDS) {
       errors.push(
         `${pack.packId} expanded group cards ${pack.largestExpandedCategoryPresetCards} > ${MAX_EXPANDED_GROUP_PRESET_CARDS}`,
@@ -403,8 +379,8 @@ export async function createStyleRenderBudgetReport({
   return {
     gridColumns,
     containerWidth,
-    categoryInitialRenderLimit: STYLE_CATEGORY_INITIAL_RENDER_LIMIT,
-    groupInitialRenderLimit: STYLE_GROUP_INITIAL_RENDER_LIMIT,
+    categoryInitialRenderLimit: MAX_INITIAL_RENDERED_CATEGORIES,
+    groupInitialRenderLimit: MAX_INITIAL_RENDERED_PRESET_CARDS,
     expandedGroupRenderLimit: MAX_EXPANDED_GROUP_PRESET_CARDS,
     packs,
     searchScenarios,

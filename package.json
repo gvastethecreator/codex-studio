@@ -37,6 +37,7 @@
     "styles:templates:verify": "bun run scripts/validate-style-preset-templates.ts",
     "styles:source:verify": "bun run scripts/style-authoring-source-audit.ts",
     "styles:quality:audit": "bun run scripts/audit-style-preset-quality.ts",
+    "styles:scene-lock:audit": "bun run scripts/audit-style-preset-scene-lock.ts",
     "styles:thumbs": "bun run scripts/build-style-pack-card-thumbnails.ts",
     "styles:pack-thumbs": "bun run scripts/build-style-pack-card-thumbnails.ts",
     "styles:verify": "bun run styles:validate -- --coverage --strict-taxonomy && bun run styles:runtime:check && bun run styles:templates:verify && bun run styles:source:verify && bun run styles:render:verify",
@@ -83,7 +84,7 @@
     "preview:electron": "bun run scripts/preview-electron.ts",
     "tooling:logs": "bun run scripts/open-tooling-logs.ts",
     "tooling:logs:prune": "bun run scripts/tooling-task.ts tooling:logs:prune",
-    "doctor": "npx react-doctor@latest"
+    "doctor": "npx react-doctor"
   },
   "dependencies": {
     "@chenglou/pretext": "^0.0.8",

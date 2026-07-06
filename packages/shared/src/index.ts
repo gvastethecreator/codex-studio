@@ -6,3 +6,4 @@ export * from './outputSources';
 export * from './providerCapabilities';
 export * from './recipeProviderDirectives';
 export * from './storageMaintenance';
+export * from './userStyles';

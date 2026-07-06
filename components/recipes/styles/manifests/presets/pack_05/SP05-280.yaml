@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-280
 packId: pack_05
 name: Lantern Retribution Ritual Style
-category: 9. Dark Fantasy & Seinen
+category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:
   - image_generate
@@ -52,7 +52,7 @@ taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds
   categoryId: dark-fantasy-and-seinen
-  categoryName: 9. Dark Fantasy & Seinen
+  categoryName: 4. Dark Fantasy & Seinen
   tags:
     - anime-battle-and-worlds
     - dark-fantasy-and-seinen

@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-021',
     name: 'Action Burst Alley Rush',
-    category: '3. Action',
+    category: '5. Action Motion Setpieces',
     negativePrompt: 'photoreal, static-pose, low-detail, watermark, text, logo',
     style: {
       aesthetic: 'High-impact anime action with compressed urgency and forward-rush pressure.',
@@ -27,7 +27,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-022',
     name: 'Vertigo Energy Cross Style',
-    category: '3. Action',
+    category: '5. Action Motion Setpieces',
     negativePrompt: 'photoreal, calm-composition, blur-only, watermark, text, logo',
     style: {
       aesthetic:
@@ -53,7 +53,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-023',
     name: 'Neon Vector Discharge Style',
-    category: '3. Action',
+    category: '5. Action Motion Setpieces',
     negativePrompt: 'photoreal, medieval-only, washed-colors, watermark, text, logo',
     style: {
       aesthetic:
@@ -80,7 +80,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-024',
     name: 'Monumental Impact Burst Style',
-    category: '3. Action',
+    category: '5. Action Motion Setpieces',
     negativePrompt: 'photoreal, static, over-noise, watermark, text, logo',
     style: {
       aesthetic:
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-025',
     name: 'Upward Thunder Momentum Style',
-    category: '3. Action',
+    category: '5. Action Motion Setpieces',
     negativePrompt: 'photoreal, dull-palette, calm-scene, watermark, text, logo',
     style: {
       aesthetic:

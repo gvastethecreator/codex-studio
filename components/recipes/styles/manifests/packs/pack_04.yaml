@@ -71,16 +71,13 @@ categories:
       - pack_04/SP04-054.yaml
       - pack_04/SP04-055.yaml
       - pack_04/SP04-056.yaml
-      - pack_04/SP04-057.yaml
       - pack_04/SP04-058.yaml
-      - pack_04/SP04-059.yaml
       - pack_04/SP04-060.yaml
       - pack_04/SP04-081.yaml
       - pack_04/SP04-082.yaml
       - pack_04/SP04-083.yaml
       - pack_04/SP04-084.yaml
       - pack_04/SP04-085.yaml
-      - pack_04/SP04-086.yaml
       - pack_04/SP04-087.yaml
       - pack_04/SP04-088.yaml
       - pack_04/SP04-089.yaml
@@ -88,13 +85,10 @@ categories:
       - pack_04/SP04-091.yaml
       - pack_04/SP04-092.yaml
       - pack_04/SP04-093.yaml
-      - pack_04/SP04-094.yaml
       - pack_04/SP04-095.yaml
       - pack_04/SP04-096.yaml
       - pack_04/SP04-097.yaml
       - pack_04/SP04-098.yaml
-      - pack_04/SP04-099.yaml
-      - pack_04/SP04-100.yaml
   - id: ink-and-print
     name: 5. Ink And Print
     presetRefs:
@@ -118,6 +112,15 @@ categories:
       - pack_04/SP04-077.yaml
       - pack_04/SP04-079.yaml
       - pack_04/SP04-080.yaml
+  - id: technical-and-reference-sheets
+    name: 6. Technical And Reference Sheets
+    presetRefs:
+      - pack_04/SP04-057.yaml
+      - pack_04/SP04-059.yaml
+      - pack_04/SP04-086.yaml
+      - pack_04/SP04-094.yaml
+      - pack_04/SP04-099.yaml
+      - pack_04/SP04-100.yaml
 presetRefs:
   - pack_04/SP04-001.yaml
   - pack_04/SP04-002.yaml
@@ -175,16 +178,13 @@ presetRefs:
   - pack_04/SP04-054.yaml
   - pack_04/SP04-055.yaml
   - pack_04/SP04-056.yaml
-  - pack_04/SP04-057.yaml
   - pack_04/SP04-058.yaml
-  - pack_04/SP04-059.yaml
   - pack_04/SP04-060.yaml
   - pack_04/SP04-081.yaml
   - pack_04/SP04-082.yaml
   - pack_04/SP04-083.yaml
   - pack_04/SP04-084.yaml
   - pack_04/SP04-085.yaml
-  - pack_04/SP04-086.yaml
   - pack_04/SP04-087.yaml
   - pack_04/SP04-088.yaml
   - pack_04/SP04-089.yaml
@@ -192,13 +192,10 @@ presetRefs:
   - pack_04/SP04-091.yaml
   - pack_04/SP04-092.yaml
   - pack_04/SP04-093.yaml
-  - pack_04/SP04-094.yaml
   - pack_04/SP04-095.yaml
   - pack_04/SP04-096.yaml
   - pack_04/SP04-097.yaml
   - pack_04/SP04-098.yaml
-  - pack_04/SP04-099.yaml
-  - pack_04/SP04-100.yaml
   - pack_04/SP04-023.yaml
   - pack_04/SP04-061.yaml
   - pack_04/SP04-062.yaml
@@ -219,3 +216,9 @@ presetRefs:
   - pack_04/SP04-077.yaml
   - pack_04/SP04-079.yaml
   - pack_04/SP04-080.yaml
+  - pack_04/SP04-057.yaml
+  - pack_04/SP04-059.yaml
+  - pack_04/SP04-086.yaml
+  - pack_04/SP04-094.yaml
+  - pack_04/SP04-099.yaml
+  - pack_04/SP04-100.yaml

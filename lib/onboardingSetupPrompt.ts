@@ -46,12 +46,15 @@ export function buildCodexStudioSetupPrompt({
   const projectRoot = renderValue(health?.runtime.cwd, 'Codex Studio repository root');
   const envLocalPath = renderValue(health?.runtime.envLocalPath, '.env.local');
   const libraryDir = renderValue(health?.libraryDir, 'Studio Library not detected yet');
-  const codexVersion = renderValue(health?.codexCli.version, 'Codex CLI not detected yet');
+  const codexCliState = health?.codexCli.available ? 'available' : 'missing';
+  const codexMetadata = renderValue(health?.codexCli.version, 'not reported');
   const codexRuntimeAction = renderValue(
     health?.codexRuntime.recommendedAction,
-    'Codex runtime not checked yet',
+    'Codex runtime capability not checked yet',
   );
-  const bunVersion = renderValue(health?.runtime.bunVersion, 'Bun version not detected yet');
+  const codexRuntimeState = renderValue(health?.codexRuntime.status, 'unknown');
+  const codexAppServerSupport = renderBool(health?.codexRuntime.appServerSupported);
+  const bunMetadata = renderValue(health?.runtime.bunVersion, 'not reported');
   const appServerState = health?.appServer.running ? 'running' : 'not running';
   const localSessionState = localCodexSession?.canRunLocalJobs
     ? 'ready'
@@ -68,9 +71,10 @@ export function buildCodexStudioSetupPrompt({
     `- Local API: ${apiBase}`,
     `- Studio Library: ${libraryDir}`,
     `- .env.local: ${envLocalPath} (present: ${renderBool(health?.runtime.envLocalPresent)})`,
-    `- Bun: ${bunVersion}`,
-    `- Codex CLI: ${codexVersion}`,
-    `- Codex Runtime Doctor: ${codexRuntimeAction}`,
+    `- Bun runtime metadata: ${bunMetadata}`,
+    `- Codex CLI: ${codexCliState}; metadata: ${codexMetadata}`,
+    `- Codex Runtime Capability: ${codexRuntimeState}; app-server support: ${codexAppServerSupport}`,
+    `- Codex Runtime Action: ${codexRuntimeAction}`,
     `- codex app-server: ${appServerState}`,
     `- Local Codex Session: ${localSessionState}`,
     `- Readiness stage: ${readiness.stage}`,
@@ -85,9 +89,10 @@ export function buildCodexStudioSetupPrompt({
     '- Keep Provider Secrets out of SQLite, catalog metadata, logs, screenshots, docs, and committed files.',
     '- Do not delete, move, compact, or rewrite Studio Library data unless the user explicitly confirms it.',
     '- Use Bun scripts from package.json and run broad checks only at closeout.',
+    '- Treat Bun and Codex command output as diagnostic metadata only. Do not block setup on an exact tool release when app readiness, supported scripts, app-server support, and Local Codex Session are healthy.',
     '',
     'Setup tasks:',
-    '1. Audit prerequisites: git status, Bun, Codex CLI, ports, .env.local, Studio Library, and /api/health when reachable.',
+    '1. Audit app readiness: git status, supported Bun scripts, Codex Runtime Doctor capability, ports, .env.local, Studio Library, and `/api/health` when reachable.',
     '2. Run or repair `bun run studio:init` if local bootstrap files or library folders are missing; keep existing .env.local values unless they are clearly invalid.',
     '3. Verify the local backend and Codex Product Runtime with `bun run dev` or separate backend/UI commands as needed.',
     '4. Verify the Local Codex Session through `/api/codex/session`. If ChatGPT login requires interactive auth, stop and give the exact `codex login` action for the user.',

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP02-058
 packId: pack_02
 name: X-Ray Photography
-category: 4. Photography Eras
+category: 7. Sensor And Technical Imaging
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - cinematic-and-media
-  - photography-eras
+  - sensor-and-technical-imaging
 visualDna:
   aesthetic: Internal structure
   subject_treatment: Bones/Structure
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_02
   packName: Cinematic & Media
-  categoryId: photography-eras
-  categoryName: 4. Photography Eras
+  categoryId: sensor-and-technical-imaging
+  categoryName: 7. Sensor And Technical Imaging
   tags:
     - cinematic-and-media
-    - photography-eras
+    - sensor-and-technical-imaging
   supportedTasks:
     - image_generate
     - image_edit

@@ -18,8 +18,8 @@ visualDna:
     Dungeon trading-card punk with medieval heraldry, spiked silhouettes, photocopied borders, and neon spot
     color.
   subject_treatment: >-
-    A punk heraldic dungeon goblin, skull shield stack, tattered banner, and horned mask, posed like an
-    emblematic card figure with no polished hero stance.
+    Translate any subject into a punk heraldic emblem with spiked silhouette logic, photocopied contour
+    breaks, loud sigil shapes, and handmade zine attitude without requiring a mascot or fixed prop stack.
   color_and_tone: Clean black ink, aged white, magenta, acid green, violet, and occasional deep red print plate.
   lighting_and_shadow: No realistic light, only flat fields, black hatching, and border-driven contrast.
   texture_and_material: >-
@@ -28,7 +28,9 @@ visualDna:
   camera_and_composition: Card-front portrait crop, centered heraldic symbol, chunky frame, and stacked graphic motifs.
   atmosphere_and_mood: Loud, occult, collectible, unruly, and dungeon-club flavored.
   rendering_and_quality: Screenprinted zine-card finish with strong icon design, heavy denoise, and controlled print texture.
-  creative_brief: Useful for turning any character, monster, artifact, or castle into a punchy dungeon card identity.
+  creative_brief: >-
+    Reusable visual system for any subject that needs punchy dungeon-card identity, heraldic graphic force, and
+    unruly occult zine energy.
 avoidRules:
   - readable letters
   - logo design

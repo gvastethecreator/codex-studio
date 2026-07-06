@@ -277,4 +277,31 @@ export const GENERATED_STYLE_PRESETS = [
         'Translate the input through pizza-melt craving cues: elastic cheese pull, blistered crust-like texture, glossy topping oils, warm red-yellow contrast, and dynamic melt behavior. Pizza slices may anchor the preset, but avoid requiring delivery boxes, doorbells, napkin stacks, or one menu item.',
     },
   },
+  {
+    id: 'SP11-032',
+    name: 'Latte Art',
+    category: '4. Food And Drink',
+    negativePrompt: 'solid, paint',
+    style: {
+      aesthetic:
+        'Microfoam surface drawing, espresso-crema contrast, barista flow geometry, sip-away temporary art',
+      subject_treatment:
+        'Soft foam edges, pour-line curves, rosetta-leaf ripple, tulip-stack layers, heart-pour symmetry',
+      color_and_tone:
+        'Brown, White, Cream, espresso-crema tiger-stripe, caramel-drizzle amber, milk-foam ivory',
+      lighting_and_shadow:
+        'Overhead soft warmth, surface-spot highlights, crema-gloss catch, steamed-milk sheen',
+      texture_and_material:
+        'Microfoam bubbles, velvet-milk surface, crema-oil slick, silky-pour viscosity, latte-art canvas',
+      camera_and_composition:
+        'Liquid surface, pour-path flow, surface-tension boundary, optional cup-rim curvature',
+      atmosphere_and_mood: 'Cozy, warm, temporary, crafted, first-sip quiet',
+      rendering_and_quality:
+        'Tasty, temporary, sip-away impermanence, barista-throwdown art, third-wave-craft',
+      key_features:
+        'Crema ring, latte-art rosetta, steamed-milk gloss, microfoam bubbles, pour-steam wisps',
+      creative_brief:
+        'Anchor this preset in latte-surface grammar: microfoam density control, crema-contrast flow patterns, pour-path symmetry, and soft liquid-edge behavior should transform the input. A cup or rosetta can reinforce the style, but avoid locking the result to a cafe table scene.',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

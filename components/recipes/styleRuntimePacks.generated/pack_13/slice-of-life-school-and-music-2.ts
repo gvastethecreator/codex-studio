@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-003',
     name: 'Soft Shojo Spring',
-    category: '2. Slice of Life / School / Music',
+    category: '2. Slice Of Life, School And Music',
     negativePrompt: 'photoreal, gritty, horror, watermark, text, logo',
     style: {
       aesthetic:
@@ -33,7 +33,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-005',
     name: 'Rainy Slice of Life',
-    category: '2. Slice of Life / School / Music',
+    category: '2. Slice Of Life, School And Music',
     negativePrompt: 'photoreal, action-chaos, neon-heavy, watermark, text, logo',
     style: {
       aesthetic:
@@ -60,7 +60,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-013',
     name: 'Rainy Idol Backstage',
-    category: '2. Slice of Life / School / Music',
+    category: '2. Slice Of Life, School And Music',
     negativePrompt: 'photoreal, gritty-horror, low-detail, watermark, text, logo',
     style: {
       aesthetic:
@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-015',
     name: 'Dessert Cafe Comedy',
-    category: '2. Slice of Life / School / Music',
+    category: '2. Slice Of Life, School And Music',
     negativePrompt: 'photoreal, horror, dark-gritty, watermark, text, logo',
     style: {
       aesthetic:
@@ -114,7 +114,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-018',
     name: 'Festival Lantern Summer',
-    category: '2. Slice of Life / School / Music',
+    category: '2. Slice Of Life, School And Music',
     negativePrompt: 'photoreal, bleak-horror, low-detail, watermark, text, logo',
     style: {
       aesthetic:

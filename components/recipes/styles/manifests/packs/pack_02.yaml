@@ -81,9 +81,6 @@ categories:
       - pack_02/SP02-055.yaml
       - pack_02/SP02-056.yaml
       - pack_02/SP02-057.yaml
-      - pack_02/SP02-058.yaml
-      - pack_02/SP02-059.yaml
-      - pack_02/SP02-060.yaml
   - id: lighting-and-atmosphere
     name: 5. Lighting And Atmosphere
     presetRefs:
@@ -120,15 +117,9 @@ categories:
       - pack_02/SP02-088.yaml
       - pack_02/SP02-089.yaml
       - pack_02/SP02-090.yaml
-      - pack_02/SP02-091.yaml
-      - pack_02/SP02-092.yaml
-      - pack_02/SP02-093.yaml
       - pack_02/SP02-094.yaml
       - pack_02/SP02-095.yaml
-      - pack_02/SP02-096.yaml
       - pack_02/SP02-097.yaml
-      - pack_02/SP02-098.yaml
-      - pack_02/SP02-099.yaml
       - pack_02/SP02-100.yaml
       - pack_02/SP02-101.yaml
       - pack_02/SP02-102.yaml
@@ -149,6 +140,21 @@ categories:
       - pack_02/SP02-118.yaml
       - pack_02/SP02-119.yaml
       - pack_02/SP02-120.yaml
+  - id: sensor-and-technical-imaging
+    name: 7. Sensor And Technical Imaging
+    presetRefs:
+      - pack_02/SP02-058.yaml
+      - pack_02/SP02-059.yaml
+      - pack_02/SP02-060.yaml
+  - id: hand-drawn-and-diy-media
+    name: 8. Hand-Drawn And DIY Media
+    presetRefs:
+      - pack_02/SP02-091.yaml
+      - pack_02/SP02-092.yaml
+      - pack_02/SP02-093.yaml
+      - pack_02/SP02-096.yaml
+      - pack_02/SP02-098.yaml
+      - pack_02/SP02-099.yaml
 presetRefs:
   - pack_02/SP02-001.yaml
   - pack_02/SP02-002.yaml
@@ -216,9 +222,6 @@ presetRefs:
   - pack_02/SP02-055.yaml
   - pack_02/SP02-056.yaml
   - pack_02/SP02-057.yaml
-  - pack_02/SP02-058.yaml
-  - pack_02/SP02-059.yaml
-  - pack_02/SP02-060.yaml
   - pack_02/SP02-061.yaml
   - pack_02/SP02-062.yaml
   - pack_02/SP02-063.yaml
@@ -249,15 +252,9 @@ presetRefs:
   - pack_02/SP02-088.yaml
   - pack_02/SP02-089.yaml
   - pack_02/SP02-090.yaml
-  - pack_02/SP02-091.yaml
-  - pack_02/SP02-092.yaml
-  - pack_02/SP02-093.yaml
   - pack_02/SP02-094.yaml
   - pack_02/SP02-095.yaml
-  - pack_02/SP02-096.yaml
   - pack_02/SP02-097.yaml
-  - pack_02/SP02-098.yaml
-  - pack_02/SP02-099.yaml
   - pack_02/SP02-100.yaml
   - pack_02/SP02-101.yaml
   - pack_02/SP02-102.yaml
@@ -278,3 +275,12 @@ presetRefs:
   - pack_02/SP02-118.yaml
   - pack_02/SP02-119.yaml
   - pack_02/SP02-120.yaml
+  - pack_02/SP02-058.yaml
+  - pack_02/SP02-059.yaml
+  - pack_02/SP02-060.yaml
+  - pack_02/SP02-091.yaml
+  - pack_02/SP02-092.yaml
+  - pack_02/SP02-093.yaml
+  - pack_02/SP02-096.yaml
+  - pack_02/SP02-098.yaml
+  - pack_02/SP02-099.yaml

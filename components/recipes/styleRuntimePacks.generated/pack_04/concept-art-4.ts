@@ -255,27 +255,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP04-057',
-    name: 'Blueprint Schematic',
-    category: '4. Concept Art',
-    negativePrompt: '3d, shaded',
-    style: {
-      aesthetic:
-        'Blueprint schematic style with engineering communication clarity, drafting-era precision, and specification-forward layout discipline',
-      subject_treatment:
-        'White technical line hierarchy with orthographic rigor, dimension-callout logic, and exploded-view readability',
-      color_and_tone: 'Blue background, white-line cyan, blueprint nostalgia',
-      lighting_and_shadow: 'Diagrammatic machine-drawing clarity with no simulated lighting',
-      texture_and_material: 'Grid paper',
-      camera_and_composition: 'Exploded view',
-      atmosphere_and_mood: 'Smart, plan, drafting-table focus, patent-office gravity',
-      rendering_and_quality: 'Engineering, precise, shop-floor accuracy, technical authority',
-      key_features: 'Measurements, dimension lines, grid sub-base',
-      creative_brief:
-        'Apply blueprint schematic grammar to any input: orthographic projection, measurement hierarchy, exploded-view logic, grid sub-base, and white technical linework should create drafting authority without requiring machines, labels, title blocks, patents, vehicles, or readable dimensions.',
-    },
-  },
-  {
     id: 'SP04-058',
     name: 'Low Poly Concept',
     category: '4. Concept Art',
@@ -295,28 +274,6 @@ export const GENERATED_STYLE_PRESETS = [
       key_features: 'Polygons, unfiltered textures, affine warping',
       creative_brief:
         'Apply low-poly constraint grammar to any input: faceted geometry, hard-edge silhouettes, vertex-color ramps, affine texture cues, and fixed-function shading simplicity should create early-3D warmth without requiring games, consoles, characters, terrain, or specific polygon scenes.',
-    },
-  },
-  {
-    id: 'SP04-059',
-    name: 'UI/HUD Design',
-    category: '4. Concept Art',
-    negativePrompt: 'organic, messy',
-    style: {
-      aesthetic:
-        'Diegetic HUD interface style with tactical readability, layered data hierarchy, and immersive screen-space integration',
-      subject_treatment:
-        'Thin vector line discipline with modular widget framing, reticle geometry, and precision micro-typographic structure',
-      color_and_tone: 'Neon Cyan/Orange, sci-fi HUD spectrum, AR-overlay contrast',
-      lighting_and_shadow: 'Glow, emissive interface, screen-space radiance',
-      texture_and_material: 'Screen',
-      camera_and_composition:
-        'Compose for UI/HUD Design using its key spatial cues: Floating, thin rule-lines, data readout.',
-      atmosphere_and_mood: 'Tech, info, augmented awareness, mission-ops focus',
-      rendering_and_quality: 'Futuristic, functional, diegetic elegance, heads-up immersion',
-      key_features: 'Floating, thin rule-lines, data readout',
-      creative_brief:
-        'Apply diegetic HUD interface grammar to any input: translucent data layers, reticle geometry, modular widgets, emissive cyan-orange hierarchy, and screen-space vector precision should add augmented awareness without requiring missions, weapons, helmets, screens, maps, or readable UI text.',
     },
   },
   {
@@ -454,26 +411,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Multi-frame mood continuity, temperature mapping, depth via fog stratification',
       creative_brief:
         'Apply mood color-script treatment to any input: sequential lighting moods, palette blocks, value keys, atmospheric transitions, and cinematic color continuity. If there is no environment, turn the prompt into a color-script abstraction without requiring location panels, story beats, or a film scene.',
-    },
-  },
-  {
-    id: 'SP04-086',
-    name: 'Callout Detail Sheet',
-    category: '4. Concept Art',
-    negativePrompt:
-      'single view, one angle, no annotations, mystery, undefined, vague, ambiguous, unclear, unlabeled',
-    style: {
-      aesthetic: 'Technical callout sheet for production handoff',
-      subject_treatment: 'Uniform orthographic linework with strict weight hierarchy',
-      color_and_tone: 'Neutral monochrome base with limited annotation accent colors',
-      lighting_and_shadow: 'Flat functional illumination for uncompromised shape legibility',
-      texture_and_material: 'Diagrammatic hatching, section fills, and exploded-part separators',
-      camera_and_composition: 'Pure orthographic alignment plus controlled exploded/cutaway views',
-      atmosphere_and_mood: 'Clinical, exact, instruction-driven',
-      rendering_and_quality: 'High-clarity specification drawing with low interpretive ambiguity',
-      key_features: 'Multi-view orthos, dimension strings, labeled leaders, scale references',
-      creative_brief:
-        'Apply callout-detail sheet design to any input: orthographic fragments, exploded layers, cutaway windows, magnified inserts, measurement-like ticks, and technical line hierarchy. Keep labels optional/graphic only; do not require readable dimensions, machinery, weapons, vehicles, or a literal product schematic.',
     },
   },
   {
@@ -640,30 +577,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP04-094',
-    name: 'Anatomy Reference Sheet',
-    category: '4. Concept Art',
-    negativePrompt:
-      'stylized, cartoon, simplified, abstract, loose, messy, inaccurate, fantasy proportion, guesswork',
-    style: {
-      aesthetic:
-        'Educational anatomical reference plate with layered structural clarity and classical medical-plate influence',
-      subject_treatment: 'Precise technical linework for muscle, bone, and tendon mapping',
-      color_and_tone:
-        'Consistent didactic coding (muscle warm, bone neutral, vascular cool/warm accents)',
-      lighting_and_shadow: 'Even clinical illumination for unambiguous form legibility',
-      texture_and_material: 'Plate-style paper and wash overlays with minimal decorative noise',
-      camera_and_composition:
-        'Multi-view orthographic layout with transparent overlays and inset details',
-      atmosphere_and_mood: 'Scientific, disciplined, pedagogical',
-      rendering_and_quality: 'Reference-grade illustration optimized for study and instruction',
-      key_features:
-        'Layered anatomy views, insertion/origin callouts, proportion guides, sectional clarity',
-      creative_brief:
-        'Apply anatomy-reference-sheet structure to any input: layered construction, skeletal-like scaffolds, muscle-flow analogues, cutaway marks, and educational diagram composition. If no biological body exists, convert forms into anatomical systems without requiring humans, animals, labels, or medical realism.',
-    },
-  },
-  {
     id: 'SP04-095',
     name: 'Foliage Design Kit',
     category: '4. Concept Art',
@@ -764,54 +677,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered paper patina',
       creative_brief:
         'Apply illustrated world-map/carto graphic style to any input: parchment texture, route marks, contour coastlines, inset cartouches, rhumb-line geometry, terrain icons, and aged ink. If no geography exists, turn the subject into an abstract cartographic system without requiring a fictional place, compass centerpiece, readable labels, or literal map accuracy.',
-    },
-  },
-  {
-    id: 'SP04-099',
-    name: 'UI/HUD Wireframe Concept',
-    category: '4. Concept Art',
-    negativePrompt:
-      'finished, polished, colorful, final UI, rendered, textured, photo, busy, cluttered, beautiful art',
-    style: {
-      aesthetic: 'Game HUD wireframe concept balancing diegetic and overlay paradigms',
-      subject_treatment: 'Clean bounding-box architecture with spacing, flow, and hierarchy guides',
-      color_and_tone: 'Functional UI neutrals with semantic accent colors for state signaling',
-      lighting_and_shadow: 'Flat interface contrast with optional interaction glow cues',
-      texture_and_material:
-        'Minimalist screen-surface treatment; precision-first wireframe presentation',
-      camera_and_composition: 'Safe-zone aware screen layout plus world-anchored UI option studies',
-      atmosphere_and_mood: 'Functional, restrained, information-priority design',
-      rendering_and_quality:
-        'UX concept fidelity focused on clarity, density control, and usability',
-      key_features:
-        'Radial-vs-linear alternatives, stat cluster prototypes, readability checkpoints',
-      creative_brief:
-        'Apply UI/HUD wireframe concept language to any input: modular panels, safe-zone framing, scanline grids, reticles, status blocks, icon placeholders, and layered interface hierarchy. If no software/game context exists, translate the prompt into abstract interface architecture without requiring readable UI text, screenshots, or a game scene.',
-    },
-  },
-  {
-    id: 'SP04-100',
-    name: 'Monster Size Comparison Chart',
-    category: '4. Concept Art',
-    negativePrompt:
-      'single creature, no reference, unclear scale, vague proportions, tiny, only one, human-centric, no comparison',
-    style: {
-      aesthetic: 'Size-comparison chart with educational scale framing',
-      subject_treatment:
-        'Baseline-aligned silhouettes with measurement ticks and reference markers',
-      color_and_tone: 'Neutral comparative scheme with restrained atmospheric scaling cues',
-      lighting_and_shadow: 'Consistent silhouette rim/read light for cross-subject legibility',
-      texture_and_material:
-        'Clean chartboard finish with minimal atmospheric fade on largest entries',
-      camera_and_composition:
-        'Left-to-right ascending scale progression with fixed ground reference',
-      atmosphere_and_mood: 'Awe-oriented yet analytical, museum-chart clarity',
-      rendering_and_quality:
-        'Infographic-style concept sheet optimized for proportional comprehension',
-      key_features:
-        'Human and real-world benchmarks, incremental height logic, clear unit hierarchy',
-      creative_brief:
-        'Apply monster size-comparison chart logic to any input: baseline scaling, tick marks, escalating silhouettes, cutaway scale cues, and comparative graphic hierarchy. If no creature exists, convert the subject into abstract scale-study forms without requiring monsters, humans for scale, chart labels, or a creature lineup.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

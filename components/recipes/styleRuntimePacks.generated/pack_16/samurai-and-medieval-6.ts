@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-026',
     name: 'Pre-Impact Ritual Stillness Style',
-    category: '4. Samurais & Medieval',
+    category: '6. Samurai & Medieval',
     negativePrompt: 'photoreal, modern-firearms, sci-fi-neon, watermark, text, logo',
     style: {
       aesthetic:
@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-027',
     name: 'Crimson Formation Momentum Style',
-    category: '4. Samurais & Medieval',
+    category: '6. Samurai & Medieval',
     negativePrompt: 'photoreal, cartoon-goofy, modern-city, watermark, text, logo',
     style: {
       aesthetic:
@@ -62,7 +62,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-028',
     name: 'Sacred Heraldic Vow Style',
-    category: '4. Samurais & Medieval',
+    category: '6. Samurai & Medieval',
     negativePrompt: 'photoreal, sci-fi-ui, casual-modern, watermark, text, logo',
     style: {
       aesthetic:
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-029',
     name: 'Ember Breach Pressure Style',
-    category: '4. Samurais & Medieval',
+    category: '6. Samurai & Medieval',
     negativePrompt: 'photoreal, modern-tech, colorful-cute, watermark, text, logo',
     style: {
       aesthetic:
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-030',
     name: 'Moonlit Ascetic Discipline Style',
-    category: '4. Samurais & Medieval',
+    category: '6. Samurai & Medieval',
     negativePrompt: 'photoreal, bright-daylight, cyberpunk, watermark, text, logo',
     style: {
       aesthetic:

@@ -10,7 +10,8 @@ const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
     import('./pack_05/isekai-and-high-fantasy-3').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
     import('./pack_05/dark-fantasy-and-seinen-4').then((module) => module.GENERATED_STYLE_PRESETS),
-  () => import('./pack_05/action-5').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_05/action-motion-setpieces-5').then((module) => module.GENERATED_STYLE_PRESETS),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

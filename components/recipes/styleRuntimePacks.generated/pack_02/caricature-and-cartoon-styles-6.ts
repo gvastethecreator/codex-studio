@@ -283,93 +283,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP02-091',
-    name: 'Office Whiteboard Doodle',
-    category: '6. Caricature And Cartoon Styles',
-    negativePrompt:
-      'digital, clean, polished, professional, realistic, painted, 3d, photo, refined, color rich',
-    style: {
-      aesthetic:
-        'Dry-erase marker on whiteboard, awkward flowchart humor, half-erased previous ideas ghosting underneath, blue-expo red-expo green-expo marker colors, corporate satire drawn during boring meetings, strategy-diagram absurdity',
-      subject_treatment:
-        'Squeaky dry-erase marker strokes, variable thickness from marker angle, eraser-smear ghost trails, hasty unsteady linework, arrow-heavy composition',
-      color_and_tone:
-        'Expo-marker blue, red, green, black on glossy white, faded-ink pink from dried-out markers, smudge-grey eraser trails',
-      lighting_and_shadow:
-        'Harsh fluorescent overhead, glossy board reflection, shallow surface glare',
-      texture_and_material:
-        'Glossy whiteboard surface, dried-marker residue stains, eraser-felt streaks, aluminum frame reflection',
-      camera_and_composition:
-        'Arrows looping in impossible circles, crowded diagram spacing, warped marker perspective',
-      atmosphere_and_mood:
-        'Bored-meeting creativity, corporate-surrealism, passive-aggressive office humor, caffeine-fueled doodling',
-      rendering_and_quality:
-        'Office whiteboard doodle aesthetic, dry-erase impermanence, meeting-room creativity, corporate-absurdism humor',
-      key_features:
-        'Dry-erase marker strokes, eraser ghost trails, flowchart arrows, diagram circles, glossy board reflection, no readable text',
-      creative_brief:
-        'Translate any prompt into whiteboard doodle language: squeaky marker strokes, eraser ghosts, diagram arrows, glossy glare, color-coded marks, and half-erased residue. Avoid required meeting rooms, stick figures, readable text, or specific business diagrams. The surface should feel temporary, improvised, and slightly absurd.',
-    },
-  },
-  {
-    id: 'SP02-092',
-    name: 'Crumpled-Paper Scribble',
-    category: '6. Caricature And Cartoon Styles',
-    negativePrompt:
-      'flat, clean, smooth, pristine, digital, straight, unwrinkled, perfect, crisp edges',
-    style: {
-      aesthetic:
-        'Drawing on crumpled then flattened paper, crease-lines cutting through the art, stained and abused surface, wrinkled-grid distortion, beautiful-accident texture, discarded-thought recovered',
-      subject_treatment:
-        'Lines broken by paper creases, ink pooling in fold valleys, interrupted-contour across wrinkles, roughened-edge strokes',
-      color_and_tone:
-        'Stained paper beige, coffee-ring sepia, ballpoint blue, graphite grey, yellow-highlighter fluorescence, tea-tannin brown',
-      lighting_and_shadow:
-        'Top-down desk-lamp warmth, crease-shadow depth from crumpled topography, side-light revealing paper texture',
-      texture_and_material:
-        'Deep-crease paper folds, coffee-stain absorption circles, water-damage warping, ink-bleed into fibers, torn-edge roughness',
-      camera_and_composition:
-        'Forms bisected by fold lines, features shifted across crease faults, drawn-then-crumpled distortion',
-      atmosphere_and_mood:
-        'Desperate creativity, beautiful failure, late-night frustrated genius, rescued inspiration, melancholy charm',
-      rendering_and_quality:
-        'Crumpled-paper sketch aesthetic, rescued-from-trash beauty, accidental-texture rendering, wabi-sabi art philosophy',
-      key_features:
-        'Paper crease lines across art, coffee-stain rings, torn paper edges, ink-pooling in fold valleys, wabi-sabi imperfection',
-      creative_brief:
-        'Apply crumpled-paper damage to any input: fold faults, ink pooling, coffee stains, torn edges, warped fibers, and recovered-sketch imperfection. Avoid requiring characters, trash scenes, or literal rejection narrative. Damage should co-author the composition through surface deformation.',
-    },
-  },
-  {
-    id: 'SP02-093',
-    name: 'Prehistoric Cave Painting',
-    category: '6. Caricature And Cartoon Styles',
-    negativePrompt:
-      'modern, digital, clean, sharp, polished, 3d, realistic, refined, precise, smooth, contemporary',
-    style: {
-      aesthetic:
-        'Paleolithic cave-wall art, ochre-pigment stencils, rudimentary symbolic figures, Lascaux-cave energy, rough limestone surface, ancient storytelling through crude marks, thirty-thousand-year-old doodle energy',
-      subject_treatment:
-        'Crude finger-painted contours, blown-pigment hand silhouettes, charcoal-stick roughness, irregular natural pigment strokes',
-      color_and_tone:
-        'Ochre red, charcoal black, bone-ash white, clay-earth brown, iron-oxide rust, mineral-pigment rawness',
-      lighting_and_shadow:
-        'Torchlight flicker on cave wall, deep-shadow crevices, uneven stone illumination, dancing-flame warmth',
-      texture_and_material:
-        'Rough limestone surface, mineral-crystal sparkle, pigment-caked into rock pores, stalactite drip, cave-dust coating',
-      camera_and_composition:
-        'Impossible counts, incomplete silhouettes, overlapping-time narrative on same wall, no ground-line suspension',
-      atmosphere_and_mood:
-        "Ancient, primal, mysterious, torchlit-reverence, humanity's-dawn wonder, sacred-cave silence",
-      rendering_and_quality:
-        "Prehistoric cave-art aesthetic, paleolithic expression, humanity's-first-art beauty, raw-pigment authenticity",
-      key_features:
-        'Stencil negative prints, ochre-red outlines, charcoal-stick roughness, limestone texture, torchlight flicker, no ground plane',
-      creative_brief:
-        'Render any input as Paleolithic wall language: ochre pigment, charcoal marks, rough limestone, torch flicker, stencil silhouettes, and overlapping symbolic time. Avoid requiring animals, hunters, spears, or literal cave narratives. The style should feel ancient, mineral, and pre-perspective.',
-    },
-  },
-  {
     id: 'SP02-094',
     name: 'Kindergarten Family Portrait',
     category: '6. Caricature And Cartoon Styles',
@@ -428,35 +341,6 @@ export const GENERATED_STYLE_PRESETS = [
     },
   },
   {
-    id: 'SP02-096',
-    name: 'Skateboard Deck Graphic',
-    category: '6. Caricature And Cartoon Styles',
-    negativePrompt:
-      'soft, gentle, cute, kawaii, subtle, quiet, calm, peaceful, elegant, refined, mature',
-    style: {
-      aesthetic:
-        'Punk-rock skateboard deck art, dripping slime graphics, Thrasher-magazine energy, 80s Powell-Peralta as style anchor, bold rebellious iconography, graffiti-meets-hot-rod aesthetic, deck-grip tape grain underneath the gloss',
-      subject_treatment:
-        'Bold thick-black outlines, aggressive angular contours, dripping-paint trails, splatter-burst backgrounds, sharp-stencil edges',
-      color_and_tone:
-        'Neon green slime, blood red, toxic-waste yellow, black-void background, radioactive purple, white-bone contrast, screenprint-overprint cyan',
-      lighting_and_shadow:
-        'Flat-graphic studio lighting, gloss-varnish reflection on board surface, no atmospheric depth',
-      texture_and_material:
-        'Screenprint ink on maple veneer, gloss-varnish topcoat, grip-tape grain visible at edges, wood-ply layer peeking through paint',
-      camera_and_composition:
-        'Graphic centered on deck shape, cutout interruptions, nose-and-tail-kick distortion zone',
-      atmosphere_and_mood:
-        'Rebellious, loud, street-cred, teenage-freedom, parking-lot-session energy, aggressive creativity',
-      rendering_and_quality:
-        'Skateboard-deck graphic aesthetic, punk-rock screenprint energy, street-culture boldness, deck-wall art-gallery',
-      key_features:
-        'Bold-black outlines, slime-drips, screenprint texture, deck-shape composition, neon-green accents, gloss over wood grain',
-      creative_brief:
-        'Turn any input into skateboard-deck screenprint energy: centered graphic impact, thick black outlines, neon slime accents, maple veneer texture, glossy varnish, and rebellious iconography. Avoid requiring skulls, monsters, wheels, typography, or crossed bones. The deck format and print texture should carry the attitude.',
-    },
-  },
-  {
     id: 'SP02-097',
     name: 'Rejected Corporate Mascot',
     category: '6. Caricature And Cartoon Styles',
@@ -483,64 +367,6 @@ export const GENERATED_STYLE_PRESETS = [
         'Glossy dead cheer, too-perfect symmetry, frozen approval pose, costume seams, plastic-vector perfection, soulless brand energy',
       creative_brief:
         'Apply rejected-mascot unease to any subject: over-friendly shapes, too-perfect vector symmetry, glossy plastic surfaces, costume seam hints, and engineered cheer that reads as threat. Avoid requiring specific brands, eyes, smiles, thumbs-up poses, or mascot bodies. The horror should come from inappropriate marketing polish.',
-    },
-  },
-  {
-    id: 'SP02-098',
-    name: 'Napkin Scribble Blueprint',
-    category: '6. Caricature And Cartoon Styles',
-    negativePrompt:
-      'digital, clean, polished, precise, CAD, professional, straight lines, perfect, measured, refined',
-    style: {
-      aesthetic:
-        'Genius-idea-on-cocktail-napkin energy, ballpoint-pen crudely sketching concept structure, coffee-ring framing, condensation warping the paper, desperate late-night inspiration captured on whatever surface available',
-      subject_treatment:
-        'Ballpoint-pen on absorbent paper, ink-burst where pen pauses, scratchy-dry-ink skips, pressed-too-hard paper indentations',
-      color_and_tone:
-        'Ballpoint-blue ink, coffee-stain sepia, napkin-tan paper, beer-ring moisture-darkened halo, bar-neon reflected tint',
-      lighting_and_shadow:
-        'Dim ambient, single-overhead-bulb spot, emergency side light, warm falloff',
-      texture_and_material:
-        'Soft-ply napkin paper, ink-bleed-fringing, moisture-warped surface, crinkle-fold texture, absorbent-fiber softness',
-      camera_and_composition:
-        'Drawing wrapping around napkin folds, arrows pointing off-edge, squeezed negative space, quarter-napkin composition',
-      atmosphere_and_mood:
-        'Eureka-moment electricity, desperate-inspiration, 3am-bar-genius, startup-mythology, beautiful-desperation',
-      rendering_and_quality:
-        'Cocktail-napkin-sketch aesthetic, desperate-genius energy, bar-napkin-provenance authenticity, beautiful-roughness',
-      key_features:
-        'Ballpoint-blue on napkin-tan, coffee-ring overlay, moisture-warped paper, fold-lines bisecting sketch, scratchy-ink skips, no readable text',
-      creative_brief:
-        'Render the input like a napkin blueprint: ballpoint ink, absorbent paper bleed, coffee rings, moisture warp, fold lines, and rough arrows or schematic marks without readable text. Avoid inventions, startup myths, bars, or literal eureka setups. The surface should feel urgent and improvised. Apply Napkin Scribble Blueprint as a portable cinematic/camera style over any input: preserve its lens behavior, color process, lighting setup, artifact pattern, and deformation grammar while avoiding a required actor, room, prop, brand, readable text, fixed IP scene, or narrative setup.',
-    },
-  },
-  {
-    id: 'SP02-099',
-    name: 'Punk Zine Cut-and-Paste',
-    category: '6. Caricature And Cartoon Styles',
-    negativePrompt:
-      'digital, clean, smooth, professional, polished, designed, symmetrical, orderly, planned, corporate',
-    style: {
-      aesthetic:
-        'DIY photocopied-punk-zine aesthetic, cutout-letter shapes without readable text, deliberately bad photocopier distortion, tape marks holding collage elements, found-image recontextualization, glue-stick residue and scissor cuts, repeated photocopy generation loss',
-      subject_treatment:
-        'Cut-and-paste scissor edges, photocopy-contrast-blackening, tape-strip-transparency, staple-marks, torn-paper contours',
-      color_and_tone:
-        'Black-and-white Xerox, high-contrast photocopy, occasional highlight-marker pink, newspaper-clipping grey, security-envelope-blue-pattern background',
-      lighting_and_shadow:
-        'Photocopier-flatbed harshness, high-contrast blown-out whites, detail-lost-in-shadow-blacks, no nuance',
-      texture_and_material:
-        'Photocopy-toner grain, paper-curl from glue-stick moisture, scotch-tape gloss, newsprint-collage varied paper stocks, staple-metal glint',
-      camera_and_composition:
-        'Cut-out elements tilted angrily, no-alignment layout, overlapping collage depth, tape holding elements askew',
-      atmosphere_and_mood:
-        'Angry, urgent, anti-establishment, DIY-or-die, back-bedroom-publishing revolution, creative-resistance',
-      rendering_and_quality:
-        'Punk-zine photocopy aesthetic, DIY-publication energy, anti-design roughness, copy-of-a-copy degradation',
-      key_features:
-        'Photocopier high-contrast, cutout glyph shapes, cut-and-paste collage, tape marks, staple binding, toner grain, glue-stick wrinkles',
-      creative_brief:
-        'Apply punk zine collage to any input: Xerox contrast, cut paper edges, tape gloss, staple marks, toner grain, glue wrinkles, and angry misalignment. Avoid readable ransom text, fixed politics, or specific publication content. Degradation and hand assembly should be the main visual force.',
     },
   },
   {

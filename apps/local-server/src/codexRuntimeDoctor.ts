@@ -1,10 +1,15 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { spawnSync as nodeSpawnSync } from 'node:child_process';
+import path from 'node:path';
 import type {
   CodexRuntimeDoctorIssue,
   CodexRuntimeDoctorReport,
 } from '../../../packages/shared/src';
-import { resolveCodexExecutable, resolveCodexInvocation } from './codexExecutable';
+import {
+  resolveCodexExecutable,
+  resolveCodexInvocation,
+  resolveCodexInvocationForExecutable,
+} from './codexExecutable';
 import { listPlatformPathCandidates } from './platformPaths';
 
 interface SpawnResultLike {
@@ -31,7 +36,7 @@ export interface CodexRuntimeDoctorDependencies {
   exists?: (path: string) => boolean;
   spawnSync?: SpawnSyncLike;
   resolveExecutable?: () => string;
-  resolveInvocation?: (args: string[]) => string[];
+  resolveInvocation?: (args: string[], executable?: string) => string[];
   listCandidates?: () => Array<{ path: string; source: string }>;
 }
 
@@ -76,6 +81,40 @@ function buildIssue(
     ...issue,
     severity: 'error',
   };
+}
+
+function dedupeCandidates(candidates: Array<{ path: string; source: string }>) {
+  const seen = new Set<string>();
+  return candidates.filter((candidate) => {
+    const key = candidate.path.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function readKnownLegacyNpmShimIssue(executable: string): CodexRuntimeDoctorIssue | null {
+  if (process.platform !== 'win32') return null;
+  if (!/[\\/]npm[\\/]codex(?:\.cmd|\.exe)?$/i.test(executable)) return null;
+
+  const manifestPath = path.join(path.dirname(executable), 'node_modules', 'codex', 'package.json');
+  try {
+    const manifest = JSON.parse(readFileSync(manifestPath, 'utf8')) as {
+      name?: string;
+      version?: string;
+      description?: string;
+    };
+    if (manifest.name !== 'codex') return null;
+
+    return buildIssue({
+      code: 'codex_cli_legacy',
+      message: `Selected Codex CLI shim points to legacy npm package codex ${manifest.version ?? 'unknown version'}.`,
+      action:
+        'Remove the old global `codex` npm package, install `@openai/codex`, then restart the local backend.',
+    });
+  } catch {
+    return null;
+  }
 }
 
 function runProbe(
@@ -131,25 +170,64 @@ function runProbeWithFallback({
   };
 }
 
-export function inspectCodexRuntime({
-  now = () => new Date(),
-  exists = existsSync,
-  spawnSync = nodeSpawnSync,
-  resolveExecutable = resolveCodexExecutable,
-  resolveInvocation = resolveCodexInvocation,
-  listCandidates = () => listPlatformPathCandidates('codex-binary'),
-}: CodexRuntimeDoctorDependencies = {}): CodexRuntimeDoctorReport {
-  const selectedExecutable = resolveExecutable();
-  const candidates = listCandidates().map((candidate) => ({
+interface CandidateProbe {
+  executable: string;
+  source: string;
+  exists: boolean;
+  versionCommand: string[];
+  selectedVersion: string | null;
+  selectedVersionNumber: string | null;
+  appServerSupported: boolean;
+  issues: CodexRuntimeDoctorIssue[];
+  canRunJobs: boolean;
+}
+
+function inspectCandidate({
+  candidate,
+  exists,
+  resolveInvocation,
+  selectedExecutable,
+  spawnSync,
+}: {
+  candidate: { path: string; source: string };
+  exists: (path: string) => boolean;
+  resolveInvocation: (args: string[], executable?: string) => string[];
+  selectedExecutable: string;
+  spawnSync: SpawnSyncLike;
+}): CandidateProbe {
+  const candidateExists =
+    candidate.path === 'codex' ? process.platform !== 'win32' : exists(candidate.path);
+  const fallbackProbe = {
     executable: candidate.path,
     source: candidate.source,
-    exists: candidate.path === 'codex' ? false : exists(candidate.path),
-    selected: candidate.path === selectedExecutable,
-  }));
+    exists: candidateExists,
+    versionCommand: [candidate.path, '--version'],
+    selectedVersion: null,
+    selectedVersionNumber: null,
+    appServerSupported: false,
+    issues: [] as CodexRuntimeDoctorIssue[],
+    canRunJobs: false,
+  };
+
+  if (!candidateExists) return fallbackProbe;
+
+  const legacyShimIssue = readKnownLegacyNpmShimIssue(candidate.path);
+  if (legacyShimIssue) {
+    return {
+      ...fallbackProbe,
+      versionCommand: resolveCodexInvocationForExecutable(candidate.path, ['--version']),
+      issues: [legacyShimIssue],
+    };
+  }
+
+  const probeInvocation =
+    candidate.path === selectedExecutable
+      ? (args: string[]) => resolveInvocation(args, candidate.path)
+      : (args: string[]) => resolveCodexInvocationForExecutable(candidate.path, args);
   const versionProbe = runProbeWithFallback({
     spawnSync,
-    resolveInvocation,
-    selectedExecutable,
+    resolveInvocation: probeInvocation,
+    selectedExecutable: candidate.path,
     args: ['--version'],
   });
   const selectedVersion = versionProbe.result.status === 0 ? versionProbe.text : null;
@@ -174,7 +252,7 @@ export function inspectCodexRuntime({
     isLegacyCodexCli({
       rawVersion: selectedVersion,
       versionNumber: selectedVersionNumber,
-      executable: selectedExecutable,
+      executable: candidate.path,
     })
   ) {
     issues.push(
@@ -191,8 +269,8 @@ export function inspectCodexRuntime({
   if (versionProbe.result.status === 0 && issues.length === 0) {
     const helpProbe = runProbeWithFallback({
       spawnSync,
-      resolveInvocation,
-      selectedExecutable,
+      resolveInvocation: probeInvocation,
+      selectedExecutable: candidate.path,
       args: ['app-server', '--help'],
     });
     appServerSupported =
@@ -211,16 +289,74 @@ export function inspectCodexRuntime({
   }
 
   const canRunJobs = issues.length === 0 && appServerSupported;
+  return {
+    executable: candidate.path,
+    source: candidate.source,
+    exists: candidateExists,
+    versionCommand: versionProbe.command,
+    selectedVersion,
+    selectedVersionNumber,
+    appServerSupported,
+    issues,
+    canRunJobs,
+  };
+}
+
+export function inspectCodexRuntime({
+  now = () => new Date(),
+  exists = existsSync,
+  spawnSync = nodeSpawnSync,
+  resolveExecutable = resolveCodexExecutable,
+  resolveInvocation = resolveCodexInvocation,
+  listCandidates = () => listPlatformPathCandidates('codex-binary'),
+}: CodexRuntimeDoctorDependencies = {}): CodexRuntimeDoctorReport {
+  const initialExecutable = resolveExecutable();
+  const rawCandidates = dedupeCandidates([
+    { path: initialExecutable, source: 'resolved executable' },
+    ...listCandidates(),
+  ]);
+  const probes = rawCandidates.map((candidate) =>
+    inspectCandidate({
+      candidate,
+      exists,
+      resolveInvocation,
+      selectedExecutable: initialExecutable,
+      spawnSync,
+    }),
+  );
+  const selectedProbe =
+    probes.find((probe) => probe.canRunJobs) ??
+    probes.find((probe) => probe.executable === initialExecutable) ??
+    probes.find((probe) => probe.exists) ??
+    probes[0];
+  const issues =
+    selectedProbe?.issues.length || selectedProbe?.exists
+      ? (selectedProbe?.issues ?? [])
+      : [
+          buildIssue({
+            code: 'codex_cli_unavailable',
+            message: 'Codex CLI is not available from any known command.',
+            action: 'Install Codex CLI or fix PATH, then restart the local backend.',
+          }),
+        ];
+  const canRunJobs = Boolean(selectedProbe?.canRunJobs);
+  const selectedExecutable = selectedProbe?.executable ?? initialExecutable;
+  const candidates = rawCandidates.map((candidate) => ({
+    executable: candidate.path,
+    source: candidate.source,
+    exists: candidate.path === 'codex' ? false : exists(candidate.path),
+    selected: candidate.path === selectedExecutable,
+  }));
 
   return {
     status: canRunJobs ? 'ready' : 'blocked',
     canRunJobs,
     checkedAt: now().toISOString(),
     selectedExecutable,
-    selectedCommand: versionProbe.command.join(' '),
-    selectedVersion,
-    selectedVersionNumber,
-    appServerSupported,
+    selectedCommand: (selectedProbe?.versionCommand ?? [selectedExecutable, '--version']).join(' '),
+    selectedVersion: selectedProbe?.selectedVersion ?? null,
+    selectedVersionNumber: selectedProbe?.selectedVersionNumber ?? null,
+    appServerSupported: selectedProbe?.appServerSupported ?? false,
     recommendedAction: canRunJobs ? 'Codex Product Runtime is ready.' : issues[0].action,
     issues,
     candidates,

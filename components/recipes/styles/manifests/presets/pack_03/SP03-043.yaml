@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP03-043
 packId: pack_03
 name: X-Ray Shader
-category: 2. Materials
+category: 8. Sensor And Technical Shaders
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - 3d-and-cgi-rendering
-  - materials
+  - sensor-and-technical-shaders
 visualDna:
   aesthetic: X-ray transparency render
   subject_treatment: Internal structure
@@ -40,11 +40,11 @@ attributes:
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering
-  categoryId: materials
-  categoryName: 2. Materials
+  categoryId: sensor-and-technical-shaders
+  categoryName: 8. Sensor And Technical Shaders
   tags:
     - 3d-and-cgi-rendering
-    - materials
+    - sensor-and-technical-shaders
   supportedTasks:
     - image_generate
     - image_edit

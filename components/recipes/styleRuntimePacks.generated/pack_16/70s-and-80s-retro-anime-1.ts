@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-001',
     name: 'Retro Pioneer Hero',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -34,7 +34,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-311',
     name: 'Rusted Eco Hope Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -63,7 +63,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-003',
     name: 'Jazzy Rogue Heist Rhythm Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-004',
     name: 'Melancholy Astral Opera Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -121,7 +121,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-008',
     name: 'Neon Procedural Irony Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-009',
     name: 'Hyper-Dense Cyber-Retro Infrastructure Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -179,7 +179,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-010',
     name: 'Round Adventure Slapstick Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -208,7 +208,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-301',
     name: 'Analog Space Opera Command Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -237,7 +237,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-302',
     name: 'Melancholic Space Corsair Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -266,7 +266,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-303',
     name: 'Celestial Journey Melancholy Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -295,7 +295,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-304',
     name: 'Baroque Insurgent Melodrama Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -324,7 +324,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-305',
     name: 'Neon Sci-Fi Slapstick Rom-Com Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-306',
     name: 'Adult Domestic Warmth Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -382,7 +382,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-307',
     name: 'Summer Sports Melodrama Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -411,7 +411,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-308',
     name: 'Eighties Neon Precision Noir Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -440,7 +440,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-309',
     name: 'Explosive Space Glam Action Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -469,7 +469,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-310',
     name: 'Competent Space Pulp Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -498,7 +498,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-312',
     name: 'Elegant Eighties Heist Glam Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-313',
     name: 'Zodiac Cosmic Heroism Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -556,7 +556,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-317',
     name: 'Arcade Techno-Rebellion Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -585,7 +585,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-320',
     name: 'Charismatic Space Rogue Pulp Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -614,7 +614,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-315',
     name: 'Angular Institutional Tragedy Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -643,7 +643,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-002',
     name: 'Vintage Mechanical Grandeur Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -671,7 +671,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-005',
     name: 'Grounded Tactical Machinery Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -700,7 +700,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-006',
     name: 'Pop Transformable Aerial Spectacle Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -729,7 +729,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-314',
     name: 'Monumental Formation Sacrifice Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -758,7 +758,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-316',
     name: 'Biomorphic Mist Ritual Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -787,7 +787,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-318',
     name: 'Psychedelic Demonic Horror Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -816,7 +816,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-007',
     name: 'Wasteland Impact Legend Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {
@@ -845,7 +845,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-319',
     name: 'Strategic Pop Duality Style',
-    category: '11. 70s & 80s Retro Anime',
+    category: '1. 70s & 80s Retro Anime',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature',
     style: {

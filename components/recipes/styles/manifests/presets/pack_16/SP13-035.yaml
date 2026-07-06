@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP13-035
 packId: pack_16
 name: Demonic Ritual Mask Geometry Style
-category: 5. Horror
+category: 7. Horror
 version: 1
 supportedTasks:
   - image_generate
@@ -47,7 +47,7 @@ taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
   categoryId: horror
-  categoryName: 5. Horror
+  categoryName: 7. Horror
   tags:
     - anime-classics-and-prestige
     - anime

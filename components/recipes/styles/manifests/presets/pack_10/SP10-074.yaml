@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP10-074
 packId: pack_10
 name: Stained Glass
-category: 7. Diagram, Print & Light Systems
+category: 8. Point, Mosaic And Glass Systems
 version: 1
 supportedTasks:
   - image_generate
@@ -10,7 +10,7 @@ supportedTasks:
   - style_preset_card
 tags:
   - abstract-and-experimental
-  - diagram-print-and-light-systems
+  - point-mosaic-and-glass-systems
 visualDna:
   aesthetic: Stained glass segmentation
   subject_treatment: Black lead came
@@ -35,11 +35,11 @@ attributes:
 taxonomy:
   packId: pack_10
   packName: Abstract & Experimental
-  categoryId: diagram-print-and-light-systems
-  categoryName: 7. Diagram, Print & Light Systems
+  categoryId: point-mosaic-and-glass-systems
+  categoryName: 8. Point, Mosaic And Glass Systems
   tags:
     - abstract-and-experimental
-    - diagram-print-and-light-systems
+    - point-mosaic-and-glass-systems
   supportedTasks:
     - image_generate
     - image_edit

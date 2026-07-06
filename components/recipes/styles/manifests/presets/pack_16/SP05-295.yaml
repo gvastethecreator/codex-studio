@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP05-295
 packId: pack_16
 name: Quiet Musical Distance Style
-category: 10. Studio Masterpieces
+category: 4. Studio Masterpieces
 version: 1
 supportedTasks:
   - image_generate
@@ -67,7 +67,7 @@ taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige
   categoryId: studio-masterpieces
-  categoryName: 10. Studio Masterpieces
+  categoryName: 4. Studio Masterpieces
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
