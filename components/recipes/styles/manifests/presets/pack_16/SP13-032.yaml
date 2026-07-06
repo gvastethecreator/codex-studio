@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-032
 packId: pack_16
 name: Crimson Celestial Omen Style
+styleAnchors:
+  - 'Crimson Celestial Omen Style'
+displayName: 'Crimson Celestial Omen'
 category: 7. Horror
 version: 1
 supportedTasks:

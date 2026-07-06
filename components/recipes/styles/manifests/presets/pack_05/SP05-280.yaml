@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-280
 packId: pack_05
 name: Lantern Retribution Ritual Style
+styleAnchors:
+  - 'Lantern Retribution Ritual Style'
+displayName: 'Lantern Retribution Ritual'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-035
 packId: pack_16
 name: Demonic Ritual Mask Geometry Style
+styleAnchors:
+  - 'Demonic Ritual Mask Geometry Style'
+displayName: 'Demonic Ritual Mask Geometry'
 category: 7. Horror
 version: 1
 supportedTasks:

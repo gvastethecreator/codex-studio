@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-345
 packId: pack_16
 name: Nineties Physical Rivalry Style
+styleAnchors:
+  - 'Nineties Physical Rivalry Style'
+displayName: 'Nineties Physical Rivalry'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

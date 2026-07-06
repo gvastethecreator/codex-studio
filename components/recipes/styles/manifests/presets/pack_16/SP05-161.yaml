@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-161
 packId: pack_16
 name: Planetary Aura Impact Style
+styleAnchors:
+  - 'Planetary Aura Impact Style'
+displayName: 'Planetary Aura Impact'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-007
 packId: pack_12
 name: Glacier Fortress Assault
+styleAnchors:
+  - 'Glacier Fortress Assault'
+displayName: 'Glacier Fortress Siege'
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:

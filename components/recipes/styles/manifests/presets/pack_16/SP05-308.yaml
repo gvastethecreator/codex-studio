@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-308
 packId: pack_16
 name: Eighties Neon Precision Noir Style
+styleAnchors:
+  - 'Eighties Neon Precision Noir Style'
+displayName: 'Eighties Neon Precision Noir'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

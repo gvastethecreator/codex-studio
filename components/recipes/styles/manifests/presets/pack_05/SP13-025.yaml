@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-025
 packId: pack_05
 name: Upward Thunder Momentum Style
+styleAnchors:
+  - 'Upward Thunder Momentum Style'
+displayName: 'Upward Thunder Momentum'
 category: 5. Action Motion Setpieces
 version: 1
 supportedTasks:

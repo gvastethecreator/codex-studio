@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-037
 packId: pack_12
 name: Mushroom Kingdom Frontier
+styleAnchors:
+  - 'Mushroom Kingdom Frontier'
+displayName: 'Mushroom Frontier Platformer'
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:

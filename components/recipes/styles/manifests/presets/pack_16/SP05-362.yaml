@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-362
 packId: pack_16
 name: Glam Precision Rivalry Style
+styleAnchors:
+  - 'Glam Precision Rivalry Style'
+displayName: 'Glam Precision Rivalry'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

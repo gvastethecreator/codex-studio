@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-158
 packId: pack_16
 name: Ecological Whisper Healing Style
+styleAnchors:
+  - 'Ecological Whisper Healing Style'
+displayName: 'Ecological Whisper Healing'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

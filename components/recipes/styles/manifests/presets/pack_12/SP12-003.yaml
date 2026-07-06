@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-003
 packId: pack_12
 name: Desert Mech Convoy
+styleAnchors:
+  - 'Desert Mech Convoy'
+displayName: 'Desert Mech Logistics'
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:

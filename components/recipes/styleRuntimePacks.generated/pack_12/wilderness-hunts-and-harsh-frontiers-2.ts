@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-002',
     name: 'Bioluminescent Jungle Raid',
+    displayName: 'Bioluminescent Jungle Tactics',
+    styleAnchors: ['Bioluminescent Jungle Raid'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, flat-light, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-010',
     name: 'Volcanic Forge Dungeon',
+    displayName: 'Volcanic Forge Crawl',
+    styleAnchors: ['Volcanic Forge Dungeon'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, snow, pastel, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-022',
     name: 'Frozen Bazaar Survival Night',
+    displayName: 'Frozen Bazaar Survival',
+    styleAnchors: ['Frozen Bazaar Survival Night'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-027',
     name: 'Deep Mine Co-op Extraction',
+    displayName: 'Deep Mine Extraction',
+    styleAnchors: ['Deep Mine Co-op Extraction'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -151,6 +159,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-034',
     name: 'Crimson Canyon Sniper Run',
+    displayName: 'Crimson Canyon Sniper',
+    styleAnchors: ['Crimson Canyon Sniper Run'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, neon-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -180,6 +190,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-040',
     name: 'Thunder Plains Beast Hunt',
+    displayName: 'Thunder Plains Hunt',
+    styleAnchors: ['Thunder Plains Beast Hunt'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, cityscape, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -209,6 +221,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-041',
     name: 'Emberwood Ranger Outpost',
+    displayName: 'Emberwood Ranger Frontier',
+    styleAnchors: ['Emberwood Ranger Outpost'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, snow-theme, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -238,6 +252,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-067',
     name: 'Bronze Marsh Siege Camp',
+    displayName: 'Bronze Marsh Siegecraft',
+    styleAnchors: ['Bronze Marsh Siege Camp'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, text, logo, neon, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',

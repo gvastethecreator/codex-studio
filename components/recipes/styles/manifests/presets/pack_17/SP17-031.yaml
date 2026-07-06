@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-031
 packId: pack_17
 name: Bone-Script Monastery Siege
+styleAnchors:
+  - 'Bone-Script Monastery Siege'
+displayName: 'Bone-Script Monastery Gothic'
 category: 5. Apocalyptic Wargame & Inked Dungeon
 domain: siege monastery fantasy
 version: 1

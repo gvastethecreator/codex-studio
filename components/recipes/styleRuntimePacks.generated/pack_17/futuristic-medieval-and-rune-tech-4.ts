@@ -36,6 +36,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-020',
     name: 'Techno Crusader Armor',
+    displayName: 'Techno Reliquary Armor',
+    styleAnchors: ['Techno Crusader Armor'],
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
@@ -66,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-021',
     name: 'Synth Castle Prophecy',
+    displayName: 'Synth Castle Gothic',
+    styleAnchors: ['Synth Castle Prophecy'],
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:
@@ -96,6 +100,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-022',
     name: 'Mecha Reliquary Knight',
+    displayName: 'Mecha Reliquary Gothic',
+    styleAnchors: ['Mecha Reliquary Knight'],
     category: '4. Futuristic Medieval & Rune Tech',
     domain: 'futuristic medieval',
     negativePrompt:

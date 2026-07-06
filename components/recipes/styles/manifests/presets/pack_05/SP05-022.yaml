@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-022
 packId: pack_05
 name: Urban Spirit Blade
+styleAnchors:
+  - 'Urban Spirit Blade'
+displayName: 'Urban Spirit Swordplay'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-289
 packId: pack_16
 name: Ascetic Gothic Silence Style
+styleAnchors:
+  - 'Ascetic Gothic Silence Style'
+displayName: 'Ascetic Gothic Silence'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

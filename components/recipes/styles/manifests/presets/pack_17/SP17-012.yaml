@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-012
 packId: pack_17
 name: Candlelit Bestiary Court
+styleAnchors:
+  - 'Candlelit Bestiary Court'
+displayName: 'Candlelit Bestiary Gothic'
 category: 2. Hunter Gothic & Plague Courts
 domain: gothic fantasy
 version: 1

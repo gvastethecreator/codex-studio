@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-313
 packId: pack_16
 name: Zodiac Cosmic Heroism Style
+styleAnchors:
+  - 'Zodiac Cosmic Heroism Style'
+displayName: 'Zodiac Cosmic Heroism'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

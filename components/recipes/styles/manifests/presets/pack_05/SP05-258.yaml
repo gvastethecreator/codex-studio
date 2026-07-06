@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-258
 packId: pack_05
 name: Handyman Saitou in Another World - Toolbox Party Quest
+styleAnchors:
+  - 'Handyman Saitou in Another World - Toolbox Party Quest'
+displayName: 'Toolbox Party Quest'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

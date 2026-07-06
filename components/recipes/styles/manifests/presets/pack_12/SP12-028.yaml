@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-028
 packId: pack_12
 name: Sky Monastery Duel
+styleAnchors:
+  - 'Sky Monastery Duel'
+displayName: 'Sky Monastery Duelism'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

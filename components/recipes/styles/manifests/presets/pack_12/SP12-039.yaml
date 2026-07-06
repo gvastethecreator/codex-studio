@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-039
 packId: pack_12
 name: Phantom Theater Rhythm Battle
+styleAnchors:
+  - 'Phantom Theater Rhythm Battle'
+displayName: 'Phantom Theater Rhythm'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

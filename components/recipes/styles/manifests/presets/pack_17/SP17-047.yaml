@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-047
 packId: pack_17
 name: Salt Cathedral Pilgrimage
+styleAnchors:
+  - 'Salt Cathedral Pilgrimage'
+displayName: 'Salt Cathedral Vellum Gothic'
 category: 7. Weird Medieval Editorial
 domain: desert sacred fantasy
 version: 1

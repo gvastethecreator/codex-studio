@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-030
 packId: pack_17
 name: Hexenwood Witch-Knight Covenant
+styleAnchors:
+  - 'Hexenwood Witch-Knight Covenant'
+displayName: 'Hexenwood Witch-Knight Gothic'
 category: 5. Apocalyptic Wargame & Inked Dungeon
 domain: folk horror medieval
 version: 1

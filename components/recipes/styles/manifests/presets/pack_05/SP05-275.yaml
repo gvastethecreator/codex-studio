@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-275
 packId: pack_05
 name: Civic Rumor Breakdown Style
+styleAnchors:
+  - 'Civic Rumor Breakdown Style'
+displayName: 'Civic Rumor Breakdown'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

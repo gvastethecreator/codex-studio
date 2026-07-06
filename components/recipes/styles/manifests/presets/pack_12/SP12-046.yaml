@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-046
 packId: pack_12
 name: Solar Rail Nomad Camp
+styleAnchors:
+  - 'Solar Rail Nomad Camp'
+displayName: 'Solar Rail Nomad Logistics'
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:

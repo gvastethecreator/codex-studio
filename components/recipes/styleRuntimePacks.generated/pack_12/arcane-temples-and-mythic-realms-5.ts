@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-006',
     name: 'Arcane Library Boss Arena',
+    displayName: 'Arcane Library Encounter',
+    styleAnchors: ['Arcane Library Boss Arena'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, cartoon, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-013',
     name: 'Crystal Desert Shrine',
+    displayName: 'Crystal Desert Shrinecraft',
+    styleAnchors: ['Crystal Desert Shrine'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, urban-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-015',
     name: 'Ancient Mecha Temple',
+    displayName: 'Ancient Mecha Templecraft',
+    styleAnchors: ['Ancient Mecha Temple'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, clean-modern, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-020',
     name: 'Celestial Harbor Trade Wars',
+    displayName: 'Celestial Harbor Strategy',
+    styleAnchors: ['Celestial Harbor Trade Wars'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, empty-scene, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-028',
     name: 'Sky Monastery Duel',
+    displayName: 'Sky Monastery Duelism',
+    styleAnchors: ['Sky Monastery Duel'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, grunge, chaotic-fx, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-044',
     name: 'Mirage Palace Stealth Gala',
+    displayName: 'Mirage Palace Stealth',
+    styleAnchors: ['Mirage Palace Stealth Gala'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -180,6 +192,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-053',
     name: 'Marsh Witch Coven Arena',
+    displayName: 'Marsh Witch Coven Combat',
+    styleAnchors: ['Marsh Witch Coven Arena'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, sci-fi-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-055',
     name: 'Orchid Palace Puzzle Gardens',
+    displayName: 'Orchid Palace Puzzle Garden',
+    styleAnchors: ['Orchid Palace Puzzle Gardens'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, combat-chaos, murky, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -238,6 +254,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-061',
     name: 'Jade Volcano Shrine Run',
+    displayName: 'Jade Volcano Shrinecraft',
+    styleAnchors: ['Jade Volcano Shrine Run'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, snow, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -267,6 +285,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-070',
     name: 'Moonlit Shrine Archer Trials',
+    displayName: 'Moonlit Shrine Archery',
+    styleAnchors: ['Moonlit Shrine Archer Trials'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, text, logo, daytime, clutter, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',

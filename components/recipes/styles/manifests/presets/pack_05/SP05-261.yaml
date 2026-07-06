@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-261
 packId: pack_05
 name: Eclipse Scar Weight Style
+styleAnchors:
+  - 'Eclipse Scar Weight Style'
+displayName: 'Eclipse Scar Weight'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

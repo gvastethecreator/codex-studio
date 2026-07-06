@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-033
 packId: pack_05
 name: Chaotic Splatter Action
+styleAnchors:
+  - 'Chaotic Splatter Action'
+displayName: 'Splatter Punk Action'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

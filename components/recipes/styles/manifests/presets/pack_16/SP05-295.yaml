@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-295
 packId: pack_16
 name: Quiet Musical Distance Style
+styleAnchors:
+  - 'Quiet Musical Distance Style'
+displayName: 'Quiet Musical Distance'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

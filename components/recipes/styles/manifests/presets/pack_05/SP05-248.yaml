@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-248
 packId: pack_05
 name: Delicious in Dungeon - Stove-Top Monster Cuisine
+styleAnchors:
+  - 'Delicious in Dungeon - Stove-Top Monster Cuisine'
+displayName: 'Stove-Top Monster Cuisine'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

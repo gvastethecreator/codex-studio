@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-012
 packId: pack_16
 name: Sparkling Magical Chorus Style
+styleAnchors:
+  - 'Sparkling Magical Chorus Style'
+displayName: 'Sparkling Magical Chorus'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

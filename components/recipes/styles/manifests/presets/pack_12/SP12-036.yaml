@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-036
 packId: pack_12
 name: Lunar Monolith Puzzle Chamber
+styleAnchors:
+  - 'Lunar Monolith Puzzle Chamber'
+displayName: 'Lunar Monolith Puzzle'
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:

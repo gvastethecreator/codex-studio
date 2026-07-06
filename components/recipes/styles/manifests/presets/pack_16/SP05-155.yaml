@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-155
 packId: pack_16
 name: Noble Arcane Romcom Style
+styleAnchors:
+  - 'Noble Arcane Romcom Style'
+displayName: 'Noble Arcane Romcom'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

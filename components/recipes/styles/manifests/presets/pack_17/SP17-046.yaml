@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-046
 packId: pack_17
 name: Moth Abbey Vellum Horror
+styleAnchors:
+  - 'Moth Abbey Vellum Horror'
+displayName: 'Moth Abbey Vellum Gothic'
 category: 7. Weird Medieval Editorial
 domain: monastic gothic fantasy
 version: 1

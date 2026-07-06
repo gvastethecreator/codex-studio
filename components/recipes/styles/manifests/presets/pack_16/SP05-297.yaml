@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-297
 packId: pack_16
 name: Hyperobserved Rain Intimacy Style
+styleAnchors:
+  - 'Hyperobserved Rain Intimacy Style'
+displayName: 'Hyperobserved Rain Intimacy'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

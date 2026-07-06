@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-314
 packId: pack_16
 name: Monumental Formation Sacrifice Style
+styleAnchors:
+  - 'Monumental Formation Sacrifice Style'
+displayName: 'Monumental Formation Sacrifice'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

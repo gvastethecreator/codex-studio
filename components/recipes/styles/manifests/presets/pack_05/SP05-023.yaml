@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-023
 packId: pack_05
 name: Grand Pirate Adventure
+styleAnchors:
+  - 'Grand Pirate Adventure'
+displayName: 'Elastic Voyage Shonen'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

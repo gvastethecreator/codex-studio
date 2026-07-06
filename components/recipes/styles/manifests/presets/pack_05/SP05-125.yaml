@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-125
 packId: pack_05
 name: Kaiju No. 8 - Civic Monster Response Unit
+styleAnchors:
+  - 'Kaiju No. 8 - Civic Monster Response Unit'
+displayName: 'Civic Monster Response Unit'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

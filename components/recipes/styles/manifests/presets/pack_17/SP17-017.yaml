@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-017
 packId: pack_17
 name: Punk Heraldry Dungeon Cards
+styleAnchors:
+  - 'Punk Heraldry Dungeon Cards'
+displayName: 'Punk Heraldry Dungeon'
 category: 3. Acid Dungeon Zine
 domain: dungeon zine
 version: 1

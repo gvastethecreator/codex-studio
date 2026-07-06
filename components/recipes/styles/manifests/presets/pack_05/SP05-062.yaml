@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-062
 packId: pack_05
 name: Crimson Hunger Metamorphosis Style
+styleAnchors:
+  - 'Crimson Hunger Metamorphosis Style'
+displayName: 'Crimson Hunger Metamorphosis'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

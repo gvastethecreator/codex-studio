@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-167
 packId: pack_16
 name: Engine-Trail Outlaw Adventure Style
+styleAnchors:
+  - 'Engine-Trail Outlaw Adventure Style'
+displayName: 'Engine-Trail Outlaw Adventure'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

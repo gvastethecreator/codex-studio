@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-274
 packId: pack_05
 name: Winter Guilt Suspicion Style
+styleAnchors:
+  - 'Winter Guilt Suspicion Style'
+displayName: 'Winter Guilt Suspicion'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-026
 packId: pack_16
 name: Operatic Rebellion Strategy Style
+styleAnchors:
+  - 'Operatic Rebellion Strategy Style'
+displayName: 'Operatic Rebellion Strategy'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

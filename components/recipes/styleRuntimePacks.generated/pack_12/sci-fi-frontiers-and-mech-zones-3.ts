@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-003',
     name: 'Desert Mech Convoy',
+    displayName: 'Desert Mech Logistics',
+    styleAnchors: ['Desert Mech Convoy'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, text, logo, oversaturated, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-005',
     name: 'Moonbase Breach Alarm',
+    displayName: 'Moonbase Breach Ops',
+    styleAnchors: ['Moonbase Breach Alarm'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, text, logo, warm-sunlight, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-011',
     name: 'Underwater Research Collapse',
+    displayName: 'Underwater Research Horror',
+    styleAnchors: ['Underwater Research Collapse'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, text, logo, dry-environment, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-018',
     name: 'Storm Citadel Defense Grid',
+    displayName: 'Storm Citadel Defense',
+    styleAnchors: ['Storm Citadel Defense Grid'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, text, logo, chaotic-ui, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-023',
     name: 'Orbital Garden Colony Builder',
+    displayName: 'Orbital Garden Builder',
+    styleAnchors: ['Orbital Garden Colony Builder'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, text, logo, grimdark, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -238,6 +248,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-046',
     name: 'Solar Rail Nomad Camp',
+    displayName: 'Solar Rail Nomad Logistics',
+    styleAnchors: ['Solar Rail Nomad Camp'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, text, logo, neon-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-022
 packId: pack_12
 name: Frozen Bazaar Survival Night
+styleAnchors:
+  - 'Frozen Bazaar Survival Night'
+displayName: 'Frozen Bazaar Survival'
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:

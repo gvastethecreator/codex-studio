@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-025
 packId: pack_17
 name: Mud-Cathedral Crusade
+styleAnchors:
+  - 'Mud-Cathedral Crusade'
+displayName: 'Mud-Cathedral War Gothic'
 category: 5. Apocalyptic Wargame & Inked Dungeon
 domain: apocalyptic medieval
 version: 1

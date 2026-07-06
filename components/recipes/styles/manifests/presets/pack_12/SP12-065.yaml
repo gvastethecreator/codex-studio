@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-065
 packId: pack_12
 name: Crystal Crown Duel Hall
+styleAnchors:
+  - 'Crystal Crown Duel Hall'
+displayName: 'Crystal Crown Duelism'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-031
 packId: pack_12
 name: Astral Chess Battlefield
+styleAnchors:
+  - 'Astral Chess Battlefield'
+displayName: 'Astral Chess Tactics'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

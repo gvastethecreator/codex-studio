@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-009
 packId: pack_16
 name: Hyper-Dense Cyber-Retro Infrastructure Style
+styleAnchors:
+  - 'Hyper-Dense Cyber-Retro Infrastructure Style'
+displayName: 'Hyper-Dense Cyber-Retro Infrastructure'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

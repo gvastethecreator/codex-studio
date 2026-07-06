@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-129
 packId: pack_05
 name: One-Punch Man - Prestige Hero Impact Satire
+styleAnchors:
+  - 'One-Punch Man - Prestige Hero Impact Satire'
+displayName: 'Prestige Hero Impact Satire'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

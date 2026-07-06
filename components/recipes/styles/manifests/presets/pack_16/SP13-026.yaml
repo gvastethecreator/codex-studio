@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-026
 packId: pack_16
 name: Pre-Impact Ritual Stillness Style
+styleAnchors:
+  - 'Pre-Impact Ritual Stillness Style'
+displayName: 'Pre-Impact Ritual Stillness'
 category: 6. Samurai & Medieval
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-035
 packId: pack_05
 name: Gritty Wallbound Survival
+styleAnchors:
+  - 'Gritty Wallbound Survival'
+displayName: 'Wallbound Survival Drama'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

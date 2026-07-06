@@ -88,6 +88,8 @@ import {
 } from './styleLayerComposer';
 import type { StylePresetCatalogSearchResult } from './stylePresetManifests';
 import {
+  getStyleRuntimePresetDisplayName,
+  getStyleRuntimePresetSearchNames,
   loadStyleRuntimePack,
   loadStyleRuntimePacks,
   STYLE_RUNTIME_PACK_SUMMARIES,
@@ -2227,8 +2229,15 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const handleCopyStylePrompt = (e: React.MouseEvent, preset: StyleRuntimePreset) => {
     e.stopPropagation();
+    const displayName = getStyleRuntimePresetDisplayName(preset);
+    const styleAnchors = getStyleRuntimePresetSearchNames(preset).filter(
+      (name) => name !== displayName,
+    );
+    const styleAnchorLine =
+      styleAnchors.length > 0 ? `**Style Anchors:** ${styleAnchors.join(', ')}\n` : '';
     const promptText = `
-**Style:** ${preset.name}
+**Style:** ${displayName}
+${styleAnchorLine}
 **Aesthetic:** ${preset.style.aesthetic}
 **Subject:** ${describeStyleValue(preset.style.subject_treatment ?? preset.style.form_and_line)}
 **Color:** ${describeStyleValue(preset.style.color_and_tone ?? preset.style.color_palette)}
@@ -2781,6 +2790,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       const slotCardImage = resolveStylePresetPrimaryCardImage(
                         selectedStyleVisualStateById.get(slot.preset.id),
                       );
+                      const presetName = getStyleRuntimePresetDisplayName(slot.preset);
                       return (
                         <div
                           key={slot.preset.id}
@@ -2812,14 +2822,14 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                                 {slot.packName}
                               </div>
                               <div className="truncate text-[11px] font-black uppercase tracking-tight text-white">
-                                {slot.preset.name}
+                                {presetName}
                               </div>
                             </div>
                             <button
                               type="button"
                               onClick={() => removeSelectedStyle(slot.preset.id)}
                               className="flex size-8 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-white/5 text-zinc-400"
-                              aria-label={`Remove ${slot.preset.name}`}
+                              aria-label={`Remove ${presetName}`}
                             >
                               <X size={13} />
                             </button>
@@ -2839,7 +2849,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                                 )
                               }
                               className="h-1 min-w-0 flex-1 accent-white"
-                              aria-label={`Style Strength ${slot.preset.name}`}
+                              aria-label={`Style Strength ${presetName}`}
                             />
                             <span className="w-8 text-right text-[8px] font-black tabular-nums text-zinc-400">
                               {formatStyleStrength(slot.strength)}
@@ -3559,6 +3569,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                   </div>
                 );
               }
+              const presetName = getStyleRuntimePresetDisplayName(slot.preset);
 
               return (
                 <div
@@ -3596,7 +3607,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                     type="button"
                     onClick={() => removeSelectedStyle(slot.preset.id)}
                     className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-black/52 text-zinc-300 opacity-0 backdrop-blur transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
-                    aria-label={`Remove ${slot.preset.name}`}
+                    aria-label={`Remove ${presetName}`}
                   >
                     <X size={13} />
                   </button>
@@ -3613,7 +3624,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                       </span>
                     </div>
                     <h3 className="truncate text-[10px] font-black uppercase leading-tight tracking-tight text-white">
-                      {slot.preset.name}
+                      {presetName}
                     </h3>
                     {!isAdvancedStyleControlsOpen && (
                       <p className="mt-1 line-clamp-2 text-[8px] leading-relaxed text-zinc-300/82">
@@ -3635,7 +3646,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
                           updateSelectedStyleStrength(slot.preset.id, Number(event.target.value))
                         }
                         className="h-1 min-w-0 flex-1 accent-white"
-                        aria-label={`Style Strength ${slot.preset.name}`}
+                        aria-label={`Style Strength ${presetName}`}
                         data-selected-style-strength={slot.preset.id}
                       />
                       <span className="w-7 text-right text-[8px] font-black tabular-nums text-zinc-300">

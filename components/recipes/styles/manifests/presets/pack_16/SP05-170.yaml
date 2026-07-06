@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-170
 packId: pack_16
 name: Storybook Seal Magic Style
+styleAnchors:
+  - 'Storybook Seal Magic Style'
+displayName: 'Storybook Seal Magic'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

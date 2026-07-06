@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-022
 packId: pack_05
 name: Vertigo Energy Cross Style
+styleAnchors:
+  - 'Vertigo Energy Cross Style'
+displayName: 'Vertigo Energy Cross'
 category: 5. Action Motion Setpieces
 version: 1
 supportedTasks:

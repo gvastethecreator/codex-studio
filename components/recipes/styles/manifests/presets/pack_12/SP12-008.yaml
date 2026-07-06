@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-008
 packId: pack_12
 name: Holographic Grand Prix Night
+styleAnchors:
+  - 'Holographic Grand Prix Night'
+displayName: 'Holographic Grand Prix'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

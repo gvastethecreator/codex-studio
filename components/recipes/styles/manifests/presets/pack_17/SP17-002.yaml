@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-002
 packId: pack_17
 name: Gilded Rune Epic
+styleAnchors:
+  - 'Gilded Rune Epic'
+displayName: 'Gilded Rune Mythic'
 category: 1. Dark Fantasy Realms
 domain: medieval fantasy
 version: 1

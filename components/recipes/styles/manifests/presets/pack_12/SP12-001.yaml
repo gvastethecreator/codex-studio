@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-001
 packId: pack_12
 name: Neon Samurai District
+styleAnchors:
+  - 'Neon Samurai District'
+displayName: 'Neon Blade Urban Ops'
 category: 1. Neon Urban & Night Ops
 version: 1
 supportedTasks:

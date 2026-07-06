@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-004
 packId: pack_12
 name: Clockwork Sky Armada
+styleAnchors:
+  - 'Clockwork Sky Armada'
+displayName: 'Clockwork Sky Strategy'
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:

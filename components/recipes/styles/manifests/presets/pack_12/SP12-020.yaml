@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-020
 packId: pack_12
 name: Celestial Harbor Trade Wars
+styleAnchors:
+  - 'Celestial Harbor Trade Wars'
+displayName: 'Celestial Harbor Strategy'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

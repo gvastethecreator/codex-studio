@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-157
 packId: pack_16
 name: Vertical Speed Rebellion Style
+styleAnchors:
+  - 'Vertical Speed Rebellion Style'
+displayName: 'Vertical Speed Rebellion'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

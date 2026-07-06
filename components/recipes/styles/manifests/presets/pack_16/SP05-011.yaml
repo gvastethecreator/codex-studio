@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-011
 packId: pack_16
 name: Generational Aura Clash Style
+styleAnchors:
+  - 'Generational Aura Clash Style'
+displayName: 'Generational Aura Clash'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

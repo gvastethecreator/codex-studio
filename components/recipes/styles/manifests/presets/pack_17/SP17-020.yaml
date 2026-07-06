@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-020
 packId: pack_17
 name: Techno Crusader Armor
+styleAnchors:
+  - 'Techno Crusader Armor'
+displayName: 'Techno Reliquary Armor'
 category: 4. Futuristic Medieval & Rune Tech
 domain: futuristic medieval
 version: 1

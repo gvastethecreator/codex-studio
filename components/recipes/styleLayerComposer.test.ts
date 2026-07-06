@@ -5,6 +5,7 @@ import {
   createDefaultStyleLayerFieldControls,
   createSelectedStyleEmphasis,
   createSelectedStyleLayer,
+  createSelectedStylesPrompt,
   joinSelectedStyleLayerValue,
   mergeSelectedStyleNegativePrompts,
   type SelectedStyleSlot,
@@ -54,6 +55,31 @@ describe('styleLayerComposer', () => {
     });
     expect(joinSelectedStyleLayerValue([createSlot()], 'colorTone')).toBe(
       'Polished Glass (0.75): cool mineral blues',
+    );
+  });
+
+  it('uses display names in UI layers while keeping source anchors in prompts', () => {
+    const slot = createSlot({
+      preset: {
+        ...PRESET,
+        displayName: 'Clean Glass Material',
+        styleAnchors: ['Polished Glass', 'commercial glass render'],
+      },
+    });
+    const layer = createSelectedStyleLayer(slot, 0);
+
+    expect(layer.presetName).toBe('Clean Glass Material');
+    expect(layer.presetSourceName).toBe('Polished Glass');
+    expect(layer.styleAnchors).toEqual([
+      'Clean Glass Material',
+      'Polished Glass',
+      'commercial glass render',
+    ]);
+    expect(createSelectedStylesPrompt([slot])).toBe(
+      'Apply selected style layers: Clean Glass Material [style anchors: Polished Glass, commercial glass render]',
+    );
+    expect(joinSelectedStyleLayerValue([slot], 'colorTone')).toBe(
+      'Clean Glass Material [style anchors: Polished Glass, commercial glass render] (0.75): cool mineral blues',
     );
   });
 

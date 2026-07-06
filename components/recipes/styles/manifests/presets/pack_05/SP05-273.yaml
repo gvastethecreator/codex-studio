@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-273
 packId: pack_05
 name: Luminous Natural Cycle Calm Style
+styleAnchors:
+  - 'Luminous Natural Cycle Calm Style'
+displayName: 'Luminous Natural Cycle Calm'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

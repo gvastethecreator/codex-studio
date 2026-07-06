@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-136
 packId: pack_05
 name: Black Clover - Grimoire Thunder Squad
+styleAnchors:
+  - 'Black Clover - Grimoire Thunder Squad'
+displayName: 'Grimoire Thunder Squad'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

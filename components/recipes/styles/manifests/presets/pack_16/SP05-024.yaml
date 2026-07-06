@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-024
 packId: pack_16
 name: Alchemical Moral Geometry Style
+styleAnchors:
+  - 'Alchemical Moral Geometry Style'
+displayName: 'Alchemical Moral Geometry'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

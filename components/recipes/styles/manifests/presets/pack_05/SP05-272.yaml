@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-272
 packId: pack_05
 name: Machine Mourning Noir Style
+styleAnchors:
+  - 'Machine Mourning Noir Style'
+displayName: 'Machine Mourning Noir'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

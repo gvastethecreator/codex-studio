@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-021
 packId: pack_17
 name: Synth Castle Prophecy
+styleAnchors:
+  - 'Synth Castle Prophecy'
+displayName: 'Synth Castle Gothic'
 category: 4. Futuristic Medieval & Rune Tech
 domain: futuristic medieval
 version: 1

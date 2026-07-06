@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-312
 packId: pack_16
 name: Elegant Eighties Heist Glam Style
+styleAnchors:
+  - 'Elegant Eighties Heist Glam Style'
+displayName: 'Elegant Eighties Heist Glam'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-124
 packId: pack_05
 name: Blue Lock - Predator-Ego Sports Assault
+styleAnchors:
+  - 'Blue Lock - Predator-Ego Sports Assault'
+displayName: 'Predator-Ego Sports Assault'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

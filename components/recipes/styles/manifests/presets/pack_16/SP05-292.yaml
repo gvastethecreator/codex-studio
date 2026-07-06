@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-292
 packId: pack_16
 name: Historical Glam Punk Performance Style
+styleAnchors:
+  - 'Historical Glam Punk Performance Style'
+displayName: 'Historical Glam Punk Performance'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

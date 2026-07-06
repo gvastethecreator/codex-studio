@@ -15,7 +15,7 @@ import {
   type StylePresetCardImage,
 } from '../../lib/stylePresetVisuals';
 import { FloatingTooltip } from '../ui/FloatingTooltip';
-import type { StyleRuntimePreset } from './stylesData';
+import { getStyleRuntimePresetDisplayName, type StyleRuntimePreset } from './stylesData';
 import type { StyleCollectionRuntimePreset } from './styles/collections';
 import type { StyleTheme } from './StyleRecipeNavigationPanel';
 
@@ -103,6 +103,8 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
   FadeImageComponent,
   onApply,
 }) => {
+  const presetDisplayName = getStyleRuntimePresetDisplayName(preset);
+
   const handleApplyFromKeyboard = (e: React.KeyboardEvent) => {
     if (e.key !== 'Enter' && e.key !== ' ') return;
     e.preventDefault();
@@ -133,7 +135,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
       <div className="absolute inset-0 group/image">
         <button
           type="button"
-          aria-label={`${active ? 'Remove' : 'Select'} ${preset.name}`}
+          aria-label={`${active ? 'Remove' : 'Select'} ${presetDisplayName}`}
           onClick={() => onApply(preset)}
           className="absolute inset-0 z-10 cursor-pointer"
         >
@@ -150,7 +152,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
                   ? 'opacity-75 saturate-[0.9]'
                   : 'opacity-[0.96]'
             }`}
-            alt={preset.name}
+            alt={presetDisplayName}
           />
           {activeCardImage.kind === 'stale-default' ? (
             <div className="absolute inset-0 bg-zinc-950/18 transition-colors group-hover/image:bg-zinc-950/10" />
@@ -175,7 +177,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, -1)}
               className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
-              aria-label={`Previous image for ${preset.name}`}
+              aria-label={`Previous image for ${presetDisplayName}`}
             >
               <ChevronLeft size={14} />
             </button>
@@ -187,7 +189,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
               }}
               onKeyDown={(e) => handleCycleFromKeyboard(e, 1)}
               className="pointer-events-auto flex size-8 items-center justify-center rounded-[6px] border border-white/15 bg-zinc-950/70 text-white/90 shadow-lg backdrop-blur-md transition-colors hover:bg-zinc-950/85"
-              aria-label={`Next image for ${preset.name}`}
+              aria-label={`Next image for ${presetDisplayName}`}
             >
               <ChevronRight size={14} />
             </button>
@@ -269,6 +271,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
   );
   const hasMultipleImages = cardImages.length > 1;
   const activeCardImage = cardImages[imageIndex] ?? cardImages[0] ?? null;
+  const presetDisplayName = getStyleRuntimePresetDisplayName(preset);
   const imageDiagnostics = resolveStyleCardImageDiagnostics({
     activeCardImage,
   });
@@ -283,14 +286,14 @@ export const StylePresetCard = React.memo(function StylePresetCard({
     (imageSrc: string | null) => {
       onHoverPreviewChange({
         id: preset.id,
-        name: preset.name,
+        name: presetDisplayName,
         category: preset.category || 'General',
         packName: visualState?.presetPackName ?? 'Styles',
         aesthetic: preset.style.aesthetic,
         imageSrc,
       });
     },
-    [onHoverPreviewChange, preset, visualState?.presetPackName],
+    [onHoverPreviewChange, preset, presetDisplayName, visualState?.presetPackName],
   );
 
   const syncHoverPreview = useCallback(
@@ -433,7 +436,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
                 <span
                   className={`truncate pr-8 text-[9px] font-black uppercase tracking-tight transition-colors ${active ? 'text-white' : 'text-zinc-200 group-hover:text-white'}`}
                 >
-                  {preset.name}
+                  {presetDisplayName}
                 </span>
                 {activeCardImage?.kind === 'result' && (
                   <div className="size-1.5 shrink-0 rounded-full bg-accent-500 shadow-[0_0_5px_rgba(var(--accent-500),0.8)]" />

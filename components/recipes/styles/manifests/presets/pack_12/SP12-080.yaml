@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-080
 packId: pack_12
 name: Endgame Eclipse Throne Room
+styleAnchors:
+  - 'Endgame Eclipse Throne Room'
+displayName: 'Eclipse Throne Endgame'
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:

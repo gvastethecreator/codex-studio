@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-073
 packId: pack_16
 name: Wandering Clockwork Hearth Style
+styleAnchors:
+  - 'Wandering Clockwork Hearth Style'
+displayName: 'Wandering Clockwork Hearth'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

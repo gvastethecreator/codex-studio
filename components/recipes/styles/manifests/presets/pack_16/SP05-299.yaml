@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-299
 packId: pack_16
 name: Dream Invasion Carnival Style
+styleAnchors:
+  - 'Dream Invasion Carnival Style'
+displayName: 'Dream Invasion Carnival'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

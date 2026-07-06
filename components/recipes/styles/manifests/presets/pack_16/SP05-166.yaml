@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-166
 packId: pack_16
 name: Redemption Restraint Style
+styleAnchors:
+  - 'Redemption Restraint Style'
+displayName: 'Redemption Restraint'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

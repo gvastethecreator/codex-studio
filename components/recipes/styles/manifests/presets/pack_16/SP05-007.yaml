@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-007
 packId: pack_16
 name: Wasteland Impact Legend Style
+styleAnchors:
+  - 'Wasteland Impact Legend Style'
+displayName: 'Wasteland Impact Legend'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

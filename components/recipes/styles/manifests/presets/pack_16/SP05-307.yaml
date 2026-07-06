@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-307
 packId: pack_16
 name: Summer Sports Melodrama Style
+styleAnchors:
+  - 'Summer Sports Melodrama Style'
+displayName: 'Summer Sports Melodrama'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

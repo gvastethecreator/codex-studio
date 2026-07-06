@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-367
 packId: pack_16
 name: Brass Section Tender Precision Style
+styleAnchors:
+  - 'Brass Section Tender Precision Style'
+displayName: 'Brass Section Tender Precision'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-042
 packId: pack_17
 name: Tapestry Creature Legend
+styleAnchors:
+  - 'Tapestry Creature Legend'
+displayName: 'Tapestry Creature Mythic'
 category: 6. Monochrome Tarot & Bestiary Plates
 domain: medieval tapestry fantasy
 version: 1

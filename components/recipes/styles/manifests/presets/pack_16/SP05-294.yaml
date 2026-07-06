@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-294
 packId: pack_16
 name: Mutating Psychedelic Style
+styleAnchors:
+  - 'Mutating Psychedelic Style'
+displayName: 'Mutating Psychedelic'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

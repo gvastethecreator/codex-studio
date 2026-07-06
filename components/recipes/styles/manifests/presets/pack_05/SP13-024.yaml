@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-024
 packId: pack_05
 name: Monumental Impact Burst Style
+styleAnchors:
+  - 'Monumental Impact Burst Style'
+displayName: 'Monumental Impact Burst'
 category: 5. Action Motion Setpieces
 version: 1
 supportedTasks:

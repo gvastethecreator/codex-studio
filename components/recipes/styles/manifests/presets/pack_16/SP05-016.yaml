@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-016
 packId: pack_16
 name: Spirit Tournament Pressure Style
+styleAnchors:
+  - 'Spirit Tournament Pressure Style'
+displayName: 'Spirit Tournament Pressure'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

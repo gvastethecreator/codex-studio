@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-298
 packId: pack_16
 name: Nocturnal Social Whirl Style
+styleAnchors:
+  - 'Nocturnal Social Whirl Style'
+displayName: 'Nocturnal Social Whirl'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

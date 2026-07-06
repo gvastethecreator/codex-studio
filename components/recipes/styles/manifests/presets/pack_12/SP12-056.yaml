@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-056
 packId: pack_12
 name: Carbon Megacity Rooftop Chase
+styleAnchors:
+  - 'Carbon Megacity Rooftop Chase'
+displayName: 'Carbon Megacity Parkour'
 category: 1. Neon Urban & Night Ops
 version: 1
 supportedTasks:

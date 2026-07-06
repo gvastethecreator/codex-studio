@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-142
 packId: pack_05
 name: Black Lagoon - South Seas Gun-Runner Grit
+styleAnchors:
+  - 'Black Lagoon - South Seas Gun-Runner Grit'
+displayName: 'South Seas Gun-Runner Grit'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

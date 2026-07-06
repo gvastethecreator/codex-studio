@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-064
 packId: pack_05
 name: Wind-Scoured Redemption Style
+styleAnchors:
+  - 'Wind-Scoured Redemption Style'
+displayName: 'Wind-Scoured Redemption'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

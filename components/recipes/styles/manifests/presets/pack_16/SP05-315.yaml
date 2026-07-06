@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-315
 packId: pack_16
 name: Angular Institutional Tragedy Style
+styleAnchors:
+  - 'Angular Institutional Tragedy Style'
+displayName: 'Angular Institutional Tragedy'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

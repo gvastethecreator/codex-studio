@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-305
 packId: pack_16
 name: Neon Sci-Fi Slapstick Rom-Com Style
+styleAnchors:
+  - 'Neon Sci-Fi Slapstick Rom-Com Style'
+displayName: 'Neon Sci-Fi Slapstick Rom-Com'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

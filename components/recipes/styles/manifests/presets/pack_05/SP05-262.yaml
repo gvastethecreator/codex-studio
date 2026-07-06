@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-262
 packId: pack_05
 name: Moral Suspicion Realism Style
+styleAnchors:
+  - 'Moral Suspicion Realism Style'
+displayName: 'Moral Suspicion Realism'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

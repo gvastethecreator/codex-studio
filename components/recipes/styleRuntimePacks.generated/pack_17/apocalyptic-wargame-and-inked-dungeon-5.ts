@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-025',
     name: 'Mud-Cathedral Crusade',
+    displayName: 'Mud-Cathedral War Gothic',
+    styleAnchors: ['Mud-Cathedral Crusade'],
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'apocalyptic medieval',
     negativePrompt:
@@ -36,6 +38,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-026',
     name: 'Gothic Miniature Warfront',
+    displayName: 'Gothic Miniature Wargame',
+    styleAnchors: ['Gothic Miniature Warfront'],
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'gothic wargame fantasy',
     negativePrompt:
@@ -66,6 +70,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-027',
     name: 'Stress-Ink Dungeon Crawl',
+    displayName: 'Stress-Ink Dungeon',
+    styleAnchors: ['Stress-Ink Dungeon Crawl'],
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'inked dungeon drama',
     negativePrompt:
@@ -156,6 +162,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-030',
     name: 'Hexenwood Witch-Knight Covenant',
+    displayName: 'Hexenwood Witch-Knight Gothic',
+    styleAnchors: ['Hexenwood Witch-Knight Covenant'],
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'folk horror medieval',
     negativePrompt:
@@ -186,6 +194,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-031',
     name: 'Bone-Script Monastery Siege',
+    displayName: 'Bone-Script Monastery Gothic',
+    styleAnchors: ['Bone-Script Monastery Siege'],
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'siege monastery fantasy',
     negativePrompt:
@@ -216,6 +226,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-032',
     name: 'Astral Feudal Exorcists',
+    displayName: 'Astral Feudal Exorcism',
+    styleAnchors: ['Astral Feudal Exorcists'],
     category: '5. Apocalyptic Wargame & Inked Dungeon',
     domain: 'astral medieval fantasy',
     negativePrompt:

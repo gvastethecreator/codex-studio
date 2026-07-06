@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-159
 packId: pack_16
 name: Black-Lipstick Melodrama Punk Style
+styleAnchors:
+  - 'Black-Lipstick Melodrama Punk Style'
+displayName: 'Black-Lipstick Melodrama Punk'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

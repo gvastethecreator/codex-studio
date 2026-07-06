@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-072
 packId: pack_16
 name: Eco-Mythic Conflict Epic Style
+styleAnchors:
+  - 'Eco-Mythic Conflict Epic Style'
+displayName: 'Eco-Mythic Conflict Epic'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

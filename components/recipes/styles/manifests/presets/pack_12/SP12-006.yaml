@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-006
 packId: pack_12
 name: Arcane Library Boss Arena
+styleAnchors:
+  - 'Arcane Library Boss Arena'
+displayName: 'Arcane Library Encounter'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

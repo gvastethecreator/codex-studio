@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-165
 packId: pack_16
 name: Spirit Pressure Rivalry Style
+styleAnchors:
+  - 'Spirit Pressure Rivalry Style'
+displayName: 'Spirit Pressure Rivalry'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

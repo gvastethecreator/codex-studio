@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-034',
     name: 'Bright Hero Academy',
+    displayName: 'Bright Academy Heroics',
+    styleAnchors: ['Bright Hero Academy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, school uniform copy, superhero franchise likeness, green-haired hero, numbered hero suit, cape-logo copy, classroom scene, readable badges, dense forest, rubble field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-133',
     name: 'Mashle - Brickwall Comedy Spell-School Brawl',
+    displayName: 'Brickwall Comedy Spell-School Brawl',
+    styleAnchors: ['Mashle - Brickwall Comedy Spell-School Brawl'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, fist-first brawl, weapon, school hallway, readable crest, magic-circle text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-134',
     name: 'Sakamoto Days - Convenience-Store Assassin Sprint',
+    displayName: 'Convenience-Store Assassin Sprint',
+    styleAnchors: ['Sakamoto Days - Convenience-Store Assassin Sprint'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, supermarket aisle, weapon, product labels, crowd, storefront, franchise likeness, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-032',
     name: 'Gritty Urban Curses',
+    displayName: 'Urban Curse Action',
+    styleAnchors: ['Gritty Urban Curses'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, school uniform copy, finger/talisman fetish prop, monster gore, named sorcerer likeness, alley fight pileup, readable sigils, dense forest, ruin corridor, generic shonen rubble, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-035',
     name: 'Gritty Wallbound Survival',
+    displayName: 'Wallbound Survival Drama',
+    styleAnchors: ['Gritty Wallbound Survival'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, giant humanoid, titan likeness, blood, eaten-body implication, military insignia, named corps outfit, rooftop gore, despair portrait, dense forest, generic ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-036',
     name: 'Colossal War Drama',
+    displayName: 'Colossal War Shonen',
+    styleAnchors: ['Colossal War Drama'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, real-world uniforms, fascist insignia, giant humanoids, battlefield gore, guns near-plane, named franchise likeness, propaganda poster text, dense forest, same ruined corridor formula, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -209,6 +221,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-121',
     name: 'Demon Slayer - Lantern Bloodline Sword Ballet',
+    displayName: 'Lantern Bloodline Sword Ballet',
+    styleAnchors: ['Demon Slayer - Lantern Bloodline Sword Ballet'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -238,6 +252,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-124',
     name: 'Blue Lock - Predator-Ego Sports Assault',
+    displayName: 'Predator-Ego Sports Assault',
+    styleAnchors: ['Blue Lock - Predator-Ego Sports Assault'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named soccer character, team logo, readable numbers, stadium crowd, ball closeup, violent assault, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -267,6 +283,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-128',
     name: 'Bleach: Thousand-Year Blood War - Royal Black Blade Opera',
+    displayName: 'Royal Black Blade Opera',
+    styleAnchors: ['Bleach: Thousand-Year Blood War - Royal Black Blade Opera'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -296,6 +314,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-131',
     name: 'Wind Breaker - Delinquent Street Protector Rush',
+    displayName: 'Delinquent Street Protector Rush',
+    styleAnchors: ['Wind Breaker - Delinquent Street Protector Rush'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -325,6 +345,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-135',
     name: 'Undead Unluck - Rule-Breaker Curse Impact',
+    displayName: 'Rule-Breaker Curse Impact',
+    styleAnchors: ['Undead Unluck - Rule-Breaker Curse Impact'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -354,6 +376,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-136',
     name: 'Black Clover - Grimoire Thunder Squad',
+    displayName: 'Grimoire Thunder Squad',
+    styleAnchors: ['Black Clover - Grimoire Thunder Squad'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -383,6 +407,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-138',
     name: 'Kagurabachi - Sword Oath Under Neon Rain',
+    displayName: 'Sword Oath Under Neon Rain',
+    styleAnchors: ['Kagurabachi - Sword Oath Under Neon Rain'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -412,6 +438,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-139',
     name: 'Attack on Titan - Wall Rupture Desperation',
+    displayName: 'Wall Rupture Desperation',
+    styleAnchors: ['Attack on Titan - Wall Rupture Desperation'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -441,6 +469,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-140',
     name: 'Frieren Combat Flashback - Ancient Calm Spell Impact',
+    displayName: 'Ancient Calm Spell Impact',
+    styleAnchors: ['Frieren Combat Flashback - Ancient Calm Spell Impact'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, battle blast, staff hero pose, weapon, readable magic circle, party lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -470,6 +500,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-037',
     name: 'Impact Frame Comedy Hero',
+    displayName: 'Impact Comedy Heroics',
+    styleAnchors: ['Impact Frame Comedy Hero'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, bald caped hero likeness, yellow suit, red gloves, punch contact, gore, destroyed city panorama, franchise face, dense forest, noisy rubble storm, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -499,6 +531,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-129',
     name: 'One-Punch Man - Prestige Hero Impact Satire',
+    displayName: 'Prestige Hero Impact Satire',
+    styleAnchors: ['One-Punch Man - Prestige Hero Impact Satire'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, bald hero copy, fist near-plane, city destruction gore, weapon, readable text, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
@@ -528,6 +562,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-132',
     name: 'Solo Leveling - Shadow Monarch Raid Ascension',
+    displayName: 'Shadow Monarch Raid Ascension',
+    styleAnchors: ['Solo Leveling - Shadow Monarch Raid Ascension'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -557,6 +593,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-040',
     name: 'Blade Field Urban Fantasy',
+    displayName: 'Urban Blade Field',
+    styleAnchors: ['Blade Field Urban Fantasy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, sword field, blade rain, red-cloaked archer likeness, servant duel, holy-grail iconography, weapon-first composition, franchise face, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -586,6 +624,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-123',
     name: 'Fire Force - Cathedral Inferno Brigade',
+    displayName: 'Cathedral Inferno Brigade',
+    styleAnchors: ['Fire Force - Cathedral Inferno Brigade'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, famous uniform copy, no required chapel interior, no icon copy, no injury scene, no readable insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -615,6 +655,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-125',
     name: 'Kaiju No. 8 - Civic Monster Response Unit',
+    displayName: 'Civic Monster Response Unit',
+    styleAnchors: ['Kaiju No. 8 - Civic Monster Response Unit'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, famous creature copy, no monster face closeup, no armed squad, no readable signage, no destruction aftermath, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -644,6 +686,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-126',
     name: 'Dandadan - Paranormal Turbo Romance Brawl',
+    displayName: 'Paranormal Turbo Romance Brawl',
+    styleAnchors: ['Dandadan - Paranormal Turbo Romance Brawl'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, famous duo copy, no readable glyphs, no school corridor, no creature attack, no crude joke, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -673,6 +717,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-127',
     name: "Hell's Paradise - Poison Garden Executioner",
+    displayName: 'Poison Garden Executioner',
+    styleAnchors: ["Hell's Paradise - Poison Garden Executioner"],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -702,6 +748,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-038',
     name: 'Psychedelic Psychic Minimalism',
+    displayName: 'Psychic Minimalist Action',
+    styleAnchors: ['Psychedelic Psychic Minimalism'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, bowl-cut psychic boy likeness, school uniform copy, city-destruction scene, readable symbols, gore, franchise face, dense distant-plane, over-rendered particle field, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -731,6 +779,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-130',
     name: 'Mob Psycho 100 - Psychic Paint-Surge Meltdown',
+    displayName: 'Psychic Paint-Surge Meltdown',
+    styleAnchors: ['Mob Psycho 100 - Psychic Paint-Surge Meltdown'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, school uniform copy, city fight, weapon, readable symbols, angry monster face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -760,6 +810,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-137',
     name: 'Dr. Stone - Science Kingdom Action Blueprint',
+    displayName: 'Science Kingdom Action Blueprint',
+    styleAnchors: ['Dr. Stone - Science Kingdom Action Blueprint'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, readable formulas, lab classroom, weapon, tool pile, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -818,6 +870,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-033',
     name: 'Chaotic Splatter Action',
+    displayName: 'Splatter Punk Action',
+    styleAnchors: ['Chaotic Splatter Action'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, chainsaw head, gore, severed limbs, blood realism, named character likeness, weapon-first composition, horror torture, dense forest, ruin corridor, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -847,6 +901,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-122',
     name: 'Chainsaw Man - Filthy Devil-Hunter Frenzy',
+    displayName: 'Filthy Devil-Hunter Frenzy',
+    styleAnchors: ['Chainsaw Man - Filthy Devil-Hunter Frenzy'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -876,6 +932,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-025',
     name: 'Shadow Notebook Thriller',
+    displayName: 'Psychological Notebook Noir',
+    styleAnchors: ['Shadow Notebook Thriller'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, schoolboy detective likeness, readable notebook, death-note cue, police chase, gore, battle scene, weapon, copied franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -905,6 +963,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-148',
     name: 'Baccano! - Jazz Railcrime Ensemble',
+    displayName: 'Jazz Railcrime Ensemble',
+    styleAnchors: ['Baccano! - Jazz Railcrime Ensemble'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, gun near-plane, blood, train-car corridor lock, readable signage, gang lineup, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -934,6 +994,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-021',
     name: 'Headband Ninja Journey',
+    displayName: 'Kinetic Ninja Shonen',
+    styleAnchors: ['Headband Ninja Journey'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, recognizable ninja franchise, forehead metal plate, spiral emblem, kunai, shuriken, village wall, named-series headband, copied hairstyle, weapon-first pose, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -963,6 +1025,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-022',
     name: 'Urban Spirit Blade',
+    displayName: 'Urban Spirit Swordplay',
+    styleAnchors: ['Urban Spirit Blade'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, katana, soul reaper uniform, bleach-like robe, named-series weapon, crosswalk fight, school uniform copy, recognizable franchise face, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -992,6 +1056,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-023',
     name: 'Grand Pirate Adventure',
+    displayName: 'Elastic Voyage Shonen',
+    styleAnchors: ['Grand Pirate Adventure'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, pirate skull flag, straw-hat likeness, copied crew outfit, ship mast scene lock, treasure-map cliche, franchise insignia, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -1021,6 +1087,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-028',
     name: 'Lo-Fi Sword Roadtrip',
+    displayName: 'Lo-Fi Sword Drifter',
+    styleAnchors: ['Lo-Fi Sword Roadtrip'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -1079,6 +1147,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-142',
     name: 'Black Lagoon - South Seas Gun-Runner Grit',
+    displayName: 'South Seas Gun-Runner Grit',
+    styleAnchors: ['Black Lagoon - South Seas Gun-Runner Grit'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -1108,6 +1178,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-143',
     name: 'Darker than Black - Contract Killer Night Rain',
+    displayName: 'Contract Killer Night Rain',
+    styleAnchors: ['Darker than Black - Contract Killer Night Rain'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, gun, knife, assassin pose, surveillance UI, readable signs, alley corridor lock, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -1137,6 +1209,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-144',
     name: 'Samurai Champloo - Lo-Fi Edo Swagger',
+    displayName: 'Lo-Fi Edo Swagger',
+    styleAnchors: ['Samurai Champloo - Lo-Fi Edo Swagger'],
     category: '1. Modern Shonen & Action',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, sword near-plane, duel pose, dojo corridor, readable graffiti, samurai costume copy, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',

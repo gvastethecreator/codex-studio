@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-060
 packId: pack_12
 name: Hollow Basilica Final Stand
+styleAnchors:
+  - 'Hollow Basilica Final Stand'
+displayName: 'Hollow Basilica Last Stand'
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:

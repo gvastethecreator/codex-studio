@@ -3,7 +3,12 @@ import type {
   StylePresetEditorialTaxonomy,
   StylePresetManifest,
 } from './styles/manifestTypes';
-import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
+import {
+  getStyleRuntimePresetDisplayName,
+  getStyleRuntimePresetSearchNames,
+  type StyleRuntimePack,
+  type StyleRuntimePreset,
+} from './styles/runtimeTypes';
 import { getStylePackDisplayName } from './styles/packOrdering';
 
 export interface StyleManifestGraphValidation {
@@ -64,6 +69,8 @@ export interface StylePresetCatalogSearchFilters {
 export interface StylePresetCatalogSearchResult {
   id: string;
   name: string;
+  sourceName?: string;
+  styleAnchors?: string[];
   ref: string;
   packId: string;
   packName: string;
@@ -164,6 +171,32 @@ function createRuntimePresetSearchTags({
 
 function isNonEmptyString(value: unknown) {
   return typeof value === 'string' && value.trim().length > 0;
+}
+
+function cleanOptionalString(value: unknown) {
+  return typeof value === 'string' && value.trim() ? value.trim() : undefined;
+}
+
+function cleanStringList(value: unknown) {
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((entry) => {
+    const clean = cleanOptionalString(entry);
+    return clean ? [clean] : [];
+  });
+}
+
+function getStylePresetManifestDisplayName(preset: StylePresetManifest) {
+  return cleanOptionalString(preset.displayName) ?? preset.name;
+}
+
+function getStylePresetManifestSearchNames(preset: StylePresetManifest) {
+  return Array.from(
+    new Set([
+      getStylePresetManifestDisplayName(preset),
+      preset.name,
+      ...cleanStringList(preset.styleAnchors),
+    ]),
+  );
 }
 
 function isCompletePresetText(value: unknown) {
@@ -408,6 +441,12 @@ export function validateStyleManifestGraph(
     if (!isNonEmptyString(preset.name)) {
       errors.push(`Style preset ${preset.id} has empty name`);
     }
+    if (preset.displayName !== undefined && !isCompletePresetText(preset.displayName)) {
+      errors.push(`Style preset ${preset.id} has empty displayName`);
+    }
+    if (preset.styleAnchors !== undefined && !hasNonEmptyStringList(preset.styleAnchors)) {
+      errors.push(`Style preset ${preset.id} has empty styleAnchors`);
+    }
     if (!isNonEmptyString(preset.category)) {
       errors.push(`Style preset ${preset.id} has empty category`);
     }
@@ -574,6 +613,12 @@ export function composeStyleRuntimePacksFromManifests(
           {
             id: preset.id,
             name: preset.name,
+            ...(cleanOptionalString(preset.displayName)
+              ? { displayName: cleanOptionalString(preset.displayName) }
+              : {}),
+            ...(cleanStringList(preset.styleAnchors).length > 0
+              ? { styleAnchors: cleanStringList(preset.styleAnchors) }
+              : {}),
             category:
               categoryNameByRef.get(ref) ?? preset.taxonomy?.categoryName ?? preset.category,
             ...(preset.domain ? { domain: preset.domain } : {}),
@@ -716,7 +761,7 @@ export function searchStylePresetCatalog(
     const supportedTasks = new Set(taxonomy.supportedTasks.map((value) => value.toLowerCase()));
     const searchableText = [
       manifest.id,
-      manifest.name,
+      ...getStylePresetManifestSearchNames(manifest),
       manifest.category,
       manifest.domain,
       taxonomy.packId,
@@ -742,7 +787,13 @@ export function searchStylePresetCatalog(
 
     results.push({
       id: manifest.id,
-      name: manifest.name,
+      name: getStylePresetManifestDisplayName(manifest),
+      ...(getStylePresetManifestDisplayName(manifest) !== manifest.name
+        ? { sourceName: manifest.name }
+        : {}),
+      ...(cleanStringList(manifest.styleAnchors).length > 0
+        ? { styleAnchors: cleanStringList(manifest.styleAnchors) }
+        : {}),
       ref: entry.ref,
       packId: taxonomy.packId,
       packName: taxonomy.packName,
@@ -779,7 +830,7 @@ export function createStylePresetCatalogSearchIndexFromRuntimePacks(
         const avoidRules = parseAvoidRules(preset.negativePrompt);
         const searchableText = [
           preset.id,
-          preset.name,
+          ...getStyleRuntimePresetSearchNames(preset),
           categoryName,
           preset.domain,
           pack.id,
@@ -796,7 +847,11 @@ export function createStylePresetCatalogSearchIndexFromRuntimePacks(
 
         return {
           id: preset.id,
-          name: preset.name,
+          name: getStyleRuntimePresetDisplayName(preset),
+          ...(getStyleRuntimePresetDisplayName(preset) !== preset.name
+            ? { sourceName: preset.name }
+            : {}),
+          ...(preset.styleAnchors?.length ? { styleAnchors: preset.styleAnchors } : {}),
           ref: toStylePresetManifestRef(pack.id, preset.id),
           packId: pack.id,
           packName: pack.name,

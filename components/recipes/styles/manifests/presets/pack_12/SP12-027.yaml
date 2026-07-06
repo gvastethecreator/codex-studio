@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-027
 packId: pack_12
 name: Deep Mine Co-op Extraction
+styleAnchors:
+  - 'Deep Mine Co-op Extraction'
+displayName: 'Deep Mine Extraction'
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:

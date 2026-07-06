@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-343
 packId: pack_16
 name: Vertical Team Rally Energy Style
+styleAnchors:
+  - 'Vertical Team Rally Energy Style'
+displayName: 'Vertical Team Rally Energy'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

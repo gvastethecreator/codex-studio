@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-151
 packId: pack_16
 name: Pop Reality Bend Style
+styleAnchors:
+  - 'Pop Reality Bend Style'
+displayName: 'Pop Reality Bend'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

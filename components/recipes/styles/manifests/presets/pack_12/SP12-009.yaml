@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-009
 packId: pack_12
 name: Sacred Siege Co-op Readability
+styleAnchors:
+  - 'Sacred Siege Co-op Readability'
+displayName: 'Sacred Siege Co-op'
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:

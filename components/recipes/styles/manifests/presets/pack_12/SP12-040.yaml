@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-040
 packId: pack_12
 name: Thunder Plains Beast Hunt
+styleAnchors:
+  - 'Thunder Plains Beast Hunt'
+displayName: 'Thunder Plains Hunt'
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:

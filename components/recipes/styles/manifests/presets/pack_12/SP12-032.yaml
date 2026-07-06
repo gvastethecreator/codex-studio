@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-032
 packId: pack_12
 name: Harbor Smuggler Night Heist
+styleAnchors:
+  - 'Harbor Smuggler Night Heist'
+displayName: 'Smuggler Harbor Heist'
 category: 1. Neon Urban & Night Ops
 version: 1
 supportedTasks:

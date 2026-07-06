@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-009
 packId: pack_17
 name: Crimson Moon Alley Gothic
+styleAnchors:
+  - 'Crimson Moon Alley Gothic'
+displayName: 'Crimson Moon Gothic'
 category: 2. Hunter Gothic & Plague Courts
 domain: gothic fantasy
 version: 1

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-049
 packId: pack_12
 name: Thorn Castle Moon Raid
+styleAnchors:
+  - 'Thorn Castle Moon Raid'
+displayName: 'Thorn Castle Stealth'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

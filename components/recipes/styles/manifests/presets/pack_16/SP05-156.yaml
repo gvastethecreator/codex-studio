@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-156
 packId: pack_16
 name: Summer Loop Paranoia Style
+styleAnchors:
+  - 'Summer Loop Paranoia Style'
+displayName: 'Summer Loop Paranoia'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-132
 packId: pack_05
 name: Solo Leveling - Shadow Monarch Raid Ascension
+styleAnchors:
+  - 'Solo Leveling - Shadow Monarch Raid Ascension'
+displayName: 'Shadow Monarch Raid Ascension'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-001
 packId: pack_17
 name: Ashen Soulslike Ruins
+styleAnchors:
+  - 'Ashen Soulslike Ruins'
+displayName: 'Ashen Relic Fantasy'
 category: 1. Dark Fantasy Realms
 domain: medieval fantasy
 version: 1

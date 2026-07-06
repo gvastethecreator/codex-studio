@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-005
 packId: pack_17
 name: Black Iron Crusade
+styleAnchors:
+  - 'Black Iron Crusade'
+displayName: 'Black Iron Relic Fantasy'
 category: 1. Dark Fantasy Realms
 domain: medieval fantasy
 version: 1

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-303
 packId: pack_16
 name: Celestial Journey Melancholy Style
+styleAnchors:
+  - 'Celestial Journey Melancholy Style'
+displayName: 'Celestial Journey Melancholy'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

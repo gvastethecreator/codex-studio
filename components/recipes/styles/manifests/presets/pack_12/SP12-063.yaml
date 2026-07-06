@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-063
 packId: pack_12
 name: Obelisk Desert Relic Race
+styleAnchors:
+  - 'Obelisk Desert Relic Race'
+displayName: 'Obelisk Desert Racing'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

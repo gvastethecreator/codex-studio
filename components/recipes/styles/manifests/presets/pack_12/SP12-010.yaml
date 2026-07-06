@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-010
 packId: pack_12
 name: Volcanic Forge Dungeon
+styleAnchors:
+  - 'Volcanic Forge Dungeon'
+displayName: 'Volcanic Forge Crawl'
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:

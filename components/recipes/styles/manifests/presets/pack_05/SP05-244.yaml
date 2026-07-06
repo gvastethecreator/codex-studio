@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-244
 packId: pack_05
 name: The Twelve Kingdoms - Imperial Destiny Chronicle
+styleAnchors:
+  - 'The Twelve Kingdoms - Imperial Destiny Chronicle'
+displayName: 'Imperial Destiny Chronicle'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

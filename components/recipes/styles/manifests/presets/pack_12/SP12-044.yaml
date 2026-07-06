@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-044
 packId: pack_12
 name: Mirage Palace Stealth Gala
+styleAnchors:
+  - 'Mirage Palace Stealth Gala'
+displayName: 'Mirage Palace Stealth'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

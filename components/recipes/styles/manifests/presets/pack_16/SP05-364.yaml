@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-364
 packId: pack_16
 name: Obsessive Line Rehearsal Style
+styleAnchors:
+  - 'Obsessive Line Rehearsal Style'
+displayName: 'Obsessive Line Rehearsal'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-044
 packId: pack_17
 name: Moon Parchment Oracle Beasts
+styleAnchors:
+  - 'Moon Parchment Oracle Beasts'
+displayName: 'Moon Parchment Oracle'
 category: 6. Monochrome Tarot & Bestiary Plates
 domain: oracle bestiary fantasy
 version: 1

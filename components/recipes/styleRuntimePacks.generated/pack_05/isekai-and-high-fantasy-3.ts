@@ -64,6 +64,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-248',
     name: 'Delicious in Dungeon - Stove-Top Monster Cuisine',
+    displayName: 'Stove-Top Monster Cuisine',
+    styleAnchors: ['Delicious in Dungeon - Stove-Top Monster Cuisine'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market stall, monster corpse, gore, banquet spread lock, readable recipe, kitchen clutter, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -93,6 +95,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-252',
     name: 'Campfire Cooking in Another World - Merchant Road Stew',
+    displayName: 'Merchant Road Stew',
+    styleAnchors: ['Campfire Cooking in Another World - Merchant Road Stew'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market corridor, tavern clutter, readable sign, banquet table lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -122,6 +126,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-257',
     name: 'Tsukimichi - Moonlit Merchant Wanderer',
+    displayName: 'Moonlit Merchant Wanderer',
+    styleAnchors: ['Tsukimichi - Moonlit Merchant Wanderer'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market aisle, merchant stall clutter, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -151,6 +157,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-258',
     name: 'Handyman Saitou in Another World - Toolbox Party Quest',
+    displayName: 'Toolbox Party Quest',
+    styleAnchors: ['Handyman Saitou in Another World - Toolbox Party Quest'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, toolbox pile, workshop table lock, weapon, readable label, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -180,6 +188,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-259',
     name: 'Ranking of Kings - Storybook Crown Courage',
+    displayName: 'Storybook Crown Courage',
+    styleAnchors: ['Ranking of Kings - Storybook Crown Courage'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, child-copy design, castle hallway, royal portrait, readable emblem, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -209,6 +219,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-260',
     name: 'Princess Connect! Re:Dive - Banquet Quest Pastel',
+    displayName: 'Banquet Quest Pastel',
+    styleAnchors: ['Princess Connect! Re:Dive - Banquet Quest Pastel'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, banquet-table lock, food spread as only subject, idol group pose, readable sign, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -412,6 +424,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-241',
     name: 'Systemic Cooperation Grid Style',
+    displayName: 'Systemic Cooperation Grid',
+    styleAnchors: ['Systemic Cooperation Grid Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -441,6 +455,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-242',
     name: 'Smoke-Mud Vulnerability Style',
+    displayName: 'Smoke-Mud Vulnerability',
+    styleAnchors: ['Smoke-Mud Vulnerability Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -470,6 +486,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-243',
     name: 'Classic OVA Quest Tapestry Style',
+    displayName: 'Classic OVA Quest Tapestry',
+    styleAnchors: ['Classic OVA Quest Tapestry Style'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, fixed ensemble lineup, weapon near-plane, readable banner, castle hallway lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -499,6 +517,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-244',
     name: 'The Twelve Kingdoms - Imperial Destiny Chronicle',
+    displayName: 'Imperial Destiny Chronicle',
+    styleAnchors: ['The Twelve Kingdoms - Imperial Destiny Chronicle'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, imperial costume copy, throne-room lock, weapon, readable insignia, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -528,6 +548,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-245',
     name: 'The Vision of Escaflowne - Windblown Tarot Fantasy',
+    displayName: 'Windblown Tarot Fantasy',
+    styleAnchors: ['The Vision of Escaflowne - Windblown Tarot Fantasy'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, tarot card, mecha copy, weapon-first pose, readable symbol, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -557,6 +579,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-246',
     name: 'Magi - Labyrinth Jewel Caravan',
+    displayName: 'Labyrinth Jewel Caravan',
+    styleAnchors: ['Magi - Labyrinth Jewel Caravan'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, market aisle, caravan clutter, labyrinth corridor, readable sign, map, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -586,6 +610,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-249',
     name: 'Ascendance of a Bookworm - Printing Press Devotion',
+    displayName: 'Printing Press Devotion',
+    styleAnchors: ['Ascendance of a Bookworm - Printing Press Devotion'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -615,6 +641,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-250',
     name: 'The Faraway Paladin - Quiet Temple Quest',
+    displayName: 'Quiet Temple Quest',
+    styleAnchors: ['The Faraway Paladin - Quiet Temple Quest'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, paladin armor copy, weapon, temple hallway, readable scripture, throne pose, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -644,6 +672,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-253',
     name: "The Saint's Magic Power Is Omnipotent - Herbarium Court Glow",
+    displayName: 'Herbarium Court Glow',
+    styleAnchors: ["The Saint's Magic Power Is Omnipotent - Herbarium Court Glow"],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, laboratory room lock, bookshelf, readable label, crowded table, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -673,6 +703,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-254',
     name: 'Fushigi Yuugi - Celestial Maiden Portal Epic',
+    displayName: 'Celestial Maiden Portal Epic',
+    styleAnchors: ['Fushigi Yuugi - Celestial Maiden Portal Epic'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, couple copy, school uniform, readable sigil, shrine hallway, tarot/card prop, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -702,6 +734,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-255',
     name: 'Magic Knight Rayearth - Gem-Engine Rescue Quest',
+    displayName: 'Gem-Engine Rescue Quest',
+    styleAnchors: ['Magic Knight Rayearth - Gem-Engine Rescue Quest'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, magic-knight costume copy, group lineup, weapon near-plane, readable glyphs, logo, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, muddy noisy darks',
@@ -760,6 +794,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-251',
     name: 'Saga of Tanya the Evil - Aerial War Mage Doctrine',
+    displayName: 'Aerial War Mage Doctrine',
+    styleAnchors: ['Saga of Tanya the Evil - Aerial War Mage Doctrine'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -818,6 +854,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-247',
     name: "The Ancient Magus' Bride - Thorn Cottage Enchantment",
+    displayName: 'Thorn Cottage Enchantment',
+    styleAnchors: ["The Ancient Magus' Bride - Thorn Cottage Enchantment"],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -847,6 +885,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-256',
     name: 'Inuyasha - Shrine-Well Sengoku Pursuit',
+    displayName: 'Shrine-Well Sengoku Pursuit',
+    styleAnchors: ['Inuyasha - Shrine-Well Sengoku Pursuit'],
     category: '3. Isekai & High Fantasy',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, red-robed character copy, shrine hallway, sword, demon attack, readable talisman text, well prop lock, RPG UI, readable magic text, generic isekai wallpaper, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',

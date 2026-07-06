@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-017
 packId: pack_16
 name: Wandering Atonement Cel Drama Style
+styleAnchors:
+  - 'Wandering Atonement Cel Drama Style'
+displayName: 'Wandering Atonement Cel Drama'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

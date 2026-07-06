@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-075
 packId: pack_16
 name: Rainlight Threshold Romance Style
+styleAnchors:
+  - 'Rainlight Threshold Romance Style'
+displayName: 'Rainlight Threshold Romance'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

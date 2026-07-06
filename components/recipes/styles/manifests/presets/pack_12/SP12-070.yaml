@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-070
 packId: pack_12
 name: Moonlit Shrine Archer Trials
+styleAnchors:
+  - 'Moonlit Shrine Archer Trials'
+displayName: 'Moonlit Shrine Archery'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

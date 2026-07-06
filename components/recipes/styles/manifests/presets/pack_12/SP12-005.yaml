@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-005
 packId: pack_12
 name: Moonbase Breach Alarm
+styleAnchors:
+  - 'Moonbase Breach Alarm'
+displayName: 'Moonbase Breach Ops'
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:

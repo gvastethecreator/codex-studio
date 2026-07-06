@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-278',
     name: 'Mineral Loneliness Fracture Style',
+    displayName: 'Mineral Loneliness Fracture',
+    styleAnchors: ['Mineral Loneliness Fracture Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, empty abstract-only field, ice palace corridor, weapon, gore, readable symbol, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-261',
     name: 'Eclipse Scar Weight Style',
+    displayName: 'Eclipse Scar Weight',
+    styleAnchors: ['Eclipse Scar Weight Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-262',
     name: 'Moral Suspicion Realism Style',
+    displayName: 'Moral Suspicion Realism',
+    styleAnchors: ['Moral Suspicion Realism Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, school corridor, courtroom, weapon, blood, readable text, cinematic IP pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-263',
     name: 'Black Signal Nihilism Style',
+    displayName: 'Black Signal Nihilism',
+    styleAnchors: ['Black Signal Nihilism Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-264',
     name: 'Clinical Innocence Rupture Style',
+    displayName: 'Clinical Innocence Rupture',
+    styleAnchors: ['Clinical Innocence Rupture Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-265',
     name: 'Rose-Black Baroque Decadence Style',
+    displayName: 'Rose-Black Baroque Decadence',
+    styleAnchors: ['Rose-Black Baroque Decadence Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, coffin, blood, weapon, cathedral hallway, readable crest, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -180,6 +192,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-266',
     name: 'Black Particle Fugitive Style',
+    displayName: 'Black Particle Fugitive',
+    styleAnchors: ['Black Particle Fugitive Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-267',
     name: 'Blood-Ink Severance Style',
+    displayName: 'Blood-Ink Severance',
+    styleAnchors: ['Blood-Ink Severance Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -238,6 +254,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-268',
     name: 'Neon Despair Pressure Style',
+    displayName: 'Neon Despair Pressure',
+    styleAnchors: ['Neon Despair Pressure Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -267,6 +285,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-269',
     name: 'Smoke-Filled Calculation Style',
+    displayName: 'Smoke-Filled Calculation',
+    styleAnchors: ['Smoke-Filled Calculation Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -296,6 +316,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-270',
     name: 'Cursed Severance Compassion Style',
+    displayName: 'Cursed Severance Compassion',
+    styleAnchors: ['Cursed Severance Compassion Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -325,6 +347,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-271',
     name: 'Sun-Reclaimed Concrete Mystery Style',
+    displayName: 'Sun-Reclaimed Concrete Mystery',
+    styleAnchors: ['Sun-Reclaimed Concrete Mystery Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, institutional corridor, classroom, hospital, readable sign, empty landscape, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -354,6 +378,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-272',
     name: 'Machine Mourning Noir Style',
+    displayName: 'Machine Mourning Noir',
+    styleAnchors: ['Machine Mourning Noir Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, interior investigation room, gun, gore, readable UI, police signage, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -383,6 +409,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-273',
     name: 'Luminous Natural Cycle Calm Style',
+    displayName: 'Luminous Natural Cycle Calm',
+    styleAnchors: ['Luminous Natural Cycle Calm Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named franchise likeness, empty abstract mist, forest corridor, lab specimen table, monster attack, readable label, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -412,6 +440,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-274',
     name: 'Winter Guilt Suspicion Style',
+    displayName: 'Winter Guilt Suspicion',
+    styleAnchors: ['Winter Guilt Suspicion Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -441,6 +471,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-276',
     name: 'Sun-Bleached Cruel Discipline Style',
+    displayName: 'Sun-Bleached Cruel Discipline',
+    styleAnchors: ['Sun-Bleached Cruel Discipline Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -470,6 +502,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-277',
     name: 'Rusted Neon Adolescent Dread Style',
+    displayName: 'Rusted Neon Adolescent Dread',
+    styleAnchors: ['Rusted Neon Adolescent Dread Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -499,6 +533,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-279',
     name: 'Red-Optic Security Noir Style',
+    displayName: 'Red-Optic Security Noir',
+    styleAnchors: ['Red-Optic Security Noir Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -528,6 +564,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-280',
     name: 'Lantern Retribution Ritual Style',
+    displayName: 'Lantern Retribution Ritual',
+    styleAnchors: ['Lantern Retribution Ritual Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -557,6 +595,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-275',
     name: 'Civic Rumor Breakdown Style',
+    displayName: 'Civic Rumor Breakdown',
+    styleAnchors: ['Civic Rumor Breakdown Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -586,6 +626,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-066',
     name: 'Invasive Anatomy Thriller Style',
+    displayName: 'Invasive Anatomy Thriller',
+    styleAnchors: ['Invasive Anatomy Thriller Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, body, anatomy, flesh, organs, gore, face, hands, surgery, creature, body-horror closeup, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -615,6 +657,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-069',
     name: 'Procedural Low-Fantasy Grit Style',
+    displayName: 'Procedural Low-Fantasy Grit',
+    styleAnchors: ['Procedural Low-Fantasy Grit Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, corridor, dungeon hallway, adventurer, torch/lamp prop, weapon, enemy, blood, game UI, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -644,6 +688,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-061',
     name: 'Crosshatched Doom Weight Style',
+    displayName: 'Crosshatched Doom Weight',
+    styleAnchors: ['Crosshatched Doom Weight Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, gore, severed bodies, sexual violence, famous dark-fantasy swordsman likeness, giant sword, torture scene, readable occult text, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -673,6 +719,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-062',
     name: 'Crimson Hunger Metamorphosis Style',
+    displayName: 'Crimson Hunger Metamorphosis',
+    styleAnchors: ['Crimson Hunger Metamorphosis Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -702,6 +750,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-063',
     name: 'Crimson Gothic Authority Style',
+    displayName: 'Crimson Gothic Authority',
+    styleAnchors: ['Crimson Gothic Authority Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, vampire franchise likeness, Nazi/fascist insignia, guns, gore, bite scene, religious icon copy, readable crest, blade-first pose, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -731,6 +781,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-064',
     name: 'Wind-Scoured Redemption Style',
+    displayName: 'Wind-Scoured Redemption',
+    styleAnchors: ['Wind-Scoured Redemption Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, named samurai likeness, duel pose, katana near-plane, blood, revenge-kill scene, historical flag, battlefield gore, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -760,6 +812,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-065',
     name: 'Pale Threshold Horror Style',
+    displayName: 'Pale Threshold Horror',
+    styleAnchors: ['Pale Threshold Horror Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, hunter/prey body, chase, weapon, blood, gore, monster, corridor, confrontation scene, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -789,6 +843,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-067',
     name: 'Lush Abyssal Toll Style',
+    displayName: 'Lush Abyssal Toll',
+    styleAnchors: ['Lush Abyssal Toll Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, explorer, cave tunnel, fantasy corridor, monster, map, lantern, expedition gear, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',
@@ -818,6 +874,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-068',
     name: 'Grimy Sorcery Collision Style',
+    displayName: 'Grimy Sorcery Collision',
+    styleAnchors: ['Grimy Sorcery Collision Style'],
     category: '4. Dark Fantasy & Seinen',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, readable sigils, protagonist mask portrait, weapon, alley corridor, franchise wizard, splatter-only horror, photoreal grime, cheap jump scare, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, logo, muddy noisy darks',

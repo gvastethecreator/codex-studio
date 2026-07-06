@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-062
 packId: pack_12
 name: Neon Koi River District
+styleAnchors:
+  - 'Neon Koi River District'
+displayName: 'Neon Koi Riverworld'
 category: 1. Neon Urban & Night Ops
 version: 1
 supportedTasks:

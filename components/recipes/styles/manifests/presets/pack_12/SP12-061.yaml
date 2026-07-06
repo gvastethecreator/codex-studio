@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-061
 packId: pack_12
 name: Jade Volcano Shrine Run
+styleAnchors:
+  - 'Jade Volcano Shrine Run'
+displayName: 'Jade Volcano Shrinecraft'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

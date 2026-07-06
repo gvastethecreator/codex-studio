@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-001',
     name: 'Neon Samurai District',
+    displayName: 'Neon Blade Urban Ops',
+    styleAnchors: ['Neon Samurai District'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, text, logo, lowres, blurry, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-014',
     name: 'Urban Parkour Rooftop Wars',
+    displayName: 'Rooftop Parkour Combat',
+    styleAnchors: ['Urban Parkour Rooftop Wars'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, text, logo, fog-heavy, muddy-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -93,6 +97,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-032',
     name: 'Harbor Smuggler Night Heist',
+    displayName: 'Smuggler Harbor Heist',
+    styleAnchors: ['Harbor Smuggler Night Heist'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, text, logo, daylight, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -180,6 +186,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-056',
     name: 'Carbon Megacity Rooftop Chase',
+    displayName: 'Carbon Megacity Parkour',
+    styleAnchors: ['Carbon Megacity Rooftop Chase'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -209,6 +217,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-062',
     name: 'Neon Koi River District',
+    displayName: 'Neon Koi Riverworld',
+    styleAnchors: ['Neon Koi River District'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',

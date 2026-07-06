@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-076
 packId: pack_16
 name: Cinematic Dream-Collapse Surrealism Style
+styleAnchors:
+  - 'Cinematic Dream-Collapse Surrealism Style'
+displayName: 'Cinematic Dream-Collapse Surrealism'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

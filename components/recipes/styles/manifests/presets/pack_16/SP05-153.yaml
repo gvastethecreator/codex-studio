@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-153
 packId: pack_16
 name: Techno-Gothic Exorcism Style
+styleAnchors:
+  - 'Techno-Gothic Exorcism Style'
+displayName: 'Techno-Gothic Exorcism'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

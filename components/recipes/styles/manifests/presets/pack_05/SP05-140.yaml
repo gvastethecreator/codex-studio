@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-140
 packId: pack_05
 name: Frieren Combat Flashback - Ancient Calm Spell Impact
+styleAnchors:
+  - 'Frieren Combat Flashback - Ancient Calm Spell Impact'
+displayName: 'Ancient Calm Spell Impact'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-131
 packId: pack_05
 name: Wind Breaker - Delinquent Street Protector Rush
+styleAnchors:
+  - 'Wind Breaker - Delinquent Street Protector Rush'
+displayName: 'Delinquent Street Protector Rush'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

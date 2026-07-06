@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-359
 packId: pack_16
 name: Vulnerable Performance Spin Style
+styleAnchors:
+  - 'Vulnerable Performance Spin Style'
+displayName: 'Vulnerable Performance Spin'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

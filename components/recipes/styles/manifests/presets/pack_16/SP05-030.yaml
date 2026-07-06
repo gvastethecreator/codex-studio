@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-030
 packId: pack_16
 name: Gothic Soul-Pop Action Style
+styleAnchors:
+  - 'Gothic Soul-Pop Action Style'
+displayName: 'Gothic Soul-Pop Action'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

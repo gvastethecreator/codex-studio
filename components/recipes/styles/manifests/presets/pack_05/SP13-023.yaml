@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-023
 packId: pack_05
 name: Neon Vector Discharge Style
+styleAnchors:
+  - 'Neon Vector Discharge Style'
+displayName: 'Neon Vector Discharge'
 category: 5. Action Motion Setpieces
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-047
 packId: pack_12
 name: Obsidian Arena Champion Trial
+styleAnchors:
+  - 'Obsidian Arena Champion Trial'
+displayName: 'Obsidian Arena Combat'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

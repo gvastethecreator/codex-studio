@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-130
 packId: pack_05
 name: Mob Psycho 100 - Psychic Paint-Surge Meltdown
+styleAnchors:
+  - 'Mob Psycho 100 - Psychic Paint-Surge Meltdown'
+displayName: 'Psychic Paint-Surge Meltdown'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

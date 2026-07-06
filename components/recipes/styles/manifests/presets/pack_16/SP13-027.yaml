@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-027
 packId: pack_16
 name: Crimson Formation Momentum Style
+styleAnchors:
+  - 'Crimson Formation Momentum Style'
+displayName: 'Crimson Formation Momentum'
 category: 6. Samurai & Medieval
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-352
 packId: pack_16
 name: Neon Trick Flow Style
+styleAnchors:
+  - 'Neon Trick Flow Style'
+displayName: 'Neon Trick Flow'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

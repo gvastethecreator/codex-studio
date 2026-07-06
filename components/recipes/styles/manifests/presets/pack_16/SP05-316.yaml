@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-316
 packId: pack_16
 name: Biomorphic Mist Ritual Style
+styleAnchors:
+  - 'Biomorphic Mist Ritual Style'
+displayName: 'Biomorphic Mist Ritual'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

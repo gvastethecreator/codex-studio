@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-034
 packId: pack_05
 name: Bright Hero Academy
+styleAnchors:
+  - 'Bright Hero Academy'
+displayName: 'Bright Academy Heroics'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

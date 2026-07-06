@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-028
 packId: pack_16
 name: Sacred Heraldic Vow Style
+styleAnchors:
+  - 'Sacred Heraldic Vow Style'
+displayName: 'Sacred Heraldic Vow'
 category: 6. Samurai & Medieval
 version: 1
 supportedTasks:

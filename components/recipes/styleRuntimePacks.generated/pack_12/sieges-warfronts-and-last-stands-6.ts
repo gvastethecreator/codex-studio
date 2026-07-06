@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-007',
     name: 'Glacier Fortress Assault',
+    displayName: 'Glacier Fortress Siege',
+    styleAnchors: ['Glacier Fortress Assault'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, text, logo, tropical-elements, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-009',
     name: 'Sacred Siege Co-op Readability',
+    displayName: 'Sacred Siege Co-op',
+    styleAnchors: ['Sacred Siege Co-op Readability'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, text, logo, modern-weapons, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-026',
     name: 'Verdant Ruins Tactical RPG',
+    displayName: 'Verdant Tactical RPG',
+    styleAnchors: ['Verdant Ruins Tactical RPG'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, text, logo, cluttered-ui, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -122,6 +128,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-038',
     name: 'Iron Reef Naval Skirmish',
+    displayName: 'Iron Reef Naval Tactics',
+    styleAnchors: ['Iron Reef Naval Skirmish'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, text, logo, landlocked, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -151,6 +159,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-052',
     name: 'Rift Bridge Capture Point',
+    displayName: 'Rift Bridge Control Point',
+    styleAnchors: ['Rift Bridge Capture Point'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, text, logo, clutter, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -180,6 +190,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-060',
     name: 'Hollow Basilica Final Stand',
+    displayName: 'Hollow Basilica Last Stand',
+    styleAnchors: ['Hollow Basilica Final Stand'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, text, logo, playful-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -209,6 +221,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-064',
     name: 'Iron Orchard Defense Night',
+    displayName: 'Iron Orchard Defense',
+    styleAnchors: ['Iron Orchard Defense Night'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, text, logo, futuristic-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',

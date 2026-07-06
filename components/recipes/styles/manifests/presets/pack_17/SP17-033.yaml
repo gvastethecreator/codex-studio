@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-033
 packId: pack_17
 name: Bone Tarot Horror Arcana
+styleAnchors:
+  - 'Bone Tarot Horror Arcana'
+displayName: 'Bone Tarot Arcana'
 category: 6. Monochrome Tarot & Bestiary Plates
 domain: monochrome medieval horror
 version: 1

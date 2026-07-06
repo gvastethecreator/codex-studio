@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-249
 packId: pack_05
 name: Ascendance of a Bookworm - Printing Press Devotion
+styleAnchors:
+  - 'Ascendance of a Bookworm - Printing Press Devotion'
+displayName: 'Printing Press Devotion'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-360
 packId: pack_16
 name: Poetic Reflex Focus Style
+styleAnchors:
+  - 'Poetic Reflex Focus Style'
+displayName: 'Poetic Reflex Focus'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

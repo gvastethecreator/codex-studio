@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-318
 packId: pack_16
 name: Psychedelic Demonic Horror Style
+styleAnchors:
+  - 'Psychedelic Demonic Horror Style'
+displayName: 'Psychedelic Demonic Horror'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-301
 packId: pack_16
 name: Analog Space Opera Command Style
+styleAnchors:
+  - 'Analog Space Opera Command Style'
+displayName: 'Analog Space Opera Command'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-266
 packId: pack_05
 name: Black Particle Fugitive Style
+styleAnchors:
+  - 'Black Particle Fugitive Style'
+displayName: 'Black Particle Fugitive'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

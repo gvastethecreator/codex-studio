@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-346
 packId: pack_16
 name: Phantom Teamplay Speed Style
+styleAnchors:
+  - 'Phantom Teamplay Speed Style'
+displayName: 'Phantom Teamplay Speed'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

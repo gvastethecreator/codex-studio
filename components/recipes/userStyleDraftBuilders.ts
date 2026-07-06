@@ -15,7 +15,7 @@ import {
   type SelectedStyleSlot,
   type StyleLayerFieldId,
 } from './styleLayerComposer';
-import type { StyleRuntimePreset } from './styles/runtimeTypes';
+import { getStyleRuntimePresetDisplayName, type StyleRuntimePreset } from './styles/runtimeTypes';
 
 export const USER_STYLE_DNA_FIELDS: Array<{
   key: UserStyleVisualDnaKey;
@@ -125,13 +125,14 @@ export function createUserStyleDraftFromRuntimePreset(
   packId: string,
   packName: string,
 ): UserStylePresetDraft {
+  const presetName = getStyleRuntimePresetDisplayName(preset);
   return {
-    name: `${preset.name} Remix`,
+    name: `${presetName} Remix`,
     category: preset.category || packName || 'Custom Styles',
     tags: uniqueList(['clone', packId, packName, ...readPresetTags(preset)]),
     supportedTasks: [...DEFAULT_SUPPORTED_TASKS],
     visualDna: createUserStyleVisualDna({
-      aesthetic: readPresetDna(preset, 'aesthetic', `${preset.name} visual language.`),
+      aesthetic: readPresetDna(preset, 'aesthetic', `${presetName} visual language.`),
       subject_treatment: readPresetDna(
         preset,
         'subject_treatment',
@@ -165,7 +166,7 @@ export function createUserStyleDraftFromRuntimePreset(
       ),
       creative_brief: describeStyleValue(
         preset.style.creative_brief,
-        `Reusable custom version of ${preset.name}.`,
+        `Reusable custom version of ${presetName}.`,
       ),
     }),
     avoidRules: splitList(preset.negativePrompt),
@@ -253,6 +254,7 @@ export function createUserStyleInputFromRuntimePreset(
   packId: string,
   packName: string,
 ): CreateUserStylePresetInput {
+  const presetName = getStyleRuntimePresetDisplayName(preset);
   return createUserStyleInputFromDraft(
     createUserStyleDraftFromRuntimePreset(preset, packId, packName),
     {
@@ -260,7 +262,7 @@ export function createUserStyleInputFromRuntimePreset(
       presetId: preset.id,
       packId,
       note: `Cloned from ${packName}.`,
-      data: { presetName: preset.name, packName },
+      data: { presetName, packName },
     },
   );
 }

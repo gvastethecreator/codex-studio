@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-366
 packId: pack_16
 name: Traditional Ensemble Resonance Style
+styleAnchors:
+  - 'Traditional Ensemble Resonance Style'
+displayName: 'Traditional Ensemble Resonance'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

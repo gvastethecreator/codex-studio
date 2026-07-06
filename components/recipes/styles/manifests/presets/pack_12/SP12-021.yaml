@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-021
 packId: pack_12
 name: Drift Kingdom Sandstorm Cup
+styleAnchors:
+  - 'Drift Kingdom Sandstorm Cup'
+displayName: 'Sandstorm Drift Racing'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

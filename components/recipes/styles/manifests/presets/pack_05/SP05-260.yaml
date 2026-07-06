@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-260
 packId: pack_05
 name: Princess Connect! Re:Dive - Banquet Quest Pastel
+styleAnchors:
+  - 'Princess Connect! Re:Dive - Banquet Quest Pastel'
+displayName: 'Banquet Quest Pastel'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

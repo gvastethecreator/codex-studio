@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-004
 packId: pack_16
 name: Melancholy Astral Opera Style
+styleAnchors:
+  - 'Melancholy Astral Opera Style'
+displayName: 'Melancholy Astral Opera'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-276
 packId: pack_05
 name: Sun-Bleached Cruel Discipline Style
+styleAnchors:
+  - 'Sun-Bleached Cruel Discipline Style'
+displayName: 'Sun-Bleached Cruel Discipline'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

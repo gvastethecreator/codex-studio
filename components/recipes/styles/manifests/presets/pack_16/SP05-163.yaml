@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-163
 packId: pack_16
 name: Smoke-Jazz Noir Cool Style
+styleAnchors:
+  - 'Smoke-Jazz Noir Cool Style'
+displayName: 'Smoke-Jazz Noir Cool'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

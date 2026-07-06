@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-051
 packId: pack_12
 name: Sapphire Bazaar Deckbuilder Hub
+styleAnchors:
+  - 'Sapphire Bazaar Deckbuilder Hub'
+displayName: 'Sapphire Bazaar Deckbuilder'
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:

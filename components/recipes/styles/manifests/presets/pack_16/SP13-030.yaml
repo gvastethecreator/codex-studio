@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-030
 packId: pack_16
 name: Moonlit Ascetic Discipline Style
+styleAnchors:
+  - 'Moonlit Ascetic Discipline Style'
+displayName: 'Moonlit Ascetic Discipline'
 category: 6. Samurai & Medieval
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-019
 packId: pack_12
 name: Forgotten Subway Mutation Zone
+styleAnchors:
+  - 'Forgotten Subway Mutation Zone'
+displayName: 'Mutant Subway Horror'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

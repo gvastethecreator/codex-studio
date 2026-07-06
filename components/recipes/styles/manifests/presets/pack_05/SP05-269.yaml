@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-269
 packId: pack_05
 name: Smoke-Filled Calculation Style
+styleAnchors:
+  - 'Smoke-Filled Calculation Style'
+displayName: 'Smoke-Filled Calculation'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

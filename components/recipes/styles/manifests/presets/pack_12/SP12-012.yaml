@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-012
 packId: pack_12
 name: Pixel Tavern Quest Hub
+styleAnchors:
+  - 'Pixel Tavern Quest Hub'
+displayName: 'Pixel Tavern Hub'
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:

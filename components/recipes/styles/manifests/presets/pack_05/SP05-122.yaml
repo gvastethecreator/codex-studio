@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-122
 packId: pack_05
 name: Chainsaw Man - Filthy Devil-Hunter Frenzy
+styleAnchors:
+  - 'Chainsaw Man - Filthy Devil-Hunter Frenzy'
+displayName: 'Filthy Devil-Hunter Frenzy'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

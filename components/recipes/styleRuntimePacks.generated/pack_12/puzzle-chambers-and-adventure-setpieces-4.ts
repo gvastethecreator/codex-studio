@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-004',
     name: 'Clockwork Sky Armada',
+    displayName: 'Clockwork Sky Strategy',
+    styleAnchors: ['Clockwork Sky Armada'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, text, logo, modern-ui, plastic-look, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-012',
     name: 'Pixel Tavern Quest Hub',
+    displayName: 'Pixel Tavern Hub',
+    styleAnchors: ['Pixel Tavern Quest Hub'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, text, logo, anti-aliased-blur, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-036',
     name: 'Lunar Monolith Puzzle Chamber',
+    displayName: 'Lunar Monolith Puzzle',
+    styleAnchors: ['Lunar Monolith Puzzle Chamber'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, text, logo, clutter, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-037',
     name: 'Mushroom Kingdom Frontier',
+    displayName: 'Mushroom Frontier Platformer',
+    styleAnchors: ['Mushroom Kingdom Frontier'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, text, logo, grimdark, photoreal-grain, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-051',
     name: 'Sapphire Bazaar Deckbuilder Hub',
+    displayName: 'Sapphire Bazaar Deckbuilder',
+    styleAnchors: ['Sapphire Bazaar Deckbuilder Hub'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, text, logo, bland-ui, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -267,6 +277,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-080',
     name: 'Endgame Eclipse Throne Room',
+    displayName: 'Eclipse Throne Endgame',
+    styleAnchors: ['Endgame Eclipse Throne Room'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, text, logo, comedic-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official card framing',

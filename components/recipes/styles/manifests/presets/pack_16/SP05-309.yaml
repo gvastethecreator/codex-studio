@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-309
 packId: pack_16
 name: Explosive Space Glam Action Style
+styleAnchors:
+  - 'Explosive Space Glam Action Style'
+displayName: 'Explosive Space Glam Action'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

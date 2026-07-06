@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-344
 packId: pack_16
 name: Ego Pressure Breakout Style
+styleAnchors:
+  - 'Ego Pressure Breakout Style'
+displayName: 'Ego Pressure Breakout'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

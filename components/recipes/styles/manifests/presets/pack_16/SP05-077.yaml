@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-077
 packId: pack_16
 name: Mirror Identity Collapse Thriller Style
+styleAnchors:
+  - 'Mirror Identity Collapse Thriller Style'
+displayName: 'Mirror Identity Collapse Thriller'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

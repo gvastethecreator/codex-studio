@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-134
 packId: pack_05
 name: Sakamoto Days - Convenience-Store Assassin Sprint
+styleAnchors:
+  - 'Sakamoto Days - Convenience-Store Assassin Sprint'
+displayName: 'Convenience-Store Assassin Sprint'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

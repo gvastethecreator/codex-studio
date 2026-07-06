@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-017
 packId: pack_12
 name: Lava Skate Arena
+styleAnchors:
+  - 'Lava Skate Arena'
+displayName: 'Lava Skate Arena Sport'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

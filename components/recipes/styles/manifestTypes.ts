@@ -42,6 +42,8 @@ export interface StylePresetManifest {
   id: string;
   packId: string;
   name: string;
+  displayName?: string;
+  styleAnchors?: string[];
   category: string;
   domain?: string;
   version: number;

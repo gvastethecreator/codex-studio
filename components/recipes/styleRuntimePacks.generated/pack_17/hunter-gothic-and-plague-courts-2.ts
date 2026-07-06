@@ -65,6 +65,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-009',
     name: 'Crimson Moon Alley Gothic',
+    displayName: 'Crimson Moon Gothic',
+    styleAnchors: ['Crimson Moon Alley Gothic'],
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
@@ -125,6 +127,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-011',
     name: 'Fogbound Witch Trial',
+    displayName: 'Fogbound Witch Gothic',
+    styleAnchors: ['Fogbound Witch Trial'],
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:
@@ -155,6 +159,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-012',
     name: 'Candlelit Bestiary Court',
+    displayName: 'Candlelit Bestiary Gothic',
+    styleAnchors: ['Candlelit Bestiary Court'],
     category: '2. Hunter Gothic & Plague Courts',
     domain: 'gothic fantasy',
     negativePrompt:

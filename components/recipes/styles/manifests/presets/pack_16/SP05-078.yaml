@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-078
 packId: pack_16
 name: Otomo Light-Trail Collapse Style
+styleAnchors:
+  - 'Otomo Light-Trail Collapse Style'
+displayName: 'Otomo Light-Trail Collapse'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

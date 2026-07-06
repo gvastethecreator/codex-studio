@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-277
 packId: pack_05
 name: Rusted Neon Adolescent Dread Style
+styleAnchors:
+  - 'Rusted Neon Adolescent Dread Style'
+displayName: 'Rusted Neon Adolescent Dread'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

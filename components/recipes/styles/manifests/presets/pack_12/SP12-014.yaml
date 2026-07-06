@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-014
 packId: pack_12
 name: Urban Parkour Rooftop Wars
+styleAnchors:
+  - 'Urban Parkour Rooftop Wars'
+displayName: 'Rooftop Parkour Combat'
 category: 1. Neon Urban & Night Ops
 version: 1
 supportedTasks:

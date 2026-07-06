@@ -35,6 +35,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-022',
     name: 'Vertigo Energy Cross Style',
+    displayName: 'Vertigo Energy Cross',
+    styleAnchors: ['Vertigo Energy Cross Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
       'photoreal, calm-composition, blur-only, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
@@ -64,6 +66,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-023',
     name: 'Neon Vector Discharge Style',
+    displayName: 'Neon Vector Discharge',
+    styleAnchors: ['Neon Vector Discharge Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
       'photoreal, medieval-only, washed-colors, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
@@ -93,6 +97,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-024',
     name: 'Monumental Impact Burst Style',
+    displayName: 'Monumental Impact Burst',
+    styleAnchors: ['Monumental Impact Burst Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
       'photoreal, static, over-noise, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',
@@ -122,6 +128,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-025',
     name: 'Upward Thunder Momentum Style',
+    displayName: 'Upward Thunder Momentum',
+    styleAnchors: ['Upward Thunder Momentum Style'],
     category: '5. Action Motion Setpieces',
     negativePrompt:
       'photoreal, dull-palette, calm-scene, watermark, text, logo, static pose, low-detail blur, photoreal stunt photo, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, readable text, signature, muddy noisy darks',

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-059
 packId: pack_12
 name: Prismatic Arena Hero Draft
+styleAnchors:
+  - 'Prismatic Arena Hero Draft'
+displayName: 'Prismatic Draft Arena'
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:

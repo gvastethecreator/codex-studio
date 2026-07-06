@@ -45,6 +45,20 @@ describe('userStyleDraftBuilders', () => {
     expect(input.avoidRules).toEqual(['watermark', 'logo']);
   });
 
+  it('uses display names when cloning renamed runtime presets', () => {
+    const input = createUserStyleInputFromRuntimePreset(
+      { ...preset, displayName: 'Graphic Circuit System' },
+      'pack_04',
+      'Graphic Novel',
+    );
+
+    expect(input.name).toBe('Graphic Circuit System Remix');
+    expect(input.source?.data).toEqual({
+      presetName: 'Graphic Circuit System',
+      packName: 'Graphic Novel',
+    });
+  });
+
   it('turns selected style layers into a saved blend draft', () => {
     const slot: SelectedStyleSlot = {
       preset,

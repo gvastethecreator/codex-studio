@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-008
 packId: pack_16
 name: Neon Procedural Irony Style
+styleAnchors:
+  - 'Neon Procedural Irony Style'
+displayName: 'Neon Procedural Irony'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

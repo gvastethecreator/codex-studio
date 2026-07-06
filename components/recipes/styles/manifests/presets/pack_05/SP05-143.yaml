@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-143
 packId: pack_05
 name: Darker than Black - Contract Killer Night Rain
+styleAnchors:
+  - 'Darker than Black - Contract Killer Night Rain'
+displayName: 'Contract Killer Night Rain'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

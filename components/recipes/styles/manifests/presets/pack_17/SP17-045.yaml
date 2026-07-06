@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-045
 packId: pack_17
 name: Rotten Gold Court Romance
+styleAnchors:
+  - 'Rotten Gold Court Romance'
+displayName: 'Rotten Gold Gothic Editorial'
 category: 7. Weird Medieval Editorial
 domain: decadent gothic fantasy
 version: 1

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-015
 packId: pack_12
 name: Ancient Mecha Temple
+styleAnchors:
+  - 'Ancient Mecha Temple'
+displayName: 'Ancient Mecha Templecraft'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

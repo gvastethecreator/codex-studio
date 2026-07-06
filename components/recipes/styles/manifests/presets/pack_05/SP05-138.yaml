@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-138
 packId: pack_05
 name: Kagurabachi - Sword Oath Under Neon Rain
+styleAnchors:
+  - 'Kagurabachi - Sword Oath Under Neon Rain'
+displayName: 'Sword Oath Under Neon Rain'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

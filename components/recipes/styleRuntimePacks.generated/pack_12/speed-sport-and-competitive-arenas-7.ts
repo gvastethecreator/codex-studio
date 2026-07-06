@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-008',
     name: 'Holographic Grand Prix Night',
+    displayName: 'Holographic Grand Prix',
+    styleAnchors: ['Holographic Grand Prix Night'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, static-scene, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-017',
     name: 'Lava Skate Arena',
+    displayName: 'Lava Skate Arena Sport',
+    styleAnchors: ['Lava Skate Arena'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, static-pose, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-021',
     name: 'Drift Kingdom Sandstorm Cup',
+    displayName: 'Sandstorm Drift Racing',
+    styleAnchors: ['Drift Kingdom Sandstorm Cup'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, muddy, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-031',
     name: 'Astral Chess Battlefield',
+    displayName: 'Astral Chess Tactics',
+    styleAnchors: ['Astral Chess Battlefield'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, clutter, noisy-palette, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-039',
     name: 'Phantom Theater Rhythm Battle',
+    displayName: 'Phantom Theater Rhythm',
+    styleAnchors: ['Phantom Theater Rhythm Battle'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, static, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-047',
     name: 'Obsidian Arena Champion Trial',
+    displayName: 'Obsidian Arena Combat',
+    styleAnchors: ['Obsidian Arena Champion Trial'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, modern-guns, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -180,6 +192,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-059',
     name: 'Prismatic Arena Hero Draft',
+    displayName: 'Prismatic Draft Arena',
+    styleAnchors: ['Prismatic Arena Hero Draft'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, muddy-palette, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-063',
     name: 'Obelisk Desert Relic Race',
+    displayName: 'Obelisk Desert Racing',
+    styleAnchors: ['Obelisk Desert Relic Race'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, rainy-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -238,6 +254,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-065',
     name: 'Crystal Crown Duel Hall',
+    displayName: 'Crystal Crown Duelism',
+    styleAnchors: ['Crystal Crown Duel Hall'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, text, logo, grunge, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',

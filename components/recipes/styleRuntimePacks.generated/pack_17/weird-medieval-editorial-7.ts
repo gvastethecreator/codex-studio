@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-045',
     name: 'Rotten Gold Court Romance',
+    displayName: 'Rotten Gold Gothic Editorial',
+    styleAnchors: ['Rotten Gold Court Romance'],
     category: '7. Weird Medieval Editorial',
     domain: 'decadent gothic fantasy',
     negativePrompt:
@@ -36,6 +38,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-046',
     name: 'Moth Abbey Vellum Horror',
+    displayName: 'Moth Abbey Vellum Gothic',
+    styleAnchors: ['Moth Abbey Vellum Horror'],
     category: '7. Weird Medieval Editorial',
     domain: 'monastic gothic fantasy',
     negativePrompt:
@@ -66,6 +70,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-047',
     name: 'Salt Cathedral Pilgrimage',
+    displayName: 'Salt Cathedral Vellum Gothic',
+    styleAnchors: ['Salt Cathedral Pilgrimage'],
     category: '7. Weird Medieval Editorial',
     domain: 'desert sacred fantasy',
     negativePrompt:
@@ -156,6 +162,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-050',
     name: 'Wormwood Carnival Feudal',
+    displayName: 'Wormwood Carnival Gothic',
+    styleAnchors: ['Wormwood Carnival Feudal'],
     category: '7. Weird Medieval Editorial',
     domain: 'carnival gothic fantasy',
     negativePrompt:
@@ -216,6 +224,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-052',
     name: 'Black Parchment Siege Omen',
+    displayName: 'Black Parchment Omen',
+    styleAnchors: ['Black Parchment Siege Omen'],
     category: '7. Weird Medieval Editorial',
     domain: 'tactical omen fantasy',
     negativePrompt:

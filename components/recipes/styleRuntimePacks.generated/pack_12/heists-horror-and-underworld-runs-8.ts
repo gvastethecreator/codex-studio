@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-016',
     name: 'Shadow Opera Assassin Court',
+    displayName: 'Shadow Opera Assassins',
+    styleAnchors: ['Shadow Opera Assassin Court'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, sci-fi-ui, flat-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-019',
     name: 'Forgotten Subway Mutation Zone',
+    displayName: 'Mutant Subway Horror',
+    styleAnchors: ['Forgotten Subway Mutation Zone'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, cheerful-light, clean-surfaces, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-024',
     name: 'Temple Runner Trap Gauntlet',
+    displayName: 'Trap Gauntlet Adventure',
+    styleAnchors: ['Temple Runner Trap Gauntlet'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, static, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-030',
     name: 'Cursed Carnival Showdown',
+    displayName: 'Cursed Carnival Combat',
+    styleAnchors: ['Cursed Carnival Showdown'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, clean-theme, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-049',
     name: 'Thorn Castle Moon Raid',
+    displayName: 'Thorn Castle Stealth',
+    styleAnchors: ['Thorn Castle Moon Raid'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, daylight, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-050',
     name: 'Polar Signal Tower Outbreak',
+    displayName: 'Polar Signal Outbreak',
+    styleAnchors: ['Polar Signal Tower Outbreak'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, tropical, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -180,6 +192,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-054',
     name: 'Copper Canyon Train Robbery',
+    displayName: 'Copper Canyon Train Heist',
+    styleAnchors: ['Copper Canyon Train Robbery'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, rainy-city, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-057',
     name: 'Verdigris Harbor Pirate Skies',
+    displayName: 'Verdigris Pirate Skies',
+    styleAnchors: ['Verdigris Harbor Pirate Skies'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, modern-cars, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
@@ -267,6 +283,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-069',
     name: 'Static Dune Radio Wars',
+    displayName: 'Static Dune Radio War',
+    styleAnchors: ['Static Dune Radio Wars'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, text, logo, fantasy-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',

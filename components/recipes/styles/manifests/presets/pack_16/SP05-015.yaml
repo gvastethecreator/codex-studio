@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-015
 packId: pack_16
 name: Philosophical Cyber-Ops Vertigo Style
+styleAnchors:
+  - 'Philosophical Cyber-Ops Vertigo Style'
+displayName: 'Philosophical Cyber-Ops Vertigo'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

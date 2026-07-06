@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-133
 packId: pack_05
 name: Mashle - Brickwall Comedy Spell-School Brawl
+styleAnchors:
+  - 'Mashle - Brickwall Comedy Spell-School Brawl'
+displayName: 'Brickwall Comedy Spell-School Brawl'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

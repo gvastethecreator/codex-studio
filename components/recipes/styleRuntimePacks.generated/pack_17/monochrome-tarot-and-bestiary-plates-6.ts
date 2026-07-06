@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-033',
     name: 'Bone Tarot Horror Arcana',
+    displayName: 'Bone Tarot Arcana',
+    styleAnchors: ['Bone Tarot Horror Arcana'],
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'monochrome medieval horror',
     negativePrompt:
@@ -95,6 +97,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-036',
     name: 'Starved Dungeon Pilgrimage',
+    displayName: 'Starved Dungeon Gothic',
+    styleAnchors: ['Starved Dungeon Pilgrimage'],
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'survival dungeon fantasy',
     negativePrompt:
@@ -125,6 +129,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-037',
     name: 'Woodcut Beast Chronicle',
+    displayName: 'Woodcut Beast Plate',
+    styleAnchors: ['Woodcut Beast Chronicle'],
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'medieval bestiary illustration',
     negativePrompt:
@@ -185,6 +191,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-039',
     name: 'Scholastic Marginalia Beasts',
+    displayName: 'Scholastic Marginalia Bestiary',
+    styleAnchors: ['Scholastic Marginalia Beasts'],
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'medieval marginalia fantasy',
     negativePrompt:
@@ -273,6 +281,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-042',
     name: 'Tapestry Creature Legend',
+    displayName: 'Tapestry Creature Mythic',
+    styleAnchors: ['Tapestry Creature Legend'],
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'medieval tapestry fantasy',
     negativePrompt:
@@ -331,6 +341,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-044',
     name: 'Moon Parchment Oracle Beasts',
+    displayName: 'Moon Parchment Oracle',
+    styleAnchors: ['Moon Parchment Oracle Beasts'],
     category: '6. Monochrome Tarot & Bestiary Plates',
     domain: 'oracle bestiary fantasy',
     negativePrompt:

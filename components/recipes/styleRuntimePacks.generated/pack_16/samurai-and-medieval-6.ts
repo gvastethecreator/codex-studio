@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-026',
     name: 'Pre-Impact Ritual Stillness Style',
+    displayName: 'Pre-Impact Ritual Stillness',
+    styleAnchors: ['Pre-Impact Ritual Stillness Style'],
     category: '6. Samurai & Medieval',
     negativePrompt:
       'photoreal, modern-firearms, sci-fi-neon, watermark, text, logo, generic samurai cosplay, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-027',
     name: 'Crimson Formation Momentum Style',
+    displayName: 'Crimson Formation Momentum',
+    styleAnchors: ['Crimson Formation Momentum Style'],
     category: '6. Samurai & Medieval',
     negativePrompt:
       'photoreal, cartoon-goofy, modern-urban-system pressure, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-028',
     name: 'Sacred Heraldic Vow Style',
+    displayName: 'Sacred Heraldic Vow',
+    styleAnchors: ['Sacred Heraldic Vow Style'],
     category: '6. Samurai & Medieval',
     negativePrompt:
       'photoreal, sci-fi-ui, casual-modern, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-029',
     name: 'Ember Breach Pressure Style',
+    displayName: 'Ember Breach Pressure',
+    styleAnchors: ['Ember Breach Pressure Style'],
     category: '6. Samurai & Medieval',
     negativePrompt:
       'photoreal, modern-tech, colorful-cute, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-030',
     name: 'Moonlit Ascetic Discipline Style',
+    displayName: 'Moonlit Ascetic Discipline',
+    styleAnchors: ['Moonlit Ascetic Discipline Style'],
     category: '6. Samurai & Medieval',
     negativePrompt:
       'photoreal, bright-daylight, cyberpunk, watermark, text, logo, generic samurai cosplay, modern firearms, sci-fi neon, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',

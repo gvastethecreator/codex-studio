@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-037
 packId: pack_17
 name: Woodcut Beast Chronicle
+styleAnchors:
+  - 'Woodcut Beast Chronicle'
+displayName: 'Woodcut Beast Plate'
 category: 6. Monochrome Tarot & Bestiary Plates
 domain: medieval bestiary illustration
 version: 1

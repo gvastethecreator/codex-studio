@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-355
 packId: pack_16
 name: Festive Sprint Idol Energy Style
+styleAnchors:
+  - 'Festive Sprint Idol Energy Style'
+displayName: 'Festive Sprint Idol Energy'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-003
 packId: pack_17
 name: Grimdark Siege Chronicle
+styleAnchors:
+  - 'Grimdark Siege Chronicle'
+displayName: 'Grimdark War Chronicle'
 category: 1. Dark Fantasy Realms
 domain: medieval fantasy
 version: 1

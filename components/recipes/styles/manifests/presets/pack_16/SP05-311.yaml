@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-311
 packId: pack_16
 name: Rusted Eco Hope Style
+styleAnchors:
+  - 'Rusted Eco Hope Style'
+displayName: 'Rusted Eco Hope'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

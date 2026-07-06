@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-003
 packId: pack_16
 name: Jazzy Rogue Heist Rhythm Style
+styleAnchors:
+  - 'Jazzy Rogue Heist Rhythm Style'
+displayName: 'Jazzy Rogue Heist Rhythm'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

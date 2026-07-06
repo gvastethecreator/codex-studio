@@ -1,5 +1,6 @@
 import { IconCheck as Check } from '@tabler/icons-react';
 import React from 'react';
+import { getStyleRuntimePresetDisplayName, type StyleRuntimePreset } from './stylesData';
 import {
   createSelectedStyleLayer,
   formatStyleLayerFieldWeight,
@@ -15,6 +16,10 @@ const STYLE_AVOID_RULE_MODES: { id: StyleLayerAvoidRulesMode; label: string }[] 
   { id: 'ignore', label: 'Ignore' },
   { id: 'strict', label: 'Strict' },
 ];
+
+function styleSlotName(preset: StyleRuntimePreset) {
+  return getStyleRuntimePresetDisplayName(preset);
+}
 
 interface StyleAdvancedControlsPanelProps {
   selectedStyles: SelectedStyleSlot[];
@@ -58,6 +63,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
         {selectedStyles.map((slot, index) => {
           const layer = selectedStyleLayers[index] ?? createSelectedStyleLayer(slot, index);
           const enabled = slot.enabled ?? true;
+          const presetName = styleSlotName(slot.preset);
           return (
             <div
               key={slot.preset.id}
@@ -73,7 +79,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                     Slot {index + 1} / {slot.packName}
                   </div>
                   <div className="truncate text-[10px] font-black uppercase tracking-tight text-white">
-                    {slot.preset.name}
+                    {presetName}
                   </div>
                 </div>
                 <button
@@ -148,7 +154,7 @@ export const StyleAdvancedControlsPanel: React.FC<StyleAdvancedControlsPanelProp
                             )
                           }
                           className="h-1 min-w-0 flex-1 accent-white disabled:opacity-30"
-                          aria-label={`${field.label} weight ${slot.preset.name}`}
+                          aria-label={`${field.label} weight ${presetName}`}
                         />
                         <span className="w-7 text-right text-[8px] font-black tabular-nums text-zinc-400">
                           {formatStyleLayerFieldWeight(fieldState.weight)}

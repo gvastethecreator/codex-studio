@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-032
 packId: pack_05
 name: Gritty Urban Curses
+styleAnchors:
+  - 'Gritty Urban Curses'
+displayName: 'Urban Curse Action'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

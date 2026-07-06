@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-024
 packId: pack_12
 name: Temple Runner Trap Gauntlet
+styleAnchors:
+  - 'Temple Runner Trap Gauntlet'
+displayName: 'Trap Gauntlet Adventure'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

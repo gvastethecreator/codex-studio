@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-036
 packId: pack_05
 name: Colossal War Drama
+styleAnchors:
+  - 'Colossal War Drama'
+displayName: 'Colossal War Shonen'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

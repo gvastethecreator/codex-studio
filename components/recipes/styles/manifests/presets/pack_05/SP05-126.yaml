@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-126
 packId: pack_05
 name: Dandadan - Paranormal Turbo Romance Brawl
+styleAnchors:
+  - 'Dandadan - Paranormal Turbo Romance Brawl'
+displayName: 'Paranormal Turbo Romance Brawl'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

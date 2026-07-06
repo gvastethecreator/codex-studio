@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-148
 packId: pack_05
 name: Baccano! - Jazz Railcrime Ensemble
+styleAnchors:
+  - 'Baccano! - Jazz Railcrime Ensemble'
+displayName: 'Jazz Railcrime Ensemble'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-169
 packId: pack_16
 name: Wired Identity Dissolution Style
+styleAnchors:
+  - 'Wired Identity Dissolution Style'
+displayName: 'Wired Identity Dissolution'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

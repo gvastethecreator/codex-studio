@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-057
 packId: pack_12
 name: Verdigris Harbor Pirate Skies
+styleAnchors:
+  - 'Verdigris Harbor Pirate Skies'
+displayName: 'Verdigris Pirate Skies'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

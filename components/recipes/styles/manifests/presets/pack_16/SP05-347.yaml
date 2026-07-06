@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-347
 packId: pack_16
 name: Uphill Endurance Breakaway Style
+styleAnchors:
+  - 'Uphill Endurance Breakaway Style'
+displayName: 'Uphill Endurance Breakaway'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

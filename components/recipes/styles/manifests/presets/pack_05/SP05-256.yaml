@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-256
 packId: pack_05
 name: Inuyasha - Shrine-Well Sengoku Pursuit
+styleAnchors:
+  - 'Inuyasha - Shrine-Well Sengoku Pursuit'
+displayName: 'Shrine-Well Sengoku Pursuit'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

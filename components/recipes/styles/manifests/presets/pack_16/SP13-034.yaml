@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-034
 packId: pack_16
 name: Deep Void Whisper Style
+styleAnchors:
+  - 'Deep Void Whisper Style'
+displayName: 'Deep Void Whisper'
 category: 7. Horror
 version: 1
 supportedTasks:

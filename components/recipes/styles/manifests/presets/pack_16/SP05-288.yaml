@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-288
 packId: pack_16
 name: Elastic Summer Time Style
+styleAnchors:
+  - 'Elastic Summer Time Style'
+displayName: 'Elastic Summer Time'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

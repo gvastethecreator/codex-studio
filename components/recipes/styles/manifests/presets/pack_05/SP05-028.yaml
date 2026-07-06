@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-028
 packId: pack_05
 name: Lo-Fi Sword Roadtrip
+styleAnchors:
+  - 'Lo-Fi Sword Roadtrip'
+displayName: 'Lo-Fi Sword Drifter'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

@@ -1,4 +1,8 @@
-import type { StyleRuntimePreset } from './styles/runtimeTypes';
+import {
+  getStyleRuntimePresetDisplayName,
+  getStyleRuntimePresetSearchNames,
+  type StyleRuntimePreset,
+} from './styles/runtimeTypes';
 
 export const DEFAULT_SELECTED_STYLE_STRENGTH = 0.75;
 
@@ -87,6 +91,8 @@ export interface SelectedStyleLayer {
   slot: number;
   presetId: string;
   presetName: string;
+  presetSourceName: string;
+  styleAnchors: string[];
   packId: string;
   packName: string;
   category: string;
@@ -207,6 +213,15 @@ function applyFieldWeightToValue(value: string, weight: number) {
   return `${cleanValue} (field weight ${formatStyleLayerFieldWeight(weight)})`;
 }
 
+function formatStyleLayerPromptName(
+  layer: Pick<SelectedStyleLayer, 'presetName' | 'styleAnchors'>,
+) {
+  const anchors = layer.styleAnchors.filter((anchor) => anchor !== layer.presetName);
+  return anchors.length
+    ? `${layer.presetName} [style anchors: ${anchors.join(', ')}]`
+    : layer.presetName;
+}
+
 export function createSelectedStyleLayer(
   slot: SelectedStyleSlot,
   index: number,
@@ -236,7 +251,9 @@ export function createSelectedStyleLayer(
   return {
     slot: index + 1,
     presetId: preset.id,
-    presetName: preset.name,
+    presetName: getStyleRuntimePresetDisplayName(preset),
+    presetSourceName: preset.name,
+    styleAnchors: getStyleRuntimePresetSearchNames(preset),
     packId: slot.packId,
     packName: slot.packName,
     category: preset.category || 'General',
@@ -273,7 +290,9 @@ export function joinSelectedStyleLayerValue(
       if (!layer.enabled) return [];
       const value = getSelectedStyleLayerFieldValue(layer, fieldId).trim();
       return value
-        ? [`${layer.presetName} (${formatStyleStrength(layer.strength)}): ${value}`]
+        ? [
+            `${formatStyleLayerPromptName(layer)} (${formatStyleStrength(layer.strength)}): ${value}`,
+          ]
         : [];
     })
     .join(' | ');
@@ -286,7 +305,9 @@ export function joinSelectedStyleCreativeBrief(slots: SelectedStyleSlot[]) {
       if (!layer.enabled) return [];
       const value = layer.creativeBrief.trim();
       return value
-        ? [`${layer.presetName} (${formatStyleStrength(layer.strength)}): ${value}`]
+        ? [
+            `${formatStyleLayerPromptName(layer)} (${formatStyleStrength(layer.strength)}): ${value}`,
+          ]
         : [];
     })
     .join(' | ');
@@ -295,7 +316,7 @@ export function joinSelectedStyleCreativeBrief(slots: SelectedStyleSlot[]) {
 export function createSelectedStylesPrompt(slots: SelectedStyleSlot[]) {
   const names = slots
     .filter((slot) => slot.enabled ?? true)
-    .map((slot) => slot.preset.name)
+    .map((slot, index) => formatStyleLayerPromptName(createSelectedStyleLayer(slot, index)))
     .join(' + ');
   return `Apply selected style layers: ${names}`;
 }
@@ -313,7 +334,9 @@ export function createSelectedStyleEmphasis(slots: SelectedStyleSlot[], diversit
           : [`${field.label} ${formatStyleLayerFieldWeight(fieldState.weight)}`];
       });
       const fieldSummary = activeFields.length ? ` Active fields: ${activeFields.join(', ')}.` : '';
-      return `Slot ${layer.slot}: ${layer.presetName} at ${formatStyleStrength(layer.strength)} strength.${fieldSummary}`;
+      const anchorSummary =
+        layer.styleAnchors.length > 1 ? ` Style anchors: ${layer.styleAnchors.join(', ')}.` : '';
+      return `Slot ${layer.slot}: ${layer.presetName} at ${formatStyleStrength(layer.strength)} strength.${anchorSummary}${fieldSummary}`;
     }),
     diversityHint,
   ].join('\n');

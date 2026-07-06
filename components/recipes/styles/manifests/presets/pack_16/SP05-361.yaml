@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-361
 packId: pack_16
 name: Incremental Method Training Style
+styleAnchors:
+  - 'Incremental Method Training Style'
+displayName: 'Incremental Method Training'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-282
 packId: pack_16
 name: Social Humanist Warmth Style
+styleAnchors:
+  - 'Social Humanist Warmth Style'
+displayName: 'Social Humanist Warmth'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

@@ -1,5 +1,9 @@
 import { estimateStyleGridMountedPresetCount } from './styleGridVirtualization';
-import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
+import {
+  getStyleRuntimePresetSearchNames,
+  type StyleRuntimePack,
+  type StyleRuntimePreset,
+} from './styles/runtimeTypes';
 
 export type StyleBrowserSortOrder =
   | 'source'
@@ -240,7 +244,7 @@ function describeSearchValue(value: unknown): string {
 function createStylePresetSearchText(preset: StyleRuntimePreset) {
   return [
     preset.id,
-    preset.name,
+    ...getStyleRuntimePresetSearchNames(preset),
     preset.category,
     preset.domain,
     ...Object.values(preset.style).map(describeSearchValue),

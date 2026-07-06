@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-006
 packId: pack_16
 name: Pop Transformable Aerial Spectacle Style
+styleAnchors:
+  - 'Pop Transformable Aerial Spectacle Style'
+displayName: 'Pop Transformable Aerial Spectacle'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

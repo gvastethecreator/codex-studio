@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-281
 packId: pack_16
 name: Temporal Memory Cinema Style
+styleAnchors:
+  - 'Temporal Memory Cinema Style'
+displayName: 'Temporal Memory Cinema'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

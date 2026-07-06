@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-030
 packId: pack_12
 name: Cursed Carnival Showdown
+styleAnchors:
+  - 'Cursed Carnival Showdown'
+displayName: 'Cursed Carnival Combat'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

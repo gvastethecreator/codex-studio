@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-002
 packId: pack_16
 name: Vintage Mechanical Grandeur Style
+styleAnchors:
+  - 'Vintage Mechanical Grandeur Style'
+displayName: 'Vintage Mechanical Grandeur'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

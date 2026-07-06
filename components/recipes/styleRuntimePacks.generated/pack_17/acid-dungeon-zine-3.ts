@@ -126,6 +126,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-017',
     name: 'Punk Heraldry Dungeon Cards',
+    displayName: 'Punk Heraldry Dungeon',
+    styleAnchors: ['Punk Heraldry Dungeon Cards'],
     category: '3. Acid Dungeon Zine',
     domain: 'dungeon zine',
     negativePrompt:

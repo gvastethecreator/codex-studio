@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-014
 packId: pack_16
 name: Jazzy Space-Noir Melancholy Style
+styleAnchors:
+  - 'Jazzy Space-Noir Melancholy Style'
+displayName: 'Jazzy Space-Noir Melancholy'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

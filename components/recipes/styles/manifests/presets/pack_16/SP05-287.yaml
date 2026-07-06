@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-287
 packId: pack_16
 name: Digital Pop Opera Style
+styleAnchors:
+  - 'Digital Pop Opera Style'
+displayName: 'Digital Pop Opera'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-286
 packId: pack_16
 name: Seasonal Intimacy Realism Style
+styleAnchors:
+  - 'Seasonal Intimacy Realism Style'
+displayName: 'Seasonal Intimacy Realism'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

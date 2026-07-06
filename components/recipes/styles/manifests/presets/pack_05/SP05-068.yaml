@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-068
 packId: pack_05
 name: Grimy Sorcery Collision Style
+styleAnchors:
+  - 'Grimy Sorcery Collision Style'
+displayName: 'Grimy Sorcery Collision'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

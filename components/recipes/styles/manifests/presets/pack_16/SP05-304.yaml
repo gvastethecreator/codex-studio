@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-304
 packId: pack_16
 name: Baroque Insurgent Melodrama Style
+styleAnchors:
+  - 'Baroque Insurgent Melodrama Style'
+displayName: 'Baroque Insurgent Melodrama'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

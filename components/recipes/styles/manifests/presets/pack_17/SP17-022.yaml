@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-022
 packId: pack_17
 name: Mecha Reliquary Knight
+styleAnchors:
+  - 'Mecha Reliquary Knight'
+displayName: 'Mecha Reliquary Gothic'
 category: 4. Futuristic Medieval & Rune Tech
 domain: futuristic medieval
 version: 1

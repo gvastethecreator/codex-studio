@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-011
 packId: pack_17
 name: Fogbound Witch Trial
+styleAnchors:
+  - 'Fogbound Witch Trial'
+displayName: 'Fogbound Witch Gothic'
 category: 2. Hunter Gothic & Plague Courts
 domain: gothic fantasy
 version: 1

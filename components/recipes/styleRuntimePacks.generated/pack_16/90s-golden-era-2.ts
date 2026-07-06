@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-011',
     name: 'Generational Aura Clash Style',
+    displayName: 'Generational Aura Clash',
+    styleAnchors: ['Generational Aura Clash Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-012',
     name: 'Sparkling Magical Chorus Style',
+    displayName: 'Sparkling Magical Chorus',
+    styleAnchors: ['Sparkling Magical Chorus Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-014',
     name: 'Jazzy Space-Noir Melancholy Style',
+    displayName: 'Jazzy Space-Noir Melancholy',
+    styleAnchors: ['Jazzy Space-Noir Melancholy Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-015',
     name: 'Philosophical Cyber-Ops Vertigo Style',
+    displayName: 'Philosophical Cyber-Ops Vertigo',
+    styleAnchors: ['Philosophical Cyber-Ops Vertigo Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-016',
     name: 'Spirit Tournament Pressure Style',
+    displayName: 'Spirit Tournament Pressure',
+    styleAnchors: ['Spirit Tournament Pressure Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-017',
     name: 'Wandering Atonement Cel Drama Style',
+    displayName: 'Wandering Atonement Cel Drama',
+    styleAnchors: ['Wandering Atonement Cel Drama Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -180,6 +192,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-018',
     name: 'Dusty Space-Western Absurdity Style',
+    displayName: 'Dusty Space-Western Absurdity',
+    styleAnchors: ['Dusty Space-Western Absurdity Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-161',
     name: 'Planetary Aura Impact Style',
+    displayName: 'Planetary Aura Impact',
+    styleAnchors: ['Planetary Aura Impact Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -238,6 +254,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-163',
     name: 'Smoke-Jazz Noir Cool Style',
+    displayName: 'Smoke-Jazz Noir Cool',
+    styleAnchors: ['Smoke-Jazz Noir Cool Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -267,6 +285,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-164',
     name: 'Wet Techno-Noir Consciousness Style',
+    displayName: 'Wet Techno-Noir Consciousness',
+    styleAnchors: ['Wet Techno-Noir Consciousness Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -296,6 +316,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-165',
     name: 'Spirit Pressure Rivalry Style',
+    displayName: 'Spirit Pressure Rivalry',
+    styleAnchors: ['Spirit Pressure Rivalry Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -325,6 +347,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-166',
     name: 'Redemption Restraint Style',
+    displayName: 'Redemption Restraint',
+    styleAnchors: ['Redemption Restraint Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -354,6 +378,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-167',
     name: 'Engine-Trail Outlaw Adventure Style',
+    displayName: 'Engine-Trail Outlaw Adventure',
+    styleAnchors: ['Engine-Trail Outlaw Adventure Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -383,6 +409,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-169',
     name: 'Wired Identity Dissolution Style',
+    displayName: 'Wired Identity Dissolution',
+    styleAnchors: ['Wired Identity Dissolution Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -412,6 +440,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-170',
     name: 'Storybook Seal Magic Style',
+    displayName: 'Storybook Seal Magic',
+    styleAnchors: ['Storybook Seal Magic Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -441,6 +471,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-173',
     name: 'Dust-Warm Pacifist Melancholy Style',
+    displayName: 'Dust-Warm Pacifist Melancholy',
+    styleAnchors: ['Dust-Warm Pacifist Melancholy Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -470,6 +502,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-174',
     name: 'Iron Ruin Tragedy Style',
+    displayName: 'Iron Ruin Tragedy',
+    styleAnchors: ['Iron Ruin Tragedy Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -499,6 +533,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-175',
     name: 'Rose Ritual Symbolism Style',
+    displayName: 'Rose Ritual Symbolism',
+    styleAnchors: ['Rose Ritual Symbolism Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -528,6 +564,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-179',
     name: 'Warm Rivalry Portrait Style',
+    displayName: 'Warm Rivalry Portrait',
+    styleAnchors: ['Warm Rivalry Portrait Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -557,6 +595,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-180',
     name: 'Precision Action Cel Style',
+    displayName: 'Precision Action Cel',
+    styleAnchors: ['Precision Action Cel Style'],
     category: '2. 90s Golden Era',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, flat modern moe, generic shonen screenshot, messy VHS noise, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',

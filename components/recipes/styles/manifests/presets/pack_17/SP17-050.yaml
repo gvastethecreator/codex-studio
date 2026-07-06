@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-050
 packId: pack_17
 name: Wormwood Carnival Feudal
+styleAnchors:
+  - 'Wormwood Carnival Feudal'
+displayName: 'Wormwood Carnival Gothic'
 category: 7. Weird Medieval Editorial
 domain: carnival gothic fantasy
 version: 1

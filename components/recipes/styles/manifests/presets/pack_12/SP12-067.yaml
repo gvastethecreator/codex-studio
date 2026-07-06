@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-067
 packId: pack_12
 name: Bronze Marsh Siege Camp
+styleAnchors:
+  - 'Bronze Marsh Siege Camp'
+displayName: 'Bronze Marsh Siegecraft'
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:

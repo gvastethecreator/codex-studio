@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-055
 packId: pack_12
 name: Orchid Palace Puzzle Gardens
+styleAnchors:
+  - 'Orchid Palace Puzzle Gardens'
+displayName: 'Orchid Palace Puzzle Garden'
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:

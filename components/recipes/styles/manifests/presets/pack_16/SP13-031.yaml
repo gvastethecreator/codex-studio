@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-031
 packId: pack_16
 name: Institutional Liminal Dread Style
+styleAnchors:
+  - 'Institutional Liminal Dread Style'
+displayName: 'Institutional Liminal Dread'
 category: 7. Horror
 version: 1
 supportedTasks:

@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-001',
     name: 'Ashen Soulslike Ruins',
+    displayName: 'Ashen Relic Fantasy',
+    styleAnchors: ['Ashen Soulslike Ruins'],
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
@@ -36,6 +38,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-002',
     name: 'Gilded Rune Epic',
+    displayName: 'Gilded Rune Mythic',
+    styleAnchors: ['Gilded Rune Epic'],
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
@@ -66,6 +70,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-003',
     name: 'Grimdark Siege Chronicle',
+    displayName: 'Grimdark War Chronicle',
+    styleAnchors: ['Grimdark Siege Chronicle'],
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
@@ -125,6 +131,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-005',
     name: 'Black Iron Crusade',
+    displayName: 'Black Iron Relic Fantasy',
+    styleAnchors: ['Black Iron Crusade'],
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:
@@ -155,6 +163,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-006',
     name: 'Ruined Tapestry Legend',
+    displayName: 'Ruined Tapestry Mythic',
+    styleAnchors: ['Ruined Tapestry Legend'],
     category: '1. Dark Fantasy Realms',
     domain: 'medieval fantasy',
     negativePrompt:

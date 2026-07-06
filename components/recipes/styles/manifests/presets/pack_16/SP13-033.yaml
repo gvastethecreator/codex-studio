@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP13-033
 packId: pack_16
 name: Grotesque Marionette Spotlight Style
+styleAnchors:
+  - 'Grotesque Marionette Spotlight Style'
+displayName: 'Grotesque Marionette Spotlight'
 category: 7. Horror
 version: 1
 supportedTasks:

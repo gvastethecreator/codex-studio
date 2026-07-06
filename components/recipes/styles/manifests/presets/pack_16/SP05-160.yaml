@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-160
 packId: pack_16
 name: Rose Elite Comedy Style
+styleAnchors:
+  - 'Rose Elite Comedy Style'
+displayName: 'Rose Elite Comedy'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

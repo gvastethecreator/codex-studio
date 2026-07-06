@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-064
 packId: pack_12
 name: Iron Orchard Defense Night
+styleAnchors:
+  - 'Iron Orchard Defense Night'
+displayName: 'Iron Orchard Defense'
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-052
 packId: pack_12
 name: Rift Bridge Capture Point
+styleAnchors:
+  - 'Rift Bridge Capture Point'
+displayName: 'Rift Bridge Control Point'
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-263
 packId: pack_05
 name: Black Signal Nihilism Style
+styleAnchors:
+  - 'Black Signal Nihilism Style'
+displayName: 'Black Signal Nihilism'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

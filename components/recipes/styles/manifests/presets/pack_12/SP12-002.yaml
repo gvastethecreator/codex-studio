@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-002
 packId: pack_12
 name: Bioluminescent Jungle Raid
+styleAnchors:
+  - 'Bioluminescent Jungle Raid'
+displayName: 'Bioluminescent Jungle Tactics'
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:

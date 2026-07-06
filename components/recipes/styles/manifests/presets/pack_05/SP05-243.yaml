@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-243
 packId: pack_05
 name: Classic OVA Quest Tapestry Style
+styleAnchors:
+  - 'Classic OVA Quest Tapestry Style'
+displayName: 'Classic OVA Quest Tapestry'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

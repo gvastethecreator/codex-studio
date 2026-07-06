@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-036
 packId: pack_17
 name: Starved Dungeon Pilgrimage
+styleAnchors:
+  - 'Starved Dungeon Pilgrimage'
+displayName: 'Starved Dungeon Gothic'
 category: 6. Monochrome Tarot & Bestiary Plates
 domain: survival dungeon fantasy
 version: 1

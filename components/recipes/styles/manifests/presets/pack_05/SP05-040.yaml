@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-040
 packId: pack_05
 name: Blade Field Urban Fantasy
+styleAnchors:
+  - 'Blade Field Urban Fantasy'
+displayName: 'Urban Blade Field'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

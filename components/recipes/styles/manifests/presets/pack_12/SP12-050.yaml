@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-050
 packId: pack_12
 name: Polar Signal Tower Outbreak
+styleAnchors:
+  - 'Polar Signal Tower Outbreak'
+displayName: 'Polar Signal Outbreak'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-016
 packId: pack_12
 name: Shadow Opera Assassin Court
+styleAnchors:
+  - 'Shadow Opera Assassin Court'
+displayName: 'Shadow Opera Assassins'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

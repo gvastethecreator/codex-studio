@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-069
 packId: pack_05
 name: Procedural Low-Fantasy Grit Style
+styleAnchors:
+  - 'Procedural Low-Fantasy Grit Style'
+displayName: 'Procedural Low-Fantasy Grit'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-284
 packId: pack_16
 name: Airborne Wonder Adventure Style
+styleAnchors:
+  - 'Airborne Wonder Adventure Style'
+displayName: 'Airborne Wonder Adventure'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

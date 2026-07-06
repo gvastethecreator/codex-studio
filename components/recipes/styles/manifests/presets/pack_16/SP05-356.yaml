@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-356
 packId: pack_16
 name: Graphic Impact Duel Style
+styleAnchors:
+  - 'Graphic Impact Duel Style'
+displayName: 'Graphic Impact Duel'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

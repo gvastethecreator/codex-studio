@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-034
 packId: pack_12
 name: Crimson Canyon Sniper Run
+styleAnchors:
+  - 'Crimson Canyon Sniper Run'
+displayName: 'Crimson Canyon Sniper'
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:

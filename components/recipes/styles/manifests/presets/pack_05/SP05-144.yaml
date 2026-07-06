@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-144
 packId: pack_05
 name: Samurai Champloo - Lo-Fi Edo Swagger
+styleAnchors:
+  - 'Samurai Champloo - Lo-Fi Edo Swagger'
+displayName: 'Lo-Fi Edo Swagger'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-066
 packId: pack_05
 name: Invasive Anatomy Thriller Style
+styleAnchors:
+  - 'Invasive Anatomy Thriller Style'
+displayName: 'Invasive Anatomy Thriller'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

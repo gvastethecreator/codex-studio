@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-025
 packId: pack_05
 name: Shadow Notebook Thriller
+styleAnchors:
+  - 'Shadow Notebook Thriller'
+displayName: 'Psychological Notebook Noir'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

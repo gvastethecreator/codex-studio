@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-121
 packId: pack_05
 name: Demon Slayer - Lantern Bloodline Sword Ballet
+styleAnchors:
+  - 'Demon Slayer - Lantern Bloodline Sword Ballet'
+displayName: 'Lantern Bloodline Sword Ballet'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

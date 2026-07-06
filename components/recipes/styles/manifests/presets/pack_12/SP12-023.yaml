@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-023
 packId: pack_12
 name: Orbital Garden Colony Builder
+styleAnchors:
+  - 'Orbital Garden Colony Builder'
+displayName: 'Orbital Garden Builder'
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:

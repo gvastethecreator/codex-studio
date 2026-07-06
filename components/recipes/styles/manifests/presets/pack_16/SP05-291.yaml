@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-291
 packId: pack_16
 name: Delicate Reconciliation Style
+styleAnchors:
+  - 'Delicate Reconciliation Style'
+displayName: 'Delicate Reconciliation'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-271
 packId: pack_05
 name: Sun-Reclaimed Concrete Mystery Style
+styleAnchors:
+  - 'Sun-Reclaimed Concrete Mystery Style'
+displayName: 'Sun-Reclaimed Concrete Mystery'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

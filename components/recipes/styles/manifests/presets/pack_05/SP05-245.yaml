@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-245
 packId: pack_05
 name: The Vision of Escaflowne - Windblown Tarot Fantasy
+styleAnchors:
+  - 'The Vision of Escaflowne - Windblown Tarot Fantasy'
+displayName: 'Windblown Tarot Fantasy'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

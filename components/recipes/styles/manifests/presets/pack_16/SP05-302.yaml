@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-302
 packId: pack_16
 name: Melancholic Space Corsair Style
+styleAnchors:
+  - 'Melancholic Space Corsair Style'
+displayName: 'Melancholic Space Corsair'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

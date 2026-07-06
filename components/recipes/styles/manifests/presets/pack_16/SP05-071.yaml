@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-071
 packId: pack_16
 name: Warm Liminal Reverie Fantasy Style
+styleAnchors:
+  - 'Warm Liminal Reverie Fantasy Style'
+displayName: 'Warm Liminal Reverie Fantasy'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:

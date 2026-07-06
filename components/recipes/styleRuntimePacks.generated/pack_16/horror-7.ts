@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-031',
     name: 'Institutional Liminal Dread Style',
+    displayName: 'Institutional Liminal Dread',
+    styleAnchors: ['Institutional Liminal Dread Style'],
     category: '7. Horror',
     negativePrompt:
       'photoreal, comedy, bright-pastel, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-032',
     name: 'Crimson Celestial Omen Style',
+    displayName: 'Crimson Celestial Omen',
+    styleAnchors: ['Crimson Celestial Omen Style'],
     category: '7. Horror',
     negativePrompt:
       'photoreal, cute-style, vivid-rainbow, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-033',
     name: 'Grotesque Marionette Spotlight Style',
+    displayName: 'Grotesque Marionette Spotlight',
+    styleAnchors: ['Grotesque Marionette Spotlight Style'],
     category: '7. Horror',
     negativePrompt:
       'photoreal, slapstick, cheerful-colors, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-034',
     name: 'Deep Void Whisper Style',
+    displayName: 'Deep Void Whisper',
+    styleAnchors: ['Deep Void Whisper Style'],
     category: '7. Horror',
     negativePrompt:
       'photoreal, daylight-bright, action-shonen, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-035',
     name: 'Demonic Ritual Mask Geometry Style',
+    displayName: 'Demonic Ritual Mask Geometry',
+    styleAnchors: ['Demonic Ritual Mask Geometry Style'],
     category: '7. Horror',
     negativePrompt:
       'photoreal, cute-style, bright-daylight, watermark, text, logo, cheap jump scare, splatter-only horror, photoreal monster render, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text, signature',

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-052
 packId: pack_17
 name: Black Parchment Siege Omen
+styleAnchors:
+  - 'Black Parchment Siege Omen'
+displayName: 'Black Parchment Omen'
 category: 7. Weird Medieval Editorial
 domain: tactical omen fantasy
 version: 1

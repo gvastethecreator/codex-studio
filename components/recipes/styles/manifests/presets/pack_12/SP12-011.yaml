@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-011
 packId: pack_12
 name: Underwater Research Collapse
+styleAnchors:
+  - 'Underwater Research Collapse'
+displayName: 'Underwater Research Horror'
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:

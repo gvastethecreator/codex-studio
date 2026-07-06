@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-006
 packId: pack_17
 name: Ruined Tapestry Legend
+styleAnchors:
+  - 'Ruined Tapestry Legend'
+displayName: 'Ruined Tapestry Mythic'
 category: 1. Dark Fantasy Realms
 domain: medieval fantasy
 version: 1

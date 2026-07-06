@@ -163,6 +163,63 @@ describe('stylePresetManifests', () => {
     });
   });
 
+  it('keeps canonical preset names while exposing display names and style anchors', () => {
+    const runtimePacks: StyleRuntimePack[] = [
+      {
+        id: 'pack-a',
+        name: 'Pack A',
+        description: 'First pack',
+        presets: [
+          {
+            id: 'preset-a',
+            name: 'Scene Locked Title',
+            category: 'Cinematic',
+            style: {
+              aesthetic: 'noir anchor language',
+              subject_treatment: 'sculptural',
+              color_and_tone: 'cool',
+              lighting_and_shadow: 'hard',
+              texture_and_material: 'glass',
+              camera_and_composition: 'centered',
+              atmosphere_and_mood: 'quiet',
+              rendering_and_quality: 'high',
+            },
+          },
+        ],
+      },
+    ];
+    const packManifests = createStylePackManifests(runtimePacks);
+    const presetManifests = createStylePresetManifests(runtimePacks).map((preset) => ({
+      ...preset,
+      displayName: 'Reusable Noir System',
+      styleAnchors: ['Scene Locked Title', 'source lineage cue'],
+    }));
+    const composedPacks = composeStyleRuntimePacksFromManifests(packManifests, presetManifests);
+    const catalog = createStylePresetCatalog(packManifests, presetManifests);
+    const runtimeIndex = createStylePresetCatalogSearchIndexFromRuntimePacks(composedPacks);
+
+    expect(composedPacks[0].presets[0]).toMatchObject({
+      name: 'Scene Locked Title',
+      displayName: 'Reusable Noir System',
+      styleAnchors: ['Scene Locked Title', 'source lineage cue'],
+    });
+    expect(searchStylePresetCatalog(catalog, { query: 'reusable noir' })[0]).toMatchObject({
+      id: 'preset-a',
+      name: 'Reusable Noir System',
+      sourceName: 'Scene Locked Title',
+    });
+    expect(searchStylePresetCatalog(catalog, { query: 'source lineage cue' })[0]?.id).toBe(
+      'preset-a',
+    );
+    expect(searchStylePresetCatalogIndex(runtimeIndex, { query: 'scene locked' })[0]).toMatchObject(
+      {
+        id: 'preset-a',
+        name: 'Reusable Noir System',
+        sourceName: 'Scene Locked Title',
+      },
+    );
+  });
+
   it('creates a granular catalog with direct preset and pack lookups', () => {
     const runtimePacks: StyleRuntimePack[] = [
       {

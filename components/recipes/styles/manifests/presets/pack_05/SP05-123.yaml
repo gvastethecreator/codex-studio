@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-123
 packId: pack_05
 name: Fire Force - Cathedral Inferno Brigade
+styleAnchors:
+  - 'Fire Force - Cathedral Inferno Brigade'
+displayName: 'Cathedral Inferno Brigade'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

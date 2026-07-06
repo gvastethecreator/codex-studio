@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-027
 packId: pack_17
 name: Stress-Ink Dungeon Crawl
+styleAnchors:
+  - 'Stress-Ink Dungeon Crawl'
+displayName: 'Stress-Ink Dungeon'
 category: 5. Apocalyptic Wargame & Inked Dungeon
 domain: inked dungeon drama
 version: 1

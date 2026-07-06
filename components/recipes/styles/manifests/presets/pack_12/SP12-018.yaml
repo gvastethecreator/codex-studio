@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-018
 packId: pack_12
 name: Storm Citadel Defense Grid
+styleAnchors:
+  - 'Storm Citadel Defense Grid'
+displayName: 'Storm Citadel Defense'
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:

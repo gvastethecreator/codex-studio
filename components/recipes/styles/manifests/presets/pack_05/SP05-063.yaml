@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-063
 packId: pack_05
 name: Crimson Gothic Authority Style
+styleAnchors:
+  - 'Crimson Gothic Authority Style'
+displayName: 'Crimson Gothic Authority'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

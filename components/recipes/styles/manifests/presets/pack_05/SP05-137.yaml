@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-137
 packId: pack_05
 name: Dr. Stone - Science Kingdom Action Blueprint
+styleAnchors:
+  - 'Dr. Stone - Science Kingdom Action Blueprint'
+displayName: 'Science Kingdom Action Blueprint'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

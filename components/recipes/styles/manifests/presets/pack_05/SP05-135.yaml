@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-135
 packId: pack_05
 name: Undead Unluck - Rule-Breaker Curse Impact
+styleAnchors:
+  - 'Undead Unluck - Rule-Breaker Curse Impact'
+displayName: 'Rule-Breaker Curse Impact'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

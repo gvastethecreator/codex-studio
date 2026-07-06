@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-061
 packId: pack_05
 name: Crosshatched Doom Weight Style
+styleAnchors:
+  - 'Crosshatched Doom Weight Style'
+displayName: 'Crosshatched Doom Weight'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

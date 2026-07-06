@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-255
 packId: pack_05
 name: Magic Knight Rayearth - Gem-Engine Rescue Quest
+styleAnchors:
+  - 'Magic Knight Rayearth - Gem-Engine Rescue Quest'
+displayName: 'Gem-Engine Rescue Quest'
 category: 3. Isekai & High Fantasy
 version: 1
 supportedTasks:

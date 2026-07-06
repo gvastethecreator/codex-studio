@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-372
 packId: pack_16
 name: Allegorical Spotlight Confrontation Style
+styleAnchors:
+  - 'Allegorical Spotlight Confrontation Style'
+displayName: 'Allegorical Spotlight Confrontation'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

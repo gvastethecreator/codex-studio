@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-310
 packId: pack_16
 name: Competent Space Pulp Style
+styleAnchors:
+  - 'Competent Space Pulp Style'
+displayName: 'Competent Space Pulp'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-349
 packId: pack_16
 name: Generational Sports Resolve Style
+styleAnchors:
+  - 'Generational Sports Resolve Style'
+displayName: 'Generational Sports Resolve'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

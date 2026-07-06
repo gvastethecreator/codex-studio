@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-141
 packId: pack_16
 name: Gothic Resonance Punk Style
+styleAnchors:
+  - 'Gothic Resonance Punk Style'
+displayName: 'Gothic Resonance Punk'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-270
 packId: pack_05
 name: Cursed Severance Compassion Style
+styleAnchors:
+  - 'Cursed Severance Compassion Style'
+displayName: 'Cursed Severance Compassion'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

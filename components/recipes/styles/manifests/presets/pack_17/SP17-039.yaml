@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-039
 packId: pack_17
 name: Scholastic Marginalia Beasts
+styleAnchors:
+  - 'Scholastic Marginalia Beasts'
+displayName: 'Scholastic Marginalia Bestiary'
 category: 6. Monochrome Tarot & Bestiary Plates
 domain: medieval marginalia fantasy
 version: 1

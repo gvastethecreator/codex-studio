@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-265
 packId: pack_05
 name: Rose-Black Baroque Decadence Style
+styleAnchors:
+  - 'Rose-Black Baroque Decadence Style'
+displayName: 'Rose-Black Baroque Decadence'
 category: 4. Dark Fantasy & Seinen
 version: 1
 supportedTasks:

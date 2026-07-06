@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-073',
     name: 'Wandering Clockwork Hearth Style',
+    displayName: 'Wandering Clockwork Hearth',
+    styleAnchors: ['Wandering Clockwork Hearth Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-074',
     name: 'Skyglow Longing Drama Style',
+    displayName: 'Skyglow Longing Drama',
+    styleAnchors: ['Skyglow Longing Drama Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-075',
     name: 'Rainlight Threshold Romance Style',
+    displayName: 'Rainlight Threshold Romance',
+    styleAnchors: ['Rainlight Threshold Romance Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-077',
     name: 'Mirror Identity Collapse Thriller Style',
+    displayName: 'Mirror Identity Collapse Thriller',
+    styleAnchors: ['Mirror Identity Collapse Thriller Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-078',
     name: 'Otomo Light-Trail Collapse Style',
+    displayName: 'Otomo Light-Trail Collapse',
+    styleAnchors: ['Otomo Light-Trail Collapse Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-079',
     name: 'Hyperkinetic Cosmic Velocity Style',
+    displayName: 'Hyperkinetic Cosmic Velocity',
+    styleAnchors: ['Hyperkinetic Cosmic Velocity Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -209,6 +221,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-281',
     name: 'Temporal Memory Cinema Style',
+    displayName: 'Temporal Memory Cinema',
+    styleAnchors: ['Temporal Memory Cinema Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -238,6 +252,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-282',
     name: 'Social Humanist Warmth Style',
+    displayName: 'Social Humanist Warmth',
+    styleAnchors: ['Social Humanist Warmth Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -267,6 +283,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-284',
     name: 'Airborne Wonder Adventure Style',
+    displayName: 'Airborne Wonder Adventure',
+    styleAnchors: ['Airborne Wonder Adventure Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -296,6 +314,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-285',
     name: 'Eco-Prophetic Wind Style',
+    displayName: 'Eco-Prophetic Wind',
+    styleAnchors: ['Eco-Prophetic Wind Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -325,6 +345,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-286',
     name: 'Seasonal Intimacy Realism Style',
+    displayName: 'Seasonal Intimacy Realism',
+    styleAnchors: ['Seasonal Intimacy Realism Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -354,6 +376,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-288',
     name: 'Elastic Summer Time Style',
+    displayName: 'Elastic Summer Time',
+    styleAnchors: ['Elastic Summer Time Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -383,6 +407,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-290',
     name: 'Paramilitary Melancholy Style',
+    displayName: 'Paramilitary Melancholy',
+    styleAnchors: ['Paramilitary Melancholy Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -412,6 +438,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-291',
     name: 'Delicate Reconciliation Style',
+    displayName: 'Delicate Reconciliation',
+    styleAnchors: ['Delicate Reconciliation Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -441,6 +469,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-292',
     name: 'Historical Glam Punk Performance Style',
+    displayName: 'Historical Glam Punk Performance',
+    styleAnchors: ['Historical Glam Punk Performance Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -470,6 +500,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-293',
     name: 'Rough Mythic Density Style',
+    displayName: 'Rough Mythic Density',
+    styleAnchors: ['Rough Mythic Density Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -499,6 +531,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-295',
     name: 'Quiet Musical Distance Style',
+    displayName: 'Quiet Musical Distance',
+    styleAnchors: ['Quiet Musical Distance Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -528,6 +562,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-296',
     name: 'Humanist Art Deco Retrofuture Style',
+    displayName: 'Humanist Art Deco Retrofuture',
+    styleAnchors: ['Humanist Art Deco Retrofuture Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -557,6 +593,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-297',
     name: 'Hyperobserved Rain Intimacy Style',
+    displayName: 'Hyperobserved Rain Intimacy',
+    styleAnchors: ['Hyperobserved Rain Intimacy Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -586,6 +624,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-071',
     name: 'Warm Liminal Reverie Fantasy Style',
+    displayName: 'Warm Liminal Reverie Fantasy',
+    styleAnchors: ['Warm Liminal Reverie Fantasy Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -615,6 +655,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-287',
     name: 'Digital Pop Opera Style',
+    displayName: 'Digital Pop Opera',
+    styleAnchors: ['Digital Pop Opera Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -644,6 +686,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-300',
     name: 'Hypergraphic Chromatic Action Style',
+    displayName: 'Hypergraphic Chromatic Action',
+    styleAnchors: ['Hypergraphic Chromatic Action Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -673,6 +717,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-072',
     name: 'Eco-Mythic Conflict Epic Style',
+    displayName: 'Eco-Mythic Conflict Epic',
+    styleAnchors: ['Eco-Mythic Conflict Epic Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -702,6 +748,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-076',
     name: 'Cinematic Dream-Collapse Surrealism Style',
+    displayName: 'Cinematic Dream-Collapse Surrealism',
+    styleAnchors: ['Cinematic Dream-Collapse Surrealism Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -731,6 +779,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-283',
     name: 'Metaphysical Mourning Style',
+    displayName: 'Metaphysical Mourning',
+    styleAnchors: ['Metaphysical Mourning Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -760,6 +810,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-294',
     name: 'Mutating Psychedelic Style',
+    displayName: 'Mutating Psychedelic',
+    styleAnchors: ['Mutating Psychedelic Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -789,6 +841,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-298',
     name: 'Nocturnal Social Whirl Style',
+    displayName: 'Nocturnal Social Whirl',
+    styleAnchors: ['Nocturnal Social Whirl Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -818,6 +872,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-299',
     name: 'Dream Invasion Carnival Style',
+    displayName: 'Dream Invasion Carnival',
+    styleAnchors: ['Dream Invasion Carnival Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -847,6 +903,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-289',
     name: 'Ascetic Gothic Silence Style',
+    displayName: 'Ascetic Gothic Silence',
+    styleAnchors: ['Ascetic Gothic Silence Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',

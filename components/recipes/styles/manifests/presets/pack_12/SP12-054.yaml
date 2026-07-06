@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP12-054
 packId: pack_12
 name: Copper Canyon Train Robbery
+styleAnchors:
+  - 'Copper Canyon Train Robbery'
+displayName: 'Copper Canyon Train Heist'
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:

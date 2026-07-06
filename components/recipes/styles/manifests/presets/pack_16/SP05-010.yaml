@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-010
 packId: pack_16
 name: Round Adventure Slapstick Style
+styleAnchors:
+  - 'Round Adventure Slapstick Style'
+displayName: 'Round Adventure Slapstick'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

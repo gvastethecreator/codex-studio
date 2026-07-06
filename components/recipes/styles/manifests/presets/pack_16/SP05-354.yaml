@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-354
 packId: pack_16
 name: Telemetry Apex Precision Style
+styleAnchors:
+  - 'Telemetry Apex Precision Style'
+displayName: 'Telemetry Apex Precision'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

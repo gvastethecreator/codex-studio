@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-018
 packId: pack_16
 name: Dusty Space-Western Absurdity Style
+styleAnchors:
+  - 'Dusty Space-Western Absurdity Style'
+displayName: 'Dusty Space-Western Absurdity'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

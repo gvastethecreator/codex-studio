@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-348
 packId: pack_16
 name: Summer Precision Duel Style
+styleAnchors:
+  - 'Summer Precision Duel Style'
+displayName: 'Summer Precision Duel'
 category: 5. Sports, Competition & Performance
 version: 1
 supportedTasks:

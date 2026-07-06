@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-127
 packId: pack_05
 name: Hell's Paradise - Poison Garden Executioner
+styleAnchors:
+  - "Hell's Paradise - Poison Garden Executioner"
+displayName: 'Poison Garden Executioner'
 category: 1. Modern Shonen & Action
 version: 1
 supportedTasks:

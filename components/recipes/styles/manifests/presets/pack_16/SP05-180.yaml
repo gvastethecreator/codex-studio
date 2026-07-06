@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-180
 packId: pack_16
 name: Precision Action Cel Style
+styleAnchors:
+  - 'Precision Action Cel Style'
+displayName: 'Precision Action Cel'
 category: 2. 90s Golden Era
 version: 1
 supportedTasks:

@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-343',
     name: 'Vertical Team Rally Energy Style',
+    displayName: 'Vertical Team Rally Energy',
+    styleAnchors: ['Vertical Team Rally Energy Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-344',
     name: 'Ego Pressure Breakout Style',
+    displayName: 'Ego Pressure Breakout',
+    styleAnchors: ['Ego Pressure Breakout Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-345',
     name: 'Nineties Physical Rivalry Style',
+    displayName: 'Nineties Physical Rivalry',
+    styleAnchors: ['Nineties Physical Rivalry Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-346',
     name: 'Phantom Teamplay Speed Style',
+    displayName: 'Phantom Teamplay Speed',
+    styleAnchors: ['Phantom Teamplay Speed Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-347',
     name: 'Uphill Endurance Breakaway Style',
+    displayName: 'Uphill Endurance Breakaway',
+    styleAnchors: ['Uphill Endurance Breakaway Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-348',
     name: 'Summer Precision Duel Style',
+    displayName: 'Summer Precision Duel',
+    styleAnchors: ['Summer Precision Duel Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -180,6 +192,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-349',
     name: 'Generational Sports Resolve Style',
+    displayName: 'Generational Sports Resolve',
+    styleAnchors: ['Generational Sports Resolve Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-350',
     name: 'Aquatic Relay Glow Style',
+    displayName: 'Aquatic Relay Glow',
+    styleAnchors: ['Aquatic Relay Glow Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -238,6 +254,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-351',
     name: 'Long-Distance Night Endurance Style',
+    displayName: 'Long-Distance Night Endurance',
+    styleAnchors: ['Long-Distance Night Endurance Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -267,6 +285,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-352',
     name: 'Neon Trick Flow Style',
+    displayName: 'Neon Trick Flow',
+    styleAnchors: ['Neon Trick Flow Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -296,6 +316,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-353',
     name: 'Nocturnal Drift Tension Style',
+    displayName: 'Nocturnal Drift Tension',
+    styleAnchors: ['Nocturnal Drift Tension Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -325,6 +347,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-354',
     name: 'Telemetry Apex Precision Style',
+    displayName: 'Telemetry Apex Precision',
+    styleAnchors: ['Telemetry Apex Precision Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -354,6 +378,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-355',
     name: 'Festive Sprint Idol Energy Style',
+    displayName: 'Festive Sprint Idol Energy',
+    styleAnchors: ['Festive Sprint Idol Energy Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -383,6 +409,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-356',
     name: 'Graphic Impact Duel Style',
+    displayName: 'Graphic Impact Duel',
+    styleAnchors: ['Graphic Impact Duel Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -412,6 +440,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-357',
     name: 'Spin Pressure Distortion Style',
+    displayName: 'Spin Pressure Distortion',
+    styleAnchors: ['Spin Pressure Distortion Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -441,6 +471,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-358',
     name: 'Comeback Grit Impact Style',
+    displayName: 'Comeback Grit Impact',
+    styleAnchors: ['Comeback Grit Impact Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -470,6 +502,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-359',
     name: 'Vulnerable Performance Spin Style',
+    displayName: 'Vulnerable Performance Spin',
+    styleAnchors: ['Vulnerable Performance Spin Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -499,6 +533,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-360',
     name: 'Poetic Reflex Focus Style',
+    displayName: 'Poetic Reflex Focus',
+    styleAnchors: ['Poetic Reflex Focus Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -528,6 +564,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-361',
     name: 'Incremental Method Training Style',
+    displayName: 'Incremental Method Training',
+    styleAnchors: ['Incremental Method Training Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -557,6 +595,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-362',
     name: 'Glam Precision Rivalry Style',
+    displayName: 'Glam Precision Rivalry',
+    styleAnchors: ['Glam Precision Rivalry Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -586,6 +626,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-363',
     name: 'Synchronized Aerial Team Style',
+    displayName: 'Synchronized Aerial Team',
+    styleAnchors: ['Synchronized Aerial Team Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -615,6 +657,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-364',
     name: 'Obsessive Line Rehearsal Style',
+    displayName: 'Obsessive Line Rehearsal',
+    styleAnchors: ['Obsessive Line Rehearsal Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -644,6 +688,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-365',
     name: 'Formal Partner Motion Style',
+    displayName: 'Formal Partner Motion',
+    styleAnchors: ['Formal Partner Motion Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -673,6 +719,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-366',
     name: 'Traditional Ensemble Resonance Style',
+    displayName: 'Traditional Ensemble Resonance',
+    styleAnchors: ['Traditional Ensemble Resonance Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -702,6 +750,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-367',
     name: 'Brass Section Tender Precision Style',
+    displayName: 'Brass Section Tender Precision',
+    styleAnchors: ['Brass Section Tender Precision Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -731,6 +781,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-368',
     name: 'Midnight Jazz Ascension Style',
+    displayName: 'Midnight Jazz Ascension',
+    styleAnchors: ['Midnight Jazz Ascension Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -760,6 +812,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-369',
     name: 'Raw Youth Feedback Style',
+    displayName: 'Raw Youth Feedback',
+    styleAnchors: ['Raw Youth Feedback Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -789,6 +843,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-370',
     name: 'Intimate Indie Confession Style',
+    displayName: 'Intimate Indie Confession',
+    styleAnchors: ['Intimate Indie Confession Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -818,6 +874,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-372',
     name: 'Allegorical Spotlight Confrontation Style',
+    displayName: 'Allegorical Spotlight Confrontation',
+    styleAnchors: ['Allegorical Spotlight Confrontation Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -847,6 +905,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-371',
     name: 'Virtuoso Ensemble Whirl Style',
+    displayName: 'Virtuoso Ensemble Whirl',
+    styleAnchors: ['Virtuoso Ensemble Whirl Style'],
     category: '5. Sports, Competition & Performance',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, photoreal sports photo, generic mascot art, bad anatomy exaggeration, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',

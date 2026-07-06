@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP17-026
 packId: pack_17
 name: Gothic Miniature Warfront
+styleAnchors:
+  - 'Gothic Miniature Warfront'
+displayName: 'Gothic Miniature Wargame'
 category: 5. Apocalyptic Wargame & Inked Dungeon
 domain: gothic wargame fantasy
 version: 1

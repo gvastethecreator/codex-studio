@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-320
 packId: pack_16
 name: Charismatic Space Rogue Pulp Style
+styleAnchors:
+  - 'Charismatic Space Rogue Pulp Style'
+displayName: 'Charismatic Space Rogue Pulp'
 category: 1. 70s & 80s Retro Anime
 version: 1
 supportedTasks:

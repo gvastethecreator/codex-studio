@@ -2,6 +2,9 @@ schemaVersion: 1
 id: SP05-027
 packId: pack_16
 name: Spiral Overdrive Bravado Style
+styleAnchors:
+  - 'Spiral Overdrive Bravado Style'
+displayName: 'Spiral Overdrive Bravado'
 category: 3. 2000s Classics
 version: 1
 supportedTasks:

@@ -6,6 +6,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-147',
     name: 'Winter Friction Romance Style',
+    displayName: 'Winter Friction Romance',
+    styleAnchors: ['Winter Friction Romance Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -35,6 +37,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-149',
     name: 'Clan Comedy Escalation Style',
+    displayName: 'Clan Comedy Escalation',
+    styleAnchors: ['Clan Comedy Escalation Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -64,6 +68,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-151',
     name: 'Pop Reality Bend Style',
+    displayName: 'Pop Reality Bend',
+    styleAnchors: ['Pop Reality Bend Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -93,6 +99,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-152',
     name: 'Anachronistic Deadpan Mayhem Style',
+    displayName: 'Anachronistic Deadpan Mayhem',
+    styleAnchors: ['Anachronistic Deadpan Mayhem Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -122,6 +130,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-154',
     name: 'Clinical Nocturne Tactics Style',
+    displayName: 'Clinical Nocturne Tactics',
+    styleAnchors: ['Clinical Nocturne Tactics Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -151,6 +161,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-156',
     name: 'Summer Loop Paranoia Style',
+    displayName: 'Summer Loop Paranoia',
+    styleAnchors: ['Summer Loop Paranoia Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -180,6 +192,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-157',
     name: 'Vertical Speed Rebellion Style',
+    displayName: 'Vertical Speed Rebellion',
+    styleAnchors: ['Vertical Speed Rebellion Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -209,6 +223,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-159',
     name: 'Black-Lipstick Melodrama Punk Style',
+    displayName: 'Black-Lipstick Melodrama Punk',
+    styleAnchors: ['Black-Lipstick Melodrama Punk Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -238,6 +254,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-160',
     name: 'Rose Elite Comedy Style',
+    displayName: 'Rose Elite Comedy',
+    styleAnchors: ['Rose Elite Comedy Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -267,6 +285,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-024',
     name: 'Alchemical Moral Geometry Style',
+    displayName: 'Alchemical Moral Geometry',
+    styleAnchors: ['Alchemical Moral Geometry Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -296,6 +316,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-026',
     name: 'Operatic Rebellion Strategy Style',
+    displayName: 'Operatic Rebellion Strategy',
+    styleAnchors: ['Operatic Rebellion Strategy Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -325,6 +347,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-027',
     name: 'Spiral Overdrive Bravado Style',
+    displayName: 'Spiral Overdrive Bravado',
+    styleAnchors: ['Spiral Overdrive Bravado Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -354,6 +378,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-030',
     name: 'Gothic Soul-Pop Action Style',
+    displayName: 'Gothic Soul-Pop Action',
+    styleAnchors: ['Gothic Soul-Pop Action Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -383,6 +409,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-141',
     name: 'Gothic Resonance Punk Style',
+    displayName: 'Gothic Resonance Punk',
+    styleAnchors: ['Gothic Resonance Punk Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -412,6 +440,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-145',
     name: 'Sky-Surf Romantic Momentum Style',
+    displayName: 'Sky-Surf Romantic Momentum',
+    styleAnchors: ['Sky-Surf Romantic Momentum Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -441,6 +471,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-146',
     name: 'Velvet Covenant Gothic Style',
+    displayName: 'Velvet Covenant Gothic',
+    styleAnchors: ['Velvet Covenant Gothic Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -470,6 +502,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-150',
     name: 'Crimson Threshold Embers Style',
+    displayName: 'Crimson Threshold Embers',
+    styleAnchors: ['Crimson Threshold Embers Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -499,6 +533,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-153',
     name: 'Techno-Gothic Exorcism Style',
+    displayName: 'Techno-Gothic Exorcism',
+    styleAnchors: ['Techno-Gothic Exorcism Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -528,6 +564,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-155',
     name: 'Noble Arcane Romcom Style',
+    displayName: 'Noble Arcane Romcom',
+    styleAnchors: ['Noble Arcane Romcom Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
@@ -557,6 +595,8 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-158',
     name: 'Ecological Whisper Healing Style',
+    displayName: 'Ecological Whisper Healing',
+    styleAnchors: ['Ecological Whisper Healing Style'],
     category: '3. 2000s Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, text, signature, generic isekai gloss, plastic digital anime, overbusy effects clutter, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, readable text',
