@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP12-035
 packId: pack_12
-name: Mythic Train Defense
+name: Infernal Decklift Defense
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:
@@ -11,80 +11,110 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-vertical-deckbuilder-defense
+  - render-stacked-card-board-ui
+  - camera-board-command-ui
+  - hud-full-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through defense wave readability; tactical warfront staging, defensive
-    geometry, damage history, co-op readability, and last-stand pressure, using the preset as art
-    direction rather than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original vertical defense deckbuilder captures:
+    stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips,
+    and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but
+    land as a different fictional deck-defense game with different vehicle/structure logic, unit
+    silhouettes, UI frames, symbols, and floor anatomy.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express defensive pressure, breach
-    geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle
-    scene.
+    Preserve the user's subject and transform it into a playable stacked deck-defense screenshot
+    subject: keep clear unit/object role, lane position, floor hierarchy, incoming threat, resource
+    pressure, and interaction affordances without copying source characters or named IP elements.
   color_and_tone: >-
-    Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and
-    siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use a vertical defense deckbuilder palette: infernal red, parchment beige, icy blue, gold UI
+    trim, purple monster magic, black iron, ember orange, and siege-shadow grey. Keep value grouping
+    legible at gameplay distance, with color accents behaving like lane pressure, danger, resource,
+    team, magic, or objective cues rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with golden omen light; searchlights, muzzle flashes, burning horizons, storm
-    breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes,
-    hazards, factions, or focal threats without hiding prompt content.
+    Light the image through card glow, furnace or lift-core light, spell bursts, impact flashes, and
+    clean floor separation. Lighting must clarify lane hierarchy, incoming threat, focal unit, or
+    defensive objective and avoid generic cinematic bloom that destroys board readability.
   texture_and_material: >-
-    Build surfaces from steam metal and worn upholstery; shattered masonry, scorched metal,
-    splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props,
-    clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.
+    Build surfaces from illustrated unit tokens, chunky lane sprites, custom UI frames, metal lift
+    platforms, siege machinery, chains, furnace metal, and painterly fantasy effects. Materials
+    should feel like in-engine game assets captured during play, with enough texture identity to
+    separate units, lanes, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage
-    history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with 2D stacked-board hierarchy: multiple defended floors or lift decks, card
+    silhouettes at bottom, enemy intent icons, resource pips, and one clear defensive decision. All
+    card and UI markings must stay wordless and numberless.
   atmosphere_and_mood: >-
-    Keep the mood legendary defense under impossible pressure; urgent, battered, heroic, grim,
-    tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent
-    when prompt X asks for it, but the preset should not force a new storyline.
+    Carry an original infernal decklift mood: strategic, hellish, playful, crunchy, siege-like, and
+    board-game readable.
   rendering_and_quality: >-
-    Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic
-    poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as coherent in-engine vertical deck-defense screenshot style, not concept art: card hand,
+    resource pips, draw pile, unit state icons, and floor indicators are core, but no readable card
+    text, no stat numbers, no exact train-floor UI, and no fake logos. Maintain heavy-denoise
+    clarity and crisp focal hierarchy.
   key_features: >-
-    Mythic, Train, Defense; defense wave readability; smoke grey, worn iron, battlefield blue, ember
-    orange, frost white, and siege-banner accents; golden omen light; steam metal and worn
-    upholstery; carriage rhythm, track vanishing points, and platform chokeholds; legendary defense
-    under impossible pressure
+    original vertical defense deckbuilder gameplay screenshots; stacked lane combat; infernal lift
+    floors; monster or unit tokens; card hand silhouettes; resource pips; readable defense choices;
+    infernal red, parchment beige, icy blue, gold trim, purple magic, black iron; furnace light and
+    floor separation; 2D stacked-board hierarchy with defended floors, enemy intent icons, resource
+    pips, and one clear defensive decision; HUD guidance: wordless card hand, resource pips, draw
+    pile, unit state icons, and floor indicators only
   creative_brief: >-
-    Apply Mythic Train Defense as a reusable video-game art-direction router over prompt X: preserve
-    the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Infernal Decklift Defense as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through vertical defense deckbuilder references: stacked lane camera,
+    card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board
+    state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning,
+    readable text, and stat numbers.
 avoidRules:
   - watermark
-  - text
   - logo
-  - static-background
-  - blur
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - chaotic poster overcrowding
-  - unreadable battle smoke
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct Monster Train clone
+  - readable card text
+  - stat numbers
+  - exact train floor UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-035.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, static-background, blur, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster
-    overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI,
-    official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, direct Monster Train clone, readable card text, stat
+    numbers, exact train floor UI
+  referenceGame: Original vertical defense deckbuilder, Monster Train-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    card hand, mana/ember, draw pile, unit stats, and floor indicators are essential and should
+    remain coherent
+  renderFamily: stacked-card-board-ui
+  cameraFamily: board-command-ui
+  hudMode: full-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -93,8 +123,19 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sieges-warfronts-and-last-stands
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-vertical-deckbuilder-defense
+    - render-stacked-card-board-ui
+    - camera-board-command-ui
+    - hud-full-hud
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Infernal Decklift Defense
+styleAnchors:
+  - vertical roguelike deckbuilder gameplay screenshots
+  - stacked lane defense card battle
+  - Infernal Decklift Defense

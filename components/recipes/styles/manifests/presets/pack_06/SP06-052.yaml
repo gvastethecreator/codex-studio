@@ -48,7 +48,7 @@ visualDna:
     Finish with Voxel art finish with cube unit discipline and playful AO depth; finish with clean
     digital intent, readable shapes, purposeful artifacts, and no random over-rendered sludge, clean
     denoised surfaces where appropriate, and enough craft evidence to make the medium recognizable.
-  key_features: '3D cubes; Vibrant; Surface treatment follows Voxel Art''s material cues: Cubes; Blocky'
+  key_features: "3D cubes; Vibrant; Surface treatment follows Voxel Art's material cues: Cubes; Blocky"
   creative_brief: >-
     Apply Voxel Art as an art-style preset over prompt X: preserve the user's requested subject,
     then route mark-making, palette, surface, composition, mood, and final craft through 3D cubes,

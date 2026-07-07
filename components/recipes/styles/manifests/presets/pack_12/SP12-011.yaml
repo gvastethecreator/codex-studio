@@ -1,10 +1,12 @@
 schemaVersion: 1
 id: SP12-011
 packId: pack_12
-name: Underwater Research Collapse
+name: Drowned Deco Pressure Hall
 styleAnchors:
-  - 'Underwater Research Collapse'
-displayName: 'Underwater Research Horror'
+  - immersive art-deco first-person gameplay screenshots
+  - undersea pressure hall combat
+  - Drowned Deco Pressure Hall
+displayName: Drowned Deco Pressure Hall
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:
@@ -14,83 +16,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-immersive-art-deco-shooter
+  - render-first-person-immersive
+  - camera-first-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through frontier science fiction, hard-surface machinery, exposed
-    infrastructure, hazard alarms, and operational scale, using the preset as art direction rather
-    than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original immersive art-deco first-person shooter
+    captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects,
+    enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of
+    BioShock-like games, but land as a different fictional drowned city with different signage
+    shapes, enemies, weapons, UI icons, and architectural motifs.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express operational scale, machine
-    relationships, frontier labor, breach pressure, and engineered movement without requiring a mech
-    battle.
+    Preserve the user's subject and transform it into a playable drowned-deco first-person
+    screenshot subject: keep clear threat/object function, route affordance, weapon or hand scale,
+    interactable pickup logic, and readable combat spacing without copying source characters or
+    named IP elements.
   color_and_tone: >-
-    Grade the image with teal pressure shadows and red lab alarms; dust ochre, oxide orange, utility
-    white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong
-    enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use an immersive drowned-deco palette: oxidized teal, brass gold, wet black, nicotine amber,
+    coral red, sea green, and porcelain white. Keep value grouping legible at gameplay distance and
+    avoid pixel-art downgrade or generic sci-fi blue wash.
   lighting_and_shadow: >-
-    Drive the lighting with filtered beams through glass and water; bay floodlights, warning
-    strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and
-    shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt
-    content.
+    Light the image through flickering deco lamps, watery caustics, electrical arcs, muzzle flashes,
+    and deep corridor shadows. Lighting must clarify the playable route, threat, focal subject, or
+    objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from scratched armor, hydraulic joints, carbon shells, bolted plates, polymer
-    glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and
-    terrain share the same production-world logic.
+    Build surfaces from brass deco trim, cracked tiles, wet glass, peeling posters without readable
+    slogans, riveted metal, and sea growth. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from frontier science fiction, hard-surface machinery,
-    exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with first-person camera, playable corridor/atrium route, weapon/hand edge, interactable
+    object, enemy spacing, and environmental cover. The frame should read as a captured gameplay
+    moment, not a retro sprite scene or poster.
   atmosphere_and_mood: >-
-    Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically
-    precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it,
-    but the preset should not force a new storyline.
+    Carry an original drowned-deco mood: decayed, theatrical, paranoid, wet, retro-futurist, and
+    pressure-sealed.
   rendering_and_quality: >-
-    Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no
-    asset-render isolation; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as coherent first-person immersive shooter screenshot style, not pixel art and not
+    concept art: sparse contextual HUD, ability/weapon cues, pickup glow, and route lighting can
+    appear. Maintain heavy-denoise clarity, crisp focal hierarchy, and no readable signage/logos.
   key_features: >-
-    Underwater, Research, Collapse; frontier science fiction, hard-surface machinery, exposed
-    infrastructure, hazard alarms, and operational scale; teal pressure shadows and red lab alarms;
-    filtered beams through glass and water; scratched armor, hydraulic joints, carbon shells, bolted
-    plates, polymer glass, cables, and mineral dust; large-small scale contrast, hangar lanes,
-    convoy spacing, breach corridors, dock silhouettes, and readable machinery clusters; tense,
-    industrial, exploratory, militarized, frontier-worn, and technically precise
+    BioShock gameplay screenshots; first-person immersive-sim capture with art-deco underwater
+    corridors, leaking glass, plasmid hands, and environmental horror staging; green seawater,
+    tarnished gold, rust orange, red alarm glow, black ocean void, and sickly neon signage shapes;
+    flickering deco lamps, watery caustics, electrical arcs, muzzle flashes, and deep corridor
+    shadows; brass deco trim, cracked tiles, wet glass, peeling posters without readable slogans,
+    riveted metal, and sea growth; first-person weapon/plasmid framing with corridor depth,
+    interactable props, enemy silhouettes, and resource pickup readability; decayed, theatrical,
+    paranoid, wet, and retro-futurist; HUD guidance: health/eve meters, ammo counters, plasmid
+    icons, and objective arrows are allowed if they match immersive-sim screenshot logic
   creative_brief: >-
-    Apply Underwater Research Collapse as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Drowned Deco Pressure Hall as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through immersive art-deco shooter references: first-person camera,
+    brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route
+    readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and
+    promotional composition.
 avoidRules:
   - watermark
-  - text
   - logo
-  - dry-environment
-  - low-detail
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - asset-render isolation
-  - generic sci-fi corridor
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct BioShock clone
+  - retro pixel downgrade
+  - exact Rapture signage
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-011.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, dry-environment, low-detail, concept-art, key-art, poster,
-    character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface,
-    asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable
-    UI, official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, direct BioShock clone, retro pixel downgrade, exact Rapture
+    signage
+  referenceGame: Original immersive art-deco shooter, BioShock-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    health/eve meters, ammo counters, plasmid icons, and objective arrows are allowed if they match
+    immersive-sim screenshot logic
+  renderFamily: first-person-immersive
+  cameraFamily: first-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -99,6 +129,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sci-fi-frontiers-and-mech-zones
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-immersive-art-deco-shooter
+    - render-first-person-immersive
+    - camera-first-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

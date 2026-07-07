@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-023
 packId: pack_12
-name: Orbital Garden Colony Builder
+name: Surviving Mars Orbital Garden
 styleAnchors:
-  - 'Orbital Garden Colony Builder'
-displayName: 'Orbital Garden Builder'
+  - Surviving Mars gameplay screenshots
+  - Surviving Mars Orbital Garden
+displayName: Surviving Mars Orbital Garden
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:
@@ -14,81 +15,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-surviving-mars
+  - render-isometric-top-down
+  - camera-isometric-top-down
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through builder-system legibility; frontier science fiction, hard-surface
-    machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art
-    direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Surviving Mars gameplay screenshots:
+    colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths,
+    and readable management scale. Apply this after prompt X; prompt X supplies the subject, action,
+    setting, and intensity while this preset supplies capture language, camera grammar, material
+    behavior, playable readability, and finish. Do not recreate an exact official level, character,
+    logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express operational scale, machine
-    relationships, frontier labor, breach pressure, and engineered movement without requiring a mech
-    battle.
+    Preserve the user's subject and transform it into a playable Surviving Mars-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors,
-    gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability,
-    thumbnail clarity, and subject recognition.
+    Use a Surviving Mars-informed palette: Mars red, dome glass blue, white habitat shells,
+    hydroponic green, yellow hazard marks, and shadowed basalt. Keep value grouping legible at
+    gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or
+    objective cues rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with planet bounce and sterile sun; bay floodlights, warning strobes, reactor
-    glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to
-    reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through hard Martian sun, glass-dome reflections, night colony LEDs, dust storm
+    haze, and greenhouse glow. Lighting must clarify the playable route, threat, focal subject, or
+    objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from greenhouse glass, orbital struts, and modular colony shells; scratched
-    armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust;
-    make props, clothing, creatures, vehicles, architecture, and terrain share the same
-    production-world logic.
+    Build surfaces from modular domes, cables, solar panels, rover tracks, pressurized corridors,
+    garden beds, and UI-like planning overlays. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from frontier science fiction, hard-surface machinery,
-    exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with elevated management camera with colony clusters, build nodes, resource lines, drone
+    movement, and infrastructure hierarchy. The frame should read as a plausible gameplay capture;
+    include UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically
-    precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it,
-    but the preset should not force a new storyline.
+    Carry a Surviving Mars-derived mood: optimistic, technical, fragile, logistical, and
+    frontier-scientific. The preset can become adult, violent, eerie, seductive, cozy, tactical, or
+    absurd when prompt X asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no
-    asset-render isolation; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: builder HUD is allowed:
+    resource bars, build palette, dome status, and management overlays should look functional.
+    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
+    logos, stock-photo polish, or random interface clutter.
   key_features: >-
-    Orbital, Garden, Colony, Builder; builder-system legibility; dust ochre, oxide orange, utility
-    white, alarm red, teal monitors, gunmetal, and industrial blue; planet bounce and sterile sun;
-    greenhouse glass, orbital struts, and modular colony shells; ring habitat arcs and greenhouse
-    modules; tense, industrial, exploratory, militarized, frontier-worn, and technically precise
+    Surviving Mars gameplay screenshots; colony-builder capture with domes, red terrain, resource
+    pipes, garden interiors, drone paths, and readable management scale; Mars red, dome glass blue,
+    white habitat shells, hydroponic green, yellow hazard marks, and shadowed basalt; hard Martian
+    sun, glass-dome reflections, night colony LEDs, dust storm haze, and greenhouse glow; modular
+    domes, cables, solar panels, rover tracks, pressurized corridors, garden beds, and UI-like
+    planning overlays; elevated management camera with colony clusters, build nodes, resource lines,
+    drone movement, and infrastructure hierarchy; optimistic, technical, fragile, logistical, and
+    frontier-scientific; HUD guidance: builder HUD is allowed: resource bars, build palette, dome
+    status, and management overlays should look functional
   creative_brief: >-
-    Apply Orbital Garden Colony Builder as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Surviving Mars Orbital Garden as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from Surviving Mars: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - grimdark
-  - noisy
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - asset-render isolation
-  - generic sci-fi corridor
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-023.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, grimdark, noisy, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation,
-    generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card
-    framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Surviving Mars
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    builder HUD is allowed: resource bars, build palette, dome status, and management overlays
+    should look functional
+  renderFamily: isometric-top-down
+  cameraFamily: isometric-top-down
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -97,6 +128,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sci-fi-frontiers-and-mech-zones
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-surviving-mars
+    - render-isometric-top-down
+    - camera-isometric-top-down
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

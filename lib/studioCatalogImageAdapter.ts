@@ -30,9 +30,13 @@ export function resolveCatalogEntryThumbnailUrl(
 }
 
 export function resolveCatalogEntryPreviewUrl(
-  entry: Pick<CatalogImage, 'publicUrl'>,
+  entry: Pick<CatalogImage, 'publicUrl' | 'thumbnailUrl' | 'sourceExists'>,
   maxEdge = MODAL_PREVIEW_MAX_EDGE,
 ) {
+  if (entry.sourceExists === false && entry.thumbnailUrl) {
+    return toStudioAssetUrl(entry.thumbnailUrl);
+  }
+
   return toStudioAssetUrl(entry.publicUrl, { variant: 'thumb', maxEdge });
 }
 
@@ -42,12 +46,16 @@ export function materializeCatalogEntryImage(
 ): GeneratedImage {
   const batchId = options.batchId ?? resolveCatalogEntryBatchId(entry);
   const createdAt = options.createdAt ?? resolveCatalogEntryCreatedAt(entry);
+  const sourceUrl = toStudioAssetUrl(entry.publicUrl);
+  const thumbnail = options.thumbnail ?? resolveCatalogEntryThumbnailUrl(entry);
+  const sourceAvailable = entry.sourceExists !== false;
+  const preview = resolveCatalogEntryPreviewUrl(entry);
 
   return {
     id: entry.id,
-    src: toStudioAssetUrl(entry.publicUrl),
-    thumbnail: options.thumbnail ?? resolveCatalogEntryThumbnailUrl(entry),
-    preview: resolveCatalogEntryPreviewUrl(entry),
+    src: sourceAvailable ? sourceUrl : thumbnail,
+    thumbnail,
+    preview: sourceAvailable ? preview : thumbnail,
     width: entry.width,
     height: entry.height,
     batchId,

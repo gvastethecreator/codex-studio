@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP12-066
 packId: pack_12
-name: Abyss Rail Horror Transit
+name: Dead Space Abyss Rail Transit
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:
@@ -11,79 +11,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-dead-space
+  - render-third-person-cinematic
+  - camera-third-person
+  - hud-diegetic-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through linear route pressure; illicit route planning, horror escalation,
-    underworld thresholds, trap timing, and stealth readability, using the preset as art direction
-    rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Dead Space gameplay screenshots: third-person
+    survival-horror capture with industrial ship corridors, tram stations, diegetic suit HUD, and
+    dismemberment-combat tension. Apply this after prompt X; prompt X supplies the subject, action,
+    setting, and intensity while this preset supplies capture language, camera grammar, material
+    behavior, playable readability, and finish. Do not recreate an exact official level, character,
+    logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express stealth timing, illicit access,
-    trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist
-    shot.
+    Preserve the user's subject and transform it into a playable Dead Space-adjacent game screenshot
+    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
+    hitbox-like readability, and interaction affordances without copying source characters or named
+    IP elements.
   color_and_tone: >-
-    Grade the image with bottomless blue-black; inky black, sick green, opera red, copper shadow,
-    moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay
-    readability, thumbnail clarity, and subject recognition.
+    Use a Dead Space-informed palette: black metal, sickly green, medical blue, blood red, rust
+    orange, and cold white work lights. Keep value grouping legible at gameplay distance, with color
+    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
+    decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with distant abyss glow; failing carriage lights; knife-edge spotlights,
-    emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use
-    highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without
-    hiding prompt content.
+    Light the image through flickering ship lights, stasis blue, muzzle cutter beams, alarm red, and
+    deep vent shadows. Lighting must clarify the playable route, threat, focal subject, or objective
+    and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate
-    rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from grated floors, ribbed walls, suit armor, necrotic flesh, cables, tram rails,
+    and dirty sci-fi machinery. Materials should feel like in-engine game assets captured during
+    play, with enough texture identity to separate props, terrain, characters, hazards, and
+    interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from illicit route planning, horror escalation, underworld
-    thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with over-shoulder tight corridor framing with weapon aiming beam, enemy limbs, door
+    paths, and diegetic objective lines. The frame should read as a plausible gameplay capture;
+    include UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood submerged dread; claustrophobic body-horror transit; dangerous, clandestine,
-    haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or
-    violent when prompt X asks for it, but the preset should not force a new storyline.
+    Carry a Dead Space-derived mood: claustrophobic, industrial, grotesque, and panic-controlled.
+    The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
+    asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened
-    spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity,
-    and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: diegetic spine health, ammo
+    projection, stasis meter, and holographic inventory cues are core to the style. Maintain
+    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
+    stock-photo polish, or random interface clutter.
   key_features: >-
-    Abyss, Rail, Horror, Transit; linear route pressure; bottomless blue-black; distant abyss glow;
-    velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal,
-    and corrupted signage; long track perspective and carriage modules; submerged dread
+    Dead Space gameplay screenshots; third-person survival-horror capture with industrial ship
+    corridors, tram stations, diegetic suit HUD, and dismemberment-combat tension; black metal,
+    sickly green, medical blue, blood red, rust orange, and cold white work lights; flickering ship
+    lights, stasis blue, muzzle cutter beams, alarm red, and deep vent shadows; grated floors,
+    ribbed walls, suit armor, necrotic flesh, cables, tram rails, and dirty sci-fi machinery;
+    over-shoulder tight corridor framing with weapon aiming beam, enemy limbs, door paths, and
+    diegetic objective lines; claustrophobic, industrial, grotesque, and panic-controlled; HUD
+    guidance: diegetic spine health, ammo projection, stasis meter, and holographic inventory cues
+    are core to the style
   creative_brief: >-
-    Apply Abyss Rail Horror Transit as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Dead Space Abyss Rail Transit as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from Dead Space: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - cheerful
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - flattened spooky fog
-  - safe cartoon horror
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-066.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, cheerful, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog,
-    safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Dead Space
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    diegetic spine health, ammo projection, stasis meter, and holographic inventory cues are core to
+    the style
+  renderFamily: third-person-cinematic
+  cameraFamily: third-person
+  hudMode: diegetic-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -92,8 +124,18 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - heists-horror-and-underworld-runs
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-dead-space
+    - render-third-person-cinematic
+    - camera-third-person
+    - hud-diegetic-hud
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Dead Space Abyss Rail Transit
+styleAnchors:
+  - Dead Space gameplay screenshots
+  - Dead Space Abyss Rail Transit

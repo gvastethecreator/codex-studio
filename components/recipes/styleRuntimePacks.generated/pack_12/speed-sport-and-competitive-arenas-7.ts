@@ -5,310 +5,316 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-008',
-    name: 'Holographic Grand Prix Night',
-    displayName: 'Holographic Grand Prix',
-    styleAnchors: ['Holographic Grand Prix Night'],
+    name: 'WipEout Night Speed Circuit',
+    displayName: 'WipEout Night Speed Circuit',
+    styleAnchors: ['WipEout Omega Collection gameplay screenshots', 'WipEout Night Speed Circuit'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, static-scene, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through premium racing spectacle; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on WipEout Omega Collection gameplay screenshots: anti-gravity racing gameplay capture with clean hovercraft silhouettes, neon track guardrails, futuristic billboards, and velocity blur. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable WipEout Omega Collection-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with transparent cyan, magenta refraction, and black chrome; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a WipEout Omega Collection-informed palette: electric blue, hot magenta, black asphalt, white sponsor panels without readable logos, and amber boost trails. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with hologram streaks and lens-split glow; low-key night lighting with practical pools; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through trackside neon strips, engine bloom, reflective wet surfaces, tunnel strobes, and boost flare. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from sleek vehicle hulls, glossy track panels, translucent shields, holographic signage shapes, and high-speed particle streaks. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person racing camera with vanishing-point track curves, rivals ahead, lap-line clarity, and speed-focused low horizon. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood late-hour danger; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a WipEout Omega Collection-derived mood: clinical, fast, competitive, glossy, and late-night futuristic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: racing HUD is welcome: lap, speed, shield, weapon slot, and position markers can appear if clean and game-coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Holographic, Grand, Prix, Night; premium racing spectacle; transparent cyan, magenta refraction, and black chrome; hologram streaks and lens-split glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; wide speedway and luminous finish line; late-hour danger',
+        'WipEout Omega Collection gameplay screenshots; anti-gravity racing gameplay capture with clean hovercraft silhouettes, neon track guardrails, futuristic billboards, and velocity blur; electric blue, hot magenta, black asphalt, white sponsor panels without readable logos, and amber boost trails; trackside neon strips, engine bloom, reflective wet surfaces, tunnel strobes, and boost flare; sleek vehicle hulls, glossy track panels, translucent shields, holographic signage shapes, and high-speed particle streaks; third-person racing camera with vanishing-point track curves, rivals ahead, lap-line clarity, and speed-focused low horizon; clinical, fast, competitive, glossy, and late-night futuristic; HUD guidance: racing HUD is welcome: lap, speed, shield, weapon slot, and position markers can appear if clean and game-coherent',
       creative_brief:
-        "Apply Holographic Grand Prix Night as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use WipEout Night Speed Circuit as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from WipEout Omega Collection: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-017',
-    name: 'Lava Skate Arena',
-    displayName: 'Lava Skate Arena Sport',
-    styleAnchors: ['Lava Skate Arena'],
+    name: 'Rollerdrome Arena Trick Combat',
+    displayName: 'Rollerdrome Arena Trick Combat',
+    styleAnchors: ['Rollerdrome gameplay screenshots', 'Rollerdrome Arena Trick Combat'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, static-pose, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through trick-route flow; competitive role clarity; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Rollerdrome gameplay screenshots: comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable Rollerdrome-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with hot red-orange against black basalt; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Rollerdrome-informed palette: cream concrete, black ink outlines, orange jumpsuit, red danger marks, teal shadows, and poster-flat sky colors. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with lava bounce and heat shimmer; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flat graphic daylight, rimmed outlines, explosion bursts, and stylized target highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds, and crisp inked edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and readable arena loops. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Rollerdrome-derived mood: stylish, dangerous, sporty, satirical, and kinetic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Lava, Skate, Arena; trick-route flow; hot red-orange against black basalt; lava bounce and heat shimmer; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; curved ramps and molten track lines; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+        'Rollerdrome gameplay screenshots; comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets; cream concrete, black ink outlines, orange jumpsuit, red danger marks, teal shadows, and poster-flat sky colors; flat graphic daylight, rimmed outlines, explosion bursts, and stylized target highlights; cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds, and crisp inked edges; third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and readable arena loops; stylish, dangerous, sporty, satirical, and kinetic; HUD guidance: score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact',
       creative_brief:
-        "Apply Lava Skate Arena as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Rollerdrome Arena Trick Combat as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Rollerdrome: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-021',
-    name: 'Drift Kingdom Sandstorm Cup',
-    displayName: 'Sandstorm Drift Racing',
-    styleAnchors: ['Drift Kingdom Sandstorm Cup'],
+    name: 'Forza Sandstorm Drift Cup',
+    displayName: 'Forza Sandstorm Drift Cup',
+    styleAnchors: ['Forza Horizon 5 gameplay screenshots', 'Forza Sandstorm Drift Cup'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, muddy, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through controlled skid rhythm; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Forza Horizon 5 gameplay screenshots: third-person racing capture with desert roads, festival color, dust plumes, car paint reflections, and high-speed chase-camera readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable Forza Horizon 5-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Forza Horizon 5-informed palette: sunlit sand, glossy car red, turquoise sky, black tire marks, festival pink, and golden dust. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with dust-dimmed sun and abrasive air glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through bright desert sun, windshield flare, dust haze, brake-light red, and reflective body highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from photoreal car paint, gravel, asphalt, dust clouds, cactus silhouettes, banners without readable branding, and road debris. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with chase camera with car centered low, racing line, opponents ahead, road curvature, and motion blur tuned for playability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood low-visibility race pressure; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Forza Horizon 5-derived mood: competitive, sunny, stylish, festival-like, and fast. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Drift Kingdom Sandstorm Cup as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: racing HUD can include speedometer, minimap, position, checkpoint markers, and clean drift-score cues. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Drift, Kingdom, Sandstorm, Cup; controlled skid rhythm; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; dust-dimmed sun and abrasive air glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; sideways motion arcs and dust wake; low-visibility race pressure',
+        'Forza Horizon 5 gameplay screenshots; third-person racing capture with desert roads, festival color, dust plumes, car paint reflections, and high-speed chase-camera readability; sunlit sand, glossy car red, turquoise sky, black tire marks, festival pink, and golden dust; bright desert sun, windshield flare, dust haze, brake-light red, and reflective body highlights; photoreal car paint, gravel, asphalt, dust clouds, cactus silhouettes, banners without readable branding, and road debris; chase camera with car centered low, racing line, opponents ahead, road curvature, and motion blur tuned for playability; competitive, sunny, stylish, festival-like, and fast; HUD guidance: racing HUD can include speedometer, minimap, position, checkpoint markers, and clean drift-score cues',
+      creative_brief:
+        'Use Forza Sandstorm Drift Cup as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Forza Horizon 5: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-031',
-    name: 'Astral Chess Battlefield',
-    displayName: 'Astral Chess Tactics',
-    styleAnchors: ['Astral Chess Battlefield'],
+    name: 'Into the Breach Astral Tactics',
+    displayName: 'Into the Breach Astral Tactics',
+    styleAnchors: ['Into the Breach gameplay screenshots', 'Into the Breach Astral Tactics'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, clutter, noisy-palette, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through cosmic rule geometry; strategy made visible; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Into the Breach gameplay screenshots: compact pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable Into the Breach-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with starfield violets and cold gold; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Into the Breach-informed palette: muted teal water, rust mech metal, acid bug green, orange danger tiles, grey city blocks, and UI-blue grid markers. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with celestial rim glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flat tactical light, explosion flashes, laser lines, shield glows, and crisp tile-state highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from tiny pixel buildings, readable mechs, bugs, cracked ground, smoke tiles, and compact UI panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with orthographic grid with 8x8-ish battlefield discipline, attack previews, push vectors, and civilian-objective clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Into the Breach-derived mood: cerebral, compact, tense, deterministic, and elegant. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: grid markers, turn UI, unit panels, objective pips, and attack previews are central to the style. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Astral, Chess, Battlefield; cosmic rule geometry; starfield violets and cold gold; celestial rim glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; board lanes and opposing value fields; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+        'Into the Breach gameplay screenshots; compact pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability; muted teal water, rust mech metal, acid bug green, orange danger tiles, grey city blocks, and UI-blue grid markers; flat tactical light, explosion flashes, laser lines, shield glows, and crisp tile-state highlights; tiny pixel buildings, readable mechs, bugs, cracked ground, smoke tiles, and compact UI panels; orthographic grid with 8x8-ish battlefield discipline, attack previews, push vectors, and civilian-objective clarity; cerebral, compact, tense, deterministic, and elegant; HUD guidance: grid markers, turn UI, unit panels, objective pips, and attack previews are central to the style',
       creative_brief:
-        "Apply Astral Chess Battlefield as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Into the Breach Astral Tactics as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Into the Breach: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-039',
-    name: 'Phantom Theater Rhythm Battle',
-    displayName: 'Phantom Theater Rhythm',
-    styleAnchors: ['Phantom Theater Rhythm Battle'],
+    name: 'Beatline Phantom Theater',
+    displayName: 'Beatline Phantom Theater',
+    styleAnchors: [
+      'stylized rhythm-action gameplay screenshots',
+      'cel-shaded beat combat arena',
+      'Beatline Phantom Theater',
+    ],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, static, muddy-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Hi-Fi Rush clone, strategy tactics camera, readable rhythm text',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through timed performance combat; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original rhythm-action brawler captures: cel-shaded third-person arena play with beat-synced impacts, graphic motion accents, stage-like combat spaces, music-reactive UI shapes, and readable dodge/combo timing. Borrow the kinetic camera discipline and bold cel graphic language associated with Hi-Fi Rush-like games, but land as a different fictional beat-combat game with different characters, props, arena shapes, icons, and color motifs.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable beat-combat screenshot subject: keep clear role silhouette, attack timing, enemy spacing, route or arena affordance, and hitbox-like readability without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a rhythm-action palette: punchy red, teal shadow, yellow hit sparks, violet stage light, white graphic accents, and black ink outlines. Keep value grouping legible at gameplay distance and avoid generic cyberpunk wash or tactical-strategy desaturation.',
       lighting_and_shadow:
-        'Drive the lighting with stage glow through spectral haze; stage cues and rhythm-beat glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through concert-like rim lights, beat pulses, stylized spotlights, impact flashes, and clean cel shading. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from cartoon metal, posters without readable text, stage props, robot parts, guitar-like weapons, and comic SFX shapes without text. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with third-person arena camera, enemy spacing, beat lanes, combo timing, and readable dodges. The frame should read as a plausible playable rhythm-action capture, not an isometric strategy map or key art poster.',
       atmosphere_and_mood:
-        'Keep the mood ghost-performance tension; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original beatline theater mood: loud, musical, rebellious, playful, adult enough to avoid kid-gloss, and kinetic.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Phantom Theater Rhythm Battle as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as coherent in-engine stylized rhythm-action screenshot style, not concept art: combo shapes, beat bars, health, timing prompts, and ability icons can appear as abstract synchronized UI. Maintain heavy-denoise clarity, crisp focal hierarchy, cel-shaded material discipline, readable gameplay scale, no fake logos, no readable lyric/text UI, and no strategy-tactics camera.',
       key_features:
-        'Phantom, Theater, Rhythm, Battle; timed performance combat; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; stage glow through spectral haze; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; race lanes, duel circles, draft grids, finish-line diagonals, champion focal points, and high-speed parallax; ghost-performance tension',
+        'original rhythm-action brawler gameplay screenshots; cel-shaded third-person arena play; beat-synced impacts; graphic motion accents; stage-like combat spaces; music-reactive abstract UI shapes; punchy red, teal shadow, yellow sparks, violet stage light, white accents, black ink outlines; third-person arena camera with enemy spacing and readable dodge/combo timing; loud, musical, rebellious, playful, kinetic; HUD guidance: abstract combo and beat UI only, no readable text',
+      creative_brief:
+        'Use Beatline Phantom Theater as a transferable game-originals preset. Preserve prompt X, then route interpretation through rhythm-action brawler references: cel-shaded combat camera, beat-synced effects, graphic timing UI, bold arena staging, and readable playable motion. Avoid menus, logos, exact characters, exact levels, direct Hi-Fi Rush cloning, and strategy-tactics framing.',
     },
   },
   {
     id: 'SP12-047',
-    name: 'Obsidian Arena Champion Trial',
-    displayName: 'Obsidian Arena Combat',
-    styleAnchors: ['Obsidian Arena Champion Trial'],
+    name: 'Quake Arena Obsidian Trial',
+    displayName: 'Quake Arena Obsidian Trial',
+    styleAnchors: ['Quake III Arena gameplay screenshots', 'Quake Arena Obsidian Trial'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, modern-guns, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through competitive role clarity; trial-of-skill framing; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Quake III Arena gameplay screenshots: retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable Quake III Arena-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with black glass, lava edge, and arena gold; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Quake III Arena-informed palette: lava orange, gunmetal grey, blood red, toxic green pickups, electric blue armor, and black stone. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through hard colored arena lights, lava glow, weapon flashes, pickup glow, and simple baked shadow contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished volcanic stone; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from chunky late-90s 3D geometry, gothic metal, skull motifs without logos, jump pads, ammo boxes, and low-detail texture tiling. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person arena view with centered weapon, opponent sightlines, pickup route loops, vertical jumps, and speed lanes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Quake III Arena-derived mood: aggressive, competitive, old-school, brutal, and fast. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can appear. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Obsidian, Arena, Champion, Trial; competitive role clarity; black glass, lava edge, and arena gold; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; polished volcanic stone; circular contest space and ranked focal hierarchy; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+        'Quake III Arena gameplay screenshots; retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry; lava orange, gunmetal grey, blood red, toxic green pickups, electric blue armor, and black stone; hard colored arena lights, lava glow, weapon flashes, pickup glow, and simple baked shadow contrast; chunky late-90s 3D geometry, gothic metal, skull motifs without logos, jump pads, ammo boxes, and low-detail texture tiling; first-person arena view with centered weapon, opponent sightlines, pickup route loops, vertical jumps, and speed lanes; aggressive, competitive, old-school, brutal, and fast; HUD guidance: classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can appear',
       creative_brief:
-        "Apply Obsidian Arena Champion Trial as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Quake Arena Obsidian Trial as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Quake III Arena: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-059',
-    name: 'Prismatic Arena Hero Draft',
-    displayName: 'Prismatic Draft Arena',
-    styleAnchors: ['Prismatic Arena Hero Draft'],
+    name: 'Dota Prismatic Hero Draft Arena',
+    displayName: 'Dota Prismatic Hero Draft Arena',
+    styleAnchors: ['Dota 2 gameplay screenshots', 'Dota Prismatic Hero Draft Arena'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, muddy-palette, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through competitive role clarity; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Dota 2 gameplay screenshots: MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable Dota 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with split-spectrum team colors; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Dota 2-informed palette: Radiant green, Dire red, magic purple, gold UI accents, river blue, and dark terrain shadows. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with facet highlights and draft-grid glow; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through spell effects, tower beams, hero glows, fog-of-war darkness, and crisp particle silhouettes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from fantasy terrain, hero equipment without copying exact heroes, creeps, towers, trees, stone paths, and polished ability effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with high isometric battlefield view with lane hierarchy, team spacing, ability ranges, minimap, and objective pressure. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Dota 2-derived mood: competitive, tactical, magical, high-information, and tense. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Prismatic, Arena, Hero, Draft; competitive role clarity; split-spectrum team colors; facet highlights and draft-grid glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; circular contest space and ranked focal hierarchy; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+        'Dota 2 gameplay screenshots; MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability; Radiant green, Dire red, magic purple, gold UI accents, river blue, and dark terrain shadows; spell effects, tower beams, hero glows, fog-of-war darkness, and crisp particle silhouettes; fantasy terrain, hero equipment without copying exact heroes, creeps, towers, trees, stone paths, and polished ability effects; high isometric battlefield view with lane hierarchy, team spacing, ability ranges, minimap, and objective pressure; competitive, tactical, magical, high-information, and tense; HUD guidance: MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible',
       creative_brief:
-        "Apply Prismatic Arena Hero Draft as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Dota Prismatic Hero Draft Arena as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Dota 2: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-063',
-    name: 'Obelisk Desert Relic Race',
-    displayName: 'Obelisk Desert Racing',
-    styleAnchors: ['Obelisk Desert Relic Race'],
+    name: 'F-Zero Obelisk Desert Race',
+    displayName: 'F-Zero Obelisk Desert Race',
+    styleAnchors: ['F-Zero GX gameplay screenshots', 'F-Zero Obelisk Desert Race'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, rainy-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through artifact checkpoint race; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on F-Zero GX gameplay screenshots: GameCube-era anti-gravity racing capture with desert sci-fi tracks, high saturation, speed tunnels, and arcade HUD pressure. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable F-Zero GX-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with sun-baked ochre, bone white, and hot shadow blue; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a F-Zero GX-informed palette: sand gold, cobalt sky, chrome blue, hot magenta boost, black track, and bright orange hazard pads. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with heat haze and hard desert sun; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through harsh desert sun, boost glow, tunnel strobe, reflective vehicle highlights, and saturated arcade bloom. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from ancient metal, sand, and glowing inscriptions without text; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from early-2000s glossy track, low-poly desert monuments, hovering vehicles, energy pads, and bold texture panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person racing chase camera with steep track curves, rivals, speed lines, and checkpoint/position readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood ancient race pressure; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a F-Zero GX-derived mood: extreme, arcade-fast, futuristic, competitive, and slightly retro. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: speed, lap, position, boost meter, and track minimap can appear as arcade racing UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Obelisk, Desert, Relic, Race; artifact checkpoint race; sun-baked ochre, bone white, and hot shadow blue; heat haze and hard desert sun; ancient metal, sand, and glowing inscriptions without text; monolith checkpoints and relic route markers; ancient race pressure',
+        'F-Zero GX gameplay screenshots; GameCube-era anti-gravity racing capture with desert sci-fi tracks, high saturation, speed tunnels, and arcade HUD pressure; sand gold, cobalt sky, chrome blue, hot magenta boost, black track, and bright orange hazard pads; harsh desert sun, boost glow, tunnel strobe, reflective vehicle highlights, and saturated arcade bloom; early-2000s glossy track, low-poly desert monuments, hovering vehicles, energy pads, and bold texture panels; third-person racing chase camera with steep track curves, rivals, speed lines, and checkpoint/position readability; extreme, arcade-fast, futuristic, competitive, and slightly retro; HUD guidance: speed, lap, position, boost meter, and track minimap can appear as arcade racing UI',
       creative_brief:
-        "Apply Obelisk Desert Relic Race as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use F-Zero Obelisk Desert Race as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from F-Zero GX: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-065',
-    name: 'Crystal Crown Duel Hall',
-    displayName: 'Crystal Crown Duelism',
-    styleAnchors: ['Crystal Crown Duel Hall'],
+    name: 'Soulcalibur Crystal Duel Hall',
+    displayName: 'Soulcalibur Crystal Duel Hall',
+    styleAnchors: ['Soulcalibur VI gameplay screenshots', 'Soulcalibur Crystal Duel Hall'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, grunge, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through one-on-one contest pressure; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Soulcalibur VI gameplay screenshots: weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable Soulcalibur VI-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with prismatic blue-white with sharp color splits; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Soulcalibur VI-informed palette: royal blue, crystal white, polished gold, crimson cloth, black armor, and bright weapon trails. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with crystal refraction and caustic shards; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through arena spotlights, magic hit sparks, rimmed armor, stage glow, and cinematic super-move flare. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from faceted crystal, polished floor, and ceremonial metal; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from polished stone, crystal pillars, ornate weapons, flowing cloth, armor plates, and high-detail arena props. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-biased 3D fighting camera with two combatants, health bars, ring-out edges, and attack-impact clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood duel-hall prestige; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Soulcalibur VI-derived mood: duelist, flamboyant, heroic, competitive, and theatrical. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks, and hit sparks. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Crystal, Crown, Duel, Hall; one-on-one contest pressure; prismatic blue-white with sharp color splits; crystal refraction and caustic shards; faceted crystal, polished floor, and ceremonial metal; two-sided focal symmetry and readable attack lanes; duel-hall prestige',
+        'Soulcalibur VI gameplay screenshots; weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle; royal blue, crystal white, polished gold, crimson cloth, black armor, and bright weapon trails; arena spotlights, magic hit sparks, rimmed armor, stage glow, and cinematic super-move flare; polished stone, crystal pillars, ornate weapons, flowing cloth, armor plates, and high-detail arena props; side-biased 3D fighting camera with two combatants, health bars, ring-out edges, and attack-impact clarity; duelist, flamboyant, heroic, competitive, and theatrical; HUD guidance: fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks, and hit sparks',
       creative_brief:
-        "Apply Crystal Crown Duel Hall as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Soulcalibur Crystal Duel Hall as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Soulcalibur VI: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-075',
-    name: 'Cobalt Docks Mechball League',
+    name: 'Rocket League Cobalt Docks',
+    displayName: 'Rocket League Cobalt Docks',
+    styleAnchors: ['Rocket League gameplay screenshots', 'Rocket League Cobalt Docks'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, text, logo, gritty-horror, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay, sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through contact-sport machine play; competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Rocket League gameplay screenshots: car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express competition roles, lane tension, speed control, ranked focus, and contest readability without forcing a sports broadcast.",
+        "Preserve the user's subject and transform it into a playable Rocket League-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with deep cobalt with orange arena markers; team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Rocket League-informed palette: cobalt blue, orange team glow, green field, black tire rubber, white ball panels, and neon arena trim. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through stadium lights, boost flames, goal explosions, wet arena reflections, and glossy car highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from dock steel and scuffed sport plating; wet boards, sport rails, and industrial dock paint; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from car paint, turf, glass boards, boost pads, ball panels, arena rails, and particle trails. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from competitive arena energy, lane logic, player-role clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person car camera with ball focus, goal depth, boost route, teammates/opponents, and field geometry readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Rocket League-derived mood: competitive, sporty, explosive, glossy, and playful. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no fake broadcast overlay; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: scoreboard, timer, boost meter, ball cam indicator, and team markers are coherent and useful. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Cobalt, Docks, Mechball, League; contact-sport machine play; deep cobalt with orange arena markers; track strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; dock steel and scuffed sport plating; waterline arena lanes; competitive, fast, theatrical, sharp, high-stakes, and crowd-charged',
+        'Rocket League gameplay screenshots; car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera; cobalt blue, orange team glow, green field, black tire rubber, white ball panels, and neon arena trim; stadium lights, boost flames, goal explosions, wet arena reflections, and glossy car highlights; car paint, turf, glass boards, boost pads, ball panels, arena rails, and particle trails; third-person car camera with ball focus, goal depth, boost route, teammates/opponents, and field geometry readability; competitive, sporty, explosive, glossy, and playful; HUD guidance: scoreboard, timer, boost meter, ball cam indicator, and team markers are coherent and useful',
       creative_brief:
-        "Apply Cobalt Docks Mechball League as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Rocket League Cobalt Docks as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Rocket League: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

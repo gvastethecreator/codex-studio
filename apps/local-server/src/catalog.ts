@@ -14,6 +14,8 @@ export interface CatalogImage {
   thumbnailPath: string | null;
   publicUrl: string;
   thumbnailUrl: string | null;
+  sourceExists?: boolean;
+  thumbnailExists?: boolean;
   prompt: string | null;
   negativePrompt: string | null;
   aspectRatio: string | null;
@@ -90,6 +92,8 @@ function mapCatalogImage(
     thumbnailPath: row.thumbnail_path,
     publicUrl: row.public_url,
     thumbnailUrl: row.thumbnail_url,
+    sourceExists: existsSync(row.file_path),
+    thumbnailExists: row.thumbnail_path ? existsSync(row.thumbnail_path) : false,
     prompt: row.prompt,
     negativePrompt: row.negative_prompt,
     aspectRatio: row.aspect_ratio,

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP12-045
 packId: pack_12
-name: Alloy Forest Mech Hunt
+name: Alloy Forest Ambush
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:
@@ -11,83 +11,103 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-retrofuturist-mech-survival
+  - render-first-person-immersive
+  - camera-first-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through nature-machine fusion; machine-scale choreography; tracking,
-    ambush, and scale reveal; frontier science fiction, hard-surface machinery, exposed
-    infrastructure, hazard alarms, and operational scale, using the preset as art direction rather
-    than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original retrofuturist first-person mech survival
+    captures: rural forest roads, abandoned utility structures, hostile machine silhouettes,
+    scavenged weapons, weathered 1980s tech, and readable stealth/combat routes. Land as a fictional
+    machine-survival setting, not an isometric tactics map.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express operational scale, machine
-    relationships, frontier labor, breach pressure, and engineered movement without requiring a mech
-    battle.
+    Preserve the user's subject and transform it into a playable first-person survival screenshot
+    subject: keep clear threat/object role, foreground weapon/tool scale, cover, patrol spacing,
+    loot/interactable affordance, and escape route without copying source locations or robots.
   color_and_tone: >-
-    Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors,
-    gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability,
-    thumbnail clarity, and subject recognition.
+    Use a rural mech-survival palette: pine green, cold sky grey, rust orange, old enamel red, wet
+    asphalt blue, dull steel, and warning amber. Keep value grouping legible through forest clutter.
   lighting_and_shadow: >-
-    Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater
-    beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards,
-    factions, or focal threats without hiding prompt content.
+    Light the image through low Nordic sun, flashlight beams, robot sensor glow, muzzle flashes, and
+    misty forest shadow. Lighting must clarify the playable route, threat, focal subject, or
+    objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from brushed alloy trunks and mechanical bark; hydraulic limbs, armor plates,
-    pistons, and dust-chipped paint; scratched armor, hydraulic joints, carbon shells, bolted
-    plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from wet grass, concrete bunkers, robot hydraulics, backpacks, old cars, chipped
+    paint, and rural decay. Materials should feel like in-engine game assets captured during play,
+    with enough texture identity to separate props, terrain, characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from frontier science fiction, hard-surface machinery,
-    exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with first-person weapon/tool camera, foreground cover, mid-distance machine or
+    objective, route depth, and survival decision. Avoid strategy overview and generic robot promo
+    framing.
   atmosphere_and_mood: >-
-    Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically
-    precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it,
-    but the preset should not force a new storyline.
+    Carry an original alloy-forest survival mood: lonely, tactical, rural, mechanical, uneasy, and
+    scavenged.
   rendering_and_quality: >-
-    Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no
-    asset-render isolation; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as coherent first-person immersive survival shooter screenshot style, not concept art:
+    sparse HUD, detection pips, ammo/tool cues, and objective markers can appear abstractly.
+    Maintain heavy-denoise clarity, readable silhouettes, and no readable signage/logos.
   key_features: >-
-    Alloy, Forest, Mech, Hunt; nature-machine fusion; dust ochre, oxide orange, utility white, alarm
-    red, teal monitors, gunmetal, and industrial blue; bay floodlights, warning strobes, reactor
-    glow, dust haze, underwater beams, and cold lab panels; brushed alloy trunks and mechanical
-    bark; tracking-scale contrast against a dangerous landmark; tense, industrial, exploratory,
-    militarized, frontier-worn, and technically precise
+    Generation Zero gameplay screenshots; open-world robot-hunt capture with Scandinavian forests,
+    abandoned roads, large machines, guerrilla gear, and distant threat silhouettes; pine green, fog
+    grey, rust orange, warning red, military olive, and cold blue sky; low Nordic sun, flashlight
+    beams, robot sensor glow, muzzle flashes, and misty forest shadow; wet grass, concrete bunkers,
+    robot hydraulics, backpacks, old cars, chipped paint, and rural decay; first-person or
+    third-person survival shooter framing with machine scale, cover routes, weak points, and ambush
+    distance; lonely, tactical, rural, mechanical, and uneasy; HUD guidance: weapon/ammo HUD,
+    compass, stealth markers, and machine tags can appear if modest and readable
   creative_brief: >-
-    Apply Alloy Forest Mech Hunt as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Alloy Forest Ambush as a transferable game-originals preset. Preserve prompt X, then route
+    interpretation through retrofuturist mech-survival references: first-person camera, rural
+    machine threats, scavenged materials, cover routes, and readable survival pressure. Avoid
+    strategy-tactics framing, exact village copies, and generic robot forest renders.
 avoidRules:
   - watermark
-  - text
   - logo
-  - clean-lab
-  - low-detail
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - asset-render isolation
-  - generic sci-fi corridor
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - strategy tactics camera
+  - generic robot forest render
+  - exact Swedish village clone
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-045.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation,
-    generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card
-    framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, strategy tactics camera, generic robot forest render, exact
+    Swedish village clone
+  referenceGame: Original retrofuturist mech survival, Generation Zero-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: weapon/ammo HUD, compass, stealth markers, and machine tags can appear if modest and readable
+  renderFamily: first-person-immersive
+  cameraFamily: first-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -96,8 +116,19 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sci-fi-frontiers-and-mech-zones
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-retrofuturist-mech-survival
+    - render-first-person-immersive
+    - camera-first-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Alloy Forest Ambush
+styleAnchors:
+  - first-person retrofuturist mech survival screenshots
+  - rural machine ambush
+  - Alloy Forest Ambush

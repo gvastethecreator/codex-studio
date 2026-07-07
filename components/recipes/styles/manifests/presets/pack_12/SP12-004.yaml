@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-004
 packId: pack_12
-name: Clockwork Sky Armada
+name: Arcadia Cloudship JRPG
 styleAnchors:
-  - 'Clockwork Sky Armada'
-displayName: 'Clockwork Sky Strategy'
+  - Skies of Arcadia gameplay screenshots
+  - Arcadia Cloudship JRPG
+displayName: Arcadia Cloudship JRPG
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:
@@ -14,81 +15,113 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-skies-of-arcadia
+  - render-retro-pixel-low-poly
+  - camera-third-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through mass movement at horizon scale; adventure setpiece logic, puzzle
-    readability, environmental affordances, hub rhythm, and landmark staging, using the preset as
-    art direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Skies of Arcadia gameplay screenshots:
+    Dreamcast-era skyfaring JRPG capture with bright airships, cloud ocean horizons, chunky low-poly
+    fantasy machinery, and adventurous encounter staging. Apply this after prompt X; prompt X
+    supplies the subject, action, setting, and intensity while this preset supplies capture
+    language, camera grammar, material behavior, playable readability, and finish. Do not recreate
+    an exact official level, character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express puzzle affordances, hub
-    readability, traversal choices, central devices, reward rhythm, and escape logic without
-    requiring a literal dungeon room.
+    Preserve the user's subject and transform it into a playable Skies of Arcadia-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with brass, oil black, and sky silver; warm tavern amber, sapphire blue,
-    clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy
-    strong enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use a Skies of Arcadia-informed palette: cloud white, sky blue, lacquer red, brass gold, emerald
+    hull paint, and saturated heroic primary accents. Keep value grouping legible at gameplay
+    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
+    rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with high-altitude rim light; portal glow, puzzle beams, lantern pools,
-    stained shafts, crystal refraction, and guided objective light; use highlights and shadow
-    pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through soft blue daylight, cloud bounce, simple specular highlights, engine
+    glow, and theatrical battle flashes. Lighting must clarify the playable route, threat, focal
+    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from gears, clock plates, and polished mechanisms; worn stone, brass gears,
-    painted signs without readable text, carved rails, puzzle blocks, tavern wood, and polished
-    relics; make props, clothing, creatures, vehicles, architecture, and terrain share the same
-    production-world logic.
+    Build surfaces from low-poly ship hulls, painted sails, brass trim, wooden decks, chunky
+    character proportions, and clean early-console textures. Materials should feel like in-engine
+    game assets captured during play, with enough texture identity to separate props, terrain,
+    characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from adventure setpiece logic, puzzle readability,
-    environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with third-person exploration or turn-based battle framing with airship scale, readable
+    menus if useful, and optimistic sky depth. The frame should read as a plausible gameplay
+    capture; include UI/HUD only when it matches the source game's visual logic and improves
+    clarity.
   atmosphere_and_mood: >-
-    Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and
-    mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt
-    X asks for it, but the preset should not force a new storyline.
+    Carry a Skies of Arcadia-derived mood: buoyant, swashbuckling, colorful, and classic-console
+    adventurous. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd
+    when prompt X asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as environment-adventure art with clear affordances, satisfying depth, and no generic
-    quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
-  creative_brief: >-
-    Apply Clockwork Sky Armada as a reusable video-game art-direction router over prompt X: preserve
-    the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Finish as a coherent in-engine screenshot style, not concept art: JRPG command windows or battle
+    meters are allowed when they feel like era-correct gameplay UI, not pasted text blocks. Maintain
+    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
+    stock-photo polish, or random interface clutter.
   key_features: >-
-    Clockwork, Sky, Armada; mass movement at horizon scale; brass, oil black, and sky silver;
-    high-altitude rim light; gears, clock plates, and polished mechanisms; vertical cloud depth and
-    suspended pathways; curious, adventurous, readable, mysterious, playful when relevant, and
-    mechanically inviting
+    Skies of Arcadia gameplay screenshots; Dreamcast-era skyfaring JRPG capture with bright
+    airships, cloud ocean horizons, chunky low-poly fantasy machinery, and adventurous encounter
+    staging; cloud white, sky blue, lacquer red, brass gold, emerald hull paint, and saturated
+    heroic primary accents; soft blue daylight, cloud bounce, simple specular highlights, engine
+    glow, and theatrical battle flashes; low-poly ship hulls, painted sails, brass trim, wooden
+    decks, chunky character proportions, and clean early-console textures; third-person exploration
+    or turn-based battle framing with airship scale, readable menus if useful, and optimistic sky
+    depth; buoyant, swashbuckling, colorful, and classic-console adventurous; HUD guidance: JRPG
+    command windows or battle meters are allowed when they feel like era-correct gameplay UI, not
+    pasted text blocks
+  creative_brief: >-
+    Use Arcadia Cloudship JRPG as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through capture references from Skies of Arcadia: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - modern-ui
-  - plastic-look
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic quest-poster layout
-  - unreadable puzzle clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-004.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, modern-ui, plastic-look, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster
-    layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Skies of Arcadia
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    JRPG command windows or battle meters are allowed when they feel like era-correct gameplay UI,
+    not pasted text blocks
+  renderFamily: retro-pixel-low-poly
+  cameraFamily: third-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -97,6 +130,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - puzzle-chambers-and-adventure-setpieces
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-skies-of-arcadia
+    - render-retro-pixel-low-poly
+    - camera-third-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

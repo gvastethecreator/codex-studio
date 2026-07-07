@@ -16,6 +16,14 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import fallbackStyleRecipePreview from '../assets/recipes/styles/defaults/SP01-001.webp?url';
+import stylePreviewSp01005 from '../assets/recipes/styles/defaults/SP01-005.webp?url';
+import stylePreviewSp02001 from '../assets/recipes/styles/defaults/SP02-001.webp?url';
+import stylePreviewSp02003 from '../assets/recipes/styles/defaults/SP02-003.webp?url';
+import stylePreviewSp02004 from '../assets/recipes/styles/defaults/SP02-004.webp?url';
+import stylePreviewSp06082 from '../assets/recipes/styles/defaults/SP06-082.webp?url';
+import stylePreviewSp06095 from '../assets/recipes/styles/defaults/SP06-095.webp?url';
+import stylePreviewSp11047 from '../assets/recipes/styles/defaults/SP11-047.webp?url';
+import stylePreviewSp11050 from '../assets/recipes/styles/defaults/SP11-050.webp?url';
 import {
   buildCodexStudioSetupPrompt,
   CODEX_STUDIO_SETUP_SKILL_PATH,
@@ -25,12 +33,22 @@ import {
   pickNextOnboardingStyleCarouselIndex,
   type OnboardingStyleCarouselEntry,
 } from '../lib/onboardingStyleCarousel';
-import { STYLE_AVAILABLE_DEFAULT_IMAGES } from '../lib/recipeAssetCatalog';
 import type {
   HealthResponse,
   LocalCodexSessionResponse,
   StudioReadinessSnapshot,
 } from '../packages/shared/src';
+
+const ONBOARDING_STYLE_PREVIEW_IMAGES: Record<string, string | undefined> = {
+  'SP01-005': stylePreviewSp01005,
+  'SP02-001': stylePreviewSp02001,
+  'SP02-003': stylePreviewSp02003,
+  'SP02-004': stylePreviewSp02004,
+  'SP06-082': stylePreviewSp06082,
+  'SP06-095': stylePreviewSp06095,
+  'SP11-047': stylePreviewSp11047,
+  'SP11-050': stylePreviewSp11050,
+};
 
 type OnboardingStatus = 'idle' | 'checking' | 'starting' | 'ready';
 type CheckTone = 'ready' | 'warning' | 'error' | 'pending';
@@ -399,7 +417,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   const previewEntries = React.useMemo(
     () =>
       buildOnboardingStyleCarouselEntries(
-        STYLE_AVAILABLE_DEFAULT_IMAGES,
+        ONBOARDING_STYLE_PREVIEW_IMAGES,
         fallbackStyleRecipePreview,
       ),
     [],

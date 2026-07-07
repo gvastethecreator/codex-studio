@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-018
 packId: pack_12
-name: Storm Citadel Defense Grid
+name: Defense Grid Storm Citadel
 styleAnchors:
-  - 'Storm Citadel Defense Grid'
-displayName: 'Storm Citadel Defense'
+  - Defense Grid 2 gameplay screenshots
+  - Defense Grid Storm Citadel
+displayName: Defense Grid Storm Citadel
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:
@@ -14,83 +15,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-defense-grid-2
+  - render-strategy-tactics
+  - camera-isometric-top-down
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through protected objective logic; defense wave readability; systemic
-    tactical overlay without UI; frontier science fiction, hard-surface machinery, exposed
-    infrastructure, hazard alarms, and operational scale, using the preset as art direction rather
-    than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Defense Grid 2 gameplay screenshots:
+    tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien
+    waves, and base-defense geometry. Apply this after prompt X; prompt X supplies the subject,
+    action, setting, and intensity while this preset supplies capture language, camera grammar,
+    material behavior, playable readability, and finish. Do not recreate an exact official level,
+    character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express operational scale, machine
-    relationships, frontier labor, breach pressure, and engineered movement without requiring a mech
-    battle.
+    Preserve the user's subject and transform it into a playable Defense Grid 2-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors,
-    gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability,
-    thumbnail clarity, and subject recognition.
+    Use a Defense Grid 2-informed palette: cool steel blue, electric cyan, warning orange, alien
+    green, dark storm grey, and white tactical highlights. Keep value grouping legible at gameplay
+    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
+    rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with lightning flashes and shield-grid glow; bay floodlights, warning
-    strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and
-    shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt
-    content.
+    Light the image through turret beams, shield glow, storm flashes, muzzle bursts, and path-edge
+    illumination. Lighting must clarify the playable route, threat, focal subject, or objective and
+    avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from scratched armor, hydraulic joints, carbon shells, bolted plates, polymer
-    glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and
-    terrain share the same production-world logic.
+    Build surfaces from sci-fi platforms, modular towers, energy pylons, storm-wet metal, alien
+    carapace, and tileable base panels. Materials should feel like in-engine game assets captured
+    during play, with enough texture identity to separate props, terrain, characters, hazards, and
+    interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from frontier science fiction, hard-surface machinery,
-    exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with isometric defense view with clear enemy path, turret placement nodes, resource
+    counters, and wave-reading depth. The frame should read as a plausible gameplay capture; include
+    UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood defense under weather pressure; tense, industrial, exploratory, militarized,
-    frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or
-    violent when prompt X asks for it, but the preset should not force a new storyline.
+    Carry a Defense Grid 2-derived mood: methodical, defensive, synthetic, urgent, and strategic.
+    The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
+    asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no
-    asset-render isolation; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: tower-defense HUD is allowed:
+    wave info, resources, tower icons, range rings, and health cores should be cleanly integrated.
+    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
+    logos, stock-photo polish, or random interface clutter.
   key_features: >-
-    Storm, Citadel, Defense, Grid; protected objective logic; dust ochre, oxide orange, utility
-    white, alarm red, teal monitors, gunmetal, and industrial blue; lightning flashes and
-    shield-grid glow; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer
-    glass, cables, and mineral dust; fortified skyline and defense-grid strata; defense under
-    weather pressure
+    Defense Grid 2 gameplay screenshots; tower-defense gameplay capture with elevated camera,
+    winding paths, glowing turret ranges, alien waves, and base-defense geometry; cool steel blue,
+    electric cyan, warning orange, alien green, dark storm grey, and white tactical highlights;
+    turret beams, shield glow, storm flashes, muzzle bursts, and path-edge illumination; sci-fi
+    platforms, modular towers, energy pylons, storm-wet metal, alien carapace, and tileable base
+    panels; isometric defense view with clear enemy path, turret placement nodes, resource counters,
+    and wave-reading depth; methodical, defensive, synthetic, urgent, and strategic; HUD guidance:
+    tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores
+    should be cleanly integrated
   creative_brief: >-
-    Apply Storm Citadel Defense Grid as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Defense Grid Storm Citadel as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through capture references from Defense Grid 2: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - chaotic-ui
-  - low-contrast
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - asset-render isolation
-  - generic sci-fi corridor
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-018.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, chaotic-ui, low-contrast, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation,
-    generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card
-    framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Defense Grid 2
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores
+    should be cleanly integrated
+  renderFamily: strategy-tactics
+  cameraFamily: isometric-top-down
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -99,6 +128,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sci-fi-frontiers-and-mech-zones
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-defense-grid-2
+    - render-strategy-tactics
+    - camera-isometric-top-down
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

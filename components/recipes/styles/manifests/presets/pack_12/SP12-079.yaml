@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP12-079
 packId: pack_12
-name: Radiant Citadel Co-op Hold
+name: Orbital Drop Citadel Hold
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:
@@ -11,81 +11,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-third-person-coop-extraction
+  - render-third-person-coop-shooter
+  - camera-third-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through protected objective logic; tactical warfront staging, defensive
-    geometry, damage history, co-op readability, and last-stand pressure, using the preset as art
-    direction rather than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original third-person co-op extraction shooter
+    captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or
+    machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op
+    battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game
+    with different armor, factions, enemies, UI icons, and objective props.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express defensive pressure, breach
-    geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle
-    scene.
+    Preserve the user's subject and transform it into a playable third-person co-op hold screenshot
+    subject: keep clear squad/object/threat function, cover, objective zone, incoming pressure,
+    call-in area, and extraction route without copying source factions or armor.
   color_and_tone: >-
-    Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and
-    siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use an orbital drop palette: dusty battlefield tan, warning red, tactical blue, smoke grey,
+    muzzle orange, alien green, and hard white objective light. Keep value grouping legible amid
+    chaos.
   lighting_and_shadow: >-
-    Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora
-    glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards,
-    factions, or focal threats without hiding prompt content.
+    Light the image through orbital strike glare, muzzle flashes, smoke, bug acid glow, objective
+    beacon light, and dusty sun haze. Lighting must clarify the playable route, threat, focal
+    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass,
-    ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture,
-    and terrain share the same production-world logic.
+    Build surfaces from tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke,
+    and sci-fi military equipment. Materials should feel like in-engine game assets captured during
+    play, with enough texture identity to separate props, terrain, characters, hazards, and
+    interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage
-    history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with third-person squad camera, objective hold zone, ally/enemy spacing, incoming
+    projectile arcs, cover, and one clear defend/extract decision. Avoid isometric strategy
+    overview.
   atmosphere_and_mood: >-
-    Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be
-    adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not
-    force a new storyline.
+    Carry an original orbital-drop mood: loud, desperate, satirical, militarized, cooperative, and
+    explosive.
   rendering_and_quality: >-
-    Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic
-    poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as coherent third-person co-op shooter screenshot style, not concept art: small
+    contextual HUD, ammo/ability pips, objective icons, and call-in markers can appear abstractly.
+    Maintain heavy-denoise clarity and no exact stratagem UI.
   key_features: >-
-    Radiant, Citadel, Hold; protected objective logic; smoke grey, worn iron, battlefield blue,
-    ember orange, frost white, and siege-banner accents; searchlights, muzzle flashes, burning
-    horizons, storm breaks, aurora glow, and smoke-filtered sun; shattered masonry, scorched metal,
-    splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; fortified
-    skyline and defense-grid strata; urgent, battered, heroic, grim, tactical, and physically costly
+    Helldivers 2 gameplay screenshots; third-person co-op shooter capture with squad spacing, alien
+    swarms, stratagem chaos, defensive objectives, and friendly-fire battlefield readability; dusty
+    battlefield tan, black armor, yellow hazard UI, bug green, red warning lasers, and explosion
+    orange; orbital strike glare, muzzle flashes, smoke, bug acid glow, objective beacon light, and
+    dusty sun haze; tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke, and
+    sci-fi military equipment; third-person squad camera with objective zone, incoming swarm lanes,
+    teammate markers, stratagem impact areas, and extraction pressure; chaotic, militarized,
+    satirical, desperate, and cooperative; HUD guidance: co-op HUD is welcome: ammo, stratagem
+    inputs, objective timer, squad icons, compass, and extraction markers
   creative_brief: >-
-    Apply Radiant Citadel Co-op Hold as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Orbital Drop Citadel Hold as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through third-person co-op extraction references: squad camera, objective
+    pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct
+    Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact
+    stratagem UI.
 avoidRules:
   - watermark
-  - text
   - logo
-  - grimdark
-  - blur
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - chaotic poster overcrowding
-  - unreadable battle smoke
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct Helldivers clone
+  - strategy tactics camera
+  - exact stratagem UI
+  - recognizable faction armor
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-079.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, grimdark, blur, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster
-    overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI,
-    official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, direct Helldivers clone, strategy tactics camera, exact
+    stratagem UI, recognizable faction armor
+  referenceGame: Original third-person co-op extraction shooter, Helldivers-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    co-op HUD is welcome: ammo, stratagem inputs, objective timer, squad icons, compass, and
+    extraction markers
+  renderFamily: third-person-coop-shooter
+  cameraFamily: third-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -94,8 +124,19 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sieges-warfronts-and-last-stands
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-third-person-coop-extraction
+    - render-third-person-coop-shooter
+    - camera-third-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Orbital Drop Citadel Hold
+styleAnchors:
+  - third-person co-op extraction shooter screenshots
+  - orbital drop defensive hold
+  - Orbital Drop Citadel Hold

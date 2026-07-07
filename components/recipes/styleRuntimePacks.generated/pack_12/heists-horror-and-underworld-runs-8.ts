@@ -5,310 +5,315 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-016',
-    name: 'Shadow Opera Assassin Court',
-    displayName: 'Shadow Opera Assassins',
-    styleAnchors: ['Shadow Opera Assassin Court'],
+    name: 'Dishonored Aristocrat Stealth',
+    displayName: 'Dishonored Aristocrat Stealth',
+    styleAnchors: ['Dishonored 2 gameplay screenshots', 'Dishonored Aristocrat Stealth'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, sci-fi-ui, flat-colors, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through silent strike readability; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Dishonored 2 gameplay screenshots: first-person stealth immersive-sim capture with aristocratic interiors, mask-like silhouettes, vertical routes, and assassination sandbox clarity. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Dishonored 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Dishonored 2-informed palette: oil-paint teal, tobacco brown, brass gold, blood red, marble cream, and cold moon blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with black velvet shadow and thin spotlight; theater spotlight and red curtain shadow; knife-thin spotlights and masked shadow; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through window shafts, candle pools, supernatural blue abilities, hard guard silhouettes, and dusty indoor contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from velvet, gold trim, masks, and stage dust; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from painted plaster, brass machinery, velvet curtains, worn stone, whale-oil devices, masks, and aristocratic clutter. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person stealth framing with ledges, guard patrol sightlines, blink routes, props, and alternate entry paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood assassin-court secrecy; decadent assassination theater; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Dishonored 2-derived mood: decadent, predatory, conspiratorial, elegant, and violent. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Shadow Opera Assassin Court as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: ability icons, mana/health bars, objective markers, and stealth cues can appear if they feel like immersive-sim HUD. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Shadow, Opera, Assassin, Court; silent strike readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; black velvet shadow and thin spotlight; velvet, gold trim, masks, and stage dust; balcony layers, stage axes, and masked audience depth; assassin-court secrecy',
+        'Dishonored 2 gameplay screenshots; first-person stealth immersive-sim capture with aristocratic interiors, mask-like silhouettes, vertical routes, and assassination sandbox clarity; oil-paint teal, tobacco brown, brass gold, blood red, marble cream, and cold moon blue; window shafts, candle pools, supernatural blue abilities, hard guard silhouettes, and dusty indoor contrast; painted plaster, brass machinery, velvet curtains, worn stone, whale-oil devices, masks, and aristocratic clutter; first-person stealth framing with ledges, guard patrol sightlines, blink routes, props, and alternate entry paths; decadent, predatory, conspiratorial, elegant, and violent; HUD guidance: ability icons, mana/health bars, objective markers, and stealth cues can appear if they feel like immersive-sim HUD',
+      creative_brief:
+        'Use Dishonored Aristocrat Stealth as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Dishonored 2: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-019',
-    name: 'Forgotten Subway Mutation Zone',
-    displayName: 'Mutant Subway Horror',
-    styleAnchors: ['Forgotten Subway Mutation Zone'],
+    name: 'Metro Mutant Subway Horror',
+    displayName: 'Metro Mutant Subway Horror',
+    styleAnchors: ['Metro 2033 Redux gameplay screenshots', 'Metro Mutant Subway Horror'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, cheerful-light, clean-surfaces, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Metro 2033 Redux gameplay screenshots: first-person post-apocalyptic subway capture with flashlight tunnels, gas masks, mutant silhouettes, and Soviet underground survival detail. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Metro 2033 Redux-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Metro 2033 Redux-informed palette: dirty concrete grey, rust brown, flashlight white, toxic green, muzzle orange, and black tunnel void. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flashlight cones, headlamp beams, station fires, muzzle flash, and sparse emergency bulbs. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from mildew tile, old ads without text, and wet rails; old tile, wet rails, and tunnel mold; wet organic growth over subway tile; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from wet rails, cracked tile, patched weapons, gas-mask glass, old posters without readable text, and grime-heavy pipes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person tunnel framing with weapon, mask vignette, route choke points, enemy approach lanes, and scavenged-object readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood abandoned transit dread; infection creeping through infrastructure; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Metro 2033 Redux-derived mood: claustrophobic, desperate, feral, cold, and underground. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal survival HUD, watch/gas-mask indicators, ammo checks, and diegetic device cues are allowed. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Forgotten, Subway, Mutation, Zone; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; mildew tile, old ads without text, and wet rails; linear tunnel dread; abandoned transit dread',
+        'Metro 2033 Redux gameplay screenshots; first-person post-apocalyptic subway capture with flashlight tunnels, gas masks, mutant silhouettes, and Soviet underground survival detail; dirty concrete grey, rust brown, flashlight white, toxic green, muzzle orange, and black tunnel void; flashlight cones, headlamp beams, station fires, muzzle flash, and sparse emergency bulbs; wet rails, cracked tile, patched weapons, gas-mask glass, old posters without readable text, and grime-heavy pipes; first-person tunnel framing with weapon, mask vignette, route choke points, enemy approach lanes, and scavenged-object readability; claustrophobic, desperate, feral, cold, and underground; HUD guidance: minimal survival HUD, watch/gas-mask indicators, ammo checks, and diegetic device cues are allowed',
       creative_brief:
-        "Apply Forgotten Subway Mutation Zone as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Metro Mutant Subway Horror as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Metro 2033 Redux: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-024',
-    name: 'Temple Runner Trap Gauntlet',
-    displayName: 'Trap Gauntlet Adventure',
-    styleAnchors: ['Temple Runner Trap Gauntlet'],
+    name: 'Tomb Raider Trap Gauntlet',
+    displayName: 'Tomb Raider Trap Gauntlet',
+    styleAnchors: ['Tomb Raider gameplay screenshots', 'Tomb Raider Trap Gauntlet'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, static, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through timed hazard readability; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Tomb Raider gameplay screenshots: third-person cinematic adventure capture with ancient traps, climbing routes, torch-lit ruins, and survival-action traversal. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Tomb Raider-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Tomb Raider-informed palette: wet stone grey, torch orange, jungle green, old gold, dark cave brown, and blood-warm accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through torch pools, cave shafts, fire sparks, silhouette danger, and cinematic contrast around traversal hazards. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from worn stone, carved traps, and ritual metal; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from mud, rope, broken stone, wood spikes, cloth wraps, relic metal, wet walls, and debris-heavy ruins. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with over-shoulder third-person framing with ledges, trap lines, puzzle props, escape vectors, and cinematic action depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Tomb Raider-derived mood: urgent, archaeological, dangerous, physical, and survivalist. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal adventure HUD or button prompts are allowed; avoid menu overlays and large text tutorials. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Temple, Runner, Trap, Gauntlet; timed hazard readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; worn stone, carved traps, and ritual metal; trap gauntlet depth; dangerous, clandestine, haunted, predatory, decadent, and unstable',
+        'Tomb Raider gameplay screenshots; third-person cinematic adventure capture with ancient traps, climbing routes, torch-lit ruins, and survival-action traversal; wet stone grey, torch orange, jungle green, old gold, dark cave brown, and blood-warm accents; torch pools, cave shafts, fire sparks, silhouette danger, and cinematic contrast around traversal hazards; mud, rope, broken stone, wood spikes, cloth wraps, relic metal, wet walls, and debris-heavy ruins; over-shoulder third-person framing with ledges, trap lines, puzzle props, escape vectors, and cinematic action depth; urgent, archaeological, dangerous, physical, and survivalist; HUD guidance: minimal adventure HUD or button prompts are allowed; avoid menu overlays and large text tutorials',
       creative_brief:
-        "Apply Temple Runner Trap Gauntlet as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Tomb Raider Trap Gauntlet as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Tomb Raider: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-030',
-    name: 'Cursed Carnival Showdown',
-    displayName: 'Cursed Carnival Combat',
-    styleAnchors: ['Cursed Carnival Showdown'],
+    name: 'Cuphead Carnival Boss',
+    displayName: 'Cuphead Carnival Boss',
+    styleAnchors: ['Cuphead gameplay screenshots', 'Cuphead Carnival Boss'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, clean-theme, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Cuphead gameplay screenshots: 1930s rubber-hose boss-fight capture with hand-inked characters, carnival props, flat stage lanes, and chaotic projectile readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Cuphead-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with poison carnival color and dirty bulbs; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Cuphead-informed palette: aged paper cream, circus red, mustard yellow, black ink, turquoise shadows, and candy pink highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with flickering midway lights; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flat animation lighting, painted stage glow, muzzle-flash pops, and film-flicker value shifts. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from painted props, grime, and broken bulbs; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from ink outlines, cel paint, watercolor backgrounds, film grain, squash-and-stretch sprites, and hand-drawn projectile shapes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-view boss arena with bullet lanes, player jump space, phase props, and vintage cartoon stage composition. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood unlucky spectacle and poisoned celebration; cursed spectacle; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Cuphead-derived mood: manic, theatrical, cruelly playful, vintage, and precise. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: small health/cards/super meter can appear as period-styled gameplay UI; avoid modern overlays. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Cursed, Carnival, Showdown; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; poison carnival color and dirty bulbs; flickering midway lights; painted props, grime, and broken bulbs; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; unlucky spectacle and poisoned celebration',
+        'Cuphead gameplay screenshots; 1930s rubber-hose boss-fight capture with hand-inked characters, carnival props, flat stage lanes, and chaotic projectile readability; aged paper cream, circus red, mustard yellow, black ink, turquoise shadows, and candy pink highlights; flat animation lighting, painted stage glow, muzzle-flash pops, and film-flicker value shifts; ink outlines, cel paint, watercolor backgrounds, film grain, squash-and-stretch sprites, and hand-drawn projectile shapes; side-view boss arena with bullet lanes, player jump space, phase props, and vintage cartoon stage composition; manic, theatrical, cruelly playful, vintage, and precise; HUD guidance: small health/cards/super meter can appear as period-styled gameplay UI; avoid modern overlays',
       creative_brief:
-        "Apply Cursed Carnival Showdown as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Cuphead Carnival Boss as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Cuphead: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-049',
-    name: 'Thorn Castle Moon Raid',
-    displayName: 'Thorn Castle Stealth',
-    styleAnchors: ['Thorn Castle Moon Raid'],
+    name: 'Symphony Thorn Castle Raid',
+    displayName: 'Symphony Thorn Castle Raid',
+    styleAnchors: [
+      'Castlevania: Symphony of the Night gameplay screenshots',
+      'Symphony Thorn Castle Raid',
+    ],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, daylight, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Castlevania: Symphony of the Night gameplay screenshots: gothic 2D metroidvania capture with moonlit castle halls, ornate enemies, side-view exploration, and crisp sprite combat. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Castlevania: Symphony of the Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Castlevania: Symphony of the Night-informed palette: midnight blue, candle gold, crimson drapery, stone grey, bone white, and violet magic. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through candle flicker, moon windows, spell glows, hit flashes, and dark parallax backgrounds. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from black vines, castle stone, and moonlit thorns; thorned stone, iron gates, and moon-wet masonry; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from pixel stonework, thorn vines, gothic arches, capes, monsters, relic pickups, and ornate tile patterns. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-scrolling room composition with platforms, enemy arcs, door exits, and compact action-RPG HUD readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood gothic raid menace; gothic raid pressure; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Castlevania: Symphony of the Night-derived mood: romantic, nocturnal, gothic, elegant, and dangerous. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: HP/MP bars, item icons, map rooms, and small damage numbers are allowed as classic metroidvania UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Thorn, Castle, Moon, Raid; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; black vines, castle stone, and moonlit thorns; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; gothic raid menace',
+        'Castlevania: Symphony of the Night gameplay screenshots; gothic 2D metroidvania capture with moonlit castle halls, ornate enemies, side-view exploration, and crisp sprite combat; midnight blue, candle gold, crimson drapery, stone grey, bone white, and violet magic; candle flicker, moon windows, spell glows, hit flashes, and dark parallax backgrounds; pixel stonework, thorn vines, gothic arches, capes, monsters, relic pickups, and ornate tile patterns; side-scrolling room composition with platforms, enemy arcs, door exits, and compact action-RPG HUD readability; romantic, nocturnal, gothic, elegant, and dangerous; HUD guidance: HP/MP bars, item icons, map rooms, and small damage numbers are allowed as classic metroidvania UI',
       creative_brief:
-        "Apply Thorn Castle Moon Raid as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Symphony Thorn Castle Raid as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Castlevania: Symphony of the Night: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-050',
-    name: 'Polar Signal Tower Outbreak',
-    displayName: 'Polar Signal Outbreak',
-    styleAnchors: ['Polar Signal Tower Outbreak'],
+    name: 'Signalis Polar Signal Outbreak',
+    displayName: 'Signalis Polar Signal Outbreak',
+    styleAnchors: ['Signalis gameplay screenshots', 'Signalis Polar Signal Outbreak'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, tropical, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through communication failure pressure; infection spread and containment retreat; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Signalis gameplay screenshots: retro survival-horror capture with fixed/overhead rooms, low-poly industrial interiors, icy facilities, and analog interface dread. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Signalis-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with cold white, signal red, and blue-grey steel; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Signalis-informed palette: black, off-white, hospital green, warning red, cold blue, and rust-brown industrial stains. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with radio beacon through snowfall; blinking radio beacon and static glow; beacon glow in cold air; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through hard flashlight pools, red alarm panels, CRT glow, surgical fluorescent strips, and deep fixed-camera darkness. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from PS1-like low-poly props, metal doors, tiled floors, paper notes without readable text, snow grime, and analog machinery. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with fixed-camera or top-down survival room framing with inventory pressure, locked doors, enemy placement, and puzzle-object clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood panic under cold weather; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Signalis-derived mood: lonely, clinical, uncanny, cold, and oppressive. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: retro inventory/status panels, health warning, and small interaction prompts can appear if they feel survival-horror coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Polar, Signal, Tower, Outbreak; communication failure pressure; cold white, signal red, and blue-grey steel; radio beacon through snowfall; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; vertical signal landmark and perimeter route; panic under cold weather',
+        'Signalis gameplay screenshots; retro survival-horror capture with fixed/overhead rooms, low-poly industrial interiors, icy facilities, and analog interface dread; black, off-white, hospital green, warning red, cold blue, and rust-brown industrial stains; hard flashlight pools, red alarm panels, CRT glow, surgical fluorescent strips, and deep fixed-camera darkness; PS1-like low-poly props, metal doors, tiled floors, paper notes without readable text, snow grime, and analog machinery; fixed-camera or top-down survival room framing with inventory pressure, locked doors, enemy placement, and puzzle-object clarity; lonely, clinical, uncanny, cold, and oppressive; HUD guidance: retro inventory/status panels, health warning, and small interaction prompts can appear if they feel survival-horror coherent',
       creative_brief:
-        "Apply Polar Signal Tower Outbreak as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Signalis Polar Signal Outbreak as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Signalis: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-054',
-    name: 'Copper Canyon Train Robbery',
-    displayName: 'Copper Canyon Train Heist',
-    styleAnchors: ['Copper Canyon Train Robbery'],
+    name: 'Red Dead Copper Train Heist',
+    displayName: 'Red Dead Copper Train Heist',
+    styleAnchors: ['Red Dead Redemption 2 gameplay screenshots', 'Red Dead Copper Train Heist'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, rainy-city, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through robbery route timing; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Red Dead Redemption 2 gameplay screenshots: third-person western action capture with train robbery staging, cinematic frontier lighting, cover positions, and grounded character motion. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Red Dead Redemption 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with copper orange, canyon shadow, and worn leather; red rock, dust tan, and hard blue shadow; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Red Dead Redemption 2-informed palette: dust tan, copper sunset, black iron train, denim blue, leather brown, and muzzle-flash orange. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through golden-hour sun, train lamp glow, smoke haze, gunfire flashes, and long canyon shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from steam metal and worn upholstery; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from wood planks, worn leather, iron rails, smoke, dust, horse tack, canvas, and period firearm metal. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person over-shoulder action framing with train length, cover beats, rider positions, and cinematic horizon depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Red Dead Redemption 2-derived mood: lawless, weighty, dusty, tense, and cinematic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal western HUD, reticle, weapon wheel hint, minimap, or wanted indicators can appear if coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Copper, Canyon, Train, Robbery; robbery route timing; copper orange, canyon shadow, and worn leather; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; steam metal and worn upholstery; cliff corridors and long-range sightlines; dangerous, clandestine, haunted, predatory, decadent, and unstable',
+        'Red Dead Redemption 2 gameplay screenshots; third-person western action capture with train robbery staging, cinematic frontier lighting, cover positions, and grounded character motion; dust tan, copper sunset, black iron train, denim blue, leather brown, and muzzle-flash orange; golden-hour sun, train lamp glow, smoke haze, gunfire flashes, and long canyon shadows; wood planks, worn leather, iron rails, smoke, dust, horse tack, canvas, and period firearm metal; third-person over-shoulder action framing with train length, cover beats, rider positions, and cinematic horizon depth; lawless, weighty, dusty, tense, and cinematic; HUD guidance: minimal western HUD, reticle, weapon wheel hint, minimap, or wanted indicators can appear if coherent',
       creative_brief:
-        "Apply Copper Canyon Train Robbery as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Red Dead Copper Train Heist as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Red Dead Redemption 2: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-057',
-    name: 'Verdigris Harbor Pirate Skies',
-    displayName: 'Verdigris Pirate Skies',
-    styleAnchors: ['Verdigris Harbor Pirate Skies'],
+    name: 'Sea of Thieves Pirate Skies',
+    displayName: 'Sea of Thieves Pirate Skies',
+    styleAnchors: ['Sea of Thieves gameplay screenshots', 'Sea of Thieves Pirate Skies'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, modern-cars, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Sea of Thieves gameplay screenshots: first-person pirate adventure capture with stylized ships, bright seas, storm skies, treasure props, and playful crew readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Sea of Thieves-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with green copper, storm blue, and pirate brass; wet harbor blues, sodium orange, and fog black; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Sea of Thieves-informed palette: turquoise ocean, sunset orange, sail cream, brass gold, storm purple, and verdigris green. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through golden horizon, lantern glow, cannon flashes, moonlit waves, and storm lightning. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from oxidized metal and wet sails; docks, hulls, ropes, and rain-slick stone; sails, brass, wet planks, and storm rope; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from painted wood, rope, canvas sails, water spray, treasure metal, skull props, and chunky stylized pirate gear. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person ship/deck framing with wheel/cannon/rigging foreground, island horizon, crew spacing, and naval action cues. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood airborne underworld adventure; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Sea of Thieves-derived mood: roguish, open-sea, playful, stormy, and adventurous. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal pirate HUD, radial item hints, compass, and ship damage cues are allowed if integrated. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Verdigris, Harbor, Pirate, Skies; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; green copper, storm blue, and pirate brass; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; oxidized metal and wet sails; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; airborne underworld adventure',
+        'Sea of Thieves gameplay screenshots; first-person pirate adventure capture with stylized ships, bright seas, storm skies, treasure props, and playful crew readability; turquoise ocean, sunset orange, sail cream, brass gold, storm purple, and verdigris green; golden horizon, lantern glow, cannon flashes, moonlit waves, and storm lightning; painted wood, rope, canvas sails, water spray, treasure metal, skull props, and chunky stylized pirate gear; first-person ship/deck framing with wheel/cannon/rigging foreground, island horizon, crew spacing, and naval action cues; roguish, open-sea, playful, stormy, and adventurous; HUD guidance: minimal pirate HUD, radial item hints, compass, and ship damage cues are allowed if integrated',
       creative_brief:
-        "Apply Verdigris Harbor Pirate Skies as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Sea of Thieves Pirate Skies as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Sea of Thieves: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-066',
-    name: 'Abyss Rail Horror Transit',
+    name: 'Dead Space Abyss Rail Transit',
+    displayName: 'Dead Space Abyss Rail Transit',
+    styleAnchors: ['Dead Space gameplay screenshots', 'Dead Space Abyss Rail Transit'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, cheerful, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through linear route pressure; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Dead Space gameplay screenshots: third-person survival-horror capture with industrial ship corridors, tram stations, diegetic suit HUD, and dismemberment-combat tension. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable Dead Space-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with bottomless blue-black; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Dead Space-informed palette: black metal, sickly green, medical blue, blood red, rust orange, and cold white work lights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with distant abyss glow; failing carriage lights; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flickering ship lights, stasis blue, muzzle cutter beams, alarm red, and deep vent shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from grated floors, ribbed walls, suit armor, necrotic flesh, cables, tram rails, and dirty sci-fi machinery. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with over-shoulder tight corridor framing with weapon aiming beam, enemy limbs, door paths, and diegetic objective lines. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood submerged dread; claustrophobic body-horror transit; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Dead Space-derived mood: claustrophobic, industrial, grotesque, and panic-controlled. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: diegetic spine health, ammo projection, stasis meter, and holographic inventory cues are core to the style. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Abyss, Rail, Horror, Transit; linear route pressure; bottomless blue-black; distant abyss glow; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; long track perspective and carriage modules; submerged dread',
+        'Dead Space gameplay screenshots; third-person survival-horror capture with industrial ship corridors, tram stations, diegetic suit HUD, and dismemberment-combat tension; black metal, sickly green, medical blue, blood red, rust orange, and cold white work lights; flickering ship lights, stasis blue, muzzle cutter beams, alarm red, and deep vent shadows; grated floors, ribbed walls, suit armor, necrotic flesh, cables, tram rails, and dirty sci-fi machinery; over-shoulder tight corridor framing with weapon aiming beam, enemy limbs, door paths, and diegetic objective lines; claustrophobic, industrial, grotesque, and panic-controlled; HUD guidance: diegetic spine health, ammo projection, stasis meter, and holographic inventory cues are core to the style',
       creative_brief:
-        "Apply Abyss Rail Horror Transit as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Dead Space Abyss Rail Transit as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Dead Space: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-069',
-    name: 'Static Dune Radio Wars',
-    displayName: 'Static Dune Radio War',
-    styleAnchors: ['Static Dune Radio Wars'],
+    name: 'HighFleet Static Dune War',
+    displayName: 'HighFleet Static Dune War',
+    styleAnchors: ['HighFleet gameplay screenshots', 'HighFleet Static Dune War'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, text, logo, fantasy-castle, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog, safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on HighFleet gameplay screenshots: dieselpunk desert war capture with radar screens, ship silhouettes, tactical maps, analog targeting, and gritty command-interface pressure. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express stealth timing, illicit access, trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist shot.",
+        "Preserve the user's subject and transform it into a playable HighFleet-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a HighFleet-informed palette: sand beige, radar green, oil black, warning red, brass yellow, and smoky grey. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with radio-static flicker; knife-edge spotlights, emergency bulbs, sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through CRT glow, explosion bloom, desert glare, spotlight cones, and instrument-panel illumination. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from grainy screens and antenna silhouettes; antenna wires, static screens, and dune dust; velvet curtains, rusted rails, wet tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from chunky airship metal, rivets, paper maps, oscilloscope lines, radio panels, smoke, and worn military hardware. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with mix of side-view combat, command map, and instrument UI with radar arcs, targeting gauges, and convoy-route logic. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood signal-war paranoia; dangerous, clandestine, haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a HighFleet-derived mood: tense, analog, militarized, dusty, and systems-heavy. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: dense analog HUD is encouraged: radar, radio, gauges, targeting lines, fuel/ammo panels, and map overlays. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Static, Dune, Radio, Wars; illicit route planning, horror escalation, underworld thresholds, trap timing, and stealth readability; inky black, sick green, opera red, copper shadow, moonlit blue, rust, and carnival poison color; radio-static flicker; grainy screens and antenna silhouettes; escape lanes, hiding pockets, trap corridors, surveillance angles, looming thresholds, and reveal-after-reveal depth; signal-war paranoia',
+        'HighFleet gameplay screenshots; dieselpunk desert war capture with radar screens, ship silhouettes, tactical maps, analog targeting, and gritty command-interface pressure; sand beige, radar green, oil black, warning red, brass yellow, and smoky grey; CRT glow, explosion bloom, desert glare, spotlight cones, and instrument-panel illumination; chunky airship metal, rivets, paper maps, oscilloscope lines, radio panels, smoke, and worn military hardware; mix of side-view combat, command map, and instrument UI with radar arcs, targeting gauges, and convoy-route logic; tense, analog, militarized, dusty, and systems-heavy; HUD guidance: dense analog HUD is encouraged: radar, radio, gauges, targeting lines, fuel/ammo panels, and map overlays',
       creative_brief:
-        "Apply Static Dune Radio Wars as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use HighFleet Static Dune War as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from HighFleet: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

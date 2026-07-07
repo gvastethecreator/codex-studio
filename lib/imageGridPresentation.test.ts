@@ -1,10 +1,13 @@
 import { describe, expect, it } from 'vite-plus/test';
 import {
   estimateImageGridItemHeight,
+  estimateImageGridListItemHeight,
   resolveImageGridColumnCount,
   resolveImageGridAspectRatio,
   resolveImageGridIntrinsicSize,
+  resolveImageGridItemWidth,
   resolveImageGridTemplateColumns,
+  resolveImageGridVirtualWindow,
   shouldPriorityLoadImageGridItem,
   sortImageGridImages,
 } from './imageGridPresentation';
@@ -73,6 +76,31 @@ describe('imageGridPresentation', () => {
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 0, viewportHeight: 800 })).toBe(true);
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 850, viewportHeight: 800 })).toBe(true);
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 920, viewportHeight: 800 })).toBe(false);
+  });
+
+  it('resolves virtual windows with before and after spacers', () => {
+    expect(
+      resolveImageGridVirtualWindow({
+        itemSizes: [100, 100, 100, 100, 100],
+        scrollTop: 250,
+        viewportHeight: 100,
+        overscanPx: 0,
+      }),
+    ).toEqual({
+      startIndex: 2,
+      endIndex: 4,
+      beforeHeight: 200,
+      afterHeight: 100,
+      totalHeight: 500,
+    });
+  });
+
+  it('estimates virtualized item dimensions from gallery geometry', () => {
+    expect(
+      resolveImageGridItemWidth({ containerWidth: 640, columnCount: 3, thumbnailSize: 176 }),
+    ).toBeCloseTo(202.66, 1);
+    expect(estimateImageGridListItemHeight({ thumbnailSize: 176, viewportWidth: 390 })).toBe(220);
+    expect(estimateImageGridListItemHeight({ thumbnailSize: 176, viewportWidth: 900 })).toBe(132);
   });
 
   it('resolves columns for each gallery view mode', () => {

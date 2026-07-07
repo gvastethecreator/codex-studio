@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-001
 packId: pack_12
-name: Neon Samurai District
+name: Katana Zero Neo-Noir Sideview
 styleAnchors:
-  - 'Neon Samurai District'
-displayName: 'Neon Blade Urban Ops'
+  - Katana ZERO gameplay screenshots
+  - Katana Zero Neo-Noir Sideview
+displayName: Katana Zero Neo-Noir Sideview
 category: 1. Neon Urban & Night Ops
 version: 1
 supportedTasks:
@@ -14,80 +15,113 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - neon-urban-and-night-ops
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-katana-zero
+  - render-retro-pixel-low-poly
+  - camera-side-view
+  - hud-minimal-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through disciplined duel silhouette; urban night-action readability,
-    vertical route layering, wet asphalt glow, and covert pressure, using the preset as art
-    direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Katana ZERO gameplay screenshots: 2D neo-noir
+    action-platformer capture with side-view rooms, instant-death combat spacing, motel interiors,
+    glass partitions, and cinematic pixel staging. Apply this after prompt X; prompt X supplies the
+    subject, action, setting, and intensity while this preset supplies capture language, camera
+    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
+    level, character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express covert movement, chase pressure,
-    street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban
-    scene.
+    Preserve the user's subject and transform it into a playable Katana ZERO-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with electric magenta, cyan, acid green, and glossy black; black glass, wet
-    concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal
-    hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use a Katana ZERO-informed palette: black hotel shadow, red blood accents, sodium amber, teal
+    window light, magenta signage, and small white bullet highlights. Keep value grouping legible at
+    gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or
+    objective cues rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with neon edge glow and wet reflections; practical neon, police strobes,
-    backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow
-    pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through hard interior cuts, neon spill through windows, slash trails, muzzle
+    flashes, and time-slow contrast pulses. Lighting must clarify the playable route, threat, focal
+    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from lacquer armor, rain cloth, and blade shine; rain-slick pavement, carbon
-    panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props,
-    clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.
+    Build surfaces from chunky pixel silhouettes, glossy tile, wood paneling, rain glass, smoke
+    puffs, shattered props, and clean sprite edges. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from urban night-action readability, vertical route
-    layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with strict side-on room composition with readable platform lanes, enemy spacing, door
+    exits, throwable props, and action freeze timing. The frame should read as a plausible gameplay
+    capture; include UI/HUD only when it matches the source game's visual logic and improves
+    clarity.
   atmosphere_and_mood: >-
-    Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can
-    be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should
-    not force a new storyline.
+    Carry a Katana ZERO-derived mood: stylish, brutal, nocturnal, tense, and choreographed like a
+    one-screen execution puzzle. The preset can become adult, violent, eerie, seductive, cozy,
+    tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and
-    no menu or HUD dependence; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: minimal HUD; use tiny combat
+    prompts or replay/timer cues only when they help the screenshot feel playable. Maintain
+    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
+    stock-photo polish, or random interface clutter.
   key_features: >-
-    Neon, Samurai, District; disciplined duel silhouette; electric magenta, cyan, acid green, and
-    glossy black; neon edge glow and wet reflections; lacquer armor, rain cloth, and blade shine;
-    stacked rooftops, underpasses, side routes, cover layers, vanishing street lines, and
-    mission-node depth; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial
+    Katana ZERO gameplay screenshots; 2D neo-noir action-platformer capture with side-view rooms,
+    instant-death combat spacing, motel interiors, glass partitions, and cinematic pixel staging;
+    black hotel shadow, red blood accents, sodium amber, teal window light, magenta signage, and
+    small white bullet highlights; hard interior cuts, neon spill through windows, slash trails,
+    muzzle flashes, and time-slow contrast pulses; chunky pixel silhouettes, glossy tile, wood
+    paneling, rain glass, smoke puffs, shattered props, and clean sprite edges; strict side-on room
+    composition with readable platform lanes, enemy spacing, door exits, throwable props, and action
+    freeze timing; stylish, brutal, nocturnal, tense, and choreographed like a one-screen execution
+    puzzle; HUD guidance: minimal HUD; use tiny combat prompts or replay/timer cues only when they
+    help the screenshot feel playable
   creative_brief: >-
-    Apply Neon Samurai District as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Katana Zero Neo-Noir Sideview as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from Katana ZERO: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - lowres
-  - blurry
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic cyberpunk alley
-  - readable signage text
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-001.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, lowres, blurry, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk
-    alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card
-    framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Katana ZERO
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    minimal HUD; use tiny combat prompts or replay/timer cues only when they help the screenshot
+    feel playable
+  renderFamily: retro-pixel-low-poly
+  cameraFamily: side-view
+  hudMode: minimal-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -96,6 +130,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - neon-urban-and-night-ops
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-katana-zero
+    - render-retro-pixel-low-poly
+    - camera-side-view
+    - hud-minimal-hud
   supportedTasks:
     - image_generate
     - image_edit

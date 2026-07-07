@@ -31,6 +31,7 @@ export interface HeaderToolbarProps {
   onAddWorkspace: () => void;
   onDeleteWorkspace: (id: string) => void;
   onRenameWorkspace: (id: string, name: string) => void;
+  routeView: 'studio' | 'recipes' | 'recipe';
   currentView: 'studio' | 'recipes';
   onViewChange: (view: 'studio' | 'recipes') => void;
   activeRecipe: RecipeId | null;
@@ -72,6 +73,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   onAddWorkspace,
   onDeleteWorkspace,
   onRenameWorkspace,
+  routeView,
   currentView,
   onViewChange,
   activeRecipe,
@@ -101,6 +103,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const activeRecipeData = activeRecipe
     ? { name: activeRecipeAlias?.title ?? RECIPE_DATA[activeRecipe]?.name ?? activeRecipe }
     : null;
+  const isRecipeView = routeView === 'recipe' && Boolean(activeRecipeData);
   const activeWorkspace = workspaces.find((w) => w.id === activeWorkspaceId);
   const workspaceLabel = activeWorkspace?.name || 'Studio';
   const runtimeStatus = commandCenter.runtimeStatus;
@@ -162,12 +165,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   }, []);
 
   return (
-    <TopToolbar className="w-full min-h-10 bg-black/80 backdrop-blur-sm flex items-center px-2 py-1 z-40 shrink-0 border-b border-white/5">
+    <TopToolbar className="studio-toolbar-shell w-full min-h-10 bg-black/80 flex items-center px-2 py-1 z-40 shrink-0 border-b border-white/5">
       <div className="w-full flex flex-nowrap items-center justify-between gap-1 sm:gap-2 relative z-50">
-        <div className="flex min-w-0 flex-1 flex-nowrap items-center gap-1 sm:flex-wrap sm:gap-1.5 lg:gap-2">
+        <div className="flex min-w-0 flex-1 flex-nowrap items-center gap-1 sm:gap-1.5 lg:gap-2">
           <div className="flex shrink-0 items-center gap-1.5">
             <Logo isGenerating={isGenerating} />
-            <div ref={mobileWorkspaceRef} className="relative sm:hidden">
+            <div
+              ref={mobileWorkspaceRef}
+              className={`relative ${isRecipeView ? 'hidden sm:block' : 'sm:hidden'}`}
+            >
               <Tooltip content="Workspaces" position="bottom">
                 <button
                   ref={mobileWorkspaceButtonRef}
@@ -177,9 +183,14 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   aria-haspopup="menu"
                   aria-expanded={isMobileWorkspaceOpen}
                   aria-controls="mobile-workspace-menu"
-                  className="studio-hit-target flex size-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white"
+                  className={`studio-command-surface studio-hit-target flex cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white ${isRecipeView ? 'h-8 w-auto gap-1.5 px-2' : 'size-8'}`}
                 >
                   <Briefcase size={15} />
+                  {isRecipeView ? (
+                    <span className="hidden max-w-28 truncate text-[10px] font-black uppercase tracking-[0.14em] lg:inline">
+                      {workspaceLabel}
+                    </span>
+                  ) : null}
                 </button>
               </Tooltip>
               <GsapDropdown
@@ -211,15 +222,15 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
             </div>
           </div>
 
-          {activeRecipeData ? (
+          {isRecipeView && activeRecipeData ? (
             <div className="flex min-w-0 items-center gap-1 sm:gap-2">
-              <div className="flex min-w-0 items-center gap-1 text-[9px] font-black uppercase tracking-widest text-zinc-500">
+              <div className="flex min-w-0 items-center gap-1 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
                 <button
                   type="button"
                   onClick={() => onViewChange('studio')}
                   aria-label="Go to studio"
                   title="Studio"
-                  className="vt-nav-studio studio-hit-target hidden rounded-lg bg-zinc-800 p-1.5 text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white cursor-pointer sm:block"
+                  className="vt-nav-studio studio-command-surface studio-hit-target flex size-8 items-center justify-center rounded-lg bg-zinc-800 text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white cursor-pointer"
                 >
                   <Home size={14} />
                 </button>
@@ -227,26 +238,29 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 <button
                   type="button"
                   onClick={onCloseRecipe}
-                  className="vt-nav-recipes studio-hit-target flex shrink-0 items-center gap-1.5 rounded-lg bg-zinc-800 px-2 py-1.5 text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white group cursor-pointer sm:px-2.5"
+                  aria-label="Back to recipes"
+                  className="vt-nav-recipes studio-command-surface studio-hit-target flex h-8 shrink-0 items-center gap-1.5 rounded-lg bg-zinc-800 px-2 text-zinc-300 transition-colors hover:bg-zinc-700 hover:text-white group cursor-pointer sm:px-2.5"
                 >
-                  <ArrowLeft
-                    size={14}
-                    className="group-hover:-translate-x-0.5 transition-transform"
-                  />
+                  <ArrowLeft size={14} />
                   <span className="hidden sm:inline">Recipes</span>
                 </button>
                 <span className="opacity-50">/</span>
-                <span className="min-w-0 max-w-[7.5rem] truncate text-white sm:max-w-none">
+                <span
+                  aria-current="page"
+                  className="min-w-0 max-w-[7.5rem] truncate text-white sm:max-w-none"
+                >
                   {activeRecipeData.name}
                 </span>
               </div>
             </div>
           ) : (
-            <div className="flex shrink-0 items-center gap-1 rounded-lg border border-white/5 bg-white/5 p-0.5">
+            <div className="studio-command-group flex shrink-0 items-center gap-1 rounded-lg border border-white/5 bg-white/5 p-0.5">
               <button
                 type="button"
                 onClick={() => onViewChange('studio')}
-                className={`vt-nav-studio studio-hit-target rounded-md px-2.5 py-1.5 text-[9px] font-black uppercase tracking-widest transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer sm:px-3 ${currentView === 'studio' ? 'bg-zinc-800 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
+                aria-label={`Open studio workspace ${workspaceLabel}`}
+                aria-current={currentView === 'studio' ? 'page' : undefined}
+                className={`vt-nav-studio studio-hit-target rounded-md px-2.5 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer sm:px-3 ${currentView === 'studio' ? 'studio-command-active bg-zinc-800 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
               >
                 <span className="sm:hidden">Studio</span>
                 <span className="hidden sm:inline">{workspaceLabel}</span>
@@ -254,14 +268,16 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               <button
                 type="button"
                 onClick={() => onViewChange('recipes')}
-                className={`vt-nav-recipes studio-hit-target rounded-md px-2.5 py-1.5 text-[9px] font-black uppercase tracking-widest transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer sm:px-3 ${currentView === 'recipes' ? 'bg-accent-600 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
+                aria-label="Open recipes"
+                aria-current={currentView === 'recipes' ? 'page' : undefined}
+                className={`vt-nav-recipes studio-hit-target rounded-md px-2.5 py-1.5 text-[10px] font-black uppercase tracking-[0.16em] transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer sm:px-3 ${currentView === 'recipes' ? 'studio-command-active bg-accent-600 text-white' : 'text-zinc-500 hover:text-zinc-300'}`}
               >
                 Recipes
               </button>
             </div>
           )}
 
-          <div className="hidden min-w-0 md:block">
+          <div className={`${isRecipeView ? 'hidden' : 'hidden min-w-0 md:block'}`}>
             <WorkspaceStrip
               workspaces={workspaces}
               activeWorkspaceId={activeWorkspaceId}
@@ -284,10 +300,10 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenDashboard}
                 aria-label={`Open runtime status: ${runtimeStatus.label}`}
-                className={`studio-hit-target hidden size-8 items-center justify-center gap-1.5 rounded-lg border transition-[color,background-color,border-color,opacity,transform] hover:border-white/20 hover:bg-white/8 sm:flex xl:w-auto xl:px-2 ${runtimeToneClass}`}
+                className={`studio-command-surface studio-hit-target hidden size-8 items-center justify-center gap-1.5 rounded-lg border transition-[color,background-color,border-color,opacity,transform] hover:border-white/20 hover:bg-white/8 sm:flex xl:w-auto xl:px-2 ${runtimeToneClass}`}
               >
                 <Server size={14} />
-                <span className="hidden text-[9px] font-black uppercase tracking-widest xl:inline">
+                <span className="hidden text-[10px] font-black uppercase tracking-[0.16em] xl:inline">
                   {runtimeStatus.label}
                 </span>
               </button>
@@ -297,9 +313,9 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenSettings}
                 aria-label={`Open provider settings for ${activeProvider.label}`}
-                className={`studio-hit-target hidden h-8 items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex ${commandCenter.compactMode ? 'max-w-12' : 'max-w-24'}`}
+                className={`studio-command-surface studio-hit-target hidden h-8 items-center gap-1.5 rounded-lg border border-white/10 bg-white/5 px-2 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white lg:flex ${commandCenter.compactMode ? 'max-w-12' : 'max-w-24'}`}
               >
-                <span className="truncate text-[9px] font-black uppercase tracking-widest">
+                <span className="truncate text-[10px] font-black uppercase tracking-[0.16em]">
                   {providerToolbarLabel}
                 </span>
               </button>
@@ -309,7 +325,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenOnboarding}
                 aria-label="Open help and setup"
-                className="studio-hit-target hidden size-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 cursor-pointer items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <CircleHelp size={15} />
               </button>
@@ -319,7 +335,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onToggleDebug}
                 aria-label="Open studio activity"
-                className="studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <Activity size={15} />
               </button>
@@ -329,7 +345,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenTrash}
                 aria-label="Open archived images"
-                className={`studio-hit-target relative hidden size-8 items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity,transform] sm:flex ${trashCount > 0 ? 'border-red-500/20 bg-red-500/10 text-red-300 hover:border-red-400/30 hover:bg-red-500/15 hover:text-red-200' : 'border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
+                className={`studio-hit-target relative hidden size-8 items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity,transform] sm:flex ${trashCount > 0 ? 'studio-command-danger border-red-500/20 bg-red-500/10 text-red-300 hover:border-red-400/30 hover:bg-red-500/15 hover:text-red-200' : 'studio-command-surface border-white/10 bg-white/5 text-zinc-300 hover:border-white/20 hover:bg-white/8 hover:text-white'}`}
               >
                 <Trash2 size={15} />
                 {trashCount > 0 && (
@@ -342,7 +358,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenChat}
                 aria-label="Open Codex chat"
-                className="studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <MessageSquare size={15} />
               </button>
@@ -352,7 +368,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 type="button"
                 onClick={onOpenSettings}
                 aria-label="Open Studio Settings"
-                className="studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
+                className="studio-command-surface studio-hit-target hidden size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:border-accent-400/30 hover:bg-accent-500/10 hover:text-white sm:flex"
               >
                 <Settings size={15} />
               </button>
@@ -361,9 +377,9 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
               <button
                 type="button"
                 onClick={onToggleQueue}
-                aria-label="Toggle generation queue"
+                aria-label={`${isQueueOpen ? 'Close' : 'Open'} generation queue (${queueCount} jobs)`}
                 aria-pressed={isQueueOpen}
-                className={`studio-hit-target relative flex h-8 min-w-8 items-center justify-center gap-1.5 overflow-hidden rounded-lg border px-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] xl:px-2.5 ${
+                className={`studio-command-surface studio-hit-target relative flex h-8 min-w-8 items-center justify-center gap-1.5 overflow-hidden rounded-lg border px-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] xl:px-2.5 ${
                   isQueueOpen
                     ? 'border-accent-500/30 bg-accent-500/12 text-white'
                     : showCollapsedQueueProgress
@@ -403,7 +419,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     ))}
                   </div>
                 )}
-                <span className="text-[9px] font-black tabular-nums uppercase tracking-widest">
+                <span className="text-[10px] font-black tabular-nums uppercase tracking-[0.16em]">
                   {queueCount}
                 </span>
               </button>
@@ -418,7 +434,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   aria-expanded={isMobileCommandOpen}
                   aria-haspopup="menu"
                   aria-controls="mobile-command-menu"
-                  className="studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
+                  className="studio-command-surface studio-hit-target flex size-10 touch-manipulation items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-[color,background-color,border-color,opacity,transform] hover:bg-white/10 hover:text-white"
                 >
                   <Menu2 size={15} />
                 </button>
@@ -431,6 +447,22 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 placement="bottom-right"
                 className="fixed left-2 right-2 top-12 z-[60] p-2"
               >
+                {isRecipeView && (
+                  <div className="mb-2 border-b border-white/8 pb-2">
+                    <div className="mb-1 px-1 text-[9px] font-black uppercase tracking-[0.16em] text-zinc-500">
+                      Workspace
+                    </div>
+                    <WorkspaceStrip
+                      layout="compact"
+                      workspaces={workspaces}
+                      activeWorkspaceId={activeWorkspaceId}
+                      onSwitchWorkspace={(id) => runMobileCommand(() => onSwitchWorkspace(id))}
+                      onAddWorkspace={() => runMobileCommand(onAddWorkspace)}
+                      onDeleteWorkspace={onDeleteWorkspace}
+                      onRenameWorkspace={onRenameWorkspace}
+                    />
+                  </div>
+                )}
                 <div className="mb-2 grid grid-cols-2 gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2">
                   <button
                     type="button"

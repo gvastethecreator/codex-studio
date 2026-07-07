@@ -12,6 +12,7 @@ export const IMAGE_GRID_COLUMN_GAP = 16;
 export const IMAGE_GRID_MAX_COLUMNS = 12;
 export const IMAGE_GRID_CARD_MIN_WIDTH = 256;
 export const IMAGE_GRID_PRIORITY_VIEWPORT_OVERSCAN_PX = 96;
+export const IMAGE_GRID_VIRTUAL_OVERSCAN_PX = 960;
 
 export function filterImageGridImages(
   images: GeneratedImageWithConfig[],
@@ -153,4 +154,100 @@ export function shouldPriorityLoadImageGridItem({
     viewportHeight + IMAGE_GRID_PRIORITY_VIEWPORT_OVERSCAN_PX,
   );
   return estimatedTop >= 0 && estimatedTop < priorityCutoff;
+}
+
+export function resolveImageGridItemWidth({
+  containerWidth,
+  columnCount,
+  thumbnailSize,
+}: {
+  containerWidth: number;
+  columnCount: number;
+  thumbnailSize: number;
+}) {
+  const safeColumnCount = Math.max(1, columnCount);
+  if (!Number.isFinite(containerWidth) || containerWidth <= 0) return thumbnailSize;
+  return Math.max(
+    MIN_THUMBNAIL_SIZE,
+    (containerWidth - IMAGE_GRID_COLUMN_GAP * (safeColumnCount - 1)) / safeColumnCount,
+  );
+}
+
+export function estimateImageGridListItemHeight({
+  thumbnailSize,
+  viewportWidth,
+}: {
+  thumbnailSize: number;
+  viewportWidth: number;
+}) {
+  const listThumbnailSize = Math.max(88, Math.min(136, Math.round(thumbnailSize * 0.66)));
+  return viewportWidth < 640 ? listThumbnailSize + 104 : Math.max(listThumbnailSize + 16, 104);
+}
+
+export function estimateImageGridCardItemHeight({
+  image,
+  itemWidth,
+  viewMode,
+}: {
+  image: Pick<GeneratedImageWithConfig, 'config' | 'width' | 'height'>;
+  itemWidth: number;
+  viewMode: ImageGridViewMode;
+}) {
+  if (viewMode === 'list') return 104;
+  if (viewMode === 'grid') return itemWidth;
+  const [width, height] = resolveImageGridAspectRatio(image)
+    .split('/')
+    .map((part) => Number(part.trim()));
+  const ratio = width > 0 && height > 0 ? width / height : 1;
+  return itemWidth / ratio + 112;
+}
+
+export interface ImageGridVirtualWindow {
+  startIndex: number;
+  endIndex: number;
+  beforeHeight: number;
+  afterHeight: number;
+  totalHeight: number;
+}
+
+export function resolveImageGridVirtualWindow({
+  itemSizes,
+  scrollTop,
+  viewportHeight,
+  overscanPx = IMAGE_GRID_VIRTUAL_OVERSCAN_PX,
+}: {
+  itemSizes: number[];
+  scrollTop: number;
+  viewportHeight: number;
+  overscanPx?: number;
+}): ImageGridVirtualWindow {
+  const safeScrollTop = Math.max(0, Number.isFinite(scrollTop) ? scrollTop : 0);
+  const safeViewportHeight = Math.max(1, Number.isFinite(viewportHeight) ? viewportHeight : 1);
+  const safeOverscan = Math.max(0, Number.isFinite(overscanPx) ? overscanPx : 0);
+  const minTop = Math.max(0, safeScrollTop - safeOverscan);
+  const maxBottom = safeScrollTop + safeViewportHeight + safeOverscan;
+  const safeSizes = itemSizes.map((size) => Math.max(1, Number.isFinite(size) ? size : 1));
+  const totalHeight = safeSizes.reduce((sum, size) => sum + size, 0);
+
+  let beforeHeight = 0;
+  let startIndex = 0;
+  while (startIndex < safeSizes.length && beforeHeight + safeSizes[startIndex] < minTop) {
+    beforeHeight += safeSizes[startIndex];
+    startIndex += 1;
+  }
+
+  let visibleHeight = beforeHeight;
+  let endIndex = startIndex;
+  while (endIndex < safeSizes.length && visibleHeight < maxBottom) {
+    visibleHeight += safeSizes[endIndex];
+    endIndex += 1;
+  }
+
+  return {
+    startIndex,
+    endIndex,
+    beforeHeight,
+    afterHeight: Math.max(0, totalHeight - visibleHeight),
+    totalHeight,
+  };
 }

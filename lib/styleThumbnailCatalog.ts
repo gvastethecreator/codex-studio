@@ -1,33 +1,56 @@
+type AssetUrlLoader = () => Promise<unknown>;
+
 const styleCardThumbnailFiles = import.meta.glob(
   '../assets/recipes/styles/style-card-thumbnails/*.webp',
   {
-    eager: true,
     query: '?url',
     import: 'default',
   },
-) as Record<string, unknown>;
+) as Record<string, AssetUrlLoader>;
 
 const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
-  eager: true,
   query: '?url',
   import: 'default',
-}) as Record<string, unknown>;
+}) as Record<string, AssetUrlLoader>;
 
-function buildUrlCatalog(files: Record<string, unknown>) {
+function styleAssetKey(filePath: string) {
+  return filePath
+    .split('/')
+    .pop()
+    ?.replace(/\.[^.]+$/i, '');
+}
+
+function sourceRelativeUrl(filePath: string) {
+  return new URL(filePath, import.meta.url).href;
+}
+
+function buildUrlCatalog(files: Record<string, AssetUrlLoader>) {
   const catalog: Record<string, string> = {};
 
-  for (const [filePath, url] of Object.entries(files)) {
-    const fileName = filePath.split('/').pop();
-    const key = fileName?.replace(/\.[^.]+$/i, '');
-    if (key && typeof url === 'string') {
-      catalog[key] = url;
+  for (const filePath of Object.keys(files)) {
+    const key = styleAssetKey(filePath);
+    if (key) {
+      catalog[key] = sourceRelativeUrl(filePath);
     }
   }
 
   return catalog;
 }
 
+function buildLoaderCatalog(files: Record<string, AssetUrlLoader>) {
+  const catalog: Record<string, AssetUrlLoader> = {};
+  for (const [filePath, loader] of Object.entries(files)) {
+    const key = styleAssetKey(filePath);
+    if (key) {
+      catalog[key] = loader;
+    }
+  }
+  return catalog;
+}
+
 const stylePreviewCatalog = buildUrlCatalog(stylePreviewImageFiles);
+const styleCardThumbnailLoaders = buildLoaderCatalog(styleCardThumbnailFiles);
+const loadedStyleCardThumbnailUrls = new Map<string, string>();
 
 export const STYLE_CARD_THUMBNAILS = buildUrlCatalog(styleCardThumbnailFiles);
 export const STYLE_CATEGORY_IMAGES = Object.fromEntries(
@@ -35,19 +58,34 @@ export const STYLE_CATEGORY_IMAGES = Object.fromEntries(
 );
 
 export function resolveStyleDefaultImageThumbnail(presetId: string) {
-  return STYLE_CARD_THUMBNAILS[presetId];
+  return loadedStyleCardThumbnailUrls.get(presetId) ?? STYLE_CARD_THUMBNAILS[presetId];
 }
 
 export function resolveStyleDefaultImageVariantThumbnails(presetId: string) {
   const variants: string[] = [];
   for (let index = 1; index <= 12; index += 1) {
     const key = `${presetId}-${String(index).padStart(2, '0')}`;
-    const src = STYLE_CARD_THUMBNAILS[key];
+    const src = loadedStyleCardThumbnailUrls.get(key) ?? STYLE_CARD_THUMBNAILS[key];
     if (!src) break;
     variants.push(src);
   }
 
   return variants;
+}
+
+export async function loadStyleCardThumbnailUrl(key: string) {
+  const loadedUrl = loadedStyleCardThumbnailUrls.get(key);
+  if (loadedUrl) return loadedUrl;
+
+  const loader = styleCardThumbnailLoaders[key];
+  if (!loader) return STYLE_CARD_THUMBNAILS[key];
+
+  const loaded = await loader();
+  if (typeof loaded !== 'string') return STYLE_CARD_THUMBNAILS[key];
+
+  loadedStyleCardThumbnailUrls.set(key, loaded);
+  STYLE_CARD_THUMBNAILS[key] = loaded;
+  return loaded;
 }
 
 export const STYLE_CATEGORY_PREVIEWS: Record<string, string> = {

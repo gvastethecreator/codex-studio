@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-016
 packId: pack_12
-name: Shadow Opera Assassin Court
+name: Dishonored Aristocrat Stealth
 styleAnchors:
-  - 'Shadow Opera Assassin Court'
-displayName: 'Shadow Opera Assassins'
+  - Dishonored 2 gameplay screenshots
+  - Dishonored Aristocrat Stealth
+displayName: Dishonored Aristocrat Stealth
 category: 7. Heists, Horror & Underworld Runs
 version: 1
 supportedTasks:
@@ -14,80 +15,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - heists-horror-and-underworld-runs
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-dishonored-2
+  - render-first-person-immersive
+  - camera-first-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through silent strike readability; illicit route planning, horror
-    escalation, underworld thresholds, trap timing, and stealth readability, using the preset as art
-    direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Dishonored 2 gameplay screenshots: first-person
+    stealth immersive-sim capture with aristocratic interiors, mask-like silhouettes, vertical
+    routes, and assassination sandbox clarity. Apply this after prompt X; prompt X supplies the
+    subject, action, setting, and intensity while this preset supplies capture language, camera
+    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
+    level, character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express stealth timing, illicit access,
-    trap pressure, corruption, pursuit routes, and horror reveal logic without requiring one heist
-    shot.
+    Preserve the user's subject and transform it into a playable Dishonored 2-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with inky black, sick green, opera red, copper shadow, moonlit blue, rust, and
-    carnival poison color; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use a Dishonored 2-informed palette: oil-paint teal, tobacco brown, brass gold, blood red,
+    marble cream, and cold moon blue. Keep value grouping legible at gameplay distance, with color
+    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
+    decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with black velvet shadow and thin spotlight; theater spotlight and red
-    curtain shadow; knife-thin spotlights and masked shadow; knife-edge spotlights, emergency bulbs,
-    sick fluorescents, moon slashes, lantern pools, and signal static; use highlights and shadow
-    pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through window shafts, candle pools, supernatural blue abilities, hard guard
+    silhouettes, and dusty indoor contrast. Lighting must clarify the playable route, threat, focal
+    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from velvet, gold trim, masks, and stage dust; velvet curtains, rusted rails, wet
-    tile, bone props, thorned stone, pirate rigging, train metal, and corrupted signage; make props,
-    clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.
+    Build surfaces from painted plaster, brass machinery, velvet curtains, worn stone, whale-oil
+    devices, masks, and aristocratic clutter. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from illicit route planning, horror escalation, underworld
-    thresholds, trap timing, and stealth readability: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with first-person stealth framing with ledges, guard patrol sightlines, blink routes,
+    props, and alternate entry paths. The frame should read as a plausible gameplay capture; include
+    UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood assassin-court secrecy; decadent assassination theater; dangerous, clandestine,
-    haunted, predatory, decadent, and unstable; the result can be adult, harsh, seductive, eerie, or
-    violent when prompt X asks for it, but the preset should not force a new storyline.
+    Carry a Dishonored 2-derived mood: decadent, predatory, conspiratorial, elegant, and violent.
+    The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
+    asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as adult genre-game finish with controlled darkness, readable threats, and no flattened
-    spooky fog; preserve clean focal hierarchy, believable material response, heavy-denoise clarity,
-    and no readable UI, text, logos, or stock key-art gloss.
-  creative_brief: >-
-    Apply Shadow Opera Assassin Court as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Finish as a coherent in-engine screenshot style, not concept art: ability icons, mana/health
+    bars, objective markers, and stealth cues can appear if they feel like immersive-sim HUD.
+    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
+    logos, stock-photo polish, or random interface clutter.
   key_features: >-
-    Shadow, Opera, Assassin, Court; silent strike readability; inky black, sick green, opera red,
-    copper shadow, moonlit blue, rust, and carnival poison color; black velvet shadow and thin
-    spotlight; velvet, gold trim, masks, and stage dust; balcony layers, stage axes, and masked
-    audience depth; assassin-court secrecy
+    Dishonored 2 gameplay screenshots; first-person stealth immersive-sim capture with aristocratic
+    interiors, mask-like silhouettes, vertical routes, and assassination sandbox clarity; oil-paint
+    teal, tobacco brown, brass gold, blood red, marble cream, and cold moon blue; window shafts,
+    candle pools, supernatural blue abilities, hard guard silhouettes, and dusty indoor contrast;
+    painted plaster, brass machinery, velvet curtains, worn stone, whale-oil devices, masks, and
+    aristocratic clutter; first-person stealth framing with ledges, guard patrol sightlines, blink
+    routes, props, and alternate entry paths; decadent, predatory, conspiratorial, elegant, and
+    violent; HUD guidance: ability icons, mana/health bars, objective markers, and stealth cues can
+    appear if they feel like immersive-sim HUD
+  creative_brief: >-
+    Use Dishonored Aristocrat Stealth as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from Dishonored 2: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - sci-fi-ui
-  - flat-colors
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - flattened spooky fog
-  - safe cartoon horror
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-016.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, sci-fi-ui, flat-colors, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, flattened spooky fog,
-    safe cartoon horror, fixed scene, generic game screenshot, readable UI, official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Dishonored 2
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    ability icons, mana/health bars, objective markers, and stealth cues can appear if they feel
+    like immersive-sim HUD
+  renderFamily: first-person-immersive
+  cameraFamily: first-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -96,6 +128,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - heists-horror-and-underworld-runs
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-dishonored-2
+    - render-first-person-immersive
+    - camera-first-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

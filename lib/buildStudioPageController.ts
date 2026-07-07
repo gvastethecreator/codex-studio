@@ -88,7 +88,7 @@ interface StudioPageGridContext {
   catalogHasMore: boolean;
   isCatalogLoading: boolean;
   catalogError: string | null;
-  loadMoreCatalog: () => void;
+  loadMoreCatalog: () => void | Promise<void>;
   refreshCatalog: () => void;
 }
 

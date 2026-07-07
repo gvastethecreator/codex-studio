@@ -196,7 +196,7 @@ export function WorkspaceStrip({
   return (
     <div
       ref={workspacesContainerRef}
-      className={`vt-workspace-list items-center gap-1 px-1 ${isCompact ? 'flex max-w-[min(82vw,360px)] overflow-x-auto py-1 no-scrollbar' : 'hidden max-w-[44vw] overflow-x-auto py-0.5 no-scrollbar md:flex xl:max-w-[52vw]'}`}
+      className={`vt-workspace-list gap-1 px-1 ${isCompact ? 'grid max-h-[min(70vh,26rem)] w-[min(82vw,22rem)] overflow-y-auto py-1 custom-scrollbar' : 'hidden max-w-[44vw] items-center overflow-x-auto py-0.5 no-scrollbar md:flex xl:max-w-[52vw]'}`}
     >
       {workspaces.map((workspace, index) => {
         const label = getWorkspaceLabel(workspace, index);
@@ -219,14 +219,17 @@ export function WorkspaceStrip({
           workspace.firstImageCreatedAt ?? workspace.createdAt,
         );
         const tooltipContent = `${workspaceName} - ${formattedImageCount} images - updated ${updatedLabel}`;
-        const workspaceButtonClassName = `studio-hit-target min-h-10 min-w-[8.5rem] max-w-[11rem] rounded-lg border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
+        const workspaceButtonClassName = `studio-command-surface studio-hit-target min-h-10 ${isCompact ? 'w-full min-w-0 max-w-none' : 'min-w-[8.5rem] max-w-[11rem]'} rounded-lg border transition-[color,background-color,border-color,opacity,transform,box-shadow] relative flex items-center gap-2 overflow-hidden px-1.5 pr-2 text-left cursor-pointer ${
           isActive
             ? 'border-accent-500/55 bg-accent-500/12 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.12)]'
             : 'border-white/10 bg-white/[0.04] text-zinc-400 opacity-75 hover:border-white/20 hover:bg-white/8 hover:text-zinc-100 hover:opacity-100'
         }`;
 
         return (
-          <div key={workspace.id} className="relative group flex shrink-0 items-center gap-1">
+          <div
+            key={workspace.id}
+            className={`relative group flex shrink-0 items-center gap-1 ${isCompact ? 'w-full' : ''}`}
+          >
             <Tooltip
               content={tooltipContent}
               contentClassName={contextMenuWorkspaceId === workspace.id ? 'hidden' : ''}
@@ -334,7 +337,7 @@ export function WorkspaceStrip({
                     clientY: event.clientY,
                   });
                 }}
-                className={`studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity] ${
+                className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border transition-[color,background-color,border-color,opacity] ${
                   contextMenuWorkspaceId === workspace.id
                     ? 'border-accent-400/40 bg-accent-500/15 text-accent-100'
                     : 'border-white/10 bg-white/[0.035] text-zinc-500 opacity-75 hover:border-white/20 hover:bg-white/8 hover:text-zinc-200 hover:opacity-100'
@@ -478,7 +481,7 @@ export function WorkspaceStrip({
             onAddWorkspace();
           }}
           aria-label="Create workspace"
-          className="studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200"
+          className={`studio-command-surface studio-hit-target flex size-10 cursor-pointer items-center justify-center rounded-lg border border-dashed border-white/10 bg-white/5 text-zinc-600 transition-[color,background-color,border-color,opacity,transform] hover:bg-accent-500/20 hover:text-zinc-200 ${isCompact ? 'w-full' : ''}`}
         >
           <Plus size={16} />
         </button>

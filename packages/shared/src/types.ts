@@ -307,6 +307,8 @@ export interface CatalogImage {
   thumbnailPath: string | null;
   publicUrl: string;
   thumbnailUrl: string | null;
+  sourceExists?: boolean;
+  thumbnailExists?: boolean;
   prompt: string | null;
   negativePrompt: string | null;
   aspectRatio: string | null;

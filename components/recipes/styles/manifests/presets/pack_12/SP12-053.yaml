@@ -1,10 +1,12 @@
 schemaVersion: 1
 id: SP12-053
 packId: pack_12
-name: Marsh Witch Coven Arena
+name: Bog Coven Contract
 styleAnchors:
-  - 'Marsh Witch Coven Arena'
-displayName: 'Marsh Witch Coven Combat'
+  - grim folklore RPG gameplay screenshots
+  - third-person swamp monster contract
+  - Bog Coven Contract
+displayName: Bog Coven Contract
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:
@@ -14,81 +16,108 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-grim-folklore-rpg
+  - render-third-person-rpg
+  - camera-third-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through competitive role clarity; ritual architecture, mythic scale,
-    ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction
-    rather than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original grim folklore RPG captures: third-person
+    swamp contract gameplay with wet village edges, occult props, monster telegraphs, grounded
+    quest-combat readability, and adult muddy fantasy restraint. Borrow the folkloric material
+    discipline of Witcher-like games, but land as a different fictional monster-contract RPG with
+    different characters, creatures, villages, UI icons, and quest props.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express ritual hierarchy, artifact
-    weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.
+    Preserve the user's subject and transform it into a playable bog-coven RPG screenshot subject:
+    keep clear role silhouette, monster/player/object function, dodge or sign distance, route
+    affordance, and scale relationship without copying source characters or named IP elements.
   color_and_tone: >-
-    Grade the image with mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and
-    prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use a grim folklore RPG palette: mud brown, swamp green, corpse grey, candle yellow, dried blood
+    red, peat black, and stormy blue. Keep value grouping legible at gameplay distance and avoid
+    racing-sport brightness, glossy fantasy polish, or clean heroic color scripts.
   lighting_and_shadow: >-
-    Drive the lighting with wet lantern circles and sick ritual glow; altar glow, rune bounce, moon
-    shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets
-    to reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through overcast swamp light, torch pools, spell signs, moon haze, and
+    monster-eye glints. Lighting must clarify the playable route, threat, focal subject, or
+    objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from reeds, peat water, green copper, and wet roots; bones, herbs, reeds, and
-    dark water; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal,
-    incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture,
-    and terrain share the same production-world logic.
+    Build surfaces from wet reeds, rotting wood, leather armor, bone charms, mud, witch huts, and
+    realistic creature skin. Materials should feel like in-engine game assets captured during play,
+    with enough texture identity to separate props, terrain, characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes,
-    relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy,
-    readable negative space, encounter depth, and motion vectors should adapt to portraits, objects,
-    creatures, environments, and action scenes.
+    Compose with third-person action-RPG framing: weapon/sign distance, dodge space, monster
+    telegraph, bog route, and quest-location depth. The frame should read as a plausible gameplay
+    capture, not a racing shot, poster, or cinematic monster portrait.
   atmosphere_and_mood: >-
-    Keep the mood humid occult pressure; wetland occult menace; witchcraft pressure in a marsh
-    arena; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the
-    result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the
-    preset should not force a new storyline.
+    Carry an original bog-coven contract mood: folkloric, grimy, adult, dangerous, humid, and
+    morally murky.
   rendering_and_quality: >-
-    Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic
-    fantasy postcard staging; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
-  creative_brief: >-
-    Apply this as a reusable visual router over any prompt: preserve the user's subject while adding
-    wetland coven atmosphere, circular ritual composition, moss-and-wax material logic, and readable
-    game-art polish without forcing a fixed scene, character, prop, or story beat.
+    Finish as coherent in-engine third-person RPG screenshot style, not concept art: contextual RPG
+    HUD can include health/stamina, small minimap shape, potion icons, and non-readable quest
+    marker. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, no fake
+    logos, no racing camera, no exact monster contract UI, and no stock-photo polish.
   key_features: >-
-    Marsh, Witch, Coven, Arena; competitive role clarity; mineral gold, moonlit blue, jade, orchid,
-    volcanic green, marble white, and prismatic ritual accents; wet lantern circles and sick ritual
-    glow; reeds, peat water, green copper, and wet roots; circular contest space and ranked focal
-    hierarchy; humid occult pressure
+    original grim folklore RPG gameplay screenshots; third-person swamp contract capture; wet
+    village edges, occult props, monster telegraphs, grounded quest-combat readability; mud brown,
+    swamp green, corpse grey, candle yellow, dried blood red, peat black, stormy blue; overcast
+    swamp light, torch pools, small spell signs, moon haze, monster-eye glints; wet reeds, rotting
+    wood, leather, bone charms, mud, witch huts, creature skin; third-person action-RPG framing with
+    dodge space and quest-location depth; adult, muddy, dangerous, morally murky; HUD guidance:
+    contextual RPG HUD only, no readable quest text
+  creative_brief: >-
+    Use Bog Coven Contract as a transferable game-originals preset. Preserve prompt X, then route
+    interpretation through grim folklore RPG references: third-person camera, muddy material
+    language, monster-contract readability, swamp route affordances, and restrained in-engine
+    finish. Avoid menus, logos, exact characters, exact levels, direct Witcher cloning, racing-sport
+    framing, and promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - sci-fi-neon
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic fantasy postcard
-  - soft pretty temple blur
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct Witcher clone
+  - racing sport camera
+  - exact monster contract UI
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-053.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, sci-fi-neon, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy
-    postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, direct Witcher clone, racing sport camera, exact monster
+    contract UI
+  referenceGame: Original grim folklore RPG, Witcher-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    RPG HUD can include health/stamina, minimap, potion icons, and small quest marker if not
+    text-heavy
+  renderFamily: third-person-rpg
+  cameraFamily: third-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -97,6 +126,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - arcane-temples-and-mythic-realms
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-grim-folklore-rpg
+    - render-third-person-rpg
+    - camera-third-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

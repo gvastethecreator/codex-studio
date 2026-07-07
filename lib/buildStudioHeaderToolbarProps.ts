@@ -17,6 +17,7 @@ type StartTransition = (callback: () => void) => void;
 interface StudioHeaderToolbarViewContext {
   isGenerating: HeaderToolbarProps['isGenerating'];
   generationStartTime: HeaderToolbarProps['generationStartTime'];
+  routeView: HeaderToolbarProps['routeView'];
   currentView: HeaderToolbarProps['currentView'];
   onViewChange: HeaderToolbarProps['onViewChange'];
   activeRecipe: HeaderToolbarProps['activeRecipe'];
@@ -99,6 +100,7 @@ export function buildStudioHeaderToolbarProps({
     onDeleteWorkspace: workspace.onDeleteWorkspace,
     onRenameWorkspace: workspace.onRenameWorkspace,
     currentView: view.currentView,
+    routeView: view.routeView,
     onViewChange: view.onViewChange,
     activeRecipe: view.activeRecipe,
     activeRecipeAliasId: view.activeRecipeAliasId,

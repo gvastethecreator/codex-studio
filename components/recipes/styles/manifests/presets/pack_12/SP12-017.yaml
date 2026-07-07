@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-017
 packId: pack_12
-name: Lava Skate Arena
+name: Rollerdrome Arena Trick Combat
 styleAnchors:
-  - 'Lava Skate Arena'
-displayName: 'Lava Skate Arena Sport'
+  - Rollerdrome gameplay screenshots
+  - Rollerdrome Arena Trick Combat
+displayName: Rollerdrome Arena Trick Combat
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:
@@ -14,78 +15,109 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-rollerdrome
+  - render-third-person-cinematic
+  - camera-third-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through trick-route flow; competitive role clarity; competitive arena
-    energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset
-    as art direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Rollerdrome gameplay screenshots: comic-shaded
+    arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories,
+    and readable enemy targets. Apply this after prompt X; prompt X supplies the subject, action,
+    setting, and intensity while this preset supplies capture language, camera grammar, material
+    behavior, playable readability, and finish. Do not recreate an exact official level, character,
+    logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express competition roles, lane tension,
-    speed control, ranked focus, and contest readability without forcing a sports broadcast.
+    Preserve the user's subject and transform it into a playable Rollerdrome-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with hot red-orange against black basalt; team-color contrast, hot magenta,
-    cobalt, obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong
-    enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use a Rollerdrome-informed palette: cream concrete, black ink outlines, orange jumpsuit, red
+    danger marks, teal shadows, and poster-flat sky colors. Keep value grouping legible at gameplay
+    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
+    rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with lava bounce and heat shimmer; track strips, arena floods, energy gates,
-    holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to
-    reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through flat graphic daylight, rimmed outlines, explosion bursts, and stylized
+    target highlights. Lighting must clarify the playable route, threat, focal subject, or objective
+    and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers,
-    dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds,
+    and crisp inked edges. Materials should feel like in-engine game assets captured during play,
+    with enough texture identity to separate props, terrain, characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from competitive arena energy, lane logic, player-role
-    clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and
+    readable arena loops. The frame should read as a plausible gameplay capture; include UI/HUD only
+    when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result
-    can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset
-    should not force a new storyline.
+    Carry a Rollerdrome-derived mood: stylish, dangerous, sporty, satirical, and kinetic. The preset
+    can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but
+    it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no
-    fake broadcast overlay; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: score, combo, ammo, slow-mo,
+    and enemy indicators are coherent here; keep them graphic and compact. Maintain heavy-denoise
+    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
+    or random interface clutter.
   key_features: >-
-    Lava, Skate, Arena; trick-route flow; hot red-orange against black basalt; lava bounce and heat
-    shimmer; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks,
-    neon rails, and worn competition gear; curved ramps and molten track lines; competitive, fast,
-    theatrical, sharp, high-stakes, and crowd-charged
+    Rollerdrome gameplay screenshots; comic-shaded arena shooter capture with roller-skate trick
+    lines, clean concrete arenas, stunt trajectories, and readable enemy targets; cream concrete,
+    black ink outlines, orange jumpsuit, red danger marks, teal shadows, and poster-flat sky colors;
+    flat graphic daylight, rimmed outlines, explosion bursts, and stylized target highlights;
+    cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds, and crisp inked
+    edges; third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and
+    readable arena loops; stylish, dangerous, sporty, satirical, and kinetic; HUD guidance: score,
+    combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact
   creative_brief: >-
-    Apply Lava Skate Arena as a reusable video-game art-direction router over prompt X: preserve the
-    user's subject and intent, then translate palette, lighting, material logic, route readability,
-    encounter mood, and production finish through this preset.
+    Use Rollerdrome Arena Trick Combat as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from Rollerdrome: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - static-pose
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - fake broadcast overlay
-  - sports-logo clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-017.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, static-pose, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay,
-    sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Rollerdrome
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and
+    compact
+  renderFamily: third-person-cinematic
+  cameraFamily: third-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -94,6 +126,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - speed-sport-and-competitive-arenas
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-rollerdrome
+    - render-third-person-cinematic
+    - camera-third-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

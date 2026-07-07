@@ -123,7 +123,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
       data-style-catalog-root
       data-style-catalog-state={searchIndex ? 'ready' : isLoading ? 'loading' : 'empty'}
       data-style-catalog-results-count={searchIndex ? results.length : -1}
-      className="absolute inset-0 z-40 flex flex-col bg-black/86 backdrop-blur-xl"
+      className="absolute inset-0 z-40 flex flex-col bg-black/86"
     >
       <div className="flex h-16 shrink-0 items-center justify-between border-b border-white/10 px-6">
         <div className="flex min-w-0 items-center gap-3">
@@ -135,13 +135,15 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
               Style Catalog
             </h3>
             {searchIndex ? (
-              <p className="mt-1 truncate text-[9px] font-bold uppercase tracking-widest text-zinc-500">
+              <p className="mt-1 truncate text-[10px] font-bold uppercase tracking-[0.16em] text-zinc-500">
                 {searchIndex.totalPresetCount} loaded / {totalPresetCount} presets
               </p>
             ) : (
               <div className="mt-1 flex items-center gap-1.5 text-zinc-500">
                 <LoaderCircle size={10} className="animate-spin" />
-                <span className="text-[9px] font-bold uppercase tracking-widest">Loading…</span>
+                <span className="text-[10px] font-bold uppercase tracking-[0.16em]">
+                  Loading...
+                </span>
               </div>
             )}
           </div>
@@ -213,6 +215,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
             onOpenChange={setIsPackFilterOpen}
             triggerRef={packFilterButtonRef}
             placement="bottom-left"
+            portal
             role="listbox"
             aria-label="Filter style catalog by pack"
             className="absolute left-0 top-[calc(100%+0.5rem)] z-50 max-h-80 w-72 overflow-y-auto p-1.5"
@@ -307,10 +310,10 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                           alt={result.name}
                           loading="lazy"
                           decoding="async"
-                          className="size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          className="size-full object-cover transition-transform duration-200 motion-safe:group-hover:scale-[1.02]"
                         />
                         {resultImageIsPreview ? (
-                          <div className="absolute left-2 top-2 z-10 rounded-full border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[8px] font-black uppercase tracking-[0.22em] text-sky-100 shadow-lg backdrop-blur-md">
+                          <div className="absolute left-2 top-2 z-10 rounded-full border border-sky-400/30 bg-sky-500/15 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-sky-100 shadow-lg">
                             Preview
                           </div>
                         ) : null}

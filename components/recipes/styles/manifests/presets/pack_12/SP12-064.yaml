@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-064
 packId: pack_12
-name: Iron Orchard Defense Night
+name: They Are Billions Night Defense
 styleAnchors:
-  - 'Iron Orchard Defense Night'
-displayName: 'Iron Orchard Defense'
+  - They Are Billions gameplay screenshots
+  - They Are Billions Night Defense
+displayName: They Are Billions Night Defense
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:
@@ -14,81 +15,108 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-they-are-billions
+  - render-strategy-tactics
+  - camera-isometric-top-down
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through defense wave readability; tactical warfront staging, defensive
-    geometry, damage history, co-op readability, and last-stand pressure, using the preset as art
-    direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on They Are Billions gameplay screenshots:
+    isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and
+    pressure-heavy base-defense readability. Apply this after prompt X; prompt X supplies the
+    subject, action, setting, and intensity while this preset supplies capture language, camera
+    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
+    level, character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express defensive pressure, breach
-    geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle
-    scene.
+    Preserve the user's subject and transform it into a playable They Are Billions-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with wet iron, smoke grey, and ember highlights; smoke grey, worn iron,
-    battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy
-    strong enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use a They Are Billions-informed palette: sepia industrial, zombie grey-green, torch orange,
+    brass UI, dark forest, and warning red. Keep value grouping legible at gameplay distance, with
+    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
+    decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with low-key night lighting with practical pools; searchlights, muzzle
-    flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and
-    shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt
-    content.
+    Light the image through lamp pools, muzzle flashes, turret beams, night fog, and swarm-edge
+    highlights. Lighting must clarify the playable route, threat, focal subject, or objective and
+    avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from riveted armor and corroded plates; gnarled branches, fruit color, and
-    defensive machinery; shattered masonry, scorched metal, splintered wood, wet mud, broken glass,
-    ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture,
-    and terrain share the same production-world logic.
+    Build surfaces from steampunk walls, tents, pipes, wooden barricades, infected crowds, smoke,
+    and compact building silhouettes. Materials should feel like in-engine game assets captured
+    during play, with enough texture identity to separate props, terrain, characters, hazards, and
+    interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage
-    history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with isometric base view with defensive choke points, wall lines, unit groups, resource
+    buildings, and wave approach paths. The frame should read as a plausible gameplay capture;
+    include UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood pastoral zone turned tactical; late-hour danger; urgent, battered, heroic, grim,
-    tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent
-    when prompt X asks for it, but the preset should not force a new storyline.
+    Carry a They Are Billions-derived mood: desperate, logistical, overrun, industrial, and
+    strategic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd
+    when prompt X asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic
-    poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: RTS HUD can include resources,
+    command bar, unit selection, minimap, and wave warnings. Maintain heavy-denoise clarity, crisp
+    focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random
+    interface clutter.
   key_features: >-
-    Iron, Orchard, Defense, Night; defense wave readability; wet iron, smoke grey, and ember
-    highlights; low-key night lighting with practical pools; riveted armor and corroded plates;
-    protected core, lanes, and fallback positions; pastoral zone turned tactical
+    They Are Billions gameplay screenshots; isometric survival-RTS capture with colony walls,
+    swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability; sepia
+    industrial, zombie grey-green, torch orange, brass UI, dark forest, and warning red; lamp pools,
+    muzzle flashes, turret beams, night fog, and swarm-edge highlights; steampunk walls, tents,
+    pipes, wooden barricades, infected crowds, smoke, and compact building silhouettes; isometric
+    base view with defensive choke points, wall lines, unit groups, resource buildings, and wave
+    approach paths; desperate, logistical, overrun, industrial, and strategic; HUD guidance: RTS HUD
+    can include resources, command bar, unit selection, minimap, and wave warnings
   creative_brief: >-
-    Apply Iron Orchard Defense Night as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use They Are Billions Night Defense as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from They Are Billions: camera, HUD
+    grammar, material language, color coding, encounter readability, and in-engine finish. Coherent
+    HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact
+    levels, and promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - futuristic-city
-  - noisy
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - chaotic poster overcrowding
-  - unreadable battle smoke
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-064.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, futuristic-city, noisy, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster
-    overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI,
-    official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: They Are Billions
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings
+  renderFamily: strategy-tactics
+  cameraFamily: isometric-top-down
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -97,6 +125,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sieges-warfronts-and-last-stands
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-they-are-billions
+    - render-strategy-tactics
+    - camera-isometric-top-down
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

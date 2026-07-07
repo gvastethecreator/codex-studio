@@ -1,10 +1,12 @@
 schemaVersion: 1
 id: SP12-034
 packId: pack_12
-name: Crimson Canyon Sniper Run
+name: Canyon Marksman Contract
 styleAnchors:
-  - 'Crimson Canyon Sniper Run'
-displayName: 'Crimson Canyon Sniper'
+  - tactical marksman first-person gameplay screenshots
+  - long-range canyon overwatch
+  - Canyon Marksman Contract
+displayName: Canyon Marksman Contract
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:
@@ -14,83 +16,107 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-tactical-marksman-shooter
+  - render-first-person-immersive
+  - camera-first-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through long-range threat readability; precision threat route; hostile
-    biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes,
-    using the preset as art direction rather than a required scene, mission, character, or card
-    image.
+    Source-informed video-game style router for original tactical marksman shooter captures:
+    first-person or scoped overwatch, canyon depth, wind/haze, target patrol spacing, stealth route
+    planning, and ballistics-readable sightlines. Land as a fictional marksman contract, not a
+    strategy map or military poster.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express survival pressure, terrain
-    hazards, creature scale, extraction timing, and frontier resource logic without forcing a
-    landscape postcard.
+    Preserve the user's subject and transform it into a playable marksman screenshot subject: keep
+    clear distance relationship, target/object function, cover, route affordance, scope/optic
+    framing, and stealth pressure without copying source missions or UI.
   color_and_tone: >-
-    Grade the image with crimson rock and black rifle silhouette; red rock, dust tan, and hard blue
-    shadow; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and
-    storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use a tactical canyon palette: dust beige, sun-bleached rock, cold optic blue, dry scrub green,
+    muted metal grey, and warning red accents. Keep value grouping legible through atmospheric
+    depth.
   lighting_and_shadow: >-
-    Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater
-    shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards,
-    factions, or focal threats without hiding prompt content.
+    Light the image through harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain
+    shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid
+    generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather,
-    patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture,
-    and terrain share the same production-world logic.
+    Build surfaces from rock strata, tactical fabric, matte rifle metal, scrub brush, distant
+    vehicles, heat shimmer, and sandy dust. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature
-    scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
-  atmosphere_and_mood: >-
-    Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved;
-    the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the
-    preset should not force a new storyline.
+    Compose with first-person scope, binocular, or over-weapon camera; visible foreground cover;
+    mid-distance patrol/objective; long sightline; and one clear tactical decision. Avoid isometric
+    strategy overview.
+  atmosphere_and_mood: 'Carry an original canyon marksman mood: patient, lethal, dry, quiet, tactical, and heat-hazed.'
   rendering_and_quality: >-
-    Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic
-    wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity,
-    and no readable UI, text, logos, or stock key-art gloss.
+    Finish as coherent first-person tactical shooter screenshot style, not concept art: optic
+    reticle, wind dots, range pips, objective markers, and minimap shapes can appear as abstract
+    non-readable HUD. Maintain heavy-denoise clarity and no readable UI text.
   key_features: >-
-    Crimson, Canyon, Sniper, Run; long-range threat readability; crimson rock and black rifle
-    silhouette; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and
-    storm flashes; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched
-    tents, and chipped field gear; cliff corridors and long-range sightlines; feral, precarious,
-    exploratory, weather-beaten, predatory, and resource-starved
+    Sniper Ghost Warrior Contracts 2 gameplay screenshots; long-range tactical sniper capture with
+    desert canyons, optic overlays, distant targets, wind/ballistics tension, and stealth approach
+    routes; red canyon rock, tan sand, military olive, black scope vignette, pale sky, and small red
+    target marks; harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain shadows;
+    rock strata, tactical fabric, matte rifle metal, scrub brush, distant vehicles, heat shimmer,
+    and sandy dust; first-person scoped or over-watch composition with reticle logic, target depth,
+    terrain cover, and ballistic lane readability; patient, lethal, dry, quiet, and tactical; HUD
+    guidance: scope reticle, wind/elevation marks, objective distance, ammo, and detection
+    indicators are allowed if precise
   creative_brief: >-
-    Apply Crimson Canyon Sniper Run as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Canyon Marksman Contract as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through tactical marksman references: first-person optics, long sightlines,
+    patrol spacing, cover, environmental haze, and readable stealth objective. Avoid
+    strategy-tactics framing, readable scope text, and generic military promo composition.
 avoidRules:
   - watermark
-  - text
   - logo
-  - neon-city
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic scenic wallpaper
-  - friendly nature postcard
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - strategy tactics camera
+  - drone map view
+  - generic military promo shot
+  - readable scope UI text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-034.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, neon-city, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic
-    wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, strategy tactics camera, drone map view, generic military
+    promo shot, readable scope UI text
+  referenceGame: Original tactical marksman shooter, Sniper Contracts-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    scope reticle, wind/elevation marks, objective distance, ammo, and detection indicators are
+    allowed if precise
+  renderFamily: first-person-immersive
+  cameraFamily: first-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -99,6 +125,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - wilderness-hunts-and-harsh-frontiers
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-tactical-marksman-shooter
+    - render-first-person-immersive
+    - camera-first-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

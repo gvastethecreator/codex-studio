@@ -1,10 +1,12 @@
 schemaVersion: 1
 id: SP12-039
 packId: pack_12
-name: Phantom Theater Rhythm Battle
+name: Beatline Phantom Theater
 styleAnchors:
-  - 'Phantom Theater Rhythm Battle'
-displayName: 'Phantom Theater Rhythm'
+  - stylized rhythm-action gameplay screenshots
+  - cel-shaded beat combat arena
+  - Beatline Phantom Theater
+displayName: Beatline Phantom Theater
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:
@@ -14,80 +16,110 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-rhythm-action-brawler
+  - render-stylized-rhythm-action
+  - camera-third-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through timed performance combat; competitive arena energy, lane logic,
-    player-role clarity, speed trails, and readable match flow, using the preset as art direction
-    rather than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original rhythm-action brawler captures: cel-shaded
+    third-person arena play with beat-synced impacts, graphic motion accents, stage-like combat
+    spaces, music-reactive UI shapes, and readable dodge/combo timing. Borrow the kinetic camera
+    discipline and bold cel graphic language associated with Hi-Fi Rush-like games, but land as a
+    different fictional beat-combat game with different characters, props, arena shapes, icons, and
+    color motifs.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express competition roles, lane tension,
-    speed control, ranked focus, and contest readability without forcing a sports broadcast.
+    Preserve the user's subject and transform it into a playable beat-combat screenshot subject:
+    keep clear role silhouette, attack timing, enemy spacing, route or arena affordance, and
+    hitbox-like readability without copying source characters or named IP elements.
   color_and_tone: >-
-    Grade the image with team-color contrast, hot magenta, cobalt, obsidian, sand gold, lava red,
-    and prismatic highlights; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use a rhythm-action palette: punchy red, teal shadow, yellow hit sparks, violet stage light,
+    white graphic accents, and black ink outlines. Keep value grouping legible at gameplay distance
+    and avoid generic cyberpunk wash or tactical-strategy desaturation.
   lighting_and_shadow: >-
-    Drive the lighting with stage glow through spectral haze; stage cues and rhythm-beat glow; track
-    strips, arena floods, energy gates, holographic trails, trophy glints, and motion-lit edges; use
-    highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without
-    hiding prompt content.
+    Light the image through concert-like rim lights, beat pulses, stylized spotlights, impact
+    flashes, and clean cel shading. Lighting must clarify the playable route, threat, focal subject,
+    or objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers,
-    dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from cartoon metal, posters without readable text, stage props, robot parts,
+    guitar-like weapons, and comic SFX shapes without text. Materials should feel like in-engine
+    game assets captured during play, with enough texture identity to separate props, terrain,
+    characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from competitive arena energy, lane logic, player-role
-    clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with third-person arena camera, enemy spacing, beat lanes, combo timing, and readable
+    dodges. The frame should read as a plausible playable rhythm-action capture, not an isometric
+    strategy map or key art poster.
   atmosphere_and_mood: >-
-    Keep the mood ghost-performance tension; competitive, fast, theatrical, sharp, high-stakes, and
-    crowd-charged; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks
-    for it, but the preset should not force a new storyline.
+    Carry an original beatline theater mood: loud, musical, rebellious, playful, adult enough to
+    avoid kid-gloss, and kinetic.
   rendering_and_quality: >-
-    Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no
-    fake broadcast overlay; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
-  creative_brief: >-
-    Apply Phantom Theater Rhythm Battle as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Finish as coherent in-engine stylized rhythm-action screenshot style, not concept art: combo
+    shapes, beat bars, health, timing prompts, and ability icons can appear as abstract synchronized
+    UI. Maintain heavy-denoise clarity, crisp focal hierarchy, cel-shaded material discipline,
+    readable gameplay scale, no fake logos, no readable lyric/text UI, and no strategy-tactics
+    camera.
   key_features: >-
-    Phantom, Theater, Rhythm, Battle; timed performance combat; team-color contrast, hot magenta,
-    cobalt, obsidian, sand gold, lava red, and prismatic highlights; stage glow through spectral
-    haze; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon
-    rails, and worn competition gear; race lanes, duel circles, draft grids, finish-line diagonals,
-    champion focal points, and high-speed parallax; ghost-performance tension
+    original rhythm-action brawler gameplay screenshots; cel-shaded third-person arena play;
+    beat-synced impacts; graphic motion accents; stage-like combat spaces; music-reactive abstract
+    UI shapes; punchy red, teal shadow, yellow sparks, violet stage light, white accents, black ink
+    outlines; third-person arena camera with enemy spacing and readable dodge/combo timing; loud,
+    musical, rebellious, playful, kinetic; HUD guidance: abstract combo and beat UI only, no
+    readable text
+  creative_brief: >-
+    Use Beatline Phantom Theater as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through rhythm-action brawler references: cel-shaded combat camera,
+    beat-synced effects, graphic timing UI, bold arena staging, and readable playable motion. Avoid
+    menus, logos, exact characters, exact levels, direct Hi-Fi Rush cloning, and strategy-tactics
+    framing.
 avoidRules:
   - watermark
-  - text
   - logo
-  - static
-  - muddy-colors
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - fake broadcast overlay
-  - sports-logo clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct Hi-Fi Rush clone
+  - strategy tactics camera
+  - readable rhythm text
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-039.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, static, muddy-colors, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay,
-    sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, direct Hi-Fi Rush clone, strategy tactics camera, readable
+    rhythm text
+  referenceGame: Original rhythm-action brawler, Hi-Fi Rush-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    combo meter, beat bars, health, rhythm prompts, and ability icons are part of the style if
+    visually synchronized
+  renderFamily: stylized-rhythm-action
+  cameraFamily: third-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -96,6 +128,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - speed-sport-and-competitive-arenas
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-rhythm-action-brawler
+    - render-stylized-rhythm-action
+    - camera-third-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

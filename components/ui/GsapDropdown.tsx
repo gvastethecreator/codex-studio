@@ -1,4 +1,5 @@
-import React, { useEffect, useId, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useGSAP } from '@gsap/react';
 
 import gsap from '../../lib/motionRuntime';
@@ -14,6 +15,9 @@ interface GsapDropdownProps extends Omit<React.HTMLAttributes<HTMLDivElement>, '
   onOpenChange?: (open: boolean) => void;
   triggerRef?: { current: HTMLElement | null };
   placement?: DropdownPlacement;
+  portal?: boolean;
+  portalOffset?: number;
+  portalZIndex?: number;
 }
 
 function resolveTransformOrigin(placement: DropdownPlacement) {
@@ -34,6 +38,45 @@ function prefersReducedMotion() {
   );
 }
 
+function clamp(value: number, min: number, max: number) {
+  return Math.max(min, Math.min(value, max));
+}
+
+function resolvePortalStyle({
+  trigger,
+  panel,
+  placement,
+  portalOffset,
+  portalZIndex,
+}: {
+  trigger: HTMLElement;
+  panel: HTMLElement;
+  placement: DropdownPlacement;
+  portalOffset: number;
+  portalZIndex: number;
+}): React.CSSProperties {
+  const triggerRect = trigger.getBoundingClientRect();
+  const panelRect = panel.getBoundingClientRect();
+  const viewportPadding = 8;
+  const panelWidth = panelRect.width || triggerRect.width;
+  const panelHeight = panelRect.height || 1;
+  const desiredLeft = placement.endsWith('right')
+    ? triggerRect.right - panelWidth
+    : triggerRect.left;
+  const desiredTop = placement.startsWith('top')
+    ? triggerRect.top - panelHeight - portalOffset
+    : triggerRect.bottom + portalOffset;
+
+  return {
+    position: 'fixed',
+    left: `${clamp(desiredLeft, viewportPadding, window.innerWidth - panelWidth - viewportPadding)}px`,
+    top: `${clamp(desiredTop, viewportPadding, window.innerHeight - panelHeight - viewportPadding)}px`,
+    right: 'auto',
+    bottom: 'auto',
+    zIndex: portalZIndex,
+  };
+}
+
 export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
   (
     {
@@ -42,9 +85,13 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
       onOpenChange,
       triggerRef,
       placement = 'bottom-right',
+      portal = false,
+      portalOffset = 8,
+      portalZIndex = 120,
       className,
       children,
       role = 'menu',
+      style,
       ...props
     },
     forwardedRef,
@@ -53,6 +100,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
     const dropdownId = id ?? generatedId;
     const panelRef = useRef<HTMLDivElement | null>(null);
     const [isMounted, setIsMounted] = useState(open);
+    const [portalStyle, setPortalStyle] = useState<React.CSSProperties | null>(null);
 
     const setRefs = (node: HTMLDivElement | null) => {
       panelRef.current = node;
@@ -66,6 +114,37 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
     useEffect(() => {
       if (open) setIsMounted(true);
     }, [open]);
+
+    const updatePortalPosition = useCallback(() => {
+      if (!portal || !triggerRef?.current || !panelRef.current || typeof window === 'undefined') {
+        return;
+      }
+
+      setPortalStyle(
+        resolvePortalStyle({
+          trigger: triggerRef.current,
+          panel: panelRef.current,
+          placement,
+          portalOffset,
+          portalZIndex,
+        }),
+      );
+    }, [placement, portal, portalOffset, portalZIndex, triggerRef]);
+
+    useLayoutEffect(() => {
+      if (!portal || !isMounted) {
+        setPortalStyle(null);
+        return;
+      }
+
+      updatePortalPosition();
+      window.addEventListener('resize', updatePortalPosition);
+      window.addEventListener('scroll', updatePortalPosition, true);
+      return () => {
+        window.removeEventListener('resize', updatePortalPosition);
+        window.removeEventListener('scroll', updatePortalPosition, true);
+      };
+    }, [isMounted, portal, updatePortalPosition]);
 
     useEffect(() => {
       if (!open) return;
@@ -154,7 +233,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
 
     if (!isMounted) return null;
 
-    return (
+    const dropdown = (
       <div
         {...props}
         id={dropdownId}
@@ -162,14 +241,21 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         role={role}
         data-gsap-dropdown
         data-state={open ? 'open' : 'closed'}
+        style={portal ? { ...style, ...portalStyle } : style}
         className={cn(
-          'origin-top-right rounded-xl border border-white/10 bg-zinc-950/96 shadow-[0_20px_60px_rgba(0,0,0,0.46)] backdrop-blur-xl outline-none',
+          'origin-top-right rounded-xl border border-white/10 bg-zinc-950/96 shadow-[0_20px_60px_rgba(0,0,0,0.46)] outline-none',
           className,
         )}
       >
         {children}
       </div>
     );
+
+    if (portal && typeof document !== 'undefined') {
+      return createPortal(dropdown, document.body);
+    }
+
+    return dropdown;
   },
 );
 

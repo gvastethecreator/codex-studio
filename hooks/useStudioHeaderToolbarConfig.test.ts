@@ -11,6 +11,7 @@ describe('buildStudioHeaderToolbarProps', () => {
       view: {
         isGenerating: false,
         generationStartTime: 1234,
+        routeView: 'recipes',
         currentView: 'recipes',
         onViewChange: (view) => calls.push(`view:${view}`),
         activeRecipe: null,

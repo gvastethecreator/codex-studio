@@ -5,304 +5,327 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-003',
-    name: 'Desert Mech Convoy',
-    displayName: 'Desert Mech Logistics',
-    styleAnchors: ['Desert Mech Convoy'],
+    name: 'Kharak Desert Carrier RTS',
+    displayName: 'Kharak Desert Carrier RTS',
+    styleAnchors: [
+      'Homeworld: Deserts of Kharak gameplay screenshots',
+      'Kharak Desert Carrier RTS',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, oversaturated, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through machine-scale choreography; escort-route readability; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Homeworld: Deserts of Kharak gameplay screenshots: desert RTS gameplay capture with colossal land carriers, small tracked units, sensor arcs, formation paths, and top-down tactical terrain. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable Homeworld: Deserts of Kharak-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with sun-baked ochre, bone white, and hot shadow blue; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Homeworld: Deserts of Kharak-informed palette: bleached sand, burnt orange shadows, military blue UI, dusty yellow metal, and green unit indicators. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with heat haze and hard desert sun; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through high desert glare, long carrier shadows, dust haze, engine bloom, and radar-like selection glow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from hydraulic limbs, armor plates, pistons, and dust-chipped paint; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from sand dunes, weathered armor plating, tire tracks, wreckage, antennae, heat shimmer, and utilitarian command hardware. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with elevated strategy camera with readable unit groups, attack vectors, resource sites, minimap logic, and a clear battlefield objective axis. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Homeworld: Deserts of Kharak-derived mood: dry, strategic, convoy-heavy, lonely, and military-operational. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Desert Mech Convoy as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: RTS HUD is part of the style: selection boxes, health bars, resource counters, ability icons, and minimap can appear if aligned to the camera. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Desert, Mech, Convoy; machine-scale choreography; sun-baked ochre, bone white, and hot shadow blue; heat haze and hard desert sun; hydraulic limbs, armor plates, pistons, and dust-chipped paint; staggered vehicle spacing and dust trails; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+        'Homeworld: Deserts of Kharak gameplay screenshots; desert RTS gameplay capture with colossal land carriers, small tracked units, sensor arcs, formation paths, and top-down tactical terrain; bleached sand, burnt orange shadows, military blue UI, dusty yellow metal, and green unit indicators; high desert glare, long carrier shadows, dust haze, engine bloom, and radar-like selection glow; sand dunes, weathered armor plating, tire tracks, wreckage, antennae, heat shimmer, and utilitarian command hardware; elevated strategy camera with readable unit groups, attack vectors, resource sites, minimap logic, and a clear battlefield objective axis; dry, strategic, convoy-heavy, lonely, and military-operational; HUD guidance: RTS HUD is part of the style: selection boxes, health bars, resource counters, ability icons, and minimap can appear if aligned to the camera',
+      creative_brief:
+        'Use Kharak Desert Carrier RTS as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Homeworld: Deserts of Kharak: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-005',
-    name: 'Moonbase Breach Alarm',
-    displayName: 'Moonbase Breach Ops',
-    styleAnchors: ['Moonbase Breach Alarm'],
+    name: 'Orbital Freight Breach',
+    displayName: 'Orbital Freight Breach',
+    styleAnchors: [
+      'first-person survival-horror gameplay screenshots',
+      'industrial orbital freight breach',
+      'Orbital Freight Breach',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, warm-sunlight, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Alien Isolation clone, retro pixel downgrade, exact Sevastopol station copy, xenomorph silhouette copy',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through containment failure beat; breach-state urgency; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original first-person survival-horror captures: industrial orbital freight corridors, analog devices, emergency light, maintenance clutter, hostile unseen threat pressure, and diegetic survival readability. Borrow the restrained first-person tension of Alien Isolation-like games, but land as a different fictional station with different signage shapes, creature logic, tools, UI icons, and architecture.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable first-person survival-horror screenshot subject: keep clear threat/object function, hiding route, device/tool scale, interactable affordance, and escape decision without copying source creatures or locations.",
       color_and_tone:
-        'Grade the image with warning red against utility white; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use an orbital survival palette: sodium amber, emergency red, dirty teal, gunmetal grey, pale screen green, wet black, and worn white panels. Keep value grouping legible without pixel-art downgrade.',
       lighting_and_shadow:
-        'Drive the lighting with sterile station light and alarm red; rotating alarm strobes; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flickering tube lights, rotating alarm glow, flashlight cones, terminal phosphor, and occluded corridor darkness. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from white panels, airlock seams, and lunar dust; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from worn bulkheads, cassette-future interfaces, condensation, rubber seals, scratched glass, cable bundles, and analog tech grime. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with first-person camera, foreground hand/device/tool, tight corridor or service room route, cover/hiding affordance, distant threat clue, and one survival decision. Avoid retro pixel rendering and cinematic poster framing.',
       atmosphere_and_mood:
-        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original orbital breach mood: anxious, industrial, hunted, analog, claustrophobic, and quiet.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent first-person survival-horror screenshot style, not pixel art and not concept art: diegetic motion tracker/device pips, sparse status lights, and environmental objective cues can appear. Maintain heavy-denoise clarity, readable route, and no readable signage/logos.',
       key_features:
-        'Moonbase, Breach, Alarm; containment failure beat; warning red against utility white; sterile station light and alarm red; white panels, airlock seams, and lunar dust; ruptured threshold and emergency flow; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+        'Alien: Isolation gameplay screenshots; retro-futurist space-station survival horror capture with narrow corridors, maintenance panels, emergency alarms, and vulnerable first-person stealth; dirty cream plastic, warning orange, medical green monitors, deep black vents, and cold fluorescent blue; flickering tube lights, rotating alarm glow, flashlight cones, terminal phosphor, and occluded corridor darkness; worn bulkheads, cassette-future interfaces, condensation, rubber seals, scratched glass, cable bundles, and analog tech grime; first-person corridor composition with motion-tracker depth, hiding spots, doorway silhouettes, and claustrophobic route uncertainty; anxious, analog, hunted, industrial, and breath-held; HUD guidance: coherent survival UI can include a motion tracker, small objective marker, or diegetic device screen; avoid arcade overlays',
       creative_brief:
-        "Apply Moonbase Breach Alarm as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Orbital Freight Breach as a transferable game-originals preset. Preserve prompt X, then route interpretation through first-person survival-horror references: analog devices, industrial corridors, hostile unseen pressure, diegetic HUD, and playable escape/hiding decisions. Avoid direct Alien Isolation cloning, exact station copies, creature silhouette copying, and retro pixel downgrade.',
     },
   },
   {
     id: 'SP12-011',
-    name: 'Underwater Research Collapse',
-    displayName: 'Underwater Research Horror',
-    styleAnchors: ['Underwater Research Collapse'],
+    name: 'Drowned Deco Pressure Hall',
+    displayName: 'Drowned Deco Pressure Hall',
+    styleAnchors: [
+      'immersive art-deco first-person gameplay screenshots',
+      'undersea pressure hall combat',
+      'Drowned Deco Pressure Hall',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, dry-environment, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct BioShock clone, retro pixel downgrade, exact Rapture signage',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original immersive art-deco first-person shooter captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects, enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of BioShock-like games, but land as a different fictional drowned city with different signage shapes, enemies, weapons, UI icons, and architectural motifs.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable drowned-deco first-person screenshot subject: keep clear threat/object function, route affordance, weapon or hand scale, interactable pickup logic, and readable combat spacing without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with teal pressure shadows and red lab alarms; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use an immersive drowned-deco palette: oxidized teal, brass gold, wet black, nicotine amber, coral red, sea green, and porcelain white. Keep value grouping legible at gameplay distance and avoid pixel-art downgrade or generic sci-fi blue wash.',
       lighting_and_shadow:
-        'Drive the lighting with filtered beams through glass and water; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flickering deco lamps, watery caustics, electrical arcs, muzzle flashes, and deep corridor shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from brass deco trim, cracked tiles, wet glass, peeling posters without readable slogans, riveted metal, and sea growth. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with first-person camera, playable corridor/atrium route, weapon/hand edge, interactable object, enemy spacing, and environmental cover. The frame should read as a captured gameplay moment, not a retro sprite scene or poster.',
       atmosphere_and_mood:
-        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original drowned-deco mood: decayed, theatrical, paranoid, wet, retro-futurist, and pressure-sealed.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent first-person immersive shooter screenshot style, not pixel art and not concept art: sparse contextual HUD, ability/weapon cues, pickup glow, and route lighting can appear. Maintain heavy-denoise clarity, crisp focal hierarchy, and no readable signage/logos.',
       key_features:
-        'Underwater, Research, Collapse; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale; teal pressure shadows and red lab alarms; filtered beams through glass and water; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; large-small scale contrast, hangar lanes, convoy spacing, breach corridors, dock silhouettes, and readable machinery clusters; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+        'BioShock gameplay screenshots; first-person immersive-sim capture with art-deco underwater corridors, leaking glass, plasmid hands, and environmental horror staging; green seawater, tarnished gold, rust orange, red alarm glow, black ocean void, and sickly neon signage shapes; flickering deco lamps, watery caustics, electrical arcs, muzzle flashes, and deep corridor shadows; brass deco trim, cracked tiles, wet glass, peeling posters without readable slogans, riveted metal, and sea growth; first-person weapon/plasmid framing with corridor depth, interactable props, enemy silhouettes, and resource pickup readability; decayed, theatrical, paranoid, wet, and retro-futurist; HUD guidance: health/eve meters, ammo counters, plasmid icons, and objective arrows are allowed if they match immersive-sim screenshot logic',
       creative_brief:
-        "Apply Underwater Research Collapse as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Drowned Deco Pressure Hall as a transferable game-originals preset. Preserve prompt X, then route interpretation through immersive art-deco shooter references: first-person camera, brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and promotional composition.',
     },
   },
   {
     id: 'SP12-018',
-    name: 'Storm Citadel Defense Grid',
-    displayName: 'Storm Citadel Defense',
-    styleAnchors: ['Storm Citadel Defense Grid'],
+    name: 'Defense Grid Storm Citadel',
+    displayName: 'Defense Grid Storm Citadel',
+    styleAnchors: ['Defense Grid 2 gameplay screenshots', 'Defense Grid Storm Citadel'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, chaotic-ui, low-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through protected objective logic; defense wave readability; systemic tactical overlay without UI; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Defense Grid 2 gameplay screenshots: tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien waves, and base-defense geometry. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable Defense Grid 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Defense Grid 2-informed palette: cool steel blue, electric cyan, warning orange, alien green, dark storm grey, and white tactical highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with lightning flashes and shield-grid glow; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through turret beams, shield glow, storm flashes, muzzle bursts, and path-edge illumination. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from sci-fi platforms, modular towers, energy pylons, storm-wet metal, alien carapace, and tileable base panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with isometric defense view with clear enemy path, turret placement nodes, resource counters, and wave-reading depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood defense under weather pressure; tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Defense Grid 2-derived mood: methodical, defensive, synthetic, urgent, and strategic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores should be cleanly integrated. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Storm, Citadel, Defense, Grid; protected objective logic; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; lightning flashes and shield-grid glow; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; fortified skyline and defense-grid strata; defense under weather pressure',
+        'Defense Grid 2 gameplay screenshots; tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien waves, and base-defense geometry; cool steel blue, electric cyan, warning orange, alien green, dark storm grey, and white tactical highlights; turret beams, shield glow, storm flashes, muzzle bursts, and path-edge illumination; sci-fi platforms, modular towers, energy pylons, storm-wet metal, alien carapace, and tileable base panels; isometric defense view with clear enemy path, turret placement nodes, resource counters, and wave-reading depth; methodical, defensive, synthetic, urgent, and strategic; HUD guidance: tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores should be cleanly integrated',
       creative_brief:
-        "Apply Storm Citadel Defense Grid as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Defense Grid Storm Citadel as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Defense Grid 2: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-023',
-    name: 'Orbital Garden Colony Builder',
-    displayName: 'Orbital Garden Builder',
-    styleAnchors: ['Orbital Garden Colony Builder'],
+    name: 'Surviving Mars Orbital Garden',
+    displayName: 'Surviving Mars Orbital Garden',
+    styleAnchors: ['Surviving Mars gameplay screenshots', 'Surviving Mars Orbital Garden'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, grimdark, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through builder-system legibility; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Surviving Mars gameplay screenshots: colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable Surviving Mars-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Surviving Mars-informed palette: Mars red, dome glass blue, white habitat shells, hydroponic green, yellow hazard marks, and shadowed basalt. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with planet bounce and sterile sun; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through hard Martian sun, glass-dome reflections, night colony LEDs, dust storm haze, and greenhouse glow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from greenhouse glass, orbital struts, and modular colony shells; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from modular domes, cables, solar panels, rover tracks, pressurized corridors, garden beds, and UI-like planning overlays. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with elevated management camera with colony clusters, build nodes, resource lines, drone movement, and infrastructure hierarchy. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Surviving Mars-derived mood: optimistic, technical, fragile, logistical, and frontier-scientific. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: builder HUD is allowed: resource bars, build palette, dome status, and management overlays should look functional. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Orbital, Garden, Colony, Builder; builder-system legibility; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; planet bounce and sterile sun; greenhouse glass, orbital struts, and modular colony shells; ring habitat arcs and greenhouse modules; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+        'Surviving Mars gameplay screenshots; colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale; Mars red, dome glass blue, white habitat shells, hydroponic green, yellow hazard marks, and shadowed basalt; hard Martian sun, glass-dome reflections, night colony LEDs, dust storm haze, and greenhouse glow; modular domes, cables, solar panels, rover tracks, pressurized corridors, garden beds, and UI-like planning overlays; elevated management camera with colony clusters, build nodes, resource lines, drone movement, and infrastructure hierarchy; optimistic, technical, fragile, logistical, and frontier-scientific; HUD guidance: builder HUD is allowed: resource bars, build palette, dome status, and management overlays should look functional',
       creative_brief:
-        "Apply Orbital Garden Colony Builder as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Surviving Mars Orbital Garden as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Surviving Mars: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-033',
-    name: 'Robot Orchard Defense',
+    name: 'Plants vs Zombies Orchard Defense',
+    displayName: 'Plants vs Zombies Orchard Defense',
+    styleAnchors: ['Plants vs. Zombies gameplay screenshots', 'Plants vs Zombies Orchard Defense'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, grimdark, overfog, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through automated defense logic; defense wave readability; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Plants vs. Zombies gameplay screenshots: cartoon lane-defense capture with garden rows, readable enemy waves, plant units, projectiles, and cheerful tower-defense clarity. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable Plants vs. Zombies-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Plants vs. Zombies-informed palette: lawn green, sunflower yellow, zombie grey, roof red, pea green, and bright blue UI accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flat daylight, simple night-stage tint, projectile glow, explosion puffs, and friendly cartoon contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from utility robots, orchard frames, and clean hazard paint; gnarled branches, fruit color, and defensive machinery; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from bold 2D sprites, lawn tiles, soil rows, silly enemy shapes, plant textures, coins, and chunky projectiles. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with fixed orthographic lane view with left-to-right wave pressure, plant placement grid, resource sun, and readable path lanes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood pastoral zone turned tactical; tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Plants vs. Zombies-derived mood: absurd, defensive, charming, escalating, and tactically legible. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Robot Orchard Defense as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: seed packets, sun counter, progress meter, and lane indicators are expected as coherent gameplay UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Robot, Orchard, Defense; automated defense logic; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; utility robots, orchard frames, and clean hazard paint; protected core, lanes, and fallback positions; pastoral zone turned tactical',
+        'Plants vs. Zombies gameplay screenshots; cartoon lane-defense capture with garden rows, readable enemy waves, plant units, projectiles, and cheerful tower-defense clarity; lawn green, sunflower yellow, zombie grey, roof red, pea green, and bright blue UI accents; flat daylight, simple night-stage tint, projectile glow, explosion puffs, and friendly cartoon contrast; bold 2D sprites, lawn tiles, soil rows, silly enemy shapes, plant textures, coins, and chunky projectiles; fixed orthographic lane view with left-to-right wave pressure, plant placement grid, resource sun, and readable path lanes; absurd, defensive, charming, escalating, and tactically legible; HUD guidance: seed packets, sun counter, progress meter, and lane indicators are expected as coherent gameplay UI',
+      creative_brief:
+        'Use Plants vs Zombies Orchard Defense as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Plants vs. Zombies: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-042',
-    name: 'Quantum Laboratory Rift',
+    name: 'Control Rift Laboratory',
+    displayName: 'Control Rift Laboratory',
+    styleAnchors: ['Control gameplay screenshots', 'Control Rift Laboratory'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, fantasy-castle, muddy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through unstable portal hazard; experiment instability; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Control gameplay screenshots: third-person paranormal action capture with brutalist interiors, red astral corruption, floating debris, and supernatural combat geometry. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable Control-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with violet rift light, sterile white, and teal lab glow; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Control-informed palette: concrete grey, Federal red, black office void, fluorescent white, amber desk lamps, and pale psychic blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with split-dimensional glow and hard rim tear; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through overhead fluorescents, red threshold glow, object-of-power bloom, muzzle flashes, and deep brutalist shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from glass tanks, containment frames, and sterile metal; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from concrete slabs, office furniture, papers, floating rubble, glass partitions, and bureaucratic paranormal material contrast. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with over-shoulder action camera with levitation depth, cover objects, enemy silhouettes, and architectural scale axes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Control-derived mood: uncanny, bureaucratic, oppressive, clean, and reality-bent. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: health/energy bars, objective markers, and ability reticles can appear but should remain sleek and minimal. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Quantum, Laboratory, Rift; unstable portal hazard; violet rift light, sterile white, and teal lab glow; split-dimensional glow and hard rim tear; glass tanks, containment frames, and sterile metal; portal seam as focal anchor; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+        'Control gameplay screenshots; third-person paranormal action capture with brutalist interiors, red astral corruption, floating debris, and supernatural combat geometry; concrete grey, Federal red, black office void, fluorescent white, amber desk lamps, and pale psychic blue; overhead fluorescents, red threshold glow, object-of-power bloom, muzzle flashes, and deep brutalist shadow; concrete slabs, office furniture, papers, floating rubble, glass partitions, and bureaucratic paranormal material contrast; over-shoulder action camera with levitation depth, cover objects, enemy silhouettes, and architectural scale axes; uncanny, bureaucratic, oppressive, clean, and reality-bent; HUD guidance: health/energy bars, objective markers, and ability reticles can appear but should remain sleek and minimal',
       creative_brief:
-        "Apply Quantum Laboratory Rift as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Control Rift Laboratory as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Control: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-045',
-    name: 'Alloy Forest Mech Hunt',
+    name: 'Alloy Forest Ambush',
+    displayName: 'Alloy Forest Ambush',
+    styleAnchors: [
+      'first-person retrofuturist mech survival screenshots',
+      'rural machine ambush',
+      'Alloy Forest Ambush',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, generic robot forest render, exact Swedish village clone',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through nature-machine fusion; machine-scale choreography; tracking, ambush, and scale reveal; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original retrofuturist first-person mech survival captures: rural forest roads, abandoned utility structures, hostile machine silhouettes, scavenged weapons, weathered 1980s tech, and readable stealth/combat routes. Land as a fictional machine-survival setting, not an isometric tactics map.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable first-person survival screenshot subject: keep clear threat/object role, foreground weapon/tool scale, cover, patrol spacing, loot/interactable affordance, and escape route without copying source locations or robots.",
       color_and_tone:
-        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a rural mech-survival palette: pine green, cold sky grey, rust orange, old enamel red, wet asphalt blue, dull steel, and warning amber. Keep value grouping legible through forest clutter.',
       lighting_and_shadow:
-        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through low Nordic sun, flashlight beams, robot sensor glow, muzzle flashes, and misty forest shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from brushed alloy trunks and mechanical bark; hydraulic limbs, armor plates, pistons, and dust-chipped paint; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from wet grass, concrete bunkers, robot hydraulics, backpacks, old cars, chipped paint, and rural decay. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with first-person weapon/tool camera, foreground cover, mid-distance machine or objective, route depth, and survival decision. Avoid strategy overview and generic robot promo framing.',
       atmosphere_and_mood:
-        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original alloy-forest survival mood: lonely, tactical, rural, mechanical, uneasy, and scavenged.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent first-person immersive survival shooter screenshot style, not concept art: sparse HUD, detection pips, ammo/tool cues, and objective markers can appear abstractly. Maintain heavy-denoise clarity, readable silhouettes, and no readable signage/logos.',
       key_features:
-        'Alloy, Forest, Mech, Hunt; nature-machine fusion; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; brushed alloy trunks and mechanical bark; tracking-scale contrast against a dangerous landmark; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+        'Generation Zero gameplay screenshots; open-world robot-hunt capture with Scandinavian forests, abandoned roads, large machines, guerrilla gear, and distant threat silhouettes; pine green, fog grey, rust orange, warning red, military olive, and cold blue sky; low Nordic sun, flashlight beams, robot sensor glow, muzzle flashes, and misty forest shadow; wet grass, concrete bunkers, robot hydraulics, backpacks, old cars, chipped paint, and rural decay; first-person or third-person survival shooter framing with machine scale, cover routes, weak points, and ambush distance; lonely, tactical, rural, mechanical, and uneasy; HUD guidance: weapon/ammo HUD, compass, stealth markers, and machine tags can appear if modest and readable',
       creative_brief:
-        "Apply Alloy Forest Mech Hunt as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Alloy Forest Ambush as a transferable game-originals preset. Preserve prompt X, then route interpretation through retrofuturist mech-survival references: first-person camera, rural machine threats, scavenged materials, cover routes, and readable survival pressure. Avoid strategy-tactics framing, exact village copies, and generic robot forest renders.',
     },
   },
   {
     id: 'SP12-046',
-    name: 'Solar Rail Nomad Camp',
-    displayName: 'Solar Rail Nomad Logistics',
-    styleAnchors: ['Solar Rail Nomad Camp'],
+    name: 'Sable Solar Rail Nomads',
+    displayName: 'Sable Solar Rail Nomads',
+    styleAnchors: ['Sable gameplay screenshots', 'Sable Solar Rail Nomads'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, neon-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through linear route pressure; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Sable gameplay screenshots: open-world desert exploration capture with ligne-claire outlines, hoverbike travel, nomad camps, giant ruins, and flat-color calm. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable Sable-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with warm solar gold, dusty white, and panel blue; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Sable-informed palette: sand peach, muted red, sky cyan, black ink outlines, pale yellow, and dusty lavender shadows. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through soft desert sun, flat cel shade, gentle sunset gradients, and minimal bloom. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from portable panels and nomad rigging; solar fabric, rail dust, and portable machinery; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from outlined tents, hoverbike panels, cloth wraps, ancient metal, smooth dunes, and hand-drawn environment edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person travel camera with small rider scale, broad horizon, route landmarks, and sparse UI comfort. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood mobile frontier camp; tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Sable-derived mood: quiet, nomadic, contemplative, warm, and exploratory. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Solar Rail Nomad Camp as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal compass/objective and stamina-like traversal indicators are acceptable; keep it airy. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Solar, Rail, Nomad, Camp; linear route pressure; warm solar gold, dusty white, and panel blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; portable panels and nomad rigging; long track perspective and carriage modules; mobile frontier camp',
+        'Sable gameplay screenshots; open-world desert exploration capture with ligne-claire outlines, hoverbike travel, nomad camps, giant ruins, and flat-color calm; sand peach, muted red, sky cyan, black ink outlines, pale yellow, and dusty lavender shadows; soft desert sun, flat cel shade, gentle sunset gradients, and minimal bloom; outlined tents, hoverbike panels, cloth wraps, ancient metal, smooth dunes, and hand-drawn environment edges; third-person travel camera with small rider scale, broad horizon, route landmarks, and sparse UI comfort; quiet, nomadic, contemplative, warm, and exploratory; HUD guidance: minimal compass/objective and stamina-like traversal indicators are acceptable; keep it airy',
+      creative_brief:
+        'Use Sable Solar Rail Nomads as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Sable: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-068',
-    name: 'Skyforge Dragon Dock',
+    name: 'Panzer Dragoon Skyforge Dock',
+    displayName: 'Panzer Dragoon Skyforge Dock',
+    styleAnchors: ['Panzer Dragoon: Remake gameplay screenshots', 'Panzer Dragoon Skyforge Dock'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, text, logo, underwater, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation, generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Panzer Dragoon: Remake gameplay screenshots: on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express operational scale, machine relationships, frontier labor, breach pressure, and engineered movement without requiring a mech battle.",
+        "Preserve the user's subject and transform it into a playable Panzer Dragoon: Remake-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Panzer Dragoon: Remake-informed palette: dusty teal, rust orange, bone white, sky blue, violet shadow, and red lock-on marks. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through sunlit sky haze, weapon lock glow, engine-like ancient lights, and atmospheric rim on wings. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from rigging, cranes, wet metal, and dragon-scale docking gear; scratched armor, hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from scaled dragon skin, ancient machinery, floating platforms, organic metal, desert ruins, and rail-shooter projectile effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person behind-dragon rail camera with targets around the screen, sweeping horizon, and cinematic flight route. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Panzer Dragoon: Remake-derived mood: strange, majestic, lonely, arcade, and mythic sci-fi. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no asset-render isolation; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter language. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Skyforge, Dragon, Dock; frontier science fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale; dust ochre, oxide orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; bay floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels; rigging, cranes, wet metal, and dragon-scale docking gear; shipyard layers; tense, industrial, exploratory, militarized, frontier-worn, and technically precise',
+        'Panzer Dragoon: Remake gameplay screenshots; on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies; dusty teal, rust orange, bone white, sky blue, violet shadow, and red lock-on marks; sunlit sky haze, weapon lock glow, engine-like ancient lights, and atmospheric rim on wings; scaled dragon skin, ancient machinery, floating platforms, organic metal, desert ruins, and rail-shooter projectile effects; third-person behind-dragon rail camera with targets around the screen, sweeping horizon, and cinematic flight route; strange, majestic, lonely, arcade, and mythic sci-fi; HUD guidance: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter language',
       creative_brief:
-        "Apply Skyforge Dragon Dock as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Panzer Dragoon Skyforge Dock as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Panzer Dragoon: Remake: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

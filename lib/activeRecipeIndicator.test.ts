@@ -7,6 +7,7 @@ const REGISTERED_RECIPE_IDS: Exclude<RecipeId, null>[] = [
   'styles',
   'remaster',
   'spritesheet',
+  'sprite-atlas',
   'cinematic',
   'character-lab',
   'character',

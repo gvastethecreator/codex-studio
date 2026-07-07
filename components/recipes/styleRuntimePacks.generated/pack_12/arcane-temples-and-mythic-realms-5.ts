@@ -5,312 +5,327 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-006',
-    name: 'Arcane Library Boss Arena',
-    displayName: 'Arcane Library Encounter',
-    styleAnchors: ['Arcane Library Boss Arena'],
+    name: 'Bloodstained Arcane Library Boss',
+    displayName: 'Bloodstained Arcane Library Boss',
+    styleAnchors: [
+      'Bloodstained: Ritual of the Night gameplay screenshots',
+      'Bloodstained Arcane Library Boss',
+    ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, cartoon, flat, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through knowledge-as-power readability; boss encounter hierarchy; competitive role clarity; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Bloodstained: Ritual of the Night gameplay screenshots: gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable Bloodstained: Ritual of the Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Bloodstained: Ritual of the Night-informed palette: violet velvet, candle gold, book brown, moon blue, crimson magic, and porcelain skin highlights without copying characters. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with rune-lit scholarly glow; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through candelabra pools, stained glass rim, spell bloom, boss hit flashes, and deep library shadow bands. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from ink, vellum, brass, and crystal; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from 2.5D gothic masonry, leather books, polished floors, embroidered costumes, demon silhouettes, and clean effect particles. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-view combat lane with boss arena symmetry, jump arcs, magic projectiles, platforms, and health-bar readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Bloodstained: Ritual of the Night-derived mood: ornate, occult, dramatic, and arcade-readable. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding arcane knowledge pressure, readable encounter hierarchy, glyph-lit depth, and mythic game polish without forcing a fixed scene, character, prop, or story beat.",
+        'Finish as a coherent in-engine screenshot style, not concept art: boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Arcane, Library, Boss, Arena; knowledge-as-power readability; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; rune-lit scholarly glow; ink, vellum, brass, and crystal; arena focal throne and readable threat scale; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power',
+        'Bloodstained: Ritual of the Night gameplay screenshots; gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors; violet velvet, candle gold, book brown, moon blue, crimson magic, and porcelain skin highlights without copying characters; candelabra pools, stained glass rim, spell bloom, boss hit flashes, and deep library shadow bands; 2.5D gothic masonry, leather books, polished floors, embroidered costumes, demon silhouettes, and clean effect particles; side-view combat lane with boss arena symmetry, jump arcs, magic projectiles, platforms, and health-bar readability; ornate, occult, dramatic, and arcade-readable; HUD guidance: boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot',
+      creative_brief:
+        'Use Bloodstained Arcane Library Boss as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Bloodstained: Ritual of the Night: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-013',
-    name: 'Crystal Desert Shrine',
-    displayName: 'Crystal Desert Shrinecraft',
-    styleAnchors: ['Crystal Desert Shrine'],
+    name: 'Journey Crystal Desert Pilgrimage',
+    displayName: 'Journey Crystal Desert Pilgrimage',
+    styleAnchors: ['Journey gameplay screenshots', 'Journey Crystal Desert Pilgrimage'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, urban-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Journey gameplay screenshots: minimal third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple ruins, and poetic route silhouettes. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable Journey-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with prismatic blue-white with sharp color splits; sun-baked ochre, bone white, and hot shadow blue; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Journey-informed palette: burnt orange sand, rose dusk, gold glints, cobalt night, white scarf marks, and sparse turquoise glyph glow. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with crystal refraction and caustic shards; heat haze and hard desert sun; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through low sun bloom, soft horizon haze, rimmed dunes, starry twilight, and warm sand bounce. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from stone steps, offerings, and worn gates; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from smooth sand sheets, cloth folds, simple stone glyphs, flowing particles, and elegant low-detail geometry. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with wide third-person travel framing with negative space, small player silhouette, slope vectors, and one clear destination landmark. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Journey-derived mood: lonely, sacred, graceful, meditative, and mythic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding prismatic mythic light, mineral ceremonial geometry, sun-washed palette, and readable adventure-game polish without forcing a fixed scene, character, prop, or story beat.",
+        'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Crystal, Desert, Shrine; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order; prismatic blue-white with sharp color splits; crystal refraction and caustic shards; stone steps, offerings, and worn gates; ceremonial path and altar focal point; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power',
+        'Journey gameplay screenshots; minimal third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple ruins, and poetic route silhouettes; burnt orange sand, rose dusk, gold glints, cobalt night, white scarf marks, and sparse turquoise glyph glow; low sun bloom, soft horizon haze, rimmed dunes, starry twilight, and warm sand bounce; smooth sand sheets, cloth folds, simple stone glyphs, flowing particles, and elegant low-detail geometry; wide third-person travel framing with negative space, small player silhouette, slope vectors, and one clear destination landmark; lonely, sacred, graceful, meditative, and mythic; HUD guidance: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered',
+      creative_brief:
+        'Use Journey Crystal Desert Pilgrimage as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Journey: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-015',
-    name: 'Ancient Mecha Temple',
-    displayName: 'Ancient Mecha Templecraft',
-    styleAnchors: ['Ancient Mecha Temple'],
+    name: 'Axiom Verge Ancient Tech Temple',
+    displayName: 'Axiom Verge Ancient Tech Temple',
+    styleAnchors: ['Axiom Verge gameplay screenshots', 'Axiom Verge Ancient Tech Temple'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, clean-modern, flat-light, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through dormant machine divinity; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Axiom Verge gameplay screenshots: retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable Axiom Verge-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Axiom Verge-informed palette: deep purple, toxic green, rusty red, bone white, black void, and electric blue glitch accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through pixel bloom from energy nodes, dark room contrast, weapon flashes, and monitor-like color bands. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from eroded stone and buried machine plating; ancient plating fused into temple stone; worn stone, carved traps, and ritual metal; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from pixelated bio-circuit walls, alien statues, ribbed machinery, corrupted tiles, and crunchy particle bursts. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-view exploration frame with platforms, doors, enemies, secret routes, and small character scale against strange architecture. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood old technology waking up; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Axiom Verge-derived mood: lonely, alien, retro, corrupted, and exploratory. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding ancient machine scale, ritual geometry, worn stone-metal material, and readable game-art polish without forcing a fixed scene, character, prop, or story beat.",
+        'Finish as a coherent in-engine screenshot style, not concept art: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and period-correct. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Ancient, Mecha, Temple; dormant machine divinity; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; eroded stone and buried machine plating; trap gauntlet depth; old technology waking up',
+        'Axiom Verge gameplay screenshots; retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards; deep purple, toxic green, rusty red, bone white, black void, and electric blue glitch accents; pixel bloom from energy nodes, dark room contrast, weapon flashes, and monitor-like color bands; pixelated bio-circuit walls, alien statues, ribbed machinery, corrupted tiles, and crunchy particle bursts; side-view exploration frame with platforms, doors, enemies, secret routes, and small character scale against strange architecture; lonely, alien, retro, corrupted, and exploratory; HUD guidance: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and period-correct',
+      creative_brief:
+        'Use Axiom Verge Ancient Tech Temple as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Axiom Verge: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-020',
-    name: 'Celestial Harbor Trade Wars',
-    displayName: 'Celestial Harbor Strategy',
-    styleAnchors: ['Celestial Harbor Trade Wars'],
+    name: 'Sunless Skies Celestial Trade',
+    displayName: 'Sunless Skies Celestial Trade',
+    styleAnchors: ['Sunless Skies gameplay screenshots', 'Sunless Skies Celestial Trade'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, empty-scene, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through faction commerce conflict; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Sunless Skies gameplay screenshots: top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable Sunless Skies-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with pearl gold, harbor blue, and star-lit trade colors; wet harbor blues, sodium orange, and fog black; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Sunless Skies-informed palette: inky black, tarnished brass, gaslight gold, deep teal nebulae, sickly green fog, and red warning accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through locomotive lamp cones, port lanterns, star glimmers, weapon flashes, and fog-softened halos. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from docks, hulls, ropes, and rain-slick stone; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from painted locomotive metal, Victorian ornament, chart icons, void clouds, cargo crates, and storybook UI panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with top-down travel composition with ship/train silhouette, docking targets, enemy arcs, and map-like navigational readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood mythic commerce and naval ceremony; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Sunless Skies-derived mood: literary, gothic, mercantile, eerie, and cosmic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Celestial Harbor Trade Wars as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they feel like dark exploration UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Celestial, Harbor, Trade, Wars; faction commerce conflict; pearl gold, harbor blue, and star-lit trade colors; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; docks, hulls, ropes, and rain-slick stone; docks, sails, and negotiation standoff; mythic commerce and naval ceremony',
+        'Sunless Skies gameplay screenshots; top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors; inky black, tarnished brass, gaslight gold, deep teal nebulae, sickly green fog, and red warning accents; locomotive lamp cones, port lanterns, star glimmers, weapon flashes, and fog-softened halos; painted locomotive metal, Victorian ornament, chart icons, void clouds, cargo crates, and storybook UI panels; top-down travel composition with ship/train silhouette, docking targets, enemy arcs, and map-like navigational readability; literary, gothic, mercantile, eerie, and cosmic; HUD guidance: navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they feel like dark exploration UI',
+      creative_brief:
+        'Use Sunless Skies Celestial Trade as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Sunless Skies: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-028',
-    name: 'Sky Monastery Duel',
-    displayName: 'Sky Monastery Duelism',
-    styleAnchors: ['Sky Monastery Duel'],
+    name: 'Sekiro Temple Duel',
+    displayName: 'Sekiro Temple Duel',
+    styleAnchors: ['Sekiro: Shadows Die Twice gameplay screenshots', 'Sekiro Temple Duel'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, grunge, chaotic-fx, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through one-on-one contest pressure; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Sekiro: Shadows Die Twice gameplay screenshots: third-person shinobi duel capture with Japanese temple rooftops, posture combat, grappling routes, and precise sword-spacing. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable Sekiro: Shadows Die Twice-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Sekiro: Shadows Die Twice-informed palette: weathered wood, autumn red, faded gold, ink black, mist grey, and steel-blue blade highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with high-altitude rim light; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through soft mountain daylight, lantern amber, sword sparks, deathblow red, and fogged courtyard shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from aged timber, tatami, rope, lacquer armor, dry leaves, roof tiles, and disciplined samurai cloth detail. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with over-shoulder lock-on combat camera with boss distance, posture pressure, arena edge clarity, and vertical grapple points. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood windy ritual focus; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Sekiro: Shadows Die Twice-derived mood: severe, elegant, lethal, disciplined, and historical-fantastic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: posture bars, health nodes, item quick slots, and lock-on markers are allowed when they preserve action readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Sky, Monastery, Duel; one-on-one contest pressure; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; high-altitude rim light; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; vertical cloud depth and suspended pathways; windy ritual focus',
+        'Sekiro: Shadows Die Twice gameplay screenshots; third-person shinobi duel capture with Japanese temple rooftops, posture combat, grappling routes, and precise sword-spacing; weathered wood, autumn red, faded gold, ink black, mist grey, and steel-blue blade highlights; soft mountain daylight, lantern amber, sword sparks, deathblow red, and fogged courtyard shadow; aged timber, tatami, rope, lacquer armor, dry leaves, roof tiles, and disciplined samurai cloth detail; over-shoulder lock-on combat camera with boss distance, posture pressure, arena edge clarity, and vertical grapple points; severe, elegant, lethal, disciplined, and historical-fantastic; HUD guidance: posture bars, health nodes, item quick slots, and lock-on markers are allowed when they preserve action readability',
       creative_brief:
-        "Apply Sky Monastery Duel as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Sekiro Temple Duel as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Sekiro: Shadows Die Twice: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-044',
-    name: 'Mirage Palace Stealth Gala',
-    displayName: 'Mirage Palace Stealth',
-    styleAnchors: ['Mirage Palace Stealth Gala'],
+    name: 'Velvet Mask Palace Run',
+    displayName: 'Velvet Mask Palace Run',
+    styleAnchors: [
+      'stylized palace infiltration JRPG gameplay screenshots',
+      'masked heist palace route',
+      'Velvet Mask Palace Run',
+    ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Persona clone, board command camera, readable menu text, exact phantom thief costume',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through masked route planning and soft-footed staging; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original stylized palace infiltration JRPG captures: third-person stealth route, theatrical palace interiors, masked enemies, graphic UI accents, sharp color blocking, and readable ambush/combat transitions. Borrow the stylish readability of Persona-like palace gameplay, but land as a different fictional mask-heist JRPG with different costumes, symbols, UI icons, menus, and palace motifs.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable stylized palace run screenshot subject: keep clear player/enemy/object function, stealth route, ambush distance, cover, and interaction affordance without copying source costumes or characters.",
       color_and_tone:
-        'Grade the image with mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a stylized palace palette: velvet red, black lacquer, ivory floor light, gold trim, cyan UI accent, violet shadow, and theatrical spot color. Keep silhouettes crisp and graphic.',
       lighting_and_shadow:
-        'Drive the lighting with heat shimmer and mirror haze; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through stage spotlights, palace glow, high-contrast cel shadows, attack flashes, and stylized menu-like transitions. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished tile, silk screens, and ornate rails; silk, mirror floors, and masked ornament; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from slick cel-shaded characters without copying cast likeness, ornate palace props, masks, velvet, cards, and graphic overlays. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with third-person infiltration or combat camera, palace route depth, enemy spacing, cover/ambush affordance, and abstract UI shapes. Avoid board-command framing and menu-screen composition.',
       atmosphere_and_mood:
-        'Keep the mood luxury deception; elegant stealth pressure; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original velvet-mask palace mood: stylish, theatrical, rebellious, sly, luxurious, and kinetic.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Mirage Palace Stealth Gala as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as coherent stylized third-person JRPG gameplay screenshot style, not concept art: contextual action icons, turn/ambush cues, and graphic UI shapes can appear but must be non-readable. Maintain heavy-denoise clarity, crisp silhouettes, and no readable menu text.',
       key_features:
-        'Mirage, Palace, Stealth, Gala; masked route planning and soft-footed staging; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; heat shimmer and mirror haze; polished tile, silk screens, and ornate rails; formal halls with hidden route options; luxury deception',
+        'Persona 5 Royal gameplay screenshots; stylish JRPG palace capture with angular UI energy, red-black fashion, stealth ambush framing, and surreal luxury interiors; crimson red, black, cream, gold, saturated blue shadows, and graphic white accents; stage spotlights, palace glow, high-contrast cel shadows, attack flashes, and stylized menu-like transitions; slick cel-shaded characters without copying cast likeness, ornate palace props, masks, velvet, cards, and graphic overlays; third-person palace exploration or turn-based combat framing with ambush angles, enemy weaknesses, and dramatic UI rhythm; rebellious, decadent, theatrical, sharp, and stylish; HUD guidance: bold JRPG battle/exploration UI is part of the style: angular panels, turn icons, and command shapes can appear without readable logo text',
+      creative_brief:
+        'Use Velvet Mask Palace Run as a transferable game-originals preset. Preserve prompt X, then route interpretation through stylized palace JRPG references: third-person stealth/combat camera, theatrical color blocking, masked enemies, palace route affordances, and abstract UI grammar. Avoid direct Persona cloning, exact costumes, board-command camera, and readable menu text.',
     },
   },
   {
     id: 'SP12-053',
-    name: 'Marsh Witch Coven Arena',
-    displayName: 'Marsh Witch Coven Combat',
-    styleAnchors: ['Marsh Witch Coven Arena'],
+    name: 'Bog Coven Contract',
+    displayName: 'Bog Coven Contract',
+    styleAnchors: [
+      'grim folklore RPG gameplay screenshots',
+      'third-person swamp monster contract',
+      'Bog Coven Contract',
+    ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, sci-fi-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Witcher clone, racing sport camera, exact monster contract UI',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through competitive role clarity; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original grim folklore RPG captures: third-person swamp contract gameplay with wet village edges, occult props, monster telegraphs, grounded quest-combat readability, and adult muddy fantasy restraint. Borrow the folkloric material discipline of Witcher-like games, but land as a different fictional monster-contract RPG with different characters, creatures, villages, UI icons, and quest props.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable bog-coven RPG screenshot subject: keep clear role silhouette, monster/player/object function, dodge or sign distance, route affordance, and scale relationship without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a grim folklore RPG palette: mud brown, swamp green, corpse grey, candle yellow, dried blood red, peat black, and stormy blue. Keep value grouping legible at gameplay distance and avoid racing-sport brightness, glossy fantasy polish, or clean heroic color scripts.',
       lighting_and_shadow:
-        'Drive the lighting with wet lantern circles and sick ritual glow; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through overcast swamp light, torch pools, spell signs, moon haze, and monster-eye glints. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from reeds, peat water, green copper, and wet roots; bones, herbs, reeds, and dark water; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from wet reeds, rotting wood, leather armor, bone charms, mud, witch huts, and realistic creature skin. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with third-person action-RPG framing: weapon/sign distance, dodge space, monster telegraph, bog route, and quest-location depth. The frame should read as a plausible gameplay capture, not a racing shot, poster, or cinematic monster portrait.',
       atmosphere_and_mood:
-        'Keep the mood humid occult pressure; wetland occult menace; witchcraft pressure in a marsh arena; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original bog-coven contract mood: folkloric, grimy, adult, dangerous, humid, and morally murky.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding wetland coven atmosphere, circular ritual composition, moss-and-wax material logic, and readable game-art polish without forcing a fixed scene, character, prop, or story beat.",
+        'Finish as coherent in-engine third-person RPG screenshot style, not concept art: contextual RPG HUD can include health/stamina, small minimap shape, potion icons, and non-readable quest marker. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, no fake logos, no racing camera, no exact monster contract UI, and no stock-photo polish.',
       key_features:
-        'Marsh, Witch, Coven, Arena; competitive role clarity; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; wet lantern circles and sick ritual glow; reeds, peat water, green copper, and wet roots; circular contest space and ranked focal hierarchy; humid occult pressure',
+        'original grim folklore RPG gameplay screenshots; third-person swamp contract capture; wet village edges, occult props, monster telegraphs, grounded quest-combat readability; mud brown, swamp green, corpse grey, candle yellow, dried blood red, peat black, stormy blue; overcast swamp light, torch pools, small spell signs, moon haze, monster-eye glints; wet reeds, rotting wood, leather, bone charms, mud, witch huts, creature skin; third-person action-RPG framing with dodge space and quest-location depth; adult, muddy, dangerous, morally murky; HUD guidance: contextual RPG HUD only, no readable quest text',
+      creative_brief:
+        'Use Bog Coven Contract as a transferable game-originals preset. Preserve prompt X, then route interpretation through grim folklore RPG references: third-person camera, muddy material language, monster-contract readability, swamp route affordances, and restrained in-engine finish. Avoid menus, logos, exact characters, exact levels, direct Witcher cloning, racing-sport framing, and promotional key art.',
     },
   },
   {
     id: 'SP12-055',
-    name: 'Orchid Palace Puzzle Gardens',
-    displayName: 'Orchid Palace Puzzle Garden',
-    styleAnchors: ['Orchid Palace Puzzle Gardens'],
+    name: 'Witness Orchid Puzzle Garden',
+    displayName: 'Witness Orchid Puzzle Garden',
+    styleAnchors: ['The Witness gameplay screenshots', 'Witness Orchid Puzzle Garden'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, combat-chaos, murky, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on The Witness gameplay screenshots: first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable The Witness-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with orchid pink, jade green, and palace gold; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a The Witness-informed palette: orchid pink, grass green, clean white panels, ocean blue, yellow sunlight, and soft grey shadow. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through clear island daylight, garden bloom, panel glow, reflected water, and simple readable shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from polished tile, silk screens, and ornate rails; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from smooth puzzle panels, manicured hedges, stone paths, colored glass, flowers, and minimal architectural surfaces. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person puzzle framing with panel in foreground, environmental clue alignment, open path, and landmark composition. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood luxury garden puzzle calm; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a The Witness-derived mood: serene, cerebral, bright, quiet, and spatially precise. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; puzzle panels and environmental affordances should carry the interface. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Orchid, Palace, Puzzle, Gardens; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order; orchid pink, jade green, and palace gold; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; polished tile, silk screens, and ornate rails; formal halls with hidden route options; luxury garden puzzle calm',
+        'The Witness gameplay screenshots; first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic; orchid pink, grass green, clean white panels, ocean blue, yellow sunlight, and soft grey shadow; clear island daylight, garden bloom, panel glow, reflected water, and simple readable shadows; smooth puzzle panels, manicured hedges, stone paths, colored glass, flowers, and minimal architectural surfaces; first-person puzzle framing with panel in foreground, environmental clue alignment, open path, and landmark composition; serene, cerebral, bright, quiet, and spatially precise; HUD guidance: almost no HUD; puzzle panels and environmental affordances should carry the interface',
       creative_brief:
-        "Apply Orchid Palace Puzzle Gardens as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Witness Orchid Puzzle Garden as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from The Witness: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-061',
-    name: 'Jade Volcano Shrine Run',
-    displayName: 'Jade Volcano Shrinecraft',
-    styleAnchors: ['Jade Volcano Shrine Run'],
+    name: 'Okami Jade Volcano Shrine',
+    displayName: 'Okami Jade Volcano Shrine',
+    styleAnchors: ['Okami HD gameplay screenshots', 'Okami Jade Volcano Shrine'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, snow, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Okami HD gameplay screenshots: ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable Okami HD-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with jade green, ash black, and volcanic orange; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Okami HD-informed palette: rice-paper cream, ink black, vermilion red, jade green, sky blue, and golden sun accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with green ritual heat; volcanic backlight and jade ritual glow; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through painted sunlight, blossom glow, brushstroke flashes, lava warmth, and flat illustrative shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from ash, obsidian, and carved shrine rock; stone steps, offerings, and worn gates; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from ink contours, watercolor fills, paper grain, shrine wood, stone lanterns, cloud curls, and calligraphic effects without readable text. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person adventure framing with path curves, shrine gates, enemy arena space, and brush-action readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Okami HD-derived mood: mythic, graceful, playful, painterly, and restorative. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: small brush/health icons can appear, but keep the screen feeling like painted gameplay rather than UI collage. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Jade, Volcano, Shrine, Run; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order; jade green, ash black, and volcanic orange; green ritual heat; ash, obsidian, and carved shrine rock; ceremonial path and altar focal point; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power',
+        'Okami HD gameplay screenshots; ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots; rice-paper cream, ink black, vermilion red, jade green, sky blue, and golden sun accents; painted sunlight, blossom glow, brushstroke flashes, lava warmth, and flat illustrative shadows; ink contours, watercolor fills, paper grain, shrine wood, stone lanterns, cloud curls, and calligraphic effects without readable text; third-person adventure framing with path curves, shrine gates, enemy arena space, and brush-action readability; mythic, graceful, playful, painterly, and restorative; HUD guidance: small brush/health icons can appear, but keep the screen feeling like painted gameplay rather than UI collage',
       creative_brief:
-        "Apply Jade Volcano Shrine Run as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Okami Jade Volcano Shrine as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Okami HD: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-070',
-    name: 'Moonlit Shrine Archer Trials',
-    displayName: 'Moonlit Shrine Archery',
-    styleAnchors: ['Moonlit Shrine Archer Trials'],
+    name: 'Wild Shrine Bow Trial',
+    displayName: 'Wild Shrine Bow Trial',
+    styleAnchors: [
+      'open-air adventure shrine gameplay screenshots',
+      'third-person bow puzzle trial',
+      'Wild Shrine Bow Trial',
+    ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, text, logo, daytime, clutter, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Zelda clone, strategy tactics camera, exact shrine UI, recognizable franchise props',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through precision trial rhythm; ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original open-air adventure shrine captures: third-person exploration-combat, bow or tool trial readability, clean cel-natural materials, puzzle routes, stamina/traversal spacing, and sacred outdoor architecture. Borrow the open-air readability of Breath of the Wild-like games, but land as a different fictional shrine-adventure with different props, symbols, UI icons, enemies, and architecture.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express ritual hierarchy, artifact weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.",
+        "Preserve the user's subject and transform it into a playable shrine-adventure screenshot subject: keep clear player/object/threat role, traversal affordance, bow/tool aim relationship, puzzle route, and scale readability without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with blue silver, black pine, and pale target light; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use an open-air shrine palette: grass green, sky blue, warm stone, pale gold, slate shadow, turquoise energy, and weathered wood. Keep value grouping legible and avoid tactical-strategy desaturation.',
       lighting_and_shadow:
-        'Drive the lighting with moon shafts on aiming lanes; altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through soft open-world daylight, moonlight, shrine glow, arrow trails, and gentle atmospheric haze. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from stone steps, offerings, and worn gates; carved stone, polished relic metal, paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from painted grass, ancient stone, glowing circuitry, cloth, wood bows, simple physics props, and stylized terrain. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes, relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with third-person adventure camera, player/tool line, shrine mechanism, traversal route, enemy or target spacing, and one clear puzzle/combat decision. Avoid strategy overview and box-art hero pose.',
       atmosphere_and_mood:
-        'Keep the mood reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original wild-shrine adventure mood: quiet, airy, curious, lightly magical, open, and exploratory.',
       rendering_and_quality:
-        'Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic fantasy postcard staging; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent third-person adventure gameplay screenshot style, not concept art: sparse contextual HUD, stamina/aim cues, item icons, and objective pips can appear abstract and non-readable. Maintain heavy-denoise clarity and readable gameplay scale.',
       key_features:
-        'Moonlit, Shrine, Archer, Trials; precision trial rhythm; blue silver, black pine, and pale target light; moon shafts on aiming lanes; stone steps, offerings, and worn gates; ceremonial path and altar focal point; reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power',
+        'The Legend of Zelda: Breath of the Wild gameplay screenshots; third-person open-air adventure capture with cel-shaded terrain, shrine technology, bow aiming, and clean traversal affordances; grass green, shrine blue, warm stone, sky cyan, moon silver, and orange camp glow; soft open-world daylight, moonlight, shrine glow, arrow trails, and gentle atmospheric haze; painted grass, ancient stone, glowing circuitry, cloth, wood bows, simple physics props, and stylized terrain; third-person exploration/combat framing with bow reticle, climbable shapes, shrine axes, and distant landmark readability; quiet, adventurous, airy, curious, and lightly magical; HUD guidance: hearts, stamina wheel, minimap, temperature icons, and bow reticle can appear if kept clean and authentic to open-world adventure',
       creative_brief:
-        "Apply Moonlit Shrine Archer Trials as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Wild Shrine Bow Trial as a transferable game-originals preset. Preserve prompt X, then route interpretation through open-air adventure references: third-person camera, clean cel-natural materials, shrine mechanisms, bow/tool aiming, traversal routes, and readable puzzle-combat state. Avoid direct Zelda cloning, strategy-tactics framing, exact shrine UI, recognizable franchise props, and promotional composition.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP12-042
 packId: pack_12
-name: Quantum Laboratory Rift
+name: Control Rift Laboratory
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:
@@ -11,83 +11,112 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-control
+  - render-third-person-cinematic
+  - camera-third-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through unstable portal hazard; experiment instability; frontier science
-    fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale,
-    using the preset as art direction rather than a required scene, mission, character, or card
-    image.
+    Capture-derived video-game style router based on Control gameplay screenshots: third-person
+    paranormal action capture with brutalist interiors, red astral corruption, floating debris, and
+    supernatural combat geometry. Apply this after prompt X; prompt X supplies the subject, action,
+    setting, and intensity while this preset supplies capture language, camera grammar, material
+    behavior, playable readability, and finish. Do not recreate an exact official level, character,
+    logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express operational scale, machine
-    relationships, frontier labor, breach pressure, and engineered movement without requiring a mech
-    battle.
+    Preserve the user's subject and transform it into a playable Control-adjacent game screenshot
+    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
+    hitbox-like readability, and interaction affordances without copying source characters or named
+    IP elements.
   color_and_tone: >-
-    Grade the image with violet rift light, sterile white, and teal lab glow; dust ochre, oxide
-    orange, utility white, alarm red, teal monitors, gunmetal, and industrial blue; keep tonal
-    hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use a Control-informed palette: concrete grey, Federal red, black office void, fluorescent
+    white, amber desk lamps, and pale psychic blue. Keep value grouping legible at gameplay
+    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
+    rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with split-dimensional glow and hard rim tear; bay floodlights, warning
-    strobes, reactor glow, dust haze, underwater beams, and cold lab panels; use highlights and
-    shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt
-    content.
+    Light the image through overhead fluorescents, red threshold glow, object-of-power bloom, muzzle
+    flashes, and deep brutalist shadow. Lighting must clarify the playable route, threat, focal
+    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from glass tanks, containment frames, and sterile metal; scratched armor,
-    hydraulic joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make
-    props, clothing, creatures, vehicles, architecture, and terrain share the same production-world
-    logic.
+    Build surfaces from concrete slabs, office furniture, papers, floating rubble, glass partitions,
+    and bureaucratic paranormal material contrast. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from frontier science fiction, hard-surface machinery,
-    exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with over-shoulder action camera with levitation depth, cover objects, enemy
+    silhouettes, and architectural scale axes. The frame should read as a plausible gameplay
+    capture; include UI/HUD only when it matches the source game's visual logic and improves
+    clarity.
   atmosphere_and_mood: >-
-    Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically
-    precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it,
-    but the preset should not force a new storyline.
+    Carry a Control-derived mood: uncanny, bureaucratic, oppressive, clean, and reality-bent. The
+    preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
+    asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no
-    asset-render isolation; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: health/energy bars, objective
+    markers, and ability reticles can appear but should remain sleek and minimal. Maintain
+    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
+    stock-photo polish, or random interface clutter.
   key_features: >-
-    Quantum, Laboratory, Rift; unstable portal hazard; violet rift light, sterile white, and teal
-    lab glow; split-dimensional glow and hard rim tear; glass tanks, containment frames, and sterile
-    metal; portal seam as focal anchor; tense, industrial, exploratory, militarized, frontier-worn,
-    and technically precise
+    Control gameplay screenshots; third-person paranormal action capture with brutalist interiors,
+    red astral corruption, floating debris, and supernatural combat geometry; concrete grey, Federal
+    red, black office void, fluorescent white, amber desk lamps, and pale psychic blue; overhead
+    fluorescents, red threshold glow, object-of-power bloom, muzzle flashes, and deep brutalist
+    shadow; concrete slabs, office furniture, papers, floating rubble, glass partitions, and
+    bureaucratic paranormal material contrast; over-shoulder action camera with levitation depth,
+    cover objects, enemy silhouettes, and architectural scale axes; uncanny, bureaucratic,
+    oppressive, clean, and reality-bent; HUD guidance: health/energy bars, objective markers, and
+    ability reticles can appear but should remain sleek and minimal
   creative_brief: >-
-    Apply Quantum Laboratory Rift as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Control Rift Laboratory as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through capture references from Control: camera, HUD grammar, material
+    language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed
+    when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - fantasy-castle
-  - muddy
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - asset-render isolation
-  - generic sci-fi corridor
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-042.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, fantasy-castle, muddy, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation,
-    generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card
-    framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Control
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    health/energy bars, objective markers, and ability reticles can appear but should remain sleek
+    and minimal
+  renderFamily: third-person-cinematic
+  cameraFamily: third-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -96,8 +125,18 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sci-fi-frontiers-and-mech-zones
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-control
+    - render-third-person-cinematic
+    - camera-third-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Control Rift Laboratory
+styleAnchors:
+  - Control gameplay screenshots
+  - Control Rift Laboratory

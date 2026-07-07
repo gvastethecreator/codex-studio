@@ -5,306 +5,324 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-007',
-    name: 'Glacier Fortress Assault',
-    displayName: 'Glacier Fortress Siege',
-    styleAnchors: ['Glacier Fortress Assault'],
+    name: 'Banner Saga Glacier Tactics',
+    displayName: 'Banner Saga Glacier Tactics',
+    styleAnchors: ['The Banner Saga gameplay screenshots', 'Banner Saga Glacier Tactics'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, tropical-elements, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through attack route staging; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on The Banner Saga gameplay screenshots: hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable The Banner Saga-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with white ice, cobalt shadow, and cold steel; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a The Banner Saga-informed palette: snow white, slate blue, oxblood cloth, muted gold, cold grey armor, and warm campfire accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with snow glare and blue bounce; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flat overcast snowlight, torch pools, rimmed silhouettes, and painterly value blocks rather than glossy 3D lighting. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from frosted stone and siege rigging; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from illustrated snow, wool cloaks, carved shields, old timber, simple armor planes, and crisp 2D cutout edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with isometric tactical grid with large readable units, threat spacing, turn-order logic, and landscape silhouettes behind the fight. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a The Banner Saga-derived mood: grim, mythic, exhausted, noble, and winter-bound. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Glacier Fortress Assault as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Glacier, Fortress, Assault; attack route staging; white ice, cobalt shadow, and cold steel; snow glare and blue bounce; frosted stone and siege rigging; ice walls, approach trenches, and gate pressure; urgent, battered, heroic, grim, tactical, and physically costly',
+        'The Banner Saga gameplay screenshots; hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity; snow white, slate blue, oxblood cloth, muted gold, cold grey armor, and warm campfire accents; flat overcast snowlight, torch pools, rimmed silhouettes, and painterly value blocks rather than glossy 3D lighting; illustrated snow, wool cloaks, carved shields, old timber, simple armor planes, and crisp 2D cutout edges; isometric tactical grid with large readable units, threat spacing, turn-order logic, and landscape silhouettes behind the fight; grim, mythic, exhausted, noble, and winter-bound; HUD guidance: turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical readability',
+      creative_brief:
+        'Use Banner Saga Glacier Tactics as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from The Banner Saga: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-009',
-    name: 'Sacred Siege Co-op Readability',
-    displayName: 'Sacred Siege Co-op',
-    styleAnchors: ['Sacred Siege Co-op Readability'],
+    name: 'Castle Crashers Co-op Siege',
+    displayName: 'Castle Crashers Co-op Siege',
+    styleAnchors: ['Castle Crashers gameplay screenshots', 'Castle Crashers Co-op Siege'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, modern-weapons, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through besieged objective logic; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Castle Crashers gameplay screenshots: 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable Castle Crashers-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Castle Crashers-informed palette: flat knight primaries, grass green, castle grey, orange fire, candy gore red, and simple shadow colors. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through mostly flat stage lighting with spell pops, impact flashes, torch accents, and no realistic global illumination. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from vector-like cartoon sprites, simple tiled ground, bold weapons, goofy armor shapes, and exaggerated hit effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability, and foreground/background stage layers. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Castle Crashers-derived mood: violent, playful, chaotic, arcade-like, and comic without becoming childish. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply this as a reusable visual router over any prompt: preserve the user's subject while adding cooperative siege readability, soot-worn relic material, smoke-cut light, and last-stand pressure without forcing a fixed scene, character, prop, or story beat.",
+        'Finish as a coherent in-engine screenshot style, not concept art: co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Sacred, Siege, Readability; besieged objective logic; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; walls, breach lanes, and fallback rings; urgent, battered, heroic, grim, tactical, and physically costly',
+        'Castle Crashers gameplay screenshots; 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability; flat knight primaries, grass green, castle grey, orange fire, candy gore red, and simple shadow colors; mostly flat stage lighting with spell pops, impact flashes, torch accents, and no realistic global illumination; vector-like cartoon sprites, simple tiled ground, bold weapons, goofy armor shapes, and exaggerated hit effects; side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability, and foreground/background stage layers; violent, playful, chaotic, arcade-like, and comic without becoming childish; HUD guidance: co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic',
+      creative_brief:
+        'Use Castle Crashers Co-op Siege as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Castle Crashers: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-026',
-    name: 'Verdant Ruins Tactical RPG',
-    displayName: 'Verdant Tactical RPG',
-    styleAnchors: ['Verdant Ruins Tactical RPG'],
+    name: 'Tactics Ogre Verdant Ruins',
+    displayName: 'Tactics Ogre Verdant Ruins',
+    styleAnchors: ['Tactics Ogre: Reborn gameplay screenshots', 'Tactics Ogre Verdant Ruins'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, cluttered-ui, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through turn-based cover and route clarity; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Tactics Ogre: Reborn gameplay screenshots: isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable Tactics Ogre: Reborn-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with wet green over stone and rebellion red accents; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Tactics Ogre: Reborn-informed palette: moss green, old stone grey, parchment UI beige, cobalt water, burgundy cloth, and brass item accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through soft tactical daylight, simple sprite shadows, spell glows, and clean value separation over tiles. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from plants overrunning civic infrastructure; overgrown stone, broken walls, and tactical cover; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from pixel/HD-sprite units, stone blocks, overgrown grass, banners, armor glints, and compact tactical UI panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with isometric grid with height advantage, movement tiles, unit facing, spell range, and clear objective structure. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Tactics Ogre: Reborn-derived mood: political, tactical, classic, serious, and readable. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when clean and era-aware. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Verdant, Ruins, Tactical, Rpg; turn-based cover and route clarity; wet green over stone and rebellion red accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; plants overrunning civic infrastructure; gridlike paths through decay; urgent, battered, heroic, grim, tactical, and physically costly',
+        'Tactics Ogre: Reborn gameplay screenshots; isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain; moss green, old stone grey, parchment UI beige, cobalt water, burgundy cloth, and brass item accents; soft tactical daylight, simple sprite shadows, spell glows, and clean value separation over tiles; pixel/HD-sprite units, stone blocks, overgrown grass, banners, armor glints, and compact tactical UI panels; isometric grid with height advantage, movement tiles, unit facing, spell range, and clear objective structure; political, tactical, classic, serious, and readable; HUD guidance: turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when clean and era-aware',
       creative_brief:
-        "Apply Verdant Ruins Tactical RPG as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Tactics Ogre Verdant Ruins as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Tactics Ogre: Reborn: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-035',
-    name: 'Mythic Train Defense',
+    name: 'Infernal Decklift Defense',
+    displayName: 'Infernal Decklift Defense',
+    styleAnchors: [
+      'vertical roguelike deckbuilder gameplay screenshots',
+      'stacked lane defense card battle',
+      'Infernal Decklift Defense',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, static-background, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Monster Train clone, readable card text, stat numbers, exact train floor UI',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through defense wave readability; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original vertical defense deckbuilder captures: stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips, and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but land as a different fictional deck-defense game with different vehicle/structure logic, unit silhouettes, UI frames, symbols, and floor anatomy.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable stacked deck-defense screenshot subject: keep clear unit/object role, lane position, floor hierarchy, incoming threat, resource pressure, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a vertical defense deckbuilder palette: infernal red, parchment beige, icy blue, gold UI trim, purple monster magic, black iron, ember orange, and siege-shadow grey. Keep value grouping legible at gameplay distance, with color accents behaving like lane pressure, danger, resource, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with golden omen light; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through card glow, furnace or lift-core light, spell bursts, impact flashes, and clean floor separation. Lighting must clarify lane hierarchy, incoming threat, focal unit, or defensive objective and avoid generic cinematic bloom that destroys board readability.',
       texture_and_material:
-        'Build surfaces from steam metal and worn upholstery; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from illustrated unit tokens, chunky lane sprites, custom UI frames, metal lift platforms, siege machinery, chains, furnace metal, and painterly fantasy effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate units, lanes, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with 2D stacked-board hierarchy: multiple defended floors or lift decks, card silhouettes at bottom, enemy intent icons, resource pips, and one clear defensive decision. All card and UI markings must stay wordless and numberless.',
       atmosphere_and_mood:
-        'Keep the mood legendary defense under impossible pressure; urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original infernal decklift mood: strategic, hellish, playful, crunchy, siege-like, and board-game readable.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent in-engine vertical deck-defense screenshot style, not concept art: card hand, resource pips, draw pile, unit state icons, and floor indicators are core, but no readable card text, no stat numbers, no exact train-floor UI, and no fake logos. Maintain heavy-denoise clarity and crisp focal hierarchy.',
       key_features:
-        'Mythic, Train, Defense; defense wave readability; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; golden omen light; steam metal and worn upholstery; carriage rhythm, track vanishing points, and platform chokeholds; legendary defense under impossible pressure',
+        'original vertical defense deckbuilder gameplay screenshots; stacked lane combat; infernal lift floors; monster or unit tokens; card hand silhouettes; resource pips; readable defense choices; infernal red, parchment beige, icy blue, gold trim, purple magic, black iron; furnace light and floor separation; 2D stacked-board hierarchy with defended floors, enemy intent icons, resource pips, and one clear defensive decision; HUD guidance: wordless card hand, resource pips, draw pile, unit state icons, and floor indicators only',
       creative_brief:
-        "Apply Mythic Train Defense as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Infernal Decklift Defense as a transferable game-originals preset. Preserve prompt X, then route interpretation through vertical defense deckbuilder references: stacked lane camera, card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning, readable text, and stat numbers.',
     },
   },
   {
     id: 'SP12-038',
-    name: 'Iron Reef Naval Skirmish',
-    displayName: 'Iron Reef Naval Tactics',
-    styleAnchors: ['Iron Reef Naval Skirmish'],
+    name: 'World of Warships Iron Reef',
+    displayName: 'World of Warships Iron Reef',
+    styleAnchors: ['World of Warships gameplay screenshots', 'World of Warships Iron Reef'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, landlocked, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on World of Warships gameplay screenshots: naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable World of Warships-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with wet iron, smoke grey, and ember highlights; deep teal, coral red, and wet black; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a World of Warships-informed palette: steel grey, ocean blue, shell orange, smoke black, UI green/red, and pale sky haze. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through open-sea daylight, muzzle flashes, fire plumes, water reflections, and smoke-diffused contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from riveted armor and corroded plates; reef stone, hulls, and salt spray; wet hulls, reef iron, ropes, and cannon smoke; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from warship armor, wet decks, waves, island cliffs, radar wakes, smoke, shell splashes, and utilitarian naval detail. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person tactical camera with ship heading, target range, minimap, torpedo indicators, and broad battle-space readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a World of Warships-derived mood: heavy, strategic, naval, explosive, and measured. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are coherent here. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Iron, Reef, Naval, Skirmish; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure; wet iron, smoke grey, and ember highlights; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; riveted armor and corroded plates; ship-to-shore skirmish lanes; urgent, battered, heroic, grim, tactical, and physically costly',
+        'World of Warships gameplay screenshots; naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density; steel grey, ocean blue, shell orange, smoke black, UI green/red, and pale sky haze; open-sea daylight, muzzle flashes, fire plumes, water reflections, and smoke-diffused contrast; warship armor, wet decks, waves, island cliffs, radar wakes, smoke, shell splashes, and utilitarian naval detail; third-person tactical camera with ship heading, target range, minimap, torpedo indicators, and broad battle-space readability; heavy, strategic, naval, explosive, and measured; HUD guidance: naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are coherent here',
       creative_brief:
-        "Apply Iron Reef Naval Skirmish as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use World of Warships Iron Reef as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from World of Warships: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-052',
-    name: 'Rift Bridge Capture Point',
-    displayName: 'Rift Bridge Control Point',
-    styleAnchors: ['Rift Bridge Capture Point'],
+    name: 'Class Clash Bridge Control',
+    displayName: 'Class Clash Bridge Control',
+    styleAnchors: [
+      'class-based team shooter gameplay screenshots',
+      'stylized bridge control point push',
+      'Class Clash Bridge Control',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, clutter, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Team Fortress clone, strategy tactics camera, readable objective text, exact class silhouettes',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through capture-point tension; contested objective zone; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original class-based team shooter captures: stylized first-person combat, readable team colors, chunky industrial bridge geometry, control-point pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team Fortress-like games, but land as a different fictional class shooter with different silhouettes, props, UI icons, and map architecture.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable class-shooter screenshot subject: keep clear class/object role, team spacing, objective pressure, projectile/hit readability, cover affordance, and first-person scale without copying source classes or maps.",
       color_and_tone:
-        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a stylized team-shooter palette: warm red, workwear blue, dusty tan, black metal, cream signage shapes without text, muzzle orange, and clean shadow groups. Keep value grouping legible and avoid military realism.',
       lighting_and_shadow:
-        'Drive the lighting with split-dimensional glow and hard rim tear; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through baked midday light, muzzle flashes, rocket trails, objective glow, and soft cartoon shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from painterly industrial props, wood planks, metal bridges, team-color panels, simple weapons, and exaggerated character shapes without copying cast. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with first-person weapon/tool camera, bridge or control-point route, allies/enemies spaced around cover, projectile arcs, and one clear push/defend decision. Avoid isometric strategy or tactical overview.',
       atmosphere_and_mood:
-        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original class-clash mood: competitive, comic, industrial, tactical, noisy, and highly readable.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent first-person stylized team-shooter screenshot style, not concept art: health/ammo/objective icons can appear abstract and non-readable. Maintain heavy-denoise clarity, crisp silhouettes, no exact class silhouettes, and no readable objective text.',
       key_features:
-        'Rift, Bridge, Capture, Point; capture-point tension; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; split-dimensional glow and hard rim tear; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; portal seam as focal anchor; urgent, battered, heroic, grim, tactical, and physically costly',
+        'Team Fortress 2 gameplay screenshots; stylized team-shooter capture with bold silhouettes, capture-point geometry, class-based spacing, and readable red-vs-blue battlefield color; industrial red, worksite blue, dusty tan, black shadows, white UI blocks, and orange explosion pops; baked midday light, muzzle flashes, rocket trails, objective glow, and soft cartoon shadows; painterly industrial props, wood planks, metal bridges, team-color panels, simple weapons, and exaggerated character shapes without copying cast; first-person or spectator capture with objective point, team lanes, projectile arcs, and compact team HUD; competitive, comic, industrial, tactical, and readable; HUD guidance: class shooter HUD is allowed: health, ammo, capture meter, kill feed shape, and team indicators should be era-coherent',
       creative_brief:
-        "Apply Rift Bridge Capture Point as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Class Clash Bridge Control as a transferable game-originals preset. Preserve prompt X, then route interpretation through class-based team shooter references: first-person camera, team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure. Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and readable UI text.',
     },
   },
   {
     id: 'SP12-060',
-    name: 'Hollow Basilica Final Stand',
-    displayName: 'Hollow Basilica Last Stand',
-    styleAnchors: ['Hollow Basilica Final Stand'],
+    name: 'Blasphemous Basilica Last Stand',
+    displayName: 'Blasphemous Basilica Last Stand',
+    styleAnchors: ['Blasphemous gameplay screenshots', 'Blasphemous Basilica Last Stand'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, playful-style, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Blasphemous gameplay screenshots: dark pixel-art metroidvania capture with Catholic-gothic architecture, grotesque enemies, side-view combat, and ornate suffering iconography. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable Blasphemous-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Blasphemous-informed palette: bone white, dried blood red, black stone, candle gold, desaturated blue, and sickly flesh tones. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through candle halos, stained light shafts, spell glows, hit flashes, and deep basilica shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from detailed pixel masonry, wax, iron, embroidered cloth, thorned relics, grotesque bodies, and crunchy sprite animation. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-scrolling combat frame with altar depth, enemy spacing, platform edges, and boss/arena readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood sacred ruin pressure; urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Blasphemous-derived mood: penitent, brutal, sacred, grotesque, and solemn. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: health/fervor bars, flask icons, and boss bar can appear as ornate pixel UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Hollow, Basilica, Final, Stand; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; tall nave perspective and final-stand axis; sacred ruin pressure',
+        'Blasphemous gameplay screenshots; dark pixel-art metroidvania capture with Catholic-gothic architecture, grotesque enemies, side-view combat, and ornate suffering iconography; bone white, dried blood red, black stone, candle gold, desaturated blue, and sickly flesh tones; candle halos, stained light shafts, spell glows, hit flashes, and deep basilica shadow; detailed pixel masonry, wax, iron, embroidered cloth, thorned relics, grotesque bodies, and crunchy sprite animation; side-scrolling combat frame with altar depth, enemy spacing, platform edges, and boss/arena readability; penitent, brutal, sacred, grotesque, and solemn; HUD guidance: health/fervor bars, flask icons, and boss bar can appear as ornate pixel UI',
       creative_brief:
-        "Apply Hollow Basilica Final Stand as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Blasphemous Basilica Last Stand as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Blasphemous: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-064',
-    name: 'Iron Orchard Defense Night',
-    displayName: 'Iron Orchard Defense',
-    styleAnchors: ['Iron Orchard Defense Night'],
+    name: 'They Are Billions Night Defense',
+    displayName: 'They Are Billions Night Defense',
+    styleAnchors: ['They Are Billions gameplay screenshots', 'They Are Billions Night Defense'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, futuristic-city, noisy, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through defense wave readability; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on They Are Billions gameplay screenshots: isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable They Are Billions-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with wet iron, smoke grey, and ember highlights; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a They Are Billions-informed palette: sepia industrial, zombie grey-green, torch orange, brass UI, dark forest, and warning red. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with low-key night lighting with practical pools; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through lamp pools, muzzle flashes, turret beams, night fog, and swarm-edge highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from riveted armor and corroded plates; gnarled branches, fruit color, and defensive machinery; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from steampunk walls, tents, pipes, wooden barricades, infected crowds, smoke, and compact building silhouettes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with isometric base view with defensive choke points, wall lines, unit groups, resource buildings, and wave approach paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood pastoral zone turned tactical; late-hour danger; urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a They Are Billions-derived mood: desperate, logistical, overrun, industrial, and strategic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Iron, Orchard, Defense, Night; defense wave readability; wet iron, smoke grey, and ember highlights; low-key night lighting with practical pools; riveted armor and corroded plates; protected core, lanes, and fallback positions; pastoral zone turned tactical',
+        'They Are Billions gameplay screenshots; isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability; sepia industrial, zombie grey-green, torch orange, brass UI, dark forest, and warning red; lamp pools, muzzle flashes, turret beams, night fog, and swarm-edge highlights; steampunk walls, tents, pipes, wooden barricades, infected crowds, smoke, and compact building silhouettes; isometric base view with defensive choke points, wall lines, unit groups, resource buildings, and wave approach paths; desperate, logistical, overrun, industrial, and strategic; HUD guidance: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings',
       creative_brief:
-        "Apply Iron Orchard Defense Night as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use They Are Billions Night Defense as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from They Are Billions: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-076',
-    name: 'Aurora Bastion Siege',
+    name: 'Northgard Aurora Bastion Siege',
+    displayName: 'Northgard Aurora Bastion Siege',
+    styleAnchors: ['Northgard gameplay screenshots', 'Northgard Aurora Bastion Siege'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through holdout fortification; besieged objective logic; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Northgard gameplay screenshots: isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable Northgard-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with green-violet sky ribbons; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Northgard-informed palette: snow blue, timber brown, aurora green, hearth orange, iron grey, and muted clan-color banners. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with aurora wash over snow and armor; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through cold winter daylight, hearth pools, northern lights, torch edges, and soft snow bounce. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from wood huts, palisades, snowy rocks, fur cloaks, axes, fields, animal tracks, and compact strategy props. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with isometric management/combat view with territories, unit clusters, resource buildings, and defensive choke points. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Northgard-derived mood: settler-strategy, hardy, Nordic, cold, and quietly tense. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Aurora, Bastion, Siege; holdout fortification; green-violet sky ribbons; aurora wash over snow and armor; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; layered defensive walls and high battlements; urgent, battered, heroic, grim, tactical, and physically costly',
+        'Northgard gameplay screenshots; isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability; snow blue, timber brown, aurora green, hearth orange, iron grey, and muted clan-color banners; cold winter daylight, hearth pools, northern lights, torch edges, and soft snow bounce; wood huts, palisades, snowy rocks, fur cloaks, axes, fields, animal tracks, and compact strategy props; isometric management/combat view with territories, unit clusters, resource buildings, and defensive choke points; settler-strategy, hardy, Nordic, cold, and quietly tense; HUD guidance: resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS UI',
       creative_brief:
-        "Apply Aurora Bastion Siege as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Northgard Aurora Bastion Siege as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Northgard: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-079',
-    name: 'Radiant Citadel Co-op Hold',
+    name: 'Orbital Drop Citadel Hold',
+    displayName: 'Orbital Drop Citadel Hold',
+    styleAnchors: [
+      'third-person co-op extraction shooter screenshots',
+      'orbital drop defensive hold',
+      'Orbital Drop Citadel Hold',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, text, logo, grimdark, blur, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Helldivers clone, strategy tactics camera, exact stratagem UI, recognizable faction armor',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through protected objective logic; tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original third-person co-op extraction shooter captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game with different armor, factions, enemies, UI icons, and objective props.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express defensive pressure, breach geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle scene.",
+        "Preserve the user's subject and transform it into a playable third-person co-op hold screenshot subject: keep clear squad/object/threat function, cover, objective zone, incoming pressure, call-in area, and extraction route without copying source factions or armor.",
       color_and_tone:
-        'Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use an orbital drop palette: dusty battlefield tan, warning red, tactical blue, smoke grey, muzzle orange, alien green, and hard white objective light. Keep value grouping legible amid chaos.',
       lighting_and_shadow:
-        'Drive the lighting with searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through orbital strike glare, muzzle flashes, smoke, bug acid glow, objective beacon light, and dusty sun haze. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke, and sci-fi military equipment. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with third-person squad camera, objective hold zone, ally/enemy spacing, incoming projectile arcs, cover, and one clear defend/extract decision. Avoid isometric strategy overview.',
       atmosphere_and_mood:
-        'Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original orbital-drop mood: loud, desperate, satirical, militarized, cooperative, and explosive.',
       rendering_and_quality:
-        'Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent third-person co-op shooter screenshot style, not concept art: small contextual HUD, ammo/ability pips, objective icons, and call-in markers can appear abstractly. Maintain heavy-denoise clarity and no exact stratagem UI.',
       key_features:
-        'Radiant, Citadel, Hold; protected objective logic; smoke grey, worn iron, battlefield blue, ember orange, frost white, and siege-banner accents; searchlights, muzzle flashes, burning horizons, storm breaks, aurora glow, and smoke-filtered sun; shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners, and supply rigging; fortified skyline and defense-grid strata; urgent, battered, heroic, grim, tactical, and physically costly',
+        'Helldivers 2 gameplay screenshots; third-person co-op shooter capture with squad spacing, alien swarms, stratagem chaos, defensive objectives, and friendly-fire battlefield readability; dusty battlefield tan, black armor, yellow hazard UI, bug green, red warning lasers, and explosion orange; orbital strike glare, muzzle flashes, smoke, bug acid glow, objective beacon light, and dusty sun haze; tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke, and sci-fi military equipment; third-person squad camera with objective zone, incoming swarm lanes, teammate markers, stratagem impact areas, and extraction pressure; chaotic, militarized, satirical, desperate, and cooperative; HUD guidance: co-op HUD is welcome: ammo, stratagem inputs, objective timer, squad icons, compass, and extraction markers',
       creative_brief:
-        "Apply Radiant Citadel Co-op Hold as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Orbital Drop Citadel Hold as a transferable game-originals preset. Preserve prompt X, then route interpretation through third-person co-op extraction references: squad camera, objective pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact stratagem UI.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

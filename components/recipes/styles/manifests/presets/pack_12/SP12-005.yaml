@@ -1,10 +1,12 @@
 schemaVersion: 1
 id: SP12-005
 packId: pack_12
-name: Moonbase Breach Alarm
+name: Orbital Freight Breach
 styleAnchors:
-  - 'Moonbase Breach Alarm'
-displayName: 'Moonbase Breach Ops'
+  - first-person survival-horror gameplay screenshots
+  - industrial orbital freight breach
+  - Orbital Freight Breach
+displayName: Orbital Freight Breach
 category: 3. Sci-Fi Frontiers & Mech Zones
 version: 1
 supportedTasks:
@@ -14,82 +16,113 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sci-fi-frontiers-and-mech-zones
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-first-person-survival-horror
+  - render-first-person-survival-horror
+  - camera-first-person
+  - hud-diegetic-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through containment failure beat; breach-state urgency; frontier science
-    fiction, hard-surface machinery, exposed infrastructure, hazard alarms, and operational scale,
-    using the preset as art direction rather than a required scene, mission, character, or card
-    image.
+    Source-informed video-game style router for original first-person survival-horror captures:
+    industrial orbital freight corridors, analog devices, emergency light, maintenance clutter,
+    hostile unseen threat pressure, and diegetic survival readability. Borrow the restrained
+    first-person tension of Alien Isolation-like games, but land as a different fictional station
+    with different signage shapes, creature logic, tools, UI icons, and architecture.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express operational scale, machine
-    relationships, frontier labor, breach pressure, and engineered movement without requiring a mech
-    battle.
+    Preserve the user's subject and transform it into a playable first-person survival-horror
+    screenshot subject: keep clear threat/object function, hiding route, device/tool scale,
+    interactable affordance, and escape decision without copying source creatures or locations.
   color_and_tone: >-
-    Grade the image with warning red against utility white; dust ochre, oxide orange, utility white,
-    alarm red, teal monitors, gunmetal, and industrial blue; keep tonal hierarchy strong enough for
-    gameplay readability, thumbnail clarity, and subject recognition.
+    Use an orbital survival palette: sodium amber, emergency red, dirty teal, gunmetal grey, pale
+    screen green, wet black, and worn white panels. Keep value grouping legible without pixel-art
+    downgrade.
   lighting_and_shadow: >-
-    Drive the lighting with sterile station light and alarm red; rotating alarm strobes; bay
-    floodlights, warning strobes, reactor glow, dust haze, underwater beams, and cold lab panels;
-    use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without
-    hiding prompt content.
+    Light the image through flickering tube lights, rotating alarm glow, flashlight cones, terminal
+    phosphor, and occluded corridor darkness. Lighting must clarify the playable route, threat,
+    focal subject, or objective and avoid generic cinematic bloom that destroys screenshot
+    readability.
   texture_and_material: >-
-    Build surfaces from white panels, airlock seams, and lunar dust; scratched armor, hydraulic
-    joints, carbon shells, bolted plates, polymer glass, cables, and mineral dust; make props,
-    clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.
+    Build surfaces from worn bulkheads, cassette-future interfaces, condensation, rubber seals,
+    scratched glass, cable bundles, and analog tech grime. Materials should feel like in-engine game
+    assets captured during play, with enough texture identity to separate props, terrain,
+    characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from frontier science fiction, hard-surface machinery,
-    exposed infrastructure, hazard alarms, and operational scale: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with first-person camera, foreground hand/device/tool, tight corridor or service room
+    route, cover/hiding affordance, distant threat clue, and one survival decision. Avoid retro
+    pixel rendering and cinematic poster framing.
   atmosphere_and_mood: >-
-    Keep the mood tense, industrial, exploratory, militarized, frontier-worn, and technically
-    precise; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it,
-    but the preset should not force a new storyline.
+    Carry an original orbital breach mood: anxious, industrial, hunted, analog, claustrophobic, and
+    quiet.
   rendering_and_quality: >-
-    Finish as clean hard-surface readability with believable engineering, atmospheric depth, and no
-    asset-render isolation; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as coherent first-person survival-horror screenshot style, not pixel art and not concept
+    art: diegetic motion tracker/device pips, sparse status lights, and environmental objective cues
+    can appear. Maintain heavy-denoise clarity, readable route, and no readable signage/logos.
   key_features: >-
-    Moonbase, Breach, Alarm; containment failure beat; warning red against utility white; sterile
-    station light and alarm red; white panels, airlock seams, and lunar dust; ruptured threshold and
-    emergency flow; tense, industrial, exploratory, militarized, frontier-worn, and technically
-    precise
+    Alien: Isolation gameplay screenshots; retro-futurist space-station survival horror capture with
+    narrow corridors, maintenance panels, emergency alarms, and vulnerable first-person stealth;
+    dirty cream plastic, warning orange, medical green monitors, deep black vents, and cold
+    fluorescent blue; flickering tube lights, rotating alarm glow, flashlight cones, terminal
+    phosphor, and occluded corridor darkness; worn bulkheads, cassette-future interfaces,
+    condensation, rubber seals, scratched glass, cable bundles, and analog tech grime; first-person
+    corridor composition with motion-tracker depth, hiding spots, doorway silhouettes, and
+    claustrophobic route uncertainty; anxious, analog, hunted, industrial, and breath-held; HUD
+    guidance: coherent survival UI can include a motion tracker, small objective marker, or diegetic
+    device screen; avoid arcade overlays
   creative_brief: >-
-    Apply Moonbase Breach Alarm as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Orbital Freight Breach as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through first-person survival-horror references: analog devices, industrial
+    corridors, hostile unseen pressure, diegetic HUD, and playable escape/hiding decisions. Avoid
+    direct Alien Isolation cloning, exact station copies, creature silhouette copying, and retro
+    pixel downgrade.
 avoidRules:
   - watermark
-  - text
   - logo
-  - warm-sunlight
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - asset-render isolation
-  - generic sci-fi corridor
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct Alien Isolation clone
+  - retro pixel downgrade
+  - exact Sevastopol station copy
+  - xenomorph silhouette copy
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-005.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, warm-sunlight, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, asset-render isolation,
-    generic sci-fi corridor, fixed scene, generic game screenshot, readable UI, official card
-    framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, direct Alien Isolation clone, retro pixel downgrade, exact
+    Sevastopol station copy, xenomorph silhouette copy
+  referenceGame: Original first-person survival horror, Alien Isolation-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    coherent survival UI can include a motion tracker, small objective marker, or diegetic device
+    screen; avoid arcade overlays
+  renderFamily: first-person-survival-horror
+  cameraFamily: first-person
+  hudMode: diegetic-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -98,6 +131,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sci-fi-frontiers-and-mech-zones
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-first-person-survival-horror
+    - render-first-person-survival-horror
+    - camera-first-person
+    - hud-diegetic-hud
   supportedTasks:
     - image_generate
     - image_edit

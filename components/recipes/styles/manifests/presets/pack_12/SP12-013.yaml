@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-013
 packId: pack_12
-name: Crystal Desert Shrine
+name: Journey Crystal Desert Pilgrimage
 styleAnchors:
-  - 'Crystal Desert Shrine'
-displayName: 'Crystal Desert Shrinecraft'
+  - Journey gameplay screenshots
+  - Journey Crystal Desert Pilgrimage
+displayName: Journey Crystal Desert Pilgrimage
 category: 2. Arcane Temples & Mythic Realms
 version: 1
 supportedTasks:
@@ -14,81 +15,109 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - arcane-temples-and-mythic-realms
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-journey
+  - render-third-person-cinematic
+  - camera-third-person
+  - hud-minimal-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through ritual architecture, mythic scale, ceremonial lanes, relic energy,
-    and sacred spatial order, using the preset as art direction rather than a required scene,
-    mission, character, or card image.
+    Capture-derived video-game style router based on Journey gameplay screenshots: minimal
+    third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple
+    ruins, and poetic route silhouettes. Apply this after prompt X; prompt X supplies the subject,
+    action, setting, and intensity while this preset supplies capture language, camera grammar,
+    material behavior, playable readability, and finish. Do not recreate an exact official level,
+    character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express ritual hierarchy, artifact
-    weight, ceremonial route pressure, and mythic trial readability without forcing a temple scene.
+    Preserve the user's subject and transform it into a playable Journey-adjacent game screenshot
+    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
+    hitbox-like readability, and interaction affordances without copying source characters or named
+    IP elements.
   color_and_tone: >-
-    Grade the image with prismatic blue-white with sharp color splits; sun-baked ochre, bone white,
-    and hot shadow blue; mineral gold, moonlit blue, jade, orchid, volcanic green, marble white, and
-    prismatic ritual accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use a Journey-informed palette: burnt orange sand, rose dusk, gold glints, cobalt night, white
+    scarf marks, and sparse turquoise glyph glow. Keep value grouping legible at gameplay distance,
+    with color accents behaving like route, danger, pickup, team, magic, or objective cues rather
+    than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with crystal refraction and caustic shards; heat haze and hard desert sun;
-    altar glow, rune bounce, moon shafts, crystal caustics, brazier halos, and sacred backlight; use
-    highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without
-    hiding prompt content.
+    Light the image through low sun bloom, soft horizon haze, rimmed dunes, starry twilight, and
+    warm sand bounce. Lighting must clarify the playable route, threat, focal subject, or objective
+    and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from stone steps, offerings, and worn gates; carved stone, polished relic metal,
-    paper talismans, wet moss, lacquer, crystal, incense haze, and worn ritual cloth; make props,
-    clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.
+    Build surfaces from smooth sand sheets, cloth folds, simple stone glyphs, flowing particles, and
+    elegant low-detail geometry. Materials should feel like in-engine game assets captured during
+    play, with enough texture identity to separate props, terrain, characters, hazards, and
+    interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from ritual architecture, mythic scale, ceremonial lanes,
-    relic energy, and sacred spatial order: lane rhythm, scale contrast, objective hierarchy,
-    readable negative space, encounter depth, and motion vectors should adapt to portraits, objects,
-    creatures, environments, and action scenes.
+    Compose with wide third-person travel framing with negative space, small player silhouette,
+    slope vectors, and one clear destination landmark. The frame should read as a plausible gameplay
+    capture; include UI/HUD only when it matches the source game's visual logic and improves
+    clarity.
   atmosphere_and_mood: >-
-    Keep the mood reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power;
-    the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the
-    preset should not force a new storyline.
+    Carry a Journey-derived mood: lonely, sacred, graceful, meditative, and mythic. The preset can
+    become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it
+    should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as ornate but legible game-art finish with disciplined focal hierarchy and no generic
-    fantasy postcard staging; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
-  creative_brief: >-
-    Apply this as a reusable visual router over any prompt: preserve the user's subject while adding
-    prismatic mythic light, mineral ceremonial geometry, sun-washed palette, and readable
-    adventure-game polish without forcing a fixed scene, character, prop, or story beat.
+    Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; a tiny
+    scarf/glyph cue is acceptable, but keep the screen uncluttered. Maintain heavy-denoise clarity,
+    crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random
+    interface clutter.
   key_features: >-
-    Crystal, Desert, Shrine; ritual architecture, mythic scale, ceremonial lanes, relic energy, and
-    sacred spatial order; prismatic blue-white with sharp color splits; crystal refraction and
-    caustic shards; stone steps, offerings, and worn gates; ceremonial path and altar focal point;
-    reverent, mysterious, dangerous, mythic, ceremonial, and charged with old power
+    Journey gameplay screenshots; minimal third-person desert adventure capture with tiny cloaked
+    figure scale, monumental dunes, simple ruins, and poetic route silhouettes; burnt orange sand,
+    rose dusk, gold glints, cobalt night, white scarf marks, and sparse turquoise glyph glow; low
+    sun bloom, soft horizon haze, rimmed dunes, starry twilight, and warm sand bounce; smooth sand
+    sheets, cloth folds, simple stone glyphs, flowing particles, and elegant low-detail geometry;
+    wide third-person travel framing with negative space, small player silhouette, slope vectors,
+    and one clear destination landmark; lonely, sacred, graceful, meditative, and mythic; HUD
+    guidance: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered
+  creative_brief: >-
+    Use Journey Crystal Desert Pilgrimage as a transferable game-originals preset. Preserve prompt
+    X, then route interpretation through capture references from Journey: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - urban-neon
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic fantasy postcard
-  - soft pretty temple blur
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-013.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, urban-neon, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic fantasy
-    postcard, soft pretty temple blur, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Journey
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered
+  renderFamily: third-person-cinematic
+  cameraFamily: third-person
+  hudMode: minimal-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -97,6 +126,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - arcane-temples-and-mythic-realms
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-journey
+    - render-third-person-cinematic
+    - camera-third-person
+    - hud-minimal-hud
   supportedTasks:
     - image_generate
     - image_edit

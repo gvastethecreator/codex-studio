@@ -78,23 +78,20 @@ const CarouselImageItem: React.FC<{
   const [uiScale, setUiScale] = useState(1);
 
   const imgRef = useRef<HTMLImageElement>(null);
-  const [failedDisplaySrc, setFailedDisplaySrc] = useState<string | null>(null);
+  const [failedDisplaySrcs, setFailedDisplaySrcs] = useState<string[]>([]);
   const target = useRef({ x: 0, y: 0, scale: 1 });
   const current = useRef({ x: 0, y: 0, scale: 1 });
   const dragStart = useRef({ x: 0, y: 0 });
   const isDragging = useRef(false);
   const rafId = useRef<number | null>(null);
 
-  const primaryDisplaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing });
+  const displaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing, failedDisplaySrcs });
   const fallbackDisplaySrc = resolveStudioCarouselFallbackSrc({
     image,
-    displaySrc: primaryDisplaySrc,
+    displaySrc,
     isComparing,
+    failedDisplaySrcs,
   });
-  const displaySrc =
-    failedDisplaySrc === primaryDisplaySrc && fallbackDisplaySrc
-      ? fallbackDisplaySrc
-      : primaryDisplaySrc;
   const imageDimensions = resolveCarouselImageDimensions(image);
 
   // Calculate aspect ratio for the style to ensure the image has a size before loading
@@ -103,8 +100,8 @@ const CarouselImageItem: React.FC<{
     : '1/1';
 
   useEffect(() => {
-    setFailedDisplaySrc(null);
-  }, [primaryDisplaySrc]);
+    setFailedDisplaySrcs([]);
+  }, [image.id, isComparing]);
 
   const animate = useCallback(() => {
     if (!isActive) return;
@@ -242,7 +239,11 @@ const CarouselImageItem: React.FC<{
         width={imageDimensions.width}
         height={imageDimensions.height}
         draggable={false}
-        onError={() => setFailedDisplaySrc(primaryDisplaySrc)}
+        onError={() =>
+          setFailedDisplaySrcs((current) =>
+            current.includes(displaySrc) ? current : [...current, displaySrc],
+          )
+        }
         className={`max-w-[94%] max-h-[90%] object-contain shadow-[0_0_120px_rgba(0,0,0,1)]`}
         style={{
           // Only apply view transition if NOT sliding and NOT comparing, to avoid glitches
@@ -251,6 +252,12 @@ const CarouselImageItem: React.FC<{
           aspectRatio: aspectRatioStyle,
         }}
       />
+
+      {fallbackDisplaySrc && failedDisplaySrcs.length > 0 && (
+        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2 rounded-full border border-amber-300/20 bg-amber-500/10 px-3 py-1 text-[9px] font-black uppercase tracking-widest text-amber-100">
+          Using catalog preview
+        </div>
+      )}
 
       {isComparing && (
         <div className="absolute top-12 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-accent-500 text-black rounded-lg text-[10px] font-black uppercase tracking-widest shadow-xl animate-in fade-in zoom-in-95 z-30">

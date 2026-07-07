@@ -184,6 +184,30 @@ react-scan-overlay,
     pointer-events: none;
   }
 
+  .vt-top-toolbar.studio-toolbar-shell {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07) !important;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.035) !important;
+  }
+
+  .vt-top-toolbar .studio-command-group,
+  .vt-top-toolbar .studio-command-surface,
+  .vt-top-toolbar [data-gsap-dropdown] {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035) !important;
+  }
+
+  .vt-top-toolbar .studio-command-active {
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 0 0 1px rgba(255, 255, 255, 0.035) !important;
+  }
+
+  .vt-top-toolbar .studio-command-danger {
+    border: 1px solid rgba(248, 113, 113, 0.24) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035) !important;
+  }
+
   button:focus-visible,
   a:focus-visible,
   [role='button']:focus-visible,

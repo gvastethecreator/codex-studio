@@ -912,7 +912,7 @@ const StylePresetGroupSection = React.memo(
         style={isNearViewport ? undefined : { minHeight: placeholderHeight }}
       >
         <div
-          className={`sticky top-0 z-30 mb-2 flex items-center gap-2 border-y border-white/5 bg-zinc-950/78 px-2 py-2 shadow-[0_10px_18px_rgba(0,0,0,0.28)] backdrop-blur-xl ${headerClassName}`}
+          className={`sticky top-0 z-30 mb-2 flex items-center gap-2 border-y border-white/5 bg-zinc-950/92 px-2 py-2 shadow-[0_10px_18px_rgba(0,0,0,0.28)] ${headerClassName}`}
         >
           <div className={`h-4 w-1 rounded-[2px] ${accentClassName}`} />
           {icon ? <span className="text-zinc-400">{icon}</span> : null}
@@ -2458,7 +2458,7 @@ ${styleAnchorLine}
                 <h2 className="text-lg font-black text-white uppercase tracking-tighter">
                   References
                 </h2>
-                <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-widest mt-1">
+                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-zinc-600">
                   {referenceImages.length}/{MAX_STYLE_REFERENCE_IMAGES} Images
                 </p>
               </div>
@@ -2514,7 +2514,7 @@ ${styleAnchorLine}
                           height={48}
                           className="size-full object-contain p-0.5 opacity-95 transition-opacity group-hover/reference:opacity-100"
                         />
-                        <div className="absolute left-1 top-1 rounded-sm border border-black/30 bg-black/55 px-1 py-0.5 text-[7px] font-black tabular-nums text-white/80 backdrop-blur">
+                        <div className="absolute left-1 top-1 rounded-sm border border-black/30 bg-black/70 px-1 py-0.5 text-[10px] font-black tabular-nums text-white/80">
                           {index + 1}
                         </div>
                         <button
@@ -2544,7 +2544,7 @@ ${styleAnchorLine}
                         className="group/add flex h-12 min-w-0 flex-col items-center justify-center gap-0.5 overflow-hidden rounded-md border border-dashed border-white/12 bg-zinc-950/70 text-zinc-500 transition-[border-color,background-color,color] hover:border-white/24 hover:bg-white/6 hover:text-white"
                       >
                         <Upload size={14} />
-                        <span className="max-w-full truncate px-1 text-[7px] font-black uppercase tracking-widest">
+                        <span className="max-w-full truncate px-1 text-[10px] font-black uppercase tracking-[0.14em]">
                           Add
                         </span>
                       </button>
@@ -2597,7 +2597,7 @@ ${styleAnchorLine}
                     <div className="flex size-14 items-center justify-center rounded-[6px] border border-white/10 bg-white/5">
                       <Upload size={24} />
                     </div>
-                    <span className="text-[9px] font-black uppercase tracking-[0.24em]">
+                    <span className="text-[10px] font-black uppercase tracking-[0.16em]">
                       Drop reference image
                     </span>
                   </div>
@@ -2608,19 +2608,19 @@ ${styleAnchorLine}
                 <>
                   <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/5" />
                   <div className="absolute inset-x-0 bottom-0 p-3">
-                    <div className="max-w-[94%] rounded-[6px] border border-white/12 bg-zinc-950/62 px-3 py-2.5 shadow-[0_12px_32px_rgba(0,0,0,0.34)] backdrop-blur-2xl">
+                    <div className="max-w-[94%] rounded-[6px] border border-white/12 bg-zinc-950/86 px-3 py-2.5 shadow-[0_12px_32px_rgba(0,0,0,0.34)]">
                       <div className="flex min-w-0 flex-wrap items-center gap-1.5">
-                        <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.2em] text-white/65">
+                        <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-white/65">
                           {resolvedHoveredPresetPreview.packName}
                         </span>
-                        <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[7px] font-black uppercase tracking-[0.2em] text-zinc-300/80">
+                        <span className="rounded-full border border-white/10 bg-white/6 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-zinc-300/80">
                           {resolvedHoveredPresetPreview.category}
                         </span>
                       </div>
                       <h3 className="mt-2 truncate text-xs font-black uppercase tracking-[0.02em] text-white">
                         {resolvedHoveredPresetPreview.name}
                       </h3>
-                      <p className="mt-1.5 line-clamp-2 text-[9px] leading-relaxed text-zinc-200/78">
+                      <p className="mt-1.5 line-clamp-2 text-[10px] leading-relaxed text-zinc-200/78">
                         {resolvedHoveredPresetPreview.aesthetic}
                       </p>
                     </div>
@@ -2895,7 +2895,7 @@ ${styleAnchorLine}
         </div>
 
         {/* Pack Tabs */}
-        <div className="vt-recipe-tabs vt-style-tabs z-20 flex h-11 items-center gap-1.5 overflow-x-auto border-b border-white/5 bg-zinc-950/40 py-0 pl-3 pr-1 backdrop-blur-md custom-scrollbar sm:h-12 sm:pl-6 sm:pr-2">
+        <div className="vt-recipe-tabs vt-style-tabs z-20 flex h-11 items-center gap-1.5 overflow-x-auto border-b border-white/5 bg-zinc-950/88 py-0 pl-3 pr-1 custom-scrollbar sm:h-12 sm:pl-6 sm:pr-2">
           <div className="mr-1 flex shrink-0 items-center gap-1 rounded-[6px] border border-white/5 bg-zinc-950/55 p-1">
             <button
               type="button"
@@ -2938,7 +2938,7 @@ ${styleAnchorLine}
           >
             <Layers size={16} />
             {isPackLandingOpen && (
-              <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
+              <span className="whitespace-nowrap text-[10px] font-black uppercase tracking-[0.16em]">
                 Packs
               </span>
             )}
@@ -2961,7 +2961,7 @@ ${styleAnchorLine}
           >
             <Layers size={16} />
             {!isPackLandingOpen && currentPackId === ALL_STYLE_CATEGORIES_TAB_ID && (
-              <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
+              <span className="whitespace-nowrap text-[10px] font-black uppercase tracking-[0.16em]">
                 Categories
               </span>
             )}
@@ -2984,7 +2984,7 @@ ${styleAnchorLine}
           >
             <LayoutGrid size={16} />
             {!isPackLandingOpen && currentPackId === ALL_STYLE_CARDS_TAB_ID && (
-              <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
+              <span className="whitespace-nowrap text-[10px] font-black uppercase tracking-[0.16em]">
                 Cards
               </span>
             )}
@@ -3011,7 +3011,7 @@ ${styleAnchorLine}
           >
             <Sparkles size={16} />
             {!isPackLandingOpen && currentPackId === USER_STYLE_PACK_ID && (
-              <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
+              <span className="whitespace-nowrap text-[10px] font-black uppercase tracking-[0.16em]">
                 {USER_STYLE_PACK_NAME}
               </span>
             )}
@@ -3038,7 +3038,7 @@ ${styleAnchorLine}
                 !isPackLandingOpen && currentPackId === FAVORITES_PACK_ID ? 'currentColor' : 'none'
               }
             />
-            <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-widest">
+            <span className="whitespace-nowrap text-[10px] font-black uppercase tracking-[0.16em]">
               Favorites
             </span>
           </button>
@@ -3238,6 +3238,7 @@ ${styleAnchorLine}
                       onOpenChange={setIsSortDropdownOpen}
                       triggerRef={sortButtonRef}
                       placement="bottom-right"
+                      portal
                       role="listbox"
                       aria-label="Sort style cards"
                       className="absolute right-0 top-[calc(100%+0.45rem)] z-50 w-52 overflow-hidden rounded-[6px] p-1"
@@ -3468,7 +3469,7 @@ ${styleAnchorLine}
             fallback={
               <LazySurfaceFallback
                 label="Loading catalog"
-                className="absolute inset-0 z-40 grid place-items-center bg-zinc-950/86 text-zinc-500 backdrop-blur-xl"
+                className="absolute inset-0 z-40 grid place-items-center bg-zinc-950/92 text-zinc-500"
               />
             }
           >
@@ -3600,13 +3601,13 @@ ${styleAnchorLine}
 
                   <div className="absolute inset-0 bg-linear-to-t from-black/92 via-black/18 to-black/18" />
 
-                  <div className="absolute left-1.5 top-1.5 rounded-[4px] border border-black/30 bg-black/58 px-1 py-0.5 text-[7px] font-black text-white/80 backdrop-blur">
+                  <div className="absolute left-1.5 top-1.5 rounded-[4px] border border-black/30 bg-black/70 px-1 py-0.5 text-[10px] font-black text-white/80">
                     {index + 1}
                   </div>
                   <button
                     type="button"
                     onClick={() => removeSelectedStyle(slot.preset.id)}
-                    className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-black/52 text-zinc-300 opacity-0 backdrop-blur transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
+                    className="absolute right-1.5 top-1.5 flex size-7 shrink-0 items-center justify-center rounded-[6px] border border-white/10 bg-black/70 text-zinc-300 opacity-0 transition-[background-color,color,opacity] hover:bg-red-500/20 hover:text-red-100 group-hover/slot:opacity-100 group-focus-within/slot:opacity-100"
                     aria-label={`Remove ${presetName}`}
                   >
                     <X size={13} />

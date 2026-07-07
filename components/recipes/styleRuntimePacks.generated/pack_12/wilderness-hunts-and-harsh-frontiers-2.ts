@@ -5,308 +5,330 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-002',
-    name: 'Bioluminescent Jungle Raid',
-    displayName: 'Bioluminescent Jungle Tactics',
-    styleAnchors: ['Bioluminescent Jungle Raid'],
+    name: 'Pandora Jungle First-Person Hunt',
+    displayName: 'Pandora Jungle First-Person Hunt',
+    styleAnchors: [
+      'Avatar: Frontiers of Pandora gameplay screenshots',
+      'Pandora Jungle First-Person Hunt',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, flat-light, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Avatar: Frontiers of Pandora gameplay screenshots: first-person open-world jungle capture with towering alien plants, dense vertical traversal, bows, gathering routes, and luminous predator paths. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable Avatar: Frontiers of Pandora-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with deep teal with living cyan and violet pulses; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Avatar: Frontiers of Pandora-informed palette: lush green, cyan bioluminescence, violet flowers, blue skin-adjacent accents without copying characters, and warm sun flecks. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with organism glow through wet leaves; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through canopy shafts, night-glow plants, wet leaf speculars, distant fire, and moonlit mist over traversal routes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from wet leaves, vines, and moss-black stone; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from fibrous bark, translucent leaves, glowing spores, woven gear, mud, water beads, and organic alien scale patterns. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with immersive first-person framing with hands, bow, scanning depth, climbable branches, and readable foreground-to-canopy route hierarchy. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Avatar: Frontiers of Pandora-derived mood: feral, awe-struck, stealthy, humid, and environmentally alive. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: diegetic first-person HUD is allowed: small reticle, stealth markers, compass ticks, and resource pips should stay coherent and unobtrusive. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Bioluminescent, Jungle, Raid; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes; deep teal with living cyan and violet pulses; organism glow through wet leaves; wet leaves, vines, and moss-black stone; dense occlusion with glowing path breaks; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+        'Avatar: Frontiers of Pandora gameplay screenshots; first-person open-world jungle capture with towering alien plants, dense vertical traversal, bows, gathering routes, and luminous predator paths; lush green, cyan bioluminescence, violet flowers, blue skin-adjacent accents without copying characters, and warm sun flecks; canopy shafts, night-glow plants, wet leaf speculars, distant fire, and moonlit mist over traversal routes; fibrous bark, translucent leaves, glowing spores, woven gear, mud, water beads, and organic alien scale patterns; immersive first-person framing with hands, bow, scanning depth, climbable branches, and readable foreground-to-canopy route hierarchy; feral, awe-struck, stealthy, humid, and environmentally alive; HUD guidance: diegetic first-person HUD is allowed: small reticle, stealth markers, compass ticks, and resource pips should stay coherent and unobtrusive',
       creative_brief:
-        "Apply Bioluminescent Jungle Raid as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Pandora Jungle First-Person Hunt as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Avatar: Frontiers of Pandora: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-010',
-    name: 'Volcanic Forge Dungeon',
-    displayName: 'Volcanic Forge Crawl',
-    styleAnchors: ['Volcanic Forge Dungeon'],
+    name: 'Dark Souls Smouldering Forge',
+    displayName: 'Dark Souls Smouldering Forge',
+    styleAnchors: ['Dark Souls III gameplay screenshots', 'Dark Souls Smouldering Forge'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, snow, pastel, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Dark Souls III gameplay screenshots: third-person action-RPG capture with volcanic masonry, lock-on duel spacing, stamina tension, and oppressive medieval ruin depth. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable Dark Souls III-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with black basalt, ember orange, and ash grey; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Dark Souls III-informed palette: ash grey, ember orange, charred black, dull brass, corpse beige, and muted blood red. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with lava glow and soot-dimmed highlights; orange furnace bloom; furnace glow from below; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through lava underglow, bonfire orange, smoky occlusion, rimmed armor edges, and stark boss-fire contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from molten metal, soot, anvils, and volcanic brick; black forge stone, lava seams, and iron gates; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from sooty stone, scorched metal, cracked shields, worn cloth, ember particles, and heavy weathered geometry. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with over-shoulder third-person combat framing with lock-on angle, boss scale, dodge lanes, stamina-space readability, and terrain traps. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Dark Souls III-derived mood: punishing, solemn, ruined, hot, and ritualistic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: soulslike HUD can appear: health/stamina/focus bars, item slot, and boss bar, kept small and era-consistent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Volcanic, Forge, Dungeon; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes; black basalt, ember orange, and ash grey; lava glow and soot-dimmed highlights; molten metal, soot, anvils, and volcanic brick; tracking paths, campsite anchors, predator scale reveals, terrain chokepoints, resource clusters, and horizon danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+        'Dark Souls III gameplay screenshots; third-person action-RPG capture with volcanic masonry, lock-on duel spacing, stamina tension, and oppressive medieval ruin depth; ash grey, ember orange, charred black, dull brass, corpse beige, and muted blood red; lava underglow, bonfire orange, smoky occlusion, rimmed armor edges, and stark boss-fire contrast; sooty stone, scorched metal, cracked shields, worn cloth, ember particles, and heavy weathered geometry; over-shoulder third-person combat framing with lock-on angle, boss scale, dodge lanes, stamina-space readability, and terrain traps; punishing, solemn, ruined, hot, and ritualistic; HUD guidance: soulslike HUD can appear: health/stamina/focus bars, item slot, and boss bar, kept small and era-consistent',
       creative_brief:
-        "Apply Volcanic Forge Dungeon as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Dark Souls Smouldering Forge as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Dark Souls III: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-022',
-    name: 'Frozen Bazaar Survival Night',
-    displayName: 'Frozen Bazaar Survival',
-    styleAnchors: ['Frozen Bazaar Survival Night'],
+    name: 'Long Dark Frozen Survival',
+    displayName: 'Long Dark Frozen Survival',
+    styleAnchors: ['The Long Dark gameplay screenshots', 'Long Dark Frozen Survival'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, tropical, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through resource scarcity and shelter readability; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on The Long Dark gameplay screenshots: first-person winter survival capture with sparse cabins, snowfields, simple painterly realism, resource scarcity, and weather danger. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable The Long Dark-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with cold blue, market amber, and snow glare; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a The Long Dark-informed palette: snow blue, pine green, cabin brown, muted red cloth, grey sky, and lantern amber. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with lanterns diffused through frost; low-key night lighting with practical pools; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through overcast snowlight, aurora glow, flashlight beams, stove fire, and low-contrast blizzard fade. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from market cloth, crates, brass trays, and survival stalls; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from stylized snow, frosted wood, cloth gloves, simple tools, animal tracks, ice crystals, and painterly terrain planes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person exploration framing with hands/tools, distant shelter silhouette, trail logic, and survival-object readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood cold market desperation; late-hour danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a The Long Dark-derived mood: isolated, cold, quiet, practical, and tense. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Frozen Bazaar Survival Night as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: survival meters, temperature icons, condition warnings, and small inventory cues can appear but should remain austere. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Frozen, Bazaar, Survival, Night; resource scarcity and shelter readability; cold blue, market amber, and snow glare; lanterns diffused through frost; market cloth, crates, brass trays, and survival stalls; dense vendor lanes and trade-route clutter; cold market desperation',
+        'The Long Dark gameplay screenshots; first-person winter survival capture with sparse cabins, snowfields, simple painterly realism, resource scarcity, and weather danger; snow blue, pine green, cabin brown, muted red cloth, grey sky, and lantern amber; overcast snowlight, aurora glow, flashlight beams, stove fire, and low-contrast blizzard fade; stylized snow, frosted wood, cloth gloves, simple tools, animal tracks, ice crystals, and painterly terrain planes; first-person exploration framing with hands/tools, distant shelter silhouette, trail logic, and survival-object readability; isolated, cold, quiet, practical, and tense; HUD guidance: survival meters, temperature icons, condition warnings, and small inventory cues can appear but should remain austere',
+      creative_brief:
+        'Use Long Dark Frozen Survival as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from The Long Dark: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-027',
-    name: 'Deep Mine Co-op Extraction',
-    displayName: 'Deep Mine Extraction',
-    styleAnchors: ['Deep Mine Co-op Extraction'],
+    name: 'Basalt Crew Extraction',
+    displayName: 'Basalt Crew Extraction',
+    styleAnchors: [
+      'co-op first-person cavern extraction screenshots',
+      'procedural mineral cave firefight',
+      'Basalt Crew Extraction',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, clean-lab, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through co-op extraction timing; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original co-op cavern extraction captures: first-person cave traversal, mineral glow, team tools, creature pressure, drilling routes, extraction objective readability, and chunky stylized rock geometry. Borrow the co-op mining pressure of Deep Rock-like games, but land as a different fictional extraction crew with different suits, tools, creatures, UI icons, and cave motifs.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable cavern extraction screenshot subject: keep clear team/object/threat role, tool scale, route affordance, mineral/resource logic, and enemy spacing without copying source classes or creatures.",
       color_and_tone:
-        'Grade the image with earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a basalt extraction palette: black rock, mineral cyan, hazard orange, worklight yellow, drill metal grey, fungus violet, and team-color accents. Keep value grouping legible in dark caves without pixel-art downgrade.',
       lighting_and_shadow:
-        'Drive the lighting with headlamp cones and shaft glow; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through thrown flares, headlamps, muzzle flashes, mineral luminescence, zipline glow, and darkness swallowed by cave depth. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from ore dust, cable lifts, helmets, and wet rock; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from chunky voxel-like rock, crystals, dirt, drills, armor plates, bug carapace, and industrial mining tools. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with first-person tool/weapon camera, foreground mining or combat affordance, mid-ground teammate/objective, cave route depth, and extraction pressure. Avoid strategy overview and generic cave concept art.',
       atmosphere_and_mood:
-        'Keep the mood underground pressure; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original basalt crew mood: rowdy, hazardous, subterranean, cooperative, crunchy, and resource-hungry.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Deep Mine Co-op Extraction as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as coherent first-person co-op extraction screenshot style, not pixel art and not concept art: ammo/tool pips, teammate markers, mineral/objective icons, and hazard cues can appear abstractly. Maintain heavy-denoise clarity and readable silhouettes.',
       key_features:
-        'Deep, Mine, Extraction; co-op extraction timing; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; headlamp cones and shaft glow; ore dust, cable lifts, helmets, and wet rock; vertical descent and extraction-route depth; underground pressure',
+        'Deep Rock Galactic gameplay screenshots; first-person co-op mining shooter capture with dwarven silhouettes, dark caves, mineral glow, extraction pressure, and class-based readability; black cave, neon green minerals, orange flares, blue shield lights, red hazard glow, and dusty grey rock; thrown flares, headlamps, muzzle flashes, mineral luminescence, zipline glow, and darkness swallowed by cave depth; chunky voxel-like rock, crystals, dirt, drills, armor plates, bug carapace, and industrial mining tools; first-person combat-mining composition with weapon/tool foreground, tunnel routes, swarm lanes, and objective minerals; rowdy, cooperative, subterranean, dangerous, and workmanlike; HUD guidance: class HUD, ammo, flares, objective counter, teammate outlines, and extraction timer can appear coherently',
+      creative_brief:
+        'Use Basalt Crew Extraction as a transferable game-originals preset. Preserve prompt X, then route interpretation through co-op cavern extraction references: first-person tools, mineral glow, cave routes, team spacing, creature pressure, and extraction objective readability. Avoid direct Deep Rock cloning, exact class silhouettes, readable mission UI, and retro pixel downgrade.',
     },
   },
   {
     id: 'SP12-029',
-    name: 'Coral Reef Underkingdom',
+    name: 'Subnautica Coral Reef Survival',
+    displayName: 'Subnautica Coral Reef Survival',
+    styleAnchors: ['Subnautica gameplay screenshots', 'Subnautica Coral Reef Survival'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, murky-water, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Subnautica gameplay screenshots: first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable Subnautica-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with reef pink, turquoise, and deep-sea blue; deep teal, coral red, and wet black; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Subnautica-informed palette: tropical cyan, coral orange, kelp green, deep blue, white suit plastic, and bioluminescent violet. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through sun shafts through water, flashlight cones, creature glow, base LEDs, and pressure-dark abyss gradients. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from coral branches, wet armor, and bubbles; reef stone, hulls, and salt spray; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from soft coral, glass domes, bubbles, fins, titanium tools, alien flora, wet plastic, and refracted water haze. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person swim framing with tool/hand foreground, oxygen-route urgency, reef silhouettes, and base/navigation landmarks. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Subnautica-derived mood: wonderful, vulnerable, aquatic, exploratory, and quietly terrifying. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Coral Reef Underkingdom as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as a coherent in-engine screenshot style, not concept art: oxygen, depth, health/food/water, quick slots, and compass are essential if kept like survival-game UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Coral, Reef, Underkingdom; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes; reef pink, turquoise, and deep-sea blue; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; coral branches, wet armor, and bubbles; tracking paths, campsite anchors, predator scale reveals, terrain chokepoints, resource clusters, and horizon danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+        'Subnautica gameplay screenshots; first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth; tropical cyan, coral orange, kelp green, deep blue, white suit plastic, and bioluminescent violet; sun shafts through water, flashlight cones, creature glow, base LEDs, and pressure-dark abyss gradients; soft coral, glass domes, bubbles, fins, titanium tools, alien flora, wet plastic, and refracted water haze; first-person swim framing with tool/hand foreground, oxygen-route urgency, reef silhouettes, and base/navigation landmarks; wonderful, vulnerable, aquatic, exploratory, and quietly terrifying; HUD guidance: oxygen, depth, health/food/water, quick slots, and compass are essential if kept like survival-game UI',
+      creative_brief:
+        'Use Subnautica Coral Reef Survival as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Subnautica: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-034',
-    name: 'Crimson Canyon Sniper Run',
-    displayName: 'Crimson Canyon Sniper',
-    styleAnchors: ['Crimson Canyon Sniper Run'],
+    name: 'Canyon Marksman Contract',
+    displayName: 'Canyon Marksman Contract',
+    styleAnchors: [
+      'tactical marksman first-person gameplay screenshots',
+      'long-range canyon overwatch',
+      'Canyon Marksman Contract',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, neon-city, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, drone map view, generic military promo shot, readable scope UI text',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through long-range threat readability; precision threat route; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original tactical marksman shooter captures: first-person or scoped overwatch, canyon depth, wind/haze, target patrol spacing, stealth route planning, and ballistics-readable sightlines. Land as a fictional marksman contract, not a strategy map or military poster.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable marksman screenshot subject: keep clear distance relationship, target/object function, cover, route affordance, scope/optic framing, and stealth pressure without copying source missions or UI.",
       color_and_tone:
-        'Grade the image with crimson rock and black rifle silhouette; red rock, dust tan, and hard blue shadow; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a tactical canyon palette: dust beige, sun-bleached rock, cold optic blue, dry scrub green, muted metal grey, and warning red accents. Keep value grouping legible through atmospheric depth.',
       lighting_and_shadow:
-        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from rock strata, tactical fabric, matte rifle metal, scrub brush, distant vehicles, heat shimmer, and sandy dust. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with first-person scope, binocular, or over-weapon camera; visible foreground cover; mid-distance patrol/objective; long sightline; and one clear tactical decision. Avoid isometric strategy overview.',
       atmosphere_and_mood:
-        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original canyon marksman mood: patient, lethal, dry, quiet, tactical, and heat-hazed.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as coherent first-person tactical shooter screenshot style, not concept art: optic reticle, wind dots, range pips, objective markers, and minimap shapes can appear as abstract non-readable HUD. Maintain heavy-denoise clarity and no readable UI text.',
       key_features:
-        'Crimson, Canyon, Sniper, Run; long-range threat readability; crimson rock and black rifle silhouette; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; cliff corridors and long-range sightlines; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+        'Sniper Ghost Warrior Contracts 2 gameplay screenshots; long-range tactical sniper capture with desert canyons, optic overlays, distant targets, wind/ballistics tension, and stealth approach routes; red canyon rock, tan sand, military olive, black scope vignette, pale sky, and small red target marks; harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain shadows; rock strata, tactical fabric, matte rifle metal, scrub brush, distant vehicles, heat shimmer, and sandy dust; first-person scoped or over-watch composition with reticle logic, target depth, terrain cover, and ballistic lane readability; patient, lethal, dry, quiet, and tactical; HUD guidance: scope reticle, wind/elevation marks, objective distance, ammo, and detection indicators are allowed if precise',
       creative_brief:
-        "Apply Crimson Canyon Sniper Run as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Canyon Marksman Contract as a transferable game-originals preset. Preserve prompt X, then route interpretation through tactical marksman references: first-person optics, long sightlines, patrol spacing, cover, environmental haze, and readable stealth objective. Avoid strategy-tactics framing, readable scope text, and generic military promo composition.',
     },
   },
   {
     id: 'SP12-040',
-    name: 'Thunder Plains Beast Hunt',
-    displayName: 'Thunder Plains Hunt',
-    styleAnchors: ['Thunder Plains Beast Hunt'],
+    name: 'Monster Hunter Thunder Plains',
+    displayName: 'Monster Hunter Thunder Plains',
+    styleAnchors: ['Monster Hunter: World gameplay screenshots', 'Monster Hunter Thunder Plains'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, cityscape, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through tracking, ambush, and scale reveal; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Monster Hunter: World gameplay screenshots: third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable Monster Hunter: World-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Monster Hunter: World-informed palette: storm grey, moss green, hide brown, bone white, lightning violet, and orange campfire accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with storm flashes over open plains; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through weather flashes, dappled forest/plains light, monster attack glow, camp torches, and dust from heavy movement. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from scaled hides, giant weapons, leather straps, mud, grass, claws, field gear, and tactile creature anatomy. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person hunt camera with player small against monster, attack telegraphs, terrain use, and readable chase paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood beast hunt under violent weather; hunt-or-be-hunted pressure; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Monster Hunter: World-derived mood: predatory, adventurous, physical, dangerous, and ecological. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support hunt readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Thunder, Plains, Beast, Hunt; tracking, ambush, and scale reveal; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; storm flashes over open plains; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; predator scale reveal and tracking path tension; beast hunt under violent weather',
+        'Monster Hunter: World gameplay screenshots; third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic; storm grey, moss green, hide brown, bone white, lightning violet, and orange campfire accents; weather flashes, dappled forest/plains light, monster attack glow, camp torches, and dust from heavy movement; scaled hides, giant weapons, leather straps, mud, grass, claws, field gear, and tactile creature anatomy; third-person hunt camera with player small against monster, attack telegraphs, terrain use, and readable chase paths; predatory, adventurous, physical, dangerous, and ecological; HUD guidance: health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support hunt readability',
       creative_brief:
-        "Apply Thunder Plains Beast Hunt as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Monster Hunter Thunder Plains as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Monster Hunter: World: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-041',
-    name: 'Emberwood Ranger Outpost',
-    displayName: 'Emberwood Ranger Frontier',
-    styleAnchors: ['Emberwood Ranger Outpost'],
+    name: 'Emberwood Lookout Trail',
+    displayName: 'Emberwood Lookout Trail',
+    styleAnchors: [
+      'painterly first-person wilderness exploration screenshots',
+      'lookout trail dusk navigation',
+      'Emberwood Lookout Trail',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, snow-theme, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Firewatch clone, retro pixel downgrade, exact lookout tower poster',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through scout defense posture; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Source-informed video-game style router for original painterly first-person wilderness exploration captures: simplified landscape shapes, warm dusk smoke, trail navigation, lookout structures, radio-like intimacy, and readable route landmarks. Borrow the graphic color discipline of Firewatch-like games, but land as a different fictional wilderness with different terrain, props, UI icons, and palette variants.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable wilderness exploration screenshot subject: keep clear trail/object function, landmark scale, hand/tool presence when useful, route affordance, and environmental readability without copying exact locations or posters.",
       color_and_tone:
-        'Grade the image with ember orange against damp forest green; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a painterly wilderness palette: ember orange, mauve sky, pine green, dusty violet, dry grass ochre, smoke blue, and dark bark silhouettes. Keep shapes broad and readable rather than pixelated or photoreal.',
       lighting_and_shadow:
-        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through golden-hour haze, flat graphic silhouettes, campfire warmth, radio glow, and atmospheric smoke layers. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from charred timber and ranger gear; field cloak, bows, outpost timber, and ember ash; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from painterly low-poly trees, wood cabins, paper maps, radios, trail signs without readable text, and dry grass. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        'Compose with first-person trail view, foreground hand/map/radio/object only if useful, mid-ground landmark, route fork, and layered atmospheric landscape. Avoid retro-pixel rendering and static tourism poster framing.',
       atmosphere_and_mood:
-        'Keep the mood feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry an original emberwood trail mood: lonely, warm, suspicious, contemplative, outdoorsy, and smoke-tinted.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
-      creative_brief:
-        "Apply Emberwood Ranger Outpost as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Finish as coherent first-person painterly exploration screenshot style, not pixel art and not concept art: minimal HUD, route/objective cue shapes, and clean color blocks can appear. Maintain denoised broad shapes and crisp navigation readability.',
       key_features:
-        'Emberwood, Ranger, Outpost; scout defense posture; ember orange against damp forest green; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; charred timber and ranger gear; tracking paths, campsite anchors, predator scale reveals, terrain chokepoints, resource clusters, and horizon danger; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved',
+        'Firewatch gameplay screenshots; first-person narrative exploration capture with stylized forest planes, ranger lookout towers, warm dusk, and environmental pathfinding; burnt orange sky, pine green, lavender shadow, wood brown, sunlit yellow, and smoky blue distance; golden-hour haze, flat graphic silhouettes, campfire warmth, radio glow, and atmospheric smoke layers; painterly low-poly trees, wood cabins, paper maps, radios, trail signs without readable text, and dry grass; first-person walking-sim framing with hands/tools, path curves, lookout landmark, and quiet navigational depth; lonely, warm, suspicious, contemplative, and outdoorsy; HUD guidance: minimal compass/objective cues or held map/radio interfaces are allowed; avoid gamey clutter',
+      creative_brief:
+        'Use Emberwood Lookout Trail as a transferable game-originals preset. Preserve prompt X, then route interpretation through painterly wilderness exploration references: first-person camera, broad color blocking, trail landmarks, smoke/dusk light, and quiet route decisions. Avoid direct Firewatch cloning, exact tower-poster composition, and retro pixel downgrade.',
     },
   },
   {
     id: 'SP12-067',
-    name: 'Bronze Marsh Siege Camp',
-    displayName: 'Bronze Marsh Siegecraft',
-    styleAnchors: ['Bronze Marsh Siege Camp'],
+    name: 'Total War Bronze Marsh Siege',
+    displayName: 'Total War Bronze Marsh Siege',
+    styleAnchors: [
+      'Total War: Three Kingdoms gameplay screenshots',
+      'Total War Bronze Marsh Siege',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, neon, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through besieged objective logic; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Total War: Three Kingdoms gameplay screenshots: large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable Total War: Three Kingdoms-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with muddy bronze, oxidized green, and campfire amber; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Total War: Three Kingdoms-informed palette: bronze armor, marsh green, dusty tan, banner red, smoke grey, and muted gold. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through overcast campaign daylight, fire arrows, campfires, smoke haze, and armor glints. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from bronze fittings and marsh-wet canvas; reeds, peat water, green copper, and wet roots; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from troop formations, polearms, muddy ground, siege towers, canvas camps, banners without readable script, and terrain clutter. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with elevated battlefield camera with army lines, flanking routes, unit cards, minimap logic, and objective spacing. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood humid occult pressure; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Total War: Three Kingdoms-derived mood: historical, strategic, muddy, disciplined, and large-scale. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent strategy UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Bronze, Marsh, Siege, Camp; besieged objective logic; muddy bronze, oxidized green, and campfire amber; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; bronze fittings and marsh-wet canvas; walls, breach lanes, and fallback rings; humid occult pressure',
+        'Total War: Three Kingdoms gameplay screenshots; large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy; bronze armor, marsh green, dusty tan, banner red, smoke grey, and muted gold; overcast campaign daylight, fire arrows, campfires, smoke haze, and armor glints; troop formations, polearms, muddy ground, siege towers, canvas camps, banners without readable script, and terrain clutter; elevated battlefield camera with army lines, flanking routes, unit cards, minimap logic, and objective spacing; historical, strategic, muddy, disciplined, and large-scale; HUD guidance: unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent strategy UI',
       creative_brief:
-        "Apply Bronze Marsh Siege Camp as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Total War Bronze Marsh Siege as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Total War: Three Kingdoms: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-073',
-    name: 'Titan Orchard Colossus Hunt',
+    name: 'Colossus Orchard Hunt',
+    displayName: 'Colossus Orchard Hunt',
+    styleAnchors: ['Shadow of the Colossus gameplay screenshots', 'Colossus Orchard Hunt'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, text, logo, city-neon, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through giant encounter scale; scale encounter reveal; tracking, ambush, and scale reveal; hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Shadow of the Colossus gameplay screenshots: third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express survival pressure, terrain hazards, creature scale, extraction timing, and frontier resource logic without forcing a landscape postcard.",
+        "Preserve the user's subject and transform it into a playable Shadow of the Colossus-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Shadow of the Colossus-informed palette: sun-bleached grass, stone grey, fur brown, pale sky, moss green, and muted magical blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through soft ancient daylight, dust haze, colossus rim light, weak-point glow, and broad landscape shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from gnarled branches, fruit color, and defensive machinery; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from weathered stone, fur, moss, leather straps, old ruins, wind grass, and simple worn gear. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility, and lonely negative space. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood pastoral zone turned tactical; feral, precarious, exploratory, weather-beaten, predatory, and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Shadow of the Colossus-derived mood: awe-filled, tragic, ancient, lonely, and monumental. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Titan, Orchard, Colossus, Hunt; giant encounter scale; earth ochre, moss green, frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm flashes; gnarled branches, fruit color, and defensive machinery; colossal target framed by small scale markers; pastoral zone turned tactical',
+        'Shadow of the Colossus gameplay screenshots; third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal; sun-bleached grass, stone grey, fur brown, pale sky, moss green, and muted magical blue; soft ancient daylight, dust haze, colossus rim light, weak-point glow, and broad landscape shadow; weathered stone, fur, moss, leather straps, old ruins, wind grass, and simple worn gear; cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility, and lonely negative space; awe-filled, tragic, ancient, lonely, and monumental; HUD guidance: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot',
       creative_brief:
-        "Apply Titan Orchard Colossus Hunt as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Colossus Orchard Hunt as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Shadow of the Colossus: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -1,5 +1,5 @@
 export const CATALOG_RENDER_BUDGET = {
-  activePageSize: 48,
+  activePageSize: 160,
   workspaceSummaryPageSize: 200,
   trashPageSize: 80,
   queuePreviewLimit: 24,

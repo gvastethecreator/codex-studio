@@ -37,15 +37,20 @@ import {
   DEFAULT_THUMBNAIL_SIZE,
   DEFAULT_IMAGE_GRID_VIEW_MODE,
   IMAGE_GRID_COLUMN_GAP,
+  IMAGE_GRID_VIRTUAL_OVERSCAN_PX,
   MAX_THUMBNAIL_SIZE,
   MIN_THUMBNAIL_SIZE,
   THUMBNAIL_SIZE_STEP,
+  estimateImageGridCardItemHeight,
   estimateImageGridItemHeight,
+  estimateImageGridListItemHeight,
   filterImageGridImages,
   resolveImageGridColumnCount,
   resolveImageGridAspectRatio,
   resolveImageGridIntrinsicSize,
+  resolveImageGridItemWidth,
   resolveImageGridTemplateColumns,
+  resolveImageGridVirtualWindow,
   shouldPriorityLoadImageGridItem,
   sortImageGridImages,
   type ImageGridSortOption,
@@ -68,6 +73,49 @@ interface ImageItemProps {
   viewMode: ImageGridViewMode;
   thumbnailSize: number;
 }
+
+interface CompactActionButtonProps {
+  onClick: (event: React.MouseEvent) => void;
+  icon: React.ReactNode;
+  label: string;
+  isActive?: boolean;
+  variant?: 'default' | 'danger' | 'primary';
+}
+
+const CompactActionButton: React.FC<CompactActionButtonProps> = ({
+  onClick,
+  icon,
+  label,
+  isActive = false,
+  variant = 'default',
+}) => {
+  const toneClass =
+    variant === 'danger'
+      ? 'text-red-400/70 hover:bg-red-500/12 hover:text-red-200'
+      : variant === 'primary' || isActive
+        ? 'border-accent-500/25 bg-accent-500/12 text-accent-100 shadow-[0_0_14px_rgba(var(--accent-500),0.12)]'
+        : 'text-zinc-500 hover:bg-white/7 hover:text-zinc-100';
+
+  return (
+    <Tooltip content={label} position="bottom">
+      <button
+        type="button"
+        onClick={(event) => {
+          event.stopPropagation();
+          onClick(event);
+        }}
+        aria-label={label}
+        aria-pressed={isActive}
+        className={`relative flex min-h-8 min-w-8 touch-manipulation items-center justify-center rounded-md border border-transparent transition-[background-color,border-color,color,transform,box-shadow] active:scale-95 focus-visible:ring-2 focus-visible:ring-white/25 ${toneClass}`}
+      >
+        {icon}
+        {isActive && variant !== 'primary' && (
+          <span className="absolute right-1 top-1 size-1.5 rounded-full bg-accent-400 shadow-[0_0_8px_rgba(var(--accent-500),0.9)]" />
+        )}
+      </button>
+    </Tooltip>
+  );
+};
 
 const ImageItem: React.FC<ImageItemProps> = React.memo(
   ({
@@ -229,36 +277,39 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       </div>
     );
 
-    const visibleActionGroup = (
-      <div className="flex flex-wrap items-center gap-1 rounded-lg border border-white/10 bg-black/35 p-1">
-        <ActionButton
+    const compactPrimaryActions = (
+      <div className="flex min-w-0 items-center gap-1">
+        <CompactActionButton
           onClick={(e) => {
             e.stopPropagation();
             onAddToContext(image);
           }}
           icon={<PlusCircle size={14} />}
           label="Use"
-          tooltipPosition="bottom"
+          variant="primary"
         />
-        <ActionButton
+        <CompactActionButton
           onClick={(e) => {
             e.stopPropagation();
             onLoadConfig(image.config);
           }}
           icon={<History size={14} />}
           label="Recipe"
-          tooltipPosition="bottom"
         />
-        <ActionButton
+        <CompactActionButton
           onClick={(e) => {
             e.stopPropagation();
             onRegenerate(image.config);
           }}
           icon={<RefreshCw size={14} />}
           label="Regen"
-          tooltipPosition="bottom"
         />
-        <ActionButton
+      </div>
+    );
+
+    const compactStateActions = (
+      <div className="flex min-w-0 items-center gap-1">
+        <CompactActionButton
           onClick={(e) => {
             e.stopPropagation();
             onToggleFavorite(image.id);
@@ -266,25 +317,22 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           icon={<Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} />}
           label={image.isFavorite ? 'Remove Favorite' : 'Add Favorite'}
           isActive={image.isFavorite}
-          tooltipPosition="bottom"
         />
-        <ActionButton
+        <CompactActionButton
           onClick={handleSelectClick}
           icon={<Check size={14} strokeWidth={3} />}
           label={isSelected ? 'Deselect' : 'Select'}
           isActive={isSelected}
-          tooltipPosition="bottom"
         />
-        <ActionButton
+        <CompactActionButton
           onClick={(e) => {
             e.stopPropagation();
             handleDownload();
           }}
           icon={<Download size={14} />}
           label="Save"
-          tooltipPosition="bottom"
         />
-        <ActionButton
+        <CompactActionButton
           onClick={handleCopyPrompt}
           icon={
             copiedPrompt ? (
@@ -294,9 +342,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             )
           }
           label="Copy Prompt"
-          tooltipPosition="bottom"
         />
-        <ActionButton
+        <CompactActionButton
           onClick={(e) => {
             e.stopPropagation();
             onDelete(image.id);
@@ -304,8 +351,14 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           icon={<Trash2 size={14} />}
           label="Delete"
           variant="danger"
-          tooltipPosition="bottom"
         />
+      </div>
+    );
+
+    const visibleActionGroup = (
+      <div className="flex flex-wrap items-center justify-between gap-1 rounded-lg border border-white/10 bg-black/30 p-1 shadow-inner shadow-black/30">
+        {compactPrimaryActions}
+        {compactStateActions}
       </div>
     );
 
@@ -317,8 +370,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           onMouseLeave={() => setIsActionSurfaceActive(false)}
           onFocusCapture={handleFocusCapture}
           onBlurCapture={handleBlurCapture}
-          className={`group flex min-w-0 flex-col gap-3 rounded-xl border border-white/10 bg-zinc-950/80 p-2 text-left shadow-lg transition-[border-color,background-color,opacity,transform,box-shadow] sm:flex-row sm:items-center
-          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/90'}
+          className={`group flex min-w-0 flex-col gap-3 rounded-xl border border-white/10 bg-zinc-950/75 p-2 text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow] sm:flex-row sm:items-center
+          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/85'}
         `}
           style={{ contentVisibility: 'auto', containIntrinsicSize: '720px 120px' }}
         >
@@ -329,7 +382,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             className="flex min-w-0 flex-1 cursor-pointer items-center gap-3 appearance-none border-none bg-transparent p-0 text-left"
           >
             {renderImageFrame({
-              frameClassName: 'block shrink-0 overflow-hidden rounded-lg bg-zinc-900',
+              frameClassName:
+                'block shrink-0 overflow-hidden rounded-lg bg-zinc-900 ring-1 ring-white/10',
               style: { width: listThumbnailSize, height: listThumbnailSize },
             })}
             <span className="min-w-0 flex-1">
@@ -339,7 +393,7 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
               <span className="mt-2 block">{metadataLine}</span>
             </span>
           </button>
-          <div className="flex shrink-0 justify-end">{visibleActionGroup}</div>
+          <div className="flex shrink-0 justify-end sm:max-w-[17.25rem]">{visibleActionGroup}</div>
         </div>
       );
     }
@@ -352,8 +406,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           onMouseLeave={() => setIsActionSurfaceActive(false)}
           onFocusCapture={handleFocusCapture}
           onBlurCapture={handleBlurCapture}
-          className={`group min-w-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950/80 text-left shadow-lg transition-[border-color,background-color,opacity,transform,box-shadow]
-          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/90'}
+          className={`group min-w-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950/75 text-left shadow-lg shadow-black/25 transition-[border-color,background-color,opacity,transform,box-shadow]
+          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/85'}
         `}
           style={{ contentVisibility: 'auto', containIntrinsicSize: '320px 460px' }}
         >
@@ -364,15 +418,16 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
             className="relative block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
           >
             {renderImageFrame({
-              frameClassName: 'block w-full overflow-hidden rounded-t-xl bg-zinc-900',
+              frameClassName:
+                'block w-full overflow-hidden rounded-t-xl bg-zinc-900 ring-1 ring-inset ring-white/10',
             })}
             <div
               className={`absolute inset-0 transition-opacity duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100'}`}
             />
           </button>
-          <div className="space-y-3 p-3">
-            <div className="min-w-0">
-              <div className="line-clamp-2 text-sm font-semibold leading-5 text-zinc-200">
+          <div className="space-y-2.5 p-3">
+            <div className="min-w-0 border-b border-white/6 pb-2.5">
+              <div className="line-clamp-2 text-[13px] font-semibold leading-5 text-zinc-200">
                 {promptText}
               </div>
               <div className="mt-2">{metadataLine}</div>
@@ -594,6 +649,16 @@ type GridItem =
   | { type: 'placeholder'; placeholder: StudioGenerationPlaceholder }
   | { type: 'image'; image: GeneratedImageWithConfig };
 
+type GridRow = {
+  key: string;
+  items: GridItem[];
+  estimatedHeight: number;
+};
+
+function getGridItemKey(item: GridItem) {
+  return item.type === 'image' ? item.image.id : item.placeholder.id;
+}
+
 function toCssAspectRatio(aspectRatio: string) {
   return /^\d+:\d+$/.test(aspectRatio) ? aspectRatio.replace(':', ' / ') : '1 / 1';
 }
@@ -654,7 +719,7 @@ export interface ImageGridProps {
   hasMore?: boolean;
   isCatalogLoading?: boolean;
   catalogError?: string | null;
-  onLoadMore?: () => void;
+  onLoadMore?: () => void | Promise<void>;
   onRetryCatalog?: () => void;
 }
 
@@ -712,7 +777,13 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     const [thumbnailSize, setThumbnailSize] = useState(DEFAULT_THUMBNAIL_SIZE);
     const [viewMode, setViewMode] = useState<ImageGridViewMode>(DEFAULT_IMAGE_GRID_VIEW_MODE);
     const sortButtonRef = useRef<HTMLButtonElement | null>(null);
+    const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+    const autoLoadSentinelRef = useRef<HTMLDivElement | null>(null);
+    const scrollRafRef = useRef<number | null>(null);
+    const autoLoadPendingRef = useRef(false);
     const sortMenuId = React.useId();
+    const [scrollTop, setScrollTop] = useState(0);
+    const [scrollViewportHeight, setScrollViewportHeight] = useState(getViewportHeightSnapshot);
     const viewportWidth = useSyncExternalStore(
       subscribeViewportSize,
       getViewportWidthSnapshot,
@@ -790,6 +861,39 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       return () => resizeObserver.disconnect();
     }, [gridItems.length, viewportWidth]);
 
+    React.useEffect(() => {
+      const element = scrollContainerRef.current;
+      if (!element) {
+        setScrollTop(0);
+        setScrollViewportHeight(viewportHeight);
+        return;
+      }
+
+      const updateScrollViewport = () => {
+        setScrollTop(element.scrollTop);
+        setScrollViewportHeight(element.clientHeight || viewportHeight);
+      };
+
+      updateScrollViewport();
+
+      if (typeof ResizeObserver === 'undefined') {
+        window.addEventListener('resize', updateScrollViewport);
+        return () => window.removeEventListener('resize', updateScrollViewport);
+      }
+
+      const resizeObserver = new ResizeObserver(updateScrollViewport);
+      resizeObserver.observe(element);
+      return () => resizeObserver.disconnect();
+    }, [viewportHeight]);
+
+    React.useEffect(() => {
+      return () => {
+        if (scrollRafRef.current !== null) {
+          cancelAnimationFrame(scrollRafRef.current);
+        }
+      };
+    }, []);
+
     const columnCount = useMemo(() => {
       const measuredGridWidth = gridMeasuredWidth || viewportWidth;
       return resolveImageGridColumnCount({
@@ -811,6 +915,89 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
 
       return buckets;
     }, [gridItems, columnCount]);
+
+    const gridItemWidth = useMemo(
+      () =>
+        resolveImageGridItemWidth({
+          containerWidth: gridMeasuredWidth || viewportWidth,
+          columnCount,
+          thumbnailSize,
+        }),
+      [columnCount, gridMeasuredWidth, thumbnailSize, viewportWidth],
+    );
+
+    const estimateGridItemRenderHeight = React.useCallback(
+      (item: GridItem) => {
+        if (viewMode === 'list') {
+          return estimateImageGridListItemHeight({ thumbnailSize, viewportWidth });
+        }
+
+        if (item.type === 'placeholder') {
+          return viewMode === 'grid' ? gridItemWidth : gridItemWidth + 112;
+        }
+
+        return estimateImageGridCardItemHeight({
+          image: item.image,
+          itemWidth: gridItemWidth,
+          viewMode,
+        });
+      },
+      [gridItemWidth, thumbnailSize, viewportWidth, viewMode],
+    );
+
+    const gridRows = useMemo<GridRow[]>(() => {
+      if (viewMode === 'mosaic') return [];
+
+      const safeColumnCount = Math.max(1, columnCount);
+      const rows: GridRow[] = [];
+      for (let index = 0; index < gridItems.length; index += safeColumnCount) {
+        const items = gridItems.slice(index, index + safeColumnCount);
+        rows.push({
+          key: items.map(getGridItemKey).join(':'),
+          items,
+          estimatedHeight:
+            Math.max(...items.map(estimateGridItemRenderHeight), MIN_THUMBNAIL_SIZE) +
+            IMAGE_GRID_COLUMN_GAP,
+        });
+      }
+      return rows;
+    }, [columnCount, estimateGridItemRenderHeight, gridItems, viewMode]);
+
+    const virtualGridWindow = useMemo(
+      () =>
+        resolveImageGridVirtualWindow({
+          itemSizes: gridRows.map((row) => row.estimatedHeight),
+          scrollTop,
+          viewportHeight: scrollViewportHeight,
+          overscanPx: IMAGE_GRID_VIRTUAL_OVERSCAN_PX,
+        }),
+      [gridRows, scrollTop, scrollViewportHeight],
+    );
+
+    const virtualColumnBuckets = useMemo(() => {
+      if (viewMode !== 'mosaic') return [];
+
+      return columnBuckets.map((bucket) => {
+        const itemSizes = bucket.map((item) => {
+          if (item.type === 'placeholder') return thumbnailSize + IMAGE_GRID_COLUMN_GAP;
+          return (
+            estimateImageGridItemHeight({ image: item.image, thumbnailSize }) +
+            IMAGE_GRID_COLUMN_GAP
+          );
+        });
+        const window = resolveImageGridVirtualWindow({
+          itemSizes,
+          scrollTop,
+          viewportHeight: scrollViewportHeight,
+          overscanPx: IMAGE_GRID_VIRTUAL_OVERSCAN_PX,
+        });
+
+        return {
+          window,
+          visibleItems: bucket.slice(window.startIndex, window.endIndex),
+        };
+      });
+    }, [columnBuckets, scrollTop, scrollViewportHeight, thumbnailSize, viewMode]);
 
     const priorityImageIds = useMemo(() => {
       const ids = new Set<string>();
@@ -855,6 +1042,96 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
 
       return ids;
     }, [columnBuckets, columnCount, gridItems, thumbnailSize, viewportHeight, viewMode]);
+
+    const requestAutoLoadMore = React.useCallback(() => {
+      if (!hasMore || isCatalogLoading || !onLoadMore || autoLoadPendingRef.current) return;
+
+      autoLoadPendingRef.current = true;
+      const result = onLoadMore();
+      if (result && typeof result === 'object' && 'finally' in result) {
+        void result.finally(() => {
+          autoLoadPendingRef.current = false;
+        });
+        return;
+      }
+
+      window.setTimeout(() => {
+        autoLoadPendingRef.current = false;
+      }, 350);
+    }, [hasMore, isCatalogLoading, onLoadMore]);
+
+    const handleViewModeChange = React.useCallback((nextViewMode: ImageGridViewMode) => {
+      setViewMode(nextViewMode);
+      setScrollTop(0);
+      scrollContainerRef.current?.scrollTo({ top: 0 });
+    }, []);
+
+    const handleScroll = React.useCallback(
+      (event: React.UIEvent<HTMLDivElement>) => {
+        const element = event.currentTarget;
+        if (scrollRafRef.current !== null) return;
+
+        scrollRafRef.current = requestAnimationFrame(() => {
+          scrollRafRef.current = null;
+          setScrollTop(element.scrollTop);
+
+          const distanceToEnd = element.scrollHeight - element.scrollTop - element.clientHeight;
+          if (distanceToEnd < IMAGE_GRID_VIRTUAL_OVERSCAN_PX * 1.4) {
+            requestAutoLoadMore();
+          }
+        });
+      },
+      [requestAutoLoadMore],
+    );
+
+    React.useEffect(() => {
+      const root = scrollContainerRef.current;
+      const target = autoLoadSentinelRef.current;
+      if (!root || !target || !hasMore) return;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((entry) => entry.isIntersecting)) {
+            requestAutoLoadMore();
+          }
+        },
+        { root, rootMargin: `${IMAGE_GRID_VIRTUAL_OVERSCAN_PX}px 0px` },
+      );
+
+      observer.observe(target);
+      return () => observer.disconnect();
+    }, [hasMore, requestAutoLoadMore, gridItems.length, viewMode]);
+
+    const renderGridItem = (item: GridItem) =>
+      item.type === 'placeholder' ? (
+        <GenerationPlaceholderItem
+          key={item.placeholder.id}
+          placeholder={item.placeholder}
+          viewMode={viewMode}
+        />
+      ) : (
+        <div
+          key={item.image.id}
+          className={activeModalImageId === item.image.id ? 'opacity-0' : 'opacity-100'}
+        >
+          <ImageItem
+            image={item.image}
+            isSelected={selectedImageIds.includes(item.image.id)}
+            onImageClick={onImageClick}
+            onSelectionChange={onSelectionChange}
+            onRegenerate={onRegenerate}
+            onAddToContext={onAddToContext}
+            onLoadConfig={onLoadConfig}
+            onDelete={onDelete}
+            onToggleFavorite={onToggleFavorite}
+            transitionName={transitioningImageId === item.image.id ? 'master-canvas' : undefined}
+            alwaysShowActions={alwaysShowCardActions}
+            priorityLoad={priorityImageIds.has(item.image.id)}
+            viewMode={viewMode}
+            thumbnailSize={thumbnailSize}
+          />
+        </div>
+      );
 
     if (sourceImageCount === 0 && generationPlaceholders.length === 0) {
       return (
@@ -934,23 +1211,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                 <>
                   <ActionButton
                     onClick={() => onDownloadSelected(sortedImages)}
-                    icon={
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                      </svg>
-                    }
+                    icon={<Download size={16} />}
                     label="Download Selected"
                     tooltipPosition="bottom"
                   />
@@ -977,7 +1238,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                 <Tooltip key={value} content={`${label}: ${description}`} position="bottom">
                   <button
                     type="button"
-                    onClick={() => setViewMode(value)}
+                    onClick={() => handleViewModeChange(value)}
                     aria-label={`${label} view`}
                     aria-pressed={selected}
                     className={`flex min-h-8 min-w-8 touch-manipulation items-center justify-center rounded-lg transition-[background-color,color,transform,box-shadow] focus-visible:ring-2 focus-visible:ring-white/25 ${
@@ -1077,7 +1338,11 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             </GsapDropdown>
           </div>
         </div>
-        <div className="custom-scrollbar h-full w-full overflow-y-auto px-3 pt-16 pb-8 sm:px-8">
+        <div
+          ref={scrollContainerRef}
+          onScroll={handleScroll}
+          className="custom-scrollbar absolute inset-x-0 bottom-0 top-16 overflow-y-auto px-3 pt-3 pb-8 sm:px-8"
+        >
           {showFavoritesOnly && imageCount === 0 && generationPlaceholders.length === 0 && (
             <div className="flex min-h-[45vh] items-center justify-center text-center">
               <div className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-xs font-semibold text-zinc-500">
@@ -1099,88 +1364,54 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               alignItems: viewMode === 'mosaic' ? 'start' : 'stretch',
             }}
           >
-            {viewMode === 'mosaic'
-              ? columnBuckets.map((bucket, columnIndex) => {
-                  const firstItem = bucket[0];
-                  const firstItemId =
-                    firstItem?.type === 'image' ? firstItem.image.id : firstItem?.placeholder.id;
-                  const columnKey = firstItemId
-                    ? `column-${firstItemId}-${bucket.length}`
-                    : `column-empty-${columnIndex}`;
-                  return (
-                    <div key={columnKey} className="flex min-w-0 flex-col gap-0">
-                      {bucket.map((item) =>
-                        item.type === 'placeholder' ? (
-                          <GenerationPlaceholderItem
-                            key={item.placeholder.id}
-                            placeholder={item.placeholder}
-                            viewMode={viewMode}
-                          />
-                        ) : (
-                          <div
-                            key={item.image.id}
-                            className={
-                              activeModalImageId === item.image.id ? 'opacity-0' : 'opacity-100'
-                            }
-                          >
-                            <ImageItem
-                              image={item.image}
-                              isSelected={selectedImageIds.includes(item.image.id)}
-                              onImageClick={onImageClick}
-                              onSelectionChange={onSelectionChange}
-                              onRegenerate={onRegenerate}
-                              onAddToContext={onAddToContext}
-                              onLoadConfig={onLoadConfig}
-                              onDelete={onDelete}
-                              onToggleFavorite={onToggleFavorite}
-                              transitionName={
-                                transitioningImageId === item.image.id ? 'master-canvas' : undefined
-                              }
-                              alwaysShowActions={alwaysShowCardActions}
-                              priorityLoad={priorityImageIds.has(item.image.id)}
-                              viewMode={viewMode}
-                              thumbnailSize={thumbnailSize}
-                            />
-                          </div>
-                        ),
-                      )}
-                    </div>
-                  );
-                })
-              : gridItems.map((item) =>
-                  item.type === 'placeholder' ? (
-                    <GenerationPlaceholderItem
-                      key={item.placeholder.id}
-                      placeholder={item.placeholder}
-                      viewMode={viewMode}
-                    />
-                  ) : (
-                    <div
-                      key={item.image.id}
-                      className={activeModalImageId === item.image.id ? 'opacity-0' : 'opacity-100'}
-                    >
-                      <ImageItem
-                        image={item.image}
-                        isSelected={selectedImageIds.includes(item.image.id)}
-                        onImageClick={onImageClick}
-                        onSelectionChange={onSelectionChange}
-                        onRegenerate={onRegenerate}
-                        onAddToContext={onAddToContext}
-                        onLoadConfig={onLoadConfig}
-                        onDelete={onDelete}
-                        onToggleFavorite={onToggleFavorite}
-                        transitionName={
-                          transitioningImageId === item.image.id ? 'master-canvas' : undefined
-                        }
-                        alwaysShowActions={alwaysShowCardActions}
-                        priorityLoad={priorityImageIds.has(item.image.id)}
-                        viewMode={viewMode}
-                        thumbnailSize={thumbnailSize}
-                      />
-                    </div>
-                  ),
+            {viewMode === 'mosaic' ? (
+              virtualColumnBuckets.map(({ window, visibleItems }, columnIndex) => {
+                const bucket = columnBuckets[columnIndex] ?? [];
+                const firstItem = bucket[0];
+                const firstItemId = firstItem ? getGridItemKey(firstItem) : null;
+                const columnKey = firstItemId
+                  ? `column-${firstItemId}-${bucket.length}`
+                  : `column-empty-${columnIndex}`;
+
+                return (
+                  <div key={columnKey} className="flex min-w-0 flex-col gap-0">
+                    {window.beforeHeight > 0 && (
+                      <div style={{ height: window.beforeHeight }} aria-hidden="true" />
+                    )}
+                    {visibleItems.map(renderGridItem)}
+                    {window.afterHeight > 0 && (
+                      <div style={{ height: window.afterHeight }} aria-hidden="true" />
+                    )}
+                  </div>
+                );
+              })
+            ) : (
+              <>
+                {virtualGridWindow.beforeHeight > 0 && (
+                  <div
+                    style={{
+                      gridColumn: '1 / -1',
+                      height: virtualGridWindow.beforeHeight,
+                    }}
+                    aria-hidden="true"
+                  />
                 )}
+                {gridRows
+                  .slice(virtualGridWindow.startIndex, virtualGridWindow.endIndex)
+                  .flatMap((row) => row.items.map(renderGridItem))}
+                {virtualGridWindow.afterHeight > 0 && (
+                  <div
+                    style={{
+                      gridColumn: '1 / -1',
+                      height: virtualGridWindow.afterHeight,
+                    }}
+                    aria-hidden="true"
+                  />
+                )}
+              </>
+            )}
           </div>
+          <div ref={autoLoadSentinelRef} className="h-px w-full" aria-hidden="true" />
           {(hasMore || isCatalogLoading || catalogError || totalCount > sourceImageCount) && (
             <div className="flex flex-col items-center gap-3 py-6 text-center">
               <div className="text-[10px] font-black tabular-nums uppercase tracking-widest text-zinc-500">

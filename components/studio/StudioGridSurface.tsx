@@ -43,7 +43,7 @@ export interface StudioGridSurfaceProps {
     hasMore: boolean;
     isLoading: boolean;
     error: string | null;
-    loadMore: () => void;
+    loadMore: () => void | Promise<void>;
     refresh: () => void;
   };
 }

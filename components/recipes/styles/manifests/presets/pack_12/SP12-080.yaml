@@ -1,10 +1,12 @@
 schemaVersion: 1
 id: SP12-080
 packId: pack_12
-name: Endgame Eclipse Throne Room
+name: Hollow Keep Lock-On
 styleAnchors:
-  - 'Endgame Eclipse Throne Room'
-displayName: 'Eclipse Throne Endgame'
+  - classic old-gen soulslike gameplay screenshots
+  - hostile ruined keep traversal-combat
+  - Hollow Keep Lock-On
+displayName: Hollow Keep Lock-On
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:
@@ -14,80 +16,120 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-classic-soulslike
+  - render-third-person-old-gen
+  - camera-third-person-lock-on
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through adventure setpiece logic, puzzle readability, environmental
-    affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a
-    required scene, mission, character, or card image.
+    Source-informed video-game style router for original classic soulslike captures: third-person
+    old-gen action-RPG play with rough stone, narrow combat routes, fog-gate pressure, stamina
+    spacing, hostile ruin geometry, understated HUD, and readable dungeon traversal. Borrow the
+    lock-on camera discipline and material restraint associated with Dark Souls-era games, but land
+    as a different fictional ruined keep with different enemies, props, architecture, UI icons, and
+    route silhouettes. Apply this after prompt X; prompt X supplies the subject, action, setting,
+    and intensity while this preset supplies capture language, camera grammar, material behavior,
+    playable readability, and finish.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express puzzle affordances, hub
-    readability, traversal choices, central devices, reward rhythm, and escape logic without
-    requiring a literal dungeon room.
+    Preserve the user's subject and transform it into a playable hollow-keep action-RPG screenshot
+    subject: keep clear role silhouette, enemy/player/object function, hitbox-like readability,
+    trap or route affordance, and scale relationship without copying source characters or named IP
+    elements.
   color_and_tone: >-
-    Grade the image with black sun, red corona, and throne gold; warm tavern amber, sapphire blue,
-    clockwork brass, prism light, dust white, mushroom red, and moon silver; keep tonal hierarchy
-    strong enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use a classic soulslike ruin palette: ash grey, dead green, damp stone blue, rust brown, dull
+    steel, faded leather, torch amber, and sickly fog white. Keep value grouping legible at gameplay
+    distance and avoid black-gold epic polish, neon fantasy accents, or clean heroic color scripts.
   lighting_and_shadow: >-
-    Drive the lighting with eclipse backlight; portal glow, puzzle beams, lantern pools, stained
-    shafts, crystal refraction, and guided objective light; use highlights and shadow pockets to
-    reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through torch pools, overcast ruin light, fog-gate glow, weapon sparks, hollow
+    eyes, and shallow dungeon occlusion. Lighting must clarify the playable route, threat, trap,
+    ladder, doorway, or stamina-combat space and avoid eclipse backlight, cathedral god rays, and
+    cinematic bloom.
   texture_and_material: >-
-    Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails,
-    puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from rough stone blocks, moss, wet stairs, cracked plaster, tarnished chain, old
+    cloth, dull shields, rusty blades, simple wood, and old-gen asset limits. Materials should feel
+    like in-engine game assets captured during play, not modern ultra-detailed PBR concept art.
   camera_and_composition: >-
-    Use reusable game-composition grammar from adventure setpiece logic, puzzle readability,
-    environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with third-person lock-on or traversal-combat framing: player low in frame, enemy or
+    trap ahead, narrow route, ledge/drop/fog gate/lever/ladder as affordance, readable dodge lane,
+    and modest HUD. The frame should feel played, not staged as a boss postcard or centered throne
+    reveal.
   atmosphere_and_mood: >-
-    Keep the mood endgame ritual dread; curious, adventurous, readable, mysterious, playful when
-    relevant, and mechanically inviting; the result can be adult, harsh, seductive, eerie, or
-    violent when prompt X asks for it, but the preset should not force a new storyline.
+    Carry an original hollow-keep soulslike mood: lonely, punishing, archaic, damp, hostile, and
+    quietly tragic. The preset can become adult, violent, eerie, seductive, cozy, tactical, or
+    absurd when prompt X asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as environment-adventure art with clear affordances, satisfying depth, and no generic
-    quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine gameplay screenshot style, not concept art: small classic souls
+    HUD can include health/stamina/focus bars, item slot shapes, lock-on cue, and boss bar only when
+    useful. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, old-gen
+    restraint, and no fake logos, modern fantasy key-art polish, or random interface clutter.
   key_features: >-
-    Endgame, Eclipse, Throne, Room; adventure setpiece logic, puzzle readability, environmental
-    affordances, hub rhythm, and landmark staging; black sun, red corona, and throne gold; eclipse
-    backlight; worn stone, brass gears, painted signs without readable text, carved rails, puzzle
-    blocks, tavern wood, and polished relics; final boss axis and eclipse halo; endgame ritual dread
+    original classic soulslike gameplay screenshots; third-person old-gen action-RPG capture with
+    rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry,
+    understated HUD, and dungeon readability; ash grey, dead green, damp stone blue, rust brown,
+    dull steel, faded leather, torch amber, and sickly fog white; torch pools, overcast ruin light,
+    fog-gate glow, weapon sparks, hollow eyes, and shallow dungeon occlusion; rough stone blocks,
+    moss, wet stairs, cracked plaster, tarnished chain, old cloth, dull shields, rusty blades,
+    simple wood, and old-gen asset limits; third-person lock-on or traversal-combat framing with
+    route affordance and readable dodge lane; lonely, punishing, archaic, damp, hostile, and quietly
+    tragic; HUD guidance: small classic soulslike HUD only when useful
   creative_brief: >-
-    Apply Endgame Eclipse Throne Room as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Hollow Keep Lock-On as a transferable game-originals preset. Preserve prompt X, then route
+    interpretation through classic soulslike capture references: third-person lock-on camera,
+    old-gen material restraint, narrow route readability, fog-gate/trap affordances, stamina-combat
+    spacing, and sparse HUD grammar. Avoid menus, logos, exact characters, exact levels, Dark Souls
+    level cloning, Elden Ring-style eclipse throne imagery, modern cinematic key art, and
+    promotional composition.
 avoidRules:
   - watermark
-  - text
   - logo
-  - comedic-style
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic quest-poster layout
-  - unreadable puzzle clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - Elden Ring eclipse throne imagery
+  - centered boss postcard
+  - modern fantasy key art
+  - black-gold epic polish
+  - Dark Souls level clone
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-080.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, comedic-style, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster
-    layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, Elden Ring eclipse throne imagery, centered boss postcard,
+    modern fantasy key art, black-gold epic polish, Dark Souls level clone
+  referenceGame: Original classic soulslike, Dark Souls-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    small classic souls HUD can include health/stamina/focus bars, item slot shapes, lock-on cue,
+    and boss bar only when useful
+  renderFamily: third-person-old-gen
+  cameraFamily: third-person-lock-on
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -96,6 +138,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - puzzle-chambers-and-adventure-setpieces
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-classic-soulslike
+    - render-third-person-old-gen
+    - camera-third-person-lock-on
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-031
 packId: pack_12
-name: Astral Chess Battlefield
+name: Into the Breach Astral Tactics
 styleAnchors:
-  - 'Astral Chess Battlefield'
-displayName: 'Astral Chess Tactics'
+  - Into the Breach gameplay screenshots
+  - Into the Breach Astral Tactics
+displayName: Into the Breach Astral Tactics
 category: 5. Speed, Sport & Competitive Arenas
 version: 1
 supportedTasks:
@@ -14,78 +15,108 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - speed-sport-and-competitive-arenas
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-into-the-breach
+  - render-strategy-tactics
+  - camera-isometric-top-down
+  - hud-full-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through cosmic rule geometry; strategy made visible; competitive arena
-    energy, lane logic, player-role clarity, speed trails, and readable match flow, using the preset
-    as art direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Into the Breach gameplay screenshots: compact
+    pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and
+    deterministic puzzle-combat readability. Apply this after prompt X; prompt X supplies the
+    subject, action, setting, and intensity while this preset supplies capture language, camera
+    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
+    level, character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express competition roles, lane tension,
-    speed control, ranked focus, and contest readability without forcing a sports broadcast.
+    Preserve the user's subject and transform it into a playable Into the Breach-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with starfield violets and cold gold; team-color contrast, hot magenta, cobalt,
-    obsidian, sand gold, lava red, and prismatic highlights; keep tonal hierarchy strong enough for
-    gameplay readability, thumbnail clarity, and subject recognition.
+    Use a Into the Breach-informed palette: muted teal water, rust mech metal, acid bug green,
+    orange danger tiles, grey city blocks, and UI-blue grid markers. Keep value grouping legible at
+    gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or
+    objective cues rather than decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with celestial rim glow; track strips, arena floods, energy gates,
-    holographic trails, trophy glints, and motion-lit edges; use highlights and shadow pockets to
-    reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through flat tactical light, explosion flashes, laser lines, shield glows, and
+    crisp tile-state highlights. Lighting must clarify the playable route, threat, focal subject, or
+    objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from polished arena floors, volcanic glass, carbon helmets, crystal barriers,
-    dust tracks, neon rails, and worn competition gear; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from tiny pixel buildings, readable mechs, bugs, cracked ground, smoke tiles, and
+    compact UI panels. Materials should feel like in-engine game assets captured during play, with
+    enough texture identity to separate props, terrain, characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from competitive arena energy, lane logic, player-role
-    clarity, speed trails, and readable match flow: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with orthographic grid with 8x8-ish battlefield discipline, attack previews, push
+    vectors, and civilian-objective clarity. The frame should read as a plausible gameplay capture;
+    include UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood competitive, fast, theatrical, sharp, high-stakes, and crowd-charged; the result
-    can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset
-    should not force a new storyline.
+    Carry a Into the Breach-derived mood: cerebral, compact, tense, deterministic, and elegant. The
+    preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
+    asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as high-motion game-art finish with crisp lane readability, controlled streaks, and no
-    fake broadcast overlay; preserve clean focal hierarchy, believable material response,
-    heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: grid markers, turn UI, unit
+    panels, objective pips, and attack previews are central to the style. Maintain heavy-denoise
+    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
+    or random interface clutter.
   key_features: >-
-    Astral, Chess, Battlefield; cosmic rule geometry; starfield violets and cold gold; celestial rim
-    glow; polished arena floors, volcanic glass, carbon helmets, crystal barriers, dust tracks, neon
-    rails, and worn competition gear; board lanes and opposing value fields; competitive, fast,
-    theatrical, sharp, high-stakes, and crowd-charged
+    Into the Breach gameplay screenshots; compact pixel tactics capture with small grid islands,
+    clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability; muted
+    teal water, rust mech metal, acid bug green, orange danger tiles, grey city blocks, and UI-blue
+    grid markers; flat tactical light, explosion flashes, laser lines, shield glows, and crisp
+    tile-state highlights; tiny pixel buildings, readable mechs, bugs, cracked ground, smoke tiles,
+    and compact UI panels; orthographic grid with 8x8-ish battlefield discipline, attack previews,
+    push vectors, and civilian-objective clarity; cerebral, compact, tense, deterministic, and
+    elegant; HUD guidance: grid markers, turn UI, unit panels, objective pips, and attack previews
+    are central to the style
   creative_brief: >-
-    Apply Astral Chess Battlefield as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Into the Breach Astral Tactics as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from Into the Breach: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - clutter
-  - noisy-palette
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - fake broadcast overlay
-  - sports-logo clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-031.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, clutter, noisy-palette, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, fake broadcast overlay,
-    sports-logo clutter, fixed scene, generic game screenshot, readable UI, official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Into the Breach
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: grid markers, turn UI, unit panels, objective pips, and attack previews are central to the style
+  renderFamily: strategy-tactics
+  cameraFamily: isometric-top-down
+  hudMode: full-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -94,6 +125,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - speed-sport-and-competitive-arenas
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-into-the-breach
+    - render-strategy-tactics
+    - camera-isometric-top-down
+    - hud-full-hud
   supportedTasks:
     - image_generate
     - image_edit

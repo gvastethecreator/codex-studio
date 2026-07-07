@@ -1,10 +1,12 @@
 schemaVersion: 1
 id: SP12-052
 packId: pack_12
-name: Rift Bridge Capture Point
+name: Class Clash Bridge Control
 styleAnchors:
-  - 'Rift Bridge Capture Point'
-displayName: 'Rift Bridge Control Point'
+  - class-based team shooter gameplay screenshots
+  - stylized bridge control point push
+  - Class Clash Bridge Control
+displayName: Class Clash Bridge Control
 category: 4. Sieges, Warfronts & Last Stands
 version: 1
 supportedTasks:
@@ -14,81 +16,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - sieges-warfronts-and-last-stands
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-class-based-team-shooter
+  - render-first-person-stylized
+  - camera-first-person
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through capture-point tension; contested objective zone; tactical warfront
-    staging, defensive geometry, damage history, co-op readability, and last-stand pressure, using
-    the preset as art direction rather than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original class-based team shooter captures: stylized
+    first-person combat, readable team colors, chunky industrial bridge geometry, control-point
+    pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team
+    Fortress-like games, but land as a different fictional class shooter with different silhouettes,
+    props, UI icons, and map architecture.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express defensive pressure, breach
-    geometry, faction clarity, barricade rhythm, and survival stakes without forcing one battle
-    scene.
+    Preserve the user's subject and transform it into a playable class-shooter screenshot subject:
+    keep clear class/object role, team spacing, objective pressure, projectile/hit readability,
+    cover affordance, and first-person scale without copying source classes or maps.
   color_and_tone: >-
-    Grade the image with smoke grey, worn iron, battlefield blue, ember orange, frost white, and
-    siege-banner accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail
-    clarity, and subject recognition.
+    Use a stylized team-shooter palette: warm red, workwear blue, dusty tan, black metal, cream
+    signage shapes without text, muzzle orange, and clean shadow groups. Keep value grouping legible
+    and avoid military realism.
   lighting_and_shadow: >-
-    Drive the lighting with split-dimensional glow and hard rim tear; searchlights, muzzle flashes,
-    burning horizons, storm breaks, aurora glow, and smoke-filtered sun; use highlights and shadow
-    pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through baked midday light, muzzle flashes, rocket trails, objective glow, and
+    soft cartoon shadows. Lighting must clarify the playable route, threat, focal subject, or
+    objective and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from shattered masonry, scorched metal, splintered wood, wet mud, broken glass,
-    ice crust, banners, and supply rigging; make props, clothing, creatures, vehicles, architecture,
-    and terrain share the same production-world logic.
+    Build surfaces from painterly industrial props, wood planks, metal bridges, team-color panels,
+    simple weapons, and exaggerated character shapes without copying cast. Materials should feel
+    like in-engine game assets captured during play, with enough texture identity to separate props,
+    terrain, characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from tactical warfront staging, defensive geometry, damage
-    history, co-op readability, and last-stand pressure: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with first-person weapon/tool camera, bridge or control-point route, allies/enemies
+    spaced around cover, projectile arcs, and one clear push/defend decision. Avoid isometric
+    strategy or tactical overview.
   atmosphere_and_mood: >-
-    Keep the mood urgent, battered, heroic, grim, tactical, and physically costly; the result can be
-    adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not
-    force a new storyline.
+    Carry an original class-clash mood: competitive, comic, industrial, tactical, noisy, and highly
+    readable.
   rendering_and_quality: >-
-    Finish as battle-readable production art with clear factions, clean depth cues, and no chaotic
-    poster overcrowding; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as coherent first-person stylized team-shooter screenshot style, not concept art:
+    health/ammo/objective icons can appear abstract and non-readable. Maintain heavy-denoise
+    clarity, crisp silhouettes, no exact class silhouettes, and no readable objective text.
   key_features: >-
-    Rift, Bridge, Capture, Point; capture-point tension; smoke grey, worn iron, battlefield blue,
-    ember orange, frost white, and siege-banner accents; split-dimensional glow and hard rim tear;
-    shattered masonry, scorched metal, splintered wood, wet mud, broken glass, ice crust, banners,
-    and supply rigging; portal seam as focal anchor; urgent, battered, heroic, grim, tactical, and
-    physically costly
+    Team Fortress 2 gameplay screenshots; stylized team-shooter capture with bold silhouettes,
+    capture-point geometry, class-based spacing, and readable red-vs-blue battlefield color;
+    industrial red, worksite blue, dusty tan, black shadows, white UI blocks, and orange explosion
+    pops; baked midday light, muzzle flashes, rocket trails, objective glow, and soft cartoon
+    shadows; painterly industrial props, wood planks, metal bridges, team-color panels, simple
+    weapons, and exaggerated character shapes without copying cast; first-person or spectator
+    capture with objective point, team lanes, projectile arcs, and compact team HUD; competitive,
+    comic, industrial, tactical, and readable; HUD guidance: class shooter HUD is allowed: health,
+    ammo, capture meter, kill feed shape, and team indicators should be era-coherent
   creative_brief: >-
-    Apply Rift Bridge Capture Point as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Class Clash Bridge Control as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through class-based team shooter references: first-person camera,
+    team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure.
+    Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and
+    readable UI text.
 avoidRules:
   - watermark
-  - text
   - logo
-  - clutter
-  - blur
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - chaotic poster overcrowding
-  - unreadable battle smoke
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct Team Fortress clone
+  - strategy tactics camera
+  - readable objective text
+  - exact class silhouettes
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-052.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, clutter, blur, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, chaotic poster
-    overcrowding, unreadable battle smoke, fixed scene, generic game screenshot, readable UI,
-    official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition, direct Team Fortress clone, strategy tactics camera,
+    readable objective text, exact class silhouettes
+  referenceGame: Original class-based team shooter, Team Fortress-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    class shooter HUD is allowed: health, ammo, capture meter, kill feed shape, and team indicators
+    should be era-coherent
+  renderFamily: first-person-stylized
+  cameraFamily: first-person
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -97,6 +129,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - sieges-warfronts-and-last-stands
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-class-based-team-shooter
+    - render-first-person-stylized
+    - camera-first-person
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

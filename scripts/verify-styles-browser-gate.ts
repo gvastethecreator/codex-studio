@@ -175,6 +175,9 @@ export async function verifyStylesBrowserGate({
 
   try {
     const page = await browser.newPage({ viewport: DEFAULT_VIEWPORT });
+    await page.addInitScript(() => {
+      window.localStorage.setItem('studio-onboarding-complete', 'true');
+    });
 
     page.on('console', (message) => {
       const entry = {
@@ -261,12 +264,17 @@ export async function verifyStylesBrowserGate({
     const expanded = { ...collapsed };
 
     await clickViaDom(page, '[data-style-sort-dropdown] button', timeoutMs);
-    await page.waitForSelector('[data-style-sort-dropdown] [role="listbox"]', {
-      timeout: timeoutMs,
-    });
+    await page.waitForSelector(
+      '[data-gsap-dropdown][role="listbox"][aria-label="Sort style cards"]',
+      {
+        timeout: timeoutMs,
+      },
+    );
     const sortDropdown = await page.evaluate(() => {
       const root = document.querySelector('[data-style-sort-dropdown]');
-      const listbox = root?.querySelector('[role="listbox"]');
+      const listbox = document.querySelector(
+        '[data-gsap-dropdown][role="listbox"][aria-label="Sort style cards"]',
+      );
 
       return {
         optionCount: listbox?.querySelectorAll('[role="option"]').length ?? 0,

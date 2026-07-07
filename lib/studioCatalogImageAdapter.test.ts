@@ -17,6 +17,8 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
     thumbnailPath: overrides.thumbnailPath ?? null,
     publicUrl: overrides.publicUrl ?? `/library/outputs/${id}.png`,
     thumbnailUrl: overrides.thumbnailUrl ?? null,
+    sourceExists: overrides.sourceExists,
+    thumbnailExists: overrides.thumbnailExists,
     prompt: overrides.prompt ?? 'Generate an image',
     negativePrompt: overrides.negativePrompt ?? null,
     aspectRatio: overrides.aspectRatio ?? '2:3',
@@ -75,6 +77,22 @@ describe('studioCatalogImageAdapter', () => {
       'http://127.0.0.1:17223/library/outputs/large-original.png?variant=thumb&max=1024',
     );
     expect(resolveCatalogEntryPreviewUrl(entry)).toBe(image.preview);
+  });
+
+  it('uses the stored thumbnail as the visual asset when the original source is missing', () => {
+    const entry = catalogImage({
+      publicUrl: '/library/outputs/missing-original.png',
+      thumbnailUrl: '/library/outputs/thumbnails/missing-original.webp',
+      sourceExists: false,
+      thumbnailExists: true,
+    });
+    const image = materializeCatalogEntryImage(entry);
+
+    expect(image.src).toBe(
+      'http://127.0.0.1:17223/library/outputs/thumbnails/missing-original.webp',
+    );
+    expect(image.preview).toBe(image.thumbnail);
+    expect(resolveCatalogEntryPreviewUrl(entry)).toBe(image.thumbnail);
   });
 
   it('falls back to a stable compatibility batch id when the catalog entry has no batch id', () => {

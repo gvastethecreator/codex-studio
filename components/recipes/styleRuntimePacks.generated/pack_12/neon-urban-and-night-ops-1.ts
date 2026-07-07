@@ -5,302 +5,315 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-001',
-    name: 'Neon Samurai District',
-    displayName: 'Neon Blade Urban Ops',
-    styleAnchors: ['Neon Samurai District'],
+    name: 'Katana Zero Neo-Noir Sideview',
+    displayName: 'Katana Zero Neo-Noir Sideview',
+    styleAnchors: ['Katana ZERO gameplay screenshots', 'Katana Zero Neo-Noir Sideview'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, lowres, blurry, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through disciplined duel silhouette; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Katana ZERO gameplay screenshots: 2D neo-noir action-platformer capture with side-view rooms, instant-death combat spacing, motel interiors, glass partitions, and cinematic pixel staging. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Katana ZERO-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with electric magenta, cyan, acid green, and glossy black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Katana ZERO-informed palette: black hotel shadow, red blood accents, sodium amber, teal window light, magenta signage, and small white bullet highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with neon edge glow and wet reflections; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through hard interior cuts, neon spill through windows, slash trails, muzzle flashes, and time-slow contrast pulses. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from lacquer armor, rain cloth, and blade shine; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from chunky pixel silhouettes, glossy tile, wood paneling, rain glass, smoke puffs, shattered props, and clean sprite edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with strict side-on room composition with readable platform lanes, enemy spacing, door exits, throwable props, and action freeze timing. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Katana ZERO-derived mood: stylish, brutal, nocturnal, tense, and choreographed like a one-screen execution puzzle. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal HUD; use tiny combat prompts or replay/timer cues only when they help the screenshot feel playable. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Neon, Samurai, District; disciplined duel silhouette; electric magenta, cyan, acid green, and glossy black; neon edge glow and wet reflections; lacquer armor, rain cloth, and blade shine; stacked rooftops, underpasses, side routes, cover layers, vanishing street lines, and mission-node depth; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+        'Katana ZERO gameplay screenshots; 2D neo-noir action-platformer capture with side-view rooms, instant-death combat spacing, motel interiors, glass partitions, and cinematic pixel staging; black hotel shadow, red blood accents, sodium amber, teal window light, magenta signage, and small white bullet highlights; hard interior cuts, neon spill through windows, slash trails, muzzle flashes, and time-slow contrast pulses; chunky pixel silhouettes, glossy tile, wood paneling, rain glass, smoke puffs, shattered props, and clean sprite edges; strict side-on room composition with readable platform lanes, enemy spacing, door exits, throwable props, and action freeze timing; stylish, brutal, nocturnal, tense, and choreographed like a one-screen execution puzzle; HUD guidance: minimal HUD; use tiny combat prompts or replay/timer cues only when they help the screenshot feel playable',
       creative_brief:
-        "Apply Neon Samurai District as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Katana Zero Neo-Noir Sideview as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Katana ZERO: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-014',
-    name: 'Urban Parkour Rooftop Wars',
-    displayName: 'Rooftop Parkour Combat',
-    styleAnchors: ['Urban Parkour Rooftop Wars'],
+    name: 'Mirrors Edge Rooftop Parkour',
+    displayName: 'Mirrors Edge Rooftop Parkour',
+    styleAnchors: ["Mirror's Edge Catalyst gameplay screenshots", 'Mirrors Edge Rooftop Parkour'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, fog-heavy, muddy-contrast, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through movement route readability; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        "Capture-derived video-game style router based on Mirror's Edge Catalyst gameplay screenshots: first-person parkour capture with white rooftop geometry, red route language, clean corporate city planes, and motion-forward traversal. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.",
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Mirror's Edge Catalyst-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        "Use a Mirror's Edge Catalyst-informed palette: white concrete, sky cyan, route red, glass blue, matte black, and occasional yellow safety accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.",
       lighting_and_shadow:
-        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through bright daylight, hard rooftop shadows, reflective glass, and clean exposure with minimal grime. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from smooth concrete, painted pipes, vents, glass railings, red doors, gloves, and polished urban surfaces. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person sprint framing with hands, jump arcs, wall-run lines, ledge targets, and direct route readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood height-risk chase energy; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        "Carry a Mirror's Edge Catalyst-derived mood: kinetic, sterile, rebellious, precise, and breathless. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.",
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal runner vision, tiny objective marker, or reticle is allowed; avoid heavy shooter UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Urban, Parkour, Rooftop, Wars; movement route readability; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; jumpable edges, rail gaps, and roofline rhythm; height-risk chase energy',
+        "Mirror's Edge Catalyst gameplay screenshots; first-person parkour capture with white rooftop geometry, red route language, clean corporate city planes, and motion-forward traversal; white concrete, sky cyan, route red, glass blue, matte black, and occasional yellow safety accents; bright daylight, hard rooftop shadows, reflective glass, and clean exposure with minimal grime; smooth concrete, painted pipes, vents, glass railings, red doors, gloves, and polished urban surfaces; first-person sprint framing with hands, jump arcs, wall-run lines, ledge targets, and direct route readability; kinetic, sterile, rebellious, precise, and breathless; HUD guidance: minimal runner vision, tiny objective marker, or reticle is allowed; avoid heavy shooter UI",
       creative_brief:
-        "Apply Urban Parkour Rooftop Wars as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        "Use Mirrors Edge Rooftop Parkour as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Mirror's Edge Catalyst: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.",
     },
   },
   {
     id: 'SP12-025',
-    name: 'Neon Underpass Brawler',
+    name: 'Streets of Rage Neon Brawler',
+    displayName: 'Streets of Rage Neon Brawler',
+    styleAnchors: ['Streets of Rage 4 gameplay screenshots', 'Streets of Rage Neon Brawler'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, pastel, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through street-fight readability; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Streets of Rage 4 gameplay screenshots: hand-drawn side-scrolling beat-em-up capture with neon streets, crowd-control spacing, big hit sparks, and arcade brawler lanes. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Streets of Rage 4-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with electric magenta, cyan, acid green, and glossy black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Streets of Rage 4-informed palette: purple night, cyan signage, hot pink neon, yellow streetlight, denim blue, and saturated skin-tone highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with neon edge glow and wet reflections; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through flat cel lighting, neon rim, arcade hit flashes, wet pavement bounce, and bold shadow shapes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from clean comic outlines, painted urban props, brick walls, trash cans, leather jackets, and exaggerated impact effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-view brawler perspective with horizontal movement lanes, enemy clusters, pickup spacing, and readable co-op staging. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Streets of Rage 4-derived mood: streetwise, loud, physical, adult-arcade, and punchy. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: health bars, combo counters, score, lives, and player indicators are appropriate if styled like a modern beat-em-up. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Neon, Underpass, Brawler; street-fight readability; electric magenta, cyan, acid green, and glossy black; neon edge glow and wet reflections; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; close combat spacing and hard impact lanes; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+        'Streets of Rage 4 gameplay screenshots; hand-drawn side-scrolling beat-em-up capture with neon streets, crowd-control spacing, big hit sparks, and arcade brawler lanes; purple night, cyan signage, hot pink neon, yellow streetlight, denim blue, and saturated skin-tone highlights; flat cel lighting, neon rim, arcade hit flashes, wet pavement bounce, and bold shadow shapes; clean comic outlines, painted urban props, brick walls, trash cans, leather jackets, and exaggerated impact effects; side-view brawler perspective with horizontal movement lanes, enemy clusters, pickup spacing, and readable co-op staging; streetwise, loud, physical, adult-arcade, and punchy; HUD guidance: health bars, combo counters, score, lives, and player indicators are appropriate if styled like a modern beat-em-up',
       creative_brief:
-        "Apply Neon Underpass Brawler as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Streets of Rage Neon Brawler as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Streets of Rage 4: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-032',
-    name: 'Harbor Smuggler Night Heist',
-    displayName: 'Smuggler Harbor Heist',
-    styleAnchors: ['Harbor Smuggler Night Heist'],
+    name: 'Shadow Gambit Harbor Heist',
+    displayName: 'Shadow Gambit Harbor Heist',
+    styleAnchors: [
+      'Shadow Gambit: The Cursed Crew gameplay screenshots',
+      'Shadow Gambit Harbor Heist',
+    ],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, daylight, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through hidden cargo route; stealth route timing; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Shadow Gambit: The Cursed Crew gameplay screenshots: isometric stealth-tactics capture with pirate harbors, patrol cones, crew ability timing, and layered infiltration routes. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Shadow Gambit: The Cursed Crew-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with wet harbor blues, sodium orange, and fog black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Shadow Gambit: The Cursed Crew-informed palette: moonlit teal, lantern gold, undead green, red patrol accents, worn wood brown, and tropical night blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with low-key night lighting with practical pools; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through lantern pools, moon shafts, ghost ability glow, stealth shadow pockets, and wet dock reflections. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from docks, hulls, ropes, and rain-slick stone; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from wooden docks, ropes, barrels, pirate coats, colonial stone, mist, foliage, and stylized tactical geometry. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with elevated isometric stealth view with patrol paths, cover pockets, synchronized action space, and objective markers. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood late-hour danger; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Shadow Gambit: The Cursed Crew-derived mood: sly, supernatural, nautical, tactical, and mischievous. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: patrol cones, ability icons, waypoint ghosts, and tactical pause cues are allowed if coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Harbor, Smuggler, Night, Heist; hidden cargo route; wet harbor blues, sodium orange, and fog black; low-key night lighting with practical pools; docks, hulls, ropes, and rain-slick stone; dockside cover and contraband focal points; late-hour danger',
+        'Shadow Gambit: The Cursed Crew gameplay screenshots; isometric stealth-tactics capture with pirate harbors, patrol cones, crew ability timing, and layered infiltration routes; moonlit teal, lantern gold, undead green, red patrol accents, worn wood brown, and tropical night blue; lantern pools, moon shafts, ghost ability glow, stealth shadow pockets, and wet dock reflections; wooden docks, ropes, barrels, pirate coats, colonial stone, mist, foliage, and stylized tactical geometry; elevated isometric stealth view with patrol paths, cover pockets, synchronized action space, and objective markers; sly, supernatural, nautical, tactical, and mischievous; HUD guidance: patrol cones, ability icons, waypoint ghosts, and tactical pause cues are allowed if coherent',
       creative_brief:
-        "Apply Harbor Smuggler Night Heist as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Shadow Gambit Harbor Heist as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Shadow Gambit: The Cursed Crew: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-043',
-    name: 'Harbor Kaiju Evacuation',
+    name: 'EDF Harbor Kaiju Evacuation',
+    displayName: 'EDF Harbor Kaiju Evacuation',
+    styleAnchors: ['Earth Defense Force 5 gameplay screenshots', 'EDF Harbor Kaiju Evacuation'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, cute-style, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through disaster-scale readability; escape-route urgency; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Earth Defense Force 5 gameplay screenshots: third-person arcade shooter capture with giant insects/kaiju scale, city harbor destruction, squad chaos, and unapologetic HUD readability. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Earth Defense Force 5-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with wet harbor blues, sodium orange, and fog black; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Earth Defense Force 5-informed palette: concrete grey, ocean blue, explosion orange, armor red/blue, monster green, and bright targeting UI. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through daylight city exposure, rocket explosions, laser beams, smoke plumes, and monster-hit flashes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from docks, hulls, ropes, and rain-slick stone; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from low-to-mid budget city assets, oversized creatures, military armor, rubble, water, and many projectile effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person battlefield camera with player small against huge enemies, evacuation routes, squad markers, and urban scale chaos. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Earth Defense Force 5-derived mood: campy, massive, panicked, arcade-military, and destructive. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: busy arcade HUD is coherent: health, weapon ammo, radar, ally markers, and target reticles can be visible. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Harbor, Kaiju, Evacuation; disaster-scale readability; wet harbor blues, sodium orange, and fog black; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; docks, hulls, ropes, and rain-slick stone; giant silhouette behind evacuation routes; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+        'Earth Defense Force 5 gameplay screenshots; third-person arcade shooter capture with giant insects/kaiju scale, city harbor destruction, squad chaos, and unapologetic HUD readability; concrete grey, ocean blue, explosion orange, armor red/blue, monster green, and bright targeting UI; daylight city exposure, rocket explosions, laser beams, smoke plumes, and monster-hit flashes; low-to-mid budget city assets, oversized creatures, military armor, rubble, water, and many projectile effects; third-person battlefield camera with player small against huge enemies, evacuation routes, squad markers, and urban scale chaos; campy, massive, panicked, arcade-military, and destructive; HUD guidance: busy arcade HUD is coherent: health, weapon ammo, radar, ally markers, and target reticles can be visible',
       creative_brief:
-        "Apply Harbor Kaiju Evacuation as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use EDF Harbor Kaiju Evacuation as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Earth Defense Force 5: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-048',
-    name: 'Crystal Metro Hoverline',
+    name: 'Cloudpunk Crystal Metro Hoverline',
+    displayName: 'Cloudpunk Crystal Metro Hoverline',
+    styleAnchors: ['Cloudpunk gameplay screenshots', 'Cloudpunk Crystal Metro Hoverline'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Cloudpunk gameplay screenshots: voxel cyberpunk delivery capture with hovercars, stacked city canyons, rain, apartment lights, and readable route beacons. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Cloudpunk-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with prismatic blue-white with sharp color splits; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Cloudpunk-informed palette: deep blue night, orange windows, cyan signage, magenta haze, black rain, and voxel-lit road strips. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with crystal refraction and caustic shards; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through neon bloom, headlight cones, window grids, rainy reflections, and distant smog glow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from train glass, platform tile, rails, and station glow; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from voxel buildings, hovercar panels, wet platforms, delivery crates, glass towers, and pixel-like city clutter. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person hover vehicle or pedestrian view with vertical city layers, route marker, landing pads, and delivery-path clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Cloudpunk-derived mood: melancholy, urban, rainy, work-shift cyberpunk, and vertical. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: delivery objective, minimap, vehicle status, and route markers can appear when consistent with courier gameplay. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Crystal, Metro, Hoverline; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure; prismatic blue-white with sharp color splits; crystal refraction and caustic shards; train glass, platform tile, rails, and station glow; linear transit perspective; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+        'Cloudpunk gameplay screenshots; voxel cyberpunk delivery capture with hovercars, stacked city canyons, rain, apartment lights, and readable route beacons; deep blue night, orange windows, cyan signage, magenta haze, black rain, and voxel-lit road strips; neon bloom, headlight cones, window grids, rainy reflections, and distant smog glow; voxel buildings, hovercar panels, wet platforms, delivery crates, glass towers, and pixel-like city clutter; third-person hover vehicle or pedestrian view with vertical city layers, route marker, landing pads, and delivery-path clarity; melancholy, urban, rainy, work-shift cyberpunk, and vertical; HUD guidance: delivery objective, minimap, vehicle status, and route markers can appear when consistent with courier gameplay',
       creative_brief:
-        "Apply Crystal Metro Hoverline as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Cloudpunk Crystal Metro Hoverline as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Cloudpunk: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-056',
-    name: 'Carbon Megacity Rooftop Chase',
-    displayName: 'Carbon Megacity Parkour',
-    styleAnchors: ['Carbon Megacity Rooftop Chase'],
+    name: 'Ghostrunner Carbon Megacity',
+    displayName: 'Ghostrunner Carbon Megacity',
+    styleAnchors: ['Ghostrunner gameplay screenshots', 'Ghostrunner Carbon Megacity'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through high-speed pursuit rhythm; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Ghostrunner gameplay screenshots: first-person cyber-ninja parkour capture with wall-runs, one-hit combat, vertical megacity routes, and blade-forward speed. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Ghostrunner-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Ghostrunner-informed palette: black carbon, cyan neon, red enemy marks, toxic green signage, steel grey, and white blade flashes. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through neon strips, hologram glow, blade trails, muzzle flashes, and deep industrial shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from carbon fiber, black glass, and rooftop composite panels; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from slick carbon panels, rain metal, cables, concrete towers, katana steel, cybernetic enemies, and hard-edged decals without readable text. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person sprint/slash framing with hands/blade, route markers, enemy silhouettes, gap jumps, and high-rise depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood sleek high-altitude danger; vertical urban velocity; height-risk chase energy; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Ghostrunner-derived mood: brutal, precise, vertical, cybernetic, and breathless. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: minimal reticle, ability cooldowns, target markers, and route highlights can appear as coherent action HUD. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Carbon, Megacity, Rooftop, Chase; high-speed pursuit rhythm; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; carbon fiber, black glass, and rooftop composite panels; stacked high-rise depth and rooftop escape lanes; sleek high-altitude danger',
+        'Ghostrunner gameplay screenshots; first-person cyber-ninja parkour capture with wall-runs, one-hit combat, vertical megacity routes, and blade-forward speed; black carbon, cyan neon, red enemy marks, toxic green signage, steel grey, and white blade flashes; neon strips, hologram glow, blade trails, muzzle flashes, and deep industrial shadows; slick carbon panels, rain metal, cables, concrete towers, katana steel, cybernetic enemies, and hard-edged decals without readable text; first-person sprint/slash framing with hands/blade, route markers, enemy silhouettes, gap jumps, and high-rise depth; brutal, precise, vertical, cybernetic, and breathless; HUD guidance: minimal reticle, ability cooldowns, target markers, and route highlights can appear as coherent action HUD',
       creative_brief:
-        "Apply Carbon Megacity Rooftop Chase as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Ghostrunner Carbon Megacity as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Ghostrunner: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-062',
-    name: 'Neon Koi River District',
-    displayName: 'Neon Koi Riverworld',
-    styleAnchors: ['Neon Koi River District'],
+    name: 'Yakuza Neon Koi District',
+    displayName: 'Yakuza Neon Koi District',
+    styleAnchors: ['Yakuza 0 gameplay screenshots', 'Yakuza Neon Koi District'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Yakuza 0 gameplay screenshots: third-person urban brawler/adventure capture with dense Japanese nightlife, street fights, karaoke warmth, and readable pedestrian scale. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Yakuza 0-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with electric magenta, cyan, acid green, and glossy black; neon koi orange, black water, and cyan signage; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Yakuza 0-informed palette: neon pink, koi red, warm storefront yellow, black suit fabric, wet asphalt, and electric blue signage shapes. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with neon edge glow and wet reflections; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through street neon, club lights, vending-machine glow, fight impact flashes, and rain reflections. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from rainy river reflections; black water and luminous fish color; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from urban pavement, suits, leather shoes, shopfronts without readable logos, bicycles, bottles, and crowded nightlife props. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with third-person street camera with brawler spacing, alley depth, NPC crowd edges, and nightlife landmark density. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Yakuza 0-derived mood: melodramatic, adult, funny, dangerous, and neon-social. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: health/heat bars, minimap, money/combo cues, and small objective markers can appear as coherent urban action UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Neon, Koi, River, District; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure; electric magenta, cyan, acid green, and glossy black; neon edge glow and wet reflections; rainy river reflections; waterline routes and reflection corridors; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial',
+        'Yakuza 0 gameplay screenshots; third-person urban brawler/adventure capture with dense Japanese nightlife, street fights, karaoke warmth, and readable pedestrian scale; neon pink, koi red, warm storefront yellow, black suit fabric, wet asphalt, and electric blue signage shapes; street neon, club lights, vending-machine glow, fight impact flashes, and rain reflections; urban pavement, suits, leather shoes, shopfronts without readable logos, bicycles, bottles, and crowded nightlife props; third-person street camera with brawler spacing, alley depth, NPC crowd edges, and nightlife landmark density; melodramatic, adult, funny, dangerous, and neon-social; HUD guidance: health/heat bars, minimap, money/combo cues, and small objective markers can appear as coherent urban action UI',
       creative_brief:
-        "Apply Neon Koi River District as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Yakuza Neon Koi District as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Yakuza 0: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-071',
-    name: 'Verdant Metro Rebellion',
+    name: 'Half-Life 2 Verdant Rebellion',
+    displayName: 'Half-Life 2 Verdant Rebellion',
+    styleAnchors: ['Half-Life 2 gameplay screenshots', 'Half-Life 2 Verdant Rebellion'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, medieval, lowres, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Half-Life 2 gameplay screenshots: first-person resistance shooter capture with City 17 infrastructure, canals, Combine geometry, physics props, and grounded route combat. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Half-Life 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with wet green over stone and rebellion red accents; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Half-Life 2-informed palette: concrete grey, hazard orange, resistance blue, industrial green, rust brown, and alien black metal. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through overcast daylight, hard industrial shadows, muzzle flashes, scanner glow, and sodium streetlamp pools. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from plants overrunning civic infrastructure; train glass, platform tile, rails, and station glow; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from concrete canals, cracked plaster, metal fences, wooden crates, physics debris, alien machinery, and utilitarian weapons. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with first-person shooter framing with weapon foreground, cover lanes, physics objects, enemy silhouettes, and navigable urban depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood green urban uprising; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Half-Life 2-derived mood: oppressed, practical, rebellious, decayed, and grounded. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: classic health/suit/ammo HUD and crosshair can appear, but avoid modern UI clutter. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Verdant, Metro, Rebellion; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure; wet green over stone and rebellion red accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; plants overrunning civic infrastructure; linear transit perspective; green urban uprising',
+        'Half-Life 2 gameplay screenshots; first-person resistance shooter capture with City 17 infrastructure, canals, Combine geometry, physics props, and grounded route combat; concrete grey, hazard orange, resistance blue, industrial green, rust brown, and alien black metal; overcast daylight, hard industrial shadows, muzzle flashes, scanner glow, and sodium streetlamp pools; concrete canals, cracked plaster, metal fences, wooden crates, physics debris, alien machinery, and utilitarian weapons; first-person shooter framing with weapon foreground, cover lanes, physics objects, enemy silhouettes, and navigable urban depth; oppressed, practical, rebellious, decayed, and grounded; HUD guidance: classic health/suit/ammo HUD and crosshair can appear, but avoid modern UI clutter',
       creative_brief:
-        "Apply Verdant Metro Rebellion as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Half-Life 2 Verdant Rebellion as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Half-Life 2: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
   {
     id: 'SP12-078',
-    name: 'Midnight Lotus Ninja Heist',
+    name: 'Mark of the Ninja Lotus Heist',
+    displayName: 'Mark of the Ninja Lotus Heist',
+    styleAnchors: ['Mark of the Ninja gameplay screenshots', 'Mark of the Ninja Lotus Heist'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, text, logo, heavy-guns, low-detail, concept-art, key-art, poster, character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic cyberpunk alley, readable signage text, fixed scene, generic game screenshot, readable UI, official card framing',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition',
     style: {
       aesthetic:
-        'A transferable game-art direction built from tokenized palette, material, encounter, and mood cues: route prompt X through silent traversal and sudden strike; stealth route timing; urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure, using the preset as art direction rather than a required scene, mission, character, or card image.',
+        'Capture-derived video-game style router based on Mark of the Ninja gameplay screenshots: 2D stealth side-view capture with black silhouettes, guard vision cones, inked interiors, and readable shadow mechanics. Apply this after prompt X; prompt X supplies the subject, action, setting, and intensity while this preset supplies capture language, camera grammar, material behavior, playable readability, and finish. Do not recreate an exact official level, character, logo, or marketing key art.',
       subject_treatment:
-        "Preserve the user's subject while translating silhouette, role, scale, equipment, route pressure, and encounter readability with this grammar: express covert movement, chase pressure, street-level conflict, evacuation tension, and rooftop-route clarity without requiring one urban scene.",
+        "Preserve the user's subject and transform it into a playable Mark of the Ninja-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
       color_and_tone:
-        'Grade the image with midnight blue with pink lotus neon; black glass, wet concrete, saturated signage, emergency red, cyan edge light, and toxic green accents; keep tonal hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.',
+        'Use a Mark of the Ninja-informed palette: deep black, muted teal, blood red, paper beige, cool blue shadow, and small gold lamp accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
       lighting_and_shadow:
-        'Drive the lighting with low blue night with sharp neon accents; practical neon, police strobes, backlit rain, window grids, traffic glow, and hard rim highlights; use highlights and shadow pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.',
+        'Light the image through hard stealth shadow, lantern cones, silhouette cutouts, alarm red, and graphic fog. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
       texture_and_material:
-        'Build surfaces from rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; make props, clothing, creatures, vehicles, architecture, and terrain share the same production-world logic.',
+        'Build surfaces from inked walls, tatami, paper screens, rooftops, cloth folds, traps, and crisp vector-like character silhouettes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
       camera_and_composition:
-        'Use reusable game-composition grammar from urban night-action readability, vertical route layering, wet asphalt glow, and covert pressure: lane rhythm, scale contrast, objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt to portraits, objects, creatures, environments, and action scenes.',
+        "Compose with side-view stealth composition with visibility zones, noise rings, patrol routes, vents, and multi-level infiltration paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
       atmosphere_and_mood:
-        'Keep the mood quiet late-night infiltration; elegant covert ritual; dangerous, nocturnal, stylish, humid, kinetic, and conspiratorial; the result can be adult, harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a new storyline.',
+        'Carry a Mark of the Ninja-derived mood: silent, lethal, elegant, graphic, and tactical. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.',
       rendering_and_quality:
-        'Finish as game-cinematic clarity with readable silhouettes, deep contrast, controlled bloom, and no menu or HUD dependence; preserve clean focal hierarchy, believable material response, heavy-denoise clarity, and no readable UI, text, logos, or stock key-art gloss.',
+        'Finish as a coherent in-engine screenshot style, not concept art: vision cones, noise indicators, ability icons, objective markers, and alert states are coherent stealth UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
       key_features:
-        'Midnight, Lotus, Ninja, Heist; silent traversal and sudden strike; midnight blue with pink lotus neon; low blue night with sharp neon accents; rain-slick pavement, carbon panels, patched jackets, utility metal, glowing signage substrate, and urban grime; shadow gaps and rooftop paths; quiet late-night infiltration',
+        'Mark of the Ninja gameplay screenshots; 2D stealth side-view capture with black silhouettes, guard vision cones, inked interiors, and readable shadow mechanics; deep black, muted teal, blood red, paper beige, cool blue shadow, and small gold lamp accents; hard stealth shadow, lantern cones, silhouette cutouts, alarm red, and graphic fog; inked walls, tatami, paper screens, rooftops, cloth folds, traps, and crisp vector-like character silhouettes; side-view stealth composition with visibility zones, noise rings, patrol routes, vents, and multi-level infiltration paths; silent, lethal, elegant, graphic, and tactical; HUD guidance: vision cones, noise indicators, ability icons, objective markers, and alert states are coherent stealth UI',
       creative_brief:
-        "Apply Midnight Lotus Ninja Heist as a reusable video-game art-direction router over prompt X: preserve the user's subject and intent, then translate palette, lighting, material logic, route readability, encounter mood, and production finish through this preset.",
+        'Use Mark of the Ninja Lotus Heist as a transferable game-originals preset. Preserve prompt X, then route interpretation through capture references from Mark of the Ninja: camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art.',
     },
   },
 ] as unknown as StyleRuntimePreset[];

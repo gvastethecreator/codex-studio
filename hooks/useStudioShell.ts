@@ -131,7 +131,7 @@ export function useStudioShell(): StudioShellController {
     logs,
     log,
     addToast,
-    shouldAutoOpen: workspaceCatalog.entries.length === 0,
+    shouldAutoOpen: workspaceCatalog.entries.length === 0 && route.view === 'studio',
     onCatalogChanged: refreshCatalogs,
   });
   const studioSettings = useStudioSettings({ addToast });
@@ -556,7 +556,7 @@ export function useStudioShell(): StudioShellController {
           catalogHasMore: activeCatalog.hasMore,
           isCatalogLoading: activeCatalog.isLoading,
           catalogError: activeCatalog.error?.message ?? null,
-          loadMoreCatalog: () => void activeCatalog.loadMore(),
+          loadMoreCatalog: () => activeCatalog.loadMore(),
           refreshCatalog: () => void activeCatalog.refresh(),
         },
         operations: {
@@ -700,6 +700,7 @@ export function useStudioShell(): StudioShellController {
         view: {
           isGenerating: pipeline.isGenerating,
           generationStartTime: pipeline.generationStartTime,
+          routeView: route.view,
           currentView,
           onViewChange: handleViewChange,
           activeRecipe: recipe.activeRecipe,

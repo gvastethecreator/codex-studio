@@ -445,10 +445,10 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
         onMouseEnter={handleToolbarMouseEnter}
         onMouseMove={handleToolbarMouseEnter}
         onMouseLeave={handleToolbarMouseLeave}
-        className="w-full flex flex-col justify-end z-50 transition-colors duration-700 ease-in-out relative"
+        className="w-full flex flex-col justify-end z-50 transition-colors duration-200 ease-out relative"
       >
         {/* Fixed height background that doesn't expand with the textarea */}
-        <div className="absolute inset-x-0 bottom-0 h-[94px] pointer-events-none bg-black/80 backdrop-blur-sm transition-colors duration-700 ease-in-out sm:h-[50px]" />
+        <div className="absolute inset-x-0 bottom-0 h-[106px] pointer-events-none bg-black/80 transition-colors duration-200 ease-out sm:h-[56px]" />
 
         <div className="relative z-10 flex w-full flex-col items-stretch gap-1 px-2 py-1.5 sm:flex-row sm:items-end sm:gap-1.5">
           <input
@@ -489,7 +489,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       key={att.id}
                       className="size-8 group relative rounded-xl overflow-hidden bg-zinc-800 shrink-0"
                     >
-                      <img src={att.dataUrl} className="size-full object-cover" alt="" />
+                      <img
+                        src={att.dataUrl}
+                        width={32}
+                        height={32}
+                        className="size-full object-cover"
+                        alt=""
+                      />
                       <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center">
                         <button
                           type="button"
@@ -518,13 +524,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     className={`h-5 w-1 shrink-0 rounded-[2px] shadow-[0_0_12px_currentColor] ${activeRecipeIndicator.dotClassName}`}
                   />
                   <span className="min-w-0">
-                    <span className="block text-[6px] font-black uppercase leading-none tracking-[0.18em] opacity-60">
+                    <span className="block text-[10px] font-black uppercase leading-none tracking-[0.12em] opacity-60">
                       Recipe
                     </span>
-                    <span className="block truncate text-[9px] font-black uppercase leading-tight tracking-[0.08em] text-white sm:text-[10px]">
+                    <span className="block truncate text-[11px] font-black uppercase leading-tight tracking-[0.06em] text-white">
                       {activeRecipeIndicator.title}
                     </span>
-                    <span className="block truncate text-[8px] font-medium leading-none opacity-70">
+                    <span className="block truncate text-[10px] font-medium leading-none opacity-70">
                       {activeRecipeIndicator.summary}
                     </span>
                   </span>
@@ -628,7 +634,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   >
                     <label
                       htmlFor="negative-prompt-input"
-                      className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2"
+                      className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
                     >
                       Exclude from Image
                     </label>
@@ -641,7 +647,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       autoComplete="off"
                       ref={(el) => el?.focus()}
                       aria-label="Negative prompt"
-                      className="h-10 w-full rounded-xl border border-white/5 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
+                      className="h-10 w-full rounded-xl border border-white/5 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
                     />
                   </GsapDropdown>
                 </div>
@@ -675,7 +681,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   >
                     <label
                       htmlFor="magic-edit-input"
-                      className="text-[9px] font-black text-zinc-500 uppercase tracking-widest block mb-2"
+                      className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
                     >
                       Instructions to Edit
                     </label>
@@ -690,7 +696,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         ref={(el) => el?.focus()}
                         onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
                         aria-label="Edit instructions"
-                        className="h-10 flex-1 rounded-xl border border-white/5 bg-black/40 px-3 text-[11px] text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/30"
+                        className="h-10 flex-1 rounded-xl border border-white/5 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/30"
                       />
                       <button
                         type="button"
@@ -746,7 +752,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
           </div>
 
           {/* CONTROLS ROW */}
-          <div className="pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1 sm:w-auto sm:justify-start sm:pb-1">
+          <div className="pointer-events-auto flex w-full min-w-0 items-end justify-between gap-1 rounded-lg border border-white/5 bg-zinc-900/50 p-1 shadow-lg transition-colors duration-300 sm:w-auto sm:justify-start">
             <button
               type="button"
               onClick={() => {
@@ -764,7 +770,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             </button>
 
             <div
-              className={`${isMobileControlsOpen ? 'fixed' : 'hidden'} custom-scrollbar inset-x-2 z-[90] flex-col gap-3 overflow-y-auto rounded-2xl border border-white/10 bg-zinc-950/95 p-3 shadow-2xl backdrop-blur-xl sm:static sm:flex sm:max-h-none sm:flex-row sm:items-end sm:gap-1 sm:overflow-visible sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none sm:backdrop-blur-0`}
+              className={`${isMobileControlsOpen ? 'fixed' : 'hidden'} custom-scrollbar inset-x-2 z-[90] flex-col gap-3 overflow-y-auto rounded-2xl border border-white/10 bg-zinc-950/95 p-3 shadow-2xl sm:static sm:flex sm:max-h-none sm:flex-row sm:items-end sm:gap-1 sm:overflow-visible sm:rounded-none sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none`}
               style={
                 isMobileControlsOpen
                   ? {
@@ -775,7 +781,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
               }
             >
               <div className="flex items-center justify-between border-b border-white/5 pb-2 sm:hidden">
-                <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500">
+                <div className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
                   Generation
                 </div>
                 <button
@@ -1075,7 +1081,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             {m.name}
                           </div>
                         </div>
-                        <div className="text-[8px] text-zinc-500 font-bold pl-6">
+                        <div className="pl-6 text-[10px] font-bold text-zinc-500">
                           {m.description}
                         </div>
                       </button>
@@ -1110,17 +1116,17 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     placement="top-right"
                     role="dialog"
                     aria-label="Codex task execution"
-                    className="studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 min-w-[360px] max-w-[420px] p-3"
+                    className="studio-mobile-popover absolute bottom-full right-0 z-[110] mb-4 w-[min(90vw,420px)] p-3"
                   >
                     <div className="flex items-start justify-between gap-4 mb-3">
                       <div>
-                        <div className="text-[9px] font-black uppercase tracking-[0.22em] text-zinc-500 mb-1">
+                        <div className="mb-1 text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
                           Codex Task Execution
                         </div>
-                        <div className="text-[11px] font-black text-zinc-100 uppercase tracking-wide">
+                        <div className="text-xs font-black uppercase tracking-wide text-zinc-100">
                           {selectedExecutionModel?.displayName || executionModelLabel}
                         </div>
-                        <div className="text-[8px] text-zinc-500 font-bold mt-1 max-w-[280px] leading-relaxed">
+                        <div className="mt-1 max-w-[280px] text-[10px] font-bold leading-relaxed text-zinc-500">
                           {selectedExecutionModel?.description ||
                             'Choose the Codex model that executes the generation task, plus its thinking effort and speed tier.'}
                         </div>
@@ -1129,7 +1135,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         {isLoadingCodexModelCatalog && (
                           <Loader2 size={12} className="animate-spin text-accent-300" />
                         )}
-                        <div className="text-[8px] font-black uppercase tracking-[0.18em] text-zinc-500">
+                        <div className="text-[10px] font-black uppercase tracking-[0.12em] text-zinc-500">
                           {codexModelCatalog?.source === 'fallback' ? 'Docs fallback' : 'Live'}
                         </div>
                       </div>

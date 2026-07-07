@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP12-074
 packId: pack_12
-name: Prism Alley Card Duel
+name: Candlebone Deck Table
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:
@@ -11,82 +11,124 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-analog-occult-deckbuilder
+  - render-analog-card-table
+  - camera-tabletop-adventure
+  - hud-diegetic-card-table
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through one-on-one contest pressure; adventure setpiece logic, puzzle
-    readability, environmental affordances, hub rhythm, and landmark staging, using the preset as
-    art direction rather than a required scene, mission, character, or card image.
+    Source-informed video-game style router for original analog occult deckbuilder captures: tactile
+    horror tabletop play with candlelit surfaces, low-fi card lanes, physical counters, oppressive
+    darkness, escape-room board logic, and hand-scale card decisions. Borrow the candlelit
+    decision-state clarity of games like Inscryption, but land as a different fictional game with
+    different props, card anatomy, symbols, board layout, and opponent staging. Apply this after
+    prompt X; prompt X supplies the subject, action, setting, and intensity while this preset
+    supplies capture language, camera grammar, material behavior, playable readability, and finish.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express puzzle affordances, hub
-    readability, traversal choices, central devices, reward rhythm, and escape logic without
-    requiring a literal dungeon room.
+    Preserve the user's subject and transform it into a playable candlebone deck-table state: the
+    subject can become card tokens, table hazards, carved icons, small encounter figures,
+    scale/counter pressure, or board affordances while keeping clear role silhouette and decision
+    logic. Avoid turning every prompt into a fixed cabin story or copying named game characters.
   color_and_tone: >-
-    Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white,
-    mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability,
-    thumbnail clarity, and subject recognition.
+    Use an analog occult deckbuilder palette: soot black, candle amber, aged paper, bone ivory,
+    oxidized green, dried blood red, desaturated wood brown, and dirty brass. Keep the image dark
+    but denoised and readable, with color accents behaving like cost, danger, sacrifice, route, or
+    objective cues rather than glossy decoration.
   lighting_and_shadow: >-
-    Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal
-    refraction, and guided objective light; use highlights and shadow pockets to reveal routes,
-    hazards, factions, or focal threats without hiding prompt content.
+    Light the image through candle pools, desk-lamp falloff, weak moon spill, glowing sigil pips,
+    and hard tabletop shadows. Lighting must clarify the current card-table decision, board lanes,
+    active threat, or puzzle object and avoid neon bloom, arena spotlights, or cinematic fantasy
+    glare.
   texture_and_material: >-
-    Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails,
-    puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from worn card stock, scratched wood, wax, bone or teeth counters, hand-inked
+    symbols, tarnished metal clips, dusty tabletop props, and low-fi in-engine materials. Materials
+    should feel captured during play, not like a polished trading-card renderer or glossy esports
+    board.
   camera_and_composition: >-
-    Use reusable game-composition grammar from adventure setpiece logic, puzzle readability,
-    environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with a low first-person tabletop view or slightly angled locked card-table camera: hand
+    cards, lane grid, draw pile, scale/counter object, sacrifice/energy tokens, and one active
+    decision. The frame should read as a plausible gameplay capture; UI should be diegetic and
+    wordless, built from table objects, icons, dots, pips, and silhouettes only.
   atmosphere_and_mood: >-
-    Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and
-    mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt
-    X asks for it, but the preset should not force a new storyline.
+    Carry an original candlebone deck-table mood: intimate, predatory, occult, analog,
+    claustrophobic, and puzzle-horror. The preset can become adult, violent, eerie, seductive, cozy,
+    tactical, or absurd when prompt X asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as environment-adventure art with clear affordances, satisfying depth, and no generic
-    quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine gameplay screenshot style, not concept art: analog card-table HUD
+    is central, but all cards and counters must remain wordless and numberless. Maintain
+    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, low-fi material
+    restraint, and no fake logos, glossy arena boards, readable card text, stat numbers, or random
+    interface clutter.
   key_features: >-
-    Prism, Alley, Card, Duel; one-on-one contest pressure; warm tavern amber, sapphire blue,
-    clockwork brass, prism light, dust white, mushroom red, and moon silver; portal glow, puzzle
-    beams, lantern pools, stained shafts, crystal refraction, and guided objective light; worn
-    stone, brass gears, painted signs without readable text, carved rails, puzzle blocks, tavern
-    wood, and polished relics; two-sided focal symmetry and readable attack lanes; curious,
-    adventurous, readable, mysterious, playful when relevant, and mechanically inviting
+    original analog occult deckbuilder gameplay screenshots; tactile horror tabletop capture with
+    candlelit surfaces, low-fi card lanes, analog counters, oppressive darkness, escape-room board
+    state, and hand-scale card decisions; soot black, candle amber, aged paper, bone ivory, oxidized
+    green, dried blood red, desaturated wood brown, and dirty brass; candle pools, desk-lamp
+    falloff, weak moon spill, glowing sigil pips, and hard tabletop shadows; worn card stock,
+    scratched wood, wax, bone or teeth counters, hand-inked symbols, tarnished metal clips, dusty
+    tabletop props, and low-fi in-engine materials; low first-person tabletop view or slightly
+    angled locked card-table camera; intimate, predatory, occult, analog, claustrophobic, and
+    puzzle-horror; HUD guidance: diegetic card-table HUD built from table objects, icons, dots,
+    pips, silhouettes, counters, and physical affordances only
   creative_brief: >-
-    Apply Prism Alley Card Duel as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Candlebone Deck Table as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through analog horror deckbuilder references: tactile tabletop camera,
+    physical card grammar, candlelit material language, decision-state readability, and low-fi
+    in-engine finish. Coherent diegetic HUD is allowed when it belongs on the table; avoid menus,
+    logos, exact cards, exact characters, glossy digital arena boards, readable text, stat numbers,
+    direct Inscryption cloning, and promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - medieval-castle
-  - low-detail
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic quest-poster layout
-  - unreadable puzzle clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - readable card text
+  - stat numbers
+  - life point numbers
+  - official trading-card UI
+  - glossy esports card arena
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
+  - direct Inscryption clone
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-074.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, medieval-castle, low-detail, concept-art, key-art, poster,
-    character-sheet, asset-render, promotional-art, menu-ui, visible-hud, readable-interface,
-    generic quest-poster layout, unreadable puzzle clutter, fixed scene, generic game screenshot,
-    readable UI, official card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, readable card text, stat
+    numbers, life point numbers, official trading-card UI, glossy esports card arena, random fake
+    HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt
+    literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated
+    photoreal camera, copied box art composition, direct Inscryption clone
+  referenceGame: Original analog occult deckbuilder, Inscryption-informed
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    diegetic card-table HUD built from table objects, icons, dots, pips, silhouettes, counters, and
+    physical affordances only; no readable text or numbers
+  renderFamily: analog-card-table
+  cameraFamily: tabletop-adventure
+  hudMode: diegetic-card-table
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -95,8 +137,19 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - puzzle-chambers-and-adventure-setpieces
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-analog-occult-deckbuilder
+    - render-analog-card-table
+    - camera-tabletop-adventure
+    - hud-diegetic-card-table
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Candlebone Deck Table
+styleAnchors:
+  - analog occult deckbuilder gameplay screenshots
+  - low-fi candlelit card table
+  - Candlebone Deck Table

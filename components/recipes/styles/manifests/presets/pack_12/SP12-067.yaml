@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-067
 packId: pack_12
-name: Bronze Marsh Siege Camp
+name: Total War Bronze Marsh Siege
 styleAnchors:
-  - 'Bronze Marsh Siege Camp'
-displayName: 'Bronze Marsh Siegecraft'
+  - 'Total War: Three Kingdoms gameplay screenshots'
+  - Total War Bronze Marsh Siege
+displayName: Total War Bronze Marsh Siege
 category: 6. Wilderness Hunts & Harsh Frontiers
 version: 1
 supportedTasks:
@@ -14,81 +15,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - wilderness-hunts-and-harsh-frontiers
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-total-war-three-kingdoms
+  - render-strategy-tactics
+  - camera-isometric-top-down
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through besieged objective logic; hostile biome traversal, survival
-    pressure, creature scale, weathered camps, and readable hunt routes, using the preset as art
-    direction rather than a required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Total War: Three Kingdoms gameplay screenshots:
+    large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners,
+    and command-camera battlefield hierarchy. Apply this after prompt X; prompt X supplies the
+    subject, action, setting, and intensity while this preset supplies capture language, camera
+    grammar, material behavior, playable readability, and finish. Do not recreate an exact official
+    level, character, logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express survival pressure, terrain
-    hazards, creature scale, extraction timing, and frontier resource logic without forcing a
-    landscape postcard.
+    Preserve the user's subject and transform it into a playable Total War: Three Kingdoms-adjacent
+    game screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with muddy bronze, oxidized green, and campfire amber; earth ochre, moss green,
-    frost blue, volcanic black, coral color, bronze mud, and storm-violet accents; keep tonal
-    hierarchy strong enough for gameplay readability, thumbnail clarity, and subject recognition.
+    Use a Total War: Three Kingdoms-informed palette: bronze armor, marsh green, dusty tan, banner
+    red, smoke grey, and muted gold. Keep value grouping legible at gameplay distance, with color
+    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
+    decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with bioluminescence, campfire pools, blizzard glare, forge heat, underwater
-    shafts, and storm flashes; use highlights and shadow pockets to reveal routes, hazards,
-    factions, or focal threats without hiding prompt content.
+    Light the image through overcast campaign daylight, fire arrows, campfires, smoke haze, and
+    armor glints. Lighting must clarify the playable route, threat, focal subject, or objective and
+    avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from bronze fittings and marsh-wet canvas; reeds, peat water, green copper, and
-    wet roots; wet foliage, mineral crust, fur, coral, packed snow, mud, rope, leather, patched
-    tents, and chipped field gear; make props, clothing, creatures, vehicles, architecture, and
-    terrain share the same production-world logic.
+    Build surfaces from troop formations, polearms, muddy ground, siege towers, canvas camps,
+    banners without readable script, and terrain clutter. Materials should feel like in-engine game
+    assets captured during play, with enough texture identity to separate props, terrain,
+    characters, hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from hostile biome traversal, survival pressure, creature
-    scale, weathered camps, and readable hunt routes: lane rhythm, scale contrast, objective
-    hierarchy, readable negative space, encounter depth, and motion vectors should adapt to
-    portraits, objects, creatures, environments, and action scenes.
+    Compose with elevated battlefield camera with army lines, flanking routes, unit cards, minimap
+    logic, and objective spacing. The frame should read as a plausible gameplay capture; include
+    UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood humid occult pressure; feral, precarious, exploratory, weather-beaten, predatory,
-    and resource-starved; the result can be adult, harsh, seductive, eerie, or violent when prompt X
-    asks for it, but the preset should not force a new storyline.
+    Carry a Total War: Three Kingdoms-derived mood: historical, strategic, muddy, disciplined, and
+    large-scale. The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd
+    when prompt X asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as survival-game art with clear traversal cues, tactile terrain, and no generic scenic
-    wallpaper; preserve clean focal hierarchy, believable material response, heavy-denoise clarity,
-    and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: unit cards, formation markers,
+    minimap, morale bars, and command icons can appear as coherent strategy UI. Maintain
+    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
+    stock-photo polish, or random interface clutter.
   key_features: >-
-    Bronze, Marsh, Siege, Camp; besieged objective logic; muddy bronze, oxidized green, and campfire
-    amber; bioluminescence, campfire pools, blizzard glare, forge heat, underwater shafts, and storm
-    flashes; bronze fittings and marsh-wet canvas; walls, breach lanes, and fallback rings; humid
-    occult pressure
+    Total War: Three Kingdoms gameplay screenshots; large-scale strategy capture with massed units,
+    siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy; bronze
+    armor, marsh green, dusty tan, banner red, smoke grey, and muted gold; overcast campaign
+    daylight, fire arrows, campfires, smoke haze, and armor glints; troop formations, polearms,
+    muddy ground, siege towers, canvas camps, banners without readable script, and terrain clutter;
+    elevated battlefield camera with army lines, flanking routes, unit cards, minimap logic, and
+    objective spacing; historical, strategic, muddy, disciplined, and large-scale; HUD guidance:
+    unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent
+    strategy UI
   creative_brief: >-
-    Apply Bronze Marsh Siege Camp as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Total War Bronze Marsh Siege as a transferable game-originals preset. Preserve prompt X,
+    then route interpretation through capture references from Total War: Three Kingdoms: camera, HUD
+    grammar, material language, color coding, encounter readability, and in-engine finish. Coherent
+    HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact
+    levels, and promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - neon
-  - low-detail
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic scenic wallpaper
-  - friendly nature postcard
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-067.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, neon, low-detail, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic scenic
-    wallpaper, friendly nature postcard, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: 'Total War: Three Kingdoms'
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent
+    strategy UI
+  renderFamily: strategy-tactics
+  cameraFamily: isometric-top-down
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -97,6 +128,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - wilderness-hunts-and-harsh-frontiers
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-total-war-three-kingdoms
+    - render-strategy-tactics
+    - camera-isometric-top-down
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

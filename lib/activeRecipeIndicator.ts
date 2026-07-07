@@ -32,6 +32,13 @@ const ACTIVE_RECIPE_INDICATORS: Record<RegisteredRecipeId, ActiveRecipeIndicator
     toneClassName: 'border-emerald-400/25 bg-emerald-500/10 text-emerald-100',
     dotClassName: 'bg-emerald-300',
   },
+  'sprite-atlas': {
+    id: 'sprite-atlas',
+    title: 'Sprite Atlas',
+    summary: 'Atlas build',
+    toneClassName: 'border-indigo-400/25 bg-indigo-500/10 text-indigo-100',
+    dotClassName: 'bg-indigo-300',
+  },
   cinematic: {
     id: 'cinematic',
     title: 'Cinematic',

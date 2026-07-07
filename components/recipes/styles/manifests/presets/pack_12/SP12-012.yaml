@@ -1,10 +1,11 @@
 schemaVersion: 1
 id: SP12-012
 packId: pack_12
-name: Pixel Tavern Quest Hub
+name: Stardew Tavern Pixel Hub
 styleAnchors:
-  - 'Pixel Tavern Quest Hub'
-displayName: 'Pixel Tavern Hub'
+  - Stardew Valley gameplay screenshots
+  - Stardew Tavern Pixel Hub
+displayName: Stardew Tavern Pixel Hub
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:
@@ -14,84 +15,111 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-stardew-valley
+  - render-retro-pixel-low-poly
+  - camera-isometric-top-down
+  - hud-contextual-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through adventure setpiece logic, puzzle readability, environmental
-    affordances, hub rhythm, and landmark staging, using the preset as art direction rather than a
-    required scene, mission, character, or card image.
+    Capture-derived video-game style router based on Stardew Valley gameplay screenshots: top-down
+    pixel-life-sim capture with cozy interiors, tile-based props, NPC clusters, inventory bar, and
+    readable village hub layout. Apply this after prompt X; prompt X supplies the subject, action,
+    setting, and intensity while this preset supplies capture language, camera grammar, material
+    behavior, playable readability, and finish. Do not recreate an exact official level, character,
+    logo, or marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express puzzle affordances, hub
-    readability, traversal choices, central devices, reward rhythm, and escape logic without
-    requiring a literal dungeon room.
+    Preserve the user's subject and transform it into a playable Stardew Valley-adjacent game
+    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
+    relationship, hitbox-like readability, and interaction affordances without copying source
+    characters or named IP elements.
   color_and_tone: >-
-    Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white,
-    mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability,
-    thumbnail clarity, and subject recognition.
+    Use a Stardew Valley-informed palette: warm wood brown, soft lamp yellow, berry red, denim blue,
+    plant green, and muted pixel shadows. Keep value grouping legible at gameplay distance, with
+    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
+    decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with portal glow, puzzle beams, lantern pools, stained shafts, crystal
-    refraction, and guided objective light; use highlights and shadow pockets to reveal routes,
-    hazards, factions, or focal threats without hiding prompt content.
+    Light the image through simple warm room pools, fireplace glow, window daylight blocks, and tiny
+    highlight pixels. Lighting must clarify the playable route, threat, focal subject, or objective
+    and avoid generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from chunky pixels, tavern wood, and jewel-like UI-free icons; warm wood, table
-    clutter, and quest lamps; worn stone, brass gears, painted signs without readable text, carved
-    rails, puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures,
-    vehicles, architecture, and terrain share the same production-world logic.
+    Build surfaces from 16-bit inspired tiles, simple furniture sprites, food icons, patterned rugs,
+    pixel portraits, and hand-placed clutter. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from adventure setpiece logic, puzzle readability,
-    environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with top-down room or town hub with grid clarity, interactable counters, social spacing,
+    and inventory-bar ergonomics. The frame should read as a plausible gameplay capture; include
+    UI/HUD only when it matches the source game's visual logic and improves clarity.
   atmosphere_and_mood: >-
-    Keep the mood cozy retro quest energy; hub comfort before danger; curious, adventurous,
-    readable, mysterious, playful when relevant, and mechanically inviting; the result can be adult,
-    harsh, seductive, eerie, or violent when prompt X asks for it, but the preset should not force a
-    new storyline.
+    Carry a Stardew Valley-derived mood: cozy, handmade, social, low-stakes, and quietly productive.
+    The preset can become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X
+    asks, but it should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as environment-adventure art with clear affordances, satisfying depth, and no generic
-    quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: inventory hotbar, clock,
+    money, stamina, and small interaction prompts are part of the style when kept pixel-clean.
+    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
+    logos, stock-photo polish, or random interface clutter.
   key_features: >-
-    Pixel, Tavern, Quest, Hub; adventure setpiece logic, puzzle readability, environmental
-    affordances, hub rhythm, and landmark staging; warm tavern amber, sapphire blue, clockwork
-    brass, prism light, dust white, mushroom red, and moon silver; portal glow, puzzle beams,
-    lantern pools, stained shafts, crystal refraction, and guided objective light; chunky pixels,
-    tavern wood, and jewel-like UI-free icons; readable paths, central devices, modular rooms,
-    layered doors, reward pedestals, and before-after traversal views; cozy retro quest energy
+    Stardew Valley gameplay screenshots; top-down pixel-life-sim capture with cozy interiors,
+    tile-based props, NPC clusters, inventory bar, and readable village hub layout; warm wood brown,
+    soft lamp yellow, berry red, denim blue, plant green, and muted pixel shadows; simple warm room
+    pools, fireplace glow, window daylight blocks, and tiny highlight pixels; 16-bit inspired tiles,
+    simple furniture sprites, food icons, patterned rugs, pixel portraits, and hand-placed clutter;
+    top-down room or town hub with grid clarity, interactable counters, social spacing, and
+    inventory-bar ergonomics; cozy, handmade, social, low-stakes, and quietly productive; HUD
+    guidance: inventory hotbar, clock, money, stamina, and small interaction prompts are part of the
+    style when kept pixel-clean
   creative_brief: >-
-    Apply Pixel Tavern Quest Hub as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Stardew Tavern Pixel Hub as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through capture references from Stardew Valley: camera, HUD grammar,
+    material language, color coding, encounter readability, and in-engine finish. Coherent HUD is
+    allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - anti-aliased-blur
-  - noisy
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic quest-poster layout
-  - unreadable puzzle clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-012.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, anti-aliased-blur, noisy, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster
-    layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Stardew Valley
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    inventory hotbar, clock, money, stamina, and small interaction prompts are part of the style
+    when kept pixel-clean
+  renderFamily: retro-pixel-low-poly
+  cameraFamily: isometric-top-down
+  hudMode: contextual-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -100,6 +128,12 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - puzzle-chambers-and-adventure-setpieces
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-stardew-valley
+    - render-retro-pixel-low-poly
+    - camera-isometric-top-down
+    - hud-contextual-hud
   supportedTasks:
     - image_generate
     - image_edit

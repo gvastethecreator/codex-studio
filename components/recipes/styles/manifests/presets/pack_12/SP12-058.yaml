@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP12-058
 packId: pack_12
-name: Echo Cavern Sound Puzzle
+name: Fez Echo Cavern Puzzle
 category: 8. Puzzle Chambers & Adventure Setpieces
 version: 1
 supportedTasks:
@@ -11,82 +11,112 @@ supportedTasks:
 tags:
   - video-game-originals-vault
   - puzzle-chambers-and-adventure-setpieces
+  - capture-derived
+  - gameplay-screenshot-style
+  - reference-fez
+  - render-retro-pixel-low-poly
+  - camera-isometric-top-down
+  - hud-minimal-hud
 visualDna:
   aesthetic: >-
-    A transferable game-art direction built from tokenized palette, material, encounter, and mood
-    cues: route prompt X through sound puzzle feedback; audio-feedback puzzle logic; adventure
-    setpiece logic, puzzle readability, environmental affordances, hub rhythm, and landmark staging,
-    using the preset as art direction rather than a required scene, mission, character, or card
-    image.
+    Capture-derived video-game style router based on Fez gameplay screenshots: pixel-art
+    perspective-puzzle capture with rotating 2D/3D spaces, blocky caverns, glyph-like forms, and
+    tiny character scale. Apply this after prompt X; prompt X supplies the subject, action, setting,
+    and intensity while this preset supplies capture language, camera grammar, material behavior,
+    playable readability, and finish. Do not recreate an exact official level, character, logo, or
+    marketing key art.
   subject_treatment: >-
-    Preserve the user's subject while translating silhouette, role, scale, equipment, route
-    pressure, and encounter readability with this grammar: express puzzle affordances, hub
-    readability, traversal choices, central devices, reward rhythm, and escape logic without
-    requiring a literal dungeon room.
+    Preserve the user's subject and transform it into a playable Fez-adjacent game screenshot
+    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
+    hitbox-like readability, and interaction affordances without copying source characters or named
+    IP elements.
   color_and_tone: >-
-    Grade the image with warm tavern amber, sapphire blue, clockwork brass, prism light, dust white,
-    mushroom red, and moon silver; keep tonal hierarchy strong enough for gameplay readability,
-    thumbnail clarity, and subject recognition.
+    Use a Fez-informed palette: pastel sky blue, cave purple, moss green, golden cube glow, black
+    pixel outlines, and soft pink highlights. Keep value grouping legible at gameplay distance, with
+    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
+    decorative wash.
   lighting_and_shadow: >-
-    Drive the lighting with echoing crystal and sound-wave glow; portal glow, puzzle beams, lantern
-    pools, stained shafts, crystal refraction, and guided objective light; use highlights and shadow
-    pockets to reveal routes, hazards, factions, or focal threats without hiding prompt content.
+    Light the image through simple ambient glow, cube sparkle, cave opening light, and flat pixel
+    shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid
+    generic cinematic bloom that destroys screenshot readability.
   texture_and_material: >-
-    Build surfaces from worn stone, brass gears, painted signs without readable text, carved rails,
-    puzzle blocks, tavern wood, and polished relics; make props, clothing, creatures, vehicles,
-    architecture, and terrain share the same production-world logic.
+    Build surfaces from chunky pixel blocks, mossy tiles, ladders, doors, mysterious glyph shapes
+    without readable text, and clean sprite edges. Materials should feel like in-engine game assets
+    captured during play, with enough texture identity to separate props, terrain, characters,
+    hazards, and interactables.
   camera_and_composition: >-
-    Use reusable game-composition grammar from adventure setpiece logic, puzzle readability,
-    environmental affordances, hub rhythm, and landmark staging: lane rhythm, scale contrast,
-    objective hierarchy, readable negative space, encounter depth, and motion vectors should adapt
-    to portraits, objects, creatures, environments, and action scenes.
+    Compose with orthographic puzzle-platform frame with vertical shafts, rotatable landmarks,
+    hidden paths, and one-screen spatial clarity. The frame should read as a plausible gameplay
+    capture; include UI/HUD only when it matches the source game's visual logic and improves
+    clarity.
   atmosphere_and_mood: >-
-    Keep the mood curious, adventurous, readable, mysterious, playful when relevant, and
-    mechanically inviting; the result can be adult, harsh, seductive, eerie, or violent when prompt
-    X asks for it, but the preset should not force a new storyline.
+    Carry a Fez-derived mood: mysterious, gentle, clever, retro, and contemplative. The preset can
+    become adult, violent, eerie, seductive, cozy, tactical, or absurd when prompt X asks, but it
+    should not force a fixed mission or story scene.
   rendering_and_quality: >-
-    Finish as environment-adventure art with clear affordances, satisfying depth, and no generic
-    quest-poster layout; preserve clean focal hierarchy, believable material response, heavy-denoise
-    clarity, and no readable UI, text, logos, or stock key-art gloss.
+    Finish as a coherent in-engine screenshot style, not concept art: very minimal HUD; small
+    collected-cube indicators or map hints can appear but the puzzle space should dominate. Maintain
+    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
+    stock-photo polish, or random interface clutter.
   key_features: >-
-    Echo, Cavern, Sound, Puzzle; sound puzzle feedback; warm tavern amber, sapphire blue, clockwork
-    brass, prism light, dust white, mushroom red, and moon silver; echoing crystal and sound-wave
-    glow; worn stone, brass gears, painted signs without readable text, carved rails, puzzle blocks,
-    tavern wood, and polished relics; acoustic chamber depth; curious, adventurous, readable,
-    mysterious, playful when relevant, and mechanically inviting
+    Fez gameplay screenshots; pixel-art perspective-puzzle capture with rotating 2D/3D spaces,
+    blocky caverns, glyph-like forms, and tiny character scale; pastel sky blue, cave purple, moss
+    green, golden cube glow, black pixel outlines, and soft pink highlights; simple ambient glow,
+    cube sparkle, cave opening light, and flat pixel shadow; chunky pixel blocks, mossy tiles,
+    ladders, doors, mysterious glyph shapes without readable text, and clean sprite edges;
+    orthographic puzzle-platform frame with vertical shafts, rotatable landmarks, hidden paths, and
+    one-screen spatial clarity; mysterious, gentle, clever, retro, and contemplative; HUD guidance:
+    very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space
+    should dominate
   creative_brief: >-
-    Apply Echo Cavern Sound Puzzle as a reusable video-game art-direction router over prompt X:
-    preserve the user's subject and intent, then translate palette, lighting, material logic, route
-    readability, encounter mood, and production finish through this preset.
+    Use Fez Echo Cavern Puzzle as a transferable game-originals preset. Preserve prompt X, then
+    route interpretation through capture references from Fez: camera, HUD grammar, material
+    language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed
+    when the reference game uses it; avoid menus, logos, exact characters, exact levels, and
+    promotional key art.
 avoidRules:
   - watermark
-  - text
   - logo
-  - combat-chaos
-  - lowres
-  - concept-art
-  - key-art
-  - poster
-  - character-sheet
-  - asset-render
-  - promotional-art
-  - menu-ui
-  - visible-hud
-  - readable-interface
-  - generic quest-poster layout
-  - unreadable puzzle clutter
-  - fixed scene
-  - generic game screenshot
-  - readable UI
-  - official card framing
+  - copyright mark
+  - loading screen
+  - main menu
+  - pause menu
+  - store page key art
+  - promotional poster
+  - concept art sheet
+  - asset render
+  - character sheet
+  - exact official character likeness
+  - exact level copy
+  - franchise logo
+  - readable brand text
+  - random fake HUD
+  - nonsense interface clutter
+  - generic Unreal marketplace scene
+  - generic 3D render
+  - prompt literal card reuse
+  - unrelated generic fantasy scene
+  - unrelated generic sci-fi scene
+  - unmotivated photoreal camera
+  - copied box art composition
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-058.webp
 attributes:
   negativePrompt: >-
-    watermark, text, logo, combat-chaos, lowres, concept-art, key-art, poster, character-sheet,
-    asset-render, promotional-art, menu-ui, visible-hud, readable-interface, generic quest-poster
-    layout, unreadable puzzle clutter, fixed scene, generic game screenshot, readable UI, official
-    card framing
+    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
+    promotional poster, concept art sheet, asset render, character sheet, exact official character
+    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
+    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
+    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
+    camera, copied box art composition
+  referenceGame: Fez
+  referenceMode: capture-derived gameplay screenshot style
+  hudGuidance: >-
+    very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space
+    should dominate
+  renderFamily: retro-pixel-low-poly
+  cameraFamily: isometric-top-down
+  hudMode: minimal-hud
 taxonomy:
   packId: pack_12
   packName: Video Game Originals Vault
@@ -95,8 +125,18 @@ taxonomy:
   tags:
     - video-game-originals-vault
     - puzzle-chambers-and-adventure-setpieces
+    - capture-derived
+    - gameplay-screenshot-style
+    - reference-fez
+    - render-retro-pixel-low-poly
+    - camera-isometric-top-down
+    - hud-minimal-hud
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Fez Echo Cavern Puzzle
+styleAnchors:
+  - Fez gameplay screenshots
+  - Fez Echo Cavern Puzzle

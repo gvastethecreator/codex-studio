@@ -16,26 +16,45 @@ export function resolveStudioCarouselImage({
 export function resolveStudioCarouselDisplaySrc({
   image,
   isComparing,
+  failedDisplaySrcs = [],
 }: {
   image: GeneratedImageWithConfig;
   isComparing: boolean;
+  failedDisplaySrcs?: string[];
 }) {
   const referenceSrc = image.config.attachments?.[0]?.dataUrl;
-  return isComparing && referenceSrc ? referenceSrc : image.preview || image.src;
+  const candidates = resolveStudioCarouselDisplayCandidates({ image, isComparing });
+  return candidates.find((candidate) => !failedDisplaySrcs.includes(candidate)) ?? candidates[0];
 }
 
 export function resolveStudioCarouselFallbackSrc({
   image,
   displaySrc,
   isComparing,
+  failedDisplaySrcs = [],
 }: {
   image: GeneratedImageWithConfig;
   displaySrc: string;
   isComparing: boolean;
+  failedDisplaySrcs?: string[];
 }) {
-  if (isComparing) return null;
-  const candidates = [image.thumbnail, image.src].filter(
-    (candidate): candidate is string => Boolean(candidate) && candidate !== displaySrc,
+  const candidates = resolveStudioCarouselDisplayCandidates({ image, isComparing }).filter(
+    (candidate) => candidate !== displaySrc && !failedDisplaySrcs.includes(candidate),
   );
   return candidates[0] ?? null;
+}
+
+export function resolveStudioCarouselDisplayCandidates({
+  image,
+  isComparing,
+}: {
+  image: GeneratedImageWithConfig;
+  isComparing: boolean;
+}) {
+  const referenceSrc = image.config.attachments?.[0]?.dataUrl;
+  const candidates =
+    isComparing && referenceSrc ? [referenceSrc] : [image.preview, image.thumbnail, image.src];
+  return candidates.filter((candidate, index): candidate is string => {
+    return Boolean(candidate) && candidates.indexOf(candidate) === index;
+  });
 }

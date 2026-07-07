@@ -6421,9 +6421,1023 @@ function pack12GameplayRule(pack: StyleRuntimePack, preset: StyleRuntimePreset) 
     'VIDEO GAME CARD RULE: render this as a plausible in-engine gameplay screencap or playable frame, not concept art, key art, promo art, poster art, character sheet, asset render, or menu screen.',
     'Show camera/gameplay evidence: route, cover, lane, interactable, weak point, objective, hazard, timing window, puzzle state, match state, resource pressure, or traversal decision tied to this preset.',
     cameraCue,
-    'No visible HUD, UI overlay, readable interface, labels, logos, marketing layout, model-sheet grid, title-safe poster composition, or isolated asset showcase.',
+    pack12HudContract(preset),
+    pack12RenderContract(preset),
     `Differentiate this preset by its own loop and camera from neighboring pack_12 cards: ${sanitizeStylePromptName(preset.name).toLowerCase()}.`,
   ].join(' ');
+}
+
+function pack12PresetText(preset: StyleRuntimePreset) {
+  return [
+    preset.name,
+    preset.displayName ?? '',
+    ...(preset.styleAnchors ?? []),
+    preset.negativePrompt ?? '',
+    valueOf(preset.style, 'aesthetic'),
+    valueOf(preset.style, 'subject_treatment'),
+    valueOf(preset.style, 'camera_and_composition'),
+    valueOf(preset.style, 'rendering_and_quality'),
+    valueOf(preset.style, 'key_features'),
+    valueOf(preset.style, 'creative_brief'),
+  ]
+    .join(' ')
+    .toLowerCase();
+}
+
+function pack12HudContract(preset: StyleRuntimePreset) {
+  const text = pack12PresetText(preset);
+  if (/almost no hud|very minimal hud|minimal hud/.test(text)) {
+    return 'HUD CONTRACT: keep HUD absent or extremely sparse for this preset. If needed, use one tiny genre-native cue only: reticle, status pip, posture bar, timing tick, or diegetic instrument. Do not use floating diamond waypoints, location arrows, chevron chains, exclamation pins, map pins, objective stickers, minimap clutter, or generic destination markers. No readable text, subtitles, logos, menu chrome, store UI, or random fake interface clutter.';
+  }
+  if (/inscryption|analog card-table|diegetic card-table|card-table hud/.test(text)) {
+    return 'HUD CONTRACT: diegetic tabletop HUD is central for this preset. Use physical lanes, face-down piles, pips, dots, carved icons, counters, scale/altar objects, hand silhouettes, stains, and small symbolic card tokens. Keep everything wordless and numberless: no readable card text, no stat numbers, no life-point numbers, no phase labels, no button text, no menu panels, no logos, and no digital TCG chrome.';
+  }
+  if (
+    /deckbuilder|card-duel|card game|card-battle|tabletop|hand at bottom|life points/.test(text)
+  ) {
+    return 'HUD CONTRACT: coherent card/board-game HUD is part of this preset. Use board zones, card silhouettes, life/status pips, phase markers, hand fan shapes, resource tokens, and ability icons, but all cards and UI panels must be wordless: no readable English labels, no card names, no title bars, no subtitles, no End Turn button text, no menu labels, no logos, and no copied official card layouts. Cards should read through icon art, color, pips, and abstract glyphs only.';
+  }
+  if (
+    /hud is essential|hud is central|dense analog hud|rts hud|moba hud|card game hud|fighting-game hud|classic fps hud|racing hud|builder hud|tower-defense hud|strategy ui/.test(
+      text,
+    )
+  ) {
+    return 'HUD CONTRACT: coherent gameplay HUD is part of this preset, but keep it curated and genre-native. Use two or three purposeful modules at most: gauges, selection rings, card zones, resource bars, health/status meters, cooldown pips, lap/speed forms, threat ranges, or strategy panels only when they fit the camera. Avoid minimap/objective-marker soup unless the genre truly depends on it. Do not solve scenes with floating diamond waypoints, chevron arrows, exclamation pins, glowing destination markers, repeated map pins, or location stickers. Keep all interface text abstract or unreadable; no logos, title screens, menus, subtitles, or nonsense UI clutter.';
+  }
+  if (/diegetic|motion tracker|device screen|spine health|analog/.test(text)) {
+    return 'HUD CONTRACT: diegetic or instrument-like UI is allowed when it belongs inside the game world: device screens, suit gauges, radar arcs, optic overlays, tracker pips, or holographic status cues. Keep it coherent, sparse, and non-readable; avoid floating waypoint diamonds, map pins, chevrons, and generic destination arrows; no menus, logos, subtitles, or random overlay clutter.';
+  }
+  return 'HUD CONTRACT: HUD is optional and must follow the source game logic. Use no HUD when the scene already reads through camera and environment. If needed, use one or two restrained cues such as reticle, resource/status pip, ability icon, timing bar, or diegetic instrument. Prefer in-world affordances, lighting, enemy spacing, track geometry, cover, ladders, gates, rails, color lanes, or props over floating objective markers. Avoid repeated diamond waypoint markers, chevron arrows, map pins, minimap clutter, exclamation pins, and generic location arrows unless one subtle marker is truly native to this exact genre. No readable text, subtitles, logos, menus, title screens, or random fake UI.';
+}
+
+function pack12RenderContract(preset: StyleRuntimePreset) {
+  const text = pack12PresetText(preset);
+  if (
+    /pixel|16-bit|sprite|retro|low-poly|old-gen|ps1|ps2|ps3|dreamcast|gamecube|voxel|fixed-camera/.test(
+      text,
+    )
+  ) {
+    return 'RENDER CONTRACT: preserve the preset native game-render language, including visible pixel structure, sprite tiles, chunky silhouettes, retro console texture limits, low-poly geometry, voxel structure, or fixed-camera survival framing when the preset calls for it. If the preset is pixel/sprite-led, make the pixel grid, tile cadence, and sprite scale obvious; do not smooth it into high-resolution painted 2D or upgrade every card into modern cinematic 3D.';
+  }
+  return 'RENDER CONTRACT: use the preset native game-render language. Do not force pixel art, voxel art, retro filters, photoreal PBR, or generic AAA 3D unless this exact preset asks for that render family.';
+}
+
+function pack12HudVariationContract() {
+  return [
+    'HUD VARIATION CONTRACT:',
+    'Do not repeat the same UI solution across cards. Floating diamond waypoints, chevron chains, exclamation pins, minimap/objective clutter, and arrows pointing toward a location are overused and should be absent by default.',
+    'If a navigation cue is needed, use at most one subtle genre-native cue, and vary the form by preset: racing line, reticle, range ring, resource bar, posture bar, timing lane, board token, diegetic instrument, patrol cone, light strip, door color, track curvature, or environmental contrast.',
+    'A playable screenshot should usually read without UI markers when architecture, camera, enemy spacing, track curvature, rails, ladders, gates, hazards, cover, or lighting already show the next action.',
+    'Never use a marker field as decoration. If the marker can be removed without losing the gameplay state, remove it.',
+  ].join('\n');
+}
+
+function pack12CleanImageContract() {
+  return [
+    'CLEAN IMAGE CONTRACT:',
+    'Use heavy denoise as a visual quality rule, not just as post-processing text. Favor clean large shapes, medium detail clusters, readable silhouettes, and controlled material planes.',
+    'Avoid crunchy micro-texture, noisy grime, dense wet-metal chatter, tiny scratches everywhere, black mud, repeated mesh/fabric artifacts, over-sharpened rock/brick noise, excessive particle speckle, high-frequency texture carpets, and noise pretending to be detail.',
+    'Leave deliberate rest areas in walls, floors, sky, water, fog, UI panels, and silhouettes. Texture should support the style, not cover every surface.',
+    'Dark scenes must keep open midtones and separated value groups. Horror, dungeon, rain, metal, stone, and foliage can be atmospheric without becoming noisy, muddy, or visually dirty.',
+  ].join('\n');
+}
+
+function pack12NormalizeBasePrompt(prompt: string, preset: StyleRuntimePreset) {
+  return prompt
+    .replace(
+      /not a vertical card, reference sheet, concept sheet, poster, key art, or promo illustration\./g,
+      'not a reference sheet, concept sheet, poster, key art, promo illustration, or cropped asset showcase.',
+    )
+    .replace(
+      /\s*Landscape game-camera frame, output 1536x1024\./g,
+      ' Gameplay camera framing; final orientation and output size are defined by the prompt orientation below.',
+    )
+    .replace(
+      /No text, labels, logos, watermark, HUD, menu, or UI\./g,
+      `No readable text, labels, logos, watermark, main menu, pause menu, title screen, or random fake UI. ${pack12HudContract(preset)}`,
+    )
+    .replace(/\bno UI\/menu\b/gi, 'no menu/title-screen layout')
+    .replace(/\bno UI\b/gi, 'no random fake UI');
+}
+
+interface Pack12CreativeCardProfile {
+  title: string;
+  brief: readonly string[];
+}
+
+const PACK12_CREATIVE_CARD_PROFILES: Record<string, Pack12CreativeCardProfile> = {
+  'SP12-001': {
+    title: 'Glassblade Motel Sideview',
+    brief: [
+      'Use a side-view neon motel execution puzzle with shattered aquarium glass, folding screen doors, umbrella-gang silhouettes, and one slow-motion attack lane.',
+      'Make the objective readable through door exits, throwable bottles, glass cover, and patrol timing; avoid copying any known trench-coat samurai hallway or official room layout.',
+    ],
+  },
+  'SP12-002': {
+    title: 'Lantern Canopy Hunt',
+    brief: [
+      'Use first-person alien rainforest hunting grammar, but restage it as a lantern-fungus canopy with woven sensor charms, resin rope bridges, and a horned dusk predator trail.',
+      'No blue-native likeness, no direct floating-mountain postcard; make one survival decision readable through spoor, height, weak point, or harvest route.',
+    ],
+  },
+  'SP12-003': {
+    title: 'Saltcrawler Carrier RTS',
+    brief: [
+      'Use an elevated RTS camera over a white salt-flat war convoy: a crawling refinery-city, tiny skimmer units, blue command arcs, dust plumes, and a contested brine resource node.',
+      'Keep the land-carrier scale and tactical UI grammar, but avoid beige clone deserts by adding salt glare, black antenna forests, and a turquoise sensor layer.',
+    ],
+  },
+  'SP12-004': {
+    title: 'Brass Cloud Mutiny JRPG',
+    brief: [
+      'Use chunky early-console skyfaring JRPG grammar in an original mutiny on a brass cloudship dock, with sky-whales in the distance and command windows as abstract icon panels.',
+      'Make it feel playable through party spacing, turn order, ship scale, and one boarding objective; avoid direct pirate-airship replica imagery.',
+    ],
+  },
+  'SP12-005': {
+    title: 'Cold Orchard Freight Breach',
+    brief: [
+      'Stage an original first-person survival-horror breach in an orbital freight orchard with refrigerated cargo trees, pressure foam, hanging vacuum suits, analog seals, and a sound-lure panel.',
+      'Threat is implied through sensor pips, damaged doors, shadows, or distant movement; avoid iconic creature silhouettes, exact station corridors, and xenomorph chase framing.',
+    ],
+  },
+  'SP12-006': {
+    title: 'Inkglass Reliquary Boss',
+    brief: [
+      'Use side-view gothic action-RPG grammar inside an inkglass reliquary atrium, with bell jars, crescent stair platforms, spell shards, and one readable boss spacing problem.',
+      'Avoid generic library shelves and direct gothic castle room copies; make jump arcs, projectile lanes, and platform depth obvious.',
+    ],
+  },
+  'SP12-007': {
+    title: 'Ice Banner Square Tactics',
+    brief: [
+      'Use hand-painted tactical RPG grammar on a cracked glacier parade square, with banner stakes, shield walls, tile ghosts, and exhausted caravan units.',
+      'Keep storybook flatness, turn-order readability, and winter dread; avoid exact longship/Viking-copy tableau and generic snowy battlefield realism.',
+    ],
+  },
+  'SP12-008': {
+    title: 'Neon Slipstream Shrine Circuit',
+    brief: [
+      'Use anti-grav racing grammar on a night circuit threaded through black shrine arches, holographic lane drums, magenta boost wakes, and clean rival silhouettes.',
+      'Keep racing HUD and speed camera coherent, but avoid official craft silhouettes, readable sponsor panels, and pure blue tunnel cloning.',
+    ],
+  },
+  'SP12-009': {
+    title: 'Cartoon Ruin Co-op Scrum',
+    brief: [
+      'Use flat 2D co-op brawler grammar in a ruined candy-colored cathedral courtyard with four readable player lanes, silly armored enemies, and punch impact stars.',
+      'Keep adult arcade violence and lane clarity, but avoid exact knight mascots, castle-logo language, and generic mobile cartoon polish.',
+    ],
+  },
+  'SP12-010': {
+    title: 'Cinder Bellows Lock-On',
+    brief: [
+      'Use third-person lock-on action-RPG grammar in a soot-choked bellows foundry with chain lifts, cracked slag bridges, dull shields, and a furnace warden ahead.',
+      'Make the dodge lane, stamina risk, and next-action decision readable; avoid bonfires, flask icons, centered cathedral vistas, and direct soulslike level cloning.',
+    ],
+  },
+  'SP12-011': {
+    title: 'Drowned Deco Voltage Hall',
+    brief: [
+      'Use first-person immersive-sim grammar in a flooded art-deco pressure hall with brass voltage pylons, cracked aquarium walls, and a hand-held electric ability cue.',
+      'Keep undersea decay and resource pressure, but avoid exact plasmid pose, readable posters, and familiar branded deco signage.',
+    ],
+  },
+  'SP12-012': {
+    title: 'Afterhours Pixel Co-op Hub',
+    brief: [
+      'Use top-down pixel life-sim grammar in an afterhours laundromat tavern with vending glow, tiny NPC clusters, harvest crates, and a wordless item bar.',
+      'Keep cozy hub readability, but avoid direct farm tavern copy, exact crop grid defaults, and generic chibi portrait-card framing.',
+    ],
+  },
+  'SP12-013': {
+    title: 'Red-Sand Bell Pilgrimage',
+    brief: [
+      'Use minimal third-person pilgrimage grammar across red dunes toward broken bell towers, with a tiny player silhouette, scarf-like motion trail, and one climbable ruin edge.',
+      'Keep negative space and sacred scale, but avoid direct robed traveler cloning and empty postcard composition.',
+    ],
+  },
+  'SP12-014': {
+    title: 'Copperline Roof Courier',
+    brief: [
+      'Use first-person parkour grammar on an elevated copperline service district with teal awnings, maintenance rails, rooftop gardens, route cloth, and messenger drone gates.',
+      'Show hands, ledge targets, and one immediate traversal choice; avoid white/red corporate roof cloning, exact runner-vision layouts, and third-person rooftop hero posing.',
+    ],
+  },
+  'SP12-015': {
+    title: 'Glitchbone Temple Passage',
+    brief: [
+      'Use retro metroidvania side-view grammar in a biomechanical temple passage with ribbed machinery, corrupt tile hazards, and a weapon glitch corridor.',
+      'Keep sprite/tile scale obvious and one route unlock readable; avoid smoothing it into high-res concept art.',
+    ],
+  },
+  'SP12-016': {
+    title: 'Clock-Mask Estate Stealth',
+    brief: [
+      'Use first-person aristocratic stealth grammar inside a clock-mask estate balcony, with tall doors, whale-oil-like blue lamps, patrol cones, and a hand ready to blink or pickpocket.',
+      'Keep stealth affordances, vertical routes, and guard spacing; avoid exact plague mask/city motifs and copied imperial interiors.',
+    ],
+  },
+  'SP12-017': {
+    title: 'Dome Derby Trickfight',
+    brief: [
+      'Use roller combat arena grammar in a glass sports dome with trick rails, orange score gates, rival skaters, and bullet trails crossing the half-pipe.',
+      'Make movement, target, and scoring pressure readable; avoid poster action poses and generic cyber-arena gloss.',
+    ],
+  },
+  'SP12-018': {
+    title: 'Tempest Spire Tower Grid',
+    brief: [
+      'Use top-down tower-defense grammar at a storm citadel, with nested blue lanes, coil towers, enemy wave silhouettes, and one overloaded grid choke point.',
+      'Keep the UI/tower logic coherent and abstract; avoid decorative castle concept art and unreadable lightning clutter.',
+    ],
+  },
+  'SP12-019': {
+    title: 'Flooded Tunnel Mutant Run',
+    brief: [
+      'Use first-person subway horror grammar in a flooded maintenance tunnel with cracked gas-mask visor edges, red signal lamps, scavenged shells, and a mutant silhouette at the far turn.',
+      'Make stealth/ammo/oxygen pressure readable; avoid exact Moscow tunnel copy and generic zombie corridor darkness.',
+    ],
+  },
+  'SP12-020': {
+    title: 'Starless Trade Rail',
+    brief: [
+      'Use celestial trade-route adventure grammar with a small locomotive or skiff at a dark star pier, cargo icons, batlike silhouettes, and a bargain-or-flee decision.',
+      'Keep storybook UI and map pressure but avoid direct train logo, readable text, and static gothic wallpaper.',
+    ],
+  },
+  'SP12-021': {
+    title: 'Salt-Halo Drift Cup',
+    brief: [
+      'Use arcade drift-racing grammar on a salt-flat nightfall circuit with halo checkpoint pylons, ghost-rival afterimages, heat-haze racing line, and a close low chase camera.',
+      'Make it feel like a playable race first: visible racing line, drift angle, rival pressure, speed/boost HUD as abstract gauges, and no showroom car render or scenic road photo.',
+    ],
+  },
+  'SP12-022': {
+    title: 'Whiteout Signal Cache',
+    brief: [
+      'Use first-person survival grammar during a whiteout climb to a radio cache, with frozen rope stakes, mittens, temperature pips, and a half-buried supply box.',
+      'Keep loneliness and resource risk; avoid generic snow landscape and cinematic cabin poster framing.',
+    ],
+  },
+  'SP12-023': {
+    title: 'Orbital Orchard Dome Builder',
+    brief: [
+      'Use colony-builder camera grammar over a Martian glass orchard dome, with irrigation icons, rover tracks, oxygen piping, and one failing greenhouse sector.',
+      'Keep management UI readable but abstract; avoid clean NASA render, stock sci-fi base, and decorative dome postcard.',
+    ],
+  },
+  'SP12-024': {
+    title: 'Eel-Gate Trap Sprint',
+    brief: [
+      'Use third-person trap-gauntlet grammar in a flooded eel-temple, with broken stepping slabs, timed needle vents, rope-wheel latch, and one sprint/leap decision toward a sealed gate.',
+      'De-emphasize the hero body: camera low behind a small runner silhouette, no iconic raider outfit, no cover-art pose, no glossy AAA jungle tomb clone.',
+    ],
+  },
+  'SP12-025': {
+    title: 'Night Market Beat Lane',
+    brief: [
+      'Use side-scrolling beat-em-up grammar in a rainlit fish market lane with shuttered stalls, thrown crates, neon steam, and three enemies spaced for crowd control.',
+      'Keep lane depth and impact readability; avoid exact street-brawler cast silhouettes and pure magenta club-room cloning.',
+    ],
+  },
+  'SP12-026': {
+    title: 'Moss Tile Revolt Tactics',
+    brief: [
+      'Use isometric tactical RPG grammar in mossy civic ruins with rebel units, height tiles, soft spell range, and one exposed flank decision.',
+      'Keep grid/turn readability and painterly 2D restraint; avoid exact fantasy army UI and generic top-down diorama.',
+    ],
+  },
+  'SP12-027': {
+    title: 'Basalt Glass Extraction',
+    brief: [
+      'Use first-person co-op cavern extraction grammar in a basalt glass quarry with survey drones, resin veins, pneumatic anchor tools, and a fungus-lit lift rail.',
+      'Avoid exact dwarf miner silhouettes, stock glowing crystals, and familiar class silhouettes; show drill route, teammate silhouette, or collapsing retreat pressure.',
+    ],
+  },
+  'SP12-028': {
+    title: 'Needle-Reed Counter Shrine',
+    brief: [
+      'Use third-person precision counter-duel grammar in a needle-reed shrine: lacquer rain masks, split bamboo stakes, ankle-deep water, and a single posture-break timing window.',
+      'Change the combat identity away from famous samurai games: no iconic katana duel silhouette, no heroic back-facing ronin pose, no exact shrine courtyard clone, no ornate AAA rain poster.',
+    ],
+  },
+  'SP12-029': {
+    title: 'Kelpglass Descent Survival',
+    brief: [
+      'Use first-person underwater survival grammar around a kelpglass reef station, oxygen pips, hand scanner, leviathan shadow, and a mineral vent objective.',
+      'Keep depth, oxygen risk, and route readability; avoid direct submarine-game UI copy and pretty coral screensaver.',
+    ],
+  },
+  'SP12-030': {
+    title: 'Rubberhose Inferno Boss',
+    brief: [
+      'Use 1930s rubberhose boss-fight grammar at a carnival furnace stage, with hand-painted fire loops, squash-stretch minions, and projectile patterns.',
+      'Keep boss health/phase readability but abstract; avoid exact cup-headed character shapes, readable title cards, and cute kid-safe softness.',
+    ],
+  },
+  'SP12-031': {
+    title: 'Mooncrane Micro-Tactics',
+    brief: [
+      'Use compact tile tactics grammar on a moonlit industrial island, with tiny mechs, collapsing dam tiles, buglike threats, and a clean threat forecast layer.',
+      'Keep the grid and turn pressure obvious; avoid direct square-island clone and generic blue sci-fi chessboard.',
+    ],
+  },
+  'SP12-032': {
+    title: 'Phantom Harbor Ledger Raid',
+    brief: [
+      'Use isometric stealth-heist grammar on a fog harbor ledger office, with cursed dockhands, cone patrols, rope routes, and a glowing contract objective.',
+      'Keep squad stealth readability; avoid direct pirate crew silhouettes, skull logos, and generic harbor postcard staging.',
+    ],
+  },
+  'SP12-033': {
+    title: 'Graveyard Orchard Defense',
+    brief: [
+      'Use lane-defense grammar in a graveyard orchard with vegetable scarecrows, moonlit rows, seed-packet icons, and enemy silhouettes advancing across lanes.',
+      'Keep it readable as playful tower defense, but avoid direct lawn grid, familiar plant characters, and mobile-game plastic shine.',
+    ],
+  },
+  'SP12-034': {
+    title: 'Red Mesa Scope Contract',
+    brief: [
+      'Use tactical marksman overwatch grammar from a red mesa wind-farm hide, with scope vignette, patrol trucks, heat shimmer, and one high-value vehicle caught in the lane.',
+      'Keep distance and shot decision readable; avoid exact soldier game UI, generic sniper poster, and empty landscape.',
+    ],
+  },
+  'SP12-035': {
+    title: 'Bone-Lift Deck Defense',
+    brief: [
+      'Use a stacked vertical deckbuilder state with two or three defended lift decks, incoming enemy silhouettes, unit tokens, resource pips, and a wordless hand of cards.',
+      'Give the vehicle its own identity: bone elevator, furnace cage, or chained citadel shaft. No readable card names, no numbers, no exact train-floor UI.',
+    ],
+  },
+  'SP12-036': {
+    title: 'Blackthread Prism Chamber',
+    brief: [
+      'Use first-person spatial-puzzle grammar inside a blackthread acoustic foundry: matte ceramic walls, rotating prism drums, brass tuning rails, hanging counterweights, and liquid-light bridges.',
+      'Absolutely avoid cube-on-button rooms, blue/orange portal pairs, white lab panels, circular portal doors, familiar glove/gun silhouettes, readable test signage, and glass observation booth cloning.',
+    ],
+  },
+  'SP12-037': {
+    title: 'Feltblock Toy Ridge',
+    brief: [
+      'Use bright 3D toy-platformer grammar on a feltblock ridge with wind-up hazards, soft fabric ramps, oversized bead pickups, and a clear jump route.',
+      'Keep joy and spatial clarity, but avoid direct mascot likeness, mushroom kingdom colors, and generic cute platformer slop.',
+    ],
+  },
+  'SP12-038': {
+    title: 'Iron Reef Broadside',
+    brief: [
+      'Use naval artillery gameplay grammar at an iron reef storm line, with range arcs, shell splashes, smoke, and a damaged cruiser turning broadside.',
+      'Keep ship classes and target decisions readable; avoid direct military sim UI copy and static maritime painting.',
+    ],
+  },
+  'SP12-039': {
+    title: 'Phantom Beatline Stage',
+    brief: [
+      'Use stylized rhythm-combat grammar on a haunted stage grid, with beat lanes, character timing, neon music hazards, and abstract turn cues.',
+      'No readable lyrics or UI labels; avoid direct idol/JRPG menu copy and generic concert screenshot.',
+    ],
+  },
+  'SP12-040': {
+    title: 'Thunderhorn Hunt Plain',
+    brief: [
+      'Use third-person monster-hunt grammar on a storm grass plain, with a ceramic-plated thunder beast, trap stakes, teammate silhouettes, and dodge lanes.',
+      'Keep scale, weak points, and tracking readable; avoid exact franchise monster silhouette and poster boss framing.',
+    ],
+  },
+  'SP12-041': {
+    title: 'Pine Signal Lookout',
+    brief: [
+      'Use painterly first-person wilderness exploration grammar at dusk, with a fire lookout trail, radio wire, smoke column, and one navigation fork.',
+      'Keep it playable through route, tool, and objective; avoid pure landscape wallpaper and cabin-poster nostalgia.',
+    ],
+  },
+  'SP12-042': {
+    title: 'Redacted Rift Records Lab',
+    brief: [
+      'Use third-person supernatural action grammar inside a government records lab where file stacks float, red rift light cuts the room, and a launchable object is mid-trajectory.',
+      'Keep cover, objective, and combat route readable; avoid direct bureau layout copy, readable documents, and generic sci-fi lab gloss.',
+    ],
+  },
+  'SP12-043': {
+    title: 'Floodwall Kaiju Rescue',
+    brief: [
+      'Use third-person arcade evacuation shooter grammar on a harbor floodwall, with tiny squad silhouettes, rocket trails, grounded evacuation cloth, and a barnacle kaiju breaching offshore.',
+      'Keep campy scale and HUD coherence; avoid copied insect/robot factions and military poster hero poses.',
+    ],
+  },
+  'SP12-044': {
+    title: 'Velvet Insect Palace Run',
+    brief: [
+      'Use stylized stealth/JRPG palace grammar in a velvet insect-mask archive, with spotlight cones, lacquer elevators, paper-flame guards, and abstract turn-transition UI.',
+      'Avoid black-red UI cosplay, phantom-thief costumes, readable menu text, casino palace cloning, and all-out-attack poster framing.',
+    ],
+  },
+  'SP12-045': {
+    title: 'Rust Deer Mech Ambush',
+    brief: [
+      'Use first-person retrofuturist survival grammar in a rural pine clearing where rust-deer machines stalk between cabins, with analog sight marks and a battery objective.',
+      'Keep player vulnerability and route pressure; avoid generic robot-in-forest concept art.',
+    ],
+  },
+  'SP12-046': {
+    title: 'Solar Silt Rail Nomads',
+    brief: [
+      'Use open desert exploration grammar around solar rail pylons, soft comic-shaded nomad bikes, turquoise cloth pennants, and a far ruin silhouette.',
+      'Keep low-poly calm and traversal readability; avoid pure landscape poster and direct glider-game cloning.',
+    ],
+  },
+  'SP12-047': {
+    title: 'Obsidian Rocket Shrine',
+    brief: [
+      'Use classic arena-FPS grammar in an obsidian shrine arena with jump pads, rocket trails, armor shard pickups, and angular colored light.',
+      'Keep movement lanes and combat timing readable; avoid exact gothic arena maps, logo walls, and modern military shooter polish.',
+    ],
+  },
+  'SP12-048': {
+    title: 'Rainlift Parcel Metro',
+    brief: [
+      'Use voxel hover-courier grammar in a rainlift metro canyon with parcel pads built into rooftops, pink service-lane lights, stacked balconies, and a tiny dashboard timer.',
+      'Keep tiny vehicle navigation readable; avoid direct voxel-city screenshot cloning and empty neon skyline.',
+    ],
+  },
+  'SP12-049': {
+    title: 'Thorn Choir Castle Raid',
+    brief: [
+      'Use side-view gothic action-RPG grammar in a thorn-choir castle transept, with skeleton patrol lanes, stained-glass hazards, and a relic door objective.',
+      'Keep pixel/2D platform readability; avoid exact vampire castle rooms, famous hero silhouettes, and generic dark corridor.',
+    ],
+  },
+  'SP12-050': {
+    title: 'Amber Signal Outbreak',
+    brief: [
+      'Use fixed-camera survival horror grammar in a polar signal clinic with amber monitors, body-bag shapes abstracted, cracked tile, and one keycard route.',
+      'Keep dread, resource UI, and camera angle; avoid exact retro sci-fi horror UI, readable documents, and gore shock.',
+    ],
+  },
+  'SP12-051': {
+    title: 'Bone Bazaar Deck Trial',
+    brief: [
+      'Use a clean 2D roguelike deckbuilder turn state with hand silhouettes, intent icons, relic pips, and a weird merchant altar as encounter object.',
+      'All cards/UI are wordless and numberless. No exact relic bar layout, no button labels, no map labels, no collectible-card showcase.',
+    ],
+  },
+  'SP12-052': {
+    title: 'Steam-Team Bridge Push',
+    brief: [
+      'Use class-based team shooter grammar on a stylized bridge control point, with chunky silhouettes, team color blocks, projectile arcs, and objective ring pressure.',
+      'Keep playful tactical readability; avoid exact class costumes, readable payload signs, and direct cart-map cloning.',
+    ],
+  },
+  'SP12-053': {
+    title: 'Marsh Witch Contract',
+    brief: [
+      'Use third-person folklore monster-contract grammar in a mist marsh with witch totems, knee-deep water, torch cues, and a tracked beast just outside lantern range.',
+      'Keep investigation/combat decision readable through tracks, lantern radius, and posture; avoid generic swamp concept art and direct monster-hunter UI copy.',
+    ],
+  },
+  'SP12-054': {
+    title: 'Copper Rail Ambush',
+    brief: [
+      'Use third-person western heist grammar on a copper rail trestle, with masked riders, steam sparks, cover crates, and one moving-train objective.',
+      'Keep shootout route and cover readability; avoid direct outlaw protagonist likeness, cinematic key art, and readable signage.',
+    ],
+  },
+  'SP12-055': {
+    title: 'Orchid Lens Garden',
+    brief: [
+      'Use first-person environmental puzzle grammar in an orchid-glass garden with color lens gates, clean stone plinths, and one line-of-sight solution.',
+      'Keep visual logic and calm geometry through beam direction, gate color, and plinth placement; avoid exact island puzzle architecture, sterile gallery cloning, and empty garden postcard.',
+    ],
+  },
+  'SP12-056': {
+    title: 'Needle-Runner Server Spire',
+    brief: [
+      'Use first-person dash-combat grammar up a carbon server spire, with red kill planes, wall-run light planes, motion blur, and one enemy route.',
+      'Keep traversal timing readable; avoid exact katana protagonist clone, direct megacity screenshot, and poster hero silhouette.',
+    ],
+  },
+  'SP12-057': {
+    title: 'Stormglass Corsair Deck',
+    brief: [
+      'Use pirate co-op adventure grammar on a stormglass deck, with cannon angle, sail damage, sea monster wake, and a treasure compass cue.',
+      'Keep playful first-person/third-person game readability through cannon aim, deck task, and wake direction; avoid exact cartoon pirate ship clone and empty seascape.',
+    ],
+  },
+  'SP12-058': {
+    title: 'Rotating Echo Quarry',
+    brief: [
+      'Use perspective-rotation puzzle grammar in a blocky echo quarry, with small character scale, impossible stairs, glowing door, and a readable rotation objective.',
+      'Keep low-poly/pixel charm, but avoid direct cube-world copy and decorative cave wallpaper.',
+    ],
+  },
+  'SP12-059': {
+    title: 'Prism Draft Arena',
+    brief: [
+      'Use top-down MOBA draft/teamfight grammar in a prism arena with lanes, ability circles, team silhouettes, and objective crystal pressure.',
+      'Keep tactical UI coherent and abstract; avoid exact hero roster likeness, readable item icons, and esports poster framing.',
+    ],
+  },
+  'SP12-060': {
+    title: 'Thorn Basilica Pilgrim Stand',
+    brief: [
+      'Use side-view grim pixel-action grammar in a thorned basilica nave, with a penitent player, grotesque relic enemy, ladders, and blood-red hazards kept stylized.',
+      'Keep platform/combat lanes readable; avoid direct religious icon copy, gore detail, and generic cathedral concept art.',
+    ],
+  },
+  'SP12-061': {
+    title: 'Jade Brush Volcano Shrine',
+    brief: [
+      'Use painterly brush-adventure grammar in a jade volcano shrine with ink clouds, bold outline spirits, calligraphic attack arcs without readable glyphs, and a shrine puzzle cue.',
+      'Keep living brush texture and game readability; avoid exact wolf/deity likeness and empty illustrated shrine card.',
+    ],
+  },
+  'SP12-062': {
+    title: 'Koi Alley Debt Bout',
+    brief: [
+      'Use third-person street-brawl grammar in a neon koi alley with bathhouse steam, bikes, suited silhouettes, and a ring of spectators around one combat decision.',
+      'Keep urban melee readability; avoid direct protagonist likeness, karaoke sign text, and pure nightlife postcard.',
+    ],
+  },
+  'SP12-063': {
+    title: 'Red Obelisk Boost Race',
+    brief: [
+      'Use high-speed hover-race grammar on a desert obelisk circuit, with low chase camera, heat shimmer, colored boost pads, and rival craft banking ahead.',
+      'Keep speed and track readability; avoid exact future-racer craft silhouettes and neon tunnel duplication.',
+    ],
+  },
+  'SP12-064': {
+    title: 'Lampwall Night Defense',
+    brief: [
+      'Use top-down colony night-defense grammar at a lampwall settlement, with barricade lanes, swarm pressure, worker units, and resource panels as abstract icons.',
+      'Keep strategy readability; avoid exact zombie-colony UI, muddy darkness, and generic isometric town render.',
+    ],
+  },
+  'SP12-065': {
+    title: 'Crystal Duel Observatory',
+    brief: [
+      'Use weapons-fighter gameplay grammar inside a crystal observatory, with two clear duelists, ring-out edge, health bars, and refracted weapon trails.',
+      'Keep fighting-game UI coherent but abstract; avoid exact roster costumes and stage copy.',
+    ],
+  },
+  'SP12-066': {
+    title: 'Amber Tram Blackout',
+    brief: [
+      'Use mid-distance sci-fi survival-horror gameplay in an amber-lit tram blackout, with a small civilian salvage figure, handrail route, stalled tram shell, safety shutters, and a tool-light objective.',
+      'Keep diegetic dread without the famous armor read: no full armored back hero, no ribbed spine light, no exact plasma-cutter pose, no glossy gore corridor, no recognizable necromorph body language.',
+    ],
+  },
+  'SP12-067': {
+    title: 'Bronze Reed Siege',
+    brief: [
+      'Use grand strategy battle camera over a bronze reed marsh siege, with ranked units, smoke banners, causeway choke, and command UI as abstract tiles.',
+      'Keep army-scale readability; avoid exact historical game UI, hero portrait panels, and generic muddy battlefield.',
+    ],
+  },
+  'SP12-068': {
+    title: 'Skyforge Wyrm Dock',
+    brief: [
+      'Use rail-shooter grammar around a skyforge dock, with a bio-mechanical wyrm craft, target rings, molten clouds, and enemies on a curved flight path.',
+      'Keep on-rails camera and target pressure; avoid exact dragon-rider designs and static fantasy aviation art.',
+    ],
+  },
+  'SP12-069': {
+    title: 'Static Dune Carrier War',
+    brief: [
+      'Use tactical airship command grammar over static-filled dune war, with chunky carriers, orange radar blocks, missile trails, and a command bridge overlay.',
+      'Keep strange low-fi strategy UI and scale; avoid exact aircraft silhouettes, readable Cyrillic-like text, and generic desert dogfight.',
+    ],
+  },
+  'SP12-070': {
+    title: 'Wind-Shrine Bow Trial',
+    brief: [
+      'Use open-air adventure grammar in a wind shrine with grass physics, bow puzzle targets, ruined arch route, and one climb/glide decision.',
+      'Keep exploration and puzzle readability; avoid exact familiar hero costume, tower iconography, and generic fantasy vista.',
+    ],
+  },
+  'SP12-071': {
+    title: 'Canal Resistance Breach',
+    brief: [
+      'Use first-person physics-rebellion grammar in an overgrown canal train yard, with gravity-sling object, drone gate, rebel cover, and route puzzle.',
+      'Keep utilitarian combat and physics affordance; avoid exact crowbar/strider imagery and direct city-block copy.',
+    ],
+  },
+  'SP12-072': {
+    title: 'Roadbook Ruin Rally',
+    brief: [
+      'Use rally game chase-camera grammar through a ruin-slalom stage: roadbook glyph strip, co-driver hazard icons, narrow arch cut, tire plume, checkpoint flare, and a battered non-branded buggy.',
+      'Push stylized playable screenshot over realism: exaggerated suspension, readable split-time/gear HUD as abstract marks, rival dust trail ahead, no real rally photo, no official vehicle likeness.',
+    ],
+  },
+  'SP12-073': {
+    title: 'Orchard Colossus Climb',
+    brief: [
+      'Use third-person giant-climb grammar in a dead orchard where a stone fruit colossus kneels, with fur/stone grip route, stamina pips, and weak-point glow.',
+      'Keep solitude and scale but avoid exact colossus silhouette, hero pose, and painterly key art.',
+    ],
+  },
+  'SP12-074': {
+    title: 'Candlebone Table Trial',
+    brief: [
+      'Use a low first-person occult deckbuilder table state with tar cloth lanes, chipped counters, iron teeth, wax circles, bone dice, and a masked hand silhouette.',
+      'All cards and table UI are wordless and numberless. Avoid cabin-table cloning, shiny TCG arenas, collectible-card anatomy, and readable symbols.',
+    ],
+  },
+  'SP12-075': {
+    title: 'Cobalt Dockball Overtime',
+    brief: [
+      'Use car-ball arena grammar on cobalt docks at night, with tiny rocket cars, an oversized industrial ball, boost pads, and a goal-mouth scramble.',
+      'Keep sports HUD and physics readable; avoid exact arena/vehicle clone, logos, and glossy esports promo lighting.',
+    ],
+  },
+  'SP12-076': {
+    title: 'Aurora Longhouse Bastion',
+    brief: [
+      'Use compact RTS colony defense grammar at an aurora longhouse bastion, with villagers, frost wolves, food/resource pips, and a palisade breach.',
+      'Keep builder/combat decisions readable; avoid direct Viking colony UI and generic snowy settlement render.',
+    ],
+  },
+  'SP12-077': {
+    title: 'Meatworks Quarry Escape',
+    brief: [
+      'Use cinematic side-view puzzle escape grammar in a quarry meatworks with worker-creature silhouettes, conveyor hazards, lever timing, and oppressive industrial scale.',
+      'Keep escape route and stealth timing readable; avoid exact alien laborer likeness and gloomy platformer wallpaper.',
+    ],
+  },
+  'SP12-078': {
+    title: 'Paper-Shadow Lotus Heist',
+    brief: [
+      'Use 2D cutout stealth grammar in a paper-theater lotus compound, with lantern cone patrols, ink guards, grapple route, and a visible vault-lock object.',
+      'Keep stealth silhouettes and level lanes readable; avoid exact ninja character copy and decorative ink poster staging.',
+    ],
+  },
+  'SP12-079': {
+    title: 'Ceramic Drop Citadel Hold',
+    brief: [
+      'Use third-person co-op orbital-drop holdout grammar at a red dust citadel, with ceramic pods, weather-balloon drones, beacon cloth, and glassy insect bunkers.',
+      'Keep squad hold/extract decision readable; avoid exact faction armor, copied bug/robot factions, stratagem UI, and flag-pose key art.',
+    ],
+  },
+  'SP12-080': {
+    title: 'Cagewell Keep Lock-On',
+    brief: [
+      'Use old-gen third-person lock-on grammar inside a cagewell keep: crooked hanging cages, half-sunk iron stairs, shield-height walls, green ruin lanterns, and one trap/enemy spacing decision.',
+      'Move away from famous soulslike reads: the player is a hooded grave-laborer or rusted pilgrim, not a heroic armored knight; HUD is bars/lock ring only, no item slots, no flask, no crest, no bonfire, no cathedral vista, no card table.',
+    ],
+  },
+};
+
+function pack12CreativeCardProfile(preset: StyleRuntimePreset) {
+  return PACK12_CREATIVE_CARD_PROFILES[preset.id];
+}
+
+function pack12CardIdentityTitle(preset: StyleRuntimePreset) {
+  return pack12CreativeCardProfile(preset)?.title ?? sanitizeStylePromptName(preset.name);
+}
+
+function pack12SourceRemixRule(
+  preset: StyleRuntimePreset,
+  identityTitle = pack12CardIdentityTitle(preset),
+) {
+  return [
+    'SOURCE REMIX RULE:',
+    'Treat the named reference as camera/render/HUD grammar only, not as scene identity to copy.',
+    'Change at least two identity layers while keeping the gameplay loop readable: prop language, enemy or faction silhouette, objective object, architecture, biome, UI icon set, material motif, or palette accent.',
+    'Do not drift into abstract concept art, random cool scenery, or portfolio key art. The output still needs to read as a plausible playable screenshot with route, threat, objective, interaction, timing, or resource pressure.',
+    `For this card, the first read should be "${identityTitle}" as an original fictional game screenshot, not a screenshot clone of the named reference.`,
+    'Any named game, source, studio, or franchise phrase that appears later in STYLE DNA is vocabulary for camera/render/HUD grammar only. Do not depict exact official characters, levels, factions, UI, logos, title screens, or famous setpieces.',
+  ].join('\n');
+}
+
+function pack12StyleDnaBoundaryRule(identityTitle: string, styleRouter: string) {
+  return [
+    'STYLE DNA BOUNDARY:',
+    `The STYLE DNA below is subordinate to CARD IDENTITY "${identityTitle}" and STYLE ROUTER "${styleRouter}".`,
+    'If STYLE DNA names a game, studio, franchise, character archetype, level type, UI convention, creature, vehicle, faction, or famous genre motif, treat it as shorthand for render grammar only.',
+    'Never let STYLE DNA replace the card-specific fictional premise, exact prop set, environment, objective, or gameplay decision described above.',
+    'When there is tension between source familiarity and originality, keep the camera/render/HUD lesson and change the visible content.',
+  ].join('\n');
+}
+
+const PACK12_VISUAL_FAMILY_LOCKS: Record<string, string> = {
+  'SP12-001':
+    'STRICT 2D side-view pixel action-platformer. Use a flat room cross-section, hard sprite edges, tile cadence, readable attack lanes, and zero over-the-shoulder or modern 3D camera.',
+  'SP12-002':
+    'First-person alien jungle hunt. Use visible hands/tool/weapon, visor-like minimal HUD, depth-through-foliage, spoor/weak-point readability, and no third-person hero poster.',
+  'SP12-003':
+    'Overhead RTS command capture. Use high tactical camera, tiny units, command arcs, resource node UI, vehicle scale hierarchy, and no cinematic ground-level shooter angle.',
+  'SP12-004':
+    'Chunky early-console JRPG play state. Use low-poly or pre-rendered-looking stage geometry, party spacing, abstract command windows, turn/battle readability, and no modern AAA adventure camera.',
+  'SP12-005':
+    'First-person analog survival-horror breach. Use handheld-device/door/hiding readability, industrial props, sparse diegetic UI, hard darkness control, and no generic corridor key art.',
+  'SP12-006':
+    '2D gothic action-RPG boss screen. Use side-view platforms, projectile lanes, sprite/painted 2D figure scale, boss spacing, and no third-person arena render.',
+  'SP12-007':
+    'Painted isometric tactical RPG board. Use orthographic tile ghosts, unit clusters, turn range cues, handmade storybook planes, and no cinematic battlefield camera.',
+  'SP12-008':
+    'Anti-grav racing chase camera. Use track curvature, rival craft, boost pads, coherent speed HUD, strong vanishing lanes, and no static neon vehicle showcase.',
+  'SP12-009':
+    'Flat 2D co-op brawler lane. Use cartoon silhouettes, four-player lane spacing, impact marks, side-scrolling depth bands, and no realistic siege scene.',
+  'SP12-010':
+    'Old-gen third-person lock-on action-RPG. Use visible player back/side, dodge lane, enemy scale, sparse stamina-style UI, rough geometry, and no polished boss poster.',
+  'SP12-011':
+    'First-person immersive-sim pressure room. Use hands/tool ability cue, resource tension, environmental systems, art-deco hard surfaces, and no corridor wallpaper.',
+  'SP12-012':
+    'Top-down pixel life-sim hub. Use tile grid, pixel NPC clusters, item bar, tiny interactables, cozy readable rooms, and no 3D tavern render.',
+  'SP12-013':
+    'Minimal third-person pilgrimage game. Use tiny player scale, negative-space route, climbable ruin silhouette, sacred simple geometry, and no empty postcard.',
+  'SP12-014':
+    'First-person parkour traversal. Use hands, ledge targets, teal/copper route cloth, maintenance rails, jump timing, readable roof geometry, and no white/red runner-vision clone.',
+  'SP12-015':
+    'Retro 2D metroidvania screen. Use sprite/tile scale, side-view corridor, unlock route, chunky pixel or CRT cadence, and no high-res 3D temple.',
+  'SP12-016':
+    'First-person aristocratic stealth sim. Use hand/ability affordance, patrol cones, balcony routes, vertical navigation, and no decorative mansion still.',
+  'SP12-017':
+    'Arcade roller combat arena. Use skater movement lanes, trick rail, projectile trails, score-gate pressure, stylized arena readability, and no generic sci-fi combat track.',
+  'SP12-018':
+    'Top-down tower-defense grid. Use readable lanes, towers, enemy wave silhouettes, range rings, choke pressure, and no decorative storm citadel painting.',
+  'SP12-019':
+    'First-person subway survival-horror. Use visor/weapon/tool edge, oxygen or ammo pressure, stealth route, far threat, and no black hallway mush.',
+  'SP12-020':
+    'Storybook trade-route adventure interface. Use map/route/cargo decision language, small vehicle or train scale, diegetic UI icons, and no static gothic wallpaper.',
+  'SP12-021':
+    'Arcade drift-racing chase camera. Use low rear view, racing line, drift angle, rival ghost pressure, boost/speed gauges as abstract HUD, and no showroom/photo-real car advert.',
+  'SP12-022':
+    'First-person frozen survival sim. Use mitten/tool foreground, temperature/resource pips, route fork, supply cache objective, and no generic snowy landscape.',
+  'SP12-023':
+    'Isometric colony-builder management view. Use overhead dome layout, oxygen/irrigation icons, sector failure, small rovers/workers, and no clean sci-fi postcard.',
+  'SP12-024':
+    'Third-person trap-gauntlet gameplay. Use small runner scale, collapsing route, timed darts/vents, rope latch or ledge affordance, hazard timing, and no cover-art explorer pose.',
+  'SP12-025':
+    'Side-scrolling beat-em-up lane. Use 2.5D market depth, enemy spacing, thrown props, impact arcs, and no empty neon alley.',
+  'SP12-026':
+    'Isometric tactical RPG grid. Use height tiles, unit facing, spell range, flank decision, painterly 2D restraint, and no generic nature diorama.',
+  'SP12-027':
+    'First-person co-op extraction shooter. Use tool/weapon foreground, teammate silhouette or lamp cue, resource vein, retreat/drill decision, and no stock glowing cave render.',
+  'SP12-028':
+    'Third-person precision counter-duel. Use readable posture break, spacing, enemy silhouette, timing cue, minimal HUD, and no iconic samurai/ronin poster framing.',
+  'SP12-029':
+    'First-person underwater survival. Use scanner/tool foreground, oxygen pips, mineral objective, depth layers, distant predator shadow, and no coral screensaver.',
+  'SP12-030':
+    'Hand-drawn rubberhose 2D boss fight. Use side-view stage, projectile pattern, phase readability, inked animation loops, and no polished 3D carnival.',
+  'SP12-031':
+    'Compact top-down tile tactics. Use square grid, small mechs, threat forecast, objective tile, readable turn pressure, and no cinematic robot scene.',
+  'SP12-032':
+    'Isometric stealth-heist tactical view. Use patrol cones, rope routes, squad spacing, contract objective, and no moody harbor postcard.',
+  'SP12-033':
+    '2D lane-defense strategy. Use rows/lanes, defender units, advancing silhouettes, seed/resource icons, and no literal lawn clone or glossy mobile render.',
+  'SP12-034':
+    'Tactical marksman scope capture. Use scope vignette, range/shot decision, patrol objective, wind/heat readability, and no generic soldier poster.',
+  'SP12-035':
+    'Stacked vertical roguelike deck-defense board. Use wordless cards, unit tokens, defended lift decks, enemy lanes, pips only, and no readable card text.',
+  'SP12-036':
+    'First-person spatial puzzle chamber. Use prism/gate relationship, route solution, matte ceramic/brass affordances, no cube-on-button, no blue/orange portal pairing, no circular portal-door clone.',
+  'SP12-037':
+    'Bright 3D toy-platformer gameplay. Use mascot-scale player, jump route, pickups, soft toy materials, stable camera, and no realistic fantasy render.',
+  'SP12-038':
+    'Naval artillery combat interface. Use tactical sea camera, range arcs, shell splashes, ship class silhouettes, target decision, and no maritime painting.',
+  'SP12-039':
+    'Stylized rhythm-combat play state. Use beat lanes, timing circles, character/action position, abstract combo UI, and no concert poster.',
+  'SP12-040':
+    'Third-person monster-hunt gameplay. Use hunter/monster scale, trap/weak-point cue, dodge lane, teammate silhouette, and no creature key art.',
+  'SP12-041':
+    'Painterly first-person wilderness exploration. Use route fork, handheld tool/radio cue, objective smoke/signal, human-scale path, and no pure landscape.',
+  'SP12-042':
+    'Third-person supernatural action game. Use cover/route, launchable object, combat objective, readable room layout, and no generic glossy lab.',
+  'SP12-043':
+    'Third-person arcade kaiju rescue shooter. Use tiny squad scale, grounded evacuation cloth or flare smoke, rocket lanes, kaiju threat, sparse campy HUD, and no floating rescue beams or military poster.',
+  'SP12-044':
+    'Stylized palace stealth/JRPG gameplay. Use spotlight cones, bold UI transition shapes, character scale, route/elevator affordance, and no black-red menu cosplay.',
+  'SP12-045':
+    'First-person retrofuturist survival. Use analog sight marks, battery/objective cue, machine threat in environment, and no robot forest concept art.',
+  'SP12-046':
+    'Low-poly desert exploration game. Use traversal vehicle/player scale, soft comic-shaded geometry, landmark contrast, open route, and no travel poster.',
+  'SP12-047':
+    'Old-school arena-FPS capture. Use first-person weapon edge, rocket trail, pickups, jump pads, angular arena lanes, and no modern military shooter.',
+  'SP12-048':
+    'Voxel hover-courier gameplay. Use blocky city geometry, tiny vehicle, rooftop parcel pads, dashboard timer, route readability from streets and lights, and no floating package icon or empty neon skyline.',
+  'SP12-049':
+    '2D gothic side-view platform-action. Use sprite/tile cadence, enemy lanes, relic door objective, stained hazard shapes, and no generic castle corridor.',
+  'SP12-050':
+    'Fixed-camera old survival-horror room. Use static camera angle, route/key object, sparse resource UI, retro lighting, and no first-person corridor.',
+  'SP12-051':
+    '2D roguelike deckbuilder battle. Use wordless hand, intent icons, enemy/object altar, relic pips, flat UI clarity, and no readable numbers/text.',
+  'SP12-052':
+    'Stylized class-shooter objective fight. Use chunky team color blocks, projectile arcs, control-point ring, readable silhouettes, and no exact class costume.',
+  'SP12-053':
+    'Third-person folklore contract RPG. Use investigation clue, tracked beast, torch/lantern radius, combat choice, and no swamp wallpaper.',
+  'SP12-054':
+    'Third-person western heist gameplay. Use cover crates, moving-train objective, rider/enemy positions, route pressure, and no outlaw key art.',
+  'SP12-055':
+    'First-person environmental puzzle. Use lens/beam relationship, gate route, plinth interactable, calm hard geometry, and no serene garden postcard.',
+  'SP12-056':
+    'First-person dash-combat platformer. Use wall-run lanes, red hazard planes, enemy route, motion timing, and no cyber-ninja poster.',
+  'SP12-057':
+    'Pirate co-op adventure gameplay. Use cannon angle, deck task, compass/objective cue, sea threat, first/third-person play read, and no ship postcard.',
+  'SP12-058':
+    'Perspective-rotation puzzle game. Use small character, impossible stairs, blocky low-poly/isometric geometry, rotation objective, and no cave illustration.',
+  'SP12-059':
+    'Top-down MOBA teamfight/draft state. Use lanes, ability circles, team silhouettes, objective crystal, abstract UI, and no hero-poster splash.',
+  'SP12-060':
+    'Side-view grim pixel-action screen. Use ladders/platforms, player/enemy spacing, stylized hazards, old sprite scale, and no cathedral key art.',
+  'SP12-061':
+    'Painterly brush-adventure gameplay. Use ink/brush action arcs, shrine puzzle/objective, bold outlined spirits, playable route, and no deity portrait.',
+  'SP12-062':
+    'Third-person street-brawl gameplay. Use melee ring, spectators as scale, enemy spacing, urban props, and no nightlife postcard.',
+  'SP12-063':
+    'High-speed hover-race chase camera. Use boost pads, rival craft, track curve, speed HUD, and no static desert vehicle render.',
+  'SP12-064':
+    'Top-down colony night-defense strategy. Use barricade lanes, swarm pressure, worker/resource icons, settlement layout, and no dark town render.',
+  'SP12-065':
+    'Side-view weapons fighting-game match. Use two duelists, health bars as abstract shapes, ring-out edge, weapon trails, and no fantasy duel poster.',
+  'SP12-066':
+    'Mid-distance sci-fi survival-horror gameplay. Use small civilian salvage figure, amber safety lights, stalled tram route, tool-light objective, threat occlusion, and no famous armored back/spine-suit silhouette.',
+  'SP12-067':
+    'Grand-strategy overhead battle command. Use ranked units, terrain choke, command tiles, army scale, and no hero portrait panel.',
+  'SP12-068':
+    'On-rails shooter flight capture. Use target rings, curved flight path, enemies ahead, craft/creature silhouette, and no static dragon art.',
+  'SP12-069':
+    'Low-fi tactical airship command interface. Use chunky carriers, orange radar blocks, missile trails, bridge overlay, and no generic dogfight.',
+  'SP12-070':
+    'Open-air third-person adventure gameplay. Use climb/glide/bow puzzle route, objective target, grass physics, and no familiar hero costume.',
+  'SP12-071':
+    'First-person physics-rebellion shooter. Use gravity/object manipulation, route puzzle, drone gate, cover, and no famous weapon/level clone.',
+  'SP12-072':
+    'Stylized rally chase-camera gameplay. Use roadbook cue strip, co-driver hazard icons, checkpoint flare, tire plumes, track narrowing, abstract split/gear HUD, and no real-world rally photo.',
+  'SP12-073':
+    'Third-person giant-climb action. Use player scale on colossus, grip route, stamina pips, weak point, and no creature key art.',
+  'SP12-074':
+    'First-person occult tabletop deckbuilder. Use low table camera, wordless cards/counters, physical lanes, hand silhouette, and no readable symbols/text.',
+  'SP12-075':
+    'Car-ball sports arena gameplay. Use tiny rocket cars, oversized ball, goal scramble, boost pads, coherent sports HUD, and no esports logo shot.',
+  'SP12-076':
+    'Compact RTS colony-defense view. Use settlement grid, villagers/resources, palisade breach, frost threat, and no generic snowy village render.',
+  'SP12-077':
+    'Cinematic side-view puzzle-platform escape. Use silhouetted worker/player, conveyor hazard, lever timing, route, and no gloomy wallpaper.',
+  'SP12-078':
+    '2D cutout stealth screen. Use side-view or isometric paper layers, lantern cones, grapple route, visible vault-lock object, and no decorative ninja poster.',
+  'SP12-079':
+    'Third-person co-op orbital-drop holdout. Use squad positions, beacon/extract objective, enemy bunkers, sparse tactical HUD, and no flag-pose key art.',
+  'SP12-080':
+    'Old-gen third-person lock-on dungeon action. Use rough PS2/early-PS3 geometry, hooded pilgrim/laborer silhouette, enemy/trap spacing, cage lift route, bars/lock-ring HUD only, open midtones, and no item-slot/flask/knight/cathedral poster/card table.',
+};
+
+function pack12VisualFamilyLock(preset: StyleRuntimePreset) {
+  return (
+    PACK12_VISUAL_FAMILY_LOCKS[preset.id] ??
+    'Use the exact native game-render family implied by this preset. Pick a specific camera and era; do not default to modern cinematic 3D.'
+  );
+}
+
+function pack12OrientationSpec(variantSlot?: number) {
+  if (variantSlot === 2) {
+    return {
+      label: 'LANDSCAPE 4:3 STYLE PROOF',
+      lead: 'Generate one official landscape style-proof gameplay screenshot.',
+      composition:
+        'Use landscape 4:3 game-camera composition designed to prove the preset as a playable scene. Keep the route, HUD grammar, objective, and world readability across the full horizontal frame.',
+      output:
+        'Output only the image, 1536x1152 landscape 4:3 gameplay screenshot. This is the second prompt for the preset, complementary to the portrait card.',
+    };
+  }
+
+  return {
+    label: 'PORTRAIT 3:4 CARD',
+    lead: 'Generate one official vertical style-card gameplay frame.',
+    composition:
+      'Use portrait 3:4 card composition designed for Recipe Styles thumbnails. This is not a landscape screenshot that will be cropped later: compose the full card vertically from the start while preserving the correct game-camera grammar.',
+    output:
+      'Output only the image, 1152x1536 portrait 3:4 gameplay style-card. This is the official card prompt for the preset.',
+  };
+}
+
+const PACK12_CARD_PROMPT_OVERRIDES: Record<string, string> = {
+  'SP12-014': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original first-person rooftop traversal screenshot, not a direct Mirror-style white/red rooftop clone and not a danger-poster about falling.',
+    'Use a copperline service district: teal awnings, maintenance rails, rooftop garden ducts, cloth route tags, messenger drone gates, and a hand reaching toward a safe ledge or rail.',
+    'Keep the play state readable through route timing and ledge affordances. Avoid exact white city roofs, red runner-vision strips, corporate signage, emergency rescue framing, third-person hero posing, and dramatic fall imagery.',
+    'One immediate traversal decision must be clear: vault the rail, grab the next ledge, wall-run under an awning, slide through a service hatch, or time a drone-gate crossing.',
+  ].join('\n'),
+  'SP12-021': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original arcade drift-racing screenshot, not a realistic car advert and not a licensed sim-racing replay.',
+    'Use a low chase camera with the car already sliding through a salt-halo checkpoint. Include rival ghost pressure, visible drift angle, abstract boost/speed HUD, and a racing line that curves through the frame.',
+    'Use fictional bodywork: asymmetrical kit, dust-scored panels, invented lighting, no readable decals, no real manufacturer silhouette, no showroom polish, no scenic sunset road photography.',
+    'One readable racing decision must be present: hold the drift, hit a checkpoint, avoid a narrowing pylon gate, block a rival line, or spend boost through a dust wall.',
+  ].join('\n'),
+  'SP12-024': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original third-person trap-gauntlet screenshot, not a direct Tomb Raider clone and not an explorer cover-art pose.',
+    'Keep adventure-platform timing, but make the runner small against the room: eel-temple gate, collapsing slabs, timed needle vents, rope-wheel latch, water depth, and a jump or grapple decision.',
+    'Avoid recognizable raider outfit, dual-pistol silhouette, heroic body close-up, jungle postcard lighting, exact temple iconography, and glossy AAA key-art framing.',
+    'The card should read as a route/hazard puzzle first: where to jump, what timing matters, and why the player is in danger.',
+  ].join('\n'),
+  'SP12-028': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original precision counter-duel screenshot, not a direct Sekiro/Ghost-style samurai confrontation and not a heroic rain-poster.',
+    'Use needle-reed shrine identity: lacquer masks, split bamboo stakes, water ripples, posture-break timing cue, enemy spacing, and a counter window visible through a restrained posture bar.',
+    'Avoid iconic katana duel silhouettes, black topknot ronin framing, famous shrine courtyard layout, orange posture UI copy, and symmetrical boss-arena staging.',
+    'The playable decision must be readable: deflect now, step around reeds, punish the exposed stance, or retreat through a narrow wet route.',
+  ].join('\n'),
+  'SP12-005': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original first-person survival-horror breach in an orbital freight facility, not a direct Alien Isolation corridor clone and not a xenomorph chase.',
+    'Keep first-person survival grammar, but change identity layers: use refrigerated cargo gardens, pressure foam, hanging vacuum suits, analog cargo seals, resin-coated vents, or a sound-lure panel. Pick a few, not all.',
+    'Threat should be implied through sensor pips, damaged doors, shadows, or distant movement; avoid iconic creature silhouettes and exact station layouts.',
+    'One readable survival decision must be present: hide, reroute power, unlock a hatch, cross a lit corridor, or choose between device noise and darkness.',
+  ].join('\n'),
+  'SP12-027': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original co-op cavern extraction screenshot, not a direct Deep Rock clone and not a generic cave combat render.',
+    'Keep first-person tool/combat grammar, but change identity layers: basalt glass quarry, resin veins, pneumatic anchor tools, survey drones, fungus-lit lift rails, or insectile pressure shapes. Pick a few, not all.',
+    'Avoid exact dwarf miner silhouettes, familiar mining-class silhouettes, stock glowing crystals, and readable mission UI.',
+    'One readable extraction decision must be present: drill route, hold a lift, scan mineral node, rescue teammate silhouette, or retreat through a collapsing tunnel.',
+  ].join('\n'),
+  'SP12-036': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original first-person spatial puzzle test that is much farther from Portal: no white-panel lab, no blue/orange portal pair, no cube-on-button room, no circular portal doors.',
+    'Use a blackthread acoustic foundry: matte charcoal ceramic, off-white clay slabs, brass tuning rails, rotating prism drums, hanging counterweights, liquid-light bridge, and black hazard thread. Pick a few, not all.',
+    'Avoid exact white Aperture panels, exact blue/orange color logic, companion-cube-like props, green acid pool copy, readable test signage, glass observation booth clone, and familiar glove/gun silhouettes.',
+    'One readable puzzle decision must be present: rotate a prism drum, tune a gate lattice, cross a liquid-light bridge, redirect a beam through clay slits, or choose a safe traversal route.',
+  ].join('\n'),
+  'SP12-043': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original arcade kaiju rescue screenshot, not an EDF poster, not a military promo, and not a scene solved by blue objective beams.',
+    'Use a harbor floodwall play state: tiny squad silhouettes, rocket trails, grounded evacuation cloth on barricades, flare smoke near civilians, broken ferry ramps, and a barnacle kaiju breaching offshore.',
+    'Readability must come from scale, shoreline geometry, smoke color, squad spacing, projectile arcs, and the monster path. Do not use floating rescue beams, waypoint columns, diamond markers, minimap pins, or huge objective icons.',
+    'Keep HUD sparse and campy only if needed: one health/ammo strip or small reticle is enough. No heroic poster pose, no faction logos, no copied insect/robot factions.',
+  ].join('\n'),
+  'SP12-044': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original stylized palace infiltration JRPG screenshot that is one step farther from Persona: not a phantom-thief hallway, not black-red UI cosplay, and not a direct palace clone.',
+    'Keep stylish third-person stealth/JRPG readability, but move the identity into another fictional heist world: velvet insect masks, lacquer stage elevators, mirrored archive stacks, paper-flame guards, brass spotlight traps, moth-wing capes, or tarot-like door seals. Pick a few, not all.',
+    'Avoid exact phantom-thief costumes, black-red UI copy, readable menu text, all-out-attack poster framing, crouching thief hallway clone, and direct casino/palace motifs.',
+    'One readable gameplay decision must be present: slip behind a spotlight cone, trigger a masked ambush, cross a patrol route, disable a palace mechanism, or prepare a turn transition through abstract non-readable UI.',
+  ].join('\n'),
+  'SP12-048': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original voxel hover-courier screenshot, not a Cloudpunk clone and not a neon city postcard with a big package marker.',
+    'Use rainlift metro canyon gameplay: tiny hover vehicle, rooftop parcel pads built into the architecture, pink service-lane lights painted into streets, stacked balconies, wet blocky roads, and a tiny dashboard timer inside the vehicle frame.',
+    'Navigation must come from street geometry, light strips, rooftop pads, traffic lanes, and camera angle. Do not use floating package icons, circular waypoint badges, diamond destination markers, map pins, minimap routes, or arrow chains.',
+    'Keep the voxel/blocky city readable with clean large shapes and open midtones; avoid empty skyline, dense neon noise, and UI icon soup.',
+  ].join('\n'),
+  'SP12-066': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original mid-distance sci-fi survival-horror screenshot in an amber tram blackout, not a direct Dead Space over-shoulder corridor and not a gore shock poster.',
+    'Use a smaller civilian salvage figure, not a full armored back hero. Show an emergency handrail route, a stalled tram shell, amber safety shutters, tool-light objective pips, and one threat partially occluded by steam or cabling.',
+    'Avoid exact ribbed spine light, exact engineering armor silhouette, plasma-cutter pose, big armored protagonist back, necromorph body language, dismemberment gore, and glossy wet-metal corridor cloning.',
+    'The image must feel playable and readable at thumbnail size: decide whether to cross to the tram, seal a hatch, aim a tool-light, restore power, or retreat along the rail. Use amber/green practical lights to separate shapes; do not crush the image into black.',
+  ].join('\n'),
+  'SP12-072': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original stylized rally-game screenshot, not a real rally photo and not a licensed racing sim replay.',
+    'Use a low chase camera through a ruin-slalom stage: battered fictional buggy, roadbook glyph strip, co-driver hazard icons, checkpoint flare, tire plume, split/gear HUD, and a rival dust trail ahead.',
+    'Push the image toward playable game art: exaggerated suspension, carved stone hazard gate, readable racing line, no real vehicle brand silhouette, no naturalistic tourism lighting.',
+    'One racing decision must be readable: brake before the arch, cut through a dust gate, avoid a broken buttress, chase the rival line, or spend boost out of the corner.',
+  ].join('\n'),
+  'SP12-079': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original third-person co-op orbital-drop holdout, not a direct Helldivers clone and not an isometric strategy battlefield.',
+    'Keep squad shooter hold/extract grammar, but change identity layers: ceramic drop pods, weather-balloon drones, glassy insect bunkers, red dust citadel walls, orbital flare pylons, or evacuation beacon cloth. Pick a few, not all.',
+    'Avoid exact stratagem UI, recognizable faction armor, copied bug/robot factions, flag-planting poster poses, and generic military sci-fi key art.',
+    'One readable co-op decision must be present: hold objective, call a drop, revive ally, retreat to extraction, clear a projectile lane, or defend a beacon.',
+  ].join('\n'),
+  'SP12-035': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original vertical defense deckbuilder state, not a direct Monster Train clone and not a generic fantasy card poster.',
+    'Use a stacked lane board with two or three defended lift decks, incoming enemy silhouettes, unit tokens, resource pips, and a hand of wordless card silhouettes along the bottom.',
+    'All cards and UI must be wordless and numberless: icon stamps, colored pips, unit silhouettes, resource dots, floor lanes, and small turn tokens only. No readable card names, no stat numbers, no End Turn label, no exact train-floor UI.',
+    'Give the structure its own identity: bone elevator, furnace cage, cathedral lift, siege tower decks, infernal freight platform, or chained citadel shaft. Pick one strong vehicle/structure logic and make one defensive decision readable.',
+  ].join('\n'),
+  'SP12-051': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original relic deckbuilder turn state, not a direct Slay the Spire clone and not a collectible-card showcase.',
+    'Use a clean 2D card-battle layout with hand silhouettes at bottom, enemies or bazaar event object centered, intent icons above, relic pips, resource counters, and one obvious turn decision.',
+    'All cards and UI must be wordless and numberless: icon stamps, pips, bars, symbolic relic shapes, enemy intent pips, and color frames only. No readable card names, no stat numbers, no exact relic bar UI, no map labels, no button text.',
+    'Give the encounter its own identity: bone-market relics, glass insect charms, rusted pilgrimage tokens, weird merchant altar, or subterranean bazaar stage. Keep the image readable and game-like, not painterly key art.',
+  ].join('\n'),
+  'SP12-074': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original candlebone occult deckbuilder table state, not a direct Inscryption cabin clone, not a shiny digital TCG arena, not a card-store board, and not a gallery of collectible cards.',
+    'Use a low first-person tabletop camera with one invented prop vocabulary: tar-stained cloth grid, chipped ceramic counters, iron teeth, wax diagram circles, bone dice, pinned moth wings, a small altar bowl, or a masked hand silhouette. Pick a few, not all.',
+    'Make all cards and table UI wordless and numberless: icon scratches, dots, pips, silhouette stamps, stains, or carved glyphs only. No English, no readable card names, no stat numbers, no life-point numbers, no phase text, no button labels.',
+    'Avoid glossy holographic cards, attack/defense boxes, official trading-card anatomy, esports board lighting, ornate crystal arenas, huge fantasy summon effects, talking-eye darkness, animal-card grid clone, and exact cabin-table layout.',
+    'The image should feel tactile, low-fi, claustrophobic, adult, and playable: one visible decision state, a few readable lanes, strong dark wood/candle value grouping, and restrained detail.',
+  ].join('\n'),
+  'SP12-080': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original cagewell keep lock-on screenshot, not a direct Dark Souls level clone, not a heroic knight duel, and not a modern fantasy key-art corridor.',
+    'Use old-gen traversal-combat grammar: hooded grave-laborer or rusted pilgrim low in frame, enemy or trap ahead, crooked cage lift, half-sunk iron stairs, shield-height walls, asymmetrical route, readable dodge lane, and sparse abstract HUD.',
+    'Give the keep a different silhouette language: slumped slate walls, green ruin lanterns, damp cloth strips, cagewell void, iron stair ribs, bone scaffold fragments. Pick a few, not all.',
+    'Make it feel played before cinematic: rough early-PS3 material restraint, hostile spacing, one clear next-action decision, open midtones, and HUD limited to bars plus lock ring if needed.',
+    'Avoid centered cathedral vistas, bonfires, famous knight/armor silhouettes, shield-and-sword hero pose, item-slot diamonds, flask bottles, crest icons, gigantic boss silhouette, symmetric arena composition, black-gold palace polish, direct soulslike poster framing, tabletop scenes, card hands, deckbuilder UI, board-game lanes, and collectible cards.',
+  ].join('\n'),
+};
+
+function pack12CardPromptOverride(preset: StyleRuntimePreset) {
+  return PACK12_CARD_PROMPT_OVERRIDES[preset.id] ?? '';
 }
 
 function buildStylePrompt(
@@ -6654,8 +7668,24 @@ function buildStylePrompt(
     .join('\n');
 
   if (pack.id === 'pack_12') {
-    return appendImagegenDenoiseDirective(`Generate one in-engine gameplay screenshot.
-TARGET GAME LOOK: ${targetStyleLabel}
+    const pack12BasePrompt = pack12NormalizeBasePrompt(basePrompt, preset);
+    const pack12CardProfile = pack12CreativeCardProfile(preset);
+    const pack12CardIdentity = pack12CardIdentityTitle(preset);
+    const pack12CreativeBrief = pack12CardProfile
+      ? [
+          'CARD-SPECIFIC ORIGINAL GAMEPLAY BRIEF:',
+          ...pack12CardProfile.brief.map((line) => `- ${line}`),
+        ].join('\n')
+      : '';
+    const pack12CardBrief = pack12CardPromptOverride(preset);
+    const pack12RemixRule = pack12SourceRemixRule(preset, pack12CardIdentity);
+    const pack12VisualFamily = pack12VisualFamilyLock(preset);
+    const pack12Orientation = pack12OrientationSpec(variantSlot);
+    const pack12StyleDnaBoundary = pack12StyleDnaBoundaryRule(pack12CardIdentity, targetStyleLabel);
+    return appendImagegenDenoiseDirective(`${pack12Orientation.lead}
+CARD IDENTITY: ${pack12CardIdentity}
+STYLE ROUTER: ${targetStyleLabel}
+PROMPT ORIENTATION: ${pack12Orientation.label}
 PACK: ${pack.name}
 CATEGORY: ${category}
 ${sessionKey ? `SESSION: ${sessionKey}\n` : ''}MODE: text-to-image
@@ -6665,25 +7695,37 @@ ${cardConceptRule}
 
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
 ${pack06NonAnimeMediumLock ? `${pack06NonAnimeMediumLock}\n` : ''}
-${basePrompt}
+${pack12BasePrompt}
+${pack12RemixRule}
+VISUAL FAMILY LOCK:
+${pack12VisualFamily}
+This visual family is mandatory. If it specifies 2D, pixel, top-down, isometric, fixed-camera, old-gen, fighting-game, deckbuilder, RTS, tower-defense, side-view, low-poly, voxel, or first-person, do not upgrade it into a modern over-the-shoulder cinematic 3D scene.
+
+${pack12CreativeBrief ? `${pack12CreativeBrief}\n` : ''}
+${pack12CardBrief ? `${pack12CardBrief}\n` : ''}
 ${pack15CurrentArtDirection ? `${pack15CurrentArtDirection}\n` : ''}
 
-GAMEPLAY SCREENSHOT CONTRACT:
+GAMEPLAY CARD CONTRACT:
 Render as a plausible playable screencap from an original video game, not as concept art, key art, promo art, poster art, splash art, character sheet, asset render, loading screen, menu screen, or portfolio illustration.
-Use landscape game-camera composition. If later cropped into a card, keep the main gameplay state readable in the center.
+${pack12Orientation.composition}
 Show a real play state: route, cover, lane, interactable, weak point, objective, hazard, timing window, puzzle state, match state, resource pressure, traversal decision, enemy spacing, or squad/vehicle position tied to ${sanitizeStylePromptName(preset.name).toLowerCase()}.
+The visible card should sell "${pack12CardIdentity}" first and only then reveal the broader ${sanitizeStylePromptName(preset.name)} style router through camera, render, HUD, material behavior, and gameplay loop.
 Use a game camera suitable to the preset: third-person, isometric, top-down, side-view, racing chase cam, fixed adventure cam, tactical overview, or over-the-shoulder. Pick one; do not use cinematic poster framing.
-No visible HUD, UI overlay, readable interface, minimap, health bars, subtitles, labels, logos, title text, marketing layout, model-sheet grid, or isolated asset showcase.
-No pixel art, voxel art, retro 8-bit, or low-res sprite rendering unless this exact preset identity explicitly requires it.
+${pack12HudContract(preset)}
+${pack12RenderContract(preset)}
+${pack12HudVariationContract()}
+${pack12CleanImageContract()}
 Stylized blood, violence, weapons, threat, or horror intensity are allowed when the gameplay genre needs them; avoid explicit gore, dismemberment, torture detail, or shock imagery.
 
+${pack12StyleDnaBoundary}
 STYLE DNA: aesthetic=${styleAesthetic}; subject=${styleSubject}; color=${styleColor}; light=${styleLighting}; texture=${styleTexture}; camera=${styleCamera}; mood=${styleMood}; render=${styleRender}; gameplay-features=${styleFeatures}.
+After reading STYLE DNA, return to CARD IDENTITY "${pack12CardIdentity}" and render that fictional screenshot, not the source title.
 
 DIFFERENTIATION:
 Do not reuse another pack_12 prompt composition. Make this screenshot distinct through camera angle, gameplay loop, environment affordance, color script, threat/objective type, and scale.
 Avoid generic fantasy corridor, market aisle, library aisle, camera prop, studio setup, concept-art hero pose, centered character pinup, or pretty environment postcard unless it is clearly playable and preset-specific.
 
-Output only the image, 1536x1024 landscape gameplay screencap.${negative}`);
+${pack12Orientation.output}${negative}`);
   }
 
   if (pack15PunkCard) {
