@@ -124,8 +124,8 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     id: 'pack_17',
     name: 'Medieval Fantasy & Dungeon Zine',
     description:
-      'Medieval fantasy representation styles spanning grimdark kingdoms, hunter gothic horror, acid dungeon zines, rune-tech futures, apocalyptic crusades, gothic wargame fronts, inked dungeon drama, monochrome tarot, and bestiary plates.',
-    presetCount: 52,
+      'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and isometric game aesthetics.',
+    presetCount: 72,
   },
 ] as GeneratedStyleRuntimePackSummary[];
 

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-051
 packId: pack_17
 name: Opal Bone Masquerade
-category: 7. Weird Medieval Editorial
+category: 1. Dark Fantasy & Gothic Courts
 domain: masquerade gothic fantasy
 version: 1
 supportedTasks:
@@ -11,41 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - weird-medieval-editorial
+  - dark-fantasy-and-gothic-courts
   - bone-masquerade
 visualDna:
-  aesthetic: >-
-    Opalescent bone-court fantasy with masked elegance, nacre shimmer, black velvet depth, and
-    predatory etiquette.
-  subject_treatment: >-
-    Transform any prompt subject through mask-like contour discipline, opal-bone highlights, velvet
-    negative space, courtly concealment, and elegant threat while preserving the prompt instead of
-    requiring a masquerade character.
+  aesthetic: Opalescent bone-court fantasy with masked elegance, nacre shimmer, black velvet depth, and predatory etiquette.
+  subject_treatment: Transform any prompt subject through mask-like contour discipline, opal-bone highlights, velvet negative space, courtly concealment, and elegant threat while preserving the prompt instead of requiring a masquerade character.
   color_and_tone: Bone white, opal cyan, pearl violet, black velvet, muted crimson, and tarnished silver.
   lighting_and_shadow: Soft nacre rim light over deep velvet shadow, with small crimson or silver focus accents.
   texture_and_material: Polished bone, nacre, velvet, old ribbon, ceramic glaze, candle wax, and smooth ink.
-  camera_and_composition: >-
-    Mask-like symmetry broken by one off-center threat cue, elegant negative space, and courtly
-    distance applied to any subject type.
-  atmosphere_and_mood: >-
-    Carry the prompt through Seductive, predatory, aristocratic, calm, and uncanny; adult editorial
-    tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval
-    weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Refined gothic editorial illustration with smooth values, crisp silhouettes, and restrained
-    ornament.
-  creative_brief: >-
-    Apply this as a reusable style router over any prompt: preserve the user's subject while adding
-    opal bone masquerade elegance, velvet concealment, predatory court etiquette, and polished
-    gothic restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and
-    intensity, while this preset supplies a style grammar of Opal Bone Masquerade; Opalescent bone
-    court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask
-    like contour discipline, mood, material behavior, framing logic, and denoised medieval-zine
-    finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
-    composition.
-  key_features: >-
-    Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black
-    velvet depth; predatory etiquette; mask like contour discipline
+  camera_and_composition: Mask-like symmetry broken by one off-center threat cue, elegant negative space, and courtly distance applied to any subject type.
+  atmosphere_and_mood: Carry the prompt through Seductive, predatory, aristocratic, calm, and uncanny; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Refined gothic editorial illustration with smooth values, crisp silhouettes, and restrained ornament.
+  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding opal bone masquerade elegance, velvet concealment, predatory court etiquette, and polished gothic restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  key_features: Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline
 avoidRules:
   - ballroom crowd
   - generic mask portrait
@@ -64,20 +42,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-051.webp
 attributes:
-  negativePrompt: >-
-    ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, explicit
-    gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval
-    card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy
-    card art, muddy noisy dark texture
+  negativePrompt: ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: weird-medieval-editorial
-  categoryName: 7. Weird Medieval Editorial
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: masquerade gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - weird-medieval-editorial
+    - dark-fantasy-and-gothic-courts
     - bone-masquerade
   supportedTasks:
     - image_generate

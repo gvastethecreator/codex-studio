@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-010
 packId: pack_17
 name: Surgical Reliquary Horror
-category: 2. Hunter Gothic & Plague Courts
+category: 1. Dark Fantasy & Gothic Courts
 domain: gothic fantasy
 version: 1
 supportedTasks:
@@ -11,44 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - hunter-gothic-and-plague-courts
+  - dark-fantasy-and-gothic-courts
   - reliquary-horror
 visualDna:
-  aesthetic: >-
-    Gothic reliquary horror mixing surgical precision, saintly display cases, and medieval ritual
-    equipment.
-  subject_treatment: >-
-    Transform any subject with surgical-gothic reliquary logic, glass-and-brass accents, ritual
-    restraint, clinical silhouette elongation, and sacred tool geometry without imposing a fixed
-    construct.
+  aesthetic: Gothic reliquary horror mixing surgical precision, saintly display cases, and medieval ritual equipment.
+  subject_treatment: Transform any subject with surgical-gothic reliquary logic, glass-and-brass accents, ritual restraint, clinical silhouette elongation, and sacred tool geometry without imposing a fixed construct.
   color_and_tone: Bone white, old brass, deep umber, oxidized green, black velvet, and minimal red seals.
-  lighting_and_shadow: >-
-    Clear candle key light and cold window accents isolate instruments, faces, and relic silhouettes
-    without murky shadows.
+  lighting_and_shadow: Clear candle key light and cold window accents isolate instruments, faces, and relic silhouettes without murky shadows.
   texture_and_material: Glass reliquaries, polished steel, wax seals, stained parchment, aged wood, and velvet dust.
-  camera_and_composition: >-
-    Symmetrical close framing with shallow depth, controlled object hierarchy, clean glass
-    highlights, and restrained ritual spacing.
-  atmosphere_and_mood: >-
-    Carry the prompt through Clinical, sacred, tense, and taboo without graphic body horror;
-    nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious
-    candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
-  rendering_and_quality: >-
-    Gothic still-life illustration with precise objects, clean linework, visible details, and
-    painterly shadow control.
-  creative_brief: >-
-    Translates any subject into a surgical gothic relic system of tools, glass, ritual, and
-    restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and
-    intensity, while this preset supplies a style grammar of Surgical Reliquary Horror; Gothic
-    reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment;
-    Transform any subject with surgical gothic reliquary logic; glass and brass accents, mood,
-    material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed
-    cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Surgical Reliquary Horror; Gothic reliquary horror mixing surgical precision; saintly display
-    cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic;
-    glass and brass accents
+  camera_and_composition: Symmetrical close framing with shallow depth, controlled object hierarchy, clean glass highlights, and restrained ritual spacing.
+  atmosphere_and_mood: Carry the prompt through Clinical, sacred, tense, and taboo without graphic body horror; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Gothic still-life illustration with precise objects, clean linework, visible details, and painterly shadow control.
+  creative_brief: 'Translates any subject into a surgical gothic relic system of tools, glass, ritual, and restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Surgical Reliquary Horror; Gothic reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic; glass and brass accents, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Surgical Reliquary Horror; Gothic reliquary horror mixing surgical precision; saintly display cases; medieval ritual equipment; Transform any subject with surgical gothic reliquary logic; glass and brass accents
 avoidRules:
   - graphic anatomy
   - modern operating room
@@ -66,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-010.webp
 attributes:
-  negativePrompt: >-
-    graphic anatomy, modern operating room, sci fi machinery, plastic props, explicit gore,
-    watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: graphic anatomy, modern operating room, sci fi machinery, plastic props, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: hunter-gothic-and-plague-courts
-  categoryName: 2. Hunter Gothic & Plague Courts
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - hunter-gothic-and-plague-courts
+    - dark-fantasy-and-gothic-courts
     - reliquary-horror
   supportedTasks:
     - image_generate

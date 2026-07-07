@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vite-plus/test';
 import {
   estimateImageGridItemHeight,
+  resolveImageGridColumnCount,
   resolveImageGridAspectRatio,
   resolveImageGridIntrinsicSize,
+  resolveImageGridTemplateColumns,
   shouldPriorityLoadImageGridItem,
   sortImageGridImages,
 } from './imageGridPresentation';
@@ -71,6 +73,52 @@ describe('imageGridPresentation', () => {
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 0, viewportHeight: 800 })).toBe(true);
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 850, viewportHeight: 800 })).toBe(true);
     expect(shouldPriorityLoadImageGridItem({ estimatedTop: 920, viewportHeight: 800 })).toBe(false);
+  });
+
+  it('resolves columns for each gallery view mode', () => {
+    expect(
+      resolveImageGridColumnCount({
+        viewportWidth: 900,
+        thumbnailSize: 176,
+        itemCount: 12,
+        horizontalPadding: 0,
+        viewMode: 'mosaic',
+      }),
+    ).toBe(4);
+    expect(
+      resolveImageGridColumnCount({
+        viewportWidth: 900,
+        thumbnailSize: 176,
+        itemCount: 12,
+        horizontalPadding: 0,
+        viewMode: 'grid',
+      }),
+    ).toBe(4);
+    expect(
+      resolveImageGridColumnCount({
+        viewportWidth: 900,
+        thumbnailSize: 176,
+        itemCount: 12,
+        horizontalPadding: 0,
+        viewMode: 'cards',
+      }),
+    ).toBe(3);
+    expect(
+      resolveImageGridColumnCount({
+        viewportWidth: 900,
+        thumbnailSize: 176,
+        itemCount: 12,
+        horizontalPadding: 0,
+        viewMode: 'list',
+      }),
+    ).toBe(1);
+  });
+
+  it('resolves template columns by gallery view mode', () => {
+    expect(resolveImageGridTemplateColumns(3, 176, 'mosaic')).toBe('repeat(3, 176px)');
+    expect(resolveImageGridTemplateColumns(3, 176, 'grid')).toBe('repeat(3, minmax(0, 1fr))');
+    expect(resolveImageGridTemplateColumns(3, 176, 'cards')).toBe('repeat(3, minmax(0, 1fr))');
+    expect(resolveImageGridTemplateColumns(3, 176, 'list')).toBe('minmax(0, 1fr)');
   });
 
   it('sorts generated images by explicit gallery actions', () => {

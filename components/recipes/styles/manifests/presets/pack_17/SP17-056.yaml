@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-056
+packId: pack_17
+name: Gutter Saint Scratchcards
+styleAnchors:
+  - Gutter Saint Scratchcards
+  - gutter saint scratch card
+  - white ink devotional horror
+displayName: Gutter Saint Scratchcards
+category: 3. Ink, Tarot & Bestiary Plates
+domain: devotional scratch horror
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - white-ink
+  - devotional-horror
+  - scratch-linework
+visualDna:
+  aesthetic: Devotional gutter-horror cards with black voids, damaged saint geometry, white scratch halos, ragged banners without writing, and cheap holy-object tension.
+  subject_treatment: 'Transform the prompt into a sainted or cursed emblem: figure, beast, relic, mask, weaponless gesture, or object can become a damaged icon, but the preset never requires a saint portrait.'
+  color_and_tone: Black field, chalk white, tarnished gray, pinpricks of rancid gold or dry crimson when needed.
+  lighting_and_shadow: Graphic halo rays, scratched backlight, white edge cuts, and shadow swallowed by matte black.
+  texture_and_material: Scraped ink, chalk dust, broken engraving, rubbed print edges, and restrained distress kept away from noisy darkness.
+  camera_and_composition: Vertical icon-card crop, centered or slightly top-heavy, with a single sacrilegious focal silhouette and no readable devotional text.
+  atmosphere_and_mood: Blasphemous, mournful, devotional, low-rent, and threatening.
+  rendering_and_quality: Cleanly reproduced scratchboard/ink-card finish with controlled ugliness and strong silhouette hierarchy.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gutter Saint Scratchcards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: black devotional card; white scratch halo; damaged icon geometry; gutter holy-object mood; chalk and scrape marks; no text
+avoidRules:
+  - clean church illustration
+  - readable prayer text
+  - cute saint card
+  - golden religious poster
+  - literal martyr gore
+  - stock angel wings
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-056.webp
+attributes:
+  negativePrompt: clean church illustration, readable prayer text, cute saint card, golden religious poster, literal martyr gore, stock angel wings, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: devotional scratch horror
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - white-ink
+    - devotional-horror
+    - scratch-linework
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

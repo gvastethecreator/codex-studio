@@ -23,6 +23,14 @@ export const USER_STYLE_SUPPORTED_TASKS = [
 
 export type UserStylePresetTask = (typeof USER_STYLE_SUPPORTED_TASKS)[number];
 export type UserStyleVisualDnaKey = (typeof USER_STYLE_VISUAL_DNA_KEYS)[number];
+export type UserStyleDraftVisualFieldId = UserStyleVisualDnaKey | 'creative_brief';
+export type UserStyleDraftFieldId =
+  | 'name'
+  | 'category'
+  | 'tags'
+  | 'supportedTasks'
+  | 'avoidRules'
+  | UserStyleDraftVisualFieldId;
 
 export type UserStyleVisualDna = Record<UserStyleVisualDnaKey, string> & {
   creative_brief?: string;
@@ -106,12 +114,23 @@ export type UserStyleDraftAction =
   | 'create_variants'
   | 'audit_style_quality';
 
+export interface CodexStyleReferenceImage {
+  id?: string;
+  name: string;
+  mimeType?: string;
+  sizeBytes?: number;
+  role?: 'style_reference' | 'avoid_reference';
+  notes?: string;
+}
+
 export interface CodexStyleDraftRequest {
   action: UserStyleDraftAction;
   description?: string;
   currentPrompt?: string;
   draft?: Partial<UserStylePresetDraft>;
   selectedStyleLayers?: unknown[];
+  referenceImages?: CodexStyleReferenceImage[];
+  disabledFields?: UserStyleDraftFieldId[];
 }
 
 export interface CodexStyleDraftResponse {

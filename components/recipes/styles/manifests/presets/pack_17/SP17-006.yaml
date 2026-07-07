@@ -3,9 +3,9 @@ id: SP17-006
 packId: pack_17
 name: Ruined Tapestry Legend
 styleAnchors:
-  - 'Ruined Tapestry Legend'
-displayName: 'Ruined Tapestry Mythic'
-category: 1. Dark Fantasy Realms
+  - Ruined Tapestry Legend
+displayName: Ruined Tapestry Mythic
+category: 1. Dark Fantasy & Gothic Courts
 domain: medieval fantasy
 version: 1
 supportedTasks:
@@ -14,41 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - dark-fantasy-realms
+  - dark-fantasy-and-gothic-courts
   - tapestry
 visualDna:
-  aesthetic: >-
-    Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat
-    ceremonial space.
-  subject_treatment: >-
-    Translate any subject into damaged medieval tapestry language with flattened ceremonial space,
-    profile-like simplification, heraldic outlines, faded wool color, and symbolic woven contour.
+  aesthetic: Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial space.
+  subject_treatment: Translate any subject into damaged medieval tapestry language with flattened ceremonial space, profile-like simplification, heraldic outlines, faded wool color, and symbolic woven contour.
   color_and_tone: Faded wool reds, moss green, ochre, smoke blue, dark brown linework, and aged linen base.
-  lighting_and_shadow: >-
-    Flat woven light with shadow described through thread density, border contrast, and dark pattern
-    blocks.
-  texture_and_material: >-
-    Visible fibers, worn edges, stitched contours, frayed borders, thread gaps, and softened
-    pigment.
+  lighting_and_shadow: Flat woven light with shadow described through thread density, border contrast, and dark pattern blocks.
+  texture_and_material: Visible fibers, worn edges, stitched contours, frayed borders, thread gaps, and softened pigment.
   camera_and_composition: Frontal frieze layout, stacked scenes, ornamental borders, and iconic subject placement.
-  atmosphere_and_mood: >-
-    Carry the prompt through Ancient, folkloric, mysterious, and ceremonial; ruined majesty, moral
-    dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: Carry the prompt through Ancient, folkloric, mysterious, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: High-resolution textile illustration preserving woven texture and crisp symbolic readability.
-  creative_brief: >-
-    Reusable visual system for any subject needing damaged medieval tapestry texture, flat mythic
-    silhouette, faded ceremonial color, and symbolic readability. Apply after prompt X: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with
-    mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened
-    ceremonial space; profile like simplification; heraldic outlines; faded wool color, mood,
-    material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed
-    cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic
-    silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial
-    space; profile like simplification; heraldic outlines; faded wool color
+  creative_brief: 'Reusable visual system for any subject needing damaged medieval tapestry texture, flat mythic silhouette, faded ceremonial color, and symbolic readability. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color
 avoidRules:
   - photorealism
   - modern poster layout
@@ -66,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-006.webp
 attributes:
-  negativePrompt: >-
-    photorealism, modern poster layout, smooth digital gradients, anime, explicit gore, watermark,
-    text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card
-    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
-    dark texture
+  negativePrompt: photorealism, modern poster layout, smooth digital gradients, anime, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: dark-fantasy-realms
-  categoryName: 1. Dark Fantasy Realms
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: medieval fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - dark-fantasy-realms
+    - dark-fantasy-and-gothic-courts
     - tapestry
   supportedTasks:
     - image_generate

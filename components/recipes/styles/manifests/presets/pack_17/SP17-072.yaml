@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-072
+packId: pack_17
+name: Endless War Gothic
+styleAnchors:
+  - Endless War Gothic
+  - endless modern war gothic fantasy
+  - trench cathedral grimdark
+displayName: Endless War Gothic
+category: 5. Grimdark Game Systems & Tabletop
+domain: modern endless war gothic fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - modern-war
+  - gothic
+  - grimdark
+visualDna:
+  aesthetic: Endless modern-war gothic where trench geometry, ruined cathedrals, drone silhouettes, gaslight, and medieval heraldic decay merge into permanent conflict without real-world flags.
+  subject_treatment: Preserve prompt X as a war-gothic figure, relic, beast, emplacement, ruined shrine, armored silhouette, or battlefield omen while avoiding fixed soldiers or specific wars.
+  color_and_tone: Mud gray, bone, oxidized green, dull brass, black iron, ember red, smoke blue, and desaturated field cloth.
+  lighting_and_shadow: Overcast battlefield light, ember rim, searchlight slice, and clean open shadows that avoid murky realism.
+  texture_and_material: Mud plates, torn cloth, dented metal, cracked stone, smoke shapes, barbed geometry simplified into readable marks.
+  camera_and_composition: Vertical gothic-wargame card with one symbolic focal subject, trench/cathedral support planes, and no UI or insignia.
+  atmosphere_and_mood: Exhausted, martial, sacred, hopeless, adult, and tactical.
+  rendering_and_quality: Stylized grimdark war illustration with broad value groups, readable silhouettes, controlled grime, and no real-world propaganda.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Endless War Gothic as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: trench cathedral; drone shadow; ruined heraldry; permanent war mood; mud-gray palette; no flags or logos; gothic tactical silhouettes
+avoidRules:
+  - real national flags
+  - readable unit patches
+  - modern propaganda poster
+  - specific real war event
+  - military UI
+  - gun catalog pose
+  - battlefield gore
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-072.webp
+attributes:
+  negativePrompt: real national flags, readable unit patches, modern propaganda poster, specific real war event, military UI, gun catalog pose, battlefield gore, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: modern endless war gothic fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - modern-war
+    - gothic
+    - grimdark
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

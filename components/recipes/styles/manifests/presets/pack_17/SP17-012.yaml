@@ -3,9 +3,9 @@ id: SP17-012
 packId: pack_17
 name: Candlelit Bestiary Court
 styleAnchors:
-  - 'Candlelit Bestiary Court'
-displayName: 'Candlelit Bestiary Gothic'
-category: 2. Hunter Gothic & Plague Courts
+  - Candlelit Bestiary Court
+displayName: Candlelit Bestiary Gothic
+category: 1. Dark Fantasy & Gothic Courts
 domain: gothic fantasy
 version: 1
 supportedTasks:
@@ -14,38 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - hunter-gothic-and-plague-courts
+  - dark-fantasy-and-gothic-courts
   - bestiary-court
 visualDna:
   aesthetic: Gothic courtly fantasy where beasts, nobles, and scholars gather in candlelit bestiary drama.
-  subject_treatment: >-
-    Transform any subject with courtly gothic refinement, bestiary symbolism, candlelit contour
-    hierarchy, velvet-dark material logic, and theatrical restraint without imposing a ruler pose or
-    entourage.
+  subject_treatment: Transform any subject with courtly gothic refinement, bestiary symbolism, candlelit contour hierarchy, velvet-dark material logic, and theatrical restraint without imposing a ruler pose or entourage.
   color_and_tone: Candle gold, velvet black, parchment cream, muted jewel tones, and dark green shadows.
   lighting_and_shadow: Candle groups create glowing faces, clean black corner shapes, and simple theatrical highlights.
   texture_and_material: Fur trims, vellum pages, carved wood, wax, brocade, feathers, claws, and old ink.
-  camera_and_composition: >-
-    Courtly grouping rhythm, council-like spacing, ornate frame pressure, and symbolic hierarchy
-    without requiring banquet layout or clustered figures.
-  atmosphere_and_mood: >-
-    Carry the prompt through Aristocratic, uncanny, theatrical, and secretive; nocturnal
-    aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit
-    ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  camera_and_composition: Courtly grouping rhythm, council-like spacing, ornate frame pressure, and symbolic hierarchy without requiring banquet layout or clustered figures.
+  atmosphere_and_mood: Carry the prompt through Aristocratic, uncanny, theatrical, and secretive; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Luxurious gothic illustration with sharp costume detail and candlelit material richness.
-  creative_brief: >-
-    Reusable visual system for any subject needing courtly medieval gothic polish, bestiary
-    symbolism, candlelit unease, and refined theatrical darkness. Apply after prompt X: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars
-    gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement;
-    bestiary symbolism, mood, material behavior, framing logic, and denoised medieval-zine finish
-    without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
-    composition.
-  key_features: >-
-    Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in
-    candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary
-    symbolism
+  creative_brief: 'Reusable visual system for any subject needing courtly medieval gothic polish, bestiary symbolism, candlelit unease, and refined theatrical darkness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism
 avoidRules:
   - modern ballroom
   - clean fantasy palace
@@ -63,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-012.webp
 attributes:
-  negativePrompt: >-
-    modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, explicit gore,
-    watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: hunter-gothic-and-plague-courts
-  categoryName: 2. Hunter Gothic & Plague Courts
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - hunter-gothic-and-plague-courts
+    - dark-fantasy-and-gothic-courts
     - bestiary-court
   supportedTasks:
     - image_generate

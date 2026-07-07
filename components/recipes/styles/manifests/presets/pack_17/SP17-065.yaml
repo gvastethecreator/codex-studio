@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP17-065
+packId: pack_17
+name: Ashen Isometric ARPG
+styleAnchors:
+  - Ashen Isometric ARPG
+  - dark isometric loot ARPG
+  - ash gothic 2.5D dungeon game
+displayName: Ashen Isometric ARPG
+category: 5. Grimdark Game Systems & Tabletop
+domain: dark isometric action RPG art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - isometric
+  - action-rpg
+  - game-aesthetic
+visualDna:
+  aesthetic: Dark isometric action-RPG style with ashen cathedral floors, readable loot-era silhouettes, smoky depth, and grim fantasy game-camera staging without UI.
+  subject_treatment: Route the prompt into an isometric playable-feeling scene, portrait diorama, creature encounter, relic altar, or dungeon fragment while keeping prompt X as the anchor.
+  color_and_tone: Charcoal, ash gray, old gold, ember orange, bone, cold blue shadow, and controlled crimson accents.
+  lighting_and_shadow: Top-down/isometric key light, ember rim, readable floor planes, and open shadows that avoid black mush.
+  texture_and_material: 'Stylized 2.5D game art materials: stone tiles, cloth, bone, metal, fog, and fire simplified into clean readable planes.'
+  camera_and_composition: Three-quarter isometric card crop with navigable floor read, one focal subject, and no HUD, no cursor, no labels.
+  atmosphere_and_mood: Grim, loot-hungry, cathedral-heavy, occult, and game-native.
+  rendering_and_quality: Polished stylized 2.5D/isometric fantasy game rendering, denoised, not photoreal, not promotional key art.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Ashen Isometric ARPG as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: isometric ARPG camera; ashen gothic floor planes; ember rim; readable game-space depth; no UI; dark fantasy 2.5D finish
+avoidRules:
+  - visible HUD
+  - loot labels
+  - damage numbers
+  - mouse cursor
+  - skill icons
+  - copied game screenshot
+  - photoreal 3D render
+  - character selection screen
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-065.webp
+attributes:
+  negativePrompt: visible HUD, loot labels, damage numbers, mouse cursor, skill icons, copied game screenshot, photoreal 3D render, character selection screen, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: dark isometric action RPG art
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - isometric
+    - action-rpg
+    - game-aesthetic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

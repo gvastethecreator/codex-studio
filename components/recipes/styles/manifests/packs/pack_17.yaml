@@ -1,10 +1,14 @@
 schemaVersion: 1
 id: pack_17
 name: Medieval Fantasy & Dungeon Zine
-description: Medieval fantasy representation styles spanning grimdark kingdoms, hunter gothic horror, acid dungeon zines, rune-tech futures, apocalyptic crusades, gothic wargame fronts, inked dungeon drama, monochrome tarot, and bestiary plates.
+description: >-
+  Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror,
+  weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates,
+  rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and
+  isometric game aesthetics.
 categories:
-  - id: dark-fantasy-realms
-    name: 1. Dark Fantasy Realms
+  - id: dark-fantasy-and-gothic-courts
+    name: 1. Dark Fantasy & Gothic Courts
     presetRefs:
       - pack_17/SP17-001.yaml
       - pack_17/SP17-002.yaml
@@ -12,17 +16,22 @@ categories:
       - pack_17/SP17-004.yaml
       - pack_17/SP17-005.yaml
       - pack_17/SP17-006.yaml
-  - id: hunter-gothic-and-plague-courts
-    name: 2. Hunter Gothic & Plague Courts
-    presetRefs:
       - pack_17/SP17-007.yaml
       - pack_17/SP17-008.yaml
       - pack_17/SP17-009.yaml
       - pack_17/SP17-010.yaml
       - pack_17/SP17-011.yaml
       - pack_17/SP17-012.yaml
-  - id: acid-dungeon-zine
-    name: 3. Acid Dungeon Zine
+      - pack_17/SP17-045.yaml
+      - pack_17/SP17-046.yaml
+      - pack_17/SP17-047.yaml
+      - pack_17/SP17-048.yaml
+      - pack_17/SP17-049.yaml
+      - pack_17/SP17-050.yaml
+      - pack_17/SP17-051.yaml
+      - pack_17/SP17-052.yaml
+  - id: dungeon-zine-and-risograph-prints
+    name: 2. Dungeon Zine & Risograph Prints
     presetRefs:
       - pack_17/SP17-013.yaml
       - pack_17/SP17-014.yaml
@@ -30,28 +39,13 @@ categories:
       - pack_17/SP17-016.yaml
       - pack_17/SP17-017.yaml
       - pack_17/SP17-018.yaml
-  - id: futuristic-medieval-and-rune-tech
-    name: 4. Futuristic Medieval & Rune Tech
-    presetRefs:
-      - pack_17/SP17-019.yaml
-      - pack_17/SP17-020.yaml
-      - pack_17/SP17-021.yaml
-      - pack_17/SP17-022.yaml
-      - pack_17/SP17-023.yaml
-      - pack_17/SP17-024.yaml
-  - id: apocalyptic-wargame-and-inked-dungeon
-    name: 5. Apocalyptic Wargame & Inked Dungeon
-    presetRefs:
-      - pack_17/SP17-025.yaml
-      - pack_17/SP17-026.yaml
-      - pack_17/SP17-027.yaml
-      - pack_17/SP17-028.yaml
-      - pack_17/SP17-029.yaml
-      - pack_17/SP17-030.yaml
-      - pack_17/SP17-031.yaml
-      - pack_17/SP17-032.yaml
-  - id: monochrome-tarot-and-bestiary-plates
-    name: 6. Monochrome Tarot & Bestiary Plates
+      - pack_17/SP17-059.yaml
+      - pack_17/SP17-060.yaml
+      - pack_17/SP17-061.yaml
+      - pack_17/SP17-062.yaml
+      - pack_17/SP17-063.yaml
+  - id: ink-tarot-and-bestiary-plates
+    name: 3. Ink, Tarot & Bestiary Plates
     presetRefs:
       - pack_17/SP17-033.yaml
       - pack_17/SP17-034.yaml
@@ -65,17 +59,41 @@ categories:
       - pack_17/SP17-042.yaml
       - pack_17/SP17-043.yaml
       - pack_17/SP17-044.yaml
-  - id: weird-medieval-editorial
-    name: 7. Weird Medieval Editorial
+      - pack_17/SP17-053.yaml
+      - pack_17/SP17-054.yaml
+      - pack_17/SP17-055.yaml
+      - pack_17/SP17-056.yaml
+      - pack_17/SP17-057.yaml
+      - pack_17/SP17-058.yaml
+  - id: rune-tech-and-apocalyptic-warfronts
+    name: 4. Rune-Tech & Apocalyptic Warfronts
     presetRefs:
-      - pack_17/SP17-045.yaml
-      - pack_17/SP17-046.yaml
-      - pack_17/SP17-047.yaml
-      - pack_17/SP17-048.yaml
-      - pack_17/SP17-049.yaml
-      - pack_17/SP17-050.yaml
-      - pack_17/SP17-051.yaml
-      - pack_17/SP17-052.yaml
+      - pack_17/SP17-019.yaml
+      - pack_17/SP17-020.yaml
+      - pack_17/SP17-021.yaml
+      - pack_17/SP17-022.yaml
+      - pack_17/SP17-023.yaml
+      - pack_17/SP17-024.yaml
+      - pack_17/SP17-025.yaml
+      - pack_17/SP17-026.yaml
+      - pack_17/SP17-027.yaml
+      - pack_17/SP17-028.yaml
+      - pack_17/SP17-029.yaml
+      - pack_17/SP17-030.yaml
+      - pack_17/SP17-031.yaml
+      - pack_17/SP17-032.yaml
+  - id: grimdark-game-systems-and-tabletop
+    name: 5. Grimdark Game Systems & Tabletop
+    presetRefs:
+      - pack_17/SP17-064.yaml
+      - pack_17/SP17-065.yaml
+      - pack_17/SP17-066.yaml
+      - pack_17/SP17-067.yaml
+      - pack_17/SP17-068.yaml
+      - pack_17/SP17-069.yaml
+      - pack_17/SP17-070.yaml
+      - pack_17/SP17-071.yaml
+      - pack_17/SP17-072.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
   - pack_17/SP17-002.yaml
@@ -89,12 +107,43 @@ presetRefs:
   - pack_17/SP17-010.yaml
   - pack_17/SP17-011.yaml
   - pack_17/SP17-012.yaml
+  - pack_17/SP17-045.yaml
+  - pack_17/SP17-046.yaml
+  - pack_17/SP17-047.yaml
+  - pack_17/SP17-048.yaml
+  - pack_17/SP17-049.yaml
+  - pack_17/SP17-050.yaml
+  - pack_17/SP17-051.yaml
+  - pack_17/SP17-052.yaml
   - pack_17/SP17-013.yaml
   - pack_17/SP17-014.yaml
   - pack_17/SP17-015.yaml
   - pack_17/SP17-016.yaml
   - pack_17/SP17-017.yaml
   - pack_17/SP17-018.yaml
+  - pack_17/SP17-059.yaml
+  - pack_17/SP17-060.yaml
+  - pack_17/SP17-061.yaml
+  - pack_17/SP17-062.yaml
+  - pack_17/SP17-063.yaml
+  - pack_17/SP17-033.yaml
+  - pack_17/SP17-034.yaml
+  - pack_17/SP17-035.yaml
+  - pack_17/SP17-036.yaml
+  - pack_17/SP17-037.yaml
+  - pack_17/SP17-038.yaml
+  - pack_17/SP17-039.yaml
+  - pack_17/SP17-040.yaml
+  - pack_17/SP17-041.yaml
+  - pack_17/SP17-042.yaml
+  - pack_17/SP17-043.yaml
+  - pack_17/SP17-044.yaml
+  - pack_17/SP17-053.yaml
+  - pack_17/SP17-054.yaml
+  - pack_17/SP17-055.yaml
+  - pack_17/SP17-056.yaml
+  - pack_17/SP17-057.yaml
+  - pack_17/SP17-058.yaml
   - pack_17/SP17-019.yaml
   - pack_17/SP17-020.yaml
   - pack_17/SP17-021.yaml
@@ -109,23 +158,12 @@ presetRefs:
   - pack_17/SP17-030.yaml
   - pack_17/SP17-031.yaml
   - pack_17/SP17-032.yaml
-  - pack_17/SP17-033.yaml
-  - pack_17/SP17-034.yaml
-  - pack_17/SP17-035.yaml
-  - pack_17/SP17-036.yaml
-  - pack_17/SP17-037.yaml
-  - pack_17/SP17-038.yaml
-  - pack_17/SP17-039.yaml
-  - pack_17/SP17-040.yaml
-  - pack_17/SP17-041.yaml
-  - pack_17/SP17-042.yaml
-  - pack_17/SP17-043.yaml
-  - pack_17/SP17-044.yaml
-  - pack_17/SP17-045.yaml
-  - pack_17/SP17-046.yaml
-  - pack_17/SP17-047.yaml
-  - pack_17/SP17-048.yaml
-  - pack_17/SP17-049.yaml
-  - pack_17/SP17-050.yaml
-  - pack_17/SP17-051.yaml
-  - pack_17/SP17-052.yaml
+  - pack_17/SP17-064.yaml
+  - pack_17/SP17-065.yaml
+  - pack_17/SP17-066.yaml
+  - pack_17/SP17-067.yaml
+  - pack_17/SP17-068.yaml
+  - pack_17/SP17-069.yaml
+  - pack_17/SP17-070.yaml
+  - pack_17/SP17-071.yaml
+  - pack_17/SP17-072.yaml

@@ -3,9 +3,9 @@ id: SP17-042
 packId: pack_17
 name: Tapestry Creature Legend
 styleAnchors:
-  - 'Tapestry Creature Legend'
-displayName: 'Tapestry Creature Mythic'
-category: 6. Monochrome Tarot & Bestiary Plates
+  - Tapestry Creature Legend
+displayName: Tapestry Creature Mythic
+category: 3. Ink, Tarot & Bestiary Plates
 domain: medieval tapestry fantasy
 version: 1
 supportedTasks:
@@ -14,36 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - tapestry-creature
 visualDna:
-  aesthetic: >-
-    Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and
-    quiet narrative panels.
-  subject_treatment: >-
-    Translate any subject into woven legend logic with flat courtly silhouettes, thread-block color,
-    decorative flora rhythm, and archaic profile simplification without requiring a fixed hunt
-    narrative.
+  aesthetic: Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet narrative panels.
+  subject_treatment: Translate any subject into woven legend logic with flat courtly silhouettes, thread-block color, decorative flora rhythm, and archaic profile simplification without requiring a fixed hunt narrative.
   color_and_tone: Linen, faded red, moss green, muted blue, ochre, dark brown outline, and soft cream fields.
   lighting_and_shadow: No cinematic light; use flat woven value and color contrast.
   texture_and_material: Clean woven texture, broad thread-like color blocks, sparse floral details, and no fuzzy noise.
   camera_and_composition: Tapestry panel crop, side-view creature, patterned ground, and decorative border without words.
-  atmosphere_and_mood: >-
-    Carry the prompt through Legendary, courtly, archaic, and quietly uncanny; fatalistic omen calm,
-    scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: Carry the prompt through Legendary, courtly, archaic, and quietly uncanny; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Clean textile-inspired illustration with simplified forms and controlled fabric texture.
-  creative_brief: >-
-    Reusable visual system for any subject needing medieval tapestry flatness, woven color blocks,
-    courtly legend tone, and quiet uncanny form. Apply after prompt X: prompt X supplies subject,
-    action, setting, tone, and intensity, while this preset supplies a style grammar of Tapestry
-    Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic
-    with flat courtly silhouettes; thread block color, mood, material behavior, framing logic, and
-    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend
-    logic with flat courtly silhouettes; thread block color
+  creative_brief: 'Reusable visual system for any subject needing medieval tapestry flatness, woven color blocks, courtly legend tone, and quiet uncanny form. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color
 avoidRules:
   - fuzzy textile noise
   - overcrowded floral carpet
@@ -61,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-042.webp
 attributes:
-  negativePrompt: >-
-    fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth,
-    explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy
-    overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic
-    fantasy card art, muddy noisy dark texture
+  negativePrompt: fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: medieval tapestry fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - tapestry-creature
   supportedTasks:
     - image_generate

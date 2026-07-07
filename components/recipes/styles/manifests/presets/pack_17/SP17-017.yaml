@@ -3,9 +3,9 @@ id: SP17-017
 packId: pack_17
 name: Punk Heraldry Dungeon Cards
 styleAnchors:
-  - 'Punk Heraldry Dungeon Cards'
-displayName: 'Punk Heraldry Dungeon'
-category: 3. Acid Dungeon Zine
+  - Punk Heraldry Dungeon Cards
+displayName: Punk Heraldry Dungeon
+category: 2. Dungeon Zine & Risograph Prints
 domain: dungeon zine
 version: 1
 supportedTasks:
@@ -14,43 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - acid-dungeon-zine
+  - dungeon-zine-and-risograph-prints
   - punk-heraldry
 visualDna:
-  aesthetic: >-
-    Dungeon trading-card punk with medieval heraldry, spiked silhouettes, photocopied borders, and
-    neon spot color.
-  subject_treatment: >-
-    Translate any subject into a punk heraldic emblem with spiked silhouette logic, photocopied
-    contour breaks, loud sigil shapes, and handmade zine attitude without requiring a mascot or
-    fixed prop stack.
+  aesthetic: Dungeon trading-card punk with medieval heraldry, spiked silhouettes, photocopied borders, and neon spot color.
+  subject_treatment: Translate any subject into a punk heraldic emblem with spiked silhouette logic, photocopied contour breaks, loud sigil shapes, and handmade zine attitude without requiring a mascot or fixed prop stack.
   color_and_tone: Clean black ink, aged white, magenta, acid green, violet, and occasional deep red print plate.
   lighting_and_shadow: No realistic light, only flat fields, black hatching, and border-driven contrast.
-  texture_and_material: >-
-    Controlled xerox texture, thick ink outlines, handmade stipple, rough panel borders, and light
-    print scuffs.
-  camera_and_composition: >-
-    Heraldic frontality, centered emblem pressure, chunky frame geometry, and stacked graphic motifs
-    without a literal card-front copy.
-  atmosphere_and_mood: >-
-    Carry the prompt through Loud, occult, collectible, unruly, and dungeon club flavored; abrasive
-    underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Screenprinted zine-card finish with strong icon design, heavy denoise, and controlled print
-    texture.
-  creative_brief: >-
-    Reusable visual system for any subject that needs punchy dungeon card identity, heraldic graphic
-    force, and unruly occult zine energy. Apply after prompt X: prompt X supplies subject, action,
-    setting, tone, and intensity, while this preset supplies a style grammar of Punk Heraldry
-    Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied
-    borders; neon spot color; a punk heraldic emblem with spiked silhouette logic, mood, material
-    behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed
-    relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Punk Heraldry Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked
-    silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette
-    logic
+  texture_and_material: Controlled xerox texture, thick ink outlines, handmade stipple, rough panel borders, and light print scuffs.
+  camera_and_composition: Heraldic frontality, centered emblem pressure, chunky frame geometry, and stacked graphic motifs without a literal card-front copy.
+  atmosphere_and_mood: Carry the prompt through Loud, occult, collectible, unruly, and dungeon club flavored; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Screenprinted zine-card finish with strong icon design, heavy denoise, and controlled print texture.
+  creative_brief: 'Reusable visual system for any subject that needs punchy dungeon card identity, heraldic graphic force, and unruly occult zine energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Punk Heraldry Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette logic, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Punk Heraldry Dungeon Cards; Dungeon trading card punk with medieval heraldry; spiked silhouettes; photocopied borders; neon spot color; a punk heraldic emblem with spiked silhouette logic
 avoidRules:
   - readable letters
   - logo design
@@ -68,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-017.webp
 attributes:
-  negativePrompt: >-
-    readable letters, logo design, clean digital card UI, realistic painting, cute cartoon,
-    watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: readable letters, logo design, clean digital card UI, realistic painting, cute cartoon, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: acid-dungeon-zine
-  categoryName: 3. Acid Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
   domain: dungeon zine
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - acid-dungeon-zine
+    - dungeon-zine-and-risograph-prints
     - punk-heraldry
   supportedTasks:
     - image_generate

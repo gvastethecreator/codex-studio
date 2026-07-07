@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-023
 packId: pack_17
 name: Bio-Arcane Catacomb
-category: 4. Futuristic Medieval & Rune Tech
+category: 4. Rune-Tech & Apocalyptic Warfronts
 domain: futuristic medieval
 version: 1
 supportedTasks:
@@ -11,41 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - futuristic-medieval-and-rune-tech
+  - rune-tech-and-apocalyptic-warfronts
   - bio-arcane
 visualDna:
-  aesthetic: >-
-    Bio-arcane medieval future where catacombs, bone machinery, roots, and rune conduits grow into
-    one system.
-  subject_treatment: >-
-    Transform any subject with bio-arcane medieval biotech, riblike structure, crystal growth
-    accents, cable-vine rhythm, and damp bone-rune material logic without forcing a fixed organism.
+  aesthetic: Bio-arcane medieval future where catacombs, bone machinery, roots, and rune conduits grow into one system.
+  subject_treatment: Transform any subject with bio-arcane medieval biotech, riblike structure, crystal growth accents, cable-vine rhythm, and damp bone-rune material logic without forcing a fixed organism.
   color_and_tone: Bone cream, black soil, muted moss, sickly turquoise, oxidized copper, and dark violet shadow.
   lighting_and_shadow: Bioluminescent accents create simple pocket light inside clean catacomb shadow shapes.
-  texture_and_material: >-
-    Bone, root fiber, damp stone, etched copper, translucent membranes, crystals, and mineral
-    growth.
-  camera_and_composition: >-
-    Riblike depth rhythm, organic arch pressure, centered bio-relic hierarchy, and damp symmetry
-    without requiring a tunnel or fixed organism.
-  atmosphere_and_mood: >-
-    Carry the prompt through Ancient, uncanny, subterranean, and sacred biological; sacred futurism,
-    oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the
-    tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours,
-    and restrained horror.
-  creative_brief: >-
-    Reusable visual system for any subject needing medieval biotech unease, bone growth structure,
-    rune logic, and damp organic material pressure. Apply after prompt X: prompt X supplies subject,
-    action, setting, tone, and intensity, while this preset supplies a style grammar of Bio Arcane
-    Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow
-    into one system; Transform any subject with bio arcane medieval biotech, mood, material
-    behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed
-    relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune
-    conduits grow into one system; Transform any subject with bio arcane medieval biotech
+  texture_and_material: Bone, root fiber, damp stone, etched copper, translucent membranes, crystals, and mineral growth.
+  camera_and_composition: Riblike depth rhythm, organic arch pressure, centered bio-relic hierarchy, and damp symmetry without requiring a tunnel or fixed organism.
+  atmosphere_and_mood: Carry the prompt through Ancient, uncanny, subterranean, and sacred biological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and restrained horror.
+  creative_brief: 'Reusable visual system for any subject needing medieval biotech unease, bone growth structure, rune logic, and damp organic material pressure. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech
 avoidRules:
   - clean sci fi lab
   - cute mushroom village
@@ -63,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-023.webp
 attributes:
-  negativePrompt: >-
-    clean sci fi lab, cute mushroom village, medical gore, bright garden fantasy, explicit gore,
-    watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal
-    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
-    noisy dark texture
+  negativePrompt: clean sci fi lab, cute mushroom village, medical gore, bright garden fantasy, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: futuristic-medieval-and-rune-tech
-  categoryName: 4. Futuristic Medieval & Rune Tech
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
   domain: futuristic medieval
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - futuristic-medieval-and-rune-tech
+    - rune-tech-and-apocalyptic-warfronts
     - bio-arcane
   supportedTasks:
     - image_generate

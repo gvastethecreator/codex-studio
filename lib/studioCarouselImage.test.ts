@@ -2,7 +2,11 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import type { GeneratedImageWithConfig } from '../types';
-import { resolveStudioCarouselDisplaySrc, resolveStudioCarouselImage } from './studioCarouselImage';
+import {
+  resolveStudioCarouselDisplaySrc,
+  resolveStudioCarouselFallbackSrc,
+  resolveStudioCarouselImage,
+} from './studioCarouselImage';
 
 function image(id: string): GeneratedImageWithConfig {
   return {
@@ -43,7 +47,7 @@ describe('resolveStudioCarouselImage', () => {
     ).toBe(first);
   });
 
-  it('uses the original image source for the modal display', () => {
+  it('uses the bounded preview source for the modal display when available', () => {
     const modalImage = {
       ...image('img-1'),
       src: 'http://studio/library/outputs/original.png',
@@ -52,8 +56,23 @@ describe('resolveStudioCarouselImage', () => {
     };
 
     expect(resolveStudioCarouselDisplaySrc({ image: modalImage, isComparing: false })).toBe(
-      modalImage.src,
+      modalImage.preview,
     );
+  });
+
+  it('can fall back to the stored thumbnail when the preview source fails', () => {
+    const modalImage = {
+      ...image('img-1'),
+      src: 'http://studio/library/outputs/missing-original.png',
+      preview: 'http://studio/library/outputs/missing-original.png?variant=thumb&max=1024',
+      thumbnail: 'http://studio/library/outputs/thumbnails/stored-thumb.webp',
+    };
+
+    const displaySrc = resolveStudioCarouselDisplaySrc({ image: modalImage, isComparing: false });
+
+    expect(
+      resolveStudioCarouselFallbackSrc({ image: modalImage, displaySrc, isComparing: false }),
+    ).toBe(modalImage.thumbnail);
   });
 
   it('uses the reference image only while comparing', () => {

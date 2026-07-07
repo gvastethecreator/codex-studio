@@ -3,9 +3,9 @@ id: SP17-025
 packId: pack_17
 name: Mud-Cathedral Crusade
 styleAnchors:
-  - 'Mud-Cathedral Crusade'
-displayName: 'Mud-Cathedral War Gothic'
-category: 5. Apocalyptic Wargame & Inked Dungeon
+  - Mud-Cathedral Crusade
+displayName: Mud-Cathedral War Gothic
+category: 4. Rune-Tech & Apocalyptic Warfronts
 domain: apocalyptic medieval
 version: 1
 supportedTasks:
@@ -14,47 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - apocalyptic-wargame-and-inked-dungeon
+  - rune-tech-and-apocalyptic-warfronts
   - trench-crusade-adjacent
 visualDna:
-  aesthetic: >-
-    Apocalyptic medieval trench crusade with mud-choked cathedrals, black powder smoke, reliquary
-    armor, and martyr banners.
-  subject_treatment: >-
-    Apply apocalyptic crusade styling to any subject through mud-heavy mass, martyr-banner
-    diagonals, reliquary metal accents, smoke-filtered severity, and sacred war pressure without
-    forcing a specific unit.
-  color_and_tone: >-
-    Mud brown, ash black, candle gold, oxidized brass, bone white, and one restrained crimson or
-    teal accent.
-  lighting_and_shadow: >-
-    Simple candle slices, smoke-filtered daylight, and clean battlefield haze separate silhouettes
-    without crushing the darks.
-  texture_and_material: >-
-    Mud, wet wool, tarnished brass, chipped enamel, soot, cracked stone, and controlled etched
-    grime.
-  camera_and_composition: >-
-    Low vertical war-icon framing, shrine-like negative space, banner diagonals, and readable
-    miniature-like silhouette hierarchy.
-  atmosphere_and_mood: >-
-    Carry the prompt through Fanatical, mournful, siege bound, sacred, and brutal without gore;
-    martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted
-    ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
-  rendering_and_quality: >-
-    Painterly-ink hybrid with denoised darks, clean silhouette masses, and readable battlefield
-    materials.
-  creative_brief: >-
-    Reusable visual system for any subject needing trench crusade gravity, sacred smoke, muddy
-    material pressure, and apocalyptic medieval severity. Apply after prompt X: prompt X supplies
-    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mud
-    Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder
-    smoke; reliquary armor; martyr banners; mud heavy mass, mood, material behavior, framing logic,
-    and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black
-    powder smoke; reliquary armor; martyr banners; mud heavy mass
+  aesthetic: Apocalyptic medieval trench crusade with mud-choked cathedrals, black powder smoke, reliquary armor, and martyr banners.
+  subject_treatment: Apply apocalyptic crusade styling to any subject through mud-heavy mass, martyr-banner diagonals, reliquary metal accents, smoke-filtered severity, and sacred war pressure without forcing a specific unit.
+  color_and_tone: Mud brown, ash black, candle gold, oxidized brass, bone white, and one restrained crimson or teal accent.
+  lighting_and_shadow: Simple candle slices, smoke-filtered daylight, and clean battlefield haze separate silhouettes without crushing the darks.
+  texture_and_material: Mud, wet wool, tarnished brass, chipped enamel, soot, cracked stone, and controlled etched grime.
+  camera_and_composition: Low vertical war-icon framing, shrine-like negative space, banner diagonals, and readable miniature-like silhouette hierarchy.
+  atmosphere_and_mood: Carry the prompt through Fanatical, mournful, siege bound, sacred, and brutal without gore; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Painterly-ink hybrid with denoised darks, clean silhouette masses, and readable battlefield materials.
+  creative_brief: 'Reusable visual system for any subject needing trench crusade gravity, sacred smoke, muddy material pressure, and apocalyptic medieval severity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass
 avoidRules:
   - copied franchise armor
   - readable insignia
@@ -72,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-025.webp
 attributes:
-  negativePrompt: >-
-    copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise,
-    explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: apocalyptic-wargame-and-inked-dungeon
-  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
   domain: apocalyptic medieval
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - apocalyptic-wargame-and-inked-dungeon
+    - rune-tech-and-apocalyptic-warfronts
     - trench-crusade-adjacent
   supportedTasks:
     - image_generate

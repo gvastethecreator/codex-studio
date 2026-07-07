@@ -1,5 +1,7 @@
 import type {
   CreateUserStylePresetInput,
+  CodexStyleReferenceImage,
+  UserStyleDraftFieldId,
   UserStylePreset,
   UserStylePresetDraft,
   UserStylePresetSource,
@@ -34,6 +36,7 @@ export const USER_STYLE_DNA_FIELDS: Array<{
 
 const DEFAULT_SUPPORTED_TASKS = ['image_generate', 'image_edit', 'style_preset_card'] as const;
 const DEFAULT_AVOID_RULES = ['watermark', 'readable text', 'logo', 'signature'];
+const MAX_REFERENCE_SUMMARY_ITEMS = 12;
 
 const DEFAULT_VISUAL_DNA: Record<UserStyleVisualDnaKey, string> = {
   aesthetic: 'Reusable custom art direction with a clear visual thesis.',
@@ -82,6 +85,28 @@ function splitList(value: string | string[] | null | undefined) {
   return uniqueList((value ?? '').split(/[,;\n]/g));
 }
 
+function readableFileStem(name: string) {
+  return cleanText(
+    name
+      .replace(/\.[a-z0-9]+$/i, '')
+      .replace(/[_-]+/g, ' ')
+      .replace(/\s+/g, ' '),
+  );
+}
+
+function titleFromReferenceImages(referenceImages: CodexStyleReferenceImage[]) {
+  const first = referenceImages.map((image) => readableFileStem(image.name)).find(Boolean);
+  return first ? `${first} Style Study` : 'Reference Style Study';
+}
+
+function referenceTags(referenceImages: CodexStyleReferenceImage[]) {
+  return uniqueList([
+    'reference-derived',
+    'custom-style',
+    ...referenceImages.flatMap((image) => readableFileStem(image.name).split(/\s+/g).slice(0, 3)),
+  ]).slice(0, 12);
+}
+
 function readPresetTags(preset: StyleRuntimePreset) {
   const ui = preset.ui;
   if (!isRecord(ui) || !Array.isArray(ui.tags)) return [];
@@ -117,6 +142,106 @@ export function createEmptyUserStyleDraft(): UserStylePresetDraft {
     }),
     avoidRules: DEFAULT_AVOID_RULES,
     warnings: [],
+  };
+}
+
+export function createUserStyleReferenceImageSummary(
+  referenceImages: CodexStyleReferenceImage[] = [],
+) {
+  const lines = referenceImages.slice(0, MAX_REFERENCE_SUMMARY_ITEMS).map((image, index) => {
+    const name = cleanText(image.name, `reference ${index + 1}`);
+    const notes = cleanText(image.notes);
+    const role = image.role === 'avoid_reference' ? 'avoid' : 'style';
+    return notes ? `${index + 1}. ${name} (${role}): ${notes}` : `${index + 1}. ${name} (${role})`;
+  });
+
+  if (lines.length === 0) return '';
+
+  return [
+    `Reference image set: ${lines.length} item${lines.length === 1 ? '' : 's'}.`,
+    ...lines,
+    'Distill only transferable visual DNA: mark-making, palette, lighting, material behavior, composition grammar, mood, and finish. Do not preserve pose, exact framing, camera angle, source characters, logos, readable text, or the original scene composition.',
+  ].join('\n');
+}
+
+export function createUserStyleDraftFromReferenceImages(
+  referenceImages: CodexStyleReferenceImage[],
+  description = '',
+): UserStylePresetDraft {
+  const cleanDescription = cleanText(description);
+  const summary = createUserStyleReferenceImageSummary(referenceImages);
+  const concept = cleanDescription || titleFromReferenceImages(referenceImages);
+
+  return {
+    name: titleFromReferenceImages(referenceImages),
+    category: 'Reference-Derived Styles',
+    tags: referenceTags(referenceImages),
+    supportedTasks: [...DEFAULT_SUPPORTED_TASKS],
+    visualDna: createUserStyleVisualDna({
+      aesthetic: `${concept} translated into a reusable style system instead of a fixed image remake.`,
+      subject_treatment:
+        'Preserve the requested prompt subject while borrowing only transferable silhouette rhythm, anatomy simplification, shape language, and stylization rules from the references.',
+      color_and_tone:
+        'Extract palette relationships, contrast logic, value grouping, and accent behavior from the reference set without copying one exact source color layout.',
+      lighting_and_shadow:
+        'Translate the reference light grammar into portable shadow structure, edge emphasis, and highlight discipline.',
+      texture_and_material:
+        'Extract mark texture, material finish, grain, ink, paint, pixel, print, or render surface behavior as style evidence.',
+      camera_and_composition:
+        'Use composition grammar from the references as flexible staging logic, not as locked framing or pose replication.',
+      atmosphere_and_mood:
+        'Carry mood, pressure, restraint, theatricality, or unease as a style lens while allowing new scenes and subjects.',
+      rendering_and_quality:
+        'Keep the result polished, deliberate, artifact-free, and denoised where appropriate; avoid generic filters and noisy texture pasted over the image.',
+      creative_brief: cleanText(
+        [summary, cleanDescription ? `Creator note: ${cleanDescription}` : '']
+          .filter(Boolean)
+          .join('\n\n'),
+        'Reference-driven reusable custom style system.',
+      ),
+    }),
+    avoidRules: [
+      ...DEFAULT_AVOID_RULES,
+      'source pose lock',
+      'source composition lock',
+      'source character likeness',
+      'prompt literal card reuse',
+    ],
+    warnings:
+      referenceImages.length > 0
+        ? [
+            'Review reference extraction before saving; references should define style, not content.',
+          ]
+        : [],
+  };
+}
+
+export function mergeUserStyleDraftWithDisabledFields(
+  current: UserStylePresetDraft,
+  incoming: UserStylePresetDraft,
+  disabledFields: UserStyleDraftFieldId[] = [],
+): UserStylePresetDraft {
+  const disabled = new Set(disabledFields);
+  const visualDna = createUserStyleVisualDna(current.visualDna);
+
+  for (const field of USER_STYLE_DNA_FIELDS) {
+    if (!disabled.has(field.key)) visualDna[field.key] = incoming.visualDna[field.key];
+  }
+
+  if (!disabled.has('creative_brief')) {
+    visualDna.creative_brief = incoming.visualDna.creative_brief;
+  }
+
+  return {
+    name: disabled.has('name') ? current.name : incoming.name,
+    category: disabled.has('category') ? current.category : incoming.category,
+    tags: disabled.has('tags') ? [...current.tags] : [...incoming.tags],
+    supportedTasks: disabled.has('supportedTasks')
+      ? [...current.supportedTasks]
+      : [...incoming.supportedTasks],
+    visualDna,
+    avoidRules: disabled.has('avoidRules') ? [...current.avoidRules] : [...incoming.avoidRules],
+    warnings: uniqueList([...current.warnings, ...incoming.warnings]),
   };
 }
 

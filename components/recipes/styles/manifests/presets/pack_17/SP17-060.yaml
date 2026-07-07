@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-060
+packId: pack_17
+name: Toxic Lime Crawl Flyer
+styleAnchors:
+  - Toxic Lime Crawl Flyer
+  - toxic lime dungeon flyer
+  - rough acid crawl print
+displayName: Toxic Lime Crawl Flyer
+category: 2. Dungeon Zine & Risograph Prints
+domain: toxic neon dungeon flyer
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - acid-dungeon
+  - toxic-lime
+visualDna:
+  aesthetic: Toxic lime crawl zine style with hot magenta misprint shadows, grotesque frog demons, horned masks, cultists, crude weapons, chains, and nasty-bright flat panels.
+  subject_treatment: Preserve the prompt subject as a crude dungeon creature, masked figure, crawling beast, occult warrior, or compact scenelet with body-first zine energy; avoid reducing it to a trap glyph, mascot logo, or geometric flyer emblem.
+  color_and_tone: Toxic lime, black, warm off-white, hot magenta accents, and occasional cyan misprint.
+  lighting_and_shadow: Poster-flat light, lime glow as ink shape, and black mass for shadow.
+  texture_and_material: Rough screenprint, risograph offset, crushed but clean black ink, large halftone patches, and minimal scratch.
+  camera_and_composition: Vertical old-school monster-card crop with a large awkward body, flat lime background, jagged black silhouette, and support props that bend with the figure.
+  atmosphere_and_mood: Aggressive, cheap, occult-punk, playable, and nasty-bright.
+  rendering_and_quality: Rough acid riso/xerox finish with broken black contour, halftone dirt, paper tooth, and controlled denoise while staying ugly, handmade, and readable.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toxic Lime Crawl Flyer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: toxic lime panel; hot magenta offset; grotesque dungeon freaks; chains and crude weapons; black xerox ink; crooked OSR figure crop
+avoidRules:
+  - trap-glyph emblem
+  - legible concert poster text
+  - polished vector mascot
+  - straight geometric poster layout
+  - smooth neon glow realism
+  - cyberpunk city
+  - overly detailed acid zine
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-060.webp
+attributes:
+  negativePrompt: trap-glyph emblem, legible concert poster text, polished vector mascot, straight geometric poster layout, smooth neon glow realism, cyberpunk city, overly detailed acid zine, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: toxic neon dungeon flyer
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - acid-dungeon
+    - toxic-lime
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

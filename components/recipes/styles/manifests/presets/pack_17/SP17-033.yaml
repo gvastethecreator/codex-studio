@@ -3,9 +3,9 @@ id: SP17-033
 packId: pack_17
 name: Bone Tarot Horror Arcana
 styleAnchors:
-  - 'Bone Tarot Horror Arcana'
-displayName: 'Bone Tarot Arcana'
-category: 6. Monochrome Tarot & Bestiary Plates
+  - Bone Tarot Horror Arcana
+displayName: Bone Tarot Arcana
+category: 3. Ink, Tarot & Bestiary Plates
 domain: monochrome medieval horror
 version: 1
 supportedTasks:
@@ -14,43 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - tarot-horror
 visualDna:
-  aesthetic: >-
-    Black and white horror tarot card language with medieval bones, veils, crowns, moons, and quiet
-    omen symbols.
-  subject_treatment: >-
-    Transform any subject with bone tarot horror arcana: bone-crown motifs, mothlike omen symmetry,
-    tower-like verticality, veiled-beast austerity, and textless occult icon order without forcing a
-    fixed saint or beast.
-  color_and_tone: >-
-    Warm ivory paper, clean black ink, open white space, and optional pale gray wash kept smooth and
-    sparse.
+  aesthetic: Black and white horror tarot card language with medieval bones, veils, crowns, moons, and quiet omen symbols.
+  subject_treatment: 'Transform any subject with bone tarot horror arcana: bone-crown motifs, mothlike omen symmetry, tower-like verticality, veiled-beast austerity, and textless occult icon order without forcing a fixed saint or beast.'
+  color_and_tone: Warm ivory paper, clean black ink, open white space, and optional pale gray wash kept smooth and sparse.
   lighting_and_shadow: Flat symbolic light, clean shadow blocks, and no realistic night lighting.
-  texture_and_material: >-
-    Smooth paper, crisp ink, simple engraving marks, and tidy white gaps instead of dirty xerox
-    grain.
-  camera_and_composition: >-
-    Centered tarot-card symmetry, tall vertical frame, simple arch or moon shape, and no readable
-    titles or numbers.
-  atmosphere_and_mood: >-
-    Carry the prompt through Ominous, devotional, quiet, fatalistic, and non graphic; fatalistic
-    omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic
-    restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Clean monochrome illustration with controlled line weight, large shapes, and limited mark
-    density.
-  creative_brief: >-
-    Original horror tarot visual system for medieval omens, relics, saints, beasts, or occult card
-    imagery without text. Apply after prompt X: prompt X supplies subject, action, setting, tone,
-    and intensity, while this preset supplies a style grammar of Bone Tarot Horror Arcana; Black and
-    white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols,
-    mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a
-    fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils;
-    crowns; moons; quiet omen symbols
+  texture_and_material: Smooth paper, crisp ink, simple engraving marks, and tidy white gaps instead of dirty xerox grain.
+  camera_and_composition: Centered tarot-card symmetry, tall vertical frame, simple arch or moon shape, and no readable titles or numbers.
+  atmosphere_and_mood: Carry the prompt through Ominous, devotional, quiet, fatalistic, and non graphic; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Clean monochrome illustration with controlled line weight, large shapes, and limited mark density.
+  creative_brief: 'Original horror tarot visual system for medieval omens, relics, saints, beasts, or occult card imagery without text. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols
 avoidRules:
   - readable tarot labels
   - roman numerals
@@ -67,20 +43,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-033.webp
 attributes:
-  negativePrompt: >-
-    readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, explicit
-    gore, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card
-    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
-    dark texture
+  negativePrompt: readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, explicit gore, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: monochrome medieval horror
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - tarot-horror
   supportedTasks:
     - image_generate

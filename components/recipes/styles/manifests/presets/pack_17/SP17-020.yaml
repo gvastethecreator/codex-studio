@@ -3,9 +3,9 @@ id: SP17-020
 packId: pack_17
 name: Techno Crusader Armor
 styleAnchors:
-  - 'Techno Crusader Armor'
-displayName: 'Techno Reliquary Armor'
-category: 4. Futuristic Medieval & Rune Tech
+  - Techno Crusader Armor
+displayName: Techno Reliquary Armor
+category: 4. Rune-Tech & Apocalyptic Warfronts
 domain: futuristic medieval
 version: 1
 supportedTasks:
@@ -14,43 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - futuristic-medieval-and-rune-tech
+  - rune-tech-and-apocalyptic-warfronts
   - techno-crusader
 visualDna:
-  aesthetic: >-
-    Futuristic crusader armor with medieval plate grammar, lit sigils, modular joints, and ritual
-    tech.
-  subject_treatment: >-
-    Transform any subject with techno-crusader armor language: sealed plate segmentation,
-    servo-joint rhythm, relic-battery accents, tabard-like planes, oath-hardware geometry, and
-    faceless devotional tech without requiring a full paladin suit.
+  aesthetic: Futuristic crusader armor with medieval plate grammar, lit sigils, modular joints, and ritual tech.
+  subject_treatment: 'Transform any subject with techno-crusader armor language: sealed plate segmentation, servo-joint rhythm, relic-battery accents, tabard-like planes, oath-hardware geometry, and faceless devotional tech without requiring a full paladin suit.'
   color_and_tone: Black steel, off-white cloth, red seal accents, amber LEDs, and cold blue edge light.
   lighting_and_shadow: Hard rim light and simple seam glow define armor planes while keeping all major details visible.
-  texture_and_material: >-
-    Ceramic plating, scratched steel, woven tabards, rubberized joints, enamel symbols, and dusty
-    circuitry.
-  camera_and_composition: >-
-    Three-quarter armor-design hierarchy, low heroic angle, optional helm or shield geometry, and
-    strong heraldic symmetry without requiring a full suit showcase.
-  atmosphere_and_mood: >-
-    Carry the prompt through Disciplined, militant, sacred, and technological; sacred futurism,
-    oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the
-    tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Armored fantasy illustration with clean silhouette, defined linework, tactile materials, and
-    limited VFX.
-  creative_brief: >-
-    Route any subject through techno crusader armor language: preserve the prompt while adding
-    sealed plate rhythm, oath hardware, relic batteries, servo geometry, and future medieval
-    devotion without requiring a knight suit. Apply after prompt X: prompt X supplies subject,
-    action, setting, tone, and intensity, while this preset supplies a style grammar of Techno
-    Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular
-    joints; ritual tech; servo joint rhythm, mood, material behavior, framing logic, and denoised
-    medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text,
-    or sample-card composition.
-  key_features: >-
-    Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils;
-    modular joints; ritual tech; servo joint rhythm
+  texture_and_material: Ceramic plating, scratched steel, woven tabards, rubberized joints, enamel symbols, and dusty circuitry.
+  camera_and_composition: Three-quarter armor-design hierarchy, low heroic angle, optional helm or shield geometry, and strong heraldic symmetry without requiring a full suit showcase.
+  atmosphere_and_mood: Carry the prompt through Disciplined, militant, sacred, and technological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Armored fantasy illustration with clean silhouette, defined linework, tactile materials, and limited VFX.
+  creative_brief: 'Route any subject through techno crusader armor language: preserve the prompt while adding sealed plate rhythm, oath hardware, relic batteries, servo geometry, and future medieval devotion without requiring a knight suit. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm
 avoidRules:
   - generic space marine
   - smooth plastic suit
@@ -68,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-020.webp
 attributes:
-  negativePrompt: >-
-    generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, explicit
-    gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt
-    literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art,
-    muddy noisy dark texture
+  negativePrompt: generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: futuristic-medieval-and-rune-tech
-  categoryName: 4. Futuristic Medieval & Rune Tech
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
   domain: futuristic medieval
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - futuristic-medieval-and-rune-tech
+    - rune-tech-and-apocalyptic-warfronts
     - techno-crusader
   supportedTasks:
     - image_generate

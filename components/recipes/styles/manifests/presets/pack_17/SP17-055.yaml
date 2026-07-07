@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-055
+packId: pack_17
+name: Crooked White Ink Horror Cards
+styleAnchors:
+  - Crooked White Ink Horror Cards
+  - crude white ink horror card
+  - grotesque bad drawing black ground
+displayName: Crooked White Ink Horror Cards
+category: 3. Ink, Tarot & Bestiary Plates
+domain: grotesque crude horror ink
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - white-ink
+  - horror-card
+  - crude-linework
+visualDna:
+  aesthetic: 'Creepy badly drawn horror-card language that still feels art-directed: lopsided white ink, warped anatomy, blunt shapes, black ground, and grotesque amateur pressure.'
+  subject_treatment: Keep the user subject but deform it through crude wrong proportions, uneven line pressure, crooked symmetry, childish threat marks, and grotesque silhouette logic without turning it into a fixed monster mascot.
+  color_and_tone: Black ground, dirty bone-white line, small gray smears, occasional dried red or sick yellow pin accent only when useful.
+  lighting_and_shadow: No realistic lighting; shape appears through ugly white outline, scratch patches, and abrupt graphic shadow breaks.
+  texture_and_material: Messy dry brush, shaky nib, scuffed ink, crude stipple, bad registration, and clean enough reproduction to stay premium rather than accidental noise.
+  camera_and_composition: Vertical horror card with one warped focal subject, awkward empty margins, off-center pressure, and primitive border fragments with no letters.
+  atmosphere_and_mood: Grotesque, adult, nasty, desperate, and uncanny; funny only in a sick handmade way.
+  rendering_and_quality: High-quality reproduction of deliberately crude white-ink drawing, readable at thumbnail size, denoised black fields.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crooked White Ink Horror Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: bad-good drawing; crooked white ink; grotesque anatomy; black empty margins; crude horror card pressure; controlled messy finish
+avoidRules:
+  - cute doodle
+  - kids horror
+  - polished clean vector
+  - literal clown face
+  - overly competent anatomy
+  - random noise masquerading as linework
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-055.webp
+attributes:
+  negativePrompt: cute doodle, kids horror, polished clean vector, literal clown face, overly competent anatomy, random noise masquerading as linework, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: grotesque crude horror ink
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - white-ink
+    - horror-card
+    - crude-linework
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

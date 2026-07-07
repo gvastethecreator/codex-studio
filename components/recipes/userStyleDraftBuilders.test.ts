@@ -2,9 +2,12 @@ import { describe, expect, it } from 'vitest';
 import { createSelectedStyleLayer, type SelectedStyleSlot } from './styleLayerComposer';
 import {
   createEmptyUserStyleDraft,
+  createUserStyleDraftFromReferenceImages,
   createUserStyleDraftFromBlend,
+  createUserStyleReferenceImageSummary,
   createUserStyleInputFromDraft,
   createUserStyleInputFromRuntimePreset,
+  mergeUserStyleDraftWithDisabledFields,
 } from './userStyleDraftBuilders';
 import type { StyleRuntimePreset } from './styles/runtimeTypes';
 
@@ -73,5 +76,61 @@ describe('userStyleDraftBuilders', () => {
     expect(draft.tags).toContain('blend');
     expect(draft.visualDna.aesthetic).toContain('Ink Circuit 0.75');
     expect(draft.avoidRules).toEqual(['watermark', 'logo']);
+  });
+
+  it('summarizes reference images as transferable style evidence', () => {
+    const summary = createUserStyleReferenceImageSummary([
+      {
+        id: 'ref-1',
+        name: 'black_tarot_card.png',
+        mimeType: 'image/png',
+        notes: 'white micron lines over deep black negative space',
+      },
+    ]);
+
+    expect(summary).toContain('black_tarot_card.png');
+    expect(summary).toContain('transferable visual DNA');
+    expect(summary).toContain('Do not preserve pose');
+  });
+
+  it('creates a reference-derived draft without locking the source image', () => {
+    const draft = createUserStyleDraftFromReferenceImages([
+      {
+        id: 'ref-1',
+        name: 'grim-bestiary-plate.webp',
+      },
+    ]);
+
+    expect(draft.name).toBe('grim bestiary plate Style Study');
+    expect(draft.category).toBe('Reference-Derived Styles');
+    expect(draft.tags).toContain('reference-derived');
+    expect(draft.avoidRules).toContain('source composition lock');
+  });
+
+  it('preserves disabled fields when applying an assisted draft', () => {
+    const current = createEmptyUserStyleDraft();
+    const incoming = {
+      ...current,
+      name: 'Incoming Codex Draft',
+      tags: ['incoming'],
+      visualDna: {
+        ...current.visualDna,
+        color_and_tone: 'acid green on black',
+        creative_brief: 'Incoming brief.',
+      },
+      avoidRules: ['watermark', 'source pose lock'],
+    };
+
+    const merged = mergeUserStyleDraftWithDisabledFields(current, incoming, [
+      'name',
+      'color_and_tone',
+      'avoidRules',
+    ]);
+
+    expect(merged.name).toBe('Custom Style');
+    expect(merged.tags).toEqual(['incoming']);
+    expect(merged.visualDna.color_and_tone).toBe(current.visualDna.color_and_tone);
+    expect(merged.visualDna.creative_brief).toBe('Incoming brief.');
+    expect(merged.avoidRules).toEqual(current.avoidRules);
   });
 });

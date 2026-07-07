@@ -3,9 +3,9 @@ id: SP17-009
 packId: pack_17
 name: Crimson Moon Alley Gothic
 styleAnchors:
-  - 'Crimson Moon Alley Gothic'
-displayName: 'Crimson Moon Gothic'
-category: 2. Hunter Gothic & Plague Courts
+  - Crimson Moon Alley Gothic
+displayName: Crimson Moon Gothic
+category: 1. Dark Fantasy & Gothic Courts
 domain: gothic fantasy
 version: 1
 supportedTasks:
@@ -14,46 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - hunter-gothic-and-plague-courts
+  - dark-fantasy-and-gothic-courts
   - crimson-moon
 visualDna:
-  aesthetic: >-
-    Gothic fantasy noir under a crimson moon, mixing medieval alleys, wrought iron, and supernatural
-    fog.
-  subject_treatment: >-
-    Transform any subject with aristocratic gothic-noir tension, crimson rim halos, wrought-iron
-    contour accents, nocturnal elegance, and predatory poise without requiring a fixed persona or
-    scene layout.
-  color_and_tone: >-
-    Moonlit lavender gray, bruised burgundy, dusty rose highlights, black iron contours, old brick
-    red, and one warm lantern core.
-  lighting_and_shadow: >-
-    Crimson moon backlight forms a clean halo, lantern glow opens the torso, and shadows stay broad
-    instead of murky.
-  texture_and_material: >-
-    Wet brick, velvet cloak, moth-wing powder, iron keys, carved balcony stone, and smooth graphic
-    fog.
-  camera_and_composition: >-
-    Upward gothic framing, crescent-moon negative space, winglike silhouette rhythm, and tiny-mask
-    scale notes only when the subject supports them.
-  atmosphere_and_mood: >-
-    Carry the prompt through Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal
-    aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit
-    ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and
-    controlled red accents.
-  creative_brief: >-
-    Reusable visual system for any subject needing crimson moon symbolism, gothic noir tension,
-    elegant menace, and medieval nocturne atmosphere. Apply after prompt X: prompt X supplies
-    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
-    Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys;
-    wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension,
-    mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a
-    fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys;
-    wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension
+  aesthetic: Gothic fantasy noir under a crimson moon, mixing medieval alleys, wrought iron, and supernatural fog.
+  subject_treatment: Transform any subject with aristocratic gothic-noir tension, crimson rim halos, wrought-iron contour accents, nocturnal elegance, and predatory poise without requiring a fixed persona or scene layout.
+  color_and_tone: Moonlit lavender gray, bruised burgundy, dusty rose highlights, black iron contours, old brick red, and one warm lantern core.
+  lighting_and_shadow: Crimson moon backlight forms a clean halo, lantern glow opens the torso, and shadows stay broad instead of murky.
+  texture_and_material: Wet brick, velvet cloak, moth-wing powder, iron keys, carved balcony stone, and smooth graphic fog.
+  camera_and_composition: Upward gothic framing, crescent-moon negative space, winglike silhouette rhythm, and tiny-mask scale notes only when the subject supports them.
+  atmosphere_and_mood: Carry the prompt through Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled red accents.
+  creative_brief: 'Reusable visual system for any subject needing crimson moon symbolism, gothic noir tension, elegant menace, and medieval nocturne atmosphere. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension
 avoidRules:
   - neon cyberpunk
   - modern streetwear
@@ -71,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-009.webp
 attributes:
-  negativePrompt: >-
-    neon cyberpunk, modern streetwear, clean daylight, cute cartoon, explicit gore, watermark, text,
-    vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card
-    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
-    dark texture
+  negativePrompt: neon cyberpunk, modern streetwear, clean daylight, cute cartoon, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: hunter-gothic-and-plague-courts
-  categoryName: 2. Hunter Gothic & Plague Courts
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - hunter-gothic-and-plague-courts
+    - dark-fantasy-and-gothic-courts
     - crimson-moon
   supportedTasks:
     - image_generate

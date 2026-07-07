@@ -16,6 +16,10 @@ import {
   IconPhotoOff as ImageOff,
   IconPhoto as Photo,
   IconArrowsSort as ArrowUpDown,
+  IconLayoutCards as LayoutCards,
+  IconLayoutCollage as LayoutCollage,
+  IconLayoutGrid as LayoutGrid,
+  IconLayoutList as LayoutList,
   IconSquareCheck as CheckSquare,
   IconLoader2 as Loader2,
   IconSquare as Square,
@@ -31,6 +35,7 @@ import {
 } from '../lib/catalogCardActionSurface';
 import {
   DEFAULT_THUMBNAIL_SIZE,
+  DEFAULT_IMAGE_GRID_VIEW_MODE,
   IMAGE_GRID_COLUMN_GAP,
   MAX_THUMBNAIL_SIZE,
   MIN_THUMBNAIL_SIZE,
@@ -44,6 +49,7 @@ import {
   shouldPriorityLoadImageGridItem,
   sortImageGridImages,
   type ImageGridSortOption,
+  type ImageGridViewMode,
 } from '../lib/imageGridPresentation';
 
 interface ImageItemProps {
@@ -59,6 +65,8 @@ interface ImageItemProps {
   transitionName?: string;
   alwaysShowActions?: boolean;
   priorityLoad?: boolean;
+  viewMode: ImageGridViewMode;
+  thumbnailSize: number;
 }
 
 const ImageItem: React.FC<ImageItemProps> = React.memo(
@@ -75,6 +83,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
     transitionName,
     alwaysShowActions = false,
     priorityLoad = false,
+    viewMode,
+    thumbnailSize,
   }) => {
     const itemRef = useRef<HTMLDivElement>(null);
     const [copiedPrompt, setCopiedPrompt] = useState(false);
@@ -95,6 +105,24 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       alwaysShowActions,
       isActionSurfaceActive,
     });
+    const isGridView = viewMode === 'grid';
+    const isListView = viewMode === 'list';
+    const isCardView = viewMode === 'cards';
+    const frameAspectRatio = isGridView || isListView ? '1 / 1' : imageAspectRatio;
+    const listThumbnailSize = Math.max(88, Math.min(136, Math.round(thumbnailSize * 0.66)));
+    const promptText = image.config.prompt?.trim() || 'Untitled image';
+    const dimensionsLabel =
+      typeof image.width === 'number' &&
+      Number.isFinite(image.width) &&
+      image.width > 0 &&
+      typeof image.height === 'number' &&
+      Number.isFinite(image.height) &&
+      image.height > 0
+        ? `${image.width}x${image.height}`
+        : null;
+    const metaItems = [image.config.aspectRatio, dimensionsLabel, image.config.model].filter(
+      Boolean,
+    );
 
     React.useEffect(() => {
       const timeout = timeoutRef.current;
@@ -151,6 +179,210 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
       timeoutRef.current = window.setTimeout(() => setCopiedPrompt(false), 2000);
     };
 
+    const renderImageFrame = ({
+      frameClassName,
+      imageClassName = 'block h-full w-full cursor-pointer object-cover',
+      style,
+    }: {
+      frameClassName: string;
+      imageClassName?: string;
+      style?: React.CSSProperties;
+    }) => {
+      const frameStyle = {
+        aspectRatio: frameAspectRatio,
+        viewTransitionName: transitionName,
+        ...style,
+      };
+
+      return imageLoadFailed ? (
+        <div
+          className={`${frameClassName} flex items-center justify-center text-[10px] font-black uppercase tracking-widest text-zinc-600`}
+          style={frameStyle}
+          aria-label="Image unavailable"
+        >
+          <ImageOff size={20} aria-hidden="true" />
+        </div>
+      ) : (
+        <span className={frameClassName} style={frameStyle}>
+          <img
+            src={imageSrc}
+            alt=""
+            width={imageIntrinsicSize.width}
+            height={imageIntrinsicSize.height}
+            loading={priorityLoad ? 'eager' : 'lazy'}
+            fetchPriority={priorityLoad ? 'high' : 'auto'}
+            decoding="async"
+            onError={handleImageError}
+            className={imageClassName}
+          />
+        </span>
+      );
+    };
+
+    const metadataLine = (
+      <div className="flex min-w-0 flex-wrap items-center gap-1.5 text-[9px] font-black uppercase tracking-widest text-zinc-600">
+        {metaItems.map((item) => (
+          <span key={String(item)} className="max-w-36 truncate">
+            {item}
+          </span>
+        ))}
+      </div>
+    );
+
+    const visibleActionGroup = (
+      <div className="flex flex-wrap items-center gap-1 rounded-lg border border-white/10 bg-black/35 p-1">
+        <ActionButton
+          onClick={(e) => {
+            e.stopPropagation();
+            onAddToContext(image);
+          }}
+          icon={<PlusCircle size={14} />}
+          label="Use"
+          tooltipPosition="bottom"
+        />
+        <ActionButton
+          onClick={(e) => {
+            e.stopPropagation();
+            onLoadConfig(image.config);
+          }}
+          icon={<History size={14} />}
+          label="Recipe"
+          tooltipPosition="bottom"
+        />
+        <ActionButton
+          onClick={(e) => {
+            e.stopPropagation();
+            onRegenerate(image.config);
+          }}
+          icon={<RefreshCw size={14} />}
+          label="Regen"
+          tooltipPosition="bottom"
+        />
+        <ActionButton
+          onClick={(e) => {
+            e.stopPropagation();
+            onToggleFavorite(image.id);
+          }}
+          icon={<Heart size={14} fill={image.isFavorite ? 'currentColor' : 'none'} />}
+          label={image.isFavorite ? 'Remove Favorite' : 'Add Favorite'}
+          isActive={image.isFavorite}
+          tooltipPosition="bottom"
+        />
+        <ActionButton
+          onClick={handleSelectClick}
+          icon={<Check size={14} strokeWidth={3} />}
+          label={isSelected ? 'Deselect' : 'Select'}
+          isActive={isSelected}
+          tooltipPosition="bottom"
+        />
+        <ActionButton
+          onClick={(e) => {
+            e.stopPropagation();
+            handleDownload();
+          }}
+          icon={<Download size={14} />}
+          label="Save"
+          tooltipPosition="bottom"
+        />
+        <ActionButton
+          onClick={handleCopyPrompt}
+          icon={
+            copiedPrompt ? (
+              <Check size={14} className="text-green-400" />
+            ) : (
+              <ClipboardList size={14} />
+            )
+          }
+          label="Copy Prompt"
+          tooltipPosition="bottom"
+        />
+        <ActionButton
+          onClick={(e) => {
+            e.stopPropagation();
+            onDelete(image.id);
+          }}
+          icon={<Trash2 size={14} />}
+          label="Delete"
+          variant="danger"
+          tooltipPosition="bottom"
+        />
+      </div>
+    );
+
+    if (isListView) {
+      return (
+        <div
+          ref={itemRef}
+          onMouseEnter={() => setIsActionSurfaceActive(true)}
+          onMouseLeave={() => setIsActionSurfaceActive(false)}
+          onFocusCapture={handleFocusCapture}
+          onBlurCapture={handleBlurCapture}
+          className={`group flex min-w-0 flex-col gap-3 rounded-xl border border-white/10 bg-zinc-950/80 p-2 text-left shadow-lg transition-[border-color,background-color,opacity,transform,box-shadow] sm:flex-row sm:items-center
+          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/90'}
+        `}
+          style={{ contentVisibility: 'auto', containIntrinsicSize: '720px 120px' }}
+        >
+          <button
+            type="button"
+            onClick={handleImageClick}
+            aria-label="Open image preview"
+            className="flex min-w-0 flex-1 cursor-pointer items-center gap-3 appearance-none border-none bg-transparent p-0 text-left"
+          >
+            {renderImageFrame({
+              frameClassName: 'block shrink-0 overflow-hidden rounded-lg bg-zinc-900',
+              style: { width: listThumbnailSize, height: listThumbnailSize },
+            })}
+            <span className="min-w-0 flex-1">
+              <span className="line-clamp-2 text-sm font-semibold leading-5 text-zinc-200">
+                {promptText}
+              </span>
+              <span className="mt-2 block">{metadataLine}</span>
+            </span>
+          </button>
+          <div className="flex shrink-0 justify-end">{visibleActionGroup}</div>
+        </div>
+      );
+    }
+
+    if (isCardView) {
+      return (
+        <div
+          ref={itemRef}
+          onMouseEnter={() => setIsActionSurfaceActive(true)}
+          onMouseLeave={() => setIsActionSurfaceActive(false)}
+          onFocusCapture={handleFocusCapture}
+          onBlurCapture={handleBlurCapture}
+          className={`group min-w-0 overflow-hidden rounded-xl border border-white/10 bg-zinc-950/80 text-left shadow-lg transition-[border-color,background-color,opacity,transform,box-shadow]
+          ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black' : 'hover:border-white/18 hover:bg-zinc-900/90'}
+        `}
+          style={{ contentVisibility: 'auto', containIntrinsicSize: '320px 460px' }}
+        >
+          <button
+            type="button"
+            onClick={handleImageClick}
+            aria-label="Open image preview"
+            className="relative block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
+          >
+            {renderImageFrame({
+              frameClassName: 'block w-full overflow-hidden rounded-t-xl bg-zinc-900',
+            })}
+            <div
+              className={`absolute inset-0 transition-opacity duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100'}`}
+            />
+          </button>
+          <div className="space-y-3 p-3">
+            <div className="min-w-0">
+              <div className="line-clamp-2 text-sm font-semibold leading-5 text-zinc-200">
+                {promptText}
+              </div>
+              <div className="mt-2">{metadataLine}</div>
+            </div>
+            {visibleActionGroup}
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div
         ref={itemRef}
@@ -158,7 +390,8 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
         onMouseLeave={() => setIsActionSurfaceActive(false)}
         onFocusCapture={handleFocusCapture}
         onBlurCapture={handleBlurCapture}
-        className={`masonry-item mb-4 relative group rounded-xl overflow-hidden cursor-pointer transition-[opacity,transform,box-shadow] duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
+        className={`masonry-item relative group overflow-hidden rounded-xl cursor-pointer transition-[opacity,transform,box-shadow] duration-700 ease-out-expo appearance-none border-none p-0 m-0 bg-transparent text-left
+        ${viewMode === 'mosaic' ? 'mb-4' : ''}
         ${isSelected ? 'ring-2 ring-accent-500 ring-offset-2 ring-offset-black z-10' : 'shadow-lg'}
         animate-in fade-in-0 zoom-in-95
       `}
@@ -170,32 +403,9 @@ const ImageItem: React.FC<ImageItemProps> = React.memo(
           aria-label="Open image preview"
           className="block w-full cursor-pointer appearance-none border-none bg-transparent p-0 text-left"
         >
-          {imageLoadFailed ? (
-            <div
-              className="flex w-full items-center justify-center rounded-xl bg-zinc-900 text-[10px] font-black uppercase tracking-widest text-zinc-600"
-              style={{ aspectRatio: imageAspectRatio, viewTransitionName: transitionName }}
-              aria-label="Image unavailable"
-            >
-              <ImageOff size={20} aria-hidden="true" />
-            </div>
-          ) : (
-            <span
-              className="block w-full overflow-hidden rounded-xl bg-zinc-900"
-              style={{ aspectRatio: imageAspectRatio, viewTransitionName: transitionName }}
-            >
-              <img
-                src={imageSrc}
-                alt=""
-                width={imageIntrinsicSize.width}
-                height={imageIntrinsicSize.height}
-                loading={priorityLoad ? 'eager' : 'lazy'}
-                fetchPriority={priorityLoad ? 'high' : 'auto'}
-                decoding="async"
-                onError={handleImageError}
-                className="block h-full w-full cursor-pointer object-cover"
-              />
-            </span>
-          )}
+          {renderImageFrame({
+            frameClassName: 'block w-full overflow-hidden rounded-xl bg-zinc-900',
+          })}
 
           <div
             className={`absolute inset-0 transition-opacity duration-300 ${isSelected ? 'bg-accent-500/10' : 'bg-linear-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100'}`}
@@ -348,6 +558,38 @@ const IMAGE_GRID_SORT_OPTIONS = [
   },
 ] satisfies Array<{ value: ImageGridSortOption; label: string; description: string }>;
 
+const IMAGE_GRID_VIEW_OPTIONS = [
+  {
+    value: 'grid',
+    label: 'Grid',
+    description: 'Uniform thumbnails',
+    Icon: LayoutGrid,
+  },
+  {
+    value: 'mosaic',
+    label: 'Mosaic',
+    description: 'Real aspect ratios',
+    Icon: LayoutCollage,
+  },
+  {
+    value: 'list',
+    label: 'List',
+    description: 'Dense rows',
+    Icon: LayoutList,
+  },
+  {
+    value: 'cards',
+    label: 'Cards',
+    description: 'Image cards',
+    Icon: LayoutCards,
+  },
+] satisfies Array<{
+  value: ImageGridViewMode;
+  label: string;
+  description: string;
+  Icon: React.ElementType<{ size?: number; className?: string }>;
+}>;
+
 type GridItem =
   | { type: 'placeholder'; placeholder: StudioGenerationPlaceholder }
   | { type: 'image'; image: GeneratedImageWithConfig };
@@ -358,12 +600,22 @@ function toCssAspectRatio(aspectRatio: string) {
 
 const GenerationPlaceholderItem: React.FC<{
   placeholder: StudioGenerationPlaceholder;
-}> = React.memo(({ placeholder }) => (
-  <div className="masonry-item mb-4 overflow-hidden rounded-xl border border-accent-400/20 bg-zinc-950/80 shadow-lg animate-in fade-in-0 zoom-in-95">
+  viewMode: ImageGridViewMode;
+}> = React.memo(({ placeholder, viewMode }) => (
+  <div
+    className={`masonry-item overflow-hidden rounded-xl border border-accent-400/20 bg-zinc-950/80 shadow-lg animate-in fade-in-0 zoom-in-95 ${viewMode === 'mosaic' ? 'mb-4' : ''}`}
+  >
     <output
       aria-label={`Generation job ${placeholder.status}`}
       className="relative block overflow-hidden rounded-xl bg-zinc-900"
-      style={{ aspectRatio: toCssAspectRatio(placeholder.aspectRatio) }}
+      style={
+        viewMode === 'list'
+          ? { minHeight: 104 }
+          : {
+              aspectRatio:
+                viewMode === 'grid' ? '1 / 1' : toCssAspectRatio(placeholder.aspectRatio),
+            }
+      }
     >
       <div className="absolute inset-0 animate-pulse bg-linear-to-br from-white/10 via-zinc-800/70 to-zinc-950" />
       <div className="absolute inset-x-0 top-0 h-16 bg-linear-to-b from-accent-400/10 to-transparent" />
@@ -458,6 +710,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
     const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
     const [thumbnailSize, setThumbnailSize] = useState(DEFAULT_THUMBNAIL_SIZE);
+    const [viewMode, setViewMode] = useState<ImageGridViewMode>(DEFAULT_IMAGE_GRID_VIEW_MODE);
     const sortButtonRef = useRef<HTMLButtonElement | null>(null);
     const sortMenuId = React.useId();
     const viewportWidth = useSyncExternalStore(
@@ -495,6 +748,9 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
     const activeSortOption =
       IMAGE_GRID_SORT_OPTIONS.find((option) => option.value === sortOrder) ??
       IMAGE_GRID_SORT_OPTIONS[0];
+    const activeViewOption =
+      IMAGE_GRID_VIEW_OPTIONS.find((option) => option.value === viewMode) ??
+      IMAGE_GRID_VIEW_OPTIONS[0];
 
     const sortedImages = useMemo(() => {
       return sortImageGridImages(visibleImages, sortOrder);
@@ -541,8 +797,9 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
         thumbnailSize,
         itemCount: gridItems.length,
         horizontalPadding: gridMeasuredWidth > 0 ? 0 : undefined,
+        viewMode,
       });
-    }, [gridMeasuredWidth, viewportWidth, thumbnailSize, gridItems.length]);
+    }, [gridMeasuredWidth, viewportWidth, thumbnailSize, gridItems.length, viewMode]);
 
     const columnBuckets = useMemo(() => {
       const safeColumnCount = Math.max(1, columnCount);
@@ -557,6 +814,25 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
 
     const priorityImageIds = useMemo(() => {
       const ids = new Set<string>();
+
+      if (viewMode !== 'mosaic') {
+        const safeColumnCount = Math.max(1, columnCount);
+        const estimatedItemHeight =
+          viewMode === 'list' ? Math.max(104, thumbnailSize * 0.72) : thumbnailSize;
+        const priorityRows = Math.ceil(
+          (viewportHeight + IMAGE_GRID_COLUMN_GAP * 2) /
+            Math.max(MIN_THUMBNAIL_SIZE, estimatedItemHeight),
+        );
+        const priorityItemLimit = Math.max(safeColumnCount, safeColumnCount * priorityRows);
+
+        gridItems.slice(0, priorityItemLimit).forEach((item) => {
+          if (item.type === 'image') {
+            ids.add(item.image.id);
+          }
+        });
+
+        return ids;
+      }
 
       for (const bucket of columnBuckets) {
         let estimatedTop = 0;
@@ -578,7 +854,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
       }
 
       return ids;
-    }, [columnBuckets, thumbnailSize, viewportHeight]);
+    }, [columnBuckets, columnCount, gridItems, thumbnailSize, viewportHeight, viewMode]);
 
     if (sourceImageCount === 0 && generationPlaceholders.length === 0) {
       return (
@@ -689,8 +965,35 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
               )}
             </div>
           )}
+          <div
+            role="group"
+            aria-label={`Image view: ${activeViewOption.label}`}
+            className="flex h-10 items-center gap-1 rounded-xl border border-white/10 bg-zinc-900/80 p-1 shadow-2xl backdrop-blur-md"
+          >
+            {IMAGE_GRID_VIEW_OPTIONS.map(({ value, label, description, Icon }) => {
+              const selected = value === viewMode;
+
+              return (
+                <Tooltip key={value} content={`${label}: ${description}`} position="bottom">
+                  <button
+                    type="button"
+                    onClick={() => setViewMode(value)}
+                    aria-label={`${label} view`}
+                    aria-pressed={selected}
+                    className={`flex min-h-8 min-w-8 touch-manipulation items-center justify-center rounded-lg transition-[background-color,color,transform,box-shadow] focus-visible:ring-2 focus-visible:ring-white/25 ${
+                      selected
+                        ? 'bg-accent-600 text-white shadow-[0_0_18px_rgba(var(--accent-500),0.18)]'
+                        : 'text-zinc-500 hover:bg-white/8 hover:text-zinc-200'
+                    }`}
+                  >
+                    <Icon size={16} className="pointer-events-none" />
+                  </button>
+                </Tooltip>
+              );
+            })}
+          </div>
           <Tooltip content="Thumbnail size" position="bottom">
-            <label className="flex h-10 items-center gap-2 rounded-xl border border-white/10 bg-zinc-900/80 px-2 text-zinc-400 shadow-2xl backdrop-blur-md">
+            <label className="hidden h-10 items-center gap-2 rounded-xl border border-white/10 bg-zinc-900/80 px-2 text-zinc-400 shadow-2xl backdrop-blur-md sm:flex">
               <Photo size={15} />
               <input
                 type="range"
@@ -786,54 +1089,97 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
             ref={gridMeasureRef}
             className="grid gap-4"
             style={{
-              gridTemplateColumns: resolveImageGridTemplateColumns(columnCount, thumbnailSize),
-              justifyContent: columnCount > 1 ? 'space-between' : 'stretch',
+              gridTemplateColumns: resolveImageGridTemplateColumns(
+                columnCount,
+                thumbnailSize,
+                viewMode,
+              ),
+              justifyContent:
+                viewMode === 'mosaic' && columnCount > 1 ? 'space-between' : 'stretch',
+              alignItems: viewMode === 'mosaic' ? 'start' : 'stretch',
             }}
           >
-            {columnBuckets.map((bucket, columnIndex) => {
-              const firstItem = bucket[0];
-              const firstItemId =
-                firstItem?.type === 'image' ? firstItem.image.id : firstItem?.placeholder.id;
-              const columnKey = firstItemId
-                ? `column-${firstItemId}-${bucket.length}`
-                : `column-empty-${columnIndex}`;
-              return (
-                <div key={columnKey} className="flex min-w-0 flex-col gap-0">
-                  {bucket.map((item) =>
-                    item.type === 'placeholder' ? (
-                      <GenerationPlaceholderItem
-                        key={item.placeholder.id}
-                        placeholder={item.placeholder}
-                      />
-                    ) : (
-                      <div
-                        key={item.image.id}
-                        className={
-                          activeModalImageId === item.image.id ? 'opacity-0' : 'opacity-100'
+            {viewMode === 'mosaic'
+              ? columnBuckets.map((bucket, columnIndex) => {
+                  const firstItem = bucket[0];
+                  const firstItemId =
+                    firstItem?.type === 'image' ? firstItem.image.id : firstItem?.placeholder.id;
+                  const columnKey = firstItemId
+                    ? `column-${firstItemId}-${bucket.length}`
+                    : `column-empty-${columnIndex}`;
+                  return (
+                    <div key={columnKey} className="flex min-w-0 flex-col gap-0">
+                      {bucket.map((item) =>
+                        item.type === 'placeholder' ? (
+                          <GenerationPlaceholderItem
+                            key={item.placeholder.id}
+                            placeholder={item.placeholder}
+                            viewMode={viewMode}
+                          />
+                        ) : (
+                          <div
+                            key={item.image.id}
+                            className={
+                              activeModalImageId === item.image.id ? 'opacity-0' : 'opacity-100'
+                            }
+                          >
+                            <ImageItem
+                              image={item.image}
+                              isSelected={selectedImageIds.includes(item.image.id)}
+                              onImageClick={onImageClick}
+                              onSelectionChange={onSelectionChange}
+                              onRegenerate={onRegenerate}
+                              onAddToContext={onAddToContext}
+                              onLoadConfig={onLoadConfig}
+                              onDelete={onDelete}
+                              onToggleFavorite={onToggleFavorite}
+                              transitionName={
+                                transitioningImageId === item.image.id ? 'master-canvas' : undefined
+                              }
+                              alwaysShowActions={alwaysShowCardActions}
+                              priorityLoad={priorityImageIds.has(item.image.id)}
+                              viewMode={viewMode}
+                              thumbnailSize={thumbnailSize}
+                            />
+                          </div>
+                        ),
+                      )}
+                    </div>
+                  );
+                })
+              : gridItems.map((item) =>
+                  item.type === 'placeholder' ? (
+                    <GenerationPlaceholderItem
+                      key={item.placeholder.id}
+                      placeholder={item.placeholder}
+                      viewMode={viewMode}
+                    />
+                  ) : (
+                    <div
+                      key={item.image.id}
+                      className={activeModalImageId === item.image.id ? 'opacity-0' : 'opacity-100'}
+                    >
+                      <ImageItem
+                        image={item.image}
+                        isSelected={selectedImageIds.includes(item.image.id)}
+                        onImageClick={onImageClick}
+                        onSelectionChange={onSelectionChange}
+                        onRegenerate={onRegenerate}
+                        onAddToContext={onAddToContext}
+                        onLoadConfig={onLoadConfig}
+                        onDelete={onDelete}
+                        onToggleFavorite={onToggleFavorite}
+                        transitionName={
+                          transitioningImageId === item.image.id ? 'master-canvas' : undefined
                         }
-                      >
-                        <ImageItem
-                          image={item.image}
-                          isSelected={selectedImageIds.includes(item.image.id)}
-                          onImageClick={onImageClick}
-                          onSelectionChange={onSelectionChange}
-                          onRegenerate={onRegenerate}
-                          onAddToContext={onAddToContext}
-                          onLoadConfig={onLoadConfig}
-                          onDelete={onDelete}
-                          onToggleFavorite={onToggleFavorite}
-                          transitionName={
-                            transitioningImageId === item.image.id ? 'master-canvas' : undefined
-                          }
-                          alwaysShowActions={alwaysShowCardActions}
-                          priorityLoad={priorityImageIds.has(item.image.id)}
-                        />
-                      </div>
-                    ),
-                  )}
-                </div>
-              );
-            })}
+                        alwaysShowActions={alwaysShowCardActions}
+                        priorityLoad={priorityImageIds.has(item.image.id)}
+                        viewMode={viewMode}
+                        thumbnailSize={thumbnailSize}
+                      />
+                    </div>
+                  ),
+                )}
           </div>
           {(hasMore || isCatalogLoading || catalogError || totalCount > sourceImageCount) && (
             <div className="flex flex-col items-center gap-3 py-6 text-center">

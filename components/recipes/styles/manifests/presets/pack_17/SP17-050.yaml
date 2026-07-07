@@ -3,9 +3,9 @@ id: SP17-050
 packId: pack_17
 name: Wormwood Carnival Feudal
 styleAnchors:
-  - 'Wormwood Carnival Feudal'
-displayName: 'Wormwood Carnival Gothic'
-category: 7. Weird Medieval Editorial
+  - Wormwood Carnival Feudal
+displayName: Wormwood Carnival Gothic
+category: 1. Dark Fantasy & Gothic Courts
 domain: carnival gothic fantasy
 version: 1
 supportedTasks:
@@ -14,43 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - weird-medieval-editorial
+  - dark-fantasy-and-gothic-courts
   - carnival-feudal
 visualDna:
-  aesthetic: >-
-    Poisonous medieval carnival fantasy with crooked banner rhythm, wormwood green, cheap paint,
-    ceremonial comedy, and uneasy spectacle.
-  subject_treatment: >-
-    Transform any prompt subject through feudal carnival exaggeration, toxic green accents, crooked
-    silhouette rhythm, handmade spectacle, and comic menace without requiring clowns, tents, crowds,
-    or fairground props.
+  aesthetic: Poisonous medieval carnival fantasy with crooked banner rhythm, wormwood green, cheap paint, ceremonial comedy, and uneasy spectacle.
+  subject_treatment: Transform any prompt subject through feudal carnival exaggeration, toxic green accents, crooked silhouette rhythm, handmade spectacle, and comic menace without requiring clowns, tents, crowds, or fairground props.
   color_and_tone: Wormwood green, faded red, soot black, cheap yellow, off-white paint, and bruised violet.
   lighting_and_shadow: Flat festival light broken by acidic glow, painted shadow slabs, and theatrical rim accents.
-  texture_and_material: >-
-    Cheap banner cloth, chipped paint, paper masks, rope, rough wood, hand-letter-like marks with no
-    readable text.
-  camera_and_composition: >-
-    Crooked poster balance, tilted ceremonial hierarchy, exaggerated negative space, and one
-    unnerving spectacle cue applied to the user's subject.
-  atmosphere_and_mood: >-
-    Carry the prompt through Adult, grotesque, funny, toxic, festive, and threatening; adult
-    editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic
-    medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
-  rendering_and_quality: >-
-    Clean zine-editorial medieval illustration with broad shapes, controlled grime, and no noisy
-    clutter.
-  creative_brief: >-
-    Apply this as a reusable style router over any prompt: preserve the user's subject while adding
-    wormwood carnival color, feudal spectacle, crooked handmade rhythm, and dangerous comic energy.
-    Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while
-    this preset supplies a style grammar of Wormwood Carnival Feudal; Poisonous medieval carnival
-    fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy
-    spectacle, mood, material behavior, framing logic, and denoised medieval-zine finish without
-    requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Wormwood Carnival Feudal; Poisonous medieval carnival fantasy with crooked banner rhythm;
-    wormwood green; cheap paint; ceremonial comedy; uneasy spectacle
+  texture_and_material: Cheap banner cloth, chipped paint, paper masks, rope, rough wood, hand-letter-like marks with no readable text.
+  camera_and_composition: Crooked poster balance, tilted ceremonial hierarchy, exaggerated negative space, and one unnerving spectacle cue applied to the user's subject.
+  atmosphere_and_mood: Carry the prompt through Adult, grotesque, funny, toxic, festive, and threatening; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Clean zine-editorial medieval illustration with broad shapes, controlled grime, and no noisy clutter.
+  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding wormwood carnival color, feudal spectacle, crooked handmade rhythm, and dangerous comic energy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Wormwood Carnival Feudal; Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  key_features: Wormwood Carnival Feudal; Poisonous medieval carnival fantasy with crooked banner rhythm; wormwood green; cheap paint; ceremonial comedy; uneasy spectacle
 avoidRules:
   - clown portrait
   - circus tent default
@@ -69,20 +45,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-050.webp
 attributes:
-  negativePrompt: >-
-    clown portrait, circus tent default, crowd scene, readable sign, cute festival, explicit gore,
-    watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: clown portrait, circus tent default, crowd scene, readable sign, cute festival, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: weird-medieval-editorial
-  categoryName: 7. Weird Medieval Editorial
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: carnival gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - weird-medieval-editorial
+    - dark-fantasy-and-gothic-courts
     - carnival-feudal
   supportedTasks:
     - image_generate

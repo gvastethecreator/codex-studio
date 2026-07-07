@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-058
+packId: pack_17
+name: Dark Medieval Ink Plate
+styleAnchors:
+  - Dark Medieval Ink Plate
+  - dark medieval ink plate
+  - inverted manuscript plate
+displayName: Dark Medieval Ink Plate
+category: 3. Ink, Tarot & Bestiary Plates
+domain: dark inverted medieval ink
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - ink-plate
+  - dark-inversion
+  - white-ink
+visualDna:
+  aesthetic: 'A dark inversion of medieval ink fantasy plates: blackened vellum, bone linework, oxidized washes, carved silhouettes, and manuscript discipline without readable script.'
+  subject_treatment: Any prompt subject becomes a dark illuminated plate, beast, relic, figure, architecture fragment, or symbolic scenelet rendered through inverted ink and medieval plate order.
+  color_and_tone: Blackened brown, soot black, bone white, verdigris, dried umber, old red, and tarnished gold used as small support accents.
+  lighting_and_shadow: Muted candle-edge contrast, white ink cuts, halo-like plate geometry, and open dark grounds kept readable.
+  texture_and_material: Ink wash, scratched vellum, engraved white highlights, soot stains, and controlled medieval print texture.
+  camera_and_composition: Vertical plate composition with one large focal subject, broad dark margins, small decorative non-text marks, and disciplined negative space.
+  atmosphere_and_mood: Somber, antique, occult, scholastic, and grim without becoming black sludge.
+  rendering_and_quality: Denoised inverted manuscript illustration with clean contours, broad value groups, and restrained plate ornament.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Medieval Ink Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: blackened vellum; bone ink; dark medieval plate; inverted manuscript logic; oxidized accents; textless scholastic horror
+avoidRules:
+  - bright parchment plate
+  - readable manuscript text
+  - illuminated capital letters
+  - crowded bestiary page
+  - brown muddy soup
+  - tiny decorative filigree carpet
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-058.webp
+attributes:
+  negativePrompt: bright parchment plate, readable manuscript text, illuminated capital letters, crowded bestiary page, brown muddy soup, tiny decorative filigree carpet, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: dark inverted medieval ink
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - ink-plate
+    - dark-inversion
+    - white-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

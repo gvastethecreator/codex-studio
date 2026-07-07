@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-040
 packId: pack_17
 name: Heraldic Chimera Plate
-category: 6. Monochrome Tarot & Bestiary Plates
+category: 3. Ink, Tarot & Bestiary Plates
 domain: heraldic medieval fantasy
 version: 1
 supportedTasks:
@@ -11,38 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - heraldic-bestiary
 visualDna:
-  aesthetic: >-
-    Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners,
-    crowns, and clean courtly geometry.
-  subject_treatment: >-
-    Translate any subject into heraldic plate logic with mirrored silhouette order, shieldlike
-    geometry, bold emblem contour, and bestiary-flavored symmetry without replacing the prompt
-    subject.
+  aesthetic: Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners, crowns, and clean courtly geometry.
+  subject_treatment: Translate any subject into heraldic plate logic with mirrored silhouette order, shieldlike geometry, bold emblem contour, and bestiary-flavored symmetry without replacing the prompt subject.
   color_and_tone: Bone, black ink, dull gold, muted red, navy, and forest green in flat separated blocks.
   lighting_and_shadow: Flat heraldic values, simple rim separation, and no murky atmosphere.
   texture_and_material: Smooth enamel-like color, crisp ink contours, simple cloth folds, and minimal weathering.
-  camera_and_composition: >-
-    Symmetrical crest layout, centered beast silhouette, clean shield or banner shapes with no
-    letters.
-  atmosphere_and_mood: >-
-    Carry the prompt through Noble, ominous, ceremonial, and antique; fatalistic omen calm,
-    scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  camera_and_composition: Symmetrical crest layout, centered beast silhouette, clean shield or banner shapes with no letters.
+  atmosphere_and_mood: Carry the prompt through Noble, ominous, ceremonial, and antique; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Graphic heraldic illustration with bold shapes, restrained detail, and denoised color fields.
-  creative_brief: >-
-    Reusable visual system for any subject needing heraldic bestiary language, faction icon clarity,
-    medieval crest geometry, and bold symmetrical contour. Apply after prompt X: prompt X supplies
-    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
-    Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns;
-    clean courtly geometry, mood, material behavior, framing logic, and denoised medieval-zine
-    finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
-    composition.
-  key_features: >-
-    Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns;
-    clean courtly geometry
+  creative_brief: 'Reusable visual system for any subject needing heraldic bestiary language, faction icon clarity, medieval crest geometry, and bold symmetrical contour. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry
 avoidRules:
   - readable coats of arms
   - letters
@@ -60,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-040.webp
 attributes:
-  negativePrompt: >-
-    readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore,
-    watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt
-    literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art,
-    muddy noisy dark texture
+  negativePrompt: readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: heraldic medieval fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - heraldic-bestiary
   supportedTasks:
     - image_generate

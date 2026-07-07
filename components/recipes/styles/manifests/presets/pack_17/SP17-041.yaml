@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-041
 packId: pack_17
 name: Stained Glass Bestiary Icon
-category: 6. Monochrome Tarot & Bestiary Plates
+category: 3. Ink, Tarot & Bestiary Plates
 domain: stained glass fantasy bestiary
 version: 1
 supportedTasks:
@@ -11,42 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - stained-glass-bestiary
 visualDna:
-  aesthetic: >-
-    Medieval stained glass bestiary icon with lead lines, simplified beasts, chapel color, and
-    luminous flat panes.
-  subject_treatment: >-
-    Translate any subject into stained-glass bestiary icon logic with broad luminous panes, sacred
-    contour grouping, halo-like curve rhythm, and simplified symbolic anatomy without requiring a
-    fixed martyr form.
-  color_and_tone: >-
-    Ivory lead gaps, muted ruby mane panes, cobalt wings, amber body, emerald tail, pale cyan halo
-    glass, and restrained black leading.
+  aesthetic: Medieval stained glass bestiary icon with lead lines, simplified beasts, chapel color, and luminous flat panes.
+  subject_treatment: Translate any subject into stained-glass bestiary icon logic with broad luminous panes, sacred contour grouping, halo-like curve rhythm, and simplified symbolic anatomy without requiring a fixed martyr form.
+  color_and_tone: Ivory lead gaps, muted ruby mane panes, cobalt wings, amber body, emerald tail, pale cyan halo glass, and restrained black leading.
   lighting_and_shadow: Even backlit chapel glow, flat luminous color, and almost no cast shadow.
   texture_and_material: Large smooth glass panes, clean lead lines, subtle chips, denoised glow, and broad color blocks.
-  camera_and_composition: >-
-    Tall arched icon crop with centered luminous silhouette, broad pane rhythm, halo-like framing,
-    and no inscriptions.
-  atmosphere_and_mood: >-
-    Carry the prompt through Sacred, monstrous, luminous, and medieval; fatalistic omen calm,
-    scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Clean stained-glass illustration with broad panes, crisp contours, and no noisy dark lead
-    buildup.
-  creative_brief: >-
-    Reusable visual system for any subject needing stained glass bestiary clarity, sacred pane
-    geometry, luminous icon presence, and fantasy faction symbolism. Apply after prompt X: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes;
-    sacred contour grouping; halo like curve rhythm, mood, material behavior, framing logic, and
-    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred
-    contour grouping; halo like curve rhythm
+  camera_and_composition: Tall arched icon crop with centered luminous silhouette, broad pane rhythm, halo-like framing, and no inscriptions.
+  atmosphere_and_mood: Carry the prompt through Sacred, monstrous, luminous, and medieval; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Clean stained-glass illustration with broad panes, crisp contours, and no noisy dark lead buildup.
+  creative_brief: 'Reusable visual system for any subject needing stained glass bestiary clarity, sacred pane geometry, luminous icon presence, and fantasy faction symbolism. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm
 avoidRules:
   - readable church text
   - kaleidoscope clutter
@@ -64,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-041.webp
 attributes:
-  negativePrompt: >-
-    readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit
-    gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: stained glass fantasy bestiary
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - stained-glass-bestiary
   supportedTasks:
     - image_generate

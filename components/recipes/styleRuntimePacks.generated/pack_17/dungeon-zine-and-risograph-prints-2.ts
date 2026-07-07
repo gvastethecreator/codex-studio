@@ -6,7 +6,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-013',
     name: 'Acid Dungeon Zine',
-    category: '3. Acid Dungeon Zine',
+    category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
       'smooth digital painting, photorealism, pastel softness, clean vector art, polished fantasy realism, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -36,7 +36,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-014',
     name: 'Occult Xerox Bestiary',
-    category: '3. Acid Dungeon Zine',
+    category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
       'color gradients, polished concept art, photorealism, typography, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -66,7 +66,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-015',
     name: 'Neon Risograph Necromancy',
-    category: '3. Acid Dungeon Zine',
+    category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
       'full color realism, smooth airbrush, glossy 3d render, soft watercolor, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -96,7 +96,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-016',
     name: 'Blacklight Monster Manual',
-    category: '3. Acid Dungeon Zine',
+    category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
       'realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Punk Heraldry Dungeon Cards',
     displayName: 'Punk Heraldry Dungeon',
     styleAnchors: ['Punk Heraldry Dungeon Cards'],
-    category: '3. Acid Dungeon Zine',
+    category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
       'readable letters, logo design, clean digital card UI, realistic painting, cute cartoon, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-018',
     name: 'Tape-Scanned Sword & Sorcery',
-    category: '3. Acid Dungeon Zine',
+    category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
       'clean ebook cover, glossy digital painting, modern typography, photorealism, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -183,6 +183,169 @@ export const GENERATED_STYLE_PRESETS = [
         'Reusable visual system for any subject needing degraded pulp zine finish, sword and sorcery momentum, tape scan wear, and lurid handmade drama. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.',
       key_features:
         'Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow',
+    },
+  },
+  {
+    id: 'SP17-059',
+    name: 'Rust Red Dungeon Riso',
+    displayName: 'Rust Red Dungeon Riso',
+    styleAnchors: [
+      'Rust Red Dungeon Riso',
+      'rust red dungeon risograph',
+      'rough zine dungeon print',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'rustic risograph dungeon zine',
+    negativePrompt:
+      'centered door emblem, key prop, neat vector icon, architecture-first card, tasteful poster minimalism, rainbow neon palette, smooth digital painting, full dungeon corridor, tiny skull wallpaper, over-detailed occult chart, muddy photocopy noise, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows.',
+      subject_treatment:
+        'Route any prompt subject into a crooked OSR dungeon drawing: monster, warrior, cultist, beast, prop-bearing figure, castle fragment, or relic can appear, but the first read should be hand-drawn creature/character energy rather than a straight icon, door emblem, or architecture-first card.',
+      color_and_tone:
+        'Rust red, dirty cream, heavy black, dull orange, bone, and occasional bruised violet.',
+      lighting_and_shadow:
+        'Flat print lighting with red blocks, black silhouette mass, and cream knockout highlights.',
+      texture_and_material:
+        'Coarse risograph grain, ink soak, blunt halftone dots, off-register fills, and clean denoised black line.',
+      camera_and_composition:
+        'Single-panel zine card crop where the subject fills the rectangle with awkward stance, blunt negative space, rough border pressure, flat color field, and no readable typography.',
+      atmosphere_and_mood:
+        'Dry, brutal, underground, handmade, and slightly comic without being cute.',
+      rendering_and_quality:
+        'Deliberately rough but high-quality dungeon zine reproduction: crunchy black ink, controlled xerox stipple, riso offset, coarse paper, and no vector polish.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust Red Dungeon Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'rust red OSR zine; grotesque hand-inked dungeon figures; black xerox stipple; crooked full-body monster-card poses; flat color panel; no centered door emblem',
+    },
+  },
+  {
+    id: 'SP17-060',
+    name: 'Toxic Lime Crawl Flyer',
+    displayName: 'Toxic Lime Crawl Flyer',
+    styleAnchors: ['Toxic Lime Crawl Flyer', 'toxic lime dungeon flyer', 'rough acid crawl print'],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'toxic neon dungeon flyer',
+    negativePrompt:
+      'trap-glyph emblem, legible concert poster text, polished vector mascot, straight geometric poster layout, smooth neon glow realism, cyberpunk city, overly detailed acid zine, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Toxic lime crawl zine style with hot magenta misprint shadows, grotesque frog demons, horned masks, cultists, crude weapons, chains, and nasty-bright flat panels.',
+      subject_treatment:
+        'Preserve the prompt subject as a crude dungeon creature, masked figure, crawling beast, occult warrior, or compact scenelet with body-first zine energy; avoid reducing it to a trap glyph, mascot logo, or geometric flyer emblem.',
+      color_and_tone:
+        'Toxic lime, black, warm off-white, hot magenta accents, and occasional cyan misprint.',
+      lighting_and_shadow: 'Poster-flat light, lime glow as ink shape, and black mass for shadow.',
+      texture_and_material:
+        'Rough screenprint, risograph offset, crushed but clean black ink, large halftone patches, and minimal scratch.',
+      camera_and_composition:
+        'Vertical old-school monster-card crop with a large awkward body, flat lime background, jagged black silhouette, and support props that bend with the figure.',
+      atmosphere_and_mood: 'Aggressive, cheap, occult-punk, playable, and nasty-bright.',
+      rendering_and_quality:
+        'Rough acid riso/xerox finish with broken black contour, halftone dirt, paper tooth, and controlled denoise while staying ugly, handmade, and readable.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Toxic Lime Crawl Flyer as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'toxic lime panel; hot magenta offset; grotesque dungeon freaks; chains and crude weapons; black xerox ink; crooked OSR figure crop',
+    },
+  },
+  {
+    id: 'SP17-061',
+    name: 'Cobalt Rot Risograph',
+    displayName: 'Cobalt Rot Risograph',
+    styleAnchors: ['Cobalt Rot Risograph', 'cobalt rot risograph', 'blue orange dungeon zine'],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'cold rot risograph fantasy',
+    negativePrompt:
+      'shrine-object hero, clean architecture object, generic blue orange cinematic lighting, literal mushroom wallpaper, overcrowded cave, smooth fantasy painting, rainbow neon palette, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cobalt and rot-orange dungeon zine print where fungal knights, swollen trolls, lumpy helmets, shields, boots, and rude hand-inked anatomy carry the style.',
+      subject_treatment:
+        'Translate the prompt into a cold rot-colored OSR figure, creature, adventurer, beast, castle-headed monster, or fungal relic scenelet without defaulting to a clean shrine-object hero or architecture sample.',
+      color_and_tone:
+        'Deep cobalt, rot orange, dirty cream, heavy black, dull teal, and rare pale yellow pin highlights.',
+      lighting_and_shadow:
+        'Graphic blue shadow masses, orange ink flare, cream knockout light, and no realistic illumination.',
+      texture_and_material:
+        'Risograph bloom, ink spread, misregistered layers, dry brush contour, and coarse but readable paper grain.',
+      camera_and_composition:
+        'Crooked portrait monster-card crop with one odd body or creature filling the panel, flat cobalt/orange color separation, and sparse dungeon support marks.',
+      atmosphere_and_mood: 'Cold, moldy, rude, subterranean, and handmade.',
+      rendering_and_quality:
+        'Limited-palette risograph with heavy black contour, dry hatch fields, riso bloom, rough cream gaps, and intentionally crude but legible anatomy.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cobalt Rot Risograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'cobalt rot palette; fungal knight-monsters; lumpy OSR bodies; rough black hatching; flat riso panels; rude handmade dungeon print',
+    },
+  },
+  {
+    id: 'SP17-062',
+    name: 'Mold Pulp Dungeon Print',
+    displayName: 'Mold Pulp Dungeon Print',
+    styleAnchors: ['Mold Pulp Dungeon Print', 'mold pulp dungeon print', 'aged green zine fantasy'],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'moldy pulp dungeon print',
+    negativePrompt:
+      'relic-object hero, clean fantasy poster, readable pamphlet text, sepia-only parchment, high-detail monster manual, straight centered icon, random dirt overlay, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mold-green pulp dungeon zine with slime monks, ghouls, old-game-store ogres, drooping robes, cheap pamphlet ink, and sickly aged-yellow panels.',
+      subject_treatment:
+        'Any prompt subject becomes a moldy pulp creature, robed ghoul, dungeon brute, relic-bearing figure, or simple monster-card scene while keeping the pose hand-drawn, awkward, and alive rather than a static relic icon.',
+      color_and_tone:
+        'Mold green, aged yellow, black ink, bone, stale olive, and tiny bruised red accents.',
+      lighting_and_shadow:
+        'Flat yellow-green print values, black silhouette shadow, and cream gaps for light.',
+      texture_and_material:
+        'Aged paper tooth, riso grain, ink bleed, imperfect registration, and sparse scuffed edges.',
+      camera_and_composition:
+        'Compressed vertical monster-card crop with reaching hands, too-small shields, drooping hoods, simple flat background, and no readable pamphlet text.',
+      atmosphere_and_mood: 'Mildewed, pulp, cheap, grim, and old-game-store weird.',
+      rendering_and_quality:
+        'Cheap pulp risograph/xerox reproduction with chunky black line, aged paper, wobbly contour, print scum, and controlled low-detail grit.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mold Pulp Dungeon Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'mold green pulp zine; slime monks and ghouls; aged yellow panels; crude black robe mass; wobbly old-school monster-card drawing',
+    },
+  },
+  {
+    id: 'SP17-063',
+    name: 'Bone Pink Catacomb Riso',
+    displayName: 'Bone Pink Catacomb Riso',
+    styleAnchors: [
+      'Bone Pink Catacomb Riso',
+      'bone pink catacomb riso',
+      'pastel toxic dungeon print',
+    ],
+    category: '2. Dungeon Zine & Risograph Prints',
+    domain: 'bone pink catacomb risograph',
+    negativePrompt:
+      'sarcophagus-object hero, cute pastel fantasy, gothic romance cover, skull-corridor default, smooth pink airbrush, neat emblem card, busy decorative filler, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bone-pink catacomb riso style with bat-eared skull beasts, awkward catacomb warriors, black claw shapes, pastel-toxic panels, and crude dot shadows.',
+      subject_treatment:
+        'Preserve the prompt subject as a weird creature, skull beast, catacomb fighter, familiar, relic-bearing figure, or compact tomb scenelet with intentionally awkward zine anatomy rather than a neat sarcophagus or corridor emblem.',
+      color_and_tone:
+        'Bone white, corpse pink, black, dull violet, faded teal, and tiny acid green pin marks.',
+      lighting_and_shadow:
+        'Flat print light through pink blocks, white cutouts, and black shadow silhouettes.',
+      texture_and_material:
+        'Risograph grain, paper fiber, offset pink fills, dry black contour, and restrained xerox scuff.',
+      camera_and_composition:
+        'Portrait zine card where a creature or fighter fills the panel against a flat bone-pink or mint field, with simple support marks and rough border rhythm.',
+      atmosphere_and_mood: 'Oddly pretty, grim, rotten-sweet, underground, and handmade.',
+      rendering_and_quality:
+        'Pastel-toxic risograph with black xerox contour, faded teal offset, purple shadow blocks, crude stipple, and denoised but handmade texture.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bone Pink Catacomb Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'bone pink riso; bat-eared skull beasts; awkward catacomb figures; teal offset; black claw shapes; crude dot-shadow zine texture',
     },
   },
 ] as unknown as StyleRuntimePreset[];

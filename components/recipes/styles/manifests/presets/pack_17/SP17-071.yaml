@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-071
+packId: pack_17
+name: Future Torture Apocalypse
+styleAnchors:
+  - Future Torture Apocalypse
+  - future torture apocalyptic horror
+  - grimdark punishment machine fantasy
+displayName: Future Torture Apocalypse
+category: 5. Grimdark Game Systems & Tabletop
+domain: future apocalyptic horror machinery
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - apocalyptic
+  - industrial-horror
+  - grimdark
+visualDna:
+  aesthetic: Future-apocalyptic punishment-machine fantasy with restraint architecture, rusted exoskeletons, ritual machinery, black scaffolds, and implied suffering without graphic torture detail.
+  subject_treatment: 'Route prompt X through oppressive future-ruin systems: figure, relic, machine, fortress, beast, shrine, or landscape can carry restraint geometry without becoming a fixed torture scene.'
+  color_and_tone: Charcoal, rust, bone, dried crimson, sodium amber, oily green, ash gray, and industrial black kept readable.
+  lighting_and_shadow: Hard sodium slits, furnace underlight, metal rim light, and open gray shadows.
+  texture_and_material: Rusted restraint bars, burned enamel, torn cloth, welded seams, warning stripes as non-text color blocks, and controlled soot.
+  camera_and_composition: Vertical grimdark card with one oppressive system silhouette, scale cues, and no explicit victim spectacle.
+  atmosphere_and_mood: Cruel, terminal, industrial, ritual, and heavy; disturbing by design implication.
+  rendering_and_quality: Clean stylized apocalyptic fantasy illustration with medium detail, denoised grit, and non-graphic horror restraint.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Future Torture Apocalypse as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: future punishment machinery; rusted exoskeletons; ritual scaffold geometry; furnace slits; implied suffering; no graphic torture detail
+avoidRules:
+  - explicit torture
+  - graphic injury focus
+  - blood spray
+  - real-world prison imagery
+  - sci-fi UI screens
+  - modern logo signage
+  - shock gore poster
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-071.webp
+attributes:
+  negativePrompt: explicit torture, graphic injury focus, blood spray, real-world prison imagery, sci-fi UI screens, modern logo signage, shock gore poster, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: future apocalyptic horror machinery
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - apocalyptic
+    - industrial-horror
+    - grimdark
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

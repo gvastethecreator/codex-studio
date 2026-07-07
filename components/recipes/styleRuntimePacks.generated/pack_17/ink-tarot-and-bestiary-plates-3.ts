@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bone Tarot Horror Arcana',
     displayName: 'Bone Tarot Arcana',
     styleAnchors: ['Bone Tarot Horror Arcana'],
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'monochrome medieval horror',
     negativePrompt:
       'readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, explicit gore, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-034',
     name: 'Medieval Ink Fantasy Plate',
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'monochrome medieval fantasy',
     negativePrompt:
       'photoreal grayscale, dense scratch shading, chainmail mesh, muddy charcoal fields, crusader figure, knight hero, sword pose, cross tabard, heraldic banner, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -67,7 +67,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-035',
     name: 'Penitent Baroque Icon',
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'penitential gothic fantasy',
     negativePrompt:
       'copied game armor, readable scripture, excessive thorn detail, black on black costume, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -99,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Starved Dungeon Pilgrimage',
     displayName: 'Starved Dungeon Gothic',
     styleAnchors: ['Starved Dungeon Pilgrimage'],
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'survival dungeon fantasy',
     negativePrompt:
       'shock gore, torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -131,7 +131,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Woodcut Beast Chronicle',
     displayName: 'Woodcut Beast Plate',
     styleAnchors: ['Woodcut Beast Chronicle'],
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'medieval bestiary illustration',
     negativePrompt:
       'tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-038',
     name: 'Illuminated Monster Codex',
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'illuminated medieval bestiary',
     negativePrompt:
       'readable marginal text, over aged parchment grime, excessive filigree, photoreal vellum, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scholastic Marginalia Beasts',
     displayName: 'Scholastic Marginalia Bestiary',
     styleAnchors: ['Scholastic Marginalia Beasts'],
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'medieval marginalia fantasy',
     negativePrompt:
       'readable manuscript text, cluttered page full of drawings, dense hatch texture, modern cartoon look, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture',
@@ -222,7 +222,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-040',
     name: 'Heraldic Chimera Plate',
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'heraldic medieval fantasy',
     negativePrompt:
       'readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -251,7 +251,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-041',
     name: 'Stained Glass Bestiary Icon',
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'stained glass fantasy bestiary',
     negativePrompt:
       'readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Tapestry Creature Legend',
     displayName: 'Tapestry Creature Mythic',
     styleAnchors: ['Tapestry Creature Legend'],
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'medieval tapestry fantasy',
     negativePrompt:
       'fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -312,7 +312,7 @@ export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP17-043',
     name: 'Anatomist Wyvern Field Guide',
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'fantasy field guide illustration',
     negativePrompt:
       'readable annotations, anatomical gore, dense scale texture, crowded diagram sheet, photoreal animal rendering, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -343,7 +343,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Moon Parchment Oracle Beasts',
     displayName: 'Moon Parchment Oracle',
     styleAnchors: ['Moon Parchment Oracle Beasts'],
-    category: '6. Monochrome Tarot & Bestiary Plates',
+    category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'oracle bestiary fantasy',
     negativePrompt:
       'readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
@@ -367,6 +367,219 @@ export const GENERATED_STYLE_PRESETS = [
         "Apply this as a reusable style router over any prompt: preserve the user's subject while adding moonlit parchment ink, oracle plate order, sparse symbolism, and quiet prophetic mood. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm oracle plate figure with simplified contours, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.",
       key_features:
         'Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm oracle plate figure with simplified contours',
+    },
+  },
+  {
+    id: 'SP17-053',
+    name: 'Black Veil Anatomical Arcana',
+    displayName: 'Black Veil Anatomical Arcana',
+    styleAnchors: [
+      'Black Veil Anatomical Arcana',
+      'black ground white ink anatomical arcana',
+      'ritual anatomy engraving',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'white ink occult anatomy',
+    negativePrompt:
+      'readable tarot titles, roman numerals, white-on-parchment inversion, gray fog background, blood splatter, explicit gore, overcrowded anatomy diagram, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Absolute black-ground occult engraving with bone-white anatomical symbols, ritual limbs, radial saint halos, horizontal vignette logic, and surgical tarot severity.',
+      subject_treatment:
+        'Preserve any prompt subject and translate it into anatomical arcana: exposed gesture, symbolic organs, ritual hand geometry, split-body silhouette, weaponless tension, or creature anatomy as white-line omen rather than a fixed tarot card.',
+      color_and_tone:
+        'Matte black field, bone-white ink, cool gray hatch shadows, tiny dull silver accents, and no warm parchment unless the prompt explicitly asks for paper.',
+      lighting_and_shadow:
+        'Form is built from white contour, radial halo rays, selective gray hatch, and black negative space instead of realistic light sources.',
+      texture_and_material:
+        'Fine microfiber-like white ink, engraved hatching, scratch pressure, crisp white cuts, and smooth denoised black fill without dirty speckle.',
+      camera_and_composition:
+        'Vertical card crop with one centered emblem or stacked horizontal panels, generous negative black space, occult symmetry, and no titles or numbers.',
+      atmosphere_and_mood:
+        'Grim, ritual, clinical, devotional, and adult; unsettling through diagrammatic poise rather than gore.',
+      rendering_and_quality:
+        'High-resolution white-on-black engraving reproduced cleanly, controlled line density, readable silhouette, and heavy denoise.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Veil Anatomical Arcana as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'black void ground; bone-white anatomical linework; radial halos; ritual hands and organs; horizontal vignette bands; clean denoised ink',
+    },
+  },
+  {
+    id: 'SP17-054',
+    name: 'White Thread Omen Cards',
+    displayName: 'White Thread Omen Cards',
+    styleAnchors: [
+      'White Thread Omen Cards',
+      'minimal white thread occult card',
+      'black negative space tarot engraving',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'minimal occult white linework',
+    negativePrompt:
+      'filled tarot borders, busy occult symbol sheet, large parchment background, dense cross hatching, literal playing card layout, decorative corner text, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Minimal black-field omen cards where fragile white line, radiating rule marks, suspended relics, and blank space carry the dread.',
+      subject_treatment:
+        'Route the prompt subject into sparse white-thread iconography: one relic, hand, beast fragment, mask, crown, woundless organ, or architectural sliver held in black void without forcing a human figure.',
+      color_and_tone:
+        'Pure black, thin white ink, faint charcoal construction lines, and occasional single ivory highlight; almost no fill color.',
+      lighting_and_shadow:
+        'Symbolic light only: pin-line halos, small rays, white rim cuts, and silent voids.',
+      texture_and_material:
+        'Dry nib line, tiny engraved ticks, clean fiber breaks, and smooth black negative space; texture stays sparse and intentional.',
+      camera_and_composition:
+        'Poster-safe vertical card with asymmetric void, one small-to-medium focal icon, and compact support marks that never become readable typography.',
+      atmosphere_and_mood: 'Quiet, fatalistic, spare, austere, and threatening without spectacle.',
+      rendering_and_quality:
+        'Crisp minimalist occult engraving with very low detail budget and strong thumbnail readability.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Thread Omen Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'negative black space; thin white thread line; sparse halos; small omen relics; asymmetrical card balance; clean minimal print finish',
+    },
+  },
+  {
+    id: 'SP17-055',
+    name: 'Crooked White Ink Horror Cards',
+    displayName: 'Crooked White Ink Horror Cards',
+    styleAnchors: [
+      'Crooked White Ink Horror Cards',
+      'crude white ink horror card',
+      'grotesque bad drawing black ground',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'grotesque crude horror ink',
+    negativePrompt:
+      'cute doodle, kids horror, polished clean vector, literal clown face, overly competent anatomy, random noise masquerading as linework, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Creepy badly drawn horror-card language that still feels art-directed: lopsided white ink, warped anatomy, blunt shapes, black ground, and grotesque amateur pressure.',
+      subject_treatment:
+        'Keep the user subject but deform it through crude wrong proportions, uneven line pressure, crooked symmetry, childish threat marks, and grotesque silhouette logic without turning it into a fixed monster mascot.',
+      color_and_tone:
+        'Black ground, dirty bone-white line, small gray smears, occasional dried red or sick yellow pin accent only when useful.',
+      lighting_and_shadow:
+        'No realistic lighting; shape appears through ugly white outline, scratch patches, and abrupt graphic shadow breaks.',
+      texture_and_material:
+        'Messy dry brush, shaky nib, scuffed ink, crude stipple, bad registration, and clean enough reproduction to stay premium rather than accidental noise.',
+      camera_and_composition:
+        'Vertical horror card with one warped focal subject, awkward empty margins, off-center pressure, and primitive border fragments with no letters.',
+      atmosphere_and_mood:
+        'Grotesque, adult, nasty, desperate, and uncanny; funny only in a sick handmade way.',
+      rendering_and_quality:
+        'High-quality reproduction of deliberately crude white-ink drawing, readable at thumbnail size, denoised black fields.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Crooked White Ink Horror Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'bad-good drawing; crooked white ink; grotesque anatomy; black empty margins; crude horror card pressure; controlled messy finish',
+    },
+  },
+  {
+    id: 'SP17-056',
+    name: 'Gutter Saint Scratchcards',
+    displayName: 'Gutter Saint Scratchcards',
+    styleAnchors: [
+      'Gutter Saint Scratchcards',
+      'gutter saint scratch card',
+      'white ink devotional horror',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'devotional scratch horror',
+    negativePrompt:
+      'clean church illustration, readable prayer text, cute saint card, golden religious poster, literal martyr gore, stock angel wings, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Devotional gutter-horror cards with black voids, damaged saint geometry, white scratch halos, ragged banners without writing, and cheap holy-object tension.',
+      subject_treatment:
+        'Transform the prompt into a sainted or cursed emblem: figure, beast, relic, mask, weaponless gesture, or object can become a damaged icon, but the preset never requires a saint portrait.',
+      color_and_tone:
+        'Black field, chalk white, tarnished gray, pinpricks of rancid gold or dry crimson when needed.',
+      lighting_and_shadow:
+        'Graphic halo rays, scratched backlight, white edge cuts, and shadow swallowed by matte black.',
+      texture_and_material:
+        'Scraped ink, chalk dust, broken engraving, rubbed print edges, and restrained distress kept away from noisy darkness.',
+      camera_and_composition:
+        'Vertical icon-card crop, centered or slightly top-heavy, with a single sacrilegious focal silhouette and no readable devotional text.',
+      atmosphere_and_mood: 'Blasphemous, mournful, devotional, low-rent, and threatening.',
+      rendering_and_quality:
+        'Cleanly reproduced scratchboard/ink-card finish with controlled ugliness and strong silhouette hierarchy.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Gutter Saint Scratchcards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'black devotional card; white scratch halo; damaged icon geometry; gutter holy-object mood; chalk and scrape marks; no text',
+    },
+  },
+  {
+    id: 'SP17-057',
+    name: 'Malformed Bestiary Xerox',
+    displayName: 'Malformed Bestiary Xerox',
+    styleAnchors: [
+      'Malformed Bestiary Xerox',
+      'bad bestiary xerox',
+      'malformed creature field guide',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'low fidelity bestiary horror',
+    negativePrompt:
+      'readable field-guide labels, scientific diagram text, cute monster manual, clean naturalist plate, full inventory spread, unreadable noisy scan, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Low-fidelity malformed bestiary plates where creatures, objects, or figures look wrongly copied, cheaply xeroxed, and grotesquely authoritative.',
+      subject_treatment:
+        'Preserve the prompt subject as a specimen or omen diagram, allowing malformed anatomy, wrong scale, naive labels replaced by silent tick marks, and crude field-guide pose without forcing a monster sheet.',
+      color_and_tone:
+        'Black, bone white, dirty gray, occasional decayed parchment strip, and one sickly accent at most.',
+      lighting_and_shadow:
+        'Flat specimen light made from outline, gray rub, and stark negative space.',
+      texture_and_material:
+        'Broken copier edges, wobbly ink, old scan contrast, hand-corrected contour, and controlled grain that does not become muddy noise.',
+      camera_and_composition:
+        'Specimen-card vertical crop with one large malformed focal read, optional inset silhouettes, and no written labels.',
+      atmosphere_and_mood: 'Untrustworthy, creepy, academic, grotesque, and old-catalog wrong.',
+      rendering_and_quality:
+        'Purposefully poor illustration reproduced with premium clarity: bad drawing as style, not accidental failure.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Malformed Bestiary Xerox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'malformed bestiary plate; cheap xerox; wrong anatomy; silent tick marks; black-white specimen card; controlled low-fi grit',
+    },
+  },
+  {
+    id: 'SP17-058',
+    name: 'Dark Medieval Ink Plate',
+    displayName: 'Dark Medieval Ink Plate',
+    styleAnchors: [
+      'Dark Medieval Ink Plate',
+      'dark medieval ink plate',
+      'inverted manuscript plate',
+    ],
+    category: '3. Ink, Tarot & Bestiary Plates',
+    domain: 'dark inverted medieval ink',
+    negativePrompt:
+      'bright parchment plate, readable manuscript text, illuminated capital letters, crowded bestiary page, brown muddy soup, tiny decorative filigree carpet, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'A dark inversion of medieval ink fantasy plates: blackened vellum, bone linework, oxidized washes, carved silhouettes, and manuscript discipline without readable script.',
+      subject_treatment:
+        'Any prompt subject becomes a dark illuminated plate, beast, relic, figure, architecture fragment, or symbolic scenelet rendered through inverted ink and medieval plate order.',
+      color_and_tone:
+        'Blackened brown, soot black, bone white, verdigris, dried umber, old red, and tarnished gold used as small support accents.',
+      lighting_and_shadow:
+        'Muted candle-edge contrast, white ink cuts, halo-like plate geometry, and open dark grounds kept readable.',
+      texture_and_material:
+        'Ink wash, scratched vellum, engraved white highlights, soot stains, and controlled medieval print texture.',
+      camera_and_composition:
+        'Vertical plate composition with one large focal subject, broad dark margins, small decorative non-text marks, and disciplined negative space.',
+      atmosphere_and_mood:
+        'Somber, antique, occult, scholastic, and grim without becoming black sludge.',
+      rendering_and_quality:
+        'Denoised inverted manuscript illustration with clean contours, broad value groups, and restrained plate ornament.',
+      creative_brief:
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Dark Medieval Ink Plate as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula.",
+      key_features:
+        'blackened vellum; bone ink; dark medieval plate; inverted manuscript logic; oxidized accents; textless scholastic horror',
     },
   },
 ] as unknown as StyleRuntimePreset[];

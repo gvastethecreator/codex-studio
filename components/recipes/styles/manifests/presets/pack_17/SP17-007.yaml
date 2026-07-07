@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-007
 packId: pack_17
 name: Moonlit Hunter Gothic
-category: 2. Hunter Gothic & Plague Courts
+category: 1. Dark Fantasy & Gothic Courts
 domain: gothic fantasy
 version: 1
 supportedTasks:
@@ -11,44 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - hunter-gothic-and-plague-courts
+  - dark-fantasy-and-gothic-courts
   - hunter-gothic
 visualDna:
-  aesthetic: >-
-    Moonlit gothic hunter fantasy with long coats, sharp silhouettes, wet stone, and monstrous
-    unease.
-  subject_treatment: >-
-    Transform any subject with moonlit hunter-gothic tension: lean pursuit silhouette, high-collar
-    shape rhythm, hook-lantern glow as optional accent, crescent trap geometry, and predatory
-    side-profile energy without forcing a rooftop hunter persona.
+  aesthetic: Moonlit gothic hunter fantasy with long coats, sharp silhouettes, wet stone, and monstrous unease.
+  subject_treatment: 'Transform any subject with moonlit hunter-gothic tension: lean pursuit silhouette, high-collar shape rhythm, hook-lantern glow as optional accent, crescent trap geometry, and predatory side-profile energy without forcing a rooftop hunter persona.'
   color_and_tone: Blue-black night, wet charcoal, tarnished silver, candle amber, and restrained crimson accents.
-  lighting_and_shadow: >-
-    Moon rim light and simple lantern pools create high-contrast silhouettes with readable costume
-    detail.
+  lighting_and_shadow: Moon rim light and simple lantern pools create high-contrast silhouettes with readable costume detail.
   texture_and_material: Oiled leather, wet cobblestone, tarnished buckles, wool, soot, fog, and scratched metal.
-  camera_and_composition: >-
-    Oblique gothic verticals, roofline-like diagonals, moonlit negative space, narrow pursuit lanes,
-    and side-profile tension without naming a fixed urban set.
-  atmosphere_and_mood: >-
-    Carry the prompt through Paranoid, nocturnal, elegant, and threatening without explicit gore;
-    nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious
-    candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
-  rendering_and_quality: >-
-    Dark gothic digital illustration with refined costume detail, clean reflections, defined lines,
-    and controlled haze.
-  creative_brief: >-
-    Route any subject through moonlit hunter gothic style mechanics: preserve the prompt while
-    adding nocturnal pursuit tension, gothic verticals, leather and moon material cues, and
-    restrained predator elegance without requiring a hunter character. Apply after prompt X: prompt
-    X supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp
-    silhouettes; wet stone; monstrous unease; high collar shape rhythm, mood, material behavior,
-    framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic,
-    fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet
-    stone; monstrous unease; high collar shape rhythm
+  camera_and_composition: Oblique gothic verticals, roofline-like diagonals, moonlit negative space, narrow pursuit lanes, and side-profile tension without naming a fixed urban set.
+  atmosphere_and_mood: Carry the prompt through Paranoid, nocturnal, elegant, and threatening without explicit gore; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Dark gothic digital illustration with refined costume detail, clean reflections, defined lines, and controlled haze.
+  creative_brief: 'Route any subject through moonlit hunter gothic style mechanics: preserve the prompt while adding nocturnal pursuit tension, gothic verticals, leather and moon material cues, and restrained predator elegance without requiring a hunter character. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm
 avoidRules:
   - bright daylight
   - superhero costume
@@ -66,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-007.webp
 attributes:
-  negativePrompt: >-
-    bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore,
-    watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: hunter-gothic-and-plague-courts
-  categoryName: 2. Hunter Gothic & Plague Courts
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - hunter-gothic-and-plague-courts
+    - dark-fantasy-and-gothic-courts
     - hunter-gothic
   supportedTasks:
     - image_generate

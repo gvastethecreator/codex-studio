@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-066
+packId: pack_17
+name: Obsidian 2.5D Catacombs
+styleAnchors:
+  - Obsidian 2.5D Catacombs
+  - monochrome isometric dungeon game
+  - obsidian 2.5D catacomb aesthetic
+displayName: Obsidian 2.5D Catacombs
+category: 5. Grimdark Game Systems & Tabletop
+domain: monochrome isometric dungeon game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - isometric
+  - monochrome
+  - game-aesthetic
+visualDna:
+  aesthetic: Monochrome 2.5D catacomb game aesthetic with obsidian tiles, bone highlights, severe isometric depth, and sparse pixel-like value discipline.
+  subject_treatment: Preserve the prompt subject as a playable-feeling isometric dungeon element, figure, encounter, relic, or architectural fragment without requiring a corridor or party lineup.
+  color_and_tone: Obsidian black, bone white, graphite, ash blue, and occasional cold green corpse-light.
+  lighting_and_shadow: Hard isometric value steps, rim-lit tile edges, sparse glow pools, and controlled dark planes.
+  texture_and_material: Low-to-medium detail 2.5D surfaces, pixel-aware dithering, clean tiles, stone chips, and denoised gloom.
+  camera_and_composition: Isometric vertical crop, playable floor hierarchy, one focal subject, environmental scale, and no interface.
+  atmosphere_and_mood: Cold, tactical, cursed, subterranean, and austere.
+  rendering_and_quality: Stylized isometric game art that can lean pixel/2.5D but stays crisp, readable, and non-photoreal.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Obsidian 2.5D Catacombs as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: obsidian isometric floor; bone highlights; monochrome dungeon game; sparse corpse-light; no HUD; 2.5D tactical depth
+avoidRules:
+  - bright fantasy UI
+  - loot popup
+  - top-down map labels
+  - smooth cinematic perspective
+  - generic pixel filter
+  - black unreadable floor
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-066.webp
+attributes:
+  negativePrompt: bright fantasy UI, loot popup, top-down map labels, smooth cinematic perspective, generic pixel filter, black unreadable floor, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: monochrome isometric dungeon game
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - isometric
+    - monochrome
+    - game-aesthetic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

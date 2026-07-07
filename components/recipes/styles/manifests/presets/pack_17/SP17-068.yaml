@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-068
+packId: pack_17
+name: Rusted Vault Grimdark
+styleAnchors:
+  - Rusted Vault Grimdark
+  - post nuclear retrofuturist grimdark fantasy
+  - rusted vault medieval apocalypse
+displayName: Rusted Vault Grimdark
+category: 5. Grimdark Game Systems & Tabletop
+domain: post-nuclear grimdark fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - post-apocalyptic
+  - retrofuture
+  - grimdark
+visualDna:
+  aesthetic: Post-nuclear grimdark fantasy where rusted vault shapes, retrofuturist decay, medieval survival silhouettes, and sacred hazard symbols merge without using logos or readable signage.
+  subject_treatment: Any prompt subject becomes a rusted vault relic, survivor, beast, shrine, armor, settlement fragment, or symbol system while preserving prompt X and avoiding fixed wasteland cosplay.
+  color_and_tone: Rusted orange, oxidized green, old steel, bone, radioactive yellow-green pin accents, blackened brown, and dusty gray.
+  lighting_and_shadow: Dusty hazard glow, slit light, warm rust bounce, open readable shadows, and no photoreal nuclear glare.
+  texture_and_material: Rusted plate, peeling paint shapes without readable text, cracked concrete, worn cloth, reactor dust, and clean denoised grime.
+  camera_and_composition: Vertical grimdark card or sourcebook crop with one strong symbolic focal subject and background survival architecture as support.
+  atmosphere_and_mood: Bleak, irradiated, feudal, scavenged, ritualized, and adult.
+  rendering_and_quality: Stylized post-apocalyptic fantasy illustration with broad shapes, no copied game identity, and controlled texture.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rusted Vault Grimdark as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: rusted vault geometry; post-nuclear medieval survival; hazard glow; retrofuture decay; textless sacred symbols; denoised grime
+avoidRules:
+  - readable vault numbers
+  - brand logos
+  - blue jumpsuit cosplay
+  - comic mascot
+  - modern gun focus
+  - photoreal wasteland screenshot
+  - real-world faction insignia
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-068.webp
+attributes:
+  negativePrompt: readable vault numbers, brand logos, blue jumpsuit cosplay, comic mascot, modern gun focus, photoreal wasteland screenshot, real-world faction insignia, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: post-nuclear grimdark fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - post-apocalyptic
+    - retrofuture
+    - grimdark
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

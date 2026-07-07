@@ -28,7 +28,10 @@ import {
 
 import { TopToolbar } from './ui/TopToolbar';
 import { BottomToolbar } from './ui/BottomToolbar';
-import { resolveStudioCarouselDisplaySrc } from '../lib/studioCarouselImage';
+import {
+  resolveStudioCarouselDisplaySrc,
+  resolveStudioCarouselFallbackSrc,
+} from '../lib/studioCarouselImage';
 
 interface ImageCarouselProps {
   activeImage: GeneratedImageWithConfig | null;
@@ -75,19 +78,33 @@ const CarouselImageItem: React.FC<{
   const [uiScale, setUiScale] = useState(1);
 
   const imgRef = useRef<HTMLImageElement>(null);
+  const [failedDisplaySrc, setFailedDisplaySrc] = useState<string | null>(null);
   const target = useRef({ x: 0, y: 0, scale: 1 });
   const current = useRef({ x: 0, y: 0, scale: 1 });
   const dragStart = useRef({ x: 0, y: 0 });
   const isDragging = useRef(false);
   const rafId = useRef<number | null>(null);
 
-  const displaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing });
+  const primaryDisplaySrc = resolveStudioCarouselDisplaySrc({ image, isComparing });
+  const fallbackDisplaySrc = resolveStudioCarouselFallbackSrc({
+    image,
+    displaySrc: primaryDisplaySrc,
+    isComparing,
+  });
+  const displaySrc =
+    failedDisplaySrc === primaryDisplaySrc && fallbackDisplaySrc
+      ? fallbackDisplaySrc
+      : primaryDisplaySrc;
   const imageDimensions = resolveCarouselImageDimensions(image);
 
   // Calculate aspect ratio for the style to ensure the image has a size before loading
   const aspectRatioStyle = image.config.aspectRatio
     ? image.config.aspectRatio.replace(':', '/')
     : '1/1';
+
+  useEffect(() => {
+    setFailedDisplaySrc(null);
+  }, [primaryDisplaySrc]);
 
   const animate = useCallback(() => {
     if (!isActive) return;
@@ -225,6 +242,7 @@ const CarouselImageItem: React.FC<{
         width={imageDimensions.width}
         height={imageDimensions.height}
         draggable={false}
+        onError={() => setFailedDisplaySrc(primaryDisplaySrc)}
         className={`max-w-[94%] max-h-[90%] object-contain shadow-[0_0_120px_rgba(0,0,0,1)]`}
         style={{
           // Only apply view transition if NOT sliding and NOT comparing, to avoid glitches

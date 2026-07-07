@@ -9,6 +9,7 @@ const variantsDir = path.join(defaultsDir, 'variants');
 const outputDir = path.join(rootDir, 'assets', 'recipes', 'styles', 'style-card-thumbnails');
 const thumbnailWidth = 384;
 const thumbnailHeight = 512;
+const defaultConcurrency = 8;
 
 interface ThumbnailJob {
   sourcePath: string;
@@ -20,6 +21,27 @@ interface ThumbnailJob {
 interface ThumbnailResult extends ThumbnailJob {
   outputPath: string;
   bytes: number;
+}
+
+function argValue(name: string) {
+  return process.argv.find((arg) => arg.startsWith(`--${name}=`))?.split('=')[1];
+}
+
+function parseConcurrency() {
+  const raw = argValue('concurrency') ?? process.env.STYLE_THUMBNAIL_CONCURRENCY;
+  const parsed = raw ? Number(raw) : defaultConcurrency;
+  if (!Number.isFinite(parsed) || parsed < 1) return defaultConcurrency;
+  return Math.max(1, Math.floor(parsed));
+}
+
+function packIdFromOutputName(outputName: string) {
+  const categoryMatch = outputName.match(/^(pack_\d+)__/i);
+  if (categoryMatch) return categoryMatch[1].toLowerCase();
+
+  const presetMatch = outputName.match(/^SP(\d{2})-\d{3}/i);
+  if (presetMatch) return `pack_${presetMatch[1]}`;
+
+  return 'unknown';
 }
 
 function assertSafeOutputDir() {
@@ -115,44 +137,87 @@ async function writeThumbnail(job: ThumbnailJob): Promise<ThumbnailResult> {
   };
 }
 
-async function main() {
-  assertSafeOutputDir();
+async function runWithConcurrency<T, R>(
+  items: T[],
+  concurrency: number,
+  worker: (item: T) => Promise<R>,
+) {
+  const results: R[] = [];
+  let nextIndex = 0;
 
-  const jobs = [
-    ...(await collectCategoryJobs()),
-    ...(await collectDefaultJobs()),
-    ...(await collectVariantJobs()),
-  ].sort((left, right) => left.outputName.localeCompare(right.outputName));
-
-  await rm(outputDir, { recursive: true, force: true });
-  await mkdir(outputDir, { recursive: true });
-
-  const results: ThumbnailResult[] = [];
-  for (const job of jobs) {
-    results.push(await writeThumbnail(job));
+  async function runWorker() {
+    for (;;) {
+      const currentIndex = nextIndex;
+      nextIndex += 1;
+      const item = items[currentIndex];
+      if (!item) break;
+      results[currentIndex] = await worker(item);
+    }
   }
 
-  const manifest = {
+  const workers = Array.from({ length: Math.min(concurrency, items.length) }, () => runWorker());
+  await Promise.all(workers);
+  return results;
+}
+
+async function buildOutputManifest() {
+  const files = await listWebpFiles(outputDir);
+  const entries = await Promise.all(
+    files.map(async (fileName) => {
+      const filePath = path.join(outputDir, fileName);
+      const info = await stat(filePath);
+      return {
+        fileName,
+        packId: packIdFromOutputName(fileName),
+        bytes: info.size,
+      };
+    }),
+  );
+
+  return {
     generatedAt: new Date().toISOString(),
     size: {
       width: thumbnailWidth,
       height: thumbnailHeight,
     },
-    count: results.length,
-    totalBytes: results.reduce((total, result) => total + result.bytes, 0),
+    count: entries.length,
+    totalBytes: entries.reduce((total, entry) => total + entry.bytes, 0),
     packs: Object.fromEntries(
-      [...new Set(results.map((result) => result.packId))]
+      [...new Set(entries.map((entry) => entry.packId))]
         .sort()
-        .map((packId) => [packId, results.filter((result) => result.packId === packId).length]),
+        .map((packId) => [packId, entries.filter((entry) => entry.packId === packId).length]),
     ),
   };
+}
+
+async function main() {
+  assertSafeOutputDir();
+
+  const packFilter = argValue('pack');
+  const concurrency = parseConcurrency();
+  const allJobs = [
+    ...(await collectCategoryJobs()),
+    ...(await collectDefaultJobs()),
+    ...(await collectVariantJobs()),
+  ].sort((left, right) => left.outputName.localeCompare(right.outputName));
+  const jobs = packFilter ? allJobs.filter((job) => job.packId === packFilter) : allJobs;
+
+  await mkdir(outputDir, { recursive: true });
+  if (!packFilter) {
+    await rm(outputDir, { recursive: true, force: true });
+    await mkdir(outputDir, { recursive: true });
+  }
+
+  await runWithConcurrency(jobs, concurrency, writeThumbnail);
+
+  const manifest = await buildOutputManifest();
 
   await writeFile(path.join(outputDir, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
 
   console.log(
-    `[style-card-thumbs] wrote ${manifest.count} thumbnails (${Math.round(
+    `[style-card-thumbs] wrote ${jobs.length} requested / ${manifest.count} total thumbnails (${Math.round(
       manifest.totalBytes / 1024,
-    )} KB) to ${path.relative(rootDir, outputDir)}`,
+    )} KB) to ${path.relative(rootDir, outputDir)} concurrency=${concurrency}${packFilter ? ` pack=${packFilter}` : ''}`,
   );
 }
 

@@ -3,9 +3,9 @@ id: SP17-046
 packId: pack_17
 name: Moth Abbey Vellum Horror
 styleAnchors:
-  - 'Moth Abbey Vellum Horror'
-displayName: 'Moth Abbey Vellum Gothic'
-category: 7. Weird Medieval Editorial
+  - Moth Abbey Vellum Horror
+displayName: Moth Abbey Vellum Gothic
+category: 1. Dark Fantasy & Gothic Courts
 domain: monastic gothic fantasy
 version: 1
 supportedTasks:
@@ -14,39 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - weird-medieval-editorial
+  - dark-fantasy-and-gothic-courts
   - vellum-horror
 visualDna:
-  aesthetic: >-
-    Pale monastic weird-fantasy built from vellum translucency, dusty wing shapes, candle ash, thin
-    ink, and silent abbey pressure.
-  subject_treatment: >-
-    Transform any prompt subject through moth-dust softness, parchment translucency, fragile contour
-    rhythm, devotional stillness, and quiet horror while preserving the subject instead of requiring
-    a literal insect, monk, or abbey room.
+  aesthetic: Pale monastic weird-fantasy built from vellum translucency, dusty wing shapes, candle ash, thin ink, and silent abbey pressure.
+  subject_treatment: Transform any prompt subject through moth-dust softness, parchment translucency, fragile contour rhythm, devotional stillness, and quiet horror while preserving the subject instead of requiring a literal insect, monk, or abbey room.
   color_and_tone: Vellum cream, ash gray, candle yellow, dried umber, smoke blue, and sparse black ink.
   lighting_and_shadow: Thin candlelight and milky window glow flatten shadows into quiet planes.
   texture_and_material: Vellum skin, powdery dust, worn paper fibers, wax bloom, dry ink, and softened stone.
-  camera_and_composition: >-
-    Hushed vertical framing, fragile edge detail, broad pale voids, and devotional spacing that can
-    wrap around characters, objects, creatures, or environments.
-  atmosphere_and_mood: >-
-    Carry the prompt through Silent, fragile, haunted, devotional, and adult without shock imagery;
-    adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic
-    medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
+  camera_and_composition: Hushed vertical framing, fragile edge detail, broad pale voids, and devotional spacing that can wrap around characters, objects, creatures, or environments.
+  atmosphere_and_mood: Carry the prompt through Silent, fragile, haunted, devotional, and adult without shock imagery; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Denoised parchment-gothic illustration with low detail chatter and clean pale value control.
-  creative_brief: >-
-    Apply this as a reusable style router over any prompt: preserve the user's subject while adding
-    vellum horror, moth dust softness, monastic silence, and pale medieval dread. Apply after prompt
-    X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    style grammar of Moth Abbey Vellum Horror; Pale monastic weird fantasy built from vellum
-    translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure, mood, material
-    behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed
-    relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Moth Abbey Vellum Horror; Pale monastic weird fantasy built from vellum translucency; dusty wing
-    shapes; candle ash; thin ink; silent abbey pressure
+  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding vellum horror, moth dust softness, monastic silence, and pale medieval dread. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Moth Abbey Vellum Horror; Pale monastic weird fantasy built from vellum translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  key_features: Moth Abbey Vellum Horror; Pale monastic weird fantasy built from vellum translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure
 avoidRules:
   - literal moth swarm
   - monk portrait
@@ -65,20 +45,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-046.webp
 attributes:
-  negativePrompt: >-
-    literal moth swarm, monk portrait, library room, readable manuscript, dusty noise field,
-    explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal
-    medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text,
-    generic fantasy card art, muddy noisy dark texture
+  negativePrompt: literal moth swarm, monk portrait, library room, readable manuscript, dusty noise field, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: weird-medieval-editorial
-  categoryName: 7. Weird Medieval Editorial
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: monastic gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - weird-medieval-editorial
+    - dark-fantasy-and-gothic-courts
     - vellum-horror
   supportedTasks:
     - image_generate

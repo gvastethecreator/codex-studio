@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-028
 packId: pack_17
 name: Sepulcher Warband Engraving
-category: 5. Apocalyptic Wargame & Inked Dungeon
+category: 4. Rune-Tech & Apocalyptic Warfronts
 domain: medieval engraving fantasy
 version: 1
 supportedTasks:
@@ -11,42 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - apocalyptic-wargame-and-inked-dungeon
+  - rune-tech-and-apocalyptic-warfronts
   - engraving
 visualDna:
-  aesthetic: >-
-    Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and
-    siege-icon composition.
-  subject_treatment: >-
-    Transform any subject with sepulcher engraving rhythm, bold cut lines, tomb-metal restraint,
-    banner-like vertical accents, and print-safe solemn grouping without requiring a fixed warband.
+  aesthetic: Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and siege-icon composition.
+  subject_treatment: Transform any subject with sepulcher engraving rhythm, bold cut lines, tomb-metal restraint, banner-like vertical accents, and print-safe solemn grouping without requiring a fixed warband.
   color_and_tone: Ink black, bone paper, tarnished silver, sepia wash, oxidized green, and small wax-red accents.
-  lighting_and_shadow: >-
-    Value comes from engraved hatching and broad paper-negative space rather than noisy dark
-    gradients.
-  texture_and_material: >-
-    Etched copperplate lines, dry paper, chipped marble, metal scratches, wax seals without readable
-    marks, and clean ink edges.
-  camera_and_composition: >-
-    Frontal heraldic grouping logic, triangular mass arrangement, tall banner-like accents, and
-    print-safe space without requiring a fixed warband.
-  atmosphere_and_mood: >-
-    Carry the prompt through Funereal, disciplined, ancient, martial, and ceremonial; martial doom,
-    penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual
-    discipline; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
+  lighting_and_shadow: Value comes from engraved hatching and broad paper-negative space rather than noisy dark gradients.
+  texture_and_material: Etched copperplate lines, dry paper, chipped marble, metal scratches, wax seals without readable marks, and clean ink edges.
+  camera_and_composition: Frontal heraldic grouping logic, triangular mass arrangement, tall banner-like accents, and print-safe space without requiring a fixed warband.
+  atmosphere_and_mood: Carry the prompt through Funereal, disciplined, ancient, martial, and ceremonial; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Crisp engraved fantasy print with heavy denoise, clean hatching, and no muddy texture chatter.
-  creative_brief: >-
-    Reusable visual system for any subject needing sepulcher engraving discipline, tomb heraldry,
-    medieval campaign austerity, and print safe dark linework. Apply after prompt X: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition;
-    Transform any subject with sepulcher engraving rhythm; bold cut lines, mood, material behavior,
-    framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic,
-    fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform
-    any subject with sepulcher engraving rhythm; bold cut lines
+  creative_brief: 'Reusable visual system for any subject needing sepulcher engraving discipline, tomb heraldry, medieval campaign austerity, and print safe dark linework. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines
 avoidRules:
   - readable heraldic text
   - modern logos
@@ -64,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-028.webp
 attributes:
-  negativePrompt: >-
-    readable heraldic text, modern logos, gray noise mush, smooth digital painting, explicit gore,
-    watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal
-    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
-    noisy dark texture
+  negativePrompt: readable heraldic text, modern logos, gray noise mush, smooth digital painting, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: apocalyptic-wargame-and-inked-dungeon
-  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
   domain: medieval engraving fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - apocalyptic-wargame-and-inked-dungeon
+    - rune-tech-and-apocalyptic-warfronts
     - engraving
   supportedTasks:
     - image_generate

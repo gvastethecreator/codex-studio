@@ -3,26 +3,26 @@
 import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeTypes';
 
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
-  () => import('./pack_17/dark-fantasy-realms-1').then((module) => module.GENERATED_STYLE_PRESETS),
   () =>
-    import('./pack_17/hunter-gothic-and-plague-courts-2').then(
-      (module) => module.GENERATED_STYLE_PRESETS,
-    ),
-  () => import('./pack_17/acid-dungeon-zine-3').then((module) => module.GENERATED_STYLE_PRESETS),
-  () =>
-    import('./pack_17/futuristic-medieval-and-rune-tech-4').then(
+    import('./pack_17/dark-fantasy-and-gothic-courts-1').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_17/apocalyptic-wargame-and-inked-dungeon-5').then(
+    import('./pack_17/dungeon-zine-and-risograph-prints-2').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_17/monochrome-tarot-and-bestiary-plates-6').then(
+    import('./pack_17/ink-tarot-and-bestiary-plates-3').then(
       (module) => module.GENERATED_STYLE_PRESETS,
     ),
   () =>
-    import('./pack_17/weird-medieval-editorial-7').then((module) => module.GENERATED_STYLE_PRESETS),
+    import('./pack_17/rune-tech-and-apocalyptic-warfronts-4').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_17/grimdark-game-systems-and-tabletop-5').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {
@@ -31,7 +31,7 @@ export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack>
     id: 'pack_17',
     name: 'Medieval Fantasy & Dungeon Zine',
     description:
-      'Medieval fantasy representation styles spanning grimdark kingdoms, hunter gothic horror, acid dungeon zines, rune-tech futures, apocalyptic crusades, gothic wargame fronts, inked dungeon drama, monochrome tarot, and bestiary plates.',
+      'Medieval fantasy representation styles spanning dark-fantasy kingdoms, hunter gothic horror, weird editorial courts, acid dungeon zines, monochrome tarot, white-ink occult plates, rune-tech crusades, apocalyptic warfronts, robust tabletop portraits, grimdark systems, and isometric game aesthetics.',
     presets: categoryPresets.flat(),
   };
 }

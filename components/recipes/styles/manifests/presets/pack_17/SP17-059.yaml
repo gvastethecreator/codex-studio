@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP17-059
+packId: pack_17
+name: Rust Red Dungeon Riso
+styleAnchors:
+  - Rust Red Dungeon Riso
+  - rust red dungeon risograph
+  - rough zine dungeon print
+displayName: Rust Red Dungeon Riso
+category: 2. Dungeon Zine & Risograph Prints
+domain: rustic risograph dungeon zine
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - acid-dungeon
+  - rust-red
+visualDna:
+  aesthetic: Rust-red old-school dungeon zine monster-card style with grotesque skull cultists, squat brutes, spiked hoods, wobbly hand-inked bodies, flat rust panels, and black xerox shadows.
+  subject_treatment: 'Route any prompt subject into a crooked OSR dungeon drawing: monster, warrior, cultist, beast, prop-bearing figure, castle fragment, or relic can appear, but the first read should be hand-drawn creature/character energy rather than a straight icon, door emblem, or architecture-first card.'
+  color_and_tone: Rust red, dirty cream, heavy black, dull orange, bone, and occasional bruised violet.
+  lighting_and_shadow: Flat print lighting with red blocks, black silhouette mass, and cream knockout highlights.
+  texture_and_material: Coarse risograph grain, ink soak, blunt halftone dots, off-register fills, and clean denoised black line.
+  camera_and_composition: Single-panel zine card crop where the subject fills the rectangle with awkward stance, blunt negative space, rough border pressure, flat color field, and no readable typography.
+  atmosphere_and_mood: Dry, brutal, underground, handmade, and slightly comic without being cute.
+  rendering_and_quality: 'Deliberately rough but high-quality dungeon zine reproduction: crunchy black ink, controlled xerox stipple, riso offset, coarse paper, and no vector polish.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rust Red Dungeon Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: rust red OSR zine; grotesque hand-inked dungeon figures; black xerox stipple; crooked full-body monster-card poses; flat color panel; no centered door emblem
+avoidRules:
+  - centered door emblem
+  - key prop
+  - neat vector icon
+  - architecture-first card
+  - tasteful poster minimalism
+  - rainbow neon palette
+  - smooth digital painting
+  - full dungeon corridor
+  - tiny skull wallpaper
+  - over-detailed occult chart
+  - muddy photocopy noise
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-059.webp
+attributes:
+  negativePrompt: centered door emblem, key prop, neat vector icon, architecture-first card, tasteful poster minimalism, rainbow neon palette, smooth digital painting, full dungeon corridor, tiny skull wallpaper, over-detailed occult chart, muddy photocopy noise, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: rustic risograph dungeon zine
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - acid-dungeon
+    - rust-red
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

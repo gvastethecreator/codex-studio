@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-064
+packId: pack_17
+name: Monochrome Dungeon Pixels
+styleAnchors:
+  - Monochrome Dungeon Pixels
+  - grimdark monochrome pixel art
+  - one-bit dungeon pixel aesthetic
+displayName: Monochrome Dungeon Pixels
+category: 5. Grimdark Game Systems & Tabletop
+domain: grimdark monochrome pixel art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - pixel-art
+  - monochrome
+  - game-aesthetic
+visualDna:
+  aesthetic: Grimdark monochrome pixel art with one-bit discipline, hard tile silhouettes, dithered candle gloom, and medieval dungeon weight.
+  subject_treatment: Translate any prompt subject into pixel-native silhouettes, tiles, creatures, portraits, relics, or scenelets while preserving the prompt content and avoiding HUD/game UI.
+  color_and_tone: Black, bone white, ash gray, green-gray, and optional single rust pixel accent; strict limited palette.
+  lighting_and_shadow: Pixel-cluster candlelight, rim dither, hard value steps, and no smooth gradients.
+  texture_and_material: Hand-placed pixels, chunky dithering, tile seams, sprite-like contour, and clean upscaled edges.
+  camera_and_composition: Vertical card crop that can show a sprite portrait, isometric tile fragment, side-view scenelet, or symbolic pixel object with no interface.
+  atmosphere_and_mood: Bleak, old-game, cursed, stark, and playable without nostalgia cuteness.
+  rendering_and_quality: Authentic limited-palette pixel art reproduced cleanly, no AI painterly smearing, no fake CRT text.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Monochrome Dungeon Pixels as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: one-bit dungeon pixels; hard tile shapes; chunky dither; bone black palette; no HUD; grim medieval game mood
+avoidRules:
+  - smooth digital painting
+  - fake pixel filter over painting
+  - visible HUD
+  - health bars
+  - inventory icons
+  - cute chibi sprites
+  - readable game text
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-064.webp
+attributes:
+  negativePrompt: smooth digital painting, fake pixel filter over painting, visible HUD, health bars, inventory icons, cute chibi sprites, readable game text, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: grimdark monochrome pixel art
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - pixel-art
+    - monochrome
+    - game-aesthetic
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

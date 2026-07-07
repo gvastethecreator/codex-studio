@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-053
+packId: pack_17
+name: Black Veil Anatomical Arcana
+styleAnchors:
+  - Black Veil Anatomical Arcana
+  - black ground white ink anatomical arcana
+  - ritual anatomy engraving
+displayName: Black Veil Anatomical Arcana
+category: 3. Ink, Tarot & Bestiary Plates
+domain: white ink occult anatomy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - white-ink
+  - occult-anatomy
+  - tarot-linework
+visualDna:
+  aesthetic: Absolute black-ground occult engraving with bone-white anatomical symbols, ritual limbs, radial saint halos, horizontal vignette logic, and surgical tarot severity.
+  subject_treatment: 'Preserve any prompt subject and translate it into anatomical arcana: exposed gesture, symbolic organs, ritual hand geometry, split-body silhouette, weaponless tension, or creature anatomy as white-line omen rather than a fixed tarot card.'
+  color_and_tone: Matte black field, bone-white ink, cool gray hatch shadows, tiny dull silver accents, and no warm parchment unless the prompt explicitly asks for paper.
+  lighting_and_shadow: Form is built from white contour, radial halo rays, selective gray hatch, and black negative space instead of realistic light sources.
+  texture_and_material: Fine microfiber-like white ink, engraved hatching, scratch pressure, crisp white cuts, and smooth denoised black fill without dirty speckle.
+  camera_and_composition: Vertical card crop with one centered emblem or stacked horizontal panels, generous negative black space, occult symmetry, and no titles or numbers.
+  atmosphere_and_mood: Grim, ritual, clinical, devotional, and adult; unsettling through diagrammatic poise rather than gore.
+  rendering_and_quality: High-resolution white-on-black engraving reproduced cleanly, controlled line density, readable silhouette, and heavy denoise.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Black Veil Anatomical Arcana as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: black void ground; bone-white anatomical linework; radial halos; ritual hands and organs; horizontal vignette bands; clean denoised ink
+avoidRules:
+  - readable tarot titles
+  - roman numerals
+  - white-on-parchment inversion
+  - gray fog background
+  - blood splatter
+  - explicit gore
+  - overcrowded anatomy diagram
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-053.webp
+attributes:
+  negativePrompt: readable tarot titles, roman numerals, white-on-parchment inversion, gray fog background, blood splatter, explicit gore, overcrowded anatomy diagram, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: white ink occult anatomy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - white-ink
+    - occult-anatomy
+    - tarot-linework
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-008
 packId: pack_17
 name: Plague Doctor Baroque
-category: 2. Hunter Gothic & Plague Courts
+category: 1. Dark Fantasy & Gothic Courts
 domain: gothic fantasy
 version: 1
 supportedTasks:
@@ -11,42 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - hunter-gothic-and-plague-courts
+  - dark-fantasy-and-gothic-courts
   - plague-baroque
 visualDna:
-  aesthetic: >-
-    Baroque plague-era fantasy with beaked masks, ornate decay, medicine cabinets, and candlelit
-    dread.
-  subject_treatment: >-
-    Transform any subject with plague-baroque elegance, beaked or masklike silhouette cues when
-    appropriate, clinical ritual polish, candlelit decay, and broad ruffle-like shape rhythm without
-    forcing a profession.
+  aesthetic: Baroque plague-era fantasy with beaked masks, ornate decay, medicine cabinets, and candlelit dread.
+  subject_treatment: Transform any subject with plague-baroque elegance, beaked or masklike silhouette cues when appropriate, clinical ritual polish, candlelit decay, and broad ruffle-like shape rhythm without forcing a profession.
   color_and_tone: Sepia black, aged ivory, oxidized green, wine red, and sickly candle gold.
-  lighting_and_shadow: >-
-    Simple candle key light, soft baroque shadow blocks, and clean glass highlights keep objects
-    readable.
+  lighting_and_shadow: Simple candle key light, soft baroque shadow blocks, and clean glass highlights keep objects readable.
   texture_and_material: Velvet, cracked porcelain, parchment labels, cloudy glass, aged brass, wax, and dusty herbs.
-  camera_and_composition: >-
-    Formal cabinet hierarchy, controlled depth, candlelit object spacing as abstract rhythm, and
-    theatrical drape-like planes without requiring clustered props or curtains.
-  atmosphere_and_mood: >-
-    Carry the prompt through Elegant, morbid, clinical, and theatrical; nocturnal aristocracy,
-    clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the
-    tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Painterly gothic illustration with ornate props, readable costume layers, defined edges, and
-    restrained horror.
-  creative_brief: >-
-    Reusable visual system for any subject needing plague baroque costume logic, clinical dread,
-    candlelit decay, and theatrical gothic polish. Apply after prompt X: prompt X supplies subject,
-    action, setting, tone, and intensity, while this preset supplies a style grammar of Plague
-    Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets;
-    candlelit dread; Transform any subject with plague baroque elegance, mood, material behavior,
-    framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic,
-    fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine
-    cabinets; candlelit dread; Transform any subject with plague baroque elegance
+  camera_and_composition: Formal cabinet hierarchy, controlled depth, candlelit object spacing as abstract rhythm, and theatrical drape-like planes without requiring clustered props or curtains.
+  atmosphere_and_mood: Carry the prompt through Elegant, morbid, clinical, and theatrical; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained horror.
+  creative_brief: 'Reusable visual system for any subject needing plague baroque costume logic, clinical dread, candlelit decay, and theatrical gothic polish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance
 avoidRules:
   - modern hospital
   - sci fi lab
@@ -64,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-008.webp
 attributes:
-  negativePrompt: >-
-    modern hospital, sci fi lab, cute plague mask, clean fashion shoot, explicit gore, watermark,
-    text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal
-    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
-    noisy dark texture
+  negativePrompt: modern hospital, sci fi lab, cute plague mask, clean fashion shoot, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: hunter-gothic-and-plague-courts
-  categoryName: 2. Hunter Gothic & Plague Courts
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - hunter-gothic-and-plague-courts
+    - dark-fantasy-and-gothic-courts
     - plague-baroque
   supportedTasks:
     - image_generate

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-057
+packId: pack_17
+name: Malformed Bestiary Xerox
+styleAnchors:
+  - Malformed Bestiary Xerox
+  - bad bestiary xerox
+  - malformed creature field guide
+displayName: Malformed Bestiary Xerox
+category: 3. Ink, Tarot & Bestiary Plates
+domain: low fidelity bestiary horror
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - bestiary
+  - low-fidelity
+  - white-ink
+visualDna:
+  aesthetic: Low-fidelity malformed bestiary plates where creatures, objects, or figures look wrongly copied, cheaply xeroxed, and grotesquely authoritative.
+  subject_treatment: Preserve the prompt subject as a specimen or omen diagram, allowing malformed anatomy, wrong scale, naive labels replaced by silent tick marks, and crude field-guide pose without forcing a monster sheet.
+  color_and_tone: Black, bone white, dirty gray, occasional decayed parchment strip, and one sickly accent at most.
+  lighting_and_shadow: Flat specimen light made from outline, gray rub, and stark negative space.
+  texture_and_material: Broken copier edges, wobbly ink, old scan contrast, hand-corrected contour, and controlled grain that does not become muddy noise.
+  camera_and_composition: Specimen-card vertical crop with one large malformed focal read, optional inset silhouettes, and no written labels.
+  atmosphere_and_mood: Untrustworthy, creepy, academic, grotesque, and old-catalog wrong.
+  rendering_and_quality: 'Purposefully poor illustration reproduced with premium clarity: bad drawing as style, not accidental failure.'
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Malformed Bestiary Xerox as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: malformed bestiary plate; cheap xerox; wrong anatomy; silent tick marks; black-white specimen card; controlled low-fi grit
+avoidRules:
+  - readable field-guide labels
+  - scientific diagram text
+  - cute monster manual
+  - clean naturalist plate
+  - full inventory spread
+  - unreadable noisy scan
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-057.webp
+attributes:
+  negativePrompt: readable field-guide labels, scientific diagram text, cute monster manual, clean naturalist plate, full inventory spread, unreadable noisy scan, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: low fidelity bestiary horror
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - bestiary
+    - low-fidelity
+    - white-ink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

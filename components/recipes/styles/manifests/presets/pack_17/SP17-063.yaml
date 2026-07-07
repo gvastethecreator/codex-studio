@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-063
+packId: pack_17
+name: Bone Pink Catacomb Riso
+styleAnchors:
+  - Bone Pink Catacomb Riso
+  - bone pink catacomb riso
+  - pastel toxic dungeon print
+displayName: Bone Pink Catacomb Riso
+category: 2. Dungeon Zine & Risograph Prints
+domain: bone pink catacomb risograph
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - acid-dungeon
+  - bone-pink
+visualDna:
+  aesthetic: Bone-pink catacomb riso style with bat-eared skull beasts, awkward catacomb warriors, black claw shapes, pastel-toxic panels, and crude dot shadows.
+  subject_treatment: Preserve the prompt subject as a weird creature, skull beast, catacomb fighter, familiar, relic-bearing figure, or compact tomb scenelet with intentionally awkward zine anatomy rather than a neat sarcophagus or corridor emblem.
+  color_and_tone: Bone white, corpse pink, black, dull violet, faded teal, and tiny acid green pin marks.
+  lighting_and_shadow: Flat print light through pink blocks, white cutouts, and black shadow silhouettes.
+  texture_and_material: Risograph grain, paper fiber, offset pink fills, dry black contour, and restrained xerox scuff.
+  camera_and_composition: Portrait zine card where a creature or fighter fills the panel against a flat bone-pink or mint field, with simple support marks and rough border rhythm.
+  atmosphere_and_mood: Oddly pretty, grim, rotten-sweet, underground, and handmade.
+  rendering_and_quality: Pastel-toxic risograph with black xerox contour, faded teal offset, purple shadow blocks, crude stipple, and denoised but handmade texture.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Bone Pink Catacomb Riso as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: bone pink riso; bat-eared skull beasts; awkward catacomb figures; teal offset; black claw shapes; crude dot-shadow zine texture
+avoidRules:
+  - sarcophagus-object hero
+  - cute pastel fantasy
+  - gothic romance cover
+  - skull-corridor default
+  - smooth pink airbrush
+  - neat emblem card
+  - busy decorative filler
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-063.webp
+attributes:
+  negativePrompt: sarcophagus-object hero, cute pastel fantasy, gothic romance cover, skull-corridor default, smooth pink airbrush, neat emblem card, busy decorative filler, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: bone pink catacomb risograph
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - acid-dungeon
+    - bone-pink
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

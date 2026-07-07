@@ -3,9 +3,9 @@ id: SP17-052
 packId: pack_17
 name: Black Parchment Siege Omen
 styleAnchors:
-  - 'Black Parchment Siege Omen'
-displayName: 'Black Parchment Omen'
-category: 7. Weird Medieval Editorial
+  - Black Parchment Siege Omen
+displayName: Black Parchment Omen
+category: 1. Dark Fantasy & Gothic Courts
 domain: tactical omen fantasy
 version: 1
 supportedTasks:
@@ -14,41 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - weird-medieval-editorial
+  - dark-fantasy-and-gothic-courts
   - siege-omen
 visualDna:
-  aesthetic: >-
-    Black parchment medieval omen style where siege pressure becomes abstract cartography, burnt
-    edges, bone markers, and tactical dread.
-  subject_treatment: >-
-    Transform any prompt subject through siege-map hierarchy, burnt parchment contrast, omen-marker
-    spacing, tactical diagonals, and anxious negative space without requiring readable maps, armies,
-    or battlefield scenes.
+  aesthetic: Black parchment medieval omen style where siege pressure becomes abstract cartography, burnt edges, bone markers, and tactical dread.
+  subject_treatment: Transform any prompt subject through siege-map hierarchy, burnt parchment contrast, omen-marker spacing, tactical diagonals, and anxious negative space without requiring readable maps, armies, or battlefield scenes.
   color_and_tone: Black parchment, bone white, ember red, soot gray, tarnished brass, and dull ochre.
   lighting_and_shadow: Flat ominous light with ember accents, hard silhouette cuts, and charred edge contrast.
   texture_and_material: Burnt paper, bone markers, soot, scratched ink, brass pins as abstract dots, and dry ash.
-  camera_and_composition: >-
-    Topographic tension, diagonal siege pressure, symbolic spacing, and map-like composition that
-    remains textless and adapts to any subject.
-  atmosphere_and_mood: >-
-    Carry the prompt through Strategic, ominous, fatalistic, dry, and war haunted; adult editorial
-    tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval
-    weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Clean dark parchment illustration with readable shapes, controlled ash texture, and no legible
-    annotation.
-  creative_brief: >-
-    Apply this as a reusable style router over any prompt: preserve the user's subject while adding
-    black parchment siege omen hierarchy, burnt map abstraction, tactical dread, and textless
-    medieval strategy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and
-    intensity, while this preset supplies a style grammar of Black Parchment Siege Omen; Black
-    parchment medieval omen style where siege pressure becomes abstract cartography; burnt edges;
-    bone markers; tactical dread; siege map hierarchy, mood, material behavior, framing logic, and
-    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Black Parchment Siege Omen; Black parchment medieval omen style where siege pressure becomes
-    abstract cartography; burnt edges; bone markers; tactical dread; siege map hierarchy
+  camera_and_composition: Topographic tension, diagonal siege pressure, symbolic spacing, and map-like composition that remains textless and adapts to any subject.
+  atmosphere_and_mood: Carry the prompt through Strategic, ominous, fatalistic, dry, and war haunted; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Clean dark parchment illustration with readable shapes, controlled ash texture, and no legible annotation.
+  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding black parchment siege omen hierarchy, burnt map abstraction, tactical dread, and textless medieval strategy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Black Parchment Siege Omen; Black parchment medieval omen style where siege pressure becomes abstract cartography; burnt edges; bone markers; tactical dread; siege map hierarchy, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  key_features: Black Parchment Siege Omen; Black parchment medieval omen style where siege pressure becomes abstract cartography; burnt edges; bone markers; tactical dread; siege map hierarchy
 avoidRules:
   - readable map
   - labels
@@ -67,20 +45,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-052.webp
 attributes:
-  negativePrompt: >-
-    readable map, labels, army panorama, UI markers, chessboard, explicit gore, watermark, text,
-    generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card
-    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
-    dark texture
+  negativePrompt: readable map, labels, army panorama, UI markers, chessboard, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: weird-medieval-editorial
-  categoryName: 7. Weird Medieval Editorial
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: tactical omen fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - weird-medieval-editorial
+    - dark-fantasy-and-gothic-courts
     - siege-omen
   supportedTasks:
     - image_generate

@@ -3,9 +3,9 @@ id: SP17-022
 packId: pack_17
 name: Mecha Reliquary Knight
 styleAnchors:
-  - 'Mecha Reliquary Knight'
-displayName: 'Mecha Reliquary Gothic'
-category: 4. Futuristic Medieval & Rune Tech
+  - Mecha Reliquary Knight
+displayName: Mecha Reliquary Gothic
+category: 4. Rune-Tech & Apocalyptic Warfronts
 domain: futuristic medieval
 version: 1
 supportedTasks:
@@ -14,43 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - futuristic-medieval-and-rune-tech
+  - rune-tech-and-apocalyptic-warfronts
   - mecha-reliquary
 visualDna:
-  aesthetic: >-
-    Mecha-medieval reliquary style where knight forms become walking shrines of armor, machinery,
-    and sacred cores.
-  subject_treatment: >-
-    Transform any subject with mecha-reliquary logic, bulky ceremonial mass, halo hardware, sacred
-    machine plating, and faceless devotional presence without requiring a humanoid machine body.
+  aesthetic: Mecha-medieval reliquary style where knight forms become walking shrines of armor, machinery, and sacred cores.
+  subject_treatment: Transform any subject with mecha-reliquary logic, bulky ceremonial mass, halo hardware, sacred machine plating, and faceless devotional presence without requiring a humanoid machine body.
   color_and_tone: Dark gunmetal, oxidized bronze, bone enamel, altar gold, red wax, and cool reactor light.
   lighting_and_shadow: Internal core glow lights armor seams while large external shadows keep the form monumental.
-  texture_and_material: >-
-    Riveted plates, cracked enamel, sacred glass, pistons, incense residue, wax seals, and scratched
-    metal.
-  camera_and_composition: >-
-    Monumental sacred-tech framing, central reliquary hierarchy, bulky mass planes, and
-    cathedral-scale negative space without requiring a chest, limbs, or humanoid machine body.
-  atmosphere_and_mood: >-
-    Carry the prompt through Sacred, heavy, ancient future, and intimidating; sacred futurism,
-    oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the
-    tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Detailed digital illustration with readable mechanical joints, defined lines, and medieval
-    reliquary ornament.
-  creative_brief: >-
-    Reusable visual system for any subject needing future medieval machine sanctity, reliquary
-    hardware, armored ceremony, and compact sacred tech weight. Apply after prompt X: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become
-    walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary
-    logic; bulky ceremonial mass, mood, material behavior, framing logic, and denoised medieval-zine
-    finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
-    composition.
-  key_features: >-
-    Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines
-    of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky
-    ceremonial mass
+  texture_and_material: Riveted plates, cracked enamel, sacred glass, pistons, incense residue, wax seals, and scratched metal.
+  camera_and_composition: Monumental sacred-tech framing, central reliquary hierarchy, bulky mass planes, and cathedral-scale negative space without requiring a chest, limbs, or humanoid machine body.
+  atmosphere_and_mood: Carry the prompt through Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary ornament.
+  creative_brief: 'Reusable visual system for any subject needing future medieval machine sanctity, reliquary hardware, armored ceremony, and compact sacred tech weight. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass
 avoidRules:
   - sleek anime robot
   - toy like plastic
@@ -68,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-022.webp
 attributes:
-  negativePrompt: >-
-    sleek anime robot, toy like plastic, spaceship cockpit, clean lab aesthetic, explicit gore,
-    watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal
-    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
-    noisy dark texture
+  negativePrompt: sleek anime robot, toy like plastic, spaceship cockpit, clean lab aesthetic, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: futuristic-medieval-and-rune-tech
-  categoryName: 4. Futuristic Medieval & Rune Tech
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
   domain: futuristic medieval
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - futuristic-medieval-and-rune-tech
+    - rune-tech-and-apocalyptic-warfronts
     - mecha-reliquary
   supportedTasks:
     - image_generate

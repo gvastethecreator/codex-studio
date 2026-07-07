@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-013
 packId: pack_17
 name: Acid Dungeon Zine
-category: 3. Acid Dungeon Zine
+category: 2. Dungeon Zine & Risograph Prints
 domain: dungeon zine
 version: 1
 supportedTasks:
@@ -11,42 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - acid-dungeon-zine
+  - dungeon-zine-and-risograph-prints
   - source-inspired
 visualDna:
-  aesthetic: >-
-    High-contrast underground dungeon zine with clean black xerox ink, acid colors, occult symbols,
-    and monster-card energy.
-  subject_treatment: >-
-    Translate any subject into acid zine icon logic with chunky silhouette weight, stare-like
-    graphic emphasis, occult key-shape rhythm, thick contour breaks, and handmade weirdness without
-    forcing a mascot.
+  aesthetic: High-contrast underground dungeon zine with clean black xerox ink, acid colors, occult symbols, and monster-card energy.
+  subject_treatment: Translate any subject into acid zine icon logic with chunky silhouette weight, stare-like graphic emphasis, occult key-shape rhythm, thick contour breaks, and handmade weirdness without forcing a mascot.
   color_and_tone: Dominant black ink over neon lime, lavender, hot pink, poison green, and occasional cyan or red.
   lighting_and_shadow: Light is graphic rather than realistic, built from flat color fields and black silhouette mass.
-  texture_and_material: >-
-    Controlled photocopier texture, tidy halftone, restrained stipple, hand-inked hatching, clean
-    paper tooth, and misregistered fills.
-  camera_and_composition: >-
-    Poster-front icon hierarchy, boxed-panel pressure, tight graphic crop, thick border logic, and
-    zine pacing without requiring a monster subject.
-  atmosphere_and_mood: >-
-    Carry the prompt through Occult, punk, playful dark, dungeon crawling, and abrasive; abrasive
-    underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Crisp screenprint-zine finish with heavy denoise, controlled print texture, and readable clean
-    black shapes.
-  creative_brief: >-
-    Reusable visual system for any subject needing acid zine punch, boxed graphic force, thick
-    handmade borders, and occult print weirdness. Apply after prompt X: prompt X supplies subject,
-    action, setting, tone, and intensity, while this preset supplies a style grammar of Acid Dungeon
-    Zine; High contrast underground dungeon zine with clean black xerox ink; acid colors; occult
-    symbols; monster card energy; acid zine icon logic with chunky silhouette weight, mood, material
-    behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed
-    relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Acid Dungeon Zine; High contrast underground dungeon zine with clean black xerox ink; acid
-    colors; occult symbols; monster card energy; acid zine icon logic with chunky silhouette weight
+  texture_and_material: Controlled photocopier texture, tidy halftone, restrained stipple, hand-inked hatching, clean paper tooth, and misregistered fills.
+  camera_and_composition: Poster-front icon hierarchy, boxed-panel pressure, tight graphic crop, thick border logic, and zine pacing without requiring a monster subject.
+  atmosphere_and_mood: Carry the prompt through Occult, punk, playful dark, dungeon crawling, and abrasive; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Crisp screenprint-zine finish with heavy denoise, controlled print texture, and readable clean black shapes.
+  creative_brief: 'Reusable visual system for any subject needing acid zine punch, boxed graphic force, thick handmade borders, and occult print weirdness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Acid Dungeon Zine; High contrast underground dungeon zine with clean black xerox ink; acid colors; occult symbols; monster card energy; acid zine icon logic with chunky silhouette weight, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Acid Dungeon Zine; High contrast underground dungeon zine with clean black xerox ink; acid colors; occult symbols; monster card energy; acid zine icon logic with chunky silhouette weight
 avoidRules:
   - smooth digital painting
   - photorealism
@@ -64,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-013.webp
 attributes:
-  negativePrompt: >-
-    smooth digital painting, photorealism, pastel softness, clean vector art, polished fantasy
-    realism, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy
-    noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic
-    fantasy card art, muddy noisy dark texture
+  negativePrompt: smooth digital painting, photorealism, pastel softness, clean vector art, polished fantasy realism, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: acid-dungeon-zine
-  categoryName: 3. Acid Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
   domain: dungeon zine
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - acid-dungeon-zine
+    - dungeon-zine-and-risograph-prints
     - source-inspired
   supportedTasks:
     - image_generate

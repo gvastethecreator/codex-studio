@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-043
 packId: pack_17
 name: Anatomist Wyvern Field Guide
-category: 6. Monochrome Tarot & Bestiary Plates
+category: 3. Ink, Tarot & Bestiary Plates
 domain: fantasy field guide illustration
 version: 1
 supportedTasks:
@@ -11,40 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - field-guide-bestiary
 visualDna:
-  aesthetic: >-
-    Medieval-naturalist field guide plate for wyverns, dungeon beasts, horns, wings, claws, eggs,
-    and relic habitats.
-  subject_treatment: >-
-    Translate any subject into anatomist field-guide logic with clean unlabeled shape insets,
-    restrained anatomical silhouette study, generous spacing, and specimen-like clarity without
-    forcing a wyvern body.
+  aesthetic: Medieval-naturalist field guide plate for wyverns, dungeon beasts, horns, wings, claws, eggs, and relic habitats.
+  subject_treatment: Translate any subject into anatomist field-guide logic with clean unlabeled shape insets, restrained anatomical silhouette study, generous spacing, and specimen-like clarity without forcing a wyvern body.
   color_and_tone: Warm paper, black ink, sepia wash, moss green, muted blue, and small rust accents.
   lighting_and_shadow: Clear studio-plate light, open shadows, and readable form planes.
   texture_and_material: Smooth scientific ink, soft wash, parchment, horn, scale groups, and minimal stipple.
-  camera_and_composition: >-
-    Side-plate or three-quarter specimen logic, one large subject, a few small unlabeled inset
-    shapes, and generous margins without forcing creature anatomy.
-  atmosphere_and_mood: >-
-    Carry the prompt through Scholarly, dangerous, curious, and old world; fatalistic omen calm,
-    scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Clean fantasy field-guide illustration with controlled anatomy, simple shapes, and no dense
-    scale mesh.
-  creative_brief: >-
-    Reusable visual system for any subject needing bestiary field guide clarity, anatomy like
-    fantasy plate structure, unlabeled study insets, and clean specimen card restraint. Apply after
-    prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset
-    supplies a style grammar of Anatomist Wyvern Field Guide; Medieval naturalist field guide plate
-    for wyverns; dungeon beasts; horns; wings; claws, mood, material behavior, framing logic, and
-    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Anatomist Wyvern Field Guide; Medieval naturalist field guide plate for wyverns; dungeon beasts;
-    horns; wings; claws
+  camera_and_composition: Side-plate or three-quarter specimen logic, one large subject, a few small unlabeled inset shapes, and generous margins without forcing creature anatomy.
+  atmosphere_and_mood: Carry the prompt through Scholarly, dangerous, curious, and old world; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Clean fantasy field-guide illustration with controlled anatomy, simple shapes, and no dense scale mesh.
+  creative_brief: 'Reusable visual system for any subject needing bestiary field guide clarity, anatomy like fantasy plate structure, unlabeled study insets, and clean specimen card restraint. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Anatomist Wyvern Field Guide; Medieval naturalist field guide plate for wyverns; dungeon beasts; horns; wings; claws, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Anatomist Wyvern Field Guide; Medieval naturalist field guide plate for wyverns; dungeon beasts; horns; wings; claws
 avoidRules:
   - readable annotations
   - anatomical gore
@@ -62,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-043.webp
 attributes:
-  negativePrompt: >-
-    readable annotations, anatomical gore, dense scale texture, crowded diagram sheet, photoreal
-    animal rendering, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy
-    overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic
-    fantasy card art, muddy noisy dark texture
+  negativePrompt: readable annotations, anatomical gore, dense scale texture, crowded diagram sheet, photoreal animal rendering, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: fantasy field guide illustration
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - field-guide-bestiary
   supportedTasks:
     - image_generate

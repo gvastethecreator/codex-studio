@@ -3,9 +3,9 @@ id: SP17-026
 packId: pack_17
 name: Gothic Miniature Warfront
 styleAnchors:
-  - 'Gothic Miniature Warfront'
-displayName: 'Gothic Miniature Wargame'
-category: 5. Apocalyptic Wargame & Inked Dungeon
+  - Gothic Miniature Warfront
+displayName: Gothic Miniature Wargame
+category: 4. Rune-Tech & Apocalyptic Warfronts
 domain: gothic wargame fantasy
 version: 1
 supportedTasks:
@@ -14,48 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - apocalyptic-wargame-and-inked-dungeon
+  - rune-tech-and-apocalyptic-warfronts
   - gothic-wargame
 visualDna:
-  aesthetic: >-
-    Grim gothic tabletop warfront with cathedral armor, painted-miniature contrast, skull-shaped
-    reliquaries, and oversized siege silhouettes.
-  subject_treatment: >-
-    Transform any subject with gothic miniature warfront logic, chunky tabletop readability,
-    plinth-like grounding, compact silhouette hierarchy, and grimdark paint clarity without
-    requiring a fixed unit.
-  color_and_tone: >-
-    Blackened steel, ivory bone, imperial red, toxic green glow, cold blue shadows, and bright edge
-    highlights.
-  lighting_and_shadow: >-
-    Display-plinth lighting and battlefield rim light make every silhouette readable at thumbnail
-    scale.
-  texture_and_material: >-
-    Painted miniature brush texture, edge wear, drybrushed metal, cracked stone bases, parchment
-    cloth, and matte armor.
-  camera_and_composition: >-
-    Heroic three-quarter miniature showcase, strong base plane, compact warfront depth, and clean
-    object separation.
-  atmosphere_and_mood: >-
-    Carry the prompt through Grandiose, martial, occult, heavy, and collectible; martial doom,
-    penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual
-    discipline; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
-  rendering_and_quality: >-
-    Fantasy miniature illustration with crisp edge highlights, controlled darks, defined linework,
-    and denoised brush texture.
-  creative_brief: >-
-    Reusable visual system for any subject needing gothic wargame readability, chunky miniature
-    presence, compact warfront mood, and grimdark tabletop inspired finish. Apply after prompt X:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    style grammar of Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor;
-    painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky
-    tabletop readability, mood, material behavior, framing logic, and denoised medieval-zine finish
-    without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
-    composition.
-  key_features: >-
-    Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature
-    contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability
+  aesthetic: Grim gothic tabletop warfront with cathedral armor, painted-miniature contrast, skull-shaped reliquaries, and oversized siege silhouettes.
+  subject_treatment: Transform any subject with gothic miniature warfront logic, chunky tabletop readability, plinth-like grounding, compact silhouette hierarchy, and grimdark paint clarity without requiring a fixed unit.
+  color_and_tone: Blackened steel, ivory bone, imperial red, toxic green glow, cold blue shadows, and bright edge highlights.
+  lighting_and_shadow: Display-plinth lighting and battlefield rim light make every silhouette readable at thumbnail scale.
+  texture_and_material: Painted miniature brush texture, edge wear, drybrushed metal, cracked stone bases, parchment cloth, and matte armor.
+  camera_and_composition: Heroic three-quarter miniature showcase, strong base plane, compact warfront depth, and clean object separation.
+  atmosphere_and_mood: Carry the prompt through Grandiose, martial, occult, heavy, and collectible; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Fantasy miniature illustration with crisp edge highlights, controlled darks, defined linework, and denoised brush texture.
+  creative_brief: 'Reusable visual system for any subject needing gothic wargame readability, chunky miniature presence, compact warfront mood, and grimdark tabletop inspired finish. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability
 avoidRules:
   - copied tabletop franchise designs
   - real world insignia
@@ -73,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-026.webp
 attributes:
-  negativePrompt: >-
-    copied tabletop franchise designs, real world insignia, unreadable kitbash clutter, muddy black
-    artifacts, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic
-    battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text,
-    generic fantasy card art, muddy noisy dark texture
+  negativePrompt: copied tabletop franchise designs, real world insignia, unreadable kitbash clutter, muddy black artifacts, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: apocalyptic-wargame-and-inked-dungeon
-  categoryName: 5. Apocalyptic Wargame & Inked Dungeon
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
   domain: gothic wargame fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - apocalyptic-wargame-and-inked-dungeon
+    - rune-tech-and-apocalyptic-warfronts
     - gothic-wargame
   supportedTasks:
     - image_generate

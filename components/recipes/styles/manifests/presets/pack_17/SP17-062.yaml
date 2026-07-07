@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-062
+packId: pack_17
+name: Mold Pulp Dungeon Print
+styleAnchors:
+  - Mold Pulp Dungeon Print
+  - mold pulp dungeon print
+  - aged green zine fantasy
+displayName: Mold Pulp Dungeon Print
+category: 2. Dungeon Zine & Risograph Prints
+domain: moldy pulp dungeon print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - acid-dungeon
+  - mold-green
+visualDna:
+  aesthetic: Mold-green pulp dungeon zine with slime monks, ghouls, old-game-store ogres, drooping robes, cheap pamphlet ink, and sickly aged-yellow panels.
+  subject_treatment: Any prompt subject becomes a moldy pulp creature, robed ghoul, dungeon brute, relic-bearing figure, or simple monster-card scene while keeping the pose hand-drawn, awkward, and alive rather than a static relic icon.
+  color_and_tone: Mold green, aged yellow, black ink, bone, stale olive, and tiny bruised red accents.
+  lighting_and_shadow: Flat yellow-green print values, black silhouette shadow, and cream gaps for light.
+  texture_and_material: Aged paper tooth, riso grain, ink bleed, imperfect registration, and sparse scuffed edges.
+  camera_and_composition: Compressed vertical monster-card crop with reaching hands, too-small shields, drooping hoods, simple flat background, and no readable pamphlet text.
+  atmosphere_and_mood: Mildewed, pulp, cheap, grim, and old-game-store weird.
+  rendering_and_quality: Cheap pulp risograph/xerox reproduction with chunky black line, aged paper, wobbly contour, print scum, and controlled low-detail grit.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mold Pulp Dungeon Print as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: mold green pulp zine; slime monks and ghouls; aged yellow panels; crude black robe mass; wobbly old-school monster-card drawing
+avoidRules:
+  - relic-object hero
+  - clean fantasy poster
+  - readable pamphlet text
+  - sepia-only parchment
+  - high-detail monster manual
+  - straight centered icon
+  - random dirt overlay
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-062.webp
+attributes:
+  negativePrompt: relic-object hero, clean fantasy poster, readable pamphlet text, sepia-only parchment, high-detail monster manual, straight centered icon, random dirt overlay, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: moldy pulp dungeon print
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - acid-dungeon
+    - mold-green
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

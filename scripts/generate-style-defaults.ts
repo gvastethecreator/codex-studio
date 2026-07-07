@@ -270,18 +270,34 @@ const CATEGORY_BASE_PROMPTS: Record<string, string> = {
 
   pack_17__dark_fantasy_realms:
     'A portrait medieval dark-fantasy RPG illustration card built from the exact preset concept, not a stock knight, ruin, or monster formula. Use graphic digital painting, defined linework, broad midtone color planes, simple edge lighting, ash, iron, stone, sacred decay, and solemn fantasy weight without photorealistic rendering, micro-detail armor, mostly-black palettes, franchise likeness, explicit gore, or heroic-clean polish.',
+  pack_17__dark_fantasy_and_gothic_courts:
+    'A portrait medieval dark-fantasy, hunter-gothic, plague-court, or weird-editorial style card built from the exact preset concept, not a stock knight, ruin, plague mask, court room, saint, monster, or copied game scene. Use graphic fantasy illustration, defined linework, broad readable midtones, ash, iron, wax, leather, stone, ceremonial decay, gothic restraint, and one adult unsettling design decision without photorealism, explicit gore, mostly-black mush, or generic heroic polish.',
   pack_17__hunter_gothic_and_plague_courts:
     'A portrait gothic medieval-horror graphic illustration card built from the exact preset concept, not a repeated hunter, plague mask, alley, or court-room formula. Use defined ink-like contours, broad color planes, simple readable light, baroque trim, clean fog shapes, wax, leather, surgical relic detail, crimson moon accents, and ornate dread without photorealistic rendering, dense costume micro-detail, mostly-black palettes, copied game identities, or graphic gore.',
   pack_17__acid_dungeon_zine:
     'A portrait underground dungeon-zine style-card built from the exact preset concept, not a repeated cultist, skull knight, castle, or monster-manual shortcut. Use heavy clean black xerox ink, acid risograph colors, controlled paper texture, boxed-card energy, thick borders, tidy halftone, and symbol-like marks that are not readable text. Keep dark areas as solid readable black shapes, not noisy artifact fields.',
+  pack_17__dungeon_zine_and_risograph_prints:
+    'A portrait dungeon-zine or risograph monster-card built from the exact preset concept, not a straight emblem, door icon, neat poster logo, corridor, or repeated cultist shortcut. Use hand-inked dungeon figures, creatures, crude armor, clubs, chains, claws, flat acid color fields, chunky black xerox ink, riso misregistration, controlled stipple, and crooked OSR zine energy with no readable typography.',
   pack_17__futuristic_medieval_and_rune_tech:
     'A portrait futuristic-medieval graphic illustration card built from the exact preset concept, not a repeated rune-knight, cyber-castle, mech bust, or stained-glass shortcut. Fuse clean digital painting, bold armor shapes, simple luminous edge lighting, flat medieval geometry, limited circuitry, glyph-like non-readable motifs, and ancient-future material contrast without dense mesh patterns or photoreal material simulation.',
   pack_17__apocalyptic_wargame_and_inked_dungeon:
     'A portrait apocalyptic medieval wargame or inked dungeon RPG illustration card built from the exact preset concept, not a repeated crusader, warband, dungeon doorway, or banner formula. Use digital painting plus etched ink lines, simple candlelight, readable midtones, heraldic armor language, tactical silhouettes, and dramatic design shapes without copied tabletop franchise designs, readable text, photorealism, dense miniature texture, or excessive dirty noise.',
+  pack_17__rune_tech_and_apocalyptic_warfronts:
+    'A portrait rune-tech, futuristic-medieval, apocalyptic warfront, or inked dungeon card built from the exact preset concept, not a repeated rune-knight, mech bust, cyber-castle, crusader, warband, trench banner, or doorway formula. Fuse clean fantasy illustration, medieval geometry, relic engineering, tactical silhouettes, etched linework, readable midtones, simple glow/rim light, and controlled print-safe grime without photoreal hard-surface simulation, copied armor sets, readable insignia, or dense noisy war texture.',
   pack_17__monochrome_tarot_and_bestiary_plates:
     'A portrait medieval tarot, monochrome fantasy plate, manuscript, or bestiary-card illustration built from the exact preset concept, not a repeated omen figure, beast, field-guide, or oracle animal formula. Use clean black ink, warm paper, open white space, broad value groups, crisp contours, sparse controlled wash, and optional single muted accent. Avoid photorealism, crushed black, dirty gray grain, dense cross-hatching carpets, chainmail mesh, readable text, copied game identity, or overpacked occult symbols.',
+  pack_17__ink_tarot_and_bestiary_plates:
+    'A portrait medieval ink, tarot, bestiary, manuscript, black-ground white-ink, or occult plate style-card built from the exact preset concept, not a repeated omen figure, standard tarot border, field-guide sheet, title card, parchment default, or inventory page. Use crisp black or bone-white linework, strong negative space, broad value groups, readable symbol design, sparse support marks, controlled hatching, and denoised ink texture with no readable text, crowded diagram, gray fog, or hatch carpet.',
   pack_17__weird_medieval_editorial:
     'A portrait adult weird-medieval editorial card built from the exact preset concept, not a stock knight, saint, monster, plague mask, or castle formula. Use clean graphic fantasy illustration, memorable unsettling design decisions, broad matte planes, readable silhouettes, controlled ornament, and denoised texture while preserving the preset as style language instead of a fixed scene.',
+  pack_17__black_ground_tarot_and_white_ink_horror:
+    'A portrait black-ground white-ink horror card built from the exact preset concept, not a generic tarot card, title card, or parchment bestiary page. Use matte black negative space, bone-white linework, anatomical or devotional symbol pressure, radial halos, horizontal vignette logic when useful, and controlled scratch/engraving texture. Mostly black fields are allowed when they are clean, graphic, and readable.',
+  pack_17__rustic_acid_dungeon_prints:
+    'A portrait old-school dungeon zine monster-card built from the exact preset concept, not a straight emblem, door icon, neat poster logo, or architecture-first card. Use grotesque hand-inked figures, creatures, cultists, crude armor, chains, clubs, claws, capes, weird castles only as support, flat acid color panels, chunky black ink, xerox stipple, riso misregistration, and crooked OSR zine energy with no readable typography.',
+  pack_17__grimdark_systems_and_isometric_games:
+    'A portrait grimdark fantasy systems card built from the exact preset concept: robust tabletop portraits, post-apocalyptic symbols, cosmic/biomechanical/future-war horror, monochrome pixel art, or isometric 2.5D game aesthetics. Preserve the chosen preset route without HUD, UI, copied game identity, photoreal render polish, or generic fantasy key art.',
+  pack_17__grimdark_game_systems_and_tabletop:
+    'A portrait grimdark tabletop, sourcebook, pixel, isometric, post-apocalyptic, cosmic, biomechanical, or future-war style-card built from the exact preset concept. Preserve the chosen preset route as robust portrait grammar, game-space readability, symbolic system design, or adult horror-world material language without HUD, UI, copied game identity, photoreal render polish, generic key art, or unreadable black mush.',
 };
 
 const PACK06_IMAGEGEN_DENOISE_SUFFIX =
@@ -303,6 +319,16 @@ const PACK10_PATTERN_TEXTURE_KEYS = new Set([
 
 function isPack10PatternTextureKey(key: string) {
   return PACK10_PATTERN_TEXTURE_KEYS.has(key);
+}
+
+function pack17PresetNumber(preset: Pick<StyleRuntimePreset, 'id'>) {
+  const match = /^SP17-(\d+)$/.exec(preset.id);
+  return match ? Number(match[1]) : 0;
+}
+
+function isPack17PresetRange(preset: Pick<StyleRuntimePreset, 'id'>, start: number, end: number) {
+  const presetNumber = pack17PresetNumber(preset);
+  return presetNumber >= start && presetNumber <= end;
 }
 
 const PACK17_CARD_CONCEPTS: Record<string, string> = {
@@ -410,9 +436,134 @@ const PACK17_CARD_CONCEPTS: Record<string, string> = {
     'an opal-bone masquerade predator revealed only through a cracked ceremonial mask, velvet void, pearl-lit hand, and one crimson etiquette violation',
   'SP17-052':
     'a burnt black-parchment siege omen where a tiny bone fortress marker is surrounded by ember diagonals, ash fields, brass pin-stars, and textless tactical dread',
+  'SP17-053':
+    'a black-field triptych of white-ink ritual anatomy: one heart-like relic with radial pins, one stretched hand gesture, and one beast-motion omen suspended in void with no labels',
+  'SP17-054':
+    'a tiny white-thread relic floating in a huge black void: a bent crown, isolated ritual hand silhouette, and three pin-line halo rays arranged as an omen card',
+  'SP17-055':
+    'a crooked white-ink horror card where a malformed chapel beast is drawn with intentionally wrong anatomy, primitive border cuts, and one sickly accent mark on black',
+  'SP17-056':
+    'a gutter saint icon made from a cracked mask, chalk halo scratches, ragged cloth shapes, and a black devotional void with no prayer text',
+  'SP17-057':
+    'a malformed bestiary specimen copied badly onto black paper: one wrong-limbed creature silhouette, silent tick marks, and a crude inset skull-shape with no writing',
+  'SP17-058':
+    'a dark inverted medieval ink plate showing a bone-white relic beast emerging from blackened vellum, oxidized wash corners, and textless manuscript ornament',
+  'SP17-059':
+    'a rust-red OSR zine monster-card: a squat skull-faced dungeon bruiser in a spiked hood, crooked mace, black xerox shadows, cream gaps, and a flat rust panel behind it',
+  'SP17-060':
+    'a toxic lime dungeon freak in a horned mask, hunched pose, chain whip curling through the panel, hot magenta shadow blocks, and broken black xerox stipple',
+  'SP17-061':
+    'a cobalt and rot-orange fungal knight-monster with a swollen cloak, shield, lumpy helmet, crooked boots, and rough black hatch shadows on a flat zine color field',
+  'SP17-062':
+    'a mold-green pulp dungeon ghoul reaching forward from a flat aged-yellow panel, black robe mass, crude skull emblem shape, and wobbly hand-inked shadows',
+  'SP17-063':
+    'a bone-pink catacomb creature card: a bat-eared skull beast with tiny arms, black claw shapes, faded teal offset, and crude dot shadows inside a simple panel',
+  'SP17-064':
+    'a monochrome pixel dungeon scenelet with one cursed altar sprite, hard tile edges, candle dither, and a tiny non-UI creature silhouette approaching',
+  'SP17-065':
+    'an ashen isometric action-RPG encounter space: one occult relic boss-shape on cathedral floor tiles, ember rim light, playable lanes, and absolutely no HUD',
+  'SP17-066':
+    'an obsidian 2.5D catacomb tile fragment with a bone-lit gate guardian, severe isometric floor hierarchy, and cold corpse-light pools with no interface',
+  'SP17-067':
+    'a robust adult tabletop adventurer portrait with heavy silhouette, worn gear planes, strong face readability, and a shallow grim sourcebook background',
+  'SP17-068':
+    'a rusted vault reliquary where medieval armor, reactor-door geometry, peeling paint shapes, and hazard-glow symbolism merge without numbers or logos',
+  'SP17-069':
+    'a cosmic chapel omen with a warped arch, starless halo, impossible black void, and one kneeling scale silhouette reduced to bone-white design',
+  'SP17-070':
+    'a biomechanical reliquary machine with tendon cables, bone housings, black iron altar ribs, and non-graphic organic-machine dread',
+  'SP17-071':
+    'a future-apocalypse punishment scaffold seen as a symbolic machine silhouette, rusted restraint arcs, furnace slits, and no explicit victim spectacle',
+  'SP17-072':
+    'an endless-war gothic emblem where trench geometry, ruined cathedral stone, drone shadow, mud-gray cloth, and dead heraldry form one tactical omen',
 };
 
-function pack17CardConceptForPreset(preset: StyleRuntimePreset) {
+const PACK17_CARD_VARIANT_CONCEPTS: Record<string, Record<number, string>> = {
+  'SP17-053': {
+    1: 'a white-ink wheel of ritual hands on matte black, with a tiny heart-shaped lock at the hub, radial pins, and large silent voids between the limbs',
+    2: 'a black-ground anatomical chapel icon: rib-like arches, one floating lung-shaped relic, white microfiber hatching, and a beast-shadow contour reduced to line',
+  },
+  'SP17-054': {
+    1: 'a small white-thread crown caught in the upper third of a huge black void, with two delicate hand-lines pulling invisible tension and only three halo ticks',
+    2: 'a sparse omen arrangement of a crescent jaw, a needle-thin tower sliver, and one suspended eye-like bead, all drawn as fragile white thread on black',
+  },
+  'SP17-055': {
+    1: 'a badly drawn black-card chapel chair that seems alive, with crooked white teeth-like arches, one uneven halo, and a crude red pin accent',
+    2: 'a lopsided white-ink horror mascot made from a cracked bucket helm, insect legs, and a saint pose drawn with deliberately wrong proportions',
+  },
+  'SP17-056': {
+    1: 'a cracked bell-mask saint on black, scratched white halo rays, ragged banner strips with no writing, and one chalky handprint-like relic shape',
+    2: 'a gutter devotional card where a bone-white candle cage, cheap crown, and damaged mask form a blasphemous icon in a wide black void',
+  },
+  'SP17-057': {
+    1: 'a malformed copied side-view wyvern specimen with too many awkward joints, silent tick marks, and one crude inset footprint on black paper',
+    2: 'a cheap xerox bestiary plate of a chair-shaped dungeon parasite, wrong scale bars without numbers, and a badly corrected white contour',
+  },
+  'SP17-058': {
+    1: 'a dark inverted manuscript plate where a bone-white armored moth sentinel stands on blackened vellum with verdigris wash and no script',
+    2: 'a soot-black medieval plate of a thorned reliquary gate, white ink cuts, oxidized corner stains, and one tiny beast silhouette as scale',
+  },
+  'SP17-059': {
+    1: 'a rust-red hooded cult brute with a skull chest mark, bent knees, heavy cloak, crude axe silhouette, cream paper gaps, and black xerox stipple',
+    2: 'a squat horned dungeon guard in rust armor, too-wide stance, lumpy boots, one chain loop, off-register orange shadow, and flat cream background',
+  },
+  'SP17-060': {
+    1: 'a toxic lime frog-demon adventurer with bulging eyes, ragged cloak, spiked club, hot magenta belly shadow, and rough black dungeon-zine ink',
+    2: 'a lime-background plague bat cultist with skull mask, tiny castle on one shoulder, broken sword silhouette, and cyan/magenta riso misprint',
+  },
+  'SP17-061': {
+    1: 'a cobalt-robed rot knight with orange mushroom pauldrons, shield held too low, skull grin, and coarse black hatch fields on cream paper',
+    2: 'a blue-orange dungeon troll with a castle-shaped helmet, swollen hands, ragged cape, and fungal dot texture kept chunky and readable',
+  },
+  'SP17-062': {
+    1: 'a mold-green slime monk with drooping hood, skull triangle on the chest, reaching hand, aged yellow paper field, and crude black robe mass',
+    2: 'a cheap pulp swamp ogre with a too-small shield, old-game-store grin, stale olive shadows, and bruised red pin accent in the eye',
+  },
+  'SP17-063': {
+    1: 'a bone-pink bat-eared dungeon familiar with skull belly, tiny feet, purple riso shadow, and a flat mint-green panel behind the black ink',
+    2: 'a corpse-pink catacomb warrior with ribbed cloak, broken spear, faded teal offset, acid-green eyes, and intentionally awkward zine anatomy',
+  },
+  'SP17-064': {
+    1: 'a one-bit side-view pixel boss altar: bone-white statue sprite, black tile void, chunky candle dither, and a small crawling creature with no HUD',
+    2: 'a monochrome isometric pixel bridge over a black pit, tiny relic chest shape, hard tile clusters, and a rust-pixel warning glow with no UI',
+  },
+  'SP17-065': {
+    1: 'an ashen isometric cathedral bridge arena with one relic beast blocking the path, ember rim light, readable playable lanes, and no interface',
+    2: 'a dark 2.5D loot-altar chamber with a tiny armored figure for scale, bone floor planes, corpse-blue shadow pools, and absolutely no HUD',
+  },
+  'SP17-066': {
+    1: 'a monochrome 2.5D catacomb puzzle room with a bone portal, obsidian floor hierarchy, cold green corpse-light, and no map markers',
+    2: 'an isometric black-stone boss approach where a gate guardian casts bone-white tile shadows over severe playable floor geometry',
+  },
+  'SP17-067': {
+    1: 'a robust older dungeon cartographer portrait with broad shoulders, weathered gear, one map tube without readable marks, and a shallow grim background',
+    2: 'a heavy-set monster-hunter cook or quartermaster portrait, scarred hands, worn apron armor, dull brass tools as costume rhythm, and no weapon pose',
+  },
+  'SP17-068': {
+    1: 'a rusted prayer generator shrine with medieval bolts, reactor-door geometry, peeling paint shapes without numbers, and one small survivor scale silhouette',
+    2: 'a post-nuclear vault-beast mask mounted in a ruined chapel, hazard-green pin glow, oxidized armor plates, and no logos or readable signage',
+  },
+  'SP17-069': {
+    1: 'a non-Euclidean chapel altar folding into a black void, starless halo, warped floor tiles, and one tiny armored hand silhouette as scale',
+    2: 'a void eye hidden behind a crooked rose window, bone-white arch fragments, sick violet rim light, and devotional symmetry breaking apart',
+  },
+  'SP17-070': {
+    1: 'a biomechanical warhorse reliquary made from bone housings and black iron ribs, tendon cables forming reins, and no rider or gore',
+    2: 'a cathedral prosthetic shrine where a tendon-cabled crown is held by ribbed machine arms, waxy ceramic plates, and cold surgical rim light',
+  },
+  'SP17-071': {
+    1: 'an empty future punishment machine presented like an altar: rusted restraint arcs, furnace slits, warning-stripe color blocks without text, and no victim',
+    2: 'a hanging apocalyptic exoskeleton silhouette like a scarecrow, black scaffold geometry, sodium light cuts, and implied cruelty without body detail',
+  },
+  'SP17-072': {
+    1: 'a mud-gray trench chapel icon where a cracked field-saint mask, drone shadow, brass shell-bell, and ruined stone ribs form one omen',
+    2: 'an endless-war gothic relic: dented helmet on a broken altar, barbed geometry as halo, smoke-blue cloth, and cathedral wall fragments with no flags',
+  },
+};
+
+function pack17CardConceptForPreset(preset: StyleRuntimePreset, variantSlot?: number) {
+  const variantConcept = variantSlot ? PACK17_CARD_VARIANT_CONCEPTS[preset.id]?.[variantSlot] : '';
+  if (variantConcept) return variantConcept;
   return PACK17_CARD_CONCEPTS[preset.id];
 }
 
@@ -439,6 +590,46 @@ const PACK17_CARD_HARD_AVOIDS: Record<string, string> = {
     'no ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, vampire cosplay, or porcelain doll cliche',
   'SP17-052':
     'no readable map, labels, army panorama, UI markers, chessboard, literal strategy board, or battlefield gore',
+  'SP17-053':
+    'no tarot titles, roman numerals, parchment inversion, explicit gore, gray fog field, or crowded medical diagram',
+  'SP17-054':
+    'no standard tarot border, corner decorations, readable symbols, busy occult sheet, parchment background, or dense cross-hatching carpet',
+  'SP17-055':
+    'no cute doodle, no polished vector monster, no random scribble noise, no children-horror mascot, and no overly competent anatomy',
+  'SP17-056':
+    'no readable prayer, clean church poster, golden saint card, angel cliche, martyr gore, or safe devotional illustration',
+  'SP17-057':
+    'no readable field-guide labels, scientific text, cute monster manual, clean naturalist plate, full inventory spread, or unreadable scan noise',
+  'SP17-058':
+    'no bright parchment default, readable manuscript text, illuminated letters, crowded bestiary page, brown muddy soup, or tiny filigree carpet',
+  'SP17-059':
+    'no centered door emblem, no key prop, no neat vector icon, no architecture-first card, no tasteful poster minimalism, no smooth fantasy painting, no full dungeon corridor, or tiny skull wallpaper',
+  'SP17-060':
+    'no trap-glyph emblem, no legible poster typography, no polished mascot vector, no cyberpunk city, no smooth neon glow realism, no straight geometric poster layout, or detailed acid-zine overwork',
+  'SP17-061':
+    'no shrine-object hero, no clean architecture object, no generic cinematic blue-orange lighting, no literal mushroom wallpaper, no overcrowded cave, no smooth fantasy painting, or rainbow neon palette',
+  'SP17-062':
+    'no relic-object hero, no clean fantasy poster, no readable pamphlet text, no sepia parchment default, no high-detail monster manual, no straight centered icon, or random dirt overlay',
+  'SP17-063':
+    'no sarcophagus-object hero, no cute pastel fantasy, no gothic romance cover, no skull-corridor default, no smooth pink airbrush, no neat emblem card, or busy decorative filler',
+  'SP17-064':
+    'no HUD, health bars, inventory icons, readable game text, fake pixel filter over a painting, chibi sprites, or smooth gradients',
+  'SP17-065':
+    'no HUD, loot labels, damage numbers, mouse cursor, skill icons, character-select screen, copied game screenshot, or photoreal PBR render',
+  'SP17-066':
+    'no HUD, map labels, loot popups, smooth cinematic perspective, generic pixel filter, bright fantasy UI, or unreadable black floor',
+  'SP17-067':
+    'no sexy default heroine, generic handsome hero, same-face party lineup, glossy armor pinup, weapon-first pose, anime face, or copied tabletop costume',
+  'SP17-068':
+    'no readable vault numbers, brand logos, blue jumpsuit cosplay, comic mascot, modern-gun focus, real-world faction insignia, or photoreal wasteland screenshot',
+  'SP17-069':
+    'no tentacle wallpaper, readable cult text, generic space nebula, purple smoke overload, photoreal cathedral, or cosmic monster pinup',
+  'SP17-070':
+    'no explicit gore, shock organs, alien franchise likeness, slick sci-fi corridor, dense cable spaghetti, photoreal wet anatomy, or pinup cyborg',
+  'SP17-071':
+    'no explicit torture, graphic injury focus, blood spray, real-world prison imagery, sci-fi UI screens, logo signage, or shock-gore poster',
+  'SP17-072':
+    'no real national flags, readable unit patches, propaganda poster, specific real war event, military UI, gun catalog pose, or battlefield gore',
 };
 
 function pack17CardHardAvoidForPreset(preset: StyleRuntimePreset) {
@@ -622,6 +813,11 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Stage dark-fantasy weight through weathered material, oppressive vertical rhythm, damaged heraldry, and moral pressure rather than a default knight, fortress, or boss scene.',
     'Build the frame from solemn medieval texture and readable curse-bearing design language; avoid stock ruin panoramas and copied game encounters.',
   ],
+  pack_17__dark_fantasy_and_gothic_courts: [
+    'Use the preset-specific concept as the focal read; support it with ash, iron, wax, leather, stone, sacred decay, plague-court restraint, gothic silhouettes, or weird editorial ornament only where useful.',
+    'Stage dark-fantasy and hunter-gothic pressure through readable character, creature, relic, court, or architecture fragments rather than a default knight, plague mask, saint, castle, or courtroom scene.',
+    'Build the frame from original adult medieval material language, clean graphic dread, and one memorable unsettling decision; avoid copied game encounters, black mush, repeated corridors, and safe catalog neutrality.',
+  ],
   pack_17__hunter_gothic_and_plague_courts: [
     'Use the preset-specific concept as the focal read; support it with baroque fabric, leather, wax, mask geometry, surgical metal, moonlit contrast, or crimson accents when relevant.',
     'Stage hunter-gothic dread through ornate silhouettes, clean fog shapes, old-city verticals, and restrained menace rather than a default alley, trial, or mask portrait.',
@@ -631,6 +827,11 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Use the preset-specific concept as the focal read; support it with heavy clean black ink, neon paper, thick border logic, controlled stipple, and acid color fields.',
     'Stage zine identity through handmade dungeon-symbol pressure and thumbnail-readable silhouette, not a repeated cultist, skull armor, tiny castle, or front-facing monster shortcut.',
     'Build the composition from cleaned xerox texture, misregistered color fills, punk dungeon marks, and one bold graphic hierarchy with no readable text.',
+  ],
+  pack_17__dungeon_zine_and_risograph_prints: [
+    'Use the preset-specific concept as the focal read; support it with chunky black ink, crooked OSR figure language, acid or rustic risograph color fields, controlled stipple, and handmade monster-card force.',
+    'Stage dungeon zine identity through creatures, cultists, relics, crude armor, chains, claws, castles, or occult signs only when they clarify the preset; avoid neat emblem posters and repeated centered monster shortcuts.',
+    'Build the composition from cleaned xerox pressure, flat print color, misregistration, and bold readable hierarchy with no readable typography, random photocopy dirt, or high-detail neon wallpaper.',
   ],
   pack_17__futuristic_medieval_and_rune_tech: [
     'Use the preset-specific concept as the focal read; support it with medieval geometry, luminous tech seams, stained-glass color, ancient stone, and restrained circuitry when relevant.',
@@ -642,15 +843,45 @@ const PACK_SCENE_ANCHORS: Record<string, string[]> = {
     'Stage apocalypse or dungeon pressure through graphic design shape, print-safe grime, and readable silhouette rather than a repeated warband, banner, trench crusader, or doorway scene.',
     'Build the frame around original medieval-apocalypse vocabulary; avoid copied franchise armor, unreadable grime, and noisy dark artifacts.',
   ],
+  pack_17__rune_tech_and_apocalyptic_warfronts: [
+    'Use the preset-specific concept as the focal read; support it with medieval geometry, relic engineering, rune-tech seams, etched black linework, tactical armor language, stained cloth, mud, bone, brass, or controlled sacred glow.',
+    'Stage ancient-future or apocalyptic pressure through readable silhouettes, warfront objects, shrine fragments, machinery, banners, and defensive forms rather than a default rune knight, trench crusader, cyber gate, or warband pileup.',
+    'Build the frame around original medieval-apocalypse vocabulary with open midtones, simple dramatic light, and print-safe grime; avoid copied armor, dense mesh, hard-surface photorealism, and noisy dark artifacts.',
+  ],
   pack_17__monochrome_tarot_and_bestiary_plates: [
     'Use the preset-specific concept as the focal read; support it with warm paper, broad white space, crisp black contours, sparse wash, and optional muted accent.',
     'Stage the plate as readable black-ink design with one large focal hierarchy and 2-3 support symbols, not a repeated tarot card, bestiary sheet, or inventory page.',
     'Build the frame from open ivory paper, broad black shapes, controlled margins, and textless medieval plate logic rather than dark realism, noisy hatch carpets, or texture-heavy horror.',
   ],
+  pack_17__ink_tarot_and_bestiary_plates: [
+    'Use the preset-specific concept as the focal read; support it with warm paper, matte black voids, crisp black or bone-white linework, broad negative space, sparse wash, and 2-3 textless support symbols.',
+    'Stage tarot, manuscript, bestiary, or black-ground horror as a transferable ink language, not a standard tarot border, title card, field-guide sheet, inventory page, or literal copy of the thumbnail.',
+    'Build the frame from strong value groups, controlled hatching, clean contours, and denoised print texture; avoid gray fog, hatch carpets, crowded diagrams, readable labels, and random speckle clouds.',
+  ],
   pack_17__weird_medieval_editorial: [
     'Use the preset-specific concept as the focal read; support it with adult weird-fantasy editorial design, controlled ornament, and one memorable unsettling decision.',
     'Stage the card as a strong publication-worthy medieval image, not a safe catalog specimen, generic saint, stock monster, or ordinary fantasy scene.',
     'Build the composition from rich but transferable style vocabulary: material, posture, color, lighting, surface, and negative space should carry the preset without forcing future prompts into this exact card subject.',
+  ],
+  pack_17__black_ground_tarot_and_white_ink_horror: [
+    'Use the preset-specific concept as the focal read; support it with matte black negative space, bone-white line, radial halo marks, anatomical/devotional pressure, and very few support shapes.',
+    'Stage black-ground horror through symbol, contour, and void rather than a standard tarot border, parchment page, occult chart, or readable title card.',
+    'Build the card as clean white-ink engraving or scratchboard on black: controlled line density, no mud, no gray fog, no decorative text.',
+  ],
+  pack_17__rustic_acid_dungeon_prints: [
+    'Use the preset-specific concept as the focal read; support it with two-to-three-color risograph blocks, chunky black shape, rough paper, and misregistration.',
+    'Stage rustic acid dungeon identity through low-detail handmade print force, not the existing high-detail neon acid-zine formula.',
+    'Build the composition around a bold flyer-like silhouette with no readable typography, no corridor default, and no random photocopy dirt.',
+  ],
+  pack_17__grimdark_systems_and_isometric_games: [
+    'Use the preset-specific concept as the focal read; let portrait, pixel, isometric, post-apocalyptic, cosmic, biomechanical, or war-gothic grammar lead depending on the preset.',
+    'Stage grimdark systems through readable silhouette, game/sourcebook utility, and adult horror-world design, not franchise likeness, UI, or generic key art.',
+    'Build dark cards with open midtones, controlled grime, and denoised value groups; isometric/game presets may use stylized 2.5D space when it is the point.',
+  ],
+  pack_17__grimdark_game_systems_and_tabletop: [
+    'Use the preset-specific concept as the focal read; let robust tabletop portrait, monochrome pixel, isometric 2.5D space, post-apocalyptic symbol, cosmic chapel, biomechanical reliquary, or future-war horror lead depending on the preset.',
+    'Stage grimdark game and sourcebook systems through readable silhouette, playable spatial logic, portrait authority, or symbolic utility rather than franchise likeness, UI, menu art, or generic fantasy key art.',
+    'Build dark cards with open midtones, controlled grime, denoised value groups, and clear scale; isometric and pixel presets may use game-space structure when that is the style route.',
   ],
   pack_05__modern_shonen_and_action: [
     'Choose a preset-specific shonen anchor: costume fragment, motion scarf, psychic color rupture, elastic adventure shape, occult pressure field, strategic path cue, or original character only when character acting is the strongest proof.',
@@ -6002,16 +6233,16 @@ function sceneGuardrails(pack: StyleRuntimePack, category: string, preset: Style
     ].join(' ');
   }
   if (pack.id === 'pack_17') {
-    const acidZineRule =
-      key === 'pack_17__acid_dungeon_zine'
-        ? 'For acid dungeon zine cards, prioritize flat print fields, heavy clean black ink, controlled xerox texture, tidy halftone, misregistration, neon lime/lavender/hot-pink accents, and one centered bestiary-like focal silhouette. Avoid dirty speckle, noisy dark-color artifacts, crushed black mush, and ugly texture chatter.'
-        : 'For painterly or futuristic medieval cards, prioritize original medieval material language, readable silhouettes, fortress/cathedral geometry, armor, relics, weathering, controlled atmosphere, smooth dark gradients, and one strong focal subject. Avoid dirty speckle, noisy dark-color artifacts, crushed black mush, and ugly texture chatter.';
+    const zineOrRisoRule =
+      isPack17PresetRange(preset, 13, 18) || isPack17PresetRange(preset, 59, 63)
+        ? 'For dungeon zine and risograph cards, prioritize flat print fields, heavy clean black ink, controlled xerox/riso texture, tidy halftone, intentional misregistration, loud limited palettes, and one readable bestiary-like focal silhouette. Avoid dirty speckle, noisy dark-color artifacts, crushed black mush, high-detail wallpaper texture, and ugly texture chatter.'
+        : 'For painterly, ink, gothic, futuristic, or game-system medieval cards, prioritize original medieval material language, readable silhouettes, fortress/cathedral geometry, armor, relics, weathering, controlled atmosphere, smooth dark gradients, and one strong focal subject. Avoid dirty speckle, noisy dark-color artifacts, crushed black mush, and ugly texture chatter.';
     return [
       'Pack 17 guardrail: medieval fantasy representation must be original and style-led, not direct fan art or a copied game scene.',
       'Use illustration or digital painting language: defined lines, clean silhouettes, readable midtones, simple key light, clear rim/glow accent, and visible medium-sized details. Do not render as photorealistic dark fantasy, ultra-real cinematic concept art, or murky low-light realism.',
       'Avoid franchise likenesses, copied boss designs, copied armor sets, readable sigils, readable runes, text, logos, UI, maps, bookshelves, library rooms, market aisles, generic corridors, and default fantasy hallway staging.',
       'Horror, cult, plague, monster, and occult cues should stay non-graphic: no explicit gore, dismemberment, torture detail, shock injury, or blood-splatter focus.',
-      acidZineRule,
+      zineOrRisoRule,
     ].join(' ');
   }
   if (pack.id === 'pack_14') {
@@ -6227,6 +6458,12 @@ function buildStylePrompt(
   const pack10PatternTextureCard = isPack10PatternTextureKey(promptCategoryKey);
   const pack15PunkCard = pack.id === 'pack_15';
   const pack17MedievalCard = pack.id === 'pack_17';
+  const pack17BlackGroundCard = pack17MedievalCard && isPack17PresetRange(preset, 53, 58);
+  const pack17RusticAcidCard = pack17MedievalCard && isPack17PresetRange(preset, 59, 63);
+  const pack17GrimdarkSystemsCard = pack17MedievalCard && isPack17PresetRange(preset, 64, 72);
+  const pack17PixelCard = pack17GrimdarkSystemsCard && preset.id === 'SP17-064';
+  const pack17IsometricCard =
+    pack17GrimdarkSystemsCard && (preset.id === 'SP17-065' || preset.id === 'SP17-066');
   const allowsAnimeGrammar = presetAllowsAnimeGrammar(pack, category, preset);
   const nonAnimeStyleLock = nonAnimeStyleLockLine(pack, category, preset);
   const pack02PhotoMediaLock = pack02PhotoMediaLockLine(pack, category, preset);
@@ -6371,10 +6608,18 @@ function buildStylePrompt(
   const pack17IllustrationContract = pack17MedievalCard
     ? [
         'PACK 17 ILLUSTRATION CONTRACT:',
-        'Render as a clean 2D fantasy RPG card illustration or graphic-novel/digital-painting hybrid, not a photoreal render, not cinematic concept art, not a realistic 3D-looking material study.',
+        pack17IsometricCard
+          ? 'Render as stylized isometric or 2.5D dark fantasy game art with playable spatial readability, not a photoreal PBR render, not a UI screenshot, and not promo key art.'
+          : pack17PixelCard
+            ? 'Render as authentic monochrome pixel art or pixel-native game illustration, not a painted image with a fake pixel filter and not a UI screenshot.'
+            : 'Render as a clean 2D fantasy RPG card illustration or graphic-novel/digital-painting hybrid, not a photoreal render, not cinematic concept art, not a realistic 3D-looking material study.',
         'Use large shape design, visible drawn contour logic, simplified value groups, poster-readable silhouettes, clean midtones, controlled brush planes, and a limited detail budget.',
         'Armor, stone, cloth, fog, monsters, and relics should feel illustrated and designed with broad readable planes, not physically simulated with noisy micro-texture.',
-        'Avoid dense mesh patterns, chainmail/fishnet-like filler, tiny repeating scratches, lace-like filigree, black-on-black surfaces, and mostly-black palettes.',
+        pack17BlackGroundCard
+          ? 'Mostly-black matte grounds are allowed and expected here, but they must stay clean, graphic, and readable with crisp white linework; avoid muddy black noise, gray fog, and unreadable black-on-black figures.'
+          : pack17RusticAcidCard
+            ? 'Heavy black print shapes are allowed and expected here, but they must stay graphic, flat, and print-clean; avoid muddy photocopy noise and tiny texture carpets.'
+            : 'Avoid dense mesh patterns, chainmail/fishnet-like filler, tiny repeating scratches, lace-like filigree, black-on-black surfaces, and mostly-black palettes.',
       ].join(' ')
     : '';
   const pack15IllustrationContract = pack15PunkCard
@@ -6475,12 +6720,14 @@ apply heavy denoise to the image`;
   }
 
   if (pack17MedievalCard) {
-    const zineMode = promptCategoryKey === 'pack_17__acid_dungeon_zine';
-    const hunterMode = promptCategoryKey === 'pack_17__hunter_gothic_and_plague_courts';
-    const monochromePlateMode =
-      promptCategoryKey === 'pack_17__monochrome_tarot_and_bestiary_plates';
-    const weirdEditorialMode = promptCategoryKey === 'pack_17__weird_medieval_editorial';
-    const pack17PresetConcept = pack17CardConceptForPreset(preset);
+    const zineMode = isPack17PresetRange(preset, 13, 18);
+    const hunterMode = isPack17PresetRange(preset, 7, 12);
+    const monochromePlateMode = isPack17PresetRange(preset, 33, 44);
+    const weirdEditorialMode = isPack17PresetRange(preset, 45, 52);
+    const blackGroundMode = pack17BlackGroundCard;
+    const rusticAcidMode = pack17RusticAcidCard;
+    const grimdarkSystemsMode = pack17GrimdarkSystemsCard;
+    const pack17PresetConcept = pack17CardConceptForPreset(preset, variantSlot);
     const pack17PresetHardAvoid = pack17CardHardAvoidForPreset(preset);
     const styleCreativeBrief =
       typeof preset.style.creative_brief === 'string' && preset.style.creative_brief.trim()
@@ -6498,28 +6745,54 @@ apply heavy denoise to the image`;
     ]
       .filter(Boolean)
       .join('\n');
-    const routeLine = monochromePlateMode
-      ? 'Clean black-and-white or limited-accent medieval tarot, bestiary plate, manuscript, woodcut, field-guide, and devotional icon language: warm paper, broad white space, crisp ink, sparse wash, and readable symbol design.'
-      : zineMode
-        ? 'Clean dungeon zine, risograph, screenprint, and monster-manual card language: flat color, bold black shapes, controlled halftone, and readable icon design.'
-        : hunterMode
-          ? 'Clean gothic fantasy sourcebook and graphic-novel illustration language: pale stone, ivory cloth, blue-gray moonlight, readable midtones, clear contours, and simple open shadows. Gothic horror mood without dark interior realism.'
-          : weirdEditorialMode
-            ? 'Adult weird-medieval editorial card language: rich but controlled fantasy illustration, unsettling publication-worthy concept, broad matte planes, clean graphic silhouettes, adult gothic restraint, and one memorable visual decision without safe catalog neutrality.'
-            : 'Clean 2D fantasy RPG sourcebook, graphic novel, and board-game card illustration language: broad painted planes, clear contours, readable midtones, and simple dramatic light.';
+    const routeLine = blackGroundMode
+      ? 'Black-ground white-ink horror-card language: matte voids, bone-white contour, anatomical/devotional symbols, radial halo marks, sparse scratch texture, and strong negative space. Mostly black is correct when it is clean and graphic.'
+      : rusticAcidMode
+        ? 'Old-school dungeon zine monster-card language: grotesque hand-inked figures, crooked cultists, slime monks, skull warriors, frog demons, bat beasts, crude armor, chains, clubs, capes, and flat acid color panels. Use riso/xerox texture as print behavior, not as a clean emblem poster.'
+        : grimdarkSystemsMode
+          ? 'Grimdark systems language: robust tabletop portrait, post-apocalyptic symbol, cosmic chapel, biomechanical reliquary, future-war horror, monochrome pixel, or isometric 2.5D game art depending on the preset identity. No UI, copied game identity, or generic key-art formula.'
+          : monochromePlateMode
+            ? 'Clean black-and-white or limited-accent medieval tarot, bestiary plate, manuscript, woodcut, field-guide, and devotional icon language: warm paper, broad white space, crisp ink, sparse wash, and readable symbol design.'
+            : zineMode
+              ? 'Clean dungeon zine, risograph, screenprint, and monster-manual card language: flat color, bold black shapes, controlled halftone, and readable icon design.'
+              : hunterMode
+                ? 'Clean gothic fantasy sourcebook and graphic-novel illustration language: pale stone, ivory cloth, blue-gray moonlight, readable midtones, clear contours, and simple open shadows. Gothic horror mood without dark interior realism.'
+                : weirdEditorialMode
+                  ? 'Adult weird-medieval editorial card language: rich but controlled fantasy illustration, unsettling publication-worthy concept, broad matte planes, clean graphic silhouettes, adult gothic restraint, and one memorable visual decision without safe catalog neutrality.'
+                  : 'Clean 2D fantasy RPG sourcebook, graphic novel, and board-game card illustration language: broad painted planes, clear contours, readable midtones, and simple dramatic light.';
     const subjectLine = pack17PresetConcept
       ? `Use this preset-specific card concept as the main subject: ${pack17PresetConcept}. The card prompt may introduce a fresh character, creature, relic, emblem, architectural fragment, or compact scenelet only when it helps this exact preset read. Add at most 2-3 simple support shapes. Do not reuse a neighboring Pack 17 formula, generic sword pose, generic castle corridor, literal trial, literal troll-gate, object inventory sheet, or copy of the current thumbnail.${pack17PresetHardAvoid ? ` Hard avoid for this preset: ${pack17PresetHardAvoid}.` : ''}`
       : monochromePlateMode
         ? 'Use the PRESET IDENTITY focal grammar as the main subject. Make one large readable original focal subject only: horror tarot omen, penitent icon, starved dungeon relic, woodcut beast, illuminated manuscript creature, marginalia monster, heraldic chimera, stained-glass beast, tapestry creature, field-guide wyvern, or oracle animal. Add at most 2-3 simple support symbols. No crowded page, no diagram sheet, no full inventory spread, no weapon-first pose.'
         : 'Use the PRESET IDENTITY focal grammar as the main subject. Make one large readable original focal subject only: monster, relic, shrine fragment, castle fragment, plague specialist, warband icon, rune-tech armor, dungeon beast, architectural sentinel, or medieval-fantasy object. Add at most 2-3 simple support shapes. No crowded battlefield, no busy ruins panorama, no full equipment sheet, no weapon-first pose.';
-    const colorLine = monochromePlateMode
-      ? 'Prefer warm ivory paper and clean black ink. Add only sparse smooth gray wash or one muted accent such as dull red, muted blue, olive, gold, or violet when it helps the preset. Keep large white-paper areas visible. Avoid dominant black fields, muddy grayscale, noisy night skies, black-on-black figures, and gray speckle clouds.'
-      : hunterMode
-        ? 'Use pale gothic midtones and visible color separation: ivory, bone, gray blue, desaturated teal, muted burgundy, old gold, and moonlit stone. Keep at least half the image in readable mid-value or light planes. Avoid dominant black robes, black interiors, crushed charcoal, muddy brown-black, dark red haze, and black-on-black figures.'
-        : 'Use mid-value palettes and visible color separation: parchment, muted blue, oxidized green, dull gold, rust red, bone, lavender, poison green, or clean accent colors depending on the preset. Avoid dominant black, black-on-black armor, crushed charcoal, muddy gray-brown soup, and dark color fields full of artifacts.';
-    const textureLine = monochromePlateMode
-      ? 'Clean denoised ink, smooth wash, tidy paper tooth, and deliberate large print marks only. No dirty photocopy grain, dense hatch carpets, random speckle clouds, mesh-like shading, muddy black ink buildup, or low-light compression artifacts.'
-      : 'Smooth denoised digital painting or clean print texture. If zine-like, use tidy halftone and clean xerox edge as intentional graphic marks, not dirty noise. No speckle clouds, no ugly dark texture chatter, no low-light compression artifacts.';
+    const colorLine = blackGroundMode
+      ? 'Use matte black as the dominant field with crisp bone-white ink, cool gray hatch, and only tiny dull accent marks if the preset asks for them. Mostly-black is allowed, but it must be smooth, intentional, graphic, and readable. Avoid parchment conversion, gray fog, and dirty black artifacts.'
+      : rusticAcidMode
+        ? 'Use the exact acid-risograph palette from the preset: one loud flat background color, one or two misregistered accent colors, heavy black ink, and paper white gaps. The palette may feel nasty, playful, and overprinted. Avoid tasteful muted poster design, smooth gradients, and rainbow soup.'
+        : pack17PixelCard
+          ? 'Use strict monochrome or near-monochrome pixel palette: black, bone white, ash gray, and at most one small rust or corpse-light accent. No smooth gradients or painterly color.'
+          : pack17IsometricCard
+            ? 'Use dark isometric game palettes with readable value separation: charcoal, ash gray, bone, ember, cold blue, corpse green, or old gold. Dark fields are allowed, but at least one third of the image must remain readable midtone floor, architecture, or character-scale geometry so the playable space is legible.'
+            : grimdarkSystemsMode
+              ? 'Use the preset palette with open midtones and controlled darks: charcoal, bone, rust, oxidized green, bruised violet, dull brass, mud gray, or ember accents. Avoid black mush, photoreal night grading, and unreadable dark-on-dark staging.'
+              : monochromePlateMode
+                ? 'Prefer warm ivory paper and clean black ink. Add only sparse smooth gray wash or one muted accent such as dull red, muted blue, olive, gold, or violet when it helps the preset. Keep large white-paper areas visible. Avoid dominant black fields, muddy grayscale, noisy night skies, black-on-black figures, and gray speckle clouds.'
+                : hunterMode
+                  ? 'Use pale gothic midtones and visible color separation: ivory, bone, gray blue, desaturated teal, muted burgundy, old gold, and moonlit stone. Keep at least half the image in readable mid-value or light planes. Avoid dominant black robes, black interiors, crushed charcoal, muddy brown-black, dark red haze, and black-on-black figures.'
+                  : 'Use mid-value palettes and visible color separation: parchment, muted blue, oxidized green, dull gold, rust red, bone, lavender, poison green, or clean accent colors depending on the preset. Avoid dominant black, black-on-black armor, crushed charcoal, muddy gray-brown soup, and dark color fields full of artifacts.';
+    const textureLine = blackGroundMode
+      ? 'Clean denoised matte black ground, crisp white ink, controlled scratchboard or engraving pressure, and a few deliberate hatch shadows. No gray speckle clouds, no dirty photocopy texture, no noisy low-light artifacts.'
+      : rusticAcidMode
+        ? 'Rough dungeon-zine texture is mandatory: black xerox stipple, broken hatch shadows, wobbling contour, paper fiber, riso offset, ink scum, and cheap pamphlet pressure. Keep it legible and denoised, but do not make it smooth, vector-clean, or polished.'
+        : pack17PixelCard
+          ? 'Pixel-native texture only: hand-placed clusters, chunky dithering, tile edges, clean upscaled pixels. No painterly smearing and no fake CRT text.'
+          : pack17IsometricCard
+            ? 'Stylized 2.5D game texture: readable tile planes, simplified stone/cloth/bone/metal, controlled fog, and denoised shadows. No PBR realism, no texture-wallpaper clutter.'
+            : grimdarkSystemsMode
+              ? 'Controlled grimdark material texture only: medium-sized rust, cloth, stone, bone, cable, mud, or smoke marks. No dirty speckle, black mush, gore texture, or high-frequency microdetail.'
+              : monochromePlateMode
+                ? 'Clean denoised ink, smooth wash, tidy paper tooth, and deliberate large print marks only. No dirty photocopy grain, dense hatch carpets, random speckle clouds, mesh-like shading, muddy black ink buildup, or low-light compression artifacts.'
+                : 'Smooth denoised digital painting or clean print texture. If zine-like, use tidy halftone and clean xerox edge as intentional graphic marks, not dirty noise. No speckle clouds, no ugly dark texture chatter, no low-light compression artifacts.';
 
     return appendImagegenDenoiseDirective(`Generate one clean graphic 2D medieval fantasy illustration card.
 TARGET LOOK: CLEAN ILLUSTRATED ${targetStyleLabel}
@@ -6532,10 +6805,10 @@ ${cardConceptRule}
 
 ${nonAnimeStyleLock ? `${nonAnimeStyleLock}\n` : ''}
 VISUAL LEVEL:
-Polished but simplified tabletop RPG/sourcebook/card illustration. Use flat gouache-like digital painting, comic-book contour discipline, cel-shaded value groups, matte color planes, and visible designed edges.
+${pack17IsometricCard ? 'Polished but simplified isometric dark fantasy game art. Use playable floor hierarchy, stylized 2.5D planes, readable character/relic scale, matte materials, and no interface.' : pack17PixelCard ? 'Authentic monochrome pixel-native card art. Use hand-placed pixel clusters, strict limited palette, clear tile/sprite hierarchy, and clean upscaled edges.' : 'Polished but simplified tabletop RPG/sourcebook/card illustration. Use flat gouache-like digital painting, comic-book contour discipline, cel-shaded value groups, matte color planes, and visible designed edges.'}
 Detail ratio: about 70 percent broad readable shapes, 20 percent clean linework, 10 percent texture/detail accents.
 Editorial intent: adult weird-fantasy card art with one unsettling, memorable visual decision. Avoid safe catalog specimens, bland devotional icons, generic monster manuals, and asset-sheet neutrality.
-No cinematic key art, no semi-realistic concept-art polish, no realistic material rendering, no volumetric realism, no 3D-render look, no photobash look, and no ornate microdetail.
+${pack17IsometricCard ? 'No HUD screenshot, no UI overlay, no loot labels, no mouse cursor, no copied game scene, no photoreal PBR render, no cinematic key-art poster, and no character-select staging.' : pack17PixelCard ? 'No HUD, no UI overlay, no readable game text, no fake pixel filter over a painting, no smooth gradients, and no cute chibi drift.' : 'No cinematic key art, no semi-realistic concept-art polish, no realistic material rendering, no volumetric realism, no 3D-render look, no photobash look, and no ornate microdetail.'}
 
 STYLE ROUTE:
 ${routeLine}
@@ -6558,7 +6831,7 @@ COLOR:
 ${colorLine}
 
 LIGHTING:
-Simple illustration lighting only: one clear key light plus one rim/glow accent. Open the shadows. Keep details visible in dark areas. No murky low-light realism, no smoky artifact buildup, no cinematic HDR, no realistic night photography.
+${pack17IsometricCard ? 'Readable isometric game lighting only: one top-down key, one ember or corpse-light accent, open midtone floor planes, and visible path geometry. No murky low-light realism, no black-floor loss, no smoky artifact buildup, no cinematic HDR.' : pack17PixelCard ? 'Pixel-cluster lighting only: hard value steps, chunky dither, clear sprite/tile silhouettes, and no smooth gradients or painterly glow.' : 'Simple illustration lighting only: one clear key light plus one rim/glow accent. Open the shadows. Keep details visible in dark areas. No murky low-light realism, no smoky artifact buildup, no cinematic HDR, no realistic night photography.'}
 
 TEXTURE:
 ${textureLine}
@@ -6566,7 +6839,7 @@ ${textureLine}
 SCENE GUARDRAILS:
 Original medieval fantasy only. No franchise likeness, copied boss design, copied armor set, readable sigils/runes/text, logos, UI, maps, book stacks, library rooms, market aisles, generic corridors, or default fantasy hallway.
 Horror, plague, cult, monster, and occult cues must stay non-graphic: no explicit gore, dismemberment, torture detail, shock injury, or blood-splatter focus.
-If a weapon-like prop appears, keep it small and secondary; prefer relics, beasts, shrines, armor silhouettes, omen symbols, or architecture fragments as the main read.
+${rusticAcidMode ? 'For rustic dungeon zine cards, clubs, chains, swords, axes, staffs, shields, claws, spikes, skull emblems, capes, and crude armor are allowed as character-body language. They should look hand-inked and awkward, not realistic weapon catalog props.' : 'If a weapon-like prop appears, keep it small and secondary; prefer relics, beasts, shrines, armor silhouettes, omen symbols, or architecture fragments as the main read.'}
 
 COMPOSITION:
 Portrait 1024x1536, one finished image, card crop safe, no border text, no labels, no watermark.
@@ -8026,11 +8299,7 @@ async function cleanupExternalJobArtifacts(jobId: string, sourceAssetPath: strin
       // Ignore malformed transcript lines; cleanup is best-effort after the repo copy succeeds.
     }
   }
-  const resolvedSourceAssetPath = path.resolve(sourceAssetPath);
-  const resolvedRepoRoot = path.resolve(rootDir);
-  if (!resolvedSourceAssetPath.startsWith(`${resolvedRepoRoot}${path.sep}`)) {
-    await rm(sourceAssetPath, { force: true }).catch(() => {});
-  }
+  void sourceAssetPath;
   await rm(resolveLibraryPathFromRoot(libraryDir, 'transcripts', jobId), {
     recursive: true,
     force: true,

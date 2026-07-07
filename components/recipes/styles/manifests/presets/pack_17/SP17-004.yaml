@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-004
 packId: pack_17
 name: Cathedral Chiaroscuro
-category: 1. Dark Fantasy Realms
+category: 1. Dark Fantasy & Gothic Courts
 domain: medieval fantasy
 version: 1
 supportedTasks:
@@ -11,40 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - dark-fantasy-realms
+  - dark-fantasy-and-gothic-courts
   - cathedral
 visualDna:
   aesthetic: Gothic cathedral fantasy with carved darkness, vaulted height, and sacred chiaroscuro.
-  subject_treatment: >-
-    Apply sacred chiaroscuro to any subject through slab-like massing, devotional vertical emphasis,
-    candlelit contour cuts, solemn masklike simplification, and ritual severity without imposing a
-    role or prop bundle.
+  subject_treatment: Apply sacred chiaroscuro to any subject through slab-like massing, devotional vertical emphasis, candlelit contour cuts, solemn masklike simplification, and ritual severity without imposing a role or prop bundle.
   color_and_tone: Near-black stone, candle gold, desaturated crimson, ivory dust, and cool blue-gray recesses.
-  lighting_and_shadow: >-
-    Clear holy key light and candle accents cut through large graphic shadow masses without losing
-    architectural detail.
+  lighting_and_shadow: Clear holy key light and candle accents cut through large graphic shadow masses without losing architectural detail.
   texture_and_material: Carved stone, wax drips, oxidized metal, incense haze, cracked fresco, and embroidered cloth.
-  camera_and_composition: >-
-    Tall vertical framing, sacred axial symmetry, long shadow lanes, stained-pane contrast, and
-    devotional silhouette pressure without requiring a nave or window set.
-  atmosphere_and_mood: >-
-    Carry the prompt through Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread,
-    sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone
-    should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and
-    painterly atmosphere.
-  creative_brief: >-
-    Reusable visual system for any subject needing sacred vertical light, carved darkness,
-    ceremonial gravity, and gothic chiaroscuro beyond one literal scene. Apply after prompt X:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    style grammar of Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted
-    height; sacred chiaroscuro; slab like massing; devotional vertical emphasis, mood, material
-    behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed
-    relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred
-    chiaroscuro; slab like massing; devotional vertical emphasis
+  camera_and_composition: Tall vertical framing, sacred axial symmetry, long shadow lanes, stained-pane contrast, and devotional silhouette pressure without requiring a nave or window set.
+  atmosphere_and_mood: Carry the prompt through Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly atmosphere.
+  creative_brief: 'Reusable visual system for any subject needing sacred vertical light, carved darkness, ceremonial gravity, and gothic chiaroscuro beyond one literal scene. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis
 avoidRules:
   - flat daylight
   - modern church interior
@@ -62,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-004.webp
 attributes:
-  negativePrompt: >-
-    flat daylight, modern church interior, clean museum look, cute fantasy, explicit gore,
-    watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt
-    literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art,
-    muddy noisy dark texture
+  negativePrompt: flat daylight, modern church interior, clean museum look, cute fantasy, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: dark-fantasy-realms
-  categoryName: 1. Dark Fantasy Realms
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: medieval fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - dark-fantasy-realms
+    - dark-fantasy-and-gothic-courts
     - cathedral
   supportedTasks:
     - image_generate

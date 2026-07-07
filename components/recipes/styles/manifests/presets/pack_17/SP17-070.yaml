@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-070
+packId: pack_17
+name: Biomechanical Reliquary
+styleAnchors:
+  - Biomechanical Reliquary
+  - biomechanical gothic reliquary
+  - flesh machine medieval horror
+displayName: Biomechanical Reliquary
+category: 5. Grimdark Game Systems & Tabletop
+domain: biomechanical medieval reliquary
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - biomechanical
+  - reliquary
+  - grimdark
+visualDna:
+  aesthetic: Biomechanical medieval reliquary style with tendon cables, black iron, bone housings, cathedral machinery, and organic-machine dread kept non-graphic.
+  subject_treatment: Any subject can become a biomechanical relic, figure, beast, armor, machine-chapel fragment, or symbolic object, but the preset does not force exposed organs or a fixed creature.
+  color_and_tone: Black iron, bone, bruised flesh muted to clay, oxidized copper, surgical gray, oil green, and dull crimson accents.
+  lighting_and_shadow: Cold surgical rim, furnace pin glow, reflective black metal edges, and open shadows.
+  texture_and_material: Tendon-like cable bundles, ribbed housings, bone plates, waxy ceramic, oily metal, and medium-sized engineered-organic marks only.
+  camera_and_composition: Vertical reliquary/sourcebook crop with one central constructed silhouette and architectural or altar support shapes.
+  atmosphere_and_mood: Sacred, invasive, industrial, clinical, and medieval-gothic.
+  rendering_and_quality: Stylized biomechanical fantasy illustration, rich but denoised, non-photoreal, no explicit gore.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Biomechanical Reliquary as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: tendon cables; bone housings; black iron reliquary; cathedral machinery; organic-machine silhouettes; non-graphic body horror
+avoidRules:
+  - explicit gore
+  - exposed organs as shock focus
+  - alien franchise likeness
+  - slick sci-fi corridor
+  - dense cable spaghetti
+  - photoreal wet anatomy
+  - pinup cyborg
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-070.webp
+attributes:
+  negativePrompt: explicit gore, exposed organs as shock focus, alien franchise likeness, slick sci-fi corridor, dense cable spaghetti, photoreal wet anatomy, pinup cyborg, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: biomechanical medieval reliquary
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - biomechanical
+    - reliquary
+    - grimdark
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-038
 packId: pack_17
 name: Illuminated Monster Codex
-category: 6. Monochrome Tarot & Bestiary Plates
+category: 3. Ink, Tarot & Bestiary Plates
 domain: illuminated medieval bestiary
 version: 1
 supportedTasks:
@@ -11,44 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - illuminated-bestiary
 visualDna:
-  aesthetic: >-
-    Illuminated manuscript bestiary style with clean parchment, jewel-like flat accents, gold
-    margins, and strange medieval beasts.
-  subject_treatment: >-
-    Translate any subject into illuminated manuscript logic with flat pigment separation, clean ink
-    contour, restrained gold ornament, vellum spacing, and scholarly medieval oddness without
-    requiring a fixed figure.
-  color_and_tone: >-
-    Parchment, black ink, muted lapis, red lake, dull gold, and soft green accents separated into
-    flat planes.
+  aesthetic: Illuminated manuscript bestiary style with clean parchment, jewel-like flat accents, gold margins, and strange medieval beasts.
+  subject_treatment: Translate any subject into illuminated manuscript logic with flat pigment separation, clean ink contour, restrained gold ornament, vellum spacing, and scholarly medieval oddness without requiring a fixed figure.
+  color_and_tone: Parchment, black ink, muted lapis, red lake, dull gold, and soft green accents separated into flat planes.
   lighting_and_shadow: Flat manuscript lighting, little cast shadow, and strong color separation.
-  texture_and_material: >-
-    Smooth vellum, flat pigment, clean ink outlines, restrained gold ornament, and no smeared
-    aged-paper noise.
-  camera_and_composition: >-
-    Manuscript plate crop, creature centered in a simple frame, broad margins, and no readable
-    annotations.
-  atmosphere_and_mood: >-
-    Carry the prompt through Scholarly, magical, antique, and curious rather than grim; fatalistic
-    omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic
-    restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  texture_and_material: Smooth vellum, flat pigment, clean ink outlines, restrained gold ornament, and no smeared aged-paper noise.
+  camera_and_composition: Manuscript plate crop, creature centered in a simple frame, broad margins, and no readable annotations.
+  atmosphere_and_mood: Carry the prompt through Scholarly, magical, antique, and curious rather than grim; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Clean illuminated illustration with crisp edges, low texture load, and visible shape design.
-  creative_brief: >-
-    Reusable visual system for any subject needing illuminated codex discipline, parchment clarity,
-    jewel like flat accents, and scholarly medieval curiosity. Apply after prompt X: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Illuminated Monster Codex; Illuminated manuscript bestiary style with clean
-    parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated
-    manuscript logic with flat pigment separation, mood, material behavior, framing logic, and
-    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel
-    like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat
-    pigment separation
+  creative_brief: 'Reusable visual system for any subject needing illuminated codex discipline, parchment clarity, jewel like flat accents, and scholarly medieval curiosity. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Illuminated Monster Codex; Illuminated manuscript bestiary style with clean parchment; jewel like flat accents; gold margins; strange medieval beasts; illuminated manuscript logic with flat pigment separation
 avoidRules:
   - readable marginal text
   - over aged parchment grime
@@ -66,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-038.webp
 attributes:
-  negativePrompt: >-
-    readable marginal text, over aged parchment grime, excessive filigree, photoreal vellum,
-    explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy
-    overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic
-    fantasy card art, muddy noisy dark texture
+  negativePrompt: readable marginal text, over aged parchment grime, excessive filigree, photoreal vellum, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: illuminated medieval bestiary
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - illuminated-bestiary
   supportedTasks:
     - image_generate

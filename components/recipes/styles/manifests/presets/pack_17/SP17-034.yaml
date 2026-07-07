@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-034
 packId: pack_17
 name: Medieval Ink Fantasy Plate
-category: 6. Monochrome Tarot & Bestiary Plates
+category: 3. Ink, Tarot & Bestiary Plates
 domain: monochrome medieval fantasy
 version: 1
 supportedTasks:
@@ -11,45 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - ink-fantasy
 visualDna:
-  aesthetic: >-
-    Clean black and white medieval fantasy sourcebook plate illustration with non-humanoid fantasy
-    masses, fortress-like creatures, relic fragments, stone hands, and ancient contour authority.
-  subject_treatment: >-
-    Translate any subject into medieval ink fantasy plate logic: fortress-weight contour, oversized
-    mass cues, stone-like plane rhythm, key-relic accent geometry, and sourcebook ink clarity
-    without forcing a bridge-gate scene, crusader, knight, sword, cross, banner, shield pose, or
-    tiny scale figures.
+  aesthetic: Clean black and white medieval fantasy sourcebook plate illustration with non-humanoid fantasy masses, fortress-like creatures, relic fragments, stone hands, and ancient contour authority.
+  subject_treatment: 'Translate any subject into medieval ink fantasy plate logic: fortress-weight contour, oversized mass cues, stone-like plane rhythm, key-relic accent geometry, and sourcebook ink clarity without forcing a bridge-gate scene, crusader, knight, sword, cross, banner, shield pose, or tiny scale figures.'
   color_and_tone: Ivory ground, black ink, soft gray wash, and generous negative space.
   lighting_and_shadow: Simple value grouping, open shadows, and clear foreground-background separation.
-  texture_and_material: >-
-    Crisp pen lines, smooth wash, flat cloth, old paper, weathered stone, and creature-hide planes
-    with minimal scratch texture.
-  camera_and_composition: >-
-    Editorial plate crop, centered focal silhouette, small support motifs, and readable contour
-    hierarchy.
-  atmosphere_and_mood: >-
-    Carry the prompt through Ancient, adventurous, sober, and mythic without oppressive darkness;
-    fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and
-    archaic symbolic restraint; the tone should follow prompt X while preserving the preset's
-    medieval-zine identity.
+  texture_and_material: Crisp pen lines, smooth wash, flat cloth, old paper, weathered stone, and creature-hide planes with minimal scratch texture.
+  camera_and_composition: Editorial plate crop, centered focal silhouette, small support motifs, and readable contour hierarchy.
+  atmosphere_and_mood: Carry the prompt through Ancient, adventurous, sober, and mythic without oppressive darkness; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Traditional ink illustration translated into clean digital line art with no noisy micro-detail.
-  creative_brief: >-
-    Route any subject through medieval ink fantasy plate language: preserve the prompt while adding
-    clean black ink, fortress weight contour, oversized fantasy mass, sourcebook clarity, and old
-    paper restraint without requiring a troll gate scene, crusader, knight, sword, cross, banner, or
-    armor hero. Apply after prompt X: prompt X supplies subject, action, setting, tone, and
-    intensity, while this preset supplies a style grammar of Medieval Ink Fantasy Plate; Clean black
-    and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses;
-    fortress like creatures; relic fragments; stone hands; ancient contour authority, mood, material
-    behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed
-    relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Medieval Ink Fantasy Plate; Clean black and white medieval fantasy sourcebook plate illustration
-    with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient
-    contour authority
+  creative_brief: 'Route any subject through medieval ink fantasy plate language: preserve the prompt while adding clean black ink, fortress weight contour, oversized fantasy mass, sourcebook clarity, and old paper restraint without requiring a troll gate scene, crusader, knight, sword, cross, banner, or armor hero. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Medieval Ink Fantasy Plate; Clean black and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient contour authority, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Medieval Ink Fantasy Plate; Clean black and white medieval fantasy sourcebook plate illustration with non humanoid fantasy masses; fortress like creatures; relic fragments; stone hands; ancient contour authority
 avoidRules:
   - photoreal grayscale
   - dense scratch shading
@@ -72,21 +46,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-034.webp
 attributes:
-  negativePrompt: >-
-    photoreal grayscale, dense scratch shading, chainmail mesh, muddy charcoal fields, crusader
-    figure, knight hero, sword pose, cross tabard, heraldic banner, explicit gore, watermark, text,
-    readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card
-    reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy
-    dark texture
+  negativePrompt: photoreal grayscale, dense scratch shading, chainmail mesh, muddy charcoal fields, crusader figure, knight hero, sword pose, cross tabard, heraldic banner, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: monochrome medieval fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - ink-fantasy
   supportedTasks:
     - image_generate

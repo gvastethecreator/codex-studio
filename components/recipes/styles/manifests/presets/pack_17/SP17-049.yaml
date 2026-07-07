@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-049
 packId: pack_17
 name: Debt-Saint Ledger Gothic
-category: 7. Weird Medieval Editorial
+category: 1. Dark Fantasy & Gothic Courts
 domain: bureaucratic gothic fantasy
 version: 1
 supportedTasks:
@@ -11,41 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - weird-medieval-editorial
+  - dark-fantasy-and-gothic-courts
   - ledger-gothic
 visualDna:
-  aesthetic: >-
-    Medieval bureaucratic gothic where debt, oath, wax, iron, parchment, and moral pressure become a
-    severe visual system.
-  subject_treatment: >-
-    Transform any prompt subject through ledger-like hierarchy, wax-seal color accents, oath
-    geometry, thin iron contour, parchment severity, and guilty negative space without requiring
-    readable documents or clerical characters.
+  aesthetic: Medieval bureaucratic gothic where debt, oath, wax, iron, parchment, and moral pressure become a severe visual system.
+  subject_treatment: Transform any prompt subject through ledger-like hierarchy, wax-seal color accents, oath geometry, thin iron contour, parchment severity, and guilty negative space without requiring readable documents or clerical characters.
   color_and_tone: Parchment cream, iron black, dried blood red, wax amber, tarnished brass, and gray green.
   lighting_and_shadow: Desk-like candle logic abstracted into hard pools, thin rim glints, and severe shadow blocks.
   texture_and_material: Parchment grain, wax seals as abstract accents, iron staples, thread binding, soot, and dry ink.
-  camera_and_composition: >-
-    Ledger-like vertical ordering, ruled spacing without readable text, strict margins, and moral
-    weight applied to the prompt subject's shape.
-  atmosphere_and_mood: >-
-    Carry the prompt through Accusatory, bureaucratic, severe, dry, and strangely sacred; adult
-    editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic
-    medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine
-    identity.
-  rendering_and_quality: >-
-    Clean editorial gothic illustration with crisp hierarchy, denoised paper, and no legible
-    writing.
-  creative_brief: >-
-    Apply this as a reusable style router over any prompt: preserve the user's subject while adding
-    medieval debt ledger severity, oath geometry, wax and iron accents, and moral gothic
-    bureaucracy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and
-    intensity, while this preset supplies a style grammar of Debt Saint Ledger Gothic; Medieval
-    bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual
-    system, mood, material behavior, framing logic, and denoised medieval-zine finish without
-    requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Debt Saint Ledger Gothic; Medieval bureaucratic gothic where debt; oath; iron; parchment; moral
-    pressure become a severe visual system
+  camera_and_composition: Ledger-like vertical ordering, ruled spacing without readable text, strict margins, and moral weight applied to the prompt subject's shape.
+  atmosphere_and_mood: Carry the prompt through Accusatory, bureaucratic, severe, dry, and strangely sacred; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Clean editorial gothic illustration with crisp hierarchy, denoised paper, and no legible writing.
+  creative_brief: "Apply this as a reusable style router over any prompt: preserve the user's subject while adding medieval debt ledger severity, oath geometry, wax and iron accents, and moral gothic bureaucracy. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Debt Saint Ledger Gothic; Medieval bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual system, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition."
+  key_features: Debt Saint Ledger Gothic; Medieval bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual system
 avoidRules:
   - readable writing
   - accountant portrait
@@ -64,20 +42,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-049.webp
 attributes:
-  negativePrompt: >-
-    readable writing, accountant portrait, office desk, legal courtroom, modern paperwork, explicit
-    gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval
-    card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy
-    card art, muddy noisy dark texture
+  negativePrompt: readable writing, accountant portrait, office desk, legal courtroom, modern paperwork, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: weird-medieval-editorial
-  categoryName: 7. Weird Medieval Editorial
+  categoryId: dark-fantasy-and-gothic-courts
+  categoryName: 1. Dark Fantasy & Gothic Courts
   domain: bureaucratic gothic fantasy
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - weird-medieval-editorial
+    - dark-fantasy-and-gothic-courts
     - ledger-gothic
   supportedTasks:
     - image_generate

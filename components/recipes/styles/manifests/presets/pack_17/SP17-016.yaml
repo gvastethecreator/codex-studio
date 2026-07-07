@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-016
 packId: pack_17
 name: Blacklight Monster Manual
-category: 3. Acid Dungeon Zine
+category: 2. Dungeon Zine & Risograph Prints
 domain: dungeon zine
 version: 1
 supportedTasks:
@@ -11,43 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - acid-dungeon-zine
+  - dungeon-zine-and-risograph-prints
   - monster-manual
 visualDna:
-  aesthetic: >-
-    Blacklight fantasy monster manual where creature anatomy becomes bold ink, neon organs, and
-    weird page-icon energy.
-  subject_treatment: >-
-    Translate any subject into blacklight monster-manual weirdness: many-eye rhythm, maw-like
-    negative space, bulbous horn curves, readable anatomical exaggeration, and blacklight plate
-    force without requiring a fixed monster head.
+  aesthetic: Blacklight fantasy monster manual where creature anatomy becomes bold ink, neon organs, and weird page-icon energy.
+  subject_treatment: 'Translate any subject into blacklight monster-manual weirdness: many-eye rhythm, maw-like negative space, bulbous horn curves, readable anatomical exaggeration, and blacklight plate force without requiring a fixed monster head.'
   color_and_tone: Black ink base with toxic green, violet, hot pink, and pale lavender paper fields.
   lighting_and_shadow: Graphic black masses and fluorescent fills create a glowing blacklight illusion.
-  texture_and_material: >-
-    Rough hatch marks, stippled membranes, controlled xerox texture, screenprint dots, and clean
-    neon fill.
-  camera_and_composition: >-
-    Tight specimen hierarchy, centered eye or maw-like focal voids when compatible, border pressure,
-    and minimal empty space without fixed anatomy.
-  atmosphere_and_mood: >-
-    Carry the prompt through Weird, loud, gross funny, occult, and tabletop dungeon adjacent;
-    abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade
-    danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    High-impact zine illustration with clean silhouette logic, heavy denoise, and controlled print
-    reproduction.
-  creative_brief: >-
-    Route any subject through blacklight monster manual weirdness: preserve the prompt while adding
-    bold maw/eye rhythm when compatible, fluorescent plate color, chunky contour, and readable
-    manual icon force without requiring a monster portrait. Apply after prompt X: prompt X supplies
-    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
-    Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold
-    ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves, mood,
-    material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed
-    cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold
-    ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves
+  texture_and_material: Rough hatch marks, stippled membranes, controlled xerox texture, screenprint dots, and clean neon fill.
+  camera_and_composition: Tight specimen hierarchy, centered eye or maw-like focal voids when compatible, border pressure, and minimal empty space without fixed anatomy.
+  atmosphere_and_mood: Carry the prompt through Weird, loud, gross funny, occult, and tabletop dungeon adjacent; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: High-impact zine illustration with clean silhouette logic, heavy denoise, and controlled print reproduction.
+  creative_brief: 'Route any subject through blacklight monster manual weirdness: preserve the prompt while adding bold maw/eye rhythm when compatible, fluorescent plate color, chunky contour, and readable manual icon force without requiring a monster portrait. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves
 avoidRules:
   - realistic anatomy
   - medical gore
@@ -65,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-016.webp
 attributes:
-  negativePrompt: >-
-    realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark,
-    text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal
-    card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy
-    noisy dark texture
+  negativePrompt: realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: acid-dungeon-zine
-  categoryName: 3. Acid Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
   domain: dungeon zine
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - acid-dungeon-zine
+    - dungeon-zine-and-risograph-prints
     - monster-manual
   supportedTasks:
     - image_generate

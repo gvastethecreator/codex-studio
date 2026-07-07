@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-069
+packId: pack_17
+name: Cosmic Chapel Horror
+styleAnchors:
+  - Cosmic Chapel Horror
+  - cosmic gothic chapel horror
+  - non euclidean medieval horror
+displayName: Cosmic Chapel Horror
+category: 5. Grimdark Game Systems & Tabletop
+domain: cosmic gothic fantasy horror
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - cosmic-horror
+  - gothic
+  - grimdark
+visualDna:
+  aesthetic: 'Cosmic horror folded into medieval chapel language: void geometry, warped arches, starless halos, impossible relics, and religious scale pressure.'
+  subject_treatment: Preserve prompt X as a chapel omen, creature, figure, relic, architecture fragment, or cosmic symbolic event without requiring a literal church interior.
+  color_and_tone: Abyss black, bone, starless blue, sick violet, oxidized gold, cold gray, and rare red pinpricks.
+  lighting_and_shadow: Impossible backlight, negative-space halo, cold rim, and void darkness opened enough to read the design.
+  texture_and_material: Smooth black void, engraved stone, matte cloth, faint star-dust only as controlled specks, and denoised occult surfaces.
+  camera_and_composition: Vertical card with one impossible focal geometry, warped devotional symmetry, and strong scale tension.
+  atmosphere_and_mood: Vast, sacred, alien, helpless, quiet, and ominous.
+  rendering_and_quality: Clean dark fantasy illustration with graphic void design, controlled cosmic texture, and no tentacle-cliche overload.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cosmic Chapel Horror as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: void chapel geometry; non-Euclidean arches; starless halos; bone and violet palette; cosmic devotional dread; clean black design
+avoidRules:
+  - tentacle wallpaper
+  - readable cult text
+  - generic space nebula
+  - purple smoke overload
+  - photoreal cathedral
+  - cosmic monster pinup
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-069.webp
+attributes:
+  negativePrompt: tentacle wallpaper, readable cult text, generic space nebula, purple smoke overload, photoreal cathedral, cosmic monster pinup, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: cosmic gothic fantasy horror
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - cosmic-horror
+    - gothic
+    - grimdark
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-015
 packId: pack_17
 name: Neon Risograph Necromancy
-category: 3. Acid Dungeon Zine
+category: 2. Dungeon Zine & Risograph Prints
 domain: dungeon zine
 version: 1
 supportedTasks:
@@ -11,38 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - acid-dungeon-zine
+  - dungeon-zine-and-risograph-prints
   - risograph
 visualDna:
-  aesthetic: >-
-    Two- or three-color risograph necromancy with medieval symbols, heavy ink, and fluorescent
-    occult energy.
-  subject_treatment: >-
-    Transform any subject with neon risograph necromancy logic, fluorescent plate offsets, bold
-    ritual shapes, simplified armor-like blocks, and black silhouette dominance without adding a
-    fixed totem.
+  aesthetic: Two- or three-color risograph necromancy with medieval symbols, heavy ink, and fluorescent occult energy.
+  subject_treatment: Transform any subject with neon risograph necromancy logic, fluorescent plate offsets, bold ritual shapes, simplified armor-like blocks, and black silhouette dominance without adding a fixed totem.
   color_and_tone: Black ink plus fluorescent magenta, lime, violet, cyan, or acid orange on pale tinted paper.
-  lighting_and_shadow: >-
-    Flat print color replaces light, with shadow delivered by clean black plates and controlled
-    overprint.
+  lighting_and_shadow: Flat print color replaces light, with shadow delivered by clean black plates and controlled overprint.
   texture_and_material: Controlled Riso grain, clean ink density, misregistration, tidy stippled fills, and paper tooth.
   camera_and_composition: Centered poster icon, thick border, large simple shapes, and strong negative space.
-  atmosphere_and_mood: >-
-    Carry the prompt through Occult, loud, handmade, mischievous, and dungeon punk; abrasive
-    underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  atmosphere_and_mood: Carry the prompt through Occult, loud, handmade, mischievous, and dungeon punk; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Print-art finish with crisp shapes, intentional imperfections, and high thumbnail impact.
-  creative_brief: >-
-    Reusable visual system for any subject needing fluorescent riso print logic, necromantic color
-    clash, black silhouette dominance, and simplified ritual graphic force. Apply after prompt X:
-    prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a
-    style grammar of Neon Risograph Necromancy; Two- or three color risograph necromancy with
-    medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual
-    shapes, mood, material behavior, framing logic, and denoised medieval-zine finish without
-    requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.
-  key_features: >-
-    Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy
-    ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes
+  creative_brief: 'Reusable visual system for any subject needing fluorescent riso print logic, necromantic color clash, black silhouette dominance, and simplified ritual graphic force. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Neon Risograph Necromancy; Two- or three color risograph necromancy with medieval symbols; heavy ink; fluorescent occult energy; fluorescent plate offsets; bold ritual shapes
 avoidRules:
   - full color realism
   - smooth airbrush
@@ -60,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-015.webp
 attributes:
-  negativePrompt: >-
-    full color realism, smooth airbrush, glossy 3d render, soft watercolor, explicit gore,
-    watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: full color realism, smooth airbrush, glossy 3d render, soft watercolor, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: acid-dungeon-zine
-  categoryName: 3. Acid Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
   domain: dungeon zine
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - acid-dungeon-zine
+    - dungeon-zine-and-risograph-prints
     - risograph
   supportedTasks:
     - image_generate

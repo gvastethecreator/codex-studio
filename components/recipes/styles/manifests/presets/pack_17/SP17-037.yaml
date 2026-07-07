@@ -3,9 +3,9 @@ id: SP17-037
 packId: pack_17
 name: Woodcut Beast Chronicle
 styleAnchors:
-  - 'Woodcut Beast Chronicle'
-displayName: 'Woodcut Beast Plate'
-category: 6. Monochrome Tarot & Bestiary Plates
+  - Woodcut Beast Chronicle
+displayName: Woodcut Beast Plate
+category: 3. Ink, Tarot & Bestiary Plates
 domain: medieval bestiary illustration
 version: 1
 supportedTasks:
@@ -14,40 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - monochrome-tarot-and-bestiary-plates
+  - ink-tarot-and-bestiary-plates
   - woodcut-bestiary
 visualDna:
-  aesthetic: >-
-    Medieval woodcut bestiary illustration with bold animal-monster silhouettes, carved line blocks,
-    and simple old-paper fields.
-  subject_treatment: >-
-    Translate any subject into medieval woodcut logic with bold block silhouettes, carved mark
-    economy, simplified anatomical rhythm, and strong black-white grouping without replacing it with
-    a fixed specimen.
+  aesthetic: Medieval woodcut bestiary illustration with bold animal-monster silhouettes, carved line blocks, and simple old-paper fields.
+  subject_treatment: Translate any subject into medieval woodcut logic with bold block silhouettes, carved mark economy, simplified anatomical rhythm, and strong black-white grouping without replacing it with a fixed specimen.
   color_and_tone: Off-white paper, black block ink, warm tan wash, and optional single muted red or green accent.
   lighting_and_shadow: Flat print value, clear black-white separation, and no realistic lighting.
   texture_and_material: Carved linework, broad ink blocks, clean paper fiber, and controlled gaps without noisy speckle.
-  camera_and_composition: >-
-    Side-view or three-quarter creature plate, large silhouette, small ground cue, and decorative
-    frame without words.
-  atmosphere_and_mood: >-
-    Carry the prompt through Ancient, strange, folkloric, and instructional; fatalistic omen calm,
-    scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint;
-    the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  camera_and_composition: Side-view or three-quarter creature plate, large silhouette, small ground cue, and decorative frame without words.
+  atmosphere_and_mood: Carry the prompt through Ancient, strange, folkloric, and instructional; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint; the tone should follow prompt X while preserving the preset's medieval-zine identity.
   rendering_and_quality: Clean woodcut-inspired digital illustration with big marks, not dense micro-hatching.
-  creative_brief: >-
-    Reusable visual system for any subject needing medieval woodcut bestiary flavor, carved ink
-    discipline, old paper restraint, and folkloric strangeness. Apply after prompt X: prompt X
-    supplies subject, action, setting, tone, and intensity, while this preset supplies a style
-    grammar of Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal
-    monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with
-    bold block silhouettes; carved mark economy, mood, material behavior, framing logic, and
-    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal monster
-    silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block
-    silhouettes; carved mark economy
+  creative_brief: 'Reusable visual system for any subject needing medieval woodcut bestiary flavor, carved ink discipline, old paper restraint, and folkloric strangeness. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block silhouettes; carved mark economy, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Woodcut Beast Chronicle; Medieval woodcut bestiary illustration with bold animal monster silhouettes; carved line blocks; simple old paper fields; medieval woodcut logic with bold block silhouettes; carved mark economy
 avoidRules:
   - tiny hatch carpets
   - dirty photocopy noise
@@ -65,20 +44,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-037.webp
 attributes:
-  negativePrompt: >-
-    tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, explicit
-    gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: monochrome-tarot-and-bestiary-plates
-  categoryName: 6. Monochrome Tarot & Bestiary Plates
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
   domain: medieval bestiary illustration
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - monochrome-tarot-and-bestiary-plates
+    - ink-tarot-and-bestiary-plates
     - woodcut-bestiary
   supportedTasks:
     - image_generate

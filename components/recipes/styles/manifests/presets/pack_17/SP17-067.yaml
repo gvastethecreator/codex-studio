@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-067
+packId: pack_17
+name: Robust Adventurer Portraits
+styleAnchors:
+  - Robust Adventurer Portraits
+  - robust tabletop adventurer portrait
+  - dark fantasy RPG character portrait
+displayName: Robust Adventurer Portraits
+category: 5. Grimdark Game Systems & Tabletop
+domain: robust tabletop fantasy portrait
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - portrait
+  - tabletop-fantasy
+  - character-style
+visualDna:
+  aesthetic: Robust tabletop fantasy portrait style with heavy silhouettes, lived-in gear, adult body variety, readable faces, and grounded medieval grime without glossy hero-card sameness.
+  subject_treatment: If prompt X includes a character, make the portrait sturdy, specific, and adult; if not, apply the same robust shape language to creatures, relics, busts, armor, or symbolic figures without forcing an adventurer.
+  color_and_tone: Weathered leather, iron, bone, bruised greens, dull red, old blue, candle amber, and clean midtone shadows.
+  lighting_and_shadow: Simple portrait key light, shoulder rim, open shadows, and enough midtone color to reveal gear and anatomy.
+  texture_and_material: Matte paint, controlled cloth/leather/metal marks, broad brush planes, scarred surfaces, and no skin-pore realism.
+  camera_and_composition: Three-quarter portrait or bust crop with strong silhouette, hands optional, background kept shallow and style-supportive.
+  atmosphere_and_mood: Adult, battered, competent, grim, worldly, and roleplay-ready without franchise costume cues.
+  rendering_and_quality: Clean fantasy sourcebook portrait illustration with broad planes, denoise, varied age/body type, and no pin-up formula.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Robust Adventurer Portraits as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: robust adult fantasy portraits; heavy silhouettes; worn gear; grounded sourcebook paint; body variety; restrained character drama
+avoidRules:
+  - sexy default heroine
+  - generic handsome hero
+  - same-face party lineup
+  - glossy armor pinup
+  - weapon-first pose
+  - copied tabletop franchise costume
+  - anime face
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-067.webp
+attributes:
+  negativePrompt: sexy default heroine, generic handsome hero, same-face party lineup, glossy armor pinup, weapon-first pose, copied tabletop franchise costume, anime face, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: robust tabletop fantasy portrait
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - portrait
+    - tabletop-fantasy
+    - character-style
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-054
+packId: pack_17
+name: White Thread Omen Cards
+styleAnchors:
+  - White Thread Omen Cards
+  - minimal white thread occult card
+  - black negative space tarot engraving
+displayName: White Thread Omen Cards
+category: 3. Ink, Tarot & Bestiary Plates
+domain: minimal occult white linework
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - ink-tarot-and-bestiary-plates
+  - white-ink
+  - negative-space
+  - tarot-linework
+visualDna:
+  aesthetic: Minimal black-field omen cards where fragile white line, radiating rule marks, suspended relics, and blank space carry the dread.
+  subject_treatment: 'Route the prompt subject into sparse white-thread iconography: one relic, hand, beast fragment, mask, crown, woundless organ, or architectural sliver held in black void without forcing a human figure.'
+  color_and_tone: Pure black, thin white ink, faint charcoal construction lines, and occasional single ivory highlight; almost no fill color.
+  lighting_and_shadow: 'Symbolic light only: pin-line halos, small rays, white rim cuts, and silent voids.'
+  texture_and_material: Dry nib line, tiny engraved ticks, clean fiber breaks, and smooth black negative space; texture stays sparse and intentional.
+  camera_and_composition: Poster-safe vertical card with asymmetric void, one small-to-medium focal icon, and compact support marks that never become readable typography.
+  atmosphere_and_mood: Quiet, fatalistic, spare, austere, and threatening without spectacle.
+  rendering_and_quality: Crisp minimalist occult engraving with very low detail budget and strong thumbnail readability.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies White Thread Omen Cards as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: negative black space; thin white thread line; sparse halos; small omen relics; asymmetrical card balance; clean minimal print finish
+avoidRules:
+  - filled tarot borders
+  - busy occult symbol sheet
+  - large parchment background
+  - dense cross hatching
+  - literal playing card layout
+  - decorative corner text
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-054.webp
+attributes:
+  negativePrompt: filled tarot borders, busy occult symbol sheet, large parchment background, dense cross hatching, literal playing card layout, decorative corner text, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: ink-tarot-and-bestiary-plates
+  categoryName: 3. Ink, Tarot & Bestiary Plates
+  domain: minimal occult white linework
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - ink-tarot-and-bestiary-plates
+    - white-ink
+    - negative-space
+    - tarot-linework
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true

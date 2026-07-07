@@ -3,9 +3,9 @@ id: SP17-021
 packId: pack_17
 name: Synth Castle Prophecy
 styleAnchors:
-  - 'Synth Castle Prophecy'
-displayName: 'Synth Castle Gothic'
-category: 4. Futuristic Medieval & Rune Tech
+  - Synth Castle Prophecy
+displayName: Synth Castle Gothic
+category: 4. Rune-Tech & Apocalyptic Warfronts
 domain: futuristic medieval
 version: 1
 supportedTasks:
@@ -14,46 +14,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - futuristic-medieval-and-rune-tech
+  - rune-tech-and-apocalyptic-warfronts
   - synth-castle
 visualDna:
-  aesthetic: >-
-    Dreamlike synth-medieval fantasy with castles, prophecy light, analog glow, and retro-future
-    mysticism.
-  subject_treatment: >-
-    Apply synth-medieval prophecy styling to any subject through glassy translucent planes, luminous
-    rune accents, analog glow, halo-like arcs, and retro-future mysticism without requiring a fixed
-    oracle form.
-  color_and_tone: >-
-    Deep indigo, soft violet, electric cyan glass, pale gold star marks, muted magenta horizon, and
-    clean black only for thin silhouettes.
-  lighting_and_shadow: >-
-    Luminous antler moon and cyan glass body light the scene; smooth gradient sky, no harsh neon
-    clutter.
-  texture_and_material: >-
-    Translucent glass hide, enamel scales, velvet sky, polished stone plinth, clean analog bloom,
-    and soft poster texture.
-  camera_and_composition: >-
-    Centered icon-like framing with large luminous arcs, generous simple color planes, clean scale
-    hierarchy, and soft poster balance.
-  atmosphere_and_mood: >-
-    Carry the prompt through Prophetic, wondrous, eerie, and retro futurist; sacred futurism,
-    oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the
-    tone should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Polished fantasy illustration with synthwave restraint, medieval shapes, and soft luminous
-    finish.
-  creative_brief: >-
-    Reusable visual system for any subject needing retro future prophecy, luminous medieval
-    geometry, analog bloom, and eerie wonder. Apply after prompt X: prompt X supplies subject,
-    action, setting, tone, and intensity, while this preset supplies a style grammar of Synth Castle
-    Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro
-    future mysticism; glassy translucent planes, mood, material behavior, framing logic, and
-    denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster,
-    readable text, or sample-card composition.
-  key_features: >-
-    Synth Castle Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog
-    glow; retro future mysticism; glassy translucent planes
+  aesthetic: Dreamlike synth-medieval fantasy with castles, prophecy light, analog glow, and retro-future mysticism.
+  subject_treatment: Apply synth-medieval prophecy styling to any subject through glassy translucent planes, luminous rune accents, analog glow, halo-like arcs, and retro-future mysticism without requiring a fixed oracle form.
+  color_and_tone: Deep indigo, soft violet, electric cyan glass, pale gold star marks, muted magenta horizon, and clean black only for thin silhouettes.
+  lighting_and_shadow: Luminous antler moon and cyan glass body light the scene; smooth gradient sky, no harsh neon clutter.
+  texture_and_material: Translucent glass hide, enamel scales, velvet sky, polished stone plinth, clean analog bloom, and soft poster texture.
+  camera_and_composition: Centered icon-like framing with large luminous arcs, generous simple color planes, clean scale hierarchy, and soft poster balance.
+  atmosphere_and_mood: Carry the prompt through Prophetic, wondrous, eerie, and retro futurist; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Polished fantasy illustration with synthwave restraint, medieval shapes, and soft luminous finish.
+  creative_brief: 'Reusable visual system for any subject needing retro future prophecy, luminous medieval geometry, analog bloom, and eerie wonder. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Synth Castle Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro future mysticism; glassy translucent planes, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Synth Castle Prophecy; Dreamlike synth medieval fantasy with castles; prophecy light; analog glow; retro future mysticism; glassy translucent planes
 avoidRules:
   - cyberpunk city
   - chrome overload
@@ -70,19 +43,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-021.webp
 attributes:
-  negativePrompt: >-
-    cyberpunk city, chrome overload, flat vector poster, cute cartoon, explicit gore, watermark,
-    text, generic cyberpunk city, readable rune text, prompt literal card reuse, fixed medieval
-    scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: cyberpunk city, chrome overload, flat vector poster, cute cartoon, explicit gore, watermark, text, generic cyberpunk city, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: futuristic-medieval-and-rune-tech
-  categoryName: 4. Futuristic Medieval & Rune Tech
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
   domain: futuristic medieval
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - futuristic-medieval-and-rune-tech
+    - rune-tech-and-apocalyptic-warfronts
     - synth-castle
   supportedTasks:
     - image_generate

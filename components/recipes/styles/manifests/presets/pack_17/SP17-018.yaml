@@ -2,7 +2,7 @@ schemaVersion: 1
 id: SP17-018
 packId: pack_17
 name: Tape-Scanned Sword & Sorcery
-category: 3. Acid Dungeon Zine
+category: 2. Dungeon Zine & Risograph Prints
 domain: dungeon zine
 version: 1
 supportedTasks:
@@ -11,44 +11,19 @@ supportedTasks:
   - style_preset_card
 tags:
   - medieval-fantasy-and-dungeon-zine
-  - acid-dungeon-zine
+  - dungeon-zine-and-risograph-prints
   - sword-and-sorcery
 visualDna:
-  aesthetic: >-
-    Old sword-and-sorcery paperback art degraded through photocopy, tape scan, harsh ink, and lurid
-    flat color.
-  subject_treatment: >-
-    Translate any subject into tape-scanned sword-and-sorcery pulp with theatrical silhouette
-    pressure, lurid flat color, black-slab shadow, and analog wear without forcing a
-    hero-versus-threat setup.
+  aesthetic: Old sword-and-sorcery paperback art degraded through photocopy, tape scan, harsh ink, and lurid flat color.
+  subject_treatment: Translate any subject into tape-scanned sword-and-sorcery pulp with theatrical silhouette pressure, lurid flat color, black-slab shadow, and analog wear without forcing a hero-versus-threat setup.
   color_and_tone: Faded yellow paper, black crush, bruised purple, toxic green, dull red, and sun-baked orange.
   lighting_and_shadow: Dramatic pulp shadows simplified into black slabs and scratchy hatch fields.
-  texture_and_material: >-
-    Tape seams, clean scan streaks, controlled toner texture, cracked ink, cheap paper, and worn
-    cover edges.
-  camera_and_composition: >-
-    Paperback-cover energy with bold central scale, dramatic diagonals, thick framing pressure, and
-    readable print-poster hierarchy.
-  atmosphere_and_mood: >-
-    Carry the prompt through Pulp, dangerous, handmade, lurid, and adventurous; abrasive underground
-    humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone
-    should follow prompt X while preserving the preset's medieval-zine identity.
-  rendering_and_quality: >-
-    Retro print illustration with readable forms, rough edges, controlled analog wear, and clean
-    darks.
-  creative_brief: >-
-    Reusable visual system for any subject needing degraded pulp zine finish, sword and sorcery
-    momentum, tape scan wear, and lurid handmade drama. Apply after prompt X: prompt X supplies
-    subject, action, setting, tone, and intensity, while this preset supplies a style grammar of
-    Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy;
-    harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette
-    pressure; black slab shadow, mood, material behavior, framing logic, and denoised medieval-zine
-    finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card
-    composition.
-  key_features: >-
-    Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy;
-    harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette
-    pressure; black slab shadow
+  texture_and_material: Tape seams, clean scan streaks, controlled toner texture, cracked ink, cheap paper, and worn cover edges.
+  camera_and_composition: Paperback-cover energy with bold central scale, dramatic diagonals, thick framing pressure, and readable print-poster hierarchy.
+  atmosphere_and_mood: Carry the prompt through Pulp, dangerous, handmade, lurid, and adventurous; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger; the tone should follow prompt X while preserving the preset's medieval-zine identity.
+  rendering_and_quality: Retro print illustration with readable forms, rough edges, controlled analog wear, and clean darks.
+  creative_brief: 'Reusable visual system for any subject needing degraded pulp zine finish, sword and sorcery momentum, tape scan wear, and lurid handmade drama. Apply after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies a style grammar of Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow, mood, material behavior, framing logic, and denoised medieval-zine finish without requiring a fixed cast, fixed relic, fixed monster, readable text, or sample-card composition.'
+  key_features: Tape Scanned Sword & Sorcery; Old sword and sorcery paperback art degraded through photocopy; harsh ink; lurid flat color; tape scanned sword and sorcery pulp with theatrical silhouette pressure; black slab shadow
 avoidRules:
   - clean ebook cover
   - glossy digital painting
@@ -66,20 +41,16 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-018.webp
 attributes:
-  negativePrompt: >-
-    clean ebook cover, glossy digital painting, modern typography, photorealism, explicit gore,
-    watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise,
-    prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card
-    art, muddy noisy dark texture
+  negativePrompt: clean ebook cover, glossy digital painting, modern typography, photorealism, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine
-  categoryId: acid-dungeon-zine
-  categoryName: 3. Acid Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
   domain: dungeon zine
   tags:
     - medieval-fantasy-and-dungeon-zine
-    - acid-dungeon-zine
+    - dungeon-zine-and-risograph-prints
     - sword-and-sorcery
   supportedTasks:
     - image_generate

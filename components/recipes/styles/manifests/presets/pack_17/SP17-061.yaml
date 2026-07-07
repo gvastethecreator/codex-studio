@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-061
+packId: pack_17
+name: Cobalt Rot Risograph
+styleAnchors:
+  - Cobalt Rot Risograph
+  - cobalt rot risograph
+  - blue orange dungeon zine
+displayName: Cobalt Rot Risograph
+category: 2. Dungeon Zine & Risograph Prints
+domain: cold rot risograph fantasy
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - dungeon-zine-and-risograph-prints
+  - risograph
+  - acid-dungeon
+  - cobalt-orange
+visualDna:
+  aesthetic: Cobalt and rot-orange dungeon zine print where fungal knights, swollen trolls, lumpy helmets, shields, boots, and rude hand-inked anatomy carry the style.
+  subject_treatment: Translate the prompt into a cold rot-colored OSR figure, creature, adventurer, beast, castle-headed monster, or fungal relic scenelet without defaulting to a clean shrine-object hero or architecture sample.
+  color_and_tone: Deep cobalt, rot orange, dirty cream, heavy black, dull teal, and rare pale yellow pin highlights.
+  lighting_and_shadow: Graphic blue shadow masses, orange ink flare, cream knockout light, and no realistic illumination.
+  texture_and_material: Risograph bloom, ink spread, misregistered layers, dry brush contour, and coarse but readable paper grain.
+  camera_and_composition: Crooked portrait monster-card crop with one odd body or creature filling the panel, flat cobalt/orange color separation, and sparse dungeon support marks.
+  atmosphere_and_mood: Cold, moldy, rude, subterranean, and handmade.
+  rendering_and_quality: Limited-palette risograph with heavy black contour, dry hatch fields, riso bloom, rough cream gaps, and intentionally crude but legible anatomy.
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Cobalt Rot Risograph as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed relic, fixed creature, readable text, or a repeated Pack 17 thumbnail formula."
+  key_features: cobalt rot palette; fungal knight-monsters; lumpy OSR bodies; rough black hatching; flat riso panels; rude handmade dungeon print
+avoidRules:
+  - shrine-object hero
+  - clean architecture object
+  - generic blue orange cinematic lighting
+  - literal mushroom wallpaper
+  - overcrowded cave
+  - smooth fantasy painting
+  - rainbow neon palette
+  - watermark
+  - text
+  - readable labels
+  - readable runes
+  - logo
+  - UI overlay
+  - franchise likeness
+  - prompt literal card reuse
+  - fixed medieval scene
+  - generic fantasy card art
+  - muddy noisy dark texture
+assets:
+  defaultImage: /assets/recipes/styles/defaults/SP17-061.webp
+attributes:
+  negativePrompt: shrine-object hero, clean architecture object, generic blue orange cinematic lighting, literal mushroom wallpaper, overcrowded cave, smooth fantasy painting, rainbow neon palette, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-and-risograph-prints
+  categoryName: 2. Dungeon Zine & Risograph Prints
+  domain: cold rot risograph fantasy
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - dungeon-zine-and-risograph-prints
+    - risograph
+    - acid-dungeon
+    - cobalt-orange
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: true
