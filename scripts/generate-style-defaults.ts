@@ -7362,6 +7362,13 @@ const PACK12_CARD_PROMPT_OVERRIDES: Record<string, string> = {
     'Avoid exact white Aperture panels, exact blue/orange color logic, companion-cube-like props, green acid pool copy, readable test signage, glass observation booth clone, and familiar glove/gun silhouettes.',
     'One readable puzzle decision must be present: rotate a prism drum, tune a gate lattice, cross a liquid-light bridge, redirect a beam through clay slits, or choose a safe traversal route.',
   ].join('\n'),
+  'SP12-040': [
+    'CARD-SPECIFIC GAMEPLAY BRIEF:',
+    'Stage an original third-person monster-hunt screenshot, not a rhythm game, not a neon combat stage, and not a creature key-art poster.',
+    'Use a storm grass plain with a ceramic-plated thunder beast, one hunter low in frame, trap stakes embedded in mud, snapped grass lanes, weak-point glow on the creature, and a clear dodge/commit decision.',
+    'Readability must come from hunter scale, monster body language, trap placement, terrain lanes, weather, and weapon reach. Do not use beat lanes, music UI, stage lights, neon rhythm tracks, dance arrows, or concert-combat overlays.',
+    'Keep HUD sparse: one health/stamina strip or weapon sharpness cue is enough. Avoid exact franchise monster silhouette, poster boss framing, noisy fur/scale texture carpets, and muddy black storm detail.',
+  ].join('\n'),
   'SP12-043': [
     'CARD-SPECIFIC GAMEPLAY BRIEF:',
     'Stage an original arcade kaiju rescue screenshot, not an EDF poster, not a military promo, and not a scene solved by blue objective beams.',
