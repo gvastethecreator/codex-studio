@@ -286,12 +286,12 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-021.webp",
-    "jobId": "224fb283-f1ed-4fab-a849-0c448a8db75e",
+    "jobId": "f47a3c3f-980e-4c40-80c5-9cf24e4f4cf7",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-021.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T15:51:38.605Z"
+    "generatedAt": "2026-07-07T17:30:16.315Z"
   },
   {
     "presetId": "SP12-022",
@@ -552,12 +552,12 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-040.webp",
-    "jobId": "fe7296d4-70af-416b-a713-10384844e393",
+    "jobId": "6bf59f75-73ba-4270-81a8-8ab591d9a04b",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-040.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T16:21:53.169Z"
+    "generatedAt": "2026-07-07T17:30:13.244Z"
   },
   {
     "presetId": "SP12-041",
@@ -958,12 +958,12 @@
     "packName": "Video Game Originals Vault",
     "category": "7. Heists, Horror & Underworld Runs",
     "file": "assets/recipes/styles/defaults/SP12-069.webp",
-    "jobId": "c06f7236-7d19-460b-bc4e-4e1be412ce91",
+    "jobId": "5815292b-e1a0-4abe-bafb-3c0f06596758",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-069.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:36:43.035Z"
+    "generatedAt": "2026-07-07T17:39:30.472Z"
   },
   {
     "presetId": "SP12-070",
@@ -986,12 +986,12 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-071.webp",
-    "jobId": "92a46fe4-000b-4ea0-8850-d6c038375910",
+    "jobId": "09484a2d-256f-40f4-9e14-027cf84ac29e",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-071.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:40:18.457Z"
+    "generatedAt": "2026-07-07T17:31:52.305Z"
   },
   {
     "presetId": "SP12-072",
@@ -1000,12 +1000,12 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-072.webp",
-    "jobId": "8de5a578-89af-4598-8261-7c177d786db2",
+    "jobId": "25ed2b26-4944-42ef-9d5b-7de64bc8116f",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-072.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T10:13:22.567Z"
+    "generatedAt": "2026-07-07T17:12:54.944Z"
   },
   {
     "presetId": "SP12-073",
@@ -1014,12 +1014,12 @@
     "packName": "Video Game Originals Vault",
     "category": "6. Wilderness Hunts & Harsh Frontiers",
     "file": "assets/recipes/styles/defaults/SP12-073.webp",
-    "jobId": "7d4b1151-3f78-44c9-bec0-c578840558e3",
+    "jobId": "553a0b84-1145-451f-99a0-12dd0536ff69",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-073.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:43:43.203Z"
+    "generatedAt": "2026-07-07T17:15:35.380Z"
   },
   {
     "presetId": "SP12-074",
@@ -1028,12 +1028,12 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-074.webp",
-    "jobId": "dc2f781c-ac2c-4c51-844b-4891f4113df4",
+    "jobId": "c009d6bf-1391-4472-a6d7-6709ec3f3e21",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-074.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:45:28.409Z"
+    "generatedAt": "2026-07-07T17:16:50.836Z"
   },
   {
     "presetId": "SP12-075",
@@ -1042,12 +1042,12 @@
     "packName": "Video Game Originals Vault",
     "category": "5. Speed, Sport & Competitive Arenas",
     "file": "assets/recipes/styles/defaults/SP12-075.webp",
-    "jobId": "05c27205-7643-4ffa-9ddd-f3822bb7eda7",
+    "jobId": "6a3f6d12-5209-4c4f-9735-edb24dc97859",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-075.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:47:04.853Z"
+    "generatedAt": "2026-07-07T17:18:18.697Z"
   },
   {
     "presetId": "SP12-076",
@@ -1056,12 +1056,12 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-076.webp",
-    "jobId": "a2a4087c-120d-4a69-b99f-56b1761395f9",
+    "jobId": "a38cfc32-83ee-43e5-8426-78e1e91cf03b",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-076.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:49:24.665Z"
+    "generatedAt": "2026-07-07T17:19:46.006Z"
   },
   {
     "presetId": "SP12-077",
@@ -1070,12 +1070,12 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-077.webp",
-    "jobId": "6c3c400e-ecc6-4886-9202-5adc0fed48e2",
+    "jobId": "21b416b7-fa03-4c91-94c4-b11d47883ff8",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-077.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:51:40.668Z"
+    "generatedAt": "2026-07-07T17:21:05.341Z"
   },
   {
     "presetId": "SP12-078",
@@ -1084,12 +1084,12 @@
     "packName": "Video Game Originals Vault",
     "category": "1. Neon Urban & Night Ops",
     "file": "assets/recipes/styles/defaults/SP12-078.webp",
-    "jobId": "1522219c-2c0a-426a-8b33-067feaafd8f7",
+    "jobId": "c7262ff9-4d70-4f27-94af-fb0f672a0afd",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-078.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:53:27.137Z"
+    "generatedAt": "2026-07-07T17:22:33.875Z"
   },
   {
     "presetId": "SP12-079",
@@ -1098,12 +1098,12 @@
     "packName": "Video Game Originals Vault",
     "category": "4. Sieges, Warfronts & Last Stands",
     "file": "assets/recipes/styles/defaults/SP12-079.webp",
-    "jobId": "d55bae08-4011-412d-92ce-4e64c893f040",
+    "jobId": "aa8f8b5f-4785-4cc9-89d6-5ddaf83e76f2",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-079.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T09:55:25.467Z"
+    "generatedAt": "2026-07-07T17:23:53.060Z"
   },
   {
     "presetId": "SP12-080",
@@ -1112,11 +1112,11 @@
     "packName": "Video Game Originals Vault",
     "category": "8. Puzzle Chambers & Adventure Setpieces",
     "file": "assets/recipes/styles/defaults/SP12-080.webp",
-    "jobId": "57ff4852-9872-4d13-bf33-66d9d82151b1",
+    "jobId": "485ef2b6-bfc5-48cd-a443-4c675b4a8195",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-080.webp",
     "generationMode": "text-to-image",
     "model": "gpt-5.4-mini",
     "reasoningEffort": "low",
-    "generatedAt": "2026-07-07T10:22:21.823Z"
+    "generatedAt": "2026-07-07T17:25:40.061Z"
   }
 ]
