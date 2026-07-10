@@ -5,7 +5,7 @@ import {
   type CodexStyleDraftResponse,
   type UserStylePresetDraft,
   type UserStyleVisualDna,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/userStyles';
 
 function cleanText(value: unknown, fallback = '') {
   return typeof value === 'string' && value.trim() ? value.trim() : fallback;
@@ -46,14 +46,14 @@ function referenceDescription(referenceImages: CodexStyleReferenceImage[] | unde
 }
 
 function referenceTags(referenceImages: CodexStyleReferenceImage[] | undefined) {
-  const tags = ['reference-derived'];
+  const normalizedTags = new Set(['reference-derived']);
   for (const image of referenceImages ?? []) {
-    tags.push(...cleanReferenceName(image.name).split(/\s+/g).slice(0, 3));
+    for (const tag of cleanReferenceName(image.name).split(/\s+/g).slice(0, 3)) {
+      const normalized = tag.trim().toLowerCase();
+      if (normalized) normalizedTags.add(normalized);
+    }
   }
-  return Array.from(new Set(tags.map((tag) => tag.trim().toLowerCase()).filter(Boolean))).slice(
-    0,
-    12,
-  );
+  return Array.from(normalizedTags).slice(0, 12);
 }
 
 function baseVisualDna(

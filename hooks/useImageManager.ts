@@ -68,12 +68,13 @@ export const useImageManager = ({
     (imageIds = selectedImageIds) => {
       const performDelete = () => {
         if (imageIds.length > 0) {
+          const imageIdSet = new Set(imageIds);
           deleteImages(imageIds);
           log(`Moved ${imageIds.length} selected images to archives.`);
-          if (modalImage && imageIds.includes(modalImage.id)) {
+          if (modalImage && imageIdSet.has(modalImage.id)) {
             handleCloseModal();
           }
-          setSelectedImageIds((prev) => prev.filter((id) => !imageIds.includes(id)));
+          setSelectedImageIds((prev) => prev.filter((id) => !imageIdSet.has(id)));
         }
       };
       startViewTransition(performDelete);

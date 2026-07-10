@@ -1,3 +1,9 @@
+import type {
+  AnimationSequenceContract,
+  AnimationSequenceFramePlanItem,
+} from '../packages/shared/src/animationSequenceContracts';
+import { createAnimationFrameHandoff } from './animationFrameHandoff';
+
 export type TimelineDirection = 'forward' | 'backward';
 export type TimelineCameraMode = 'locked' | 'dynamic';
 
@@ -31,6 +37,13 @@ export interface TimelineRecipeParamsInput {
   motionAmount: string;
   lightingMode: string;
   isAnchored: boolean;
+}
+
+export interface AnimationSequenceRecipeParamsInput {
+  runId?: string | null;
+  contract: AnimationSequenceContract;
+  frame: AnimationSequenceFramePlanItem;
+  correctionMode?: boolean;
 }
 
 const TIME_DELTA_VALUE_BY_LABEL: Record<string, string> = {
@@ -125,4 +138,8 @@ export function createTimelineRecipeParams(input: TimelineRecipeParamsInput) {
     lightingMode: input.lightingMode,
     isAnchored: input.isAnchored,
   };
+}
+
+export function createAnimationSequenceRecipeParams(input: AnimationSequenceRecipeParamsInput) {
+  return createAnimationFrameHandoff(input).recipeParams;
 }

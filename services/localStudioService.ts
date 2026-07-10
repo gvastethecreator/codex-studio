@@ -17,6 +17,8 @@ import type {
   GenerationProviderCapabilitiesResponse,
   GenerationProviderRuntimePreflightResponse,
   HealthResponse,
+  StudioReadinessEnvelope,
+  StudioRuntimeSnapshotResponse,
   ImportExternalOutputSourceInput,
   ImportExternalOutputSourceResult,
   Job,
@@ -35,6 +37,12 @@ import type {
   ToolingLogsPruneResult,
   CodexStyleDraftRequest,
   CodexStyleDraftResponse,
+  AnimationSequenceFramePromptResponse,
+  AnimationSequenceRunView,
+  AttachAnimationSequenceFrameRequest,
+  CreateAnimationSequenceRunRequest,
+  ExportAnimationSequenceGifRequest,
+  ExportAnimationSequenceGifResponse,
   CreateSpriteAtlasRowJobsResponse,
   CreateSpriteAtlasRunRequest,
   CreateUserStylePresetInput,
@@ -47,6 +55,24 @@ import type {
   UserStylePreset,
 } from '../packages/shared/src';
 import { resolveStudioApiBase } from './studioRuntime';
+
+export function readLocalStudioErrorMessage(text: string, status: number) {
+  const trimmed = text.trim();
+  if (trimmed) {
+    try {
+      const payload = JSON.parse(trimmed) as { error?: unknown; message?: unknown };
+      if (typeof payload.error === 'string' && payload.error.trim()) return payload.error.trim();
+      if (typeof payload.message === 'string' && payload.message.trim()) {
+        return payload.message.trim();
+      }
+    } catch {
+      return trimmed;
+    }
+    return trimmed;
+  }
+
+  return `Local studio request failed: ${status}`;
+}
 
 /**
  * Execute a JSON request against the local studio backend and surface readable
@@ -64,7 +90,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 
   if (!response.ok) {
     const text = await response.text();
-    throw new Error(text || `Local studio request failed: ${response.status}`);
+    throw new Error(readLocalStudioErrorMessage(text, response.status));
   }
 
   return response.json() as Promise<T>;
@@ -111,6 +137,14 @@ export async function listProjects() {
  */
 export async function getStudioHealth() {
   return request<HealthResponse>('/api/health');
+}
+
+export async function getStudioRuntimeSnapshot() {
+  return request<StudioRuntimeSnapshotResponse>('/api/runtime/snapshot');
+}
+
+export async function refreshStudioReadiness() {
+  return request<StudioReadinessEnvelope>('/api/readiness/refresh', { method: 'POST' });
 }
 
 export async function getCodexRuntimeDoctor() {
@@ -261,6 +295,68 @@ export function getSpriteAtlasLayoutGuideUrl(runId: string, rowId: string) {
 
 export function getSpriteAtlasAtlasUrl(runId: string) {
   return `${resolveStudioApiBase()}/api/sprite-atlas/runs/${encodeURIComponent(runId)}/files/atlas`;
+}
+
+export async function listAnimationSequenceRuns() {
+  return request<{ runs: AnimationSequenceRunView[] }>('/api/animation-sequence/runs');
+}
+
+export async function getAnimationSequenceRun(runId: string) {
+  return request<AnimationSequenceRunView>(
+    `/api/animation-sequence/runs/${encodeURIComponent(runId)}`,
+  );
+}
+
+export async function createAnimationSequenceRun(input: CreateAnimationSequenceRunRequest) {
+  return request<AnimationSequenceRunView>('/api/animation-sequence/runs', {
+    method: 'POST',
+    body: JSON.stringify(input),
+  });
+}
+
+export async function getAnimationSequenceFramePrompt(runId: string, frameId: string) {
+  return request<AnimationSequenceFramePromptResponse>(
+    `/api/animation-sequence/runs/${encodeURIComponent(runId)}/frames/${encodeURIComponent(frameId)}/prompt`,
+  );
+}
+
+export async function attachAnimationSequenceFrame(
+  runId: string,
+  input: AttachAnimationSequenceFrameRequest,
+) {
+  return request<AnimationSequenceRunView>(
+    `/api/animation-sequence/runs/${encodeURIComponent(runId)}/attach-frame`,
+    {
+      method: 'POST',
+      body: JSON.stringify(input),
+    },
+  );
+}
+
+export async function exportAnimationSequenceGif(
+  runId: string,
+  input: ExportAnimationSequenceGifRequest = {},
+) {
+  return request<ExportAnimationSequenceGifResponse>(
+    `/api/animation-sequence/runs/${encodeURIComponent(runId)}/export-gif`,
+    {
+      method: 'POST',
+      body: JSON.stringify(input),
+    },
+  );
+}
+
+export async function runAnimationSequenceQa(runId: string) {
+  return request<AnimationSequenceRunView>(
+    `/api/animation-sequence/runs/${encodeURIComponent(runId)}/qa`,
+    {
+      method: 'POST',
+    },
+  );
+}
+
+export function getAnimationSequenceGifUrl(runId: string) {
+  return `${resolveStudioApiBase()}/api/animation-sequence/runs/${encodeURIComponent(runId)}/files/gif`;
 }
 
 /**
@@ -480,6 +576,10 @@ export function buildCatalogQuery(params: CatalogQueryParams = {}) {
  */
 export async function queryCatalog(params: CatalogQueryParams = {}) {
   return request<CatalogPage>(`/api/catalog${buildCatalogQuery(params)}`);
+}
+
+export async function getCatalogImageDetail(imageId: string) {
+  return request<CatalogImage>(`/api/catalog/${imageId}`);
 }
 
 export async function queryCatalogWorkspaceSummaries(

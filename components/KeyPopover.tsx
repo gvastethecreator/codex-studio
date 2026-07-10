@@ -34,6 +34,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
             </div>
             <button
               type="button"
+              aria-label="Close local session help"
               onClick={onClose}
               className="text-zinc-500 hover:text-white transition-colors"
             >

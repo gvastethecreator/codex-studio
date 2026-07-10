@@ -1,6 +1,6 @@
 # Documentation
 
-Codex Studio keeps public and agent-facing documentation in the repository. Internal audits, historical ADRs, active work plans, implementation logs, and local readiness reports are kept outside git.
+Codex Studio keeps public and agent-facing documentation in the repository. Accepted architecture reviews and their active workplan are tracked here; transient implementation logs, local execution plans, and readiness reports stay outside git.
 
 ## Public Docs
 
@@ -16,6 +16,7 @@ Codex Studio keeps public and agent-facing documentation in the repository. Inte
 - [Style collection migration readiness](./STYLE_COLLECTION_MIGRATION_READINESS.md)
 - [Sprite Atlas workflow plan](./SPRITE_ATLAS_WORKFLOW_PLAN.md)
 - [Sprite Atlas implementation tasks](./SPRITE_ATLAS_TASKS.md)
+- [Animation Sequence workflow plan](./ANIMATION_SEQUENCE_WORKFLOW_PLAN.md)
 - [Roadmap](../ROADMAP.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Security](../SECURITY.md)
@@ -23,6 +24,18 @@ Codex Studio keeps public and agent-facing documentation in the repository. Inte
 ## Architecture Decisions
 
 - [ADR 0001: Sprite Atlas workflow recipe](./adr/0001-sprite-atlas-workflow.md)
+- [ADR 0002: Animation Sequence workflow recipe](./adr/0002-animation-sequence-workflow.md)
+- [ADR 0003: Studio Readiness snapshot lifecycle](./adr/0003-studio-readiness-snapshot-lifecycle.md)
+- [ADR 0004: Durable Studio Event revisions](./adr/0004-durable-studio-event-revisions.md)
+- [ADR 0005: Persistent Jobs as queue truth](./adr/0005-persistent-jobs-as-queue-truth.md)
+
+## Architecture Reviews and Reports
+
+- [Architecture workplan](./architecture/WORKPLAN.md)
+- [General app performance and architecture review](./architecture/architecture-review-2026-07-10-app-performance.md)
+- [Animation Sequence architecture review](./architecture/architecture-review-2026-07-10-animation-sequence.md)
+- [Technical-debt audit](./architecture/technical-debt-audit-2026-07-10.md)
+- [Maintenance and cleanup report](./architecture/maintenance-report-2026-07-10.md)
 
 ## Agent-Facing Docs
 

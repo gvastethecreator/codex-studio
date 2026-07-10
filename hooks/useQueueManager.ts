@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import type { ImageGenerationConfig, QueueJob } from '../types';
+import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
 import {
   selectJobsToStart,
@@ -7,18 +8,10 @@ import {
   type QueueJobExecuteGeneration,
 } from '../lib/queueStateMachine';
 import {
-  BROWSER_QUEUE_STORAGE_KEY,
-  prepareBrowserQueueJobsForPersist,
-  prepareBrowserQueueJobsForRestore,
-} from '../lib/browserQueuePersistence';
-import {
-  getQueueJobServerJobIds,
   linkQueueJobToBackendJob,
   reconcileBrowserQueueWithBackendJobs,
 } from '../lib/browserQueueBackendSync';
 import type { ShellActivityJob } from '../lib/shellActivityJob';
-import { get, set } from '../utils/idb';
-import { runtimeLogger } from '../utils/runtimeLogger';
 import { useLazyRef } from './useLazyRef';
 
 interface UseQueueManagerProps {
@@ -64,7 +57,9 @@ export const useQueueManager = ({
   const abortControllersRef = useLazyRef(() => new Map<string, AbortController>());
   const linkedServerJobIdsRef = useLazyRef(() => new Map<string, string[]>());
   const processingJobsRef = useLazyRef(() => new Set<string>());
-  const hasHydratedPersistedQueueRef = useRef(false);
+  const jobCreatedCallbacksRef = useLazyRef(
+    () => new Map<string, ((job: StudioJob) => void) | undefined>(),
+  );
   const backendJobsRef = useRef<ShellActivityJob[]>(backendJobs);
 
   useEffect(() => {
@@ -72,64 +67,23 @@ export const useQueueManager = ({
     setJobs((currentJobs) => reconcileBrowserQueueWithBackendJobs(currentJobs, backendJobs));
   }, [backendJobs]);
 
-  useEffect(() => {
-    let isMounted = true;
-
-    get<QueueJob[]>(BROWSER_QUEUE_STORAGE_KEY)
-      .then((storedJobs) => {
-        if (!isMounted) return;
-
-        const restoredJobs = prepareBrowserQueueJobsForRestore(storedJobs);
-        linkedServerJobIdsRef.current.clear();
-        for (const job of restoredJobs) {
-          const serverJobIds = getQueueJobServerJobIds(job);
-          if (serverJobIds.length > 0) {
-            linkedServerJobIdsRef.current.set(job.id, serverJobIds);
-          }
-        }
-
-        setJobs((currentJobs) =>
-          currentJobs.length > 0
-            ? currentJobs
-            : reconcileBrowserQueueWithBackendJobs(restoredJobs, backendJobsRef.current),
-        );
-      })
-      .catch((error) => {
-        runtimeLogger.warn('Unable to restore browser queue from IndexedDB', error);
-      })
-      .finally(() => {
-        if (isMounted) {
-          hasHydratedPersistedQueueRef.current = true;
-        }
-      });
-
-    return () => {
-      isMounted = false;
-    };
-  }, [linkedServerJobIdsRef]);
-
-  useEffect(() => {
-    if (!hasHydratedPersistedQueueRef.current) return;
-
-    set(BROWSER_QUEUE_STORAGE_KEY, prepareBrowserQueueJobsForPersist(jobs)).catch((error) => {
-      runtimeLogger.warn('Unable to persist browser queue to IndexedDB', error);
-    });
-  }, [jobs]);
-
   const enqueue = useCallback(
     (
       prompt: string,
       config: ImageGenerationConfig,
       workspaceId: string,
       force: boolean = false,
+      onJobCreated?: (job: StudioJob) => void,
     ) => {
+      const newJob = createQueueJob(prompt, config, workspaceId, force);
+      jobCreatedCallbacksRef.current.set(newJob.id, onJobCreated);
       startViewTransition(() => {
-        const newJob = createQueueJob(prompt, config, workspaceId, force);
         setJobs((prev) => [...prev, newJob]);
         addToast(force ? 'Forcing job execution...' : 'Job added to queue', 'info');
       });
+      return newJob.id;
     },
-    [addToast],
+    [addToast, jobCreatedCallbacksRef],
   );
 
   const retry = useCallback(
@@ -192,12 +146,13 @@ export const useQueueManager = ({
         abortControllersRef.current.delete(jobId);
       }
       linkedServerJobIdsRef.current.delete(jobId);
+      jobCreatedCallbacksRef.current.delete(jobId);
 
       startViewTransition(() => {
         setJobs((prev) => prev.filter((job) => job.id !== jobId));
       });
     },
-    [abortControllersRef, linkedServerJobIdsRef],
+    [abortControllersRef, jobCreatedCallbacksRef, linkedServerJobIdsRef],
   );
 
   const clearCompleted = useCallback(() => {
@@ -236,22 +191,20 @@ export const useQueueManager = ({
     abortControllersRef.current.clear();
     linkedServerJobIdsRef.current.clear();
     processingJobsRef.current.clear();
+    jobCreatedCallbacksRef.current.clear();
     setIsResting(false);
     setQueueTick(0);
 
     startViewTransition(() => {
       setJobs([]);
     });
-  }, [abortControllersRef, linkedServerJobIdsRef, processingJobsRef]);
+  }, [abortControllersRef, jobCreatedCallbacksRef, linkedServerJobIdsRef, processingJobsRef]);
 
   useEffect(() => {
     const pendingJobs = jobs.filter((j) => j.status === 'pending');
     if (pendingJobs.length === 0) return;
 
-    const processingJobs = jobs.filter((j) => j.status === 'processing');
-    const activeJobsCount = Math.max(processingJobs.length, processingJobsRef.current.size);
-
-    const jobsToStart = selectJobsToStart(pendingJobs, activeJobsCount, isResting);
+    const jobsToStart = selectJobsToStart(pendingJobs);
     if (jobsToStart.length === 0) return;
 
     void Promise.all(
@@ -262,6 +215,7 @@ export const useQueueManager = ({
         const execution = startQueuedJobExecution(nextJob, {
           executeGeneration,
           onJobCreated: (studioJob) => {
+            jobCreatedCallbacksRef.current.get(nextJob.id)?.(studioJob);
             const linkedIds = linkedServerJobIdsRef.current.get(nextJob.id) ?? [];
             if (!linkedIds.includes(studioJob.id)) {
               linkedServerJobIdsRef.current.set(nextJob.id, [...linkedIds, studioJob.id]);
@@ -338,6 +292,7 @@ export const useQueueManager = ({
             ),
           );
         } finally {
+          jobCreatedCallbacksRef.current.delete(nextJob.id);
           processingJobsRef.current.delete(nextJob.id);
           abortControllersRef.current.delete(nextJob.id);
           setQueueTick((t) => t + 1);
@@ -352,7 +307,7 @@ export const useQueueManager = ({
   }, [
     abortControllersRef,
     executeGeneration,
-    isResting,
+    jobCreatedCallbacksRef,
     jobs,
     linkedServerJobIdsRef,
     processingJobsRef,

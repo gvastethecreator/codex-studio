@@ -15,6 +15,7 @@ import {
   IconHourglass as Hourglass,
   IconUserScan as ScanFace,
   IconBoxMultiple as Boxes,
+  IconGif as Gif,
 } from '@tabler/icons-react';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
@@ -28,6 +29,7 @@ interface RecipesViewProps {
 }
 
 const RECIPE_TAG_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
+  'animation-sequence': Gif,
   styles: Palette,
   remaster: Wand2,
   camera: Video,
@@ -40,6 +42,7 @@ const RECIPE_TAG_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
 };
 
 const RECIPE_BUTTON_ICONS: Record<Exclude<RecipeId, null>, TablerIcon> = {
+  'animation-sequence': Clock,
   styles: Sparkles,
   remaster: Sparkles,
   camera: Film,

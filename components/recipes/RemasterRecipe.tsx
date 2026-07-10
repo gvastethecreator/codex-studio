@@ -200,6 +200,7 @@ export const RemasterRecipe: React.FC<RemasterRecipeProps> = ({
             </div>
             <button
               type="button"
+              aria-label="Remove remaster reference"
               onClick={() => updateConfig('attachments', [])}
               className="absolute top-4 left-4 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-all opacity-0 group-hover:opacity-100"
             >

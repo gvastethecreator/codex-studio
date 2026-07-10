@@ -458,7 +458,7 @@ export const CHARACTER_LAB_OPTION_ICON_ATLAS_CELL_SIZE = ${RUNTIME_CELL};
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_WIDTH = ${atlasWidth};
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_HEIGHT = ${atlasHeight};
 export const CHARACTER_LAB_OPTION_ICON_FRAMES = ${JSON.stringify(frameCoords, null, 2)} as const;
-export const CHARACTER_LAB_OPTION_ICON_METADATA = ${JSON.stringify(metadata, null, 2)} as const;
+const CHARACTER_LAB_OPTION_ICON_METADATA = ${JSON.stringify(metadata, null, 2)} as const;
 export const CHARACTER_LAB_OPTION_ICON_SOURCE_URLS = {
 ${sourceUrls}
 } as const;

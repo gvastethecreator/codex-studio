@@ -1,3 +1,4 @@
+import { animationSequenceRecipeContextBuilder } from './animationSequence';
 import { cameraRecipeContextBuilder } from './camera';
 import { characterLabRecipeContextBuilder } from './characterLab';
 import { characterRecipeContextBuilder } from './character';
@@ -10,6 +11,7 @@ import { timelineRecipeContextBuilder } from './timeline';
 import type { RecipeContextBuilder, RegisteredRecipeId } from './shared';
 
 export const RECIPE_CONTEXT_BUILDERS = {
+  'animation-sequence': animationSequenceRecipeContextBuilder,
   camera: cameraRecipeContextBuilder,
   'character-lab': characterLabRecipeContextBuilder,
   character: characterRecipeContextBuilder,

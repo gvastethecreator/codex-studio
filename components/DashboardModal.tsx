@@ -40,6 +40,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
           </div>
           <button
             type="button"
+            aria-label="Close dashboard"
             onClick={onClose}
             className="p-2 rounded-xl text-zinc-500 hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
           >

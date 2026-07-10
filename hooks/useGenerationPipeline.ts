@@ -8,11 +8,19 @@ import type {
 } from '../types';
 import type { Job as StudioJob } from '../packages/shared/src';
 import { startViewTransition } from '../utils/transitionUtils';
-import {
-  type LocalGenerationLifecycleOutcome,
-  runLocalGenerationWithLifecycle,
-  type LocalGenerationRunResult,
+import type {
+  LocalGenerationLifecycleOutcome,
+  LocalGenerationRunResult,
 } from '../services/localGenerationRun';
+
+async function runLocalGeneration(
+  input: Parameters<
+    typeof import('../services/localGenerationRun').runLocalGenerationWithLifecycle
+  >[0],
+) {
+  const { runLocalGenerationWithLifecycle } = await import('../services/localGenerationRun');
+  return runLocalGenerationWithLifecycle(input);
+}
 
 interface GenerationOptions {
   preventModal?: boolean;
@@ -178,7 +186,7 @@ export const useGenerationPipeline = ({
           throw new Error('This recipe needs a reference image or a prompt before it can run.');
         }
 
-        const outcome = await runLocalGenerationWithLifecycle({
+        const outcome = await runLocalGeneration({
           config: configToUse,
           workspaceId,
           signal: options?.signal,
@@ -256,7 +264,7 @@ export const useGenerationPipeline = ({
       beginRun(configToUse);
 
       try {
-        const outcome = await runLocalGenerationWithLifecycle({
+        const outcome = await runLocalGeneration({
           workspaceId: activeWorkspaceId,
           config: configToUse,
           inputImage: {

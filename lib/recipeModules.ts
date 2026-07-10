@@ -1,4 +1,15 @@
 import {
+  ANIMATION_SEQUENCE_ASPECT_RATIOS,
+  ANIMATION_SEQUENCE_BACKGROUNDS,
+  ANIMATION_SEQUENCE_CONTINUITY,
+  ANIMATION_SEQUENCE_METHODS,
+  createAnimationSequenceContract,
+  createAnimationSequenceFramePlan,
+  type AnimationSequenceFramePlanItem,
+  type AnimationSequenceContract,
+  type AnimationSequenceFramePlan,
+} from '../packages/shared/src/animationSequenceContracts';
+import {
   createGenerationTaskSpec,
   type GenerationQualityPresetId,
   type GenerationProviderId,
@@ -85,6 +96,7 @@ export interface BuildGenerationTaskSpecFromRecipeArgs {
 const CODEX_FIRST_PROVIDERS: GenerationProviderId[] = ['codex', 'dry_run'];
 
 const RECIPE_LIST_ORDER: RegisteredRecipeId[] = [
+  'animation-sequence',
   'styles',
   'remaster',
   'spritesheet',
@@ -316,6 +328,13 @@ const TIMELINE_OPTIONS = {
   lightingMode: ['Locked', 'Evolving', 'Flickering'],
 } as const;
 
+const ANIMATION_SEQUENCE_OPTIONS = {
+  aspectRatio: [...ANIMATION_SEQUENCE_ASPECT_RATIOS],
+  method: [...ANIMATION_SEQUENCE_METHODS],
+  continuity: [...ANIMATION_SEQUENCE_CONTINUITY],
+  background: [...ANIMATION_SEQUENCE_BACKGROUNDS],
+} as const;
+
 function options(values: readonly string[]) {
   return [...values];
 }
@@ -351,6 +370,159 @@ function createRecipeModule(
 }
 
 export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
+  'animation-sequence': createRecipeModule({
+    id: 'animation-sequence',
+    title: 'Animation Sequence',
+    description:
+      'Plan and generate frame-by-frame image animations with correction flow and GIF export.',
+    defaultTask: 'image_generate',
+    supportedTasks: ['image_generate', 'image_edit'],
+    parameters: [
+      {
+        id: 'frameCount',
+        label: 'Frames',
+        kind: 'number',
+        control: 'slider',
+        group: 'sequence',
+        defaultValue: 8,
+        min: 2,
+        max: 48,
+        step: 1,
+      },
+      {
+        id: 'fps',
+        label: 'FPS',
+        kind: 'number',
+        control: 'slider',
+        group: 'sequence',
+        defaultValue: 12,
+        min: 1,
+        max: 30,
+        step: 1,
+      },
+      {
+        id: 'aspectRatio',
+        label: 'Aspect Ratio',
+        kind: 'enum',
+        control: 'select',
+        group: 'output',
+        defaultValue: '1:1',
+        options: options(ANIMATION_SEQUENCE_OPTIONS.aspectRatio),
+      },
+      {
+        id: 'method',
+        label: 'Method',
+        kind: 'enum',
+        control: 'select',
+        group: 'continuity',
+        defaultValue: 'recursive',
+        options: options(ANIMATION_SEQUENCE_OPTIONS.method),
+      },
+      {
+        id: 'cyclic',
+        label: 'Loop',
+        kind: 'boolean',
+        control: 'toggle',
+        group: 'continuity',
+        defaultValue: true,
+      },
+      {
+        id: 'pinEdges',
+        label: 'Pin Edges',
+        kind: 'boolean',
+        control: 'toggle',
+        group: 'continuity',
+        defaultValue: true,
+      },
+      {
+        id: 'continuity',
+        label: 'Continuity',
+        kind: 'enum',
+        control: 'select',
+        group: 'continuity',
+        defaultValue: 'balanced',
+        options: options(ANIMATION_SEQUENCE_OPTIONS.continuity),
+      },
+      {
+        id: 'styleLock',
+        label: 'Style Lock',
+        kind: 'boolean',
+        control: 'toggle',
+        group: 'look',
+        defaultValue: true,
+      },
+      {
+        id: 'background',
+        label: 'Background',
+        kind: 'enum',
+        control: 'select',
+        group: 'output',
+        defaultValue: 'preserve',
+        options: options(ANIMATION_SEQUENCE_OPTIONS.background),
+      },
+      {
+        id: 'matteColor',
+        label: 'GIF Matte',
+        kind: 'color',
+        control: 'color',
+        group: 'output',
+        defaultValue: '#0b0f14',
+      },
+      {
+        id: 'variantsPerFrame',
+        label: 'Variants Per Frame',
+        kind: 'number',
+        control: 'slider',
+        group: 'sequence',
+        defaultValue: 1,
+        min: 1,
+        max: 4,
+        step: 1,
+      },
+      {
+        id: 'runId',
+        label: 'Run ID',
+        kind: 'string',
+        control: 'text',
+        group: 'execution',
+      },
+      {
+        id: 'frameId',
+        label: 'Frame ID',
+        kind: 'string',
+        control: 'text',
+        group: 'execution',
+      },
+      {
+        id: 'frameIndex',
+        label: 'Frame Index',
+        kind: 'number',
+        control: 'text',
+        group: 'execution',
+        defaultValue: 0,
+        min: 0,
+        max: 47,
+        step: 1,
+      },
+      {
+        id: 'correctionMode',
+        label: 'Correction Mode',
+        kind: 'boolean',
+        control: 'toggle',
+        group: 'execution',
+        defaultValue: false,
+      },
+      {
+        id: 'task',
+        label: 'Task',
+        kind: 'enum',
+        control: 'select',
+        group: 'execution',
+        defaultValue: 'image_generate',
+        options: ['image_generate', 'image_edit'],
+      },
+    ],
+  }),
   remaster: createRecipeModule({
     id: 'remaster',
     title: 'Remaster',
@@ -1220,6 +1392,30 @@ export function validateRecipeParams(
   return { valid: errors.length === 0, errors };
 }
 
+function createAnimationSequenceParams(config: ImageGenerationConfig) {
+  if (config.recipeId !== 'animation-sequence') return null;
+  return {
+    prompt: config.prompt ?? '',
+    ...(config.recipeParams ?? {}),
+  };
+}
+
+function resolveAnimationSequenceFrame(
+  framePlan: AnimationSequenceFramePlan,
+  params: Record<string, unknown>,
+): AnimationSequenceFramePlanItem {
+  const requestedFrameId = typeof params.frameId === 'string' ? params.frameId : '';
+  const requestedFrameIndex =
+    typeof params.frameIndex === 'number' && Number.isFinite(params.frameIndex)
+      ? Math.round(params.frameIndex)
+      : 0;
+  return (
+    framePlan.frames.find((frame) => frame.id === requestedFrameId) ??
+    framePlan.frames.find((frame) => frame.index === requestedFrameIndex) ??
+    framePlan.frames[0]!
+  );
+}
+
 export function buildGenerationTaskSpecFromRecipe({
   id,
   providerId = null,
@@ -1227,13 +1423,25 @@ export function buildGenerationTaskSpecFromRecipe({
   task,
 }: BuildGenerationTaskSpecFromRecipeArgs) {
   const module = getRecipeModule(config.recipeId ?? null);
-  const recipeContext =
-    module?.buildContext(config.recipeParams ?? null) || config.recipeContext || '';
+  const animationSequenceParams = createAnimationSequenceParams(config);
+  const contextParams = animationSequenceParams ?? config.recipeParams ?? null;
+  const recipeContext = module?.buildContext(contextParams) || config.recipeContext || '';
   const recipeProviderDirectives = module
-    ? buildRecipeProviderDirectives(module, config.recipeParams ?? null)
+    ? buildRecipeProviderDirectives(module, contextParams)
     : null;
   const spriteAtlasContract =
     module?.id === 'sprite-atlas' ? createSpriteAtlasContract(config.recipeParams ?? null) : null;
+  const animationSequenceContract: AnimationSequenceContract | null =
+    module?.id === 'animation-sequence'
+      ? createAnimationSequenceContract(animationSequenceParams)
+      : null;
+  const animationSequenceFramePlan: AnimationSequenceFramePlan | null = animationSequenceContract
+    ? createAnimationSequenceFramePlan(animationSequenceContract)
+    : null;
+  const animationSequenceFrame =
+    animationSequenceFramePlan && animationSequenceParams
+      ? resolveAnimationSequenceFrame(animationSequenceFramePlan, animationSequenceParams)
+      : null;
   const prompt = config.prompt || 'Generate a high-quality image.';
   const requestedTask =
     typeof config.recipeParams?.task === 'string'
@@ -1298,11 +1506,16 @@ export function buildGenerationTaskSpecFromRecipe({
       style:
         config.recipeId === 'sprite-atlas' && spriteAtlasContract
           ? spriteAtlasContract.customStyle || spriteAtlasContract.stylePreset
-          : config.recipeId === 'styles' && typeof config.recipeParams?.presetName === 'string'
-            ? config.recipeParams.presetName
-            : config.recipeId === 'character-lab' && typeof config.recipeParams?.style === 'string'
-              ? config.recipeParams.style
-              : null,
+          : config.recipeId === 'animation-sequence' && animationSequenceContract
+            ? animationSequenceContract.styleLock
+              ? 'Style-locked animation frame sequence'
+              : 'Animation frame sequence'
+            : config.recipeId === 'styles' && typeof config.recipeParams?.presetName === 'string'
+              ? config.recipeParams.presetName
+              : config.recipeId === 'character-lab' &&
+                  typeof config.recipeParams?.style === 'string'
+                ? config.recipeParams.style
+                : null,
       lighting: null,
       color:
         config.recipeId === 'sprite-atlas' && spriteAtlasContract
@@ -1323,10 +1536,18 @@ export function buildGenerationTaskSpecFromRecipe({
             `Use ${spriteAtlasContract.backgroundRemoval} background removal contract.`,
             'Do not create guide marks, labels, scene backgrounds, or merged atlas pages as row art.',
           ]
-        : [],
+        : animationSequenceContract
+          ? [
+              `Generate one single frame for ${animationSequenceFrame?.id ?? 'the selected frame'}.`,
+              `Keep ${animationSequenceContract.continuity} continuity across the frame sequence.`,
+              'Do not generate a video, storyboard grid, contact sheet, UI, captions, or text.',
+            ]
+          : [],
       negative: spriteAtlasContract
         ? ['labels', 'watermarks', 'guide marks', 'scene background', 'cropped sprites']
-        : [],
+        : animationSequenceContract
+          ? ['video controls', 'captions', 'watermarks', 'contact sheet', 'multi-panel grid']
+          : [],
       referenceRoles: config.attachments.map((attachment, index) => ({
         role:
           config.recipeId === 'character-lab' && index === 0
@@ -1356,6 +1577,13 @@ export function buildGenerationTaskSpecFromRecipe({
       recipeContext,
       recipeProviderDirectives,
       spriteAtlas: spriteAtlasContract,
+      animationSequence: animationSequenceContract
+        ? {
+            contract: animationSequenceContract,
+            frame: animationSequenceFrame,
+            generationOrder: animationSequenceFramePlan?.generationOrder ?? [],
+          }
+        : null,
       recipeModule: module
         ? {
             id: module.id,

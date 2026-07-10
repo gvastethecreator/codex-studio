@@ -159,6 +159,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
               </div>
               <button
                 type="button"
+                aria-label="Remove character reference"
                 onClick={() => updateConfig('attachments', [])}
                 className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-all opacity-0 group-hover:opacity-100 shadow-lg border border-red-500/30"
               >

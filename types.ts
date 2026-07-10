@@ -28,6 +28,7 @@ export type AspectRatio =
 export type ImageSize = '512px' | '1K' | '2K' | '4K';
 
 export type RecipeId =
+  | 'animation-sequence'
   | 'remaster'
   | 'sprite-atlas'
   | 'spritesheet'

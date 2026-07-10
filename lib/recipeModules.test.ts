@@ -19,6 +19,7 @@ describe('recipeModules', () => {
     const spritesheet = getRecipeModule('spritesheet');
 
     expect(modules.map((module) => module.id)).toEqual([
+      'animation-sequence',
       'styles',
       'remaster',
       'spritesheet',
@@ -29,6 +30,11 @@ describe('recipeModules', () => {
       'camera',
       'timeline',
     ]);
+    expect(getRecipeModule('animation-sequence')).toMatchObject({
+      title: 'Animation Sequence',
+      defaultTask: 'image_generate',
+      supportedTasks: ['image_generate', 'image_edit'],
+    });
     expect(styles).toMatchObject({
       title: 'Styles',
       defaultTask: 'image_generate',
@@ -272,6 +278,50 @@ describe('recipeModules', () => {
       color: '#00FF00',
       materials: 'sprite',
     });
+  });
+
+  it('builds Animation Sequence specs with selected frame metadata and no video task', () => {
+    const spec = buildGenerationTaskSpecFromRecipe({
+      id: 'spec-animation-sequence',
+      providerId: 'codex',
+      config: {
+        ...DEFAULT_GENERATION_CONFIG,
+        prompt: 'a ceramic fox waves in a tiny loop',
+        recipeId: 'animation-sequence',
+        recipeParams: {
+          runId: 'anim-1',
+          frameCount: 5,
+          fps: 10,
+          method: 'recursive',
+          continuity: 'strict',
+          frameIndex: 2,
+        },
+      },
+    });
+
+    expect(spec.task).toBe('image_generate');
+    expect(spec.metadata.animationSequence).toMatchObject({
+      contract: {
+        frameCount: 5,
+        fps: 10,
+        method: 'recursive',
+        continuity: 'strict',
+      },
+      frame: {
+        id: 'frame-0003',
+        ordinal: 3,
+      },
+    });
+    expect(spec.metadata.recipeContext).toContain('ANIMATION SEQUENCE FRAME PROMPT');
+    expect(spec.metadata.recipeProviderDirectives).toMatchObject({
+      recipeId: 'animation-sequence',
+      title: 'Animation Sequence',
+    });
+    expect(spec.quality).toMatchObject({
+      qualityPresetId: 'image_general',
+      style: 'Style-locked animation frame sequence',
+    });
+    expect(spec.quality?.constraints.join(' ')).toContain('single frame');
   });
 
   it('lets Character Lab actions request supported task kinds and source/reference roles', () => {

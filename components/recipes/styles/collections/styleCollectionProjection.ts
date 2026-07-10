@@ -130,13 +130,14 @@ export function resolveStyleCollection(
   for (const entry of collection.entries) {
     if (entry.includeMode === 'exclude') continue;
     for (const resolved of resolveIncludedEntry(entry, index)) {
-      if (excludedPresetIds.has(resolved.preset.id) || seenPresetIds.has(resolved.preset.id)) {
+      const presetId = resolved.preset.id;
+      if (excludedPresetIds.has(presetId) || seenPresetIds.has(presetId)) {
         continue;
       }
-      seenPresetIds.add(resolved.preset.id);
+      seenPresetIds.add(presetId);
       presets.push({
         preset: resolved.preset,
-        presetId: resolved.preset.id,
+        presetId,
         sourcePackId: resolved.pack.id,
         sourceCategory: resolved.preset.category ?? 'General',
         displayCategory: resolved.entry.displayCategory ?? resolved.preset.category ?? 'General',

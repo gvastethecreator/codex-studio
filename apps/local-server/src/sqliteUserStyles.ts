@@ -5,8 +5,8 @@ import type {
   UserStylePresetSource,
   UserStylePresetTask,
   UserStyleVisualDna,
-} from '../../../packages/shared/src';
-import { USER_STYLE_PRESET_SCHEMA_VERSION } from '../../../packages/shared/src';
+} from '../../../packages/shared/src/userStyles';
+import { USER_STYLE_PRESET_SCHEMA_VERSION } from '../../../packages/shared/src/userStyles';
 import { getDb } from './db';
 import {
   applyUserStylePatch,

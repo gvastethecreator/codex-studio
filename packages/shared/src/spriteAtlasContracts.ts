@@ -27,7 +27,7 @@ export const SPRITE_ATLAS_ASSET_KINDS = [
 
 export type SpriteAtlasAssetKind = (typeof SPRITE_ATLAS_ASSET_KINDS)[number];
 
-export const SPRITE_ATLAS_EXTRACTION_MODES = ['components', 'slots'] as const;
+const SPRITE_ATLAS_EXTRACTION_MODES = ['components', 'slots'] as const;
 
 export type SpriteAtlasExtractionMode = (typeof SPRITE_ATLAS_EXTRACTION_MODES)[number];
 
@@ -39,7 +39,7 @@ export const SPRITE_ATLAS_FRAME_BUDGETS = ['preset', 'micro', 'compact', 'exact'
 
 export type SpriteAtlasFrameBudget = (typeof SPRITE_ATLAS_FRAME_BUDGETS)[number];
 
-export const SPRITE_ATLAS_RUN_STATUSES = [
+const SPRITE_ATLAS_RUN_STATUSES = [
   'draft',
   'prepared',
   'waiting_for_rows',
@@ -51,7 +51,7 @@ export const SPRITE_ATLAS_RUN_STATUSES = [
 
 export type SpriteAtlasRunStatus = (typeof SPRITE_ATLAS_RUN_STATUSES)[number];
 
-export const SPRITE_ATLAS_ROW_STATUSES = [
+const SPRITE_ATLAS_ROW_STATUSES = [
   'planned',
   'handoff_ready',
   'generating',

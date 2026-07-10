@@ -34,6 +34,7 @@ export interface CatalogImage {
   tags: string[];
   generationConfig: Record<string, unknown> | null;
   createdAt: string;
+  detailLevel?: 'summary' | 'detail';
 }
 
 export interface CatalogPage {
@@ -81,10 +82,21 @@ const CATALOG_IMAGE_SUMMARY_COLUMNS = [
   'created_at',
 ].join(', ');
 
+const CATALOG_WORKSPACE_AGGREGATE_COLUMNS = [
+  "COALESCE(workspace_id, 'default') AS normalized_workspace_id",
+  'COUNT(*) AS image_count',
+  'COALESCE(SUM(file_size_bytes), 0) AS total_file_size_bytes',
+  'COUNT(file_size_bytes) AS known_file_size_count',
+  'GROUP_CONCAT(DISTINCT library_id) AS library_ids',
+  'MIN(created_at) AS first_created_at',
+  'MAX(created_at) AS latest_created_at',
+].join(', ');
+
 function mapCatalogImage(
   row: any,
-  options: { includeGenerationConfig?: boolean } = {},
+  options: { includeGenerationConfig?: boolean; summary?: boolean } = {},
 ): CatalogImage {
+  const summary = options.summary === true;
   return {
     id: row.id,
     libraryId: row.library_id,
@@ -92,10 +104,17 @@ function mapCatalogImage(
     thumbnailPath: row.thumbnail_path,
     publicUrl: row.public_url,
     thumbnailUrl: row.thumbnail_url,
-    sourceExists: existsSync(row.file_path),
-    thumbnailExists: row.thumbnail_path ? existsSync(row.thumbnail_path) : false,
-    prompt: row.prompt,
-    negativePrompt: row.negative_prompt,
+    sourceExists: summary ? undefined : existsSync(row.file_path),
+    thumbnailExists: summary
+      ? undefined
+      : row.thumbnail_path
+        ? existsSync(row.thumbnail_path)
+        : false,
+    prompt:
+      summary && typeof row.prompt === 'string' && row.prompt.length > 240
+        ? `${row.prompt.slice(0, 240)}…`
+        : row.prompt,
+    negativePrompt: summary ? null : row.negative_prompt,
     aspectRatio: row.aspect_ratio,
     imageSize: row.image_size,
     width: row.width,
@@ -114,6 +133,7 @@ function mapCatalogImage(
       ? parseJson<Record<string, unknown> | null>(row.generation_config, null)
       : null,
     createdAt: row.created_at,
+    detailLevel: summary ? 'summary' : 'detail',
   };
 }
 
@@ -193,7 +213,7 @@ function queryCatalogInternal(
     offset?: number;
     limit?: number;
   } = {},
-  options: { includeGenerationConfig?: boolean } = {},
+  options: { includeGenerationConfig?: boolean; summary?: boolean } = {},
 ): CatalogPage {
   const clauses: string[] = [];
   const params: any[] = [];
@@ -245,7 +265,7 @@ function queryCatalogInternal(
 }
 
 export function queryCatalog(filters: Parameters<typeof queryCatalogInternal>[0] = {}) {
-  return queryCatalogInternal(filters, { includeGenerationConfig: false });
+  return queryCatalogInternal(filters, { includeGenerationConfig: false, summary: true });
 }
 
 export function queryCatalogDetails(filters: Parameters<typeof queryCatalogInternal>[0] = {}) {
@@ -264,36 +284,25 @@ export function queryCatalogWorkspaceSummaries(
   }
 
   const where = `WHERE ${clauses.join(' AND ')}`;
+  const latestClauses = [
+    'candidate.is_deleted = ?',
+    "COALESCE(candidate.workspace_id, 'default') = summaries.normalized_workspace_id",
+  ];
+  const latestParams: any[] = [filters.isDeleted ? 1 : 0];
+
+  if (filters.libraryId) {
+    latestClauses.splice(1, 0, 'candidate.library_id = ?');
+    latestParams.push(filters.libraryId);
+  }
+
   const rows = getDb()
     .query(
       `
-        WITH filtered AS (
-          SELECT
-            ${CATALOG_IMAGE_SUMMARY_COLUMNS},
-            COALESCE(workspace_id, 'default') AS normalized_workspace_id
+        WITH summaries AS (
+          SELECT ${CATALOG_WORKSPACE_AGGREGATE_COLUMNS}
           FROM catalog_images
           ${where}
-        ),
-        ranked AS (
-          SELECT
-            *,
-            ROW_NUMBER() OVER (
-              PARTITION BY normalized_workspace_id
-              ORDER BY created_at DESC, id DESC
-            ) AS workspace_rank
-          FROM filtered
-        ),
-        summaries AS (
-          SELECT
-            normalized_workspace_id,
-            COUNT(*) AS image_count,
-            COALESCE(SUM(file_size_bytes), 0) AS total_file_size_bytes,
-            COUNT(file_size_bytes) AS known_file_size_count,
-            GROUP_CONCAT(DISTINCT library_id) AS library_ids,
-            MIN(created_at) AS first_created_at,
-            MAX(created_at) AS latest_created_at
-          FROM filtered
-          GROUP BY normalized_workspace_id
+          GROUP BY COALESCE(workspace_id, 'default')
         )
         SELECT
           summaries.normalized_workspace_id,
@@ -303,19 +312,27 @@ export function queryCatalogWorkspaceSummaries(
           summaries.library_ids,
           summaries.first_created_at,
           summaries.latest_created_at,
-          ranked.${CATALOG_IMAGE_SUMMARY_COLUMNS.replaceAll(', ', ', ranked.')}
+          latest_image.${CATALOG_IMAGE_SUMMARY_COLUMNS.replaceAll(', ', ', latest_image.')}
         FROM summaries
-        LEFT JOIN ranked
-          ON ranked.normalized_workspace_id = summaries.normalized_workspace_id
-         AND ranked.workspace_rank = 1
+        LEFT JOIN catalog_images AS latest_image
+          ON latest_image.id = (
+            SELECT candidate.id
+            FROM catalog_images AS candidate
+            WHERE ${latestClauses.join(' AND ')}
+            ORDER BY candidate.created_at DESC, candidate.id DESC
+            LIMIT 1
+          )
         ORDER BY summaries.latest_created_at DESC
       `,
     )
-    .all(...params) as any[];
+    .all(...params, ...latestParams) as any[];
 
   return rows.map((row) => {
     const lastImage: CatalogWorkspaceSummary['lastImage'] = row.id
-      ? { ...mapCatalogImage(row, { includeGenerationConfig: false }), generationConfig: null }
+      ? {
+          ...mapCatalogImage(row, { includeGenerationConfig: false, summary: true }),
+          generationConfig: null,
+        }
       : null;
 
     return {

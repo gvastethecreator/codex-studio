@@ -4,6 +4,7 @@ import type { RecipeId } from '../types';
 import { getActiveRecipeIndicator, listActiveRecipeIndicators } from './activeRecipeIndicator';
 
 const REGISTERED_RECIPE_IDS: Exclude<RecipeId, null>[] = [
+  'animation-sequence',
   'styles',
   'remaster',
   'spritesheet',

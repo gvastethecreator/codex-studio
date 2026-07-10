@@ -5,7 +5,7 @@ import {
   IconArrowBackUp as Undo,
   IconX as X,
 } from '@tabler/icons-react';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useEffectEvent, useRef, useState } from 'react';
 import type { Attachment } from '../types';
 import ActionButton from './ui/ActionButton';
 import Slider from './ui/Slider';
@@ -96,6 +96,7 @@ function ImageEditorControlsPanel({
       <div className="mt-auto">
         <button
           type="button"
+          aria-label="Generate image edit"
           onClick={onGenerate}
           disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
           className={`w-full h-12 sm:h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
@@ -310,13 +311,17 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
     onGenerate(image, tempCanvas.toDataURL('image/png'), editPrompt);
   };
 
+  const handleWindowPointerMove = useEffectEvent((event: PointerEvent) => {
+    moveBrushCursor(event.clientX, event.clientY);
+  });
+
   useEffect(() => {
     const handlePointerMove = (e: PointerEvent) => {
-      moveBrushCursor(e.clientX, e.clientY);
+      handleWindowPointerMove(e);
     };
     if (isOpen) window.addEventListener('pointermove', handlePointerMove, { passive: true });
     return () => window.removeEventListener('pointermove', handlePointerMove);
-  }, [isOpen, moveBrushCursor]);
+  }, [isOpen]);
 
   const handleReset = useCallback(() => {
     const ctx = canvasRef.current?.getContext('2d');
@@ -353,6 +358,7 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
         </div>
         <button
           type="button"
+          aria-label="Close image editor"
           onClick={handleClose}
           className="rounded-xl bg-zinc-900/60 p-3 text-zinc-600 shadow-xl transition-[background-color,color] hover:bg-zinc-800 hover:text-white"
         >

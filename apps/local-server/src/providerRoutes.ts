@@ -1,18 +1,17 @@
 import { Hono } from 'hono';
 import type { CodexRuntimeDoctorReport } from '../../../packages/shared/src';
-import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import { readGenerationProviderRuntimePreflights } from './providers/runtimeConfig';
 import { readProviderCapabilities } from './providerCapabilities';
 import type { readEditableStudioSettings } from './studioSettingsStore';
 
 interface ProviderRoutesDependencies {
   readSettings: () => ReturnType<typeof readEditableStudioSettings>;
-  readCodexRuntimeDoctor?: () => CodexRuntimeDoctorReport;
+  readCodexRuntimeDoctor: () => CodexRuntimeDoctorReport;
 }
 
 export function createProviderRoutes({
   readSettings,
-  readCodexRuntimeDoctor: readCodexRuntimeDoctorFn = readCodexRuntimeDoctor,
+  readCodexRuntimeDoctor: readCodexRuntimeDoctorFn,
 }: ProviderRoutesDependencies) {
   const routes = new Hono();
 

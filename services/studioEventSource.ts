@@ -77,6 +77,7 @@ export interface StudioEventStream {
   onCatalogChanged(callback: Listener<StudioCatalogEventPayload>): Unsubscribe;
   onLogAdded(callback: Listener<SystemLog>): Unsubscribe;
   onConnectionChange(callback: Listener<boolean>): Unsubscribe;
+  onRevisionGap?(callback: Listener<void>): Unsubscribe;
   close(): void;
 }
 
@@ -94,6 +95,8 @@ class BrowserStudioEventStream implements StudioEventStream {
   private catalogListeners = new Set<Listener<StudioCatalogEventPayload>>();
   private logListeners = new Set<Listener<SystemLog>>();
   private connectionListeners = new Set<Listener<boolean>>();
+  private revisionGapListeners = new Set<Listener<void>>();
+  private lastRevision = 0;
 
   constructor(
     private readonly apiBase = getStudioApiBase(),
@@ -130,6 +133,11 @@ class BrowserStudioEventStream implements StudioEventStream {
     return () => this.connectionListeners.delete(callback);
   }
 
+  onRevisionGap(callback: Listener<void>) {
+    this.revisionGapListeners.add(callback);
+    return () => this.revisionGapListeners.delete(callback);
+  }
+
   close() {
     this.closed = true;
     this.source?.close();
@@ -139,7 +147,8 @@ class BrowserStudioEventStream implements StudioEventStream {
   private connect() {
     if (this.closed || typeof EventSource === 'undefined') return;
     this.source?.close();
-    const source = new EventSource(`${this.apiBase}/api/events`);
+    const suffix = this.lastRevision > 0 ? `?since=${this.lastRevision}` : '';
+    const source = new EventSource(`${this.apiBase}/api/events${suffix}`);
     this.source = source;
     source.onopen = () => {
       this.reconnectDelay = this.reconnectPolicy.initialDelayMs;
@@ -173,6 +182,26 @@ class BrowserStudioEventStream implements StudioEventStream {
   }
 
   private dispatch(event: StudioEvent | UnknownStudioEvent) {
+    if (event.type === 'server.connected') {
+      const connected = event as Extract<StudioEvent, { type: 'server.connected' }>;
+      const serverRevision = connected.payload.revision ?? event.revision ?? 0;
+      if (connected.payload.reconciled === false) {
+        this.revisionGapListeners.forEach((listener) => listener());
+      }
+      // A backend restart begins a new in-memory revision epoch. The connected
+      // frame is authoritative after reconciliation, even when it is lower.
+      this.lastRevision = serverRevision;
+      return;
+    }
+
+    if (typeof event.revision === 'number') {
+      if (event.revision <= this.lastRevision) return;
+      if (this.lastRevision > 0 && event.revision > this.lastRevision + 1) {
+        this.revisionGapListeners.forEach((listener) => listener());
+      }
+      this.lastRevision = event.revision;
+    }
+
     if (event.type.startsWith('job.')) {
       const job = event.payload as Job | null;
       if (!job) return;
@@ -221,6 +250,10 @@ class StudioEventStreamLease implements StudioEventStream {
 
   onConnectionChange(callback: Listener<boolean>) {
     return this.closed ? () => {} : this.stream.onConnectionChange(callback);
+  }
+
+  onRevisionGap(callback: Listener<void>) {
+    return this.closed ? () => {} : (this.stream.onRevisionGap?.(callback) ?? (() => {}));
   }
 
   close() {

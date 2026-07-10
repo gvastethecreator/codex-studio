@@ -1143,7 +1143,7 @@ export const CHARACTER_LAB_OPTION_ICON_FRAMES = {
     h: 128,
   },
 } as const;
-export const CHARACTER_LAB_OPTION_ICON_METADATA = {
+const CHARACTER_LAB_OPTION_ICON_METADATA = {
   'option:expression:neutral': {
     field: 'expression',
     label: 'Neutral',

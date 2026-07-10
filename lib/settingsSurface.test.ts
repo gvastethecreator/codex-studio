@@ -1,3 +1,6 @@
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
 import { describe, expect, it } from 'vite-plus/test';
 
 import { buildSettingsSurfaceModule, shouldHydrateSettingsSurface } from './settingsSurface';
@@ -54,6 +57,16 @@ describe('settingsSurface', () => {
   it('owns open-time hydration intent', () => {
     expect(shouldHydrateSettingsSurface(false)).toBe(false);
     expect(shouldHydrateSettingsSurface(true)).toBe(true);
+  });
+
+  it('hydrates from the stable refresh command instead of the changing domain object', () => {
+    const source = readFileSync(
+      fileURLToPath(new URL('../hooks/useSettingsSurface.ts', import.meta.url)),
+      'utf8',
+    );
+
+    expect(source).toContain('[isOpen, settingsDomain.refresh]');
+    expect(source).not.toContain('[isOpen, settingsDomain]');
   });
 
   it('materializes the settings overlay module with library fallback', () => {

@@ -1,15 +1,5 @@
 import React from 'react';
 import { ErrorBoundary } from './ErrorBoundary';
-
-import type { CameraAnglesRecipe as CameraAnglesRecipeComponent } from './recipes/CameraAnglesRecipe';
-import type { CharacterLabRecipe as CharacterLabRecipeComponent } from './recipes/CharacterLabRecipe';
-import type { CharacterSheetRecipe as CharacterSheetRecipeComponent } from './recipes/CharacterSheetRecipe';
-import type { CinematicRecipe as CinematicRecipeComponent } from './recipes/CinematicRecipe';
-import type { RemasterRecipe as RemasterRecipeComponent } from './recipes/RemasterRecipe';
-import type { SpriteAtlasRecipe as SpriteAtlasRecipeComponent } from './recipes/SpriteAtlasRecipe';
-import type { SpritesheetRecipe as SpritesheetRecipeComponent } from './recipes/SpritesheetRecipe';
-import type { StylesRecipe as StylesRecipeComponent } from './recipes/StylesRecipe';
-import type { TimelineRecipe as TimelineRecipeComponent } from './recipes/TimelineRecipe';
 import type {
   ImageGenerationConfig,
   GeneratedImageWithConfig,
@@ -18,104 +8,18 @@ import type {
 } from '../types';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import { LazySurfaceFallback } from './ui/LazySurfaceFallback';
-
-type CameraAnglesRecipeProps = React.ComponentProps<typeof CameraAnglesRecipeComponent>;
-type CharacterLabRecipeProps = React.ComponentProps<typeof CharacterLabRecipeComponent>;
-type CharacterSheetRecipeProps = React.ComponentProps<typeof CharacterSheetRecipeComponent>;
-type CinematicRecipeProps = React.ComponentProps<typeof CinematicRecipeComponent>;
-type RemasterRecipeProps = React.ComponentProps<typeof RemasterRecipeComponent>;
-type SpriteAtlasRecipeProps = React.ComponentProps<typeof SpriteAtlasRecipeComponent>;
-type SpritesheetRecipeProps = React.ComponentProps<typeof SpritesheetRecipeComponent>;
-type StylesRecipeProps = React.ComponentProps<typeof StylesRecipeComponent>;
-type TimelineRecipeProps = React.ComponentProps<typeof TimelineRecipeComponent>;
-
-function createPreloadableRecipe<TProps>(
-  loader: () => Promise<{ default: React.ComponentType<TProps> }>,
-) {
-  let loadedComponent: React.ComponentType<TProps> | null = null;
-  let loadingPromise: Promise<{ default: React.ComponentType<TProps> }> | null = null;
-
-  const load = () => {
-    if (loadedComponent) return Promise.resolve({ default: loadedComponent });
-
-    loadingPromise ??= loader().then((module) => {
-      loadedComponent = module.default;
-      return module;
-    });
-
-    return loadingPromise;
-  };
-
-  return {
-    Component: React.lazy(load),
-    getLoaded: () => loadedComponent,
-    load,
-  };
-}
-
-const remasterRecipe = createPreloadableRecipe<RemasterRecipeProps>(() =>
-  import('./recipes/RemasterRecipe').then((module) => ({ default: module.RemasterRecipe })),
-);
-const spritesheetRecipe = createPreloadableRecipe<SpritesheetRecipeProps>(() =>
-  import('./recipes/SpritesheetRecipe').then((module) => ({ default: module.SpritesheetRecipe })),
-);
-const spriteAtlasRecipe = createPreloadableRecipe<SpriteAtlasRecipeProps>(() =>
-  import('./recipes/SpriteAtlasRecipe').then((module) => ({
-    default: module.SpriteAtlasRecipe,
-  })),
-);
-const cinematicRecipe = createPreloadableRecipe<CinematicRecipeProps>(() =>
-  import('./recipes/CinematicRecipe').then((module) => ({ default: module.CinematicRecipe })),
-);
-const characterSheetRecipe = createPreloadableRecipe<CharacterSheetRecipeProps>(() =>
-  import('./recipes/CharacterSheetRecipe').then((module) => ({
-    default: module.CharacterSheetRecipe,
-  })),
-);
-const characterLabRecipe = createPreloadableRecipe<CharacterLabRecipeProps>(() =>
-  import('./recipes/CharacterLabRecipe').then((module) => ({
-    default: module.CharacterLabRecipe,
-  })),
-);
-const stylesRecipe = createPreloadableRecipe<StylesRecipeProps>(() =>
-  import('./recipes/StylesRecipe').then((module) => ({ default: module.StylesRecipe })),
-);
-const cameraAnglesRecipe = createPreloadableRecipe<CameraAnglesRecipeProps>(() =>
-  import('./recipes/CameraAnglesRecipe').then((module) => ({
-    default: module.CameraAnglesRecipe,
-  })),
-);
-const timelineRecipe = createPreloadableRecipe<TimelineRecipeProps>(() =>
-  import('./recipes/TimelineRecipe').then((module) => ({ default: module.TimelineRecipe })),
-);
-
-const RemasterRecipe = remasterRecipe.Component;
-const SpritesheetRecipe = spritesheetRecipe.Component;
-const SpriteAtlasRecipe = spriteAtlasRecipe.Component;
-const CinematicRecipe = cinematicRecipe.Component;
-const CharacterSheetRecipe = characterSheetRecipe.Component;
-const CharacterLabRecipe = characterLabRecipe.Component;
-const StylesRecipe = stylesRecipe.Component;
-const CameraAnglesRecipe = cameraAnglesRecipe.Component;
-const TimelineRecipe = timelineRecipe.Component;
-
-const RECIPE_PRELOADERS = {
-  styles: stylesRecipe.load,
-  remaster: remasterRecipe.load,
-  camera: cameraAnglesRecipe.load,
-  timeline: timelineRecipe.load,
-  spritesheet: spritesheetRecipe.load,
-  'sprite-atlas': spriteAtlasRecipe.load,
-  cinematic: cinematicRecipe.load,
-  character: characterSheetRecipe.load,
-  'character-lab': characterLabRecipe.load,
-} satisfies Record<Exclude<RecipeId, null>, () => Promise<unknown>>;
-
-export function preloadRecipeComponent(recipeId: RecipeId | null) {
-  if (!recipeId) return Promise.resolve();
-
-  return RECIPE_PRELOADERS[recipeId]();
-}
+import {
+  AnimationSequenceRecipe,
+  CameraAnglesRecipe,
+  CharacterLabRecipe,
+  CharacterSheetRecipe,
+  CinematicRecipe,
+  RemasterRecipe,
+  SpriteAtlasRecipe,
+  SpritesheetRecipe,
+  StylesRecipe,
+  TimelineRecipe,
+} from '../lib/recipeRouteModules';
 
 interface RecipeRouterProps {
   activeRecipe: RecipeId | null;
@@ -153,15 +57,16 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
 }) => {
   if (!activeRecipe) return null;
 
-  const LoadedStylesRecipe = stylesRecipe.getLoaded() ?? StylesRecipe;
-  const LoadedRemasterRecipe = remasterRecipe.getLoaded() ?? RemasterRecipe;
-  const LoadedCameraAnglesRecipe = cameraAnglesRecipe.getLoaded() ?? CameraAnglesRecipe;
-  const LoadedTimelineRecipe = timelineRecipe.getLoaded() ?? TimelineRecipe;
-  const LoadedSpritesheetRecipe = spritesheetRecipe.getLoaded() ?? SpritesheetRecipe;
-  const LoadedSpriteAtlasRecipe = spriteAtlasRecipe.getLoaded() ?? SpriteAtlasRecipe;
-  const LoadedCinematicRecipe = cinematicRecipe.getLoaded() ?? CinematicRecipe;
-  const LoadedCharacterSheetRecipe = characterSheetRecipe.getLoaded() ?? CharacterSheetRecipe;
-  const LoadedCharacterLabRecipe = characterLabRecipe.getLoaded() ?? CharacterLabRecipe;
+  const LoadedStylesRecipe = StylesRecipe;
+  const LoadedRemasterRecipe = RemasterRecipe;
+  const LoadedCameraAnglesRecipe = CameraAnglesRecipe;
+  const LoadedTimelineRecipe = TimelineRecipe;
+  const LoadedSpritesheetRecipe = SpritesheetRecipe;
+  const LoadedSpriteAtlasRecipe = SpriteAtlasRecipe;
+  const LoadedCinematicRecipe = CinematicRecipe;
+  const LoadedCharacterSheetRecipe = CharacterSheetRecipe;
+  const LoadedCharacterLabRecipe = CharacterLabRecipe;
+  const LoadedAnimationSequenceRecipe = AnimationSequenceRecipe;
 
   return (
     <ErrorBoundary fallbackMessage="A critical error occurred while rendering this recipe.">
@@ -173,6 +78,16 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
           />
         }
       >
+        {activeRecipe === 'animation-sequence' && (
+          <LoadedAnimationSequenceRecipe
+            config={generationConfig}
+            updateConfig={updateGenerationConfig}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+            images={imagesWithConfig}
+            onSelectImage={openModal}
+          />
+        )}
         {activeRecipe === 'styles' && (
           <LoadedStylesRecipe
             config={generationConfig}

@@ -2,12 +2,14 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
+import type { Job as StudioJob } from '../packages/shared/src';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 
 type GenerateOptions = {
   force?: boolean;
   preventModal?: boolean;
   useCurrentAttachments?: boolean;
+  onJobCreated?: (job: StudioJob) => void;
 };
 
 function cloneGenerationAttachments(attachments: Attachment[]): Attachment[] {
@@ -52,7 +54,8 @@ interface UseStudioGenerationActionsProps {
     config: ImageGenerationConfig,
     workspaceId: string,
     force?: boolean,
-  ) => void;
+    onJobCreated?: (job: StudioJob) => void,
+  ) => string;
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   closeModal: () => void;
   closeOverlay: () => void;
@@ -117,7 +120,13 @@ export function useStudioGenerationActions({
         return;
       }
 
-      enqueue(request.queuePrompt, request.finalConfig, activeWorkspaceId, options?.force);
+      enqueue(
+        request.queuePrompt,
+        request.finalConfig,
+        activeWorkspaceId,
+        options?.force,
+        options?.onJobCreated,
+      );
 
       if (request.shouldClearComposerAttachments) {
         setGenerationConfig((previous) => ({

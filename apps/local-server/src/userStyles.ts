@@ -6,7 +6,7 @@ import {
   type CreateUserStylePresetInput,
   type UpdateUserStylePresetInput,
   type UserStylePreset,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/userStyles';
 
 export interface UserStyleStore {
   listUserStyles(options?: { includeArchived?: boolean }): UserStylePreset[];

@@ -1,4 +1,12 @@
-import React, { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useEffectEvent,
+  useId,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 import {
   IconCheck as Check,
   IconChevronDown as ChevronDown,
@@ -444,26 +452,23 @@ function SelectField({
   const fallbackIconId = FIELD_ICON_IDS[kind];
 
   const openDropdown = useCallback(() => {
+    setActiveIndex(selectedIndex);
     setIsOpen(true);
-  }, []);
+  }, [selectedIndex]);
 
   const closeDropdown = useCallback(() => {
-    if (!isOpen) return;
     setIsOpen(false);
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (isOpen) setActiveIndex(selectedIndex);
-  }, [isOpen, selectedIndex]);
+  }, []);
+  const closeDropdownFromDocument = useEffectEvent(closeDropdown);
 
   useEffect(() => {
     if (!isOpen) return;
 
     const onPointerDown = (event: PointerEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) closeDropdown();
+      if (!rootRef.current?.contains(event.target as Node)) closeDropdownFromDocument();
     };
     const onEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') closeDropdown();
+      if (event.key === 'Escape') closeDropdownFromDocument();
     };
 
     document.addEventListener('pointerdown', onPointerDown);
@@ -472,7 +477,7 @@ function SelectField({
       document.removeEventListener('pointerdown', onPointerDown);
       document.removeEventListener('keydown', onEscape);
     };
-  }, [closeDropdown, isOpen]);
+  }, [isOpen]);
 
   const chooseOption = (option: string) => {
     onChange(option);
@@ -826,7 +831,7 @@ function ActionButton({
   );
 }
 
-export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
+const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
   recipeAliasId = null,
   config,
   updateConfig,
@@ -854,16 +859,6 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
   const [labAspectRatio, setLabAspectRatio] = useState<string>('1:1');
   const sourceInputRef = useRef<HTMLInputElement>(null);
   const referenceInputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    if (!recipeAliasId) return;
-
-    const aliasMode = resolveCharacterLabModeFromAlias(recipeAliasId);
-    setSelectedMode(aliasMode);
-    setSelectedActionId(getFirstReadyActionForMode(aliasMode).id);
-    setSearch('');
-    setCapabilityNotice('');
-  }, [recipeAliasId]);
 
   const source = config.attachments[0] ?? null;
   const references = config.attachments.slice(1, 4);
@@ -916,34 +911,29 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
     ],
   );
 
-  const buildRecipeParamsForAction = (
-    action: CharacterLabAction,
-    paramsOverride: Record<string, unknown> = {},
-  ) => ({
-    mode: action.mode,
-    actionId: action.id,
-    actionLabel: action.label,
-    category: action.category,
-    actionPrompt: action.prompt,
-    task: action.task,
-    mediaType: action.mediaType,
-    frames: action.frames ?? 0,
-    isCouplesPose: action.isCouplesPose,
-    capability: action.capability,
-    subject,
-    style,
-    clothing,
-    bodyType,
-    expression,
-    backgroundColor,
-    labAspectRatio,
-    hasSource: Boolean(source),
-    referencesCount: references.length,
-    ...paramsOverride,
-  });
-
-  const recipeParams = useMemo(
-    () => buildRecipeParamsForAction(selectedAction),
+  const buildRecipeParamsForAction = useCallback(
+    (action: CharacterLabAction, paramsOverride: Record<string, unknown> = {}) => ({
+      mode: action.mode,
+      actionId: action.id,
+      actionLabel: action.label,
+      category: action.category,
+      actionPrompt: action.prompt,
+      task: action.task,
+      mediaType: action.mediaType,
+      frames: action.frames ?? 0,
+      isCouplesPose: action.isCouplesPose,
+      capability: action.capability,
+      subject,
+      style,
+      clothing,
+      bodyType,
+      expression,
+      backgroundColor,
+      labAspectRatio,
+      hasSource: Boolean(source),
+      referencesCount: references.length,
+      ...paramsOverride,
+    }),
     [
       backgroundColor,
       bodyType,
@@ -951,11 +941,15 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
       expression,
       labAspectRatio,
       references.length,
-      selectedAction,
       source,
       style,
       subject,
     ],
+  );
+
+  const recipeParams = useMemo(
+    () => buildRecipeParamsForAction(selectedAction),
+    [buildRecipeParamsForAction, selectedAction],
   );
 
   useRecipeContextRegistration(updateConfig, 'character-lab', recipeParams);
@@ -1604,3 +1598,7 @@ export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = ({
     </RecipeLayout>
   );
 };
+
+export const CharacterLabRecipe: React.FC<CharacterLabRecipeProps> = (props) => (
+  <CharacterLabRecipeSession key={props.recipeAliasId ?? 'character-lab'} {...props} />
+);

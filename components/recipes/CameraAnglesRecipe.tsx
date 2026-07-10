@@ -102,6 +102,7 @@ function CameraAnglesInfoPanel({
             {cameraImages.map((img) => (
               <button
                 type="button"
+                aria-label={`Select camera image ${img.id}`}
                 key={img.id}
                 onClick={() => onSelectImage(img)}
                 className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all group shadow-sm hover:shadow-lg"
@@ -323,6 +324,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
+                    aria-label="Remove camera reference"
                     onClick={handleEstimateCamera}
                     disabled={isEstimating}
                     className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/10 transition-all ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/30'}`}
@@ -337,6 +339,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                   </button>
                   <button
                     type="button"
+                    aria-label="Remove camera reference"
                     onClick={() => updateConfig('attachments', [])}
                     className="text-zinc-500 hover:text-red-500 transition-colors"
                   >

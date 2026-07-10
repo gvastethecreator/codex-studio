@@ -22,6 +22,7 @@ import type { Workspace, RecipeId } from '../types';
 import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
+import { getRecipeModule } from '../lib/recipeModules';
 
 export interface HeaderToolbarProps {
   isGenerating: boolean;
@@ -52,18 +53,6 @@ export interface HeaderToolbarProps {
 }
 
 const EMPTY_QUEUE_PREVIEWS: StudioCommandCenterProjection['queue']['resultPreviews'] = [];
-
-const RECIPE_DATA: Record<Exclude<RecipeId, null>, { name: string }> = {
-  remaster: { name: 'Remaster' },
-  spritesheet: { name: 'Sprite Sheet' },
-  'sprite-atlas': { name: 'Sprite Atlas' },
-  cinematic: { name: 'Cinematic' },
-  'character-lab': { name: 'Character Lab' },
-  character: { name: 'Character' },
-  styles: { name: 'Styles' },
-  camera: { name: 'Camera' },
-  timeline: { name: 'Timeline' },
-};
 
 const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   isGenerating,
@@ -101,7 +90,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const mobileCommandButtonRef = React.useRef<HTMLButtonElement>(null);
   const activeRecipeAlias = resolveRecipeAlias(activeRecipeAliasId);
   const activeRecipeData = activeRecipe
-    ? { name: activeRecipeAlias?.title ?? RECIPE_DATA[activeRecipe]?.name ?? activeRecipe }
+    ? { name: activeRecipeAlias?.title ?? getRecipeModule(activeRecipe)?.title ?? activeRecipe }
     : null;
   const isRecipeView = routeView === 'recipe' && Boolean(activeRecipeData);
   const activeWorkspace = workspaces.find((w) => w.id === activeWorkspaceId);

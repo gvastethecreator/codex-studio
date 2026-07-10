@@ -89,7 +89,8 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
 
   const handleGridDownloadSelected = useCallback(
     (visibleImages: GeneratedImageWithConfig[]) => {
-      const selectedImages = visibleImages.filter((image) => selectedImageIds.includes(image.id));
+      const selectedSet = new Set(selectedImageIds);
+      const selectedImages = visibleImages.filter((image) => selectedSet.has(image.id));
       if (selectedImages.length > 0) {
         void downloadMultipleImagesAsZip(selectedImages, `assets-${Date.now()}.zip`);
       }
@@ -105,10 +106,9 @@ export const StudioGridSurface: React.FC<StudioGridSurfaceProps> = ({
 
   const handleGridDeleteSelected = useCallback(
     (visibleImages: GeneratedImageWithConfig[]) => {
+      const selectedSet = new Set(selectedImageIds);
       handleDeleteSelected(
-        visibleImages
-          .filter((image) => selectedImageIds.includes(image.id))
-          .map((image) => image.id),
+        visibleImages.filter((image) => selectedSet.has(image.id)).map((image) => image.id),
       );
     },
     [handleDeleteSelected, selectedImageIds],

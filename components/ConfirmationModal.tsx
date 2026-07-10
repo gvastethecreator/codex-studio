@@ -95,6 +95,7 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
             </div>
             <button
               type="button"
+              aria-label="Close confirmation"
               onClick={onClose}
               className="rounded-xl p-2 text-zinc-500 transition-colors hover:bg-white/5 hover:text-white cursor-pointer"
             >

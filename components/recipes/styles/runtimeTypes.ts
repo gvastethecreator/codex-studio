@@ -52,9 +52,10 @@ export function getStyleRuntimePresetSearchNames(
     getStyleRuntimePresetDisplayName(preset),
     preset.name,
     ...(preset.styleAnchors ?? []),
-  ]
-    .map((value) => value.trim())
-    .filter(Boolean);
+  ].flatMap((value) => {
+    const trimmed = value.trim();
+    return trimmed ? [trimmed] : [];
+  });
 
   return Array.from(new Set(names));
 }

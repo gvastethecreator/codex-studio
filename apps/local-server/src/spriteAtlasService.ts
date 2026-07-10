@@ -16,7 +16,7 @@ import {
   type SpriteAtlasRowState,
   type SpriteAtlasRun,
   type SpriteAtlasRunPaths,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/spriteAtlasContracts';
 
 export interface SpriteAtlasService {
   listPresets(): ReturnType<typeof createSpriteAtlasPresetSummaries>;
@@ -247,18 +247,17 @@ export function createSpriteAtlasService({
     const timestamp = now();
     const jobs: SpriteAtlasRowHandoffJob[] = [];
 
-    for (const row of run.rows) {
-      if (requestedRows && !requestedRows.has(row.id)) continue;
-      if (!options.force) {
-        const alreadyHandled =
-          row.status === 'handoff_ready' ||
-          row.status === 'generating' ||
-          row.status === 'raw_imported' ||
-          row.status === 'extracted';
-        if (alreadyHandled || Boolean(row.jobId) || Boolean(row.rawPath)) continue;
-      }
-      jobs.push(await writeRowJob(run, row, timestamp));
-    }
+    const rowsToWrite = run.rows.filter((row) => {
+      if (requestedRows && !requestedRows.has(row.id)) return false;
+      if (options.force) return true;
+      const alreadyHandled =
+        row.status === 'handoff_ready' ||
+        row.status === 'generating' ||
+        row.status === 'raw_imported' ||
+        row.status === 'extracted';
+      return !alreadyHandled && !row.jobId && !row.rawPath;
+    });
+    jobs.push(...(await Promise.all(rowsToWrite.map((row) => writeRowJob(run, row, timestamp)))));
 
     return {
       jobs,

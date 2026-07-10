@@ -32,6 +32,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
     <AnimatePresence>
       <div className="fixed inset-0 z-[100] flex items-center justify-center p-0 sm:p-4 md:p-8">
         <MotionDiv
+          aria-label="Close trash"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -84,6 +85,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
               )}
               <button
                 type="button"
+                aria-label="Close trash"
                 onClick={onClose}
                 className="p-2 rounded-xl hover:bg-white/5 text-zinc-500 hover:text-white transition-colors cursor-pointer"
               >
@@ -149,6 +151,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
 
                     <button
                       type="button"
+                      aria-label={`Restore batch ${group.id}`}
                       onClick={() => onRestore(group.id)}
                       className="flex h-11 w-full items-center justify-center rounded-xl bg-accent-500/10 p-3 text-accent-400 transition-all hover:bg-accent-500 hover:text-white active:scale-90 sm:w-auto cursor-pointer"
                       title="Restore Batch"

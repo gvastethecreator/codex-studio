@@ -2,6 +2,7 @@ import type { StylePackManifest, StylePresetManifest } from './styles/manifestTy
 import { compareStylePackIdsForDisplay } from './styles/packOrdering';
 import { createStylePresetCatalog, type StylePresetCatalog } from './stylePresetManifests';
 import type { StylePresetCatalogPackData } from './stylePresetCatalogYaml';
+import { loadStyleThumbnailPack } from '../../lib/styleThumbnailCatalog';
 
 export interface LoadedStylePresetCatalog extends StylePresetCatalog {
   packManifests: StylePackManifest[];
@@ -120,7 +121,7 @@ export function loadStylePresetCatalogPackData(
   const cached = packDataCache.get(packId);
   if (cached) return cached;
 
-  const promise = catalogPackDataLoaders[packId]();
+  const promise = loadStyleThumbnailPack(packId).then(() => catalogPackDataLoaders[packId]());
   packDataCache.set(packId, promise);
   return promise;
 }

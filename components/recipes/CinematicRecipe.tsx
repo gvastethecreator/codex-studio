@@ -364,6 +364,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
         {!activeImage && (
           <button
             type="button"
+            aria-label="Add cinematic reference"
             className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer z-10 hover:bg-white/5 transition-colors bg-white/[0.01] appearance-none border-none p-0 m-0"
             onClick={() => fileInputRef.current?.click()}
             onDragOver={(e) => {
@@ -399,6 +400,7 @@ export const CinematicRecipe: React.FC<CinematicRecipeProps> = ({
         {activeImage && (
           <button
             type="button"
+            aria-label="Remove cinematic reference"
             onClick={() => updateConfig('attachments', [])}
             className="pointer-events-auto absolute right-4 top-4 z-20 rounded-lg border border-white/10 bg-black/60 p-2 text-white transition-[background-color,color] hover:bg-red-500 hover:text-white"
           >

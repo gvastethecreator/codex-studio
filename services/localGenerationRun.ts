@@ -25,7 +25,6 @@ import {
   isGenerationCancellationError,
   throwIfGenerationAborted,
   toGenerationDataUrl,
-  waitForGenerationDelay,
 } from './localGenerationRuntimeAdapters';
 
 interface RunLocalGenerationOptions {
@@ -372,12 +371,9 @@ export async function runLocalGeneration({
     const resolvedConfig = resolveGenerationConfig(config);
     const batchId = createLocalRunBatchId();
     const batchCount = inputImage ? 1 : resolvedConfig.batchCount || 1;
-    const batchImages: GeneratedImage[] = [];
-    let lastError: Error | null = null;
-
-    for (let index = 0; index < batchCount; index += 1) {
-      try {
-        const images = await runSingleCodexImagegenJob({
+    const settledRuns = await Promise.allSettled(
+      Array.from({ length: batchCount }, (_, index) =>
+        runSingleCodexImagegenJob({
           config: resolvedConfig,
           batchId,
           batchIndex: index + 1,
@@ -389,21 +385,25 @@ export async function runLocalGeneration({
           onProgress,
           stream,
           inputImage,
-        });
-        batchImages.push(...images);
-      } catch (error) {
-        lastError = error instanceof Error ? error : new Error(String(error));
-        onProgress?.(`Generation Error during batch: ${lastError.message}`);
-        break;
-      }
-
-      if (index < batchCount - 1) {
-        await waitForGenerationDelay(2000, signal);
-      }
+        }),
+      ),
+    );
+    const batchImages = settledRuns.flatMap((result) =>
+      result.status === 'fulfilled' ? result.value : [],
+    );
+    const firstFailure = settledRuns.find(
+      (result): result is PromiseRejectedResult => result.status === 'rejected',
+    );
+    if (firstFailure) {
+      const failure =
+        firstFailure.reason instanceof Error
+          ? firstFailure.reason
+          : new Error(String(firstFailure.reason));
+      onProgress?.(`Generation Error during batch: ${failure.message}`);
+      if (batchImages.length === 0) throw failure;
     }
 
     if (batchImages.length === 0) {
-      if (lastError) throw lastError;
       throw new Error('No assets were synthesized. Please check your prompt or context.');
     }
 

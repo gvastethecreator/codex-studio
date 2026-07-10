@@ -327,6 +327,7 @@ export interface CatalogImage {
   tags: string[];
   generationConfig: Record<string, unknown> | null;
   createdAt: string;
+  detailLevel?: 'summary' | 'detail';
 }
 
 export interface CatalogImageSummary extends Omit<CatalogImage, 'generationConfig'> {
@@ -382,8 +383,9 @@ export interface SystemLog {
 export type StudioEvent =
   | {
       type: 'server.connected';
-      payload: { ok: true };
+      payload: { ok: true; revision?: number; reconciled?: boolean };
       createdAt: string;
+      revision?: number;
     }
   | {
       type:
@@ -395,21 +397,25 @@ export type StudioEvent =
         | 'job.cancelled';
       payload: Job | null;
       createdAt: string;
+      revision?: number;
     }
   | {
       type: 'asset.created';
       payload: Asset;
       createdAt: string;
+      revision?: number;
     }
   | {
       type: 'catalog.created' | 'catalog.updated' | 'catalog.deleted';
       payload: CatalogImage;
       createdAt: string;
+      revision?: number;
     }
   | {
       type: 'log.created' | 'log.appended';
       payload: SystemLog;
       createdAt: string;
+      revision?: number;
     }
   | {
       type:
@@ -420,12 +426,14 @@ export type StudioEvent =
         | 'project.created';
       payload: unknown;
       createdAt: string;
+      revision?: number;
     };
 
 export interface UnknownStudioEvent {
   type: string;
   payload: unknown;
   createdAt: string;
+  revision?: number;
 }
 
 export interface HealthResponse {

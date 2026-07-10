@@ -21,7 +21,7 @@ import {
   type SpriteAtlasRowState,
   type SpriteAtlasRowStatus,
   type SpriteAtlasRun,
-} from '../../packages/shared/src';
+} from '../../packages/shared/src/spriteAtlasContracts';
 import type { ImageGenerationConfig } from '../../types';
 import {
   composeSpriteAtlasFixture,
@@ -137,15 +137,17 @@ function getRowCounts(rows: SpriteAtlasRowState[]) {
   );
 }
 
+const UPDATED_AT_FORMATTER = new Intl.DateTimeFormat(undefined, {
+  month: 'short',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+});
+
 function formatUpdatedAt(value: string) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat(undefined, {
-    month: 'short',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-  }).format(date);
+  return UPDATED_AT_FORMATTER.format(date);
 }
 
 function buildPipeline(run: SpriteAtlasRun | null) {
@@ -234,6 +236,8 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   const contract = React.useMemo(() => createSpriteAtlasContract(params), [params]);
   const selectedRow =
     activeRun?.rows.find((row) => row.id === selectedRowId) ?? activeRun?.rows[0] ?? null;
+  const selectedRunId = activeRun?.id ?? null;
+  const selectedRowKey = selectedRow?.id ?? null;
   const rowCounts = React.useMemo(() => getRowCounts(activeRun?.rows ?? []), [activeRun]);
   const pipeline = React.useMemo(() => buildPipeline(activeRun), [activeRun]);
   const currentPreset = presets.find((preset) => preset.id === contract.presetId);
@@ -302,24 +306,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   }, []);
 
   React.useEffect(() => {
-    if (!activeRun?.rows.length) {
-      setSelectedRowId(null);
-      return;
-    }
-    if (!selectedRowId || !activeRun.rows.some((row) => row.id === selectedRowId)) {
-      setSelectedRowId(activeRun.rows[0]?.id ?? null);
-    }
-  }, [activeRun, selectedRowId]);
-
-  React.useEffect(() => {
-    if (!activeRun || !selectedRow) {
+    if (!selectedRunId || !selectedRowKey) {
       setSelectedPrompt('');
       return;
     }
 
     let cancelled = false;
     setIsPromptLoading(true);
-    void getSpriteAtlasRowPrompt(activeRun.id, selectedRow.id)
+    void getSpriteAtlasRowPrompt(selectedRunId, selectedRowKey)
       .then((payload) => {
         if (!cancelled) setSelectedPrompt(payload.prompt);
       })
@@ -335,7 +329,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     return () => {
       cancelled = true;
     };
-  }, [activeRun?.id, selectedRow?.id]);
+  }, [selectedRowKey, selectedRunId]);
 
   const setRecipeParam = React.useCallback(
     (key: string, value: unknown) => {

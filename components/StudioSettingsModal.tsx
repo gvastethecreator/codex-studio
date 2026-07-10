@@ -520,6 +520,7 @@ function SettingsOutputSourcesPanel({
         {outputSources?.registry.sources.map((source) => {
           const files = outputSourceFiles[source.id] ?? [];
           const selected = selectedOutputFiles[source.id] ?? [];
+          const selectedSet = new Set(selected);
           const isScanning = Boolean(loadingOutputSourceFiles[source.id]);
           const isImporting = Boolean(importingOutputSources[source.id]);
 
@@ -577,7 +578,7 @@ function SettingsOutputSourcesPanel({
                       <span className="flex min-w-0 items-center gap-2">
                         <input
                           type="checkbox"
-                          checked={selected.includes(file.relativePath)}
+                          checked={selectedSet.has(file.relativePath)}
                           onChange={() => toggleOutputFile(source.id, file.relativePath)}
                           aria-label={`Select ${file.relativePath}`}
                           className="size-3.5 accent-emerald-400"
@@ -611,6 +612,7 @@ function SettingsOutputSourcesPanel({
             </div>
             <button
               type="button"
+              aria-label={`Register output source ${candidate.label}`}
               onClick={() => handleRegisterOutputSource(candidate)}
               disabled={
                 isRegisteringOutputSource ||
@@ -765,6 +767,7 @@ function SettingsMaintenancePanel({ maintenance }: SettingsMaintenancePanelProps
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
+              aria-label="Plan storage compaction"
               onClick={() => void compactStorage()}
               disabled={isCompactRunning}
               className="flex h-8 items-center gap-2 rounded-lg border border-white/10 px-3 text-[9px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/8 disabled:opacity-40"
@@ -996,6 +999,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
           <div className="flex items-center gap-2">
             <button
               type="button"
+              aria-label="Refresh settings"
               onClick={() => void onRefresh()}
               disabled={isLoading}
               className="flex size-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 transition-colors hover:bg-white/10 disabled:opacity-60"
@@ -1008,6 +1012,7 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
             </button>
             <button
               type="button"
+              aria-label="Close settings"
               onClick={onClose}
               className="flex size-9 items-center justify-center rounded-lg text-zinc-500 transition-colors hover:bg-white/5 hover:text-white"
             >

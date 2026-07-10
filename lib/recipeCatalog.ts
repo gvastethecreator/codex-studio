@@ -78,6 +78,14 @@ export interface RecipeCatalogValidation {
 }
 
 const RECIPE_CARD_METADATA: Record<RegisteredRecipeId, RecipeCatalogCardMetadata> = {
+  'animation-sequence': {
+    id: 'animation-sequence',
+    subtitle: 'Frame Animation',
+    tag: 'GIF',
+    buttonText: 'Open Timeline',
+    accentColor: 'amber',
+    cardImageKey: 'timeline',
+  },
   styles: {
     id: 'styles',
     subtitle: 'Style Transfer',

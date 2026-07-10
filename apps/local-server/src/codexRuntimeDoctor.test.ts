@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vite-plus/test';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { inspectCodexRuntime } from './codexRuntimeDoctor';
+import { inspectCodexRuntime, inspectCodexRuntimeAsync } from './codexRuntimeDoctor';
 
 function createDeps({
   versionStatus = 0,
@@ -36,6 +36,27 @@ function createDeps({
 }
 
 describe('codexRuntimeDoctor', () => {
+  it('probes asynchronously without requiring the synchronous adapter', async () => {
+    const executable = 'C:/Codex/codex.exe';
+    const run = vi.fn(async (_command: string, args: string[]) =>
+      args.includes('--version')
+        ? { status: 0, stdout: 'codex-cli 1.2.3', stderr: '' }
+        : { status: 0, stdout: 'codex app-server --listen <ws-url>', stderr: '' },
+    );
+
+    const report = await inspectCodexRuntimeAsync({
+      now: () => new Date('2026-07-10T00:00:00.000Z'),
+      exists: (candidate) => candidate === executable,
+      run,
+      resolveExecutable: () => executable,
+      resolveInvocation: (args) => [executable, ...args],
+      listCandidates: () => [{ path: executable, source: 'test' }],
+    });
+
+    expect(report).toMatchObject({ canRunJobs: true, selectedVersionNumber: '1.2.3' });
+    expect(run).toHaveBeenCalledTimes(2);
+  });
+
   it('marks a modern app-server-capable Codex CLI ready', () => {
     const deps = createDeps();
 

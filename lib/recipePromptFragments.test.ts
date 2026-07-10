@@ -4,6 +4,8 @@ import {
   createCinematicFrameDirectives,
   createCinematicFrameInstructions,
   createCinematicLayoutInstruction,
+  createAnimationSequenceOutputDirective,
+  createAnimationSequenceReferenceDirective,
   createSpritesheetCellDirectives,
   getCharacterLayoutInstruction,
   getCharacterStyleInstruction,
@@ -46,5 +48,15 @@ describe('recipePromptFragments', () => {
       'Cell 1: idle',
       'Cell 3: run',
     ]);
+  });
+
+  it('creates animation sequence frame fragments without video language', () => {
+    expect(createAnimationSequenceReferenceDirective([])).toContain('first-frame visual anchor');
+    expect(createAnimationSequenceReferenceDirective(['frame-0001', 'frame-0003'])).toContain(
+      'frame-0001, frame-0003',
+    );
+    expect(createAnimationSequenceOutputDirective('frame-0002', 2, 8)).toBe(
+      'Generate only frame-0002 (2/8) as one finished animation frame. Do not create a video, grid, captioned storyboard, or contact sheet.',
+    );
   });
 });

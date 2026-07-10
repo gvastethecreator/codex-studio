@@ -14,6 +14,9 @@ describe('migrateDatabase', () => {
       "CREATE INDEX IF NOT EXISTS idx_catalog_workspace_key_deleted_created_desc ON catalog_images(COALESCE(workspace_id, 'default'), is_deleted, created_at DESC)",
     );
     expect(source).toContain(
+      "CREATE INDEX IF NOT EXISTS idx_catalog_deleted_workspace_created_cover ON catalog_images(is_deleted, COALESCE(workspace_id, 'default'), created_at DESC, id DESC, library_id, file_size_bytes)",
+    );
+    expect(source).toContain(
       'CREATE INDEX IF NOT EXISTS idx_jobs_created_desc ON jobs(created_at DESC)',
     );
     expect(source).toContain(

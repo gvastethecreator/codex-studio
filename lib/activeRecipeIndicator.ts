@@ -11,6 +11,13 @@ export interface ActiveRecipeIndicator {
 }
 
 const ACTIVE_RECIPE_INDICATORS: Record<RegisteredRecipeId, ActiveRecipeIndicator> = {
+  'animation-sequence': {
+    id: 'animation-sequence',
+    title: 'Animation',
+    summary: 'Frame GIF',
+    toneClassName: 'border-orange-400/25 bg-orange-500/10 text-orange-100',
+    dotClassName: 'bg-orange-300',
+  },
   styles: {
     id: 'styles',
     title: 'Styles',

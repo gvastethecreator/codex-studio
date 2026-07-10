@@ -1,37 +1,13 @@
 import type { Job as StudioJob } from '../packages/shared/src';
 import type { GenerationExecutionOutcome, ImageGenerationConfig, QueueJob } from '../types';
 
-const MAX_CONCURRENT_JOBS = 3;
-const TOTAL_MAX_CONCURRENT = 15;
-const HARD_MAX_LIMIT = 25;
-
-export function selectJobsToStart(
-  pendingJobs: QueueJob[],
-  activeJobsCount: number,
-  isResting: boolean,
-): QueueJob[] {
+export function selectJobsToStart(pendingJobs: QueueJob[]): QueueJob[] {
   const forcedJobs = pendingJobs.filter((j) => j.isForced);
   const regularJobs = pendingJobs.filter((j) => !j.isForced);
-
-  const jobsToStart: QueueJob[] = [];
-
-  const forcedAvailableSlots = HARD_MAX_LIMIT - activeJobsCount;
-  if (forcedJobs.length > 0 && forcedAvailableSlots > 0) {
-    jobsToStart.push(...forcedJobs.slice(0, forcedAvailableSlots));
-  }
-
-  if (!isResting && regularJobs.length > 0) {
-    const availableSlots = MAX_CONCURRENT_JOBS - activeJobsCount - jobsToStart.length;
-    if (availableSlots > 0) {
-      const remainingTotalSlots = TOTAL_MAX_CONCURRENT - activeJobsCount - jobsToStart.length;
-      const slotsToFill = Math.min(availableSlots, remainingTotalSlots);
-      if (slotsToFill > 0) {
-        jobsToStart.push(...regularJobs.slice(0, slotsToFill));
-      }
-    }
-  }
-
-  return jobsToStart;
+  // Persistent Job Intake and the backend worker own admission/concurrency.
+  // Dispatch every browser presentation item immediately so none remain only
+  // in React state and disappear on refresh.
+  return [...forcedJobs, ...regularJobs];
 }
 
 function isAbortLikeError(error: unknown): boolean {

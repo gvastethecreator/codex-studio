@@ -1,16 +1,21 @@
 import React, { Suspense } from 'react';
 
 import { useStudioShell } from '../hooks/useStudioShell';
+import { hasMountedStudioOverlay } from '../lib/studioOverlayVisibility';
 
 import { HeaderToolbar } from './HeaderToolbar';
 import { StudioOperationsRail } from './studio/StudioOperationsRail';
-import { StudioGenerationDock } from './shell/StudioGenerationDock';
 import { StudioViewport } from './shell/StudioViewport';
 import { ErrorBoundary } from './ErrorBoundary';
 import ToastContainer from './ToastContainer';
 
 const AppOverlays = React.lazy(() =>
   import('./AppOverlays').then((m) => ({ default: m.AppOverlays })),
+);
+const StudioGenerationDock = React.lazy(() =>
+  import('./shell/StudioGenerationDock').then((module) => ({
+    default: module.StudioGenerationDock,
+  })),
 );
 
 interface AppContentProps {}
@@ -44,12 +49,21 @@ const StudioFirstReadyScrim: React.FC = () => (
   </div>
 );
 
+const StudioGenerationDockFallback: React.FC = () => (
+  <div
+    className="h-[106px] w-full shrink-0 bg-black/80 sm:h-[56px]"
+    data-generation-dock-loading="true"
+    aria-hidden="true"
+  />
+);
+
 export const AppContent: React.FC<AppContentProps> = () => {
   const shell = useStudioShell();
   const hasGenerationDock =
     !shell.generationDock.isModalOpen &&
     !shell.generationDock.isUiChromeSuppressed &&
     (shell.generationDock.currentView === 'studio' || !!shell.generationDock.activeRecipe);
+  const hasActiveOverlay = hasMountedStudioOverlay(shell.overlays);
 
   return (
     <div
@@ -76,15 +90,21 @@ export const AppContent: React.FC<AppContentProps> = () => {
         />
       </div>
 
-      <StudioGenerationDock {...shell.generationDock} />
+      {hasGenerationDock ? (
+        <Suspense fallback={<StudioGenerationDockFallback />}>
+          <StudioGenerationDock {...shell.generationDock} />
+        </Suspense>
+      ) : null}
 
       {shell.overlays.systemOverlays.flags.isOnboardingOpen ? <StudioFirstReadyScrim /> : null}
 
-      <ErrorBoundary fallbackMessage="Could not load studio overlays.">
-        <Suspense fallback={null}>
-          <AppOverlays controller={shell.overlays} />
-        </Suspense>
-      </ErrorBoundary>
+      {hasActiveOverlay ? (
+        <ErrorBoundary fallbackMessage="Could not load studio overlays.">
+          <Suspense fallback={null}>
+            <AppOverlays controller={shell.overlays} />
+          </Suspense>
+        </ErrorBoundary>
+      ) : null}
     </div>
   );
 };

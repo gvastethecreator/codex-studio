@@ -4724,7 +4724,7 @@ export const CHARACTER_LAB_GLOBAL_OPTIONS = {
   ],
 } as const;
 
-export const CHARACTER_LAB_CONTROL_BUTTONS = [
+const CHARACTER_LAB_CONTROL_BUTTONS = [
   {
     id: 'control:source',
     label: 'Source Image',

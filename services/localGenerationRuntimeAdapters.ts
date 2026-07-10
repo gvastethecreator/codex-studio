@@ -10,31 +10,6 @@ export function throwIfGenerationAborted(signal?: AbortSignal) {
   }
 }
 
-export function waitForGenerationDelay(durationMs: number, signal?: AbortSignal) {
-  if (!signal) {
-    return new Promise<void>((resolve) => {
-      window.setTimeout(resolve, durationMs);
-    });
-  }
-
-  throwIfGenerationAborted(signal);
-
-  return new Promise<void>((resolve, reject) => {
-    const timeout = window.setTimeout(() => {
-      signal.removeEventListener('abort', handleAbort);
-      resolve();
-    }, durationMs);
-
-    const handleAbort = () => {
-      window.clearTimeout(timeout);
-      signal.removeEventListener('abort', handleAbort);
-      reject(createAbortError());
-    };
-
-    signal.addEventListener('abort', handleAbort, { once: true });
-  });
-}
-
 /**
  * Convert an image source into a data URL payload accepted by the local
  * generation backend.

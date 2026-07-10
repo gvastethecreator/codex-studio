@@ -1,7 +1,6 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings, loadDotEnvLocal } from './config';
-import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import { ensureDefaultProject, migrateDb } from './db';
 import { ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
@@ -14,8 +13,7 @@ export function initStudio() {
   ensureDefaultLibrary();
   const defaultProject = ensureDefaultProject();
   const envPath = path.resolve(process.cwd(), '.env.local');
-  const codexRuntime = readCodexRuntimeDoctor();
-  const codexVersion = codexRuntime.selectedVersion;
+  const codexVersion = null;
 
   if (!existsSync(envPath)) {
     const settings = getSettings();
@@ -35,12 +33,9 @@ export function initStudio() {
     );
   }
 
-  const message =
-    codexVersion && codexRuntime.canRunJobs
-      ? `Studio initialized. Default project: ${defaultProject.id}. Codex: ${codexVersion}`
-      : `Studio initialized. Default project: ${defaultProject.id}. ${codexRuntime.recommendedAction}`;
+  const message = `Studio initialized. Default project: ${defaultProject.id}. Runtime readiness refresh scheduled.`;
 
-  log(codexRuntime.canRunJobs ? 'info' : 'warn', 'init', message);
+  log('info', 'init', message);
   writeFileSync(
     resolveLibraryPath('logs', 'init.log'),
     `${new Date().toISOString()} ${message}\n`,

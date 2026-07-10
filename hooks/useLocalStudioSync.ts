@@ -86,7 +86,7 @@ export function useLocalStudioSync({
         `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
       );
     }
-  }, [log, onCatalogChanged]);
+  }, [log]);
 
   const refreshPolicy = useMemo(
     () =>
@@ -117,6 +117,10 @@ export function useLocalStudioSync({
       dispatch({ type: 'connection_change', connected });
       refreshPolicy.onConnectionChange(connected);
     });
+    const unsubscribeRevisionGap =
+      stream.onRevisionGap?.(() => {
+        void refreshBackendState();
+      }) ?? (() => {});
 
     return () => {
       unsubscribeJob();
@@ -124,12 +128,13 @@ export function useLocalStudioSync({
       unsubscribeCatalog();
       unsubscribeLog();
       unsubscribeConnection();
+      unsubscribeRevisionGap();
       stream.close();
       if (streamRef.current === stream) {
         streamRef.current = null;
       }
     };
-  }, [refreshPolicy, refreshBackendState]);
+  }, [onCatalogChanged, refreshPolicy, refreshBackendState]);
 
   const waitForBackendJob = useCallback(
     async (jobId: string, signal?: AbortSignal, timeoutMs?: number) => {

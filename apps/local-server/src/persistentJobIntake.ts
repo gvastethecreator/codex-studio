@@ -39,7 +39,9 @@ export interface PersistentJobIntakeDependencies {
     libraryDir: string,
   ) => GenerationTaskSpec | null;
   readLibraryDir: () => string;
-  resolveProviderExecutionBlocker: (providerId: string) => unknown;
+  resolveProviderExecutionBlocker: (
+    providerId: string,
+  ) => Record<string, unknown> | null | Promise<Record<string, unknown> | null>;
   isReferenceProcessingError: (error: unknown) => error is ReferenceProcessingErrorLike;
   publishEvent: typeof publishEvent;
   logJobCreated: (kind: string, jobId: string) => void;
@@ -168,7 +170,7 @@ export function createPersistentJobIntake({
         sourceSpec = cloneValidatedSourceSpec(sourceSpec);
       }
 
-      const providerBlocker = resolveProviderExecutionBlocker(providerId);
+      const providerBlocker = await resolveProviderExecutionBlocker(providerId);
       if (providerBlocker) {
         return {
           ok: false,

@@ -104,6 +104,82 @@ describe('studioEventSource', () => {
     }
   });
 
+  it('accepts new events after a backend revision reset', () => {
+    const previousEventSource = globalThis.EventSource;
+    const sources: Array<{
+      close: ReturnType<typeof vi.fn>;
+      onmessage: ((event: MessageEvent) => void) | null;
+    }> = [];
+
+    class FakeEventSource {
+      static OPEN = 1;
+      close = vi.fn();
+      onopen: (() => void) | null = null;
+      onerror: (() => void) | null = null;
+      onmessage: ((event: MessageEvent) => void) | null = null;
+      readyState = FakeEventSource.OPEN;
+
+      constructor() {
+        sources.push(this);
+      }
+    }
+
+    Object.defineProperty(globalThis, 'EventSource', {
+      configurable: true,
+      value: FakeEventSource,
+    });
+
+    try {
+      const stream = createStudioEventStream();
+      const seen: string[] = [];
+      let reconciliationCount = 0;
+      stream.onJobUpdate('*', (job) => seen.push(job.id));
+      stream.onRevisionGap?.(() => {
+        reconciliationCount += 1;
+      });
+      const send = (event: unknown) =>
+        sources[0]?.onmessage?.({ data: JSON.stringify(event) } as MessageEvent);
+
+      send({
+        type: 'server.connected',
+        payload: { ok: true, revision: 50, reconciled: true },
+        revision: 50,
+        createdAt: '2026-07-10T00:00:00.000Z',
+      });
+      send({
+        type: 'job.progress',
+        payload: createJob({ id: 'before-restart' }),
+        revision: 51,
+        createdAt: '2026-07-10T00:00:01.000Z',
+      });
+      send({
+        type: 'server.connected',
+        payload: { ok: true, revision: 0, reconciled: false },
+        revision: 0,
+        createdAt: '2026-07-10T00:00:02.000Z',
+      });
+      send({
+        type: 'job.progress',
+        payload: createJob({ id: 'after-restart' }),
+        revision: 1,
+        createdAt: '2026-07-10T00:00:03.000Z',
+      });
+
+      expect(seen).toEqual(['before-restart', 'after-restart']);
+      expect(reconciliationCount).toBe(1);
+      stream.close();
+    } finally {
+      if (previousEventSource) {
+        Object.defineProperty(globalThis, 'EventSource', {
+          configurable: true,
+          value: previousEventSource,
+        });
+      } else {
+        Reflect.deleteProperty(globalThis, 'EventSource');
+      }
+    }
+  });
+
   it('dispatches catalog events through the shared stream', () => {
     const previousEventSource = globalThis.EventSource;
     const sources: Array<{

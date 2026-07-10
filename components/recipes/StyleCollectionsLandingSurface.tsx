@@ -29,8 +29,8 @@ import gsap from '../../lib/motionRuntime';
 import {
   STYLE_COLLECTION_FAMILIES,
   STYLE_COLLECTIONS,
-  type StyleCollection,
-} from './styles/collections';
+} from './styles/collections/styleCollectionDefinitions';
+import type { StyleCollection } from './styles/collections/styleCollectionTypes';
 import {
   getStyleCollectionFolderImageCandidates,
   getStyleFolderImages,

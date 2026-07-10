@@ -1,4 +1,12 @@
-import React, { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useEffectEvent,
+  useId,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from 'react';
 import { createPortal } from 'react-dom';
 import { useGSAP } from '@gsap/react';
 
@@ -113,7 +121,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
 
     useEffect(() => {
       if (open) setIsMounted(true);
-    }, [open]);
+    }, [open, triggerRef]);
 
     const updatePortalPosition = useCallback(() => {
       if (!portal || !triggerRef?.current || !panelRef.current || typeof window === 'undefined') {
@@ -146,6 +154,11 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
       };
     }, [isMounted, portal, updatePortalPosition]);
 
+    const closeFromDocument = useEffectEvent((restoreFocus: boolean) => {
+      onOpenChange?.(false);
+      if (restoreFocus) triggerRef?.current?.focus();
+    });
+
     useEffect(() => {
       if (!open) return;
 
@@ -154,14 +167,13 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         if (!target) return;
         if (panelRef.current?.contains(target)) return;
         if (triggerRef?.current?.contains(target)) return;
-        onOpenChange?.(false);
+        closeFromDocument(false);
       };
 
       const handleKeyDown = (event: KeyboardEvent) => {
         if (event.key !== 'Escape') return;
         event.preventDefault();
-        onOpenChange?.(false);
-        triggerRef?.current?.focus();
+        closeFromDocument(true);
       };
 
       document.addEventListener('pointerdown', handlePointerDown, true);
@@ -170,7 +182,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         document.removeEventListener('pointerdown', handlePointerDown, true);
         document.removeEventListener('keydown', handleKeyDown, true);
       };
-    }, [onOpenChange, open, triggerRef]);
+    }, [open]);
 
     useGSAP(
       () => {

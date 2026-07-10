@@ -43,6 +43,9 @@ interface QueuePanelProps {
   onClose?: () => void;
 }
 
+const EMPTY_RESULTS: StudioQueueResultPreview[] = [];
+const EMPTY_SERVER_JOBS: StudioJob[] = [];
+
 const localStatusConfig: Record<
   QueueJob['status'],
   {
@@ -142,9 +145,11 @@ type RegisteredRecipeId = Exclude<RecipeId, null>;
 
 function normalizeQueueRecipeId(value: string | null | undefined): RegisteredRecipeId | null {
   switch (value) {
+    case 'animation-sequence':
     case 'styles':
     case 'remaster':
     case 'spritesheet':
+    case 'sprite-atlas':
     case 'cinematic':
     case 'character-lab':
     case 'character':
@@ -182,13 +187,13 @@ function resolveQueueRecipeTone(recipeId: string | null | undefined, fallbackTas
 export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
   ({
     jobs,
-    results = [],
+    results = EMPTY_RESULTS,
     onRetry,
     onCancel,
     onRemove,
     onClearCompleted,
     isResting,
-    serverJobs = [],
+    serverJobs = EMPTY_SERVER_JOBS,
     selectedJobId,
     onInspectJob,
     onRetryServerJob,
@@ -261,6 +266,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
               jobs.some((job) => job.status === 'cancelled' || job.status === 'needs_review')) && (
               <button
                 type="button"
+                aria-label="Clear completed queue jobs"
                 onClick={onClearCompleted}
                 className="studio-hit-target rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
                 title="Clear completed"
@@ -271,6 +277,7 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             {onClose ? (
               <button
                 type="button"
+                aria-label="Close queue"
                 onClick={onClose}
                 className="studio-hit-target rounded-lg p-1.5 text-white/40 transition-colors hover:bg-white/10 hover:text-white/80"
                 title="Close queue"
@@ -291,9 +298,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
         <AnimatePresence>
           {isResting && (
             <MotionDiv
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: 'auto', opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
+              initial={{ scale: 0.98, y: -4, opacity: 0 }}
+              animate={{ scale: 1, y: 0, opacity: 1 }}
+              exit={{ scale: 0.98, y: -4, opacity: 0 }}
               className="flex items-center gap-2 overflow-hidden border-b border-accent-500/20 bg-accent-500/10 px-4 py-2"
             >
               <Zap size={12} className="animate-pulse text-accent-400" />
@@ -383,9 +390,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <AnimatePresence initial={false}>
               {isServerQueueOpen && (
                 <MotionDiv
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
+                  initial={{ scale: 0.98, y: -4, opacity: 0 }}
+                  animate={{ scale: 1, y: 0, opacity: 1 }}
+                  exit={{ scale: 0.98, y: -4, opacity: 0 }}
                   className="overflow-hidden"
                 >
                   <div className="space-y-1">
@@ -439,9 +446,9 @@ export const QueuePanel: React.FC<QueuePanelProps> = React.memo(
             <AnimatePresence initial={false}>
               {isLocalQueueOpen && (
                 <MotionDiv
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
+                  initial={{ scale: 0.98, y: -4, opacity: 0 }}
+                  animate={{ scale: 1, y: 0, opacity: 1 }}
+                  exit={{ scale: 0.98, y: -4, opacity: 0 }}
                   className="overflow-hidden"
                 >
                   <div className="space-y-1">
@@ -532,16 +539,18 @@ const RecentResultsCarousel: React.FC<{
   onNext: () => void;
   onInspect?: () => void;
 }> = ({ result, index, total, onClose, onPrevious, onNext, onInspect }) => {
+  const navigationRef = React.useRef({ onClose, onPrevious, onNext });
+  navigationRef.current = { onClose, onPrevious, onNext };
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose();
-      if (event.key === 'ArrowLeft') onPrevious();
-      if (event.key === 'ArrowRight') onNext();
+      if (event.key === 'Escape') navigationRef.current.onClose();
+      if (event.key === 'ArrowLeft') navigationRef.current.onPrevious();
+      if (event.key === 'ArrowRight') navigationRef.current.onNext();
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [onClose, onNext, onPrevious]);
+  }, []);
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-black/92 backdrop-blur-md">
@@ -732,6 +741,7 @@ const ServerJobItem: React.FC<{
         {canCancel ? (
           <button
             type="button"
+            aria-label={`Cancel backend job ${job.id}`}
             onClick={onCancel}
             className="studio-hit-target rounded-[6px] p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Cancel backend job"
@@ -742,6 +752,7 @@ const ServerJobItem: React.FC<{
         {canRetry ? (
           <button
             type="button"
+            aria-label={`Retry backend job ${job.id}`}
             onClick={onRetry}
             className="studio-hit-target rounded-[6px] p-1 text-white/35 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
             title="Retry backend job"
@@ -893,6 +904,7 @@ const JobItem: React.FC<{
           {(job.status === 'processing' || job.status === 'pending') && (
             <button
               type="button"
+              aria-label={`Cancel queue job ${job.id}`}
               onClick={onCancel}
               className="studio-hit-target rounded-[6px] p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
               title="Cancel"
@@ -906,6 +918,7 @@ const JobItem: React.FC<{
             job.status === 'needs_review') && (
             <button
               type="button"
+              aria-label={`Retry queue job ${job.id}`}
               onClick={onRetry}
               className="studio-hit-target rounded-[6px] p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-accent-400 cursor-pointer"
               title="Retry"
@@ -916,6 +929,7 @@ const JobItem: React.FC<{
 
           <button
             type="button"
+            aria-label={`Remove queue job ${job.id}`}
             onClick={onRemove}
             className="studio-hit-target rounded-[6px] p-1 text-white/40 transition-colors hover:bg-white/10 hover:text-rose-400 cursor-pointer"
             title="Remove"

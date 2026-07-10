@@ -68,6 +68,27 @@ Run `bun run recipes:examples:verify` when changing future asset-task blueprints
 Run `bun run recipes:source:verify` when changing recipe UI or module plumbing. It blocks React recipe surfaces from importing task-spec builders, Recipe Context builders, Recipe Provider Directives, or provider compilers.
 Run `bun run recipes:evaluate:live -- --recipe=<id> --out=logs/recipe-prompt-quality` to plan a live Codex quality comparison without creating jobs. Add `--execute` to queue real legacy-vs-directives jobs through the local backend, record JSON + Markdown review templates, and keep only job/catalog refs plus transcript paths in the repo-local report.
 
+## Build Or Change Animation Sequence Workflow
+
+1. Keep `animation-sequence` frame-by-frame. Do not add native video generation or provider-specific video task names.
+2. Store run folders under the Studio Library at `outputs/animation-sequence/<runId>`.
+3. Generate frames through provider-independent `image_generate` and `image_edit` tasks.
+4. Keep frame planning, derived params, prompt fragments, provider directives, and contracts in tested non-React helpers.
+5. The UI may prepare runs, inspect prompts, queue a selected frame, sync generated Catalog images, attach a frame, export GIF, and run QA.
+6. GIF is the minimum export. Normal export must require every planned frame unless an explicit force path is added and tested.
+7. Frame attachment must use managed Catalog images or backend-validated paths inside the Studio Library.
+8. Do not write generated frames, GIFs, run JSON, logs, or Studio Library data to the repository.
+9. Keep QA explicit: missing frames, missing GIF, dimension issues, and blocked frames should be visible in run state.
+
+Focused validation:
+
+```bash
+bun run test -- packages/shared/src/animationSequenceContracts.test.ts lib/recipeModules.test.ts lib/recipeContextBuilders/index.test.ts lib/recipeDerivedParams.test.ts lib/recipePromptFragments.test.ts lib/recipeProviderDirectives.test.ts apps/local-server/src/animationGifEncoder.test.ts apps/local-server/src/animationSequenceRoutes.test.ts
+bun run recipes:catalog -- --query=animation --limit=20
+bun run recipes:verify
+bun run recipes:source:verify
+```
+
 ## Build Or Change Sprite Atlas Workflow
 
 1. Use the repo-local skill `skills/sprite-atlas-builder/SKILL.md`.
@@ -220,6 +241,8 @@ bun run recipes:verify
 Current chunk budgets:
 
 - `index-*`: max 500 KB
+- `StudioGenerationDock-*`: max 80 KB, loaded only when the generation dock is visible
+- `localGenerationRun-*`: max 80 KB, loaded only when generation starts
 - `StylesRecipe-*`: max 80 KB
 - `StylePresetCatalogSearchSurface-*`: max 20 KB
 - `stylePresetCatalogData-*`: max 180 KB

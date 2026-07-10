@@ -5,6 +5,7 @@ import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import type { getAppServerDiagnostics } from './codex/processSupervisor';
 import type { inspectLibrary } from './library';
 import type { WorkerStatus } from './worker';
+import type { StudioReadinessLifecycle } from './studioReadinessLifecycle';
 
 interface RuntimeRoutesDependencies {
   readSettings: () => ReturnType<typeof getSettings>;
@@ -17,6 +18,32 @@ interface RuntimeRoutesDependencies {
   readAppServerDiagnostics: typeof getAppServerDiagnostics;
   isAppServerRunning: () => boolean;
   readWorkerStatus: () => WorkerStatus;
+  readiness?: StudioReadinessLifecycle;
+}
+
+export function createCheckingRuntimeReport(): CodexRuntimeDoctorReport {
+  return {
+    status: 'blocked',
+    canRunJobs: false,
+    checkedAt: new Date(0).toISOString(),
+    selectedExecutable: '',
+    selectedCommand: '',
+    selectedVersion: null,
+    selectedVersionNumber: null,
+    appServerSupported: false,
+    recommendedAction: 'Codex Product Runtime readiness is still being checked.',
+    issues: [],
+    candidates: [],
+  };
+}
+
+function redactRuntimeDoctor(report: CodexRuntimeDoctorReport): CodexRuntimeDoctorReport {
+  return {
+    ...report,
+    selectedExecutable: report.selectedVersion ? 'codex' : '',
+    selectedCommand: report.selectedVersion ? 'codex --version' : '',
+    candidates: [],
+  };
 }
 
 export function createRuntimeRoutes({
@@ -30,6 +57,7 @@ export function createRuntimeRoutes({
   readAppServerDiagnostics,
   isAppServerRunning,
   readWorkerStatus,
+  readiness,
 }: RuntimeRoutesDependencies) {
   const routes = new Hono();
 
@@ -38,16 +66,19 @@ export function createRuntimeRoutes({
       ? ((globalThis as { Bun?: { version?: string } }).Bun?.version ?? null)
       : null;
 
-  routes.get('/health', (c) => {
+  const buildHealthResponse = () => {
     const settings = readSettings();
     const library = inspectLibrary();
-    const codexRuntime = readCodexRuntimeDoctorFn();
+    const fullCodexRuntime = readiness
+      ? (readiness.readSnapshot().codexRuntime ?? createCheckingRuntimeReport())
+      : readCodexRuntimeDoctorFn();
+    const codexRuntime = redactRuntimeDoctor(fullCodexRuntime);
     const codexAvailable = codexRuntime.selectedVersion !== null;
     const appServerDiagnostics = readAppServerDiagnostics();
     const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
     const appServerRunning = isAppServerRunning();
 
-    return c.json({
+    return {
       ok: true,
       checkedAt: new Date().toISOString(),
       libraryDir: settings.libraryDir,
@@ -94,13 +125,47 @@ export function createRuntimeRoutes({
         onboardingReady: libraryReady && codexRuntime.canRunJobs && appServerRunning,
       },
       worker: readWorkerStatus(),
-    });
+    };
+  };
+
+  routes.get('/health', (c) => c.json(buildHealthResponse()));
+
+  const readPublicReadiness = () => {
+    const snapshot = readiness?.readSnapshot();
+    if (!snapshot?.codexRuntime) return snapshot ?? null;
+    return { ...snapshot, codexRuntime: redactRuntimeDoctor(snapshot.codexRuntime) };
+  };
+
+  routes.get('/runtime/snapshot', (c) =>
+    c.json({
+      health: buildHealthResponse(),
+      readiness: readPublicReadiness(),
+    }),
+  );
+
+  routes.get('/readiness', (c) => c.json(readPublicReadiness()));
+
+  routes.post('/readiness/refresh', async (c) =>
+    c.json(
+      readiness
+        ? await readiness
+            .refresh({ reason: 'manual', force: true })
+            .then(() => readPublicReadiness())
+        : { codexRuntime: readCodexRuntimeDoctorFn() },
+    ),
+  );
+
+  routes.get('/runtime/doctor', async (c) => {
+    if (!readiness) return c.json(readCodexRuntimeDoctorFn());
+    const snapshot = await readiness.refresh({ reason: 'manual', force: true });
+    return c.json(snapshot.codexRuntime ?? createCheckingRuntimeReport());
   });
 
-  routes.get('/runtime/doctor', (c) => c.json(readCodexRuntimeDoctorFn()));
-
-  routes.post('/app-server/start', (c) => {
-    const codexRuntime = readCodexRuntimeDoctorFn();
+  routes.post('/app-server/start', async (c) => {
+    const codexRuntime = readiness
+      ? ((await readiness.refresh({ reason: 'manual' })).codexRuntime ??
+        createCheckingRuntimeReport())
+      : readCodexRuntimeDoctorFn();
     if (!codexRuntime.canRunJobs) {
       const diagnostics = readAppServerDiagnostics();
       return c.json({
@@ -108,7 +173,7 @@ export function createRuntimeRoutes({
         wsUrl: getCodexWsUrl(),
         pid: diagnostics.pid,
         lastStartError: codexRuntime.recommendedAction,
-        codexRuntime,
+        codexRuntime: redactRuntimeDoctor(codexRuntime),
       });
     }
 
@@ -119,7 +184,7 @@ export function createRuntimeRoutes({
       wsUrl: getCodexWsUrl(),
       pid: diagnostics.pid,
       lastStartError: diagnostics.lastStartError,
-      codexRuntime,
+      codexRuntime: redactRuntimeDoctor(codexRuntime),
     });
   });
 

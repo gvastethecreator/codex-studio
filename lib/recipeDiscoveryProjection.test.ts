@@ -35,6 +35,7 @@ describe('recipeDiscoveryProjection', () => {
     const projection = createRecipesGridProjection(RECIPE_DISCOVERY_CATALOG);
 
     expect(projection.entries.map((entry) => entry.id)).toEqual([
+      'animation-sequence',
       'styles',
       'remaster',
       'spritesheet',

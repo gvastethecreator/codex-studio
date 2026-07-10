@@ -10,19 +10,6 @@ const DEFAULT_CODEX_EXECUTION_SPEED = 'standard' as const;
 
 export const DEFAULT_ASPECT_RATIO: AspectRatio = '1:1';
 
-export const ALL_RATIOS: AspectRatio[] = [
-  '21:9',
-  '16:9',
-  '4:3',
-  '3:2',
-  '5:4',
-  '1:1',
-  '4:5',
-  '2:3',
-  '3:4',
-  '9:16',
-];
-
 export const RATIO_MAP: Record<AspectRatio, number> = {
   '21:9': 21 / 9,
   '16:9': 16 / 9,

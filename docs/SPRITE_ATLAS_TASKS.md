@@ -68,10 +68,9 @@
 - [x] Run targeted `bun run check` for changed Sprite Atlas files.
 - [x] Run `bun run test`.
 - [x] Run `bun run build`.
-- [ ] Run clean global `bun run check`.
+- [x] Run clean global `bun run check`.
 
-Global `bun run check` is currently blocked by formatting issues in pre-existing files outside
-this implementation scope: `.scratch/TODO.md` and `docs/STYLE_PRESET_ROUTER_AUDIT.md`.
+Superseded 2026-07-10: global `bun run check` passes.
 
 ## Deferred After First Complete Pass
 

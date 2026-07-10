@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { buildCatalogQuery } from './localStudioService';
+import { buildCatalogQuery, readLocalStudioErrorMessage } from './localStudioService';
 
 describe('buildCatalogQuery', () => {
   it('returns an empty string when no filters are provided', () => {
@@ -26,5 +26,19 @@ describe('buildCatalogQuery', () => {
     expect(buildCatalogQuery({ favorite: false, deleted: false })).toBe(
       '?favorite=false&deleted=false',
     );
+  });
+});
+
+describe('readLocalStudioErrorMessage', () => {
+  it('extracts readable backend errors from JSON responses', () => {
+    expect(readLocalStudioErrorMessage('{"error":"Prompt fixture failed"}', 500)).toBe(
+      'Prompt fixture failed',
+    );
+    expect(readLocalStudioErrorMessage('{"message":"Run not found"}', 404)).toBe('Run not found');
+  });
+
+  it('preserves plain text and supplies a status fallback', () => {
+    expect(readLocalStudioErrorMessage('Export failed', 409)).toBe('Export failed');
+    expect(readLocalStudioErrorMessage('', 503)).toBe('Local studio request failed: 503');
   });
 });

@@ -84,6 +84,10 @@ function buildWorkspaceCatalogSummaries(
     return summaries;
   }
 
+  const libraryIdsByWorkspace = new Map(
+    [...summaries].map(([workspaceId, summary]) => [workspaceId, new Set(summary.libraryIds)]),
+  );
+
   for (const entry of catalogView.entries) {
     const workspaceId = entry.workspaceId || 'default';
     const existing = summaries.get(workspaceId);
@@ -93,7 +97,10 @@ function buildWorkspaceCatalogSummaries(
         existing.imageCount += 1;
         existing.totalFileSizeBytes += entry.fileSizeBytes ?? 0;
         existing.knownFileSizeCount += entry.fileSizeBytes === null ? 0 : 1;
-        if (!existing.libraryIds.includes(entry.libraryId)) {
+        const libraryIds = libraryIdsByWorkspace.get(workspaceId) ?? new Set<string>();
+        if (!libraryIds.has(entry.libraryId)) {
+          libraryIds.add(entry.libraryId);
+          libraryIdsByWorkspace.set(workspaceId, libraryIds);
           existing.libraryIds.push(entry.libraryId);
         }
       }
@@ -114,6 +121,7 @@ function buildWorkspaceCatalogSummaries(
       firstImageCreatedAt: entry.createdAt,
       latestImageCreatedAt: entry.createdAt,
     });
+    libraryIdsByWorkspace.set(workspaceId, new Set([entry.libraryId]));
   }
 
   return summaries;

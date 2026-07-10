@@ -4,6 +4,7 @@ import {
   loadGeneratedStyleRuntimePacks,
 } from './styleRuntimeData.generated';
 import type { StyleRuntimePack, StyleRuntimePreset } from './styles/runtimeTypes';
+import { loadStyleThumbnailPack } from '../../lib/styleThumbnailCatalog';
 
 const STYLE_VISUAL_DNA_KEYS = [
   'aesthetic',
@@ -37,12 +38,18 @@ function normalizeStyleRuntimePack(pack: StyleRuntimePack): StyleRuntimePack {
 export const STYLE_RUNTIME_PACK_SUMMARIES = GENERATED_STYLE_RUNTIME_PACK_SUMMARIES;
 
 export async function loadStyleRuntimePack(packId: string): Promise<StyleRuntimePack | null> {
-  const pack = await loadGeneratedStyleRuntimePack(packId);
+  const [pack] = await Promise.all([
+    loadGeneratedStyleRuntimePack(packId),
+    loadStyleThumbnailPack(packId),
+  ]);
   return pack ? normalizeStyleRuntimePack(pack) : null;
 }
 
 export async function loadStyleRuntimePacks(): Promise<StyleRuntimePack[]> {
-  const packs = await loadGeneratedStyleRuntimePacks();
+  const [packs] = await Promise.all([
+    loadGeneratedStyleRuntimePacks(),
+    Promise.all(STYLE_RUNTIME_PACK_SUMMARIES.map((pack) => loadStyleThumbnailPack(pack.id))),
+  ]);
   return packs.map(normalizeStyleRuntimePack);
 }
 

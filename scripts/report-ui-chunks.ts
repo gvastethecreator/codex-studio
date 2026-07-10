@@ -28,20 +28,45 @@ export interface UiChunkReport {
   chunks: UiChunkInfo[];
   budgetResults: UiChunkBudgetResult[];
   unbudgetedLargeChunks: UiChunkInfo[];
+  packaging: {
+    maxChunkCount: number;
+    maxTinyChunkCount: number;
+    tinyChunkBytes: number;
+    chunkCount: number;
+    tinyChunkCount: number;
+    ok: boolean;
+  };
   ok: boolean;
 }
 
 const DEFAULT_DIST_DIR = path.join(process.cwd(), 'dist', 'assets');
 const KIB = 1024;
-const LARGE_CHUNK_BYTES = 500 * KIB;
+const LARGE_CHUNK_BYTES = 500_000;
+export const MAX_UI_JS_CHUNK_COUNT = 500;
+export const MAX_UI_TINY_CHUNK_COUNT = 100;
+export const TINY_UI_CHUNK_BYTES = 1024;
 
 export const uiChunkBudgets: UiChunkBudget[] = [
   {
     id: 'main-index',
     pattern: /^index-[\w-]+\.js$/,
-    maxBytes: 500 * KIB,
+    maxBytes: LARGE_CHUNK_BYTES,
     required: true,
     note: 'Main startup shell should stay below Vite large chunk warning.',
+  },
+  {
+    id: 'generation-dock',
+    pattern: /^StudioGenerationDock-[\w-]+\.js$/,
+    maxBytes: 80 * KIB,
+    required: true,
+    note: 'The generation dock should stay outside the main startup shell.',
+  },
+  {
+    id: 'local-generation-run',
+    pattern: /^localGenerationRun-[\w-]+\.js$/,
+    maxBytes: 80 * KIB,
+    required: true,
+    note: 'Generation execution should load on first generation, not at app startup.',
   },
   {
     id: 'styles-recipe',
@@ -180,13 +205,26 @@ export function createUiChunkReport(
   const unbudgetedLargeChunks = chunks.filter(
     (chunk) => chunk.bytes > LARGE_CHUNK_BYTES && !budgetedNames.has(chunk.name),
   );
+  const tinyChunkCount = chunks.filter((chunk) => chunk.bytes < TINY_UI_CHUNK_BYTES).length;
+  const packaging = {
+    maxChunkCount: MAX_UI_JS_CHUNK_COUNT,
+    maxTinyChunkCount: MAX_UI_TINY_CHUNK_COUNT,
+    tinyChunkBytes: TINY_UI_CHUNK_BYTES,
+    chunkCount: chunks.length,
+    tinyChunkCount,
+    ok: chunks.length <= MAX_UI_JS_CHUNK_COUNT && tinyChunkCount <= MAX_UI_TINY_CHUNK_COUNT,
+  };
 
   return {
     distDir,
     chunks,
     budgetResults,
     unbudgetedLargeChunks,
-    ok: budgetResults.every((result) => result.ok) && unbudgetedLargeChunks.length === 0,
+    packaging,
+    ok:
+      budgetResults.every((result) => result.ok) &&
+      unbudgetedLargeChunks.length === 0 &&
+      packaging.ok,
   };
 }
 
@@ -199,6 +237,9 @@ function printReport(report: UiChunkReport) {
   const totalBytes = report.chunks.reduce((sum, chunk) => sum + chunk.bytes, 0);
   console.log(
     `[ui:chunks] chunks=${report.chunks.length} total=${formatKib(totalBytes)} dist=${report.distDir}`,
+  );
+  console.log(
+    `[ui:chunks] ${report.packaging.ok ? 'ok' : 'fail'} packaging chunks=${report.packaging.chunkCount}/${report.packaging.maxChunkCount} tiny=${report.packaging.tinyChunkCount}/${report.packaging.maxTinyChunkCount} threshold=${report.packaging.tinyChunkBytes}B`,
   );
 
   for (const result of report.budgetResults) {

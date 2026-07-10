@@ -84,3 +84,18 @@ export function createSpritesheetCellDirectives(cellPrompts: RecipeParamRecord) 
     return acc;
   }, []);
 }
+
+export function createAnimationSequenceReferenceDirective(referenceFrameIds: string[]) {
+  if (referenceFrameIds.length === 0) {
+    return 'Use the base image or prompt as the first-frame visual anchor.';
+  }
+  return `Use sequence references: ${referenceFrameIds.join(', ')}. Preserve identity and motion continuity from those frames.`;
+}
+
+export function createAnimationSequenceOutputDirective(
+  frameId: string,
+  ordinal: number,
+  total: number,
+) {
+  return `Generate only ${frameId} (${ordinal}/${total}) as one finished animation frame. Do not create a video, grid, captioned storyboard, or contact sheet.`;
+}

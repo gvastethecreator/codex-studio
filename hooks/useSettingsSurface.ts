@@ -26,7 +26,7 @@ export function useSettingsSurface({
   useEffect(() => {
     if (!shouldHydrateSettingsSurface(isOpen)) return;
     void settingsDomain.refresh();
-  }, [isOpen, settingsDomain]);
+  }, [isOpen, settingsDomain.refresh]);
 
   return useMemo(
     () =>

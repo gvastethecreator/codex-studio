@@ -1,11 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { HealthResponse } from '../packages/shared/src';
 import type { Toast } from '../types';
-import {
-  getStudioApiBase,
-  getStudioHealth,
-  startStudioAppServer,
-} from '../services/localStudioService';
+import { getStudioApiBase, startStudioAppServer } from '../services/localStudioService';
 import { resolveStudioRuntime } from '../services/studioRuntime';
 import { useLocalStorage } from './useLocalStorage';
 
@@ -13,42 +9,32 @@ interface UseStudioOnboardingProps {
   log: (message: string) => void;
   addToast: (message: string, type?: Toast['type']) => void;
   shouldAutoOpen: boolean;
+  health: HealthResponse | null;
+  refreshHealth: () => Promise<void>;
+  healthError?: string | null;
+  isCheckingHealth?: boolean;
 }
 
-export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudioOnboardingProps) {
+export function useStudioOnboarding({
+  log,
+  addToast,
+  shouldAutoOpen,
+  health,
+  refreshHealth,
+  healthError = null,
+  isCheckingHealth = false,
+}: UseStudioOnboardingProps) {
   const [hasSeenOnboarding, setHasSeenOnboarding] = useLocalStorage(
     'studio-onboarding-complete',
     false,
   );
   const [isOpen, setIsOpen] = useState(() => !hasSeenOnboarding && shouldAutoOpen);
-  const [health, setHealth] = useState<HealthResponse | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [isChecking, setIsChecking] = useState(false);
   const [isStartingAppServer, setIsStartingAppServer] = useState(false);
 
   const runtime = useMemo(() => resolveStudioRuntime(), []);
   const apiBase = useMemo(() => getStudioApiBase(), []);
   const isDesktopRuntime = runtime.isDesktop;
   const isReady = Boolean(health?.ok && health.checks.onboardingReady);
-
-  const refreshHealth = useCallback(async () => {
-    setIsChecking(true);
-    setError(null);
-    try {
-      const nextHealth = await getStudioHealth();
-      setHealth(nextHealth);
-      log(
-        `Studio onboarding health refreshed: cli=${nextHealth.codexCli.available ? nextHealth.codexCli.version || 'available' : 'missing'}, codexRuntime=${nextHealth.codexRuntime.status}, appServer=${nextHealth.appServer.running ? 'running' : 'stopped'}, libraryReady=${nextHealth.checks.libraryReady}, envLocal=${nextHealth.runtime.envLocalPresent}`,
-      );
-    } catch (refreshError) {
-      const message =
-        refreshError instanceof Error ? refreshError.message : 'Could not query the local backend';
-      setError(message);
-      log(`Studio onboarding health failed: ${message}`);
-    } finally {
-      setIsChecking(false);
-    }
-  }, [log]);
 
   const autoOpenedRef = useRef(false);
   useEffect(() => {
@@ -99,9 +85,9 @@ export function useStudioOnboarding({ log, addToast, shouldAutoOpen }: UseStudio
     closeOnboarding,
     completeOnboarding,
     ensureAppServer,
-    error,
+    error: healthError,
     health,
-    isChecking,
+    isChecking: isCheckingHealth,
     isDesktopRuntime,
     isOpen,
     isReady,

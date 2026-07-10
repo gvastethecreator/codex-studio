@@ -16,7 +16,14 @@ function createCodexRuntimeReport(
     appServerSupported: true,
     recommendedAction: 'Codex Product Runtime is ready.',
     issues: [],
-    candidates: [],
+    candidates: [
+      {
+        executable: 'C:/private/codex.exe',
+        source: 'test',
+        exists: true,
+        selected: true,
+      },
+    ],
     ...overrides,
   };
 }
@@ -70,18 +77,21 @@ describe('runtimeRoutes', () => {
       ok: boolean;
       checks: { onboardingReady: boolean };
       appServer: { running: boolean };
-      codexRuntime: { canRunJobs: boolean };
+      codexRuntime: { canRunJobs: boolean; candidates: unknown[]; selectedExecutable: string };
     };
     expect(healthPayload.ok).toBe(true);
     expect(healthPayload.checks.onboardingReady).toBe(true);
     expect(healthPayload.appServer.running).toBe(true);
     expect(healthPayload.codexRuntime.canRunJobs).toBe(true);
+    expect(healthPayload.codexRuntime.candidates).toEqual([]);
+    expect(healthPayload.codexRuntime.selectedExecutable).toBe('codex');
 
     const doctorResponse = await routes.request('/runtime/doctor');
     expect(doctorResponse.status).toBe(200);
     await expect(doctorResponse.json()).resolves.toMatchObject({
       canRunJobs: true,
       selectedExecutable: 'codex',
+      candidates: [expect.objectContaining({ executable: 'C:/private/codex.exe' })],
     });
 
     const bootstrapResponse = await routes.request('/bootstrap-config');

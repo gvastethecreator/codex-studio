@@ -38,6 +38,10 @@ _Avoid_: asset row, generated image record
 Paginated metadata payload returned by `/api/catalog`.
 _Avoid_: gallery response, asset dump
 
+**Catalog Entry Detail**:
+On-demand complete generation and diagnostic metadata for one Catalog Entry, separate from hot Catalog Page projections.
+_Avoid_: full catalog row everywhere, card payload, eager prompt blob
+
 **Embedded Metadata**:
 Generation metadata written into an image file so the asset stays self-describing outside the studio.
 _Avoid_: sidecar metadata, prompt note
@@ -108,6 +112,18 @@ _Avoid_: recipe card copy, hardcoded recipes list, UI-only recipe metadata
 Queryable discovery view over Recipe Modules and aliases for UI cards, scripts, and agents.
 _Avoid_: separate recipe search list, alias-only recipe module, duplicated catalog query
 
+**Animation Frame Handoff**:
+Provider-independent intent for one Animation Sequence frame operation, including task choice, executable references, correction input, variants, and metadata.
+_Avoid_: frame prompt copy, UI generation config, provider payload
+
+**Animation Sequence Run Coordinator**:
+Durable workflow owner that dispatches frame jobs, records transitions, and reconciles completed Catalog Entries for one Animation Sequence run.
+_Avoid_: React generation loop, Visual Batch scan, route-owned workflow
+
+**Animation Sequence Run View**:
+Client-safe projection of an Animation Sequence run containing workbench state and public asset references without backend filesystem paths.
+_Avoid_: persisted run record, run-folder JSON, storage path response
+
 **Style Preset Manifest**:
 Granular style preset record with stable identity, category, editorial taxonomy, visual DNA, avoid rules, asset references, supported tasks, tags, and versioning.
 _Avoid_: inline pack entry, giant YAML row, prompt-only preset
@@ -115,6 +131,10 @@ _Avoid_: inline pack entry, giant YAML row, prompt-only preset
 **Style Search Projection**:
 Compact search view derived from Style Preset Manifests and Style Pack Manifests for demand-mounted style browsing.
 _Avoid_: runtime pack search truth, UI-only style search index, duplicated task tags
+
+**Style Thumbnail Projection**:
+Pack-scoped runtime view of style thumbnail asset URLs derived from style manifests without one executable module per image.
+_Avoid_: thumbnail import glob, eager global image map, style data source
 
 **Style Pack Manifest**:
 Lightweight grouping record for style pack metadata, categories, ordering, and references to Style Preset Manifests.
@@ -145,6 +165,10 @@ _Avoid_: durable catalog record, source of truth
 **Local Studio Sync**:
 Frontend seam that mirrors backend jobs, logs, and live events while importing Catalog Entries into the Visual Batch cache.
 _Avoid_: polling loop, ad-hoc refresh code
+
+**Studio Event Revision**:
+Monotonic position assigned to Studio state changes so reconnecting clients can detect missed events and reconcile a scoped snapshot.
+_Avoid_: timestamp ordering, EventSource connection count, full record event
 
 **Shell Activity Job**:
 Compact shell-facing activity model derived from Job Summaries, live job events, and Browser Queue links.
@@ -183,8 +207,8 @@ Frontend seam that materializes navigation, overlays, Studio Runtime state, and 
 _Avoid_: AppContent glue, root orchestrator
 
 **Studio Readiness**:
-Frontend ready-or-blocked snapshot built from Studio Runtime, backend health, Studio Library, App-Server Lifecycle, and Local Codex Session.
-_Avoid_: simple health boolean, account check
+Single non-secret ready-or-blocked product snapshot that says whether local generation can run now and why, built from Studio Runtime, Studio Library, App-Server Lifecycle, and Local Codex Session facts.
+_Avoid_: simple health boolean, account check, deep diagnostic command
 
 **Command Center**:
 Top toolbar surface for global studio status, provider/runtime usage, queue awareness, library/workspace switching, and entry points to configuration or diagnostics.
@@ -214,20 +238,24 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - One **Studio Library** contains many **Local Assets** and contributes many **Catalog Entries** to the **Image Catalog**.
 - An **External Output Source** can be discovered or registered, then imported into a **Studio Library** before destructive or catalog operations.
 - A **Catalog Page** contains many **Catalog Entries**.
+- **Catalog Entry Detail** completes one compact Catalog Entry only when a caller explicitly needs full generation or diagnostic metadata.
 - A generation-flavored **Persistent Job** executes one or more **Codex Turns**.
 - A **Persistent Job** has one **Generation Task** and one **Generation Provider** selected through the **Provider Boundary**.
 - **Persistent Job Intake** creates Persistent Jobs and uses the **Provider Registry** to keep Generation Task and Generation Provider policy explicit.
 - A **Recipe Module** produces a **Generation Task Spec** for a **Generation Task**.
 - A **Recipe Module Catalog** exposes Recipe Module metadata for navigation, scripts, and agents; the **Recipe Discovery Projection** is the query view over modules and aliases.
+- An **Animation Frame Handoff** is dispatched and reconciled by the **Animation Sequence Run Coordinator**; the UI consumes an **Animation Sequence Run View**.
 - **Recipe Provider Directives** may be attached to a **Generation Task Spec** when structured recipe data is strong enough to compile a compact prompt safely.
 - A **Generation Provider** compiles a **Generation Task Spec** into provider-specific execution.
 - A **Compiled Provider Input** is derived from a **Generation Task Spec** and may be much smaller than the stored spec.
 - A **Provider Session Contract** supplies stable rules that do not need to be repeated in every **Compiled Provider Input**.
 - The **Codex Product Runtime** powers interactive Codex jobs; the **Codex Automation Surface** supports non-interactive maintenance workflows.
 - A **Style Search Projection** is derived from **Style Preset Manifests** and **Style Pack Manifests**.
+- A **Style Thumbnail Projection** derives pack-scoped asset URLs from style manifests without becoming style authoring truth.
 - A **Style Pack Manifest** groups many **Style Preset Manifests** without owning all preset content inline.
 - A **Local Generation Run** creates one or more **Persistent Jobs** and materializes one **Visual Batch** for the UI.
 - **Local Studio Sync** imports **Catalog Entries** into **Visual Batches** for the current grid.
+- **Local Studio Sync** uses **Studio Event Revisions** to detect missed changes and request scoped reconciliation.
 - A **Shell Activity Job** is the shell-facing model for hot job reads; full **Persistent Job** detail is loaded on demand.
 - A **Catalog Operation Result** lets the shell show scoped command outcomes without treating every mutation as a blind full refresh.
 - A **Catalog Render Budget** keeps hot **Catalog Page** reads bounded per surface.

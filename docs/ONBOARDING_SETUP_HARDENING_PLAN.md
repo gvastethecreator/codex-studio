@@ -41,10 +41,8 @@ releases.
 - [x] Focused check for touched docs/code passed.
 - [x] Focused formatting check for touched docs reported all files formatted;
       command exits nonzero afterward because there are no lintable files.
-- [ ] Broad `bun run build` is blocked by the current `StylesRecipe` chunk:
-      103.12 KB over the 80.00 KB budget.
-- [ ] Broad `bun run check` is blocked by pre-existing formatting in
-      `.scratch/TODO.md`.
+- [x] Superseded 2026-07-10: broad build passes with `StylesRecipe` at 77.27 KB.
+- [x] Superseded 2026-07-10: broad check passes with no formatting, lint, or type errors.
 
 ## Desktop Onboarding Visibility
 

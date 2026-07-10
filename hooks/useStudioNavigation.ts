@@ -1,6 +1,6 @@
 import { useCallback, useLayoutEffect, useRef } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
-import { preloadStudioViewportRoute } from '../components/shell/StudioViewport';
+import { preloadStudioViewportRoute } from '../lib/studioViewportRouteSurfaces';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { Attachment, GeneratedImageWithConfig, RecipeId } from '../types';
 import type { HashRouterState } from './useHashRouter';

@@ -10,6 +10,7 @@ import { listProviderCapabilityDefinitions } from './providers/providerRegistry'
 import { createProviderReadinessMaps } from './providers/runtimeConfig';
 
 export interface ProviderExecutionBlocker {
+  [key: string]: unknown;
   error: string;
   code: 'provider_not_registered' | 'provider_runtime_blocked';
   providerId: GenerationProviderId;

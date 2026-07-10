@@ -239,7 +239,7 @@ export function createMemoryCatalogStore(
       return [...summaries.entries()]
         .map(([workspaceId, summary]) => {
           const lastImage =
-            [...summary.images].sort((left, right) =>
+            summary.images.toSorted((left, right) =>
               right.createdAt.localeCompare(left.createdAt),
             )[0] ?? null;
 
@@ -250,7 +250,7 @@ export function createMemoryCatalogStore(
             knownFileSizeCount: summary.knownFileSizeCount,
             libraryIds: [...summary.libraryIds],
             firstCreatedAt:
-              [...summary.images].sort((left, right) =>
+              summary.images.toSorted((left, right) =>
                 left.createdAt.localeCompare(right.createdAt),
               )[0]?.createdAt ?? null,
             latestCreatedAt: lastImage?.createdAt ?? null,

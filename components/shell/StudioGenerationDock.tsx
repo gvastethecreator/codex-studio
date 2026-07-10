@@ -2,6 +2,7 @@ import React from 'react';
 
 import type { AppPageView } from '../../hooks/useHashRouter';
 import type { RecipeId } from '../../types';
+import { getStudioGenerationDockToolbarMode } from '../../lib/studioGenerationDockMode';
 import DropZoneOverlay from '../DropZoneOverlay';
 import { Toolbar, type ToolbarProps } from '../Toolbar';
 import { BottomToolbar } from '../ui/BottomToolbar';
@@ -36,6 +37,7 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
       <Toolbar
         {...toolbarProps}
         activeRecipe={activeRecipe}
+        mode={getStudioGenerationDockToolbarMode(activeRecipe)}
         interactionScope={`${currentView}:${activeRecipe ?? 'studio'}`}
       />
     </BottomToolbar>

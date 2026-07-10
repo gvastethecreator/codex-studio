@@ -116,6 +116,7 @@ function SpritesheetSidebar({
           </span>
           <button
             type="button"
+            aria-label="Close cell editor"
             onClick={onClose}
             className="ml-auto text-zinc-500 hover:text-white"
           >

@@ -6,5 +6,7 @@ export * from './outputSources';
 export * from './providerCapabilities';
 export * from './recipeProviderDirectives';
 export * from './spriteAtlasContracts';
+export * from './animationSequenceContracts';
 export * from './storageMaintenance';
 export * from './userStyles';
+export * from './studioReadinessContracts';

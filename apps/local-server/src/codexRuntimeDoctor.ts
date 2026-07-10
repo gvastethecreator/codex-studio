@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs';
-import { spawnSync as nodeSpawnSync } from 'node:child_process';
+import { spawn, spawnSync as nodeSpawnSync } from 'node:child_process';
 import path from 'node:path';
 import type {
   CodexRuntimeDoctorIssue,
@@ -40,10 +40,60 @@ export interface CodexRuntimeDoctorDependencies {
   listCandidates?: () => Array<{ path: string; source: string }>;
 }
 
+export interface AsyncCodexRuntimeDoctorDependencies extends Omit<
+  CodexRuntimeDoctorDependencies,
+  'spawnSync'
+> {
+  run?: (command: string, args: string[]) => Promise<SpawnResultLike>;
+}
+
 const PROBE_TIMEOUT_MS = 10_000;
 const DEFAULT_DOCTOR_CACHE_MS = 10_000;
 
 let cachedReport: { expiresAt: number; report: CodexRuntimeDoctorReport } | null = null;
+let inFlightReport: Promise<CodexRuntimeDoctorReport> | null = null;
+
+function runAsyncProcess(command: string, args: string[]): Promise<SpawnResultLike> {
+  return new Promise((resolve) => {
+    let child: ReturnType<typeof spawn>;
+    try {
+      child = spawn(command, args, {
+        shell: process.platform === 'win32' && /\.(?:cmd|bat)$/i.test(command),
+        windowsHide: true,
+      });
+    } catch (error) {
+      resolve({
+        status: null,
+        stdout: '',
+        stderr: '',
+        error: error instanceof Error ? error : new Error(String(error)),
+      });
+      return;
+    }
+    let stdout = '';
+    let stderr = '';
+    let settled = false;
+    const finish = (result: SpawnResultLike) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timeout);
+      resolve(result);
+    };
+    const timeout = setTimeout(() => {
+      child.kill();
+      finish({ status: null, stdout, stderr, error: new Error('Codex probe timed out') });
+    }, PROBE_TIMEOUT_MS);
+
+    child.stdout?.on('data', (chunk) => {
+      stdout += String(chunk);
+    });
+    child.stderr?.on('data', (chunk) => {
+      stderr += String(chunk);
+    });
+    child.once('error', (error) => finish({ status: null, stdout, stderr, error }));
+    child.once('close', (code) => finish({ status: code, stdout, stderr }));
+  });
+}
 
 function outputText(result: SpawnResultLike) {
   return [result.stdout, result.stderr]
@@ -302,6 +352,171 @@ function inspectCandidate({
   };
 }
 
+async function inspectCandidateAsync({
+  candidate,
+  exists,
+  resolveInvocation,
+  selectedExecutable,
+  run,
+}: {
+  candidate: { path: string; source: string };
+  exists: (path: string) => boolean;
+  resolveInvocation: (args: string[], executable?: string) => string[];
+  selectedExecutable: string;
+  run: (command: string, args: string[]) => Promise<SpawnResultLike>;
+}): Promise<CandidateProbe> {
+  const candidateExists =
+    candidate.path === 'codex' ? process.platform !== 'win32' : exists(candidate.path);
+  const fallbackProbe: CandidateProbe = {
+    executable: candidate.path,
+    source: candidate.source,
+    exists: candidateExists,
+    versionCommand: [candidate.path, '--version'],
+    selectedVersion: null,
+    selectedVersionNumber: null,
+    appServerSupported: false,
+    issues: [],
+    canRunJobs: false,
+  };
+
+  if (!candidateExists) return fallbackProbe;
+  const legacyShimIssue = readKnownLegacyNpmShimIssue(candidate.path);
+  if (legacyShimIssue) {
+    return {
+      ...fallbackProbe,
+      versionCommand: resolveCodexInvocationForExecutable(candidate.path, ['--version']),
+      issues: [legacyShimIssue],
+    };
+  }
+
+  const invocation =
+    candidate.path === selectedExecutable
+      ? resolveInvocation(['--version'], candidate.path)
+      : resolveCodexInvocationForExecutable(candidate.path, ['--version']);
+  const [versionCommand, ...versionArgs] = invocation;
+  const versionResult = await run(versionCommand, versionArgs);
+  const versionText = outputText(versionResult);
+  const selectedVersion = versionResult.status === 0 ? versionText : null;
+  const selectedVersionNumber = parseVersionNumber(selectedVersion);
+  const issues: CodexRuntimeDoctorIssue[] = [];
+
+  if (versionResult.status !== 0) {
+    const errorText = versionResult.error?.message || versionText;
+    issues.push(
+      buildIssue({
+        code: 'codex_cli_unavailable',
+        message: errorText
+          ? `Codex CLI is not available: ${errorText}`
+          : 'Codex CLI is not available from the selected command.',
+        action: 'Install Codex CLI or fix PATH, then restart the local backend.',
+      }),
+    );
+  }
+
+  if (
+    versionResult.status === 0 &&
+    isLegacyCodexCli({
+      rawVersion: selectedVersion,
+      versionNumber: selectedVersionNumber,
+      executable: candidate.path,
+    })
+  ) {
+    issues.push(
+      buildIssue({
+        code: 'codex_cli_legacy',
+        message: `Selected Codex CLI looks legacy (${selectedVersion ?? 'unknown version'}).`,
+        action:
+          'Use the OpenAI Codex desktop CLI binary or update/remove the old npm shim, then restart the local backend.',
+      }),
+    );
+  }
+
+  let appServerSupported = false;
+  if (versionResult.status === 0 && issues.length === 0) {
+    const helpInvocation =
+      candidate.path === selectedExecutable
+        ? resolveInvocation(['app-server', '--help'], candidate.path)
+        : resolveCodexInvocationForExecutable(candidate.path, ['app-server', '--help']);
+    const [helpCommand, ...helpArgs] = helpInvocation;
+    const helpResult = await run(helpCommand, helpArgs);
+    appServerSupported =
+      helpResult.status === 0 && /app-server|--listen|websocket/i.test(outputText(helpResult));
+    if (!appServerSupported) {
+      issues.push(
+        buildIssue({
+          code: 'codex_app_server_unsupported',
+          message: 'Selected Codex CLI does not expose `codex app-server`.',
+          action:
+            'Update Codex CLI to a build with app-server support, then restart the local backend.',
+        }),
+      );
+    }
+  }
+
+  return {
+    executable: candidate.path,
+    source: candidate.source,
+    exists: candidateExists,
+    versionCommand: invocation,
+    selectedVersion,
+    selectedVersionNumber,
+    appServerSupported,
+    issues,
+    canRunJobs: issues.length === 0 && appServerSupported,
+  };
+}
+
+function buildDoctorReport({
+  initialExecutable,
+  rawCandidates,
+  probes,
+  exists,
+  now,
+}: {
+  initialExecutable: string;
+  rawCandidates: Array<{ path: string; source: string }>;
+  probes: CandidateProbe[];
+  exists: (path: string) => boolean;
+  now: () => Date;
+}): CodexRuntimeDoctorReport {
+  const selectedProbe =
+    probes.find((probe) => probe.canRunJobs) ??
+    probes.find((probe) => probe.executable === initialExecutable) ??
+    probes.find((probe) => probe.exists) ??
+    probes[0];
+  const issues =
+    selectedProbe?.issues.length || selectedProbe?.exists
+      ? (selectedProbe?.issues ?? [])
+      : [
+          buildIssue({
+            code: 'codex_cli_unavailable',
+            message: 'Codex CLI is not available from any known command.',
+            action: 'Install Codex CLI or fix PATH, then restart the local backend.',
+          }),
+        ];
+  const canRunJobs = Boolean(selectedProbe?.canRunJobs);
+  const selectedExecutable = selectedProbe?.executable ?? initialExecutable;
+
+  return {
+    status: canRunJobs ? 'ready' : 'blocked',
+    canRunJobs,
+    checkedAt: now().toISOString(),
+    selectedExecutable,
+    selectedCommand: (selectedProbe?.versionCommand ?? [selectedExecutable, '--version']).join(' '),
+    selectedVersion: selectedProbe?.selectedVersion ?? null,
+    selectedVersionNumber: selectedProbe?.selectedVersionNumber ?? null,
+    appServerSupported: selectedProbe?.appServerSupported ?? false,
+    recommendedAction: canRunJobs ? 'Codex Product Runtime is ready.' : issues[0].action,
+    issues,
+    candidates: rawCandidates.map((candidate) => ({
+      executable: candidate.path,
+      source: candidate.source,
+      exists: candidate.path === 'codex' ? process.platform !== 'win32' : exists(candidate.path),
+      selected: candidate.path === selectedExecutable,
+    })),
+  };
+}
+
 export function inspectCodexRuntime({
   now = () => new Date(),
   exists = existsSync,
@@ -324,43 +539,34 @@ export function inspectCodexRuntime({
       spawnSync,
     }),
   );
-  const selectedProbe =
-    probes.find((probe) => probe.canRunJobs) ??
-    probes.find((probe) => probe.executable === initialExecutable) ??
-    probes.find((probe) => probe.exists) ??
-    probes[0];
-  const issues =
-    selectedProbe?.issues.length || selectedProbe?.exists
-      ? (selectedProbe?.issues ?? [])
-      : [
-          buildIssue({
-            code: 'codex_cli_unavailable',
-            message: 'Codex CLI is not available from any known command.',
-            action: 'Install Codex CLI or fix PATH, then restart the local backend.',
-          }),
-        ];
-  const canRunJobs = Boolean(selectedProbe?.canRunJobs);
-  const selectedExecutable = selectedProbe?.executable ?? initialExecutable;
-  const candidates = rawCandidates.map((candidate) => ({
-    executable: candidate.path,
-    source: candidate.source,
-    exists: candidate.path === 'codex' ? false : exists(candidate.path),
-    selected: candidate.path === selectedExecutable,
-  }));
+  return buildDoctorReport({ initialExecutable, rawCandidates, probes, exists, now });
+}
 
-  return {
-    status: canRunJobs ? 'ready' : 'blocked',
-    canRunJobs,
-    checkedAt: now().toISOString(),
-    selectedExecutable,
-    selectedCommand: (selectedProbe?.versionCommand ?? [selectedExecutable, '--version']).join(' '),
-    selectedVersion: selectedProbe?.selectedVersion ?? null,
-    selectedVersionNumber: selectedProbe?.selectedVersionNumber ?? null,
-    appServerSupported: selectedProbe?.appServerSupported ?? false,
-    recommendedAction: canRunJobs ? 'Codex Product Runtime is ready.' : issues[0].action,
-    issues,
-    candidates,
-  };
+export async function inspectCodexRuntimeAsync({
+  now = () => new Date(),
+  exists = existsSync,
+  run = runAsyncProcess,
+  resolveExecutable = resolveCodexExecutable,
+  resolveInvocation = resolveCodexInvocation,
+  listCandidates = () => listPlatformPathCandidates('codex-binary'),
+}: AsyncCodexRuntimeDoctorDependencies = {}): Promise<CodexRuntimeDoctorReport> {
+  const initialExecutable = resolveExecutable();
+  const rawCandidates = dedupeCandidates([
+    { path: initialExecutable, source: 'resolved executable' },
+    ...listCandidates(),
+  ]);
+  const probes = await Promise.all(
+    rawCandidates.map((candidate) =>
+      inspectCandidateAsync({
+        candidate,
+        exists,
+        resolveInvocation,
+        selectedExecutable: initialExecutable,
+        run,
+      }),
+    ),
+  );
+  return buildDoctorReport({ initialExecutable, rawCandidates, probes, exists, now });
 }
 
 export function readCodexRuntimeDoctor({ maxAgeMs = DEFAULT_DOCTOR_CACHE_MS } = {}) {
@@ -372,4 +578,17 @@ export function readCodexRuntimeDoctor({ maxAgeMs = DEFAULT_DOCTOR_CACHE_MS } = 
   const report = inspectCodexRuntime();
   cachedReport = { report, expiresAt: nowMs + maxAgeMs };
   return report;
+}
+
+export function refreshCodexRuntimeDoctor() {
+  if (inFlightReport) return inFlightReport;
+  inFlightReport = inspectCodexRuntimeAsync()
+    .then((report) => {
+      cachedReport = { report, expiresAt: Date.now() + DEFAULT_DOCTOR_CACHE_MS };
+      return report;
+    })
+    .finally(() => {
+      inFlightReport = null;
+    });
+  return inFlightReport;
 }

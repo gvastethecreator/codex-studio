@@ -5,7 +5,7 @@ import {
   type CodexStyleDraftRequest,
   type CodexStyleDraftResponse,
   type UserStylePreset,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/userStyles';
 import { createLocalUserStyleDraft } from './userStyleDrafts';
 import type { UserStyleStore } from './userStyles';
 import type { publishEvent } from './events';

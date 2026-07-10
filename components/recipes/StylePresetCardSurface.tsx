@@ -199,6 +199,7 @@ const StylePresetResultButton: React.FC<StylePresetResultButtonProps> = ({
         <div className="absolute left-2 top-2 z-20 flex gap-1 opacity-0 transition-opacity group-hover/image:opacity-100">
           <button
             type="button"
+            aria-label={`${active ? 'Remove' : 'Select'} style ${presetDisplayName}`}
             onClick={(e) => {
               e.stopPropagation();
               onApply(preset);
@@ -386,6 +387,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
         <div className="pointer-events-none absolute right-2 top-2 z-30 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
           <button
             type="button"
+            aria-label={`${favorite ? 'Unpin' : 'Pin'} style ${presetDisplayName}`}
             onClick={(e) => {
               e.stopPropagation();
               onToggleFavorite(preset.id);
@@ -450,6 +452,7 @@ export const StylePresetCard = React.memo(function StylePresetCard({
             <div className="pointer-events-none absolute bottom-2 right-2 flex items-center gap-1 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100">
               <button
                 type="button"
+                aria-label={`Copy style prompt for ${presetDisplayName}`}
                 onClick={(e) => onCopy(e, preset)}
                 className="rounded-[6px] p-1 text-zinc-400 transition-[background-color,color,transform] hover:bg-white/8 hover:text-white"
                 title="Copy Style Prompt"

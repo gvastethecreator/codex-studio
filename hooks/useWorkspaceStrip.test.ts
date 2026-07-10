@@ -181,6 +181,43 @@ describe('buildWorkspacesWithThumbs', () => {
     expect(result[0].lastImage).toContain('/thumbs/summary-default.webp');
   });
 
+  it('builds the workspace strip from summaries without an all-workspace catalog page', () => {
+    const summaries: CatalogWorkspaceSummary[] = [
+      {
+        workspaceId: 'default',
+        imageCount: 65,
+        totalFileSizeBytes: 5_242_880,
+        knownFileSizeCount: 64,
+        libraryIds: ['library-1'],
+        firstCreatedAt: '2026-05-20T00:00:00.000Z',
+        latestCreatedAt: '2026-05-29T00:00:00.000Z',
+        sampleFilePath: 'D:/studio/library/assets/summary-default.png',
+        lastImage: {
+          ...catalogImage({
+            id: 'summary-only-default',
+            workspaceId: 'default',
+            thumbnailUrl: '/thumbs/summary-only-default.webp',
+          }),
+          generationConfig: null,
+        },
+      },
+    ];
+
+    const result = buildWorkspacesWithThumbs({
+      workspaces,
+      workspaceSummaries: summaries,
+    });
+
+    expect(result[0]).toMatchObject({
+      id: 'default',
+      imageCount: 65,
+      totalFileSizeBytes: 5_242_880,
+      knownFileSizeCount: 64,
+      libraryIds: ['library-1'],
+    });
+    expect(result[0].lastImage).toContain('/thumbs/summary-only-default.webp');
+  });
+
   it('treats legacy null workspace entries as part of the default workspace', () => {
     const catalogView = createCatalogView([
       catalogImage({

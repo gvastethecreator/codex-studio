@@ -7,7 +7,7 @@ import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
 import { createDefaultDbStore, type StudioDbStore } from './dbStore';
 import { getSettingValue, setSettingValue } from './db';
-import { publishEvent, subscribeEvents } from './events';
+import { getCurrentEventRevision, publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolvePublicLibraryPath, toPublicAssetUrl } from './library';
 import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
@@ -45,7 +45,10 @@ import {
   resolveThumbnailMaxEdge,
 } from './libraryAssetVariants';
 import { getProviderExecutionBlocker, readProviderCapabilities } from './providerCapabilities';
-import { readGenerationProviderRuntimePreflights } from './providers/runtimeConfig';
+import {
+  getExternalProviderRuntimePreflight,
+  readGenerationProviderRuntimePreflights,
+} from './providers/runtimeConfig';
 import { createOutputSourceRoutes } from './outputSourceRoutes';
 import { createProviderRoutes } from './providerRoutes';
 import { createSettingsRoutes } from './settingsRoutes';
@@ -54,7 +57,7 @@ import { createLibrariesRoutes, type LibrariesRoutesDependencies } from './libra
 import { createProjectRoutes } from './projectRoutes';
 import { createJobRoutes } from './jobRoutes';
 import { createAssetLogRoutes } from './assetLogRoutes';
-import { createRuntimeRoutes } from './runtimeRoutes';
+import { createCheckingRuntimeReport, createRuntimeRoutes } from './runtimeRoutes';
 import { createStudioControlRoutes } from './studioControlRoutes';
 import { createMaintenanceRoutes } from './maintenanceRoutes';
 import { createEventStreamRoutes } from './eventStreamRoutes';
@@ -62,6 +65,8 @@ import { createLibraryRoutes } from './libraryRoutes';
 import { createReferenceRoutes } from './referenceRoutes';
 import { createUserStyleRoutes } from './userStyleRoutes';
 import { createSpriteAtlasRoutes } from './spriteAtlasRoutes';
+import { createAnimationSequenceRoutes } from './animationSequenceRoutes';
+import { createStudioReadinessLifecycle } from './studioReadinessLifecycle';
 import { createDefaultUserStyleStore } from './sqliteUserStyles';
 import type { UserStyleStore } from './userStyles';
 import { createLocalApiSecurityMiddleware } from './localApiSecurity';
@@ -117,6 +122,13 @@ export async function createStudioApp(
   const readAppServerDiagnostics =
     options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
   const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
+  const readiness = createStudioReadinessLifecycle({
+    isAppServerRunning: isLocalAppServerRunning,
+    readLocalCodexSession,
+    probeCodexRuntime: options.dependencies?.readCodexRuntimeDoctor
+      ? async () => readCodexRuntimeDoctorFn()
+      : undefined,
+  });
   const dbStore = options.dependencies?.dbStore ?? (await createDefaultDbStore());
   const catalogStore = options.dependencies?.catalogStore ?? (await createDefaultCatalogStore());
   const userStyleStore = options.dependencies?.userStyleStore ?? createDefaultUserStyleStore();
@@ -160,6 +172,7 @@ export async function createStudioApp(
       readAppServerDiagnostics,
       isAppServerRunning: isLocalAppServerRunning,
       readWorkerStatus: () => workerController.getWorkerStatus(),
+      readiness,
     }),
   );
 
@@ -175,7 +188,8 @@ export async function createStudioApp(
     '/api/providers',
     createProviderRoutes({
       readSettings: () => readEditableStudioSettings(settingsStorage),
-      readCodexRuntimeDoctor: readCodexRuntimeDoctorFn,
+      readCodexRuntimeDoctor: () =>
+        readiness.readSnapshot().codexRuntime ?? createCheckingRuntimeReport(),
     }),
   );
 
@@ -225,6 +239,14 @@ export async function createStudioApp(
   );
 
   app.route(
+    '/api/animation-sequence',
+    createAnimationSequenceRoutes({
+      readLibraryDir: () => getSettings().libraryDir,
+      getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
+    }),
+  );
+
+  app.route(
     '/api/projects',
     createProjectRoutes({
       listProjects: () => dbStore.listProjects(),
@@ -267,18 +289,23 @@ export async function createStudioApp(
           libraryDir,
         ),
       readLibraryDir: () => getSettings().libraryDir,
-      resolveProviderExecutionBlocker: (providerId) => {
-        const codexRuntime = readCodexRuntimeDoctorFn();
+      resolveProviderExecutionBlocker: async (providerId) => {
+        const codexRuntime =
+          providerId === 'codex'
+            ? (await readiness.refresh({ reason: 'passive' })).codexRuntime
+            : readiness.readSnapshot().codexRuntime;
         const capabilityReport = readProviderCapabilities(
           readEditableStudioSettings(settingsStorage),
           process.env,
-          codexRuntime,
+          codexRuntime ?? undefined,
         );
-        return getProviderExecutionBlocker(
-          capabilityReport,
-          providerId,
-          readGenerationProviderRuntimePreflights(process.env, codexRuntime),
-        );
+        const runtimePreflights =
+          providerId === 'codex' && codexRuntime
+            ? readGenerationProviderRuntimePreflights(process.env, codexRuntime)
+            : [getExternalProviderRuntimePreflight(providerId)].filter(
+                (preflight) => preflight !== null,
+              );
+        return getProviderExecutionBlocker(capabilityReport, providerId, runtimePreflights);
       },
       isReferenceProcessingError: (error): error is ReferenceProcessingError =>
         error instanceof ReferenceProcessingError,
@@ -334,6 +361,7 @@ export async function createStudioApp(
     '/api',
     createEventStreamRoutes({
       subscribeEvents,
+      readEventRevision: getCurrentEventRevision,
     }),
   );
 
@@ -349,12 +377,22 @@ export async function createStudioApp(
     }),
   );
 
+  void readiness.refresh({ reason: 'startup' }).catch((error) => {
+    appLogger(
+      'warn',
+      'runtime',
+      `Studio Readiness startup refresh failed: ${error instanceof Error ? error.message : String(error)}`,
+    );
+  });
+
   return {
     app,
     config: getSettings(),
     initResult: initResult ?? ({} as ReturnType<typeof initStudio>),
     worker: workerController.getWorkerStatus(),
     workerController,
-    async shutdown() {},
+    async shutdown() {
+      readiness.dispose();
+    },
   };
 }

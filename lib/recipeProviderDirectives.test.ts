@@ -273,6 +273,35 @@ describe('recipeProviderDirectives', () => {
     expect(serialized).toContain('- Anchored Identity: yes');
   });
 
+  it('builds compact provider directives for animation sequence frames', () => {
+    const animation = getRecipeModule('animation-sequence');
+    expect(animation).toBeTruthy();
+
+    const directives =
+      animation &&
+      buildRecipeProviderDirectives(animation, {
+        runId: 'anim-1',
+        prompt: 'a ceramic fox waves',
+        frameCount: 5,
+        fps: 10,
+        frameIndex: 2,
+        method: 'recursive',
+        continuity: 'strict',
+      });
+
+    const serialized = directives ? serializeRecipeProviderDirectives(directives) : '';
+
+    expect(directives).toMatchObject({
+      protocol: 'recipe-provider-directives/v1',
+      recipeId: 'animation-sequence',
+      title: 'Animation Sequence',
+    });
+    expect(serialized).toContain('- Frame Count: 5');
+    expect(serialized).toContain('- Frame: frame-0003 (3/5)');
+    expect(serialized).toContain('single image frame');
+    expect(serialized).toContain('- Video Generation: not used');
+  });
+
   it('returns empty but valid directives when a registered recipe has only defaults', () => {
     const character = getRecipeModule('character');
     const directives = character && buildRecipeProviderDirectives(character, {});

@@ -223,17 +223,17 @@ function RenderTextBlocks({ blocks }: { blocks: JobInspectorTextBlock[] }) {
 
   return (
     <div className="space-y-3">
-      {blocks.map((block, index) =>
+      {blocks.map((block) =>
         block.kind === 'code' ? (
           <pre
-            key={`${block.kind}-${index}`}
+            key={`${block.kind}-${block.text}`}
             className="custom-scrollbar overflow-x-auto rounded-2xl border border-white/8 bg-black/30 p-3 text-[11px] leading-6 text-zinc-300"
           >
             {block.text}
           </pre>
         ) : (
           <p
-            key={`${block.kind}-${index}`}
+            key={`${block.kind}-${block.text}`}
             className="whitespace-pre-wrap text-[13px] leading-6 text-zinc-200 [overflow-wrap:anywhere]"
           >
             {block.text}

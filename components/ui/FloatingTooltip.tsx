@@ -129,7 +129,6 @@ const TooltipPortal = ({
         transform: 'translate3d(-9999px, -9999px, 0)',
         zIndex: 50,
         pointerEvents: 'none',
-        willChange: 'transform, opacity',
       }}
       className="rounded-[6px] border border-white/10 bg-zinc-900/95 shadow-2xl backdrop-blur-xl"
     >

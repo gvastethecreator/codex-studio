@@ -174,6 +174,9 @@ export function migrateDatabase(database: Database) {
   database.run(
     "CREATE INDEX IF NOT EXISTS idx_catalog_workspace_key_deleted_created_desc ON catalog_images(COALESCE(workspace_id, 'default'), is_deleted, created_at DESC)",
   );
+  database.run(
+    "CREATE INDEX IF NOT EXISTS idx_catalog_deleted_workspace_created_cover ON catalog_images(is_deleted, COALESCE(workspace_id, 'default'), created_at DESC, id DESC, library_id, file_size_bytes)",
+  );
   database.run(`
     CREATE TABLE IF NOT EXISTS user_style_presets (
       id TEXT PRIMARY KEY,

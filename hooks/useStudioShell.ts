@@ -105,9 +105,9 @@ export function useStudioShell(): StudioShellController {
   } = useHashRouter();
 
   const { config, pipeline, recipe, ui, modal } = useGeneration();
+  const viewState = useStudioViewState({ closeOverlay });
   const {
     activeCatalog,
-    workspaceCatalog,
     workspaceSummaries,
     trashCatalog,
     catalogVisualGroupCount,
@@ -122,8 +122,10 @@ export function useStudioShell(): StudioShellController {
     restoreCatalogBatch,
     restoreAllCatalogTrash,
     emptyCatalogTrash,
+    hydrateCatalogDetail,
   } = useStudioCatalogController({
     activeWorkspaceId,
+    isTrashOpen: viewState.overlays.trash.isOpen,
     addToast,
   });
 
@@ -131,7 +133,7 @@ export function useStudioShell(): StudioShellController {
     logs,
     log,
     addToast,
-    shouldAutoOpen: workspaceCatalog.entries.length === 0 && route.view === 'studio',
+    shouldAutoOpen: workspaceSummaries.length === 0 && route.view === 'studio',
     onCatalogChanged: refreshCatalogs,
   });
   const studioSettings = useStudioSettings({ addToast });
@@ -150,7 +152,6 @@ export function useStudioShell(): StudioShellController {
     log,
   });
 
-  const viewState = useStudioViewState({ closeOverlay });
   const wasGeneratingRef = useRef(pipeline.isGenerating);
 
   useEffect(() => {
@@ -294,7 +295,6 @@ export function useStudioShell(): StudioShellController {
   const { workspacesWithThumbs, handleAddWorkspace, handleDeleteWorkspace, handleRenameWorkspace } =
     useWorkspaceStrip({
       workspaces,
-      catalogView: workspaceCatalog.view,
       workspaceSummaries,
       createWorkspace,
       deleteWorkspace,
@@ -336,6 +336,24 @@ export function useStudioShell(): StudioShellController {
       }),
     [imagesWithConfig, modal.activeCarouselId, modal.modalImage],
   );
+
+  useEffect(() => {
+    const imageId = modal.activeCarouselId;
+    if (!modal.isModalOpen || !imageId) return;
+    const entry = activeCatalog.view.byId.get(imageId);
+    if (!entry || entry.detailLevel === 'detail') return;
+    void hydrateCatalogDetail(imageId).catch((error) => {
+      log(
+        `Catalog detail hydration failed: ${error instanceof Error ? error.message : String(error)}`,
+      );
+    });
+  }, [
+    activeCatalog.view.byId,
+    hydrateCatalogDetail,
+    log,
+    modal.activeCarouselId,
+    modal.isModalOpen,
+  ]);
 
   const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
     onFiles: config.handlePastedFiles,
@@ -467,7 +485,6 @@ export function useStudioShell(): StudioShellController {
       studioRuntime.onboarding.complete,
       studioRuntime.onboarding.refreshHealth,
       studioRuntime.onboarding.ensureAppServer,
-      studioRuntime.status.diagnostics.health,
       activitySession.selection.selectedJobDetail,
       activitySession.selection.isLoadingSelectedJob,
       activitySession.selection.inspectJob,
@@ -475,7 +492,6 @@ export function useStudioShell(): StudioShellController {
       activitySession.selection.retryJob,
       exportLegacyVisualBatchSnapshot,
       viewState.overlays.settings.isOpen,
-      viewState.overlays.settings.close,
       settingsSurfaceModule,
       catalogVisualGroupCount,
       workspaces,
@@ -746,6 +762,7 @@ export function useStudioShell(): StudioShellController {
     [
       pipeline.isGenerating,
       pipeline.generationStartTime,
+      route.view,
       currentView,
       handleViewChange,
       recipe.activeRecipe,

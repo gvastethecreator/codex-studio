@@ -1,3 +1,7 @@
+import {
+  createAnimationSequenceContract,
+  createAnimationSequenceFramePlan,
+} from '../packages/shared/src/animationSequenceContracts';
 import { createRecipeProviderDirectives } from '../packages/shared/src/recipeProviderDirectives';
 import { createSpriteAtlasContract } from '../packages/shared/src/spriteAtlasContracts';
 import {
@@ -8,6 +12,8 @@ import {
 import {
   createCinematicFrameDirectives,
   createCinematicLayoutInstruction,
+  createAnimationSequenceOutputDirective,
+  createAnimationSequenceReferenceDirective,
   createSpritesheetCellDirectives,
   getSpritesheetBackgroundDirective,
   getSpritesheetDividerState,
@@ -37,6 +43,13 @@ function getRecord(params: Record<string, unknown>, key: string) {
   return value && typeof value === 'object' && !Array.isArray(value)
     ? (value as Record<string, unknown>)
     : {};
+}
+
+function getStringArray(params: Record<string, unknown>, key: string) {
+  const value = params[key];
+  return Array.isArray(value)
+    ? value.filter((item): item is string => typeof item === 'string')
+    : [];
 }
 
 function directive(label: string, value: string | number | boolean | null | undefined) {
@@ -443,6 +456,72 @@ function buildTimelineProviderDirectives(module: RecipeModule, params: Record<st
   });
 }
 
+function buildAnimationSequenceProviderDirectives(
+  module: RecipeModule,
+  params: Record<string, unknown>,
+) {
+  const contract = createAnimationSequenceContract(params);
+  const plan = createAnimationSequenceFramePlan(contract);
+  const frameId = getString(params, 'frameId');
+  const frameIndex = Math.round(getNumber(params, 'frameIndex', 0));
+  const frame =
+    plan.frames.find((item) => item.id === frameId) ??
+    plan.frames.find((item) => item.index === frameIndex) ??
+    plan.frames[0]!;
+  const correctionMode = getBoolean(params, 'correctionMode');
+  const hasExecutableReferences = Array.isArray(params.executableReferenceFrameIds);
+  const executableReferences = getStringArray(params, 'executableReferenceFrameIds');
+
+  return createRecipeProviderDirectives({
+    recipeId: module.id,
+    title: module.title,
+    sections: [
+      {
+        title: 'Animation Sequence',
+        directives: [
+          directive('Mode', correctionMode ? 'selected-frame correction' : 'frame generation'),
+          directive('Run ID', getString(params, 'runId') || 'unprepared-run'),
+          directive('Frame Count', contract.frameCount),
+          directive('FPS', contract.fps),
+          directive('Method', contract.method),
+          directive('Looping GIF', contract.cyclic ? 'yes' : 'no'),
+          directive('Continuity', contract.continuity),
+          directive('Style Lock', contract.styleLock ? 'yes' : 'no'),
+        ],
+      },
+      {
+        title: 'Frame Target',
+        directives: [
+          directive('Frame', `${frame.id} (${frame.ordinal}/${contract.frameCount})`),
+          directive('Generation Order', frame.generationOrder),
+          directive('Strategy', frame.strategy),
+          directive(
+            'References',
+            createAnimationSequenceReferenceDirective(
+              hasExecutableReferences ? executableReferences : frame.referenceFrameIds,
+            ),
+          ),
+          directive(
+            'Output',
+            createAnimationSequenceOutputDirective(frame.id, frame.ordinal, contract.frameCount),
+          ),
+        ],
+      },
+      {
+        title: 'Packaging Boundary',
+        directives: [
+          directive('Provider Output', 'single image frame'),
+          directive(
+            'Studio Export',
+            'Codex Studio assembles generated frames into GIF after export',
+          ),
+          directive('Video Generation', 'not used'),
+        ],
+      },
+    ],
+  });
+}
+
 function buildStylesProviderDirectives(module: RecipeModule, params: Record<string, unknown>) {
   const selectedStyleDirectives = getSelectedStyleLayerDirectives(params);
 
@@ -485,6 +564,8 @@ export function buildRecipeProviderDirectives(
 ) {
   const input = params ?? {};
 
+  if (module.id === 'animation-sequence')
+    return buildAnimationSequenceProviderDirectives(module, input);
   if (module.id === 'camera') return buildCameraProviderDirectives(module, input);
   if (module.id === 'character-lab') return buildCharacterLabProviderDirectives(module, input);
   if (module.id === 'character') return buildCharacterProviderDirectives(module, input);

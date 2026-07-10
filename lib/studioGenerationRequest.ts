@@ -33,7 +33,9 @@ export function prepareStudioGenerationRequest({
   const maxAttachments =
     effectiveRecipeId === 'styles'
       ? 5
-      : effectiveRecipeId === 'timeline' || effectiveRecipeId === 'character-lab'
+      : effectiveRecipeId === 'timeline' ||
+          effectiveRecipeId === 'character-lab' ||
+          effectiveRecipeId === 'animation-sequence'
         ? 4
         : 1;
   const finalAttachments = baseAttachments.slice(0, maxAttachments);

@@ -226,13 +226,15 @@ export async function processReferences(
   mkdirSync(referencesDir, { recursive: true });
   const existing = new Set<string>();
   const persistedRefs: ProcessedReference[] = [];
+  const normalizedReferences = await Promise.all(
+    decodedReferences.map((decoded) =>
+      normalizeReferenceForContext(decoded, DEFAULT_REFERENCE_PAYLOAD_LIMITS),
+    ),
+  );
 
   for (const [index, decoded] of decodedReferences.entries()) {
     const { reference } = decoded;
-    const normalized = await normalizeReferenceForContext(
-      decoded,
-      DEFAULT_REFERENCE_PAYLOAD_LIMITS,
-    );
+    const normalized = normalizedReferences[index]!;
     const fileName = safeReferenceName(reference.name, existing, index);
     const filePath = path.join(referencesDir, fileName);
     writeFileSync(filePath, normalized.bytes);

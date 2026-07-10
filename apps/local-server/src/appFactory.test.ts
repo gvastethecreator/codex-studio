@@ -602,4 +602,25 @@ describe('createStudioApp', () => {
     expect(getJobSpy).toHaveBeenCalledWith(activeJob.id);
     expect(cancelQueuedOrRunningJobMock).toHaveBeenCalledWith(activeJob.id);
   });
+
+  it('serves provider snapshots without triggering another Runtime Doctor probe', async () => {
+    const readCodexRuntimeDoctor = vi.fn(() => createCodexRuntimeReport());
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore(),
+        catalogStore: createFakeCatalogStore(),
+        worker: createWorkerDependency(),
+        readCodexRuntimeDoctor,
+      },
+    });
+
+    await vi.waitFor(() => expect(readCodexRuntimeDoctor).toHaveBeenCalledTimes(1));
+    const probeCountAfterStartup = readCodexRuntimeDoctor.mock.calls.length;
+
+    expect((await studio.app.request('/api/providers')).status).toBe(200);
+    expect((await studio.app.request('/api/providers/preflight')).status).toBe(200);
+    expect(readCodexRuntimeDoctor).toHaveBeenCalledTimes(probeCountAfterStartup);
+    await studio.shutdown();
+  });
 });

@@ -22,9 +22,9 @@ export function resolveStudioCarouselDisplaySrc({
   isComparing: boolean;
   failedDisplaySrcs?: string[];
 }) {
-  const referenceSrc = image.config.attachments?.[0]?.dataUrl;
   const candidates = resolveStudioCarouselDisplayCandidates({ image, isComparing });
-  return candidates.find((candidate) => !failedDisplaySrcs.includes(candidate)) ?? candidates[0];
+  const failedSet = new Set(failedDisplaySrcs);
+  return candidates.find((candidate) => !failedSet.has(candidate)) ?? candidates[0];
 }
 
 export function resolveStudioCarouselFallbackSrc({
@@ -38,8 +38,9 @@ export function resolveStudioCarouselFallbackSrc({
   isComparing: boolean;
   failedDisplaySrcs?: string[];
 }) {
+  const failedSet = new Set(failedDisplaySrcs);
   const candidates = resolveStudioCarouselDisplayCandidates({ image, isComparing }).filter(
-    (candidate) => candidate !== displaySrc && !failedDisplaySrcs.includes(candidate),
+    (candidate) => candidate !== displaySrc && !failedSet.has(candidate),
   );
   return candidates[0] ?? null;
 }

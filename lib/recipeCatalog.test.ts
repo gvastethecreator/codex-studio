@@ -11,6 +11,7 @@ describe('recipeCatalog', () => {
   it('materializes UI catalog entries from Recipe Modules without duplicating module descriptions', () => {
     expect(validateRecipeCatalog().errors).toEqual([]);
     expect(RECIPE_CATALOG.map((recipe) => recipe.id)).toEqual([
+      'animation-sequence',
       'styles',
       'remaster',
       'spritesheet',
@@ -29,6 +30,12 @@ describe('recipeCatalog', () => {
       supportedProviders: ['codex', 'dry_run'],
       parameterGroups: ['identity', 'application', 'visual-dna'],
       requiredParameterIds: ['presetId', 'presetName'],
+    });
+    expect(RECIPE_CATALOG.find((recipe) => recipe.id === 'animation-sequence')).toMatchObject({
+      title: 'ANIMATION SEQUENCE',
+      subtitle: 'Frame Animation',
+      defaultTask: 'image_generate',
+      supportedTasks: ['image_generate', 'image_edit'],
     });
     expect(RECIPE_CATALOG.find((recipe) => recipe.id === 'remaster')).toMatchObject({
       defaultParams: {

@@ -19,8 +19,8 @@ import type {
   UserStylePresetSource,
   UserStylePresetTask,
   UserStyleVisualDnaKey,
-} from '../../packages/shared/src';
-import { USER_STYLE_SUPPORTED_TASKS } from '../../packages/shared/src';
+} from '../../packages/shared/src/userStyles';
+import { USER_STYLE_SUPPORTED_TASKS } from '../../packages/shared/src/userStyles';
 import {
   archiveUserStylePreset,
   createUserStylePreset,
@@ -141,8 +141,7 @@ function mergeSourceData(sourceData: unknown, extraData: Record<string, unknown>
   return { previous: sourceData, ...extraData };
 }
 
-export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
-  sessionId,
+const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
   mode,
   initialDraft,
   initialSource,
@@ -159,8 +158,8 @@ export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
   );
   const [referenceImages, setReferenceImages] = useState<ReferenceImageItem[]>([]);
   const [disabledDraftFields, setDisabledDraftFields] = useState<UserStyleDraftFieldId[]>([]);
-  const [tagsText, setTagsText] = useState(initialDraft.tags.join(', '));
-  const [avoidRulesText, setAvoidRulesText] = useState(initialDraft.avoidRules.join('\n'));
+  const [tagsText, setTagsText] = useState(() => initialDraft.tags.join(', '));
+  const [avoidRulesText, setAvoidRulesText] = useState(() => initialDraft.avoidRules.join('\n'));
   const [assistPrompt, setAssistPrompt] = useState('');
   const [assistAction, setAssistAction] = useState<UserStyleDraftAction>('draft_from_description');
   const [assistWarnings, setAssistWarnings] = useState<string[]>(initialDraft.warnings);
@@ -177,22 +176,6 @@ export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
     [],
   );
 
-  useEffect(() => {
-    for (const url of referenceImageUrlsRef.current) URL.revokeObjectURL(url);
-    referenceImageUrlsRef.current = [];
-    setDraft(initialDraft);
-    setSource(initialSource);
-    setAuthoringMode(initialSource?.kind === 'codex_assist' ? 'codex_assist' : 'manual');
-    setReferenceImages([]);
-    setDisabledDraftFields([]);
-    setTagsText(initialDraft.tags.join(', '));
-    setAvoidRulesText(initialDraft.avoidRules.join('\n'));
-    setAssistPrompt('');
-    setAssistAction('draft_from_description');
-    setAssistWarnings(initialDraft.warnings);
-    setError(null);
-  }, [initialDraft, initialSource, sessionId]);
-
   const normalizedDraft = useMemo(
     () => ({
       ...draft,
@@ -206,7 +189,7 @@ export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
   const canSave = normalizedDraft.name.trim().length > 0 && !isSaving;
   const sourceKind = source?.kind ?? 'manual';
   const includedReferenceImages = useMemo(
-    () => referenceImages.filter((image) => image.included).map(stripReferenceImage),
+    () => referenceImages.flatMap((image) => (image.included ? [stripReferenceImage(image)] : [])),
     [referenceImages],
   );
   const referenceSummary = useMemo(
@@ -579,6 +562,7 @@ export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
                 Creative Brief
               </span>
               <textarea
+                aria-label="Style assistant instructions"
                 value={draft.visualDna.creative_brief ?? ''}
                 onChange={(event) => updateVisualDna('creative_brief', event.target.value)}
                 rows={3}
@@ -823,6 +807,7 @@ export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
                 ))}
               </div>
               <textarea
+                aria-label="Style assistant instructions"
                 value={assistPrompt}
                 onChange={(event) => setAssistPrompt(event.target.value)}
                 rows={8}
@@ -841,9 +826,9 @@ export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
 
             {assistWarnings.length > 0 && (
               <div className="mt-3 space-y-2">
-                {assistWarnings.map((warning, index) => (
+                {assistWarnings.map((warning) => (
                   <div
-                    key={`${warning}-${index}`}
+                    key={warning}
                     className="rounded-[6px] border border-amber-400/12 bg-amber-500/8 px-3 py-2 text-[10px] font-medium leading-relaxed text-amber-100/85"
                   >
                     {warning}
@@ -900,3 +885,7 @@ export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = ({
     </div>
   );
 };
+
+export const UserStyleEditorSurface: React.FC<UserStyleEditorSurfaceProps> = (props) => (
+  <UserStyleEditorSession key={props.sessionId} {...props} />
+);

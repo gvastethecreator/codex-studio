@@ -25,7 +25,7 @@ export function sortImageGridImages(
   images: GeneratedImageWithConfig[],
   sortOrder: ImageGridSortOption,
 ) {
-  return [...images].sort((a, b) => {
+  return images.toSorted((a, b) => {
     switch (sortOrder) {
       case 'asc':
         return a.createdAt - b.createdAt;

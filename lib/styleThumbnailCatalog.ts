@@ -1,17 +1,10 @@
-type AssetUrlLoader = () => Promise<unknown>;
-
-const styleCardThumbnailFiles = import.meta.glob(
-  '../assets/recipes/styles/style-card-thumbnails/*.webp',
-  {
-    query: '?url',
-    import: 'default',
-  },
-) as Record<string, AssetUrlLoader>;
+import { loadGeneratedStyleThumbnailPack } from './styleThumbnailPacks.generated';
 
 const stylePreviewImageFiles = import.meta.glob('../assets/recipes/styles/previews/*.webp', {
   query: '?url',
   import: 'default',
-}) as Record<string, AssetUrlLoader>;
+  eager: true,
+}) as Record<string, string>;
 
 function styleAssetKey(filePath: string) {
   return filePath
@@ -24,68 +17,48 @@ function sourceRelativeUrl(filePath: string) {
   return new URL(filePath, import.meta.url).href;
 }
 
-function buildUrlCatalog(files: Record<string, AssetUrlLoader>) {
+function buildUrlCatalog(files: Record<string, string>) {
   const catalog: Record<string, string> = {};
 
   for (const filePath of Object.keys(files)) {
     const key = styleAssetKey(filePath);
     if (key) {
-      catalog[key] = sourceRelativeUrl(filePath);
+      catalog[key] = files[filePath] ?? sourceRelativeUrl(filePath);
     }
   }
 
-  return catalog;
-}
-
-function buildLoaderCatalog(files: Record<string, AssetUrlLoader>) {
-  const catalog: Record<string, AssetUrlLoader> = {};
-  for (const [filePath, loader] of Object.entries(files)) {
-    const key = styleAssetKey(filePath);
-    if (key) {
-      catalog[key] = loader;
-    }
-  }
   return catalog;
 }
 
 const stylePreviewCatalog = buildUrlCatalog(stylePreviewImageFiles);
-const styleCardThumbnailLoaders = buildLoaderCatalog(styleCardThumbnailFiles);
-const loadedStyleCardThumbnailUrls = new Map<string, string>();
 
-export const STYLE_CARD_THUMBNAILS = buildUrlCatalog(styleCardThumbnailFiles);
-export const STYLE_CATEGORY_IMAGES = Object.fromEntries(
-  Object.entries(STYLE_CARD_THUMBNAILS).filter(([key]) => key.startsWith('pack_')),
-);
+export const STYLE_CARD_THUMBNAILS: Record<string, string> = {};
+export const STYLE_CATEGORY_IMAGES: Record<string, string> = {};
+
+export async function loadStyleThumbnailPack(packId: string) {
+  const projection = await loadGeneratedStyleThumbnailPack(packId);
+  Object.assign(STYLE_CARD_THUMBNAILS, projection);
+  Object.assign(
+    STYLE_CATEGORY_IMAGES,
+    Object.fromEntries(Object.entries(projection).filter(([key]) => key.startsWith('pack_'))),
+  );
+  return projection;
+}
 
 export function resolveStyleDefaultImageThumbnail(presetId: string) {
-  return loadedStyleCardThumbnailUrls.get(presetId) ?? STYLE_CARD_THUMBNAILS[presetId];
+  return STYLE_CARD_THUMBNAILS[presetId];
 }
 
 export function resolveStyleDefaultImageVariantThumbnails(presetId: string) {
   const variants: string[] = [];
   for (let index = 1; index <= 12; index += 1) {
     const key = `${presetId}-${String(index).padStart(2, '0')}`;
-    const src = loadedStyleCardThumbnailUrls.get(key) ?? STYLE_CARD_THUMBNAILS[key];
+    const src = STYLE_CARD_THUMBNAILS[key];
     if (!src) break;
     variants.push(src);
   }
 
   return variants;
-}
-
-export async function loadStyleCardThumbnailUrl(key: string) {
-  const loadedUrl = loadedStyleCardThumbnailUrls.get(key);
-  if (loadedUrl) return loadedUrl;
-
-  const loader = styleCardThumbnailLoaders[key];
-  if (!loader) return STYLE_CARD_THUMBNAILS[key];
-
-  const loaded = await loader();
-  if (typeof loaded !== 'string') return STYLE_CARD_THUMBNAILS[key];
-
-  loadedStyleCardThumbnailUrls.set(key, loaded);
-  STYLE_CARD_THUMBNAILS[key] = loaded;
-  return loaded;
 }
 
 export const STYLE_CATEGORY_PREVIEWS: Record<string, string> = {

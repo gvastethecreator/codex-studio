@@ -1,4 +1,7 @@
-import { resolveStyleDefaultImageThumbnail } from '../../lib/styleThumbnailCatalog';
+import {
+  loadStyleThumbnailPack,
+  resolveStyleDefaultImageThumbnail,
+} from '../../lib/styleThumbnailCatalog';
 import type { StylePackManifest, StylePresetManifest } from './styles/manifestTypes';
 
 export type ManifestGlobLoader = () => Promise<unknown>;
@@ -23,8 +26,12 @@ async function loadYamlObjects<T>(files: Record<string, ManifestGlobLoader>) {
     .map(([, yamlContent]) => yaml.load(String(yamlContent)) as T);
 }
 
-function normalizePresetAssetAvailability(preset: StylePresetManifest): StylePresetManifest {
-  const resolvedDefaultImage = resolveStyleDefaultImageThumbnail(preset.id);
+function normalizePresetAssetAvailability(
+  preset: StylePresetManifest,
+  thumbnailProjection?: Record<string, string>,
+): StylePresetManifest {
+  const resolvedDefaultImage =
+    thumbnailProjection?.[preset.id] ?? resolveStyleDefaultImageThumbnail(preset.id);
   const defaultImageExists = Boolean(resolvedDefaultImage);
   return {
     ...preset,
@@ -61,9 +68,12 @@ export async function loadStylePresetCatalogPackDataFromGlobs({
   if (!packManifest) {
     throw new Error('Missing style pack manifest for catalog data chunk.');
   }
+  const thumbnailProjection = await loadStyleThumbnailPack(packManifest.id);
 
   return {
     packManifest,
-    presetManifests: presetManifests.map(normalizePresetAssetAvailability),
+    presetManifests: presetManifests.map((preset) =>
+      normalizePresetAssetAvailability(preset, thumbnailProjection),
+    ),
   };
 }

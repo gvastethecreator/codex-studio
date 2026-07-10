@@ -32,7 +32,7 @@ and introduce user-authored styles through a local-first `My Styles` pack.
 | Browser QA        | Browser smoke passed for `My Styles` create/save/edit/archive, Clone draft, Save Blend draft, and Advanced controls.                         |
 | Pack 09 tasks     | Texture audit completed; 57 high-confidence material presets now support `texture_generate`.                                                 |
 | Pack reorg        | Deep V2 collection plan documented; source packs stay stable while user-facing collections split mixed packs more aggressively.              |
-| Full gates        | `bun run test` and `bun run build` pass; full `bun run check` is blocked only by pre-existing `.scratch/TODO.md` formatting.                 |
+| Full gates        | Superseded 2026-07-10: `bun run test`, `bun run check`, and `bun run build` pass.                                                            |
 
 ## Product Principles
 

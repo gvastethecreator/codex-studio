@@ -39,7 +39,7 @@ export function collectStyleCollectionFacetValues(collection: StyleCollection) {
   addEntryFacetValues(valuesByKey, collection.entries);
 
   return Object.fromEntries(
-    [...valuesByKey.entries()].map(([key, values]) => [key, [...values].sort()]),
+    [...valuesByKey.entries()].map(([key, values]) => [key, [...values].toSorted()]),
   ) as StyleCollectionFacets;
 }
 

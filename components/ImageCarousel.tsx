@@ -99,10 +99,6 @@ const CarouselImageItem: React.FC<{
     ? image.config.aspectRatio.replace(':', '/')
     : '1/1';
 
-  useEffect(() => {
-    setFailedDisplaySrcs([]);
-  }, [image.id, isComparing]);
-
   const animate = useCallback(() => {
     if (!isActive) return;
     const LERP_FACTOR = 0.32;
@@ -745,6 +741,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
               className="absolute inset-0 size-full flex items-center justify-center will-change-transform pointer-events-auto"
             >
               <CarouselImageItem
+                key={`${currentImage.id}:${isComparing ? 'compare' : 'result'}`}
                 image={currentImage}
                 transitionName={transitionName}
                 isActive={true}

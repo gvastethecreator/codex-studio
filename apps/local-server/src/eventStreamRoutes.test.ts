@@ -9,9 +9,15 @@ describe('eventStreamRoutes', () => {
   it('exports connected event helper and keepalive interval', () => {
     const event = createServerConnectedEvent();
     expect(event.type).toBe('server.connected');
-    expect(event.payload).toEqual({ ok: true });
+    expect(event.payload).toEqual({ ok: true, revision: 0, reconciled: true });
+    expect(event.revision).toBe(0);
     expect(typeof event.createdAt).toBe('string');
     expect(EVENT_STREAM_KEEPALIVE_MS).toBe(10_000);
+  });
+
+  it('marks a reconnect revision mismatch for snapshot reconciliation', () => {
+    const event = createServerConnectedEvent(8, 5);
+    expect(event.payload).toMatchObject({ revision: 8, reconciled: false });
   });
 
   it('returns SSE handshake payload and no-buffering header', async () => {

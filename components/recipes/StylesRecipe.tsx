@@ -820,10 +820,6 @@ const StylePresetGroupSection = React.memo(
     );
 
     useEffect(() => {
-      setGridWindow(createInitialGridWindow());
-    }, [createInitialGridWindow]);
-
-    useEffect(() => {
       if (initiallyVisible) {
         setIsNearViewport(true);
         return;
@@ -2538,6 +2534,7 @@ ${styleAnchorLine}
                     return (
                       <button
                         type="button"
+                        aria-label="Add style reference"
                         key="add-reference"
                         data-style-reference-add
                         onClick={() => fileInputRef.current?.click()}
@@ -2757,6 +2754,7 @@ ${styleAnchorLine}
                   <div className="flex items-center gap-1">
                     <button
                       type="button"
+                      aria-label="Toggle advanced style controls"
                       onClick={() => setIsAdvancedStyleControlsOpen((isOpen) => !isOpen)}
                       aria-pressed={isAdvancedStyleControlsOpen}
                       className={`flex h-7 items-center gap-1 rounded-lg border px-2 text-[8px] font-black uppercase tracking-widest ${
@@ -3103,6 +3101,7 @@ ${styleAnchorLine}
                     {searchQuery && (
                       <button
                         type="button"
+                        aria-label="Clear style search"
                         onClick={() => setBrowserState((prev) => ({ ...prev, searchQuery: '' }))}
                       >
                         <X size={12} className="text-zinc-500 hover:text-white" />
@@ -3282,6 +3281,7 @@ ${styleAnchorLine}
                   {currentPackId !== FAVORITES_PACK_ID && (
                     <button
                       type="button"
+                      aria-label="Filter favorite styles"
                       onClick={() =>
                         setBrowserState((prev) => ({
                           ...prev,
@@ -3371,6 +3371,7 @@ ${styleAnchorLine}
                   {/* FAVORITES SECTION (If any exist in current filter and not in favorites tab) */}
                   {processedData.favorites.length > 0 && currentPackId !== FAVORITES_PACK_ID && (
                     <StylePresetGroupSection
+                      key={`favorites:${gridColumns}:${styleScrollWidth}:${processedData.favorites.length}`}
                       groupKey="favorites"
                       title="Pinned / Favorites"
                       presets={processedData.favorites}
@@ -3394,7 +3395,7 @@ ${styleAnchorLine}
                       : getCategoryVisualIdentity(currentPackId, groupKey);
                     return (
                       <StylePresetGroupSection
-                        key={groupKey}
+                        key={`${groupKey}:${gridColumns}:${styleScrollWidth}:${presets.length}`}
                         groupKey={groupKey}
                         title={isFlatStyleGroup ? 'All Styles' : groupKey}
                         icon={isFlatStyleGroup ? <LayoutGrid size={12} /> : categoryIdentity?.icon}

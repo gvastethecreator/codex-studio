@@ -32,5 +32,21 @@ describe('buildCatalogWorkspaceClause', () => {
     expect(summaryColumns).not.toContain('generation_config');
     expect(source).toContain('options.includeGenerationConfig ?');
     expect(source).toContain('includeGenerationConfig: true');
+    expect(source).toContain('row.prompt.slice(0, 240)');
+    expect(source).toContain("detailLevel: summary ? 'summary' : 'detail'");
+  });
+
+  it('keeps workspace aggregation free of large prompt payloads', () => {
+    const source = readFileSync(fileURLToPath(new URL('./catalog.ts', import.meta.url)), 'utf8');
+
+    const aggregateColumns = source.match(
+      /const CATALOG_WORKSPACE_AGGREGATE_COLUMNS = \[[\s\S]*?\]\.join/,
+    )?.[0];
+
+    expect(aggregateColumns).toBeTruthy();
+    expect(aggregateColumns).not.toContain('prompt');
+    expect(aggregateColumns).not.toContain('negative_prompt');
+    expect(aggregateColumns).not.toContain('file_path');
+    expect(source).toContain('LEFT JOIN catalog_images AS latest_image');
   });
 });

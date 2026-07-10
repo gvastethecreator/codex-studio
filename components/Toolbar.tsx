@@ -88,6 +88,7 @@ export interface ToolbarProps {
   isLoadingCodexModelCatalog: boolean;
   codexModelCatalogError: string | null;
   activeRecipe?: ImageGenerationConfig['recipeId'];
+  mode?: 'full' | 'context-only';
 }
 
 const ICON_SIZE = 14;
@@ -168,6 +169,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     isLoadingCodexModelCatalog,
     codexModelCatalogError,
     activeRecipe = null,
+    mode = 'full',
   }) => {
     const { addToast } = useGlobal();
     const containerRef = useRef<HTMLDivElement>(null);
@@ -425,6 +427,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       'bg-gradient-to-b from-accent-800 to-accent-950 border border-accent-700/50 text-accent-300 shadow-[0_2px_10px_rgba(0,0,0,0.5)] cursor-pointer';
 
     const hasAttachments = generationConfig.attachments.length > 0;
+    const isContextOnly = mode === 'context-only';
     const isNearLimit = generationConfig.attachments.length >= maxAttachments;
     const hasQuickStartInput = localPrompt.trim().length > 0 || hasAttachments;
     const activeRecipeIndicator = getActiveRecipeIndicator(
@@ -442,6 +445,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     return (
       <div
         ref={containerRef}
+        data-toolbar-mode={mode}
         onMouseEnter={handleToolbarMouseEnter}
         onMouseMove={handleToolbarMouseEnter}
         onMouseLeave={handleToolbarMouseLeave}
@@ -476,6 +480,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
                 disabled={isNearLimit}
+                aria-label="Add image reference"
                 className={iconBtnClass}
                 title="Add Image"
               >
@@ -503,6 +508,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             e.stopPropagation();
                             onRemoveAttachment(att.id);
                           }}
+                          aria-label={`Remove ${att.name}`}
                           className="p-1 bg-red-500 text-white rounded-lg transition-[color,background-color,border-color,opacity,transform] active:scale-90 hover:bg-red-400"
                         >
                           <X size={10} />
@@ -536,6 +542,15 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   </span>
                 </div>
               )}
+
+              {isContextOnly ? (
+                <div
+                  data-animation-frame-context
+                  className="hidden min-w-0 flex-1 px-1.5 py-1 text-[11px] leading-relaxed text-zinc-500 sm:block"
+                >
+                  Add frame references here. Generate and Correct stay in the Frame Inspector.
+                </div>
+              ) : null}
 
               <textarea
                 ref={textareaRef}
@@ -596,12 +611,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 }}
                 placeholder="Describe what you want to create..."
                 rows={1}
-                className={`custom-scrollbar max-h-[320px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-1.5 py-1 text-[13px] font-medium leading-normal tracking-tight text-zinc-200 outline-none placeholder-zinc-700 sm:min-w-[100px] ${isEnhancingPrompt || isRefactoring ? 'font-mono text-accent-400 opacity-80' : ''}`}
+                className={`custom-scrollbar max-h-[320px] min-w-0 flex-1 self-end overflow-y-auto resize-none border-none bg-transparent px-1.5 py-1 text-[13px] font-medium leading-normal tracking-tight text-zinc-200 outline-none placeholder-zinc-700 sm:min-w-[100px] ${isEnhancingPrompt || isRefactoring ? 'font-mono text-accent-400 opacity-80' : ''} ${isContextOnly ? 'hidden' : ''}`}
                 style={{ minHeight: '28px' }}
               />
 
               {/* LOGIC AI TOOLS */}
-              <div className="hidden shrink-0 items-center gap-1.5 sm:flex sm:gap-2">
+              <div
+                className={`${isContextOnly ? 'flex shrink-0 items-center gap-1.5' : 'hidden shrink-0 items-center gap-1.5 sm:flex sm:gap-2'}`}
+              >
                 {/* 1. NEGATIVE (Exclude) */}
                 <div className="relative">
                   <Tooltip content="Negative Prompt (Exclude)">
@@ -652,101 +669,105 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                   </GsapDropdown>
                 </div>
 
-                {/* 2. REFINE (Edit with AI) */}
-                <div className="relative">
-                  <Tooltip content="Edit with AI (Refine)">
-                    <button
-                      ref={refineButtonRef}
-                      type="button"
-                      onClick={() => {
-                        setIsRefineOpen(!isRefineOpen);
-                        setIsNegativeOpen(false);
-                      }}
-                      aria-label="Open edit instructions"
-                      aria-haspopup="dialog"
-                      aria-expanded={isRefineOpen}
-                      className={`${iconBtnClass} ${isRefineOpen ? activeIconBtnClass : ''}`}
-                    >
-                      <Edit3 size={15} />
-                    </button>
-                  </Tooltip>
-                  <GsapDropdown
-                    open={isRefineOpen}
-                    onOpenChange={setIsRefineOpen}
-                    triggerRef={refineButtonRef}
-                    placement="top-right"
-                    role="dialog"
-                    aria-label="Edit instructions"
-                    className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-3 w-72 p-3"
-                  >
-                    <label
-                      htmlFor="magic-edit-input"
-                      className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
-                    >
-                      Instructions to Edit
-                    </label>
-                    <div className="flex gap-2">
-                      <input
-                        id="magic-edit-input"
-                        type="text"
-                        value={magicInstruction}
-                        onChange={(e) => setMagicInstruction(e.target.value)}
-                        placeholder="e.g. Make it cyberpunk style..."
-                        autoComplete="off"
-                        ref={(el) => el?.focus()}
-                        onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                {!isContextOnly ? (
+                  <>
+                    {/* 2. REFINE (Edit with AI) */}
+                    <div className="relative">
+                      <Tooltip content="Edit with AI (Refine)">
+                        <button
+                          ref={refineButtonRef}
+                          type="button"
+                          onClick={() => {
+                            setIsRefineOpen(!isRefineOpen);
+                            setIsNegativeOpen(false);
+                          }}
+                          aria-label="Open edit instructions"
+                          aria-haspopup="dialog"
+                          aria-expanded={isRefineOpen}
+                          className={`${iconBtnClass} ${isRefineOpen ? activeIconBtnClass : ''}`}
+                        >
+                          <Edit3 size={15} />
+                        </button>
+                      </Tooltip>
+                      <GsapDropdown
+                        open={isRefineOpen}
+                        onOpenChange={setIsRefineOpen}
+                        triggerRef={refineButtonRef}
+                        placement="top-right"
+                        role="dialog"
                         aria-label="Edit instructions"
-                        className="h-10 flex-1 rounded-xl border border-white/5 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/30"
-                      />
+                        className="studio-mobile-popover absolute bottom-full right-0 z-[100] mb-3 w-72 p-3"
+                      >
+                        <label
+                          htmlFor="magic-edit-input"
+                          className="text-[10px] font-bold text-zinc-500 tracking-wide block mb-2"
+                        >
+                          Instructions to Edit
+                        </label>
+                        <div className="flex gap-2">
+                          <input
+                            id="magic-edit-input"
+                            type="text"
+                            value={magicInstruction}
+                            onChange={(e) => setMagicInstruction(e.target.value)}
+                            placeholder="e.g. Make it cyberpunk style..."
+                            autoComplete="off"
+                            ref={(el) => el?.focus()}
+                            onKeyDown={(e) => e.key === 'Enter' && handleMagicEdit()}
+                            aria-label="Edit instructions"
+                            className="h-10 flex-1 rounded-xl border border-white/5 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-accent-500/30"
+                          />
+                          <button
+                            type="button"
+                            onClick={handleMagicEdit}
+                            disabled={isRefactoring}
+                            aria-label="Apply edit instructions"
+                            className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/20 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                          >
+                            {isRefactoring ? (
+                              <div className="size-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                            ) : (
+                              <Send size={12} />
+                            )}
+                          </button>
+                        </div>
+                      </GsapDropdown>
+                    </div>
+
+                    {/* 3. ENHANCE (Action) */}
+                    <Tooltip content="Auto Enhance Prompt">
                       <button
                         type="button"
-                        onClick={handleMagicEdit}
-                        disabled={isRefactoring}
-                        aria-label="Apply edit instructions"
-                        className="flex size-10 touch-manipulation items-center justify-center rounded-xl border border-accent-400/20 bg-accent-600 text-white transition-colors hover:bg-accent-500"
+                        onClick={onEnhancePrompt}
+                        disabled={isEnhancingPrompt}
+                        aria-label="Enhance prompt"
+                        className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
                       >
-                        {isRefactoring ? (
-                          <div className="size-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                        {isEnhancingPrompt ? (
+                          <div className="size-3 border-2 border-accent-400/30 border-t-accent-400 rounded-full animate-spin" />
                         ) : (
-                          <Send size={12} />
+                          <Wand2 size={15} />
                         )}
                       </button>
-                    </div>
-                  </GsapDropdown>
-                </div>
+                    </Tooltip>
 
-                {/* 3. ENHANCE (Action) */}
-                <Tooltip content="Auto Enhance Prompt">
-                  <button
-                    type="button"
-                    onClick={onEnhancePrompt}
-                    disabled={isEnhancingPrompt}
-                    aria-label="Enhance prompt"
-                    className={`${iconBtnClass} ${isEnhancingPrompt ? 'text-accent-400' : ''}`}
-                  >
-                    {isEnhancingPrompt ? (
-                      <div className="size-3 border-2 border-accent-400/30 border-t-accent-400 rounded-full animate-spin" />
-                    ) : (
-                      <Wand2 size={15} />
-                    )}
-                  </button>
-                </Tooltip>
-
-                {/* 6. FORCE JOB */}
-                <Tooltip content="Force Job (Bypass Queue)">
-                  <button
-                    type="button"
-                    onClick={() => setIsForcedMode(!isForcedMode)}
-                    aria-label="Toggle force job"
-                    aria-pressed={isForcedMode}
-                    className={`${iconBtnClass} ${isForcedMode ? 'text-yellow-400 bg-yellow-900/20 border-yellow-500/30' : ''}`}
-                  >
-                    <Zap size={15} className={isForcedMode ? 'animate-pulse' : ''} />
-                    {isForcedMode && (
-                      <div className="absolute top-1 right-1 size-1.5 bg-yellow-500 rounded-full" />
-                    )}
-                  </button>
-                </Tooltip>
+                    {/* 6. FORCE JOB */}
+                    <Tooltip content="Force Job (Bypass Queue)">
+                      <button
+                        type="button"
+                        onClick={() => setIsForcedMode(!isForcedMode)}
+                        aria-label="Toggle force job"
+                        aria-pressed={isForcedMode}
+                        className={`${iconBtnClass} ${isForcedMode ? 'text-yellow-400 bg-yellow-900/20 border-yellow-500/30' : ''}`}
+                      >
+                        <Zap size={15} className={isForcedMode ? 'animate-pulse' : ''} />
+                        {isForcedMode && (
+                          <div className="absolute top-1 right-1 size-1.5 bg-yellow-500 rounded-full" />
+                        )}
+                      </button>
+                    </Tooltip>
+                  </>
+                ) : null}
               </div>
             </div>
           </div>
@@ -761,12 +782,14 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 setIsRefineOpen(false);
                 setIsMobileControlsOpen(true);
               }}
-              aria-label="Open generation controls"
+              aria-label={
+                isContextOnly ? 'Open frame context controls' : 'Open generation controls'
+              }
               aria-expanded={isMobileControlsOpen}
               className={`${btnClass} min-w-0 flex-1 sm:hidden`}
             >
               <SlidersHorizontal size={14} />
-              <span>Controls</span>
+              <span>{isContextOnly ? 'Context' : 'Controls'}</span>
             </button>
 
             <div
@@ -782,7 +805,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             >
               <div className="flex items-center justify-between border-b border-white/5 pb-2 sm:hidden">
                 <div className="text-[10px] font-black uppercase tracking-[0.16em] text-zinc-500">
-                  Generation
+                  {isContextOnly ? 'Frame context' : 'Generation'}
                 </div>
                 <button
                   type="button"
@@ -797,7 +820,9 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 </button>
               </div>
 
-              <div className="grid gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2 sm:hidden">
+              <div
+                className={`${isContextOnly ? 'hidden' : 'grid gap-2 rounded-xl border border-white/6 bg-white/[0.03] p-2 sm:hidden'}`}
+              >
                 <div className="grid gap-1.5">
                   <label
                     htmlFor="mobile-negative-prompt-input"
@@ -884,7 +909,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
               <div className="grid grid-cols-2 gap-2 sm:contents">
                 {/* Aspect Ratio */}
-                <div className="relative min-w-0">
+                <div className={`${isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
                   <button
                     ref={aspectRatioButtonRef}
                     type="button"
@@ -984,7 +1009,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                 )}
 
                 {/* Batch Count */}
-                <div className="relative min-w-0">
+                <div className={`${isContextOnly ? 'hidden' : 'relative min-w-0'}`}>
                   <button
                     ref={batchButtonRef}
                     type="button"
@@ -1259,12 +1284,13 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
             </div>
 
             {/* GENERATE BUTTON - Dark Gradient Premium */}
-            <button
-              type="button"
-              onClick={handleTriggerGenerate}
-              data-studio-generate-button
-              data-generate-active={isGenerating ? 'true' : 'false'}
-              className={`
+            {!isContextOnly ? (
+              <button
+                type="button"
+                onClick={handleTriggerGenerate}
+                data-studio-generate-button
+                data-generate-active={isGenerating ? 'true' : 'false'}
+                className={`
                     group relative h-10 min-h-10 min-w-[8.75rem] px-4 rounded-xl flex items-center justify-center gap-2 sm:ml-1 overflow-hidden
                     text-[10px] tracking-[0.2em] font-black uppercase transition-[color,background-color,border-color,opacity,transform,box-shadow] cursor-pointer
                     ${
@@ -1273,43 +1299,44 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         : 'bg-gradient-to-b from-accent-700 via-accent-800 to-accent-950 hover:from-accent-600 hover:via-accent-700 hover:to-accent-900 text-accent-100 border-t border-accent-500/20 shadow-[0_4px_20px_rgba(0,0,0,0.5)] hover:shadow-[0_0_25px_rgba(var(--accent-600),0.3)] active:scale-95'
                     }
                 `}
-            >
-              {/* Progress Bar Layer */}
-              {isGenerating && (
-                <div
-                  className="absolute bottom-0 left-0 top-0 z-0 w-full origin-left bg-accent-500/20 transition-transform duration-100 ease-linear"
-                  style={{
-                    transform: `scaleX(${Math.min((parseFloat(elapsedTime) / 120) * 100, 100) / 100})`,
-                  }}
-                />
-              )}
-
-              {/* Subtle Shine Effect Layer */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full z-0 ${isGenerating ? 'animate-shimmer' : 'group-hover:animate-[shimmer_1.5s_infinite]'}`}
-              />
-
-              {/* Content Layer */}
-              <div className="relative z-10 flex items-center gap-2">
-                {isGenerating ? (
-                  <>
-                    <Send size={14} className="text-accent-200" />
-                    <span className="text-white">QUEUE</span>
-                    <span className="hidden w-12 text-right text-[8px] tabular-nums text-accent-300/80 sm:inline">
-                      {elapsedTime}s
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <Wand2
-                      size={14}
-                      className="group-hover:rotate-12 transition-transform text-accent-300"
-                    />
-                    <span className="text-white">GENERATE</span>
-                  </>
+              >
+                {/* Progress Bar Layer */}
+                {isGenerating && (
+                  <div
+                    className="absolute bottom-0 left-0 top-0 z-0 w-full origin-left bg-accent-500/20 transition-transform duration-100 ease-linear"
+                    style={{
+                      transform: `scaleX(${Math.min((parseFloat(elapsedTime) / 120) * 100, 100) / 100})`,
+                    }}
+                  />
                 )}
-              </div>
-            </button>
+
+                {/* Subtle Shine Effect Layer */}
+                <div
+                  className={`absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full z-0 ${isGenerating ? 'animate-shimmer' : 'group-hover:animate-[shimmer_1.5s_infinite]'}`}
+                />
+
+                {/* Content Layer */}
+                <div className="relative z-10 flex items-center gap-2">
+                  {isGenerating ? (
+                    <>
+                      <Send size={14} className="text-accent-200" />
+                      <span className="text-white">QUEUE</span>
+                      <span className="hidden w-12 text-right text-[8px] tabular-nums text-accent-300/80 sm:inline">
+                        {elapsedTime}s
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <Wand2
+                        size={14}
+                        className="group-hover:rotate-12 transition-transform text-accent-300"
+                      />
+                      <span className="text-white">GENERATE</span>
+                    </>
+                  )}
+                </div>
+              </button>
+            ) : null}
           </div>
         </div>
 

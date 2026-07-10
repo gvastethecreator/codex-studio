@@ -1,11 +1,16 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import {
+  createAnimationSequenceRecipeParams,
   createCameraRecipeParams,
   createTimelineRecipeParams,
   getCameraGeometryConstraints,
   getTimelineTimeDeltaValue,
 } from './recipeDerivedParams';
+import {
+  createAnimationSequenceContract,
+  createAnimationSequenceFramePlan,
+} from '../packages/shared/src/animationSequenceContracts';
 
 describe('recipeDerivedParams', () => {
   it('translates camera controls into provider-independent recipe params', () => {
@@ -55,6 +60,34 @@ describe('recipeDerivedParams', () => {
       motionAmount: 'Cinematic',
       lightingMode: 'Evolving',
       isAnchored: true,
+    });
+  });
+
+  it('projects animation frame params without React-only state', () => {
+    const contract = createAnimationSequenceContract({
+      prompt: 'a ceramic fox waves',
+      frameCount: 5,
+      fps: 10,
+    });
+    const frame = createAnimationSequenceFramePlan(contract).frames[2]!;
+
+    expect(
+      createAnimationSequenceRecipeParams({
+        runId: 'anim-1',
+        contract,
+        frame,
+        correctionMode: true,
+      }),
+    ).toMatchObject({
+      runId: 'anim-1',
+      prompt: 'a ceramic fox waves',
+      frameCount: 5,
+      fps: 10,
+      frameId: 'frame-0003',
+      frameIndex: 2,
+      frameOrdinal: 3,
+      task: 'image_edit',
+      correctionMode: true,
     });
   });
 });

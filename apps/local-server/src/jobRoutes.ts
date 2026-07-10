@@ -118,7 +118,7 @@ export function createJobRoutes({
     return c.json(updatedJob);
   });
 
-  routes.post('/:id/retry', (c) => {
+  routes.post('/:id/retry', async (c) => {
     const jobId = c.req.param('id');
     const job = getJob(jobId);
     if (!job) return c.json({ error: 'Job not found' }, 404);
@@ -138,7 +138,7 @@ export function createJobRoutes({
       );
     }
 
-    const providerBlocker = resolveProviderExecutionBlocker(resolveJobProviderId(job));
+    const providerBlocker = await resolveProviderExecutionBlocker(resolveJobProviderId(job));
     if (providerBlocker) {
       return c.json(providerBlocker as Record<string, unknown>, 400);
     }

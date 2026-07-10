@@ -14,6 +14,7 @@ import {
   purgeCatalogByFilter,
   queryCatalogWorkspaceSummaries,
   queryCatalog,
+  getCatalogImageDetail,
   restoreCatalogByFilter,
   toStudioAssetUrl,
   type CatalogQueryParams,
@@ -22,6 +23,7 @@ import {
 
 export interface UseCatalogOptions extends CatalogQueryParams {
   pageSize?: number;
+  enabled?: boolean;
   queryCatalogPage?: (params: CatalogQueryParams) => Promise<CatalogPage>;
 }
 
@@ -34,16 +36,17 @@ export interface UseCatalogResult {
   error: Error | null;
   refresh: () => Promise<void>;
   loadMore: () => Promise<void>;
+  hydrateDetail: (imageId: string) => Promise<void>;
 }
 
 export interface UseStudioCatalogControllerOptions {
   activeWorkspaceId: string;
+  isTrashOpen: boolean;
   addToast: (message: string, type: 'success' | 'error' | 'info') => void;
 }
 
 export interface UseStudioCatalogControllerResult {
   activeCatalog: UseCatalogResult;
-  workspaceCatalog: UseCatalogResult;
   workspaceSummaries: CatalogWorkspaceSummary[];
   trashCatalog: UseCatalogResult;
   catalogVisualGroupCount: number;
@@ -58,6 +61,7 @@ export interface UseStudioCatalogControllerResult {
   restoreCatalogBatch: (batchId: string) => void;
   restoreAllCatalogTrash: () => void;
   emptyCatalogTrash: () => void;
+  hydrateCatalogDetail: (imageId: string) => Promise<void>;
 }
 
 function useCatalogWorkspaceSummaries() {
@@ -110,6 +114,7 @@ export function collectWorkspaceCatalogImageIds(entries: CatalogImage[], workspa
 
 function useCatalog({
   pageSize = 200,
+  enabled = true,
   queryCatalogPage = queryCatalog,
   ...filters
 }: UseCatalogOptions = {}): UseCatalogResult {
@@ -154,9 +159,15 @@ function useCatalog({
     await loadPage(entries.length, 'append');
   }, [entries.length, hasMore, isLoading, loadPage]);
 
+  const hydrateDetail = useCallback(async (imageId: string) => {
+    const detail = await getCatalogImageDetail(imageId);
+    setEntries((previous) => previous.map((entry) => (entry.id === imageId ? detail : entry)));
+  }, []);
+
   useEffect(() => {
+    if (!enabled) return;
     void refresh();
-  }, [filtersKey, refresh]);
+  }, [enabled, filtersKey, refresh]);
 
   const view = useMemo(() => createCatalogView(entries), [entries]);
 
@@ -169,11 +180,13 @@ function useCatalog({
     error,
     refresh,
     loadMore,
+    hydrateDetail,
   };
 }
 
 export function useStudioCatalogController({
   activeWorkspaceId,
+  isTrashOpen,
   addToast,
 }: UseStudioCatalogControllerOptions): UseStudioCatalogControllerResult {
   const activeCatalog = useCatalog({
@@ -181,13 +194,10 @@ export function useStudioCatalogController({
     deleted: false,
     pageSize: CATALOG_RENDER_BUDGET.activePageSize,
   });
-  const workspaceCatalog = useCatalog({
-    deleted: false,
-    pageSize: CATALOG_RENDER_BUDGET.workspaceSummaryPageSize,
-  });
   const workspaceSummaryCatalog = useCatalogWorkspaceSummaries();
   const trashCatalog = useCatalog({
     deleted: true,
+    enabled: isTrashOpen,
     pageSize: CATALOG_RENDER_BUDGET.trashPageSize,
   });
 
@@ -210,7 +220,6 @@ export function useStudioCatalogController({
   );
 
   const refreshActiveCatalog = activeCatalog.refresh;
-  const refreshWorkspaceCatalog = workspaceCatalog.refresh;
   const refreshWorkspaceSummaries = workspaceSummaryCatalog.refresh;
   const refreshTrashCatalog = trashCatalog.refresh;
   const refreshCatalogs = useCallback(
@@ -221,11 +230,7 @@ export function useStudioCatalogController({
       }
 
       if (scope.kind === 'workspace') {
-        await Promise.all([
-          refreshActiveCatalog(),
-          refreshWorkspaceCatalog(),
-          refreshWorkspaceSummaries(),
-        ]);
+        await Promise.all([refreshActiveCatalog(), refreshWorkspaceSummaries()]);
         return;
       }
 
@@ -236,12 +241,11 @@ export function useStudioCatalogController({
 
       await Promise.all([
         refreshActiveCatalog(),
-        refreshWorkspaceCatalog(),
         refreshWorkspaceSummaries(),
         refreshTrashCatalog(),
       ]);
     },
-    [refreshActiveCatalog, refreshWorkspaceCatalog, refreshWorkspaceSummaries, refreshTrashCatalog],
+    [refreshActiveCatalog, refreshWorkspaceSummaries, refreshTrashCatalog],
   );
 
   const runCatalogMutation = useCallback(
@@ -357,7 +361,6 @@ export function useStudioCatalogController({
 
   return {
     activeCatalog,
-    workspaceCatalog,
     workspaceSummaries: workspaceSummaryCatalog.summaries,
     trashCatalog,
     catalogVisualGroupCount,
@@ -372,5 +375,6 @@ export function useStudioCatalogController({
     restoreCatalogBatch,
     restoreAllCatalogTrash,
     emptyCatalogTrash,
+    hydrateCatalogDetail: activeCatalog.hydrateDetail,
   };
 }

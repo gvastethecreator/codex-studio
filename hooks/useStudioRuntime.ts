@@ -2,10 +2,10 @@ import { useCallback } from 'react';
 
 import type { LogEntry, Toast } from '../types';
 import { buildStudioReadinessSnapshot } from '../lib/studioReadiness';
+import { buildStudioDiagnosticsSnapshot } from '../lib/studioDiagnostics';
 import { useLocalStudioSync } from './useLocalStudioSync';
-import { useStudioDiagnostics } from './useStudioDiagnostics';
 import { useStudioOnboarding } from './useStudioOnboarding';
-import { useStudioSessionVerifier } from './useStudioSessionVerifier';
+import { useStudioReadiness } from './useStudioReadiness';
 import type { CatalogRefreshScope } from '../lib/catalogOperationResult';
 
 interface UseStudioRuntimeProps {
@@ -41,40 +41,61 @@ export function useStudioRuntime({
     log,
     onCatalogChanged,
   });
-  const sessionVerifier = useStudioSessionVerifier({
-    addToast,
-    log,
-  });
+  const readinessState = useStudioReadiness();
+  const refreshHealth = useCallback(async () => {
+    await readinessState.refresh();
+  }, [readinessState.refresh]);
   const onboarding = useStudioOnboarding({
     log,
     addToast,
     shouldAutoOpen,
-  });
-  const diagnosticsState = useStudioDiagnostics({
-    initialHealth: onboarding.health,
-    isBackendConnected: sync.activity.isBackendConnected,
+    health: readinessState.health,
+    refreshHealth,
+    healthError: readinessState.error,
+    isCheckingHealth: readinessState.isRefreshing,
   });
 
   const readiness = buildStudioReadinessSnapshot({
-    health: diagnosticsState.health,
+    health: readinessState.health,
     isBackendConnected: sync.activity.isBackendConnected,
-    localCodexSession: diagnosticsState.localCodexSession,
+    localCodexSession: readinessState.localCodexSession,
     runtime: onboarding.runtime,
   });
+  const diagnostics = buildStudioDiagnosticsSnapshot({
+    health: readinessState.health,
+    localCodexSession: readinessState.localCodexSession,
+    hasFetchedDiagnostics: readinessState.serverSnapshot !== null,
+    isBackendConnected: sync.activity.isBackendConnected,
+  });
+
+  const verifyCodexSession = useCallback(async () => {
+    try {
+      const response = await readinessState.refresh();
+      const refreshed = buildStudioReadinessSnapshot({
+        health: response.health,
+        isBackendConnected: true,
+        localCodexSession: response.readiness.localCodexSession,
+        runtime: onboarding.runtime,
+      });
+      addToast(
+        refreshed.isReady ? 'Local Codex session available' : refreshed.description,
+        refreshed.isReady ? 'success' : 'error',
+      );
+      log(`Codex readiness: stage=${refreshed.stage}, revision=${response.readiness.revision}`);
+    } catch (error) {
+      addToast(error instanceof Error ? error.message : 'Could not verify local Codex', 'error');
+    }
+  }, [addToast, log, onboarding.runtime, readinessState.refresh]);
 
   const refreshRuntime = useCallback(async () => {
-    await Promise.allSettled([
-      onboarding.refreshHealth(),
-      diagnosticsState.refreshDiagnostics(),
-      sync.refreshBackendState(),
-    ]);
-  }, [onboarding.refreshHealth, diagnosticsState.refreshDiagnostics, sync.refreshBackendState]);
+    await Promise.allSettled([readinessState.refresh(), sync.refreshBackendState()]);
+  }, [readinessState.refresh, sync.refreshBackendState]);
 
   return {
     activity: sync.activity,
     status: {
-      diagnostics: diagnosticsState.snapshot,
-      localCodexSession: diagnosticsState.localCodexSession,
+      diagnostics,
+      localCodexSession: readinessState.localCodexSession,
       readiness,
       runtime: onboarding.runtime,
     },
@@ -94,8 +115,8 @@ export function useStudioRuntime({
       ensureAppServer: onboarding.ensureAppServer,
     },
     maintenance: {
-      verifyCodexSession: sessionVerifier.verifyCodexSession,
-      refreshDiagnostics: diagnosticsState.refreshDiagnostics,
+      verifyCodexSession,
+      refreshDiagnostics: readinessState.refresh,
       refreshRuntime,
     },
   };

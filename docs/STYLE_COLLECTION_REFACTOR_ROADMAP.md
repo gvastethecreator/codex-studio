@@ -173,8 +173,7 @@ bun run build
 - `bun run test` passed with 180 files and 643 tests.
 - `bun run build` passed; `StylesRecipe` remains at 69.58 KB against the 80 KB
   chunk budget.
-- Full `bun run check` still fails only on unrelated `.scratch/TODO.md`
-  formatting.
+- Superseded 2026-07-10: full `bun run check` passes.
 - Collection folder thumbnails now use collection-specific candidates before
   source-pack fallbacks, so `sourcePackIds` remain provenance metadata instead
   of an accidental cover-image contract.
@@ -210,8 +209,7 @@ bun run build
   rerun and full rerun.
 - `bun run build` passed; `StylesRecipe` is 75.53 KB against the 80 KB chunk
   budget.
-- Full `bun run check` still fails only on unrelated `.scratch/TODO.md`
-  formatting.
+- Superseded 2026-07-10: full `bun run check` passes.
 
 ## Current Follow-up Slice
 

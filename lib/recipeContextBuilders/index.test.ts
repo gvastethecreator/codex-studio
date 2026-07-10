@@ -4,6 +4,7 @@ import { RECIPE_CONTEXT_BUILDERS } from './index';
 import type { RegisteredRecipeId } from './shared';
 
 const EXPECTED_RECIPE_IDS: RegisteredRecipeId[] = [
+  'animation-sequence',
   'camera',
   'character-lab',
   'character',
