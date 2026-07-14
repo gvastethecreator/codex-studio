@@ -14,6 +14,7 @@ import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
 import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
 import {
+  cancelStudioJob,
   createStudioJob,
   getEditableStudioSettings,
   listProjects,
@@ -243,6 +244,7 @@ export async function runSingleCodexImagegenJob(options: {
   signal?: AbortSignal;
   onJobCreated?: (job: StudioJob) => void;
   onProgress?: (message: string) => void;
+  cancelJob?: typeof cancelStudioJob;
 }) {
   const {
     config,
@@ -254,6 +256,7 @@ export async function runSingleCodexImagegenJob(options: {
     inputImage,
     signal,
     onProgress,
+    cancelJob = cancelStudioJob,
   } = options;
   throwIfGenerationAborted(signal);
   const projects = await listProjects();
@@ -314,6 +317,27 @@ export async function runSingleCodexImagegenJob(options: {
 
   options.onJobCreated?.(createdJob);
 
+  let cancellationRequest: Promise<void> | null = null;
+  const requestBackendCancellation = () => {
+    cancellationRequest ??= cancelJob(createdJob.id)
+      .then(() => undefined)
+      .catch((error) => {
+        onProgress?.(
+          `Unable to cancel ${providerId} job ${createdJob.id}: ${error instanceof Error ? error.message : String(error)}`,
+        );
+      });
+    return cancellationRequest;
+  };
+  const handleAbort = () => {
+    void requestBackendCancellation();
+  };
+  signal?.addEventListener('abort', handleAbort, { once: true });
+
+  if (signal?.aborted) {
+    await requestBackendCancellation();
+    throwIfGenerationAborted(signal);
+  }
+
   onProgress?.(`${providerId} job queued: ${createdJob.id}`);
   const stream = options.stream ?? createStudioEventStream();
   const shouldCloseStream = !options.stream;
@@ -343,6 +367,8 @@ export async function runSingleCodexImagegenJob(options: {
 
     return images;
   } finally {
+    signal?.removeEventListener('abort', handleAbort);
+    if (signal?.aborted) await requestBackendCancellation();
     if (shouldCloseStream) stream.close();
   }
 }

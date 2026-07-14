@@ -23,11 +23,11 @@ Close every accepted recommendation from the 2026-07-14 architecture audit witho
 | SEC-01  | Resolve provider assets through managed Library/Catalog authority; reject arbitrary or escaped local paths.           | Implemented; focused proof green |
 | DATA-01 | Keep selected Library id and physical write root coherent across routes, workers, Catalog, and public URLs.           | Implemented and migrated         |
 | DATA-02 | Make file, Asset, Catalog, and Job finalization idempotent and recoverable across crashes.                            | Implemented; focused proof green |
-| CONC-01 | Cancel persistent jobs that link after their browser run was already cancelled.                                       | Planned                          |
-| CONC-02 | Make provider session creation single-flight per session key.                                                         | Planned                          |
-| CONC-03 | Prevent stale Catalog replace/append/detail responses from crossing filter generations.                               | Planned                          |
+| CONC-01 | Cancel persistent jobs that link after their browser run was already cancelled.                                       | Implemented; focused proof green |
+| CONC-02 | Make provider session creation single-flight per session key.                                                         | Implemented; focused proof green |
+| CONC-03 | Prevent stale Catalog replace/append/detail responses from crossing filter generations.                               | Implemented; focused proof green |
 | ARCH-01 | Make backend intake authoritative for provider execution defaults and nullable resets.                                | Planned                          |
-| UI-01   | Track active generation metadata per run instead of using one global mutable record.                                  | Planned                          |
+| UI-01   | Track active generation metadata per run instead of using one global mutable record.                                  | Implemented; focused proof green |
 | TEST-01 | Exercise migrations against real legacy SQLite fixtures, including idempotence and sentinel data.                     | Implemented; focused proof green |
 | CI-01   | Enforce source architecture audits in CI and fix current Library-layout violations.                                   | Planned                          |
 | PERF-01 | Give Style Pack loading one cached, single-flight runtime owner and remove duplicate load policy from `StylesRecipe`. | Planned                          |
@@ -72,6 +72,13 @@ Recorded before implementation:
 - Change: SQLite now records ordered schema migrations and applies every pending version in one transaction. A real Bun/SQLite fixture covers legacy columns, sentinel preservation, indexes, foreign keys, two-pass idempotence, and forced rollback. Jobs persist finalization source/target plus Asset/Catalog checkpoints before and after filesystem and database boundaries. Recovery includes active jobs with existing rows and synthesizes a legacy checkpoint when needed; the finalizer reuses existing rows and suppresses duplicate events.
 - Evidence: migration/store/finalizer/pathing/worker suite passed 14 tests; the server type build and focused 10-file check passed. The finalizer test proves the five checkpoint states and exact no-duplicate recovery from an Asset checkpoint.
 - Verdict: better. Data integrity gates are closed; continue with browser/backend concurrency races.
+
+### Loop 4 — Race-safe generation, session, and Catalog lifecycles
+
+- Pressure: two callers could create distinct provider sessions for the same key; an aborted browser run could create its backend job after cancellation and leave it running; Catalog A responses could overwrite newer B filters or pagination; completing either concurrent generation cleared the singleton overlay metadata for both.
+- Change: session creation is single-flight per key, closes failed clients, clears rejected promises, and permits retry. A newly linked backend job installs an abort listener and immediately requests durable cancellation when the signal was already aborted. Catalog reads use generation/request tokens: replacement supersedes older work, append is single-flight, filter changes invalidate page and detail responses, and only the current token owns loading/error state. Generation overlays project the newest active run from a tokenized run list and fall back to the remaining run when completion order reverses.
+- Evidence: four focused files passed 14 tests, including deferred late-link cancellation, concurrent session creation, rejected-session retry, Catalog A→B/append invalidation, and both active-run completion orders. Focused format/type/lint check and `git diff --check` passed.
+- Verdict: better. Lifecycle races are closed; continue with execution settings authority and Style Pack runtime ownership.
 
 ## Final gate
 

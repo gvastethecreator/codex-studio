@@ -6,6 +6,7 @@ import {
   type CatalogRefreshScope,
 } from '../lib/catalogOperationResult';
 import { CATALOG_RENDER_BUDGET } from '../lib/catalogRenderBudget';
+import { createCatalogRequestGate, type CatalogRequestToken } from '../lib/catalogRequestGate';
 import { buildStudioQueueResultPreviews } from '../lib/studioQueueResults';
 import { createCatalogView, type StudioCatalogView } from '../lib/studioCatalogView';
 import {
@@ -127,45 +128,76 @@ function useCatalog({
   const filtersRef = useRef(filters);
   filtersRef.current = filters;
   const filtersKey = createCatalogFilterKey(filters);
+  const filtersKeyRef = useRef(filtersKey);
+  const requestGateRef = useRef(createCatalogRequestGate());
+  const detailRequestIdsRef = useRef(new Map<string, number>());
+  if (filtersKeyRef.current !== filtersKey) {
+    filtersKeyRef.current = filtersKey;
+    requestGateRef.current.invalidate();
+    detailRequestIdsRef.current.clear();
+  }
 
   const loadPage = useCallback(
-    async (offset: number, mode: 'replace' | 'append') => {
+    async (
+      offset: number,
+      mode: 'replace' | 'append',
+      token: CatalogRequestToken,
+      requestFilters: CatalogQueryParams,
+    ) => {
       setIsLoading(true);
       setError(null);
       try {
         const page = await queryCatalogPage({
-          ...filtersRef.current,
+          ...requestFilters,
           offset,
-          limit: filtersRef.current.limit ?? pageSize,
+          limit: requestFilters.limit ?? pageSize,
         });
+        if (!requestGateRef.current.isCurrent(token)) return;
         setEntries((previous) => (mode === 'append' ? [...previous, ...page.images] : page.images));
         setTotal(page.total);
         setHasMore(page.hasMore);
       } catch (loadError) {
+        if (!requestGateRef.current.isCurrent(token)) return;
         setError(normalizeCatalogError(loadError));
       } finally {
-        setIsLoading(false);
+        if (requestGateRef.current.finish(token)) setIsLoading(false);
       }
     },
     [pageSize, queryCatalogPage],
   );
 
   const refresh = useCallback(async () => {
-    await loadPage(0, 'replace');
+    const token = requestGateRef.current.beginReplace();
+    await loadPage(0, 'replace', token, { ...filtersRef.current });
   }, [loadPage]);
 
   const loadMore = useCallback(async () => {
-    if (!hasMore || isLoading) return;
-    await loadPage(entries.length, 'append');
-  }, [entries.length, hasMore, isLoading, loadPage]);
+    if (!hasMore) return;
+    const token = requestGateRef.current.beginAppend();
+    if (!token) return;
+    await loadPage(entries.length, 'append', token, { ...filtersRef.current });
+  }, [entries.length, hasMore, loadPage]);
 
   const hydrateDetail = useCallback(async (imageId: string) => {
+    const requestId = (detailRequestIdsRef.current.get(imageId) ?? 0) + 1;
+    detailRequestIdsRef.current.set(imageId, requestId);
+    const generation = requestGateRef.current.getGeneration();
     const detail = await getCatalogImageDetail(imageId);
+    if (
+      requestGateRef.current.getGeneration() !== generation ||
+      detailRequestIdsRef.current.get(imageId) !== requestId
+    ) {
+      return;
+    }
     setEntries((previous) => previous.map((entry) => (entry.id === imageId ? detail : entry)));
   }, []);
 
   useEffect(() => {
-    if (!enabled) return;
+    if (!enabled) {
+      requestGateRef.current.invalidate();
+      setIsLoading(false);
+      return;
+    }
     void refresh();
   }, [enabled, filtersKey, refresh]);
 

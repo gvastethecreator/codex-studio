@@ -1,7 +1,13 @@
 import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
-import { buildEditGenerationConfig, resolveGenerationWorkspaceId } from './useGenerationPipeline';
+import {
+  buildEditGenerationConfig,
+  getCurrentActiveGenerationRun,
+  removeActiveGenerationRun,
+  resolveGenerationWorkspaceId,
+  type ActiveGenerationRun,
+} from './useGenerationPipeline';
 
 describe('resolveGenerationWorkspaceId', () => {
   it('prefers an explicit queued workspace over the current active workspace', () => {
@@ -43,5 +49,33 @@ describe('buildEditGenerationConfig', () => {
     expect(config.attachments).toHaveLength(1);
     expect(config.attachments[0]?.id.startsWith('mask-')).toBe(true);
     expect(config.attachments[0]?.dataUrl).toBe('data:image/png;base64,MASK');
+  });
+});
+
+describe('active generation run projection', () => {
+  const createRun = (id: number, prompt: string): ActiveGenerationRun => ({
+    id,
+    config: { ...DEFAULT_GENERATION_CONFIG, prompt },
+    startedAt: id * 100,
+  });
+
+  it('keeps the newest active run visible when an older run finishes first', () => {
+    const first = createRun(1, 'first');
+    const second = createRun(2, 'second');
+
+    expect(
+      getCurrentActiveGenerationRun(removeActiveGenerationRun([first, second], first.id)),
+    ).toBe(second);
+  });
+
+  it('falls back to the older active run when the newest run finishes first', () => {
+    const first = createRun(1, 'first');
+    const second = createRun(2, 'second');
+    const remaining = removeActiveGenerationRun([first, second], second.id);
+
+    expect(getCurrentActiveGenerationRun(remaining)).toBe(first);
+    expect(
+      getCurrentActiveGenerationRun(removeActiveGenerationRun(remaining, first.id)),
+    ).toBeNull();
   });
 });

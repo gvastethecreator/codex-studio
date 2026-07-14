@@ -62,6 +62,7 @@ export function createSessionPool({
   resolveProcessCwd = () => process.cwd(),
 }: CreateSessionPoolDependencies = {}): SessionPool {
   const imagegenSessions = new Map<string, SessionHandle>();
+  const pendingImagegenSessions = new Map<string, Promise<SessionHandle>>();
 
   function getImagegenSessionRegistryPath() {
     return resolveLibrary('state', 'imagegen-session-registry.json');
@@ -122,51 +123,56 @@ export function createSessionPool({
     execution?: JobExecutionOptions | null,
   ): Promise<SessionHandle> {
     const client = createClient();
-    await client.connect();
+    try {
+      await client.connect();
 
-    const init = await client.request('initialize', {
-      clientInfo: {
-        name: 'codex-studio',
-        title: 'Codex Studio',
-        version: '0.1.0',
-      },
-      capabilities: null,
-    });
-    const codexHome = init?.codexHome ?? null;
-    client.notify('initialized');
-
-    const persistedThreadId = getPersistedImagegenThreadId(sessionKey);
-    let threadId = persistedThreadId;
-
-    if (!threadId) {
-      const executionOptions = resolveExecutionOptions(execution);
-      const thread = await client.request('thread/start', {
-        model: executionOptions.model,
-        serviceTier: executionOptions.serviceTier ?? undefined,
-        cwd: resolveProcessCwd(),
-        approvalPolicy: 'never',
-        sandbox: 'danger-full-access',
-        sessionStartSource: 'startup',
-        developerInstructions: buildCodexImagegenDeveloperInstructions(sessionKey),
+      const init = await client.request('initialize', {
+        clientInfo: {
+          name: 'codex-studio',
+          title: 'Codex Studio',
+          version: '0.1.0',
+        },
+        capabilities: null,
       });
-      threadId = thread?.thread?.id ?? null;
-    }
+      const codexHome = init?.codexHome ?? null;
+      client.notify('initialized');
 
-    const session: SessionHandle = {
-      client,
-      codexHome,
-      threadId,
-      sessionKey,
-      queue: Promise.resolve(),
-    };
-    imagegenSessions.set(sessionKey, session);
-    rememberImagegenSession(sessionKey, session.threadId);
-    logger(
-      'info',
-      'codex-session',
-      `${persistedThreadId ? 'Reused' : 'Started'} persistent imagegen thread ${session.threadId ?? 'unknown'} for ${sessionKey}`,
-    );
-    return session;
+      const persistedThreadId = getPersistedImagegenThreadId(sessionKey);
+      let threadId = persistedThreadId;
+
+      if (!threadId) {
+        const executionOptions = resolveExecutionOptions(execution);
+        const thread = await client.request('thread/start', {
+          model: executionOptions.model,
+          serviceTier: executionOptions.serviceTier ?? undefined,
+          cwd: resolveProcessCwd(),
+          approvalPolicy: 'never',
+          sandbox: 'danger-full-access',
+          sessionStartSource: 'startup',
+          developerInstructions: buildCodexImagegenDeveloperInstructions(sessionKey),
+        });
+        threadId = thread?.thread?.id ?? null;
+      }
+
+      const session: SessionHandle = {
+        client,
+        codexHome,
+        threadId,
+        sessionKey,
+        queue: Promise.resolve(),
+      };
+      imagegenSessions.set(sessionKey, session);
+      rememberImagegenSession(sessionKey, session.threadId);
+      logger(
+        'info',
+        'codex-session',
+        `${persistedThreadId ? 'Reused' : 'Started'} persistent imagegen thread ${session.threadId ?? 'unknown'} for ${sessionKey}`,
+      );
+      return session;
+    } catch (error) {
+      client.close();
+      throw error;
+    }
   }
 
   function closeSession(sessionKey: string, options?: { invalidatePersistedThread?: boolean }) {
@@ -182,7 +188,16 @@ export function createSessionPool({
   async function getOrCreateSession(sessionKey: string, execution?: JobExecutionOptions | null) {
     const existing = imagegenSessions.get(sessionKey);
     if (existing) return existing;
-    return createSession(sessionKey, execution);
+    const pending = pendingImagegenSessions.get(sessionKey);
+    if (pending) return pending;
+
+    const creation = createSession(sessionKey, execution).finally(() => {
+      if (pendingImagegenSessions.get(sessionKey) === creation) {
+        pendingImagegenSessions.delete(sessionKey);
+      }
+    });
+    pendingImagegenSessions.set(sessionKey, creation);
+    return creation;
   }
 
   return {
