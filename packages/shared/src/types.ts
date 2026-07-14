@@ -56,6 +56,11 @@ export interface JobExecutionOptions {
   serviceTier?: Exclude<CodexServiceTier, 'standard'> | null;
 }
 
+export interface JobLibraryContext {
+  libraryId: string;
+  rootPath: string;
+}
+
 export interface CodexModelReasoningOption {
   reasoningEffort: CodexReasoningEffort;
   description: string | null;
@@ -192,6 +197,7 @@ export interface Job {
   sourceSpec: GenerationTaskSpec | null;
   status: JobStatus;
   execution: JobExecutionOptions | null;
+  libraryContext?: JobLibraryContext | null;
   originalPrompt: string;
   expandedPrompt: string | null;
   finalPromptUsed: string;

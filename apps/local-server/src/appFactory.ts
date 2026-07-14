@@ -10,7 +10,14 @@ import { getSettingValue, setSettingValue } from './db';
 import { getCurrentEventRevision, publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolvePublicLibraryPath, toPublicAssetUrl } from './library';
-import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
+import {
+  getDefaultLibrary,
+  listLibraries,
+  registerLibrary,
+  removeLibrary,
+  resolvePublicLibraryAssetRequest,
+  setDefaultLibrary,
+} from './libraries';
 import { log } from './logger';
 import {
   readEditableStudioSettings,
@@ -234,14 +241,14 @@ export async function createStudioApp(
   app.route(
     '/api/sprite-atlas',
     createSpriteAtlasRoutes({
-      readLibraryDir: () => getSettings().libraryDir,
+      readLibraryDir: () => getDefaultLibrary().path,
     }),
   );
 
   app.route(
     '/api/animation-sequence',
     createAnimationSequenceRoutes({
-      readLibraryDir: () => getSettings().libraryDir,
+      readLibraryDir: () => getDefaultLibrary().path,
       getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
     }),
   );
@@ -276,19 +283,31 @@ export async function createStudioApp(
           sourceSpec: input.sourceSpec,
           prompt: input.prompt,
           execution: input.execution,
+          libraryContext: input.libraryContext,
         }),
       updateJobFinalPrompt: (jobId, finalPrompt) =>
         dbStore.updateJobFinalPrompt(jobId, finalPrompt),
       processReferences: (jobId, prompt, references, libraryDir) =>
         processReferences(jobId, prompt, references ?? [], libraryDir),
-      hydrateSourceSpecAssetPaths: (sourceSpec, references, persistedRefs, libraryDir) =>
+      hydrateSourceSpecAssetPaths: (
+        sourceSpec,
+        references,
+        persistedRefs,
+        libraryDir,
+        libraryContext,
+      ) =>
         hydrateSourceSpecAssetPaths(
           sourceSpec,
           references ?? [],
           persistedRefs as ProcessedReference[],
           libraryDir,
+          libraryContext?.libraryId,
         ),
-      readLibraryDir: () => getSettings().libraryDir,
+      readLibraryDir: () => getDefaultLibrary().path,
+      readLibraryContext: () => {
+        const library = getDefaultLibrary();
+        return { libraryId: library.id, rootPath: library.path };
+      },
       resolveProviderExecutionBlocker: async (providerId) => {
         const codexRuntime =
           providerId === 'codex'
@@ -321,8 +340,11 @@ export async function createStudioApp(
       createHandoffId: () => `handoff-${randomUUID()}`,
       processReferences: (handoffId, prompt, references, libraryDir) =>
         processReferences(handoffId, prompt, references, libraryDir),
-      readLibraryDir: () => getSettings().libraryDir,
-      toPublicAssetUrl,
+      readLibraryDir: () => getDefaultLibrary().path,
+      toPublicAssetUrl: (filePath) => {
+        const library = getDefaultLibrary();
+        return toPublicAssetUrl(filePath, { libraryId: library.id, rootPath: library.path });
+      },
       isReferenceProcessingError: (error): error is ReferenceProcessingError =>
         error instanceof ReferenceProcessingError,
     }),
@@ -369,6 +391,7 @@ export async function createStudioApp(
     '/',
     createLibraryRoutes({
       resolvePublicLibraryPath,
+      resolvePublicLibraryAssetRequest,
       ensureThumbnailVariant,
       buildLibraryAssetHeaders,
       resolveAssetCacheSeconds,

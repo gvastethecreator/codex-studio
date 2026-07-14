@@ -5,7 +5,7 @@ import type { Job } from '../../../packages/shared/src/types';
 import type { resolveJobExecutionOptions } from './codex/executionOptions';
 import type { readEditableStudioSettings } from './studioSettingsStore';
 import type { getSettingValue, setSettingValue } from './db';
-import type { resolveLibraryPath } from './library';
+import { resolveLibraryPathFromRoot, type resolveLibraryPath } from './library';
 
 function resolveUniquePath(filePath: string) {
   if (!existsSync(filePath)) return filePath;
@@ -59,7 +59,10 @@ export function createWorkerAssetPathing({
       recipeId: job.sourceSpec?.recipeId ?? null,
       extension,
     });
-    return resolveUniquePath(resolveLibraryPath(...relativePath.split(/[\\/]/)));
+    const targetPath = job.libraryContext
+      ? resolveLibraryPathFromRoot(job.libraryContext.rootPath, ...relativePath.split(/[\\/]/))
+      : resolveLibraryPath(...relativePath.split(/[\\/]/));
+    return resolveUniquePath(targetPath);
   }
 
   function organizeGeneratedAssetPath(job: Job, filePath: string, providerId: string | null) {

@@ -289,7 +289,9 @@ export function createWorkerController({
       jobId: job.id,
       filePath,
       thumbnailPath,
-      publicUrl: toPublicAssetUrlFn(filePath),
+      publicUrl: job.libraryContext
+        ? toPublicAssetUrlFn(filePath, job.libraryContext)
+        : toPublicAssetUrlFn(filePath),
       prompt: job.finalPromptUsed,
       width: 1200,
       height: 800,
@@ -298,6 +300,7 @@ export function createWorkerController({
     const catalogContext = resolveJobCatalogContextFn(job);
     const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
     const catalogImage = registerCatalogImageFn({
+      libraryId: job.libraryContext?.libraryId ?? null,
       filePath: asset.filePath,
       thumbnailPath: asset.thumbnailPath,
       prompt: asset.prompt,

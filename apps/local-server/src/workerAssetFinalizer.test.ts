@@ -16,6 +16,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
     sourceSpec: overrides.sourceSpec ?? null,
     status: overrides.status ?? 'running',
     execution: overrides.execution ?? null,
+    libraryContext: overrides.libraryContext ?? null,
     originalPrompt: overrides.originalPrompt ?? 'prompt',
     expandedPrompt: overrides.expandedPrompt ?? null,
     finalPromptUsed: overrides.finalPromptUsed ?? 'prompt',
@@ -123,7 +124,9 @@ describe('workerAssetFinalizer', () => {
 
     try {
       await finalizer.finalizeJobAsset({
-        job: createJob(),
+        job: createJob({
+          libraryContext: { libraryId: 'library-1', rootPath: tempRoot },
+        }),
         catalogContext: {
           workspaceId: 'workspace-1',
           batchId: 'batch-1',
@@ -135,7 +138,10 @@ describe('workerAssetFinalizer', () => {
         },
       });
 
-      expect(toPublicAssetUrl).toHaveBeenCalledWith(organizedPath);
+      expect(toPublicAssetUrl).toHaveBeenCalledWith(organizedPath, {
+        libraryId: 'library-1',
+        rootPath: tempRoot,
+      });
       expect(addAsset).toHaveBeenCalledWith(
         expect.objectContaining({
           filePath: organizedPath,
@@ -145,6 +151,7 @@ describe('workerAssetFinalizer', () => {
       );
       expect(registerCatalogImage).toHaveBeenCalledWith(
         expect.objectContaining({
+          libraryId: 'library-1',
           filePath: organizedPath,
           thumbnailPath: `${organizedPath}.thumb.webp`,
         }),

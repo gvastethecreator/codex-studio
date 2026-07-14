@@ -14,6 +14,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
     sourceSpec: overrides.sourceSpec ?? null,
     status: overrides.status ?? 'queued',
     execution: overrides.execution ?? null,
+    libraryContext: overrides.libraryContext ?? null,
     originalPrompt: overrides.originalPrompt ?? 'prompt',
     expandedPrompt: overrides.expandedPrompt ?? null,
     finalPromptUsed: overrides.finalPromptUsed ?? 'prompt',
@@ -91,6 +92,39 @@ describe('workerAssetPathing', () => {
       expect(path.basename(resolved)).toBe('fixed-file-2.png');
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
+    }
+  });
+
+  it('keeps an in-flight job on its captured Library root', () => {
+    const bootstrapRoot = mkdtempSync(path.join(os.tmpdir(), 'worker-bootstrap-library-'));
+    const selectedRoot = mkdtempSync(path.join(os.tmpdir(), 'worker-selected-library-'));
+
+    try {
+      const pathing = createWorkerAssetPathing({
+        resolveExecutionOptions: () => ({
+          model: 'gpt-5.4-mini',
+          reasoningEffort: 'medium',
+          serviceTier: null,
+        }),
+        readEditableStudioSettings: () => createDefaultEditableStudioSettings(),
+        getSetting: () => null,
+        setSetting: () => {},
+        resolveLibraryPath: (...segments: string[]) => path.join(bootstrapRoot, ...segments),
+      });
+
+      const target = pathing.resolveGeneratedAssetTargetPath(
+        createJob({
+          libraryContext: { libraryId: 'library-selected', rootPath: selectedRoot },
+        }),
+        'codex',
+        '.png',
+      );
+
+      expect(path.relative(selectedRoot, target)).not.toMatch(/^\.\./);
+      expect(path.relative(bootstrapRoot, target)).toMatch(/^\.\./);
+    } finally {
+      rmSync(bootstrapRoot, { recursive: true, force: true });
+      rmSync(selectedRoot, { recursive: true, force: true });
     }
   });
 });

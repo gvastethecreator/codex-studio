@@ -6,6 +6,7 @@ import type {
   Job,
   JobExecutionOptions,
   JobKind,
+  JobLibraryContext,
   JobSummary,
   Project,
   SystemLog,
@@ -23,6 +24,7 @@ export interface StudioDbStore {
     sourceSpec?: GenerationTaskSpec | null;
     prompt: string;
     execution?: JobExecutionOptions | null;
+    libraryContext?: JobLibraryContext | null;
   }): Job;
   updateJobFinalPrompt(id: string, finalPrompt: string): Job | null;
   requeueJob?(id: string): Job | null;
@@ -87,6 +89,10 @@ function mapJob(row: any): Job {
     sourceSpec: parseJson<GenerationTaskSpec | null>(row.source_spec_json, null),
     status: row.status,
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
+    libraryContext:
+      row.library_id && row.library_root
+        ? { libraryId: row.library_id, rootPath: row.library_root }
+        : null,
     originalPrompt: row.original_prompt,
     expandedPrompt: row.expanded_prompt,
     finalPromptUsed: row.final_prompt_used,
@@ -106,6 +112,10 @@ function mapJobSummary(row: any): JobSummary {
     sourceSpec: null,
     status: row.status,
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
+    libraryContext:
+      row.library_id && row.library_root
+        ? { libraryId: row.library_id, rootPath: row.library_root }
+        : null,
     originalPrompt: createPromptPreview(row.original_prompt),
     expandedPrompt: row.expanded_prompt ? createPromptPreview(row.expanded_prompt) : null,
     finalPromptUsed: createPromptPreview(row.final_prompt_used),
@@ -176,6 +186,8 @@ function migrateSqliteDbStore(database: SqliteDatabaseLike) {
       source_spec_json TEXT,
       status TEXT NOT NULL,
       execution_json TEXT,
+      library_id TEXT,
+      library_root TEXT,
       original_prompt TEXT NOT NULL,
       expanded_prompt TEXT,
       final_prompt_used TEXT NOT NULL,
@@ -214,6 +226,8 @@ function migrateSqliteDbStore(database: SqliteDatabaseLike) {
   ensureColumn(database, 'jobs', 'execution_json', 'TEXT');
   ensureColumn(database, 'jobs', 'provider_id', 'TEXT');
   ensureColumn(database, 'jobs', 'source_spec_json', 'TEXT');
+  ensureColumn(database, 'jobs', 'library_id', 'TEXT');
+  ensureColumn(database, 'jobs', 'library_root', 'TEXT');
   database.run('CREATE INDEX IF NOT EXISTS idx_jobs_created_desc ON jobs(created_at DESC)');
 }
 
@@ -277,6 +291,7 @@ export function createSqliteDbStore({
         sourceSpec: input.sourceSpec ?? null,
         status: 'queued',
         execution: input.execution ?? null,
+        libraryContext: input.libraryContext ?? null,
         originalPrompt: input.prompt,
         expandedPrompt: null,
         finalPromptUsed: input.prompt,
@@ -287,8 +302,8 @@ export function createSqliteDbStore({
       };
       database
         .query(`
-          INSERT INTO jobs (id, project_id, kind, provider_id, source_spec_json, status, execution_json, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+          INSERT INTO jobs (id, project_id, kind, provider_id, source_spec_json, status, execution_json, library_id, library_root, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         `)
         .run(
           job.id,
@@ -298,6 +313,8 @@ export function createSqliteDbStore({
           job.sourceSpec ? JSON.stringify(job.sourceSpec) : null,
           job.status,
           job.execution ? JSON.stringify(job.execution) : null,
+          job.libraryContext?.libraryId ?? null,
+          job.libraryContext?.rootPath ?? null,
           job.originalPrompt,
           job.expandedPrompt,
           job.finalPromptUsed,
@@ -337,7 +354,7 @@ export function createSqliteDbStore({
         .query(
           `
           SELECT
-            id, project_id, kind, provider_id, status, execution_json,
+            id, project_id, kind, provider_id, status, execution_json, library_id, library_root,
             original_prompt, expanded_prompt, final_prompt_used, error,
             created_at, updated_at, completed_at
           FROM jobs

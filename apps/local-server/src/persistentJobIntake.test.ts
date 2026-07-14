@@ -89,7 +89,11 @@ describe('persistentJobIntake', () => {
 
     expect(result.ok).toBe(true);
     expect(createJobFn).toHaveBeenCalledWith(
-      expect.objectContaining({ kind: 'image_generate', providerId: 'codex' }),
+      expect.objectContaining({
+        kind: 'image_generate',
+        providerId: 'codex',
+        libraryContext: { libraryId: 'legacy-default', rootPath: 'D:/library' },
+      }),
     );
     expect(publishEvent).toHaveBeenCalledWith(
       'job.created',
@@ -255,5 +259,52 @@ describe('persistentJobIntake', () => {
       },
     });
     expect(processReferences).not.toHaveBeenCalled();
+  });
+
+  it('rejects hydrated provider assets outside the captured Library Context', async () => {
+    const createJobFn = vi.fn();
+    const intake = createPersistentJobIntake({
+      ensureDefaultProjectId: () => 'project-default',
+      createJobId: () => 'job-hostile-path',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'edit', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/StudioLibrary',
+      readLibraryContext: () => ({
+        libraryId: 'library-1',
+        rootPath: 'D:/StudioLibrary',
+      }),
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: () => ({ type: 'job.created', payload: {}, createdAt: '' }),
+      logJobCreated: () => {},
+      enqueueJob: () => {},
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_edit',
+      providerId: 'google',
+      prompt: 'edit',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'spec-hostile-path',
+        task: 'image_edit',
+        providerId: 'google',
+        prompt: 'edit',
+        assets: [{ role: 'input', name: 'secret.png', localPath: 'D:/secrets/secret.png' }],
+      }),
+    });
+
+    expect(result).toEqual({
+      ok: false,
+      error: {
+        status: 400,
+        body: expect.objectContaining({
+          code: 'unmanaged_asset_path',
+          field: 'sourceSpec.assets.0.localPath',
+        }),
+      },
+    });
+    expect(createJobFn).not.toHaveBeenCalled();
   });
 });

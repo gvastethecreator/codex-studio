@@ -85,7 +85,9 @@ export function createWorkerAssetFinalizer({
       jobId: job.id,
       filePath: organizedImagePath,
       thumbnailPath,
-      publicUrl: toPublicAssetUrl(organizedImagePath),
+      publicUrl: job.libraryContext
+        ? toPublicAssetUrl(organizedImagePath, job.libraryContext)
+        : toPublicAssetUrl(organizedImagePath),
       prompt: job.finalPromptUsed,
       width: null,
       height: null,
@@ -103,6 +105,7 @@ export function createWorkerAssetFinalizer({
       : parsePromptTransport(job.finalPromptUsed);
 
     const catalogImage = registerCatalogImage({
+      libraryId: job.libraryContext?.libraryId ?? null,
       filePath: asset.filePath,
       thumbnailPath: asset.thumbnailPath,
       prompt: asset.prompt,

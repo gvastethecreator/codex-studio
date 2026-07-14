@@ -1,7 +1,7 @@
 import path from 'node:path';
 import { describe, expect, it } from 'vite-plus/test';
 
-import { resolveLibraryPathFromRoot } from './library';
+import { resolveLibraryPathFromRoot, toPublicAssetUrl } from './library';
 
 describe('studio library layout', () => {
   const root = path.join('D:', 'StudioWorkspace');
@@ -40,5 +40,18 @@ describe('studio library layout', () => {
     expect(resolveLibraryPathFromRoot(root, '.trash', 'assets', 'job-1.png')).toBe(
       path.join(root, 'outputs', '.trash', 'assets', 'job-1.png'),
     );
+  });
+
+  it('names alternate Library URLs and rejects paths outside the captured root', () => {
+    const output = path.join(root, 'outputs', 'job-1.png');
+    expect(toPublicAssetUrl(output, { libraryId: 'library-alt', rootPath: root })).toBe(
+      '/library/library-alt/outputs/job-1.png',
+    );
+    expect(() =>
+      toPublicAssetUrl(path.join(root, '..', 'secret.png'), {
+        libraryId: 'library-alt',
+        rootPath: root,
+      }),
+    ).toThrow('outside its root');
   });
 });

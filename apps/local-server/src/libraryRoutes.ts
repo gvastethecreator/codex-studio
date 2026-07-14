@@ -13,6 +13,9 @@ import { isPublicLibraryAssetPath } from './publicLibraryAssetPolicy';
 
 interface LibraryRoutesDependencies {
   resolvePublicLibraryPath: typeof resolvePublicLibraryPath;
+  resolvePublicLibraryAssetRequest?: (
+    relativePath: string,
+  ) => { filePath: string; assetRelativePath: string } | null;
   ensureThumbnailVariant: typeof ensureThumbnailVariant;
   buildLibraryAssetHeaders: typeof buildLibraryAssetHeaders;
   resolveAssetCacheSeconds: typeof resolveAssetCacheSeconds;
@@ -25,6 +28,7 @@ interface LibraryRoutesDependencies {
 
 export function createLibraryRoutes({
   resolvePublicLibraryPath,
+  resolvePublicLibraryAssetRequest,
   ensureThumbnailVariant,
   buildLibraryAssetHeaders,
   resolveAssetCacheSeconds,
@@ -44,8 +48,12 @@ export function createLibraryRoutes({
     } catch {
       return c.notFound();
     }
-    if (!canServePublicLibraryAsset(relative)) return c.notFound();
-    const filePath = resolvePublicLibraryPath(relative);
+    const resolved = resolvePublicLibraryAssetRequest?.(relative) ?? {
+      filePath: resolvePublicLibraryPath(relative),
+      assetRelativePath: relative,
+    };
+    if (!resolved || !canServePublicLibraryAsset(resolved.assetRelativePath)) return c.notFound();
+    const filePath = resolved.filePath;
     if (!fileExists(filePath)) return c.notFound();
 
     const url = new URL(c.req.url);

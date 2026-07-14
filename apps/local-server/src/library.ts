@@ -1,6 +1,7 @@
 import { accessSync, constants, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
+import type { JobLibraryContext } from '../../../packages/shared/src';
 
 export const LIBRARY_FOLDERS = [
   '.studio',
@@ -110,9 +111,16 @@ export function inspectLibrary() {
   };
 }
 
-export function toPublicAssetUrl(filePath: string) {
-  const relative = path.relative(getSettings().libraryDir, filePath).replaceAll(path.sep, '/');
-  return `/library/${encodeURIComponent(relative).replaceAll('%2F', '/')}`;
+export function toPublicAssetUrl(filePath: string, libraryContext?: JobLibraryContext | null) {
+  const rootPath = libraryContext?.rootPath ?? getSettings().libraryDir;
+  const relative = path.relative(rootPath, filePath).replaceAll(path.sep, '/');
+  if (relative.startsWith('..') || path.isAbsolute(relative)) {
+    throw new Error('Cannot create a Studio Library URL for a path outside its root.');
+  }
+  const libraryPrefix = libraryContext?.libraryId
+    ? `${encodeURIComponent(libraryContext.libraryId)}/`
+    : '';
+  return `/library/${libraryPrefix}${encodeURIComponent(relative).replaceAll('%2F', '/')}`;
 }
 
 export function resolvePublicLibraryPath(relativePath: string) {
