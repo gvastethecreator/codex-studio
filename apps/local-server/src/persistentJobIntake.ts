@@ -1,12 +1,16 @@
 import type {
   CreateJobRequest,
+  EditableStudioSettings,
   GenerationTaskSpec,
   Job,
   JobLibraryContext,
 } from '../../../packages/shared/src';
+import { createDefaultEditableStudioSettings } from '../../../packages/shared/src';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
 import type { publishEvent } from './events';
 import { validateManagedGenerationAssets } from './managedAssetPolicy';
+import { resolveEffectiveJobExecutionOptions } from './providerExecutionPolicy';
+import { resolveBootstrapProviderExecutionOptions } from './providers/providerExecutionDefaults';
 
 interface ProcessReferencesResult {
   augmentedPrompt: string;
@@ -48,6 +52,8 @@ export interface PersistentJobIntakeDependencies {
   ) => GenerationTaskSpec | null;
   readLibraryDir: () => string;
   readLibraryContext?: () => JobLibraryContext;
+  readEditableSettings?: () => EditableStudioSettings;
+  resolveBootstrapExecution?: typeof resolveBootstrapProviderExecutionOptions;
   validateManagedAssets?: typeof validateManagedGenerationAssets;
   resolveProviderExecutionBlocker: (
     providerId: string,
@@ -151,6 +157,8 @@ export function createPersistentJobIntake({
   hydrateSourceSpecAssetPaths,
   readLibraryDir,
   readLibraryContext,
+  readEditableSettings = createDefaultEditableStudioSettings,
+  resolveBootstrapExecution = resolveBootstrapProviderExecutionOptions,
   validateManagedAssets = validateManagedGenerationAssets,
   resolveProviderExecutionBlocker,
   isReferenceProcessingError,
@@ -258,7 +266,12 @@ export function createPersistentJobIntake({
         providerId,
         sourceSpec,
         prompt,
-        execution: request.execution ?? null,
+        execution: resolveEffectiveJobExecutionOptions({
+          providerId,
+          explicit: request.execution,
+          settings: readEditableSettings(),
+          bootstrap: resolveBootstrapExecution(providerId),
+        }),
         libraryContext,
       });
 

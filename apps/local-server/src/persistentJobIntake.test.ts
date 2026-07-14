@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
 
 import {
+  createDefaultEditableStudioSettings,
   createGenerationTaskSpec,
   type GenerationTaskSpec,
   type Job,
@@ -101,6 +102,64 @@ describe('persistentJobIntake', () => {
     );
     expect(logJobCreated).toHaveBeenCalledWith('image_generate', 'job-new');
     expect(enqueueJob).toHaveBeenCalledWith(expect.objectContaining({ id: 'job-new' }));
+  });
+
+  it('persists backend-resolved provider execution defaults at intake', async () => {
+    const createJobFn = vi.fn((input: CreateJobInput) =>
+      createJob({
+        providerId: input.providerId,
+        execution: input.execution,
+      }),
+    );
+    const intake = createPersistentJobIntake({
+      ensureDefaultProjectId: () => 'project-default',
+      createJobId: () => 'job-policy',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      readEditableSettings: () => ({
+        ...createDefaultEditableStudioSettings(),
+        providerDefaults: {
+          codex: {
+            providerId: 'codex',
+            model: 'provider-model',
+            reasoningEffort: 'high',
+            serviceTier: 'fast',
+          },
+        },
+      }),
+      resolveBootstrapExecution: () => ({
+        model: 'bootstrap-model',
+        reasoningEffort: 'medium',
+        serviceTier: null,
+      }),
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: vi.fn(),
+      logJobCreated: vi.fn(),
+      enqueueJob: vi.fn(),
+    });
+
+    await intake.createJob({
+      kind: 'codex_imagegen',
+      prompt: 'draw',
+      execution: {
+        model: 'explicit-model',
+        reasoningEffort: '',
+      },
+    });
+
+    expect(createJobFn).toHaveBeenCalledWith(
+      expect.objectContaining({
+        execution: {
+          model: 'explicit-model',
+          reasoningEffort: 'high',
+          serviceTier: 'fast',
+        },
+      }),
+    );
   });
 
   it('hydrates Studio Library recipe retry assets before final source spec validation', async () => {

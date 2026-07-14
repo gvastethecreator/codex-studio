@@ -26,7 +26,7 @@ Close every accepted recommendation from the 2026-07-14 architecture audit witho
 | CONC-01 | Cancel persistent jobs that link after their browser run was already cancelled.                                       | Implemented; focused proof green |
 | CONC-02 | Make provider session creation single-flight per session key.                                                         | Implemented; focused proof green |
 | CONC-03 | Prevent stale Catalog replace/append/detail responses from crossing filter generations.                               | Implemented; focused proof green |
-| ARCH-01 | Make backend intake authoritative for provider execution defaults and nullable resets.                                | Planned                          |
+| ARCH-01 | Make backend intake authoritative for provider execution defaults and nullable resets.                                | Implemented; focused proof green |
 | UI-01   | Track active generation metadata per run instead of using one global mutable record.                                  | Implemented; focused proof green |
 | TEST-01 | Exercise migrations against real legacy SQLite fixtures, including idempotence and sentinel data.                     | Implemented; focused proof green |
 | CI-01   | Enforce source architecture audits in CI and fix current Library-layout violations.                                   | Planned                          |
@@ -79,6 +79,13 @@ Recorded before implementation:
 - Change: session creation is single-flight per key, closes failed clients, clears rejected promises, and permits retry. A newly linked backend job installs an abort listener and immediately requests durable cancellation when the signal was already aborted. Catalog reads use generation/request tokens: replacement supersedes older work, append is single-flight, filter changes invalidate page and detail responses, and only the current token owns loading/error state. Generation overlays project the newest active run from a tokenized run list and fall back to the remaining run when completion order reverses.
 - Evidence: four focused files passed 14 tests, including deferred late-link cancellation, concurrent session creation, rejected-session retry, Catalog A→B/append invalidation, and both active-run completion orders. Focused format/type/lint check and `git diff --check` passed.
 - Verdict: better. Lifecycle races are closed; continue with execution settings authority and Style Pack runtime ownership.
+
+### Loop 5 — One execution-policy authority
+
+- Pressure: browser jobs always carried composer execution values, scripts could omit them, provider defaults were persisted but unused, bootstrap fallbacks lived inside separate executors, and null settings could not clear an existing model/effort/tier.
+- Change: Persistent Job Intake now resolves and persists effective execution per field in the order explicit override → selected provider default → provider/bootstrap fallback. Google, fal, and Comfy share their non-secret fallback model constants with this policy; Codex consumes bootstrap configuration. Settings sanitization distinguishes missing fields from explicit null, and the Settings modal edits the selected provider's model, reasoning, and service tier with clear-to-bootstrap behavior.
+- Evidence: 44 tests across 10 route/store/intake/policy/executor/UI files passed. Focused checks covered 13 changed files with zero format, type, or lint findings. The policy tests prove mixed per-field precedence and nullable fallback.
+- Verdict: better. Settings now have one backend authority; continue with Style Pack registry ownership and single-flight loading.
 
 ## Final gate
 

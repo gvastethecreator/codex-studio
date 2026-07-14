@@ -31,6 +31,7 @@ import type {
 import type {
   EditableStudioSettings,
   EditableStudioSettingsPatch,
+  ProviderDefaultSettings,
   StudioOutputMode,
   StudioOutputSubfolderToken,
 } from '../packages/shared/src/studioSettings';
@@ -123,7 +124,7 @@ function providerStatusClass(status: string) {
   return 'border-white/8 bg-white/4 text-zinc-400';
 }
 
-interface FormState {
+export interface StudioSettingsFormState {
   defaultProviderId: GenerationProviderId;
   defaultOutputMode: StudioOutputMode;
   preferredOutputPath: string;
@@ -131,9 +132,10 @@ interface FormState {
   outputFileNameTemplate: string;
   autoDetectOutputSources: boolean;
   commandCenterCompactMode: boolean;
+  providerDefaults: EditableStudioSettings['providerDefaults'];
 }
 
-function getInitialFormState(): FormState {
+function getInitialFormState(): StudioSettingsFormState {
   return {
     defaultProviderId: 'codex',
     defaultOutputMode: 'studio_library',
@@ -142,10 +144,11 @@ function getInitialFormState(): FormState {
     outputFileNameTemplate: '{timestamp}-{provider}-{jobId}',
     autoDetectOutputSources: true,
     commandCenterCompactMode: false,
+    providerDefaults: {},
   };
 }
 
-function getFormStateFromSettings(s: EditableStudioSettings): FormState {
+export function getStudioSettingsFormState(s: EditableStudioSettings): StudioSettingsFormState {
   return {
     defaultProviderId: s.defaultProviderId,
     defaultOutputMode: s.defaultOutputMode,
@@ -154,12 +157,33 @@ function getFormStateFromSettings(s: EditableStudioSettings): FormState {
     outputFileNameTemplate: s.outputOrganization.fileNameTemplate,
     autoDetectOutputSources: s.autoDetectOutputSources,
     commandCenterCompactMode: s.commandCenterCompactMode,
+    providerDefaults: s.providerDefaults,
+  };
+}
+
+export function buildStudioSettingsPatch(
+  formState: StudioSettingsFormState,
+): EditableStudioSettingsPatch {
+  return {
+    defaultProviderId: formState.defaultProviderId,
+    defaultOutputMode: formState.defaultOutputMode,
+    preferredOutputPath: normalizeOutputPath(formState.preferredOutputPath),
+    outputOrganization: {
+      subfolderTokens:
+        OUTPUT_SUBFOLDER_PRESETS.find(
+          (preset) => encodeSubfolderTokens(preset.value) === formState.outputSubfolderPreset,
+        )?.value ?? [],
+      fileNameTemplate: formState.outputFileNameTemplate,
+    },
+    autoDetectOutputSources: formState.autoDetectOutputSources,
+    commandCenterCompactMode: formState.commandCenterCompactMode,
+    providerDefaults: formState.providerDefaults,
   };
 }
 
 interface SettingsFormPanelProps {
-  formState: FormState;
-  onFormChange: React.Dispatch<React.SetStateAction<FormState>>;
+  formState: StudioSettingsFormState;
+  onFormChange: React.Dispatch<React.SetStateAction<StudioSettingsFormState>>;
   libraryDir: string | null;
   providerOptions: GenerationProviderId[];
   providerCapabilities: GenerationProviderCapabilitiesResponse | null;
@@ -186,7 +210,35 @@ function SettingsFormPanel({
     outputFileNameTemplate,
     autoDetectOutputSources,
     commandCenterCompactMode,
+    providerDefaults,
   } = formState;
+  const selectedProviderDefaults: ProviderDefaultSettings = providerDefaults[defaultProviderId] ?? {
+    providerId: defaultProviderId,
+    model: null,
+    reasoningEffort: null,
+    serviceTier: null,
+  };
+  const updateSelectedProviderDefaults = (patch: Partial<ProviderDefaultSettings>) => {
+    setFormState((prev) => {
+      const current = prev.providerDefaults[prev.defaultProviderId] ?? {
+        providerId: prev.defaultProviderId,
+        model: null,
+        reasoningEffort: null,
+        serviceTier: null,
+      };
+      return {
+        ...prev,
+        providerDefaults: {
+          ...prev.providerDefaults,
+          [prev.defaultProviderId]: {
+            ...current,
+            ...patch,
+            providerId: prev.defaultProviderId,
+          },
+        },
+      };
+    });
+  };
 
   const preflightByProvider = new Map(
     providerRuntimePreflight?.providers.map((p) => [p.providerId, p]) ?? [],
@@ -229,6 +281,70 @@ function SettingsFormPanel({
           ))}
         </select>
       </label>
+
+      <div className="md:col-span-2 grid gap-3 rounded-lg border border-white/8 bg-white/4 p-4 md:grid-cols-3">
+        <div className="md:col-span-3">
+          <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+            Provider Execution Defaults
+          </div>
+          <p className="mt-1 text-[10px] leading-relaxed text-zinc-600">
+            Used when a job does not send an explicit override. Empty values fall back to the
+            provider bootstrap configuration.
+          </p>
+        </div>
+        <label className="flex flex-col gap-2">
+          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+            Model
+          </span>
+          <input
+            value={selectedProviderDefaults.model ?? ''}
+            onChange={(event) =>
+              updateSelectedProviderDefaults({ model: event.target.value.trim() || null })
+            }
+            placeholder="Provider bootstrap"
+            aria-label="Provider default model"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+          />
+        </label>
+        <label className="flex flex-col gap-2">
+          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+            Reasoning
+          </span>
+          <input
+            value={selectedProviderDefaults.reasoningEffort ?? ''}
+            onChange={(event) =>
+              updateSelectedProviderDefaults({
+                reasoningEffort: event.target.value.trim() || null,
+              })
+            }
+            placeholder="Provider bootstrap"
+            aria-label="Provider default reasoning effort"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+          />
+        </label>
+        <label className="flex flex-col gap-2">
+          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+            Service Tier
+          </span>
+          <select
+            value={selectedProviderDefaults.serviceTier ?? ''}
+            onChange={(event) =>
+              updateSelectedProviderDefaults({
+                serviceTier:
+                  event.target.value === 'fast' || event.target.value === 'flex'
+                    ? event.target.value
+                    : null,
+              })
+            }
+            aria-label="Provider default service tier"
+            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+          >
+            <option value="">Provider bootstrap</option>
+            <option value="fast">Fast</option>
+            <option value="flex">Flex</option>
+          </select>
+        </label>
+      </div>
 
       <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
         <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
@@ -932,12 +1048,12 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   onResetStudio,
   isResettingStudio,
 }) => {
-  const [formState, setFormState] = useState<FormState>(getInitialFormState);
+  const [formState, setFormState] = useState<StudioSettingsFormState>(getInitialFormState);
 
   const prevSettingsRef = useRef(settings);
   if (isOpen && settings && settings !== prevSettingsRef.current) {
     prevSettingsRef.current = settings;
-    setFormState(getFormStateFromSettings(settings));
+    setFormState(getStudioSettingsFormState(settings));
   }
   if (!isOpen && prevSettingsRef.current !== null) {
     prevSettingsRef.current = null;
@@ -951,32 +1067,22 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     outputFileNameTemplate,
     autoDetectOutputSources,
     commandCenterCompactMode,
+    providerDefaults,
   } = formState;
 
   const providerOptions = useMemo(
     () =>
-      [...BUILT_IN_GENERATION_PROVIDERS, defaultProviderId].filter(
-        (providerId, index, all) => all.indexOf(providerId) === index,
-      ),
-    [defaultProviderId],
+      [
+        ...BUILT_IN_GENERATION_PROVIDERS,
+        ...Object.keys(providerDefaults),
+        defaultProviderId,
+      ].filter((providerId, index, all) => all.indexOf(providerId) === index),
+    [defaultProviderId, providerDefaults],
   );
   if (!isOpen) return null;
 
   const handleSave = () => {
-    void onUpdate({
-      defaultProviderId,
-      defaultOutputMode,
-      preferredOutputPath: normalizeOutputPath(preferredOutputPath),
-      outputOrganization: {
-        subfolderTokens:
-          OUTPUT_SUBFOLDER_PRESETS.find(
-            (preset) => encodeSubfolderTokens(preset.value) === outputSubfolderPreset,
-          )?.value ?? [],
-        fileNameTemplate: outputFileNameTemplate,
-      },
-      autoDetectOutputSources,
-      commandCenterCompactMode,
-    });
+    void onUpdate(buildStudioSettingsPatch(formState));
   };
 
   return (

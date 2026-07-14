@@ -308,6 +308,7 @@ export async function createStudioApp(
         const library = getDefaultLibrary();
         return { libraryId: library.id, rootPath: library.path };
       },
+      readEditableSettings: () => readEditableStudioSettings(settingsStorage),
       resolveProviderExecutionBlocker: async (providerId) => {
         const codexRuntime =
           providerId === 'codex'
