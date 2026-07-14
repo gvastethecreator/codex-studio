@@ -92,7 +92,7 @@ export function useStyleRuntimePacks({
 
   return {
     loadedStylePacksById: packsById,
-    loadStylePacks: loadPacks,
+    loadStyleRuntimePacks: loadPacks,
     isLoadingStylePacks: loadState.isLoading,
     styleRuntimeError: loadState.error,
     retryStylePacks,

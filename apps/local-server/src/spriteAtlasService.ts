@@ -17,6 +17,7 @@ import {
   type SpriteAtlasRun,
   type SpriteAtlasRunPaths,
 } from '../../../packages/shared/src/spriteAtlasContracts';
+import { resolveLibraryPathFromRoot } from './library';
 
 export interface SpriteAtlasService {
   listPresets(): ReturnType<typeof createSpriteAtlasPresetSummaries>;
@@ -47,7 +48,7 @@ function safeSegment(value: string) {
 }
 
 function createRunPaths(libraryDir: string, runId: string): SpriteAtlasRunPaths {
-  const runDir = path.join(libraryDir, 'outputs', 'sprite-atlas', runId);
+  const runDir = resolveLibraryPathFromRoot(libraryDir, 'outputs', 'sprite-atlas', runId);
   const handoffDir = path.join(runDir, 'codex-handoff');
   return {
     runDir,
@@ -270,7 +271,7 @@ export function createSpriteAtlasService({
       return createSpriteAtlasPresetSummaries();
     },
     async listRuns() {
-      const root = path.join(readLibraryDir(), 'outputs', 'sprite-atlas');
+      const root = resolveLibraryPathFromRoot(readLibraryDir(), 'outputs', 'sprite-atlas');
       try {
         const entries = await readdir(root, { withFileTypes: true });
         const runs = await Promise.all(

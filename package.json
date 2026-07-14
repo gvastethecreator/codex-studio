@@ -65,6 +65,7 @@
     "ui:chunks": "bun run scripts/report-ui-chunks.ts",
     "ui:chunks:verify": "bun run scripts/report-ui-chunks.ts --verify",
     "ui:source:verify": "bun run scripts/ui-demand-surface-audit.ts",
+    "architecture:verify": "bun run styles:source:verify && bun run recipes:source:verify && bun run providers:source:verify && bun run catalog:source:verify && bun run library:layout:verify && bun run ui:source:verify",
     "ui:responsive": "tsx ./scripts/verify-responsive-mobile.ts",
     "ui:responsive:verify": "tsx ./scripts/verify-responsive-mobile.ts --verify",
     "styles:render": "bun run scripts/report-style-render-budget.ts",

@@ -1323,7 +1323,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     (isGlobalStyleSearchActive && !activeStyleCollectionId);
   const {
     loadedStylePacksById,
-    loadStylePacks,
+    loadStyleRuntimePacks,
     isLoadingStylePacks,
     styleRuntimeError,
     retryStylePacks,
@@ -2120,7 +2120,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       let loadedPack = loadedStylePacksById[result.packId];
       if (!loadedPack) {
         try {
-          [loadedPack] = await loadStylePacks([result.packId]);
+          [loadedPack] = await loadStyleRuntimePacks([result.packId]);
         } catch {
           return;
         }
@@ -2137,7 +2137,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
       handleApplyStyleRef.current(preset, result.packId);
     },
-    [loadedStylePacksById, loadStylePacks, applyStyleTab],
+    [loadedStylePacksById, loadStyleRuntimePacks, applyStyleTab],
   );
 
   const handleCopyStylePrompt = (e: React.MouseEvent, preset: StyleRuntimePreset) => {

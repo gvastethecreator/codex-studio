@@ -29,7 +29,7 @@ Close every accepted recommendation from the 2026-07-14 architecture audit witho
 | ARCH-01 | Make backend intake authoritative for provider execution defaults and nullable resets.                                | Implemented; focused proof green |
 | UI-01   | Track active generation metadata per run instead of using one global mutable record.                                  | Implemented; focused proof green |
 | TEST-01 | Exercise migrations against real legacy SQLite fixtures, including idempotence and sentinel data.                     | Implemented; focused proof green |
-| CI-01   | Enforce source architecture audits in CI and fix current Library-layout violations.                                   | Planned                          |
+| CI-01   | Enforce source architecture audits in CI and fix current Library-layout violations.                                   | Implemented; focused proof green |
 | PERF-01 | Give Style Pack loading one cached, single-flight runtime owner and remove duplicate load policy from `StylesRecipe`. | Implemented; focused proof green |
 
 ## Architecture decisions
@@ -93,6 +93,13 @@ Recorded before implementation:
 - Change: `stylesData` now owns a per-pack registry with shared in-flight promises, normalized value caching, canonical all-pack order, and rejected-promise eviction. A focused hook converts current tab, collection, favorites, and search intent into one deduplicated request, owns the local projection, and exposes loading/error/retry state. `StylesRecipe` removed four load-policy effects and routes direct catalog selections through the same registry.
 - Evidence: five Style runtime/collection/render files passed 30 tests. Deferred tests prove one physical pack/thumbnail load across focused and all-pack callers plus retry after rejection. Focused format/type/lint checks passed. `react-doctor --scope changed --base main` reported no issues.
 - Verdict: better. Style loading has one runtime owner and user-visible recovery; continue with static architecture gates and full-system proof.
+
+### Loop 7 — Enforced architecture source boundaries
+
+- Pressure: the Library layout audit was red at baseline, and six source-boundary audits existed only as opt-in commands outside CI. The first aggregate run also caught a newly reused retired Style loader name before it could become a compatibility seam.
+- Change: Animation Sequence and Sprite Atlas resolve their `outputs` roots through the canonical Library resolver. A single `architecture:verify` gate now runs Style, Recipe, Provider, Catalog, Library-layout, and demand-mounted UI source audits, and CI requires it before type/lint checks and tests. The Style hook contract uses the canonical runtime vocabulary instead of allowlisting the retired alias.
+- Evidence: Animation Sequence and Sprite Atlas route suites passed 5 tests; the focused Style hook/recipe suite passed; all six architecture audits reported zero violations; `git diff --check` passed.
+- Verdict: better. Static architecture boundaries are now executable and mandatory; continue with full repository and browser proof.
 
 ## Final gate
 
