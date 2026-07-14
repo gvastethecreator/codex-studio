@@ -1,6 +1,6 @@
 # Architecture recommendations closure
 
-Status: Active
+Status: Complete
 
 Started: 2026-07-14
 
@@ -122,6 +122,21 @@ Recorded before implementation:
 - Evidence: no unmanaged Library-root matches remain outside the canonical internals; provider/session/catalog owners are singular and covered; diff secret search found only the existing redacted `FAL_API_KEY` variable name in an error string; duplicate-family and render-budget report tests passed 7/7 and the duplicate report executed under Node/Bun.
 - Verdict: **continue**. The audit improved the result but changed source after the broad checkpoint; run one final clean-tree gate and repeat the completion audit before stopping.
 
+### Loop 11 — Final clean-tree proof and stop audit
+
+- Pressure: the first final suite exposed an Animation Sequence test that encoded the same 1024 px GIF twice and exceeded its 20 s timeout under full-suite load. Increasing the timeout would hide redundant verification work.
+- Change: removed the second re-export from the same test while preserving real GIF encoding/readback, metadata, QA, invalidation, and the separate partial-force export case. The isolated case fell from 28.0 s to 9.9 s. Repeated every mandatory repository gate and the requirement-by-requirement audit after the change.
+- Evidence: `bun run test` passed 205/205 files and 753/753 tests; `bun run check`, `bun run build`, and `bun run validate:full` passed; `architecture:verify` reported zero violations in all six audits; React Doctor scored 88/100 with no issues; `git diff main --check` passed. Browser evidence from Loop 9 remains tied to the final UI source. No in-scope blocker or P1 remains. Independent delegation was unavailable under the active no-subagent instruction, so the adversarial review was performed as a self-pressure pass with explicit searches and fresh executions.
+- Verdict: **stop**. All accepted recommendations and required proof are complete.
+
 ## Final gate
 
-Pending. Completion requires focused suites, `bun run test`, `bun run check`, `bun run build`, `bun run validate:full`, all source audits, `git diff --check`, documentation reconciliation, logical commits, and a recorded adversarial autopsy.
+- Focused suites: green across every implementation slice, including security/path attacks, SQLite migration rollback/idempotence, recoverable finalization, concurrency races, execution precedence/null resets, Style registry retry/single-flight, and browser-gate helpers.
+- `bun run test`: 205 files / 753 tests passed.
+- `bun run check`: 2,592 files formatted; 800 files with zero lint/type errors or warnings.
+- `bun run build`: UI and server builds passed; all UI chunk budgets passed.
+- `bun run validate:full`: passed, including repeated full tests, source audits, build, chunks, and server type build.
+- `bun run architecture:verify`: six source audits passed with zero violations.
+- React Doctor: 88/100, no issues found on `main...HEAD`.
+- Browser: Styles Browser gate passed with zero console/page findings; responsive AppShell passed 40/40 scenarios at 360/390/768/1440 px, and Settings execution defaults were interacted with successfully at every viewport.
+- Diff/documentation: `git diff main --check` passed; architecture contracts and this ledger are reconciled; implementation is divided into logical commits.
