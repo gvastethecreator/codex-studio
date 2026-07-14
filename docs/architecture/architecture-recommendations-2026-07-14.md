@@ -30,7 +30,7 @@ Close every accepted recommendation from the 2026-07-14 architecture audit witho
 | UI-01   | Track active generation metadata per run instead of using one global mutable record.                                  | Implemented; focused proof green |
 | TEST-01 | Exercise migrations against real legacy SQLite fixtures, including idempotence and sentinel data.                     | Implemented; focused proof green |
 | CI-01   | Enforce source architecture audits in CI and fix current Library-layout violations.                                   | Planned                          |
-| PERF-01 | Give Style Pack loading one cached, single-flight runtime owner and remove duplicate load policy from `StylesRecipe`. | Planned                          |
+| PERF-01 | Give Style Pack loading one cached, single-flight runtime owner and remove duplicate load policy from `StylesRecipe`. | Implemented; focused proof green |
 
 ## Architecture decisions
 
@@ -86,6 +86,13 @@ Recorded before implementation:
 - Change: Persistent Job Intake now resolves and persists effective execution per field in the order explicit override → selected provider default → provider/bootstrap fallback. Google, fal, and Comfy share their non-secret fallback model constants with this policy; Codex consumes bootstrap configuration. Settings sanitization distinguishes missing fields from explicit null, and the Settings modal edits the selected provider's model, reasoning, and service tier with clear-to-bootstrap behavior.
 - Evidence: 44 tests across 10 route/store/intake/policy/executor/UI files passed. Focused checks covered 13 changed files with zero format, type, or lint findings. The policy tests prove mixed per-field precedence and nullable fallback.
 - Verdict: better. Settings now have one backend authority; continue with Style Pack registry ownership and single-flight loading.
+
+### Loop 6 — Style runtime registry and focused loading hook
+
+- Pressure: three independent `StylesRecipe` effects could request every runtime pack for browse, favorites, or global search, collection and current-pack effects repeated local merge policy, and the loader had neither a promise cache nor a value cache. Slow or failed loads produced an empty browser with no retry affordance.
+- Change: `stylesData` now owns a per-pack registry with shared in-flight promises, normalized value caching, canonical all-pack order, and rejected-promise eviction. A focused hook converts current tab, collection, favorites, and search intent into one deduplicated request, owns the local projection, and exposes loading/error/retry state. `StylesRecipe` removed four load-policy effects and routes direct catalog selections through the same registry.
+- Evidence: five Style runtime/collection/render files passed 30 tests. Deferred tests prove one physical pack/thumbnail load across focused and all-pack callers plus retry after rejection. Focused format/type/lint checks passed. `react-doctor --scope changed --base main` reported no issues.
+- Verdict: better. Style loading has one runtime owner and user-visible recovery; continue with static architecture gates and full-system proof.
 
 ## Final gate
 
