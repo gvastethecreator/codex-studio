@@ -18,19 +18,19 @@ Close every accepted recommendation from the 2026-07-14 architecture audit witho
 
 ## Accepted recommendations
 
-| ID      | Recommendation                                                                                                        | State                                    |
-| ------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| SEC-01  | Resolve provider assets through managed Library/Catalog authority; reject arbitrary or escaped local paths.           | Implemented; focused proof green         |
-| DATA-01 | Keep selected Library id and physical write root coherent across routes, workers, Catalog, and public URLs.           | Implemented; migration hardening pending |
-| DATA-02 | Make file, Asset, Catalog, and Job finalization idempotent and recoverable across crashes.                            | Planned                                  |
-| CONC-01 | Cancel persistent jobs that link after their browser run was already cancelled.                                       | Planned                                  |
-| CONC-02 | Make provider session creation single-flight per session key.                                                         | Planned                                  |
-| CONC-03 | Prevent stale Catalog replace/append/detail responses from crossing filter generations.                               | Planned                                  |
-| ARCH-01 | Make backend intake authoritative for provider execution defaults and nullable resets.                                | Planned                                  |
-| UI-01   | Track active generation metadata per run instead of using one global mutable record.                                  | Planned                                  |
-| TEST-01 | Exercise migrations against real legacy SQLite fixtures, including idempotence and sentinel data.                     | Planned                                  |
-| CI-01   | Enforce source architecture audits in CI and fix current Library-layout violations.                                   | Planned                                  |
-| PERF-01 | Give Style Pack loading one cached, single-flight runtime owner and remove duplicate load policy from `StylesRecipe`. | Planned                                  |
+| ID      | Recommendation                                                                                                        | State                            |
+| ------- | --------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+| SEC-01  | Resolve provider assets through managed Library/Catalog authority; reject arbitrary or escaped local paths.           | Implemented; focused proof green |
+| DATA-01 | Keep selected Library id and physical write root coherent across routes, workers, Catalog, and public URLs.           | Implemented and migrated         |
+| DATA-02 | Make file, Asset, Catalog, and Job finalization idempotent and recoverable across crashes.                            | Implemented; focused proof green |
+| CONC-01 | Cancel persistent jobs that link after their browser run was already cancelled.                                       | Planned                          |
+| CONC-02 | Make provider session creation single-flight per session key.                                                         | Planned                          |
+| CONC-03 | Prevent stale Catalog replace/append/detail responses from crossing filter generations.                               | Planned                          |
+| ARCH-01 | Make backend intake authoritative for provider execution defaults and nullable resets.                                | Planned                          |
+| UI-01   | Track active generation metadata per run instead of using one global mutable record.                                  | Planned                          |
+| TEST-01 | Exercise migrations against real legacy SQLite fixtures, including idempotence and sentinel data.                     | Implemented; focused proof green |
+| CI-01   | Enforce source architecture audits in CI and fix current Library-layout violations.                                   | Planned                          |
+| PERF-01 | Give Style Pack loading one cached, single-flight runtime owner and remove duplicate load policy from `StylesRecipe`. | Planned                          |
 
 ## Architecture decisions
 
@@ -65,6 +65,13 @@ Recorded before implementation:
 - Change: persistent jobs now capture an immutable Library Context. Intake accepts only paths under `outputs`, managed references, or masks and resolves existing symlinks before containment checks. Reference hydration, worker pathing, Catalog registration, alternate-Library URLs, and handoff URLs consume the same context. Legacy jobs retain the prior configured-root fallback.
 - Evidence: 25 focused security/data tests plus 30 route/app integration tests passed; server type build, focused format/check, and `git diff --check` passed. Hostile outside-root and junction escapes are covered.
 - Verdict: better. The boundary is closed; continue with explicit schema migrations and crash-safe finalization.
+
+### Loop 3 — Versioned migration and recoverable finalization
+
+- Pressure: Library Context columns were initially added through ad hoc `ALTER TABLE` checks, and the file → Asset → Catalog → completed sequence had no durable crash boundary. Startup also excluded active jobs once an Asset row existed.
+- Change: SQLite now records ordered schema migrations and applies every pending version in one transaction. A real Bun/SQLite fixture covers legacy columns, sentinel preservation, indexes, foreign keys, two-pass idempotence, and forced rollback. Jobs persist finalization source/target plus Asset/Catalog checkpoints before and after filesystem and database boundaries. Recovery includes active jobs with existing rows and synthesizes a legacy checkpoint when needed; the finalizer reuses existing rows and suppresses duplicate events.
+- Evidence: migration/store/finalizer/pathing/worker suite passed 14 tests; the server type build and focused 10-file check passed. The finalizer test proves the five checkpoint states and exact no-duplicate recovery from an Asset checkpoint.
+- Verdict: better. Data integrity gates are closed; continue with browser/backend concurrency races.
 
 ## Final gate
 

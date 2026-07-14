@@ -204,6 +204,19 @@ export function getCatalogImage(id: string) {
   return row ? mapCatalogImage(row, { includeGenerationConfig: true }) : null;
 }
 
+export function getCatalogImageByJobId(jobId: string, filePath?: string | null) {
+  const row = filePath
+    ? getDb()
+        .query(
+          'SELECT * FROM catalog_images WHERE job_id = ? AND file_path = ? ORDER BY created_at ASC LIMIT 1',
+        )
+        .get(jobId, filePath)
+    : getDb()
+        .query('SELECT * FROM catalog_images WHERE job_id = ? ORDER BY created_at ASC LIMIT 1')
+        .get(jobId);
+  return row ? mapCatalogImage(row, { includeGenerationConfig: true }) : null;
+}
+
 function queryCatalogInternal(
   filters: {
     libraryId?: string | null;

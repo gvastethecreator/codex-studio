@@ -61,6 +61,21 @@ export interface JobLibraryContext {
   rootPath: string;
 }
 
+export type JobFinalizationState =
+  | 'moving_asset'
+  | 'asset_moved'
+  | 'asset_recorded'
+  | 'catalog_recorded'
+  | 'completed';
+
+export interface JobFinalization {
+  state: JobFinalizationState;
+  sourcePath: string | null;
+  filePath: string | null;
+  assetId: string | null;
+  catalogId: string | null;
+}
+
 export interface CodexModelReasoningOption {
   reasoningEffort: CodexReasoningEffort;
   description: string | null;
@@ -198,6 +213,7 @@ export interface Job {
   status: JobStatus;
   execution: JobExecutionOptions | null;
   libraryContext?: JobLibraryContext | null;
+  finalization?: JobFinalization | null;
   originalPrompt: string;
   expandedPrompt: string | null;
   finalPromptUsed: string;

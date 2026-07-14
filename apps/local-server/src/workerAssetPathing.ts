@@ -31,6 +31,17 @@ export function inferGeneratedAssetMimeType(filePath: string) {
   return 'image/png';
 }
 
+export function moveGeneratedAssetToPath(filePath: string, targetPath: string) {
+  if (path.resolve(filePath) === path.resolve(targetPath)) return targetPath;
+  if (existsSync(targetPath)) return targetPath;
+  mkdirSync(path.dirname(targetPath), { recursive: true });
+  if (existsSync(filePath)) {
+    renameSync(filePath, targetPath);
+    return targetPath;
+  }
+  return filePath;
+}
+
 interface CreateWorkerAssetPathingDependencies {
   resolveExecutionOptions: typeof resolveJobExecutionOptions;
   readEditableStudioSettings: typeof readEditableStudioSettings;
@@ -68,18 +79,12 @@ export function createWorkerAssetPathing({
   function organizeGeneratedAssetPath(job: Job, filePath: string, providerId: string | null) {
     const ext = path.extname(filePath).toLowerCase() || '.png';
     const targetPath = resolveGeneratedAssetTargetPath(job, providerId, ext);
-
-    if (path.resolve(filePath) === path.resolve(targetPath)) return filePath;
-    mkdirSync(path.dirname(targetPath), { recursive: true });
-    if (existsSync(filePath)) {
-      renameSync(filePath, targetPath);
-      return targetPath;
-    }
-    return filePath;
+    return moveGeneratedAssetToPath(filePath, targetPath);
   }
 
   return {
     resolveGeneratedAssetTargetPath,
+    moveGeneratedAssetToPath,
     organizeGeneratedAssetPath,
   };
 }

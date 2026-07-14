@@ -7,6 +7,8 @@ import type {
   Job,
   JobEventRecord,
   JobExecutionOptions,
+  JobFinalization,
+  JobFinalizationState,
   JobKind,
   JobLibraryContext,
   JobSummary,
@@ -75,7 +77,7 @@ export function closeDb(db?: Database) {
   }
 }
 
-export function migrateDatabase(database: Database) {
+function migrateBaseSchema(database: Database) {
   database.run(`
     CREATE TABLE IF NOT EXISTS settings (
       key TEXT PRIMARY KEY,
@@ -101,8 +103,6 @@ export function migrateDatabase(database: Database) {
       source_spec_json TEXT,
       status TEXT NOT NULL,
       execution_json TEXT,
-      library_id TEXT,
-      library_root TEXT,
       original_prompt TEXT NOT NULL,
       expanded_prompt TEXT,
       final_prompt_used TEXT NOT NULL,
@@ -255,13 +255,75 @@ export function migrateDatabase(database: Database) {
   ensureColumn(database, 'jobs', 'execution_json', 'TEXT');
   ensureColumn(database, 'jobs', 'provider_id', 'TEXT');
   ensureColumn(database, 'jobs', 'source_spec_json', 'TEXT');
-  ensureColumn(database, 'jobs', 'library_id', 'TEXT');
-  ensureColumn(database, 'jobs', 'library_root', 'TEXT');
   database.run('CREATE INDEX IF NOT EXISTS idx_jobs_created_desc ON jobs(created_at DESC)');
   database.run('CREATE INDEX IF NOT EXISTS idx_job_events_job_id_id ON job_events(job_id, id)');
   database.run(
     'CREATE INDEX IF NOT EXISTS idx_codex_turns_job_updated_desc ON codex_turns(job_id, updated_at DESC)',
   );
+}
+
+const DATABASE_MIGRATIONS = [
+  {
+    version: 1,
+    name: 'base-schema',
+    migrate: migrateBaseSchema,
+  },
+  {
+    version: 2,
+    name: 'job-library-context',
+    migrate(database: Database) {
+      ensureColumn(database, 'jobs', 'library_id', 'TEXT');
+      ensureColumn(database, 'jobs', 'library_root', 'TEXT');
+      database.run(
+        'CREATE INDEX IF NOT EXISTS idx_jobs_library_created_desc ON jobs(library_id, created_at DESC)',
+      );
+    },
+  },
+  {
+    version: 3,
+    name: 'job-finalization-checkpoints',
+    migrate(database: Database) {
+      ensureColumn(database, 'jobs', 'finalization_state', 'TEXT');
+      ensureColumn(database, 'jobs', 'finalization_source_path', 'TEXT');
+      ensureColumn(database, 'jobs', 'finalization_file_path', 'TEXT');
+      ensureColumn(database, 'jobs', 'finalization_asset_id', 'TEXT');
+      ensureColumn(database, 'jobs', 'finalization_catalog_id', 'TEXT');
+      database.run(
+        'CREATE INDEX IF NOT EXISTS idx_jobs_finalization_state ON jobs(finalization_state)',
+      );
+    },
+  },
+] as const;
+
+export const LATEST_DATABASE_SCHEMA_VERSION = DATABASE_MIGRATIONS.at(-1)?.version ?? 0;
+
+export function migrateDatabase(database: Database) {
+  database.run(`
+    CREATE TABLE IF NOT EXISTS schema_migrations (
+      version INTEGER PRIMARY KEY,
+      name TEXT NOT NULL,
+      applied_at TEXT NOT NULL
+    )
+  `);
+
+  const appliedVersions = new Set(
+    (
+      database.query('SELECT version FROM schema_migrations ORDER BY version ASC').all() as Array<{
+        version: number;
+      }>
+    ).map((row) => row.version),
+  );
+  const applyPendingMigrations = database.transaction(() => {
+    for (const migration of DATABASE_MIGRATIONS) {
+      if (appliedVersions.has(migration.version)) continue;
+      migration.migrate(database);
+      database
+        .query('INSERT INTO schema_migrations (version, name, applied_at) VALUES (?, ?, ?)')
+        .run(migration.version, migration.name, now());
+    }
+  });
+
+  applyPendingMigrations();
 }
 
 export function migrateDb(db?: Database) {
@@ -298,6 +360,17 @@ function mapProject(row: any): Project {
   };
 }
 
+function mapJobFinalization(row: any): JobFinalization | null {
+  if (!row.finalization_state) return null;
+  return {
+    state: row.finalization_state as JobFinalizationState,
+    sourcePath: row.finalization_source_path ?? null,
+    filePath: row.finalization_file_path ?? null,
+    assetId: row.finalization_asset_id ?? null,
+    catalogId: row.finalization_catalog_id ?? null,
+  };
+}
+
 function mapJob(row: any): Job {
   return {
     id: row.id,
@@ -311,6 +384,7 @@ function mapJob(row: any): Job {
       row.library_id && row.library_root
         ? { libraryId: row.library_id, rootPath: row.library_root }
         : null,
+    finalization: mapJobFinalization(row),
     originalPrompt: row.original_prompt,
     expandedPrompt: row.expanded_prompt,
     finalPromptUsed: row.final_prompt_used,
@@ -334,6 +408,7 @@ function mapJobSummary(row: any): JobSummary {
       row.library_id && row.library_root
         ? { libraryId: row.library_id, rootPath: row.library_root }
         : null,
+    finalization: mapJobFinalization(row),
     originalPrompt: createPromptPreview(row.original_prompt),
     expandedPrompt: row.expanded_prompt ? createPromptPreview(row.expanded_prompt) : null,
     finalPromptUsed: createPromptPreview(row.final_prompt_used),
@@ -449,6 +524,7 @@ export function createJob(
     status: 'queued',
     execution: input.execution ?? null,
     libraryContext: input.libraryContext ?? null,
+    finalization: null,
     originalPrompt: input.prompt,
     expandedPrompt: null,
     finalPromptUsed: input.prompt,
@@ -506,6 +582,30 @@ export function updateJobStatus(
   return getJob(id, db);
 }
 
+export function updateJobFinalization(id: string, finalization: JobFinalization, db?: Database) {
+  getDb(db)
+    .query(
+      `UPDATE jobs
+       SET finalization_state = ?,
+           finalization_source_path = ?,
+           finalization_file_path = ?,
+           finalization_asset_id = ?,
+           finalization_catalog_id = ?,
+           updated_at = ?
+       WHERE id = ?`,
+    )
+    .run(
+      finalization.state,
+      finalization.sourcePath,
+      finalization.filePath,
+      finalization.assetId,
+      finalization.catalogId,
+      now(),
+      id,
+    );
+  return getJob(id, db);
+}
+
 export function requeueJob(id: string, db?: Database) {
   getDb(db)
     .query(
@@ -544,15 +644,47 @@ export function listJobSummaries(db?: Database) {
 export function listRecoverableJobs(db?: Database) {
   return getDb(db)
     .query(`
-      SELECT jobs.*
+      SELECT
+        jobs.*,
+        assets.id AS recovery_asset_id,
+        assets.file_path AS recovery_asset_path,
+        catalog_images.id AS recovery_catalog_id
       FROM jobs
-      LEFT JOIN assets ON assets.job_id = jobs.id AND assets.deleted_at IS NULL
+      LEFT JOIN assets
+        ON assets.id = (
+          SELECT candidate_asset.id
+          FROM assets AS candidate_asset
+          WHERE candidate_asset.job_id = jobs.id
+            AND candidate_asset.deleted_at IS NULL
+          ORDER BY candidate_asset.created_at ASC
+          LIMIT 1
+        )
+      LEFT JOIN catalog_images
+        ON catalog_images.id = (
+          SELECT candidate_catalog.id
+          FROM catalog_images AS candidate_catalog
+          WHERE candidate_catalog.job_id = jobs.id
+            AND candidate_catalog.file_path = assets.file_path
+          ORDER BY candidate_catalog.created_at ASC
+          LIMIT 1
+        )
       WHERE jobs.status IN ('queued', 'running')
-        AND assets.id IS NULL
       ORDER BY jobs.created_at ASC
     `)
     .all()
-    .map(mapJob);
+    .map((row: any) => {
+      const job = mapJob(row);
+      if (!job.finalization && row.recovery_asset_id && row.recovery_asset_path) {
+        job.finalization = {
+          state: row.recovery_catalog_id ? 'catalog_recorded' : 'asset_recorded',
+          sourcePath: row.recovery_asset_path,
+          filePath: row.recovery_asset_path,
+          assetId: row.recovery_asset_id,
+          catalogId: row.recovery_catalog_id ?? null,
+        };
+      }
+      return job;
+    });
 }
 
 export function addAsset(input: Omit<Asset, 'id' | 'createdAt' | 'deletedAt'>, db?: Database) {
@@ -589,6 +721,21 @@ export function listAssets(db?: Database) {
     .query('SELECT * FROM assets WHERE deleted_at IS NULL ORDER BY created_at DESC LIMIT 200')
     .all()
     .map(mapAsset);
+}
+
+export function getAssetByJobId(jobId: string, filePath?: string | null, db?: Database) {
+  const row = filePath
+    ? getDb(db)
+        .query(
+          'SELECT * FROM assets WHERE job_id = ? AND file_path = ? AND deleted_at IS NULL ORDER BY created_at ASC LIMIT 1',
+        )
+        .get(jobId, filePath)
+    : getDb(db)
+        .query(
+          'SELECT * FROM assets WHERE job_id = ? AND deleted_at IS NULL ORDER BY created_at ASC LIMIT 1',
+        )
+        .get(jobId);
+  return row ? mapAsset(row) : null;
 }
 
 export function addJobEvent(

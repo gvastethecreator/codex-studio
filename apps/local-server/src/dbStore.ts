@@ -93,6 +93,15 @@ function mapJob(row: any): Job {
       row.library_id && row.library_root
         ? { libraryId: row.library_id, rootPath: row.library_root }
         : null,
+    finalization: row.finalization_state
+      ? {
+          state: row.finalization_state,
+          sourcePath: row.finalization_source_path ?? null,
+          filePath: row.finalization_file_path ?? null,
+          assetId: row.finalization_asset_id ?? null,
+          catalogId: row.finalization_catalog_id ?? null,
+        }
+      : null,
     originalPrompt: row.original_prompt,
     expandedPrompt: row.expanded_prompt,
     finalPromptUsed: row.final_prompt_used,
@@ -116,6 +125,7 @@ function mapJobSummary(row: any): JobSummary {
       row.library_id && row.library_root
         ? { libraryId: row.library_id, rootPath: row.library_root }
         : null,
+    finalization: null,
     originalPrompt: createPromptPreview(row.original_prompt),
     expandedPrompt: row.expanded_prompt ? createPromptPreview(row.expanded_prompt) : null,
     finalPromptUsed: createPromptPreview(row.final_prompt_used),
@@ -188,6 +198,11 @@ function migrateSqliteDbStore(database: SqliteDatabaseLike) {
       execution_json TEXT,
       library_id TEXT,
       library_root TEXT,
+      finalization_state TEXT,
+      finalization_source_path TEXT,
+      finalization_file_path TEXT,
+      finalization_asset_id TEXT,
+      finalization_catalog_id TEXT,
       original_prompt TEXT NOT NULL,
       expanded_prompt TEXT,
       final_prompt_used TEXT NOT NULL,
@@ -228,6 +243,11 @@ function migrateSqliteDbStore(database: SqliteDatabaseLike) {
   ensureColumn(database, 'jobs', 'source_spec_json', 'TEXT');
   ensureColumn(database, 'jobs', 'library_id', 'TEXT');
   ensureColumn(database, 'jobs', 'library_root', 'TEXT');
+  ensureColumn(database, 'jobs', 'finalization_state', 'TEXT');
+  ensureColumn(database, 'jobs', 'finalization_source_path', 'TEXT');
+  ensureColumn(database, 'jobs', 'finalization_file_path', 'TEXT');
+  ensureColumn(database, 'jobs', 'finalization_asset_id', 'TEXT');
+  ensureColumn(database, 'jobs', 'finalization_catalog_id', 'TEXT');
   database.run('CREATE INDEX IF NOT EXISTS idx_jobs_created_desc ON jobs(created_at DESC)');
 }
 
@@ -292,6 +312,7 @@ export function createSqliteDbStore({
         status: 'queued',
         execution: input.execution ?? null,
         libraryContext: input.libraryContext ?? null,
+        finalization: null,
         originalPrompt: input.prompt,
         expandedPrompt: null,
         finalPromptUsed: input.prompt,
