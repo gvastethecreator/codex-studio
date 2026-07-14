@@ -5,7 +5,7 @@ import type {
   Job,
   JobLibraryContext,
 } from '../../../packages/shared/src';
-import { createDefaultEditableStudioSettings } from '../../../packages/shared/src';
+import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
 import type { publishEvent } from './events';
 import { validateManagedGenerationAssets } from './managedAssetPolicy';

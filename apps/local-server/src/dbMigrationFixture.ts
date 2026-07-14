@@ -152,13 +152,14 @@ try {
     .query('SELECT original_prompt FROM jobs WHERE id = ?')
     .get('job-sentinel') as { original_prompt: string } | null;
   rollbackDatabase.close();
+  const columnSet = new Set(columns);
 
   console.log(
     JSON.stringify({
       idempotent:
         migrationRows.length === LATEST_DATABASE_SCHEMA_VERSION &&
         migrationRows.at(-1)?.version === LATEST_DATABASE_SCHEMA_VERSION &&
-        requiredColumns.every((column) => columns.includes(column)),
+        requiredColumns.every((column) => columnSet.has(column)),
       sentinelPreserved:
         sentinel?.project_id === 'project-sentinel' &&
         sentinel?.original_prompt === 'sentinel prompt',

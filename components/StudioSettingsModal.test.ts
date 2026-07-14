@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 import { createDefaultEditableStudioSettings } from '../packages/shared/src';
-import { buildStudioSettingsPatch, getStudioSettingsFormState } from './StudioSettingsModal';
+import { buildStudioSettingsPatch, getStudioSettingsFormState } from '../lib/studioSettingsForm';
 
 describe('StudioSettingsModal provider defaults', () => {
   it('round-trips editable provider defaults including nullable resets', () => {

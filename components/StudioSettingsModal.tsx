@@ -33,7 +33,6 @@ import type {
   EditableStudioSettingsPatch,
   ProviderDefaultSettings,
   StudioOutputMode,
-  StudioOutputSubfolderToken,
 } from '../packages/shared/src/studioSettings';
 import type {
   StorageMaintenanceAuditReport,
@@ -42,6 +41,14 @@ import type {
   ToolingLogsPruneResult,
 } from '../packages/shared/src/storageMaintenance';
 import { createStorageRepairPlanFromAudit } from '../packages/shared/src/storageMaintenance';
+import {
+  buildStudioSettingsPatch,
+  createInitialStudioSettingsFormState,
+  encodeSubfolderTokens,
+  getStudioSettingsFormState,
+  OUTPUT_SUBFOLDER_PRESETS,
+  type StudioSettingsFormState,
+} from '../lib/studioSettingsForm';
 
 interface StudioSettingsModalProps {
   isOpen: boolean;
@@ -92,26 +99,6 @@ interface StudioSettingsModalProps {
   isResettingStudio: boolean;
 }
 
-function normalizeOutputPath(value: string) {
-  const trimmed = value.trim();
-  return trimmed ? trimmed : null;
-}
-
-const OUTPUT_SUBFOLDER_PRESETS: {
-  label: string;
-  value: StudioOutputSubfolderToken[];
-}[] = [
-  { label: 'Date / Provider / Recipe', value: ['date', 'provider', 'recipe'] },
-  { label: 'Date / Model / Recipe', value: ['date', 'model', 'recipe'] },
-  { label: 'Provider / Recipe', value: ['provider', 'recipe'] },
-  { label: 'Recipe / Date', value: ['recipe', 'date'] },
-  { label: 'No Subfolders', value: [] },
-];
-
-function encodeSubfolderTokens(value: StudioOutputSubfolderToken[]) {
-  return value.join('/');
-}
-
 function formatBytes(value: number) {
   if (value < 1024) return `${value} B`;
   if (value < 1024 * 1024) return `${Math.round(value / 1024)} KB`;
@@ -124,63 +111,6 @@ function providerStatusClass(status: string) {
   return 'border-white/8 bg-white/4 text-zinc-400';
 }
 
-export interface StudioSettingsFormState {
-  defaultProviderId: GenerationProviderId;
-  defaultOutputMode: StudioOutputMode;
-  preferredOutputPath: string;
-  outputSubfolderPreset: string;
-  outputFileNameTemplate: string;
-  autoDetectOutputSources: boolean;
-  commandCenterCompactMode: boolean;
-  providerDefaults: EditableStudioSettings['providerDefaults'];
-}
-
-function getInitialFormState(): StudioSettingsFormState {
-  return {
-    defaultProviderId: 'codex',
-    defaultOutputMode: 'studio_library',
-    preferredOutputPath: '',
-    outputSubfolderPreset: encodeSubfolderTokens(['date', 'provider', 'recipe']),
-    outputFileNameTemplate: '{timestamp}-{provider}-{jobId}',
-    autoDetectOutputSources: true,
-    commandCenterCompactMode: false,
-    providerDefaults: {},
-  };
-}
-
-export function getStudioSettingsFormState(s: EditableStudioSettings): StudioSettingsFormState {
-  return {
-    defaultProviderId: s.defaultProviderId,
-    defaultOutputMode: s.defaultOutputMode,
-    preferredOutputPath: s.preferredOutputPath ?? '',
-    outputSubfolderPreset: encodeSubfolderTokens(s.outputOrganization.subfolderTokens),
-    outputFileNameTemplate: s.outputOrganization.fileNameTemplate,
-    autoDetectOutputSources: s.autoDetectOutputSources,
-    commandCenterCompactMode: s.commandCenterCompactMode,
-    providerDefaults: s.providerDefaults,
-  };
-}
-
-export function buildStudioSettingsPatch(
-  formState: StudioSettingsFormState,
-): EditableStudioSettingsPatch {
-  return {
-    defaultProviderId: formState.defaultProviderId,
-    defaultOutputMode: formState.defaultOutputMode,
-    preferredOutputPath: normalizeOutputPath(formState.preferredOutputPath),
-    outputOrganization: {
-      subfolderTokens:
-        OUTPUT_SUBFOLDER_PRESETS.find(
-          (preset) => encodeSubfolderTokens(preset.value) === formState.outputSubfolderPreset,
-        )?.value ?? [],
-      fileNameTemplate: formState.outputFileNameTemplate,
-    },
-    autoDetectOutputSources: formState.autoDetectOutputSources,
-    commandCenterCompactMode: formState.commandCenterCompactMode,
-    providerDefaults: formState.providerDefaults,
-  };
-}
-
 interface SettingsFormPanelProps {
   formState: StudioSettingsFormState;
   onFormChange: React.Dispatch<React.SetStateAction<StudioSettingsFormState>>;
@@ -190,6 +120,72 @@ interface SettingsFormPanelProps {
   providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
   onResetStudio: () => void | Promise<void>;
   isResettingStudio: boolean;
+}
+
+function ProviderExecutionDefaultsFields({
+  value,
+  onChange,
+}: {
+  value: ProviderDefaultSettings;
+  onChange: (patch: Partial<ProviderDefaultSettings>) => void;
+}) {
+  return (
+    <div className="md:col-span-2 grid gap-3 rounded-lg border border-white/8 bg-white/4 p-4 md:grid-cols-3">
+      <div className="md:col-span-3">
+        <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
+          Provider Execution Defaults
+        </div>
+        <p className="mt-1 text-[10px] leading-relaxed text-zinc-600">
+          Used when a job does not send an explicit override. Empty values fall back to the provider
+          bootstrap configuration.
+        </p>
+      </div>
+      <label className="flex flex-col gap-2">
+        <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">Model</span>
+        <input
+          value={value.model ?? ''}
+          onChange={(event) => onChange({ model: event.target.value.trim() || null })}
+          placeholder="Provider bootstrap"
+          aria-label="Provider default model"
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+        />
+      </label>
+      <label className="flex flex-col gap-2">
+        <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+          Reasoning
+        </span>
+        <input
+          value={value.reasoningEffort ?? ''}
+          onChange={(event) => onChange({ reasoningEffort: event.target.value.trim() || null })}
+          placeholder="Provider bootstrap"
+          aria-label="Provider default reasoning effort"
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
+        />
+      </label>
+      <label className="flex flex-col gap-2">
+        <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
+          Service Tier
+        </span>
+        <select
+          value={value.serviceTier ?? ''}
+          onChange={(event) =>
+            onChange({
+              serviceTier:
+                event.target.value === 'fast' || event.target.value === 'flex'
+                  ? event.target.value
+                  : null,
+            })
+          }
+          aria-label="Provider default service tier"
+          className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
+        >
+          <option value="">Provider bootstrap</option>
+          <option value="fast">Fast</option>
+          <option value="flex">Flex</option>
+        </select>
+      </label>
+    </div>
+  );
 }
 
 function SettingsFormPanel({
@@ -282,69 +278,10 @@ function SettingsFormPanel({
         </select>
       </label>
 
-      <div className="md:col-span-2 grid gap-3 rounded-lg border border-white/8 bg-white/4 p-4 md:grid-cols-3">
-        <div className="md:col-span-3">
-          <div className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
-            Provider Execution Defaults
-          </div>
-          <p className="mt-1 text-[10px] leading-relaxed text-zinc-600">
-            Used when a job does not send an explicit override. Empty values fall back to the
-            provider bootstrap configuration.
-          </p>
-        </div>
-        <label className="flex flex-col gap-2">
-          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
-            Model
-          </span>
-          <input
-            value={selectedProviderDefaults.model ?? ''}
-            onChange={(event) =>
-              updateSelectedProviderDefaults({ model: event.target.value.trim() || null })
-            }
-            placeholder="Provider bootstrap"
-            aria-label="Provider default model"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-          />
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
-            Reasoning
-          </span>
-          <input
-            value={selectedProviderDefaults.reasoningEffort ?? ''}
-            onChange={(event) =>
-              updateSelectedProviderDefaults({
-                reasoningEffort: event.target.value.trim() || null,
-              })
-            }
-            placeholder="Provider bootstrap"
-            aria-label="Provider default reasoning effort"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 font-mono text-xs text-white outline-none transition-colors placeholder:text-zinc-700 focus:border-accent-400/50"
-          />
-        </label>
-        <label className="flex flex-col gap-2">
-          <span className="text-[9px] font-black uppercase tracking-widest text-zinc-600">
-            Service Tier
-          </span>
-          <select
-            value={selectedProviderDefaults.serviceTier ?? ''}
-            onChange={(event) =>
-              updateSelectedProviderDefaults({
-                serviceTier:
-                  event.target.value === 'fast' || event.target.value === 'flex'
-                    ? event.target.value
-                    : null,
-              })
-            }
-            aria-label="Provider default service tier"
-            className="h-10 rounded-lg border border-white/10 bg-black/30 px-3 text-xs font-black uppercase tracking-widest text-white outline-none transition-colors focus:border-accent-400/50"
-          >
-            <option value="">Provider bootstrap</option>
-            <option value="fast">Fast</option>
-            <option value="flex">Flex</option>
-          </select>
-        </label>
-      </div>
+      <ProviderExecutionDefaultsFields
+        value={selectedProviderDefaults}
+        onChange={updateSelectedProviderDefaults}
+      />
 
       <label className="flex flex-col gap-2 rounded-lg border border-white/8 bg-white/4 p-4">
         <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">
@@ -1048,7 +985,9 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
   onResetStudio,
   isResettingStudio,
 }) => {
-  const [formState, setFormState] = useState<StudioSettingsFormState>(getInitialFormState);
+  const [formState, setFormState] = useState<StudioSettingsFormState>(
+    createInitialStudioSettingsFormState,
+  );
 
   const prevSettingsRef = useRef(settings);
   if (isOpen && settings && settings !== prevSettingsRef.current) {

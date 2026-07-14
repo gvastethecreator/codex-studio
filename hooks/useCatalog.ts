@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CatalogImage, CatalogPage, CatalogWorkspaceSummary } from '../packages/shared/src';
 import { buildArchivedImageGroupsFromCatalog } from '../lib/studioCatalogTrashView';
 import {
@@ -129,13 +129,16 @@ function useCatalog({
   filtersRef.current = filters;
   const filtersKey = createCatalogFilterKey(filters);
   const filtersKeyRef = useRef(filtersKey);
-  const requestGateRef = useRef(createCatalogRequestGate());
+  const requestGateRef = useRef<ReturnType<typeof createCatalogRequestGate> | null>(null);
+  requestGateRef.current ??= createCatalogRequestGate();
+  const requestGate = requestGateRef.current;
   const detailRequestIdsRef = useRef(new Map<string, number>());
-  if (filtersKeyRef.current !== filtersKey) {
+  useLayoutEffect(() => {
+    if (filtersKeyRef.current === filtersKey) return;
     filtersKeyRef.current = filtersKey;
-    requestGateRef.current.invalidate();
+    requestGate.invalidate();
     detailRequestIdsRef.current.clear();
-  }
+  }, [filtersKey, requestGate]);
 
   const loadPage = useCallback(
     async (
@@ -152,54 +155,57 @@ function useCatalog({
           offset,
           limit: requestFilters.limit ?? pageSize,
         });
-        if (!requestGateRef.current.isCurrent(token)) return;
+        if (!requestGate.isCurrent(token)) return;
         setEntries((previous) => (mode === 'append' ? [...previous, ...page.images] : page.images));
         setTotal(page.total);
         setHasMore(page.hasMore);
       } catch (loadError) {
-        if (!requestGateRef.current.isCurrent(token)) return;
+        if (!requestGate.isCurrent(token)) return;
         setError(normalizeCatalogError(loadError));
       } finally {
-        if (requestGateRef.current.finish(token)) setIsLoading(false);
+        if (requestGate.finish(token)) setIsLoading(false);
       }
     },
-    [pageSize, queryCatalogPage],
+    [pageSize, queryCatalogPage, requestGate],
   );
 
   const refresh = useCallback(async () => {
-    const token = requestGateRef.current.beginReplace();
+    const token = requestGate.beginReplace();
     await loadPage(0, 'replace', token, { ...filtersRef.current });
-  }, [loadPage]);
+  }, [loadPage, requestGate]);
 
   const loadMore = useCallback(async () => {
     if (!hasMore) return;
-    const token = requestGateRef.current.beginAppend();
+    const token = requestGate.beginAppend();
     if (!token) return;
     await loadPage(entries.length, 'append', token, { ...filtersRef.current });
-  }, [entries.length, hasMore, loadPage]);
+  }, [entries.length, hasMore, loadPage, requestGate]);
 
-  const hydrateDetail = useCallback(async (imageId: string) => {
-    const requestId = (detailRequestIdsRef.current.get(imageId) ?? 0) + 1;
-    detailRequestIdsRef.current.set(imageId, requestId);
-    const generation = requestGateRef.current.getGeneration();
-    const detail = await getCatalogImageDetail(imageId);
-    if (
-      requestGateRef.current.getGeneration() !== generation ||
-      detailRequestIdsRef.current.get(imageId) !== requestId
-    ) {
-      return;
-    }
-    setEntries((previous) => previous.map((entry) => (entry.id === imageId ? detail : entry)));
-  }, []);
+  const hydrateDetail = useCallback(
+    async (imageId: string) => {
+      const requestId = (detailRequestIdsRef.current.get(imageId) ?? 0) + 1;
+      detailRequestIdsRef.current.set(imageId, requestId);
+      const generation = requestGate.getGeneration();
+      const detail = await getCatalogImageDetail(imageId);
+      if (
+        requestGate.getGeneration() !== generation ||
+        detailRequestIdsRef.current.get(imageId) !== requestId
+      ) {
+        return;
+      }
+      setEntries((previous) => previous.map((entry) => (entry.id === imageId ? detail : entry)));
+    },
+    [requestGate],
+  );
 
   useEffect(() => {
     if (!enabled) {
-      requestGateRef.current.invalidate();
+      requestGate.invalidate();
       setIsLoading(false);
       return;
     }
     void refresh();
-  }, [enabled, filtersKey, refresh]);
+  }, [enabled, filtersKey, refresh, requestGate]);
 
   const view = useMemo(() => createCatalogView(entries), [entries]);
 
