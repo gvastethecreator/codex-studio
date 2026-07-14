@@ -261,6 +261,7 @@ function SettingsFormPanel({
           Default Provider
         </span>
         <select
+          aria-label="Default provider"
           value={defaultProviderId}
           onChange={(event) =>
             setFormState((prev) => ({

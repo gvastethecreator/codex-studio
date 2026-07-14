@@ -67,12 +67,7 @@ function isPathInside(parentPath: string, childPath: string) {
 }
 
 function createRunPaths(libraryDir: string, runId: string): AnimationSequenceRunPaths {
-  const runDir = resolveLibraryPathFromRoot(
-    libraryDir,
-    'outputs',
-    'animation-sequence',
-    runId,
-  );
+  const runDir = resolveLibraryPathFromRoot(libraryDir, 'outputs', 'animation-sequence', runId);
   return {
     runDir,
     requestPath: path.join(runDir, 'animation-request.json'),
@@ -252,11 +247,7 @@ export function createAnimationSequenceService({
 
   return {
     async listRuns() {
-      const root = resolveLibraryPathFromRoot(
-        readLibraryDir(),
-        'outputs',
-        'animation-sequence',
-      );
+      const root = resolveLibraryPathFromRoot(readLibraryDir(), 'outputs', 'animation-sequence');
       try {
         const entries = await readdir(root, { withFileTypes: true });
         const runs = await Promise.all(

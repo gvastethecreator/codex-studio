@@ -1,4 +1,4 @@
-import { loadStyleRuntimePacks } from '../components/recipes/stylesData';
+import { loadGeneratedStyleRuntimePacks } from '../components/recipes/styleRuntimeData.generated';
 import type {
   StyleRuntimePack,
   StyleRuntimePreset,
@@ -433,7 +433,7 @@ function numberArgValue(name: string) {
 }
 
 if (import.meta.main) {
-  const packs = await loadStyleRuntimePacks();
+  const packs = await loadGeneratedStyleRuntimePacks();
   const report = createStyleDuplicateFamilyReport(packs);
   if (process.argv.includes('--json')) {
     console.log(JSON.stringify(report, null, 2));

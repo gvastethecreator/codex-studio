@@ -101,6 +101,27 @@ Recorded before implementation:
 - Evidence: Animation Sequence and Sprite Atlas route suites passed 5 tests; the focused Style hook/recipe suite passed; all six architecture audits reported zero violations; `git diff --check` passed.
 - Verdict: better. Static architecture boundaries are now executable and mandatory; continue with full repository and browser proof.
 
+### Loop 8 — Full repository checkpoint
+
+- Pressure: focused suites cannot expose cross-module imports, formatting drift, production bundling, or suite-wide timing interactions.
+- Change: ran every required repository gate sequentially. The first `check` found one formatting-only drift in Animation Sequence; it was formatted focally and the gate was restarted. No functional timeout or threshold was relaxed.
+- Evidence: `bun run test` passed 205 files / 753 tests; `bun run check`, `bun run build`, and `bun run validate:full` passed. Production chunk budgets remained green, including the 78.32 KB StylesRecipe chunk under its 80 KB limit.
+- Verdict: better. Static and production proof are green; continue with real AppShell interaction.
+
+### Loop 9 — Browser proof for Settings and Styles
+
+- Pressure: unit tests did not prove responsive fit, real Style Pack demand loading, retry-compatible browser execution, or provider-default state across a provider switch.
+- Change: repaired the Style Browser gate's Node/Vite boundary, updated the responsive queue interaction to the current accessible label, gave the provider selector a stable accessible name, and made the responsive gate edit/retain/restore model, reasoning, and tier without saving real Settings.
+- Evidence: Styles Browser verified collection navigation, pack loading, demand-mounted catalog search, 70 rendered fade images, and zero console/page errors or warnings. The responsive gate passed 40/40 scenarios at 360, 390, 768, and 1440 px with zero overflow; all four Settings observations reported `settingsExecutionDefaultsVerified=true`. Final screenshots were inspected.
+- Verdict: better. Real UI paths are proven; continue with the mandatory adversarial autopsy.
+
+### Loop 10 — Adversarial completion audit
+
+- Pressure: a green visible path can still leave automation consumers coupled to Vite-only `import.meta.glob`, miss a raw Library path, leak secrets, or leave a recommendation documented but unenforced.
+- Change: audited `main...HEAD` by requirement, searched raw Library roots, Style loader consumers, execution/session/catalog ownership, secret-like diff content, and full diff hygiene. The audit found a second Node-side Style report importing the UI registry; it was migrated to generated runtime data and executed successfully. Architecture documentation was reconciled with the new contracts.
+- Evidence: no unmanaged Library-root matches remain outside the canonical internals; provider/session/catalog owners are singular and covered; diff secret search found only the existing redacted `FAL_API_KEY` variable name in an error string; duplicate-family and render-budget report tests passed 7/7 and the duplicate report executed under Node/Bun.
+- Verdict: **continue**. The audit improved the result but changed source after the broad checkpoint; run one final clean-tree gate and repeat the completion audit before stopping.
+
 ## Final gate
 
 Pending. Completion requires focused suites, `bun run test`, `bun run check`, `bun run build`, `bun run validate:full`, all source audits, `git diff --check`, documentation reconciliation, logical commits, and a recorded adversarial autopsy.

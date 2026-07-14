@@ -12,9 +12,9 @@ import {
   type StyleBrowserRenderMeasurement,
 } from '../components/recipes/styleBrowserRenderPlan';
 import {
-  STYLE_RUNTIME_PACK_SUMMARIES,
-  loadStyleRuntimePack,
-} from '../components/recipes/stylesData';
+  GENERATED_STYLE_RUNTIME_PACK_SUMMARIES,
+  loadGeneratedStyleRuntimePack,
+} from '../components/recipes/styleRuntimeData.generated';
 import type { StyleRuntimePack } from '../components/recipes/styles/runtimeTypes';
 
 const DEFAULT_GRID_COLUMNS = 4;
@@ -369,8 +369,8 @@ export async function createStyleRenderBudgetReport({
   containerWidth = DEFAULT_CONTAINER_WIDTH,
 } = {}): Promise<StyleRenderBudgetReport> {
   const loadedPacks = await Promise.all(
-    STYLE_RUNTIME_PACK_SUMMARIES.map(async (summary) => {
-      const pack = await loadStyleRuntimePack(summary.id);
+    GENERATED_STYLE_RUNTIME_PACK_SUMMARIES.map(async (summary) => {
+      const pack = await loadGeneratedStyleRuntimePack(summary.id);
       if (!pack) {
         throw new Error(`Missing style pack runtime data: ${summary.id}`);
       }
