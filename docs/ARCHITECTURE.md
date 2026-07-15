@@ -105,6 +105,24 @@ Studio Readiness combines:
 The main product flow is blocked when the local Codex/ChatGPT login cannot run jobs. The default Codex flow does not require `OPENAI_API_KEY`.
 Codex job intake uses this same non-secret runtime readiness signal before persisting or requeueing jobs, so known-bad local runtimes fail fast instead of creating doomed queue rows.
 
+Runtime compatibility is capability-first. Runtime Doctor probes the resolved
+stable launcher before fallback candidates, RPC requests have bounded
+deadlines, and shutdown owns the complete launcher process tree. Passive
+readiness refreshes are freshness-aware and single-flight; concurrent Local
+Codex Session readers share one handshake with a one-second completed-result
+window.
+
+Backend shutdown quiesces the job worker before stopping the managed
+`codex app-server`: queued jobs remain durable, active jobs receive an abort and
+return to `queued`, and the existing startup recovery scan enqueues them again
+on the next launch. Application exit therefore does not become a user
+cancellation or leave provider work orphaned.
+
+High-volume projections stay compact and event-driven. Job list rows use
+`JobSummary` rather than full prompt-bearing jobs, catalog batch mutations emit
+one scoped `catalog.batch_changed` event, and the SSE consumer coalesces batch,
+revision-gap, and reconnect reconciliation.
+
 ## Provider Boundary
 
 Generation Tasks and Generation Providers stay separate:

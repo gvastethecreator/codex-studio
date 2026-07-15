@@ -28,6 +28,26 @@ bun run runtime:doctor
 The doctor reports the selected executable, CLI metadata, app-server
 support, and the recommended action without printing secrets.
 
+### Codex Studio stopped working after a Codex update
+
+Symptoms: a checkout that worked before the update no longer starts jobs,
+`app-server` fails to bind, or Runtime Doctor reports a path inside
+`node_modules/.../vendor`.
+
+1. Stop the old `bun run dev` process and start it again. Managed shutdown
+   closes the UI, backend, and the owned `codex app-server` process tree.
+2. Run `bun run runtime:doctor` and confirm it selects a supported desktop,
+   npm, Bun, or PATH launcher with `app-server` capability.
+3. Check `http://localhost:17223/api/health`; `checks.onboardingReady` is only
+   true after the Library, runtime, app-server, and Local Codex Session are all
+   ready.
+4. If a custom `STUDIO_CODEX_CLI_PATH` or `CODEX_CLI_PATH` is configured,
+   point it at a stable launcher. Never pin a release-specific vendor path.
+
+The normal readiness path probes the selected launcher first and scans
+fallback candidates only when that launcher fails. A changed version string
+alone is not a setup failure.
+
 ### An old `codex` install is selected
 
 Symptoms: jobs fail with WebSocket connection errors, `runtime:doctor` reports
@@ -76,6 +96,9 @@ Check: use `bun run dev`, or run `dev:server` and `dev:ui` in parallel.
 Symptoms: Vite or Bun reports `listen` errors.
 
 Check: change `STUDIO_SERVER_PORT` or `STUDIO_CODEX_WS_PORT` in `.env.local`.
+`bun run dev` returns the first failing child exit code and, on Windows,
+terminates wrapper process trees so Vite or Codex children do not retain the
+ports after a failed start.
 
 ## When Terminal Output Is Too Short
 
