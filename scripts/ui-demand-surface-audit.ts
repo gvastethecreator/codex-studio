@@ -86,8 +86,31 @@ export const uiDemandSurfaceRules: UiDemandSurfaceRule[] = [
   {
     id: 'startup-toolbar-no-static-motion',
     filePath: 'components/Toolbar.tsx',
-    forbidden: ["from 'motion/react'", 'from "motion/react"'],
-    message: 'Toolbar must not pull the GSAP-backed motion compatibility layer into startup.',
+    forbidden: [
+      "from 'motion/react'",
+      'from "motion/react"',
+      "from './ui/GsapDropdown'",
+      'from "./ui/GsapDropdown"',
+    ],
+    message: 'Toolbar must not pull a GSAP-backed motion surface into startup.',
+  },
+  {
+    id: 'startup-header-no-static-gsap-dropdown',
+    filePath: 'components/HeaderToolbar.tsx',
+    forbidden: ["from './ui/GsapDropdown'", 'from "./ui/GsapDropdown"'],
+    message: 'Header dropdown motion must load only after the user opens a menu.',
+  },
+  {
+    id: 'startup-image-grid-no-static-gsap-dropdown',
+    filePath: 'components/ImageGrid.tsx',
+    forbidden: ["from './ui/GsapDropdown'", 'from "./ui/GsapDropdown"'],
+    message: 'Image grid dropdown motion must load only after the user opens a menu.',
+  },
+  {
+    id: 'startup-workspace-strip-no-static-gsap-dropdown',
+    filePath: 'components/header/WorkspaceStrip.tsx',
+    forbidden: ["from '../ui/GsapDropdown'", 'from "../ui/GsapDropdown"'],
+    message: 'Workspace dropdown motion must load only after the user opens a menu.',
   },
   {
     id: 'startup-viewport-no-static-motion',

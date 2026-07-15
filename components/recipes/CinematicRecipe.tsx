@@ -21,7 +21,7 @@ import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegist
 import { RecipeLayout } from './RecipeLayout';
 import { ControlDropdown } from './RecipeUI';
 import { QuickStartText } from './QuickStartText';
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 import {
   getRecipeModuleUiModel,
   getRecipeNumberDefault,
@@ -104,7 +104,7 @@ const ShotTypeDropdown: React.FC<{
           aria-hidden="true"
         />
       </button>
-      <GsapDropdown
+      <DemandMountedGsapDropdown
         id={listboxId}
         open={isOpen}
         onOpenChange={setIsOpen}
@@ -140,7 +140,7 @@ const ShotTypeDropdown: React.FC<{
             </button>
           );
         })}
-      </GsapDropdown>
+      </DemandMountedGsapDropdown>
     </div>
   );
 };

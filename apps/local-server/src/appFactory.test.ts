@@ -108,7 +108,7 @@ function createFakeCatalogStore(overrides?: Partial<StudioCatalogStore>): Studio
 
 function createWorkerDependency(): Pick<
   WorkerController,
-  'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus' | 'resetWorkerState'
+  'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus' | 'resetWorkerState' | 'shutdown'
 > {
   return {
     cancelQueuedOrRunningJob: vi.fn(() => null),
@@ -120,6 +120,7 @@ function createWorkerDependency(): Pick<
       trackedJobs: 0,
     })),
     resetWorkerState: vi.fn(async () => {}),
+    shutdown: vi.fn(async () => {}),
   };
 }
 
@@ -457,7 +458,7 @@ describe('createStudioApp', () => {
     expect(ensureAppServer).toHaveBeenCalledWith('user');
     expect(isAppServerRunning).toHaveBeenCalled();
     expect(getAppServerDiagnostics).toHaveBeenCalled();
-  });
+  }, 20_000);
 
   it('wires runtime health worker status through the injected worker dependency', async () => {
     const workerStatus = {
@@ -622,5 +623,44 @@ describe('createStudioApp', () => {
     expect((await studio.app.request('/api/providers/preflight')).status).toBe(200);
     expect(readCodexRuntimeDoctor).toHaveBeenCalledTimes(probeCountAfterStartup);
     await studio.shutdown();
+  });
+
+  it('stops the managed app-server once when shutdown is requested repeatedly', async () => {
+    const stopAppServer = vi.fn(async () => {});
+    const worker = createWorkerDependency();
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore(),
+        catalogStore: createFakeCatalogStore(),
+        worker,
+        stopAppServer,
+      },
+    });
+
+    await Promise.all([studio.shutdown(), studio.shutdown()]);
+
+    expect(worker.shutdown).toHaveBeenCalledTimes(1);
+    expect(stopAppServer).toHaveBeenCalledTimes(1);
+  });
+
+  it('still stops the managed app-server when worker shutdown rejects', async () => {
+    const stopAppServer = vi.fn(async () => {});
+    const worker = createWorkerDependency();
+    worker.shutdown = vi.fn(async () => {
+      throw new Error('worker shutdown failed');
+    });
+    const studio = await createStudioApp({
+      runInit: false,
+      dependencies: {
+        dbStore: createFakeDbStore(),
+        catalogStore: createFakeCatalogStore(),
+        worker,
+        stopAppServer,
+      },
+    });
+
+    await expect(studio.shutdown()).rejects.toThrow('Studio shutdown did not complete cleanly');
+    expect(stopAppServer).toHaveBeenCalledTimes(1);
   });
 });

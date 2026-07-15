@@ -35,7 +35,7 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
 
 describe('catalogCommands', () => {
   it('publishes Catalog Entry updates from the command boundary', () => {
-    const events: { type: string; payload: CatalogImage }[] = [];
+    const events: Array<{ type: string; payload: unknown }> = [];
     const updated = catalogImage({ id: 'image-2', isFavorite: true });
     const commands = createCatalogCommands({
       listCatalogImageIds: () => [],
@@ -53,14 +53,14 @@ describe('catalogCommands', () => {
   });
 
   it('keeps not-found outcomes HTTP-agnostic and does not publish', () => {
-    const events: string[] = [];
+    const events: Array<{ type: string; payload: unknown }> = [];
     const commands = createCatalogCommands({
       listCatalogImageIds: () => [],
       updateCatalogImage: () => null,
       softDeleteCatalogImage: () => null,
       restoreCatalogImage: () => null,
       purgeCatalogImage: () => null,
-      publishEvent: (type) => events.push(type),
+      publishEvent: (type, payload) => events.push({ type, payload }),
     });
 
     expect(commands.restore('missing')).toEqual({ ok: false, reason: 'not_found' });
@@ -92,7 +92,7 @@ describe('catalogCommands', () => {
       [first.id, first],
       [second.id, second],
     ]);
-    const events: string[] = [];
+    const events: Array<{ type: string; payload: unknown }> = [];
     const commands = createCatalogCommands({
       listCatalogImageIds: (filters) =>
         [...images.values()]
@@ -102,7 +102,7 @@ describe('catalogCommands', () => {
       softDeleteCatalogImage: (id) => images.get(id) ?? null,
       restoreCatalogImage: () => null,
       purgeCatalogImage: () => null,
-      publishEvent: (type) => events.push(type),
+      publishEvent: (type, payload) => events.push({ type, payload }),
     });
 
     expect(commands.archiveByFilter({ workspaceId: 'workspace-a' })).toMatchObject({
@@ -112,7 +112,59 @@ describe('catalogCommands', () => {
       changedCount: 2,
       failed: [],
     });
-    expect(events).toEqual(['catalog.updated', 'catalog.updated']);
+    expect(events).toEqual([
+      {
+        type: 'catalog.batch_changed',
+        payload: {
+          action: 'archive',
+          changedCount: 2,
+          scope: { kind: 'workspace', workspaceId: 'workspace-a' },
+        },
+      },
+    ]);
+  });
+
+  it('publishes one compact event for a 200-image batch', () => {
+    const ids = Array.from({ length: 200 }, (_, index) => `image-${index}`);
+    const events: Array<{ type: string; payload: unknown }> = [];
+    const commands = createCatalogCommands({
+      listCatalogImageIds: () => ids,
+      updateCatalogImage: () => null,
+      softDeleteCatalogImage: (id) => catalogImage({ id }),
+      restoreCatalogImage: () => null,
+      purgeCatalogImage: () => null,
+      publishEvent: (type, payload) => events.push({ type, payload }),
+    });
+
+    expect(commands.archiveByFilter({ ids })).toMatchObject({ changedCount: 200, failed: [] });
+    expect(events).toEqual([
+      {
+        type: 'catalog.batch_changed',
+        payload: { action: 'archive', changedCount: 200, scope: { kind: 'selection' } },
+      },
+    ]);
+  });
+
+  it('publishes one event for partial success and none when no image changes', () => {
+    const events: Array<{ type: string; payload: unknown }> = [];
+    const commands = createCatalogCommands({
+      listCatalogImageIds: (filters) => filters.ids ?? ['ok', 'missing'],
+      updateCatalogImage: () => null,
+      softDeleteCatalogImage: (id) => (id === 'ok' ? catalogImage({ id }) : null),
+      restoreCatalogImage: () => null,
+      purgeCatalogImage: () => null,
+      publishEvent: (type, payload) => events.push({ type, payload }),
+    });
+
+    expect(commands.archiveByFilter({ ids: ['ok', 'missing'] })).toMatchObject({
+      changedCount: 1,
+      failed: [{ id: 'missing', reason: 'not_found' }],
+    });
+    expect(events).toHaveLength(1);
+
+    events.length = 0;
+    expect(commands.archiveByFilter({ ids: ['missing'] })).toMatchObject({ changedCount: 0 });
+    expect(events).toEqual([]);
   });
 
   it('does not archive the whole catalog without an explicit scope', () => {

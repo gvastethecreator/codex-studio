@@ -14,6 +14,12 @@ interface StudioReadinessLifecycleDependencies {
   isAppServerRunning: () => boolean;
 }
 
+const forceableRefreshReasons = new Set<StudioReadinessRefreshRequest['reason']>([
+  'manual',
+  'session_verify',
+  'app_server_change',
+]);
+
 export interface StudioReadinessLifecycle {
   readSnapshot(): StudioReadinessEnvelope;
   refresh(request: StudioReadinessRefreshRequest): Promise<StudioReadinessEnvelope>;
@@ -50,7 +56,8 @@ export function createStudioReadinessLifecycle({
 
   const refresh = (request: StudioReadinessRefreshRequest) => {
     if (disposed) return Promise.reject(new Error('Studio Readiness lifecycle is disposed'));
-    if (!request.force && readSnapshot().freshness === 'fresh') {
+    const force = request.force === true && forceableRefreshReasons.has(request.reason);
+    if (!force && readSnapshot().freshness === 'fresh') {
       return Promise.resolve(snapshot);
     }
     if (inFlight) return inFlight;

@@ -52,7 +52,7 @@ import { resolveStylePresetCardImages } from '../../lib/stylePresetVisuals';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
 import { useStyleRuntimePacks } from '../../hooks/useStyleRuntimePacks';
 import Tooltip from '../Tooltip';
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import { RecipeLayout } from './RecipeLayout';
 import {
@@ -95,6 +95,7 @@ import {
   type StyleRuntimePack,
   type StyleRuntimePreset,
 } from './stylesData';
+import { resolveStyleRuntimePackLoadRequest } from './styleRuntimePackRequirements';
 import type { StyleCollection } from './styles/collections';
 import {
   getStyleCollectionIdFromTabId,
@@ -1313,14 +1314,29 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     );
   }, [activeStyleCollectionId, styleCollectionsModule]);
 
-  const requiredStyleRuntimePackIds = useMemo(() => {
-    const packIds = activeStyleCollection?.sourcePackIds ?? [];
-    return STYLE_RUNTIME_PACK_IDS.includes(currentPackId) ? [currentPackId, ...packIds] : packIds;
-  }, [activeStyleCollection, currentPackId]);
-  const shouldLoadAllStyleRuntimePacks =
-    isGlobalStyleBrowseTab ||
-    (currentPackId === FAVORITES_PACK_ID && favorites.length > 0) ||
-    (isGlobalStyleSearchActive && !activeStyleCollectionId);
+  const styleRuntimePackLoadRequest = useMemo(
+    () =>
+      resolveStyleRuntimePackLoadRequest({
+        isPackLandingOpen,
+        currentPackId,
+        activeStyleCollectionId,
+        activeCollectionSourcePackIds: activeStyleCollection?.sourcePackIds ?? [],
+        isGlobalStyleBrowseTab,
+        favoritesCount: favorites.length,
+        isGlobalStyleSearchActive,
+        runtimePackIds: STYLE_RUNTIME_PACK_IDS,
+        favoritesPackId: FAVORITES_PACK_ID,
+      }),
+    [
+      activeStyleCollection,
+      activeStyleCollectionId,
+      currentPackId,
+      favorites.length,
+      isGlobalStyleBrowseTab,
+      isGlobalStyleSearchActive,
+      isPackLandingOpen,
+    ],
+  );
   const {
     loadedStylePacksById,
     loadStyleRuntimePacks,
@@ -1328,8 +1344,8 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     styleRuntimeError,
     retryStylePacks,
   } = useStyleRuntimePacks({
-    requiredPackIds: requiredStyleRuntimePackIds,
-    loadAll: shouldLoadAllStyleRuntimePacks,
+    requiredPackIds: styleRuntimePackLoadRequest.requiredPackIds,
+    loadAll: styleRuntimePackLoadRequest.loadAll,
   });
 
   const toggleFavorite = React.useCallback(
@@ -3148,7 +3164,7 @@ ${styleAnchorLine}
                       />
                     </button>
 
-                    <GsapDropdown
+                    <DemandMountedGsapDropdown
                       id={sortMenuId}
                       open={isSortDropdownOpen}
                       onOpenChange={setIsSortDropdownOpen}
@@ -3192,7 +3208,7 @@ ${styleAnchorLine}
                           );
                         })}
                       </div>
-                    </GsapDropdown>
+                    </DemandMountedGsapDropdown>
                   </div>
 
                   {currentPackId !== FAVORITES_PACK_ID && (

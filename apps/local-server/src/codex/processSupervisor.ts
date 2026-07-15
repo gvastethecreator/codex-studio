@@ -4,6 +4,7 @@ import { resolveCodexInvocationForExecutable } from '../codexExecutable';
 import { resolveLibraryPath } from '../library';
 import { log } from '../logger';
 import { appendRotatingLog } from '../rotatingLog';
+import { terminateOwnedProcessTree } from '../ownedProcessTree';
 import type { AppServerEnsureReason } from '../../../../packages/shared/src';
 
 export interface ProcessInfo {
@@ -124,6 +125,7 @@ export function ensureAppServer(reason: AppServerEnsureReason = 'session') {
       stderr: 'pipe',
       stdin: 'ignore',
       env: process.env,
+      windowsVerbatimArguments: process.platform === 'win32' && invocation[0] === 'cmd.exe',
     });
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
@@ -172,7 +174,7 @@ export async function stopAppServer() {
   diagnostics.pid = null;
 
   try {
-    currentProcess.kill();
+    terminateOwnedProcessTree(currentProcess);
   } catch {
     // Ignore kill failures for already-terminated processes.
   }

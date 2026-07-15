@@ -32,6 +32,7 @@ import {
   ensureAppServer,
   getAppServerDiagnostics,
   isAppServerRunning,
+  stopAppServer,
 } from './codex/processSupervisor';
 import { getCodexModelCatalog } from './codex/modelCatalog';
 import { getLocalCodexSession } from './codex/localCodexSession';
@@ -99,6 +100,7 @@ export interface CreateStudioAppOptions {
     readCodexModelCatalog?: () => Promise<CodexModelCatalogResponse>;
     readCodexRuntimeDoctor?: typeof readCodexRuntimeDoctor;
     ensureAppServer?: (reason?: AppServerEnsureReason) => void;
+    stopAppServer?: typeof stopAppServer;
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
     isAppServerRunning?: typeof isAppServerRunning;
     allowedOrigins?: string[];
@@ -110,7 +112,11 @@ export interface CreateStudioAppOptions {
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<
       WorkerController,
-      'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus' | 'resetWorkerState'
+      | 'cancelQueuedOrRunningJob'
+      | 'enqueueJob'
+      | 'getWorkerStatus'
+      | 'resetWorkerState'
+      | 'shutdown'
     >;
     logger?: typeof log;
   };
@@ -126,6 +132,7 @@ export async function createStudioApp(
   const readCodexRuntimeDoctorFn =
     options.dependencies?.readCodexRuntimeDoctor ?? readCodexRuntimeDoctor;
   const ensureLocalAppServer = options.dependencies?.ensureAppServer ?? ensureAppServer;
+  const stopLocalAppServer = options.dependencies?.stopAppServer ?? stopAppServer;
   const readAppServerDiagnostics =
     options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
   const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
@@ -409,14 +416,31 @@ export async function createStudioApp(
     );
   });
 
+  let shutdownPromise: Promise<void> | null = null;
+
   return {
     app,
     config: getSettings(),
     initResult: initResult ?? ({} as ReturnType<typeof initStudio>),
     worker: workerController.getWorkerStatus(),
     workerController,
-    async shutdown() {
-      readiness.dispose();
+    shutdown() {
+      if (!shutdownPromise) {
+        shutdownPromise = (async () => {
+          readiness.dispose();
+          const results = await Promise.allSettled([
+            Promise.resolve().then(() => workerController.shutdown()),
+            Promise.resolve().then(() => stopLocalAppServer()),
+          ]);
+          const failures = results.flatMap((result) =>
+            result.status === 'rejected' ? [result.reason] : [],
+          );
+          if (failures.length > 0) {
+            throw new AggregateError(failures, 'Studio shutdown did not complete cleanly.');
+          }
+        })();
+      }
+      return shutdownPromise;
     },
   };
 }

@@ -28,6 +28,7 @@ export type LocalCodexSessionReason =
   | 'api_key_not_supported'
   | 'external_tokens_not_supported'
   | 'app_server_unavailable'
+  | 'protocol_incompatible'
   | 'unknown'
   | null;
 export type StudioReadinessStage = 'checking' | 'ready' | 'action_required' | 'offline';
@@ -223,9 +224,18 @@ export interface Job {
   completedAt: string | null;
 }
 
-export interface JobSummary extends Omit<Job, 'sourceSpec'> {
-  sourceSpec: null;
+export interface JobSummary {
+  id: string;
+  projectId: string;
+  kind: JobKind;
+  providerId: GenerationProviderId | null;
+  status: JobStatus;
+  execution: JobExecutionOptions | null;
+  error: string | null;
   promptPreview: string;
+  createdAt: string;
+  updatedAt: string;
+  completedAt: string | null;
 }
 
 export interface JobEventRecord {
@@ -393,6 +403,16 @@ export interface CatalogBatchCommandResult {
   }>;
 }
 
+export interface CatalogBatchChangedEventPayload {
+  action: CatalogBatchCommandResult['action'];
+  changedCount: number;
+  scope:
+    | { kind: 'all' }
+    | { kind: 'selection' }
+    | { kind: 'workspace'; workspaceId: string }
+    | { kind: 'batch'; batchId: string };
+}
+
 export interface SystemLog {
   id: number;
   level: 'debug' | 'info' | 'warn' | 'error';
@@ -430,6 +450,12 @@ export type StudioEvent =
   | {
       type: 'catalog.created' | 'catalog.updated' | 'catalog.deleted';
       payload: CatalogImage;
+      createdAt: string;
+      revision?: number;
+    }
+  | {
+      type: 'catalog.batch_changed';
+      payload: CatalogBatchChangedEventPayload;
       createdAt: string;
       revision?: number;
     }

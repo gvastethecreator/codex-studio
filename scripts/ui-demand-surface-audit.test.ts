@@ -45,6 +45,11 @@ describe('UI demand surface audit', () => {
     );
     await writeRepoFile(
       rootDir,
+      'components/HeaderToolbar.tsx',
+      "import { GsapDropdown } from './ui/GsapDropdown';",
+    );
+    await writeRepoFile(
+      rootDir,
       'components/recipes/StylePresetCatalogSearchSurface.tsx',
       "void import('./stylePresetCatalogData').then(({ loadStylePresetCatalog }) => loadStylePresetCatalog());",
     );
@@ -64,6 +69,7 @@ describe('UI demand surface audit', () => {
       'viewport-no-static-route-pages',
       'motion-compat-no-static-gsap',
       'startup-toolbar-no-static-motion',
+      'startup-header-no-static-gsap-dropdown',
       'operations-rail-no-static-queue-panel',
     ]);
   });

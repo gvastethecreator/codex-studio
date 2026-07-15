@@ -1,33 +1,42 @@
 export interface LocalStudioSyncRefreshPolicy {
   onAssetAdded: () => void;
   onConnectionChange: (connected: boolean) => void;
+  onRevisionGap: () => void;
+  dispose: () => void;
 }
 
-export type LocalStudioSyncRefreshTrigger =
-  | 'asset_added'
-  | 'connection_lost'
-  | 'connection_restored';
+export type LocalStudioSyncRefreshTrigger = 'asset_added' | 'connection_restored' | 'revision_gap';
 
 interface CreateLocalStudioSyncRefreshPolicyOptions {
   refreshBackendState: () => Promise<void>;
-  scheduleRetry?: (callback: () => void, delayMs: number) => void;
+  onConnectionRestored?: () => void;
+  scheduleRetry?: (callback: () => void, delayMs: number) => unknown;
+  cancelRetry?: (handle: unknown) => void;
+  maxRetryAttempts?: number;
 }
 
 export function createLocalStudioSyncRefreshPolicy({
   refreshBackendState,
+  onConnectionRestored,
   scheduleRetry = (callback, delayMs) => {
-    setTimeout(callback, delayMs);
+    return setTimeout(callback, delayMs);
   },
+  cancelRetry = (handle) => clearTimeout(handle as ReturnType<typeof setTimeout>),
+  maxRetryAttempts = 2,
 }: CreateLocalStudioSyncRefreshPolicyOptions): LocalStudioSyncRefreshPolicy {
+  let disposed = false;
   let refreshInFlight = false;
   let queuedTrigger: LocalStudioSyncRefreshTrigger | null = null;
-  let reconnectRetryScheduled = false;
+  let retryScheduled = false;
+  let retryHandle: unknown = null;
+  let retryAttempts = 0;
   let lastConnectionState: boolean | null = null;
+  let hasConnected = false;
 
   const triggerPriority: Record<LocalStudioSyncRefreshTrigger, number> = {
     asset_added: 0,
-    connection_lost: 1,
-    connection_restored: 2,
+    connection_restored: 1,
+    revision_gap: 2,
   };
 
   const queueTrigger = (trigger: LocalStudioSyncRefreshTrigger) => {
@@ -36,19 +45,27 @@ export function createLocalStudioSyncRefreshPolicy({
     }
   };
 
-  const scheduleReconnectRetry = () => {
-    if (reconnectRetryScheduled) {
+  const scheduleRefreshRetry = (
+    trigger: Extract<LocalStudioSyncRefreshTrigger, 'connection_restored' | 'revision_gap'>,
+  ) => {
+    if (disposed || retryScheduled || retryAttempts >= maxRetryAttempts) {
       return;
     }
 
-    reconnectRetryScheduled = true;
-    scheduleRetry(() => {
-      reconnectRetryScheduled = false;
-      requestRefresh('connection_restored');
-    }, 300);
+    retryAttempts += 1;
+    retryScheduled = true;
+    retryHandle = scheduleRetry(
+      () => {
+        retryScheduled = false;
+        retryHandle = null;
+        requestRefresh(trigger);
+      },
+      300 * 2 ** (retryAttempts - 1),
+    );
   };
 
   const requestRefresh = (_trigger: LocalStudioSyncRefreshTrigger) => {
+    if (disposed) return;
     if (refreshInFlight) {
       queueTrigger(_trigger);
       return;
@@ -56,11 +73,16 @@ export function createLocalStudioSyncRefreshPolicy({
 
     refreshInFlight = true;
     void refreshBackendState()
-      .catch(() => {
-        if (_trigger === 'connection_restored') {
-          scheduleReconnectRetry();
-        }
-      })
+      .then(
+        () => {
+          retryAttempts = 0;
+        },
+        () => {
+          if (_trigger === 'connection_restored' || _trigger === 'revision_gap') {
+            scheduleRefreshRetry(_trigger);
+          }
+        },
+      )
       .finally(() => {
         refreshInFlight = false;
 
@@ -79,14 +101,21 @@ export function createLocalStudioSyncRefreshPolicy({
       const previousConnectionState = lastConnectionState;
       lastConnectionState = connected;
 
-      if (!connected) {
-        requestRefresh('connection_lost');
-        return;
-      }
-
-      if (previousConnectionState === false && connected) {
+      if (connected && hasConnected && previousConnectionState === false) {
+        onConnectionRestored?.();
         requestRefresh('connection_restored');
       }
+      if (connected) hasConnected = true;
+    },
+    onRevisionGap: () => {
+      requestRefresh('revision_gap');
+    },
+    dispose: () => {
+      disposed = true;
+      queuedTrigger = null;
+      if (retryScheduled && retryHandle !== null) cancelRetry(retryHandle);
+      retryScheduled = false;
+      retryHandle = null;
     },
   };
 }

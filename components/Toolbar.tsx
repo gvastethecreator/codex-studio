@@ -55,7 +55,7 @@ import type {
 import { IMAGE_GEN_RATIO_OPTIONS } from '../utils/imageGenSizing';
 import KeyPopover from './KeyPopover';
 import Tooltip from './Tooltip';
-import { GsapDropdown } from './ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
 
 export interface ToolbarProps {
   generationConfig: ImageGenerationConfig;
@@ -640,7 +640,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       )}
                     </button>
                   </Tooltip>
-                  <GsapDropdown
+                  <DemandMountedGsapDropdown
                     open={isNegativeOpen}
                     onOpenChange={setIsNegativeOpen}
                     triggerRef={negativeButtonRef}
@@ -666,7 +666,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       aria-label="Negative prompt"
                       className="h-10 w-full rounded-xl border border-white/5 bg-black/40 px-3 text-xs text-zinc-300 outline-none transition-colors placeholder-zinc-700 focus:border-red-500/30"
                     />
-                  </GsapDropdown>
+                  </DemandMountedGsapDropdown>
                 </div>
 
                 {!isContextOnly ? (
@@ -689,7 +689,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           <Edit3 size={15} />
                         </button>
                       </Tooltip>
-                      <GsapDropdown
+                      <DemandMountedGsapDropdown
                         open={isRefineOpen}
                         onOpenChange={setIsRefineOpen}
                         triggerRef={refineButtonRef}
@@ -731,7 +731,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                             )}
                           </button>
                         </div>
-                      </GsapDropdown>
+                      </DemandMountedGsapDropdown>
                     </div>
 
                     {/* 3. ENHANCE (Action) */}
@@ -927,7 +927,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <AspectRatioIcon ratio={generationConfig.aspectRatio} />
                     <span>{generationConfig.aspectRatio}</span>
                   </button>
-                  <GsapDropdown
+                  <DemandMountedGsapDropdown
                     open={isAspectRatioOpen}
                     onOpenChange={setIsAspectRatioOpen}
                     triggerRef={aspectRatioButtonRef}
@@ -959,7 +959,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         <span className="text-[6px] font-bold text-zinc-500">{option.size}</span>
                       </button>
                     ))}
-                  </GsapDropdown>
+                  </DemandMountedGsapDropdown>
                 </div>
 
                 {/* Resolution */}
@@ -981,7 +981,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <Monitor size={14} />
                       <span>{generationConfig.imageSize || '1K'}</span>
                     </button>
-                    <GsapDropdown
+                    <DemandMountedGsapDropdown
                       open={isSizeOpen}
                       onOpenChange={setIsSizeOpen}
                       triggerRef={sizeButtonRef}
@@ -1004,7 +1004,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                           {size}
                         </button>
                       ))}
-                    </GsapDropdown>
+                    </DemandMountedGsapDropdown>
                   </div>
                 )}
 
@@ -1026,7 +1026,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <Layers size={14} />
                     <span>{generationConfig.batchCount || 1}x</span>
                   </button>
-                  <GsapDropdown
+                  <DemandMountedGsapDropdown
                     open={isBatchOpen}
                     onOpenChange={setIsBatchOpen}
                     triggerRef={batchButtonRef}
@@ -1049,7 +1049,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         {count}
                       </button>
                     ))}
-                  </GsapDropdown>
+                  </DemandMountedGsapDropdown>
                 </div>
 
                 {/* Model Selector */}
@@ -1078,7 +1078,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       )}
                     </span>
                   </button>
-                  <GsapDropdown
+                  <DemandMountedGsapDropdown
                     open={isModelOpen}
                     onOpenChange={setIsModelOpen}
                     triggerRef={modelButtonRef}
@@ -1111,7 +1111,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         </div>
                       </button>
                     ))}
-                  </GsapDropdown>
+                  </DemandMountedGsapDropdown>
                 </div>
 
                 {/* Codex Task Execution Selector */}
@@ -1134,7 +1134,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     <span className="text-[8px] sm:hidden">Task</span>
                     <span className="hidden text-[8px] 2xl:inline">{executionSummary}</span>
                   </button>
-                  <GsapDropdown
+                  <DemandMountedGsapDropdown
                     open={isExecutionOpen}
                     onOpenChange={setIsExecutionOpen}
                     triggerRef={executionButtonRef}
@@ -1278,7 +1278,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         ))}
                       </div>
                     </div>
-                  </GsapDropdown>
+                  </DemandMountedGsapDropdown>
                 </div>
               </div>
             </div>

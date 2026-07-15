@@ -1,4 +1,5 @@
 import type {
+  CatalogBatchChangedEventPayload,
   CatalogBatchCommandResult,
   CatalogCommandFilter,
   CatalogImage,
@@ -20,7 +21,7 @@ export interface CreateCatalogCommandsDependencies {
   softDeleteCatalogImage: (id: string) => CatalogImage | null;
   restoreCatalogImage: (id: string) => CatalogImage | null;
   purgeCatalogImage: (id: string) => CatalogImage | null;
-  publishEvent: (type: string, payload: CatalogImage) => void;
+  publishEvent: (type: string, payload: unknown) => void;
 }
 
 function resultFor(
@@ -41,6 +42,19 @@ function hasScopeFilter(filters: CatalogCommandFilter) {
   );
 }
 
+function resolveBatchEventScope(
+  filters: CatalogCommandFilter,
+): CatalogBatchChangedEventPayload['scope'] {
+  if (typeof filters.workspaceId === 'string') {
+    return { kind: 'workspace', workspaceId: filters.workspaceId };
+  }
+  if (typeof filters.batchId === 'string') {
+    return { kind: 'batch', batchId: filters.batchId };
+  }
+  if (filters.ids && filters.ids.length > 0) return { kind: 'selection' };
+  return { kind: 'all' };
+}
+
 export function createCatalogCommands({
   listCatalogImageIds,
   updateCatalogImage,
@@ -53,12 +67,10 @@ export function createCatalogCommands({
     action,
     filters,
     run,
-    eventType,
   }: {
     action: CatalogBatchCommandResult['action'];
     filters: CatalogCommandFilter;
     run: (id: string) => CatalogImage | null;
-    eventType: 'catalog.updated' | 'catalog.deleted';
   }): CatalogBatchCommandResult {
     const ids = listCatalogImageIds(filters);
     const failed: CatalogBatchCommandResult['failed'] = [];
@@ -72,7 +84,6 @@ export function createCatalogCommands({
           continue;
         }
         changedCount += 1;
-        publishEvent(eventType, image);
       } catch (error) {
         failed.push({
           id,
@@ -80,6 +91,14 @@ export function createCatalogCommands({
           message: error instanceof Error ? error.message : String(error),
         });
       }
+    }
+
+    if (changedCount > 0) {
+      publishEvent('catalog.batch_changed', {
+        action,
+        changedCount,
+        scope: resolveBatchEventScope(filters),
+      } satisfies CatalogBatchChangedEventPayload);
     }
 
     return {
@@ -118,7 +137,6 @@ export function createCatalogCommands({
         action: 'archive',
         filters: { ...filters, isDeleted: filters.isDeleted ?? false },
         run: softDeleteCatalogImage,
-        eventType: 'catalog.updated',
       });
     },
     restoreByFilter(filters: CatalogCommandFilter) {
@@ -126,7 +144,6 @@ export function createCatalogCommands({
         action: 'restore',
         filters: { ...filters, isDeleted: filters.isDeleted ?? true },
         run: restoreCatalogImage,
-        eventType: 'catalog.updated',
       });
     },
     purgeByFilter(filters: CatalogCommandFilter) {
@@ -134,7 +151,6 @@ export function createCatalogCommands({
         action: 'purge',
         filters: { ...filters, isDeleted: filters.isDeleted ?? true },
         run: purgeCatalogImage,
-        eventType: 'catalog.deleted',
       });
     },
   };

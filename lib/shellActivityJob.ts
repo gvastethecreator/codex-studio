@@ -27,7 +27,8 @@ function readPromptPreview(job: Job | JobSummary) {
   if ('promptPreview' in job && job.promptPreview.trim()) {
     return job.promptPreview.trim();
   }
-  return (job.finalPromptUsed || job.originalPrompt || '').trim().slice(0, 160);
+  const fullJob = job as Job;
+  return (fullJob.finalPromptUsed || fullJob.originalPrompt || '').trim().slice(0, 160);
 }
 
 function readMetadataString(value: unknown, key: string) {
@@ -40,6 +41,8 @@ export function toShellActivityJob(
   job: Job | JobSummary,
   source: ShellActivityJobSource = 'backend_summary',
 ): ShellActivityJob {
+  const fullJob = 'promptPreview' in job ? null : job;
+  const promptPreview = readPromptPreview(job);
   return {
     id: job.id,
     projectId: job.projectId,
@@ -47,14 +50,17 @@ export function toShellActivityJob(
     providerId: job.providerId,
     status: job.status,
     execution: job.execution,
-    originalPrompt: job.originalPrompt,
+    originalPrompt: fullJob?.originalPrompt ?? promptPreview,
     error: job.error,
-    promptPreview: readPromptPreview(job),
-    workspaceId: readMetadataString(job.sourceSpec?.metadata, 'workspaceId'),
+    promptPreview,
+    workspaceId: readMetadataString(fullJob?.sourceSpec?.metadata, 'workspaceId'),
     recipeId:
-      job.sourceSpec?.recipeId ??
-      parsePromptTransport(job.finalPromptUsed || job.originalPrompt).recipeId,
-    aspectRatio: (job.sourceSpec?.output.aspectRatio as AspectRatio | null | undefined) ?? null,
+      fullJob?.sourceSpec?.recipeId ??
+      (fullJob
+        ? parsePromptTransport(fullJob.finalPromptUsed || fullJob.originalPrompt).recipeId
+        : null),
+    aspectRatio:
+      (fullJob?.sourceSpec?.output.aspectRatio as AspectRatio | null | undefined) ?? null,
     createdAt: job.createdAt,
     updatedAt: job.updatedAt,
     completedAt: job.completedAt,

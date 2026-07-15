@@ -19,11 +19,12 @@ import {
   localStudioSyncBackendReducer,
 } from './localStudioSyncProjection';
 import { createLocalStudioSyncRefreshPolicy } from './localStudioSyncRefreshPolicy';
+import { createCatalogEventRefreshPolicy } from './catalogEventRefreshPolicy';
 
 interface UseLocalStudioSyncProps {
   logs: LogEntry[];
   log: (message: string) => void;
-  onCatalogChanged?: (scope?: CatalogRefreshScope) => void;
+  onCatalogChanged?: (scope?: CatalogRefreshScope) => void | Promise<void>;
 }
 
 export interface LocalStudioSyncActivity {
@@ -85,19 +86,23 @@ export function useLocalStudioSync({
       log(
         `Local Codex backend sync failed: ${error instanceof Error ? error.message : String(error)}`,
       );
+      throw error;
     }
   }, [log]);
 
-  const refreshPolicy = useMemo(
-    () =>
-      createLocalStudioSyncRefreshPolicy({
-        refreshBackendState,
-      }),
-    [refreshBackendState],
-  );
-
   useEffect(() => {
-    void refreshBackendState();
+    // Policies are effect-owned so React StrictMode's setup-cleanup-setup cycle
+    // always receives fresh, non-disposed instances.
+    const catalogRefreshPolicy = createCatalogEventRefreshPolicy({
+      refreshCatalog: async (scope) => {
+        await onCatalogChanged?.(scope);
+      },
+    });
+    const refreshPolicy = createLocalStudioSyncRefreshPolicy({
+      refreshBackendState,
+      onConnectionRestored: () => catalogRefreshPolicy.request({ kind: 'all' }),
+    });
+    void refreshBackendState().catch(() => undefined);
 
     const stream = createStudioEventStream();
     streamRef.current = stream;
@@ -107,8 +112,12 @@ export function useLocalStudioSync({
     const unsubscribeAsset = stream.onAssetAdded(() => {
       refreshPolicy.onAssetAdded();
     });
-    const unsubscribeCatalog = stream.onCatalogChanged(({ image }) => {
-      onCatalogChanged?.(catalogRefreshScopeFromImage(image));
+    const unsubscribeCatalog = stream.onCatalogChanged((event) => {
+      catalogRefreshPolicy.request(
+        event.type === 'catalog.batch_changed'
+          ? { kind: 'all' }
+          : catalogRefreshScopeFromImage(event.image),
+      );
     });
     const unsubscribeLog = stream.onLogAdded((entry) => {
       dispatch({ type: 'log_added', entry });
@@ -119,7 +128,8 @@ export function useLocalStudioSync({
     });
     const unsubscribeRevisionGap =
       stream.onRevisionGap?.(() => {
-        void refreshBackendState();
+        refreshPolicy.onRevisionGap();
+        catalogRefreshPolicy.request({ kind: 'all' });
       }) ?? (() => {});
 
     return () => {
@@ -130,11 +140,13 @@ export function useLocalStudioSync({
       unsubscribeConnection();
       unsubscribeRevisionGap();
       stream.close();
+      refreshPolicy.dispose();
+      catalogRefreshPolicy.dispose();
       if (streamRef.current === stream) {
         streamRef.current = null;
       }
     };
-  }, [onCatalogChanged, refreshPolicy, refreshBackendState]);
+  }, [onCatalogChanged, refreshBackendState]);
 
   const waitForBackendJob = useCallback(
     async (jobId: string, signal?: AbortSignal, timeoutMs?: number) => {

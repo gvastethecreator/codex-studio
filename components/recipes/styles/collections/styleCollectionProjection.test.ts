@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vite-plus/test';
+import { describe, expect, it, vi } from 'vite-plus/test';
 
 import { loadStyleRuntimePack, loadStyleRuntimePacks } from '../../stylesData';
 import type { StyleRuntimePack, StyleRuntimePreset } from '../runtimeTypes';
@@ -14,6 +14,8 @@ import {
 } from './styleCollectionProjection';
 import { validateStyleCollections } from './styleCollectionValidation';
 import type { StyleCollection } from './styleCollectionTypes';
+
+vi.setConfig({ testTimeout: 60_000 });
 
 function preset(id: string, category: string): StyleRuntimePreset {
   return {

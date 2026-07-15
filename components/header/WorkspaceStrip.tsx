@@ -11,7 +11,7 @@ import {
 import { isDefaultWorkspace } from '../../lib/workspaceLifecycle';
 import type { Workspace } from '../../types';
 import Tooltip from '../Tooltip';
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface WorkspaceStripWorkspace extends Workspace {
   lastImage?: string;
@@ -347,7 +347,7 @@ export function WorkspaceStrip({
               </button>
             </Tooltip>
             {editingWorkspaceId === workspace.id && (
-              <GsapDropdown
+              <DemandMountedGsapDropdown
                 open={editingWorkspaceId === workspace.id}
                 onOpenChange={(open) => {
                   if (!open) setWorkspaceUi((prev) => ({ ...prev, editingWorkspaceId: null }));
@@ -371,10 +371,10 @@ export function WorkspaceStrip({
                   className="w-36 rounded-lg border border-white/10 bg-black/50 px-2 py-1.5 text-xs text-white outline-none focus:border-accent-500"
                   placeholder="Workspace name"
                 />
-              </GsapDropdown>
+              </DemandMountedGsapDropdown>
             )}
             {contextMenuWorkspaceId === workspace.id && (
-              <GsapDropdown
+              <DemandMountedGsapDropdown
                 open={contextMenuWorkspaceId === workspace.id}
                 onOpenChange={(open) => {
                   if (!open) {
@@ -467,7 +467,7 @@ export function WorkspaceStrip({
                   <Trash2 size={13} />
                   <span>{canDeleteWorkspace ? 'Delete workspace' : 'Default locked'}</span>
                 </button>
-              </GsapDropdown>
+              </DemandMountedGsapDropdown>
             )}
           </div>
         );

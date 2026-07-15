@@ -49,6 +49,7 @@ export interface WorkerController {
   cancelQueuedOrRunningJob(jobId: string): ReturnType<typeof getJob>;
   getWorkerStatus(): WorkerStatus;
   resetWorkerState(): Promise<void>;
+  shutdown(): Promise<void>;
 }
 
 export interface CreateWorkerControllerDependencies {
@@ -161,8 +162,11 @@ export function createWorkerController({
   const runningJobs = new Set<string>();
   const jobQueue: Job[] = [];
   const runningJobControllers = new Map<string, AbortController>();
+  const runningJobAbortReasons = new Map<string, 'user' | 'reset' | 'shutdown'>();
   const activeJobPromises = new Map<string, Promise<void>>();
   let activeWorkerCount = 0;
+  let isShuttingDown = false;
+  let shutdownPromise: Promise<void> | null = null;
   const codexGenerationProvider =
     createGenerationProvider?.() ?? createCodexGenerationProvider({ turn: createTurn() });
   const externalGenerationProvider =
@@ -461,10 +465,18 @@ export function createWorkerController({
       }
     } catch (error) {
       if (isAbortError(error)) {
-        addJobEventFn(job.id, 'job.cancelled', 'Job cancelled by user.');
-        updateJobStatusFn(job.id, 'cancelled');
-        publishEventFn('job.cancelled', getJobFn(job.id));
-        logger('info', 'worker', 'Job cancelled by user.', job.id);
+        const abortReason = runningJobAbortReasons.get(job.id) ?? 'user';
+        if (abortReason === 'shutdown') {
+          addJobEventFn(job.id, 'job.interrupted', 'Studio shutdown interrupted this job.');
+          updateJobStatusFn(job.id, 'queued');
+          publishEventFn('job.queued', getJobFn(job.id));
+          logger('info', 'worker', 'Job requeued for recovery after studio shutdown.', job.id);
+        } else {
+          addJobEventFn(job.id, 'job.cancelled', 'Job cancelled by user.');
+          updateJobStatusFn(job.id, 'cancelled');
+          publishEventFn('job.cancelled', getJobFn(job.id));
+          logger('info', 'worker', 'Job cancelled by user.', job.id);
+        }
       } else {
         const message = formatWorkerErrorMessage(error);
         updateJobStatusFn(job.id, 'failed', message);
@@ -473,11 +485,13 @@ export function createWorkerController({
       }
     } finally {
       runningJobControllers.delete(job.id);
+      runningJobAbortReasons.delete(job.id);
       runningJobs.delete(job.id);
     }
   }
 
   async function processQueue() {
+    if (isShuttingDown) return;
     while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
       const job = jobQueue.shift();
       if (!job) continue;
@@ -498,7 +512,7 @@ export function createWorkerController({
 
   return {
     enqueueJob(job: Job) {
-      if (runningJobs.has(job.id)) return;
+      if (isShuttingDown || runningJobs.has(job.id)) return;
       runningJobs.add(job.id);
       jobQueue.push(job);
       queueMicrotask(processQueue);
@@ -518,6 +532,7 @@ export function createWorkerController({
       const controller = runningJobControllers.get(jobId);
       if (controller) {
         addJobEventFn(jobId, 'job.cancel.requested', 'Cancellation requested for running job.');
+        runningJobAbortReasons.set(jobId, 'user');
         controller.abort();
         logger('info', 'worker', 'Cancellation requested for running job.', jobId);
         return getJobFn(jobId);
@@ -546,6 +561,7 @@ export function createWorkerController({
       for (const [jobId, controller] of runningJobControllers.entries()) {
         if (!controller.signal.aborted) {
           addJobEventFn(jobId, 'job.cancel.requested', 'Studio reset requested cancellation.');
+          runningJobAbortReasons.set(jobId, 'reset');
           controller.abort();
         }
       }
@@ -555,6 +571,38 @@ export function createWorkerController({
       }
 
       runningJobs.clear();
+    },
+    shutdown() {
+      if (!shutdownPromise) {
+        shutdownPromise = (async () => {
+          isShuttingDown = true;
+
+          const queuedJobs = jobQueue.splice(0, jobQueue.length);
+          for (const queuedJob of queuedJobs) {
+            runningJobs.delete(queuedJob.id);
+          }
+
+          for (const [jobId, controller] of runningJobControllers.entries()) {
+            if (!controller.signal.aborted) {
+              addJobEventFn(
+                jobId,
+                'job.interrupt.requested',
+                'Studio shutdown requested a recoverable interruption.',
+              );
+              runningJobAbortReasons.set(jobId, 'shutdown');
+              controller.abort();
+            }
+          }
+
+          if (activeJobPromises.size > 0) {
+            await Promise.allSettled(activeJobPromises.values());
+          }
+
+          runningJobs.clear();
+        })();
+      }
+
+      return shutdownPromise;
     },
   };
 }

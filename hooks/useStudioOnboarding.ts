@@ -42,8 +42,7 @@ export function useStudioOnboarding({
     autoOpenedRef.current = true;
     setHasSeenOnboarding(true);
     setIsOpen(true);
-    void refreshHealth();
-  }, [hasSeenOnboarding, refreshHealth, setHasSeenOnboarding, shouldAutoOpen]);
+  }, [hasSeenOnboarding, setHasSeenOnboarding, shouldAutoOpen]);
 
   const openOnboarding = useCallback(() => {
     setIsOpen(true);

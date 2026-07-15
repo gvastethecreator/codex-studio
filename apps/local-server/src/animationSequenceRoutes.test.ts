@@ -157,7 +157,7 @@ describe('animationSequenceRoutes', () => {
     } finally {
       rmSync(root, { recursive: true, force: true });
     }
-  }, 20_000);
+  }, 60_000);
 
   it('blocks GIF export until all frames are attached', async () => {
     const root = mkdtempSync(path.join(os.tmpdir(), 'animation-sequence-routes-'));

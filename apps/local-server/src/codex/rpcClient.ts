@@ -17,6 +17,7 @@ export interface RpcClientDependencies {
   ensureReason?: AppServerEnsureReason;
   retryDelayMs?: number;
   maxConnectAttempts?: number;
+  requestTimeoutMs?: number;
 }
 
 export interface RpcSession {
@@ -31,7 +32,15 @@ export interface RpcClient {
   ): Promise<RpcSession>;
 }
 
+interface PendingRequest {
+  resolve: (value: any) => void;
+  reject: (error: Error) => void;
+  timeout: ReturnType<typeof setTimeout>;
+}
+
 export class CodexRpcClient {
+  static readonly DEFAULT_REQUEST_TIMEOUT_MS = 15_000;
+
   private socket: WebSocket | null = null;
   private nextId = 1;
   private readonly ensureAppServerFn: (reason?: AppServerEnsureReason) => void;
@@ -39,10 +48,8 @@ export class CodexRpcClient {
   private readonly ensureReason: AppServerEnsureReason;
   private readonly retryDelayMs: number;
   private readonly maxConnectAttempts: number;
-  private pending = new Map<
-    number,
-    { resolve: (value: any) => void; reject: (error: Error) => void }
-  >();
+  private readonly requestTimeoutMs: number;
+  private pending = new Map<number | string, PendingRequest>();
   private notifications: JsonRpcMessage[] = [];
   private notificationListeners = new Set<{
     predicate: (message: JsonRpcMessage) => boolean;
@@ -57,12 +64,17 @@ export class CodexRpcClient {
     ensureReason = 'rpc',
     retryDelayMs = 200,
     maxConnectAttempts = 25,
+    requestTimeoutMs = CodexRpcClient.DEFAULT_REQUEST_TIMEOUT_MS,
   }: RpcClientDependencies = {}) {
     this.ensureAppServerFn = ensureAppServerFn;
     this.wsUrl = wsUrl;
     this.ensureReason = ensureReason;
     this.retryDelayMs = retryDelayMs;
     this.maxConnectAttempts = maxConnectAttempts;
+    this.requestTimeoutMs =
+      Number.isFinite(requestTimeoutMs) && requestTimeoutMs >= 0
+        ? requestTimeoutMs
+        : CodexRpcClient.DEFAULT_REQUEST_TIMEOUT_MS;
   }
 
   async connect() {
@@ -92,15 +104,7 @@ export class CodexRpcClient {
         clearTimeout(timeout);
         this.socket = socket;
         socket.addEventListener('message', (event) => this.handleMessage(String(event.data)));
-        socket.addEventListener('close', () => {
-          this.socket = null;
-          const error = new Error('Codex app-server socket closed');
-          for (const pending of this.pending.values()) {
-            pending.reject(error);
-          }
-          this.pending.clear();
-          this.rejectNotificationListeners(error);
-        });
+        socket.addEventListener('close', () => this.handleSocketClose(socket));
         resolve();
       });
       socket.addEventListener('error', () => {
@@ -110,14 +114,37 @@ export class CodexRpcClient {
     });
   }
 
-  request(method: string, params: unknown) {
+  request(method: string, params?: unknown) {
     if (!this.socket || this.socket.readyState !== WebSocket.OPEN) {
       throw new Error('Codex app-server socket is not open');
     }
     const id = this.nextId++;
-    this.socket.send(JSON.stringify({ jsonrpc: '2.0', id, method, params }));
+    const socket = this.socket;
+
     return new Promise<any>((resolve, reject) => {
-      this.pending.set(id, { resolve, reject });
+      const pending: PendingRequest = {
+        resolve,
+        reject,
+        timeout: undefined as unknown as ReturnType<typeof setTimeout>,
+      };
+      this.pending.set(id, pending);
+      pending.timeout = setTimeout(() => {
+        if (this.pending.get(id) !== pending) return;
+        this.pending.delete(id);
+        clearTimeout(pending.timeout);
+        reject(
+          new Error(
+            `Timed out waiting for Codex app-server response to ${method} after ${this.requestTimeoutMs}ms`,
+          ),
+        );
+      }, this.requestTimeoutMs);
+
+      try {
+        socket.send(JSON.stringify({ jsonrpc: '2.0', id, method, params }));
+      } catch (error) {
+        this.clearPending(id, pending);
+        reject(error instanceof Error ? error : new Error(String(error)));
+      }
     });
   }
 
@@ -161,9 +188,34 @@ export class CodexRpcClient {
   }
 
   close() {
-    this.rejectNotificationListeners(new Error('Codex app-server socket closed'));
-    this.socket?.close();
+    const error = new Error('Codex app-server socket closed');
+    const socket = this.socket;
     this.socket = null;
+    this.rejectPendingRequests(error);
+    this.rejectNotificationListeners(error);
+    socket?.close();
+  }
+
+  private handleSocketClose(socket: WebSocket) {
+    if (this.socket && this.socket !== socket) return;
+    this.socket = null;
+    const error = new Error('Codex app-server socket closed');
+    this.rejectPendingRequests(error);
+    this.rejectNotificationListeners(error);
+  }
+
+  private clearPending(id: number | string, pending: PendingRequest) {
+    if (this.pending.get(id) !== pending) return false;
+    clearTimeout(pending.timeout);
+    this.pending.delete(id);
+    return true;
+  }
+
+  private rejectPendingRequests(error: Error) {
+    for (const [id, pending] of this.pending) {
+      this.clearPending(id, pending);
+      pending.reject(error);
+    }
   }
 
   private rejectNotificationListeners(error: Error) {
@@ -181,9 +233,10 @@ export class CodexRpcClient {
       return;
     }
 
-    if (message.id !== undefined && this.pending.has(Number(message.id))) {
-      const pending = this.pending.get(Number(message.id))!;
-      this.pending.delete(Number(message.id));
+    if (message.id !== undefined) {
+      const pending = this.pending.get(message.id);
+      if (!pending) return;
+      this.clearPending(message.id, pending);
       if (message.error) {
         pending.reject(new Error(JSON.stringify(message.error)));
       } else {

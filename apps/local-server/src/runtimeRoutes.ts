@@ -1,5 +1,10 @@
 import { Hono } from 'hono';
-import type { AppServerEnsureReason, CodexRuntimeDoctorReport } from '../../../packages/shared/src';
+import type {
+  AppServerEnsureReason,
+  CodexRuntimeDoctorReport,
+  StudioReadinessRefreshReason,
+  StudioReadinessRefreshRequest,
+} from '../../../packages/shared/src';
 import type { getSettings } from './config';
 import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import type { getAppServerDiagnostics } from './codex/processSupervisor';
@@ -46,6 +51,40 @@ function redactRuntimeDoctor(report: CodexRuntimeDoctorReport): CodexRuntimeDoct
   };
 }
 
+const readinessRefreshReasons: readonly StudioReadinessRefreshReason[] = [
+  'startup',
+  'passive',
+  'manual',
+  'onboarding',
+  'session_verify',
+  'app_server_change',
+];
+const forceableReadinessReasons: readonly StudioReadinessRefreshReason[] = [
+  'manual',
+  'session_verify',
+  'app_server_change',
+];
+
+/**
+ * Keep the local readiness endpoint passive by default. A forced Runtime
+ * Doctor probe must be an explicit, named action from the caller.
+ */
+export function normalizeReadinessRefreshRequest(value: unknown): StudioReadinessRefreshRequest {
+  const input = value && typeof value === 'object' ? (value as Record<string, unknown>) : {};
+  const requestedForce = input.force === true;
+  const requestedReason = input.reason;
+  const reason = readinessRefreshReasons.includes(requestedReason as StudioReadinessRefreshReason)
+    ? (requestedReason as StudioReadinessRefreshReason)
+    : requestedForce
+      ? 'manual'
+      : 'passive';
+
+  return {
+    reason,
+    force: requestedForce && forceableReadinessReasons.includes(reason),
+  };
+}
+
 export function createRuntimeRoutes({
   readSettings,
   inspectLibrary,
@@ -69,14 +108,16 @@ export function createRuntimeRoutes({
   const buildHealthResponse = () => {
     const settings = readSettings();
     const library = inspectLibrary();
+    const readinessSnapshot = readiness?.readSnapshot();
     const fullCodexRuntime = readiness
-      ? (readiness.readSnapshot().codexRuntime ?? createCheckingRuntimeReport())
+      ? (readinessSnapshot?.codexRuntime ?? createCheckingRuntimeReport())
       : readCodexRuntimeDoctorFn();
     const codexRuntime = redactRuntimeDoctor(fullCodexRuntime);
     const codexAvailable = codexRuntime.selectedVersion !== null;
     const appServerDiagnostics = readAppServerDiagnostics();
     const libraryReady = library.exists && library.writable && library.missingFolders.length === 0;
     const appServerRunning = isAppServerRunning();
+    const localCodexSession = readinessSnapshot?.localCodexSession ?? null;
 
     return {
       ok: true,
@@ -122,7 +163,11 @@ export function createRuntimeRoutes({
       checks: {
         libraryReady,
         codexReady: codexRuntime.canRunJobs,
-        onboardingReady: libraryReady && codexRuntime.canRunJobs && appServerRunning,
+        onboardingReady:
+          libraryReady &&
+          codexRuntime.canRunJobs &&
+          appServerRunning &&
+          localCodexSession?.canRunLocalJobs === true,
       },
       worker: readWorkerStatus(),
     };
@@ -145,15 +190,20 @@ export function createRuntimeRoutes({
 
   routes.get('/readiness', (c) => c.json(readPublicReadiness()));
 
-  routes.post('/readiness/refresh', async (c) =>
-    c.json(
+  routes.post('/readiness/refresh', async (c) => {
+    let body: unknown = null;
+    try {
+      body = await c.req.json();
+    } catch {
+      // Empty or malformed bodies intentionally use the passive default.
+    }
+    const request = normalizeReadinessRefreshRequest(body);
+    return c.json(
       readiness
-        ? await readiness
-            .refresh({ reason: 'manual', force: true })
-            .then(() => readPublicReadiness())
+        ? await readiness.refresh(request).then(() => readPublicReadiness())
         : { codexRuntime: readCodexRuntimeDoctorFn() },
-    ),
-  );
+    );
+  });
 
   routes.get('/runtime/doctor', async (c) => {
     if (!readiness) return c.json(readCodexRuntimeDoctorFn());
@@ -163,7 +213,7 @@ export function createRuntimeRoutes({
 
   routes.post('/app-server/start', async (c) => {
     const codexRuntime = readiness
-      ? ((await readiness.refresh({ reason: 'manual' })).codexRuntime ??
+      ? ((await readiness.refresh({ reason: 'app_server_change', force: true })).codexRuntime ??
         createCheckingRuntimeReport())
       : readCodexRuntimeDoctorFn();
     if (!codexRuntime.canRunJobs) {

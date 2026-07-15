@@ -34,10 +34,11 @@ function parseJson<T>(value: string | null | undefined, fallback: T): T {
   }
 }
 
-function createPromptPreview(value: string | null | undefined, limit = 500) {
+function createPromptPreview(value: string | null | undefined, limit = 160) {
   const text = (value ?? '').trim();
   if (text.length <= limit) return text;
-  return `${text.slice(0, Math.max(0, limit - 1)).trimEnd()}...`;
+  if (limit <= 3) return text.slice(0, limit);
+  return `${text.slice(0, limit - 3).trimEnd()}...`;
 }
 
 function ensureColumn(
@@ -401,17 +402,8 @@ function mapJobSummary(row: any): JobSummary {
     projectId: row.project_id,
     kind: row.kind,
     providerId: row.provider_id,
-    sourceSpec: null,
     status: row.status,
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
-    libraryContext:
-      row.library_id && row.library_root
-        ? { libraryId: row.library_id, rootPath: row.library_root }
-        : null,
-    finalization: mapJobFinalization(row),
-    originalPrompt: createPromptPreview(row.original_prompt),
-    expandedPrompt: row.expanded_prompt ? createPromptPreview(row.expanded_prompt) : null,
-    finalPromptUsed: createPromptPreview(row.final_prompt_used),
     error: row.error,
     createdAt: row.created_at,
     updatedAt: row.updated_at,
@@ -629,8 +621,8 @@ export function listJobSummaries(db?: Database) {
     .query(
       `
       SELECT
-        id, project_id, kind, provider_id, status, execution_json, library_id, library_root,
-        original_prompt, expanded_prompt, final_prompt_used, error,
+        id, project_id, kind, provider_id, status, execution_json,
+        original_prompt, final_prompt_used, error,
         created_at, updated_at, completed_at
       FROM jobs
       ORDER BY created_at DESC
