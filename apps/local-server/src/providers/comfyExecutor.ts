@@ -12,6 +12,7 @@ import {
   type ExternalProviderFetch,
   type ExternalProviderFileDependencies,
 } from './externalProviderResults';
+import { DEFAULT_COMFY_MODEL } from './providerExecutionDefaults';
 
 type ReadTemplateFile = (filePath: string) => string;
 
@@ -33,8 +34,6 @@ interface ComfyImageRef {
   subfolder?: string;
   type?: string;
 }
-
-const DEFAULT_COMFY_MODEL = 'workflow-template';
 
 function resolveComfyApiBase(env: Record<string, string | undefined>) {
   return env.COMFY_API_URL?.trim() || env.COMFYUI_API_URL?.trim() || null;

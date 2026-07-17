@@ -15,12 +15,13 @@ import {
 import Tooltip from './Tooltip';
 import Logo from './Logo';
 import { TopToolbar } from './ui/TopToolbar';
-import { GsapDropdown } from './ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
 import { resolveRecipeAlias, type RecipeAliasId } from '../lib/recipeAliases';
 import type { StudioUsageSummary } from '../lib/studioDiagnostics';
 import type { Workspace, RecipeId } from '../types';
 import { UsageStatusCard } from './header/UsageStatusCard';
 import { WorkspaceStrip } from './header/WorkspaceStrip';
+import { QueueProgressBar } from './header/QueueProgressBar';
 import type { StudioCommandCenterProjection } from '../lib/commandCenterProjection';
 import { getRecipeModule } from '../lib/recipeModules';
 
@@ -83,7 +84,6 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
 }) => {
   const [isMobileWorkspaceOpen, setIsMobileWorkspaceOpen] = React.useState(false);
   const [isMobileCommandOpen, setIsMobileCommandOpen] = React.useState(false);
-  const [queueProgressTick, setQueueProgressTick] = React.useState(0);
   const mobileWorkspaceRef = React.useRef<HTMLDivElement>(null);
   const mobileWorkspaceButtonRef = React.useRef<HTMLButtonElement>(null);
   const mobileCommandRef = React.useRef<HTMLDivElement>(null);
@@ -104,25 +104,12 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
   const providerToolbarLabel = commandCenter.compactMode
     ? activeProvider.id.slice(0, 3)
     : activeProvider.id;
-  const queueProgressPercent = (() => {
-    if (!showCollapsedQueueProgress) return 0;
-    void queueProgressTick;
-    if (!generationStartTime) return 18;
-    return Math.min(Math.max(((Date.now() - generationStartTime) / 120_000) * 100, 6), 100);
-  })();
   const runtimeToneClass =
     runtimeStatus.tone === 'success'
       ? 'border-emerald-500/20 bg-emerald-500/8 text-emerald-200'
       : runtimeStatus.tone === 'warning'
         ? 'border-amber-500/20 bg-amber-500/8 text-amber-200'
         : 'border-rose-500/20 bg-rose-500/8 text-rose-200';
-
-  React.useEffect(() => {
-    if (!showCollapsedQueueProgress) return;
-
-    const interval = window.setInterval(() => setQueueProgressTick((tick) => tick + 1), 250);
-    return () => window.clearInterval(interval);
-  }, [showCollapsedQueueProgress]);
 
   React.useEffect(() => {
     if (!isMobileWorkspaceOpen && !isMobileCommandOpen) return;
@@ -182,7 +169,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   ) : null}
                 </button>
               </Tooltip>
-              <GsapDropdown
+              <DemandMountedGsapDropdown
                 id="mobile-workspace-menu"
                 open={isMobileWorkspaceOpen}
                 onOpenChange={setIsMobileWorkspaceOpen}
@@ -207,7 +194,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   onDeleteWorkspace={onDeleteWorkspace}
                   onRenameWorkspace={onRenameWorkspace}
                 />
-              </GsapDropdown>
+              </DemandMountedGsapDropdown>
             </div>
           </div>
 
@@ -377,12 +364,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 }`}
               >
                 {showCollapsedQueueProgress && (
-                  <span className="absolute inset-x-1 bottom-1 h-0.5 overflow-hidden rounded-full bg-black/60">
-                    <span
-                      className="block h-full w-full origin-left rounded-full bg-accent-300 transition-transform duration-200 ease-linear"
-                      style={{ transform: `scaleX(${queueProgressPercent / 100})` }}
-                    />
-                  </span>
+                  <QueueProgressBar generationStartTime={generationStartTime} />
                 )}
                 <SidebarRight
                   size={15}
@@ -428,7 +410,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                   <Menu2 size={15} />
                 </button>
               </Tooltip>
-              <GsapDropdown
+              <DemandMountedGsapDropdown
                 id="mobile-command-menu"
                 open={isMobileCommandOpen}
                 onOpenChange={setIsMobileCommandOpen}
@@ -521,7 +503,7 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                     Help
                   </button>
                 </div>
-              </GsapDropdown>
+              </DemandMountedGsapDropdown>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import {
   IconColorPicker as Pipette,
 } from '@tabler/icons-react';
 
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface ControlDropdownProps {
   title?: string;
@@ -81,7 +81,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
             aria-hidden="true"
           />
         </button>
-        <GsapDropdown
+        <DemandMountedGsapDropdown
           id={menuId}
           open={isOpen}
           onOpenChange={setIsOpen}
@@ -116,7 +116,7 @@ export const ControlDropdown: React.FC<ControlDropdownProps> = ({
               </button>
             );
           })}
-        </GsapDropdown>
+        </DemandMountedGsapDropdown>
       </div>
     </div>
   );
@@ -149,7 +149,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
           className="text-white drop-shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
         />
       </button>
-      <GsapDropdown
+      <DemandMountedGsapDropdown
         id={popoverId}
         open={isOpen}
         onOpenChange={setIsOpen}
@@ -175,7 +175,7 @@ export const MinimalColorPicker: React.FC<{ color: string; onChange: (c: string)
           aria-label="Pick custom color"
           className="pointer-events-none absolute opacity-0"
         />
-      </GsapDropdown>
+      </DemandMountedGsapDropdown>
     </div>
   );
 };

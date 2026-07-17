@@ -160,8 +160,11 @@ export function registerCatalogImage(input: {
   if (!library) throw new Error('No studio library registered.');
   const id = randomUUID();
   const createdAt = now();
-  const publicUrl = toPublicAssetUrl(input.filePath);
-  const thumbnailUrl = input.thumbnailPath ? toPublicAssetUrl(input.thumbnailPath) : null;
+  const libraryContext = { libraryId: library.id, rootPath: library.path };
+  const publicUrl = toPublicAssetUrl(input.filePath, libraryContext);
+  const thumbnailUrl = input.thumbnailPath
+    ? toPublicAssetUrl(input.thumbnailPath, libraryContext)
+    : null;
   getDb()
     .query(`
       INSERT INTO catalog_images (
@@ -198,6 +201,19 @@ export function registerCatalogImage(input: {
 
 export function getCatalogImage(id: string) {
   const row = getDb().query('SELECT * FROM catalog_images WHERE id = ?').get(id);
+  return row ? mapCatalogImage(row, { includeGenerationConfig: true }) : null;
+}
+
+export function getCatalogImageByJobId(jobId: string, filePath?: string | null) {
+  const row = filePath
+    ? getDb()
+        .query(
+          'SELECT * FROM catalog_images WHERE job_id = ? AND file_path = ? ORDER BY created_at ASC LIMIT 1',
+        )
+        .get(jobId, filePath)
+    : getDb()
+        .query('SELECT * FROM catalog_images WHERE job_id = ? ORDER BY created_at ASC LIMIT 1')
+        .get(jobId);
   return row ? mapCatalogImage(row, { includeGenerationConfig: true }) : null;
 }
 
@@ -422,7 +438,12 @@ export function softDeleteCatalogImage(id: string) {
     .query(
       'UPDATE catalog_images SET is_deleted = 1, deleted_at = ?, file_path = ?, public_url = ? WHERE id = ?',
     )
-    .run(now(), trashedPath, toPublicAssetUrl(trashedPath), id);
+    .run(
+      now(),
+      trashedPath,
+      toPublicAssetUrl(trashedPath, { libraryId: library.id, rootPath: library.path }),
+      id,
+    );
   return getCatalogImage(id);
 }
 
@@ -440,7 +461,11 @@ export function restoreCatalogImage(id: string) {
     .query(
       'UPDATE catalog_images SET is_deleted = 0, deleted_at = NULL, file_path = ?, public_url = ? WHERE id = ?',
     )
-    .run(restoredPath, toPublicAssetUrl(restoredPath), id);
+    .run(
+      restoredPath,
+      toPublicAssetUrl(restoredPath, { libraryId: library.id, rootPath: library.path }),
+      id,
+    );
   return getCatalogImage(id);
 }
 

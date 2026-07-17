@@ -11,6 +11,7 @@ import {
   resolveCodexInvocationForExecutable,
 } from './codexExecutable';
 import { listPlatformPathCandidates } from './platformPaths';
+import { terminateOwnedProcessTree } from './ownedProcessTree';
 
 interface SpawnResultLike {
   status: number | null;
@@ -23,6 +24,7 @@ interface SpawnOptionsLike {
   encoding: 'utf8';
   timeout: number;
   shell?: boolean;
+  windowsVerbatimArguments?: boolean;
 }
 
 type SpawnSyncLike = (
@@ -59,6 +61,7 @@ function runAsyncProcess(command: string, args: string[]): Promise<SpawnResultLi
     try {
       child = spawn(command, args, {
         shell: process.platform === 'win32' && /\.(?:cmd|bat)$/i.test(command),
+        windowsVerbatimArguments: process.platform === 'win32' && command === 'cmd.exe',
         windowsHide: true,
       });
     } catch (error) {
@@ -80,7 +83,11 @@ function runAsyncProcess(command: string, args: string[]): Promise<SpawnResultLi
       resolve(result);
     };
     const timeout = setTimeout(() => {
-      child.kill();
+      try {
+        terminateOwnedProcessTree(child);
+      } catch {
+        // The probe may have exited between the deadline and termination.
+      }
       finish({ status: null, stdout, stderr, error: new Error('Codex probe timed out') });
     }, PROBE_TIMEOUT_MS);
 
@@ -116,12 +123,20 @@ function isLegacyCodexCli({
   executable: string;
 }) {
   if (!versionNumber) return false;
-  if (/^0\.2\./.test(versionNumber)) return true;
   const looksBranded = /codex-cli/i.test(rawVersion ?? '');
   const looksLikeNpmShim = /[\\/]npm[\\/](codex(?:\.cmd|\.exe)?|node_modules[\\/])/i.test(
     executable,
   );
   return looksLikeNpmShim && !looksBranded;
+}
+
+function appServerHelpSupported(result: SpawnResultLike) {
+  if (result.status !== 0) return false;
+  const text = outputText(result);
+  if (/\b(?:unknown|unrecognized|unrecognised|invalid)\s+(?:command|subcommand)\b/i.test(text)) {
+    return false;
+  }
+  return /app-server|--listen|websocket/i.test(text);
 }
 
 function buildIssue(
@@ -176,6 +191,7 @@ function runProbe(
   const result = spawnSync(command, commandArgs, {
     encoding: 'utf8',
     timeout: PROBE_TIMEOUT_MS,
+    windowsVerbatimArguments: process.platform === 'win32' && command === 'cmd.exe',
   });
 
   return {
@@ -323,8 +339,7 @@ function inspectCandidate({
       selectedExecutable: candidate.path,
       args: ['app-server', '--help'],
     });
-    appServerSupported =
-      helpProbe.result.status === 0 && /app-server|--listen|websocket/i.test(helpProbe.text);
+    appServerSupported = appServerHelpSupported(helpProbe.result);
 
     if (!appServerSupported) {
       issues.push(
@@ -439,8 +454,7 @@ async function inspectCandidateAsync({
         : resolveCodexInvocationForExecutable(candidate.path, ['app-server', '--help']);
     const [helpCommand, ...helpArgs] = helpInvocation;
     const helpResult = await run(helpCommand, helpArgs);
-    appServerSupported =
-      helpResult.status === 0 && /app-server|--listen|websocket/i.test(outputText(helpResult));
+    appServerSupported = appServerHelpSupported(helpResult);
     if (!appServerSupported) {
       issues.push(
         buildIssue({
@@ -555,17 +569,33 @@ export async function inspectCodexRuntimeAsync({
     { path: initialExecutable, source: 'resolved executable' },
     ...listCandidates(),
   ]);
-  const probes = await Promise.all(
-    rawCandidates.map((candidate) =>
-      inspectCandidateAsync({
+  const initialCandidate = rawCandidates[0] ?? {
+    path: initialExecutable,
+    source: 'resolved executable',
+  };
+  const probes = [
+    await inspectCandidateAsync({
+      candidate: initialCandidate,
+      exists,
+      resolveInvocation,
+      selectedExecutable: initialExecutable,
+      run,
+    }),
+  ];
+
+  if (!probes[0].canRunJobs) {
+    for (const candidate of rawCandidates.slice(1)) {
+      const probe = await inspectCandidateAsync({
         candidate,
         exists,
         resolveInvocation,
         selectedExecutable: initialExecutable,
         run,
-      }),
-    ),
-  );
+      });
+      probes.push(probe);
+      if (probe.canRunJobs) break;
+    }
+  }
   return buildDoctorReport({ initialExecutable, rawCandidates, probes, exists, now });
 }
 

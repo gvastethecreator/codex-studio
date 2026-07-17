@@ -41,6 +41,7 @@ graph TD
 - `hooks/useStudioRuntime.ts` aggregates backend health, onboarding, diagnostics, session verification, and readiness.
 - `hooks/useLocalStudioSync.ts` mirrors jobs, logs, catalog changes, and SSE state.
 - `hooks/useCatalog.ts` owns Image Catalog reads, pagination, mutations, trash, queue-result previews, and refresh scopes.
+- `lib/catalogRequestGate.ts` gives Catalog replacement, pagination, filter, and detail reads generation-scoped ownership so stale responses cannot publish across view generations.
 - `services/localStudioService.ts` is the frontend HTTP adapter to the local backend.
 - `services/studioEventSource.ts` owns the shared SSE connection.
 - `services/localGenerationRun.ts` creates Persistent Jobs, waits for terminal state, and returns catalog-derived results.
@@ -50,6 +51,7 @@ graph TD
 - `lib/routePreloadBudget.ts` owns idle and intent-based route preloads so Home does not import every recipe surface before user intent.
 - `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts` project Command Center state.
 - `components/shell/StudioViewport.tsx` demand-loads route surfaces.
+- `hooks/useStyleRuntimePacks.ts` projects the Style Packs required by the current browser intent; `components/recipes/stylesData.ts` owns the shared value/promise registry and retry boundary.
 
 ## Core Backend Seams
 
@@ -57,7 +59,9 @@ graph TD
 - `apps/local-server/src/runtimeRoutes.ts` owns health, bootstrap config, and app-server lifecycle routes.
 - `apps/local-server/src/codexRoutes.ts` owns Local Codex Session routes.
 - `apps/local-server/src/jobRoutes.ts` and `apps/local-server/src/persistentJobIntake.ts` own job creation, validation, provider selection, and enqueue behavior.
+- `apps/local-server/src/providerExecutionPolicy.ts` resolves effective execution fields at intake: explicit request, selected-provider default, then bootstrap fallback.
 - `apps/local-server/src/catalog.ts` and `apps/local-server/src/db.ts` own catalog and SQLite persistence.
+- `apps/local-server/src/managedAssetPolicy.ts` validates provider assets against the captured Library root; `apps/local-server/src/workerAssetFinalizer.ts` owns recoverable file/Asset/Catalog/job finalization.
 - `apps/local-server/src/eventStreamRoutes.ts` owns SSE.
 - `apps/local-server/src/libraryRoutes.ts` owns local asset serving.
 - `apps/local-server/src/settingsRoutes.ts` owns editable Studio Settings.
@@ -69,7 +73,7 @@ graph TD
 1. The user works in the UI with a prompt, recipe, attachments, provider choice, batch count, and workspace.
 2. `useGenerationPipeline` delegates execution to the local generation runner.
 3. The runner resolves Recipe Module data, builds provider-independent Generation Task Specs, and creates Persistent Jobs.
-4. The backend validates intake, selects the Generation Provider, persists job state, and enqueues work.
+4. The backend validates intake, captures an immutable Library Context, resolves effective provider execution policy, persists job state, and enqueues work.
 5. The Provider Boundary compiles the Generation Task Spec into provider-specific input.
 6. The Codex provider runs turns through `codex app-server`; external providers run only when concrete preflight passes.
 7. Completed jobs write Local Assets, Catalog Entries, transcripts, and logs into the Studio Library.
@@ -78,7 +82,8 @@ graph TD
 
 ## Persistence
 
-- SQLite is the durable source of truth for jobs, cataloged assets, libraries, projects, settings, events, and system logs.
+- SQLite is the durable source of truth for jobs, cataloged assets, libraries, projects, settings, events, and system logs. Ordered schema migrations are recorded in `schema_migrations` and applied transactionally.
+- Persistent jobs carry immutable Library identity/root context and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads; detail paths load full payloads on demand.
 - The Studio Library defaults to a local user folder: `C:\Users\<user>\AI-Studio-Library` on Windows, `/Users/<user>/AI-Studio-Library` on macOS, or `/home/<user>/AI-Studio-Library` on Linux.
 - Internal Studio Library state lives under `.studio/`.
@@ -100,6 +105,24 @@ Studio Readiness combines:
 The main product flow is blocked when the local Codex/ChatGPT login cannot run jobs. The default Codex flow does not require `OPENAI_API_KEY`.
 Codex job intake uses this same non-secret runtime readiness signal before persisting or requeueing jobs, so known-bad local runtimes fail fast instead of creating doomed queue rows.
 
+Runtime compatibility is capability-first. Runtime Doctor probes the resolved
+stable launcher before fallback candidates, RPC requests have bounded
+deadlines, and shutdown owns the complete launcher process tree. Passive
+readiness refreshes are freshness-aware and single-flight; concurrent Local
+Codex Session readers share one handshake with a one-second completed-result
+window.
+
+Backend shutdown quiesces the job worker before stopping the managed
+`codex app-server`: queued jobs remain durable, active jobs receive an abort and
+return to `queued`, and the existing startup recovery scan enqueues them again
+on the next launch. Application exit therefore does not become a user
+cancellation or leave provider work orphaned.
+
+High-volume projections stay compact and event-driven. Job list rows use
+`JobSummary` rather than full prompt-bearing jobs, catalog batch mutations emit
+one scoped `catalog.batch_changed` event, and the SSE consumer coalesces batch,
+revision-gap, and reconnect reconciliation.
+
 ## Provider Boundary
 
 Generation Tasks and Generation Providers stay separate:
@@ -109,6 +132,8 @@ Generation Tasks and Generation Providers stay separate:
 - Provider-specific secrets, SDKs, retries, and output discovery stay behind backend adapters.
 - Provider Secrets stay outside SQLite-backed Studio Settings, job metadata, logs, transcripts, screenshots, and docs.
 - Providers must return the same local contract: job state, Local Assets, Catalog Entries, metadata, logs, and diagnostics.
+- Provider assets must already resolve to managed Library outputs, references, or masks. Raw caller-controlled filesystem paths never cross the Provider Boundary.
+- Editable per-provider execution defaults contain no secrets. Explicit null clears a stored override and falls back through provider/bootstrap policy at job intake.
 
 Current concrete adapters:
 
@@ -123,6 +148,7 @@ Heavy or optional UI should mount only when visible or explicitly requested:
 
 - recipe pages are route-lazy;
 - style catalog search mounts on demand;
+- Style Pack data loads through one cached single-flight runtime registry; rejected loads are evicted so the visible retry action can recover;
 - heavy catalog data, YAML parsing, ZIP export, and Three.js are lazy-loaded;
 - settings, diagnostics, activity, and provider internals open from explicit surfaces;
 - `ui:source:verify` and `ui:chunks:verify` guard against eager-regression imports.
@@ -143,6 +169,7 @@ Codex SDK and scripts are automation surfaces, not the product runtime. They sup
 - `ui:source:verify`
 - `ui:chunks:verify`
 - `library:layout:verify`
+- `architecture:verify` (the aggregate Style, Recipe, Provider, Catalog, Library-layout, and UI source gate required by CI)
 
 ## Storage Maintenance
 

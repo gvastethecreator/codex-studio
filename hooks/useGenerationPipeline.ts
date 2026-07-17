@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import type {
   Attachment,
   ImageGenerationConfig,
@@ -140,6 +140,20 @@ interface UseGenerationPipelineProps {
   setIsInteractingWithToolbar: (val: boolean) => void;
 }
 
+export interface ActiveGenerationRun {
+  id: number;
+  config: ImageGenerationConfig;
+  startedAt: number;
+}
+
+export function removeActiveGenerationRun(runs: ActiveGenerationRun[], runId: number) {
+  return runs.filter((run) => run.id !== runId);
+}
+
+export function getCurrentActiveGenerationRun(runs: ActiveGenerationRun[]) {
+  return runs.at(-1) ?? null;
+}
+
 export const useGenerationPipeline = ({
   generationConfig,
   activeWorkspaceId,
@@ -150,24 +164,25 @@ export const useGenerationPipeline = ({
   openModal,
   setIsInteractingWithToolbar,
 }: UseGenerationPipelineProps) => {
-  const [activeCount, setActiveCount] = useState(0);
-  const isGenerating = activeCount > 0;
-  const [activeGenerationConfig, setActiveGenerationConfig] =
-    useState<ImageGenerationConfig | null>(null);
-  const [generationStartTime, setGenerationStartTime] = useState<number | null>(null);
+  const [activeRuns, setActiveRuns] = useState<ActiveGenerationRun[]>([]);
+  const nextRunIdRef = useRef(0);
+  const activeRun = getCurrentActiveGenerationRun(activeRuns);
+  const isGenerating = activeRuns.length > 0;
+  const activeGenerationConfig = activeRun?.config ?? null;
+  const generationStartTime = activeRun?.startedAt ?? null;
 
   const beginRun = useCallback((configToUse: ImageGenerationConfig) => {
-    setActiveGenerationConfig(configToUse);
-    setActiveCount((prev) => prev + 1);
-    const startTime = Date.now();
-    setGenerationStartTime(startTime);
-    return startTime;
+    const run = {
+      id: ++nextRunIdRef.current,
+      config: configToUse,
+      startedAt: Date.now(),
+    };
+    setActiveRuns((runs) => [...runs, run]);
+    return run.id;
   }, []);
 
-  const finishRun = useCallback(() => {
-    setActiveCount((prev) => Math.max(0, prev - 1));
-    setActiveGenerationConfig(null);
-    setGenerationStartTime(null);
+  const finishRun = useCallback((runId: number) => {
+    setActiveRuns((runs) => removeActiveGenerationRun(runs, runId));
   }, []);
 
   const executeGeneration = useCallback(
@@ -176,7 +191,7 @@ export const useGenerationPipeline = ({
       options?: GenerationOptions,
     ): Promise<GenerationExecutionOutcome> => {
       const configToUse = { ...generationConfig, ...configOverrides };
-      beginRun(configToUse);
+      const runId = beginRun(configToUse);
       const recipeId = configToUse.recipeId ?? activeRecipe;
       const workspaceId = resolveGenerationWorkspaceId(activeWorkspaceId, options?.workspaceId);
 
@@ -235,7 +250,7 @@ export const useGenerationPipeline = ({
         reportGenerationError({ error, addToast, log });
         return buildFailedGenerationExecutionOutcome(error);
       } finally {
-        finishRun();
+        finishRun(runId);
       }
     },
     [
@@ -261,7 +276,7 @@ export const useGenerationPipeline = ({
         prompt,
       });
 
-      beginRun(configToUse);
+      const runId = beginRun(configToUse);
 
       try {
         const outcome = await runLocalGeneration({
@@ -294,7 +309,7 @@ export const useGenerationPipeline = ({
       } catch (error) {
         reportGenerationError({ error, addToast, log });
       } finally {
-        finishRun();
+        finishRun(runId);
       }
     },
     [

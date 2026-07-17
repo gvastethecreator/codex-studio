@@ -37,9 +37,17 @@ function createJob(overrides: Partial<Job> = {}): Job {
 
 function createJobSummary(job: Job): JobSummary {
   return {
-    ...job,
-    sourceSpec: null,
+    id: job.id,
+    projectId: job.projectId,
+    kind: job.kind,
+    providerId: job.providerId,
+    status: job.status,
+    execution: job.execution,
+    error: job.error,
     promptPreview: 'summary prompt',
+    createdAt: job.createdAt,
+    updatedAt: job.updatedAt,
+    completedAt: job.completedAt,
   };
 }
 

@@ -1,7 +1,14 @@
 import { statSync } from 'node:fs';
 import path from 'node:path';
-import type { registerCatalogImage } from './catalog';
-import type { addAsset, addJobEvent, getJob, updateJobStatus } from './db';
+import type { getCatalogImageByJobId, registerCatalogImage } from './catalog';
+import type {
+  addAsset,
+  addJobEvent,
+  getAssetByJobId,
+  getJob,
+  updateJobFinalization,
+  updateJobStatus,
+} from './db';
 import type { publishEvent } from './events';
 import type { toPublicAssetUrl } from './library';
 import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
@@ -14,9 +21,12 @@ import type { resolveJobCatalogContext } from './workerCatalogContext';
 
 interface WorkerAssetFinalizerDependencies {
   registerCatalogImage: typeof registerCatalogImage;
+  getCatalogImageByJobId: typeof getCatalogImageByJobId;
   addAsset: typeof addAsset;
+  getAssetByJobId: typeof getAssetByJobId;
   addJobEvent: typeof addJobEvent;
   updateJobStatus: typeof updateJobStatus;
+  updateJobFinalization: typeof updateJobFinalization;
   publishEvent: typeof publishEvent;
   getJob: typeof getJob;
   toPublicAssetUrl: typeof toPublicAssetUrl;
@@ -25,7 +35,12 @@ interface WorkerAssetFinalizerDependencies {
   parsePromptTransport: typeof parsePromptTransport;
   resolveExecutionOptions: typeof resolveJobExecutionOptions;
   resolveCatalogGenerationConfig: (job: Job) => Record<string, unknown>;
-  organizeGeneratedAssetPath: (job: Job, filePath: string, providerId: string | null) => string;
+  resolveGeneratedAssetTargetPath: (
+    job: Job,
+    providerId: string | null,
+    extension: string,
+  ) => string;
+  moveGeneratedAssetToPath: (filePath: string, targetPath: string) => string;
   inferGeneratedAssetMimeType: (filePath: string) => string;
   ensureThumbnailVariant?: typeof ensureThumbnailVariantDefault;
 }
@@ -34,13 +49,18 @@ interface FinalizeWorkerAssetOptions {
   logPrefix: string;
   embedMetadata?: boolean;
   executionOptions?: ReturnType<typeof resolveJobExecutionOptions>;
+  width?: number | null;
+  height?: number | null;
 }
 
 export function createWorkerAssetFinalizer({
   registerCatalogImage,
+  getCatalogImageByJobId,
   addAsset,
+  getAssetByJobId,
   addJobEvent,
   updateJobStatus,
+  updateJobFinalization,
   publishEvent,
   getJob,
   toPublicAssetUrl,
@@ -48,7 +68,8 @@ export function createWorkerAssetFinalizer({
   embedMetadata,
   parsePromptTransport,
   resolveCatalogGenerationConfig,
-  organizeGeneratedAssetPath,
+  resolveGeneratedAssetTargetPath,
+  moveGeneratedAssetToPath,
   inferGeneratedAssetMimeType,
   ensureThumbnailVariant = ensureThumbnailVariantDefault,
 }: WorkerAssetFinalizerDependencies) {
@@ -65,8 +86,31 @@ export function createWorkerAssetFinalizer({
     providerId: string;
     options: FinalizeWorkerAssetOptions;
   }) {
-    const mimeType = inferGeneratedAssetMimeType(discoveredImagePath);
-    const organizedImagePath = organizeGeneratedAssetPath(job, discoveredImagePath, providerId);
+    const checkpoint = job.finalization ?? null;
+    const sourcePath = checkpoint?.sourcePath ?? discoveredImagePath;
+    const targetPath =
+      checkpoint?.filePath ??
+      resolveGeneratedAssetTargetPath(
+        job,
+        providerId,
+        path.extname(discoveredImagePath).toLowerCase() || '.png',
+      );
+    updateJobFinalization(job.id, {
+      state: 'moving_asset',
+      sourcePath,
+      filePath: targetPath,
+      assetId: checkpoint?.assetId ?? null,
+      catalogId: checkpoint?.catalogId ?? null,
+    });
+    const organizedImagePath = moveGeneratedAssetToPath(sourcePath, targetPath);
+    const mimeType = inferGeneratedAssetMimeType(organizedImagePath);
+    updateJobFinalization(job.id, {
+      state: 'asset_moved',
+      sourcePath,
+      filePath: organizedImagePath,
+      assetId: checkpoint?.assetId ?? null,
+      catalogId: checkpoint?.catalogId ?? null,
+    });
     let thumbnailPath: string | null = null;
 
     try {
@@ -80,16 +124,28 @@ export function createWorkerAssetFinalizer({
       );
     }
 
-    const asset = addAsset({
-      projectId: job.projectId,
-      jobId: job.id,
+    const existingAsset = getAssetByJobId(job.id, organizedImagePath);
+    const asset =
+      existingAsset ??
+      addAsset({
+        projectId: job.projectId,
+        jobId: job.id,
+        filePath: organizedImagePath,
+        thumbnailPath,
+        publicUrl: job.libraryContext
+          ? toPublicAssetUrl(organizedImagePath, job.libraryContext)
+          : toPublicAssetUrl(organizedImagePath),
+        prompt: job.finalPromptUsed,
+        width: options.width ?? null,
+        height: options.height ?? null,
+        mimeType,
+      });
+    updateJobFinalization(job.id, {
+      state: 'asset_recorded',
+      sourcePath,
       filePath: organizedImagePath,
-      thumbnailPath,
-      publicUrl: toPublicAssetUrl(organizedImagePath),
-      prompt: job.finalPromptUsed,
-      width: null,
-      height: null,
-      mimeType,
+      assetId: asset.id,
+      catalogId: checkpoint?.catalogId ?? null,
     });
 
     const parsedPrompt = job.sourceSpec
@@ -102,22 +158,33 @@ export function createWorkerAssetFinalizer({
         }
       : parsePromptTransport(job.finalPromptUsed);
 
-    const catalogImage = registerCatalogImage({
-      filePath: asset.filePath,
-      thumbnailPath: asset.thumbnailPath,
-      prompt: asset.prompt,
-      negativePrompt: parsedPrompt.negativePrompt || null,
-      aspectRatio: parsedPrompt.aspectRatio,
-      imageSize: parsedPrompt.imageSize,
-      width: asset.width,
-      height: asset.height,
-      mimeType: asset.mimeType,
-      fileSizeBytes: statSync(asset.filePath).size,
-      jobId: asset.jobId,
-      workspaceId: catalogContext.workspaceId,
-      batchId: catalogContext.batchId,
-      recipeId: parsedPrompt.recipeId,
-      generationConfig: resolveCatalogGenerationConfig(job),
+    const existingCatalogImage = getCatalogImageByJobId(job.id, asset.filePath);
+    const catalogImage =
+      existingCatalogImage ??
+      registerCatalogImage({
+        libraryId: job.libraryContext?.libraryId ?? null,
+        filePath: asset.filePath,
+        thumbnailPath: asset.thumbnailPath,
+        prompt: asset.prompt,
+        negativePrompt: parsedPrompt.negativePrompt || null,
+        aspectRatio: parsedPrompt.aspectRatio,
+        imageSize: parsedPrompt.imageSize,
+        width: asset.width,
+        height: asset.height,
+        mimeType: asset.mimeType,
+        fileSizeBytes: statSync(asset.filePath).size,
+        jobId: asset.jobId,
+        workspaceId: catalogContext.workspaceId,
+        batchId: catalogContext.batchId,
+        recipeId: parsedPrompt.recipeId,
+        generationConfig: resolveCatalogGenerationConfig(job),
+      });
+    updateJobFinalization(job.id, {
+      state: 'catalog_recorded',
+      sourcePath,
+      filePath: organizedImagePath,
+      assetId: asset.id,
+      catalogId: catalogImage.id,
     });
 
     if (options.embedMetadata && options.executionOptions) {
@@ -143,11 +210,22 @@ export function createWorkerAssetFinalizer({
       });
     }
 
-    addJobEvent(job.id, 'asset.created', `${options.logPrefix} asset imported.`, {
+    if (!existingAsset) {
+      addJobEvent(job.id, 'asset.created', `${options.logPrefix} asset imported.`, {
+        assetId: asset.id,
+      });
+      publishEvent('asset.created', asset);
+    }
+    if (!existingCatalogImage) {
+      publishEvent('catalog.created', catalogImage);
+    }
+    updateJobFinalization(job.id, {
+      state: 'completed',
+      sourcePath,
+      filePath: organizedImagePath,
       assetId: asset.id,
+      catalogId: catalogImage.id,
     });
-    publishEvent('asset.created', asset);
-    publishEvent('catalog.created', catalogImage);
     updateJobStatus(job.id, 'completed');
     publishEvent('job.completed', getJob(job.id));
     logger(

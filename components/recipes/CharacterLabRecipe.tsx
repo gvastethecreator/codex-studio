@@ -50,7 +50,7 @@ import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
 import { resolveRecipeAlias, type RecipeAliasId } from '../../lib/recipeAliases';
 import { normalizeImageGenRatio } from '../../utils/imageGenSizing';
 import { RecipeLayout } from './RecipeLayout';
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface CharacterLabRecipeProps {
   recipeAliasId?: RecipeAliasId | null;
@@ -556,7 +556,7 @@ function SelectField({
         />
       </button>
 
-      <GsapDropdown
+      <DemandMountedGsapDropdown
         id={listboxId}
         open={isOpen}
         onOpenChange={(nextOpen) => {
@@ -610,7 +610,7 @@ function SelectField({
             </button>
           );
         })}
-      </GsapDropdown>
+      </DemandMountedGsapDropdown>
     </div>
   );
 }

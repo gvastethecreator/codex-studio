@@ -19,6 +19,7 @@ import {
   storeInlineImageResult,
   type ExternalProviderFetch,
 } from './externalProviderResults';
+import { DEFAULT_GOOGLE_IMAGE_MODEL } from './providerExecutionDefaults';
 
 type ReadLocalFile = (path: string) => Uint8Array;
 
@@ -35,7 +36,6 @@ export interface GoogleImageExecutorDependencies {
   retryDelayMs?: number;
 }
 
-const DEFAULT_GOOGLE_MODEL = 'gemini-2.5-flash-image';
 const DEFAULT_GOOGLE_API_BASE = 'https://generativelanguage.googleapis.com/v1beta';
 const DEFAULT_MAX_ATTEMPTS = 3;
 const DEFAULT_RETRY_DELAY_MS = 750;
@@ -229,7 +229,7 @@ export function createGoogleImageExecutor({
       payload.model?.trim() ||
       env.GOOGLE_IMAGE_MODEL?.trim() ||
       env.GEMINI_IMAGE_MODEL?.trim() ||
-      DEFAULT_GOOGLE_MODEL;
+      DEFAULT_GOOGLE_IMAGE_MODEL;
     const apiBase = trimTrailingSlash(env.GOOGLE_API_BASE?.trim() || DEFAULT_GOOGLE_API_BASE);
     const endpoint = `${apiBase}/models/${model.replace(/^\/+/, '')}:generateContent`;
     const requestBody = createGoogleRequestBody(payload, compiledInput.task, readFile);

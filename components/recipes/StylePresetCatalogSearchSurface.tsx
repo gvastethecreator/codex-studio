@@ -16,7 +16,7 @@ import {
 } from '../../lib/styleThumbnailCatalog';
 import { styleCategoryImageKey } from '../../lib/recipeAssetKeys';
 import { resolveStylePreviewImage } from '../../lib/stylePresetVisuals';
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 import {
   type StylePresetCatalogSearchIndex,
@@ -209,7 +209,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
               aria-hidden="true"
             />
           </button>
-          <GsapDropdown
+          <DemandMountedGsapDropdown
             id={packFilterId}
             open={isPackFilterOpen}
             onOpenChange={setIsPackFilterOpen}
@@ -255,7 +255,7 @@ export const StylePresetCatalogSearchSurface: React.FC<StylePresetCatalogSearchS
                 </button>
               );
             })}
-          </GsapDropdown>
+          </DemandMountedGsapDropdown>
         </div>
 
         <div className="flex items-center gap-1 rounded-xl border border-white/10 bg-black/50 p-1">

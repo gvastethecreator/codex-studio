@@ -260,6 +260,7 @@ export function hydrateSourceSpecAssetPaths(
   references: RawReference[],
   persistedRefs: ProcessedReference[],
   libraryDir?: string,
+  libraryId?: string,
 ) {
   if (!sourceSpec || sourceSpec.assets.length === 0) {
     return sourceSpec ?? null;
@@ -268,7 +269,7 @@ export function hydrateSourceSpecAssetPaths(
   const usedReferenceIndexes = new Set<number>();
 
   const hydratedAssets = sourceSpec.assets.map((asset) => {
-    const hydrateLibrarySource = () => hydrateLibrarySourceAsset(asset, libraryDir);
+    const hydrateLibrarySource = () => hydrateLibrarySourceAsset(asset, libraryDir, libraryId);
 
     if (!asset.dataUrl) {
       return hydrateLibrarySource();
@@ -315,6 +316,7 @@ export function hydrateSourceSpecAssetPaths(
 function resolveLibrarySourceUrlToLocalPath(
   sourceUrl: string | null | undefined,
   libraryDir: string | null | undefined,
+  libraryId?: string | null,
 ) {
   const trimmed = sourceUrl?.trim();
   if (!trimmed || !libraryDir) return null;
@@ -346,7 +348,10 @@ function resolveLibrarySourceUrlToLocalPath(
     return null;
   }
 
-  const normalized = relativePath.replaceAll('\\', '/').replace(/^\/+/, '');
+  let normalized = relativePath.replaceAll('\\', '/').replace(/^\/+/, '');
+  if (libraryId && normalized.startsWith(`${libraryId}/`)) {
+    normalized = normalized.slice(libraryId.length + 1);
+  }
   if (!normalized || normalized.includes('\0')) return null;
 
   const root = path.resolve(libraryDir);
@@ -362,10 +367,11 @@ function resolveLibrarySourceUrlToLocalPath(
 function hydrateLibrarySourceAsset(
   asset: GenerationTaskSpec['assets'][number],
   libraryDir: string | null | undefined,
+  libraryId?: string | null,
 ) {
   if (asset.localPath?.trim()) return asset;
 
-  const localPath = resolveLibrarySourceUrlToLocalPath(asset.sourceUrl, libraryDir);
+  const localPath = resolveLibrarySourceUrlToLocalPath(asset.sourceUrl, libraryDir, libraryId);
   if (!localPath) return asset;
 
   return {

@@ -50,8 +50,9 @@ import { hasStylePresetIdentity } from '../../lib/recipeIdentity';
 import { isStyleDefaultImageStale } from '../../lib/staleStyleDefaultImages.generated';
 import { resolveStylePresetCardImages } from '../../lib/stylePresetVisuals';
 import type { Attachment, GeneratedImageWithConfig, ImageGenerationConfig } from '../../types';
+import { useStyleRuntimePacks } from '../../hooks/useStyleRuntimePacks';
 import Tooltip from '../Tooltip';
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import { RecipeLayout } from './RecipeLayout';
 import {
@@ -90,12 +91,11 @@ import type { StylePresetCatalogSearchResult } from './stylePresetManifests';
 import {
   getStyleRuntimePresetDisplayName,
   getStyleRuntimePresetSearchNames,
-  loadStyleRuntimePack,
-  loadStyleRuntimePacks,
   STYLE_RUNTIME_PACK_SUMMARIES,
   type StyleRuntimePack,
   type StyleRuntimePreset,
 } from './stylesData';
+import { resolveStyleRuntimePackLoadRequest } from './styleRuntimePackRequirements';
 import type { StyleCollection } from './styles/collections';
 import {
   getStyleCollectionIdFromTabId,
@@ -1100,9 +1100,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   const [currentPackId, setCurrentPackId] = useState(DEFAULT_STYLE_PACK_ID);
   const [isPackLandingOpen, setIsPackLandingOpen] = useState(true);
   const currentStyleTabRef = useRef<StyleTabId>(STYLE_PACKS_TAB_ID);
-  const [loadedStylePacksById, setLoadedStylePacksById] = useState<
-    Record<string, StyleRuntimePack>
-  >({});
   const [selectedStyles, setSelectedStyles] = useState<SelectedStyleSlot[]>([]);
   const [isAdvancedStyleControlsOpen, setIsAdvancedStyleControlsOpen] = useState(false);
   const [userStylePresets, setUserStylePresets] = useState<UserStylePreset[]>([]);
@@ -1278,12 +1275,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     return () => window.removeEventListener('hashchange', syncStyleTabFromHash);
   }, [applyStyleTab]);
 
-  const cacheStylePack = useCallback((pack: StyleRuntimePack) => {
-    setLoadedStylePacksById((current) =>
-      current[pack.id] === pack ? current : { ...current, [pack.id]: pack },
-    );
-  }, []);
-
   const refreshUserStyles = useCallback(async () => {
     setIsLoadingUserStyles(true);
     setUserStyleError(null);
@@ -1313,26 +1304,6 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     };
   }, [styleCollectionsModule]);
 
-  useEffect(() => {
-    if (
-      getStyleCollectionIdFromTabId(currentPackId) ||
-      isGlobalStyleBrowseTab ||
-      currentPackId === FAVORITES_PACK_ID ||
-      currentPackId === USER_STYLE_PACK_ID ||
-      loadedStylePacksById[currentPackId]
-    ) {
-      return;
-    }
-
-    let cancelled = false;
-    void loadStyleRuntimePack(currentPackId).then((pack) => {
-      if (!cancelled && pack) cacheStylePack(pack);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [cacheStylePack, currentPackId, isGlobalStyleBrowseTab, loadedStylePacksById]);
-
   const activeStyleCollectionId = getStyleCollectionIdFromTabId(currentPackId);
   const activeStyleCollection = useMemo(() => {
     if (!activeStyleCollectionId || !styleCollectionsModule) return null;
@@ -1343,82 +1314,39 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     );
   }, [activeStyleCollectionId, styleCollectionsModule]);
 
-  useEffect(() => {
-    if (!activeStyleCollection) return;
-    const missingPackIds = activeStyleCollection.sourcePackIds.filter(
-      (packId) => STYLE_RUNTIME_PACK_IDS.includes(packId) && !loadedStylePacksById[packId],
-    );
-    if (missingPackIds.length === 0) return;
-
-    let cancelled = false;
-    void Promise.all(missingPackIds.map((packId) => loadStyleRuntimePack(packId))).then((packs) => {
-      if (cancelled) return;
-      setLoadedStylePacksById((current) => {
-        const next = { ...current };
-        for (const pack of packs) {
-          if (pack) next[pack.id] = pack;
-        }
-        return next;
-      });
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [activeStyleCollection, loadedStylePacksById]);
-
-  useEffect(() => {
-    if (!isGlobalStyleBrowseTab) return;
-    if (STYLE_RUNTIME_PACK_IDS.every((packId) => loadedStylePacksById[packId])) return;
-
-    let cancelled = false;
-    void loadStyleRuntimePacks().then((packs) => {
-      if (cancelled) return;
-      setLoadedStylePacksById((current) => {
-        const next = { ...current };
-        for (const pack of packs) next[pack.id] = pack;
-        return next;
-      });
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [isGlobalStyleBrowseTab, loadedStylePacksById]);
-
-  useEffect(() => {
-    if (currentPackId !== FAVORITES_PACK_ID || favorites.length === 0) return;
-
-    let cancelled = false;
-    void loadStyleRuntimePacks().then((packs) => {
-      if (cancelled) return;
-      setLoadedStylePacksById((current) => {
-        const next = { ...current };
-        for (const pack of packs) next[pack.id] = pack;
-        return next;
-      });
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [currentPackId, favorites.length]);
-
-  useEffect(() => {
-    if (!isGlobalStyleSearchActive) return;
-    if (activeStyleCollectionId) return;
-    if (STYLE_RUNTIME_PACK_IDS.every((packId) => loadedStylePacksById[packId])) return;
-
-    let cancelled = false;
-    void loadStyleRuntimePacks().then((packs) => {
-      if (cancelled) return;
-      setLoadedStylePacksById((current) => {
-        const next = { ...current };
-        for (const pack of packs) next[pack.id] = pack;
-        return next;
-      });
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [activeStyleCollectionId, isGlobalStyleSearchActive, loadedStylePacksById]);
+  const styleRuntimePackLoadRequest = useMemo(
+    () =>
+      resolveStyleRuntimePackLoadRequest({
+        isPackLandingOpen,
+        currentPackId,
+        activeStyleCollectionId,
+        activeCollectionSourcePackIds: activeStyleCollection?.sourcePackIds ?? [],
+        isGlobalStyleBrowseTab,
+        favoritesCount: favorites.length,
+        isGlobalStyleSearchActive,
+        runtimePackIds: STYLE_RUNTIME_PACK_IDS,
+        favoritesPackId: FAVORITES_PACK_ID,
+      }),
+    [
+      activeStyleCollection,
+      activeStyleCollectionId,
+      currentPackId,
+      favorites.length,
+      isGlobalStyleBrowseTab,
+      isGlobalStyleSearchActive,
+      isPackLandingOpen,
+    ],
+  );
+  const {
+    loadedStylePacksById,
+    loadStyleRuntimePacks,
+    isLoadingStylePacks,
+    styleRuntimeError,
+    retryStylePacks,
+  } = useStyleRuntimePacks({
+    requiredPackIds: styleRuntimePackLoadRequest.requiredPackIds,
+    loadAll: styleRuntimePackLoadRequest.loadAll,
+  });
 
   const toggleFavorite = React.useCallback(
     (presetId: string) => {
@@ -2205,9 +2133,14 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
 
   const handleApplyCatalogPreset = useCallback(
     async (result: StylePresetCatalogSearchResult) => {
-      const loadedPack =
-        loadedStylePacksById[result.packId] ?? (await loadStyleRuntimePack(result.packId));
-      if (loadedPack) cacheStylePack(loadedPack);
+      let loadedPack = loadedStylePacksById[result.packId];
+      if (!loadedPack) {
+        try {
+          [loadedPack] = await loadStyleRuntimePacks([result.packId]);
+        } catch {
+          return;
+        }
+      }
       const preset = loadedPack?.presets.find((candidate) => candidate.id === result.id);
       if (!preset) return;
 
@@ -2220,7 +2153,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
       handleApplyStyleRef.current(preset, result.packId);
     },
-    [loadedStylePacksById, cacheStylePack, applyStyleTab],
+    [loadedStylePacksById, loadStyleRuntimePacks, applyStyleTab],
   );
 
   const handleCopyStylePrompt = (e: React.MouseEvent, preset: StyleRuntimePreset) => {
@@ -3231,7 +3164,7 @@ ${styleAnchorLine}
                       />
                     </button>
 
-                    <GsapDropdown
+                    <DemandMountedGsapDropdown
                       id={sortMenuId}
                       open={isSortDropdownOpen}
                       onOpenChange={setIsSortDropdownOpen}
@@ -3275,7 +3208,7 @@ ${styleAnchorLine}
                           );
                         })}
                       </div>
-                    </GsapDropdown>
+                    </DemandMountedGsapDropdown>
                   </div>
 
                   {currentPackId !== FAVORITES_PACK_ID && (
@@ -3415,7 +3348,22 @@ ${styleAnchorLine}
 
                   {filteredStylePresets.length === 0 && (
                     <div className="h-64 flex flex-col items-center justify-center text-zinc-600 gap-4">
-                      {currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
+                      {currentPackId !== USER_STYLE_PACK_ID && styleRuntimeError ? (
+                        <>
+                          <Filter size={32} className="opacity-20" />
+                          <span className="text-xs font-bold uppercase tracking-widest">
+                            Could not load this style pack
+                          </span>
+                          <button
+                            type="button"
+                            onClick={retryStylePacks}
+                            className="flex h-9 items-center gap-2 rounded-[6px] border border-white/10 bg-white/5 px-3 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-colors hover:bg-white/10 hover:text-white"
+                          >
+                            <Wand2 size={13} />
+                            Retry
+                          </button>
+                        </>
+                      ) : currentPackId === USER_STYLE_PACK_ID && userStyleError ? (
                         <>
                           <Filter size={32} className="opacity-20" />
                           <span className="text-xs font-bold uppercase tracking-widest">
@@ -3451,7 +3399,7 @@ ${styleAnchorLine}
                         <>
                           <Filter size={32} className="opacity-20" />
                           <span className="text-xs font-bold uppercase tracking-widest">
-                            {isLoadingUserStyles
+                            {isLoadingUserStyles || isLoadingStylePacks
                               ? 'Loading styles'
                               : 'No styles found matching criteria'}
                           </span>

@@ -1,3 +1,5 @@
+import { stopDevProcesses, waitForFirstDevProcessExit } from './devProcessPolicy';
+
 const processes = [
   Bun.spawn(['bun', 'run', 'dev:server'], {
     stdout: 'inherit',
@@ -11,10 +13,20 @@ const processes = [
   }),
 ];
 
+const stopOptions = {
+  platform: process.platform,
+  killProcessTree:
+    process.platform === 'win32'
+      ? (pid: number) =>
+          Bun.spawnSync(['taskkill', '/PID', String(pid), '/T', '/F'], {
+            stdout: 'ignore',
+            stderr: 'ignore',
+          }).exitCode === 0
+      : undefined,
+};
+
 function shutdown() {
-  for (const child of processes) {
-    child.kill();
-  }
+  stopDevProcesses(processes, stopOptions);
 }
 
 process.on('SIGINT', () => {
@@ -27,5 +39,5 @@ process.on('SIGTERM', () => {
   process.exit(0);
 });
 
-await Promise.race(processes.map((child) => child.exited));
-shutdown();
+const firstExitCode = await waitForFirstDevProcessExit(processes, stopOptions);
+process.exitCode = firstExitCode;

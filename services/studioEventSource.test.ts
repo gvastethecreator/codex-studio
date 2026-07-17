@@ -12,10 +12,11 @@ import {
 
 vi.mock('./localStudioService', () => ({
   getStudioApiBase: () => 'http://127.0.0.1:4317',
+  getStudioJobDetail: vi.fn(),
   listStudioJobs: vi.fn(async () => []),
 }));
 
-const { listStudioJobs } = await import('./localStudioService');
+const { getStudioJobDetail, listStudioJobs } = await import('./localStudioService');
 
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
@@ -39,9 +40,17 @@ function createJob(overrides: Partial<Job> = {}): Job {
 function createJobSummary(overrides: Partial<Job> = {}): JobSummary {
   const job = createJob(overrides);
   return {
-    ...job,
-    sourceSpec: null,
+    id: job.id,
+    projectId: job.projectId,
+    kind: job.kind,
+    providerId: job.providerId,
+    status: job.status,
+    execution: job.execution,
+    error: job.error,
     promptPreview: job.finalPromptUsed || job.originalPrompt,
+    createdAt: job.createdAt,
+    updatedAt: job.updatedAt,
+    completedAt: job.completedAt,
   };
 }
 
@@ -108,6 +117,7 @@ describe('studioEventSource', () => {
     const previousEventSource = globalThis.EventSource;
     const sources: Array<{
       close: ReturnType<typeof vi.fn>;
+      onopen: (() => void) | null;
       onmessage: ((event: MessageEvent) => void) | null;
     }> = [];
 
@@ -184,6 +194,7 @@ describe('studioEventSource', () => {
     const previousEventSource = globalThis.EventSource;
     const sources: Array<{
       close: ReturnType<typeof vi.fn>;
+      onopen: (() => void) | null;
       onmessage: ((event: MessageEvent) => void) | null;
     }> = [];
 
@@ -208,7 +219,18 @@ describe('studioEventSource', () => {
     try {
       const stream = createStudioEventStream();
       const seen: string[] = [];
-      stream.onCatalogChanged((event) => seen.push(`${event.type}:${event.image.id}`));
+      const connections: boolean[] = [];
+      stream.onConnectionChange((connected) => connections.push(connected));
+      expect(connections).toEqual([]);
+      sources[0]?.onopen?.();
+      expect(connections).toEqual([true]);
+      stream.onCatalogChanged((event) =>
+        seen.push(
+          event.type === 'catalog.batch_changed'
+            ? `${event.type}:${event.batch.changedCount}`
+            : `${event.type}:${event.image.id}`,
+        ),
+      );
       for (const type of ['catalog.created', 'catalog.updated', 'catalog.deleted']) {
         sources[0]?.onmessage?.({
           data: JSON.stringify({
@@ -218,11 +240,19 @@ describe('studioEventSource', () => {
           }),
         } as MessageEvent);
       }
+      sources[0]?.onmessage?.({
+        data: JSON.stringify({
+          type: 'catalog.batch_changed',
+          payload: { action: 'archive', changedCount: 200, scope: { kind: 'selection' } },
+          createdAt: '2026-06-21T00:00:00.000Z',
+        }),
+      } as MessageEvent);
 
       expect(seen).toEqual([
         'catalog.created:catalog.created',
         'catalog.updated:catalog.updated',
         'catalog.deleted:catalog.deleted',
+        'catalog.batch_changed:200',
       ]);
       stream.close();
     } finally {
@@ -308,9 +338,11 @@ describe('studioEventSource', () => {
   });
 
   it('returns already-terminal completed job from initial snapshot', async () => {
+    const completed = createJob({ id: 'job-1', status: 'completed' });
     vi.mocked(listStudioJobs).mockResolvedValueOnce([
       createJobSummary({ id: 'job-1', status: 'completed' }),
     ]);
+    vi.mocked(getStudioJobDetail).mockResolvedValueOnce({ job: completed } as never);
     const stream = {
       onJobUpdate: () => () => {},
       onAssetAdded: () => () => {},

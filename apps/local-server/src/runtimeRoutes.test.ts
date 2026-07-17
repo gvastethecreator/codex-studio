@@ -1,6 +1,11 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
-import type { CodexRuntimeDoctorReport } from '../../../packages/shared/src';
-import { createRuntimeRoutes } from './runtimeRoutes';
+import type {
+  CodexRuntimeDoctorReport,
+  LocalCodexSessionResponse,
+  StudioReadinessEnvelope,
+} from '../../../packages/shared/src';
+import type { StudioReadinessLifecycle } from './studioReadinessLifecycle';
+import { createRuntimeRoutes, normalizeReadinessRefreshRequest } from './runtimeRoutes';
 
 function createCodexRuntimeReport(
   overrides: Partial<CodexRuntimeDoctorReport> = {},
@@ -25,6 +30,40 @@ function createCodexRuntimeReport(
       },
     ],
     ...overrides,
+  };
+}
+
+function createReadiness(
+  canRunLocalJobs = true,
+): StudioReadinessLifecycle & { refresh: ReturnType<typeof vi.fn> } {
+  const localCodexSession: LocalCodexSessionResponse = {
+    authMode: canRunLocalJobs ? 'chatgpt' : 'apikey',
+    planType: null,
+    usage: null,
+    source: 'app-server',
+    fetchedAt: '2026-05-31T00:00:00.000Z',
+    error: null,
+    authLabel: canRunLocalJobs ? 'ChatGPT login' : 'API key',
+    state: canRunLocalJobs ? 'ready' : 'unsupported_auth',
+    reason: canRunLocalJobs ? null : 'api_key_not_supported',
+    isChatgptLogin: canRunLocalJobs,
+    isSupportedAuthMode: canRunLocalJobs,
+    canRunLocalJobs,
+  };
+  const snapshot: StudioReadinessEnvelope = {
+    revision: 1,
+    observedAt: '2026-05-31T00:00:00.000Z',
+    freshness: 'fresh',
+    refreshState: 'idle',
+    lastAttemptAt: '2026-05-31T00:00:00.000Z',
+    lastSuccessAt: '2026-05-31T00:00:00.000Z',
+    codexRuntime: createCodexRuntimeReport(),
+    localCodexSession,
+  };
+  return {
+    readSnapshot: () => snapshot,
+    refresh: vi.fn(async () => snapshot),
+    dispose: vi.fn(),
   };
 }
 
@@ -69,6 +108,7 @@ describe('runtimeRoutes', () => {
         queuedJobs: 0,
         trackedJobs: 0,
       }),
+      readiness: createReadiness(true),
     });
 
     const healthResponse = await routes.request('/health');
@@ -213,5 +253,123 @@ describe('runtimeRoutes', () => {
       codexRuntime: expect.objectContaining({ canRunJobs: false }),
     });
     expect(ensureAppServer).not.toHaveBeenCalled();
+  });
+
+  it('keeps onboarding blocked when the local Codex session cannot run jobs', async () => {
+    const routes = createRuntimeRoutes({
+      readSettings: () => ({
+        libraryDir: 'D:/library',
+        serverPort: 17223,
+        codexWsPort: 17224,
+        codexImagegenModel: 'gpt-image-1',
+        codexImagegenReasoningEffort: 'medium',
+        codexImagegenServiceTier: null,
+        codexMaxConcurrentJobs: 1,
+      }),
+      inspectLibrary: () => ({
+        exists: true,
+        writable: true,
+        readmePresent: true,
+        missingFolders: [],
+      }),
+      getCodexWsUrl: () => 'ws://127.0.0.1:17224',
+      getEnvLocalPath: () => 'D:/repo/.env.local',
+      hasEnvLocalFile: () => true,
+      ensureAppServer: vi.fn(),
+      readAppServerDiagnostics: () => ({
+        pid: 456,
+        lastExitCode: null,
+        lastExitAt: null,
+        lastInvocation: ['codex', 'app-server'],
+        lastStartAt: null,
+        lastStartError: null,
+        lastEnsureAt: null,
+        lastEnsureReason: null,
+      }),
+      isAppServerRunning: () => true,
+      readWorkerStatus: () => ({
+        maxConcurrentJobs: 1,
+        activeWorkerCount: 0,
+        queuedJobs: 0,
+        trackedJobs: 0,
+      }),
+      readiness: createReadiness(false),
+    });
+
+    const response = await routes.request('/health');
+    const payload = (await response.json()) as { checks: { onboardingReady: boolean } };
+
+    expect(payload.checks.onboardingReady).toBe(false);
+  });
+
+  it('defaults readiness refreshes to passive and only honors explicit force requests', async () => {
+    expect(normalizeReadinessRefreshRequest(undefined)).toEqual({
+      reason: 'passive',
+      force: false,
+    });
+    expect(normalizeReadinessRefreshRequest({ force: true })).toEqual({
+      reason: 'manual',
+      force: true,
+    });
+    expect(normalizeReadinessRefreshRequest({ reason: 'passive', force: true })).toEqual({
+      reason: 'passive',
+      force: false,
+    });
+
+    const readiness = createReadiness(true);
+    const routes = createRuntimeRoutes({
+      readSettings: () => ({
+        libraryDir: 'D:/library',
+        serverPort: 17223,
+        codexWsPort: 17224,
+        codexImagegenModel: 'gpt-image-1',
+        codexImagegenReasoningEffort: 'medium',
+        codexImagegenServiceTier: null,
+        codexMaxConcurrentJobs: 1,
+      }),
+      inspectLibrary: () => ({
+        exists: true,
+        writable: true,
+        readmePresent: true,
+        missingFolders: [],
+      }),
+      getCodexWsUrl: () => 'ws://127.0.0.1:17224',
+      getEnvLocalPath: () => 'D:/repo/.env.local',
+      hasEnvLocalFile: () => true,
+      ensureAppServer: vi.fn(),
+      readAppServerDiagnostics: () => ({
+        pid: 456,
+        lastExitCode: null,
+        lastExitAt: null,
+        lastInvocation: ['codex', 'app-server'],
+        lastStartAt: null,
+        lastStartError: null,
+        lastEnsureAt: null,
+        lastEnsureReason: null,
+      }),
+      isAppServerRunning: () => true,
+      readWorkerStatus: () => ({
+        maxConcurrentJobs: 1,
+        activeWorkerCount: 0,
+        queuedJobs: 0,
+        trackedJobs: 0,
+      }),
+      readiness,
+    });
+
+    await routes.request('/readiness/refresh', { method: 'POST' });
+    await routes.request('/readiness/refresh', {
+      method: 'POST',
+      body: JSON.stringify({ reason: 'manual', force: true }),
+    });
+
+    expect(readiness.refresh).toHaveBeenNthCalledWith(1, {
+      reason: 'passive',
+      force: false,
+    });
+    expect(readiness.refresh).toHaveBeenNthCalledWith(2, {
+      reason: 'manual',
+      force: true,
+    });
   });
 });

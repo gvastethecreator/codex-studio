@@ -56,6 +56,33 @@ function windowsCodexBinaryCandidates() {
       source: 'OpenAI desktop install',
     },
     {
+      path: path.join(home, 'AppData', 'Roaming', 'npm', 'codex.cmd'),
+      source: 'npm command shim',
+    },
+    {
+      path: path.join(appData, 'npm', 'codex.cmd'),
+      source: 'npm command shim',
+    },
+    {
+      path: path.join(appData, 'npm', 'codex.exe'),
+      source: 'npm executable shim',
+    },
+    {
+      path: path.join(appData, 'npm', 'codex'),
+      source: 'npm shell shim',
+    },
+    {
+      path: path.join(home, '.bun', 'bin', 'codex.exe'),
+      source: 'Bun global executable shim',
+    },
+    {
+      path: path.join(localAppData, 'Microsoft', 'WindowsApps', 'codex.exe'),
+      source: 'WindowsApps alias',
+    },
+    ...pathCandidates,
+    // Package-internal vendor paths are recovery fallbacks only. Their layout
+    // changes across Codex releases, while the launchers above are stable.
+    {
       path: path.join(
         appData,
         'npm',
@@ -88,31 +115,6 @@ function windowsCodexBinaryCandidates() {
       ),
       source: 'npm package bin vendor binary',
     },
-    {
-      path: path.join(home, 'AppData', 'Roaming', 'npm', 'codex.cmd'),
-      source: 'npm command shim',
-    },
-    {
-      path: path.join(appData, 'npm', 'codex.cmd'),
-      source: 'npm command shim',
-    },
-    {
-      path: path.join(appData, 'npm', 'codex.exe'),
-      source: 'npm executable shim',
-    },
-    {
-      path: path.join(appData, 'npm', 'codex'),
-      source: 'npm shell shim',
-    },
-    {
-      path: path.join(home, '.bun', 'bin', 'codex.exe'),
-      source: 'Bun global executable shim',
-    },
-    {
-      path: path.join(localAppData, 'Microsoft', 'WindowsApps', 'codex.exe'),
-      source: 'WindowsApps alias',
-    },
-    ...pathCandidates,
     {
       path: 'codex',
       source: 'PATH fallback',

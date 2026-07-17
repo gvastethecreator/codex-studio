@@ -106,4 +106,27 @@ describe('libraryRoutes', () => {
     const transcript = await routes.request('/library/.studio/transcripts/job-1.jsonl');
     expect(transcript.status).toBe(404);
   });
+
+  it('serves a registered alternate Library through its namespaced URL', async () => {
+    const resolvePublicLibraryAssetRequest = vi.fn(() => ({
+      filePath: 'E:/alternate/outputs/hero.png',
+      assetRelativePath: 'outputs/hero.png',
+    }));
+    const createFileResponse = vi.fn(() => new Response('alternate'));
+    const routes = createLibraryRoutes({
+      resolvePublicLibraryPath: (relative) => `D:/library/${relative}`,
+      resolvePublicLibraryAssetRequest,
+      ensureThumbnailVariant: vi.fn(async (filePath) => filePath),
+      buildLibraryAssetHeaders: () => createTestHeaders('image/png'),
+      resolveAssetCacheSeconds: () => 60,
+      resolveThumbnailMaxEdge: () => 512,
+      fileExists: () => true,
+      createFileResponse,
+    });
+
+    const response = await routes.request('/library/library-alt/outputs/hero.png');
+    expect(response.status).toBe(200);
+    expect(resolvePublicLibraryAssetRequest).toHaveBeenCalledWith('library-alt/outputs/hero.png');
+    expect(createFileResponse).toHaveBeenCalledWith('E:/alternate/outputs/hero.png');
+  });
 });

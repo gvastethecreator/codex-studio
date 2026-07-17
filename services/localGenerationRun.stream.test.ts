@@ -47,6 +47,7 @@ const mocks = vi.hoisted(() => {
       updatedAt: '2026-06-19T00:00:00.000Z',
       completedAt: null,
     })),
+    cancelStudioJob: vi.fn(async () => ({ status: 'cancelled' })),
     queryCatalog: vi.fn(async () => ({
       images: [
         {
@@ -88,6 +89,7 @@ vi.mock('./studioEventSource', () => ({
 }));
 
 vi.mock('./localStudioService', () => ({
+  cancelStudioJob: mocks.cancelStudioJob,
   createStudioJob: mocks.createStudioJob,
   getEditableStudioSettings: vi.fn(),
   listProjects: vi.fn(async () => [{ id: 'project-1', name: 'Default', createdAt: 1 }]),
@@ -151,4 +153,49 @@ describe('runSingleCodexImagegenJob stream ownership', () => {
     expect(mocks.createStudioEventStream).not.toHaveBeenCalled();
     expect(injectedStream.close).not.toHaveBeenCalled();
   }, 60_000);
+
+  it('cancels a backend job linked after the caller already aborted', async () => {
+    let resolveCreatedJob!: (job: Awaited<ReturnType<typeof mocks.createStudioJob>>) => void;
+    mocks.createStudioJob.mockImplementationOnce(
+      () =>
+        new Promise((resolve) => {
+          resolveCreatedJob = resolve;
+        }),
+    );
+    const abortController = new AbortController();
+    const { runSingleCodexImagegenJob } = await import('./localGenerationRun');
+
+    const run = runSingleCodexImagegenJob({
+      config: DEFAULT_GENERATION_CONFIG,
+      batchId: 'batch-late-cancel',
+      batchIndex: 1,
+      batchCount: 1,
+      workspaceId: 'workspace-1',
+      providerId: 'codex',
+      signal: abortController.signal,
+    });
+
+    await vi.waitFor(() => expect(mocks.createStudioJob).toHaveBeenCalledTimes(1));
+    abortController.abort();
+    resolveCreatedJob({
+      id: 'job-late',
+      projectId: 'project-1',
+      kind: 'image_generate',
+      providerId: 'codex',
+      sourceSpec: null,
+      status: 'queued',
+      execution: null,
+      originalPrompt: 'prompt',
+      expandedPrompt: null,
+      finalPromptUsed: 'prompt',
+      error: null,
+      createdAt: '2026-06-19T00:00:00.000Z',
+      updatedAt: '2026-06-19T00:00:00.000Z',
+      completedAt: null,
+    });
+
+    await expect(run).rejects.toMatchObject({ name: 'AbortError' });
+    expect(mocks.cancelStudioJob).toHaveBeenCalledWith('job-late');
+    expect(mocks.watchJob).not.toHaveBeenCalled();
+  });
 });

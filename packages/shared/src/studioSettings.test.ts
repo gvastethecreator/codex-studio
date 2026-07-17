@@ -94,4 +94,33 @@ describe('studioSettings', () => {
     });
     expect(settings.updatedAt).toBe('2026-05-25T00:00:00.000Z');
   });
+
+  it('preserves explicit nulls so provider defaults can be cleared', () => {
+    const current = mergeEditableStudioSettingsPatch(createDefaultEditableStudioSettings(), {
+      providerDefaults: {
+        codex: {
+          model: 'gpt-custom',
+          reasoningEffort: 'high',
+          serviceTier: 'fast',
+        },
+      },
+    });
+
+    const cleared = mergeEditableStudioSettingsPatch(current, {
+      providerDefaults: {
+        codex: {
+          model: null,
+          reasoningEffort: null,
+          serviceTier: null,
+        },
+      },
+    });
+
+    expect(cleared.providerDefaults.codex).toEqual({
+      providerId: 'codex',
+      model: null,
+      reasoningEffort: null,
+      serviceTier: null,
+    });
+  });
 });

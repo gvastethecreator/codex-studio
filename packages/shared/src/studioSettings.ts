@@ -118,11 +118,17 @@ function sanitizeProviderDefaultsPatch(value: unknown): EditableProviderDefaults
       cleanProviderId(rawDefault.providerId) ?? (providerKey as GenerationProviderId);
     providerPatch.providerId = providerId;
 
-    const model = cleanString(rawDefault.model);
-    if (model !== null) providerPatch.model = model;
+    if ('model' in rawDefault) {
+      if (rawDefault.model === null || typeof rawDefault.model === 'string') {
+        providerPatch.model = cleanString(rawDefault.model);
+      }
+    }
 
-    const reasoningEffort = cleanString(rawDefault.reasoningEffort);
-    if (reasoningEffort !== null) providerPatch.reasoningEffort = reasoningEffort;
+    if ('reasoningEffort' in rawDefault) {
+      if (rawDefault.reasoningEffort === null || typeof rawDefault.reasoningEffort === 'string') {
+        providerPatch.reasoningEffort = cleanString(rawDefault.reasoningEffort);
+      }
+    }
 
     if ('serviceTier' in rawDefault) {
       providerPatch.serviceTier = cleanServiceTier(rawDefault.serviceTier);
@@ -234,9 +240,15 @@ export function mergeEditableStudioSettingsPatch(
 
     providerDefaults[key] = {
       providerId: providerPatch.providerId ?? currentDefault.providerId,
-      model: providerPatch.model ?? currentDefault.model,
-      reasoningEffort: providerPatch.reasoningEffort ?? currentDefault.reasoningEffort,
-      serviceTier: providerPatch.serviceTier ?? currentDefault.serviceTier,
+      model: 'model' in providerPatch ? (providerPatch.model ?? null) : currentDefault.model,
+      reasoningEffort:
+        'reasoningEffort' in providerPatch
+          ? (providerPatch.reasoningEffort ?? null)
+          : currentDefault.reasoningEffort,
+      serviceTier:
+        'serviceTier' in providerPatch
+          ? (providerPatch.serviceTier ?? null)
+          : currentDefault.serviceTier,
     };
   }
 

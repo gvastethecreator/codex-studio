@@ -50,11 +50,68 @@ describe('codexRuntimeDoctor', () => {
       run,
       resolveExecutable: () => executable,
       resolveInvocation: (args) => [executable, ...args],
-      listCandidates: () => [{ path: executable, source: 'test' }],
+      listCandidates: () => [
+        { path: executable, source: 'test' },
+        { path: 'C:/Codex/fallback-one.exe', source: 'fallback one' },
+        { path: 'C:/Codex/fallback-two.exe', source: 'fallback two' },
+      ],
     });
 
     expect(report).toMatchObject({ canRunJobs: true, selectedVersionNumber: '1.2.3' });
     expect(run).toHaveBeenCalledTimes(2);
+    expect(report.candidates).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ executable: 'C:/Codex/fallback-one.exe', selected: false }),
+        expect.objectContaining({ executable: 'C:/Codex/fallback-two.exe', selected: false }),
+      ]),
+    );
+  });
+
+  it('scans fallback candidates only after the resolved executable fails', async () => {
+    const resolvedExecutable = 'C:/Codex/resolved.exe';
+    const fallbackExecutable = 'C:/Codex/fallback.exe';
+    const unusedExecutable = 'C:/Codex/unused.exe';
+    const run = vi.fn(async (command: string, args: string[]) => {
+      const commandText = [command, ...args].join(' ');
+      if (commandText.includes(resolvedExecutable) && args.includes('--version')) {
+        return { status: 0, stdout: 'codex-cli 1.0.0', stderr: '' };
+      }
+      if (commandText.includes(resolvedExecutable) && args.join(' ').includes('app-server')) {
+        return { status: 0, stdout: 'unknown command app-server', stderr: '' };
+      }
+      if (commandText.includes(fallbackExecutable) && args.includes('--version')) {
+        return { status: 0, stdout: 'codex-cli 1.1.0', stderr: '' };
+      }
+      if (commandText.includes(fallbackExecutable) && args.join(' ').includes('app-server')) {
+        return { status: 0, stdout: 'codex app-server --listen <ws-url>', stderr: '' };
+      }
+      return { status: 0, stdout: 'codex-cli 9.9.9', stderr: '' };
+    });
+
+    const report = await inspectCodexRuntimeAsync({
+      now: () => new Date('2026-07-10T00:00:00.000Z'),
+      exists: (candidate) =>
+        [resolvedExecutable, fallbackExecutable, unusedExecutable].includes(candidate),
+      run,
+      resolveExecutable: () => resolvedExecutable,
+      resolveInvocation: (args) => [resolvedExecutable, ...args],
+      listCandidates: () => [
+        { path: fallbackExecutable, source: 'fallback' },
+        { path: unusedExecutable, source: 'unused' },
+      ],
+    });
+
+    expect(report).toMatchObject({
+      status: 'ready',
+      canRunJobs: true,
+      selectedExecutable: fallbackExecutable,
+    });
+    expect(run).toHaveBeenCalledTimes(4);
+    expect(
+      run.mock.calls.some(([command, args]) =>
+        [command, ...args].join(' ').includes(unusedExecutable),
+      ),
+    ).toBe(false);
   });
 
   it('marks a modern app-server-capable Codex CLI ready', () => {
@@ -70,6 +127,19 @@ describe('codexRuntimeDoctor', () => {
       recommendedAction: 'Codex Product Runtime is ready.',
     });
     expect(deps.spawnSync).toHaveBeenCalledTimes(2);
+  });
+
+  it('accepts an app-server-capable CLI regardless of its version number', () => {
+    const deps = createDeps({ versionText: 'codex-cli 0.2.3' });
+
+    const report = inspectCodexRuntime(deps);
+
+    expect(report).toMatchObject({
+      status: 'ready',
+      canRunJobs: true,
+      selectedVersionNumber: '0.2.3',
+      appServerSupported: true,
+    });
   });
 
   it('blocks the legacy npm Codex CLI shim before app-server start', () => {
@@ -200,13 +270,12 @@ describe('codexRuntimeDoctor', () => {
     );
   });
 
-  it('blocks a CLI that does not expose app-server support', () => {
-    const report = inspectCodexRuntime(
-      createDeps({
-        helpStatus: 1,
-        helpText: 'unknown command app-server',
-      }),
-    );
+  it.each([
+    'unknown command app-server',
+    'unrecognized command app-server',
+    'invalid command app-server',
+  ])('blocks a CLI when app-server help reports %s', (helpText) => {
+    const report = inspectCodexRuntime(createDeps({ helpText }));
 
     expect(report.status).toBe('blocked');
     expect(report.issues[0]).toEqual(

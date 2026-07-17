@@ -16,6 +16,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
     sourceSpec: overrides.sourceSpec ?? null,
     status: overrides.status ?? 'running',
     execution: overrides.execution ?? null,
+    libraryContext: overrides.libraryContext ?? null,
     originalPrompt: overrides.originalPrompt ?? 'prompt',
     expandedPrompt: overrides.expandedPrompt ?? null,
     finalPromptUsed: overrides.finalPromptUsed ?? 'prompt',
@@ -75,6 +76,7 @@ describe('workerAssetFinalizer', () => {
     }));
     const publishEvent = vi.fn();
     const updateJobStatus = vi.fn();
+    const updateJobFinalization = vi.fn();
     const getJob = vi.fn(() => createJob());
     const toPublicAssetUrl = vi.fn(() => '/library/outputs/final.png');
     const addJobEvent = vi.fn();
@@ -99,9 +101,12 @@ describe('workerAssetFinalizer', () => {
 
     const finalizer = createWorkerAssetFinalizer({
       registerCatalogImage,
+      getCatalogImageByJobId: vi.fn(() => null),
       addAsset,
+      getAssetByJobId: vi.fn(() => null),
       addJobEvent,
       updateJobStatus,
+      updateJobFinalization,
       publishEvent,
       getJob,
       toPublicAssetUrl,
@@ -116,14 +121,17 @@ describe('workerAssetFinalizer', () => {
       resolveCatalogGenerationConfig: vi.fn(() => ({
         prompt: 'prompt',
       })),
-      organizeGeneratedAssetPath: vi.fn(() => organizedPath),
+      resolveGeneratedAssetTargetPath: vi.fn(() => organizedPath),
+      moveGeneratedAssetToPath: vi.fn(() => organizedPath),
       inferGeneratedAssetMimeType: vi.fn(() => 'image/png'),
       ensureThumbnailVariant: vi.fn(async () => `${organizedPath}.thumb.webp`),
     });
 
     try {
       await finalizer.finalizeJobAsset({
-        job: createJob(),
+        job: createJob({
+          libraryContext: { libraryId: 'library-1', rootPath: tempRoot },
+        }),
         catalogContext: {
           workspaceId: 'workspace-1',
           batchId: 'batch-1',
@@ -135,7 +143,10 @@ describe('workerAssetFinalizer', () => {
         },
       });
 
-      expect(toPublicAssetUrl).toHaveBeenCalledWith(organizedPath);
+      expect(toPublicAssetUrl).toHaveBeenCalledWith(organizedPath, {
+        libraryId: 'library-1',
+        rootPath: tempRoot,
+      });
       expect(addAsset).toHaveBeenCalledWith(
         expect.objectContaining({
           filePath: organizedPath,
@@ -145,12 +156,144 @@ describe('workerAssetFinalizer', () => {
       );
       expect(registerCatalogImage).toHaveBeenCalledWith(
         expect.objectContaining({
+          libraryId: 'library-1',
           filePath: organizedPath,
           thumbnailPath: `${organizedPath}.thumb.webp`,
         }),
       );
       expect(updateJobStatus).toHaveBeenCalledWith('job-finalizer-1', 'completed');
+      expect(updateJobFinalization.mock.calls.map((call) => call[1].state)).toEqual([
+        'moving_asset',
+        'asset_moved',
+        'asset_recorded',
+        'catalog_recorded',
+        'completed',
+      ]);
       expect(publishEvent).toHaveBeenCalledWith('job.completed', expect.anything());
+    } finally {
+      rmSync(tempRoot, { recursive: true, force: true });
+    }
+  });
+
+  it('resumes after an Asset checkpoint without duplicating Asset or Catalog rows', async () => {
+    const tempRoot = mkdtempSync(path.join(os.tmpdir(), 'worker-asset-resume-'));
+    const organizedPath = path.join(tempRoot, 'outputs', 'final.png');
+    mkdirSync(path.dirname(organizedPath), { recursive: true });
+    writeFileSync(organizedPath, 'png', 'utf8');
+    const existingAsset = {
+      id: 'asset-existing',
+      projectId: 'project-1',
+      jobId: 'job-finalizer-1',
+      filePath: organizedPath,
+      thumbnailPath: null,
+      publicUrl: '/library/library-1/outputs/final.png',
+      prompt: 'prompt',
+      width: null,
+      height: null,
+      mimeType: 'image/png',
+      createdAt: new Date().toISOString(),
+      deletedAt: null,
+    };
+    const existingCatalog = {
+      id: 'catalog-existing',
+      libraryId: 'library-1',
+      filePath: organizedPath,
+      thumbnailPath: null,
+      publicUrl: existingAsset.publicUrl,
+      thumbnailUrl: null,
+      prompt: 'prompt',
+      negativePrompt: null,
+      aspectRatio: null,
+      imageSize: null,
+      width: null,
+      height: null,
+      mimeType: 'image/png',
+      fileSizeBytes: 3,
+      jobId: 'job-finalizer-1',
+      workspaceId: null,
+      batchId: null,
+      recipeId: null,
+      isFavorite: false,
+      isDeleted: false,
+      deletedAt: null,
+      tags: [],
+      generationConfig: null,
+      createdAt: new Date().toISOString(),
+    };
+    const addAsset = vi.fn();
+    const registerCatalogImage = vi.fn();
+    const publishEvent = vi.fn();
+    const updateJobStatus = vi.fn();
+    const updateJobFinalization = vi.fn();
+    const job = createJob({
+      libraryContext: { libraryId: 'library-1', rootPath: tempRoot },
+      finalization: {
+        state: 'asset_recorded',
+        sourcePath: 'D:/provider/result.png',
+        filePath: organizedPath,
+        assetId: existingAsset.id,
+        catalogId: null,
+      },
+    });
+    const finalizer = createWorkerAssetFinalizer({
+      registerCatalogImage,
+      getCatalogImageByJobId: vi.fn(() => existingCatalog),
+      addAsset,
+      getAssetByJobId: vi.fn(() => existingAsset),
+      addJobEvent: vi.fn(),
+      updateJobStatus,
+      updateJobFinalization,
+      publishEvent,
+      getJob: vi.fn(() => job),
+      toPublicAssetUrl: vi.fn(() => existingAsset.publicUrl),
+      logger: vi.fn(),
+      embedMetadata: vi.fn(async () => ({
+        filePath: organizedPath,
+        bytesWritten: 3,
+        format: 'png' as const,
+      })),
+      parsePromptTransport: vi.fn(() => ({
+        prompt: 'prompt',
+        negativePrompt: '',
+        aspectRatio: null,
+        imageSize: null,
+        recipeId: null,
+        recipeContext: '',
+      })),
+      resolveExecutionOptions: vi.fn(() => ({
+        model: 'gpt-5.4-mini',
+        reasoningEffort: 'medium',
+        serviceTier: null,
+      })),
+      resolveCatalogGenerationConfig: vi.fn(() => ({})),
+      resolveGeneratedAssetTargetPath: vi.fn(() => organizedPath),
+      moveGeneratedAssetToPath: vi.fn(() => organizedPath),
+      inferGeneratedAssetMimeType: vi.fn(() => 'image/png'),
+      ensureThumbnailVariant: vi.fn(async () => organizedPath),
+    });
+
+    try {
+      await finalizer.finalizeJobAsset({
+        job,
+        catalogContext: { workspaceId: 'project-1', batchId: null },
+        discoveredImagePath: organizedPath,
+        providerId: 'codex',
+        options: { logPrefix: 'Recovered' },
+      });
+
+      expect(addAsset).not.toHaveBeenCalled();
+      expect(registerCatalogImage).not.toHaveBeenCalled();
+      expect(publishEvent).not.toHaveBeenCalledWith('asset.created', expect.anything());
+      expect(publishEvent).not.toHaveBeenCalledWith('catalog.created', expect.anything());
+      expect(updateJobFinalization).toHaveBeenLastCalledWith(
+        'job-finalizer-1',
+        expect.objectContaining({
+          state: 'completed',
+          assetId: 'asset-existing',
+          catalogId: 'catalog-existing',
+        }),
+      );
+      expect(updateJobStatus).toHaveBeenCalledWith('job-finalizer-1', 'completed');
     } finally {
       rmSync(tempRoot, { recursive: true, force: true });
     }

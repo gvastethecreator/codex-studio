@@ -3,7 +3,7 @@ import { mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
 import { getDb } from './db';
-import { LIBRARY_FOLDERS, resolveLibraryPathFromRoot } from './library';
+import { LIBRARY_FOLDERS, resolveLibraryPathFromRoot, resolvePublicLibraryPath } from './library';
 
 export interface StudioLibrary {
   id: string;
@@ -86,6 +86,24 @@ export function getDefaultLibrary() {
 export function getLibrary(id: string) {
   const row = getDb().query('SELECT * FROM libraries WHERE id = ?').get(id);
   return row ? mapLibrary(row) : null;
+}
+
+export function resolvePublicLibraryAssetRequest(relativePath: string) {
+  const normalized = relativePath.replaceAll('\\', '/').replace(/^\/+/, '');
+  const [possibleLibraryId, ...rest] = normalized.split('/');
+  const library = possibleLibraryId ? getLibrary(possibleLibraryId) : null;
+  if (!library) {
+    return {
+      filePath: resolvePublicLibraryPath(normalized),
+      assetRelativePath: normalized,
+    };
+  }
+
+  const assetRelativePath = rest.join('/');
+  return {
+    filePath: resolveLibraryPathFromRoot(library.path, assetRelativePath),
+    assetRelativePath,
+  };
 }
 
 export function setDefaultLibrary(id: string) {

@@ -21,8 +21,7 @@ export function resolveCodexExecutable() {
 
 export function resolveCodexInvocationForExecutable(executable: string, args: string[]) {
   if (process.platform === 'win32' && executable.endsWith('.cmd')) {
-    const quotedExecutable = `"${executable}"`;
-    return ['cmd.exe', '/d', '/s', '/c', `${quotedExecutable} ${args.join(' ')}`];
+    return ['cmd.exe', '/d', '/s', '/c', `call "${executable}" ${args.join(' ')}`];
   }
   if (process.platform === 'win32' && path.extname(executable) === '') {
     return ['cmd.exe', '/d', '/s', '/c', `"${executable}" ${args.join(' ')}`];

@@ -17,6 +17,7 @@ import {
   type ExternalProviderFetch,
 } from './externalProviderResults';
 import { createFalLocalAssetUploader } from './falStorageUpload';
+import { DEFAULT_FAL_IMAGE_MODEL } from './providerExecutionDefaults';
 
 export interface FalImageExecutorDependencies {
   env?: Record<string, string | undefined>;
@@ -31,7 +32,6 @@ export interface FalImageExecutorDependencies {
   uploadLocalAsset?: FalAssetUploadLocalFile;
 }
 
-const DEFAULT_FAL_MODEL = 'fal-ai/flux/schnell';
 const DEFAULT_FAL_API_BASE = 'https://fal.run';
 const DEFAULT_MAX_ATTEMPTS = 3;
 const DEFAULT_RETRY_DELAY_MS = 750;
@@ -132,7 +132,7 @@ export function createFalImageExecutor({
     if (!apiKey) {
       throw new Error('Missing Provider Secret source: FAL_KEY or FAL_API_KEY.');
     }
-    const model = payload.model?.trim() || env.FAL_MODEL?.trim() || DEFAULT_FAL_MODEL;
+    const model = payload.model?.trim() || env.FAL_MODEL?.trim() || DEFAULT_FAL_IMAGE_MODEL;
     const apiBase = trimTrailingSlash(env.FAL_API_BASE?.trim() || DEFAULT_FAL_API_BASE);
     const endpoint = `${apiBase}/${model.replace(/^\/+/, '')}`;
     const requestBody = await createFalRequestBody(payload, {

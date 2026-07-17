@@ -38,7 +38,9 @@ Requirements:
 
 The app readiness checks are the source of truth. Reported Bun and Codex
 metadata is diagnostic, not a hard setup gate; use `bun run runtime:doctor`
-when Codex path or app-server support is unclear.
+when Codex path or app-server support is unclear. Do not pin
+`STUDIO_CODEX_CLI_PATH` to a package-internal `node_modules/.../vendor`
+binary; use a supported launcher such as the desktop binary or `codex.cmd`.
 
 Fast path: ask Codex from this repo to run first setup.
 
@@ -90,6 +92,7 @@ Provider secrets, if used for optional external adapters, must stay in backend e
 
 ```bash
 bun run dev
+bun run runtime:doctor
 bun run studio:init
 bun run check
 bun run test

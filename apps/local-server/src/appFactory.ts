@@ -10,7 +10,14 @@ import { getSettingValue, setSettingValue } from './db';
 import { getCurrentEventRevision, publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolvePublicLibraryPath, toPublicAssetUrl } from './library';
-import { listLibraries, registerLibrary, removeLibrary, setDefaultLibrary } from './libraries';
+import {
+  getDefaultLibrary,
+  listLibraries,
+  registerLibrary,
+  removeLibrary,
+  resolvePublicLibraryAssetRequest,
+  setDefaultLibrary,
+} from './libraries';
 import { log } from './logger';
 import {
   readEditableStudioSettings,
@@ -25,6 +32,7 @@ import {
   ensureAppServer,
   getAppServerDiagnostics,
   isAppServerRunning,
+  stopAppServer,
 } from './codex/processSupervisor';
 import { getCodexModelCatalog } from './codex/modelCatalog';
 import { getLocalCodexSession } from './codex/localCodexSession';
@@ -92,6 +100,7 @@ export interface CreateStudioAppOptions {
     readCodexModelCatalog?: () => Promise<CodexModelCatalogResponse>;
     readCodexRuntimeDoctor?: typeof readCodexRuntimeDoctor;
     ensureAppServer?: (reason?: AppServerEnsureReason) => void;
+    stopAppServer?: typeof stopAppServer;
     getAppServerDiagnostics?: typeof getAppServerDiagnostics;
     isAppServerRunning?: typeof isAppServerRunning;
     allowedOrigins?: string[];
@@ -103,7 +112,11 @@ export interface CreateStudioAppOptions {
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<
       WorkerController,
-      'cancelQueuedOrRunningJob' | 'enqueueJob' | 'getWorkerStatus' | 'resetWorkerState'
+      | 'cancelQueuedOrRunningJob'
+      | 'enqueueJob'
+      | 'getWorkerStatus'
+      | 'resetWorkerState'
+      | 'shutdown'
     >;
     logger?: typeof log;
   };
@@ -119,6 +132,7 @@ export async function createStudioApp(
   const readCodexRuntimeDoctorFn =
     options.dependencies?.readCodexRuntimeDoctor ?? readCodexRuntimeDoctor;
   const ensureLocalAppServer = options.dependencies?.ensureAppServer ?? ensureAppServer;
+  const stopLocalAppServer = options.dependencies?.stopAppServer ?? stopAppServer;
   const readAppServerDiagnostics =
     options.dependencies?.getAppServerDiagnostics ?? getAppServerDiagnostics;
   const isLocalAppServerRunning = options.dependencies?.isAppServerRunning ?? isAppServerRunning;
@@ -234,14 +248,14 @@ export async function createStudioApp(
   app.route(
     '/api/sprite-atlas',
     createSpriteAtlasRoutes({
-      readLibraryDir: () => getSettings().libraryDir,
+      readLibraryDir: () => getDefaultLibrary().path,
     }),
   );
 
   app.route(
     '/api/animation-sequence',
     createAnimationSequenceRoutes({
-      readLibraryDir: () => getSettings().libraryDir,
+      readLibraryDir: () => getDefaultLibrary().path,
       getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
     }),
   );
@@ -276,19 +290,32 @@ export async function createStudioApp(
           sourceSpec: input.sourceSpec,
           prompt: input.prompt,
           execution: input.execution,
+          libraryContext: input.libraryContext,
         }),
       updateJobFinalPrompt: (jobId, finalPrompt) =>
         dbStore.updateJobFinalPrompt(jobId, finalPrompt),
       processReferences: (jobId, prompt, references, libraryDir) =>
         processReferences(jobId, prompt, references ?? [], libraryDir),
-      hydrateSourceSpecAssetPaths: (sourceSpec, references, persistedRefs, libraryDir) =>
+      hydrateSourceSpecAssetPaths: (
+        sourceSpec,
+        references,
+        persistedRefs,
+        libraryDir,
+        libraryContext,
+      ) =>
         hydrateSourceSpecAssetPaths(
           sourceSpec,
           references ?? [],
           persistedRefs as ProcessedReference[],
           libraryDir,
+          libraryContext?.libraryId,
         ),
-      readLibraryDir: () => getSettings().libraryDir,
+      readLibraryDir: () => getDefaultLibrary().path,
+      readLibraryContext: () => {
+        const library = getDefaultLibrary();
+        return { libraryId: library.id, rootPath: library.path };
+      },
+      readEditableSettings: () => readEditableStudioSettings(settingsStorage),
       resolveProviderExecutionBlocker: async (providerId) => {
         const codexRuntime =
           providerId === 'codex'
@@ -321,8 +348,11 @@ export async function createStudioApp(
       createHandoffId: () => `handoff-${randomUUID()}`,
       processReferences: (handoffId, prompt, references, libraryDir) =>
         processReferences(handoffId, prompt, references, libraryDir),
-      readLibraryDir: () => getSettings().libraryDir,
-      toPublicAssetUrl,
+      readLibraryDir: () => getDefaultLibrary().path,
+      toPublicAssetUrl: (filePath) => {
+        const library = getDefaultLibrary();
+        return toPublicAssetUrl(filePath, { libraryId: library.id, rootPath: library.path });
+      },
       isReferenceProcessingError: (error): error is ReferenceProcessingError =>
         error instanceof ReferenceProcessingError,
     }),
@@ -369,6 +399,7 @@ export async function createStudioApp(
     '/',
     createLibraryRoutes({
       resolvePublicLibraryPath,
+      resolvePublicLibraryAssetRequest,
       ensureThumbnailVariant,
       buildLibraryAssetHeaders,
       resolveAssetCacheSeconds,
@@ -385,14 +416,31 @@ export async function createStudioApp(
     );
   });
 
+  let shutdownPromise: Promise<void> | null = null;
+
   return {
     app,
     config: getSettings(),
     initResult: initResult ?? ({} as ReturnType<typeof initStudio>),
     worker: workerController.getWorkerStatus(),
     workerController,
-    async shutdown() {
-      readiness.dispose();
+    shutdown() {
+      if (!shutdownPromise) {
+        shutdownPromise = (async () => {
+          readiness.dispose();
+          const results = await Promise.allSettled([
+            Promise.resolve().then(() => workerController.shutdown()),
+            Promise.resolve().then(() => stopLocalAppServer()),
+          ]);
+          const failures = results.flatMap((result) =>
+            result.status === 'rejected' ? [result.reason] : [],
+          );
+          if (failures.length > 0) {
+            throw new AggregateError(failures, 'Studio shutdown did not complete cleanly.');
+          }
+        })();
+      }
+      return shutdownPromise;
     },
   };
 }

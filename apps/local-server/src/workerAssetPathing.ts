@@ -5,7 +5,7 @@ import type { Job } from '../../../packages/shared/src/types';
 import type { resolveJobExecutionOptions } from './codex/executionOptions';
 import type { readEditableStudioSettings } from './studioSettingsStore';
 import type { getSettingValue, setSettingValue } from './db';
-import type { resolveLibraryPath } from './library';
+import { resolveLibraryPathFromRoot, type resolveLibraryPath } from './library';
 
 function resolveUniquePath(filePath: string) {
   if (!existsSync(filePath)) return filePath;
@@ -29,6 +29,17 @@ export function inferGeneratedAssetMimeType(filePath: string) {
   if (ext === '.webp') return 'image/webp';
   if (ext === '.svg') return 'image/svg+xml';
   return 'image/png';
+}
+
+export function moveGeneratedAssetToPath(filePath: string, targetPath: string) {
+  if (path.resolve(filePath) === path.resolve(targetPath)) return targetPath;
+  if (existsSync(targetPath)) return targetPath;
+  mkdirSync(path.dirname(targetPath), { recursive: true });
+  if (existsSync(filePath)) {
+    renameSync(filePath, targetPath);
+    return targetPath;
+  }
+  return filePath;
 }
 
 interface CreateWorkerAssetPathingDependencies {
@@ -59,24 +70,21 @@ export function createWorkerAssetPathing({
       recipeId: job.sourceSpec?.recipeId ?? null,
       extension,
     });
-    return resolveUniquePath(resolveLibraryPath(...relativePath.split(/[\\/]/)));
+    const targetPath = job.libraryContext
+      ? resolveLibraryPathFromRoot(job.libraryContext.rootPath, ...relativePath.split(/[\\/]/))
+      : resolveLibraryPath(...relativePath.split(/[\\/]/));
+    return resolveUniquePath(targetPath);
   }
 
   function organizeGeneratedAssetPath(job: Job, filePath: string, providerId: string | null) {
     const ext = path.extname(filePath).toLowerCase() || '.png';
     const targetPath = resolveGeneratedAssetTargetPath(job, providerId, ext);
-
-    if (path.resolve(filePath) === path.resolve(targetPath)) return filePath;
-    mkdirSync(path.dirname(targetPath), { recursive: true });
-    if (existsSync(filePath)) {
-      renameSync(filePath, targetPath);
-      return targetPath;
-    }
-    return filePath;
+    return moveGeneratedAssetToPath(filePath, targetPath);
   }
 
   return {
     resolveGeneratedAssetTargetPath,
+    moveGeneratedAssetToPath,
     organizeGeneratedAssetPath,
   };
 }

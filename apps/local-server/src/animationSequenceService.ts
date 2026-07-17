@@ -19,6 +19,7 @@ import {
 } from '../../../packages/shared/src/animationSequenceContracts';
 import type { CatalogImage } from '../../../packages/shared/src/types';
 import { encodeGif, type GifRgbaFrame } from './animationGifEncoder';
+import { resolveLibraryPathFromRoot } from './library';
 
 export interface AnimationSequenceService {
   listRuns(): Promise<AnimationSequenceRun[]>;
@@ -66,7 +67,7 @@ function isPathInside(parentPath: string, childPath: string) {
 }
 
 function createRunPaths(libraryDir: string, runId: string): AnimationSequenceRunPaths {
-  const runDir = path.join(libraryDir, 'outputs', 'animation-sequence', runId);
+  const runDir = resolveLibraryPathFromRoot(libraryDir, 'outputs', 'animation-sequence', runId);
   return {
     runDir,
     requestPath: path.join(runDir, 'animation-request.json'),
@@ -246,7 +247,7 @@ export function createAnimationSequenceService({
 
   return {
     async listRuns() {
-      const root = path.join(readLibraryDir(), 'outputs', 'animation-sequence');
+      const root = resolveLibraryPathFromRoot(readLibraryDir(), 'outputs', 'animation-sequence');
       try {
         const entries = await readdir(root, { withFileTypes: true });
         const runs = await Promise.all(

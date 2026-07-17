@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { createGenerationTaskSpec, type Job } from '../packages/shared/src';
+import { createGenerationTaskSpec, type Job, type JobSummary } from '../packages/shared/src';
 import {
   countActiveShellActivityJobs,
   mergeShellActivityJobs,
@@ -38,10 +38,21 @@ function createJob(overrides: Partial<Job> = {}): Job {
 describe('shellActivityJob', () => {
   it('projects full jobs and summaries into compact shell activity jobs', () => {
     const full = toShellActivityJob(createJob(), 'backend_event');
-    const summary = toShellActivityJob(
-      { ...createJob(), sourceSpec: null, promptPreview: 'summary prompt' },
-      'backend_summary',
-    );
+    const job = createJob();
+    const summaryJob: JobSummary = {
+      id: job.id,
+      projectId: job.projectId,
+      kind: job.kind,
+      providerId: job.providerId,
+      status: job.status,
+      execution: job.execution,
+      error: job.error,
+      promptPreview: 'summary prompt',
+      createdAt: job.createdAt,
+      updatedAt: job.updatedAt,
+      completedAt: job.completedAt,
+    };
+    const summary = toShellActivityJob(summaryJob, 'backend_summary');
 
     expect(full).toMatchObject({
       promptPreview: 'final prompt',

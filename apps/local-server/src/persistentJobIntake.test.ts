@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
 
 import {
+  createDefaultEditableStudioSettings,
   createGenerationTaskSpec,
   type GenerationTaskSpec,
   type Job,
@@ -89,7 +90,11 @@ describe('persistentJobIntake', () => {
 
     expect(result.ok).toBe(true);
     expect(createJobFn).toHaveBeenCalledWith(
-      expect.objectContaining({ kind: 'image_generate', providerId: 'codex' }),
+      expect.objectContaining({
+        kind: 'image_generate',
+        providerId: 'codex',
+        libraryContext: { libraryId: 'legacy-default', rootPath: 'D:/library' },
+      }),
     );
     expect(publishEvent).toHaveBeenCalledWith(
       'job.created',
@@ -97,6 +102,64 @@ describe('persistentJobIntake', () => {
     );
     expect(logJobCreated).toHaveBeenCalledWith('image_generate', 'job-new');
     expect(enqueueJob).toHaveBeenCalledWith(expect.objectContaining({ id: 'job-new' }));
+  });
+
+  it('persists backend-resolved provider execution defaults at intake', async () => {
+    const createJobFn = vi.fn((input: CreateJobInput) =>
+      createJob({
+        providerId: input.providerId,
+        execution: input.execution,
+      }),
+    );
+    const intake = createPersistentJobIntake({
+      ensureDefaultProjectId: () => 'project-default',
+      createJobId: () => 'job-policy',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'draw', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/library',
+      readEditableSettings: () => ({
+        ...createDefaultEditableStudioSettings(),
+        providerDefaults: {
+          codex: {
+            providerId: 'codex',
+            model: 'provider-model',
+            reasoningEffort: 'high',
+            serviceTier: 'fast',
+          },
+        },
+      }),
+      resolveBootstrapExecution: () => ({
+        model: 'bootstrap-model',
+        reasoningEffort: 'medium',
+        serviceTier: null,
+      }),
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: vi.fn(),
+      logJobCreated: vi.fn(),
+      enqueueJob: vi.fn(),
+    });
+
+    await intake.createJob({
+      kind: 'codex_imagegen',
+      prompt: 'draw',
+      execution: {
+        model: 'explicit-model',
+        reasoningEffort: '',
+      },
+    });
+
+    expect(createJobFn).toHaveBeenCalledWith(
+      expect.objectContaining({
+        execution: {
+          model: 'explicit-model',
+          reasoningEffort: 'high',
+          serviceTier: 'fast',
+        },
+      }),
+    );
   });
 
   it('hydrates Studio Library recipe retry assets before final source spec validation', async () => {
@@ -255,5 +318,52 @@ describe('persistentJobIntake', () => {
       },
     });
     expect(processReferences).not.toHaveBeenCalled();
+  });
+
+  it('rejects hydrated provider assets outside the captured Library Context', async () => {
+    const createJobFn = vi.fn();
+    const intake = createPersistentJobIntake({
+      ensureDefaultProjectId: () => 'project-default',
+      createJobId: () => 'job-hostile-path',
+      createJob: createJobFn,
+      updateJobFinalPrompt: () => null,
+      processReferences: async () => ({ augmentedPrompt: 'edit', persistedRefs: [] }),
+      hydrateSourceSpecAssetPaths: (sourceSpec) => sourceSpec,
+      readLibraryDir: () => 'D:/StudioLibrary',
+      readLibraryContext: () => ({
+        libraryId: 'library-1',
+        rootPath: 'D:/StudioLibrary',
+      }),
+      resolveProviderExecutionBlocker: () => null,
+      isReferenceProcessingError: (_error): _error is ReferenceProcessingErrorLike => false,
+      publishEvent: () => ({ type: 'job.created', payload: {}, createdAt: '' }),
+      logJobCreated: () => {},
+      enqueueJob: () => {},
+    });
+
+    const result = await intake.createJob({
+      kind: 'image_edit',
+      providerId: 'google',
+      prompt: 'edit',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'spec-hostile-path',
+        task: 'image_edit',
+        providerId: 'google',
+        prompt: 'edit',
+        assets: [{ role: 'input', name: 'secret.png', localPath: 'D:/secrets/secret.png' }],
+      }),
+    });
+
+    expect(result).toEqual({
+      ok: false,
+      error: {
+        status: 400,
+        body: expect.objectContaining({
+          code: 'unmanaged_asset_path',
+          field: 'sourceSpec.assets.0.localPath',
+        }),
+      },
+    });
+    expect(createJobFn).not.toHaveBeenCalled();
   });
 });

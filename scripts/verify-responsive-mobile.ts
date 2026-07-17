@@ -38,6 +38,7 @@ interface ResponsiveObservation {
   hasHorizontalOverflow: boolean;
   promptVisible: boolean;
   generateVisible: boolean;
+  settingsExecutionDefaultsVerified?: boolean;
   violations: string[];
 }
 
@@ -214,6 +215,46 @@ async function clickByLabelOrMobileCommand(page: Page, label: string, timeoutMs:
   await direct.first().click({ timeout: timeoutMs });
 }
 
+async function exerciseSettingsExecutionDefaults(page: Page, timeoutMs: number) {
+  const provider = page.getByLabel('Default provider', { exact: true });
+  const model = page.getByLabel('Provider default model', { exact: true });
+  const reasoning = page.getByLabel('Provider default reasoning effort', { exact: true });
+  const serviceTier = page.getByLabel('Provider default service tier', { exact: true });
+  await model.waitFor({ state: 'visible', timeout: timeoutMs });
+
+  const initialProvider = await provider.inputValue();
+  const initialModel = await model.inputValue();
+  const initialReasoning = await reasoning.inputValue();
+  const initialServiceTier = await serviceTier.inputValue();
+
+  await model.fill('browser-verification-model');
+  await reasoning.fill('medium');
+  await serviceTier.selectOption('fast');
+
+  const alternateValue = (
+    await provider
+      .locator('option')
+      .evaluateAll((options) => options.map((option) => (option as HTMLOptionElement).value))
+  ).find((value) => value !== initialProvider);
+  if (alternateValue) {
+    await provider.selectOption(alternateValue);
+    await provider.selectOption(initialProvider);
+  }
+
+  const retained =
+    (await model.inputValue()) === 'browser-verification-model' &&
+    (await reasoning.inputValue()) === 'medium' &&
+    (await serviceTier.inputValue()) === 'fast';
+  if (!retained) {
+    throw new Error('Provider execution defaults were not retained across provider selection.');
+  }
+
+  await model.fill(initialModel);
+  await reasoning.fill(initialReasoning);
+  await serviceTier.selectOption(initialServiceTier);
+  return true;
+}
+
 async function prepareScenario(page: Page, scenario: ResponsiveScenario, timeoutMs: number) {
   await page.waitForLoadState('domcontentloaded', { timeout: timeoutMs });
   await page.waitForTimeout(1_500);
@@ -225,7 +266,7 @@ async function prepareScenario(page: Page, scenario: ResponsiveScenario, timeout
 
   if (scenario.openQueue) {
     if ((await page.locator('[title="Close queue"]').count()) === 0) {
-      await clickIfPresent(page, '[aria-label="Toggle generation queue"]');
+      await clickIfPresent(page, '[aria-label^="Open generation queue"]');
     }
     await page.waitForTimeout(700);
   }
@@ -250,6 +291,8 @@ async function prepareScenario(page: Page, scenario: ResponsiveScenario, timeout
       .waitFor({ timeout: timeoutMs })
       .catch(() => {});
   }
+
+  return scenario.name === 'settings' ? exerciseSettingsExecutionDefaults(page, timeoutMs) : false;
 }
 
 async function observeScenario(
@@ -257,6 +300,7 @@ async function observeScenario(
   scenario: ResponsiveScenario,
   viewport: ResponsiveViewport,
   screenshot: string,
+  settingsExecutionDefaultsVerified: boolean,
 ) {
   const state = await page.evaluate(() => {
     const doc = document.documentElement;
@@ -322,6 +366,7 @@ async function observeScenario(
     ...state,
     promptVisible,
     generateVisible,
+    ...(scenario.name === 'settings' ? { settingsExecutionDefaultsVerified } : {}),
     violations,
   } satisfies ResponsiveObservation;
 }
@@ -358,10 +403,18 @@ async function runResponsiveGate({
           waitUntil: 'domcontentloaded',
           timeout: timeoutMs,
         });
-        await prepareScenario(page, scenario, timeoutMs);
+        const settingsExecutionDefaultsVerified = await prepareScenario(page, scenario, timeoutMs);
         const screenshot = `${outputDir}/${viewport.name}-${scenario.name}.png`;
         await page.screenshot({ path: screenshot, fullPage: false });
-        observations.push(await observeScenario(page, scenario, viewport, screenshot));
+        observations.push(
+          await observeScenario(
+            page,
+            scenario,
+            viewport,
+            screenshot,
+            settingsExecutionDefaultsVerified,
+          ),
+        );
         await page.close();
       }
     }

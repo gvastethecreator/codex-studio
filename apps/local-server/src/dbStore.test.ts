@@ -49,6 +49,8 @@ function createMemoryDb(): SqliteDatabaseLike {
               sourceSpecJson,
               status,
               executionJson,
+              libraryId,
+              libraryRoot,
               originalPrompt,
               expandedPrompt,
               finalPromptUsed,
@@ -65,6 +67,8 @@ function createMemoryDb(): SqliteDatabaseLike {
               source_spec_json: sourceSpecJson,
               status,
               execution_json: executionJson,
+              library_id: libraryId,
+              library_root: libraryRoot,
               original_prompt: originalPrompt,
               expanded_prompt: expandedPrompt,
               final_prompt_used: finalPromptUsed,
@@ -145,8 +149,33 @@ describe('dbStore', () => {
 
     expect(summaryQuery).not.toContain('source_spec_json');
     expect(summaries[0]).toMatchObject({
-      sourceSpec: null,
       promptPreview: 'large historical payload',
     });
+    expect(summaries[0]).not.toHaveProperty('sourceSpec');
+    expect(summaries[0]).not.toHaveProperty('originalPrompt');
+    expect(summaries[0]).not.toHaveProperty('expandedPrompt');
+    expect(summaries[0]).not.toHaveProperty('finalPromptUsed');
+  });
+
+  it('keeps a 100-job summary payload below 50 KB', () => {
+    const database = createMemoryDb();
+    const store = createSqliteDbStore({ database });
+    const project = store.ensureDefaultProject();
+
+    for (let index = 0; index < 100; index += 1) {
+      store.createJob({
+        projectId: project.id,
+        kind: 'image_generate',
+        providerId: 'codex',
+        prompt: `${index}-${'long prompt '.repeat(200)}`,
+      });
+    }
+
+    const summaries = store.listJobSummaries?.() ?? [];
+    expect(summaries).toHaveLength(100);
+    expect(Buffer.byteLength(JSON.stringify(summaries), 'utf8')).toBeLessThan(50 * 1024);
+    expect(
+      Math.max(...summaries.map((summary) => summary.promptPreview.length)),
+    ).toBeLessThanOrEqual(160);
   });
 });

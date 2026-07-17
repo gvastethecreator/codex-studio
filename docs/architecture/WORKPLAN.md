@@ -8,6 +8,7 @@ Completed: 2026-07-10
 
 ## Sources
 
+- [Architecture recommendations closure (2026-07-14)](./architecture-recommendations-2026-07-14.md) — active follow-up mission
 - [General performance and architecture review](./architecture-review-2026-07-10-app-performance.md)
 - [Animation Sequence architecture review](./architecture-review-2026-07-10-animation-sequence.md)
 - [Technical-debt audit](./technical-debt-audit-2026-07-10.md)

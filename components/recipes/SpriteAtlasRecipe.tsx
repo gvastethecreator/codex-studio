@@ -36,7 +36,7 @@ import {
   listSpriteAtlasRuns,
   runSpriteAtlasQa,
 } from '../../services/localStudioService';
-import { GsapDropdown } from '../ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface SpriteAtlasRecipeProps {
   config: ImageGenerationConfig;
@@ -1065,7 +1065,7 @@ const SelectField: React.FC<{
             aria-hidden="true"
           />
         </button>
-        <GsapDropdown
+        <DemandMountedGsapDropdown
           id={listboxId}
           open={isOpen}
           onOpenChange={setIsOpen}
@@ -1099,7 +1099,7 @@ const SelectField: React.FC<{
               </button>
             );
           })}
-        </GsapDropdown>
+        </DemandMountedGsapDropdown>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ import {
   IconSquare as Square,
 } from '@tabler/icons-react';
 import ActionButton from './ui/ActionButton';
-import { GsapDropdown } from './ui/GsapDropdown';
+import { DemandMountedGsapDropdown } from './ui/DemandMountedGsapDropdown';
 import { downloadImage, generateSmartFilename } from '../utils/fileUtils';
 import Tooltip from './Tooltip';
 import {
@@ -1290,7 +1290,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                 </span>
               </button>
             </Tooltip>
-            <GsapDropdown
+            <DemandMountedGsapDropdown
               id={sortMenuId}
               open={isSortMenuOpen}
               onOpenChange={setIsSortMenuOpen}
@@ -1335,7 +1335,7 @@ export const ImageGrid: React.FC<ImageGridProps> = React.memo(
                   );
                 })}
               </div>
-            </GsapDropdown>
+            </DemandMountedGsapDropdown>
           </div>
         </div>
         <div

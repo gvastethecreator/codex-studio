@@ -1,6 +1,16 @@
-import type { CreateJobRequest, GenerationTaskSpec, Job } from '../../../packages/shared/src';
+import type {
+  CreateJobRequest,
+  EditableStudioSettings,
+  GenerationTaskSpec,
+  Job,
+  JobLibraryContext,
+} from '../../../packages/shared/src';
+import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
 import type { publishEvent } from './events';
+import { validateManagedGenerationAssets } from './managedAssetPolicy';
+import { resolveEffectiveJobExecutionOptions } from './providerExecutionPolicy';
+import { resolveBootstrapProviderExecutionOptions } from './providers/providerExecutionDefaults';
 
 interface ProcessReferencesResult {
   augmentedPrompt: string;
@@ -24,6 +34,7 @@ export interface PersistentJobIntakeDependencies {
     sourceSpec: GenerationTaskSpec | null;
     prompt: string;
     execution: Job['execution'];
+    libraryContext?: JobLibraryContext | null;
   }) => Job;
   updateJobFinalPrompt: (jobId: string, finalPrompt: string) => Job | null;
   processReferences: (
@@ -37,8 +48,13 @@ export interface PersistentJobIntakeDependencies {
     references: CreateJobRequest['references'],
     persistedRefs: unknown[],
     libraryDir: string,
+    libraryContext?: JobLibraryContext,
   ) => GenerationTaskSpec | null;
   readLibraryDir: () => string;
+  readLibraryContext?: () => JobLibraryContext;
+  readEditableSettings?: () => EditableStudioSettings;
+  resolveBootstrapExecution?: typeof resolveBootstrapProviderExecutionOptions;
+  validateManagedAssets?: typeof validateManagedGenerationAssets;
   resolveProviderExecutionBlocker: (
     providerId: string,
   ) => Record<string, unknown> | null | Promise<Record<string, unknown> | null>;
@@ -140,6 +156,10 @@ export function createPersistentJobIntake({
   processReferences,
   hydrateSourceSpecAssetPaths,
   readLibraryDir,
+  readLibraryContext,
+  readEditableSettings = createDefaultEditableStudioSettings,
+  resolveBootstrapExecution = resolveBootstrapProviderExecutionOptions,
+  validateManagedAssets = validateManagedGenerationAssets,
   resolveProviderExecutionBlocker,
   isReferenceProcessingError,
   publishEvent,
@@ -179,8 +199,12 @@ export function createPersistentJobIntake({
       }
 
       let finalPrompt = prompt;
+      const libraryContext = readLibraryContext?.() ?? {
+        libraryId: 'legacy-default',
+        rootPath: readLibraryDir(),
+      };
       try {
-        const libraryDir = readLibraryDir();
+        const libraryDir = libraryContext.rootPath;
         const processedReferences = await processReferences(
           jobId,
           prompt,
@@ -193,6 +217,7 @@ export function createPersistentJobIntake({
           request.references || [],
           processedReferences.persistedRefs,
           libraryDir,
+          libraryContext,
         );
       } catch (error) {
         if (isReferenceProcessingError(error)) {
@@ -216,6 +241,22 @@ export function createPersistentJobIntake({
         if (validationError) {
           return { ok: false, error: { status: 400, body: validationError } };
         }
+        const managedAssetIssues = validateManagedAssets(sourceSpec, libraryContext);
+        if (managedAssetIssues.length > 0) {
+          return {
+            ok: false,
+            error: {
+              status: 400,
+              body: {
+                error: 'Unmanaged Generation Task asset',
+                code: managedAssetIssues[0].code,
+                field: managedAssetIssues[0].field,
+                reason: managedAssetIssues[0].message,
+                issues: managedAssetIssues,
+              },
+            },
+          };
+        }
       }
 
       const job = createJob({
@@ -225,7 +266,13 @@ export function createPersistentJobIntake({
         providerId,
         sourceSpec,
         prompt,
-        execution: request.execution ?? null,
+        execution: resolveEffectiveJobExecutionOptions({
+          providerId,
+          explicit: request.execution,
+          settings: readEditableSettings(),
+          bootstrap: resolveBootstrapExecution(providerId),
+        }),
+        libraryContext,
       });
 
       const queuedJob =

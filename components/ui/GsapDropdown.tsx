@@ -17,7 +17,7 @@ gsap.registerPlugin(useGSAP);
 
 type DropdownPlacement = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
 
-interface GsapDropdownProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'id'> {
+export interface GsapDropdownProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'id'> {
   id?: string;
   open: boolean;
   onOpenChange?: (open: boolean) => void;

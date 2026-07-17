@@ -1,20 +1,26 @@
 import type {
   Asset,
+  CatalogBatchChangedEventPayload,
   CatalogImage,
   Job,
   StudioEvent,
   SystemLog,
   UnknownStudioEvent,
 } from '../packages/shared/src';
-import { getStudioApiBase, listStudioJobs } from './localStudioService';
+import { getStudioApiBase, getStudioJobDetail, listStudioJobs } from './localStudioService';
 
 type Unsubscribe = () => void;
 type Listener<T> = (payload: T) => void;
 
-export interface StudioCatalogEventPayload {
-  type: 'catalog.created' | 'catalog.updated' | 'catalog.deleted';
-  image: CatalogImage;
-}
+export type StudioCatalogEventPayload =
+  | {
+      type: 'catalog.created' | 'catalog.updated' | 'catalog.deleted';
+      image: CatalogImage;
+    }
+  | {
+      type: 'catalog.batch_changed';
+      batch: CatalogBatchChangedEventPayload;
+    };
 
 const TERMINAL_STATUSES = new Set(['completed', 'failed', 'cancelled', 'needs_review']);
 
@@ -129,7 +135,6 @@ class BrowserStudioEventStream implements StudioEventStream {
 
   onConnectionChange(callback: Listener<boolean>) {
     this.connectionListeners.add(callback);
-    callback(this.source?.readyState === EventSource.OPEN);
     return () => this.connectionListeners.delete(callback);
   }
 
@@ -214,9 +219,19 @@ class BrowserStudioEventStream implements StudioEventStream {
       event.type === 'catalog.updated' ||
       event.type === 'catalog.deleted'
     ) {
-      const type = event.type as StudioCatalogEventPayload['type'];
+      const type = event.type as Exclude<
+        StudioCatalogEventPayload['type'],
+        'catalog.batch_changed'
+      >;
       this.catalogListeners.forEach((listener) =>
         listener({ type, image: event.payload as CatalogImage }),
+      );
+    } else if (event.type === 'catalog.batch_changed') {
+      this.catalogListeners.forEach((listener) =>
+        listener({
+          type: 'catalog.batch_changed',
+          batch: event.payload as CatalogBatchChangedEventPayload,
+        }),
       );
     } else if (event.type === 'log.appended' || event.type === 'log.created') {
       this.logListeners.forEach((listener) => listener(event.payload as SystemLog));
@@ -346,7 +361,8 @@ export async function watchJob(
     void listStudioJobs()
       .then((jobs) => {
         const initial = jobs.find((job) => job.id === jobId);
-        if (initial) handleJob(initial);
+        if (!initial || !isTerminalStudioJobStatus(initial.status)) return;
+        return getStudioJobDetail(jobId).then((detail) => handleJob(detail.job));
       })
       .catch((error) => {
         settle(() => reject(error));

@@ -1,13 +1,15 @@
-import { mkdirSync, statSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
-import { registerCatalogImage } from './catalog';
+import { getCatalogImageByJobId, registerCatalogImage } from './catalog';
 import {
   addAsset,
   addJobEvent,
+  getAssetByJobId,
   getJob,
   getSettingValue,
   setSettingValue,
+  updateJobFinalization,
   updateJobStatus,
   upsertCodexTurn,
 } from './db';
@@ -47,16 +49,20 @@ export interface WorkerController {
   cancelQueuedOrRunningJob(jobId: string): ReturnType<typeof getJob>;
   getWorkerStatus(): WorkerStatus;
   resetWorkerState(): Promise<void>;
+  shutdown(): Promise<void>;
 }
 
 export interface CreateWorkerControllerDependencies {
   createTurn?: () => CodexTurn;
   getSettings?: typeof getSettings;
   registerCatalogImage?: typeof registerCatalogImage;
+  getCatalogImageByJobId?: typeof getCatalogImageByJobId;
   addAsset?: typeof addAsset;
+  getAssetByJobId?: typeof getAssetByJobId;
   addJobEvent?: typeof addJobEvent;
   getJob?: typeof getJob;
   updateJobStatus?: typeof updateJobStatus;
+  updateJobFinalization?: typeof updateJobFinalization;
   upsertCodexTurn?: typeof upsertCodexTurn;
   publishEvent?: typeof publishEvent;
   resolveLibraryPath?: typeof resolveLibraryPath;
@@ -131,10 +137,13 @@ export function createWorkerController({
   createTurn = createCodexTurn,
   getSettings: getSettingsFn = getSettings,
   registerCatalogImage: registerCatalogImageFn = registerCatalogImage,
+  getCatalogImageByJobId: getCatalogImageByJobIdFn = getCatalogImageByJobId,
   addAsset: addAssetFn = addAsset,
+  getAssetByJobId: getAssetByJobIdFn = getAssetByJobId,
   addJobEvent: addJobEventFn = addJobEvent,
   getJob: getJobFn = getJob,
   updateJobStatus: updateJobStatusFn = updateJobStatus,
+  updateJobFinalization: updateJobFinalizationFn = updateJobFinalization,
   upsertCodexTurn: upsertCodexTurnFn = upsertCodexTurn,
   publishEvent: publishEventFn = publishEvent,
   resolveLibraryPath: resolveLibraryPathFn = resolveLibraryPath,
@@ -153,8 +162,11 @@ export function createWorkerController({
   const runningJobs = new Set<string>();
   const jobQueue: Job[] = [];
   const runningJobControllers = new Map<string, AbortController>();
+  const runningJobAbortReasons = new Map<string, 'user' | 'reset' | 'shutdown'>();
   const activeJobPromises = new Map<string, Promise<void>>();
   let activeWorkerCount = 0;
+  let isShuttingDown = false;
+  let shutdownPromise: Promise<void> | null = null;
   const codexGenerationProvider =
     createGenerationProvider?.() ?? createCodexGenerationProvider({ turn: createTurn() });
   const externalGenerationProvider =
@@ -245,9 +257,12 @@ export function createWorkerController({
 
   const assetFinalizer = createWorkerAssetFinalizer({
     registerCatalogImage: registerCatalogImageFn,
+    getCatalogImageByJobId: getCatalogImageByJobIdFn,
     addAsset: addAssetFn,
+    getAssetByJobId: getAssetByJobIdFn,
     addJobEvent: addJobEventFn,
     updateJobStatus: updateJobStatusFn,
+    updateJobFinalization: updateJobFinalizationFn,
     publishEvent: publishEventFn,
     getJob: getJobFn,
     toPublicAssetUrl: toPublicAssetUrlFn,
@@ -256,7 +271,8 @@ export function createWorkerController({
     parsePromptTransport: parsePromptTransportFn,
     resolveExecutionOptions,
     resolveCatalogGenerationConfig: buildCatalogGenerationConfigFromJob,
-    organizeGeneratedAssetPath: assetPathing.organizeGeneratedAssetPath,
+    resolveGeneratedAssetTargetPath: assetPathing.resolveGeneratedAssetTargetPath,
+    moveGeneratedAssetToPath: assetPathing.moveGeneratedAssetToPath,
     inferGeneratedAssetMimeType,
     ensureThumbnailVariant: ensureThumbnailVariantFn,
   });
@@ -271,64 +287,25 @@ export function createWorkerController({
     const filePath = assetPathing.resolveGeneratedAssetTargetPath(job, 'dry_run', '.svg');
     mkdirSync(path.dirname(filePath), { recursive: true });
     writeFileSync(filePath, svgForPrompt(job.finalPromptUsed), 'utf8');
-    let thumbnailPath: string | null = null;
-
-    try {
-      thumbnailPath = await ensureThumbnailVariantFn(filePath);
-    } catch (error) {
-      logger(
-        'warn',
-        'thumbnail',
-        `Thumbnail generation failed: ${error instanceof Error ? error.message : String(error)}`,
-        job.id,
-      );
-    }
-
-    const asset = addAssetFn({
-      projectId: job.projectId,
-      jobId: job.id,
+    const checkpoint = {
+      state: 'moving_asset' as const,
+      sourcePath: filePath,
       filePath,
-      thumbnailPath,
-      publicUrl: toPublicAssetUrlFn(filePath),
-      prompt: job.finalPromptUsed,
-      width: 1200,
-      height: 800,
-      mimeType: 'image/svg+xml',
-    });
-    const catalogContext = resolveJobCatalogContextFn(job);
-    const parsedPrompt = parsePromptTransportFn(job.finalPromptUsed);
-    const catalogImage = registerCatalogImageFn({
-      filePath: asset.filePath,
-      thumbnailPath: asset.thumbnailPath,
-      prompt: asset.prompt,
-      negativePrompt: parsedPrompt.negativePrompt || null,
-      aspectRatio: parsedPrompt.aspectRatio,
-      imageSize: parsedPrompt.imageSize,
-      width: asset.width,
-      height: asset.height,
-      mimeType: asset.mimeType,
-      fileSizeBytes: statSync(asset.filePath).size,
-      jobId: asset.jobId,
-      workspaceId: catalogContext.workspaceId,
-      batchId: catalogContext.batchId,
-      recipeId: parsedPrompt.recipeId,
-      generationConfig: buildCatalogGenerationConfig(job.finalPromptUsed),
+      assetId: null,
+      catalogId: null,
+    };
+    updateJobFinalizationFn(job.id, checkpoint);
+    await assetFinalizer.finalizeJobAsset({
+      job: { ...job, finalization: checkpoint },
+      catalogContext: resolveJobCatalogContextFn(job),
+      discoveredImagePath: filePath,
+      providerId: 'dry_run',
+      options: { logPrefix: 'Dry run', width: 1200, height: 800 },
     });
     addJobEventFn(job.id, 'dry_run.completed', 'Dry run asset creation completed.', {
       durationMs: Date.now() - startedAt,
       assetCount: 1,
     });
-    addJobEventFn(job.id, 'asset.created', 'Dry run asset created.', { assetId: asset.id });
-    publishEventFn('asset.created', asset);
-    publishEventFn('catalog.created', catalogImage);
-    updateJobStatusFn(job.id, 'completed');
-    publishEventFn('job.completed', getJobFn(job.id));
-    logger(
-      'info',
-      'worker',
-      `Dry run job completed. Asset: ${path.basename(asset.filePath)}`,
-      job.id,
-    );
   }
 
   async function runCodexJob(job: Job, signal?: AbortSignal) {
@@ -448,6 +425,26 @@ export function createWorkerController({
       });
       updateJobStatusFn(job.id, 'running');
       publishEventFn('job.running', getJobFn(job.id));
+      if (job.finalization) {
+        if (job.finalization.state === 'completed') {
+          updateJobStatusFn(job.id, 'completed');
+          publishEventFn('job.completed', getJobFn(job.id));
+          return;
+        }
+        const resumePath = job.finalization.filePath ?? job.finalization.sourcePath;
+        if (!resumePath) {
+          throw new Error(`Job ${job.id} has an incomplete finalization checkpoint.`);
+        }
+        const providerId = job.providerId ?? job.sourceSpec?.providerId ?? 'recovered';
+        await assetFinalizer.finalizeJobAsset({
+          job,
+          catalogContext: resolveJobCatalogContextFn(job),
+          discoveredImagePath: resumePath,
+          providerId,
+          options: { logPrefix: 'Recovered' },
+        });
+        return;
+      }
       const runtimeTarget = resolveWorkerRuntimeTargetFn(job);
 
       if (runtimeTarget === 'dry_run') {
@@ -468,10 +465,18 @@ export function createWorkerController({
       }
     } catch (error) {
       if (isAbortError(error)) {
-        addJobEventFn(job.id, 'job.cancelled', 'Job cancelled by user.');
-        updateJobStatusFn(job.id, 'cancelled');
-        publishEventFn('job.cancelled', getJobFn(job.id));
-        logger('info', 'worker', 'Job cancelled by user.', job.id);
+        const abortReason = runningJobAbortReasons.get(job.id) ?? 'user';
+        if (abortReason === 'shutdown') {
+          addJobEventFn(job.id, 'job.interrupted', 'Studio shutdown interrupted this job.');
+          updateJobStatusFn(job.id, 'queued');
+          publishEventFn('job.queued', getJobFn(job.id));
+          logger('info', 'worker', 'Job requeued for recovery after studio shutdown.', job.id);
+        } else {
+          addJobEventFn(job.id, 'job.cancelled', 'Job cancelled by user.');
+          updateJobStatusFn(job.id, 'cancelled');
+          publishEventFn('job.cancelled', getJobFn(job.id));
+          logger('info', 'worker', 'Job cancelled by user.', job.id);
+        }
       } else {
         const message = formatWorkerErrorMessage(error);
         updateJobStatusFn(job.id, 'failed', message);
@@ -480,11 +485,13 @@ export function createWorkerController({
       }
     } finally {
       runningJobControllers.delete(job.id);
+      runningJobAbortReasons.delete(job.id);
       runningJobs.delete(job.id);
     }
   }
 
   async function processQueue() {
+    if (isShuttingDown) return;
     while (activeWorkerCount < getMaxConcurrentJobs() && jobQueue.length > 0) {
       const job = jobQueue.shift();
       if (!job) continue;
@@ -505,7 +512,7 @@ export function createWorkerController({
 
   return {
     enqueueJob(job: Job) {
-      if (runningJobs.has(job.id)) return;
+      if (isShuttingDown || runningJobs.has(job.id)) return;
       runningJobs.add(job.id);
       jobQueue.push(job);
       queueMicrotask(processQueue);
@@ -525,6 +532,7 @@ export function createWorkerController({
       const controller = runningJobControllers.get(jobId);
       if (controller) {
         addJobEventFn(jobId, 'job.cancel.requested', 'Cancellation requested for running job.');
+        runningJobAbortReasons.set(jobId, 'user');
         controller.abort();
         logger('info', 'worker', 'Cancellation requested for running job.', jobId);
         return getJobFn(jobId);
@@ -553,6 +561,7 @@ export function createWorkerController({
       for (const [jobId, controller] of runningJobControllers.entries()) {
         if (!controller.signal.aborted) {
           addJobEventFn(jobId, 'job.cancel.requested', 'Studio reset requested cancellation.');
+          runningJobAbortReasons.set(jobId, 'reset');
           controller.abort();
         }
       }
@@ -562,6 +571,38 @@ export function createWorkerController({
       }
 
       runningJobs.clear();
+    },
+    shutdown() {
+      if (!shutdownPromise) {
+        shutdownPromise = (async () => {
+          isShuttingDown = true;
+
+          const queuedJobs = jobQueue.splice(0, jobQueue.length);
+          for (const queuedJob of queuedJobs) {
+            runningJobs.delete(queuedJob.id);
+          }
+
+          for (const [jobId, controller] of runningJobControllers.entries()) {
+            if (!controller.signal.aborted) {
+              addJobEventFn(
+                jobId,
+                'job.interrupt.requested',
+                'Studio shutdown requested a recoverable interruption.',
+              );
+              runningJobAbortReasons.set(jobId, 'shutdown');
+              controller.abort();
+            }
+          }
+
+          if (activeJobPromises.size > 0) {
+            await Promise.allSettled(activeJobPromises.values());
+          }
+
+          runningJobs.clear();
+        })();
+      }
+
+      return shutdownPromise;
     },
   };
 }

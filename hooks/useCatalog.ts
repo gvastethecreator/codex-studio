@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { CatalogImage, CatalogPage, CatalogWorkspaceSummary } from '../packages/shared/src';
 import { buildArchivedImageGroupsFromCatalog } from '../lib/studioCatalogTrashView';
 import {
@@ -6,8 +6,13 @@ import {
   type CatalogRefreshScope,
 } from '../lib/catalogOperationResult';
 import { CATALOG_RENDER_BUDGET } from '../lib/catalogRenderBudget';
+import { createCatalogRequestGate, type CatalogRequestToken } from '../lib/catalogRequestGate';
 import { buildStudioQueueResultPreviews } from '../lib/studioQueueResults';
 import { createCatalogView, type StudioCatalogView } from '../lib/studioCatalogView';
+import {
+  createCatalogMutationReconciliationPolicy,
+  type CatalogMutationReconciliationPolicy,
+} from './catalogMutationReconciliationPolicy';
 import {
   deleteCatalogImage as deleteCatalogImageRequest,
   archiveCatalogByFilter,
@@ -74,12 +79,14 @@ function useCatalogWorkspaceSummaries() {
       setSummaries(nextSummaries);
       setError(null);
     } catch (loadError) {
-      setError(normalizeCatalogError(loadError));
+      const normalizedError = normalizeCatalogError(loadError);
+      setError(normalizedError);
+      throw normalizedError;
     }
   }, []);
 
   useEffect(() => {
-    void refresh();
+    void refresh().catch(() => undefined);
   }, [refresh]);
 
   return { summaries, error, refresh };
@@ -127,47 +134,87 @@ function useCatalog({
   const filtersRef = useRef(filters);
   filtersRef.current = filters;
   const filtersKey = createCatalogFilterKey(filters);
+  const filtersKeyRef = useRef(filtersKey);
+  const requestGateRef = useRef<ReturnType<typeof createCatalogRequestGate> | null>(null);
+  requestGateRef.current ??= createCatalogRequestGate();
+  const requestGate = requestGateRef.current;
+  const detailRequestIdsRef = useRef(new Map<string, number>());
+  useLayoutEffect(() => {
+    if (filtersKeyRef.current === filtersKey) return;
+    filtersKeyRef.current = filtersKey;
+    requestGate.invalidate();
+    detailRequestIdsRef.current.clear();
+  }, [filtersKey, requestGate]);
 
   const loadPage = useCallback(
-    async (offset: number, mode: 'replace' | 'append') => {
+    async (
+      offset: number,
+      mode: 'replace' | 'append',
+      token: CatalogRequestToken,
+      requestFilters: CatalogQueryParams,
+      propagateError = false,
+    ) => {
       setIsLoading(true);
       setError(null);
       try {
         const page = await queryCatalogPage({
-          ...filtersRef.current,
+          ...requestFilters,
           offset,
-          limit: filtersRef.current.limit ?? pageSize,
+          limit: requestFilters.limit ?? pageSize,
         });
+        if (!requestGate.isCurrent(token)) return;
         setEntries((previous) => (mode === 'append' ? [...previous, ...page.images] : page.images));
         setTotal(page.total);
         setHasMore(page.hasMore);
       } catch (loadError) {
-        setError(normalizeCatalogError(loadError));
+        if (!requestGate.isCurrent(token)) return;
+        const normalizedError = normalizeCatalogError(loadError);
+        setError(normalizedError);
+        if (propagateError) throw normalizedError;
       } finally {
-        setIsLoading(false);
+        if (requestGate.finish(token)) setIsLoading(false);
       }
     },
-    [pageSize, queryCatalogPage],
+    [pageSize, queryCatalogPage, requestGate],
   );
 
   const refresh = useCallback(async () => {
-    await loadPage(0, 'replace');
-  }, [loadPage]);
+    const token = requestGate.beginReplace();
+    await loadPage(0, 'replace', token, { ...filtersRef.current }, true);
+  }, [loadPage, requestGate]);
 
   const loadMore = useCallback(async () => {
-    if (!hasMore || isLoading) return;
-    await loadPage(entries.length, 'append');
-  }, [entries.length, hasMore, isLoading, loadPage]);
+    if (!hasMore) return;
+    const token = requestGate.beginAppend();
+    if (!token) return;
+    await loadPage(entries.length, 'append', token, { ...filtersRef.current });
+  }, [entries.length, hasMore, loadPage, requestGate]);
 
-  const hydrateDetail = useCallback(async (imageId: string) => {
-    const detail = await getCatalogImageDetail(imageId);
-    setEntries((previous) => previous.map((entry) => (entry.id === imageId ? detail : entry)));
-  }, []);
+  const hydrateDetail = useCallback(
+    async (imageId: string) => {
+      const requestId = (detailRequestIdsRef.current.get(imageId) ?? 0) + 1;
+      detailRequestIdsRef.current.set(imageId, requestId);
+      const generation = requestGate.getGeneration();
+      const detail = await getCatalogImageDetail(imageId);
+      if (
+        requestGate.getGeneration() !== generation ||
+        detailRequestIdsRef.current.get(imageId) !== requestId
+      ) {
+        return;
+      }
+      setEntries((previous) => previous.map((entry) => (entry.id === imageId ? detail : entry)));
+    },
+    [requestGate],
+  );
 
   useEffect(() => {
-    if (!enabled) return;
-    void refresh();
-  }, [enabled, filtersKey, refresh]);
+    if (!enabled) {
+      requestGate.invalidate();
+      setIsLoading(false);
+      return;
+    }
+    void refresh().catch(() => undefined);
+  }, [enabled, filtersKey, refresh, requestGate]);
 
   const view = useMemo(() => createCatalogView(entries), [entries]);
 
@@ -222,20 +269,26 @@ export function useStudioCatalogController({
   const refreshActiveCatalog = activeCatalog.refresh;
   const refreshWorkspaceSummaries = workspaceSummaryCatalog.refresh;
   const refreshTrashCatalog = trashCatalog.refresh;
+  const mutationReconciliationRef = useRef<CatalogMutationReconciliationPolicy | null>(null);
   const refreshCatalogs = useCallback(
     async (scope: CatalogRefreshScope = { kind: 'all' }) => {
+      const reconciliationPolicy = mutationReconciliationRef.current;
+      const reconciliationGeneration = reconciliationPolicy?.getGeneration();
       if (scope.kind === 'active') {
         await refreshActiveCatalog();
+        reconciliationPolicy?.acknowledge(scope, reconciliationGeneration);
         return;
       }
 
       if (scope.kind === 'workspace') {
         await Promise.all([refreshActiveCatalog(), refreshWorkspaceSummaries()]);
+        reconciliationPolicy?.acknowledge(scope, reconciliationGeneration);
         return;
       }
 
       if (scope.kind === 'trash') {
         await refreshTrashCatalog();
+        reconciliationPolicy?.acknowledge(scope, reconciliationGeneration);
         return;
       }
 
@@ -244,26 +297,36 @@ export function useStudioCatalogController({
         refreshWorkspaceSummaries(),
         refreshTrashCatalog(),
       ]);
+      reconciliationPolicy?.acknowledge(scope, reconciliationGeneration);
     },
     [refreshActiveCatalog, refreshWorkspaceSummaries, refreshTrashCatalog],
   );
 
+  useEffect(() => {
+    const policy = createCatalogMutationReconciliationPolicy({
+      reconcile: refreshCatalogs,
+    });
+    mutationReconciliationRef.current = policy;
+    return () => {
+      policy.dispose();
+      if (mutationReconciliationRef.current === policy) {
+        mutationReconciliationRef.current = null;
+      }
+    };
+  }, [refreshCatalogs]);
+
   const runCatalogMutation = useCallback(
-    async (
-      operation: Promise<unknown>,
-      fallbackMessage: string,
-      refreshScope: CatalogRefreshScope = { kind: 'all' },
-    ) => {
+    async (operation: Promise<unknown>, fallbackMessage: string) => {
       try {
         const result = await operation;
         const toast = describeCatalogOperationResult(result);
         if (toast) addToast(toast.message, toast.type);
-        await refreshCatalogs(refreshScope);
+        mutationReconciliationRef.current?.request({ kind: 'all' });
       } catch (error) {
         addToast(resolveCatalogMutationError(error, fallbackMessage), 'error');
       }
     },
-    [addToast, refreshCatalogs],
+    [addToast],
   );
 
   const deleteCatalogImage = useCallback(
@@ -271,7 +334,6 @@ export function useStudioCatalogController({
       void runCatalogMutation(
         deleteCatalogImageRequest(imageId),
         `Unable to archive image ${imageId}`,
-        { kind: 'all' },
       );
     },
     [runCatalogMutation],
@@ -284,9 +346,8 @@ export function useStudioCatalogController({
       }
 
       void runCatalogMutation(
-        Promise.all(imageIds.map((imageId) => deleteCatalogImageRequest(imageId))),
+        archiveCatalogByFilter({ ids: imageIds, isDeleted: false }),
         'Unable to archive selected images',
-        { kind: 'all' },
       );
     },
     [runCatalogMutation],
@@ -301,7 +362,6 @@ export function useStudioCatalogController({
           isFavorite: !(current?.isFavorite ?? false),
         }),
         'Unable to update favorite',
-        { kind: 'workspace', workspaceId: current?.workspaceId ?? null },
       );
     },
     [activeCatalog.view.byId, runCatalogMutation],
@@ -312,7 +372,6 @@ export function useStudioCatalogController({
       await runCatalogMutation(
         archiveCatalogByFilter({ workspaceId, isDeleted: false }),
         'Unable to archive workspace images',
-        { kind: 'all' },
       );
     },
     [runCatalogMutation],
@@ -329,7 +388,6 @@ export function useStudioCatalogController({
       void runCatalogMutation(
         restoreCatalogByFilter({ batchId, isDeleted: true }),
         'Unable to restore catalog batch',
-        { kind: 'all' },
       );
     },
     [runCatalogMutation, trashCatalog.view.byBatchId],
@@ -343,7 +401,6 @@ export function useStudioCatalogController({
     void runCatalogMutation(
       restoreCatalogByFilter({ isDeleted: true }),
       'Unable to restore catalog trash',
-      { kind: 'all' },
     );
   }, [runCatalogMutation, trashCatalog.entries]);
 
@@ -355,7 +412,6 @@ export function useStudioCatalogController({
     void runCatalogMutation(
       purgeCatalogByFilter({ isDeleted: true }),
       'Unable to empty catalog trash',
-      { kind: 'trash' },
     );
   }, [runCatalogMutation, trashCatalog.entries]);
 
