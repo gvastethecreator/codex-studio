@@ -8,7 +8,7 @@ import {
 } from './useStudioGenerationActions';
 
 describe('prepareStudioGenerationRequest', () => {
-  it('keeps queued attachment copies and preserves the composer attachment state', () => {
+  it('copies execution attachments and preserves the composer attachment state', () => {
     const attachment = {
       id: 'att-1',
       name: 'ref.png',
@@ -29,7 +29,6 @@ describe('prepareStudioGenerationRequest', () => {
 
     attachment.strength = 0.75;
 
-    expect(request.queuePrompt).toBe('Image-guided generation');
     expect(request.shouldClearComposerAttachments).toBe(false);
     expect(request.finalConfig.attachments).toEqual([
       {

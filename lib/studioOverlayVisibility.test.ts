@@ -54,7 +54,7 @@ function createController(): StudioOverlayController {
       handleGenerate: () => {},
       isGenerating: false,
       activeProviderId: 'codex',
-      handleExportLegacyVisualBatchSnapshot: () => {},
+      handleExportLegacyWorkspaceSnapshot: () => {},
       apiBase: 'http://127.0.0.1:17223',
       onboardingError: null,
       onboardingHealth: null,

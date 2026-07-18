@@ -79,14 +79,6 @@ export type GenerationExecutionOutcome =
   | { status: 'cancelled'; message?: string }
   | { status: 'failed'; message: string };
 
-export interface GenerationBatch {
-  id: string;
-  workspaceId: string; // Added link to workspace
-  config: ImageGenerationConfig;
-  images: GeneratedImage[];
-  createdAt: number;
-}
-
 export interface Workspace {
   id: string;
   name?: string; // Optional custom name
@@ -94,31 +86,9 @@ export interface Workspace {
   lastImage?: string; // Cache for the thumbnail
 }
 
-export type QueueJobStatus =
-  | 'pending'
-  | 'processing'
-  | 'completed'
-  | 'failed'
-  | 'cancelled'
-  | 'needs_review';
-
-export interface QueueJob {
-  id: string;
-  prompt: string;
-  workspaceId: string;
-  config: ImageGenerationConfig;
-  status: QueueJobStatus;
-  serverJobId?: string | null;
-  serverJobIds?: string[];
-  error?: string;
-  createdAt: number;
-  completedAt?: number;
-  isForced?: boolean;
-}
-
 export interface StudioGenerationPlaceholder {
   id: string;
-  status: QueueJobStatus | JobStatus;
+  status: JobStatus;
   aspectRatio: string;
   prompt: string;
   createdAt: number;

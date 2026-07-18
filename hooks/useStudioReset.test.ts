@@ -9,7 +9,6 @@ describe('performStudioReset', () => {
     const result = await performStudioReset({
       addToast: (message, type) => calls.push(`toast:${type}:${message}`),
       resetStudioState: () => calls.push('resetStudioState'),
-      resetQueue: () => calls.push('resetQueue'),
       refreshRuntime: async () => {
         calls.push('refreshRuntime');
       },
@@ -34,7 +33,6 @@ describe('performStudioReset', () => {
       'requestStudioReset',
       'clearIndexedDb',
       'remove:generation-config',
-      'resetQueue',
       'clearGenerationState',
       'startTransition',
       'resetStudioState',
@@ -50,7 +48,6 @@ describe('performStudioReset', () => {
     const result = await performStudioReset({
       addToast: (message, type) => calls.push(`toast:${type}:${message}`),
       resetStudioState: () => calls.push('resetStudioState'),
-      resetQueue: () => calls.push('resetQueue'),
       refreshRuntime: async () => {
         calls.push('refreshRuntime');
       },

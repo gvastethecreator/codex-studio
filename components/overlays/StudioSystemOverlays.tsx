@@ -49,7 +49,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   handleGenerate,
   isGenerating,
   activeProviderId,
-  handleExportLegacyVisualBatchSnapshot,
+  handleExportLegacyWorkspaceSnapshot,
   apiBase,
   onboardingError,
   onboardingHealth,
@@ -144,7 +144,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
               onClose={closeDashboard}
               imagesCount={imagesCount}
               workspaces={workspaces}
-              onExportLegacyVisualBatchSnapshot={handleExportLegacyVisualBatchSnapshot}
+              onExportLegacyWorkspaceSnapshot={handleExportLegacyWorkspaceSnapshot}
             />
           </Suspense>
         </ErrorBoundary>

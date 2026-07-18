@@ -53,8 +53,7 @@ interface StudioHeaderToolbarCommandCenterContext {
   queue: {
     statusItems: StudioRuntimeStatusItem[];
     queueResultPreviews: HeaderToolbarProps['commandCenter']['queue']['resultPreviews'];
-    queueJobCount: number;
-    activeServerJobCount: number;
+    activeJobCount: number;
     isQueueOpen: HeaderToolbarProps['isQueueOpen'];
     setIsQueueOpen: Dispatch<SetStateAction<boolean>>;
   };
@@ -118,8 +117,7 @@ export function buildStudioHeaderToolbarProps({
       providerRuntimePreflight: commandCenter.provider.runtimePreflight,
       statusItems: commandCenter.queue.statusItems,
       queueResultPreviews: commandCenter.queue.queueResultPreviews,
-      queueJobCount: commandCenter.queue.queueJobCount,
-      activeServerJobCount: commandCenter.queue.activeServerJobCount,
+      activeJobCount: commandCenter.queue.activeJobCount,
       isQueueOpen: commandCenter.queue.isQueueOpen,
       isGenerating: view.isGenerating,
     }),

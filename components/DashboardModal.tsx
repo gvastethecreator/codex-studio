@@ -14,7 +14,7 @@ interface DashboardModalProps {
   onClose: () => void;
   imagesCount: number;
   workspaces: Workspace[];
-  onExportLegacyVisualBatchSnapshot: () => void;
+  onExportLegacyWorkspaceSnapshot: () => void;
 }
 
 export const DashboardModal: React.FC<DashboardModalProps> = ({
@@ -22,7 +22,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
   onClose,
   imagesCount,
   workspaces,
-  onExportLegacyVisualBatchSnapshot,
+  onExportLegacyWorkspaceSnapshot,
 }) => {
   if (!isOpen) return null;
 
@@ -105,7 +105,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
             <div className="grid grid-cols-1 gap-3">
               <button
                 type="button"
-                onClick={onExportLegacyVisualBatchSnapshot}
+                onClick={onExportLegacyWorkspaceSnapshot}
                 className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
               >
                 <Download

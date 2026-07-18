@@ -35,7 +35,7 @@ export interface StudioImageOverlaysProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
+    options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
   ) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   handleLoadRecipe: (config: ImageGenerationConfig) => void;
@@ -83,11 +83,11 @@ export interface StudioSystemOverlaysProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
+    options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
   ) => void;
   isGenerating: boolean;
   activeProviderId: string;
-  handleExportLegacyVisualBatchSnapshot: () => void;
+  handleExportLegacyWorkspaceSnapshot: () => void;
   apiBase: string;
   onboardingError: string | null;
   onboardingHealth: HealthResponse | null;

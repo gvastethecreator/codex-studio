@@ -14,15 +14,10 @@ async function writeRepoFile(rootDir: string, repoPath: string, source: string) 
 async function writePassingFixtures(rootDir: string) {
   await writeRepoFile(rootDir, 'lib/studioCatalogView.ts', 'export const view = true;');
   await writeRepoFile(rootDir, 'hooks/useCatalog.ts', 'export const hook = true;');
-  await writeRepoFile(
-    rootDir,
-    'lib/studioLegacyVisualBatchStore.ts',
-    "export const keys = ['catalog-cache', 'catalog-trash'];",
-  );
 }
 
 describe('catalog-first source audit', () => {
-  it('passes when Catalog View stays independent from Visual Batch adapters', async () => {
+  it('passes when Catalog View stays independent from retired browser batch state', async () => {
     const rootDir = path.join(tmpdir(), `catalog-first-ok-${Date.now()}`);
     await writePassingFixtures(rootDir);
 
@@ -31,7 +26,7 @@ describe('catalog-first source audit', () => {
     expect(report.violations).toEqual([]);
   });
 
-  it('reports source drift back toward Visual Batch cache state', async () => {
+  it('reports source drift back toward retired browser batch state', async () => {
     const rootDir = path.join(tmpdir(), `catalog-first-fail-${Date.now()}`);
     await writePassingFixtures(rootDir);
     await writeRepoFile(
@@ -50,11 +45,10 @@ describe('catalog-first source audit', () => {
     const report = await createCatalogFirstSourceAuditReport(rootDir);
 
     expect(report.violations.map((violation) => violation.ruleId)).toEqual([
-      'catalog-view-no-visual-batch-adapter',
-      'use-catalog-no-idb-cache',
-      'legacy-visual-cache-keys-isolated',
-      'legacy-visual-cache-keys-isolated',
-      'generation-batch-compat-isolated',
+      'retired-visual-batch-state',
+      'retired-visual-batch-state',
+      'retired-visual-batch-state',
+      'retired-visual-batch-state',
     ]);
   });
 });

@@ -47,7 +47,6 @@ interface AnimationSequenceRecipeProps {
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
     options?: {
-      force?: boolean;
       preventModal?: boolean;
       useCurrentAttachments?: boolean;
       onJobCreated?: (job: StudioJob) => void;
@@ -511,7 +510,7 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
     void runAction(async () => {
       let updated: AnimationSequenceRun | null =
         await animationSequenceRunCoordinator.reconcile(activeRun);
-      // Legacy Visual Batch attachments target one run record and must serialize.
+      // Catalog image attachments target one run record and must serialize.
       for (const frame of updated.frames) {
         if (frame.catalogImageId) continue;
         const image = findGeneratedFrameImage(images, activeRun.id, frame.id);

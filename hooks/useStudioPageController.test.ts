@@ -45,7 +45,7 @@ describe('buildStudioPageController', () => {
         handleLoadRecipe: () => {},
         handleDelete: () => {},
         handleToggleFavorite: () => {},
-        isGenerating: false,
+        isGenerating: true,
         transitioningImageId: null,
         activeModalImageId: null,
         handleSelectAll: () => {},
@@ -65,26 +65,11 @@ describe('buildStudioPageController', () => {
       operations: {
         isQueueOpen: true,
         setIsQueueOpen: () => {},
-        jobs: [
-          {
-            id: 'job-1',
-            workspaceId: 'default',
-            prompt: 'Neon skyline',
-            config: DEFAULT_GENERATION_CONFIG,
-            status: 'processing',
-            createdAt: 1,
-          },
-        ],
         studioJobs: [],
         selectedStudioJobId: null,
         queueResults: [],
-        retry: () => {},
         retryPersistentJob: () => {},
-        cancelJob: () => {},
         cancelPersistentJob: () => {},
-        removeJob: () => {},
-        clearCompleted: () => {},
-        isResting: false,
         onInspectJob: () => {},
       },
     });
@@ -94,15 +79,7 @@ describe('buildStudioPageController', () => {
     expect(controller.grid.generation.isGenerating).toBe(true);
     expect(controller.grid.catalog.hasMore).toBe(true);
     expect(controller.grid.catalog.total).toBe(250);
-    expect(controller.grid.generation.placeholders).toEqual([
-      {
-        id: 'local-job-1',
-        status: 'processing',
-        aspectRatio: '1:1',
-        prompt: 'Neon skyline',
-        createdAt: 1,
-      },
-    ]);
+    expect(controller.grid.generation.placeholders).toEqual([]);
   });
 
   it('projects active generation jobs into grid placeholders', () => {
@@ -139,42 +116,8 @@ describe('buildStudioPageController', () => {
           toShellActivityJob(runningJob, 'backend_event'),
           toShellActivityJob({ ...runningJob, id: 'done-1', status: 'completed' }, 'backend_event'),
         ],
-        jobs: [
-          {
-            id: 'queued-1',
-            workspaceId: 'default',
-            prompt: 'Local prompt',
-            config: { ...DEFAULT_GENERATION_CONFIG, aspectRatio: '3:2' },
-            status: 'pending',
-            createdAt: Date.parse('2026-06-22T10:00:02.000Z'),
-          },
-          {
-            id: 'linked-1',
-            workspaceId: 'default',
-            prompt: 'Linked prompt',
-            config: DEFAULT_GENERATION_CONFIG,
-            status: 'processing',
-            serverJobId: 'studio-1',
-            createdAt: Date.parse('2026-06-22T10:00:01.000Z'),
-          },
-          {
-            id: 'other-workspace',
-            workspaceId: 'archive',
-            prompt: 'Hidden prompt',
-            config: DEFAULT_GENERATION_CONFIG,
-            status: 'pending',
-            createdAt: Date.parse('2026-06-22T10:00:03.000Z'),
-          },
-        ],
       }),
     ).toEqual([
-      {
-        id: 'local-queued-1',
-        status: 'pending',
-        aspectRatio: '3:2',
-        prompt: 'Local prompt',
-        createdAt: Date.parse('2026-06-22T10:00:02.000Z'),
-      },
       {
         id: 'server-studio-1',
         status: 'running',
@@ -225,17 +168,11 @@ describe('buildStudioPageController', () => {
       operations: {
         isQueueOpen: true,
         setIsQueueOpen: () => {},
-        jobs: [],
         studioJobs: [],
         selectedStudioJobId: null,
         queueResults: [],
-        retry: () => {},
         retryPersistentJob: () => {},
-        cancelJob: () => {},
         cancelPersistentJob: () => {},
-        removeJob: () => {},
-        clearCompleted: () => {},
-        isResting: false,
         onInspectJob: () => {},
       },
     });

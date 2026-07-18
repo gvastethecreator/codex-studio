@@ -375,7 +375,7 @@ export async function runSingleCodexImagegenJob(options: {
 
 /**
  * Resolve recipe context, enqueue backend jobs, and return catalog-derived
- * images. The legacy Visual Batch cache is updated outside this service.
+ * images. Catalog refresh and presentation stay outside this service.
  */
 export async function runLocalGeneration({
   config,

@@ -35,7 +35,7 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
 }
 
 describe('buildArchivedImageGroupsFromCatalog', () => {
-  it('builds trash groups from Catalog Entries without Visual Batch input', () => {
+  it('builds trash groups directly from Catalog Entries', () => {
     const view = createCatalogView([
       catalogImage({
         id: 'older',

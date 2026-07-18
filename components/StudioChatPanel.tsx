@@ -18,7 +18,7 @@ import type { ImageGenerationConfig, LogEntry } from '../types';
 type GenerateFromChat = (
   promptOverride?: string,
   configOverrides?: Partial<ImageGenerationConfig>,
-  options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
+  options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
 ) => void;
 
 interface StudioChatPanelProps {

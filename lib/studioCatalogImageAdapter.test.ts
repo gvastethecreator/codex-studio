@@ -41,7 +41,7 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
 }
 
 describe('studioCatalogImageAdapter', () => {
-  it('materializes one Catalog Entry image without a legacy Visual Batch lookup', () => {
+  it('materializes one Catalog Entry image without a browser batch lookup', () => {
     const image = materializeCatalogEntryImage(catalogImage({ isFavorite: true }));
 
     expect(image).toEqual(
@@ -107,7 +107,7 @@ describe('studioCatalogImageAdapter', () => {
     ).toBe('studio-job-77');
   });
 
-  it('materializes a Catalog Entry image with config without a legacy Visual Batch lookup', () => {
+  it('materializes a Catalog Entry image with config without a browser batch lookup', () => {
     const image = materializeCatalogEntryImageWithConfig(
       catalogImage({
         id: 'catalog-image',

@@ -18,8 +18,6 @@ const StudioGenerationDock = React.lazy(() =>
   })),
 );
 
-interface AppContentProps {}
-
 const StudioFirstReadyScrim: React.FC = () => (
   <div
     className="pointer-events-none fixed inset-0 z-[45] flex items-center justify-center bg-zinc-950"
@@ -57,7 +55,7 @@ const StudioGenerationDockFallback: React.FC = () => (
   />
 );
 
-export const AppContent: React.FC<AppContentProps> = () => {
+export const AppContent: React.FC = () => {
   const shell = useStudioShell();
   const hasGenerationDock =
     !shell.generationDock.isModalOpen &&

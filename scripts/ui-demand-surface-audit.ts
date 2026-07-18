@@ -24,12 +24,6 @@ export interface UiDemandSurfaceAuditReport {
 
 export const uiDemandSurfaceRules: UiDemandSurfaceRule[] = [
   {
-    id: 'prod-entry-no-static-react-scan',
-    filePath: 'main.tsx',
-    forbidden: ["import { scan } from 'react-scan'", 'from "react-scan"'],
-    message: 'react-scan must stay DEV-only through dynamic import.',
-  },
-  {
     id: 'zip-export-no-static-vendors',
     filePath: 'utils/fileUtils.ts',
     forbidden: ["from 'jszip'", 'from "jszip"', "from 'file-saver'", 'from "file-saver"'],
@@ -63,8 +57,8 @@ export const uiDemandSurfaceRules: UiDemandSurfaceRule[] = [
     id: 'viewport-no-static-route-pages',
     filePath: 'components/shell/StudioViewport.tsx',
     forbidden: [
-      "import { StudioPage } from '../StudioPage'",
-      'import { StudioPage } from "../StudioPage"',
+      "import { StudioGridSurface } from '../studio/StudioGridSurface'",
+      'import { StudioGridSurface } from "../studio/StudioGridSurface"',
       "import { RecipesView } from '../RecipesView'",
       'import { RecipesView } from "../RecipesView"',
       "import { RecipePage } from '../RecipePage'",

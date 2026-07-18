@@ -31,12 +31,11 @@ describe('UI demand surface audit', () => {
   it('reports eager imports that undo demand-mounted chunk splits', async () => {
     const rootDir = path.join(tmpdir(), `ui-demand-audit-fail-${Date.now()}`);
     await writePassingFixtures(rootDir);
-    await writeRepoFile(rootDir, 'main.tsx', "import { scan } from 'react-scan';");
     await writeRepoFile(rootDir, 'hooks/useCameraViewport.ts', "import * as THREE from 'three';");
     await writeRepoFile(
       rootDir,
       'components/shell/StudioViewport.tsx',
-      "import { StudioPage } from '../StudioPage';",
+      "import { StudioGridSurface } from '../studio/StudioGridSurface';",
     );
     await writeRepoFile(
       rootDir,
@@ -63,7 +62,6 @@ describe('UI demand surface audit', () => {
     const report = await createUiDemandSurfaceAuditReport(rootDir);
 
     expect(report.violations.map((violation) => violation.ruleId)).toEqual([
-      'prod-entry-no-static-react-scan',
       'camera-no-static-three',
       'catalog-search-no-full-catalog-open-load',
       'viewport-no-static-route-pages',
