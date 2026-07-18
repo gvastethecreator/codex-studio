@@ -81,7 +81,8 @@ Final closeout:
 - `bun audit`: no vulnerabilities after removing `react-scan` and pinning the compatible Electron download transport.
 - Browser proof at 1,440 × 900 and 390 × 844: Persistent Jobs opened, closed, and reopened; the recent-result viewer navigated previous/next and closed with Escape; no Force or Browser Queue control remained; no horizontal overflow, console error, page error, or failed request was observed.
 - React Doctor against `origin/main`: 74 changed React files scanned; no issues found.
+- React Doctor CI runs the pinned CLI directly after a frozen install: changed-scope against the PR merge-base and full-project on `main`. This removes a composite-action JSON-report failure without disabling the scan.
 - Linux CI portability follow-up: 13 output-source/reference path tests pass with platform-native fixtures instead of Windows-only drive syntax.
-- Net diff: 118 files, 728 lines added, 4,091 deleted, net reduction of 3,363 lines.
+- Net diff: 119 files, 748 lines added, 4,112 deleted, net reduction of 3,364 lines.
 
 The change history is split into backend/domain simplification, live Studio-model simplification, and documentation/architecture closeout commits. The pull request is the final review and continuation surface.
