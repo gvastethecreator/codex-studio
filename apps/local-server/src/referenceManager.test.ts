@@ -5,6 +5,7 @@ import path from 'node:path';
 import sharp from 'sharp';
 
 import { createGenerationTaskSpec } from '../../../packages/shared/src';
+import { resolveLibraryPathFromRoot } from './library';
 import {
   hydrateSourceSpecAssetPaths,
   processReferences,
@@ -207,6 +208,7 @@ describe('referenceManager', () => {
   });
 
   it('hydrates Studio Library source URLs to local paths before provider execution', () => {
+    const libraryDir = path.resolve('tmp', 'AI-Studio-Library');
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-batch-1',
       task: 'image_generate',
@@ -222,13 +224,13 @@ describe('referenceManager', () => {
       ],
     });
 
-    const hydrated = hydrateSourceSpecAssetPaths(sourceSpec, [], [], 'D:/AI-Studio-Library');
+    const hydrated = hydrateSourceSpecAssetPaths(sourceSpec, [], [], libraryDir);
 
     expect(hydrated?.assets[0]).toEqual({
       role: 'reference',
       name: 'generated.png',
       sourceUrl: undefined,
-      localPath: path.join('D:/AI-Studio-Library', 'outputs', 'generated image.png'),
+      localPath: resolveLibraryPathFromRoot(libraryDir, 'outputs', 'generated image.png'),
       strength: 0.5,
     });
   });
