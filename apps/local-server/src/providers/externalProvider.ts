@@ -1,18 +1,15 @@
 import type { CompiledProviderInput, GenerationProviderId } from '../../../../packages/shared/src';
 import type { TurnResult } from '../codex/turn';
+import { createComfyWorkflowExecutor } from './comfyExecutor';
+import { createFalImageExecutor } from './falExecutor';
+import { createGoogleImageExecutor } from './googleExecutor';
 import {
   getExternalProviderRuntimePreflight,
-  type ProviderRuntimePreflight,
-} from './runtimeConfig';
-import {
-  createDefaultExternalProviderExecutorRegistry,
-  type ExternalProviderExecutorRegistry,
-} from './externalProviderExecutors';
-import { compileProviderInputForJob } from './providerInputCompiler';
-import {
   isExternalExecutableProviderId,
   type ExternalExecutableProviderId,
-} from './providerRegistry';
+  type ProviderRuntimePreflight,
+} from './runtimeConfig';
+import { compileProviderInputForJob } from './providerInputCompiler';
 import type { GenerationProvider, GenerationProviderJob } from './types';
 
 export interface ExternalProviderExecutionContext {
@@ -29,8 +26,18 @@ export type ExternalProviderExecutor = (
 export interface CreateExternalGenerationProviderDependencies {
   readPreflight?: (providerId: GenerationProviderId) => ProviderRuntimePreflight | null;
   execute?: ExternalProviderExecutor;
-  executors?: ExternalProviderExecutorRegistry;
-  createDefaultExecutors?: () => ExternalProviderExecutorRegistry;
+  createExecutor?: (providerId: ExternalExecutableProviderId) => ExternalProviderExecutor | null;
+}
+
+function createDefaultExecutor(providerId: ExternalExecutableProviderId) {
+  switch (providerId) {
+    case 'google':
+      return createGoogleImageExecutor();
+    case 'fal':
+      return createFalImageExecutor();
+    case 'comfy':
+      return createComfyWorkflowExecutor();
+  }
 }
 
 function formatPreflightDiagnostics(preflight: ProviderRuntimePreflight) {
@@ -42,14 +49,8 @@ function formatPreflightDiagnostics(preflight: ProviderRuntimePreflight) {
 export function createExternalGenerationProvider({
   readPreflight = getExternalProviderRuntimePreflight,
   execute,
-  executors = {},
-  createDefaultExecutors = createDefaultExternalProviderExecutorRegistry,
+  createExecutor = createDefaultExecutor,
 }: CreateExternalGenerationProviderDependencies = {}): GenerationProvider {
-  const executorRegistry = {
-    ...(execute ? {} : createDefaultExecutors()),
-    ...executors,
-  };
-
   return {
     id: 'external',
     async run(job) {
@@ -72,7 +73,7 @@ export function createExternalGenerationProvider({
         );
       }
 
-      const executor = execute ?? executorRegistry[providerId] ?? null;
+      const executor = execute ?? createExecutor(providerId);
 
       if (!executor) {
         throw new Error(

@@ -14,6 +14,8 @@ describe('provider runtime config', () => {
       FAL_KEY: 'fal-secret-value',
     });
 
+    expect(preflights.map((preflight) => preflight.providerId)).toEqual(['google', 'fal', 'comfy']);
+
     expect(preflights).toEqual(
       expect.arrayContaining([
         expect.objectContaining({

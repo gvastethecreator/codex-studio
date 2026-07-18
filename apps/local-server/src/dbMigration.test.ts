@@ -27,6 +27,7 @@ describe('database migrations', () => {
       foreignKeysValid: true,
       transactionRolledBack: true,
       recoverableCheckpoint: true,
+      summaryProjection: true,
       schemaVersion: 3,
     });
   });
