@@ -4,6 +4,8 @@ Date: 2026-07-10
 
 Acceptance status: Accepted on 2026-07-10 as part of the full architecture/debt objective
 
+Resolution note: the [2026-07-18 simplification](./simplification-2026-07-18.md) removes the Visual Batch scan and browser-owned queue recovery described in this historical review. Persistent Jobs and Catalog Entries now provide the live recovery path.
+
 ## Summary
 
 - The backend route module is deep enough: `appFactory.ts` only supplies adapters and mounts it.

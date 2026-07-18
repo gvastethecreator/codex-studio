@@ -80,9 +80,9 @@ _Avoid_: source spec, recipeContext, stored prompt
 Stable provider-level instructions and output rules reused across jobs so each Compiled Provider Input only carries task-specific delta.
 _Avoid_: repeated prompt boilerplate, per-job system prompt, hidden recipe text
 
-**Provider Registry**:
-Single queryable source of Generation Provider facts used by Provider Boundary capability, preflight, compiler, executor, and worker-routing seams.
-_Avoid_: duplicated provider list, vendor switch table, route-local provider facts
+**Provider Capability Catalog**:
+Fixed non-secret description of the Generation Providers supported by this build, used to project capability and readiness without pretending providers are runtime plugins.
+_Avoid_: runtime plugin registry, Provider Secret store, route-local provider facts
 
 **Persistent Job Intake**:
 Backend seam that turns a job creation request into one durable Persistent Job, including provider selection, source-spec validation, reference persistence, event publication, and enqueue.
@@ -118,7 +118,7 @@ _Avoid_: frame prompt copy, UI generation config, provider payload
 
 **Animation Sequence Run Coordinator**:
 Durable workflow owner that dispatches frame jobs, records transitions, and reconciles completed Catalog Entries for one Animation Sequence run.
-_Avoid_: React generation loop, Visual Batch scan, route-owned workflow
+_Avoid_: React generation loop, browser batch scan, route-owned workflow
 
 **Animation Sequence Run View**:
 Client-safe projection of an Animation Sequence run containing workbench state and public asset references without backend filesystem paths.
@@ -158,12 +158,12 @@ _Avoid_: multi-provider orchestrator, vendor switch, direct provider call
 
 ### Frontend seams
 
-**Visual Batch**:
-UI-facing `GenerationBatch` cache materialized from Catalog Entries and persisted in IndexedDB for the current grid.
-_Avoid_: durable catalog record, source of truth
+**Legacy Workspace Snapshot**:
+Export-only JSON view derived from current Catalog Entries for users who need the former workspace snapshot shape.
+_Avoid_: browser cache, import format, recovery source, durable catalog record
 
 **Local Studio Sync**:
-Frontend seam that mirrors backend jobs, logs, and live events while importing Catalog Entries into the Visual Batch cache.
+Frontend seam that mirrors backend Job Summaries, logs, and live events while requesting scoped Image Catalog reconciliation.
 _Avoid_: polling loop, ad-hoc refresh code
 
 **Studio Event Revision**:
@@ -171,7 +171,7 @@ Monotonic position assigned to Studio state changes so reconnecting clients can 
 _Avoid_: timestamp ordering, EventSource connection count, full record event
 
 **Shell Activity Job**:
-Compact shell-facing activity model derived from Job Summaries, live job events, and Browser Queue links.
+Compact shell-facing activity model derived from Job Summaries and live job events.
 _Avoid_: full job payload in hot UI reads, queue-only job model, debug-only job row
 
 **Catalog Operation Result**:
@@ -195,7 +195,7 @@ Frontend routing budget that separates active navigation, idle route-shell prelo
 _Avoid_: preload every recipe, route import fan-out, hidden startup work
 
 **Local Generation Run**:
-Frontend seam that creates Persistent Jobs, waits for completion, queries catalog results, and returns one Visual Batch.
+Frontend seam that creates Persistent Jobs, waits for completion, and returns catalog-derived image results.
 _Avoid_: inline job choreography, direct editor pipeline
 
 **Studio Runtime**:
@@ -203,7 +203,7 @@ Frontend runtime adapter that resolves how the renderer reaches the local backen
 _Avoid_: readiness state, onboarding snapshot
 
 **Studio Shell**:
-Frontend seam that materializes navigation, overlays, Studio Runtime state, and Visual Batch presentation into one renderable layout for the app shell.
+Frontend seam that materializes navigation, overlays, Studio Runtime state, and Catalog Entry presentation into one renderable layout for the app shell.
 _Avoid_: AppContent glue, root orchestrator
 
 **Studio Readiness**:
@@ -241,7 +241,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - **Catalog Entry Detail** completes one compact Catalog Entry only when a caller explicitly needs full generation or diagnostic metadata.
 - A generation-flavored **Persistent Job** executes one or more **Codex Turns**.
 - A **Persistent Job** has one **Generation Task** and one **Generation Provider** selected through the **Provider Boundary**.
-- **Persistent Job Intake** creates Persistent Jobs and uses the **Provider Registry** to keep Generation Task and Generation Provider policy explicit.
+- **Persistent Job Intake** creates Persistent Jobs and checks the **Provider Capability Catalog** plus runtime preflight to keep Generation Task and Generation Provider policy explicit.
 - A **Recipe Module** produces a **Generation Task Spec** for a **Generation Task**.
 - A **Recipe Module Catalog** exposes Recipe Module metadata for navigation, scripts, and agents; the **Recipe Discovery Projection** is the query view over modules and aliases.
 - An **Animation Frame Handoff** is dispatched and reconciled by the **Animation Sequence Run Coordinator**; the UI consumes an **Animation Sequence Run View**.
@@ -253,8 +253,8 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - A **Style Search Projection** is derived from **Style Preset Manifests** and **Style Pack Manifests**.
 - A **Style Thumbnail Projection** derives pack-scoped asset URLs from style manifests without becoming style authoring truth.
 - A **Style Pack Manifest** groups many **Style Preset Manifests** without owning all preset content inline.
-- A **Local Generation Run** creates one or more **Persistent Jobs** and materializes one **Visual Batch** for the UI.
-- **Local Studio Sync** imports **Catalog Entries** into **Visual Batches** for the current grid.
+- A **Local Generation Run** creates one or more **Persistent Jobs** and returns their catalog-derived image results.
+- **Local Studio Sync** mirrors **Persistent Jobs** and requests scoped **Image Catalog** reconciliation.
 - **Local Studio Sync** uses **Studio Event Revisions** to detect missed changes and request scoped reconciliation.
 - A **Shell Activity Job** is the shell-facing model for hot job reads; full **Persistent Job** detail is loaded on demand.
 - A **Catalog Operation Result** lets the shell show scoped command outcomes without treating every mutation as a blind full refresh.
@@ -262,7 +262,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - A **Catalog Card Action Surface** keeps secondary card commands available by intent instead of permanently mounted for every **Catalog Entry** card.
 - An **Image Grid Geometry Budget** keeps first-viewport Catalog thumbnails discoverable while off-viewport images remain lazy.
 - A **Route Preload Budget** lets the **Studio Shell** warm route surfaces by route and user intent without importing every **Recipe Module** surface on Home.
-- **Studio Shell** materializes **Studio Runtime**, navigation state, overlays, and **Visual Batches** into the renderable app layout.
+- **Studio Shell** materializes **Studio Runtime**, navigation state, overlays, and **Catalog Entries** into the renderable app layout.
 - **Studio Readiness** depends on **Studio Runtime**, **Studio Library**, **App-Server Lifecycle**, and the **Local Codex Session**.
 - The **Command Center** exposes global status and commands, while deeper configuration and diagnostics open from it.
 - A **Demand-Mounted Surface** is opened from the **Command Center** or another explicit user action; the **Settings Surface** is the settings-specific demand-mounted surface.
@@ -271,7 +271,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 ## Example dialogue
 
 > **Dev:** "When a generation finishes, do we render the **Catalog Entry** directly?"
-> **Domain expert:** "Not yet — the backend persists the **Catalog Entry**, then **Local Studio Sync** imports it into a **Visual Batch** so the current grid keeps working."
+> **Domain expert:** "Yes — the backend persists the **Catalog Entry**, **Local Studio Sync** refreshes the affected catalog scope, and the grid materializes that entry directly."
 >
 > **Dev:** "So what actually blocks the user from generating?"
 > **Domain expert:** "**Studio Readiness** does; it combines backend health, the **Studio Library**, the **App-Server Lifecycle**, and the **Local Codex Session** into one answer."
@@ -280,7 +280,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 
 - `CONTEXT.md` is glossary-only; system shape belongs in `docs/ARCHITECTURE.md`, and workflow rules belong in `AGENTS.md` or `SKILLS.md`.
 - `AGENTS.md` should guide repo work practices, while `SKILLS.md` should guide specialized workflows; neither should duplicate the glossary in `CONTEXT.md`.
-- **Visual Batch** is a UI compatibility cache, not the durable source of truth; the durable record is the **Catalog Entry** in the **Image Catalog**.
+- **Legacy Workspace Snapshot** is export-only compatibility. It is not read, recovered, or stored as browser state.
 - **Studio Settings** are not `.env.local`; environment files are for **Bootstrap Configuration** and secrets that must exist before the app can load the library.
 - **Provider Secret** values must not be stored in the Image Catalog, job metadata, or SQLite-backed Studio Settings.
 - **External Output Source** is not a second source of truth; catalog operations belong to imported **Local Assets** in a **Studio Library**.
@@ -290,7 +290,7 @@ _Avoid_: direct repair command, secret-printing audit, destructive storage scan
 - **Local Codex Session** is the local ChatGPT-login capability snapshot; avoid calling it "account status" except when referring to the compatibility endpoint `/api/codex/account`.
 - **Provider Boundary** does not mean the product becomes a generic provider router; it preserves a Codex-first studio while allowing external generation systems behind backend adapters.
 - **Generation Task** and **Generation Provider** are separate concepts; do not encode provider names into task names.
-- **Provider Registry** is provider fact ownership, not a Provider Secret store.
+- **Provider Capability Catalog** is a fixed build-time capability description, not runtime plugin machinery or a Provider Secret store.
 - **Persistent Job Intake** may accept compatibility aliases, but new durable policy must preserve the **Generation Task** / **Generation Provider** split.
 - **Recipe Module** means a declarative workflow module, not a React-only page or a prebuilt prompt string.
 - **Recipe Discovery Projection** aliases help discovery; aliases are not new **Recipe Modules**.

@@ -1,5 +1,7 @@
 # Architecture review — Codex Studio performance and general app seams
 
+Resolution note: the [2026-07-18 simplification](./simplification-2026-07-18.md) removes the Browser Queue reconciliation described in this historical review and makes Persistent Jobs the only live queue model.
+
 Date: 2026-07-10
 
 Acceptance status: Accepted on 2026-07-10 for full implementation

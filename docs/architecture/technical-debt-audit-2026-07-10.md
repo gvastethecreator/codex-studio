@@ -1,5 +1,7 @@
 # Technical-debt audit — 2026-07-10
 
+Historical note: the [2026-07-18 simplification](./simplification-2026-07-18.md) supersedes the retained Browser Queue and legacy export-alias decisions recorded here.
+
 Status: Closed for confirmed, reachable debt
 
 ## Scope
