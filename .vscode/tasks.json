@@ -2,43 +2,55 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "📦 deps",
+      "type": "shell",
+      "command": "bun install",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
       "label": "🧱 init",
       "type": "shell",
       "command": "bun run studio:init",
-      "problemMatcher": [],
-      "group": "build"
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
     },
     {
       "label": "🚀 dev",
       "type": "shell",
       "command": "bun run dev",
-      "problemMatcher": [],
-      "isBackground": true,
-      "dependsOn": ["🧱 init"],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      }
-    },
-    {
-      "label": "🖥️ ui",
-      "type": "shell",
-      "command": "bun run dev:ui",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "isBackground": true
     },
     {
-      "label": "🛠️ server",
+      "label": "🖥 ui",
+      "type": "shell",
+      "command": "bun run dev:ui",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "⚙ api",
       "type": "shell",
       "command": "bun run dev:server",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
-      "isBackground": true,
-      "dependsOn": ["🧱 init"]
+      "isBackground": true
+    },
+    {
+      "label": "🩺 doctor",
+      "type": "shell",
+      "command": "bun run runtime:doctor",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
     },
     {
       "label": "✨ fmt",
       "type": "shell",
       "command": "bun run fmt",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
     },
@@ -46,6 +58,7 @@
       "label": "🧹 lint",
       "type": "shell",
       "command": "bun run lint",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
     },
@@ -53,6 +66,7 @@
       "label": "🔍 check",
       "type": "shell",
       "command": "bun run check",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
     },
@@ -60,34 +74,69 @@
       "label": "🧪 test",
       "type": "shell",
       "command": "bun run test",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
-      "group": "test"
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
     },
     {
       "label": "📊 coverage",
       "type": "shell",
       "command": "bun run test:coverage",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
     },
     {
-      "label": "⚡ validate",
+      "label": "⚡ quick",
       "type": "shell",
       "command": "bun run validate:fast",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
       "group": "test"
     },
     {
-      "label": "🏗️ build",
+      "label": "✅ gate",
+      "type": "shell",
+      "command": "bun run validate",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🛡 release",
+      "type": "shell",
+      "command": "bun run validate:release",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    },
+    {
+      "label": "🏗 build",
       "type": "shell",
       "command": "bun run build",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": [],
-      "group": "build"
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "👁 preview",
+      "type": "shell",
+      "command": "bun run preview",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "isBackground": true
     },
     {
       "label": "📜 logs",
       "type": "shell",
       "command": "bun run tooling:logs",
+      "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     }
   ]

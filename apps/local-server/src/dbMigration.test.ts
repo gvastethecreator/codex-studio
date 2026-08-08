@@ -26,6 +26,7 @@ describe('database migrations', () => {
       projectContractRemoved: true,
       indexesPresent: true,
       foreignKeysValid: true,
+      referencingRowsPreserved: true,
       transactionRolledBack: true,
       recoverableCheckpoint: true,
       summaryProjection: true,

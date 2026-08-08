@@ -9,12 +9,20 @@ lerna-debug.log*
 
 # Temp / scratch
 .local/
+.cache/
+.bun/
 .tmp
 .tmp-*
 .tmp_*
 tmp_*
 tmp/
 $null
+*.tmp
+*.temp
+*.pid
+*.pid.lock
+*.orig
+*.rej
 *.tsbuildinfo
 .scratch/
 
@@ -22,6 +30,7 @@ $null
 *.sqlite
 *.sqlite-shm
 *.sqlite-wal
+*.sqlite-journal
 
 # Dependencies / build / coverage
 node_modules
@@ -30,6 +39,9 @@ dist-ssr
 .vite
 .vite-plus/
 coverage
+playwright-report/
+test-results/
+blob-report/
 output/
 outputs/
 generated/
@@ -91,6 +103,8 @@ react-doctor-*.json
 !.vscode/launch.json
 .idea
 .DS_Store
+Thumbs.db
+Desktop.ini
 *.suo
 *.ntvs*
 *.njsproj

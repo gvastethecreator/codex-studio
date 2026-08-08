@@ -516,7 +516,7 @@ function CarouselTopBar({
   );
 }
 
-export const ImageCarousel: React.FC<ImageCarouselProps> = ({
+const ImageCarousel: React.FC<ImageCarouselProps> = ({
   activeImage,
   allImages,
   activeGenerationConfig,

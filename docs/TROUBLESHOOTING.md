@@ -100,6 +100,24 @@ Check: change `STUDIO_SERVER_PORT` or `STUDIO_CODEX_WS_PORT` in `.env.local`.
 terminates wrapper process trees so Vite or Codex children do not retain the
 ports after a failed start.
 
+### `studio:init` reports a foreign-key failure
+
+Symptoms: SQLite reports `FOREIGN KEY constraint failed` while a migration
+rebuilds `jobs` or another parent table.
+
+Current migrations preserve child rows and validate `foreign_key_check` before
+committing. Stop the local server, update the checkout and dependencies, then
+rerun:
+
+```bash
+bun install --frozen-lockfile
+bun run studio:init
+```
+
+Do not delete `.studio/studio.sqlite` to bypass the error. If it still fails,
+keep the database plus its `-wal` and `-shm` files together, report the exact
+stack, and restore from a copy only after the server is stopped.
+
 ## When Terminal Output Is Too Short
 
 If `check`, `lint`, `test`, or `build` fails and the terminal output is truncated:

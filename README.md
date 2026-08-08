@@ -3,7 +3,7 @@
 > Local-first image studio for creating, reviewing, and organizing AI images through your authenticated Codex/ChatGPT session.
 
 [![License: MIT](https://shieldcn.dev/badge/license-MIT-yellow.svg?variant=secondary&size=xs)](./LICENSE)
-[![Bun](https://shieldcn.dev/badge/runtime-Bun-black.svg?logo=bun&variant=branded&size=xs)](https://bun.sh)
+[![Bun](https://shieldcn.dev/badge/runtime-Bun-black.svg?logo=bun&variant=branded&size=xs)](https://bun.com)
 [![TypeScript](https://shieldcn.dev/badge/TypeScript-blue.svg?logo=typescript&variant=branded&size=xs)](https://www.typescriptlang.org/)
 [![Status](https://shieldcn.dev/badge/status-preview-purple.svg?variant=secondary&size=xs)](#status)
 [![PRs Welcome](https://shieldcn.dev/badge/PRs-welcome-green.svg?variant=secondary&size=xs)](./CONTRIBUTING.md)
@@ -71,7 +71,7 @@ Then open:
 
 ## Configuration
 
-Run `bun run studio:init` to create local defaults. For manual setup, copy `.env.example` to `.env.local`.
+Run `bun run studio:init` to create local defaults and apply pending SQLite migrations. The command is safe to rerun and does not replace an existing Studio Library. For manual setup, copy `.env.example` to `.env.local`.
 
 By default, the Studio Library lives under your OS home directory as `AI-Studio-Library`. Override it only when you want a custom absolute path:
 
@@ -101,6 +101,10 @@ bun run validate:fast
 bun run validate
 bun run validate:release
 ```
+
+VS Code users can run the same commands from **Terminal -> Run Task**. The
+tracked task set includes `📦 deps`, `🧱 init`, `🚀 dev`, `🏗 build`, `🧪 test`,
+`✅ gate`, `🛡 release`, and focused UI/API tasks.
 
 Maintenance:
 

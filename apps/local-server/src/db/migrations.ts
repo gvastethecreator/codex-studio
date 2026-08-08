@@ -438,7 +438,7 @@ function rebuildAssetsWithoutRequiredProject(database: Database) {
     CREATE TABLE IF NOT EXISTS assets_workspace_authority (
       id TEXT PRIMARY KEY,
       project_id TEXT,
-      job_id TEXT NOT NULL,
+      job_id TEXT NOT NULL REFERENCES jobs(id),
       file_path TEXT NOT NULL,
       thumbnail_path TEXT,
       public_url TEXT NOT NULL,
@@ -504,6 +504,21 @@ export function migrateDatabase(database: Database) {
       }>
     ).map((row) => row.version),
   );
+  const requiresForeignKeySafeRebuild = !appliedVersions.has(5);
+  const foreignKeysWereEnabled =
+    (
+      database.query('PRAGMA foreign_keys').get() as {
+        foreign_keys: number;
+      }
+    ).foreign_keys === 1;
+
+  // SQLite checks the implicit DELETE from DROP TABLE immediately when a
+  // referenced parent is rebuilt. Disable enforcement outside the transaction,
+  // then require a clean relationship check before the migration can commit.
+  if (requiresForeignKeySafeRebuild && foreignKeysWereEnabled) {
+    database.run('PRAGMA foreign_keys = OFF');
+  }
+
   const applyPendingMigrations = database.transaction(() => {
     for (const migration of DATABASE_MIGRATIONS) {
       if (appliedVersions.has(migration.version)) continue;
@@ -512,9 +527,24 @@ export function migrateDatabase(database: Database) {
         .query('INSERT INTO schema_migrations (version, name, applied_at) VALUES (?, ?, ?)')
         .run(migration.version, migration.name, now());
     }
+
+    if (requiresForeignKeySafeRebuild) {
+      const violations = database.query('PRAGMA foreign_key_check').all();
+      if (violations.length > 0) {
+        throw new Error(
+          `Database migration would leave ${violations.length} invalid foreign key relationship(s).`,
+        );
+      }
+    }
   });
 
-  applyPendingMigrations();
+  try {
+    applyPendingMigrations();
+  } finally {
+    if (requiresForeignKeySafeRebuild && foreignKeysWereEnabled) {
+      database.run('PRAGMA foreign_keys = ON');
+    }
+  }
 }
 
 export function migrateDb(db?: Database) {

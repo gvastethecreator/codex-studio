@@ -4,6 +4,8 @@ Codex Studio keeps public and agent-facing documentation in the repository. Acce
 
 ## Public Docs
 
+- [Development guide](./DEV_GUIDE.md)
+- [Tooling and dependency maintenance](./TOOLING.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 - [Desktop app notes](./ELECTRON.md)
 - [Style preset authoring](./STYLE_PRESET_AUTHORING.md)
