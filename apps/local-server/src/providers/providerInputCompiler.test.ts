@@ -4,7 +4,7 @@ import { createGenerationTaskSpec } from '../../../../packages/shared/src';
 import { compileProviderInputForJob, hasProviderInputCompiler } from './providerInputCompiler';
 
 describe('providerInputCompiler', () => {
-  it('compiles built-in providers through one registry seam', () => {
+  it('compiles every supported built-in provider', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-1',
       task: 'texture_generate',

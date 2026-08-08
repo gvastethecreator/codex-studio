@@ -101,7 +101,7 @@ If `rg` fails on Windows in this checkout, use PowerShell `Get-ChildItem` and `S
 - Job kinds should describe provider-independent tasks.
 - Provider-specific options belong in provider config/input, not generic task names.
 - New behavior needs tests. Use `vite-plus/test`.
-- Keep Visual Batch as compatibility only. Durable image truth is Catalog Entry.
+- Keep the legacy workspace snapshot shape export-only. Durable and UI image truth is Catalog Entry.
 
 ## Validation Closeout
 

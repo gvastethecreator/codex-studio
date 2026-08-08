@@ -16,7 +16,7 @@ export interface StudioGridSurfaceProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<GeneratedImageWithConfig['config']>,
-    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
+    options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
   ) => void;
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
   handleLoadRecipe: (config: GeneratedImageWithConfig['config']) => void;

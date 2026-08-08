@@ -113,7 +113,7 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
               activeRecipeAliasId={activeRecipeAliasId}
             />
           ) : routeView === 'studio' ? (
-            <RouteStudioPage controller={studioPageController} />
+            <RouteStudioPage {...studioPageController.grid} />
           ) : (
             <RouteRecipesView
               onPreviewRecipe={handlePreviewRecipe}

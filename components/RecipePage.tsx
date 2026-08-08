@@ -21,7 +21,7 @@ export interface RecipePageProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
+    options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
   ) => void;
   isGenerating: boolean;
   imagesWithConfig: GeneratedImageWithConfig[];

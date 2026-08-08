@@ -4,7 +4,7 @@ import type { AppPageView } from '../hooks/useHashRouter';
 import type { RecipeId } from '../types';
 import type { RecipePage as RecipePageComponent } from '../components/RecipePage';
 import type { RecipesView as RecipesViewComponent } from '../components/RecipesView';
-import type { StudioPage as StudioPageComponent } from '../components/StudioPage';
+import type { StudioGridSurface as StudioGridSurfaceComponent } from '../components/studio/StudioGridSurface';
 import { preloadRecipeComponent } from './recipeRouteModules';
 import type { RoutePreloadSurface } from './routePreloadBudget';
 
@@ -41,8 +41,12 @@ export const recipesViewSurface = createPreloadableSurface<
 >(() => import('../components/RecipesView').then((module) => ({ default: module.RecipesView })));
 
 export const studioPageSurface = createPreloadableSurface<
-  React.ComponentProps<typeof StudioPageComponent>
->(() => import('../components/StudioPage').then((module) => ({ default: module.StudioPage })));
+  React.ComponentProps<typeof StudioGridSurfaceComponent>
+>(() =>
+  import('../components/studio/StudioGridSurface').then((module) => ({
+    default: module.StudioGridSurface,
+  })),
+);
 
 export function preloadStudioViewportRoute(routeView: AppPageView, activeRecipe: RecipeId | null) {
   if (routeView === 'recipe' && activeRecipe) {

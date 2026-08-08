@@ -29,6 +29,13 @@ describe('providerCapabilities', () => {
         }),
       ]),
     );
+    expect(report.providers.map((provider) => provider.providerId)).toEqual([
+      'codex',
+      'google',
+      'fal',
+      'comfy',
+      'dry_run',
+    ]);
     expect(JSON.stringify(report)).not.toContain('secret-google-key');
   });
 

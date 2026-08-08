@@ -142,7 +142,7 @@ interface StylesRecipeProps {
   onGenerate: (
     prompt?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { force?: boolean; preventModal?: boolean },
+    options?: { preventModal?: boolean },
   ) => void;
   isGenerating: boolean;
   images?: GeneratedImageWithConfig[];

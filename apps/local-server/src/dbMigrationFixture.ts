@@ -2,6 +2,7 @@ import { Database } from 'bun:sqlite';
 import {
   addAsset,
   LATEST_DATABASE_SCHEMA_VERSION,
+  listJobSummaries,
   listRecoverableJobs,
   migrateDatabase,
   updateJobFinalization,
@@ -94,6 +95,16 @@ try {
     'finalization_catalog_id',
   ];
   const columns = readColumnNames(database);
+  database.query('UPDATE jobs SET provider_id = ?, source_spec_json = ? WHERE id = ?').run(
+    'codex',
+    JSON.stringify({
+      recipeId: 'styles',
+      output: { aspectRatio: '2:3' },
+      metadata: { workspaceId: 'workspace-summary' },
+    }),
+    'job-sentinel',
+  );
+  const summary = listJobSummaries(database).find((job) => job.id === 'job-sentinel');
   const legacyAsset = addAsset(
     {
       projectId: 'project-sentinel',
@@ -180,6 +191,11 @@ try {
             job.finalization?.state === 'asset_recorded' &&
             job.finalization.assetId === legacyAsset.id,
         ),
+      summaryProjection:
+        summary?.workspaceId === 'workspace-summary' &&
+        summary.recipeId === 'styles' &&
+        summary.aspectRatio === '2:3' &&
+        summary.promptPreview === 'sentinel prompt',
       schemaVersion: LATEST_DATABASE_SCHEMA_VERSION,
     }),
   );

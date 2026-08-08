@@ -1,87 +1,45 @@
 import { describe, expect, it } from 'vite-plus/test';
-import type { QueueJob } from '../types';
 
-const JOB_CREATED_AT = new Date('2025-01-01T00:00:00Z').getTime();
+import { summarizePersistentJobs } from '../lib/persistentJobSummary';
+import type { ShellActivityJob } from '../lib/shellActivityJob';
 
-function createJob(overrides: Partial<QueueJob> = {}): QueueJob {
+function job(id: string, status: ShellActivityJob['status']): ShellActivityJob {
   return {
-    id: 'job-1',
-    prompt: 'test prompt',
+    id,
+    projectId: 'project-1',
+    kind: 'image_generate',
+    providerId: 'codex',
+    status,
+    execution: null,
+    originalPrompt: 'Prompt',
+    error: null,
+    promptPreview: 'Prompt',
     workspaceId: 'default',
-    config: {} as import('../types').ImageGenerationConfig,
-    createdAt: JOB_CREATED_AT,
-    status: 'pending',
-    ...overrides,
+    recipeId: null,
+    aspectRatio: '1:1',
+    createdAt: '2026-07-18T00:00:00.000Z',
+    updatedAt: '2026-07-18T00:00:00.000Z',
+    completedAt: status === 'completed' ? '2026-07-18T00:00:01.000Z' : null,
+    source: 'backend_summary',
   };
 }
 
-function getQueueStats(jobs: QueueJob[]) {
-  return {
-    pending: jobs.filter((j) => j.status === 'pending').length,
-    processing: jobs.filter((j) => j.status === 'processing').length,
-    completed: jobs.filter((j) => j.status === 'completed').length,
-    failed: jobs.filter(
-      (j) => j.status === 'failed' || j.status === 'cancelled' || j.status === 'needs_review',
-    ).length,
-    total: jobs.length,
-  };
-}
-
-function hasPendingOrProcessing(jobs: QueueJob[]) {
-  return jobs.some((j) => j.status === 'pending' || j.status === 'processing');
-}
-
-function hasCompletedOrFailed(jobs: QueueJob[]) {
-  return jobs.some(
-    (j) =>
-      j.status === 'completed' ||
-      j.status === 'failed' ||
-      j.status === 'cancelled' ||
-      j.status === 'needs_review',
-  );
-}
-
-describe('QueuePanel stats', () => {
-  it('counts pending, processing, completed, and failed jobs', () => {
-    const jobs = [
-      createJob({ id: 'j1', status: 'pending' }),
-      createJob({ id: 'j2', status: 'processing' }),
-      createJob({ id: 'j3', status: 'completed' }),
-      createJob({ id: 'j4', status: 'failed' }),
-      createJob({ id: 'j5', status: 'cancelled' }),
-      createJob({ id: 'j6', status: 'needs_review' }),
-    ];
-
-    const stats = getQueueStats(jobs);
-
-    expect(stats).toEqual({
-      pending: 1,
-      processing: 1,
-      completed: 1,
-      failed: 3,
-      total: 6,
-    });
-  });
-
-  it('returns correct clear-eligible flag', () => {
-    expect(hasCompletedOrFailed([])).toBe(false);
-    expect(hasCompletedOrFailed([createJob({ status: 'pending' })])).toBe(false);
-    expect(hasCompletedOrFailed([createJob({ status: 'completed' })])).toBe(true);
-    expect(hasCompletedOrFailed([createJob({ status: 'failed' })])).toBe(true);
-    expect(hasCompletedOrFailed([createJob({ status: 'cancelled' })])).toBe(true);
-    expect(hasCompletedOrFailed([createJob({ status: 'needs_review' })])).toBe(true);
-  });
-
-  it('returns correct active-queue flag', () => {
-    expect(hasPendingOrProcessing([])).toBe(false);
-    expect(hasPendingOrProcessing([createJob({ status: 'completed' })])).toBe(false);
-    expect(hasPendingOrProcessing([createJob({ status: 'pending' })])).toBe(true);
-    expect(hasPendingOrProcessing([createJob({ status: 'processing' })])).toBe(true);
+describe('summarizePersistentJobs', () => {
+  it('projects backend lifecycle states without browser queue state', () => {
     expect(
-      hasPendingOrProcessing([
-        createJob({ id: 'j1', status: 'completed' }),
-        createJob({ id: 'j2', status: 'processing' }),
+      summarizePersistentJobs([
+        job('queued', 'queued'),
+        job('running', 'running'),
+        job('completed', 'completed'),
+        job('failed', 'failed'),
+        job('review', 'needs_review'),
       ]),
-    ).toBe(true);
+    ).toEqual({
+      total: 5,
+      queued: 1,
+      running: 1,
+      completed: 1,
+      attention: 2,
+    });
   });
 });

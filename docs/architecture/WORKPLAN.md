@@ -6,6 +6,8 @@ Accepted: 2026-07-10
 
 Completed: 2026-07-10
 
+Follow-up: the [2026-07-18 simplification](./simplification-2026-07-18.md) removes the remaining session Browser Queue and compatibility aliases after direct caller and persistence proof. This workplan remains the historical record for the earlier expand-contract phase.
+
 ## Sources
 
 - [Architecture recommendations closure (2026-07-14)](./architecture-recommendations-2026-07-14.md) — active follow-up mission

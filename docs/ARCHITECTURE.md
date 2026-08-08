@@ -32,8 +32,8 @@ graph TD
 - **Codex-first:** the default image workflow uses the user's local Codex/ChatGPT session through `codex app-server`.
 - **Local-first:** assets, SQLite state, transcripts, thumbnails, and logs live in the Studio Library, outside the repo.
 - **Library-backed:** the repo contains source code and public assets; generated user data belongs in the Studio Library.
-- **Provider-aware:** optional providers plug in behind backend adapters without changing the product center.
-- **Catalog-first:** durable image truth is the Image Catalog; legacy Visual Batch data is compatibility only.
+- **Provider-aware:** supported built-in providers execute behind backend adapters without changing the product center.
+- **Catalog-first:** durable and UI image truth is the Image Catalog; the former workspace snapshot shape is produced only on explicit export.
 
 ## Core Frontend Seams
 
@@ -45,8 +45,8 @@ graph TD
 - `services/localStudioService.ts` is the frontend HTTP adapter to the local backend.
 - `services/studioEventSource.ts` owns the shared SSE connection.
 - `services/localGenerationRun.ts` creates Persistent Jobs, waits for terminal state, and returns catalog-derived results.
-- `services/localGenerationVisualBatchCompat.ts` is the explicit legacy Visual Batch compatibility edge.
 - `lib/studioCatalogView.ts` and `lib/studioCatalogImageAdapter.ts` materialize UI images from Catalog Entries.
+- `lib/studioLegacyWorkspaceSnapshotExport.ts` derives the export-only legacy workspace JSON shape from Catalog Entries; there is no browser batch store, import, or recovery path.
 - `lib/catalogRenderBudget.ts`, `lib/catalogCardActionSurface.ts`, and `lib/imageGridPresentation.ts` keep hot Catalog rendering bounded while preserving card animation, hover/focus commands, and initial-viewport image discovery.
 - `lib/routePreloadBudget.ts` owns idle and intent-based route preloads so Home does not import every recipe surface before user intent.
 - `lib/buildStudioHeaderToolbarProps.ts` and `lib/commandCenterProjection.ts` project Command Center state.
@@ -65,20 +65,21 @@ graph TD
 - `apps/local-server/src/eventStreamRoutes.ts` owns SSE.
 - `apps/local-server/src/libraryRoutes.ts` owns local asset serving.
 - `apps/local-server/src/settingsRoutes.ts` owns editable Studio Settings.
-- `apps/local-server/src/providerRoutes.ts` and `apps/local-server/src/providers/providerRegistry.ts` own provider facts, capability reads, preflight, compilers, and executor routing.
+- `apps/local-server/src/providerCapabilities.ts` owns the fixed non-secret capability catalog; `apps/local-server/src/providers/runtimeConfig.ts` owns external runtime preflight.
+- `apps/local-server/src/providers/providerInputCompiler.ts`, `apps/local-server/src/providers/externalProvider.ts`, and `apps/local-server/src/workerRouting.ts` use explicit built-in dispatch for compilation, execution, and worker selection.
 - `apps/local-server/src/outputSourceRoutes.ts` owns External Output Source registration and import.
 
 ## Generation Flow
 
 1. The user works in the UI with a prompt, recipe, attachments, provider choice, batch count, and workspace.
-2. `useGenerationPipeline` delegates execution to the local generation runner.
+2. `useGenerationPipeline` delegates directly to the local generation runner; no browser queue owns or mirrors job lifecycle.
 3. The runner resolves Recipe Module data, builds provider-independent Generation Task Specs, and creates Persistent Jobs.
 4. The backend validates intake, captures an immutable Library Context, resolves effective provider execution policy, persists job state, and enqueues work.
 5. The Provider Boundary compiles the Generation Task Spec into provider-specific input.
 6. The Codex provider runs turns through `codex app-server`; external providers run only when concrete preflight passes.
 7. Completed jobs write Local Assets, Catalog Entries, transcripts, and logs into the Studio Library.
 8. The UI refreshes `/api/catalog` by job id and renders catalog-derived images.
-9. Legacy Visual Batch compatibility is built only at remaining export/recovery/generated-append edges.
+9. The legacy workspace JSON shape is derived from current Catalog Entries only when the user explicitly exports it.
 
 ## Persistence
 
@@ -88,7 +89,7 @@ graph TD
 - The Studio Library defaults to a local user folder: `C:\Users\<user>\AI-Studio-Library` on Windows, `/Users/<user>/AI-Studio-Library` on macOS, or `/home/<user>/AI-Studio-Library` on Linux.
 - Internal Studio Library state lives under `.studio/`.
 - Generated outputs, thumbnails, exports, and trash assets live under `outputs/`.
-- Browser storage is bounded compatibility state, not durable truth.
+- Browser storage contains bounded transient preferences and input state, not job or image truth.
 - External Output Sources are read-only candidates until selected files are explicitly imported as Local Assets.
 
 ## Readiness

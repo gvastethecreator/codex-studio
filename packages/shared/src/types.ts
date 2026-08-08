@@ -229,6 +229,9 @@ export interface JobSummary {
   projectId: string;
   kind: JobKind;
   providerId: GenerationProviderId | null;
+  workspaceId: string | null;
+  recipeId: string | null;
+  aspectRatio: string | null;
   status: JobStatus;
   execution: JobExecutionOptions | null;
   error: string | null;

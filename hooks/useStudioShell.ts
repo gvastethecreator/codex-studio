@@ -15,7 +15,7 @@ import { useStudioActionConfirmations } from './useStudioActionConfirmations';
 import { useStudioActivitySession } from './useStudioActivitySession';
 import { useStudioCatalogController } from './useCatalog';
 import { useStudioGallery } from './useStudioGallery';
-import { useStudioGenerationSession } from './useStudioGenerationSession';
+import { useStudioGenerationActions } from './useStudioGenerationActions';
 import { useStudioNavigation } from './useStudioNavigation';
 import { buildStudioShellOverlayController } from './useStudioOverlayController';
 import { useStudioReset } from './useStudioReset';
@@ -27,7 +27,6 @@ import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
 import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
 import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
-import { countUnlinkedActiveServerJobs } from '../lib/browserQueueBackendSync';
 import {
   buildStudioPageController,
   buildStudioViewportController,
@@ -146,7 +145,7 @@ export function useStudioShell(): StudioShellController {
     closeDebugPanel,
   });
 
-  const { exportLegacyVisualBatchSnapshot } = useVaultTransfer({
+  const { exportLegacyWorkspaceSnapshot } = useVaultTransfer({
     catalogView: activeCatalog.view,
     addToast,
     log,
@@ -215,34 +214,10 @@ export function useStudioShell(): StudioShellController {
     },
   });
 
-  const generationSession = useStudioGenerationSession({
-    activeWorkspaceId,
-    config,
-    pipeline,
-    modal,
-    addToast,
-    closeOverlay,
-    closeModal: handleCloseModal,
-    onRecipeSelection: handleRecipeSelection,
-    onViewChange: handleViewChange,
-    setIsEditorOpen: viewState.editor.setIsOpen,
-    setImageToEdit: viewState.editor.setImage,
-    backendJobs: studioRuntime.activity.studioJobs,
-  });
-  const {
-    jobs,
-    retry,
-    cancelJob,
-    removeJob,
-    clearCompleted,
-    resetQueue,
-    isResting,
-    cancelPersistentJob,
-  } = generationSession.queue;
-  const unlinkedActiveServerJobCount = useMemo(
-    () => countUnlinkedActiveServerJobs(studioRuntime.activity.studioJobs, jobs),
-    [studioRuntime.activity.studioJobs, jobs],
-  );
+  const onEditSettled = useCallback(() => {
+    viewState.editor.setIsOpen(false);
+    viewState.editor.setImage(null);
+  }, [viewState.editor.setImage, viewState.editor.setIsOpen]);
   const {
     isEnhancingPrompt,
     isEditingImage,
@@ -251,12 +226,25 @@ export function useStudioShell(): StudioShellController {
     handleExecuteEdit,
     handleLoadRecipe,
     resetGenerationUi,
-  } = generationSession.actions;
+  } = useStudioGenerationActions({
+    generationConfig: config.generationConfig,
+    activeWorkspaceId,
+    setGenerationConfig: config.setGenerationConfig,
+    updateGenerationConfig: config.updateGenerationConfig,
+    executeEdit: pipeline.executeEdit,
+    executeGeneration: pipeline.executeGeneration,
+    addToast,
+    closeModal: handleCloseModal,
+    closeOverlay,
+    isModalOpen: modal.isModalOpen,
+    onRecipeSelection: handleRecipeSelection,
+    onViewChange: handleViewChange,
+    onEditSettled,
+  });
 
   const { isResettingStudio, resetStudio } = useStudioReset({
     addToast,
     resetStudioState,
-    resetQueue,
     refreshRuntime: studioRuntime.maintenance.refreshRuntime,
     clearGenerationState: resetGenerationUi,
     clearUiState: clearStudioUiState,
@@ -423,7 +411,7 @@ export function useStudioShell(): StudioShellController {
           onRetryJob: activitySession.selection.retryJob,
         },
         vault: {
-          handleExportLegacyVisualBatchSnapshot: exportLegacyVisualBatchSnapshot,
+          handleExportLegacyWorkspaceSnapshot: exportLegacyWorkspaceSnapshot,
         },
         isSettingsModalOpen: viewState.overlays.settings.isOpen,
         settingsModule: {
@@ -490,7 +478,7 @@ export function useStudioShell(): StudioShellController {
       activitySession.selection.inspectJob,
       activitySession.selection.clearSelectedJob,
       activitySession.selection.retryJob,
-      exportLegacyVisualBatchSnapshot,
+      exportLegacyWorkspaceSnapshot,
       viewState.overlays.settings.isOpen,
       settingsSurfaceModule,
       catalogVisualGroupCount,
@@ -530,11 +518,6 @@ export function useStudioShell(): StudioShellController {
       handleOpenModal,
       config.handleAddToContext,
     ],
-  );
-
-  const cancelPersistentJobCb = useCallback(
-    (jobId: string) => void cancelPersistentJob(jobId),
-    [cancelPersistentJob],
   );
 
   const studioPageController = useMemo(
@@ -578,17 +561,11 @@ export function useStudioShell(): StudioShellController {
         operations: {
           isQueueOpen: viewState.queue.isOpen,
           setIsQueueOpen: viewState.queue.setIsOpen,
-          jobs,
           queueResults,
           studioJobs: studioRuntime.activity.studioJobs,
           selectedStudioJobId: activitySession.selection.selectedStudioJobId,
-          retry,
           retryPersistentJob: activitySession.selection.retryJob,
-          cancelJob,
-          cancelPersistentJob: cancelPersistentJobCb,
-          removeJob,
-          clearCompleted,
-          isResting,
+          cancelPersistentJob: activitySession.selection.cancelJob,
           onInspectJob: activitySession.selection.inspectJob,
         },
       }),
@@ -626,17 +603,11 @@ export function useStudioShell(): StudioShellController {
       activeCatalog.refresh,
       viewState.queue.isOpen,
       viewState.queue.setIsOpen,
-      jobs,
       queueResults,
       studioRuntime.activity.studioJobs,
       activitySession.selection.selectedStudioJobId,
-      retry,
       activitySession.selection.retryJob,
-      cancelJob,
-      cancelPersistentJobCb,
-      removeJob,
-      clearCompleted,
-      isResting,
+      activitySession.selection.cancelJob,
       activitySession.selection.inspectJob,
     ],
   );
@@ -749,8 +720,7 @@ export function useStudioShell(): StudioShellController {
           queue: {
             statusItems: studioRuntime.status.diagnostics.statusItems,
             queueResultPreviews,
-            queueJobCount: jobs.length,
-            activeServerJobCount: unlinkedActiveServerJobCount,
+            activeJobCount: studioRuntime.activity.activeServerJobCount,
             isQueueOpen: viewState.queue.isOpen,
             setIsQueueOpen: viewState.queue.setIsOpen,
           },
@@ -786,8 +756,7 @@ export function useStudioShell(): StudioShellController {
       studioSettings.data.providerDomain.runtimePreflight,
       studioRuntime.status.diagnostics.statusItems,
       queueResultPreviews,
-      jobs.length,
-      unlinkedActiveServerJobCount,
+      studioRuntime.activity.activeServerJobCount,
       viewState.queue.isOpen,
       viewState.queue.setIsOpen,
       viewState.overlays.settings.open,

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
 import { collectWorkspaceCatalogImageIds } from '../hooks/useCatalog';
 import { createCatalogView, selectCatalogEntries } from './studioCatalogView';
-import { buildLegacyVisualBatchSnapshotFromCatalog } from './studioLegacyVisualSnapshotExport';
+import { buildLegacyWorkspaceSnapshotFromCatalog } from './studioLegacyWorkspaceSnapshotExport';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'image-1';
@@ -44,13 +44,13 @@ describe('studioCatalogView', () => {
 
     expect(view.entries.map((entry) => entry.id)).toEqual(['newer', 'older']);
     expect(view.byId.get('newer')?.batchId).toBe('batch-a');
-    expect(buildLegacyVisualBatchSnapshotFromCatalog(view)).toHaveLength(1);
+    expect(buildLegacyWorkspaceSnapshotFromCatalog(view)).toHaveLength(1);
     expect(
-      buildLegacyVisualBatchSnapshotFromCatalog(view)[0].images.map((image) => image.id),
+      buildLegacyWorkspaceSnapshotFromCatalog(view)[0].images.map((image) => image.id),
     ).toEqual(['newer', 'older']);
   });
 
-  it('filters Catalog Entries without forcing callers through legacy Visual Batch state', () => {
+  it('filters Catalog Entries without forcing callers through legacy browser batch state', () => {
     const view = createCatalogView([
       catalogImage({ id: 'active-favorite', isFavorite: true, isDeleted: false }),
       catalogImage({ id: 'deleted-favorite', isFavorite: true, isDeleted: true }),

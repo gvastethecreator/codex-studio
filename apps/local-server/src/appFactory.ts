@@ -27,7 +27,6 @@ import {
 import { createWorkerController, type WorkerController, type WorkerStatus } from './worker';
 import { resolveJobCatalogContext } from './workerCatalogContext';
 import { resolveWorkerRuntimeTarget } from './workerRouting';
-import { getCodexAccountStatus } from './codex/accountStatus';
 import {
   ensureAppServer,
   getAppServerDiagnostics,
@@ -224,7 +223,6 @@ export async function createStudioApp(
     createCodexRoutes({
       readCodexModelCatalog,
       readLocalCodexSession,
-      readCodexAccountStatus: getCodexAccountStatus,
     }),
   );
 
@@ -274,10 +272,10 @@ export async function createStudioApp(
   app.route(
     '/api/jobs',
     createJobRoutes({
-      listJobs: () => dbStore.listJobSummaries?.() ?? dbStore.listJobs(),
+      listJobs: () => dbStore.listJobSummaries(),
       getJob: (jobId) => dbStore.getJob(jobId),
       getJobDetail,
-      requeueJob: (jobId) => dbStore.requeueJob?.(jobId) ?? null,
+      requeueJob: (jobId) => dbStore.requeueJob(jobId),
       cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),
       ensureDefaultProjectId: () => dbStore.ensureDefaultProject().id,
       createJobId: () => randomUUID(),

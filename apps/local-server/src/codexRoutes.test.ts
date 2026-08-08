@@ -15,14 +15,9 @@ describe('codexRoutes', () => {
     const readLocalCodexSession = vi.fn(async () => {
       throw new Error('readLocalCodexSession should not be called');
     });
-    const readCodexAccountStatus = vi.fn(async () => {
-      throw new Error('readCodexAccountStatus should not be called');
-    });
-
     const routes = createCodexRoutes({
       readCodexModelCatalog,
       readLocalCodexSession,
-      readCodexAccountStatus,
     });
 
     const response = await routes.request('/models');
@@ -53,15 +48,9 @@ describe('codexRoutes', () => {
       throw new Error('readCodexModelCatalog should not be called');
     });
     const readLocalCodexSession = vi.fn(async () => sessionPayload);
-    const readCodexAccountStatus = vi.fn(async () => ({
-      ...sessionPayload,
-      source: 'fallback' as const,
-    }));
-
     const routes = createCodexRoutes({
       readCodexModelCatalog,
       readLocalCodexSession,
-      readCodexAccountStatus,
     });
 
     const sessionResponse = await routes.request('/session');
@@ -70,11 +59,8 @@ describe('codexRoutes', () => {
 
     const accountResponse = await routes.request('/account');
     expect(accountResponse.status).toBe(200);
-    await expect(accountResponse.json()).resolves.toEqual(
-      expect.objectContaining({ source: 'fallback' }),
-    );
+    await expect(accountResponse.json()).resolves.toEqual(sessionPayload);
 
-    expect(readLocalCodexSession).toHaveBeenCalledTimes(1);
-    expect(readCodexAccountStatus).toHaveBeenCalledTimes(1);
+    expect(readLocalCodexSession).toHaveBeenCalledTimes(2);
   });
 });

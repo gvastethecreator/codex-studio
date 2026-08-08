@@ -44,6 +44,9 @@ describe('shellActivityJob', () => {
       projectId: job.projectId,
       kind: job.kind,
       providerId: job.providerId,
+      workspaceId: 'workspace-summary',
+      recipeId: 'styles',
+      aspectRatio: '2:3',
       status: job.status,
       execution: job.execution,
       error: job.error,
@@ -62,8 +65,9 @@ describe('shellActivityJob', () => {
     });
     expect(summary).toMatchObject({
       promptPreview: 'summary prompt',
-      workspaceId: null,
-      aspectRatio: null,
+      workspaceId: 'workspace-summary',
+      recipeId: 'styles',
+      aspectRatio: '2:3',
       source: 'backend_summary',
     });
   });

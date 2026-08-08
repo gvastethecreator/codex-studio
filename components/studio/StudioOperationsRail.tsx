@@ -2,7 +2,6 @@ import React from 'react';
 
 import type { StudioQueueResultPreview } from '../../lib/studioQueueResults';
 import type { ShellActivityJob as StudioJob } from '../../lib/shellActivityJob';
-import type { QueueJob } from '../../types';
 
 const QueuePanel = React.lazy(() =>
   import('../QueuePanel').then((module) => ({ default: module.QueuePanel })),
@@ -13,17 +12,11 @@ export interface StudioOperationsRailProps {
   isModalOpen: boolean;
   isQueueOpen: boolean;
   setIsQueueOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  jobs: QueueJob[];
   queueResults: StudioQueueResultPreview[];
   studioJobs: StudioJob[];
   selectedStudioJobId: string | null;
-  retry: (jobId: string) => void;
   retryPersistentJob?: (jobId: string) => void;
-  cancelJob: (jobId: string) => void;
   cancelPersistentJob: (jobId: string) => void;
-  removeJob: (jobId: string) => void;
-  clearCompleted: () => void;
-  isResting: boolean;
   onInspectJob: (jobId: string) => void;
 }
 
@@ -32,17 +25,11 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
   isModalOpen,
   isQueueOpen,
   setIsQueueOpen,
-  jobs,
   queueResults,
   studioJobs,
   selectedStudioJobId,
-  retry,
   retryPersistentJob,
-  cancelJob,
   cancelPersistentJob,
-  removeJob,
-  clearCompleted,
-  isResting,
   onInspectJob,
 }) => {
   if (isModalOpen) {
@@ -69,18 +56,12 @@ export const StudioOperationsRail: React.FC<StudioOperationsRailProps> = ({
         }
       >
         <QueuePanel
-          jobs={jobs}
           results={queueResults}
           serverJobs={studioJobs}
           selectedJobId={selectedStudioJobId}
-          onRetry={retry}
           onRetryServerJob={retryPersistentJob}
-          onCancel={cancelJob}
           onCancelServerJob={cancelPersistentJob}
-          onRemove={removeJob}
-          onClearCompleted={clearCompleted}
           onInspectJob={onInspectJob}
-          isResting={isResting}
           onClose={() => setIsQueueOpen(false)}
         />
       </React.Suspense>

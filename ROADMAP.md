@@ -5,7 +5,7 @@ Codex Studio is moving toward a polished open-source preview while staying local
 ## Current Focus
 
 1. Make first run easier to understand and recover.
-2. Finish the catalog-first transition for generated assets.
+2. Keep generated assets catalog-first and generation lifecycle persistent-job-first.
 3. Improve diagnostics for jobs, storage, providers, and Codex session readiness.
 4. Keep the desktop path credible without making packaging the center of the project.
 5. Prepare a small, presentable release candidate.
@@ -15,6 +15,7 @@ Codex Studio is moving toward a polished open-source preview while staying local
 - Local assets, logs, transcripts, and SQLite state live in a Studio Library outside the repo.
 - The main flow runs through `codex app-server` and does not require `OPENAI_API_KEY`.
 - Jobs, events, transcripts, and catalog entries are traceable.
+- The browser renders Catalog Entries directly and observes one backend-owned Persistent Job lifecycle.
 - Generation Tasks and Generation Providers are separate concepts.
 - Recipe Modules and Style Preset Manifests are becoming the durable authoring surface.
 

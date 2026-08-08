@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
 import { createCatalogView } from './studioCatalogView';
-import { buildLegacyVisualBatchSnapshotFromCatalog } from './studioLegacyVisualSnapshotExport';
+import { buildLegacyWorkspaceSnapshotFromCatalog } from './studioLegacyWorkspaceSnapshotExport';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'image-1';
@@ -34,14 +34,14 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   };
 }
 
-describe('studioLegacyVisualSnapshotExport', () => {
-  it('builds legacy Visual Batch snapshots from grouped Catalog Entries', () => {
+describe('studioLegacyWorkspaceSnapshotExport', () => {
+  it('builds legacy workspace snapshots from grouped Catalog Entries', () => {
     const view = createCatalogView([
       catalogImage({ id: 'newer', batchId: 'batch-a', createdAt: '2026-05-24T00:00:02.000Z' }),
       catalogImage({ id: 'older', batchId: 'batch-a', createdAt: '2026-05-24T00:00:01.000Z' }),
     ]);
 
-    const batches = buildLegacyVisualBatchSnapshotFromCatalog(view);
+    const batches = buildLegacyWorkspaceSnapshotFromCatalog(view);
 
     expect(batches).toHaveLength(1);
     expect(batches[0]).toEqual(

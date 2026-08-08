@@ -3,7 +3,6 @@ import type { ImageGenerationConfig } from '../types';
 export type StudioGenerationRequest =
   | {
       ok: true;
-      queuePrompt: string;
       finalConfig: ImageGenerationConfig;
       shouldClearComposerAttachments: boolean;
     }
@@ -47,7 +46,6 @@ export function prepareStudioGenerationRequest({
 
   return {
     ok: true,
-    queuePrompt: finalPrompt || 'Image-guided generation',
     finalConfig: {
       ...generationConfig,
       ...configOverrides,

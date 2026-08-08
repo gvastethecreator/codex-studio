@@ -2,14 +2,48 @@ import type {
   CodexRuntimeDoctorReport,
   GenerationProviderId,
   GenerationProviderRuntimePreflight,
+  ProviderRuntimeKind,
   ProviderSecretState,
 } from '../../../../packages/shared/src';
 import { readCodexRuntimeDoctor } from '../codexRuntimeDoctor';
-import {
-  listExternalExecutableProviderEntries,
-  type ExternalExecutableProviderId,
-  type ProviderRegistryEntry,
-} from './providerRegistry';
+
+export type ExternalExecutableProviderId = 'google' | 'fal' | 'comfy';
+
+interface ExternalProviderRuntimeDefinition {
+  providerId: ExternalExecutableProviderId;
+  runtimeKind: ProviderRuntimeKind;
+  secretEnvNames: readonly string[];
+  localRuntimeEnvNames: readonly string[];
+  requiredConfigEnvNames?: readonly string[];
+}
+
+const EXTERNAL_PROVIDER_RUNTIMES: ExternalProviderRuntimeDefinition[] = [
+  {
+    providerId: 'google',
+    runtimeKind: 'hosted_api',
+    secretEnvNames: ['GOOGLE_API_KEY', 'GEMINI_API_KEY', 'NANO_BANANA_API_KEY'],
+    localRuntimeEnvNames: [],
+  },
+  {
+    providerId: 'fal',
+    runtimeKind: 'hosted_api',
+    secretEnvNames: ['FAL_KEY', 'FAL_API_KEY'],
+    localRuntimeEnvNames: [],
+  },
+  {
+    providerId: 'comfy',
+    runtimeKind: 'local_workflow',
+    secretEnvNames: [],
+    localRuntimeEnvNames: ['COMFY_API_URL', 'COMFYUI_API_URL'],
+    requiredConfigEnvNames: ['COMFY_WORKFLOW_TEMPLATE_PATH'],
+  },
+];
+
+export function isExternalExecutableProviderId(
+  providerId: GenerationProviderId | null | undefined,
+): providerId is ExternalExecutableProviderId {
+  return providerId === 'google' || providerId === 'fal' || providerId === 'comfy';
+}
 
 export type ProviderRuntimePreflight = GenerationProviderRuntimePreflight & {
   providerId: ExternalExecutableProviderId;
@@ -31,14 +65,14 @@ function isValidLocalRuntimeUrl(value: string | undefined) {
   }
 }
 
-function resolveSecretState(secretEnvNames: string[], secretSource: string | null) {
+function resolveSecretState(secretEnvNames: readonly string[], secretSource: string | null) {
   if (secretEnvNames.length === 0) return 'not_required' satisfies ProviderSecretState;
   return secretSource ? 'configured' : 'missing';
 }
 
 function resolveLocalRuntimeState(
   env: Record<string, string | undefined>,
-  localRuntimeEnvNames: string[],
+  localRuntimeEnvNames: readonly string[],
   localRuntimeSource: string | null,
 ) {
   if (localRuntimeEnvNames.length === 0) return 'not_required';
@@ -47,7 +81,7 @@ function resolveLocalRuntimeState(
 }
 
 function createPreflight(
-  definition: ProviderRegistryEntry & { providerId: ExternalExecutableProviderId },
+  definition: ExternalProviderRuntimeDefinition,
   env: Record<string, string | undefined>,
 ): ProviderRuntimePreflight {
   const secretSource = firstConfiguredEnvName(env, definition.secretEnvNames);
@@ -97,9 +131,7 @@ function createPreflight(
 export function readExternalProviderRuntimePreflights(
   env: Record<string, string | undefined> = process.env,
 ) {
-  return listExternalExecutableProviderEntries().map((definition) =>
-    createPreflight(definition, env),
-  );
+  return EXTERNAL_PROVIDER_RUNTIMES.map((definition) => createPreflight(definition, env));
 }
 
 export function createCodexRuntimePreflight(

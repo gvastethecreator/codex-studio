@@ -41,6 +41,9 @@ function createJobSummary(job: Job): JobSummary {
     projectId: job.projectId,
     kind: job.kind,
     providerId: job.providerId,
+    workspaceId: 'workspace-1',
+    recipeId: job.sourceSpec?.recipeId ?? null,
+    aspectRatio: job.sourceSpec?.output.aspectRatio ?? null,
     status: job.status,
     execution: job.execution,
     error: job.error,
@@ -63,8 +66,8 @@ describe('localStudioSyncProjection', () => {
       expect.objectContaining({
         id: 'job-1',
         promptPreview: 'summary prompt',
-        workspaceId: null,
-        aspectRatio: null,
+        workspaceId: 'workspace-1',
+        aspectRatio: '3:2',
         source: 'backend_summary',
       }),
     ]);

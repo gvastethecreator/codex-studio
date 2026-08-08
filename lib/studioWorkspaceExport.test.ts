@@ -1,10 +1,7 @@
 import { describe, expect, it } from 'vite-plus/test';
 import type { CatalogImage } from '../packages/shared/src';
 import { createCatalogView } from './studioCatalogView';
-import {
-  buildLegacyVisualBatchSnapshot,
-  buildWorkspaceExportImages,
-} from './studioWorkspaceExport';
+import { buildWorkspaceExportImages, exportLegacyWorkspaceSnapshot } from './studioWorkspaceExport';
 
 function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
   const id = overrides.id ?? 'catalog-image';
@@ -38,7 +35,7 @@ function catalogImage(overrides: Partial<CatalogImage> = {}): CatalogImage {
 }
 
 describe('studioWorkspaceExport', () => {
-  it('builds legacy Visual Batch snapshots from Catalog View', () => {
+  it('builds legacy workspace snapshots from Catalog View', () => {
     const catalogView = createCatalogView([
       catalogImage({
         id: 'catalog-image',
@@ -47,7 +44,7 @@ describe('studioWorkspaceExport', () => {
       }),
     ]);
 
-    const snapshotBatches = buildLegacyVisualBatchSnapshot({ catalogView });
+    const snapshotBatches = exportLegacyWorkspaceSnapshot({ catalogView });
 
     expect(snapshotBatches.map((batch) => batch.id)).toEqual(['catalog-batch']);
     expect(snapshotBatches[0].images.map((image) => image.id)).toEqual(['catalog-image']);
@@ -69,7 +66,7 @@ describe('studioWorkspaceExport', () => {
   });
 
   it('returns empty arrays when no Catalog View is available', () => {
-    expect(buildLegacyVisualBatchSnapshot({})).toEqual([]);
+    expect(exportLegacyWorkspaceSnapshot({})).toEqual([]);
     expect(buildWorkspaceExportImages({})).toEqual([]);
   });
 });

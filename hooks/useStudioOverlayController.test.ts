@@ -98,8 +98,8 @@ describe('buildStudioOverlayController', () => {
         onClearSelectedJob: () => calls.push('clearSelectedJob'),
       },
       vault: {
-        handleExportLegacyVisualBatchSnapshot: () => {
-          calls.push('exportLegacyVisualBatchSnapshot');
+        handleExportLegacyWorkspaceSnapshot: () => {
+          calls.push('exportLegacyWorkspaceSnapshot');
         },
       },
       onboarding: {
@@ -247,7 +247,7 @@ describe('buildStudioOverlayController', () => {
     controller.systemOverlays.refreshOnboardingHealth();
     controller.systemOverlays.ensureAppServer();
     controller.systemOverlays.settingsModule.close();
-    controller.systemOverlays.handleExportLegacyVisualBatchSnapshot();
+    controller.systemOverlays.handleExportLegacyWorkspaceSnapshot();
     void controller.systemOverlays.settingsModule.settingsDomain.refresh();
     controller.workspaceOverlays.restoreAllFromTrash();
     controller.workspaceOverlays.emptyTrash();
@@ -261,7 +261,7 @@ describe('buildStudioOverlayController', () => {
       'refreshOnboardingHealth',
       'ensureAppServer',
       'closeSettings',
-      'exportLegacyVisualBatchSnapshot',
+      'exportLegacyWorkspaceSnapshot',
       'refreshSettings',
       'restoreAll:2',
       'emptyTrash:2',
@@ -439,8 +439,8 @@ describe('buildStudioOverlayController', () => {
         },
       },
       vault: {
-        handleExportLegacyVisualBatchSnapshot: () => {
-          calls.push('exportLegacyVisualBatchSnapshot');
+        handleExportLegacyWorkspaceSnapshot: () => {
+          calls.push('exportLegacyWorkspaceSnapshot');
         },
       },
       isSettingsModalOpen: true,

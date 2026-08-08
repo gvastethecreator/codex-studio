@@ -397,11 +397,17 @@ function mapJob(row: any): Job {
 }
 
 function mapJobSummary(row: any): JobSummary {
+  const sourceSpec = parseJson<GenerationTaskSpec | null>(row.source_spec_json, null);
+  const workspaceId = sourceSpec?.metadata?.workspaceId;
+
   return {
     id: row.id,
     projectId: row.project_id,
     kind: row.kind,
     providerId: row.provider_id,
+    workspaceId: typeof workspaceId === 'string' && workspaceId.trim() ? workspaceId : null,
+    recipeId: sourceSpec?.recipeId ?? null,
+    aspectRatio: sourceSpec?.output?.aspectRatio ?? null,
     status: row.status,
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
     error: row.error,
@@ -612,16 +618,12 @@ export function getJob(id: string, db?: Database) {
   return row ? mapJob(row) : null;
 }
 
-export function listJobs(db?: Database) {
-  return getDb(db).query('SELECT * FROM jobs ORDER BY created_at DESC LIMIT 100').all().map(mapJob);
-}
-
 export function listJobSummaries(db?: Database) {
   return getDb(db)
     .query(
       `
       SELECT
-        id, project_id, kind, provider_id, status, execution_json,
+        id, project_id, kind, provider_id, source_spec_json, status, execution_json,
         original_prompt, final_prompt_used, error,
         created_at, updated_at, completed_at
       FROM jobs

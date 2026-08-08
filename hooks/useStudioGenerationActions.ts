@@ -6,7 +6,6 @@ import type { Job as StudioJob } from '../packages/shared/src';
 import { detectRecipeFromContext } from '../utils/recipeUtils';
 
 type GenerateOptions = {
-  force?: boolean;
   preventModal?: boolean;
   useCurrentAttachments?: boolean;
   onJobCreated?: (job: StudioJob) => void;
@@ -49,13 +48,14 @@ interface UseStudioGenerationActionsProps {
     value: ImageGenerationConfig[K],
   ) => void;
   executeEdit: (original: Attachment, mask: string, prompt: string) => Promise<unknown>;
-  enqueue: (
-    prompt: string,
-    config: ImageGenerationConfig,
-    workspaceId: string,
-    force?: boolean,
-    onJobCreated?: (job: StudioJob) => void,
-  ) => string;
+  executeGeneration: (
+    config: Partial<ImageGenerationConfig>,
+    options?: {
+      preventModal?: boolean;
+      workspaceId?: string;
+      onJobCreated?: (job: StudioJob) => void;
+    },
+  ) => Promise<unknown>;
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   closeModal: () => void;
   closeOverlay: () => void;
@@ -75,7 +75,7 @@ export function useStudioGenerationActions({
   setGenerationConfig,
   updateGenerationConfig,
   executeEdit,
-  enqueue,
+  executeGeneration,
   addToast,
   closeModal,
   closeOverlay,
@@ -120,13 +120,11 @@ export function useStudioGenerationActions({
         return;
       }
 
-      enqueue(
-        request.queuePrompt,
-        request.finalConfig,
-        activeWorkspaceId,
-        options?.force,
-        options?.onJobCreated,
-      );
+      void executeGeneration(request.finalConfig, {
+        preventModal: options?.preventModal,
+        workspaceId: activeWorkspaceId,
+        onJobCreated: options?.onJobCreated,
+      });
 
       if (request.shouldClearComposerAttachments) {
         setGenerationConfig((previous) => ({
@@ -135,7 +133,7 @@ export function useStudioGenerationActions({
         }));
       }
     },
-    [activeWorkspaceId, addToast, closeModal, enqueue, isModalOpen, setGenerationConfig],
+    [activeWorkspaceId, addToast, closeModal, executeGeneration, isModalOpen, setGenerationConfig],
   );
 
   const handleEnhancePrompt = useCallback(async () => {

@@ -39,7 +39,7 @@ describe('externalProvider', () => {
         getExternalProviderRuntimePreflight(providerId, {
           GOOGLE_API_KEY: 'secret-google-value',
         }),
-      createDefaultExecutors: () => ({}),
+      createExecutor: () => null,
     });
 
     let message = '';
@@ -109,22 +109,22 @@ describe('externalProvider', () => {
     expect(JSON.stringify(calls)).not.toContain('secret-google-value');
   });
 
-  it('delegates to a provider-specific executor registry without enabling other providers', async () => {
+  it('delegates to an injected provider-specific executor without enabling other providers', async () => {
     const calls: unknown[] = [];
     const provider = createExternalGenerationProvider({
       readPreflight: (providerId) =>
         getExternalProviderRuntimePreflight(providerId, {
           GOOGLE_API_KEY: 'secret-google-value',
         }),
-      createDefaultExecutors: () => ({}),
-      executors: {
-        google: async (context) => {
-          calls.push(context);
-          return turnResult({
-            assets: [{ type: 'file', sourcePath: 'D:/out/google.png', mimeType: 'image/png' }],
-          });
-        },
-      },
+      createExecutor: (providerId) =>
+        providerId === 'google'
+          ? async (context) => {
+              calls.push(context);
+              return turnResult({
+                assets: [{ type: 'file', sourcePath: 'D:/out/google.png', mimeType: 'image/png' }],
+              });
+            }
+          : null,
     });
 
     const result = await provider.run({

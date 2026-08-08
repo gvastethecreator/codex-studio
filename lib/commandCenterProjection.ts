@@ -47,8 +47,7 @@ export interface BuildStudioCommandCenterProjectionArgs {
   providerRuntimePreflight: GenerationProviderRuntimePreflightResponse | null;
   statusItems: StudioRuntimeStatusItem[];
   queueResultPreviews: CommandCenterQueuePreview[];
-  queueJobCount: number;
-  activeServerJobCount: number;
+  activeJobCount: number;
   isQueueOpen: boolean;
   isGenerating: boolean;
 }
@@ -132,13 +131,10 @@ export function buildStudioCommandCenterProjection({
   providerRuntimePreflight,
   statusItems,
   queueResultPreviews,
-  queueJobCount,
-  activeServerJobCount,
+  activeJobCount,
   isQueueOpen,
   isGenerating,
 }: BuildStudioCommandCenterProjectionArgs): StudioCommandCenterProjection {
-  const queueCount = queueJobCount + activeServerJobCount;
-
   return {
     compactMode: Boolean(settings?.commandCenterCompactMode),
     runtimeStatus: summarizeCommandCenterRuntimeStatus(statusItems),
@@ -148,7 +144,7 @@ export function buildStudioCommandCenterProjection({
       providerRuntimePreflight,
     }),
     queue: {
-      count: queueCount,
+      count: activeJobCount,
       isOpen: isQueueOpen,
       resultPreviews: queueResultPreviews,
       hasResultPreviews: queueResultPreviews.length > 0,

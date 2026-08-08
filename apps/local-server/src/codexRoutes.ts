@@ -1,6 +1,5 @@
 import { Hono } from 'hono';
 import type {
-  CodexAccountStatusResponse,
   CodexModelCatalogResponse,
   LocalCodexSessionResponse,
 } from '../../../packages/shared/src';
@@ -8,13 +7,11 @@ import type {
 interface CodexRoutesDependencies {
   readCodexModelCatalog: () => Promise<CodexModelCatalogResponse>;
   readLocalCodexSession: () => Promise<LocalCodexSessionResponse>;
-  readCodexAccountStatus: () => Promise<CodexAccountStatusResponse>;
 }
 
 export function createCodexRoutes({
   readCodexModelCatalog,
   readLocalCodexSession,
-  readCodexAccountStatus,
 }: CodexRoutesDependencies) {
   const routes = new Hono();
 
@@ -22,7 +19,7 @@ export function createCodexRoutes({
 
   routes.get('/session', async (c) => c.json(await readLocalCodexSession()));
 
-  routes.get('/account', async (c) => c.json(await readCodexAccountStatus()));
+  routes.get('/account', async (c) => c.json(await readLocalCodexSession()));
 
   return routes;
 }

@@ -48,8 +48,7 @@ describe('buildStudioCommandCenterProjection', () => {
         },
       ],
       queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
-      queueJobCount: 2,
-      activeServerJobCount: 3,
+      activeJobCount: 3,
       isQueueOpen: false,
       isGenerating: true,
     });
@@ -69,7 +68,7 @@ describe('buildStudioCommandCenterProjection', () => {
       }),
     );
     expect(projection.queue).toEqual({
-      count: 5,
+      count: 3,
       isOpen: false,
       resultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
       hasResultPreviews: true,
@@ -114,8 +113,7 @@ describe('buildStudioCommandCenterProjection', () => {
       },
       statusItems: [],
       queueResultPreviews: [],
-      queueJobCount: 0,
-      activeServerJobCount: 0,
+      activeJobCount: 0,
       isQueueOpen: true,
       isGenerating: true,
     });

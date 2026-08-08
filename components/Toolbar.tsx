@@ -67,7 +67,7 @@ export interface ToolbarProps {
   onGenerate: (
     prompt?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { force?: boolean; preventModal?: boolean; useCurrentAttachments?: boolean },
+    options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
   ) => void;
   isGenerating: boolean;
   generationStartTime: number | null;
@@ -195,7 +195,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     const [isSizeOpen, setIsSizeOpen] = useState(false);
     const [isBatchOpen, setIsBatchOpen] = useState(false);
     const [isMobileControlsOpen, setIsMobileControlsOpen] = useState(false);
-    const [isForcedMode, setIsForcedMode] = useState(false);
 
     // Logic AI Popover States
     const [isNegativeOpen, setIsNegativeOpen] = useState(false);
@@ -368,7 +367,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
 
       // Force sync immediately before generating
       updateConfig('prompt', localPrompt);
-      onGenerate(localPrompt, undefined, { force: isForcedMode });
+      onGenerate(localPrompt);
 
       closeAllMenus();
       setIsNegativeOpen(false);
@@ -380,7 +379,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
       updateConfig,
       onGenerate,
       closeAllMenus,
-      isForcedMode,
       setIsInteracting,
       interactionScope,
     ]);
@@ -750,22 +748,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                         )}
                       </button>
                     </Tooltip>
-
-                    {/* 6. FORCE JOB */}
-                    <Tooltip content="Force Job (Bypass Queue)">
-                      <button
-                        type="button"
-                        onClick={() => setIsForcedMode(!isForcedMode)}
-                        aria-label="Toggle force job"
-                        aria-pressed={isForcedMode}
-                        className={`${iconBtnClass} ${isForcedMode ? 'text-yellow-400 bg-yellow-900/20 border-yellow-500/30' : ''}`}
-                      >
-                        <Zap size={15} className={isForcedMode ? 'animate-pulse' : ''} />
-                        {isForcedMode && (
-                          <div className="absolute top-1 right-1 size-1.5 bg-yellow-500 rounded-full" />
-                        )}
-                      </button>
-                    </Tooltip>
                   </>
                 ) : null}
               </div>
@@ -875,7 +857,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                     </button>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 gap-2">
+                <div>
                   <button
                     type="button"
                     onClick={onEnhancePrompt}
@@ -889,20 +871,6 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
                       <Wand2 size={14} />
                     )}
                     Enhance
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setIsForcedMode(!isForcedMode)}
-                    aria-label="Toggle force job"
-                    aria-pressed={isForcedMode}
-                    className={`flex h-10 items-center justify-center gap-2 rounded-xl border text-[10px] font-black uppercase leading-none tracking-[0.18em] transition-colors ${
-                      isForcedMode
-                        ? 'border-yellow-500/30 bg-yellow-900/20 text-yellow-300'
-                        : 'border-white/5 bg-white/5 text-zinc-300 hover:bg-white/10 hover:text-white'
-                    }`}
-                  >
-                    <Zap size={14} className={isForcedMode ? 'animate-pulse' : undefined} />
-                    Force
                   </button>
                 </div>
               </div>

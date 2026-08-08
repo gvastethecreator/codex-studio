@@ -37,7 +37,7 @@ This file describes local repo workflows for people and agents. It is not a glos
 7. Return the same local contract as Codex jobs: job state, Local Asset, Catalog Entry, metadata, logs, and diagnostics.
 8. Add tests for provider selection, input compilation, and failure reporting.
 9. Keep provider capability `hasAdapter` false until a concrete executor can produce or import Local Assets.
-10. Register concrete external executors in `apps/local-server/src/providers/externalProviderExecutors.ts` only after tests prove they return the same Local Asset contract as Codex jobs.
+10. Add a concrete executor module and wire its explicit built-in case in `apps/local-server/src/providers/externalProvider.ts` only after tests prove it returns the same Local Asset contract as Codex jobs.
 11. For Google image API, use `apps/local-server/src/providers/googleExecutor.ts`. It accepts `GOOGLE_API_KEY`, `GEMINI_API_KEY`, or `NANO_BANANA_API_KEY`, uses backend env only, calls Gemini `generateContent`, stores inline image output as Local Assets, and must not serialize secrets or input image bytes into transcripts.
 12. For Google `image_edit`, require an `input` or `external_output` asset with `localPath`. Import hosted `sourceUrl` assets into local managed storage before execution.
 13. For fal.ai, use `apps/local-server/src/providers/falExecutor.ts`. It accepts `FAL_KEY` or `FAL_API_KEY`, uses backend env only, retries transient request/download failures, writes assets/transcripts into the Studio Library, records no-secret transcript diagnostics, and must not serialize secrets into Provider Inputs, logs, transcripts, or API responses.
@@ -129,7 +129,7 @@ Run `bun run styles:runtime:check` to verify the generated runtime file is curre
 Run `bun run styles:templates:verify` after changing files in `components/recipes/styles/manifests/templates/`. It checks required image, sprite sheet, and texture templates plus their task coverage.
 Run `bun run styles:source:verify` when changing Styles runtime/scripts. It blocks accidental runtime imports from legacy pack YAML, generated runtime check temp files, presets that exist only in legacy pack YAML, YAML files recreated in the retired `components/recipes/styles/packs` directory, retired runtime pack aliases/exports, and imports from the retired `styles/types` path; only source-audit and compatibility-test seams should mention old legacy pack internals.
 Run `bun run styles:render:verify` after changing Styles UI grouping, pack runtime data, or virtualized rendering. It reports mounted/eager/placeholder sections plus eager/planned card budgets per pack from `styleBrowserRenderPlan`, keeping large packs from mounting every preset at once. For major Styles UI changes, verify `pack_05` in browser and compare collapsed/expanded DOM counts against this report.
-Run `bun run styles:browser:verify -- --url=http://localhost:17222/#recipe-styles` (or the active dev URL) after major Styles UI changes when you want the reusable browser gate instead of a manual pass. If the gate should validate a clean dev console on Windows, start the UI with `VITE_ENABLE_REACT_SCAN=false bun run dev:ui` first.
+Run `bun run styles:browser:verify -- --url=http://localhost:17222/#recipe-styles` (or the active dev URL) after major Styles UI changes when you want the reusable browser gate instead of a manual pass.
 
 Legacy pack YAML is retired. `bun run styles:split`, `scripts/expand-pack-02-pack-05.ts`, and `scripts/reorder-style-packs.ts` reject mutations from old flows. Use `StyleRuntimePack`, `StyleRuntimePreset`, `composeStyleRuntimePacksFromManifests()`, `STYLE_RUNTIME_PACK_SUMMARIES`, `loadStyleRuntimePack()`, `loadStyleRuntimePacks()`, and manifest/catalog types for new code. `styles:source:verify` blocks legacy aliases/exports outside the source-audit guard.
 
@@ -151,7 +151,7 @@ Token savings must come from better compilation, not weaker recipes.
 Run `bun run providers:audit` to inspect Recipe Module and provider conformance rows, including source spec size, compiled payload size, prompt estimates, Recipe Provider Directives coverage, and inline-data/secret leak checks. Run `bun run providers:verify` before changing provider compilers or removing legacy Recipe Context metadata.
 Run `bun run providers:source:verify` after backend route/worker/provider-boundary changes. It blocks route handlers and non-provider backend modules from importing provider compilers, shared hosted result internals, or concrete hosted/local executors.
 Run `bun run providers:preflight` before external adapter work. It reports Provider Secret source names and local runtime endpoint state without exposing secret values. Settings reads the same non-secret contract through `/api/providers/preflight`.
-Use `apps/local-server/src/providers/externalProvider.ts` as the adapter shell for hosted/local providers. It may compile inputs and fail with preflight diagnostics, but only a concrete executor should make a provider executable. Register concrete executors in `apps/local-server/src/providers/externalProviderExecutors.ts`; Google, fal.ai, and ComfyUI currently have default executors.
+Use `apps/local-server/src/providers/externalProvider.ts` as the adapter shell for hosted/local providers. It may compile inputs and fail with preflight diagnostics, but only a concrete executor should make a provider executable. Google, fal.ai, and ComfyUI are explicit built-in cases; do not add a runtime registry unless the product gains a real plugin contract.
 Use `apps/local-server/src/providers/externalProviderResults.ts` for hosted image result handling before adding provider-specific download/transcript code. Keep retry policy, image URL extraction, mime/ext inference, asset writes, transcript writes, and secret redaction shared unless a provider truly needs a different contract.
 For ComfyUI, use `apps/local-server/src/providers/comfyExecutor.ts`. It requires `COMFY_API_URL` or `COMFYUI_API_URL` plus `COMFY_WORKFLOW_TEMPLATE_PATH`. The template must be a Comfy workflow JSON with `{{prompt}}` and optional `{{negativePrompt}}` placeholders. The executor submits `/prompt`, polls `/history/{prompt_id}`, imports the first `/view` image into the Studio Library, and records only compact no-secret diagnostics.
 
@@ -219,12 +219,12 @@ bun run recipes:verify
 5. Run catalog operations only on managed Local Assets.
 6. Preserve the original external folder unless the user explicitly asks for cleanup.
 
-## Move Toward A Catalog-First UI
+## Maintain The Catalog-First UI
 
 1. Treat Image Catalog / Catalog Entries as the durable read model.
-2. Keep Visual Batch as a compatibility adapter only while legacy grid surfaces need it.
+2. Render grid, trash, job results, and workspace views from Catalog Entries rather than browser batch state.
 3. Put Catalog Entry grouping/filtering in `lib/studioCatalogView.ts`.
-4. Put Catalog Entry UI image materialization in `lib/studioCatalogImageAdapter.ts`, and keep legacy `GenerationBatch[]` snapshots behind explicit compatibility helpers.
+4. Put Catalog Entry UI image materialization in `lib/studioCatalogImageAdapter.ts`; derive the legacy workspace JSON shape only in `lib/studioLegacyWorkspaceSnapshotExport.ts` when exporting.
 5. Do not read `catalog-cache`, `GlobalContext`, or `useIndexedDBStorage` from `useCatalog`.
 6. Run `bun run catalog:source:verify` after changing catalog/grid read paths.
 

@@ -56,7 +56,7 @@ interface StudioOverlayActivityContext {
 }
 
 interface StudioOverlayVaultContext {
-  handleExportLegacyVisualBatchSnapshot: StudioSystemOverlaysProps['handleExportLegacyVisualBatchSnapshot'];
+  handleExportLegacyWorkspaceSnapshot: StudioSystemOverlaysProps['handleExportLegacyWorkspaceSnapshot'];
 }
 
 interface StudioOverlayOnboardingContext {
@@ -217,7 +217,7 @@ export function buildStudioOverlayController({
       handleGenerate: image.handleGenerate,
       isGenerating: image.activeGenerationConfig !== null,
       activeProviderId: settingsModule.settingsDomain.settings?.defaultProviderId ?? 'codex',
-      handleExportLegacyVisualBatchSnapshot: vault.handleExportLegacyVisualBatchSnapshot,
+      handleExportLegacyWorkspaceSnapshot: vault.handleExportLegacyWorkspaceSnapshot,
       apiBase: onboarding.apiBase,
       onboardingError: onboarding.error,
       onboardingHealth: onboarding.health,

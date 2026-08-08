@@ -4,6 +4,7 @@ import path from 'node:path';
 
 import type { CatalogImage, EditableStudioSettings } from '../../../packages/shared/src';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src';
+import { resolveLibraryPathFromRoot } from './library';
 import {
   detectExternalOutputSourceCandidates,
   EXTERNAL_OUTPUT_SOURCES_KEY,
@@ -35,29 +36,33 @@ function settings(patch: Partial<EditableStudioSettings> = {}): EditableStudioSe
 
 describe('outputSources', () => {
   it('detects preferred and env-provided output directories without registering them', () => {
+    const libraryDir = path.resolve('tmp', 'output-source-library');
+    const googleOutputDir = path.resolve('tmp', 'exports', 'google-nano-banana');
+    const comfyOutputDir = path.resolve('tmp', 'ComfyUI', 'output');
+    const falOutputDir = path.resolve('tmp', 'fal', 'results');
     const candidates = detectExternalOutputSourceCandidates({
-      libraryDir: 'D:/library',
-      settings: settings({ preferredOutputPath: 'D:/exports/google-nano-banana' }),
+      libraryDir,
+      settings: settings({ preferredOutputPath: googleOutputDir }),
       env: {
-        STUDIO_EXTERNAL_OUTPUT_SOURCES: ['D:/ComfyUI/output', 'D:/fal/results'].join(';'),
+        STUDIO_EXTERNAL_OUTPUT_SOURCES: [comfyOutputDir, falOutputDir].join(path.delimiter),
       },
-      pathExists: (sourcePath) => sourcePath !== 'D:\\fal\\results',
+      pathExists: (sourcePath) => sourcePath !== falOutputDir,
     });
 
     expect(candidates).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
-          path: 'D:\\exports\\google-nano-banana',
+          path: googleOutputDir,
           providerId: 'google',
           status: 'detected',
         }),
         expect.objectContaining({
-          path: 'D:\\ComfyUI\\output',
+          path: comfyOutputDir,
           providerId: 'comfy',
           status: 'detected',
         }),
         expect.objectContaining({
-          path: 'D:\\fal\\results',
+          path: falOutputDir,
           providerId: 'fal',
           status: 'missing',
         }),
@@ -66,15 +71,17 @@ describe('outputSources', () => {
   });
 
   it('blocks Studio Library paths from becoming external output sources', () => {
+    const libraryDir = path.resolve('tmp', 'output-source-library');
+    const assetDir = resolveLibraryPathFromRoot(libraryDir, 'assets');
     const candidates = detectExternalOutputSourceCandidates({
-      libraryDir: 'D:/library',
-      settings: settings({ preferredOutputPath: 'D:/library/assets' }),
+      libraryDir,
+      settings: settings({ preferredOutputPath: assetDir }),
       env: {},
       pathExists: () => true,
     });
 
     expect(candidates[0]).toMatchObject({
-      path: 'D:\\library\\assets',
+      path: assetDir,
       status: 'blocked',
       isInsideStudioLibrary: true,
     });
@@ -82,12 +89,14 @@ describe('outputSources', () => {
 
   it('registers existing external output directories into a stable registry', () => {
     const storage = createMemoryStorage();
+    const libraryDir = path.resolve('tmp', 'output-source-library');
+    const comfyOutputDir = path.resolve('tmp', 'ComfyUI', 'output');
     const result = registerExternalOutputSource({
       storage,
-      libraryDir: 'D:/library',
+      libraryDir,
       input: {
         label: 'Comfy final renders',
-        path: 'D:/ComfyUI/output',
+        path: comfyOutputDir,
         providerId: 'comfy',
       },
       now: '2026-05-25T00:00:00.000Z',
@@ -98,7 +107,7 @@ describe('outputSources', () => {
       ok: true,
       source: {
         label: 'Comfy final renders',
-        path: 'D:\\ComfyUI\\output',
+        path: comfyOutputDir,
         providerId: 'comfy',
         status: 'registered',
       },

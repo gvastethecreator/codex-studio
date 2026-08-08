@@ -8,7 +8,6 @@ const DEFAULT_RESET_LOCAL_STORAGE_KEYS = ['generation-config', 'user-wallet-bala
 interface UseStudioResetProps {
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   resetStudioState: () => void;
-  resetQueue: () => void;
   refreshRuntime: () => Promise<unknown>;
   clearGenerationState: () => void;
   clearUiState: () => void;
@@ -18,7 +17,6 @@ interface UseStudioResetProps {
 interface PerformStudioResetOptions {
   addToast: (message: string, type?: 'success' | 'error' | 'info' | 'warning') => void;
   resetStudioState: () => void;
-  resetQueue: () => void;
   refreshRuntime: () => Promise<unknown>;
   clearGenerationState: () => void;
   clearUiState: () => void;
@@ -32,7 +30,6 @@ interface PerformStudioResetOptions {
 export async function performStudioReset({
   addToast,
   resetStudioState,
-  resetQueue,
   refreshRuntime,
   clearGenerationState,
   clearUiState,
@@ -54,7 +51,6 @@ export async function performStudioReset({
       }
     }
 
-    resetQueue();
     clearGenerationState();
 
     startTransition(() => {
@@ -81,7 +77,6 @@ export async function performStudioReset({
 export function useStudioReset({
   addToast,
   resetStudioState,
-  resetQueue,
   refreshRuntime,
   clearGenerationState,
   clearUiState,
@@ -107,7 +102,6 @@ export function useStudioReset({
       await performStudioReset({
         addToast,
         resetStudioState,
-        resetQueue,
         refreshRuntime,
         clearGenerationState,
         clearUiState,
@@ -125,7 +119,6 @@ export function useStudioReset({
     isResettingStudio,
     localStorageKeys,
     refreshRuntime,
-    resetQueue,
     resetStudioState,
   ]);
 

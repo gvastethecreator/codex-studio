@@ -2,7 +2,7 @@ import type { Job, JobSummary } from '../packages/shared/src';
 import { parsePromptTransport } from '../packages/shared/src/promptTransport';
 import type { AspectRatio } from '../types';
 
-export type ShellActivityJobSource = 'backend_summary' | 'backend_event' | 'browser_queue';
+export type ShellActivityJobSource = 'backend_summary' | 'backend_event';
 
 export interface ShellActivityJob {
   id: string;
@@ -41,7 +41,9 @@ export function toShellActivityJob(
   job: Job | JobSummary,
   source: ShellActivityJobSource = 'backend_summary',
 ): ShellActivityJob {
-  const fullJob = 'promptPreview' in job ? null : job;
+  const isSummary = 'promptPreview' in job;
+  const summaryJob: JobSummary | null = isSummary ? job : null;
+  const fullJob: Job | null = isSummary ? null : (job as Job);
   const promptPreview = readPromptPreview(job);
   return {
     id: job.id,
@@ -53,14 +55,18 @@ export function toShellActivityJob(
     originalPrompt: fullJob?.originalPrompt ?? promptPreview,
     error: job.error,
     promptPreview,
-    workspaceId: readMetadataString(fullJob?.sourceSpec?.metadata, 'workspaceId'),
+    workspaceId:
+      summaryJob?.workspaceId ?? readMetadataString(fullJob?.sourceSpec?.metadata, 'workspaceId'),
     recipeId:
+      summaryJob?.recipeId ??
       fullJob?.sourceSpec?.recipeId ??
       (fullJob
         ? parsePromptTransport(fullJob.finalPromptUsed || fullJob.originalPrompt).recipeId
         : null),
     aspectRatio:
-      (fullJob?.sourceSpec?.output.aspectRatio as AspectRatio | null | undefined) ?? null,
+      (summaryJob?.aspectRatio as AspectRatio | null | undefined) ??
+      (fullJob?.sourceSpec?.output.aspectRatio as AspectRatio | null | undefined) ??
+      null,
     createdAt: job.createdAt,
     updatedAt: job.updatedAt,
     completedAt: job.completedAt,

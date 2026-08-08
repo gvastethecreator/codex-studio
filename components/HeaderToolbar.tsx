@@ -349,11 +349,11 @@ const HeaderToolbarFn: React.FC<HeaderToolbarProps> = ({
                 <Settings size={15} />
               </button>
             </Tooltip>
-            <Tooltip content="Generation queue" position="bottom">
+            <Tooltip content="Persistent jobs" position="bottom">
               <button
                 type="button"
                 onClick={onToggleQueue}
-                aria-label={`${isQueueOpen ? 'Close' : 'Open'} generation queue (${queueCount} jobs)`}
+                aria-label={`${isQueueOpen ? 'Close' : 'Open'} persistent jobs (${queueCount} jobs)`}
                 aria-pressed={isQueueOpen}
                 className={`studio-command-surface studio-hit-target relative flex h-8 min-w-8 items-center justify-center gap-1.5 overflow-hidden rounded-lg border px-2 transition-[color,background-color,border-color,opacity,transform,box-shadow] xl:px-2.5 ${
                   isQueueOpen

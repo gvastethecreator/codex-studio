@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useStudioJobInspector } from './useStudioJobInspector';
 import type { ToastMessage } from './useToasts';
-import { retryStudioJobById } from '../services/localStudioService';
+import { cancelStudioJob, retryStudioJobById } from '../services/localStudioService';
 import { useLazyRef } from './useLazyRef';
 import type { ShellActivityJob } from '../lib/shellActivityJob';
 
@@ -21,6 +21,7 @@ export interface StudioActivitySessionController {
     clearSelectedJob: () => void;
     inspectJob: (jobId: string) => void;
     retryJob: (jobId: string) => void;
+    cancelJob: (jobId: string) => void;
   };
   debugPanel: {
     toggle: () => void;
@@ -94,6 +95,22 @@ export function useStudioActivitySession({
     [addToast, inspectStudioJob, isDebugPanelOpen, retryingJobIdsRef],
   );
 
+  const handleCancelStudioJob = useCallback(
+    (jobId: string) => {
+      void cancelStudioJob(jobId)
+        .then((job) => {
+          addToast(
+            job.status === 'cancelled' ? 'Backend job cancelled' : 'Cancellation requested',
+            'info',
+          );
+        })
+        .catch((error) => {
+          addToast(error instanceof Error ? error.message : 'Unable to cancel the job', 'error');
+        });
+    },
+    [addToast],
+  );
+
   return {
     selection: {
       selectedStudioJobId,
@@ -102,6 +119,7 @@ export function useStudioActivitySession({
       clearSelectedJob,
       inspectJob: handleInspectStudioJob,
       retryJob: handleRetryStudioJob,
+      cancelJob: handleCancelStudioJob,
     },
     debugPanel: {
       toggle: handleToggleDebugPanel,

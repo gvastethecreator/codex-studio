@@ -17,12 +17,7 @@ interface CatalogFirstViolation {
   message: string;
 }
 
-interface LegacyCacheReference {
-  filePath: string;
-  forbidden: string;
-}
-
-interface LegacyVisualBatchReference {
+interface RetiredStateReference {
   filePath: string;
   forbidden: string;
 }
@@ -31,38 +26,28 @@ const rules: CatalogFirstRule[] = [
   {
     id: 'catalog-view-no-visual-batch-adapter',
     filePath: 'lib/studioCatalogView.ts',
-    forbidden: [
-      'GenerationBatch',
-      'studioVisualBatchCatalog',
-      'catalogImageGenerationConfig',
-      'materializeVisual',
-    ],
+    forbidden: ['studioVisualBatchCatalog', 'catalogImageGenerationConfig', 'materializeVisual'],
     message:
-      'Studio Catalog View must stay Catalog Entry-first; Visual Batch belongs in adapter seams.',
+      'Studio Catalog View must stay Catalog Entry-first; export compatibility belongs outside it.',
   },
   {
     id: 'use-catalog-no-idb-cache',
     filePath: 'hooks/useCatalog.ts',
-    forbidden: ['catalog-cache', 'useIndexedDBStorage', 'GlobalContext'],
-    message:
-      'useCatalog must query the Image Catalog directly, not durable Visual Batch cache state.',
+    forbidden: ['useIndexedDBStorage', 'GlobalContext'],
+    message: 'useCatalog must query the Image Catalog directly, not retired browser batch state.',
   },
 ];
 
-const legacyCacheAllowedFiles = new Set([
-  'lib/studioLegacyVisualBatchStore.ts',
-  'lib/studioLegacyVisualBatchStore.test.ts',
+const auditFiles = new Set([
   'scripts/catalog-first-source-audit.ts',
   'scripts/catalog-first-source-audit.test.ts',
 ]);
-
-const generationBatchAllowedFiles = new Set([
-  'lib/studioCatalogView.ts',
-  'lib/studioLegacyVisualBatchTypes.ts',
-  'scripts/catalog-first-source-audit.ts',
-  'scripts/catalog-first-source-audit.test.ts',
-  'types.ts',
-]);
+const retiredStateTokens = [
+  'catalog-cache',
+  'catalog-trash',
+  'GenerationBatch',
+  'LegacyVisualBatch',
+] as const;
 
 async function collectSourceFiles(rootDir: string, relativeDir = ''): Promise<string[]> {
   const dir = path.join(rootDir, relativeDir);
@@ -99,8 +84,7 @@ async function readRepoFile(rootDir: string, repoPath: string) {
 
 export async function createCatalogFirstSourceAuditReport(rootDir = defaultRootDir) {
   const violations: CatalogFirstViolation[] = [];
-  const legacyCacheReferences: LegacyCacheReference[] = [];
-  const legacyVisualBatchReferences: LegacyVisualBatchReference[] = [];
+  const retiredStateReferences: RetiredStateReference[] = [];
 
   for (const rule of rules) {
     const source = await readRepoFile(rootDir, rule.filePath);
@@ -118,47 +102,28 @@ export async function createCatalogFirstSourceAuditReport(rootDir = defaultRootD
 
   const sourceFiles = await collectSourceFiles(rootDir);
   for (const filePath of sourceFiles) {
-    if (legacyCacheAllowedFiles.has(filePath)) {
-      const source = await readRepoFile(rootDir, filePath);
-      if (!generationBatchAllowedFiles.has(filePath) && source.includes('GenerationBatch')) {
-        legacyVisualBatchReferences.push({ filePath, forbidden: 'GenerationBatch' });
-      }
-      continue;
-    }
+    if (auditFiles.has(filePath)) continue;
 
     const source = await readRepoFile(rootDir, filePath);
-    for (const forbidden of ['catalog-cache', 'catalog-trash']) {
+    for (const forbidden of retiredStateTokens) {
       if (source.includes(forbidden)) {
-        legacyCacheReferences.push({ filePath, forbidden });
+        retiredStateReferences.push({ filePath, forbidden });
       }
     }
-    if (!generationBatchAllowedFiles.has(filePath) && source.includes('GenerationBatch')) {
-      legacyVisualBatchReferences.push({ filePath, forbidden: 'GenerationBatch' });
-    }
   }
 
-  for (const reference of legacyCacheReferences) {
+  for (const reference of retiredStateReferences) {
     violations.push({
-      ruleId: 'legacy-visual-cache-keys-isolated',
+      ruleId: 'retired-visual-batch-state',
       filePath: reference.filePath,
       forbidden: reference.forbidden,
       message:
-        'Legacy Visual Batch cache key strings must stay centralized in studioLegacyVisualBatchStore.',
-    });
-  }
-
-  for (const reference of legacyVisualBatchReferences) {
-    violations.push({
-      ruleId: 'generation-batch-compat-isolated',
-      filePath: reference.filePath,
-      forbidden: reference.forbidden,
-      message:
-        'GenerationBatch must stay isolated to explicit legacy compatibility adapters, tests, and shared legacy types.',
+        'Retired browser batch state must not return; Catalog Entry and Persistent Job are the live models.',
     });
   }
 
   return {
-    scannedRules: rules.length + 2,
+    scannedRules: rules.length + 1,
     violations,
   };
 }

@@ -1,25 +1,19 @@
 import type { GeneratedImageWithConfig } from '../types';
 import { materializeCatalogEntryImageWithConfig } from './studioCatalogImageAdapter';
 import type { StudioCatalogView } from './studioCatalogView';
-import { buildLegacyVisualBatchSnapshotFromCatalog } from './studioLegacyVisualSnapshotExport';
-import type { LegacyVisualBatchSnapshot } from './studioLegacyVisualBatchTypes';
+import { buildLegacyWorkspaceSnapshotFromCatalog } from './studioLegacyWorkspaceSnapshotExport';
+import type { LegacyWorkspaceSnapshot } from './studioLegacyWorkspaceSnapshotTypes';
 
 interface WorkspaceExportInput {
   catalogView?: StudioCatalogView;
 }
 
-export function exportLegacyVisualBatchSnapshot({
+export function exportLegacyWorkspaceSnapshot({
   catalogView,
-}: WorkspaceExportInput): LegacyVisualBatchSnapshot {
+}: WorkspaceExportInput): LegacyWorkspaceSnapshot {
   if (!catalogView) return [];
-  return buildLegacyVisualBatchSnapshotFromCatalog(catalogView);
+  return buildLegacyWorkspaceSnapshotFromCatalog(catalogView);
 }
-
-/**
- * @deprecated Use `exportLegacyVisualBatchSnapshot`.
- * Compatibility alias kept only for incremental migration.
- */
-export const buildLegacyVisualBatchSnapshot = exportLegacyVisualBatchSnapshot;
 
 export function buildWorkspaceExportImages({
   catalogView,

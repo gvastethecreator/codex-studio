@@ -31,6 +31,7 @@ Codex Studio keeps public and agent-facing documentation in the repository. Acce
 
 ## Architecture Reviews and Reports
 
+- [Repo-wide simplification report (2026-07-18)](./architecture/simplification-2026-07-18.md)
 - [Architecture workplan](./architecture/WORKPLAN.md)
 - [General app performance and architecture review](./architecture/architecture-review-2026-07-10-app-performance.md)
 - [Animation Sequence architecture review](./architecture/architecture-review-2026-07-10-animation-sequence.md)

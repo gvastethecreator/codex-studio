@@ -42,8 +42,9 @@ function createFakeDbStore(overrides?: Partial<StudioDbStore>): StudioDbStore {
       throw new Error('not used in appFactory composition test');
     }),
     updateJobFinalPrompt: vi.fn(() => null),
+    requeueJob: vi.fn(() => null),
     getJob: vi.fn(() => null),
-    listJobs: vi.fn(() => []),
+    listJobSummaries: vi.fn(() => []),
     listAssets: vi.fn(() => []),
     listLogs: vi.fn(() => []),
   };

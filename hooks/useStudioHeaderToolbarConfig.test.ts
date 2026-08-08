@@ -93,8 +93,7 @@ describe('buildStudioHeaderToolbarProps', () => {
             },
           ],
           queueResultPreviews: [{ id: 'result-1', src: '/library/assets/result-1.png' }],
-          queueJobCount: 3,
-          activeServerJobCount: 1,
+          activeJobCount: 1,
           isQueueOpen: false,
           setIsQueueOpen: (value) => {
             nextQueueOpen = typeof value === 'function' ? value(false) : value;
@@ -122,7 +121,7 @@ describe('buildStudioHeaderToolbarProps', () => {
     expect(props.usage.value).toBe('120');
     expect(props.generationStartTime).toBe(1234);
     expect(props.commandCenter.compactMode).toBe(true);
-    expect(props.commandCenter.queue.count).toBe(4);
+    expect(props.commandCenter.queue.count).toBe(1);
     expect(props.commandCenter.queue.resultPreviews).toEqual([
       { id: 'result-1', src: '/library/assets/result-1.png' },
     ]);

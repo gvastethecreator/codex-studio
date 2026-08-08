@@ -64,7 +64,6 @@ interface CharacterLabRecipeProps {
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
     options?: {
-      force?: boolean;
       preventModal?: boolean;
       useCurrentAttachments?: boolean;
     },

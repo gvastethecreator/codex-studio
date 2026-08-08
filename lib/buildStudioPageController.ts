@@ -6,12 +6,9 @@ import type { JobStatus } from '../packages/shared/src';
 import type { AppPageView } from '../hooks/useHashRouter';
 import type { RecipeAliasId } from './recipeAliases';
 import type { ShellActivityJob as StudioJob } from './shellActivityJob';
-import { getQueueJobServerJobIds } from './browserQueueBackendSync';
 import type {
   AspectRatio,
   LogEntry,
-  QueueJob,
-  QueueJobStatus,
   RecipeId,
   StudioGenerationPlaceholder,
   Workspace,
@@ -95,17 +92,11 @@ interface StudioPageGridContext {
 interface StudioPageOperationsContext {
   isQueueOpen: StudioOperationsRailProps['isQueueOpen'];
   setIsQueueOpen: StudioOperationsRailProps['setIsQueueOpen'];
-  jobs: StudioOperationsRailProps['jobs'];
   queueResults: StudioOperationsRailProps['queueResults'];
   studioJobs: StudioOperationsRailProps['studioJobs'];
   selectedStudioJobId: StudioOperationsRailProps['selectedStudioJobId'];
-  retry: StudioOperationsRailProps['retry'];
   retryPersistentJob: StudioOperationsRailProps['retryPersistentJob'];
-  cancelJob: StudioOperationsRailProps['cancelJob'];
   cancelPersistentJob: StudioOperationsRailProps['cancelPersistentJob'];
-  removeJob: StudioOperationsRailProps['removeJob'];
-  clearCompleted: StudioOperationsRailProps['clearCompleted'];
-  isResting: StudioOperationsRailProps['isResting'];
   onInspectJob: NonNullable<LeftDebugPanelProps['onInspectJob']>;
 }
 
@@ -115,74 +106,37 @@ export interface BuildStudioPageControllerArgs {
   operations: StudioPageOperationsContext;
 }
 
-const ACTIVE_LOCAL_JOB_STATUSES = new Set<QueueJobStatus>(['pending', 'processing']);
 const ACTIVE_SERVER_JOB_STATUSES = new Set<JobStatus>(['queued', 'running', 'needs_review']);
 
 function createdAtMs(value: string | number) {
   return typeof value === 'number' ? value : Date.parse(value) || Date.now();
 }
 
-function readJobWorkspaceId(job: StudioJob) {
-  return job.workspaceId;
-}
-
-function readJobAspectRatio(job: StudioJob, linkedLocalJob: QueueJob | undefined) {
-  return job.aspectRatio ?? linkedLocalJob?.config.aspectRatio ?? null;
-}
-
 export function buildStudioGenerationPlaceholders({
-  jobs,
   studioJobs,
   activeWorkspaceId,
   fallbackAspectRatio,
 }: {
-  jobs: QueueJob[];
   studioJobs: StudioJob[];
   activeWorkspaceId: string;
   fallbackAspectRatio: AspectRatio;
 }): StudioGenerationPlaceholder[] {
-  const linkedLocalJobs = new Map(
-    jobs.flatMap((job) =>
-      getQueueJobServerJobIds(job).map((serverJobId) => [serverJobId, job] as const),
-    ),
-  );
   const activeServerJobs = studioJobs.filter((job) => ACTIVE_SERVER_JOB_STATUSES.has(job.status));
-  const activeServerJobIds = new Set(activeServerJobs.map((job) => job.id));
 
-  return [
-    ...activeServerJobs.flatMap((job) => {
-      const linkedLocalJob = linkedLocalJobs.get(job.id);
-      const workspaceId = readJobWorkspaceId(job) ?? linkedLocalJob?.workspaceId ?? null;
-      if (workspaceId && workspaceId !== activeWorkspaceId) return [];
-
+  return activeServerJobs
+    .flatMap((job) => {
+      if (job.workspaceId && job.workspaceId !== activeWorkspaceId) return [];
       return [
         {
           id: `server-${job.id}`,
           status: job.status,
-          aspectRatio: readJobAspectRatio(job, linkedLocalJob) ?? fallbackAspectRatio,
-          prompt: job.promptPreview || linkedLocalJob?.prompt || 'Generating image',
+          aspectRatio: job.aspectRatio ?? fallbackAspectRatio,
+          prompt: job.promptPreview || 'Generating image',
           createdAt: createdAtMs(job.createdAt),
         },
       ];
-    }),
-    ...jobs.flatMap((job) => {
-      if (!ACTIVE_LOCAL_JOB_STATUSES.has(job.status)) return [];
-      if (job.workspaceId !== activeWorkspaceId) return [];
-      if (getQueueJobServerJobIds(job).some((serverJobId) => activeServerJobIds.has(serverJobId))) {
-        return [];
-      }
-
-      return [
-        {
-          id: `local-${job.id}`,
-          status: job.status,
-          aspectRatio: job.config.aspectRatio,
-          prompt: job.prompt,
-          createdAt: job.createdAt,
-        },
-      ];
-    }),
-  ].toSorted((left, right) => right.createdAt - left.createdAt || left.id.localeCompare(right.id));
+    })
+    .toSorted((left, right) => right.createdAt - left.createdAt || left.id.localeCompare(right.id));
 }
 
 interface StudioViewportNavigationContext {
@@ -213,9 +167,7 @@ export interface BuildStudioViewportControllerArgs {
 export function buildStudioPageController(
   args: BuildStudioPageControllerArgs,
 ): StudioPageController {
-  const hasProcessingJobs = args.operations.jobs.some((job) => job.status === 'processing');
   const generationPlaceholders = buildStudioGenerationPlaceholders({
-    jobs: args.operations.jobs,
     studioJobs: args.operations.studioJobs,
     activeWorkspaceId: args.grid.activeWorkspaceId,
     fallbackAspectRatio: args.grid.generationAspectRatio,
@@ -259,8 +211,7 @@ export function buildStudioPageController(
         generationAspectRatio: args.grid.generationAspectRatio,
       },
       generation: {
-        isGenerating:
-          args.grid.isGenerating || hasProcessingJobs || generationPlaceholders.length > 0,
+        isGenerating: args.grid.isGenerating || generationPlaceholders.length > 0,
         placeholders: generationPlaceholders,
       },
       catalog: {
@@ -276,17 +227,11 @@ export function buildStudioPageController(
       isModalOpen: args.grid.isModalOpen,
       isQueueOpen: args.operations.isQueueOpen,
       setIsQueueOpen: args.operations.setIsQueueOpen,
-      jobs: args.operations.jobs,
       queueResults: args.operations.queueResults,
       studioJobs: args.operations.studioJobs,
       selectedStudioJobId: args.operations.selectedStudioJobId,
-      retry: args.operations.retry,
       retryPersistentJob: args.operations.retryPersistentJob,
-      cancelJob: args.operations.cancelJob,
       cancelPersistentJob: args.operations.cancelPersistentJob,
-      removeJob: args.operations.removeJob,
-      clearCompleted: args.operations.clearCompleted,
-      isResting: args.operations.isResting,
       onInspectJob: args.operations.onInspectJob,
     },
   };
