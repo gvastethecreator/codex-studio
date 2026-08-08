@@ -18,6 +18,12 @@ import type {
   Project,
   SystemLog,
 } from '../../../packages/shared/src';
+import {
+  DEFAULT_WORKSPACE_ID,
+  normalizeWorkspaceId,
+  resolveJobWorkspaceId,
+  withWorkspaceMetadata,
+} from '../../../packages/shared/src/workspaceContracts';
 
 let defaultDb: Database | null = null;
 
@@ -294,7 +300,249 @@ const DATABASE_MIGRATIONS = [
       );
     },
   },
+  {
+    version: 4,
+    name: 'workspace-authority-expand',
+    migrate(database: Database) {
+      database.run(`
+        CREATE TABLE IF NOT EXISTS workspaces (
+          id TEXT PRIMARY KEY,
+          name TEXT NOT NULL,
+          library_id TEXT,
+          filter_json TEXT,
+          sort_order TEXT DEFAULT 'newest',
+          created_at TEXT NOT NULL,
+          updated_at TEXT
+        )
+      `);
+      ensureColumn(database, 'workspaces', 'updated_at', 'TEXT');
+      ensureColumn(database, 'jobs', 'workspace_id', 'TEXT');
+      ensureColumn(database, 'jobs', 'recipe_id', 'TEXT');
+      ensureColumn(database, 'jobs', 'batch_id', 'TEXT');
+      ensureColumn(database, 'jobs', 'aspect_ratio', 'TEXT');
+      ensureDefaultWorkspaceRow(database);
+      backfillJobOperationalColumns(database);
+      database.run(
+        'CREATE INDEX IF NOT EXISTS idx_jobs_workspace_created_desc ON jobs(workspace_id, created_at DESC)',
+      );
+      database.run(
+        'CREATE INDEX IF NOT EXISTS idx_jobs_status_created_desc ON jobs(status, created_at DESC)',
+      );
+      database.run('CREATE INDEX IF NOT EXISTS idx_jobs_batch_id ON jobs(batch_id)');
+      database.run(
+        'CREATE INDEX IF NOT EXISTS idx_jobs_recipe_created_desc ON jobs(recipe_id, created_at DESC)',
+      );
+    },
+  },
+  {
+    version: 5,
+    name: 'drop-project-required-coupling',
+    migrate(database: Database) {
+      // Keep legacy project rows for historical reads, but stop requiring product FK coupling
+      // for new writes by making project_id nullable via table rebuild when needed.
+      rebuildJobsWithoutRequiredProject(database);
+      rebuildAssetsWithoutRequiredProject(database);
+      rebuildCodexThreadsWithoutRequiredProject(database);
+    },
+  },
 ] as const;
+
+function ensureDefaultWorkspaceRow(database: Database) {
+  const existing = database
+    .query('SELECT id FROM workspaces WHERE id = ?')
+    .get(DEFAULT_WORKSPACE_ID) as { id: string } | null;
+  if (existing) {
+    database
+      .query(
+        `UPDATE workspaces
+         SET name = COALESCE(NULLIF(name, ''), 'Default'),
+             updated_at = COALESCE(updated_at, created_at, ?)
+         WHERE id = ?`,
+      )
+      .run(now(), DEFAULT_WORKSPACE_ID);
+    return;
+  }
+  const timestamp = now();
+  database
+    .query(
+      `INSERT INTO workspaces (id, name, library_id, filter_json, sort_order, created_at, updated_at)
+       VALUES (?, ?, NULL, ?, ?, ?, ?)`,
+    )
+    .run(DEFAULT_WORKSPACE_ID, 'Default', '{}', 'newest', timestamp, timestamp);
+}
+
+function backfillJobOperationalColumns(database: Database) {
+  const rows = database
+    .query('SELECT id, source_spec_json, workspace_id, recipe_id, batch_id, aspect_ratio FROM jobs')
+    .all() as Array<{
+    id: string;
+    source_spec_json: string | null;
+    workspace_id: string | null;
+    recipe_id: string | null;
+    batch_id: string | null;
+    aspect_ratio: string | null;
+  }>;
+
+  const update = database.query(
+    `UPDATE jobs
+     SET workspace_id = ?, recipe_id = ?, batch_id = ?, aspect_ratio = ?
+     WHERE id = ?`,
+  );
+
+  for (const row of rows) {
+    const sourceSpec = parseJson<GenerationTaskSpec | null>(row.source_spec_json, null);
+    const metadata = sourceSpec?.metadata;
+    const workspaceId = resolveJobWorkspaceId({
+      columnWorkspaceId: row.workspace_id,
+      sourceSpecMetadata: metadata,
+    });
+    const recipeId =
+      row.recipe_id ??
+      (typeof sourceSpec?.recipeId === 'string' && sourceSpec.recipeId.trim()
+        ? sourceSpec.recipeId
+        : null);
+    const batchId =
+      row.batch_id ??
+      (metadata &&
+      typeof metadata === 'object' &&
+      !Array.isArray(metadata) &&
+      typeof (metadata as Record<string, unknown>).batchId === 'string'
+        ? String((metadata as Record<string, unknown>).batchId)
+        : null);
+    const aspectRatio =
+      row.aspect_ratio ??
+      (typeof sourceSpec?.output?.aspectRatio === 'string' ? sourceSpec.output.aspectRatio : null);
+    update.run(workspaceId, recipeId, batchId, aspectRatio, row.id);
+  }
+}
+
+function rebuildJobsWithoutRequiredProject(database: Database) {
+  database.run(`
+    CREATE TABLE IF NOT EXISTS jobs_workspace_authority (
+      id TEXT PRIMARY KEY,
+      project_id TEXT,
+      workspace_id TEXT,
+      recipe_id TEXT,
+      batch_id TEXT,
+      aspect_ratio TEXT,
+      kind TEXT NOT NULL,
+      provider_id TEXT,
+      source_spec_json TEXT,
+      status TEXT NOT NULL,
+      execution_json TEXT,
+      library_id TEXT,
+      library_root TEXT,
+      finalization_state TEXT,
+      finalization_source_path TEXT,
+      finalization_file_path TEXT,
+      finalization_asset_id TEXT,
+      finalization_catalog_id TEXT,
+      original_prompt TEXT NOT NULL,
+      expanded_prompt TEXT,
+      final_prompt_used TEXT NOT NULL,
+      error TEXT,
+      created_at TEXT NOT NULL,
+      updated_at TEXT NOT NULL,
+      completed_at TEXT
+    )
+  `);
+  database.run(`
+    INSERT INTO jobs_workspace_authority (
+      id, project_id, workspace_id, recipe_id, batch_id, aspect_ratio, kind, provider_id,
+      source_spec_json, status, execution_json, library_id, library_root,
+      finalization_state, finalization_source_path, finalization_file_path,
+      finalization_asset_id, finalization_catalog_id, original_prompt, expanded_prompt,
+      final_prompt_used, error, created_at, updated_at, completed_at
+    )
+    SELECT
+      id, project_id, workspace_id, recipe_id, batch_id, aspect_ratio, kind, provider_id,
+      source_spec_json, status, execution_json, library_id, library_root,
+      finalization_state, finalization_source_path, finalization_file_path,
+      finalization_asset_id, finalization_catalog_id, original_prompt, expanded_prompt,
+      final_prompt_used, error, created_at, updated_at, completed_at
+    FROM jobs
+  `);
+  database.run('DROP TABLE jobs');
+  database.run('ALTER TABLE jobs_workspace_authority RENAME TO jobs');
+  database.run('CREATE INDEX IF NOT EXISTS idx_jobs_created_desc ON jobs(created_at DESC)');
+  database.run(
+    'CREATE INDEX IF NOT EXISTS idx_jobs_workspace_created_desc ON jobs(workspace_id, created_at DESC)',
+  );
+  database.run(
+    'CREATE INDEX IF NOT EXISTS idx_jobs_status_created_desc ON jobs(status, created_at DESC)',
+  );
+  database.run('CREATE INDEX IF NOT EXISTS idx_jobs_batch_id ON jobs(batch_id)');
+  database.run(
+    'CREATE INDEX IF NOT EXISTS idx_jobs_recipe_created_desc ON jobs(recipe_id, created_at DESC)',
+  );
+  database.run(
+    'CREATE INDEX IF NOT EXISTS idx_jobs_library_created_desc ON jobs(library_id, created_at DESC)',
+  );
+  database.run(
+    'CREATE INDEX IF NOT EXISTS idx_jobs_finalization_state ON jobs(finalization_state)',
+  );
+}
+
+function tableExists(database: Database, tableName: string) {
+  const row = database
+    .query(`SELECT name FROM sqlite_master WHERE type = 'table' AND name = ?`)
+    .get(tableName) as { name: string } | null;
+  return Boolean(row);
+}
+
+function rebuildAssetsWithoutRequiredProject(database: Database) {
+  if (!tableExists(database, 'assets')) return;
+  database.run(`
+    CREATE TABLE IF NOT EXISTS assets_workspace_authority (
+      id TEXT PRIMARY KEY,
+      project_id TEXT,
+      job_id TEXT NOT NULL,
+      file_path TEXT NOT NULL,
+      thumbnail_path TEXT,
+      public_url TEXT NOT NULL,
+      prompt TEXT NOT NULL,
+      width INTEGER,
+      height INTEGER,
+      mime_type TEXT NOT NULL,
+      created_at TEXT NOT NULL,
+      deleted_at TEXT
+    )
+  `);
+  database.run(`
+    INSERT INTO assets_workspace_authority (
+      id, project_id, job_id, file_path, thumbnail_path, public_url, prompt,
+      width, height, mime_type, created_at, deleted_at
+    )
+    SELECT
+      id, project_id, job_id, file_path, thumbnail_path, public_url, prompt,
+      width, height, mime_type, created_at, deleted_at
+    FROM assets
+  `);
+  database.run('DROP TABLE assets');
+  database.run('ALTER TABLE assets_workspace_authority RENAME TO assets');
+}
+
+function rebuildCodexThreadsWithoutRequiredProject(database: Database) {
+  if (!tableExists(database, 'codex_threads')) return;
+  database.run(`
+    CREATE TABLE IF NOT EXISTS codex_threads_workspace_authority (
+      id TEXT PRIMARY KEY,
+      project_id TEXT,
+      codex_thread_id TEXT NOT NULL,
+      created_at TEXT NOT NULL,
+      updated_at TEXT NOT NULL
+    )
+  `);
+  database.run(`
+    INSERT INTO codex_threads_workspace_authority (
+      id, project_id, codex_thread_id, created_at, updated_at
+    )
+    SELECT id, project_id, codex_thread_id, created_at, updated_at
+    FROM codex_threads
+  `);
+  database.run('DROP TABLE codex_threads');
+  database.run('ALTER TABLE codex_threads_workspace_authority RENAME TO codex_threads');
+}
 
 export const LATEST_DATABASE_SCHEMA_VERSION = DATABASE_MIGRATIONS.at(-1)?.version ?? 0;
 
@@ -373,12 +621,21 @@ function mapJobFinalization(row: any): JobFinalization | null {
 }
 
 function mapJob(row: any): Job {
+  const sourceSpec = parseJson<GenerationTaskSpec | null>(row.source_spec_json, null);
+  const workspaceId = resolveJobWorkspaceId({
+    columnWorkspaceId: row.workspace_id,
+    sourceSpecMetadata: sourceSpec?.metadata,
+  });
   return {
     id: row.id,
-    projectId: row.project_id,
+    projectId: row.project_id ?? null,
+    workspaceId,
+    recipeId: row.recipe_id ?? sourceSpec?.recipeId ?? null,
+    batchId: row.batch_id ?? null,
+    aspectRatio: row.aspect_ratio ?? sourceSpec?.output?.aspectRatio ?? null,
     kind: row.kind,
     providerId: row.provider_id,
-    sourceSpec: parseJson<GenerationTaskSpec | null>(row.source_spec_json, null),
+    sourceSpec,
     status: row.status,
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
     libraryContext:
@@ -398,16 +655,36 @@ function mapJob(row: any): Job {
 
 function mapJobSummary(row: any): JobSummary {
   const sourceSpec = parseJson<GenerationTaskSpec | null>(row.source_spec_json, null);
-  const workspaceId = sourceSpec?.metadata?.workspaceId;
+  const workspaceId = resolveJobWorkspaceId({
+    columnWorkspaceId: row.workspace_id,
+    sourceSpecMetadata: sourceSpec?.metadata,
+  });
+  const recipeId =
+    (typeof row.recipe_id === 'string' && row.recipe_id.trim() ? row.recipe_id : null) ??
+    sourceSpec?.recipeId ??
+    null;
+  const batchId =
+    (typeof row.batch_id === 'string' && row.batch_id.trim() ? row.batch_id : null) ??
+    (sourceSpec?.metadata &&
+    typeof sourceSpec.metadata === 'object' &&
+    !Array.isArray(sourceSpec.metadata) &&
+    typeof sourceSpec.metadata.batchId === 'string'
+      ? sourceSpec.metadata.batchId
+      : null);
+  const aspectRatio =
+    (typeof row.aspect_ratio === 'string' && row.aspect_ratio.trim() ? row.aspect_ratio : null) ??
+    sourceSpec?.output?.aspectRatio ??
+    null;
 
   return {
     id: row.id,
-    projectId: row.project_id,
+    projectId: row.project_id ?? null,
     kind: row.kind,
     providerId: row.provider_id,
-    workspaceId: typeof workspaceId === 'string' && workspaceId.trim() ? workspaceId : null,
-    recipeId: sourceSpec?.recipeId ?? null,
-    aspectRatio: sourceSpec?.output?.aspectRatio ?? null,
+    workspaceId,
+    recipeId,
+    batchId,
+    aspectRatio,
     status: row.status,
     execution: parseJson<JobExecutionOptions | null>(row.execution_json, null),
     error: row.error,
@@ -421,7 +698,7 @@ function mapJobSummary(row: any): JobSummary {
 function mapAsset(row: any): Asset {
   return {
     id: row.id,
-    projectId: row.project_id,
+    projectId: row.project_id ?? null,
     jobId: row.job_id,
     filePath: row.file_path,
     thumbnailPath: row.thumbnail_path,
@@ -500,10 +777,42 @@ export function listProjects(db?: Database) {
   return getDb(db).query('SELECT * FROM projects ORDER BY updated_at DESC').all().map(mapProject);
 }
 
+export function ensureDefaultWorkspace(db?: Database) {
+  ensureDefaultWorkspaceRow(getDb(db));
+  return getWorkspace(DEFAULT_WORKSPACE_ID, db);
+}
+
+export function getWorkspace(id: string, db?: Database) {
+  const row = getDb(db).query('SELECT * FROM workspaces WHERE id = ?').get(id) as
+    | Record<string, unknown>
+    | null
+    | undefined;
+  if (!row) return null;
+  return {
+    id: typeof row.id === 'string' ? row.id : String(row.id),
+    name: typeof row.name === 'string' && row.name.trim() ? row.name : 'Default',
+    libraryId: (row.library_id as string | null) ?? null,
+    filter: parseJson<Record<string, unknown>>(
+      typeof row.filter_json === 'string' ? row.filter_json : null,
+      {},
+    ),
+    sortOrder:
+      typeof row.sort_order === 'string' && row.sort_order.trim() ? row.sort_order : 'newest',
+    createdAt: typeof row.created_at === 'string' ? row.created_at : now(),
+    updatedAt:
+      typeof row.updated_at === 'string'
+        ? row.updated_at
+        : typeof row.created_at === 'string'
+          ? row.created_at
+          : now(),
+  };
+}
+
 export function createJob(
   input: {
     id?: string;
-    projectId: string;
+    projectId?: string | null;
+    workspaceId?: string | null;
     kind: JobKind;
     providerId?: GenerationProviderId | null;
     sourceSpec?: GenerationTaskSpec | null;
@@ -513,12 +822,35 @@ export function createJob(
   },
   db?: Database,
 ) {
+  const database = getDb(db);
+  ensureDefaultWorkspaceRow(database);
+  const workspaceId = normalizeWorkspaceId(input.workspaceId);
+  const sourceSpec =
+    withWorkspaceMetadata(input.sourceSpec ?? null, workspaceId) ?? input.sourceSpec ?? null;
+  const recipeId =
+    typeof sourceSpec?.recipeId === 'string' && sourceSpec.recipeId.trim()
+      ? sourceSpec.recipeId
+      : null;
+  const batchId =
+    sourceSpec?.metadata &&
+    typeof sourceSpec.metadata === 'object' &&
+    !Array.isArray(sourceSpec.metadata) &&
+    typeof sourceSpec.metadata.batchId === 'string'
+      ? sourceSpec.metadata.batchId
+      : null;
+  const aspectRatio =
+    typeof sourceSpec?.output?.aspectRatio === 'string' ? sourceSpec.output.aspectRatio : null;
+
   const job: Job = {
     id: input.id ?? randomUUID(),
-    projectId: input.projectId,
+    projectId: input.projectId ?? null,
+    workspaceId,
+    recipeId,
+    batchId,
+    aspectRatio,
     kind: input.kind,
     providerId: input.providerId ?? null,
-    sourceSpec: input.sourceSpec ?? null,
+    sourceSpec,
     status: 'queued',
     execution: input.execution ?? null,
     libraryContext: input.libraryContext ?? null,
@@ -531,14 +863,23 @@ export function createJob(
     updatedAt: now(),
     completedAt: null,
   };
-  getDb(db)
+  database
     .query(`
-      INSERT INTO jobs (id, project_id, kind, provider_id, source_spec_json, status, execution_json, library_id, library_root, original_prompt, expanded_prompt, final_prompt_used, error, created_at, updated_at, completed_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO jobs (
+        id, project_id, workspace_id, recipe_id, batch_id, aspect_ratio,
+        kind, provider_id, source_spec_json, status, execution_json,
+        library_id, library_root, original_prompt, expanded_prompt, final_prompt_used,
+        error, created_at, updated_at, completed_at
+      )
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `)
     .run(
       job.id,
-      job.projectId,
+      job.projectId ?? null,
+      job.workspaceId,
+      job.recipeId ?? null,
+      job.batchId ?? null,
+      job.aspectRatio ?? null,
       job.kind,
       job.providerId,
       job.sourceSpec ? JSON.stringify(job.sourceSpec) : null,
@@ -623,7 +964,8 @@ export function listJobSummaries(db?: Database) {
     .query(
       `
       SELECT
-        id, project_id, kind, provider_id, source_spec_json, status, execution_json,
+        id, project_id, workspace_id, recipe_id, batch_id, aspect_ratio,
+        kind, provider_id, source_spec_json, status, execution_json,
         original_prompt, final_prompt_used, error,
         created_at, updated_at, completed_at
       FROM jobs
@@ -695,14 +1037,14 @@ export function addAsset(input: Omit<Asset, 'id' | 'createdAt' | 'deletedAt'>, d
     `)
     .run(
       asset.id,
-      asset.projectId,
+      asset.projectId ?? null,
       asset.jobId,
       asset.filePath,
       asset.thumbnailPath,
       asset.publicUrl,
       asset.prompt,
-      asset.width,
-      asset.height,
+      asset.width ?? null,
+      asset.height ?? null,
       asset.mimeType,
       asset.createdAt,
       asset.deletedAt,

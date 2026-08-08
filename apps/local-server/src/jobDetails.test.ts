@@ -59,6 +59,7 @@ describe('buildJobMetrics', () => {
     const job: Job = {
       id: 'job-1',
       projectId: 'project-1',
+      workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
       sourceSpec: null,
@@ -141,6 +142,7 @@ describe('buildJobMetrics', () => {
     const job: Job = {
       id: 'job-1',
       projectId: 'project-1',
+      workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
       sourceSpec: null,

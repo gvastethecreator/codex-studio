@@ -28,7 +28,7 @@ describe('database migrations', () => {
       transactionRolledBack: true,
       recoverableCheckpoint: true,
       summaryProjection: true,
-      schemaVersion: 3,
+      schemaVersion: 5,
     });
   });
 });

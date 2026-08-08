@@ -6,8 +6,7 @@ import type { RecipePageProps } from '../components/RecipePage';
 import type { ToolbarProps } from '../components/Toolbar';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
-import type { ToastMessage } from './useToasts';
-import { useGlobal } from '../contexts/GlobalContext';
+import { useRuntimeLogActions, useToastUi, useWorkspaceState } from '../contexts/GlobalContext';
 import { useGeneration } from '../contexts/GenerationContext';
 import { useHashRouter, type AppPageView } from './useHashRouter';
 import { useImageInputSurface } from './useImageInputSurface';
@@ -33,6 +32,9 @@ import {
   type StudioPageController,
 } from '../lib/buildStudioPageController';
 import { resolveStudioCarouselImage } from '../lib/studioCarouselImage';
+import type { LogEntry } from '../types';
+
+const EMPTY_RUNTIME_LOGS: LogEntry[] = [];
 
 export interface StudioShellController {
   root: {
@@ -41,10 +43,6 @@ export interface StudioShellController {
     onDrop: ReturnType<typeof useImageInputSurface>['handleDrop'];
     onMainClick: () => void;
     isUiChromeSuppressed: boolean;
-  };
-  toasts: {
-    items: ToastMessage[];
-    onDismiss: (id: string) => void;
   };
   headerToolbar: {
     isVisible: boolean;
@@ -75,23 +73,20 @@ export interface StudioShellController {
  * only renders the shell instead of stitching the whole Studio inline.
  */
 export function useStudioShell(): StudioShellController {
+  // Selective subscriptions: workspace + toast + stable log actions only.
+  // Runtime log *list* updates must not re-render this shell (log-list hook is overlay-only).
   const {
-    logs,
-    log,
     workspaces,
     createWorkspace,
     deleteWorkspace,
     renameWorkspace,
     activeWorkspaceId,
     setActiveWorkspace,
-    resetStudioState,
-    toasts,
-    removeToast,
-    addToast,
-    isDebugPanelOpen,
-    openDebugPanel,
-    closeDebugPanel,
-  } = useGlobal();
+    resetWorkspaces,
+  } = useWorkspaceState();
+  const { log } = useRuntimeLogActions();
+  const { addToast, isDebugPanelOpen, openDebugPanel, closeDebugPanel } = useToastUi();
+  const resetStudioState = resetWorkspaces;
 
   const {
     route,
@@ -128,8 +123,10 @@ export function useStudioShell(): StudioShellController {
     addToast,
   });
 
+  // Browser session logs are empty here so log-list updates never invalidate the shell.
+  // Overlays that display logs subscribe to the log-list context and merge client-side.
   const studioRuntime = useStudioRuntime({
-    logs,
+    logs: EMPTY_RUNTIME_LOGS,
     log,
     addToast,
     shouldAutoOpen: workspaceSummaries.length === 0 && route.view === 'studio',
@@ -786,10 +783,6 @@ export function useStudioShell(): StudioShellController {
         onMainClick,
         isUiChromeSuppressed,
       },
-      toasts: {
-        items: toasts,
-        onDismiss: removeToast,
-      },
       headerToolbar: {
         isVisible: !isUiChromeSuppressed,
         props: headerToolbarProps,
@@ -807,8 +800,6 @@ export function useStudioShell(): StudioShellController {
       handleDrop,
       onMainClick,
       isUiChromeSuppressed,
-      toasts,
-      removeToast,
       headerToolbarProps,
       viewportController,
       overlayController,

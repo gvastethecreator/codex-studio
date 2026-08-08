@@ -145,9 +145,9 @@ describe('live recipe prompt quality evaluation', () => {
       expect.arrayContaining([
         'codex app-server is not running.',
         'Local Codex session cannot run jobs (chatgpt_login_required).',
-        'No default Studio project is available.',
       ]),
     );
+    expect(readiness.defaultWorkspaceId).toBe('default');
     expect(readiness.warnings[0]).toContain('.env.local');
   });
 });

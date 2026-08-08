@@ -1,7 +1,7 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings, loadDotEnvLocal } from './config';
-import { ensureDefaultProject, migrateDb } from './db';
+import { ensureDefaultProject, ensureDefaultWorkspace, migrateDb } from './db';
 import { ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
 import { log } from './logger';
@@ -11,7 +11,9 @@ export function initStudio() {
   ensureLibrary();
   migrateDb();
   ensureDefaultLibrary();
-  const defaultProject = ensureDefaultProject();
+  // Project row may still exist for legacy columns; Workspace is product authority.
+  ensureDefaultProject();
+  const defaultWorkspace = ensureDefaultWorkspace();
   const envPath = path.resolve(process.cwd(), '.env.local');
   const codexVersion = null;
 
@@ -33,7 +35,8 @@ export function initStudio() {
     );
   }
 
-  const message = `Studio initialized. Default project: ${defaultProject.id}. Runtime readiness refresh scheduled.`;
+  const workspaceId = defaultWorkspace?.id ?? 'default';
+  const message = `Studio initialized. Default workspace: ${workspaceId}. Runtime readiness refresh scheduled.`;
 
   log('info', 'init', message);
   writeFileSync(
@@ -44,7 +47,7 @@ export function initStudio() {
 
   return {
     settings: getSettings(),
-    defaultProject,
+    defaultWorkspaceId: workspaceId,
     codexVersion,
   };
 }

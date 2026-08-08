@@ -17,7 +17,6 @@ import {
   cancelStudioJob,
   createStudioJob,
   getEditableStudioSettings,
-  listProjects,
   queryCatalog,
 } from './localStudioService';
 import { resolveStudioApiBase } from './studioRuntime';
@@ -259,8 +258,6 @@ export async function runSingleCodexImagegenJob(options: {
     cancelJob = cancelStudioJob,
   } = options;
   throwIfGenerationAborted(signal);
-  const projects = await listProjects();
-  const projectId = projects[0]?.id;
   const taskPrompt = buildLocalGenerationTaskPrompt({ config, inputImage });
   const requestAssets = await buildJobAssets({ config, inputImage });
   const variationKey = createGenerationVariationKey(batchId);
@@ -282,7 +279,7 @@ export async function runSingleCodexImagegenJob(options: {
     },
   });
   const createdJob = await createStudioJob({
-    projectId,
+    workspaceId,
     kind: sourceSpec.task,
     providerId,
     sourceSpec: {

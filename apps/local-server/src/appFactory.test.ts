@@ -13,6 +13,15 @@ import type { WorkerController } from './worker';
 vi.mock('./db', () => ({
   getSettingValue: vi.fn(() => null),
   setSettingValue: vi.fn(() => null),
+  ensureDefaultWorkspace: vi.fn(() => ({
+    id: 'default',
+    name: 'Default',
+    libraryId: null,
+    filter: {},
+    sortOrder: 'newest',
+    createdAt: '2026-05-31T00:00:00.000Z',
+    updatedAt: '2026-05-31T00:00:00.000Z',
+  })),
 }));
 
 vi.mock('./logger', () => ({
@@ -216,31 +225,20 @@ describe('createStudioApp', () => {
     expect(readLocalCodexSession).toHaveBeenCalledTimes(1);
 
     const listProjectsResponse = await studio.app.request('/api/projects');
-    expect(listProjectsResponse.status).toBe(200);
-    await expect(listProjectsResponse.json()).resolves.toEqual([
-      {
-        id: 'project-default',
-        name: 'Default Studio Project',
-        description: null,
-        createdAt: '2026-05-31T00:00:00.000Z',
-        updatedAt: '2026-05-31T00:00:00.000Z',
-      },
-    ]);
+    expect(listProjectsResponse.status).toBe(410);
+    await expect(listProjectsResponse.json()).resolves.toMatchObject({
+      code: 'projects_retired',
+    });
 
     const createProjectResponse = await studio.app.request('/api/projects', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name: 'Seam Project', description: 'composition test' }),
     });
-    expect(createProjectResponse.status).toBe(201);
-    await expect(createProjectResponse.json()).resolves.toEqual({
-      id: 'project-created',
-      name: 'Seam Project',
-      description: 'composition test',
-      createdAt: '2026-05-31T00:00:00.000Z',
-      updatedAt: '2026-05-31T00:00:00.000Z',
+    expect(createProjectResponse.status).toBe(410);
+    await expect(createProjectResponse.json()).resolves.toMatchObject({
+      code: 'projects_retired',
     });
-    expect(logger).toHaveBeenCalledWith('info', 'api', 'Project created: Seam Project');
   });
 
   it('allows configured local UI origins through the local API guard', async () => {
@@ -253,7 +251,7 @@ describe('createStudioApp', () => {
       },
     });
 
-    const response = await studio.app.request('/api/projects', {
+    const response = await studio.app.request('/api/health', {
       headers: { Origin: 'http://localhost:17222' },
     });
 
@@ -310,6 +308,7 @@ describe('createStudioApp', () => {
       filterJson: { favorite: true },
       sortOrder: 'newest',
       createdAt: '2026-05-31T00:00:00.000Z',
+      updatedAt: '2026-05-31T00:00:00.000Z',
     };
     const listLibrariesRoute = vi.fn(() => [injectedLibrary]);
     const listWorkspacesRoute = vi.fn(() => [injectedWorkspace]);
@@ -565,6 +564,7 @@ describe('createStudioApp', () => {
     const activeJob = {
       id: 'job-active',
       projectId: 'project-default',
+      workspaceId: 'default',
       kind: 'dry_run' as const,
       providerId: null,
       sourceSpec: null,

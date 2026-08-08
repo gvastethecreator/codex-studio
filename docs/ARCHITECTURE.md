@@ -83,7 +83,7 @@ graph TD
 
 ## Persistence
 
-- SQLite is the durable source of truth for jobs, cataloged assets, libraries, projects, settings, events, and system logs. Ordered schema migrations are recorded in `schema_migrations` and applied transactionally.
+- SQLite is the durable source of truth for jobs, cataloged assets, libraries, workspaces, settings, events, and system logs. Ordered schema migrations are recorded in `schema_migrations` and applied transactionally. Workspace is the user-visible organization entity (`/api/workspaces`); Project product APIs are retired.
 - Persistent jobs carry immutable Library identity/root context and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads; detail paths load full payloads on demand.
 - The Studio Library defaults to a local user folder: `C:\Users\<user>\AI-Studio-Library` on Windows, `/Users/<user>/AI-Studio-Library` on macOS, or `/home/<user>/AI-Studio-Library` on Linux.

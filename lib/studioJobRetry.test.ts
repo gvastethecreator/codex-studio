@@ -8,6 +8,7 @@ function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResp
     job: {
       id: 'job-1',
       projectId: 'project-1',
+      workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
       sourceSpec: {
@@ -107,7 +108,7 @@ describe('buildStudioJobRetryRequest', () => {
     });
 
     expect(request).toEqual({
-      projectId: 'project-1',
+      workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
       prompt: 'Retry this scene',

@@ -47,7 +47,10 @@ const UNIT_TEST_FILES = [
   'contexts/globalReducer.test.ts',
   'hooks/useHashRouter.test.ts',
   'lib/recipeContext.test.ts',
+  'lib/workspaceIdbMigration.test.ts',
+  'packages/shared/src/workspaceContracts.test.ts',
   'services/localStudioService.test.ts',
+  'services/localGenerationRun.workspace.test.ts',
 ];
 
 const FMT_THREADS = resolveToolThreads('OXFMT_THREADS', DEFAULT_MAX_OXC_THREADS);
@@ -155,9 +158,33 @@ const TASKS: Record<string, TaskDefinition> = {
       { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },
-  'validate:full': {
-    description: 'Full local quality gate.',
+  validate: {
+    description: 'Main PR quality gate: architecture, check, test, build.',
     steps: [
+      {
+        label: 'Architecture Verify',
+        command: 'bun',
+        args: ['run', 'architecture:verify'],
+      },
+      { label: 'Check', command: 'vp', args: ['check'] },
+      { label: 'Test', command: 'vp', args: ['test', 'run'] },
+      { label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
+      {
+        label: 'UI Chunk Verify',
+        command: 'bun',
+        args: ['run', 'scripts/report-ui-chunks.ts', '--verify'],
+      },
+      { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
+    ],
+  },
+  'validate:full': {
+    description: 'Alias of validate (transition window).',
+    steps: [
+      {
+        label: 'Architecture Verify',
+        command: 'bun',
+        args: ['run', 'architecture:verify'],
+      },
       { label: 'Check', command: 'vp', args: ['check'] },
       { label: 'Test', command: 'vp', args: ['test', 'run'] },
       {
@@ -182,6 +209,32 @@ const TASKS: Record<string, TaskDefinition> = {
         args: ['run', 'scripts/report-ui-chunks.ts', '--verify'],
       },
       { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
+    ],
+  },
+  'validate:release': {
+    description: 'Release gate: validate plus domain, docs, and hygiene checks.',
+    steps: [
+      { label: 'Validate', command: 'bun', args: ['run', 'scripts/tooling-task.ts', 'validate'] },
+      {
+        label: 'Providers Verify',
+        command: 'bun',
+        args: ['run', 'providers:verify'],
+      },
+      {
+        label: 'Docs Check',
+        command: 'bun',
+        args: ['run', 'scripts/check-docs.ts'],
+      },
+      {
+        label: 'Repo Hygiene Verify',
+        command: 'bun',
+        args: ['run', 'scripts/audit-repo-hygiene.ts', '--verify'],
+      },
+      {
+        label: 'Repo Assets Audit',
+        command: 'bun',
+        args: ['run', 'scripts/audit-repo-assets.ts'],
+      },
     ],
   },
 };

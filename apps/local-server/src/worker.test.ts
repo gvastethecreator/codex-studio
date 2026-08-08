@@ -7,6 +7,7 @@ function job(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
     projectId: overrides.projectId ?? 'project-1',
+    workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? null,
     sourceSpec: overrides.sourceSpec ?? null,

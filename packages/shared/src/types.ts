@@ -207,7 +207,12 @@ export interface Project {
 
 export interface Job {
   id: string;
-  projectId: string;
+  /** @deprecated Legacy column retained only until DB contract drop; not product authority. */
+  projectId?: string | null;
+  workspaceId: string;
+  recipeId?: string | null;
+  batchId?: string | null;
+  aspectRatio?: string | null;
   kind: JobKind;
   providerId: GenerationProviderId | null;
   sourceSpec: GenerationTaskSpec | null;
@@ -226,11 +231,13 @@ export interface Job {
 
 export interface JobSummary {
   id: string;
-  projectId: string;
+  /** @deprecated Legacy column; prefer workspaceId. */
+  projectId?: string | null;
   kind: JobKind;
   providerId: GenerationProviderId | null;
-  workspaceId: string | null;
+  workspaceId: string;
   recipeId: string | null;
+  batchId?: string | null;
   aspectRatio: string | null;
   status: JobStatus;
   execution: JobExecutionOptions | null;
@@ -314,7 +321,7 @@ export interface JobDetailResponse {
 
 export interface Asset {
   id: string;
-  projectId: string;
+  projectId?: string | null;
   jobId: string;
   filePath: string;
   thumbnailPath: string | null;
@@ -545,11 +552,15 @@ export interface StudioResetResponse {
   ok: boolean;
   resetAt: string;
   libraryDir: string;
-  defaultProjectId: string;
+  defaultWorkspaceId: string;
+  /** @deprecated Prefer defaultWorkspaceId. */
+  defaultProjectId?: string;
 }
 
 export interface CreateJobRequest {
+  /** @deprecated Prefer workspaceId. Ignored by product generate path. */
   projectId?: string;
+  workspaceId?: string;
   kind: JobKind;
   providerId?: GenerationProviderId | null;
   sourceSpec?: GenerationTaskSpec | null;

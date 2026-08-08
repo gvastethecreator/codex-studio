@@ -1,14 +1,11 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "target": "ES2023",
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
-    "module": "ESNext",
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
     "types": ["node", "bun"],
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
     "moduleDetection": "force",
     "allowJs": true,
     "jsx": "react-jsx",

@@ -28,6 +28,7 @@ node_modules
 dist
 dist-ssr
 .vite
+.vite-plus/
 coverage
 output/
 outputs/

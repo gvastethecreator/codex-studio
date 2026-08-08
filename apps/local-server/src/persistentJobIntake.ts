@@ -7,6 +7,11 @@ import type {
 } from '../../../packages/shared/src';
 import { createDefaultEditableStudioSettings } from '../../../packages/shared/src/studioSettings';
 import { validateGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
+import {
+  normalizeWorkspaceId,
+  readWorkspaceIdFromSourceSpecMetadata,
+  withWorkspaceMetadata,
+} from '../../../packages/shared/src/workspaceContracts';
 import type { publishEvent } from './events';
 import { validateManagedGenerationAssets } from './managedAssetPolicy';
 import { resolveEffectiveJobExecutionOptions } from './providerExecutionPolicy';
@@ -24,11 +29,14 @@ export interface ReferenceProcessingErrorLike {
 }
 
 export interface PersistentJobIntakeDependencies {
-  ensureDefaultProjectId: () => string;
+  /** @deprecated Product path no longer requires Project; optional for legacy fixtures. */
+  ensureDefaultProjectId?: () => string | null;
+  ensureDefaultWorkspaceId?: () => string;
   createJobId: () => string;
   createJob: (input: {
     id: string;
-    projectId: string;
+    projectId?: string | null;
+    workspaceId?: string | null;
     kind: Job['kind'];
     providerId: Job['providerId'];
     sourceSpec: GenerationTaskSpec | null;
@@ -80,10 +88,9 @@ function shouldRequireLocalRunIds(sourceSpec: GenerationTaskSpec | null) {
     !Array.isArray(sourceSpec.metadata)
       ? sourceSpec.metadata
       : {};
-  return Boolean(
-    sourceSpec &&
-    (typeof metadata.batchId === 'string' || typeof metadata.workspaceId === 'string'),
-  );
+  // Workspace id is always dual-written for durable authority. Only batch runs
+  // require the local queued id/batchId contract.
+  return Boolean(sourceSpec && typeof metadata.batchId === 'string' && metadata.batchId.trim());
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -150,6 +157,7 @@ export function resolvePersistentJobIntakeKind(
 
 export function createPersistentJobIntake({
   ensureDefaultProjectId,
+  ensureDefaultWorkspaceId = () => normalizeWorkspaceId(undefined),
   createJobId,
   createJob,
   updateJobFinalPrompt,
@@ -168,7 +176,18 @@ export function createPersistentJobIntake({
 }: PersistentJobIntakeDependencies) {
   return {
     async createJob(request: CreateJobRequest): Promise<PersistentJobIntakeResult> {
-      const projectId = request.projectId || ensureDefaultProjectId();
+      const projectId = request.projectId || ensureDefaultProjectId?.() || null;
+      const workspaceId = normalizeWorkspaceId(
+        request.workspaceId ||
+          readWorkspaceIdFromSourceSpecMetadata(
+            request.sourceSpec &&
+              typeof request.sourceSpec === 'object' &&
+              !Array.isArray(request.sourceSpec)
+              ? (request.sourceSpec as GenerationTaskSpec).metadata
+              : null,
+          ) ||
+          ensureDefaultWorkspaceId(),
+      );
       const prompt = (request.prompt || readSourceSpecPrompt(request.sourceSpec) || '').trim();
       if (!prompt)
         return { ok: false, error: { status: 400, body: { error: 'Prompt is required' } } };
@@ -180,6 +199,9 @@ export function createPersistentJobIntake({
           : (request.providerId ?? readSourceSpecProviderId(request.sourceSpec) ?? 'codex');
 
       let sourceSpec = createSourceSpecDraft(request.sourceSpec, providerId);
+      if (sourceSpec) {
+        sourceSpec = withWorkspaceMetadata(sourceSpec, workspaceId) ?? sourceSpec;
+      }
       if (sourceSpec) {
         const structuralValidationError = createValidationErrorResponse(sourceSpec, providerId, {
           requireHydratedAssets: false,
@@ -262,6 +284,7 @@ export function createPersistentJobIntake({
       const job = createJob({
         id: jobId,
         projectId,
+        workspaceId,
         kind: resolvePersistentJobIntakeKind(request.kind, sourceSpec),
         providerId,
         sourceSpec,

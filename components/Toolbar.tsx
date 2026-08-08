@@ -143,7 +143,7 @@ function buildCodexFallbackCatalogErrorMessage(catalog: CodexModelCatalogRespons
   return 'Using documented catalog while Codex app-server is not responding live.';
 }
 
-import { useGlobal } from '../contexts/GlobalContext';
+import { useToastUi } from '../contexts/GlobalContext';
 
 export const Toolbar: React.FC<ToolbarProps> = React.memo(
   ({
@@ -171,7 +171,7 @@ export const Toolbar: React.FC<ToolbarProps> = React.memo(
     activeRecipe = null,
     mode = 'full',
   }) => {
-    const { addToast } = useGlobal();
+    const { addToast } = useToastUi();
     const containerRef = useRef<HTMLDivElement>(null);
     const fileInputRef = useRef<HTMLInputElement>(null);
     const textareaRef = useRef<HTMLTextAreaElement>(null);

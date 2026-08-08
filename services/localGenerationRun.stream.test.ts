@@ -18,6 +18,7 @@ const mocks = vi.hoisted(() => {
     watchJob: vi.fn(async () => ({
       id: 'job-1',
       projectId: 'project-1',
+      workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
       sourceSpec: null,
@@ -34,6 +35,7 @@ const mocks = vi.hoisted(() => {
     createStudioJob: vi.fn(async () => ({
       id: 'job-1',
       projectId: 'project-1',
+      workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
       sourceSpec: null,
@@ -92,7 +94,6 @@ vi.mock('./localStudioService', () => ({
   cancelStudioJob: mocks.cancelStudioJob,
   createStudioJob: mocks.createStudioJob,
   getEditableStudioSettings: vi.fn(),
-  listProjects: vi.fn(async () => [{ id: 'project-1', name: 'Default', createdAt: 1 }]),
   queryCatalog: mocks.queryCatalog,
   toStudioAssetUrl: (url: string) => `http://127.0.0.1:17223${url}`,
 }));
@@ -180,6 +181,7 @@ describe('runSingleCodexImagegenJob stream ownership', () => {
     resolveCreatedJob({
       id: 'job-late',
       projectId: 'project-1',
+      workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
       sourceSpec: null,

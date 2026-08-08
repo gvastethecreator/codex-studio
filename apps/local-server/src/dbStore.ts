@@ -17,7 +17,8 @@ export interface StudioDbStore {
   listProjects(): Project[];
   createJob(input: {
     id?: string;
-    projectId: string;
+    projectId?: string | null;
+    workspaceId?: string | null;
     kind: JobKind;
     providerId?: GenerationProviderId | null;
     sourceSpec?: GenerationTaskSpec | null;

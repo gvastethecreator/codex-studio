@@ -60,6 +60,21 @@ export async function set(key: IDBValidKey, value: any): Promise<void> {
   });
 }
 
+export async function del(key: IDBValidKey): Promise<void> {
+  const db = await getDB();
+  return new Promise((resolve, reject) => {
+    const transaction = db.transaction(STORE_NAME, 'readwrite');
+    const store = transaction.objectStore(STORE_NAME);
+    const request = store.delete(key);
+    request.onsuccess = () => {
+      resolve();
+    };
+    request.onerror = () => {
+      reject(request.error);
+    };
+  });
+}
+
 async function getAllKeys(): Promise<IDBValidKey[]> {
   const db = await getDB();
   return new Promise((resolve, reject) => {

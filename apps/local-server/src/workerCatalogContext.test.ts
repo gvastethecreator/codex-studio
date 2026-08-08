@@ -7,6 +7,8 @@ function job(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
     projectId: overrides.projectId ?? 'project-1',
+    // Empty column simulates pre-backfill rows so metadata dual-read can be tested.
+    workspaceId: overrides.workspaceId ?? '',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? null,
     sourceSpec: overrides.sourceSpec ?? null,

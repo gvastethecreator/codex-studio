@@ -316,7 +316,7 @@ export function createWorkerController({
     const executionOptions = resolveExecutionOptions(job.execution);
     const result = await codexGenerationProvider.run({
       id: job.id,
-      projectId: job.projectId,
+      projectId: job.projectId ?? 'default',
       prompt: job.finalPromptUsed,
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
@@ -375,7 +375,7 @@ export function createWorkerController({
 
     const result = await externalGenerationProvider.run({
       id: job.id,
-      projectId: job.projectId,
+      projectId: job.projectId ?? 'default',
       prompt: job.finalPromptUsed,
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,

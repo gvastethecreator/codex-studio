@@ -89,7 +89,9 @@ export interface StyleDefaultFailureInput {
 }
 
 export interface StyleDefaultJobRequestInput {
+  /** @deprecated Use workspaceId. */
   projectId?: string;
+  workspaceId?: string;
   prompt: string;
 }
 
@@ -293,11 +295,11 @@ export function createStyleDefaultFailureEntry({
 }
 
 export function createStyleDefaultJobRequest({
-  projectId,
+  workspaceId = 'default',
   prompt,
 }: StyleDefaultJobRequestInput): CreateJobRequest {
   return {
-    projectId,
+    workspaceId,
     kind: 'codex_imagegen',
     prompt,
   };

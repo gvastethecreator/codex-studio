@@ -314,7 +314,7 @@ async function saveFailure(entry: unknown) {
 }
 
 async function generateOne(
-  projectId: string,
+  workspaceId: string,
   recipe: RecipeCardDef,
   manifestById: Map<string, ManifestEntry>,
 ) {
@@ -328,7 +328,7 @@ async function generateOne(
   const created = await request<Job>('/api/jobs', {
     method: 'POST',
     body: JSON.stringify({
-      projectId,
+      workspaceId,
       kind: 'codex_imagegen',
       prompt: appendImagegenDenoiseDirective(recipe.prompt),
     }),
@@ -358,9 +358,7 @@ await mkdir(recipeCardsDir, { recursive: true });
 const health = await request<{ ok: boolean }>('/api/health');
 if (!health.ok) throw new Error('Local studio server is not healthy.');
 
-const projects = await request<Project[]>('/api/projects');
-const projectId = projects[0]?.id;
-if (!projectId) throw new Error('No default project available.');
+const workspaceId = 'default';
 
 const manifestById = new Map((await loadManifest()).map((entry) => [entry.id, entry]));
 const queue = [...RECIPE_CARDS];
@@ -373,7 +371,7 @@ async function worker() {
     const recipe = queue.shift();
     if (!recipe) return;
     try {
-      const result = await generateOne(projectId, recipe, manifestById);
+      const result = await generateOne(workspaceId, recipe, manifestById);
       if (result === 'generated') generated += 1;
       if (result === 'skipped') skipped += 1;
     } catch (error) {

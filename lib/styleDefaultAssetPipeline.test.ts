@@ -150,9 +150,9 @@ describe('styleDefaultAssetPipeline', () => {
   });
 
   it('creates the persistent job request used by CLI adapters', () => {
-    expect(createStyleDefaultJobRequest({ projectId: 'project-1', prompt: 'prompt body' })).toEqual(
+    expect(createStyleDefaultJobRequest({ workspaceId: 'default', prompt: 'prompt body' })).toEqual(
       {
-        projectId: 'project-1',
+        workspaceId: 'default',
         kind: 'codex_imagegen',
         prompt: 'prompt body',
       },

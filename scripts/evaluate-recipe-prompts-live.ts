@@ -106,6 +106,8 @@ export interface LiveRecipeEvaluationPairReport {
 
 export interface LiveRuntimeSnapshot {
   ready: boolean;
+  defaultWorkspaceId: string | null;
+  /** @deprecated Prefer defaultWorkspaceId. */
   defaultProjectId: string | null;
   failures: string[];
   warnings: string[];
@@ -460,10 +462,11 @@ export function createLiveRecipeEvaluationReport(
 export function evaluateLiveRuntimeReadiness(
   health: HealthResponse,
   session: LocalCodexSessionResponse,
-  projectId: string | null,
+  workspaceId: string | null = 'default',
 ): LiveRuntimeSnapshot {
   const failures: string[] = [];
   const warnings: string[] = [];
+  const defaultWorkspaceId = workspaceId?.trim() || 'default';
 
   if (!health.checks.libraryReady) {
     failures.push('Studio Library is not ready for local generation.');
@@ -481,8 +484,8 @@ export function evaluateLiveRuntimeReadiness(
       `Local Codex session cannot run jobs (${session.reason ?? session.state ?? 'unknown'}).`,
     );
   }
-  if (!projectId) {
-    failures.push('No default Studio project is available.');
+  if (!defaultWorkspaceId) {
+    failures.push('No default Studio workspace is available.');
   }
   if (!health.runtime.envLocalPresent) {
     warnings.push(
@@ -492,7 +495,8 @@ export function evaluateLiveRuntimeReadiness(
 
   return {
     ready: failures.length === 0,
-    defaultProjectId: projectId,
+    defaultWorkspaceId,
+    defaultProjectId: defaultWorkspaceId,
     failures,
     warnings,
     health: {
@@ -561,13 +565,17 @@ async function requestJson<T>(apiBase: string, pathname: string, init?: RequestI
 }
 
 async function readLiveRuntimeSnapshot(apiBase: string) {
-  const [health, session, projects] = await Promise.all([
+  const [health, session, workspaces] = await Promise.all([
     requestJson<HealthResponse>(apiBase, '/api/health'),
     requestJson<LocalCodexSessionResponse>(apiBase, '/api/codex/session'),
-    requestJson<Project[]>(apiBase, '/api/projects'),
+    requestJson<Array<{ id: string }>>(apiBase, '/api/workspaces').catch(() => [{ id: 'default' }]),
   ]);
+  const workspaceId =
+    workspaces.find((workspace) => workspace.id === 'default')?.id ??
+    workspaces[0]?.id ??
+    'default';
 
-  return evaluateLiveRuntimeReadiness(health, session, projects[0]?.id ?? null);
+  return evaluateLiveRuntimeReadiness(health, session, workspaceId);
 }
 
 async function waitForJobDetail(
@@ -594,13 +602,13 @@ async function waitForJobDetail(
 
 async function createLiveJob(
   apiBase: string,
-  projectId: string,
+  workspaceId: string,
   variant: LiveRecipeEvaluationVariantPlan,
 ) {
   return requestJson<Job>(apiBase, '/api/jobs', {
     method: 'POST',
     body: JSON.stringify({
-      projectId,
+      workspaceId,
       kind: variant.sourceSpec.task,
       providerId: 'codex',
       sourceSpec: variant.sourceSpec,
@@ -648,7 +656,11 @@ export async function executeLiveRecipeEvaluation(
       const variantReport = pairReport.variants[variantIndex];
 
       try {
-        const created = await createLiveJob(apiBase, runtime.defaultProjectId!, variantPlan);
+        const created = await createLiveJob(
+          apiBase,
+          runtime.defaultWorkspaceId ?? runtime.defaultProjectId ?? 'default',
+          variantPlan,
+        );
         variantReport.jobId = created.id;
         variantReport.status = created.status;
         variantReport.createdAt = created.createdAt;

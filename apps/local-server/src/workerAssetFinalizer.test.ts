@@ -11,6 +11,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-finalizer-1',
     projectId: overrides.projectId ?? 'project-1',
+    workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
     sourceSpec: overrides.sourceSpec ?? null,
@@ -37,6 +38,7 @@ describe('workerAssetFinalizer', () => {
     const addAsset = vi.fn(() => ({
       id: 'asset-1',
       projectId: 'project-1',
+      workspaceId: 'default',
       jobId: 'job-finalizer-1',
       filePath: organizedPath,
       thumbnailPath: `${organizedPath}.thumb.webp`,
@@ -183,6 +185,7 @@ describe('workerAssetFinalizer', () => {
     const existingAsset = {
       id: 'asset-existing',
       projectId: 'project-1',
+      workspaceId: 'default',
       jobId: 'job-finalizer-1',
       filePath: organizedPath,
       thumbnailPath: null,

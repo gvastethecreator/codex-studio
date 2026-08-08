@@ -93,17 +93,36 @@ try {
     'finalization_file_path',
     'finalization_asset_id',
     'finalization_catalog_id',
+    'workspace_id',
+    'recipe_id',
+    'batch_id',
+    'aspect_ratio',
   ];
   const columns = readColumnNames(database);
-  database.query('UPDATE jobs SET provider_id = ?, source_spec_json = ? WHERE id = ?').run(
-    'codex',
-    JSON.stringify({
-      recipeId: 'styles',
-      output: { aspectRatio: '2:3' },
-      metadata: { workspaceId: 'workspace-summary' },
-    }),
-    'job-sentinel',
-  );
+  database
+    .query(
+      `UPDATE jobs
+       SET provider_id = ?,
+           source_spec_json = ?,
+           workspace_id = ?,
+           recipe_id = ?,
+           batch_id = ?,
+           aspect_ratio = ?
+       WHERE id = ?`,
+    )
+    .run(
+      'codex',
+      JSON.stringify({
+        recipeId: 'styles',
+        output: { aspectRatio: '2:3' },
+        metadata: { workspaceId: 'workspace-summary', batchId: 'batch-1' },
+      }),
+      'workspace-summary',
+      'styles',
+      'batch-1',
+      '2:3',
+      'job-sentinel',
+    );
   const summary = listJobSummaries(database).find((job) => job.id === 'job-sentinel');
   const legacyAsset = addAsset(
     {
@@ -194,8 +213,10 @@ try {
       summaryProjection:
         summary?.workspaceId === 'workspace-summary' &&
         summary.recipeId === 'styles' &&
+        summary.batchId === 'batch-1' &&
         summary.aspectRatio === '2:3' &&
-        summary.promptPreview === 'sentinel prompt',
+        summary.promptPreview === 'sentinel prompt' &&
+        !summary.workspaceId?.includes('{'),
       schemaVersion: LATEST_DATABASE_SCHEMA_VERSION,
     }),
   );

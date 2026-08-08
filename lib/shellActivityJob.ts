@@ -6,7 +6,7 @@ export type ShellActivityJobSource = 'backend_summary' | 'backend_event';
 
 export interface ShellActivityJob {
   id: string;
-  projectId: string;
+  projectId?: string | null;
   kind: Job['kind'];
   providerId: Job['providerId'];
   status: Job['status'];
@@ -14,7 +14,7 @@ export interface ShellActivityJob {
   originalPrompt: string;
   error: string | null;
   promptPreview: string;
-  workspaceId: string | null;
+  workspaceId: string | null | undefined;
   recipeId: string | null;
   aspectRatio: AspectRatio | null;
   createdAt: string;

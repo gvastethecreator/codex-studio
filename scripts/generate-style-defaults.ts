@@ -9996,8 +9996,8 @@ if (printPrompts) {
 const health = await request<{ ok: boolean }>('/api/health');
 if (!health.ok) throw new Error('Local studio server is not healthy.');
 
-const projects = await request<Project[]>('/api/projects');
-projectId = projects[0]?.id;
+const workspaceId = 'default';
+projectId = workspaceId; // legacy local var name kept for log lines only
 
 async function processPreset(target: PendingPreset) {
   const { pack, preset, category, destination, variantSlot } = target;
@@ -10020,7 +10020,7 @@ async function processPreset(target: PendingPreset) {
         method: 'POST',
         body: JSON.stringify(
           createStyleDefaultJobRequest({
-            projectId,
+            workspaceId: 'default',
             prompt: buildStylePrompt(pack, preset, attempt, sessionSuffix, variantSlot),
           }),
         ),

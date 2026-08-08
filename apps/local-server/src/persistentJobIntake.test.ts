@@ -17,6 +17,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
     projectId: overrides.projectId ?? 'project-1',
+    workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
     sourceSpec: overrides.sourceSpec ?? null,
@@ -34,7 +35,8 @@ function createJob(overrides: Partial<Job> = {}): Job {
 
 type CreateJobInput = {
   id: string;
-  projectId: string;
+  projectId?: string | null;
+  workspaceId?: string | null;
   kind: Job['kind'];
   providerId: Job['providerId'];
   sourceSpec: GenerationTaskSpec | null;

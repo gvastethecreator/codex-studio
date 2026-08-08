@@ -128,7 +128,7 @@ export function createWorkerAssetFinalizer({
     const asset =
       existingAsset ??
       addAsset({
-        projectId: job.projectId,
+        projectId: job.projectId ?? null,
         jobId: job.id,
         filePath: organizedImagePath,
         thumbnailPath,

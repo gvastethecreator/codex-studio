@@ -195,8 +195,7 @@ await mkdir(categoryBasesDir, { recursive: true });
 const health = await request<{ ok: boolean }>('/api/health');
 if (!health.ok) throw new Error('Local studio server is not healthy.');
 
-const projects = await request<Project[]>('/api/projects');
-const projectId = projects[0]?.id;
+const workspaceId = 'default';
 const packs = (await loadPacks()).filter(
   (pack) => packFilters.size === 0 || packFilters.has(pack.id),
 );
@@ -228,7 +227,7 @@ for (const pack of packs) {
       const created = await request<Job>('/api/jobs', {
         method: 'POST',
         body: JSON.stringify({
-          projectId,
+          workspaceId,
           kind: 'codex_imagegen',
           prompt: buildCategoryPrompt(pack.name, category, categoryPresets),
         }),

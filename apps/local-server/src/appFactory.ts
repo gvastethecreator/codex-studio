@@ -6,7 +6,7 @@ import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
 import { createDefaultDbStore, type StudioDbStore } from './dbStore';
-import { getSettingValue, setSettingValue } from './db';
+import { ensureDefaultWorkspace, getSettingValue, setSettingValue } from './db';
 import { getCurrentEventRevision, publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolvePublicLibraryPath, toPublicAssetUrl } from './library';
@@ -61,7 +61,7 @@ import { createProviderRoutes } from './providerRoutes';
 import { createSettingsRoutes } from './settingsRoutes';
 import { createCodexRoutes } from './codexRoutes';
 import { createLibrariesRoutes, type LibrariesRoutesDependencies } from './librariesRoutes';
-import { createProjectRoutes } from './projectRoutes';
+
 import { createJobRoutes } from './jobRoutes';
 import { createAssetLogRoutes } from './assetLogRoutes';
 import { createCheckingRuntimeReport, createRuntimeRoutes } from './runtimeRoutes';
@@ -258,15 +258,26 @@ export async function createStudioApp(
     }),
   );
 
-  app.route(
-    '/api/projects',
-    createProjectRoutes({
-      listProjects: () => dbStore.listProjects(),
-      createProject: (name, description) => dbStore.createProject(name, description),
-      publishEvent,
-      logProjectCreated: (projectName) =>
-        appLogger('info', 'api', `Project created: ${projectName}`),
-    }),
+  // Project routes retired: Workspace is the organization authority.
+  app.all('/api/projects', (c) =>
+    c.json(
+      {
+        error: 'Projects API removed',
+        code: 'projects_retired',
+        reason: 'Use /api/workspaces. Workspace is the durable organization authority.',
+      },
+      410,
+    ),
+  );
+  app.all('/api/projects/*', (c) =>
+    c.json(
+      {
+        error: 'Projects API removed',
+        code: 'projects_retired',
+        reason: 'Use /api/workspaces. Workspace is the durable organization authority.',
+      },
+      410,
+    ),
   );
 
   app.route(
@@ -277,12 +288,13 @@ export async function createStudioApp(
       getJobDetail,
       requeueJob: (jobId) => dbStore.requeueJob(jobId),
       cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),
-      ensureDefaultProjectId: () => dbStore.ensureDefaultProject().id,
+      ensureDefaultWorkspaceId: () => ensureDefaultWorkspace()?.id ?? 'default',
       createJobId: () => randomUUID(),
       createJob: (input) =>
         dbStore.createJob({
           id: input.id,
-          projectId: input.projectId,
+          projectId: input.projectId ?? null,
+          workspaceId: input.workspaceId,
           kind: input.kind,
           providerId: input.providerId,
           sourceSpec: input.sourceSpec,

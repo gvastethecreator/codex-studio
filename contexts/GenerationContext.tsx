@@ -9,7 +9,7 @@ import {
 } from '../types';
 import { useGenerationConfig } from '../hooks/useGenerationConfig';
 import { useGenerationPipeline } from '../hooks/useGenerationPipeline';
-import { useGlobal } from './GlobalContext';
+import { useRuntimeLogActions, useToastUi, useWorkspaceState } from './GlobalContext';
 import { useModalManager } from '../hooks/useModalManager';
 
 interface GenerationContextType {
@@ -74,7 +74,9 @@ interface GenerationProviderProps {
 }
 
 export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children }) => {
-  const { log, activeWorkspaceId, addToast } = useGlobal();
+  const { activeWorkspaceId } = useWorkspaceState();
+  const { log } = useRuntimeLogActions();
+  const { addToast } = useToastUi();
 
   const [activeRecipe, setActiveRecipe] = useState<RecipeId>(null);
   const [isInteractingWithToolbar, setIsInteractingWithToolbar] = useState(false);

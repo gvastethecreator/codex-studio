@@ -10,7 +10,8 @@ describe('studioControlRoutes', () => {
       ok: true,
       resetAt: '2026-05-29T00:00:00.000Z',
       libraryDir: 'D:/library',
-      defaultProjectId: 'project-1',
+      defaultWorkspaceId: 'default',
+      defaultProjectId: 'default',
     }));
 
     const routes = createStudioControlRoutes({ resetStudioData, worker });
@@ -18,7 +19,7 @@ describe('studioControlRoutes', () => {
     const response = await routes.request('/reset', { method: 'POST' });
     expect(response.status).toBe(200);
     await expect(response.json()).resolves.toEqual(
-      expect.objectContaining({ ok: true, defaultProjectId: 'project-1' }),
+      expect.objectContaining({ ok: true, defaultWorkspaceId: 'default' }),
     );
     expect(resetStudioData).toHaveBeenCalledWith(worker);
   });

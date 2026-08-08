@@ -51,7 +51,7 @@ export function buildStudioJobRetryRequest(
   }
 
   return {
-    projectId: detail.job.projectId,
+    workspaceId: detail.job.workspaceId,
     kind: sourceSpec?.task ?? detail.job.kind,
     providerId: detail.job.providerId ?? sourceSpec?.providerId ?? undefined,
     sourceSpec,

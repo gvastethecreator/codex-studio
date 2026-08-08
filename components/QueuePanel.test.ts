@@ -7,6 +7,7 @@ function job(id: string, status: ShellActivityJob['status']): ShellActivityJob {
   return {
     id,
     projectId: 'project-1',
+    workspaceId: 'default',
     kind: 'image_generate',
     providerId: 'codex',
     status,
@@ -14,7 +15,6 @@ function job(id: string, status: ShellActivityJob['status']): ShellActivityJob {
     originalPrompt: 'Prompt',
     error: null,
     promptPreview: 'Prompt',
-    workspaceId: 'default',
     recipeId: null,
     aspectRatio: '1:1',
     createdAt: '2026-07-18T00:00:00.000Z',

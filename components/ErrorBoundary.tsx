@@ -13,7 +13,7 @@ interface State {
 }
 
 export class ErrorBoundary extends Component<Props, State> {
-  public state: State = {
+  public override state: State = {
     hasError: false,
     error: null,
   };
@@ -22,14 +22,14 @@ export class ErrorBoundary extends Component<Props, State> {
     return { hasError: true, error };
   }
 
-  public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+  public override componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     runtimeLogger.error('Uncaught render error', {
       error,
       componentStack: errorInfo.componentStack,
     });
   }
 
-  public render() {
+  public override render() {
     if (this.state.hasError) {
       return (
         <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-zinc-950/50 border border-red-500/20 rounded-2xl">

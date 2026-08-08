@@ -21,6 +21,7 @@ interface JobRoutesDependencies extends PersistentJobIntakeDependencies {
 
 const CreateJobRequestBoundarySchema = Schema.Struct({
   projectId: Schema.optional(Schema.String),
+  workspaceId: Schema.optional(Schema.String),
   kind: Schema.Union(
     Schema.Literal('dry_run'),
     Schema.Literal('codex_imagegen'),
@@ -65,6 +66,7 @@ export function createJobRoutes({
   requeueJob,
   cancelQueuedOrRunningJob,
   ensureDefaultProjectId,
+  ensureDefaultWorkspaceId,
   createJobId,
   createJob,
   updateJobFinalPrompt,
@@ -82,6 +84,7 @@ export function createJobRoutes({
   const routes = new Hono();
   const persistentJobIntake = createPersistentJobIntake({
     ensureDefaultProjectId,
+    ensureDefaultWorkspaceId,
     createJobId,
     createJob,
     updateJobFinalPrompt,

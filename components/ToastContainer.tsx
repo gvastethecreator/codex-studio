@@ -1,17 +1,19 @@
 import React from 'react';
-import type { ToastMessage } from '../hooks/useToasts';
+import { useToastList, useToastUi } from '../contexts/ToastUiContext';
 import Toast from './Toast';
 
-interface ToastContainerProps {
-  toasts: ToastMessage[];
-  onDismiss: (id: string) => void;
-}
+/**
+ * Leaf toast list consumer. Subscribes to the toast store so toast appends do
+ * not re-render WorkspaceProvider / useStudioShell.
+ */
+const ToastContainer: React.FC = () => {
+  const { toasts } = useToastList();
+  const { removeToast } = useToastUi();
 
-const ToastContainer: React.FC<ToastContainerProps> = ({ toasts, onDismiss }) => {
   return (
     <div className="fixed top-4 right-4 z-50 w-full max-w-sm space-y-3">
       {toasts.map((toast) => (
-        <Toast key={toast.id} toast={toast} onDismiss={onDismiss} />
+        <Toast key={toast.id} toast={toast} onDismiss={removeToast} />
       ))}
     </div>
   );

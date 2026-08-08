@@ -71,7 +71,7 @@ export const AppContent: React.FC = () => {
       onDragLeave={shell.root.onDragLeave}
       onDrop={shell.root.onDrop}
     >
-      <ToastContainer toasts={shell.toasts.items} onDismiss={shell.toasts.onDismiss} />
+      <ToastContainer />
 
       {shell.headerToolbar.isVisible && <HeaderToolbar {...shell.headerToolbar.props} />}
 

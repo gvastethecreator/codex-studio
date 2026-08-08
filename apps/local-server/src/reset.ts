@@ -1,7 +1,7 @@
 import { existsSync, rmSync } from 'node:fs';
 import { getSettings } from './config';
 import { stopAppServer } from './codex/processSupervisor';
-import { closeDb, ensureDefaultProject, migrateDb } from './db';
+import { closeDb, ensureDefaultProject, ensureDefaultWorkspace, migrateDb } from './db';
 import { LIBRARY_FOLDERS, ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
 import { log } from './logger';
@@ -23,19 +23,22 @@ export async function resetStudioData(worker: { resetWorkerState(): Promise<void
   ensureLibrary();
   migrateDb();
   ensureDefaultLibrary();
-  const defaultProject = ensureDefaultProject();
+  ensureDefaultProject();
+  const defaultWorkspace = ensureDefaultWorkspace();
   const settings = getSettings();
+  const defaultWorkspaceId = defaultWorkspace?.id ?? 'default';
 
   log(
     'warn',
     'reset',
-    `Studio reset complete. Library recreated at ${settings.libraryDir}. Default project: ${defaultProject.id}`,
+    `Studio reset complete. Library recreated at ${settings.libraryDir}. Default workspace: ${defaultWorkspaceId}`,
   );
 
   return {
     ok: true,
     resetAt: new Date().toISOString(),
     libraryDir: settings.libraryDir,
-    defaultProjectId: defaultProject.id,
+    defaultWorkspaceId,
+    defaultProjectId: defaultWorkspaceId,
   };
 }

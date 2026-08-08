@@ -1,25 +1,31 @@
 import type { Job } from '../../../packages/shared/src';
+import { normalizeWorkspaceId } from '../../../packages/shared/src/workspaceContracts';
 
-interface JobCatalogContext {
+export interface JobCatalogContext {
   workspaceId: string;
   batchId: string | null;
 }
 
 function readMetadataString(job: Pick<Job, 'sourceSpec'>, key: string) {
-  const value = job.sourceSpec?.metadata?.[key];
-  if (typeof value !== 'string') {
-    return null;
-  }
-
-  const trimmed = value.trim();
-  return trimmed ? trimmed : null;
+  const metadata = job.sourceSpec?.metadata;
+  if (!metadata || typeof metadata !== 'object' || Array.isArray(metadata)) return null;
+  const candidate = (metadata as Record<string, unknown>)[key];
+  return typeof candidate === 'string' && candidate.trim() ? candidate.trim() : null;
 }
 
 export function resolveJobCatalogContext(
-  job: Pick<Job, 'projectId' | 'sourceSpec'>,
+  job: Pick<Job, 'projectId' | 'workspaceId' | 'sourceSpec' | 'batchId'>,
 ): JobCatalogContext {
+  const fromColumn =
+    typeof job.workspaceId === 'string' && job.workspaceId.trim() ? job.workspaceId.trim() : null;
+  const fromMetadata = readMetadataString(job, 'workspaceId');
+  const fromProject =
+    typeof job.projectId === 'string' && job.projectId.trim() ? job.projectId.trim() : null;
+
   return {
-    workspaceId: readMetadataString(job, 'workspaceId') ?? job.projectId,
-    batchId: readMetadataString(job, 'batchId'),
+    workspaceId: normalizeWorkspaceId(fromColumn ?? fromMetadata ?? fromProject),
+    batchId:
+      (typeof job.batchId === 'string' && job.batchId.trim() ? job.batchId.trim() : null) ??
+      readMetadataString(job, 'batchId'),
   };
 }

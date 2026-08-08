@@ -1,9 +1,10 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useMemo } from 'react';
 
 import { ErrorBoundary } from '../ErrorBoundary';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import type { StudioSystemOverlaysProps } from './types';
 import { getMountedSystemSurfaceKeys } from './studioSystemOverlaysUtils';
+import { useRuntimeLogs } from '../../contexts/RuntimeLogContext';
 
 const DebugPanel = React.lazy(() =>
   import('../DebugPanel').then((m) => ({ default: m.DebugPanel })),
@@ -36,7 +37,7 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
   },
   closeDebugPanel,
   closeChatPanel,
-  mergedLogs,
+  mergedLogs: backendMergedLogs,
   closeDashboard,
   visualGroupsCount,
   workspaces,
@@ -91,6 +92,15 @@ export const StudioSystemOverlays: React.FC<StudioSystemOverlaysProps> = ({
     onResetStudio,
     isResettingStudio,
   } = settingsModule;
+
+  // Client session logs subscribe here only — not in useStudioShell — so log
+  // updates do not invalidate workspace/header chrome.
+  const { logs: clientSessionLogs } = useRuntimeLogs();
+  const mergedLogs = useMemo(() => {
+    return [...backendMergedLogs, ...clientSessionLogs]
+      .sort((a, b) => b.timestamp - a.timestamp)
+      .slice(0, 100);
+  }, [backendMergedLogs, clientSessionLogs]);
 
   const mountedSurfaces = getMountedSystemSurfaceKeys({
     isDebugPanelOpen,

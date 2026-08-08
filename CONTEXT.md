@@ -6,6 +6,10 @@ Canonical language for the local-first image studio. This file defines the proje
 
 ### Storage and catalog
 
+**Workspace**:
+User-visible durable organization unit for generations and Catalog Entries. Stored in SQLite and exposed through `/api/workspaces`. Default id is the literal string `default`.
+_Avoid_: project (product), board, browser-only folder
+
 **Studio Library**:
 External local folder that stores assets, thumbnails, references, transcripts, logs, and SQLite state for the studio.
 _Avoid_: output folder, data dir, library path

@@ -22,6 +22,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
     projectId: overrides.projectId ?? 'project-1',
+    workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
     sourceSpec: overrides.sourceSpec ?? null,
@@ -44,7 +45,7 @@ function createJobSummary(overrides: Partial<Job> = {}): JobSummary {
     projectId: job.projectId,
     kind: job.kind,
     providerId: job.providerId,
-    workspaceId: null,
+    workspaceId: job.workspaceId,
     recipeId: job.sourceSpec?.recipeId ?? null,
     aspectRatio: job.sourceSpec?.output.aspectRatio ?? null,
     status: job.status,

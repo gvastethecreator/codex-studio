@@ -26,6 +26,7 @@ function createJob(id: string): Job {
   return {
     id,
     projectId: 'project-1',
+    workspaceId: 'default',
     kind: 'image_generate',
     providerId: null,
     sourceSpec: null,

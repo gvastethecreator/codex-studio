@@ -9,6 +9,7 @@ function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-asset-pathing',
     projectId: overrides.projectId ?? 'project-1',
+    workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
     sourceSpec: overrides.sourceSpec ?? null,

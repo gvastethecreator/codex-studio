@@ -55,53 +55,24 @@ import type {
   UserStylePreset,
 } from '../packages/shared/src';
 import { resolveStudioApiBase } from './studioRuntime';
+import { getStudioApiBase, readLocalStudioErrorMessage, request } from './studio-api/http';
+import {
+  createWorkspace,
+  deleteWorkspace,
+  listWorkspaces,
+  updateWorkspace,
+  type StudioWorkspaceDto,
+} from './studio-api/workspaces';
 
-export function readLocalStudioErrorMessage(text: string, status: number) {
-  const trimmed = text.trim();
-  if (trimmed) {
-    try {
-      const payload = JSON.parse(trimmed) as { error?: unknown; message?: unknown };
-      if (typeof payload.error === 'string' && payload.error.trim()) return payload.error.trim();
-      if (typeof payload.message === 'string' && payload.message.trim()) {
-        return payload.message.trim();
-      }
-    } catch {
-      return trimmed;
-    }
-    return trimmed;
-  }
-
-  return `Local studio request failed: ${status}`;
-}
-
-/**
- * Execute a JSON request against the local studio backend and surface readable
- * failures for both UI and tests.
- */
-async function request<T>(path: string, init?: RequestInit): Promise<T> {
-  const apiBase = resolveStudioApiBase();
-  const headers = new Headers(init?.headers);
-  headers.set('Content-Type', 'application/json');
-
-  const response = await fetch(`${apiBase}${path}`, {
-    ...init,
-    headers,
-  });
-
-  if (!response.ok) {
-    const text = await response.text();
-    throw new Error(readLocalStudioErrorMessage(text, response.status));
-  }
-
-  return response.json() as Promise<T>;
-}
-
-/**
- * Expose the resolved API base so UI layers and tests can generate stable URLs.
- */
-export function getStudioApiBase() {
-  return resolveStudioApiBase();
-}
+export {
+  getStudioApiBase,
+  readLocalStudioErrorMessage,
+  createWorkspace,
+  deleteWorkspace,
+  listWorkspaces,
+  updateWorkspace,
+};
+export type { StudioWorkspaceDto };
 
 export interface StudioAssetUrlOptions {
   variant?: 'thumb';
@@ -126,10 +97,13 @@ export function toStudioAssetUrl(publicUrl: string, options: StudioAssetUrlOptio
 }
 
 /**
- * Read the known studio projects from the Bun/Hono backend.
+ * @deprecated Projects API retired. Prefer listWorkspaces().
+ * Throws so callers fail loudly instead of receiving a 410 with wrong assumptions.
  */
-export async function listProjects() {
-  return request<Project[]>('/api/projects');
+export async function listProjects(): Promise<never> {
+  throw new Error(
+    'Projects API retired (code: projects_retired). Use listWorkspaces() and workspaceId on job create.',
+  );
 }
 
 /**
