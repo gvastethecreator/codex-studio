@@ -1,1 +1,0 @@
-- al estar en foco sobre la prompt input y trabajando dentro
