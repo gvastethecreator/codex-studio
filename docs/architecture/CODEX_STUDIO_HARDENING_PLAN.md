@@ -1,14 +1,20 @@
 # Codex Studio — Hardening Plan (error-resistant)
 
-**Status:** active execution plan (implementation in progress / residual tickets under `.scratch/codex-studio-hardening/issues/`)  
-**Plan version:** 2.1  
-**Date:** 2026-08-07 (baseline); residual audit 2026-08-08  
+**Status:** completed
+
+**Plan version:** 2.2
+
+**Date:** 2026-08-07 (baseline); implementation closed 2026-08-08
 **Baseline commit inspected:** `169d96541663d0c87a18e2de29990f43421a4ad0` (`main`)  
 **Supersedes:** root draft `codex-studio-hardening-architecture-plan.md` (audit notes)  
 **Audience:** implementers and agents  
 **Language rule:** short sentences, one name per concept, no optional “should” requirements
 
-> **Note:** §1 “Current truth” is the **pre-implementation baseline** from the audit date. Live product state after expand-contract is Workspace authority; Project product APIs return 410. Do not treat §1 as the live system description.
+> **Note:** §1 “Current truth” is the **pre-implementation baseline** from the audit date. Live product state after expand-contract is Workspace authority; Project product APIs are absent and return 404. Do not treat §1 as the live system description.
+
+## Implementation closure
+
+All 14 Definition of Done criteria are implemented. The release contract is `bun run validate:release`; `bun run validate:full` remains its compatibility alias. Closure requires a frozen install, both gates from a clean integrated snapshot, and an independent adversarial review with no blocking finding.
 
 ---
 

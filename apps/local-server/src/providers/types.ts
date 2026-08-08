@@ -7,7 +7,7 @@ import type { TurnResult } from '../codex/turn';
 
 export interface GenerationProviderJob {
   id: string;
-  projectId: string;
+  workspaceId: string;
   providerId?: GenerationProviderId | null;
   sourceSpec?: GenerationTaskSpec | null;
   prompt: string;

@@ -8,15 +8,27 @@ vi.mock('./catalog', () => ({
   registerCatalogImage: vi.fn(() => null),
 }));
 
-vi.mock('./db', () => ({
+vi.mock('./db/assets', () => ({
   addAsset: vi.fn(() => null),
-  addJobEvent: vi.fn(),
   getAssetByJobId: vi.fn(() => null),
+}));
+
+vi.mock('./db/events', () => ({
+  addJobEvent: vi.fn(),
+}));
+
+vi.mock('./db/jobs', () => ({
   getJob: vi.fn(() => null),
-  getSettingValue: vi.fn(() => null),
-  setSettingValue: vi.fn(),
   updateJobFinalization: vi.fn(() => null),
   updateJobStatus: vi.fn(() => null),
+}));
+
+vi.mock('./db/settings', () => ({
+  getSettingValue: vi.fn(() => null),
+  setSettingValue: vi.fn(),
+}));
+
+vi.mock('./db/codexTurns', () => ({
   upsertCodexTurn: vi.fn(() => 'turn-record-default'),
 }));
 
@@ -25,7 +37,6 @@ import { createWorkerController } from './worker';
 function createJob(id: string): Job {
   return {
     id,
-    projectId: 'project-1',
     workspaceId: 'default',
     kind: 'image_generate',
     providerId: null,

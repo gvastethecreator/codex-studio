@@ -104,7 +104,7 @@ function SpritesheetSidebar({
     <>
       <div
         className={`
-              fixed inset-x-3 z-50 flex max-h-[42vh] flex-col overflow-hidden rounded-2xl border border-white/8 bg-zinc-950/95 shadow-2xl backdrop-blur-xl transition-all duration-500 ease-out-expo sm:relative sm:inset-auto sm:z-auto sm:max-h-none sm:flex-shrink-0 sm:bg-black/40 sm:rounded-3xl
+              fixed inset-x-3 z-50 flex max-h-[42vh] flex-col overflow-hidden rounded-2xl border border-white/8 bg-zinc-950/95 shadow-2xl backdrop-blur-xl transition-[color,background-color,border-color,opacity,box-shadow,transform,filter] duration-500 ease-out-expo sm:relative sm:inset-auto sm:z-auto sm:max-h-none sm:flex-shrink-0 sm:bg-black/40 sm:rounded-3xl
               ${isOpen ? 'translate-y-0 opacity-100 sm:w-72' : 'pointer-events-none translate-y-4 opacity-0 sm:w-0 sm:border-0'}
            `}
         style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
@@ -129,7 +129,7 @@ function SpritesheetSidebar({
               type="button"
               key={i}
               onClick={() => onSetEditingCell(i)}
-              className={`group p-2.5 rounded-xl border transition-all duration-200 cursor-pointer appearance-none
+              className={`group p-2.5 rounded-xl border transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-200 cursor-pointer appearance-none
                               ${hoveredCell === i || editingCell === i ? 'bg-white/10 border-emerald-500/50 shadow-lg' : 'bg-black/20 border-white/5 hover:bg-white/5'}\n                          `}
               onMouseEnter={() => onSetHoveredCell(i)}
               onMouseLeave={() => onSetHoveredCell(null)}
@@ -160,7 +160,7 @@ function SpritesheetSidebar({
         <button
           type="button"
           onClick={onOpen}
-          className="fixed right-3 z-50 rounded-xl border border-white/10 bg-zinc-900 p-3 text-zinc-400 shadow-lg transition-all hover:bg-zinc-800 hover:text-white sm:absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 sm:rounded-l-xl sm:p-2"
+          className="fixed right-3 z-50 rounded-xl border border-white/10 bg-zinc-900 p-3 text-zinc-400 shadow-lg transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-zinc-800 hover:text-white sm:absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 sm:rounded-l-xl sm:p-2"
           style={{ bottom: 'calc(var(--studio-mobile-dock-height) + 0.75rem)' }}
           aria-label="Open cell editor"
         >
@@ -321,25 +321,20 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
         <div className="flex-1 flex flex-col items-center justify-center relative min-w-0 h-full">
           {/* Auto-Scaling Container */}
           <div
-            className={`relative border-2 border-dashed transition-all duration-500 ease-out-expo overflow-hidden shadow-2xl bg-zinc-900/30
+            className={`relative border-2 border-dashed transition-[background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo overflow-hidden shadow-2xl bg-zinc-900/30
                         ${hasDividers ? getDividerStyle(params.dividers) : 'border-white/20'}
                     `}
             style={gridContainerStyle}
           >
             {Array.from({ length: gridCols * gridRows }).map((_, i) => (
-              <button
-                type="button"
+              <div
                 key={i}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setEditingCell(i);
-                }}
                 onMouseEnter={() => setHoveredCell(i)}
                 onMouseLeave={() => setHoveredCell(null)}
                 style={{
                   backgroundColor: params.background === 'Custom' ? customColor : undefined,
                 }}
-                className={`relative flex items-center justify-center transition-all duration-200 cursor-text group min-w-0 min-h-0 overflow-hidden appearance-none border-none
+                className={`relative flex min-h-0 min-w-0 items-center justify-center overflow-hidden transition-[box-shadow] duration-200 group
                                 ${getBackgroundClass(params.background)}
                                 ${hoveredCell === i || editingCell === i ? 'ring-2 ring-emerald-400 z-10' : 'hover:ring-1 hover:ring-white/30'}
                             `}
@@ -363,7 +358,15 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                     />
                   </div>
                 ) : (
-                  <div className="absolute inset-0 p-1 flex flex-col items-center justify-center opacity-60 group-hover:opacity-100 transition-opacity">
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setEditingCell(i);
+                    }}
+                    className="absolute inset-0 flex cursor-text appearance-none flex-col items-center justify-center border-none bg-transparent p-1 opacity-60 transition-opacity group-hover:opacity-100"
+                    aria-label={`Edit cell ${i + 1} prompt`}
+                  >
                     <span
                       className={`text-[10px] font-black mb-0.5 drop-shadow-md ${isLightBg ? 'text-black/50' : 'text-white/30'}`}
                     >
@@ -375,9 +378,9 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
                     {hoveredCell === i && !cellPrompts[i] && (
                       <Edit3 size={12} className={isLightBg ? 'text-black/30' : 'text-white/30'} />
                     )}
-                  </div>
+                  </button>
                 )}
-              </button>
+              </div>
             ))}
           </div>
 

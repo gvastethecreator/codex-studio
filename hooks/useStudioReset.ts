@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { resetStudioData as requestStudioResetData } from '../services/localStudioService';
+import { resetStudioData as requestStudioResetData } from '../services/studio-api/runtime';
 import { clearAll as clearAllIndexedDb } from '../utils/idb';
 import { startViewTransition } from '../utils/transitionUtils';
 
@@ -10,8 +10,28 @@ interface UseStudioResetProps {
   resetStudioState: () => void;
   refreshRuntime: () => Promise<unknown>;
   clearGenerationState: () => void;
-  clearUiState: () => void;
+  ui: StudioUiResetActions;
   localStorageKeys?: readonly string[];
+}
+
+export interface StudioUiResetActions {
+  setActiveRecipe: (recipeId: null) => void;
+  setToolbarInteraction: (isInteracting: boolean) => void;
+  setKeyPopoverOpen: (isOpen: boolean) => void;
+  closeModal: () => void;
+  navigateToStudio: () => void;
+  clearSelectedJob: () => void;
+  resetViewState: () => void;
+}
+
+export function resetStudioUi(actions: StudioUiResetActions) {
+  actions.setActiveRecipe(null);
+  actions.setToolbarInteraction(false);
+  actions.setKeyPopoverOpen(false);
+  actions.closeModal();
+  actions.navigateToStudio();
+  actions.clearSelectedJob();
+  actions.resetViewState();
 }
 
 interface PerformStudioResetOptions {
@@ -79,7 +99,7 @@ export function useStudioReset({
   resetStudioState,
   refreshRuntime,
   clearGenerationState,
-  clearUiState,
+  ui,
   localStorageKeys = DEFAULT_RESET_LOCAL_STORAGE_KEYS,
 }: UseStudioResetProps) {
   const [isResettingStudio, setIsResettingStudio] = useState(false);
@@ -92,6 +112,38 @@ export function useStudioReset({
       isMountedRef.current = false;
     };
   }, []);
+
+  const {
+    setActiveRecipe,
+    setToolbarInteraction,
+    setKeyPopoverOpen,
+    closeModal,
+    navigateToStudio,
+    clearSelectedJob,
+    resetViewState,
+  } = ui;
+
+  const clearUiState = useCallback(
+    () =>
+      resetStudioUi({
+        setActiveRecipe,
+        setToolbarInteraction,
+        setKeyPopoverOpen,
+        closeModal,
+        navigateToStudio,
+        clearSelectedJob,
+        resetViewState,
+      }),
+    [
+      setActiveRecipe,
+      setToolbarInteraction,
+      setKeyPopoverOpen,
+      closeModal,
+      navigateToStudio,
+      clearSelectedJob,
+      resetViewState,
+    ],
+  );
 
   const resetStudio = useCallback(async () => {
     if (isResettingStudio) return;

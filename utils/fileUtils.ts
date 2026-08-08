@@ -59,8 +59,7 @@ export const downloadMultipleImagesAsZip = async (
   await Promise.all(
     images.map(async (img, index) => {
       try {
-        const response = await fetch(img.src);
-        const blob = await response.blob();
+        const blob = await fetchImageBlob(img.src);
         const filename = generateSmartFilename(
           img.config.prompt,
           img.id,
@@ -77,6 +76,14 @@ export const downloadMultipleImagesAsZip = async (
   const content = await zip.generateAsync({ type: 'blob' });
   saveAs(content, zipFilename);
 };
+
+export async function fetchImageBlob(source: string) {
+  const response = await fetch(source);
+  if (!response.ok) {
+    throw new Error(`Image request failed with HTTP ${response.status}.`);
+  }
+  return response.blob();
+}
 
 /**
  * Export any serializable payload as a downloadable JSON file.

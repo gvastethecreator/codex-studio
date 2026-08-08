@@ -1,7 +1,7 @@
 import { useCallback } from 'react';
 import { useStudioJobInspector } from './useStudioJobInspector';
 import type { ToastMessage } from './useToasts';
-import { cancelStudioJob, retryStudioJobById } from '../services/localStudioService';
+import { cancelStudioJob, retryStudioJobById } from '../services/studio-api/jobs';
 import { useLazyRef } from './useLazyRef';
 import type { ShellActivityJob } from '../lib/shellActivityJob';
 

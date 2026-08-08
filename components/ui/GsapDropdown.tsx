@@ -121,7 +121,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
 
     useEffect(() => {
       if (open) setIsMounted(true);
-    }, [open, triggerRef]);
+    }, [open]);
 
     const updatePortalPosition = useCallback(() => {
       if (!portal || !triggerRef?.current || !panelRef.current || typeof window === 'undefined') {
@@ -182,7 +182,7 @@ export const GsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
         document.removeEventListener('pointerdown', handlePointerDown, true);
         document.removeEventListener('keydown', handleKeyDown, true);
       };
-    }, [open]);
+    }, [open, triggerRef]);
 
     useGSAP(
       () => {

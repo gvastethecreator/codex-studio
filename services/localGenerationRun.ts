@@ -13,12 +13,9 @@ import {
 import { resolveGenerationConfig } from '../lib/recipeContext';
 import { materializeCatalogEntryImage } from '../lib/studioCatalogImageAdapter';
 import { buildGenerationTaskSpecFromRecipe } from '../lib/recipeModules';
-import {
-  cancelStudioJob,
-  createStudioJob,
-  getEditableStudioSettings,
-  queryCatalog,
-} from './localStudioService';
+import { cancelStudioJob, createStudioJob } from './studio-api/jobs';
+import { getEditableStudioSettings } from './studio-api/settings';
+import { queryCatalog } from './studio-api/catalog';
 import { resolveStudioApiBase } from './studioRuntime';
 import { createStudioEventStream, type StudioEventStream, watchJob } from './studioEventSource';
 import {

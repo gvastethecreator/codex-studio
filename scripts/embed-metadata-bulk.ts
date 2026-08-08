@@ -1,5 +1,5 @@
 import { initStudio } from '../apps/local-server/src/init';
-import { getDb } from '../apps/local-server/src/db';
+import { getDb } from '../apps/local-server/src/db/connection';
 import { embedMetadata, extractMetadata } from '../apps/local-server/src/metadataEmbedder';
 
 initStudio();

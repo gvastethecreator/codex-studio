@@ -1,7 +1,8 @@
 import { existsSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings, loadDotEnvLocal } from './config';
-import { ensureDefaultProject, ensureDefaultWorkspace, migrateDb } from './db';
+import { migrateDb } from './db/migrations';
+import { ensureDefaultWorkspace } from './db/workspaces';
 import { ensureLibrary, resolveLibraryPath } from './library';
 import { ensureDefaultLibrary } from './libraries';
 import { log } from './logger';
@@ -11,8 +12,6 @@ export function initStudio() {
   ensureLibrary();
   migrateDb();
   ensureDefaultLibrary();
-  // Project row may still exist for legacy columns; Workspace is product authority.
-  ensureDefaultProject();
   const defaultWorkspace = ensureDefaultWorkspace();
   const envPath = path.resolve(process.cwd(), '.env.local');
   const codexVersion = null;

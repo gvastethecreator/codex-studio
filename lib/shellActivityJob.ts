@@ -6,7 +6,6 @@ export type ShellActivityJobSource = 'backend_summary' | 'backend_event';
 
 export interface ShellActivityJob {
   id: string;
-  projectId?: string | null;
   kind: Job['kind'];
   providerId: Job['providerId'];
   status: Job['status'];
@@ -47,7 +46,6 @@ export function toShellActivityJob(
   const promptPreview = readPromptPreview(job);
   return {
     id: job.id,
-    projectId: job.projectId,
     kind: job.kind,
     providerId: job.providerId,
     status: job.status,

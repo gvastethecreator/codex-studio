@@ -6,7 +6,6 @@ import { resolveJobCatalogContext } from './workerCatalogContext';
 function job(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
-    projectId: overrides.projectId ?? 'project-1',
     // Empty column simulates pre-backfill rows so metadata dual-read can be tested.
     workspaceId: overrides.workspaceId ?? '',
     kind: overrides.kind ?? 'image_generate',
@@ -36,13 +35,13 @@ describe('resolveJobCatalogContext', () => {
       },
     });
 
-    expect(resolveJobCatalogContext(job({ projectId: 'project-1', sourceSpec }))).toEqual({
+    expect(resolveJobCatalogContext(job({ sourceSpec }))).toEqual({
       workspaceId: 'concepts',
       batchId: 'batch-9',
     });
   });
 
-  it('falls back to the project id when workspace metadata is absent or blank', () => {
+  it('falls back to the default workspace when metadata is absent or blank', () => {
     const sourceSpec = createGenerationTaskSpec({
       id: 'spec-1',
       task: 'image_generate',
@@ -53,8 +52,8 @@ describe('resolveJobCatalogContext', () => {
       },
     });
 
-    expect(resolveJobCatalogContext(job({ projectId: 'project-fallback', sourceSpec }))).toEqual({
-      workspaceId: 'project-fallback',
+    expect(resolveJobCatalogContext(job({ sourceSpec }))).toEqual({
+      workspaceId: 'default',
       batchId: null,
     });
   });

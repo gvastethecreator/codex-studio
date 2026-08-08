@@ -25,7 +25,7 @@ describe('externalProvider', () => {
     await expect(
       provider.run({
         id: 'job-fal',
-        projectId: 'project-1',
+        workspaceId: 'workspace-1',
         providerId: 'fal',
         prompt: 'small brass key',
         execution: null,
@@ -46,7 +46,7 @@ describe('externalProvider', () => {
     try {
       await provider.run({
         id: 'job-google',
-        projectId: 'project-1',
+        workspaceId: 'workspace-1',
         providerId: 'google',
         prompt: 'glass owl',
         execution: null,
@@ -85,7 +85,7 @@ describe('externalProvider', () => {
 
     const result = await provider.run({
       id: 'job-google',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google',
       prompt: 'fallback prompt',
       execution: { model: 'nano-banana', reasoningEffort: 'minimal', serviceTier: null },
@@ -129,7 +129,7 @@ describe('externalProvider', () => {
 
     const result = await provider.run({
       id: 'job-google',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google',
       prompt: 'glass owl',
       execution: null,
@@ -149,7 +149,7 @@ describe('externalProvider', () => {
     await expect(
       provider.run({
         id: 'job-fal',
-        projectId: 'project-1',
+        workspaceId: 'workspace-1',
         providerId: 'fal',
         prompt: 'small brass key',
         execution: null,

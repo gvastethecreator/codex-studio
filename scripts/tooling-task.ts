@@ -49,7 +49,7 @@ const UNIT_TEST_FILES = [
   'lib/recipeContext.test.ts',
   'lib/workspaceIdbMigration.test.ts',
   'packages/shared/src/workspaceContracts.test.ts',
-  'services/localStudioService.test.ts',
+  'services/studio-api/api.test.ts',
   'services/localGenerationRun.workspace.test.ts',
 ];
 
@@ -167,6 +167,11 @@ const TASKS: Record<string, TaskDefinition> = {
         args: ['run', 'architecture:verify'],
       },
       { label: 'Check', command: 'vp', args: ['check'] },
+      {
+        label: 'Environment Typecheck',
+        command: 'bun',
+        args: ['run', 'typecheck:environments'],
+      },
       { label: 'Test', command: 'vp', args: ['test', 'run'] },
       { label: 'UI Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
       {
@@ -178,37 +183,13 @@ const TASKS: Record<string, TaskDefinition> = {
     ],
   },
   'validate:full': {
-    description: 'Alias of validate (transition window).',
+    description: 'Compatibility alias of the complete release gate.',
     steps: [
       {
-        label: 'Architecture Verify',
+        label: 'Release Validate',
         command: 'bun',
-        args: ['run', 'architecture:verify'],
+        args: ['run', 'scripts/tooling-task.ts', 'validate:release'],
       },
-      { label: 'Check', command: 'vp', args: ['check'] },
-      { label: 'Test', command: 'vp', args: ['test', 'run'] },
-      {
-        label: 'UI Source Verify',
-        command: 'bun',
-        args: ['run', 'scripts/ui-demand-surface-audit.ts'],
-      },
-      {
-        label: 'Catalog Source Verify',
-        command: 'bun',
-        args: ['run', 'scripts/catalog-first-source-audit.ts'],
-      },
-      {
-        label: 'Library Layout Source Verify',
-        command: 'bun',
-        args: ['run', 'scripts/studio-library-layout-source-audit.ts'],
-      },
-      { label: 'Build', command: 'vp', args: ['build'], consoleMode: 'tail' },
-      {
-        label: 'UI Chunk Verify',
-        command: 'bun',
-        args: ['run', 'scripts/report-ui-chunks.ts', '--verify'],
-      },
-      { label: 'Server Build', command: 'bunx', args: SERVER_TYPECHECK_ARGS },
     ],
   },
   'validate:release': {
@@ -221,6 +202,16 @@ const TASKS: Record<string, TaskDefinition> = {
         args: ['run', 'providers:verify'],
       },
       {
+        label: 'Recipes Verify',
+        command: 'bun',
+        args: ['run', 'recipes:verify'],
+      },
+      {
+        label: 'Styles Verify',
+        command: 'bun',
+        args: ['run', 'styles:verify'],
+      },
+      {
         label: 'Docs Check',
         command: 'bun',
         args: ['run', 'scripts/check-docs.ts'],
@@ -231,13 +222,22 @@ const TASKS: Record<string, TaskDefinition> = {
         args: ['run', 'scripts/audit-repo-hygiene.ts', '--verify'],
       },
       {
-        label: 'Repo Assets Audit',
+        label: 'Repo Assets Verify',
         command: 'bun',
-        args: ['run', 'scripts/audit-repo-assets.ts'],
+        args: ['run', 'scripts/audit-repo-assets.ts', '--verify'],
+      },
+      {
+        label: 'Core Assets Smoke',
+        command: 'bun',
+        args: ['run', 'scripts/core-assets-smoke.ts'],
       },
     ],
   },
 };
+
+export function getToolingTaskDefinition(taskName: string) {
+  return TASKS[taskName];
+}
 
 function safeFileName(value: string) {
   return value
@@ -465,12 +465,12 @@ async function runStep(step: TaskStep, log: NodeJS.WritableStream, extraArgs: st
 export async function main() {
   const taskName = process.argv[2];
   const extraArgs = process.argv.slice(3);
-  if (!taskName || !(taskName in TASKS)) {
+  if (!taskName || !getToolingTaskDefinition(taskName)) {
     const available = Object.keys(TASKS).sort().join(', ');
     throw new Error(`Unknown tooling task "${taskName ?? ''}". Available tasks: ${available}`);
   }
 
-  const task = TASKS[taskName];
+  const task = getToolingTaskDefinition(taskName)!;
   const acceptsExtraArgs = task.steps.some((step) => step.appendExtraArgs);
   if (extraArgs.length > 0 && !acceptsExtraArgs) {
     throw new Error(`Task "${taskName}" does not accept extra arguments: ${extraArgs.join(' ')}`);

@@ -10,18 +10,20 @@ import {
   watchJob,
 } from './studioEventSource';
 
-vi.mock('./localStudioService', () => ({
+vi.mock('./studio-api/http', () => ({
   getStudioApiBase: () => 'http://127.0.0.1:4317',
+}));
+
+vi.mock('./studio-api/jobs', () => ({
   getStudioJobDetail: vi.fn(),
   listStudioJobs: vi.fn(async () => []),
 }));
 
-const { getStudioJobDetail, listStudioJobs } = await import('./localStudioService');
+const { getStudioJobDetail, listStudioJobs } = await import('./studio-api/jobs');
 
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
-    projectId: overrides.projectId ?? 'project-1',
     workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
@@ -42,7 +44,6 @@ function createJobSummary(overrides: Partial<Job> = {}): JobSummary {
   const job = createJob(overrides);
   return {
     id: job.id,
-    projectId: job.projectId,
     kind: job.kind,
     providerId: job.providerId,
     workspaceId: job.workspaceId,

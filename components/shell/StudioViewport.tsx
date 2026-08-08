@@ -4,8 +4,9 @@ import type { AppPageView } from '../../hooks/useHashRouter';
 import type { StudioPageController } from '../../lib/buildStudioPageController';
 import type { RecipeAliasId } from '../../lib/recipeAliases';
 import type { RecipeId } from '../../types';
+import { useGenerationDraft } from '../../contexts/GenerationContext';
 import { ErrorBoundary } from '../ErrorBoundary';
-import type { RecipePageProps } from '../RecipePage';
+import type { RecipePageProps, RecipePageRuntimeProps } from '../RecipePage';
 import { preloadRecipeComponent } from '../../lib/recipeRouteModules';
 import { LazySurfaceFallback } from '../ui/LazySurfaceFallback';
 import {
@@ -45,9 +46,37 @@ interface StudioViewportProps {
   direction: number;
   activeRecipe: RecipeId | null;
   activeRecipeAliasId: RecipeAliasId | null;
-  recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
+  recipePageProps: RecipePageRuntimeProps;
   studioPageController: StudioPageController;
   onSelectRecipe: (recipeId: RecipeId, aliasId?: RecipeAliasId | null) => void;
+}
+
+interface ConnectedRecipePageProps extends RecipePageRuntimeProps {
+  Component: React.ComponentType<RecipePageProps>;
+  activeRecipe: RecipeId;
+  activeRecipeAliasId: RecipeAliasId | null;
+}
+
+function ConnectedRecipePage({
+  Component,
+  activeRecipe,
+  activeRecipeAliasId,
+  ...runtimeProps
+}: ConnectedRecipePageProps) {
+  const draft = useGenerationDraft();
+
+  return (
+    <Component
+      {...runtimeProps}
+      activeRecipe={activeRecipe}
+      activeRecipeAliasId={activeRecipeAliasId}
+      generationConfig={draft.generationConfig}
+      updateGenerationConfig={draft.updateGenerationConfig}
+      updateAttachment={draft.updateAttachment}
+      handlePastedFiles={draft.handlePastedFiles}
+      handleAddToContext={draft.handleAddToContext}
+    />
+  );
 }
 
 export const StudioViewport: React.FC<StudioViewportProps> = ({
@@ -107,7 +136,8 @@ export const StudioViewport: React.FC<StudioViewportProps> = ({
       >
         <Suspense fallback={<LazySurfaceFallback label="Loading view" />}>
           {routeView === 'recipe' && activeRecipe ? (
-            <RouteRecipePage
+            <ConnectedRecipePage
+              Component={RouteRecipePage}
               activeRecipe={activeRecipe}
               {...recipePageProps}
               activeRecipeAliasId={activeRecipeAliasId}

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { shouldMountDemandDropdown } from './DemandMountedGsapDropdown';
+import { shouldMountDemandDropdown } from './demandMountedGsapDropdownPolicy';
 
 describe('shouldMountDemandDropdown', () => {
   it('keeps the animation runtime out of the tree until the first open', () => {

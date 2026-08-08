@@ -11,6 +11,7 @@ import { useGenerationConfig } from '../hooks/useGenerationConfig';
 import { useGenerationPipeline } from '../hooks/useGenerationPipeline';
 import { useRuntimeLogActions, useToastUi, useWorkspaceState } from './GlobalContext';
 import { useModalManager } from '../hooks/useModalManager';
+import { useLatestRef } from '../hooks/useLatestRef';
 
 interface GenerationContextType {
   config: {
@@ -67,7 +68,20 @@ interface GenerationContextType {
   };
 }
 
-const GenerationContext = createContext<GenerationContextType | undefined>(undefined);
+type GenerationDraftContextType = GenerationContextType['config'];
+type GenerationShellContextType = Omit<GenerationDraftContextType, 'generationConfig'> & {
+  generationConfigRef: React.RefObject<ImageGenerationConfig>;
+  aspectRatio: ImageGenerationConfig['aspectRatio'];
+};
+type GenerationRunContextType = GenerationContextType['pipeline'];
+type GenerationChromeContextType = Pick<GenerationContextType, 'recipe' | 'ui'>;
+type GenerationModalContextType = GenerationContextType['modal'];
+
+const GenerationDraftContext = createContext<GenerationDraftContextType | undefined>(undefined);
+const GenerationShellContext = createContext<GenerationShellContextType | undefined>(undefined);
+const GenerationRunContext = createContext<GenerationRunContextType | undefined>(undefined);
+const GenerationChromeContext = createContext<GenerationChromeContextType | undefined>(undefined);
+const GenerationModalContext = createContext<GenerationModalContextType | undefined>(undefined);
 
 interface GenerationProviderProps {
   children: ReactNode;
@@ -94,6 +108,7 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
   } = useModalManager(activeRecipe);
 
   const configHook = useGenerationConfig({ log });
+  const generationConfigRef = useLatestRef(configHook.generationConfig);
 
   const pipelineHook = useGenerationPipeline({
     generationConfig: configHook.generationConfig,
@@ -105,49 +120,20 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
     setIsInteractingWithToolbar,
   });
 
-  const value = useMemo<GenerationContextType>(
+  const draftValue = useMemo<GenerationDraftContextType>(
     () => ({
-      config: {
-        generationConfig: configHook.generationConfig,
-        setGenerationConfig: configHook.setGenerationConfig,
-        updateGenerationConfig: configHook.updateGenerationConfig,
-        updateAttachment: configHook.updateAttachment,
-        handleFileSelect: configHook.handleFileSelect,
-        handlePastedFiles: configHook.handlePastedFiles,
-        handleRemoveAttachment: configHook.handleRemoveAttachment,
-        handleAddToContext: configHook.handleAddToContext,
-        maxAttachments: configHook.maxAttachments,
-        codexModelCatalog: configHook.codexModelCatalog,
-        isLoadingCodexModelCatalog: configHook.isLoadingCodexModelCatalog,
-        codexModelCatalogError: configHook.codexModelCatalogError,
-      },
-      pipeline: {
-        isGenerating: pipelineHook.isGenerating,
-        generationStartTime: pipelineHook.generationStartTime,
-        executeGeneration: pipelineHook.executeGeneration,
-        executeEdit: pipelineHook.executeEdit,
-        activeGenerationConfig: pipelineHook.activeGenerationConfig,
-      },
-      recipe: {
-        activeRecipe,
-        setActiveRecipe,
-      },
-      ui: {
-        isInteractingWithToolbar,
-        setIsInteractingWithToolbar,
-        isKeyPopoverOpen,
-        setIsKeyPopoverOpen,
-      },
-      modal: {
-        modalImage,
-        activeCarouselId,
-        setActiveCarouselId,
-        transitioningImageId,
-        openModal,
-        closeModal,
-        isModalOpen,
-        setModalImage,
-      },
+      generationConfig: configHook.generationConfig,
+      setGenerationConfig: configHook.setGenerationConfig,
+      updateGenerationConfig: configHook.updateGenerationConfig,
+      updateAttachment: configHook.updateAttachment,
+      handleFileSelect: configHook.handleFileSelect,
+      handlePastedFiles: configHook.handlePastedFiles,
+      handleRemoveAttachment: configHook.handleRemoveAttachment,
+      handleAddToContext: configHook.handleAddToContext,
+      maxAttachments: configHook.maxAttachments,
+      codexModelCatalog: configHook.codexModelCatalog,
+      isLoadingCodexModelCatalog: configHook.isLoadingCodexModelCatalog,
+      codexModelCatalogError: configHook.codexModelCatalogError,
     }),
     [
       configHook.generationConfig,
@@ -162,17 +148,87 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
       configHook.codexModelCatalog,
       configHook.isLoadingCodexModelCatalog,
       configHook.codexModelCatalogError,
+    ],
+  );
+  const runValue = useMemo<GenerationRunContextType>(
+    () => ({
+      isGenerating: pipelineHook.isGenerating,
+      generationStartTime: pipelineHook.generationStartTime,
+      executeGeneration: pipelineHook.executeGeneration,
+      executeEdit: pipelineHook.executeEdit,
+      activeGenerationConfig: pipelineHook.activeGenerationConfig,
+    }),
+    [
       pipelineHook.isGenerating,
       pipelineHook.generationStartTime,
       pipelineHook.executeGeneration,
       pipelineHook.executeEdit,
       pipelineHook.activeGenerationConfig,
+    ],
+  );
+  const shellValue = useMemo<GenerationShellContextType>(
+    () => ({
+      generationConfigRef,
+      aspectRatio: configHook.generationConfig.aspectRatio,
+      setGenerationConfig: configHook.setGenerationConfig,
+      updateGenerationConfig: configHook.updateGenerationConfig,
+      updateAttachment: configHook.updateAttachment,
+      handleFileSelect: configHook.handleFileSelect,
+      handlePastedFiles: configHook.handlePastedFiles,
+      handleRemoveAttachment: configHook.handleRemoveAttachment,
+      handleAddToContext: configHook.handleAddToContext,
+      maxAttachments: configHook.maxAttachments,
+      codexModelCatalog: configHook.codexModelCatalog,
+      isLoadingCodexModelCatalog: configHook.isLoadingCodexModelCatalog,
+      codexModelCatalogError: configHook.codexModelCatalogError,
+    }),
+    [
+      generationConfigRef,
+      configHook.generationConfig.aspectRatio,
+      configHook.setGenerationConfig,
+      configHook.updateGenerationConfig,
+      configHook.updateAttachment,
+      configHook.handleFileSelect,
+      configHook.handlePastedFiles,
+      configHook.handleRemoveAttachment,
+      configHook.handleAddToContext,
+      configHook.maxAttachments,
+      configHook.codexModelCatalog,
+      configHook.isLoadingCodexModelCatalog,
+      configHook.codexModelCatalogError,
+    ],
+  );
+  const chromeValue = useMemo<GenerationChromeContextType>(
+    () => ({
+      recipe: { activeRecipe, setActiveRecipe },
+      ui: {
+        isInteractingWithToolbar,
+        setIsInteractingWithToolbar,
+        isKeyPopoverOpen,
+        setIsKeyPopoverOpen,
+      },
+    }),
+    [
       activeRecipe,
       setActiveRecipe,
       isInteractingWithToolbar,
       setIsInteractingWithToolbar,
       isKeyPopoverOpen,
       setIsKeyPopoverOpen,
+    ],
+  );
+  const modalValue = useMemo<GenerationModalContextType>(
+    () => ({
+      modalImage,
+      activeCarouselId,
+      setActiveCarouselId,
+      transitioningImageId,
+      openModal,
+      closeModal,
+      isModalOpen,
+      setModalImage,
+    }),
+    [
       modalImage,
       activeCarouselId,
       setActiveCarouselId,
@@ -184,11 +240,50 @@ export const GenerationProvider: React.FC<GenerationProviderProps> = ({ children
     ],
   );
 
-  return <GenerationContext.Provider value={value}>{children}</GenerationContext.Provider>;
+  return (
+    <GenerationShellContext.Provider value={shellValue}>
+      <GenerationDraftContext.Provider value={draftValue}>
+        <GenerationRunContext.Provider value={runValue}>
+          <GenerationChromeContext.Provider value={chromeValue}>
+            <GenerationModalContext.Provider value={modalValue}>
+              {children}
+            </GenerationModalContext.Provider>
+          </GenerationChromeContext.Provider>
+        </GenerationRunContext.Provider>
+      </GenerationDraftContext.Provider>
+    </GenerationShellContext.Provider>
+  );
 };
 
+function useRequiredGenerationContext<T>(context: React.Context<T | undefined>, hookName: string) {
+  const value = use(context);
+  if (value === undefined) {
+    throw new Error(`${hookName} must be used within a GenerationProvider`);
+  }
+  return value;
+}
+
+export const useGenerationDraft = () =>
+  useRequiredGenerationContext(GenerationDraftContext, 'useGenerationDraft');
+
+export const useGenerationShell = () =>
+  useRequiredGenerationContext(GenerationShellContext, 'useGenerationShell');
+
+export const useGenerationRun = () =>
+  useRequiredGenerationContext(GenerationRunContext, 'useGenerationRun');
+
+export const useGenerationChrome = () =>
+  useRequiredGenerationContext(GenerationChromeContext, 'useGenerationChrome');
+
+export const useGenerationModal = () =>
+  useRequiredGenerationContext(GenerationModalContext, 'useGenerationModal');
+
 export const useGeneration = () => {
-  const context = use(GenerationContext);
+  const config = useGenerationDraft();
+  const pipeline = useGenerationRun();
+  const { recipe, ui } = useGenerationChrome();
+  const modal = useGenerationModal();
+  const context: GenerationContextType = { config, pipeline, recipe, ui, modal };
   if (context === undefined) {
     throw new Error('useGeneration must be used within a GenerationProvider');
   }

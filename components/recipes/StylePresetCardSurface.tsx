@@ -7,7 +7,7 @@ import {
   IconPalette as Palette,
   IconPlus as Plus,
 } from '@tabler/icons-react';
-import React, { useCallback, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useLayoutEffect, useMemo, useRef, useState } from 'react';
 
 import type { GeneratedImageWithConfig } from '../../types';
 import {
@@ -277,11 +277,9 @@ export const StylePresetCard = React.memo(function StylePresetCard({
     activeCardImage,
   });
 
-  const prevImageCountRef = useRef(cardImages.length);
-  if (prevImageCountRef.current !== cardImages.length) {
-    prevImageCountRef.current = cardImages.length;
+  useLayoutEffect(() => {
     setImageIndex(0);
-  }
+  }, [cardImages.length]);
 
   const applyHoverPreview = useCallback(
     (imageSrc: string | null) => {
@@ -307,15 +305,13 @@ export const StylePresetCard = React.memo(function StylePresetCard({
   const handleCycle = useCallback(
     (delta: number) => {
       if (!hasMultipleImages) return;
-      setImageIndex((current) => {
-        const next = (current + delta + cardImages.length) % cardImages.length;
-        if (isHoveredRef.current) {
-          queueMicrotask(() => syncHoverPreview(next));
-        }
-        return next;
-      });
+      const next = (imageIndex + delta + cardImages.length) % cardImages.length;
+      setImageIndex(next);
+      if (isHoveredRef.current) {
+        queueMicrotask(() => syncHoverPreview(next));
+      }
     },
-    [cardImages.length, hasMultipleImages, syncHoverPreview],
+    [cardImages.length, hasMultipleImages, imageIndex, syncHoverPreview],
   );
 
   return (

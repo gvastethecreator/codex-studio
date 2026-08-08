@@ -35,7 +35,8 @@ import {
   getAnimationSequenceGifUrl,
   listAnimationSequenceRuns,
   runAnimationSequenceQa,
-} from '../../services/localStudioService';
+} from '../../services/studio-api/animationSequences';
+import { parseBoundedNumberInput } from './animationSequenceNumberInput';
 
 interface AnimationSequenceRecipeProps {
   config: ImageGenerationConfig;
@@ -161,7 +162,10 @@ function NumberField({
         min={min}
         max={max}
         value={value}
-        onChange={(event) => onChange(Number(event.target.value))}
+        onChange={(event) => {
+          const nextValue = parseBoundedNumberInput(event.target.value, min, max);
+          if (nextValue !== null) onChange(nextValue);
+        }}
         className="h-9 rounded-md border border-white/10 bg-black/35 px-2 text-sm font-bold text-white outline-none transition-colors focus:border-amber-400/50"
       />
     </label>

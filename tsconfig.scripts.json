@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "types": ["bun", "node"],
+    "moduleDetection": "force",
+    "noEmit": true
+  },
+  "include": ["scripts/**/*.ts", "vite.config.ts"],
+  "exclude": [
+    "scripts/**/*.test.ts",
+    "scripts/core-assets-browser-smoke.ts",
+    "scripts/verify-responsive-mobile.ts",
+    "scripts/verify-styles-browser-gate.ts"
+  ]
+}

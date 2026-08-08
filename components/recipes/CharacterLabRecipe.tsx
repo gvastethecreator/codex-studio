@@ -44,7 +44,6 @@ import {
   CHARACTER_LAB_OPTION_ICON_ATLAS_URL,
   CHARACTER_LAB_OPTION_ICON_ATLAS_WIDTH,
   CHARACTER_LAB_OPTION_ICON_FRAMES,
-  CHARACTER_LAB_OPTION_ICON_SOURCE_URLS,
 } from '../../lib/characterLabOptionIconAtlas.generated';
 import { buildCharacterLabPrompt } from '../../lib/characterLabPrompt';
 import { resolveRecipeAlias, type RecipeAliasId } from '../../lib/recipeAliases';
@@ -83,6 +82,13 @@ const MODE_ICON_IDS: Record<CharacterLabModeId, string> = {
   effects: 'effects:zoom_out_fill',
   profile: 'profile:basic-info',
 };
+
+const SELECTED_INPUT_PREVIEW_SLOT_IDS = [
+  'source-preview',
+  'reference-preview-1',
+  'reference-preview-2',
+  'reference-preview-3',
+] as const;
 
 const ACCENT_CLASSES: Record<string, { text: string; border: string; bg: string; soft: string }> = {
   amber: {
@@ -317,12 +323,6 @@ function getOptionIconId(kind: SelectFieldKind, option: string) {
   const optionText = getDropdownOptionText(kind, option);
   const slugSource = kind === 'style' ? optionText.primary : option;
   return `option:${OPTION_FIELD_BY_KIND[kind]}:${slugifyOption(slugSource)}`;
-}
-
-function getOptionSourceUrl(id: string) {
-  return CHARACTER_LAB_OPTION_ICON_SOURCE_URLS[
-    id as keyof typeof CHARACTER_LAB_OPTION_ICON_SOURCE_URLS
-  ];
 }
 
 function getDropdownOptionIcon(kind: SelectFieldKind, option: string) {
@@ -620,7 +620,6 @@ interface PreviewOptionItem {
   detail: string;
   iconId: string;
   fallbackIconId: string;
-  sourceUrl?: string;
 }
 
 function PreviewOptionCard({
@@ -637,15 +636,7 @@ function PreviewOptionCard({
       }`}
     >
       <div className="relative flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-lg bg-black">
-        {item.sourceUrl ? (
-          <img
-            src={item.sourceUrl}
-            alt=""
-            className="size-full object-contain p-1 transition-transform duration-300 group-hover:scale-[1.035]"
-          />
-        ) : (
-          <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={64} />
-        )}
+        <CharacterLabOptionIcon id={item.iconId} fallbackId={item.fallbackIconId} size={64} />
         <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/[0.06]" />
         <span className="absolute left-1.5 top-1.5 rounded-md border border-white/10 bg-black/70 px-1.5 py-0.5 text-[7px] font-black uppercase tracking-widest text-zinc-500">
           {item.label}
@@ -997,7 +988,6 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
           detail: optionText.detail,
           iconId,
           fallbackIconId: getDropdownOptionIcon(kind, option),
-          sourceUrl: getOptionSourceUrl(iconId),
         };
       }),
     [bodyType, clothing, expression, labAspectRatio, style],
@@ -1458,7 +1448,7 @@ const CharacterLabRecipeSession: React.FC<CharacterLabRecipeProps> = ({
                     .slice(0, 4)
                     .map((attachment, index) => (
                       <div
-                        key={attachment?.id ?? `preview-empty-${index}`}
+                        key={attachment?.id ?? SELECTED_INPUT_PREVIEW_SLOT_IDS[index]}
                         className="relative aspect-[4/5] overflow-hidden rounded-md border border-white/10 bg-zinc-950"
                       >
                         {attachment ? (

@@ -1,4 +1,5 @@
-import React, { useState, useCallback, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useCallback, useEffect, useMemo } from 'react';
+import { useLatestRef } from './useLatestRef';
 import type {
   ImageGenerationConfig,
   Attachment,
@@ -16,11 +17,9 @@ import {
   normalizeCodexSpeed,
   pickPreferredCodexModel,
 } from '../lib/codexExecution';
-import {
-  createReferenceHandoff,
-  getCodexModelCatalog,
-  toStudioAssetUrl,
-} from '../services/localStudioService';
+import { createReferenceHandoff } from '../services/studio-api/jobs';
+import { getCodexModelCatalog } from '../services/studio-api/codex';
+import { toStudioAssetUrl } from '../services/studio-api/assetUrls';
 import type { CodexModel, CodexModelCatalogResponse } from '../packages/shared/src';
 import {
   filterPersistableInlineAttachments,
@@ -118,8 +117,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     error: null,
   });
 
-  const logRef = useRef(log);
-  logRef.current = log;
+  const logRef = useLatestRef(log);
 
   const maxAttachments = 5;
 
@@ -131,7 +129,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
       }));
       logRef.current(`Context trimmed to ${maxAttachments} for current model.`);
     }
-  }, [generationConfig.attachments.length, maxAttachments, setGenerationConfig]);
+  }, [generationConfig.attachments.length, logRef, maxAttachments, setGenerationConfig]);
 
   useEffect(() => {
     const normalizedRatio = normalizeImageGenRatio(generationConfig.aspectRatio);
@@ -144,7 +142,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
         `Aspect ratio normalized to ${normalizedRatio} for Codex ImageGen compatibility.`,
       );
     }
-  }, [generationConfig.aspectRatio, setGenerationConfig]);
+  }, [generationConfig.aspectRatio, logRef, setGenerationConfig]);
 
   useEffect(() => {
     const executionModel = generationConfig.executionModel?.trim();
@@ -174,6 +172,7 @@ export const useGenerationConfig = ({ log }: UseGenerationConfigProps) => {
     generationConfig.executionModel,
     generationConfig.executionReasoningEffort,
     generationConfig.executionSpeed,
+    logRef,
     setGenerationConfig,
   ]);
 

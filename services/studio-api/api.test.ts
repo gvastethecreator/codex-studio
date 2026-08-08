@@ -1,11 +1,8 @@
 import { afterEach, describe, expect, it, vi } from 'vite-plus/test';
 
-import {
-  buildCatalogQuery,
-  getStudioRuntimeSnapshot,
-  readLocalStudioErrorMessage,
-  refreshStudioReadiness,
-} from './localStudioService';
+import { buildCatalogQuery } from './catalog';
+import { readLocalStudioErrorMessage } from './http';
+import { getStudioRuntimeSnapshot, refreshStudioReadiness } from './runtime';
 
 function jsonResponse(value: unknown) {
   return new Response(JSON.stringify(value), {

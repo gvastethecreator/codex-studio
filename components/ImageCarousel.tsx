@@ -32,6 +32,7 @@ import {
   resolveStudioCarouselDisplaySrc,
   resolveStudioCarouselFallbackSrc,
 } from '../lib/studioCarouselImage';
+import { useLatestRef } from '../hooks/useLatestRef';
 
 interface ImageCarouselProps {
   activeImage: GeneratedImageWithConfig | null;
@@ -158,6 +159,13 @@ const CarouselImageItem: React.FC<{
     startAnimation();
   };
 
+  const finishPointerDrag = (e: React.PointerEvent<HTMLDivElement>) => {
+    isDragging.current = false;
+    if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+      e.currentTarget.releasePointerCapture(e.pointerId);
+    }
+  };
+
   const updateZoom = (nextScale: number) => {
     const clampedScale = Math.min(Math.max(nextScale, 1), 15);
     target.current.scale = clampedScale;
@@ -219,7 +227,9 @@ const CarouselImageItem: React.FC<{
       onWheel={handleWheel}
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
-      onPointerUp={() => (isDragging.current = false)}
+      onPointerUp={finishPointerDrag}
+      onPointerCancel={finishPointerDrag}
+      onLostPointerCapture={finishPointerDrag}
       onKeyDown={handleKeyDown}
       onDoubleClick={() => {
         if (isSliding) return;
@@ -528,10 +538,11 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
   const prevActiveImageIdRef = useRef(activeImage?.id);
   const lastSetIndexRef = useRef(activeIndex);
 
-  if (prevActiveImageIdRef.current !== activeImage?.id) {
+  React.useLayoutEffect(() => {
+    if (prevActiveImageIdRef.current === activeImage?.id) return;
     prevActiveImageIdRef.current = activeImage?.id;
     lastSetIndexRef.current = activeIndex;
-  }
+  }, [activeImage?.id, activeIndex]);
 
   const [carouselState, setCarouselState] = useState({
     direction: 0,
@@ -556,11 +567,12 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const navScrollRef = useRef<HTMLDivElement>(null);
 
-  if (activeIndex >= allImages.length && allImages.length > 0) {
+  useEffect(() => {
+    if (activeIndex < allImages.length || allImages.length === 0) return;
     const clampedIndex = allImages.length - 1;
     lastSetIndexRef.current = clampedIndex;
     onActiveImageChange(allImages[clampedIndex].id);
-  }
+  }, [activeIndex, allImages, onActiveImageChange]);
 
   const handleJumpTo = useCallback(
     (index: number) => {
@@ -601,14 +613,10 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
     setCarouselState(finishCarouselSlideState);
   }, []);
 
-  const handleNextRef = useRef(handleNext);
-  handleNextRef.current = handleNext;
-  const handlePrevRef = useRef(handlePrev);
-  handlePrevRef.current = handlePrev;
-  const onCloseRef = useRef(onClose);
-  onCloseRef.current = onClose;
-  const isFullscreenRef = useRef(isFullscreen);
-  isFullscreenRef.current = isFullscreen;
+  const handleNextRef = useLatestRef(handleNext);
+  const handlePrevRef = useLatestRef(handlePrev);
+  const onCloseRef = useLatestRef(onClose);
+  const isFullscreenRef = useLatestRef(isFullscreen);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -627,7 +635,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('keyup', handleKeyUp);
     };
-  }, []);
+  }, [handleNextRef, handlePrevRef, isFullscreenRef, onCloseRef]);
 
   const currentImage =
     activeIndex >= 0 && activeIndex < allImages.length ? allImages[activeIndex] : activeImage;
@@ -738,7 +746,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
               animate="center"
               exit="exit"
               onAnimationComplete={handleSlideAnimationComplete}
-              className="absolute inset-0 size-full flex items-center justify-center will-change-transform pointer-events-auto"
+              className={`absolute inset-0 size-full flex items-center justify-center pointer-events-auto ${isSliding ? 'will-change-transform' : ''}`}
             >
               <CarouselImageItem
                 key={`${currentImage.id}:${isComparing ? 'compare' : 'result'}`}

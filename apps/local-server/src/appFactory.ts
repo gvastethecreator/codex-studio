@@ -5,8 +5,11 @@ import { readCodexRuntimeDoctor } from './codexRuntimeDoctor';
 import { createCatalogCommands } from './catalogCommands';
 import { createCatalogRoutes } from './catalogRoutes';
 import { createDefaultCatalogStore, type StudioCatalogStore } from './catalogStore';
-import { createDefaultDbStore, type StudioDbStore } from './dbStore';
-import { ensureDefaultWorkspace, getSettingValue, setSettingValue } from './db';
+import { listAssets } from './db/assets';
+import { listLogs } from './db/events';
+import { createJob, getJob, listJobSummaries, requeueJob, updateJobFinalPrompt } from './db/jobs';
+import { getSettingValue, setSettingValue } from './db/settings';
+import { ensureDefaultWorkspace } from './db/workspaces';
 import { getCurrentEventRevision, publishEvent, subscribeEvents } from './events';
 import { initStudio } from './init';
 import { inspectLibrary, resolvePublicLibraryPath, toPublicAssetUrl } from './library';
@@ -92,6 +95,32 @@ export interface StudioAppInstance {
   shutdown(): Promise<void>;
 }
 
+export interface StudioJobStore {
+  createJob: typeof createJob;
+  updateJobFinalPrompt: typeof updateJobFinalPrompt;
+  requeueJob: typeof requeueJob;
+  getJob: typeof getJob;
+  listJobSummaries: typeof listJobSummaries;
+}
+
+export interface StudioAssetStore {
+  listAssets: typeof listAssets;
+}
+
+export interface StudioLogStore {
+  listLogs: typeof listLogs;
+}
+
+const defaultJobStore: StudioJobStore = {
+  createJob,
+  updateJobFinalPrompt,
+  requeueJob,
+  getJob,
+  listJobSummaries,
+};
+const defaultAssetStore: StudioAssetStore = { listAssets };
+const defaultLogStore: StudioLogStore = { listLogs };
+
 export interface CreateStudioAppOptions {
   runInit?: boolean;
   dependencies?: {
@@ -106,7 +135,9 @@ export interface CreateStudioAppOptions {
     libraryRoutes?: Partial<LibrariesRoutesDependencies>;
     workspaceRoutes?: Partial<WorkspaceRoutesDependencies>;
     catalogStore?: StudioCatalogStore;
-    dbStore?: StudioDbStore;
+    jobStore?: StudioJobStore;
+    assetStore?: StudioAssetStore;
+    logStore?: StudioLogStore;
     userStyleStore?: UserStyleStore;
     settingsStorage?: StudioSettingsStorage;
     worker?: Pick<
@@ -142,7 +173,9 @@ export async function createStudioApp(
       ? async () => readCodexRuntimeDoctorFn()
       : undefined,
   });
-  const dbStore = options.dependencies?.dbStore ?? (await createDefaultDbStore());
+  const jobStore = options.dependencies?.jobStore ?? defaultJobStore;
+  const assetStore = options.dependencies?.assetStore ?? defaultAssetStore;
+  const logStore = options.dependencies?.logStore ?? defaultLogStore;
   const catalogStore = options.dependencies?.catalogStore ?? (await createDefaultCatalogStore());
   const userStyleStore = options.dependencies?.userStyleStore ?? createDefaultUserStyleStore();
   const appLogger = options.dependencies?.logger ?? log;
@@ -258,42 +291,19 @@ export async function createStudioApp(
     }),
   );
 
-  // Project routes retired: Workspace is the organization authority.
-  app.all('/api/projects', (c) =>
-    c.json(
-      {
-        error: 'Projects API removed',
-        code: 'projects_retired',
-        reason: 'Use /api/workspaces. Workspace is the durable organization authority.',
-      },
-      410,
-    ),
-  );
-  app.all('/api/projects/*', (c) =>
-    c.json(
-      {
-        error: 'Projects API removed',
-        code: 'projects_retired',
-        reason: 'Use /api/workspaces. Workspace is the durable organization authority.',
-      },
-      410,
-    ),
-  );
-
   app.route(
     '/api/jobs',
     createJobRoutes({
-      listJobs: () => dbStore.listJobSummaries(),
-      getJob: (jobId) => dbStore.getJob(jobId),
+      listJobs: () => jobStore.listJobSummaries(),
+      getJob: (jobId) => jobStore.getJob(jobId),
       getJobDetail,
-      requeueJob: (jobId) => dbStore.requeueJob(jobId),
+      requeueJob: (jobId) => jobStore.requeueJob(jobId),
       cancelQueuedOrRunningJob: (jobId) => workerController.cancelQueuedOrRunningJob(jobId),
       ensureDefaultWorkspaceId: () => ensureDefaultWorkspace()?.id ?? 'default',
       createJobId: () => randomUUID(),
       createJob: (input) =>
-        dbStore.createJob({
+        jobStore.createJob({
           id: input.id,
-          projectId: input.projectId ?? null,
           workspaceId: input.workspaceId,
           kind: input.kind,
           providerId: input.providerId,
@@ -303,7 +313,7 @@ export async function createStudioApp(
           libraryContext: input.libraryContext,
         }),
       updateJobFinalPrompt: (jobId, finalPrompt) =>
-        dbStore.updateJobFinalPrompt(jobId, finalPrompt),
+        jobStore.updateJobFinalPrompt(jobId, finalPrompt),
       processReferences: (jobId, prompt, references, libraryDir) =>
         processReferences(jobId, prompt, references ?? [], libraryDir),
       hydrateSourceSpecAssetPaths: (
@@ -371,8 +381,8 @@ export async function createStudioApp(
   app.route(
     '/api',
     createAssetLogRoutes({
-      listAssets: () => dbStore.listAssets(),
-      listLogs: () => dbStore.listLogs(),
+      listAssets: () => assetStore.listAssets(),
+      listLogs: () => logStore.listLogs(),
     }),
   );
 

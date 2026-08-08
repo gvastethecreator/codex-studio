@@ -1,14 +1,11 @@
 import React from 'react';
 
 import type { GsapDropdownProps } from './GsapDropdown';
+import { shouldMountDemandDropdown } from './demandMountedGsapDropdownPolicy';
 
 const LazyGsapDropdown = React.lazy(() =>
   import('./GsapDropdown').then((module) => ({ default: module.GsapDropdown })),
 );
-
-export function shouldMountDemandDropdown(open: boolean, hasOpened: boolean) {
-  return open || hasOpened;
-}
 
 export const DemandMountedGsapDropdown = React.forwardRef<HTMLDivElement, GsapDropdownProps>(
   ({ open, ...props }, forwardedRef) => {

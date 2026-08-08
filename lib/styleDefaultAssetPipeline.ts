@@ -89,8 +89,6 @@ export interface StyleDefaultFailureInput {
 }
 
 export interface StyleDefaultJobRequestInput {
-  /** @deprecated Use workspaceId. */
-  projectId?: string;
   workspaceId?: string;
   prompt: string;
 }

@@ -1,144 +1,55 @@
-import { randomUUID } from 'node:crypto';
-import { Hono } from 'hono';
+import { Hono, type Context } from 'hono';
+import { Either, Schema } from 'effect';
+
 import {
-  DEFAULT_WORKSPACE_ID,
-  isDefaultWorkspaceId,
-} from '../../../packages/shared/src/workspaceContracts';
-import { getDb } from './db';
+  CreateStudioWorkspaceRequestSchema,
+  UpdateStudioWorkspaceRequestSchema,
+} from '../../../packages/shared/src/studioApiSchemas';
+
+import {
+  createWorkspaceInDb,
+  deleteWorkspaceFromDb,
+  getWorkspaceFromDb,
+  listWorkspacesFromDb,
+  updateWorkspaceInDb,
+  type DeleteWorkspaceResult,
+} from './db/workspaces';
+import { getDb } from './db/connection';
 import { getDefaultLibrary } from './libraries';
 
-export interface CatalogWorkspace {
-  id: string;
-  name: string;
-  libraryId: string | null;
-  filterJson: unknown;
-  sortOrder: string;
-  createdAt: string;
-  updatedAt: string;
-}
-
-function now() {
-  return new Date().toISOString();
-}
-
-function parseJson(value: string | null) {
-  if (!value) return {};
-  try {
-    return JSON.parse(value);
-  } catch {
-    return {};
-  }
-}
-
-function mapWorkspace(row: any): CatalogWorkspace {
-  return {
-    id: row.id,
-    name: row.name,
-    libraryId: row.library_id,
-    filterJson: parseJson(row.filter_json),
-    sortOrder: row.sort_order,
-    createdAt: row.created_at,
-    updatedAt: row.updated_at ?? row.created_at,
-  };
-}
-
-function ensureDefaultWorkspace() {
-  const existing = getCatalogWorkspace(DEFAULT_WORKSPACE_ID);
-  if (existing) return existing;
-  const timestamp = now();
-  getDb()
-    .query(
-      'INSERT INTO workspaces (id, name, library_id, filter_json, sort_order, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)',
-    )
-    .run(
-      DEFAULT_WORKSPACE_ID,
-      'Default',
-      getDefaultLibrary().id,
-      '{}',
-      'newest',
-      timestamp,
-      timestamp,
-    );
-  return getCatalogWorkspace(DEFAULT_WORKSPACE_ID)!;
-}
-
 function listCatalogWorkspaces() {
-  ensureDefaultWorkspace();
-  return getDb().query('SELECT * FROM workspaces ORDER BY created_at ASC').all().map(mapWorkspace);
+  return listWorkspacesFromDb(getDb(), getDefaultLibrary().id);
 }
 
 function getCatalogWorkspace(id: string) {
-  const row = getDb().query('SELECT * FROM workspaces WHERE id = ?').get(id);
-  return row ? mapWorkspace(row) : null;
+  return getWorkspaceFromDb(getDb(), id);
 }
 
 function createCatalogWorkspace(input: {
   id?: string;
   name: string;
   libraryId?: string | null;
-  filterJson?: unknown;
-  sortOrder?: string;
+  filter?: Record<string, unknown>;
+  sortOrder?: 'newest' | 'oldest' | 'favorite';
 }) {
-  const timestamp = now();
-  const workspace: CatalogWorkspace = {
-    id: input.id?.trim() || randomUUID(),
-    name: input.name.trim() || 'Untitled Workspace',
-    libraryId: input.libraryId ?? getDefaultLibrary().id,
-    filterJson: input.filterJson ?? {},
-    sortOrder: input.sortOrder ?? 'newest',
-    createdAt: timestamp,
-    updatedAt: timestamp,
-  };
-  getDb()
-    .query(
-      'INSERT INTO workspaces (id, name, library_id, filter_json, sort_order, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?)',
-    )
-    .run(
-      workspace.id,
-      workspace.name,
-      workspace.libraryId,
-      JSON.stringify(workspace.filterJson),
-      workspace.sortOrder,
-      workspace.createdAt,
-      workspace.updatedAt,
-    );
-  return workspace;
+  return createWorkspaceInDb(getDb(), input, getDefaultLibrary().id);
 }
 
 function updateCatalogWorkspace(
   id: string,
-  patch: { name?: string; libraryId?: string | null; filterJson?: unknown; sortOrder?: string },
+  patch: {
+    name?: string;
+    libraryId?: string | null;
+    filter?: Record<string, unknown>;
+    sortOrder?: 'newest' | 'oldest' | 'favorite';
+  },
 ) {
-  const current = getCatalogWorkspace(id);
-  if (!current) return null;
-  getDb()
-    .query(
-      'UPDATE workspaces SET name = ?, library_id = ?, filter_json = ?, sort_order = ?, updated_at = ? WHERE id = ?',
-    )
-    .run(
-      patch.name ?? current.name,
-      patch.libraryId === undefined ? current.libraryId : patch.libraryId,
-      JSON.stringify(patch.filterJson === undefined ? current.filterJson : patch.filterJson),
-      patch.sortOrder ?? current.sortOrder,
-      now(),
-      id,
-    );
-  return getCatalogWorkspace(id);
+  return updateWorkspaceInDb(getDb(), id, patch);
 }
 
-function deleteCatalogWorkspace(
-  id: string,
-): { ok: true } | { ok: false; status: 400 | 404; error: string } {
-  if (isDefaultWorkspaceId(id)) {
-    return { ok: false, status: 400, error: 'The default workspace cannot be deleted.' };
-  }
-  const current = getCatalogWorkspace(id);
-  if (!current) return { ok: false, status: 404, error: 'Workspace not found' };
-  getDb().query('DELETE FROM workspaces WHERE id = ?').run(id);
-  return { ok: true };
+function deleteCatalogWorkspace(id: string) {
+  return deleteWorkspaceFromDb(getDb(), id);
 }
-
-export type DeleteWorkspaceResult = { ok: true } | { ok: false; status: 400 | 404; error: string };
 
 export interface WorkspaceRoutesDependencies {
   listCatalogWorkspaces: typeof listCatalogWorkspaces;
@@ -146,6 +57,28 @@ export interface WorkspaceRoutesDependencies {
   createCatalogWorkspace: typeof createCatalogWorkspace;
   updateCatalogWorkspace: typeof updateCatalogWorkspace;
   deleteCatalogWorkspace: (id: string) => DeleteWorkspaceResult | boolean;
+}
+
+function normalizeWorkspaceBoundaryAliases(body: unknown) {
+  if (!body || typeof body !== 'object' || Array.isArray(body)) return body;
+  const record = body as Record<string, unknown>;
+  return {
+    ...record,
+    libraryId: record.libraryId ?? record.library_id,
+    filter: record.filter ?? record.filterJson ?? record.filter_json,
+    sortOrder: record.sortOrder ?? record.sort_order,
+  };
+}
+
+function invalidWorkspaceBody(c: Context) {
+  return c.json(
+    {
+      error: 'Invalid request body',
+      code: 'invalid_request_body',
+      reason: 'Request payload does not match the shared Workspace boundary schema.',
+    },
+    400,
+  );
 }
 
 export function createWorkspaceRoutes(dependencies: Partial<WorkspaceRoutesDependencies> = {}) {
@@ -159,18 +92,24 @@ export function createWorkspaceRoutes(dependencies: Partial<WorkspaceRoutesDepen
   const routes = new Hono();
   routes.get('/', (c) => c.json(listWorkspaces()));
   routes.post('/', async (c) => {
-    const body = await c.req.json().catch(() => ({}));
+    const rawBody = await c.req.json().catch(() => null);
+    const decoded = Schema.decodeUnknownEither(CreateStudioWorkspaceRequestSchema)(
+      normalizeWorkspaceBoundaryAliases(rawBody),
+    );
+    if (Either.isLeft(decoded)) return invalidWorkspaceBody(c);
+    const body = decoded.right;
     const requestedId = typeof body.id === 'string' ? body.id.trim() : '';
-    if (requestedId && readWorkspace(requestedId)) {
-      return c.json(readWorkspace(requestedId), 200);
+    const existingWorkspace = requestedId ? readWorkspace(requestedId) : null;
+    if (existingWorkspace) {
+      return c.json(existingWorkspace, 200);
     }
     return c.json(
       createWorkspace({
         id: requestedId || undefined,
-        name: body.name || 'Untitled Workspace',
-        libraryId: body.libraryId ?? body.library_id,
-        filterJson: body.filterJson ?? body.filter_json ?? {},
-        sortOrder: body.sortOrder ?? body.sort_order ?? 'newest',
+        name: body.name?.trim() || 'Untitled Workspace',
+        libraryId: body.libraryId,
+        filter: body.filter ?? {},
+        sortOrder: body.sortOrder ?? 'newest',
       }),
       201,
     );
@@ -180,12 +119,17 @@ export function createWorkspaceRoutes(dependencies: Partial<WorkspaceRoutesDepen
     return workspace ? c.json(workspace) : c.json({ error: 'Workspace not found' }, 404);
   });
   routes.patch('/:id', async (c) => {
-    const body = await c.req.json().catch(() => ({}));
+    const rawBody = await c.req.json().catch(() => null);
+    const decoded = Schema.decodeUnknownEither(UpdateStudioWorkspaceRequestSchema)(
+      normalizeWorkspaceBoundaryAliases(rawBody),
+    );
+    if (Either.isLeft(decoded)) return invalidWorkspaceBody(c);
+    const body = decoded.right;
     const workspace = updateWorkspace(c.req.param('id'), {
       name: body.name,
-      libraryId: body.libraryId ?? body.library_id,
-      filterJson: body.filterJson ?? body.filter_json,
-      sortOrder: body.sortOrder ?? body.sort_order,
+      libraryId: body.libraryId,
+      filter: body.filter,
+      sortOrder: body.sortOrder,
     });
     return workspace ? c.json(workspace) : c.json({ error: 'Workspace not found' }, 404);
   });

@@ -52,7 +52,7 @@ const KeyPopover: React.FC<KeyPopoverProps> = ({ isOpen, onClose, onSelectKey })
             <button
               type="button"
               onClick={onSelectKey}
-              className="w-full h-9 bg-accent-600 hover:bg-accent-500 text-white text-[9px] font-black tracking-widest uppercase rounded-lg transition-all active:scale-95 shadow-lg shadow-accent-900/20"
+              className="w-full h-9 bg-accent-600 hover:bg-accent-500 text-white text-[9px] font-black tracking-widest uppercase rounded-lg transition-[color,background-color,border-color,opacity,box-shadow,transform] active:scale-95 shadow-lg shadow-accent-900/20"
             >
               Verify Local Session
             </button>

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { resolveQueueProgressPercent, shouldScheduleQueueProgress } from './QueueProgressBar';
+import { resolveQueueProgressPercent, shouldScheduleQueueProgress } from './queueProgressBarPolicy';
 
 describe('QueueProgressBar', () => {
   it('uses a stable fallback without scheduling work when the start time is unknown', () => {

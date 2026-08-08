@@ -93,7 +93,6 @@ describe('buildStudioPageController', () => {
     });
     const runningJob: Job = {
       id: 'studio-1',
-      projectId: 'project-1',
       workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
@@ -188,43 +187,37 @@ describe('buildStudioPageController', () => {
       },
       recipe: {
         recipePageProps: {
-          generationConfig: DEFAULT_GENERATION_CONFIG,
-          updateGenerationConfig: () => {},
-          updateAttachment: () => {},
-          handlePastedFiles: () => {},
           handleGenerate: () => {},
           isGenerating: true,
           imagesWithConfig: [],
           openModal: () => {},
-          handleAddToContext: () => {},
         },
         studioPageController,
       },
       dock: {
         isModalOpen: true,
         isDragging: true,
-        toolbarProps: {
-          generationConfig: DEFAULT_GENERATION_CONFIG,
-          updateConfig: () => {},
-          updateAttachment: () => {},
-          onFileSelect: () => {},
-          onFilesDrop: () => {},
-          onRemoveAttachment: () => {},
-          onGenerate: () => {},
-          onEnhancePrompt: () => {},
-          isGenerating: false,
-          generationStartTime: null,
-          isEnhancingPrompt: false,
-          setPreviewRatio: () => {},
-          setIsInteracting: () => {},
-          onOpenEditor: () => {},
-          isKeyPopoverOpen: false,
-          onOpenKeySelector: () => {},
-          onSelectKey: async () => {},
-          maxAttachments: 8,
-          codexModelCatalog: null,
-          isLoadingCodexModelCatalog: false,
-          codexModelCatalogError: null,
+        toolbarArgs: {
+          actions: {
+            onGenerate: () => {},
+            onEnhancePrompt: () => {},
+            isGenerating: false,
+            generationStartTime: null,
+            isEnhancingPrompt: false,
+          },
+          ui: {
+            setPreviewRatio: () => {},
+            setIsInteracting: () => {},
+            isKeyPopoverOpen: false,
+            setIsKeyPopoverOpen: () => {},
+          },
+          editor: {
+            openEditor: () => {},
+            openEditorRoute: () => {},
+          },
+          sync: {
+            verifyCodexSession: async () => {},
+          },
         },
       },
     });

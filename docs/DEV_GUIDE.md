@@ -20,8 +20,8 @@ bun run dev
 ```bash
 bun run validate:fast    # cheap loop
 bun run validate         # main PR gate
-bun run validate:full    # transition alias of the full local set
-bun run validate:release # release gate (domain + docs + hygiene)
+bun run validate:full    # compatibility alias of validate:release
+bun run validate:release # release gate (providers + recipes + styles + docs + hygiene)
 ```
 
 ## Workspace model

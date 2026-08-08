@@ -4,7 +4,7 @@ import { buildOutputAssetRelativePath } from './outputOrganization';
 import type { Job } from '../../../packages/shared/src/types';
 import type { resolveJobExecutionOptions } from './codex/executionOptions';
 import type { readEditableStudioSettings } from './studioSettingsStore';
-import type { getSettingValue, setSettingValue } from './db';
+import type { getSettingValue, setSettingValue } from './db/settings';
 import { resolveLibraryPathFromRoot, type resolveLibraryPath } from './library';
 
 function resolveUniquePath(filePath: string) {

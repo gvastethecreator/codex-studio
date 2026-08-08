@@ -29,13 +29,10 @@ export interface ReferenceProcessingErrorLike {
 }
 
 export interface PersistentJobIntakeDependencies {
-  /** @deprecated Product path no longer requires Project; optional for legacy fixtures. */
-  ensureDefaultProjectId?: () => string | null;
   ensureDefaultWorkspaceId?: () => string;
   createJobId: () => string;
   createJob: (input: {
     id: string;
-    projectId?: string | null;
     workspaceId?: string | null;
     kind: Job['kind'];
     providerId: Job['providerId'];
@@ -156,7 +153,6 @@ export function resolvePersistentJobIntakeKind(
 }
 
 export function createPersistentJobIntake({
-  ensureDefaultProjectId,
   ensureDefaultWorkspaceId = () => normalizeWorkspaceId(undefined),
   createJobId,
   createJob,
@@ -176,7 +172,6 @@ export function createPersistentJobIntake({
 }: PersistentJobIntakeDependencies) {
   return {
     async createJob(request: CreateJobRequest): Promise<PersistentJobIntakeResult> {
-      const projectId = request.projectId || ensureDefaultProjectId?.() || null;
       const workspaceId = normalizeWorkspaceId(
         request.workspaceId ||
           readWorkspaceIdFromSourceSpecMetadata(
@@ -283,7 +278,6 @@ export function createPersistentJobIntake({
 
       const job = createJob({
         id: jobId,
-        projectId,
         workspaceId,
         kind: resolvePersistentJobIntakeKind(request.kind, sourceSpec),
         providerId,

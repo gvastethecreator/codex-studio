@@ -7,7 +7,6 @@ function createDetail(overrides: Partial<JobDetailResponse> = {}): JobDetailResp
   const base: JobDetailResponse = {
     job: {
       id: 'job-1',
-      projectId: 'project-1',
       workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',

@@ -441,15 +441,8 @@ function generatedTs(frames: Record<string, FrameRecord>, atlasWidth: number, at
       },
     ]),
   );
-  const sourceUrls = Object.entries(frames)
-    .map(
-      ([id, frame]) =>
-        `  ${JSON.stringify(id)}: new URL(${JSON.stringify(`../${frame.sourceFrame512}`)}, import.meta.url).href,`,
-    )
-    .join('\n');
-
   return `// Generated from assets/recipes/character-lab/character-lab-option-atlas.manifest.json.
-// Do not hand-edit frame coordinates or source URLs.
+// Do not hand-edit frame coordinates.
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_URL = new URL(
   '../assets/recipes/character-lab/character-lab-option-atlas.png',
   import.meta.url,
@@ -459,9 +452,6 @@ export const CHARACTER_LAB_OPTION_ICON_ATLAS_WIDTH = ${atlasWidth};
 export const CHARACTER_LAB_OPTION_ICON_ATLAS_HEIGHT = ${atlasHeight};
 export const CHARACTER_LAB_OPTION_ICON_FRAMES = ${JSON.stringify(frameCoords, null, 2)} as const;
 const CHARACTER_LAB_OPTION_ICON_METADATA = ${JSON.stringify(metadata, null, 2)} as const;
-export const CHARACTER_LAB_OPTION_ICON_SOURCE_URLS = {
-${sourceUrls}
-} as const;
 `;
 }
 

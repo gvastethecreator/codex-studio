@@ -240,18 +240,14 @@ describe('codexRuntimeDoctor', () => {
     if (process.platform !== 'win32') return;
 
     const executable = 'C:/Users/dev/AppData/Local/Programs/OpenAI/Codex/bin/codex.exe';
-    const spawnSync = vi.fn((command: string, args: string[], options?: { shell?: boolean }) => {
-      if (command.endsWith('codex.exe') && !options?.shell) {
+    const spawnSync = vi.fn((command: string, args: string[]) => {
+      if (command.endsWith('codex.exe')) {
         return { status: null, stdout: '', stderr: 'ETIMEDOUT' };
       }
-      if (command.endsWith('codex.exe') && options?.shell && args.join(' ').includes('--version')) {
+      if (command === 'cmd.exe' && args.join(' ').includes('--version')) {
         return { status: 0, stdout: 'codex-cli 0.142.4', stderr: '' };
       }
-      if (
-        command.endsWith('codex.exe') &&
-        options?.shell &&
-        args.join(' ').includes('app-server')
-      ) {
+      if (command === 'cmd.exe' && args.join(' ').includes('app-server')) {
         return { status: 0, stdout: 'codex app-server --listen <ws-url>', stderr: '' };
       }
       return { status: 1, stdout: '', stderr: 'unexpected command' };
@@ -264,9 +260,9 @@ describe('codexRuntimeDoctor', () => {
 
     expect(report.status).toBe('ready');
     expect(spawnSync).toHaveBeenCalledWith(
-      executable,
-      expect.arrayContaining(['--version']),
-      expect.objectContaining({ shell: true }),
+      'cmd.exe',
+      expect.arrayContaining(['/d', '/s', '/c']),
+      expect.objectContaining({ windowsVerbatimArguments: true }),
     );
   });
 

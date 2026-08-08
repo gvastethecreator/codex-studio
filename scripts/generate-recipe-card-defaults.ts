@@ -1,6 +1,6 @@
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import type { Asset, Job, Project } from '../packages/shared/src';
+import type { Asset, Job } from '../packages/shared/src';
 import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
 import {
   RECIPE_ASSET_EXTENSION,

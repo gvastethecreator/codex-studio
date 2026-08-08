@@ -38,6 +38,7 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import React, { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useLatestRef } from '../../hooks/useLatestRef';
 import {
   STYLE_CARD_THUMBNAILS,
   STYLE_CATEGORY_IMAGES,
@@ -114,7 +115,7 @@ import {
   USER_STYLE_PACK_NAME,
   createUserStyleRuntimePack,
 } from './userStyleRuntimeAdapter';
-import { listUserStylePresets } from '../../services/localStudioService';
+import { listUserStylePresets } from '../../services/studio-api/userStyles';
 import type {
   UserStylePreset,
   UserStylePresetDraft,
@@ -1109,6 +1110,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     useState<UserStyleEditorSession | null>(null);
   const [styleCollectionsModule, setStyleCollectionsModule] =
     useState<StyleCollectionsModule | null>(null);
+  const [styleCollectionsLoadError, setStyleCollectionsLoadError] = useState<string | null>(null);
   const [interactionState, setInteractionState] = useState({
     activePresetId: null as string | null,
     copiedStyleId: null as string | null,
@@ -1296,9 +1298,14 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     if (styleCollectionsModule) return;
 
     let cancelled = false;
-    void import('./styles/collections').then((module) => {
-      if (!cancelled) setStyleCollectionsModule(module);
-    });
+    setStyleCollectionsLoadError(null);
+    void import('./styles/collections')
+      .then((module) => {
+        if (!cancelled) setStyleCollectionsModule(module);
+      })
+      .catch(() => {
+        if (!cancelled) setStyleCollectionsLoadError('Could not load style collections.');
+      });
     return () => {
       cancelled = true;
     };
@@ -1410,11 +1417,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     typeof config.recipeParams.presetId === 'string'
       ? config.recipeParams.presetId
       : null;
-  const prevRecipePresetIdRef = useRef(recipePresetId);
-  if (recipePresetId && recipePresetId !== prevRecipePresetIdRef.current) {
-    prevRecipePresetIdRef.current = recipePresetId;
+  useEffect(() => {
+    if (!recipePresetId) return;
     setInteractionState((prev) => ({ ...prev, activePresetId: recipePresetId }));
-  }
+  }, [recipePresetId]);
 
   const userStylePack = useMemo(
     () => createUserStyleRuntimePack(userStylePresets),
@@ -1471,7 +1477,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
         return {
           id: getStyleCollectionTabId(activeStyleCollectionId),
           name: 'Style Collection',
-          description: 'Loading style collection.',
+          description: styleCollectionsLoadError ?? 'Loading style collection.',
           presets: [],
         } satisfies StyleRuntimePack;
       }
@@ -1538,6 +1544,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     isAllStyleCardsTab,
     isGlobalStyleBrowseTab,
     loadedStylePacksById,
+    styleCollectionsLoadError,
     styleCollectionsModule,
     userStylePack,
   ]);
@@ -1671,11 +1678,9 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
   }, [images, selectedStyles]);
 
   const filterKey = `${currentPackId}|${searchQuery}|${sortOrder}|${activeStyleViewMode}|${showFavoritesOnly}`;
-  const prevFilterKeyRef = useRef(filterKey);
-  if (prevFilterKeyRef.current !== filterKey) {
-    prevFilterKeyRef.current = filterKey;
+  useEffect(() => {
     setInteractionState((prev) => ({ ...prev, hoveredPresetPreview: null }));
-  }
+  }, [filterKey]);
 
   const processedData = useMemo(
     () =>
@@ -1817,8 +1822,7 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
     [getPackIdForPreset, getPackNameForId],
   );
 
-  const handleApplyStyleRef = useRef(handleSelectStyle);
-  handleApplyStyleRef.current = handleSelectStyle;
+  const handleApplyStyleRef = useLatestRef(handleSelectStyle);
 
   const selectedStyleLayers = useMemo(
     () => selectedStyles.map(createSelectedStyleLayer),
@@ -2153,10 +2157,10 @@ export const StylesRecipe: React.FC<StylesRecipeProps> = ({
       setInteractionState((prev) => ({ ...prev, activePresetId: result.id }));
       handleApplyStyleRef.current(preset, result.packId);
     },
-    [loadedStylePacksById, loadStyleRuntimePacks, applyStyleTab],
+    [loadedStylePacksById, loadStyleRuntimePacks, applyStyleTab, handleApplyStyleRef],
   );
 
-  const handleCopyStylePrompt = (e: React.MouseEvent, preset: StyleRuntimePreset) => {
+  const handleCopyStylePrompt = useCallback((e: React.MouseEvent, preset: StyleRuntimePreset) => {
     e.stopPropagation();
     const displayName = getStyleRuntimePresetDisplayName(preset);
     const styleAnchors = getStyleRuntimePresetSearchNames(preset).filter(
@@ -2183,10 +2187,7 @@ ${styleAnchorLine}
       () => setInteractionState((prev) => ({ ...prev, copiedStyleId: null })),
       2000,
     );
-  };
-
-  const handleCopyStylePromptRef = useRef(handleCopyStylePrompt);
-  handleCopyStylePromptRef.current = handleCopyStylePrompt;
+  }, []);
 
   const handleDrop = (e: React.DragEvent) => {
     e.preventDefault();
@@ -2242,7 +2243,7 @@ ${styleAnchorLine}
             theme={presetTheme}
             FadeImageComponent={StyleFadeImage}
             onApply={(selectedPreset) => handleApplyStyleRef.current(selectedPreset, presetPackId)}
-            onCopy={handleCopyStylePromptRef.current}
+            onCopy={handleCopyStylePrompt}
             onToggleFavorite={toggleFavorite}
             onHoverPreviewChange={handleHoverPreviewChange}
           />
@@ -2259,6 +2260,8 @@ ${styleAnchorLine}
       toggleFavorite,
       presetVisualStateById,
       handleHoverPreviewChange,
+      handleCopyStylePrompt,
+      handleApplyStyleRef,
     ],
   );
 

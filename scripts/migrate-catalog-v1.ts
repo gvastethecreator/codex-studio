@@ -1,6 +1,6 @@
 import { existsSync, statSync } from 'node:fs';
 import { initStudio } from '../apps/local-server/src/init';
-import { getDb } from '../apps/local-server/src/db';
+import { getDb } from '../apps/local-server/src/db/connection';
 import { registerCatalogImage } from '../apps/local-server/src/catalog';
 import { getDefaultLibrary } from '../apps/local-server/src/libraries';
 
@@ -9,7 +9,13 @@ initStudio();
 const database = getDb();
 const library = getDefaultLibrary();
 const assets = database
-  .query('SELECT * FROM assets WHERE deleted_at IS NULL ORDER BY created_at ASC')
+  .query(
+    `SELECT assets.*, jobs.workspace_id
+     FROM assets
+     LEFT JOIN jobs ON jobs.id = assets.job_id
+     WHERE assets.deleted_at IS NULL
+     ORDER BY assets.created_at ASC`,
+  )
   .all() as any[];
 let inserted = 0;
 let skipped = 0;
@@ -32,7 +38,7 @@ for (const asset of assets) {
     mimeType: asset.mime_type,
     fileSizeBytes: statSync(asset.file_path).size,
     jobId: asset.job_id,
-    workspaceId: asset.project_id,
+    workspaceId: asset.workspace_id,
   });
   inserted += 1;
 }

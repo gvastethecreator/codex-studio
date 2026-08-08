@@ -7,7 +7,8 @@ import type {
   SystemLog,
   UnknownStudioEvent,
 } from '../packages/shared/src';
-import { getStudioApiBase, getStudioJobDetail, listStudioJobs } from './localStudioService';
+import { getStudioApiBase } from './studio-api/http';
+import { getStudioJobDetail, listStudioJobs } from './studio-api/jobs';
 
 type Unsubscribe = () => void;
 type Listener<T> = (payload: T) => void;

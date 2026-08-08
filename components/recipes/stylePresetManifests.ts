@@ -684,17 +684,15 @@ export function createStylePresetCatalog(
       } satisfies StylePresetCatalogEntry;
     };
 
-    const categories = pack.categories.map(
-      (category): StylePresetCatalogCategory => ({
-        id: category.id,
-        name: category.name,
-        presetRefs: category.presetRefs,
-        presets: category.presetRefs.flatMap((ref) => {
-          const entry = toCatalogEntry(ref);
-          return entry ? [entry.manifest] : [];
-        }),
+    const categories = pack.categories.map((category): StylePresetCatalogCategory => ({
+      id: category.id,
+      name: category.name,
+      presetRefs: category.presetRefs,
+      presets: category.presetRefs.flatMap((ref) => {
+        const entry = toCatalogEntry(ref);
+        return entry ? [entry.manifest] : [];
       }),
-    );
+    }));
 
     const presets = pack.presetRefs.flatMap((ref) => {
       const entry = toCatalogEntry(ref);

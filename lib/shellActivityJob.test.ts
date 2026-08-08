@@ -10,7 +10,6 @@ import {
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
-    projectId: overrides.projectId ?? 'project-1',
     workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
@@ -42,7 +41,6 @@ describe('shellActivityJob', () => {
     const job = createJob();
     const summaryJob: JobSummary = {
       id: job.id,
-      projectId: job.projectId,
       kind: job.kind,
       providerId: job.providerId,
       workspaceId: 'workspace-summary',

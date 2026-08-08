@@ -28,7 +28,7 @@ describe('codex turn input', () => {
       fallbackPrompt: sourceSpec.prompt,
       compiledInput: compileCodexImagegenInput({
         id: 'job-refs',
-        projectId: 'project-1',
+        workspaceId: 'default',
         prompt: sourceSpec.prompt,
         execution: null,
         sourceSpec,

@@ -7,7 +7,7 @@ describe('dryRunProvider', () => {
   it('compiles a provider input fixture without Codex or hosted API payloads', () => {
     const compiled = compileDryRunInput({
       id: 'job-1',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'dry_run',
       prompt: 'A local pipeline placeholder image',
       execution: null,
@@ -41,7 +41,7 @@ describe('dryRunProvider', () => {
 
     const compiled = compileDryRunInput({
       id: 'job-1',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'dry_run',
       prompt: 'fallback prompt',
       execution: null,

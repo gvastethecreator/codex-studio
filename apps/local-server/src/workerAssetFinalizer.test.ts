@@ -10,7 +10,6 @@ import { createWorkerAssetFinalizer } from './workerAssetFinalizer';
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-finalizer-1',
-    projectId: overrides.projectId ?? 'project-1',
     workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
@@ -37,7 +36,6 @@ describe('workerAssetFinalizer', () => {
 
     const addAsset = vi.fn(() => ({
       id: 'asset-1',
-      projectId: 'project-1',
       workspaceId: 'default',
       jobId: 'job-finalizer-1',
       filePath: organizedPath,
@@ -184,7 +182,6 @@ describe('workerAssetFinalizer', () => {
     writeFileSync(organizedPath, 'png', 'utf8');
     const existingAsset = {
       id: 'asset-existing',
-      projectId: 'project-1',
       workspaceId: 'default',
       jobId: 'job-finalizer-1',
       filePath: organizedPath,

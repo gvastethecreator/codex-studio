@@ -30,14 +30,14 @@ const Slider: React.FC<SliderProps> = ({
           {icon}
           <span>{label}</span>
         </div>
-        <span className="font-mono text-accent-300 bg-accent-950/40 px-1.5 py-0.5 rounded border border-accent-500/20 transition-all">
+        <span className="font-mono text-accent-300 bg-accent-950/40 px-1.5 py-0.5 rounded border border-accent-500/20 transition-colors">
           {value}
         </span>
       </div>
 
-      <div className="relative h-2 w-full rounded-full input-groove flex items-center transition-all bg-zinc-800">
+      <div className="relative h-2 w-full rounded-full input-groove flex items-center transition-colors bg-zinc-800">
         <div
-          className="absolute h-full rounded-full bg-accent-600 shadow-[0_0_10px_rgb(var(--accent-600)/0.5)] transition-all duration-300"
+          className="absolute h-full rounded-full bg-accent-600 shadow-[0_0_10px_rgb(var(--accent-600)/0.5)] transition-[width] duration-300"
           style={{ width: `${percentage}%` }}
         />
 

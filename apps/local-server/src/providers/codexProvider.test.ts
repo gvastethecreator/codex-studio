@@ -26,7 +26,7 @@ describe('codexProvider', () => {
   it('compiles a compact Codex provider input from the job delta', () => {
     const compiled = compileCodexImagegenInput({
       id: 'job-1',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'Prompt:\nsmall brass key\n\nAspect ratio: 2:3',
       execution: null,
     });
@@ -59,7 +59,7 @@ describe('codexProvider', () => {
 
     const compiled = compileCodexImagegenInput({
       id: 'job-1',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'Prompt text after reference processing',
       execution: null,
       providerId: 'codex',
@@ -101,7 +101,7 @@ describe('codexProvider', () => {
 
     const compiled = compileCodexImagegenInput({
       id: 'job-style',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'unused fallback prompt',
       execution: null,
       sourceSpec,
@@ -158,7 +158,7 @@ describe('codexProvider', () => {
 
     const compiled = compileCodexImagegenInput({
       id: 'job-style-ref',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'Image-guided generation',
       execution: null,
       sourceSpec,
@@ -217,7 +217,7 @@ describe('codexProvider', () => {
 
     const compiled = compileCodexImagegenInput({
       id: 'job-refs',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'Prompt text after backend reference persistence',
       execution: null,
       sourceSpec,
@@ -255,7 +255,7 @@ describe('codexProvider', () => {
 
     const compiled = compileCodexImagegenInput({
       id: 'job-var',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'fallback',
       execution: null,
       sourceSpec,
@@ -293,7 +293,7 @@ describe('codexProvider', () => {
 
     const compiled = compileCodexImagegenInput({
       id: 'job-quality',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'fallback',
       execution: null,
       sourceSpec,
@@ -321,7 +321,7 @@ describe('codexProvider', () => {
 
     const result = await provider.run({
       id: 'job-2',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       prompt: 'Prompt:\nsmall brass key',
       execution: null,
     });
@@ -330,7 +330,6 @@ describe('codexProvider', () => {
     expect(calls).toHaveLength(1);
     expect(calls[0]).toMatchObject({
       jobId: 'job-2',
-      projectId: 'project-1',
       prompt: 'Prompt:\nsmall brass key',
     });
     expect(calls[0].compiledInput?.payload.text).toContain('Task: image_generate');

@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { describe, expect, it } from 'vite-plus/test';
 
-import { pruneToolingLogs } from './tooling-task';
+import { getToolingTaskDefinition, pruneToolingLogs } from './tooling-task';
 
 describe('pruneToolingLogs', () => {
   it('keeps latest logs and rolling latest files', () => {
@@ -24,5 +24,13 @@ describe('pruneToolingLogs', () => {
     } finally {
       rmSync(dir, { force: true, recursive: true });
     }
+  });
+});
+
+describe('tooling gate aliases', () => {
+  it('keeps validate:full as an alias of the release gate', () => {
+    expect(getToolingTaskDefinition('validate:full')?.steps).toEqual([
+      expect.objectContaining({ args: ['run', 'scripts/tooling-task.ts', 'validate:release'] }),
+    ]);
   });
 });

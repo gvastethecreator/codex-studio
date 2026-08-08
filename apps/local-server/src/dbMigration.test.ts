@@ -23,12 +23,13 @@ describe('database migrations', () => {
     expect(JSON.parse(output.trim())).toEqual({
       idempotent: true,
       sentinelPreserved: true,
+      projectContractRemoved: true,
       indexesPresent: true,
       foreignKeysValid: true,
       transactionRolledBack: true,
       recoverableCheckpoint: true,
       summaryProjection: true,
-      schemaVersion: 5,
+      schemaVersion: 6,
     });
   });
 });

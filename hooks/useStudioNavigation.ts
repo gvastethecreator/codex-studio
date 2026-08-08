@@ -1,6 +1,7 @@
 import { useCallback, useLayoutEffect, useRef } from 'react';
 import type { Dispatch, SetStateAction } from 'react';
 import { preloadStudioViewportRoute } from '../lib/studioViewportRouteSurfaces';
+import { useLatestRef } from './useLatestRef';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { Attachment, GeneratedImageWithConfig, RecipeId } from '../types';
 import type { HashRouterState } from './useHashRouter';
@@ -80,18 +81,16 @@ export function useStudioNavigation({
   let direction = 0;
   if (currentViewIndex !== previousViewIndexRef.current) {
     direction = currentViewIndex > previousViewIndexRef.current ? 1 : -1;
-    previousViewIndexRef.current = currentViewIndex;
   }
+  useLayoutEffect(() => {
+    previousViewIndexRef.current = currentViewIndex;
+  }, [currentViewIndex]);
 
-  const activeRecipeRef = useRef(activeRecipe);
-  activeRecipeRef.current = activeRecipe;
-  const imageToEditRef = useRef(imageToEdit);
-  imageToEditRef.current = imageToEdit;
-  const isEditorOpenRef = useRef(isEditorOpen);
-  isEditorOpenRef.current = isEditorOpen;
+  const activeRecipeRef = useLatestRef(activeRecipe);
+  const imageToEditRef = useLatestRef(imageToEdit);
+  const isEditorOpenRef = useLatestRef(isEditorOpen);
   // react-doctor-disable-next-line react-doctor/no-event-handler
-  const isModalOpenRef = useRef(isModalOpen);
-  isModalOpenRef.current = isModalOpen;
+  const isModalOpenRef = useLatestRef(isModalOpen);
 
   const syncRouteState = useCallback(() => {
     if (route.view === 'recipe' && route.activeRecipeId) {
@@ -130,6 +129,10 @@ export function useStudioNavigation({
     closeEditorState,
     closeModal,
     closeOverlay,
+    activeRecipeRef,
+    imageToEditRef,
+    isEditorOpenRef,
+    isModalOpenRef,
     setActiveRecipe,
     setIsEditorOpen,
   ]);

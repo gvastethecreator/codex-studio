@@ -170,7 +170,6 @@ export function createCodexGenerationProvider({
     run(job) {
       return turn.runTurn({
         jobId: job.id,
-        projectId: job.projectId,
         prompt: job.prompt,
         execution: job.execution,
         signal: job.signal,

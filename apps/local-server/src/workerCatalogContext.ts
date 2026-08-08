@@ -14,16 +14,13 @@ function readMetadataString(job: Pick<Job, 'sourceSpec'>, key: string) {
 }
 
 export function resolveJobCatalogContext(
-  job: Pick<Job, 'projectId' | 'workspaceId' | 'sourceSpec' | 'batchId'>,
+  job: Pick<Job, 'workspaceId' | 'sourceSpec' | 'batchId'>,
 ): JobCatalogContext {
   const fromColumn =
     typeof job.workspaceId === 'string' && job.workspaceId.trim() ? job.workspaceId.trim() : null;
   const fromMetadata = readMetadataString(job, 'workspaceId');
-  const fromProject =
-    typeof job.projectId === 'string' && job.projectId.trim() ? job.projectId.trim() : null;
-
   return {
-    workspaceId: normalizeWorkspaceId(fromColumn ?? fromMetadata ?? fromProject),
+    workspaceId: normalizeWorkspaceId(fromColumn ?? fromMetadata),
     batchId:
       (typeof job.batchId === 'string' && job.batchId.trim() ? job.batchId.trim() : null) ??
       readMetadataString(job, 'batchId'),

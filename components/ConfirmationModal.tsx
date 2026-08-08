@@ -130,14 +130,14 @@ export const ConfirmationModal: React.FC<ConfirmationModalProps> = ({
             <button
               type="button"
               onClick={onClose}
-              className="h-11 rounded-2xl border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-all hover:bg-white/10 hover:text-white cursor-pointer"
+              className="h-11 rounded-2xl border border-white/10 bg-white/5 px-4 text-[10px] font-black uppercase tracking-widest text-zinc-300 transition-[color,background-color,border-color,opacity,box-shadow,transform] hover:bg-white/10 hover:text-white cursor-pointer"
             >
               {cancelLabel}
             </button>
             <button
               type="button"
               onClick={() => void onConfirm()}
-              className={`h-11 rounded-2xl px-4 text-[10px] font-black uppercase tracking-widest transition-all cursor-pointer ${toneStyles.button}`}
+              className={`h-11 rounded-2xl px-4 text-[10px] font-black uppercase tracking-widest transition-[color,background-color,border-color,opacity,box-shadow,transform] cursor-pointer ${toneStyles.button}`}
             >
               {confirmLabel}
             </button>

@@ -2,6 +2,7 @@ import React from 'react';
 import { IconBrain as BrainCircuit, IconX as X } from '@tabler/icons-react';
 
 import type { JobDetailResponse } from '../packages/shared/src';
+import { useLatestRef } from '../hooks/useLatestRef';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { LogEntry, Workspace } from '../types';
 import { JobInspectorDetail } from './JobInspectorDetail';
@@ -36,8 +37,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
   onClearSelectedJob,
   onRetryJob,
 }) => {
-  const onCloseRef = React.useRef(onClose);
-  onCloseRef.current = onClose;
+  const onCloseRef = useLatestRef(onClose);
 
   React.useEffect(() => {
     if (!isOpen) return undefined;
@@ -52,7 +52,7 @@ export const DebugPanel: React.FC<DebugPanelProps> = ({
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpen]);
+  }, [isOpen, onCloseRef]);
 
   if (!isOpen) {
     return null;

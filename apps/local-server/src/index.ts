@@ -1,5 +1,5 @@
 import { getSettings } from './config';
-import { listRecoverableJobs } from './db';
+import { listRecoverableJobs } from './db/jobs';
 import { createStudioApp } from './appFactory';
 import { log } from './logger';
 import { beginSignalShutdown, shutdownStudioServer } from './serverShutdown';

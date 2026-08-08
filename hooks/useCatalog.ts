@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useLatestRef } from './useLatestRef';
 import type { CatalogImage, CatalogPage, CatalogWorkspaceSummary } from '../packages/shared/src';
 import { buildArchivedImageGroupsFromCatalog } from '../lib/studioCatalogTrashView';
 import {
@@ -21,10 +22,10 @@ import {
   queryCatalog,
   getCatalogImageDetail,
   restoreCatalogByFilter,
-  toStudioAssetUrl,
   type CatalogQueryParams,
   updateCatalogImage as updateCatalogImageRequest,
-} from '../services/localStudioService';
+} from '../services/studio-api/catalog';
+import { toStudioAssetUrl } from '../services/studio-api/assetUrls';
 
 export interface UseCatalogOptions extends CatalogQueryParams {
   pageSize?: number;
@@ -131,8 +132,7 @@ function useCatalog({
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
-  const filtersRef = useRef(filters);
-  filtersRef.current = filters;
+  const filtersRef = useLatestRef(filters);
   const filtersKey = createCatalogFilterKey(filters);
   const filtersKeyRef = useRef(filtersKey);
   const requestGateRef = useRef<ReturnType<typeof createCatalogRequestGate> | null>(null);
@@ -181,14 +181,14 @@ function useCatalog({
   const refresh = useCallback(async () => {
     const token = requestGate.beginReplace();
     await loadPage(0, 'replace', token, { ...filtersRef.current }, true);
-  }, [loadPage, requestGate]);
+  }, [filtersRef, loadPage, requestGate]);
 
   const loadMore = useCallback(async () => {
     if (!hasMore) return;
     const token = requestGate.beginAppend();
     if (!token) return;
     await loadPage(entries.length, 'append', token, { ...filtersRef.current });
-  }, [entries.length, hasMore, loadPage, requestGate]);
+  }, [entries.length, filtersRef, hasMore, loadPage, requestGate]);
 
   const hydrateDetail = useCallback(
     async (imageId: string) => {

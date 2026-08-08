@@ -7,7 +7,6 @@ describe('assetLogRoutes', () => {
     const assets: Asset[] = [
       {
         id: 'asset-1',
-        projectId: 'project-1',
         jobId: 'job-1',
         filePath: 'D:/library/outputs/a.png',
         thumbnailPath: null,

@@ -14,19 +14,25 @@ import type {
   ToolingLogsPruneResult,
 } from '../packages/shared/src';
 import {
-  getExternalOutputSources,
   getEditableStudioSettings,
+  updateEditableStudioSettings,
+} from '../services/studio-api/settings';
+import {
   getGenerationProviderCapabilities,
   getGenerationProviderRuntimePreflight,
-  getStorageMaintenanceAudit,
+} from '../services/studio-api/providers';
+import {
+  getExternalOutputSources,
   importExternalOutputSourceFiles,
   listExternalOutputSourceFiles,
-  pruneToolingLogsMaintenance,
   registerExternalOutputSource,
+} from '../services/studio-api/outputSources';
+import {
+  getStorageMaintenanceAudit,
+  pruneToolingLogsMaintenance,
   runStorageCompactMaintenance,
   runThumbnailBackfillMaintenance,
-  updateEditableStudioSettings,
-} from '../services/localStudioService';
+} from '../services/studio-api/maintenance';
 import type { Toast } from '../types';
 import {
   removeImportedOutputSourceFiles,

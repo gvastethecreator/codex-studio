@@ -9,6 +9,7 @@ import {
   resolveCodexExecutable,
   resolveCodexInvocation,
   resolveCodexInvocationForExecutable,
+  resolveWindowsCommandInvocation,
 } from './codexExecutable';
 import { listPlatformPathCandidates } from './platformPaths';
 import { terminateOwnedProcessTree } from './ownedProcessTree';
@@ -222,15 +223,19 @@ function runProbeWithFallback({
   const probe = runProbe(spawnSync, resolveInvocation, args);
   if (!shouldTryWindowsShellFallback(probe.result, probe.command)) return probe;
 
-  const fallbackResult = spawnSync(selectedExecutable, args, {
+  const [fallbackCommand, ...fallbackArgs] = resolveWindowsCommandInvocation(
+    selectedExecutable,
+    args,
+  );
+  const fallbackResult = spawnSync(fallbackCommand, fallbackArgs, {
     encoding: 'utf8',
-    shell: true,
     timeout: PROBE_TIMEOUT_MS,
+    windowsVerbatimArguments: true,
   });
   if (fallbackResult.status !== 0) return probe;
 
   return {
-    command: [selectedExecutable, ...args],
+    command: [fallbackCommand, ...fallbackArgs],
     result: fallbackResult,
     text: outputText(fallbackResult),
   };

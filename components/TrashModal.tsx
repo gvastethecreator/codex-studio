@@ -68,7 +68,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                   <button
                     type="button"
                     onClick={onRestoreAll}
-                    className="flex items-center gap-2 rounded-xl bg-accent-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-accent-400 transition-all hover:bg-accent-500/20 sm:px-4 cursor-pointer"
+                    className="flex items-center gap-2 rounded-xl bg-accent-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-accent-400 transition-colors hover:bg-accent-500/20 sm:px-4 cursor-pointer"
                   >
                     <RotateCcw size={14} />
                     <span>Restore All</span>
@@ -76,7 +76,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                   <button
                     type="button"
                     onClick={onEmpty}
-                    className="flex items-center gap-2 rounded-xl bg-red-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-red-400 transition-all hover:bg-red-500/20 sm:px-4 cursor-pointer"
+                    className="flex items-center gap-2 rounded-xl bg-red-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-widest text-red-400 transition-colors hover:bg-red-500/20 sm:px-4 cursor-pointer"
                   >
                     <Trash size={14} />
                     <span>Empty Bin</span>
@@ -113,7 +113,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                 {trash.map((group) => (
                   <div
                     key={group.id}
-                    className="group flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/5 p-3 transition-all hover:border-white/10 sm:flex-row sm:items-center sm:gap-4 sm:p-4"
+                    className="group flex flex-col gap-3 rounded-2xl border border-white/5 bg-white/5 p-3 transition-[background-color,border-color,box-shadow] hover:border-white/10 sm:flex-row sm:items-center sm:gap-4 sm:p-4"
                   >
                     <div className="size-20 rounded-xl overflow-hidden bg-black/40 flex-shrink-0 border border-white/5">
                       {group.thumbnail && (
@@ -153,7 +153,7 @@ export const TrashModal: React.FC<TrashModalProps> = ({
                       type="button"
                       aria-label={`Restore batch ${group.id}`}
                       onClick={() => onRestore(group.id)}
-                      className="flex h-11 w-full items-center justify-center rounded-xl bg-accent-500/10 p-3 text-accent-400 transition-all hover:bg-accent-500 hover:text-white active:scale-90 sm:w-auto cursor-pointer"
+                      className="flex h-11 w-full items-center justify-center rounded-xl bg-accent-500/10 p-3 text-accent-400 transition-[color,background-color,transform] hover:bg-accent-500 hover:text-white active:scale-90 sm:w-auto cursor-pointer"
                       title="Restore Batch"
                     >
                       <RotateCcw size={18} />

@@ -79,14 +79,14 @@ function ImageEditorControlsPanel({
             type="button"
             onClick={onUndo}
             disabled={historyIndex < 0}
-            className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-all"
+            className="flex-1 h-11 flex items-center justify-center gap-2 bg-white/3 rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-white/5 disabled:opacity-10 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
           >
             Undo
           </button>
           <button
             type="button"
             onClick={onReset}
-            className="flex-1 h-11 flex items-center justify-center gap-2 bg-red-500/5 rounded-xl text-[10px] font-black uppercase tracking-widest text-red-500/60 hover:text-red-400 hover:bg-red-500/10 transition-all"
+            className="flex-1 h-11 flex items-center justify-center gap-2 bg-red-500/5 rounded-xl text-[10px] font-black uppercase tracking-widest text-red-500/60 hover:text-red-400 hover:bg-red-500/10 transition-[color,background-color,border-color,opacity,box-shadow,transform]"
           >
             Reset
           </button>
@@ -99,7 +99,7 @@ function ImageEditorControlsPanel({
           aria-label="Generate image edit"
           onClick={onGenerate}
           disabled={isGenerating || !editPrompt.trim() || historyIndex < 0}
-          className={`w-full h-12 sm:h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-all active:scale-95 shadow-2xl
+          className={`w-full h-12 sm:h-16 rounded-2xl flex items-center justify-center gap-4 text-[12px] font-black tracking-[0.25em] uppercase transition-[color,background-color,border-color,opacity,box-shadow,transform] active:scale-95 shadow-2xl
                     ${
                       isGenerating
                         ? 'bg-accent-500/10 text-accent-500/40'
@@ -135,15 +135,6 @@ export const ImageEditorModal: React.FC<ImageEditorModalProps> = ({
   const historyRef = useRef<ImageData[]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
-
-  const prevIsOpenRef = useRef(false);
-
-  if (prevIsOpenRef.current && !isOpen) {
-    prevIsOpenRef.current = false;
-  }
-  if (!prevIsOpenRef.current && isOpen) {
-    prevIsOpenRef.current = true;
-  }
 
   React.useLayoutEffect(() => {
     if (textareaRef.current) {

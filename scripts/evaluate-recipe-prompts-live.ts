@@ -13,7 +13,6 @@ import type {
   JobMetricSummary,
   JobStatus,
   LocalCodexSessionResponse,
-  Project,
 } from '../packages/shared/src';
 import { compileCodexImagegenInput } from '../apps/local-server/src/providers/codexProvider';
 import { listRecipeModules } from '../lib/recipeModules';
@@ -107,8 +106,6 @@ export interface LiveRecipeEvaluationPairReport {
 export interface LiveRuntimeSnapshot {
   ready: boolean;
   defaultWorkspaceId: string | null;
-  /** @deprecated Prefer defaultWorkspaceId. */
-  defaultProjectId: string | null;
   failures: string[];
   warnings: string[];
   health: {
@@ -366,7 +363,7 @@ export function createLiveRecipeEvaluationPlan(
       const evaluation = createEvaluationVariantForLiveSpec(sourceSpec, variantName);
       const compiled = compileCodexImagegenInput({
         id: `${baseSpec.id}-${variantName}`,
-        projectId: 'recipe-quality-eval',
+        workspaceId: 'recipe-quality-eval',
         prompt: sourceSpec.prompt,
         execution: extractExecutionOptions(sourceSpec),
         providerId: 'codex',
@@ -496,7 +493,6 @@ export function evaluateLiveRuntimeReadiness(
   return {
     ready: failures.length === 0,
     defaultWorkspaceId,
-    defaultProjectId: defaultWorkspaceId,
     failures,
     warnings,
     health: {
@@ -658,7 +654,7 @@ export async function executeLiveRecipeEvaluation(
       try {
         const created = await createLiveJob(
           apiBase,
-          runtime.defaultWorkspaceId ?? runtime.defaultProjectId ?? 'default',
+          runtime.defaultWorkspaceId ?? 'default',
           variantPlan,
         );
         variantReport.jobId = created.id;

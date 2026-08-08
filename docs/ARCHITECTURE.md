@@ -38,11 +38,12 @@ graph TD
 ## Core Frontend Seams
 
 - `hooks/useStudioShell.ts` composes navigation, runtime, overlays, page state, catalog state, and generation state into the shell.
+- `hooks/useGenerationQueueController.ts`, `hooks/useCatalogModalDetailHydration.ts`, and `hooks/useStudioReset.ts` own the cross-domain Queue, modal hydration, and reset policies; the shell only supplies their adapters.
 - `hooks/useStudioRuntime.ts` aggregates backend health, onboarding, diagnostics, session verification, and readiness.
 - `hooks/useLocalStudioSync.ts` mirrors jobs, logs, catalog changes, and SSE state.
 - `hooks/useCatalog.ts` owns Image Catalog reads, pagination, mutations, trash, queue-result previews, and refresh scopes.
 - `lib/catalogRequestGate.ts` gives Catalog replacement, pagination, filter, and detail reads generation-scoped ownership so stale responses cannot publish across view generations.
-- `services/localStudioService.ts` is the frontend HTTP adapter to the local backend.
+- `services/studio-api/http.ts` owns the shared typed HTTP/error boundary. Sibling modules split requests by domain: jobs, catalog, workspaces, runtime, settings, providers, recipes, output sources, maintenance, and logs.
 - `services/studioEventSource.ts` owns the shared SSE connection.
 - `services/localGenerationRun.ts` creates Persistent Jobs, waits for terminal state, and returns catalog-derived results.
 - `lib/studioCatalogView.ts` and `lib/studioCatalogImageAdapter.ts` materialize UI images from Catalog Entries.
@@ -60,7 +61,7 @@ graph TD
 - `apps/local-server/src/codexRoutes.ts` owns Local Codex Session routes.
 - `apps/local-server/src/jobRoutes.ts` and `apps/local-server/src/persistentJobIntake.ts` own job creation, validation, provider selection, and enqueue behavior.
 - `apps/local-server/src/providerExecutionPolicy.ts` resolves effective execution fields at intake: explicit request, selected-provider default, then bootstrap fallback.
-- `apps/local-server/src/catalog.ts` and `apps/local-server/src/db.ts` own catalog and SQLite persistence.
+- `apps/local-server/src/catalog.ts` owns Catalog Entry persistence. `apps/local-server/src/db/` separates the SQLite connection, ordered migrations, and domain stores for workspaces, jobs, assets, settings, events/logs, and Codex turns.
 - `apps/local-server/src/managedAssetPolicy.ts` validates provider assets against the captured Library root; `apps/local-server/src/workerAssetFinalizer.ts` owns recoverable file/Asset/Catalog/job finalization.
 - `apps/local-server/src/eventStreamRoutes.ts` owns SSE.
 - `apps/local-server/src/libraryRoutes.ts` owns local asset serving.
@@ -83,7 +84,8 @@ graph TD
 
 ## Persistence
 
-- SQLite is the durable source of truth for jobs, cataloged assets, libraries, workspaces, settings, events, and system logs. Ordered schema migrations are recorded in `schema_migrations` and applied transactionally. Workspace is the user-visible organization entity (`/api/workspaces`); Project product APIs are retired.
+- SQLite is the durable source of truth for jobs, cataloged assets, libraries, workspaces, settings, events, and system logs. Ordered schema migrations in `apps/local-server/src/db/migrations.ts` are recorded in `schema_migrations` and applied transactionally. Workspace is the only user-visible organization entity (`/api/workspaces`); Project routes, contracts, columns, and tables are retired.
+- `StudioWorkspace` is the shared API contract. Shared Effect schemas validate Workspace and Job intake boundaries before route logic runs.
 - Persistent jobs carry immutable Library identity/root context and durable finalization checkpoints. Recovery can resume file, Asset, Catalog, or job completion without duplicating records or events.
 - `/api/jobs` and `/api/catalog` are summary-first hot reads; detail paths load full payloads on demand.
 - The Studio Library defaults to a local user folder: `C:\Users\<user>\AI-Studio-Library` on Windows, `/Users/<user>/AI-Studio-Library` on macOS, or `/home/<user>/AI-Studio-Library` on Linux.
@@ -170,7 +172,7 @@ Codex SDK and scripts are automation surfaces, not the product runtime. They sup
 - `ui:source:verify`
 - `ui:chunks:verify`
 - `library:layout:verify`
-- `architecture:verify` (the aggregate Style, Recipe, Provider, Catalog, Library-layout, and UI source gate required by CI)
+- `architecture:verify` (the aggregate Style, Recipe, Provider, Catalog, Library-layout, UI, Workspace-authority, and render-isolation gate required by CI)
 
 ## Storage Maintenance
 

@@ -16,7 +16,7 @@ import {
   createWorkspace as createWorkspaceApi,
   deleteWorkspace as deleteWorkspaceApi,
   updateWorkspace as updateWorkspaceApi,
-} from '../services/localStudioService';
+} from '../services/studio-api/workspaces';
 import {
   loadDurableWorkspacesFromApi,
   migrateIndexedDbWorkspacesToServer,

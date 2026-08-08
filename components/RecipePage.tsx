@@ -29,6 +29,17 @@ export interface RecipePageProps {
   handleAddToContext: (image: GeneratedImageWithConfig) => void;
 }
 
+export type RecipePageRuntimeProps = Omit<
+  RecipePageProps,
+  | 'activeRecipe'
+  | 'activeRecipeAliasId'
+  | 'generationConfig'
+  | 'updateGenerationConfig'
+  | 'updateAttachment'
+  | 'handlePastedFiles'
+  | 'handleAddToContext'
+>;
+
 export const RecipePage: React.FC<RecipePageProps> = ({
   activeRecipe,
   activeRecipeAliasId = null,

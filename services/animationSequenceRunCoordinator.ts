@@ -1,5 +1,7 @@
 import type { AnimationSequenceRunView, JobSummary } from '../packages/shared/src';
-import { attachAnimationSequenceFrame, listStudioJobs, queryCatalog } from './localStudioService';
+import { attachAnimationSequenceFrame } from './studio-api/animationSequences';
+import { listStudioJobs } from './studio-api/jobs';
+import { queryCatalog } from './studio-api/catalog';
 
 interface AnimationSequenceRunCoordinatorDependencies {
   attachFrame?: typeof attachAnimationSequenceFrame;

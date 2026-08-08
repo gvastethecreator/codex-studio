@@ -1,12 +1,8 @@
 import { Database } from 'bun:sqlite';
-import {
-  addAsset,
-  LATEST_DATABASE_SCHEMA_VERSION,
-  listJobSummaries,
-  listRecoverableJobs,
-  migrateDatabase,
-  updateJobFinalization,
-} from './db';
+import { createJob, listJobSummaries, listRecoverableJobs, updateJobFinalization } from './db/jobs';
+import { addAsset } from './db/assets';
+import { LATEST_DATABASE_SCHEMA_VERSION, migrateDatabase } from './db/migrations';
+import { createGenerationTaskSpec } from '../../../packages/shared/src/generationContracts';
 
 function createLegacyDatabase() {
   const database = new Database(':memory:');
@@ -124,9 +120,27 @@ try {
       'job-sentinel',
     );
   const summary = listJobSummaries(database).find((job) => job.id === 'job-sentinel');
+  const createdJob = createJob(
+    {
+      id: 'job-workspace-only',
+      workspaceId: 'workspace-created',
+      kind: 'image_generate',
+      providerId: 'codex',
+      sourceSpec: createGenerationTaskSpec({
+        id: 'spec-workspace-only',
+        task: 'image_generate',
+        providerId: 'codex',
+        prompt: 'workspace-only prompt',
+      }),
+      prompt: 'workspace-only prompt',
+    },
+    database,
+  );
+  const createdJobRow = database
+    .query('SELECT workspace_id, source_spec_json FROM jobs WHERE id = ?')
+    .get(createdJob.id) as { workspace_id: string; source_spec_json: string | null } | null;
   const legacyAsset = addAsset(
     {
-      projectId: 'project-sentinel',
       jobId: 'job-sentinel',
       filePath: 'D:/library/outputs/result.png',
       thumbnailPath: null,
@@ -190,9 +204,16 @@ try {
         migrationRows.length === LATEST_DATABASE_SCHEMA_VERSION &&
         migrationRows.at(-1)?.version === LATEST_DATABASE_SCHEMA_VERSION &&
         requiredColumns.every((column) => columnSet.has(column)),
-      sentinelPreserved:
-        sentinel?.project_id === 'project-sentinel' &&
-        sentinel?.original_prompt === 'sentinel prompt',
+      sentinelPreserved: sentinel?.original_prompt === 'sentinel prompt',
+      projectContractRemoved:
+        !columns.includes('project_id') &&
+        !database
+          .query("SELECT name FROM sqlite_master WHERE type = 'table' AND name = 'projects'")
+          .get() &&
+        createdJob.workspaceId === 'workspace-created' &&
+        createdJobRow?.workspace_id === 'workspace-created' &&
+        JSON.parse(createdJobRow?.source_spec_json ?? '{}').metadata?.workspaceId ===
+          'workspace-created',
       indexesPresent:
         indexes.some((index) => index.name === 'idx_jobs_library_created_desc') &&
         indexes.some((index) => index.name === 'idx_jobs_finalization_state'),

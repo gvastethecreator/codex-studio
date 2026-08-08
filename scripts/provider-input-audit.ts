@@ -72,7 +72,7 @@ const SECRET_LIKE_PATTERN =
 function createAuditJob(providerId: GenerationProviderId, sourceSpec: GenerationTaskSpec) {
   return {
     id: `${sourceSpec.id}-${providerId}`,
-    projectId: 'provider-input-audit',
+    workspaceId: 'provider-input-audit',
     providerId,
     prompt: 'fallback prompt that should not replace the source spec',
     execution: {

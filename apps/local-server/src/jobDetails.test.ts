@@ -58,7 +58,6 @@ describe('buildJobMetrics', () => {
   it('summarizes total timing, process segments, and reported token usage', () => {
     const job: Job = {
       id: 'job-1',
-      projectId: 'project-1',
       workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',
@@ -141,7 +140,6 @@ describe('buildJobMetrics', () => {
   it('builds a provider-neutral trace summary from durable job facts', () => {
     const job: Job = {
       id: 'job-1',
-      projectId: 'project-1',
       workspaceId: 'default',
       kind: 'image_generate',
       providerId: 'codex',

@@ -54,7 +54,7 @@ function createJob(): GenerationProviderJob {
 
   return {
     id: 'job-comfy',
-    projectId: 'project-1',
+    workspaceId: 'workspace-1',
     providerId: 'comfy',
     prompt: 'fallback',
     sourceSpec,

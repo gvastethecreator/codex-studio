@@ -1,19 +1,26 @@
-import { useCallback, useEffect, useMemo, useRef } from 'react';
+import { useCallback, useMemo } from 'react';
 
 import type { HeaderToolbarProps } from '../components/HeaderToolbar';
 import type { StudioOverlayController } from '../components/AppOverlays';
-import type { RecipePageProps } from '../components/RecipePage';
-import type { ToolbarProps } from '../components/Toolbar';
+import type { RecipePageRuntimeProps } from '../components/RecipePage';
+import type { GenerationToolbarRuntimeArgs } from '../components/shell/StudioGenerationDock';
 import type { RecipeAliasId } from '../lib/recipeAliases';
 import type { RecipeId } from '../types';
 import { useRuntimeLogActions, useToastUi, useWorkspaceState } from '../contexts/GlobalContext';
-import { useGeneration } from '../contexts/GenerationContext';
+import {
+  useGenerationChrome,
+  useGenerationModal,
+  useGenerationRun,
+  useGenerationShell,
+} from '../contexts/GenerationContext';
 import { useHashRouter, type AppPageView } from './useHashRouter';
 import { useImageInputSurface } from './useImageInputSurface';
 import { useStudioActionConfirmations } from './useStudioActionConfirmations';
 import { useStudioActivitySession } from './useStudioActivitySession';
 import { useStudioCatalogController } from './useCatalog';
 import { useStudioGallery } from './useStudioGallery';
+import { useCatalogModalDetailHydration } from './useCatalogModalDetailHydration';
+import { useGenerationQueueController } from './useGenerationQueueController';
 import { useStudioGenerationActions } from './useStudioGenerationActions';
 import { useStudioNavigation } from './useStudioNavigation';
 import { buildStudioShellOverlayController } from './useStudioOverlayController';
@@ -24,7 +31,6 @@ import { useSettingsSurface } from './useSettingsSurface';
 import { useStudioViewState } from './useStudioViewState';
 import { useVaultTransfer } from './useVaultTransfer';
 import { useWorkspaceStrip } from './useWorkspaceStrip';
-import { useGenerationToolbarConfig } from './useGenerationToolbarConfig';
 import { buildStudioHeaderToolbarProps } from '../lib/buildStudioHeaderToolbarProps';
 import {
   buildStudioPageController,
@@ -53,7 +59,7 @@ export interface StudioShellController {
     direction: number;
     activeRecipe: RecipeId | null;
     activeRecipeAliasId: RecipeAliasId | null;
-    recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
+    recipePageProps: RecipePageRuntimeProps;
     studioPageController: StudioPageController;
     onSelectRecipe: (recipeId: RecipeId, aliasId?: RecipeAliasId | null) => void;
   };
@@ -63,7 +69,7 @@ export interface StudioShellController {
     currentView: AppPageView;
     activeRecipe: RecipeId | null;
     isDragging: boolean;
-    toolbarProps: ToolbarProps;
+    toolbarArgs: GenerationToolbarRuntimeArgs;
   };
   overlays: StudioOverlayController;
 }
@@ -98,7 +104,10 @@ export function useStudioShell(): StudioShellController {
     closeOverlay,
   } = useHashRouter();
 
-  const { config, pipeline, recipe, ui, modal } = useGeneration();
+  const config = useGenerationShell();
+  const pipeline = useGenerationRun();
+  const { recipe, ui } = useGenerationChrome();
+  const modal = useGenerationModal();
   const viewState = useStudioViewState({ closeOverlay });
   const {
     activeCatalog,
@@ -148,34 +157,11 @@ export function useStudioShell(): StudioShellController {
     log,
   });
 
-  const wasGeneratingRef = useRef(pipeline.isGenerating);
-
-  useEffect(() => {
-    const justStartedGenerating = pipeline.isGenerating && !wasGeneratingRef.current;
-    wasGeneratingRef.current = pipeline.isGenerating;
-
-    if (justStartedGenerating && !viewState.queue.isOpen) {
-      viewState.queue.setIsOpen(true);
-    }
-  }, [pipeline.isGenerating, viewState.queue.isOpen, viewState.queue.setIsOpen]);
-
-  const clearStudioUiState = useCallback(() => {
-    recipe.setActiveRecipe(null);
-    ui.setIsInteractingWithToolbar(false);
-    ui.setIsKeyPopoverOpen(false);
-    modal.closeModal();
-    navigateToStudio();
-    activitySession.selection.clearSelectedJob();
-    viewState.actions.reset();
-  }, [
-    activitySession.selection.clearSelectedJob,
-    modal.closeModal,
-    navigateToStudio,
-    recipe.setActiveRecipe,
-    ui.setIsInteractingWithToolbar,
-    ui.setIsKeyPopoverOpen,
-    viewState.actions.reset,
-  ]);
+  useGenerationQueueController({
+    isGenerating: pipeline.isGenerating,
+    isQueueOpen: viewState.queue.isOpen,
+    setIsQueueOpen: viewState.queue.setIsOpen,
+  });
 
   const {
     direction,
@@ -224,7 +210,7 @@ export function useStudioShell(): StudioShellController {
     handleLoadRecipe,
     resetGenerationUi,
   } = useStudioGenerationActions({
-    generationConfig: config.generationConfig,
+    generationConfigRef: config.generationConfigRef,
     activeWorkspaceId,
     setGenerationConfig: config.setGenerationConfig,
     updateGenerationConfig: config.updateGenerationConfig,
@@ -244,7 +230,15 @@ export function useStudioShell(): StudioShellController {
     resetStudioState,
     refreshRuntime: studioRuntime.maintenance.refreshRuntime,
     clearGenerationState: resetGenerationUi,
-    clearUiState: clearStudioUiState,
+    ui: {
+      setActiveRecipe: recipe.setActiveRecipe,
+      setToolbarInteraction: ui.setIsInteractingWithToolbar,
+      setKeyPopoverOpen: ui.setIsKeyPopoverOpen,
+      closeModal: modal.closeModal,
+      navigateToStudio,
+      clearSelectedJob: activitySession.selection.clearSelectedJob,
+      resetViewState: viewState.actions.reset,
+    },
   });
 
   const {
@@ -322,23 +316,13 @@ export function useStudioShell(): StudioShellController {
     [imagesWithConfig, modal.activeCarouselId, modal.modalImage],
   );
 
-  useEffect(() => {
-    const imageId = modal.activeCarouselId;
-    if (!modal.isModalOpen || !imageId) return;
-    const entry = activeCatalog.view.byId.get(imageId);
-    if (!entry || entry.detailLevel === 'detail') return;
-    void hydrateCatalogDetail(imageId).catch((error) => {
-      log(
-        `Catalog detail hydration failed: ${error instanceof Error ? error.message : String(error)}`,
-      );
-    });
-  }, [
-    activeCatalog.view.byId,
+  useCatalogModalDetailHydration({
+    isModalOpen: modal.isModalOpen,
+    activeImageId: modal.activeCarouselId,
+    catalogById: activeCatalog.view.byId,
     hydrateCatalogDetail,
     log,
-    modal.activeCarouselId,
-    modal.isModalOpen,
-  ]);
+  });
 
   const { isDragging, handleDragOver, handleDragLeave, handleDrop } = useImageInputSurface({
     onFiles: config.handlePastedFiles,
@@ -492,29 +476,14 @@ export function useStudioShell(): StudioShellController {
     ],
   );
 
-  const recipePageProps = useMemo<Omit<RecipePageProps, 'activeRecipe'>>(
+  const recipePageProps = useMemo<RecipePageRuntimeProps>(
     () => ({
-      generationConfig: config.generationConfig,
-      updateGenerationConfig: config.updateGenerationConfig,
-      updateAttachment: config.updateAttachment,
-      handlePastedFiles: config.handlePastedFiles,
       handleGenerate,
       isGenerating: pipeline.isGenerating,
       imagesWithConfig,
       openModal: handleOpenModal,
-      handleAddToContext: config.handleAddToContext,
     }),
-    [
-      config.generationConfig,
-      config.updateGenerationConfig,
-      config.updateAttachment,
-      config.handlePastedFiles,
-      handleGenerate,
-      pipeline.isGenerating,
-      imagesWithConfig,
-      handleOpenModal,
-      config.handleAddToContext,
-    ],
+    [handleGenerate, pipeline.isGenerating, imagesWithConfig, handleOpenModal],
   );
 
   const studioPageController = useMemo(
@@ -546,7 +515,7 @@ export function useStudioShell(): StudioShellController {
           handleDeleteSelected,
           handleClearWorkspace,
           previewRatio: viewState.preview.ratio,
-          generationAspectRatio: config.generationConfig.aspectRatio,
+          generationAspectRatio: config.aspectRatio,
           isInteractingWithToolbar: ui.isInteractingWithToolbar,
           catalogTotal: activeCatalog.total,
           catalogHasMore: activeCatalog.hasMore,
@@ -590,7 +559,7 @@ export function useStudioShell(): StudioShellController {
       handleDeleteSelected,
       handleClearWorkspace,
       viewState.preview.ratio,
-      config.generationConfig.aspectRatio,
+      config.aspectRatio,
       ui.isInteractingWithToolbar,
       activeCatalog.total,
       activeCatalog.hasMore,
@@ -609,40 +578,44 @@ export function useStudioShell(): StudioShellController {
     ],
   );
 
-  const toolbarProps = useGenerationToolbarConfig({
-    config: {
-      generationConfig: config.generationConfig,
-      updateConfig: config.updateGenerationConfig,
-      updateAttachment: config.updateAttachment,
-      onFileSelect: config.handleFileSelect,
-      onFilesDrop: config.handlePastedFiles,
-      onRemoveAttachment: config.handleRemoveAttachment,
-      maxAttachments: config.maxAttachments,
-      codexModelCatalog: config.codexModelCatalog,
-      isLoadingCodexModelCatalog: config.isLoadingCodexModelCatalog,
-      codexModelCatalogError: config.codexModelCatalogError,
-    },
-    actions: {
-      onGenerate: handleGenerate,
-      isGenerating: pipeline.isGenerating,
-      generationStartTime: pipeline.generationStartTime,
+  const toolbarArgs = useMemo<GenerationToolbarRuntimeArgs>(
+    () => ({
+      actions: {
+        onGenerate: handleGenerate,
+        isGenerating: pipeline.isGenerating,
+        generationStartTime: pipeline.generationStartTime,
+        isEnhancingPrompt,
+        onEnhancePrompt: handleEnhancePrompt,
+      },
+      ui: {
+        setPreviewRatio: viewState.preview.setRatio,
+        setIsInteracting: ui.setIsInteractingWithToolbar,
+        isKeyPopoverOpen: ui.isKeyPopoverOpen,
+        setIsKeyPopoverOpen: ui.setIsKeyPopoverOpen,
+      },
+      editor: {
+        openEditor: viewState.editor.open,
+        openEditorRoute,
+      },
+      sync: {
+        verifyCodexSession: studioRuntime.maintenance.verifyCodexSession,
+      },
+    }),
+    [
+      handleGenerate,
+      pipeline.isGenerating,
+      pipeline.generationStartTime,
       isEnhancingPrompt,
-      onEnhancePrompt: handleEnhancePrompt,
-    },
-    ui: {
-      setPreviewRatio: viewState.preview.setRatio,
-      setIsInteracting: ui.setIsInteractingWithToolbar,
-      isKeyPopoverOpen: ui.isKeyPopoverOpen,
-      setIsKeyPopoverOpen: ui.setIsKeyPopoverOpen,
-    },
-    editor: {
-      openEditor: viewState.editor.open,
+      handleEnhancePrompt,
+      viewState.preview.setRatio,
+      ui.setIsInteractingWithToolbar,
+      ui.isKeyPopoverOpen,
+      ui.setIsKeyPopoverOpen,
+      viewState.editor.open,
       openEditorRoute,
-    },
-    sync: {
-      verifyCodexSession: studioRuntime.maintenance.verifyCodexSession,
-    },
-  });
+      studioRuntime.maintenance.verifyCodexSession,
+    ],
+  );
 
   const viewportController = useMemo(
     () =>
@@ -661,7 +634,7 @@ export function useStudioShell(): StudioShellController {
         dock: {
           isModalOpen: modal.isModalOpen,
           isDragging,
-          toolbarProps,
+          toolbarArgs,
         },
       }),
     [
@@ -674,7 +647,7 @@ export function useStudioShell(): StudioShellController {
       studioPageController,
       modal.isModalOpen,
       isDragging,
-      toolbarProps,
+      toolbarArgs,
     ],
   );
 

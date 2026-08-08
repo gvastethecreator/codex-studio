@@ -1,6 +1,6 @@
 import type { CatalogImage } from '../packages/shared/src';
 import type { GeneratedImage, GeneratedImageWithConfig } from '../types';
-import { toStudioAssetUrl } from '../services/localStudioService';
+import { toStudioAssetUrl } from '../services/studio-api/assetUrls';
 import { buildGenerationConfigFromCatalogImage } from '../utils/catalogImageGenerationConfig';
 
 const GRID_THUMBNAIL_MAX_EDGE = 512;

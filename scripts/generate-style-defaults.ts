@@ -1,7 +1,7 @@
 import { Database } from 'bun:sqlite';
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import type { Asset, Job, Project } from '../packages/shared/src';
+import type { Asset, Job } from '../packages/shared/src';
 import { resolveLibraryPathFromRoot } from '../apps/local-server/src/library';
 import type {
   StyleRuntimePack,
@@ -9622,7 +9622,7 @@ function readAssetForJobFromSqlite(jobId: string) {
     try {
       return db
         .query(
-          `SELECT id, project_id AS projectId, job_id AS jobId, file_path AS filePath,
+          `SELECT id, job_id AS jobId, file_path AS filePath,
                   thumbnail_path AS thumbnailPath, public_url AS publicUrl, prompt,
                   width, height, mime_type AS mimeType, created_at AS createdAt,
                   deleted_at AS deletedAt
@@ -9874,8 +9874,6 @@ await mkdir(lockDir, { recursive: true });
 const packs = (await loadPacks(packFilter || undefined)).filter(
   (pack) => !packFilter || pack.id === packFilter,
 );
-let projectId: string | undefined;
-
 const manifestByPack = new Map<string, Map<string, StyleDefaultManifestEntry>>();
 const failuresByPack = new Map<string, unknown[]>();
 const targetPresets: PendingPreset[] = [];
@@ -9997,7 +9995,6 @@ const health = await request<{ ok: boolean }>('/api/health');
 if (!health.ok) throw new Error('Local studio server is not healthy.');
 
 const workspaceId = 'default';
-projectId = workspaceId; // legacy local var name kept for log lines only
 
 async function processPreset(target: PendingPreset) {
   const { pack, preset, category, destination, variantSlot } = target;

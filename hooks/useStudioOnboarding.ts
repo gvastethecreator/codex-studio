@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { HealthResponse } from '../packages/shared/src';
 import type { Toast } from '../types';
-import { getStudioApiBase, startStudioAppServer } from '../services/localStudioService';
+import { getStudioApiBase } from '../services/studio-api/http';
+import { startStudioAppServer } from '../services/studio-api/runtime';
 import { resolveStudioRuntime } from '../services/studioRuntime';
 import { useLocalStorage } from './useLocalStorage';
 

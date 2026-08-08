@@ -59,7 +59,6 @@ describe('createCodexTurn', () => {
     await expect(
       turn.runTurn({
         jobId: 'job-1',
-        projectId: 'project-1',
         prompt: 'PACK: Mythic Noir Curated Vault',
       }),
     ).rejects.toThrow('Timed out waiting for Codex notification');
@@ -109,7 +108,6 @@ describe('createCodexTurn', () => {
     await expect(
       turn.runTurn({
         jobId: 'job-socket',
-        projectId: 'project-1',
         prompt: 'PACK: Fashion & Costume',
       }),
     ).rejects.toThrow('Codex app-server socket closed');

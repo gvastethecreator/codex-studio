@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vite-plus/test';
 
-import { performStudioReset } from './useStudioReset';
+import { performStudioReset, resetStudioUi } from './useStudioReset';
 
 describe('performStudioReset', () => {
   it('resets runtime state, clears storage, and refreshes diagnostics in order', async () => {
@@ -68,5 +68,30 @@ describe('performStudioReset', () => {
 
     expect(result).toBe(false);
     expect(calls).toEqual(['toast:error:backend reset failed']);
+  });
+});
+
+describe('resetStudioUi', () => {
+  it('clears every cross-domain UI surface owned by reset', () => {
+    const calls: string[] = [];
+    resetStudioUi({
+      setActiveRecipe: (value) => calls.push(`recipe:${value}`),
+      setToolbarInteraction: (value) => calls.push(`toolbar:${value}`),
+      setKeyPopoverOpen: (value) => calls.push(`key-popover:${value}`),
+      closeModal: () => calls.push('modal'),
+      navigateToStudio: () => calls.push('navigation'),
+      clearSelectedJob: () => calls.push('activity'),
+      resetViewState: () => calls.push('view-state'),
+    });
+
+    expect(calls).toEqual([
+      'recipe:null',
+      'toolbar:false',
+      'key-popover:false',
+      'modal',
+      'navigation',
+      'activity',
+      'view-state',
+    ]);
   });
 });

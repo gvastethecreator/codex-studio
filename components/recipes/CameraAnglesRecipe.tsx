@@ -105,7 +105,7 @@ function CameraAnglesInfoPanel({
                 aria-label={`Select camera image ${img.id}`}
                 key={img.id}
                 onClick={() => onSelectImage(img)}
-                className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-all group shadow-sm hover:shadow-lg"
+                className="relative aspect-square w-full rounded-xl overflow-hidden border border-white/10 hover:border-cyan-500/50 transition-[border-color,box-shadow] group shadow-sm hover:shadow-lg"
               >
                 <img
                   src={img.thumbnail || img.src}
@@ -327,7 +327,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                     aria-label="Remove camera reference"
                     onClick={handleEstimateCamera}
                     disabled={isEstimating}
-                    className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/10 transition-all ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/30'}`}
+                    className={`flex items-center gap-1.5 px-2 py-1 rounded-lg border border-white/10 transition-[color,background-color,border-color] ${isEstimating ? 'bg-white/10' : 'bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 hover:border-cyan-500/30'}`}
                     title="Estimate initial view from image shape"
                   >
                     {isEstimating ? (
@@ -373,7 +373,7 @@ export const CameraAnglesRecipe: React.FC<CameraAnglesRecipeProps> = ({
                   className="hidden"
                   accept="image/*"
                 />
-                <div className="size-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/50 transition-all">
+                <div className="size-16 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-4 shadow-xl group-hover:scale-110 group-hover:border-cyan-500/50 transition-[border-color,transform]">
                   <Upload
                     size={20}
                     className="text-zinc-500 group-hover:text-white transition-colors"

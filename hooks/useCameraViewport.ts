@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useReducer, useRef } from 'react';
+import { useLatestRef } from './useLatestRef';
 
 type ThreeModule = typeof import('three');
 type ThreeBufferGeometry = import('three').BufferGeometry;
@@ -192,8 +193,7 @@ export const useCameraViewport = ({
 
   const hasReference = Boolean(referenceImageSrc);
   const hasReferenceRef = useRef(hasReference);
-  const referenceImageSrcRef = useRef(referenceImageSrc);
-  referenceImageSrcRef.current = referenceImageSrc;
+  const referenceImageSrcRef = useLatestRef(referenceImageSrc);
 
   useEffect(() => {
     stateRef.current = { ...stateRef.current, azimuth, elevation, distance };
@@ -778,7 +778,15 @@ export const useCameraViewport = ({
       cancelled = true;
       cleanupViewport?.();
     };
-  }, [aspectRatio, hasReference, setAzimuth, setElevation, setDistance]);
+  }, [
+    aspectRatio,
+    hasReference,
+    hasReferenceRef,
+    referenceImageSrcRef,
+    setAzimuth,
+    setDistance,
+    setElevation,
+  ]);
 
   useEffect(() => {
     const subject = sceneObjects.current.subject as ThreeSubjectMesh | undefined;

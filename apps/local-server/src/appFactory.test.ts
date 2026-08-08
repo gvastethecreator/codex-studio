@@ -6,13 +6,20 @@ import type {
   LocalCodexSessionResponse,
 } from '../../../packages/shared/src';
 import type { StudioCatalogStore } from './catalogStore';
-import type { StudioDbStore } from './dbStore';
-import { createStudioApp } from './appFactory';
+import {
+  createStudioApp,
+  type StudioAssetStore,
+  type StudioJobStore,
+  type StudioLogStore,
+} from './appFactory';
 import type { WorkerController } from './worker';
 
-vi.mock('./db', () => ({
+vi.mock('./db/settings', () => ({
   getSettingValue: vi.fn(() => null),
   setSettingValue: vi.fn(() => null),
+}));
+
+vi.mock('./db/workspaces', () => ({
   ensureDefaultWorkspace: vi.fn(() => ({
     id: 'default',
     name: 'Default',
@@ -28,25 +35,10 @@ vi.mock('./logger', () => ({
   log: vi.fn(),
 }));
 
-function createFakeDbStore(overrides?: Partial<StudioDbStore>): StudioDbStore {
-  const defaultProject = {
-    id: 'project-default',
-    name: 'Default Studio Project',
-    description: null,
-    createdAt: '2026-05-31T00:00:00.000Z',
-    updatedAt: '2026-05-31T00:00:00.000Z',
-  };
+type StudioStoreOverrides = Partial<StudioJobStore & StudioAssetStore & StudioLogStore>;
 
-  const store: StudioDbStore = {
-    ensureDefaultProject: vi.fn(() => defaultProject),
-    createProject: vi.fn((name: string, description?: string | null) => ({
-      id: 'project-created',
-      name,
-      description: description ?? null,
-      createdAt: '2026-05-31T00:00:00.000Z',
-      updatedAt: '2026-05-31T00:00:00.000Z',
-    })),
-    listProjects: vi.fn(() => [defaultProject]),
+function createFakeStores(overrides?: StudioStoreOverrides) {
+  const jobStore: StudioJobStore = {
     createJob: vi.fn(() => {
       throw new Error('not used in appFactory composition test');
     }),
@@ -54,11 +46,18 @@ function createFakeDbStore(overrides?: Partial<StudioDbStore>): StudioDbStore {
     requeueJob: vi.fn(() => null),
     getJob: vi.fn(() => null),
     listJobSummaries: vi.fn(() => []),
+    ...overrides,
+  };
+  const assetStore: StudioAssetStore = {
     listAssets: vi.fn(() => []),
+    ...overrides,
+  };
+  const logStore: StudioLogStore = {
     listLogs: vi.fn(() => []),
+    ...overrides,
   };
 
-  return { ...store, ...overrides };
+  return { jobStore, assetStore, logStore };
 }
 
 function createFakeCatalogStore(overrides?: Partial<StudioCatalogStore>): StudioCatalogStore {
@@ -155,7 +154,7 @@ function createCodexRuntimeReport(
 
 describe('createStudioApp', () => {
   it('wires injected codex and project adapters through mounted routes', async () => {
-    const dbStore = createFakeDbStore();
+    const stores = createFakeStores();
     const catalogStore = createFakeCatalogStore();
     const worker = createWorkerDependency();
     const logger = vi.fn();
@@ -205,7 +204,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore,
+        ...stores,
         catalogStore,
         worker,
         logger,
@@ -224,28 +223,15 @@ describe('createStudioApp', () => {
     await expect(sessionResponse.json()).resolves.toEqual(localSessionFixture);
     expect(readLocalCodexSession).toHaveBeenCalledTimes(1);
 
-    const listProjectsResponse = await studio.app.request('/api/projects');
-    expect(listProjectsResponse.status).toBe(410);
-    await expect(listProjectsResponse.json()).resolves.toMatchObject({
-      code: 'projects_retired',
-    });
-
-    const createProjectResponse = await studio.app.request('/api/projects', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: 'Seam Project', description: 'composition test' }),
-    });
-    expect(createProjectResponse.status).toBe(410);
-    await expect(createProjectResponse.json()).resolves.toMatchObject({
-      code: 'projects_retired',
-    });
+    const removedProjectsResponse = await studio.app.request('/api/projects');
+    expect(removedProjectsResponse.status).toBe(404);
   });
 
   it('allows configured local UI origins through the local API guard', async () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
       },
@@ -260,21 +246,19 @@ describe('createStudioApp', () => {
   });
 
   it('rejects browser requests from foreign origins before mounted routes run', async () => {
-    const listProjects = vi.fn(() => []);
-    const createProject = vi.fn();
+    const listJobSummaries = vi.fn(() => []);
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore({
-          listProjects,
-          createProject: createProject as unknown as StudioDbStore['createProject'],
+        ...createFakeStores({
+          listJobSummaries,
         }),
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
       },
     });
 
-    const listResponse = await studio.app.request('/api/projects', {
+    const listResponse = await studio.app.request('/api/jobs', {
       headers: { Origin: 'https://example.test' },
     });
     expect(listResponse.status).toBe(403);
@@ -282,15 +266,7 @@ describe('createStudioApp', () => {
       error: 'Forbidden origin',
       code: 'forbidden_origin',
     });
-    expect(listProjects).not.toHaveBeenCalled();
-
-    const createResponse = await studio.app.request('/api/projects', {
-      method: 'POST',
-      headers: { Origin: 'https://example.test', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name: 'Blocked' }),
-    });
-    expect(createResponse.status).toBe(403);
-    expect(createProject).not.toHaveBeenCalled();
+    expect(listJobSummaries).not.toHaveBeenCalled();
   });
 
   it('wires library and workspace route dependencies through the factory seam', async () => {
@@ -305,8 +281,8 @@ describe('createStudioApp', () => {
       id: 'workspace-injected',
       name: 'Injected Workspace',
       libraryId: 'library-injected',
-      filterJson: { favorite: true },
-      sortOrder: 'newest',
+      filter: { favorite: true },
+      sortOrder: 'newest' as const,
       createdAt: '2026-05-31T00:00:00.000Z',
       updatedAt: '2026-05-31T00:00:00.000Z',
     };
@@ -316,7 +292,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
         libraryRoutes: {
@@ -378,7 +354,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore,
         worker: createWorkerDependency(),
       },
@@ -403,7 +379,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
         readCodexModelCatalog,
@@ -433,7 +409,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
         ensureAppServer,
@@ -473,7 +449,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker,
       },
@@ -491,15 +467,15 @@ describe('createStudioApp', () => {
     const createJob = vi.fn(() => {
       throw new Error('job should not be persisted');
     });
-    const dbStore = createFakeDbStore({
-      createJob: createJob as unknown as StudioDbStore['createJob'],
+    const stores = createFakeStores({
+      createJob: createJob as unknown as StudioJobStore['createJob'],
     });
     const worker = createWorkerDependency();
 
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore,
+        ...stores,
         catalogStore: createFakeCatalogStore(),
         worker,
         readCodexRuntimeDoctor: () =>
@@ -544,7 +520,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
         ensureAppServer,
@@ -563,7 +539,6 @@ describe('createStudioApp', () => {
   it('wires cancel conflict path through injected worker dependency', async () => {
     const activeJob = {
       id: 'job-active',
-      projectId: 'project-default',
       workspaceId: 'default',
       kind: 'dry_run' as const,
       providerId: null,
@@ -580,8 +555,8 @@ describe('createStudioApp', () => {
     };
 
     const getJobSpy = vi.fn((id: string) => (id === activeJob.id ? activeJob : null));
-    const getJobMock: StudioDbStore['getJob'] = (id: string) => getJobSpy(id);
-    const dbStore = createFakeDbStore({ getJob: getJobMock });
+    const getJobMock: StudioJobStore['getJob'] = (id: string) => getJobSpy(id);
+    const stores = createFakeStores({ getJob: getJobMock });
     const worker = createWorkerDependency();
     const cancelQueuedOrRunningJobMock = vi.fn(() => null);
     worker.cancelQueuedOrRunningJob = cancelQueuedOrRunningJobMock;
@@ -589,7 +564,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore,
+        ...stores,
         catalogStore: createFakeCatalogStore(),
         worker,
       },
@@ -610,7 +585,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker: createWorkerDependency(),
         readCodexRuntimeDoctor,
@@ -632,7 +607,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker,
         stopAppServer,
@@ -654,7 +629,7 @@ describe('createStudioApp', () => {
     const studio = await createStudioApp({
       runInit: false,
       dependencies: {
-        dbStore: createFakeDbStore(),
+        ...createFakeStores(),
         catalogStore: createFakeCatalogStore(),
         worker,
         stopAppServer,

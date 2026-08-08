@@ -12,6 +12,7 @@ import {
 } from '@tabler/icons-react';
 
 import { cn } from '../lib/utils';
+import { useLatestRef } from '../hooks/useLatestRef';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import type { ImageGenerationConfig, LogEntry } from '../types';
 
@@ -89,8 +90,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
   ]);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const onCloseRef = useRef(onClose);
-  onCloseRef.current = onClose;
+  const onCloseRef = useLatestRef(onClose);
 
   const latestJobs = useMemo(
     () => studioJobs.toSorted((a, b) => getJobTime(b) - getJobTime(a)).slice(0, 6),
@@ -107,7 +107,7 @@ export const StudioChatPanel: React.FC<StudioChatPanelProps> = ({
     window.addEventListener('keydown', handleKeyDown);
     requestAnimationFrame(() => textareaRef.current?.focus({ preventScroll: true }));
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen]);
+  }, [isOpen, onCloseRef]);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight });

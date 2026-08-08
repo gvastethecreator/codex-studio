@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useReducer, useMemo, useRef } from 'react';
-import { getStudioJobDetail } from '../services/localStudioService';
+import { useCallback, useEffect, useReducer, useMemo } from 'react';
+import { useLatestRef } from './useLatestRef';
+import { getStudioJobDetail } from '../services/studio-api/jobs';
 import type { JobDetailResponse } from '../packages/shared/src';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 
@@ -45,8 +46,7 @@ export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInsp
     null,
   );
   const [jobDetailState, dispatchJobDetail] = useReducer(jobDetailReducer, INITIAL_JOB_DETAIL);
-  const addToastRef = useRef(addToast);
-  addToastRef.current = addToast;
+  const addToastRef = useLatestRef(addToast);
 
   const selectedStudioJobUpdatedAt = useMemo(
     () => studioJobs.find((job) => job.id === selectedStudioJobId)?.updatedAt ?? null,
@@ -84,7 +84,7 @@ export function useStudioJobInspector({ studioJobs, addToast }: UseStudioJobInsp
     return () => {
       cancelled = true;
     };
-  }, [selectedStudioJobId, selectedStudioJobUpdatedAt]);
+  }, [addToastRef, selectedStudioJobId, selectedStudioJobUpdatedAt]);
 
   const inspectStudioJob = useCallback((jobId: string) => {
     setSelectedStudioJobId(jobId);

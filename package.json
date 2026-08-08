@@ -53,9 +53,10 @@
     "providers:verify": "bun run providers:audit -- --verify && bun run providers:source:verify",
     "providers:preflight": "bun run scripts/query-provider-runtime.ts",
     "runtime:doctor": "bun run scripts/query-codex-runtime.ts",
+    "portability:smoke": "bun run scripts/portability-smoke.ts",
     "catalog:source:verify": "bun run scripts/catalog-first-source-audit.ts",
     "workspace:source:verify": "bun run scripts/workspace-authority-source-audit.ts",
-    "isolation:verify": "bunx vitest run contexts/RuntimeLogIsolation.runtime.test.tsx contexts/RuntimeLogContext.subscription.test.ts lib/studioRenderIsolationPolicy.test.ts hooks/useStudioShell.composition.test.ts",
+    "isolation:verify": "bunx vitest run contexts/GenerationIsolation.runtime.test.tsx contexts/RuntimeLogIsolation.runtime.test.tsx contexts/RuntimeLogContext.subscription.test.ts lib/studioRenderIsolationPolicy.test.ts hooks/useStudioShell.composition.test.ts hooks/useGenerationQueueController.test.tsx hooks/useCatalogModalDetailHydration.test.tsx hooks/useStudioReset.test.ts",
     "library:layout:verify": "bun run scripts/studio-library-layout-source-audit.ts",
     "storage:audit": "bun run scripts/studio-storage-maintenance.ts audit",
     "storage:compact": "bun run scripts/studio-storage-maintenance.ts compact",
@@ -74,6 +75,10 @@
     "lint:fix": "bun run scripts/tooling-task.ts lint:fix",
     "check": "bun run scripts/tooling-task.ts check",
     "check:fix": "bun run scripts/tooling-task.ts check:fix",
+    "typecheck:web": "bunx tsc --noEmit --pretty false -p tsconfig.web.json",
+    "typecheck:shared": "bunx tsc --noEmit --pretty false -p packages/shared/tsconfig.json",
+    "typecheck:scripts": "bunx tsc --noEmit --pretty false -p tsconfig.scripts.json && bunx tsc --noEmit --pretty false -p tsconfig.browser-scripts.json",
+    "typecheck:environments": "bun run typecheck:web && bun run build:server && bun run typecheck:shared && bun run typecheck:scripts",
     "test": "bun run scripts/tooling-task.ts test",
     "test:unit": "bun run scripts/tooling-task.ts test:unit",
     "test:coverage": "bun run scripts/tooling-task.ts test:coverage",
@@ -86,12 +91,14 @@
     "validate:release": "bun run scripts/tooling-task.ts validate:release",
     "docs:check": "bun run scripts/check-docs.ts",
     "repo:hygiene:verify": "bun run scripts/audit-repo-hygiene.ts --verify",
-    "repo:assets:audit": "bun run scripts/audit-repo-assets.ts",
+    "repo:assets:audit": "bun run scripts/audit-repo-assets.ts --verify",
+    "repo:assets:lock": "bun run scripts/audit-repo-assets.ts --update-lock",
+    "core-assets:smoke": "bun run scripts/core-assets-smoke.ts",
     "preview": "vp preview",
     "preview:electron": "bun run scripts/preview-electron.ts",
     "tooling:logs": "bun run scripts/open-tooling-logs.ts",
     "tooling:logs:prune": "bun run scripts/tooling-task.ts tooling:logs:prune",
-    "doctor": "bunx react-doctor@0.8.1"
+    "doctor": "bunx react-doctor@0.9.7"
   },
   "dependencies": {
     "@chenglou/pretext": "^0.0.8",
@@ -125,21 +132,21 @@
     "@vitejs/plugin-react": "^6.0.5",
     "electron": "^43.3.0",
     "jsdom": "^30.0.1",
-    "oxfmt": "0.56.0",
-    "oxlint": "1.71.0",
+    "oxfmt": "0.62.0",
+    "oxlint": "1.77.0",
     "playwright": "^1.62.1",
     "tailwindcss": "^4.3.3",
     "tsx": "^4.23.11",
     "typescript": "~7.0.2",
-    "vite": "8.1.0",
+    "vite": "8.2.1",
     "vite-plus": "^0.2.8",
     "vitest": "^4.1.10"
   },
   "overrides": {
-    "oxfmt": "0.56.0",
-    "oxlint": "1.71.0",
+    "oxfmt": "0.62.0",
+    "oxlint": "1.77.0",
     "undici": "7.28.0",
-    "vite": "8.1.0"
+    "vite": "8.2.1"
   },
   "packageManager": "bun@1.3.14"
 }

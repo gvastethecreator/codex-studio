@@ -96,7 +96,7 @@ If `rg` fails on Windows in this checkout, use PowerShell `Get-ChildItem` and `S
 ## Code Rules
 
 - Shared domain contracts belong in `packages/shared/src`.
-- Frontend backend calls go through `services/localStudioService.ts` or `services/studioEventSource.ts`.
+- Frontend backend calls go through the domain modules under `services/studio-api/` or `services/studioEventSource.ts`.
 - Backend provider execution belongs behind provider adapters, not route handlers.
 - Job kinds should describe provider-independent tasks.
 - Provider-specific options belong in provider config/input, not generic task names.

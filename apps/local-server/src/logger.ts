@@ -1,4 +1,4 @@
-import { addSystemLog } from './db';
+import { addSystemLog } from './db/events';
 import { publishEvent } from './events';
 import { resolveLibraryPath } from './library';
 import { appendRotatingLog } from './rotatingLog';

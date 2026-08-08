@@ -114,8 +114,8 @@ const SCENARIOS: ResponsiveScenario[] = [
     expectedRoute: 'studio',
     openQueue: true,
     requiresComposer: true,
-    requiredSelectors: ['[title="Close queue"]'],
-    requiredText: ['Generation Queue'],
+    requiredSelectors: ['[title="Close jobs"]'],
+    requiredText: ['Persistent Jobs'],
   },
   {
     name: 'settings',
@@ -175,10 +175,7 @@ function toFriendlyBrowserError(error: unknown) {
 }
 
 async function clickIfPresent(page: Page, selector: string) {
-  const locator = page.locator(selector);
-  if ((await locator.count()) === 0) return false;
-  await locator.first().click({ timeout: 2_000 });
-  return true;
+  return clickFirstVisible(page.locator(selector), 2_000);
 }
 
 async function isVisible(locator: Locator, timeout = 1_000) {
@@ -199,20 +196,20 @@ async function clickFirstVisible(locator: Locator, timeoutMs: number) {
 }
 
 async function clickByLabelOrMobileCommand(page: Page, label: string, timeoutMs: number) {
-  const direct = page.getByLabel(label, { exact: true });
+  const direct = page.locator(`[aria-label=${JSON.stringify(label)}]:visible`);
   if (await clickFirstVisible(direct, timeoutMs)) {
     return;
   }
 
-  const mobileCommands = page.getByLabel('Open mobile commands', { exact: true });
+  const mobileCommands = page.locator('[aria-label="Open mobile commands"]:visible');
   if (await clickFirstVisible(mobileCommands, timeoutMs)) {
-    const openedTarget = page.getByLabel(label, { exact: true });
-    if (await clickFirstVisible(openedTarget, timeoutMs)) return;
+    const openedTarget = page.locator(`[aria-label=${JSON.stringify(label)}]:visible`);
+    await openedTarget.first().waitFor({ state: 'visible', timeout: timeoutMs });
     await openedTarget.first().click({ timeout: timeoutMs });
     return;
   }
 
-  await direct.first().click({ timeout: timeoutMs });
+  throw new Error(`Could not find a visible command labeled ${JSON.stringify(label)}.`);
 }
 
 async function exerciseSettingsExecutionDefaults(page: Page, timeoutMs: number) {
@@ -260,13 +257,14 @@ async function prepareScenario(page: Page, scenario: ResponsiveScenario, timeout
   await page.waitForTimeout(1_500);
 
   if (scenario.closeQueue) {
-    await clickIfPresent(page, '[title="Close queue"]');
+    await clickIfPresent(page, '[title="Close jobs"]');
     await page.waitForTimeout(150);
   }
 
   if (scenario.openQueue) {
-    if ((await page.locator('[title="Close queue"]').count()) === 0) {
-      await clickIfPresent(page, '[aria-label^="Open generation queue"]');
+    if (!(await isVisible(page.locator('[title="Close jobs"]:visible')).catch(() => false))) {
+      const opened = await clickIfPresent(page, '[aria-label^="Open persistent jobs"]');
+      if (!opened) throw new Error('Could not find a visible persistent jobs command.');
     }
     await page.waitForTimeout(700);
   }
@@ -278,7 +276,7 @@ async function prepareScenario(page: Page, scenario: ResponsiveScenario, timeout
 
   for (const selector of scenario.requiredSelectors) {
     await page
-      .locator(selector)
+      .locator(`${selector}:visible`)
       .first()
       .waitFor({ timeout: timeoutMs })
       .catch(() => {});
@@ -287,6 +285,7 @@ async function prepareScenario(page: Page, scenario: ResponsiveScenario, timeout
   for (const text of scenario.requiredText ?? []) {
     await page
       .getByText(text, { exact: false })
+      .filter({ visible: true })
       .first()
       .waitFor({ timeout: timeoutMs })
       .catch(() => {});
@@ -340,13 +339,13 @@ async function observeScenario(
   }
 
   for (const selector of scenario.requiredSelectors) {
-    if ((await page.locator(selector).count()) === 0) {
+    if ((await page.locator(`${selector}:visible`).count()) === 0) {
       violations.push(`missing selector: ${selector}`);
     }
   }
 
   for (const text of scenario.requiredText ?? []) {
-    if ((await page.getByText(text, { exact: false }).count()) === 0) {
+    if ((await page.getByText(text, { exact: false }).filter({ visible: true }).count()) === 0) {
       violations.push(`missing text: ${text}`);
     }
   }

@@ -19,6 +19,7 @@ import { canRetryStudioJob } from '../lib/studioJobRetry';
 import type { StudioQueueResultPreview } from '../lib/studioQueueResults';
 import type { ShellActivityJob as StudioJob } from '../lib/shellActivityJob';
 import { cn } from '../lib/utils';
+import { useLatestRef } from '../hooks/useLatestRef';
 import type { RecipeId } from '../types';
 
 interface QueuePanelProps {
@@ -297,8 +298,11 @@ const RecentResultViewer: React.FC<{
   onNext: () => void;
   onInspect?: () => void;
 }> = ({ result, index, total, onClose, onPrevious, onNext, onInspect }) => {
-  const navigationRef = React.useRef({ onClose, onPrevious, onNext });
-  navigationRef.current = { onClose, onPrevious, onNext };
+  const navigation = useMemo(
+    () => ({ onClose, onPrevious, onNext }),
+    [onClose, onNext, onPrevious],
+  );
+  const navigationRef = useLatestRef(navigation);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -308,7 +312,7 @@ const RecentResultViewer: React.FC<{
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [navigationRef]);
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-black/92 backdrop-blur-md">

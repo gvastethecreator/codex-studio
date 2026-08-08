@@ -1,0 +1,146 @@
+{
+  "current_commit": "39c5b033578d1ada0539e467b90cefc65089fc27",
+  "working_tree_dirty": true,
+  "generated_at": "2026-08-08T10:30:25Z",
+  "scanned_scope": [
+    "."
+  ],
+  "excluded_directories": [
+    ".cache",
+    ".git",
+    ".hg",
+    ".next",
+    ".nuxt",
+    ".svn",
+    ".turbo",
+    ".venv",
+    "__pycache__",
+    "build",
+    "coverage",
+    "dist",
+    "docs/codemap",
+    "generated",
+    "node_modules",
+    "out",
+    "target",
+    "vendor",
+    "venv"
+  ],
+  "fingerprint_algorithm": "sha256-path-content-v1",
+  "modules": [
+    {
+      "id": ".",
+      "path": ".",
+      "file_count": 28,
+      "fingerprint": "80b54d8419335592c743ccadc18dd48d8c1966d4a95d9d90d32c8e78f8623260"
+    },
+    {
+      "id": ".agents",
+      "path": ".agents",
+      "file_count": 1,
+      "fingerprint": "6cbf2e46a80bd048dfa5356af72f034ca8d56d32c5aff528e0df3a35b83ea2f1"
+    },
+    {
+      "id": ".github",
+      "path": ".github",
+      "file_count": 6,
+      "fingerprint": "8eaa7e40bf7e3d18af902c1ffdffdc9bda47f788f68e8ddc3aeeabf0c49d28e4"
+    },
+    {
+      "id": ".vite-hooks",
+      "path": ".vite-hooks",
+      "file_count": 1,
+      "fingerprint": "1f1bb7af440835e3687609f2f7dfd61e2f3bdb1237d8c631c781c6f80d6ec7d1"
+    },
+    {
+      "id": ".vscode",
+      "path": ".vscode",
+      "file_count": 2,
+      "fingerprint": "9af62e95f8acbce50403c0deeac08ff266d9eb84bd0408d47aa84d31fc5ebbcb"
+    },
+    {
+      "id": "apps",
+      "path": "apps",
+      "file_count": 175,
+      "fingerprint": "4608bfa9c7b3dfe0f7644f7b1afb6b1fc7921ff3238f8b45667a087c2b765acd"
+    },
+    {
+      "id": "assets",
+      "path": "assets",
+      "file_count": 4880,
+      "fingerprint": "5b6a43d4bdded710109d0eb87c5bc0d35b3c2d011605c9675f2b7bac327b4e75"
+    },
+    {
+      "id": "components",
+      "path": "components",
+      "file_count": 1963,
+      "fingerprint": "2a0f79e32fe813f279d95291bce8580d30aa9a35f45fbc155aa567a30e6f1f88"
+    },
+    {
+      "id": "contexts",
+      "path": "contexts",
+      "file_count": 11,
+      "fingerprint": "fa3a4fb439c6d00d8a5460e1a26f89c2b51a04a702767ea2036118e4b0c23d84"
+    },
+    {
+      "id": "docs",
+      "path": "docs",
+      "file_count": 40,
+      "fingerprint": "102a52120657332131d13f7b68ca26f009ece128128b94625de9b7085157dab0"
+    },
+    {
+      "id": "electron",
+      "path": "electron",
+      "file_count": 2,
+      "fingerprint": "d8b50df5201a0664d6bfd2ccca74b02aa493a5a713fd6601b9932f6b3625ad90"
+    },
+    {
+      "id": "hooks",
+      "path": "hooks",
+      "file_count": 62,
+      "fingerprint": "d019d7e6955a4c2f1b4792561a9215bd710069f6dbef544c2413d80b27deb3d1"
+    },
+    {
+      "id": "lib",
+      "path": "lib",
+      "file_count": 137,
+      "fingerprint": "6d61eefb4283ae1e3a0f67e110ffb342c522cb5fae20b09eb7440a06089103aa"
+    },
+    {
+      "id": "packages",
+      "path": "packages",
+      "file_count": 25,
+      "fingerprint": "787983ee1befa9087bf7adf11b1b85578145121141e2c35f55b3b2f41ec87985"
+    },
+    {
+      "id": "scripts",
+      "path": "scripts",
+      "file_count": 109,
+      "fingerprint": "4c67d3e41b375e85c28783d3de1ee44a1b9a4002a6c9a2688433798c402e445e"
+    },
+    {
+      "id": "services",
+      "path": "services",
+      "file_count": 16,
+      "fingerprint": "4f3e85de21b079e7ae9fe08cef9ea34a5e279fbb106ac2eff046b3f337c18802"
+    },
+    {
+      "id": "skills",
+      "path": "skills",
+      "file_count": 18,
+      "fingerprint": "52189d059aad5caa6e9b7c68cb2c93fd5cf71c3b52b01abecef019c464400723"
+    },
+    {
+      "id": "test-files",
+      "path": "test-files",
+      "file_count": 4,
+      "fingerprint": "56aa15416e636929d5cd8b04f216454d4798e80f62fc6f7b57439b70acefc449"
+    },
+    {
+      "id": "utils",
+      "path": "utils",
+      "file_count": 11,
+      "fingerprint": "a3faa3f75668ec4e3146b899cf4f58fcbfc8c2e88798ea1d87c6fc429b2db35d"
+    }
+  ]
+}

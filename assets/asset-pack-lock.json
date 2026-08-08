@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "style-defaults",
+      "version": "1.0.0",
+      "sha256": "a16823f4d44fb909b1fe8f136e0e9bb278024f2902bd861341653c842ed8e64a",
+      "fileCount": 2197,
+      "totalBytes": 812675047
+    },
+    {
+      "id": "style-authoring",
+      "version": "1.0.0",
+      "sha256": "07db6483c961c862d08e3ddb9a31289be6381fdd594aa88db462aa38bece64dd",
+      "fileCount": 91,
+      "totalBytes": 30558627
+    },
+    {
+      "id": "character-lab-sources",
+      "version": "1.0.0",
+      "sha256": "7ccd0fc18c6338fa758ee59735aebb736838a99edd191bfda2cfd5deb5530547",
+      "fileCount": 274,
+      "totalBytes": 195998487
+    },
+    {
+      "id": "character-lab-authoring",
+      "version": "1.0.0",
+      "sha256": "1540563711fb14ee8da7c26b9c2f517a85d4b4c0adaaf366adc7be61625504ff",
+      "fileCount": 7,
+      "totalBytes": 988917
+    }
+  ]
+}

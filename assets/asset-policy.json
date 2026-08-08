@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "excludePrefixes": ["assets/recipes/styles/defaults/failures-pack_"],
+  "core": {
+    "maxBytes": 100663296,
+    "includePaths": [
+      "assets/asset-pack-lock.json",
+      "assets/asset-policy.json",
+      "assets/logo.svg",
+      "assets/recipes/character-lab/character-lab-control-atlas.png",
+      "assets/recipes/character-lab/character-lab-option-atlas.png",
+      "assets/recipes/styles/defaults/SP01-001.webp",
+      "assets/recipes/styles/defaults/SP01-005.webp",
+      "assets/recipes/styles/defaults/SP02-001.webp",
+      "assets/recipes/styles/defaults/SP02-003.webp",
+      "assets/recipes/styles/defaults/SP02-004.webp",
+      "assets/recipes/styles/defaults/SP06-082.webp",
+      "assets/recipes/styles/defaults/SP06-095.webp",
+      "assets/recipes/styles/defaults/SP11-047.webp",
+      "assets/recipes/styles/defaults/SP11-050.webp"
+    ],
+    "includePrefixes": [
+      "assets/recipes/cards/",
+      "assets/recipes/styles/previews/",
+      "assets/recipes/styles/style-card-thumbnails/"
+    ]
+  },
+  "optionalPacks": [
+    {
+      "id": "style-defaults",
+      "version": "1.0.0",
+      "includePrefixes": ["assets/recipes/styles/defaults/"]
+    },
+    {
+      "id": "style-authoring",
+      "version": "1.0.0",
+      "includePrefixes": ["assets/recipes/styles/category-bases/"]
+    },
+    {
+      "id": "character-lab-sources",
+      "version": "1.0.0",
+      "includePrefixes": ["assets/recipes/character-lab/sources/"]
+    },
+    {
+      "id": "character-lab-authoring",
+      "version": "1.0.0",
+      "includePrefixes": ["assets/recipes/character-lab/"]
+    }
+  ]
+}

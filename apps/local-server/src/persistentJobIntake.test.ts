@@ -16,7 +16,6 @@ import { hydrateSourceSpecAssetPaths } from './referenceManager';
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
-    projectId: overrides.projectId ?? 'project-1',
     workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'image_generate',
     providerId: overrides.providerId ?? 'codex',
@@ -35,7 +34,6 @@ function createJob(overrides: Partial<Job> = {}): Job {
 
 type CreateJobInput = {
   id: string;
-  projectId?: string | null;
   workspaceId?: string | null;
   kind: Job['kind'];
   providerId: Job['providerId'];
@@ -65,7 +63,6 @@ describe('persistentJobIntake', () => {
     const createJobFn = vi.fn((input: CreateJobInput) =>
       createJob({
         id: input.id,
-        projectId: input.projectId,
         kind: input.kind,
         providerId: input.providerId,
         sourceSpec: input.sourceSpec,
@@ -74,7 +71,6 @@ describe('persistentJobIntake', () => {
       }),
     );
     const intake = createPersistentJobIntake({
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: createJobFn,
       updateJobFinalPrompt: () => null,
@@ -114,7 +110,6 @@ describe('persistentJobIntake', () => {
       }),
     );
     const intake = createPersistentJobIntake({
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-policy',
       createJob: createJobFn,
       updateJobFinalPrompt: () => null,
@@ -175,7 +170,6 @@ describe('persistentJobIntake', () => {
     const createJobFn = vi.fn((input: CreateJobInput) =>
       createJob({
         id: input.id,
-        projectId: input.projectId,
         kind: input.kind,
         providerId: input.providerId,
         sourceSpec: input.sourceSpec,
@@ -184,7 +178,6 @@ describe('persistentJobIntake', () => {
       }),
     );
     const intake = createPersistentJobIntake({
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-retry',
       createJob: createJobFn,
       updateJobFinalPrompt: () => null,
@@ -254,7 +247,6 @@ describe('persistentJobIntake', () => {
   it('rejects provider blockers before reference persistence', async () => {
     const processReferences = vi.fn(async () => ({ augmentedPrompt: 'x', persistedRefs: [] }));
     const intake = createPersistentJobIntake({
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: () => createJob(),
       updateJobFinalPrompt: () => null,
@@ -282,7 +274,6 @@ describe('persistentJobIntake', () => {
   it('rejects malformed source specs before reference persistence', async () => {
     const processReferences = vi.fn(async () => ({ augmentedPrompt: 'x', persistedRefs: [] }));
     const intake = createPersistentJobIntake({
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: () => createJob(),
       updateJobFinalPrompt: () => null,
@@ -325,7 +316,6 @@ describe('persistentJobIntake', () => {
   it('rejects hydrated provider assets outside the captured Library Context', async () => {
     const createJobFn = vi.fn();
     const intake = createPersistentJobIntake({
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-hostile-path',
       createJob: createJobFn,
       updateJobFinalPrompt: () => null,

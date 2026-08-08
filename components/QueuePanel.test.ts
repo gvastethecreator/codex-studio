@@ -6,7 +6,6 @@ import type { ShellActivityJob } from '../lib/shellActivityJob';
 function job(id: string, status: ShellActivityJob['status']): ShellActivityJob {
   return {
     id,
-    projectId: 'project-1',
     workspaceId: 'default',
     kind: 'image_generate',
     providerId: 'codex',

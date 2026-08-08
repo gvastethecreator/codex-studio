@@ -23,7 +23,6 @@ import type { JobExecutionOptions } from '../../../../packages/shared/src';
 import type { CodexImagegenCompiledInput } from '../providers/codexProvider';
 
 export interface TurnParams {
-  projectId: string;
   prompt: string;
   jobId: string;
   sessionKey?: string;
@@ -184,7 +183,6 @@ async function runCodexImagegenTurn(
   job: {
     id: string;
     prompt: string;
-    projectId: string;
     execution?: JobExecutionOptions | null;
     compiledInput?: CodexImagegenCompiledInput | null;
   },
@@ -310,7 +308,6 @@ async function runImagegenJob(
   job: {
     id: string;
     prompt: string;
-    projectId: string;
     sessionKey?: string;
     execution?: JobExecutionOptions | null;
     compiledInput?: CodexImagegenCompiledInput | null;
@@ -433,7 +430,6 @@ export function createCodexTurn({
       return runImagegenJob(
         {
           id: params.jobId,
-          projectId: params.projectId,
           prompt: params.prompt,
           sessionKey: params.sessionKey,
           execution: params.execution,

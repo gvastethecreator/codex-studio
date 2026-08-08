@@ -1,5 +1,5 @@
-import type { RecipePageProps } from '../components/RecipePage';
-import type { ToolbarProps } from '../components/Toolbar';
+import type { RecipePageRuntimeProps } from '../components/RecipePage';
+import type { GenerationToolbarRuntimeArgs } from '../components/shell/StudioGenerationDock';
 import type { StudioGridSurfaceProps } from '../components/studio/StudioGridSurface';
 import type { StudioOperationsRailProps } from '../components/studio/StudioOperationsRail';
 import type { JobStatus } from '../packages/shared/src';
@@ -39,7 +39,7 @@ export interface StudioViewportController {
     direction: number;
     activeRecipe: RecipeId | null;
     activeRecipeAliasId: RecipeAliasId | null;
-    recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
+    recipePageProps: RecipePageRuntimeProps;
     studioPageController: StudioPageController;
     onSelectRecipe: (recipeId: RecipeId, aliasId?: RecipeAliasId | null) => void;
   };
@@ -48,7 +48,7 @@ export interface StudioViewportController {
     currentView: AppPageView;
     activeRecipe: RecipeId | null;
     isDragging: boolean;
-    toolbarProps: ToolbarProps;
+    toolbarArgs: GenerationToolbarRuntimeArgs;
   };
 }
 
@@ -148,14 +148,14 @@ interface StudioViewportNavigationContext {
 }
 
 interface StudioViewportRecipeContext {
-  recipePageProps: Omit<RecipePageProps, 'activeRecipe'>;
+  recipePageProps: RecipePageRuntimeProps;
   studioPageController: StudioPageController;
 }
 
 interface StudioViewportDockContext {
   isModalOpen: boolean;
   isDragging: boolean;
-  toolbarProps: ToolbarProps;
+  toolbarArgs: GenerationToolbarRuntimeArgs;
 }
 
 export interface BuildStudioViewportControllerArgs {
@@ -257,7 +257,7 @@ export function buildStudioViewportController({
       currentView: navigation.routeView,
       activeRecipe: navigation.activeRecipe,
       isDragging: dock.isDragging,
-      toolbarProps: dock.toolbarProps,
+      toolbarArgs: dock.toolbarArgs,
     },
   };
 }

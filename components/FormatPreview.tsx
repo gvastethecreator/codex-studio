@@ -47,7 +47,7 @@ export const FormatPreview: React.FC<FormatPreviewProps> = ({
           >
             {/* Visual Guide Elements */}
             <div
-              className={`flex flex-col items-center gap-2 transition-all duration-700 ${isWorkspaceEmpty ? 'opacity-20' : 'opacity-60'}`}
+              className={`flex flex-col items-center gap-2 transition-opacity duration-700 ${isWorkspaceEmpty ? 'opacity-20' : 'opacity-60'}`}
             >
               <span className="text-4xl md:text-8xl font-black text-white font-sans tracking-tighter drop-shadow-2xl select-none mix-blend-overlay">
                 {ratio}

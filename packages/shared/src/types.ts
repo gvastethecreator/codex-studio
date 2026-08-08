@@ -197,18 +197,8 @@ export interface StudioSettings {
   codexMaxConcurrentJobs: number;
 }
 
-export interface Project {
-  id: string;
-  name: string;
-  description: string | null;
-  createdAt: string;
-  updatedAt: string;
-}
-
 export interface Job {
   id: string;
-  /** @deprecated Legacy column retained only until DB contract drop; not product authority. */
-  projectId?: string | null;
   workspaceId: string;
   recipeId?: string | null;
   batchId?: string | null;
@@ -231,8 +221,6 @@ export interface Job {
 
 export interface JobSummary {
   id: string;
-  /** @deprecated Legacy column; prefer workspaceId. */
-  projectId?: string | null;
   kind: JobKind;
   providerId: GenerationProviderId | null;
   workspaceId: string;
@@ -321,7 +309,6 @@ export interface JobDetailResponse {
 
 export interface Asset {
   id: string;
-  projectId?: string | null;
   jobId: string;
   filePath: string;
   thumbnailPath: string | null;
@@ -480,8 +467,7 @@ export type StudioEvent =
         | 'library.created'
         | 'library.default'
         | 'output-source.registered'
-        | 'output-source.imported'
-        | 'project.created';
+        | 'output-source.imported';
       payload: unknown;
       createdAt: string;
       revision?: number;
@@ -553,13 +539,9 @@ export interface StudioResetResponse {
   resetAt: string;
   libraryDir: string;
   defaultWorkspaceId: string;
-  /** @deprecated Prefer defaultWorkspaceId. */
-  defaultProjectId?: string;
 }
 
 export interface CreateJobRequest {
-  /** @deprecated Prefer workspaceId. Ignored by product generate path. */
-  projectId?: string;
   workspaceId?: string;
   kind: JobKind;
   providerId?: GenerationProviderId | null;

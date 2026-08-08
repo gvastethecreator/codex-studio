@@ -27,7 +27,6 @@ function publishEvent(type: string, payload: unknown): StudioEvent | UnknownStud
 function createJob(overrides: Partial<Job> = {}): Job {
   return {
     id: overrides.id ?? 'job-1',
-    projectId: overrides.projectId ?? 'project-1',
     workspaceId: overrides.workspaceId ?? 'default',
     kind: overrides.kind ?? 'codex_imagegen',
     providerId: overrides.providerId ?? 'codex',
@@ -46,7 +45,6 @@ function createJob(overrides: Partial<Job> = {}): Job {
 
 type CreateJobInput = {
   id: string;
-  projectId?: string | null;
   workspaceId?: string | null;
   kind: Job['kind'];
   providerId: Job['providerId'];
@@ -105,7 +103,6 @@ describe('jobRoutes', () => {
       getJob: () => null,
       getJobDetail: async (jobId) => (jobId === 'job-1' ? createJobDetail(job) : null),
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-1',
       createJobId: () => 'job-new',
       createJob: () => job,
       updateJobFinalPrompt: () => null,
@@ -151,7 +148,6 @@ describe('jobRoutes', () => {
       getJob,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob,
-      ensureDefaultProjectId: () => 'project-1',
       createJobId: () => 'job-new',
       createJob: () => queued,
       updateJobFinalPrompt: () => null,
@@ -202,7 +198,6 @@ describe('jobRoutes', () => {
       getJobDetail: async () => null,
       requeueJob,
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-1',
       createJobId: () => 'job-new',
       createJob: createJobFn,
       updateJobFinalPrompt: () => null,
@@ -236,7 +231,6 @@ describe('jobRoutes', () => {
       getJobDetail: async () => null,
       requeueJob: () => createJob(),
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-1',
       createJobId: () => 'job-new',
       createJob: () => createJob({ id: 'job-new' }),
       updateJobFinalPrompt: () => null,
@@ -271,7 +265,6 @@ describe('jobRoutes', () => {
       getJobDetail: async () => null,
       requeueJob,
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-1',
       createJobId: () => 'job-new',
       createJob: () => createJob({ id: 'job-new' }),
       updateJobFinalPrompt: () => null,
@@ -309,7 +302,6 @@ describe('jobRoutes', () => {
     const createJobFn = vi.fn((input: CreateJobInput) =>
       createJob({
         id: input.id,
-        projectId: input.projectId,
         kind: input.kind,
         providerId: input.providerId,
         sourceSpec: input.sourceSpec,
@@ -324,7 +316,6 @@ describe('jobRoutes', () => {
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: createJobFn,
       updateJobFinalPrompt: () => created,
@@ -386,7 +377,6 @@ describe('jobRoutes', () => {
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: () => createJob({ id: 'job-new' }),
       updateJobFinalPrompt: () => null,
@@ -432,7 +422,6 @@ describe('jobRoutes', () => {
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: () => createJob({ id: 'job-new' }),
       updateJobFinalPrompt: () => null,
@@ -475,7 +464,6 @@ describe('jobRoutes', () => {
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: () => createJob({ id: 'job-new' }),
       updateJobFinalPrompt: () => null,
@@ -525,7 +513,6 @@ describe('jobRoutes', () => {
       getJob: () => null,
       getJobDetail: async () => null,
       cancelQueuedOrRunningJob: () => null,
-      ensureDefaultProjectId: () => 'project-default',
       createJobId: () => 'job-new',
       createJob: () => createJob({ id: 'job-new' }),
       updateJobFinalPrompt: () => null,

@@ -35,7 +35,7 @@ import {
   listSpriteAtlasPresets,
   listSpriteAtlasRuns,
   runSpriteAtlasQa,
-} from '../../services/localStudioService';
+} from '../../services/studio-api/spriteAtlas';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface SpriteAtlasRecipeProps {
@@ -653,19 +653,24 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
             {activeRun ? (
               <section className="flex h-full min-h-0 flex-col">
                 <div className="grid gap-2 border-b border-white/10 p-3 lg:grid-cols-[minmax(0,1fr)_auto]">
-                  <div className="relative min-w-0">
-                    <Search
-                      size={14}
-                      className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-600"
-                      aria-hidden="true"
-                    />
-                    <input
-                      value={rowQuery}
-                      onChange={(event) => setRowQuery(event.target.value)}
-                      placeholder="Search rows, jobs, paths"
-                      className="h-9 w-full rounded-lg border border-white/10 bg-black/45 pl-9 pr-3 text-xs text-zinc-200 outline-none placeholder:text-zinc-600 transition focus:border-sky-400/60"
-                    />
-                  </div>
+                  <label className="grid min-w-0 gap-1">
+                    <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                      Search rows
+                    </span>
+                    <span className="relative min-w-0">
+                      <Search
+                        size={14}
+                        className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-600"
+                        aria-hidden="true"
+                      />
+                      <input
+                        value={rowQuery}
+                        onChange={(event) => setRowQuery(event.target.value)}
+                        placeholder="Names, jobs, paths"
+                        className="h-9 w-full rounded-lg border border-white/10 bg-black/45 pl-9 pr-3 text-xs text-zinc-200 outline-none placeholder:text-zinc-600 transition focus:border-sky-400/60"
+                      />
+                    </span>
+                  </label>
                   <div className="custom-scrollbar flex gap-1.5 overflow-x-auto">
                     {ROW_STATUS_FILTERS.map((status) => (
                       <FilterChip
@@ -846,13 +851,18 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       </button>
                     </div>
 
-                    <div className="flex gap-2">
-                      <input
-                        value={rowSourcePath}
-                        onChange={(event) => setRowSourcePath(event.target.value)}
-                        placeholder="D:\\path\\row.png"
-                        className="min-h-10 min-w-0 flex-1 rounded-md border border-white/10 bg-zinc-900 px-2 font-mono text-xs text-white outline-none focus:border-sky-400/60"
-                      />
+                    <div className="flex items-end gap-2">
+                      <label className="grid min-w-0 flex-1 gap-1">
+                        <span className="text-[9px] font-black uppercase tracking-widest text-zinc-500">
+                          Source image path
+                        </span>
+                        <input
+                          value={rowSourcePath}
+                          onChange={(event) => setRowSourcePath(event.target.value)}
+                          placeholder="D:\\path\\row.png"
+                          className="min-h-10 w-full min-w-0 rounded-md border border-white/10 bg-zinc-900 px-2 font-mono text-xs text-white outline-none focus:border-sky-400/60"
+                        />
+                      </label>
                       <button
                         type="button"
                         onClick={handleImportRow}

@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { StudioRuntimeSnapshotResponse } from '../packages/shared/src';
-import { getStudioRuntimeSnapshot, refreshStudioReadiness } from '../services/localStudioService';
+import { getStudioRuntimeSnapshot, refreshStudioReadiness } from '../services/studio-api/runtime';
 import { createStudioDiagnosticsRefreshPolicy } from './studioDiagnosticsRefreshPolicy';
 import { createStudioReadinessPublicationPolicy } from './studioReadinessPublicationPolicy';
 

@@ -4,6 +4,7 @@ import { describe, expect, it } from 'vite-plus/test';
 
 import { DEFAULT_GENERATION_CONFIG } from '../../constants';
 import { AnimationSequenceRecipe } from './AnimationSequenceRecipe';
+import { parseBoundedNumberInput } from './animationSequenceNumberInput';
 
 function renderRecipe(prompt = '') {
   return renderToStaticMarkup(
@@ -17,6 +18,14 @@ function renderRecipe(prompt = '') {
 }
 
 describe('AnimationSequenceRecipe', () => {
+  it('keeps bounded numeric settings valid while a field is edited', () => {
+    expect(parseBoundedNumberInput('', 2, 48)).toBeNull();
+    expect(parseBoundedNumberInput('not-a-number', 2, 48)).toBeNull();
+    expect(parseBoundedNumberInput('1', 2, 48)).toBe(2);
+    expect(parseBoundedNumberInput('24', 2, 48)).toBe(24);
+    expect(parseBoundedNumberInput('80', 2, 48)).toBe(48);
+  });
+
   it('keeps compact workbenches scrollable and explains the empty prompt state', () => {
     const html = renderRecipe();
 

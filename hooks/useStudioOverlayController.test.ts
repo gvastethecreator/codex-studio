@@ -77,7 +77,6 @@ describe('buildStudioOverlayController', () => {
         studioJobs: [
           toShellActivityJob({
             id: 'job-1',
-            projectId: 'default',
             workspaceId: 'default',
             kind: 'dry_run',
             providerId: null,

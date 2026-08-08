@@ -42,7 +42,7 @@ function createGoogleContext(
     providerId: 'google' as const,
     job: {
       id: 'job-google',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google' as const,
       prompt: 'fallback prompt',
       execution: {
@@ -54,7 +54,7 @@ function createGoogleContext(
     },
     compiledInput: compileGoogleImageApiInput({
       id: 'job-google',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google',
       prompt: 'fallback prompt',
       execution: {

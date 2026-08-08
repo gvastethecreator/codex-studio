@@ -37,7 +37,7 @@ describe('external provider input compilers', () => {
 
     const compiled = compileGoogleImageApiInput({
       id: 'job-1',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google',
       prompt: 'fallback prompt that should not be compiled',
       execution: { model: 'nano-banana-image', reasoningEffort: 'minimal' },
@@ -92,7 +92,7 @@ describe('external provider input compilers', () => {
 
     const compiled = compileFalImageApiInput({
       id: 'job-2',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'fal',
       prompt: 'fallback',
       execution: { model: 'fal-ai/fast-sdxl', reasoningEffort: 'minimal' },
@@ -133,7 +133,7 @@ describe('external provider input compilers', () => {
 
     const compiled = compileGoogleImageApiInput({
       id: 'job-style',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google',
       prompt: 'fallback',
       execution: null,
@@ -160,7 +160,7 @@ describe('external provider input compilers', () => {
 
     const compiled = compileGoogleImageApiInput({
       id: 'job-google-var',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google',
       prompt: 'fallback',
       execution: null,
@@ -193,7 +193,7 @@ describe('external provider input compilers', () => {
 
     const compiled = compileGoogleImageApiInput({
       id: 'job-google-quality',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'google',
       prompt: 'fallback',
       execution: null,
@@ -237,7 +237,7 @@ describe('external provider input compilers', () => {
 
     const compiled = compileComfyWorkflowInput({
       id: 'job-3',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'comfy',
       prompt: 'fallback',
       execution: null,

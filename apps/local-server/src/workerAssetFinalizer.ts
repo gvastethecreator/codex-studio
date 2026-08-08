@@ -1,14 +1,9 @@
 import { statSync } from 'node:fs';
 import path from 'node:path';
 import type { getCatalogImageByJobId, registerCatalogImage } from './catalog';
-import type {
-  addAsset,
-  addJobEvent,
-  getAssetByJobId,
-  getJob,
-  updateJobFinalization,
-  updateJobStatus,
-} from './db';
+import type { addAsset, getAssetByJobId } from './db/assets';
+import type { addJobEvent } from './db/events';
+import type { getJob, updateJobFinalization, updateJobStatus } from './db/jobs';
 import type { publishEvent } from './events';
 import type { toPublicAssetUrl } from './library';
 import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
@@ -128,7 +123,6 @@ export function createWorkerAssetFinalizer({
     const asset =
       existingAsset ??
       addAsset({
-        projectId: job.projectId ?? null,
         jobId: job.id,
         filePath: organizedImagePath,
         thumbnailPath,

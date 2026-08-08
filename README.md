@@ -98,7 +98,8 @@ bun run check
 bun run test
 bun run build
 bun run validate:fast
-bun run validate:full
+bun run validate
+bun run validate:release
 ```
 
 Maintenance:

@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto';
 import { mkdirSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
-import { getDb } from './db';
+import { getDb } from './db/connection';
 import { LIBRARY_FOLDERS, resolveLibraryPathFromRoot, resolvePublicLibraryPath } from './library';
 
 export interface StudioLibrary {

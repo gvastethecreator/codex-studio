@@ -9,6 +9,8 @@ describe('useStudioShell composition', () => {
     expect(source).toContain('useWorkspaceStrip');
     expect(source).toContain('useStudioCatalogController');
     expect(source).toContain('useStudioGenerationActions');
+    expect(source).toContain('useGenerationQueueController');
+    expect(source).toContain('useCatalogModalDetailHydration');
     expect(source).toContain('buildStudioShellOverlayController');
     expect(source).not.toContain('listProjects');
     expect(source).not.toContain('createStudioJob');
@@ -16,5 +18,9 @@ describe('useStudioShell composition', () => {
     expect(source).toContain('useRuntimeLogActions');
     expect(source).not.toMatch(/\buseRuntimeLogs\s*\(/);
     expect(source).not.toMatch(/\buseGlobal\s*\(/);
+    expect(source).not.toMatch(/\buseEffect\s*\(/);
+    expect(source).not.toMatch(/\buseRef\b/);
+    expect(source).not.toContain('wasGeneratingRef');
+    expect(source).not.toContain('clearStudioUiState');
   });
 });

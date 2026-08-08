@@ -12,7 +12,7 @@ import {
   IconX as X,
 } from '@tabler/icons-react';
 import type React from 'react';
-import { useMemo, useRef, useState } from 'react';
+import { useLayoutEffect, useMemo, useState } from 'react';
 
 import {
   BUILT_IN_GENERATION_PROVIDERS,
@@ -990,14 +990,11 @@ export const StudioSettingsModal: React.FC<StudioSettingsModalProps> = ({
     createInitialStudioSettingsFormState,
   );
 
-  const prevSettingsRef = useRef(settings);
-  if (isOpen && settings && settings !== prevSettingsRef.current) {
-    prevSettingsRef.current = settings;
-    setFormState(getStudioSettingsFormState(settings));
-  }
-  if (!isOpen && prevSettingsRef.current !== null) {
-    prevSettingsRef.current = null;
-  }
+  useLayoutEffect(() => {
+    if (isOpen && settings) {
+      setFormState(getStudioSettingsFormState(settings));
+    }
+  }, [isOpen, settings]);
 
   const {
     defaultProviderId,

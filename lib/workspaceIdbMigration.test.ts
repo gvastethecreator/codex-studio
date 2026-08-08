@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from 'vite-plus/test';
+import type { StudioWorkspace, StudioWorkspaceSortOrder } from '../packages/shared/src';
 import {
   mapStudioWorkspaceToUi,
   migrateIndexedDbWorkspacesToServer,
@@ -11,6 +12,7 @@ describe('workspaceIdbMigration', () => {
       id: 'ws-1',
       name: 'Concept',
       libraryId: 'lib-1',
+      filter: {},
       sortOrder: 'newest',
       createdAt: '2026-01-02T00:00:00.000Z',
       updatedAt: '2026-01-02T00:00:00.000Z',
@@ -33,14 +35,23 @@ describe('workspaceIdbMigration', () => {
       ],
       ['app-active-workspace-id', 'local-only'],
     ]);
-    const createRemote = vi.fn(async (input: { id?: string; name: string }) => ({
-      id: input.id ?? 'created',
-      name: input.name,
-      libraryId: null,
-      sortOrder: 'newest',
-      createdAt: '2026-01-01T00:00:00.000Z',
-      updatedAt: '2026-01-01T00:00:00.000Z',
-    }));
+    const createRemote = vi.fn(
+      async (input: {
+        id?: string;
+        name: string;
+        libraryId?: string | null;
+        filter?: Record<string, unknown>;
+        sortOrder?: StudioWorkspaceSortOrder;
+      }): Promise<StudioWorkspace> => ({
+        id: input.id ?? 'created',
+        name: input.name,
+        libraryId: null,
+        filter: {},
+        sortOrder: 'newest',
+        createdAt: '2026-01-01T00:00:00.000Z',
+        updatedAt: '2026-01-01T00:00:00.000Z',
+      }),
+    );
     const listRemote = vi
       .fn()
       .mockResolvedValueOnce([
@@ -48,8 +59,10 @@ describe('workspaceIdbMigration', () => {
           id: 'default',
           name: 'Default',
           libraryId: null,
+          filter: {},
           sortOrder: 'newest',
           createdAt: '2026-01-01T00:00:00.000Z',
+          updatedAt: '2026-01-01T00:00:00.000Z',
         },
       ])
       .mockResolvedValue([
@@ -57,15 +70,19 @@ describe('workspaceIdbMigration', () => {
           id: 'default',
           name: 'Default',
           libraryId: null,
+          filter: {},
           sortOrder: 'newest',
           createdAt: '2026-01-01T00:00:00.000Z',
+          updatedAt: '2026-01-01T00:00:00.000Z',
         },
         {
           id: 'local-only',
           name: 'Local Only',
           libraryId: null,
+          filter: {},
           sortOrder: 'newest',
           createdAt: '2026-01-01T00:00:00.000Z',
+          updatedAt: '2026-01-01T00:00:00.000Z',
         },
       ]);
 

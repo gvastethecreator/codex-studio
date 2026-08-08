@@ -22,6 +22,7 @@ import { ControlDropdown } from './RecipeUI';
 import { QuickStartText } from './QuickStartText';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
 import { useLazyRef } from '../../hooks/useLazyRef';
+import { useLatestRef } from '../../hooks/useLatestRef';
 import { useRecipeContextRegistration } from '../../hooks/useRecipeContextRegistration';
 import { createTimelineRecipeParams } from '../../lib/recipeDerivedParams';
 import { getRecipeNumberParam, hasRecipeIdentity } from '../../lib/recipeIdentity';
@@ -79,12 +80,9 @@ function useTimelineKeyboard(
   activeImage: Attachment | undefined,
   handleItemClick: (item: TimelineItem) => void,
 ) {
-  const timelineItemsRef = useRef(timelineItems);
-  timelineItemsRef.current = timelineItems;
-  const activeImageRef = useRef(activeImage);
-  activeImageRef.current = activeImage;
-  const handleItemClickRef = useRef(handleItemClick);
-  handleItemClickRef.current = handleItemClick;
+  const timelineItemsRef = useLatestRef(timelineItems);
+  const activeImageRef = useLatestRef(activeImage);
+  const handleItemClickRef = useLatestRef(handleItemClick);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -104,7 +102,7 @@ function useTimelineKeyboard(
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [activeImageRef, handleItemClickRef, timelineItemsRef]);
 }
 
 interface TimelineBottomDockProps {
@@ -145,7 +143,7 @@ function TimelineBottomDock({
         </span>
         <div className="flex items-center p-1 bg-white/5 rounded-xl border border-white/5 relative">
           <div
-            className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/30 rounded-lg transition-all duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
+            className={`absolute inset-y-1 w-1/2 bg-teal-600/20 border border-teal-500/30 rounded-lg transition-transform duration-300 ${direction === 'forward' ? 'translate-x-full' : 'translate-x-0'}`}
           />
           <button
             type="button"
@@ -214,7 +212,7 @@ function TimelineBottomDock({
           <button
             type="button"
             onClick={() => onSetCameraMode(cameraMode === 'locked' ? 'dynamic' : 'locked')}
-            className={`flex min-w-25 items-center gap-2 rounded-xl border px-4 transition-all h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/30 text-blue-400'}`}
+            className={`flex min-w-25 items-center gap-2 rounded-xl border px-4 transition-colors h-10 ${cameraMode === 'locked' ? 'bg-red-500/10 border-red-500/30 text-red-400' : 'bg-blue-500/10 border-blue-500/30 text-blue-400'}`}
           >
             {cameraMode === 'locked' ? <Lock size={14} /> : <Video size={14} />}
             <span className="text-[10px] font-black uppercase tracking-widest">{cameraMode}</span>
@@ -228,7 +226,7 @@ function TimelineBottomDock({
           <button
             type="button"
             onClick={onToggleOnionSkin}
-            className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-all ${isOnionSkinEnabled ? 'bg-white/10 border-white/30 text-white' : 'bg-transparent border-white/5 text-zinc-500'}`}
+            className={`h-10 px-4 rounded-xl border flex items-center gap-2 transition-colors ${isOnionSkinEnabled ? 'bg-white/10 border-white/30 text-white' : 'bg-transparent border-white/5 text-zinc-500'}`}
             title="Toggle Onion Skin"
           >
             <Layers size={14} />
@@ -304,12 +302,12 @@ function TimelineCanvas({
               )}
               <div className="absolute inset-0 z-30 flex items-center justify-between px-8 pointer-events-none">
                 <div
-                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-all duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
+                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-[opacity,transform] duration-500 ${direction === 'backward' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}
                 >
                   <Rewind size={32} className="text-teal-400" />
                 </div>
                 <div
-                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-all duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
+                  className={`p-4 rounded-full bg-zinc-950/60 border border-white/10 transition-[opacity,transform] duration-500 ${direction === 'forward' ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}
                 >
                   <FastForward size={32} className="text-teal-400" />
                 </div>
@@ -326,7 +324,7 @@ function TimelineCanvas({
               <button
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-zinc-950/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-all pointer-events-auto border border-white/10 flex items-center gap-2"
+                className="absolute top-4 right-4 z-30 p-2 rounded-lg bg-zinc-950/60 text-zinc-400 hover:text-white hover:bg-white/10 transition-colors pointer-events-auto border border-white/10 flex items-center gap-2"
               >
                 <span className="text-[9px] font-bold uppercase hidden sm:block">Replace</span>
                 <Upload size={14} />
@@ -348,7 +346,7 @@ function TimelineCanvas({
               onDragOver={(e) => e.preventDefault()}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-all hover:bg-white/3 appearance-none border-none p-0 m-0"
+              className="group flex size-full cursor-pointer flex-col items-center justify-center gap-6 bg-white/1 transition-colors hover:bg-white/3 appearance-none border-none p-0 m-0"
             >
               <input
                 type="file"
@@ -360,7 +358,7 @@ function TimelineCanvas({
                 className="hidden"
                 accept="image/*"
               />
-              <div className="size-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-all shadow-2xl">
+              <div className="size-20 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform shadow-2xl">
                 <Clock size={32} className="text-zinc-600 group-hover:text-teal-400" />
               </div>
               <QuickStartText
@@ -434,7 +432,7 @@ function TimelineCanvas({
                         if (el) itemRefs.current.set(item.id, el);
                         else itemRefs.current.delete(item.id);
                       }}
-                      className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-zinc-900 transition-all duration-500 ease-out-expo
+                      className={`group relative h-24 shrink-0 snap-center aspect-video overflow-hidden rounded-lg border-2 bg-zinc-900 transition-[color,background-color,border-color,opacity,box-shadow,transform] duration-500 ease-out-expo
                                             ${
                                               isActive
                                                 ? 'border-teal-500 shadow-[0_0_40px_rgba(20,184,166,0.3)] scale-110 z-20 ring-1 ring-teal-400/50 opacity-100'
@@ -675,8 +673,7 @@ function useTimelineRecipeController({
     [updateConfig, sessionOrigin, scrollToItem, activeImage, timelineItems, setDirection],
   );
 
-  const scrollToItemRef = useRef(scrollToItem);
-  scrollToItemRef.current = scrollToItem;
+  const scrollToItemRef = useLatestRef(scrollToItem);
 
   // Sync Scroll on Active Image Change
   useEffect(() => {
@@ -690,19 +687,21 @@ function useTimelineRecipeController({
         });
       }
     }
-  }, [activeImage, timelineItems]);
+  }, [activeImage, scrollToItemRef, timelineItems]);
 
   const prevIsGenerating = useRef(isGenerating);
-  if (prevIsGenerating.current && !isGenerating) {
-    const newestImage = images[0];
-    if (newestImage && hasRecipeIdentity(newestImage.config, 'timeline')) {
-      const matchedItem = timelineItems.find((item) => item.src === newestImage.src);
-      if (matchedItem && activeImage?.dataUrl !== matchedItem.src) {
-        handleItemClick(matchedItem);
+  useEffect(() => {
+    if (prevIsGenerating.current && !isGenerating) {
+      const newestImage = images[0];
+      if (newestImage && hasRecipeIdentity(newestImage.config, 'timeline')) {
+        const matchedItem = timelineItems.find((item) => item.src === newestImage.src);
+        if (matchedItem && activeImage?.dataUrl !== matchedItem.src) {
+          handleItemClick(matchedItem);
+        }
       }
     }
-  }
-  prevIsGenerating.current = isGenerating;
+    prevIsGenerating.current = isGenerating;
+  }, [activeImage?.dataUrl, handleItemClick, images, isGenerating, timelineItems]);
 
   useTimelineKeyboard(timelineItems, activeImage, handleItemClick);
 

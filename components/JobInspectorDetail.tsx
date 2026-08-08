@@ -22,7 +22,7 @@ import {
   type JobInspectorTimelineItem,
 } from '../lib/jobInspectorFormatter';
 import { cn } from '../lib/utils';
-import { getStudioApiBase } from '../services/localStudioService';
+import { getStudioApiBase } from '../services/studio-api/http';
 
 interface JobInspectorDetailProps {
   detail: JobDetailResponse;

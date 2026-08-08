@@ -106,7 +106,7 @@ export const DashboardModal: React.FC<DashboardModalProps> = ({
               <button
                 type="button"
                 onClick={onExportLegacyWorkspaceSnapshot}
-                className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-all text-xs font-black uppercase tracking-widest cursor-pointer group"
+                className="flex items-center justify-center gap-3 px-4 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/5 text-zinc-300 hover:text-white transition-[color,background-color,border-color,opacity,box-shadow,transform] text-xs font-black uppercase tracking-widest cursor-pointer group"
               >
                 <Download
                   size={16}

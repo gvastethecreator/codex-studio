@@ -14,7 +14,7 @@ describe('providerInputCompiler', () => {
 
     const compiled = compileProviderInputForJob('comfy', {
       id: 'job-1',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'comfy',
       prompt: 'fallback',
       execution: null,
@@ -31,7 +31,7 @@ describe('providerInputCompiler', () => {
     expect(() =>
       compileProviderInputForJob('custom-provider', {
         id: 'job-1',
-        projectId: 'project-1',
+        workspaceId: 'workspace-1',
         providerId: 'custom-provider',
         prompt: 'custom provider prompt',
         execution: null,

@@ -436,7 +436,7 @@ Route rules:
 
 New modules:
 
-- `services/localStudioService.ts`: user style API calls.
+- `services/studio-api/userStyles.ts`: user style API calls.
 - `hooks/useUserStylePresets.ts`: loading, saving, archiving, refresh state.
 - `components/recipes/UserStyleEditorSurface.tsx`: editor shell.
 - `components/recipes/UserStyleEditorManual.tsx`: manual form.
@@ -563,7 +563,7 @@ Build:
 
 - Hono routes.
 - App factory wiring.
-- `localStudioService` calls.
+- Domain client calls through `services/studio-api/userStyles.ts`.
 - Route tests.
 
 Acceptance:

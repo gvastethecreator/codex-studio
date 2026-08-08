@@ -2,17 +2,11 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { getSettings } from './config';
 import { getCatalogImageByJobId, registerCatalogImage } from './catalog';
-import {
-  addAsset,
-  addJobEvent,
-  getAssetByJobId,
-  getJob,
-  getSettingValue,
-  setSettingValue,
-  updateJobFinalization,
-  updateJobStatus,
-  upsertCodexTurn,
-} from './db';
+import { addAsset, getAssetByJobId } from './db/assets';
+import { upsertCodexTurn } from './db/codexTurns';
+import { addJobEvent } from './db/events';
+import { getJob, updateJobFinalization, updateJobStatus } from './db/jobs';
+import { getSettingValue, setSettingValue } from './db/settings';
 import { publishEvent } from './events';
 import { resolveLibraryPath, toPublicAssetUrl } from './library';
 import { ensureThumbnailVariant as ensureThumbnailVariantDefault } from './libraryAssetVariants';
@@ -316,7 +310,7 @@ export function createWorkerController({
     const executionOptions = resolveExecutionOptions(job.execution);
     const result = await codexGenerationProvider.run({
       id: job.id,
-      projectId: job.projectId ?? 'default',
+      workspaceId: job.workspaceId,
       prompt: job.finalPromptUsed,
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? 'codex',
@@ -375,7 +369,7 @@ export function createWorkerController({
 
     const result = await externalGenerationProvider.run({
       id: job.id,
-      projectId: job.projectId ?? 'default',
+      workspaceId: job.workspaceId,
       prompt: job.finalPromptUsed,
       execution: job.execution,
       providerId: job.providerId ?? job.sourceSpec?.providerId ?? null,

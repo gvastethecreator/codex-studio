@@ -29,6 +29,10 @@ export function resolveCodexInvocationForExecutable(executable: string, args: st
   return [executable, ...args];
 }
 
+export function resolveWindowsCommandInvocation(executable: string, args: string[]) {
+  return ['cmd.exe', '/d', '/s', '/c', `"${executable}" ${args.join(' ')}`];
+}
+
 export function resolveCodexInvocation(args: string[]) {
   return resolveCodexInvocationForExecutable(resolveCodexExecutable(), args);
 }

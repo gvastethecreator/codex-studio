@@ -358,8 +358,13 @@ function readLastTranscriptLines(
 }
 
 export async function getJobDetail(jobId: string): Promise<JobDetailResponse | null> {
-  const [{ queryCatalogDetails }, { getCodexTurnByJobId, getJob, listJobEvents }] =
-    await Promise.all([import('./catalog'), import('./db')]);
+  const [{ queryCatalogDetails }, { getCodexTurnByJobId }, { getJob }, { listJobEvents }] =
+    await Promise.all([
+      import('./catalog'),
+      import('./db/codexTurns'),
+      import('./db/jobs'),
+      import('./db/events'),
+    ]);
   const job = getJob(jobId);
   if (!job) return null;
 

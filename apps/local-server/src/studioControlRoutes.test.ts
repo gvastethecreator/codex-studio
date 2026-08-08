@@ -11,7 +11,6 @@ describe('studioControlRoutes', () => {
       resetAt: '2026-05-29T00:00:00.000Z',
       libraryDir: 'D:/library',
       defaultWorkspaceId: 'default',
-      defaultProjectId: 'default',
     }));
 
     const routes = createStudioControlRoutes({ resetStudioData, worker });

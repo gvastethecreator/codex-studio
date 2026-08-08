@@ -7,7 +7,7 @@ import type {
   UserStyleVisualDna,
 } from '../../../packages/shared/src/userStyles';
 import { USER_STYLE_PRESET_SCHEMA_VERSION } from '../../../packages/shared/src/userStyles';
-import { getDb } from './db';
+import { getDb } from './db/connection';
 import {
   applyUserStylePatch,
   createUserStyleFromInput,

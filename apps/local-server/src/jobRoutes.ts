@@ -5,7 +5,11 @@ import type {
   Job,
   JobDetailResponse,
   JobSummary,
-} from '../../../packages/shared/src';
+} from '../../../packages/shared/src/types';
+import {
+  CreateJobRequestBoundarySchema,
+  type CreateJobRequestBoundary,
+} from '../../../packages/shared/src/studioApiSchemas';
 import {
   createPersistentJobIntake,
   type PersistentJobIntakeDependencies,
@@ -18,35 +22,6 @@ interface JobRoutesDependencies extends PersistentJobIntakeDependencies {
   requeueJob?: (jobId: string) => Job | null;
   cancelQueuedOrRunningJob: (jobId: string) => Job | null;
 }
-
-const CreateJobRequestBoundarySchema = Schema.Struct({
-  projectId: Schema.optional(Schema.String),
-  workspaceId: Schema.optional(Schema.String),
-  kind: Schema.Union(
-    Schema.Literal('dry_run'),
-    Schema.Literal('codex_imagegen'),
-    Schema.Literal('image_generate'),
-    Schema.Literal('image_edit'),
-    Schema.Literal('style_preset_card'),
-    Schema.Literal('sprite_sheet'),
-    Schema.Literal('texture_generate'),
-  ),
-  providerId: Schema.optional(Schema.Union(Schema.String, Schema.Null)),
-  sourceSpec: Schema.optional(Schema.Union(Schema.Unknown, Schema.Null)),
-  prompt: Schema.optional(Schema.String),
-  execution: Schema.optional(Schema.Union(Schema.Unknown, Schema.Null)),
-  references: Schema.optional(
-    Schema.Array(
-      Schema.Struct({
-        name: Schema.String,
-        dataUrl: Schema.String,
-        strength: Schema.Number,
-      }),
-    ),
-  ),
-});
-
-type CreateJobRequestBoundary = Schema.Schema.Type<typeof CreateJobRequestBoundarySchema>;
 
 const ACTIVE_RETRY_STATUSES = new Set<Job['status']>(['queued', 'running']);
 const REQUEUEABLE_STATUSES = new Set<Job['status']>(['failed', 'cancelled', 'needs_review']);
@@ -65,7 +40,6 @@ export function createJobRoutes({
   getJobDetail,
   requeueJob,
   cancelQueuedOrRunningJob,
-  ensureDefaultProjectId,
   ensureDefaultWorkspaceId,
   createJobId,
   createJob,
@@ -83,7 +57,6 @@ export function createJobRoutes({
 }: JobRoutesDependencies) {
   const routes = new Hono();
   const persistentJobIntake = createPersistentJobIntake({
-    ensureDefaultProjectId,
     ensureDefaultWorkspaceId,
     createJobId,
     createJob,
@@ -189,7 +162,7 @@ export function createJobRoutes({
 
     const boundaryBody: CreateJobRequestBoundary = decodedBody.right;
     const body: CreateJobRequest = {
-      projectId: boundaryBody.projectId,
+      workspaceId: boundaryBody.workspaceId,
       kind: boundaryBody.kind,
       providerId: boundaryBody.providerId,
       sourceSpec: boundaryBody.sourceSpec as CreateJobRequest['sourceSpec'],

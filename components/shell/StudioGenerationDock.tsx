@@ -1,10 +1,17 @@
 import React from 'react';
 
+import { useGenerationDraft } from '../../contexts/GenerationContext';
+import {
+  useGenerationToolbarConfig,
+  type BuildGenerationToolbarPropsArgs,
+} from '../../hooks/useGenerationToolbarConfig';
 import type { AppPageView } from '../../hooks/useHashRouter';
 import type { RecipeId } from '../../types';
 import DropZoneOverlay from '../DropZoneOverlay';
-import { Toolbar, type ToolbarProps } from '../Toolbar';
+import { Toolbar } from '../Toolbar';
 import { BottomToolbar } from '../ui/BottomToolbar';
+
+export type GenerationToolbarRuntimeArgs = Omit<BuildGenerationToolbarPropsArgs, 'config'>;
 
 interface StudioGenerationDockProps {
   isModalOpen: boolean;
@@ -12,7 +19,39 @@ interface StudioGenerationDockProps {
   currentView: AppPageView;
   activeRecipe: RecipeId | null;
   isDragging: boolean;
-  toolbarProps: ToolbarProps;
+  toolbarArgs: GenerationToolbarRuntimeArgs;
+}
+
+function ConnectedGenerationToolbar({
+  activeRecipe,
+  currentView,
+  toolbarArgs,
+}: Pick<StudioGenerationDockProps, 'activeRecipe' | 'currentView' | 'toolbarArgs'>) {
+  const draft = useGenerationDraft();
+  const toolbarProps = useGenerationToolbarConfig({
+    ...toolbarArgs,
+    config: {
+      generationConfig: draft.generationConfig,
+      updateConfig: draft.updateGenerationConfig,
+      updateAttachment: draft.updateAttachment,
+      onFileSelect: draft.handleFileSelect,
+      onFilesDrop: draft.handlePastedFiles,
+      onRemoveAttachment: draft.handleRemoveAttachment,
+      maxAttachments: draft.maxAttachments,
+      codexModelCatalog: draft.codexModelCatalog,
+      isLoadingCodexModelCatalog: draft.isLoadingCodexModelCatalog,
+      codexModelCatalogError: draft.codexModelCatalogError,
+    },
+  });
+
+  return (
+    <Toolbar
+      {...toolbarProps}
+      activeRecipe={activeRecipe}
+      mode={activeRecipe === 'animation-sequence' ? 'context-only' : 'full'}
+      interactionScope={`${currentView}:${activeRecipe ?? 'studio'}`}
+    />
+  );
 }
 
 const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
@@ -21,7 +60,7 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   currentView,
   activeRecipe,
   isDragging,
-  toolbarProps,
+  toolbarArgs,
 }) => {
   const isVisible =
     !isModalOpen && !isUiChromeSuppressed && (currentView === 'studio' || !!activeRecipe);
@@ -33,11 +72,10 @@ const StudioGenerationDockFn: React.FC<StudioGenerationDockProps> = ({
   return (
     <BottomToolbar className="w-full relative z-30 shrink-0">
       <DropZoneOverlay isVisible={isDragging} />
-      <Toolbar
-        {...toolbarProps}
+      <ConnectedGenerationToolbar
         activeRecipe={activeRecipe}
-        mode={activeRecipe === 'animation-sequence' ? 'context-only' : 'full'}
-        interactionScope={`${currentView}:${activeRecipe ?? 'studio'}`}
+        currentView={currentView}
+        toolbarArgs={toolbarArgs}
       />
     </BottomToolbar>
   );

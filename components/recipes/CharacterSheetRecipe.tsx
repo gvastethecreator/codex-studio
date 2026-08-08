@@ -135,7 +135,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
       {/* CENTER: Reference / Input Area */}
       <div className="relative w-full max-w-400 h-full flex flex-col items-center justify-center group">
         <div
-          className={`relative flex items-center justify-center overflow-hidden rounded-3xl border bg-white/2 shadow-2xl transition-all duration-500`}
+          className={`relative flex items-center justify-center overflow-hidden rounded-3xl border bg-white/2 shadow-2xl transition-[background-color,border-color,box-shadow,opacity,transform] duration-500`}
           style={{
             aspectRatio: ratioValue,
             width: 'min(86vw, 72vh)',
@@ -161,7 +161,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 type="button"
                 aria-label="Remove character reference"
                 onClick={() => updateConfig('attachments', [])}
-                className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-all opacity-0 group-hover:opacity-100 shadow-lg border border-red-500/30"
+                className="absolute top-4 right-4 z-20 p-2 rounded-lg bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white transition-[color,background-color,border-color,opacity,transform] opacity-0 group-hover:opacity-100 shadow-lg border border-red-500/30"
               >
                 <X size={14} />
               </button>
@@ -184,7 +184,7 @@ export const CharacterSheetRecipe: React.FC<CharacterSheetRecipeProps> = ({
                 accept="image/*"
               />
 
-              <div className="size-24 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/50 transition-all shadow-2xl relative z-10">
+              <div className="size-24 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center group-hover:scale-110 group-hover:border-indigo-500/50 transition-[border-color,transform] shadow-2xl relative z-10">
                 <Brush
                   size={32}
                   className="text-zinc-600 group-hover:text-indigo-400 transition-colors"

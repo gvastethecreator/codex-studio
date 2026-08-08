@@ -32,7 +32,7 @@ function createFalContext(
     providerId: 'fal' as const,
     job: {
       id: 'job-fal',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'fal' as const,
       prompt: 'fallback prompt',
       execution: {
@@ -44,7 +44,7 @@ function createFalContext(
     },
     compiledInput: compileFalImageApiInput({
       id: 'job-fal',
-      projectId: 'project-1',
+      workspaceId: 'workspace-1',
       providerId: 'fal',
       prompt: 'fallback prompt',
       execution: { model: 'fal-ai/flux/schnell', reasoningEffort: 'minimal', serviceTier: null },

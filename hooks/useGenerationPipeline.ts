@@ -12,6 +12,7 @@ import type {
   LocalGenerationLifecycleOutcome,
   LocalGenerationRunResult,
 } from '../services/localGenerationRun';
+import { useLatestRef } from './useLatestRef';
 
 async function runLocalGeneration(
   input: Parameters<
@@ -166,6 +167,14 @@ export const useGenerationPipeline = ({
 }: UseGenerationPipelineProps) => {
   const [activeRuns, setActiveRuns] = useState<ActiveGenerationRun[]>([]);
   const nextRunIdRef = useRef(0);
+  const generationConfigRef = useLatestRef(generationConfig);
+  const activeWorkspaceIdRef = useLatestRef(activeWorkspaceId);
+  const appendLocalGenerationResultRef = useLatestRef(appendLocalGenerationResult);
+  const addToastRef = useLatestRef(addToast);
+  const logRef = useLatestRef(log);
+  const activeRecipeRef = useLatestRef(activeRecipe);
+  const openModalRef = useLatestRef(openModal);
+  const setIsInteractingWithToolbarRef = useLatestRef(setIsInteractingWithToolbar);
   const activeRun = getCurrentActiveGenerationRun(activeRuns);
   const isGenerating = activeRuns.length > 0;
   const activeGenerationConfig = activeRun?.config ?? null;
@@ -190,10 +199,13 @@ export const useGenerationPipeline = ({
       configOverrides: Partial<ImageGenerationConfig>,
       options?: GenerationOptions,
     ): Promise<GenerationExecutionOutcome> => {
-      const configToUse = { ...generationConfig, ...configOverrides };
+      const configToUse = { ...generationConfigRef.current, ...configOverrides };
       const runId = beginRun(configToUse);
-      const recipeId = configToUse.recipeId ?? activeRecipe;
-      const workspaceId = resolveGenerationWorkspaceId(activeWorkspaceId, options?.workspaceId);
+      const recipeId = configToUse.recipeId ?? activeRecipeRef.current;
+      const workspaceId = resolveGenerationWorkspaceId(
+        activeWorkspaceIdRef.current,
+        options?.workspaceId,
+      );
 
       try {
         // Validate Recipe Requirements
@@ -206,10 +218,16 @@ export const useGenerationPipeline = ({
           workspaceId,
           signal: options?.signal,
           onJobCreated: options?.onJobCreated,
-          onProgress: log,
+          onProgress: logRef.current,
         });
 
-        if (handleNonCompletedGenerationOutcome({ outcome, addToast, log })) {
+        if (
+          handleNonCompletedGenerationOutcome({
+            outcome,
+            addToast: addToastRef.current,
+            log: logRef.current,
+          })
+        ) {
           if (outcome.status === 'cancelled') {
             return { status: 'cancelled', message: outcome.message };
           }
@@ -227,7 +245,7 @@ export const useGenerationPipeline = ({
         const { batchId, generatedCount, images } = result;
 
         startViewTransition(() => {
-          appendLocalGenerationResult?.(result);
+          appendLocalGenerationResultRef.current?.(result);
         });
 
         if (images.length > 0 && !options?.preventModal) {
@@ -235,33 +253,39 @@ export const useGenerationPipeline = ({
             ...images[0],
             config: configToUse,
           } as GeneratedImageWithConfig;
-          openModal(resultImage);
-          setIsInteractingWithToolbar(false);
+          openModalRef.current(resultImage);
+          setIsInteractingWithToolbarRef.current(false);
         }
 
         const duration = formatGenerationDuration(outcome.durationMs);
-        log(`Generated local result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
-        addToast(
+        logRef.current(
+          `Generated local result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`,
+        );
+        addToastRef.current(
           `Generation complete: ${generatedCount} asset${generatedCount === 1 ? '' : 's'} ready in ${duration}s`,
           'success',
         );
         return { status: 'completed' };
       } catch (error) {
-        reportGenerationError({ error, addToast, log });
+        reportGenerationError({
+          error,
+          addToast: addToastRef.current,
+          log: logRef.current,
+        });
         return buildFailedGenerationExecutionOutcome(error);
       } finally {
         finishRun(runId);
       }
     },
     [
-      generationConfig,
-      activeWorkspaceId,
-      activeRecipe,
-      appendLocalGenerationResult,
-      addToast,
-      log,
-      openModal,
-      setIsInteractingWithToolbar,
+      generationConfigRef,
+      activeWorkspaceIdRef,
+      activeRecipeRef,
+      appendLocalGenerationResultRef,
+      addToastRef,
+      logRef,
+      openModalRef,
+      setIsInteractingWithToolbarRef,
       beginRun,
       finishRun,
     ],
@@ -270,7 +294,7 @@ export const useGenerationPipeline = ({
   const executeEdit = useCallback(
     async (original: Attachment, mask: string, prompt: string) => {
       const configToUse = buildEditGenerationConfig({
-        generationConfig,
+        generationConfig: generationConfigRef.current,
         original,
         mask,
         prompt,
@@ -280,7 +304,7 @@ export const useGenerationPipeline = ({
 
       try {
         const outcome = await runLocalGeneration({
-          workspaceId: activeWorkspaceId,
+          workspaceId: activeWorkspaceIdRef.current,
           config: configToUse,
           inputImage: {
             src: original.dataUrl,
@@ -288,7 +312,13 @@ export const useGenerationPipeline = ({
           },
         });
 
-        if (handleNonCompletedGenerationOutcome({ outcome, addToast, log })) {
+        if (
+          handleNonCompletedGenerationOutcome({
+            outcome,
+            addToast: addToastRef.current,
+            log: logRef.current,
+          })
+        ) {
           return;
         }
 
@@ -300,24 +330,30 @@ export const useGenerationPipeline = ({
         const { batchId, generatedCount } = result;
 
         startViewTransition(() => {
-          appendLocalGenerationResult?.(result, { maxPerWorkspace: 20 });
+          appendLocalGenerationResultRef.current?.(result, { maxPerWorkspace: 20 });
         });
 
         const duration = formatGenerationDuration(outcome.durationMs);
-        log(`Generated edit result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`);
-        addToast('Image edit complete', 'success');
+        logRef.current(
+          `Generated edit result: ${batchId} (${generatedCount} asset(s)) in ${duration}s`,
+        );
+        addToastRef.current('Image edit complete', 'success');
       } catch (error) {
-        reportGenerationError({ error, addToast, log });
+        reportGenerationError({
+          error,
+          addToast: addToastRef.current,
+          log: logRef.current,
+        });
       } finally {
         finishRun(runId);
       }
     },
     [
-      generationConfig,
-      activeWorkspaceId,
-      appendLocalGenerationResult,
-      addToast,
-      log,
+      generationConfigRef,
+      activeWorkspaceIdRef,
+      appendLocalGenerationResultRef,
+      addToastRef,
+      logRef,
       beginRun,
       finishRun,
     ],

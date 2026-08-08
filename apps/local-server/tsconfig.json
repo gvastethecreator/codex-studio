@@ -1,8 +1,11 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
     "types": ["bun", "node"],
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "../../packages/shared/src/**/*.ts"]
+  "include": ["src/**/*.ts", "../../packages/shared/src/**/*.ts"],
+  "exclude": ["src/**/*.test.ts", "../../packages/shared/src/**/*.test.ts"]
 }

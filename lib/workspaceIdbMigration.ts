@@ -3,16 +3,13 @@ import {
   DEFAULT_WORKSPACE_ID,
   normalizeWorkspaceId,
 } from '../packages/shared/src/workspaceContracts';
-import {
-  createWorkspace,
-  listWorkspaces,
-  type StudioWorkspaceDto,
-} from '../services/localStudioService';
+import type { StudioWorkspace } from '../packages/shared/src/workspaceContracts';
+import { createWorkspace, listWorkspaces } from '../services/studio-api/workspaces';
 import { del, get, set } from '../utils/idb';
 
 export const WORKSPACE_IDB_MIGRATION_MARKER = 'workspace-idb-migrated-v1';
 
-export function mapStudioWorkspaceToUi(workspace: StudioWorkspaceDto): Workspace {
+export function mapStudioWorkspaceToUi(workspace: StudioWorkspace): Workspace {
   const createdAtMs = Date.parse(workspace.createdAt);
   return {
     id: workspace.id,

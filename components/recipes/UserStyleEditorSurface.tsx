@@ -27,7 +27,7 @@ import {
   draftUserStylePreset,
   duplicateUserStylePreset,
   updateUserStylePreset,
-} from '../../services/localStudioService';
+} from '../../services/studio-api/userStyles';
 import {
   USER_STYLE_DNA_FIELDS,
   createUserStyleDraftFromReferenceImages,
@@ -742,14 +742,19 @@ const UserStyleEditorSession: React.FC<UserStyleEditorSurfaceProps> = ({
                           </div>
                         </div>
                       </div>
-                      <input
-                        value={image.notes ?? ''}
-                        onChange={(event) =>
-                          updateReferenceImage(image.id, { notes: event.target.value })
-                        }
-                        placeholder="Reference notes"
-                        className="mt-2 h-8 w-full rounded-[6px] border border-white/10 bg-zinc-950 px-2 text-[10px] font-medium text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-sky-300/35"
-                      />
+                      <label className="mt-2 grid gap-1">
+                        <span className="text-[8px] font-black uppercase tracking-widest text-zinc-500">
+                          Reference notes
+                        </span>
+                        <input
+                          value={image.notes ?? ''}
+                          onChange={(event) =>
+                            updateReferenceImage(image.id, { notes: event.target.value })
+                          }
+                          placeholder={`Notes for ${image.name}`}
+                          className="h-8 w-full rounded-[6px] border border-white/10 bg-zinc-950 px-2 text-[10px] font-medium text-white outline-none transition-colors placeholder:text-zinc-600 focus:border-sky-300/35"
+                        />
+                      </label>
                     </div>
                   ))}
                 </div>

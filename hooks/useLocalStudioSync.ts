@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useReducer, useMemo, useRef } from 'react';
-import { listStudioJobs, listStudioLogs } from '../services/localStudioService';
+import { listStudioJobs } from '../services/studio-api/jobs';
+import { listStudioLogs } from '../services/studio-api/logs';
 import {
   createStudioEventStream,
   type StudioEventStream,

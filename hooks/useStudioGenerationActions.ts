@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { DEFAULT_GENERATION_CONFIG } from '../constants';
 import { prepareStudioGenerationRequest } from '../lib/studioGenerationRequest';
 import type { Attachment, ImageGenerationConfig, RecipeId } from '../types';
@@ -40,7 +40,7 @@ export function buildRecipeRestoreConfig(
 }
 
 interface UseStudioGenerationActionsProps {
-  generationConfig: ImageGenerationConfig;
+  generationConfigRef: React.RefObject<ImageGenerationConfig>;
   activeWorkspaceId: string;
   setGenerationConfig: React.Dispatch<React.SetStateAction<ImageGenerationConfig>>;
   updateGenerationConfig: <K extends keyof ImageGenerationConfig>(
@@ -70,7 +70,7 @@ interface UseStudioGenerationActionsProps {
  * image editing and recipe restore.
  */
 export function useStudioGenerationActions({
-  generationConfig,
+  generationConfigRef,
   activeWorkspaceId,
   setGenerationConfig,
   updateGenerationConfig,
@@ -86,12 +86,6 @@ export function useStudioGenerationActions({
 }: UseStudioGenerationActionsProps) {
   const [isEnhancingPrompt, setIsEnhancingPrompt] = useState(false);
   const [isEditingImage, setIsEditingImage] = useState(false);
-  const generationConfigRef = useRef(generationConfig);
-
-  useEffect(() => {
-    generationConfigRef.current = generationConfig;
-  }, [generationConfig]);
-
   const handleGenerate = useCallback(
     (
       promptOverride?: string,
@@ -133,7 +127,15 @@ export function useStudioGenerationActions({
         }));
       }
     },
-    [activeWorkspaceId, addToast, closeModal, executeGeneration, isModalOpen, setGenerationConfig],
+    [
+      activeWorkspaceId,
+      addToast,
+      closeModal,
+      executeGeneration,
+      generationConfigRef,
+      isModalOpen,
+      setGenerationConfig,
+    ],
   );
 
   const handleEnhancePrompt = useCallback(async () => {
@@ -141,7 +143,7 @@ export function useStudioGenerationActions({
     setIsEnhancingPrompt(true);
 
     try {
-      const currentPrompt = (generationConfig.prompt ?? '').trim();
+      const currentPrompt = (generationConfigRef.current.prompt ?? '').trim();
       if (!currentPrompt) {
         addToast('Type a prompt before refining it', 'info');
         return;
@@ -163,7 +165,7 @@ export function useStudioGenerationActions({
     } finally {
       setIsEnhancingPrompt(false);
     }
-  }, [addToast, generationConfig.prompt, isEnhancingPrompt, updateGenerationConfig]);
+  }, [addToast, generationConfigRef, isEnhancingPrompt, updateGenerationConfig]);
 
   const handleExecuteEdit = useCallback(
     async (original: Attachment, mask: string, prompt: string) => {
